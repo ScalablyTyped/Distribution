@@ -1,0 +1,12 @@
+{
+  "typings": [
+    "react"
+  ],
+  "dependencies": [
+    {
+      "org": "com.github.japgolly.scalajs-react",
+      "artifact": "core",
+      "version": "1.3.1"
+    }
+  ]
+}
