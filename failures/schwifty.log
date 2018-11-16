@@ -16,3 +16,4 @@
 [debug] PhaseRunner.scala:78 Success [id => schwifty, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [objection => Compilation failed] [id => schwifty, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [objection => Compilation failed] [id => schwifty, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [objection => Compilation failed] [id => schwifty, phase => publish] 

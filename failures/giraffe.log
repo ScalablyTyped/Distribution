@@ -39,3 +39,4 @@
   variable initialize in trait GiraffeObject of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[scala.scalajs.js.Any]]
 (Note: this can be resolved by declaring an override in class View.), class View[TModel /* <: Model */] () [id => giraffe, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [giraffe => Compilation failed] [id => giraffe, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [giraffe => Compilation failed] [id => giraffe, phase => publish] 

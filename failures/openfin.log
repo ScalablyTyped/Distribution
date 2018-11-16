@@ -323,3 +323,4 @@
 [error] EmitterBase.scala:35 method deregisterAllListeners is defined twice;
   the conflicting method deregisterAllListeners was defined at line 33:23,   /* protected */ def deregisterAllListeners(eventType: stdLib.Extract[java.lang.String, java.lang.String]): stdLib.Promise[scala.Unit | nodeLib.eventsMod.EventEmitter] = js.native [id => openfin, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [openfin => Compilation failed] [id => openfin, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [openfin => Compilation failed] [id => openfin, phase => publish] 

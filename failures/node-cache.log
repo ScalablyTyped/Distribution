@@ -9,3 +9,4 @@
 [error] NodeCache.scala:13 overriding method getTtl_Boolean in trait NodeCache of type (key: typings.nodeDashCacheLib.Key)Boolean;
  method getTtl_Boolean needs `override' modifier,   def getTtl_Boolean(key: nodeDashCacheLib.Key): scala.Boolean = js.native [id => node-cache, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [node-cache => Compilation failed] [id => node-cache, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [node-cache => Compilation failed] [id => node-cache, phase => publish] 

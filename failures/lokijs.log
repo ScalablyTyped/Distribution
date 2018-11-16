@@ -60,3 +60,4 @@
 [error] Collection.scala:267 Raw JS setters must return Unit,   def calculateRange_$eq(op: lokijsLib.lokijsLibStrings.DOLLAReq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native [id => lokijs, phase => build] 
 [error] Collection.scala:267 Raw JS setters must have exactly one argument,   def calculateRange_$eq(op: lokijsLib.lokijsLibStrings.DOLLAReq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native [id => lokijs, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [lokijs => Compilation failed] [id => lokijs, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [lokijs => Compilation failed] [id => lokijs, phase => publish] 

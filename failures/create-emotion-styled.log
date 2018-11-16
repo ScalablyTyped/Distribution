@@ -30,3 +30,4 @@
 [debug] PhaseRunner.scala:78 Success [id => create-emotion-styled, phase => scala.js] 
 [error] package.scala:9 illegal cyclic reference involving type Interpolation,   type FunctionInterpolation[Props] = js.Function2[/* props */ Props, /* context */ js.Any, Interpolation[Props]] [id => create-emotion-styled, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [create-emotion-styled => Compilation failed] [id => create-emotion-styled, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [create-emotion-styled => Compilation failed] [id => create-emotion-styled, phase => publish] 

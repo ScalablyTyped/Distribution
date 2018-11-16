@@ -31,6 +31,13 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:43)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:26)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:48)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:43)
+	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
+	at scala.Option.foreach(Option.scala:257)
+	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:43)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:26)
 	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:185)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:112)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:109)
@@ -54,3 +61,4 @@
 [debug] PhaseRunner.scala:82 Failure, [botvs => java.lang.RuntimeException: Error while parsing: /home/olvind/tmp/tso-cache/npm/node_modules/botvs/tsconfig.json: io.circe.ParsingFailure: expected " got / (line 7, column 85)] [id => botvs, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [botvs => java.lang.RuntimeException: Error while parsing: /home/olvind/tmp/tso-cache/npm/node_modules/botvs/tsconfig.json: io.circe.ParsingFailure: expected " got / (line 7, column 85)] [id => botvs, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [botvs => java.lang.RuntimeException: Error while parsing: /home/olvind/tmp/tso-cache/npm/node_modules/botvs/tsconfig.json: io.circe.ParsingFailure: expected " got / (line 7, column 85)] [id => botvs, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [botvs => java.lang.RuntimeException: Error while parsing: /home/olvind/tmp/tso-cache/npm/node_modules/botvs/tsconfig.json: io.circe.ParsingFailure: expected " got / (line 7, column 85)] [id => botvs, phase => publish] 

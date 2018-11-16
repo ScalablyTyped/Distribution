@@ -35,3 +35,4 @@
 [error] IPubSubSubject.scala:22 type Observable is not a member of package typings.rxLib.rxMod,   var observable: rxLib.rxMod.Observable[IWampEvent] = js.native [id => rx.wamp, phase => build] 
 [error] IPubSubSubject.scala:23 type Observer is not a member of package typings.rxLib.rxMod,   var observer: rxLib.rxMod.Observer[IWampEvent] = js.native [id => rx.wamp, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [rx.wamp => Compilation failed] [id => rx.wamp, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [rx.wamp => Compilation failed] [id => rx.wamp, phase => publish] 

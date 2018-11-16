@@ -3,3 +3,4 @@
 [debug] PhaseRunner.scala:82 Failure, [samchon-library => Couldn't resolve DirectivePathRef(../samchon-framework/samchon-framework.d.ts)] [id => samchon-library, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [samchon-library => Couldn't resolve DirectivePathRef(../samchon-framework/samchon-framework.d.ts)] [id => samchon-library, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [samchon-library => Couldn't resolve DirectivePathRef(../samchon-framework/samchon-framework.d.ts)] [id => samchon-library, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [samchon-library => Couldn't resolve DirectivePathRef(../samchon-framework/samchon-framework.d.ts)] [id => samchon-library, phase => publish] 

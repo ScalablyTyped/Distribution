@@ -15,3 +15,4 @@
 [error] Collector.scala:12 scala.scalajs.js.Function does not take type parameters,   var finisher: js.Function[T, T] = js.native [id => streamjs, phase => build] 
 [error] Collector.scala:12 scala.scalajs.js.Function does not take type parameters,   var finisher: js.Function[T, T] = js.native [id => streamjs, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [streamjs => Compilation failed] [id => streamjs, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [streamjs => Compilation failed] [id => streamjs, phase => publish] 

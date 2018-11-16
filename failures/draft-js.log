@@ -20,3 +20,4 @@
 [debug] PhaseRunner.scala:78 Success [id => draft-js, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [immutable => Compilation failed] [id => draft-js, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [immutable => Compilation failed] [id => draft-js, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [immutable => Compilation failed] [id => draft-js, phase => publish] 

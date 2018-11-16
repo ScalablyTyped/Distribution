@@ -24,3 +24,4 @@
 [debug] PhaseRunner.scala:78 Success [id => prisma-binding, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [graphql-binding => Compilation failed] [id => prisma-binding, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [graphql-binding => Compilation failed] [id => prisma-binding, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [graphql-binding => Compilation failed] [id => prisma-binding, phase => publish] 

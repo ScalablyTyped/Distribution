@@ -12,3 +12,4 @@ def contains(value: typings.multiplexjsLib.multiplexNs.Grouping[TKey,TElement]):
 def contains(key: TKey): Boolean at line 17
 have same type after erasure: (value: Object)Boolean,   def contains(key: TKey): scala.Boolean = js.native [id => multiplexjs, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [multiplexjs => Compilation failed] [id => multiplexjs, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [multiplexjs => Compilation failed] [id => multiplexjs, phase => publish] 

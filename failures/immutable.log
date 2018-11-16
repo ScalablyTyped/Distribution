@@ -173,3 +173,4 @@
 [error] Stack.scala:211 overriding method zipWith in trait Indexed of type [U, V, Z](zipper: scala.scalajs.js.Function3[T,U,V,Z], otherCollection: typings.immutableLib.immutableMod.Collection[_, U], thirdCollection: typings.immutableLib.immutableMod.Collection[_, V])typings.immutableLib.immutableMod.CollectionNs.Indexed[Z];
  method zipWith needs `override' modifier,   def zipWith[U, V, Z]( [id => immutable, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [immutable => Compilation failed] [id => immutable, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [immutable => Compilation failed] [id => immutable, phase => publish] 

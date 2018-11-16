@@ -6,3 +6,4 @@
 [debug] PhaseRunner.scala:82 Failure, [tern => InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/tern/lib/tern/index.d.ts): Parse error at 104.59 '']'' expected but '[' found] [id => tern, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [tern => InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/tern/lib/tern/index.d.ts): Parse error at 104.59 '']'' expected but '[' found] [id => tern, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [tern => InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/tern/lib/tern/index.d.ts): Parse error at 104.59 '']'' expected but '[' found] [id => tern, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [tern => InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/tern/lib/tern/index.d.ts): Parse error at 104.59 '']'' expected but '[' found] [id => tern, phase => publish] 

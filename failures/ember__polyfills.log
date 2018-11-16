@@ -13,3 +13,4 @@
 [error] package.scala:10 cyclic aliasing or subtyping involving type Mix,   type Mix3[A, B, C] = Mix[Mix[A, B], C] [id => @ember/polyfills, phase => build] 
 [error] package.scala:11 typings.atEmberPolyfillsLib.typesMod.package.Mix3 does not take type parameters,   type Mix4[A, B, C, D] = Mix3[Mix[A, B], C, D] [id => @ember/polyfills, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [@ember/polyfills => Compilation failed] [id => @ember/polyfills, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [@ember/polyfills => Compilation failed] [id => @ember/polyfills, phase => publish] 

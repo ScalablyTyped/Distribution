@@ -5,3 +5,4 @@
 [debug] PhaseRunner.scala:82 Failure, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg, phase => publish] 

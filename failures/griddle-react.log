@@ -33,3 +33,4 @@
 [debug] PhaseRunner.scala:78 Success [id => griddle-react, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [immutable => Compilation failed] [id => griddle-react, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [immutable => Compilation failed] [id => griddle-react, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [immutable => Compilation failed] [id => griddle-react, phase => publish] 

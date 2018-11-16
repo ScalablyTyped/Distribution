@@ -118,3 +118,4 @@
 [error] Button.scala:16 overriding method addChild_TComponentT in trait Component of type [T](child: String, options: scala.scalajs.js.Any)T;
  method addChild_TComponentT needs `override' modifier,   def addChild_TComponentT[T /* <: Component */](child: java.lang.String, options: js.Any): T = js.native [id => video.js, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [video.js => Compilation failed] [id => video.js, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [video.js => Compilation failed] [id => video.js, phase => publish] 
