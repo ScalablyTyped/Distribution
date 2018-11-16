@@ -1,0 +1,81 @@
+package typings
+package reduxLib.reduxMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("redux", JSImport.Namespace)
+@js.native
+object reduxModMembers extends js.Object {
+  val createStore: StoreCreator = js.native
+  def applyMiddleware(): StoreEnhancer[js.Object, js.Object] = js.native
+  def applyMiddleware[Ext1, S](middleware1: Middleware[Ext1, S, _]): StoreEnhancer[reduxLib.Anon_Dispatch[Ext1], js.Object] = js.native
+  def applyMiddleware[Ext, S](middlewares: (Middleware[_, S, _])*): StoreEnhancer[reduxLib.Anon_DispatchAnonDispatchExt[Ext], js.Object] = js.native
+  def applyMiddleware[Ext1, Ext2, S](middleware1: Middleware[Ext1, S, _], middleware2: Middleware[Ext2, S, _]): StoreEnhancer[reduxLib.Anon_DispatchExt1[Ext1, Ext2], js.Object] = js.native
+  def applyMiddleware[Ext1, Ext2, Ext3, S](
+    middleware1: Middleware[Ext1, S, _],
+    middleware2: Middleware[Ext2, S, _],
+    middleware3: Middleware[Ext3, S, _]
+  ): StoreEnhancer[reduxLib.Anon_DispatchExt1Ext2[Ext1, Ext2, Ext3], js.Object] = js.native
+  def applyMiddleware[Ext1, Ext2, Ext3, Ext4, S](
+    middleware1: Middleware[Ext1, S, _],
+    middleware2: Middleware[Ext2, S, _],
+    middleware3: Middleware[Ext3, S, _],
+    middleware4: Middleware[Ext4, S, _]
+  ): StoreEnhancer[reduxLib.Anon_DispatchExt1Ext2Ext3[Ext1, Ext2, Ext3, Ext4], js.Object] = js.native
+  def applyMiddleware[Ext1, Ext2, Ext3, Ext4, Ext5, S](
+    middleware1: Middleware[Ext1, S, _],
+    middleware2: Middleware[Ext2, S, _],
+    middleware3: Middleware[Ext3, S, _],
+    middleware4: Middleware[Ext4, S, _],
+    middleware5: Middleware[Ext5, S, _]
+  ): StoreEnhancer[reduxLib.Anon_DispatchExt1Ext2Ext3Ext4[Ext4, Ext3, Ext5, Ext1, Ext2], js.Object] = js.native
+  def bindActionCreators[A, C /* <: ActionCreator[A] */](actionCreator: C, dispatch: Dispatch[AnyAction]): C = js.native
+  @JSName("bindActionCreators")
+  def bindActionCreators_AActionCreatorBActionCreatorB[A /* <: ActionCreator[_] */, B /* <: ActionCreator[_] */](actionCreator: A, dispatch: Dispatch[AnyAction]): B = js.native
+  @JSName("bindActionCreators")
+  def bindActionCreators_AMActionCreatorsMapObjectM[A, M /* <: ActionCreatorsMapObject[A] */](actionCreators: M, dispatch: Dispatch[AnyAction]): M = js.native
+  @JSName("bindActionCreators")
+  def bindActionCreators_MActionCreatorsMapObjectNActionCreatorsMapObjectN[M /* <: ActionCreatorsMapObject[_] */, N /* <: ActionCreatorsMapObject[_] */](actionCreators: M, dispatch: Dispatch[AnyAction]): N = js.native
+  def combineReducers[S](reducers: ReducersMapObject[S, _]): Reducer[S, AnyAction] = js.native
+  @JSName("combineReducers")
+  def combineReducers_SAAction[S, A /* <: Action[_] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = js.native
+  def compose(): js.Function1[/* a */ js.Any, _] = js.native
+  def compose[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */js.Any, R] = js.native
+  def compose[F /* <: js.Function */](f: F): F = js.native
+  def compose[R](funcs: js.Function*): js.Function1[/* repeated */js.Any, R] = js.native
+  def compose[A, R](f1: js.Function1[/* b */ A, R], f2: reduxLib.Func0[A]): reduxLib.Func0[R] = js.native
+  def compose[A, B, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: reduxLib.Func0[A]): reduxLib.Func0[R] = js.native
+  def compose[A, T1, R](f1: js.Function1[/* b */ A, R], f2: reduxLib.Func1[T1, A]): reduxLib.Func1[T1, R] = js.native
+  def compose[A, B, C, R](
+    f1: js.Function1[/* b */ C, R],
+    f2: js.Function1[/* a */ B, C],
+    f3: js.Function1[/* a */ A, B],
+    f4: reduxLib.Func0[A]
+  ): reduxLib.Func0[R] = js.native
+  def compose[A, B, T1, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: reduxLib.Func1[T1, A]): reduxLib.Func1[T1, R] = js.native
+  def compose[A, T1, T2, R](f1: js.Function1[/* b */ A, R], f2: reduxLib.Func2[T1, T2, A]): reduxLib.Func2[T1, T2, R] = js.native
+  def compose[A, B, C, T1, R](
+    f1: js.Function1[/* b */ C, R],
+    f2: js.Function1[/* a */ B, C],
+    f3: js.Function1[/* a */ A, B],
+    f4: reduxLib.Func1[T1, A]
+  ): reduxLib.Func1[T1, R] = js.native
+  def compose[A, B, T1, T2, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: reduxLib.Func2[T1, T2, A]): reduxLib.Func2[T1, T2, R] = js.native
+  def compose[A, T1, T2, T3, R](f1: js.Function1[/* b */ A, R], f2: reduxLib.Func3[T1, T2, T3, A]): reduxLib.Func3[T1, T2, T3, R] = js.native
+  def compose[A, B, C, T1, T2, R](
+    f1: js.Function1[/* b */ C, R],
+    f2: js.Function1[/* a */ B, C],
+    f3: js.Function1[/* a */ A, B],
+    f4: reduxLib.Func2[T1, T2, A]
+  ): reduxLib.Func2[T1, T2, R] = js.native
+  def compose[A, B, T1, T2, T3, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: reduxLib.Func3[T1, T2, T3, A]): reduxLib.Func3[T1, T2, T3, R] = js.native
+  def compose[A, B, C, T1, T2, T3, R](
+    f1: js.Function1[/* b */ C, R],
+    f2: js.Function1[/* a */ B, C],
+    f3: js.Function1[/* a */ A, B],
+    f4: reduxLib.Func3[T1, T2, T3, A]
+  ): reduxLib.Func3[T1, T2, T3, R] = js.native
+}
+

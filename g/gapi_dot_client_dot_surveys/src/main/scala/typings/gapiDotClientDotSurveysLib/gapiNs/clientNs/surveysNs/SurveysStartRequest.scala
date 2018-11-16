@@ -1,0 +1,13 @@
+package typings
+package gapiDotClientDotSurveysLib.gapiNs.clientNs.surveysNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait SurveysStartRequest extends js.Object {
+  /** Threshold to start a survey automically if the quoted prices is less than or equal to this value. See Survey.Cost for more details. */
+  var maxCostPerResponseNanos: js.UndefOr[java.lang.String] = js.undefined
+}
+

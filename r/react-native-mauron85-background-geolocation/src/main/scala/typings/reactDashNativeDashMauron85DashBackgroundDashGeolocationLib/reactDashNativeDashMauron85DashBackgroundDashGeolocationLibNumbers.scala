@@ -1,0 +1,38 @@
+package typings
+package reactDashNativeDashMauron85DashBackgroundDashGeolocationLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object reactDashNativeDashMauron85DashBackgroundDashGeolocationLibNumbers {
+  @js.native
+  sealed trait `0` extends js.Object
+  
+  @js.native
+  sealed trait `1` extends js.Object
+  
+  @js.native
+  sealed trait `100` extends js.Object
+  
+  @js.native
+  sealed trait `1000` extends js.Object
+  
+  @js.native
+  sealed trait `10000` extends js.Object
+  
+  @js.native
+  sealed trait `2` extends js.Object
+  
+  @js.native
+  sealed trait `3` extends js.Object
+  
+  def `0`: `0` = 0.asInstanceOf[`0`]
+  def `1`: `1` = 1.asInstanceOf[`1`]
+  def `100`: `100` = 100.asInstanceOf[`100`]
+  def `1000`: `1000` = 1000.asInstanceOf[`1000`]
+  def `10000`: `10000` = 10000.asInstanceOf[`10000`]
+  def `2`: `2` = 2.asInstanceOf[`2`]
+  def `3`: `3` = 3.asInstanceOf[`3`]
+}
+

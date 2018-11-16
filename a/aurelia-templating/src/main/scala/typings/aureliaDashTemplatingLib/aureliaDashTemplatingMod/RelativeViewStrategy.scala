@@ -1,0 +1,58 @@
+package typings
+package aureliaDashTemplatingLib.aureliaDashTemplatingMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("aurelia-templating", "RelativeViewStrategy")
+@js.native
+class RelativeViewStrategy protected () extends js.Object {
+  /**
+      * Creates an instance of RelativeViewStrategy.
+      * @param path The relative path to the view.
+      */
+  def this(path: java.lang.String) = this()
+  /**
+      * Loads a view factory.
+      * @param viewEngine The view engine to use during the load process.
+      * @param compileInstruction Additional instructions to use during compilation of the view.
+      * @param loadContext The loading context used for loading all resources and dependencies.
+      * @param target A class from which to extract metadata of additional resources to load.
+      * @return A promise for the view factory that is produced by this strategy.
+      */
+  def loadViewFactory(viewEngine: ViewEngine, compileInstruction: ViewCompileInstruction): stdLib.Promise[ViewFactory] = js.native
+  /**
+      * Loads a view factory.
+      * @param viewEngine The view engine to use during the load process.
+      * @param compileInstruction Additional instructions to use during compilation of the view.
+      * @param loadContext The loading context used for loading all resources and dependencies.
+      * @param target A class from which to extract metadata of additional resources to load.
+      * @return A promise for the view factory that is produced by this strategy.
+      */
+  def loadViewFactory(
+    viewEngine: ViewEngine,
+    compileInstruction: ViewCompileInstruction,
+    loadContext: ResourceLoadContext
+  ): stdLib.Promise[ViewFactory] = js.native
+  /**
+      * Loads a view factory.
+      * @param viewEngine The view engine to use during the load process.
+      * @param compileInstruction Additional instructions to use during compilation of the view.
+      * @param loadContext The loading context used for loading all resources and dependencies.
+      * @param target A class from which to extract metadata of additional resources to load.
+      * @return A promise for the view factory that is produced by this strategy.
+      */
+  def loadViewFactory(
+    viewEngine: ViewEngine,
+    compileInstruction: ViewCompileInstruction,
+    loadContext: ResourceLoadContext,
+    target: js.Any
+  ): stdLib.Promise[ViewFactory] = js.native
+  /**
+      * Makes the view loaded by this strategy relative to the provided file path.
+      * @param file The path to load the view relative to.
+      */
+  def makeRelativeTo(file: java.lang.String): scala.Unit = js.native
+}
+

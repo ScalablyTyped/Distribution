@@ -1,0 +1,18 @@
+package typings
+package stdLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait SVGAnimatedAngle extends js.Object {
+  val animVal: SVGAngle
+  val baseVal: SVGAngle
+}
+
+@JSGlobal("SVGAnimatedAngle")
+@js.native
+object SVGAnimatedAngle
+  extends ScalablyTyped.runtime.Instantiable0[SVGAnimatedAngle]
+

@@ -1,0 +1,14 @@
+package typings
+package jestDashDiffLib.jestDashDiffMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("jest-diff", JSImport.Namespace)
+@js.native
+object jestDashDiffModMembers extends js.Object {
+  def apply(a: js.Any, b: js.Any): java.lang.String = js.native
+  def apply(a: js.Any, b: js.Any, options: jestDashDiffLib.jestDashDiffMod.diffNs.DiffOptions): java.lang.String = js.native
+}
+

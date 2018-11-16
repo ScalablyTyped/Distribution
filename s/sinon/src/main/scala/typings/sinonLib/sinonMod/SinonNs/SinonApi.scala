@@ -1,0 +1,66 @@
+package typings
+package sinonLib.sinonMod.SinonNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait SinonApi extends js.Object {
+  var FakeXMLHttpRequest: SinonFakeXMLHttpRequestStatic = js.native
+  var clock: sinonLib.Anon_Create = js.native
+  var defaultConfig: stdLib.Partial[SinonSandboxConfig] = js.native
+  var expectation: SinonExpectationStatic = js.native
+  var fakeServer: SinonFakeServerStatic = js.native
+  var fakeServerWithClock: SinonFakeServerStatic = js.native
+  @JSName("fake")
+  var fake_Original: SinonFake = js.native
+  @JSName("match")
+  var match_Original: SinonMatch = js.native
+  /**
+           * Creates a new sandbox object with spies, stubs, and mocks.
+           * @param config
+           */
+  def createSandbox(): SinonSandbox = js.native
+  /**
+           * Creates a new sandbox object with spies, stubs, and mocks.
+           * @param config
+           */
+  def createSandbox(config: stdLib.Partial[SinonSandboxConfig]): SinonSandbox = js.native
+  /**
+           * Creates a basic fake, with no behavior
+           */
+  def fake(): SinonSpy = js.native
+  /**
+           * Wraps an existing Function to record all interactions, while leaving it up to the func to provide the behavior.
+           * This is useful when complex behavior not covered by the sinon.fake.* methods is required or when wrapping an existing function or method.
+           */
+  def fake(fn: js.Function): SinonSpy = js.native
+  /**
+           * See custom matchers.
+           */
+  def `match`(callback: js.Function1[/* value */ js.Any, scala.Boolean]): SinonMatcher = js.native
+  /**
+           * See custom matchers.
+           */
+  def `match`(callback: js.Function1[/* value */ js.Any, scala.Boolean], message: java.lang.String): SinonMatcher = js.native
+  /**
+           * Requires the value to be a string and match the given regular expression.
+           */
+  def `match`(expr: stdLib.RegExp): SinonMatcher = js.native
+  /**
+           * Requires the value to be not null or undefined and have at least the same properties as expectation.
+           * This supports nested matchers.
+           */
+  def `match`(obj: js.Object): SinonMatcher = js.native
+  /**
+           * Requires the value to be a string and have the expectation as a substring.
+           */
+  def `match`(value: java.lang.String): SinonMatcher = js.native
+  /**
+           * Requires the value to be == to the given number.
+           */
+  def `match`(value: scala.Double): SinonMatcher = js.native
+  def spyCall(args: js.Any*): SinonSpyCall = js.native
+}
+

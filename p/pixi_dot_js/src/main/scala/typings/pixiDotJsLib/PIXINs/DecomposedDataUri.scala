@@ -1,0 +1,18 @@
+package typings
+package pixiDotJsLib.PIXINs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////UTILS//////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+trait DecomposedDataUri extends js.Object {
+  var data: js.Any
+  var encoding: java.lang.String
+  var mediaType: java.lang.String
+  var subType: java.lang.String
+}
+

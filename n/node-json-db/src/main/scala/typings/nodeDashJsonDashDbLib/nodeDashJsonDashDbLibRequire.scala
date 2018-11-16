@@ -1,0 +1,13 @@
+package typings
+package nodeDashJsonDashDbLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("node-json-db", JSImport.Namespace)
+@js.native
+object nodeDashJsonDashDbLibRequire extends js.Object
+

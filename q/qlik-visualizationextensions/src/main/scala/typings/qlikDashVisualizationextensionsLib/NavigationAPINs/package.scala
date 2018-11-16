@@ -1,0 +1,11 @@
+package typings
+package qlikDashVisualizationextensionsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object NavigationAPINs {
+  type NavigationErrorType = qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.NOSUCHSHEET | qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.NOCURRENTSHEET | qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.NOSUCHSTORY
+  type NavigationModeType = qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.ANALYSIS | qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.EDIT
+}

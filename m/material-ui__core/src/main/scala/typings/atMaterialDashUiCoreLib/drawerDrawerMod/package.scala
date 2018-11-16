@@ -1,0 +1,10 @@
+package typings
+package atMaterialDashUiCoreLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object drawerDrawerMod {
+  type DrawerClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.docked | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paper | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paperAnchorLeft | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paperAnchorRight | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paperAnchorTop | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paperAnchorBottom | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paperAnchorDockedLeft | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paperAnchorDockedTop | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paperAnchorDockedRight | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paperAnchorDockedBottom | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.modal
+}

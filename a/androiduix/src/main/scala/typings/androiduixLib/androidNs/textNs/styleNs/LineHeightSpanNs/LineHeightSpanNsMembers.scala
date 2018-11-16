@@ -1,0 +1,13 @@
+package typings
+package androiduixLib.androidNs.textNs.styleNs.LineHeightSpanNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("android.text.style.LineHeightSpan")
+@js.native
+object LineHeightSpanNsMembers extends js.Object {
+  var `type`: js.Symbol = js.native
+}
+

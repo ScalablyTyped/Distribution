@@ -1,0 +1,181 @@
+package typings
+package jsbnLib.jsbnMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("jsbn", "BigInteger")
+@js.native
+class BigInteger protected () extends js.Object {
+  def this(a: java.lang.String) = this()
+  def this(a: js.Array[scala.Double]) = this()
+  def this(a: BigInteger) = this()
+  def this(a: java.lang.String, b: scala.Double) = this()
+  def this(a: js.Array[scala.Double], b: scala.Double) = this()
+  def this(a: scala.Double, c: RandomGenerator) = this()
+  def this(a: scala.Double, b: scala.Double, c: RandomGenerator) = this()
+   // forge specific
+  var DB: scala.Double = js.native
+  var DM: scala.Double = js.native
+  var DV: scala.Double = js.native
+  var F1: scala.Double = js.native
+  var F2: scala.Double = js.native
+  var FV: scala.Double = js.native
+  var data: js.Array[scala.Double] = js.native
+  var s: scala.Double = js.native
+  var t: scala.Double = js.native
+  // (public) |this|
+  def abs(): BigInteger = js.native
+  // (public) this + a
+  def add(a: BigInteger): BigInteger = js.native
+  // (protected) r = this + a
+  def addTo(a: BigInteger, r: BigInteger): scala.Unit = js.native
+  // am: Compute w_j += (x*this_i), propagate carries,
+  def am(i: scala.Double, x: scala.Double, w: BigInteger, j: scala.Double, c: scala.Double, n: scala.Double): scala.Double = js.native
+  // (public) this & a
+  def and(a: BigInteger): BigInteger = js.native
+  // (public) this & ~a
+  def andNot(a: BigInteger): BigInteger = js.native
+  // (public) return number of set bits
+  def bitCount(): scala.Double = js.native
+  // (public) return the number of bits in "this"
+  def bitLength(): scala.Double = js.native
+  // (protected) r = this op a (bitwise)
+  def bitwiseTo(
+    a: BigInteger,
+    op: js.Function2[/* x */ scala.Double, /* y */ scala.Double, scala.Double],
+    r: BigInteger
+  ): scala.Unit = js.native
+  // (public) return value as byte
+  def byteValue(): scala.Double = js.native
+  // (protected) this op (1<<n)
+  def changeBit(n: scala.Double, op: js.Function2[/* x */ scala.Double, /* y */ scala.Double, scala.Double]): BigInteger = js.native
+  // (protected) return x s.t. r^x < DV
+  def chunkSize(r: scala.Double): scala.Double = js.native
+  // (protected) clamp off excess high words
+  def clamp(): scala.Unit = js.native
+  // (public) this & ~(1<<n)
+  def clearBit(n: scala.Double): BigInteger = js.native
+  // (public) return + if this > a, - if this < a, 0 if equal
+  def compareTo(a: BigInteger): scala.Double = js.native
+  // (protected) copy this to r
+  def copyTo(r: BigInteger): scala.Unit = js.native
+  // (protected) this += n << w words, this >= 0
+  def dAddOffset(n: scala.Double, w: scala.Double): scala.Unit = js.native
+   // Array of 2 items
+  // (protected) this *= n, this >= 0, 1 < n < DV
+  def dMultiply(n: scala.Double): scala.Unit = js.native
+  // (protected) divide this by m, quotient and remainder to q, r (HAC 14.20)
+  // r != q, this != m.  q or r may be null.
+  def divRemTo(m: BigInteger, q: BigInteger, r: BigInteger): scala.Unit = js.native
+  // (public) this / a
+  def divide(a: BigInteger): BigInteger = js.native
+  // (public) [this/a,this%a]
+  def divideAndRemainder(a: BigInteger): js.Array[BigInteger] = js.native
+  // (protected) r = this << n*DB
+  def dlShiftTo(n: scala.Double, r: BigInteger): scala.Unit = js.native
+  // (protected) r = this >> n*DB
+  def drShiftTo(n: scala.Double, r: BigInteger): scala.Unit = js.native
+  def equals(a: BigInteger): scala.Boolean = js.native
+  // (protected) this^e, e < 2^32, doing sqr and mul with "r" (HAC 14.79)
+  def exp(e: scala.Double, z: Reduction): BigInteger = js.native
+  // (public) this ^ (1<<n)
+  def flipBit(n: scala.Double): BigInteger = js.native
+  // (protected) set from integer value x, -DV <= x < DV
+  def fromInt(x: scala.Double): scala.Unit = js.native
+  // (protected) alternate constructor
+  def fromNumber(a: scala.Double): scala.Unit = js.native
+  // (protected) alternate constructor
+  def fromNumber(a: scala.Double, b: scala.Double): scala.Unit = js.native
+  // (protected) alternate constructor
+  def fromNumber(a: scala.Double, b: scala.Double, c: scala.Double): scala.Unit = js.native
+  // (protected) convert from radix string
+  def fromRadix(s: java.lang.String, b: scala.Double): scala.Unit = js.native
+  // (protected) set from string and radix
+  def fromString(x: java.lang.String, b: scala.Double): scala.Unit = js.native
+  // (public) gcd(this,a) (HAC 14.54)
+  def gcd(a: BigInteger): BigInteger = js.native
+  // (public) returns index of lowest 1-bit (or -1 if none)
+  def getLowestSetBit(): scala.Double = js.native
+  // (public) return value as integer
+  def intValue(): scala.Double = js.native
+  // (protected) return "-1/this % 2^DB"; useful for Mont. reduction
+  def invDigit(): scala.Double = js.native
+  // (protected) true iff this is even
+  def isEven(): scala.Boolean = js.native
+  // (public) test primality with certainty >= 1-.5^t
+  def isProbablePrime(t: scala.Double): scala.Boolean = js.native
+  // (protected) r = this << n
+  def lShiftTo(n: scala.Double, r: BigInteger): scala.Unit = js.native
+  def max(a: BigInteger): BigInteger = js.native
+  // (protected) true if probably prime (HAC 4.24, Miller-Rabin)
+  def millerRabin(t: scala.Double): scala.Boolean = js.native
+  def min(a: BigInteger): BigInteger = js.native
+  // (public) this mod a
+  def mod(a: BigInteger): BigInteger = js.native
+  // (protected) this % n, n < 2^26
+  def modInt(n: scala.Double): scala.Double = js.native
+  // (public) 1/this % m (HAC 14.61)
+  def modInverse(m: BigInteger): BigInteger = js.native
+  // (public) this^e % m (HAC 14.85)
+  def modPow(e: BigInteger, m: BigInteger): BigInteger = js.native
+  // (public) this^e % m, 0 <= e < 2^32
+  def modPowInt(e: scala.Double, m: BigInteger): BigInteger = js.native
+  // (public) this * a
+  def multiply(a: BigInteger): BigInteger = js.native
+  // (protected) r = lower n words of "this * a", a.t <= n
+  def multiplyLowerTo(a: BigInteger, n: scala.Double, r: BigInteger): scala.Unit = js.native
+  // (protected) r = this * a, r != this,a (HAC 14.12)
+  def multiplyTo(a: BigInteger, r: BigInteger): scala.Unit = js.native
+  // (protected) r = "this * a" without lower n words, n > 0
+  def multiplyUpperTo(a: BigInteger, n: scala.Double, r: BigInteger): scala.Unit = js.native
+  // (public) -this
+  def negate(): BigInteger = js.native
+  // (public) ~this
+  def not(): BigInteger = js.native
+  // (public) this | a
+  def or(a: BigInteger): BigInteger = js.native
+  // (public) this^e
+  def pow(e: scala.Double): BigInteger = js.native
+  // (protected) r = this >> n
+  def rShiftTo(n: scala.Double, r: BigInteger): scala.Unit = js.native
+  // (public) this % a
+  def remainder(a: BigInteger): BigInteger = js.native
+  // (protected) this op (1<<n)
+  def setBit(n: scala.Double): BigInteger = js.native
+  // (public) this << n
+  def shiftLeft(n: scala.Double): BigInteger = js.native
+  // (public) this >> n
+  def shiftRight(n: scala.Double): BigInteger = js.native
+  // (public) return value as short (assumes DB>=16)
+  def shortValue(): scala.Double = js.native
+  // (public) 0 if this == 0, 1 if this > 0
+  def signum(): scala.Double = js.native
+  // (public) this^2
+  def square(): BigInteger = js.native
+  // (protected) r = this^2, r != this (HAC 14.16)
+  def squareTo(r: BigInteger): scala.Unit = js.native
+  // (protected) r = this - a
+  def subTo(a: BigInteger, r: BigInteger): scala.Unit = js.native
+  // (public) this - a
+  def subtract(a: BigInteger): BigInteger = js.native
+  // (public) true iff nth bit is set
+  def testBit(n: scala.Double): scala.Boolean = js.native
+  // (public) convert to bigendian byte array
+  def toByteArray(): js.Array[scala.Double] = js.native
+  // (protected) convert to radix string
+  def toRadix(b: scala.Double): java.lang.String = js.native
+  // (public) return string representation in given radix
+  def toString(b: scala.Double): java.lang.String = js.native
+  // (public) this ^ a
+  def xor(a: BigInteger): BigInteger = js.native
+}
+
+@JSImport("jsbn", "BigInteger")
+@js.native
+object BigInteger extends js.Object {
+  var ONE: jsbnLib.jsbnMod.BigInteger = js.native
+  var ZERO: jsbnLib.jsbnMod.BigInteger = js.native
+}
+

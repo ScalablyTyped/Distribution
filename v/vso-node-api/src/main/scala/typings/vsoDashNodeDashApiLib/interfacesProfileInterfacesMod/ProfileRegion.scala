@@ -1,0 +1,19 @@
+package typings
+package vsoDashNodeDashApiLib.interfacesProfileInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait ProfileRegion extends js.Object {
+  /**
+       * The two-letter code defined in ISO 3166 for the country/region.
+       */
+  var code: java.lang.String
+  /**
+       * Localized country/region name
+       */
+  var name: java.lang.String
+}
+

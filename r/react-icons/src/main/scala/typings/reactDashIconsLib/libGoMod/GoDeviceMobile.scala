@@ -1,0 +1,12 @@
+package typings
+package reactDashIconsLib.libGoMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-icons/lib/go", "GoDeviceMobile")
+@js.native
+class GoDeviceMobile ()
+  extends reactDashIconsLib.goDeviceDashMobileMod.default
+

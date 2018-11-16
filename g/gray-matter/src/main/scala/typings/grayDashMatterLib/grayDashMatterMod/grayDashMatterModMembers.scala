@@ -1,0 +1,13 @@
+package typings
+package grayDashMatterLib.grayDashMatterMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("gray-matter", JSImport.Namespace)
+@js.native
+object grayDashMatterModMembers extends js.Object {
+  var default: GrayMatter = js.native
+}
+

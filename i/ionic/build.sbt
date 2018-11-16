@@ -1,0 +1,67 @@
+organization := "com.scalablytyped"
+name := "ionic"
+version := "4.3.0-8ed17e"
+scalaVersion := "2.12.7"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181102Z-d346e3",
+  "com.scalablytyped" %%% "chalk" % "2.4.1-ef8d2c",
+  "com.scalablytyped" %%% "color-name" % "1.1-dt-20181102Z-8ba882",
+  "com.scalablytyped" %%% "cookiejar" % "2.1-dt-20181102Z-16aaa7",
+  "com.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181102Z-fdaa94",
+  "com.scalablytyped" %%% "diff" % "3.5-dt-20181105Z-5885f0",
+  "com.scalablytyped" %%% "elementtree" % "0.1-dt-20181102Z-175a39",
+  "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20181102Z-6ced09",
+  "com.scalablytyped" %%% "glob" % "7.1-dt-20181102Z-ea59e6",
+  "com.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20181102Z-3345a7",
+  "com.scalablytyped" %%% "ionic__cli-framework" % "1.2.0-843265",
+  "com.scalablytyped" %%% "ionic__discover" % "1.0.7-997397",
+  "com.scalablytyped" %%% "ionic__utils-fs" % "0.0.4-9dc85e",
+  "com.scalablytyped" %%% "ionic__utils-network" % "0.0.4-019233",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181109Z-67570f",
+  "com.scalablytyped" %%% "minimatch" % "3.0-dt-20181102Z-8447c6",
+  "com.scalablytyped" %%% "minimist" % "1.2.0-dt-20181102Z-8bed80",
+  "com.scalablytyped" %%% "ncp" % "v2.0.0-dt-20181102Z-333153",
+  "com.scalablytyped" %%% "netmask" % "1.0.5-dt-20181102Z-8907c8",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-806eaf",
+  "com.scalablytyped" %%% "opn" % "5.1-dt-20181102Z-fff188",
+  "com.scalablytyped" %%% "os-name" % "2.0-dt-20181102Z-48e22b",
+  "com.scalablytyped" %%% "rimraf" % "2.0-dt-20181102Z-f07fb0",
+  "com.scalablytyped" %%% "rx" % "4.1-dt-20181102Z-3fe026",
+  "com.scalablytyped" %%% "rx-core" % "4.0-dt-20181102Z-85961b",
+  "com.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20181102Z-063c8e",
+  "com.scalablytyped" %%% "rx-lite" % "4.0-dt-20181102Z-6860e9",
+  "com.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20181102Z-e15cd4",
+  "com.scalablytyped" %%% "rx-lite-async" % "4.0-dt-20181102Z-1425ea",
+  "com.scalablytyped" %%% "rx-lite-backpressure" % "4.0-dt-20181102Z-cf9944",
+  "com.scalablytyped" %%% "rx-lite-coincidence" % "4.0-dt-20181102Z-f758a5",
+  "com.scalablytyped" %%% "rx-lite-experimental" % "4.0-dt-20181102Z-342bd4",
+  "com.scalablytyped" %%% "rx-lite-joinpatterns" % "4.0-dt-20181102Z-65b141",
+  "com.scalablytyped" %%% "rx-lite-testing" % "4.0-dt-20181102Z-1e0f71",
+  "com.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20181102Z-b11f3c",
+  "com.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20181102Z-ffc687",
+  "com.scalablytyped" %%% "semver" % "5.5-dt-20181102Z-92c73a",
+  "com.scalablytyped" %%% "split2" % "2.1.0-dt-20181102Z-9e351d",
+  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "string-width" % "2.0-dt-20181102Z-877dbf",
+  "com.scalablytyped" %%% "strip-ansi" % "3.0-dt-20181102Z-bc25ba",
+  "com.scalablytyped" %%% "superagent" % "3.8-dt-20181102Z-03f2d9",
+  "com.scalablytyped" %%% "supports-color" % "5.3-dt-20181102Z-2c93a8",
+  "com.scalablytyped" %%% "tar" % "4.0-dt-20181102Z-9634aa",
+  "com.scalablytyped" %%% "through" % "0.0-unknown-dt-20181102Z-7ae258",
+  "com.scalablytyped" %%% "through2" % "2.0-dt-20181102Z-a2eea1",
+  "com.scalablytyped" %%% "tree-kill" % "1.2.0-82c5f2",
+  "com.scalablytyped" %%% "tslib" % "1.9.3-89a8f4",
+  "com.scalablytyped" %%% "untildify" % "3.0-dt-20181102Z-3be8e3",
+  "com.scalablytyped" %%% "update-notifier" % "2.5-dt-20181102Z-92f116",
+  "com.scalablytyped" %%% "uuid" % "3.4-dt-20181102Z-8308dc",
+  "com.scalablytyped" %%% "wrap-ansi" % "v3.0.0-dt-20181102Z-5b0a52",
+  "com.scalablytyped" %%% "write-file-atomic" % "2.1-dt-20181102Z-2ec8bc",
+  "com.scalablytyped" %%% "ws" % "6.0-dt-20181102Z-6a247d",
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+publishArtifact in packageDoc := false
+scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+bintrayRepository := "ScalablyTyped"
+        

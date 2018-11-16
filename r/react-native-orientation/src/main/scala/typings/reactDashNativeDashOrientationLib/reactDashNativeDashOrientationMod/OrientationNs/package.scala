@@ -1,0 +1,11 @@
+package typings
+package reactDashNativeDashOrientationLib.reactDashNativeDashOrientationMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object OrientationNs {
+  type orientation = reactDashNativeDashOrientationLib.reactDashNativeDashOrientationLibStrings.LANDSCAPE | reactDashNativeDashOrientationLib.reactDashNativeDashOrientationLibStrings.PORTRAIT | reactDashNativeDashOrientationLib.reactDashNativeDashOrientationLibStrings.UNKNOWN | reactDashNativeDashOrientationLib.reactDashNativeDashOrientationLibStrings.PORTRAITUPSIDEDOWN
+  type specificOrientation = reactDashNativeDashOrientationLib.reactDashNativeDashOrientationLibStrings.`LANDSCAPE-LEFT` | reactDashNativeDashOrientationLib.reactDashNativeDashOrientationLibStrings.`LANDSCAPE-RIGHT` | reactDashNativeDashOrientationLib.reactDashNativeDashOrientationLibStrings.PORTRAIT | reactDashNativeDashOrientationLib.reactDashNativeDashOrientationLibStrings.UNKNOWN | reactDashNativeDashOrientationLib.reactDashNativeDashOrientationLibStrings.PORTRAITUPSIDEDOWN
+}

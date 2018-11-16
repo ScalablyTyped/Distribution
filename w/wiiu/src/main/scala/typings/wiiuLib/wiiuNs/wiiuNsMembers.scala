@@ -1,0 +1,15 @@
+package typings
+package wiiuLib.wiiuNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("wiiu")
+@js.native
+object wiiuNsMembers extends js.Object {
+  var gamepad: WiiuGamePad = js.native
+  var imageview: ImageView = js.native
+  var videoplayer: VideoPlayer = js.native
+}
+

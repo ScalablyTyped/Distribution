@@ -1,0 +1,13 @@
+package typings
+package mutexifyLib.mutexifyMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("mutexify", JSImport.Namespace)
+@js.native
+object mutexifyModMembers extends js.Object {
+  def apply(): Lock = js.native
+}
+

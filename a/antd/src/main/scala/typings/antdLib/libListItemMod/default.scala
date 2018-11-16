@@ -1,0 +1,24 @@
+package typings
+package antdLib.libListItemMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("antd/lib/list/Item", JSImport.Default)
+@js.native
+class default () extends Item
+
+@JSImport("antd/lib/list/Item", JSImport.Default)
+@js.native
+object default extends js.Object {
+  @JSName("Meta")
+  var Meta_Original: js.Function1[
+    /* props */ antdLib.libListItemMod.ListItemMetaProps, 
+    reactLib.reactMod.Global.JSXNs.Element
+  ] = js.native
+  var contextTypes: antdLib.Anon_Grid = js.native
+  var propTypes: antdLib.Anon_Xs = js.native
+  def Meta(props: antdLib.libListItemMod.ListItemMetaProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+}
+

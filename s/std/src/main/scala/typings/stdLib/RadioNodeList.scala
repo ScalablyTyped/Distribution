@@ -1,0 +1,17 @@
+package typings
+package stdLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait RadioNodeList extends NodeList {
+  var value: java.lang.String = js.native
+}
+
+@JSGlobal("RadioNodeList")
+@js.native
+object RadioNodeList
+  extends ScalablyTyped.runtime.Instantiable0[RadioNodeList]
+

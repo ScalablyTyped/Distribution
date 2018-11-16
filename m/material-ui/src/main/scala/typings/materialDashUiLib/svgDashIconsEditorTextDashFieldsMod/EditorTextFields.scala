@@ -1,0 +1,12 @@
+package typings
+package materialDashUiLib.svgDashIconsEditorTextDashFieldsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("material-ui/svg-icons/editor/text-fields", "EditorTextFields")
+@js.native
+class EditorTextFields ()
+  extends materialDashUiLib.underscoreUnderscoreMaterialUINs.SvgIcon
+

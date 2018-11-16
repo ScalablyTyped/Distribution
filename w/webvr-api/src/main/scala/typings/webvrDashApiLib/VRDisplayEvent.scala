@@ -1,0 +1,19 @@
+package typings
+package webvrDashApiLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait VRDisplayEvent
+  extends stdLib.Event {
+  val display: VRDisplay = js.native
+  val reason: VRDisplayEventReason_dt_alias | scala.Null = js.native
+}
+
+@JSGlobal("VRDisplayEvent")
+@js.native
+object VRDisplayEvent
+  extends ScalablyTyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ VRDisplayEventInit, VRDisplayEvent]
+

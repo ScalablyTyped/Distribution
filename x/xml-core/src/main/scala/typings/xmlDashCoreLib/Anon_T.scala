@@ -1,0 +1,11 @@
+package typings
+package xmlDashCoreLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Anon_T[T /* <: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlObject */]
+  extends ScalablyTyped.runtime.Instantiable0[T]
+

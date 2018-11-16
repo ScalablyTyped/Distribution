@@ -1,0 +1,32 @@
+package typings
+package kendoDashUiLib.kendoNs.dataNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("kendo.data.Model")
+@js.native
+class Model () extends ObservableObject {
+  def this(data: js.Any) = this()
+  var _defaultId: js.Any = js.native
+  var defaults: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
+  var dirty: scala.Boolean = js.native
+  var fields: DataSourceSchemaModelFields = js.native
+  var id: js.Any = js.native
+  var idField: java.lang.String = js.native
+  def accept(): scala.Unit = js.native
+  def accept(data: js.Any): scala.Unit = js.native
+  def editable(field: java.lang.String): scala.Boolean = js.native
+  def isNew(): scala.Boolean = js.native
+}
+
+@JSGlobal("kendo.data.Model")
+@js.native
+object Model extends js.Object {
+  var fields: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelFields = js.native
+  var idField: java.lang.String = js.native
+  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsArray): ScalablyTyped.runtime.Instantiable1[/* data */ js.UndefOr[/* data */ js.Any], kendoDashUiLib.kendoNs.dataNs.Model] = js.native
+  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsObject): ScalablyTyped.runtime.Instantiable1[/* data */ js.UndefOr[/* data */ js.Any], kendoDashUiLib.kendoNs.dataNs.Model] = js.native
+}
+

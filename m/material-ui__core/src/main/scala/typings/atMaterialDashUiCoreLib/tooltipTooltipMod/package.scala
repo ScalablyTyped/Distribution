@@ -1,0 +1,10 @@
+package typings
+package atMaterialDashUiCoreLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object tooltipTooltipMod {
+  type TooltipClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.popper | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.tooltip | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.touch | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.tooltipPlacementLeft | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.tooltipPlacementRight | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.tooltipPlacementTop | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.tooltipPlacementBottom
+}

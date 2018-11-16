@@ -1,0 +1,13 @@
+package typings
+package i18nextDashExpressDashMiddlewareLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* This can be used to `require` the library as a side effect.
+  If it is a global library this will make scalajs-bundler include it */
+@JSImport("i18next-express-middleware", JSImport.Namespace)
+@js.native
+object i18nextDashExpressDashMiddlewareLibRequire extends js.Object
+

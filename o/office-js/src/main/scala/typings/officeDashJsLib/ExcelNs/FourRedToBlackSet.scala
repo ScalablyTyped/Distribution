@@ -1,0 +1,16 @@
+package typings
+package officeDashJsLib.ExcelNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait FourRedToBlackSet
+  extends /* index */ ScalablyTyped.runtime.NumberDictionary[Icon] {
+  var blackCircle: Icon
+  var grayCircle: Icon
+  var pinkCircle: Icon
+  var redCircle: Icon
+}
+

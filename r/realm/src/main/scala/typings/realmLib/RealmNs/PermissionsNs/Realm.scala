@@ -1,0 +1,21 @@
+package typings
+package realmLib.RealmNs.PermissionsNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("Realm.Permissions.Realm")
+@js.native
+class Realm () extends js.Object {
+  var id: scala.Double = js.native
+  var permissions: js.Array[Permission] = js.native
+  def findOrCreate(roleName: java.lang.String): Permission = js.native
+}
+
+@JSGlobal("Realm.Permissions.Realm")
+@js.native
+object Realm extends js.Object {
+  var schema: realmLib.RealmNs.ObjectSchema = js.native
+}
+

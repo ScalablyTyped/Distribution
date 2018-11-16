@@ -1,0 +1,39 @@
+package typings
+package igniteDashUiLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait IgPivotDataSelectorDataSourceOptions
+  extends /**
+	 * Option for IgPivotDataSelectorDataSourceOptions
+	 */
+/* optionName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  /**
+  	 * A list of hierarchy names separated by comma (,). These will be the hierarchies in the columns of the data source.
+  	 */
+  var columns: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * A list of hierarchy names separated by comma (,). These will be hierarchies in the filters of the data source.
+  	 */
+  var filters: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Settings for creating an instance of $.ig.OlapFlatDataSource.
+  	 */
+  var flatDataOptions: js.UndefOr[IgPivotDataSelectorDataSourceOptionsFlatDataOptions] = js.undefined
+  /**
+  	 * A list of measure names separated by comma (,). These will be the measures of the data source.
+  	 */
+  var measures: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * A list of hierarchy names separated by comma (,). These will be the hierarchies in the rows of the data source.
+  	 */
+  var rows: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Settings for creating an instance of $.ig.OlapXmlaDataSource.
+  	 */
+  var xmlaOptions: js.UndefOr[IgPivotDataSelectorDataSourceOptionsXmlaOptions] = js.undefined
+}
+

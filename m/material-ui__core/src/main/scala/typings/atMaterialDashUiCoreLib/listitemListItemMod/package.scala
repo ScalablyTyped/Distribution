@@ -1,0 +1,10 @@
+package typings
+package atMaterialDashUiCoreLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object listitemListItemMod {
+  type ListItemClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.root | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.container | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.focusVisible | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dense | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.disabled | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.divider | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.gutters | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.button | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondaryAction | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.selected
+}

@@ -1,0 +1,16 @@
+package typings
+package phantomjsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait ResourceRequest extends js.Object {
+  var headers: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var id: scala.Double
+  var method: java.lang.String
+  var time: stdLib.Date
+  var url: java.lang.String
+}
+

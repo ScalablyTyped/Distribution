@@ -1,0 +1,10 @@
+package typings
+package atMaterialDashUiCoreLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object appbarAppBarMod {
+  type AppBarClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.root | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.positionFixed | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.positionAbsolute | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.positionSticky | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.positionStatic | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.positionRelative | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.colorDefault | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.colorPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.colorSecondary
+}

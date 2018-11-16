@@ -1,0 +1,24 @@
+package typings
+package cesiumLib.cesiumMod.CesiumNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait EllipsoidGraphics extends js.Object {
+  var definitionChanged: Event = js.native
+  var fill: Property = js.native
+  var material: MaterialProperty = js.native
+  var outline: Property = js.native
+  var outlineColor: Property = js.native
+  var outlineWidth: Property = js.native
+  var radii: Property = js.native
+  var show: Property = js.native
+  var slicePartitions: Property = js.native
+  var stackPartitions: Property = js.native
+  var subdivisions: Property = js.native
+  def clone(result: EllipsoidGraphics): EllipsoidGraphics = js.native
+  def merge(source: EllipsoidGraphics): EllipsoidGraphics = js.native
+}
+

@@ -1,0 +1,18 @@
+package typings
+package ionicLib.definitionsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait ServeDetails extends js.Object {
+  var custom: scala.Boolean
+  var externalAddress: java.lang.String
+  var externalNetworkInterfaces: js.Array[atIonicUtilsDashNetworkLib.utilsDashNetworkMod.NetworkInterface]
+  var externallyAccessible: scala.Boolean
+  var localAddress: java.lang.String
+  var port: scala.Double
+  var protocol: java.lang.String
+}
+

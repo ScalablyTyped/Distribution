@@ -1,0 +1,13 @@
+package typings
+package reactDashMdLib.libMenusMenuMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-md/lib/Menus/Menu", JSImport.Namespace)
+@js.native
+object libMenusMenuModMembers extends js.Object {
+  val default: MenuComponent = js.native
+}
+

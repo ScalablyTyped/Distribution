@@ -1,0 +1,12 @@
+package typings
+package materialDashUiLib.svgDashIconsAvAvDashTimerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("material-ui/svg-icons/av/av-timer", "AvAvTimer")
+@js.native
+class AvAvTimer ()
+  extends materialDashUiLib.underscoreUnderscoreMaterialUINs.SvgIcon
+

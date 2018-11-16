@@ -1,0 +1,19 @@
+package typings
+package antdLib.libGridRowMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Row
+  extends reactLib.reactMod.Component[RowProps, RowState, js.Any] {
+  @JSName("state")
+  var state_Row: RowState = js.native
+  @JSName("componentDidMount")
+  def componentDidMount_MRow(): scala.Unit = js.native
+  @JSName("componentWillUnmount")
+  def componentWillUnmount_MRow(): scala.Unit = js.native
+  def getGutter(): js.UndefOr[scala.Double] = js.native
+}
+

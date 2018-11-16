@@ -1,0 +1,14 @@
+package typings
+package activedirectory2Lib.activedirectory2Mod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait FindResult extends js.Object {
+  var groups: js.Array[js.Object]
+  var other: js.Array[js.Object]
+  var users: js.Array[js.Object]
+}
+

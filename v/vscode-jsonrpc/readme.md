@@ -1,0 +1,5 @@
+```
+/**
+ * A language server message
+ */
+```

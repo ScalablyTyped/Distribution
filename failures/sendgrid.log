@@ -1,0 +1,5 @@
+[debug] PhaseRunner.scala:78 Success [id => sendgrid, phase => typescript] 
+[warn ] PhaseRunner.scala:64 Failed because of, [bottleneck => InFile(/home/olvind/tmp/tso-cache/npm/node_modules/bottleneck/bottleneck.d.ts): Parse error at 1.1 comment expected] [id => sendgrid, phase => typescript] 
+[debug] PhaseRunner.scala:82 Failure, [bottleneck => InFile(/home/olvind/tmp/tso-cache/npm/node_modules/bottleneck/bottleneck.d.ts): Parse error at 1.1 comment expected] [id => sendgrid, phase => typescript] 
+[debug] PhaseRunner.scala:82 Failure, [bottleneck => InFile(/home/olvind/tmp/tso-cache/npm/node_modules/bottleneck/bottleneck.d.ts): Parse error at 1.1 comment expected] [id => sendgrid, phase => scala.js] 
+[debug] PhaseRunner.scala:82 Failure, [bottleneck => InFile(/home/olvind/tmp/tso-cache/npm/node_modules/bottleneck/bottleneck.d.ts): Parse error at 1.1 comment expected] [id => sendgrid, phase => build] 

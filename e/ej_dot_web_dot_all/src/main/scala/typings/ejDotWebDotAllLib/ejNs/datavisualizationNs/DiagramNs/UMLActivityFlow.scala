@@ -1,0 +1,37 @@
+package typings
+package ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait UMLActivityFlow extends js.Object
+
+@JSGlobal("ej.datavisualization.Diagram.UMLActivityFlow")
+@js.native
+object UMLActivityFlow extends js.Object {
+  //Defines a activity flow as Control in UML Activity Diagram
+  @js.native
+  sealed trait Control
+    extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.UMLActivityFlow
+  
+  //Defines a activity flow as Exception in UML Activity Diagram
+  @js.native
+  sealed trait Exception
+    extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.UMLActivityFlow
+  
+  //Defines a activity flow as Object in UML Activity Diagram
+  @js.native
+  sealed trait Object
+    extends ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.UMLActivityFlow
+  
+  val Control: Control with java.lang.String = js.native
+  val Exception: Exception with java.lang.String = js.native
+  val Object: Object with java.lang.String = js.native
+  @JSBracketAccess
+  def apply(value: java.lang.String): js.UndefOr[
+    ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.UMLActivityFlow with java.lang.String
+  ] = js.native
+}
+

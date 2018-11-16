@@ -1,0 +1,9 @@
+package typings
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object atFirebaseDatabaseDashTypesLib {
+  type EventType = atFirebaseDatabaseDashTypesLib.atFirebaseDatabaseDashTypesLibStrings.value | atFirebaseDatabaseDashTypesLib.atFirebaseDatabaseDashTypesLibStrings.child_added | atFirebaseDatabaseDashTypesLib.atFirebaseDatabaseDashTypesLibStrings.child_changed | atFirebaseDatabaseDashTypesLib.atFirebaseDatabaseDashTypesLibStrings.child_moved | atFirebaseDatabaseDashTypesLib.atFirebaseDatabaseDashTypesLibStrings.child_removed
+}

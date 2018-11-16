@@ -1,0 +1,14 @@
+package typings
+package gapiDotClientDotAdexchangebuyer2Lib.gapiNs.clientNs.adexchangebuyer2Ns
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait AccountsResource extends js.Object {
+  var clients: ClientsResource
+  var creatives: CreativesResource
+  var filterSets: FilterSetsResource
+}
+

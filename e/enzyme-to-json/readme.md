@@ -1,0 +1,7 @@
+```
+// Type definitions for enzyme-to-json 1.5
+// Project: https://github.com/adriantoine/enzyme-to-json#readme
+// Definitions by: Joscha Feth <https://github.com/joscha>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.8
+```

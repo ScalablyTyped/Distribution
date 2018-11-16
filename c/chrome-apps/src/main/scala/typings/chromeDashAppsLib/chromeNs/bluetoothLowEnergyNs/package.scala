@@ -1,0 +1,12 @@
+package typings
+package chromeDashAppsLib.chromeNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object bluetoothLowEnergyNs {
+  type AdvertisementType = chromeDashAppsLib.chromeDashAppsLibStrings.broadcast | chromeDashAppsLib.chromeDashAppsLibStrings.peripheral
+  type CharacteristicProperties = chromeDashAppsLib.chromeDashAppsLibStrings.broadcast | chromeDashAppsLib.chromeDashAppsLibStrings.read | chromeDashAppsLib.chromeDashAppsLibStrings.writeWithoutResponse | chromeDashAppsLib.chromeDashAppsLibStrings.write | chromeDashAppsLib.chromeDashAppsLibStrings.notify | chromeDashAppsLib.chromeDashAppsLibStrings.indicate | chromeDashAppsLib.chromeDashAppsLibStrings.authenticatedSignedWrites | chromeDashAppsLib.chromeDashAppsLibStrings.extendedProperties | chromeDashAppsLib.chromeDashAppsLibStrings.reliableWrite | chromeDashAppsLib.chromeDashAppsLibStrings.writableAuxiliaries | chromeDashAppsLib.chromeDashAppsLibStrings.encryptRead | chromeDashAppsLib.chromeDashAppsLibStrings.encryptWrite | chromeDashAppsLib.chromeDashAppsLibStrings.encryptAuthenticatedRead | chromeDashAppsLib.chromeDashAppsLibStrings.encryptAuthenticatedWrite
+  type DescriptorPermissions = chromeDashAppsLib.chromeDashAppsLibStrings.read | chromeDashAppsLib.chromeDashAppsLibStrings.write | chromeDashAppsLib.chromeDashAppsLibStrings.encryptedRead | chromeDashAppsLib.chromeDashAppsLibStrings.encryptedWrite | chromeDashAppsLib.chromeDashAppsLibStrings.encryptedAuthenticatedRead | chromeDashAppsLib.chromeDashAppsLibStrings.encryptedAuthenticatedWrite
+}

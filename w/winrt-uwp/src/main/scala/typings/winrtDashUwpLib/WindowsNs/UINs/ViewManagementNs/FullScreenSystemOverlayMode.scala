@@ -1,0 +1,32 @@
+package typings
+package winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait FullScreenSystemOverlayMode extends js.Object
+
+/** Defines constants that specify how the app responds to edge gestures when in full-screen mode. */
+@JSGlobal("Windows.UI.ViewManagement.FullScreenSystemOverlayMode")
+@js.native
+object FullScreenSystemOverlayMode extends js.Object {
+  /** Edge gestures call up a temporary UI, which in turn can be used to call up system overlays corresponding to that edge. */
+  @js.native
+  sealed trait minimal
+    extends winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.FullScreenSystemOverlayMode
+  
+  /** Edge gestures call up system overlays, like the taskbar and title bar. */
+  @js.native
+  sealed trait standard
+    extends winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.FullScreenSystemOverlayMode
+  
+  val minimal: minimal with java.lang.String = js.native
+  val standard: standard with java.lang.String = js.native
+  @JSBracketAccess
+  def apply(value: java.lang.String): js.UndefOr[
+    winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.FullScreenSystemOverlayMode with java.lang.String
+  ] = js.native
+}
+

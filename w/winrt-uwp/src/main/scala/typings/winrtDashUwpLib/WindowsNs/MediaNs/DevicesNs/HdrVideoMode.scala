@@ -1,0 +1,36 @@
+package typings
+package winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait HdrVideoMode extends js.Object
+
+/** Defines the High Dynamic Range (HDR) video modes. */
+@JSGlobal("Windows.Media.Devices.HdrVideoMode")
+@js.native
+object HdrVideoMode extends js.Object {
+  /** The system dynamically enables HDR video capture when appropriate. */
+  @js.native
+  sealed trait auto
+    extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.HdrVideoMode
+  
+  /** HDR video capture is disabled. */
+  @js.native
+  sealed trait off
+    extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.HdrVideoMode
+  
+  /** HDR video capture is enabled. */
+  @js.native
+  sealed trait on
+    extends winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.HdrVideoMode
+  
+  val auto: auto with java.lang.String = js.native
+  val off: off with java.lang.String = js.native
+  val on: on with java.lang.String = js.native
+  @JSBracketAccess
+  def apply(value: java.lang.String): js.UndefOr[winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.HdrVideoMode with java.lang.String] = js.native
+}
+

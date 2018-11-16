@@ -1,0 +1,94 @@
+package typings
+package atMaterialDashUiCoreLib.stylesPropsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait ComponentsPropsList extends js.Object {
+  var MuiAppBar: atMaterialDashUiCoreLib.appbarAppBarMod.AppBarProps
+  var MuiAvatar: atMaterialDashUiCoreLib.avatarAvatarMod.AvatarProps
+  var MuiBackdrop: atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps
+  var MuiBadge: atMaterialDashUiCoreLib.badgeBadgeMod.BadgeProps
+  var MuiBottomNavigation: atMaterialDashUiCoreLib.bottomnavigationBottomNavigationMod.BottomNavigationProps
+  var MuiBottomNavigationAction: atMaterialDashUiCoreLib.bottomnavigationactionBottomNavigationActionMod.BottomNavigationActionProps
+  var MuiButton: atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps
+  var MuiButtonBase: atMaterialDashUiCoreLib.buttonbaseButtonBaseMod.ButtonBaseProps
+  var MuiCard: atMaterialDashUiCoreLib.cardCardMod.CardProps
+  var MuiCardActions: atMaterialDashUiCoreLib.cardactionsCardActionsMod.CardActionsProps
+  var MuiCardContent: atMaterialDashUiCoreLib.cardcontentCardContentMod.CardContentProps
+  var MuiCardHeader: atMaterialDashUiCoreLib.cardheaderCardHeaderMod.CardHeaderProps
+  var MuiCardMedia: atMaterialDashUiCoreLib.cardmediaCardMediaMod.CardMediaProps
+  var MuiCheckbox: atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxProps
+  var MuiChip: atMaterialDashUiCoreLib.chipChipMod.ChipProps
+  var MuiCircularProgress: atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressProps
+  var MuiCollapse: atMaterialDashUiCoreLib.collapseCollapseMod.CollapseProps
+  var MuiCssBaseline: atMaterialDashUiCoreLib.cssbaselineCssBaselineMod.CssBaselineProps
+  var MuiDialog: atMaterialDashUiCoreLib.dialogDialogMod.DialogProps
+  var MuiDialogActions: atMaterialDashUiCoreLib.dialogactionsDialogActionsMod.DialogActionsProps
+  var MuiDialogContent: atMaterialDashUiCoreLib.dialogcontentDialogContentMod.DialogContentProps
+  var MuiDialogContentText: atMaterialDashUiCoreLib.dialogcontenttextDialogContentTextMod.DialogContentTextProps
+  var MuiDialogTitle: atMaterialDashUiCoreLib.dialogtitleDialogTitleMod.DialogTitleProps
+  var MuiDivider: atMaterialDashUiCoreLib.dividerDividerMod.DividerProps
+  var MuiDrawer: atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps
+  var MuiExpansionPanel: atMaterialDashUiCoreLib.expansionpanelExpansionPanelMod.ExpansionPanelProps
+  var MuiExpansionPanelActions: atMaterialDashUiCoreLib.expansionpanelactionsExpansionPanelActionsMod.ExpansionPanelActionsProps
+  var MuiExpansionPanelDetails: atMaterialDashUiCoreLib.expansionpaneldetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps
+  var MuiExpansionPanelSummary: atMaterialDashUiCoreLib.expansionpanelsummaryExpansionPanelSummaryMod.ExpansionPanelSummaryProps
+  var MuiFormControl: atMaterialDashUiCoreLib.formcontrolFormControlMod.FormControlProps
+  var MuiFormControlLabel: atMaterialDashUiCoreLib.formcontrollabelFormControlLabelMod.FormControlLabelProps
+  var MuiFormGroup: atMaterialDashUiCoreLib.formgroupFormGroupMod.FormGroupProps
+  var MuiFormHelperText: atMaterialDashUiCoreLib.formhelpertextFormHelperTextMod.FormHelperTextProps
+  var MuiFormLabel: atMaterialDashUiCoreLib.formlabelFormLabelMod.FormLabelProps
+  var MuiGrid: atMaterialDashUiCoreLib.gridGridMod.GridProps
+  var MuiGridList: atMaterialDashUiCoreLib.gridlistGridListMod.GridListProps
+  var MuiGridListTile: atMaterialDashUiCoreLib.gridlisttileGridListTileMod.GridListTileProps
+  var MuiGridListTileBar: atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarProps
+  var MuiIcon: atMaterialDashUiCoreLib.iconIconMod.IconProps
+  var MuiIconButton: atMaterialDashUiCoreLib.iconbuttonIconButtonMod.IconButtonProps
+  var MuiInput: atMaterialDashUiCoreLib.inputInputMod.InputProps
+  var MuiInputAdornment: atMaterialDashUiCoreLib.inputadornmentInputAdornmentMod.InputAdornmentProps
+  var MuiInputLabel: atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelProps
+  var MuiLinearProgress: atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressProps
+  var MuiList: atMaterialDashUiCoreLib.listListMod.ListProps
+  var MuiListItem: atMaterialDashUiCoreLib.listitemListItemMod.ListItemProps
+  var MuiListItemAvatar: atMaterialDashUiCoreLib.listitemavatarListItemAvatarMod.ListItemAvatarProps
+  var MuiListItemIcon: atMaterialDashUiCoreLib.listitemiconListItemIconMod.ListItemIconProps
+  var MuiListItemSecondaryAction: atMaterialDashUiCoreLib.listitemsecondaryactionListItemSecondaryActionMod.ListItemSecondaryActionProps
+  var MuiListItemText: atMaterialDashUiCoreLib.listitemtextListItemTextMod.ListItemTextProps
+  var MuiListSubheader: atMaterialDashUiCoreLib.listsubheaderListSubheaderMod.ListSubheaderProps
+  var MuiMenu: atMaterialDashUiCoreLib.menuMenuMod.MenuProps
+  var MuiMenuItem: atMaterialDashUiCoreLib.menuitemMenuItemMod.MenuItemProps
+  var MuiMobileStepper: atMaterialDashUiCoreLib.mobilestepperMobileStepperMod.MobileStepperProps
+  var MuiModal: atMaterialDashUiCoreLib.modalModalMod.ModalProps
+  var MuiNativeSelect: atMaterialDashUiCoreLib.nativeselectNativeSelectMod.NativeSelectProps
+  var MuiPaper: atMaterialDashUiCoreLib.paperPaperMod.PaperProps
+  var MuiPopover: atMaterialDashUiCoreLib.popoverPopoverMod.PopoverProps
+  var MuiRadio: atMaterialDashUiCoreLib.radioRadioMod.RadioProps
+  var MuiSelect: atMaterialDashUiCoreLib.selectSelectMod.SelectProps
+  var MuiSnackbar: atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarProps
+  var MuiSnackbarContent: atMaterialDashUiCoreLib.snackbarcontentSnackbarContentMod.SnackbarContentProps
+  var MuiStep: atMaterialDashUiCoreLib.stepStepMod.StepProps
+  var MuiStepButton: atMaterialDashUiCoreLib.stepbuttonStepButtonMod.StepButtonProps
+  var MuiStepConnector: atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorProps
+  var MuiStepContent: atMaterialDashUiCoreLib.stepcontentStepContentMod.StepContentProps
+  var MuiStepIcon: atMaterialDashUiCoreLib.stepiconStepIconMod.StepIconProps
+  var MuiStepLabel: atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelProps
+  var MuiStepper: atMaterialDashUiCoreLib.stepperStepperMod.StepperProps
+  var MuiSvgIcon: atMaterialDashUiCoreLib.svgiconSvgIconMod.SvgIconProps
+  var MuiSwitch: atMaterialDashUiCoreLib.switchSwitchMod.SwitchProps
+  var MuiSwitchBase: atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseProps
+  var MuiTab: atMaterialDashUiCoreLib.tabTabMod.TabProps
+  var MuiTable: atMaterialDashUiCoreLib.tableTableMod.TableProps
+  var MuiTableCell: atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellProps
+  var MuiTablePagination: atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationProps
+  var MuiTableRow: atMaterialDashUiCoreLib.tablerowTableRowMod.TableRowProps
+  var MuiTableSortLabel: atMaterialDashUiCoreLib.tablesortlabelTableSortLabelMod.TableSortLabelProps
+  var MuiTabs: atMaterialDashUiCoreLib.tabsTabsMod.TabsProps
+  var MuiToolbar: atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps
+  var MuiTooltip: atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipProps
+  var MuiTouchRipple: atMaterialDashUiCoreLib.buttonbaseTouchRippleMod.TouchRippleProps
+  var MuiTypography: atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps
+}
+

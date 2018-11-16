@@ -1,0 +1,16 @@
+package typings
+package steamDashLoginLib.steamDashLoginMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("steam-login", JSImport.Namespace)
+@js.native
+object steamDashLoginModMembers extends js.Object {
+  def authenticate(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def enforceLogin(redirect: java.lang.String): expressLib.expressMod.eNs.RequestHandler = js.native
+  def middleware(opts: MiddlewareOptions): expressLib.expressMod.eNs.RequestHandler = js.native
+  def verify(): expressLib.expressMod.eNs.RequestHandler = js.native
+}
+

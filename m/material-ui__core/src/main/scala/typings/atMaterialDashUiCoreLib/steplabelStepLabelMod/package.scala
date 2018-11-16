@@ -1,0 +1,10 @@
+package typings
+package atMaterialDashUiCoreLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object steplabelStepLabelMod {
+  type StepLabelClasskey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.root | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.horizontal | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.vertical | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.active | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.completed | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.alternativeLabel | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.disabled | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.label | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.iconContainer | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.labelContainer
+}

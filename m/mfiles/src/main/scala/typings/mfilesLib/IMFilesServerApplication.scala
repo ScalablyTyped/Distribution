@@ -1,0 +1,1099 @@
+package typings
+package mfilesLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait IMFilesServerApplication extends js.Object {
+  val LicenseManagementOperations: IServerLicenseManagementOperations = js.native
+  val LoginAccountOperations: IServerLoginAccountOperations = js.native
+  val ScheduledJobManagementOperations: IServerScheduledJobManagementOperations = js.native
+  val ServerManagementOperations: IServerManagementOperations = js.native
+  val SharedLinkPublicOperations: ISharedLinkPublicOperations = js.native
+  val VaultManagementOperations: IServerVaultManagementOperations = js.native
+  def Connect(
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def Connect(
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def Connect(
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def Connect(
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def Connect(
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def Connect(
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def Connect(
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def Connect(
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectAdministrativeEx(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx3(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectEx4(
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: scala.Null,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    AllowUsingAuthenticationPlugins: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def ConnectWithAuthenticationDataEx2(
+    PluginInfo: IPluginInfo,
+    AuthenticationData: INamedValues,
+    AttemptIdentifier: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    LogicalTargetServer: java.lang.String
+  ): IAuthenticationResult = js.native
+  def ConnectWithAuthenticationDataEx3(
+    PluginInfo: IPluginInfo,
+    AuthenticationData: INamedValues,
+    AttemptIdentifier: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean,
+    LocalComputerName: java.lang.String,
+    AllowAnonymousConnection: scala.Boolean,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): IAuthenticationResult = js.native
+  def ConnectWithoutLogin(
+    TimeZone: ITimeZoneInformation,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    LocalComputerName: java.lang.String,
+    LogicalTargetServer: java.lang.String,
+    ClientCulture: java.lang.String
+  ): mfilesLib.MFilesNs.MFServerConnection = js.native
+  def Disconnect(): scala.Unit = js.native
+  def GetAPIVersion(): IMFilesVersion = js.native
+  def GetAuthenticationPluginInformationEx(
+    UserName: java.lang.String,
+    Domain: java.lang.String,
+    VaultGUID: java.lang.String,
+    HostName: java.lang.String,
+    AccountType: mfilesLib.MFilesNs.MFLoginAccountType,
+    TargetPluginName: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean
+  ): IPluginInfos = js.native
+  def GetAuthenticationPluginsEx(
+    ScopeIndependentOnly: scala.Boolean,
+    ProtocolSequence: java.lang.String,
+    NetworkAddress: java.lang.String,
+    Endpoint: java.lang.String,
+    EncryptedConnection: scala.Boolean
+  ): IPluginInfos = js.native
+  def GetOnlineVaults(): IVaultsOnServer = js.native
+  def GetServerVersion(): IMFilesVersion = js.native
+  def GetTokenAsAuthenticationData(Token: java.lang.String): INamedValues = js.native
+  def GetVaults(): IVaultsOnServer = js.native
+  def LogInAsUserToVault(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType
+  ): IVault = js.native
+  def LogInAsUserToVault(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVault(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVault(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVault(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVault(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVault(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVault(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: java.lang.String,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: java.lang.String,
+    SPN: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: java.lang.String,
+    Domain: scala.Null,
+    SPN: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: java.lang.String,
+    SPN: java.lang.String
+  ): IVault = js.native
+  def LogInAsUserToVaultWithSPN(
+    VaultGUID: java.lang.String,
+    TimeZone: ITimeZoneInformation,
+    AuthType: mfilesLib.MFilesNs.MFAuthType,
+    UserName: scala.Null,
+    Password: scala.Null,
+    Domain: scala.Null,
+    SPN: java.lang.String
+  ): IVault = js.native
+  def LogInToVault(VaultGUID: java.lang.String): IVault = js.native
+  def LogInToVaultAdministrative(VaultGUID: java.lang.String): IVault = js.native
+  def LogInToVaultAdministrativeWithExistingSession(VaultGUID: java.lang.String): IVault = js.native
+  def LogInToVaultEx(VaultGUID: java.lang.String, AllowUsingAuthenticationPlugins: scala.Boolean): IVault = js.native
+  def LogInToVaultWithExistingSession(VaultGUID: java.lang.String): IVault = js.native
+  def TestConnectionToServerEx(
+    Server: java.lang.String,
+    Port: java.lang.String,
+    ProtocolSequence: java.lang.String,
+    EncryptedConnection: scala.Boolean
+  ): scala.Double = js.native
+}
+

@@ -1,0 +1,12 @@
+package typings
+package winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Represents a trigger that activates when the network sends SIM tool commands. Apps receiving this notification then process the SIM tool commands. */
+@JSGlobal("Windows.ApplicationModel.Background.MobileBroadbandDeviceServiceNotificationTrigger")
+@js.native
+class MobileBroadbandDeviceServiceNotificationTrigger () extends js.Object
+

@@ -1,0 +1,19 @@
+package typings
+package gapiDotClientDotFirebaserulesLib.gapiNs.clientNs.firebaserulesNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait TestRulesetRequest extends js.Object {
+  /**
+               * Optional `Source` to be checked for correctness.
+               *
+               * This field must not be set when the resource name refers to a `Ruleset`.
+               */
+  var source: js.UndefOr[Source] = js.undefined
+  /** Inline `TestSuite` to run. */
+  var testSuite: js.UndefOr[TestSuite] = js.undefined
+}
+

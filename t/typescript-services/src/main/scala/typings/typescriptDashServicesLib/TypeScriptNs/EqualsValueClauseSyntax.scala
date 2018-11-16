@@ -1,0 +1,24 @@
+package typings
+package typescriptDashServicesLib.TypeScriptNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("TypeScript.EqualsValueClauseSyntax")
+@js.native
+class EqualsValueClauseSyntax protected () extends SyntaxNode {
+  def this(equalsToken: ISyntaxToken, value: IExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()
+  var equalsToken: ISyntaxToken = js.native
+  var value: IExpressionSyntax = js.native
+  def update(equalsToken: ISyntaxToken, value: IExpressionSyntax): EqualsValueClauseSyntax = js.native
+  def withEqualsToken(equalsToken: ISyntaxToken): EqualsValueClauseSyntax = js.native
+  def withValue(value: IExpressionSyntax): EqualsValueClauseSyntax = js.native
+}
+
+@JSGlobal("TypeScript.EqualsValueClauseSyntax")
+@js.native
+object EqualsValueClauseSyntax extends js.Object {
+  def create1(value: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax): typescriptDashServicesLib.TypeScriptNs.EqualsValueClauseSyntax = js.native
+}
+

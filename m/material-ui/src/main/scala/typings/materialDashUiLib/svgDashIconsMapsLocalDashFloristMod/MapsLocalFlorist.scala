@@ -1,0 +1,12 @@
+package typings
+package materialDashUiLib.svgDashIconsMapsLocalDashFloristMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("material-ui/svg-icons/maps/local-florist", "MapsLocalFlorist")
+@js.native
+class MapsLocalFlorist ()
+  extends materialDashUiLib.underscoreUnderscoreMaterialUINs.SvgIcon
+

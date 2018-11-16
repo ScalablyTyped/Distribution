@@ -1,0 +1,10 @@
+package typings
+package atMaterialDashUiCoreLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object linearprogressLinearProgressMod {
+  type LinearProgressClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.root | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.colorPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.colorSecondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.buffer | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.query | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dashed | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dashedColorPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dashedColorSecondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bar | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.barColorPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.barColorSecondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bar1Indeterminate | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bar2Indeterminate | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bar1Determinate | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bar1Buffer | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bar2Buffer
+}

@@ -1,0 +1,11 @@
+package typings
+package jpushDashReactDashNativeLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait ExtraData
+  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
+

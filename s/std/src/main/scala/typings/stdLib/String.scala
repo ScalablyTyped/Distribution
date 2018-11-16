@@ -1,0 +1,454 @@
+package typings
+package stdLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait String
+  extends /* index */ ScalablyTyped.runtime.NumberDictionary[java.lang.String] {
+  /** Iterator */
+  @JSName(ScalablyTyped.runtime.Symbol.iterator)
+  var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
+  /** Returns the length of a String object. */
+  val length: scala.Double = js.native
+  /**
+       * Returns an <a> HTML anchor element and sets the name attribute to the text value
+       * @param name
+       */
+  def anchor(name: java.lang.String): java.lang.String = js.native
+  /** Returns a <big> HTML element */
+  def big(): java.lang.String = js.native
+  /** Returns a <blink> HTML element */
+  def blink(): java.lang.String = js.native
+  /** Returns a <b> HTML element */
+  def bold(): java.lang.String = js.native
+  /**
+        * Returns the character at the specified index.
+        * @param pos The zero-based index of the desired character.
+        */
+  def charAt(pos: scala.Double): java.lang.String = js.native
+  /**
+        * Returns the Unicode value of the character at the specified location.
+        * @param index The zero-based index of the desired character. If there is no character at the specified index, NaN is returned.
+        */
+  def charCodeAt(index: scala.Double): scala.Double = js.native
+  /**
+       * Returns a nonnegative integer Number less than 1114112 (0x110000) that is the code point
+       * value of the UTF-16 encoded code point starting at the string element at position pos in
+       * the String resulting from converting this object to a String.
+       * If there is no element at that position, the result is undefined.
+       * If a valid UTF-16 surrogate pair does not begin at pos, the result is the code unit at pos.
+       */
+  def codePointAt(pos: scala.Double): js.UndefOr[scala.Double] = js.native
+  /**
+        * Returns a string that contains the concatenation of two or more strings.
+        * @param strings The strings to append to the end of the string.
+        */
+  def concat(strings: java.lang.String*): java.lang.String = js.native
+  /**
+       * Returns true if the sequence of elements of searchString converted to a String is the
+       * same as the corresponding elements of this object (converted to a String) starting at
+       * endPosition – length(this). Otherwise returns false.
+       */
+  def endsWith(searchString: java.lang.String): scala.Boolean = js.native
+  /**
+       * Returns true if the sequence of elements of searchString converted to a String is the
+       * same as the corresponding elements of this object (converted to a String) starting at
+       * endPosition – length(this). Otherwise returns false.
+       */
+  def endsWith(searchString: java.lang.String, endPosition: scala.Double): scala.Boolean = js.native
+  /** Returns a <tt> HTML element */
+  def fixed(): java.lang.String = js.native
+  /** Returns a <font> HTML element and sets the color attribute value */
+  def fontcolor(color: java.lang.String): java.lang.String = js.native
+  /** Returns a <font> HTML element and sets the size attribute value */
+  def fontsize(size: java.lang.String): java.lang.String = js.native
+  /** Returns a <font> HTML element and sets the size attribute value */
+  def fontsize(size: scala.Double): java.lang.String = js.native
+  /**
+       * Returns true if searchString appears as a substring of the result of converting this
+       * object to a String, at one or more positions that are
+       * greater than or equal to position; otherwise, returns false.
+       * @param searchString search string
+       * @param position If position is undefined, 0 is assumed, so as to search all of the String.
+       */
+  def includes(searchString: java.lang.String): scala.Boolean = js.native
+  /**
+       * Returns true if searchString appears as a substring of the result of converting this
+       * object to a String, at one or more positions that are
+       * greater than or equal to position; otherwise, returns false.
+       * @param searchString search string
+       * @param position If position is undefined, 0 is assumed, so as to search all of the String.
+       */
+  def includes(searchString: java.lang.String, position: scala.Double): scala.Boolean = js.native
+  /**
+        * Returns the position of the first occurrence of a substring.
+        * @param searchString The substring to search for in the string
+        * @param position The index at which to begin searching the String object. If omitted, search starts at the beginning of the string.
+        */
+  def indexOf(searchString: java.lang.String): scala.Double = js.native
+  /**
+        * Returns the position of the first occurrence of a substring.
+        * @param searchString The substring to search for in the string
+        * @param position The index at which to begin searching the String object. If omitted, search starts at the beginning of the string.
+        */
+  def indexOf(searchString: java.lang.String, position: scala.Double): scala.Double = js.native
+  /** Returns an <i> HTML element */
+  def italics(): java.lang.String = js.native
+  /**
+        * Returns the last occurrence of a substring in the string.
+        * @param searchString The substring to search for.
+        * @param position The index at which to begin searching. If omitted, the search begins at the end of the string.
+        */
+  def lastIndexOf(searchString: java.lang.String): scala.Double = js.native
+  /**
+        * Returns the last occurrence of a substring in the string.
+        * @param searchString The substring to search for.
+        * @param position The index at which to begin searching. If omitted, the search begins at the end of the string.
+        */
+  def lastIndexOf(searchString: java.lang.String, position: scala.Double): scala.Double = js.native
+  /** Returns an <a> HTML element and sets the href attribute value */
+  def link(url: java.lang.String): java.lang.String = js.native
+  /**
+        * Determines whether two strings are equivalent in the current locale.
+        * @param that String to compare to target string
+        */
+  def localeCompare(that: java.lang.String): scala.Double = js.native
+  /**
+        * Determines whether two strings are equivalent in the current or specified locale.
+        * @param that String to compare to target string
+        * @param locales A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used. This parameter must conform to BCP 47 standards; see the Intl.Collator object for details.
+        * @param options An object that contains one or more properties that specify comparison options. see the Intl.Collator object for details.
+        */
+  def localeCompare(that: java.lang.String, locales: java.lang.String): scala.Double = js.native
+  /**
+        * Determines whether two strings are equivalent in the current or specified locale.
+        * @param that String to compare to target string
+        * @param locales A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used. This parameter must conform to BCP 47 standards; see the Intl.Collator object for details.
+        * @param options An object that contains one or more properties that specify comparison options. see the Intl.Collator object for details.
+        */
+  def localeCompare(that: java.lang.String, locales: java.lang.String, options: stdLib.IntlNs.CollatorOptions): scala.Double = js.native
+  /**
+        * Determines whether two strings are equivalent in the current or specified locale.
+        * @param that String to compare to target string
+        * @param locales A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used. This parameter must conform to BCP 47 standards; see the Intl.Collator object for details.
+        * @param options An object that contains one or more properties that specify comparison options. see the Intl.Collator object for details.
+        */
+  def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String]): scala.Double = js.native
+  /**
+        * Determines whether two strings are equivalent in the current or specified locale.
+        * @param that String to compare to target string
+        * @param locales A locale string or array of locale strings that contain one or more language or locale tags. If you include more than one locale string, list them in descending order of priority so that the first entry is the preferred locale. If you omit this parameter, the default locale of the JavaScript runtime is used. This parameter must conform to BCP 47 standards; see the Intl.Collator object for details.
+        * @param options An object that contains one or more properties that specify comparison options. see the Intl.Collator object for details.
+        */
+  def localeCompare(
+    that: java.lang.String,
+    locales: js.Array[java.lang.String],
+    options: stdLib.IntlNs.CollatorOptions
+  ): scala.Double = js.native
+  /**
+       * Matches a string an object that supports being matched against, and returns an array containing the results of that search.
+       * @param matcher An object that supports being matched against.
+       */
+  def `match`(
+    matcher: /* import warning: Failed type conversion: TsTypeObject(List(TsMemberIndex(NoComments,false,Default,IndexingSingle(TsQIdent(List(TsIdentSimple(Symbol), TsIdentSimple(match)))),false,TsTypeFunction(TsFunSig(NoComments,List(),List(TsFunParam(NoComments,TsIdentSimple(string),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false)),Some(TsTypeUnion(List(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(RegExpMatchArray))),List()), TsTypeRef(TsQIdent(List(TsIdentSimple(null))),List()))))))))) */js.Any
+  ): RegExpMatchArray | scala.Null = js.native
+  /**
+        * Matches a string with a regular expression, and returns an array containing the results of that search.
+        * @param regexp A variable name or string literal containing the regular expression pattern and flags.
+        */
+  def `match`(regexp: java.lang.String): RegExpMatchArray | scala.Null = js.native
+  /**
+        * Matches a string with a regular expression, and returns an array containing the results of that search.
+        * @param regexp A variable name or string literal containing the regular expression pattern and flags.
+        */
+  def `match`(regexp: RegExp): RegExpMatchArray | scala.Null = js.native
+  /**
+       * Returns the String value result of normalizing the string into the normalization form
+       * named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
+       * @param form Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default
+       * is "NFC"
+       */
+  def normalize(): java.lang.String = js.native
+  /**
+       * Returns the String value result of normalizing the string into the normalization form
+       * named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
+       * @param form Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default
+       * is "NFC"
+       */
+  def normalize(form: java.lang.String): java.lang.String = js.native
+  /**
+       * Returns the String value result of normalizing the string into the normalization form
+       * named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
+       * @param form Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default
+       * is "NFC"
+       */
+  @JSName("normalize")
+  def normalize_NFC(form: stdLib.stdLibStrings.NFC): java.lang.String = js.native
+  /**
+       * Returns the String value result of normalizing the string into the normalization form
+       * named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
+       * @param form Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default
+       * is "NFC"
+       */
+  @JSName("normalize")
+  def normalize_NFD(form: stdLib.stdLibStrings.NFD): java.lang.String = js.native
+  /**
+       * Returns the String value result of normalizing the string into the normalization form
+       * named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
+       * @param form Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default
+       * is "NFC"
+       */
+  @JSName("normalize")
+  def normalize_NFKC(form: stdLib.stdLibStrings.NFKC): java.lang.String = js.native
+  /**
+       * Returns the String value result of normalizing the string into the normalization form
+       * named by form as specified in Unicode Standard Annex #15, Unicode Normalization Forms.
+       * @param form Applicable values: "NFC", "NFD", "NFKC", or "NFKD", If not specified default
+       * is "NFC"
+       */
+  @JSName("normalize")
+  def normalize_NFKD(form: stdLib.stdLibStrings.NFKD): java.lang.String = js.native
+  /**
+       * Pads the current string with a given string (possibly repeated) so that the resulting string reaches a given length.
+       * The padding is applied from the end (right) of the current string.
+       *
+       * @param maxLength The length of the resulting string once the current string has been padded.
+       *        If this parameter is smaller than the current string's length, the current string will be returned as it is.
+       *
+       * @param fillString The string to pad the current string with.
+       *        If this string is too long, it will be truncated and the left-most part will be applied.
+       *        The default value for this parameter is " " (U+0020).
+       */
+  def padEnd(maxLength: scala.Double): java.lang.String = js.native
+  /**
+       * Pads the current string with a given string (possibly repeated) so that the resulting string reaches a given length.
+       * The padding is applied from the end (right) of the current string.
+       *
+       * @param maxLength The length of the resulting string once the current string has been padded.
+       *        If this parameter is smaller than the current string's length, the current string will be returned as it is.
+       *
+       * @param fillString The string to pad the current string with.
+       *        If this string is too long, it will be truncated and the left-most part will be applied.
+       *        The default value for this parameter is " " (U+0020).
+       */
+  def padEnd(maxLength: scala.Double, fillString: java.lang.String): java.lang.String = js.native
+  /**
+       * Pads the current string with a given string (possibly repeated) so that the resulting string reaches a given length.
+       * The padding is applied from the start (left) of the current string.
+       *
+       * @param maxLength The length of the resulting string once the current string has been padded.
+       *        If this parameter is smaller than the current string's length, the current string will be returned as it is.
+       *
+       * @param fillString The string to pad the current string with.
+       *        If this string is too long, it will be truncated and the left-most part will be applied.
+       *        The default value for this parameter is " " (U+0020).
+       */
+  def padStart(maxLength: scala.Double): java.lang.String = js.native
+  /**
+       * Pads the current string with a given string (possibly repeated) so that the resulting string reaches a given length.
+       * The padding is applied from the start (left) of the current string.
+       *
+       * @param maxLength The length of the resulting string once the current string has been padded.
+       *        If this parameter is smaller than the current string's length, the current string will be returned as it is.
+       *
+       * @param fillString The string to pad the current string with.
+       *        If this string is too long, it will be truncated and the left-most part will be applied.
+       *        The default value for this parameter is " " (U+0020).
+       */
+  def padStart(maxLength: scala.Double, fillString: java.lang.String): java.lang.String = js.native
+  /**
+       * Returns a String value that is made from count copies appended together. If count is 0,
+       * the empty string is returned.
+       * @param count number of copies to append
+       */
+  def repeat(count: scala.Double): java.lang.String = js.native
+  /**
+        * Replaces text in a string, using a regular expression or search string.
+        * @param searchValue A string to search for.
+        * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
+        */
+  def replace(searchValue: java.lang.String, replaceValue: java.lang.String): java.lang.String = js.native
+  /**
+        * Replaces text in a string, using a regular expression or search string.
+        * @param searchValue A string to search for.
+        * @param replacer A function that returns the replacement text.
+        */
+  def replace(
+    searchValue: java.lang.String,
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+  ): java.lang.String = js.native
+  /**
+       * Replaces text in a string, using an object that supports replacement within a string.
+       * @param searchValue A object can search for and replace matches within a string.
+       * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
+       */
+  def replace(
+    searchValue: /* import warning: Failed type conversion: TsTypeObject(List(TsMemberIndex(NoComments,false,Default,IndexingSingle(TsQIdent(List(TsIdentSimple(Symbol), TsIdentSimple(replace)))),false,TsTypeFunction(TsFunSig(NoComments,List(),List(TsFunParam(NoComments,TsIdentSimple(string),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false), TsFunParam(NoComments,TsIdentSimple(replaceValue),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false)),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List()))))))) */js.Any,
+    replaceValue: java.lang.String
+  ): java.lang.String = js.native
+  /**
+       * Replaces text in a string, using an object that supports replacement within a string.
+       * @param searchValue A object can search for and replace matches within a string.
+       * @param replacer A function that returns the replacement text.
+       */
+  def replace(
+    searchValue: /* import warning: Failed type conversion: TsTypeObject(List(TsMemberIndex(NoComments,false,Default,IndexingSingle(TsQIdent(List(TsIdentSimple(Symbol), TsIdentSimple(replace)))),false,TsTypeFunction(TsFunSig(NoComments,List(),List(TsFunParam(NoComments,TsIdentSimple(string),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false), TsFunParam(NoComments,TsIdentSimple(replacer),Some(TsTypeFunction(TsFunSig(NoComments,List(),List(TsFunParam(NoComments,TsIdentSimple(substring),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false), TsFunParam(NoComments,TsIdentSimple(args),Some(TsTypeRepeated(TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()))),false)),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List()))))),false)),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List()))))))) */js.Any,
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+  ): java.lang.String = js.native
+  /**
+        * Replaces text in a string, using a regular expression or search string.
+        * @param searchValue A string to search for.
+        * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
+        */
+  def replace(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
+  /**
+        * Replaces text in a string, using a regular expression or search string.
+        * @param searchValue A string to search for.
+        * @param replacer A function that returns the replacement text.
+        */
+  def replace(
+    searchValue: RegExp,
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+  ): java.lang.String = js.native
+  /**
+        * Finds the first substring match in a regular expression search.
+        * @param regexp The regular expression pattern and applicable flags.
+        */
+  def search(regexp: java.lang.String): scala.Double = js.native
+  /**
+        * Finds the first substring match in a regular expression search.
+        * @param regexp The regular expression pattern and applicable flags.
+        */
+  def search(regexp: RegExp): scala.Double = js.native
+  /**
+       * Finds the first substring match in a regular expression search.
+       * @param searcher An object which supports searching within a string.
+       */
+  def search(
+    searcher: /* import warning: Failed type conversion: TsTypeObject(List(TsMemberIndex(NoComments,false,Default,IndexingSingle(TsQIdent(List(TsIdentSimple(Symbol), TsIdentSimple(search)))),false,TsTypeFunction(TsFunSig(NoComments,List(),List(TsFunParam(NoComments,TsIdentSimple(string),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false)),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(number))),List()))))))) */js.Any
+  ): scala.Double = js.native
+  /**
+        * Returns a section of a string.
+        * @param start The index to the beginning of the specified portion of stringObj.
+        * @param end The index to the end of the specified portion of stringObj. The substring includes the characters up to, but not including, the character indicated by end.
+        * If this value is not specified, the substring continues to the end of stringObj.
+        */
+  def slice(): java.lang.String = js.native
+  /**
+        * Returns a section of a string.
+        * @param start The index to the beginning of the specified portion of stringObj.
+        * @param end The index to the end of the specified portion of stringObj. The substring includes the characters up to, but not including, the character indicated by end.
+        * If this value is not specified, the substring continues to the end of stringObj.
+        */
+  def slice(start: scala.Double): java.lang.String = js.native
+  /**
+        * Returns a section of a string.
+        * @param start The index to the beginning of the specified portion of stringObj.
+        * @param end The index to the end of the specified portion of stringObj. The substring includes the characters up to, but not including, the character indicated by end.
+        * If this value is not specified, the substring continues to the end of stringObj.
+        */
+  def slice(start: scala.Double, end: scala.Double): java.lang.String = js.native
+  /** Returns a <small> HTML element */
+  def small(): java.lang.String = js.native
+  /**
+        * Split a string into substrings using the specified separator and return them as an array.
+        * @param separator A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
+        * @param limit A value used to limit the number of elements returned in the array.
+        */
+  def split(separator: java.lang.String): js.Array[java.lang.String] = js.native
+  /**
+        * Split a string into substrings using the specified separator and return them as an array.
+        * @param separator A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
+        * @param limit A value used to limit the number of elements returned in the array.
+        */
+  def split(separator: java.lang.String, limit: scala.Double): js.Array[java.lang.String] = js.native
+  /**
+        * Split a string into substrings using the specified separator and return them as an array.
+        * @param separator A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
+        * @param limit A value used to limit the number of elements returned in the array.
+        */
+  def split(separator: RegExp): js.Array[java.lang.String] = js.native
+  /**
+        * Split a string into substrings using the specified separator and return them as an array.
+        * @param separator A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
+        * @param limit A value used to limit the number of elements returned in the array.
+        */
+  def split(separator: RegExp, limit: scala.Double): js.Array[java.lang.String] = js.native
+  /**
+       * Split a string into substrings using the specified separator and return them as an array.
+       * @param splitter An object that can split a string.
+       * @param limit A value used to limit the number of elements returned in the array.
+       */
+  def split(
+    splitter: /* import warning: Failed type conversion: TsTypeObject(List(TsMemberIndex(NoComments,false,Default,IndexingSingle(TsQIdent(List(TsIdentSimple(Symbol), TsIdentSimple(split)))),false,TsTypeFunction(TsFunSig(NoComments,List(),List(TsFunParam(NoComments,TsIdentSimple(string),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false), TsFunParam(NoComments,TsIdentSimple(limit),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(number))),List())),true)),Some(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(Array))),List(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List()))))))))) */js.Any
+  ): js.Array[java.lang.String] = js.native
+  /**
+       * Split a string into substrings using the specified separator and return them as an array.
+       * @param splitter An object that can split a string.
+       * @param limit A value used to limit the number of elements returned in the array.
+       */
+  def split(
+    splitter: /* import warning: Failed type conversion: TsTypeObject(List(TsMemberIndex(NoComments,false,Default,IndexingSingle(TsQIdent(List(TsIdentSimple(Symbol), TsIdentSimple(split)))),false,TsTypeFunction(TsFunSig(NoComments,List(),List(TsFunParam(NoComments,TsIdentSimple(string),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false), TsFunParam(NoComments,TsIdentSimple(limit),Some(TsTypeRef(TsQIdent(List(TsIdentSimple(number))),List())),true)),Some(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(Array))),List(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List()))))))))) */js.Any,
+    limit: scala.Double
+  ): js.Array[java.lang.String] = js.native
+  /**
+       * Returns true if the sequence of elements of searchString converted to a String is the
+       * same as the corresponding elements of this object (converted to a String) starting at
+       * position. Otherwise returns false.
+       */
+  def startsWith(searchString: java.lang.String): scala.Boolean = js.native
+  /**
+       * Returns true if the sequence of elements of searchString converted to a String is the
+       * same as the corresponding elements of this object (converted to a String) starting at
+       * position. Otherwise returns false.
+       */
+  def startsWith(searchString: java.lang.String, position: scala.Double): scala.Boolean = js.native
+  /** Returns a <strike> HTML element */
+  def strike(): java.lang.String = js.native
+  /** Returns a <sub> HTML element */
+  def sub(): java.lang.String = js.native
+  // IE extensions
+  /**
+        * Gets a substring beginning at the specified location and having the specified length.
+        * @param from The starting position of the desired substring. The index of the first character in the string is zero.
+        * @param length The number of characters to include in the returned substring.
+        */
+  def substr(from: scala.Double): java.lang.String = js.native
+  // IE extensions
+  /**
+        * Gets a substring beginning at the specified location and having the specified length.
+        * @param from The starting position of the desired substring. The index of the first character in the string is zero.
+        * @param length The number of characters to include in the returned substring.
+        */
+  def substr(from: scala.Double, length: scala.Double): java.lang.String = js.native
+  /**
+        * Returns the substring at the specified location within a String object.
+        * @param start The zero-based index number indicating the beginning of the substring.
+        * @param end Zero-based index number indicating the end of the substring. The substring includes the characters up to, but not including, the character indicated by end.
+        * If end is omitted, the characters from start through the end of the original string are returned.
+        */
+  def substring(start: scala.Double): java.lang.String = js.native
+  /**
+        * Returns the substring at the specified location within a String object.
+        * @param start The zero-based index number indicating the beginning of the substring.
+        * @param end Zero-based index number indicating the end of the substring. The substring includes the characters up to, but not including, the character indicated by end.
+        * If end is omitted, the characters from start through the end of the original string are returned.
+        */
+  def substring(start: scala.Double, end: scala.Double): java.lang.String = js.native
+  /** Returns a <sup> HTML element */
+  def sup(): java.lang.String = js.native
+  /** Converts all alphabetic characters to lowercase, taking into account the host environment's current locale. */
+  def toLocaleLowerCase(): java.lang.String = js.native
+  /** Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale. */
+  def toLocaleUpperCase(): java.lang.String = js.native
+  /** Converts all the alphabetic characters in a string to lowercase. */
+  def toLowerCase(): java.lang.String = js.native
+  /** Converts all the alphabetic characters in a string to uppercase. */
+  def toUpperCase(): java.lang.String = js.native
+  /** Removes the leading and trailing white space and line terminator characters from a string. */
+  def trim(): java.lang.String = js.native
+}
+

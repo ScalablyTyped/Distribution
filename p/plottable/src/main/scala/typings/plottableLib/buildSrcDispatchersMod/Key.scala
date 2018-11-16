@@ -1,0 +1,27 @@
+package typings
+package plottableLib.buildSrcDispatchersMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("plottable/build/src/dispatchers", "Key")
+@js.native
+class Key ()
+  extends plottableLib.buildSrcDispatchersKeyDispatcherMod.Key
+
+@JSImport("plottable/build/src/dispatchers", "Key")
+@js.native
+object Key extends js.Object {
+  var _DISPATCHER_KEY: js.Any = js.native
+  var _KEYDOWN_EVENT_NAME: js.Any = js.native
+  var _KEYUP_EVENT_NAME: js.Any = js.native
+  /**
+       * Gets a Key Dispatcher. If one already exists it will be returned;
+       * otherwise, a new one will be created.
+       *
+       * @return {Dispatchers.Key}
+       */
+  def getDispatcher(): plottableLib.buildSrcDispatchersMod.Key = js.native
+}
+

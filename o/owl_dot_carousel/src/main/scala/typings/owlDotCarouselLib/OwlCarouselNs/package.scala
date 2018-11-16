@@ -1,0 +1,12 @@
+package typings
+package owlDotCarouselLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object OwlCarouselNs {
+  type HandlerCallback = js.Function1[/* repeated */js.Any, scala.Unit]
+  type OnEvent = owlDotCarouselLib.owlDotCarouselLibStrings.initializeDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.initializedDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.resizeDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.resizedDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.refreshDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.refreshedDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.dragDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.draggedDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.translateDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.translatedDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.changeDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.changedDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.loadDOTowlDOTlazy | owlDotCarouselLib.owlDotCarouselLibStrings.loadedDOTowlDOTlazy | owlDotCarouselLib.owlDotCarouselLibStrings.stopDOTowlDOTvideo | owlDotCarouselLib.owlDotCarouselLibStrings.playDOTowlDOTvideo
+  type TriggerEvent = owlDotCarouselLib.owlDotCarouselLibStrings.refreshDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.nextDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.prevDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.toDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.destroyDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.replaceDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.addDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.removeDOTowlDOTcarousel | owlDotCarouselLib.owlDotCarouselLibStrings.playDOTowlDOTautoplay | owlDotCarouselLib.owlDotCarouselLibStrings.stopDOTowlDOTautoplay
+}

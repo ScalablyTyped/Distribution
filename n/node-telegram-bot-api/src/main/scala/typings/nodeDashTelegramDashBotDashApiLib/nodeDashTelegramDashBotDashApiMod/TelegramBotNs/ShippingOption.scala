@@ -1,0 +1,14 @@
+package typings
+package nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait ShippingOption extends js.Object {
+  var id: java.lang.String
+  var prices: js.Array[LabeledPrice]
+  var title: java.lang.String
+}
+

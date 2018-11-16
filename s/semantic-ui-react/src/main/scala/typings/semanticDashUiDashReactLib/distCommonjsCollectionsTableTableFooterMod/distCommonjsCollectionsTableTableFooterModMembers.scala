@@ -1,0 +1,13 @@
+package typings
+package semanticDashUiDashReactLib.distCommonjsCollectionsTableTableFooterMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("semantic-ui-react/dist/commonjs/collections/Table/TableFooter", JSImport.Namespace)
+@js.native
+object distCommonjsCollectionsTableTableFooterModMembers extends js.Object {
+  val default: reactLib.reactMod.ReactNs.StatelessComponent[TableFooterProps] = js.native
+}
+

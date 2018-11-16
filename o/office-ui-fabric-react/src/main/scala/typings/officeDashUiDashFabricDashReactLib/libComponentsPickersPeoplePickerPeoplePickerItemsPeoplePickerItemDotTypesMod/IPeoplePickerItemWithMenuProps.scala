@@ -1,0 +1,11 @@
+package typings
+package officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDotTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait IPeoplePickerItemWithMenuProps
+  extends officeDashUiDashFabricDashReactLib.libComponentsPickersPickerItemDotTypesMod.IPickerItemProps[IPersonaWithMenu]
+

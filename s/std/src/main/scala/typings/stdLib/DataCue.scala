@@ -1,0 +1,17 @@
+package typings
+package stdLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait DataCue extends TextTrackCue {
+  var data: ArrayBuffer = js.native
+}
+
+@JSGlobal("DataCue")
+@js.native
+object DataCue
+  extends ScalablyTyped.runtime.Instantiable0[DataCue]
+

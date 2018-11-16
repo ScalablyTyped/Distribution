@@ -1,0 +1,17 @@
+package typings
+package nextLib.appMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("next/app", JSImport.Default)
+@js.native
+class default[P] () extends App[P]
+
+@JSImport("next/app", JSImport.Default)
+@js.native
+object default extends js.Object {
+  def getInitialProps(context: nextLib.appMod.NextAppContext[nextDashServerLib.routerMod.DefaultQuery]): stdLib.Promise[nextLib.appMod.DefaultAppIProps] = js.native
+}
+

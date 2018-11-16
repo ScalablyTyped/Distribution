@@ -1,0 +1,17 @@
+package typings
+package officeDashUiDashFabricDashReactLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object libDetailsListMod {
+  type CheckboxVisibility = officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.CheckboxVisibility
+  type CollapseAllVisibility = officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupedListDotTypesMod.CollapseAllVisibility
+  type ColumnActionsMode = officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.ColumnActionsMode
+  type ColumnDragEndLocation = officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.ColumnDragEndLocation
+  type ConstrainMode = officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.ConstrainMode
+  type DetailsListLayoutMode = officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.DetailsListLayoutMode
+  type SelectionDirection = officeDashUiDashFabricDashReactLib.libUtilitiesSelectionInterfacesMod.SelectionDirection
+  type SelectionMode = officeDashUiDashFabricDashReactLib.libUtilitiesSelectionInterfacesMod.SelectionMode
+}

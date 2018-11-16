@@ -1,0 +1,26 @@
+package typings
+package fhirLib.fhirNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+     * Party to be paid any benefits payable
+     */
+
+trait ExplanationOfBenefitPayee extends BackboneElement {
+  /**
+           * Party to receive the payable
+           */
+  var party: js.UndefOr[Reference] = js.undefined
+  /**
+           * organization | patient | practitioner | relatedperson
+           */
+  var resourceType: js.UndefOr[CodeableConcept] = js.undefined
+  /**
+           * Type of party: Subscriber, Provider, other
+           */
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
+}
+

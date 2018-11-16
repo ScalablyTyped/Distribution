@@ -1,0 +1,22 @@
+package typings
+package jqueryDashMaskmoneyLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object jqueryDashMaskmoneyLibStrings {
+  @js.native
+  sealed trait destroy extends js.Object
+  
+  @js.native
+  sealed trait mask extends js.Object
+  
+  @js.native
+  sealed trait unmasked extends js.Object
+  
+  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  def mask: mask = "mask".asInstanceOf[mask]
+  def unmasked: unmasked = "unmasked".asInstanceOf[unmasked]
+}
+

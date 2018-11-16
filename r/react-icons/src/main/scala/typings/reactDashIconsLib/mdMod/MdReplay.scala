@@ -1,0 +1,12 @@
+package typings
+package reactDashIconsLib.mdMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-icons/md", "MdReplay")
+@js.native
+class MdReplay ()
+  extends reactDashIconsLib.mdReplayMod.default
+

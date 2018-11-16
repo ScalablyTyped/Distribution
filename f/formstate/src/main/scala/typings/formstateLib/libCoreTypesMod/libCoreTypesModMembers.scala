@@ -1,0 +1,13 @@
+package typings
+package formstateLib.libCoreTypesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("formstate/lib/core/types", JSImport.Namespace)
+@js.native
+object libCoreTypesModMembers extends js.Object {
+  def applyValidators[TValue](value: TValue, validators: js.Array[Validator[TValue]]): stdLib.Promise[js.UndefOr[java.lang.String | scala.Null]] = js.native
+}
+

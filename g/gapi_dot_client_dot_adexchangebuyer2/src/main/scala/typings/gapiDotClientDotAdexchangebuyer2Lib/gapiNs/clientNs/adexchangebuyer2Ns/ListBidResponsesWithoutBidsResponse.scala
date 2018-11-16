@@ -1,0 +1,25 @@
+package typings
+package gapiDotClientDotAdexchangebuyer2Lib.gapiNs.clientNs.adexchangebuyer2Ns
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait ListBidResponsesWithoutBidsResponse extends js.Object {
+  /**
+               * List of rows, with counts of bid responses without bids aggregated by
+               * status.
+               */
+  var bidResponseWithoutBidsStatusRows: js.UndefOr[js.Array[BidResponseWithoutBidsStatusRow]] = js.undefined
+  /**
+               * A token to retrieve the next page of results.
+               * Pass this value in the
+               * ListBidResponsesWithoutBidsRequest.pageToken
+               * field in the subsequent call to the
+               * accounts.filterSets.bidResponsesWithoutBids.list
+               * method to retrieve the next page of results.
+               */
+  var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
+}
+

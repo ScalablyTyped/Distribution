@@ -1,0 +1,11 @@
+package typings
+package reactDashBytesizeDashIconsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object reactDashBytesizeDashIconsMod {
+  type StrokeLinecap = reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsLibStrings.round | reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsLibStrings.butt | reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsLibStrings.square | reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsLibStrings.inherit
+  type StrokeLinejoin = reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsLibStrings.round | reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsLibStrings.bevel | reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsLibStrings.miter | reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsLibStrings.inherit
+}

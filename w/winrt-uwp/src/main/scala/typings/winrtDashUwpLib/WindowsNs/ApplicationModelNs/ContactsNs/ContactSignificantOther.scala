@@ -1,0 +1,19 @@
+package typings
+package winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Represents the info about a significant other for a contact. */
+@JSGlobal("Windows.ApplicationModel.Contacts.ContactSignificantOther")
+@js.native
+class ContactSignificantOther () extends js.Object {
+  /** Gets and sets the description of a significant other for a contact. The maximum string length for the description is 512 characters. */
+  var description: java.lang.String = js.native
+  /** Gets and sets the name of a significant other for a contact. The maximum string length for the name is 256 characters. */
+  var name: java.lang.String = js.native
+  /** Gets or puts a value that indicates the nature of the relationship, such as spouse, partner, sibling, parent and so on. */
+  var relationship: ContactRelationship = js.native
+}
+

@@ -1,0 +1,13 @@
+package typings
+package semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("semantic-ui-react/dist/commonjs/views/Comment/CommentAction", JSImport.Namespace)
+@js.native
+object distCommonjsViewsCommentCommentActionModMembers extends js.Object {
+  val default: reactLib.reactMod.ReactNs.ComponentClass[CommentActionProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
+}
+

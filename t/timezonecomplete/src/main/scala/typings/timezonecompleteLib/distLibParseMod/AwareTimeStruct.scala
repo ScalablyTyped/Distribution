@@ -1,0 +1,19 @@
+package typings
+package timezonecompleteLib.distLibParseMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait AwareTimeStruct extends js.Object {
+  /**
+       * The time struct
+       */
+  var time: timezonecompleteLib.distLibBasicsMod.TimeStruct
+  /**
+       * The time zone (can be undefined)
+       */
+  var zone: js.UndefOr[timezonecompleteLib.distLibTimezoneMod.TimeZone]
+}
+

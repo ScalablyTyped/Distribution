@@ -1,0 +1,56 @@
+package typings
+package babylonjsLib.babylonjsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+   * This represents the base class for particle system in Babylon.
+   * Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.
+   * Particles can take different shapes while emitted like box, sphere, cone or you can write your custom function.
+   * @example https://doc.babylonjs.com/babylon101/particles
+   */
+@JSImport("babylonjs", "BaseParticleSystem")
+@js.native
+class BaseParticleSystem protected ()
+  extends babylonjsLib.BABYLONNs.BaseParticleSystem {
+  /**
+           * Instantiates a particle system.
+           * Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.
+           * @param name The name of the particle system
+           */
+  def this(name: java.lang.String) = this()
+}
+
+/**
+   * This represents the base class for particle system in Babylon.
+   * Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.
+   * Particles can take different shapes while emitted like box, sphere, cone or you can write your custom function.
+   * @example https://doc.babylonjs.com/babylon101/particles
+   */
+@JSImport("babylonjs", "BaseParticleSystem")
+@js.native
+object BaseParticleSystem extends js.Object {
+  /**
+           * Add current color and particle color multiplied by particle’s alpha
+           */
+  var BLENDMODE_ADD: scala.Double = js.native
+  /**
+           * Multiply current color with particle color
+           */
+  var BLENDMODE_MULTIPLY: scala.Double = js.native
+  /**
+           * Multiply current color with particle color then add current color and particle color multiplied by particle’s alpha
+           */
+  var BLENDMODE_MULTIPLYADD: scala.Double = js.native
+  /**
+           * Source color is added to the destination color without alpha affecting the result
+           */
+  var BLENDMODE_ONEONE: scala.Double = js.native
+  /**
+           * Blend current color and particle color using particle’s alpha
+           */
+  var BLENDMODE_STANDARD: scala.Double = js.native
+}
+

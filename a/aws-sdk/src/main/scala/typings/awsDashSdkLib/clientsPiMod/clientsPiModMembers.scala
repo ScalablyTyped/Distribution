@@ -1,0 +1,13 @@
+package typings
+package awsDashSdkLib.clientsPiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("aws-sdk/clients/pi", JSImport.Namespace)
+@js.native
+object clientsPiModMembers extends js.Object {
+  val TypesNs: this.type = js.native
+}
+

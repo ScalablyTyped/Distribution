@@ -1,0 +1,12 @@
+package typings
+package vsoDashNodeDashApiLib.interfacesBuildInterfacesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait DeploymentDeploy extends Deployment {
+  var message: java.lang.String
+}
+

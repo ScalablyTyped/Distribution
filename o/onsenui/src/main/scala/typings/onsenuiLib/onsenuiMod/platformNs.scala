@@ -1,0 +1,111 @@
+package typings
+package onsenuiLib.onsenuiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+   * @description Utility methods to detect current platform
+   */
+@JSImport("onsenui", "platform")
+@js.native
+object platformNs extends js.Object {
+  /**
+       * @description Returns whether the OS is Android
+       * @return {Boolean}
+       */
+  def isAndroid(): scala.Boolean = js.native
+  def isAndroidPhone(): scala.Boolean = js.native
+  def isAndroidTablet(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the device is BlackBerry
+       * @return {Boolean}
+       */
+  def isBlackBerry(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the browser is Chrome
+       * @return {Boolean}
+       */
+  def isChrome(): scala.Boolean = js.native
+  /**
+       *
+       */
+  def isEdge(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the browser is Firefox
+       * @return {Boolean}
+       */
+  def isFirefox(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the browser is Internet Explorer
+       * @return {Boolean}
+       */
+  def isIE(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the OS is iOS
+       * @return {Boolean}
+       */
+  def isIOS(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the iOS version is 7 or above
+       * @return {Boolean}
+       */
+  def isIOS7above(): scala.Boolean = js.native
+  /**
+       * @description Returns whether app is running in iOS Safari.
+       * @return {Boolean}
+       */
+  def isIOSSafari(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the device is iPad
+       * @return {Boolean}
+       */
+  def isIPad(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the device is iPhone
+       * @return {Boolean}
+       */
+  def isIPhone(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the device is iPhone X
+       * @return {Boolean}
+       */
+  def isIPhoneX(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the browser is Opera
+       * @return {Boolean}
+       */
+  def isOpera(): scala.Boolean = js.native
+  /**
+       * @description Returns whether the browser is Safari
+       * @return {Boolean}
+       */
+  def isSafari(): scala.Boolean = js.native
+  /**
+       * @description Returns whether app is running in UIWebView.
+       * @return {Boolean}
+       */
+  def isUIWebView(): scala.Boolean = js.native
+  /**
+       * @description Returns whether app is running in WKWebView.
+       * @return {Boolean}
+       */
+  def isWKWebView(): scala.Boolean = js.native
+  /**
+       * @description Returns whether device is Windows phone
+       * @return {Boolean}
+       */
+  def isWP(): scala.Boolean = js.native
+  /**
+       * @description Returns whether app is running in Cordova
+       * @return {Boolean}
+       */
+  def isWebView(): scala.Boolean = js.native
+  /**
+       * @param  {string} platform Name of the platform. Possible values are: "opera", "firefox", "safari", "chrome", "ie", "android", "blackberry", "ios" or "wp".
+       * @description Sets the platform used to render the elements. Useful for testing.
+       */
+  def select(platform: java.lang.String): scala.Unit = js.native
+}
+

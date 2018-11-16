@@ -1,0 +1,100 @@
+package typings
+package pixiDotJsLib.PIXINs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("PIXI.Container")
+@js.native
+class Container () extends DisplayObject {
+  // end extras.getChildByName
+  var children: js.Array[DisplayObject] = js.native
+  var height: scala.Double = js.native
+  var width: scala.Double = js.native
+  /* protected */ def _calculateBounds(): scala.Unit = js.native
+  /* protected */ def _renderCanvas(renderer: CanvasRenderer): scala.Unit = js.native
+  /* protected */ def _renderWebGL(renderer: WebGLRenderer): scala.Unit = js.native
+  def addChild[T /* <: DisplayObject */](children: T*): T = js.native
+  def addChildAt[T /* <: DisplayObject */](child: T, index: scala.Double): T = js.native
+  def calculateBounds(): scala.Unit = js.native
+  /* protected */ def containerUpdateTransform(): scala.Unit = js.native
+  def destroy(options: DestroyOptions): scala.Unit = js.native
+  def destroy(options: scala.Boolean): scala.Unit = js.native
+  def getChildAt(index: scala.Double): DisplayObject = js.native
+  // begin extras.getChildByName
+  def getChildByName(name: java.lang.String): DisplayObject = js.native
+  def getChildIndex(child: DisplayObject): scala.Double = js.native
+  //tslint:disable-next-line:ban-types forbidden-types
+  @JSName("off")
+  def off_added(event: pixiDotJsLib.pixiDotJsLibStrings.added): this.type = js.native
+  //tslint:disable-next-line:ban-types forbidden-types
+  @JSName("off")
+  def off_added(event: pixiDotJsLib.pixiDotJsLibStrings.added, fn: js.Function): this.type = js.native
+  //tslint:disable-next-line:ban-types forbidden-types
+  @JSName("off")
+  def off_added(event: pixiDotJsLib.pixiDotJsLibStrings.added, fn: js.Function, context: js.Any): this.type = js.native
+  //tslint:disable-next-line:ban-types forbidden-types
+  @JSName("off")
+  def off_removed(event: pixiDotJsLib.pixiDotJsLibStrings.removed): this.type = js.native
+  //tslint:disable-next-line:ban-types forbidden-types
+  @JSName("off")
+  def off_removed(event: pixiDotJsLib.pixiDotJsLibStrings.removed, fn: js.Function): this.type = js.native
+  //tslint:disable-next-line:ban-types forbidden-types
+  @JSName("off")
+  def off_removed(event: pixiDotJsLib.pixiDotJsLibStrings.removed, fn: js.Function, context: js.Any): this.type = js.native
+  /* protected */ def onChildrenChange(args: js.Any*): scala.Unit = js.native
+  @JSName("on")
+  def on_added(
+    event: pixiDotJsLib.pixiDotJsLibStrings.added,
+    fn: js.Function1[/* displayObject */ DisplayObject, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_added(
+    event: pixiDotJsLib.pixiDotJsLibStrings.added,
+    fn: js.Function1[/* displayObject */ DisplayObject, scala.Unit],
+    context: js.Any
+  ): this.type = js.native
+  @JSName("on")
+  def on_removed(
+    event: pixiDotJsLib.pixiDotJsLibStrings.removed,
+    fn: js.Function1[/* displayObject */ DisplayObject, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_removed(
+    event: pixiDotJsLib.pixiDotJsLibStrings.removed,
+    fn: js.Function1[/* displayObject */ DisplayObject, scala.Unit],
+    context: js.Any
+  ): this.type = js.native
+  @JSName("once")
+  def once_added(
+    event: pixiDotJsLib.pixiDotJsLibStrings.added,
+    fn: js.Function1[/* displayObject */ DisplayObject, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_added(
+    event: pixiDotJsLib.pixiDotJsLibStrings.added,
+    fn: js.Function1[/* displayObject */ DisplayObject, scala.Unit],
+    context: js.Any
+  ): this.type = js.native
+  @JSName("once")
+  def once_removed(
+    event: pixiDotJsLib.pixiDotJsLibStrings.removed,
+    fn: js.Function1[/* displayObject */ DisplayObject, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_removed(
+    event: pixiDotJsLib.pixiDotJsLibStrings.removed,
+    fn: js.Function1[/* displayObject */ DisplayObject, scala.Unit],
+    context: js.Any
+  ): this.type = js.native
+  def removeChild(child: DisplayObject): DisplayObject = js.native
+  def removeChildAt(index: scala.Double): DisplayObject = js.native
+  def removeChildren(): js.Array[DisplayObject] = js.native
+  def removeChildren(beginIndex: scala.Double): js.Array[DisplayObject] = js.native
+  def removeChildren(beginIndex: scala.Double, endIndex: scala.Double): js.Array[DisplayObject] = js.native
+  def renderAdvancedWebGL(renderer: WebGLRenderer): scala.Unit = js.native
+  def setChildIndex(child: DisplayObject, index: scala.Double): scala.Unit = js.native
+  def swapChildren(child: DisplayObject, child2: DisplayObject): scala.Unit = js.native
+}
+

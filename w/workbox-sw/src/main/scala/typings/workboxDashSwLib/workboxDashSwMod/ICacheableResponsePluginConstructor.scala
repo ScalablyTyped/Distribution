@@ -1,0 +1,15 @@
+package typings
+package workboxDashSwLib.workboxDashSwMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+ * To construct a new cacheable response Plugin instance you must provide at least one of the config properties.
+ * If both statuses and headers are specified, then both conditions must be met for the Response to be considered cacheable.
+ */
+@js.native
+trait ICacheableResponsePluginConstructor
+  extends ScalablyTyped.runtime.Instantiable1[/* config */ stdLib.Partial[ICacheableResponseOptions], CacheableResponsePlugin]
+

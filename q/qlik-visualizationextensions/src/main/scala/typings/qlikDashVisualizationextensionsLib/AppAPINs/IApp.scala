@@ -1,0 +1,711 @@
+package typings
+package qlikDashVisualizationextensionsLib.AppAPINs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait IApp extends js.Object {
+  /**
+           * Adds an alternate state in the app. Multiple states within a Qlik Sense
+           * app can be created and applied to specific objects within the app.
+           * Objects in a given state are not affected by user selection in the other states.
+           * @param qStateName - Mandatory. Alternate state name.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def addAlternateState(qStateName: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Steps back in the list of selections.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def back(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Clears all selections in all fields of the current Qlik Sense app.
+           * @param [lockedAlso] - Optional. Alternate state name. Default: false Introduced in version 2.1.
+           * @param [state] - Optional. Alternate state name. Default: $ Introduced in version 2.1.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def clearAll(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Clears all selections in all fields of the current Qlik Sense app.
+           * @param [lockedAlso] - Optional. Alternate state name. Default: false Introduced in version 2.1.
+           * @param [state] - Optional. Alternate state name. Default: $ Introduced in version 2.1.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def clearAll(lockedAlso: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Clears all selections in all fields of the current Qlik Sense app.
+           * @param [lockedAlso] - Optional. Alternate state name. Default: false Introduced in version 2.1.
+           * @param [state] - Optional. Alternate state name. Default: $ Introduced in version 2.1.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def clearAll(lockedAlso: scala.Boolean, state: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Closes a Qlik Sense app. Also closes the WebSocket and clears out client side data.
+           */
+  def close(): scala.Unit = js.native
+  /**
+           * Defines a hypercube and registers a callback to receive the data.
+           * @param qHyperCubeDef - Cube definition.
+           * @param [callback] - Optional. Callback method. Parameter will contain a qHyperCube.
+           * @return - A promise of an object model.
+           */
+  def createCube(qHyperCubeDef: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Defines a hypercube and registers a callback to receive the data.
+           * @param qHyperCubeDef - Cube definition.
+           * @param [callback] - Optional. Callback method. Parameter will contain a qHyperCube.
+           * @return - A promise of an object model.
+           */
+  def createCube(qHyperCubeDef: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Creates a generic object and registers a callback to receive the data. The generic object can contain the following:
+           *       # qHyperCubeDef
+           *       # qListObjectDef
+           *       # qStringExpression
+           *       # qValueExpression
+           * The callback method will be called whenever the selection state changes
+           * in a way that affects the generic object.
+           * The parameter will be the evaluated version of the definition.
+           * @param [def] - Optional. Generic object definition
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of an object model.
+           */
+  def createGenericObject(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Creates a generic object and registers a callback to receive the data. The generic object can contain the following:
+           *       # qHyperCubeDef
+           *       # qListObjectDef
+           *       # qStringExpression
+           *       # qValueExpression
+           * The callback method will be called whenever the selection state changes
+           * in a way that affects the generic object.
+           * The parameter will be the evaluated version of the definition.
+           * @param [def] - Optional. Generic object definition
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of an object model.
+           */
+  def createGenericObject(`def`: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Creates a generic object and registers a callback to receive the data. The generic object can contain the following:
+           *       # qHyperCubeDef
+           *       # qListObjectDef
+           *       # qStringExpression
+           *       # qValueExpression
+           * The callback method will be called whenever the selection state changes
+           * in a way that affects the generic object.
+           * The parameter will be the evaluated version of the definition.
+           * @param [def] - Optional. Generic object definition
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of an object model.
+           */
+  def createGenericObject(`def`: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Defines a list of field values and registers a callback to receive the data.
+           * @param qListObjectDef - List definition.
+           * @param [callback] - Optional. Callback method. Parameter will contain a qListObject.
+           * @return - A promise of an object model.
+           */
+  def createList(qListObjectDef: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Defines a list of field values and registers a callback to receive the data.
+           * @param qListObjectDef - List definition.
+           * @param [callback] - Optional. Callback method. Parameter will contain a qListObject.
+           * @return - A promise of an object model.
+           */
+  def createList(qListObjectDef: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Defines a hypercube for a table and is the entry point to the Table API.
+           * It creates a table object that wraps the hypercube.
+           * @param dimensions - Dimensions to use.
+           * Should, for each entry, be a field name or a NxDimension structure.
+           * @param measures - Measures to use.
+           * Should, for each entry, be an expression or a NxMeasure structure.
+           * @param [options] - Optional. Options to set.
+           * @return - A table object of type QTable, which is initially
+           *                    empty but that eventually will contain data.
+           *                    The table object will be updated when selection state changes.
+           */
+  def createTable(dimensions: js.Array[_ | java.lang.String], measures: js.Array[_ | java.lang.String]): qlikDashVisualizationextensionsLib.TableAPINs.IQTable = js.native
+  /**
+           * Defines a hypercube for a table and is the entry point to the Table API.
+           * It creates a table object that wraps the hypercube.
+           * @param dimensions - Dimensions to use.
+           * Should, for each entry, be a field name or a NxDimension structure.
+           * @param measures - Measures to use.
+           * Should, for each entry, be an expression or a NxMeasure structure.
+           * @param [options] - Optional. Options to set.
+           * @return - A table object of type QTable, which is initially
+           *                    empty but that eventually will contain data.
+           *                    The table object will be updated when selection state changes.
+           */
+  def createTable(
+    dimensions: js.Array[_ | java.lang.String],
+    measures: js.Array[_ | java.lang.String],
+    options: js.Any
+  ): qlikDashVisualizationextensionsLib.TableAPINs.IQTable = js.native
+  /**
+           * Destroys a Qlik Sense session object created with the createGenericObject
+           * method or any of createCube, createList or getList methods.
+           * Calling this method removes the object from the Qlik engine,
+           * no more updates are sent to the client and all methods on the object are invalid.
+           * @param id - Session object id.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def destroySessionObject(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Reloads the data in a Qlik Sense app.
+           * @param [qMode] - Optional. Error handling mode:
+           *       # 0 = default mode.
+           *       # 1 = attempt recovery on all errors.
+           *       # 2 = fail on all errors.
+           * @param [qPartial] - Optional. Set to true for partial reload.
+           * @param [qDebug] - Optional. Set to true if debug breakpoints are honored. Execution of the script will be in debug mode.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def doReload(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Reloads the data in a Qlik Sense app.
+           * @param [qMode] - Optional. Error handling mode:
+           *       # 0 = default mode.
+           *       # 1 = attempt recovery on all errors.
+           *       # 2 = fail on all errors.
+           * @param [qPartial] - Optional. Set to true for partial reload.
+           * @param [qDebug] - Optional. Set to true if debug breakpoints are honored. Execution of the script will be in debug mode.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def doReload(qMode: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Reloads the data in a Qlik Sense app.
+           * @param [qMode] - Optional. Error handling mode:
+           *       # 0 = default mode.
+           *       # 1 = attempt recovery on all errors.
+           *       # 2 = fail on all errors.
+           * @param [qPartial] - Optional. Set to true for partial reload.
+           * @param [qDebug] - Optional. Set to true if debug breakpoints are honored. Execution of the script will be in debug mode.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def doReload(qMode: java.lang.String, qPartial: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Reloads the data in a Qlik Sense app.
+           * @param [qMode] - Optional. Error handling mode:
+           *       # 0 = default mode.
+           *       # 1 = attempt recovery on all errors.
+           *       # 2 = fail on all errors.
+           * @param [qPartial] - Optional. Set to true for partial reload.
+           * @param [qDebug] - Optional. Set to true if debug breakpoints are honored. Execution of the script will be in debug mode.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def doReload(qMode: java.lang.String, qPartial: scala.Boolean, qDebug: scala.Boolean): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Saves a Qlik Sense app, including all objects and data in the data model.
+           * @param [qFileName] - Optional. File name of the file to save.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def doSave(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Saves a Qlik Sense app, including all objects and data in the data model.
+           * @param [qFileName] - Optional. File name of the file to save.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def doSave(qFileName: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Gets a field reference with methods that can be used to manipulate the field.
+           * @param [field] - Optional. Name of the field.
+           * @param [state] - Optional. Alternate state name. Default is $.
+           * @return - A QField object with methods and properties that can be used to manipulate the field.
+           */
+  def field(): qlikDashVisualizationextensionsLib.FieldAPINs.IQField = js.native
+  /**
+           * Gets a field reference with methods that can be used to manipulate the field.
+           * @param [field] - Optional. Name of the field.
+           * @param [state] - Optional. Alternate state name. Default is $.
+           * @return - A QField object with methods and properties that can be used to manipulate the field.
+           */
+  def field(field: java.lang.String): qlikDashVisualizationextensionsLib.FieldAPINs.IQField = js.native
+  /**
+           * Gets a field reference with methods that can be used to manipulate the field.
+           * @param [field] - Optional. Name of the field.
+           * @param [state] - Optional. Alternate state name. Default is $.
+           * @return - A QField object with methods and properties that can be used to manipulate the field.
+           */
+  def field(field: java.lang.String, state: java.lang.String): qlikDashVisualizationextensionsLib.FieldAPINs.IQField = js.native
+  /**
+           * Step forward in list of selections.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def forward(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Gets a layout for this Qlik Sense app and registers a callback to receive the data.
+           * Returns the dynamic properties (if any) in addition to the fixed properties.
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def getAppLayout(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Gets a layout for this Qlik Sense app and registers a callback to receive the data.
+           * Returns the dynamic properties (if any) in addition to the fixed properties.
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def getAppLayout(callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Gets a list of sheets and visualizations and registers a callback to receive the data.
+           * @param [field] - Optional. Type of object. One of:
+           *        # sheet
+           *        # masterobject
+           * Default is sheet.
+           * @param [callback] - Optional. Callback method.
+           */
+  def getAppObjectList(): scala.Unit = js.native
+  /**
+           * Gets a list of sheets and visualizations and registers a callback to receive the data.
+           * @param [field] - Optional. Type of object. One of:
+           *        # sheet
+           *        # masterobject
+           * Default is sheet.
+           * @param [callback] - Optional. Callback method.
+           */
+  def getAppObjectList(`type`: java.lang.String): scala.Unit = js.native
+  /**
+           * Gets a list of sheets and visualizations and registers a callback to receive the data.
+           * @param [field] - Optional. Type of object. One of:
+           *        # sheet
+           *        # masterobject
+           * Default is sheet.
+           * @param [callback] - Optional. Callback method.
+           */
+  def getAppObjectList(`type`: java.lang.String, callback: js.Any): scala.Unit = js.native
+  /**
+           * Gets properties for a generic object, the children of the generic object
+           * and the bookmarks and/or embedded snapshots of the generic object.
+           * @param id - Object id.
+           * @return - A promise of an object model.
+           */
+  def getFullPropertyTree(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Gets a list of internal Qlik Sense objects and registers a callback to receive the data.
+           * @param type - Type of object:
+           *       # FieldList
+           *       # MeasureList
+           *       # DimensionList
+           *       # BookmarkList
+           *       # SelectionObject
+           *       # SnapshotList (Introduced in version 1.1)
+           *       # MediaList (Introduced in version 1.1)
+           *       # Sheet (Introduced in version 1.1)
+           *       # MasterObject (Introduced in version 1.1)
+           *       # VariableList (Introduced in version 2.0)
+           *       # story (Introduced in version 2.1)
+           * @param [callback] - Optional. Registers a callback that is executed every time data is returned.
+           * @return - A promise of an object model.
+           */
+  def getList(`type`: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Gets a list of internal Qlik Sense objects and registers a callback to receive the data.
+           * @param type - Type of object:
+           *       # FieldList
+           *       # MeasureList
+           *       # DimensionList
+           *       # BookmarkList
+           *       # SelectionObject
+           *       # SnapshotList (Introduced in version 1.1)
+           *       # MediaList (Introduced in version 1.1)
+           *       # Sheet (Introduced in version 1.1)
+           *       # MasterObject (Introduced in version 1.1)
+           *       # VariableList (Introduced in version 2.0)
+           *       # story (Introduced in version 2.1)
+           * @param [callback] - Optional. Registers a callback that is executed every time data is returned.
+           * @return - A promise of an object model.
+           */
+  def getList(`type`: java.lang.String, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Retrieves a Qlik Sense object from the Qlik Sense application and inserts
+           * it into a HTML element. The object fills the HTML object, so you can size
+           * and position the element to determine how large the Qlik Sense object will be.
+           * If you supply only one parameter, you get the model without displaying the object.
+           * @param id - Object id or 'CurrentSelections' if used for Selections bar.
+           * @param [elem] - Optional. HTML element.
+           * Since version 1.1 it is also possible to define a string of the HTML element id.
+           * @param [options] - Optional.
+           * Name | Type | Description
+           * noInteraction | Boolean | Set to true if you want to disable interaction,
+           *                           including selections, in the visualization.
+           *                           Introduced in version 1.1 and updated in version 3.0.
+           * noSelections  | Boolean | Set to true if you want to disable selections in the visualization.
+           *                           Introduced in version 3.0.
+           * @return - A promise of an object model.
+           */
+  def getObject(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Retrieves a Qlik Sense object from the Qlik Sense application and inserts
+           * it into a HTML element. The object fills the HTML object, so you can size
+           * and position the element to determine how large the Qlik Sense object will be.
+           * If you supply only one parameter, you get the model without displaying the object.
+           * @param id - Object id or 'CurrentSelections' if used for Selections bar.
+           * @param [elem] - Optional. HTML element.
+           * Since version 1.1 it is also possible to define a string of the HTML element id.
+           * @param [options] - Optional.
+           * Name | Type | Description
+           * noInteraction | Boolean | Set to true if you want to disable interaction,
+           *                           including selections, in the visualization.
+           *                           Introduced in version 1.1 and updated in version 3.0.
+           * noSelections  | Boolean | Set to true if you want to disable selections in the visualization.
+           *                           Introduced in version 3.0.
+           * @return - A promise of an object model.
+           */
+  def getObject(id: java.lang.String, elem: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Retrieves a Qlik Sense object from the Qlik Sense application and inserts
+           * it into a HTML element. The object fills the HTML object, so you can size
+           * and position the element to determine how large the Qlik Sense object will be.
+           * If you supply only one parameter, you get the model without displaying the object.
+           * @param id - Object id or 'CurrentSelections' if used for Selections bar.
+           * @param [elem] - Optional. HTML element.
+           * Since version 1.1 it is also possible to define a string of the HTML element id.
+           * @param [options] - Optional.
+           * Name | Type | Description
+           * noInteraction | Boolean | Set to true if you want to disable interaction,
+           *                           including selections, in the visualization.
+           *                           Introduced in version 1.1 and updated in version 3.0.
+           * noSelections  | Boolean | Set to true if you want to disable selections in the visualization.
+           *                           Introduced in version 3.0.
+           * @return - A promise of an object model.
+           */
+  def getObject(id: java.lang.String, elem: java.lang.String, options: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Retrieves a Qlik Sense object from the Qlik Sense application and inserts
+           * it into a HTML element. The object fills the HTML object, so you can size
+           * and position the element to determine how large the Qlik Sense object will be.
+           * If you supply only one parameter, you get the model without displaying the object.
+           * @param id - Object id or 'CurrentSelections' if used for Selections bar.
+           * @param [elem] - Optional. HTML element.
+           * Since version 1.1 it is also possible to define a string of the HTML element id.
+           * @param [options] - Optional.
+           * Name | Type | Description
+           * noInteraction | Boolean | Set to true if you want to disable interaction,
+           *                           including selections, in the visualization.
+           *                           Introduced in version 1.1 and updated in version 3.0.
+           * noSelections  | Boolean | Set to true if you want to disable selections in the visualization.
+           *                           Introduced in version 3.0.
+           * @return - A promise of an object model.
+           */
+  def getObject(id: java.lang.String, elem: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Retrieves a Qlik Sense object from the Qlik Sense application and inserts
+           * it into a HTML element. The object fills the HTML object, so you can size
+           * and position the element to determine how large the Qlik Sense object will be.
+           * If you supply only one parameter, you get the model without displaying the object.
+           * @param id - Object id or 'CurrentSelections' if used for Selections bar.
+           * @param [elem] - Optional. HTML element.
+           * Since version 1.1 it is also possible to define a string of the HTML element id.
+           * @param [options] - Optional.
+           * Name | Type | Description
+           * noInteraction | Boolean | Set to true if you want to disable interaction,
+           *                           including selections, in the visualization.
+           *                           Introduced in version 1.1 and updated in version 3.0.
+           * noSelections  | Boolean | Set to true if you want to disable selections in the visualization.
+           *                           Introduced in version 3.0.
+           * @return - A promise of an object model.
+           */
+  def getObject(id: java.lang.String, elem: js.Any, options: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Gets properties for a Qlik Sense object.
+           * @param id - Object id.
+           * @return - A promise of an object model.
+           */
+  def getObjectProperties(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Gets the data load script of this app.
+           * @return - A promise of an qScript object.
+           */
+  def getScript(): angularLib.angularMod.angularNs.IPromise[java.lang.String] = js.native
+  /**
+           * Inserts a Qlik Sense snapshot into a HTML element. The snapshot fills
+           * the HTML object so you can size and position the element to determine
+           * how large the Qlik Sense object will be. If you only supply one parameter,
+           * you will just get the model without displaying the object.
+           * @param id - Snapshot ID.
+           * @param [elem] - Optional. HTML element or string with HTML element id.
+           * @return - A promise of an object model.
+           */
+  def getSnapshot(id: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Inserts a Qlik Sense snapshot into a HTML element. The snapshot fills
+           * the HTML object so you can size and position the element to determine
+           * how large the Qlik Sense object will be. If you only supply one parameter,
+           * you will just get the model without displaying the object.
+           * @param id - Snapshot ID.
+           * @param [elem] - Optional. HTML element or string with HTML element id.
+           * @return - A promise of an object model.
+           */
+  def getSnapshot(id: java.lang.String, elem: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Inserts a Qlik Sense snapshot into a HTML element. The snapshot fills
+           * the HTML object so you can size and position the element to determine
+           * how large the Qlik Sense object will be. If you only supply one parameter,
+           * you will just get the model without displaying the object.
+           * @param id - Snapshot ID.
+           * @param [elem] - Optional. HTML element or string with HTML element id.
+           * @return - A promise of an object model.
+           */
+  def getSnapshot(id: java.lang.String, elem: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Locks all selections.
+           * @param [state=$] - Optional. Alternate state name.
+           * Default: $
+           * Introduced in version 2.1.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def lockAll(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Locks all selections.
+           * @param [state=$] - Optional. Alternate state name.
+           * Default: $
+           * Introduced in version 2.1.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def lockAll(state: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Removes an alternate state in the app.
+           * @param qStateName - Alternate state name.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def removeAlternateState(qStateName: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Searches for one or more terms in the values of a Qlik Sense app.
+           * @param qTerms - Terms to search for.
+           * @param qPage - Properties:
+           * Name | Type | Description
+           * qOffset | Number | Position from the top, starting from 0.
+           * qCount | Number | Number of search results to return.
+           * qMaxNbrFieldMatches | Number | Maximum number of matching values to return per search result.
+           * @param qOptions - Properties
+           * Name | Type | Description
+           * qSearchFields | Array | List of search fields.
+           * qContext | | Search context. Can be one of:
+           *       # Cleared: In this mode, the first step is to clear any current selections in the app.
+           *                  The second step is to search for one or more terms in the values of the app.
+           *       # LockedFieldsOnly: In this mode, the search applies only to the values associated
+           *                           with the selections made in locked fields, ignoring selections
+           *                           in any unlocked field. If no locked fields, the behavior is
+           *                           identical to the Cleared context. You cannot make any new selections
+           *                           in a locked field. You can get search hits for the associated values
+           *                           of a locked field but you cannot get the search hits for the non associative values.
+           *       # CurrentSelections:In this mode, the current selections are kept (if any). Search
+           *                           for one or more terms in the values of the app. New selections
+           *                           are made on top of the current selections. If no selections were
+           *                           made before the search, this mode is identical to the Cleared context.
+           * | | Default value is LockedFieldsOnly.
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def searchAssociations(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Searches for one or more terms in the values of a Qlik Sense app.
+           * @param qTerms - Terms to search for.
+           * @param qPage - Properties:
+           * Name | Type | Description
+           * qOffset | Number | Position from the top, starting from 0.
+           * qCount | Number | Number of search results to return.
+           * qMaxNbrFieldMatches | Number | Maximum number of matching values to return per search result.
+           * @param qOptions - Properties
+           * Name | Type | Description
+           * qSearchFields | Array | List of search fields.
+           * qContext | | Search context. Can be one of:
+           *       # Cleared: In this mode, the first step is to clear any current selections in the app.
+           *                  The second step is to search for one or more terms in the values of the app.
+           *       # LockedFieldsOnly: In this mode, the search applies only to the values associated
+           *                           with the selections made in locked fields, ignoring selections
+           *                           in any unlocked field. If no locked fields, the behavior is
+           *                           identical to the Cleared context. You cannot make any new selections
+           *                           in a locked field. You can get search hits for the associated values
+           *                           of a locked field but you cannot get the search hits for the non associative values.
+           *       # CurrentSelections:In this mode, the current selections are kept (if any). Search
+           *                           for one or more terms in the values of the app. New selections
+           *                           are made on top of the current selections. If no selections were
+           *                           made before the search, this mode is identical to the Cleared context.
+           * | | Default value is LockedFieldsOnly.
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def searchAssociations(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Searches for one or more terms in the values of a Qlik Sense app.
+           * @param qTerms - Terms to search for.
+           * @param qPage - Properties:
+           * Name | Type | Description
+           * qOffset | Number | Position from the top, starting from 0.
+           * qCount | Number | Number of search results to return.
+           * qGroupOptions | Array | This parameter is optional. Options of the search groups. If this property is not set, all values are returned.
+           * qGroupItemOptions | Array | This parameter is optional. Options of the search group items. If this property is not set, all values are returned.
+           * qOptions | Object | Optional. Search options. Properties:
+           * Name | Type | Description
+           * qSearchFields | Array | List of search fields.
+           * qContext | | Search context. Can be one of:
+           *       # Cleared: In this mode, the first step is to clear any current selections in the app.
+           *                  The second step is to search for one or more terms in the values of the app.
+           *       # LockedFieldsOnly: In this mode, the search applies only to the values associated
+           *                           with the selections made in locked fields, ignoring selections
+           *                           in any unlocked field. If no locked fields, the behavior is
+           *                           identical to the Cleared context. You cannot make any new selections
+           *                           in a locked field. You can get search hits for the associated values
+           *                           of a locked field but you cannot get the search hits for the non associative values.
+           *       # CurrentSelections:In this mode, the current selections are kept (if any). Search
+           *                           for one or more terms in the values of the app. New selections
+           *                           are made on top of the current selections. If no selections were
+           *                           made before the search, this mode is identical to the Cleared context.
+           * | | Default value is LockedFieldsOnly.
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def searchResults(qTerms: js.Array[_], qPage: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Searches for one or more terms in the values of a Qlik Sense app.
+           * @param qTerms - Terms to search for.
+           * @param qPage - Properties:
+           * Name | Type | Description
+           * qOffset | Number | Position from the top, starting from 0.
+           * qCount | Number | Number of search results to return.
+           * qGroupOptions | Array | This parameter is optional. Options of the search groups. If this property is not set, all values are returned.
+           * qGroupItemOptions | Array | This parameter is optional. Options of the search group items. If this property is not set, all values are returned.
+           * qOptions | Object | Optional. Search options. Properties:
+           * Name | Type | Description
+           * qSearchFields | Array | List of search fields.
+           * qContext | | Search context. Can be one of:
+           *       # Cleared: In this mode, the first step is to clear any current selections in the app.
+           *                  The second step is to search for one or more terms in the values of the app.
+           *       # LockedFieldsOnly: In this mode, the search applies only to the values associated
+           *                           with the selections made in locked fields, ignoring selections
+           *                           in any unlocked field. If no locked fields, the behavior is
+           *                           identical to the Cleared context. You cannot make any new selections
+           *                           in a locked field. You can get search hits for the associated values
+           *                           of a locked field but you cannot get the search hits for the non associative values.
+           *       # CurrentSelections:In this mode, the current selections are kept (if any). Search
+           *                           for one or more terms in the values of the app. New selections
+           *                           are made on top of the current selections. If no selections were
+           *                           made before the search, this mode is identical to the Cleared context.
+           * | | Default value is LockedFieldsOnly.
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Searches for one or more terms in the values of a Qlik Sense app.
+           * @param qTerms - Terms to search for.
+           * @param qPage - Properties:
+           * Name | Type | Description
+           * qOffset | Number | Position from the top, starting from 0.
+           * qCount | Number | Number of search results to return.
+           * qGroupOptions | Array | This parameter is optional. Options of the search groups. If this property is not set, all values are returned.
+           * qGroupItemOptions | Array | This parameter is optional. Options of the search group items. If this property is not set, all values are returned.
+           * qOptions | Object | Optional. Search options. Properties:
+           * Name | Type | Description
+           * qSearchFields | Array | List of search fields.
+           * qContext | | Search context. Can be one of:
+           *       # Cleared: In this mode, the first step is to clear any current selections in the app.
+           *                  The second step is to search for one or more terms in the values of the app.
+           *       # LockedFieldsOnly: In this mode, the search applies only to the values associated
+           *                           with the selections made in locked fields, ignoring selections
+           *                           in any unlocked field. If no locked fields, the behavior is
+           *                           identical to the Cleared context. You cannot make any new selections
+           *                           in a locked field. You can get search hits for the associated values
+           *                           of a locked field but you cannot get the search hits for the non associative values.
+           *       # CurrentSelections:In this mode, the current selections are kept (if any). Search
+           *                           for one or more terms in the values of the app. New selections
+           *                           are made on top of the current selections. If no selections were
+           *                           made before the search, this mode is identical to the Cleared context.
+           * | | Default value is LockedFieldsOnly.
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def searchResults(qTerms: js.Array[_], qPage: js.Any, qOptions: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Returns suggestions of words from the values entered in the search. Acts as a helper for the searchAssociations method.
+           * @param qTerms - Terms to search for.
+           * @param [qOptions] - Optional. Search options. Properties:
+           * Name | Type | Description
+           * qSearchFields | Array | List of search fields.
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def searchSuggest(qTerms: js.Array[_]): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Returns suggestions of words from the values entered in the search. Acts as a helper for the searchAssociations method.
+           * @param qTerms - Terms to search for.
+           * @param [qOptions] - Optional. Search options. Properties:
+           * Name | Type | Description
+           * qSearchFields | Array | List of search fields.
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def searchSuggest(qTerms: js.Array[_], qOptions: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Returns suggestions of words from the values entered in the search. Acts as a helper for the searchAssociations method.
+           * @param qTerms - Terms to search for.
+           * @param [qOptions] - Optional. Search options. Properties:
+           * Name | Type | Description
+           * qSearchFields | Array | List of search fields.
+           * @param [callback] - Optional. Callback method.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def searchSuggest(qTerms: js.Array[_], qOptions: js.Any, callback: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Makes a selection based on searchAssociation results.
+           * @param qMatchIx - Index to search result.
+           * @param qTerms - Values to select.
+           * @param qOptions - Values to select.
+           * @param [qTerms] - Optional. Parameter sent to the Qlik engine containing information about the search fields and the search context.
+           * @param [qSoftLock] - Optional. This parameter was deprecated in version 2.0 and is ignored in newer versions. Use the qOtions.qContext parameter instead.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def selectAssociations(qMatchIx: scala.Double, qTerms: js.Array[_]): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Makes a selection based on searchAssociation results.
+           * @param qMatchIx - Index to search result.
+           * @param qTerms - Values to select.
+           * @param qOptions - Values to select.
+           * @param [qTerms] - Optional. Parameter sent to the Qlik engine containing information about the search fields and the search context.
+           * @param [qSoftLock] - Optional. This parameter was deprecated in version 2.0 and is ignored in newer versions. Use the qOtions.qContext parameter instead.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def selectAssociations(qMatchIx: scala.Double, qTerms: js.Array[_], qOptions: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Makes a selection based on searchAssociation results.
+           * @param qMatchIx - Index to search result.
+           * @param qTerms - Values to select.
+           * @param qOptions - Values to select.
+           * @param [qTerms] - Optional. Parameter sent to the Qlik engine containing information about the search fields and the search context.
+           * @param [qSoftLock] - Optional. This parameter was deprecated in version 2.0 and is ignored in newer versions. Use the qOtions.qContext parameter instead.
+           * @return - A promise of a Qlik engine reply.
+           */
+  def selectAssociations(qMatchIx: scala.Double, qTerms: js.Array[_], qOptions: js.Any, qSoftLock: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Sets the data load script of this app. Also validates the script syntax and returns the syntax errors if errors exist.
+           * @param [state] - Optional. Sets the state. Default is $.
+           */
+  def selectionState(): qlikDashVisualizationextensionsLib.SelectionStateAPINs.IQSelectionState = js.native
+  /**
+           * Sets the data load script of this app. Also validates the script syntax and returns the syntax errors if errors exist.
+           * @param [state] - Optional. Sets the state. Default is $.
+           */
+  def selectionState(state: java.lang.String): qlikDashVisualizationextensionsLib.SelectionStateAPINs.IQSelectionState = js.native
+  /**
+           * Creates a QSelectionState object that encapsulates the selection state. Entry point to the Selection API.
+           * @param [script] - The script content.
+           * @return - A promise of an empty object or a list of syntax errors depending on the validation result.
+           */
+  def setScript(script: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Unlocks all selections that has previously been locked.
+           * @param [state] - Optional. Alternate state name. Default: $ Introduced in version 2.1.
+           */
+  def unlockAll(): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  /**
+           * Unlocks all selections that has previously been locked.
+           * @param [state] - Optional. Alternate state name. Default: $ Introduced in version 2.1.
+           */
+  def unlockAll(state: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
+}
+

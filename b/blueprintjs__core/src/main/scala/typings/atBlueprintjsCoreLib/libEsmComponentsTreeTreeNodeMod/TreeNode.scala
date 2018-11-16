@@ -1,0 +1,30 @@
+package typings
+package atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@blueprintjs/core/lib/esm/components/tree/treeNode", "TreeNode")
+@js.native
+class TreeNode[T] ()
+  extends reactLib.reactMod.Component[ITreeNodeProps[T], js.Object, js.Any] {
+  var handleCaretClick: js.Any = js.native
+  var handleClick: js.Any = js.native
+  var handleContentRef: js.Any = js.native
+  var handleContextMenu: js.Any = js.native
+  var handleDoubleClick: js.Any = js.native
+  /* private */ def maybeRenderCaret(): js.Any = js.native
+  /* private */ def maybeRenderSecondaryLabel(): js.Any = js.native
+}
+
+@JSImport("@blueprintjs/core/lib/esm/components/tree/treeNode", "TreeNode")
+@js.native
+object TreeNode extends js.Object {
+  var displayName: java.lang.String = js.native
+  def ofType[T](): ScalablyTyped.runtime.Instantiable1[
+    /* props */ atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.ITreeNodeProps[T], 
+    atBlueprintjsCoreLib.libEsmComponentsTreeTreeNodeMod.TreeNode[T]
+  ] = js.native
+}
+

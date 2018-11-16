@@ -1,0 +1,21 @@
+package typings
+package loaderDashRunnerLib.loaderDashRunnerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("loader-runner", JSImport.Namespace)
+@js.native
+object loaderDashRunnerModMembers extends js.Object {
+  def getContext(resource: java.lang.String): java.lang.String = js.native
+  def runLoaders(
+    options: RunLoaderOption,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* result */ RunLoaderResult, 
+      _
+    ]
+  ): scala.Unit = js.native
+}
+

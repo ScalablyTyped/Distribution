@@ -1,0 +1,15 @@
+package typings
+package reactDashReduxDashToastrLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object reactDashReduxDashToastrMod {
+  type ReduxToastr = reactLib.reactMod.Component[ReduxToastrProps, js.Object, js.Any]
+  type iconType = reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.success | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.info | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.warning | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.error
+  type positionType = reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.`top-left` | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.`top-center` | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.`top-right` | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.`bottom-left` | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.`bottom-center` | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.`bottom-right`
+  type toastType = reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.success | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.info | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.warning | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.light | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.error | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.confirm | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.message
+  type transitionInType = reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.bounceIn | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.bounceInDown | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.fadeIn
+  type transitionOutType = reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.bounceOut | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.bounceOutUp | reactDashReduxDashToastrLib.reactDashReduxDashToastrLibStrings.fadeOut
+}

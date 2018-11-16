@@ -1,0 +1,13 @@
+package typings
+package reduxDashAuthDashWrapperLib.history3LocationHelperMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("redux-auth-wrapper/history3/locationHelper", JSImport.Namespace)
+@js.native
+object history3LocationHelperModMembers extends js.Object {
+  def default[Props](config: LocationHelperConfig[Props]): LocationHelper[Props] = js.native
+}
+

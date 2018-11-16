@@ -1,0 +1,177 @@
+package typings
+package elasticDotJsLib.elasticDotJsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("elastic.js", "Sort")
+@js.native
+class Sort protected ()
+  extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort {
+  /*
+       Defines a sort value
+       */
+  def this(fieldName: java.lang.String) = this()
+  /*
+       The type of ejs object.  For internal use only.
+       */
+  /* CompleteClass */
+  override def _type(): java.lang.String = js.native
+  /*
+       Sets the sort order to ascending (asc).  Same as calling
+       order('asc').
+       */
+  /* CompleteClass */
+  override def asc(): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Sets the sort order to descending (desc).  Same as calling
+       order('desc').
+       */
+  /* CompleteClass */
+  override def desc(): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       How to compute the distance. Can either be arc (better precision)
+       or plane (faster). Defaults to arc.
+  
+       Valid during sort types:  geo distance
+       */
+  /* CompleteClass */
+  override def distanceType(`type`: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Set's the field to sort on
+       */
+  /* CompleteClass */
+  override def field(f: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Enables sorting based on a distance from a GeoPoint
+       */
+  /* CompleteClass */
+  override def geoDistance(point: elasticDotJsLib.elasticDotJsMod.elasticjsNs.GeoPoint): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Sets if the sort should ignore unmapped fields vs throwing an error.
+  
+       Valid during sort types:  field
+       */
+  /* CompleteClass */
+  override def ignoreUnmapped(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Sets the script language.
+  
+       Valid during sort types:  script
+       */
+  /* CompleteClass */
+  override def lang(lang: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Sets the value to use for missing fields.  Valid values are:
+  
+       _last - to put documents with the field missing last
+       _first - to put documents with the field missing first
+       {String} - any string value to use as the sort value.
+  
+       Valid during sort types:  field
+       */
+  /* CompleteClass */
+  override def missing(m: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Sets the sort mode.  Valid values are:
+  
+  
+       min - sort by lowest value
+       max - sort by highest value
+       sum - sort by the sum of all values
+       avg - sort by the average of all values
+  
+  
+       Valid during sort types:  field, geo distance
+       */
+  /* CompleteClass */
+  override def mode(m: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Allows you to set a filter that nested objects must match
+       in order to be considered during sorting.
+  
+       Valid during sort types: field, geo distance
+       */
+  /* CompleteClass */
+  override def nestedFilter(oFilter: js.Object): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Sets the path of the nested object.
+  
+       Valid during sort types:  field, geo distance
+       */
+  /* CompleteClass */
+  override def nestedPath(path: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       If the lat/long points should be normalized to lie within their
+       respective normalized ranges.
+  
+       Normalized ranges are:
+       lon = -180 (exclusive) to 180 (inclusive) range
+       lat = -90 to 90 (both inclusive) range
+  
+       Valid during sort types:  geo distance
+       */
+  /* CompleteClass */
+  override def normalize(trueFalse: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Sets the sort order.  Valid values are:
+  
+       asc - for ascending order
+       desc - for descending order
+  
+       Valid during sort types:  field, geo distance, and script
+       */
+  /* CompleteClass */
+  override def order(o: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Sets parameters that will be applied to the script.  Overwrites
+       any existing params.
+  
+       Valid during sort types:  script
+       */
+  /* CompleteClass */
+  override def params(p: js.Object): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Sets the order with a boolean value.
+  
+       true = descending sort order
+       false = ascending sort order
+  
+       Valid during sort types:  field, geo distance, and script
+       */
+  /* CompleteClass */
+  override def reverse(trueFalse: scala.Boolean): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Enables sorting based on a script.
+       */
+  /* CompleteClass */
+  override def script(scriptCode: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Retrieves the internal script object. This is typically used by
+       internal API functions so use with caution.
+       */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
+  /*
+       Sets the script sort type.  Valid values are:
+  
+  
+       string - script return value is sorted as a string
+       number - script return value is sorted as a number
+  
+  
+       Valid during sort types:  script
+       */
+  /* CompleteClass */
+  override def `type`(`type`: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+  /*
+       Sets the distance unit.  Valid values are "mi" for miles or "km"
+       for kilometers. Defaults to "km".
+  
+       Valid during sort types:  geo distance
+       */
+  /* CompleteClass */
+  override def unit(unit: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.Sort = js.native
+}
+

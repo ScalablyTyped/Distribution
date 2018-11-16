@@ -1,0 +1,33 @@
+package typings
+package angularDashUiDashBootstrapLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object angularDashUiDashBootstrapMod {
+  type IAccordionConfig = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IAccordionConfig
+  type IButtonConfig = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IButtonConfig
+  type IDatepickerConfig = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IDatepickerConfig
+  type IDatepickerPopupConfig = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IDatepickerPopupConfig
+  type IDropdownConfig = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IDropdownConfig
+  type IModalInstanceService = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalInstanceService
+  type IModalProvider = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalProvider
+  type IModalScope = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalScope
+  type IModalService = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalService
+  type IModalServiceInstance = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalServiceInstance
+  type IModalSettings = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalSettings
+  type IModalStackService = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalStackService
+  type IModalStackedMapKeyValuePair = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IModalStackedMapKeyValuePair
+  type IPagerConfig = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IPagerConfig
+  type IPaginationConfig = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IPaginationConfig
+  type IPositionCoordinates = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IPositionCoordinates
+  type IPositionService = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IPositionService
+  type IProgressConfig = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IProgressConfig
+  type IRatingConfig = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.IRatingConfig
+  type ITimepickerConfig = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.ITimepickerConfig
+  type ITooltipOptions = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.ITooltipOptions
+  type ITooltipProvider = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.ITooltipProvider
+  type ITransitionService = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.ITransitionService
+  type ITransitionServiceOptions = angularDashUiDashBootstrapLib.angularDashUiDashBootstrapMod.angularMod.uiNs.bootstrapNs.ITransitionServiceOptions
+}

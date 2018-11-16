@@ -1,0 +1,15 @@
+package typings
+package koaDashComposeLib.koaDashComposeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object composeNs {
+  type ComposedMiddleware[T] = js.Function2[
+    /* context */ T, 
+    /* next */ js.UndefOr[js.Function0[stdLib.Promise[js.Any]]], 
+    stdLib.Promise[scala.Unit]
+  ]
+  type Middleware[T] = js.Function2[/* context */ T, /* next */ js.Function0[stdLib.Promise[js.Any]], js.Any]
+}

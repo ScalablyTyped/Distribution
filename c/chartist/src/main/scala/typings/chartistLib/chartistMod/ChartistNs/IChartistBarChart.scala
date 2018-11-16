@@ -1,0 +1,25 @@
+package typings
+package chartistLib.chartistMod.ChartistNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait IChartistBarChart
+  extends IChartistBase[IBarChartOptions]
+     with ScalablyTyped.runtime.Instantiable2[/* target */ js.Any, /* data */ IChartistData, IChartistBarChart]
+     with ScalablyTyped.runtime.Instantiable3[
+      /* target */ js.Any, 
+      /* data */ IChartistData, 
+      /* options */ IBarChartOptions, 
+      IChartistBarChart
+    ]
+     with ScalablyTyped.runtime.Instantiable4[
+      /* target */ js.Any, 
+      /* data */ IChartistData, 
+      /* options */ IBarChartOptions, 
+      /* responsiveOptions */ js.Array[IResponsiveOptionTuple[IBarChartOptions]], 
+      IChartistBarChart
+    ]
+

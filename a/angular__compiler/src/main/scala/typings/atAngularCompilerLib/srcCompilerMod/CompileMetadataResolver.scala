@@ -1,0 +1,15 @@
+package typings
+package atAngularCompilerLib.srcCompilerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@angular/compiler/src/compiler", "CompileMetadataResolver")
+@js.native
+class CompileMetadataResolver protected ()
+  extends atAngularCompilerLib.srcMetadataUnderscoreResolverMod.CompileMetadataResolver {
+  def this(_config: atAngularCompilerLib.srcConfigMod.CompilerConfig, _htmlParser: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser, _ngModuleResolver: atAngularCompilerLib.srcNgUnderscoreModuleUnderscoreResolverMod.NgModuleResolver, _directiveResolver: atAngularCompilerLib.srcDirectiveUnderscoreResolverMod.DirectiveResolver, _pipeResolver: atAngularCompilerLib.srcPipeUnderscoreResolverMod.PipeResolver, _summaryResolver: atAngularCompilerLib.srcSummaryUnderscoreResolverMod.SummaryResolver[_], _schemaRegistry: atAngularCompilerLib.srcSchemaElementUnderscoreSchemaUnderscoreRegistryMod.ElementSchemaRegistry, _directiveNormalizer: atAngularCompilerLib.srcDirectiveUnderscoreNormalizerMod.DirectiveNormalizer, _console: atAngularCompilerLib.srcUtilMod.Console, _staticSymbolCache: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbolCache, _reflector: atAngularCompilerLib.srcCompileUnderscoreReflectorMod.CompileReflector) = this()
+  def this(_config: atAngularCompilerLib.srcConfigMod.CompilerConfig, _htmlParser: atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreParserMod.HtmlParser, _ngModuleResolver: atAngularCompilerLib.srcNgUnderscoreModuleUnderscoreResolverMod.NgModuleResolver, _directiveResolver: atAngularCompilerLib.srcDirectiveUnderscoreResolverMod.DirectiveResolver, _pipeResolver: atAngularCompilerLib.srcPipeUnderscoreResolverMod.PipeResolver, _summaryResolver: atAngularCompilerLib.srcSummaryUnderscoreResolverMod.SummaryResolver[_], _schemaRegistry: atAngularCompilerLib.srcSchemaElementUnderscoreSchemaUnderscoreRegistryMod.ElementSchemaRegistry, _directiveNormalizer: atAngularCompilerLib.srcDirectiveUnderscoreNormalizerMod.DirectiveNormalizer, _console: atAngularCompilerLib.srcUtilMod.Console, _staticSymbolCache: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbolCache, _reflector: atAngularCompilerLib.srcCompileUnderscoreReflectorMod.CompileReflector, _errorCollector: atAngularCompilerLib.srcMetadataUnderscoreResolverMod.ErrorCollector) = this()
+}
+

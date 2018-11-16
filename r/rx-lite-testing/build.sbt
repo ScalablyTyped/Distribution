@@ -1,0 +1,18 @@
+organization := "com.scalablytyped"
+name := "rx-lite-testing"
+version := "4.0-dt-20181102Z-1e0f71"
+scalaVersion := "2.12.7"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.olvind" %%% "runtime" % "1.0.0-M1",
+  "com.scalablytyped" %%% "rx-core" % "4.0-dt-20181102Z-85961b",
+  "com.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20181102Z-063c8e",
+  "com.scalablytyped" %%% "rx-lite" % "4.0-dt-20181102Z-6860e9",
+  "com.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20181102Z-ffc687",
+  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+publishArtifact in packageDoc := false
+scalacOptions += "-P:scalajs:sjsDefinedByDefault"
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+bintrayRepository := "ScalablyTyped"
+        

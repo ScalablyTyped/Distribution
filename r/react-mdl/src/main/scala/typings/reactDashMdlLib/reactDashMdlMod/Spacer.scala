@@ -1,0 +1,12 @@
+package typings
+package reactDashMdlLib.reactDashMdlMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-mdl", "Spacer")
+@js.native
+class Spacer ()
+  extends reactDashMdlLib.reactDashMdlMod.underscoreUnderscoreReactMDLNs.Spacer
+

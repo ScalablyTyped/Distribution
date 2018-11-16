@@ -1,0 +1,28 @@
+package typings
+package awsDashSdkLib.clientsAllMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("aws-sdk/clients/all", "Inspector")
+@js.native
+object InspectorNs extends js.Object {
+  @js.native
+  class Types ()
+    extends awsDashSdkLib.clientsInspectorMod.Types {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsInspectorMod.InspectorNs.ClientConfiguration) = this()
+  }
+  
+  val TypesNs: this.type = js.native
+  @JSName("Inspector")
+  @js.native
+  object InspectorNs extends js.Object {
+    val TypesNs: this.type = js.native
+  }
+  
+}
+

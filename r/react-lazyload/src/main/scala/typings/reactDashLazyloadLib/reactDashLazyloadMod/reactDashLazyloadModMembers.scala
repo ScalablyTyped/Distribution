@@ -1,0 +1,14 @@
+package typings
+package reactDashLazyloadLib.reactDashLazyloadMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-lazyload", JSImport.Namespace)
+@js.native
+object reactDashLazyloadModMembers extends js.Object {
+  def forceCheck(): scala.Unit = js.native
+  def lazyload(option: js.Object): LazyLoad = js.native
+}
+

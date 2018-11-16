@@ -1,0 +1,5 @@
+[debug] PhaseRunner.scala:82 Failure, [dexie => InFile(/home/olvind/tmp/tso-cache/npm/node_modules/dexie/dist/dexie.d.ts): Parse error at 439.40 ''}'' expected but ',' found] [id => dexie, phase => typescript] 
+[warn ] PhaseRunner.scala:64 Failed because of, [dexie => InFile(/home/olvind/tmp/tso-cache/npm/node_modules/dexie/dist/dexie.d.ts): Parse error at 439.40 ''}'' expected but ',' found] [id => dexie, phase => typescript] 
+[debug] PhaseRunner.scala:82 Failure, [dexie => InFile(/home/olvind/tmp/tso-cache/npm/node_modules/dexie/dist/dexie.d.ts): Parse error at 439.40 ''}'' expected but ',' found] [id => dexie, phase => typescript] 
+[debug] PhaseRunner.scala:82 Failure, [dexie => InFile(/home/olvind/tmp/tso-cache/npm/node_modules/dexie/dist/dexie.d.ts): Parse error at 439.40 ''}'' expected but ',' found] [id => dexie, phase => scala.js] 
+[debug] PhaseRunner.scala:82 Failure, [dexie => InFile(/home/olvind/tmp/tso-cache/npm/node_modules/dexie/dist/dexie.d.ts): Parse error at 439.40 ''}'' expected but ',' found] [id => dexie, phase => build] 

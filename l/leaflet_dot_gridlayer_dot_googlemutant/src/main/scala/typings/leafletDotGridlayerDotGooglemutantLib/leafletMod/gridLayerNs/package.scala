@@ -1,0 +1,10 @@
+package typings
+package leafletDotGridlayerDotGooglemutantLib.leafletMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object gridLayerNs {
+  type GoogleMutantType = leafletDotGridlayerDotGooglemutantLib.leafletDotGridlayerDotGooglemutantLibStrings.roadmap | leafletDotGridlayerDotGooglemutantLib.leafletDotGridlayerDotGooglemutantLibStrings.satellite | leafletDotGridlayerDotGooglemutantLib.leafletDotGridlayerDotGooglemutantLibStrings.terrain | leafletDotGridlayerDotGooglemutantLib.leafletDotGridlayerDotGooglemutantLibStrings.hybrid
+}

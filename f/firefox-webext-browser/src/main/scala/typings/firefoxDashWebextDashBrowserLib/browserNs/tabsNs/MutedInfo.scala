@@ -1,0 +1,24 @@
+package typings
+package firefoxDashWebextDashBrowserLib.browserNs.tabsNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Tab muted state and the reason for the last state change. */
+
+trait MutedInfo extends js.Object {
+  /**
+           * The ID of the extension that changed the muted state. Not set if an extension was not the reason the muted
+           * state last changed.
+           */
+  var extensionId: js.UndefOr[java.lang.String] = js.undefined
+  /**
+           * Whether the tab is prevented from playing sound (but hasn't necessarily recently produced sound). Equivalent
+           * to whether the muted audio indicator is showing.
+           */
+  var muted: scala.Boolean
+  /** The reason the tab was muted or unmuted. Not set if the tab's mute state has never been changed. */
+  var reason: js.UndefOr[MutedInfoReason] = js.undefined
+}
+

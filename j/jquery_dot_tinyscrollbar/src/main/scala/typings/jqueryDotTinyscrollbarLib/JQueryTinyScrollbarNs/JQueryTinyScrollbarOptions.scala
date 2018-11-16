@@ -1,0 +1,39 @@
+package typings
+package jqueryDotTinyscrollbarLib.JQueryTinyScrollbarNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait JQueryTinyScrollbarOptions extends js.Object {
+  /**
+          * Vertical or horizontal scroller? 'x' or 'y'. (default: 'x')
+          */
+  var axis: js.UndefOr[java.lang.String] = js.undefined
+  /**
+          * Enable mobile invert style scrolling. (default: false)
+          */
+  var invertscroll: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+          * Return scrollwheel event to browser if there is no more content. (default: true)
+          */
+  var lockscroll: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+          * Enable or disable the mousewheel. (default: true)
+          */
+  var scroll: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+          * Set the size of the scrollbar to auto or a fixed number. (default: 'auto')
+          */
+  var size: js.UndefOr[js.Any] = js.undefined
+  /**
+          * Set the size of the thumb to auto or a fixed number. (default: 'auto')
+          */
+  var sizethumb: js.UndefOr[js.Any] = js.undefined
+  /**
+          * How many pixels must the mouswheel scrolls at a time. (default: 40)
+          */
+  var wheel: js.UndefOr[scala.Double] = js.undefined
+}
+

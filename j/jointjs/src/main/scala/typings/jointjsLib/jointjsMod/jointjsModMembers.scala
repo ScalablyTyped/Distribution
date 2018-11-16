@@ -1,0 +1,56 @@
+package typings
+package jointjsLib.jointjsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("jointjs", JSImport.Namespace)
+@js.native
+object jointjsModMembers extends js.Object {
+  def V(svg: java.lang.String): Vectorizer = js.native
+  def V(svg: java.lang.String, attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): Vectorizer = js.native
+  def V(svg: java.lang.String, attrs: ScalablyTyped.runtime.StringDictionary[js.Any], children: Vectorizer): Vectorizer = js.native
+  def V(
+    svg: java.lang.String,
+    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    children: js.Array[Vectorizer | stdLib.SVGElement]
+  ): Vectorizer = js.native
+  def V(
+    svg: java.lang.String,
+    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    children: stdLib.SVGElement
+  ): Vectorizer = js.native
+  def V(svg: Vectorizer): Vectorizer = js.native
+  def V(svg: Vectorizer, attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): Vectorizer = js.native
+  def V(svg: Vectorizer, attrs: ScalablyTyped.runtime.StringDictionary[js.Any], children: Vectorizer): Vectorizer = js.native
+  def V(
+    svg: Vectorizer,
+    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    children: js.Array[Vectorizer | stdLib.SVGElement]
+  ): Vectorizer = js.native
+  def V(
+    svg: Vectorizer,
+    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    children: stdLib.SVGElement
+  ): Vectorizer = js.native
+  def V(svg: stdLib.SVGElement): Vectorizer = js.native
+  def V(svg: stdLib.SVGElement, attrs: ScalablyTyped.runtime.StringDictionary[js.Any]): Vectorizer = js.native
+  def V(
+    svg: stdLib.SVGElement,
+    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    children: Vectorizer
+  ): Vectorizer = js.native
+  def V(
+    svg: stdLib.SVGElement,
+    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    children: js.Array[Vectorizer | stdLib.SVGElement]
+  ): Vectorizer = js.native
+  def V(
+    svg: stdLib.SVGElement,
+    attrs: ScalablyTyped.runtime.StringDictionary[js.Any],
+    children: stdLib.SVGElement
+  ): Vectorizer = js.native
+  def setTheme(theme: java.lang.String): scala.Unit = js.native
+}
+

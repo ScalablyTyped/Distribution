@@ -1,0 +1,6 @@
+```
+// Type definitions for nested-error-stacks 2.1
+// Project: https://github.com/mdlavin/nested-error-stacks
+// Definitions by: Wouter van Heeswijk <https://github.com/woutervh->
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+```

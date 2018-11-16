@@ -1,0 +1,41 @@
+package typings
+package expectationsLib.ExpectationsNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("Expectations.Expect")
+@js.native
+class Expect protected () extends js.Object {
+  def this(value: js.Any) = this()
+  def this(value: js.Any, assertions: IAssertions) = this()
+  def this(value: js.Any, assertions: IAssertions, expr: js.Any) = this()
+  def this(value: js.Any, assertions: IAssertions, expr: js.Any, parent: Expect) = this()
+  var assertions: IAssertions = js.native
+  var expr: js.Any = js.native
+  var not: Expect = js.native
+  var parent: Expect = js.native
+  var value: js.Any = js.native
+  def fail(): js.Any = js.native
+  def fail(why: java.lang.String): js.Any = js.native
+  def fail(why: java.lang.String, what: js.Any): js.Any = js.native
+  def generateMessage(value: js.Any, expr: js.Any, toDo: java.lang.String): java.lang.String = js.native
+  def generateMessage(value: js.Any, expr: js.Any, toDo: java.lang.String, otherVal: js.Any): java.lang.String = js.native
+  def pass(): js.Any = js.native
+  def toBe(`val`: js.Any): js.Any = js.native
+  def toBeDefined(): js.Any = js.native
+  def toBeFalsey(): js.Any = js.native
+  def toBeFalsy(): js.Any = js.native
+  def toBeGreaterThan(`val`: js.Any): js.Any = js.native
+  def toBeLessThan(`val`: js.Any): js.Any = js.native
+  def toBeNull(): js.Any = js.native
+  def toBeTruthy(): js.Any = js.native
+  def toBeUndefined(): js.Any = js.native
+  def toContain(`val`: js.Any): js.Any = js.native
+  def toEqual(`val`: js.Any): js.Any = js.native
+  def toMatch(`val`: js.Any): js.Any = js.native
+  def toNotEqual(`val`: js.Any): js.Any = js.native
+  def toThrow(): js.Any = js.native
+}
+

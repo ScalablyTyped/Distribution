@@ -1,0 +1,10 @@
+package typings
+package reactDashNativeDashPushDashNotificationLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object reactDashNativeDashPushDashNotificationMod {
+  type RepeatType = reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationLibStrings.week | reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationLibStrings.day | reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationLibStrings.hour | reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationLibStrings.minute | reactDashNativeDashPushDashNotificationLib.reactDashNativeDashPushDashNotificationLibStrings.time
+}

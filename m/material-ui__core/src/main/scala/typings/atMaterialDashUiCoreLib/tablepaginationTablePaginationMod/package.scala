@@ -1,0 +1,11 @@
+package typings
+package atMaterialDashUiCoreLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object tablepaginationTablePaginationMod {
+  type TablePaginationBaseProps = atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellProps
+  type TablePaginationClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.root | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.toolbar | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.spacer | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.menuItem | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.caption | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.input | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.selectRoot | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.select | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.selectIcon | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.actions
+}

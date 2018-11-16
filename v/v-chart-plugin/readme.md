@@ -1,0 +1,7 @@
+```
+// Type definitions for v-chart-plugin 0.2
+// Project: https://github.com/ignoreintuition/v-chart-plugin
+// Definitions by: Nate Mara <https://github.com/natemara>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
+```

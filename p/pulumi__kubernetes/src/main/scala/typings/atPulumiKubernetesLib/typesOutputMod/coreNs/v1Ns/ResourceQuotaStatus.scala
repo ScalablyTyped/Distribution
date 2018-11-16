@@ -1,0 +1,23 @@
+package typings
+package atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+         * ResourceQuotaStatus defines the enforced hard limits and observed use.
+         */
+
+trait ResourceQuotaStatus extends js.Object {
+  /**
+               * Hard is the set of enforced hard limits for each named resource. More info:
+               * https://kubernetes.io/docs/concepts/policy/resource-quotas/
+               */
+  val hard: js.Object
+  /**
+               * Used is the current observed total usage of the resource in the namespace.
+               */
+  val used: js.Object
+}
+

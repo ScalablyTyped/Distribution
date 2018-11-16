@@ -1,0 +1,22 @@
+package typings
+package rwordLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object rwordLibStrings {
+  @js.native
+  sealed trait all extends js.Object
+  
+  @js.native
+  sealed trait first extends js.Object
+  
+  @js.native
+  sealed trait none extends js.Object
+  
+  def all: all = "all".asInstanceOf[all]
+  def first: first = "first".asInstanceOf[first]
+  def none: none = "none".asInstanceOf[none]
+}
+

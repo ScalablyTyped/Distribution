@@ -1,0 +1,13 @@
+package typings
+package pdfmakeLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait Anon_Name
+  extends /* name */ ScalablyTyped.runtime.StringDictionary[js.Any] {
+  var vfs: js.Any
+}
+

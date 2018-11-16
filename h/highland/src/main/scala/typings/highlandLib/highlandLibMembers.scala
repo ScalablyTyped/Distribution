@@ -1,0 +1,13 @@
+package typings
+package highlandLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobalScope
+@js.native
+object highlandLibMembers extends js.Object {
+  var highland: HighlandStatic = js.native
+}
+

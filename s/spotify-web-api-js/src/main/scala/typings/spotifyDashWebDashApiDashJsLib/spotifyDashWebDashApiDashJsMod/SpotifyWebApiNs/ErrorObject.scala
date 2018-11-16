@@ -1,0 +1,17 @@
+package typings
+package spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsMod.SpotifyWebApiNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+     * Describes the regular error object: https://developer.spotify.com/web-api/user-guide/#error-details
+     */
+
+trait ErrorObject extends js.Object {
+  var response: java.lang.String
+  var status: scala.Double
+  var statusText: java.lang.String
+}
+

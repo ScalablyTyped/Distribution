@@ -1,0 +1,13 @@
+package typings
+package atMaterialDashUiCoreLib.radioRadioMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/core/Radio/Radio", JSImport.Namespace)
+@js.native
+object radioRadioModMembers extends js.Object {
+  val default: reactLib.reactMod.ReactNs.ComponentType[RadioProps] = js.native
+}
+

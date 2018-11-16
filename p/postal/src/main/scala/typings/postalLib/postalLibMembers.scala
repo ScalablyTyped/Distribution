@@ -1,0 +1,13 @@
+package typings
+package postalLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobalScope
+@js.native
+object postalLibMembers extends js.Object {
+  var postal: IPostal = js.native
+}
+

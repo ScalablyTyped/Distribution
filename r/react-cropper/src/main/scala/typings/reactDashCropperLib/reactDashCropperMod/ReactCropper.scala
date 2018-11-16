@@ -1,0 +1,15 @@
+package typings
+package reactDashCropperLib.reactDashCropperMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+// tslint:disable-line no-empty-interface
+/* RemoveMultipleInheritance: Dropped parents List(cropperjsLib.cropperjsMod.namespaced because Inheritance from two classes)*/
+@js.native
+trait ReactCropper
+  extends reactLib.reactMod.Component[reactDashCropperLib.ReactCropperProps, js.Object, js.Any] {
+  def on(eventname: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+}
+

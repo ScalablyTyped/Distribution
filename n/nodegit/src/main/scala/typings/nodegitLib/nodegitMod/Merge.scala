@@ -1,0 +1,60 @@
+package typings
+package nodegitLib.nodegitMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("nodegit", "Merge")
+@js.native
+class Merge ()
+  extends nodegitLib.mergeMod.Merge
+
+@JSImport("nodegit", "Merge")
+@js.native
+object Merge extends js.Object {
+  def base(repo: nodegitLib.repositoryMod.Repository, one: nodegitLib.oidMod.Oid, two: nodegitLib.oidMod.Oid): stdLib.Promise[nodegitLib.oidMod.Oid] = js.native
+  def bases(repo: nodegitLib.repositoryMod.Repository, one: nodegitLib.oidMod.Oid, two: nodegitLib.oidMod.Oid): stdLib.Promise[nodegitLib.oidDashArrayMod.Oidarray] = js.native
+  def commits(
+    repo: nodegitLib.repositoryMod.Repository,
+    ourCommit: nodegitLib.commitMod.Commit,
+    theirCommit: nodegitLib.commitMod.Commit
+  ): js.Any = js.native
+  def commits(
+    repo: nodegitLib.repositoryMod.Repository,
+    ourCommit: nodegitLib.commitMod.Commit,
+    theirCommit: nodegitLib.commitMod.Commit,
+    options: nodegitLib.mergeDashOptionsMod.MergeOptions
+  ): js.Any = js.native
+  def fileInitInput(opts: nodegitLib.mergeDashFileDashInputMod.MergeFileInput, version: scala.Double): scala.Double = js.native
+  def initOptions(opts: nodegitLib.mergeDashOptionsMod.MergeOptions, version: scala.Double): scala.Double = js.native
+  def merge(
+    repo: nodegitLib.repositoryMod.Repository,
+    theirHead: nodegitLib.annotatedDashCommitMod.AnnotatedCommit
+  ): js.Any = js.native
+  def merge(
+    repo: nodegitLib.repositoryMod.Repository,
+    theirHead: nodegitLib.annotatedDashCommitMod.AnnotatedCommit,
+    mergeOpts: nodegitLib.mergeDashOptionsMod.MergeOptions
+  ): js.Any = js.native
+  def merge(
+    repo: nodegitLib.repositoryMod.Repository,
+    theirHead: nodegitLib.annotatedDashCommitMod.AnnotatedCommit,
+    mergeOpts: nodegitLib.mergeDashOptionsMod.MergeOptions,
+    checkoutOpts: nodegitLib.checkoutDashOptionsMod.CheckoutOptions
+  ): js.Any = js.native
+  def trees(
+    repo: nodegitLib.repositoryMod.Repository,
+    ancestorTree: nodegitLib.treeMod.Tree,
+    ourTree: nodegitLib.treeMod.Tree,
+    theirTree: nodegitLib.treeMod.Tree
+  ): stdLib.Promise[nodegitLib.nodegitMod.Index] = js.native
+  def trees(
+    repo: nodegitLib.repositoryMod.Repository,
+    ancestorTree: nodegitLib.treeMod.Tree,
+    ourTree: nodegitLib.treeMod.Tree,
+    theirTree: nodegitLib.treeMod.Tree,
+    opts: nodegitLib.mergeDashOptionsMod.MergeOptions
+  ): stdLib.Promise[nodegitLib.nodegitMod.Index] = js.native
+}
+

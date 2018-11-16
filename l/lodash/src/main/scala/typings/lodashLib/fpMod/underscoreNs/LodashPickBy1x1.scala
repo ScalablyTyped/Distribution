@@ -1,0 +1,14 @@
+package typings
+package lodashLib.fpMod.underscoreNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait LodashPickBy1x1[T, S] extends js.Object {
+  def apply(): lodashLib.lodashMod.underscoreNs.Dictionary[S] = js.native
+  def apply(`object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[S] = js.native
+  def apply(`object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): lodashLib.lodashMod.underscoreNs.NumericDictionary[S] = js.native
+}
+

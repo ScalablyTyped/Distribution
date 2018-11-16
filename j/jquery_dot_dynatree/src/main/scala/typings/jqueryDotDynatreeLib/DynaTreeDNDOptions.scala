@@ -1,0 +1,44 @@
+package typings
+package jqueryDotDynatreeLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait DynaTreeDNDOptions extends js.Object {
+  var autoExpandMS: js.UndefOr[scala.Double] = js.undefined
+   // Callback(sourceNode)
+  // Make tree nodes accept draggables
+  var onDragEnter: js.UndefOr[js.Function2[/* targetNode */ js.Any, /* sourceNode */ js.Any, scala.Unit]] = js.undefined
+   // Callback(targetNode, sourceNode, hitMode)
+  var onDragLeave: js.UndefOr[js.Function2[/* targetNode */ js.Any, /* sourceNode */ js.Any, scala.Unit]] = js.undefined
+   // Callback(targetNode, sourceNode)
+  var onDragOver: js.UndefOr[
+    js.Function3[
+      /* targetNode */ js.Any, 
+      /* sourceNode */ js.Any, 
+      /* hitMode */ java.lang.String, 
+      scala.Unit
+    ]
+  ] = js.undefined
+   // true: slide helper back to source if drop is rejected
+  // Make tree nodes draggable:
+  var onDragStart: js.UndefOr[js.Function1[/* sourceNode */ js.Any, scala.Unit]] = js.undefined
+   // Callback(sourceNode), return true, to enable dnd
+  var onDragStop: js.UndefOr[js.Function1[/* sourceNode */ js.Any, scala.Unit]] = js.undefined
+    // Callback(targetNode, sourceNode, hitMode)
+  var onDrop: js.UndefOr[
+    js.Function3[
+      /* targetNode */ js.Any, 
+      /* sourceNode */ js.Any, 
+      /* hitMode */ java.lang.String, 
+      scala.Unit
+    ]
+  ] = js.undefined
+   // Expand nodes after n milliseconds of hovering.
+  var preventVoidMoves: js.UndefOr[scala.Boolean] = js.undefined
+   // Prevent dropping nodes 'before self', etc.
+  var revert: scala.Boolean
+}
+

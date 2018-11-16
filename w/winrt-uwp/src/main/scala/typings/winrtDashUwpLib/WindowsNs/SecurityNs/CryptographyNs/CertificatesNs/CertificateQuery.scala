@@ -1,0 +1,29 @@
+package typings
+package winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CertificatesNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** Represents parameters for a query for certificates from the certificate store for an app. */
+@JSGlobal("Windows.Security.Cryptography.Certificates.CertificateQuery")
+@js.native
+class CertificateQuery () extends js.Object {
+  /** Gets a collection of object identifiers (OIDs) for the enhanced key usage extension to search for. */
+  var enhancedKeyUsages: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String] = js.native
+  /** Gets or sets the certificate friendly name to search for. */
+  var friendlyName: java.lang.String = js.native
+  /** Gets or sets a value that indicates whether only hardware certificates (SC or TPM) are to be returned from the query. */
+  var hardwareOnly: scala.Boolean = js.native
+  /** Gets or sets whether to include duplicates. */
+  var includeDuplicates: scala.Boolean = js.native
+  /** Gets or sets whether to include expired certificates. */
+  var includeExpiredCertificates: scala.Boolean = js.native
+  /** Gets or sets the name of the certificate issuer to search for. */
+  var issuerName: java.lang.String = js.native
+  /** Gets or sets the store name. */
+  var storeName: java.lang.String = js.native
+  /** Gets or sets a certificate thumbprint to search for. */
+  var thumbprint: scala.Double = js.native
+}
+

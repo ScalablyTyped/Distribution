@@ -1,0 +1,12 @@
+package typings
+package firefoxDashWebextDashBrowserLib.browserNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object historyNs {
+  /* history types */
+  /** The transition type for this visit from its referrer. */
+  type TransitionType = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.link | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.typed | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.auto_bookmark | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.auto_subframe | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.manual_subframe | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.generated | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.auto_toplevel | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.form_submit | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.reload | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.keyword | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.keyword_generated
+}

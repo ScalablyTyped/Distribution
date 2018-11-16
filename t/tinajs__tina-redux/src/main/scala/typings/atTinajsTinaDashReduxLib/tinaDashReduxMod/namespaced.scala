@@ -1,0 +1,13 @@
+package typings
+package atTinajsTinaDashReduxLib.tinaDashReduxMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@tinajs/tina-redux", JSImport.Namespace)
+@js.native
+class namespaced protected () extends TinaRedux {
+  def this(reduxStore: reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction]) = this()
+}
+

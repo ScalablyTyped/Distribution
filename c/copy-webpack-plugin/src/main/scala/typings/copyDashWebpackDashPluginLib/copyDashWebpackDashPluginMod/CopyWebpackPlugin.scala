@@ -1,0 +1,20 @@
+package typings
+package copyDashWebpackDashPluginLib.copyDashWebpackDashPluginMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait CopyWebpackPlugin
+  extends ScalablyTyped.runtime.Instantiable0[webpackLib.webpackMod.Plugin]
+     with ScalablyTyped.runtime.Instantiable1[
+      /* patterns */ js.Array[java.lang.String | CopyPattern], 
+      webpackLib.webpackMod.Plugin
+    ]
+     with ScalablyTyped.runtime.Instantiable2[
+      /* patterns */ js.Array[java.lang.String | CopyPattern], 
+      /* options */ CopyWebpackPluginConfiguration, 
+      webpackLib.webpackMod.Plugin
+    ]
+

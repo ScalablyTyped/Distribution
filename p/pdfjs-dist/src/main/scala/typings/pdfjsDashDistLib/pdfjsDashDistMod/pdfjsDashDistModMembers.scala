@@ -1,0 +1,13 @@
+package typings
+package pdfjsDashDistLib.pdfjsDashDistMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("pdfjs-dist", JSImport.Namespace)
+@js.native
+object pdfjsDashDistModMembers extends js.Object {
+  val PDFJS: PDFJSStatic = js.native
+}
+

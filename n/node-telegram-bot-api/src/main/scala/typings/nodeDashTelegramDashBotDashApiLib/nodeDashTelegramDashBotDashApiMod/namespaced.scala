@@ -1,0 +1,14 @@
+package typings
+package nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("node-telegram-bot-api", JSImport.Namespace)
+@js.native
+class namespaced protected () extends TelegramBot {
+  def this(token: java.lang.String) = this()
+  def this(token: java.lang.String, options: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ConstructorOptions) = this()
+}
+

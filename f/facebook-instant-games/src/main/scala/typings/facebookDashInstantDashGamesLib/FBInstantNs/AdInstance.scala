@@ -1,0 +1,34 @@
+package typings
+package facebookDashInstantDashGamesLib.FBInstantNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+     * Represents an instance of an ad.
+     */
+
+trait AdInstance extends js.Object {
+  /**
+           * Return the Audience Network placement ID of this ad instance.
+           */
+  def getPlacementID(): java.lang.String
+  /**
+           * Preload the ad. The returned promise resolves when the preload completes, and rejects if it failed.
+           * @throws ADS_FREQUENT_LOAD
+           * @throws ADS_NO_FILL
+           * @throws INVALID_PARAM
+           * @throws NETWORK_FAILURE
+           */
+  def loadAsync(): stdLib.Promise[scala.Unit]
+  /**
+           * Present the ad. The returned promise resolves when user finished watching the ad, and rejects if it failed to present or was closed during the ad.
+           * @throws ADS_NOT_LOADED
+           * @throws INVALID_PARAM
+           * @throws NETWORK_FAILURE
+           * @throws INVALID_OPERATION
+           */
+  def showAsync(): stdLib.Promise[scala.Unit]
+}
+

@@ -1,0 +1,13 @@
+package typings
+package chromeLib.chromeNs.contentSettingsNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait ReturnedDetails extends js.Object {
+  /** The content setting. See the description of the individual ContentSetting objects for the possible values. */
+  var setting: js.Any
+}
+

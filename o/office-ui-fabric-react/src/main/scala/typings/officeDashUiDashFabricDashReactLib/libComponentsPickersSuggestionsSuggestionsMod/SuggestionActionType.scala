@@ -1,0 +1,34 @@
+package typings
+package officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait SuggestionActionType extends js.Object
+
+@JSImport("office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions", "SuggestionActionType")
+@js.native
+object SuggestionActionType extends js.Object {
+  @js.native
+  sealed trait forceResolve
+    extends officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsMod.SuggestionActionType
+  
+  @js.native
+  sealed trait none
+    extends officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsMod.SuggestionActionType
+  
+  @js.native
+  sealed trait searchMore
+    extends officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsMod.SuggestionActionType
+  
+  /* 1 */ val forceResolve: forceResolve with scala.Double = js.native
+  /* 0 */ val none: none with scala.Double = js.native
+  /* 2 */ val searchMore: searchMore with scala.Double = js.native
+  @JSBracketAccess
+  def apply(value: scala.Double): js.UndefOr[
+    officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsMod.SuggestionActionType with scala.Double
+  ] = js.native
+}
+

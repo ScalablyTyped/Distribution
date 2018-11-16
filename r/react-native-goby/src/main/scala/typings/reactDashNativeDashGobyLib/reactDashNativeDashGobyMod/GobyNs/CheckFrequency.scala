@@ -1,0 +1,39 @@
+package typings
+package reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+sealed trait CheckFrequency extends js.Object
+
+/**
+     * Indicates when you would like to check for (and install) updates from the Goby server.
+     */
+@JSImport("react-native-goby/Goby", "CheckFrequency")
+@js.native
+object CheckFrequency extends js.Object {
+  /**
+           * Don't automatically check for updates, but only do it when goby.sync() is manully called inside app code.
+           */
+  @js.native
+  sealed trait MANUAL
+    extends reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency
+  
+  /**
+           * When the app re-enters the foreground.
+           */
+  @js.native
+  sealed trait ON_APP_RESUME
+    extends reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency
+  
+  /**
+           * When the app is fully initialized (or more specifically, when the root component is mounted).
+           */
+  @js.native
+  sealed trait ON_APP_START
+    extends reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency
+  
+}
+

@@ -1,0 +1,14 @@
+package typings
+package locutusLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("locutus/php/datetime/gettimeofday", JSImport.Namespace)
+@js.native
+object phpDatetimeGettimeofdayMod extends js.Object {
+  def apply(): js.Any = js.native
+  def apply(returnFloat: js.Any): js.Any = js.native
+}
+

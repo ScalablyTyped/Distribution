@@ -1,0 +1,10 @@
+package typings
+package atMaterialDashUiCoreLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object iconIconMod {
+  type IconClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.root | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.colorSecondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.colorAction | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.colorDisabled | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.colorError | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.colorPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fontSizeInherit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fontSizeSmall | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fontSizeLarge
+}

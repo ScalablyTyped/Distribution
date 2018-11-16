@@ -1,0 +1,14 @@
+package typings
+package reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait TouchIDError extends js.Object {
+  var details: js.Any
+  var message: java.lang.String
+  var name: reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorAuthenticationFailed | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorUserCancel | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorUserFallback | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorSystemCancel | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorPasscodeNotSet | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorTouchIDNotAvailable | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.LAErrorTouchIDNotEnrolled | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.RCTTouchIDUnknownError | reactDashNativeDashTouchDashIdLib.reactDashNativeDashTouchDashIdLibStrings.RCTTouchIDNotSupported
+}
+

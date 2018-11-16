@@ -1,0 +1,5 @@
+[debug] PhaseRunner.scala:82 Failure, [getenv => InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/getenv/index.d.ts): Parse error at 108.30 '']'' expected but '[' found] [id => getenv, phase => typescript] 
+[warn ] PhaseRunner.scala:64 Failed because of, [getenv => InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/getenv/index.d.ts): Parse error at 108.30 '']'' expected but '[' found] [id => getenv, phase => typescript] 
+[debug] PhaseRunner.scala:82 Failure, [getenv => InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/getenv/index.d.ts): Parse error at 108.30 '']'' expected but '[' found] [id => getenv, phase => typescript] 
+[debug] PhaseRunner.scala:82 Failure, [getenv => InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/getenv/index.d.ts): Parse error at 108.30 '']'' expected but '[' found] [id => getenv, phase => scala.js] 
+[debug] PhaseRunner.scala:82 Failure, [getenv => InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/getenv/index.d.ts): Parse error at 108.30 '']'' expected but '[' found] [id => getenv, phase => build] 

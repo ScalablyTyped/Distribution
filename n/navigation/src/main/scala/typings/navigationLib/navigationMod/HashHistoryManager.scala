@@ -1,0 +1,23 @@
+package typings
+package navigationLib.navigationMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("navigation", "HashHistoryManager")
+@js.native
+class HashHistoryManager () extends HistoryManager {
+  /**
+       * Initializes a new instance of the HashHistoryManager class
+       * @param replaceQueryIdentifier a value indicating whether to use '#'
+       * in place of '?'. Set to true for Internet explorer 6 and 7 support
+       */
+  def this(replaceQueryIdentifier: scala.Boolean) = this()
+  /**
+       * Registers a listener for the hashchange event
+       * @param navigateHistory The history navigation event handler
+       */
+  def init(navigateHistory: js.Any): scala.Unit = js.native
+}
+

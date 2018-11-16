@@ -1,0 +1,11 @@
+package typings
+package reactDashBootstrapLib.libWellMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-bootstrap/lib/Well", JSImport.Namespace)
+@js.native
+class namespaced () extends Well
+

@@ -1,0 +1,13 @@
+package typings
+package jfsLib.jfsMod.JsonFileStoreNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait JsonFileStore
+  extends ScalablyTyped.runtime.Instantiable0[Instance[Storable]]
+     with ScalablyTyped.runtime.Instantiable1[/* name */ java.lang.String, Instance[Storable]]
+     with ScalablyTyped.runtime.Instantiable2[/* name */ java.lang.String, /* opts */ Options, Instance[Storable]]
+

@@ -1,0 +1,20 @@
+package typings
+package ejDotWebDotAllLib.ejNs.ComboBoxNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait CustomValueSpecifierEventArgs extends js.Object {
+  /** Instance of the combobox model object.
+               */
+  var model: js.UndefOr[Model] = js.undefined
+  /** text of the combobox.
+               */
+  var text: js.UndefOr[java.lang.String] = js.undefined
+  /** Name of the event.
+               */
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
+}
+

@@ -1,0 +1,139 @@
+package typings
+package grammarkdownLib.grammarkdownMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("grammarkdown", "CharacterCodes")
+@js.native
+object CharacterCodes extends js.Object {
+  /* 38 */ val Ampersand: grammarkdownLib.distTokensMod.CharacterCodes.Ampersand with scala.Double = js.native
+  /* 42 */ val Asterisk: grammarkdownLib.distTokensMod.CharacterCodes.Asterisk with scala.Double = js.native
+  /* 64 */ val At: grammarkdownLib.distTokensMod.CharacterCodes.At with scala.Double = js.native
+  /* 92 */ val Backslash: grammarkdownLib.distTokensMod.CharacterCodes.Backslash with scala.Double = js.native
+  /* 8 */ val Backspace: grammarkdownLib.distTokensMod.CharacterCodes.Backspace with scala.Double = js.native
+  /* 96 */ val Backtick: grammarkdownLib.distTokensMod.CharacterCodes.Backtick with scala.Double = js.native
+  /* 124 */ val Bar: grammarkdownLib.distTokensMod.CharacterCodes.Bar with scala.Double = js.native
+  /* 65279 */ val ByteOrderMark: grammarkdownLib.distTokensMod.CharacterCodes.ByteOrderMark with scala.Double = js.native
+  /* 13 */ val CarriageReturn: grammarkdownLib.distTokensMod.CharacterCodes.CarriageReturn with scala.Double = js.native
+  /* 125 */ val CloseBrace: grammarkdownLib.distTokensMod.CharacterCodes.CloseBrace with scala.Double = js.native
+  /* 93 */ val CloseBracket: grammarkdownLib.distTokensMod.CharacterCodes.CloseBracket with scala.Double = js.native
+  /* 41 */ val CloseParen: grammarkdownLib.distTokensMod.CharacterCodes.CloseParen with scala.Double = js.native
+  /* 58 */ val Colon: grammarkdownLib.distTokensMod.CharacterCodes.Colon with scala.Double = js.native
+  /* 44 */ val Comma: grammarkdownLib.distTokensMod.CharacterCodes.Comma with scala.Double = js.native
+  /* 46 */ val Dot: grammarkdownLib.distTokensMod.CharacterCodes.Dot with scala.Double = js.native
+  /* 34 */ val DoubleQuote: grammarkdownLib.distTokensMod.CharacterCodes.DoubleQuote with scala.Double = js.native
+  /* 8712 */ val ElementOf: grammarkdownLib.distTokensMod.CharacterCodes.ElementOf with scala.Double = js.native
+  /* 8193 */ val EmQuad: grammarkdownLib.distTokensMod.CharacterCodes.EmQuad with scala.Double = js.native
+  /* 8195 */ val EmSpace: grammarkdownLib.distTokensMod.CharacterCodes.EmSpace with scala.Double = js.native
+  /* 8192 */ val EnQuad: grammarkdownLib.distTokensMod.CharacterCodes.EnQuad with scala.Double = js.native
+  /* 8194 */ val EnSpace: grammarkdownLib.distTokensMod.CharacterCodes.EnSpace with scala.Double = js.native
+  /* 61 */ val Equals: grammarkdownLib.distTokensMod.CharacterCodes.Equals with scala.Double = js.native
+  /* 33 */ val Exclamation: grammarkdownLib.distTokensMod.CharacterCodes.Exclamation with scala.Double = js.native
+  /* 8199 */ val FigureSpace: grammarkdownLib.distTokensMod.CharacterCodes.FigureSpace with scala.Double = js.native
+  /* 12 */ val FormFeed: grammarkdownLib.distTokensMod.CharacterCodes.FormFeed with scala.Double = js.native
+  /* 8197 */ val FourPerEmSpace: grammarkdownLib.distTokensMod.CharacterCodes.FourPerEmSpace with scala.Double = js.native
+  /* 62 */ val GreaterThan: grammarkdownLib.distTokensMod.CharacterCodes.GreaterThan with scala.Double = js.native
+  /* 8202 */ val HairSpace: grammarkdownLib.distTokensMod.CharacterCodes.HairSpace with scala.Double = js.native
+  /* 35 */ val Hash: grammarkdownLib.distTokensMod.CharacterCodes.Hash with scala.Double = js.native
+  /* 12288 */ val IdeographicSpace: grammarkdownLib.distTokensMod.CharacterCodes.IdeographicSpace with scala.Double = js.native
+  /* 60 */ val LessThan: grammarkdownLib.distTokensMod.CharacterCodes.LessThan with scala.Double = js.native
+  /* 10 */ val LineFeed: grammarkdownLib.distTokensMod.CharacterCodes.LineFeed with scala.Double = js.native
+  /* 8232 */ val LineSeparator: grammarkdownLib.distTokensMod.CharacterCodes.LineSeparator with scala.Double = js.native
+  /* 97 */ val LowerA: grammarkdownLib.distTokensMod.CharacterCodes.LowerA with scala.Double = js.native
+  /* 98 */ val LowerB: grammarkdownLib.distTokensMod.CharacterCodes.LowerB with scala.Double = js.native
+  /* 99 */ val LowerC: grammarkdownLib.distTokensMod.CharacterCodes.LowerC with scala.Double = js.native
+  /* 100 */ val LowerD: grammarkdownLib.distTokensMod.CharacterCodes.LowerD with scala.Double = js.native
+  /* 101 */ val LowerE: grammarkdownLib.distTokensMod.CharacterCodes.LowerE with scala.Double = js.native
+  /* 102 */ val LowerF: grammarkdownLib.distTokensMod.CharacterCodes.LowerF with scala.Double = js.native
+  /* 103 */ val LowerG: grammarkdownLib.distTokensMod.CharacterCodes.LowerG with scala.Double = js.native
+  /* 104 */ val LowerH: grammarkdownLib.distTokensMod.CharacterCodes.LowerH with scala.Double = js.native
+  /* 105 */ val LowerI: grammarkdownLib.distTokensMod.CharacterCodes.LowerI with scala.Double = js.native
+  /* 106 */ val LowerJ: grammarkdownLib.distTokensMod.CharacterCodes.LowerJ with scala.Double = js.native
+  /* 107 */ val LowerK: grammarkdownLib.distTokensMod.CharacterCodes.LowerK with scala.Double = js.native
+  /* 108 */ val LowerL: grammarkdownLib.distTokensMod.CharacterCodes.LowerL with scala.Double = js.native
+  /* 109 */ val LowerM: grammarkdownLib.distTokensMod.CharacterCodes.LowerM with scala.Double = js.native
+  /* 110 */ val LowerN: grammarkdownLib.distTokensMod.CharacterCodes.LowerN with scala.Double = js.native
+  /* 111 */ val LowerO: grammarkdownLib.distTokensMod.CharacterCodes.LowerO with scala.Double = js.native
+  /* 112 */ val LowerP: grammarkdownLib.distTokensMod.CharacterCodes.LowerP with scala.Double = js.native
+  /* 113 */ val LowerQ: grammarkdownLib.distTokensMod.CharacterCodes.LowerQ with scala.Double = js.native
+  /* 114 */ val LowerR: grammarkdownLib.distTokensMod.CharacterCodes.LowerR with scala.Double = js.native
+  /* 115 */ val LowerS: grammarkdownLib.distTokensMod.CharacterCodes.LowerS with scala.Double = js.native
+  /* 116 */ val LowerT: grammarkdownLib.distTokensMod.CharacterCodes.LowerT with scala.Double = js.native
+  /* 117 */ val LowerU: grammarkdownLib.distTokensMod.CharacterCodes.LowerU with scala.Double = js.native
+  /* 118 */ val LowerV: grammarkdownLib.distTokensMod.CharacterCodes.LowerV with scala.Double = js.native
+  /* 119 */ val LowerW: grammarkdownLib.distTokensMod.CharacterCodes.LowerW with scala.Double = js.native
+  /* 120 */ val LowerX: grammarkdownLib.distTokensMod.CharacterCodes.LowerX with scala.Double = js.native
+  /* 121 */ val LowerY: grammarkdownLib.distTokensMod.CharacterCodes.LowerY with scala.Double = js.native
+  /* 122 */ val LowerZ: grammarkdownLib.distTokensMod.CharacterCodes.LowerZ with scala.Double = js.native
+  /* 8287 */ val MathematicalSpace: grammarkdownLib.distTokensMod.CharacterCodes.MathematicalSpace with scala.Double = js.native
+  /* 127 */ val MaxAsciiCharacter: grammarkdownLib.distTokensMod.CharacterCodes.MaxAsciiCharacter with scala.Double = js.native
+  /* 45 */ val Minus: grammarkdownLib.distTokensMod.CharacterCodes.Minus with scala.Double = js.native
+  /* 8239 */ val NarrowNoBreakSpace: grammarkdownLib.distTokensMod.CharacterCodes.NarrowNoBreakSpace with scala.Double = js.native
+  /* 133 */ val NextLine: grammarkdownLib.distTokensMod.CharacterCodes.NextLine with scala.Double = js.native
+  /* 160 */ val NonBreakingSpace: grammarkdownLib.distTokensMod.CharacterCodes.NonBreakingSpace with scala.Double = js.native
+  /* 8713 */ val NotAnElementOf: grammarkdownLib.distTokensMod.CharacterCodes.NotAnElementOf with scala.Double = js.native
+  /* 8800 */ val NotEqualTo: grammarkdownLib.distTokensMod.CharacterCodes.NotEqualTo with scala.Double = js.native
+  /* 0 */ val NullCharacter: grammarkdownLib.distTokensMod.CharacterCodes.NullCharacter with scala.Double = js.native
+  /* 48 */ val Number0: grammarkdownLib.distTokensMod.CharacterCodes.Number0 with scala.Double = js.native
+  /* 49 */ val Number1: grammarkdownLib.distTokensMod.CharacterCodes.Number1 with scala.Double = js.native
+  /* 50 */ val Number2: grammarkdownLib.distTokensMod.CharacterCodes.Number2 with scala.Double = js.native
+  /* 51 */ val Number3: grammarkdownLib.distTokensMod.CharacterCodes.Number3 with scala.Double = js.native
+  /* 52 */ val Number4: grammarkdownLib.distTokensMod.CharacterCodes.Number4 with scala.Double = js.native
+  /* 53 */ val Number5: grammarkdownLib.distTokensMod.CharacterCodes.Number5 with scala.Double = js.native
+  /* 54 */ val Number6: grammarkdownLib.distTokensMod.CharacterCodes.Number6 with scala.Double = js.native
+  /* 55 */ val Number7: grammarkdownLib.distTokensMod.CharacterCodes.Number7 with scala.Double = js.native
+  /* 56 */ val Number8: grammarkdownLib.distTokensMod.CharacterCodes.Number8 with scala.Double = js.native
+  /* 57 */ val Number9: grammarkdownLib.distTokensMod.CharacterCodes.Number9 with scala.Double = js.native
+  /* 35 */ val NumberSign: grammarkdownLib.distTokensMod.CharacterCodes.NumberSign with scala.Double = js.native
+  /* 5760 */ val Ogham: grammarkdownLib.distTokensMod.CharacterCodes.Ogham with scala.Double = js.native
+  /* 123 */ val OpenBrace: grammarkdownLib.distTokensMod.CharacterCodes.OpenBrace with scala.Double = js.native
+  /* 91 */ val OpenBracket: grammarkdownLib.distTokensMod.CharacterCodes.OpenBracket with scala.Double = js.native
+  /* 40 */ val OpenParen: grammarkdownLib.distTokensMod.CharacterCodes.OpenParen with scala.Double = js.native
+  /* 8233 */ val ParagraphSeparator: grammarkdownLib.distTokensMod.CharacterCodes.ParagraphSeparator with scala.Double = js.native
+  /* 43 */ val Plus: grammarkdownLib.distTokensMod.CharacterCodes.Plus with scala.Double = js.native
+  /* 8200 */ val PunctuationSpace: grammarkdownLib.distTokensMod.CharacterCodes.PunctuationSpace with scala.Double = js.native
+  /* 63 */ val Question: grammarkdownLib.distTokensMod.CharacterCodes.Question with scala.Double = js.native
+  /* 59 */ val Semicolon: grammarkdownLib.distTokensMod.CharacterCodes.Semicolon with scala.Double = js.native
+  /* 39 */ val SingleQuote: grammarkdownLib.distTokensMod.CharacterCodes.SingleQuote with scala.Double = js.native
+  /* 8198 */ val SixPerEmSpace: grammarkdownLib.distTokensMod.CharacterCodes.SixPerEmSpace with scala.Double = js.native
+  /* 47 */ val Slash: grammarkdownLib.distTokensMod.CharacterCodes.Slash with scala.Double = js.native
+  /* 32 */ val Space: grammarkdownLib.distTokensMod.CharacterCodes.Space with scala.Double = js.native
+  /* 9 */ val Tab: grammarkdownLib.distTokensMod.CharacterCodes.Tab with scala.Double = js.native
+  /* 8201 */ val ThinSpace: grammarkdownLib.distTokensMod.CharacterCodes.ThinSpace with scala.Double = js.native
+  /* 8196 */ val ThreePerEmSpace: grammarkdownLib.distTokensMod.CharacterCodes.ThreePerEmSpace with scala.Double = js.native
+  /* 126 */ val Tilde: grammarkdownLib.distTokensMod.CharacterCodes.Tilde with scala.Double = js.native
+  /* 95 */ val Underscore: grammarkdownLib.distTokensMod.CharacterCodes.Underscore with scala.Double = js.native
+  /* 65 */ val UpperA: grammarkdownLib.distTokensMod.CharacterCodes.UpperA with scala.Double = js.native
+  /* 66 */ val UpperB: grammarkdownLib.distTokensMod.CharacterCodes.UpperB with scala.Double = js.native
+  /* 67 */ val UpperC: grammarkdownLib.distTokensMod.CharacterCodes.UpperC with scala.Double = js.native
+  /* 68 */ val UpperD: grammarkdownLib.distTokensMod.CharacterCodes.UpperD with scala.Double = js.native
+  /* 69 */ val UpperE: grammarkdownLib.distTokensMod.CharacterCodes.UpperE with scala.Double = js.native
+  /* 70 */ val UpperF: grammarkdownLib.distTokensMod.CharacterCodes.UpperF with scala.Double = js.native
+  /* 71 */ val UpperG: grammarkdownLib.distTokensMod.CharacterCodes.UpperG with scala.Double = js.native
+  /* 72 */ val UpperH: grammarkdownLib.distTokensMod.CharacterCodes.UpperH with scala.Double = js.native
+  /* 73 */ val UpperI: grammarkdownLib.distTokensMod.CharacterCodes.UpperI with scala.Double = js.native
+  /* 74 */ val UpperJ: grammarkdownLib.distTokensMod.CharacterCodes.UpperJ with scala.Double = js.native
+  /* 75 */ val UpperK: grammarkdownLib.distTokensMod.CharacterCodes.UpperK with scala.Double = js.native
+  /* 76 */ val UpperL: grammarkdownLib.distTokensMod.CharacterCodes.UpperL with scala.Double = js.native
+  /* 77 */ val UpperM: grammarkdownLib.distTokensMod.CharacterCodes.UpperM with scala.Double = js.native
+  /* 78 */ val UpperN: grammarkdownLib.distTokensMod.CharacterCodes.UpperN with scala.Double = js.native
+  /* 79 */ val UpperO: grammarkdownLib.distTokensMod.CharacterCodes.UpperO with scala.Double = js.native
+  /* 80 */ val UpperP: grammarkdownLib.distTokensMod.CharacterCodes.UpperP with scala.Double = js.native
+  /* 81 */ val UpperQ: grammarkdownLib.distTokensMod.CharacterCodes.UpperQ with scala.Double = js.native
+  /* 82 */ val UpperR: grammarkdownLib.distTokensMod.CharacterCodes.UpperR with scala.Double = js.native
+  /* 83 */ val UpperS: grammarkdownLib.distTokensMod.CharacterCodes.UpperS with scala.Double = js.native
+  /* 84 */ val UpperT: grammarkdownLib.distTokensMod.CharacterCodes.UpperT with scala.Double = js.native
+  /* 85 */ val UpperU: grammarkdownLib.distTokensMod.CharacterCodes.UpperU with scala.Double = js.native
+  /* 86 */ val UpperV: grammarkdownLib.distTokensMod.CharacterCodes.UpperV with scala.Double = js.native
+  /* 87 */ val UpperW: grammarkdownLib.distTokensMod.CharacterCodes.UpperW with scala.Double = js.native
+  /* 88 */ val UpperX: grammarkdownLib.distTokensMod.CharacterCodes.UpperX with scala.Double = js.native
+  /* 89 */ val UpperY: grammarkdownLib.distTokensMod.CharacterCodes.UpperY with scala.Double = js.native
+  /* 90 */ val UpperZ: grammarkdownLib.distTokensMod.CharacterCodes.UpperZ with scala.Double = js.native
+  /* 11 */ val VerticalTab: grammarkdownLib.distTokensMod.CharacterCodes.VerticalTab with scala.Double = js.native
+  /* 8203 */ val ZeroWidthSpace: grammarkdownLib.distTokensMod.CharacterCodes.ZeroWidthSpace with scala.Double = js.native
+  @JSBracketAccess
+  def apply(value: scala.Double): js.UndefOr[grammarkdownLib.distTokensMod.CharacterCodes with scala.Double] = js.native
+}
+

@@ -1,0 +1,12 @@
+package typings
+package materialDashUiLib.svgDashIconsContentReplyDashAllMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("material-ui/svg-icons/content/reply-all", "ContentReplyAll")
+@js.native
+class ContentReplyAll ()
+  extends materialDashUiLib.underscoreUnderscoreMaterialUINs.SvgIcon
+

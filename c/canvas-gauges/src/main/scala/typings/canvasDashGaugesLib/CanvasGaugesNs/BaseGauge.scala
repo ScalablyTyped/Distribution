@@ -1,0 +1,30 @@
+package typings
+package canvasDashGaugesLib.CanvasGaugesNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobal("CanvasGauges.BaseGauge")
+@js.native
+abstract class BaseGauge protected () extends js.Object {
+  def this(options: GenericOptions) = this()
+  var animation: Animation = js.native
+  var canvas: SmartCanvas = js.native
+  var options: GenericOptions = js.native
+  var `type`: BaseGauge = js.native
+  var value: scala.Double = js.native
+  def destroy(): js.Any = js.native
+  def draw(): BaseGauge = js.native
+  def update(options: GenericOptions): BaseGauge = js.native
+}
+
+@JSGlobal("CanvasGauges.BaseGauge")
+@js.native
+object BaseGauge extends js.Object {
+  val version: scala.Double = js.native
+  def ensureValue(value: scala.Double): scala.Double = js.native
+  def fromElement(element: stdLib.HTMLElement): js.Any = js.native
+  def initialize(`type`: java.lang.String, options: canvasDashGaugesLib.CanvasGaugesNs.GenericOptions): js.Any = js.native
+}
+

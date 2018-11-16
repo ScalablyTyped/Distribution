@@ -1,0 +1,78 @@
+package typings
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object csstypeLib {
+  type AbsoluteSize = csstypeLib.csstypeLibStrings.large | csstypeLib.csstypeLibStrings.medium | csstypeLib.csstypeLibStrings.small | csstypeLib.csstypeLibStrings.`x-large` | csstypeLib.csstypeLibStrings.`x-small` | csstypeLib.csstypeLibStrings.`xx-large` | csstypeLib.csstypeLibStrings.`xx-small`
+  type AnimateableFeature = csstypeLib.csstypeLibStrings.contents | csstypeLib.csstypeLibStrings.`scroll-position` | java.lang.String
+  type Attachment = csstypeLib.csstypeLibStrings.fixed | csstypeLib.csstypeLibStrings.local | csstypeLib.csstypeLibStrings.scroll
+  type BgPosition[TLength] = TLength | csstypeLib.csstypeLibStrings.bottom | csstypeLib.csstypeLibStrings.center | csstypeLib.csstypeLibStrings.left | csstypeLib.csstypeLibStrings.right | csstypeLib.csstypeLibStrings.top | java.lang.String
+  type BgSize[TLength] = TLength | csstypeLib.csstypeLibStrings.auto | csstypeLib.csstypeLibStrings.contain | csstypeLib.csstypeLibStrings.cover | java.lang.String
+  type BlendMode = csstypeLib.csstypeLibStrings.color | csstypeLib.csstypeLibStrings.`color-burn` | csstypeLib.csstypeLibStrings.`color-dodge` | csstypeLib.csstypeLibStrings.darken | csstypeLib.csstypeLibStrings.difference | csstypeLib.csstypeLibStrings.exclusion | csstypeLib.csstypeLibStrings.`hard-light` | csstypeLib.csstypeLibStrings.hue | csstypeLib.csstypeLibStrings.lighten | csstypeLib.csstypeLibStrings.luminosity | csstypeLib.csstypeLibStrings.multiply | csstypeLib.csstypeLibStrings.normal | csstypeLib.csstypeLibStrings.overlay | csstypeLib.csstypeLibStrings.saturation | csstypeLib.csstypeLibStrings.screen | csstypeLib.csstypeLibStrings.`soft-light`
+  type Box = csstypeLib.csstypeLibStrings.`border-box` | csstypeLib.csstypeLibStrings.`content-box` | csstypeLib.csstypeLibStrings.`padding-box`
+  type BrStyle = csstypeLib.csstypeLibStrings.dashed | csstypeLib.csstypeLibStrings.dotted | csstypeLib.csstypeLibStrings.double | csstypeLib.csstypeLibStrings.groove | csstypeLib.csstypeLibStrings.hidden | csstypeLib.csstypeLibStrings.inset | csstypeLib.csstypeLibStrings.none | csstypeLib.csstypeLibStrings.outset | csstypeLib.csstypeLibStrings.ridge | csstypeLib.csstypeLibStrings.solid
+  type BrWidth[TLength] = TLength | csstypeLib.csstypeLibStrings.medium | csstypeLib.csstypeLibStrings.thick | csstypeLib.csstypeLibStrings.thin
+  type Color = NamedColor | DeprecatedSystemColor | csstypeLib.csstypeLibStrings.currentcolor | java.lang.String
+  type CompositeStyle = csstypeLib.csstypeLibStrings.clear | csstypeLib.csstypeLibStrings.copy | csstypeLib.csstypeLibStrings.`destination-atop` | csstypeLib.csstypeLibStrings.`destination-in` | csstypeLib.csstypeLibStrings.`destination-out` | csstypeLib.csstypeLibStrings.`destination-over` | csstypeLib.csstypeLibStrings.`source-atop` | csstypeLib.csstypeLibStrings.`source-in` | csstypeLib.csstypeLibStrings.`source-out` | csstypeLib.csstypeLibStrings.`source-over` | csstypeLib.csstypeLibStrings.xor
+  type CompositingOperator = csstypeLib.csstypeLibStrings.add | csstypeLib.csstypeLibStrings.exclude | csstypeLib.csstypeLibStrings.intersect | csstypeLib.csstypeLibStrings.subtract
+  type ContentDistribution = csstypeLib.csstypeLibStrings.`space-around` | csstypeLib.csstypeLibStrings.`space-between` | csstypeLib.csstypeLibStrings.`space-evenly` | csstypeLib.csstypeLibStrings.stretch
+  type ContentList = Quote | csstypeLib.csstypeLibStrings.contents | java.lang.String
+  type ContentPosition = csstypeLib.csstypeLibStrings.center | csstypeLib.csstypeLibStrings.end | csstypeLib.csstypeLibStrings.`flex-end` | csstypeLib.csstypeLibStrings.`flex-start` | csstypeLib.csstypeLibStrings.start
+  type CounterStyleRangeProperty = csstypeLib.csstypeLibStrings.auto | csstypeLib.csstypeLibStrings.infinite | java.lang.String | scala.Double
+  type CounterStyleSpeakAsProperty = csstypeLib.csstypeLibStrings.auto | csstypeLib.csstypeLibStrings.bullets | csstypeLib.csstypeLibStrings.numbers | csstypeLib.csstypeLibStrings.`spell-out` | csstypeLib.csstypeLibStrings.words | java.lang.String
+  type CounterStyleSystemProperty = csstypeLib.csstypeLibStrings.additive | csstypeLib.csstypeLibStrings.alphabetic | csstypeLib.csstypeLibStrings.cyclic | csstypeLib.csstypeLibStrings.fixed | csstypeLib.csstypeLibStrings.numeric | csstypeLib.csstypeLibStrings.symbolic | java.lang.String
+  type CubicBezierTimingFunction = csstypeLib.csstypeLibStrings.ease | csstypeLib.csstypeLibStrings.`ease-in` | csstypeLib.csstypeLibStrings.`ease-in-out` | csstypeLib.csstypeLibStrings.`ease-out` | java.lang.String
+  type Dasharray[TLength] = TLength | java.lang.String | scala.Double
+  type DeprecatedSystemColor = csstypeLib.csstypeLibStrings.ActiveBorder | csstypeLib.csstypeLibStrings.ActiveCaption | csstypeLib.csstypeLibStrings.AppWorkspace | csstypeLib.csstypeLibStrings.Background | csstypeLib.csstypeLibStrings.ButtonFace | csstypeLib.csstypeLibStrings.ButtonHighlight | csstypeLib.csstypeLibStrings.ButtonShadow | csstypeLib.csstypeLibStrings.ButtonText | csstypeLib.csstypeLibStrings.CaptionText | csstypeLib.csstypeLibStrings.GrayText | csstypeLib.csstypeLibStrings.Highlight | csstypeLib.csstypeLibStrings.HighlightText | csstypeLib.csstypeLibStrings.InactiveBorder | csstypeLib.csstypeLibStrings.InactiveCaption | csstypeLib.csstypeLibStrings.InactiveCaptionText | csstypeLib.csstypeLibStrings.InfoBackground | csstypeLib.csstypeLibStrings.InfoText | csstypeLib.csstypeLibStrings.Menu | csstypeLib.csstypeLibStrings.MenuText | csstypeLib.csstypeLibStrings.Scrollbar | csstypeLib.csstypeLibStrings.ThreeDDarkShadow | csstypeLib.csstypeLibStrings.ThreeDFace | csstypeLib.csstypeLibStrings.ThreeDHighlight | csstypeLib.csstypeLibStrings.ThreeDLightShadow | csstypeLib.csstypeLibStrings.ThreeDShadow | csstypeLib.csstypeLibStrings.Window | csstypeLib.csstypeLibStrings.WindowFrame | csstypeLib.csstypeLibStrings.WindowText
+  type DisplayInside = csstypeLib.csstypeLibStrings.`-ms-flexbox` | csstypeLib.csstypeLibStrings.`-ms-grid` | csstypeLib.csstypeLibStrings.`-webkit-flex` | csstypeLib.csstypeLibStrings.flex | csstypeLib.csstypeLibStrings.flow | csstypeLib.csstypeLibStrings.`flow-root` | csstypeLib.csstypeLibStrings.grid | csstypeLib.csstypeLibStrings.ruby | csstypeLib.csstypeLibStrings.table
+  type DisplayInternal = csstypeLib.csstypeLibStrings.`ruby-base` | csstypeLib.csstypeLibStrings.`ruby-base-container` | csstypeLib.csstypeLibStrings.`ruby-text` | csstypeLib.csstypeLibStrings.`ruby-text-container` | csstypeLib.csstypeLibStrings.`table-caption` | csstypeLib.csstypeLibStrings.`table-cell` | csstypeLib.csstypeLibStrings.`table-column` | csstypeLib.csstypeLibStrings.`table-column-group` | csstypeLib.csstypeLibStrings.`table-footer-group` | csstypeLib.csstypeLibStrings.`table-header-group` | csstypeLib.csstypeLibStrings.`table-row` | csstypeLib.csstypeLibStrings.`table-row-group`
+  type DisplayLegacy = csstypeLib.csstypeLibStrings.`-ms-inline-flexbox` | csstypeLib.csstypeLibStrings.`-ms-inline-grid` | csstypeLib.csstypeLibStrings.`-webkit-inline-flex` | csstypeLib.csstypeLibStrings.`inline-block` | csstypeLib.csstypeLibStrings.`inline-flex` | csstypeLib.csstypeLibStrings.`inline-grid` | csstypeLib.csstypeLibStrings.`inline-list-item` | csstypeLib.csstypeLibStrings.`inline-table`
+  type DisplayOutside = csstypeLib.csstypeLibStrings.block | csstypeLib.csstypeLibStrings.`inline` | csstypeLib.csstypeLibStrings.`run-in`
+  type EastAsianVariantValues = csstypeLib.csstypeLibStrings.jis04 | csstypeLib.csstypeLibStrings.jis78 | csstypeLib.csstypeLibStrings.jis83 | csstypeLib.csstypeLibStrings.jis90 | csstypeLib.csstypeLibStrings.simplified | csstypeLib.csstypeLibStrings.traditional
+  type FinalBgLayer[TLength] = Color | BgPosition[TLength] | RepeatStyle | Attachment | Box | csstypeLib.csstypeLibStrings.none | java.lang.String
+  type FontFaceFontDisplayProperty = csstypeLib.csstypeLibStrings.auto | csstypeLib.csstypeLibStrings.block | csstypeLib.csstypeLibStrings.fallback | csstypeLib.csstypeLibStrings.optional | csstypeLib.csstypeLibStrings.swap
+  type FontFaceFontFeatureSettingsProperty = csstypeLib.csstypeLibStrings.normal | java.lang.String
+  type FontFaceFontStretchProperty = FontStretchAbsolute | java.lang.String
+  type FontFaceFontStyleProperty = csstypeLib.csstypeLibStrings.italic | csstypeLib.csstypeLibStrings.normal | csstypeLib.csstypeLibStrings.oblique | java.lang.String
+  type FontFaceFontVariantProperty = EastAsianVariantValues | csstypeLib.csstypeLibStrings.`all-petite-caps` | csstypeLib.csstypeLibStrings.`all-small-caps` | csstypeLib.csstypeLibStrings.`common-ligatures` | csstypeLib.csstypeLibStrings.contextual | csstypeLib.csstypeLibStrings.`diagonal-fractions` | csstypeLib.csstypeLibStrings.`discretionary-ligatures` | csstypeLib.csstypeLibStrings.`full-width` | csstypeLib.csstypeLibStrings.`historical-forms` | csstypeLib.csstypeLibStrings.`historical-ligatures` | csstypeLib.csstypeLibStrings.`lining-nums` | csstypeLib.csstypeLibStrings.`no-common-ligatures` | csstypeLib.csstypeLibStrings.`no-contextual` | csstypeLib.csstypeLibStrings.`no-discretionary-ligatures` | csstypeLib.csstypeLibStrings.`no-historical-ligatures` | csstypeLib.csstypeLibStrings.none | csstypeLib.csstypeLibStrings.normal | csstypeLib.csstypeLibStrings.`oldstyle-nums` | csstypeLib.csstypeLibStrings.ordinal | csstypeLib.csstypeLibStrings.`petite-caps` | csstypeLib.csstypeLibStrings.`proportional-nums` | csstypeLib.csstypeLibStrings.`proportional-width` | csstypeLib.csstypeLibStrings.ruby | csstypeLib.csstypeLibStrings.`slashed-zero` | csstypeLib.csstypeLibStrings.`small-caps` | csstypeLib.csstypeLibStrings.`stacked-fractions` | csstypeLib.csstypeLibStrings.`tabular-nums` | csstypeLib.csstypeLibStrings.`titling-caps` | csstypeLib.csstypeLibStrings.unicase | java.lang.String
+  type FontFaceFontVariationSettingsProperty = csstypeLib.csstypeLibStrings.normal | java.lang.String
+  type FontFaceFontWeightProperty = FontWeightAbsolute | java.lang.String
+  type FontStretchAbsolute = csstypeLib.csstypeLibStrings.condensed | csstypeLib.csstypeLibStrings.expanded | csstypeLib.csstypeLibStrings.`extra-condensed` | csstypeLib.csstypeLibStrings.`extra-expanded` | csstypeLib.csstypeLibStrings.normal | csstypeLib.csstypeLibStrings.`semi-condensed` | csstypeLib.csstypeLibStrings.`semi-expanded` | csstypeLib.csstypeLibStrings.`ultra-condensed` | csstypeLib.csstypeLibStrings.`ultra-expanded` | java.lang.String
+  type FontWeightAbsolute = csstypeLib.csstypeLibStrings.bold | csstypeLib.csstypeLibStrings.normal | scala.Double
+  type GenericFamily = csstypeLib.csstypeLibStrings.cursive | csstypeLib.csstypeLibStrings.fantasy | csstypeLib.csstypeLibStrings.monospace | csstypeLib.csstypeLibStrings.`sans-serif` | csstypeLib.csstypeLibStrings.serif
+  type GeometryBox = Box | csstypeLib.csstypeLibStrings.`fill-box` | csstypeLib.csstypeLibStrings.`margin-box` | csstypeLib.csstypeLibStrings.`stroke-box` | csstypeLib.csstypeLibStrings.`view-box`
+  type GlobalsNumber = js.Any | scala.Double
+  type GlobalsString = js.Any | java.lang.String
+  type GridLine = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
+  type MaskLayer[TLength] = Position[TLength] | RepeatStyle | GeometryBox | CompositingOperator | MaskingMode | csstypeLib.csstypeLibStrings.`no-clip` | csstypeLib.csstypeLibStrings.none | java.lang.String
+  type MaskingMode = csstypeLib.csstypeLibStrings.alpha | csstypeLib.csstypeLibStrings.luminance | csstypeLib.csstypeLibStrings.`match-source`
+  type NamedColor = /* LimitUnionLength: was union type with length 149 */java.lang.String
+  type PageBleedProperty[TLength] = TLength | csstypeLib.csstypeLibStrings.auto
+  type PageMarksProperty = csstypeLib.csstypeLibStrings.crop | csstypeLib.csstypeLibStrings.cross | csstypeLib.csstypeLibStrings.none | java.lang.String
+  type Paint = Color | csstypeLib.csstypeLibStrings.child | csstypeLib.csstypeLibStrings.`context-fill` | csstypeLib.csstypeLibStrings.`context-stroke` | csstypeLib.csstypeLibStrings.none | java.lang.String
+  type Position[TLength] = TLength | csstypeLib.csstypeLibStrings.bottom | csstypeLib.csstypeLibStrings.center | csstypeLib.csstypeLibStrings.left | csstypeLib.csstypeLibStrings.right | csstypeLib.csstypeLibStrings.top | java.lang.String
+  type Quote = csstypeLib.csstypeLibStrings.`close-quote` | csstypeLib.csstypeLibStrings.`no-close-quote` | csstypeLib.csstypeLibStrings.`no-open-quote` | csstypeLib.csstypeLibStrings.`open-quote`
+  type RepeatStyle = csstypeLib.csstypeLibStrings.`no-repeat` | csstypeLib.csstypeLibStrings.repeat | csstypeLib.csstypeLibStrings.`repeat-x` | csstypeLib.csstypeLibStrings.`repeat-y` | csstypeLib.csstypeLibStrings.round | csstypeLib.csstypeLibStrings.space | java.lang.String
+  type SelfPosition = csstypeLib.csstypeLibStrings.center | csstypeLib.csstypeLibStrings.end | csstypeLib.csstypeLibStrings.`flex-end` | csstypeLib.csstypeLibStrings.`flex-start` | csstypeLib.csstypeLibStrings.`self-end` | csstypeLib.csstypeLibStrings.`self-start` | csstypeLib.csstypeLibStrings.start
+  type SingleAnimation = SingleTimingFunction | SingleAnimationDirection | SingleAnimationFillMode | csstypeLib.csstypeLibStrings.infinite | csstypeLib.csstypeLibStrings.none | csstypeLib.csstypeLibStrings.paused | csstypeLib.csstypeLibStrings.running | java.lang.String | scala.Double
+  type SingleAnimationDirection = csstypeLib.csstypeLibStrings.alternate | csstypeLib.csstypeLibStrings.`alternate-reverse` | csstypeLib.csstypeLibStrings.normal | csstypeLib.csstypeLibStrings.reverse
+  type SingleAnimationFillMode = csstypeLib.csstypeLibStrings.backwards | csstypeLib.csstypeLibStrings.both | csstypeLib.csstypeLibStrings.forwards | csstypeLib.csstypeLibStrings.none
+  type SingleTimingFunction = CubicBezierTimingFunction | StepTimingFunction | csstypeLib.csstypeLibStrings.linear | java.lang.String
+  type SingleTransition = SingleTimingFunction | csstypeLib.csstypeLibStrings.all | csstypeLib.csstypeLibStrings.none | java.lang.String
+  type StepTimingFunction = csstypeLib.csstypeLibStrings.`step-end` | csstypeLib.csstypeLibStrings.`step-start` | java.lang.String
+  type TrackBreadth[TLength] = TLength | csstypeLib.csstypeLibStrings.auto | csstypeLib.csstypeLibStrings.`max-content` | csstypeLib.csstypeLibStrings.`min-content` | java.lang.String
+  type ViewportHeightProperty[TLength] = ViewportLength[TLength] | java.lang.String
+  type ViewportLength[TLength] = TLength | csstypeLib.csstypeLibStrings.auto | java.lang.String
+  type ViewportMaxHeightProperty[TLength] = ViewportLength[TLength]
+  type ViewportMaxWidthProperty[TLength] = ViewportLength[TLength]
+  type ViewportMaxZoomProperty = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
+  type ViewportMinHeightProperty[TLength] = ViewportLength[TLength]
+  type ViewportMinWidthProperty[TLength] = ViewportLength[TLength]
+  type ViewportMinZoomProperty = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
+  type ViewportOrientationProperty = csstypeLib.csstypeLibStrings.auto | csstypeLib.csstypeLibStrings.landscape | csstypeLib.csstypeLibStrings.portrait
+  type ViewportUserZoomProperty = csstypeLib.csstypeLibStrings.`-ms-zoom` | csstypeLib.csstypeLibStrings.fixed | csstypeLib.csstypeLibStrings.zoom
+  type ViewportWidthProperty[TLength] = ViewportLength[TLength] | java.lang.String
+  type ViewportZoomProperty = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
+}

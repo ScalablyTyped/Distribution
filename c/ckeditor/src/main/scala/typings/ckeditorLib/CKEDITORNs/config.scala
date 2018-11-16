@@ -1,0 +1,276 @@
+package typings
+package ckeditorLib.CKEDITORNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+// https://docs.com/ckeditor4/latest/api/CKEDITOR_config.html
+
+trait config extends js.Object {
+  var allowedContent: js.UndefOr[scala.Boolean | ckeditorLib.CKEDITORNs.filterNs.allowedContentRules] = js.undefined
+  var autoEmbed_widget: js.UndefOr[java.lang.String | (js.Function1[/* url */ java.lang.String, java.lang.String])] = js.undefined
+  var autoGrow_bottomSpace: js.UndefOr[scala.Double] = js.undefined
+  var autoGrow_maxHeight: js.UndefOr[scala.Double] = js.undefined
+  var autoGrow_minHeight: js.UndefOr[scala.Double] = js.undefined
+  var autoGrow_onStartup: js.UndefOr[scala.Boolean] = js.undefined
+  var autoUpdateElement: js.UndefOr[scala.Boolean] = js.undefined
+  var baseFloatZIndex: js.UndefOr[scala.Double] = js.undefined
+  var baseHref: js.UndefOr[java.lang.String] = js.undefined
+  var basicEntities: js.UndefOr[scala.Boolean] = js.undefined
+  var blockedKeystrokes: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  var bodyClass: js.UndefOr[java.lang.String] = js.undefined
+  var bodyId: js.UndefOr[java.lang.String] = js.undefined
+  var browserContextMenuOnCtrl: js.UndefOr[scala.Boolean] = js.undefined
+  var clipboard_defaultContentType: js.UndefOr[ckeditorLib.ckeditorLibStrings.html | ckeditorLib.ckeditorLibStrings.text] = js.undefined
+  var clipboard_notificationDuration: js.UndefOr[scala.Double] = js.undefined
+  var cloudServices_tokenUrl: js.UndefOr[java.lang.String] = js.undefined
+  var cloudServices_uploadUrl: js.UndefOr[java.lang.String] = js.undefined
+  var coceSnippet_theme: js.UndefOr[java.lang.String] = js.undefined
+  var codeSnippetGeshi_url: js.UndefOr[java.lang.String] = js.undefined
+  var codeSnippet_codeClass: js.UndefOr[java.lang.String] = js.undefined
+  var codeSnippet_languages: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var colorButton_backStyle: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var colorButton_colors: js.UndefOr[java.lang.String] = js.undefined
+  var colorButton_colorsPerRow: js.UndefOr[scala.Double] = js.undefined
+  var colorButton_enableAutomatic: js.UndefOr[scala.Boolean] = js.undefined
+  var colorButton_enableMore: js.UndefOr[scala.Boolean] = js.undefined
+  var colorButton_foreStyle: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var colorButton_normalizeBackground: js.UndefOr[scala.Boolean] = js.undefined
+  var contentsCss: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  var contentsLangDirection: js.UndefOr[java.lang.String] = js.undefined
+  var contentsLanguage: js.UndefOr[java.lang.String] = js.undefined
+  var copyFormatting_allowRules: js.UndefOr[java.lang.String] = js.undefined
+  var copyFormatting_allowedContexts: js.UndefOr[scala.Boolean | js.Array[java.lang.String]] = js.undefined
+  var copyFormatting_keystrokeCopy: js.UndefOr[scala.Double] = js.undefined
+  var copyFormatting_keystrokePaste: js.UndefOr[scala.Double] = js.undefined
+  var copyFormatting_outerCursor: js.UndefOr[scala.Boolean] = js.undefined
+  var coreStyles_bold: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var coreStyles_italic: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var coreStyles_strike: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var coreStyles_subscript: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var coreStyles_superscript: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var coreStyles_underline: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var customConfig: js.UndefOr[java.lang.String] = js.undefined
+  var dataIndentationChars: js.UndefOr[java.lang.String] = js.undefined
+  var defaultLanguage: js.UndefOr[java.lang.String] = js.undefined
+  var devtools_styles: js.UndefOr[java.lang.String] = js.undefined
+  var devtools_textCallback: js.UndefOr[
+    js.Function4[
+      /* editor */ editor, 
+      /* dialog */ dialog, 
+      /* element */ ckeditorLib.CKEDITORNs.domNs.element, 
+      /* tabName */ java.lang.String, 
+      java.lang.String
+    ]
+  ] = js.undefined
+  var dialog_backgroundCoverColor: js.UndefOr[java.lang.String] = js.undefined
+  var dialog_backgroundCoverOpacity: js.UndefOr[scala.Double] = js.undefined
+  var dialog_buttonsOrder: js.UndefOr[java.lang.String] = js.undefined
+  var dialog_magnetDistance: js.UndefOr[scala.Double] = js.undefined
+  var dialog_noConfirmCancel: js.UndefOr[scala.Boolean] = js.undefined
+  var dialog_startupFocusTab: js.UndefOr[scala.Boolean] = js.undefined
+  var disableNativeObjectResizing: js.UndefOr[scala.Boolean] = js.undefined
+  var disableNativeReadonlyStyling: js.UndefOr[scala.Boolean] = js.undefined
+  var disableNativeSpellChecker: js.UndefOr[scala.Boolean] = js.undefined
+  var disableNativeTableHandles: js.UndefOr[scala.Boolean] = js.undefined
+  var disallowedContent: js.UndefOr[ckeditorLib.CKEDITORNs.filterNs.disallowedContentRules] = js.undefined
+  var div_wrapTable: js.UndefOr[scala.Boolean] = js.undefined
+  var docType: js.UndefOr[java.lang.String] = js.undefined
+  var easyimage_class: js.UndefOr[java.lang.String] = js.undefined
+  var easyimage_defaultStyle: js.UndefOr[java.lang.String] = js.undefined
+  var easyimage_styles: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var easyimage_toolbar: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
+  var emailProtection: js.UndefOr[java.lang.String] = js.undefined
+  var embed_provider: js.UndefOr[java.lang.String] = js.undefined
+  var enableTabKeyTools: js.UndefOr[scala.Boolean] = js.undefined
+  var enterMode: js.UndefOr[scala.Double] = js.undefined
+  var entities: js.UndefOr[scala.Boolean] = js.undefined
+  var entities_additional: js.UndefOr[java.lang.String] = js.undefined
+  var entities_greek: js.UndefOr[scala.Boolean] = js.undefined
+  var entities_latin: js.UndefOr[scala.Boolean] = js.undefined
+  var entities_processNumerical: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
+  var extraAllowedContent: js.UndefOr[ckeditorLib.CKEDITORNs.filterNs.allowedContentRules] = js.undefined
+  var extraPlugins: js.UndefOr[java.lang.String] = js.undefined
+  var fileTools_defaultFileName: js.UndefOr[java.lang.String] = js.undefined
+  var fileTools_requestHeaders: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var filebrowserBrowseUrl: js.UndefOr[java.lang.String] = js.undefined
+  var filebrowserFlashBrowseUrl: js.UndefOr[java.lang.String] = js.undefined
+  var filebrowserFlashUploadUrl: js.UndefOr[java.lang.String] = js.undefined
+  var filebrowserImageBrowseLinkUrl: js.UndefOr[java.lang.String] = js.undefined
+  var filebrowserImageBrowseUrl: js.UndefOr[java.lang.String] = js.undefined
+  var filebrowserImageUploadUrl: js.UndefOr[java.lang.String] = js.undefined
+  var filebrowserUploadMethod: js.UndefOr[java.lang.String] = js.undefined
+  var filebrowserUploadUrl: js.UndefOr[java.lang.String] = js.undefined
+  var filebrowserWindowFeatures: js.UndefOr[java.lang.String] = js.undefined
+  var filebrowserWindowHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var filebrowserWindowWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var fillEmptyBlocks: js.UndefOr[
+    scala.Boolean | (js.Function1[/* element */ ckeditorLib.CKEDITORNs.htmlParserNs.element, scala.Boolean])
+  ] = js.undefined
+  var find_highlight: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var flashAddEmbedTag: js.UndefOr[scala.Boolean] = js.undefined
+  var flashConvertOnEdit: js.UndefOr[scala.Boolean] = js.undefined
+  var flashEmbedTagOnly: js.UndefOr[scala.Boolean] = js.undefined
+  var floatSpaceDockedOffsetX: js.UndefOr[scala.Double] = js.undefined
+  var floatSpaceDockedOffsetY: js.UndefOr[scala.Double] = js.undefined
+  var floatSpacePinnedOffsetX: js.UndefOr[scala.Double] = js.undefined
+  var floatSpacePinnedOffsetY: js.UndefOr[scala.Double] = js.undefined
+  var floatSpacePreferRight: js.UndefOr[scala.Boolean] = js.undefined
+  var fontSize_defaultLabel: js.UndefOr[java.lang.String] = js.undefined
+  var fontSize_sizes: js.UndefOr[java.lang.String] = js.undefined
+  var fontSize_style: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var font_defaultLabel: js.UndefOr[java.lang.String] = js.undefined
+  var font_names: js.UndefOr[java.lang.String] = js.undefined
+  var font_style: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var forceEnterMode: js.UndefOr[scala.Boolean] = js.undefined
+  var forcePasteAsPlainText: js.UndefOr[scala.Boolean] = js.undefined
+  var forceSimpleAmpersand: js.UndefOr[scala.Boolean] = js.undefined
+  var format_address: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var format_div: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var format_h1: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var format_h2: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var format_h3: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var format_h4: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var format_h5: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var format_h6: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var format_p: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var format_pre: js.UndefOr[ckeditorLib.CKEDITORNs.configNs.styleObject] = js.undefined
+  var format_tags: js.UndefOr[java.lang.String] = js.undefined
+  var fullPage: js.UndefOr[scala.Boolean] = js.undefined
+  var grayt_autoStartup: js.UndefOr[scala.Boolean] = js.undefined
+  var height: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var htmlEncodeOutput: js.UndefOr[scala.Boolean] = js.undefined
+  var ignoreEmptyParagraph: js.UndefOr[scala.Boolean] = js.undefined
+  var image2_alignClasses: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var image2_altRequired: js.UndefOr[scala.Boolean] = js.undefined
+  var image2_captionedClass: js.UndefOr[java.lang.String] = js.undefined
+  var image2_disableResizer: js.UndefOr[scala.Boolean] = js.undefined
+  var image2_prefillDimensions: js.UndefOr[scala.Boolean] = js.undefined
+  var imageUploadUrl: js.UndefOr[java.lang.String] = js.undefined
+  var image_prefillDimensions: js.UndefOr[scala.Boolean] = js.undefined
+  var image_previewText: js.UndefOr[java.lang.String] = js.undefined
+  var image_removeLinkByEmptyUrl: js.UndefOr[scala.Boolean] = js.undefined
+  var indentClasses: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var indentOffset: js.UndefOr[scala.Double] = js.undefined
+  var indentUnit: js.UndefOr[java.lang.String] = js.undefined
+  var jqueryOverrideVal: js.UndefOr[scala.Boolean] = js.undefined
+  var justifyClasses: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var keystrokes: js.UndefOr[js.Array[js.Tuple2[scala.Double, java.lang.String]]] = js.undefined
+  var language: js.UndefOr[java.lang.String] = js.undefined
+  var language_list: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var linkJavaScriptLinksAllowed: js.UndefOr[scala.Boolean] = js.undefined
+  var linkShowAdvancedTab: js.UndefOr[scala.Boolean] = js.undefined
+  var linkShowTargetTab: js.UndefOr[scala.Boolean] = js.undefined
+  var magicline_color: js.UndefOr[java.lang.String] = js.undefined
+  var magicline_everywhere: js.UndefOr[scala.Boolean] = js.undefined
+  var magicline_holdDistance: js.UndefOr[scala.Double] = js.undefined
+  var magicline_keystrokeNext: js.UndefOr[scala.Double] = js.undefined
+  var magicline_keystrokePrevious: js.UndefOr[scala.Double] = js.undefined
+  var magicline_tabuList: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var magicline_triggerOffset: js.UndefOr[scala.Double] = js.undefined
+  var mathJaxClass: js.UndefOr[java.lang.String] = js.undefined
+  var mathJaxLib: js.UndefOr[java.lang.String] = js.undefined
+  var menu_groups: js.UndefOr[java.lang.String] = js.undefined
+  var menu_subMenuDelay: js.UndefOr[scala.Double] = js.undefined
+  var newpage_html: js.UndefOr[java.lang.String] = js.undefined
+  var notification_duration: js.UndefOr[scala.Double] = js.undefined
+  var on: js.UndefOr[ckeditorLib.CKEDITORNs.editorNs.eventObject] = js.undefined
+  var pasteFilter: js.UndefOr[java.lang.String] = js.undefined
+  var pasteFromWordCleanupFile: js.UndefOr[java.lang.String] = js.undefined
+  var pasteFromWordNumberedHeadingToList: js.UndefOr[scala.Boolean] = js.undefined
+  var pasteFromWordPromptCleanup: js.UndefOr[scala.Boolean] = js.undefined
+  var pasteFromWordRemoveFontStyles: js.UndefOr[scala.Boolean] = js.undefined
+  var pasteFromWord_heuristicsEdgeList: js.UndefOr[scala.Boolean] = js.undefined
+  var pasteFromWord_inlineImages: js.UndefOr[scala.Boolean] = js.undefined
+  var pasteFromWorkRemoveStyles: js.UndefOr[scala.Boolean] = js.undefined
+  var plugins: js.UndefOr[java.lang.String] = js.undefined
+  var protectedSource: js.UndefOr[js.Array[stdLib.RegExp]] = js.undefined
+  var readOnly: js.UndefOr[scala.Boolean] = js.undefined
+  var removeButtons: js.UndefOr[java.lang.String] = js.undefined
+  var removeDialogTabs: js.UndefOr[java.lang.String] = js.undefined
+  var removeFormatAttributes: js.UndefOr[java.lang.String] = js.undefined
+  var removeFormatTags: js.UndefOr[java.lang.String] = js.undefined
+  var removePlugins: js.UndefOr[java.lang.String] = js.undefined
+  var resize_dir: js.UndefOr[java.lang.String] = js.undefined
+  var resize_enabled: js.UndefOr[scala.Boolean] = js.undefined
+  var resize_maxHeight: js.UndefOr[scala.Double] = js.undefined
+  var resize_maxWidth: js.UndefOr[scala.Double] = js.undefined
+  var resize_minHeight: js.UndefOr[scala.Double] = js.undefined
+  var resize_minWidth: js.UndefOr[scala.Double] = js.undefined
+  var scayt_autoStartup: js.UndefOr[scala.Boolean] = js.undefined
+  var scayt_contextCommands: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_contextMenuItemsOrder: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_customDictionaryIds: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_customerId: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_disableOptionsStorage: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  var scayt_elementsToIgnore: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_handleCheckDirty: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_handleUndoRedo: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_ignoreAllCapsWords: js.UndefOr[scala.Boolean] = js.undefined
+  var scayt_ignoreDomainNames: js.UndefOr[scala.Boolean] = js.undefined
+  var scayt_ignoreWordsWithMixedCases: js.UndefOr[scala.Boolean] = js.undefined
+  var scayt_ignoreWordsWithNumbers: js.UndefOr[scala.Boolean] = js.undefined
+  var scayt_inlineModeImmediateMarkup: js.UndefOr[scala.Boolean] = js.undefined
+  var scayt_maxSuggestions: js.UndefOr[scala.Double] = js.undefined
+  var scayt_minWordLength: js.UndefOr[scala.Double] = js.undefined
+  var scayt_moreSuggestions: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_multiLanguageMode: js.UndefOr[scala.Boolean] = js.undefined
+  var scayt_multiLanguageStyles: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var scayt_sLang: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_serviceHost: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_servicePath: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_servicePort: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_serviceProtocol: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_srcUrl: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_uiTabs: js.UndefOr[java.lang.String] = js.undefined
+  var scayt_userDictionaryName: js.UndefOr[java.lang.String] = js.undefined
+  var sharedSpaces: js.UndefOr[sharedSpace] = js.undefined
+  var shiftEnterMode: js.UndefOr[scala.Double] = js.undefined
+  var skin: js.UndefOr[java.lang.String] = js.undefined
+  var smiley_columns: js.UndefOr[scala.Double] = js.undefined
+  var smiley_descriptions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var smiley_images: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var smiley_path: js.UndefOr[java.lang.String] = js.undefined
+  var sourceAreaTabSize: js.UndefOr[scala.Double] = js.undefined
+  var specialChars: js.UndefOr[js.Array[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])]] = js.undefined
+  var startupFocus: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+  var startupMode: js.UndefOr[java.lang.String] = js.undefined
+  var startupOutlineBlocks: js.UndefOr[scala.Boolean] = js.undefined
+  var startupShowBorders: js.UndefOr[scala.Boolean] = js.undefined
+  var stylesSet: js.UndefOr[
+    java.lang.String | scala.Boolean | js.Array[ckeditorLib.CKEDITORNs.configNs.styleObject]
+  ] = js.undefined
+  var stylesheetParser_skipSelectors: js.UndefOr[stdLib.RegExp] = js.undefined
+  var stylesheetParser_validSelectors: js.UndefOr[stdLib.RegExp] = js.undefined
+  var tabIndex: js.UndefOr[scala.Double] = js.undefined
+  var tabSpaces: js.UndefOr[scala.Double] = js.undefined
+  var templates: js.UndefOr[java.lang.String] = js.undefined
+  var templates_files: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var templates_replaceContent: js.UndefOr[scala.Boolean] = js.undefined
+  var title: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
+  var toolbar: js.UndefOr[
+    java.lang.String | (js.Array[java.lang.String | js.Array[java.lang.String] | ckeditorLib.Anon_Items]) | scala.Null
+  ] = js.undefined
+  var toolbarCanCollapse: js.UndefOr[scala.Boolean] = js.undefined
+  var toolbarGroupCycling: js.UndefOr[scala.Boolean] = js.undefined
+  var toolbarGroups: js.UndefOr[js.Array[toolbarGroups | java.lang.String]] = js.undefined
+  var toolbarLocation: js.UndefOr[java.lang.String] = js.undefined
+  var toolbarStartupExpanded: js.UndefOr[scala.Boolean] = js.undefined
+  var uiColor: js.UndefOr[java.lang.String] = js.undefined
+  var undoStackSize: js.UndefOr[scala.Double] = js.undefined
+  var uploadUrl: js.UndefOr[java.lang.String] = js.undefined
+  var useComputedState: js.UndefOr[scala.Boolean] = js.undefined
+  var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var wsc_cmd: js.UndefOr[java.lang.String] = js.undefined
+  var wsc_customDictionaryIds: js.UndefOr[java.lang.String] = js.undefined
+  var wsc_customLoaderScript: js.UndefOr[java.lang.String] = js.undefined
+  var wsc_customerId: js.UndefOr[java.lang.String] = js.undefined
+  var wsc_height: js.UndefOr[java.lang.String] = js.undefined
+  var wsc_lang: js.UndefOr[java.lang.String] = js.undefined
+  var wsc_left: js.UndefOr[java.lang.String] = js.undefined
+  var wsc_top: js.UndefOr[java.lang.String] = js.undefined
+  var wsc_userDictionaryName: js.UndefOr[java.lang.String] = js.undefined
+  var wsc_width: js.UndefOr[java.lang.String] = js.undefined
+}
+

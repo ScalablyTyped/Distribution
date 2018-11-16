@@ -1,0 +1,17 @@
+package typings
+package cesiumLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait Anon_UrlCredit extends js.Object {
+  var credit: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String] = js.undefined
+  var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined
+  var proxy: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Proxy] = js.undefined
+  var requestVertexNormals: js.UndefOr[scala.Boolean] = js.undefined
+  var requestWaterMask: js.UndefOr[scala.Boolean] = js.undefined
+  var url: java.lang.String
+}
+

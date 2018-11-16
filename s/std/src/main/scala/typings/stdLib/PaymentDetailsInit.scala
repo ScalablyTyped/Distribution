@@ -1,0 +1,13 @@
+package typings
+package stdLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait PaymentDetailsInit extends PaymentDetailsBase {
+  var id: js.UndefOr[java.lang.String] = js.undefined
+  var total: PaymentItem
+}
+

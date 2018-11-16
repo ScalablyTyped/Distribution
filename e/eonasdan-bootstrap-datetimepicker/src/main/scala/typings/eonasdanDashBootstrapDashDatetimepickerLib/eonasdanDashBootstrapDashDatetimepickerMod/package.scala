@@ -1,0 +1,15 @@
+package typings
+package eonasdanDashBootstrapDashDatetimepickerLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object eonasdanDashBootstrapDashDatetimepickerMod {
+  type DateComparable = java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment
+  type FromTo = js.Tuple2[momentLib.momentMod.momentNs.Moment, momentLib.momentMod.momentNs.Moment]
+  type ParseInputDateFunction = js.Function1[/* inputDate */ java.lang.String, momentLib.momentMod.momentNs.Moment]
+  type ToolbarPlacement = eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.default | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.top | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.bottom
+  type UseCurrent = eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.year | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.month | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.day | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.hour | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.minute
+  type ViewMode = eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.days | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.months | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.years | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.decades
+}

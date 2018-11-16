@@ -1,0 +1,13 @@
+package typings
+package d3DashPathLib.d3DashPathMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("d3-path", JSImport.Namespace)
+@js.native
+object d3DashPathModMembers extends js.Object {
+  def path(): Path = js.native
+}
+

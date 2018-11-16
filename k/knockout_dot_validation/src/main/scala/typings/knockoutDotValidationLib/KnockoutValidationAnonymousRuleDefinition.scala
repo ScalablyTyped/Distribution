@@ -1,0 +1,12 @@
+package typings
+package knockoutDotValidationLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+
+trait KnockoutValidationAnonymousRuleDefinition extends js.Object {
+  var validation: KnockoutValidationRuleDefinition
+}
+

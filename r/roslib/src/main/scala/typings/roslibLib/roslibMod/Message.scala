@@ -1,0 +1,20 @@
+package typings
+package roslibLib.roslibMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("roslib", "Message")
+@js.native
+class Message protected ()
+  extends roslibLib.roslibMod.ROSLIBNs.Message {
+  /**
+  		 * Message objects are used for publishing and subscribing to and from topics.
+  		 *
+  		 * @constructor
+  		 * @param values - object matching the fields defined in the .msg definition file
+  		 */
+  def this(values: js.Any) = this()
+}
+
