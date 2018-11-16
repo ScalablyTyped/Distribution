@@ -4112,6 +4112,7 @@ object ScalablyTypedPlugin extends AutoPlugin {
         val `react-color` = "com.scalablytyped" % "react-color_sjs0.6_2.12" % "2.13-dt-20181102Z-143dcf"
         val `react-confirm` = "com.scalablytyped" % "react-confirm_sjs0.6_2.12" % "0.1-dt-20181102Z-2d6dea"
         val `react-content-loader` = "com.scalablytyped" % "react-content-loader_sjs0.6_2.12" % "3.1-dt-20181102Z-0dd1a1"
+        val `react-contrib` = "com.scalablytyped" % "react-contrib_sjs0.6_2.12" % "161120180231-2261fb"
         val `react-copy-to-clipboard` = "com.scalablytyped" % "react-copy-to-clipboard_sjs0.6_2.12" % "4.2-dt-20181102Z-caaba0"
         val `react-copy-write` = "com.scalablytyped" % "react-copy-write_sjs0.6_2.12" % "0.7-dt-20181102Z-98bd36"
         val `react-countup` = "com.scalablytyped" % "react-countup_sjs0.6_2.12" % "4.0-dt-20181102Z-2e48ae"
