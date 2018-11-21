@@ -437,6 +437,13 @@ trait Model[TInstance, TAttributes]
            * always be called with a single instance.
            */
   def findById[TCustomAttributes](identifier: scala.Double, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
+  def findByPk[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
+  def findByPk[TCustomAttributes](identifier: java.lang.String): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
+  def findByPk[TCustomAttributes](identifier: java.lang.String, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
+  def findByPk[TCustomAttributes](identifier: nodeLib.Buffer): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
+  def findByPk[TCustomAttributes](identifier: nodeLib.Buffer, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
+  def findByPk[TCustomAttributes](identifier: scala.Double): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
+  def findByPk[TCustomAttributes](identifier: scala.Double, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
   def findByPrimary[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
   def findByPrimary[TCustomAttributes](identifier: java.lang.String): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
   def findByPrimary[TCustomAttributes](identifier: java.lang.String, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native

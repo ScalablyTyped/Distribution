@@ -10,4 +10,3 @@
 [debug] PhaseRunner.scala:82 Failure, [apollo-react => Couldn't resolve typed-graphql] [id => apollo-react, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [apollo-react => Couldn't resolve typed-graphql] [id => apollo-react, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [apollo-react => Couldn't resolve typed-graphql] [id => apollo-react, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [apollo-react => Couldn't resolve typed-graphql] [id => apollo-react, phase => publish] 

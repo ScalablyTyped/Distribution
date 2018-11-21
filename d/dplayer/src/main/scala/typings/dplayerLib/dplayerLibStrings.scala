@@ -16,6 +16,9 @@ object dplayerLibStrings {
   sealed trait bottom extends js.Object
   
   @js.native
+  sealed trait browser extends js.Object
+  
+  @js.native
   sealed trait dash extends js.Object
   
   @js.native
@@ -43,6 +46,9 @@ object dplayerLibStrings {
   sealed trait top extends js.Object
   
   @js.native
+  sealed trait web extends js.Object
+  
+  @js.native
   sealed trait webtorrent extends js.Object
   
   @js.native
@@ -57,6 +63,7 @@ object dplayerLibStrings {
   def ass: ass = "ass".asInstanceOf[ass]
   def auto: auto = "auto".asInstanceOf[auto]
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  def browser: browser = "browser".asInstanceOf[browser]
   def dash: dash = "dash".asInstanceOf[dash]
   def en: en = "en".asInstanceOf[en]
   def flv: flv = "flv".asInstanceOf[flv]
@@ -66,6 +73,7 @@ object dplayerLibStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   def right: right = "right".asInstanceOf[right]
   def top: top = "top".asInstanceOf[top]
+  def web: web = "web".asInstanceOf[web]
   def webtorrent: webtorrent = "webtorrent".asInstanceOf[webtorrent]
   def webvtt: webvtt = "webvtt".asInstanceOf[webvtt]
   def `zh-cn`: `zh-cn` = "zh-cn".asInstanceOf[`zh-cn`]

@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation._
 
 trait ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments extends ASPxClientHtmlEditorChangeMediaElementCommandArguments {
   /**
+       * Determines if the target YouTube video can be displayed in fullscreen mode.
+       * Value: true, if the fullscreen mode is allowed; otherwise, false.
+       */
+  var allowFullscreen: scala.Boolean
+  /**
        * Determines if the privacy-enhanced mode is enabled for the target YouTube video.
        * Value: true, if the privace-enhanced mode is enabled; otherwise, false
        */

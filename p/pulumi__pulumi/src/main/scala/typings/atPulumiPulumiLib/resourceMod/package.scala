@@ -40,5 +40,5 @@ package object resourceMod {
    */
   type UnwrapSimple[T] = UnwrappedObject[T] | UnwrappedArray[js.Any] | T
   type UnwrappedObject[T] = atPulumiPulumiLib.atPulumiPulumiLibStrings.UnwrappedObject with T
-  type primitive = js.UndefOr[js.Function | java.lang.String | scala.Double | scala.Boolean | scala.Null]
+  type primitive = js.UndefOr[java.lang.String | scala.Double | scala.Boolean | scala.Null]
 }

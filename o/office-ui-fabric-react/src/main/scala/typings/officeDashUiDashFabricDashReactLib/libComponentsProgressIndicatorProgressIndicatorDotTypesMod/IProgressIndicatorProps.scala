@@ -16,7 +16,7 @@ trait IProgressIndicatorProps
   var ariaValueText: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Height of the ProgressIndicator
-       * @defaultvalue 2
+       * @default 2
        */
   var barHeight: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -61,8 +61,8 @@ trait IProgressIndicatorProps
        */
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
-       * Deprecated at v0.43.0, to be removed at \>= v0.53.0. Use `label` instead.
-       * @deprecated Use `label` instead.
+       * Deprecated at v0.43.0, to be removed at >= v0.53.0. Use 'label' instead.
+       * @deprecated
        */
   var title: js.UndefOr[java.lang.String] = js.undefined
 }

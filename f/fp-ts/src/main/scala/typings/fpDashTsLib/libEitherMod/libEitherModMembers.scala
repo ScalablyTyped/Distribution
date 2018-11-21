@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libEitherModMembers extends js.Object {
   val URI: /* Either */ java.lang.String = js.native
-  val either: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] with fpDashTsLib.libExtendMod.Extend2[URI] with fpDashTsLib.libChainRecMod.ChainRec2[URI] = js.native
+  val either: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libFoldableMod.Foldable2[URI] with fpDashTsLib.libTraversableMod.Traversable2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] with fpDashTsLib.libExtendMod.Extend2[URI] with fpDashTsLib.libChainRecMod.ChainRec2[URI] = js.native
   val fromNullable: js.Function1[
     /* defaultValue */ js.Any, 
     js.Function1[/* a */ js.UndefOr[js.Any | scala.Null], Either[js.Any, js.Any]]

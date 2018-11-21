@@ -22,7 +22,6 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var autoscalingplans: js.UndefOr[awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ClientConfiguration] = js.native
   var batch: js.UndefOr[awsDashSdkLib.clientsBatchMod.BatchNs.ClientConfiguration] = js.native
   var budgets: js.UndefOr[js.Any] = js.native
-  var chime: js.UndefOr[awsDashSdkLib.clientsChimeMod.ChimeNs.ClientConfiguration] = js.native
   var cloud9: js.UndefOr[awsDashSdkLib.clientsCloud9Mod.Cloud9Ns.ClientConfiguration] = js.native
   var clouddirectory: js.UndefOr[awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ClientConfiguration] = js.native
   var cloudformation: js.UndefOr[awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ClientConfiguration] = js.native

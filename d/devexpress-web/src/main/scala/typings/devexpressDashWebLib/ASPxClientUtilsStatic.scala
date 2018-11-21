@@ -128,6 +128,12 @@ trait ASPxClientUtilsStatic extends js.Object {
        */
   var windowsPlatform: scala.Boolean = js.native
   /**
+       * 
+       * @param element 
+       * @param className 
+       */
+  def AddClassNameToElement(element: js.Object, className: java.lang.String): scala.Unit = js.native
+  /**
        * Removes all items from the specified array object.
        * @param array An object that specifies the array to manipulate.
        */
@@ -322,6 +328,12 @@ trait ASPxClientUtilsStatic extends js.Object {
        */
   def PreventEventAndBubble(htmlEvent: js.Object): scala.Boolean = js.native
   /**
+       * 
+       * @param element 
+       * @param className 
+       */
+  def RemoveClassNameFromElement(element: js.Object, className: java.lang.String): scala.Unit = js.native
+  /**
        * Specifies the text that Assistive Technologies (screen readers or braille display, for example) will provide to a user.
        * @param message A String value that specifies a text.
        */
@@ -351,6 +363,7 @@ trait ASPxClientUtilsStatic extends js.Object {
        * @param expirationDate A date-time object that represents the expiration date and time for the cookie.
        */
   def SetCookie(name: java.lang.String, value: java.lang.String, expirationDate: stdLib.Date): scala.Unit = js.native
+  def SetEditorValues(values: js.Object): scala.Unit = js.native
   /**
        * Returns a specifically generated code that uniquely identifies the combination of keys specified via the parameter.
        * @param shortcutString A string value that specifies the key combination.

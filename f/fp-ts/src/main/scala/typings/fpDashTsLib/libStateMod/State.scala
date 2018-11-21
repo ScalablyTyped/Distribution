@@ -13,9 +13,6 @@ class State[S, A] protected () extends js.Object {
   val _L: S = js.native
   val _URI: URI = js.native
   def ap[B](fab: State[S, js.Function1[/* a */ A, B]]): State[S, B] = js.native
-  /**
-       * Flipped version of {@link ap}
-       */
   def `ap_`[B, C](`this`: State[S, js.Function1[/* b */ B, C]], fb: State[S, B]): State[S, C] = js.native
   /**
        * Combine two effectful actions, keeping only the result of the first

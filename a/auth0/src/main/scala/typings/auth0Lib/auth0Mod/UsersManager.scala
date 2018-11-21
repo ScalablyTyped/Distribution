@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class UsersManager protected () extends js.Object {
   def this(options: UsersOptions) = this()
-  def getInfo(accessToken: java.lang.String): bluebirdLib.bluebirdMod.namespaced[User] = js.native
+  def getInfo(accessToken: java.lang.String): stdLib.Promise[User] = js.native
   def getInfo(
     accessToken: java.lang.String,
     cb: js.Function2[/* err */ stdLib.Error, /* user */ User, scala.Unit]
   ): scala.Unit = js.native
-  def impersonate(userId: java.lang.String, settings: ImpersonateSettingOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def impersonate(userId: java.lang.String, settings: ImpersonateSettingOptions): stdLib.Promise[_] = js.native
   def impersonate(
     userId: java.lang.String,
     settings: ImpersonateSettingOptions,

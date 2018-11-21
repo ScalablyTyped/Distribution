@@ -17,16 +17,16 @@ class OlkTimeControl protected () extends js.Object {
   val Font: activexDashStdoleLib.stdoleNs.StdFont = js.native
   var ForeColor: activexDashStdoleLib.stdoleNs.OLE_COLOR = js.native
   var HideSelection: scala.Boolean = js.native
-  var IntervalTime: stdLib.VarDate = js.native
+  var IntervalTime: activexDashInteropLib.VarDate = js.native
   var Locked: scala.Boolean = js.native
   var MouseIcon: activexDashStdoleLib.stdoleNs.StdPicture = js.native
   var MousePointer: OlMousePointer = js.native
   var `Outlook.OlkTimeControl_typekey`: OlkTimeControl = js.native
-  var ReferenceTime: stdLib.VarDate = js.native
+  var ReferenceTime: activexDashInteropLib.VarDate = js.native
   var Style: OlTimeStyle = js.native
   var Text: java.lang.String = js.native
   var TextAlign: OlTextAlign = js.native
-  var Time: stdLib.VarDate = js.native
+  var Time: activexDashInteropLib.VarDate = js.native
   var Value: js.Any = js.native
   def DropDown(): scala.Unit = js.native
 }

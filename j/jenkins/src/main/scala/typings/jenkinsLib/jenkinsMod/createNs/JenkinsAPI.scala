@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait JenkinsAPI extends js.Object {
-  var build: jenkinsLib.Anon_Stop
+  var build: jenkinsLib.Anon_Term
   var job: jenkinsLib.Anon_Enable
   var node: jenkinsLib.Anon_EnableName
   var queue: jenkinsLib.Anon_Cancel

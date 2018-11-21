@@ -36,8 +36,8 @@ class DetailsRowBase protected ()
        * when change to false, that means drag leave. we will remove the dropping class name from root element.
        *
        * @private
-       * @param newValue - New isDropping state value
-       * @param event - The event trigger dropping state change which can be dragenter, dragleave etc
+       * @param {boolean} newValue (new isDropping state value)
+       * @param {DragEvent} event (the event trigger dropping state change which can be dragenter, dragleave etc)
        */
   /* private */ def _updateDroppingState(newValue: js.Any, event: js.Any): js.Any = js.native
   @JSName("componentDidMount")
@@ -57,8 +57,8 @@ class DetailsRowBase protected ()
   /**
        * measure cell at index. and call the call back with the measured cell width when finish measure
        *
-       * @param index - The cell index
-       * @param onMeasureDone - The call back function when finish measure
+       * @param {number} index (the cell index)
+       * @param {(width: number) => void} onMeasureDone (the call back function when finish measure)
        */
   def measureCell(index: scala.Double, onMeasureDone: js.Function1[/* width */ scala.Double, scala.Unit]): scala.Unit = js.native
   @JSName("shouldComponentUpdate")

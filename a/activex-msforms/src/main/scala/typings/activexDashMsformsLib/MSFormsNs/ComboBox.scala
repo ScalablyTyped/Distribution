@@ -74,13 +74,13 @@ class ComboBox protected () extends js.Object {
   def AddItem(pvargItem: scala.Double): scala.Unit = js.native
   def AddItem(pvargItem: scala.Double, pvargIndex: scala.Double): scala.Unit = js.native
   def Clear(): scala.Unit = js.native
-  def Column(): stdLib.SafeArray[_] = js.native
+  def Column(): activexDashInteropLib.SafeArray[_] = js.native
   def Column(pvargColumn: scala.Double): js.Any = js.native
   def Column(pvargColumn: scala.Double, pvargIndex: scala.Double): js.Any = js.native
   def Copy(): scala.Unit = js.native
   def Cut(): scala.Unit = js.native
   def DropDown(): scala.Unit = js.native
-  def List(): stdLib.SafeArray[_] = js.native
+  def List(): activexDashInteropLib.SafeArray[_] = js.native
   def List(pvargIndex: scala.Double): js.Any = js.native
   def List(pvargIndex: scala.Double, pvargColumn: scala.Double): js.Any = js.native
   def Paste(): scala.Unit = js.native

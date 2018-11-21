@@ -43,9 +43,6 @@ object builderDashUtilDashRuntimeLibStrings {
   sealed trait bintray extends js.Object
   
   @js.native
-  sealed trait custom extends js.Object
-  
-  @js.native
   sealed trait draft extends js.Object
   
   @js.native
@@ -96,7 +93,6 @@ object builderDashUtilDashRuntimeLibStrings {
   def `aws:kms`: `aws:kms` = "aws:kms".asInstanceOf[`aws:kms`]
   def base64: base64 = "base64".asInstanceOf[base64]
   def bintray: bintray = "bintray".asInstanceOf[bintray]
-  def custom: custom = "custom".asInstanceOf[custom]
   def draft: draft = "draft".asInstanceOf[draft]
   def generic: generic = "generic".asInstanceOf[generic]
   def github: github = "github".asInstanceOf[github]

@@ -44,6 +44,11 @@ trait CarouselProps extends js.Object {
      */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
+     * When set to true, disable keyboard controls
+     * @default false
+     */
+  var disableKeyboardControls: js.UndefOr[scala.Boolean] = js.undefined
+  /**
      * Enable mouse swipe/dragging
      */
   var dragging: js.UndefOr[scala.Boolean] = js.undefined
@@ -86,6 +91,11 @@ trait CarouselProps extends js.Object {
      * Window onResize callback
      */
   var onResize: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /**
+     * Pause autoPlay when mouse is over carousel
+     * @default true
+     */
+  var pauseOnHover: js.UndefOr[scala.Boolean] = js.undefined
   /**
      * Function for rendering bottom center control
      */

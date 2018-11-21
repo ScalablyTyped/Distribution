@@ -37,7 +37,7 @@ trait IResizeGroupProps
   var onGrowData: js.UndefOr[js.Function1[/* prevData */ js.Any, _]] = js.undefined
   /**
        * Call to provide customized styling that will layer on top of the variant rules
-       * @deprecated Removed to reduce bundle size.  Please use `className` and add css rules to `className` instead.
+       * @deprecated Removed to reduce bundle size.  Please use className and add css rules to className instead.
        */
   var styles: js.UndefOr[
     atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[IResizeGroupStyleProps, IResizeGroupStyles]

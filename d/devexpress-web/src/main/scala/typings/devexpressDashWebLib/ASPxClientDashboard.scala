@@ -27,10 +27,6 @@ trait ASPxClientDashboard extends ASPxClientControl {
        */
   var CustomDataCallback: ASPxClientEvent[ASPxClientCustomDataCallbackEventHandler[ASPxClientDashboard]] = js.native
   /**
-       * For internal use.
-       */
-  var CustomizeMenuItems: ASPxClientEvent[ASPxClientDashboardCustomizeMenuItemsEventHandler[ASPxClientDashboard]] = js.native
-  /**
        * Occurs when a dashboard update is initiated.
        */
   var DashboardBeginUpdate: ASPxClientEvent[ASPxClientDashboardBeginUpdateEventHandler[ASPxClientDashboard]] = js.native
@@ -42,6 +38,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
        * Occurs after the dashboard update is performed.
        */
   var DashboardEndUpdate: ASPxClientEvent[ASPxClientDashboardEndUpdateEventHandler[ASPxClientDashboard]] = js.native
+  var DashboardInitialized: ASPxClientEvent[ASPxClientDashboardInitializedEventHandler[ASPxClientDashboard]] = js.native
   /**
        * Occurs after the state of the dashboard displayed in the ASPxClientDashboard is changed.
        */
@@ -110,6 +107,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
        * Allows you to access underlying UI/Data Visualization widgets.
        */
   var ItemWidgetUpdating: ASPxClientEvent[ASPxClientDashboardItemWidgetUpdatingEventHandler[ASPxClientDashboard]] = js.native
+  var SelectedTabPageChanged: ASPxClientEvent[ASPxClientSelectedTabPageChangedEventHandler[ASPxClientDashboard]] = js.native
   /**
        * Returns whether or not the specified master filter can be cleared in the current state.
        * @param itemName A string that specifies the component name of the master filter item.
@@ -335,18 +333,11 @@ trait ASPxClientDashboard extends ASPxClientControl {
        * @param itemName A String that specifies a component name of the master filter item.
        */
   def GetCurrentSelection(itemName: java.lang.String): js.Array[ASPxClientDashboardItemDataAxisPointTuple] = js.native
-  /**
-       * Gets the DashboardControl object that is the client-side part of the Web Dashboard.
-       */
-  def GetDashboardControl(): DashboardControl = js.native
+  def GetDashboardControl(): js.Object = js.native
   /**
        * Gets the identifier of the dashboard that is displayed in the ASPxClientDashboard.
        */
   def GetDashboardId(): java.lang.String = js.native
-  /**
-       * Gets the name of the dashboard that is displayed in the ASPxClientDashboard.
-       */
-  def GetDashboardName(): java.lang.String = js.native
   /**
        * Gets the state of the dashboard displayed in the ASPxClientDashboard.
        */
@@ -373,6 +364,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
        * @param itemName A string that specifies the component name of the dashboard item.
        */
   def GetItemData(itemName: java.lang.String): ASPxClientDashboardItemData = js.native
+  def GetMaximizedDashboardItemName(): java.lang.String = js.native
   /**
        * Returns dashboard parameter settings and metadata.
        */
@@ -381,6 +373,16 @@ trait ASPxClientDashboard extends ASPxClientControl {
        * Allows you to obtain options related to exporting a dashboard/dashboard item to the PDF format.
        */
   def GetPdfExportOptions(): DashboardPdfExportOptions = js.native
+  /**
+       * 
+       * @param tabContainerName 
+       */
+  def GetSelectedTabPage(tabContainerName: java.lang.String): java.lang.String = js.native
+  /**
+       * 
+       * @param tabContainerName 
+       */
+  def GetSelectedTabPageIndex(tabContainerName: java.lang.String): scala.Double = js.native
   /**
        * Gets the current working mode of the Web Dashboard.
        */
@@ -393,11 +395,17 @@ trait ASPxClientDashboard extends ASPxClientControl {
        * Closes the Dashboard Parameters dialog.
        */
   def HideParametersDialog(): scala.Unit = js.native
+  def IsDesignMode(): scala.Boolean = js.native
   /**
        * Loads a dashboard with the specified identifier from the dashboard storage.
        * @param dashboardId A string value that specifies the dashboard identifier.
        */
   def LoadDashboard(dashboardId: java.lang.String): scala.Unit = js.native
+  /**
+       * 
+       * @param itemName 
+       */
+  def MaximizeDashboardItem(itemName: java.lang.String): scala.Unit = js.native
   /**
        * Sends a callback to the server and generates the server-side CustomDataCallback event, passing it the specified argument.
        * @param parameter A string value that represents any information that needs to be sent to the server-side CustomDataCallback event.
@@ -435,6 +443,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
        * @param itemName An array of string values that specify the component names of the dashboard items to be refreshed.
        */
   def Refresh(itemName: js.Array[java.lang.String]): scala.Unit = js.native
+  def ReloadData(): scala.Unit = js.native
   /**
        * Requests underlying data for the specified dashboard item.
        * @param itemName A string that specifies the component name of the dashboard item.
@@ -446,6 +455,7 @@ trait ASPxClientDashboard extends ASPxClientControl {
     args: ASPxClientDashboardItemRequestUnderlyingDataParameters,
     onCompleted: ASPxClientDashboardItemRequestUnderlyingDataCompleted
   ): scala.Unit = js.native
+  def RestoreDashboardItem(): scala.Unit = js.native
   /**
        * Saves a current dashboard to the dashboard storage.
        */
@@ -506,6 +516,17 @@ trait ASPxClientDashboard extends ASPxClientControl {
        * @param range A ASPxClientDashboardRangeFilterSelection object that specifies a range to be selected.
        */
   def SetRange(itemName: java.lang.String, range: ASPxClientDashboardRangeFilterSelection): scala.Unit = js.native
+  /**
+       * 
+       * @param tabPageName 
+       */
+  def SetSelectedTabPage(tabPageName: java.lang.String): scala.Unit = js.native
+  /**
+       * 
+       * @param tabContainerName 
+       * @param index 
+       */
+  def SetSelectedTabPageIndex(tabContainerName: java.lang.String, index: scala.Double): scala.Unit = js.native
   /**
        * Invokes the dialog that allows end-users to export the entire dashboard to the specified format.
        * @param format A string value that specifies the format. For instance, you can use 'PDF', 'Image', or 'Excel'.

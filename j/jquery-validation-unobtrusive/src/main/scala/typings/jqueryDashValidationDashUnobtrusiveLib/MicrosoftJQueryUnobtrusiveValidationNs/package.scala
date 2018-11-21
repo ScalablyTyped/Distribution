@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object MicrosoftJQueryUnobtrusiveValidationNs {
-  type JQuerySelector = java.lang.String | stdLib.Document | stdLib.Element | jqueryDotValidationLib.JQuery
+  type JQuerySelector = java.lang.String | stdLib.Document | stdLib.Element | jqueryLib.JQuery[stdLib.HTMLElement]
 }

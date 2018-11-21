@@ -19,9 +19,17 @@ trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
        */
   var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientComboBox]] = js.native
   /**
+       * Enables you to highlight the filtered items.
+       */
+  var CustomHighlighting: ASPxClientEvent[ASPxClientListEditCustomHighlightingEventHandler[ASPxClientComboBox]] = js.native
+  /**
        * Occurs on the client side after a callback's server-side processing has been completed.
        */
   var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientComboBox]] = js.native
+  /**
+       * Fires before the filtering is executed.
+       */
+  var ItemFiltering: ASPxClientEvent[ASPxClientListEditItemFilteringEventHandler[ASPxClientComboBox]] = js.native
   /**
        * Occurs on the client side after a different item in the list has been selected (focus has been moved from one item to another).
        */
@@ -230,5 +238,11 @@ trait ASPxClientComboBox extends ASPxClientDropDownEditBase {
        * @param item An ASPxClientListEditItem object that specifies the item to select.
        */
   def SetSelectedItem(item: ASPxClientListEditItem): scala.Unit = js.native
+  /**
+       * Specifies the text displayed within the editor's edit box.
+       * @param text A string value specifying the editor's text.
+       * @param applyFilter true, to use the specified text as a filter and apply it to the editor, otherwise, false.
+       */
+  def SetText(text: java.lang.String, applyFilter: scala.Boolean): scala.Unit = js.native
 }
 

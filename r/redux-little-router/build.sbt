@@ -1,25 +1,25 @@
 organization := "com.scalablytyped"
 name := "redux-little-router"
-version := "15.1.2-b1ec72"
+version := "15.1.2-a6c6e3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "csstype" % "2.5.7-8f5757",
-  "com.scalablytyped" %%% "history" % "4.7.2-dt-20181102Z-806809",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181109Z-67570f",
-  "com.scalablytyped" %%% "lodash_dot_assign" % "4.2-dt-20181102Z-47a6d5",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-806eaf",
-  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20181102Z-3c49da",
-  "com.scalablytyped" %%% "query-string" % "6.1-dt-20181102Z-d32e31",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-28281f",
-  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181102Z-1c0420",
-  "com.scalablytyped" %%% "react-redux" % "6.0.4-dt-20181102Z-30f5b8",
-  "com.scalablytyped" %%% "recompose" % "0.27-dt-20181116Z-353c3c",
-  "com.scalablytyped" %%% "redux" % "4.0.1-f538df",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "com.scalablytyped" %%% "symbol-observable" % "1.2.0-998bd5",
-  "com.scalablytyped" %%% "url-pattern" % "1.0.3-0a7eb8",
+  "com.scalablytyped" %%% "csstype" % "2.5.7-eccde3",
+  "com.scalablytyped" %%% "history" % "4.7.2-dt-20181018Z-c0d74d",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-caf0c5",
+  "com.scalablytyped" %%% "lodash_dot_assign" % "4.2-dt-20180910Z-972791",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
+  "com.scalablytyped" %%% "query-string" % "6.1-dt-20181013Z-3ac4f8",
+  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-44bb36",
+  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181009Z-140611",
+  "com.scalablytyped" %%% "react-redux" % "6.0.4-dt-20180915Z-e29384",
+  "com.scalablytyped" %%% "recompose" % "0.30-dt-20181120Z-814922",
+  "com.scalablytyped" %%% "redux" % "4.0.1-d3681d",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "symbol-observable" % "1.2.0-e6336c",
+  "com.scalablytyped" %%% "url-pattern" % "1.0.3-9b4883",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

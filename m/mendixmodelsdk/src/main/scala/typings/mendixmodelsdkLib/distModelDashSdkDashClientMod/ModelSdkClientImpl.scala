@@ -22,15 +22,6 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-      * Commits the contents of the working copy with the given id to the team server
-      */
-  def commit(
-    workingCopyId: java.lang.String,
-    message: java.lang.String,
-    callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[scala.Double],
-    errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
-  ): scala.Unit = js.native
-  /**
        * Create a new working copy on the model server, and reads it for immediate editing.
        */
   def createAndOpenWorkingCopy(
@@ -90,11 +81,6 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   def getAppEnvironmentStatus(
-    workingCopyId: java.lang.String,
-    callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IEnvironmentStatus],
-    errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
-  ): scala.Unit = js.native
-  def getAppEnvironmentStatusV2(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IEnvironmentStatus],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback

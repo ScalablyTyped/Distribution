@@ -20,10 +20,9 @@ trait IImageProps
        */
   var coverStyle: js.UndefOr[ImageCoverStyle] = js.undefined
   /**
-       * Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead and
+       * Deprecated at v1.3.6, to replace the src in case of errors, use onLoadingStateChange instead and
        * rerender the Image with a difference src.
-       * @deprecated Use `onLoadingStateChange` instead and
-       * rerender the Image with a difference src.
+       * @deprecated
        */
   var errorSrc: js.UndefOr[java.lang.String] = js.undefined
   /**

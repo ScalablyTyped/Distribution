@@ -99,7 +99,7 @@ package object tsNs {
   type IntersectionType = UnionOrIntersectionType
   type JSDocNamespaceBody = Identifier | JSDocNamespaceDeclaration
   type JSDocTypeReferencingNode = JSDocVariadicType | JSDocOptionalType | JSDocNullableType | JSDocNonNullableType
-  type JsDocSyntaxKind = SyntaxKind | KeywordSyntaxKind
+  type JsDocSyntaxKind = SyntaxKind
   /** @deprecated Use FileExtensionInfo instead. */
   type JsFileExtensionInfo = FileExtensionInfo
   type JsxAttributeLike = JsxAttribute | JsxSpreadAttribute
@@ -107,7 +107,6 @@ package object tsNs {
   type JsxOpeningLikeElement = JsxSelfClosingElement | JsxOpeningElement
   type JsxTagNameExpression = Identifier | ThisExpression | JsxTagNamePropertyAccess
   type JsxTokenSyntaxKind = SyntaxKind
-  type KeywordSyntaxKind = SyntaxKind
   type LogicalOperator = SyntaxKind
   type LogicalOperatorOrHigher = BitwiseOperatorOrHigher | LogicalOperator
   type MinusToken = Token[SyntaxKind]

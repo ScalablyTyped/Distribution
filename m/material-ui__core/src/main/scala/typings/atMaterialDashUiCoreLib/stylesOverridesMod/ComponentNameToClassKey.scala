@@ -16,7 +16,6 @@ trait ComponentNameToClassKey extends js.Object {
   var MuiButton: atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   var MuiButtonBase: atMaterialDashUiCoreLib.buttonbaseButtonBaseMod.ButtonBaseClassKey
   var MuiCard: atMaterialDashUiCoreLib.cardCardMod.CardClassKey
-  var MuiCardActionArea: atMaterialDashUiCoreLib.cardactionareaCardActionAreaMod.CardActionAreaClassKey
   var MuiCardActions: atMaterialDashUiCoreLib.cardactionsCardActionsMod.CardActionsClassKey
   var MuiCardContent: atMaterialDashUiCoreLib.cardcontentCardContentMod.CardContentClassKey
   var MuiCardHeader: atMaterialDashUiCoreLib.cardheaderCardHeaderMod.CardHeaderClassKey
@@ -87,8 +86,6 @@ trait ComponentNameToClassKey extends js.Object {
   var MuiTable: atMaterialDashUiCoreLib.tableTableMod.TableClassKey
   var MuiTableBody: atMaterialDashUiCoreLib.tablebodyTableBodyMod.TableBodyClassKey
   var MuiTableCell: atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellClassKey
-  var MuiTableFooter: atMaterialDashUiCoreLib.tablefooterTableFooterMod.TableFooterClassKey
-  var MuiTableHead: atMaterialDashUiCoreLib.tableheadTableHeadMod.TableHeadClassKey
   var MuiTablePagination: atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
   var MuiTableRow: atMaterialDashUiCoreLib.tablerowTableRowMod.TableRowClassKey
   var MuiTableSortLabel: atMaterialDashUiCoreLib.tablesortlabelTableSortLabelMod.TableSortLabelClassKey

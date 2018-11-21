@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 class NamedNode protected ()
   extends rdfDashJsLib.rdfDashJsMod.NamedNode {
   def this(iri: java.lang.String) = this()
-  var id: java.lang.String = js.native
+  val id: java.lang.String = js.native
   /**
        * Contains the constant "NamedNode".
        */
   /* CompleteClass */
   override var termType: rdfDashJsLib.rdfDashJsLibStrings.NamedNode = js.native
   @JSName("termType")
-  var termType_NamedNode: n3Lib.n3LibStrings.NamedNode = js.native
+  val termType_NamedNode: n3Lib.n3LibStrings.NamedNode = js.native
   /**
        * The IRI of the named node (example: `http://example.org/resource`)
        */

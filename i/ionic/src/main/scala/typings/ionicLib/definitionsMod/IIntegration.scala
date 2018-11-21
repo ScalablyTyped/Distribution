@@ -10,8 +10,8 @@ trait IIntegration extends js.Object {
   val archiveUrl: js.UndefOr[java.lang.String] = js.native
   val name: IntegrationName = js.native
   val summary: java.lang.String = js.native
-  def add(details: IntegrationAddDetails): stdLib.Promise[scala.Unit] = js.native
-  def add(details: IntegrationAddDetails, handlers: IntegrationAddHandlers): stdLib.Promise[scala.Unit] = js.native
+  def add(): stdLib.Promise[scala.Unit] = js.native
+  def add(opts: IIntegrationAddOptions): stdLib.Promise[scala.Unit] = js.native
   def disable(): stdLib.Promise[scala.Unit] = js.native
   def enable(): stdLib.Promise[scala.Unit] = js.native
   def getInfo(): stdLib.Promise[js.Array[InfoItem]] = js.native

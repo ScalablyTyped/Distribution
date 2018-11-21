@@ -15,4 +15,9 @@ package object contextMenusNs {
   /** The type of menu item. */
   type ItemType = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.normal | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.checkbox | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.radio | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.separator
   type _OnClickDataModifiers = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.Shift | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.Alt | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.Command | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.Ctrl | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.MacCtrl
+  /**
+       * ContextType to override, to allow menu items from other extensions in the menu. Currently only 'bookmark' and
+       * 'tab' are supported. showDefaults cannot be used with this option.
+       */
+  type _OverrideContextContext = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.bookmark | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.tab
 }

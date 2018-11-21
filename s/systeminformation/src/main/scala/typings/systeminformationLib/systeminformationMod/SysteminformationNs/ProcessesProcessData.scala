@@ -10,6 +10,7 @@ trait ProcessesProcessData extends js.Object {
   var command: java.lang.String
   var mem_rss: scala.Double
   var mem_vsz: scala.Double
+  var name: java.lang.String
   var nice: scala.Double
   var pcpu: scala.Double
   var pcpus: scala.Double

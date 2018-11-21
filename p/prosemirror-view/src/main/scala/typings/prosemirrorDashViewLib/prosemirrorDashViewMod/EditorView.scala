@@ -65,7 +65,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
   /**
      * The view's current [state](#state.EditorState).
      */
-  var state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] = js.native
+  var state: js.Any = js.native
   /**
      * Returns the viewport rectangle at a given document position. `left`
      * and `right` will be the same number, as this returns a flat
@@ -86,7 +86,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
      * This method is bound to the view instance, so that it can be
      * easily passed around.
      */
-  def dispatch(tr: prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S]): scala.Unit = js.native
+  def dispatch(tr: js.Any): scala.Unit = js.native
   /**
      * Find the DOM position that corresponds to the given document
      * position. Note that you should **not** mutate the editor's
@@ -113,10 +113,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
      * pass a different state.
      */
   @JSName("endOfTextblock")
-  def endOfTextblock_backward(
-    dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.backward,
-    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
-  ): scala.Boolean = js.native
+  def endOfTextblock_backward(dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.backward, state: js.Any): scala.Boolean = js.native
   /**
      * Find out whether the selection is at the end of a textblock when
      * moving in a given direction. When, for example, given `"left"`,
@@ -136,10 +133,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
      * pass a different state.
      */
   @JSName("endOfTextblock")
-  def endOfTextblock_down(
-    dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.down,
-    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
-  ): scala.Boolean = js.native
+  def endOfTextblock_down(dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.down, state: js.Any): scala.Boolean = js.native
   /**
      * Find out whether the selection is at the end of a textblock when
      * moving in a given direction. When, for example, given `"left"`,
@@ -159,10 +153,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
      * pass a different state.
      */
   @JSName("endOfTextblock")
-  def endOfTextblock_forward(
-    dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.forward,
-    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
-  ): scala.Boolean = js.native
+  def endOfTextblock_forward(dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.forward, state: js.Any): scala.Boolean = js.native
   /**
      * Find out whether the selection is at the end of a textblock when
      * moving in a given direction. When, for example, given `"left"`,
@@ -182,10 +173,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
      * pass a different state.
      */
   @JSName("endOfTextblock")
-  def endOfTextblock_left(
-    dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.left,
-    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
-  ): scala.Boolean = js.native
+  def endOfTextblock_left(dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.left, state: js.Any): scala.Boolean = js.native
   /**
      * Find out whether the selection is at the end of a textblock when
      * moving in a given direction. When, for example, given `"left"`,
@@ -205,10 +193,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
      * pass a different state.
      */
   @JSName("endOfTextblock")
-  def endOfTextblock_right(
-    dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.right,
-    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
-  ): scala.Boolean = js.native
+  def endOfTextblock_right(dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.right, state: js.Any): scala.Boolean = js.native
   /**
      * Find out whether the selection is at the end of a textblock when
      * moving in a given direction. When, for example, given `"left"`,
@@ -228,10 +213,7 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
      * pass a different state.
      */
   @JSName("endOfTextblock")
-  def endOfTextblock_up(
-    dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.up,
-    state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
-  ): scala.Boolean = js.native
+  def endOfTextblock_up(dir: prosemirrorDashViewLib.prosemirrorDashViewLibStrings.up, state: js.Any): scala.Boolean = js.native
   /**
      * Focus the editor.
      */
@@ -314,6 +296,6 @@ class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
      * Update the editor's `state` prop, without touching any of the
      * other props.
      */
-  def updateState(state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): scala.Unit = js.native
+  def updateState(state: js.Any): scala.Unit = js.native
 }
 

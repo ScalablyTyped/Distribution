@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class HttpExecutor[REQUEST] () extends js.Object {
   var handleResponse: js.Any = js.native
-  val maxRedirects: /* 10 */ scala.Double = js.native
+  val maxRedirects: scala.Double = js.native
   def addErrorAndTimeoutHandlers(request: js.Any, reject: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
   /* protected */ def addRedirectHandlers(
     request: js.Any,

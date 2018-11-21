@@ -431,14 +431,14 @@ trait ServiceCatalog
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
+     * Shares the specified portfolio with the specified account.
      */
   def createPortfolioShare(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
+     * Shares the specified portfolio with the specified account.
      */
   def createPortfolioShare(
     callback: js.Function2[
@@ -451,14 +451,14 @@ trait ServiceCatalog
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
+     * Shares the specified portfolio with the specified account.
      */
   def createPortfolioShare(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
+     * Shares the specified portfolio with the specified account.
      */
   def createPortfolioShare(
     params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.CreatePortfolioShareInput,
@@ -759,14 +759,14 @@ trait ServiceCatalog
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
+     * Stops sharing the specified portfolio with the specified account.
      */
   def deletePortfolioShare(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
+     * Stops sharing the specified portfolio with the specified account.
      */
   def deletePortfolioShare(
     callback: js.Function2[
@@ -779,14 +779,14 @@ trait ServiceCatalog
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
+     * Stops sharing the specified portfolio with the specified account.
      */
   def deletePortfolioShare(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
+     * Stops sharing the specified portfolio with the specified account.
      */
   def deletePortfolioShare(
     params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DeletePortfolioShareInput,
@@ -1125,47 +1125,6 @@ trait ServiceCatalog
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
-     */
-  def describePortfolioShareStatus(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
-     */
-  def describePortfolioShareStatus(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
-     */
-  def describePortfolioShareStatus(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
-     */
-  def describePortfolioShareStatus(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DescribePortfolioShareStatusOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1583,47 +1542,6 @@ trait ServiceCatalog
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
-     */
-  def disableAWSOrganizationsAccess(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
-     */
-  def disableAWSOrganizationsAccess(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
-     */
-  def disableAWSOrganizationsAccess(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
-     */
-  def disableAWSOrganizationsAccess(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.DisableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
      * Disassociates a previously associated principal ARN from a specified portfolio.
      */
   def disassociatePrincipalFromPortfolio(): awsDashSdkLib.libRequestMod.Request[
@@ -1796,47 +1714,6 @@ trait ServiceCatalog
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
-     */
-  def enableAWSOrganizationsAccess(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
-     */
-  def enableAWSOrganizationsAccess(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
-     */
-  def enableAWSOrganizationsAccess(params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
-     */
-  def enableAWSOrganizationsAccess(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.EnableAWSOrganizationsAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
      * Provisions or modifies a product based on the resource changes for the specified plan.
      */
   def executeProvisionedProductPlan(): awsDashSdkLib.libRequestMod.Request[
@@ -1918,49 +1795,6 @@ trait ServiceCatalog
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ExecuteProvisionedProductServiceActionOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
-     */
-  def getAWSOrganizationsAccessStatus(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
-     */
-  def getAWSOrganizationsAccessStatus(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
-     */
-  def getAWSOrganizationsAccessStatus(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
-     */
-  def getAWSOrganizationsAccessStatus(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.GetAWSOrganizationsAccessStatusOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -2084,49 +1918,6 @@ trait ServiceCatalog
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListLaunchPathsOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
-     */
-  def listOrganizationPortfolioAccess(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
-     */
-  def listOrganizationPortfolioAccess(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
-     */
-  def listOrganizationPortfolioAccess(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessInput
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
-     */
-  def listOrganizationPortfolioAccess(
-    params: awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs.ListOrganizationPortfolioAccessOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

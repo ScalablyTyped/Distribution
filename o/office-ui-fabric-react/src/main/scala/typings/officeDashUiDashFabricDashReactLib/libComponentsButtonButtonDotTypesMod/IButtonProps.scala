@@ -29,9 +29,9 @@ trait IButtonProps
        */
   var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated at v1.2.3, to be removed at \>= v2.0.0. Use specific button component instead.
+       * Deprecated at v1.2.3, to be removed at >= v2.0.0. Use specific button component instead
        * @defaultvalue ButtonType.default
-       * @deprecated Use specific button component instead.
+       * @deprecated
        */
   var buttonType: js.UndefOr[ButtonType] = js.undefined
   /**
@@ -46,15 +46,14 @@ trait IButtonProps
   var data_IButtonProps: js.UndefOr[js.Any] = js.undefined
   /**
        * Style for the description text if applicable (for compound buttons.)
-       * Deprecated, use `secondaryText` instead.
-       * @deprecated Use `secondaryText` instead.
+       * @deprecated Use 'secondaryText' instead.
        */
   var description: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IStyle] = js.undefined
   /**
        * Method to provide the classnames to style a button.
        * The default value for this prop is the getClassnames func
        * defined in BaseButton.classnames.
-       * @defaultvalue getBaseButtonClassNames
+       * @default getBaseButtonClassNames
        */
   var getClassNames: js.UndefOr[
     js.Function10[
@@ -75,7 +74,7 @@ trait IButtonProps
        * Method to provide the classnames to style a button.
        * The default value for this prop is the getClassnames func
        * defined in BaseButton.classnames.
-       * @defaultvalue getBaseSplitButtonClassNames
+       * @default getBaseSplitButtonClassNames
        */
   var getSplitButtonClassNames: js.UndefOr[
     js.Function4[
@@ -153,8 +152,8 @@ trait IButtonProps
        */
   var onRenderIcon: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[IButtonProps]] = js.undefined
   /**
-       * Deprecated at v6.3.2, to be removed at \>= v7.0.0. Use `menuAs` instead.
-       * @deprecated Use `menuAs` instead.
+       * Deprecated at v6.3.2, to be removed at >= v7.0.0. Use menuAs instead.
+       * @deprecated
        */
   var onRenderMenu: js.UndefOr[
     atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[
@@ -179,7 +178,7 @@ trait IButtonProps
   var persistMenu: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Changes the visual presentation of the button to be emphasized (if defined)
-       * @defaultvalue false
+       * @default false
        */
   var primary: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -187,9 +186,9 @@ trait IButtonProps
        */
   var primaryDisabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Deprecated at v0.56.2, to be removed at \>= v1.0.0. Just pass in button props instead.
+       * Deprecated at v0.56.2, to be removed at >= v1.0.0. Just pass in button props instead;
        * they will be mixed into the button/anchor element rendered by the component.
-       * @deprecated Use button props instead.
+       * @deprecated
        */
   var rootProps: js.UndefOr[
     reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] | reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement]
@@ -227,7 +226,7 @@ trait IButtonProps
   var toggle: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Any custom data the developer wishes to associate with the menu item.
-       * Deprecated, use `checked` if setting state.
+       *
        * @deprecated unused, use `checked` if setting state.
        */
   var toggled: js.UndefOr[scala.Boolean] = js.undefined

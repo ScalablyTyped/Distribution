@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 
 trait ASPxClientAppointmentDeletingEventArgs extends ASPxClientCancelEventArgs {
   /**
-       * Gets client IDs of the appointments that are intended to be removed.
+       * Gets client IDs of the appointments to be removed.
        * Value: An array of client appointment identifiers, representing appointments passed for deletion.
        */
-  var appointmentIds: js.Array[js.Object]
+  var appointmentIds: js.Array[java.lang.String]
 }
 

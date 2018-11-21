@@ -26,6 +26,11 @@ trait ASPxClientImageSliderItem extends js.Object {
        */
   var index: scala.Double
   /**
+       * Gets whether the image slider's item is loaded.
+       * Value: true, is the item is loaded; otherwise, false.
+       */
+  var loaded: scala.Boolean
+  /**
        * Gets the name that uniquely identifies the image slider item.
        * Value: A string value that is the value assigned to the item's Name property.
        */

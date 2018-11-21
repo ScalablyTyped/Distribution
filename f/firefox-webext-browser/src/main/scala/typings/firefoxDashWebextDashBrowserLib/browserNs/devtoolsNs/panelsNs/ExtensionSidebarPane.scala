@@ -25,12 +25,6 @@ trait ExtensionSidebarPane extends js.Object {
            */
   var setHeight: js.UndefOr[js.Function1[/* height */ java.lang.String, scala.Unit]] = js.native
   /**
-           * Sets an HTML page to be displayed in the sidebar pane.
-           * @param path Relative path of an extension page to display within the sidebar.
-           * @deprecated Unsupported on Firefox at this time.
-           */
-  var setPage: js.UndefOr[js.Function1[/* path */ java.lang.String, scala.Unit]] = js.native
-  /**
            * Sets an expression that is evaluated within the inspected page. The result is displayed in the sidebar pane.
            * @param expression An expression to be evaluated in context of the inspected page. JavaScript objects and DOM
            *     nodes are displayed in an expandable tree similar to the console/watch.
@@ -58,5 +52,10 @@ trait ExtensionSidebarPane extends js.Object {
            * @param [rootTitle] An optional title for the root of the expression tree.
            */
   def setObject(jsonObject: java.lang.String, rootTitle: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  /**
+           * Sets an HTML page to be displayed in the sidebar pane.
+           * @param path Relative path of an extension page to display within the sidebar.
+           */
+  def setPage(path: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL): stdLib.Promise[_] = js.native
 }
 

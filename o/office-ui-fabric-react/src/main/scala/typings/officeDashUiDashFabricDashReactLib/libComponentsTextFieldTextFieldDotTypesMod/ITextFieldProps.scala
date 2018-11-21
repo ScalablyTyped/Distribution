@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 trait ITextFieldProps
   extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLInputElement | reactLib.HTMLTextAreaElement] {
   /**
-       * @deprecated Use `prefix` instead.
+       * @deprecated
+       * Deprecated; use prefix instead.
        */
   var addonString: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -18,7 +19,7 @@ trait ITextFieldProps
   var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Whether or not to auto adjust textField height. Applies only to multiline textfield.
-       * @defaultvalue false
+       * @default false
        */
   var autoAdjustHeight: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -31,12 +32,12 @@ trait ITextFieldProps
   ] = js.undefined
   /**
        * Whether or not the textfield is borderless.
-       * @defaultvalue false
+       * @default false
        */
   var borderless: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Deprecated property. Serves no function.
-       * @deprecated Serves no function.
+       * @deprecated
        */
   var componentId: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -52,7 +53,7 @@ trait ITextFieldProps
   var defaultValue_ITextFieldProps: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Text field will start to validate after users stop typing for `deferredValidationTime` milliseconds.
-       * @defaultvalue 200
+       * @default 200
        */
   var deferredValidationTime: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -64,7 +65,8 @@ trait ITextFieldProps
        */
   var errorMessage: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * @deprecated Use `iconProps` instead.
+       * @deprecated
+       * Deprecated; use iconProps instead.
        */
   var iconClass: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -86,21 +88,21 @@ trait ITextFieldProps
   var mask: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The character to show in place of unfilled characters of the mask.
-       * @defaultvalue '_'
+       * @default '_'
        */
   var maskChar: js.UndefOr[java.lang.String] = js.undefined
   /**
        * An object defining the format characters and corresponding regexp values.
-       * Default format characters: \{
+       * Default format characters: {
        *  '9': /[0-9]/,
        *  'a': /[a-zA-Z]/,
        *  '*': /[a-zA-Z0-9]/
-       * \}
+       * }
        */
   var maskFormat: js.UndefOr[ScalablyTyped.runtime.StringDictionary[stdLib.RegExp]] = js.undefined
   /**
        * Whether or not the textfield is a multiline textfield.
-       * @defaultvalue false
+       * @default false
        */
   var multiline: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -119,7 +121,7 @@ trait ITextFieldProps
     ]
   ] = js.undefined
   /**
-       * @deprecated Use `onChange` instead.
+       * @deprecated Use onChange instead.
        */
   var onChanged: js.UndefOr[js.Function1[/* newValue */ js.Any, scala.Unit]] = js.undefined
   /**
@@ -152,7 +154,8 @@ trait ITextFieldProps
     ]
   ] = js.undefined
   /**
-       * @deprecated Use `onRenderPrefix` instead.
+       * @deprecated
+       * Deprecated; use onRenderPrefix instead.
        */
   var onRenderAddon: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[ITextFieldProps]] = js.undefined
   /**
@@ -173,7 +176,7 @@ trait ITextFieldProps
   var onRenderSuffix: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[ITextFieldProps]] = js.undefined
   /**
        * Whether or not the multiline textfield is resizable.
-       * @defaultvalue true
+       * @default true
        */
   var resizable: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -192,22 +195,22 @@ trait ITextFieldProps
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
        * Whether or not the textfield is underlined.
-       * @defaultvalue false
+       * @default false
        */
   var underlined: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Run validation only on input focus
-       * @defaultvalue false
+       * @default false
        */
   var validateOnFocusIn: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Run validation only on input focus out
-       * @defaultvalue false
+       * @default false
        */
   var validateOnFocusOut: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Optional flag to disable onload validation
-       * @defaultvalue true
+       * @default true
        */
   var validateOnLoad: js.UndefOr[scala.Boolean] = js.undefined
   /**

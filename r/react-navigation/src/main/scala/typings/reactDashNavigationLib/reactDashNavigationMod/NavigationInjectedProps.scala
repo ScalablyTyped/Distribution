@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait NavigationInjectedProps[P] extends js.Object {
-  var navigation: NavigationScreenProp[NavigationState, P]
+  var navigation: NavigationScreenProp[NavigationRoute[P], P]
 }
 

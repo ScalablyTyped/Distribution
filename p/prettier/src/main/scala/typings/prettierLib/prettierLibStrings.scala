@@ -25,6 +25,9 @@ object prettierLibStrings {
   sealed trait angular extends js.Object
   
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait avoid extends js.Object
   
   @js.native
@@ -41,6 +44,12 @@ object prettierLibStrings {
   
   @js.native
   sealed trait concat extends js.Object
+  
+  @js.native
+  sealed trait cr extends js.Object
+  
+  @js.native
+  sealed trait crlf extends js.Object
   
   @js.native
   sealed trait css extends js.Object
@@ -67,6 +76,9 @@ object prettierLibStrings {
   sealed trait `if-break` extends js.Object
   
   @js.native
+  sealed trait ignore extends js.Object
+  
+  @js.native
   sealed trait indent extends js.Object
   
   @js.native
@@ -83,6 +95,9 @@ object prettierLibStrings {
   
   @js.native
   sealed trait less extends js.Object
+  
+  @js.native
+  sealed trait lf extends js.Object
   
   @js.native
   sealed trait line extends js.Object
@@ -121,6 +136,9 @@ object prettierLibStrings {
   sealed trait scss extends js.Object
   
   @js.native
+  sealed trait strict extends js.Object
+  
+  @js.native
   sealed trait typescript extends js.Object
   
   @js.native
@@ -135,12 +153,15 @@ object prettierLibStrings {
   def all: all = "all".asInstanceOf[all]
   def always: always = "always".asInstanceOf[always]
   def angular: angular = "angular".asInstanceOf[angular]
+  def auto: auto = "auto".asInstanceOf[auto]
   def avoid: avoid = "avoid".asInstanceOf[avoid]
   def babylon: babylon = "babylon".asInstanceOf[babylon]
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   def `break-parent`: `break-parent` = "break-parent".asInstanceOf[`break-parent`]
   def choice: choice = "choice".asInstanceOf[choice]
   def concat: concat = "concat".asInstanceOf[concat]
+  def cr: cr = "cr".asInstanceOf[cr]
+  def crlf: crlf = "crlf".asInstanceOf[crlf]
   def css: css = "css".asInstanceOf[css]
   def es5: es5 = "es5".asInstanceOf[es5]
   def fill: fill = "fill".asInstanceOf[fill]
@@ -149,12 +170,14 @@ object prettierLibStrings {
   def group: group = "group".asInstanceOf[group]
   def html: html = "html".asInstanceOf[html]
   def `if-break`: `if-break` = "if-break".asInstanceOf[`if-break`]
+  def ignore: ignore = "ignore".asInstanceOf[ignore]
   def indent: indent = "indent".asInstanceOf[indent]
   def int: int = "int".asInstanceOf[int]
   def json: json = "json".asInstanceOf[json]
   def `json-stringify`: `json-stringify` = "json-stringify".asInstanceOf[`json-stringify`]
   def json5: json5 = "json5".asInstanceOf[json5]
   def less: less = "less".asInstanceOf[less]
+  def lf: lf = "lf".asInstanceOf[lf]
   def line: line = "line".asInstanceOf[line]
   def `line-suffix`: `line-suffix` = "line-suffix".asInstanceOf[`line-suffix`]
   def `line-suffix-boundary`: `line-suffix-boundary` = "line-suffix-boundary".asInstanceOf[`line-suffix-boundary`]
@@ -167,6 +190,7 @@ object prettierLibStrings {
   def preserve: preserve = "preserve".asInstanceOf[preserve]
   def root: root = "root".asInstanceOf[root]
   def scss: scss = "scss".asInstanceOf[scss]
+  def strict: strict = "strict".asInstanceOf[strict]
   def typescript: typescript = "typescript".asInstanceOf[typescript]
   def vue: vue = "vue".asInstanceOf[vue]
   def yaml: yaml = "yaml".asInstanceOf[yaml]

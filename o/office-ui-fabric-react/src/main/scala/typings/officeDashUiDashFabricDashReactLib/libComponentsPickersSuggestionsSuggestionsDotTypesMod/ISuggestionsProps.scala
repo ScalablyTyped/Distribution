@@ -34,7 +34,7 @@ trait ISuggestionsProps[T]
   var isMostRecentlyUsedVisible: js.UndefOr[scala.Boolean] = js.native
   /**
        * Indicates if the text in resultsFooter or resultsFooterFull should be shown at the end of the suggestion list.
-       * @defaultvalue true.
+       * @default true.
        */
   var isResultsFooterVisible: js.UndefOr[scala.Boolean] = js.native
   /**

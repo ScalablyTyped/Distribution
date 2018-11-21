@@ -22,11 +22,18 @@ trait Anon_Imageurl extends js.Object {
   var is_default: js.UndefOr[scala.Boolean] = js.undefined
   var keyword: js.UndefOr[java.lang.String] = js.undefined
   var name: java.lang.String
+  /**
+                   * A list of optional search url parameters. This allows the additon of search url parameters based on
+                   * how the search is performed in Firefox.
+                   */
+  var params: js.UndefOr[js.Array[Anon_NamePurpose]] = js.undefined
   /** @deprecated Unsupported on Firefox. */
   var prepopulated_id: js.UndefOr[scala.Double] = js.undefined
   var search_url: java.lang.String
-  /** @deprecated Unsupported on Firefox at this time. */
+  /** POST parameters to the search_url as a query string. */
   var search_url_post_params: js.UndefOr[java.lang.String] = js.undefined
   var suggest_url: js.UndefOr[java.lang.String] = js.undefined
+  /** POST parameters to the suggest_url as a query string. */
+  var suggest_url_post_params: js.UndefOr[java.lang.String] = js.undefined
 }
 

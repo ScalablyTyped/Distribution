@@ -16,14 +16,14 @@ trait IMarqueeSelectionProps
   /**
        * Optional flag to restrict the drag rect to the root element, instead of allowing the drag
        * rect to start outside of the root element boundaries.
-       * @defaultvalue false
+       * @default false
        */
   var isDraggingConstrainedToRoot: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Optional flag to control the enabled state of marquee selection. This allows you to render
        * it and have events all ready to go, but conditionally disable it. That way transitioning
        * between enabled/disabled generate no difference in the DOM.
-       * @defaultvalue true
+       * @default true
        */
   var isEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**

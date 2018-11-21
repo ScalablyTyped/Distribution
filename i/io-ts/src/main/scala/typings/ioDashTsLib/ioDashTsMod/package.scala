@@ -21,7 +21,7 @@ package object ioDashTsMod {
   type OutputOfPartialProps[P /* <: AnyProps */] = ioDashTsLib.ioDashTsLibStrings.OutputOfPartialProps with P
   type OutputOfProps[P /* <: AnyProps */] = ioDashTsLib.ioDashTsLibStrings.OutputOfProps with P
   type PropsOf[T /* <: ioDashTsLib.Anon_Props */] = /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(props))) */js.Any
-  type Tagged[Tag /* <: java.lang.String */, A, O] = (InterfaceType[TaggedProps[Tag], A, O, mixed]) | (StrictType[TaggedProps[Tag], A, O, mixed]) | (TaggedRefinement[Tag, A, O]) | (TaggedUnion[Tag, A, O]) | (TaggedIntersection[Tag, A, O]) | (TaggedExact[Tag, A, O]) | (RecursiveType[js.Any, A, O, mixed])
+  type Tagged[Tag /* <: java.lang.String */, A, O] = (InterfaceType[TaggedProps[Tag], A, O, mixed]) | (StrictType[TaggedProps[Tag], A, O, mixed]) | (TaggedRefinement[Tag, A, O]) | (TaggedUnion[Tag, A, O]) | (TaggedIntersection[Tag, A, O]) | TaggedExact[Tag] | (RecursiveType[js.Any, A, O, mixed])
   type TaggedIntersectionArgument[Tag /* <: java.lang.String */] = (js.Array[Tagged[Tag, js.Any, js.Any]]) | (js.Tuple2[Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple2[Mixed, Tagged[Tag, js.Any, js.Any]]) | (js.Tuple3[Tagged[Tag, js.Any, js.Any], Mixed, Mixed]) | (js.Tuple3[Mixed, Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple3[Mixed, Mixed, Tagged[Tag, js.Any, js.Any]]) | (js.Tuple4[Tagged[Tag, js.Any, js.Any], Mixed, Mixed, Mixed]) | (js.Tuple4[Mixed, Tagged[Tag, js.Any, js.Any], Mixed, Mixed]) | (js.Tuple4[Mixed, Mixed, Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple4[Mixed, Mixed, Mixed, Tagged[Tag, js.Any, js.Any]]) | (js.Tuple5[Tagged[Tag, js.Any, js.Any], Mixed, Mixed, Mixed, Mixed]) | (js.Tuple5[Mixed, Tagged[Tag, js.Any, js.Any], Mixed, Mixed, Mixed]) | (js.Tuple5[Mixed, Mixed, Tagged[Tag, js.Any, js.Any], Mixed, Mixed]) | (js.Tuple5[Mixed, Mixed, Mixed, Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple5[Mixed, Mixed, Mixed, Mixed, Tagged[Tag, js.Any, js.Any]])
   type TaggedProps[Tag /* <: java.lang.String */] = ioDashTsLib.ioDashTsLibStrings.TaggedProps with js.Any
   type TypeOf[RT /* <: Any */] = /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
@@ -30,5 +30,7 @@ package object ioDashTsMod {
   type TypeOfProps[P /* <: AnyProps */] = ioDashTsLib.ioDashTsLibStrings.TypeOfProps with P
   type Validate[I, A] = js.Function2[/* i */ I, /* context */ Context, Validation[A]]
   type Validation[A] = fpDashTsLib.libEitherMod.Either[Errors, A]
-  type mixed = js.Any
+  type mixed = js.UndefOr[
+    ScalablyTyped.runtime.StringDictionary[js.Any] | js.Object | scala.Double | java.lang.String | scala.Boolean | js.Symbol | scala.Null | scala.Unit
+  ]
 }

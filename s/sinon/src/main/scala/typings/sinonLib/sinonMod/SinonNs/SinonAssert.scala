@@ -15,121 +15,121 @@ trait SinonAssert extends js.Object {
   /**
            * Passes if spy was always called with obj as its this value.
            */
-  def alwaysCalledOn(spy: SinonSpy, obj: js.Any): scala.Unit = js.native
+  def alwaysCalledOn(spy: SinonSpy[js.Array[_], _], obj: js.Any): scala.Unit = js.native
   /**
            * Passes if spy was always called with the provided arguments.
            * @param spy
            * @param args
            */
-  def alwaysCalledWith(spy: SinonSpy, args: js.Any*): scala.Unit = js.native
+  def alwaysCalledWith(spy: SinonSpy[js.Array[_], _], args: js.Any*): scala.Unit = js.native
   /**
            * Passes if spy was always called with the provided arguments and no others.
            */
-  def alwaysCalledWithExactly(spy: SinonSpy, args: js.Any*): scala.Unit = js.native
+  def alwaysCalledWithExactly(spy: SinonSpy[js.Array[_], _], args: js.Any*): scala.Unit = js.native
   /**
            * Passes if spy was always called with matching arguments.
            * This behaves the same way as sinon.assert.alwaysCalledWith(spy, sinon.match(arg1), sinon.match(arg2), ...).
            */
-  def alwaysCalledWithMatch(spy: SinonSpy, args: js.Any*): scala.Unit = js.native
+  def alwaysCalledWithMatch(spy: SinonSpy[js.Array[_], _], args: js.Any*): scala.Unit = js.native
   /**
            * Like threw, only required for all calls to the spy.
            */
-  def alwaysThrew(spy: SinonSpy): scala.Unit = js.native
+  def alwaysThrew(spy: SinonSpy[js.Array[_], _]): scala.Unit = js.native
   /**
            * Like threw, only required for all calls to the spy.
            */
-  def alwaysThrew(spy: SinonSpy, exception: java.lang.String): scala.Unit = js.native
+  def alwaysThrew(spy: SinonSpy[js.Array[_], _], exception: java.lang.String): scala.Unit = js.native
   /**
            * Like threw, only required for all calls to the spy.
            */
-  def alwaysThrew(spy: SinonSpy, exception: js.Any): scala.Unit = js.native
+  def alwaysThrew(spy: SinonSpy[js.Array[_], _], exception: js.Any): scala.Unit = js.native
   /**
            * Passes if spy was called exactly num times.
            */
-  def callCount(spy: SinonSpy, count: scala.Double): scala.Unit = js.native
+  def callCount(spy: SinonSpy[js.Array[_], _], count: scala.Double): scala.Unit = js.native
   /**
            * Passes if provided spies were called in the specified order.
            * @param spies
            */
-  def callOrder(spies: SinonSpy*): scala.Unit = js.native
+  def callOrder(spies: (SinonSpy[js.Array[_], _])*): scala.Unit = js.native
   /**
            * Passes if spy was called at least once.
            */
-  def called(spy: SinonSpy): scala.Unit = js.native
+  def called(spy: SinonSpy[js.Array[_], _]): scala.Unit = js.native
   /**
            * Passes if spy was ever called with obj as its this value.
            * It’s possible to assert on a dedicated spy call: sinon.assert.calledOn(spy.firstCall, arg1, arg2, ...);.
            */
-  def calledOn(spyOrSpyCall: SinonSpyCall, obj: js.Any): scala.Unit = js.native
+  def calledOn(spyOrSpyCall: SinonSpyCall[js.Array[_], _], obj: js.Any): scala.Unit = js.native
   /**
            * Passes if spy was ever called with obj as its this value.
            * It’s possible to assert on a dedicated spy call: sinon.assert.calledOn(spy.firstCall, arg1, arg2, ...);.
            */
-  def calledOn(spyOrSpyCall: SinonSpy, obj: js.Any): scala.Unit = js.native
+  def calledOn(spyOrSpyCall: SinonSpy[js.Array[_], _], obj: js.Any): scala.Unit = js.native
   /**
            * Passes if spy was called once and only once.
            */
-  def calledOnce(spy: SinonSpy): scala.Unit = js.native
+  def calledOnce(spy: SinonSpy[js.Array[_], _]): scala.Unit = js.native
   /**
            * Passes if spy was called exactly three times.
            */
-  def calledThrice(spy: SinonSpy): scala.Unit = js.native
+  def calledThrice(spy: SinonSpy[js.Array[_], _]): scala.Unit = js.native
   /**
            * Passes if spy was called exactly twice.
            */
-  def calledTwice(spy: SinonSpy): scala.Unit = js.native
+  def calledTwice(spy: SinonSpy[js.Array[_], _]): scala.Unit = js.native
   /**
            * Passes if spy was called with the provided arguments.
            * It’s possible to assert on a dedicated spy call: sinon.assert.calledWith(spy.firstCall, arg1, arg2, ...);.
            * @param spyOrSpyCall
            * @param args
            */
-  def calledWith(spyOrSpyCall: SinonSpyCall, args: js.Any*): scala.Unit = js.native
+  def calledWith(spyOrSpyCall: SinonSpyCall[js.Array[_], _], args: js.Any*): scala.Unit = js.native
   /**
            * Passes if spy was called with the provided arguments.
            * It’s possible to assert on a dedicated spy call: sinon.assert.calledWith(spy.firstCall, arg1, arg2, ...);.
            * @param spyOrSpyCall
            * @param args
            */
-  def calledWith(spyOrSpyCall: SinonSpy, args: js.Any*): scala.Unit = js.native
+  def calledWith(spyOrSpyCall: SinonSpy[js.Array[_], _], args: js.Any*): scala.Unit = js.native
   /**
            * Passes if spy was called with the provided arguments and no others.
            * It’s possible to assert on a dedicated spy call: sinon.assert.calledWithExactly(spy.getCall(1), arg1, arg2, ...);.
            * @param spyOrSpyCall
            * @param args
            */
-  def calledWithExactly(spyOrSpyCall: SinonSpyCall, args: js.Any*): scala.Unit = js.native
+  def calledWithExactly(spyOrSpyCall: SinonSpyCall[js.Array[_], _], args: js.Any*): scala.Unit = js.native
   /**
            * Passes if spy was called with the provided arguments and no others.
            * It’s possible to assert on a dedicated spy call: sinon.assert.calledWithExactly(spy.getCall(1), arg1, arg2, ...);.
            * @param spyOrSpyCall
            * @param args
            */
-  def calledWithExactly(spyOrSpyCall: SinonSpy, args: js.Any*): scala.Unit = js.native
+  def calledWithExactly(spyOrSpyCall: SinonSpy[js.Array[_], _], args: js.Any*): scala.Unit = js.native
   /**
            * Passes if spy was called with matching arguments.
            * This behaves the same way as sinon.assert.calledWith(spy, sinon.match(arg1), sinon.match(arg2), ...).
            * It’s possible to assert on a dedicated spy call: sinon.assert.calledWithMatch(spy.secondCall, arg1, arg2, ...);.
            */
-  def calledWithMatch(spyOrSpyCall: SinonSpyCall, args: js.Any*): scala.Unit = js.native
+  def calledWithMatch(spyOrSpyCall: SinonSpyCall[js.Array[_], _], args: js.Any*): scala.Unit = js.native
   /**
            * Passes if spy was called with matching arguments.
            * This behaves the same way as sinon.assert.calledWith(spy, sinon.match(arg1), sinon.match(arg2), ...).
            * It’s possible to assert on a dedicated spy call: sinon.assert.calledWithMatch(spy.secondCall, arg1, arg2, ...);.
            */
-  def calledWithMatch(spyOrSpyCall: SinonSpy, args: js.Any*): scala.Unit = js.native
+  def calledWithMatch(spyOrSpyCall: SinonSpy[js.Array[_], _], args: js.Any*): scala.Unit = js.native
   /**
            * Passes if spy was called with the new operator.
            * It’s possible to assert on a dedicated spy call: sinon.assert.calledWithNew(spy.secondCall, arg1, arg2, ...);.
            * @param spyOrSpyCall
            */
-  def calledWithNew(spyOrSpyCall: SinonSpy): scala.Unit = js.native
+  def calledWithNew(spyOrSpyCall: SinonSpy[js.Array[_], _]): scala.Unit = js.native
   /**
            * Passes if spy was called with the new operator.
            * It’s possible to assert on a dedicated spy call: sinon.assert.calledWithNew(spy.secondCall, arg1, arg2, ...);.
            * @param spyOrSpyCall
            */
-  def calledWithNew(spyOrSpyCall: SinonSpyCall): scala.Unit = js.native
+  def calledWithNew(spyOrSpyCall: SinonSpyCall[js.Array[_], _]): scala.Unit = js.native
   /**
            * Exposes assertions into another object, to better integrate with the test framework.
            * For instance, JsTestDriver uses global assertions, and to make Sinon.JS assertions appear alongside them, you can do.
@@ -169,21 +169,21 @@ trait SinonAssert extends js.Object {
            * @param spy
            * @param args
            */
-  def neverCalledWith(spy: SinonSpy, args: js.Any*): scala.Unit = js.native
+  def neverCalledWith(spy: SinonSpy[js.Array[_], _], args: js.Any*): scala.Unit = js.native
   /**
            * Passes if spy was never called with matching arguments.
            * This behaves the same way as sinon.assert.neverCalledWith(spy, sinon.match(arg1), sinon.match(arg2), ...).
            * @param spy
            * @param args
            */
-  def neverCalledWithMatch(spy: SinonSpy, args: js.Any*): scala.Unit = js.native
+  def neverCalledWithMatch(spy: SinonSpy[js.Array[_], _], args: js.Any*): scala.Unit = js.native
    // Overridable
   // Methods
   /**
            * Passes if spy was never called
            * @param spy
            */
-  def notCalled(spy: SinonSpy): scala.Unit = js.native
+  def notCalled(spy: SinonSpy[js.Array[_], _]): scala.Unit = js.native
    // Overridable
   /**
            * Called every time assertion passes.
@@ -193,34 +193,34 @@ trait SinonAssert extends js.Object {
   /**
            * Passes if spy threw any exception.
            */
-  def threw(spyOrSpyCall: SinonSpy): scala.Unit = js.native
+  def threw(spyOrSpyCall: SinonSpy[js.Array[_], _]): scala.Unit = js.native
   /**
            * Passes if spy threw any exception.
            */
-  def threw(spyOrSpyCall: SinonSpyCall): scala.Unit = js.native
+  def threw(spyOrSpyCall: SinonSpyCall[js.Array[_], _]): scala.Unit = js.native
   /**
            * Passes if spy threw the given exception.
            * The exception is an actual object.
            * It’s possible to assert on a dedicated spy call: sinon.assert.threw(spy.thirdCall, exception);.
            */
-  def threw(spyOrSpyCall: SinonSpyCall, exception: java.lang.String): scala.Unit = js.native
+  def threw(spyOrSpyCall: SinonSpyCall[js.Array[_], _], exception: java.lang.String): scala.Unit = js.native
   /**
            * Passes if spy threw the given exception.
            * The exception is a String denoting its type.
            * It’s possible to assert on a dedicated spy call: sinon.assert.threw(spy.thirdCall, exception);.
            */
-  def threw(spyOrSpyCall: SinonSpyCall, exception: js.Any): scala.Unit = js.native
+  def threw(spyOrSpyCall: SinonSpyCall[js.Array[_], _], exception: js.Any): scala.Unit = js.native
   /**
            * Passes if spy threw the given exception.
            * The exception is an actual object.
            * It’s possible to assert on a dedicated spy call: sinon.assert.threw(spy.thirdCall, exception);.
            */
-  def threw(spyOrSpyCall: SinonSpy, exception: java.lang.String): scala.Unit = js.native
+  def threw(spyOrSpyCall: SinonSpy[js.Array[_], _], exception: java.lang.String): scala.Unit = js.native
   /**
            * Passes if spy threw the given exception.
            * The exception is a String denoting its type.
            * It’s possible to assert on a dedicated spy call: sinon.assert.threw(spy.thirdCall, exception);.
            */
-  def threw(spyOrSpyCall: SinonSpy, exception: js.Any): scala.Unit = js.native
+  def threw(spyOrSpyCall: SinonSpy[js.Array[_], _], exception: js.Any): scala.Unit = js.native
 }
 

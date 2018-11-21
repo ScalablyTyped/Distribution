@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "kuromoji"
-version := "0.1-dt-20181102Z-735097"
+version := "0.1-dt-20180910Z-3616f3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "doublearray" % "0.0-unknown-dt-20181102Z-28d818",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "doublearray" % "0.0-unknown-dt-20180910Z-d7b981",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -18,7 +18,7 @@ class Config () extends js.Object {
 @js.native
 object Config extends js.Object {
   def current(): parseLib.ParseNs.Config = js.native
-  def get(): parseLib.ParseNs.Promise[parseLib.ParseNs.Config] = js.native
-  def get(options: parseLib.ParseNs.SuccessFailureOptions): parseLib.ParseNs.Promise[parseLib.ParseNs.Config] = js.native
+  def get(): stdLib.Promise[parseLib.ParseNs.Config] = js.native
+  def get(options: parseLib.ParseNs.SuccessFailureOptions): stdLib.Promise[parseLib.ParseNs.Config] = js.native
 }
 

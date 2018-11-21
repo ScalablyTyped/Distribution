@@ -5,7 +5,8 @@
 //                 Natan Vivo <https://github.com/nvivo>,
 //                 Sven Tschui <https://github.com/sventschui>,
 //                 Volker Nauruhn <https://github.com/razorness>,
-//                 Ard Timmerman <https://github.com/confususs>
+//                 Ard Timmerman <https://github.com/confususs>,
+//                 J. Joe Koullas <https://github.com/jjoekoullas>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 ```

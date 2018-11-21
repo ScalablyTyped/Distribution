@@ -1,23 +1,23 @@
 organization := "com.scalablytyped"
 name := "connect-mongo"
-version := "0.0-unknown-dt-20181102Z-a9aa73"
+version := "0.0-unknown-dt-20180910Z-beb332"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20181102Z-5991c4",
-  "com.scalablytyped" %%% "bson" % "1.0.6-dt-20181102Z-f13572",
-  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20181102Z-210269",
-  "com.scalablytyped" %%% "express" % "4.16-dt-20181102Z-d3111c",
-  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20181102Z-8da2fa",
-  "com.scalablytyped" %%% "express-session" % "1.15-dt-20181102Z-2dc44a",
-  "com.scalablytyped" %%% "mime" % "2.0-dt-20181102Z-16ee55",
-  "com.scalablytyped" %%% "mongodb" % "v3.1-dt-20181102Z-036bcc",
-  "com.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181109Z-6d074f",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-806eaf",
-  "com.scalablytyped" %%% "range-parser" % "1.2-dt-20181102Z-399813",
-  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20181102Z-c1072c",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-6ca2c5",
+  "com.scalablytyped" %%% "bson" % "1.0.6-dt-20180910Z-520075",
+  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-feceb2",
+  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-4d8764",
+  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-43b19a",
+  "com.scalablytyped" %%% "express-session" % "1.15-dt-20180910Z-959d2b",
+  "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-f9ab87",
+  "com.scalablytyped" %%% "mongodb" % "v3.1-dt-20181028Z-f23994",
+  "com.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181120Z-2ae889",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-dfa7aa",
+  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-5d47cf",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

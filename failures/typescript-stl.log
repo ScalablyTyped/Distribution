@@ -1,5 +1,5 @@
 [debug] PhaseRunner.scala:78 Success [id => typescript-stl, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/npm/node_modules/typescript-stl/lib/typescript-stl.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/npm/node_modules/typescript-stl),TsIdentLibrarySimple(typescript-stl)),TsIdentModule(None,List(typescript-stl))) [id => typescript-stl, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/typescript-stl/lib/typescript-stl.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/typescript-stl),TsIdentLibrarySimple(typescript-stl)),TsIdentModule(None,List(typescript-stl))) [id => typescript-stl, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(typescript-stl) [id => typescript-stl, phase => typescript] 
 [info ] ResolveTypeQueries.scala:94 Resolved TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(typescript-stl), TsIdentNamespace(std), TsIdentSimple(SetIterator)))) [id => typescript-stl, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(std) / TsDeclNamespace(base) / TsDeclClass(SetContainer) / TsMemberProperty(iterator) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:94 Resolved TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(typescript-stl), TsIdentNamespace(std), TsIdentSimple(MapIterator)))) [id => typescript-stl, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(std) / TsDeclNamespace(base) / TsDeclClass(MapContainer) / TsMemberProperty(iterator) / TsTypeQuery())] 
@@ -69,4 +69,3 @@ def find(val: typings.typescriptDashStlLib.stdNs.MapIterator[Key,T]): typings.ty
 def find(key: Key): typings.typescriptDashStlLib.stdNs.baseNs.XTreeNode[typings.typescriptDashStlLib.stdNs.MapIterator[Key,T]] at line 24
 have same type after erasure: (val: Object)typings.typescriptDashStlLib.stdNs.baseNs.XTreeNode,   def find(key: Key): XTreeNode[typescriptDashStlLib.stdNs.MapIterator[Key, T]] = js.native [id => typescript-stl, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [typescript-stl => Compilation failed] [id => typescript-stl, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [typescript-stl => Compilation failed] [id => typescript-stl, phase => publish] 

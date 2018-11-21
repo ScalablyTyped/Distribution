@@ -40,15 +40,15 @@ object CloudNsMembers extends js.Object {
     name: java.lang.String,
     func: js.Function2[/* request */ FunctionRequest, /* response */ FunctionResponse, scala.Unit]
   ): scala.Unit = js.native
-  def httpRequest(options: HTTPOptions): parseLib.ParseNs.Promise[HttpResponse] = js.native
+  def httpRequest(options: HTTPOptions): stdLib.Promise[HttpResponse] = js.native
   def job(name: java.lang.String): HttpResponse = js.native
   def job(
     name: java.lang.String,
     func: js.Function2[/* request */ JobRequest, /* status */ JobStatus, scala.Unit]
   ): HttpResponse = js.native
-  def run(name: java.lang.String): parseLib.ParseNs.Promise[_] = js.native
-  def run(name: java.lang.String, data: js.Any): parseLib.ParseNs.Promise[_] = js.native
-  def run(name: java.lang.String, data: js.Any, options: RunOptions): parseLib.ParseNs.Promise[_] = js.native
+  def run(name: java.lang.String): stdLib.Promise[_] = js.native
+  def run(name: java.lang.String, data: js.Any): stdLib.Promise[_] = js.native
+  def run(name: java.lang.String, data: js.Any, options: RunOptions): stdLib.Promise[_] = js.native
   def useMasterKey(): scala.Unit = js.native
 }
 

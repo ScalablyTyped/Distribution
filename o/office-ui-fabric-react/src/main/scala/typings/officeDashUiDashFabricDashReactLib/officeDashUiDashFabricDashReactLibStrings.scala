@@ -25,9 +25,6 @@ object officeDashUiDashFabricDashReactLibStrings {
   sealed trait assertive extends js.Object
   
   @js.native
-  sealed trait autoAdjustHeight extends js.Object
-  
-  @js.native
   sealed trait block extends js.Object
   
   @js.native
@@ -165,7 +162,6 @@ object officeDashUiDashFabricDashReactLibStrings {
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   def anySelected: anySelected = "anySelected".asInstanceOf[anySelected]
   def assertive: assertive = "assertive".asInstanceOf[assertive]
-  def autoAdjustHeight: autoAdjustHeight = "autoAdjustHeight".asInstanceOf[autoAdjustHeight]
   def block: block = "block".asInstanceOf[block]
   def borderless: borderless = "borderless".asInstanceOf[borderless]
   def bottom: bottom = "bottom".asInstanceOf[bottom]

@@ -16,6 +16,7 @@ trait Anon_DefaulttitleHidematches extends js.Object {
       firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.MatchPatternRestricted
     ]
   ] = js.undefined
+  var pinned: js.UndefOr[scala.Boolean] = js.undefined
   var show_matches: js.UndefOr[
     js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.MatchPattern]
   ] = js.undefined

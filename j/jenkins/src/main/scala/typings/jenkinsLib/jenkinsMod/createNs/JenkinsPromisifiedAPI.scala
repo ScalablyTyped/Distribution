@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait JenkinsPromisifiedAPI extends js.Object {
-  var build: jenkinsLib.Anon_StopName
+  var build: jenkinsLib.Anon_TermName
   var job: jenkinsLib.Anon_EnableNameCreate
   var node: jenkinsLib.Anon_EnableNameDisconnect
   var queue: jenkinsLib.Anon_CancelN

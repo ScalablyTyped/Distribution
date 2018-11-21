@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 @js.native
 class DefaultGraph ()
   extends rdfDashJsLib.rdfDashJsMod.DefaultGraph {
-  var id: java.lang.String = js.native
+  val id: java.lang.String = js.native
   /**
        * Contains the constant "DefaultGraph".
        */
   /* CompleteClass */
   override var termType: rdfDashJsLib.rdfDashJsLibStrings.DefaultGraph = js.native
   @JSName("termType")
-  var termType_DefaultGraph: n3Lib.n3LibStrings.DefaultGraph = js.native
+  val termType_DefaultGraph: n3Lib.n3LibStrings.DefaultGraph = js.native
   /**
        * Contains an empty string as constant value.
        */
   /* CompleteClass */
   override var value: rdfDashJsLib.rdfDashJsLibStrings.Empty = js.native
   @JSName("value")
-  var value_DefaultGraph: n3Lib.n3LibStrings.Empty = js.native
+  val value_DefaultGraph: n3Lib.n3LibStrings.Empty = js.native
   /**
        * @param other The term to compare with.
        * @return True if and only if other has termType "DefaultGraph".

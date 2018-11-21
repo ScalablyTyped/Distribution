@@ -23,7 +23,7 @@ trait ReturnType extends js.Object {
   var xit_Original: TestFn = js.native
   @JSName("xtest")
   var xtest_Original: TestFn = js.native
-  def describe(name: java.lang.String, fn: DescribeFn): scala.Unit = js.native
+  def describe(name: java.lang.String, fn: SyncCallback): scala.Unit = js.native
   def fdescribe(name: java.lang.String, fn: SyncCallback): scala.Unit = js.native
   def fit(name: java.lang.String, fn: TestCallback): scala.Unit = js.native
   def it(name: java.lang.String, fn: TestCallback): scala.Unit = js.native

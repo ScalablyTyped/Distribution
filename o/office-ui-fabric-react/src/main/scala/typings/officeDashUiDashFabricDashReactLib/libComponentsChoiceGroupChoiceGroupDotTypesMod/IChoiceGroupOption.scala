@@ -26,7 +26,7 @@ trait IChoiceGroupOption
   var imageAlt: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The width and height of the image in px for choice field.
-       * @defaultvalue \{ width: 32, height: 32 \}
+       * @default { width: 32, height: 32 }
        */
   var imageSize: js.UndefOr[officeDashUiDashFabricDashReactLib.Anon_Height] = js.undefined
   /**

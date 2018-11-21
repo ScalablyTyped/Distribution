@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "moment-business"
-version := "0.1-dt-20181102Z-428314"
+version := "0.1-dt-20180910Z-47ffb2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "moment" % "2.22.2-e2e353",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "moment" % "2.22.2-b3769a",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

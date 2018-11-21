@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class PushNotificationSubscriber () extends ClientObject {
   def get_customArgs(): java.lang.String = js.native
   def get_deviceAppInstanceId(): Guid = js.native
-  def get_lastModifiedTimeStamp(): stdLib.Date = js.native
-  def get_registrationTimeStamp(): stdLib.Date = js.native
+  def get_lastModifiedTimeStamp(): microsoftDashAjaxLib.Date = js.native
+  def get_registrationTimeStamp(): microsoftDashAjaxLib.Date = js.native
   def get_serviceToken(): java.lang.String = js.native
   def get_subscriberType(): java.lang.String = js.native
   def get_user(): User = js.native

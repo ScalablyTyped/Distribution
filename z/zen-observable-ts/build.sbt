@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "zen-observable-ts"
-version := "0.8.10-c8cd90"
+version := "0.8.10-36203d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "com.scalablytyped" %%% "zen-observable" % "0.8-dt-20181102Z-e5f69d",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-2ae465",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

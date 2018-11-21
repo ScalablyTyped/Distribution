@@ -12,7 +12,7 @@ class DataConvert () extends js.Object
 @JSGlobal("SP.DataConvert")
 @js.native
 object DataConvert extends js.Object {
-  def createLocalDateTime(milliseconds: scala.Double): stdLib.Date = js.native
+  def createLocalDateTime(milliseconds: scala.Double): microsoftDashAjaxLib.Date = js.native
   def createUnspecifiedDateTime(
     year: scala.Double,
     month: scala.Double,
@@ -21,16 +21,16 @@ object DataConvert extends js.Object {
     minute: scala.Double,
     second: scala.Double,
     milliseconds: scala.Double
-  ): stdLib.Date = js.native
-  def createUtcDateTime(milliseconds: scala.Double): stdLib.Date = js.native
+  ): microsoftDashAjaxLib.Date = js.native
+  def createUtcDateTime(milliseconds: scala.Double): microsoftDashAjaxLib.Date = js.native
   def fixupType(context: sharepointLib.SPNs.ClientRuntimeContext, obj: js.Any): js.Any = js.native
   def fixupTypes(context: sharepointLib.SPNs.ClientRuntimeContext, dict: js.Any): scala.Unit = js.native
-  def getDateTimeKind(datetime: stdLib.Date): sharepointLib.SPNs.DateTimeKind = js.native
+  def getDateTimeKind(datetime: microsoftDashAjaxLib.Date): sharepointLib.SPNs.DateTimeKind = js.native
   def invokeGetProperty(obj: js.Any, propName: java.lang.String): js.Any = js.native
   def invokeSetProperty(obj: js.Any, propName: java.lang.String, propValue: js.Any): scala.Unit = js.native
   def populateArray(context: sharepointLib.SPNs.ClientRuntimeContext, dest: js.Any, jsonArrayFromServer: js.Any): scala.Unit = js.native
   def populateDictionaryFromObject(dict: js.Any, parentNode: js.Any): scala.Unit = js.native
-  def specifyDateTimeKind(datetime: stdLib.Date, kind: sharepointLib.SPNs.DateTimeKind): scala.Unit = js.native
+  def specifyDateTimeKind(datetime: microsoftDashAjaxLib.Date, kind: sharepointLib.SPNs.DateTimeKind): scala.Unit = js.native
   def writeDictionaryToXml(
     writer: sharepointLib.SPNs.XmlWriter,
     dict: js.Any,

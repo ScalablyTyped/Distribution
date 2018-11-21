@@ -48,8 +48,12 @@ trait Matchers[T]
   def toBeLessThanOrEqual(expected: scala.Double): scala.Boolean = js.native
   def toBeLessThanOrEqual(expected: scala.Double, expectationFailOutput: js.Any): scala.Boolean = js.native
   def toBeNaN(): scala.Boolean = js.native
+  def toBeNegativeInfinity(): scala.Boolean = js.native
+  def toBeNegativeInfinity(expectationFailOutput: js.Any): scala.Boolean = js.native
   def toBeNull(): scala.Boolean = js.native
   def toBeNull(expectationFailOutput: js.Any): scala.Boolean = js.native
+  def toBePositiveInfinity(): scala.Boolean = js.native
+  def toBePositiveInfinity(expectationFailOutput: js.Any): scala.Boolean = js.native
   def toBeTruthy(): scala.Boolean = js.native
   def toBeTruthy(expectationFailOutput: js.Any): scala.Boolean = js.native
   def toBeUndefined(): scala.Boolean = js.native
@@ -74,6 +78,8 @@ trait Matchers[T]
   def toHaveBeenCalledBefore(expected: Spy): scala.Boolean = js.native
   def toHaveBeenCalledTimes(expected: scala.Double): scala.Boolean = js.native
   def toHaveBeenCalledWith(params: js.Any*): scala.Boolean = js.native
+  def toHaveClass(expected: js.Any): scala.Boolean = js.native
+  def toHaveClass(expected: js.Any, expectationFailOutput: js.Any): scala.Boolean = js.native
   def toMatch(expected: java.lang.String): scala.Boolean = js.native
   def toMatch(expected: java.lang.String, expectationFailOutput: js.Any): scala.Boolean = js.native
   def toMatch(expected: stdLib.RegExp): scala.Boolean = js.native
@@ -92,6 +98,7 @@ trait Matchers[T]
   ): scala.Boolean = js.native
   def toThrowError(message: java.lang.String): scala.Boolean = js.native
   def toThrowError(message: stdLib.RegExp): scala.Boolean = js.native
+  def toThrowMatching(predicate: js.Function1[/* thrown */ js.Any, scala.Boolean]): scala.Boolean = js.native
   /**
            * Add some context for an expect.
            * @param message - Additional context to show when the matcher fails

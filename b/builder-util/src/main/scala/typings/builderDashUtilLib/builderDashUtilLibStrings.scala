@@ -19,10 +19,16 @@ object builderDashUtilLibStrings {
   sealed trait armv7l extends js.Object
   
   @js.native
+  sealed trait base64 extends js.Object
+  
+  @js.native
   sealed trait debug extends js.Object
   
   @js.native
   sealed trait error extends js.Object
+  
+  @js.native
+  sealed trait hex extends js.Object
   
   @js.native
   sealed trait ia32 extends js.Object
@@ -46,8 +52,10 @@ object builderDashUtilLibStrings {
   def a: a = "a".asInstanceOf[a]
   def arm64: arm64 = "arm64".asInstanceOf[arm64]
   def armv7l: armv7l = "armv7l".asInstanceOf[armv7l]
+  def base64: base64 = "base64".asInstanceOf[base64]
   def debug: debug = "debug".asInstanceOf[debug]
   def error: error = "error".asInstanceOf[error]
+  def hex: hex = "hex".asInstanceOf[hex]
   def ia32: ia32 = "ia32".asInstanceOf[ia32]
   def info: info = "info".asInstanceOf[info]
   def notice: notice = "notice".asInstanceOf[notice]

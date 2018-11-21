@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_SvgDocument extends js.Object {
-  var ellipsis: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-  var eol: js.UndefOr[java.lang.String] = js.undefined
-  var separator: js.UndefOr[java.lang.String | js.Any] = js.undefined
+  var eol: java.lang.String
+  var separator: java.lang.String | js.Any
   var svgDocument: js.UndefOr[stdLib.SVGElement] = js.undefined
 }
 

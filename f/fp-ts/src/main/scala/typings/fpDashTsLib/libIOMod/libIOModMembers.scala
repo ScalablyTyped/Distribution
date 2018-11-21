@@ -17,6 +17,6 @@ object libIOModMembers extends js.Object {
     /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
     fpDashTsLib.libSemigroupMod.Semigroup[IO[js.Any]]
   ] = js.native
-  val io: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libMonadIOMod.MonadIO1[URI] = js.native
+  val io: fpDashTsLib.libMonadMod.Monad1[URI] = js.native
 }
 

@@ -12,8 +12,6 @@ abstract class NamespaceHelpFormatter[C /* <: atIonicCliDashFrameworkLib.definit
   var _fullName: js.UndefOr[java.lang.String] = js.native
   var _metadata: js.UndefOr[atIonicCliDashFrameworkLib.definitionsMod.NamespaceMetadata] = js.native
   val dotswidth: scala.Double = js.native
-  val location: atIonicCliDashFrameworkLib.definitionsMod.NamespaceLocateResult[C, N, M, I, O] = js.native
-  val namespace: N = js.native
   /**
        * Given command metadata, decide whether to keep or discard the command that
        * the metadata represents.
@@ -21,7 +19,14 @@ abstract class NamespaceHelpFormatter[C /* <: atIonicCliDashFrameworkLib.definit
        * @param meta: The metadata of the command.
        * @return `true` to keep, `false` to discard
        */
-  def filterCommandCallback(meta: atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]): stdLib.Promise[scala.Boolean] = js.native
+  var filterCommandCallback: js.UndefOr[
+    js.Function1[
+      /* meta */ atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O], 
+      stdLib.Promise[scala.Boolean]
+    ]
+  ] = js.native
+  val location: atIonicCliDashFrameworkLib.definitionsMod.NamespaceLocateResult[C, N, M, I, O] = js.native
+  val namespace: N = js.native
   def getNamespaceFullName(): stdLib.Promise[java.lang.String] = js.native
   def getNamespaceMetadata(): stdLib.Promise[atIonicCliDashFrameworkLib.definitionsMod.NamespaceMetadata] = js.native
 }

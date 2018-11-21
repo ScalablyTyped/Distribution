@@ -298,6 +298,9 @@ object firefoxDashWebextDashBrowserLibStrings {
   sealed trait contextMenus extends js.Object
   
   @js.native
+  sealed trait contextmenu extends js.Object
+  
+  @js.native
   sealed trait contextualIdentities extends js.Object
   
   @js.native
@@ -472,6 +475,9 @@ object firefoxDashWebextDashBrowserLibStrings {
   sealed trait history extends js.Object
   
   @js.native
+  sealed trait homepage extends js.Object
+  
+  @js.native
   sealed trait host extends js.Object
   
   @js.native
@@ -616,6 +622,9 @@ object firefoxDashWebextDashBrowserLibStrings {
   sealed trait menus extends js.Object
   
   @js.native
+  sealed trait menusDOToverrideContext extends js.Object
+  
+  @js.native
   sealed trait minimized extends js.Object
   
   @js.native
@@ -650,6 +659,9 @@ object firefoxDashWebextDashBrowserLibStrings {
   
   @js.native
   sealed trait news extends js.Object
+  
+  @js.native
+  sealed trait newtab extends js.Object
   
   @js.native
   sealed trait nntp extends js.Object
@@ -754,6 +766,9 @@ object firefoxDashWebextDashBrowserLibStrings {
   sealed trait popup extends js.Object
   
   @js.native
+  sealed trait pref extends js.Object
+  
+  @js.native
   sealed trait priority_low extends js.Object
   
   @js.native
@@ -775,6 +790,9 @@ object firefoxDashWebextDashBrowserLibStrings {
   sealed trait proxy extends js.Object
   
   @js.native
+  sealed trait purpose extends js.Object
+  
+  @js.native
   sealed trait radio extends js.Object
   
   @js.native
@@ -788,6 +806,9 @@ object firefoxDashWebextDashBrowserLibStrings {
   
   @js.native
   sealed trait reject_third_party extends js.Object
+  
+  @js.native
+  sealed trait reject_trackers extends js.Object
   
   @js.native
   sealed trait reload extends js.Object
@@ -836,6 +857,9 @@ object firefoxDashWebextDashBrowserLibStrings {
   
   @js.native
   sealed trait search extends js.Object
+  
+  @js.native
+  sealed trait searchbar extends js.Object
   
   @js.native
   sealed trait secure extends js.Object
@@ -1147,6 +1171,7 @@ object firefoxDashWebextDashBrowserLibStrings {
   def content_child: content_child = "content_child".asInstanceOf[content_child]
   def content_parent: content_parent = "content_parent".asInstanceOf[content_parent]
   def contextMenus: contextMenus = "contextMenus".asInstanceOf[contextMenus]
+  def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   def contextualIdentities: contextualIdentities = "contextualIdentities".asInstanceOf[contextualIdentities]
   def controllable_by_this_extension: controllable_by_this_extension = "controllable_by_this_extension".asInstanceOf[controllable_by_this_extension]
   def controlled_by_other_extensions: controlled_by_other_extensions = "controlled_by_other_extensions".asInstanceOf[controlled_by_other_extensions]
@@ -1205,6 +1230,7 @@ object firefoxDashWebextDashBrowserLibStrings {
   def granted: granted = "granted".asInstanceOf[granted]
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   def history: history = "history".asInstanceOf[history]
+  def homepage: homepage = "homepage".asInstanceOf[homepage]
   def host: host = "host".asInstanceOf[host]
   def identity: identity = "identity".asInstanceOf[identity]
   def idle: idle = "idle".asInstanceOf[idle]
@@ -1253,6 +1279,7 @@ object firefoxDashWebextDashBrowserLibStrings {
   def memory: memory = "memory".asInstanceOf[memory]
   def menupanel: menupanel = "menupanel".asInstanceOf[menupanel]
   def menus: menus = "menus".asInstanceOf[menus]
+  def menusDOToverrideContext: menusDOToverrideContext = "menus.overrideContext".asInstanceOf[menusDOToverrideContext]
   def minimized: minimized = "minimized".asInstanceOf[minimized]
   def mms: mms = "mms".asInstanceOf[mms]
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
@@ -1265,6 +1292,7 @@ object firefoxDashWebextDashBrowserLibStrings {
   def newBackgroundTab: newBackgroundTab = "newBackgroundTab".asInstanceOf[newBackgroundTab]
   def newForegroundTab: newForegroundTab = "newForegroundTab".asInstanceOf[newForegroundTab]
   def news: news = "news".asInstanceOf[news]
+  def newtab: newtab = "newtab".asInstanceOf[newtab]
   def nntp: nntp = "nntp".asInstanceOf[nntp]
   def `no-repeat`: `no-repeat` = "no-repeat".asInstanceOf[`no-repeat`]
   def no_restriction: no_restriction = "no_restriction".asInstanceOf[no_restriction]
@@ -1299,6 +1327,7 @@ object firefoxDashWebextDashBrowserLibStrings {
   def policy_not_diverse_scts: policy_not_diverse_scts = "policy_not_diverse_scts".asInstanceOf[policy_not_diverse_scts]
   def policy_not_enough_scts: policy_not_enough_scts = "policy_not_enough_scts".asInstanceOf[policy_not_enough_scts]
   def popup: popup = "popup".asInstanceOf[popup]
+  def pref: pref = "pref".asInstanceOf[pref]
   def priority_low: priority_low = "priority_low".asInstanceOf[priority_low]
   def priority_medium: priority_medium = "priority_medium".asInstanceOf[priority_medium]
   def privacy: privacy = "privacy".asInstanceOf[privacy]
@@ -1306,11 +1335,13 @@ object firefoxDashWebextDashBrowserLibStrings {
   def progress: progress = "progress".asInstanceOf[progress]
   def prompt: prompt = "prompt".asInstanceOf[prompt]
   def proxy: proxy = "proxy".asInstanceOf[proxy]
+  def purpose: purpose = "purpose".asInstanceOf[purpose]
   def radio: radio = "radio".asInstanceOf[radio]
   def regular: regular = "regular".asInstanceOf[regular]
   def regular_only: regular_only = "regular_only".asInstanceOf[regular_only]
   def reject_all: reject_all = "reject_all".asInstanceOf[reject_all]
   def reject_third_party: reject_third_party = "reject_third_party".asInstanceOf[reject_third_party]
+  def reject_trackers: reject_trackers = "reject_trackers".asInstanceOf[reject_trackers]
   def reload: reload = "reload".asInstanceOf[reload]
   def repeat: repeat = "repeat".asInstanceOf[repeat]
   def `repeat-x`: `repeat-x` = "repeat-x".asInstanceOf[`repeat-x`]
@@ -1327,6 +1358,7 @@ object firefoxDashWebextDashBrowserLibStrings {
   def screenshots: screenshots = "screenshots".asInstanceOf[screenshots]
   def script: script = "script".asInstanceOf[script]
   def search: search = "search".asInstanceOf[search]
+  def searchbar: searchbar = "searchbar".asInstanceOf[searchbar]
   def secure: secure = "secure".asInstanceOf[secure]
   def selection: selection = "selection".asInstanceOf[selection]
   def separator: separator = "separator".asInstanceOf[separator]

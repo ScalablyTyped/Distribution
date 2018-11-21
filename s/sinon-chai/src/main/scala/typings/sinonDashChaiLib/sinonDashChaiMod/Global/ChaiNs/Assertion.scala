@@ -37,21 +37,21 @@ trait Assertion extends js.Object {
   /**
                * Returns true if the spy was called after anotherSpy.
                */
-  def calledAfter(anotherSpy: sinonLib.sinonMod.SinonNs.SinonSpy): Assertion = js.native
+  def calledAfter(anotherSpy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]): Assertion = js.native
   /**
                * Returns true if the spy was called before anotherSpy.
                */
-  def calledBefore(anotherSpy: sinonLib.sinonMod.SinonNs.SinonSpy): Assertion = js.native
+  def calledBefore(anotherSpy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]): Assertion = js.native
   /**
-               * Returns true if spy was called after anotherSpy, and no spy calls occurred 
+               * Returns true if spy was called after anotherSpy, and no spy calls occurred
                * between anotherSpy and spy.
                */
-  def calledImmediatelyAfter(anotherSpy: sinonLib.sinonMod.SinonNs.SinonSpy): Assertion = js.native
+  def calledImmediatelyAfter(anotherSpy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]): Assertion = js.native
   /**
-               * Returns true if spy was called before anotherSpy, and no spy calls occurred 
+               * Returns true if spy was called before anotherSpy, and no spy calls occurred
                * between spy and anotherSpy.
                */
-  def calledImmediatelyBefore(anotherSpy: sinonLib.sinonMod.SinonNs.SinonSpy): Assertion = js.native
+  def calledImmediatelyBefore(anotherSpy: sinonLib.sinonMod.SinonNs.SinonSpy[js.Array[_], _]): Assertion = js.native
   /**
                * Returns true if context was this for this call.
                */

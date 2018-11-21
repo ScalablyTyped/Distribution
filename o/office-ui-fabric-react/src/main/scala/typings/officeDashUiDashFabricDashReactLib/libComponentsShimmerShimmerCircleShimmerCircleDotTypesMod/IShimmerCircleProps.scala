@@ -10,7 +10,7 @@ trait IShimmerCircleProps
   extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement] {
   /**
        * Use to set custom styling of the shimmerCircle borders.
-       * @deprecated Use `styles` prop to leverage mergeStyle API.
+       * @deprecated Use 'styles' prop to leverage mergeStyle API.
        */
   var borderStyle: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle] = js.undefined
   /**
@@ -20,7 +20,7 @@ trait IShimmerCircleProps
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IShimmerCircle]] = js.undefined
   /**
        * Sets the height of the circle.
-       * @defaultvalue 24px
+       * @default 24px
        */
   @JSName("height")
   var height_IShimmerCircleProps: js.UndefOr[scala.Double] = js.undefined

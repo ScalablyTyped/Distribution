@@ -45,74 +45,6 @@ object GreengrassNs extends js.Object {
   }
   
   
-  trait BulkDeployment extends js.Object {
-    /**
-         * The ARN of the bulk deployment.
-         */
-    var BulkDeploymentArn: js.UndefOr[__string] = js.undefined
-    /**
-         * The ID of the bulk deployment.
-         */
-    var BulkDeploymentId: js.UndefOr[__string] = js.undefined
-    /**
-         * The time, in ISO format, when the deployment was created.
-         */
-    var CreatedAt: js.UndefOr[__string] = js.undefined
-  }
-  
-  
-  trait BulkDeploymentMetrics extends js.Object {
-    /**
-         * The total number of records that returned a non-retryable error. For example, this can occur if a group record from the input file uses an invalid format or specifies a nonexistent group version, or if the execution role doesn't grant permission to deploy a group or group version.
-         */
-    var InvalidInputRecords: js.UndefOr[__integer] = js.undefined
-    /**
-         * The total number of group records from the input file that have been processed so far, or attempted.
-         */
-    var RecordsProcessed: js.UndefOr[__integer] = js.undefined
-    /**
-         * The total number of deployment attempts that returned a retryable error. For example, a retry is triggered if the attempt to deploy a group returns a throttling error. ''StartBulkDeployment'' retries a group deployment up to five times.
-         */
-    var RetryAttempts: js.UndefOr[__integer] = js.undefined
-  }
-  
-  
-  trait BulkDeploymentResult extends js.Object {
-    /**
-         * The time, in ISO format, when the deployment was created.
-         */
-    var CreatedAt: js.UndefOr[__string] = js.undefined
-    /**
-         * The ARN of the group deployment.
-         */
-    var DeploymentArn: js.UndefOr[__string] = js.undefined
-    /**
-         * The ID of the group deployment.
-         */
-    var DeploymentId: js.UndefOr[__string] = js.undefined
-    /**
-         * The current status of the group deployment: ''Pending'', ''InProgress'', ''Success'', or ''Failure''.
-         */
-    var DeploymentStatus: js.UndefOr[__string] = js.undefined
-    /**
-         * The type of the deployment.
-         */
-    var DeploymentType: js.UndefOr[DeploymentType] = js.undefined
-    /**
-         * Details about the error.
-         */
-    var ErrorDetails: js.UndefOr[ErrorDetails] = js.undefined
-    /**
-         * The error message for a failed deployment
-         */
-    var ErrorMessage: js.UndefOr[__string] = js.undefined
-    /**
-         * The ARN of the Greengrass group.
-         */
-    var GroupArn: js.UndefOr[__string] = js.undefined
-  }
-  
-  
   trait ClientApiVersions extends js.Object {
     /**
          * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
@@ -147,7 +79,7 @@ object GreengrassNs extends js.Object {
          */
     var CertificateArn: js.UndefOr[__string] = js.undefined
     /**
-         * A descriptive or arbitrary ID for the core. This value must be unique within the core definition version. Max length is 128 characters with pattern ''[a&#8209;zA&#8209;Z0&#8209;9:_&#8209;]+''.
+         * The ID of the core.
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
@@ -998,7 +930,7 @@ object GreengrassNs extends js.Object {
          */
     var CertificateArn: js.UndefOr[__string] = js.undefined
     /**
-         * A descriptive or arbitrary ID for the device. This value must be unique within the device definition version. Max length is 128 characters with pattern ''[a&#8209;zA&#8209;Z0&#8209;9:_&#8209;]+''.
+         * The ID of the device.
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
@@ -1069,7 +1001,7 @@ object GreengrassNs extends js.Object {
          */
     var FunctionConfiguration: js.UndefOr[FunctionConfiguration] = js.native
     /**
-         * A descriptive or arbitrary ID for the function. This value must be unique within the function definition version. Max length is 128 characters with pattern ''[a&#8209;zA&#8209;Z0&#8209;9:_&#8209;]+''.
+         * The ID of the Lambda function.
          */
     var Id: js.UndefOr[__string] = js.native
   }
@@ -1148,38 +1080,6 @@ object GreengrassNs extends js.Object {
          * The ARN of the role that is associated with the group.
          */
     var RoleArn: js.UndefOr[__string] = js.undefined
-  }
-  
-  
-  trait GetBulkDeploymentStatusRequest extends js.Object {
-    /**
-         * The ID of the bulk deployment.
-         */
-    var BulkDeploymentId: __string
-  }
-  
-  
-  trait GetBulkDeploymentStatusResponse extends js.Object {
-    /**
-         * Relevant metrics on input records processed during bulk deployment.
-         */
-    var BulkDeploymentMetrics: js.UndefOr[BulkDeploymentMetrics] = js.undefined
-    /**
-         * The status of the bulk deployment.
-         */
-    var BulkDeploymentStatus: js.UndefOr[BulkDeploymentStatus] = js.undefined
-    /**
-         * The time, in ISO format, when the deployment was created.
-         */
-    var CreatedAt: js.UndefOr[__string] = js.undefined
-    /**
-         * Error details
-         */
-    var ErrorDetails: js.UndefOr[ErrorDetails] = js.undefined
-    /**
-         * Error message
-         */
-    var ErrorMessage: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -1273,10 +1173,6 @@ object GreengrassNs extends js.Object {
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
-    /**
          * The version of the core definition version.
          */
     var Version: js.UndefOr[__string] = js.undefined
@@ -1297,7 +1193,7 @@ object GreengrassNs extends js.Object {
   
   trait GetDeploymentStatusResponse extends js.Object {
     /**
-         * The status of the deployment: ''Pending'', ''InProgress'', ''Success'', or ''Failure''.
+         * The status of the deployment.
          */
     var DeploymentStatus: js.UndefOr[__string] = js.undefined
     /**
@@ -1368,10 +1264,6 @@ object GreengrassNs extends js.Object {
          * The ID of the device definition version.
          */
     var DeviceDefinitionVersionId: __string
-    /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -1392,10 +1284,6 @@ object GreengrassNs extends js.Object {
          * The ID of the device definition version.
          */
     var Id: js.UndefOr[__string] = js.undefined
-    /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
     /**
          * The version of the device definition version.
          */
@@ -1452,10 +1340,6 @@ object GreengrassNs extends js.Object {
          * The ID of the function definition version.
          */
     var FunctionDefinitionVersionId: __string
-    /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -1476,10 +1360,6 @@ object GreengrassNs extends js.Object {
          * The ID of the function definition version.
          */
     var Id: js.UndefOr[__string] = js.undefined
-    /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
     /**
          * The version of the function definition version.
          */
@@ -1664,10 +1544,6 @@ object GreengrassNs extends js.Object {
          * The ID of the logger definition version.
          */
     var LoggerDefinitionVersionId: __string
-    /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -1828,10 +1704,6 @@ object GreengrassNs extends js.Object {
   
   trait GetSubscriptionDefinitionVersionRequest extends js.Object {
     /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
-    /**
          * The ID of the subscription definition.
          */
     var SubscriptionDefinitionId: __string
@@ -1859,10 +1731,6 @@ object GreengrassNs extends js.Object {
          * The ID of the subscription definition version.
          */
     var Id: js.UndefOr[__string] = js.undefined
-    /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
     /**
          * The version of the subscription definition version.
          */
@@ -1951,58 +1819,6 @@ object GreengrassNs extends js.Object {
          * The ARN of the subscription definition version for this group.
          */
     var SubscriptionDefinitionVersionArn: js.UndefOr[__string] = js.undefined
-  }
-  
-  
-  trait ListBulkDeploymentDetailedReportsRequest extends js.Object {
-    /**
-         * The ID of the bulk deployment.
-         */
-    var BulkDeploymentId: __string
-    /**
-         * The maximum number of results to be returned per request.
-         */
-    var MaxResults: js.UndefOr[__string] = js.undefined
-    /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
-  }
-  
-  
-  trait ListBulkDeploymentDetailedReportsResponse extends js.Object {
-    /**
-         * A list of the individual group deployments in the bulk deployment operation.
-         */
-    var Deployments: js.UndefOr[BulkDeploymentResults] = js.undefined
-    /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
-  }
-  
-  
-  trait ListBulkDeploymentsRequest extends js.Object {
-    /**
-         * The maximum number of results to be returned per request.
-         */
-    var MaxResults: js.UndefOr[__string] = js.undefined
-    /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
-  }
-  
-  
-  trait ListBulkDeploymentsResponse extends js.Object {
-    /**
-         * A list of bulk deployments.
-         */
-    var BulkDeployments: js.UndefOr[BulkDeployments] = js.undefined
-    /**
-         * The token for the next set of results, or ''null'' if there are no additional results.
-         */
-    var NextToken: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -2436,7 +2252,7 @@ object GreengrassNs extends js.Object {
          */
     var GroupOwnerSetting: js.UndefOr[GroupOwnerSetting] = js.undefined
     /**
-         * The local absolute path of the volume resource on the host. The source path for a volume resource type cannot start with ''/proc'' or ''/sys''.
+         * The local absolute path of the volume resource on the host. The source path for a volume resource type cannot start with ''/sys''.
          */
     var SourcePath: js.UndefOr[__string] = js.undefined
   }
@@ -2448,7 +2264,7 @@ object GreengrassNs extends js.Object {
          */
     var Component: js.UndefOr[LoggerComponent] = js.undefined
     /**
-         * A descriptive or arbitrary ID for the logger. This value must be unique within the logger definition version. Max length is 128 characters with pattern ''[a&#8209;zA&#8209;Z0&#8209;9:_&#8209;]+''.
+         * The id of the logger.
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
@@ -2582,48 +2398,9 @@ object GreengrassNs extends js.Object {
   }
   
   
-  trait StartBulkDeploymentRequest extends js.Object {
-    /**
-         * A client token used to correlate requests and responses.
-         */
-    var AmznClientToken: js.UndefOr[__string] = js.undefined
-    /**
-         * The ARN of the execution role to associate with the bulk deployment operation. This IAM role must allow the ''greengrass:CreateDeployment'' action for all group versions that are listed in the input file. This IAM role must have access to the S3 bucket containing the input file.
-         */
-    var ExecutionRoleArn: js.UndefOr[__string] = js.undefined
-    /**
-         * The URI of the input file contained in the S3 bucket. The execution role must have ''getObject'' permissions on this bucket to access the input file. The input file is a JSON-serialized, line delimited file with UTF-8 encoding that provides a list of group and version IDs and the deployment type. This file must be less than 100MB. Currently, Greengrass; supports only ''NewDeployment'' deployment types.
-         */
-    var InputFileUri: js.UndefOr[__string] = js.undefined
-  }
-  
-  
-  trait StartBulkDeploymentResponse extends js.Object {
-    /**
-         * The ARN of the bulk deployment.
-         */
-    var BulkDeploymentArn: js.UndefOr[__string] = js.undefined
-    /**
-         * The ID of the bulk deployment.
-         */
-    var BulkDeploymentId: js.UndefOr[__string] = js.undefined
-  }
-  
-  
-  trait StopBulkDeploymentRequest extends js.Object {
-    /**
-         * The ID of the bulk deployment.
-         */
-    var BulkDeploymentId: __string
-  }
-  
-  
-  trait StopBulkDeploymentResponse extends js.Object
-  
-  
   trait Subscription extends js.Object {
     /**
-         * A descriptive or arbitrary ID for the subscription. This value must be unique within the subscription definition version. Max length is 128 characters with pattern ''[a&#8209;zA&#8209;Z0&#8209;9:_&#8209;]+''.
+         * The id of the subscription.
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
@@ -2770,11 +2547,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCoreDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
+       * Creates a deployment.
        */
     def createDeployment(): awsDashSdkLib.libRequestMod.Request[CreateDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
+       * Creates a deployment.
        */
     def createDeployment(
       callback: js.Function2[
@@ -2784,11 +2561,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
+       * Creates a deployment.
        */
     def createDeployment(params: CreateDeploymentRequest): awsDashSdkLib.libRequestMod.Request[CreateDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
+       * Creates a deployment.
        */
     def createDeployment(
       params: CreateDeploymentRequest,
@@ -3495,35 +3272,6 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetAssociatedRoleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the status of a bulk deployment.
-       */
-    def getBulkDeploymentStatus(): awsDashSdkLib.libRequestMod.Request[GetBulkDeploymentStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Returns the status of a bulk deployment.
-       */
-    def getBulkDeploymentStatus(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ GetBulkDeploymentStatusResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[GetBulkDeploymentStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Returns the status of a bulk deployment.
-       */
-    def getBulkDeploymentStatus(params: GetBulkDeploymentStatusRequest): awsDashSdkLib.libRequestMod.Request[GetBulkDeploymentStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Returns the status of a bulk deployment.
-       */
-    def getBulkDeploymentStatus(
-      params: GetBulkDeploymentStatusRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ GetBulkDeploymentStatusResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[GetBulkDeploymentStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Retrieves the connectivity information for a core.
        */
     def getConnectivityInfo(): awsDashSdkLib.libRequestMod.Request[GetConnectivityInfoResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4075,64 +3823,6 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetSubscriptionDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
-       */
-    def listBulkDeploymentDetailedReports(): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentDetailedReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
-       */
-    def listBulkDeploymentDetailedReports(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListBulkDeploymentDetailedReportsResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentDetailedReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
-       */
-    def listBulkDeploymentDetailedReports(params: ListBulkDeploymentDetailedReportsRequest): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentDetailedReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
-       */
-    def listBulkDeploymentDetailedReports(
-      params: ListBulkDeploymentDetailedReportsRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListBulkDeploymentDetailedReportsResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentDetailedReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Returns a list of bulk deployments.
-       */
-    def listBulkDeployments(): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Returns a list of bulk deployments.
-       */
-    def listBulkDeployments(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListBulkDeploymentsResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Returns a list of bulk deployments.
-       */
-    def listBulkDeployments(params: ListBulkDeploymentsRequest): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Returns a list of bulk deployments.
-       */
-    def listBulkDeployments(
-      params: ListBulkDeploymentsRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListBulkDeploymentsResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Lists the versions of a core definition.
        */
     def listCoreDefinitionVersions(): awsDashSdkLib.libRequestMod.Request[ListCoreDefinitionVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4626,64 +4316,6 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ResetDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
-       */
-    def startBulkDeployment(): awsDashSdkLib.libRequestMod.Request[StartBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
-       */
-    def startBulkDeployment(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ StartBulkDeploymentResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[StartBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
-       */
-    def startBulkDeployment(params: StartBulkDeploymentRequest): awsDashSdkLib.libRequestMod.Request[StartBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
-       */
-    def startBulkDeployment(
-      params: StartBulkDeploymentRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ StartBulkDeploymentResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[StartBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
-       */
-    def stopBulkDeployment(): awsDashSdkLib.libRequestMod.Request[StopBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
-       */
-    def stopBulkDeployment(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ StopBulkDeploymentResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[StopBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
-       */
-    def stopBulkDeployment(params: StopBulkDeploymentRequest): awsDashSdkLib.libRequestMod.Request[StopBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
-       */
-    def stopBulkDeployment(
-      params: StopBulkDeploymentRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ StopBulkDeploymentResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[StopBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Updates the connectivity information for the core. Any devices that belong to the group which has this core will receive this information in order to find the location of the core and connect to it.
        */
     def updateConnectivityInfo(): awsDashSdkLib.libRequestMod.Request[UpdateConnectivityInfoResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -5128,9 +4760,6 @@ object GreengrassNs extends js.Object {
     extends /* key */ ScalablyTyped.runtime.StringDictionary[__string]
   
   val TypesNs: this.type = js.native
-  type BulkDeploymentResults = js.Array[BulkDeploymentResult]
-  type BulkDeploymentStatus = awsDashSdkLib.awsDashSdkLibStrings.Initializing | awsDashSdkLib.awsDashSdkLibStrings.Running | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Stopping | awsDashSdkLib.awsDashSdkLibStrings.Stopped | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
-  type BulkDeployments = js.Array[BulkDeployment]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DeploymentType = awsDashSdkLib.awsDashSdkLibStrings.NewDeployment | awsDashSdkLib.awsDashSdkLibStrings.Redeployment | awsDashSdkLib.awsDashSdkLibStrings.ResetDeployment | awsDashSdkLib.awsDashSdkLibStrings.ForceResetDeployment | java.lang.String
   type Deployments = js.Array[Deployment]

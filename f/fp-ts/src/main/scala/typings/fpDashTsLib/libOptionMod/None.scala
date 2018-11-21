@@ -16,11 +16,9 @@ class None[A] protected () extends js.Object {
        * it is a `None` then it will return the next `Some` if it exist. If both are `None` then it will return `none`.
        *
        * @example
-       * import { Option, some, none } from 'fp-ts/lib/Option'
-       *
-       * assert.deepEqual(some(2).alt(some(4)), some(2))
-       * const fa: Option<number> = none
-       * assert.deepEqual(fa.alt(some(4)), some(4))
+       * const someFn = (o: Option<number>) => o.alt(some(4))
+       * assert.deepEqual(someFn(some(2)), some(2))
+       * assert.deepEqual(someFn(none), none)
        */
   def alt(fa: Option[A]): Option[A] = js.native
   /**
@@ -28,19 +26,16 @@ class None[A] protected () extends js.Object {
        * function to this `Option`'s value. If the `Option` calling `ap` is `none` it will return `none`.
        *
        * @example
-       * import { some, none } from 'fp-ts/lib/Option'
-       *
-       * assert.deepEqual(some(2).ap(some((x: number) => x + 1)), some(3))
-       * assert.deepEqual(none.ap(some((x: number) => x + 1)), none)
+       * assert.deepEqual(some(2).ap(some(x => x + 1)), some(3))
+       * assert.deepEqual(none.ap(some(x => x + 1)), none)
        */
   def ap[B](fab: Option[js.Function1[/* a */ A, B]]): Option[B] = js.native
   /**
-       * Flipped version of {@link ap}
+       * Similar to `ap` but instead of taking a function it takes `some` value or `none`, then applies this `Option`'s
+       * wrapped function to the `some` or `none`. If the `Option` calling `ap_` is `none` it will return `none`.
        *
        * @example
-       * import { some, none } from 'fp-ts/lib/Option'
-       *
-       * assert.deepEqual(some((x: number) => x + 1).ap_(some(2)), some(3))
+       * assert.deepEqual(some(x => x + 1).ap_(some(2)), some(3))
        * assert.deepEqual(none.ap_(some(2)), none)
        */
   def `ap_`[B, C](`this`: Option[js.Function1[/* b */ B, C]], fb: Option[B]): Option[C] = js.native
@@ -81,8 +76,7 @@ class None[A] protected () extends js.Object {
        * import { Option, none, some } from 'fp-ts/lib/Option'
        *
        * assert.strictEqual(some(1).getOrElse(0), 1)
-       * const fa: Option<number> = none
-       * assert.strictEqual(fa.getOrElse(0), 0)
+       * assert.strictEqual((none as Option<number>).getOrElse(0), 0)
        */
   def getOrElse(a: A): A = js.native
   /** Lazy version of {@link getOrElse} */
@@ -97,8 +91,6 @@ class None[A] protected () extends js.Object {
        * maps on `Some` then it will apply the `f` on `Some`'s value, if it maps on `None` it will return `None`.
        *
        * @example
-       * import { some } from 'fp-ts/lib/Option'
-       *
        * assert.deepEqual(some(1).map(n => n * 2), some(2))
        */
   def map[B](f: js.Function1[/* a */ A, B]): Option[B] = js.native
@@ -136,13 +128,11 @@ class None[A] protected () extends js.Object {
   def mapNullable[B](f: js.Function1[/* a */ A, js.UndefOr[B | scala.Null]]): Option[B] = js.native
   /**
        * Lazy version of {@link alt}
-       *
-       * @example
-       * import { some } from 'fp-ts/lib/Option'
-       *
-       * assert.deepEqual(some(1).orElse(() => some(2)), some(1))
-       *
        * @since 1.6.0
+       * @param {Lazy<Option<A>>} fa - thunk
+       * @example
+       * assert.deepEqual(some(1).orElse(() => some(2)), some(1))
+       * @returns {Option<A>}
        */
   def orElse(fa: fpDashTsLib.libFunctionMod.Lazy[Option[A]]): Option[A] = js.native
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native

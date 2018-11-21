@@ -11,6 +11,8 @@ trait Traversable3[T /* <: fpDashTsLib.libHKTMod.URIS3 */]
      with fpDashTsLib.libFoldableMod.Foldable3[T] {
   /* InferMemberOverrides */
   override val URI: T = js.native
+  @JSName("traverse")
+  var traverse_Original: Traverse3[T] = js.native
   def traverse[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.Type3[T, _, _, _], 
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.HKT[F, _]], 

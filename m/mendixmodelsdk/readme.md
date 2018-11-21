@@ -26,13 +26,24 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-/** Current SDK version: 4.16.0 */
+/** Current SDK version: 4.15.0 */
 /**
  * Convenience to be able to export everything at once.
  */
-/** Highest supported Metamodel version: 7.20.0 */
+/** Highest supported Metamodel version: 7.19.0 */
 /**
- * The `utils` module contains various utility interfaces and functions.
+ * Base serialization of an EObject.
+ */
+/**
+ * Functionality to check whether names are valid.
+ *
+ * Sources:
+ *  https://sprintr.home.mendix.com/link/document/091ba8bc-5fe8-460f-abc1-df2b8212159e
+ *  https://gitlab.srv.hq.mendix.net/modeler/modeler/blob/master/Mendix.Modeler.Core/Common/Model/NameUtil.cs#L12
+ */
+/**
+ * Validates the name syntactically without looking at the context (so no uniqueness check).
+ * @returns {string} with error message or null in which case name is valid.
  */
 /**
  * "Something" that contains properties.
@@ -40,14 +51,5 @@ THE SOFTWARE.
  * Abstract sub types: MxAbstractElement, MxAbstractUnit.
  *
  * Each unit in the model is guaranteed to exist only once in memory.
- */
-/**
- * Types defined in this file express JSON serialization and are shared with the Model API Server.
- * Some types (points) are used verbatim through the rest of the SDK.
- */
-/**
- * The contents of the `MetaData` table (which always contains one row) in the MPR contained in the working copy's MPK.
- * This is useful to determine product version and to be able to re-export the MPR as part of an MPK
- * that can be read in by the Business Modeler.
  */
 ```

@@ -52,7 +52,7 @@ trait ICalendarStrings extends js.Object {
        */
   var shortMonths: js.Array[java.lang.String]
   /**
-       * Aria-label format string for the week number header. Should have 1 string param e.g. "week number \{0\}"
+       * Aria-label format string for the week number header. Should have 1 string param e.g. "week number {0}"
        */
   var weekNumberFormatString: js.UndefOr[java.lang.String] = js.undefined
 }

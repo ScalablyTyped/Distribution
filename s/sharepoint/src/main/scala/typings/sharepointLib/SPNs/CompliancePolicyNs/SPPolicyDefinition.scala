@@ -21,8 +21,8 @@ class SPPolicyDefinition ()
   def get_scenario(): js.Any = js.native
   def get_source(): js.Any = js.native
   def get_version(): js.Any = js.native
-  def get_whenChangedUTC(): stdLib.Date = js.native
-  def get_whenCreatedUTC(): stdLib.Date = js.native
+  def get_whenChangedUTC(): microsoftDashAjaxLib.Date = js.native
+  def get_whenCreatedUTC(): microsoftDashAjaxLib.Date = js.native
   def set_comment(value: java.lang.String): java.lang.String = js.native
   def set_createdBy(value: js.Any): js.Any = js.native
   def set_defaultPolicyRuleConfigId(value: js.Any): js.Any = js.native
@@ -35,7 +35,7 @@ class SPPolicyDefinition ()
   def set_scenario(value: js.Any): js.Any = js.native
   def set_source(value: js.Any): js.Any = js.native
   def set_version(value: js.Any): js.Any = js.native
-  def set_whenChangedUTC(value: stdLib.Date): stdLib.Date = js.native
-  def set_whenCreatedUTC(value: stdLib.Date): stdLib.Date = js.native
+  def set_whenChangedUTC(value: microsoftDashAjaxLib.Date): microsoftDashAjaxLib.Date = js.native
+  def set_whenCreatedUTC(value: microsoftDashAjaxLib.Date): microsoftDashAjaxLib.Date = js.native
 }
 

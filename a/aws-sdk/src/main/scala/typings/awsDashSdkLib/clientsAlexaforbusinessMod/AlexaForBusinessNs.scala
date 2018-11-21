@@ -41,17 +41,6 @@ object AlexaForBusinessNs extends js.Object {
   }
   
   
-  trait ApproveSkillRequest extends js.Object {
-    /**
-         * The unique identifier of the skill.
-         */
-    var SkillId: SkillId
-  }
-  
-  
-  trait ApproveSkillResponse extends js.Object
-  
-  
   trait AssociateContactWithAddressBookRequest extends js.Object {
     /**
          * The ARN of the address book with which to associate the contact.
@@ -97,78 +86,11 @@ object AlexaForBusinessNs extends js.Object {
   trait AssociateSkillGroupWithRoomResponse extends js.Object
   
   
-  trait AssociateSkillWithSkillGroupRequest extends js.Object {
-    /**
-         * The ARN of the skill group to associate the skill to. Required.
-         */
-    var SkillGroupArn: js.UndefOr[Arn] = js.undefined
-    /**
-         * The unique identifier of the skill.
-         */
-    var SkillId: SkillId
-  }
-  
-  
-  trait AssociateSkillWithSkillGroupResponse extends js.Object
-  
-  
-  trait AuthorizationResult
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
-  
-  
-  trait Category extends js.Object {
-    /**
-         * The ID of the skill store category.
-         */
-    var CategoryId: js.UndefOr[CategoryId] = js.undefined
-    /**
-         * The name of the skill store category.
-         */
-    var CategoryName: js.UndefOr[CategoryName] = js.undefined
-  }
-  
-  
   trait ClientApiVersions extends js.Object {
     /**
          * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
          */
     var apiVersion: js.UndefOr[apiVersion] = js.undefined
-  }
-  
-  
-  trait ConferencePreference extends js.Object {
-    /**
-         * The ARN of the default conference provider.
-         */
-    var DefaultConferenceProviderArn: js.UndefOr[Arn] = js.undefined
-  }
-  
-  
-  trait ConferenceProvider extends js.Object {
-    /**
-         * The ARN of the newly created conference provider.
-         */
-    var Arn: js.UndefOr[Arn] = js.undefined
-    /**
-         * The IP endpoint and protocol for calling.
-         */
-    var IPDialIn: js.UndefOr[IPDialIn] = js.undefined
-    /**
-         * The meeting settings for the conference provider.
-         */
-    var MeetingSetting: js.UndefOr[MeetingSetting] = js.undefined
-    /**
-         * The name of the conference provider.
-         */
-    var Name: js.UndefOr[ConferenceProviderName] = js.undefined
-    /**
-         * The information for PSTN conferencing.
-         */
-    var PSTNDialIn: js.UndefOr[PSTNDialIn] = js.undefined
-    /**
-         * The type of conference providers.
-         */
-    var Type: js.UndefOr[ConferenceProviderType] = js.undefined
   }
   
   
@@ -241,42 +163,6 @@ object AlexaForBusinessNs extends js.Object {
          * The ARN of the newly created address book.
          */
     var AddressBookArn: js.UndefOr[Arn] = js.undefined
-  }
-  
-  
-  trait CreateConferenceProviderRequest extends js.Object {
-    /**
-         * The request token of the client.
-         */
-    var ClientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
-    /**
-         * The name of the conference provider.
-         */
-    var ConferenceProviderName: ConferenceProviderName
-    /**
-         * Represents a type within a list of predefined types.
-         */
-    var ConferenceProviderType: ConferenceProviderType
-    /**
-         * The IP endpoint and protocol for calling.
-         */
-    var IPDialIn: js.UndefOr[IPDialIn] = js.undefined
-    /**
-         * The meeting settings for the conference provider.
-         */
-    var MeetingSetting: MeetingSetting
-    /**
-         * The information for PSTN conferencing.
-         */
-    var PSTNDialIn: js.UndefOr[PSTNDialIn] = js.undefined
-  }
-  
-  
-  trait CreateConferenceProviderResponse extends js.Object {
-    /**
-         * The ARN of the newly-created conference provider.
-         */
-    var ConferenceProviderArn: js.UndefOr[Arn] = js.undefined
   }
   
   
@@ -471,17 +357,6 @@ object AlexaForBusinessNs extends js.Object {
   trait DeleteAddressBookResponse extends js.Object
   
   
-  trait DeleteConferenceProviderRequest extends js.Object {
-    /**
-         * The ARN of the conference provider.
-         */
-    var ConferenceProviderArn: Arn
-  }
-  
-  
-  trait DeleteConferenceProviderResponse extends js.Object
-  
-  
   trait DeleteContactRequest extends js.Object {
     /**
          * The ARN of the contact to delete.
@@ -491,17 +366,6 @@ object AlexaForBusinessNs extends js.Object {
   
   
   trait DeleteContactResponse extends js.Object
-  
-  
-  trait DeleteDeviceRequest extends js.Object {
-    /**
-         * The ARN of the device for which to request details.
-         */
-    var DeviceArn: Arn
-  }
-  
-  
-  trait DeleteDeviceResponse extends js.Object
   
   
   trait DeleteProfileRequest extends js.Object {
@@ -545,21 +409,6 @@ object AlexaForBusinessNs extends js.Object {
   trait DeleteRoomSkillParameterResponse extends js.Object
   
   
-  trait DeleteSkillAuthorizationRequest extends js.Object {
-    /**
-         * The room that the skill is authorized for.
-         */
-    var RoomArn: js.UndefOr[Arn] = js.undefined
-    /**
-         * The unique identifier of a skill.
-         */
-    var SkillId: SkillId
-  }
-  
-  
-  trait DeleteSkillAuthorizationResponse extends js.Object
-  
-  
   trait DeleteSkillGroupRequest extends js.Object {
     /**
          * The ARN of the skill group to delete. Required.
@@ -584,26 +433,6 @@ object AlexaForBusinessNs extends js.Object {
   
   
   trait DeleteUserResponse extends js.Object
-  
-  
-  trait DeveloperInfo extends js.Object {
-    /**
-         * The name of the developer.
-         */
-    var DeveloperName: js.UndefOr[DeveloperName] = js.undefined
-    /**
-         * The email of the developer.
-         */
-    var Email: js.UndefOr[Email] = js.undefined
-    /**
-         * The URL of the privacy policy.
-         */
-    var PrivacyPolicy: js.UndefOr[PrivacyPolicy] = js.undefined
-    /**
-         * The website of the developer.
-         */
-    var Url: js.UndefOr[Url] = js.undefined
-  }
   
   
   trait Device extends js.Object {
@@ -752,21 +581,6 @@ object AlexaForBusinessNs extends js.Object {
   trait DisassociateDeviceFromRoomResponse extends js.Object
   
   
-  trait DisassociateSkillFromSkillGroupRequest extends js.Object {
-    /**
-         * The unique identifier of a skill. Required.
-         */
-    var SkillGroupArn: js.UndefOr[Arn] = js.undefined
-    /**
-         * The ARN of a skill group to associate to a skill.
-         */
-    var SkillId: SkillId
-  }
-  
-  
-  trait DisassociateSkillFromSkillGroupResponse extends js.Object
-  
-  
   trait DisassociateSkillGroupFromRoomRequest extends js.Object {
     /**
          * The ARN of the room from which the skill group is to be disassociated. Required.
@@ -794,17 +608,6 @@ object AlexaForBusinessNs extends js.Object {
   }
   
   
-  trait ForgetSmartHomeAppliancesRequest extends js.Object {
-    /**
-         * The room that the appliances are associated with.
-         */
-    var RoomArn: Arn
-  }
-  
-  
-  trait ForgetSmartHomeAppliancesResponse extends js.Object
-  
-  
   trait GetAddressBookRequest extends js.Object {
     /**
          * The ARN of the address book for which to request details.
@@ -818,33 +621,6 @@ object AlexaForBusinessNs extends js.Object {
          * The details of the requested address book.
          */
     var AddressBook: js.UndefOr[AddressBook] = js.undefined
-  }
-  
-  
-  trait GetConferencePreferenceRequest extends js.Object
-  
-  
-  trait GetConferencePreferenceResponse extends js.Object {
-    /**
-         * The conference preference.
-         */
-    var Preference: js.UndefOr[ConferencePreference] = js.undefined
-  }
-  
-  
-  trait GetConferenceProviderRequest extends js.Object {
-    /**
-         * The ARN of the newly created conference provider.
-         */
-    var ConferenceProviderArn: Arn
-  }
-  
-  
-  trait GetConferenceProviderResponse extends js.Object {
-    /**
-         * The conference provider.
-         */
-    var ConferenceProvider: js.UndefOr[ConferenceProvider] = js.undefined
   }
   
   
@@ -952,42 +728,6 @@ object AlexaForBusinessNs extends js.Object {
   }
   
   
-  trait IPDialIn extends js.Object {
-    /**
-         * The protocol, including SIP, SIPS, and H323.
-         */
-    var CommsProtocol: CommsProtocol
-    /**
-         * The IP address.
-         */
-    var Endpoint: Endpoint
-  }
-  
-  
-  trait ListConferenceProvidersRequest extends js.Object {
-    /**
-         * The maximum number of conference providers to be returned, per paginated calls.
-         */
-    var MaxResults: js.UndefOr[MaxResults] = js.undefined
-    /**
-         * The tokens used for pagination.
-         */
-    var NextToken: js.UndefOr[NextToken] = js.undefined
-  }
-  
-  
-  trait ListConferenceProvidersResponse extends js.Object {
-    /**
-         * The conference providers.
-         */
-    var ConferenceProviders: js.UndefOr[ConferenceProvidersList] = js.undefined
-    /**
-         * The tokens used for pagination.
-         */
-    var NextToken: js.UndefOr[NextToken] = js.undefined
-  }
-  
-  
   trait ListDeviceEventsRequest extends js.Object {
     /**
          * The ARN of a device.
@@ -1022,10 +762,6 @@ object AlexaForBusinessNs extends js.Object {
   
   trait ListSkillsRequest extends js.Object {
     /**
-         * Whether the skill is enabled under the user's account, or if it requires linking to be used.
-         */
-    var EnablementType: js.UndefOr[EnablementTypeFilter] = js.undefined
-    /**
          * The maximum number of results to include in the response. If more results exist than the specified MaxResults value, a token is included in the response so that the remaining results can be retrieved. Required.
          */
     var MaxResults: js.UndefOr[SkillListMaxResults] = js.undefined
@@ -1037,10 +773,6 @@ object AlexaForBusinessNs extends js.Object {
          * The ARN of the skill group for which to list enabled skills. Required.
          */
     var SkillGroupArn: js.UndefOr[Arn] = js.undefined
-    /**
-         * Whether the skill is publicly available or is a private skill.
-         */
-    var SkillType: js.UndefOr[SkillTypeFilter] = js.undefined
   }
   
   
@@ -1053,86 +785,6 @@ object AlexaForBusinessNs extends js.Object {
          * The list of enabled skills requested. Required.
          */
     var SkillSummaries: js.UndefOr[SkillSummaryList] = js.undefined
-  }
-  
-  
-  trait ListSkillsStoreCategoriesRequest extends js.Object {
-    /**
-         * The maximum number of categories returned, per paginated calls.
-         */
-    var MaxResults: js.UndefOr[MaxResults] = js.undefined
-    /**
-         * The tokens used for pagination.
-         */
-    var NextToken: js.UndefOr[NextToken] = js.undefined
-  }
-  
-  
-  trait ListSkillsStoreCategoriesResponse extends js.Object {
-    /**
-         * The list of categories.
-         */
-    var CategoryList: js.UndefOr[CategoryList] = js.undefined
-    /**
-         * The tokens used for pagination.
-         */
-    var NextToken: js.UndefOr[NextToken] = js.undefined
-  }
-  
-  
-  trait ListSkillsStoreSkillsByCategoryRequest extends js.Object {
-    /**
-         * The category ID for which the skills are being retrieved from the skill store.
-         */
-    var CategoryId: CategoryId
-    /**
-         * The maximum number of skills returned per paginated calls.
-         */
-    var MaxResults: js.UndefOr[SkillListMaxResults] = js.undefined
-    /**
-         * The tokens used for pagination.
-         */
-    var NextToken: js.UndefOr[NextToken] = js.undefined
-  }
-  
-  
-  trait ListSkillsStoreSkillsByCategoryResponse extends js.Object {
-    /**
-         * The tokens used for pagination.
-         */
-    var NextToken: js.UndefOr[NextToken] = js.undefined
-    /**
-         * The skill store skills.
-         */
-    var SkillsStoreSkills: js.UndefOr[SkillsStoreSkillList] = js.undefined
-  }
-  
-  
-  trait ListSmartHomeAppliancesRequest extends js.Object {
-    /**
-         * The maximum number of appliances to be returned, per paginated calls.
-         */
-    var MaxResults: js.UndefOr[MaxResults] = js.undefined
-    /**
-         * The tokens used for pagination.
-         */
-    var NextToken: js.UndefOr[NextToken] = js.undefined
-    /**
-         * The room that the appliances are associated with.
-         */
-    var RoomArn: Arn
-  }
-  
-  
-  trait ListSmartHomeAppliancesResponse extends js.Object {
-    /**
-         * The tokens used for pagination.
-         */
-    var NextToken: js.UndefOr[NextToken] = js.undefined
-    /**
-         * The smart home appliances.
-         */
-    var SmartHomeAppliances: js.UndefOr[SmartHomeApplianceList] = js.undefined
   }
   
   
@@ -1164,51 +816,15 @@ object AlexaForBusinessNs extends js.Object {
   }
   
   
-  trait MeetingSetting extends js.Object {
-    /**
-         * The values that indicate whether the pin is always required.
-         */
-    var RequirePin: RequirePin
-  }
-  
-  
-  trait PSTNDialIn extends js.Object {
-    /**
-         * The zip code.
-         */
-    var CountryCode: CountryCode
-    /**
-         * The delay duration before Alexa enters the conference ID with dual-tone multi-frequency (DTMF). Each number on the dial pad corresponds to a DTMF tone, which is how we send data over the telephone network.
-         */
-    var OneClickIdDelay: OneClickIdDelay
-    /**
-         * The delay duration before Alexa enters the conference pin with dual-tone multi-frequency (DTMF). Each number on the dial pad corresponds to a DTMF tone, which is how we send data over the telephone network.
-         */
-    var OneClickPinDelay: OneClickPinDelay
-    /**
-         * The phone number to call to join the conference.
-         */
-    var PhoneNumber: PhoneNumber
-  }
-  
-  
   trait Profile extends js.Object {
     /**
          * The address of a room profile.
          */
     var Address: js.UndefOr[Address] = js.undefined
     /**
-         * The ARN of the address book.
-         */
-    var AddressBookArn: js.UndefOr[Arn] = js.undefined
-    /**
          * The distance unit of a room profile.
          */
     var DistanceUnit: js.UndefOr[DistanceUnit] = js.undefined
-    /**
-         * Retrieves if the profile is default or not.
-         */
-    var IsDefault: js.UndefOr[scala.Boolean] = js.undefined
     /**
          * The max volume limit of a room profile.
          */
@@ -1254,10 +870,6 @@ object AlexaForBusinessNs extends js.Object {
          */
     var DistanceUnit: js.UndefOr[DistanceUnit] = js.undefined
     /**
-         * Retrieves if the profile data is default or not.
-         */
-    var IsDefault: js.UndefOr[scala.Boolean] = js.undefined
-    /**
          * The ARN of a room profile.
          */
     var ProfileArn: js.UndefOr[Arn] = js.undefined
@@ -1280,17 +892,6 @@ object AlexaForBusinessNs extends js.Object {
   }
   
   
-  trait PutConferencePreferenceRequest extends js.Object {
-    /**
-         * The conference preference of a specific conference provider.
-         */
-    var ConferencePreference: ConferencePreference
-  }
-  
-  
-  trait PutConferencePreferenceResponse extends js.Object
-  
-  
   trait PutRoomSkillParameterRequest extends js.Object {
     /**
          * The ARN of the room associated with the room skill parameter. Required.
@@ -1308,68 +909,6 @@ object AlexaForBusinessNs extends js.Object {
   
   
   trait PutRoomSkillParameterResponse extends js.Object
-  
-  
-  trait PutSkillAuthorizationRequest extends js.Object {
-    /**
-         * The authorization result specific to OAUTH code grant output. "Code” must be populated in the AuthorizationResult map to establish the authorization.
-         */
-    var AuthorizationResult: AuthorizationResult
-    /**
-         * The room that the skill is authorized for.
-         */
-    var RoomArn: js.UndefOr[Arn] = js.undefined
-    /**
-         * The unique identifier of a skill.
-         */
-    var SkillId: SkillId
-  }
-  
-  
-  trait PutSkillAuthorizationResponse extends js.Object
-  
-  
-  trait RegisterAVSDeviceRequest extends js.Object {
-    /**
-         * The device type ID for your AVS device generated by Amazon when the OEM creates a new product on Amazon's Developer Console.
-         */
-    var AmazonId: AmazonId
-    /**
-         * The client ID of the OEM used for code-based linking authorization on an AVS device.
-         */
-    var ClientId: ClientId
-    /**
-         * The key generated by the OEM that uniquely identifies a specified instance of your AVS device.
-         */
-    var DeviceSerialNumber: DeviceSerialNumberForAVS
-    /**
-         * The product ID used to identify your AVS device during authorization.
-         */
-    var ProductId: ProductId
-    /**
-         * The code that is obtained after your AVS device has made a POST request to LWA as a part of the Device Authorization Request component of the OAuth code-based linking specification.
-         */
-    var UserCode: UserCode
-  }
-  
-  
-  trait RegisterAVSDeviceResponse extends js.Object {
-    /**
-         * The ARN of the device.
-         */
-    var DeviceArn: js.UndefOr[Arn] = js.undefined
-  }
-  
-  
-  trait RejectSkillRequest extends js.Object {
-    /**
-         * The unique identifier of the skill.
-         */
-    var SkillId: SkillId
-  }
-  
-  
-  trait RejectSkillResponse extends js.Object
   
   
   trait ResolveRoomRequest extends js.Object {
@@ -1398,10 +937,6 @@ object AlexaForBusinessNs extends js.Object {
          */
     var RoomSkillParameters: js.UndefOr[RoomSkillParameters] = js.undefined
   }
-  
-  
-  trait Reviews
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[ReviewValue]
   
   
   trait RevokeInvitationRequest extends js.Object {
@@ -1746,50 +1281,6 @@ object AlexaForBusinessNs extends js.Object {
   trait SendInvitationResponse extends js.Object
   
   
-  trait SkillDetails extends js.Object {
-    /**
-         * The details about what the skill supports organized as bullet points.
-         */
-    var BulletPoints: js.UndefOr[BulletPoints] = js.undefined
-    /**
-         * The details about the developer that published the skill.
-         */
-    var DeveloperInfo: js.UndefOr[DeveloperInfo] = js.undefined
-    /**
-         * The URL of the end user license agreement.
-         */
-    var EndUserLicenseAgreement: js.UndefOr[EndUserLicenseAgreement] = js.undefined
-    /**
-         * The generic keywords associated with the skill that can be used to find a skill.
-         */
-    var GenericKeywords: js.UndefOr[GenericKeywords] = js.undefined
-    /**
-         * The phrase used to trigger the skill.
-         */
-    var InvocationPhrase: js.UndefOr[InvocationPhrase] = js.undefined
-    /**
-         * The updates added in bullet points.
-         */
-    var NewInThisVersionBulletPoints: js.UndefOr[NewInThisVersionBulletPoints] = js.undefined
-    /**
-         * The description of the product.
-         */
-    var ProductDescription: js.UndefOr[ProductDescription] = js.undefined
-    /**
-         * The date when the skill was released.
-         */
-    var ReleaseDate: js.UndefOr[ReleaseDate] = js.undefined
-    /**
-         * The list of reviews for the skill, including Key and Value pair.
-         */
-    var Reviews: js.UndefOr[Reviews] = js.undefined
-    /**
-         * The types of skills.
-         */
-    var SkillTypes: js.UndefOr[SkillTypes] = js.undefined
-  }
-  
-  
   trait SkillGroup extends js.Object {
     /**
          * The description of a skill group.
@@ -1824,10 +1315,6 @@ object AlexaForBusinessNs extends js.Object {
   
   trait SkillSummary extends js.Object {
     /**
-         * Whether the skill is enabled under the user's account, or if it requires linking to be used.
-         */
-    var EnablementType: js.UndefOr[EnablementType] = js.undefined
-    /**
          * The ARN of the skill summary.
          */
     var SkillId: js.UndefOr[SkillId] = js.undefined
@@ -1836,61 +1323,9 @@ object AlexaForBusinessNs extends js.Object {
          */
     var SkillName: js.UndefOr[SkillName] = js.undefined
     /**
-         * Whether the skill is publicly available or is a private skill.
-         */
-    var SkillType: js.UndefOr[SkillType] = js.undefined
-    /**
          * Linking support for a skill.
          */
     var SupportsLinking: js.UndefOr[scala.Boolean] = js.undefined
-  }
-  
-  
-  trait SkillsStoreSkill extends js.Object {
-    /**
-         * The URL where the skill icon resides.
-         */
-    var IconUrl: js.UndefOr[IconUrl] = js.undefined
-    /**
-         * Sample utterances that interact with the skill.
-         */
-    var SampleUtterances: js.UndefOr[SampleUtterances] = js.undefined
-    /**
-         * Short description about the skill.
-         */
-    var ShortDescription: js.UndefOr[ShortDescription] = js.undefined
-    /**
-         * Information about the skill.
-         */
-    var SkillDetails: js.UndefOr[SkillDetails] = js.undefined
-    /**
-         * The ARN of the skill.
-         */
-    var SkillId: js.UndefOr[SkillId] = js.undefined
-    /**
-         * The name of the skill.
-         */
-    var SkillName: js.UndefOr[SkillName] = js.undefined
-    /**
-         * Linking support for a skill.
-         */
-    var SupportsLinking: js.UndefOr[scala.Boolean] = js.undefined
-  }
-  
-  
-  trait SmartHomeAppliance extends js.Object {
-    /**
-         * The description of the smart home appliance.
-         */
-    var Description: js.UndefOr[ApplianceDescription] = js.undefined
-    /**
-         * The friendly name of the smart home appliance.
-         */
-    var FriendlyName: js.UndefOr[ApplianceFriendlyName] = js.undefined
-    /**
-         * The name of the manufacturer of the smart home appliance.
-         */
-    var ManufacturerName: js.UndefOr[ApplianceManufacturerName] = js.undefined
   }
   
   
@@ -1925,26 +1360,15 @@ object AlexaForBusinessNs extends js.Object {
   trait StartDeviceSyncResponse extends js.Object
   
   
-  trait StartSmartHomeApplianceDiscoveryRequest extends js.Object {
-    /**
-         * The room where smart home appliance discovery was initiated.
-         */
-    var RoomArn: Arn
-  }
-  
-  
-  trait StartSmartHomeApplianceDiscoveryResponse extends js.Object
-  
-  
   trait Tag extends js.Object {
     /**
          * The key of a tag. Tag keys are case-sensitive. 
          */
-    var Key: TagKey
+    var Key: js.UndefOr[TagKey] = js.undefined
     /**
          * The value of a tag. Tag values are case-sensitive and can be null.
          */
-    var Value: TagValue
+    var Value: js.UndefOr[TagValue] = js.undefined
   }
   
   
@@ -1967,35 +1391,6 @@ object AlexaForBusinessNs extends js.Object {
     extends awsDashSdkLib.libServiceMod.Service {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
-    /**
-       * Associates a skill with the organization under the customer's AWS account. If a skill is private, the user implicitly accepts access to this skill during enablement.
-       */
-    def approveSkill(): awsDashSdkLib.libRequestMod.Request[ApproveSkillResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Associates a skill with the organization under the customer's AWS account. If a skill is private, the user implicitly accepts access to this skill during enablement.
-       */
-    def approveSkill(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ApproveSkillResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ApproveSkillResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Associates a skill with the organization under the customer's AWS account. If a skill is private, the user implicitly accepts access to this skill during enablement.
-       */
-    def approveSkill(params: ApproveSkillRequest): awsDashSdkLib.libRequestMod.Request[ApproveSkillResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Associates a skill with the organization under the customer's AWS account. If a skill is private, the user implicitly accepts access to this skill during enablement.
-       */
-    def approveSkill(
-      params: ApproveSkillRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ApproveSkillResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ApproveSkillResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Associates a contact with a given address book.
        */
@@ -2084,35 +1479,6 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateSkillGroupWithRoomResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a skill with a skill group.
-       */
-    def associateSkillWithSkillGroup(): awsDashSdkLib.libRequestMod.Request[AssociateSkillWithSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Associates a skill with a skill group.
-       */
-    def associateSkillWithSkillGroup(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ AssociateSkillWithSkillGroupResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[AssociateSkillWithSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Associates a skill with a skill group.
-       */
-    def associateSkillWithSkillGroup(params: AssociateSkillWithSkillGroupRequest): awsDashSdkLib.libRequestMod.Request[AssociateSkillWithSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Associates a skill with a skill group.
-       */
-    def associateSkillWithSkillGroup(
-      params: AssociateSkillWithSkillGroupRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ AssociateSkillWithSkillGroupResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[AssociateSkillWithSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Creates an address book with the specified details.
        */
     def createAddressBook(): awsDashSdkLib.libRequestMod.Request[CreateAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2141,35 +1507,6 @@ object AlexaForBusinessNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Adds a new conference provider under the user's AWS account.
-       */
-    def createConferenceProvider(): awsDashSdkLib.libRequestMod.Request[CreateConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Adds a new conference provider under the user's AWS account.
-       */
-    def createConferenceProvider(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ CreateConferenceProviderResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[CreateConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Adds a new conference provider under the user's AWS account.
-       */
-    def createConferenceProvider(params: CreateConferenceProviderRequest): awsDashSdkLib.libRequestMod.Request[CreateConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Adds a new conference provider under the user's AWS account.
-       */
-    def createConferenceProvider(
-      params: CreateConferenceProviderRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ CreateConferenceProviderResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[CreateConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Creates a contact with the specified details.
        */
@@ -2345,35 +1682,6 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a conference provider.
-       */
-    def deleteConferenceProvider(): awsDashSdkLib.libRequestMod.Request[DeleteConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deletes a conference provider.
-       */
-    def deleteConferenceProvider(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DeleteConferenceProviderResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DeleteConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deletes a conference provider.
-       */
-    def deleteConferenceProvider(params: DeleteConferenceProviderRequest): awsDashSdkLib.libRequestMod.Request[DeleteConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Deletes a conference provider.
-       */
-    def deleteConferenceProvider(
-      params: DeleteConferenceProviderRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DeleteConferenceProviderResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DeleteConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Deletes a contact by the contact ARN.
        */
     def deleteContact(): awsDashSdkLib.libRequestMod.Request[DeleteContactResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2402,35 +1710,6 @@ object AlexaForBusinessNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteContactResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Removes a device from Alexa For Business.
-       */
-    def deleteDevice(): awsDashSdkLib.libRequestMod.Request[DeleteDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Removes a device from Alexa For Business.
-       */
-    def deleteDevice(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DeleteDeviceResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DeleteDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Removes a device from Alexa For Business.
-       */
-    def deleteDevice(params: DeleteDeviceRequest): awsDashSdkLib.libRequestMod.Request[DeleteDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Removes a device from Alexa For Business.
-       */
-    def deleteDevice(
-      params: DeleteDeviceRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DeleteDeviceResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DeleteDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Deletes a room profile by the profile ARN.
        */
@@ -2518,35 +1797,6 @@ object AlexaForBusinessNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteRoomSkillParameterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Unlinks a third-party account from a skill.
-       */
-    def deleteSkillAuthorization(): awsDashSdkLib.libRequestMod.Request[DeleteSkillAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Unlinks a third-party account from a skill.
-       */
-    def deleteSkillAuthorization(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DeleteSkillAuthorizationResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DeleteSkillAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Unlinks a third-party account from a skill.
-       */
-    def deleteSkillAuthorization(params: DeleteSkillAuthorizationRequest): awsDashSdkLib.libRequestMod.Request[DeleteSkillAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Unlinks a third-party account from a skill.
-       */
-    def deleteSkillAuthorization(
-      params: DeleteSkillAuthorizationRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DeleteSkillAuthorizationResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DeleteSkillAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Deletes a skill group by skill group ARN.
        */
@@ -2664,35 +1914,6 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DisassociateDeviceFromRoomResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Disassociates a skill from a skill group.
-       */
-    def disassociateSkillFromSkillGroup(): awsDashSdkLib.libRequestMod.Request[DisassociateSkillFromSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Disassociates a skill from a skill group.
-       */
-    def disassociateSkillFromSkillGroup(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DisassociateSkillFromSkillGroupResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DisassociateSkillFromSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Disassociates a skill from a skill group.
-       */
-    def disassociateSkillFromSkillGroup(params: DisassociateSkillFromSkillGroupRequest): awsDashSdkLib.libRequestMod.Request[DisassociateSkillFromSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Disassociates a skill from a skill group.
-       */
-    def disassociateSkillFromSkillGroup(
-      params: DisassociateSkillFromSkillGroupRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DisassociateSkillFromSkillGroupResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DisassociateSkillFromSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Disassociates a skill group from a specified room. This disables all skills in the skill group on all devices in the room.
        */
     def disassociateSkillGroupFromRoom(): awsDashSdkLib.libRequestMod.Request[DisassociateSkillGroupFromRoomResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2722,35 +1943,6 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DisassociateSkillGroupFromRoomResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Forgets smart home appliances associated to a room.
-       */
-    def forgetSmartHomeAppliances(): awsDashSdkLib.libRequestMod.Request[ForgetSmartHomeAppliancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Forgets smart home appliances associated to a room.
-       */
-    def forgetSmartHomeAppliances(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ForgetSmartHomeAppliancesResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ForgetSmartHomeAppliancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Forgets smart home appliances associated to a room.
-       */
-    def forgetSmartHomeAppliances(params: ForgetSmartHomeAppliancesRequest): awsDashSdkLib.libRequestMod.Request[ForgetSmartHomeAppliancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Forgets smart home appliances associated to a room.
-       */
-    def forgetSmartHomeAppliances(
-      params: ForgetSmartHomeAppliancesRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ForgetSmartHomeAppliancesResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ForgetSmartHomeAppliancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Gets address the book details by the address book ARN.
        */
     def getAddressBook(): awsDashSdkLib.libRequestMod.Request[GetAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2779,64 +1971,6 @@ object AlexaForBusinessNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Retrieves the existing conference preferences.
-       */
-    def getConferencePreference(): awsDashSdkLib.libRequestMod.Request[GetConferencePreferenceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Retrieves the existing conference preferences.
-       */
-    def getConferencePreference(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ GetConferencePreferenceResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[GetConferencePreferenceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Retrieves the existing conference preferences.
-       */
-    def getConferencePreference(params: GetConferencePreferenceRequest): awsDashSdkLib.libRequestMod.Request[GetConferencePreferenceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Retrieves the existing conference preferences.
-       */
-    def getConferencePreference(
-      params: GetConferencePreferenceRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ GetConferencePreferenceResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[GetConferencePreferenceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets details about a specific conference provider.
-       */
-    def getConferenceProvider(): awsDashSdkLib.libRequestMod.Request[GetConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets details about a specific conference provider.
-       */
-    def getConferenceProvider(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ GetConferenceProviderResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[GetConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets details about a specific conference provider.
-       */
-    def getConferenceProvider(params: GetConferenceProviderRequest): awsDashSdkLib.libRequestMod.Request[GetConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Gets details about a specific conference provider.
-       */
-    def getConferenceProvider(
-      params: GetConferenceProviderRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ GetConferenceProviderResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[GetConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Gets the contact details by the contact ARN.
        */
@@ -3004,35 +2138,6 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists conference providers under a specific AWS account.
-       */
-    def listConferenceProviders(): awsDashSdkLib.libRequestMod.Request[ListConferenceProvidersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists conference providers under a specific AWS account.
-       */
-    def listConferenceProviders(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListConferenceProvidersResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListConferenceProvidersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists conference providers under a specific AWS account.
-       */
-    def listConferenceProviders(params: ListConferenceProvidersRequest): awsDashSdkLib.libRequestMod.Request[ListConferenceProvidersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists conference providers under a specific AWS account.
-       */
-    def listConferenceProviders(
-      params: ListConferenceProvidersRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListConferenceProvidersResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListConferenceProvidersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Lists the device event history, including device connection status, for up to 30 days.
        */
     def listDeviceEvents(): awsDashSdkLib.libRequestMod.Request[ListDeviceEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3091,93 +2196,6 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListSkillsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists all categories in the Alexa skill store.
-       */
-    def listSkillsStoreCategories(): awsDashSdkLib.libRequestMod.Request[ListSkillsStoreCategoriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all categories in the Alexa skill store.
-       */
-    def listSkillsStoreCategories(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListSkillsStoreCategoriesResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListSkillsStoreCategoriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all categories in the Alexa skill store.
-       */
-    def listSkillsStoreCategories(params: ListSkillsStoreCategoriesRequest): awsDashSdkLib.libRequestMod.Request[ListSkillsStoreCategoriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all categories in the Alexa skill store.
-       */
-    def listSkillsStoreCategories(
-      params: ListSkillsStoreCategoriesRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListSkillsStoreCategoriesResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListSkillsStoreCategoriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all skills in the Alexa skill store by category.
-       */
-    def listSkillsStoreSkillsByCategory(): awsDashSdkLib.libRequestMod.Request[ListSkillsStoreSkillsByCategoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all skills in the Alexa skill store by category.
-       */
-    def listSkillsStoreSkillsByCategory(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListSkillsStoreSkillsByCategoryResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListSkillsStoreSkillsByCategoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all skills in the Alexa skill store by category.
-       */
-    def listSkillsStoreSkillsByCategory(params: ListSkillsStoreSkillsByCategoryRequest): awsDashSdkLib.libRequestMod.Request[ListSkillsStoreSkillsByCategoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all skills in the Alexa skill store by category.
-       */
-    def listSkillsStoreSkillsByCategory(
-      params: ListSkillsStoreSkillsByCategoryRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListSkillsStoreSkillsByCategoryResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListSkillsStoreSkillsByCategoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all of the smart home appliances associated with a room.
-       */
-    def listSmartHomeAppliances(): awsDashSdkLib.libRequestMod.Request[ListSmartHomeAppliancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all of the smart home appliances associated with a room.
-       */
-    def listSmartHomeAppliances(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListSmartHomeAppliancesResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListSmartHomeAppliancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all of the smart home appliances associated with a room.
-       */
-    def listSmartHomeAppliances(params: ListSmartHomeAppliancesRequest): awsDashSdkLib.libRequestMod.Request[ListSmartHomeAppliancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Lists all of the smart home appliances associated with a room.
-       */
-    def listSmartHomeAppliances(
-      params: ListSmartHomeAppliancesRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ListSmartHomeAppliancesResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ListSmartHomeAppliancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Lists all tags for the specified resource.
        */
     def listTags(): awsDashSdkLib.libRequestMod.Request[ListTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3207,35 +2225,6 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Sets the conference preferences on a specific conference provider at the account level.
-       */
-    def putConferencePreference(): awsDashSdkLib.libRequestMod.Request[PutConferencePreferenceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Sets the conference preferences on a specific conference provider at the account level.
-       */
-    def putConferencePreference(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ PutConferencePreferenceResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[PutConferencePreferenceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Sets the conference preferences on a specific conference provider at the account level.
-       */
-    def putConferencePreference(params: PutConferencePreferenceRequest): awsDashSdkLib.libRequestMod.Request[PutConferencePreferenceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Sets the conference preferences on a specific conference provider at the account level.
-       */
-    def putConferencePreference(
-      params: PutConferencePreferenceRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ PutConferencePreferenceResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[PutConferencePreferenceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Updates room skill parameter details by room, skill, and parameter key ID. Not all skills have a room skill parameter.
        */
     def putRoomSkillParameter(): awsDashSdkLib.libRequestMod.Request[PutRoomSkillParameterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3264,93 +2253,6 @@ object AlexaForBusinessNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutRoomSkillParameterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Links a user's account to a third-party skill provider. If this API operation is called by an assumed IAM role, the skill being linked must be a private skill. Also, the skill must be owned by the AWS account that assumed the IAM role.
-       */
-    def putSkillAuthorization(): awsDashSdkLib.libRequestMod.Request[PutSkillAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Links a user's account to a third-party skill provider. If this API operation is called by an assumed IAM role, the skill being linked must be a private skill. Also, the skill must be owned by the AWS account that assumed the IAM role.
-       */
-    def putSkillAuthorization(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ PutSkillAuthorizationResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[PutSkillAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Links a user's account to a third-party skill provider. If this API operation is called by an assumed IAM role, the skill being linked must be a private skill. Also, the skill must be owned by the AWS account that assumed the IAM role.
-       */
-    def putSkillAuthorization(params: PutSkillAuthorizationRequest): awsDashSdkLib.libRequestMod.Request[PutSkillAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Links a user's account to a third-party skill provider. If this API operation is called by an assumed IAM role, the skill being linked must be a private skill. Also, the skill must be owned by the AWS account that assumed the IAM role.
-       */
-    def putSkillAuthorization(
-      params: PutSkillAuthorizationRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ PutSkillAuthorizationResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[PutSkillAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM) using Alexa Voice Service (AVS).
-       */
-    def registerAVSDevice(): awsDashSdkLib.libRequestMod.Request[RegisterAVSDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM) using Alexa Voice Service (AVS).
-       */
-    def registerAVSDevice(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ RegisterAVSDeviceResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[RegisterAVSDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM) using Alexa Voice Service (AVS).
-       */
-    def registerAVSDevice(params: RegisterAVSDeviceRequest): awsDashSdkLib.libRequestMod.Request[RegisterAVSDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM) using Alexa Voice Service (AVS).
-       */
-    def registerAVSDevice(
-      params: RegisterAVSDeviceRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ RegisterAVSDeviceResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[RegisterAVSDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Disassociates a skill from the organization under a user's AWS account. If the skill is a private skill, it moves to an AcceptStatus of PENDING. Any private or public skill that is rejected can be added later by calling the ApproveSkill API. 
-       */
-    def rejectSkill(): awsDashSdkLib.libRequestMod.Request[RejectSkillResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Disassociates a skill from the organization under a user's AWS account. If the skill is a private skill, it moves to an AcceptStatus of PENDING. Any private or public skill that is rejected can be added later by calling the ApproveSkill API. 
-       */
-    def rejectSkill(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ RejectSkillResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[RejectSkillResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Disassociates a skill from the organization under a user's AWS account. If the skill is a private skill, it moves to an AcceptStatus of PENDING. Any private or public skill that is rejected can be added later by calling the ApproveSkill API. 
-       */
-    def rejectSkill(params: RejectSkillRequest): awsDashSdkLib.libRequestMod.Request[RejectSkillResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Disassociates a skill from the organization under a user's AWS account. If the skill is a private skill, it moves to an AcceptStatus of PENDING. Any private or public skill that is rejected can be added later by calling the ApproveSkill API. 
-       */
-    def rejectSkill(
-      params: RejectSkillRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ RejectSkillResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[RejectSkillResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Determines the details for the room from which a skill request was invoked. This operation is used by skill developers.
        */
@@ -3671,35 +2573,6 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartDeviceSyncResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Initiates the discovery of any smart home appliances associated with the room.
-       */
-    def startSmartHomeApplianceDiscovery(): awsDashSdkLib.libRequestMod.Request[StartSmartHomeApplianceDiscoveryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Initiates the discovery of any smart home appliances associated with the room.
-       */
-    def startSmartHomeApplianceDiscovery(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ StartSmartHomeApplianceDiscoveryResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[StartSmartHomeApplianceDiscoveryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Initiates the discovery of any smart home appliances associated with the room.
-       */
-    def startSmartHomeApplianceDiscovery(params: StartSmartHomeApplianceDiscoveryRequest): awsDashSdkLib.libRequestMod.Request[StartSmartHomeApplianceDiscoveryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Initiates the discovery of any smart home appliances associated with the room.
-       */
-    def startSmartHomeApplianceDiscovery(
-      params: StartSmartHomeApplianceDiscoveryRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ StartSmartHomeApplianceDiscoveryResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[StartSmartHomeApplianceDiscoveryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Adds metadata tags to a specified resource.
        */
     def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3786,35 +2659,6 @@ object AlexaForBusinessNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Updates an existing conference provider's settings.
-       */
-    def updateConferenceProvider(): awsDashSdkLib.libRequestMod.Request[UpdateConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Updates an existing conference provider's settings.
-       */
-    def updateConferenceProvider(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ UpdateConferenceProviderResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[UpdateConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Updates an existing conference provider's settings.
-       */
-    def updateConferenceProvider(params: UpdateConferenceProviderRequest): awsDashSdkLib.libRequestMod.Request[UpdateConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Updates an existing conference provider's settings.
-       */
-    def updateConferenceProvider(
-      params: UpdateConferenceProviderRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ UpdateConferenceProviderResponse, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[UpdateConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Updates the contact details by the contact ARN.
        */
@@ -3997,33 +2841,6 @@ object AlexaForBusinessNs extends js.Object {
   trait UpdateAddressBookResponse extends js.Object
   
   
-  trait UpdateConferenceProviderRequest extends js.Object {
-    /**
-         * The ARN of the conference provider.
-         */
-    var ConferenceProviderArn: Arn
-    /**
-         * The type of the conference provider.
-         */
-    var ConferenceProviderType: ConferenceProviderType
-    /**
-         * The IP endpoint and protocol for calling.
-         */
-    var IPDialIn: js.UndefOr[IPDialIn] = js.undefined
-    /**
-         * The meeting settings for the conference provider.
-         */
-    var MeetingSetting: MeetingSetting
-    /**
-         * The information for PSTN conferencing.
-         */
-    var PSTNDialIn: js.UndefOr[PSTNDialIn] = js.undefined
-  }
-  
-  
-  trait UpdateConferenceProviderResponse extends js.Object
-  
-  
   trait UpdateContactRequest extends js.Object {
     /**
          * The ARN of the contact to update.
@@ -4075,10 +2892,6 @@ object AlexaForBusinessNs extends js.Object {
          * The updated distance unit for the room profile.
          */
     var DistanceUnit: js.UndefOr[DistanceUnit] = js.undefined
-    /**
-         * Sets the profile as default if selected. If this is missing, no update is done to the default status.
-         */
-    var IsDefault: js.UndefOr[scala.Boolean] = js.undefined
     /**
          * The updated maximum volume limit for the room profile.
          */
@@ -4195,36 +3008,19 @@ object AlexaForBusinessNs extends js.Object {
   type AddressBookDataList = js.Array[AddressBookData]
   type AddressBookDescription = java.lang.String
   type AddressBookName = java.lang.String
-  type AmazonId = java.lang.String
-  type ApplianceDescription = java.lang.String
-  type ApplianceFriendlyName = java.lang.String
-  type ApplianceManufacturerName = java.lang.String
   type Arn = java.lang.String
   type Boolean = scala.Boolean
-  type BulletPoint = java.lang.String
-  type BulletPoints = js.Array[BulletPoint]
-  type CategoryId = scala.Double
-  type CategoryList = js.Array[Category]
-  type CategoryName = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type ClientId = java.lang.String
   type ClientRequestToken = java.lang.String
-  type CommsProtocol = awsDashSdkLib.awsDashSdkLibStrings.SIP | awsDashSdkLib.awsDashSdkLibStrings.SIPS | awsDashSdkLib.awsDashSdkLibStrings.H323 | java.lang.String
-  type ConferenceProviderName = java.lang.String
-  type ConferenceProviderType = awsDashSdkLib.awsDashSdkLibStrings.CHIME | awsDashSdkLib.awsDashSdkLibStrings.BLUEJEANS | awsDashSdkLib.awsDashSdkLibStrings.FUZE | awsDashSdkLib.awsDashSdkLibStrings.GOOGLE_HANGOUTS | awsDashSdkLib.awsDashSdkLibStrings.POLYCOM | awsDashSdkLib.awsDashSdkLibStrings.RINGCENTRAL | awsDashSdkLib.awsDashSdkLibStrings.SKYPE_FOR_BUSINESS | awsDashSdkLib.awsDashSdkLibStrings.WEBEX | awsDashSdkLib.awsDashSdkLibStrings.ZOOM | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM | java.lang.String
-  type ConferenceProvidersList = js.Array[ConferenceProvider]
   type ConnectionStatus = awsDashSdkLib.awsDashSdkLibStrings.ONLINE | awsDashSdkLib.awsDashSdkLibStrings.OFFLINE | java.lang.String
   type ContactDataList = js.Array[ContactData]
   type ContactName = java.lang.String
-  type CountryCode = java.lang.String
-  type DeveloperName = java.lang.String
   type DeviceDataList = js.Array[DeviceData]
   type DeviceEventList = js.Array[DeviceEvent]
   type DeviceEventType = awsDashSdkLib.awsDashSdkLibStrings.CONNECTION_STATUS | awsDashSdkLib.awsDashSdkLibStrings.DEVICE_STATUS | java.lang.String
   type DeviceEventValue = java.lang.String
   type DeviceName = java.lang.String
   type DeviceSerialNumber = java.lang.String
-  type DeviceSerialNumberForAVS = java.lang.String
   type DeviceStatus = awsDashSdkLib.awsDashSdkLibStrings.READY | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.WAS_OFFLINE | awsDashSdkLib.awsDashSdkLibStrings.DEREGISTERED | java.lang.String
   type DeviceStatusDetailCode = awsDashSdkLib.awsDashSdkLibStrings.DEVICE_SOFTWARE_UPDATE_NEEDED | awsDashSdkLib.awsDashSdkLibStrings.DEVICE_WAS_OFFLINE | java.lang.String
   type DeviceStatusDetails = js.Array[DeviceStatusDetail]
@@ -4232,10 +3028,6 @@ object AlexaForBusinessNs extends js.Object {
   type DistanceUnit = awsDashSdkLib.awsDashSdkLibStrings.METRIC | awsDashSdkLib.awsDashSdkLibStrings.IMPERIAL | java.lang.String
   type E164PhoneNumber = java.lang.String
   type Email = java.lang.String
-  type EnablementType = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.PENDING | java.lang.String
-  type EnablementTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.PENDING | java.lang.String
-  type EndUserLicenseAgreement = java.lang.String
-  type Endpoint = java.lang.String
   type EnrollmentId = java.lang.String
   type EnrollmentStatus = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZED | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.REGISTERED | awsDashSdkLib.awsDashSdkLibStrings.DISASSOCIATING | awsDashSdkLib.awsDashSdkLibStrings.DEREGISTERING | java.lang.String
   type Feature = awsDashSdkLib.awsDashSdkLibStrings.BLUETOOTH | awsDashSdkLib.awsDashSdkLibStrings.VOLUME | awsDashSdkLib.awsDashSdkLibStrings.NOTIFICATIONS | awsDashSdkLib.awsDashSdkLibStrings.LISTS | awsDashSdkLib.awsDashSdkLibStrings.SKILLS | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
@@ -4244,50 +3036,26 @@ object AlexaForBusinessNs extends js.Object {
   type FilterList = js.Array[Filter]
   type FilterValue = java.lang.String
   type FilterValueList = js.Array[FilterValue]
-  type GenericKeyword = java.lang.String
-  type GenericKeywords = js.Array[GenericKeyword]
-  type IconUrl = java.lang.String
-  type InvocationPhrase = java.lang.String
-  type Key = java.lang.String
   type MacAddress = java.lang.String
   type MaxResults = scala.Double
   type MaxVolumeLimit = scala.Double
-  type NewInThisVersionBulletPoints = js.Array[BulletPoint]
   type NextToken = java.lang.String
-  type OneClickIdDelay = java.lang.String
-  type OneClickPinDelay = java.lang.String
-  type PhoneNumber = java.lang.String
-  type PrivacyPolicy = java.lang.String
-  type ProductDescription = java.lang.String
-  type ProductId = java.lang.String
   type ProfileDataList = js.Array[ProfileData]
   type ProfileName = java.lang.String
   type ProviderCalendarId = java.lang.String
-  type ReleaseDate = java.lang.String
-  type RequirePin = awsDashSdkLib.awsDashSdkLibStrings.YES | awsDashSdkLib.awsDashSdkLibStrings.NO | awsDashSdkLib.awsDashSdkLibStrings.OPTIONAL | java.lang.String
-  type ReviewKey = java.lang.String
-  type ReviewValue = java.lang.String
   type RoomDataList = js.Array[RoomData]
   type RoomDescription = java.lang.String
   type RoomName = java.lang.String
   type RoomSkillParameterKey = java.lang.String
   type RoomSkillParameterValue = java.lang.String
   type RoomSkillParameters = js.Array[RoomSkillParameter]
-  type SampleUtterances = js.Array[Utterance]
-  type ShortDescription = java.lang.String
   type SkillGroupDataList = js.Array[SkillGroupData]
   type SkillGroupDescription = java.lang.String
   type SkillGroupName = java.lang.String
   type SkillId = java.lang.String
   type SkillListMaxResults = scala.Double
   type SkillName = java.lang.String
-  type SkillStoreType = java.lang.String
   type SkillSummaryList = js.Array[SkillSummary]
-  type SkillType = awsDashSdkLib.awsDashSdkLibStrings.PUBLIC | awsDashSdkLib.awsDashSdkLibStrings.PRIVATE | java.lang.String
-  type SkillTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.PUBLIC | awsDashSdkLib.awsDashSdkLibStrings.PRIVATE | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
-  type SkillTypes = js.Array[SkillStoreType]
-  type SkillsStoreSkillList = js.Array[SkillsStoreSkill]
-  type SmartHomeApplianceList = js.Array[SmartHomeAppliance]
   type SoftwareVersion = java.lang.String
   type SortKey = java.lang.String
   type SortList = js.Array[Sort]
@@ -4300,12 +3068,8 @@ object AlexaForBusinessNs extends js.Object {
   type Timestamp = stdLib.Date
   type Timezone = java.lang.String
   type TotalCount = scala.Double
-  type Url = java.lang.String
-  type UserCode = java.lang.String
   type UserDataList = js.Array[UserData]
   type UserId = java.lang.String
-  type Utterance = java.lang.String
-  type Value = java.lang.String
   type WakeWord = awsDashSdkLib.awsDashSdkLibStrings.ALEXA | awsDashSdkLib.awsDashSdkLibStrings.AMAZON | awsDashSdkLib.awsDashSdkLibStrings.ECHO | awsDashSdkLib.awsDashSdkLibStrings.COMPUTER | java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-11-09` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
   type user_FirstName = java.lang.String

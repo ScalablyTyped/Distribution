@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "markerclustererplus"
-version := "2.1-dt-20181102Z-85c979"
+version := "2.1-dt-20180910Z-95ed79"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "google-maps" % "3.2.1-dt-20181102Z-5147bf",
-  "com.scalablytyped" %%% "googlemaps" % "3.30-dt-20181102Z-0e58f6",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "google-maps" % "3.2.1-dt-20180910Z-0da786",
+  "com.scalablytyped" %%% "googlemaps" % "3.30-dt-20181027Z-d0e2bf",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

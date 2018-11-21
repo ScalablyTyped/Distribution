@@ -28,7 +28,7 @@ trait Observable[T] extends js.Object {
            * @param [scheduler] Scheduler on which to perform the expansion. If not provided, this defaults to the current thread scheduler.
            * @returns An observable sequence containing all the elements produced by the recursive expansion.
            */
-  def expand(selector: js.Function1[/* item */ T, Observable[T]], scheduler: rxDashLiteLib.RxNs.IScheduler): Observable[T] = js.native
+  def expand(selector: js.Function1[/* item */ T, Observable[T]], scheduler: rxDashCoreLib.RxNs.IScheduler): Observable[T] = js.native
   def forkJoin[TSecond, TResult](
     second: rxDashCoreLib.RxNs.IPromise[TSecond],
     resultSelector: js.Function2[/* left */ T, /* right */ TSecond, TResult]
@@ -87,7 +87,7 @@ trait Observable[T] extends js.Object {
       /* source */ Observable[T], 
       TResult
     ],
-    scheduler: rxDashLiteLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler
   ): Observable[TResult] = js.native
 }
 

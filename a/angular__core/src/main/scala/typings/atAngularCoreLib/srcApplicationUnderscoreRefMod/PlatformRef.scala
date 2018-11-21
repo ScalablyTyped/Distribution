@@ -97,6 +97,8 @@ class PlatformRef () extends js.Object {
        *
        * let moduleRef = platformBrowser().bootstrapModuleFactory(MyModuleNgFactory);
        * ```
+       *
+       * @experimental APIs related to application bootstrap are currently under review.
        */
   def bootstrapModuleFactory[M](moduleFactory: atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[M]): stdLib.Promise[atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleRef[M]] = js.native
   /**
@@ -120,6 +122,8 @@ class PlatformRef () extends js.Object {
        *
        * let moduleRef = platformBrowser().bootstrapModuleFactory(MyModuleNgFactory);
        * ```
+       *
+       * @experimental APIs related to application bootstrap are currently under review.
        */
   def bootstrapModuleFactory[M](
     moduleFactory: atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[M],

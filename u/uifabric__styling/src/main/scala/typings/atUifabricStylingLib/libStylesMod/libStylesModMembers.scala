@@ -172,19 +172,18 @@ object libStylesModMembers extends js.Object {
     theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme,
     disableGlobalClassNames: scala.Boolean
   ): stdLib.Partial[atUifabricStylingLib.libStylesGetGlobalClassNamesMod.GlobalClassNames[T]] = js.native
+  def getSchemedContext(
+    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
+    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext
+  ): js.UndefOr[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
+  def getSchemedContext(
+    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
+    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
+    settingsTheme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
+  ): js.UndefOr[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
   def getScreenSelector(min: scala.Double, max: scala.Double): java.lang.String = js.native
   def getTheme(): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def getTheme(depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
-  def getThemedContext(context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
-  def getThemedContext(
-    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
-    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames
-  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
-  def getThemedContext(
-    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
-    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
-    theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
-  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme, depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def registerDefaultFontFaces(baseUrl: java.lang.String): scala.Unit = js.native

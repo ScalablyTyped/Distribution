@@ -17,6 +17,6 @@ class Session () extends js.Object {
 - Dropped Object */ @JSGlobal("Parse.Session")
 @js.native
 object Session extends js.Object {
-  def current(): parseLib.ParseNs.Promise[parseLib.ParseNs.Session] = js.native
+  def current(): stdLib.Promise[parseLib.ParseNs.Session] = js.native
 }
 

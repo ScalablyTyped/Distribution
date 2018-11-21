@@ -21,6 +21,21 @@ trait RichEditSelection extends js.Object {
        */
   var intervals: js.Array[Interval] = js.native
   /**
+       * Gets whether a floating picture or text box is selected.
+       * Value: true, if only a floating picture or text box is selected; otherwise, false.
+       */
+  var isFloatingObjectSelected: scala.Boolean = js.native
+  /**
+       * Gets whether only a picture is selected.
+       * Value: true, if only the picture is selected; otherwise, false.
+       */
+  var isPictureSelected: scala.Boolean = js.native
+  /**
+       * Gets whether only a text box is selected.
+       * Value: true, if only a text box or any its content is selected; otherwise, false.
+       */
+  var isTextBoxSelected: scala.Boolean = js.native
+  /**
        * Gets the maximum position of a document interval in the selection.
        */
   def getIntervalMaxPosition(): scala.Double = js.native
@@ -213,6 +228,11 @@ trait RichEditSelection extends js.Object {
        */
   def selectTableRow(extendSelection: scala.Boolean): scala.Unit = js.native
   /**
+       * Makes the specified sub-document active.
+       * @param id An integer value identifying the target sub-document by its id.
+       */
+  def setActiveSubDocumentById(id: scala.Double): scala.Unit = js.native
+  /**
        * Creates a footer sub-document (if it was not created before) and sets the footer as the active sub-document. Moves the cursor to the footer's start position.
        * @param pageIndex An integer value specifying the active page's index.
        */
@@ -226,5 +246,34 @@ trait RichEditSelection extends js.Object {
        * Makes the main sub-document active and moves the cursor to its beginning.
        */
   def setMainSubDocumentAsActive(): scala.Unit = js.native
+  /**
+       * Defines the selection to the specified interval.
+       * @param interval An  value specifying the target interval.
+       */
+  def setSelection(interval: Interval): scala.Unit = js.native
+  /**
+       * Defines the selection as the specified intervals.
+       * @param intervals An array of the Interval objects specifying the target intervals.
+       */
+  def setSelection(intervals: js.Array[Interval]): scala.Unit = js.native
+  /**
+       * Defines the selection as the specified position.
+       * @param position An integer value specifying the position in the sub-document.
+       */
+  def setSelection(position: scala.Double): scala.Unit = js.native
+  /**
+       * Makes the selected text box active.
+       */
+  def setTextBoxSubDocumentAsActive(): scala.Unit = js.native
+  /**
+       * Makes the specified text box active.
+       * @param position An integer value identifying the target text box by its anchor position.
+       */
+  def setTextBoxSubDocumentAsActive(position: scala.Double): scala.Unit = js.native
+  /**
+       * Makes the specified text box active.
+       * @param textBoxInfo A FloatingTextBoxInfo object identifying the target text box.
+       */
+  def setTextBoxSubDocumentAsActive(textBoxInfo: FloatingTextBoxInfo): scala.Unit = js.native
 }
 

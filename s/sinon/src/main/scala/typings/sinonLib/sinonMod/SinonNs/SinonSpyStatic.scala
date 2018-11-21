@@ -10,11 +10,11 @@ trait SinonSpyStatic extends js.Object {
   /**
            * Creates an anonymous function that records arguments, this value, exceptions and return values for all calls.
            */
-  def apply(): SinonSpy = js.native
+  def apply(): SinonSpy[js.Array[_], _] = js.native
   /**
            * Spies on the provided function
            */
-  def apply(func: js.Function): SinonSpy = js.native
+  def apply(func: js.Function): SinonSpy[js.Array[_], _] = js.native
   /**
            * Creates a spy for object.method and replaces the original method with the spy.
            * An exception is thrown if the property is not already a function.
@@ -22,6 +22,6 @@ trait SinonSpyStatic extends js.Object {
            * The original method can be restored by calling object.method.restore().
            * The returned spy is the function object which replaced the original method. spy === object.method.
            */
-  def apply[T](obj: T, method: java.lang.String): SinonSpy = js.native
+  def apply[T, K /* <: java.lang.String */](obj: T, method: K): (SinonSpy[js.Array[_], _]) | (SinonSpy[_, _]) = js.native
 }
 

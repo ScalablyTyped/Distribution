@@ -151,6 +151,11 @@ trait RichEditCommands extends js.Object {
        */
   var changeFontUnderline: ChangeFontUnderlineCommand
   /**
+       * Gets a command that changes the specified hyperlink.
+       * Value: A <see cref="ChangeHyperlinkCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var changeHyperlink: ChangeHyperlinkCommand
+  /**
        * Gets a command to set the background color of all pages contained in the document.
        * Value: A <see cref="ChangePageColorCommand" /> object that provides methods for executing the command and checking its state.
        */
@@ -271,6 +276,11 @@ trait RichEditCommands extends js.Object {
        */
   var changeTextBoxResizeShapeToFitText: ChangeTextBoxResizeShapeToFitTextCommand
   /**
+       * Gets a command to change the Rich Edit's document view type.
+       * Value: A <see cref="ChangeViewTypeCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var changeViewType: ChangeViewTypeCommand
+  /**
        * Gets a command to reset textual and paragraph formatting in the selected range to default values.
        * Value: A <see cref="ClearFormattingCommand" /> object that provides methods for executing the command and checking its state.
        */
@@ -301,7 +311,7 @@ trait RichEditCommands extends js.Object {
        */
   var createDateField: CreateDateFieldCommand
   /**
-       * Gets a command to create a field with an empty code and populate it with the characters in the selected range (if it is not collapsed).
+       * Gets a command to add a field at the current position in a document.
        * Value: A <see cref="CreateFieldCommand" /> object that provides methods for executing the command and checking its state.
        */
   var createField: CreateFieldCommand
@@ -316,7 +326,7 @@ trait RichEditCommands extends js.Object {
        */
   var createPageCountField: CreatePageCountFieldCommand
   /**
-       * A command to replace the selection with a PAGE field displaying the current page number.
+       * Gets a command to replace the selection with a PAGE field displaying the current page number.
        * Value: A <see cref="CreatePageFieldCommand" /> object that provides methods for executing the command and checking its state.
        */
   var createPageField: CreatePageFieldCommand
@@ -356,7 +366,7 @@ trait RichEditCommands extends js.Object {
        */
   var delete: DeleteCommand
   /**
-       * A command to delete a specific bookmark.
+       * Gets a command to delete a specific bookmark.
        * Value: A <see cref="DeleteBookmarkCommand" /> object that provides methods for executing the command and checking its state.
        */
   var deleteBookmark: DeleteBookmarkCommand
@@ -446,6 +456,16 @@ trait RichEditCommands extends js.Object {
        */
   var findAll: FindAllCommand
   /**
+       * Gets a command to force synchronizing the server document model with the client model and execute a callback function if it is necessary.
+       * Value: A <see cref="ForceSyncWithServerCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var forceSyncWithServer: ForceSyncWithServerCommand
+  /**
+       * Gets a command to receive RTF formatted content from the document in the specified range.
+       * Value: A <see cref="GetRtfCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var getRtf: GetRtfCommand
+  /**
        * Gets a command to navigate to the specified bookmark.
        * Value: A <see cref="GoToBookmarkCommand" /> object that provides methods for executing the command and checking its state.
        */
@@ -531,6 +551,21 @@ trait RichEditCommands extends js.Object {
        */
   var insertColumnBreak: InsertColumnBreakCommand
   /**
+       * Gets a command to insert content created on the server to the client model.
+       * Value: A <see cref="InsertContentFromServerCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var insertContentFromServer: InsertContentFromServerCommand
+  /**
+       * Gets a command to add a caption (numbered label) to an equation.
+       * Value: A <see cref="InsertEquationsCaptionCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var insertEquationsCaption: InsertEquationsCaptionCommand
+  /**
+       * Gets a command to add a caption (numbered label) to a figure.
+       * Value: A <see cref="InsertFiguresCaptionCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var insertFiguresCaption: InsertFiguresCaptionCommand
+  /**
        * Gets a command to insert a floating text box.
        * Value: A <see cref="InsertFloatingTextBoxCommand" /> object that provides methods for executing the command and checking its state.
        */
@@ -585,6 +620,11 @@ trait RichEditCommands extends js.Object {
        * Value: A <see cref="InsertPictureCommand" /> object that provides methods for executing the command and checking its state.
        */
   var insertPicture: InsertPictureCommand
+  /**
+       * Gets a command to add RTF formatted content at the specified position.
+       * Value: A <see cref="InsertRtfCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var insertRtf: InsertRtfCommand
   /**
        * Gets a command to insert a section break and starts a new section on the next even-numbered page.
        * Value: A <see cref="InsertSectionBreakEvenPageCommand" /> object that provides methods for executing the command and checking its state.
@@ -641,6 +681,26 @@ trait RichEditCommands extends js.Object {
        */
   var insertTableColumnToTheRight: InsertTableColumnToTheRightCommand
   /**
+       * Gets a command to insert a table of contents.
+       * Value: A <see cref="InsertTableOfContentsCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var insertTableOfContents: InsertTableOfContentsCommand
+  /**
+       * Gets a command to create a table of equations on the base of equation captions.
+       * Value: A <see cref="InsertTableOfEquationsCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var insertTableOfEquations: InsertTableOfEquationsCommand
+  /**
+       * Gets a command to create a table of figures on the base of figures captions.
+       * Value: A <see cref="InsertTableOfFiguresCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var insertTableOfFigures: InsertTableOfFiguresCommand
+  /**
+       * Gets a command to create a table of tables on the base of tables captions.
+       * Value: A <see cref="InsertTableOfTablesCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var insertTableOfTables: InsertTableOfTablesCommand
+  /**
        * Gets a command to insert a row in the table above the selected row.
        * Value: A <see cref="InsertTableRowAboveCommand" /> object that provides methods for executing the command and checking its state.
        */
@@ -650,6 +710,11 @@ trait RichEditCommands extends js.Object {
        * Value: A <see cref="InsertTableRowBelowCommand" /> object that provides methods for executing the command and checking its state.
        */
   var insertTableRowBelow: InsertTableRowBelowCommand
+  /**
+       * Gets a command to add a caption (numbered label) to a table.
+       * Value: A <see cref="InsertTablesCaptionCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var insertTablesCaption: InsertTablesCaptionCommand
   /**
        * Gets a command to insert text in place of a selected range.
        * Value: A <see cref="InsertTextCommand" /> object that provides methods for executing the command and checking its state.
@@ -886,6 +951,11 @@ trait RichEditCommands extends js.Object {
        */
   var setPageSizeDialog: SetPageSizeDialogCommand
   /**
+       * Gets a command to apply a paragraph level to the selected text
+       * Value: A <see cref="SetParagraphLevelCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var setParagraphLevel: SetParagraphLevelCommand
+  /**
        * Gets a command to format a current paragraph with one and a half line spacing.
        * Value: A <see cref="SetSesquialteralParagraphSpacingCommand" /> object that provides methods for executing the command and checking its state.
        */
@@ -896,7 +966,7 @@ trait RichEditCommands extends js.Object {
        */
   var setSingleParagraphSpacing: SetSingleParagraphSpacingCommand
   /**
-       * Get a command to display all field codes in place of the fields in the document.
+       * Gets a command to display all field codes in place of the fields in the document.
        * Value: A <see cref="ShowAllFieldCodesCommand" /> object that provides methods for executing the command and checking its state.
        */
   var showAllFieldCodes: ShowAllFieldCodesCommand
@@ -975,6 +1045,16 @@ trait RichEditCommands extends js.Object {
        * Value: A <see cref="ToggleParagraphAlignmentRightCommand" /> object that provides methods for executing the command and checking its state.
        */
   var toggleParagraphAlignmentRight: ToggleParagraphAlignmentRightCommand
+  /**
+       * Gets a command that fits the specified table to its contents.
+       * Value: A <see cref="ToggleTableAutoFitContentsCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var toggleTableAutoFitContents: ToggleTableAutoFitContentsCommand
+  /**
+       * Gets a command that fits the specified table to a document's window.
+       * Value: A <see cref="ToggleTableAutoFitWindowCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var toggleTableAutoFitWindow: ToggleTableAutoFitWindowCommand
   /**
        * Gets a command to apply bottom-center alignment for the selected cells.
        * Value: A <see cref="ToggleTableCellAlignBottomCenterCommand" /> object that provides methods for executing the command and checking its state.
@@ -1066,6 +1146,11 @@ trait RichEditCommands extends js.Object {
        */
   var toggleTableCellTopBorder: ToggleTableCellTopBorderCommand
   /**
+       * Gets a command that disables automatic adjusting of the selected table.
+       * Value: A <see cref="ToggleTableFixedColumnWidthCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var toggleTableFixedColumnWidth: ToggleTableFixedColumnWidthCommand
+  /**
        * Gets a command to toggle case for each character - upper case becomes lower, lower case becomes upper.
        * Value: A <see cref="ToggleTextCaseCommand" /> object that provides methods for executing the command and checking its state.
        */
@@ -1085,5 +1170,18 @@ trait RichEditCommands extends js.Object {
        * Value: A <see cref="UpdateFieldCommand" /> object that provides methods for executing the command and checking its state.
        */
   var updateField: UpdateFieldCommand
+  /**
+       * Gets a command to update a table of contents.
+       * Value: A <see cref="UpdateTableOfContentsCommand" /> object that provides methods for executing the command and checking its state.
+       */
+  var updateTableOfContents: UpdateTableOfContentsCommand
+  /**
+       * Gets a command to prevent the control UI from being updated until the endUpdate method is called.
+       */
+  def beginUpdate(): scala.Unit
+  /**
+       * Re-enables render operations after a call to the beginUpdate method and forces immediate re-rendering.
+       */
+  def endUpdate(): scala.Unit
 }
 

@@ -6,6 +6,7 @@
 //                 Josh Goldberg <https://github.com/JoshuaKGoldberg>
 //                 Eliot Fallon <https://github.com/eliotfallon213>
 //                 Terry Mun <https://github.com/terrymun>
+//                 Paul Hobbel <https://github.com/paulhobbel>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.1
 /**

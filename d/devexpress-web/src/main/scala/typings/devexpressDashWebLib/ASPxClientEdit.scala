@@ -43,6 +43,10 @@ trait ASPxClientEdit extends ASPxClientEditBase {
        */
   def GetIsValid(): scala.Boolean
   /**
+       * Returns a value indicating whether the editor's state is read-only on the client-side.
+       */
+  def GetReadOnly(): scala.Boolean
+  /**
        * Sets the error text to be displayed within the editor's error frame if the editor's validation fails.
        * @param errorText A string value representing the error text.
        */
@@ -52,6 +56,11 @@ trait ASPxClientEdit extends ASPxClientEditBase {
        * @param isValid True if the editor's value is valid; otherwise, False.
        */
   def SetIsValid(isValid: scala.Boolean): scala.Unit
+  /**
+       * Specifies whether the control's state is read-only on the client side.
+       * @param readOnly true, to make the control read-only on the client side; otherwise, false.
+       */
+  def SetReadOnly(readOnly: scala.Boolean): scala.Unit
   /**
        * Performs the editor's validation.
        */

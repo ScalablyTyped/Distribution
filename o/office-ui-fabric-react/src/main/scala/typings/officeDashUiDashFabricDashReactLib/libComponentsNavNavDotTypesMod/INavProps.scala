@@ -17,8 +17,8 @@ trait INavProps extends js.Object {
        */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated at v0.68.1 and will be removed at \>= v1.0.0.
-       * @deprecated Removed at v1.0.0.
+       * Deprecated at v0.68.1 and will be removed at >= V1.0.0.
+       * @deprecated
        **/
   var collapsedStateText: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -31,8 +31,8 @@ trait INavProps extends js.Object {
        */
   var expandButtonAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated at v0.68.1 and will be removed at \>= v1.0.0.
-       * @deprecated Removed at v1.0.0.
+       * Deprecated at v0.68.1 and will be removed at >= V1.0.0.
+       * @deprecated
        **/
   var expandedStateText: js.UndefOr[java.lang.String] = js.undefined
   /**

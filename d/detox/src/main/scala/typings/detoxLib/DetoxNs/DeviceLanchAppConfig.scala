@@ -13,6 +13,10 @@ trait DeviceLanchAppConfig extends js.Object {
            */
   var delete: js.UndefOr[scala.Boolean] = js.undefined
   /**
+           * Launch config for specifying the native language and locale
+           */
+  var languageAndLocale: js.UndefOr[LanguageAndLocale] = js.undefined
+  /**
            * Detox can start the app with additional launch arguments
            * The added launchArgs will be passed through the launch command to the device and be accessible via [[NSProcessInfo processInfo] arguments]
            */

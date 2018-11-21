@@ -156,7 +156,7 @@ trait Router extends js.Object {
   /**
        * Match given `path` and return corresponding routes.
        */
-  def `match`(name: java.lang.String, method: java.lang.String): js.Object = js.native
+  def `match`(path: java.lang.String, method: java.lang.String): koaDashRouterLib.koaDashRouterMod.RouterNs.IRoutesMatch = js.native
   /**
        * Returns router middleware which dispatches a route matching the request.
        */

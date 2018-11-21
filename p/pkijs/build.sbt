@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "pkijs"
-version := "0.0-unknown-dt-20181102Z-1dde20"
+version := "0.0-unknown-dt-20180910Z-6a164e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "asn1js" % "0.0-unknown-dt-20181102Z-45dded",
-  "com.scalablytyped" %%% "pvutils" % "0.0-unknown-dt-20181102Z-59edac",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "asn1js" % "0.0-unknown-dt-20180910Z-bee995",
+  "com.scalablytyped" %%% "pvutils" % "0.0-unknown-dt-20180910Z-13a9ef",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

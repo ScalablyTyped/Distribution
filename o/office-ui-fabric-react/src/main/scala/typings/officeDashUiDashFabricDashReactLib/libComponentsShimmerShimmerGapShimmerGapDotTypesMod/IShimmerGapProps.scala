@@ -10,7 +10,7 @@ trait IShimmerGapProps
   extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement] {
   /**
        * Use to set custom styling of the shimmerGap borders.
-       * @deprecated Use `styles` prop to leverage mergeStyle API.
+       * @deprecated Use 'styles' prop to leverage mergeStyle API.
        */
   var borderStyle: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle] = js.undefined
   /**
@@ -20,7 +20,7 @@ trait IShimmerGapProps
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IShimmerGap]] = js.undefined
   /**
        * Sets the height of the gap.
-       * @defaultvalue 16px
+       * @default 16px
        */
   @JSName("height")
   var height_IShimmerGapProps: js.UndefOr[scala.Double] = js.undefined

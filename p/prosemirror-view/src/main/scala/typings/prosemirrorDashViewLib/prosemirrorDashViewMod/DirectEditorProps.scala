@@ -15,15 +15,10 @@ trait DirectEditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.
      * state that has the transaction
      * [applied](#state.EditorState.apply).
      */
-  var dispatchTransaction: js.UndefOr[
-    (js.Function1[
-      /* tr */ prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S], 
-      scala.Unit
-    ]) | scala.Null
-  ] = js.undefined
+  var dispatchTransaction: js.UndefOr[(js.Function1[/* tr */ js.Any, scala.Unit]) | scala.Null] = js.undefined
   /**
      * The current state of the editor.
      */
-  var state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]
+  var state: js.Any
 }
 

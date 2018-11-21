@@ -8,22 +8,23 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Application")
 @js.native
 class Application protected () extends js.Object {
-  val AnswerWizard: js.Any = js.native
+  val AnswerWizard: activexDashOfficeLib.OfficeNs.AnswerWizard = js.native
   val Application: Application = js.native
-  val Assistance: js.Any = js.native
-  val Assistant: js.Any = js.native
-  val COMAddIns: js.Any = js.native
+  val Assistance: activexDashOfficeLib.OfficeNs.IAssistance = js.native
+  val Assistant: activexDashOfficeLib.OfficeNs.Assistant = js.native
+  @JSName("COMAddIns")
+  val COMAddIns_Original: activexDashOfficeLib.OfficeNs.COMAddIns = js.native
   val Class: OlObjectClass = js.native
   val DefaultProfileName: java.lang.String = js.native
   val Explorers: Explorers = js.native
-  var FeatureInstall: js.Any = js.native
+  var FeatureInstall: activexDashOfficeLib.OfficeNs.MsoFeatureInstall = js.native
   val Inspectors: Inspectors = js.native
   val IsTrusted: scala.Boolean = js.native
-  val LanguageSettings: js.Any = js.native
+  val LanguageSettings: activexDashOfficeLib.OfficeNs.LanguageSettings = js.native
   val Name: java.lang.String = js.native
   var `Outlook.Application_typekey`: Application = js.native
   val Parent: js.Any = js.native
-  val PickerDialog: js.Any = js.native
+  val PickerDialog: activexDashOfficeLib.OfficeNs.PickerDialog = js.native
   val ProductCode: java.lang.String = js.native
   val Reminders: Reminders = js.native
   val Session: NameSpace = js.native
@@ -36,6 +37,8 @@ class Application protected () extends js.Object {
   def AdvancedSearch(Scope: java.lang.String, Filter: js.Any): Search = js.native
   def AdvancedSearch(Scope: java.lang.String, Filter: js.Any, SearchSubFolders: js.Any): Search = js.native
   def AdvancedSearch(Scope: java.lang.String, Filter: js.Any, SearchSubFolders: js.Any, Tag: js.Any): Search = js.native
+  def COMAddIns(Index: java.lang.String): activexDashOfficeLib.OfficeNs.COMAddIn = js.native
+  def COMAddIns(Index: scala.Double): activexDashOfficeLib.OfficeNs.COMAddIn = js.native
   def CopyFile(FilePath: java.lang.String, DestFolderPath: java.lang.String): js.Any = js.native
   def CreateItem(ItemType: OlItemType): ContactItem = js.native
   def CreateItemFromTemplate(TemplatePath: java.lang.String): js.Any = js.native

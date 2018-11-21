@@ -19,6 +19,10 @@ trait ASPxClientListBox extends ASPxClientListEdit {
        */
   var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientListBox]] = js.native
   /**
+       * Enables you to highlight the filtered items.
+       */
+  var CustomHighlighting: ASPxClientEvent[ASPxClientListEditCustomHighlightingEventHandler[ASPxClientListBox]] = js.native
+  /**
        * Occurs on the client side after a callback's server-side processing has been completed.
        */
   var EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientListBox]] = js.native
@@ -26,6 +30,10 @@ trait ASPxClientListBox extends ASPxClientListEdit {
        * Occurs on the client when the editor's item is double clicked.
        */
   var ItemDoubleClick: ASPxClientEvent[ASPxClientEventHandler[ASPxClientListBox]] = js.native
+  /**
+       * Fires before the filtering is executed.
+       */
+  var ItemFiltering: ASPxClientEvent[ASPxClientListEditItemFilteringEventHandler[ASPxClientListBox]] = js.native
   /**
        * Occurs on the client side when an end-user presses a key while the editor has focus.
        */
@@ -62,7 +70,7 @@ trait ASPxClientListBox extends ASPxClientListEdit {
        */
   def AddItem(text: java.lang.String, value: js.Object, imageUrl: java.lang.String): scala.Double = js.native
   /**
-       * Adds a new item to the editor, specifying the item's display text, and returns the added item's index.
+       * Adds a new item to the end of the editor's items collection, specifying the item's display text, and returns the index of the added item.
        * @param texts An array of strings that specifies the item's display text. Array element positions relate to the positions of the corresponding columns within the editor's Columns collection.
        */
   def AddItem(texts: js.Array[java.lang.String]): scala.Double = js.native

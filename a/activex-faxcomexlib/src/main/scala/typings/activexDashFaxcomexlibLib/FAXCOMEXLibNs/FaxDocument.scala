@@ -38,7 +38,7 @@ class FaxDocument protected () extends js.Object {
   @JSName("Recipients")
   val Recipients_Original: FaxRecipients = js.native
   /** Time to send the fax */
-  var ScheduleTime: stdLib.VarDate = js.native
+  var ScheduleTime: activexDashInteropLib.VarDate = js.native
   /** When to send the fax */
   var ScheduleType: FAX_SCHEDULE_TYPE_ENUM = js.native
   /** Sender information object */
@@ -50,13 +50,13 @@ class FaxDocument protected () extends js.Object {
   /** Tapi connection */
   var TapiConnection: js.Any = js.native
   /** Submit the fax document on the already connected server */
-  def ConnectedSubmit(pFaxServer: IFaxServer): stdLib.SafeArray[java.lang.String] = js.native
+  def ConnectedSubmit(pFaxServer: IFaxServer): activexDashInteropLib.SafeArray[java.lang.String] = js.native
   /** Submit the fax document on the already connected server */
-  def ConnectedSubmit2(pFaxServer: IFaxServer, pvFaxOutgoingJobIDs: stdLib.SafeArray[java.lang.String]): scala.Double = js.native
+  def ConnectedSubmit2(pFaxServer: IFaxServer, pvFaxOutgoingJobIDs: activexDashInteropLib.SafeArray[java.lang.String]): scala.Double = js.native
   /** Collection of recipients */
   def Recipients(lIndex: scala.Double): FaxRecipient = js.native
   /** Connect to server, submit the fax document, disconnect */
-  def Submit(bstrFaxServerName: java.lang.String): stdLib.SafeArray[scala.Double] = js.native
+  def Submit(bstrFaxServerName: java.lang.String): activexDashInteropLib.SafeArray[scala.Double] = js.native
   /** Connect to server, submit the fax document, disconnect */
   def Submit2(bstrFaxServerName: java.lang.String, pvFaxOutgoingJobIDs: js.Any): scala.Double = js.native
 }

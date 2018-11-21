@@ -45,7 +45,7 @@ trait ISpinButtonProps extends js.Object {
   /**
        * The initial value of the SpinButton. Use this if you intend for the SpinButton to be an uncontrolled component.
        * This value is mutually exclusive to value. Use one or the other.
-       * @defaultvalue 0
+       * @default 0
        */
   var defaultValue: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -104,19 +104,19 @@ trait ISpinButtonProps extends js.Object {
        */
   var label: java.lang.String
   /**
-       * @defaultvalue Left
+       * @default: Left
        */
   var labelPosition: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningDotTypesMod.Position
   ] = js.undefined
   /**
        * The max value of the SpinButton.
-       * @defaultvalue 10
+       * @default 10
        */
   var max: js.UndefOr[scala.Double] = js.undefined
   /**
        * The min value of the SpinButton.
-       * @defaultvalue 0
+       * @default 0
        */
   var min: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -126,7 +126,7 @@ trait ISpinButtonProps extends js.Object {
   /**
        * This callback is triggered when the decrement button is pressed or if the user presses down arrow
        * with focus on the input of the spinButton
-       * @returns If a string is returned, it will be used as the value of the SpinButton.
+       * @return {string | void} If a string is returned, it will be used as the value of the SpinButton.
        */
   var onDecrement: js.UndefOr[js.Function1[/* value */ java.lang.String, java.lang.String | scala.Unit]] = js.undefined
   /**
@@ -136,14 +136,14 @@ trait ISpinButtonProps extends js.Object {
   /**
        * This callback is triggered when the increment button is pressed or if the user presses up arrow
        * with focus on the input of the spinButton
-       * @returns If a string is returned, it will be used as the value of the SpinButton.
+       * @return {string | void} If a string is returned, it will be used as the value of the SpinButton.
        */
   var onIncrement: js.UndefOr[js.Function1[/* value */ java.lang.String, java.lang.String | scala.Unit]] = js.undefined
   /**
        * This callback is triggered when the value inside the SpinButton should be validated.
-       * @param value - The value entered in the SpinButton to validate
-       * @param event - The event that triggered this validate, if any. (For accessibility)
-       * @returns If a string is returned, it will be used as the value of the SpinButton.
+       * @param value: The value entered in the SpinButton to validate
+       * @param event: The event that triggered this validate, if any. (For accessibility)
+       * @return {string | void} If a string is returned, it will be used as the value of the SpinButton.
        */
   var onValidate: js.UndefOr[
     js.Function2[
@@ -162,8 +162,8 @@ trait ISpinButtonProps extends js.Object {
        * The difference between the two adjacent values of the SpinButton.
        * This value is sued to calculate the precision of the input if no
        * precision is given. The precision calculated this way will always
-       * be \>= 0.
-       * @defaultvalue 1
+       * be >= 0.
+       * @default 1
        */
   var step: js.UndefOr[scala.Double] = js.undefined
   /**

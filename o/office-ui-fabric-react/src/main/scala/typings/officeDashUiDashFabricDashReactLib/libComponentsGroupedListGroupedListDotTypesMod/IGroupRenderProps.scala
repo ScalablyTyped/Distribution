@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait IGroupRenderProps extends js.Object {
   /**
        * Flag to indicate whether to ignore the collapsing icon on header.
-       * @defaultvalue CheckboxVisibility.visible
+       * @default CheckboxVisibility.visible
        */
   var collapseAllVisibility: js.UndefOr[CollapseAllVisibility] = js.undefined
   /** Information to pass in to the group footer. */

@@ -11,7 +11,7 @@ class TimeZone () extends ClientObject {
   def get_description(): java.lang.String = js.native
   def get_id(): scala.Double = js.native
   def get_information(): TimeZoneInformation = js.native
-  def localTimeToUTC(date: stdLib.Date): DateTimeResult = js.native
-  def utcToLocalTime(date: stdLib.Date): DateTimeResult = js.native
+  def localTimeToUTC(date: microsoftDashAjaxLib.Date): DateTimeResult = js.native
+  def utcToLocalTime(date: microsoftDashAjaxLib.Date): DateTimeResult = js.native
 }
 

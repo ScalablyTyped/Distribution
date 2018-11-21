@@ -30,7 +30,7 @@ object guardsModMembers extends js.Object {
   def isIntegrationName(name: js.Any): /* is IntegrationName */scala.Boolean = js.native
   def isLogin(login: js.Any): /* is Login */scala.Boolean = js.native
   def isLoginResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
-  def isMultiProjectConfig(configFile: js.Any): /* is IMultiProjectConfig */scala.Boolean = js.native
+  def isMultiProjectConfig(configFile: js.Any): /* is MultiProjectConfig */scala.Boolean = js.native
   def isOAuthLogin(login: js.Any): /* is OAuthLogin */scala.Boolean = js.native
   def isOAuthLoginResponse(res: js.Any): /* is Response */scala.Boolean = js.native
   def isOrg(org: js.Any): /* is Org */scala.Boolean = js.native

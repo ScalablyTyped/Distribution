@@ -16,7 +16,7 @@ trait IFocusZoneProps
        * Allows tab key to be handled to tab through a list of items in the focus zone,
        * an unfortunate side effect is that users will not be able to tab out of the focus zone
        * and have to hit escape or some other key.
-       * @deprecated Use `handleTabKey` instead.
+       * @deprecated Use 'handleTabKey' instead.
        *
        */
   var allowTabKey: js.UndefOr[scala.Boolean] = js.undefined
@@ -31,7 +31,7 @@ trait IFocusZoneProps
   /**
        * Whether the to check for data-no-horizontal-wrap or data-no-vertical-wrap attributes
        * when determining how to move focus
-       * @defaultvalue false
+       * @default false
        */
   var checkForNoWrap: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -45,7 +45,7 @@ trait IFocusZoneProps
   var defaultActiveElement: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Defines which arrows to react to.
-       * @defaultvalue FocusZoneDirection.bidriectional
+       * @default FocusZoneDirection.bidriectional
        */
   var direction: js.UndefOr[FocusZoneDirection] = js.undefined
   /**
@@ -96,7 +96,7 @@ trait IFocusZoneProps
   ] = js.undefined
   /**
        * Callback method for determining if focus should indeed be set on the given element.
-       * @param element - The child element within the zone to focus.
+       * @param {HTMLElement} element The child element within the zone to focus.
        * @returns True if focus should be set to the given element, false to avoid setting focus.
        */
   var onBeforeFocus: js.UndefOr[js.Function1[/* childElement */ js.UndefOr[reactLib.HTMLElement], scala.Boolean]] = js.undefined
@@ -106,12 +106,12 @@ trait IFocusZoneProps
   var onFocusNotification: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
        * Deprecated at v1.12.1. DIV props provided to the FocusZone will be mixed into the root element.
-       * @deprecated DIV props provided to the FocusZone will be mixed into the root element.
+       * @deprecated
        */
   var rootProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
   /**
        * A callback method to determine if the input element should lose focus on arrow keys
-       *  @param inputElement - The input element which is to loose focus.
+       *  @param {HTMLInputElement} inputElement The input element which is to loose focus.
        *  @returns True if input element should loose focus or false otherwise.
        */
   var shouldInputLoseFocusOnArrowKey: js.UndefOr[js.Function1[/* inputElement */ reactLib.HTMLInputElement, scala.Boolean]] = js.undefined

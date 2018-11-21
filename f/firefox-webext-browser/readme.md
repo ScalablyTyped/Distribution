@@ -1,5 +1,5 @@
 ```
-// Type definitions for WebExtension Development in FireFox 63.0
+// Type definitions for WebExtension Development in FireFox 64.0
 // Project: https://developer.mozilla.org/en-US/Add-ons/WebExtensions
 // Definitions by: Jasmin Bom <https://github.com/jsmnbom>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

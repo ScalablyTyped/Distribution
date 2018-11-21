@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "windows-script-host"
-version := "5.8-dt-20181102Z-5ff8f3"
+version := "5.8-dt-20180910Z-f0d2cf"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "activex-interop" % "0.0-dt-20181102Z-530221",
-  "com.scalablytyped" %%% "activex-iwshruntimelibrary" % "0.0-dt-20181102Z-8d5601",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "activex-interop" % "0.0-dt-20180910Z-d387fd",
+  "com.scalablytyped" %%% "activex-iwshruntimelibrary" % "0.0-dt-20180910Z-0c5c26",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

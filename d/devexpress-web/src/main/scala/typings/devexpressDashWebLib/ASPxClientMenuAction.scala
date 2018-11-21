@@ -40,6 +40,7 @@ trait ASPxClientMenuAction extends js.Object {
        * Value: A string that specifies the name of the CSS class.
        */
   var imageClassName: java.lang.String
+  var imageTemplateName: java.lang.String
   /**
        * Provides access to the text for the command.
        * Value: A string that is the command text.

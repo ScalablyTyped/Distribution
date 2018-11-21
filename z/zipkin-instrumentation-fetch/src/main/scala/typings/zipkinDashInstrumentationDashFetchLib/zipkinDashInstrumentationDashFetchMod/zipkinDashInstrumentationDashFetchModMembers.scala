@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object zipkinDashInstrumentationDashFetchModMembers extends js.Object {
   def apply(
     rawFetch: js.Function2[
-      /* url */ java.lang.String | nodeDashFetchLib.nodeDashFetchMod.fetchNs.Request, 
-      /* init */ nodeDashFetchLib.nodeDashFetchMod.fetchNs.RequestInit, 
-      stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.fetchNs.Response]
+      /* url */ nodeDashFetchLib.nodeDashFetchMod.Request, 
+      /* init */ nodeDashFetchLib.nodeDashFetchMod.RequestInit, 
+      stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response]
     ],
     options: Options
   ): js.Function2[
-    /* url */ java.lang.String | nodeDashFetchLib.nodeDashFetchMod.fetchNs.Request, 
-    /* init */ nodeDashFetchLib.nodeDashFetchMod.fetchNs.RequestInit, 
-    stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.fetchNs.Response]
+    /* url */ nodeDashFetchLib.nodeDashFetchMod.Request, 
+    /* init */ nodeDashFetchLib.nodeDashFetchMod.RequestInit, 
+    stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response]
   ] = js.native
 }
 

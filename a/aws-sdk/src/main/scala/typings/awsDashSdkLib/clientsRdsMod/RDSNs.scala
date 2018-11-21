@@ -1636,10 +1636,6 @@ object RDSNs extends js.Object {
          */
     var LicenseModel: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * Specifies the listener connection endpoint for SQL Server Always On.
-         */
-    var ListenerEndpoint: js.UndefOr[Endpoint] = js.undefined
-    /**
          * Contains the master username for the DB instance.
          */
     var MasterUsername: js.UndefOr[java.lang.String] = js.undefined

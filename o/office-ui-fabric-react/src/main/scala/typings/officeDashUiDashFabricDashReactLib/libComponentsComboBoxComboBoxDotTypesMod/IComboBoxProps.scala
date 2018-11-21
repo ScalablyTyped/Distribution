@@ -16,7 +16,7 @@ trait IComboBoxProps
        * Whether the ComboBox auto completes. As the user is inputing text, it will be suggested potential matches from the list of options. If
        * the combo box is expanded, this will also scroll to the suggested option, and give it a selected style.
        *
-       * @defaultvalue "on"
+       * @default "on"
        */
   var autoComplete: js.UndefOr[
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.on | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.off
@@ -67,7 +67,7 @@ trait IComboBoxProps
        * Sets the 'aria-hidden' attribute on the ComboBox's button element instructing screen readers how to handle the element.
        * This element is hidden by default because all functionality is handled by the input element and the arrow button is
        * only meant to be decorative.
-       * @defaultvalue true
+       * @default true
        */
   var isButtonAriaHidden: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -97,8 +97,7 @@ trait IComboBoxProps
     ]
   ] = js.undefined
   /**
-       * Deprecated, use `onChange` instead.
-       * @deprecated Use `onChange` instead.
+       * @deprecated Use onChange instead.
        */
   var onChanged: js.UndefOr[
     js.Function4[
@@ -106,17 +105,6 @@ trait IComboBoxProps
       /* index */ js.UndefOr[scala.Double], 
       /* value */ js.UndefOr[java.lang.String], 
       /* submitPendingValueEvent */ js.UndefOr[js.Any], 
-      scala.Unit
-    ]
-  ] = js.undefined
-  /**
-       * Callback issued when a ComboBox item is clicked.
-       */
-  var onItemClick: js.UndefOr[
-    js.Function3[
-      /* event */ reactLib.reactMod.ReactNs.FormEvent[IComboBox], 
-      /* option */ js.UndefOr[IComboBoxOption], 
-      /* index */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
   ] = js.undefined
@@ -165,7 +153,7 @@ trait IComboBoxProps
   /**
        * When options are scrollable the selected option is positioned at the top of the callout when it is opened
        * (unless it has reached the end of the scrollbar).
-       * @defaultvalue false;
+       * @default false;
        */
   var scrollSelectedToTop: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -186,7 +174,6 @@ trait IComboBoxProps
   var useComboBoxAsMenuWidth: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Value to show in the input, does not have to map to a combobox option
-       * Deprecated, use `text` instead.
        * @deprecated Use `text` instead.
        */
   var value: js.UndefOr[java.lang.String] = js.undefined

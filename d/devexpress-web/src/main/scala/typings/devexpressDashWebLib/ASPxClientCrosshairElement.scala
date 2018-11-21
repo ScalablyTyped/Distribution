@@ -16,6 +16,11 @@ trait ASPxClientCrosshairElement extends js.Object {
        */
   var AxisLabelElement: ASPxClientCrosshairAxisLabelElement
   /**
+       * Gets an indicator that a crosshair element hovers over when the Crosshair Cursor is custom drawn.
+       * Value: An ASPxClientIndicator object which represents the series currently being painted.
+       */
+  var Indicator: ASPxClientIndicator
+  /**
        * Gets the crosshair label element.
        * Value: An ASPxClientCrosshairSeriesLabelElement object, representing the crosshair label element.
        */

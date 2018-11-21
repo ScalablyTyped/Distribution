@@ -15,5 +15,6 @@ trait ASPxClientXYDiagramPane extends ASPxClientWebChartElementNamed {
        * Value: An ASPxClientXYDiagram object, to which the pane belongs.
        */
   var diagram: ASPxClientXYDiagram
+  var title: ASPxClientPaneTitle
 }
 

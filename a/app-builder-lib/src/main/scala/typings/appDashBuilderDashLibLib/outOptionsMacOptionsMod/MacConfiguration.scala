@@ -38,7 +38,7 @@ trait MacConfiguration
   val electronLanguages: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
   /**
        * The path to entitlements file for signing the app. `build/entitlements.mac.plist` will be used if exists (it is a recommended way to set).
-       * MAS entitlements is specified in the [mas](/configuration/mas).
+       * MAS entitlements is specified in the [mas](mas.md).
        */
   val entitlements: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
@@ -62,8 +62,8 @@ trait MacConfiguration
        */
   val helperBundleId: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](/code-signing) instead of specifying this option.
-       * MAS installer identity is specified in the [mas](/configuration/mas).
+       * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](/code-signing.md) instead of specifying this option.
+       * MAS installer identity is specified in the [mas](mas.md).
        */
   val identity: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

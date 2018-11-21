@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 
 trait ASPxClientDateEdit extends ASPxClientDropDownEditBase {
   /**
+       * Occurs when an end user clicks a calendar date cell.
+       */
+  var CalendarCellClick: ASPxClientEvent[ASPxClientCalendarCellClickEventHandler[ASPxClientDateEdit]]
+  /**
        * Allows you to disable the calendar's days.
        */
   var CalendarCustomDisabledDate: ASPxClientEvent[ASPxClientCalendarCustomDisabledDateEventHandler[ASPxClientDateEdit]]
@@ -47,6 +51,10 @@ trait ASPxClientDateEdit extends ASPxClientDropDownEditBase {
        * Returns the number of days in a range selected within a date edit.
        */
   def GetRangeDayCount(): scala.Double
+  /**
+       * Gets the range length.
+       */
+  def GetRangeLength(): scala.Double
   /**
        * Returns the built-in time edit control.
        */

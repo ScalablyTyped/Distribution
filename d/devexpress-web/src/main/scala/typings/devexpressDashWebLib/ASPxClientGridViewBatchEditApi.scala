@@ -72,6 +72,14 @@ trait ASPxClientGridViewBatchEditApi extends js.Object {
        */
   def GetRowVisibleIndices(includeDeleted: scala.Boolean): js.Array[scala.Double] = js.native
   /**
+       * Returns an object that stores unsaved changes.
+       */
+  def GetUnsavedChanges(): js.Object = js.native
+  /**
+       * Returns an array of the updated rows visible indices.
+       */
+  def GetUpdatedRowIndices(): js.Array[scala.Double] = js.native
+  /**
        * Returns a value that indicates whether the grid has changed data.
        */
   def HasChanges(): scala.Boolean = js.native
@@ -86,6 +94,7 @@ trait ASPxClientGridViewBatchEditApi extends js.Object {
        * @param columnFieldNameOrId A string value that identifies the column by the name of the data source field to which the column is bound, or by the column's name.
        */
   def HasChanges(visibleIndex: scala.Double, columnFieldNameOrId: java.lang.String): scala.Boolean = js.native
+  def HideChangesPreview(): scala.Unit = js.native
   /**
        * Indicates if the row with specified visible index is deleted.
        * @param visibleIndex An integer value that identifies the row by its visible index.
@@ -122,11 +131,11 @@ trait ASPxClientGridViewBatchEditApi extends js.Object {
   /**
        * Resets changes in the specified cell.
        * @param visibleIndex An integer value that specifies the visible index of a row containing the processed cell.
-       * @param columnIndex A string value that specifies the field name or unique identifier (the column's Name property value) of a column containing the processed cell.
+       * @param columnIndex An integer value that specifies the field name or unique identifier (the column's Name property value) of a column containing the processed cell.
        */
   def ResetChanges(visibleIndex: scala.Double, columnIndex: scala.Double): scala.Unit = js.native
   /**
-       * Sets a value of the specified cell.
+       * Sets the value of the specified cell.
        * @param visibleIndex An integer zero-based index that identifies the row containing the processed cell.
        * @param columnFieldNameOrId A string value that specifies the field name or unique identifier (the column's Name property value) of a column containing the processed cell.
        * @param value An object that contains the new cell value.
@@ -161,6 +170,7 @@ trait ASPxClientGridViewBatchEditApi extends js.Object {
     displayText: java.lang.String,
     cancelCellHighlighting: scala.Boolean
   ): scala.Unit = js.native
+  def ShowChangesPreview(): scala.Unit = js.native
   /**
        * Switches the specified cell to edit mode.
        * @param visibleIndex A zero-based integer value that specifies the visible index of a row containing the processed cell.

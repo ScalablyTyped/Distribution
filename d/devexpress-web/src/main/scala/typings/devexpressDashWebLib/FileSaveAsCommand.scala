@@ -17,7 +17,7 @@ trait FileSaveAsCommand extends CommandWithSimpleStateBase {
   def execute(fileInfo: RichEditFileInfo): scala.Boolean = js.native
   /**
        * Executes the FileSaveAsCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-       * @param path A string value specifying path to the saving file. Note that the path should be relative to the work directory.
+       * @param path A string value specifying the path to the saving file. Note that the path should be relative to the work directory.
        */
   def execute(path: java.lang.String): scala.Boolean = js.native
 }

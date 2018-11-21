@@ -22,6 +22,8 @@ object BrowserModule extends js.Object {
        * @param params An object containing an identifier for the app to transition.
        * The ID must match between the client and server versions of the app.
        * @returns The reconfigured `BrowserModule` to import into the app's root `AppModule`.
+       *
+       * @experimental
        */
   def withServerTransition(params: atAngularPlatformDashBrowserLib.Anon_AppId): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularPlatformDashBrowserLib.srcBrowserMod.BrowserModule] = js.native
 }

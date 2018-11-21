@@ -16,10 +16,14 @@ trait IKeytipLayerProps
   /**
        * String to put inside the layer to be used for the aria-describedby for the component with the keytip
        * Should be one of the starting sequences
+       *
+       * @type {string}
        */
   var content: java.lang.String
   /**
        * List of key sequences that will exit keytips mode
+       *
+       * @type {KeySequence}
        */
   var keytipExitSequences: js.UndefOr[
     js.Array[
@@ -28,6 +32,8 @@ trait IKeytipLayerProps
   ] = js.undefined
   /**
        * List of key sequences that execute the return functionality in keytips (going back to the previous level of keytips)
+       *
+       * @type {KeySequence}
        */
   var keytipReturnSequences: js.UndefOr[
     js.Array[
@@ -36,6 +42,8 @@ trait IKeytipLayerProps
   ] = js.undefined
   /**
        * List of key sequences that will start keytips mode
+       *
+       * @type {KeySequence}
        */
   var keytipStartSequences: js.UndefOr[
     js.Array[
@@ -44,11 +52,15 @@ trait IKeytipLayerProps
   ] = js.undefined
   /**
        * Callback function triggered when keytip mode is entered
+       *
+       * @type {() => void)}
        */
   var onEnterKeytipMode: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
        * Callback function triggered when keytip mode is exited.
        * ev is the Mouse or Keyboard Event that triggered the exit, if any.
+       *
+       * @type {() => void}
        */
   var onExitKeytipMode: js.UndefOr[
     js.Function1[

@@ -19,6 +19,10 @@ trait ASPxClientCardView extends ASPxClientGridBase {
        */
   var BatchEditCardInserting: ASPxClientEvent[ASPxClientCardViewBatchEditCardInsertingEventHandler[ASPxClientCardView]] = js.native
   /**
+       * Occurs on the client side before a card is recovered in batch edit mode.
+       */
+  var BatchEditCardRecovering: ASPxClientEvent[ASPxClientCardViewBatchEditCardRecoveringEventHandler[ASPxClientCardView]] = js.native
+  /**
        * Enables you to specify whether card data is valid and provide an error text.
        */
   var BatchEditCardValidating: ASPxClientEvent[ASPxClientCardViewBatchEditCardValidatingEventHandler[ASPxClientCardView]] = js.native
@@ -66,6 +70,7 @@ trait ASPxClientCardView extends ASPxClientGridBase {
        * Fires before a card has been focused.
        */
   var CardFocusing: ASPxClientEvent[ASPxClientCardViewCardFocusingEventHandler[ASPxClientCardView]] = js.native
+  var ColumnGrouping: ASPxClientEvent[ASPxClientCardViewColumnCancelEventHandler[ASPxClientCardView]] = js.native
   /**
        * Enables you to prevent columns from being sorted.
        */
@@ -90,6 +95,8 @@ trait ASPxClientCardView extends ASPxClientGridBase {
        * Occurs on the client side when the focused cell is about to be changed.
        */
   var FocusedCellChanging: ASPxClientEvent[ASPxClientCardViewFocusedCellChangingEventHandler[ASPxClientCardView]] = js.native
+  var GroupRowCollapsing: ASPxClientEvent[ASPxClientCardViewGroupCancelEventHandler[ASPxClientCardView]] = js.native
+  var GroupRowExpanding: ASPxClientEvent[ASPxClientCardViewGroupCancelEventHandler[ASPxClientCardView]] = js.native
   /**
        * Fires after the selection has been changed.
        */
@@ -125,6 +132,12 @@ trait ASPxClientCardView extends ASPxClientGridBase {
        * Hides the Filter Control.
        */
   def CloseFilterControl(): scala.Unit = js.native
+  def CollapseAll(): scala.Unit = js.native
+  /**
+       * 
+       * @param visibleIndex 
+       */
+  def CollapseGroupRow(visibleIndex: scala.Double): scala.Unit = js.native
   /**
        * Deletes the specified card.
        * @param visibleIndex An integer value that identifies the card.
@@ -135,8 +148,14 @@ trait ASPxClientCardView extends ASPxClientGridBase {
        * @param key An object that uniquely identifies the card.
        */
   def DeleteCardByKey(key: js.Object): scala.Unit = js.native
+  def ExpandAll(): scala.Unit = js.native
   /**
-       * Exports a grid data to a file in the specified format.
+       * 
+       * @param visibleIndex 
+       */
+  def ExpandGroupRow(visibleIndex: scala.Double): scala.Unit = js.native
+  /**
+       * Exports grid data to a file in the specified format.
        * @param format An ASPxClientCardViewExportFormat object specifying the export format.
        */
   def ExportTo(format: ASPxClientCardViewExportFormat): scala.Unit = js.native
@@ -287,6 +306,60 @@ trait ASPxClientCardView extends ASPxClientGridBase {
        * @param pageIndex An integer value that specifies the active page's index.
        */
   def GotoPage(pageIndex: scala.Double): scala.Unit = js.native
+  /**
+       * 
+       * @param columnFieldNameOrId 
+       */
+  def GroupBy(columnFieldNameOrId: java.lang.String): scala.Unit = js.native
+  /**
+       * 
+       * @param columnFieldNameOrId 
+       * @param groupIndex 
+       */
+  def GroupBy(columnFieldNameOrId: java.lang.String, groupIndex: scala.Double): scala.Unit = js.native
+  /**
+       * 
+       * @param columnFieldNameOrId 
+       * @param groupIndex 
+       * @param sortOrder 
+       */
+  def GroupBy(columnFieldNameOrId: java.lang.String, groupIndex: scala.Double, sortOrder: java.lang.String): scala.Unit = js.native
+  /**
+       * 
+       * @param columnIndex 
+       */
+  def GroupBy(columnIndex: scala.Double): scala.Unit = js.native
+  /**
+       * 
+       * @param columnIndex 
+       * @param groupIndex 
+       */
+  def GroupBy(columnIndex: scala.Double, groupIndex: scala.Double): scala.Unit = js.native
+  /**
+       * 
+       * @param columnIndex 
+       * @param groupIndex 
+       * @param sortOrder 
+       */
+  def GroupBy(columnIndex: scala.Double, groupIndex: scala.Double, sortOrder: java.lang.String): scala.Unit = js.native
+  /**
+       * 
+       * @param column 
+       */
+  def GroupBy(column: ASPxClientCardViewColumn): scala.Unit = js.native
+  /**
+       * 
+       * @param column 
+       * @param groupIndex 
+       */
+  def GroupBy(column: ASPxClientCardViewColumn, groupIndex: scala.Double): scala.Unit = js.native
+  /**
+       * 
+       * @param column 
+       * @param groupIndex 
+       * @param sortOrder 
+       */
+  def GroupBy(column: ASPxClientCardViewColumn, groupIndex: scala.Double, sortOrder: java.lang.String): scala.Unit = js.native
   /**
        * Closes the customization window.
        */
@@ -623,6 +696,21 @@ trait ASPxClientCardView extends ASPxClientGridBase {
        * @param key An object that uniquely identifies a card to be edited.
        */
   def StartEditCardByKey(key: js.Object): scala.Unit = js.native
+  /**
+       * 
+       * @param columnFieldNameOrId 
+       */
+  def Ungroup(columnFieldNameOrId: java.lang.String): scala.Unit = js.native
+  /**
+       * 
+       * @param columnIndex 
+       */
+  def Ungroup(columnIndex: scala.Double): scala.Unit = js.native
+  /**
+       * 
+       * @param column 
+       */
+  def Ungroup(column: ASPxClientCardViewColumn): scala.Unit = js.native
   /**
        * Deselects all selected cards displayed on the current page.
        */

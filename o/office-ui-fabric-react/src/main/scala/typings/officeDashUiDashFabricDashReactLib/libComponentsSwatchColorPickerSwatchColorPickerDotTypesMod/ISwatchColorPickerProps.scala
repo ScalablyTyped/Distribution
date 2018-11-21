@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 trait ISwatchColorPickerProps extends js.Object {
   /**
        * Width of the border indicating a hovered/selected cell, in pixels
-       * @defaultvalue 2
+       * @default 2
        */
   var cellBorderWidth: js.UndefOr[scala.Double] = js.undefined
   /**
        * Height of an individual cell, in pixels
-       * @defaultvalue 20
+       * @default 20
        */
   var cellHeight: js.UndefOr[scala.Double] = js.undefined
   /**
        * The distance between cells, in pixels
-       * @defaultvalue 10
+       * @default 10
        */
   var cellMargin: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -30,7 +30,7 @@ trait ISwatchColorPickerProps extends js.Object {
   ] = js.undefined
   /**
        * Width of an individual cell, in pixels
-       * @defaultvalue 20
+       * @default 20
        */
   var cellWidth: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -62,7 +62,7 @@ trait ISwatchColorPickerProps extends js.Object {
   var doNotContainWithinFocusZone: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Optional, whether to update focus when a cell is hovered.
-       * @defaultvalue false
+       * @default false
        */
   var focusOnHover: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -132,7 +132,7 @@ trait ISwatchColorPickerProps extends js.Object {
   /**
        * Should focus cycle to the beginning of once the user navigates past the end (and vice versa).
        * This prop is only relevant if doNotcontainWithinFocusZone is not true
-       * @defaultvalue true
+       * @default to true
        */
   var shouldFocusCircularNavigate: js.UndefOr[scala.Boolean] = js.undefined
   /**

@@ -11,7 +11,7 @@ object ioDashTsModMembers extends js.Object {
   val Array: AnyArrayType = js.native
   val Dictionary: AnyDictionaryType = js.native
   val Function: FunctionType = js.native
-  val Integer: RefinementType[NumberType, scala.Double, scala.Double, js.Any] = js.native
+  val Integer: RefinementType[NumberType, scala.Double, scala.Double, mixed] = js.native
   val any: AnyType = js.native
   val appendContext: js.Function3[
     /* c */ Context, 
@@ -30,7 +30,7 @@ object ioDashTsModMembers extends js.Object {
       ioDashTsLib.ioDashTsMod.Global.Array[
         /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Mixed))),List()),Left(TsIdentSimple(_O))) */js.Any
       ], 
-      js.Any
+      mixed
     ]
   ] = js.native
   val boolean: BooleanType = js.native
@@ -38,10 +38,10 @@ object ioDashTsModMembers extends js.Object {
     /* domain */ Mixed, 
     /* codomain */ Mixed, 
     /* name */ js.UndefOr[java.lang.String], 
-    DictionaryType[Mixed, Mixed, TypeOfDictionary[Mixed, Mixed], OutputOfDictionary[Mixed, Mixed], js.Any]
+    DictionaryType[Mixed, Mixed, TypeOfDictionary[Mixed, Mixed], OutputOfDictionary[Mixed, Mixed], mixed]
   ] = js.native
   val failure: js.Function2[
-    /* value */ js.Any, 
+    /* value */ mixed, 
     /* context */ Context, 
     fpDashTsLib.libEitherMod.Either[Errors, js.Any]
   ] = js.native
@@ -56,21 +56,21 @@ object ioDashTsModMembers extends js.Object {
       java.lang.String | scala.Double | scala.Boolean
     ]
   ] = js.native
-  val getValidationError: js.Function2[/* value */ js.Any, /* context */ Context, ValidationError] = js.native
+  val getValidationError: js.Function2[/* value */ mixed, /* context */ Context, ValidationError] = js.native
   val identity: js.Function1[/* a */ js.Any, js.Any] = js.native
   val interface: js.Function2[
     /* props */ Props, 
     /* name */ js.UndefOr[java.lang.String], 
-    InterfaceType[Props, TypeOfProps[Props], OutputOfProps[Props], js.Any]
+    InterfaceType[Props, TypeOfProps[Props], OutputOfProps[Props], mixed]
   ] = js.native
   val isTagged: js.Function1[
     /* tag */ java.lang.String, 
     js.Function1[/* type */ Mixed, /* is Tagged */scala.Boolean]
   ] = js.native
   val keyof: js.Function2[
-    /* keys */ ScalablyTyped.runtime.StringDictionary[js.Any], 
+    /* keys */ ScalablyTyped.runtime.StringDictionary[mixed], 
     /* name */ js.UndefOr[java.lang.String], 
-    KeyofType[ScalablyTyped.runtime.StringDictionary[js.Any]]
+    KeyofType[ScalablyTyped.runtime.StringDictionary[mixed]]
   ] = js.native
   val literal: js.Function2[
     /* value */ java.lang.String | scala.Double | scala.Boolean, 
@@ -85,7 +85,7 @@ object ioDashTsModMembers extends js.Object {
   val partial: js.Function2[
     /* props */ Props, 
     /* name */ js.UndefOr[java.lang.String], 
-    PartialType[Props, TypeOfPartialProps[Props], OutputOfPartialProps[Props], js.Any]
+    PartialType[Props, TypeOfPartialProps[Props], OutputOfPartialProps[Props], mixed]
   ] = js.native
   val readonly: js.Function2[
     /* type */ Mixed, 
@@ -98,7 +98,7 @@ object ioDashTsModMembers extends js.Object {
       stdLib.Readonly[
         /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Mixed))),List()),Left(TsIdentSimple(_O))) */js.Any
       ], 
-      js.Any
+      mixed
     ]
   ] = js.native
   val readonlyArray: js.Function2[
@@ -112,7 +112,7 @@ object ioDashTsModMembers extends js.Object {
       js.Array[
         /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Mixed))),List()),Left(TsIdentSimple(_O))) */js.Any
       ], 
-      js.Any
+      mixed
     ]
   ] = js.native
   val recursion: js.Function2[
@@ -136,7 +136,7 @@ object ioDashTsModMembers extends js.Object {
   val strict: js.Function2[
     /* props */ Props, 
     /* name */ js.UndefOr[java.lang.String], 
-    StrictType[Props, TypeOfProps[Props], OutputOfProps[Props], js.Any]
+    StrictType[Props, TypeOfProps[Props], OutputOfProps[Props], mixed]
   ] = js.native
   val string: StringType = js.native
   val success: js.Function1[/* value */ js.Any, fpDashTsLib.libEitherMod.Either[Errors, js.Any]] = js.native
@@ -149,13 +149,13 @@ object ioDashTsModMembers extends js.Object {
       ioDashTsLib.ioDashTsMod.Global.Array[Tagged[java.lang.String, js.Any, js.Any]], 
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Global), TsIdentSimple(Array))),List(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Tagged))),List(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List()), TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()), TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()))))),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_A))) */js.Any, 
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Global), TsIdentSimple(Array))),List(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Tagged))),List(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List()), TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()), TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()))))),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_O))) */js.Any, 
-      js.Any
+      mixed
     ]
   ] = js.native
   val `type`: js.Function2[
     /* props */ Props, 
     /* name */ js.UndefOr[java.lang.String], 
-    InterfaceType[Props, TypeOfProps[Props], OutputOfProps[Props], js.Any]
+    InterfaceType[Props, TypeOfProps[Props], OutputOfProps[Props], mixed]
   ] = js.native
   val undefined: UndefinedType = js.native
   val union: js.Function2[
@@ -165,7 +165,7 @@ object ioDashTsModMembers extends js.Object {
       ioDashTsLib.ioDashTsMod.Global.Array[Mixed], 
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Global), TsIdentSimple(Array))),List(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Mixed))),List()))),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_A))) */js.Any, 
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Global), TsIdentSimple(Array))),List(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Mixed))),List()))),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_O))) */js.Any, 
-      js.Any
+      mixed
     ]
   ] = js.native
   val void: VoidType = js.native

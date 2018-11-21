@@ -25,9 +25,7 @@ trait AccessibilityProps
   /**
        * Accessibility State tells a person using either VoiceOver on iOS or TalkBack on Android the state of the element currently focused on.
        */
-  var accessibilityStates: js.UndefOr[
-    reactDashNativeLib.reactDashNativeLibStrings.selected | reactDashNativeLib.reactDashNativeLibStrings.disabled
-  ] = js.undefined
+  var accessibilityStates: js.UndefOr[js.Array[AccessibilityState]] = js.undefined
   /**
        * When true, indicates that the view is an accessibility element.
        * By default, all the touchable elements are accessible.

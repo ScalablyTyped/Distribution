@@ -17,8 +17,8 @@ trait IFacepileProps
   /** ARIA label for persona list */
   var ariaDescription: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated at v0.70, use `overflowButtonProps` instead.
-       * @deprecated Use `overflowButtonProps` instead.
+       * Deprecated at v0.70, use 'overflowButtonProps' instead;
+       * @deprecated
        */
   var chevronButtonProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButtonProps

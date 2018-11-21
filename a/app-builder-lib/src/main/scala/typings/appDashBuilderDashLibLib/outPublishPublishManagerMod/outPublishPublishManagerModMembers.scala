@@ -22,8 +22,7 @@ object outPublishPublishManagerModMembers extends js.Object {
     context: electronDashPublishLib.electronDashPublishMod.PublishContext,
     version: java.lang.String,
     publishConfig: builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration,
-    options: electronDashPublishLib.electronDashPublishMod.PublishOptions,
-    packager: appDashBuilderDashLibLib.outPackagerMod.Packager
+    options: electronDashPublishLib.electronDashPublishMod.PublishOptions
   ): electronDashPublishLib.electronDashPublishMod.Publisher | scala.Null = js.native
   def getAppUpdatePublishConfiguration(
     packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],

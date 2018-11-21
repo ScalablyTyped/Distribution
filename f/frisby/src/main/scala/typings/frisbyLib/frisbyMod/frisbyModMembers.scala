@@ -18,13 +18,6 @@ object frisbyModMembers extends js.Object {
   def fromJSON(args: js.Any*): FrisbySpec = js.native
   def get(args: js.Any*): FrisbySpec = js.native
   def globalSetup(opts: js.Object): scala.Unit = js.native
-  def nodeFetch(url: java.lang.String): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.fetchNs.Response] = js.native
-  def nodeFetch(url: java.lang.String, init: nodeDashFetchLib.nodeDashFetchMod.fetchNs.RequestInit): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.fetchNs.Response] = js.native
-  def nodeFetch(url: nodeDashFetchLib.nodeDashFetchMod.fetchNs.Request): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.fetchNs.Response] = js.native
-  def nodeFetch(
-    url: nodeDashFetchLib.nodeDashFetchMod.fetchNs.Request,
-    init: nodeDashFetchLib.nodeDashFetchMod.fetchNs.RequestInit
-  ): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.fetchNs.Response] = js.native
   def patch(args: js.Any*): FrisbySpec = js.native
   def post(args: js.Any*): FrisbySpec = js.native
   def put(args: js.Any*): FrisbySpec = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ICheckProps
-  extends reactLib.reactMod.ReactNs.ClassAttributes[officeDashUiDashFabricDashReactLib.libComponentsCheckCheckDotBaseMod.CheckBase] {
+  extends reactLib.reactMod.ReactNs.Props[officeDashUiDashFabricDashReactLib.libComponentsCheckCheckDotBaseMod.CheckBase] {
   /**
        * Flag to always show the check icon. Not currently working.
        */

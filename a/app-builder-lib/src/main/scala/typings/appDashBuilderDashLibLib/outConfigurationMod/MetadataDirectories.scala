@@ -19,7 +19,7 @@ trait MetadataDirectories extends js.Object {
        */
   val buildResources: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * The output directory. [File macros](/file-patterns#file-macros) are supported.
+       * The output directory. [File macros](/file-patterns.md#file-macros) are supported.
        * @default dist
        */
   val output: js.UndefOr[java.lang.String | scala.Null] = js.undefined

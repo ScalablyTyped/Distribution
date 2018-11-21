@@ -43,6 +43,12 @@ trait ASPxClientVerticalGrid extends ASPxClientGridBase {
     ASPxClientVerticalGridBatchEditRecordInsertingEventHandler[ASPxClientVerticalGrid]
   ] = js.native
   /**
+       * Occurs on the client side before a record is deleted in batch edit mode.
+       */
+  var BatchEditRecordRecovering: ASPxClientEvent[
+    ASPxClientVerticalGridBatchEditRecordRecoveringEventHandler[ASPxClientVerticalGrid]
+  ] = js.native
+  /**
        * Enables you to specify whether record data is valid and provide an error text.
        */
   var BatchEditRecordValidating: ASPxClientEvent[

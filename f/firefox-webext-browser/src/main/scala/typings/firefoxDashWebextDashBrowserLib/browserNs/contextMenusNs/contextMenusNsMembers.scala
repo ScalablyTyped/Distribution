@@ -73,6 +73,11 @@ object contextMenusNsMembers extends js.Object {
        */
   def getTargetElement(targetElementId: scala.Double): js.Object | scala.Unit = js.native
   /**
+       * Show the matching menu items from this extension instead of the default menu. This should be called during a
+       * 'contextmenu' DOM event handler, and only applies to the menu that opens after this event.
+       */
+  def overrideContext(contextOptions: firefoxDashWebextDashBrowserLib.Anon_BookmarkId): scala.Unit = js.native
+  /**
        * Updates the extension items in the shown menu, including changes that have been made since the menu was shown.
        * Has no effect if the menu is hidden. Rebuilding a shown menu is an expensive operation, only invoke this method
        * when necessary.
@@ -97,7 +102,7 @@ object contextMenusNsMembers extends js.Object {
        */
   def update(
     id: java.lang.String,
-    updateProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsVisible
+    updateProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsViewTypes
   ): stdLib.Promise[scala.Unit] = js.native
   /**
        * Updates a previously created context menu item.
@@ -106,7 +111,7 @@ object contextMenusNsMembers extends js.Object {
        */
   def update(
     id: scala.Double,
-    updateProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsVisible
+    updateProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsViewTypes
   ): stdLib.Promise[scala.Unit] = js.native
 }
 

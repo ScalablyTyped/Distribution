@@ -2238,14 +2238,14 @@ trait ActiveXObject extends js.Object {
     obj: activexDashMsformsLib.MSFormsNs.ComboBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.Column,
     parameterTypes: js.Array[scala.Double],
-    newValue: js.Any
+    newValue: activexDashInteropLib.SafeArray[_]
   ): scala.Unit = js.native
   @JSName("set")
   def set_Column(
     obj: activexDashMsformsLib.MSFormsNs.ComboBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.Column,
     parameterTypes: js.Array[scala.Double],
-    newValue: stdLib.SafeArray[_]
+    newValue: js.Any
   ): scala.Unit = js.native
   @JSName("set")
   def set_Column(
@@ -2259,14 +2259,14 @@ trait ActiveXObject extends js.Object {
     obj: activexDashMsformsLib.MSFormsNs.ListBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.Column,
     parameterTypes: js.Array[scala.Double],
-    newValue: js.Any
+    newValue: activexDashInteropLib.SafeArray[_]
   ): scala.Unit = js.native
   @JSName("set")
   def set_Column(
     obj: activexDashMsformsLib.MSFormsNs.ListBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.Column,
     parameterTypes: js.Array[scala.Double],
-    newValue: stdLib.SafeArray[_]
+    newValue: js.Any
   ): scala.Unit = js.native
   @JSName("set")
   def set_Column(
@@ -2280,14 +2280,14 @@ trait ActiveXObject extends js.Object {
     obj: activexDashMsformsLib.MSFormsNs.ComboBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.List,
     parameterTypes: js.Array[scala.Double],
-    newValue: js.Any
+    newValue: activexDashInteropLib.SafeArray[_]
   ): scala.Unit = js.native
   @JSName("set")
   def set_List(
     obj: activexDashMsformsLib.MSFormsNs.ComboBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.List,
     parameterTypes: js.Array[scala.Double],
-    newValue: stdLib.SafeArray[_]
+    newValue: js.Any
   ): scala.Unit = js.native
   @JSName("set")
   def set_List(
@@ -2301,14 +2301,14 @@ trait ActiveXObject extends js.Object {
     obj: activexDashMsformsLib.MSFormsNs.ListBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.List,
     parameterTypes: js.Array[scala.Double],
-    newValue: js.Any
+    newValue: activexDashInteropLib.SafeArray[_]
   ): scala.Unit = js.native
   @JSName("set")
   def set_List(
     obj: activexDashMsformsLib.MSFormsNs.ListBox,
     propertyName: activexDashMsformsLib.activexDashMsformsLibStrings.List,
     parameterTypes: js.Array[scala.Double],
-    newValue: stdLib.SafeArray[_]
+    newValue: js.Any
   ): scala.Unit = js.native
   @JSName("set")
   def set_List(

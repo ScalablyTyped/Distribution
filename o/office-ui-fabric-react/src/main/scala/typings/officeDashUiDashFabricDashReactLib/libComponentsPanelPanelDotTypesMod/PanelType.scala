@@ -13,8 +13,8 @@ sealed trait PanelType extends js.Object
 object PanelType extends js.Object {
   /**
        * Renders the panel in 'custom' mode using customWidth, anchored to the far side (right in LTR mode).
-       * Small: \<adapts to smallFluid\>
-       * Medium: \<adapts to smallFixedFar\>
+       * Small: <adapts to smallFluid>
+       * Medium: <adapts to smallFixedFar>
        * Large: 48px fixed left margin, 32px Left/Right padding
        * XLarge: 644px width, 32px Left/Right padding
        * XXLarge: 643px width, 40px Left/Right padding
@@ -25,10 +25,10 @@ object PanelType extends js.Object {
   
   /**
        * Renders the panel in 'extra large' mode, anchored to the far side (right in LTR mode).
-       * Small: \<adapts to smallFluid\>
-       * Medium: \<adapts to smallFixedFar\>
-       * Large: \<adapts to medium\>
-       * XLarge: \<adapts to large\>
+       * Small: <adapts to smallFluid>
+       * Medium: <adapts to smallFixedFar>
+       * Large: <adapts to medium>
+       * XLarge: <adapts to large>
        * XXLarge: 176px fixed left margin, 40px Left/Right padding
        * XXXLarge: 176px fixed left margin, 40px Left/Right padding
        */
@@ -38,9 +38,9 @@ object PanelType extends js.Object {
   
   /**
        * Renders the panel in 'large' mode, anchored to the far side (right in LTR mode), and is fluid at XXX-Large breakpoint.
-       * Small: \<adapts to smallFluid\>
-       * Medium:  \<adapts to smallFixedFar\>
-       * Large: \<adapts to medium\>
+       * Small: <adapts to smallFluid>
+       * Medium:  <adapts to smallFixedFar>
+       * Large: <adapts to medium>
        * XLarge: 48px fixed left margin, 32px Left/Right padding
        * XXLarge: 48px fixed left margin, 32px Left/Right padding
        * XXXLarge: 48px fixed left margin, (no redlines for padding, assuming previous breakpoint)
@@ -51,9 +51,9 @@ object PanelType extends js.Object {
   
   /**
        * Renders the panel in 'large' mode, anchored to the far side (right in LTR mode), and is fixed at XXX-Large breakpoint.
-       * Small: \<adapts to smallFluid\>
-       * Medium: \<adapts to smallFixedFar\>
-       * Large: \<adapts to medium\>
+       * Small: <adapts to smallFluid>
+       * Medium:  <adapts to smallFixedFar>
+       * Large: <adapts to medium>
        * XLarge: 48px fixed left margin, 32px Left/Right padding
        * XXLarge: 48px fixed left margin, 32px Left/Right padding
        * XXXLarge: 940px width, (no redlines for padding, assuming previous breakpoint)
@@ -64,8 +64,8 @@ object PanelType extends js.Object {
   
   /**
        * Renders the panel in 'medium' mode, anchored to the far side (right in LTR mode).
-       * Small: \<adapts to smallFluid\>
-       * Medium: \<adapts to smallFixedFar\>
+       * Small: <adapts to smallFluid>
+       * Medium: <adapts to smallFixedFar>
        * Large: 48px fixed left margin, 32px Left/Right padding
        * XLarge: 644px width, 32px Left/Right padding
        * XXLarge: 643px width, 40px Left/Right padding
@@ -102,10 +102,10 @@ object PanelType extends js.Object {
        * Renders the panel in 'small' mode, anchored to the far side (right in LTR mode), and has a fluid width.
        * Only used on Small screen breakpoints.
        * Small: 320-479px width (full screen), 16px Left/Right padding
-       * Medium: \<unused\>
-       * Large: \<unused\>
-       * XLarge: \<unused\>
-       * XXLarge: \<unused\>
+       * Medium: <unused>
+       * Large: <unused>
+       * XLarge: <unused>
+       * XXLarge: <unused>
        */
   @js.native
   sealed trait smallFluid

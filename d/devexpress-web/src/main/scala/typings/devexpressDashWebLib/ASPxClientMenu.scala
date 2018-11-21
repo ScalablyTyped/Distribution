@@ -19,5 +19,9 @@ trait ASPxClientMenu extends ASPxClientMenuBase {
        * @param orientation 'Vertical' to orient the menu vertically; 'Horizontal' to orient the menu horizontally.
        */
   def SetOrientation(orientation: java.lang.String): scala.Unit
+  /**
+       * Expands or collapses the side menu.
+       */
+  def ToggleSideMenu(): scala.Unit
 }
 

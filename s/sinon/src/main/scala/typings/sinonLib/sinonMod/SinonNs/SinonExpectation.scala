@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait SinonExpectation extends SinonStub {
+trait SinonExpectation
+  extends SinonStub[js.Array[js.Any], js.Any] {
   /**
            * Specify the minimum amount of calls expected.
            */
@@ -43,6 +44,14 @@ trait SinonExpectation extends SinonStub {
            * Also restores the mocked methods.
            */
   def verify(): SinonExpectation = js.native
+  /**
+           * Expect the method to be called with the provided arguments and possibly others.
+           * An expectation instance only holds onto a single set of arguments specified with withArgs.
+           * Subsequent calls will overwrite the previously-specified set of arguments (even if they are different),
+           * so it is generally not intended that this method be invoked more than once per test case.
+           * @param args
+           */
+  def withArgs(args: js.Any*): SinonExpectation = js.native
   /**
            * Expect the method to be called with the provided arguments and no others.
            * An expectation instance only holds onto a single set of arguments specified with withExactArgs.

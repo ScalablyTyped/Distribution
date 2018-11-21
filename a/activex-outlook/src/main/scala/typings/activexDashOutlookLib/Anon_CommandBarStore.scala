@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_CommandBarStore extends js.Object {
-  val CommandBar: js.Any
+  val CommandBar: activexDashOfficeLib.OfficeNs.CommandBar
   val Store: activexDashOutlookLib.OutlookNs.Store
 }
 

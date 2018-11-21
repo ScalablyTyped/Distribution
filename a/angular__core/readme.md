@@ -142,8 +142,6 @@
  * })
  * class MyModule {}
  * ```
- *
- * @publicApi
  */
 /**
  * @license
@@ -165,7 +163,7 @@
  *
  * By default, this is true, unless a user calls `enableProdMode` before calling this.
  *
- * @publicApi
+ * @experimental APIs related to application bootstrap are currently under review.
  */
 /**
  * @license
@@ -210,7 +208,7 @@
  * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is be represented by
  * the `MyCustomComponent` constructor function.
  *
- * @publicApi
+ *
  */
 /**
  * @license
@@ -229,7 +227,7 @@
 /**
  * @description Represents the version of Angular
  *
- * @publicApi
+ *
  */
 /**
  * @license
@@ -299,7 +297,6 @@
  *
  * <code-example path="core/ts/change_detect/change-detection.ts" region="reattach"></code-example>
  *
- * @publicApi
  */
 /**
  * @license
@@ -312,7 +309,6 @@
  * The strategy that the default change detector uses to detect changes.
  * When set, takes effect the next time change detection is triggered.
  *
- * @publicApi
  */
 /**
  * @license
@@ -345,7 +341,7 @@
  *
  * Invoking `{{ 'ok' | repeat:3 }}` in a template produces `okokok`.
  *
- * @publicApi
+ *
  */
 /**
  * @license
@@ -398,8 +394,6 @@
  */
 /**
  * Type of the Inject decorator / constructor function.
- *
- * @publicApi
  */
 /**
  * @license
@@ -443,9 +437,7 @@
  * `Key` should not be created directly. {@link ReflectiveInjector} creates keys automatically when
  * resolving
  * providers.
- *
  * @deprecated No replacement
- * @publicApi
  */
 /**
  * @license
@@ -506,7 +498,7 @@
  * XSS attacks. Carefully review any use of `ElementRef` in your code. For more detail, see the
  * [Security Guide](http://g.co/ng/security).
  *
- * @publicApi
+ *
  */
 /**
  * @license
@@ -606,10 +598,7 @@
  *
  * @usageNotes
  * ### Example
- *
  * {@example core/ts/metadata/encapsulation.ts region='longform'}
- *
- * @publicApi
  */
 /**
  * @license
@@ -628,7 +617,7 @@
 /**
  * A scope function for the Web Tracing Framework (WTF).
  *
- * @publicApi
+ * @experimental
  */
 /**
  * @license
@@ -764,13 +753,6 @@
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
  * Bindings for pure functions are stored after regular bindings.
  *
  * |------consts------|---------vars---------|                 |----- hostVars (dir1) ------|
@@ -870,7 +852,7 @@
  *
  * See DomSanitizer for more details on security in Angular applications.
  *
- * @publicApi
+ *
  */
 /**
  * @license
@@ -1202,27 +1184,6 @@
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * A set of interfaces which are shared between `@angular/core` and `@angular/compiler` to allow
- * for late binding of `@angular/compiler` for JIT purposes.
- *
- * This file has two copies. Please ensure that they are in sync:
- *  - packages/compiler/src/compiler_facade_interface.ts             (master)
- *  - packages/core/src/render3/jit/compiler_facade_interface.ts     (copy)
- *
- * Please ensure that the two files are in sync using this command:
- * ```
- * cp packages/compiler/src/compiler_facade_interface.ts \
- *    packages/core/src/render3/jit/compiler_facade_interface.ts
- * ```
  */
 /**
  * @license

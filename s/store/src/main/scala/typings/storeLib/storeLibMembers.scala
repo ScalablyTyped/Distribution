@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object storeLibMembers extends js.Object {
   val engine: StoreJsEngine = js.native
+  val storage: StoreJsStorage = js.native
   val store: StoreJsAPI = js.native
 }
 

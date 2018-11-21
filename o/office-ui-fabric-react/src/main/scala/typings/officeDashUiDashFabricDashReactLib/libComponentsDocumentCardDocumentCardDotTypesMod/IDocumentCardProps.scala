@@ -12,8 +12,8 @@ trait IDocumentCardProps
        * Hex color value of the line below the card, which should correspond to the document type.
        * This should only be supplied when using the 'compact' card layout.
        *
-       * Deprecated at v4.17.1, to be removed at \>= v5.0.0.
-       * @deprecated To be removed at v5.0.0.
+       * Deprecated at v4.17.1, to be removed at >= v5.0.0.
+       * @deprecated
        */
   var accentColor: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -36,7 +36,7 @@ trait IDocumentCardProps
   var onClickHref: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The type of DocumentCard to display.
-       * @defaultvalue DocumentCardType.normal
+       * @default DocumentCardType.normal
        */
   var `type`: js.UndefOr[DocumentCardType] = js.undefined
 }

@@ -22,12 +22,6 @@ object atAngularCoreLibStrings {
   sealed trait `Brand for OpaqueViewState that nothing will match` extends js.Object
   
   @js.native
-  sealed trait `Brand for PlayerFactory that nothing will match` extends js.Object
-  
-  @js.native
-  sealed trait Mutable extends js.Object
-  
-  @js.native
   sealed trait NO_CHANGE extends js.Object
   
   @js.native
@@ -62,8 +56,6 @@ object atAngularCoreLibStrings {
   def Anon_Outputs: Anon_Outputs = "Anon_Outputs".asInstanceOf[Anon_Outputs]
   def BaseDef: BaseDef = "BaseDef".asInstanceOf[BaseDef]
   def `Brand for OpaqueViewState that nothing will match`: `Brand for OpaqueViewState that nothing will match` = "Brand for OpaqueViewState that nothing will match".asInstanceOf[`Brand for OpaqueViewState that nothing will match`]
-  def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = "Brand for PlayerFactory that nothing will match".asInstanceOf[`Brand for PlayerFactory that nothing will match`]
-  def Mutable: Mutable = "Mutable".asInstanceOf[Mutable]
   def NO_CHANGE: NO_CHANGE = "NO_CHANGE".asInstanceOf[NO_CHANGE]
   def any: any = "any".asInstanceOf[any]
   def body: body = "body".asInstanceOf[body]

@@ -43,6 +43,7 @@ trait WebExtensionManifest extends js.Object {
   var short_name: js.UndefOr[java.lang.String] = js.undefined
   var sidebar_action: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Defaulttitle] = js.undefined
   var theme_experiment: js.UndefOr[ThemeExperiment] = js.undefined
+  var user_scripts: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Apiscript] = js.undefined
   var version: java.lang.String
   var web_accessible_resources: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }

@@ -16,7 +16,6 @@ object srcRender3JitDirectiveMod extends js.Object {
     `type`: atAngularCoreLib.srcTypeMod.Type[_],
     directive: atAngularCoreLib.srcMetadataDirectivesMod.Directive
   ): scala.Unit = js.native
-  def convertToR3QueryMetadata(propertyName: java.lang.String, ann: atAngularCoreLib.srcMetadataDiMod.Query): atAngularCoreLib.srcRender3JitCompilerUnderscoreFacadeUnderscoreInterfaceMod.R3QueryMetadataFacade = js.native
   def extendsDirectlyFromObject(`type`: atAngularCoreLib.srcTypeMod.Type[_]): scala.Boolean = js.native
 }
 

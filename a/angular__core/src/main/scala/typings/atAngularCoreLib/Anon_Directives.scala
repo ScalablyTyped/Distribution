@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Directives[T] extends js.Object {
   /**
+       * Registry of the animation triggers present on the component that will be used by the view.
+       */
+  var animations: js.UndefOr[js.Array[_] | scala.Null] = js.undefined
+  /**
        * Static attributes to set on host element.
        *
        * Even indices: attribute name

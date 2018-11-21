@@ -20,7 +20,7 @@ object AzureNs extends js.Object {
       var DefaultMessageTimeToLive: java.lang.String
       var DuplicateDetectionHistoryTimeWindow: java.lang.String
       var EnablePartitioning: scala.Boolean
-      var MaxSizeInMegaBytes: scala.Double
+      var MaxSizeInMegabytes: scala.Double
       var RequiresDuplicateDetection: scala.Boolean
     }
     

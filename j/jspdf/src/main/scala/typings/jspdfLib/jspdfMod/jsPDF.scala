@@ -20,6 +20,7 @@ trait jsPDF extends js.Object {
   var image_compression: js.Any = js.native
   var internal: jspdfLib.Anon_PageSize = js.native
   var version: java.lang.String = js.native
+  def addFileToVFS(filename: java.lang.String, filecontent: java.lang.String): jsPDF = js.native
   def addFont(postScriptName: java.lang.String, fontName: java.lang.String, fontStyle: java.lang.String): java.lang.String = js.native
   def addHTML(element: js.Any, callback: js.Function): jsPDF = js.native
   /**
@@ -38,6 +39,7 @@ trait jsPDF extends js.Object {
            *  - split_text_to_size
            *  - SVG
            *  - total_pages
+           *  - vfs
            */
   
   // jsPDF plugin: addHTML
@@ -174,6 +176,8 @@ trait jsPDF extends js.Object {
   def deletePage(n: scala.Double): jsPDF = js.native
   def ellipse(x: scala.Double, y: scala.Double, rx: scala.Double, ry: scala.Double): jsPDF = js.native
   def ellipse(x: scala.Double, y: scala.Double, rx: scala.Double, ry: scala.Double, style: java.lang.String): jsPDF = js.native
+  // jsPDF plugin: vfs
+  def existsFileInVFS(filename: java.lang.String): scala.Boolean = js.native
   def extractInfoFromBase64DataURI(dataURI: java.lang.String): js.Array[_] = js.native
   // jsPDF plugin: fromHTML
   def fromHTML(HTML: java.lang.String, x: scala.Double, y: scala.Double): jsPDF = js.native
@@ -215,6 +219,7 @@ trait jsPDF extends js.Object {
   def getCharWidthsArray(text: java.lang.String): js.Array[_] = js.native
   // jsPDF plugin: split_text_to_size
   def getCharWidthsArray(text: java.lang.String, options: js.Any): js.Array[_] = js.native
+  def getFileFromVFS(filename: java.lang.String): java.lang.String = js.native
   def getFontList(): js.Any = js.native
   def getLineHeight(): scala.Double = js.native
   def getStringUnitWidth(text: java.lang.String): scala.Double = js.native

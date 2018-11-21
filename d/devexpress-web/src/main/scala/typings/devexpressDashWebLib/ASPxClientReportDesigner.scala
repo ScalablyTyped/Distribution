@@ -30,6 +30,9 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
        * Enables you to customize the Web Report Designer's UI elements.
        */
   var CustomizeElements: ASPxClientEvent[ASPxClientReportDesignerCustomizeElementsEventHandler[ASPxClientReportDesigner]] = js.native
+  var CustomizeFieldListActions: ASPxClientEvent[
+    ASPxClientReportDesignerCustomizeFieldListActionsEventHandler[ASPxClientReportDesigner]
+  ] = js.native
   /**
        * Enables you to customize the Web Report Designer's localization strings.
        */
@@ -98,6 +101,9 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
   var PreviewCustomizeElements: ASPxClientEvent[
     ASPxClientWebDocumentViewerCustomizeElementsEventHandler[ASPxClientReportDesigner]
   ] = js.native
+  var PreviewCustomizeExportOptions: ASPxClientEvent[
+    ASPxClientWebDocumentViewerCustomizeExportOptionsEventHandler[ASPxClientReportDesigner]
+  ] = js.native
   /**
        * Enables you to customize the actions of a Document Viewer built into a Web Report Designer.
        */
@@ -152,6 +158,7 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
        * Occurs when executing the Save command on the client.
        */
   var SaveCommandExecute: ASPxClientEvent[ASPxClientReportDesignerSaveCommandExecuteEventHandler[ASPxClientReportDesigner]] = js.native
+  var TabChanged: ASPxClientEvent[ASPxClientReportDesignerTabChangedEventHandler[ASPxClientReportDesigner]] = js.native
   /**
        * Adds a custom parameter type to the Web End-User Report Designer.
        * @param parameterInfo An object that provides information about a parameter type to be added.
@@ -169,9 +176,21 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
        */
   def CloseCurrentTab(): scala.Unit = js.native
   /**
+       * 
+       * @param tab 
+       */
+  def CloseTab(tab: ASPxDesignerNavigateTab): scala.Unit = js.native
+  /**
+       * 
+       * @param tab 
+       * @param force 
+       */
+  def CloseTab(tab: ASPxDesignerNavigateTab, force: scala.Boolean): scala.Unit = js.native
+  /**
        * Returns actions performed by buttons available in the menu and toolbar of the Web Report Designer.
        */
   def GetButtonStorage(): js.Object = js.native
+  def GetCurrentTab(): ASPxDesignerNavigateTab = js.native
   /**
        * Provides access to a client-side model of a Web Report Designer.
        */
@@ -206,6 +225,7 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
        * @param path An array of strings that specify paths to properties.
        */
   def GetPropertyInfo(controlType: java.lang.String, path: js.Array[java.lang.String]): ASPxDesignerElementSerializationInfo = js.native
+  def GetTabs(): js.Array[ASPxDesignerNavigateTab] = js.native
   /**
        * Indicates whether or not the current ASPxClientReportDesigner instance has been modified.
        */

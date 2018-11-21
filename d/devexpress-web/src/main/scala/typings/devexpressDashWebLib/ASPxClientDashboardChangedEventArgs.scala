@@ -15,10 +15,5 @@ trait ASPxClientDashboardChangedEventArgs extends ASPxClientEventArgs {
        * Value: A string value that is an identifier of newly opened dashboard.
        */
   var DashboardId: java.lang.String
-  /**
-       * Gets the name of a newly opened dashboard.
-       * Value: A string value that is the name of newly opened dashboard.
-       */
-  var DashboardName: java.lang.String
 }
 

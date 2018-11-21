@@ -15,12 +15,12 @@ trait IBaseCardProps[TComponent, TStyles, TStyleProps]
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[TComponent]] = js.undefined
   /**
        * How the element should be positioned
-       * @defaultvalue DirectionalHint.bottomLeftEdge
+       * @default DirectionalHint.bottomLeftEdge
        */
   var directionalHint: js.UndefOr[officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
   /**
        * Make callout content show on the set side
-       * @defaultvalue true
+       * @default true
        */
   var directionalHintFixed: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -29,7 +29,7 @@ trait IBaseCardProps[TComponent, TStyles, TStyleProps]
   var firstFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * The gap between the card and the target
-       * @defaultvalue 0
+       * @default 0
        */
   var gapSpace: js.UndefOr[scala.Double] = js.undefined
   /**

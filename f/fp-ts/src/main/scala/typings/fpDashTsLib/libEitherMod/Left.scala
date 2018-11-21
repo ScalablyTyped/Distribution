@@ -16,9 +16,6 @@ class Left[L, A] protected () extends js.Object {
   val value: L = js.native
   def alt(fy: Either[L, A]): Either[L, A] = js.native
   def ap[B](fab: Either[L, js.Function1[/* a */ A, B]]): Either[L, B] = js.native
-  /**
-       * Flipped version of {@link ap}
-       */
   def `ap_`[B, C](`this`: Either[L, js.Function1[/* b */ B, C]], fb: Either[L, B]): Either[L, C] = js.native
   def bimap[V, B](f: js.Function1[/* l */ L, V], g: js.Function1[/* a */ A, B]): Either[V, B] = js.native
   /** Binds the given function across `Right` */
@@ -29,13 +26,11 @@ class Left[L, A] protected () extends js.Object {
        * right value, returns `Left(zero)` if this is a `Right` and the given predicate `p` does not hold for the right
        * value, returns `Left` with the existing value of `Left` if this is a `Left`.
        *
-       * @example
-       * import { right, left } from 'fp-ts/lib/Either'
-       *
-       * assert.deepEqual(right(12).filterOrElse(n => n > 10, -1), right(12))
-       * assert.deepEqual(right(7).filterOrElse(n => n > 10, -1), left(-1))
-       * assert.deepEqual(left(12).filterOrElse(n => n > 10, -1), left(12))
-       *
+       * ```ts
+       * right(12).filterOrElse(n => n > 10, -1) // right(12)
+       * right(7).filterOrElse(n => n > 10, -1)  // left(-1)
+       * left(12).filterOrElse(n => n > 10, -1)  // left(12)
+       * ```
        * @since 1.3.0
        */
   def filterOrElse(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: L): Either[L, A] = js.native
@@ -61,13 +56,11 @@ class Left[L, A] protected () extends js.Object {
   def mapLeft[M](f: js.Function1[/* l */ L, M]): Either[M, A] = js.native
   /**
        * Lazy version of {@link alt}
-       *
-       * @example
-       * import { right } from 'fp-ts/lib/Either'
-       *
-       * assert.deepEqual(right(1).orElse(() => right(2)), right(1))
-       *
        * @since 1.6.0
+       * @param {(l: L) => Either<M, A>} fy - thunk
+       * @example
+       * assert.deepEqual(right(1).orElse(() => right(2)), right(1))
+       * @returns {Either<M, A>}
        */
   def orElse[M](fy: js.Function1[/* l */ L, Either[M, A]]): Either[M, A] = js.native
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native

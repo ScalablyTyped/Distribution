@@ -19,6 +19,9 @@ trait IIconProps
   var iconName: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The type of icon to render (image or icon font).
+       *
+       * @type {IconType}
+       * @memberOf IIconProps
        */
   var iconType: js.UndefOr[IconType] = js.undefined
   /**
@@ -34,6 +37,9 @@ trait IIconProps
   ] = js.undefined
   /**
        * If rendering an image icon, these props will be passed to the Image component.
+       *
+       * @type {IImageProps}
+       * @memberOf IIconProps
        */
   var imageProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.IImageProps

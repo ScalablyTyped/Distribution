@@ -11,6 +11,6 @@ trait Font extends js.Object {
   var common: FontCommon
   var info: FontInfo
   var kernings: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[scala.Double]]
-  var pages: js.Array[java.lang.String]
+  var pages: coreDashJsLib.Array[java.lang.String]
 }
 

@@ -14,5 +14,7 @@ object libHelpModMembers extends js.Object {
       atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption
     ]
   ] = js.native
+  def formatOptionName[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](opt: O): java.lang.String = js.native
+  def formatOptionName[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](opt: O, hasShowAliasesColors: atIonicCliDashFrameworkLib.Anon_ColorsShowAliases): java.lang.String = js.native
 }
 

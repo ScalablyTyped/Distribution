@@ -25,17 +25,17 @@ trait IModalProps
   var containerClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
-       * @defaultvalue false
+       * @default false
        */
   var isBlocking: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the overlay is dark themed.
-       * @defaultvalue true
+       * @default true
        */
   var isDarkOverlay: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the dialog is displayed.
-       * @defaultvalue false
+       * @default false
        */
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
   /**

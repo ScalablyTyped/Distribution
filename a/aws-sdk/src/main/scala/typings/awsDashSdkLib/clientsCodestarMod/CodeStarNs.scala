@@ -49,89 +49,41 @@ object CodeStarNs extends js.Object {
   }
   
   
-  trait Code extends js.Object {
-    /**
-         * The repository to be created in AWS CodeStar. Valid values are AWS CodeCommit or GitHub. After AWS CodeStar provisions the new repository, the source code files provided with the project request are placed in the repository.
-         */
-    var destination: CodeDestination
-    /**
-         * The location where the source code files provided with the project request are stored. AWS CodeStar retrieves the files during project creation.
-         */
-    var source: CodeSource
-  }
-  
-  
-  trait CodeCommitCodeDestination extends js.Object {
-    /**
-         * The name of the AWS CodeCommit repository to be created in AWS CodeStar.
-         */
-    var name: RepositoryName
-  }
-  
-  
-  trait CodeDestination extends js.Object {
-    /**
-         * Information about the AWS CodeCommit repository to be created in AWS CodeStar. This is where the source code files provided with the project request will be uploaded after project creation.
-         */
-    var codeCommit: js.UndefOr[CodeCommitCodeDestination] = js.undefined
-    /**
-         * Information about the GitHub repository to be created in AWS CodeStar. This is where the source code files provided with the project request will be uploaded after project creation.
-         */
-    var gitHub: js.UndefOr[GitHubCodeDestination] = js.undefined
-  }
-  
-  
-  trait CodeSource extends js.Object {
-    /**
-         * Information about the Amazon S3 location where the source code files provided with the project request are stored. 
-         */
-    var s3: S3Location
-  }
-  
-  
   trait CreateProjectRequest extends js.Object {
     /**
-         * A user- or system-generated token that identifies the entity that requested project creation. This token can be used to repeat the request.
+         * Reserved for future use.
          */
     var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
     /**
-         * The description of the project, if any.
+         * Reserved for future use.
          */
     var description: js.UndefOr[ProjectDescription] = js.undefined
     /**
-         * The ID of the project to be created in AWS CodeStar.
+         * Reserved for future use.
          */
     var id: ProjectId
     /**
-         * The display name for the project to be created in AWS CodeStar.
+         * Reserved for future use.
          */
     var name: ProjectName
-    /**
-         * A list of the Code objects submitted with the project request. If this parameter is specified, the request must also include the toolchain parameter.
-         */
-    var sourceCode: js.UndefOr[SourceCode] = js.undefined
     /**
          * The tags created for the project.
          */
     var tags: js.UndefOr[Tags] = js.undefined
-    /**
-         * The name of the toolchain template file submitted with the project request. If this parameter is specified, the request must also include the sourceCode parameter.
-         */
-    var toolchain: js.UndefOr[Toolchain] = js.undefined
   }
   
   
   trait CreateProjectResult extends js.Object {
     /**
-         * The Amazon Resource Name (ARN) of the created project.
+         * Reserved for future use.
          */
     var arn: ProjectArn
     /**
-         * A user- or system-generated token that identifies the entity that requested project creation.
+         * Reserved for future use.
          */
     var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
     /**
-         * The ID of the project.
+         * Reserved for future use.
          */
     var id: ProjectId
     /**
@@ -332,38 +284,6 @@ object CodeStarNs extends js.Object {
   trait DisassociateTeamMemberResult extends js.Object
   
   
-  trait GitHubCodeDestination extends js.Object {
-    /**
-         * Description for the GitHub repository to be created in AWS CodeStar. This description displays in GitHub after the repository is created.
-         */
-    var description: js.UndefOr[RepositoryDescription] = js.undefined
-    /**
-         * Whether to enable issues for the GitHub repository.
-         */
-    var issuesEnabled: RepositoryEnableIssues
-    /**
-         * Name of the GitHub repository to be created in AWS CodeStar.
-         */
-    var name: RepositoryName
-    /**
-         * The GitHub username for the owner of the GitHub repository to be created in AWS CodeStar. If this repository should be owned by a GitHub organization, provide its name.
-         */
-    var owner: RepositoryOwner
-    /**
-         * Whether the GitHub repository is to be a private repository.
-         */
-    var privateRepository: RepositoryIsPrivate
-    /**
-         * The GitHub user's personal access token for the GitHub repository.
-         */
-    var token: GitHubPersonalToken
-    /**
-         * The type of GitHub repository to be created in AWS CodeStar. Valid values are User or Organization.
-         */
-    var `type`: RepositoryType
-  }
-  
-  
   trait ListProjectsRequest extends js.Object {
     /**
          * The maximum amount of data that can be contained in a single set of results.
@@ -528,18 +448,6 @@ object CodeStarNs extends js.Object {
   }
   
   
-  trait S3Location extends js.Object {
-    /**
-         * The Amazon S3 object key where the source code files provided with the project request are stored.
-         */
-    var bucketKey: js.UndefOr[BucketKey] = js.undefined
-    /**
-         * The Amazon S3 bucket name where the source code files provided with the project request are stored.
-         */
-    var bucketName: js.UndefOr[BucketName] = js.undefined
-  }
-  
-  
   trait TagProjectRequest extends js.Object {
     /**
          * The ID of the project you want to add a tag to.
@@ -579,34 +487,6 @@ object CodeStarNs extends js.Object {
     var userArn: UserArn
   }
   
-  
-  trait TemplateParameterMap
-    extends /* key */ ScalablyTyped.runtime.StringDictionary[TemplateParameterValue]
-  
-  
-  trait Toolchain extends js.Object {
-    /**
-         * The service role ARN for AWS CodeStar to use for the toolchain template during stack provisioning.
-         */
-    var roleArn: js.UndefOr[RoleArn] = js.undefined
-    /**
-         * The Amazon S3 location where the toolchain template file provided with the project request is stored. AWS CodeStar retrieves the file during project creation.
-         */
-    var source: ToolchainSource
-    /**
-         * The list of parameter overrides to be passed into the toolchain template during stack provisioning, if any.
-         */
-    var stackParameters: js.UndefOr[TemplateParameterMap] = js.undefined
-  }
-  
-  
-  trait ToolchainSource extends js.Object {
-    /**
-         * The Amazon S3 bucket where the toolchain template file provided with the project request is stored.
-         */
-    var s3: S3Location
-  }
-  
   @js.native
   trait Types
     extends awsDashSdkLib.libServiceMod.Service {
@@ -642,11 +522,11 @@ object CodeStarNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateTeamMemberResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a project, including project resources. This action creates a project based on a submitted project request. A set of source code files and a toolchain template file can be included with the project request. If these are not provided, an empty project is created.
+       * Reserved for future use. To create a project, use the AWS CodeStar console.
        */
     def createProject(): awsDashSdkLib.libRequestMod.Request[CreateProjectResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a project, including project resources. This action creates a project based on a submitted project request. A set of source code files and a toolchain template file can be included with the project request. If these are not provided, an empty project is created.
+       * Reserved for future use. To create a project, use the AWS CodeStar console.
        */
     def createProject(
       callback: js.Function2[
@@ -656,11 +536,11 @@ object CodeStarNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateProjectResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a project, including project resources. This action creates a project based on a submitted project request. A set of source code files and a toolchain template file can be included with the project request. If these are not provided, an empty project is created.
+       * Reserved for future use. To create a project, use the AWS CodeStar console.
        */
     def createProject(params: CreateProjectRequest): awsDashSdkLib.libRequestMod.Request[CreateProjectResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a project, including project resources. This action creates a project based on a submitted project request. A set of source code files and a toolchain template file can be included with the project request. If these are not provided, an empty project is created.
+       * Reserved for future use. To create a project, use the AWS CodeStar console.
        */
     def createProject(
       params: CreateProjectRequest,
@@ -1275,14 +1155,11 @@ object CodeStarNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
-  type BucketKey = java.lang.String
-  type BucketName = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientRequestToken = java.lang.String
   type CreatedTimestamp = stdLib.Date
   type DeleteStack = scala.Boolean
   type Email = java.lang.String
-  type GitHubPersonalToken = java.lang.String
   type LastModifiedTimestamp = stdLib.Date
   type MaxResults = scala.Double
   type PaginationToken = java.lang.String
@@ -1294,17 +1171,9 @@ object CodeStarNs extends js.Object {
   type ProjectsList = js.Array[ProjectSummary]
   type Reason = java.lang.String
   type RemoteAccessAllowed = scala.Boolean
-  type RepositoryDescription = java.lang.String
-  type RepositoryEnableIssues = scala.Boolean
-  type RepositoryIsPrivate = scala.Boolean
-  type RepositoryName = java.lang.String
-  type RepositoryOwner = java.lang.String
-  type RepositoryType = java.lang.String
   type ResourceId = java.lang.String
   type ResourcesResult = js.Array[Resource]
   type Role = java.lang.String
-  type RoleArn = java.lang.String
-  type SourceCode = js.Array[Code]
   type SshPublicKey = java.lang.String
   type StackId = java.lang.String
   type State = java.lang.String
@@ -1312,8 +1181,6 @@ object CodeStarNs extends js.Object {
   type TagKeys = js.Array[TagKey]
   type TagValue = java.lang.String
   type TeamMemberResult = js.Array[TeamMember]
-  type TemplateParameterKey = java.lang.String
-  type TemplateParameterValue = java.lang.String
   type UserArn = java.lang.String
   type UserProfileDisplayName = java.lang.String
   type UserProfilesList = js.Array[UserProfileSummary]

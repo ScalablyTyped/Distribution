@@ -73,9 +73,6 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait block extends js.Object
   
   @js.native
-  sealed trait `block flow` extends js.Object
-  
-  @js.native
   sealed trait bold extends js.Object
   
   @js.native
@@ -118,9 +115,6 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait `content-box` extends js.Object
   
   @js.native
-  sealed trait contents extends js.Object
-  
-  @js.native
   sealed trait darken extends js.Object
   
   @js.native
@@ -148,34 +142,16 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait fixed extends js.Object
   
   @js.native
-  sealed trait flex extends js.Object
-  
-  @js.native
-  sealed trait `flex run-in` extends js.Object
-  
-  @js.native
   sealed trait `flex-end` extends js.Object
   
   @js.native
   sealed trait `flex-start` extends js.Object
   
   @js.native
-  sealed trait flow extends js.Object
-  
-  @js.native
-  sealed trait `flow list-item block` extends js.Object
-  
-  @js.native
-  sealed trait `flow-root` extends js.Object
-  
-  @js.native
   sealed trait forwards extends js.Object
   
   @js.native
   sealed trait grayscale extends js.Object
-  
-  @js.native
-  sealed trait grid extends js.Object
   
   @js.native
   sealed trait `hard-light` extends js.Object
@@ -199,21 +175,6 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait `inline` extends js.Object
   
   @js.native
-  sealed trait `inline table` extends js.Object
-  
-  @js.native
-  sealed trait `inline-block` extends js.Object
-  
-  @js.native
-  sealed trait `inline-flex` extends js.Object
-  
-  @js.native
-  sealed trait `inline-grid` extends js.Object
-  
-  @js.native
-  sealed trait `inline-table` extends js.Object
-  
-  @js.native
   sealed trait italic extends js.Object
   
   @js.native
@@ -233,27 +194,6 @@ object atUifabricMergeDashStylesLibStrings {
   
   @js.native
   sealed trait lighter extends js.Object
-  
-  @js.native
-  sealed trait `list-item` extends js.Object
-  
-  @js.native
-  sealed trait `list-item block` extends js.Object
-  
-  @js.native
-  sealed trait `list-item block flow` extends js.Object
-  
-  @js.native
-  sealed trait `list-item block flow-root` extends js.Object
-  
-  @js.native
-  sealed trait `list-item flow` extends js.Object
-  
-  @js.native
-  sealed trait `list-item flow-root` extends js.Object
-  
-  @js.native
-  sealed trait `list-item inline` extends js.Object
   
   @js.native
   sealed trait local extends js.Object
@@ -296,24 +236,6 @@ object atUifabricMergeDashStylesLibStrings {
   
   @js.native
   sealed trait `row-reverse` extends js.Object
-  
-  @js.native
-  sealed trait ruby extends js.Object
-  
-  @js.native
-  sealed trait `ruby-base` extends js.Object
-  
-  @js.native
-  sealed trait `ruby-base-container` extends js.Object
-  
-  @js.native
-  sealed trait `ruby-text` extends js.Object
-  
-  @js.native
-  sealed trait `ruby-text-container` extends js.Object
-  
-  @js.native
-  sealed trait `run-in` extends js.Object
   
   @js.native
   sealed trait `safe center` extends js.Object
@@ -395,33 +317,6 @@ object atUifabricMergeDashStylesLibStrings {
   
   @js.native
   sealed trait `subpixel-antialiased` extends js.Object
-  
-  @js.native
-  sealed trait table extends js.Object
-  
-  @js.native
-  sealed trait `table-caption` extends js.Object
-  
-  @js.native
-  sealed trait `table-cell` extends js.Object
-  
-  @js.native
-  sealed trait `table-column` extends js.Object
-  
-  @js.native
-  sealed trait `table-column-group` extends js.Object
-  
-  @js.native
-  sealed trait `table-footer-group` extends js.Object
-  
-  @js.native
-  sealed trait `table-header-group` extends js.Object
-  
-  @js.native
-  sealed trait `table-row` extends js.Object
-  
-  @js.native
-  sealed trait `table-row-group` extends js.Object
   
   @js.native
   sealed trait text extends js.Object
@@ -511,7 +406,6 @@ object atUifabricMergeDashStylesLibStrings {
   def backwards: backwards = "backwards".asInstanceOf[backwards]
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   def block: block = "block".asInstanceOf[block]
-  def `block flow`: `block flow` = "block flow".asInstanceOf[`block flow`]
   def bold: bold = "bold".asInstanceOf[bold]
   def bolder: bolder = "bolder".asInstanceOf[bolder]
   def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
@@ -526,7 +420,6 @@ object atUifabricMergeDashStylesLibStrings {
   def condensed: condensed = "condensed".asInstanceOf[condensed]
   def contain: contain = "contain".asInstanceOf[contain]
   def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
-  def contents: contents = "contents".asInstanceOf[contents]
   def darken: darken = "darken".asInstanceOf[darken]
   def difference: difference = "difference".asInstanceOf[difference]
   def end: end = "end".asInstanceOf[end]
@@ -536,16 +429,10 @@ object atUifabricMergeDashStylesLibStrings {
   def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
   def `first baseline`: `first baseline` = "first baseline".asInstanceOf[`first baseline`]
   def fixed: fixed = "fixed".asInstanceOf[fixed]
-  def flex: flex = "flex".asInstanceOf[flex]
-  def `flex run-in`: `flex run-in` = "flex run-in".asInstanceOf[`flex run-in`]
   def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
   def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
-  def flow: flow = "flow".asInstanceOf[flow]
-  def `flow list-item block`: `flow list-item block` = "flow list-item block".asInstanceOf[`flow list-item block`]
-  def `flow-root`: `flow-root` = "flow-root".asInstanceOf[`flow-root`]
   def forwards: forwards = "forwards".asInstanceOf[forwards]
   def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
-  def grid: grid = "grid".asInstanceOf[grid]
   def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
@@ -553,11 +440,6 @@ object atUifabricMergeDashStylesLibStrings {
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   def initial: initial = "initial".asInstanceOf[initial]
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  def `inline table`: `inline table` = "inline table".asInstanceOf[`inline table`]
-  def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
-  def `inline-flex`: `inline-flex` = "inline-flex".asInstanceOf[`inline-flex`]
-  def `inline-grid`: `inline-grid` = "inline-grid".asInstanceOf[`inline-grid`]
-  def `inline-table`: `inline-table` = "inline-table".asInstanceOf[`inline-table`]
   def italic: italic = "italic".asInstanceOf[italic]
   def large: large = "large".asInstanceOf[large]
   def larger: larger = "larger".asInstanceOf[larger]
@@ -565,13 +447,6 @@ object atUifabricMergeDashStylesLibStrings {
   def left: left = "left".asInstanceOf[left]
   def lighten: lighten = "lighten".asInstanceOf[lighten]
   def lighter: lighter = "lighter".asInstanceOf[lighter]
-  def `list-item`: `list-item` = "list-item".asInstanceOf[`list-item`]
-  def `list-item block`: `list-item block` = "list-item block".asInstanceOf[`list-item block`]
-  def `list-item block flow`: `list-item block flow` = "list-item block flow".asInstanceOf[`list-item block flow`]
-  def `list-item block flow-root`: `list-item block flow-root` = "list-item block flow-root".asInstanceOf[`list-item block flow-root`]
-  def `list-item flow`: `list-item flow` = "list-item flow".asInstanceOf[`list-item flow`]
-  def `list-item flow-root`: `list-item flow-root` = "list-item flow-root".asInstanceOf[`list-item flow-root`]
-  def `list-item inline`: `list-item inline` = "list-item inline".asInstanceOf[`list-item inline`]
   def local: local = "local".asInstanceOf[local]
   def luminosity: luminosity = "luminosity".asInstanceOf[luminosity]
   def medium: medium = "medium".asInstanceOf[medium]
@@ -586,12 +461,6 @@ object atUifabricMergeDashStylesLibStrings {
   def right: right = "right".asInstanceOf[right]
   def row: row = "row".asInstanceOf[row]
   def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
-  def ruby: ruby = "ruby".asInstanceOf[ruby]
-  def `ruby-base`: `ruby-base` = "ruby-base".asInstanceOf[`ruby-base`]
-  def `ruby-base-container`: `ruby-base-container` = "ruby-base-container".asInstanceOf[`ruby-base-container`]
-  def `ruby-text`: `ruby-text` = "ruby-text".asInstanceOf[`ruby-text`]
-  def `ruby-text-container`: `ruby-text-container` = "ruby-text-container".asInstanceOf[`ruby-text-container`]
-  def `run-in`: `run-in` = "run-in".asInstanceOf[`run-in`]
   def `safe center`: `safe center` = "safe center".asInstanceOf[`safe center`]
   def `safe end`: `safe end` = "safe end".asInstanceOf[`safe end`]
   def `safe flex-end`: `safe flex-end` = "safe flex-end".asInstanceOf[`safe flex-end`]
@@ -619,15 +488,6 @@ object atUifabricMergeDashStylesLibStrings {
   def sticky: sticky = "sticky".asInstanceOf[sticky]
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   def `subpixel-antialiased`: `subpixel-antialiased` = "subpixel-antialiased".asInstanceOf[`subpixel-antialiased`]
-  def table: table = "table".asInstanceOf[table]
-  def `table-caption`: `table-caption` = "table-caption".asInstanceOf[`table-caption`]
-  def `table-cell`: `table-cell` = "table-cell".asInstanceOf[`table-cell`]
-  def `table-column`: `table-column` = "table-column".asInstanceOf[`table-column`]
-  def `table-column-group`: `table-column-group` = "table-column-group".asInstanceOf[`table-column-group`]
-  def `table-footer-group`: `table-footer-group` = "table-footer-group".asInstanceOf[`table-footer-group`]
-  def `table-header-group`: `table-header-group` = "table-header-group".asInstanceOf[`table-header-group`]
-  def `table-row`: `table-row` = "table-row".asInstanceOf[`table-row`]
-  def `table-row-group`: `table-row-group` = "table-row-group".asInstanceOf[`table-row-group`]
   def text: text = "text".asInstanceOf[text]
   def touch: touch = "touch".asInstanceOf[touch]
   def `ultra-condensed`: `ultra-condensed` = "ultra-condensed".asInstanceOf[`ultra-condensed`]

@@ -91,13 +91,13 @@ trait IEnumerable[T] extends js.Object {
     compareSelector: js.Function1[/* obj */ T, TKey]
   ): IEnumerable[TResult] = js.native
   def groupJoin[TInner, TKey, TResult](
-    inner: linqLib.Anon_XLengthNumber[TInner],
+    inner: linqLib.Anon_XLength[TInner],
     outerKeySelector: js.Function1[/* outer */ T, TKey],
     innerKeySelector: js.Function1[/* inner */ TInner, TKey],
     resultSelector: js.Function2[/* outer */ T, /* inner */ IEnumerable[TInner], TResult]
   ): IEnumerable[TResult] = js.native
   def groupJoin[TInner, TKey, TResult](
-    inner: linqLib.Anon_XLengthNumber[TInner],
+    inner: linqLib.Anon_XLength[TInner],
     outerKeySelector: js.Function1[/* outer */ T, TKey],
     innerKeySelector: js.Function1[/* inner */ TInner, TKey],
     resultSelector: js.Function2[/* outer */ T, /* inner */ IEnumerable[TInner], TResult],
@@ -141,13 +141,13 @@ trait IEnumerable[T] extends js.Object {
     compareSelector: js.Function1[/* obj */ T, TKey]
   ): IEnumerable[TResult] = js.native
   def join[TInner, TKey, TResult](
-    inner: linqLib.Anon_XLengthNumber[TInner],
+    inner: linqLib.Anon_XLength[TInner],
     outerKeySelector: js.Function1[/* outer */ T, TKey],
     innerKeySelector: js.Function1[/* inner */ TInner, TKey],
     resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult]
   ): IEnumerable[TResult] = js.native
   def join[TInner, TKey, TResult](
-    inner: linqLib.Anon_XLengthNumber[TInner],
+    inner: linqLib.Anon_XLength[TInner],
     outerKeySelector: js.Function1[/* outer */ T, TKey],
     innerKeySelector: js.Function1[/* inner */ TInner, TKey],
     resultSelector: js.Function2[/* outer */ T, /* inner */ TInner, TResult],
@@ -220,7 +220,7 @@ trait IEnumerable[T] extends js.Object {
     collectionSelector: js.Function2[
       /* element */ T, 
       /* index */ scala.Double, 
-      linqLib.Anon_XLengthNumberTOther[TOther] | IEnumerable[TOther] | js.Array[TOther]
+      linqLib.Anon_XLengthNumber[TOther] | IEnumerable[TOther] | js.Array[TOther]
     ]
   ): IEnumerable[TOther] = js.native
   def selectMany[TCollection, TResult](
@@ -315,17 +315,17 @@ trait IEnumerable[T] extends js.Object {
   def writeLine(): scala.Unit = js.native
   def writeLine[TResult](selector: js.Function1[/* element */ T, TResult]): scala.Unit = js.native
   def zip[TResult](params: js.Any*): IEnumerable[TResult] = js.native
-  def zip[U, TResult](
-    second: js.Array[U],
-    resultSelector: js.Function3[/* first */ T, /* second */ U, /* index */ scala.Double, TResult]
+  def zip[TResult](
+    second: js.Array[T],
+    resultSelector: js.Function3[/* first */ T, /* second */ T, /* index */ scala.Double, TResult]
   ): IEnumerable[TResult] = js.native
-  def zip[U, TResult](
-    second: linqLib.Anon_XLength[U],
-    resultSelector: js.Function3[/* first */ T, /* second */ U, /* index */ scala.Double, TResult]
+  def zip[TResult](
+    second: linqLib.Anon_X[T],
+    resultSelector: js.Function3[/* first */ T, /* second */ T, /* index */ scala.Double, TResult]
   ): IEnumerable[TResult] = js.native
-  def zip[U, TResult](
-    second: IEnumerable[U],
-    resultSelector: js.Function3[/* first */ T, /* second */ U, /* index */ scala.Double, TResult]
+  def zip[TResult](
+    second: IEnumerable[T],
+    resultSelector: js.Function3[/* first */ T, /* second */ T, /* index */ scala.Double, TResult]
   ): IEnumerable[TResult] = js.native
 }
 

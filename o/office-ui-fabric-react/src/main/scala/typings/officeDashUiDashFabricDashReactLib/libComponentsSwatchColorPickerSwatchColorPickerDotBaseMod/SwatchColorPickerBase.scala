@@ -58,7 +58,7 @@ class SwatchColorPickerBase protected ()
   /**
        * Render a color cell
        * @param item - The item to render
-       * @returns - Element representing the item
+       * @returns {JSX.Element} - Element representing the item
        */
   var _renderOption: js.Any = js.native
   var async: js.Any = js.native
@@ -74,7 +74,7 @@ class SwatchColorPickerBase protected ()
        * Get the selected item's index
        * @param items - The items to search
        * @param selectedId - The selected item's id to find
-       * @returns - The index of the selected item's id, -1 if there was no match
+       * @returns {number} - The index of the selected item's id, -1 if there was no match
        */
   /* private */ def _getSelectedIndex(items: js.Any, selectedId: js.Any): js.Any = js.native
   @JSName("componentWillReceiveProps")

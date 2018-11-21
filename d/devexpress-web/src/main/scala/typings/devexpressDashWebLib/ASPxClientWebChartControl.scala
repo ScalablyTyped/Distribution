@@ -91,6 +91,12 @@ trait ASPxClientWebChartControl extends ASPxClientControl {
        */
   def SaveToWindow(format: java.lang.String): scala.Unit = js.native
   /**
+       * Specifies the chart size.
+       * @param width The chart width.
+       * @param height The chart height.
+       */
+  def SetChartSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
+  /**
        * Changes the mouse pointer, which is shown when the mouse is over the chart control, to the pointer with the specified name.
        * @param cursor A string value representing the name of the desired cursor.
        */

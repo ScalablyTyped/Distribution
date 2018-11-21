@@ -48,8 +48,7 @@ object libReaderTaskEitherModMembers extends js.Object {
       ReaderTaskEither[js.Any, js.Any, js.Any]
     ]
   ] = js.native
-  val readerTaskEither: fpDashTsLib.libMonadMod.Monad3[URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[URI] with fpDashTsLib.libAltMod.Alt3[URI] with fpDashTsLib.libMonadIOMod.MonadIO3[URI] with fpDashTsLib.libMonadTaskMod.MonadTask3[URI] = js.native
-  val readerTaskEitherSeq: fpDashTsLib.libMonadMod.Monad3[URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[URI] with fpDashTsLib.libAltMod.Alt3[URI] with fpDashTsLib.libMonadIOMod.MonadIO3[URI] with fpDashTsLib.libMonadTaskMod.MonadTask3[URI] = js.native
+  val readerTaskEither: fpDashTsLib.libMonadMod.Monad3[URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[URI] with fpDashTsLib.libAltMod.Alt3[URI] = js.native
   val right: js.Function1[
     /* fa */ fpDashTsLib.libTaskMod.Task[js.Any], 
     ReaderTaskEither[js.Any, js.Any, js.Any]

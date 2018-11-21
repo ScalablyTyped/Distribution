@@ -11,7 +11,7 @@ trait DescribeObj extends js.Object {
   var only_Original: DescribeFn = js.native
   @JSName("skip")
   var skip_Original: DescribeFn = js.native
-  def apply(name: java.lang.String, fn: DescribeFn): scala.Unit = js.native
+  def apply(name: java.lang.String, fn: SyncCallback): scala.Unit = js.native
   def only(name: java.lang.String, fn: SyncCallback): scala.Unit = js.native
   def skip(name: java.lang.String, fn: SyncCallback): scala.Unit = js.native
 }

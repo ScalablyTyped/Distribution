@@ -63,8 +63,7 @@ object readerTaskEitherNs extends js.Object {
       fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[js.Any, js.Any, js.Any]
     ]
   ] = js.native
-  val readerTaskEither: fpDashTsLib.libMonadMod.Monad3[fpDashTsLib.libReaderTaskEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[fpDashTsLib.libReaderTaskEitherMod.URI] with fpDashTsLib.libAltMod.Alt3[fpDashTsLib.libReaderTaskEitherMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO3[fpDashTsLib.libReaderTaskEitherMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask3[fpDashTsLib.libReaderTaskEitherMod.URI] = js.native
-  val readerTaskEitherSeq: fpDashTsLib.libMonadMod.Monad3[fpDashTsLib.libReaderTaskEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[fpDashTsLib.libReaderTaskEitherMod.URI] with fpDashTsLib.libAltMod.Alt3[fpDashTsLib.libReaderTaskEitherMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO3[fpDashTsLib.libReaderTaskEitherMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask3[fpDashTsLib.libReaderTaskEitherMod.URI] = js.native
+  val readerTaskEither: fpDashTsLib.libMonadMod.Monad3[fpDashTsLib.libReaderTaskEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[fpDashTsLib.libReaderTaskEitherMod.URI] with fpDashTsLib.libAltMod.Alt3[fpDashTsLib.libReaderTaskEitherMod.URI] = js.native
   val right: js.Function1[
     /* fa */ fpDashTsLib.libTaskMod.Task[js.Any], 
     fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[js.Any, js.Any, js.Any]

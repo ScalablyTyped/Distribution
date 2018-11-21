@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BaseContext
   extends koaLib.koaMod.ContextDelegatedRequest
-     with koaLib.koaMod.ContextDelegatedResponse {
+     with koaLib.koaMod.ContextDelegatedResponse
+     with /**
+         * Custom properties.
+         */
+/* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
   /**
            * Similar to .throw(), adds assertion.
            *

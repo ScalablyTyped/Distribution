@@ -35,7 +35,7 @@ object ionicModMembers extends js.Object {
   def isIntegrationName(name: js.Any): /* is IntegrationName */scala.Boolean = js.native
   def isLogin(login: js.Any): /* is Login */scala.Boolean = js.native
   def isLoginResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
-  def isMultiProjectConfig(configFile: js.Any): /* is IMultiProjectConfig */scala.Boolean = js.native
+  def isMultiProjectConfig(configFile: js.Any): /* is MultiProjectConfig */scala.Boolean = js.native
   def isOAuthLogin(login: js.Any): /* is OAuthLogin */scala.Boolean = js.native
   def isOAuthLoginResponse(res: js.Any): /* is Response */scala.Boolean = js.native
   def isOrg(org: js.Any): /* is Org */scala.Boolean = js.native
@@ -53,8 +53,12 @@ object ionicModMembers extends js.Object {
   def isTreatableAilment(ailment: js.Any): /* is TreatableAilment */scala.Boolean = js.native
   def isUser(user: js.Any): /* is User */scala.Boolean = js.native
   def isUserResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
-  def loadExecutor(ctx: ionicLib.definitionsMod.IonicContext, pargv: js.Array[java.lang.String]): stdLib.Promise[ionicLib.libExecutorMod.Executor] = js.native
+  def loadExecutor(
+    ctx: ionicLib.definitionsMod.IonicContext,
+    pargv: js.Array[java.lang.String],
+    env: nodeLib.NodeJSNs.ProcessEnv
+  ): stdLib.Promise[ionicLib.libExecutorMod.Executor] = js.native
   def receive(msg: ionicLib.definitionsMod.IPCMessage): stdLib.Promise[scala.Unit] = js.native
-  def run(pargv: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
+  def run(pargv: js.Array[java.lang.String], env: nodeLib.NodeJSNs.ProcessEnv): stdLib.Promise[scala.Unit] = js.native
 }
 

@@ -16,7 +16,7 @@ trait IDialogContentProps
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Label to be passed to to aria-label of close button
-       * @defaultvalue Close
+       * @default Close
        */
   var closeButtonAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -83,7 +83,7 @@ trait IDialogContentProps
   ] = js.undefined
   /**
        * The type of Dialog to display.
-       * @defaultvalue DialogType.normal
+       * @default DialogType.normal
        */
   var `type`: js.UndefOr[DialogType] = js.undefined
 }

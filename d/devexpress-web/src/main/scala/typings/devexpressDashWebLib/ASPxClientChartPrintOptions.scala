@@ -47,6 +47,10 @@ trait ASPxClientChartPrintOptions extends js.Object {
        */
   def GetPaperKind(): java.lang.String
   /**
+       * Returns the value that defines whether to display the crosshair on the printed or exported chart.
+       */
+  def GetPrintCrosshair(): scala.Boolean
+  /**
        * Gets the size mode used to print a chart.
        */
   def GetSizeMode(): java.lang.String
@@ -95,6 +99,11 @@ trait ASPxClientChartPrintOptions extends js.Object {
        * @param paperKind A System.String object, specifying the name of a size ratio.
        */
   def SetPaperKind(paperKind: java.lang.String): scala.Unit
+  /**
+       * Specifies the value that defines whether to display the crosshair on the printed or exported chart.
+       * @param printCrosshair true, if the crosshair should be printed or exported; otherwise, false.
+       */
+  def SetPrintCrosshair(printCrosshair: scala.Boolean): scala.Unit
   /**
        * Sets the size mode used to print a chart.
        * @param sizeMode A System.String object, specifying the name of the size mode.

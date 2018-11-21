@@ -8,8 +8,9 @@
 //                 James Garbutt <https://github.com/43081j>
 //                 Josh Goldberg <https://github.com/joshuakgoldberg>
 //                 Greg Jednaszewski <https://github.com/gjednaszewski>
+//                 John Wood <https://github.com/johnjesse>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.0
 // sinon uses DOM dependencies which are absent in browser-less environment like node.js
 // to avoid compiler errors this monkey patch is used
 // see more details in https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11351

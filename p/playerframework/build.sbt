@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "playerframework"
-version := "0.0-unknown-dt-20181102Z-35167a"
+version := "0.0-unknown-dt-20181120Z-52d3de"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "com.scalablytyped" %%% "winrt" % "0.0-unknown-dt-20181102Z-3e40e9",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "winrt" % "0.0-unknown-dt-20180910Z-7ca4df",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

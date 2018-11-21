@@ -20,7 +20,9 @@ object reactDashInstantsearchDashCoreModMembers extends js.Object {
   def connectHighlight(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectHits[TProps /* <: reactDashInstantsearchDashCoreLib.Anon_Hits[THit] */, THit](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): ConnectedComponentClass[TProps, reactDashInstantsearchDashCoreLib.Anon_HitsArray[THit], js.Object] = js.native
   def connectHitsPerPage(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  def connectInfiniteHits(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def connectInfiniteHits(Composed: reactLib.reactMod.ReactNs.ComponentType[InfiniteHitsProvided[_]]): reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  @JSName("connectInfiniteHits")
+  def connectInfiniteHits_TPropsPartialTHitConnectedComponentClass[TProps /* <: stdLib.Partial[InfiniteHitsProvided[THit]] */, THit](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): ConnectedComponentClass[TProps, InfiniteHitsProvided[THit], js.Object] = js.native
   def connectMenu(stateless: reactLib.reactMod.ReactNs.StatelessComponent[MenuProvided]): reactLib.reactMod.ReactNs.ComponentClass[MenuExposed, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectMenu[TProps /* <: stdLib.Partial[MenuProvided] */](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): ConnectedComponentClass[TProps, MenuProvided, MenuExposed] = js.native
   def connectNumericMenu(stateless: reactLib.reactMod.ReactNs.StatelessComponent[NumericMenuProvided]): reactLib.reactMod.ReactNs.ComponentClass[NumericMenuExposed, reactLib.reactMod.ReactNs.ComponentState] = js.native

@@ -54,7 +54,7 @@ trait ASPxClientObjectContainer extends ASPxClientControl {
        */
   def PercentLoaded(): java.lang.String
   /**
-       * Starts playing the Flash movie.
+       * Starts playing media files.
        */
   def Play(): scala.Unit
   /**

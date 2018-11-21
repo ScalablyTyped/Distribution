@@ -21,7 +21,6 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var autoscalingplans: js.UndefOr[awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.apiVersion] = js.undefined
   var batch: js.UndefOr[awsDashSdkLib.clientsBatchMod.BatchNs.apiVersion] = js.undefined
   var budgets: js.UndefOr[js.Any] = js.undefined
-  var chime: js.UndefOr[awsDashSdkLib.clientsChimeMod.ChimeNs.apiVersion] = js.undefined
   var cloud9: js.UndefOr[awsDashSdkLib.clientsCloud9Mod.Cloud9Ns.apiVersion] = js.undefined
   var clouddirectory: js.UndefOr[awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.apiVersion] = js.undefined
   var cloudformation: js.UndefOr[awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.apiVersion] = js.undefined

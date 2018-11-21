@@ -22,7 +22,7 @@ trait PlatformSpecificBuildOptions
        */
   val asar: js.UndefOr[AsarOptions | scala.Boolean | scala.Null] = js.undefined
   /**
-       * A [glob patterns](/file-patterns) relative to the [app directory](#MetadataDirectories-app), which specifies which files to unpack when creating the [asar](http://electron.atom.io/docs/tutorial/application-packaging/) archive.
+       * A [glob patterns](/file-patterns.md) relative to the [app directory](#MetadataDirectories-app), which specifies which files to unpack when creating the [asar](http://electron.atom.io/docs/tutorial/application-packaging/) archive.
        */
   val asarUnpack: js.UndefOr[js.Array[java.lang.String] | java.lang.String | scala.Null] = js.undefined
   /**
@@ -40,7 +40,7 @@ trait PlatformSpecificBuildOptions
        */
   val detectUpdateChannel: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * The [electron-updater compatibility](/auto-update#compatibility) semver range.
+       * The [electron-updater compatibility](/auto-update.md#compatibility) semver range.
        */
   val electronUpdaterCompatibility: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   val extraFiles: js.UndefOr[(js.Array[FileSet | java.lang.String]) | FileSet | java.lang.String | scala.Null] = js.undefined

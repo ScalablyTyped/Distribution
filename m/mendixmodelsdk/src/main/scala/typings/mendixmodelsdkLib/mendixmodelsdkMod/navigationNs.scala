@@ -220,7 +220,6 @@ object navigationNs extends js.Object {
     var HybridPhoneOffline: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileKind = js.native
     var HybridTablet: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileKind = js.native
     var HybridTabletOffline: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileKind = js.native
-    var NativePhone: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileKind = js.native
     var Phone: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileKind = js.native
     var Responsive: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileKind = js.native
     var Tablet: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileKind = js.native

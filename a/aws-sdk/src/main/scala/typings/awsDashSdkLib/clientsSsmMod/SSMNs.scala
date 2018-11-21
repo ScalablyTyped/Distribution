@@ -126,10 +126,6 @@ object SSMNs extends js.Object {
          */
     var AssociationVersion: js.UndefOr[AssociationVersion] = js.undefined
     /**
-         * The severity level that is assigned to the association.
-         */
-    var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
-    /**
          * The date when the association was made.
          */
     var Date: js.UndefOr[DateTime] = js.undefined
@@ -361,10 +357,6 @@ object SSMNs extends js.Object {
          * The association version.
          */
     var AssociationVersion: js.UndefOr[AssociationVersion] = js.undefined
-    /**
-         * The severity level that is assigned to the association.
-         */
-    var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
     /**
          * The date the association version was created.
          */
@@ -1058,10 +1050,6 @@ object SSMNs extends js.Object {
          */
     var AssociationName: js.UndefOr[AssociationName] = js.undefined
     /**
-         * The severity level to assign to the association.
-         */
-    var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
-    /**
          * The document version.
          */
     var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
@@ -1117,10 +1105,6 @@ object SSMNs extends js.Object {
          * Specify a descriptive name for the association.
          */
     var AssociationName: js.UndefOr[AssociationName] = js.undefined
-    /**
-         * The severity level to assign to the association.
-         */
-    var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
     /**
          * The document version you want to associate with the target(s). Can be a specific version or the default version.
          */
@@ -9431,10 +9415,6 @@ object SSMNs extends js.Object {
          */
     var AssociationVersion: js.UndefOr[AssociationVersion] = js.undefined
     /**
-         * The severity level to assign to the association.
-         */
-    var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
-    /**
          * The document version you want update for the association. 
          */
     var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
@@ -9966,7 +9946,6 @@ object SSMNs extends js.Object {
   type AggregatorSchemaOnly = scala.Boolean
   type AllowedPattern = java.lang.String
   type ApproveAfterDays = scala.Double
-  type AssociationComplianceSeverity = awsDashSdkLib.awsDashSdkLibStrings.CRITICAL | awsDashSdkLib.awsDashSdkLibStrings.HIGH | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM | awsDashSdkLib.awsDashSdkLibStrings.LOW | awsDashSdkLib.awsDashSdkLibStrings.UNSPECIFIED | java.lang.String
   type AssociationDescriptionList = js.Array[AssociationDescription]
   type AssociationExecutionFilterKey = awsDashSdkLib.awsDashSdkLibStrings.ExecutionId | awsDashSdkLib.awsDashSdkLibStrings.Status | awsDashSdkLib.awsDashSdkLibStrings.CreatedTime | java.lang.String
   type AssociationExecutionFilterList = js.Array[AssociationExecutionFilter]

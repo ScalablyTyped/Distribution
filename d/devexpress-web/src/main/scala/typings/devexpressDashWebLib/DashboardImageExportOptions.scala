@@ -20,6 +20,7 @@ trait DashboardImageExportOptions extends js.Object {
        * Value: true, to add current parameter values to the exported document; otherwise, false.
        */
   var ExportParameters: scala.Boolean
+  var FontInfo: ExportFontInfo
   /**
        * Gets or sets an image format in which the dashboard/dashboard item is exported.
        * Value: A DashboardExportImageFormat value that specifies an image format in which the dashboard/dashboard item is exported.

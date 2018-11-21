@@ -12,9 +12,5 @@ object libComponentsTooltipModMembers extends js.Object {
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipDotTypesMod.ITooltipProps, 
     reactLib.reactMod.Global.JSXNs.Element
   ] = js.native
-  val TooltipHost: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
 }
 

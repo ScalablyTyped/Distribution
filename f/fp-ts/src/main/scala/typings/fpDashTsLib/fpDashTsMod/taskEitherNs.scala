@@ -15,16 +15,6 @@ object taskEitherNs extends js.Object {
   }
   
   val URI: /* TaskEither */ java.lang.String = js.native
-  val bracket: js.Function3[
-    /* acquire */ fpDashTsLib.libTaskEitherMod.TaskEither[js.Any, js.Any], 
-    /* use */ js.Function1[/* a */ js.Any, fpDashTsLib.libTaskEitherMod.TaskEither[js.Any, js.Any]], 
-    /* release */ js.Function2[
-      /* a */ js.Any, 
-      /* e */ fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
-      fpDashTsLib.libTaskEitherMod.TaskEither[js.Any, scala.Unit]
-    ], 
-    fpDashTsLib.libTaskEitherMod.TaskEither[js.Any, js.Any]
-  ] = js.native
   val fromEither: js.Function1[
     /* fa */ fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
     fpDashTsLib.libTaskEitherMod.TaskEither[js.Any, js.Any]
@@ -63,8 +53,7 @@ object taskEitherNs extends js.Object {
     /* fa */ fpDashTsLib.libTaskMod.Task[js.Any], 
     fpDashTsLib.libTaskEitherMod.TaskEither[js.Any, js.Any]
   ] = js.native
-  val taskEither: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask2[fpDashTsLib.libTaskEitherMod.URI] = js.native
-  val taskEitherSeq: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask2[fpDashTsLib.libTaskEitherMod.URI] = js.native
+  val taskEither: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTaskEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libTaskEitherMod.URI] = js.native
   val tryCatch: js.Function2[
     /* f */ fpDashTsLib.libFunctionMod.Lazy[stdLib.Promise[js.Any]], 
     /* onrejected */ js.Function1[/* reason */ js.Object, js.Any], 

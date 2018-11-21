@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait HostKey extends js.Object {
-  var privatekey: ParsedKey
-  var publickey: ParsedKey
+  var privateKey: ParsedKey
+  var publicKey: ParsedKey
 }
 

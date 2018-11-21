@@ -12,7 +12,7 @@ package object mapboxglNs {
   type Expression = js.Array[js.Any]
   type FullscreenControl = Control
   type LngLatBoundsLike = LngLatBounds | (js.Tuple2[LngLatLike, LngLatLike]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
-  type LngLatLike = LngLat | mapboxDashGlLib.Anon_Lat | (js.Tuple2[scala.Double, scala.Double])
+  type LngLatLike = LngLat | mapboxDashGlLib.Anon_Lat | mapboxDashGlLib.Anon_LatLon | (js.Tuple2[scala.Double, scala.Double])
   type MapDataEvent = MapSourceDataEvent | MapStyleDataEvent
   type MapLayerMouseEvent = MapMouseEvent with mapboxDashGlLib.Anon_Features
   type MapLayerTouchEvent = MapTouchEvent with mapboxDashGlLib.Anon_Features

@@ -67,7 +67,7 @@ class IFaxServer () extends js.Object {
     vMethods: js.Any
   ): scala.Unit = js.native
   /** Set server level extention property */
-  def SetExtensionProperty(bstrGUID: java.lang.String, vProperty: stdLib.SafeArray[_]): scala.Unit = js.native
+  def SetExtensionProperty(bstrGUID: java.lang.String, vProperty: activexDashInteropLib.SafeArray[_]): scala.Unit = js.native
   /** Unregister device provider */
   def UnregisterDeviceProvider(bstrUniqueName: java.lang.String): scala.Unit = js.native
   /** Unregister inbound routing extension */

@@ -14,13 +14,13 @@ trait IRatingProps
   var allowZeroStars: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Optional label format for star ratings, will be read by screen readers, defaults to ''.
-       * Can be used like "\{0\} of \{1\} stars selected".
-       * Where \{0\} will be subsituted by the current rating and \{1\} will be subsituted by the max rating.
+       * Can be used like "{0} of {1} stars selected".
+       * Where {0} will be subsituted by the current rating and {1} will be subsituted by the max rating.
        */
   var ariaLabelFormat: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated: Optional id of label describing this instance of Rating. Use `getAriaLabel` instead.
-       * @deprecated Use `getAriaLabel` instead.
+       * Deprecated: Optional id of label describing this instance of Rating. Instead of this use getArialabel
+       * @deprecated
        */
   var ariaLabelId: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -36,13 +36,13 @@ trait IRatingProps
        */
   var icon: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Maximum rating, defaults to 5, has to be \>= min
+       * Maximum rating, defaults to 5, has to be >= min
        */
   @JSName("max")
   var max_IRatingProps: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Minimum rating, defaults to 1, has to be \>= 0
-       * @deprecated No longer used.
+       * Minimum rating, defaults to 1, has to be >= 0
+       * @deprecated
        */
   @JSName("min")
   var min_IRatingProps: js.UndefOr[scala.Double] = js.undefined
@@ -58,7 +58,7 @@ trait IRatingProps
     ]
   ] = js.undefined
   /**
-       * @deprecated Use `onChange` instead.
+       * @deprecated Use onChange instead.
        */
   var onChanged: js.UndefOr[js.Function1[/* rating */ scala.Double, scala.Unit]] = js.undefined
   /**

@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("node-fetch", "FetchError")
 @js.native
 class FetchError protected ()
-  extends nodeDashFetchLib.nodeDashFetchMod.fetchNs.FetchError {
+  extends nodeLib.Error {
   def this(message: java.lang.String, `type`: java.lang.String, systemError: java.lang.String) = this()
-  /* CompleteClass */
-  override var name: nodeDashFetchLib.nodeDashFetchLibStrings.FetchError = js.native
+  var name: nodeDashFetchLib.nodeDashFetchLibStrings.FetchError = js.native
 }
 

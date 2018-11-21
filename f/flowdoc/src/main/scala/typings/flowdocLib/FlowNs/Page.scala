@@ -11,5 +11,7 @@ trait Page
   var backgroundColor: Color
   var children: js.Array[Screen | Image | Rectangle | Ellipse | Diamond]
   var startNodeID: js.UndefOr[java.lang.String] = js.undefined
+  @JSName("type")
+  var type_Page: flowdocLib.flowdocLibStrings.PAGE
 }
 

@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 trait OnClickData extends js.Object {
   /** The id of the bookmark where the context menu was clicked, if it was on a bookmark. */
   var bookmarkId: java.lang.String
+  /** An integer value of button by which menu item was clicked. */
+  var button: js.UndefOr[scala.Double] = js.undefined
   /** A flag indicating the state of a checkbox or radio item after it is clicked. */
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   /** A flag indicating whether the element is editable (text input, textarea, etc.). */
@@ -44,6 +46,8 @@ trait OnClickData extends js.Object {
            * corresponding element.
            */
   var targetElementId: js.UndefOr[scala.Double] = js.undefined
+  /** The type of view where the menu is clicked. May be unset if the menu is not associated with a view. */
+  var viewType: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType] = js.undefined
   /** A flag indicating the state of a checkbox or radio item before it was clicked. */
   var wasChecked: js.UndefOr[scala.Boolean] = js.undefined
 }

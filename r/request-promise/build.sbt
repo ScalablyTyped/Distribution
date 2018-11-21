@@ -1,17 +1,17 @@
 organization := "com.scalablytyped"
 name := "request-promise"
-version := "4.1-dt-20181102Z-67fbe5"
+version := "4.1-dt-20180910Z-3730b8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "bluebird" % "3.5-dt-20181102Z-6d07df",
-  "com.scalablytyped" %%% "caseless" % "0.12-dt-20181102Z-5bb15d",
-  "com.scalablytyped" %%% "form-data" % "2.2-dt-20181116Z-a46e60",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-806eaf",
-  "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-64050c",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "com.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181102Z-a43730",
+  "com.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-3124ce",
+  "com.scalablytyped" %%% "caseless" % "0.12-dt-20180910Z-7ce57e",
+  "com.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-d9baa6",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-33e3b0",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181104Z-a9e24d",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

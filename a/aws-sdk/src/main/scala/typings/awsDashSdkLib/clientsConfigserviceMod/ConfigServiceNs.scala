@@ -3083,7 +3083,7 @@ object ConfigServiceNs extends js.Object {
   type ResourceIdentifierList = js.Array[ResourceIdentifier]
   type ResourceKeys = js.Array[ResourceKey]
   type ResourceName = java.lang.String
-  type ResourceType = /* LimitUnionLength: was union type with length 65 */js.Any
+  type ResourceType = /* LimitUnionLength: was union type with length 59 */js.Any
   type ResourceTypeList = js.Array[ResourceType]
   type ResourceTypes = js.Array[StringWithCharLimit256]
   type RetentionConfigurationList = js.Array[RetentionConfiguration]

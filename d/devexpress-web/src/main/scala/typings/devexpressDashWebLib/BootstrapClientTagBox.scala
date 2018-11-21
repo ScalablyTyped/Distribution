@@ -91,8 +91,8 @@ trait BootstrapClientTagBox extends ASPxClientTokenBox {
        */
   def SetItemBadgeText(index: scala.Double, text: java.lang.String): scala.Unit = js.native
   /**
-       * Sets the list editor's selected item.
-       * @param item A BootstrapClientListBoxItem object that specifies the item to select.
+       * This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.
+       * @param item 
        */
   def SetSelectedItem(item: BootstrapClientListBoxItem): scala.Unit = js.native
   /**

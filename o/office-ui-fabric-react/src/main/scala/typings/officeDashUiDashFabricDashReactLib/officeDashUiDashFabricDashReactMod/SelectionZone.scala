@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(officeDashUiDashFabricDashReactLib.libMarqueeSelectionMod.SelectionZone because Inheritance from two classes, officeDashUiDashFabricDashReactLib.libSelectionMod.SelectionZone because Inheritance from two classes)*/
+/* RemoveMultipleInheritance: Dropped parents List(officeDashUiDashFabricDashReactLib.libMarqueeSelectionMod.SelectionZone because Inheritance from two classes)*/
 @JSImport("office-ui-fabric-react", "SelectionZone")
 @js.native
 class SelectionZone ()

@@ -1,5 +1,5 @@
 [debug] PhaseRunner.scala:78 Success [id => streamjs, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/streamjs/index.d.ts),FromFolder(InFolder(/home/olvind/tmp/tso-cache/DefinitelyTyped/types/streamjs),TsIdentLibrarySimple(streamjs)),TsIdentModule(None,List(streamjs))) [id => streamjs, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/streamjs/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/streamjs),TsIdentLibrarySimple(streamjs)),TsIdentModule(None,List(streamjs))) [id => streamjs, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(streamjs) [id => streamjs, phase => typescript] 
 [info ] PreferTypeAlias.scala:118 Simplified to function type alias [id => streamjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Stream) / TsDeclInterface(Accumulator))] 
 [info ] ExpandCallables.scala:57 Expanded supplier into 1 methods [id => streamjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Stream) / TsDeclInterface(Collector))] 
@@ -15,4 +15,3 @@
 [error] Collector.scala:12 scala.scalajs.js.Function does not take type parameters,   var finisher: js.Function[T, T] = js.native [id => streamjs, phase => build] 
 [error] Collector.scala:12 scala.scalajs.js.Function does not take type parameters,   var finisher: js.Function[T, T] = js.native [id => streamjs, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [streamjs => Compilation failed] [id => streamjs, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [streamjs => Compilation failed] [id => streamjs, phase => publish] 

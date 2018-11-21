@@ -22,7 +22,6 @@ trait TreeSelectProps
   @JSName("onSearch")
   var onSearch_TreeSelectProps: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined
-  var onTreeExpand: js.UndefOr[js.Function1[/* keys */ js.Array[java.lang.String], scala.Unit]] = js.undefined
   var searchPlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var showCheckedStrategy: js.UndefOr[
     antdLib.antdLibStrings.SHOW_ALL | antdLib.antdLibStrings.SHOW_PARENT | antdLib.antdLibStrings.SHOW_CHILD
@@ -34,7 +33,6 @@ trait TreeSelectProps
   var treeDataSimpleMode: js.UndefOr[scala.Boolean | TreeDataSimpleMode] = js.undefined
   var treeDefaultExpandAll: js.UndefOr[scala.Boolean] = js.undefined
   var treeDefaultExpandedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var treeExpandedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var treeNodeFilterProp: js.UndefOr[java.lang.String] = js.undefined
   var treeNodeLabelProp: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[java.lang.String | scala.Double | js.Array[_]] = js.undefined

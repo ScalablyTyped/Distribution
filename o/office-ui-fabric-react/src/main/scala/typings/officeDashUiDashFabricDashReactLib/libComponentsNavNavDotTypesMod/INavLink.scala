@@ -12,8 +12,8 @@ trait INavLink
      */
 /* propertyName */ ScalablyTyped.runtime.StringDictionary[js.Any] {
   /**
-       * Deprecated at v0.68.1 and will be removed at \>= v1.0.0.
-       * @deprecated Removed at v1.0.0.
+       * Deprecated at v0.68.1 and will be removed at >= v1.0.0.
+       * @deprecated
        */
   var altText: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -25,8 +25,8 @@ trait INavLink
        */
   var automationId: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated at v0.68.1 and will be removed at \>= v1.0.0.
-       * @deprecated Removed at v1.0.0.
+       * Deprecated at v0.68.1 and will be removed at >= v1.0.0.
+       * @deprecated
        */
   var engagementName: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -40,8 +40,8 @@ trait INavLink
        */
   var icon: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated. Use `iconProps.className` instead.
-       * @deprecated Use `iconProps.className` instead.
+       * Deprecated. Use iconProps.className instead.
+       * @deprecated
        */
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
   /**

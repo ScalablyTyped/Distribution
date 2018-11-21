@@ -20,7 +20,7 @@ trait ObservableStatic extends js.Object {
     iterate: js.Function1[/* state */ TState, TState],
     resultSelector: js.Function1[/* state */ TState, TResult],
     timeSelector: js.Function1[/* state */ TState, stdLib.Date],
-    scheduler: rxDashLiteLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler
   ): Observable[TResult] = js.native
   def generateWithRelativeTime[TState, TResult](
     initialState: TState,
@@ -35,11 +35,11 @@ trait ObservableStatic extends js.Object {
     iterate: js.Function1[/* state */ TState, TState],
     resultSelector: js.Function1[/* state */ TState, TResult],
     timeSelector: js.Function1[/* state */ TState, scala.Double],
-    scheduler: rxDashLiteLib.RxNs.IScheduler
+    scheduler: rxDashCoreLib.RxNs.IScheduler
   ): Observable[TResult] = js.native
   def timer(dueTime: stdLib.Date): Observable[scala.Double] = js.native
   def timer(dueTime: stdLib.Date, period: scala.Double): Observable[scala.Double] = js.native
-  def timer(dueTime: stdLib.Date, period: scala.Double, scheduler: rxDashLiteLib.RxNs.IScheduler): Observable[scala.Double] = js.native
-  def timer(dueTime: stdLib.Date, scheduler: rxDashLiteLib.RxNs.IScheduler): Observable[scala.Double] = js.native
+  def timer(dueTime: stdLib.Date, period: scala.Double, scheduler: rxDashCoreLib.RxNs.IScheduler): Observable[scala.Double] = js.native
+  def timer(dueTime: stdLib.Date, scheduler: rxDashCoreLib.RxNs.IScheduler): Observable[scala.Double] = js.native
 }
 

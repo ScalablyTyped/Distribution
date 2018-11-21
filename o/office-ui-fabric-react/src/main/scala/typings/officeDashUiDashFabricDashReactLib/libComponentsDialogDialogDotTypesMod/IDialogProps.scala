@@ -14,17 +14,17 @@ trait IDialogProps
      with officeDashUiDashFabricDashReactLib.libCommonIAccessiblePopupPropsMod.IAccessiblePopupProps {
   /**
        * Optional id for aria-DescribedBy
-       * @deprecated Pass through via `modalProps.subtitleAriaId` instead.
+       * @deprecated Pass through via modalProps.subtitleAriaId instead
        */
   var ariaDescribedById: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Optional id for aria-LabelledBy
-       * @deprecated Pass through via `modalProps.titleAriaId` instead.
+       * @deprecated Pass through via modalProps.titleAriaId instead
        */
   var ariaLabelledById: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Optional class name to be added to the root class
-       * @deprecated Pass through via `modalProps.className` instead
+       * @deprecated Pass through via modalProps.className instead
        */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -34,12 +34,12 @@ trait IDialogProps
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IDialog]] = js.undefined
   /**
        * Optional override for container class
-       * @deprecated Pass through via `modalProps.className` instead
+       * @deprecated Pass through via modalProps.className instead
        */
   var containerClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Optional override content class
-       * @deprecated Pass through via `dialogContentProps` instead as `className`.
+       * @deprecated Pass through via dialogContentProps instead as className
        */
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -50,26 +50,25 @@ trait IDialogProps
   ] = js.undefined
   /**
        * Whether the dialog is hidden.
-       * @defaultvalue true
+       * @default true
        */
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
-       * @defaultvalue false
-       * @deprecated Pass through via `modalProps` instead
+       * @default false
+       * @deprecated Pass through via modalProps instead
        */
   var isBlocking: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the overlay is dark themed.
-       * @defaultvalue true
-       * @deprecated Pass through via `modalProps` instead
+       * @default true
+       * @deprecated Pass through via modalProps instead
        */
   var isDarkOverlay: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the dialog is displayed.
-       * Deprecated, use `hidden` instead.
-       * @defaultvalue false
-       * @deprecated Use `hidden` instead
+       * @default false
+       * @deprecated Use hidden instead
        */
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -104,17 +103,17 @@ trait IDialogProps
   ] = js.undefined
   /**
        * A callback function which is called after the Dialog is dismissed and the animation is complete.
-       * @deprecated Pass through via `modalProps` instead
+       * @deprecated Pass through via modalProps instead
        */
   var onDismissed: js.UndefOr[js.Function0[_]] = js.undefined
   /**
        * A callback function for when the Dialog content is mounted on the overlay layer
-       * @deprecated Pass through via `modalProps instead`
+       * @deprecated Pass through via modalProps instead
        */
   var onLayerDidMount: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
-       * Deprecated at 0.81.2, use `onLayerDidMount` instead.
-       * @deprecated Use `onLayerDidMount` instead.
+       * Deprecated at 0.81.2, use 'onLayerDidMount' instead.
+       * @deprecated
        */
   var onLayerMounted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
@@ -125,7 +124,7 @@ trait IDialogProps
   ] = js.undefined
   /**
        * The subtext to display in the dialog.
-       * @deprecated Pass through via `dialogContentProps` instead.
+       * @deprecated Pass through via dialogContentProps instead
        */
   var subText: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -134,12 +133,12 @@ trait IDialogProps
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
        * The title text to display at the top of the dialog.
-       * @deprecated Pass through via `dialogContentProps` instead.
+       * @deprecated Pass through via dialogContentProps instead
        */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Other top buttons that will show up next to the close button
-       * @deprecated Pass through via `dialogContentProps` instead.
+       * @deprecated Pass through via dialogContentProps instead
        */
   var topButtonsProps: js.UndefOr[
     js.Array[
@@ -148,8 +147,8 @@ trait IDialogProps
   ] = js.undefined
   /**
        * The type of Dialog to display.
-       * @defaultvalue DialogType.normal
-       * @deprecated Pass through via `dialogContentProps` instead.
+       * @default DialogType.normal
+       * @deprecated Pass through via dialogContentProps instead
        */
   var `type`: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsDialogDialogContentDotTypesMod.DialogType

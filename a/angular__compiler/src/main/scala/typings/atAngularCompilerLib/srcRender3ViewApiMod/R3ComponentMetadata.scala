@@ -40,10 +40,6 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
        */
   var template: atAngularCompilerLib.Anon_Nodes
   /**
-       * The list of view providers defined in the component.
-       */
-  var viewProviders: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null
-  /**
        * Information about the view queries made by the component.
        */
   var viewQueries: js.Array[R3QueryMetadata]

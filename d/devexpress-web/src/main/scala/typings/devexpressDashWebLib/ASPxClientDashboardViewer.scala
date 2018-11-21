@@ -21,6 +21,10 @@ trait ASPxClientDashboardViewer extends ASPxClientControl {
        */
   var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientDashboardViewer]] = js.native
   /**
+       * Allows you to customize a dashboard title (for instance, add custom buttons, menus, etc.) of the Web Viewer.
+       */
+  var DashboardTitleToolbarUpdated: ASPxClientEvent[ASPxClientDashboardTitleToolbarUpdatedEventHandler[ASPxClientDashboardViewer]] = js.native
+  /**
        * Provides the capability to handle data loading errors in the ASPxClientDashboardViewer.
        */
   var DataLoadingError: ASPxClientEvent[ASPxClientDashboardDataLoadingErrorEventHandler[ASPxClientDashboardViewer]] = js.native
@@ -90,10 +94,6 @@ trait ASPxClientDashboardViewer extends ASPxClientControl {
        * Occurs when an end-user changes the state of the master filter.
        */
   var MasterFilterSet: ASPxClientEvent[ASPxClientDashboardMasterFilterSetEventHandler[ASPxClientDashboardViewer]] = js.native
-  /**
-       * Allows you to customize a dashboard title (for instance, add custom buttons, menus, etc.).
-       */
-  var TitleToolbarUpdated: ASPxClientEvent[ASPxClientDashboardTitleToolbarUpdatedEventHandler[ASPxClientDashboardViewer]] = js.native
   /**
        * Locks the EndUpdateParameters method call.
        */

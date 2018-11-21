@@ -1,17 +1,17 @@
 organization := "com.scalablytyped"
 name := "redux-auth-wrapper"
-version := "2.0-dt-20181102Z-9f7d6c"
+version := "2.0-dt-20180910Z-1232ec"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "csstype" % "2.5.7-8f5757",
-  "com.scalablytyped" %%% "history" % "4.7.2-dt-20181102Z-806809",
-  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20181102Z-3c49da",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-28281f",
-  "com.scalablytyped" %%% "redux" % "4.0.1-f538df",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "com.scalablytyped" %%% "symbol-observable" % "1.2.0-998bd5",
+  "com.scalablytyped" %%% "csstype" % "2.5.7-eccde3",
+  "com.scalablytyped" %%% "history" % "4.7.2-dt-20181018Z-c0d74d",
+  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
+  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-44bb36",
+  "com.scalablytyped" %%% "redux" % "4.0.1-d3681d",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "symbol-observable" % "1.2.0-e6336c",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

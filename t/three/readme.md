@@ -29,6 +29,7 @@
 // https://github.com/mrdoob/three.js/blob/master/examples/js/loaders/DDSLoader.js
 // Things from three.js/examples/ that do not (yet) have their own file
 // https://github.com/mrdoob/three.js/blob/master/examples/js/loaders/FBXLoader.js
+// https://github.com/mrdoob/three.js/blob/master/examples/js/loaders/GLTFLoader.js
 // https://github.com/mrdoob/three.js/blob/master/examples/js/loaders/MTLLoader.js
 // https://github.com/mrdoob/three.js/blob/master/examples/js/loaders/OBJLoader.js
 // https://github.com/mrdoob/three.js/blob/master/examples/js/loaders/TGALoader.js

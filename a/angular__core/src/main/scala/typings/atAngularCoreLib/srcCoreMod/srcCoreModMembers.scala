@@ -333,7 +333,6 @@ object srcCoreModMembers extends js.Object {
     templateFactory: atAngularCoreLib.srcViewTypesMod.ViewDefinitionFactory
   ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
   def ɵbind[T](value: T): T | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def ɵbindPlayerFactory[T](factoryFn: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactoryBuildFn, value: T): atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory = js.native
   def ɵbypassSanitizationTrustHtml(trustedHtml: java.lang.String): atAngularCoreLib.srcSanitizationBypassMod.TrustedHtmlString = js.native
   def ɵbypassSanitizationTrustResourceUrl(trustedResourceUrl: java.lang.String): atAngularCoreLib.srcSanitizationBypassMod.TrustedResourceUrlString = js.native
   def ɵbypassSanitizationTrustScript(trustedScript: java.lang.String): atAngularCoreLib.srcSanitizationBypassMod.TrustedScriptString = js.native
@@ -519,12 +518,12 @@ object srcCoreModMembers extends js.Object {
     value: js.Any,
     sanitizer: atAngularCoreLib.srcRender3InstructionsMod.SanitizerFn
   ): scala.Unit = js.native
-  def ɵelementClassProp(
+  def ɵelementClassProp[T](index: scala.Double, stylingIndex: scala.Double, value: T): scala.Unit = js.native
+  def ɵelementClassProp[T](
     index: scala.Double,
     stylingIndex: scala.Double,
-    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory
+    value: atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE
   ): scala.Unit = js.native
-  def ɵelementClassProp(index: scala.Double, stylingIndex: scala.Double, value: scala.Boolean): scala.Unit = js.native
   def ɵelementEnd(): scala.Unit = js.native
   def ɵelementEventFullName(target: java.lang.String, name: java.lang.String): java.lang.String = js.native
   def ɵelementEventFullName(target: scala.Null, name: java.lang.String): java.lang.String = js.native
@@ -564,30 +563,17 @@ object srcCoreModMembers extends js.Object {
     attrs: scala.Null,
     localRefs: js.Array[java.lang.String]
   ): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double): scala.Unit = js.native
-  def ɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory
-  ): scala.Unit = js.native
-  def ɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory,
-    suffix: java.lang.String
-  ): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String, suffix: java.lang.String): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Double): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Double, suffix: java.lang.String): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Null, suffix: java.lang.String): scala.Unit = js.native
-  def ɵelementStyling(): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyleProp[T](index: scala.Double, styleIndex: scala.Double): scala.Unit = js.native
+  def ɵelementStyleProp[T](index: scala.Double, styleIndex: scala.Double, value: T): scala.Unit = js.native
+  def ɵelementStyleProp[T](index: scala.Double, styleIndex: scala.Double, value: T, suffix: java.lang.String): scala.Unit = js.native
+  def ɵelementStyleProp[T](index: scala.Double, styleIndex: scala.Double, value: scala.Null, suffix: java.lang.String): scala.Unit = js.native
+  def ɵelementStyling[T](): scala.Unit = js.native
+  def ɵelementStyling[T](
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ]
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
@@ -595,7 +581,7 @@ object srcCoreModMembers extends js.Object {
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ]
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
@@ -604,32 +590,32 @@ object srcCoreModMembers extends js.Object {
     ],
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
     styleDeclarations: scala.Null,
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: scala.Null,
     styleDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ]
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: scala.Null,
     styleDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: scala.Null,
     styleDeclarations: scala.Null,
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def ɵelementStylingApply(index: scala.Double): scala.Unit = js.native
+  def ɵelementStylingApply[T](index: scala.Double): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double, classes: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def ɵelementStylingMap[T](

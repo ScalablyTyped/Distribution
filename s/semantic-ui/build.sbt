@@ -1,33 +1,33 @@
 organization := "com.scalablytyped"
 name := "semantic-ui"
-version := "2.2-dt-20181102Z-47c62d"
+version := "2.2-dt-20180910Z-ac6b5c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181102Z-ef9974",
-  "com.scalablytyped" %%% "semantic-ui-accordion" % "2.2-dt-20181102Z-b21357",
-  "com.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20181102Z-8b8872",
-  "com.scalablytyped" %%% "semantic-ui-checkbox" % "2.2-dt-20181102Z-fe3f06",
-  "com.scalablytyped" %%% "semantic-ui-dimmer" % "2.2-dt-20181102Z-aadb2d",
-  "com.scalablytyped" %%% "semantic-ui-dropdown" % "2.2-dt-20181102Z-6610c4",
-  "com.scalablytyped" %%% "semantic-ui-embed" % "2.2-dt-20181102Z-53fc1c",
-  "com.scalablytyped" %%% "semantic-ui-form" % "2.2-dt-20181102Z-85ef54",
-  "com.scalablytyped" %%% "semantic-ui-modal" % "2.2-dt-20181102Z-e072ad",
-  "com.scalablytyped" %%% "semantic-ui-nag" % "2.2-dt-20181102Z-643d1a",
-  "com.scalablytyped" %%% "semantic-ui-popup" % "2.2-dt-20181102Z-236193",
-  "com.scalablytyped" %%% "semantic-ui-progress" % "2.2-dt-20181102Z-bdd469",
-  "com.scalablytyped" %%% "semantic-ui-rating" % "2.2-dt-20181102Z-7d0dd1",
-  "com.scalablytyped" %%% "semantic-ui-search" % "2.2-dt-20181102Z-91bcaa",
-  "com.scalablytyped" %%% "semantic-ui-shape" % "2.2-dt-20181102Z-54fe92",
-  "com.scalablytyped" %%% "semantic-ui-sidebar" % "2.2-dt-20181102Z-61d348",
-  "com.scalablytyped" %%% "semantic-ui-site" % "2.2-dt-20181102Z-2bdb44",
-  "com.scalablytyped" %%% "semantic-ui-sticky" % "2.2-dt-20181102Z-55a748",
-  "com.scalablytyped" %%% "semantic-ui-tab" % "2.2-dt-20181102Z-f591ed",
-  "com.scalablytyped" %%% "semantic-ui-transition" % "2.2-dt-20181102Z-0b847e",
-  "com.scalablytyped" %%% "semantic-ui-visibility" % "2.2-dt-20181102Z-9ff2db",
-  "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181102Z-6214b8",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-c6ff09",
+  "com.scalablytyped" %%% "semantic-ui-accordion" % "2.2-dt-20180910Z-96cdf6",
+  "com.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20180910Z-ee1d82",
+  "com.scalablytyped" %%% "semantic-ui-checkbox" % "2.2-dt-20180910Z-ef49d2",
+  "com.scalablytyped" %%% "semantic-ui-dimmer" % "2.2-dt-20180910Z-9fa551",
+  "com.scalablytyped" %%% "semantic-ui-dropdown" % "2.2-dt-20180910Z-a3df89",
+  "com.scalablytyped" %%% "semantic-ui-embed" % "2.2-dt-20180910Z-6e5818",
+  "com.scalablytyped" %%% "semantic-ui-form" % "2.2-dt-20180910Z-366a64",
+  "com.scalablytyped" %%% "semantic-ui-modal" % "2.2-dt-20180910Z-87fd5a",
+  "com.scalablytyped" %%% "semantic-ui-nag" % "2.2-dt-20180910Z-20a046",
+  "com.scalablytyped" %%% "semantic-ui-popup" % "2.2-dt-20180910Z-560015",
+  "com.scalablytyped" %%% "semantic-ui-progress" % "2.2-dt-20180910Z-9ce806",
+  "com.scalablytyped" %%% "semantic-ui-rating" % "2.2-dt-20180910Z-4845d5",
+  "com.scalablytyped" %%% "semantic-ui-search" % "2.2-dt-20180910Z-27971d",
+  "com.scalablytyped" %%% "semantic-ui-shape" % "2.2-dt-20180910Z-86f6f9",
+  "com.scalablytyped" %%% "semantic-ui-sidebar" % "2.2-dt-20180910Z-6795bd",
+  "com.scalablytyped" %%% "semantic-ui-site" % "2.2-dt-20180910Z-4286ed",
+  "com.scalablytyped" %%% "semantic-ui-sticky" % "2.2-dt-20180910Z-0bbd5b",
+  "com.scalablytyped" %%% "semantic-ui-tab" % "2.2-dt-20180910Z-fb64c2",
+  "com.scalablytyped" %%% "semantic-ui-transition" % "2.2-dt-20180910Z-4dc667",
+  "com.scalablytyped" %%% "semantic-ui-visibility" % "2.2-dt-20180910Z-d866d9",
+  "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-99baa3",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

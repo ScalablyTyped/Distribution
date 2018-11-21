@@ -83,7 +83,7 @@ object coreModMembers extends js.Object {
       atAngularCoreLib.srcRenderApiMod.RendererFactory2
     ]
   ] = js.native
-  val ɵangular_packages_core_core_bd: java.lang.String = js.native
+  val ɵangular_packages_core_core_bb: java.lang.String = js.native
   val ɵangular_packages_core_core_l: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider] = js.native
   val ɵangular_packages_core_core_m: scala.Boolean = js.native
   val ɵcompileComponent: js.Function2[
@@ -348,30 +348,15 @@ object coreModMembers extends js.Object {
     additionalProcessing: js.Function3[/* target */ js.Any, /* name */ java.lang.String, /* repeated */js.Any, scala.Unit]
   ): js.Any = js.native
   def ɵangular_packages_core_core_ba(
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
-    ],
-    tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
-    view: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
-  ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
-  def ɵangular_packages_core_core_bb[T](
-    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
-    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
-      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
-    ],
-    hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
-    hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
-  ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[T] = js.native
-  def ɵangular_packages_core_core_bc(
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
     context: js.Any
   ): atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectorUnderscoreRefMod.ChangeDetectorRef = js.native
-  def ɵangular_packages_core_core_be[T](objWithPropertyToExtract: T): java.lang.String = js.native
-  def ɵangular_packages_core_core_bg[T](index: scala.Double, arr: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData): T = js.native
-  def ɵangular_packages_core_core_bg[T](index: scala.Double, arr: atAngularCoreLib.srcRender3InterfacesViewMod.TData): T = js.native
+  def ɵangular_packages_core_core_bc[T](objWithPropertyToExtract: T): java.lang.String = js.native
+  def ɵangular_packages_core_core_be[T](index: scala.Double, arr: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData): T = js.native
+  def ɵangular_packages_core_core_be[T](index: scala.Double, arr: atAngularCoreLib.srcRender3InterfacesViewMod.TData): T = js.native
+  def ɵangular_packages_core_core_bf(target: js.Object): atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerContext = js.native
+  def ɵangular_packages_core_core_bf(target: js.Object, context: atAngularCoreLib.srcRender3InterfacesContextMod.LContext): atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerContext = js.native
   def ɵangular_packages_core_core_e(providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider]): js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider] = js.native
   def ɵangular_packages_core_core_f(): java.lang.String = js.native
   def ɵangular_packages_core_core_i(): atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectionMod.IterableDiffers = js.native
@@ -456,8 +441,24 @@ object coreModMembers extends js.Object {
   def ɵangular_packages_core_core_v(): atAngularCoreLib.srcRender3InterfacesNodeMod.TNode = js.native
   def ɵangular_packages_core_core_w(): atAngularCoreLib.srcRender3InterfacesViewMod.LViewData = js.native
   def ɵangular_packages_core_core_x(bindingIndex: scala.Double, value: js.Any): scala.Boolean = js.native
+  def ɵangular_packages_core_core_y(
+    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+      /* nativeElement */ js.Object, 
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+    ],
+    tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
+    view: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
+  ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
+  def ɵangular_packages_core_core_z[T](
+    TemplateRefToken: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
+    ElementRefToken: ScalablyTyped.runtime.Instantiable1[
+      /* nativeElement */ js.Object, 
+      atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
+    ],
+    hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
+    hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
+  ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[T] = js.native
   def ɵbind[T](value: T): T | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def ɵbindPlayerFactory[T](factoryFn: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactoryBuildFn, value: T): atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory = js.native
   def ɵbypassSanitizationTrustHtml(trustedHtml: java.lang.String): atAngularCoreLib.srcSanitizationBypassMod.TrustedHtmlString = js.native
   def ɵbypassSanitizationTrustResourceUrl(trustedResourceUrl: java.lang.String): atAngularCoreLib.srcSanitizationBypassMod.TrustedResourceUrlString = js.native
   def ɵbypassSanitizationTrustScript(trustedScript: java.lang.String): atAngularCoreLib.srcSanitizationBypassMod.TrustedScriptString = js.native
@@ -643,12 +644,12 @@ object coreModMembers extends js.Object {
     value: js.Any,
     sanitizer: atAngularCoreLib.srcRender3InstructionsMod.SanitizerFn
   ): scala.Unit = js.native
-  def ɵelementClassProp(
+  def ɵelementClassProp[T](index: scala.Double, stylingIndex: scala.Double, value: T): scala.Unit = js.native
+  def ɵelementClassProp[T](
     index: scala.Double,
     stylingIndex: scala.Double,
-    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory
+    value: atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE
   ): scala.Unit = js.native
-  def ɵelementClassProp(index: scala.Double, stylingIndex: scala.Double, value: scala.Boolean): scala.Unit = js.native
   def ɵelementEnd(): scala.Unit = js.native
   def ɵelementEventFullName(target: java.lang.String, name: java.lang.String): java.lang.String = js.native
   def ɵelementEventFullName(target: scala.Null, name: java.lang.String): java.lang.String = js.native
@@ -688,30 +689,17 @@ object coreModMembers extends js.Object {
     attrs: scala.Null,
     localRefs: js.Array[java.lang.String]
   ): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double): scala.Unit = js.native
-  def ɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory
-  ): scala.Unit = js.native
-  def ɵelementStyleProp(
-    index: scala.Double,
-    styleIndex: scala.Double,
-    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory,
-    suffix: java.lang.String
-  ): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String, suffix: java.lang.String): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Double): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Double, suffix: java.lang.String): scala.Unit = js.native
-  def ɵelementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Null, suffix: java.lang.String): scala.Unit = js.native
-  def ɵelementStyling(): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyleProp[T](index: scala.Double, styleIndex: scala.Double): scala.Unit = js.native
+  def ɵelementStyleProp[T](index: scala.Double, styleIndex: scala.Double, value: T): scala.Unit = js.native
+  def ɵelementStyleProp[T](index: scala.Double, styleIndex: scala.Double, value: T, suffix: java.lang.String): scala.Unit = js.native
+  def ɵelementStyleProp[T](index: scala.Double, styleIndex: scala.Double, value: scala.Null, suffix: java.lang.String): scala.Unit = js.native
+  def ɵelementStyling[T](): scala.Unit = js.native
+  def ɵelementStyling[T](
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ]
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
@@ -719,7 +707,7 @@ object coreModMembers extends js.Object {
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ]
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
@@ -728,32 +716,32 @@ object coreModMembers extends js.Object {
     ],
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
     styleDeclarations: scala.Null,
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: scala.Null,
     styleDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ]
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: scala.Null,
     styleDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def ɵelementStyling(
+  def ɵelementStyling[T](
     classDeclarations: scala.Null,
     styleDeclarations: scala.Null,
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def ɵelementStylingApply(index: scala.Double): scala.Unit = js.native
+  def ɵelementStylingApply[T](index: scala.Double): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double): scala.Unit = js.native
   def ɵelementStylingMap[T](index: scala.Double, classes: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def ɵelementStylingMap[T](

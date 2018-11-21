@@ -17,6 +17,7 @@ object devexpressDashWebLibMembers extends js.Object {
   var ASPxClientCallbackPanel: ASPxClientCallbackPanelStatic = js.native
   var ASPxClientCaptcha: ASPxClientCaptchaStatic = js.native
   var ASPxClientCardView: ASPxClientCardViewStatic = js.native
+  var ASPxClientCardViewCallbackCommand: ASPxClientCardViewCallbackCommandStatic = js.native
   var ASPxClientCardViewExportFormat: ASPxClientCardViewExportFormatStatic = js.native
   var ASPxClientChartDesigner: ASPxClientChartDesignerStatic = js.native
   var ASPxClientCheckBox: ASPxClientCheckBoxStatic = js.native
@@ -33,6 +34,7 @@ object devexpressDashWebLibMembers extends js.Object {
   var ASPxClientDashboardViewer: ASPxClientDashboardViewerStatic = js.native
   var ASPxClientDataView: ASPxClientDataViewStatic = js.native
   var ASPxClientDateEdit: ASPxClientDateEditStatic = js.native
+  var ASPxClientDateNavigator: ASPxClientDateNavigatorStatic = js.native
   var ASPxClientDockManager: ASPxClientDockManagerStatic = js.native
   var ASPxClientDockPanel: ASPxClientDockPanelStatic = js.native
   var ASPxClientDockZone: ASPxClientDockZoneStatic = js.native
@@ -46,6 +48,10 @@ object devexpressDashWebLibMembers extends js.Object {
   var ASPxClientFileManagerCommandConsts: ASPxClientFileManagerCommandConstsStatic = js.native
   var ASPxClientFileManagerErrorConsts: ASPxClientFileManagerErrorConstsStatic = js.native
   var ASPxClientFilterControl: ASPxClientFilterControlStatic = js.native
+  var ASPxClientFloatingActionButton: ASPxClientFloatingActionButtonStatic = js.native
+  var ASPxClientFloatingActionButtonHorizontalPosition: ASPxClientFloatingActionButtonHorizontalPositionStatic = js.native
+  var ASPxClientFloatingActionButtonTextVisibilityMode: ASPxClientFloatingActionButtonTextVisibilityModeStatic = js.native
+  var ASPxClientFloatingActionButtonVerticalPosition: ASPxClientFloatingActionButtonVerticalPositionStatic = js.native
   var ASPxClientFormLayout: ASPxClientFormLayoutStatic = js.native
   var ASPxClientGaugeControl: ASPxClientGaugeControlStatic = js.native
   var ASPxClientGridBase: ASPxClientGridBaseStatic = js.native
@@ -106,6 +112,7 @@ object devexpressDashWebLibMembers extends js.Object {
   var ASPxClientRichEdit: ASPxClientRichEditStatic = js.native
   var ASPxClientRoundPanel: ASPxClientRoundPanelStatic = js.native
   var ASPxClientScheduler: ASPxClientSchedulerStatic = js.native
+  var ASPxClientSchedulerStorageControl: ASPxClientSchedulerStorageControlStatic = js.native
   var ASPxClientSpellChecker: ASPxClientSpellCheckerStatic = js.native
   var ASPxClientSpellCheckerStopCheckingReason: ASPxClientSpellCheckerStopCheckingReasonStatic = js.native
   var ASPxClientSpinEdit: ASPxClientSpinEditStatic = js.native
@@ -155,6 +162,7 @@ object devexpressDashWebLibMembers extends js.Object {
   var BootstrapClientComboBox: BootstrapClientComboBoxStatic = js.native
   var BootstrapClientDateEdit: BootstrapClientDateEditStatic = js.native
   var BootstrapClientDropDownEdit: BootstrapClientDropDownEditStatic = js.native
+  var BootstrapClientFileManager: BootstrapClientFileManagerStatic = js.native
   var BootstrapClientFormLayout: BootstrapClientFormLayoutStatic = js.native
   var BootstrapClientGridView: BootstrapClientGridViewStatic = js.native
   var BootstrapClientHyperLink: BootstrapClientHyperLinkStatic = js.native
@@ -172,6 +180,9 @@ object devexpressDashWebLibMembers extends js.Object {
   var BootstrapClientRadioButton: BootstrapClientRadioButtonStatic = js.native
   var BootstrapClientRadioButtonList: BootstrapClientRadioButtonListStatic = js.native
   var BootstrapClientRangeSelector: BootstrapClientRangeSelectorStatic = js.native
+  var BootstrapClientRibbon: BootstrapClientRibbonStatic = js.native
+  var BootstrapClientRichEdit: BootstrapClientRichEditStatic = js.native
+  var BootstrapClientSparkline: BootstrapClientSparklineStatic = js.native
   var BootstrapClientSpinEdit: BootstrapClientSpinEditStatic = js.native
   var BootstrapClientTabControl: BootstrapClientTabControlStatic = js.native
   var BootstrapClientTagBox: BootstrapClientTagBoxStatic = js.native
@@ -217,11 +228,13 @@ object devexpressDashWebLibMembers extends js.Object {
   var MVCxClientPageControl: MVCxClientPageControlStatic = js.native
   var MVCxClientPivotGrid: MVCxClientPivotGridStatic = js.native
   var MVCxClientPopupControl: MVCxClientPopupControlStatic = js.native
+  var MVCxClientQueryBuilder: MVCxClientQueryBuilderStatic = js.native
   var MVCxClientReportDesigner: MVCxClientReportDesignerStatic = js.native
   var MVCxClientReportViewer: MVCxClientReportViewerStatic = js.native
   var MVCxClientRichEdit: MVCxClientRichEditStatic = js.native
   var MVCxClientRoundPanel: MVCxClientRoundPanelStatic = js.native
   var MVCxClientScheduler: MVCxClientSchedulerStatic = js.native
+  var MVCxClientSchedulerStorage: MVCxClientSchedulerStorageStatic = js.native
   var MVCxClientSpreadsheet: MVCxClientSpreadsheetStatic = js.native
   var MVCxClientTokenBox: MVCxClientTokenBoxStatic = js.native
   var MVCxClientTreeList: MVCxClientTreeListStatic = js.native

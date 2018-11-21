@@ -14,7 +14,7 @@ trait ISpinnerProps
   var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Politeness setting for label update announcement.
-       * @defaultvalue polite
+       * @default polite
        */
   var ariaLive: js.UndefOr[
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.assertive | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.polite | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.off
@@ -30,8 +30,8 @@ trait ISpinnerProps
        */
   var label: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The size of Spinner to render. \{ extraSmall, small, medium, large \}
-       * @defaultvalue SpinnerType.medium
+       * The size of Spinner to render. { extraSmall, small, medium, large }
+       * @default SpinnerType.medium
        */
   var size: js.UndefOr[SpinnerSize] = js.undefined
   /**
@@ -45,8 +45,8 @@ trait ISpinnerProps
        */
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
-       * Deprecated and will be removed at \>= 2.0.0. Use `SpinnerSize` instead.
-       * @deprecated Use `SpinnerSize` instead.
+       * Deprecated and will be removed at >= 2.0.0. Use SpinnerSize instead.
+       * @deprecated
        */
   var `type`: js.UndefOr[SpinnerType] = js.undefined
 }

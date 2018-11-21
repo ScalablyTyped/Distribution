@@ -70,6 +70,34 @@ object builderDashUtilModMembers extends js.Object {
   def getPlatformIconFileName(value: java.lang.String, isMac: scala.Boolean): js.UndefOr[java.lang.String | scala.Null] = js.native
   def getPlatformIconFileName(value: js.UndefOr[scala.Nothing], isMac: scala.Boolean): js.UndefOr[java.lang.String | scala.Null] = js.native
   def getPlatformIconFileName(value: scala.Null, isMac: scala.Boolean): js.UndefOr[java.lang.String | scala.Null] = js.native
+  def hashFile(file: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def hashFile(file: java.lang.String, algorithm: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  @JSName("hashFile")
+  def hashFile_base64(
+    file: java.lang.String,
+    algorithm: java.lang.String,
+    encoding: builderDashUtilLib.builderDashUtilLibStrings.base64
+  ): stdLib.Promise[java.lang.String] = js.native
+  @JSName("hashFile")
+  def hashFile_base64(
+    file: java.lang.String,
+    algorithm: java.lang.String,
+    encoding: builderDashUtilLib.builderDashUtilLibStrings.base64,
+    options: js.Any
+  ): stdLib.Promise[java.lang.String] = js.native
+  @JSName("hashFile")
+  def hashFile_hex(
+    file: java.lang.String,
+    algorithm: java.lang.String,
+    encoding: builderDashUtilLib.builderDashUtilLibStrings.hex
+  ): stdLib.Promise[java.lang.String] = js.native
+  @JSName("hashFile")
+  def hashFile_hex(
+    file: java.lang.String,
+    algorithm: java.lang.String,
+    encoding: builderDashUtilLib.builderDashUtilLibStrings.hex,
+    options: js.Any
+  ): stdLib.Promise[java.lang.String] = js.native
   def isCanSignDmg(): stdLib.Promise[scala.Boolean] = js.native
   def isEmptyOrSpaces(): scala.Boolean = js.native
   def isEmptyOrSpaces(s: java.lang.String): scala.Boolean = js.native

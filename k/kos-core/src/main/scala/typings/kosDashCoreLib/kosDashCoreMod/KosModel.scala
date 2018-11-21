@@ -8,7 +8,12 @@ import scala.scalajs.js.annotation._
 
 trait KosModel[T] extends js.Object {
   var asyncs: ScalablyTyped.runtime.StringDictionary[
-    js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[T]], scala.Unit]
+    js.Function3[
+      /* dispatch */ KosDispatch, 
+      /* getState */ GetKosState[T], 
+      /* action */ Action[_], 
+      scala.Unit
+    ]
   ]
   var getAsync: js.UndefOr[
     js.Function1[

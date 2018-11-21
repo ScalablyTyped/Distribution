@@ -16,7 +16,7 @@ class Row protected () extends js.Object {
   def BinaryToString(Index: js.Any): java.lang.String = js.native
   def GetValues(): js.Any = js.native
   def Item(Index: js.Any): js.Any = js.native
-  def LocalTimeToUTC(Index: js.Any): stdLib.VarDate = js.native
-  def UTCToLocalTime(Index: js.Any): stdLib.VarDate = js.native
+  def LocalTimeToUTC(Index: js.Any): activexDashInteropLib.VarDate = js.native
+  def UTCToLocalTime(Index: js.Any): activexDashInteropLib.VarDate = js.native
 }
 

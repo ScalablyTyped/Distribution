@@ -23,7 +23,7 @@ class ComboBox protected ()
   /**
        * Get the correct value to pass to the input
        * to show to the user based off of the current props and state
-       * @returns the value to pass to the input
+       * @returns { string } the value to pass to the input
        */
   var _getVisibleValue: js.Any = js.native
   var _gotMouseMove: js.Any = js.native
@@ -89,9 +89,9 @@ class ComboBox protected ()
   /**
        * componentDidUpdate handler for the auto fill component
        *
-       * @param defaultVisibleValue - the current defaultVisibleValue in the auto fill's componentDidUpdate
-       * @param suggestedDisplayValue - the current suggestedDisplayValue in the auto fill's componentDidUpdate
-       * @returns - should the full value of the input be selected?
+       * @param { string } defaultVisibleValue - the current defaultVisibleValue in the auto fill's componentDidUpdate
+       * @param { string } suggestedDisplayValue - the current suggestedDisplayValue in the auto fill's componentDidUpdate
+       * @returns { boolean } - should the full value of the input be selected?
        * True if the defaultVisibleValue equals the suggestedDisplayValue, false otherwise
        */
   var _onShouldSelectFullInputValueInAutofillComponentDidUpdate: js.Any = js.native
@@ -99,9 +99,9 @@ class ComboBox protected ()
   /**
        * componentWillReceiveProps handler for the auto fill component
        * Checks/updates the iput value to set, if needed
-       * @param defaultVisibleValue - the defaultVisibleValue that got passed
+       * @param { IAutofillProps } defaultVisibleValue - the defaultVisibleValue that got passed
        *  in to the auto fill's componentWillReceiveProps
-       * @returns - the updated value to set, if needed
+       * @returns { string } - the updated value to set, if needed
        */
   var _onUpdateValueInAutofillWillReceiveProps: js.Any = js.native
   var _processingClearPendingInfo: js.Any = js.native
@@ -156,7 +156,7 @@ class ComboBox protected ()
        * looking for the next valid selectable index (e.g. skipping headings and dividers)
        * @param index - the index to get the next selectable index from
        * @param delta - optional delta to step by when finding the next index, defaults to 0
-       * @returns - the next valid selectable index. If the new index is outside of the bounds,
+       * @returns { number } - the next valid selectable index. If the new index is outside of the bounds,
        * it will snap to the edge of the options array. If delta == 0 and the given index is not selectable
        */
   /* private */ def _getNextSelectableIndex(index: js.Any, searchDirection: js.Any): js.Any = js.native
@@ -171,7 +171,7 @@ class ComboBox protected ()
        * Get the index of the option that is marked as selected
        * @param options - the comboBox options
        * @param selectedKeys - the known selected key to find
-       * @returns - the index of the selected option, -1 if not found
+       * @returns { number } - the index of the selected option, -1 if not found
        */
   /* private */ def _getSelectedIndices(options: js.Any, selectedKeys: js.Any): js.Any = js.native
   /**
@@ -185,7 +185,7 @@ class ComboBox protected ()
        * Is the index within the bounds of the array?
        * @param options - options to check if the index is valid for
        * @param index - the index to check
-       * @returns - true if the index is valid for the given options, false otherwise
+       * @returns { boolean } - true if the index is valid for the given options, false otherwise
        */
   /* private */ def _indexWithinBounds(options: js.Any, index: js.Any): js.Any = js.native
   /* private */ def _isExpandCollapseKey(ev: js.Any): js.Any = js.native
@@ -211,7 +211,7 @@ class ComboBox protected ()
        * to select the item and also close the menu
        * @param index - the index of the item that was clicked
        */
-  /* private */ def _onItemClick(item: js.Any): js.Any = js.native
+  /* private */ def _onItemClick(index: js.Any): js.Any = js.native
   /* private */ def _onOptionMouseEnter(index: js.Any): js.Any = js.native
   /* private */ def _onOptionMouseMove(index: js.Any): js.Any = js.native
   /**
@@ -320,19 +320,19 @@ class ComboBox protected ()
        */
   def dismissMenu(): scala.Unit = js.native
   /**
-       * {@inheritdoc}
+       * @inheritdoc
        */
   def focus(): scala.Unit = js.native
   /**
-       * {@inheritdoc}
+       * @inheritdoc
        */
   def focus(shouldOpenOnFocus: js.UndefOr[scala.Nothing], useFocusAsync: scala.Boolean): scala.Unit = js.native
   /**
-       * {@inheritdoc}
+       * @inheritdoc
        */
   def focus(shouldOpenOnFocus: scala.Boolean): scala.Unit = js.native
   /**
-       * {@inheritdoc}
+       * @inheritdoc
        */
   def focus(shouldOpenOnFocus: scala.Boolean, useFocusAsync: scala.Boolean): scala.Unit = js.native
 }

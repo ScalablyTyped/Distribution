@@ -29,11 +29,6 @@ object nonEmptyArrayNs extends js.Object {
       fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[js.Any]]
     ]
   ] = js.native
-  val groupBy: js.Function2[
-    /* as */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
-    /* f */ js.Function1[/* a */ js.Any, java.lang.String], 
-    ScalablyTyped.runtime.StringDictionary[fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[js.Any]]
-  ] = js.native
   val groupSort: js.Function1[
     /* O */ fpDashTsLib.libOrdMod.Ord[js.Any], 
     js.Function1[
@@ -41,6 +36,6 @@ object nonEmptyArrayNs extends js.Object {
       fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[js.Any]]
     ]
   ] = js.native
-  val nonEmptyArray: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libNonEmptyArrayMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libNonEmptyArrayMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libNonEmptyArrayMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libNonEmptyArrayMod.URI] = js.native
+  val nonEmptyArray: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libNonEmptyArrayMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libNonEmptyArrayMod.URI] with fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.libNonEmptyArrayMod.URI] with fpDashTsLib.libTraversableMod.Traversable1[fpDashTsLib.libNonEmptyArrayMod.URI] = js.native
 }
 

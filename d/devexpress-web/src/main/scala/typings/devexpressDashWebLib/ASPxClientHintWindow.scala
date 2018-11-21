@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
  */
 
 trait ASPxClientHintWindow extends js.Object {
+  def SetContent(html: js.Object, options: ASPxClientHintOptions): scala.Unit
+  def SetContentLoading(): scala.Unit
   /**
        * Forces the ASPxClientHint's window to recalculate its position.
        */

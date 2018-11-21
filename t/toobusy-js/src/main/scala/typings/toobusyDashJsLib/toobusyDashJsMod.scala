@@ -15,7 +15,7 @@ object toobusyDashJsMod extends js.Object {
   def onLag(fn: js.Function1[/* lag */ scala.Double, scala.Unit]): scala.Unit = js.native
   def onLag(fn: js.Function1[/* lag */ scala.Double, scala.Unit], threshold: scala.Double): scala.Unit = js.native
   def shutdown(): scala.Unit = js.native
-  def smmothingFactor(newFactor: scala.Double): scala.Double = js.native
+  def smoothingFactor(newFactor: scala.Double): scala.Double = js.native
   def started(): scala.Boolean = js.native
 }
 

@@ -49,11 +49,11 @@ object apiextensionsNs extends js.Object {
              */
     val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
     /**
-             * Standard object metadata; More info:
-             * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
+             * Standard list metadata. More info:
+             * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
              */
-    val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getInputs(): CustomResourceArgs = js.native
+    val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+    def getInputs(): atPulumiKubernetesLib.typesInputMod.appsNs.v1Ns.DaemonSetList = js.native
   }
   
   /**
@@ -72,7 +72,7 @@ object apiextensionsNs extends js.Object {
     var apiVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
     var kind: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
     var metadata: js.UndefOr[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta]
       ] = js.undefined
   }
   

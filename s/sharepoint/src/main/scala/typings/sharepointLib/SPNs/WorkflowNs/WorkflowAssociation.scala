@@ -15,7 +15,7 @@ class WorkflowAssociation ()
   def get_autoStartChange(): scala.Boolean = js.native
   def get_autoStartCreate(): scala.Boolean = js.native
   def get_baseId(): sharepointLib.SPNs.Guid = js.native
-  def get_created(): stdLib.Date = js.native
+  def get_created(): microsoftDashAjaxLib.Date = js.native
   def get_description(): java.lang.String = js.native
   def get_enabled(): scala.Boolean = js.native
   def get_historyListTitle(): java.lang.String = js.native
@@ -24,7 +24,7 @@ class WorkflowAssociation ()
   def get_internalName(): java.lang.String = js.native
   def get_isDeclarative(): scala.Boolean = js.native
   def get_listId(): sharepointLib.SPNs.Guid = js.native
-  def get_modified(): stdLib.Date = js.native
+  def get_modified(): microsoftDashAjaxLib.Date = js.native
   def get_name(): java.lang.String = js.native
   def get_taskListTitle(): java.lang.String = js.native
   def get_webId(): sharepointLib.SPNs.Guid = js.native

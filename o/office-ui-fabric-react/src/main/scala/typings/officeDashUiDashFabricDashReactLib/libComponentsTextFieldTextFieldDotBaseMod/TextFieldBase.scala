@@ -49,9 +49,6 @@ class TextFieldBase protected ()
   /* private */ def _setValue(): js.Any = js.native
   /* private */ def _setValue(value: js.Any): js.Any = js.native
   /* private */ def _validate(value: js.Any): js.Any = js.native
-  /** Blurs the input */
-  /* CompleteClass */
-  override def blur(): scala.Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MTextFieldBase(): scala.Unit = js.native
   @JSName("componentWillReceiveProps")
@@ -71,8 +68,8 @@ class TextFieldBase protected ()
   override def setSelectionEnd(value: scala.Double): scala.Unit = js.native
   /**
        * Sets the start and end positions of a selection in a text field.
-       * @param start - Index of the start of the selection.
-       * @param end - Index of the end of the selection.
+       * @param start Index of the start of the selection.
+       * @param end Index of the end of the selection.
        */
   /* CompleteClass */
   override def setSelectionRange(start: scala.Double, end: scala.Double): scala.Unit = js.native

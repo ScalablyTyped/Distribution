@@ -136,6 +136,11 @@ trait ASPxClientWebChartHitInfo extends js.Object {
        */
   var inNonDefaultPane: scala.Boolean
   /**
+       * Returns the value that indicates whether the test point is within the pane title.
+       * Value: true, if the test point is within a pane title; otherwise, false.
+       */
+  var inPaneTitle: scala.Boolean
+  /**
        * Gets a value indicating whether the test point is within the regression line.
        * Value: true if the test point is within a regression line; otherwise, false.
        */
@@ -180,6 +185,11 @@ trait ASPxClientWebChartHitInfo extends js.Object {
        * Value: An ASPxClientXYDiagramPane object.
        */
   var nonDefaultPane: ASPxClientXYDiagramPane
+  /**
+       * Gets the client-side pane title instance from under the test point.
+       * Value: A pane title.
+       */
+  var paneTitle: ASPxClientPaneTitle
   /**
        * Gets the client-side regression line instance from under the test point.
        * Value: An ASPxClientRegressionLine object.

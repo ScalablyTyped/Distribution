@@ -196,7 +196,7 @@
  * <form ngNativeValidate></form>
  * ```
  *
- * @publicApi
+ * @experimental
  * @ngModule ReactiveFormsModule
  * @ngModule FormsModule
  */

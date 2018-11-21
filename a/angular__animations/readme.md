@@ -64,7 +64,7 @@
  * }
  * ```
  *
- * @publicApi
+ * @experimental Animation support is experimental.
  */
 /**
  * @license
@@ -111,6 +111,5 @@
  * @see `AnimationFactory`
  * @see `animate()`
  *
- * @publicApi
  */
 ```

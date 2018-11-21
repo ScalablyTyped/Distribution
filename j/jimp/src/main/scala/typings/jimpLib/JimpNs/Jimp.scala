@@ -82,12 +82,12 @@ class Jimp protected () extends js.Object {
   def clone(cb: ImageCallback[_]): this.type = js.native
   def cloneQuiet(): this.type = js.native
   def cloneQuiet(cb: ImageCallback[_]): this.type = js.native
-  def color(actions: js.Array[ColorAction]): this.type = js.native
-  def color(actions: js.Array[ColorAction], cb: ImageCallback[_]): this.type = js.native
+  def color(actions: coreDashJsLib.Array[ColorAction]): this.type = js.native
+  def color(actions: coreDashJsLib.Array[ColorAction], cb: ImageCallback[_]): this.type = js.native
   def colorType(s: scala.Double): this.type = js.native
   def colorType(s: scala.Double, cb: ImageCallback[_]): this.type = js.native
-  def colour(actions: js.Array[ColorAction]): this.type = js.native
-  def colour(actions: js.Array[ColorAction], cb: ImageCallback[_]): this.type = js.native
+  def colour(actions: coreDashJsLib.Array[ColorAction]): this.type = js.native
+  def colour(actions: coreDashJsLib.Array[ColorAction], cb: ImageCallback[_]): this.type = js.native
   def composite(src: Jimp, x: scala.Double, y: scala.Double): this.type = js.native
   def composite(src: Jimp, x: scala.Double, y: scala.Double, options: BlendMode): this.type = js.native
   def composite(src: Jimp, x: scala.Double, y: scala.Double, options: BlendMode, cb: ImageCallback[_]): this.type = js.native
@@ -107,27 +107,31 @@ class Jimp protected () extends js.Object {
   def contain(w: scala.Double, h: scala.Double, mode: java.lang.String, cb: ImageCallback[_]): this.type = js.native
   def contrast(`val`: scala.Double): this.type = js.native
   def contrast(`val`: scala.Double, cb: ImageCallback[_]): this.type = js.native
-  def convolute(kernel: js.Array[js.Array[scala.Double]]): this.type = js.native
-  def convolute(kernel: js.Array[js.Array[scala.Double]], cb: ImageCallback[_]): this.type = js.native
+  def convolute(kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]]): this.type = js.native
+  def convolute(kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]], cb: ImageCallback[_]): this.type = js.native
   def convolute(
-    kernel: js.Array[js.Array[scala.Double]],
+    kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]],
     x: scala.Double,
     y: scala.Double,
     w: scala.Double,
     h: scala.Double
   ): this.type = js.native
   def convolute(
-    kernel: js.Array[js.Array[scala.Double]],
+    kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]],
     x: scala.Double,
     y: scala.Double,
     w: scala.Double,
     h: scala.Double,
     cb: ImageCallback[_]
   ): this.type = js.native
-  def convolution(kernel: js.Array[js.Array[scala.Double]]): this.type = js.native
-  def convolution(kernel: js.Array[js.Array[scala.Double]], cb: ImageCallback[_]): this.type = js.native
-  def convolution[T](kernel: js.Array[js.Array[scala.Double]], edgeHandling: java.lang.String): this.type = js.native
-  def convolution[T](kernel: js.Array[js.Array[scala.Double]], edgeHandling: java.lang.String, cb: ImageCallback[_]): this.type = js.native
+  def convolution(kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]]): this.type = js.native
+  def convolution(kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]], cb: ImageCallback[_]): this.type = js.native
+  def convolution[T](kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]], edgeHandling: java.lang.String): this.type = js.native
+  def convolution[T](
+    kernel: coreDashJsLib.Array[coreDashJsLib.Array[scala.Double]],
+    edgeHandling: java.lang.String,
+    cb: ImageCallback[_]
+  ): this.type = js.native
   def cover(w: scala.Double, h: scala.Double): this.type = js.native
   def cover(w: scala.Double, h: scala.Double, alignBits: scala.Double): this.type = js.native
   def cover(w: scala.Double, h: scala.Double, alignBits: scala.Double, cb: ImageCallback[_]): this.type = js.native
@@ -170,19 +174,19 @@ class Jimp protected () extends js.Object {
   def getExtension(): java.lang.String = js.native
   def getHeight(): scala.Double = js.native
   def getMIME(): java.lang.String = js.native
-  def getPixelColor(x: scala.Double, y: scala.Double): scala.Double = js.native
-  def getPixelColor(x: scala.Double, y: scala.Double, cb: GenericCallback[scala.Double, _, this.type]): scala.Double = js.native
-  def getPixelColour(x: scala.Double, y: scala.Double): scala.Double = js.native
-  def getPixelColour(x: scala.Double, y: scala.Double, cb: GenericCallback[scala.Double, _, this.type]): scala.Double = js.native
-  def getPixelIndex(x: scala.Double, y: scala.Double): scala.Double = js.native
-  def getPixelIndex(x: scala.Double, y: scala.Double, cb: GenericCallback[scala.Double, _, this.type]): scala.Double = js.native
-  def getPixelIndex(x: scala.Double, y: scala.Double, edgeHandling: java.lang.String): scala.Double = js.native
+  def getPixelColor(x: scala.Double, y: scala.Double): this.type = js.native
+  def getPixelColor(x: scala.Double, y: scala.Double, cb: GenericCallback[scala.Double, _, this.type]): this.type = js.native
+  def getPixelColour(x: scala.Double, y: scala.Double): this.type = js.native
+  def getPixelColour(x: scala.Double, y: scala.Double, cb: GenericCallback[scala.Double, _, this.type]): this.type = js.native
+  def getPixelIndex(x: scala.Double, y: scala.Double): this.type = js.native
+  def getPixelIndex(x: scala.Double, y: scala.Double, cb: GenericCallback[scala.Double, _, this.type]): this.type = js.native
+  def getPixelIndex(x: scala.Double, y: scala.Double, edgeHandling: java.lang.String): this.type = js.native
   def getPixelIndex(
     x: scala.Double,
     y: scala.Double,
     edgeHandling: java.lang.String,
     cb: GenericCallback[scala.Double, _, this.type]
-  ): scala.Double = js.native
+  ): this.type = js.native
   def getWidth(): scala.Double = js.native
   def grayscale(): this.type = js.native
   def grayscale(cb: ImageCallback[_]): this.type = js.native
@@ -411,7 +415,7 @@ object Jimp extends js.Object {
   var VERTICAL_ALIGN_MIDDLE: jimpLib.jimpLibNumbers.`16` = js.native
   var VERTICAL_ALIGN_TOP: jimpLib.jimpLibNumbers.`8` = js.native
   // Functions
-  def appendConstructorOption[T /* <: js.Array[_] */](
+  def appendConstructorOption[T /* <: coreDashJsLib.Array[_] */](
     name: java.lang.String,
     test: js.Function1[/* repeated */T, scala.Boolean],
     run: js.ThisFunction3[

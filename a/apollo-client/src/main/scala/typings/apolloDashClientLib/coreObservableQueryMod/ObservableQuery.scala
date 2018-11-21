@@ -14,7 +14,6 @@ class ObservableQuery[TData, TVariables] protected ()
   var isTornDown: js.Any = js.native
   var lastError: js.Any = js.native
   var lastResult: js.Any = js.native
-  var lastResultSnapshot: js.Any = js.native
   var observers: js.Any = js.native
   var onSubscribe: js.Any = js.native
   var options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[TVariables] = js.native
@@ -32,7 +31,6 @@ class ObservableQuery[TData, TVariables] protected ()
   ): stdLib.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
   def getLastError(): apolloDashClientLib.errorsApolloErrorMod.ApolloError = js.native
   def getLastResult(): apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData] = js.native
-  def isDifferentFromLastResult(newResult: apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]): scala.Boolean = js.native
   def refetch(): stdLib.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
   def refetch(variables: TVariables): stdLib.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
   def resetLastResults(): scala.Unit = js.native
@@ -45,9 +43,7 @@ class ObservableQuery[TData, TVariables] protected ()
   def setVariables(variables: TVariables, tryFetch: scala.Boolean, fetchResults: scala.Boolean): stdLib.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
   def startPolling(pollInterval: scala.Double): scala.Unit = js.native
   def stopPolling(): scala.Unit = js.native
-  def subscribeToMore[TSubscriptionData](
-    options: apolloDashClientLib.coreWatchQueryOptionsMod.SubscribeToMoreOptions[TData, TVariables, TSubscriptionData]
-  ): js.Function0[scala.Unit] = js.native
+  def subscribeToMore(options: apolloDashClientLib.coreWatchQueryOptionsMod.SubscribeToMoreOptions[TData, TVariables]): js.Function0[scala.Unit] = js.native
   def updateQuery(
     mapFn: js.Function2[/* previousQueryResult */ TData, /* options */ UpdateQueryOptions[TVariables], TData]
   ): scala.Unit = js.native

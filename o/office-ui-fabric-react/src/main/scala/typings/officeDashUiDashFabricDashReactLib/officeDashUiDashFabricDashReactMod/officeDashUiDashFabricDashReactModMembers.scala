@@ -103,10 +103,6 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsFacepileFacepileDotTypesMod.IFacepileProps, 
     reactLib.reactMod.Global.JSXNs.Element
   ] = js.native
-  val Grid: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libUtilitiesGridGridDotTypesMod.IGridProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
   val GroupedList: js.Function1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupedListDotTypesMod.IGroupedListProps, 
     reactLib.reactMod.Global.JSXNs.Element
@@ -140,10 +136,6 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     reactLib.reactMod.Global.JSXNs.Element
   ] = js.native
   val Link: reactLib.reactMod.ReactNs.StatelessComponent[officeDashUiDashFabricDashReactLib.libComponentsLinkLinkDotTypesMod.ILinkProps] = js.native
-  val MAX_COLOR_HUE: /* 359 */ scala.Double = js.native
-  val MAX_COLOR_RGBA: /* 255 */ scala.Double = js.native
-  val MAX_COLOR_SATURATION: /* 100 */ scala.Double = js.native
-  val MAX_COLOR_VALUE: /* 100 */ scala.Double = js.native
   val MarqueeSelection: js.Function1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsMarqueeSelectionMarqueeSelectionDotTypesMod.IMarqueeSelectionProps, 
     reactLib.reactMod.Global.JSXNs.Element
@@ -280,14 +272,6 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   ] = js.native
   val Tooltip: js.Function1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipDotTypesMod.ITooltipProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val TooltipHost: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  val VerticalDivider: js.Function1[
-    /* props */ officeDashUiDashFabricDashReactLib.libComponentsDividerVerticalDividerDotTypesMod.IVerticalDividerProps, 
     reactLib.reactMod.Global.JSXNs.Element
   ] = js.native
   val allowScrollOnElement: js.Function2[
@@ -849,7 +833,6 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def createTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def createTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme, depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def css(args: atUifabricUtilitiesLib.libCssMod.ICssInput*): java.lang.String = js.native
-  def cssColor(color: java.lang.String): js.UndefOr[officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IRGB] = js.native
   def customizable(scope: java.lang.String, fields: js.Array[java.lang.String]): js.Function1[/* ComposedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], _] = js.native
   def customizable(scope: java.lang.String, fields: js.Array[java.lang.String], concatStyles: scala.Boolean): js.Function1[/* ComposedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], _] = js.native
   def disableBodyScroll(): scala.Unit = js.native
@@ -890,23 +873,8 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def focusFirstChild(rootElement: reactLib.HTMLElement): scala.Boolean = js.native
   def fontFace(font: atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontFace): scala.Unit = js.native
   def format(s: java.lang.String, values: js.Any*): java.lang.String = js.native
-  def getBackgroundShade(
-    color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
-    shade: officeDashUiDashFabricDashReactLib.libUtilitiesColorShadesMod.Shade
-  ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor | scala.Null = js.native
-  def getBackgroundShade(
-    color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
-    shade: officeDashUiDashFabricDashReactLib.libUtilitiesColorShadesMod.Shade,
-    isInverted: scala.Boolean
-  ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor | scala.Null = js.native
   def getChildren(parent: reactLib.HTMLElement): js.Array[reactLib.HTMLElement] = js.native
   def getChildren(parent: reactLib.HTMLElement, allowVirtualChildren: scala.Boolean): js.Array[reactLib.HTMLElement] = js.native
-  def getColorFromRGBA(rgba: officeDashUiDashFabricDashReactLib.Anon_B): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
-  def getColorFromString(inputColor: java.lang.String): js.UndefOr[officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor] = js.native
-  def getContrastRatio(
-    color1: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
-    color2: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor
-  ): scala.Double = js.native
   def getDistanceBetweenPoints(
     point1: atUifabricUtilitiesLib.libIPointMod.IPoint,
     point2: atUifabricUtilitiesLib.libIPointMod.IPoint
@@ -1041,7 +1009,6 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     outlineColor: js.UndefOr[java.lang.String],
     isFocusedOnly: js.UndefOr[scala.Boolean]
   ): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
-  def getFullColorString(color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor): java.lang.String = js.native
   def getGlobalClassNames[T](
     classNames: atUifabricStylingLib.libStylesGetGlobalClassNamesMod.GlobalClassNames[T],
     theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
@@ -1129,32 +1096,22 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def getRect(element: reactLib.HTMLElement): js.UndefOr[atUifabricUtilitiesLib.libIRectangleMod.IRectangle] = js.native
   def getRect(element: stdLib.Window): js.UndefOr[atUifabricUtilitiesLib.libIRectangleMod.IRectangle] = js.native
   def getResourceUrl(url: java.lang.String): java.lang.String = js.native
+  def getSchemedContext(
+    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
+    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext
+  ): js.UndefOr[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
+  def getSchemedContext(
+    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
+    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
+    settingsTheme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
+  ): js.UndefOr[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
   def getScreenSelector(min: scala.Double, max: scala.Double): java.lang.String = js.native
   def getScrollbarWidth(): scala.Double = js.native
-  def getShade(
-    color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
-    shade: officeDashUiDashFabricDashReactLib.libUtilitiesColorShadesMod.Shade
-  ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor | scala.Null = js.native
-  def getShade(
-    color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
-    shade: officeDashUiDashFabricDashReactLib.libUtilitiesColorShadesMod.Shade,
-    isInverted: scala.Boolean
-  ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor | scala.Null = js.native
   def getSubmenuItems(
     item: officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuItem
   ): js.Any = js.native
   def getTheme(): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def getTheme(depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
-  def getThemedContext(context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
-  def getThemedContext(
-    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
-    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames
-  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
-  def getThemedContext(
-    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
-    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
-    theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
-  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
   def getVirtualParent(child: reactLib.HTMLElement): js.UndefOr[reactLib.HTMLElement] = js.native
   def getWindow(): js.UndefOr[stdLib.Window] = js.native
   def getWindow(rootElement: reactLib.Element): js.UndefOr[stdLib.Window] = js.native
@@ -1164,17 +1121,8 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def hoistMethods(destination: js.Any, source: js.Any): js.Array[java.lang.String] = js.native
   def hoistMethods(destination: js.Any, source: js.Any, exclusions: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def hoistStatics[TSource, TDest](source: TSource, dest: TDest): TDest = js.native
-  def hsl2hsv(h: scala.Double, s: scala.Double, l: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IHSV = js.native
-  def hsl2rgb(h: scala.Double, s: scala.Double, l: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IRGB = js.native
-  def hsv2hex(h: scala.Double, s: scala.Double, v: scala.Double): java.lang.String = js.native
-  def hsv2hsl(h: scala.Double, s: scala.Double, v: scala.Double): officeDashUiDashFabricDashReactLib.Anon_H = js.native
-  def hsv2rgb(h: scala.Double, s: scala.Double, v: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IRGB = js.native
   def initializeFocusRects(): scala.Unit = js.native
   def initializeFocusRects(window: stdLib.Window): scala.Unit = js.native
-  def initializeIcons(): scala.Unit = js.native
-  def initializeIcons(baseUrl: java.lang.String): scala.Unit = js.native
-  def initializeIcons(baseUrl: java.lang.String, options: atUifabricStylingLib.libUtilitiesIconsMod.IIconOptions): scala.Unit = js.native
-  def isDark(color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor): scala.Boolean = js.native
   def isDirectionalKeyCode(which: scala.Double): scala.Boolean = js.native
   def isElementFocusSubZone(): scala.Boolean = js.native
   def isElementFocusSubZone(element: reactLib.HTMLElement): scala.Boolean = js.native
@@ -1185,8 +1133,6 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def isElementVisible(): scala.Boolean = js.native
   def isElementVisible(element: reactLib.HTMLElement): scala.Boolean = js.native
   def isRelativeUrl(url: java.lang.String): scala.Boolean = js.native
-  def isValidShade(): scala.Boolean = js.native
-  def isValidShade(shade: officeDashUiDashFabricDashReactLib.libUtilitiesColorShadesMod.Shade): scala.Boolean = js.native
   def keyframes(timeline: ScalablyTyped.runtime.StringDictionary[js.Object]): java.lang.String = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme, depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
@@ -1212,16 +1158,6 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     props: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerProps,
     parentContext: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext
   ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
-  def mergeSettings(): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
-  def mergeSettings(oldSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
-  def mergeSettings(
-    oldSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings,
-    newSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings
-  ): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
-  def mergeSettings(
-    oldSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings,
-    newSettings: atUifabricUtilitiesLib.libCustomizationsMod.SettingsFunction
-  ): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
   def mergeStyleSets(
     styleSets: (js.UndefOr[
       atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[_] | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibNumbers.`false` | scala.Null
@@ -1504,8 +1440,6 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def resetIds(): scala.Unit = js.native
   def resetIds(counter: scala.Double): scala.Unit = js.native
   def resetMemoizations(): scala.Unit = js.native
-  def rgb2hex(r: scala.Double, g: scala.Double, b: scala.Double): java.lang.String = js.native
-  def rgb2hsv(r: scala.Double, g: scala.Double, b: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IHSV = js.native
   def setBaseUrl(baseUrl: java.lang.String): scala.Unit = js.native
   def setIconOptions(options: stdLib.Partial[atUifabricStylingLib.libUtilitiesIconsMod.IIconOptions]): scala.Unit = js.native
   def setLanguage(language: java.lang.String): scala.Unit = js.native
@@ -1559,17 +1493,9 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     getProps: js.Function1[/* props */ TComponentProps, stdLib.Partial[TComponentProps]],
     customizable: atUifabricUtilitiesLib.libStyledMod.ICustomizableProps
   ): js.Function1[/* props */ TComponentProps, reactLib.reactMod.Global.JSXNs.Element] = js.native
-  def themeRulesStandardCreator(): officeDashUiDashFabricDashReactLib.libComponentsThemeGeneratorIThemeRulesMod.IThemeRules = js.native
   def toMatrix[T](items: js.Array[T], columnCount: scala.Double): js.Array[js.Array[T]] = js.native
   def unhoistMethods(source: js.Any, methodNames: js.Array[java.lang.String]): scala.Unit = js.native
   def unregisterIcons(iconNames: js.Array[java.lang.String]): scala.Unit = js.native
-  def updateA(color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor, a: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
-  def updateH(color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor, h: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
-  def updateSV(
-    color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
-    s: scala.Double,
-    v: scala.Double
-  ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
   def values[T](obj: js.Any): js.Array[T] = js.native
   def warn(message: java.lang.String): scala.Unit = js.native
   def warnConditionallyRequiredProps[P](

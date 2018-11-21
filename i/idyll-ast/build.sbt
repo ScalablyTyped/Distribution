@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "idyll-ast"
-version := "1.3-dt-20181102Z-0589a4"
+version := "1.3-dt-20180910Z-cb1e13"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "idyll-compiler" % "3.1-dt-20181102Z-06a3a5",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "idyll-compiler" % "3.1-dt-20180910Z-a30105",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

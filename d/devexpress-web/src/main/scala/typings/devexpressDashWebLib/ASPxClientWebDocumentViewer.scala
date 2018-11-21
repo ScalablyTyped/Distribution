@@ -20,6 +20,9 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
   var CustomizeElements: ASPxClientEvent[
     ASPxClientWebDocumentViewerCustomizeElementsEventHandler[ASPxClientWebDocumentViewer]
   ] = js.native
+  var CustomizeExportOptions: ASPxClientEvent[
+    ASPxClientWebDocumentViewerCustomizeExportOptionsEventHandler[ASPxClientWebDocumentViewer]
+  ] = js.native
   /**
        * Enables you to customize the Web Document Viewer's localization strings.
        */

@@ -23,14 +23,12 @@ import scala.scalajs.js.annotation._
      * </pre></p>
      *
      * @param {Object} attributes The initial set of data to store in the object.
-     * @param {Object} options A set of Backbone-like options for creating the
-     *     object.  The only option currently supported is "collection".
+     * @param {Object} options The options for this object instance.
      * @see Parse.Object.extend
      *
      * @class
      *
-     * <p>The fundamental unit of Parse data, which implements the Backbone Model
-     * interface.</p>
+     * Creates a new model with defined attributes.
      */
 @JSImport("parse", "Object")
 @js.native
@@ -60,32 +58,30 @@ class Object ()
      * </pre></p>
      *
      * @param {Object} attributes The initial set of data to store in the object.
-     * @param {Object} options A set of Backbone-like options for creating the
-     *     object.  The only option currently supported is "collection".
+     * @param {Object} options The options for this object instance.
      * @see Parse.Object.extend
      *
      * @class
      *
-     * <p>The fundamental unit of Parse data, which implements the Backbone Model
-     * interface.</p>
+     * Creates a new model with defined attributes.
      */
 @JSImport("parse", "Object")
 @js.native
 object Object extends js.Object {
   def createWithoutData[T /* <: js.Object */](id: java.lang.String): T = js.native
-  def destroyAll[T](list: js.Array[T]): parseLib.ParseNs.Promise[js.Array[T]] = js.native
-  def destroyAll[T](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.DestroyAllOptions): parseLib.ParseNs.Promise[js.Array[T]] = js.native
+  def destroyAll[T](list: js.Array[T]): stdLib.Promise[js.Array[T]] = js.native
+  def destroyAll[T](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.DestroyAllOptions): stdLib.Promise[js.Array[T]] = js.native
   def extend(className: java.lang.String): js.Any = js.native
   def extend(className: java.lang.String, protoProps: js.Any): js.Any = js.native
   def extend(className: java.lang.String, protoProps: js.Any, classProps: js.Any): js.Any = js.native
-  def fetchAll[T /* <: js.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.FetchAllOptions): parseLib.ParseNs.Promise[js.Array[T]] = js.native
-  def fetchAllIfNeeded[T /* <: js.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.FetchAllOptions): parseLib.ParseNs.Promise[js.Array[T]] = js.native
+  def fetchAll[T /* <: js.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.FetchAllOptions): stdLib.Promise[js.Array[T]] = js.native
+  def fetchAllIfNeeded[T /* <: js.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.FetchAllOptions): stdLib.Promise[js.Array[T]] = js.native
   def fromJSON(json: js.Any, `override`: scala.Boolean): js.Any = js.native
   def registerSubclass[T /* <: js.Object */](
     className: java.lang.String,
     clazz: ScalablyTyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], T]
   ): scala.Unit = js.native
-  def saveAll[T /* <: js.Object */](list: js.Array[T]): parseLib.ParseNs.Promise[js.Array[T]] = js.native
-  def saveAll[T /* <: js.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.SaveAllOptions): parseLib.ParseNs.Promise[js.Array[T]] = js.native
+  def saveAll[T /* <: js.Object */](list: js.Array[T]): stdLib.Promise[js.Array[T]] = js.native
+  def saveAll[T /* <: js.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.SaveAllOptions): stdLib.Promise[js.Array[T]] = js.native
 }
 

@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class ConstantPool () extends js.Object {
   var _getLiteralFactory: js.Any = js.native
   var componentDefinitions: js.Any = js.native
-  var deferredTranslations: js.Any = js.native
   var definitionsOf: js.Any = js.native
   var directiveDefinitions: js.Any = js.native
   var freshName: js.Any = js.native
@@ -23,14 +22,11 @@ class ConstantPool () extends js.Object {
   var pipeDefinitions: js.Any = js.native
   var statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement] = js.native
   var translations: js.Any = js.native
-  def appendTranslationMeta(meta: atAngularCompilerLib.srcRender3ViewI18nMod.I18nMeta): scala.Unit = js.native
-  def appendTranslationMeta(meta: java.lang.String): scala.Unit = js.native
   def getConstLiteral(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def getConstLiteral(
     literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     forceShared: scala.Boolean
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
-  def getDeferredTranslationConst(suffix: java.lang.String): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   def getDefinition(`type`: js.Any, kind: DefinitionKind, ctx: atAngularCompilerLib.srcUtilMod.OutputContext): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def getDefinition(
     `type`: js.Any,
@@ -40,16 +36,8 @@ class ConstantPool () extends js.Object {
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def getLiteralFactory(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralArrayExpr): atAngularCompilerLib.Anon_LiteralFactoryArguments = js.native
   def getLiteralFactory(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralMapExpr): atAngularCompilerLib.Anon_LiteralFactoryArguments = js.native
-  def getTranslation(message: java.lang.String, meta: java.lang.String, suffix: java.lang.String): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
-  def getTranslationDeclStmt(
-    variable: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr,
-    message: java.lang.String
-  ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.DeclareVarStmt = js.native
+  def getTranslation(message: java.lang.String, meta: atAngularCompilerLib.Anon_Description, suffix: java.lang.String): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def propertyNameOf(kind: DefinitionKind): java.lang.String = js.native
-  def setDeferredTranslationConst(
-    variable: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr,
-    message: java.lang.String
-  ): scala.Unit = js.native
   /**
        * Produce a unique name.
        *

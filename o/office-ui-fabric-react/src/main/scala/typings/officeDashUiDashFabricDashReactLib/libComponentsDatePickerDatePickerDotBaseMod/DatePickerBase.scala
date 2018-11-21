@@ -22,7 +22,6 @@ class DatePickerBase protected ()
   var _datePickerDiv: js.Any = js.native
   var _dismissDatePickerPopup: js.Any = js.native
   var _handleEscKey: js.Any = js.native
-  var _id: js.Any = js.native
   var _onCalloutPositioned: js.Any = js.native
   var _onIconClick: js.Any = js.native
   var _onSelectDate: js.Any = js.native

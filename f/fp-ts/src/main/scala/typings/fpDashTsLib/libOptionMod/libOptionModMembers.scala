@@ -48,7 +48,7 @@ object libOptionModMembers extends js.Object {
   val isNone: js.Function1[/* fa */ Option[js.Any], /* is None */scala.Boolean] = js.native
   val isSome: js.Function1[/* fa */ Option[js.Any], /* is Some */scala.Boolean] = js.native
   val none: Option[scala.Nothing] = js.native
-  val option: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[URI] with fpDashTsLib.libPlusMod.Plus1[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[URI] with fpDashTsLib.libAlternativeMod.Alternative1[URI] with fpDashTsLib.libExtendMod.Extend1[URI] with fpDashTsLib.libCompactableMod.Compactable1[URI] with fpDashTsLib.libFilterableMod.Filterable1[URI] with fpDashTsLib.libWitherableMod.Witherable1[URI] = js.native
+  val option: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libFoldableMod.Foldable1[URI] with fpDashTsLib.libPlusMod.Plus1[URI] with fpDashTsLib.libTraversableMod.Traversable1[URI] with fpDashTsLib.libAlternativeMod.Alternative1[URI] with fpDashTsLib.libExtendMod.Extend1[URI] with fpDashTsLib.libCompactableMod.Compactable1[URI] with fpDashTsLib.libFilterableMod.Filterable1[URI] with fpDashTsLib.libWitherableMod.Witherable1[URI] = js.native
   val some: js.Function1[/* a */ js.Any, Option[js.Any]] = js.native
   val tryCatch: js.Function1[/* f */ fpDashTsLib.libFunctionMod.Lazy[js.Any], Option[js.Any]] = js.native
 }

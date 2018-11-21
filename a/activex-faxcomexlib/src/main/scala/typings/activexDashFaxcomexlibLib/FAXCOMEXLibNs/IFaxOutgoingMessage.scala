@@ -18,7 +18,7 @@ class IFaxOutgoingMessage () extends js.Object {
   /** Unique message ID */
   val Id: java.lang.String = js.native
   /** Time the job was originally scheduled to be transmitted */
-  val OriginalScheduledTime: stdLib.VarDate = js.native
+  val OriginalScheduledTime: activexDashInteropLib.VarDate = js.native
   /** Total number of pages */
   val Pages: scala.Double = js.native
   /** Priority of the fax */
@@ -36,13 +36,13 @@ class IFaxOutgoingMessage () extends js.Object {
   /** Unique ID the submission process created for the job */
   val SubmissionId: java.lang.String = js.native
   /** Time the job was submitted */
-  val SubmissionTime: stdLib.VarDate = js.native
+  val SubmissionTime: activexDashInteropLib.VarDate = js.native
   /** Transmitting Station ID */
   val TSID: java.lang.String = js.native
   /** Transmission end time */
-  val TransmissionEnd: stdLib.VarDate = js.native
+  val TransmissionEnd: activexDashInteropLib.VarDate = js.native
   /** Transmission start time */
-  val TransmissionStart: stdLib.VarDate = js.native
+  val TransmissionStart: activexDashInteropLib.VarDate = js.native
   /** Copy Tiff image to the local file */
   def CopyTiff(bstrTiffPath: java.lang.String): scala.Unit = js.native
   /** Delete the message from the archive */

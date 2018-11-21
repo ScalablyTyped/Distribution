@@ -44,6 +44,15 @@ object recomposeModMembers extends js.Object {
   def createSink(callback: js.Function1[/* props */ js.Object, scala.Unit]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def defaultProps[T](props: T): DefaultingInferableComponentEnhancer[T] = js.native
   def flattenProp(propName: java.lang.String): ComponentEnhancer[_, _] = js.native
+  def fromRenderProps[TInner, TOutter, TRenderProps](
+    RenderPropsComponent: reactLib.reactMod.ReactNs.StatelessComponent[_],
+    propsMapper: js.Function1[/* props */ TRenderProps, stdLib.Partial[TInner]]
+  ): ComponentEnhancer[TInner, TOutter] = js.native
+  def fromRenderProps[TInner, TOutter, TRenderProps](
+    RenderPropsComponent: reactLib.reactMod.ReactNs.StatelessComponent[_],
+    propsMapper: js.Function1[/* props */ TRenderProps, stdLib.Partial[TInner]],
+    renderPropName: java.lang.String
+  ): ComponentEnhancer[TInner, TOutter] = js.native
   def getContext[TContext](contextTypes: reactLib.reactMod.ReactNs.ValidationMap[TContext]): InferableComponentEnhancer[TContext] = js.native
   def getDisplayName(component: reactLib.reactMod.ReactNs.ComponentType[_]): java.lang.String = js.native
   def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps]): InferableComponentEnhancer[TProps] = js.native
@@ -76,6 +85,7 @@ object recomposeModMembers extends js.Object {
   ] = js.native
   def shallowEqual(a: js.Object, b: js.Object): scala.Boolean = js.native
   def shouldUpdate[TProps](test: predicateDiff[TProps]): InferableComponentEnhancer[js.Object] = js.native
+  def toRenderProps[TInner, TOutter](hoc: InferableComponentEnhancerWithProps[TInner with TOutter, TOutter]): reactLib.reactMod.ReactNs.StatelessComponent[TOutter with recomposeLib.Anon_Children[TInner]] = js.native
   def withContext[TContext, TProps](
     childContextTypes: reactLib.reactMod.ReactNs.ValidationMap[TContext],
     getChildContext: mapper[TProps, _]

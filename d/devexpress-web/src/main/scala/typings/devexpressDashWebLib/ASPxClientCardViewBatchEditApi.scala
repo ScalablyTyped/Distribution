@@ -72,6 +72,14 @@ trait ASPxClientCardViewBatchEditApi extends js.Object {
        */
   def GetInsertedCardIndices(): js.Array[scala.Double] = js.native
   /**
+       * Returns an object that stores unsaved changes.
+       */
+  def GetUnsavedChanges(): js.Object = js.native
+  /**
+       * Returns an array of the updated cards' visible indices.
+       */
+  def GetUpdatedCardIndices(): js.Array[scala.Double] = js.native
+  /**
        * Returns a value that indicates whether the card view has changed data.
        */
   def HasChanges(): scala.Boolean = js.native

@@ -14,9 +14,9 @@ trait MockjsRandomAddress extends js.Object {
   // Random.city
   def city(prefix: B): S = js.native
   // Random.county
-  def country(): S = js.native
+  def county(): S = js.native
   // Random.county
-  def country(prefix: B): S = js.native
+  def county(prefix: B): S = js.native
   // Random.province
   def province(): S = js.native
   // Random.region

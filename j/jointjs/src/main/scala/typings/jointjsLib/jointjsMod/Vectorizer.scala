@@ -174,7 +174,6 @@ object Vectorizer extends js.Object {
   def getPointsFromSvgNode(node: stdLib.SVGElement): js.Array[stdLib.SVGPoint] = js.native
   def isArray(value: js.Any): scala.Boolean = js.native
   def isObject(value: js.Any): scala.Boolean = js.native
-  def isSVGGraphicsElement(value: js.Any): scala.Boolean = js.native
   def isString(value: js.Any): scala.Boolean = js.native
   def isUndefined(value: js.Any): scala.Boolean = js.native
   def isV(value: js.Any): scala.Boolean = js.native

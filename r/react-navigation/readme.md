@@ -15,7 +15,6 @@
 //                 Steven Miller <https://github.com/YourGamesBeOver>
 //                 Armando Assuncao <https://github.com/ArmandoAssuncao>
 //                 Ciaran Liedeman <https://github.com/cliedeman>
-//                 Edward Sammut Alessi <https://github.com/Slessi>
 //                 Jérémy Magrin <https://github.com/magrinj>
 //                 Luca Campana <https://github.com/TizioFittizio>
 //                 Ullrich Schaefer <https://github.com/stigi>
@@ -26,6 +25,7 @@
 //                 Denis Frezzato <https://github.com/DenisFrezzato>
 //                 Mickael Wegerich <https://github.com/mickaelw>
 //                 Max Davidson <https://github.com/maxdavidson>
+//                 Alec Hill <https://github.com/alechill>
 //                 Lachlan Young <https://github.com/builtbyproxy>
 //                 Jason Killian <https://github.com/jkillian>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

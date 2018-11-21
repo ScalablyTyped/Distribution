@@ -55,6 +55,7 @@ trait DashboardPdfExportOptions extends js.Object {
        * Value: true, to add current parameter values to the exported document; otherwise, false.
        */
   var ExportParameters: scala.Boolean
+  var FontInfo: ExportFontInfo
   /**
        * Gets or sets whether gauges within the Gauge dashboard item are arranged automatically on the exported page.
        * Value: true, to arrange gauges automatically on the exported page; otherwise, false.

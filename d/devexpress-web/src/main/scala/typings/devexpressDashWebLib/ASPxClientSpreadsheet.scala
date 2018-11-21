@@ -23,6 +23,18 @@ trait ASPxClientSpreadsheet extends ASPxClientControl {
        */
   var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientSpreadsheet]] = js.native
   /**
+       * Occurs before the cell editor is opened.
+       */
+  var CellBeginEdit: ASPxClientEvent[ASPxClientSpreadsheetCellBeginEditEventHandler[ASPxClientSpreadsheet]] = js.native
+  /**
+       * Occurs before the active cell's editor is closed and the entered value is rolled back.
+       */
+  var CellCancelEdit: ASPxClientEvent[ASPxClientSpreadsheetCellCancelEditEventHandler[ASPxClientSpreadsheet]] = js.native
+  /**
+       * Occurs before the cell editor is closed and the entered value is committed.
+       */
+  var CellEndEdit: ASPxClientEvent[ASPxClientSpreadsheetCellEndEditEventHandler[ASPxClientSpreadsheet]] = js.native
+  /**
        * Occurs after a custom command has been executed on the client side.
        */
   var CustomCommandExecuted: ASPxClientEvent[ASPxClientSpreadsheetCustomCommandExecutedEventHandler[ASPxClientSpreadsheet]] = js.native
@@ -47,9 +59,25 @@ trait ASPxClientSpreadsheet extends ASPxClientControl {
        */
   var PopupMenuShowing: ASPxClientEvent[ASPxClientSpreadsheetPopupMenuShowingEventHandler[ASPxClientSpreadsheet]] = js.native
   /**
+       * Occurs when attempting to edit a locked cell in a protected worksheet.
+       */
+  var ProtectionWarning: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientSpreadsheet]] = js.native
+  /**
        * Occurs on the client when a selection is changed in the ASPxSpreadsheet.
        */
   var SelectionChanged: ASPxClientEvent[ASPxClientSpreadsheetSelectionChangedEventHandler[ASPxClientSpreadsheet]] = js.native
+  /**
+       * Occurs when the control's view mode is changed.
+       */
+  var ViewModeChanged: ASPxClientEvent[ASPxClientSpreadsheetViewModeChangedEventHandler[ASPxClientSpreadsheet]] = js.native
+  /**
+       * Applies a value stored within the editor to the active cell
+       */
+  def ApplyCellEdit(): scala.Unit = js.native
+  /**
+       * Cancels editing of the active cell.
+       */
+  def CancelCellEdit(): scala.Unit = js.native
   /**
        * Sets input focus to the Spreadsheet.
        */
@@ -58,6 +86,16 @@ trait ASPxClientSpreadsheet extends ASPxClientControl {
        * Gets the value of the currently active cell.
        */
   def GetActiveCellValue(): js.Object = js.native
+  /**
+       * Gets a name of the worksheet that is currently displayed within the spreadsheet.
+       */
+  def GetActiveSheetName(): java.lang.String = js.native
+  /**
+       * Gets the specified cell's bounds.
+       * @param colModelIndex An integer value specifying the zero-based column index.
+       * @param rowModelIndex An integer value specifying the zero-based row index.
+       */
+  def GetCellBounds(colModelIndex: scala.Double, rowModelIndex: scala.Double): ASPxClientSpreadsheetRectangle = js.native
   /**
        * Returns the comment associated with the specified data cell.
        * @param colModelIndex An integer value specifying the data cell's column index.
@@ -71,6 +109,10 @@ trait ASPxClientSpreadsheet extends ASPxClientControl {
        */
   def GetCellValue(colModelIndex: scala.Double, rowModelIndex: scala.Double): js.Object = js.native
   /**
+       * Returns the type of the element currently being edited in the Spreadsheet control.
+       */
+  def GetEditMode(): js.Any = js.native
+  /**
        * Gets access to the client ribbon object.
        */
   def GetRibbon(): ASPxClientRibbon = js.native
@@ -78,6 +120,10 @@ trait ASPxClientSpreadsheet extends ASPxClientControl {
        * Returns the current selection made in a Spreadsheet.
        */
   def GetSelection(): ASPxClientSpreadsheetSelection = js.native
+  /**
+       * Returns the control's view mode.
+       */
+  def GetViewMode(): js.Any = js.native
   /**
        * Indicates whether any unsaved changes are contained in the current document.
        */
@@ -103,9 +149,19 @@ trait ASPxClientSpreadsheet extends ASPxClientControl {
        */
   def ReconnectToExternalRibbon(): scala.Unit = js.native
   /**
+       * Specifies the editor's value of the edited cell.
+       * @param text A string specifying text received by the cell's editor.
+       */
+  def SetCellEditorText(text: java.lang.String): scala.Unit = js.native
+  /**
        * Enables you to switch the full-screen mode of the Spreadsheet.
        * @param fullscreen true to activate full-screen mode; false to deactivate full-screen mode.
        */
   def SetFullscreenMode(fullscreen: scala.Boolean): scala.Unit = js.native
+  /**
+       * Specifies the control's view mode.
+       * @param mode A value specifying the control's view mode.
+       */
+  def SetViewMode(mode: js.Any): scala.Unit = js.native
 }
 

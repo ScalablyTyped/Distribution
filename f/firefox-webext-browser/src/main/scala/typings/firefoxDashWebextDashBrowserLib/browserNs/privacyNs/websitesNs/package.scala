@@ -10,5 +10,5 @@ package object websitesNs {
   /** The mode for tracking protection. */
   type TrackingProtectionModeOption = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.always | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.never | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.private_browsing
   /** The type of cookies to allow. */
-  type _CookieConfigBehavior = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.allow_all | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.reject_all | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.reject_third_party | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.allow_visited
+  type _CookieConfigBehavior = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.allow_all | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.reject_all | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.reject_third_party | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.allow_visited | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.reject_trackers
 }

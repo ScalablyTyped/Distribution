@@ -32,7 +32,19 @@ object reactDashInstantsearchDashNativeModMembers extends js.Object {
   def connectHighlight(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectHits[TProps /* <: reactDashInstantsearchDashCoreLib.Anon_Hits[THit] */, THit](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[TProps, reactDashInstantsearchDashCoreLib.Anon_HitsArray[THit], js.Object] = js.native
   def connectHitsPerPage(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  def connectInfiniteHits(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def connectInfiniteHits(
+    Composed: reactLib.reactMod.ReactNs.ComponentType[
+      reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.InfiniteHitsProvided[_]
+    ]
+  ): reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  @JSName("connectInfiniteHits")
+  def connectInfiniteHits_TPropsPartialTHitConnectedComponentClass[TProps /* <: stdLib.Partial[
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.InfiniteHitsProvided[THit]
+  ] */, THit](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
+    TProps, 
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.InfiniteHitsProvided[THit], 
+    js.Object
+  ] = js.native
   def connectMenu(
     stateless: reactLib.reactMod.ReactNs.StatelessComponent[reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.MenuProvided]
   ): reactLib.reactMod.ReactNs.ComponentClass[

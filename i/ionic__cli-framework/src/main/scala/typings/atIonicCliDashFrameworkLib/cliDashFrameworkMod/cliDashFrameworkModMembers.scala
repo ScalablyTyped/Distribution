@@ -63,7 +63,7 @@ object cliDashFrameworkModMembers extends js.Object {
     groups: js.Array[java.lang.String]
   ): atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions = js.native
   def formatOptionName[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](opt: O): java.lang.String = js.native
-  def formatOptionName[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](opt: O, hasShowAliasesColors: atIonicCliDashFrameworkLib.libOptionsMod.FormatOptionNameOptions): java.lang.String = js.native
+  def formatOptionName[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](opt: O, hasShowAliasesColors: atIonicCliDashFrameworkLib.Anon_ColorsShowAliases): java.lang.String = js.native
   def generateCommandPath[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](cmd: C): stdLib.Promise[
     js.Array[atIonicCliDashFrameworkLib.definitionsMod.CommandPathItem[C, N, M, I, O]]
   ] = js.native
@@ -75,8 +75,6 @@ object cliDashFrameworkModMembers extends js.Object {
   def getLoggerLevelName(): js.UndefOr[atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel] = js.native
   def getLoggerLevelName(level: atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevelWeight): js.UndefOr[atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel] = js.native
   def hydrateCommandMetadataOption[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](option: O): atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadataOption[O] = js.native
-  def isCommandVisible[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](cmd: atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]): stdLib.Promise[scala.Boolean] = js.native
-  def isOptionVisible[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](opt: O): stdLib.Promise[scala.Boolean] = js.native
   def metadataOptionsToParseArgsOptions(commandOptions: js.Array[atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption]): atIonicCliDashFrameworkLib.definitionsMod.HydratedParseArgsOptions = js.native
   def separateArgv(pargv: js.Array[java.lang.String]): js.Tuple2[js.Array[java.lang.String], js.Array[java.lang.String]] = js.native
   def stripOptions(

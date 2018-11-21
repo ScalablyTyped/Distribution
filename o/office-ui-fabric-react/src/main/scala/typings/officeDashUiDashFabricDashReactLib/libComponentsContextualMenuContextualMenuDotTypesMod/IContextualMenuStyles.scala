@@ -24,10 +24,6 @@ trait IContextualMenuStyles extends js.Object {
        */
   var root: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   /**
-       * SubComponent styles.
-       */
-  var subComponentStyles: IContextualMenuSubComponentStyles
-  /**
        * Style override for the contextual menu title.
        */
   var title: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

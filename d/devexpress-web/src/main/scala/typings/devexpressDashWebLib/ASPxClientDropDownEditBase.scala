@@ -15,7 +15,7 @@ trait ASPxClientDropDownEditBase extends ASPxClientButtonEditBase {
        */
   var CloseUp: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDropDownEditBase]]
   /**
-       * Occurs on the client-side when the drop down window is opened.
+       * Occurs on the client-side when the drop down window is opened by the dropdown button click.
        */
   var DropDown: ASPxClientEvent[ASPxClientEventHandler[ASPxClientDropDownEditBase]]
   /**

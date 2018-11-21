@@ -39,6 +39,6 @@ trait CompressOptions extends js.Object {
   /**
            * Usage data for advanced optimisations.
            */
-  var usage: js.UndefOr[js.Object] = js.undefined
+  var usage: js.UndefOr[Usage] = js.undefined
 }
 

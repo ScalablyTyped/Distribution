@@ -6672,7 +6672,7 @@ trait Commands[R] extends js.Object {
     key: java.lang.String,
     increment: scala.Double,
     member: java.lang.String,
-    cb: Callback[scala.Double]
+    cb: Callback[java.lang.String]
   ): R = js.native
   def ZINTERSTORE(arg1: java.lang.String | scala.Double): R = js.native
   def ZINTERSTORE(
@@ -18854,7 +18854,7 @@ trait Commands[R] extends js.Object {
     key: java.lang.String,
     increment: scala.Double,
     member: java.lang.String,
-    cb: Callback[scala.Double]
+    cb: Callback[java.lang.String]
   ): R = js.native
   /**
        * Intersect multiple sorted sets and store the resulting sorted set in a new key.

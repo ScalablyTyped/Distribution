@@ -11,7 +11,6 @@ object functionsNs extends js.Object {
   @js.native
   class Functions protected () extends js.Object {
     def httpsCallable(name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.functionsNs.HttpsCallable = js.native
-    def useFunctionsEmulator(url: java.lang.String): scala.Unit = js.native
   }
   
   

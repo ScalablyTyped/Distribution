@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait Anon_AllowScriptsToClose extends js.Object {
   /** Allow scripts to close the window. */
   var allowScriptsToClose: js.UndefOr[scala.Boolean] = js.undefined
+  /** The CookieStoreId to use for all tabs that were created when the window is opened. */
+  var cookieStoreId: js.UndefOr[java.lang.String] = js.undefined
   /**
            * If true, opens an active window. If false, opens an inactive window.
            * @deprecated Unsupported on Firefox at this time.

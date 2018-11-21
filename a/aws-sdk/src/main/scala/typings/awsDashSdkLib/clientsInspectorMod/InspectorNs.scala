@@ -359,17 +359,9 @@ object InspectorNs extends js.Object {
          */
     var ipv4Addresses: js.UndefOr[Ipv4AddressList] = js.undefined
     /**
-         * An array of the network interfaces interacting with the EC2 instance where the finding is generated.
-         */
-    var networkInterfaces: js.UndefOr[NetworkInterfaces] = js.undefined
-    /**
          * The schema version of this data type.
          */
     var schemaVersion: NumericVersion
-    /**
-         * The tags related to the EC2 instance where the finding is generated.
-         */
-    var tags: js.UndefOr[Tags] = js.undefined
   }
   
   
@@ -1226,50 +1218,6 @@ object InspectorNs extends js.Object {
   }
   
   
-  trait NetworkInterface extends js.Object {
-    /**
-         * The IP addresses associated with the network interface.
-         */
-    var ipv6Addresses: js.UndefOr[Ipv6Addresses] = js.undefined
-    /**
-         * The ID of the network interface.
-         */
-    var networkInterfaceId: js.UndefOr[Text] = js.undefined
-    /**
-         * The name of a private DNS associated with the network interface.
-         */
-    var privateDnsName: js.UndefOr[Text] = js.undefined
-    /**
-         * The private IP address associated with the network interface.
-         */
-    var privateIpAddress: js.UndefOr[Text] = js.undefined
-    /**
-         * A list of the private IP addresses associated with the network interface. Includes the privateDnsName and privateIpAddress.
-         */
-    var privateIpAddresses: js.UndefOr[PrivateIpAddresses] = js.undefined
-    /**
-         * The name of a public DNS associated with the network interface.
-         */
-    var publicDnsName: js.UndefOr[Text] = js.undefined
-    /**
-         * The public IP address from which the network interface is reachable.
-         */
-    var publicIp: js.UndefOr[Text] = js.undefined
-    /**
-         * A list of the security groups associated with the network interface. Includes the groupId and groupName.
-         */
-    var securityGroups: js.UndefOr[SecurityGroups] = js.undefined
-    /**
-         * The ID of a subnet associated with the network interface.
-         */
-    var subnetId: js.UndefOr[Text] = js.undefined
-    /**
-         * The ID of a VPC associated with the network interface.
-         */
-    var vpcId: js.UndefOr[Text] = js.undefined
-  }
-  
-  
   trait PreviewAgentsRequest extends js.Object {
     /**
          * You can use this parameter to indicate the maximum number of items you want in the response. The default value is 10. The maximum value is 500.
@@ -1295,18 +1243,6 @@ object InspectorNs extends js.Object {
          *  When a response is generated, if there is more data to be listed, this parameter is present in the response and contains the value to use for the nextToken parameter in a subsequent pagination request. If there is no more data to be listed, this parameter is set to null.
          */
     var nextToken: js.UndefOr[PaginationToken] = js.undefined
-  }
-  
-  
-  trait PrivateIp extends js.Object {
-    /**
-         * The DNS name of the private IP address.
-         */
-    var privateDnsName: js.UndefOr[Text] = js.undefined
-    /**
-         * The full IP address of the network inteface.
-         */
-    var privateIpAddress: js.UndefOr[Text] = js.undefined
   }
   
   
@@ -1399,18 +1335,6 @@ object InspectorNs extends js.Object {
          * The resource identifier for the specified scope type.
          */
     var value: js.UndefOr[ScopeValue] = js.undefined
-  }
-  
-  
-  trait SecurityGroup extends js.Object {
-    /**
-         * The ID of the security group.
-         */
-    var groupId: js.UndefOr[Text] = js.undefined
-    /**
-         * The name of the security group.
-         */
-    var groupName: js.UndefOr[Text] = js.undefined
   }
   
   
@@ -2604,7 +2528,6 @@ object InspectorNs extends js.Object {
   type IocConfidence = scala.Double
   type Ipv4Address = java.lang.String
   type Ipv4AddressList = js.Array[Ipv4Address]
-  type Ipv6Addresses = js.Array[Text]
   type KernelVersion = java.lang.String
   type ListEventSubscriptionsMaxResults = scala.Double
   type ListMaxResults = scala.Double
@@ -2615,14 +2538,12 @@ object InspectorNs extends js.Object {
   type Message = java.lang.String
   type MessageType = java.lang.String
   type NamePattern = java.lang.String
-  type NetworkInterfaces = js.Array[NetworkInterface]
   type NumericSeverity = scala.Double
   type NumericVersion = scala.Double
   type OperatingSystem = java.lang.String
   type PaginationToken = java.lang.String
   type PreviewAgentsMaxResults = scala.Double
   type PreviewStatus = awsDashSdkLib.awsDashSdkLibStrings.WORK_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | java.lang.String
-  type PrivateIpAddresses = js.Array[PrivateIp]
   type ProviderName = java.lang.String
   type ReportFileFormat = awsDashSdkLib.awsDashSdkLibStrings.HTML | awsDashSdkLib.awsDashSdkLibStrings.PDF | java.lang.String
   type ReportStatus = awsDashSdkLib.awsDashSdkLibStrings.WORK_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | java.lang.String
@@ -2636,7 +2557,6 @@ object InspectorNs extends js.Object {
   type ScopeList = js.Array[Scope]
   type ScopeType = awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_ID | awsDashSdkLib.awsDashSdkLibStrings.RULES_PACKAGE_ARN | java.lang.String
   type ScopeValue = java.lang.String
-  type SecurityGroups = js.Array[SecurityGroup]
   type ServiceName = java.lang.String
   type Severity = awsDashSdkLib.awsDashSdkLibStrings.Low | awsDashSdkLib.awsDashSdkLibStrings.Medium | awsDashSdkLib.awsDashSdkLibStrings.High | awsDashSdkLib.awsDashSdkLibStrings.Informational | awsDashSdkLib.awsDashSdkLibStrings.Undefined | java.lang.String
   type SeverityList = js.Array[Severity]
@@ -2645,7 +2565,6 @@ object InspectorNs extends js.Object {
   type TagKey = java.lang.String
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
-  type Tags = js.Array[Tag]
   type TelemetryMetadataList = js.Array[TelemetryMetadata]
   type Text = java.lang.String
   type Timestamp = stdLib.Date

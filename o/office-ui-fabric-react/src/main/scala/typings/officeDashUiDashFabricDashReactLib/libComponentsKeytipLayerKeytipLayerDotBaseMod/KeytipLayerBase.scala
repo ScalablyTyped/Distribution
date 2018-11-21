@@ -22,7 +22,7 @@ class KeytipLayerBase protected ()
        * If the returned array is empty, no duplicates were found
        *
        * @param keytipIds - Array of keytip IDs to find duplicates for
-       * @returns - Array of duplicates that were found. If multiple duplicates were found it will only be added once to this array
+       * @returns {string[]} - Array of duplicates that were found. If multiple duplicates were found it will only be added once to this array
        */
   var _getDuplicateIds: js.Any = js.native
   var _keyHandled: js.Any = js.native
@@ -77,7 +77,7 @@ class KeytipLayerBase protected ()
        * This will make 'keytipProps' the new currentKeytip
        *
        * @param keytipProps - Keytip props to check
-       * @returns - T/F if this keytip should become the currentKeytip
+       * @returns {boolean} - T/F if this keytip should become the currentKeytip
        */
   /* private */ def _isCurrentKeytipAnAlias(keytipProps: js.Any): js.Any = js.native
   /**

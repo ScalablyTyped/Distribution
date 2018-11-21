@@ -24,13 +24,11 @@ trait CarouselState extends js.Object {
      */
   var frameWidth: scala.Double
   /**
-     * Is infinite mode enabled
-     */
-  var isWrappingAround: scala.Boolean
-  /**
      * Current left value
      */
+  var isWrappingAround: scala.Boolean
   var left: scala.Double
+  var pauseOnHover: scala.Boolean
   var resetWrapAroundPosition: scala.Boolean
   /**
      * Total amount of slides
@@ -48,6 +46,9 @@ trait CarouselState extends js.Object {
      * Current top value
      */
   var top: scala.Double
+  /**
+     * Is infinite mode enabled
+     */
   var wrapToIndex: scala.Boolean
 }
 

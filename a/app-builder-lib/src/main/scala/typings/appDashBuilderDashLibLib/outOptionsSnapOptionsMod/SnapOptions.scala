@@ -75,7 +75,7 @@ trait SnapOptions
        */
   val stagePackages: js.UndefOr[js.Array[java.lang.String] | scala.Null] = js.undefined
   /**
-       * The 78 character long summary. Defaults to [productName](/configuration/configuration#Configuration-productName).
+       * The 78 character long summary. Defaults to [productName](configuration.md#Configuration-productName).
        */
   val summary: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

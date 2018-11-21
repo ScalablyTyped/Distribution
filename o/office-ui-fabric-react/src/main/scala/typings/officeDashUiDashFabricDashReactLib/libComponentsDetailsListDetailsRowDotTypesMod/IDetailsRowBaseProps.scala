@@ -134,7 +134,7 @@ trait IDetailsRowBaseProps
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
        * Rerender DetailsRow only when props changed. Might cause regression when depending on external updates.
-       * @defaultvalue false
+       * @default false
        */
   var useReducedRowRenderer: js.UndefOr[scala.Boolean] = js.undefined
 }

@@ -13,6 +13,6 @@ class Session ()
 @JSImport("parse/react-native", "Session")
 @js.native
 object Session extends js.Object {
-  def current(): parseLib.ParseNs.Promise[parseLib.ParseNs.Session] = js.native
+  def current(): stdLib.Promise[parseLib.ParseNs.Session] = js.native
 }
 

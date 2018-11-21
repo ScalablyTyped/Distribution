@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 class Variable protected ()
   extends rdfDashJsLib.rdfDashJsMod.Variable {
   def this(name: java.lang.String) = this()
-  var id: java.lang.String = js.native
+  val id: java.lang.String = js.native
   /**
        * Contains the constant "Variable".
        */
   /* CompleteClass */
   override var termType: rdfDashJsLib.rdfDashJsLibStrings.Variable = js.native
   @JSName("termType")
-  var termType_Variable: n3Lib.n3LibStrings.Variable = js.native
+  val termType_Variable: n3Lib.n3LibStrings.Variable = js.native
   /**
        * The name of the variable *without* leading ? (example: a).
        */

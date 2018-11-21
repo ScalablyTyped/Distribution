@@ -21,7 +21,7 @@ object eitherNs extends js.Object {
   }
   
   val URI: /* Either */ java.lang.String = js.native
-  val either: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libExtendMod.Extend2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libChainRecMod.ChainRec2[fpDashTsLib.libEitherMod.URI] = js.native
+  val either: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libTraversableMod.Traversable2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libExtendMod.Extend2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libChainRecMod.ChainRec2[fpDashTsLib.libEitherMod.URI] = js.native
   val fromNullable: js.Function1[
     /* defaultValue */ js.Any, 
     js.Function1[

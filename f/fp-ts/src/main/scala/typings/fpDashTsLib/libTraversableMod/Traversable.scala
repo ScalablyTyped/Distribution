@@ -14,6 +14,11 @@ trait Traversable[T]
   /**
        * Runs an action for every element in a data structure and accumulates the results
        */
+  @JSName("traverse")
+  var traverse_Original: Traverse[T] = js.native
+  /**
+       * Runs an action for every element in a data structure and accumulates the results
+       */
   def traverse[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.HKT[F, _]], 

@@ -36,7 +36,7 @@ class Site () extends ClientObject {
   def get_showUrlStructure(): scala.Boolean = js.native
   def get_uIVersionConfigurationEnabled(): scala.Boolean = js.native
   def get_upgradeInfo(): UpgradeInfo = js.native
-  def get_upgradeReminderDate(): stdLib.Date = js.native
+  def get_upgradeReminderDate(): microsoftDashAjaxLib.Date = js.native
   def get_upgrading(): scala.Boolean = js.native
   def get_url(): java.lang.String = js.native
   def get_usage(): UsageInfo = js.native

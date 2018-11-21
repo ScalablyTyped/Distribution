@@ -10,7 +10,7 @@ trait IColorPickerProps
   extends atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[IColorPicker] {
   /**
        * Label for the alpha textfield.
-       * @defaultvalue Alpha
+       * @default Alpha
        */
   var alphaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -19,7 +19,7 @@ trait IColorPickerProps
   var alphaSliderHidden: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Label for the blue textfield.
-       * @defaultvalue Blue
+       * @default Blue
        */
   var blueLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -32,12 +32,12 @@ trait IColorPickerProps
   var color: java.lang.String
   /**
        * Label for the green textfield.
-       * @defaultvalue Green
+       * @default Green
        */
   var greenLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Label for the hex textfield.
-       * @defaultvalue Hex
+       * @default Hex
        */
   var hexLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -52,7 +52,7 @@ trait IColorPickerProps
   ] = js.undefined
   /**
        * Label for the red textfield.
-       * @defaultvalue Red
+       * @default Red
        */
   var redLabel: js.UndefOr[java.lang.String] = js.undefined
   /**

@@ -10,7 +10,13 @@ import scala.scalajs.js.annotation._
 class default protected () extends DPlayer {
   def this(options: DPlayerOptions) = this()
   /* CompleteClass */
+  override var danmaku: Danmaku = js.native
+  /* CompleteClass */
   override var events: js.Any = js.native
+  /* CompleteClass */
+  override var fullScreen: FullScreen = js.native
+  /* CompleteClass */
+  override var video: stdLib.HTMLVideoElement = js.native
   /* CompleteClass */
   override def destroy(): scala.Unit = js.native
   /* CompleteClass */

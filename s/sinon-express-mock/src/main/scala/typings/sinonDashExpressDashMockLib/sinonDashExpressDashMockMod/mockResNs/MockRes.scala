@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation._
 
 
 trait MockRes extends js.Object {
-  var append: sinonLib.sinonMod.SinonNs.SinonStub
-  var attachement: sinonLib.sinonMod.SinonNs.SinonStub
-  var clearCookie: sinonLib.sinonMod.SinonNs.SinonStub
-  var cookie: sinonLib.sinonMod.SinonNs.SinonStub
-  var download: sinonLib.sinonMod.SinonNs.SinonStub
-  var end: sinonLib.sinonMod.SinonNs.SinonStub
+  var append: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var attachement: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var clearCookie: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var cookie: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var download: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var end: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
   var format: js.Object
-  var get: sinonLib.sinonMod.SinonNs.SinonStub
-  var headersSent: sinonLib.sinonMod.SinonNs.SinonStub
-  var json: sinonLib.sinonMod.SinonNs.SinonStub
-  var jsonp: sinonLib.sinonMod.SinonNs.SinonStub
-  var links: sinonLib.sinonMod.SinonNs.SinonStub
+  var get: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var headersSent: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var json: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var jsonp: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var links: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
   var locals: js.Object
-  var location: sinonLib.sinonMod.SinonNs.SinonStub
-  var redirect: sinonLib.sinonMod.SinonNs.SinonStub
-  var render: sinonLib.sinonMod.SinonNs.SinonStub
-  var send: sinonLib.sinonMod.SinonNs.SinonStub
-  var sendFile: sinonLib.sinonMod.SinonNs.SinonStub
-  var sendStatus: sinonLib.sinonMod.SinonNs.SinonStub
-  var set: sinonLib.sinonMod.SinonNs.SinonStub
-  var status: sinonLib.sinonMod.SinonNs.SinonStub
-  var `type`: sinonLib.sinonMod.SinonNs.SinonStub
-  var vary: sinonLib.sinonMod.SinonNs.SinonStub
+  var location: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var redirect: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var render: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var send: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var sendFile: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var sendStatus: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var set: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var status: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var `type`: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
+  var vary: sinonLib.sinonMod.SinonNs.SinonStub[js.Array[_], _]
 }
 

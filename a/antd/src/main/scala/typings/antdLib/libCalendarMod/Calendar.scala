@@ -16,7 +16,6 @@ trait Calendar
     validRange: js.Tuple2[momentLib.momentMod.momentNs.Moment, momentLib.momentMod.momentNs.Moment],
     disabledDate: js.Function1[/* current */ momentLib.momentMod.momentNs.Moment, scala.Boolean]
   ): js.Function1[/* current */ momentLib.momentMod.momentNs.Moment, scala.Boolean] = js.native
-  def getDefaultLocale(): js.Any = js.native
   def monthCellRender(value: momentLib.momentMod.momentNs.Moment): reactLib.reactMod.Global.JSXNs.Element = js.native
   def onHeaderTypeChange(`type`: java.lang.String): scala.Unit = js.native
   def onHeaderValueChange(value: momentLib.momentMod.momentNs.Moment): scala.Unit = js.native

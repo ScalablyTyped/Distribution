@@ -21,7 +21,7 @@ class TaskRequestAcceptItem protected () extends js.Object {
   val ConversationID: java.lang.String = js.native
   val ConversationIndex: java.lang.String = js.native
   val ConversationTopic: java.lang.String = js.native
-  val CreationTime: stdLib.VarDate = js.native
+  val CreationTime: activexDashInteropLib.VarDate = js.native
   val DownloadState: OlDownloadState = js.native
   val EntryID: java.lang.String = js.native
   val FormDescription: FormDescription = js.native
@@ -29,7 +29,7 @@ class TaskRequestAcceptItem protected () extends js.Object {
   var Importance: OlImportance = js.native
   val IsConflict: scala.Boolean = js.native
   val ItemProperties: ItemProperties = js.native
-  val LastModificationTime: stdLib.VarDate = js.native
+  val LastModificationTime: activexDashInteropLib.VarDate = js.native
   val Links: Links = js.native
   val MAPIOBJECT: js.Any = js.native
   var MarkForDownload: OlRemoteStatus = js.native

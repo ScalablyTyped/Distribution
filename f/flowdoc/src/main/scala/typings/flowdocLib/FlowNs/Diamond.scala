@@ -7,5 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait Diamond
-  extends flowdocLib.Shape
+  extends flowdocLib.Shape {
+  @JSName("type")
+  var type_Diamond: flowdocLib.flowdocLibStrings.DIAMOND
+}
 

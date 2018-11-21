@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 
 trait ASPxClientHtmlEditorYouTubeDialog extends ASPxClientHtmlEditorEditElementDialog {
   /**
+       * Provides access to the client object of the "Allow fullscreen" check box in the Html Editor's "Insert YouTube Video" dialog.
+       */
+  def GetAllowFullscreenCheckBox(): ASPxClientCheckBox
+  /**
        * Provides access to the client object of the "Enable privacy-enhanced mode" check box in the Html Editor's YouTube Video dialog.
        */
   def GetConfidentModeCheckBox(): ASPxClientCheckBox

@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "bugsnag-js"
-version := "4.7.3-62ec39"
+version := "4.7.3-d64055"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "error-stack-parser" % "2.0.2-7073ee",
-  "com.scalablytyped" %%% "stackframe" % "1.0.4-34da08",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "error-stack-parser" % "2.0.2-9938bc",
+  "com.scalablytyped" %%% "stackframe" % "1.0.4-cabf04",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

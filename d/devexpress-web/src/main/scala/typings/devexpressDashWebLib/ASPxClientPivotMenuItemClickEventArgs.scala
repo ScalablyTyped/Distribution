@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
  */
 
 trait ASPxClientPivotMenuItemClickEventArgs extends ASPxClientEventArgs {
+  var Area: java.lang.String
   /**
        * Gets the field's unique indentifier.
        * Value: A string which specifies the field's unique indentifier.

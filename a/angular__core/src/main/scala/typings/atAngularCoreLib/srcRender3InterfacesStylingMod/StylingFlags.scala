@@ -32,19 +32,14 @@ object StylingFlags extends js.Object {
     extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingFlags
   
   @js.native
-  sealed trait PlayerBuildersDirty
-    extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingFlags
-  
-  @js.native
   sealed trait Sanitize
     extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingFlags
   
-  /* 4 */ val BitCountSize: BitCountSize with scala.Double = js.native
-  /* 15 */ val BitMask: BitMask with scala.Double = js.native
+  /* 3 */ val BitCountSize: BitCountSize with scala.Double = js.native
+  /* 7 */ val BitMask: BitMask with scala.Double = js.native
   /* 2 */ val Class: Class with scala.Double = js.native
   /* 1 */ val Dirty: Dirty with scala.Double = js.native
   /* 0 */ val None: None with scala.Double = js.native
-  /* 8 */ val PlayerBuildersDirty: PlayerBuildersDirty with scala.Double = js.native
   /* 4 */ val Sanitize: Sanitize with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[atAngularCoreLib.srcRender3InterfacesStylingMod.StylingFlags with scala.Double] = js.native

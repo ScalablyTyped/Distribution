@@ -64,7 +64,7 @@ trait ASPxClientQueryBuilder extends ASPxClientControl {
        */
   def Save(): scala.Unit = js.native
   /**
-       * Invokes a Data Preview for the current query.
+       * Invokes a Previewing Results for the current query.
        */
   def ShowPreview(): scala.Unit = js.native
   /**

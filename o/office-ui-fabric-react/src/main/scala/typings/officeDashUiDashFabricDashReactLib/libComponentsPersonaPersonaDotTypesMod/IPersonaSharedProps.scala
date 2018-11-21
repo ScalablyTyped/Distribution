@@ -88,7 +88,7 @@ trait IPersonaSharedProps
   var presence: js.UndefOr[PersonaPresence] = js.undefined
   /**
        * Primary text to display, usually the name of the person.
-       * @deprecated Use `text` instead.
+       * @deprecated Use 'text' instead.
        */
   var primaryText: js.UndefOr[java.lang.String] = js.undefined
   /**

@@ -41,6 +41,11 @@ trait Field extends js.Object {
        */
   var interval: Interval
   /**
+       * Returns a value specifying whether the field is a hyperlink.
+       * Value: true, if the field is a hyperlink; otherwise, false.
+       */
+  var isHyperlink: scala.Boolean
+  /**
        * Gets the field length in a document.
        * Value: An integer value specifying the field length.
        */

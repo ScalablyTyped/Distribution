@@ -17,6 +17,7 @@ trait ColumnChartOptions extends js.Object {
   var chartArea: js.UndefOr[ChartArea] = js.undefined
   var colors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var enableInteractivity: js.UndefOr[scala.Boolean] = js.undefined
+  var explorer: js.UndefOr[ChartExplorer] = js.undefined
   var focusTarget: js.UndefOr[java.lang.String] = js.undefined
   var fontName: js.UndefOr[java.lang.String] = js.undefined
   var fontSize: js.UndefOr[scala.Double] = js.undefined

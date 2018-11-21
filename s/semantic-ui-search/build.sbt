@@ -1,14 +1,14 @@
 organization := "com.scalablytyped"
 name := "semantic-ui-search"
-version := "2.2-dt-20181102Z-91bcaa"
+version := "2.2-dt-20180910Z-27971d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181102Z-ef9974",
-  "com.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20181102Z-8b8872",
-  "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181102Z-6214b8",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-c6ff09",
+  "com.scalablytyped" %%% "semantic-ui-api" % "2.2-dt-20180910Z-ee1d82",
+  "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-99baa3",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

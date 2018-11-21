@@ -1,31 +1,31 @@
 organization := "com.scalablytyped"
 name := "webdriver-manager"
-version := "12.1.0-59f353"
+version := "12.1.0-48488c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "adm-zip" % "v0.4.4-dt-20181102Z-8a7f1a",
-  "com.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181102Z-d346e3",
-  "com.scalablytyped" %%% "caseless" % "0.12-dt-20181102Z-5bb15d",
-  "com.scalablytyped" %%% "chalk" % "2.4.1-ef8d2c",
-  "com.scalablytyped" %%% "color-name" % "1.1-dt-20181102Z-8ba882",
-  "com.scalablytyped" %%% "del" % "3.0-dt-20181102Z-d597f2",
-  "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20181102Z-6ced09",
-  "com.scalablytyped" %%% "form-data" % "2.2-dt-20181116Z-a46e60",
-  "com.scalablytyped" %%% "glob" % "7.1-dt-20181102Z-ea59e6",
-  "com.scalablytyped" %%% "ini" % "v1.3.3-dt-20181102Z-12c85a",
-  "com.scalablytyped" %%% "minimatch" % "3.0-dt-20181102Z-8447c6",
-  "com.scalablytyped" %%% "minimist" % "1.2.0-dt-20181102Z-8bed80",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-806eaf",
-  "com.scalablytyped" %%% "q" % "1.5-dt-20181102Z-60bf7d",
-  "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-64050c",
-  "com.scalablytyped" %%% "rimraf" % "2.0-dt-20181102Z-f07fb0",
-  "com.scalablytyped" %%% "semver" % "5.5-dt-20181102Z-92c73a",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "com.scalablytyped" %%% "supports-color" % "5.3-dt-20181102Z-2c93a8",
-  "com.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181102Z-a43730",
-  "com.scalablytyped" %%% "xml2js" % "0.4-dt-20181102Z-5b99b7",
+  "com.scalablytyped" %%% "adm-zip" % "v0.4.4-dt-20180910Z-e7691d",
+  "com.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-16b038",
+  "com.scalablytyped" %%% "caseless" % "0.12-dt-20180910Z-7ce57e",
+  "com.scalablytyped" %%% "chalk" % "2.4.1-ea2afe",
+  "com.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-566c3e",
+  "com.scalablytyped" %%% "del" % "3.0-dt-20180910Z-24e038",
+  "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-76e9e4",
+  "com.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-d9baa6",
+  "com.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-1b2f14",
+  "com.scalablytyped" %%% "ini" % "v1.3.3-dt-20180910Z-d4fedb",
+  "com.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-298c87",
+  "com.scalablytyped" %%% "minimist" % "1.2.0-dt-20180910Z-dd566d",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "q" % "1.5-dt-20180915Z-f3431e",
+  "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-33e3b0",
+  "com.scalablytyped" %%% "rimraf" % "2.0-dt-20180910Z-30de16",
+  "com.scalablytyped" %%% "semver" % "5.5-dt-20180910Z-eae856",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-f11a37",
+  "com.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181104Z-a9e24d",
+  "com.scalablytyped" %%% "xml2js" % "0.4-dt-20180910Z-ee7416",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

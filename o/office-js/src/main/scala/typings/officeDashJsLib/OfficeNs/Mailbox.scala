@@ -413,7 +413,8 @@ trait Mailbox extends js.Object {
            * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>
            *
            * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. 
-           *                 The token is provided as a string in the asyncResult.value property.
+           *                 The token is provided as a string in the `asyncResult.value` property.
+           *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
            */
   def getCallbackTokenAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   /**
@@ -440,7 +441,8 @@ trait Mailbox extends js.Object {
            * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>
            *
            * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
-           *                 type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
+           *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
+           *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
            * @param userContext Optional. Any state data that is passed to the asynchronous method.
            */
   def getCallbackTokenAsync(
@@ -490,7 +492,8 @@ trait Mailbox extends js.Object {
            *        isRest: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is false.
            *        asyncContext: Any state data that is passed to the asynchronous method.
            * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
-           *                 type Office.AsyncResult. The token is provided as a string in the asyncResult.value property.
+           *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
+           *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
            */
   def getCallbackTokenAsync(
     options: AsyncContextOptions with officeDashJsLib.Anon_IsRest,
@@ -514,7 +517,8 @@ trait Mailbox extends js.Object {
            *
            * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
            *                 type Office.AsyncResult.
-           *                 The token is provided as a string in the asyncResult.value property.
+           *                 The token is provided as a string in the `asyncResult.value` property.
+           *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
            * @param userContext Optional. Any state data that is passed to the asynchronous method.|
            */
   def getUserIdentityTokenAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
@@ -536,7 +540,8 @@ trait Mailbox extends js.Object {
            *
            * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
            *                 type Office.AsyncResult.
-           *                 The token is provided as a string in the asyncResult.value property.
+           *                 The token is provided as a string in the `asyncResult.value` property.
+           *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
            * @param userContext Optional. Any state data that is passed to the asynchronous method.|
            */
   def getUserIdentityTokenAsync(

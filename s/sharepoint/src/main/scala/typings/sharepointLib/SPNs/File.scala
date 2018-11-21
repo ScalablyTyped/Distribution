@@ -46,9 +46,9 @@ class File () extends ClientObject {
   def get_name(): java.lang.String = js.native
   def get_serverRelativeUrl(): java.lang.String = js.native
   /** Specifies when the file was created. */
-  def get_timeCreated(): stdLib.Date = js.native
+  def get_timeCreated(): microsoftDashAjaxLib.Date = js.native
   /** Specifies when the file was created. */
-  def get_timeLastModified(): stdLib.Date = js.native
+  def get_timeLastModified(): microsoftDashAjaxLib.Date = js.native
   def get_title(): java.lang.String = js.native
   /** Specifies the implementation-specific version identifier of the file. */
   def get_uIVersion(): scala.Double = js.native

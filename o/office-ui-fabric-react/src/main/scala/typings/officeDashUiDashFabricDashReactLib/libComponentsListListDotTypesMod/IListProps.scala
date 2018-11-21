@@ -74,14 +74,14 @@ trait IListProps
        * This method will be called as a result of changes in List pages (added or removed),
        * and after ALL the changes complete.
        * To track individual page Add / Remove use onPageAdded / onPageRemoved instead.
-       * @param pages - The current array of pages in the List.
+       * @param {IPage[]} pages - The current array of pages in the List.
        */
   var onPagesUpdated: js.UndefOr[js.Function1[/* pages */ js.Array[IPage], scala.Unit]] = js.undefined
   /**
        * Method to call when trying to render an item.
-       * @param item - The the data associated with the cell that is being rendered.
-       * @param index - The index of the cell being rendered.
-       * @param isScrolling - True if the list is being scrolled. May be useful for rendering a placeholder if your cells are complex.
+       * @param {any} item - The the data associated with the cell that is being rendered.
+       * @param {number} index - The index of the cell being rendered.
+       * @param {boolean} isScrolling - True if the list is being scrolled. May be useful for rendering a placeholder if your cells are complex.
        */
   var onRenderCell: js.UndefOr[
     js.Function3[
@@ -113,12 +113,12 @@ trait IListProps
   var renderCount: js.UndefOr[scala.Double] = js.undefined
   /**
        * In addition to the visible window, how many windowHeights should we render ahead.
-       * @defaultvalue 2
+       * @default 2
        */
   var renderedWindowsAhead: js.UndefOr[scala.Double] = js.undefined
   /**
        * In addition to the visible window, how many windowHeights should we render behind.
-       * @defaultvalue 2
+       * @default 2
        */
   var renderedWindowsBehind: js.UndefOr[scala.Double] = js.undefined
   /** Index in items array to start rendering from. Defaults to 0. */
@@ -126,7 +126,7 @@ trait IListProps
   /**
        * Boolean value to enable render page caching. This is an experimental performance optimization
        * that is off by default.
-       * @defaultvalue false
+       * @defaultValue false
        */
   var usePageCache: js.UndefOr[scala.Boolean] = js.undefined
 }

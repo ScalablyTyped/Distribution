@@ -14,12 +14,12 @@ trait IDropdownProps
   var defaultSelectedKeys: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double]] = js.undefined
   /**
        * Custom width for dropdown. If value is 0, width of the input field is used.
-       * @defaultvalue 0
+       * @default 0
        */
   var dropdownWidth: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Deprecated at v0.52.0, use `disabled` instead.
-       * @deprecated Use `disabled` instead.
+       * Deprecated at v0.52.0, use 'disabled' instead.
+       * @deprecated
        */
   var isDisabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -36,14 +36,9 @@ trait IDropdownProps
        * When multiple items are selected, this still will be used to separate values in
        * the dropdown title.
        *
-       * @defaultvalue ", "
+       * @defaultValue ", "
        */
   var multiSelectDelimiter: js.UndefOr[java.lang.String] = js.undefined
-  /**
-       * Optional preference to have onChanged still be called when an already selected item is
-       * clicked in single select mode.  Default to false
-       */
-  var notifyOnReselect: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Callback issued when the selected option changes.
        */
@@ -57,7 +52,7 @@ trait IDropdownProps
     ]
   ] = js.undefined
   /**
-       * @deprecated Use `onChange` instead.
+       * @deprecated Use onChange instead.
        */
   var onChanged: js.UndefOr[
     js.Function2[/* option */ IDropdownOption, /* index */ js.UndefOr[scala.Double], scala.Unit]

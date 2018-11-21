@@ -19,12 +19,12 @@ trait IFocusTrapZoneProps
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IFocusTrapZone]] = js.undefined
   /**
        * Do not put focus onto first element when render focus trap zone
-       * @defaultvalue false
+       * @default false
        */
   var disableFirstFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Sets the HTMLElement to focus on when exiting the FocusTrapZone.
-       * @defaultvalue The element.target that triggered the FTZ.
+       * @default The element.target that triggered the FTZ.
        */
   var elementToFocusOnDismiss: js.UndefOr[reactLib.HTMLElement] = js.undefined
   /**
@@ -36,22 +36,22 @@ trait IFocusTrapZoneProps
        * If false, the first focusable descendant, filtered by the firstFocusableSelector property if present, is chosen.
        * If true, the element that was focused when the Trap Zone last had a focused descendant is chosen.
        * If it has never had a focused descendant before, behavior falls back to the first focused descendant.
-       * @defaultvalue false
+       * @default false
        */
   var focusPreviouslyFocusedInnerElement: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Indicates whether focus trap zone should force focus inside the focus trap zone
-       * @defaultvalue true
+       * @default true
        */
   var forceFocusInsideTrap: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Indicates if this Trap Zone will ignore keeping track of HTMLElement that activated the Zone.
-       * @defaultvalue false
+       * @default false
        */
   var ignoreExternalFocusing: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Indicates if this Trap Zone will allow clicks outside the FocusTrapZone
-       * @defaultvalue false
+       * @default false
        */
   var isClickableOutsideFocusTrap: js.UndefOr[scala.Boolean] = js.undefined
 }

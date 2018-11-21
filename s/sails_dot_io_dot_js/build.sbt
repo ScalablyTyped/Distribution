@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "sails_dot_io_dot_js"
-version := "1.0.1-dt-20181102Z-58eb48"
+version := "1.0.1-dt-20180910Z-13f1ec"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "socket_dot_io-client" % "1.4.5-dt-20181102Z-cb69a8",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "socket_dot_io-client" % "1.4.5-dt-20180910Z-2e5410",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

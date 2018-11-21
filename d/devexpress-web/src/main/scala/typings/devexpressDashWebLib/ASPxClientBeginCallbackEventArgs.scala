@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait ASPxClientBeginCallbackEventArgs extends ASPxClientEventArgs {
   /**
-       * Gets a command name that identifies which client action forced a callback to be occurred.
+       * Gets a command name that identifies which client action forced a callback to occur.
        * Value: A string value that represents the name of the command which initiated a callback.
        */
   var command: java.lang.String

@@ -29,8 +29,8 @@ trait IDetailsRowCheckProps
        */
   var isHeader: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Deprecated, use `selected` instead.
-       * @deprecated Use `selected` instead.
+       * Deprecated. Use 'selected' instead.
+       * @deprecated
        */
   var isSelected: js.UndefOr[scala.Boolean] = js.undefined
   /**

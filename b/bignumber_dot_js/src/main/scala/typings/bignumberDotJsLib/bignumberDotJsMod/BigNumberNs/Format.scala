@@ -28,16 +28,8 @@ trait Format extends js.Object {
        */
   var groupSize: js.UndefOr[scala.Double] = js.undefined
   /**
-       * The string to prepend.
-       */
-  var prefix: js.UndefOr[java.lang.String] = js.undefined
-  /**
        * The secondary grouping size of the integer part.
        */
   var secondaryGroupSize: js.UndefOr[scala.Double] = js.undefined
-  /**
-       * The string to append.
-       */
-  var suffix: js.UndefOr[java.lang.String] = js.undefined
 }
 

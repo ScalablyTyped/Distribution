@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait DPlayer extends js.Object {
+  var danmaku: Danmaku
   var events: js.Any
+  var fullScreen: FullScreen
+  var video: stdLib.HTMLVideoElement
   def destroy(): scala.Unit
   def notice(text: java.lang.String, time: scala.Double, opacity: scala.Double): scala.Unit
   def on(event: DPlayerEvents, handler: js.Function0[scala.Unit]): scala.Unit

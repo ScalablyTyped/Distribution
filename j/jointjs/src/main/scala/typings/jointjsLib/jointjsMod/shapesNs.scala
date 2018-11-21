@@ -550,7 +550,6 @@ object shapesNs extends js.Object {
     
     
     trait BorderedImageSelectors extends js.Object {
-      var background: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGRectAttributes] = js.undefined
       var border: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGRectAttributes] = js.undefined
       var image: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGImageAttributes] = js.undefined
       var label: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGTextAttributes] = js.undefined
@@ -664,22 +663,6 @@ object shapesNs extends js.Object {
     
     
     trait ImageSelectors extends js.Object {
-      var image: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGImageAttributes] = js.undefined
-      var label: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGTextAttributes] = js.undefined
-      var root: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes] = js.undefined
-    }
-    
-    @js.native
-    class InscribedImage ()
-      extends jointjsLib.jointjsMod.diaNs.Element {
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[InscribedImageSelectors]) = this()
-      def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.GenericAttributes[InscribedImageSelectors], opt: jointjsLib.jointjsMod.diaNs.GraphNs.Options) = this()
-    }
-    
-    
-    trait InscribedImageSelectors extends js.Object {
-      var background: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGEllipseAttributes] = js.undefined
-      var border: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGEllipseAttributes] = js.undefined
       var image: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGImageAttributes] = js.undefined
       var label: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGTextAttributes] = js.undefined
       var root: js.UndefOr[jointjsLib.jointjsMod.attributesNs.SVGAttributes] = js.undefined

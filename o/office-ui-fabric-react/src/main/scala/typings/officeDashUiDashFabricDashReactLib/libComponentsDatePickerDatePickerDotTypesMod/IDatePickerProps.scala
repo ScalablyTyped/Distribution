@@ -47,7 +47,7 @@ trait IDatePickerProps
   var disableAutoFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Disabled state of the DatePicker.
-       * @defaultvalue false
+       * @default false
        */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -160,7 +160,7 @@ trait IDatePickerProps
   var today: js.UndefOr[stdLib.Date] = js.undefined
   /**
        * Whether or not the Textfield of the DatePicker is underlined.
-       * @defaultvalue false
+       * @default false
        */
   var underlined: js.UndefOr[scala.Boolean] = js.undefined
   /**

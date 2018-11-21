@@ -50,7 +50,7 @@ class Web () extends SecurableObject {
   def get_availableFields(): FieldCollection = js.native
   def get_configuration(): scala.Double = js.native
   def get_contentTypes(): ContentTypeCollection = js.native
-  def get_created(): stdLib.Date = js.native
+  def get_created(): microsoftDashAjaxLib.Date = js.native
   def get_currentUser(): User = js.native
   def get_customMasterUrl(): java.lang.String = js.native
   def get_description(): java.lang.String = js.native
@@ -63,7 +63,7 @@ class Web () extends SecurableObject {
   def get_folders(): FolderCollection = js.native
   def get_id(): Guid = js.native
   def get_language(): scala.Double = js.native
-  def get_lastItemModifiedDate(): stdLib.Date = js.native
+  def get_lastItemModifiedDate(): microsoftDashAjaxLib.Date = js.native
   def get_listTemplates(): ListTemplateCollection = js.native
   def get_lists(): ListCollection = js.native
   def get_masterUrl(): java.lang.String = js.native

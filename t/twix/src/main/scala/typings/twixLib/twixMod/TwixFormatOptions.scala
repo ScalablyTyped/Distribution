@@ -12,6 +12,9 @@ trait TwixFormatOptions extends js.Object {
    // boolean | string
   var explicitAllDay: js.UndefOr[scala.Boolean] = js.undefined
   var groupMeridiems: js.UndefOr[scala.Boolean] = js.undefined
+  var hideDate: js.UndefOr[scala.Boolean] = js.undefined
+  var hideTime: js.UndefOr[scala.Boolean] = js.undefined
+  var hideYear: js.UndefOr[scala.Boolean] = js.undefined
   var hourFormat: js.UndefOr[java.lang.String] = js.undefined
   var implicitMinutes: js.UndefOr[scala.Boolean] = js.undefined
   var implicitYear: js.UndefOr[scala.Boolean] = js.undefined

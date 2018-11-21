@@ -102,7 +102,7 @@ object U extends js.Object {
   /** Converts file extension to a more friendly representation, e.g. 'doc' => 'file_Word' */
   def getFriendlyNameForFileExtension(fileExtension: java.lang.String): java.lang.String = js.native
   /** Returns human-friendly representation of the datetime value, e.g. "A few seconds ago"" */
-  def getFriendlyTimeInterval(dateTimeSince: stdLib.Date, calendarType: scala.Double): java.lang.String = js.native
+  def getFriendlyTimeInterval(dateTimeSince: microsoftDashAjaxLib.Date, calendarType: scala.Double): java.lang.String = js.native
   /** Returns string that contains safe call to HP.Hide */
   def getHideHoverPanelCallback(): java.lang.String = js.native
   def getHighlightedProperty(key: java.lang.String, result: js.Any, property: java.lang.String): js.Any = js.native
@@ -237,9 +237,13 @@ object U extends js.Object {
     handler: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /** Renders datetime value in friendly format into element specified by targetElementID */
-  def renderFriendlyTimeIntervalString(dateTimeSinceUTC: stdLib.Date, targetElementID: java.lang.String): scala.Unit = js.native
+  def renderFriendlyTimeIntervalString(dateTimeSinceUTC: microsoftDashAjaxLib.Date, targetElementID: java.lang.String): scala.Unit = js.native
   /** Renders datetime value in friendly format into element specified by targetElementID */
-  def renderFriendlyTimeIntervalString(dateTimeSinceUTC: stdLib.Date, targetElementID: java.lang.String, calendarType: scala.Double): scala.Unit = js.native
+  def renderFriendlyTimeIntervalString(
+    dateTimeSinceUTC: microsoftDashAjaxLib.Date,
+    targetElementID: java.lang.String,
+    calendarType: scala.Double
+  ): scala.Unit = js.native
   /** Replaces tokens {searchcenterurl}, {contexturl}, {resultsurl}, {defaultpageslistname}, {Locale} and others, and converts URL to server-relative */
   def replaceUrlTokens(url: java.lang.String): java.lang.String = js.native
   def resetElement(element: stdLib.Element): scala.Unit = js.native
@@ -278,14 +282,19 @@ object U extends js.Object {
   /** Adds cookie with specified parameters */
   def setCookie(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   /** Adds cookie with specified parameters */
-  def setCookie(name: java.lang.String, value: java.lang.String, expires: stdLib.Date): scala.Unit = js.native
-  /** Adds cookie with specified parameters */
-  def setCookie(name: java.lang.String, value: java.lang.String, expires: stdLib.Date, domain: java.lang.String): scala.Unit = js.native
+  def setCookie(name: java.lang.String, value: java.lang.String, expires: microsoftDashAjaxLib.Date): scala.Unit = js.native
   /** Adds cookie with specified parameters */
   def setCookie(
     name: java.lang.String,
     value: java.lang.String,
-    expires: stdLib.Date,
+    expires: microsoftDashAjaxLib.Date,
+    domain: java.lang.String
+  ): scala.Unit = js.native
+  /** Adds cookie with specified parameters */
+  def setCookie(
+    name: java.lang.String,
+    value: java.lang.String,
+    expires: microsoftDashAjaxLib.Date,
     domain: java.lang.String,
     path: java.lang.String
   ): scala.Unit = js.native
@@ -299,9 +308,9 @@ object U extends js.Object {
   /** Returns human-readable size in kilobytes/megabytes etc. (the captions are localized) */
   def toFileSizeDisplay(numberOfBytes: scala.Double, showDecimalPart: scala.Boolean): java.lang.String = js.native
   /** Returns formatted date */
-  def toFormattedDate(dateValue: stdLib.Date): java.lang.String = js.native
+  def toFormattedDate(dateValue: microsoftDashAjaxLib.Date): java.lang.String = js.native
   /** Returns formatted date */
-  def toFormattedDate(dateValue: stdLib.Date, dateTimeFormatId: java.lang.String): java.lang.String = js.native
+  def toFormattedDate(dateValue: microsoftDashAjaxLib.Date, dateTimeFormatId: java.lang.String): java.lang.String = js.native
   /** Returns formatted number */
   def toFormattedNumber(num: scala.Double, defaultDecimalPlacesIfNotInt: scala.Double): java.lang.String = js.native
   /** If number is more than 1000, rounds up three last digits, e.g. 72389 => '72,000+'. If number is more than 100000, returns '100,000+' */

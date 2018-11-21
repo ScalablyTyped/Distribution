@@ -84,11 +84,11 @@ class Commit () extends js.Object {
   /**
        * Walk the history from this commit backwards.
        * An EventEmitter is returned that will emit a "commit" event for each commit in the history, and one "end"
-       * event when the walk is completed. Don't forget to call start() on the returned event.
+       * event when the walk is completed. Don't forget to call start() on the returned EventEmitter.
        *
        *
        */
-  def history(): nodeLib.eventsMod.EventEmitter = js.native
+  def history(): HistoryEventEmitter = js.native
   def id(): nodegitLib.oidMod.Oid = js.native
   def message(): java.lang.String = js.native
   def messageEncoding(): java.lang.String = js.native

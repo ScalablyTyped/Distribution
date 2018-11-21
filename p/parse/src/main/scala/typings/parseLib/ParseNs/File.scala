@@ -40,8 +40,8 @@ class File protected () extends js.Object {
   def this(name: java.lang.String, data: js.Any) = this()
   def this(name: java.lang.String, data: js.Any, `type`: java.lang.String) = this()
   def name(): java.lang.String = js.native
-  def save(): Promise[File] = js.native
-  def save(options: SuccessFailureOptions): Promise[File] = js.native
+  def save(): stdLib.Promise[File] = js.native
+  def save(options: SuccessFailureOptions): stdLib.Promise[File] = js.native
   def url(): java.lang.String = js.native
 }
 

@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait AnyPermissions extends js.Object {
   var origins: js.UndefOr[
-    js.Array[
-      firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.MatchPatternInternal
-    ]
+    js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.MatchPattern]
   ] = js.undefined
   var permissions: js.UndefOr[
     js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.Permission]

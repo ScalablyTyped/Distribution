@@ -130,15 +130,6 @@ object AWSNs extends js.Object {
   }
   
   @js.native
-  class Chime ()
-    extends awsDashSdkLib.awsDashSdkMod.Chime {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
-    def this(options: awsDashSdkLib.clientsChimeMod.ChimeNs.ClientConfiguration) = this()
-  }
-  
-  @js.native
   class Cloud9 ()
     extends awsDashSdkLib.awsDashSdkMod.Cloud9 {
     /**
@@ -1816,27 +1807,6 @@ object AWSNs extends js.Object {
     @JSName("CUR")
     @js.native
     object CURNs extends js.Object {
-      val TypesNs: this.type = js.native
-    }
-    
-  }
-  
-  @JSName("Chime")
-  @js.native
-  object ChimeNs extends js.Object {
-    @js.native
-    class Types ()
-      extends awsDashSdkLib.awsDashSdkMod.ChimeNs.Types {
-      /**
-         * Constructs a service object. This object has one method for each API operation.
-         */
-      def this(options: awsDashSdkLib.clientsChimeMod.ChimeNs.ClientConfiguration) = this()
-    }
-    
-    val TypesNs: this.type = js.native
-    @JSName("Chime")
-    @js.native
-    object ChimeNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     

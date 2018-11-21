@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait RegExpConstructor
   extends ScalablyTyped.runtime.Instantiable1[(/* pattern */ RegExp) | (/* pattern */ java.lang.String), RegExp]
      with ScalablyTyped.runtime.Instantiable2[
-      (/* pattern */ java.lang.String) | (/* pattern */ RegExp), 
+      (/* pattern */ RegExp) | (/* pattern */ java.lang.String), 
       /* flags */ java.lang.String, 
       RegExp
     ] {

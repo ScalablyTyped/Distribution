@@ -67,7 +67,7 @@ object validationNs extends js.Object {
     /* is Success */scala.Boolean
   ] = js.native
   val success: js.Function1[/* a */ js.Any, fpDashTsLib.libValidationMod.Validation[js.Any, js.Any]] = js.native
-  val validation: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libValidationMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libValidationMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libValidationMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libValidationMod.URI] = js.native
+  val validation: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libValidationMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libValidationMod.URI] with fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.libValidationMod.URI] with fpDashTsLib.libTraversableMod.Traversable2[fpDashTsLib.libValidationMod.URI] = js.native
   def getCompactable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libCompactableMod.Compactable2C[fpDashTsLib.libValidationMod.URI, L] = js.native
   def getFilterable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libFilterableMod.Filterable2C[fpDashTsLib.libValidationMod.URI, L] = js.native
   def getWitherable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libWitherableMod.Witherable2C[fpDashTsLib.libValidationMod.URI, L] = js.native

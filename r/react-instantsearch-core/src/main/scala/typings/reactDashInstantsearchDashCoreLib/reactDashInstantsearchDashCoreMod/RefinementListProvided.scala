@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait RefinementListProvided extends js.Object {
+  /** a boolean that says whether you can currently refine */
+  var canRefine: scala.Boolean
   /** the refinement currently applied */
   var currentRefinement: js.Array[java.lang.String]
   /** a boolean that says if the items props contains facet values from the global search or from the search inside items. */

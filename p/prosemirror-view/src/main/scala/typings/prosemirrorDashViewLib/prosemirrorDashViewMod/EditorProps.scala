@@ -19,7 +19,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
      */
   var attributes: js.UndefOr[
     ScalablyTyped.runtime.StringDictionary[java.lang.String] | (js.Function1[
-      /* p */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+      /* p */ js.Any, 
       js.UndefOr[
         ScalablyTyped.runtime.StringDictionary[java.lang.String] | scala.Null | scala.Unit
       ]
@@ -71,7 +71,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
       /* view */ EditorView[S], 
       /* anchor */ prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[S], 
       /* head */ prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[S], 
-      js.UndefOr[prosemirrorDashStateLib.prosemirrorDashStateMod.Selection[S] | scala.Null]
+      js.UndefOr[stdLib.Selection | scala.Null]
     ]) | scala.Null
   ] = js.undefined
   /**
@@ -79,10 +79,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
      * view.
      */
   var decorations: js.UndefOr[
-    (js.Function1[
-      /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
-      js.UndefOr[DecorationSet[S] | scala.Null]
-    ]) | scala.Null
+    (js.Function1[/* state */ js.Any, js.UndefOr[DecorationSet[S] | scala.Null]]) | scala.Null
   ] = js.undefined
   /**
      * The [parser](#model.DOMParser) to use when reading editor changes
@@ -95,12 +92,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
      * When this returns false, the content of the view is not directly
      * editable.
      */
-  var editable: js.UndefOr[
-    (js.Function1[
-      /* state */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
-      scala.Boolean
-    ]) | scala.Null
-  ] = js.undefined
+  var editable: js.UndefOr[(js.Function1[/* state */ js.Any, scala.Boolean]) | scala.Null] = js.undefined
   /**
      * Called when the editor is clicked, after `handleClickOn` handlers
      * have been called.

@@ -51,7 +51,7 @@ package object definitionsMod {
   ]
   type PaginatorGuard[T /* <: Response[js.Array[js.Object]] */] = js.Function1[/* res */ APIResponseSuccess, /* is T */scala.Boolean]
   type PaginatorRequestGenerator = js.Function0[stdLib.Promise[ionicLib.Anon_Req]]
-  type ProjectFile = IProjectConfig | IMultiProjectConfig
+  type ProjectFile = IProjectConfig | MultiProjectConfig
   type ProjectType = ionicLib.ionicLibStrings.angular | ionicLib.ionicLibStrings.`ionic-angular` | ionicLib.ionicLibStrings.ionic1 | ionicLib.ionicLibStrings.custom
   type RepoAssociation = GithubRepoAssociation | BitbucketCloudRepoAssociation | BitbucketServerRepoAssociation
 }

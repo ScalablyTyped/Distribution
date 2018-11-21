@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class TaxonomyItem ()
   extends sharepointLib.SPNs.ClientObject {
   def deleteObject(): scala.Unit = js.native
-  def get_createdDate(): stdLib.Date = js.native
+  def get_createdDate(): microsoftDashAjaxLib.Date = js.native
   def get_id(): sharepointLib.SPNs.Guid = js.native
-  def get_lastModifiedDate(): stdLib.Date = js.native
+  def get_lastModifiedDate(): microsoftDashAjaxLib.Date = js.native
   def get_name(): java.lang.String = js.native
   def get_termStore(): TermStore = js.native
   def set_name(value: java.lang.String): scala.Unit = js.native

@@ -10,12 +10,12 @@ trait IHoverCardProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
   /**
        * Length of card dismiss delay. A min number is necessary for pointer to hop between target and card
-       * @defaultvalue 100
+       * @default 100
        */
   var cardDismissDelay: js.UndefOr[scala.Double] = js.undefined
   /**
        * Length of compact card delay
-       * @defaultvalue 500
+       * @default 500
        */
   var cardOpenDelay: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -25,7 +25,7 @@ trait IHoverCardProps
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IHoverCard]] = js.undefined
   /**
        * Time in ms when expanded card should open after compact card
-       * @defaultvalue 1500
+       * @default 1500
        */
   var expandedCardOpenDelay: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -38,7 +38,7 @@ trait IHoverCardProps
   ] = js.undefined
   /**
        * Enables instant open of the full card upon click
-       * @defaultvalue false
+       * @default false
        */
   var instantOpenOnClick: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait IHoverCardProps
   var onCardVisible: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
        * HotKey used for opening the HoverCard when tabbed to target.
-       * @defaultvalue 'KeyCodes.c'
+       * @default 'KeyCodes.c'
        */
   var openHotKey: js.UndefOr[atUifabricUtilitiesLib.libKeyCodesMod.KeyCodes] = js.undefined
   /**
@@ -69,7 +69,7 @@ trait IHoverCardProps
   var setAriaDescribedBy: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Set to true to set focus on the first focusable element in the card. Works in pair with the 'trapFocus' prop.
-       * @defaultvalue false
+       * @default false
        */
   var setInitialFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -78,7 +78,7 @@ trait IHoverCardProps
   var shouldBlockHoverCard: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
        * If true disables Card dismiss upon mouse leave, so that card sticks around.
-       * @defaultvalue false
+       * @default false
        */
   var sticky: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -104,7 +104,7 @@ trait IHoverCardProps
   var trapFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Type of the hover card to render.
-       * @defaultvalue HoverCardType.expanding
+       * @default HoverCardType.expanding
        */
   var `type`: js.UndefOr[HoverCardType] = js.undefined
 }

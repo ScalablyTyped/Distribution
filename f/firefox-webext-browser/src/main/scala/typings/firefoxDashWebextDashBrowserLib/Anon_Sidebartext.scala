@@ -23,6 +23,7 @@ trait Anon_Sidebartext extends js.Object {
   var popup_highlight_text: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var popup_text: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var sidebar: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
+  var sidebar_border: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var sidebar_highlight: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var sidebar_highlight_text: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var sidebar_text: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined

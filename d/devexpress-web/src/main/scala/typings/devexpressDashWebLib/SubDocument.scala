@@ -21,6 +21,16 @@ trait SubDocument extends js.Object {
        */
   var fieldsInfo: js.Array[Field] = js.native
   /**
+       * Provides information about floating pictures in the sub-document.
+       * Value: An array of FloatingPictureInfo objects storing information about floating objects.
+       */
+  var floatingPicturesInfo: js.Array[FloatingPictureInfo] = js.native
+  /**
+       * Provides information about floating text boxes contained within the sub-document if it is the main sub-document or header/footer.
+       * Value: An array of FloatingTextBoxInfo objects storing the information about floating text boxes.
+       */
+  var floatingTextBoxesInfo: js.Array[FloatingTextBoxInfo] = js.native
+  /**
        * Gets the sub-document identifier.
        * Value: An integer value specifying the sub-document identifier.
        */
@@ -56,6 +66,31 @@ trait SubDocument extends js.Object {
        */
   var `type`: js.Any = js.native
   /**
+       * Returns an array of bookmarks whose range intersects the specified interval in the sub-document.
+       * @param interval An Interval object specifying the target interval in the sub-document.
+       */
+  def findBookmarks(interval: Interval): js.Array[Bookmark] = js.native
+  /**
+       * Returns an array of bookmarks whose range intersects the specified intervals in the sub-document.
+       * @param intervals An array of Interval objects specifying the target intervals in the sub-document.
+       */
+  def findBookmarks(intervals: js.Array[Interval]): js.Array[Bookmark] = js.native
+  /**
+       * Returns a bookmark specified by its name.
+       * @param name A string value specifying the target bookmark's name.
+       */
+  def findBookmarks(name: java.lang.String): js.Array[Bookmark] = js.native
+  /**
+       * Returns an array of bookmarks whose range includes the specified position in the sub-document.
+       * @param position An integer value specifying the target position in the sub-document.
+       */
+  def findBookmarks(position: scala.Double): js.Array[Bookmark] = js.native
+  /**
+       * Returns an array of bookmarks whose names are matched to the specified regular expression.
+       * @param regExp A string value specifying the regular expression that defines the pattern for searching by names in the sub-document's bookmark collection.
+       */
+  def findBookmarks(regExp: js.Any): js.Array[Bookmark] = js.native
+  /**
        * Returns all fields contained in the specified interval.
        * @param interval A text buffer interval that contains the target fields.
        */
@@ -66,6 +101,21 @@ trait SubDocument extends js.Object {
        */
   def findFields(position: scala.Double): js.Array[Field] = js.native
   /**
+       * Returns an array of paragraphs whose range intersects the specified interval in the sub-document.
+       * @param interval An Interval object specifying the target interval in the sub-document.
+       */
+  def findParagraphs(interval: Interval): js.Array[Paragraph] = js.native
+  /**
+       * Returns an array of paragraphs whose range intersects the specified intervals in the sub-document.
+       * @param intervals An array of the Interval object specifying the target intervals in the sub-document.
+       */
+  def findParagraphs(intervals: js.Array[Interval]): js.Array[Paragraph] = js.native
+  /**
+       * Returns an array of paragraphs whose range includes the specified position in the sub-document.
+       * @param position An integer value specifying the target position in the sub-document.
+       */
+  def findParagraphs(position: scala.Double): js.Array[Paragraph] = js.native
+  /**
        * Returns all tables contained in the specified interval.
        * @param interval A text buffer interval that contains the target tables.
        */
@@ -75,5 +125,14 @@ trait SubDocument extends js.Object {
        * @param position An integer value specifying the target table's position.
        */
   def findTables(position: scala.Double): js.Array[Field] = js.native
+  /**
+       * Returns information specific for floating text boxes about the sub-document.
+       */
+  def getFloatingTextBoxInfo(): FloatingTextBoxInfo = js.native
+  /**
+       * Return the document's textual representation contained in the specified interval.
+       * @param interval A text buffer interval that contains the target text.
+       */
+  def getTextByInterval(interval: Interval): java.lang.String = js.native
 }
 

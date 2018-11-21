@@ -18,9 +18,9 @@ class FaxOutgoingQueue protected () extends js.Object {
   /** Does the server generate a brand */
   var Branding: scala.Boolean = js.native
   /** End of the discount rate period */
-  var DiscountRateEnd: stdLib.VarDate = js.native
+  var DiscountRateEnd: activexDashInteropLib.VarDate = js.native
   /** Start of the discount rate period */
-  var DiscountRateStart: stdLib.VarDate = js.native
+  var DiscountRateStart: activexDashInteropLib.VarDate = js.native
   var `FAXCOMEXLib.FaxOutgoingQueue_typekey`: FaxOutgoingQueue = js.native
   /** Is the queue paused */
   var Paused: scala.Boolean = js.native

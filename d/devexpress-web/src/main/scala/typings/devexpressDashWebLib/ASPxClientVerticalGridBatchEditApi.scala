@@ -72,6 +72,14 @@ trait ASPxClientVerticalGridBatchEditApi extends js.Object {
        */
   def GetRecordVisibleIndices(includeDeleted: scala.Boolean): js.Array[scala.Double] = js.native
   /**
+       * Returns an object that stores unsaved changes.
+       */
+  def GetUnsavedChanges(): js.Object = js.native
+  /**
+       * Returns an array of the updated records visible indices.
+       */
+  def GetUpdatedRecordIndices(): js.Array[scala.Double] = js.native
+  /**
        * Returns a value that indicates whether the vertical grid has changed data.
        */
   def HasChanges(): scala.Boolean = js.native
@@ -126,7 +134,7 @@ trait ASPxClientVerticalGridBatchEditApi extends js.Object {
        */
   def ResetChanges(visibleIndex: scala.Double, rowIndex: scala.Double): scala.Unit = js.native
   /**
-       * Sets a value of the specified cell.
+       * Sets the value of the specified cell.
        * @param visibleIndex An integer zero-based index that identifies the record containing the processed cell.
        * @param rowFieldNameOrId A string value that specifies the field name or unique identifier (the row's Name property value) of a row containing the processed cell.
        * @param value An object that contains the new cell value.

@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "swap-case"
-version := "1.1.2-022a0f"
+version := "1.1.2-1e59f6"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "lower-case" % "1.1.4-7a65c7",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "com.scalablytyped" %%% "upper-case" % "1.1.3-7482b2",
+  "com.scalablytyped" %%% "lower-case" % "1.1.4-c49888",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "upper-case" % "1.1.3-49bf36",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

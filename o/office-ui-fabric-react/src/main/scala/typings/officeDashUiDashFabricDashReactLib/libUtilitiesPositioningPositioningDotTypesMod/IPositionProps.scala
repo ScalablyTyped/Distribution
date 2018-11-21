@@ -8,11 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait IPositionProps extends js.Object {
   /**
-       * If true the positioning logic will prefer flipping edges over nudging the rectangle to fit within bounds,
-       * thus making sure the the element align perfectly with target.
-       */
-  var alignTargetEdge: js.UndefOr[scala.Boolean] = js.undefined
-  /**
        * The bounding rectangle for which  the contextual menu can appear in.
        */
   var bounds: js.UndefOr[atUifabricUtilitiesLib.libIRectangleMod.IRectangle] = js.undefined
@@ -26,7 +21,7 @@ trait IPositionProps extends js.Object {
   /**
        * If true the position will not change edges in an attempt to fit the rectangle within bounds.
        * It will still attempt to align it to whatever bounds are given.
-       * @defaultvalue false
+       * @default false
        */
   var directionalHintFixed: js.UndefOr[scala.Boolean] = js.undefined
   /**

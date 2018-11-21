@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 class BlankNode protected ()
   extends rdfDashJsLib.rdfDashJsMod.BlankNode {
   def this(name: java.lang.String) = this()
-  var id: java.lang.String = js.native
+  val id: java.lang.String = js.native
   /**
        * Contains the constant "BlankNode".
        */
   /* CompleteClass */
   override var termType: rdfDashJsLib.rdfDashJsLibStrings.BlankNode = js.native
   @JSName("termType")
-  var termType_BlankNode: n3Lib.n3LibStrings.BlankNode = js.native
+  val termType_BlankNode: n3Lib.n3LibStrings.BlankNode = js.native
   /**
        * Blank node name as a string, without any serialization specific prefixes,
        * e.g. when parsing,

@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ASPxClientTokenBox extends ASPxClientComboBox {
   /**
+       * For internal use only.
+       */
+  @JSName("ButtonClick")
+  var ButtonClick_ASPxClientTokenBox: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientTokenBox]] = js.native
+  /**
        * Fires on the client side after the token collection has been changed.
        */
   var TokensChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientTokenBox]] = js.native

@@ -17,9 +17,17 @@ trait RequiredOptions
        */
   var bracketSpacing: scala.Boolean
   /**
+       * Which end of line characters to apply.
+       */
+  var endOfLine: prettierLib.prettierLibStrings.auto | prettierLib.prettierLibStrings.lf | prettierLib.prettierLibStrings.crlf | prettierLib.prettierLibStrings.cr
+  /**
        * Specify the input filepath. This will be used to do parser inference.
        */
   var filepath: java.lang.String
+  /**
+       * How to handle whitespaces in HTML.
+       */
+  var htmlWhitespaceSensitivity: prettierLib.prettierLibStrings.css | prettierLib.prettierLibStrings.strict | prettierLib.prettierLibStrings.ignore
   /**
        * Prettier can insert a special @format marker at the top of files specifying that
        * the file has been formatted with prettier. This works well when used in tandem with
@@ -31,6 +39,10 @@ trait RequiredOptions
        * Put the `>` of a multi-line JSX element at the end of the last line instead of being alone on the next line.
        */
   var jsxBracketSameLine: scala.Boolean
+  /**
+       * Use single quotes in JSX.
+       */
+  var jsxSingleQuote: scala.Boolean
   /**
        * Specify which parser to use.
        */

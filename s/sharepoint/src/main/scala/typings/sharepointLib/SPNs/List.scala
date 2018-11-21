@@ -42,7 +42,7 @@ class List[T] () extends SecurableObject {
   /** Gets a value that specifies whether content types are enabled for the list. */
   def get_contentTypesEnabled(): scala.Boolean = js.native
   /** Gets a value that specifies when the list was created. */
-  def get_created(): stdLib.Date = js.native
+  def get_created(): microsoftDashAjaxLib.Date = js.native
   /** Gets the data source associated with the list, or null if the list is not a virtual list. */
   def get_dataSource(): ListDataSource = js.native
   /** Gets a value that specifies the default workflow identifier for content approval on the list. */
@@ -116,9 +116,9 @@ class List[T] () extends SecurableObject {
   /** Gets a value that specifies the number of list items in the list */
   def get_itemCount(): scala.Double = js.native
   /** Gets a value that specifies the last time a list item was deleted from the list. */
-  def get_lastItemDeletedDate(): stdLib.Date = js.native
+  def get_lastItemDeletedDate(): microsoftDashAjaxLib.Date = js.native
   /** Gets a value that specifies the last time a list item, field, or property of the list was modified. */
-  def get_lastItemModifiedDate(): stdLib.Date = js.native
+  def get_lastItemModifiedDate(): microsoftDashAjaxLib.Date = js.native
   /** The entity type full name of the list item in the list. */
   def get_listItemEntityTypeFullName(): java.lang.String = js.native
   /** Gets a value that indicates whether the list in a Meeting Workspace site contains data for multiple meeting instances within the site */
@@ -213,7 +213,7 @@ class List[T] () extends SecurableObject {
   /** Sets a value that indicates whether this list should be treated as a top level navigation object or not.  */
   def set_isApplicationList(value: scala.Boolean): scala.Unit = js.native
   /** Sets a value that specifies the last time the list was modified. */
-  def set_lastItemModifiedDate(value: stdLib.Date): scala.Unit = js.native
+  def set_lastItemModifiedDate(value: microsoftDashAjaxLib.Date): scala.Unit = js.native
   /** Sets a value that indicates whether the list in a Meeting Workspace site contains data for multiple meeting instances within the site */
   def set_multipleDataList(value: scala.Boolean): scala.Unit = js.native
   /** Sets a value that specifies that the crawler must not crawl the list */

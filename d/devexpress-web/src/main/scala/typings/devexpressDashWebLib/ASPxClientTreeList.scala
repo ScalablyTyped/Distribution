@@ -11,6 +11,46 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ASPxClientTreeList extends ASPxClientControl {
   /**
+       * Occurs on the client side before data changes are canceled in batch edit mode.
+       */
+  var BatchEditChangesCanceling: ASPxClientEvent[ASPxClientTreeListBatchEditChangesCancelingEventHandler[ASPxClientTreeList]] = js.native
+  /**
+       * Occurs on the client side before data changes are saved in batch edit mode.
+       */
+  var BatchEditChangesSaving: ASPxClientEvent[ASPxClientTreeListBatchEditChangesSavingEventHandler[ASPxClientTreeList]] = js.native
+  /**
+       * Enables you to prevent a batch edit confirmation message from being displayed.
+       */
+  var BatchEditConfirmShowing: ASPxClientEvent[ASPxClientTreeListBatchEditConfirmShowingEventHandler[ASPxClientTreeList]] = js.native
+  /**
+       * Occurs when a tree list leaves the batch edit mode.
+       */
+  var BatchEditEndEditing: ASPxClientEvent[ASPxClientTreeListBatchEditEndEditingEventHandler[ASPxClientTreeList]] = js.native
+  /**
+       * Occurs on the client side before a node is deleted in batch edit mode.
+       */
+  var BatchEditNodeDeleting: ASPxClientEvent[ASPxClientTreeListBatchEditNodeDeletingEventHandler[ASPxClientTreeList]] = js.native
+  /**
+       * Occurs on the client side before a node is inserted in batch edit mode.
+       */
+  var BatchEditNodeInserting: ASPxClientEvent[ASPxClientTreeListBatchEditNodeInsertingEventHandler[ASPxClientTreeList]] = js.native
+  /**
+       * Occurs on the client side before a node is recovered in batch edit mode.
+       */
+  var BatchEditNodeRecovering: ASPxClientEvent[ASPxClientTreeListBatchEditNodeRecoveringEventHandler[ASPxClientTreeList]] = js.native
+  /**
+       * Enables you to specify whether the node date is valid and provide an error text.
+       */
+  var BatchEditNodeValidating: ASPxClientEvent[ASPxClientTreeListBatchEditNodeValidatingEventHandler[ASPxClientTreeList]] = js.native
+  /**
+       * Occurs when a tree list switches to batch edit mode.
+       */
+  var BatchEditStartEditing: ASPxClientEvent[ASPxClientTreeListBatchEditStartEditingEventHandler[ASPxClientTreeList]] = js.native
+  /**
+       * Enables you to provide navigation for editors contained in a templated cell in Batch Edit mode.
+       */
+  var BatchEditTemplateCellFocused: ASPxClientEvent[ASPxClientTreeListBatchEditTemplateCellFocusedEventHandler[ASPxClientTreeList]] = js.native
+  /**
        * Occurs when a callback for server-side processing is initiated.
        */
   var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTreeList]] = js.native
@@ -51,6 +91,10 @@ trait ASPxClientTreeList extends ASPxClientControl {
        */
   var EndDragNode: ASPxClientEvent[ASPxClientTreeListEndDragNodeEventHandler[ASPxClientTreeList]] = js.native
   /**
+       * Occurs on the client side when the focused cell is about to be changed.
+       */
+  var FocusedCellChanging: ASPxClientEvent[ASPxClientTreeListFocusedCellChangingEventHandler[ASPxClientTreeList]] = js.native
+  /**
        * Fires in response to changing node focus.
        */
   var FocusedNodeChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTreeList]] = js.native
@@ -86,6 +130,11 @@ trait ASPxClientTreeList extends ASPxClientControl {
        * Fires after a toolbar item has been clicked.
        */
   var ToolbarItemClick: ASPxClientEvent[ASPxClientTreeListToolbarItemClickEventHandler[ASPxClientTreeList]] = js.native
+  /**
+       * Provides access to the batch editing client API.
+       * Value: A <see cref="ASPxClientTreeListBatchEditApi" /> object that exposes the batch editing client API methods.
+       */
+  var batchEditApi: ASPxClientTreeListBatchEditApi = js.native
   /**
        * Applies the specified filter expression to the tree list.
        * @param filterExpression A string value that specifies the filter expression.
@@ -245,6 +294,10 @@ trait ASPxClientTreeList extends ASPxClientControl {
        * @param column An ASPxClientTreeListColumn object that represents the data column within the client ASPxTreeList.
        */
   def GetEditor(column: ASPxClientTreeListColumn): js.Object = js.native
+  /**
+       * Gets information about a focused cell.
+       */
+  def GetFocusedCell(): ASPxClientTreeListCellInfo = js.native
   /**
        * Returns the focused node's key value.
        */
@@ -465,6 +518,12 @@ trait ASPxClientTreeList extends ASPxClientControl {
        * @param isFilterEnabled true to enable the current filter; otherwise, false.
        */
   def SetFilterEnabled(isFilterEnabled: scala.Boolean): scala.Unit = js.native
+  /**
+       * Focuses a specified cell.
+       * @param nodeKey An integer value that specifies a node key.
+       * @param columnIndex A zero-based index that identifies the column in the column collection (the column's Index property value).
+       */
+  def SetFocusedCell(nodeKey: java.lang.String, columnIndex: scala.Double): scala.Unit = js.native
   /**
        * Moves focus to the specified node.
        * @param key A String value that uniquely identifies the node.

@@ -100,5 +100,10 @@ trait ASPxClientDashboardExportOptions extends js.Object {
        * Value: A string value that specifies the title of the exported document.
        */
   var Title: java.lang.String
+  /**
+       * Provides access to options for exporting a Treemap dashboard item.
+       * Value: A TreemapExportOptions object containing settings that specify parameters affecting how the Treemap dashboard item is exported.
+       */
+  var TreemapOptions: TreemapExportOptions
 }
 

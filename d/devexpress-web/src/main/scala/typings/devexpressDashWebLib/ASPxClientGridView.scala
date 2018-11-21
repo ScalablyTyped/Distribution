@@ -14,6 +14,8 @@ trait ASPxClientGridView extends ASPxClientGridBase {
        * Occurs on the client side before data changes are canceled in batch edit mode.
        */
   var BatchEditChangesCanceling: ASPxClientEvent[ASPxClientGridViewBatchEditChangesCancelingEventHandler[ASPxClientGridView]] = js.native
+  var BatchEditChangesPreviewShowing: ASPxClientEvent[ASPxClientCancelEventHandler[ASPxClientGridView]] = js.native
+  var BatchEditChangesPreviewShown: ASPxClientEvent[ASPxClientEventHandler[ASPxClientGridView]] = js.native
   /**
        * Occurs on the client side before data changes are saved in batch edit mode.
        */
@@ -34,6 +36,10 @@ trait ASPxClientGridView extends ASPxClientGridBase {
        * Occurs on the client side before a data row is inserted in batch edit mode.
        */
   var BatchEditRowInserting: ASPxClientEvent[ASPxClientGridViewBatchEditRowInsertingEventHandler[ASPxClientGridView]] = js.native
+  /**
+       * Occurs on the client side before a row is deleted in batch edit mode.
+       */
+  var BatchEditRowRecovering: ASPxClientEvent[ASPxClientGridViewBatchEditRowRecoveringEventHandler[ASPxClientGridView]] = js.native
   /**
        * Enables you to specify whether row data is valid and provide an error text.
        */
@@ -782,9 +788,8 @@ trait ASPxClientGridView extends ASPxClientGridBase {
        */
   def SelectRows(): scala.Unit = js.native
   /**
-       * Selects or deselects the specified row within the grid.
-       * @param visibleIndex An integer zero-based index that identifies the data row within the grid.
-       * @param selected true to select the specified row; false to deselect the row.
+       * Selects the specified row displayed within the grid.
+       * @param visibleIndex A zero-based integer value that specifies the row's visible index.
        */
   def SelectRows(visibleIndex: scala.Double): scala.Unit = js.native
   /**

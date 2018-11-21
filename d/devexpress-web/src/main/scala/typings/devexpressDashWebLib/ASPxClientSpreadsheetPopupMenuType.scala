@@ -32,6 +32,14 @@ object ASPxClientSpreadsheetPopupMenuType extends js.Object {
     extends devexpressDashWebLib.ASPxClientSpreadsheetPopupMenuType
   
   @js.native
+  sealed trait PivotTable
+    extends devexpressDashWebLib.ASPxClientSpreadsheetPopupMenuType
+  
+  @js.native
+  sealed trait PivotTableAutoFilter
+    extends devexpressDashWebLib.ASPxClientSpreadsheetPopupMenuType
+  
+  @js.native
   sealed trait RowHeading
     extends devexpressDashWebLib.ASPxClientSpreadsheetPopupMenuType
   
@@ -44,6 +52,8 @@ object ASPxClientSpreadsheetPopupMenuType extends js.Object {
   /* 5 */ val Chart: Chart with scala.Double = js.native
   /* 0 */ val ColumnHeading: ColumnHeading with scala.Double = js.native
   /* 4 */ val Picture: Picture with scala.Double = js.native
+  /* 9 */ val PivotTable: PivotTable with scala.Double = js.native
+  /* 10 */ val PivotTableAutoFilter: PivotTableAutoFilter with scala.Double = js.native
   /* 1 */ val RowHeading: RowHeading with scala.Double = js.native
   /* 3 */ val SheetTab: SheetTab with scala.Double = js.native
   @JSBracketAccess

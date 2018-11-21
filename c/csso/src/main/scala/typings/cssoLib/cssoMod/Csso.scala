@@ -7,14 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Csso extends js.Object {
+  var syntax: js.Any = js.native
   /**
        * Does the main task – compress an AST.
        */
-  def compress(ast: js.Object): cssoLib.Anon_Ast = js.native
+  def compress(ast: cssDashTreeLib.cssDashTreeMod.CssNode): cssoLib.Anon_Ast = js.native
   /**
        * Does the main task – compress an AST.
        */
-  def compress(ast: js.Object, options: cssoLib.cssoMod.cssoNs.CompressOptions): cssoLib.Anon_Ast = js.native
+  def compress(ast: cssDashTreeLib.cssDashTreeMod.CssNode, options: cssoLib.cssoMod.cssoNs.CompressOptions): cssoLib.Anon_Ast = js.native
   /**
        * Minify source CSS passed as String
        * @param source

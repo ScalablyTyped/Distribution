@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 trait IColumnReorderOptions extends js.Object {
   /**
        * Specifies the number fixed columns from right
-       * @defaultvalue 0
+       * @default 0
        */
   var frozenColumnCountFromEnd: js.UndefOr[scala.Double] = js.undefined
   /**
        * Specifies the number fixed columns from left(0th index)
-       * @defaultvalue 0
+       * @default 0
        */
   var frozenColumnCountFromStart: js.UndefOr[scala.Double] = js.undefined
   /**
        * Callback to handle the column reorder
        * draggedIndex is the source column index, that need to be placed in targetIndex
-       * Deprecated, use `onColumnDrop` instead.
-       * @deprecated Use `onColumnDrop` instead.
+       * Use onColumnDrop instead of this
+       * @deprecated
        */
   var handleColumnReorder: js.UndefOr[
     js.Function2[/* draggedIndex */ scala.Double, /* targetIndex */ scala.Double, scala.Unit]

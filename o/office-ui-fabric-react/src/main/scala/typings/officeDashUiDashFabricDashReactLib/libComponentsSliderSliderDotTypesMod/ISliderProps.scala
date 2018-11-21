@@ -47,12 +47,12 @@ trait ISliderProps
   var label: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The max value of the Slider
-       * @defaultvalue 10
+       * @default 10
        */
   var max: js.UndefOr[scala.Double] = js.undefined
   /**
        * The min value of the Slider
-       * @defaultvalue 0
+       * @default 0
        */
   var min: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -71,12 +71,12 @@ trait ISliderProps
   ] = js.undefined
   /**
        * Whether to show the value on the right of the Slider.
-       * @defaultvalue true
+       * @default true
        */
   var showValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * The difference between the two adjacent values of the Slider
-       * @defaultvalue 1
+       * @default 1
        */
   var step: js.UndefOr[scala.Double] = js.undefined
   /**

@@ -12,24 +12,29 @@ import scala.scalajs.js.annotation._
 trait ASPxClientWebChartControlCustomDrawCrosshairEventArgs extends ASPxClientProcessingModeEventArgs {
   /**
        * Provides access to the settings of crosshair elements and crosshair group header elements to customize their appearance.
-       * Value: An ASPxClientCrosshairElementGroup object.
+       * Value: An array of ASPxClientCrosshairElementGroup objects.
        */
-  var crosshairElementGroups: ASPxClientCrosshairElementGroup
+  var crosshairElementGroups: js.Array[ASPxClientCrosshairElementGroup]
   /**
-       * Gets crosshair elements settings  to custom draw a crosshair cursor.
-       * Value: An  ASPxClientCrosshairElement object.
+       * Returns crosshair elements settings to custom draw a crosshair cursor.
+       * Value: An array of ASPxClientCrosshairElement objects.
        */
-  var crosshairElements: ASPxClientCrosshairElement
+  var crosshairElements: js.Array[ASPxClientCrosshairElement]
   /**
-       * Gets the settings of crosshair group header elements to customize their appearance.
-       * Value: An ASPxClientCrosshairGroupHeaderElement object.
+       * Returns the crosshair group header elements to customize their appearance.
+       * Value: An array of ASPxClientCrosshairGroupHeaderElement objects.
        */
-  var crosshairGroupHeaderElements: ASPxClientCrosshairGroupHeaderElement
+  var crosshairGroupHeaderElements: js.Array[ASPxClientCrosshairGroupHeaderElement]
   /**
-       * Gets the settings of crosshair axis label elements to customize their appearance.
-       * Value: An ASPxClientCrosshairAxisLabelElement object.
+       * Returns the crosshair legend elements to custom draw the Crosshair.
+       * Value: An array of the ASPxClientCrosshairLegendElement objects.
        */
-  var cursorCrosshairAxisLabelElements: ASPxClientCrosshairAxisLabelElement
+  var crosshairLegendElements: js.Array[ASPxClientCrosshairLegendElement]
+  /**
+       * Returns the crosshair axis label elements to customize their appearance.
+       * Value: An array of ASPxClientCrosshairAxisLabelElement objects.
+       */
+  var cursorCrosshairAxisLabelElements: js.Array[ASPxClientCrosshairAxisLabelElement]
   /**
        * Gets crosshair line element settings that are used to custom draw a crosshair cursor.
        * Value: An ASPxClientCrosshairLineElement object that contains crosshair line element settings.

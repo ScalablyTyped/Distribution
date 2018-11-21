@@ -175,14 +175,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
+     * Creates a deployment.
      */
   def createDeployment(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateDeploymentResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
+     * Creates a deployment.
      */
   def createDeployment(
     callback: js.Function2[
@@ -195,14 +195,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
+     * Creates a deployment.
      */
   def createDeployment(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateDeploymentRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateDeploymentResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
+     * Creates a deployment.
      */
   def createDeployment(
     params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateDeploymentRequest,
@@ -1200,47 +1200,6 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the status of a bulk deployment.
-     */
-  def getBulkDeploymentStatus(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Returns the status of a bulk deployment.
-     */
-  def getBulkDeploymentStatus(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Returns the status of a bulk deployment.
-     */
-  def getBulkDeploymentStatus(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Returns the status of a bulk deployment.
-     */
-  def getBulkDeploymentStatus(
-    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusRequest,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
      * Retrieves the connectivity information for a core.
      */
   def getConnectivityInfo(): awsDashSdkLib.libRequestMod.Request[
@@ -2020,88 +1979,6 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
-     */
-  def listBulkDeploymentDetailedReports(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
-     */
-  def listBulkDeploymentDetailedReports(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
-     */
-  def listBulkDeploymentDetailedReports(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
-     */
-  def listBulkDeploymentDetailedReports(
-    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsRequest,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Returns a list of bulk deployments.
-     */
-  def listBulkDeployments(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Returns a list of bulk deployments.
-     */
-  def listBulkDeployments(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Returns a list of bulk deployments.
-     */
-  def listBulkDeployments(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Returns a list of bulk deployments.
-     */
-  def listBulkDeployments(
-    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsRequest,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
      * Lists the versions of a core definition.
      */
   def listCoreDefinitionVersions(): awsDashSdkLib.libRequestMod.Request[
@@ -2796,88 +2673,6 @@ trait Greengrass
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ResetDeploymentsResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
-     */
-  def startBulkDeployment(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
-     */
-  def startBulkDeployment(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
-     */
-  def startBulkDeployment(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
-     */
-  def startBulkDeployment(
-    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentRequest,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
-     */
-  def stopBulkDeployment(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
-     */
-  def stopBulkDeployment(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
-     */
-  def stopBulkDeployment(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
-     */
-  def stopBulkDeployment(
-    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentRequest,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

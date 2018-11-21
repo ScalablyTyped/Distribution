@@ -19,6 +19,10 @@ trait ASPxClientCalendar extends ASPxClientEdit {
        */
   var CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientCalendar]]
   /**
+       * Occurs when an end user clicks a date cell.
+       */
+  var CellClick: ASPxClientEvent[ASPxClientCalendarCellClickEventHandler[ASPxClientCalendar]]
+  /**
        * Allows you to disable the calendar's days.
        */
   var CustomDisabledDate: ASPxClientEvent[ASPxClientCalendarCustomDisabledDateEventHandler[ASPxClientCalendar]]

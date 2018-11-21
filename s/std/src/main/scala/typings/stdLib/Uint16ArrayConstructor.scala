@@ -16,7 +16,7 @@ trait Uint16ArrayConstructor
       Uint16Array
     ]
      with ScalablyTyped.runtime.Instantiable1[
-      (/* length */ scala.Double) | (/* arrayOrArrayBuffer */ ArrayLike[scala.Double]) | (/* arrayOrArrayBuffer */ ArrayBufferLike) | (/* elements */ Iterable[scala.Double]), 
+      (/* elements */ Iterable[scala.Double]) | (/* length */ scala.Double) | (/* arrayOrArrayBuffer */ ArrayLike[scala.Double]) | (/* arrayOrArrayBuffer */ ArrayBufferLike), 
       Uint16Array
     ] {
   /**

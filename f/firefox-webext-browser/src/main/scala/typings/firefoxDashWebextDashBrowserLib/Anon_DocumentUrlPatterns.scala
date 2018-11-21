@@ -62,6 +62,11 @@ trait Anon_DocumentUrlPatterns extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
   /** The type of menu item. Defaults to 'normal' if not specified. */
   var `type`: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ItemType] = js.undefined
+  /**
+           * List of view types where the menu item will be shown. Defaults to any view, including those without a
+           * viewType.
+           */
+  var viewTypes: js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType]] = js.undefined
   /** Whether the item is visible in the menu. */
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }

@@ -9,11 +9,6 @@ import scala.scalajs.js.annotation._
 trait ICalloutProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
   /**
-       * If true the positioning logic will prefer to flip edges rather than to nudge the rectangle to fit within bounds,
-       * thus making sure the element aligns perfectly with target's alignment edge
-       */
-  var alignTargetEdge: js.UndefOr[scala.Boolean] = js.undefined
-  /**
        * Defines the element id referencing the element containing the description for the callout.
        */
   var ariaDescribedBy: js.UndefOr[java.lang.String] = js.undefined
@@ -27,12 +22,12 @@ trait ICalloutProps
   var ariaLabelledBy: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The background color of the Callout in hex format ie. #ffffff.
-       * @defaultvalue $ms-color-white
+       * @default $ms-color-white
        */
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The width of the beak.
-       * @defaultvalue 16
+       * @default 16
        */
   var beakWidth: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -46,12 +41,12 @@ trait ICalloutProps
   var calloutMaxHeight: js.UndefOr[scala.Double] = js.undefined
   /**
        * Custom width for callout including borders. If value is 0, no width is applied.
-       * @defaultvalue 0
+       * @default 0
        */
   var calloutMaxWidth: js.UndefOr[scala.Double] = js.undefined
   /**
        * Custom width for callout including borders. If value is 0, no width is applied.
-       * @defaultvalue 0
+       * @default 0
        */
   var calloutWidth: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -62,18 +57,18 @@ trait ICalloutProps
   /**
        * If true the position returned will have the menu element cover the target.
        * If false then it will position next to the target;
-       * @defaultvalue false
+       * @default false
        */
   var coverTarget: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * How the element should be positioned
-       * @defaultvalue DirectionalHint.BottomAutoEdge
+       * @default DirectionalHint.BottomAutoEdge
        */
   var directionalHint: js.UndefOr[officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
   /**
        * If true the position will not change sides in an attempt to fit the callout within bounds.
        * It will still attempt to align it to whatever bounds are given.
-       * @defaultvalue false
+       * @default false
        */
   var directionalHintFixed: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -92,7 +87,7 @@ trait ICalloutProps
   var finalHeight: js.UndefOr[scala.Double] = js.undefined
   /**
        * The gap between the Callout and the target
-       * @defaultvalue 0
+       * @default 0
        */
   var gapSpace: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -102,18 +97,12 @@ trait ICalloutProps
   var hideOverflow: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * If true then the beak is visible. If false it will not be shown.
-       * @defaultvalue true
+       * @default true
        */
   var isBeakVisible: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Optional props to pass to the Layer component hosting the panel.
-       */
-  var layerProps: js.UndefOr[
-    officeDashUiDashFabricDashReactLib.libComponentsLayerLayerDotTypesMod.ILayerProps
-  ] = js.undefined
-  /**
        * The minimum distance the callout will be away from the edge of the screen.
-       *  @defaultvalue 8
+       *  @default 8
        */
   var minPagePadding: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -126,7 +115,7 @@ trait ICalloutProps
   var onLayerMounted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
        * Optional callback that is called once the callout has been correctly positioned.
-       * @param positions - Gives the user information about how the callout is positioned such as the
+       * @param {ICalloutPositionedInfo} positions gives the user information about how the callout is positioned such as the
        * final edge of the target that it positioned against, the beak position, and the beaks relationship to the
        * edges of the callout.
        */
@@ -145,12 +134,12 @@ trait ICalloutProps
   var onScroll_ICalloutProps: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
        * If true then the callout will not dismiss when it loses focus
-       * @defaultvalue false
+       * @default false
        */
   var preventDismissOnLostFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * If true then the callout will not dismiss on scroll
-       * @defaultvalue false
+       * @default false
        */
   var preventDismissOnScroll: js.UndefOr[scala.Boolean] = js.undefined
   /**

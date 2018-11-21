@@ -10,10 +10,15 @@ trait Config extends js.Object {
   var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined
   var auth: js.UndefOr[java.lang.String] = js.undefined
   var autoRewrite: js.UndefOr[scala.Boolean] = js.undefined
+  var buffer: js.UndefOr[nodeLib.streamMod.Readable] = js.undefined
   var changeOrigin: js.UndefOr[scala.Boolean] = js.undefined
   var cookieDomainRewrite: js.UndefOr[
     httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibNumbers.`false` | java.lang.String | ScalablyTyped.runtime.StringDictionary[java.lang.String]
   ] = js.undefined
+  var cookiePathRewrite: js.UndefOr[
+    httpDashProxyDashMiddlewareLib.httpDashProxyDashMiddlewareLibNumbers.`false` | java.lang.String | ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  ] = js.undefined
+  var followRedirects: js.UndefOr[scala.Boolean] = js.undefined
   var forward: js.UndefOr[java.lang.String] = js.undefined
   var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var hostRewrite: js.UndefOr[java.lang.String] = js.undefined
@@ -74,6 +79,7 @@ trait Config extends js.Object {
     ])
   ] = js.undefined
   var prependPath: js.UndefOr[scala.Boolean] = js.undefined
+  var preserveHeaderKeyCase: js.UndefOr[scala.Boolean] = js.undefined
   var protocolRewrite: js.UndefOr[java.lang.String] = js.undefined
   /**
        * @deprecated
@@ -88,8 +94,10 @@ trait Config extends js.Object {
     ScalablyTyped.runtime.StringDictionary[java.lang.String] | (js.Function1[/* req */ nodeLib.httpMod.IncomingMessage, java.lang.String])
   ] = js.undefined
   var secure: js.UndefOr[scala.Boolean] = js.undefined
+  var selfHandleResponse: js.UndefOr[scala.Boolean] = js.undefined
   var ssl: js.UndefOr[nodeLib.tlsMod.TlsOptions] = js.undefined
   var target: js.UndefOr[java.lang.String] = js.undefined
+  var timeout: js.UndefOr[scala.Double] = js.undefined
   var toProxy: js.UndefOr[scala.Boolean] = js.undefined
   var ws: js.UndefOr[scala.Boolean] = js.undefined
   var xfwd: js.UndefOr[scala.Boolean] = js.undefined

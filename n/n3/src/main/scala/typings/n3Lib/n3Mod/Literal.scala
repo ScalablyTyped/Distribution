@@ -15,10 +15,10 @@ class Literal protected ()
        */
   /* CompleteClass */
   override var datatype: rdfDashJsLib.rdfDashJsMod.NamedNode = js.native
-  var datatypeString: java.lang.String = js.native
+  val datatypeString: java.lang.String = js.native
   @JSName("datatype")
-  var datatype_Literal: NamedNode = js.native
-  var id: java.lang.String = js.native
+  val datatype_Literal: NamedNode = js.native
+  val id: java.lang.String = js.native
   /**
        * the language as lowercase BCP47 string (examples: en, en-gb)
        * or an empty string if the literal has no language.
@@ -32,7 +32,7 @@ class Literal protected ()
   /* CompleteClass */
   override var termType: rdfDashJsLib.rdfDashJsLibStrings.Literal = js.native
   @JSName("termType")
-  var termType_Literal: n3Lib.n3LibStrings.Literal = js.native
+  val termType_Literal: n3Lib.n3LibStrings.Literal = js.native
   /**
        * The text value, unescaped, without language or type (example: Brad Pitt).
        */

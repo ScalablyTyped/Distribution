@@ -298,7 +298,7 @@ object tabsNsMembers extends js.Object {
        */
   def hide(tabIds: scala.Double): stdLib.Promise[js.Array[scala.Double]] = js.native
   /** Highlights the given tabs. */
-  def highlight(highlightInfo: firefoxDashWebextDashBrowserLib.Anon_WindowIdTabs): stdLib.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.windowsNs.Window]] = js.native
+  def highlight(highlightInfo: firefoxDashWebextDashBrowserLib.Anon_WindowIdPopulate): stdLib.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.windowsNs.Window]] = js.native
   /**
        * Injects CSS into a page. For details, see the programmatic injection section of the content scripts doc.
        * @param details Details of the CSS text to insert.

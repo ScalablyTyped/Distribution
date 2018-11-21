@@ -1,5 +1,5 @@
 ```
-// Type definitions for flowdoc 1.0
+// Type definitions for flowdoc 1.1
 // Project: https://github.com/overflowapp/Flow
 // Definitions by: Stefan Mansson <https://github.com/animify>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

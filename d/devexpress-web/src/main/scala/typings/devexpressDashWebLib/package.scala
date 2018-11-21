@@ -48,6 +48,7 @@ package object devexpressDashWebLib {
    * A method that will handle the ButtonClick event.
    */
   type ASPxClientButtonEditClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientButtonEditClickEventArgs, scala.Unit]
+  type ASPxClientCalendarCellClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCalendarCellClickEventArgs, scala.Unit]
   /**
    * A method that will handle the client CustomDisabledDate event.
    */
@@ -74,6 +75,14 @@ package object devexpressDashWebLib {
   type ASPxClientCardViewBatchEditCardInsertingEventHandler[S] = js.Function2[
     /* source */ S, 
     /* e */ ASPxClientCardViewBatchEditCardInsertingEventArgs, 
+    scala.Unit
+  ]
+  /**
+   * A method that will handle the BatchEditCardRecovering event.
+   */
+  type ASPxClientCardViewBatchEditCardRecoveringEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientCardViewBatchEditCardRecoveringEventArgs, 
     scala.Unit
   ]
   /**
@@ -153,6 +162,7 @@ package object devexpressDashWebLib {
    * A method that will handle the FocusedCellChanging event.
    */
   type ASPxClientCardViewFocusedCellChangingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewFocusedCellChangingEventArgs, scala.Unit]
+  type ASPxClientCardViewGroupCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCardViewGroupCancelEventArgs, scala.Unit]
   /**
    * A method that will handle the SelectionChanged event.
    */
@@ -231,7 +241,6 @@ package object devexpressDashWebLib {
    * References a method that will handle the DashboardChanged event.
    */
   type ASPxClientDashboardChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardChangedEventArgs, scala.Unit]
-  type ASPxClientDashboardCustomizeMenuItemsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardCustomizeMenuItemsEventArgs, scala.Unit]
   /**
    * References a method that will handle the DataLoadingError event.
    */
@@ -248,9 +257,7 @@ package object devexpressDashWebLib {
    * References a method that will handle the DashboardEndUpdate event.
    */
   type ASPxClientDashboardEndUpdateEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardEndUpdateEventArgs, scala.Unit]
-  /**
-   * References a method that will handle the ItemBeforeWidgetDisposed events.
-   */
+  type ASPxClientDashboardInitializedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardInitializedEventArgs, scala.Unit]
   type ASPxClientDashboardItemBeforeWidgetDisposedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDashboardItemWidgetEventArgs, scala.Unit]
   /**
    * References a method that will handle the ItemCaptionToolbarUpdated event.
@@ -341,6 +348,18 @@ package object devexpressDashWebLib {
    * Represents the client-side equivalent of the DataSourceBasedErrorBars class.
    */
   type ASPxClientDataSourceBasedErrorBars = ASPxClientIndicator
+  type ASPxClientDateNavigatorDayCellCustomHighlightEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientDateNavigatorDayCellCustomHighlightEventArgs, 
+    scala.Unit
+  ]
+  type ASPxClientDateNavigatorSelectionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDateNavigatorSelectionChangedEventArgs, scala.Unit]
+  type ASPxClientDateNavigatorStatic = ASPxClientControlStatic
+  type ASPxClientDateNavigatorVisibleMonthChangedEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientDateNavigatorVisibleMonthChangedEventArgs, 
+    scala.Unit
+  ]
   /**
    * A method that will handle the client BeforeDock event.
    */
@@ -381,6 +400,7 @@ package object devexpressDashWebLib {
    * A JavaScript function which returns a value specifying whether an object meets the criteria defined within the method specified by this delegate.
    */
   type ASPxClientDockingFilterPredicate = js.Function1[/* item */ js.Object, scala.Boolean]
+  type ASPxClientDropDownCommandEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientDropDownCommandEventArgs, scala.Unit]
   type ASPxClientDropDownEditBaseStatic = ASPxClientButtonEditBaseStatic
   /**
    * References a method that will handle the DynamicLookUpValuesLoaded event.
@@ -551,6 +571,27 @@ package object devexpressDashWebLib {
    * A method that will handle the FlashScriptCommand event.
    */
   type ASPxClientFlashScriptCommandEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientFlashScriptCommandEventArgs, scala.Unit]
+  type ASPxClientFloatingActionButtonActionCollapsingEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientFloatingActionButtonActionCollapsingEventArgs, 
+    scala.Unit
+  ]
+  type ASPxClientFloatingActionButtonActionExpandingEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientFloatingActionButtonActionExpandingEventArgs, 
+    scala.Unit
+  ]
+  type ASPxClientFloatingActionButtonActionItemClickEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientFloatingActionButtonActionItemClickEventArgs, 
+    scala.Unit
+  ]
+  type ASPxClientFloatingActionButtonContextChangingEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientFloatingActionButtonContextChangingEventArgs, 
+    scala.Unit
+  ]
+  type ASPxClientFloatingActionButtonStatic = ASPxClientControlStatic
   /**
    * A method that will handle the BeginCallback event.
    */
@@ -604,6 +645,14 @@ package object devexpressDashWebLib {
    * A method that will handle the BatchEditRowInserting event.
    */
   type ASPxClientGridViewBatchEditRowInsertingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientGridViewBatchEditRowInsertingEventArgs, scala.Unit]
+  /**
+   * A method that will handle the BatchEditRowRecovering event.
+   */
+  type ASPxClientGridViewBatchEditRowRecoveringEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientGridViewBatchEditRowRecoveringEventArgs, 
+    scala.Unit
+  ]
   /**
    * A method that will handle the client BatchEditRowValidating event.
    */
@@ -801,6 +850,14 @@ package object devexpressDashWebLib {
    */
   type ASPxClientItemEndUpdateEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientItemEndUpdateEventArgs, scala.Unit]
   /**
+   * A method that will handle the CustomHighlighting events.
+   */
+  type ASPxClientListEditCustomHighlightingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientListEditCustomHighlightingEventArgs, scala.Unit]
+  /**
+   * A method that will handle the ItemFiltering events.
+   */
+  type ASPxClientListEditItemFilteringEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientListEditItemFilteringEventArgs, scala.Unit]
+  /**
    * A method that will handle the SelectedIndexChanged event.
    */
   type ASPxClientListEditItemSelectedChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientListEditItemSelectedChangedEventArgs, scala.Unit]
@@ -941,6 +998,11 @@ package object devexpressDashWebLib {
    * A method that will handle the CustomizeElements event.
    */
   type ASPxClientReportDesignerCustomizeElementsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeElementsEventArgs, scala.Unit]
+  type ASPxClientReportDesignerCustomizeFieldListActionsEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientReportDesignerCustomizeFieldListActionsEventArgs, 
+    scala.Unit
+  ]
   /**
    * A method that will handle the CustomizeLocalization event.
    */
@@ -1037,6 +1099,7 @@ package object devexpressDashWebLib {
     /* e */ ASPxClientReportDesignerSaveCommandExecuteEventArgs, 
     scala.Unit
   ]
+  type ASPxClientReportDesignerTabChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientReportDesignerTabEventArgs, scala.Unit]
   type ASPxClientReportDocumentMapStatic = ASPxClientControlStatic
   type ASPxClientReportParametersPanelStatic = ASPxClientControlStatic
   /**
@@ -1063,6 +1126,10 @@ package object devexpressDashWebLib {
    * A method that will handle the ActiveTabChanged event.
    */
   type ASPxClientRibbonTabEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRibbonTabEventArgs, scala.Unit]
+  /**
+   * A method that will handle the AutoCorrect event.
+   */
+  type ASPxClientRichEditAutoCorrectEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditAutoCorrectEventArgs, scala.Unit]
   /**
    * A method that will handle the CharacterPropertiesChanged event.
    */
@@ -1115,6 +1182,8 @@ package object devexpressDashWebLib {
    * A method that will handle the PopupMenuShowing event.
    */
   type ASPxClientRichEditPopupMenuShowingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientRichEditPopupMenuShowingEventArgs, scala.Unit]
+  type ASPxClientSchedulerStorageControlStatic = ASPxClientControlStatic
+  type ASPxClientSelectedTabPageChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSelectedTabPageChangedEventArgs, scala.Unit]
   /**
    * Represents the client-side equivalent of the SimpleDiagram class.
    */
@@ -1132,6 +1201,18 @@ package object devexpressDashWebLib {
    * A method that will handle the splitter's client events concerning manipulations with a pane.
    */
   type ASPxClientSplitterPaneEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSplitterPaneEventArgs, scala.Unit]
+  /**
+   * A method that will handle the CellBeginEdit event.
+   */
+  type ASPxClientSpreadsheetCellBeginEditEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetCellBeginEditEventArgs, scala.Unit]
+  /**
+   * A method that will handle the CellCancelEdit event.
+   */
+  type ASPxClientSpreadsheetCellCancelEditEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetCellCancelEditEventArgs, scala.Unit]
+  /**
+   * A method that will handle the CellEndEdit event.
+   */
+  type ASPxClientSpreadsheetCellEndEditEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetCellEndEditEventArgs, scala.Unit]
   /**
    * A method that will handle the CustomCommandExecuted event.
    */
@@ -1168,6 +1249,10 @@ package object devexpressDashWebLib {
    * A method that will handle the EndSynchronization events.
    */
   type ASPxClientSpreadsheetSynchronizationEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetSynchronizationEventArgs, scala.Unit]
+  /**
+   * A method that will handle the ViewModeChanged event.
+   */
+  type ASPxClientSpreadsheetViewModeChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSpreadsheetViewModeChangedEventArgs, scala.Unit]
   /**
    * Represents the client-side equivalent of the StandardErrorBars class.
    */
@@ -1221,6 +1306,74 @@ package object devexpressDashWebLib {
    */
   type ASPxClientTrackBarPositionChangingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTrackBarPositionChangingEventArgs, scala.Unit]
   /**
+   * A method that will handle the BatchEditChangesCanceling event.
+   */
+  type ASPxClientTreeListBatchEditChangesCancelingEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientTreeListBatchEditChangesCancelingEventArgs, 
+    scala.Unit
+  ]
+  /**
+   * A method that will handle the BatchEditChangesSaving event.
+   */
+  type ASPxClientTreeListBatchEditChangesSavingEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientTreeListBatchEditChangesSavingEventArgs, 
+    scala.Unit
+  ]
+  /**
+   * A method that will handle the BatchEditConfirmShowing event.
+   */
+  type ASPxClientTreeListBatchEditConfirmShowingEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientTreeListBatchEditConfirmShowingEventArgs, 
+    scala.Unit
+  ]
+  /**
+   * A method that will handle the BatchEditEndEditing event.
+   */
+  type ASPxClientTreeListBatchEditEndEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditEndEditingEventArgs, scala.Unit]
+  /**
+   * A method that will handle the BatchEditNodeDeleting event.
+   */
+  type ASPxClientTreeListBatchEditNodeDeletingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditNodeDeletingEventArgs, scala.Unit]
+  /**
+   * A method that will handle the BatchEditNodeInserting event.
+   */
+  type ASPxClientTreeListBatchEditNodeInsertingEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientTreeListBatchEditNodeInsertingEventArgs, 
+    scala.Unit
+  ]
+  /**
+   * A method that will handle the BatchEditNodeRecovering event.
+   */
+  type ASPxClientTreeListBatchEditNodeRecoveringEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientTreeListBatchEditNodeRecoveringEventArgs, 
+    scala.Unit
+  ]
+  /**
+   * A method that will handle the BatchEditNodeValidating event.
+   */
+  type ASPxClientTreeListBatchEditNodeValidatingEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientTreeListBatchEditNodeValidatingEventArgs, 
+    scala.Unit
+  ]
+  /**
+   * A method that will handle the BatchEditStartEditing event.
+   */
+  type ASPxClientTreeListBatchEditStartEditingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListBatchEditStartEditingEventArgs, scala.Unit]
+  /**
+   * A method that will handle the BatchEditTemplateCellFocused event.
+   */
+  type ASPxClientTreeListBatchEditTemplateCellFocusedEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientTreeListBatchEditTemplateCellFocusedEventArgs, 
+    scala.Unit
+  ]
+  /**
    * A method that will handle the client ColumnResized event.
    */
   type ASPxClientTreeListColumnResizedEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListColumnResizedEventArgs, scala.Unit]
@@ -1244,6 +1397,10 @@ package object devexpressDashWebLib {
    * A method that will handle the EndDragNode event.
    */
   type ASPxClientTreeListEndDragNodeEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListEndDragNodeEventArgs, scala.Unit]
+  /**
+   * A method that will handle the FocusedCellChanging event.
+   */
+  type ASPxClientTreeListFocusedCellChangingEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientTreeListFocusedCellChangingEventArgs, scala.Unit]
   /**
    * A method that will handle the NodeDblClick event.
    */
@@ -1402,6 +1559,14 @@ package object devexpressDashWebLib {
     scala.Unit
   ]
   /**
+   * A method that will handle the BatchEditRecordRecovering event.
+   */
+  type ASPxClientVerticalGridBatchEditRecordRecoveringEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ ASPxClientVerticalGridBatchEditRecordRecoveringEventArgs, 
+    scala.Unit
+  ]
+  /**
    * Represents an object that will handle the client-side BatchEditRecordValidating event.
    */
   type ASPxClientVerticalGridBatchEditRecordValidatingEventHandler[S] = js.Function2[
@@ -1494,6 +1659,7 @@ package object devexpressDashWebLib {
    * A method that will handle the CustomizeElements event.
    */
   type ASPxClientWebDocumentViewerCustomizeElementsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeElementsEventArgs, scala.Unit]
+  type ASPxClientWebDocumentViewerCustomizeExportOptionsEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientCustomizeExportOptionsEventArgs, scala.Unit]
   /**
    * A method that will handle the CustomizeLocalization event.
    */
@@ -1584,14 +1750,6 @@ package object devexpressDashWebLib {
    */
   type AppointmentsSelectionEventHandler[S] = js.Function2[/* source */ S, /* e */ AppointmentsSelectionEventArgs, scala.Unit]
   /**
-   * An extension that is a list of available data sources used to provide data to the Web Dashboard.
-   */
-  type AvailableDataSourcesExtension = IExtension
-  /**
-   * A Web Dashboard extension that is the dashboard item's Binding menu allowing you to create and modify data binding.
-   */
-  type BindingPanelExtension = IExtension
-  /**
    * A method that will handle the Accordion control's cancelable client events concerning manipulations with a group.
    */
   type BootstrapClientAccordionGroupCancelEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapClientAccordionGroupCancelEventArgs, scala.Unit]
@@ -1628,8 +1786,8 @@ package object devexpressDashWebLib {
   /**
    * Represents the client BootstrapCardView.
    */
-  type BootstrapClientCardView = ASPxClientGridView
-  type BootstrapClientCardViewStatic = ASPxClientGridViewStatic
+  type BootstrapClientCardView = ASPxClientCardView
+  type BootstrapClientCardViewStatic = ASPxClientCardViewStatic
   /**
    * A method that will handle the Done event.
    */
@@ -1691,16 +1849,14 @@ package object devexpressDashWebLib {
    * A method that will handle the SeriesSelectionChanged event.
    */
   type BootstrapClientCoordinateSystemChartSeriesSelectionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetElementActionEventArgs, scala.Unit]
-  /**
-   * Represents a client-side equivalent of the BootstrapDateEdit control.
-   */
-  type BootstrapClientDateEdit = ASPxClientDateEdit
   type BootstrapClientDateEditStatic = ASPxClientDateEditStatic
   /**
    * Represents a client-side equivalent of the BootstrapDropDownEdit control.
    */
   type BootstrapClientDropDownEdit = ASPxClientDropDownEdit
   type BootstrapClientDropDownEditStatic = ASPxClientDropDownEditStatic
+  type BootstrapClientFileManager = ASPxClientFileManager
+  type BootstrapClientFileManagerStatic = ASPxClientFileManagerStatic
   /**
    * Represents a client-side equivalent of the BootstrapFormLayout control.
    */
@@ -1782,6 +1938,13 @@ package object devexpressDashWebLib {
     /* e */ BootstrapClientRangeSelectorValueChangedEventArgs, 
     scala.Unit
   ]
+  type BootstrapClientRibbonStatic = ASPxClientRibbonStatic
+  type BootstrapClientRichEdit = ASPxClientRichEdit
+  type BootstrapClientRichEditStatic = ASPxClientRichEditStatic
+  type BootstrapClientSparklineOptionChangedEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetOptionChangedEventArgs, scala.Unit]
+  type BootstrapClientSparklineStatic = BootstrapUIWidgetBaseStatic
+  type BootstrapClientSparklineTooltipHiddenEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetEventArgsBase, scala.Unit]
+  type BootstrapClientSparklineTooltipShownEventHandler[S] = js.Function2[/* source */ S, /* e */ BootstrapUIWidgetEventArgsBase, scala.Unit]
   /**
    * Represents a client-side equivalent of the BootstrapSpinEdit control.
    */
@@ -1878,32 +2041,11 @@ package object devexpressDashWebLib {
   /**
    * A method that will handle the CellDoubleClick events.
    */
-  type CellClickEventHandler[S] = js.Function2[/* source */ S, /* e */ CellClickEventArgs, scala.Unit]
+  type CellClickEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSchedulerCellClickEventArgs, scala.Unit]
   /**
-   * A Web Dashboard extension that is the dashboard item's Convert To menu allowing you to convert or duplicate the current item.
+   * Contains floating pictures settings.
    */
-  type ConversionPanelExtension = IExtension
-  /**
-   * A Web Dashboard extension that allows you to configure color schemes.
-   */
-  type DashboardColorSchemeEditorExtension = IExtension
-  type DashboardCurrencyEditorExtension = IExtension
-  type DashboardExportExtension = IExtension
-  type DashboardItemMenuExtension = IExtension
-  /**
-   * A Web Dashboard extension that allows you to create and edit dashboard parameters.
-   */
-  type DashboardParameterEditorExtension = IExtension
-  /**
-   * A Web Dashboard extension that is the dashboard title editor.
-   */
-  type DashboardTitleEditorExtension = IExtension
-  type DataSourceBrowserExtension = IExtension
-  type DataSourceWizardExtension = IExtension
-  /**
-   * A Web Dashboard extension that is the dashboard item's Interactivity menu containing settings that affect on interaction between various dashboard items.
-   */
-  type InteractivityPanelExtension = IExtension
+  type FloatingPictureInfo = FloatingObjectInfo
   /**
    * A method that will handle the BeforeExportRequest event.
    */
@@ -1926,6 +2068,15 @@ package object devexpressDashWebLib {
    * A method that will handle the BeginCallback event.
    */
   type MVCxClientGlobalBeginCallbackEventHandler[S] = js.Function2[/* source */ S, /* e */ MVCxClientGlobalBeginCallbackEventArgs, scala.Unit]
+  /**
+   * A method that will handle the SaveCommandExecuted event.
+   */
+  type MVCxClientQueryBuilderSaveCommandExecutedEventHandler[S] = js.Function2[
+    /* source */ S, 
+    /* e */ MVCxClientQueryBuilderSaveCommandExecutedEventArgs, 
+    scala.Unit
+  ]
+  type MVCxClientQueryBuilderStatic = ASPxClientQueryBuilderStatic
   /**
    * A method that will handle the SaveCommandExecuted event.
    */
@@ -1958,13 +2109,11 @@ package object devexpressDashWebLib {
    */
   type MoreButtonClickedEventHandler[S] = js.Function2[/* source */ S, /* e */ MoreButtonClickedEventArgs, scala.Unit]
   /**
-   * A Web Dashboard extension that is the dashboard item's Options menu containing specific options and settings related to the current dashboard item.
+   * A method that will handle the ReminderAlert event.
    */
-  type OptionsPanelExtension = IExtension
+  type ReminderAlertEventHandler[S] = js.Function2[/* source */ S, /* e */ ASPxClientSchedulerStorageReminderAlertEventArgs, scala.Unit]
   /**
    * A method that will handle the Shortcut event.
    */
   type ShortcutEventHandler[S] = js.Function2[/* source */ S, /* e */ ShortcutEventArgs, scala.Unit]
-  type UrlStateExtension = IExtension
-  type ViewerApiExtension = IExtension
 }

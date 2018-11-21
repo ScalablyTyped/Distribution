@@ -139,7 +139,7 @@ trait ASPxClientScheduler extends ASPxClientControl {
        * Client-side function that removes the appointment specified by its client ID from a collection of selected appointments.
        * @param aptId An appointment's identifier.
        */
-  def DeselectAppointmentById(aptId: js.Object): scala.Unit = js.native
+  def DeselectAppointmentById(aptId: java.lang.String): scala.Unit = js.native
   /**
        * Client-side scripting  method that gets the active View.
        */
@@ -152,14 +152,15 @@ trait ASPxClientScheduler extends ASPxClientControl {
        * Client-side function that returns an appointment with the specified ID.
        * @param id An appointment's identifier.
        */
-  def GetAppointmentById(id: js.Object): ASPxClientAppointment = js.native
+  def GetAppointmentById(id: java.lang.String): ASPxClientAppointment = js.native
   /**
        * Enables obtaining appointment property values in a client-side script. Executes the callback command with the AppointmentData identifier.
-       * @param aptId An integer, representing the appointment ID.
+       * @param aptId A string, representing the appointment ID.
        * @param propertyNames An array of strings, representing the appointment properties to query.
-       * @param onCallBack A handler of a function which will receive and process the properties' values.
+       * @param onCallBack A handler of a function which will receive and process the property values.
        */
-  def GetAppointmentProperties(aptId: scala.Double, propertyNames: js.Array[java.lang.String], onCallBack: js.Object): js.Array[java.lang.String] = js.native
+  def GetAppointmentProperties(aptId: java.lang.String, propertyNames: js.Array[java.lang.String], onCallBack: js.Object): js.Array[java.lang.String] = js.native
+  def GetFloatingActionButton(): ASPxClientFloatingActionButton = js.native
   /**
        * Client-side function that returns the type of grouping applied to the appointments displayed in the scheduler.
        */
@@ -296,13 +297,13 @@ trait ASPxClientScheduler extends ASPxClientControl {
        * Client-side function that selects an appointment with the specified ID.
        * @param aptId An appointment's identifier.
        */
-  def SelectAppointmentById(aptId: js.Object): scala.Unit = js.native
+  def SelectAppointmentById(aptId: java.lang.String): scala.Unit = js.native
   /**
        * Selects the appointment with the specified ID.
-       * @param aptId An integer value specifying the appointment ID.
+       * @param aptId A string value specifying the appointment ID.
        * @param scrollToSelection true, to scroll to the selected appointment; otherwise, false.
        */
-  def SelectAppointmentById(aptId: js.Object, scrollToSelection: scala.Boolean): scala.Unit = js.native
+  def SelectAppointmentById(aptId: java.lang.String, scrollToSelection: scala.Boolean): scala.Unit = js.native
   /**
        * Client-side scripting  method to change the ASPxScheduler's active View.
        * @param value A ASPxSchedulerViewType enumeration value, representing a view type to set.
@@ -357,6 +358,11 @@ trait ASPxClientScheduler extends ASPxClientControl {
        * @param viewType An ASPxSchedulerViewType enumeration member, representing the scheduler's View. It can be either 'Day' or 'WorkWeek'.
        */
   def SetTopRowTime(duration: scala.Double, viewType: ASPxSchedulerViewType): scala.Unit = js.native
+  /**
+       * Sets whether the resources with specified IDs are visible.
+       * @param resourceIds An array of string values specifying the resources IDs.
+       */
+  def SetVisibleResources(resourceIds: js.Array[java.lang.String]): scala.Unit = js.native
   /**
        * Client-side function that invokes the editing form for the appointment specified by its client ID.
        * @param aptClientId A string, representing the appointment client identifier.

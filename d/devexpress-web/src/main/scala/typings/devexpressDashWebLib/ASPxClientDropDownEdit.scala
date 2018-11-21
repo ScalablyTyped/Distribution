@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 
 trait ASPxClientDropDownEdit extends ASPxClientDropDownEditBase {
   /**
+       * Allows you to handle a click on 'Ok' and 'Cancel' buttons in the drop-down arrow.
+       */
+  var DropDownCommandButtonClick: ASPxClientEvent[ASPxClientDropDownCommandEventHandler[ASPxClientDropDownEdit]]
+  /**
        * Obtains the key value associated with the text displayed within the editor's edit box.
        */
   def GetKeyValue(): java.lang.String

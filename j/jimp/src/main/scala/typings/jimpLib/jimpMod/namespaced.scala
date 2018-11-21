@@ -94,7 +94,7 @@ object namespaced extends js.Object {
   var VERTICAL_ALIGN_MIDDLE: jimpLib.jimpLibNumbers.`16` = js.native
   var VERTICAL_ALIGN_TOP: jimpLib.jimpLibNumbers.`8` = js.native
   // Functions
-  def appendConstructorOption[T /* <: js.Array[_] */](
+  def appendConstructorOption[T /* <: coreDashJsLib.Array[_] */](
     name: java.lang.String,
     test: js.Function1[/* repeated */T, scala.Boolean],
     run: js.ThisFunction3[

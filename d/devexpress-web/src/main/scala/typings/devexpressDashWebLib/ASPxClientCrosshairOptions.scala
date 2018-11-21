@@ -26,6 +26,11 @@ trait ASPxClientCrosshairOptions extends ASPxClientWebChartElement {
        */
   var groupHeaderPattern: java.lang.String
   /**
+       * Gets the value specifying how the Crosshair Cursor's lines snap to points when hovering on them.
+       * Value: The value that specifies how lines snap.
+       */
+  var linesMode: java.lang.String
+  /**
        * Gets a value that indicates whether a crosshair cursor argument line is shown for a series point on a diagram.
        * Value: true if a crosshair cursor argument line is displayed on a diagram;  otherwise, false.
        */

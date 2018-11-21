@@ -3,5 +3,5 @@
 // Project: https://github.com/shouldjs/sinon
 // Definitions by: AryloYeung <https://github.com/Arylo>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.0
 ```

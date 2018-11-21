@@ -13,7 +13,6 @@ trait IProjectConfig extends js.Object {
   val integrations: ProjectIntegrations
   var name: java.lang.String
   var pro_id: js.UndefOr[java.lang.String] = js.undefined
-  var root: js.UndefOr[java.lang.String] = js.undefined
   var ssl: js.UndefOr[ionicLib.Anon_Key] = js.undefined
   var `type`: js.UndefOr[ProjectType] = js.undefined
 }

@@ -20,13 +20,13 @@ trait LinuxConfiguration
        */
   val executableName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * The path to icon set directory or one png file, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory. The icon filename must contain the size (e.g. 32x32.png) of the icon.
+       * The path to icon set directory or one png file, relative to the [build resources](/configuration/configuration.md#MetadataDirectories-buildResources) or to the project directory. The icon filename must contain the size (e.g. 32x32.png) of the icon.
        * By default will be generated automatically based on the macOS icns file.
        */
   @JSName("icon")
   val icon_LinuxConfiguration: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The maintainer. Defaults to [author](/configuration/configuration#Metadata-author).
+       * The maintainer. Defaults to [author](/configuration/configuration.md#Metadata-author).
        */
   val maintainer: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
@@ -45,7 +45,7 @@ trait LinuxConfiguration
   @JSName("target")
   val target_LinuxConfiguration: js.UndefOr[appDashBuilderDashLibLib.outCoreMod.TargetConfigType] = js.undefined
   /**
-       * The vendor. Defaults to [author](/configuration/configuration#Metadata-author).
+       * The vendor. Defaults to [author](/configuration/configuration.md#Metadata-author).
        */
   val vendor: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }

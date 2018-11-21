@@ -13,5 +13,9 @@ class PropertyVersionInfo protected () extends VersionInfo {
   var availability: LifeCycle = js.native
   var isPublic: ModifierValueHistory = js.native
   var isRequired: ModifierValueHistory = js.native
+  def checkPropertyVersion(
+    property: mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _],
+    includeWarnings: scala.Boolean
+  ): scala.Unit = js.native
 }
 

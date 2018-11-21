@@ -15,6 +15,10 @@ trait ASPxClientRichEdit extends ASPxClientControl {
        */
   var ActiveSubDocumentChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientRichEdit]] = js.native
   /**
+       * Fires when text is typed in the control.
+       */
+  var AutoCorrect: ASPxClientEvent[ASPxClientRichEditAutoCorrectEventHandler[ASPxClientRichEdit]] = js.native
+  /**
        * Occurs when a callback for server-side processing is initiated.
        */
   var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientRichEdit]] = js.native

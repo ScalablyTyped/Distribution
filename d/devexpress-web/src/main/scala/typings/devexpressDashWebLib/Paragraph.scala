@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation._
 
 trait Paragraph extends js.Object {
   /**
+       * Gets the paragraph's index.
+       * Value: An integer value specifying the paragraph's index.
+       */
+  var index: scala.Double
+  /**
        * Gets the text buffer interval occupied by the current paragraph element.
        * Value: An <see cref="Interval" /> object specifying the interval settings.
        */

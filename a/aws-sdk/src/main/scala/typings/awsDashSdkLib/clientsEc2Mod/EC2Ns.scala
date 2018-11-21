@@ -151,39 +151,15 @@ object EC2Ns extends js.Object {
          */
     var PublicIp: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The ID of an address pool.
-         */
-    var PublicIpv4Pool: js.UndefOr[java.lang.String] = js.undefined
-    /**
          * Any tags assigned to the Elastic IP address.
          */
     var Tags: js.UndefOr[TagList] = js.undefined
   }
   
   
-  trait AdvertiseByoipCidrRequest extends js.Object {
-    /**
-         * The IPv4 address range, in CIDR notation.
-         */
-    var Cidr: java.lang.String
-    /**
-         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
-         */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-  }
-  
-  
-  trait AdvertiseByoipCidrResult extends js.Object {
-    /**
-         * Information about the address range.
-         */
-    var ByoipCidr: js.UndefOr[ByoipCidr] = js.undefined
-  }
-  
-  
   trait AllocateAddressRequest extends js.Object {
     /**
-         * [EC2-VPC] The Elastic IP address to recover or an IPv4 address from an address pool.
+         * [EC2-VPC] The Elastic IP address to recover.
          */
     var Address: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -194,10 +170,6 @@ object EC2Ns extends js.Object {
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-    /**
-         * The ID of an address pool that you own. Use this parameter to let Amazon EC2 select an address from the address pool. To specify a specific address from the address pool, use the Address parameter instead.
-         */
-    var PublicIpv4Pool: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -214,10 +186,6 @@ object EC2Ns extends js.Object {
          * The Elastic IP address.
          */
     var PublicIp: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * The ID of an address pool.
-         */
-    var PublicIpv4Pool: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -826,26 +794,6 @@ object EC2Ns extends js.Object {
   }
   
   
-  trait ByoipCidr extends js.Object {
-    /**
-         * The public IPv4 address range, in CIDR notation.
-         */
-    var Cidr: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * The description of the address range.
-         */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * The state of the address pool.
-         */
-    var State: js.UndefOr[ByoipCidrState] = js.undefined
-    /**
-         * Upon success, contains the ID of the address pool. Otherwise, contains an error message.
-         */
-    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
-  }
-  
-  
   trait CancelBundleTaskRequest extends js.Object {
     /**
          * The ID of the bundle task.
@@ -863,26 +811,6 @@ object EC2Ns extends js.Object {
          * Information about the bundle task.
          */
     var BundleTask: js.UndefOr[BundleTask] = js.undefined
-  }
-  
-  
-  trait CancelCapacityReservationRequest extends js.Object {
-    /**
-         * The ID of the Capacity Reservation to be cancelled.
-         */
-    var CapacityReservationId: java.lang.String
-    /**
-         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
-         */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-  }
-  
-  
-  trait CancelCapacityReservationResult extends js.Object {
-    /**
-         * Returns true if the request succeeds; otherwise, it returns an error.
-         */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   
@@ -1055,122 +983,6 @@ object EC2Ns extends js.Object {
          * The state of the Spot Instance request.
          */
     var State: js.UndefOr[CancelSpotInstanceRequestState] = js.undefined
-  }
-  
-  
-  trait CapacityReservation extends js.Object {
-    /**
-         * The Availability Zone in which the capacity is reserved.
-         */
-    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * The remaining capacity. Indicates the number of instances that can be launched in the Capacity Reservation.
-         */
-    var AvailableInstanceCount: js.UndefOr[Integer] = js.undefined
-    /**
-         * The ID of the Capacity Reservation.
-         */
-    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * The date and time at which the Capacity Reservation was created.
-         */
-    var CreateDate: js.UndefOr[DateTime] = js.undefined
-    /**
-         * Indicates whether the Capacity Reservation supports EBS-optimized instances. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS- optimized instance.
-         */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
-    /**
-         * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time.
-         */
-    var EndDate: js.UndefOr[DateTime] = js.undefined
-    /**
-         * Indicates the way in which the Capacity Reservation ends. A Capacity Reservation can have one of the following end types:    unlimited - The Capacity Reservation remains active until you explicitly cancel it.    limited - The Capacity Reservation expires automatically at a specified date and time.  
-         */
-    var EndDateType: js.UndefOr[EndDateType] = js.undefined
-    /**
-         * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
-         */
-    var EphemeralStorage: js.UndefOr[scala.Boolean] = js.undefined
-    /**
-         * Indicates the type of instance launches that the Capacity Reservation accepts. The options include:    open - The Capacity Reservation accepts all instances that have matching attributes (instance type, platform, and Availability Zone). Instances that have matching attributes launch into the Capacity Reservation automatically without specifying any additional parameters.    targeted - The Capacity Reservation only accepts instances that have matching attributes (instance type, platform, and Availability Zone), and explicitly target the Capacity Reservation. This ensures that only permitted instances can use the reserved capacity.   
-         */
-    var InstanceMatchCriteria: js.UndefOr[InstanceMatchCriteria] = js.undefined
-    /**
-         * The type of operating system for which the Capacity Reservation reserves capacity.
-         */
-    var InstancePlatform: js.UndefOr[CapacityReservationInstancePlatform] = js.undefined
-    /**
-         * The type of instance for which the Capacity Reservation reserves capacity.
-         */
-    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * The current state of the Capacity Reservation. A Capacity Reservation can be in one of the following states:    active - The Capacity Reservation is active and the capacity is available for your use.    cancelled - The Capacity Reservation expired automatically at the date and time specified in your request. The reserved capacity is no longer available for your use.    expired - The Capacity Reservation was manually cancelled. The reserved capacity is no longer available for your use.    pending - The Capacity Reservation request was successful but the capacity provisioning is still pending.    failed - The Capacity Reservation request has failed. A request might fail due to invalid request parameters, capacity constraints, or instance limit constraints. Failed requests are retained for 60 minutes.  
-         */
-    var State: js.UndefOr[CapacityReservationState] = js.undefined
-    /**
-         * Any tags assigned to the Capacity Reservation.
-         */
-    var Tags: js.UndefOr[TagList] = js.undefined
-    /**
-         * Indicates the tenancy of the Capacity Reservation. A Capacity Reservation can have one of the following tenancy settings:    default - The Capacity Reservation is created on hardware that is shared with other AWS accounts.    dedicated - The Capacity Reservation is created on single-tenant hardware that is dedicated to a single AWS account.  
-         */
-    var Tenancy: js.UndefOr[CapacityReservationTenancy] = js.undefined
-    /**
-         * The number of instances for which the Capacity Reservation reserves capacity.
-         */
-    var TotalInstanceCount: js.UndefOr[Integer] = js.undefined
-  }
-  
-  
-  trait CapacityReservationSpecification extends js.Object {
-    /**
-         * Indicates the instance's Capacity Reservation preferences. Possible preferences include:    open - The instance can run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).    none - The instance avoids running in a Capacity Reservation even if one is available. The instance runs as an On-Demand Instance.  
-         */
-    var CapacityReservationPreference: js.UndefOr[CapacityReservationPreference] = js.undefined
-    /**
-         * Information about the target Capacity Reservation.
-         */
-    var CapacityReservationTarget: js.UndefOr[CapacityReservationTarget] = js.undefined
-  }
-  
-  
-  trait CapacityReservationSpecificationResponse extends js.Object {
-    /**
-         * Describes the instance's Capacity Reservation preferences. Possible preferences include:    open - The instance can run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).    none - The instance avoids running in a Capacity Reservation even if one is available. The instance runs in On-Demand capacity.  
-         */
-    var CapacityReservationPreference: js.UndefOr[CapacityReservationPreference] = js.undefined
-    /**
-         * Information about the targeted Capacity Reservation.
-         */
-    var CapacityReservationTarget: js.UndefOr[CapacityReservationTargetResponse] = js.undefined
-  }
-  
-  
-  trait CapacityReservationTarget extends js.Object {
-    /**
-         * The ID of the Capacity Reservation.
-         */
-    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
-  }
-  
-  
-  trait CapacityReservationTargetResponse extends js.Object {
-    /**
-         * The ID of the Capacity Reservation.
-         */
-    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
-  }
-  
-  
-  trait CidrAuthorizationContext extends js.Object {
-    /**
-         * The plain-text authorization message for the prefix and account.
-         */
-    var Message: java.lang.String
-    /**
-         * The signed authorization message for the prefix and account.
-         */
-    var Signature: java.lang.String
   }
   
   
@@ -1495,70 +1307,6 @@ object EC2Ns extends js.Object {
          * The number of threads per CPU core. To disable Intel Hyper-Threading Technology for the instance, specify a value of 1. Otherwise, specify the default value of 2.
          */
     var ThreadsPerCore: js.UndefOr[Integer] = js.undefined
-  }
-  
-  
-  trait CreateCapacityReservationRequest extends js.Object {
-    /**
-         * The Availability Zone in which to create the Capacity Reservation.
-         */
-    var AvailabilityZone: java.lang.String
-    /**
-         * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency. Constraint: Maximum 64 ASCII characters.
-         */
-    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
-         */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-    /**
-         * Indicates whether the Capacity Reservation supports EBS-optimized instances. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS- optimized instance.
-         */
-    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
-    /**
-         * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time. You must provide an EndDate value if EndDateType is limited. Omit EndDate if EndDateType is unlimited. If the EndDateType is limited, the Capacity Reservation is cancelled within an hour from the specified time. For example, if you specify 5/31/2019, 13:30:55, the Capacity Reservation is guaranteed to end between 13:30:55 and 14:30:55 on 5/31/2019.
-         */
-    var EndDate: js.UndefOr[DateTime] = js.undefined
-    /**
-         * Indicates the way in which the Capacity Reservation ends. A Capacity Reservation can have one of the following end types:    unlimited - The Capacity Reservation remains active until you explicitly cancel it. Do not provide an EndDate if the EndDateType is unlimited.    limited - The Capacity Reservation expires automatically at a specified date and time. You must provide an EndDate value if the EndDateType value is limited.  
-         */
-    var EndDateType: js.UndefOr[EndDateType] = js.undefined
-    /**
-         * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
-         */
-    var EphemeralStorage: js.UndefOr[scala.Boolean] = js.undefined
-    /**
-         * The number of instances for which to reserve capacity.
-         */
-    var InstanceCount: Integer
-    /**
-         * Indicates the type of instance launches that the Capacity Reservation accepts. The options include:    open - The Capacity Reservation automatically matches all instances that have matching attributes (instance type, platform, and Availability Zone). Instances that have matching attributes run in the Capacity Reservation automatically without specifying any additional parameters.    targeted - The Capacity Reservation only accepts instances that have matching attributes (instance type, platform, and Availability Zone), and explicitly target the Capacity Reservation. This ensures that only permitted instances can use the reserved capacity.    Default: open 
-         */
-    var InstanceMatchCriteria: js.UndefOr[InstanceMatchCriteria] = js.undefined
-    /**
-         * The type of operating system for which to reserve capacity.
-         */
-    var InstancePlatform: CapacityReservationInstancePlatform
-    /**
-         * The instance type for which to reserve capacity. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.
-         */
-    var InstanceType: java.lang.String
-    /**
-         * The tags to apply to the Capacity Reservation during launch.
-         */
-    var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
-    /**
-         * Indicates the tenancy of the Capacity Reservation. A Capacity Reservation can have one of the following tenancy settings:    default - The Capacity Reservation is created on hardware that is shared with other AWS accounts.    dedicated - The Capacity Reservation is created on single-tenant hardware that is dedicated to a single AWS account.  
-         */
-    var Tenancy: js.UndefOr[CapacityReservationTenancy] = js.undefined
-  }
-  
-  
-  trait CreateCapacityReservationResult extends js.Object {
-    /**
-         * Information about the Capacity Reservation.
-         */
-    var CapacityReservation: js.UndefOr[CapacityReservation] = js.undefined
   }
   
   
@@ -2040,7 +1788,7 @@ object EC2Ns extends js.Object {
          */
     var Egress: scala.Boolean
     /**
-         * ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying protocol 1 (ICMP) or protocol 58 (ICMPv6) with an IPv6 CIDR block.
+         * ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying the ICMP protocol, or protocol 58 (ICMPv6) with an IPv6 CIDR block.
          */
     var IcmpTypeCode: js.UndefOr[IcmpTypeCode] = js.undefined
     /**
@@ -2052,11 +1800,11 @@ object EC2Ns extends js.Object {
          */
     var NetworkAclId: java.lang.String
     /**
-         * TCP or UDP protocols: The range of ports the rule applies to. Required if specifying protocol 6 (TCP) or 17 (UDP).
+         * TCP or UDP protocols: The range of ports the rule applies to.
          */
     var PortRange: js.UndefOr[PortRange] = js.undefined
     /**
-         * The protocol number. A value of "-1" means all protocols. If you specify "-1" or a protocol number other than "6" (TCP), "17" (UDP), or "1" (ICMP), traffic on all ports is allowed, regardless of any ports or ICMP types or codes that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
+         * The protocol. A value of -1 or all means all protocols. If you specify all, -1, or a protocol number other than 6 (tcp), 17 (udp), or 1 (icmp), traffic on all ports is allowed, regardless of any ports or ICMP types or codes that you specify. If you specify protocol 58 (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol 58 (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
          */
     var Protocol: java.lang.String
     /**
@@ -2396,7 +2144,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * The IDs of one or more resources, separated by spaces.
+         * The IDs of one or more resources to tag. For example, ami-1a2b3c4d.
          */
     var Resources: ResourceIdList
     /**
@@ -3224,7 +2972,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * The IDs of one or more resources, separated by spaces.
+         * The IDs of one or more resources.
          */
     var Resources: ResourceIdList
     /**
@@ -3374,26 +3122,6 @@ object EC2Ns extends js.Object {
   }
   
   
-  trait DeprovisionByoipCidrRequest extends js.Object {
-    /**
-         * The public IPv4 address range, in CIDR notation. The prefix must be the same prefix that you specified when you provisioned the address range.
-         */
-    var Cidr: java.lang.String
-    /**
-         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
-         */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-  }
-  
-  
-  trait DeprovisionByoipCidrResult extends js.Object {
-    /**
-         * Information about the address range.
-         */
-    var ByoipCidr: js.UndefOr[ByoipCidr] = js.undefined
-  }
-  
-  
   trait DeregisterImageRequest extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -3519,70 +3247,6 @@ object EC2Ns extends js.Object {
          * Information about one or more bundle tasks.
          */
     var BundleTasks: js.UndefOr[BundleTaskList] = js.undefined
-  }
-  
-  
-  trait DescribeByoipCidrsRequest extends js.Object {
-    /**
-         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
-         */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-    /**
-         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
-         */
-    var MaxResults: MaxResults
-    /**
-         * The token for the next page of results.
-         */
-    var NextToken: js.UndefOr[NextToken] = js.undefined
-  }
-  
-  
-  trait DescribeByoipCidrsResult extends js.Object {
-    /**
-         * Information about your address ranges.
-         */
-    var ByoipCidrs: js.UndefOr[ByoipCidrSet] = js.undefined
-    /**
-         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
-         */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
-  }
-  
-  
-  trait DescribeCapacityReservationsRequest extends js.Object {
-    /**
-         * The ID of the Capacity Reservation.
-         */
-    var CapacityReservationIds: js.UndefOr[CapacityReservationIdSet] = js.undefined
-    /**
-         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
-         */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-    /**
-         * One or more filters.
-         */
-    var Filters: js.UndefOr[FilterList] = js.undefined
-    /**
-         * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the returned nextToken value.
-         */
-    var MaxResults: js.UndefOr[Integer] = js.undefined
-    /**
-         * The token to retrieve the next page of results.
-         */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
-  }
-  
-  
-  trait DescribeCapacityReservationsResult extends js.Object {
-    /**
-         * Information about the Capacity Reservations.
-         */
-    var CapacityReservations: js.UndefOr[CapacityReservationSet] = js.undefined
-    /**
-         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
-         */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -4580,7 +4244,7 @@ object EC2Ns extends js.Object {
          */
     var MaxResults: js.UndefOr[Integer] = js.undefined
     /**
-         * The token for the next page of results.
+         * The token to use to retrieve the next page of results.
          */
     var NextToken: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -4855,34 +4519,6 @@ object EC2Ns extends js.Object {
          * Information about the ID format settings for the ARN.
          */
     var Principals: js.UndefOr[PrincipalIdFormatList] = js.undefined
-  }
-  
-  
-  trait DescribePublicIpv4PoolsRequest extends js.Object {
-    /**
-         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
-         */
-    var MaxResults: js.UndefOr[PoolMaxResults] = js.undefined
-    /**
-         * The token for the next page of results.
-         */
-    var NextToken: js.UndefOr[NextToken] = js.undefined
-    /**
-         * The IDs of the address pools.
-         */
-    var PoolIds: js.UndefOr[ValueStringList] = js.undefined
-  }
-  
-  
-  trait DescribePublicIpv4PoolsResult extends js.Object {
-    /**
-         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
-         */
-    var NextToken: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * Information about the address pools.
-         */
-    var PublicIpv4Pools: js.UndefOr[PublicIpv4PoolSet] = js.undefined
   }
   
   
@@ -8220,14 +7856,6 @@ object EC2Ns extends js.Object {
          */
     var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingList] = js.undefined
     /**
-         * The ID of the Capacity Reservation.
-         */
-    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * Information about the Capacity Reservation targeting option.
-         */
-    var CapacityReservationSpecification: js.UndefOr[CapacityReservationSpecificationResponse] = js.undefined
-    /**
          * The idempotency token you provided when you launched the instance, if applicable.
          */
     var ClientToken: js.UndefOr[java.lang.String] = js.undefined
@@ -9135,30 +8763,6 @@ object EC2Ns extends js.Object {
   }
   
   
-  trait LaunchTemplateCapacityReservationSpecificationRequest extends js.Object {
-    /**
-         * Indicates the instance's Capacity Reservation preferences. Possible preferences include:    open - The instance can run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).    none - The instance avoids running in a Capacity Reservation even if one is available. The instance runs in On-Demand capacity.  
-         */
-    var CapacityReservationPreference: js.UndefOr[CapacityReservationPreference] = js.undefined
-    /**
-         * Information about the target Capacity Reservation.
-         */
-    var CapacityReservationTarget: js.UndefOr[CapacityReservationTarget] = js.undefined
-  }
-  
-  
-  trait LaunchTemplateCapacityReservationSpecificationResponse extends js.Object {
-    /**
-         * Indicates the instance's Capacity Reservation preferences. Possible preferences include:    open - The instance can run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).    none - The instance avoids running in a Capacity Reservation even if one is available. The instance runs in On-Demand capacity.  
-         */
-    var CapacityReservationPreference: js.UndefOr[CapacityReservationPreference] = js.undefined
-    /**
-         * Information about the target Capacity Reservation.
-         */
-    var CapacityReservationTarget: js.UndefOr[CapacityReservationTargetResponse] = js.undefined
-  }
-  
-  
   trait LaunchTemplateConfig extends js.Object {
     /**
          * The launch template.
@@ -9683,38 +9287,6 @@ object EC2Ns extends js.Object {
   }
   
   
-  trait ModifyCapacityReservationRequest extends js.Object {
-    /**
-         * The ID of the Capacity Reservation.
-         */
-    var CapacityReservationId: java.lang.String
-    /**
-         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
-         */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-    /**
-         * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time. The Capacity Reservation is cancelled within an hour from the specified time. For example, if you specify 5/31/2019, 13:30:55, the Capacity Reservation is guaranteed to end between 13:30:55 and 14:30:55 on 5/31/2019. You must provide an EndDate value if EndDateType is limited. Omit EndDate if EndDateType is unlimited.
-         */
-    var EndDate: js.UndefOr[DateTime] = js.undefined
-    /**
-         * Indicates the way in which the Capacity Reservation ends. A Capacity Reservation can have one of the following end types:    unlimited - The Capacity Reservation remains active until you explicitly cancel it. Do not provide an EndDate value if EndDateType is unlimited.    limited - The Capacity Reservation expires automatically at a specified date and time. You must provide an EndDate value if EndDateType is limited.  
-         */
-    var EndDateType: js.UndefOr[EndDateType] = js.undefined
-    /**
-         * The number of instances for which to reserve capacity.
-         */
-    var InstanceCount: js.UndefOr[Integer] = js.undefined
-  }
-  
-  
-  trait ModifyCapacityReservationResult extends js.Object {
-    /**
-         * Information about the Capacity Reservation.
-         */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
-  }
-  
-  
   trait ModifyFleetRequest extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -9956,30 +9528,6 @@ object EC2Ns extends js.Object {
          * A new value for the attribute. Use only with the kernel, ramdisk, userData, disableApiTermination, or instanceInitiatedShutdownBehavior attribute.
          */
     var Value: js.UndefOr[java.lang.String] = js.undefined
-  }
-  
-  
-  trait ModifyInstanceCapacityReservationAttributesRequest extends js.Object {
-    /**
-         * Information about the Capacity Reservation targeting option.
-         */
-    var CapacityReservationSpecification: CapacityReservationSpecification
-    /**
-         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
-         */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-    /**
-         * The ID of the instance to be modified.
-         */
-    var InstanceId: java.lang.String
-  }
-  
-  
-  trait ModifyInstanceCapacityReservationAttributesResult extends js.Object {
-    /**
-         * Returns true if the request succeeds; otherwise, it returns an error.
-         */
-    var Return: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   
@@ -10661,7 +10209,7 @@ object EC2Ns extends js.Object {
          */
     var PortRange: js.UndefOr[PortRange] = js.undefined
     /**
-         * The protocol number. A value of "-1" means all protocols.
+         * The protocol. A value of -1 means all protocols.
          */
     var Protocol: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -11145,34 +10693,6 @@ object EC2Ns extends js.Object {
   }
   
   
-  trait ProvisionByoipCidrRequest extends js.Object {
-    /**
-         * The public IPv4 address range, in CIDR notation. The most specific prefix that you can specify is /24. The address range cannot overlap with another address range that you've brought to this or another region.
-         */
-    var Cidr: java.lang.String
-    /**
-         * A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP.
-         */
-    var CidrAuthorizationContext: js.UndefOr[CidrAuthorizationContext] = js.undefined
-    /**
-         * A description for the address range and the address pool.
-         */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
-         */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-  }
-  
-  
-  trait ProvisionByoipCidrResult extends js.Object {
-    /**
-         * Information about the address pool.
-         */
-    var ByoipCidr: js.UndefOr[ByoipCidr] = js.undefined
-  }
-  
-  
   trait ProvisionedBandwidth extends js.Object {
     /**
          * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
@@ -11194,50 +10714,6 @@ object EC2Ns extends js.Object {
          * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
          */
     var Status: js.UndefOr[java.lang.String] = js.undefined
-  }
-  
-  
-  trait PublicIpv4Pool extends js.Object {
-    /**
-         * A description of the address pool.
-         */
-    var Description: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * The address ranges.
-         */
-    var PoolAddressRanges: js.UndefOr[PublicIpv4PoolRangeSet] = js.undefined
-    /**
-         * The ID of the IPv4 address pool.
-         */
-    var PoolId: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * The total number of addresses.
-         */
-    var TotalAddressCount: js.UndefOr[Integer] = js.undefined
-    /**
-         * The total number of available addresses.
-         */
-    var TotalAvailableAddressCount: js.UndefOr[Integer] = js.undefined
-  }
-  
-  
-  trait PublicIpv4PoolRange extends js.Object {
-    /**
-         * The number of addresses in the range.
-         */
-    var AddressCount: js.UndefOr[Integer] = js.undefined
-    /**
-         * The number of available addresses in the range.
-         */
-    var AvailableAddressCount: js.UndefOr[Integer] = js.undefined
-    /**
-         * The first IP address in the range.
-         */
-    var FirstAddress: js.UndefOr[java.lang.String] = js.undefined
-    /**
-         * The last IP address in the range.
-         */
-    var LastAddress: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -11627,7 +11103,7 @@ object EC2Ns extends js.Object {
          */
     var Egress: scala.Boolean
     /**
-         * ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying protocol 1 (ICMP) or protocol 58 (ICMPv6) with an IPv6 CIDR block.
+         * ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying the ICMP (1) protocol, or protocol 58 (ICMPv6) with an IPv6 CIDR block.
          */
     var IcmpTypeCode: js.UndefOr[IcmpTypeCode] = js.undefined
     /**
@@ -11639,11 +11115,11 @@ object EC2Ns extends js.Object {
          */
     var NetworkAclId: java.lang.String
     /**
-         * TCP or UDP protocols: The range of ports the rule applies to. Required if specifying protocol 6 (TCP) or 17 (UDP).
+         * TCP or UDP protocols: The range of ports the rule applies to. Required if specifying TCP (6) or UDP (17) for the protocol.
          */
     var PortRange: js.UndefOr[PortRange] = js.undefined
     /**
-         * The protocol number. A value of "-1" means all protocols. If you specify "-1" or a protocol number other than "6" (TCP), "17" (UDP), or "1" (ICMP), traffic on all ports is allowed, regardless of any ports or ICMP types or codes that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
+         * The IP protocol. You can specify all or -1 to mean all protocols. If you specify all, -1, or a protocol number other than tcp, udp, or icmp, traffic on all ports is allowed, regardless of any ports or ICMP types or codes you that specify. If you specify protocol 58 (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol 58 (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
          */
     var Protocol: java.lang.String
     /**
@@ -11762,10 +11238,6 @@ object EC2Ns extends js.Object {
          * The block device mapping.  Supplying both a snapshot ID and an encryption value as arguments for block-device mapping results in an error. This is because only blank volumes can be encrypted on start, and these are not created from a snapshot. If a snapshot is the basis for the volume, it contains data by definition and its encryption status cannot be changed using this action. 
          */
     var BlockDeviceMappings: js.UndefOr[LaunchTemplateBlockDeviceMappingRequestList] = js.undefined
-    /**
-         * Information about the Capacity Reservation targeting option.
-         */
-    var CapacityReservationSpecification: js.UndefOr[LaunchTemplateCapacityReservationSpecificationRequest] = js.undefined
     /**
          * The CPU options for the instance. For more information, see Optimizing CPU Options in the Amazon Elastic Compute Cloud User Guide.
          */
@@ -12435,10 +11907,6 @@ object EC2Ns extends js.Object {
          */
     var BlockDeviceMappings: js.UndefOr[LaunchTemplateBlockDeviceMappingList] = js.undefined
     /**
-         * Information about the Capacity Reservation targeting option.
-         */
-    var CapacityReservationSpecification: js.UndefOr[LaunchTemplateCapacityReservationSpecificationResponse] = js.undefined
-    /**
          * The CPU options for the instance. For more information, see Optimizing CPU Options in the Amazon Elastic Compute Cloud User Guide.
          */
     var CpuOptions: js.UndefOr[LaunchTemplateCpuOptions] = js.undefined
@@ -12746,10 +12214,6 @@ object EC2Ns extends js.Object {
          * One or more block device mapping entries. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
          */
     var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingRequestList] = js.undefined
-    /**
-         * Information about the Capacity Reservation targeting option.
-         */
-    var CapacityReservationSpecification: js.UndefOr[CapacityReservationSpecification] = js.undefined
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraints: Maximum 64 ASCII characters
          */
@@ -13787,7 +13251,7 @@ object EC2Ns extends js.Object {
          */
     var ExcessCapacityTerminationPolicy: js.UndefOr[ExcessCapacityTerminationPolicy] = js.undefined
     /**
-         * The number of units fulfilled by this request compared to the set target capacity. You cannot set this value.
+         * The number of units fulfilled by this request compared to the set target capacity.
          */
     var FulfilledCapacity: js.UndefOr[Double] = js.undefined
     /**
@@ -14311,7 +13775,7 @@ object EC2Ns extends js.Object {
          */
     var Key: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The ID of the resource.
+         * The ID of the resource. For example, ami-1a2b3c4d.
          */
     var ResourceId: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -14541,40 +14005,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AcceptVpcPeeringConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
-       */
-    def advertiseByoipCidr(): awsDashSdkLib.libRequestMod.Request[AdvertiseByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
-       */
-    def advertiseByoipCidr(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ AdvertiseByoipCidrResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[AdvertiseByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
-       */
-    def advertiseByoipCidr(params: AdvertiseByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[AdvertiseByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
-       */
-    def advertiseByoipCidr(
-      params: AdvertiseByoipCidrRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ AdvertiseByoipCidrResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[AdvertiseByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
        */
     def allocateAddress(): awsDashSdkLib.libRequestMod.Request[AllocateAddressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
        */
     def allocateAddress(
       callback: js.Function2[
@@ -14584,11 +14019,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AllocateAddressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
        */
     def allocateAddress(params: AllocateAddressRequest): awsDashSdkLib.libRequestMod.Request[AllocateAddressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
        */
     def allocateAddress(
       params: AllocateAddressRequest,
@@ -14657,21 +14092,21 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssignIpv6AddressesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
+       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
        */
     def assignPrivateIpAddresses(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
+       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
        */
     def assignPrivateIpAddresses(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
+       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
        */
     def assignPrivateIpAddresses(params: AssignPrivateIpAddressesRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
+       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
        */
     def assignPrivateIpAddresses(
       params: AssignPrivateIpAddressesRequest,
@@ -15081,35 +14516,6 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CancelBundleTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
-       */
-    def cancelCapacityReservation(): awsDashSdkLib.libRequestMod.Request[CancelCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
-       */
-    def cancelCapacityReservation(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ CancelCapacityReservationResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[CancelCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
-       */
-    def cancelCapacityReservation(params: CancelCapacityReservationRequest): awsDashSdkLib.libRequestMod.Request[CancelCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
-       */
-    def cancelCapacityReservation(
-      params: CancelCapacityReservationRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ CancelCapacityReservationResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[CancelCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Cancels an active conversion task. The task can be the import of an instance or volume. The action removes all artifacts of the conversion, including a partially uploaded volume or instance. If the conversion is complete or is in the process of transferring the final disk image, the command fails and returns an exception. For more information, see Importing a Virtual Machine Using the Amazon EC2 CLI.
        */
     def cancelConversionTask(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -15375,35 +14781,6 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[CopySnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
-       */
-    def createCapacityReservation(): awsDashSdkLib.libRequestMod.Request[CreateCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
-       */
-    def createCapacityReservation(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ CreateCapacityReservationResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[CreateCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
-       */
-    def createCapacityReservation(params: CreateCapacityReservationRequest): awsDashSdkLib.libRequestMod.Request[CreateCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
-       */
-    def createCapacityReservation(
-      params: CreateCapacityReservationRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ CreateCapacityReservationResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[CreateCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
        */
@@ -17182,35 +16559,6 @@ object EC2Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
-       */
-    def deprovisionByoipCidr(): awsDashSdkLib.libRequestMod.Request[DeprovisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
-       */
-    def deprovisionByoipCidr(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DeprovisionByoipCidrResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DeprovisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
-       */
-    def deprovisionByoipCidr(params: DeprovisionByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[DeprovisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
-       */
-    def deprovisionByoipCidr(
-      params: DeprovisionByoipCidrRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DeprovisionByoipCidrResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DeprovisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Deregisters the specified AMI. After you deregister an AMI, it can't be used to launch new instances; however, it doesn't affect any instances that you've already launched from the AMI. You'll continue to incur usage costs for those instances until you terminate them. When you deregister an Amazon EBS-backed AMI, it doesn't affect the snapshot that was created for the root volume of the instance during the AMI creation process. When you deregister an instance store-backed AMI, it doesn't affect the files that you uploaded to Amazon S3 when you created the AMI.
        */
     def deregisterImage(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -17376,64 +16724,6 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeBundleTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
-       */
-    def describeByoipCidrs(): awsDashSdkLib.libRequestMod.Request[DescribeByoipCidrsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
-       */
-    def describeByoipCidrs(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DescribeByoipCidrsResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DescribeByoipCidrsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
-       */
-    def describeByoipCidrs(params: DescribeByoipCidrsRequest): awsDashSdkLib.libRequestMod.Request[DescribeByoipCidrsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
-       */
-    def describeByoipCidrs(
-      params: DescribeByoipCidrsRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DescribeByoipCidrsResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DescribeByoipCidrsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
-       */
-    def describeCapacityReservations(): awsDashSdkLib.libRequestMod.Request[DescribeCapacityReservationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
-       */
-    def describeCapacityReservations(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DescribeCapacityReservationsResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DescribeCapacityReservationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
-       */
-    def describeCapacityReservations(params: DescribeCapacityReservationsRequest): awsDashSdkLib.libRequestMod.Request[DescribeCapacityReservationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
-       */
-    def describeCapacityReservations(
-      params: DescribeCapacityReservationsRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DescribeCapacityReservationsResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DescribeCapacityReservationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Describes one or more of your linked EC2-Classic instances. This request only returns information about EC2-Classic instances linked to a VPC through ClassicLink. You cannot use this request to return information about other instances.
        */
@@ -18587,35 +17877,6 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribePrincipalIdFormatResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the specified IPv4 address pools.
-       */
-    def describePublicIpv4Pools(): awsDashSdkLib.libRequestMod.Request[DescribePublicIpv4PoolsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes the specified IPv4 address pools.
-       */
-    def describePublicIpv4Pools(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DescribePublicIpv4PoolsResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DescribePublicIpv4PoolsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes the specified IPv4 address pools.
-       */
-    def describePublicIpv4Pools(params: DescribePublicIpv4PoolsRequest): awsDashSdkLib.libRequestMod.Request[DescribePublicIpv4PoolsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Describes the specified IPv4 address pools.
-       */
-    def describePublicIpv4Pools(
-      params: DescribePublicIpv4PoolsRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DescribePublicIpv4PoolsResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DescribePublicIpv4PoolsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Describes one or more regions that are currently available to you. For a list of the regions supported by Amazon EC2, see Regions and Endpoints.
        */
     def describeRegions(): awsDashSdkLib.libRequestMod.Request[DescribeRegionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -19022,11 +18283,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeSpotFleetInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
+       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
        */
     def describeSpotFleetRequestHistory(): awsDashSdkLib.libRequestMod.Request[DescribeSpotFleetRequestHistoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
+       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
        */
     def describeSpotFleetRequestHistory(
       callback: js.Function2[
@@ -19036,11 +18297,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeSpotFleetRequestHistoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
+       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
        */
     def describeSpotFleetRequestHistory(params: DescribeSpotFleetRequestHistoryRequest): awsDashSdkLib.libRequestMod.Request[DescribeSpotFleetRequestHistoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
+       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
        */
     def describeSpotFleetRequestHistory(
       params: DescribeSpotFleetRequestHistoryRequest,
@@ -20478,35 +19739,6 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ImportVolumeResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
-       */
-    def modifyCapacityReservation(): awsDashSdkLib.libRequestMod.Request[ModifyCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
-       */
-    def modifyCapacityReservation(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ModifyCapacityReservationResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ModifyCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
-       */
-    def modifyCapacityReservation(params: ModifyCapacityReservationRequest): awsDashSdkLib.libRequestMod.Request[ModifyCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
-       */
-    def modifyCapacityReservation(
-      params: ModifyCapacityReservationRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ModifyCapacityReservationResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ModifyCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Modifies the specified EC2 Fleet. While the EC2 Fleet is being modified, it is in the modifying state.
        */
     def modifyFleet(): awsDashSdkLib.libRequestMod.Request[ModifyFleetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -20677,47 +19909,6 @@ object EC2Ns extends js.Object {
       params: ModifyInstanceAttributeRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
-       */
-    def modifyInstanceCapacityReservationAttributes(): awsDashSdkLib.libRequestMod.Request[
-        ModifyInstanceCapacityReservationAttributesResult, 
-        awsDashSdkLib.libErrorMod.AWSError
-      ] = js.native
-    /**
-       * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
-       */
-    def modifyInstanceCapacityReservationAttributes(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ModifyInstanceCapacityReservationAttributesResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[
-        ModifyInstanceCapacityReservationAttributesResult, 
-        awsDashSdkLib.libErrorMod.AWSError
-      ] = js.native
-    /**
-       * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
-       */
-    def modifyInstanceCapacityReservationAttributes(params: ModifyInstanceCapacityReservationAttributesRequest): awsDashSdkLib.libRequestMod.Request[
-        ModifyInstanceCapacityReservationAttributesResult, 
-        awsDashSdkLib.libErrorMod.AWSError
-      ] = js.native
-    /**
-       * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
-       */
-    def modifyInstanceCapacityReservationAttributes(
-      params: ModifyInstanceCapacityReservationAttributesRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ModifyInstanceCapacityReservationAttributesResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[
-        ModifyInstanceCapacityReservationAttributesResult, 
-        awsDashSdkLib.libErrorMod.AWSError
-      ] = js.native
     /**
        * Modifies the credit option for CPU usage on a running or stopped T2 or T3 instance. The credit options are standard and unlimited. For more information, see Burstable Performance Instances in the Amazon Elastic Compute Cloud User Guide.
        */
@@ -21229,35 +20420,6 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[MoveAddressToVpcResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
-       */
-    def provisionByoipCidr(): awsDashSdkLib.libRequestMod.Request[ProvisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
-       */
-    def provisionByoipCidr(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ProvisionByoipCidrResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ProvisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
-       */
-    def provisionByoipCidr(params: ProvisionByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[ProvisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
-       */
-    def provisionByoipCidr(
-      params: ProvisionByoipCidrRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ProvisionByoipCidrResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ProvisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Purchase a reservation with configurations that match those of your Dedicated Host. You must have active Dedicated Hosts in your account before you purchase a reservation. This action results in the specified reservation being purchased and charged to your account.
        */
@@ -23371,35 +22533,6 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
-       */
-    def withdrawByoipCidr(): awsDashSdkLib.libRequestMod.Request[WithdrawByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
-       */
-    def withdrawByoipCidr(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ WithdrawByoipCidrResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[WithdrawByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
-       */
-    def withdrawByoipCidr(params: WithdrawByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[WithdrawByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
-       */
-    def withdrawByoipCidr(
-      params: WithdrawByoipCidrRequest,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ WithdrawByoipCidrResult, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[WithdrawByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
   
@@ -24290,26 +23423,6 @@ object EC2Ns extends js.Object {
     var TunnelInsideCidr: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
-  trait WithdrawByoipCidrRequest extends js.Object {
-    /**
-         * The public IPv4 address range, in CIDR notation.
-         */
-    var Cidr: java.lang.String
-    /**
-         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
-         */
-    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
-  }
-  
-  
-  trait WithdrawByoipCidrResult extends js.Object {
-    /**
-         * Information about the address pool.
-         */
-    var ByoipCidr: js.UndefOr[ByoipCidr] = js.undefined
-  }
-  
   val TypesNs: this.type = js.native
   type AccountAttributeList = js.Array[AccountAttribute]
   type AccountAttributeName = awsDashSdkLib.awsDashSdkLibStrings.`supported-platforms` | awsDashSdkLib.awsDashSdkLibStrings.`default-vpc` | java.lang.String
@@ -24339,19 +23452,11 @@ object EC2Ns extends js.Object {
   type BundleIdStringList = js.Array[java.lang.String]
   type BundleTaskList = js.Array[BundleTask]
   type BundleTaskState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.`waiting-for-shutdown` | awsDashSdkLib.awsDashSdkLibStrings.bundling | awsDashSdkLib.awsDashSdkLibStrings.storing | awsDashSdkLib.awsDashSdkLibStrings.cancelling | awsDashSdkLib.awsDashSdkLibStrings.complete | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
-  type ByoipCidrSet = js.Array[ByoipCidr]
-  type ByoipCidrState = awsDashSdkLib.awsDashSdkLibStrings.advertised | awsDashSdkLib.awsDashSdkLibStrings.deprovisioned | awsDashSdkLib.awsDashSdkLibStrings.`failed-deprovision` | awsDashSdkLib.awsDashSdkLibStrings.`failed-provision` | awsDashSdkLib.awsDashSdkLibStrings.`pending-deprovision` | awsDashSdkLib.awsDashSdkLibStrings.`pending-provision` | awsDashSdkLib.awsDashSdkLibStrings.provisioned | java.lang.String
   type CancelBatchErrorCode = awsDashSdkLib.awsDashSdkLibStrings.fleetRequestIdDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestIdMalformed | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestNotInCancellableState | awsDashSdkLib.awsDashSdkLibStrings.unexpectedError | java.lang.String
   type CancelSpotFleetRequestsErrorSet = js.Array[CancelSpotFleetRequestsErrorItem]
   type CancelSpotFleetRequestsSuccessSet = js.Array[CancelSpotFleetRequestsSuccessItem]
   type CancelSpotInstanceRequestState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.closed | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.completed | java.lang.String
   type CancelledSpotInstanceRequestList = js.Array[CancelledSpotInstanceRequest]
-  type CapacityReservationIdSet = js.Array[java.lang.String]
-  type CapacityReservationInstancePlatform = awsDashSdkLib.awsDashSdkLibStrings.`Linux/UNIX` | (awsDashSdkLib.awsDashSdkLibStrings.`Red Hat Enterprise Linux`) | (awsDashSdkLib.awsDashSdkLibStrings.`SUSE Linux`) | awsDashSdkLib.awsDashSdkLibStrings.Windows | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Enterprise`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Standard`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Web`) | java.lang.String
-  type CapacityReservationPreference = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.none | java.lang.String
-  type CapacityReservationSet = js.Array[CapacityReservation]
-  type CapacityReservationState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.expired | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
-  type CapacityReservationTenancy = awsDashSdkLib.awsDashSdkLibStrings.default | awsDashSdkLib.awsDashSdkLibStrings.dedicated | java.lang.String
   type CidrBlockSet = js.Array[CidrBlock]
   type ClassicLinkDnsSupportList = js.Array[ClassicLinkDnsSupport]
   type ClassicLinkInstanceList = js.Array[ClassicLinkInstance]
@@ -24397,7 +23502,6 @@ object EC2Ns extends js.Object {
   type ElasticGpuSpecifications = js.Array[ElasticGpuSpecification]
   type ElasticGpuState = awsDashSdkLib.awsDashSdkLibStrings.ATTACHED | java.lang.String
   type ElasticGpuStatus = awsDashSdkLib.awsDashSdkLibStrings.OK | awsDashSdkLib.awsDashSdkLibStrings.IMPAIRED | java.lang.String
-  type EndDateType = awsDashSdkLib.awsDashSdkLibStrings.unlimited | awsDashSdkLib.awsDashSdkLibStrings.limited | java.lang.String
   type EventCode = awsDashSdkLib.awsDashSdkLibStrings.`instance-reboot` | awsDashSdkLib.awsDashSdkLibStrings.`system-reboot` | awsDashSdkLib.awsDashSdkLibStrings.`system-maintenance` | awsDashSdkLib.awsDashSdkLibStrings.`instance-retirement` | awsDashSdkLib.awsDashSdkLibStrings.`instance-stop` | java.lang.String
   type EventType = awsDashSdkLib.awsDashSdkLibStrings.instanceChange | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestChange | awsDashSdkLib.awsDashSdkLibStrings.error | java.lang.String
   type ExcessCapacityTerminationPolicy = awsDashSdkLib.awsDashSdkLibStrings.noTermination | awsDashSdkLib.awsDashSdkLibStrings.default | java.lang.String
@@ -24469,7 +23573,6 @@ object EC2Ns extends js.Object {
   type InstanceIpv6AddressListRequest = js.Array[InstanceIpv6AddressRequest]
   type InstanceLifecycleType = awsDashSdkLib.awsDashSdkLibStrings.spot | awsDashSdkLib.awsDashSdkLibStrings.scheduled | java.lang.String
   type InstanceList = js.Array[Instance]
-  type InstanceMatchCriteria = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.targeted | java.lang.String
   type InstanceMonitoringList = js.Array[InstanceMonitoring]
   type InstanceNetworkInterfaceList = js.Array[InstanceNetworkInterface]
   type InstanceNetworkInterfaceSpecificationList = js.Array[InstanceNetworkInterfaceSpecification]
@@ -24552,7 +23655,6 @@ object EC2Ns extends js.Object {
   type PlacementGroupStringList = js.Array[java.lang.String]
   type PlacementStrategy = awsDashSdkLib.awsDashSdkLibStrings.cluster | awsDashSdkLib.awsDashSdkLibStrings.spread | java.lang.String
   type PlatformValues = awsDashSdkLib.awsDashSdkLibStrings.Windows | java.lang.String
-  type PoolMaxResults = scala.Double
   type PrefixListIdList = js.Array[PrefixListId]
   type PrefixListIdSet = js.Array[java.lang.String]
   type PrefixListSet = js.Array[PrefixList]
@@ -24570,8 +23672,6 @@ object EC2Ns extends js.Object {
   type ProductDescriptionList = js.Array[java.lang.String]
   type PropagatingVgwList = js.Array[PropagatingVgw]
   type PublicIpStringList = js.Array[java.lang.String]
-  type PublicIpv4PoolRangeSet = js.Array[PublicIpv4PoolRange]
-  type PublicIpv4PoolSet = js.Array[PublicIpv4Pool]
   type PurchaseRequestSet = js.Array[PurchaseRequest]
   type PurchaseSet = js.Array[Purchase]
   type PurchasedScheduledInstanceSet = js.Array[ScheduledInstance]

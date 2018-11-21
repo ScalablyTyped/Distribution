@@ -120,8 +120,26 @@ object pkiNs extends js.Object {
   
   
   trait KeyPair extends js.Object {
-    var privateKey: Key
-    var publicKey: Key
+    var privateKey: PrivateKey
+    var publicKey: PublicKey
+  }
+  
+  @js.native
+  trait PrivateKey extends js.Object {
+    def decrypt(data: java.lang.String): java.lang.String = js.native
+    def decrypt(data: java.lang.String, scheme: java.lang.String): java.lang.String = js.native
+    def decrypt(data: java.lang.String, scheme: java.lang.String, schemeOptions: scala.Double): java.lang.String = js.native
+    def sign(md: java.lang.String): nodeDashForgeLib.nodeDashForgeMod.Bytes = js.native
+    def sign(md: java.lang.String, scheme: java.lang.String): nodeDashForgeLib.nodeDashForgeMod.Bytes = js.native
+  }
+  
+  @js.native
+  trait PublicKey extends js.Object {
+    def encrypt(data: java.lang.String): nodeDashForgeLib.nodeDashForgeMod.Bytes = js.native
+    def encrypt(data: java.lang.String, scheme: java.lang.String): nodeDashForgeLib.nodeDashForgeMod.Bytes = js.native
+    def encrypt(data: java.lang.String, scheme: java.lang.String, schemeOptions: scala.Double): nodeDashForgeLib.nodeDashForgeMod.Bytes = js.native
+    def verify(digest: java.lang.String, signature: java.lang.String): scala.Boolean = js.native
+    def verify(digest: java.lang.String, signature: java.lang.String, scheme: java.lang.String): scala.Boolean = js.native
   }
   
   
@@ -146,15 +164,15 @@ object pkiNs extends js.Object {
   def decryptRsaPrivateKey(pem: PEM): Key = js.native
   def decryptRsaPrivateKey(pem: PEM, passphrase: java.lang.String): Key = js.native
   def pemToDer(pem: PEM): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteStringBuffer = js.native
-  def privateKeyFromPem(pem: PEM): Key = js.native
-  def privateKeyInfoToPem(key: Key): PEM = js.native
-  def privateKeyInfoToPem(key: Key, maxline: scala.Double): PEM = js.native
-  def privateKeyToPem(key: Key): PEM = js.native
-  def privateKeyToPem(key: Key, maxline: scala.Double): PEM = js.native
-  def publicKeyFromPem(pem: PEM): Key = js.native
+  def privateKeyFromPem(pem: PEM): PrivateKey = js.native
+  def privateKeyInfoToPem(key: PrivateKey): PEM = js.native
+  def privateKeyInfoToPem(key: PrivateKey, maxline: scala.Double): PEM = js.native
+  def privateKeyToPem(key: PrivateKey): PEM = js.native
+  def privateKeyToPem(key: PrivateKey, maxline: scala.Double): PEM = js.native
+  def publicKeyFromPem(pem: PEM): PublicKey = js.native
   def publicKeyToAsn1(publicKey: Key): js.Any = js.native
-  def publicKeyToPem(key: Key): PEM = js.native
-  def publicKeyToPem(key: Key, maxline: scala.Double): PEM = js.native
+  def publicKeyToPem(key: PublicKey): PEM = js.native
+  def publicKeyToPem(key: PublicKey, maxline: scala.Double): PEM = js.native
   def publicKeyToRSAPublicKey(publicKey: Key): js.Any = js.native
   @JSName("ed25519")
   @js.native
@@ -162,8 +180,8 @@ object pkiNs extends js.Object {
     def generateKeyPair(): nodeDashForgeLib.Anon_PublicKey = js.native
     def generateKeyPair(options: nodeDashForgeLib.Anon_Seed): nodeDashForgeLib.Anon_PublicKey = js.native
     def publicKeyFromPrivateKey(options: nodeDashForgeLib.Anon_PrivateKey): NativeBuffer = js.native
-    def sign(options: nodeDashForgeLib.Anon_PrivateKey): NativeBuffer = js.native
-    def verify(options: nodeDashForgeLib.Anon_PublicKeySignature): scala.Boolean = js.native
+    def sign(options: nodeDashForgeLib.Anon_Encoding): NativeBuffer = js.native
+    def verify(options: nodeDashForgeLib.Anon_PublicKeyEncoding): scala.Boolean = js.native
     @JSName("constants")
     @js.native
     object constantsNs extends js.Object {

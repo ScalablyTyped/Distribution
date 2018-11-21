@@ -42,5 +42,9 @@ trait Options extends js.Object {
            * when set to true, JSON parser will only accept arrays and objects. Default is true
            */
   var strict: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+           * limit of the text body. Default is 1mb.
+           */
+  var textLimit: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -1,14 +1,14 @@
 organization := "com.scalablytyped"
 name := "amplify-deferred"
-version := "1.1-dt-20181102Z-bb85a5"
+version := "1.1-dt-20180910Z-c3f505"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "amplify" % "1.1-dt-20181102Z-4f5d92",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181102Z-ef9974",
-  "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181102Z-6214b8",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "amplify" % "1.1-dt-20180910Z-a7de7a",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-c6ff09",
+  "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-99baa3",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -10,6 +10,6 @@ trait Document extends js.Object {
   var children: js.Array[Page]
   var id: java.lang.String
   var name: java.lang.String
-  var `type`: Type
+  var `type`: flowdocLib.flowdocLibStrings.DOCUMENT
 }
 

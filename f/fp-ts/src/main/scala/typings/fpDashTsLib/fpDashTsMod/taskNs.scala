@@ -26,8 +26,7 @@ object taskNs extends js.Object {
     /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
     fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTaskMod.Task[js.Any]]
   ] = js.native
-  val task: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[fpDashTsLib.libTaskMod.URI] = js.native
-  val taskSeq: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadIOMod.MonadIO1[fpDashTsLib.libTaskMod.URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[fpDashTsLib.libTaskMod.URI] = js.native
+  val task: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTaskMod.URI] = js.native
   val tryCatch: js.Function2[
     /* f */ fpDashTsLib.libFunctionMod.Lazy[stdLib.Promise[js.Any]], 
     /* onrejected */ js.Function1[/* reason */ js.Object, js.Any], 

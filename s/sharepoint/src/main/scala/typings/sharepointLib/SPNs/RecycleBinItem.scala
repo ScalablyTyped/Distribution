@@ -11,7 +11,7 @@ class RecycleBinItem () extends ClientObject {
   def deleteObject(): scala.Unit = js.native
   def get_author(): User = js.native
   def get_deletedBy(): User = js.native
-  def get_deletedDate(): stdLib.Date = js.native
+  def get_deletedDate(): microsoftDashAjaxLib.Date = js.native
   def get_dirName(): java.lang.String = js.native
   def get_id(): Guid = js.native
   def get_itemState(): RecycleBinItemState = js.native

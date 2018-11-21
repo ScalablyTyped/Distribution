@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "param-case"
-version := "2.1.1-d2ad2a"
+version := "2.1.1-f40517"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "lower-case" % "1.1.4-7a65c7",
-  "com.scalablytyped" %%% "no-case" % "2.3.2-aaaa3f",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "lower-case" % "1.1.4-c49888",
+  "com.scalablytyped" %%% "no-case" % "2.3.2-99e2c6",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

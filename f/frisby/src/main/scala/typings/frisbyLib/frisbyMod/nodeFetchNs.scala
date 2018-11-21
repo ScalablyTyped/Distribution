@@ -29,7 +29,7 @@ object nodeFetchNs extends js.Object {
   class Headers ()
     extends nodeDashFetchLib.nodeDashFetchMod.Headers {
     def this(init: ScalablyTyped.runtime.StringDictionary[java.lang.String]) = this()
-    def this(init: nodeDashFetchLib.nodeDashFetchMod.fetchNs.Headers) = this()
+    def this(init: nodeDashFetchLib.nodeDashFetchMod.Headers) = this()
   }
   
   @js.native
@@ -37,23 +37,30 @@ object nodeFetchNs extends js.Object {
     extends nodeDashFetchLib.nodeDashFetchMod.Request {
     def this(input: java.lang.String) = this()
     def this(input: nodeDashFetchLib.Anon_Href) = this()
-    def this(input: nodeDashFetchLib.nodeDashFetchMod.fetchNs.Request) = this()
-    def this(input: java.lang.String, init: nodeDashFetchLib.nodeDashFetchMod.fetchNs.RequestInit) = this()
-    def this(input: nodeDashFetchLib.Anon_Href, init: nodeDashFetchLib.nodeDashFetchMod.fetchNs.RequestInit) = this()
-    def this(input: nodeDashFetchLib.nodeDashFetchMod.fetchNs.Request, init: nodeDashFetchLib.nodeDashFetchMod.fetchNs.RequestInit) = this()
+    def this(input: nodeDashFetchLib.nodeDashFetchMod.Request) = this()
+    def this(input: java.lang.String, init: nodeDashFetchLib.nodeDashFetchMod.RequestInit) = this()
+    def this(input: nodeDashFetchLib.Anon_Href, init: nodeDashFetchLib.nodeDashFetchMod.RequestInit) = this()
+    def this(input: nodeDashFetchLib.nodeDashFetchMod.Request, init: nodeDashFetchLib.nodeDashFetchMod.RequestInit) = this()
   }
   
   @js.native
   class Response ()
     extends nodeDashFetchLib.nodeDashFetchMod.Response {
-    def this(body: nodeDashFetchLib.nodeDashFetchMod.fetchNs.BodyInit) = this()
-    def this(body: nodeDashFetchLib.nodeDashFetchMod.fetchNs.BodyInit, init: nodeDashFetchLib.nodeDashFetchMod.fetchNs.ResponseInit) = this()
+    def this(body: nodeDashFetchLib.nodeDashFetchMod.BodyInit) = this()
+    def this(body: nodeDashFetchLib.nodeDashFetchMod.BodyInit, init: nodeDashFetchLib.nodeDashFetchMod.ResponseInit) = this()
   }
   
+  def default(url: java.lang.String): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
+  def default(url: java.lang.String, init: nodeDashFetchLib.nodeDashFetchMod.RequestInit): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
+  def default(url: nodeDashFetchLib.nodeDashFetchMod.Request): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
+  def default(
+    url: nodeDashFetchLib.nodeDashFetchMod.Request,
+    init: nodeDashFetchLib.nodeDashFetchMod.RequestInit
+  ): stdLib.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
   @js.native
   object Response extends js.Object {
-    def error(): nodeDashFetchLib.nodeDashFetchMod.fetchNs.Response = js.native
-    def redirect(url: java.lang.String, status: scala.Double): nodeDashFetchLib.nodeDashFetchMod.fetchNs.Response = js.native
+    def error(): nodeDashFetchLib.nodeDashFetchMod.Response = js.native
+    def redirect(url: java.lang.String, status: scala.Double): nodeDashFetchLib.nodeDashFetchMod.Response = js.native
   }
   
 }

@@ -20,5 +20,6 @@ trait Anon_MediaType extends js.Object {
   var selectionText: js.UndefOr[java.lang.String] = js.undefined
   var srcUrl: js.UndefOr[java.lang.String] = js.undefined
   var targetElementId: js.UndefOr[scala.Double] = js.undefined
+  var viewType: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType] = js.undefined
 }
 

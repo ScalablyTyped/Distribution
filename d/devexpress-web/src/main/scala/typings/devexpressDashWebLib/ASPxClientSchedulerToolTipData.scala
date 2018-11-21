@@ -21,6 +21,6 @@ trait ASPxClientSchedulerToolTipData extends js.Object {
   /**
        * Returns the resources associated with the appointment for which the tooltip is displayed.
        */
-  def GetResources(): js.Array[js.Object]
+  def GetResources(): js.Array[java.lang.String]
 }
 

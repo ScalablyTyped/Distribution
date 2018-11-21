@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "hyperloris__tyson"
-version := "1.3.0-9392e0"
+version := "1.3.0-e1336e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "reflect-metadata" % "0.1.12-e6fdf7",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "reflect-metadata" % "0.1.12-221493",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

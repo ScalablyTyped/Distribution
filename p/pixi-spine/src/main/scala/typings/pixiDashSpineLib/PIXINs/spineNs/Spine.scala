@@ -36,7 +36,7 @@ class Spine protected ()
     attachment: pixiDashSpineLib.PIXINs.spineNs.coreNs.RegionAttachment,
     defName: java.lang.String
   ): SpineSprite = js.native
-  def hackAttachmentGroups(nameSuffix: java.lang.String, group: js.Any, outGroup: js.Any): js.Array[js.Array[_]] = js.native
+  def hackAttachmentGroups(nameSuffix: java.lang.String, group: js.Any): js.Array[_] = js.native
   def hackTextureBySlotIndex(slotIndex: scala.Double): scala.Boolean = js.native
   def hackTextureBySlotIndex(slotIndex: scala.Double, texture: pixiDotJsLib.PIXINs.Texture): scala.Boolean = js.native
   def hackTextureBySlotIndex(slotIndex: scala.Double, texture: pixiDotJsLib.PIXINs.Texture, size: pixiDotJsLib.PIXINs.Rectangle): scala.Boolean = js.native

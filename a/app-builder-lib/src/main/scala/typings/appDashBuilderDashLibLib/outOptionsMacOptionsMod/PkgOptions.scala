@@ -37,7 +37,7 @@ trait PkgOptions
        */
   val hasStrictIdentifier: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
   /**
-       * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](/code-signing) instead of specifying this option.
+       * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](../code-signing.md) instead of specifying this option.
        */
   val identity: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

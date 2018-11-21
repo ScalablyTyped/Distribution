@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 
 trait SFCDescriptor extends js.Object {
   var customBlocks: js.Array[SFCCustomBlock]
-  var script: SFCBlock | scala.Null
+  var script: js.UndefOr[SFCBlock] = js.undefined
   var styles: js.Array[SFCBlock]
-  var template: SFCBlock | scala.Null
+  var template: js.UndefOr[SFCBlock] = js.undefined
 }
 

@@ -22,6 +22,7 @@ object UUID extends js.Object {
   def check(uuid: nodeLib.Buffer): builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibNumbers.`false` | builderDashUtilDashRuntimeLib.Anon_Variant | builderDashUtilDashRuntimeLib.Anon_VariantFormat = js.native
   def check(uuid: nodeLib.Buffer, offset: scala.Double): builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibNumbers.`false` | builderDashUtilDashRuntimeLib.Anon_Variant | builderDashUtilDashRuntimeLib.Anon_VariantFormat = js.native
   def parse(input: java.lang.String): nodeLib.Buffer = js.native
+  def v1(): js.Any = js.native
   def v5(name: java.lang.String, namespace: nodeLib.Buffer): js.Any = js.native
   def v5(name: nodeLib.Buffer, namespace: nodeLib.Buffer): js.Any = js.native
 }

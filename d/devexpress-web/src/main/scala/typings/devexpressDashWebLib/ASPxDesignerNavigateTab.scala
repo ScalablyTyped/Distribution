@@ -15,11 +15,7 @@ trait ASPxDesignerNavigateTab extends js.Object {
        * Value: A knockout computed string that specifies the tab's display name.
        */
   var displayName: js.Any
-  /**
-       * Provides access to a value that specifies whether or not the report in the current tab has been changed.
-       * Value: A knockout computed boolean object, whose value is true if the report has been modified, and false otherwise.
-       */
-  var isDirty: js.Any
+  var isModified: js.Any
   /**
        * Provides access to a report opened in the current tab.
        * Value: A knockout observable object that specifies a report opened in the current tab.
@@ -35,5 +31,7 @@ trait ASPxDesignerNavigateTab extends js.Object {
        * Value: A knockout observable string that specifies the report URL.
        */
   var url: js.Any
+  def refresh(): scala.Unit
+  def resetIsModified(): scala.Unit
 }
 

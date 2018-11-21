@@ -65,7 +65,7 @@ class NamespaceStringHelpFormatter[C /* <: atIonicCliDashFrameworkLib.definition
   def formatHeader(): stdLib.Promise[java.lang.String] = js.native
   def formatSummary(): stdLib.Promise[java.lang.String] = js.native
   def formatUsage(): stdLib.Promise[java.lang.String] = js.native
-  def getGlobalOptions(): stdLib.Promise[js.Array[java.lang.String]] = js.native
+  def getExtraOptions(): stdLib.Promise[js.Array[java.lang.String]] = js.native
   def getListOfCommandDetails(
     commands: js.Array[atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]]
   ): stdLib.Promise[js.Array[java.lang.String]] = js.native

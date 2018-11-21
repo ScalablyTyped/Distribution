@@ -50,7 +50,6 @@ class DetailsListBase protected ()
   /** Builds a set of columns to fix within the viewport width. */
   /* private */ def _getJustifiedColumns(newColumns: js.Any, viewportWidth: js.Any, props: js.Any, firstIndex: js.Any): js.Any = js.native
   /* private */ def _getJustifiedColumnsAfterResize(newColumns: js.Any, viewportWidth: js.Any, props: js.Any, resizingColumnIndex: js.Any): js.Any = js.native
-  /* private */ def _notifyColumnsResized(): js.Any = js.native
   /**
        * Call back function when an element in FocusZone becomes active. It will translate it into item
        * and call onActiveItemChanged callback if specified.

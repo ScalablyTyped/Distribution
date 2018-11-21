@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "geokdbush"
-version := "1.1-dt-20181102Z-48b216"
+version := "1.1-dt-20180910Z-025db0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "kdbush" % "1.0-dt-20181109Z-e4d713",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "kdbush" % "1.0-dt-20181105Z-94ae68",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

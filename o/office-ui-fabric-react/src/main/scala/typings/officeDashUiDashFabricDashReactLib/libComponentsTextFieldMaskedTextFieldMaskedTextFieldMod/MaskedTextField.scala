@@ -36,9 +36,6 @@ class MaskedTextField protected ()
   /* private */ def _onMouseDown(event: js.Any): js.Any = js.native
   /* private */ def _onMouseUp(event: js.Any): js.Any = js.native
   /* private */ def _onPaste(event: js.Any): js.Any = js.native
-  /** Blurs the input */
-  /* CompleteClass */
-  override def blur(): scala.Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MMaskedTextField(): scala.Unit = js.native
   @JSName("componentWillReceiveProps")
@@ -56,8 +53,8 @@ class MaskedTextField protected ()
   override def setSelectionEnd(value: scala.Double): scala.Unit = js.native
   /**
        * Sets the start and end positions of a selection in a text field.
-       * @param start - Index of the start of the selection.
-       * @param end - Index of the end of the selection.
+       * @param start Index of the start of the selection.
+       * @param end Index of the end of the selection.
        */
   /* CompleteClass */
   override def setSelectionRange(start: scala.Double, end: scala.Double): scala.Unit = js.native

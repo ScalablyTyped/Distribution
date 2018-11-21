@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "leaflet-curve"
-version := "0.1-dt-20181102Z-c18b0b"
+version := "0.1-dt-20180910Z-462d30"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "geojson" % "7946.0-dt-20181102Z-d820c3",
-  "com.scalablytyped" %%% "leaflet" % "1.2-dt-20181109Z-9e0d90",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "geojson" % "7946.0-dt-20180910Z-60feb0",
+  "com.scalablytyped" %%% "leaflet" % "1.2-dt-20181109Z-b826b8",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

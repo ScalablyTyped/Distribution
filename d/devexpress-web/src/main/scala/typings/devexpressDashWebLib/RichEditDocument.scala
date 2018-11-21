@@ -26,6 +26,11 @@ trait RichEditDocument extends js.Object {
        */
   var characterStylesInfo: js.Array[CharacterStyle]
   /**
+       * Provides access to the document's main sub-document.
+       * Value: A <see cref="SubDocument" /> object storing the main sub-document.
+       */
+  var mainSubDocument: SubDocument
+  /**
        * Provides information about paragraph styles in the current document.
        * Value: An array of ParagraphStyle objects storing information about paragraph styles.
        */
@@ -41,9 +46,19 @@ trait RichEditDocument extends js.Object {
        */
   var spellingInfo: SpellingInfo
   /**
+       * Provides access to the document's sub-documents.
+       * Value: An array of the <see cref="SubDocument[]" />
+       */
+  var subDocuments: js.Array[SubDocument]
+  /**
        * Provides information about table styles in the current document.
        * Value: An array of TableStyle objects storing information about table styles.
        */
   var tableStylesInfo: js.Array[TableStyle]
+  /**
+       * Returns the sub-document with the specified identifier.
+       * @param subDocumentId An integer value specifying the required sub-document.
+       */
+  def getSubDocumentById(subDocumentId: scala.Double): SubDocument
 }
 

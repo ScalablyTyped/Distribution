@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "gapi_dot_drive"
-version := "v2-dt-20181102Z-ac80e2"
+version := "v2-dt-20180910Z-be27d7"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "gapi" % "0.0-dt-20181102Z-ae23e3",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "gapi" % "0.0-dt-20180910Z-a0a26c",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

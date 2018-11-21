@@ -12,6 +12,7 @@ package object reactDashNativeMod {
   type AccessibilityPropertiesAndroid = AccessibilityPropsAndroid
   type AccessibilityPropertiesIOS = AccessibilityPropsIOS
   type AccessibilityRole = reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.link | reactDashNativeLib.reactDashNativeLibStrings.search | reactDashNativeLib.reactDashNativeLibStrings.image | reactDashNativeLib.reactDashNativeLibStrings.keyboardkey | reactDashNativeLib.reactDashNativeLibStrings.text | reactDashNativeLib.reactDashNativeLibStrings.adjustable | reactDashNativeLib.reactDashNativeLibStrings.header | reactDashNativeLib.reactDashNativeLibStrings.summary | reactDashNativeLib.reactDashNativeLibStrings.imagebutton
+  type AccessibilityState = reactDashNativeLib.reactDashNativeLibStrings.selected | reactDashNativeLib.reactDashNativeLibStrings.disabled
   type ActionSheetIOS = ActionSheetIOSStatic
   type ActivityIndicatorComponent = reactLib.reactMod.Component[ActivityIndicatorProps, js.Object, js.Any]
   type ActivityIndicatorIOSProperties = ActivityIndicatorIOSProps

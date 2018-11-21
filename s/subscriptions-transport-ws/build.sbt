@@ -1,22 +1,22 @@
 organization := "com.scalablytyped"
 name := "subscriptions-transport-ws"
-version := "0.9.8-ff997a"
+version := "0.9.8-5b7f55"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "backo2" % "1.0-dt-20181102Z-3df5eb",
-  "com.scalablytyped" %%% "eventemitter3" % "3.1.0-f457d9",
-  "com.scalablytyped" %%% "graphql" % "14.0-dt-20181102Z-c82035",
-  "com.scalablytyped" %%% "iterall" % "1.2.2-74db06",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181109Z-67570f",
-  "com.scalablytyped" %%% "lodash_dot_assign" % "4.2-dt-20181102Z-47a6d5",
-  "com.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20181102Z-413d4e",
-  "com.scalablytyped" %%% "lodash_dot_isstring" % "4.0-dt-20181102Z-17ab54",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-806eaf",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "com.scalablytyped" %%% "symbol-observable" % "1.2.0-998bd5",
-  "com.scalablytyped" %%% "ws" % "6.0-dt-20181102Z-6a247d",
+  "com.scalablytyped" %%% "backo2" % "1.0-dt-20180910Z-907b56",
+  "com.scalablytyped" %%% "eventemitter3" % "3.1.0-445710",
+  "com.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-4871a9",
+  "com.scalablytyped" %%% "iterall" % "1.2.2-770ade",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-caf0c5",
+  "com.scalablytyped" %%% "lodash_dot_assign" % "4.2-dt-20180910Z-972791",
+  "com.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20180910Z-eb876c",
+  "com.scalablytyped" %%% "lodash_dot_isstring" % "4.0-dt-20180910Z-d0342e",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "symbol-observable" % "1.2.0-e6336c",
+  "com.scalablytyped" %%% "ws" % "6.0-dt-20180910Z-aa3847",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

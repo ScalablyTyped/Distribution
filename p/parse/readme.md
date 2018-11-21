@@ -1,5 +1,5 @@
 ```
-// Type definitions for parse 1.11.1
+// Type definitions for parse 2.1.0
 // Project: https://parseplatform.org/
 // Definitions by:  Ullisen Media Group <http://ullisenmedia.com>
 //                  David Poetzsch-Heffter <https://github.com/dpoetzsch>
@@ -7,6 +7,7 @@
 //                  Flavio Negrão <https://github.com/flavionegrao>
 //                  Wes Grimes <https://github.com/wesleygrimes>
 //                  Otherwise SAS <https://github.com/owsas>
+//                  Andrew Goldis <https://github.com/agoldis>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 ```

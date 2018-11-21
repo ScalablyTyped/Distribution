@@ -1,16 +1,16 @@
 organization := "com.scalablytyped"
 name := "cfb"
-version := "1.1.0-372c27"
+version := "1.1.0-f8d9be"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "adler-32" % "1.2.0-cf8f62",
-  "com.scalablytyped" %%% "commander" % "2.19.0-5a68a9",
-  "com.scalablytyped" %%% "crc-32" % "1.2.0-7fa596",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-806eaf",
-  "com.scalablytyped" %%% "printj" % "1.1.2-512629",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
+  "com.scalablytyped" %%% "adler-32" % "1.2.0-512619",
+  "com.scalablytyped" %%% "commander" % "2.19.0-74aff3",
+  "com.scalablytyped" %%% "crc-32" % "1.2.0-a02b31",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "printj" % "1.1.2-fbab2e",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

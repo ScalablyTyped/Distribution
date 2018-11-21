@@ -22,7 +22,6 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   var colors_Original: chalkLib.chalkMod.Chalk = js.native
   var compilationDone: scala.Boolean = js.native
   var compiler: js.Any = js.native
-  var compilerOptions: js.Object = js.native
   var diagnostics: js.Array[
     forkDashTsDashCheckerDashWebpackDashPluginLib.libTypesNormalizedMessageMod.NormalizedMessage
   ] = js.native
@@ -38,7 +37,6 @@ trait ForkTsCheckerWebpackPlugin extends js.Object {
   var logger: Logger = js.native
   var memoryLimit: scala.Double = js.native
   var options: stdLib.Partial[Options] = js.native
-  var reportFiles: js.Array[java.lang.String] = js.native
   var service: nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   var silent: scala.Boolean = js.native
   var started: js.Tuple2[scala.Double, scala.Double] = js.native

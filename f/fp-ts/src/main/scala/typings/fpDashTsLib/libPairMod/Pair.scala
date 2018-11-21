@@ -14,9 +14,6 @@ class Pair[A] protected () extends js.Object {
   val fst: A = js.native
   val snd: A = js.native
   def ap[B](fab: Pair[js.Function1[/* a */ A, B]]): Pair[B] = js.native
-  /**
-       * Flipped version of {@link ap}
-       */
   def `ap_`[B, C](`this`: Pair[js.Function1[/* b */ B, C]], fb: Pair[B]): Pair[C] = js.native
   def extend[B](f: js.Function1[/* fb */ Pair[A], B]): Pair[B] = js.native
   def extract(): A = js.native

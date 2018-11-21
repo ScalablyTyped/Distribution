@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 
 trait HyperlinkSettings extends js.Object {
   /**
-       * Gets or sets the associated bookmak.
+       * Gets or sets the associated bookmark.
        * Value: A string value specifying the bookmark name.
        */
   var bookmark: java.lang.String

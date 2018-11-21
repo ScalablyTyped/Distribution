@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "tsutils"
-version := "2.29.0-7b895c"
+version := "2.29.0-f21c88"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "com.scalablytyped" %%% "tslib" % "1.9.3-89a8f4",
-  "com.scalablytyped" %%% "typescript" % "3.1.6-0ff591",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "tslib" % "1.9.3-224f5a",
+  "com.scalablytyped" %%% "typescript" % "3.1.3-c44b5f",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

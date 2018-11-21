@@ -1,23 +1,23 @@
 organization := "com.scalablytyped"
 name := "gulp-help"
-version := "0.0-unknown-dt-20181102Z-c45958"
+version := "0.0-unknown-dt-20180910Z-6d02ab"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "chokidar" % "1.7-dt-20181102Z-1e4973",
-  "com.scalablytyped" %%% "glob" % "7.1-dt-20181102Z-ea59e6",
-  "com.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20181102Z-c32f79",
-  "com.scalablytyped" %%% "gulp" % "4.0-dt-20181102Z-ce40b0",
-  "com.scalablytyped" %%% "minimatch" % "3.0-dt-20181102Z-8447c6",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-806eaf",
-  "com.scalablytyped" %%% "orchestrator" % "0.3-dt-20181102Z-f9ec83",
-  "com.scalablytyped" %%% "q" % "1.5-dt-20181102Z-60bf7d",
-  "com.scalablytyped" %%% "std" % "3.1.6-34214f",
-  "com.scalablytyped" %%% "undertaker" % "1.2-dt-20181102Z-ea5b43",
-  "com.scalablytyped" %%% "undertaker-registry" % "1.0-dt-20181102Z-1d67a6",
-  "com.scalablytyped" %%% "vinyl" % "2.0-dt-20181102Z-9ddac1",
-  "com.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20181102Z-59b873",
+  "com.scalablytyped" %%% "chokidar" % "1.7-dt-20180910Z-3d8188",
+  "com.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-1b2f14",
+  "com.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20180910Z-976de0",
+  "com.scalablytyped" %%% "gulp" % "4.0-dt-20180910Z-4bb2d8",
+  "com.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-298c87",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "orchestrator" % "0.3-dt-20180910Z-d69a5c",
+  "com.scalablytyped" %%% "q" % "1.5-dt-20180915Z-f3431e",
+  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "undertaker" % "1.2-dt-20180910Z-5352ac",
+  "com.scalablytyped" %%% "undertaker-registry" % "1.0-dt-20180910Z-215b0e",
+  "com.scalablytyped" %%% "vinyl" % "2.0-dt-20180910Z-c07af2",
+  "com.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20180910Z-c041e1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

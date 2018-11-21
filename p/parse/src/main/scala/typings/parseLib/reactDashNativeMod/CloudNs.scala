@@ -72,7 +72,7 @@ object CloudNs extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def httpRequest(options: parseLib.ParseNs.CloudNs.HTTPOptions): parseLib.ParseNs.Promise[parseLib.ParseNs.CloudNs.HttpResponse] = js.native
+  def httpRequest(options: parseLib.ParseNs.CloudNs.HTTPOptions): stdLib.Promise[parseLib.ParseNs.CloudNs.HttpResponse] = js.native
   def job(name: java.lang.String): parseLib.ParseNs.CloudNs.HttpResponse = js.native
   def job(
     name: java.lang.String,
@@ -82,9 +82,9 @@ object CloudNs extends js.Object {
       scala.Unit
     ]
   ): parseLib.ParseNs.CloudNs.HttpResponse = js.native
-  def run(name: java.lang.String): parseLib.ParseNs.Promise[_] = js.native
-  def run(name: java.lang.String, data: js.Any): parseLib.ParseNs.Promise[_] = js.native
-  def run(name: java.lang.String, data: js.Any, options: parseLib.ParseNs.CloudNs.RunOptions): parseLib.ParseNs.Promise[_] = js.native
+  def run(name: java.lang.String): stdLib.Promise[_] = js.native
+  def run(name: java.lang.String, data: js.Any): stdLib.Promise[_] = js.native
+  def run(name: java.lang.String, data: js.Any, options: parseLib.ParseNs.CloudNs.RunOptions): stdLib.Promise[_] = js.native
   def useMasterKey(): scala.Unit = js.native
   // Read preference describes how MongoDB driver route read operations to the members of a replica set.
   @js.native

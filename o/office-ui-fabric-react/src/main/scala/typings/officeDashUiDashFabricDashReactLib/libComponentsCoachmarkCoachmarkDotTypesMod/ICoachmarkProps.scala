@@ -38,18 +38,18 @@ trait ICoachmarkProps
   var beaconColorTwo: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The height of the Beak component.
-       * @deprecated No longer used.
+       * @deprecated
        */
   var beakHeight: js.UndefOr[scala.Double] = js.undefined
   /**
        * The width of the Beak component.
-       * @deprecated No longer used.
+       * @deprecated
        */
   var beakWidth: js.UndefOr[scala.Double] = js.undefined
   /**
-       * The starting collapsed state for the Coachmark.  Use `isCollapsed` instead.
-       * @defaultvalue true
-       * @deprecated Use `isCollapsed` instead.
+       * The starting collapsed state for the Coachmark.  Use isCollapsed instead.
+       * @default true
+       * @deprecated
        */
   var collapsed: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -63,33 +63,33 @@ trait ICoachmarkProps
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[ICoachmark]] = js.undefined
   /**
        * Delay in milliseconds before Coachmark animation appears.
-       * @defaultvalue 0
+       * @default 0
        */
   var delayBeforeCoachmarkAnimation: js.UndefOr[scala.Double] = js.undefined
   /**
        * Delay before allowing mouse movements to open the Coachmark.
-       * @defaultvalue 3600
+       * @default 3600
        */
   var delayBeforeMouseOpen: js.UndefOr[scala.Double] = js.undefined
   /**
        * The height of the Coachmark.
-       * @deprecated No longer used.
+       * @deprecated
        */
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
        * The starting collapsed state for the Coachmark.
-       * @defaultvalue true
+       * @default true
        */
   var isCollapsed: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether or not to force the Coachmark/TeachingBubble content to fit within the window bounds.
-       * @defaultvalue true
+       * @default true
        */
   var isPositionForced: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * The distance in pixels the mouse is located
        * before opening up the Coachmark.
-       * @defaultvalue 10
+       * @default 10
        */
   var mouseProximityOffset: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -111,14 +111,14 @@ trait ICoachmarkProps
   /**
        * Props to pass to the PositioningContainer component. Specify the `directionalHint` to indicate
        * on which edge the Coachmark/TeachingBubble should be positioned.
-       * @defaultvalue directionalHint: DirectionalHint.bottomAutoEdge
+       * @default directionalHint: DirectionalHint.bottomAutoEdge
        */
   var positioningContainerProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsCoachmarkPositioningContainerPositioningContainerDotTypesMod.IPositioningContainerProps
   ] = js.undefined
   /**
        * If true then the Coachmark will not dismiss when it loses focus
-       * @defaultvalue false
+       * @default false
        */
   var preventDismissOnLostFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -136,14 +136,14 @@ trait ICoachmarkProps
   var target: reactLib.HTMLElement | java.lang.String | scala.Null
   /**
        * Ref for TeachingBubble
-       * @deprecated Coachmark uses `focusFirstChild` utility instead to focus on TeachingBubbleContent
+       * @deprecated Coachmark uses focusFirstChild utility instead to focus on TeachingBubbleContent
        */
   var teachingBubbleRef: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubble
   ] = js.undefined
   /**
        * The width of the Coachmark.
-       * @deprecated No longer used.
+       * @deprecated
        */
   var width: js.UndefOr[scala.Double] = js.undefined
 }
