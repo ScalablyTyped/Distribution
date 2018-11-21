@@ -10,6 +10,13 @@
 [info ] InferReturnTypes.scala:32 Could not infer return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclClass(View) / TsMemberFunction(removeDocumentEvents))] 
 [info ] InferReturnTypes.scala:32 Could not infer return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclClass(View) / TsMemberFunction(setDocumentEventPrefix))] 
 [info ] InferReturnTypes.scala:32 Could not infer return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclClass(View) / TsMemberFunction(setTemplateStrategy))] 
+[debug] InferReturnTypes.scala:29 Inferred return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(Controller) / TsMemberFunction(on))] 
+[debug] InferReturnTypes.scala:29 Inferred return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(Controller) / TsMemberFunction(on))] 
+[debug] InferReturnTypes.scala:29 Inferred return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(Controller) / TsMemberFunction(on))] 
+[debug] InferReturnTypes.scala:29 Inferred return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(Controller) / TsMemberFunction(off))] 
+[debug] InferReturnTypes.scala:29 Inferred return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(Controller) / TsMemberFunction(trigger))] 
+[debug] InferReturnTypes.scala:29 Inferred return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(Controller) / TsMemberFunction(bind))] 
+[debug] InferReturnTypes.scala:29 Inferred return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(Controller) / TsMemberFunction(unbind))] 
 [debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(TElement) at TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclClass(View) / TsMemberFunction(to$El) / TsFunSig() / TsTypeRef()) [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclClass(View) / TsMemberFunction(to$El) / TsFunSig() / TsTypeRef())] 
 [debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(TElement) at TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(FastCollectionView) / TsMemberFunction(findElByModel) / TsFunSig() / TsTypeRef()) [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(FastCollectionView) / TsMemberFunction(findElByModel) / TsFunSig() / TsTypeRef())] 
 [debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(TElement) at TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(FastCollectionView) / TsMemberFunction(findElByIndex) / TsFunSig() / TsTypeRef()) [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(FastCollectionView) / TsMemberFunction(findElByIndex) / TsFunSig() / TsTypeRef())] 
@@ -22,20 +29,5 @@
 [info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(View)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(ContribNs) / Name(Controller)] 
 [debug] PhaseRunner.scala:78 Success [id => giraffe, phase => scala.js] 
-[error] Collection.scala:10 class Collection inherits conflicting members:
-  method initialize in trait Collection of type ()Unit  and
-  variable initialize in trait GiraffeObject of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[scala.scalajs.js.Any]]
-(Note: this can be resolved by declaring an override in class Collection.), class Collection[TModel /* <: Model */] () [id => giraffe, phase => build] 
-[error] Model.scala:10 class Model inherits conflicting members:
-  method initialize in trait Model of type ()Unit  and
-  variable initialize in trait GiraffeObject of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[scala.scalajs.js.Any]]
-(Note: this can be resolved by declaring an override in class Model.), class Model () [id => giraffe, phase => build] 
-[error] Router.scala:10 class Router inherits conflicting members:
-  method initialize in trait Router of type ()Unit  and
-  variable initialize in trait GiraffeObject of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[scala.scalajs.js.Any]]
-(Note: this can be resolved by declaring an override in class Router.), class Router () [id => giraffe, phase => build] 
-[error] View.scala:10 class View inherits conflicting members:
-  method initialize in trait View of type ()Unit  and
-  variable initialize in trait GiraffeObject of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[scala.scalajs.js.Any]]
-(Note: this can be resolved by declaring an override in class View.), class View[TModel /* <: Model */] () [id => giraffe, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [giraffe => Compilation failed] [id => giraffe, phase => build] 
+[warn ] PhaseRunner.scala:64 Failed because of, [backbone => Compilation failed] [id => giraffe, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [backbone => Compilation failed] [id => giraffe, phase => build] 

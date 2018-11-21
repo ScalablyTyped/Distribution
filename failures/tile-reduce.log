@@ -1,0 +1,8 @@
+[debug] PhaseRunner.scala:78 Success [id => tile-reduce, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/tile-reduce/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/tile-reduce),TsIdentLibrarySimple(tile-reduce)),TsIdentModule(None,List(tile-reduce))) [id => tile-reduce, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(tile-reduce) [id => tile-reduce, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => tile-reduce, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(tile-reduce) [id => tile-reduce, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => tile-reduce, phase => scala.js] 
+[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => tile-reduce, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => tile-reduce, phase => build] 

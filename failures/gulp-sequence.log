@@ -6,5 +6,5 @@
 [debug] PhaseRunner.scala:78 Success [id => gulp-sequence, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(gulp-sequence) [id => gulp-sequence, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => gulp-sequence, phase => scala.js] 
-[error] gulpDashSequenceModMembers.scala:437 type Function26 is not a member of package scala.scalajs.js,   def use(gulp: gulpLib.gulpMod.GulpClientNs.Gulp): js.Function26[ [id => gulp-sequence, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [gulp-sequence => Compilation failed] [id => gulp-sequence, phase => build] 
+[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => gulp-sequence, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => gulp-sequence, phase => build] 

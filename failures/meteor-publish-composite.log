@@ -1,0 +1,8 @@
+[debug] PhaseRunner.scala:78 Success [id => meteor-publish-composite, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/meteor-publish-composite/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/meteor-publish-composite),TsIdentLibrarySimple(meteor-publish-composite)),TsIdentModule(None,List(meteor-publish-composite))) [id => meteor-publish-composite, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(meteor-publish-composite) [id => meteor-publish-composite, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => meteor-publish-composite, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(meteor-publish-composite) [id => meteor-publish-composite, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => meteor-publish-composite, phase => scala.js] 
+[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => meteor-publish-composite, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => meteor-publish-composite, phase => build] 

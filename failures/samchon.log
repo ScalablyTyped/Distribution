@@ -372,5 +372,5 @@
 [info ] CompleteClass.scala:60 Completed implementations Vector(open, close, addClient) [id => samchon, phase => scala.js, this => Name(samchonLib) / Name(templatesSlaveSlaveServerMod) / Name(SlaveServer)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(sendData, replyData) [id => samchon, phase => scala.js, this => Name(samchonLib) / Name(templatesSlaveSlaveSystemMod) / Name(SlaveSystem)] 
 [debug] PhaseRunner.scala:78 Success [id => samchon, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [tstl => Compilation failed] [id => samchon, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [tstl => Compilation failed] [id => samchon, phase => build] 
+[warn ] PhaseRunner.scala:64 Failed because of, [tstl => Compilation failed, node => Compilation failed] [id => samchon, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [tstl => Compilation failed, node => Compilation failed] [id => samchon, phase => build] 

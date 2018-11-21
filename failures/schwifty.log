@@ -14,5 +14,5 @@
 [debug] PhaseRunner.scala:78 Success [id => schwifty, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(schwifty) [id => schwifty, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => schwifty, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [objection => Compilation failed] [id => schwifty, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [objection => Compilation failed] [id => schwifty, phase => build] 
+[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed, catbox => Compilation failed] [id => schwifty, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed, catbox => Compilation failed] [id => schwifty, phase => build] 

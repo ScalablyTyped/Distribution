@@ -9,6 +9,5 @@
 [debug] PhaseRunner.scala:78 Success [id => react-swipeable, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(react-swipeable) [id => react-swipeable, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => react-swipeable, phase => scala.js] 
-[error] ReactSwipeable.scala:9 class graph is not finitary because type parameter T is expansively recursive, trait ReactSwipeable[T /* <: reactLib.Element */] [id => react-swipeable, phase => build] 
-[error] SwipeableProps.scala:9 class graph is not finitary because type parameter T is expansively recursive, trait SwipeableProps[T /* <: reactLib.Element */] [id => react-swipeable, phase => build] 
+[error] unknown file:-1 bad option: -P:scalajs:sjsDefinedByDefault,  [id => react-swipeable, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [react-swipeable => Compilation failed] [id => react-swipeable, phase => build] 

@@ -1,0 +1,8 @@
+[debug] PhaseRunner.scala:78 Success [id => webpack-fail-plugin, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/webpack-fail-plugin/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/webpack-fail-plugin),TsIdentLibrarySimple(webpack-fail-plugin)),TsIdentModule(None,List(webpack-fail-plugin))) [id => webpack-fail-plugin, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(webpack-fail-plugin) [id => webpack-fail-plugin, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => webpack-fail-plugin, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(webpack-fail-plugin) [id => webpack-fail-plugin, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => webpack-fail-plugin, phase => scala.js] 
+[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => webpack-fail-plugin, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => webpack-fail-plugin, phase => build] 

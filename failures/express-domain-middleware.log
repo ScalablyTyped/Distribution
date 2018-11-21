@@ -1,0 +1,8 @@
+[debug] PhaseRunner.scala:78 Success [id => express-domain-middleware, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/express-domain-middleware/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/express-domain-middleware),TsIdentLibrarySimple(express-domain-middleware)),TsIdentModule(None,List(express-domain-middleware))) [id => express-domain-middleware, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(express-domain-middleware) [id => express-domain-middleware, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => express-domain-middleware, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(express-domain-middleware) [id => express-domain-middleware, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => express-domain-middleware, phase => scala.js] 
+[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => express-domain-middleware, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => express-domain-middleware, phase => build] 

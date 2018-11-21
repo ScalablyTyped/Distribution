@@ -6,6 +6,5 @@
 [debug] PhaseRunner.scala:78 Success [id => node-cache, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(node-cache) [id => node-cache, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => node-cache, phase => scala.js] 
-[error] NodeCache.scala:13 overriding method getTtl_Boolean in trait NodeCache of type (key: typings.nodeDashCacheLib.Key)Boolean;
- method getTtl_Boolean needs `override' modifier,   def getTtl_Boolean(key: nodeDashCacheLib.Key): scala.Boolean = js.native [id => node-cache, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node-cache => Compilation failed] [id => node-cache, phase => build] 
+[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => node-cache, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => node-cache, phase => build] 

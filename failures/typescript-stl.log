@@ -56,16 +56,5 @@
 [info ] CompleteClass.scala:60 Completed implementations Vector(hash, equal_to, less) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(MapIterator)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(hash, equal_to, less) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(SetIterator)] 
 [debug] PhaseRunner.scala:78 Success [id => typescript-stl, phase => scala.js] 
-[error] Vector.scala:349 name clash between defined and inherited member:
-def push(items: T*): Double in trait Array and
-override def push[U](items: U*): Double at line 349
-have same type after erasure: (items: Seq)Double,   override def push[U /* <: T */](items: U*): scala.Double = js.native [id => typescript-stl, phase => build] 
-[error] AtomicTree.scala:24 name clash between defined and inherited member:
-def find(val: typings.typescriptDashStlLib.stdNs.SetIterator[T]): typings.typescriptDashStlLib.stdNs.baseNs.XTreeNode[typings.typescriptDashStlLib.stdNs.SetIterator[T]] in class XTree and
-def find(val: T): typings.typescriptDashStlLib.stdNs.baseNs.XTreeNode[typings.typescriptDashStlLib.stdNs.SetIterator[T]] at line 24
-have same type after erasure: (val: Object)typings.typescriptDashStlLib.stdNs.baseNs.XTreeNode,   def find(`val`: T): XTreeNode[typescriptDashStlLib.stdNs.SetIterator[T]] = js.native [id => typescript-stl, phase => build] 
-[error] PairTree.scala:24 name clash between defined and inherited member:
-def find(val: typings.typescriptDashStlLib.stdNs.MapIterator[Key,T]): typings.typescriptDashStlLib.stdNs.baseNs.XTreeNode[typings.typescriptDashStlLib.stdNs.MapIterator[Key,T]] in class XTree and
-def find(key: Key): typings.typescriptDashStlLib.stdNs.baseNs.XTreeNode[typings.typescriptDashStlLib.stdNs.MapIterator[Key,T]] at line 24
-have same type after erasure: (val: Object)typings.typescriptDashStlLib.stdNs.baseNs.XTreeNode,   def find(key: Key): XTreeNode[typescriptDashStlLib.stdNs.MapIterator[Key, T]] = js.native [id => typescript-stl, phase => build] 
+[error] unknown file:-1 bad option: -P:scalajs:sjsDefinedByDefault,  [id => typescript-stl, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [typescript-stl => Compilation failed] [id => typescript-stl, phase => build] 

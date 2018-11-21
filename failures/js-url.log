@@ -1,0 +1,8 @@
+[debug] PhaseRunner.scala:78 Success [id => js-url, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/js-url/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/js-url),TsIdentLibrarySimple(js-url)),TsIdentModule(None,List(js-url))) [id => js-url, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(js-url) [id => js-url, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => js-url, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(js-url) [id => js-url, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => js-url, phase => scala.js] 
+[error] unknown file:-1 bad option: -P:scalajs:sjsDefinedByDefault,  [id => js-url, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [js-url => Compilation failed] [id => js-url, phase => build] 

@@ -113,8 +113,5 @@
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(video.js) [id => video.js, phase => scala.js] 
 [info ] RemoveDuplicateInheritance.scala:55 Dropped parents QualifiedName(List(Name(ScalablyTyped), Name(runtime), Name(NumberDictionary))) at Name(videoDotJsLib) / Name(videoDotJsMod) / Name(videojsNs) / Name(TextTrackList) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(videoDotJsLib), Name(videoDotJsMod), Name(videojsNs), Name(EventTarget))),List(),NoComments), TypeRef(QualifiedName(List(Name(ScalablyTyped), Name(runtime), Name(NumberDictionary))),List(),Comments(1))) [id => video.js, phase => scala.js, this => Name(videoDotJsLib) / Name(videoDotJsMod) / Name(videojsNs) / Name(TextTrackList)] 
 [debug] PhaseRunner.scala:78 Success [id => video.js, phase => scala.js] 
-[error] Button.scala:14 overriding method addChild_TComponentT in trait Component of type [T](child: String)T;
- method addChild_TComponentT needs `override' modifier,   def addChild_TComponentT[T /* <: Component */](child: java.lang.String): T = js.native [id => video.js, phase => build] 
-[error] Button.scala:16 overriding method addChild_TComponentT in trait Component of type [T](child: String, options: scala.scalajs.js.Any)T;
- method addChild_TComponentT needs `override' modifier,   def addChild_TComponentT[T /* <: Component */](child: java.lang.String, options: js.Any): T = js.native [id => video.js, phase => build] 
+[error] unknown file:-1 bad option: -P:scalajs:sjsDefinedByDefault,  [id => video.js, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [video.js => Compilation failed] [id => video.js, phase => build] 

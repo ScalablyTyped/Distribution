@@ -1,0 +1,8 @@
+[debug] PhaseRunner.scala:78 Success [id => meteor-prime8consulting-oauth2, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/meteor-prime8consulting-oauth2/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/meteor-prime8consulting-oauth2),TsIdentLibrarySimple(meteor-prime8consulting-oauth2)),TsIdentModule(None,List(meteor-prime8consulting-oauth2))) [id => meteor-prime8consulting-oauth2, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(meteor-prime8consulting-oauth2) [id => meteor-prime8consulting-oauth2, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => meteor-prime8consulting-oauth2, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(meteor-prime8consulting-oauth2) [id => meteor-prime8consulting-oauth2, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => meteor-prime8consulting-oauth2, phase => scala.js] 
+[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => meteor-prime8consulting-oauth2, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => meteor-prime8consulting-oauth2, phase => build] 

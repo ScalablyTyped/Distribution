@@ -1,0 +1,8 @@
+[debug] PhaseRunner.scala:78 Success [id => pouchdb-adapter-fruitdown, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pouchdb-adapter-fruitdown/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pouchdb-adapter-fruitdown),TsIdentLibrarySimple(pouchdb-adapter-fruitdown)),TsIdentModule(None,List(pouchdb-adapter-fruitdown))) [id => pouchdb-adapter-fruitdown, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(pouchdb-adapter-fruitdown) [id => pouchdb-adapter-fruitdown, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => pouchdb-adapter-fruitdown, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(pouchdb-adapter-fruitdown) [id => pouchdb-adapter-fruitdown, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => pouchdb-adapter-fruitdown, phase => scala.js] 
+[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => pouchdb-adapter-fruitdown, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => pouchdb-adapter-fruitdown, phase => build] 
