@@ -1,15 +1,15 @@
 organization := "com.scalablytyped"
 name := "mali-onerror"
-version := "0.1-dt-20181120Z-4a6571"
+version := "0.1-dt-20181120Z-9af2e8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "grpc" % "1.15.1-874ced",
+  "com.scalablytyped" %%% "grpc" % "1.15.1-f61946",
   "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-caf0c5",
   "com.scalablytyped" %%% "long" % "4.0.0-dt-20180910Z-ace41c",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
-  "com.scalablytyped" %%% "protobufjs" % "6.8.8-dc0530",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
+  "com.scalablytyped" %%% "protobufjs" % "6.8.8-6842ae",
   "com.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-2c7cd8",
   "com.scalablytyped" %%% "protobufjs__base64" % "1.1.2-2c8f62",
   "com.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-63e3a1",

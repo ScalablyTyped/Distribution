@@ -10,7 +10,7 @@ trait YarOptions extends js.Object {
   /**
            * hapi cache options which includes (among other options):
            */
-  var cache: js.UndefOr[hapiLib.hapiMod.ServerOptionsCache] = js.undefined
+  var cache: js.UndefOr[hapiLib.hapiMod.CachePolicyOptions[_]] = js.undefined
   /**
            * the configuration for cookie-specific features:
            */
@@ -21,10 +21,6 @@ trait YarOptions extends js.Object {
            * Defaults to true.
            */
   var errorOnCacheNotReady: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-           * server-side storage expiration (defaults to 1 day).
-           */
-  var expiresIn: js.UndefOr[scala.Double] = js.undefined
   /**
            * maximum cookie size before using server-side storage.
            * Defaults to 1K. Set to zero to always use server-side storage.

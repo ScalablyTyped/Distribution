@@ -1,8 +1,0 @@
-[debug] PhaseRunner.scala:78 Success [id => pouchdb-node, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pouchdb-node/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pouchdb-node),TsIdentLibrarySimple(pouchdb-node)),TsIdentModule(None,List(pouchdb-node))) [id => pouchdb-node, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(pouchdb-node) [id => pouchdb-node, phase => typescript] 
-[debug] PhaseRunner.scala:78 Success [id => pouchdb-node, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(pouchdb-node) [id => pouchdb-node, phase => scala.js] 
-[debug] PhaseRunner.scala:78 Success [id => pouchdb-node, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => pouchdb-node, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => pouchdb-node, phase => build] 

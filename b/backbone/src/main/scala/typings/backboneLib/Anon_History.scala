@@ -16,7 +16,6 @@ trait Anon_History extends js.Object {
     /* options */ js.UndefOr[/* options */ js.Any], 
     backboneLib.backboneMod.BackboneNs.Collection[js.Object]
   ] = js.native
-  var Events: ScalablyTyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.Events] = js.native
   var History: ScalablyTyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.History] = js.native
   var Model: ScalablyTyped.runtime.Instantiable2[
     /* attributes */ js.UndefOr[/* attributes */ js.Any], 

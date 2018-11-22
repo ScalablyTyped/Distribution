@@ -13,6 +13,8 @@ trait JustifyItemsProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
        */
-  var justifyItems: js.UndefOr[ResponsiveJustifyItemsValue] = js.undefined
+  var justifyItems: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.JustifyItemsProperty]
+  ] = js.undefined
 }
 

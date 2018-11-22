@@ -11,8 +11,8 @@ trait ServiceMethods[T] extends js.Object {
   def create(data: js.Array[stdLib.Partial[T]], params: Params): stdLib.Promise[T | js.Array[T]] = js.native
   def create(data: stdLib.Partial[T]): stdLib.Promise[T | js.Array[T]] = js.native
   def create(data: stdLib.Partial[T], params: Params): stdLib.Promise[T | js.Array[T]] = js.native
-  def find(): stdLib.Promise[js.Array[T] | Paginated[T]] = js.native
-  def find(params: Params): stdLib.Promise[js.Array[T] | Paginated[T]] = js.native
+  def find(): stdLib.Promise[T | js.Array[T] | Paginated[T]] = js.native
+  def find(params: Params): stdLib.Promise[T | js.Array[T] | Paginated[T]] = js.native
   def get(id: Id): stdLib.Promise[T] = js.native
   def get(id: Id, params: Params): stdLib.Promise[T] = js.native
   def patch(id: NullableId, data: stdLib.Partial[T]): stdLib.Promise[T] = js.native

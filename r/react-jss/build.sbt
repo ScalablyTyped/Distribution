@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-jss"
-version := "8.6-dt-20180918Z-8aba64"
+version := "8.6-dt-20180918Z-262120"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "indefinite-observable" % "1.0.1-1c5d3f",
   "com.scalablytyped" %%% "jss" % "9.5-dt-20181018Z-441363",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-44bb36",
+  "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "com.scalablytyped" %%% "symbol-observable" % "1.2.0-e6336c",
-  "com.scalablytyped" %%% "theming" % "1.3-dt-20181109Z-a251b1",
+  "com.scalablytyped" %%% "theming" % "1.3-dt-20181109Z-ec0821",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

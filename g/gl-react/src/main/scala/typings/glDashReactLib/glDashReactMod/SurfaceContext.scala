@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait SurfaceContext extends js.Object {
-  var glParent: Node | Surface | Bus
+  var glParent: Node | Surface[_] | Bus
   var glSizable: glDashReactLib.Anon_GetGLSize
-  var glSurface: Surface
+  var glSurface: Surface[_]
 }
 

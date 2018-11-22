@@ -13,6 +13,8 @@ trait JustifyContentProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
        */
-  var justifyContent: js.UndefOr[ResponsiveJustifyContentValue] = js.undefined
+  var justifyContent: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.JustifyContentProperty]
+  ] = js.undefined
 }
 

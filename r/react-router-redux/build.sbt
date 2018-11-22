@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-router-redux"
-version := "5.0-dt-20180915Z-871951"
+version := "5.0-dt-20180915Z-dbfe40"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "csstype" % "2.5.7-eccde3",
   "com.scalablytyped" %%% "history" % "4.7.2-dt-20181018Z-c0d74d",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-44bb36",
-  "com.scalablytyped" %%% "react-router" % "4.4-dt-20181109Z-ab18e0",
+  "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
+  "com.scalablytyped" %%% "react-router" % "4.4-dt-20181109Z-1ad10b",
   "com.scalablytyped" %%% "redux" % "4.0.1-d3681d",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "com.scalablytyped" %%% "symbol-observable" % "1.2.0-e6336c",

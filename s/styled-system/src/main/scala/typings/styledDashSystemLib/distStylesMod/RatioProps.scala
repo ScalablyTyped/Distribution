@@ -10,6 +10,6 @@ trait RatioProps extends js.Object {
   /**
        * The ration is height: 0 & paddingBottom
        */
-  var ratio: js.UndefOr[ResponsiveRatioValue] = js.undefined
+  var ratio: js.UndefOr[styledDashSystemLib.distSpaceMod.ResponsiveValue[scala.Double]] = js.undefined
 }
 

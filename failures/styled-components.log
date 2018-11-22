@@ -83,5 +83,6 @@
 [info ] CombineOverloads.scala:54 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(styledDashComponentsLib) / Name(styledDashComponentsMod) / Name(BaseThemedCssFunction) [id => styled-components, phase => scala.js, this => Name(styledDashComponentsLib) / Name(styledDashComponentsMod) / Name(BaseThemedCssFunction)] 
 [info ] CombineOverloads.scala:54 Dropping 1 incompatible `apply` overloads (have no way to express this) at Name(styledDashComponentsLib) / Name(styledDashComponentsMod) / Name(BaseThemedCssFunction) [id => styled-components, phase => scala.js, this => Name(styledDashComponentsLib) / Name(styledDashComponentsMod) / Name(BaseThemedCssFunction)] 
 [debug] PhaseRunner.scala:78 Success [id => styled-components, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => styled-components, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => styled-components, phase => build] 
+[error] StyledComponentBase.scala:23 cyclic aliasing or subtyping involving type Omit,   def apply(props: (StyledComponentProps[C, T, O, A]) with styledDashComponentsLib.Anon_AsIntrinsicElements): reactLib.reactMod.ReactNs.ReactElement[StyledComponentProps[C, T, O, A]] = js.native [id => styled-components, phase => build] 
+[error] package.scala:32 cyclic aliasing or subtyping involving type Omit,   type StyledComponentProps[// The Component from whose props are derived [id => styled-components, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [styled-components => Compilation failed] [id => styled-components, phase => build] 

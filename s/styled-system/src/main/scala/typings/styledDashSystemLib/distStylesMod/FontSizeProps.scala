@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait FontSizeProps extends js.Object {
+trait FontSizeProps[TLength] extends js.Object {
   /**
        * The fontSize utility parses a component's `fontSize` prop and converts it into a CSS font-size declaration.
        *
@@ -16,6 +16,8 @@ trait FontSizeProps extends js.Object {
        * - And array values are converted into responsive values.
        *
        */
-  var fontSize: js.UndefOr[ResponsiveFontSizeValue] = js.undefined
+  var fontSize: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.FontSizeProperty[TLength]]
+  ] = js.undefined
 }
 

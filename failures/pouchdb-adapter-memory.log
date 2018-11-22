@@ -1,8 +1,0 @@
-[debug] PhaseRunner.scala:78 Success [id => pouchdb-adapter-memory, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pouchdb-adapter-memory/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pouchdb-adapter-memory),TsIdentLibrarySimple(pouchdb-adapter-memory)),TsIdentModule(None,List(pouchdb-adapter-memory))) [id => pouchdb-adapter-memory, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(pouchdb-adapter-memory) [id => pouchdb-adapter-memory, phase => typescript] 
-[debug] PhaseRunner.scala:78 Success [id => pouchdb-adapter-memory, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(pouchdb-adapter-memory) [id => pouchdb-adapter-memory, phase => scala.js] 
-[debug] PhaseRunner.scala:78 Success [id => pouchdb-adapter-memory, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => pouchdb-adapter-memory, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => pouchdb-adapter-memory, phase => build] 

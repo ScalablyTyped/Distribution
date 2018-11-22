@@ -1,8 +1,0 @@
-[debug] PhaseRunner.scala:78 Success [id => mongoose-promise, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/mongoose-promise/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/mongoose-promise),TsIdentLibrarySimple(mongoose-promise)),TsIdentModule(None,List(mongoose-promise))) [id => mongoose-promise, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(mongoose-promise) [id => mongoose-promise, phase => typescript] 
-[debug] PhaseRunner.scala:78 Success [id => mongoose-promise, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(mongoose-promise) [id => mongoose-promise, phase => scala.js] 
-[debug] PhaseRunner.scala:78 Success [id => mongoose-promise, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => mongoose-promise, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => mongoose-promise, phase => build] 

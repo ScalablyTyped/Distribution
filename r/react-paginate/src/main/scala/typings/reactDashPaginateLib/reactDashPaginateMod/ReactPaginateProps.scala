@@ -12,13 +12,17 @@ trait ReactPaginateProps extends js.Object {
        */
   var activeClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
+       * The classname for the active link.
+       */
+  var activeLinkClassName: js.UndefOr[java.lang.String] = js.undefined
+  /**
        * The classname on tag `li` of the ellipsis element.
        */
-  var breakClassName: js.UndefOr[java.lang.String | reactLib.reactMod.Global.JSXNs.Element] = js.undefined
+  var breakClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Label for ellipsis.
        */
-  var breakLabel: js.UndefOr[java.lang.String | reactLib.reactMod.Global.JSXNs.Element] = js.undefined
+  var breakLabel: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
        * The classname of the pagination container.
        */
@@ -58,7 +62,7 @@ trait ReactPaginateProps extends js.Object {
   /**
        * Label for the `next` button.
        */
-  var nextLabel: js.UndefOr[java.lang.String | reactLib.reactMod.Global.JSXNs.Element] = js.undefined
+  var nextLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
        * The classname on tag `a` of the `next` button.
        */
@@ -90,7 +94,7 @@ trait ReactPaginateProps extends js.Object {
   /**
        * Label for the `previous` button.
        */
-  var previousLabel: js.UndefOr[java.lang.String | reactLib.reactMod.Global.JSXNs.Element] = js.undefined
+  var previousLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
        * The classname on tag `a` of the `previous` button.
        */

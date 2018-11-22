@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait GridRowGapProps extends js.Object {
+trait GridRowGapProps[TLength] extends js.Object {
   /**
        * The row-gap CSS property sets the size of the gap (gutter) between an element's rows.
        *
@@ -14,6 +14,8 @@ trait GridRowGapProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap)
        */
-  var gridRowGap: js.UndefOr[ResponsiveGridGapValue] = js.undefined
+  var gridRowGap: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.GridRowGapProperty[TLength]]
+  ] = js.undefined
 }
 

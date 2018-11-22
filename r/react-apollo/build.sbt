@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-apollo"
-version := "2.2.4-56f880"
+version := "2.2.4-5474ec"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,13 +13,13 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "csstype" % "2.5.7-eccde3",
   "com.scalablytyped" %%% "fclone" % "1.0.11-4304d4",
   "com.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-4871a9",
-  "com.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-8edc3f",
+  "com.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-19b6d2",
   "com.scalablytyped" %%% "invariant" % "2.2.0-dt-20180910Z-c8b620",
   "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-caf0c5",
   "com.scalablytyped" %%% "lodash_dot_flowright" % "3.5-dt-20180910Z-6d2825",
   "com.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20180910Z-15c31a",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-44bb36",
+  "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "com.scalablytyped" %%% "symbol-observable" % "1.2.0-e6336c",
   "com.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-2ae465",

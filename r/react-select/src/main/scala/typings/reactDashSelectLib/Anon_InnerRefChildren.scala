@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait Anon_InnerRefChildren extends js.Object {
   /** The children to be rendered. */
   var children: reactLib.reactMod.ReactNs.ReactNode
+  /* The data of the selected option. */
+  var data: js.Any
   /** props passed to the wrapping element for the group. */
   var innerProps: reactDashSelectLib.libComponentsOptionMod.InnerProps
   /** Inner ref to DOM Node */

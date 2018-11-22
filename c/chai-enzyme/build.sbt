@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "chai-enzyme"
-version := "0.6.1-dt-20180910Z-dd7109"
+version := "0.6.1-dt-20180910Z-7f0daf"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "chai" % "4.1-dt-20181027Z-6f0d7d",
   "com.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20180910Z-128fe3",
   "com.scalablytyped" %%% "csstype" % "2.5.7-eccde3",
-  "com.scalablytyped" %%% "enzyme" % "3.1-dt-20181109Z-f63670",
+  "com.scalablytyped" %%% "enzyme" % "3.1-dt-20181109Z-d6f314",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-44bb36",
+  "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

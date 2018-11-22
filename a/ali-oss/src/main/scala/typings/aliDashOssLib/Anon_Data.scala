@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Data extends js.Object {
-  var data: aliDashOssLib.aliDashOssMod.PutChannelConf
-  var res: aliDashOssLib.aliDashOssMod.NormalSuccessResponse
+  var data: js.Object
+  var res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
 }
 

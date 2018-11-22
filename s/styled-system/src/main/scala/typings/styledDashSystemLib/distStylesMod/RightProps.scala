@@ -6,13 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait RightProps extends js.Object {
+trait RightProps[TLength] extends js.Object {
   /**
        * The right CSS property participates in specifying the horizontal position of a
        * positioned element. It has no effect on non-positioned elements.
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/right)
        */
-  var right: js.UndefOr[ResponsiveRightValue] = js.undefined
+  var right: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.RightProperty[TLength]]
+  ] = js.undefined
 }
 

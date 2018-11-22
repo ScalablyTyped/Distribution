@@ -13,7 +13,7 @@ object reactDashAddonsDashTestDashUtilsModMembers extends js.Object {
     root: reactLib.reactMod.Component[_, js.Object, _],
     fn: js.Function1[/* i */ reactLib.reactMod.ReactNs.ReactInstance, scala.Boolean]
   ): js.Array[reactLib.reactMod.ReactNs.ReactInstance] = js.native
-  def findRenderedComponentWithType[T /* <: reactLib.reactMod.Component[js.Object, js.Object, _] */, C /* <: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] */](
+  def findRenderedComponentWithType[T /* <: reactLib.reactMod.Component[_, js.Object, _] */, C /* <: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] */](
     root: reactLib.reactMod.Component[_, js.Object, _],
     `type`: reactLib.reactMod.ReactNs.ClassType[_, T, C]
   ): T = js.native
@@ -44,7 +44,7 @@ object reactDashAddonsDashTestDashUtilsModMembers extends js.Object {
   def renderIntoDocument[T /* <: reactLib.reactMod.Component[_, js.Object, _] */](element: reactLib.reactMod.ReactNs.CElement[_, T]): T = js.native
   def renderIntoDocument[T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.DOMElement[_, T]): T = js.native
   def renderIntoDocument[P](element: reactLib.reactMod.ReactNs.ReactElement[P]): (reactLib.reactMod.Component[P, js.Object, _]) | reactLib.Element | scala.Unit = js.native
-  def scryRenderedComponentsWithType[T /* <: reactLib.reactMod.Component[js.Object, js.Object, _] */, C /* <: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] */](
+  def scryRenderedComponentsWithType[T /* <: reactLib.reactMod.Component[_, js.Object, _] */, C /* <: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] */](
     root: reactLib.reactMod.Component[_, js.Object, _],
     `type`: reactLib.reactMod.ReactNs.ClassType[_, T, C]
   ): js.Array[T] = js.native

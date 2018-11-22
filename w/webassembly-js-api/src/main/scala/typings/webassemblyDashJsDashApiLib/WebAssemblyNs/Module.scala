@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WebAssembly.Module")
 @js.native
 class Module protected () extends js.Object {
-  def this(bufferSource: stdLib.ArrayBuffer) = this()
-  def this(bufferSource: stdLib.Uint8Array) = this()
+  def this(bufferSource: BufferSource) = this()
 }
 
 /**

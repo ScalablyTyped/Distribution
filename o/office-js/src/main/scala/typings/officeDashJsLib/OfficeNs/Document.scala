@@ -30,10 +30,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            */
   var bindings: Bindings = js.native
@@ -52,8 +52,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            */
   var customXmlParts: CustomXmlParts = js.native
@@ -72,11 +72,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            */
   var mode: DocumentMode = js.native
@@ -95,11 +95,12 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
+           *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td><</tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td><</tr>
            *  </table>
            */
   var settings: Settings = js.native
@@ -118,7 +119,7 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
            *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
            *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
            *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
@@ -144,11 +145,12 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param eventType For a Document object event, the eventType parameter can be specified as `Office.EventType.Document.SelectionChanged` or 
@@ -176,11 +178,12 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param eventType For a Document object event, the eventType parameter can be specified as `Office.EventType.Document.SelectionChanged` or 
@@ -208,11 +211,12 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param eventType For a Document object event, the eventType parameter can be specified as `Office.EventType.Document.SelectionChanged` or 
@@ -245,10 +249,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td>                            </td><td>                            </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td>                            </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -276,10 +278,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td>                            </td><td>                            </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td>                            </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -307,10 +307,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td>                            </td><td>                            </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td>                            </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -342,13 +340,13 @@ trait Document extends js.Object {
            * The fileType parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with 
            * the host:
            *
-           * Excel Online, Win32, Mac, and iOS: `Office.FileType.Compressed`
+           * Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+           * 
+           * Excel for Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
            *
-           * PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
+           * PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
            *
-           * Word on Windows desktop, Word on Mac, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
-           *
-           * Word on iPad: `Office.FileType.Compressed`, `Office.FileType.Text`
+           * Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
            * 
            * **Support details**
            * 
@@ -360,10 +358,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param fileType The format in which the file will be returned
@@ -386,13 +384,13 @@ trait Document extends js.Object {
            * The fileType parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with 
            * the host:
            *
-           * Excel Online, Win32, Mac, and iOS: `Office.FileType.Compressed`
+           * Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+           * 
+           * Excel for Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
            *
-           * PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
+           * PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
            *
-           * Word on Windows desktop, Word on Mac, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
-           *
-           * Word on iPad: `Office.FileType.Compressed`, `Office.FileType.Text`
+           * Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
            * 
            * **Support details**
            * 
@@ -404,10 +402,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param fileType The format in which the file will be returned
@@ -430,13 +428,13 @@ trait Document extends js.Object {
            * The fileType parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with 
            * the host:
            *
-           * Excel Online, Win32, Mac, and iOS: `Office.FileType.Compressed`
+           * Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+           * 
+           * Excel for Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
            *
-           * PowerPoint on Windows desktop, Mac, and iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
+           * PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
            *
-           * Word on Windows desktop, Word on Mac, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
-           *
-           * Word on iPad: `Office.FileType.Compressed`, `Office.FileType.Text`
+           * Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
            * 
            * **Support details**
            * 
@@ -448,10 +446,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param fileType The format in which the file will be returned
@@ -482,10 +480,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -511,10 +509,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -540,10 +538,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -656,8 +654,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getMaxTaskIndexAsync(): scala.Unit = js.native
@@ -682,8 +680,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getMaxTaskIndexAsync(options: AsyncContextOptions): scala.Unit = js.native
@@ -708,8 +706,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getMaxTaskIndexAsync(
@@ -735,8 +733,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getProjectFieldAsync(fieldId: scala.Double): scala.Unit = js.native
@@ -759,8 +757,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getProjectFieldAsync(fieldId: scala.Double, options: AsyncContextOptions): scala.Unit = js.native
@@ -783,8 +781,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getProjectFieldAsync(
@@ -814,8 +812,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getResourceByIndexAsync(resourceIndex: scala.Double): scala.Unit = js.native
@@ -841,8 +839,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getResourceByIndexAsync(resourceIndex: scala.Double, options: AsyncContextOptions): scala.Unit = js.native
@@ -868,8 +866,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getResourceByIndexAsync(
@@ -897,8 +895,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double): scala.Unit = js.native
@@ -922,8 +920,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double, options: AsyncContextOptions): scala.Unit = js.native
@@ -947,8 +945,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getResourceFieldAsync(
@@ -997,15 +995,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -1013,7 +1011,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -1032,12 +1030,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param coercionType The type of data structure to return. See the remarks section for each host's supported coercion types.
@@ -1090,15 +1087,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -1106,7 +1103,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -1125,12 +1122,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param coercionType The type of data structure to return. See the remarks section for each host's supported coercion types.
@@ -1183,15 +1179,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -1199,7 +1195,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -1218,12 +1214,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param coercionType The type of data structure to return. See the remarks section for each host's supported coercion types.
@@ -1258,8 +1253,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getSelectedResourceAsync(): scala.Unit = js.native
@@ -1281,8 +1276,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getSelectedResourceAsync(options: AsyncContextOptions): scala.Unit = js.native
@@ -1304,8 +1299,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getSelectedResourceAsync(
@@ -1330,8 +1325,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getSelectedTaskAsync(): scala.Unit = js.native
@@ -1353,8 +1348,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getSelectedTaskAsync(options: AsyncContextOptions): scala.Unit = js.native
@@ -1376,8 +1371,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getSelectedTaskAsync(
@@ -1404,8 +1399,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getSelectedViewAsync(): scala.Unit = js.native
@@ -1429,8 +1424,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getSelectedViewAsync(options: AsyncContextOptions): scala.Unit = js.native
@@ -1454,8 +1449,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getSelectedViewAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
@@ -1481,8 +1476,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getTaskAsync(taskId: java.lang.String): scala.Unit = js.native
@@ -1508,8 +1503,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getTaskAsync(taskId: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
@@ -1535,8 +1530,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getTaskAsync(
@@ -1566,8 +1561,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getTaskByIndexAsync(taskIndex: scala.Double): scala.Unit = js.native
@@ -1593,8 +1588,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getTaskByIndexAsync(taskIndex: scala.Double, options: AsyncContextOptions): scala.Unit = js.native
@@ -1620,8 +1615,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getTaskByIndexAsync(
@@ -1649,8 +1644,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double): scala.Unit = js.native
@@ -1674,8 +1669,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double, options: AsyncContextOptions): scala.Unit = js.native
@@ -1699,8 +1694,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getTaskFieldAsync(
@@ -1729,8 +1724,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getWSSUrlAsync(): scala.Unit = js.native
@@ -1754,8 +1749,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getWSSUrlAsync(options: AsyncContextOptions): scala.Unit = js.native
@@ -1779,8 +1774,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def getWSSUrlAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
@@ -1813,10 +1808,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param id The identifier of the object or location to go to.
@@ -1855,10 +1850,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param id The identifier of the object or location to go to.
@@ -1897,10 +1892,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param id The identifier of the object or location to go to.
@@ -1944,10 +1939,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param id The identifier of the object or location to go to.
@@ -1986,10 +1981,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param id The identifier of the object or location to go to.
@@ -2028,10 +2023,10 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param id The identifier of the object or location to go to.
@@ -2062,10 +2057,12 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param eventType The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
@@ -2089,10 +2086,12 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param eventType The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
@@ -2116,10 +2115,12 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> OneNote    </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            *
            * @param eventType The event type. For document can be 'Document.SelectionChanged' or 'Document.ActiveViewChanged'.
@@ -2154,8 +2155,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double, fieldValue: java.lang.String): scala.Unit = js.native
@@ -2182,8 +2183,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(
@@ -2215,8 +2216,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(
@@ -2249,8 +2250,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double, fieldValue: js.Object): scala.Unit = js.native
@@ -2277,8 +2278,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(
@@ -2310,8 +2311,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(
@@ -2344,8 +2345,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double, fieldValue: scala.Boolean): scala.Unit = js.native
@@ -2372,8 +2373,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(
@@ -2405,8 +2406,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(
@@ -2439,8 +2440,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(resourceId: java.lang.String, fieldId: scala.Double, fieldValue: scala.Double): scala.Unit = js.native
@@ -2467,8 +2468,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(
@@ -2500,8 +2501,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setResourceFieldAsync(
@@ -2552,15 +2553,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -2568,7 +2569,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -2587,11 +2588,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td> y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
@@ -2665,15 +2666,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -2681,7 +2682,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -2700,11 +2701,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td> y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
@@ -2778,15 +2779,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -2794,7 +2795,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -2813,11 +2814,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td> y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
@@ -2895,15 +2896,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -2911,7 +2912,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -2930,11 +2931,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td> y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
@@ -3008,15 +3009,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -3024,7 +3025,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -3043,11 +3044,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td> y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
@@ -3121,15 +3122,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -3137,7 +3138,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -3156,11 +3157,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td> y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
@@ -3238,15 +3239,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -3254,7 +3255,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -3273,11 +3274,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td> y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
@@ -3351,15 +3352,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -3367,7 +3368,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -3386,11 +3387,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td> y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
@@ -3464,15 +3465,15 @@ trait Document extends js.Object {
            *     <th>Supported coercionType</th>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Excel Online, PowerPoint, PowerPoint Online, Word, and Word Online</td>
+           *     <td>Excel, PowerPoint, Project, and Word</td>
            *     <td>`Office.CoercionType.Text` (string)</td>
            *   </tr>
            *   <tr>
-           *     <td>Excel, Word, and Word Online</td>
+           *     <td>Excel and Word</td>
            *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
            *   </tr>
            *   <tr>
-           *     <td>Access, Excel, Word, and Word Online</td>
+           *     <td>Access, Excel, and Word</td>
            *     <td>`Office.CoercionType.Table` (TableData object)</td>
            *   </tr>
            *   <tr>
@@ -3480,7 +3481,7 @@ trait Document extends js.Object {
            *     <td>`Office.CoercionType.Html`</td>
            *   </tr>
            *   <tr>
-           *     <td>Word and Word Online </td>
+           *     <td>Word</td>
            *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
            *   </tr>
            *   <tr>
@@ -3499,11 +3500,11 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-           *   <tr><td><strong> Access     </strong></td><td> y                          </td><td>                            </td><td>                 </td></tr>
-           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
+           *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr>
+           *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
+           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                </td></tr>
+           *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td> Y              </td></tr>
            *  </table>
            * 
            * @param data The data to be set. Either a string or  {@link Office.CoercionType} value, 2d array or TableData object.
@@ -3563,8 +3564,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double, fieldValue: java.lang.String): scala.Unit = js.native
@@ -3591,8 +3592,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(
@@ -3624,8 +3625,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(
@@ -3658,8 +3659,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double, fieldValue: js.Object): scala.Unit = js.native
@@ -3686,8 +3687,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(
@@ -3719,8 +3720,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(
@@ -3753,8 +3754,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double, fieldValue: scala.Boolean): scala.Unit = js.native
@@ -3781,8 +3782,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(
@@ -3814,8 +3815,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(
@@ -3848,8 +3849,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(taskId: java.lang.String, fieldId: scala.Double, fieldValue: scala.Double): scala.Unit = js.native
@@ -3876,8 +3877,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(
@@ -3909,8 +3910,8 @@ trait Document extends js.Object {
            * 
            * *Supported hosts, by platform*
            *  <table>
-           *   <tr><th>                    </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
-           *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                           </td></tr>
+           *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser)</th></tr>
+           *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                           </td></tr>
            *  </table>
            */
   def setTaskFieldAsync(

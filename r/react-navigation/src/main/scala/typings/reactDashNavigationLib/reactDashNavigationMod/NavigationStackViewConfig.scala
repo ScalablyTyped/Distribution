@@ -43,5 +43,6 @@ trait NavigationStackViewConfig extends js.Object {
       TransitionConfig
     ]
   ] = js.undefined
+  var transparentCard: js.UndefOr[scala.Boolean] = js.undefined
 }
 

@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "detect-browser"
-version := "2.0-dt-20180910Z-3a4f22"
+version := "3.0-dt-20181121Z-dfbc4d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

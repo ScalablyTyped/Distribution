@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_DataRes extends js.Object {
-  var data: js.Object
-  var res: aliDashOssLib.aliDashOssMod.NormalSuccessResponse
+  var data: aliDashOssLib.aliDashOssMod.OSSNs.StyleData
+  var res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
 }
 

@@ -8,5 +8,5 @@
 [debug] PhaseRunner.scala:78 Success [id => electron-builder, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(electron-builder) [id => electron-builder, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => electron-builder, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => electron-builder, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => electron-builder, phase => build] 
+[warn ] PhaseRunner.scala:64 Failed because of, [iconv-lite => Compilation failed] [id => electron-builder, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [iconv-lite => Compilation failed] [id => electron-builder, phase => build] 

@@ -12,6 +12,8 @@ trait BackgroundImageProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
        */
-  var backgroundImage: js.UndefOr[ResponsiveBackgroundImageValue] = js.undefined
+  var backgroundImage: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.BackgroundImageProperty]
+  ] = js.undefined
 }
 

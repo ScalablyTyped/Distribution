@@ -11,7 +11,7 @@ class Bus ()
   extends reactLib.reactMod.Component[BusProps, js.Object, js.Any] {
   @JSName("context")
   var context_Bus: glDashReactLib.Anon_GlParentGlSurface = js.native
-  var dependents: js.Array[Node | Surface] = js.native
+  var dependents: js.Array[Node | Surface[_]] = js.native
   var glBusRootNode: js.Any = js.native
   var glNode: js.UndefOr[Node] = js.native
   var id: scala.Double = js.native

@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "apollo-link-ws"
-version := "1.0.8-528ead"
+version := "1.0.8-2f8394"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,11 +16,11 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "lodash_dot_assign" % "4.2-dt-20180910Z-972791",
   "com.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20180910Z-eb876c",
   "com.scalablytyped" %%% "lodash_dot_isstring" % "4.0-dt-20180910Z-d0342e",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.8-5b7f55",
+  "com.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.8-138d2d",
   "com.scalablytyped" %%% "symbol-observable" % "1.2.0-e6336c",
-  "com.scalablytyped" %%% "ws" % "6.0-dt-20180910Z-aa3847",
+  "com.scalablytyped" %%% "ws" % "6.0-dt-20180910Z-0d0df0",
   "com.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-2ae465",
   "com.scalablytyped" %%% "zen-observable-ts" % "0.8.10-36203d",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

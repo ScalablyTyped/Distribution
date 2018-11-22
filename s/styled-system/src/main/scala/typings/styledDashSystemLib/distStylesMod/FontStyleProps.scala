@@ -13,6 +13,8 @@ trait FontStyleProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
        */
-  var fontStyle: js.UndefOr[ResponsiveFontStyleValue] = js.undefined
+  var fontStyle: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.FontStyleProperty]
+  ] = js.undefined
 }
 

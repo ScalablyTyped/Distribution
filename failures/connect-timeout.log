@@ -1,8 +1,0 @@
-[debug] PhaseRunner.scala:78 Success [id => connect-timeout, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/connect-timeout/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/connect-timeout),TsIdentLibrarySimple(connect-timeout)),TsIdentModule(None,List(connect-timeout))) [id => connect-timeout, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(connect-timeout) [id => connect-timeout, phase => typescript] 
-[debug] PhaseRunner.scala:78 Success [id => connect-timeout, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(connect-timeout) [id => connect-timeout, phase => scala.js] 
-[debug] PhaseRunner.scala:78 Success [id => connect-timeout, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => connect-timeout, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => connect-timeout, phase => build] 

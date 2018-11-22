@@ -12,6 +12,8 @@ trait BorderColorProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color)
        */
-  var borderColor: js.UndefOr[ResponsiveBorderColorValue] = js.undefined
+  var borderColor: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.BorderColorProperty]
+  ] = js.undefined
 }
 

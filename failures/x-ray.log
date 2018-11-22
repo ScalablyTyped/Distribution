@@ -7,5 +7,5 @@
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(x-ray) [id => x-ray, phase => scala.js] 
 [info ] RemoveDuplicateInheritance.scala:55 Dropped parents QualifiedName(List(Name(ScalablyTyped), Name(runtime), Name(NumberDictionary))) at Name(xDashRayLib) / Name(xDashRayMod) / Name(XRayNs) / Name(SelectorArray) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(ScalablyTyped), Name(runtime), Name(NumberDictionary))),List(),Comments(1))) [id => x-ray, phase => scala.js, this => Name(xDashRayLib) / Name(xDashRayMod) / Name(XRayNs) / Name(SelectorArray)] 
 [debug] PhaseRunner.scala:78 Success [id => x-ray, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => x-ray, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => x-ray, phase => build] 
+[error] package.scala:13 illegal cyclic reference involving type Selector,   type ScalarSelector = java.lang.String | InstanceInvocation | ScalablyTyped.runtime.StringDictionary[Selector] [id => x-ray, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [x-ray => Compilation failed] [id => x-ray, phase => build] 

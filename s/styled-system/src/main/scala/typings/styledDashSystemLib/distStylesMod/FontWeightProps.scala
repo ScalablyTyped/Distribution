@@ -14,6 +14,8 @@ trait FontWeightProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
        */
-  var fontWeight: js.UndefOr[ResponsiveFontWeightValue] = js.undefined
+  var fontWeight: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.FontWeightProperty]
+  ] = js.undefined
 }
 

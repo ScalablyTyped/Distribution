@@ -14,6 +14,8 @@ trait BoxShadowProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
        */
-  var boxShadow: js.UndefOr[ResponsiveBoxShadowValue] = js.undefined
+  var boxShadow: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.BoxShadowProperty | scala.Double]
+  ] = js.undefined
 }
 

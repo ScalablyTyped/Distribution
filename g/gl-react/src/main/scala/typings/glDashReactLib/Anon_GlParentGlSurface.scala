@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_GlParentGlSurface extends js.Object {
-  var glParent: glDashReactLib.glDashReactMod.Surface | glDashReactLib.glDashReactMod.Node
-  var glSurface: glDashReactLib.glDashReactMod.Surface
+  var glParent: glDashReactLib.glDashReactMod.Surface[_] | glDashReactLib.glDashReactMod.Node
+  var glSurface: glDashReactLib.glDashReactMod.Surface[_]
 }
 

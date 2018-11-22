@@ -13,6 +13,8 @@ trait ZIndexProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
        */
-  var zIndex: js.UndefOr[ZIndexValue] = js.undefined
+  var zIndex: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.ZIndexProperty]
+  ] = js.undefined
 }
 

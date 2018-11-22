@@ -14,6 +14,8 @@ trait GridColumnProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)
        */
-  var gridColumn: js.UndefOr[ResponsiveGridCellValue] = js.undefined
+  var gridColumn: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.GridColumnProperty]
+  ] = js.undefined
 }
 

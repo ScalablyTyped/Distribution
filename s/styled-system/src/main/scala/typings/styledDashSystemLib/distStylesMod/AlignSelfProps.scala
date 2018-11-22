@@ -15,6 +15,8 @@ trait AlignSelfProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
        */
-  var alignSelf: js.UndefOr[ResponsiveAlignSelfValue] = js.undefined
+  var alignSelf: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.AlignSelfProperty]
+  ] = js.undefined
 }
 

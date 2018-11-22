@@ -1,32 +1,32 @@
 organization := "com.scalablytyped"
 name := "koa-logger-winston"
-version := "0.0-dt-20180910Z-f19793"
+version := "0.0-dt-20180910Z-52d442"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "accepts" % "1.3-dt-20180910Z-ec3510",
+  "com.scalablytyped" %%% "accepts" % "1.3-dt-20180910Z-2db5ba",
   "com.scalablytyped" %%% "async" % "2.0.1-dt-20181020Z-4e61c0",
-  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-6ca2c5",
-  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-feceb2",
-  "com.scalablytyped" %%% "cookies" % "0.7-dt-20180910Z-d3b0bd",
-  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-4d8764",
-  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-43b19a",
-  "com.scalablytyped" %%% "http-assert" % "1.3-dt-20180910Z-641cf1",
-  "com.scalablytyped" %%% "is-stream" % "1.1-dt-20180910Z-4f5489",
+  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-69217a",
+  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-ffa116",
+  "com.scalablytyped" %%% "cookies" % "0.7-dt-20180910Z-fdf383",
+  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-673f92",
+  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-b9e3b3",
+  "com.scalablytyped" %%% "http-assert" % "1.3-dt-20181121Z-641cf1",
+  "com.scalablytyped" %%% "is-stream" % "1.1-dt-20180910Z-587d0c",
   "com.scalablytyped" %%% "keygrip" % "1.0-dt-20180910Z-c9489d",
-  "com.scalablytyped" %%% "koa" % "2.x-dt-20181120Z-a9709f",
+  "com.scalablytyped" %%% "koa" % "2.x-dt-20181120Z-4af04c",
   "com.scalablytyped" %%% "koa-compose" % "3.2-dt-20180910Z-fc463f",
   "com.scalablytyped" %%% "logform" % "1.2-dt-20180910Z-9d5b62",
   "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-f9ab87",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-dfa7aa",
-  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-5d47cf",
+  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-8d9c98",
   "com.scalablytyped" %%% "stack-trace" % "0.0-unknown-dt-20180910Z-d3ba3d",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "com.scalablytyped" %%% "triple-beam" % "1.3-dt-20180910Z-60e569",
-  "com.scalablytyped" %%% "winston" % "3.1.0-beb718",
-  "com.scalablytyped" %%% "winston-transport" % "4.2.0-5f641b",
+  "com.scalablytyped" %%% "winston" % "3.1.0-f6b5bb",
+  "com.scalablytyped" %%% "winston-transport" % "4.2.0-f18080",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

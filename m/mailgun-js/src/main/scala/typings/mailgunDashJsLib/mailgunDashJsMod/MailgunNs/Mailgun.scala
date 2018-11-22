@@ -13,21 +13,52 @@ trait Mailgun extends js.Object {
   def parse(addressList: js.Array[java.lang.String]): stdLib.Promise[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ParseResponse] = js.native
   def parse(
     addressList: js.Array[java.lang.String],
-    callback: js.Function2[
-      /* error */ Error, 
-      /* body */ mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidateResponse, 
-      scala.Unit
-    ]
+    callback: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationCallback
   ): stdLib.Promise[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ParseResponse] = js.native
   def validate(address: java.lang.String): stdLib.Promise[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidateResponse] = js.native
   def validate(
     address: java.lang.String,
-    callback: js.Function2[
-      /* error */ Error, 
-      /* body */ mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidateResponse, 
-      scala.Unit
-    ]
+    callback: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationCallback
+  ): scala.Unit = js.native
+  def validate(address: java.lang.String, isPrivate: mailgunDashJsLib.mailgunDashJsLibNumbers.`false`): stdLib.Promise[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidateResponse] = js.native
+  def validate(
+    address: java.lang.String,
+    isPrivate: mailgunDashJsLib.mailgunDashJsLibNumbers.`false`,
+    opts: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationOptionsPublic
   ): stdLib.Promise[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidateResponse] = js.native
+  def validate(
+    address: java.lang.String,
+    isPrivate: mailgunDashJsLib.mailgunDashJsLibNumbers.`false`,
+    opts: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationOptionsPublic,
+    callback: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationCallback
+  ): scala.Unit = js.native
+  def validate(address: java.lang.String, isPrivate: mailgunDashJsLib.mailgunDashJsLibNumbers.`true`): stdLib.Promise[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidateResponse] = js.native
+  def validate(
+    address: java.lang.String,
+    isPrivate: mailgunDashJsLib.mailgunDashJsLibNumbers.`true`,
+    opts: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationOptionsPrivate
+  ): stdLib.Promise[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidateResponse] = js.native
+  def validate(
+    address: java.lang.String,
+    isPrivate: mailgunDashJsLib.mailgunDashJsLibNumbers.`true`,
+    opts: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationOptionsPrivate,
+    callback: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationCallback
+  ): scala.Unit = js.native
+  // tslint:disable-next-line unified-signatures
+  def validate(
+    address: java.lang.String,
+    isPrivate: scala.Boolean,
+    callback: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationCallback
+  ): scala.Unit = js.native
+  def validate(
+    address: java.lang.String,
+    opts: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationOptionsPublic
+  ): stdLib.Promise[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidateResponse] = js.native
+  def validate(
+    address: java.lang.String,
+    opts: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationOptionsPublic,
+    callback: mailgunDashJsLib.mailgunDashJsMod.MailgunNs.validationNs.ValidationCallback
+  ): scala.Unit = js.native
   def validateWebhook(bodyTimestamp: scala.Double, bodyToken: java.lang.String, bodySignature: java.lang.String): scala.Boolean = js.native
 }
 

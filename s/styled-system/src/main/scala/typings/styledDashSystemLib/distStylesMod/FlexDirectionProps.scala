@@ -13,6 +13,8 @@ trait FlexDirectionProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
        */
-  var flexDirection: js.UndefOr[ResponsiveFlexDirectionValue] = js.undefined
+  var flexDirection: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.FlexDirectionProperty]
+  ] = js.undefined
 }
 

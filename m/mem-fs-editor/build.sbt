@@ -1,17 +1,17 @@
 organization := "com.scalablytyped"
 name := "mem-fs-editor"
-version := "4.0-dt-20180910Z-a36ee2"
+version := "4.0-dt-20180910Z-76a85e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "ejs" % "2.6-dt-20180910Z-9bb5f1",
-  "com.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-1b2f14",
-  "com.scalablytyped" %%% "mem-fs" % "1.1-dt-20180910Z-191017",
+  "com.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-cc6273",
+  "com.scalablytyped" %%% "mem-fs" % "1.1-dt-20180910Z-c9a9b1",
   "com.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-298c87",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "vinyl" % "2.0-dt-20180910Z-c07af2",
+  "com.scalablytyped" %%% "vinyl" % "2.0-dt-20180910Z-e8fbb3",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

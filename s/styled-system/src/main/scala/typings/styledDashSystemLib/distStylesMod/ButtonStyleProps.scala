@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait ButtonStyleProps extends js.Object {
-  var variant: js.UndefOr[ResponsiveVariant] = js.undefined
+  var variant: js.UndefOr[styledDashSystemLib.distSpaceMod.ResponsiveValue[java.lang.String]] = js.undefined
 }
 

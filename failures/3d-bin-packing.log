@@ -98,5 +98,5 @@
 [info ] CompleteClass.scala:60 Completed implementations Vector(setName, getWidth, setWidth, setHeight, TYPE, getHeight, getVolume, getName, getLength, setLength) [id => 3d-bin-packing, phase => scala.js, this => Name(3dDashBinDashPackingLib) / Name(bwsNs) / Name(packerNs) / Name(Product)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(setName, getWidth, setWidth, setHeight, TYPE, getHeight, getVolume, getName, getLength, setLength) [id => 3d-bin-packing, phase => scala.js, this => Name(3dDashBinDashPackingLib) / Name(bwsNs) / Name(packerNs) / Name(Wrapper)] 
 [debug] PhaseRunner.scala:78 Success [id => 3d-bin-packing, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [tstl => Compilation failed, node => Compilation failed] [id => 3d-bin-packing, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [tstl => Compilation failed, node => Compilation failed] [id => 3d-bin-packing, phase => build] 
+[warn ] PhaseRunner.scala:64 Failed because of, [tstl => Compilation failed] [id => 3d-bin-packing, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [tstl => Compilation failed] [id => 3d-bin-packing, phase => build] 

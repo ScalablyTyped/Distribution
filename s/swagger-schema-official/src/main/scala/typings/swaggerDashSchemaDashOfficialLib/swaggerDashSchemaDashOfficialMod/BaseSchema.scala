@@ -10,8 +10,8 @@ trait BaseSchema extends js.Object {
   var default: js.UndefOr[java.lang.String | scala.Boolean | scala.Double | js.Object] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var enum: js.UndefOr[js.Array[java.lang.String | scala.Boolean | scala.Double | js.Object]] = js.undefined
-  var exclusiveMaximum: js.UndefOr[scala.Double] = js.undefined
-  var exclusiveMinimum: js.UndefOr[scala.Double] = js.undefined
+  var exclusiveMaximum: js.UndefOr[scala.Boolean] = js.undefined
+  var exclusiveMinimum: js.UndefOr[scala.Boolean] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
   var items: js.UndefOr[Schema | js.Array[Schema]] = js.undefined
   var maxItems: js.UndefOr[scala.Double] = js.undefined

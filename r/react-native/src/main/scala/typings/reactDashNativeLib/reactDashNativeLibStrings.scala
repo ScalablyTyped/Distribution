@@ -61,6 +61,9 @@ object reactDashNativeLibStrings {
   sealed trait ETHERNET extends js.Object
   
   @js.native
+  sealed trait Empty extends js.Object
+  
+  @js.native
   sealed trait Event extends js.Object
   
   @js.native
@@ -190,6 +193,9 @@ object reactDashNativeLibStrings {
   sealed trait WIMAX extends js.Object
   
   @js.native
+  sealed trait abort extends js.Object
+  
+  @js.native
   sealed trait absolute extends js.Object
   
   @js.native
@@ -295,6 +301,9 @@ object reactDashNativeLibStrings {
   sealed trait announcementFinished extends js.Object
   
   @js.native
+  sealed trait arraybuffer extends js.Object
+  
+  @js.native
   sealed trait `ascii-capable` extends js.Object
   
   @js.native
@@ -329,6 +338,9 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait black extends js.Object
+  
+  @js.native
+  sealed trait blob extends js.Object
   
   @js.native
   sealed trait bold extends js.Object
@@ -455,6 +467,9 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait disk extends js.Object
+  
+  @js.native
+  sealed trait document extends js.Object
   
   @js.native
   sealed trait done extends js.Object
@@ -616,6 +631,9 @@ object reactDashNativeLibStrings {
   sealed trait jpeg extends js.Object
   
   @js.native
+  sealed trait json extends js.Object
+  
+  @js.native
   sealed trait justify extends js.Object
   
   @js.native
@@ -653,6 +671,15 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait link extends js.Object
+  
+  @js.native
+  sealed trait load extends js.Object
+  
+  @js.native
+  sealed trait loadend extends js.Object
+  
+  @js.native
+  sealed trait loadstart extends js.Object
   
   @js.native
   sealed trait localNotification extends js.Object
@@ -832,10 +859,16 @@ object reactDashNativeLibStrings {
   sealed trait previous extends js.Object
   
   @js.native
+  sealed trait progress extends js.Object
+  
+  @js.native
   sealed trait radiobutton_checked extends js.Object
   
   @js.native
   sealed trait radiobutton_unchecked extends js.Object
+  
+  @js.native
+  sealed trait readystatechange extends js.Object
   
   @js.native
   sealed trait recents extends js.Object
@@ -976,6 +1009,9 @@ object reactDashNativeLibStrings {
   sealed trait time extends js.Object
   
   @js.native
+  sealed trait timeout extends js.Object
+  
+  @js.native
   sealed trait top extends js.Object
   
   @js.native
@@ -1074,6 +1110,7 @@ object reactDashNativeLibStrings {
   def DUMMY: DUMMY = "DUMMY".asInstanceOf[DUMMY]
   def Dragging: Dragging = "Dragging".asInstanceOf[Dragging]
   def ETHERNET: ETHERNET = "ETHERNET".asInstanceOf[ETHERNET]
+  def Empty: Empty = "".asInstanceOf[Empty]
   def Event: Event = "Event".asInstanceOf[Event]
   def Faces: Faces = "Faces".asInstanceOf[Faces]
   def GET: GET = "GET".asInstanceOf[GET]
@@ -1117,6 +1154,7 @@ object reactDashNativeLibStrings {
   def WIFI: WIFI = "WIFI".asInstanceOf[WIFI]
   def WIFI_P2P: WIFI_P2P = "WIFI_P2P".asInstanceOf[WIFI_P2P]
   def WIMAX: WIMAX = "WIMAX".asInstanceOf[WIMAX]
+  def abort: abort = "abort".asInstanceOf[abort]
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   def active: active = "active".asInstanceOf[active]
   def address: address = "address".asInstanceOf[address]
@@ -1152,6 +1190,7 @@ object reactDashNativeLibStrings {
   def androidDOTpermissionDOTWRITE_CONTACTS: androidDOTpermissionDOTWRITE_CONTACTS = "android.permission.WRITE_CONTACTS".asInstanceOf[androidDOTpermissionDOTWRITE_CONTACTS]
   def androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE: androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE = "android.permission.WRITE_EXTERNAL_STORAGE".asInstanceOf[androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE]
   def announcementFinished: announcementFinished = "announcementFinished".asInstanceOf[announcementFinished]
+  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   def `ascii-capable`: `ascii-capable` = "ascii-capable".asInstanceOf[`ascii-capable`]
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   def auto: auto = "auto".asInstanceOf[auto]
@@ -1164,6 +1203,7 @@ object reactDashNativeLibStrings {
   def basic: basic = "basic".asInstanceOf[basic]
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   def black: black = "black".asInstanceOf[black]
+  def blob: blob = "blob".asInstanceOf[blob]
   def bold: bold = "bold".asInstanceOf[bold]
   def bookmarks: bookmarks = "bookmarks".asInstanceOf[bookmarks]
   def bottom: bottom = "bottom".asInstanceOf[bottom]
@@ -1206,6 +1246,7 @@ object reactDashNativeLibStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   def disk: disk = "disk".asInstanceOf[disk]
+  def document: document = "document".asInstanceOf[document]
   def done: done = "done".asInstanceOf[done]
   def dotted: dotted = "dotted".asInstanceOf[dotted]
   def double: double = "double".asInstanceOf[double]
@@ -1259,6 +1300,7 @@ object reactDashNativeLibStrings {
   def jobTitle: jobTitle = "jobTitle".asInstanceOf[jobTitle]
   def join: join = "join".asInstanceOf[join]
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  def json: json = "json".asInstanceOf[json]
   def justify: justify = "justify".asInstanceOf[justify]
   def key: key = "key".asInstanceOf[key]
   def keyboardkey: keyboardkey = "keyboardkey".asInstanceOf[keyboardkey]
@@ -1272,6 +1314,9 @@ object reactDashNativeLibStrings {
   def `light-content`: `light-content` = "light-content".asInstanceOf[`light-content`]
   def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
   def link: link = "link".asInstanceOf[link]
+  def load: load = "load".asInstanceOf[load]
+  def loadend: loadend = "loadend".asInstanceOf[loadend]
+  def loadstart: loadstart = "loadstart".asInstanceOf[loadstart]
   def localNotification: localNotification = "localNotification".asInstanceOf[localNotification]
   def location: location = "location".asInstanceOf[location]
   def `locked-closed`: `locked-closed` = "locked-closed".asInstanceOf[`locked-closed`]
@@ -1331,8 +1376,10 @@ object reactDashNativeLibStrings {
   def position: position = "position".asInstanceOf[position]
   def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
   def previous: previous = "previous".asInstanceOf[previous]
+  def progress: progress = "progress".asInstanceOf[progress]
   def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
   def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
+  def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
   def recents: recents = "recents".asInstanceOf[recents]
   def register: register = "register".asInstanceOf[register]
   def registrationError: registrationError = "registrationError".asInstanceOf[registrationError]
@@ -1379,6 +1426,7 @@ object reactDashNativeLibStrings {
   def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
   def text: text = "text".asInstanceOf[text]
   def time: time = "time".asInstanceOf[time]
+  def timeout: timeout = "timeout".asInstanceOf[timeout]
   def top: top = "top".asInstanceOf[top]
   def `top-rated`: `top-rated` = "top-rated".asInstanceOf[`top-rated`]
   def trailing: trailing = "trailing".asInstanceOf[trailing]

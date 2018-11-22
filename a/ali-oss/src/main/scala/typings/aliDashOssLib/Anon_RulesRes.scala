@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_RulesRes extends js.Object {
-  var res: aliDashOssLib.aliDashOssMod.NormalSuccessResponse
-  var rules: js.Array[aliDashOssLib.aliDashOssMod.CORSRule]
+  var res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
+  var rules: js.Array[aliDashOssLib.aliDashOssMod.OSSNs.CORSRule]
 }
 

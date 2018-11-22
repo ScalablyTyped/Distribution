@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait BordersProps
-  extends BorderTopProps
-     with BorderRightProps
-     with BorderBottomProps
-     with BorderLeftProps
+  extends BorderTopProps[styledDashSystemLib.distSpaceMod.TLengthStyledSystem]
+     with BorderRightProps[styledDashSystemLib.distSpaceMod.TLengthStyledSystem]
+     with BorderBottomProps[styledDashSystemLib.distSpaceMod.TLengthStyledSystem]
+     with BorderLeftProps[styledDashSystemLib.distSpaceMod.TLengthStyledSystem]
 

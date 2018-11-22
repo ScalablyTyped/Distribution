@@ -14,7 +14,7 @@ class Node ()
   @JSName("context")
   var context_Node: SurfaceContext = js.native
   var dependencies: js.Array[Node | Bus] = js.native
-  var dependents: js.Array[Node | Surface] = js.native
+  var dependents: js.Array[Node | Surface[_]] = js.native
   var drawProps: NodeProps = js.native
   var framebuffer: js.UndefOr[Framebuffer] = js.native
   var id: scala.Double = js.native

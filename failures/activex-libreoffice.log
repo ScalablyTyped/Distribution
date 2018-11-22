@@ -396,5 +396,28 @@
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(removeEventListener), Name(addEventListener)) [id => activex-libreoffice, phase => scala.js, this => Name(activexDashLibreofficeLib) / Name(comNs) / Name(sunNs) / Name(starNs) / Name(drawingNs) / Name(GenericDrawingDocument)] 
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(removeEventListener), Name(addEventListener)) [id => activex-libreoffice, phase => scala.js, this => Name(activexDashLibreofficeLib) / Name(comNs) / Name(sunNs) / Name(starNs) / Name(presentationNs) / Name(PresentationDocument)] 
 [debug] PhaseRunner.scala:78 Success [id => activex-libreoffice, phase => scala.js] 
-[error] unknown file:-1 bad option: -P:scalajs:sjsDefinedByDefault,  [id => activex-libreoffice, phase => build] 
+[error] GenericDrawingDocument.scala:31 overriding method addEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method addEventListener needs `override' modifier,   def addEventListener( [id => activex-libreoffice, phase => build] 
+[error] GenericDrawingDocument.scala:48 overriding method removeEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method removeEventListener needs `override' modifier,   def removeEventListener( [id => activex-libreoffice, phase => build] 
+[error] PresentationDocument.scala:15 overriding method addEventListener in trait GenericDrawingDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method addEventListener needs `override' modifier,   def addEventListener( [id => activex-libreoffice, phase => build] 
+[error] PresentationDocument.scala:15 overriding method addEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method addEventListener needs `override' modifier,   def addEventListener( [id => activex-libreoffice, phase => build] 
+[error] PresentationDocument.scala:32 overriding method removeEventListener in trait GenericDrawingDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method removeEventListener needs `override' modifier,   def removeEventListener( [id => activex-libreoffice, phase => build] 
+[error] PresentationDocument.scala:32 overriding method removeEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method removeEventListener needs `override' modifier,   def removeEventListener( [id => activex-libreoffice, phase => build] 
+[error] OfficeDatabaseDocument.scala:26 overriding method addEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method addEventListener needs `override' modifier,   def addEventListener( [id => activex-libreoffice, phase => build] 
+[error] OfficeDatabaseDocument.scala:43 overriding method removeEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method removeEventListener needs `override' modifier,   def removeEventListener( [id => activex-libreoffice, phase => build] 
+[error] SpreadsheetDocument.scala:39 overriding method addEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method addEventListener needs `override' modifier,   def addEventListener( [id => activex-libreoffice, phase => build] 
+[error] SpreadsheetDocument.scala:56 overriding method removeEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method removeEventListener needs `override' modifier,   def removeEventListener( [id => activex-libreoffice, phase => build] 
+[error] GenericTextDocument.scala:79 overriding method addEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method addEventListener needs `override' modifier,   def addEventListener( [id => activex-libreoffice, phase => build] 
+[error] GenericTextDocument.scala:96 overriding method removeEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
+ method removeEventListener needs `override' modifier,   def removeEventListener( [id => activex-libreoffice, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [activex-libreoffice => Compilation failed] [id => activex-libreoffice, phase => build] 

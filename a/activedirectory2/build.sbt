@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "activedirectory2"
-version := "1.2-dt-20180910Z-65b5c5"
+version := "1.2-dt-20180910Z-5ff5d0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "ldapjs" % "1.0-dt-20180910Z-a94d93",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "ldapjs" % "1.0-dt-20180910Z-57ac78",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

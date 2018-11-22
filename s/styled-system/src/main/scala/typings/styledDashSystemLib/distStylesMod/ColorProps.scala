@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait ColorProps
   extends TextColorProps
-     with BgColorProps
+     with BgColorProps[styledDashSystemLib.distSpaceMod.TLengthStyledSystem]
 

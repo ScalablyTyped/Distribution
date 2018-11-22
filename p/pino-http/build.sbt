@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "pino-http"
-version := "4.0-dt-20181013Z-df3ab6"
+version := "4.0-dt-20181013Z-7440c9"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
-  "com.scalablytyped" %%% "pino" % "5.8-dt-20181120Z-f77890",
-  "com.scalablytyped" %%% "sonic-boom" % "0.6-dt-20181109Z-0aac83",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
+  "com.scalablytyped" %%% "pino" % "5.8-dt-20181120Z-4bc335",
+  "com.scalablytyped" %%% "sonic-boom" % "0.6-dt-20181109Z-c4b380",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

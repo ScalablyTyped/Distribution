@@ -7,16 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("gl-react", "Surface")
 @js.native
-class Surface ()
+class Surface[T] ()
   extends reactLib.reactMod.Component[SurfaceProps, SurfaceState, js.Any] {
-  var RenderLessElement: js.Any = js.native
-  var gl: reactLib.WebGLRenderingContext = js.native
+  var buffer: stdLib.WebGLBuffer = js.native
+  var gl: js.UndefOr[reactLib.WebGLRenderingContext] = js.native
+  var glView: T = js.native
   var id: scala.Double = js.native
-  @JSName("props")
-  var props_Surface: SurfaceProps = js.native
+  var loaderResolver: js.UndefOr[js.Any] = js.native
   var root: Node = js.native
-  @JSName("state")
-  var state_Surface: SurfaceState = js.native
+  var shaders: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   def capture(): js.Array[_] = js.native
   def capture(x: scala.Double): js.Array[_] = js.native
   def capture(x: scala.Double, y: scala.Double): js.Array[_] = js.native

@@ -18,11 +18,7 @@ package object ReactNs {
        * a single argument, which is useful for many top-level API defs.
        * See https://github.com/Microsoft/TypeScript/issues/7234 for more info.
        */
-  type ClassType[P, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */] = C with (ScalablyTyped.runtime.Instantiable2[/* props */ P, /* context */ js.UndefOr[/* context */ js.Any], T]) with (ScalablyTyped.runtime.Instantiable2[
-    /* props */ P, 
-    /* context */ js.UndefOr[/* context */ js.Any], 
-    reactLib.Anon_Props[P]
-  ])
+  type ClassType[P, T /* <: Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */] = C with (ScalablyTyped.runtime.Instantiable2[/* props */ P, /* context */ js.UndefOr[/* context */ js.Any], T])
   type ClassicElement[P] = CElement[P, ClassicComponent[P, ComponentState]]
   type ClassicFactory[P] = CFactory[P, ClassicComponent[P, ComponentState]]
   type ClipboardEventHandler[T] = EventHandler[ClipboardEvent[T]]

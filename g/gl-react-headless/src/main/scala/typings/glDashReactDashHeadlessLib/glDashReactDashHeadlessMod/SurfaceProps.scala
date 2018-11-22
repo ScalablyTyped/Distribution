@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait SurfaceProps
-  extends glDashReactLib.glDashReactMod.SurfaceProps {
-  var height: scala.Double
-  var width: scala.Double
-}
+  extends glDashReactLib.glDashReactMod.SurfaceProps
+     with glDashReactDashHeadlessLib.glviewheadlessMod.GLViewHeadlessProps
 

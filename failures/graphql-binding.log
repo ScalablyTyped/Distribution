@@ -64,5 +64,6 @@
 [debug] PhaseRunner.scala:78 Success [id => graphql-binding, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(graphql-binding) [id => graphql-binding, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => graphql-binding, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => graphql-binding, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => graphql-binding, phase => build] 
+[error] Options.scala:11 type Transform is not a member of package typings.graphqlDashToolsLib.graphqlDashToolsMod,   var transforms: js.UndefOr[js.Array[graphqlDashToolsLib.graphqlDashToolsMod.Transform]] = js.undefined [id => graphql-binding, phase => build] 
+[error] Options.scala:11 type Transform is not a member of package typings.graphqlDashToolsLib.graphqlDashToolsMod,   var transforms: js.UndefOr[js.Array[graphqlDashToolsLib.graphqlDashToolsMod.Transform]] = js.undefined [id => graphql-binding, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [graphql-binding => Compilation failed] [id => graphql-binding, phase => build] 

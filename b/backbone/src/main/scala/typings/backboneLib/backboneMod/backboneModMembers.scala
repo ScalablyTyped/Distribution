@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object backboneModMembers extends js.Object {
   @JSName("$")
   var $: jqueryLib.JQueryStatic = js.native
+  val Events: backboneLib.backboneMod.BackboneNs.Events = js.native
   var emulateHTTP: scala.Boolean = js.native
   var emulateJSON: scala.Boolean = js.native
   var history: backboneLib.backboneMod.BackboneNs.History = js.native

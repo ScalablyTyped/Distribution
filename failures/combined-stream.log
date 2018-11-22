@@ -7,5 +7,5 @@
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(combined-stream) [id => combined-stream, phase => scala.js] 
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(pipe), Name(pipe)) [id => combined-stream, phase => scala.js, this => Name(combinedDashStreamLib) / Name(combinedDashStreamMod) / Name(CombinedStream)] 
 [debug] PhaseRunner.scala:78 Success [id => combined-stream, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => combined-stream, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => combined-stream, phase => build] 
+[error] package.scala:9 illegal cyclic reference involving type Appendable,   type NextFunction = js.Function1[/* next */ js.Function1[/* stream */ Appendable, js.Any], js.Any] [id => combined-stream, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [combined-stream => Compilation failed] [id => combined-stream, phase => build] 

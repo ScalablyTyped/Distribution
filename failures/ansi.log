@@ -7,5 +7,6 @@
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(ansi) [id => ansi, phase => scala.js] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(yellow, brightGreen, brightYellow, cyan, magenta, hex, white, brightRed, grey, brightCyan, brightWhite, _setColorCode, brightBlue, brightBlack, red, rgb, brightMagenta, reset, green, black, blue) [id => ansi, phase => scala.js, this => Name(ansiLib) / Name(ansiMod) / Name(Colorer)] 
 [debug] PhaseRunner.scala:78 Success [id => ansi, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => ansi, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => ansi, phase => build] 
+[error] Colorer.scala:13 this can be used only in a class, object, or template,   extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, Cursor | this.type]] { [id => ansi, phase => build] 
+[error] Cursor.scala:10 this can be used only in a class, object, or template,   extends /* key */ ScalablyTyped.runtime.StringDictionary[(js.Function1[/* repeated */js.Any, this.type]) | Colorer] { [id => ansi, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [ansi => Compilation failed] [id => ansi, phase => build] 

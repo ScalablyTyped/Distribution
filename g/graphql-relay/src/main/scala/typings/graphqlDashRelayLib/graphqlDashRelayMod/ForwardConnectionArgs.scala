@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait ForwardConnectionArgs extends js.Object {
-  var after: js.UndefOr[ConnectionCursor | scala.Null] = js.undefined
-  var first: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  var after: graphqlDashRelayLib.Anon_Type
+  var first: graphqlDashRelayLib.Anon_Type
 }
 

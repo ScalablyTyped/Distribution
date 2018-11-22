@@ -1,8 +1,0 @@
-[debug] PhaseRunner.scala:78 Success [id => chai-webdriverio, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/chai-webdriverio/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/chai-webdriverio),TsIdentLibrarySimple(chai-webdriverio)),TsIdentModule(None,List(chai-webdriverio))) [id => chai-webdriverio, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(chai-webdriverio) [id => chai-webdriverio, phase => typescript] 
-[debug] PhaseRunner.scala:78 Success [id => chai-webdriverio, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(chai-webdriverio) [id => chai-webdriverio, phase => scala.js] 
-[debug] PhaseRunner.scala:78 Success [id => chai-webdriverio, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => chai-webdriverio, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => chai-webdriverio, phase => build] 

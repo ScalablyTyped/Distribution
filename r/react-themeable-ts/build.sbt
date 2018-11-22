@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-themeable-ts"
-version := "1.0.0-c0d77f"
+version := "1.0.0-e8fdca"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "lodash_dot_size" % "4.2-dt-20180910Z-cf3538",
   "com.scalablytyped" %%% "memoizee" % "0.4-dt-20180910Z-d84a98",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-44bb36",
+  "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "com.scalablytyped" %%% "tslib" % "1.9.3-224f5a",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

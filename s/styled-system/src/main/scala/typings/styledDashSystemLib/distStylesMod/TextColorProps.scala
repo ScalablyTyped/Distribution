@@ -16,6 +16,8 @@ trait TextColorProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
        */
-  var color: js.UndefOr[ResponsiveColorValue] = js.undefined
+  var color: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.ColorProperty]
+  ] = js.undefined
 }
 

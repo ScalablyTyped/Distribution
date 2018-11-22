@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "levelup"
-version := "3.1-dt-20180918Z-2b93ec"
+version := "3.1-dt-20180918Z-f2d3af"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "abstract-leveldown" % "5.0-dt-20180915Z-187c0c",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

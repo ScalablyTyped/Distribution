@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-native-svg"
-version := "8.0.1-be457d"
+version := "8.0.1-2bef1e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,8 +12,8 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-caf0c5",
   "com.scalablytyped" %%% "pegjs" % "v0.10.0-dt-20180910Z-d8fdda",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-44bb36",
-  "com.scalablytyped" %%% "react-native" % "0.57-dt-20181120Z-aca396",
+  "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
+  "com.scalablytyped" %%% "react-native" % "0.57-dt-20181121Z-29a22e",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

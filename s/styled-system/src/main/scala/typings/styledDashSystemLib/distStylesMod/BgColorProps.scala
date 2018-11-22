@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait BgColorProps extends js.Object {
+trait BgColorProps[TLength] extends js.Object {
   /**
        * The color utility parses a component's `color` and `bg` props and converts them into CSS declarations.
        * By default the raw value of the prop is returned.
@@ -16,6 +16,8 @@ trait BgColorProps extends js.Object {
        *
        * [MDN Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
        */
-  var bg: js.UndefOr[ResponsiveColorValue] = js.undefined
+  var bg: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.BackgroundProperty[TLength]]
+  ] = js.undefined
 }
 

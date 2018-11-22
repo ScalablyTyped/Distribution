@@ -14,5 +14,5 @@
 [debug] PhaseRunner.scala:78 Success [id => vuelidate, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(vuelidate) [id => vuelidate, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => vuelidate, phase => scala.js] 
-[error] unknown file:-1 bad option: -P:scalajs:sjsDefinedByDefault,  [id => vuelidate, phase => build] 
+[error] RuleDecl.scala:10 illegal cyclic reference involving trait RuleDecl,   extends /* rule */ ScalablyTyped.runtime.StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl] [id => vuelidate, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [vuelidate => Compilation failed] [id => vuelidate, phase => build] 

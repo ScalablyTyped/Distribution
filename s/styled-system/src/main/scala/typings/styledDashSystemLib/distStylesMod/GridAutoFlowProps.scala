@@ -13,6 +13,8 @@ trait GridAutoFlowProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow)
        */
-  var gridAutoFlow: js.UndefOr[ResponsiveGridAutoValue] = js.undefined
+  var gridAutoFlow: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.GridAutoFlowProperty]
+  ] = js.undefined
 }
 

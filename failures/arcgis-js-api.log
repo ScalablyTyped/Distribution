@@ -52,5 +52,28 @@
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(destroy)) [id => arcgis-js-api, phase => scala.js, this => Name(arcgisDashJsDashApiLib) / Name(underscoreUnderscoreEsriNs) / Name(UnivariateColorSizeSlider)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(hasEventListener, on, emit) [id => arcgis-js-api, phase => scala.js, this => Name(arcgisDashJsDashApiLib) / Name(underscoreUnderscoreEsriNs) / Name(Collection)] 
 [debug] PhaseRunner.scala:78 Success [id => arcgis-js-api, phase => scala.js] 
-[error] unknown file:-1 bad option: -P:scalajs:sjsDefinedByDefault,  [id => arcgis-js-api, phase => build] 
+[error] LabelSymbol3D.scala:21 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`label-3d` = js.native [id => arcgis-js-api, phase => build] 
+[error] LineSymbol3D.scala:15 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`line-3d` = js.native [id => arcgis-js-api, phase => build] 
+[error] MeshSymbol3D.scala:15 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`mesh-3d` = js.native [id => arcgis-js-api, phase => build] 
+[error] PictureFillSymbol.scala:23 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`picture-fill` = js.native [id => arcgis-js-api, phase => build] 
+[error] PictureMarkerSymbol.scala:23 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`picture-marker` = js.native [id => arcgis-js-api, phase => build] 
+[error] PointSymbol3D.scala:21 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`point-3d` = js.native [id => arcgis-js-api, phase => build] 
+[error] PolygonSymbol3D.scala:15 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`polygon-3d` = js.native [id => arcgis-js-api, phase => build] 
+[error] SimpleFillSymbol.scala:44 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`simple-fill` = js.native [id => arcgis-js-api, phase => build] 
+[error] SimpleLineSymbol.scala:83 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`simple-line` = js.native [id => arcgis-js-api, phase => build] 
+[error] SimpleMarkerSymbol.scala:62 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`simple-marker` = js.native [id => arcgis-js-api, phase => build] 
+[error] TextSymbol.scala:103 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.text = js.native [id => arcgis-js-api, phase => build] 
+[error] WebStyleSymbol.scala:39 overriding value type in trait Symbol of type String;
+ value type needs `override' modifier,   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`web-style` = js.native [id => arcgis-js-api, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [arcgis-js-api => Compilation failed] [id => arcgis-js-api, phase => build] 

@@ -1,8 +1,0 @@
-[debug] PhaseRunner.scala:78 Success [id => electron-osx-sign, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/electron-osx-sign/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/electron-osx-sign),TsIdentLibrarySimple(electron-osx-sign)),TsIdentModule(None,List(electron-osx-sign))) [id => electron-osx-sign, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(electron-osx-sign) [id => electron-osx-sign, phase => typescript] 
-[debug] PhaseRunner.scala:78 Success [id => electron-osx-sign, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(electron-osx-sign) [id => electron-osx-sign, phase => scala.js] 
-[debug] PhaseRunner.scala:78 Success [id => electron-osx-sign, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => electron-osx-sign, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => electron-osx-sign, phase => build] 

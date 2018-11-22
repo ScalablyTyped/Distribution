@@ -14,6 +14,9 @@ object RadioNs extends js.Object {
     extends Commands
        with backboneLib.backboneMod.BackboneNs.Events {
     var channelName: java.lang.String = js.native
+    def on(eventName: js.Any): js.Any = js.native
+    def on(eventName: js.Any, callback: js.Any): js.Any = js.native
+    def on(eventName: js.Any, callback: js.Any, context: js.Any): js.Any = js.native
     def reply(commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]]): Requests = js.native
     def reply(
       commands: ScalablyTyped.runtime.StringDictionary[js.Function1[/* repeated */js.Any, _]],

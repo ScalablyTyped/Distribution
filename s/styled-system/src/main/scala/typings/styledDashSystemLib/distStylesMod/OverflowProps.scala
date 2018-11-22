@@ -13,6 +13,8 @@ trait OverflowProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
        */
-  var overflow: js.UndefOr[ResponsiveOverflowValue] = js.undefined
+  var overflow: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.OverflowProperty]
+  ] = js.undefined
 }
 

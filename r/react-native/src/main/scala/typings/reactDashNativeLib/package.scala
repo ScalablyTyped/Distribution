@@ -34,4 +34,5 @@ package object reactDashNativeLib {
   type `ResponseType_` = reactDashNativeLib.reactDashNativeLibStrings.basic | reactDashNativeLib.reactDashNativeLibStrings.cors | reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.error | reactDashNativeLib.reactDashNativeLibStrings.opaque | reactDashNativeLib.reactDashNativeLibStrings.opaqueredirect
   type Task = js.Function1[/* taskData */ js.Any, stdLib.Promise[scala.Unit]]
   type TaskProvider = js.Function0[Task]
+  type XMLHttpRequestResponseType = reactDashNativeLib.reactDashNativeLibStrings.Empty | reactDashNativeLib.reactDashNativeLibStrings.arraybuffer | reactDashNativeLib.reactDashNativeLibStrings.blob | reactDashNativeLib.reactDashNativeLibStrings.document | reactDashNativeLib.reactDashNativeLibStrings.json | reactDashNativeLib.reactDashNativeLibStrings.text
 }

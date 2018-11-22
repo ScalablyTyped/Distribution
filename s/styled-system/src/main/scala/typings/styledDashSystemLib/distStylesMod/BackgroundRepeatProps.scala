@@ -13,6 +13,8 @@ trait BackgroundRepeatProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat)
        */
-  var backgroundRepeat: js.UndefOr[ResponsiveBackgroundRepeatValue] = js.undefined
+  var backgroundRepeat: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.BackgroundRepeatProperty]
+  ] = js.undefined
 }
 

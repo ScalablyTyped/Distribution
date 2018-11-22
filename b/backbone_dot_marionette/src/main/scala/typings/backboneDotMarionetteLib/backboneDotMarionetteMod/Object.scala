@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("backbone.marionette", "Object")
 @js.native
 class Object ()
-  extends backboneLib.backboneMod.Events
-     with CommonMixin {
+  extends CommonMixin
+     with backboneLib.backboneMod.BackboneNs.Events {
   def this(options: ObjectOptions) = this()
   /* CompleteClass */
   override var bindEvents: js.Any = js.native
@@ -92,6 +92,9 @@ class Object ()
        */
   @JSName("normalizeMethods")
   def normalizeMethods_MObject[T](hash: js.Any): T = js.native
+  def on(eventName: js.Any): js.Any = js.native
+  def on(eventName: js.Any, callback: js.Any): js.Any = js.native
+  def on(eventName: js.Any, callback: js.Any, context: js.Any): js.Any = js.native
   /**
        * Trigger an event and a corresponding method on the target object.
        * All arguments that are passed to the triggerMethod call are passed

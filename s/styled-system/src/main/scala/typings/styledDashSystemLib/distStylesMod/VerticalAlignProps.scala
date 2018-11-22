@@ -6,12 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait VerticalAlignProps extends js.Object {
+trait VerticalAlignProps[TLength] extends js.Object {
   /**
        * The vertical-align CSS property specifies sets vertical alignment of an inline or table-cell box.
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
        */
-  var verticalAlign: js.UndefOr[ResponsiveVerticalAlignValue] = js.undefined
+  var verticalAlign: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.VerticalAlignProperty[TLength]]
+  ] = js.undefined
 }
 

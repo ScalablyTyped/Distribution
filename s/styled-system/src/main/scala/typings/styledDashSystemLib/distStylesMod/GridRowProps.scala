@@ -14,6 +14,8 @@ trait GridRowProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row)
        */
-  var gridRow: js.UndefOr[ResponsiveGridCellValue] = js.undefined
+  var gridRow: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.GridRowProperty]
+  ] = js.undefined
 }
 

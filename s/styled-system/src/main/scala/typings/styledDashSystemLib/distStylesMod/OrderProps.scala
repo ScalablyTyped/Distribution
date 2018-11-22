@@ -13,6 +13,6 @@ trait OrderProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
        */
-  var order: js.UndefOr[ResponsiveOrderValue] = js.undefined
+  var order: js.UndefOr[styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.GlobalsNumber]] = js.undefined
 }
 

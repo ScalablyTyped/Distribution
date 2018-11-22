@@ -1,8 +1,0 @@
-[debug] PhaseRunner.scala:78 Success [id => pouchdb-adapter-localstorage, phase => typescript] 
-[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pouchdb-adapter-localstorage/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pouchdb-adapter-localstorage),TsIdentLibrarySimple(pouchdb-adapter-localstorage)),TsIdentModule(None,List(pouchdb-adapter-localstorage))) [id => pouchdb-adapter-localstorage, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(pouchdb-adapter-localstorage) [id => pouchdb-adapter-localstorage, phase => typescript] 
-[debug] PhaseRunner.scala:78 Success [id => pouchdb-adapter-localstorage, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(pouchdb-adapter-localstorage) [id => pouchdb-adapter-localstorage, phase => scala.js] 
-[debug] PhaseRunner.scala:78 Success [id => pouchdb-adapter-localstorage, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => pouchdb-adapter-localstorage, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => pouchdb-adapter-localstorage, phase => build] 

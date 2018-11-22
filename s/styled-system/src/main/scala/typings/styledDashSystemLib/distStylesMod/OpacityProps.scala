@@ -13,6 +13,6 @@ trait OpacityProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
        */
-  var opacity: js.UndefOr[ResponsiveOpacityValue] = js.undefined
+  var opacity: js.UndefOr[styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.GlobalsNumber]] = js.undefined
 }
 

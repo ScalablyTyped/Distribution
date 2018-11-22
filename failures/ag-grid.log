@@ -1343,5 +1343,8 @@
 [info ] CompleteClass.scala:60 Completed implementations Vector(isEmpty, isRowsToRender, getRow, getRowIndexAtPixel, forEachNode, getType, getPageFirstRow, getRowBounds, isLastRowFound, getRowNode, getRowCount, getCurrentPageHeight, getPageLastRow, isRowPresent, getNodesInRangeForSelection) [id => ag-grid, phase => scala.js, this => Name(agDashGridLib) / Name(distLibRowModelsPaginationProxyMod) / Name(PaginationProxy)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(getGui) [id => ag-grid, phase => scala.js, this => Name(agDashGridLib) / Name(distLibWidgetsComponentMod) / Name(Component)] 
 [debug] PhaseRunner.scala:78 Success [id => ag-grid, phase => scala.js] 
-[error] unknown file:-1 bad option: -P:scalajs:sjsDefinedByDefault,  [id => ag-grid, phase => build] 
+[error] Component.scala:10 class Component inherits conflicting members:
+  method destroy in class BeanStub of type ()Unit  and
+  variable destroy in trait IComponent of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[Unit]]
+(Note: this can be resolved by declaring an override in class Component.), class Component () [id => ag-grid, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [ag-grid => Compilation failed] [id => ag-grid, phase => build] 

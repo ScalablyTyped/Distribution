@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait SizeHeightProps extends js.Object {
-  var size: js.UndefOr[styledDashSystemLib.distSpaceMod.ResponsiveSpaceValue] = js.undefined
+trait SizeHeightProps[TLength] extends js.Object {
+  var size: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.HeightProperty[TLength]]
+  ] = js.undefined
 }
 

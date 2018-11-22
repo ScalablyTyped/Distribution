@@ -13,6 +13,8 @@ trait FlexWrapProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
        */
-  var flexWrap: js.UndefOr[ResponsiveFlexWrapValue] = js.undefined
+  var flexWrap: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.FlexWrapProperty]
+  ] = js.undefined
 }
 

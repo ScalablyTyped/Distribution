@@ -29,5 +29,20 @@
 [info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(View)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(ContribNs) / Name(Controller)] 
 [debug] PhaseRunner.scala:78 Success [id => giraffe, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [backbone => Compilation failed] [id => giraffe, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [backbone => Compilation failed] [id => giraffe, phase => build] 
+[error] Collection.scala:10 class Collection inherits conflicting members:
+  method initialize in trait Collection of type ()Unit  and
+  variable initialize in trait GiraffeObject of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[scala.scalajs.js.Any]]
+(Note: this can be resolved by declaring an override in class Collection.), class Collection[TModel /* <: Model */] () [id => giraffe, phase => build] 
+[error] Model.scala:10 class Model inherits conflicting members:
+  method initialize in trait Model of type ()Unit  and
+  variable initialize in trait GiraffeObject of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[scala.scalajs.js.Any]]
+(Note: this can be resolved by declaring an override in class Model.), class Model () [id => giraffe, phase => build] 
+[error] Router.scala:10 class Router inherits conflicting members:
+  method initialize in trait Router of type ()Unit  and
+  variable initialize in trait GiraffeObject of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[scala.scalajs.js.Any]]
+(Note: this can be resolved by declaring an override in class Router.), class Router () [id => giraffe, phase => build] 
+[error] View.scala:10 class View inherits conflicting members:
+  method initialize in trait View of type ()Unit  and
+  variable initialize in trait GiraffeObject of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[scala.scalajs.js.Any]]
+(Note: this can be resolved by declaring an override in class View.), class View[TModel /* <: Model */] () [id => giraffe, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [giraffe => Compilation failed] [id => giraffe, phase => build] 

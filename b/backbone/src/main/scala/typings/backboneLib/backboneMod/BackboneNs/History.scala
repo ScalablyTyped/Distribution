@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait History extends Events {
+trait History
+  extends backboneLib.backboneMod.EventSignatures {
   var handlers: js.Array[_] = js.native
   var interval: scala.Double = js.native
   var options: js.Any = js.native

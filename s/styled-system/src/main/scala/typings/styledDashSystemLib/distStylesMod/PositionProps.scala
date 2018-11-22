@@ -13,6 +13,8 @@ trait PositionProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
        */
-  var position: js.UndefOr[ResponsivePositionValue] = js.undefined
+  var position: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.PositionProperty]
+  ] = js.undefined
 }
 

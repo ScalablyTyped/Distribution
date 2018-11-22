@@ -13,6 +13,8 @@ trait AlignContentProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
        */
-  var alignContent: js.UndefOr[ResponsiveAlignContentValue] = js.undefined
+  var alignContent: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.AlignContentProperty]
+  ] = js.undefined
 }
 

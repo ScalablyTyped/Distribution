@@ -57,5 +57,6 @@
 [info ] CompleteClass.scala:60 Completed implementations Vector(loadDatabase) [id => lokijs, phase => scala.js, this => Name(lokijsLib) / Name(LokiMemoryAdapter)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(loadDatabase) [id => lokijs, phase => scala.js, this => Name(lokijsLib) / Name(LokiPartitioningAdapter)] 
 [debug] PhaseRunner.scala:78 Success [id => lokijs, phase => scala.js] 
-[error] unknown file:-1 bad option: -P:scalajs:sjsDefinedByDefault,  [id => lokijs, phase => build] 
+[error] Collection.scala:267 Raw JS setters must return Unit,   def calculateRange_$eq(op: lokijsLib.lokijsLibStrings.DOLLAReq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native [id => lokijs, phase => build] 
+[error] Collection.scala:267 Raw JS setters must have exactly one argument,   def calculateRange_$eq(op: lokijsLib.lokijsLibStrings.DOLLAReq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native [id => lokijs, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [lokijs => Compilation failed] [id => lokijs, phase => build] 

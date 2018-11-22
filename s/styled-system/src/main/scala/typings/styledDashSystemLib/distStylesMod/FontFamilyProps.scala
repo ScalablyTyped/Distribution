@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait FontFamilyProps extends js.Object {
-  var fontFamily: js.UndefOr[ResponsiveTypographyValue] = js.undefined
+  var fontFamily: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.FontFamilyProperty]
+  ] = js.undefined
 }
 

@@ -403,6 +403,7 @@ object childUnderscoreProcessModMembers extends js.Object {
   def spawn(command: java.lang.String): ChildProcess = js.native
   def spawn(command: java.lang.String, args: js.Array[java.lang.String]): ChildProcess = js.native
   def spawn(command: java.lang.String, args: js.Array[java.lang.String], options: SpawnOptions): ChildProcess = js.native
+  def spawn(command: java.lang.String, options: SpawnOptions): ChildProcess = js.native
   def spawnSync(command: java.lang.String): SpawnSyncReturns[nodeLib.Buffer] = js.native
   def spawnSync(command: java.lang.String, args: js.Array[java.lang.String]): SpawnSyncReturns[java.lang.String] = js.native
   def spawnSync(command: java.lang.String, args: js.Array[java.lang.String], options: SpawnSyncOptions): SpawnSyncReturns[nodeLib.Buffer] = js.native

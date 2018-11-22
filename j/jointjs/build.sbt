@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "jointjs"
-version := "2.1.4-765372"
+version := "2.1.4-e86144"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "backbone" % "1.3.3-dt-20181120Z-9089d2",
+  "com.scalablytyped" %%% "backbone" % "1.3.3-dt-20181121Z-b610f3",
   "com.scalablytyped" %%% "dagre" % "0.7-dt-20180910Z-0b04f8",
   "com.scalablytyped" %%% "graphlib" % "2.1.1-dt-20180910Z-dfc853",
   "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-c6ff09",

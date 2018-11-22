@@ -12,6 +12,8 @@ trait TextAlignProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
        */
-  var textAlign: js.UndefOr[ResponsiveTextAlignValue] = js.undefined
+  var textAlign: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.TextAlignProperty]
+  ] = js.undefined
 }
 

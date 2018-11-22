@@ -16,8 +16,8 @@ object WebAssemblyNs extends js.Object {
   def compileStreaming(source: stdLib.Promise[stdLib.Response]): stdLib.Promise[webassemblyDashJsDashApiLib.WebAssemblyNs.Module] = js.native
   def compileStreaming(source: stdLib.Response): stdLib.Promise[webassemblyDashJsDashApiLib.WebAssemblyNs.Module] = js.native
   def instantiateStreaming(source: stdLib.Promise[stdLib.Response]): stdLib.Promise[webassemblyDashJsDashApiLib.WebAssemblyNs.ResultObject] = js.native
-  def instantiateStreaming(source: stdLib.Promise[stdLib.Response], importObject: js.Any): stdLib.Promise[webassemblyDashJsDashApiLib.WebAssemblyNs.ResultObject] = js.native
+  def instantiateStreaming(source: stdLib.Promise[stdLib.Response], importObject: js.Object): stdLib.Promise[webassemblyDashJsDashApiLib.WebAssemblyNs.ResultObject] = js.native
   def instantiateStreaming(source: stdLib.Response): stdLib.Promise[webassemblyDashJsDashApiLib.WebAssemblyNs.ResultObject] = js.native
-  def instantiateStreaming(source: stdLib.Response, importObject: js.Any): stdLib.Promise[webassemblyDashJsDashApiLib.WebAssemblyNs.ResultObject] = js.native
+  def instantiateStreaming(source: stdLib.Response, importObject: js.Object): stdLib.Promise[webassemblyDashJsDashApiLib.WebAssemblyNs.ResultObject] = js.native
 }
 

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-relay", JSImport.Namespace)
 @js.native
 object graphqlDashRelayModMembers extends js.Object {
-  val backwardConnectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with graphqlDashRelayLib.Anon_Last = js.native
+  val backwardConnectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with BackwardConnectionArgs = js.native
   val connectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with ForwardConnectionArgs with BackwardConnectionArgs = js.native
-  val forwardConnectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with graphqlDashRelayLib.Anon_After = js.native
+  val forwardConnectionArgs: graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap with ForwardConnectionArgs = js.native
   def connectionDefinitions(config: ConnectionConfig): GraphQLConnectionDefinitions = js.native
   def connectionFromArray[T](data: js.Array[T], args: ConnectionArguments): Connection[T] = js.native
   def connectionFromArraySlice[T](arraySlice: js.Array[T], args: ConnectionArguments, meta: ArraySliceMetaInfo): Connection[T] = js.native

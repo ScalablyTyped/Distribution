@@ -13,6 +13,8 @@ trait JustifySelfProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self)
        */
-  var justifySelf: js.UndefOr[ResponsiveJustifySelfValue] = js.undefined
+  var justifySelf: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.JustifySelfProperty]
+  ] = js.undefined
 }
 

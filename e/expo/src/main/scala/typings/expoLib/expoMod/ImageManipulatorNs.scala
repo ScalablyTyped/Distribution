@@ -49,6 +49,8 @@ object ImageManipulatorNs extends js.Object {
   
   def manipulate(uri: java.lang.String, actions: js.Array[Action]): stdLib.Promise[ImageResult] = js.native
   def manipulate(uri: java.lang.String, actions: js.Array[Action], saveOptions: SaveOptions): stdLib.Promise[ImageResult] = js.native
+  def manipulateAsync(uri: java.lang.String, actions: js.Array[Action]): stdLib.Promise[ImageResult] = js.native
+  def manipulateAsync(uri: java.lang.String, actions: js.Array[Action], saveOptions: SaveOptions): stdLib.Promise[ImageResult] = js.native
   type Action = Resize | Rotate | Flip | Crop
 }
 

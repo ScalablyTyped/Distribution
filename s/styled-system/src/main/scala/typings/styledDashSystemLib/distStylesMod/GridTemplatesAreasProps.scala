@@ -12,6 +12,8 @@ trait GridTemplatesAreasProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)
        */
-  var gridTemplateAreas: js.UndefOr[ResponsiveGridTemplateValue] = js.undefined
+  var gridTemplateAreas: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.GridTemplateAreasProperty]
+  ] = js.undefined
 }
 

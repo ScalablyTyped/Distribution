@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait TextStyleProps extends js.Object {
-  var textStyle: js.UndefOr[ResponsiveVariant] = js.undefined
+  var textStyle: js.UndefOr[styledDashSystemLib.distSpaceMod.ResponsiveValue[java.lang.String]] = js.undefined
 }
 

@@ -9,5 +9,8 @@
 [debug] PhaseRunner.scala:78 Success [id => typescript-deferred, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(typescript-deferred) [id => typescript-deferred, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => typescript-deferred, phase => scala.js] 
-[error] unknown file:-1 bad option: -P:scalajs:sjsDefinedByDefault,  [id => typescript-deferred, phase => build] 
+[error] PromiseInterface.scala:14 overriding method then in trait ThenableInterface of type [TP](successCB: typings.typescriptDashDeferredLib.typescriptDashDeferredMod.DeferredSuccessCB[T,TP] | typings.typescriptDashDeferredLib.typescriptDashDeferredMod.ImmediateSuccessCB[T,TP])typings.typescriptDashDeferredLib.typescriptDashDeferredMod.ThenableInterface[TP];
+ method then needs `override' modifier,   def `then`[TP](successCB: (DeferredSuccessCB[T, TP]) | (ImmediateSuccessCB[T, TP])): PromiseInterface[TP] = js.native [id => typescript-deferred, phase => build] 
+[error] PromiseInterface.scala:15 overriding method then in trait ThenableInterface of type [TP](successCB: typings.typescriptDashDeferredLib.typescriptDashDeferredMod.DeferredSuccessCB[T,TP] | typings.typescriptDashDeferredLib.typescriptDashDeferredMod.ImmediateSuccessCB[T,TP], errorCB: typings.typescriptDashDeferredLib.typescriptDashDeferredMod.DeferredErrorCB[TP] | typings.typescriptDashDeferredLib.typescriptDashDeferredMod.ImmediateErrorCB[TP])typings.typescriptDashDeferredLib.typescriptDashDeferredMod.ThenableInterface[TP];
+ method then needs `override' modifier,   def `then`[TP]( [id => typescript-deferred, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [typescript-deferred => Compilation failed] [id => typescript-deferred, phase => build] 

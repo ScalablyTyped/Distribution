@@ -1,5 +1,5 @@
 ```
-// Type definitions for @feathersjs/feathers 3.0
+// Type definitions for @feathersjs/feathers 3.1
 // Project: http://feathersjs.com/
 // Definitions by:  Jan Lohage <https://github.com/j2L4e>
 //                  Abraao Alves <https://github.com/AbraaoAlves>

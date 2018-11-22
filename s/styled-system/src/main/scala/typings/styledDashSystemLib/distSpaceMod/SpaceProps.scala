@@ -6,34 +6,34 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait SpaceProps extends js.Object {
+trait SpaceProps[TLength] extends js.Object {
   /** Margin on top, left, bottom and right */
-  var m: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var m: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginProperty[TLength]]] = js.undefined
   /** Margin for the bottom */
-  var mb: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var mb: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginBottomProperty[TLength]]] = js.undefined
   /** Margin for the left */
-  var ml: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var ml: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginLeftProperty[TLength]]] = js.undefined
   /** Margin for the right */
-  var mr: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var mr: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginRightProperty[TLength]]] = js.undefined
   /** Margin for the top */
-  var mt: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var mt: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MarginTopProperty[TLength]]] = js.undefined
   /** Margin for the left and right */
-  var mx: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var mx: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
   /** Margin for the top and bottom */
-  var my: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var my: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
   /** Padding on top, left, bottom and right */
-  var p: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var p: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
   /** Padding for the bottom */
-  var pb: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var pb: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingBottomProperty[TLength]]] = js.undefined
   /** Padding for the left */
-  var pl: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var pl: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingLeftProperty[TLength]]] = js.undefined
   /** Padding for the right */
-  var pr: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var pr: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingRightProperty[TLength]]] = js.undefined
   /** Padding for the top */
-  var pt: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var pt: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingTopProperty[TLength]]] = js.undefined
   /** Padding for the left and right */
-  var px: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var px: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
   /** Padding for the top and bottom */
-  var py: js.UndefOr[ResponsiveSpaceValue] = js.undefined
+  var py: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.PaddingProperty[TLength]]] = js.undefined
 }
 

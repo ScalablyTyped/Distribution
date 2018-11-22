@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait LineHeightProps extends js.Object {
+trait LineHeightProps[TLength] extends js.Object {
   /**
        * The line-height CSS property sets the amount of space used for lines, such as in text. On block-level elements,
        * it specifies the minimum height of line boxes within the element.
@@ -15,6 +15,8 @@ trait LineHeightProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
        */
-  var lineHeight: js.UndefOr[ResponsiveLineHeightValue] = js.undefined
+  var lineHeight: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.LineHeightProperty[TLength]]
+  ] = js.undefined
 }
 

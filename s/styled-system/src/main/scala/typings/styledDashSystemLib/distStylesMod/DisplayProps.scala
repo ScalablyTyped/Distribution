@@ -14,6 +14,8 @@ trait DisplayProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
        */
-  var display: js.UndefOr[ResponsiveDisplayValue] = js.undefined
+  var display: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.DisplayProperty]
+  ] = js.undefined
 }
 

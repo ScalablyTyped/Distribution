@@ -344,5 +344,16 @@
 [info ] CompleteClass.scala:60 Completed implementations Vector(resolveUrl, getNextMessageId, createChildWindow, isWindowExists, getRandomId, retrievePort, writeToken) [id => openfin, phase => scala.js, this => Name(openfinLib) / Name(underscoreV2EnvironmentOpenfinDashEnvMod) / Name(default)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(os, macLaunch, winLaunch, Security_Realm_Config_Key, OpenFin_Installer, Installer_Work_Dir, launch) [id => openfin, phase => scala.js, this => Name(openfinLib) / Name(underscoreV2LauncherLauncherMod) / Name(default)] 
 [debug] PhaseRunner.scala:78 Success [id => openfin, phase => scala.js] 
-[warn ] PhaseRunner.scala:64 Failed because of, [node => Compilation failed] [id => openfin, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [node => Compilation failed] [id => openfin, phase => build] 
+[error] EmitterBase.scala:129 method removeAllListeners is defined twice;
+  the conflicting method removeAllListeners was defined at line 127:7,   def removeAllListeners(eventType: stdLib.Extract[java.lang.String, java.lang.String]): stdLib.Promise[this.type] = js.native [id => openfin, phase => build] 
+[error] EmitterBase.scala:125 method registerEventListener is defined twice;
+  the conflicting method registerEventListener was defined at line 121:23,   /* protected */ def registerEventListener(eventType: stdLib.Extract[java.lang.String, java.lang.String], options: SubOptions): stdLib.Promise[nodeLib.eventsMod.EventEmitter] = js.native [id => openfin, phase => build] 
+[error] EmitterBase.scala:124 method registerEventListener is defined twice;
+  the conflicting method registerEventListener was defined at line 120:23,   /* protected */ def registerEventListener(eventType: stdLib.Extract[java.lang.String, java.lang.String]): stdLib.Promise[nodeLib.eventsMod.EventEmitter] = js.native [id => openfin, phase => build] 
+[error] EmitterBase.scala:41 method deregisterEventListener is defined twice;
+  the conflicting method deregisterEventListener was defined at line 37:23,   /* protected */ def deregisterEventListener(eventType: stdLib.Extract[java.lang.String, java.lang.String], options: SubOptions): stdLib.Promise[scala.Unit | nodeLib.eventsMod.EventEmitter] = js.native [id => openfin, phase => build] 
+[error] EmitterBase.scala:40 method deregisterEventListener is defined twice;
+  the conflicting method deregisterEventListener was defined at line 36:23,   /* protected */ def deregisterEventListener(eventType: stdLib.Extract[java.lang.String, java.lang.String]): stdLib.Promise[scala.Unit | nodeLib.eventsMod.EventEmitter] = js.native [id => openfin, phase => build] 
+[error] EmitterBase.scala:35 method deregisterAllListeners is defined twice;
+  the conflicting method deregisterAllListeners was defined at line 33:23,   /* protected */ def deregisterAllListeners(eventType: stdLib.Extract[java.lang.String, java.lang.String]): stdLib.Promise[scala.Unit | nodeLib.eventsMod.EventEmitter] = js.native [id => openfin, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [openfin => Compilation failed] [id => openfin, phase => build] 

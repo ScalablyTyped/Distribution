@@ -16,6 +16,8 @@ trait AlignItemsProps extends js.Object {
        *
        * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
        */
-  var alignItems: js.UndefOr[ResponsiveAlignItemsValue] = js.undefined
+  var alignItems: js.UndefOr[
+    styledDashSystemLib.distSpaceMod.ResponsiveValue[csstypeLib.csstypeMod.AlignItemsProperty]
+  ] = js.undefined
 }
 
