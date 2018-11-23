@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-loadable"
-version := "5.4-dt-20180910Z-240178"
+version := "5.4-dt-20181123Z-240178"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

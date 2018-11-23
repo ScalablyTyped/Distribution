@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "emoji-mart"
-version := "2.8-dt-20180910Z-f86101"
+version := "2.8-dt-20181123Z-f86101"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

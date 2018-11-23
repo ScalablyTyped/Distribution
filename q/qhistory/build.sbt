@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "qhistory"
-version := "1.0-dt-20180910Z-8258f4"
+version := "1.0-dt-20181123Z-8258f4"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

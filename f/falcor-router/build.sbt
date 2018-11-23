@@ -1,11 +1,12 @@
 organization := "com.scalablytyped"
 name := "falcor-router"
-version := "0.4.0-dt-20180910Z-2a0d8f"
+version := "0.4.0-dt-20180910Z-693e7f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "falcor" % "0.1-dt-20180910Z-69db50",
+  "com.scalablytyped" %%% "falcor" % "0.1-dt-20180910Z-096c1a",
+  "com.scalablytyped" %%% "falcor-http-datasource" % "0.1.3-dt-20180910Z-efd028",
   "com.scalablytyped" %%% "falcor-json-graph" % "1.1.7-dt-20180910Z-16036d",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
