@@ -1,0 +1,58 @@
+package typings
+package apolloDashReactLib.apolloDashReactMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("apollo-react", JSImport.Namespace)
+@js.native
+object apolloDashReactModMembers extends js.Object {
+  def compose(): js.Function1[/* a */ js.Any, _] = js.native
+  def compose[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */js.Any, R] = js.native
+  def compose[F /* <: js.Function */](f: F): F = js.native
+  def compose[R](funcs: js.Function*): js.Function1[/* repeated */js.Any, R] = js.native
+  def compose[A, R](f1: js.Function1[/* b */ A, R], f2: reduxLib.Func0[A]): reduxLib.Func0[R] = js.native
+  def compose[A, B, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: reduxLib.Func0[A]): reduxLib.Func0[R] = js.native
+  def compose[A, T1, R](f1: js.Function1[/* b */ A, R], f2: reduxLib.Func1[T1, A]): reduxLib.Func1[T1, R] = js.native
+  def compose[A, B, C, R](
+    f1: js.Function1[/* b */ C, R],
+    f2: js.Function1[/* a */ B, C],
+    f3: js.Function1[/* a */ A, B],
+    f4: reduxLib.Func0[A]
+  ): reduxLib.Func0[R] = js.native
+  def compose[A, B, T1, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: reduxLib.Func1[T1, A]): reduxLib.Func1[T1, R] = js.native
+  def compose[A, T1, T2, R](f1: js.Function1[/* b */ A, R], f2: reduxLib.Func2[T1, T2, A]): reduxLib.Func2[T1, T2, R] = js.native
+  def compose[A, B, C, T1, R](
+    f1: js.Function1[/* b */ C, R],
+    f2: js.Function1[/* a */ B, C],
+    f3: js.Function1[/* a */ A, B],
+    f4: reduxLib.Func1[T1, A]
+  ): reduxLib.Func1[T1, R] = js.native
+  def compose[A, B, T1, T2, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: reduxLib.Func2[T1, T2, A]): reduxLib.Func2[T1, T2, R] = js.native
+  def compose[A, T1, T2, T3, R](f1: js.Function1[/* b */ A, R], f2: reduxLib.Func3[T1, T2, T3, A]): reduxLib.Func3[T1, T2, T3, R] = js.native
+  def compose[A, B, C, T1, T2, R](
+    f1: js.Function1[/* b */ C, R],
+    f2: js.Function1[/* a */ B, C],
+    f3: js.Function1[/* a */ A, B],
+    f4: reduxLib.Func2[T1, T2, A]
+  ): reduxLib.Func2[T1, T2, R] = js.native
+  def compose[A, B, T1, T2, T3, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: reduxLib.Func3[T1, T2, T3, A]): reduxLib.Func3[T1, T2, T3, R] = js.native
+  def compose[A, B, C, T1, T2, T3, R](
+    f1: js.Function1[/* b */ C, R],
+    f2: js.Function1[/* a */ B, C],
+    f3: js.Function1[/* a */ A, B],
+    f4: reduxLib.Func3[T1, T2, T3, A]
+  ): reduxLib.Func3[T1, T2, T3, R] = js.native
+  def getDataFromTree(rootElement: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def getDataFromTree(rootElement: js.Any, rootContext: js.Any): stdLib.Promise[scala.Unit] = js.native
+  def getDataFromTree(rootElement: js.Any, rootContext: js.Any, fetchRoot: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def graphql(document: typedDashGraphqlLib.graphqlMod.Document): js.Function1[/* WrappedComponent */ js.Any, _] = js.native
+  def graphql(
+    document: typedDashGraphqlLib.graphqlMod.Document,
+    operationOptions: apolloDashReactLib.libGraphqlMod.OperationOption
+  ): js.Function1[/* WrappedComponent */ js.Any, _] = js.native
+  def renderToStringWithData(component: js.Any): stdLib.Promise[java.lang.String] = js.native
+  def withApollo(WrappedComponent: js.Any): js.Any = js.native
+}
+
