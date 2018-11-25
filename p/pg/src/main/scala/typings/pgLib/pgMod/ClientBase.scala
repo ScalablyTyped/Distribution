@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pg", "ClientBase")
 @js.native
 class ClientBase ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def this(config: java.lang.String) = this()
   def this(config: ClientConfig) = this()
   def connect(): stdLib.Promise[scala.Unit] = js.native

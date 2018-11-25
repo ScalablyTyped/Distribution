@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("soap", "Client")
 @js.native
 class Client protected ()
-  extends eventsLib.eventsMod.EventEmitter
+  extends nodeLib.eventsMod.EventEmitter
      with /* method */ ScalablyTyped.runtime.StringDictionary[ISoapMethod | WSDL | js.Function] {
   def this(wsdl: WSDL) = this()
   def this(wsdl: WSDL, endpoint: java.lang.String) = this()

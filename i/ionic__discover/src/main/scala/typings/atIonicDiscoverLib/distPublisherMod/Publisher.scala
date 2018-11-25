@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/discover/dist/publisher", "Publisher")
 @js.native
 class Publisher protected ()
-  extends eventsLib.eventsMod.EventEmitter
+  extends nodeLib.eventsMod.EventEmitter
      with IPublisherEventEmitter {
   def this(namespace: java.lang.String, name: java.lang.String, port: scala.Double) = this()
   def this(namespace: java.lang.String, name: java.lang.String, port: scala.Double, commPort: scala.Double) = this()

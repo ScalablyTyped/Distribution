@@ -11,7 +11,7 @@ trait CompatibleRedisClient extends js.Object {
   def eval(args: js.Array[_]): js.Any = js.native
   def eval(
     args: js.Array[_],
-    callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* res */ js.Any, scala.Unit]
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* res */ js.Any, scala.Unit]
   ): js.Any = js.native
 }
 

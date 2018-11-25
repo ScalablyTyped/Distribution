@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class AccessTokenExpiredError () extends TwilioError {
   @JSName("code")
   var code_AccessTokenExpiredError: twilioDashVideoLib.twilioDashVideoLibNumbers.`20104` = js.native
-  @JSName("message")
-  var message_AccessTokenExpiredError: twilioDashVideoLib.twilioDashVideoLibStrings.`Access Token expired or expiration date invalid` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Access Token expired or expiration date invalid` = js.native
 }
 

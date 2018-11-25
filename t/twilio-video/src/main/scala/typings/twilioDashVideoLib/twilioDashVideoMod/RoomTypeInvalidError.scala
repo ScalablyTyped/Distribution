@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class RoomTypeInvalidError () extends TwilioError {
   @JSName("code")
   var code_RoomTypeInvalidError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53108` = js.native
-  @JSName("message")
-  var message_RoomTypeInvalidError: twilioDashVideoLib.twilioDashVideoLibStrings.`RoomType is not valid` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`RoomType is not valid` = js.native
 }
 

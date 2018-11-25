@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Watcher
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   var data: scala.Double = js.native
   var directoryWatcher: watchpackLib.directorywatcherMod.namespaced = js.native
   var path: java.lang.String = js.native

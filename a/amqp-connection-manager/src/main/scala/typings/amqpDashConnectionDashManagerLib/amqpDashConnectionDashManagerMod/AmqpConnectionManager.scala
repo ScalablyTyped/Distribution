@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AmqpConnectionManager
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   @JSName("addListener")
   def addListener_connect(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.connect,
@@ -51,7 +51,6 @@ trait AmqpConnectionManager
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.disconnect,
     listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Err, scala.Unit]
   ): this.type = js.native
-  def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_connect(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.connect,
@@ -62,7 +61,6 @@ trait AmqpConnectionManager
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.disconnect,
     listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Err, scala.Unit]
   ): this.type = js.native
-  def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_connect(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.connect,

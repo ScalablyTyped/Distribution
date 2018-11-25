@@ -16,10 +16,10 @@ trait ServerScope extends js.Object {
   def auth(username: java.lang.String, userpass: java.lang.String): stdLib.Promise[DatabaseAuthResponse] = js.native
   // http://docs.couchdb.org/en/latest/api/server/authn.html#cookie-authentication
   def auth(username: java.lang.String, userpass: java.lang.String, callback: Callback[DatabaseAuthResponse]): stdLib.Promise[DatabaseAuthResponse] = js.native
-  def followUpdates(): eventsLib.eventsMod.EventEmitter = js.native
-  def followUpdates(callback: Callback[_]): eventsLib.eventsMod.EventEmitter = js.native
-  def followUpdates(params: js.Any): eventsLib.eventsMod.EventEmitter = js.native
-  def followUpdates(params: js.Any, callback: Callback[_]): eventsLib.eventsMod.EventEmitter = js.native
+  def followUpdates(): nodeLib.eventsMod.EventEmitter = js.native
+  def followUpdates(callback: Callback[_]): nodeLib.eventsMod.EventEmitter = js.native
+  def followUpdates(params: js.Any): nodeLib.eventsMod.EventEmitter = js.native
+  def followUpdates(params: js.Any, callback: Callback[_]): nodeLib.eventsMod.EventEmitter = js.native
   def scope[D](db: java.lang.String): DocumentScope[D] = js.native
   // http://docs.couchdb.org/en/latest/api/server/authn.html#get--_session
   def session(): stdLib.Promise[DatabaseSessionResponse] = js.native

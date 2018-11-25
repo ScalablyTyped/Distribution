@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait PubSubOptions extends js.Object {
-  var eventEmitter: js.UndefOr[eventsLib.eventsMod.EventEmitter] = js.undefined
+  var eventEmitter: js.UndefOr[nodeLib.eventsMod.EventEmitter] = js.undefined
 }
 

@@ -1,14 +1,13 @@
 organization := "com.scalablytyped"
 name := "yauzl-promise"
-version := "2.1-dt-20180910Z-13aeea"
+version := "2.1-dt-20180910Z-40f751"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-abe6d1",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-913134",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "yauzl" % "2.9-dt-20180910Z-b41e0b",
+  "com.scalablytyped" %%% "yauzl" % "2.9-dt-20180910Z-f7931b",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

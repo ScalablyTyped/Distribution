@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class RoomStatusCallbackMethodInvalidError () extends TwilioError {
   @JSName("code")
   var code_RoomStatusCallbackMethodInvalidError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53110` = js.native
-  @JSName("message")
-  var message_RoomStatusCallbackMethodInvalidError: twilioDashVideoLib.twilioDashVideoLibStrings.`StatusCallbackMethod is invalid` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`StatusCallbackMethod is invalid` = js.native
 }
 

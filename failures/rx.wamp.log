@@ -1,4 +1,4 @@
-[info ] ResolveExternalReferences.scala:76 Inferred augmented module None (TsIdentModule(None,List(rx))) [file => ../types/rx.wamp/index.d.ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx)), id => rx.wamp] 
+[info ] ResolveExternalReferences.scala:81 Inferred augmented module None (TsIdentModule(None,List(rx))) [file => ../types/rx.wamp/index.d.ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx)), id => rx.wamp] 
 [debug] PhaseRunner.scala:78 Success [id => rx.wamp, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/rx.wamp),TsIdentLibrarySimple(rx.wamp)),TsIdentModule(None,List(rx.wamp))) [id => rx.wamp, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(rx.wamp)) [id => rx.wamp, phase => typescript] 

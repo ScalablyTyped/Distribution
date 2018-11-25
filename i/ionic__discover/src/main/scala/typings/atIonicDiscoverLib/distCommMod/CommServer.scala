@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/discover/dist/comm", "CommServer")
 @js.native
 class CommServer protected ()
-  extends eventsLib.eventsMod.EventEmitter
+  extends nodeLib.eventsMod.EventEmitter
      with ICommServerEventEmitter {
   def this(namespace: java.lang.String, /**
        * Unique identifier of the publisher.

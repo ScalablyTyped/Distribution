@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("twilio-video", "Participant")
 @js.native
 class Participant ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   var audioTracks: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, AudioTrackPublication] = js.native
   var dataTracks: stdLib.Map[twilioDashVideoLib.twilioDashVideoMod.TrackNs.SID, DataTrackPublication] = js.native
   var identity: twilioDashVideoLib.twilioDashVideoMod.ParticipantNs.Identity = js.native

@@ -1,0 +1,25 @@
+[debug] PhaseRunner.scala:78 Success [id => react-fast-compare, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-fast-compare/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/react-fast-compare),TsIdentLibrarySimple(react-fast-compare)),TsIdentModule(None,List(react-fast-compare))) [id => react-fast-compare, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(react-fast-compare) [id => react-fast-compare, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => react-fast-compare, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(react-fast-compare) [id => react-fast-compare, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => react-fast-compare, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:192 Using cached build of react-fast-compare [id => react-fast-compare, phase => build] 
+[debug] PhaseRunner.scala:78 Success [id => react-fast-compare, phase => build] 
+[error] PhaseRes.scala:75 Caught exception [id => react-fast-compare, phase => publish] java.lang.RuntimeException: was not able to find or create a package for oyvindberg in ScalablyTyped named react-fast-compare
+	at scala.sys.package$.error(package.scala:26)
+	at com.olvind.tso.importer.build.BinTrayPublisher.$anonfun$ensurePackage$2(BinTrayPublisher.scala:49)
+	at com.olvind.tso.importer.build.BinTrayPublisher.$anonfun$ensurePackage$2$adapted(BinTrayPublisher.scala:46)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+
+[debug] PhaseRunner.scala:82 Failure, [react-fast-compare => java.lang.RuntimeException: was not able to find or create a package for oyvindberg in ScalablyTyped named react-fast-compare] [id => react-fast-compare, phase => publish] 

@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-contrib"
-version := "161120180312-acda37"
+version := "201811160312-acda37"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

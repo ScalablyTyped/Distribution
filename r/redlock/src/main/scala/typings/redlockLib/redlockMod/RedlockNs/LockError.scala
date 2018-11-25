@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait LockError
-  extends stdLib.Error {
-  @JSName("name")
-  val name_LockError: redlockLib.redlockLibStrings.LockError
+  extends nodeLib.Error {
+  val name: redlockLib.redlockLibStrings.LockError
 }
 

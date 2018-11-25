@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("protractor/built/runner", "Runner")
 @js.native
 class Runner protected ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def this(config: protractorLib.builtConfigMod.Config) = this()
   var `config_`: protractorLib.builtConfigMod.Config = js.native
   var `driverprovider_`: protractorLib.builtDriverProvidersMod.DriverProvider = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("jsdom", "VirtualConsole")
 @js.native
 class VirtualConsole ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   @JSName("on")
   def on_Console(method: jsdomLib.jsdomLibStrings.Console, callback: nodeLib.NodeJSNs.ConsoleConstructor): this.type = js.native
   @JSName("on")

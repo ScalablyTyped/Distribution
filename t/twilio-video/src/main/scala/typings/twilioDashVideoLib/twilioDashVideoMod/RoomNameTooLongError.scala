@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class RoomNameTooLongError () extends TwilioError {
   @JSName("code")
   var code_RoomNameTooLongError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53101` = js.native
-  @JSName("message")
-  var message_RoomNameTooLongError: twilioDashVideoLib.twilioDashVideoLibStrings.`Room name is too long` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Room name is too long` = js.native
 }
 

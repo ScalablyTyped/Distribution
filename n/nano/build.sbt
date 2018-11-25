@@ -1,18 +1,17 @@
 organization := "com.scalablytyped"
 name := "nano"
-version := "7.1.0-43d27a"
+version := "7.1.0-44c97d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "caseless" % "0.12-dt-20180910Z-7ce57e",
   "com.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-8c87a5",
-  "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-abe6d1",
-  "com.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-dc466d",
+  "com.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-24b452",
   "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-caf0c5",
   "com.scalablytyped" %%% "lodash_dot_isempty" % "4.4-dt-20180910Z-d088f6",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-913134",
-  "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-57e002",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
+  "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-34d8d7",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "com.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181104Z-a9e24d",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

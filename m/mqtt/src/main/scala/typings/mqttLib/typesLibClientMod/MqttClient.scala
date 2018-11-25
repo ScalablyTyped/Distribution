@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mqtt/types/lib/client", "MqttClient")
 @js.native
 class MqttClient protected ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def this(streamBuilder: js.Function1[/* client */ MqttClient, IStream], options: mqttLib.typesLibClientDashOptionsMod.IClientOptions) = this()
   var connected: scala.Boolean = js.native
   var disconnected: scala.Boolean = js.native

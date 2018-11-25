@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("soap", "Server")
 @js.native
 class Server protected ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def this(server: js.Any, path: java.lang.String, services: IServices, wsdl: WSDL, options: IServerOptions) = this()
   var path: java.lang.String = js.native
   var services: IServices = js.native

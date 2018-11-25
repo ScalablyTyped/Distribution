@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Application
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   var context: koaLib.koaMod.ApplicationNs.BaseContext = js.native
   var env: java.lang.String = js.native
   var keys: keygripLib.keygripMod.Keygrip | js.Array[java.lang.String] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Redlock
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   var Lock: ScalablyTyped.runtime.Instantiable4[
     /* redlock */ Redlock, 
     /* resource */ java.lang.String, 

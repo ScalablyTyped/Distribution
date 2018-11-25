@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class ParticipantDuplicateIdentityError () extends TwilioError {
   @JSName("code")
   var code_ParticipantDuplicateIdentityError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53205` = js.native
-  @JSName("message")
-  var message_ParticipantDuplicateIdentityError: twilioDashVideoLib.twilioDashVideoLibStrings.`Participant disconnected because of duplicate identity` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Participant disconnected because of duplicate identity` = js.native
 }
 

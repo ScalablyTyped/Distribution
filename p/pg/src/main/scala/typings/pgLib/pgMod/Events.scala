@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pg", "Events")
 @js.native
 class Events ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   @JSName("on")
   def on_error(
     event: pgLib.pgLibStrings.error,

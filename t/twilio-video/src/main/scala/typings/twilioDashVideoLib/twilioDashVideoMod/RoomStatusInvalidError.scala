@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class RoomStatusInvalidError () extends TwilioError {
   @JSName("code")
   var code_RoomStatusInvalidError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53112` = js.native
-  @JSName("message")
-  var message_RoomStatusInvalidError: twilioDashVideoLib.twilioDashVideoLibStrings.`Status is invalid` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Status is invalid` = js.native
 }
 

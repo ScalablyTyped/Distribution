@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/cli-framework/lib/tasks", "TaskChain")
 @js.native
 class TaskChain ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def this(hasTaskOptions: TaskChainOptions) = this()
   var current: js.UndefOr[Task] = js.native
   val taskOptions: stdLib.Partial[TaskOptions] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Pagelet
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   var compiled: scala.Boolean = js.native
   var container: java.lang.String = js.native
   var css: js.Array[java.lang.String] = js.native

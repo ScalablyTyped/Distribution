@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class TrackNameIsDuplicatedError () extends TwilioError {
   @JSName("code")
   var code_TrackNameIsDuplicatedError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53304` = js.native
-  @JSName("message")
-  var message_TrackNameIsDuplicatedError: twilioDashVideoLib.twilioDashVideoLibStrings.`Track name is duplicated` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Track name is duplicated` = js.native
 }
 

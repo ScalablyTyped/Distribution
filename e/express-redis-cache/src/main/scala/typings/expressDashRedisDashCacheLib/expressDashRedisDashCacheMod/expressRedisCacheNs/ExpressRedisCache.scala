@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ExpressRedisCache
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   val FOREVER: scala.Double = js.native
   var auth_pass: java.lang.String = js.native
   var client: redisLib.redisMod.RedisClient = js.native

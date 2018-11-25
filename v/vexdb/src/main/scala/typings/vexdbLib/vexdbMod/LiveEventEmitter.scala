@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LiveEventEmitter[Q, R]
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def close(): scala.Unit = js.native
   def current(): js.Array[R] = js.native
   @JSName("on")

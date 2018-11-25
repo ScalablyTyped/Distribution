@@ -1,21 +1,20 @@
 organization := "com.scalablytyped"
 name := "passport-windowsauth"
-version := "3.0-dt-20181013Z-21525d"
+version := "3.0-dt-20181013Z-b29b92"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-83ee83",
-  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-6d6e76",
-  "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-abe6d1",
-  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-7cbe9d",
-  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-87f8bc",
-  "com.scalablytyped" %%% "ldapjs" % "1.0-dt-20180910Z-b82130",
+  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-69217a",
+  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-ffa116",
+  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-673f92",
+  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-b9e3b3",
+  "com.scalablytyped" %%% "ldapjs" % "1.0-dt-20180910Z-57ac78",
   "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-f9ab87",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-913134",
-  "com.scalablytyped" %%% "passport" % "0.4-dt-20181104Z-9fd7c3",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
+  "com.scalablytyped" %%% "passport" % "0.4-dt-20181104Z-948185",
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-dfa7aa",
-  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-7c0e63",
+  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-8d9c98",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

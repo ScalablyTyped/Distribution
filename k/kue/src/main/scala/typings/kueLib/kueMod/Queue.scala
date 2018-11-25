@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("kue", "Queue")
 @js.native
 class Queue protected ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def this(options: js.Object) = this()
   var client: redisLib.redisMod.RedisClient = js.native
   var id: java.lang.String = js.native

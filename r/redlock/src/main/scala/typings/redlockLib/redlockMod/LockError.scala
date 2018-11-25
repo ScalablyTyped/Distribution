@@ -11,11 +11,6 @@ class LockError ()
   extends redlockLib.redlockMod.RedlockNs.LockError {
   def this(message: java.lang.String) = this()
   /* CompleteClass */
-  override var message: java.lang.String = js.native
-  /* CompleteClass */
-  override var name: java.lang.String = js.native
-  /* CompleteClass */
-  @JSName("name")
-  override val name_LockError: redlockLib.redlockLibStrings.LockError = js.native
+  override val name: redlockLib.redlockLibStrings.LockError = js.native
 }
 

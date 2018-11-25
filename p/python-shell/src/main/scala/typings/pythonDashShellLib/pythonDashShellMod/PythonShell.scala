@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("python-shell", "PythonShell")
 @js.native
 class PythonShell protected ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def this(scriptName: java.lang.String) = this()
   def this(scriptName: java.lang.String, options: InstanceOptions) = this()
   var defaultOptions: RunOptions = js.native

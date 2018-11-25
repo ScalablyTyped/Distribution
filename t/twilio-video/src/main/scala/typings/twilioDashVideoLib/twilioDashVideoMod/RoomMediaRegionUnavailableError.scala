@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class RoomMediaRegionUnavailableError () extends TwilioError {
   @JSName("code")
   var code_RoomMediaRegionUnavailableError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53116` = js.native
-  @JSName("message")
-  var message_RoomMediaRegionUnavailableError: twilioDashVideoLib.twilioDashVideoLibStrings.`There are no media servers available in the MediaRegion` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`There are no media servers available in the MediaRegion` = js.native
 }
 

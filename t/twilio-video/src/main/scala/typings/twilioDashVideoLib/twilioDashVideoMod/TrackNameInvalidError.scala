@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class TrackNameInvalidError () extends TwilioError {
   @JSName("code")
   var code_TrackNameInvalidError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53301` = js.native
-  @JSName("message")
-  var message_TrackNameInvalidError: twilioDashVideoLib.twilioDashVideoLibStrings.`Track name is invalid` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Track name is invalid` = js.native
 }
 

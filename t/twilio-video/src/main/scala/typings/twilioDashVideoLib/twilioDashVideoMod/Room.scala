@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("twilio-video", "Room")
 @js.native
 class Room ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   var dominantSpeaker: RemoteParticipant | scala.Null = js.native
   var isRecording: scala.Boolean = js.native
   var localParticipant: LocalParticipant = js.native

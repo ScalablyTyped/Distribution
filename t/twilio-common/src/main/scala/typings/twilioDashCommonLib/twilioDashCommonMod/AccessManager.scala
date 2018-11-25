@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("twilio-common", "AccessManager")
 @js.native
 class AccessManager protected ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def this(initialToken: java.lang.String) = this()
   val expires: js.UndefOr[stdLib.Date] = js.native
   val identity: js.UndefOr[java.lang.String] = js.native
@@ -17,7 +17,7 @@ class AccessManager protected ()
   @JSName("on")
   def on_error(
     `type`: twilioDashCommonLib.twilioDashCommonLibStrings.error,
-    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
+    listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_tokenExpired(

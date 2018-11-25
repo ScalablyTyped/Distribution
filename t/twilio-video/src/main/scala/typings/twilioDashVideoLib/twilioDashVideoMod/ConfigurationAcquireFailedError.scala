@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class ConfigurationAcquireFailedError () extends TwilioError {
   @JSName("code")
   var code_ConfigurationAcquireFailedError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53500` = js.native
-  @JSName("message")
-  var message_ConfigurationAcquireFailedError: twilioDashVideoLib.twilioDashVideoLibStrings.`Unable to acquire configuration` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Unable to acquire configuration` = js.native
 }
 

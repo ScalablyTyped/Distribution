@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Umzug
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   @JSName("addListener")
   def addListener_migrated(eventName: umzugLib.umzugLibStrings.migrated): this.type = js.native
   @JSName("addListener")

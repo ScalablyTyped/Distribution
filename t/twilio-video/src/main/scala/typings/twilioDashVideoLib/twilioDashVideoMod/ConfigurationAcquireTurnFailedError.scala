@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class ConfigurationAcquireTurnFailedError () extends TwilioError {
   @JSName("code")
   var code_ConfigurationAcquireTurnFailedError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53501` = js.native
-  @JSName("message")
-  var message_ConfigurationAcquireTurnFailedError: twilioDashVideoLib.twilioDashVideoLibStrings.`Unable to acquire TURN credentials` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Unable to acquire TURN credentials` = js.native
 }
 

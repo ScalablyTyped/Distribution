@@ -1,15 +1,14 @@
 organization := "com.scalablytyped"
 name := "supertest"
-version := "v2.0.1-dt-20180910Z-278ce7"
+version := "v2.0.1-dt-20180910Z-b2e5d4"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "cookiejar" % "2.1-dt-20180910Z-994a6f",
-  "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-abe6d1",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-913134",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "superagent" % "3.8-dt-20180910Z-547290",
+  "com.scalablytyped" %%% "superagent" % "3.8-dt-20180910Z-1e3b8e",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -221,7 +221,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:43)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:26)
-	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:183)
+	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:177)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:112)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:109)
 	at scala.collection.parallel.immutable.ParHashSet$ParHashSetIterator.map2combiner(ParHashSet.scala:77)

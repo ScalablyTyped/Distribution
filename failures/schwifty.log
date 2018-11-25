@@ -1,4 +1,4 @@
-[info ] ResolveExternalReferences.scala:76 Inferred augmented module None (TsIdentModule(None,List(hapi))) [file => ../types/schwifty/index.d.ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(hapi)), id => schwifty] 
+[info ] ResolveExternalReferences.scala:81 Inferred augmented module None (TsIdentModule(None,List(hapi))) [file => ../types/schwifty/index.d.ts, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(hapi)), id => schwifty] 
 [debug] PhaseRunner.scala:78 Success [id => schwifty, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/schwifty/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/schwifty),TsIdentLibrarySimple(schwifty)),TsIdentModule(None,List(schwifty))) [id => schwifty, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(schwifty)) [id => schwifty, phase => typescript] 

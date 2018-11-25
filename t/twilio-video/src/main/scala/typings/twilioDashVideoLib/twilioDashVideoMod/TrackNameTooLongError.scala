@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class TrackNameTooLongError () extends TwilioError {
   @JSName("code")
   var code_TrackNameTooLongError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53302` = js.native
-  @JSName("message")
-  var message_TrackNameTooLongError: twilioDashVideoLib.twilioDashVideoLibStrings.`Track name is too long` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Track name is too long` = js.native
 }
 

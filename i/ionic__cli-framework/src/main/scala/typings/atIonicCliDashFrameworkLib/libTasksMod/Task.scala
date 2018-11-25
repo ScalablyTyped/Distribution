@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/cli-framework/lib/tasks", "Task")
 @js.native
 class Task ()
-  extends eventsLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def this(hasMsgTickInterval: TaskOptions) = this()
   var _msg: java.lang.String = js.native
   var intervalId: js.UndefOr[nodeLib.NodeJSNs.Timer] = js.native

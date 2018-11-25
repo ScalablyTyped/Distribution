@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class SignalingConnectionTimeoutError () extends TwilioError {
   @JSName("code")
   var code_SignalingConnectionTimeoutError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53002` = js.native
-  @JSName("message")
-  var message_SignalingConnectionTimeoutError: twilioDashVideoLib.twilioDashVideoLibStrings.`Signaling connection timed out` = js.native
+  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Signaling connection timed out` = js.native
 }
 
