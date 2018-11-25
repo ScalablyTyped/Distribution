@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Client
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def changeInterval(interval: js.Array[scala.Double]): Client = js.native
   def changeInterval(interval: scala.Double): Client = js.native
   def del(id: java.lang.String): Client = js.native

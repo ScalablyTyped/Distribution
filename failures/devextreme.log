@@ -731,7 +731,14 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:43)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:26)
-	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:185)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1(PhaseRunner.scala:48)
+	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$1$adapted(PhaseRunner.scala:43)
+	at com.olvind.tso.phases.PhaseCache.$anonfun$getOrElse$1(PhaseCache.scala:40)
+	at scala.Option.foreach(Option.scala:257)
+	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
+	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:43)
+	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:26)
+	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:183)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:112)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:109)
 	at scala.collection.parallel.immutable.ParHashSet$ParHashSetIterator.map2combiner(ParHashSet.scala:77)
@@ -757,3 +764,4 @@
 [debug] PhaseRunner.scala:82 Failure, [devextreme => java.lang.RuntimeException: Could not derive unique name] [id => devextreme, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [devextreme => java.lang.RuntimeException: Could not derive unique name] [id => devextreme, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [devextreme => java.lang.RuntimeException: Could not derive unique name] [id => devextreme, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [devextreme => java.lang.RuntimeException: Could not derive unique name] [id => devextreme, phase => publish] 

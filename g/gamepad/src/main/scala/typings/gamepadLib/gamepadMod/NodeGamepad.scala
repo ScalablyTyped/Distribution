@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NodeGamepad
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def detectDevices(): scala.Unit = js.native
   def deviceAtIndex(deviceIndex: scala.Double): GamepadInstance = js.native
   def init(): scala.Unit = js.native

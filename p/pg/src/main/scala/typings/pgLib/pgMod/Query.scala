@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pg", "Query")
 @js.native
 class Query ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   @JSName("on")
   def on_end(event: pgLib.pgLibStrings.end, listener: js.Function1[/* result */ ResultBuilder, scala.Unit]): this.type = js.native
   @JSName("on")

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ParticipantIdentityTooLongError () extends TwilioError {
   @JSName("code")
   var code_ParticipantIdentityTooLongError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53201` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Participant identity is too long` = js.native
+  @JSName("message")
+  var message_ParticipantIdentityTooLongError: twilioDashVideoLib.twilioDashVideoLibStrings.`Participant identity is too long` = js.native
 }
 

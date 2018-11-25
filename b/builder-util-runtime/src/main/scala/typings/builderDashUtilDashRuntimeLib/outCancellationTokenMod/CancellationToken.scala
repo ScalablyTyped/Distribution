@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("builder-util-runtime/out/CancellationToken", "CancellationToken")
 @js.native
 class CancellationToken ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def this(parent: CancellationToken) = this()
   var _cancelled: js.Any = js.native
   var _parent: js.Any = js.native

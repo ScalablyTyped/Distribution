@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TelegramBot
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   /**
        * @deprecated since version 0.30.0
        */

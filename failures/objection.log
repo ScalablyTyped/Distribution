@@ -417,3 +417,4 @@
 [error] RelationMapping.scala:21 not found: type QM,       QueryBuilder[_, js.Array[_], js.Array[QM]] [id => objection, phase => build] 
 [error] QueryBuilder.scala:16 not found: type QM,   def forClass[M /* <: objectionLib.objectionMod.ObjectionNs.Model */, MC /* <: objectionLib.objectionMod.ObjectionNs.ModelClass[M] */](modelClass: MC): objectionLib.objectionMod.ObjectionNs.QueryBuilder[M, js.Array[M], js.Array[QM]] = js.native [id => objection, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [objection => Compilation failed] [id => objection, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [objection => Compilation failed] [id => objection, phase => publish] 

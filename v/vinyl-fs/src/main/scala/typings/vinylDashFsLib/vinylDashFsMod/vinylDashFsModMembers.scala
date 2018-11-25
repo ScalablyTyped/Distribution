@@ -22,24 +22,24 @@ object vinylDashFsModMembers extends js.Object {
     getFolderPath: js.Function1[/* File */ vinylLib.vinylMod.File, java.lang.String],
     opts: vinylDashFsLib.Anon_CwdDirMode
   ): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def watch(globs: java.lang.String): nodeLib.eventsMod.EventEmitter = js.native
-  def watch(globs: java.lang.String, cb: js.Function1[/* outEvt */ vinylDashFsLib.Anon_Type, scala.Unit]): nodeLib.eventsMod.EventEmitter = js.native
-  def watch(globs: java.lang.String, opt: vinylDashFsLib.Anon_DebounceDelay): nodeLib.eventsMod.EventEmitter = js.native
+  def watch(globs: java.lang.String): eventsLib.eventsMod.EventEmitter = js.native
+  def watch(globs: java.lang.String, cb: js.Function1[/* outEvt */ vinylDashFsLib.Anon_Type, scala.Unit]): eventsLib.eventsMod.EventEmitter = js.native
+  def watch(globs: java.lang.String, opt: vinylDashFsLib.Anon_DebounceDelay): eventsLib.eventsMod.EventEmitter = js.native
   def watch(
     globs: java.lang.String,
     opt: vinylDashFsLib.Anon_DebounceDelay,
     cb: js.Function1[/* outEvt */ vinylDashFsLib.Anon_Type, scala.Unit]
-  ): nodeLib.eventsMod.EventEmitter = js.native
-  def watch(globs: js.Array[java.lang.String]): nodeLib.eventsMod.EventEmitter = js.native
+  ): eventsLib.eventsMod.EventEmitter = js.native
+  def watch(globs: js.Array[java.lang.String]): eventsLib.eventsMod.EventEmitter = js.native
   def watch(
     globs: js.Array[java.lang.String],
     cb: js.Function1[/* outEvt */ vinylDashFsLib.Anon_Type, scala.Unit]
-  ): nodeLib.eventsMod.EventEmitter = js.native
-  def watch(globs: js.Array[java.lang.String], opt: vinylDashFsLib.Anon_DebounceDelay): nodeLib.eventsMod.EventEmitter = js.native
+  ): eventsLib.eventsMod.EventEmitter = js.native
+  def watch(globs: js.Array[java.lang.String], opt: vinylDashFsLib.Anon_DebounceDelay): eventsLib.eventsMod.EventEmitter = js.native
   def watch(
     globs: js.Array[java.lang.String],
     opt: vinylDashFsLib.Anon_DebounceDelay,
     cb: js.Function1[/* outEvt */ vinylDashFsLib.Anon_Type, scala.Unit]
-  ): nodeLib.eventsMod.EventEmitter = js.native
+  ): eventsLib.eventsMod.EventEmitter = js.native
 }
 

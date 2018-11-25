@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("kurento-utils", "WebRtcPeer")
 @js.native
 class WebRtcPeer protected ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def this(mode: kurentoDashUtilsLib.kurentoDashUtilsLibStrings.recv) = this()
   def this(mode: kurentoDashUtilsLib.kurentoDashUtilsLibStrings.send) = this()
   def this(mode: kurentoDashUtilsLib.kurentoDashUtilsLibStrings.sendRecv) = this()

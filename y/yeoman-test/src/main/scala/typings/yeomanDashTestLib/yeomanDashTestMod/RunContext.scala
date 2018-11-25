@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RunContext
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   /**
   	 * Promise `.catch()` duck typing
   	 */

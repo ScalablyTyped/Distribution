@@ -1,12 +1,13 @@
 organization := "com.scalablytyped"
 name := "socketio-jwt-auth"
-version := "0.0-dt-20181120Z-b07762"
+version := "0.0-dt-20181120Z-9aa8f5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20181104Z-18a8fa",
+  "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-abe6d1",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-913134",
+  "com.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20181104Z-0009a6",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

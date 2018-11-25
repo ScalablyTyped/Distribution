@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
    */
 @js.native
 trait ConnectionBase
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   /** A hash of the collections associated with this connection */
   var collections: ScalablyTyped.runtime.StringDictionary[Collection] = js.native
   /** A hash of the global options that are associated with this connection */

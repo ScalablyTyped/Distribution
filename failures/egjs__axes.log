@@ -70,3 +70,4 @@
 [debug] PhaseRunner.scala:78 Success [id => @egjs/axes, phase => scala.js] 
 [error] default.scala:10 illegal cyclic reference involving class default, class default protected () extends default { [id => @egjs/axes, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [@egjs/axes => Compilation failed] [id => @egjs/axes, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [@egjs/axes => Compilation failed] [id => @egjs/axes, phase => publish] 

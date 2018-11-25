@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ChannelWrapper
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   /**
   	 * @see amqplib
   	 * @param message
@@ -113,6 +113,7 @@ trait ChannelWrapper
       scala.Unit
     ]
   ): this.type = js.native
+  def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_close(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.close,
@@ -132,6 +133,7 @@ trait ChannelWrapper
       scala.Unit
     ]
   ): this.type = js.native
+  def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_close(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.close,

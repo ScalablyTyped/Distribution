@@ -86,3 +86,4 @@
 [error] StyledComponentBase.scala:23 cyclic aliasing or subtyping involving type Omit,   def apply(props: (StyledComponentProps[C, T, O, A]) with styledDashComponentsLib.Anon_AsIntrinsicElements): reactLib.reactMod.ReactNs.ReactElement[StyledComponentProps[C, T, O, A]] = js.native [id => styled-components, phase => build] 
 [error] package.scala:32 cyclic aliasing or subtyping involving type Omit,   type StyledComponentProps[// The Component from whose props are derived [id => styled-components, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [styled-components => Compilation failed] [id => styled-components, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [styled-components => Compilation failed] [id => styled-components, phase => publish] 

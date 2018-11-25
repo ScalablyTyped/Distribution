@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Lasso
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   var config: LassoConfig = js.native
   var dependencies: lassoLib.libDependenciesMod.DependencyRegistry = js.native
   var lassoCacheLookup: js.Any = js.native

@@ -3657,3 +3657,4 @@
 [error] vetorUnderscoreBoolNs.scala:31 not found: type T,       tstlLib.baseContainerArrayContainerMod.ArrayContainer[js.Object, tstlLib.baseContainerArrayContainerMod.ArrayContainer[T, Source]] [id => tstl, phase => build] 
 [error] vetorUnderscoreBoolNs.scala:31 not found: type Source,       tstlLib.baseContainerArrayContainerMod.ArrayContainer[js.Object, tstlLib.baseContainerArrayContainerMod.ArrayContainer[T, Source]] [id => tstl, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [tstl => Compilation failed] [id => tstl, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [tstl => Compilation failed] [id => tstl, phase => publish] 

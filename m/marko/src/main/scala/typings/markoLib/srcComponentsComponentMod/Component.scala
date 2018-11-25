@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Component
-  extends nodeLib.eventsMod.EventEmitter
+  extends eventsLib.eventsMod.EventEmitter
      with markoLib.srcRuntimeDomElementMod.DomElement {
   /** @deprecated */
   var el: stdLib.HTMLElement = js.native

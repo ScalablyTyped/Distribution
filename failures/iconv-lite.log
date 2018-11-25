@@ -10,3 +10,4 @@
 [error] iconvDashLiteMod.scala:16 type Options is not a member of package typings.iconvDashLiteLib,   def encode(content: java.lang.String, encoding: java.lang.String, options: iconvDashLiteLib.Options): nodeLib.Buffer = js.native [id => iconv-lite, phase => build] 
 [error] iconvDashLiteMod.scala:18 type Options is not a member of package typings.iconvDashLiteLib,   def encodeStream(encoding: java.lang.String, options: iconvDashLiteLib.Options): nodeLib.NodeJSNs.ReadWriteStream = js.native [id => iconv-lite, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [iconv-lite => Compilation failed] [id => iconv-lite, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [iconv-lite => Compilation failed] [id => iconv-lite, phase => publish] 

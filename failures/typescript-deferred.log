@@ -14,3 +14,4 @@
 [error] PromiseInterface.scala:15 overriding method then in trait ThenableInterface of type [TP](successCB: typings.typescriptDashDeferredLib.typescriptDashDeferredMod.DeferredSuccessCB[T,TP] | typings.typescriptDashDeferredLib.typescriptDashDeferredMod.ImmediateSuccessCB[T,TP], errorCB: typings.typescriptDashDeferredLib.typescriptDashDeferredMod.DeferredErrorCB[TP] | typings.typescriptDashDeferredLib.typescriptDashDeferredMod.ImmediateErrorCB[TP])typings.typescriptDashDeferredLib.typescriptDashDeferredMod.ThenableInterface[TP];
  method then needs `override' modifier,   def `then`[TP]( [id => typescript-deferred, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [typescript-deferred => Compilation failed] [id => typescript-deferred, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [typescript-deferred => Compilation failed] [id => typescript-deferred, phase => publish] 

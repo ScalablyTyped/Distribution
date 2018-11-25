@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Async
-  extends nodeLib.eventsMod.EventEmitter
+  extends eventsLib.eventsMod.EventEmitter
      with stdLib.Promise[js.Any] {
   def beginAsync(): this.type = js.native
   def beginAsync(options: js.Any): this.type = js.native

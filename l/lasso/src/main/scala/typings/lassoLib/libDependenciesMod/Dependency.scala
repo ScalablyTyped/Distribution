@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Dependency
-  extends nodeLib.eventsMod.EventEmitter
+  extends eventsLib.eventsMod.EventEmitter
      with DependencyConfig {
   var _packageDependency: js.UndefOr[scala.Boolean] = js.native
   var contentType: js.UndefOr[java.lang.String] = js.native

@@ -60,18 +60,25 @@
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(_CanvasProperties))] 
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(CanvasEvents))] 
 [error] PhaseRes.scala:78 Caught exception [id => tabris, phase => typescript] java.lang.StackOverflowError
-	at scala.runtime.Statics.anyHash(Statics.java:110)
-	at scala.collection.immutable.HashMap.elemHashCode(HashMap.scala:83)
-	at scala.collection.immutable.HashMap.computeHash(HashMap.scala:92)
-	at scala.collection.immutable.HashMap.get(HashMap.scala:52)
-	at com.olvind.tso.ts.TreeScope$.search(TreeScope.scala:352)
-	at com.olvind.tso.ts.TreeScope$Scoped.local$1(TreeScope.scala:244)
-	at com.olvind.tso.ts.TreeScope$Scoped.lookupImpl(TreeScope.scala:314)
-	at com.olvind.tso.ts.TreeScope.lookupInternal(TreeScope.scala:87)
-	at com.olvind.tso.ts.TreeScope.lookupInternal$(TreeScope.scala:78)
-	at com.olvind.tso.ts.TreeScope$Scoped.lookupInternal(TreeScope.scala:195)
-	at com.olvind.tso.ts.TreeScope$Scoped.lookupImpl(TreeScope.scala:331)
-	at com.olvind.tso.ts.TreeScope.lookupInternal(TreeScope.scala:86)
+	at java.lang.String.valueOf(String.java:2994)
+	at scala.collection.mutable.StringBuilder.append(StringBuilder.scala:199)
+	at scala.collection.TraversableOnce.$anonfun$addString$1(TraversableOnce.scala:358)
+	at scala.collection.immutable.List.foreach(List.scala:388)
+	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:356)
+	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:352)
+	at scala.collection.AbstractTraversable.addString(Traversable.scala:104)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:322)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:321)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:104)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:324)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:324)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:104)
+	at com.olvind.tso.ts.TreeScope.toString(TreeScope.scala:96)
+	at com.olvind.tso.ts.TreeScope.toString$(TreeScope.scala:95)
+	at com.olvind.tso.ts.TreeScope$Scoped.toString$lzycompute(TreeScope.scala:195)
+	at com.olvind.tso.ts.TreeScope$Scoped.toString(TreeScope.scala:195)
+	at com.olvind.tso.ts.TreeScope$LoopDetector.including(TreeScope.scala:128)
+	at com.olvind.tso.ts.TreeScope.lookupInternal(TreeScope.scala:81)
 	at com.olvind.tso.ts.TreeScope.lookupInternal$(TreeScope.scala:78)
 	at com.olvind.tso.ts.TreeScope$Scoped.lookupInternal(TreeScope.scala:195)
 	at com.olvind.tso.ts.TreeScope.lookupBase(TreeScope.scala:68)
@@ -1077,14 +1084,8 @@
 	at scala.collection.immutable.List.map(List.scala:294)
 	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:82)
 	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$3.applyOrElse(ExpandCallables.scala:100)
-	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$3.applyOrElse(ExpandCallables.scala:91)
-	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:144)
-	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:131)
-	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:104)
-	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:91)
-	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:82)
-	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:233)
 
 [debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => publish] 

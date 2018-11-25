@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("socket.io.users", "Users")
 @js.native
 class Users ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def this(namespace: java.lang.String) = this()
   var namespace: java.lang.String = js.native
   var users: js.Array[User] = js.native

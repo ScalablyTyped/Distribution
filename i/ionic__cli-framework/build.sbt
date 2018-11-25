@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "ionic__cli-framework"
-version := "1.1.1-2fda2f"
+version := "1.1.1-f6f5d8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,15 +10,16 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-566c3e",
   "com.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-8c87a5",
   "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-76e9e4",
-  "com.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-cc6273",
-  "com.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180910Z-32d75c",
-  "com.scalablytyped" %%% "ionic__utils-fs" % "0.0.3-7b88ce",
+  "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-abe6d1",
+  "com.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-5d44f9",
+  "com.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180910Z-de39ef",
+  "com.scalablytyped" %%% "ionic__utils-fs" % "0.0.3-63bcfd",
   "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-caf0c5",
   "com.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-298c87",
   "com.scalablytyped" %%% "minimist" % "1.2.0-dt-20180910Z-dd566d",
-  "com.scalablytyped" %%% "ncp" % "v2.0.0-dt-20180910Z-51266f",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "rimraf" % "2.0-dt-20180910Z-6c57e6",
+  "com.scalablytyped" %%% "ncp" % "v2.0.0-dt-20180910Z-c16f95",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-913134",
+  "com.scalablytyped" %%% "rimraf" % "2.0-dt-20180910Z-8fdfc5",
   "com.scalablytyped" %%% "rx" % "4.1-dt-20180910Z-0ece3b",
   "com.scalablytyped" %%% "rx-core" % "4.0-dt-20180910Z-861271",
   "com.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180910Z-7c2f3d",
@@ -34,16 +35,16 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180910Z-bb1b39",
   "com.scalablytyped" %%% "slice-ansi" % "2.0-dt-20181120Z-91ae5f",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "string-width" % "2.0-dt-20180910Z-e8c8db",
+  "com.scalablytyped" %%% "string-width" % "2.0-dt-20180910Z-f813ca",
   "com.scalablytyped" %%% "strip-ansi" % "3.0-dt-20180910Z-7d2e7d",
   "com.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-f11a37",
-  "com.scalablytyped" %%% "through" % "0.0-unknown-dt-20180910Z-7297cf",
-  "com.scalablytyped" %%% "through2" % "2.0-dt-20180910Z-36328f",
+  "com.scalablytyped" %%% "through" % "0.0-unknown-dt-20180910Z-552e31",
+  "com.scalablytyped" %%% "through2" % "2.0-dt-20180910Z-af3fca",
   "com.scalablytyped" %%% "tree-kill" % "1.2.0-b08565",
   "com.scalablytyped" %%% "tslib" % "1.9.3-224f5a",
   "com.scalablytyped" %%% "untildify" % "3.0-dt-20180910Z-dcaa1e",
   "com.scalablytyped" %%% "wrap-ansi" % "v3.0.0-dt-20180910Z-8bb76d",
-  "com.scalablytyped" %%% "write-file-atomic" % "2.1-dt-20180910Z-025315",
+  "com.scalablytyped" %%% "write-file-atomic" % "2.1-dt-20180910Z-317c5d",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

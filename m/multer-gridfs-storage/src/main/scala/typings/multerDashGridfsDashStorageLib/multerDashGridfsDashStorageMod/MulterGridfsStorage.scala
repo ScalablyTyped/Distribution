@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MulterGridfsStorage
-  extends nodeLib.eventsMod.EventEmitter
+  extends eventsLib.eventsMod.EventEmitter
      with multerLib.multerMod.multerNs.StorageEngine {
   var cacheIndex: js.Object = js.native
   var cacheName: java.lang.String = js.native

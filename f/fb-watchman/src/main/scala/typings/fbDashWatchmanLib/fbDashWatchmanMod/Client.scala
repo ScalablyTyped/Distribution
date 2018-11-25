@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fb-watchman", "Client")
 @js.native
 class Client ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def this(options: ClientOptions) = this()
   def cancelCommands(why: java.lang.String): scala.Unit = js.native
   def capabilityCheck(caps: Capabilities, done: doneCallback): scala.Unit = js.native

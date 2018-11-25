@@ -3,3 +3,4 @@
 [debug] PhaseRunner.scala:82 Failure, [lunr => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/lunr/index.d.ts): Parse error at 531.25 ''}'' expected but '<' found] [id => lunr, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [lunr => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/lunr/index.d.ts): Parse error at 531.25 ''}'' expected but '<' found] [id => lunr, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [lunr => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/lunr/index.d.ts): Parse error at 531.25 ''}'' expected but '<' found] [id => lunr, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [lunr => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/lunr/index.d.ts): Parse error at 531.25 ''}'' expected but '<' found] [id => lunr, phase => publish] 

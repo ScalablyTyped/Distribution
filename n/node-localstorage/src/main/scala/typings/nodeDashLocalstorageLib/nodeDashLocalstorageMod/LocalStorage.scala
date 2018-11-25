@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("node-localstorage", "LocalStorage")
 @js.native
 class LocalStorage protected ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   /**
        * Creates a new LocalStorage instance
        * @param location The location in which the local storage resides

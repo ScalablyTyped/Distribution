@@ -1,17 +1,18 @@
 organization := "com.scalablytyped"
 name := "storybook__addon-a11y"
-version := "3.3-dt-20180910Z-085f50"
+version := "3.3-dt-20180910Z-18b99a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "csstype" % "2.5.7-eccde3",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
+  "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-abe6d1",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-913134",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "storybook__react" % "4.0-dt-20181109Z-5a255c",
-  "com.scalablytyped" %%% "webpack-env" % "1.13-dt-20180910Z-c00275",
+  "com.scalablytyped" %%% "storybook__react" % "4.0-dt-20181109Z-13887d",
+  "com.scalablytyped" %%% "webpack-env" % "1.13-dt-20180910Z-6cc7bb",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

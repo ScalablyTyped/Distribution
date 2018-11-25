@@ -3,3 +3,4 @@
 [debug] PhaseRunner.scala:82 Failure, [pdf2image => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pdf2image/index.d.ts): Parse error at 25.170 ''.'' expected but ')' found] [id => pdf2image, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [pdf2image => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pdf2image/index.d.ts): Parse error at 25.170 ''.'' expected but ')' found] [id => pdf2image, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [pdf2image => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pdf2image/index.d.ts): Parse error at 25.170 ''.'' expected but ')' found] [id => pdf2image, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [pdf2image => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/pdf2image/index.d.ts): Parse error at 25.170 ''.'' expected but ')' found] [id => pdf2image, phase => publish] 

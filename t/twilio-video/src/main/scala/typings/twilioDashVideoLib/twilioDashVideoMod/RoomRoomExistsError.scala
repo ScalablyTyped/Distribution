@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class RoomRoomExistsError () extends TwilioError {
   @JSName("code")
   var code_RoomRoomExistsError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53113` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Room exists` = js.native
+  @JSName("message")
+  var message_RoomRoomExistsError: twilioDashVideoLib.twilioDashVideoLibStrings.`Room exists` = js.native
 }
 

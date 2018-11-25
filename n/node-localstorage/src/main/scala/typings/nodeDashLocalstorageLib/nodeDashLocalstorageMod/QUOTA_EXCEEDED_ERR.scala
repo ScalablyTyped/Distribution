@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("node-localstorage", "QUOTA_EXCEEDED_ERR")
 @js.native
 class QUOTA_EXCEEDED_ERR protected ()
-  extends nodeLib.Error {
+  extends stdLib.Error {
   /**
        * Creates a specific `Error` object for **Quota Exceeded Errors**.
        * @param message Message explaining the error.
        */
   def this(message: java.lang.String) = this()
-  /**
-       * Message explaining the error.
-       */
-  var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
 }
 

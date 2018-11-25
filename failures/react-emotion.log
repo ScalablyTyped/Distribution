@@ -8,3 +8,4 @@
 [debug] PhaseRunner.scala:78 Success [id => react-emotion, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [create-emotion-styled => Compilation failed] [id => react-emotion, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [create-emotion-styled => Compilation failed] [id => react-emotion, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [create-emotion-styled => Compilation failed] [id => react-emotion, phase => publish] 

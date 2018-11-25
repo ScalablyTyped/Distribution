@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class RoomMaxParticipantsOutOfRangeError () extends TwilioError {
   @JSName("code")
   var code_RoomMaxParticipantsOutOfRangeError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53107` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`MaxParticipants is out of range` = js.native
+  @JSName("message")
+  var message_RoomMaxParticipantsOutOfRangeError: twilioDashVideoLib.twilioDashVideoLibStrings.`MaxParticipants is out of range` = js.native
 }
 

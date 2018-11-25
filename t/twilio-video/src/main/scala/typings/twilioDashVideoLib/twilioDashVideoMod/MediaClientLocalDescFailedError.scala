@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MediaClientLocalDescFailedError () extends TwilioError {
   @JSName("code")
   var code_MediaClientLocalDescFailedError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53400` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Client is unable to create or apply a local media description` = js.native
+  @JSName("message")
+  var message_MediaClientLocalDescFailedError: twilioDashVideoLib.twilioDashVideoLibStrings.`Client is unable to create or apply a local media description` = js.native
 }
 

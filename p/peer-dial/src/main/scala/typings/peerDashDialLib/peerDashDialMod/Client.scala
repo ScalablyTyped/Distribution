@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("peer-dial", "Client")
 @js.native
 class Client ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def getDialDevice(deviceDescriptionUrl: java.lang.String): scala.Unit = js.native
   def getDialDevice(
     deviceDescriptionUrl: java.lang.String,

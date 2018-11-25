@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Generator
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   var appname: java.lang.String = js.native
   var config: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Storage = js.native
   var description: java.lang.String = js.native

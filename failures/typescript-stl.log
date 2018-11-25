@@ -69,3 +69,4 @@ def find(val: typings.typescriptDashStlLib.stdNs.MapIterator[Key,T]): typings.ty
 def find(key: Key): typings.typescriptDashStlLib.stdNs.baseNs.XTreeNode[typings.typescriptDashStlLib.stdNs.MapIterator[Key,T]] at line 24
 have same type after erasure: (val: Object)typings.typescriptDashStlLib.stdNs.baseNs.XTreeNode,   def find(key: Key): XTreeNode[typescriptDashStlLib.stdNs.MapIterator[Key, T]] = js.native [id => typescript-stl, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [typescript-stl => Compilation failed] [id => typescript-stl, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [typescript-stl => Compilation failed] [id => typescript-stl, phase => publish] 

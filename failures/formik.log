@@ -22,3 +22,4 @@
 [debug] PhaseRunner.scala:82 Failure, [formik => InFile(/home/tso/tmp/tso-cache/npm/node_modules/formik/dist/connect.d.ts): Parse error at 3.129 comment expected] [id => formik, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [formik => InFile(/home/tso/tmp/tso-cache/npm/node_modules/formik/dist/connect.d.ts): Parse error at 3.129 comment expected] [id => formik, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [formik => InFile(/home/tso/tmp/tso-cache/npm/node_modules/formik/dist/connect.d.ts): Parse error at 3.129 comment expected] [id => formik, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [formik => InFile(/home/tso/tmp/tso-cache/npm/node_modules/formik/dist/connect.d.ts): Parse error at 3.129 comment expected] [id => formik, phase => publish] 

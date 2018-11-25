@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MediaServerRemoteDescFailedError () extends TwilioError {
   @JSName("code")
   var code_MediaServerRemoteDescFailedError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53403` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Server is unable to apply a remote media description` = js.native
+  @JSName("message")
+  var message_MediaServerRemoteDescFailedError: twilioDashVideoLib.twilioDashVideoLibStrings.`Server is unable to apply a remote media description` = js.native
 }
 

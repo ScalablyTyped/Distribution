@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MemWatch
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   var HeapDiff: ScalablyTyped.runtime.Instantiable0[HeapDiff] = js.native
   /**
        * Force V8 to do a full GC and heap compaction.

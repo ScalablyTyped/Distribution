@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Runner
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   /**
        * Nested Key Value description for _backpipes_ module
        * @see {@link https://github.com/apigee-127/bagpipes#pipes|Github Source}

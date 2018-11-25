@@ -1,12 +1,13 @@
 organization := "com.scalablytyped"
 name := "nodemailer-direct-transport"
-version := "1.0.2-dt-20180910Z-9eb046"
+version := "1.0.2-dt-20180910Z-9fe7cd"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "nodemailer" % "4.6-dt-20180915Z-897c5c",
+  "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-abe6d1",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-913134",
+  "com.scalablytyped" %%% "nodemailer" % "4.6-dt-20180915Z-daee01",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("node-mysql-wrapper", "Connection")
 @js.native
 class Connection protected ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def this(connection: java.lang.String) = this()
   def this(connection: mysqlLib.mysqlMod.Connection) = this()
   def this(connection: mysqlLib.mysqlMod.ConnectionConfig) = this()

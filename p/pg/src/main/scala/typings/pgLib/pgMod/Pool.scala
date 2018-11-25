@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pg", "Pool")
 @js.native
 class Pool ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   // `new Pool('pg://user@localhost/mydb')` is not allowed.
   // But it passes type check because of issue:
   // https://github.com/Microsoft/TypeScript/issues/7485

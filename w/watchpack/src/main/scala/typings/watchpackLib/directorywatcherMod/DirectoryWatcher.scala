@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DirectoryWatcher
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   var directories: ScalablyTyped.runtime.StringDictionary[watchpackLib.watcherMod.namespaced | watchpackLib.watchpackLibNumbers.`true`] = js.native
   var files: ScalablyTyped.runtime.StringDictionary[js.Tuple2[scala.Double, scala.Double]] = js.native
   var initialScan: scala.Boolean = js.native

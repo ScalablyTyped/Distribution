@@ -421,3 +421,4 @@
 [error] GenericTextDocument.scala:96 overriding method removeEventListener in trait OfficeDocument of type (Listener: typings.activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XEventListener | typings.activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener)Unit;
  method removeEventListener needs `override' modifier,   def removeEventListener( [id => activex-libreoffice, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [activex-libreoffice => Compilation failed] [id => activex-libreoffice, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [activex-libreoffice => Compilation failed] [id => activex-libreoffice, phase => publish] 

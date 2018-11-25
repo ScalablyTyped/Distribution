@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ParticipantIdentityCharsInvalidError () extends TwilioError {
   @JSName("code")
   var code_ParticipantIdentityCharsInvalidError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53202` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Participant identity contains invalid characters` = js.native
+  @JSName("message")
+  var message_ParticipantIdentityCharsInvalidError: twilioDashVideoLib.twilioDashVideoLibStrings.`Participant identity contains invalid characters` = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Watchpack
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   var aggregateTimeout: nodeLib.NodeJSNs.Timer = js.native
   var aggregatedChanges: js.Array[java.lang.String] = js.native
   var dirWatchers: js.Array[watchpackLib.watcherMod.namespaced] = js.native

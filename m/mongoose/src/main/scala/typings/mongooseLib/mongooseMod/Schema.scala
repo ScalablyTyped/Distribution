@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
    */
 @js.native
 trait Schema
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   /** Object of currently defined methods on this schema. */
   var methods: js.Any = js.native
   /** The original object passed to the schema constructor */

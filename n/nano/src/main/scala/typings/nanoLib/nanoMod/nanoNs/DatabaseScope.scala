@@ -37,13 +37,13 @@ trait DatabaseScope extends js.Object {
   def destroy(name: java.lang.String): stdLib.Promise[OkResponse] = js.native
   // http://docs.couchdb.org/en/latest/api/database/common.html#delete--db
   def destroy(name: java.lang.String, callback: Callback[OkResponse]): stdLib.Promise[OkResponse] = js.native
-  def follow(source: java.lang.String): nodeLib.eventsMod.EventEmitter = js.native
-  def follow(source: java.lang.String, callback: Callback[_]): nodeLib.eventsMod.EventEmitter = js.native
-  def follow(source: java.lang.String, params: DatabaseScopeFollowUpdatesParams): nodeLib.eventsMod.EventEmitter = js.native
-  def follow(source: java.lang.String, params: DatabaseScopeFollowUpdatesParams, callback: Callback[_]): nodeLib.eventsMod.EventEmitter = js.native
-  def followUpdates(): nodeLib.eventsMod.EventEmitter = js.native
-  def followUpdates(params: js.Any): nodeLib.eventsMod.EventEmitter = js.native
-  def followUpdates(params: js.Any, callback: Callback[_]): nodeLib.eventsMod.EventEmitter = js.native
+  def follow(source: java.lang.String): eventsLib.eventsMod.EventEmitter = js.native
+  def follow(source: java.lang.String, callback: Callback[_]): eventsLib.eventsMod.EventEmitter = js.native
+  def follow(source: java.lang.String, params: DatabaseScopeFollowUpdatesParams): eventsLib.eventsMod.EventEmitter = js.native
+  def follow(source: java.lang.String, params: DatabaseScopeFollowUpdatesParams, callback: Callback[_]): eventsLib.eventsMod.EventEmitter = js.native
+  def followUpdates(): eventsLib.eventsMod.EventEmitter = js.native
+  def followUpdates(params: js.Any): eventsLib.eventsMod.EventEmitter = js.native
+  def followUpdates(params: js.Any, callback: Callback[_]): eventsLib.eventsMod.EventEmitter = js.native
   // http://docs.couchdb.org/en/latest/api/database/common.html#get--db
   def get(name: java.lang.String): stdLib.Promise[DatabaseGetResponse] = js.native
   // http://docs.couchdb.org/en/latest/api/database/common.html#get--db

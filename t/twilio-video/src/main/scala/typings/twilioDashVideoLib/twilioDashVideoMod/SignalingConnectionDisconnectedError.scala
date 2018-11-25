@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SignalingConnectionDisconnectedError () extends TwilioError {
   @JSName("code")
   var code_SignalingConnectionDisconnectedError: twilioDashVideoLib.twilioDashVideoLibNumbers.`53001` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Signaling connection disconnected` = js.native
+  @JSName("message")
+  var message_SignalingConnectionDisconnectedError: twilioDashVideoLib.twilioDashVideoLibStrings.`Signaling connection disconnected` = js.native
 }
 

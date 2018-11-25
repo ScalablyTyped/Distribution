@@ -19,7 +19,7 @@ object RALNs extends js.Object {
   
   @js.native
   class RalRunner protected ()
-    extends nodeLib.eventsMod.EventEmitter {
+    extends eventsLib.eventsMod.EventEmitter {
     def this(serviceName: java.lang.String) = this()
     def this(serviceName: java.lang.String, options: js.Object) = this()
     def callRetry(err: js.Any): scala.Unit = js.native

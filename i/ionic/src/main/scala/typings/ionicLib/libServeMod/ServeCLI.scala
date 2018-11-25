@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ionic/lib/serve", "ServeCLI")
 @js.native
 abstract class ServeCLI[T /* <: ServeCLIOptions */] protected ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def this(e: ServeRunnerDeps) = this()
   var _resolvedProgram: js.UndefOr[js.Any] = js.native
   val e: ServeRunnerDeps = js.native

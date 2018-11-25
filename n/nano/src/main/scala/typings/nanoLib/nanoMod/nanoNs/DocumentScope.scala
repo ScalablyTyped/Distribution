@@ -104,10 +104,10 @@ trait DocumentScope[D] extends js.Object {
   def find(query: MangoQuery): stdLib.Promise[MangoResponse[D]] = js.native
   // http://docs.couchdb.org/en/latest/api/database/find.html#db-find
   def find(query: MangoQuery, callback: Callback[MangoResponse[D]]): stdLib.Promise[MangoResponse[D]] = js.native
-  def follow(): nodeLib.eventsMod.EventEmitter = js.native
-  def follow(callback: Callback[_]): nodeLib.eventsMod.EventEmitter = js.native
-  def follow(params: DocumentScopeFollowUpdatesParams): nodeLib.eventsMod.EventEmitter = js.native
-  def follow(params: DocumentScopeFollowUpdatesParams, callback: Callback[_]): nodeLib.eventsMod.EventEmitter = js.native
+  def follow(): eventsLib.eventsMod.EventEmitter = js.native
+  def follow(callback: Callback[_]): eventsLib.eventsMod.EventEmitter = js.native
+  def follow(params: DocumentScopeFollowUpdatesParams): eventsLib.eventsMod.EventEmitter = js.native
+  def follow(params: DocumentScopeFollowUpdatesParams, callback: Callback[_]): eventsLib.eventsMod.EventEmitter = js.native
   // http://docs.couchdb.org/en/latest/api/document/common.html#get--db-docid
   def get(docname: java.lang.String): stdLib.Promise[DocumentGetResponse with D] = js.native
   // http://docs.couchdb.org/en/latest/api/document/common.html#get--db-docid

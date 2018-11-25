@@ -3,3 +3,4 @@
 [debug] PhaseRunner.scala:82 Failure, [Base64 => java.lang.IllegalArgumentException: requirement failed: /LICENSE is not an relative path] [id => ldclient-js, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [Base64 => java.lang.IllegalArgumentException: requirement failed: /LICENSE is not an relative path] [id => ldclient-js, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Failure, [Base64 => java.lang.IllegalArgumentException: requirement failed: /LICENSE is not an relative path] [id => ldclient-js, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [Base64 => java.lang.IllegalArgumentException: requirement failed: /LICENSE is not an relative path] [id => ldclient-js, phase => publish] 

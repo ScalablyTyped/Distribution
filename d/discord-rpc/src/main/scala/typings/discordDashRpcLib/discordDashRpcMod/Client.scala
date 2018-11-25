@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("discord-rpc", "Client")
 @js.native
 class Client protected ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def this(options: RPCClientOptions) = this()
   var application: discordDashRpcLib.Anon_Name = js.native
   var user: discordDashRpcLib.Anon_Username = js.native

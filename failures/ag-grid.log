@@ -1348,3 +1348,4 @@
   variable destroy in trait IComponent of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[Unit]]
 (Note: this can be resolved by declaring an override in class Component.), class Component () [id => ag-grid, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [ag-grid => Compilation failed] [id => ag-grid, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [ag-grid => Compilation failed] [id => ag-grid, phase => publish] 

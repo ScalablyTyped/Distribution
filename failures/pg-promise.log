@@ -47,3 +47,4 @@
 [debug] PhaseRunner.scala:78 Success [id => pg-promise, phase => scala.js] 
 [error] package.scala:12 illegal cyclic reference involving type TQuery,   type TVirtualQuery = js.Function1[/* values */ js.UndefOr[js.Any], TQuery] [id => pg-promise, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [pg-promise => Compilation failed] [id => pg-promise, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [pg-promise => Compilation failed] [id => pg-promise, phase => publish] 

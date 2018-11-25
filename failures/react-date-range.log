@@ -23,3 +23,4 @@
 [error] Range.scala:11 type Moment is not a member of package typings.momentDashTimezoneLib.momentDashTimezoneMod,   var endDate: js.UndefOr[momentDashTimezoneLib.momentDashTimezoneMod.Moment] = js.undefined [id => react-date-range, phase => build] 
 [error] Range.scala:13 type Moment is not a member of package typings.momentDashTimezoneLib.momentDashTimezoneMod,   var startDate: js.UndefOr[momentDashTimezoneLib.momentDashTimezoneMod.Moment] = js.undefined [id => react-date-range, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [react-date-range => Compilation failed] [id => react-date-range, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [react-date-range => Compilation failed] [id => react-date-range, phase => publish] 

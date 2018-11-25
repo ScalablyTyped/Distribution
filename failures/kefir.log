@@ -67,3 +67,4 @@
 [error] kefirModMembers.scala:32 method combine_TArray is defined twice;
   the conflicting method combine_TArray was defined at line 30:7,   def combine_TArray[T /* <: js.Array[Observable[_, _]] */](obss: T): Stream[ [id => kefir, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [kefir => Compilation failed] [id => kefir, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [kefir => Compilation failed] [id => kefir, phase => publish] 

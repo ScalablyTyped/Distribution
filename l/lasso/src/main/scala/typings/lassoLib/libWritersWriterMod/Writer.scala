@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Writer
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   var config: lassoLib.libLassoMod.LassoConfig = js.native
   var impl: js.Any = js.native
   var lasso: lassoLib.libLassoMod.default = js.native

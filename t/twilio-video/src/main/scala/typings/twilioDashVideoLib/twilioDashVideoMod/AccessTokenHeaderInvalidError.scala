@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AccessTokenHeaderInvalidError () extends TwilioError {
   @JSName("code")
   var code_AccessTokenHeaderInvalidError: twilioDashVideoLib.twilioDashVideoLibNumbers.`20102` = js.native
-  var message: twilioDashVideoLib.twilioDashVideoLibStrings.`Invalid Access Token header` = js.native
+  @JSName("message")
+  var message_AccessTokenHeaderInvalidError: twilioDashVideoLib.twilioDashVideoLibStrings.`Invalid Access Token header` = js.native
 }
 

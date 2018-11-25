@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Worker
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   var client: redisLib.redisMod.RedisClient = js.native
   var job: Job = js.native
   var queue: Queue = js.native

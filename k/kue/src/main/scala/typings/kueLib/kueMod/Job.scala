@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("kue", "Job")
 @js.native
 class Job protected ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, data: js.Any) = this()
   var _error: java.lang.String = js.native

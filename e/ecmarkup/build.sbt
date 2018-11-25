@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "ecmarkup"
-version := "3.16.0-ece1d4"
+version := "3.16.0-ab77af"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,12 +10,13 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "chalk" % "2.4.1-ea2afe",
   "com.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-566c3e",
   "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-76e9e4",
+  "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-abe6d1",
   "com.scalablytyped" %%% "grammarkdown" % "2.0.11-1862f3",
   "com.scalablytyped" %%% "he" % "v1.1.1-dt-20180910Z-ee0146",
   "com.scalablytyped" %%% "highlight_dot_js" % "v9.12-dt-20180910Z-f0675f",
   "com.scalablytyped" %%% "js-yaml" % "3.11-dt-20180910Z-fd3121",
-  "com.scalablytyped" %%% "jsdom" % "12.2-dt-20181121Z-387ff1",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
+  "com.scalablytyped" %%% "jsdom" % "12.2-dt-20181121Z-01255c",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-913134",
   "com.scalablytyped" %%% "nomnom" % "0.0-unknown-dt-20180910Z-265767",
   "com.scalablytyped" %%% "parse5" % "5.0-dt-20180910Z-bc27f1",
   "com.scalablytyped" %%% "prex" % "0.4.3-999429",

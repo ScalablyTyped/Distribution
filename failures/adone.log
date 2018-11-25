@@ -794,3 +794,4 @@
 [error] Queue.scala:42 not found: type S,   def from[T](iterable: nodeLib.Iterable[T]): adoneLib.adoneNs.collectionNs.Queue[S, T] = js.native [id => adone, phase => build] 
 [error] Queue.scala:43 not found: type S,   def from[T](iterable: nodeLib.Iterable[T], length: scala.Double): adoneLib.adoneNs.collectionNs.Queue[S, T] = js.native [id => adone, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [adone => Compilation failed] [id => adone, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [adone => Compilation failed] [id => adone, phase => publish] 

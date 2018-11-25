@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("gc-stats", JSImport.Namespace)
 @js.native
 object gcDashStatsModMembers extends js.Object {
-  def apply(): nodeLib.eventsMod.EventEmitter = js.native
+  def apply(): eventsLib.eventsMod.EventEmitter = js.native
 }
 

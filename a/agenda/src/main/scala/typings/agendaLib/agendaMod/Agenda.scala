@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Agenda
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   /**
        * Cancels any jobs matching the passed mongodb-native query, and removes them from the database.
        * @param query Mongodb native query.

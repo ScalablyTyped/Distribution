@@ -32,7 +32,7 @@ class Packager protected () extends js.Object {
   val debugLogger: builderDashUtilLib.builderDashUtilMod.DebugLogger = js.native
   val devMetadata: appDashBuilderDashLibLib.outOptionsMetadataMod.Metadata | scala.Null = js.native
   var doBuild: js.Any = js.native
-  val eventEmitter: nodeLib.eventsMod.EventEmitter = js.native
+  val eventEmitter: eventsLib.eventsMod.EventEmitter = js.native
   val framework: appDashBuilderDashLibLib.outFrameworkMod.Framework = js.native
   var installAppDependencies: js.Any = js.native
   val isPrepackedAppAsar: scala.Boolean = js.native

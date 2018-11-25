@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("pg", "Connection")
 @js.native
 class Connection ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def this(config: ConnectionConfig) = this()
   val stream: nodeLib.streamMod.Duplex = js.native
   def bind(config: BindConfig, more: scala.Boolean): scala.Unit = js.native

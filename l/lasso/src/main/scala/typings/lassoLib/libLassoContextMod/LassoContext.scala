@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LassoContext
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   var LassoContext: scala.Boolean = js.native
   var basePath: js.UndefOr[java.lang.String] = js.native
   var cache: js.Any = js.native

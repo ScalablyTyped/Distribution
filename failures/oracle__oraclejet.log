@@ -4222,3 +4222,4 @@
 [error] ojSelectOne.scala:88 overriding method setProperty in trait editableValue of type [T](property: T, value: typings.atOracleOraclejetLib.oraclejetMod.JetSetPropertyType[T,typings.atOracleOraclejetLib.ojeditablevalueMod.editableValueSettableProperties[scala.scalajs.js.Any,scala.scalajs.js.Any,scala.scalajs.js.Any]] | scala.scalajs.js.Any)Unit;
  method setProperty needs `override' modifier,   def setProperty[T /* <: java.lang.String */]( [id => @oracle/oraclejet, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [@oracle/oraclejet => Compilation failed] [id => @oracle/oraclejet, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [@oracle/oraclejet => Compilation failed] [id => @oracle/oraclejet, phase => publish] 

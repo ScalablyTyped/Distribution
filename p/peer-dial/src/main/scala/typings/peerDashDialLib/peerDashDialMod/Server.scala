@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("peer-dial", "Server")
 @js.native
 class Server protected ()
-  extends nodeLib.eventsMod.EventEmitter {
+  extends eventsLib.eventsMod.EventEmitter {
   def this(options: ServerOptions) = this()
   def corsOptionsAppsDelegate(
     req: java.lang.String,

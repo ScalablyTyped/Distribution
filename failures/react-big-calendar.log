@@ -123,3 +123,4 @@
 [error] BigCalendar.scala:9 class graph is not finitary because type parameter T is expansively recursive, trait BigCalendar[T /* <: Event */] [id => react-big-calendar, phase => build] 
 [error] BigCalendarProps.scala:9 class graph is not finitary because type parameter T is expansively recursive, trait BigCalendarProps[T /* <: Event */] [id => react-big-calendar, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [react-big-calendar => Compilation failed] [id => react-big-calendar, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [react-big-calendar => Compilation failed] [id => react-big-calendar, phase => publish] 
