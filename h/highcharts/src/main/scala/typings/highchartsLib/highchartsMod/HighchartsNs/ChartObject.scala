@@ -185,6 +185,11 @@ trait ChartObject extends js.Object {
   /**
            * Exporting module required. Submit an SVG version of the chart to a server along with some parameters for
            * conversion.
+           * @param options Exporting options. Out of the exporting options, the following options can be given as parameters to the exportChart method.
+           * All options default to the values given in the exporting config options. filename: the filename for the export without extension,
+           * url: the URL for the server module to do the conversion, width: the width of the PNG or JPEG image generated on the server,
+           * type: the MIME type of the converted image, sourceWidth: the width of the source (in-page) chart, sourceHeight: the height of the source chart.
+           * @param chartOptions Additional chart options for the exported chart. For example a different background color can be added here.
            * @since 2.0
            */
   def exportChart(): scala.Unit = js.native
@@ -195,6 +200,7 @@ trait ChartObject extends js.Object {
            * All options default to the values given in the exporting config options. filename: the filename for the export without extension,
            * url: the URL for the server module to do the conversion, width: the width of the PNG or JPEG image generated on the server,
            * type: the MIME type of the converted image, sourceWidth: the width of the source (in-page) chart, sourceHeight: the height of the source chart.
+           * @param chartOptions Additional chart options for the exported chart. For example a different background color can be added here.
            * @since 2.0
            */
   def exportChart(options: ExportingOptions): scala.Unit = js.native
@@ -212,6 +218,10 @@ trait ChartObject extends js.Object {
   /**
            * Export the chart to a PNG or SVG without sending it to a server. Requires
            * modules/exporting.js and modules/offline-exporting.js.
+           * @param options Exporting options. Same as
+           * the exportChart params.
+           * @param chartOptions Additional chart options for the
+           * exported chart. Same as the exportChart params.
            * @since 2.0
            */
   def exportChartLocal(): scala.Unit = js.native
@@ -220,12 +230,14 @@ trait ChartObject extends js.Object {
            * modules/exporting.js and modules/offline-exporting.js.
            * @param options Exporting options. Same as
            * the exportChart params.
+           * @param chartOptions Additional chart options for the
+           * exported chart. Same as the exportChart params.
            * @since 2.0
            */
   def exportChartLocal(options: ExportingOptions): scala.Unit = js.native
   /**
-           * Export the chart to a PNG or SVG without sending it to a server.
-           * Requires modules/exporting.js and modules/offline-exporting.js.
+           * Export the chart to a PNG or SVG without sending it to a server. Requires
+           * modules/exporting.js and modules/offline-exporting.js.
            * @param options Exporting options. Same as
            * the exportChart params.
            * @param chartOptions Additional chart options for the

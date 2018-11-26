@@ -20,6 +20,10 @@ trait BubbleChart extends SeriesChart {
            */
   var displayNegative: js.UndefOr[scala.Boolean] = js.undefined
   /**
+           * For area-like series, allow the font size to vary so that small areas get a smaller font size. The default applies this effect to area-like series but not line-like series.
+           */
+  var maxFontSize: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  /**
            * Maximum bubble size. Bubbles will automatically size between the minSize and maxSize to reflect the z value of
            * each bubble. Can be either pixels (when no unit is given), or a percentage of the smallest one of the plot width
            * and height.
@@ -27,6 +31,10 @@ trait BubbleChart extends SeriesChart {
            * @since 3.0
            */
   var maxSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  /**
+           * For area-like series, allow the font size to vary so that small areas get a smaller font size. The default applies this effect to area-like series but not line-like series.
+           */
+  var minFontSize: js.UndefOr[scala.Double | scala.Null] = js.undefined
   /**
            * Minimum bubble size. Bubbles will automatically size between the minSize and maxSize to reflect the z value of
            * each bubble. Can be either pixels (when no unit is given), or a percentage of the smallest one of the plot width

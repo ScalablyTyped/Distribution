@@ -5,9 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
-trait MapEvent extends js.Object {
-  var features: js.Array[js.Object]
-  var lngLat: js.Tuple2[scala.Double, scala.Double]
-}
+@JSImport("react-map-gl", "DraggableControl")
+@js.native
+class DraggableControl () extends BaseControl[DraggableControlProps]
 

@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "swagger-express-middleware"
-version := "1.x-dt-20180910Z-12c0cc"
+version := "1.x-dt-20181126Z-3fd151"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,6 +14,8 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-dfa7aa",
   "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-8d9c98",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "swagger-parser" % "4.x-dt-20180910Z-2f5e2f",
+  "com.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20181121Z-399299",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

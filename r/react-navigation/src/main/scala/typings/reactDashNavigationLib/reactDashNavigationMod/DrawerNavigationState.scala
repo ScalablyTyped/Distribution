@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation._
 
 trait DrawerNavigationState extends NavigationState {
   var isDrawerOpen: scala.Boolean
-  var isTransitioning: scala.Boolean
 }
 

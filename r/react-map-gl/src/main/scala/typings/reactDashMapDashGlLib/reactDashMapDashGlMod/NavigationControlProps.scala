@@ -11,6 +11,6 @@ trait NavigationControlProps extends BaseControlProps {
   var showCompass: js.UndefOr[scala.Boolean] = js.undefined
   var showZoom: js.UndefOr[scala.Boolean] = js.undefined
   def onViewStateChange(info: ViewStateChangeInfo): scala.Unit
-  def onViewportChange(viewport: Viewport): scala.Unit
+  def onViewportChange(viewport: ViewState): scala.Unit
 }
 

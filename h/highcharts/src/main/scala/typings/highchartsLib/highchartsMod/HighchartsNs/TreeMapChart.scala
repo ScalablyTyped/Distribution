@@ -77,12 +77,20 @@ trait TreeMapChart extends SeriesChart {
            */
   var levels: js.UndefOr[js.Array[TreeMapLevel]] = js.undefined
   /**
+           * For area-like series, allow the font size to vary so that small areas get a smaller font size. The default applies this effect to area-like series but not line-like series.
+           */
+  var maxFontSize: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  /**
            * The maximum allowed pixel width for a column, translated to the height of a bar in a bar chart. This prevents the
            * columns from becoming too wide when there is a small number of points in the chart.
            * @default null
            * @since 4.1.8
            */
   var maxPointWidth: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  /**
+           * For area-like series, allow the font size to vary so that small areas get a smaller font size. The default applies this effect to area-like series but not line-like series.
+           */
+  var minFontSize: js.UndefOr[scala.Double | scala.Null] = js.undefined
   /**
            * The sort index of the point inside the treemap level.
            * @since 4.1.10

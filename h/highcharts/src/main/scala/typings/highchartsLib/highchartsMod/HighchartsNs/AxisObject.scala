@@ -75,13 +75,14 @@ trait AxisObject extends js.Object {
   /**
            * Set new categories for the axis. Redraws.
            * @param categories The new category names.
+           * @param redraw Whether to redraw the axis or wait for an explicit call to chart.redraw().
            * @since 1.2.0
            */
   def setCategories(categories: js.Array[java.lang.String]): scala.Unit = js.native
   /**
-           * Set new categories for the axis.
+           * Set new categories for the axis. Redraws.
            * @param categories The new category names.
-           * @param  redraw     Whether to redraw the axis or wait for an explicit call to chart.redraw().
+           * @param redraw Whether to redraw the axis or wait for an explicit call to chart.redraw().
            * @since 1.2.0
            */
   def setCategories(categories: js.Array[java.lang.String], redraw: scala.Boolean): scala.Unit = js.native

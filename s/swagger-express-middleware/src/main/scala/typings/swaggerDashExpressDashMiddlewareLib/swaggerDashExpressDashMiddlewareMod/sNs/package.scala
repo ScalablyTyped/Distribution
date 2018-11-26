@@ -26,5 +26,11 @@ package object sNs {
     /* cb */ SwaggerMiddlewareConstructorCallback, 
     SwaggerMiddleware
   ]
-  type SwaggerMiddlewareConstructorCallback = js.Function2[/* err */ js.Any, /* middleware */ SwaggerMiddleware, scala.Unit]
+  type SwaggerMiddlewareConstructorCallback = js.Function4[
+    /* err */ js.Any, 
+    /* middleware */ SwaggerMiddleware, 
+    /* api */ SwaggerObject, 
+    /* parser */ swaggerDashExpressDashMiddlewareLib.swaggerDashExpressDashMiddlewareMod.SwaggerParser, 
+    scala.Unit
+  ]
 }

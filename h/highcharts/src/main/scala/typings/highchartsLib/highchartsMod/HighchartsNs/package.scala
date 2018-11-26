@@ -13,6 +13,4 @@ package object HighchartsNs {
        */
   type Color = java.lang.String | Gradient
   type ColumnChart = BarChart
-  type ScatterChart = SeriesChart
-  type SplineChart = SeriesChart
 }

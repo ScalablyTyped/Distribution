@@ -12,6 +12,10 @@ trait NavigationLeafRoute[Params] extends js.Object {
      */
   var index: scala.Double
   /**
+     * Flag that indicates the transition state of the route
+     */
+  var isTransitioning: scala.Boolean
+  /**
      * React's key used by some navigators. No need to specify these manually,
      * they will be defined by the router.
      */
@@ -30,5 +34,9 @@ trait NavigationLeafRoute[Params] extends js.Object {
      * This is used as a key in a route config when creating a navigator.
      */
   var routeName: java.lang.String
+  /**
+     * Array containing the navigator's routes
+     */
+  var routes: js.Array[NavigationRoute[NavigationParams]]
 }
 

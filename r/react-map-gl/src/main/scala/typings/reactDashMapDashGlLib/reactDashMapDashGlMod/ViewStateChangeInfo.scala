@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait ViewStateChangeInfo extends js.Object {
-  var viewState: Viewport
+  var viewState: ViewState
 }
 

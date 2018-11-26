@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-map-gl"
-version := "3.3-dt-20181009Z-4f8bab"
+version := "4.0-dt-20181126Z-875a71"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

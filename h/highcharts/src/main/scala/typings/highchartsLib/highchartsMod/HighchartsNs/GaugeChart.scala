@@ -20,6 +20,14 @@ trait GaugeChart extends SeriesChart {
            */
   var dial: js.UndefOr[Dial] = js.undefined
   /**
+           * For area-like series, allow the font size to vary so that small areas get a smaller font size. The default applies this effect to area-like series but not line-like series.
+           */
+  var maxFontSize: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  /**
+           * For area-like series, allow the font size to vary so that small areas get a smaller font size. The default applies this effect to area-like series but not line-like series.
+           */
+  var minFontSize: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  /**
            * Allow the dial to overshoot the end of the perimeter axis by this many degrees. Say if the gauge axis goes from 0
            * to 60, a value of 100, or 1000, will show 5 degrees beyond the end of the axis. Defaults to 0.
            * @default 0

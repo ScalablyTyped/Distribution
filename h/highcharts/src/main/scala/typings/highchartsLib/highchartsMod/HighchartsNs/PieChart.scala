@@ -74,6 +74,14 @@ trait PieChart extends SeriesChart {
            */
   var innerSize: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
+           * For area-like series, allow the font size to vary so that small areas get a smaller font size. The default applies this effect to area-like series but not line-like series.
+           */
+  var maxFontSize: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  /**
+           * For area-like series, allow the font size to vary so that small areas get a smaller font size. The default applies this effect to area-like series but not line-like series.
+           */
+  var minFontSize: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  /**
            * The minimum size for a pie in response to auto margins. The pie will try to shrink to make room for data labels
            * in side the plot area, but only to this size.
            * @default 80

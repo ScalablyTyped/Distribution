@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions because Would inherit conflicting mutable fields List(visible, color, cursor, pointWidth))*/
+/* RemoveMultipleInheritance: Dropped parents List(highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions because Would inherit conflicting mutable fields List(visible, color, cursor, pointWidth, minFontSize, maxFontSize))*/
 
 trait BarChartSeriesOptions extends BarChart
 

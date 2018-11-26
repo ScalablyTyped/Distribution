@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait NavigationScreenProp[S, P] extends js.Object {
   @JSName("dispatch")
   var dispatch_Original: NavigationDispatch = js.native
+  var router: js.UndefOr[NavigationRouter[NavigationState, js.Object]] = js.native
   var state: S with reactDashNavigationLib.Anon_Params[P] = js.native
   @JSName("addListener")
   def addListener_didBlur(
@@ -31,6 +32,7 @@ trait NavigationScreenProp[S, P] extends js.Object {
     callback: NavigationEventCallback
   ): NavigationEventSubscription = js.native
   def closeDrawer(): js.Any = js.native
+  def dangerouslyGetParent(): js.UndefOr[NavigationScreenProp[S, NavigationParams]] = js.native
   def dismiss(): scala.Boolean = js.native
   def dispatch(action: NavigationAction): scala.Boolean = js.native
   def getParam[T /* <: java.lang.String */](param: T): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(P))),List()),Left(TsIdentSimple(T))) */js.Any = js.native

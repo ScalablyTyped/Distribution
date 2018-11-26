@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait MapError extends js.Object {
-  var message: java.lang.String
+  var error: js.UndefOr[reactDashMapDashGlLib.Anon_Message] = js.undefined
+  var status: scala.Double
 }
 

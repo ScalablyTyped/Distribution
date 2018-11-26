@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait BaseMapControls extends js.Object {
-  var events: js.Array[java.lang.String]
-  def handleEvent(event: MapControlEvent): scala.Unit
+trait PositionInput extends js.Object {
+  var pos: js.Tuple2[scala.Double, scala.Double]
 }
 

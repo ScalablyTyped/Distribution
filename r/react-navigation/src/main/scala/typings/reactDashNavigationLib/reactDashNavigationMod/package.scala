@@ -53,7 +53,7 @@ package object reactDashNavigationMod {
   ]
   type NavigationTabAction = NavigationInitAction | NavigationNavigateAction | NavigationBackAction
   type NavigationView[O, S] = reactLib.reactMod.ReactNs.ComponentType[
-    reactDashNavigationLib.Anon_Descriptors with NavigationInjectedProps[NavigationParams]
+    reactDashNavigationLib.Anon_NavigationConfig[O] with NavigationInjectedProps[NavigationParams]
   ]
   type NavigatorType = reactDashNavigationLib.reactDashNavigationLibStrings.`react-navigation/STACK` | reactDashNavigationLib.reactDashNavigationLibStrings.`react-navigation/TABS` | reactDashNavigationLib.reactDashNavigationLibStrings.`react-navigation/DRAWER`
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]

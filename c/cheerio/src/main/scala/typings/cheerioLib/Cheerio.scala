@@ -72,8 +72,8 @@ trait Cheerio
   // Traversing
   def find(selector: java.lang.String): Cheerio = js.native
   def first(): Cheerio = js.native
-  def get(): js.Array[java.lang.String] = js.native
-  def get(index: scala.Double): CheerioElement = js.native
+  def get(): js.Array[_] = js.native
+  def get(index: scala.Double): js.Any = js.native
   def has(element: CheerioElement): Cheerio = js.native
   def has(selector: java.lang.String): Cheerio = js.native
   def hasClass(className: java.lang.String): scala.Boolean = js.native
