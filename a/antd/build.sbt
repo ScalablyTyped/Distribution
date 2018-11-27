@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "antd"
-version := "3.10.1-a287f2"
+version := "3.10.1-4a02b9"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "rc-tooltip" % "3.7-dt-20181121Z-6433d4",
   "com.scalablytyped" %%% "rc-tree" % "1.11-dt-20180910Z-f6d572",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
-  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-edcdde",
+  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-3e11f7",
   "com.scalablytyped" %%% "react-slick" % "0.23-dt-20180910Z-8c89bd",
   "com.scalablytyped" %%% "shallowequal" % "v0.2.2-dt-20180910Z-9e377c",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",

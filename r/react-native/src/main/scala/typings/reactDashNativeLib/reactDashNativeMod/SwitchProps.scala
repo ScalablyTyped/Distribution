@@ -13,6 +13,11 @@ trait SwitchProps extends SwitchPropsIOS {
        */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
+       * On iOS, custom color for the background.
+       * Can be seen when the switch value is false or when the switch is disabled.
+       */
+  var ios_backgroundColor: js.UndefOr[java.lang.String] = js.undefined
+  /**
        * Invoked with the new value when the value changes.
        */
   var onValueChange: js.UndefOr[js.Function1[/* value */ scala.Boolean, scala.Unit]] = js.undefined

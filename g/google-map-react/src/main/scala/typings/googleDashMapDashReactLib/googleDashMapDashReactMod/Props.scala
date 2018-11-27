@@ -27,8 +27,17 @@ trait Props extends js.Object {
   var margin: js.UndefOr[js.Array[_]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* value */ ChangeEventValue, _]] = js.undefined
   var onChildClick: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, scala.Unit]] = js.undefined
+  var onChildMouseDown: js.UndefOr[
+    js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, scala.Unit]
+  ] = js.undefined
   var onChildMouseEnter: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, scala.Unit]] = js.undefined
   var onChildMouseLeave: js.UndefOr[js.Function2[/* hoverKey */ js.Any, /* childProps */ js.Any, scala.Unit]] = js.undefined
+  var onChildMouseMove: js.UndefOr[
+    js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, scala.Unit]
+  ] = js.undefined
+  var onChildMouseUp: js.UndefOr[
+    js.Function3[/* childKey */ js.Any, /* childProps */ js.Any, /* mouse */ js.Any, scala.Unit]
+  ] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* value */ ClickEventValue, _]] = js.undefined
   var onDrag: js.UndefOr[js.Function1[/* args */ js.Any, scala.Unit]] = js.undefined
   var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ googleDashMapDashReactLib.Anon_Maps, scala.Unit]] = js.undefined

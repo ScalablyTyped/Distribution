@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "redbox-react"
-version := "1.6.0-1f46e1"
+version := "1.6.0-637361"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "object-assign" % "4.0.1-dt-20180910Z-422e86",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
-  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-edcdde",
+  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-3e11f7",
   "com.scalablytyped" %%% "stackframe" % "1.0.4-cabf04",
   "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

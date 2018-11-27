@@ -22,7 +22,10 @@ trait Database extends js.Object {
   def pragma(source: java.lang.String, simplify: scala.Boolean): js.Any = js.native
   def prepare(source: java.lang.String): Statement = js.native
   def register(cb: js.Function1[/* repeated */js.Any, _]): this.type = js.native
-  def register(options: RegistrationOptions, cb: js.Function1[/* repeated */js.Any, _]): this.type = js.native
+  def register(
+    options: betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.RegistrationOptions,
+    cb: js.Function1[/* repeated */js.Any, _]
+  ): this.type = js.native
   def transaction(sources: js.Array[java.lang.String]): Transaction = js.native
 }
 

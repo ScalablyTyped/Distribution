@@ -10,7 +10,7 @@ trait Transaction extends js.Object {
   var database: Database = js.native
   var source: java.lang.String = js.native
   def bind(params: js.Any*): this.type = js.native
-  def run(params: js.Any*): RunResult = js.native
+  def run(params: js.Any*): betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.RunResult = js.native
   def safeIntegers(): this.type = js.native
   def safeIntegers(toggleState: scala.Boolean): this.type = js.native
 }

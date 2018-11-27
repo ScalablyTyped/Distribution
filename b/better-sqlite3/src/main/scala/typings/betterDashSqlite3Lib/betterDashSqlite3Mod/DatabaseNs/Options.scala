@@ -1,12 +1,12 @@
 package typings
-package betterDashSqlite3Lib.betterDashSqlite3Mod
+package betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait DatabaseOptions extends js.Object {
+trait Options extends js.Object {
   var fileMustExist: js.UndefOr[scala.Boolean] = js.undefined
   var memory: js.UndefOr[scala.Boolean] = js.undefined
   var readonly: js.UndefOr[scala.Boolean] = js.undefined

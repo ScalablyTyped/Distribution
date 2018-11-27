@@ -1,5 +1,5 @@
 package typings
-package betterDashSqlite3Lib.betterDashSqlite3Mod
+package betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

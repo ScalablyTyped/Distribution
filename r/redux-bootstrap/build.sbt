@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "redux-bootstrap"
-version := "1.3.0-8988e7"
+version := "1.3.0-ccfaf2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
-  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-edcdde",
+  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-3e11f7",
   "com.scalablytyped" %%% "react-redux" % "6.0-dt-20181121Z-bf3be2",
   "com.scalablytyped" %%% "react-router" % "4.4-dt-20181109Z-1ad10b",
   "com.scalablytyped" %%% "react-router-redux" % "5.0-dt-20180915Z-dbfe40",

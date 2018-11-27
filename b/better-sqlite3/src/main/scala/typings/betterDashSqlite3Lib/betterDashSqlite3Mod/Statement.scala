@@ -18,7 +18,7 @@ trait Statement extends js.Object {
   def get(params: js.Any*): js.Any = js.native
   def pluck(): this.type = js.native
   def pluck(toggleState: scala.Boolean): this.type = js.native
-  def run(params: js.Any*): RunResult = js.native
+  def run(params: js.Any*): betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.RunResult = js.native
   def safeIntegers(): this.type = js.native
   def safeIntegers(toggleState: scala.Boolean): this.type = js.native
 }

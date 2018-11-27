@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "better-sqlite3"
-version := "3.1-dt-20180910Z-c2758e"
+version := "5.0-dt-20181127Z-848b3d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

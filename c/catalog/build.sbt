@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "catalog"
-version := "3.6.0-8c2987"
+version := "3.6.0-a2e70a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -48,7 +48,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-dfa7aa",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
   "com.scalablytyped" %%% "react-document-title" % "2.0-dt-20180910Z-8b88bd",
-  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-edcdde",
+  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-3e11f7",
   "com.scalablytyped" %%% "react-router" % "4.4-dt-20181109Z-1ad10b",
   "com.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20180910Z-32e068",
   "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-8d9c98",

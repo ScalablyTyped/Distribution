@@ -61,11 +61,13 @@ trait VideoProperties
   var scaleX: js.UndefOr[scala.Double] = js.undefined
   var scaleY: js.UndefOr[scala.Double] = js.undefined
   var seek: js.UndefOr[scala.Double] = js.undefined
+  var selectedTextTrack: js.UndefOr[reactDashNativeDashVideoLib.Anon_TypeSystem] = js.undefined
   /* Wrapper component */
   // Opaque type returned by require('./video.mp4')
   var source: reactDashNativeDashVideoLib.Anon_Uri | scala.Double
   /* Native only */
   var src: js.UndefOr[js.Any] = js.undefined
+  var textTracks: js.UndefOr[js.Array[reactDashNativeDashVideoLib.Anon_Type]] = js.undefined
   var translateX: js.UndefOr[scala.Double] = js.undefined
   var translateY: js.UndefOr[scala.Double] = js.undefined
   var useTextureView: js.UndefOr[scala.Boolean] = js.undefined

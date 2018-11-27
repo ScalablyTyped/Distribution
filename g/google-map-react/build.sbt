@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "google-map-react"
-version := "0.23-dt-20180927Z-6e0563"
+version := "0.23-dt-20181127Z-afab3a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
