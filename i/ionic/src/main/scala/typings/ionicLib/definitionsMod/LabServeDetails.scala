@@ -10,7 +10,5 @@ trait LabServeDetails extends js.Object {
   var address: java.lang.String
   var port: scala.Double
   var projectType: ProjectType
-  var protocol: java.lang.String
-  var ssl: js.UndefOr[ionicLib.Anon_KeyCert] = js.undefined
 }
 

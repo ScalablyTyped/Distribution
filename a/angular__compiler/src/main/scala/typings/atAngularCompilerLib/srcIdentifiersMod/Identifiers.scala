@@ -59,6 +59,7 @@ object Identifiers extends js.Object {
   var pureObjectDef: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var purePipeDef: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var queryDef: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
+  var setClassMetadata: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var textDef: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var unwrapValue: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var viewDef: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native

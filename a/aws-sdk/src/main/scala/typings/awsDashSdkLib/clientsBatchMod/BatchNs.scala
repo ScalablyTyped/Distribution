@@ -63,6 +63,10 @@ object BatchNs extends js.Object {
          */
     var logStreamName: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The network interfaces associated with the job attempt.
+         */
+    var networkInterfaces: js.UndefOr[NetworkInterfaceList] = js.undefined
+    /**
          * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
          */
     var reason: js.UndefOr[java.lang.String] = js.undefined
@@ -79,7 +83,7 @@ object BatchNs extends js.Object {
          */
     var container: js.UndefOr[AttemptContainerDetail] = js.undefined
     /**
-         * The Unix time stamp (in seconds and milliseconds) for when the attempt was started (when the attempt transitioned from the STARTING state to the RUNNING state).
+         * The Unix timestamp (in seconds and milliseconds) for when the attempt was started (when the attempt transitioned from the STARTING state to the RUNNING state).
          */
     var startedAt: js.UndefOr[Long] = js.undefined
     /**
@@ -87,7 +91,7 @@ object BatchNs extends js.Object {
          */
     var statusReason: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The Unix time stamp (in seconds and milliseconds) for when the attempt was stopped (when the attempt transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
+         * The Unix timestamp (in seconds and milliseconds) for when the attempt was stopped (when the attempt transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
          */
     var stoppedAt: js.UndefOr[Long] = js.undefined
   }
@@ -138,7 +142,7 @@ object BatchNs extends js.Object {
          */
     var serviceRole: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The state of the compute environment. The valid values are ENABLED or DISABLED. An ENABLED state indicates that you can register instances with the compute environment and that the associated instances can accept jobs. 
+         * The state of the compute environment. The valid values are ENABLED or DISABLED.  If the state is ENABLED, then the AWS Batch scheduler can attempt to place jobs from an associated job queue on the compute resources within the environment. If the compute environment is managed, then it can scale its instances out or in automatically, based on the job queue demand. If the state is DISABLED, then the AWS Batch scheduler does not attempt to place jobs within the environment. Jobs in a STARTING or RUNNING state continue to progress normally. Managed compute environments in the DISABLED state do not scale out. However, they scale in to minvCpus value after instances become idle.
          */
     var state: js.UndefOr[CEState] = js.undefined
     /**
@@ -170,7 +174,7 @@ object BatchNs extends js.Object {
   
   trait ComputeResource extends js.Object {
     /**
-         * The minimum percentage that a Spot Instance price must be when compared with the On-Demand price for that instance type before instances are launched. For example, if your bid percentage is 20%, then the Spot price must be below 20% of the current On-Demand price for that EC2 instance.
+         * The maximum percentage that a Spot Instance price can be when compared with the On-Demand price for that instance type before instances are launched. For example, if your maximum percentage is 20%, then the Spot price must be below 20% of the current On-Demand price for that EC2 instance. You always pay the lowest (market) price and never more than your maximum percentage. If you leave this field empty, the default value is 100% of the On-Demand price.
          */
     var bidPercentage: js.UndefOr[Integer] = js.undefined
     /**
@@ -194,17 +198,25 @@ object BatchNs extends js.Object {
          */
     var instanceTypes: StringList
     /**
+         * The launch template to use for your compute resources. Any other compute resource parameters that you specify in a CreateComputeEnvironment API operation override the same parameters in the launch template. You must specify either the launch template ID or launch template name in the request, but not both. 
+         */
+    var launchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
+    /**
          * The maximum number of EC2 vCPUs that an environment can reach. 
          */
     var maxvCpus: Integer
     /**
-         * The minimum number of EC2 vCPUs that an environment should maintain. 
+         * The minimum number of EC2 vCPUs that an environment should maintain (even if the compute environment is DISABLED). 
          */
     var minvCpus: Integer
     /**
+         * The Amazon EC2 placement group to associate with your compute resources. If you intend to submit multi-node parallel jobs to your compute environment, you should consider creating a cluster placement group and associate it with your compute resources. This keeps your multi-node parallel job on a logical grouping of instances within a single Availability Zone with high network flow potential. For more information, see Placement Groups in the Amazon EC2 User Guide for Linux Instances.
+         */
+    var placementGroup: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The EC2 security group that is associated with instances launched in the compute environment. 
          */
-    var securityGroupIds: StringList
+    var securityGroupIds: js.UndefOr[StringList] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the Amazon EC2 Spot Fleet IAM role applied to a SPOT compute environment.
          */
@@ -262,6 +274,10 @@ object BatchNs extends js.Object {
          */
     var image: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The instance type of the underlying host infrastructure of a multi-node parallel job.
+         */
+    var instanceType: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The Amazon Resource Name (ARN) associated with the job upon execution. 
          */
     var jobRoleArn: js.UndefOr[java.lang.String] = js.undefined
@@ -277,6 +293,10 @@ object BatchNs extends js.Object {
          * The mount points for data volumes in your container.
          */
     var mountPoints: js.UndefOr[MountPoints] = js.undefined
+    /**
+         * The network interfaces associated with the job.
+         */
+    var networkInterfaces: js.UndefOr[NetworkInterfaceList] = js.undefined
     /**
          * When this parameter is true, the container is given elevated privileges on the host container instance (similar to the root user).
          */
@@ -322,6 +342,10 @@ object BatchNs extends js.Object {
          */
     var environment: js.UndefOr[EnvironmentVariables] = js.undefined
     /**
+         * The instance type to use for a multi-node parallel job. This parameter is not valid for single-node container jobs.
+         */
+    var instanceType: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The number of MiB of memory reserved for the job. This value overrides the value set in the job definition.
          */
     var memory: js.UndefOr[Integer] = js.undefined
@@ -344,7 +368,11 @@ object BatchNs extends js.Object {
     /**
          * The image used to start a container. This string is passed directly to the Docker daemon. Images in the Docker Hub registry are available by default. Other repositories are specified with  repository-url/image:tag . Up to 255 letters (uppercase and lowercase), numbers, hyphens, underscores, colons, periods, forward slashes, and number signs are allowed. This parameter maps to Image in the Create a container section of the Docker Remote API and the IMAGE parameter of docker run.   Images in Amazon ECR repositories use the full registry and repository URI (for example, 012345678910.dkr.ecr.&lt;region-name&gt;.amazonaws.com/&lt;repository-name&gt;).    Images in official repositories on Docker Hub use a single name (for example, ubuntu or mongo).   Images in other repositories on Docker Hub are qualified with an organization name (for example, amazon/amazon-ecs-agent).   Images in other online repositories are qualified further by a domain name (for example, quay.io/assemblyline/ubuntu).  
          */
-    var image: java.lang.String
+    var image: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The instance type to use for a multi-node parallel job. Currently all node groups in a multi-node parallel job must use the same instance type. This parameter is not valid for single-node container jobs.
+         */
+    var instanceType: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the IAM role that the container can assume for AWS permissions.
          */
@@ -352,7 +380,7 @@ object BatchNs extends js.Object {
     /**
          * The hard limit (in MiB) of memory to present to the container. If your container attempts to exceed the memory specified here, the container is killed. This parameter maps to Memory in the Create a container section of the Docker Remote API and the --memory option to docker run. You must specify at least 4 MiB of memory for a job.  If you are trying to maximize your resource utilization by providing your jobs as much memory as possible for a particular instance type, see Memory Management in the AWS Batch User Guide. 
          */
-    var memory: Integer
+    var memory: js.UndefOr[Integer] = js.undefined
     /**
          * The mount points for data volumes in your container. This parameter maps to Volumes in the Create a container section of the Docker Remote API and the --volume option to docker run.
          */
@@ -376,7 +404,7 @@ object BatchNs extends js.Object {
     /**
          * The number of vCPUs reserved for the container. This parameter maps to CpuShares in the Create a container section of the Docker Remote API and the --cpu-shares option to docker run. Each vCPU is equivalent to 1,024 CPU shares. You must specify at least one vCPU.
          */
-    var vcpus: Integer
+    var vcpus: js.UndefOr[Integer] = js.undefined
     /**
          * A list of data volumes used in a job.
          */
@@ -414,7 +442,7 @@ object BatchNs extends js.Object {
          */
     var state: js.UndefOr[CEState] = js.undefined
     /**
-         * The type of the compute environment. 
+         * The type of the compute environment. For more information, see Compute Environments in the AWS Batch User Guide.
          */
     var `type`: CEType
   }
@@ -442,7 +470,7 @@ object BatchNs extends js.Object {
          */
     var jobQueueName: java.lang.String
     /**
-         * The priority of the job queue. Job queues with a higher priority (or a higher integer value for the priority parameter) are evaluated first when associated with same compute environment. Priority is determined in descending order, for example, a job queue with a priority value of 10 is given scheduling preference over a job queue with a priority value of 1.
+         * The priority of the job queue. Job queues with a higher priority (or a higher integer value for the priority parameter) are evaluated first when associated with the same compute environment. Priority is determined in descending order, for example, a job queue with a priority value of 10 is given scheduling preference over a job queue with a priority value of 1.
          */
     var priority: Integer
     /**
@@ -627,6 +655,10 @@ object BatchNs extends js.Object {
          */
     var jobDefinitionName: java.lang.String
     /**
+         * An object with various properties specific to multi-node parallel jobs.
+         */
+    var nodeProperties: js.UndefOr[NodeProperties] = js.undefined
+    /**
          * Default parameters or parameter substitution placeholders that are set in the job definition. Parameters are specified as a key-value pair mapping. Parameters in a SubmitJob request override any corresponding parameter defaults from the job definition.
          */
     var parameters: js.UndefOr[ParametersMap] = js.undefined
@@ -679,7 +711,7 @@ object BatchNs extends js.Object {
          */
     var container: js.UndefOr[ContainerDetail] = js.undefined
     /**
-         * The Unix time stamp (in seconds and milliseconds) for when the job was created. For non-array jobs and parent array jobs, this is when the job entered the SUBMITTED state (at the time SubmitJob was called). For array child jobs, this is when the child job was spawned by its parent and entered the PENDING state.
+         * The Unix timestamp (in seconds and milliseconds) for when the job was created. For non-array jobs and parent array jobs, this is when the job entered the SUBMITTED state (at the time SubmitJob was called). For array child jobs, this is when the child job was spawned by its parent and entered the PENDING state.
          */
     var createdAt: js.UndefOr[Long] = js.undefined
     /**
@@ -703,6 +735,14 @@ object BatchNs extends js.Object {
          */
     var jobQueue: java.lang.String
     /**
+         * An object representing the details of a node that is associated with a multi-node parallel job.
+         */
+    var nodeDetails: js.UndefOr[NodeDetails] = js.undefined
+    /**
+         * An object representing the node properties of a multi-node parallel job.
+         */
+    var nodeProperties: js.UndefOr[NodeProperties] = js.undefined
+    /**
          * Additional parameters passed to the job that replace parameter substitution placeholders or override any corresponding parameter defaults from the job definition. 
          */
     var parameters: js.UndefOr[ParametersMap] = js.undefined
@@ -711,11 +751,11 @@ object BatchNs extends js.Object {
          */
     var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
     /**
-         * The Unix time stamp (in seconds and milliseconds) for when the job was started (when the job transitioned from the STARTING state to the RUNNING state).
+         * The Unix timestamp (in seconds and milliseconds) for when the job was started (when the job transitioned from the STARTING state to the RUNNING state).
          */
     var startedAt: Long
     /**
-         * The current status for the job.
+         * The current status for the job.   If your jobs do not progress to STARTING, see Jobs Stuck in RUNNABLE Status in the troubleshooting section of the AWS Batch User Guide. 
          */
     var status: JobStatus
     /**
@@ -723,7 +763,7 @@ object BatchNs extends js.Object {
          */
     var statusReason: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The Unix time stamp (in seconds and milliseconds) for when the job was stopped (when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
+         * The Unix timestamp (in seconds and milliseconds) for when the job was stopped (when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
          */
     var stoppedAt: js.UndefOr[Long] = js.undefined
     /**
@@ -775,7 +815,7 @@ object BatchNs extends js.Object {
          */
     var container: js.UndefOr[ContainerSummary] = js.undefined
     /**
-         * The Unix time stamp for when the job was created. For non-array jobs and parent array jobs, this is when the job entered the SUBMITTED state (at the time SubmitJob was called). For array child jobs, this is when the child job was spawned by its parent and entered the PENDING state.
+         * The Unix timestamp for when the job was created. For non-array jobs and parent array jobs, this is when the job entered the SUBMITTED state (at the time SubmitJob was called). For array child jobs, this is when the child job was spawned by its parent and entered the PENDING state.
          */
     var createdAt: js.UndefOr[Long] = js.undefined
     /**
@@ -787,7 +827,11 @@ object BatchNs extends js.Object {
          */
     var jobName: java.lang.String
     /**
-         * The Unix time stamp for when the job was started (when the job transitioned from the STARTING state to the RUNNING state).
+         * The node properties for a single node in a job summary list.
+         */
+    var nodeProperties: js.UndefOr[NodePropertiesSummary] = js.undefined
+    /**
+         * The Unix timestamp for when the job was started (when the job transitioned from the STARTING state to the RUNNING state).
          */
     var startedAt: js.UndefOr[Long] = js.undefined
     /**
@@ -799,7 +843,7 @@ object BatchNs extends js.Object {
          */
     var statusReason: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The Unix time stamp for when the job was stopped (when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
+         * The Unix timestamp for when the job was stopped (when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
          */
     var stoppedAt: js.UndefOr[Long] = js.undefined
   }
@@ -825,6 +869,22 @@ object BatchNs extends js.Object {
   }
   
   
+  trait LaunchTemplateSpecification extends js.Object {
+    /**
+         * The ID of the launch template.
+         */
+    var launchTemplateId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The name of the launch template.
+         */
+    var launchTemplateName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The version number of the launch template. Default: The default version of the launch template.
+         */
+    var version: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait ListJobsRequest extends js.Object {
     /**
          * The job ID for an array job. Specifying an array job ID with this parameter lists all child jobs from within the specified array.
@@ -842,6 +902,10 @@ object BatchNs extends js.Object {
          * The maximum number of results returned by ListJobs in paginated output. When this parameter is used, ListJobs only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListJobs request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListJobs returns up to 100 results and a nextToken value if applicable.
          */
     var maxResults: js.UndefOr[Integer] = js.undefined
+    /**
+         * The job ID for a multi-node parallel job. Specifying a multi-node parallel job ID with this parameter lists all nodes that are associated with the specified job.
+         */
+    var multiNodeJobId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The nextToken value returned from a previous paginated ListJobs request where maxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the nextToken value. This value is null when there are no more results to return.  This token should be treated as an opaque identifier that is only used to retrieve the next items in a list and not for other programmatic purposes. 
          */
@@ -877,19 +941,115 @@ object BatchNs extends js.Object {
   }
   
   
+  trait NetworkInterface extends js.Object {
+    /**
+         * The attachment ID for the network interface.
+         */
+    var attachmentId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The private IPv6 address for the network interface.
+         */
+    var ipv6Address: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The private IPv4 address for the network interface.
+         */
+    var privateIpv4Address: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait NodeDetails extends js.Object {
+    /**
+         * Specifies whether the current node is the main node for a multi-node parallel job.
+         */
+    var isMainNode: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The node index for the node. Node index numbering begins at zero. This index is also available on the node with the AWS_BATCH_JOB_NODE_INDEX environment variable.
+         */
+    var nodeIndex: js.UndefOr[Integer] = js.undefined
+  }
+  
+  
+  trait NodeOverrides extends js.Object {
+    /**
+         * The node property overrides for the job.
+         */
+    var nodePropertyOverrides: js.UndefOr[NodePropertyOverrides] = js.undefined
+  }
+  
+  
+  trait NodeProperties extends js.Object {
+    /**
+         * Specifies the node index for the main node of a multi-node parallel job.
+         */
+    var mainNode: Integer
+    /**
+         * A list of node ranges and their properties associated with a multi-node parallel job.
+         */
+    var nodeRangeProperties: NodeRangeProperties
+    /**
+         * The number of nodes associated with a multi-node parallel job.
+         */
+    var numNodes: Integer
+  }
+  
+  
+  trait NodePropertiesSummary extends js.Object {
+    /**
+         * Specifies whether the current node is the main node for a multi-node parallel job.
+         */
+    var isMainNode: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The node index for the node. Node index numbering begins at zero. This index is also available on the node with the AWS_BATCH_JOB_NODE_INDEX environment variable.
+         */
+    var nodeIndex: js.UndefOr[Integer] = js.undefined
+    /**
+         * The number of nodes associated with a multi-node parallel job.
+         */
+    var numNodes: js.UndefOr[Integer] = js.undefined
+  }
+  
+  
+  trait NodePropertyOverride extends js.Object {
+    /**
+         * The overrides that should be sent to a node range.
+         */
+    var containerOverrides: js.UndefOr[ContainerOverrides] = js.undefined
+    /**
+         * The range of nodes, using node index values, with which to override. A range of 0:3 indicates nodes with index values of 0 through 3. If the starting range value is omitted (:n), then 0 is used to start the range. If the ending range value is omitted (n:), then the highest possible node index is used to end the range.
+         */
+    var targetNodes: java.lang.String
+  }
+  
+  
+  trait NodeRangeProperty extends js.Object {
+    /**
+         * The container details for the node range.
+         */
+    var container: js.UndefOr[ContainerProperties] = js.undefined
+    /**
+         * The range of nodes, using node index values. A range of 0:3 indicates nodes with index values of 0 through 3. If the starting range value is omitted (:n), then 0 is used to start the range. If the ending range value is omitted (n:), then the highest possible node index is used to end the range. Your accumulative node ranges must account for all nodes (0:n). You may nest node ranges, for example 0:10 and 4:5, in which case the 4:5 range properties override the 0:10 properties. 
+         */
+    var targetNodes: java.lang.String
+  }
+  
+  
   trait ParametersMap
     extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
   
   
   trait RegisterJobDefinitionRequest extends js.Object {
     /**
-         * An object with various properties specific for container-based jobs. This parameter is required if the type parameter is container.
+         * An object with various properties specific to single-node container-based jobs. If the job definition's type parameter is container, then you must specify either containerProperties or nodeProperties.
          */
     var containerProperties: js.UndefOr[ContainerProperties] = js.undefined
     /**
          * The name of the job definition to register. Up to 128 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed.
          */
     var jobDefinitionName: java.lang.String
+    /**
+         * An object with various properties specific to multi-node parallel jobs. If you specify node properties for a job, it becomes a multi-node parallel job. For more information, see Multi-node Parallel Jobs in the AWS Batch User Guide. If the job definition's type parameter is container, then you must specify either containerProperties or nodeProperties.
+         */
+    var nodeProperties: js.UndefOr[NodeProperties] = js.undefined
     /**
          * Default parameter substitution placeholders to set in the job definition. Parameters are specified as a key-value pair mapping. Parameters in a SubmitJob request override any corresponding parameter defaults from the job definition.
          */
@@ -927,7 +1087,7 @@ object BatchNs extends js.Object {
   
   trait RetryStrategy extends js.Object {
     /**
-         * The number of times to move a job to the RUNNABLE status. You may specify between 1 and 10 attempts. If the value of attempts is greater than one, the job is retried if it fails until it has moved to RUNNABLE that many times.
+         * The number of times to move a job to the RUNNABLE status. You may specify between 1 and 10 attempts. If the value of attempts is greater than one, the job is retried on failure the same number of attempts as the value.
          */
     var attempts: js.UndefOr[Integer] = js.undefined
   }
@@ -943,7 +1103,7 @@ object BatchNs extends js.Object {
          */
     var containerOverrides: js.UndefOr[ContainerOverrides] = js.undefined
     /**
-         * A list of dependencies for the job. A job can depend upon a maximum of 20 jobs. You can specify a SEQUENTIAL type dependency without specifying a job ID for array jobs so that each child array job completes sequentially, starting at index 0. You can also specify an N_TO_N type dependency with a job ID for array jobs so that each index child of this job must wait for the corresponding index child of each dependency to complete before it can begin.
+         * A list of dependencies for the job. A job can depend upon a maximum of 20 jobs. You can specify a SEQUENTIAL type dependency without specifying a job ID for array jobs so that each child array job completes sequentially, starting at index 0. You can also specify an N_TO_N type dependency with a job ID for array jobs. In that case, each index child of this job must wait for the corresponding index child of each dependency to complete before it can begin.
          */
     var dependsOn: js.UndefOr[JobDependencyList] = js.undefined
     /**
@@ -958,6 +1118,10 @@ object BatchNs extends js.Object {
          * The job queue into which the job is submitted. You can specify either the name or the Amazon Resource Name (ARN) of the queue. 
          */
     var jobQueue: java.lang.String
+    /**
+         * A list of node overrides in JSON format that specify the node range to target and the container overrides for that node range.
+         */
+    var nodeOverrides: js.UndefOr[NodeOverrides] = js.undefined
     /**
          * Additional parameters passed to the job that replace parameter substitution placeholders that are set in the job definition. Parameters are specified as a key and value pair mapping. Parameters in a SubmitJob request override any corresponding parameter defaults from the job definition.
          */
@@ -1038,11 +1202,11 @@ object BatchNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CancelJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an AWS Batch compute environment. You can create MANAGED or UNMANAGED compute environments. In a managed compute environment, AWS Batch manages the compute resources within the environment, based on the compute resources that you specify. Instances launched into a managed compute environment use a recent, approved version of the Amazon ECS-optimized AMI. You can choose to use Amazon EC2 On-Demand Instances in your managed compute environment, or you can use Amazon EC2 Spot Instances that only launch when the Spot bid price is below a specified percentage of the On-Demand price. In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see Container Instance AMIs in the Amazon Elastic Container Service Developer Guide. After you have created your unmanaged compute environment, you can use the DescribeComputeEnvironments operation to find the Amazon ECS cluster that is associated with it and then manually launch your container instances into that Amazon ECS cluster. For more information, see Launching an Amazon ECS Container Instance in the Amazon Elastic Container Service Developer Guide.
+       * Creates an AWS Batch compute environment. You can create MANAGED or UNMANAGED compute environments. In a managed compute environment, AWS Batch manages the capacity and instance types of the compute resources within the environment. This is based on the compute resource specification that you define or the launch template that you specify when you create the compute environment. You can choose to use Amazon EC2 On-Demand Instances or Spot Instances in your managed compute environment. You can optionally set a maximum price so that Spot Instances only launch when the Spot Instance price is below a specified percentage of the On-Demand price.  Multi-node parallel jobs are not supported on Spot Instances.  In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see Container Instance AMIs in the Amazon Elastic Container Service Developer Guide. After you have created your unmanaged compute environment, you can use the DescribeComputeEnvironments operation to find the Amazon ECS cluster that is associated with it. Then, manually launch your container instances into that Amazon ECS cluster. For more information, see Launching an Amazon ECS Container Instance in the Amazon Elastic Container Service Developer Guide.  AWS Batch does not upgrade the AMIs in a compute environment after it is created (for example, when a newer version of the Amazon ECS-optimized AMI is available). You are responsible for the management of the guest operating system (including updates and security patches) and any additional application software or utilities that you install on the compute resources. To use a new AMI for your AWS Batch jobs:   Create a new compute environment with the new AMI.   Add the compute environment to an existing job queue.   Remove the old compute environment from your job queue.   Delete the old compute environment.   
        */
     def createComputeEnvironment(): awsDashSdkLib.libRequestMod.Request[CreateComputeEnvironmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an AWS Batch compute environment. You can create MANAGED or UNMANAGED compute environments. In a managed compute environment, AWS Batch manages the compute resources within the environment, based on the compute resources that you specify. Instances launched into a managed compute environment use a recent, approved version of the Amazon ECS-optimized AMI. You can choose to use Amazon EC2 On-Demand Instances in your managed compute environment, or you can use Amazon EC2 Spot Instances that only launch when the Spot bid price is below a specified percentage of the On-Demand price. In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see Container Instance AMIs in the Amazon Elastic Container Service Developer Guide. After you have created your unmanaged compute environment, you can use the DescribeComputeEnvironments operation to find the Amazon ECS cluster that is associated with it and then manually launch your container instances into that Amazon ECS cluster. For more information, see Launching an Amazon ECS Container Instance in the Amazon Elastic Container Service Developer Guide.
+       * Creates an AWS Batch compute environment. You can create MANAGED or UNMANAGED compute environments. In a managed compute environment, AWS Batch manages the capacity and instance types of the compute resources within the environment. This is based on the compute resource specification that you define or the launch template that you specify when you create the compute environment. You can choose to use Amazon EC2 On-Demand Instances or Spot Instances in your managed compute environment. You can optionally set a maximum price so that Spot Instances only launch when the Spot Instance price is below a specified percentage of the On-Demand price.  Multi-node parallel jobs are not supported on Spot Instances.  In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see Container Instance AMIs in the Amazon Elastic Container Service Developer Guide. After you have created your unmanaged compute environment, you can use the DescribeComputeEnvironments operation to find the Amazon ECS cluster that is associated with it. Then, manually launch your container instances into that Amazon ECS cluster. For more information, see Launching an Amazon ECS Container Instance in the Amazon Elastic Container Service Developer Guide.  AWS Batch does not upgrade the AMIs in a compute environment after it is created (for example, when a newer version of the Amazon ECS-optimized AMI is available). You are responsible for the management of the guest operating system (including updates and security patches) and any additional application software or utilities that you install on the compute resources. To use a new AMI for your AWS Batch jobs:   Create a new compute environment with the new AMI.   Add the compute environment to an existing job queue.   Remove the old compute environment from your job queue.   Delete the old compute environment.   
        */
     def createComputeEnvironment(
       callback: js.Function2[
@@ -1052,11 +1216,11 @@ object BatchNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateComputeEnvironmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an AWS Batch compute environment. You can create MANAGED or UNMANAGED compute environments. In a managed compute environment, AWS Batch manages the compute resources within the environment, based on the compute resources that you specify. Instances launched into a managed compute environment use a recent, approved version of the Amazon ECS-optimized AMI. You can choose to use Amazon EC2 On-Demand Instances in your managed compute environment, or you can use Amazon EC2 Spot Instances that only launch when the Spot bid price is below a specified percentage of the On-Demand price. In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see Container Instance AMIs in the Amazon Elastic Container Service Developer Guide. After you have created your unmanaged compute environment, you can use the DescribeComputeEnvironments operation to find the Amazon ECS cluster that is associated with it and then manually launch your container instances into that Amazon ECS cluster. For more information, see Launching an Amazon ECS Container Instance in the Amazon Elastic Container Service Developer Guide.
+       * Creates an AWS Batch compute environment. You can create MANAGED or UNMANAGED compute environments. In a managed compute environment, AWS Batch manages the capacity and instance types of the compute resources within the environment. This is based on the compute resource specification that you define or the launch template that you specify when you create the compute environment. You can choose to use Amazon EC2 On-Demand Instances or Spot Instances in your managed compute environment. You can optionally set a maximum price so that Spot Instances only launch when the Spot Instance price is below a specified percentage of the On-Demand price.  Multi-node parallel jobs are not supported on Spot Instances.  In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see Container Instance AMIs in the Amazon Elastic Container Service Developer Guide. After you have created your unmanaged compute environment, you can use the DescribeComputeEnvironments operation to find the Amazon ECS cluster that is associated with it. Then, manually launch your container instances into that Amazon ECS cluster. For more information, see Launching an Amazon ECS Container Instance in the Amazon Elastic Container Service Developer Guide.  AWS Batch does not upgrade the AMIs in a compute environment after it is created (for example, when a newer version of the Amazon ECS-optimized AMI is available). You are responsible for the management of the guest operating system (including updates and security patches) and any additional application software or utilities that you install on the compute resources. To use a new AMI for your AWS Batch jobs:   Create a new compute environment with the new AMI.   Add the compute environment to an existing job queue.   Remove the old compute environment from your job queue.   Delete the old compute environment.   
        */
     def createComputeEnvironment(params: CreateComputeEnvironmentRequest): awsDashSdkLib.libRequestMod.Request[CreateComputeEnvironmentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an AWS Batch compute environment. You can create MANAGED or UNMANAGED compute environments. In a managed compute environment, AWS Batch manages the compute resources within the environment, based on the compute resources that you specify. Instances launched into a managed compute environment use a recent, approved version of the Amazon ECS-optimized AMI. You can choose to use Amazon EC2 On-Demand Instances in your managed compute environment, or you can use Amazon EC2 Spot Instances that only launch when the Spot bid price is below a specified percentage of the On-Demand price. In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see Container Instance AMIs in the Amazon Elastic Container Service Developer Guide. After you have created your unmanaged compute environment, you can use the DescribeComputeEnvironments operation to find the Amazon ECS cluster that is associated with it and then manually launch your container instances into that Amazon ECS cluster. For more information, see Launching an Amazon ECS Container Instance in the Amazon Elastic Container Service Developer Guide.
+       * Creates an AWS Batch compute environment. You can create MANAGED or UNMANAGED compute environments. In a managed compute environment, AWS Batch manages the capacity and instance types of the compute resources within the environment. This is based on the compute resource specification that you define or the launch template that you specify when you create the compute environment. You can choose to use Amazon EC2 On-Demand Instances or Spot Instances in your managed compute environment. You can optionally set a maximum price so that Spot Instances only launch when the Spot Instance price is below a specified percentage of the On-Demand price.  Multi-node parallel jobs are not supported on Spot Instances.  In an unmanaged compute environment, you can manage your own compute resources. This provides more compute resource configuration options, such as using a custom AMI, but you must ensure that your AMI meets the Amazon ECS container instance AMI specification. For more information, see Container Instance AMIs in the Amazon Elastic Container Service Developer Guide. After you have created your unmanaged compute environment, you can use the DescribeComputeEnvironments operation to find the Amazon ECS cluster that is associated with it. Then, manually launch your container instances into that Amazon ECS cluster. For more information, see Launching an Amazon ECS Container Instance in the Amazon Elastic Container Service Developer Guide.  AWS Batch does not upgrade the AMIs in a compute environment after it is created (for example, when a newer version of the Amazon ECS-optimized AMI is available). You are responsible for the management of the guest operating system (including updates and security patches) and any additional application software or utilities that you install on the compute resources. To use a new AMI for your AWS Batch jobs:   Create a new compute environment with the new AMI.   Add the compute environment to an existing job queue.   Remove the old compute environment from your job queue.   Delete the old compute environment.   
        */
     def createComputeEnvironment(
       params: CreateComputeEnvironmentRequest,
@@ -1299,11 +1463,11 @@ object BatchNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of task jobs for a specified job queue. You can filter the results by job status with the jobStatus parameter. If you do not specify a status, only RUNNING jobs are returned.
+       * Returns a list of AWS Batch jobs. You must specify only one of the following:   a job queue ID to return a list of jobs in that job queue   a multi-node parallel job ID to return a list of that job's nodes   an array job ID to return a list of that job's children   You can filter the results by job status with the jobStatus parameter. If you do not specify a status, only RUNNING jobs are returned.
        */
     def listJobs(): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of task jobs for a specified job queue. You can filter the results by job status with the jobStatus parameter. If you do not specify a status, only RUNNING jobs are returned.
+       * Returns a list of AWS Batch jobs. You must specify only one of the following:   a job queue ID to return a list of jobs in that job queue   a multi-node parallel job ID to return a list of that job's nodes   an array job ID to return a list of that job's children   You can filter the results by job status with the jobStatus parameter. If you do not specify a status, only RUNNING jobs are returned.
        */
     def listJobs(
       callback: js.Function2[
@@ -1313,11 +1477,11 @@ object BatchNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of task jobs for a specified job queue. You can filter the results by job status with the jobStatus parameter. If you do not specify a status, only RUNNING jobs are returned.
+       * Returns a list of AWS Batch jobs. You must specify only one of the following:   a job queue ID to return a list of jobs in that job queue   a multi-node parallel job ID to return a list of that job's nodes   an array job ID to return a list of that job's children   You can filter the results by job status with the jobStatus parameter. If you do not specify a status, only RUNNING jobs are returned.
        */
     def listJobs(params: ListJobsRequest): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of task jobs for a specified job queue. You can filter the results by job status with the jobStatus parameter. If you do not specify a status, only RUNNING jobs are returned.
+       * Returns a list of AWS Batch jobs. You must specify only one of the following:   a job queue ID to return a list of jobs in that job queue   a multi-node parallel job ID to return a list of that job's nodes   an array job ID to return a list of that job's children   You can filter the results by job status with the jobStatus parameter. If you do not specify a status, only RUNNING jobs are returned.
        */
     def listJobs(
       params: ListJobsRequest,
@@ -1517,7 +1681,7 @@ object BatchNs extends js.Object {
          */
     var computeEnvironmentArn: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The name of compute environment.
+         * The name of the compute environment.
          */
     var computeEnvironmentName: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -1533,7 +1697,7 @@ object BatchNs extends js.Object {
          */
     var jobQueue: java.lang.String
     /**
-         * The priority of the job queue. Job queues with a higher priority (or a higher integer value for the priority parameter) are evaluated first when associated with same compute environment. Priority is determined in descending order, for example, a job queue with a priority value of 10 is given scheduling preference over a job queue with a priority value of 1.
+         * The priority of the job queue. Job queues with a higher priority (or a higher integer value for the priority parameter) are evaluated first when associated with the same compute environment. Priority is determined in descending order, for example, a job queue with a priority value of 10 is given scheduling preference over a job queue with a priority value of 1.
          */
     var priority: js.UndefOr[Integer] = js.undefined
     /**
@@ -1582,7 +1746,7 @@ object BatchNs extends js.Object {
   type JQState = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
   type JQStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.VALID | awsDashSdkLib.awsDashSdkLibStrings.INVALID | java.lang.String
   type JobDefinitionList = js.Array[JobDefinition]
-  type JobDefinitionType = awsDashSdkLib.awsDashSdkLibStrings.container | java.lang.String
+  type JobDefinitionType = awsDashSdkLib.awsDashSdkLibStrings.container | awsDashSdkLib.awsDashSdkLibStrings.multinode | java.lang.String
   type JobDependencyList = js.Array[JobDependency]
   type JobDetailList = js.Array[JobDetail]
   type JobQueueDetailList = js.Array[JobQueueDetail]
@@ -1590,6 +1754,9 @@ object BatchNs extends js.Object {
   type JobSummaryList = js.Array[JobSummary]
   type Long = scala.Double
   type MountPoints = js.Array[MountPoint]
+  type NetworkInterfaceList = js.Array[NetworkInterface]
+  type NodePropertyOverrides = js.Array[NodePropertyOverride]
+  type NodeRangeProperties = js.Array[NodeRangeProperty]
   type String = java.lang.String
   type StringList = js.Array[java.lang.String]
   type Ulimits = js.Array[Ulimit]

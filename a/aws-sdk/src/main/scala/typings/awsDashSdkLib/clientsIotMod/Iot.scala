@@ -32,6 +32,47 @@ trait Iot
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     * Adds a thing to a billing group.
+     */
+  def addThingToBillingGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a thing to a billing group.
+     */
+  def addThingToBillingGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a thing to a billing group.
+     */
+  def addThingToBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a thing to a billing group.
+     */
+  def addThingToBillingGroup(
+    params: awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.AddThingToBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Adds a thing to a thing group.
      */
   def addThingToThingGroup(): awsDashSdkLib.libRequestMod.Request[
@@ -444,6 +485,47 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Creates a billing group.
+     */
+  def createBillingGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a billing group.
+     */
+  def createBillingGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a billing group.
+     */
+  def createBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a billing group.
+     */
+  def createBillingGroup(
+    params: awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.CreateBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Creates an X.509 certificate using the specified certificate signing request.  Note: The CSR must include a public key that is either an RSA key with a length of at least 2048 bits or an ECC key from NIST P-256 or NIST P-384 curves.   Note: Reusing the same certificate signing request (CSR) results in a distinct certificate. You can create multiple certificates in a batch by creating a directory, copying multiple .csr files into that directory, and then specifying that directory on the command line. The following commands show how to create a batch of certificates given a batch of CSRs. Assuming a set of CSRs are located inside of the directory my-csr-directory: On Linux and OS X, the command is: $ ls my-csr-directory/ | xargs -I {} aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/{} This command lists all of the CSRs in my-csr-directory and pipes each CSR file name to the aws iot create-certificate-from-csr AWS CLI command to create a certificate for the corresponding CSR. The aws iot create-certificate-from-csr part of the command can also be run in parallel to speed up the certificate creation process: $ ls my-csr-directory/ | xargs -P 10 -I {} aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/{} On Windows PowerShell, the command to create certificates for all CSRs in my-csr-directory is: &gt; ls -Name my-csr-directory | %{aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/$_} On a Windows command prompt, the command to create certificates for all CSRs in my-csr-directory is: &gt; forfiles /p my-csr-directory /c "cmd /c aws iot create-certificate-from-csr --certificate-signing-request file://@path"
      */
   def createCertificateFromCsr(): awsDashSdkLib.libRequestMod.Request[
@@ -482,6 +564,47 @@ trait Iot
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.CreateCertificateFromCsrResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a dynamic thing group.
+     */
+  def createDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a dynamic thing group.
+     */
+  def createDynamicThingGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a dynamic thing group.
+     */
+  def createDynamicThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a dynamic thing group.
+     */
+  def createDynamicThingGroup(
+    params: awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.CreateDynamicThingGroupResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1080,6 +1203,47 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Deletes the billing group.
+     */
+  def deleteBillingGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the billing group.
+     */
+  def deleteBillingGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the billing group.
+     */
+  def deleteBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the billing group.
+     */
+  def deleteBillingGroup(
+    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DeleteBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Deletes a registered CA certificate.
      */
   def deleteCACertificate(): awsDashSdkLib.libRequestMod.Request[
@@ -1141,6 +1305,47 @@ trait Iot
     params: awsDashSdkLib.clientsIotMod.IotNs.DeleteCertificateRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a dynamic thing group.
+     */
+  def deleteDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a dynamic thing group.
+     */
+  def deleteDynamicThingGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a dynamic thing group.
+     */
+  def deleteDynamicThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a dynamic thing group.
+     */
+  def deleteDynamicThingGroup(
+    params: awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DeleteDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
   /**
      * Deletes a job and its related job executions. Deleting a job may take time, depending on the number of job executions created for the job and various other factors. While the job is being deleted, the status of the job will be shown as "DELETION_IN_PROGRESS". Attempting to delete or cancel a job whose status is already "DELETION_IN_PROGRESS" will result in an error. Only 10 jobs may have status "DELETION_IN_PROGRESS" at the same time, or a LimitExceededException will occur.
      */
@@ -1472,14 +1677,14 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified thing.
+     * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
      */
   def deleteThing(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.DeleteThingResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified thing.
+     * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
      */
   def deleteThing(
     callback: js.Function2[
@@ -1492,14 +1697,14 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified thing.
+     * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
      */
   def deleteThing(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteThingRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.DeleteThingResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified thing.
+     * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
      */
   def deleteThing(
     params: awsDashSdkLib.clientsIotMod.IotNs.DeleteThingRequest,
@@ -1554,14 +1759,14 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified thing type . You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
+     * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
      */
   def deleteThingType(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified thing type . You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
+     * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
      */
   def deleteThingType(
     callback: js.Function2[
@@ -1574,14 +1779,14 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified thing type . You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
+     * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
      */
   def deleteThingType(params: awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified thing type . You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
+     * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
      */
   def deleteThingType(
     params: awsDashSdkLib.clientsIotMod.IotNs.DeleteThingTypeRequest,
@@ -1798,6 +2003,47 @@ trait Iot
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.DescribeAuthorizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a billing group.
+     */
+  def describeBillingGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a billing group.
+     */
+  def describeBillingGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a billing group.
+     */
+  def describeBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a billing group.
+     */
+  def describeBillingGroup(
+    params: awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.DescribeBillingGroupResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -2540,14 +2786,14 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches the specified principal from the specified thing.
+     * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
      */
   def detachThingPrincipal(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches the specified principal from the specified thing.
+     * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
      */
   def detachThingPrincipal(
     callback: js.Function2[
@@ -2560,14 +2806,14 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches the specified principal from the specified thing.
+     * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
      */
   def detachThingPrincipal(params: awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches the specified principal from the specified thing.
+     * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
      */
   def detachThingPrincipal(
     params: awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalRequest,
@@ -3235,6 +3481,47 @@ trait Iot
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.ListAuthorizersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the billing groups you have created.
+     */
+  def listBillingGroups(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the billing groups you have created.
+     */
+  def listBillingGroups(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the billing groups you have created.
+     */
+  def listBillingGroups(params: awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the billing groups you have created.
+     */
+  def listBillingGroups(
+    params: awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListBillingGroupsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -4017,6 +4304,47 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Lists the tags (metadata) you have assigned to the resource.
+     */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the tags (metadata) you have assigned to the resource.
+     */
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the tags (metadata) you have assigned to the resource.
+     */
+  def listTagsForResource(params: awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the tags (metadata) you have assigned to the resource.
+     */
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * List targets for the specified policy.
      */
   def listTargetsForPolicy(): awsDashSdkLib.libRequestMod.Request[
@@ -4386,6 +4714,47 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Lists the things you have added to the given billing group.
+     */
+  def listThingsInBillingGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the things you have added to the given billing group.
+     */
+  def listThingsInBillingGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the things you have added to the given billing group.
+     */
+  def listThingsInBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the things you have added to the given billing group.
+     */
+  def listThingsInBillingGroup(
+    params: awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.ListThingsInBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Lists the things in the specified group.
      */
   def listThingsInThingGroup(): awsDashSdkLib.libRequestMod.Request[
@@ -4693,6 +5062,47 @@ trait Iot
     params: awsDashSdkLib.clientsIotMod.IotNs.RejectCertificateTransferRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Removes the given thing from the billing group.
+     */
+  def removeThingFromBillingGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes the given thing from the billing group.
+     */
+  def removeThingFromBillingGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes the given thing from the billing group.
+     */
+  def removeThingFromBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes the given thing from the billing group.
+     */
+  def removeThingFromBillingGroup(
+    params: awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.RemoveThingFromBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
   /**
      * Remove the specified thing from the specified group.
      */
@@ -5045,6 +5455,47 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
+     */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
+     */
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
+     */
+  def tagResource(params: awsDashSdkLib.clientsIotMod.IotNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
+     */
+  def tagResource(
+    params: awsDashSdkLib.clientsIotMod.IotNs.TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Tests if a specified principal is authorized to perform an AWS IoT action on a specified resource. Use this to test and debug the authorization behavior of devices that connect to the AWS IoT device gateway.
      */
   def testAuthorization(): awsDashSdkLib.libRequestMod.Request[
@@ -5168,6 +5619,47 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Removes the given tags (metadata) from the resource.
+     */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes the given tags (metadata) from the resource.
+     */
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes the given tags (metadata) from the resource.
+     */
+  def untagResource(params: awsDashSdkLib.clientsIotMod.IotNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes the given tags (metadata) from the resource.
+     */
+  def untagResource(
+    params: awsDashSdkLib.clientsIotMod.IotNs.UntagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Configures or reconfigures the Device Defender audit settings for this account. Settings include how audit notifications are sent and which audit checks are enabled or disabled.
      */
   def updateAccountAuditConfiguration(): awsDashSdkLib.libRequestMod.Request[
@@ -5250,6 +5742,47 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Updates information about the billing group.
+     */
+  def updateBillingGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates information about the billing group.
+     */
+  def updateBillingGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates information about the billing group.
+     */
+  def updateBillingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates information about the billing group.
+     */
+  def updateBillingGroup(
+    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UpdateBillingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Updates a registered CA certificate.
      */
   def updateCACertificate(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -5291,6 +5824,47 @@ trait Iot
     params: awsDashSdkLib.clientsIotMod.IotNs.UpdateCertificateRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Updates a dynamic thing group.
+     */
+  def updateDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a dynamic thing group.
+     */
+  def updateDynamicThingGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a dynamic thing group.
+     */
+  def updateDynamicThingGroup(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a dynamic thing group.
+     */
+  def updateDynamicThingGroup(
+    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.UpdateDynamicThingGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
   /**
      * Updates the event configurations.
      */
@@ -5373,6 +5947,27 @@ trait Iot
     awsDashSdkLib.clientsIotMod.IotNs.UpdateIndexingConfigurationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
+  /**
+     * Updates supported fields of the specified job.
+     */
+  def updateJob(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Updates supported fields of the specified job.
+     */
+  def updateJob(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Updates supported fields of the specified job.
+     */
+  def updateJob(params: awsDashSdkLib.clientsIotMod.IotNs.UpdateJobRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Updates supported fields of the specified job.
+     */
+  def updateJob(
+    params: awsDashSdkLib.clientsIotMod.IotNs.UpdateJobRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
      * Updates a role alias.
      */

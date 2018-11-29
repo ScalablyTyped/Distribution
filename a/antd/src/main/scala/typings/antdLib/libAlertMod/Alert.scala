@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Alert
-  extends reactLib.reactMod.Component[AlertProps, js.Any, js.Any] {
+  extends reactLib.reactMod.Component[AlertProps, AlertState, js.Any] {
+  @JSName("state")
+  var state_Alert: AlertState = js.native
   def animationEnd(): scala.Unit = js.native
   def handleClose(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement]): scala.Unit = js.native
 }

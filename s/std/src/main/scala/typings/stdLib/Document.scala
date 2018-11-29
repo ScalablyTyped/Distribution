@@ -99,7 +99,7 @@ trait Document
   /**
        * Gets a reference to the root node of the document.
        */
-  val documentElement: HTMLElement | scala.Null = js.native
+  val documentElement: HTMLElement = js.native
   /**
        * Returns document's URL.
        */
@@ -131,7 +131,7 @@ trait Document
   /**
        * Returns the head element.
        */
-  val head: HTMLHeadElement | scala.Null = js.native
+  val head: HTMLHeadElement = js.native
   val hidden: scala.Boolean = js.native
   /**
        * Retrieves a collection, in source order, of img objects in the document.
@@ -161,7 +161,7 @@ trait Document
   /**
        * Contains information about the current URL.
        */
-  var location: Location | scala.Null = js.native
+  var location: Location = js.native
   var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   /**
@@ -324,8 +324,6 @@ trait Document
   def adoptNode[T /* <: Node */](source: T): T = js.native
   /** @deprecated */
   def captureEvents(): scala.Unit = js.native
-  def caretPositionFromPoint(x: scala.Double, y: scala.Double): CaretPosition | scala.Null = js.native
-  def caretRangeFromPoint(x: scala.Double, y: scala.Double): Range = js.native
   /** @deprecated */
   def clear(): scala.Unit = js.native
   /**
@@ -374,6 +372,10 @@ trait Document
     namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
     qualifiedName: stdLib.stdLibStrings.componentTransferFunction
   ): SVGComponentTransferFunctionElement = js.native
+  def createElementNS(
+    namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
+    qualifiedName: stdLib.stdLibStrings.cursor
+  ): SVGCursorElement = js.native
   def createElementNS(
     namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
     qualifiedName: stdLib.stdLibStrings.defs
@@ -2242,13 +2244,7 @@ trait Document
        * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
        */
   def createTreeWalker(root: Node, whatToShow: scala.Double): TreeWalker = js.native
-  /**
-       * Creates a TreeWalker object that you can use to traverse filtered lists of nodes or elements in a document.
-       * @param root The root element or node to start traversing on.
-       * @param whatToShow The type of nodes or elements to appear in the node list. For more information, see whatToShow.
-       * @param filter A custom NodeFilter function to use.
-       * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
-       */
+  /** @deprecated */
   def createTreeWalker(root: Node, whatToShow: scala.Double, filter: scala.Null, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
   /**
        * Creates a TreeWalker object that you can use to traverse filtered lists of nodes or elements in a document.
@@ -2258,14 +2254,21 @@ trait Document
        * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
        */
   def createTreeWalker(root: Node, whatToShow: scala.Double, filter: NodeFilter): TreeWalker = js.native
-  /**
-       * Creates a TreeWalker object that you can use to traverse filtered lists of nodes or elements in a document.
-       * @param root The root element or node to start traversing on.
-       * @param whatToShow The type of nodes or elements to appear in the node list. For more information, see whatToShow.
-       * @param filter A custom NodeFilter function to use.
-       * @param entityReferenceExpansion A flag that specifies whether entity reference nodes are expanded.
-       */
+  /** @deprecated */
   def createTreeWalker(root: Node, whatToShow: scala.Double, filter: NodeFilter, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: js.Function1[/* prefix */ java.lang.String, java.lang.String | scala.Null],
+    `type`: scala.Double
+  ): XPathResult = js.native
+  def evaluate(
+    expression: java.lang.String,
+    contextNode: Node,
+    resolver: js.Function1[/* prefix */ java.lang.String, java.lang.String | scala.Null],
+    `type`: scala.Double,
+    result: XPathResult
+  ): XPathResult = js.native
   def evaluate(expression: java.lang.String, contextNode: Node, resolver: scala.Null, `type`: scala.Double): XPathResult = js.native
   def evaluate(
     expression: java.lang.String,

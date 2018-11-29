@@ -22,5 +22,7 @@ trait IObservableArray[T]
   def spliceWithArray(index: scala.Double): js.Array[T] = js.native
   def spliceWithArray(index: scala.Double, deleteCount: scala.Double): js.Array[T] = js.native
   def spliceWithArray(index: scala.Double, deleteCount: scala.Double, newItems: js.Array[T]): js.Array[T] = js.native
+  def toJS(): js.Array[T] = js.native
+  def toJSON(): js.Array[T] = js.native
 }
 

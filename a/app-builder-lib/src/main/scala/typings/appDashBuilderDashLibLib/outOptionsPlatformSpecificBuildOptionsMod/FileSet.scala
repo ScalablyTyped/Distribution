@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait FileSet extends js.Object {
   /**
-       * The [glob patterns](/file-patterns.md).
+       * The [glob patterns](/file-patterns).
        */
   var filter: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
   /**

@@ -1,16 +1,16 @@
 organization := "com.scalablytyped"
 name := "zipkin-instrumentation-fetch"
-version := "0.11-dt-20181120Z-2d71d0"
+version := "0.11-dt-20181120Z-d86e33"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "base64-js" % "1.2-dt-20180910Z-2f3741",
-  "com.scalablytyped" %%% "is-promise" % "2.1-dt-20180910Z-1bc383",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-de4761",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "zipkin" % "0.14.2-963734",
+  "com.scalablytyped" %%% "base64-js" % "1.2-dt-20180910Z-b671e9",
+  "com.scalablytyped" %%% "is-promise" % "2.1-dt-20180910Z-250403",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-654656",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "zipkin" % "0.14.3-a52d1d",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

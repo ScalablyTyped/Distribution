@@ -16,7 +16,7 @@ object outManagersTasksModMembers extends js.Object {
   ): ITask = js.native
   def convertPatternGroupsToTasks(
     positive: fastDashGlobLib.outTypesPatternsMod.PatternsGroup,
-    negative: fastDashGlobLib.outTypesPatternsMod.PatternsGroup,
+    negative: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
     dynamic: scala.Boolean
   ): js.Array[ITask] = js.native
   def convertPatternsToTasks(
@@ -24,7 +24,6 @@ object outManagersTasksModMembers extends js.Object {
     negative: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
     dynamic: scala.Boolean
   ): js.Array[ITask] = js.native
-  def findLocalNegativePatterns(positiveBase: java.lang.String, negative: fastDashGlobLib.outTypesPatternsMod.PatternsGroup): js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern] = js.native
   def generate(
     patterns: js.Array[fastDashGlobLib.outTypesPatternsMod.Pattern],
     options: fastDashGlobLib.outManagersOptionsMod.IOptions[fastDashGlobLib.outTypesEntriesMod.EntryItem]

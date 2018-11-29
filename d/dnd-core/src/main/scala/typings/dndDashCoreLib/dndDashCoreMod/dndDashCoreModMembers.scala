@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object dndDashCoreModMembers extends js.Object {
   def createDragDropManager[C](backend: dndDashCoreLib.libInterfacesMod.BackendFactory, context: C): dndDashCoreLib.libInterfacesMod.DragDropManager[C] = js.native
+  def createDragDropManager[C](backend: dndDashCoreLib.libInterfacesMod.BackendFactory, context: C, debugMode: scala.Boolean): dndDashCoreLib.libInterfacesMod.DragDropManager[C] = js.native
 }
 

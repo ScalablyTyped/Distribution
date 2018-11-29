@@ -14,21 +14,21 @@ class LCD protected () extends js.Object {
   var cols: scala.Double = js.native
   var id: java.lang.String = js.native
   var rows: scala.Double = js.native
-  def autoscroll(): scala.Unit = js.native
-  def backlight(): scala.Unit = js.native
-  def bgColor(color: js.Any): scala.Unit = js.native
-  def blink(): scala.Unit = js.native
-  def clear(): scala.Unit = js.native
-  def cursor(row: scala.Double, col: scala.Double): scala.Unit = js.native
-  def display(): scala.Unit = js.native
-  def home(): scala.Unit = js.native
-  def noAutoscroll(): scala.Unit = js.native
-  def noBacklight(): scala.Unit = js.native
-  def noBlink(): scala.Unit = js.native
-  def noDisplay(): scala.Unit = js.native
-  def off(): scala.Unit = js.native
-  def on(): scala.Unit = js.native
-  def print(message: java.lang.String): scala.Unit = js.native
-  def useChar(char: java.lang.String): scala.Unit = js.native
+  def autoscroll(): this.type = js.native
+  def backlight(): this.type = js.native
+  def bgColor(color: js.Any): this.type = js.native
+  def blink(): this.type = js.native
+  def clear(): this.type = js.native
+  def cursor(row: scala.Double, col: scala.Double): this.type = js.native
+  def display(): this.type = js.native
+  def home(): this.type = js.native
+  def noAutoscroll(): this.type = js.native
+  def noBacklight(): this.type = js.native
+  def noBlink(): this.type = js.native
+  def noDisplay(): this.type = js.native
+  def off(): this.type = js.native
+  def on(): this.type = js.native
+  def print(message: java.lang.String): this.type = js.native
+  def useChar(char: java.lang.String): this.type = js.native
 }
 

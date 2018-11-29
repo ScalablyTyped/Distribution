@@ -11,21 +11,27 @@ class BaseExtendedPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   extends officeDashUiDashFabricDashReactLib.libUtilitiesMod.BaseComponent[P, IBaseExtendedPickerState[T]]
      with officeDashUiDashFabricDashReactLib.libComponentsExtendedPickerBaseExtendedPickerDotTypesMod.IBaseExtendedPicker[T] {
   def this(basePickerProps: P) = this()
+  var floatingPicker: reactLib.reactMod.ReactNs.RefObject[
+    officeDashUiDashFabricDashReactLib.libFloatingPickerMod.BaseFloatingPicker[
+      T, 
+      officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps[T]
+    ]
+  ] = js.native
   var floatingPickerProps: officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps[T] = js.native
-  @JSName("floatingPicker")
-  var floatingPicker_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValueCurrentBaseFloatingPicker[T] = js.native
   val highlightedItems: js.Array[T] = js.native
+  var input: reactLib.reactMod.ReactNs.RefObject[officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill] = js.native
   val inputElement: reactLib.HTMLInputElement | scala.Null = js.native
-  @JSName("input")
-  var input_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValueCurrentAutofill = js.native
   /** Gets the current value of the input. */
   /* CompleteClass */
   override var items: js.UndefOr[js.Array[T]] = js.native
-  @JSName("root")
-  var root_Original: officeDashUiDashFabricDashReactLib.Anon_Component = js.native
+  var root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
+  var selectedItemsList: reactLib.reactMod.ReactNs.RefObject[
+    officeDashUiDashFabricDashReactLib.libSelectedItemsListMod.BaseSelectedItemsList[
+      T, 
+      officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListBaseSelectedItemsListDotTypesMod.IBaseSelectedItemsListProps[T]
+    ]
+  ] = js.native
   var selectedItemsListProps: officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListBaseSelectedItemsListDotTypesMod.IBaseSelectedItemsListProps[T] = js.native
-  @JSName("selectedItemsList")
-  var selectedItemsList_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValueCurrentBaseSelectedItemsList[T] = js.native
   var selection: officeDashUiDashFabricDashReactLib.libSelectionMod.Selection = js.native
   /* private */ def _addProcessedItem(newItem: js.Any): js.Any = js.native
   /* protected */ def _onSelectedItemsChanged(): scala.Unit = js.native
@@ -36,18 +42,9 @@ class BaseExtendedPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   def componentDidMount_MBaseExtendedPicker(): scala.Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MBaseExtendedPicker(newProps: P): scala.Unit = js.native
-  def floatingPicker(): scala.Unit = js.native
-  def floatingPicker(
-    component: officeDashUiDashFabricDashReactLib.libFloatingPickerMod.BaseFloatingPicker[
-      T, 
-      officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps[T]
-    ]
-  ): scala.Unit = js.native
   /** Sets focus to the input. */
   /* CompleteClass */
   override def focus(): scala.Unit = js.native
-  /* protected */ def input(): scala.Unit = js.native
-  /* protected */ def input(component: officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill): scala.Unit = js.native
   /* protected */ def onBackspace(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
   /* protected */ def onCopy(ev: reactLib.reactMod.ReactNs.ClipboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
   /* protected */ def onInputChange(value: java.lang.String): scala.Unit = js.native
@@ -69,14 +66,5 @@ class BaseExtendedPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   /* protected */ def onSelectionChange(): scala.Unit = js.native
   /* protected */ def renderSelectedItemsList(): reactLib.reactMod.Global.JSXNs.Element = js.native
   /* protected */ def renderSuggestions(): reactLib.reactMod.Global.JSXNs.Element = js.native
-  /* protected */ def root(): scala.Unit = js.native
-  /* protected */ def root(component: reactLib.HTMLDivElement): scala.Unit = js.native
-  def selectedItemsList(): scala.Unit = js.native
-  def selectedItemsList(
-    component: officeDashUiDashFabricDashReactLib.libSelectedItemsListMod.BaseSelectedItemsList[
-      T, 
-      officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListBaseSelectedItemsListDotTypesMod.IBaseSelectedItemsListProps[T]
-    ]
-  ): scala.Unit = js.native
 }
 

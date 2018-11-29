@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 
 trait ITagInputState extends js.Object {
-  var activeIndex: js.UndefOr[scala.Double] = js.undefined
-  var inputValue: js.UndefOr[java.lang.String] = js.undefined
-  var isInputFocused: js.UndefOr[scala.Boolean] = js.undefined
+  var activeIndex: scala.Double
+  var inputValue: java.lang.String
+  var isInputFocused: scala.Boolean
 }
 

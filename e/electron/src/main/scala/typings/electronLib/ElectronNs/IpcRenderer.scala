@@ -24,9 +24,9 @@ trait IpcRenderer extends EventEmitter {
        */
   def sendSync(channel: java.lang.String, args: js.Any*): js.Any = js.native
   /**
-       * Sends a message to a window with windowid via channel.
+       * Sends a message to a window with webContentsId via channel.
        */
-  def sendTo(windowId: scala.Double, channel: java.lang.String, args: js.Any*): scala.Unit = js.native
+  def sendTo(webContentsId: scala.Double, channel: java.lang.String, args: js.Any*): scala.Unit = js.native
   /**
        * Like ipcRenderer.send but the event will be sent to the <webview> element in the
        * host page instead of the main process.

@@ -7,15 +7,25 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Collection[TSchema] extends js.Object {
-  // Get the collection name.
+  /**
+       * Get the collection name.
+       */
   var collectionName: java.lang.String = js.native
-  // Get current index hint for collection.
+  /**
+       * Get current index hint for collection.
+       */
   var hint: js.Any = js.native
-  // Get the full collection namespace.
+  /**
+       * Get the full collection namespace.
+       */
   var namespace: java.lang.String = js.native
-  // The current read concern values.
+  /**
+       * The current read concern values.
+       */
   var readConcern: ReadConcern = js.native
-  // The current write concern values.
+  /**
+       * The current write concern values.
+       */
   var writeConcern: js.Any = js.native
   def aggregate[T](): AggregationCursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.0/api/Collection.html#aggregate */

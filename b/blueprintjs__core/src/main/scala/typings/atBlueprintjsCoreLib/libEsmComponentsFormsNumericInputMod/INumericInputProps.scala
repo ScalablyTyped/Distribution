@@ -49,7 +49,7 @@ trait INumericInputProps
        * Name of a Blueprint UI icon (or an icon element) to render on the left side of input.
        */
   var leftIcon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /**
        * The increment between successive values when <kbd>shift</kbd> is held.

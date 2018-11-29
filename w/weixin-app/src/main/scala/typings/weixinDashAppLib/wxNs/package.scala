@@ -57,6 +57,8 @@ package object wxNs {
   type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
   type RecordPropsDefinition[T] = weixinDashAppLib.weixinDashAppLibStrings.RecordPropsDefinition with T
   type RemoveSavedFileOptions = GetSavedFileInfoOptions
+  // scope 列表
+  type Scope = weixinDashAppLib.weixinDashAppLibStrings.scopeDOTuserInfo | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTuserLocation | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTaddress | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTinvoiceTitle | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTinvoice | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTwerun | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTrecord | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTwritePhotosAlbum | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTcamera
   type ScrollEvent = BuiltInEvent[weixinDashAppLib.weixinDashAppLibStrings.scroll, js.Object]
   type TapEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.tap]
   type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data | (js.ThisFunction0[/* this */ V, Data]), Methods, Props]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, stdLib.Readonly[Props]]])

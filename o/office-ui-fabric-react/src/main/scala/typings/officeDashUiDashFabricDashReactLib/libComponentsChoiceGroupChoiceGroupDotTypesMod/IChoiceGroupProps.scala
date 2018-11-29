@@ -39,8 +39,8 @@ trait IChoiceGroupProps
     ]
   ] = js.undefined
   /**
-       * Deprecated and will be removed by 07/17/2017 Use 'onChange' instead.
-       * @deprecated
+       * Deprecated and will be removed by 07/17/2017. Use `onChange` instead.
+       * @deprecated Use `onChange` instead.
        */
   var onChanged: js.UndefOr[
     js.Function2[

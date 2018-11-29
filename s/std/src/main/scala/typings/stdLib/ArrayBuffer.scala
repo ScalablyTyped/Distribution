@@ -18,7 +18,7 @@ trait ArrayBuffer extends js.Object {
         */
   val byteLength: scala.Double = js.native
   @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
-  val toStringTag: stdLib.stdLibStrings.ArrayBuffer = js.native
+  val toStringTag: java.lang.String = js.native
   /**
         * Returns a section of an ArrayBuffer.
         */

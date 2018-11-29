@@ -742,6 +742,13 @@ object MediaPackageNs extends js.Object {
   
   trait SpekeKeyProvider extends js.Object {
     /**
+         * An Amazon Resource Name (ARN) of a Certificate Manager certificate
+    that MediaPackage will use for enforcing secure end-to-end data
+    transfer with the key provider service.
+    
+         */
+    var CertificateArn: js.UndefOr[__string] = js.undefined
+    /**
          * The resource ID to include in key requests.
          */
     var ResourceId: __string

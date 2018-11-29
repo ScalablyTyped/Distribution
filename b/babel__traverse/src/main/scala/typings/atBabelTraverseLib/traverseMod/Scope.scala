@@ -43,7 +43,7 @@ class Scope protected () extends js.Object {
   def getBindingIdentifier(name: java.lang.String): atBabelTypesLib.typesMod.Identifier = js.native
   def getBlockParent(): Scope = js.native
   def getData(key: java.lang.String): js.Any = js.native
-  def getFunctionParent(): Scope = js.native
+  def getFunctionParent(): Scope | scala.Null = js.native
   def getOwnBinding(name: java.lang.String): js.UndefOr[Binding] = js.native
   def getOwnBindingIdentifier(name: java.lang.String): atBabelTypesLib.typesMod.Identifier = js.native
   def getProgramParent(): Scope = js.native
@@ -73,7 +73,7 @@ class Scope protected () extends js.Object {
   def moveBindingTo(name: java.lang.String, scope: Scope): scala.Unit = js.native
   def parentHasBinding(name: java.lang.String): scala.Boolean = js.native
   def parentHasBinding(name: java.lang.String, noGlobals: scala.Boolean): scala.Boolean = js.native
-  def push(opts: js.Any): scala.Unit = js.native
+  def push(opts: atBabelTraverseLib.Anon_Init): scala.Unit = js.native
   def registerBinding(kind: java.lang.String, path: NodePath[Node]): scala.Unit = js.native
   def registerBinding(kind: java.lang.String, path: NodePath[Node], bindingPath: NodePath[Node]): scala.Unit = js.native
   def registerConstantViolation(path: NodePath[Node]): scala.Unit = js.native

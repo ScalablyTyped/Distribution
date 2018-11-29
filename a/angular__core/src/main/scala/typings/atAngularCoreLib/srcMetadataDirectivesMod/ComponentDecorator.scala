@@ -84,6 +84,67 @@ ScalablyTyped.runtime.Instantiable1[/* obj */ Component, Component] {
        *
        * ```
        *
+       * ### Preserving whitespace
+       *
+       * Removing whitespace can greatly reduce AOT-generated code size and speed up view creation.
+       * As of Angular 6, the default for `preserveWhitespaces` is false (whitespace is removed).
+       * To change the default setting for all components in your application, set
+       * the `preserveWhitespaces` option of the AOT compiler.
+       *
+       * By default, the AOT compiler removes whitespace characters as follows:
+       * * Trims all whitespaces at the beginning and the end of a template.
+       * * Removes whitespace-only text nodes. For example,
+       *
+       * ```
+       * <button>Action 1</button>  <button>Action 2</button>
+       * ```
+       *
+       * becomes:
+       *
+       * ```
+       * <button>Action 1</button><button>Action 2</button>
+       * ```
+       *
+       * * Replaces a series of whitespace characters in text nodes with a single space.
+       * For example, `<span>\n some text\n</span>` becomes `<span> some text </span>`.
+       * * Does NOT alter text nodes inside HTML tags such as `<pre>` or `<textarea>`,
+       * where whitespace characters are significant.
+       *
+       * Note that these transformations can influence DOM nodes layout, although impact
+       * should be minimal.
+       *
+       * You can override the default behavior to preserve whitespace characters
+       * in certain fragments of a template. For example, you can exclude an entire
+       * DOM sub-tree by using the `ngPreserveWhitespaces` attribute:
+       *
+       * ```html
+       * <div ngPreserveWhitespaces>
+       *     whitespaces are preserved here
+       *     <span>    and here </span>
+       * </div>
+       * ```
+       *
+       * You can force a single space to be preserved in a text node by using `&ngsp;`,
+       * which is replaced with a space character by Angular's template
+       * compiler:
+       *
+       * ```html
+       * <a>Spaces</a>&ngsp;<a>between</a>&ngsp;<a>links.</a>
+       * <!-->compiled to be equivalent to:</>
+       *  <a>Spaces</a> <a>between</a> <a>links.</a>
+       * ```
+       *
+       * Note that sequences of `&ngsp;` are still collapsed to just one space character when
+       * the `preserveWhitespaces` option is set to `false`.
+       *
+       * ```html
+       * <a>before</a>&ngsp;&ngsp;&ngsp;<a>after</a>
+       * <!-->compiled to be equivalent to:</>
+       *  <a>Spaces</a> <a>between</a> <a>links.</a>
+       * ```
+       *
+       * To preserve sequences of whitespace characters, use the
+       * `ngPreserveWhitespaces` attribute.
        *
        * @Annotation
        */

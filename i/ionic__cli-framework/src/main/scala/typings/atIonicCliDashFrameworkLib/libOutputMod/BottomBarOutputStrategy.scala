@@ -18,8 +18,10 @@ class BottomBarOutputStrategy protected ()
   val rawoutput: nodeLib.NodeJSNs.WritableStream = js.native
   /* CompleteClass */
   override val stream: nodeLib.NodeJSNs.WritableStream = js.native
+  def close(): scala.Unit = js.native
   /* CompleteClass */
   override def createTaskChain(): atIonicCliDashFrameworkLib.libTasksMod.TaskChain = js.native
   def get(): js.Any = js.native
+  def open(): scala.Unit = js.native
 }
 

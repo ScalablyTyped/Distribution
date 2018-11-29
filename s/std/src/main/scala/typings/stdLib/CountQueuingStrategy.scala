@@ -6,13 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait CountQueuingStrategy extends js.Object {
-  var highWaterMark: scala.Double
-  def size(): scala.Double
+trait CountQueuingStrategy
+  extends QueuingStrategy[js.Any] {
+  @JSName("highWaterMark")
+  var highWaterMark_CountQueuingStrategy: scala.Double
+  @JSName("size")
+  def size_MCountQueuingStrategy(chunk: js.Any): stdLib.stdLibNumbers.`1`
 }
 
 @JSGlobal("CountQueuingStrategy")
 @js.native
 object CountQueuingStrategy
-  extends ScalablyTyped.runtime.Instantiable1[/* strategy */ QueuingStrategy, CountQueuingStrategy]
+  extends ScalablyTyped.runtime.Instantiable1[/* options */ Anon_HighWaterMarkNumber, CountQueuingStrategy]
 

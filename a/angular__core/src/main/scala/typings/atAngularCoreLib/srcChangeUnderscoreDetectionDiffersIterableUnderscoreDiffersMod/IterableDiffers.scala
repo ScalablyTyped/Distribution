@@ -19,6 +19,7 @@ class IterableDiffers protected () extends js.Object {
 @JSImport("@angular/core/src/change_detection/differs/iterable_differs", "IterableDiffers")
 @js.native
 object IterableDiffers extends js.Object {
+  /** @nocollapse */
   var ngInjectableDef: scala.Nothing = js.native
   def create(
     factories: js.Array[

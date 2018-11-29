@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait WeakMap[K /* <: js.Object */, V] extends js.Object {
   @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
-  val toStringTag: stdLib.stdLibStrings.WeakMap
+  val toStringTag: java.lang.String
   def delete(key: K): scala.Boolean
   def get(key: K): js.UndefOr[V]
   def has(key: K): scala.Boolean

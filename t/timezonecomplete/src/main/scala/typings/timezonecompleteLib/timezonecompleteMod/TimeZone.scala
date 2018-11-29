@@ -22,13 +22,13 @@ object TimeZone extends js.Object {
        * @param name	Time zone name
        * @param dst	Adhere to Daylight Saving Time?
        */
-  /* private */ def _findOrCreate(name: js.Any, dst: js.Any): js.Any = js.native
-  /* private */ def _isOffsetString(s: js.Any): js.Any = js.native
+  var _findOrCreate: js.Any = js.native
+  var _isOffsetString: js.Any = js.native
   /**
        * Normalize a string so it can be used as a key for a
        * cache lookup
        */
-  /* private */ def _normalizeString(s: js.Any): js.Any = js.native
+  var _normalizeString: js.Any = js.native
   /**
        * The local time zone for a given date. Note that
        * the time zone varies with the date: amsterdam time for

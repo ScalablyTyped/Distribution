@@ -463,6 +463,49 @@ trait CloudFormation
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Returns information about a stack drift detection operation. A stack drift detection operation detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. A stack is considered to have drifted if one or more of its resources have drifted. For more information on stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to initiate a stack drift detection operation. DetectStackDrift returns a StackDriftDetectionId you can use to monitor the progress of the operation using DescribeStackDriftDetectionStatus. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources.
+     */
+  def describeStackDriftDetectionStatus(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackDriftDetectionStatusOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a stack drift detection operation. A stack drift detection operation detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. A stack is considered to have drifted if one or more of its resources have drifted. For more information on stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to initiate a stack drift detection operation. DetectStackDrift returns a StackDriftDetectionId you can use to monitor the progress of the operation using DescribeStackDriftDetectionStatus. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources.
+     */
+  def describeStackDriftDetectionStatus(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackDriftDetectionStatusOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackDriftDetectionStatusOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a stack drift detection operation. A stack drift detection operation detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. A stack is considered to have drifted if one or more of its resources have drifted. For more information on stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to initiate a stack drift detection operation. DetectStackDrift returns a StackDriftDetectionId you can use to monitor the progress of the operation using DescribeStackDriftDetectionStatus. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources.
+     */
+  def describeStackDriftDetectionStatus(
+    params: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackDriftDetectionStatusInput
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackDriftDetectionStatusOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a stack drift detection operation. A stack drift detection operation detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. A stack is considered to have drifted if one or more of its resources have drifted. For more information on stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to initiate a stack drift detection operation. DetectStackDrift returns a StackDriftDetectionId you can use to monitor the progress of the operation using DescribeStackDriftDetectionStatus. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources.
+     */
+  def describeStackDriftDetectionStatus(
+    params: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackDriftDetectionStatusInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackDriftDetectionStatusOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackDriftDetectionStatusOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Returns all stack related events for a specified stack in reverse chronological order. For more information about a stack's event history, go to Stacks in the AWS CloudFormation User Guide.  You can list events for stacks that have failed to create or have been deleted by specifying the unique stack identifier (stack ID). 
      */
   def describeStackEvents(): awsDashSdkLib.libRequestMod.Request[
@@ -583,6 +626,47 @@ trait CloudFormation
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where AWS CloudFormation detects configuration drift. For a given stack, there will be one StackResourceDrift for each stack resource that has been checked for drift. Resources that have not yet been checked for drift are not included. Resources that do not currently support drift detection are not checked, and so not included. For a list of resources that support drift detection, see Resources that Support Drift Detection. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all supported resources for a given stack.
+     */
+  def describeStackResourceDrifts(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackResourceDriftsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where AWS CloudFormation detects configuration drift. For a given stack, there will be one StackResourceDrift for each stack resource that has been checked for drift. Resources that have not yet been checked for drift are not included. Resources that do not currently support drift detection are not checked, and so not included. For a list of resources that support drift detection, see Resources that Support Drift Detection. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all supported resources for a given stack.
+     */
+  def describeStackResourceDrifts(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackResourceDriftsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackResourceDriftsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where AWS CloudFormation detects configuration drift. For a given stack, there will be one StackResourceDrift for each stack resource that has been checked for drift. Resources that have not yet been checked for drift are not included. Resources that do not currently support drift detection are not checked, and so not included. For a list of resources that support drift detection, see Resources that Support Drift Detection. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all supported resources for a given stack.
+     */
+  def describeStackResourceDrifts(params: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackResourceDriftsInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackResourceDriftsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where AWS CloudFormation detects configuration drift. For a given stack, there will be one StackResourceDrift for each stack resource that has been checked for drift. Resources that have not yet been checked for drift are not included. Resources that do not currently support drift detection are not checked, and so not included. For a list of resources that support drift detection, see Resources that Support Drift Detection. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all supported resources for a given stack.
+     */
+  def describeStackResourceDrifts(
+    params: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackResourceDriftsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackResourceDriftsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStackResourceDriftsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -747,6 +831,88 @@ trait CloudFormation
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DescribeStacksOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For each resource in the stack that supports drift detection, AWS CloudFormation compares the actual configuration of the resource with its expected template configuration. Only resource properties explicitly defined in the stack template are checked for drift. A stack is considered to have drifted if one or more of its resources differ from their expected template configurations. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to detect drift on all supported resources for a given stack, or DetectStackResourceDrift to detect drift on individual resources. For a list of stack resources that currently support drift detection, see Resources that Support Drift Detection.  DetectStackDrift can take up to several minutes, depending on the number of resources contained within the stack. Use DescribeStackDriftDetectionStatus to monitor the progress of a detect stack drift operation. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources. When detecting drift on a stack, AWS CloudFormation does not detect drift on any nested stacks belonging to that stack. Perform DetectStackDrift directly on the nested stack itself.
+     */
+  def detectStackDrift(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackDriftOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For each resource in the stack that supports drift detection, AWS CloudFormation compares the actual configuration of the resource with its expected template configuration. Only resource properties explicitly defined in the stack template are checked for drift. A stack is considered to have drifted if one or more of its resources differ from their expected template configurations. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to detect drift on all supported resources for a given stack, or DetectStackResourceDrift to detect drift on individual resources. For a list of stack resources that currently support drift detection, see Resources that Support Drift Detection.  DetectStackDrift can take up to several minutes, depending on the number of resources contained within the stack. Use DescribeStackDriftDetectionStatus to monitor the progress of a detect stack drift operation. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources. When detecting drift on a stack, AWS CloudFormation does not detect drift on any nested stacks belonging to that stack. Perform DetectStackDrift directly on the nested stack itself.
+     */
+  def detectStackDrift(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackDriftOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackDriftOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For each resource in the stack that supports drift detection, AWS CloudFormation compares the actual configuration of the resource with its expected template configuration. Only resource properties explicitly defined in the stack template are checked for drift. A stack is considered to have drifted if one or more of its resources differ from their expected template configurations. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to detect drift on all supported resources for a given stack, or DetectStackResourceDrift to detect drift on individual resources. For a list of stack resources that currently support drift detection, see Resources that Support Drift Detection.  DetectStackDrift can take up to several minutes, depending on the number of resources contained within the stack. Use DescribeStackDriftDetectionStatus to monitor the progress of a detect stack drift operation. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources. When detecting drift on a stack, AWS CloudFormation does not detect drift on any nested stacks belonging to that stack. Perform DetectStackDrift directly on the nested stack itself.
+     */
+  def detectStackDrift(params: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackDriftInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackDriftOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For each resource in the stack that supports drift detection, AWS CloudFormation compares the actual configuration of the resource with its expected template configuration. Only resource properties explicitly defined in the stack template are checked for drift. A stack is considered to have drifted if one or more of its resources differ from their expected template configurations. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to detect drift on all supported resources for a given stack, or DetectStackResourceDrift to detect drift on individual resources. For a list of stack resources that currently support drift detection, see Resources that Support Drift Detection.  DetectStackDrift can take up to several minutes, depending on the number of resources contained within the stack. Use DescribeStackDriftDetectionStatus to monitor the progress of a detect stack drift operation. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources. When detecting drift on a stack, AWS CloudFormation does not detect drift on any nested stacks belonging to that stack. Perform DetectStackDrift directly on the nested stack itself.
+     */
+  def detectStackDrift(
+    params: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackDriftInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackDriftOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackDriftOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about whether a resource's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. This information includes actual and expected property values for resources in which AWS CloudFormation detects drift. Only resource properties explicitly defined in the stack template are checked for drift. For more information about stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all resources in a given stack that support drift detection. Resources that do not currently support drift detection cannot be checked. For a list of resources that support drift detection, see Resources that Support Drift Detection.
+     */
+  def detectStackResourceDrift(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackResourceDriftOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about whether a resource's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. This information includes actual and expected property values for resources in which AWS CloudFormation detects drift. Only resource properties explicitly defined in the stack template are checked for drift. For more information about stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all resources in a given stack that support drift detection. Resources that do not currently support drift detection cannot be checked. For a list of resources that support drift detection, see Resources that Support Drift Detection.
+     */
+  def detectStackResourceDrift(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackResourceDriftOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackResourceDriftOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about whether a resource's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. This information includes actual and expected property values for resources in which AWS CloudFormation detects drift. Only resource properties explicitly defined in the stack template are checked for drift. For more information about stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all resources in a given stack that support drift detection. Resources that do not currently support drift detection cannot be checked. For a list of resources that support drift detection, see Resources that Support Drift Detection.
+     */
+  def detectStackResourceDrift(params: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackResourceDriftInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackResourceDriftOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about whether a resource's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. This information includes actual and expected property values for resources in which AWS CloudFormation detects drift. Only resource properties explicitly defined in the stack template are checked for drift. For more information about stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all resources in a given stack that support drift detection. Resources that do not currently support drift detection cannot be checked. For a list of resources that support drift detection, see Resources that Support Drift Detection.
+     */
+  def detectStackResourceDrift(
+    params: awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackResourceDriftInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackResourceDriftOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.DetectStackResourceDriftOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

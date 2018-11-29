@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashGaModMembers extends js.Object {
   val OutboundLink: reactLib.reactMod.ReactNs.ComponentClass[
-    OutboundLinkProps with reactLib.reactMod.ReactNs.HTMLProps[OutboundLinkProps], 
+    OutboundLinkProps with reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLAnchorElement], 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   val plugin: Plugin = js.native

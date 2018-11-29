@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Headers extends js.Object {
-  var headers: js.Any
+  var headers: js.UndefOr[js.Any] = js.undefined
 }
 

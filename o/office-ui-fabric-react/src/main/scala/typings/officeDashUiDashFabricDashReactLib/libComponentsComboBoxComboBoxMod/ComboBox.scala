@@ -13,23 +13,41 @@ class ComboBox protected ()
       IComboBoxState
     ] {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsComboBoxComboBoxDotTypesMod.IComboBoxProps) = this()
+  /** The input aspect of the comboBox */
   var _autofill: js.Any = js.native
   var _classNames: js.Any = js.native
+  /** The callout element */
   var _comboBoxMenu: js.Any = js.native
+  /** The wrapping div of the input and button */
   var _comboBoxWrapper: js.Any = js.native
+  /** Promise used when resolving the comboBox options */
   var _currentPromise: js.Any = js.native
+  /** The current visible value sent to the auto fill on render */
   var _currentVisibleValue: js.Any = js.native
+  /**
+       * Determines if we should be setting focus back to the input when the menu closes.
+       * The general rule of thumb is if the menu was launched via the keyboard focus should go back
+       * to the input, if it was dropped via the mouse focus should not be forced back to the input.
+       */
   var _focusInputAfterClose: js.Any = js.native
   /**
        * Get the correct value to pass to the input
        * to show to the user based off of the current props and state
-       * @returns { string } the value to pass to the input
+       * @returns the value to pass to the input
        */
   var _getVisibleValue: js.Any = js.native
+  /** Flag for when we get the first mouseMove */
   var _gotMouseMove: js.Any = js.native
   var _hasPendingValue: js.Any = js.native
+  /** The base id for the comboBox */
   var _id: js.Any = js.native
   var _isScrollIdle: js.Any = js.native
+  /** True if the most recent keydown event was for alt (option) or meta (command). */
+  var _lastKeyDownWasAltOrMeta: js.Any = js.native
+  /**
+       * After a character is inserted when autocomplete is true and allowFreeform is false,
+       * remember the task that will clear the pending string of characters.
+       */
   var _lastReadOnlyAutoCompleteChangeTimeoutId: js.Any = js.native
   var _lastTouchTimeoutId: js.Any = js.native
   var _onAfterClearPendingInfo: js.Any = js.native
@@ -89,9 +107,9 @@ class ComboBox protected ()
   /**
        * componentDidUpdate handler for the auto fill component
        *
-       * @param { string } defaultVisibleValue - the current defaultVisibleValue in the auto fill's componentDidUpdate
-       * @param { string } suggestedDisplayValue - the current suggestedDisplayValue in the auto fill's componentDidUpdate
-       * @returns { boolean } - should the full value of the input be selected?
+       * @param defaultVisibleValue - the current defaultVisibleValue in the auto fill's componentDidUpdate
+       * @param suggestedDisplayValue - the current suggestedDisplayValue in the auto fill's componentDidUpdate
+       * @returns - should the full value of the input be selected?
        * True if the defaultVisibleValue equals the suggestedDisplayValue, false otherwise
        */
   var _onShouldSelectFullInputValueInAutofillComponentDidUpdate: js.Any = js.native
@@ -99,13 +117,12 @@ class ComboBox protected ()
   /**
        * componentWillReceiveProps handler for the auto fill component
        * Checks/updates the iput value to set, if needed
-       * @param { IAutofillProps } defaultVisibleValue - the defaultVisibleValue that got passed
+       * @param defaultVisibleValue - the defaultVisibleValue that got passed
        *  in to the auto fill's componentWillReceiveProps
-       * @returns { string } - the updated value to set, if needed
+       * @returns - the updated value to set, if needed
        */
   var _onUpdateValueInAutofillWillReceiveProps: js.Any = js.native
   var _processingClearPendingInfo: js.Any = js.native
-  var _processingExpandCollapseKeyOnly: js.Any = js.native
   var _processingTouch: js.Any = js.native
   var _renderOption: js.Any = js.native
   var _root: js.Any = js.native
@@ -115,6 +132,7 @@ class ComboBox protected ()
        * and set the focused state
        */
   var _select: js.Any = js.native
+  /** The menu item element that is currently selected */
   var _selectedElement: js.Any = js.native
   /**
        * Given default selected key(s) and selected key(s), return the selected keys(s).
@@ -156,7 +174,7 @@ class ComboBox protected ()
        * looking for the next valid selectable index (e.g. skipping headings and dividers)
        * @param index - the index to get the next selectable index from
        * @param delta - optional delta to step by when finding the next index, defaults to 0
-       * @returns { number } - the next valid selectable index. If the new index is outside of the bounds,
+       * @returns - the next valid selectable index. If the new index is outside of the bounds,
        * it will snap to the edge of the options array. If delta == 0 and the given index is not selectable
        */
   /* private */ def _getNextSelectableIndex(index: js.Any, searchDirection: js.Any): js.Any = js.native
@@ -171,7 +189,7 @@ class ComboBox protected ()
        * Get the index of the option that is marked as selected
        * @param options - the comboBox options
        * @param selectedKeys - the known selected key to find
-       * @returns { number } - the index of the selected option, -1 if not found
+       * @returns - the index of the selected option, -1 if not found
        */
   /* private */ def _getSelectedIndices(options: js.Any, selectedKeys: js.Any): js.Any = js.native
   /**
@@ -185,10 +203,13 @@ class ComboBox protected ()
        * Is the index within the bounds of the array?
        * @param options - options to check if the index is valid for
        * @param index - the index to check
-       * @returns { boolean } - true if the index is valid for the given options, false otherwise
+       * @returns - true if the index is valid for the given options, false otherwise
        */
   /* private */ def _indexWithinBounds(options: js.Any, index: js.Any): js.Any = js.native
-  /* private */ def _isExpandCollapseKey(ev: js.Any): js.Any = js.native
+  /**
+       * Returns true if the key for the event is alt (Mac option) or meta (Mac command).
+       */
+  /* private */ def _isAltOrMeta(ev: js.Any): js.Any = js.native
   /**
        * If we are coming from a mouseOut:
        * there is no visible selected option.
@@ -211,7 +232,7 @@ class ComboBox protected ()
        * to select the item and also close the menu
        * @param index - the index of the item that was clicked
        */
-  /* private */ def _onItemClick(index: js.Any): js.Any = js.native
+  /* private */ def _onItemClick(item: js.Any): js.Any = js.native
   /* private */ def _onOptionMouseEnter(index: js.Any): js.Any = js.native
   /* private */ def _onOptionMouseMove(index: js.Any): js.Any = js.native
   /**
@@ -320,19 +341,19 @@ class ComboBox protected ()
        */
   def dismissMenu(): scala.Unit = js.native
   /**
-       * @inheritdoc
+       * {@inheritdoc}
        */
   def focus(): scala.Unit = js.native
   /**
-       * @inheritdoc
+       * {@inheritdoc}
        */
   def focus(shouldOpenOnFocus: js.UndefOr[scala.Nothing], useFocusAsync: scala.Boolean): scala.Unit = js.native
   /**
-       * @inheritdoc
+       * {@inheritdoc}
        */
   def focus(shouldOpenOnFocus: scala.Boolean): scala.Unit = js.native
   /**
-       * @inheritdoc
+       * {@inheritdoc}
        */
   def focus(shouldOpenOnFocus: scala.Boolean, useFocusAsync: scala.Boolean): scala.Unit = js.native
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait SSESpecification extends js.Object {
   /**
-       * Indicates whether server-side encryption is enabled (true) or disabled (false) on the table.
+       * Indicates whether server-side encryption is enabled (true) or disabled (false) on the table. If enabled (true), server-side encryption type is set to KMS. If disabled (false) or not specified, server-side encryption is set to AWS owned CMK.
        */
   var Enabled: js.UndefOr[SSEEnabled] = js.undefined
   /**
@@ -16,7 +16,7 @@ trait SSESpecification extends js.Object {
        */
   var KMSMasterKeyId: js.UndefOr[KMSMasterKeyId] = js.undefined
   /**
-       * Server-side encryption type:    AES256 - Server-side encryption which uses the AES256 algorithm.    KMS - Server-side encryption which uses AWS Key Management Service. (default)  
+       * Server-side encryption type:    AES256 - Server-side encryption which uses the AES256 algorithm (not applicable).    KMS - Server-side encryption which uses AWS Key Management Service. Key is stored in your account and is managed by AWS KMS (KMS charges apply).  
        */
   var SSEType: js.UndefOr[SSEType] = js.undefined
 }

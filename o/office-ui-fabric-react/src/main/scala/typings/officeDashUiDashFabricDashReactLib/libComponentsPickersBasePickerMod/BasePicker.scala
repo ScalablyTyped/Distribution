@@ -110,7 +110,7 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
     index: scala.Double
   ): scala.Unit = js.native
   /* protected */ def onSuggestionSelect(): scala.Unit = js.native
-  def refocusSuggestions(keyCode: atUifabricUtilitiesLib.libKeyCodesMod.KeyCodes): scala.Unit = js.native
+  def refocusSuggestions(keyCode: scala.Double): scala.Unit = js.native
   /* protected */ def removeItem(
     item: officeDashUiDashFabricDashReactLib.libComponentsPickersPickerItemDotTypesMod.IPickerItemProps[T]
   ): scala.Unit = js.native

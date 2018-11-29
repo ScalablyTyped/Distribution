@@ -11,6 +11,47 @@ trait MediaConvert
   @JSName("config")
   var config_MediaConvert: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.ClientConfiguration = js.native
   /**
+     * Associates an AWS Certificate Manager (ACM) Amazon Resource Name (ARN) with AWS Elemental MediaConvert.
+     */
+  def associateCertificate(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.AssociateCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates an AWS Certificate Manager (ACM) Amazon Resource Name (ARN) with AWS Elemental MediaConvert.
+     */
+  def associateCertificate(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.AssociateCertificateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.AssociateCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates an AWS Certificate Manager (ACM) Amazon Resource Name (ARN) with AWS Elemental MediaConvert.
+     */
+  def associateCertificate(params: awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.AssociateCertificateRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.AssociateCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates an AWS Certificate Manager (ACM) Amazon Resource Name (ARN) with AWS Elemental MediaConvert.
+     */
+  def associateCertificate(
+    params: awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.AssociateCertificateRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.AssociateCertificateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.AssociateCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Permanently remove a job from a queue. Once you have canceled a job, you can't start it again. You can't delete a running job.
      */
   def cancelJob(): awsDashSdkLib.libRequestMod.Request[
@@ -377,6 +418,47 @@ trait MediaConvert
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.DescribeEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes an association between the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert resource.
+     */
+  def disassociateCertificate(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.DisassociateCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes an association between the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert resource.
+     */
+  def disassociateCertificate(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.DisassociateCertificateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.DisassociateCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes an association between the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert resource.
+     */
+  def disassociateCertificate(params: awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.DisassociateCertificateRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.DisassociateCertificateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes an association between the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert resource.
+     */
+  def disassociateCertificate(
+    params: awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.DisassociateCertificateRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.DisassociateCertificateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.DisassociateCertificateResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

@@ -1,22 +1,22 @@
 organization := "com.scalablytyped"
 name := "easy-xapi-supertest"
-version := "1.0.0-b78bcd"
+version := "1.0.0-14ac3b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-69217a",
-  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-ffa116",
-  "com.scalablytyped" %%% "cookiejar" % "2.1-dt-20180910Z-994a6f",
-  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-673f92",
-  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-b9e3b3",
-  "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-f9ab87",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-dfa7aa",
-  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-8d9c98",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "superagent" % "3.8-dt-20180910Z-1e3b8e",
-  "com.scalablytyped" %%% "supertest" % "v2.0.1-dt-20180910Z-b2e5d4",
+  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-bbb8a6",
+  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-c1f383",
+  "com.scalablytyped" %%% "cookiejar" % "2.1-dt-20180910Z-815fd7",
+  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-1b16d7",
+  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-bec6af",
+  "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",
+  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-953de2",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "superagent" % "3.8-dt-20180910Z-683998",
+  "com.scalablytyped" %%% "supertest" % "v2.0.1-dt-20180910Z-828cec",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

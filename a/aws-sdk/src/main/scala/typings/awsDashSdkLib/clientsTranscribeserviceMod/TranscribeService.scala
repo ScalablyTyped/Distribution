@@ -52,23 +52,23 @@ trait TranscribeService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a previously submitted transcription job as well as any other generated results such as the transcription, models, and so on.
+     * Deletes a previously submitted transcription job along with any other generated results such as the transcription, models, and so on.
      */
   def deleteTranscriptionJob(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a previously submitted transcription job as well as any other generated results such as the transcription, models, and so on.
+     * Deletes a previously submitted transcription job along with any other generated results such as the transcription, models, and so on.
      */
   def deleteTranscriptionJob(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a previously submitted transcription job as well as any other generated results such as the transcription, models, and so on.
+     * Deletes a previously submitted transcription job along with any other generated results such as the transcription, models, and so on.
      */
   def deleteTranscriptionJob(
     params: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.DeleteTranscriptionJobRequest
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a previously submitted transcription job as well as any other generated results such as the transcription, models, and so on.
+     * Deletes a previously submitted transcription job along with any other generated results such as the transcription, models, and so on.
      */
   def deleteTranscriptionJob(
     params: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.DeleteTranscriptionJobRequest,

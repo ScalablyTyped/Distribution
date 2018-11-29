@@ -22,7 +22,7 @@ trait MonacoEditorProps extends MonacoEditorBaseProps {
   /**
      * Refer to Monaco interface {monaco.editor.IEditorConstructionOptions}.
      */
-  var options: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.editorNs.IEditorConstructionOptions] = js.undefined
+  var options: js.UndefOr[js.Any] = js.undefined
   /**
      * Value of the auto created model in the editor.
      * If you specify value property, the component behaves in controlled mode. Otherwise, it behaves in uncontrolled mode.

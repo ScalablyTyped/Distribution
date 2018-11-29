@@ -15,9 +15,9 @@ trait AutoCompleteProps
   ] = js.undefined
   var dataSource: js.UndefOr[js.Array[DataSourceItemType]] = js.undefined
   var defaultValue: js.UndefOr[antdLib.libSelectMod.SelectValue] = js.undefined
-  var onBlur: js.UndefOr[js.Function0[_]] = js.undefined
+  var onBlur: js.UndefOr[js.Function1[/* value */ antdLib.libSelectMod.SelectValue, scala.Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* value */ antdLib.libSelectMod.SelectValue, scala.Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function0[_]] = js.undefined
+  var onFocus: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[
     js.Function2[/* value */ antdLib.libSelectMod.SelectValue, /* option */ js.Object, _]
   ] = js.undefined

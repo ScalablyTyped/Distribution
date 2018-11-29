@@ -15,6 +15,7 @@ abstract class Injector ()
 object Injector extends js.Object {
   var NULL: atAngularCoreLib.srcDiInjectorMod.Injector = js.native
   var THROW_IF_NOT_FOUND: js.Object = js.native
+  /** @nocollapse */
   var ngInjectableDef: scala.Nothing = js.native
   def create(options: atAngularCoreLib.Anon_Name): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
   /**

@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcDiMod {
-  type InjectFlags = atAngularCoreLib.srcDiInjectorMod.InjectFlags
+  type InjectFlags = atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
 }

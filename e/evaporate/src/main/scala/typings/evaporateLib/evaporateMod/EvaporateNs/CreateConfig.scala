@@ -52,7 +52,7 @@ trait CreateConfig extends js.Object {
       /* file */ stdLib.File, 
       /* start */ scala.Double, 
       /* end */ scala.Double, 
-      stdLib.ReadableStream
+      stdLib.ReadableStream[_]
     ])
   ] = js.undefined
   var readableStreams: js.UndefOr[scala.Boolean] = js.undefined

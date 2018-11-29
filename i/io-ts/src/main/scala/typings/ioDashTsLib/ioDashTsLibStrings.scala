@@ -22,6 +22,9 @@ object ioDashTsLibStrings {
   sealed trait BooleanType extends js.Object
   
   @js.native
+  sealed trait Compact extends js.Object
+  
+  @js.native
   sealed trait DictionaryType extends js.Object
   
   @js.native
@@ -116,6 +119,7 @@ object ioDashTsLibStrings {
   def AnyType: AnyType = "AnyType".asInstanceOf[AnyType]
   def ArrayType: ArrayType = "ArrayType".asInstanceOf[ArrayType]
   def BooleanType: BooleanType = "BooleanType".asInstanceOf[BooleanType]
+  def Compact: Compact = "Compact".asInstanceOf[Compact]
   def DictionaryType: DictionaryType = "DictionaryType".asInstanceOf[DictionaryType]
   def Exact: Exact = "Exact".asInstanceOf[Exact]
   def ExactType: ExactType = "ExactType".asInstanceOf[ExactType]

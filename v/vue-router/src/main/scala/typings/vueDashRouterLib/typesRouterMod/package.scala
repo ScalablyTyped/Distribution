@@ -19,12 +19,13 @@ package object typesRouterMod {
     vueLib.typesOptionsMod.DefaultComputed, 
     vueLib.typesOptionsMod.DefaultProps
   ])
-  type NavigationGuard = js.Function3[
+  type ErrorHandler = js.Function1[/* err */ stdLib.Error, scala.Unit]
+  type NavigationGuard[V /* <: vueLib.typesVueMod.Vue */] = js.Function3[
     /* to */ Route, 
     /* from */ Route, 
     /* next */ js.Function1[
       /* to */ js.UndefOr[
-        RawLocation | vueDashRouterLib.vueDashRouterLibNumbers.`false` | (js.Function1[/* vm */ vueLib.typesVueMod.Vue, js.Any]) | scala.Unit
+        RawLocation | vueDashRouterLib.vueDashRouterLibNumbers.`false` | (js.Function1[/* vm */ V, js.Any]) | scala.Unit
       ], 
       scala.Unit
     ], 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait XPathNSResolver extends js.Object {
-  def lookupNamespaceURI(prefix: java.lang.String): java.lang.String
+  def lookupNamespaceURI(prefix: java.lang.String): java.lang.String | scala.Null
 }
 
 @JSGlobal("XPathNSResolver")

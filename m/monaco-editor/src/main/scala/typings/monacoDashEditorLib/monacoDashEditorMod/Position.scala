@@ -18,6 +18,27 @@ class Position protected () extends js.Object {
        */
   val lineNumber: scala.Double = js.native
   /**
+       * Derive a new position from this position.
+       *
+       * @param deltaLineNumber line number delta
+       * @param deltaColumn column delta
+       */
+  def delta(): Position = js.native
+  /**
+       * Derive a new position from this position.
+       *
+       * @param deltaLineNumber line number delta
+       * @param deltaColumn column delta
+       */
+  def delta(deltaLineNumber: scala.Double): Position = js.native
+  /**
+       * Derive a new position from this position.
+       *
+       * @param deltaLineNumber line number delta
+       * @param deltaColumn column delta
+       */
+  def delta(deltaLineNumber: scala.Double, deltaColumn: scala.Double): Position = js.native
+  /**
        * Test if this position equals other position
        */
   def equals(other: IPosition): scala.Boolean = js.native
@@ -31,6 +52,27 @@ class Position protected () extends js.Object {
        * If the two positions are equal, the result will be true.
        */
   def isBeforeOrEqual(other: IPosition): scala.Boolean = js.native
+  /**
+       * Create a new postion from this position.
+       *
+       * @param newLineNumber new line number
+       * @param newColumn new column
+       */
+  def `with`(): Position = js.native
+  /**
+       * Create a new postion from this position.
+       *
+       * @param newLineNumber new line number
+       * @param newColumn new column
+       */
+  def `with`(newLineNumber: scala.Double): Position = js.native
+  /**
+       * Create a new postion from this position.
+       *
+       * @param newLineNumber new line number
+       * @param newColumn new column
+       */
+  def `with`(newLineNumber: scala.Double, newColumn: scala.Double): Position = js.native
 }
 
 @JSImport("monaco-editor", "Position")

@@ -100,6 +100,14 @@ object SyntaxKind extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.SyntaxKind
   
   @js.native
+  sealed trait BigIntKeyword
+    extends typescriptLib.typescriptMod.tsNs.SyntaxKind
+  
+  @js.native
+  sealed trait BigIntLiteral
+    extends typescriptLib.typescriptMod.tsNs.SyntaxKind
+  
+  @js.native
   sealed trait BinaryExpression
     extends typescriptLib.typescriptMod.tsNs.SyntaxKind
   

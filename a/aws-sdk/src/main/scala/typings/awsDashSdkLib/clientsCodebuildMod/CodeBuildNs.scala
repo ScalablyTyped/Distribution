@@ -79,7 +79,7 @@ object CodeBuildNs extends js.Object {
          */
     var artifacts: js.UndefOr[BuildArtifacts] = js.undefined
     /**
-         * Whether the build has finished. True if completed; otherwise, false.
+         * Whether the build is complete. True if complete; otherwise, false.
          */
     var buildComplete: js.UndefOr[scala.Boolean] = js.undefined
     /**
@@ -95,7 +95,7 @@ object CodeBuildNs extends js.Object {
          */
     var currentPhase: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. This is expressed either as the CMK's Amazon Resource Name (ARN) or, if specified, the CMK's alias (using the format alias/alias-name ).
+         * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. This is expressed either as the Amazon Resource Name (ARN) of the CMK or, if specified, the CMK's alias (using the format alias/alias-name ).
          */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -111,7 +111,7 @@ object CodeBuildNs extends js.Object {
          */
     var id: js.UndefOr[NonEmptyString] = js.undefined
     /**
-         * The entity that started the build. Valid values include:   If AWS CodePipeline started the build, the pipeline's name (for example, codepipeline/my-demo-pipeline).   If an AWS Identity and Access Management (IAM) user started the build, the user's name (for example MyUserName).   If the Jenkins plugin for AWS CodeBuild started the build, the string CodeBuild-Jenkins-Plugin.  
+         * The entity that started the build. Valid values include:   If AWS CodePipeline started the build, the pipeline's name (for example, codepipeline/my-demo-pipeline).   If an AWS Identity and Access Management (IAM) user started the build, the user's name (for example, MyUserName).   If the Jenkins plugin for AWS CodeBuild started the build, the string CodeBuild-Jenkins-Plugin.  
          */
     var initiator: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -123,13 +123,17 @@ object CodeBuildNs extends js.Object {
          */
     var networkInterface: js.UndefOr[NetworkInterface] = js.undefined
     /**
-         * Information about all previous build phases that are completed and information about any current build phase that is not yet complete.
+         * Information about all previous build phases that are complete and information about any current build phase that is not yet complete.
          */
     var phases: js.UndefOr[BuildPhases] = js.undefined
     /**
          * The name of the AWS CodeBuild project.
          */
     var projectName: js.UndefOr[NonEmptyString] = js.undefined
+    /**
+         *  The number of minutes a build is allowed to be queued before it times out. 
+         */
+    var queuedTimeoutInMinutes: js.UndefOr[WrapperInt] = js.undefined
     /**
          *  An identifier for the version of this build's source code.     For AWS CodeCommit, GitHub, GitHub Enterprise, and BitBucket, the commit ID.     For AWS CodePipeline, the source revision provided by AWS CodePipeline.     For Amazon Simple Storage Service (Amazon S3), this does not apply.   
          */
@@ -139,7 +143,7 @@ object CodeBuildNs extends js.Object {
          */
     var secondaryArtifacts: js.UndefOr[BuildArtifactsList] = js.undefined
     /**
-         *  An array of ProjectSourceVersion objects. Each ProjectSourceVersion must be one of:    For AWS CodeCommit: the commit ID to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example pr/25). If a branch name is specified, the branch's HEAD commit ID will be used. If not specified, the default branch's HEAD commit ID will be used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID will be used. If not specified, the default branch's HEAD commit ID will be used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object representing the build input ZIP file to use.  
+         *  An array of ProjectSourceVersion objects. Each ProjectSourceVersion must be one of:    For AWS CodeCommit: the commit ID to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example, pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object that represents the build input ZIP file to use.  
          */
     var secondarySourceVersions: js.UndefOr[ProjectSecondarySourceVersions] = js.undefined
     /**
@@ -187,15 +191,15 @@ object CodeBuildNs extends js.Object {
          */
     var location: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The MD5 hash of the build artifact. You can use this hash along with a checksum tool to confirm both file integrity and authenticity.  This value is available only if the build project's packaging value is set to ZIP. 
+         * The MD5 hash of the build artifact. You can use this hash along with a checksum tool to confirm file integrity and authenticity.  This value is available only if the build project's packaging value is set to ZIP. 
          */
     var md5sum: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  If this flag is set, a name specified in the buildspec file overrides the artifact name. The name specified in a buildspec file is calculated at build time and uses the Shell Command Language. For example, you can append a date and time to your artifact name so that it is always unique. 
+         *  If this flag is set, a name specified in the build spec file overrides the artifact name. The name specified in a build spec file is calculated at build time and uses the Shell Command Language. For example, you can append a date and time to your artifact name so that it is always unique. 
          */
     var overrideArtifactName: js.UndefOr[WrapperBoolean] = js.undefined
     /**
-         * The SHA-256 hash of the build artifact. You can use this hash along with a checksum tool to confirm both file integrity and authenticity.  This value is available only if the build project's packaging value is set to ZIP. 
+         * The SHA-256 hash of the build artifact. You can use this hash along with a checksum tool to confirm file integrity and authenticity.  This value is available only if the build project's packaging value is set to ZIP. 
          */
     var sha256sum: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -227,11 +231,11 @@ object CodeBuildNs extends js.Object {
          */
     var endTime: js.UndefOr[Timestamp] = js.undefined
     /**
-         * The current status of the build phase. Valid values include:    FAILED: The build phase failed.    FAULT: The build phase faulted.    IN_PROGRESS: The build phase is still in progress.    STOPPED: The build phase stopped.    SUCCEEDED: The build phase succeeded.    TIMED_OUT: The build phase timed out.  
+         * The current status of the build phase. Valid values include:    FAILED: The build phase failed.    FAULT: The build phase faulted.    IN_PROGRESS: The build phase is still in progress.    QUEUED: The build has been submitted and is queued behind other submitted builds.    STOPPED: The build phase stopped.    SUCCEEDED: The build phase succeeded.    TIMED_OUT: The build phase timed out.  
          */
     var phaseStatus: js.UndefOr[StatusType] = js.undefined
     /**
-         * The name of the build phase. Valid values include:    BUILD: Core build activities typically occur in this build phase.    COMPLETED: The build has been completed.    DOWNLOAD_SOURCE: Source code is being downloaded in this build phase.    FINALIZING: The build process is completing in this build phase.    INSTALL: Installation activities typically occur in this build phase.    POST_BUILD: Post-build activities typically occur in this build phase.    PRE_BUILD: Pre-build activities typically occur in this build phase.    PROVISIONING: The build environment is being set up.    SUBMITTED: The build has been submitted.    UPLOAD_ARTIFACTS: Build output artifacts are being uploaded to the output location.  
+         * The name of the build phase. Valid values include:    BUILD: Core build activities typically occur in this build phase.    COMPLETED: The build has been completed.    DOWNLOAD_SOURCE: Source code is being downloaded in this build phase.    FINALIZING: The build process is completing in this build phase.    INSTALL: Installation activities typically occur in this build phase.    POST_BUILD: Post-build activities typically occur in this build phase.    PRE_BUILD: Pre-build activities typically occur in this build phase.    PROVISIONING: The build environment is being set up.    QUEUED: The build has been submitted and is queued behind other submitted builds.    SUBMITTED: The build has been submitted.    UPLOAD_ARTIFACTS: Build output artifacts are being uploaded to the output location.  
          */
     var phaseType: js.UndefOr[BuildPhaseType] = js.undefined
     /**
@@ -251,15 +255,15 @@ object CodeBuildNs extends js.Object {
   
   trait CloudWatchLogsConfig extends js.Object {
     /**
-         *  The group name of the Amazon CloudWatch Logs. For more information, see Working with Log Groups and Log Streams 
+         *  The group name of the logs in Amazon CloudWatch Logs. For more information, see Working with Log Groups and Log Streams. 
          */
     var groupName: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The current status of the Amazon CloudWatch Logs for a build project. Valid values are:    ENABLED: Amazon CloudWatch Logs are enabled for this build project.    DISABLED: Amazon CloudWatch Logs are not enabled for this build project.  
+         * The current status of the logs in Amazon CloudWatch Logs for a build project. Valid values are:    ENABLED: Amazon CloudWatch Logs are enabled for this build project.    DISABLED: Amazon CloudWatch Logs are not enabled for this build project.  
          */
     var status: LogsConfigStatusType
     /**
-         *  The prefix of the stream name of the Amazon CloudWatch Logs. For more information, see Working with Log Groups and Log Streams 
+         *  The prefix of the stream name of the Amazon CloudWatch Logs. For more information, see Working with Log Groups and Log Streams. 
          */
     var streamName: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -271,7 +275,7 @@ object CodeBuildNs extends js.Object {
          */
     var artifacts: ProjectArtifacts
     /**
-         * Set this to true to generate a publicly-accessible URL for your project's build badge.
+         * Set this to true to generate a publicly accessible URL for your project's build badge.
          */
     var badgeEnabled: js.UndefOr[WrapperBoolean] = js.undefined
     /**
@@ -283,7 +287,7 @@ object CodeBuildNs extends js.Object {
          */
     var description: js.UndefOr[ProjectDescription] = js.undefined
     /**
-         * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. You can specify either the CMK's Amazon Resource Name (ARN) or, if available, the CMK's alias (using the format alias/alias-name ).
+         * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
          */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -291,13 +295,17 @@ object CodeBuildNs extends js.Object {
          */
     var environment: ProjectEnvironment
     /**
-         *  Information about logs for the build project. Logs can be Amazon CloudWatch Logs, uploaded to a specified S3 bucket, or both. 
+         *  Information about logs for the build project. These can be logs in Amazon CloudWatch Logs, logs uploaded to a specified S3 bucket, or both. 
          */
     var logsConfig: js.UndefOr[LogsConfig] = js.undefined
     /**
          * The name of the build project.
          */
     var name: ProjectName
+    /**
+         *  The number of minutes a build is allowed to be queued before it times out. 
+         */
+    var queuedTimeoutInMinutes: js.UndefOr[TimeOut] = js.undefined
     /**
          *  An array of ProjectArtifacts objects. 
          */
@@ -319,7 +327,7 @@ object CodeBuildNs extends js.Object {
          */
     var tags: js.UndefOr[TagList] = js.undefined
     /**
-         * How long, in minutes, from 5 to 480 (8 hours), for AWS CodeBuild to wait until timing out any build that has not been marked as completed. The default is 60 minutes.
+         * How long, in minutes, from 5 to 480 (8 hours), for AWS CodeBuild to wait before it times out any build that has not been marked as completed. The default is 60 minutes.
          */
     var timeoutInMinutes: js.UndefOr[TimeOut] = js.undefined
     /**
@@ -339,7 +347,7 @@ object CodeBuildNs extends js.Object {
   
   trait CreateWebhookInput extends js.Object {
     /**
-         * A regular expression used to determine which branches in a repository are built when a webhook is triggered. If the name of a branch matches the regular expression, then it is built. If it doesn't match, then it is not. If branchFilter is empty, then all branches are built.
+         * A regular expression used to determine which repository branches are built when a webhook is triggered. If the name of a branch matches the regular expression, then it is built. If branchFilter is empty, then all branches are built.
          */
     var branchFilter: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -351,7 +359,7 @@ object CodeBuildNs extends js.Object {
   
   trait CreateWebhookOutput extends js.Object {
     /**
-         * Information about a webhook in GitHub that connects repository events to a build project in AWS CodeBuild.
+         * Information about a webhook that connects repository events to a build project in AWS CodeBuild.
          */
     var webhook: js.UndefOr[Webhook] = js.undefined
   }
@@ -429,7 +437,7 @@ object CodeBuildNs extends js.Object {
          */
     var `type`: js.UndefOr[EnvironmentVariableType] = js.undefined
     /**
-         * The value of the environment variable.  We strongly discourage using environment variables to store sensitive values, especially AWS secret key IDs and secret access keys. Environment variables can be displayed in plain text using tools such as the AWS CodeBuild console and the AWS Command Line Interface (AWS CLI). 
+         * The value of the environment variable.  We strongly discourage the use of environment variables to store sensitive values, especially AWS secret key IDs and secret access keys. Environment variables can be displayed in plain text using the AWS CodeBuild console and the AWS Command Line Interface (AWS CLI). 
          */
     var value: java.lang.String
   }
@@ -437,7 +445,7 @@ object CodeBuildNs extends js.Object {
   
   trait InvalidateProjectCacheInput extends js.Object {
     /**
-         * The name of the AWS CodeBuild build project that the cache will be reset for.
+         * The name of the AWS CodeBuild build project that the cache is reset for.
          */
     var projectName: NonEmptyString
   }
@@ -515,11 +523,11 @@ object CodeBuildNs extends js.Object {
          */
     var nextToken: js.UndefOr[NonEmptyString] = js.undefined
     /**
-         * The criterion to be used to list build project names. Valid values include:    CREATED_TIME: List the build project names based on when each build project was created.    LAST_MODIFIED_TIME: List the build project names based on when information about each build project was last changed.    NAME: List the build project names based on each build project's name.   Use sortOrder to specify in what order to list the build project names based on the preceding criteria.
+         * The criterion to be used to list build project names. Valid values include:    CREATED_TIME: List based on when each build project was created.    LAST_MODIFIED_TIME: List based on when information about each build project was last changed.    NAME: List based on each build project's name.   Use sortOrder to specify in what order to list the build project names based on the preceding criteria.
          */
     var sortBy: js.UndefOr[ProjectSortByType] = js.undefined
     /**
-         * The order in which to list build projects. Valid values include:    ASCENDING: List the build project names in ascending order.    DESCENDING: List the build project names in descending order.   Use sortBy to specify the criterion to be used to list build project names.
+         * The order in which to list build projects. Valid values include:    ASCENDING: List in ascending order.    DESCENDING: List in descending order.   Use sortBy to specify the criterion to be used to list build project names.
          */
     var sortOrder: js.UndefOr[SortOrderType] = js.undefined
   }
@@ -563,7 +571,7 @@ object CodeBuildNs extends js.Object {
          */
     var groupName: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  The URL to an individual build log in an S3 bucket. 
+         *  The URL to a build log in an S3 bucket. 
          */
     var s3DeepLink: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -591,7 +599,7 @@ object CodeBuildNs extends js.Object {
   
   trait PhaseContext extends js.Object {
     /**
-         * An explanation of the build phase's context. This explanation might include a command ID and an exit code.
+         * An explanation of the build phase's context. This might include a command ID and an exit code.
          */
     var message: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -627,7 +635,7 @@ object CodeBuildNs extends js.Object {
          */
     var description: js.UndefOr[ProjectDescription] = js.undefined
     /**
-         * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. This is expressed either as the CMK's Amazon Resource Name (ARN) or, if specified, the CMK's alias (using the format alias/alias-name ).
+         * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. This is expressed either as the Amazon Resource Name (ARN) of the CMK or, if specified, the CMK's alias (using the format alias/alias-name ).
          */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -639,13 +647,17 @@ object CodeBuildNs extends js.Object {
          */
     var lastModified: js.UndefOr[Timestamp] = js.undefined
     /**
-         *  Information about logs for the build project. A project can create Amazon CloudWatch Logs, logs in an S3 bucket, or both. 
+         *  Information about logs for the build project. A project can create logs in Amazon CloudWatch Logs, an S3 bucket, or both. 
          */
     var logsConfig: js.UndefOr[LogsConfig] = js.undefined
     /**
          * The name of the build project.
          */
     var name: js.UndefOr[ProjectName] = js.undefined
+    /**
+         *  The number of minutes a build is allowed to be queued before it times out. 
+         */
+    var queuedTimeoutInMinutes: js.UndefOr[TimeOut] = js.undefined
     /**
          *  An array of ProjectArtifacts objects. 
          */
@@ -671,11 +683,11 @@ object CodeBuildNs extends js.Object {
          */
     var timeoutInMinutes: js.UndefOr[TimeOut] = js.undefined
     /**
-         * Information about the VPC configuration that AWS CodeBuild will access.
+         * Information about the VPC configuration that AWS CodeBuild accesses.
          */
     var vpcConfig: js.UndefOr[VpcConfig] = js.undefined
     /**
-         * Information about a webhook in GitHub that connects repository events to a build project in AWS CodeBuild.
+         * Information about a webhook that connects repository events to a build project in AWS CodeBuild.
          */
     var webhook: js.UndefOr[Webhook] = js.undefined
   }
@@ -687,35 +699,35 @@ object CodeBuildNs extends js.Object {
          */
     var artifactIdentifier: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  Set to true if you do not want your output artifacts encrypted. This option is only valid if your artifacts type is Amazon S3. If this is set with another artifacts type, an invalidInputException will be thrown. 
+         *  Set to true if you do not want your output artifacts encrypted. This option is valid only if your artifacts type is Amazon Simple Storage Service (Amazon S3). If this is set with another artifacts type, an invalidInputException is thrown. 
          */
     var encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined
     /**
-         * Information about the build output artifact location, as follows:   If type is set to CODEPIPELINE, then AWS CodePipeline will ignore this value if specified. This is because AWS CodePipeline manages its build output locations instead of AWS CodeBuild.   If type is set to NO_ARTIFACTS, then this value will be ignored if specified, because no build output will be produced.   If type is set to S3, this is the name of the output bucket.  
+         * Information about the build output artifact location:   If type is set to CODEPIPELINE, AWS CodePipeline ignores this value if specified. This is because AWS CodePipeline manages its build output locations instead of AWS CodeBuild.   If type is set to NO_ARTIFACTS, this value is ignored if specified, because no build output is produced.   If type is set to S3, this is the name of the output bucket.  
          */
     var location: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * Along with path and namespaceType, the pattern that AWS CodeBuild will use to name and store the output artifact, as follows:   If type is set to CODEPIPELINE, then AWS CodePipeline will ignore this value if specified. This is because AWS CodePipeline manages its build output names instead of AWS CodeBuild.   If type is set to NO_ARTIFACTS, then this value will be ignored if specified, because no build output will be produced.   If type is set to S3, this is the name of the output artifact object. If you set the name to be a forward slash ("/"), then the artifact is stored in the root of the output bucket.   For example:    If path is set to MyArtifacts, namespaceType is set to BUILD_ID, and name is set to MyArtifact.zip, then the output artifact would be stored in MyArtifacts/build-ID/MyArtifact.zip.     If path is empty, namespaceType is set to NONE, and name is set to "/", then the output artifact would be stored in the root of the output bucket.     If path is set to MyArtifacts, namespaceType is set to BUILD_ID, and name is set to "/", then the output artifact would be stored in MyArtifacts/build-ID .   
+         * Along with path and namespaceType, the pattern that AWS CodeBuild uses to name and store the output artifact:   If type is set to CODEPIPELINE, AWS CodePipeline ignores this value if specified. This is because AWS CodePipeline manages its build output names instead of AWS CodeBuild.   If type is set to NO_ARTIFACTS, this value is ignored if specified, because no build output is produced.   If type is set to S3, this is the name of the output artifact object. If you set the name to be a forward slash ("/"), the artifact is stored in the root of the output bucket.   For example:    If path is set to MyArtifacts, namespaceType is set to BUILD_ID, and name is set to MyArtifact.zip, then the output artifact is stored in MyArtifacts/build-ID/MyArtifact.zip.     If path is empty, namespaceType is set to NONE, and name is set to "/", the output artifact is stored in the root of the output bucket.     If path is set to MyArtifacts, namespaceType is set to BUILD_ID, and name is set to "/", the output artifact is stored in MyArtifacts/build-ID .   
          */
     var name: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * Along with path and name, the pattern that AWS CodeBuild will use to determine the name and location to store the output artifact, as follows:   If type is set to CODEPIPELINE, then AWS CodePipeline will ignore this value if specified. This is because AWS CodePipeline manages its build output names instead of AWS CodeBuild.   If type is set to NO_ARTIFACTS, then this value will be ignored if specified, because no build output will be produced.   If type is set to S3, then valid values include:    BUILD_ID: Include the build ID in the location of the build output artifact.    NONE: Do not include the build ID. This is the default if namespaceType is not specified.     For example, if path is set to MyArtifacts, namespaceType is set to BUILD_ID, and name is set to MyArtifact.zip, then the output artifact would be stored in MyArtifacts/build-ID/MyArtifact.zip.
+         * Along with path and name, the pattern that AWS CodeBuild uses to determine the name and location to store the output artifact:   If type is set to CODEPIPELINE, AWS CodePipeline ignores this value if specified. This is because AWS CodePipeline manages its build output names instead of AWS CodeBuild.   If type is set to NO_ARTIFACTS, this value is ignored if specified, because no build output is produced.   If type is set to S3, valid values include:    BUILD_ID: Include the build ID in the location of the build output artifact.    NONE: Do not include the build ID. This is the default if namespaceType is not specified.     For example, if path is set to MyArtifacts, namespaceType is set to BUILD_ID, and name is set to MyArtifact.zip, the output artifact is stored in MyArtifacts/build-ID/MyArtifact.zip.
          */
     var namespaceType: js.UndefOr[ArtifactNamespace] = js.undefined
     /**
-         *  If this flag is set, a name specified in the buildspec file overrides the artifact name. The name specified in a buildspec file is calculated at build time and uses the Shell Command Language. For example, you can append a date and time to your artifact name so that it is always unique. 
+         *  If this flag is set, a name specified in the build spec file overrides the artifact name. The name specified in a build spec file is calculated at build time and uses the Shell Command Language. For example, you can append a date and time to your artifact name so that it is always unique. 
          */
     var overrideArtifactName: js.UndefOr[WrapperBoolean] = js.undefined
     /**
-         * The type of build output artifact to create, as follows:   If type is set to CODEPIPELINE, then AWS CodePipeline will ignore this value if specified. This is because AWS CodePipeline manages its build output artifacts instead of AWS CodeBuild.   If type is set to NO_ARTIFACTS, then this value will be ignored if specified, because no build output will be produced.   If type is set to S3, valid values include:    NONE: AWS CodeBuild will create in the output bucket a folder containing the build output. This is the default if packaging is not specified.    ZIP: AWS CodeBuild will create in the output bucket a ZIP file containing the build output.    
+         * The type of build output artifact to create:   If type is set to CODEPIPELINE, AWS CodePipeline ignores this value if specified. This is because AWS CodePipeline manages its build output artifacts instead of AWS CodeBuild.   If type is set to NO_ARTIFACTS, this value is ignored if specified, because no build output is produced.   If type is set to S3, valid values include:    NONE: AWS CodeBuild creates in the output bucket a folder that contains the build output. This is the default if packaging is not specified.    ZIP: AWS CodeBuild creates in the output bucket a ZIP file that contains the build output.    
          */
     var packaging: js.UndefOr[ArtifactPackaging] = js.undefined
     /**
-         * Along with namespaceType and name, the pattern that AWS CodeBuild will use to name and store the output artifact, as follows:   If type is set to CODEPIPELINE, then AWS CodePipeline will ignore this value if specified. This is because AWS CodePipeline manages its build output names instead of AWS CodeBuild.   If type is set to NO_ARTIFACTS, then this value will be ignored if specified, because no build output will be produced.   If type is set to S3, this is the path to the output artifact. If path is not specified, then path will not be used.   For example, if path is set to MyArtifacts, namespaceType is set to NONE, and name is set to MyArtifact.zip, then the output artifact would be stored in the output bucket at MyArtifacts/MyArtifact.zip.
+         * Along with namespaceType and name, the pattern that AWS CodeBuild uses to name and store the output artifact:   If type is set to CODEPIPELINE, AWS CodePipeline ignores this value if specified. This is because AWS CodePipeline manages its build output names instead of AWS CodeBuild.   If type is set to NO_ARTIFACTS, this value is ignored if specified, because no build output is produced.   If type is set to S3, this is the path to the output artifact. If path is not specified, path is not used.   For example, if path is set to MyArtifacts, namespaceType is set to NONE, and name is set to MyArtifact.zip, the output artifact is stored in the output bucket at MyArtifacts/MyArtifact.zip.
          */
     var path: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The type of build output artifact. Valid values include:    CODEPIPELINE: The build project will have build output generated through AWS CodePipeline.    NO_ARTIFACTS: The build project will not produce any build output.    S3: The build project will store build output in Amazon Simple Storage Service (Amazon S3).  
+         * The type of build output artifact. Valid values include:    CODEPIPELINE: The build project has build output generated through AWS CodePipeline.    NO_ARTIFACTS: The build project does not produce any build output.    S3: The build project stores build output in Amazon Simple Storage Service (Amazon S3).  
          */
     var `type`: ArtifactsType
   }
@@ -723,11 +735,11 @@ object CodeBuildNs extends js.Object {
   
   trait ProjectBadge extends js.Object {
     /**
-         * Set this to true to generate a publicly-accessible URL for your project's build badge.
+         * Set this to true to generate a publicly accessible URL for your project's build badge.
          */
     var badgeEnabled: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * The publicly-accessible URL through which you can access the build badge for your project. 
+         * The publicly-accessible URL through which you can access the build badge for your project.  The publicly accessible URL through which you can access the build badge for your project. 
          */
     var badgeRequestUrl: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -735,11 +747,11 @@ object CodeBuildNs extends js.Object {
   
   trait ProjectCache extends js.Object {
     /**
-         * Information about the cache location, as follows:     NO_CACHE: This value will be ignored.    S3: This is the S3 bucket name/prefix.  
+         * Information about the cache location:     NO_CACHE: This value is ignored.    S3: This is the S3 bucket name/prefix.  
          */
     var location: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The type of cache used by the build project. Valid values include:    NO_CACHE: The build project will not use any cache.    S3: The build project will read and write from/to S3.  
+         * The type of cache used by the build project. Valid values include:    NO_CACHE: The build project does not use any cache.    S3: The build project reads and writes from and to S3.  
          */
     var `type`: CacheType
   }
@@ -751,7 +763,7 @@ object CodeBuildNs extends js.Object {
          */
     var certificate: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * Information about the compute resources the build project will use. Available values include:    BUILD_GENERAL1_SMALL: Use up to 3 GB memory and 2 vCPUs for builds.    BUILD_GENERAL1_MEDIUM: Use up to 7 GB memory and 4 vCPUs for builds.    BUILD_GENERAL1_LARGE: Use up to 15 GB memory and 8 vCPUs for builds.  
+         * Information about the compute resources the build project uses. Available values include:    BUILD_GENERAL1_SMALL: Use up to 3 GB memory and 2 vCPUs for builds.    BUILD_GENERAL1_MEDIUM: Use up to 7 GB memory and 4 vCPUs for builds.    BUILD_GENERAL1_LARGE: Use up to 15 GB memory and 8 vCPUs for builds.  
          */
     var computeType: ComputeType
     /**
@@ -763,7 +775,7 @@ object CodeBuildNs extends js.Object {
          */
     var image: NonEmptyString
     /**
-         * Enables running the Docker daemon inside a Docker container. Set to true only if the build project is be used to build Docker images, and the specified build environment image is not provided by AWS CodeBuild with Docker support. Otherwise, all associated builds that attempt to interact with the Docker daemon will fail. Note that you must also start the Docker daemon so that builds can interact with it. One way to do this is to initialize the Docker daemon during the install phase of your build spec by running the following build commands. (Do not run the following build commands if the specified build environment image is provided by AWS CodeBuild with Docker support.) If the operating system's base image is Ubuntu Linux:  - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay&amp; - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"  If the operating system's base image is Alpine Linux, add the -t argument to timeout:  - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay&amp; - timeout 15 -t sh -c "until docker info; do echo .; sleep 1; done" 
+         * Enables running the Docker daemon inside a Docker container. Set to true only if the build project is be used to build Docker images, and the specified build environment image is not provided by AWS CodeBuild with Docker support. Otherwise, all associated builds that attempt to interact with the Docker daemon fail. You must also start the Docker daemon so that builds can interact with it. One way to do this is to initialize the Docker daemon during the install phase of your build spec by running the following build commands. (Do not run these commands if the specified build environment image is provided by AWS CodeBuild with Docker support.) If the operating system's base image is Ubuntu Linux:  - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay&amp; - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"  If the operating system's base image is Alpine Linux, add the -t argument to timeout:  - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay&amp; - timeout 15 -t sh -c "until docker info; do echo .; sleep 1; done" 
          */
     var privilegedMode: js.UndefOr[WrapperBoolean] = js.undefined
     /**
@@ -791,11 +803,11 @@ object CodeBuildNs extends js.Object {
          */
     var insecureSsl: js.UndefOr[WrapperBoolean] = js.undefined
     /**
-         * Information about the location of the source code to be built. Valid values include:   For source code settings that are specified in the source action of a pipeline in AWS CodePipeline, location should not be specified. If it is specified, AWS CodePipeline will ignore it. This is because AWS CodePipeline uses the settings in a pipeline's source action instead of this value.   For source code in an AWS CodeCommit repository, the HTTPS clone URL to the repository that contains the source code and the build spec (for example, https://git-codecommit.region-ID.amazonaws.com/v1/repos/repo-name ).   For source code in an Amazon Simple Storage Service (Amazon S3) input bucket, the path to the ZIP file that contains the source code (for example,  bucket-name/path/to/object-name.zip)   For source code in a GitHub repository, the HTTPS clone URL to the repository that contains the source and the build spec. Also, you must connect your AWS account to your GitHub account. To do this, use the AWS CodeBuild console to begin creating a build project. When you use the console to connect (or reconnect) with GitHub, on the GitHub Authorize application page that displays, for Organization access, choose Request access next to each repository you want to allow AWS CodeBuild to have access to. Then choose Authorize application. (After you have connected to your GitHub account, you do not need to finish creating the build project, and you may then leave the AWS CodeBuild console.) To instruct AWS CodeBuild to then use this connection, in the source object, set the auth object's type value to OAUTH.   For source code in a Bitbucket repository, the HTTPS clone URL to the repository that contains the source and the build spec. Also, you must connect your AWS account to your Bitbucket account. To do this, use the AWS CodeBuild console to begin creating a build project. When you use the console to connect (or reconnect) with Bitbucket, on the Bitbucket Confirm access to your account page that displays, choose Grant access. (After you have connected to your Bitbucket account, you do not need to finish creating the build project, and you may then leave the AWS CodeBuild console.) To instruct AWS CodeBuild to then use this connection, in the source object, set the auth object's type value to OAUTH.  
+         * Information about the location of the source code to be built. Valid values include:   For source code settings that are specified in the source action of a pipeline in AWS CodePipeline, location should not be specified. If it is specified, AWS CodePipeline ignores it. This is because AWS CodePipeline uses the settings in a pipeline's source action instead of this value.   For source code in an AWS CodeCommit repository, the HTTPS clone URL to the repository that contains the source code and the build spec (for example, https://git-codecommit.region-ID.amazonaws.com/v1/repos/repo-name ).   For source code in an Amazon Simple Storage Service (Amazon S3) input bucket, one of the following.     The path to the ZIP file that contains the source code (for example,  bucket-name/path/to/object-name.zip).     The path to the folder that contains the source code (for example,  bucket-name/path/to/source-code/folder/).      For source code in a GitHub repository, the HTTPS clone URL to the repository that contains the source and the build spec. You must connect your AWS account to your GitHub account. Use the AWS CodeBuild console to start creating a build project. When you use the console to connect (or reconnect) with GitHub, on the GitHub Authorize application page, for Organization access, choose Request access next to each repository you want to allow AWS CodeBuild to have access to, and then choose Authorize application. (After you have connected to your GitHub account, you do not need to finish creating the build project. You can leave the AWS CodeBuild console.) To instruct AWS CodeBuild to use this connection, in the source object, set the auth object's type value to OAUTH.   For source code in a Bitbucket repository, the HTTPS clone URL to the repository that contains the source and the build spec. You must connect your AWS account to your Bitbucket account. Use the AWS CodeBuild console to start creating a build project. When you use the console to connect (or reconnect) with Bitbucket, on the Bitbucket Confirm access to your account page, choose Grant access. (After you have connected to your Bitbucket account, you do not need to finish creating the build project. You can leave the AWS CodeBuild console.) To instruct AWS CodeBuild to use this connection, in the source object, set the auth object's type value to OAUTH.  
          */
     var location: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  Set to true to report the status of a build's start and finish to your source provider. This option is only valid when your source provider is GitHub. If this is set and you use a different source provider, an invalidInputException is thrown. 
+         *  Set to true to report the status of a build's start and finish to your source provider. This option is valid only when your source provider is GitHub, GitHub Enterprise, or Bitbucket. If this is set and you use a different source provider, an invalidInputException is thrown. 
          */
     var reportBuildStatus: js.UndefOr[WrapperBoolean] = js.undefined
     /**
@@ -815,7 +827,7 @@ object CodeBuildNs extends js.Object {
          */
     var sourceIdentifier: java.lang.String
     /**
-         * The source version for the corresponding source identifier. If specified, must be one of:   For AWS CodeCommit: the commit ID to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example pr/25). If a branch name is specified, the branch's HEAD commit ID will be used. If not specified, the default branch's HEAD commit ID will be used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID will be used. If not specified, the default branch's HEAD commit ID will be used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object representing the build input ZIP file to use.  
+         * The source version for the corresponding source identifier. If specified, must be one of:   For AWS CodeCommit: the commit ID to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example, pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object that represents the build input ZIP file to use.  
          */
     var sourceVersion: java.lang.String
   }
@@ -903,7 +915,11 @@ object CodeBuildNs extends js.Object {
          */
     var projectName: NonEmptyString
     /**
-         *  Set to true to report to your source provider the status of a build's start and completion. If you use this option with a source provider other than GitHub, an invalidInputException is thrown. 
+         *  The number of minutes a build is allowed to be queued before it times out. 
+         */
+    var queuedTimeoutInMinutesOverride: js.UndefOr[TimeOut] = js.undefined
+    /**
+         *  Set to true to report to your source provider the status of a build's start and completion. If you use this option with a source provider other than GitHub, GitHub Enterprise, or Bitbucket, an invalidInputException is thrown. 
          */
     var reportBuildStatusOverride: js.UndefOr[WrapperBoolean] = js.undefined
     /**
@@ -927,15 +943,15 @@ object CodeBuildNs extends js.Object {
          */
     var sourceAuthOverride: js.UndefOr[SourceAuth] = js.undefined
     /**
-         * A location that overrides for this build the source location for the one defined in the build project.
+         * A location that overrides, for this build, the source location for the one defined in the build project.
          */
     var sourceLocationOverride: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * A source input type for this build that overrides the source input defined in the build project.
+         * A source input type, for this build, that overrides the source input defined in the build project.
          */
     var sourceTypeOverride: js.UndefOr[SourceType] = js.undefined
     /**
-         * A version of the build input to be built, for this build only. If not specified, the latest version will be used. If specified, must be one of:   For AWS CodeCommit: the commit ID to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example pr/25). If a branch name is specified, the branch's HEAD commit ID will be used. If not specified, the default branch's HEAD commit ID will be used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID will be used. If not specified, the default branch's HEAD commit ID will be used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object representing the build input ZIP file to use.  
+         * A version of the build input to be built, for this build only. If not specified, the latest version is used. If specified, must be one of:   For AWS CodeCommit: the commit ID to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object that represents the build input ZIP file to use.  
          */
     var sourceVersion: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -1102,11 +1118,11 @@ object CodeBuildNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateProjectOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, enables AWS CodeBuild to begin automatically rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds will be created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you will be billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
+       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
        */
     def createWebhook(): awsDashSdkLib.libRequestMod.Request[CreateWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, enables AWS CodeBuild to begin automatically rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds will be created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you will be billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
+       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
        */
     def createWebhook(
       callback: js.Function2[
@@ -1116,11 +1132,11 @@ object CodeBuildNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, enables AWS CodeBuild to begin automatically rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds will be created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you will be billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
+       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
        */
     def createWebhook(params: CreateWebhookInput): awsDashSdkLib.libRequestMod.Request[CreateWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, enables AWS CodeBuild to begin automatically rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds will be created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you will be billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
+       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
        */
     def createWebhook(
       params: CreateWebhookInput,
@@ -1160,11 +1176,11 @@ object CodeBuildNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteProjectOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, stops AWS CodeBuild from automatically rebuilding the source code every time a code change is pushed to the repository.
+       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
        */
     def deleteWebhook(): awsDashSdkLib.libRequestMod.Request[DeleteWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, stops AWS CodeBuild from automatically rebuilding the source code every time a code change is pushed to the repository.
+       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
        */
     def deleteWebhook(
       callback: js.Function2[
@@ -1174,11 +1190,11 @@ object CodeBuildNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, stops AWS CodeBuild from automatically rebuilding the source code every time a code change is pushed to the repository.
+       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
        */
     def deleteWebhook(params: DeleteWebhookInput): awsDashSdkLib.libRequestMod.Request[DeleteWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, stops AWS CodeBuild from automatically rebuilding the source code every time a code change is pushed to the repository.
+       * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
        */
     def deleteWebhook(
       params: DeleteWebhookInput,
@@ -1413,11 +1429,11 @@ object CodeBuildNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateProjectOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Updates the webhook associated with an AWS CodeBuild build project. 
+       *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
        */
     def updateWebhook(): awsDashSdkLib.libRequestMod.Request[UpdateWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Updates the webhook associated with an AWS CodeBuild build project. 
+       *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
        */
     def updateWebhook(
       callback: js.Function2[
@@ -1427,11 +1443,11 @@ object CodeBuildNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Updates the webhook associated with an AWS CodeBuild build project. 
+       *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
        */
     def updateWebhook(params: UpdateWebhookInput): awsDashSdkLib.libRequestMod.Request[UpdateWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Updates the webhook associated with an AWS CodeBuild build project. 
+       *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
        */
     def updateWebhook(
       params: UpdateWebhookInput,
@@ -1450,7 +1466,7 @@ object CodeBuildNs extends js.Object {
          */
     var artifacts: js.UndefOr[ProjectArtifacts] = js.undefined
     /**
-         * Set this to true to generate a publicly-accessible URL for your project's build badge.
+         * Set this to true to generate a publicly accessible URL for your project's build badge.
          */
     var badgeEnabled: js.UndefOr[WrapperBoolean] = js.undefined
     /**
@@ -1462,7 +1478,7 @@ object CodeBuildNs extends js.Object {
          */
     var description: js.UndefOr[ProjectDescription] = js.undefined
     /**
-         * The replacement AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. You can specify either the CMK's Amazon Resource Name (ARN) or, if available, the CMK's alias (using the format alias/alias-name ).
+         * The replacement AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. You can specify either the Amazon Resource Name (ARN)of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
          */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -1470,13 +1486,17 @@ object CodeBuildNs extends js.Object {
          */
     var environment: js.UndefOr[ProjectEnvironment] = js.undefined
     /**
-         *  Information about logs for the build project. A project can create Amazon CloudWatch Logs, logs in an S3 bucket, or both. 
+         *  Information about logs for the build project. A project can create logs in Amazon CloudWatch Logs, logs in an S3 bucket, or both. 
          */
     var logsConfig: js.UndefOr[LogsConfig] = js.undefined
     /**
          * The name of the build project.  You cannot change a build project's name. 
          */
     var name: NonEmptyString
+    /**
+         *  The number of minutes a build is allowed to be queued before it times out. 
+         */
+    var queuedTimeoutInMinutes: js.UndefOr[TimeOut] = js.undefined
     /**
          *  An array of ProjectSource objects. 
          */
@@ -1518,7 +1538,7 @@ object CodeBuildNs extends js.Object {
   
   trait UpdateWebhookInput extends js.Object {
     /**
-         * A regular expression used to determine which branches in a repository are built when a webhook is triggered. If the name of a branch matches the regular expression, then it is built. If it doesn't match, then it is not. If branchFilter is empty, then all branches are built.
+         * A regular expression used to determine which repository branches are built when a webhook is triggered. If the name of a branch matches the regular expression, then it is built. If branchFilter is empty, then all branches are built.
          */
     var branchFilter: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -1526,7 +1546,7 @@ object CodeBuildNs extends js.Object {
          */
     var projectName: ProjectName
     /**
-         *  A boolean value that specifies whether the associated repository's secret token should be updated. 
+         *  A boolean value that specifies whether the associated GitHub repository's secret token should be updated. If you use Bitbucket for your repository, rotateSecret is ignored. 
          */
     var rotateSecret: js.UndefOr[scala.Boolean] = js.undefined
   }
@@ -1558,19 +1578,19 @@ object CodeBuildNs extends js.Object {
   
   trait Webhook extends js.Object {
     /**
-         * A regular expression used to determine which branches in a repository are built when a webhook is triggered. If the name of a branch matches the regular expression, then it is built. If it doesn't match, then it is not. If branchFilter is empty, then all branches are built.
+         * A regular expression used to determine which repository branches are built when a webhook is triggered. If the name of a branch matches the regular expression, then it is built. If branchFilter is empty, then all branches are built.
          */
     var branchFilter: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  A timestamp indicating the last time a repository's secret token was modified. 
+         *  A timestamp that indicates the last time a repository's secret token was modified. 
          */
     var lastModifiedSecret: js.UndefOr[Timestamp] = js.undefined
     /**
-         *  The CodeBuild endpoint where webhook events are sent.
+         *  The AWS CodeBuild endpoint where webhook events are sent.
          */
     var payloadUrl: js.UndefOr[NonEmptyString] = js.undefined
     /**
-         *  The secret token of the associated repository. 
+         *  The secret token of the associated repository.    A Bitbucket webhook does not support secret.  
          */
     var secret: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -1586,7 +1606,7 @@ object CodeBuildNs extends js.Object {
   type Boolean = scala.Boolean
   type BuildArtifactsList = js.Array[BuildArtifacts]
   type BuildIds = js.Array[NonEmptyString]
-  type BuildPhaseType = awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED | awsDashSdkLib.awsDashSdkLibStrings.PROVISIONING | awsDashSdkLib.awsDashSdkLibStrings.DOWNLOAD_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.INSTALL | awsDashSdkLib.awsDashSdkLibStrings.PRE_BUILD | awsDashSdkLib.awsDashSdkLibStrings.BUILD | awsDashSdkLib.awsDashSdkLibStrings.POST_BUILD | awsDashSdkLib.awsDashSdkLibStrings.UPLOAD_ARTIFACTS | awsDashSdkLib.awsDashSdkLibStrings.FINALIZING | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | java.lang.String
+  type BuildPhaseType = awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED | awsDashSdkLib.awsDashSdkLibStrings.QUEUED | awsDashSdkLib.awsDashSdkLibStrings.PROVISIONING | awsDashSdkLib.awsDashSdkLibStrings.DOWNLOAD_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.INSTALL | awsDashSdkLib.awsDashSdkLibStrings.PRE_BUILD | awsDashSdkLib.awsDashSdkLibStrings.BUILD | awsDashSdkLib.awsDashSdkLibStrings.POST_BUILD | awsDashSdkLib.awsDashSdkLibStrings.UPLOAD_ARTIFACTS | awsDashSdkLib.awsDashSdkLibStrings.FINALIZING | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | java.lang.String
   type BuildPhases = js.Array[BuildPhase]
   type Builds = js.Array[Build]
   type BuildsNotDeleted = js.Array[BuildNotDeleted]
@@ -1602,7 +1622,7 @@ object CodeBuildNs extends js.Object {
   type GitCloneDepth = scala.Double
   type ImageVersions = js.Array[java.lang.String]
   type KeyInput = java.lang.String
-  type LanguageType = awsDashSdkLib.awsDashSdkLibStrings.JAVA | awsDashSdkLib.awsDashSdkLibStrings.PYTHON | awsDashSdkLib.awsDashSdkLibStrings.NODE_JS | awsDashSdkLib.awsDashSdkLibStrings.RUBY | awsDashSdkLib.awsDashSdkLibStrings.GOLANG | awsDashSdkLib.awsDashSdkLibStrings.DOCKER | awsDashSdkLib.awsDashSdkLibStrings.ANDROID | awsDashSdkLib.awsDashSdkLibStrings.DOTNET | awsDashSdkLib.awsDashSdkLibStrings.BASE | java.lang.String
+  type LanguageType = awsDashSdkLib.awsDashSdkLibStrings.JAVA | awsDashSdkLib.awsDashSdkLibStrings.PYTHON | awsDashSdkLib.awsDashSdkLibStrings.NODE_JS | awsDashSdkLib.awsDashSdkLibStrings.RUBY | awsDashSdkLib.awsDashSdkLibStrings.GOLANG | awsDashSdkLib.awsDashSdkLibStrings.DOCKER | awsDashSdkLib.awsDashSdkLibStrings.ANDROID | awsDashSdkLib.awsDashSdkLibStrings.DOTNET | awsDashSdkLib.awsDashSdkLibStrings.BASE | awsDashSdkLib.awsDashSdkLibStrings.PHP | java.lang.String
   type LogsConfigStatusType = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
   type NonEmptyString = java.lang.String
   type PhaseContexts = js.Array[PhaseContext]

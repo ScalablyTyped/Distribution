@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ISuggestionsCoreProps[T]
-  extends reactLib.reactMod.ReactNs.Props[js.Any] {
+  extends reactLib.reactMod.ReactNs.ClassAttributes[js.Any] {
   /**
        * Gets the component ref.
        */

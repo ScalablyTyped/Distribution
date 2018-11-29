@@ -32,7 +32,7 @@ trait BackupSummary extends js.Object {
        */
   var BackupStatus: js.UndefOr[BackupStatus] = js.undefined
   /**
-       * BackupType:    USER - On-demand backup created by you.    SYSTEM - On-demand backup automatically created by DynamoDB.  
+       * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.   
        */
   var BackupType: js.UndefOr[BackupType] = js.undefined
   /**

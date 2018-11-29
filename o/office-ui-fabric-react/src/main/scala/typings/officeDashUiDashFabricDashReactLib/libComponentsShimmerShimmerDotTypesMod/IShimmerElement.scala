@@ -18,7 +18,7 @@ trait IShimmerElement extends js.Object {
   var `type`: ShimmerElementType
   /**
        * The vertical alignemt of the element (ICircle, ILine).
-       * @default center
+       * @defaultvalue center
        */
   var verticalAlign: js.UndefOr[
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.top | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.center | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.bottom

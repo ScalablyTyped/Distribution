@@ -18,6 +18,7 @@ trait SvgIconProps
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.small | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.large
   ] = js.undefined
   var nativeColor: js.UndefOr[java.lang.String] = js.undefined
+  var shapeRendering: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var titleAccess: js.UndefOr[java.lang.String] = js.undefined
   var viewBox: js.UndefOr[java.lang.String] = js.undefined

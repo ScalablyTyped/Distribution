@@ -25,7 +25,7 @@ trait IBaseExtendedPickerProps[T] extends js.Object {
   var defaultSelectedItems: js.UndefOr[js.Array[T]] = js.undefined
   /**
        * Flag for disabling the picker.
-       * @default false
+       * @defaultvalue false
        */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -44,14 +44,14 @@ trait IBaseExtendedPickerProps[T] extends js.Object {
   var headerComponent: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   /**
        * Autofill input native props
-       * @default undefined
+       * @defaultvalue undefined
        */
   var inputProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.IInputProps
   ] = js.undefined
   /**
        * Restrict the amount of selectable items.
-       * @default undefined
+       * @defaultvalue undefined
        */
   var itemLimit: js.UndefOr[scala.Double] = js.undefined
   /**

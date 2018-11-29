@@ -49,6 +49,9 @@ object realmLibStrings {
   sealed trait admin extends js.Object
   
   @js.native
+  sealed trait adminToken extends js.Object
+  
+  @js.native
   sealed trait all extends js.Object
   
   @js.native
@@ -158,6 +161,7 @@ object realmLibStrings {
   def SWAP_IDENTITY: SWAP_IDENTITY = "SWAP_IDENTITY".asInstanceOf[SWAP_IDENTITY]
   def active: active = "active".asInstanceOf[active]
   def admin: admin = "admin".asInstanceOf[admin]
+  def adminToken: adminToken = "adminToken".asInstanceOf[adminToken]
   def all: all = "all".asInstanceOf[all]
   def any: any = "any".asInstanceOf[any]
   def bool: bool = "bool".asInstanceOf[bool]

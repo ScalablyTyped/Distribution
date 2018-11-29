@@ -1,21 +1,21 @@
 organization := "com.scalablytyped"
 name := "swagger-express-middleware"
-version := "1.x-dt-20181126Z-3fd151"
+version := "1.x-dt-20181126Z-8d29d1"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-69217a",
-  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-ffa116",
-  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-673f92",
-  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-b9e3b3",
-  "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-f9ab87",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-dfa7aa",
-  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-8d9c98",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "swagger-parser" % "4.x-dt-20180910Z-2f5e2f",
-  "com.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20181121Z-399299",
+  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-bbb8a6",
+  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-c1f383",
+  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-1b16d7",
+  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-bec6af",
+  "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",
+  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-953de2",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "swagger-parser" % "4.x-dt-20180910Z-898611",
+  "com.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20181121Z-54b5e0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

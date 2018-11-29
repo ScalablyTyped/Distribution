@@ -19,7 +19,6 @@ class ReadPreference protected () extends js.Object {
 @js.native
 object ReadPreference extends js.Object {
   var NEAREST: java.lang.String = js.native
-   // Max Secondary Read Stalleness in Seconds
   var PRIMARY: java.lang.String = js.native
   var PRIMARY_PREFERRED: java.lang.String = js.native
   var SECONDARY: java.lang.String = js.native

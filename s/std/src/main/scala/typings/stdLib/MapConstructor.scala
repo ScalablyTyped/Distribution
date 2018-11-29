@@ -11,7 +11,7 @@ trait MapConstructor
       (/* iterable */ Iterable[js.Tuple2[js.Object, js.Object]]) | (/* entries */ js.Array[js.Tuple2[js.Object, js.Object]]), 
       Map[js.Object, js.Object]
     ]
-     with ScalablyTyped.runtime.Instantiable0[Map[js.Object, js.Object]] {
+     with ScalablyTyped.runtime.Instantiable0[(Map[js.Any, js.Any]) | (Map[js.Object, js.Object])] {
   @JSName(ScalablyTyped.runtime.Symbol.species)
   val species: MapConstructor = js.native
 }

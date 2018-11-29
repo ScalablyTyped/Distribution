@@ -54,6 +54,10 @@ object CloudTrailNs extends js.Object {
          */
     var IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined
     /**
+         * Specifies whether the trail is created for all accounts in an organization in AWS Organizations, or only for the current AWS account. The default is false, and cannot be true unless the call is made on behalf of an AWS account that is the master account for an organization in AWS Organizations.
+         */
+    var IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined
+    /**
          * Specifies the KMS key ID to use to encrypt the logs delivered by CloudTrail. The value can be an alias name prefixed by "alias/", a fully specified ARN to an alias, a fully specified ARN to a key, or a globally unique identifier. Examples:   alias/MyAliasName   arn:aws:kms:us-east-2:123456789012:alias/MyAliasName   arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012   12345678-1234-1234-1234-123456789012  
          */
     var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
@@ -93,6 +97,10 @@ object CloudTrailNs extends js.Object {
          * Specifies whether the trail exists in one region or in all regions.
          */
     var IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Specifies whether the trail is an organization trail.
+         */
+    var IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined
     /**
          * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the format:  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
          */
@@ -153,7 +161,7 @@ object CloudTrailNs extends js.Object {
   
   trait DescribeTrailsRequest extends js.Object {
     /**
-         * Specifies whether to include shadow trails in the response. A shadow trail is the replication in a region of a trail that was created in a different region. The default is true.
+         * Specifies whether to include shadow trails in the response. A shadow trail is the replication in a region of a trail that was created in a different region, or in the case of an organization trail, the replication of an organization trail in member accounts. If you do not include shadow trails, organization trails in a member account and region replication trails will not be returned. The default is true.
          */
     var includeShadowTrails: js.UndefOr[scala.Boolean] = js.undefined
     /**
@@ -569,6 +577,10 @@ object CloudTrailNs extends js.Object {
          * Specifies whether the trail belongs only to one region or exists in all regions.
          */
     var IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Specifies whether the trail is an organization trail.
+         */
+    var IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined
     /**
          * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the format:  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
          */
@@ -1031,6 +1043,10 @@ object CloudTrailNs extends js.Object {
          */
     var IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined
     /**
+         * Specifies whether the trail is applied to all accounts in an organization in AWS Organizations, or only for the current AWS account. The default is false, and cannot be true unless the call is made on behalf of an AWS account that is the master account for an organization in AWS Organizations. If the trail is not an organization trail and this is set to true, the trail will be created in all AWS accounts that belong to the organization. If the trail is an organization trail and this is set to false, the trail will remain in the current AWS account but be deleted from all member accounts in the organization.
+         */
+    var IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined
+    /**
          * Specifies the KMS key ID to use to encrypt the logs delivered by CloudTrail. The value can be an alias name prefixed by "alias/", a fully specified ARN to an alias, a fully specified ARN to a key, or a globally unique identifier. Examples:   alias/MyAliasName   arn:aws:kms:us-east-2:123456789012:alias/MyAliasName   arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012   12345678-1234-1234-1234-123456789012  
          */
     var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
@@ -1070,6 +1086,10 @@ object CloudTrailNs extends js.Object {
          * Specifies whether the trail exists in one region or in all regions.
          */
     var IsMultiRegionTrail: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Specifies whether the trail is an organization trail.
+         */
+    var IsOrganizationTrail: js.UndefOr[scala.Boolean] = js.undefined
     /**
          * Specifies the KMS key ID that encrypts the logs delivered by CloudTrail. The value is a fully specified ARN to a KMS key in the format:  arn:aws:kms:us-east-2:123456789012:key/12345678-1234-1234-1234-123456789012 
          */

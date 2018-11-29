@@ -39,7 +39,7 @@ object namespaced extends js.Object {
        * @param {Realm.ObjectSchema} object schema describing the object that should be created.
        * @returns {T}
        */
-  def createTemplateObject[T](objectSchema: realmLib.RealmNs.ObjectSchema): T = js.native
+  def createTemplateObject[T](objectSchema: realmLib.RealmNs.ObjectSchema): T with realmLib.RealmNs.Object = js.native
   /**
        * Delete the Realm file for the given configuration.
        * @param {Configuration} config

@@ -33,14 +33,17 @@ object srcDiModMembers extends js.Object {
   def inject[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T | scala.Null = js.native
   def inject[T](
     token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T],
-    flags: atAngularCoreLib.srcDiInjectorMod.InjectFlags
+    flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
   ): T | scala.Null = js.native
   def inject[T](token: atAngularCoreLib.srcTypeMod.Type[T]): T | scala.Null = js.native
-  def inject[T](token: atAngularCoreLib.srcTypeMod.Type[T], flags: atAngularCoreLib.srcDiInjectorMod.InjectFlags): T | scala.Null = js.native
+  def inject[T](
+    token: atAngularCoreLib.srcTypeMod.Type[T],
+    flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
+  ): T | scala.Null = js.native
   @JSName("inject")
   def inject_TT[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T = js.native
   @JSName("inject")
   def inject_TT[T](token: atAngularCoreLib.srcTypeMod.Type[T]): T = js.native
-  def resolveForwardRef(`type`: js.Any): js.Any = js.native
+  def resolveForwardRef[T](`type`: T): T = js.native
 }
 

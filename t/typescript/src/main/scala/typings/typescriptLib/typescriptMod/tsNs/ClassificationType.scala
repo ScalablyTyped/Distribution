@@ -12,6 +12,10 @@ sealed trait ClassificationType extends js.Object
 @js.native
 object ClassificationType extends js.Object {
   @js.native
+  sealed trait bigintLiteral
+    extends typescriptLib.typescriptMod.tsNs.ClassificationType
+  
+  @js.native
   sealed trait className
     extends typescriptLib.typescriptMod.tsNs.ClassificationType
   

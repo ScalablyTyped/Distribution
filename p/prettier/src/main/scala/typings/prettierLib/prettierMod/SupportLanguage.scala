@@ -16,7 +16,7 @@ trait SupportLanguage extends js.Object {
   var group: js.UndefOr[java.lang.String] = js.undefined
   var linguistLanguageId: scala.Double
   var name: java.lang.String
-  var parsers: js.Array[java.lang.String]
+  var parsers: js.Array[BuiltInParserName] | js.Array[java.lang.String]
   var since: js.UndefOr[java.lang.String] = js.undefined
   var tmScope: java.lang.String
   var vscodeLanguageIds: js.Array[java.lang.String]

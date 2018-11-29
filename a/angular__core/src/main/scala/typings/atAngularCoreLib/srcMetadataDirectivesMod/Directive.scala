@@ -29,6 +29,7 @@ trait Directive extends js.Object {
        * class MainComponent {
        * }
        * ```
+       *
        */
   /**
        * The name or names that can be used in the template to assign this directive to a variable.
@@ -90,6 +91,7 @@ trait Directive extends js.Object {
        *   id: string;
        *
        * ```
+       *
        */
   var inputs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
@@ -130,6 +132,7 @@ trait Directive extends js.Object {
        * class MainComponent {
        * }
        * ```
+       *
        */
   /**
        * The set of event-bound output properties.

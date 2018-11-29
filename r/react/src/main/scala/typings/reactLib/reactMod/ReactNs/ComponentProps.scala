@@ -10,5 +10,5 @@ import scala.scalajs.js.annotation._
      * or ComponentPropsWithoutRef when refs are not supported.
      */
 
-trait ComponentProps[T /* <: java.lang.String */] extends js.Object
+trait ComponentProps[T /* <: ReactType[_] */] extends js.Object
 

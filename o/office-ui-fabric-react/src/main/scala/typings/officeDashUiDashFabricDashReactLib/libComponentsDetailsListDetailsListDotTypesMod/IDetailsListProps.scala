@@ -36,7 +36,7 @@ trait IDetailsListProps
   var checkboxCellClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Controls the visibility of selection check box.
-       * @default CheckboxVisibility.onHover
+       * @defaultvalue CheckboxVisibility.onHover
        */
   var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.undefined
   /** Optional class name to add to the root element. */
@@ -61,7 +61,7 @@ trait IDetailsListProps
   ] = js.undefined
   /**
        * If set to true and we provide an empty array, it will render 10 lines of whatever provided in onRenderMissingItem.
-       * @default false
+       * @defaultvalue false
        */
   var enableShimmer: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -108,7 +108,7 @@ trait IDetailsListProps
   var initialFocusedIndex: js.UndefOr[scala.Double] = js.undefined
   /**
        * Controls the visibility of the details header.
-       * @default true
+       * @defaultvalue true
        */
   var isHeaderVisible: js.UndefOr[scala.Boolean] = js.undefined
   /** The items to render. */
@@ -119,7 +119,7 @@ trait IDetailsListProps
   var listProps: js.UndefOr[officeDashUiDashFabricDashReactLib.libComponentsListListDotTypesMod.IListProps] = js.undefined
   /**
        * The minimum mouse move distance to interpret the action as drag event.
-       * @defaultValue 5
+       * @defaultvalue 5
        */
   var minimumPixelsForDrag: js.UndefOr[scala.Double] = js.undefined
   /** Callback for when an item in the list becomes active by clicking anywhere inside the row or navigating to it with keyboard. */
@@ -263,7 +263,7 @@ trait IDetailsListProps
   /**
        * By default, selection is cleared when clicking on an empty (non-focusable) section of the screen. Setting this value to true
        * overrides that behavior and maintains selection.
-       * @default false
+       * @defaultvalue false
        **/
   var selectionPreservedOnEmptyClick: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -289,12 +289,12 @@ trait IDetailsListProps
   /**
        * Boolean value to enable render page caching. This is an experimental performance optimization
        * that is off by default.
-       * @defaultValue false
+       * @defaultvalue false
        */
   var usePageCache: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Rerender DetailsRow only when props changed. Might cause regression when depending on external updates.
-       * @default false
+       * @defaultvalue false
        */
   var useReducedRowRenderer: js.UndefOr[scala.Boolean] = js.undefined
   /** Viewport, provided by the withViewport decorator. */

@@ -27,13 +27,13 @@ object KeytipTransitionModifier extends js.Object {
   sealed trait shift
     extends officeDashUiDashFabricDashReactLib.libUtilitiesKeytipsIKeytipTransitionKeyMod.KeytipTransitionModifier
   
-  /* 18 */ val alt: alt with scala.Double = js.native
-  /* 17 */ val ctrl: ctrl with scala.Double = js.native
-  /* 91 */ val meta: meta with scala.Double = js.native
-  /* 16 */ val shift: shift with scala.Double = js.native
+  val alt: alt with java.lang.String = js.native
+  val ctrl: ctrl with java.lang.String = js.native
+  val meta: meta with java.lang.String = js.native
+  val shift: shift with java.lang.String = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[
-    officeDashUiDashFabricDashReactLib.libUtilitiesKeytipsIKeytipTransitionKeyMod.KeytipTransitionModifier with scala.Double
+  def apply(value: java.lang.String): js.UndefOr[
+    officeDashUiDashFabricDashReactLib.libUtilitiesKeytipsIKeytipTransitionKeyMod.KeytipTransitionModifier with java.lang.String
   ] = js.native
 }
 

@@ -73,6 +73,7 @@ trait CompilerOptions
   var sourceMap: js.UndefOr[scala.Boolean] = js.undefined
   var sourceRoot: js.UndefOr[java.lang.String] = js.undefined
   var strict: js.UndefOr[scala.Boolean] = js.undefined
+  var strictBindCallApply: js.UndefOr[scala.Boolean] = js.undefined
   var strictFunctionTypes: js.UndefOr[scala.Boolean] = js.undefined
   var strictNullChecks: js.UndefOr[scala.Boolean] = js.undefined
   var strictPropertyInitialization: js.UndefOr[scala.Boolean] = js.undefined

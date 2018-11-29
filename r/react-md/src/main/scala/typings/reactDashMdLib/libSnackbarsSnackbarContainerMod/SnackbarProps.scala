@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait SnackbarProps
   extends reactDashMdLib.libMod.Props {
+  var autoFocusAction: js.UndefOr[scala.Boolean] = js.undefined
   var autohide: js.UndefOr[scala.Boolean] = js.undefined
   var autohideTimeout: js.UndefOr[scala.Double] = js.undefined
   var fab: js.UndefOr[js.Any] = js.undefined

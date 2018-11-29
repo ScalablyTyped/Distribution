@@ -27,8 +27,8 @@ object MessageBarType extends js.Object {
     extends officeDashUiDashFabricDashReactLib.libComponentsMessageBarMessageBarDotTypesMod.MessageBarType
   
   /**
-       * Deprecated at v0.48.0, to be removed at >= v1.0.0. Use 'blocked' instead.
-       * @deprecated
+       * Deprecated at v0.48.0, to be removed at \>= v1.0.0. Use `blocked` instead.
+       * @deprecated Use `blocked` instead.
        */
   @js.native
   sealed trait remove

@@ -37,7 +37,7 @@ trait IBaseSelectedItemsListProps[T]
   var onCopyItems: js.UndefOr[js.Function1[/* items */ js.Array[T], java.lang.String]] = js.undefined
   /**
        * A callback when an item is deleted
-       * @deprecated Please use onItemsDeleted
+       * @deprecated Use `onItemsDeleted` instead.
        */
   var onItemDeleted: js.UndefOr[js.Function1[/* deletedItem */ T, scala.Unit]] = js.undefined
   /**
@@ -56,7 +56,7 @@ trait IBaseSelectedItemsListProps[T]
   ] = js.undefined
   /**
        * Aria label for the 'X' button in the selected item component.
-       * @default ''
+       * @defaultvalue ''
        */
   var removeButtonAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**

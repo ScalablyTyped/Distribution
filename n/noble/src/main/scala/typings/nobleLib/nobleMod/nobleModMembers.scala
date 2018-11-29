@@ -24,6 +24,8 @@ object nobleModMembers extends js.Object {
     event: nobleLib.nobleLibStrings.stateChange,
     listener: js.Function1[/* state */ java.lang.String, scala.Unit]
   ): nodeLib.eventsMod.EventEmitter = js.native
+  def removeAllListeners(): nodeLib.eventsMod.EventEmitter = js.native
+  def removeAllListeners(event: java.lang.String): nodeLib.eventsMod.EventEmitter = js.native
   def removeListener(event: java.lang.String, listener: js.Function): nodeLib.eventsMod.EventEmitter = js.native
   @JSName("removeListener")
   def removeListener_discover(

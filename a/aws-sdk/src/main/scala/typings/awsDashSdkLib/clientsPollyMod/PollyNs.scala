@@ -726,7 +726,7 @@ object PollyNs extends js.Object {
   type DateTime = stdLib.Date
   type Gender = awsDashSdkLib.awsDashSdkLibStrings.Female | awsDashSdkLib.awsDashSdkLibStrings.Male | java.lang.String
   type IncludeAdditionalLanguageCodes = scala.Boolean
-  type LanguageCode = awsDashSdkLib.awsDashSdkLibStrings.`cmn-CN` | awsDashSdkLib.awsDashSdkLibStrings.`cy-GB` | awsDashSdkLib.awsDashSdkLibStrings.`da-DK` | awsDashSdkLib.awsDashSdkLibStrings.`de-DE` | awsDashSdkLib.awsDashSdkLibStrings.`en-AU` | awsDashSdkLib.awsDashSdkLibStrings.`en-GB` | awsDashSdkLib.awsDashSdkLibStrings.`en-GB-WLS` | awsDashSdkLib.awsDashSdkLibStrings.`en-IN` | awsDashSdkLib.awsDashSdkLibStrings.`en-US` | awsDashSdkLib.awsDashSdkLibStrings.`es-ES` | awsDashSdkLib.awsDashSdkLibStrings.`es-US` | awsDashSdkLib.awsDashSdkLibStrings.`fr-CA` | awsDashSdkLib.awsDashSdkLibStrings.`fr-FR` | awsDashSdkLib.awsDashSdkLibStrings.`is-IS` | awsDashSdkLib.awsDashSdkLibStrings.`it-IT` | awsDashSdkLib.awsDashSdkLibStrings.`ja-JP` | awsDashSdkLib.awsDashSdkLibStrings.`hi-IN` | awsDashSdkLib.awsDashSdkLibStrings.`ko-KR` | awsDashSdkLib.awsDashSdkLibStrings.`nb-NO` | awsDashSdkLib.awsDashSdkLibStrings.`nl-NL` | awsDashSdkLib.awsDashSdkLibStrings.`pl-PL` | awsDashSdkLib.awsDashSdkLibStrings.`pt-BR` | awsDashSdkLib.awsDashSdkLibStrings.`pt-PT` | awsDashSdkLib.awsDashSdkLibStrings.`ro-RO` | awsDashSdkLib.awsDashSdkLibStrings.`ru-RU` | awsDashSdkLib.awsDashSdkLibStrings.`sv-SE` | awsDashSdkLib.awsDashSdkLibStrings.`tr-TR` | java.lang.String
+  type LanguageCode = awsDashSdkLib.awsDashSdkLibStrings.`cmn-CN` | awsDashSdkLib.awsDashSdkLibStrings.`cy-GB` | awsDashSdkLib.awsDashSdkLibStrings.`da-DK` | awsDashSdkLib.awsDashSdkLibStrings.`de-DE` | awsDashSdkLib.awsDashSdkLibStrings.`en-AU` | awsDashSdkLib.awsDashSdkLibStrings.`en-GB` | awsDashSdkLib.awsDashSdkLibStrings.`en-GB-WLS` | awsDashSdkLib.awsDashSdkLibStrings.`en-IN` | awsDashSdkLib.awsDashSdkLibStrings.`en-US` | awsDashSdkLib.awsDashSdkLibStrings.`es-ES` | awsDashSdkLib.awsDashSdkLibStrings.`es-MX` | awsDashSdkLib.awsDashSdkLibStrings.`es-US` | awsDashSdkLib.awsDashSdkLibStrings.`fr-CA` | awsDashSdkLib.awsDashSdkLibStrings.`fr-FR` | awsDashSdkLib.awsDashSdkLibStrings.`is-IS` | awsDashSdkLib.awsDashSdkLibStrings.`it-IT` | awsDashSdkLib.awsDashSdkLibStrings.`ja-JP` | awsDashSdkLib.awsDashSdkLibStrings.`hi-IN` | awsDashSdkLib.awsDashSdkLibStrings.`ko-KR` | awsDashSdkLib.awsDashSdkLibStrings.`nb-NO` | awsDashSdkLib.awsDashSdkLibStrings.`nl-NL` | awsDashSdkLib.awsDashSdkLibStrings.`pl-PL` | awsDashSdkLib.awsDashSdkLibStrings.`pt-BR` | awsDashSdkLib.awsDashSdkLibStrings.`pt-PT` | awsDashSdkLib.awsDashSdkLibStrings.`ro-RO` | awsDashSdkLib.awsDashSdkLibStrings.`ru-RU` | awsDashSdkLib.awsDashSdkLibStrings.`sv-SE` | awsDashSdkLib.awsDashSdkLibStrings.`tr-TR` | java.lang.String
   type LanguageCodeList = js.Array[LanguageCode]
   type LanguageName = java.lang.String
   type LastModified = stdLib.Date
@@ -754,7 +754,7 @@ object PollyNs extends js.Object {
   type TaskStatusReason = java.lang.String
   type Text = java.lang.String
   type TextType = awsDashSdkLib.awsDashSdkLibStrings.ssml | awsDashSdkLib.awsDashSdkLibStrings.text | java.lang.String
-  type VoiceId = /* LimitUnionLength: was union type with length 55 */js.Any
+  type VoiceId = /* LimitUnionLength: was union type with length 58 */js.Any
   type VoiceList = js.Array[Voice]
   type VoiceName = java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-06-10` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String

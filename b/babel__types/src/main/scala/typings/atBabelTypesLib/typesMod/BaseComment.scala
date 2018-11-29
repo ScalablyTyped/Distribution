@@ -10,7 +10,7 @@ trait BaseComment extends js.Object {
   var end: scala.Double
   var loc: SourceLocation
   var start: scala.Double
-  var `type`: atBabelTypesLib.atBabelTypesLibStrings.BlockComment | atBabelTypesLib.atBabelTypesLibStrings.LineComment
+  var `type`: atBabelTypesLib.atBabelTypesLibStrings.CommentBlock | atBabelTypesLib.atBabelTypesLibStrings.CommentLine
   var value: java.lang.String
 }
 

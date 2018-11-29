@@ -14,12 +14,12 @@ trait IDropdownProps
   var defaultSelectedKeys: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double]] = js.undefined
   /**
        * Custom width for dropdown. If value is 0, width of the input field is used.
-       * @default 0
+       * @defaultvalue 0
        */
   var dropdownWidth: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Deprecated at v0.52.0, use 'disabled' instead.
-       * @deprecated
+       * Deprecated at v0.52.0, use `disabled` instead.
+       * @deprecated Use `disabled` instead.
        */
   var isDisabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -36,9 +36,14 @@ trait IDropdownProps
        * When multiple items are selected, this still will be used to separate values in
        * the dropdown title.
        *
-       * @defaultValue ", "
+       * @defaultvalue ", "
        */
   var multiSelectDelimiter: js.UndefOr[java.lang.String] = js.undefined
+  /**
+       * Optional preference to have onChanged still be called when an already selected item is
+       * clicked in single select mode.  Default to false
+       */
+  var notifyOnReselect: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Callback issued when the selected option changes.
        */
@@ -52,7 +57,7 @@ trait IDropdownProps
     ]
   ] = js.undefined
   /**
-       * @deprecated Use onChange instead.
+       * @deprecated Use `onChange` instead.
        */
   var onChanged: js.UndefOr[
     js.Function2[/* option */ IDropdownOption, /* index */ js.UndefOr[scala.Double], scala.Unit]
@@ -82,8 +87,15 @@ trait IDropdownProps
   var options_IDropdownProps: js.Array[IDropdownOption]
   /**
        * Input placeholder text. Displayed until option is selected.
+       * @deprecated Use `placeholder`
        */
   var placeHolder: js.UndefOr[java.lang.String] = js.undefined
+  /**
+       * Pass in ResponsiveMode to manually overwrite the way the Dropdown renders.
+       * ResponsiveMode.Large would, for instance, disable the behavior where Dropdown options
+       * get rendered into a Panel while ResponsiveMode.Small would result in the Dropdown
+       * options always getting rendered in a Panel.
+       */
   var responsiveMode: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
   ] = js.undefined

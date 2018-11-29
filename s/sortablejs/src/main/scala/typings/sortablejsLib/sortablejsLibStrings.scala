@@ -769,6 +769,9 @@ object sortablejsLibStrings {
   sealed trait scale extends js.Object
   
   @js.native
+  sealed trait scrollBehavior extends js.Object
+  
+  @js.native
   sealed trait stopColor extends js.Object
   
   @js.native
@@ -973,6 +976,9 @@ object sortablejsLibStrings {
   sealed trait webkitBoxPack extends js.Object
   
   @js.native
+  sealed trait webkitBoxShadow extends js.Object
+  
+  @js.native
   sealed trait webkitBoxSizing extends js.Object
   
   @js.native
@@ -1037,6 +1043,48 @@ object sortablejsLibStrings {
   
   @js.native
   sealed trait webkitJustifyContent extends js.Object
+  
+  @js.native
+  sealed trait webkitMask extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskBoxImage extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskBoxImageOutset extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskBoxImageRepeat extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskBoxImageSlice extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskBoxImageSource extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskBoxImageWidth extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskClip extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskComposite extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskImage extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskOrigin extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskPosition extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskRepeat extends js.Object
+  
+  @js.native
+  sealed trait webkitMaskSize extends js.Object
   
   @js.native
   sealed trait webkitOrder extends js.Object
@@ -1378,6 +1426,7 @@ object sortablejsLibStrings {
   def rubyOverhang: rubyOverhang = "rubyOverhang".asInstanceOf[rubyOverhang]
   def rubyPosition: rubyPosition = "rubyPosition".asInstanceOf[rubyPosition]
   def scale: scale = "scale".asInstanceOf[scale]
+  def scrollBehavior: scrollBehavior = "scrollBehavior".asInstanceOf[scrollBehavior]
   def stopColor: stopColor = "stopColor".asInstanceOf[stopColor]
   def stopOpacity: stopOpacity = "stopOpacity".asInstanceOf[stopOpacity]
   def stroke: stroke = "stroke".asInstanceOf[stroke]
@@ -1446,6 +1495,7 @@ object sortablejsLibStrings {
   def webkitBoxOrdinalGroup: webkitBoxOrdinalGroup = "webkitBoxOrdinalGroup".asInstanceOf[webkitBoxOrdinalGroup]
   def webkitBoxOrient: webkitBoxOrient = "webkitBoxOrient".asInstanceOf[webkitBoxOrient]
   def webkitBoxPack: webkitBoxPack = "webkitBoxPack".asInstanceOf[webkitBoxPack]
+  def webkitBoxShadow: webkitBoxShadow = "webkitBoxShadow".asInstanceOf[webkitBoxShadow]
   def webkitBoxSizing: webkitBoxSizing = "webkitBoxSizing".asInstanceOf[webkitBoxSizing]
   def webkitColumnBreakAfter: webkitColumnBreakAfter = "webkitColumnBreakAfter".asInstanceOf[webkitColumnBreakAfter]
   def webkitColumnBreakBefore: webkitColumnBreakBefore = "webkitColumnBreakBefore".asInstanceOf[webkitColumnBreakBefore]
@@ -1468,6 +1518,20 @@ object sortablejsLibStrings {
   def webkitFlexShrink: webkitFlexShrink = "webkitFlexShrink".asInstanceOf[webkitFlexShrink]
   def webkitFlexWrap: webkitFlexWrap = "webkitFlexWrap".asInstanceOf[webkitFlexWrap]
   def webkitJustifyContent: webkitJustifyContent = "webkitJustifyContent".asInstanceOf[webkitJustifyContent]
+  def webkitMask: webkitMask = "webkitMask".asInstanceOf[webkitMask]
+  def webkitMaskBoxImage: webkitMaskBoxImage = "webkitMaskBoxImage".asInstanceOf[webkitMaskBoxImage]
+  def webkitMaskBoxImageOutset: webkitMaskBoxImageOutset = "webkitMaskBoxImageOutset".asInstanceOf[webkitMaskBoxImageOutset]
+  def webkitMaskBoxImageRepeat: webkitMaskBoxImageRepeat = "webkitMaskBoxImageRepeat".asInstanceOf[webkitMaskBoxImageRepeat]
+  def webkitMaskBoxImageSlice: webkitMaskBoxImageSlice = "webkitMaskBoxImageSlice".asInstanceOf[webkitMaskBoxImageSlice]
+  def webkitMaskBoxImageSource: webkitMaskBoxImageSource = "webkitMaskBoxImageSource".asInstanceOf[webkitMaskBoxImageSource]
+  def webkitMaskBoxImageWidth: webkitMaskBoxImageWidth = "webkitMaskBoxImageWidth".asInstanceOf[webkitMaskBoxImageWidth]
+  def webkitMaskClip: webkitMaskClip = "webkitMaskClip".asInstanceOf[webkitMaskClip]
+  def webkitMaskComposite: webkitMaskComposite = "webkitMaskComposite".asInstanceOf[webkitMaskComposite]
+  def webkitMaskImage: webkitMaskImage = "webkitMaskImage".asInstanceOf[webkitMaskImage]
+  def webkitMaskOrigin: webkitMaskOrigin = "webkitMaskOrigin".asInstanceOf[webkitMaskOrigin]
+  def webkitMaskPosition: webkitMaskPosition = "webkitMaskPosition".asInstanceOf[webkitMaskPosition]
+  def webkitMaskRepeat: webkitMaskRepeat = "webkitMaskRepeat".asInstanceOf[webkitMaskRepeat]
+  def webkitMaskSize: webkitMaskSize = "webkitMaskSize".asInstanceOf[webkitMaskSize]
   def webkitOrder: webkitOrder = "webkitOrder".asInstanceOf[webkitOrder]
   def webkitPerspective: webkitPerspective = "webkitPerspective".asInstanceOf[webkitPerspective]
   def webkitPerspectiveOrigin: webkitPerspectiveOrigin = "webkitPerspectiveOrigin".asInstanceOf[webkitPerspectiveOrigin]

@@ -16,6 +16,8 @@ object guardsModMembers extends js.Object {
   def isAppAssociationResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
   def isAppResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
   def isAppsResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
+  def isAuthConnection(connection: js.Any): /* is AuthConnection */scala.Boolean = js.native
+  def isAuthConnectionResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
   def isBitbucketCloudRepoAssociation(association: js.Any): /* is BitbucketCloudRepoAssociation */scala.Boolean = js.native
   def isBitbucketServerRepoAssociation(association: js.Any): /* is BitbucketServerRepoAssociation */scala.Boolean = js.native
   def isCommand(cmd: js.Any): /* is ICommand */scala.Boolean = js.native
@@ -30,7 +32,7 @@ object guardsModMembers extends js.Object {
   def isIntegrationName(name: js.Any): /* is IntegrationName */scala.Boolean = js.native
   def isLogin(login: js.Any): /* is Login */scala.Boolean = js.native
   def isLoginResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
-  def isMultiProjectConfig(configFile: js.Any): /* is MultiProjectConfig */scala.Boolean = js.native
+  def isMultiProjectConfig(configFile: js.Any): /* is IMultiProjectConfig */scala.Boolean = js.native
   def isOAuthLogin(login: js.Any): /* is OAuthLogin */scala.Boolean = js.native
   def isOAuthLoginResponse(res: js.Any): /* is Response */scala.Boolean = js.native
   def isOrg(org: js.Any): /* is Org */scala.Boolean = js.native

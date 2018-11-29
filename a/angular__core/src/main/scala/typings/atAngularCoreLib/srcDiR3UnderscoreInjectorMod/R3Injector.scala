@@ -56,14 +56,14 @@ class R3Injector protected () extends js.Object {
   def get[T](
     token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T],
     notFoundValue: js.Any,
-    flags: atAngularCoreLib.srcDiInjectorMod.InjectFlags
+    flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
   ): T = js.native
   def get[T](token: atAngularCoreLib.srcTypeMod.Type[T]): T = js.native
   def get[T](token: atAngularCoreLib.srcTypeMod.Type[T], notFoundValue: js.Any): T = js.native
   def get[T](
     token: atAngularCoreLib.srcTypeMod.Type[T],
     notFoundValue: js.Any,
-    flags: atAngularCoreLib.srcDiInjectorMod.InjectFlags
+    flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
   ): T = js.native
 }
 

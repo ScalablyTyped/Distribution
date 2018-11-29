@@ -16,8 +16,9 @@ trait ICoachmarkStyleProps extends js.Object {
        */
   var beaconColorTwo: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Is the Coachmark collapsed.  Deprecated: use isCollapsed instead.
-       * @deprecated
+       * Is the Coachmark collapsed.
+       * Deprecated, use `isCollapsed` instead.
+       * @deprecated Use `isCollapsed` instead.
        */
   var collapsed: js.UndefOr[scala.Boolean] = js.undefined
   /**

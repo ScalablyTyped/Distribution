@@ -32,6 +32,6 @@ object zipperNs extends js.Object {
     /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
     fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libZipperMod.Zipper[js.Any]]
   ] = js.native
-  val zipper: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.libZipperMod.URI] with fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.libZipperMod.URI] with fpDashTsLib.libTraversableMod.Traversable1[fpDashTsLib.libZipperMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libZipperMod.URI] = js.native
+  val zipper: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.libZipperMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libZipperMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libZipperMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libZipperMod.URI] = js.native
 }
 

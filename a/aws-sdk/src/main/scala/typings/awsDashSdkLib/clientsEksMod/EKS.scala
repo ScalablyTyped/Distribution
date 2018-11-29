@@ -174,5 +174,105 @@ trait EKS
     awsDashSdkLib.clientsEksMod.EKSNs.ListClustersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
+  /**
+     * Waits for the clusterActive state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
+     */
+  @JSName("waitFor")
+  def waitFor_clusterActive(state: awsDashSdkLib.awsDashSdkLibStrings.clusterActive): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the clusterActive state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
+     */
+  @JSName("waitFor")
+  def waitFor_clusterActive(
+    state: awsDashSdkLib.awsDashSdkLibStrings.clusterActive,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the clusterActive state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
+     */
+  @JSName("waitFor")
+  def waitFor_clusterActive(
+    state: awsDashSdkLib.awsDashSdkLibStrings.clusterActive,
+    params: awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterRequest with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the clusterActive state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
+     */
+  @JSName("waitFor")
+  def waitFor_clusterActive(
+    state: awsDashSdkLib.awsDashSdkLibStrings.clusterActive,
+    params: awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterRequest with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the clusterDeleted state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
+     */
+  @JSName("waitFor")
+  def waitFor_clusterDeleted(state: awsDashSdkLib.awsDashSdkLibStrings.clusterDeleted): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the clusterDeleted state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
+     */
+  @JSName("waitFor")
+  def waitFor_clusterDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.clusterDeleted,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the clusterDeleted state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
+     */
+  @JSName("waitFor")
+  def waitFor_clusterDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.clusterDeleted,
+    params: awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterRequest with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the clusterDeleted state by periodically calling the underlying EKS.describeClusteroperation every 30 seconds (at most 40 times).
+     */
+  @JSName("waitFor")
+  def waitFor_clusterDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.clusterDeleted,
+    params: awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterRequest with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.DescribeClusterResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
 }
 

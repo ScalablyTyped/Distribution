@@ -17,7 +17,7 @@ trait Anon_Features[T] extends js.Object {
   /**
        * Function to create instances of content queries associated with a given directive.
        */
-  var contentQueries: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var contentQueries: js.UndefOr[js.Function1[/* directiveIndex */ scala.Double, scala.Unit]] = js.undefined
   /** Refreshes content queries associated with directives in a given view */
   var contentQueriesRefresh: js.UndefOr[
     js.Function2[/* directiveIndex */ scala.Double, /* queryIndex */ scala.Double, scala.Unit]
@@ -31,11 +31,11 @@ trait Anon_Features[T] extends js.Object {
   /**
        * Factory method used to create an instance of directive.
        */
-  var factory: js.Function0[T]
+  var factory: js.Function1[/* t */ atAngularCoreLib.srcTypeMod.Type[T] | scala.Null, T]
   /**
        * A list of optional features to apply.
        *
-       * See: {@link NgOnChangesFeature}, {@link PublicFeature}, {@link InheritDefinitionFeature}
+       * See: {@link NgOnChangesFeature}, {@link ProvidersFeature}, {@link InheritDefinitionFeature}
        */
   var features: js.UndefOr[js.Array[atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDefFeature]] = js.undefined
   /**

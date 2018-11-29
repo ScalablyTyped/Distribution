@@ -10,6 +10,13 @@ trait IPopoverSharedProps
   extends atBlueprintjsCoreLib.libEsmComponentsOverlayOverlayMod.IOverlayableProps
      with atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps {
   /**
+       * Determines the boundary element used by Popper for its `flip` and
+       * `preventOverflow` modifiers. Three shorthand keywords are supported;
+       * Popper will find the correct DOM element itself.
+       * @default "scrollParent"
+       */
+  var boundary: js.UndefOr[popperDotJsLib.popperDotJsMod.Boundary] = js.undefined
+  /**
        * When enabled, `preventDefault()` is invoked on `click` events that close
        * this popover, which will prevent those clicks from closing outer
        * popovers. When disabled, clicking inside a `Classes.POPOVER_DISMISS`
@@ -80,11 +87,6 @@ trait IPopoverSharedProps
        */
   var popoverClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Space-delimited string of class names applied to the `Portal` element if
-       * `usePortal={true}`.
-       */
-  var portalClassName: js.UndefOr[java.lang.String] = js.undefined
-  /**
        * The position (relative to the target) at which the popover should appear.
        *
        * The default value of `"auto"` will choose the best position when opened
@@ -92,9 +94,7 @@ trait IPopoverSharedProps
        * user scrolls around.
        * @default "auto"
        */
-  var position: js.UndefOr[
-    atBlueprintjsCoreLib.libEsmCommonPositionMod.Position | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.auto | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.`auto-start` | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.`auto-end`
-  ] = js.undefined
+  var position: js.UndefOr[PopoverPosition] = js.undefined
   /**
        * Space-delimited string of class names applied to the target element.
        */

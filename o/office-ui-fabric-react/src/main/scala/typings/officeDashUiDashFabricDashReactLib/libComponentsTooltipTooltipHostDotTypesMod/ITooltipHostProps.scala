@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ITooltipHostProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[
-      reactLib.HTMLDivElement | officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipHostMod.TooltipHost
+      reactLib.HTMLDivElement | officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipHostDotBaseMod.TooltipHostBase
     ] {
   /**
        * Additional properties to pass through for Callout, reference detail properties in ICalloutProps
@@ -34,7 +34,7 @@ trait ITooltipHostProps
   var content: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Length of delay
-       * @default medium
+       * @defaultvalue medium
        */
   var delay: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipDotTypesMod.TooltipDelay
@@ -66,6 +66,16 @@ trait ITooltipHostProps
        * If not specified, the caller should mark as element as described by the tooltip id.
        */
   var setAriaDescribedBy: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+       * Call to provide customized styling that will layer on top of the variant rules.
+       */
+  var styles: js.UndefOr[
+    atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[ITooltipHostStyleProps, ITooltipHostStyles]
+  ] = js.undefined
+  /**
+       * Theme provided by High-Order Component.
+       */
+  var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
        * Additional properties to pass through for Tooltip, reference detail properties in ITooltipProps
        */

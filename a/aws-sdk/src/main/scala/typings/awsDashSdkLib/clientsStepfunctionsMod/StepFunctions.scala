@@ -11,14 +11,14 @@ trait StepFunctions
   @JSName("config")
   var config_StepFunctions: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ClientConfiguration = js.native
   /**
-     * Creates an activity. An activity is a task which you write in any programming language and host on any machine which has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
+     * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
      */
   def createActivity(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an activity. An activity is a task which you write in any programming language and host on any machine which has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
+     * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
      */
   def createActivity(
     callback: js.Function2[
@@ -31,14 +31,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an activity. An activity is a task which you write in any programming language and host on any machine which has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
+     * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
      */
   def createActivity(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an activity. An activity is a task which you write in any programming language and host on any machine which has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
+     * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
      */
   def createActivity(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityInput,
@@ -175,14 +175,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes an activity.
+     * Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeActivity(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes an activity.
+     * Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeActivity(
     callback: js.Function2[
@@ -195,14 +195,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes an activity.
+     * Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeActivity(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes an activity.
+     * Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeActivity(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeActivityInput,
@@ -216,14 +216,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes an execution.
+     * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeExecution(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes an execution.
+     * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeExecution(
     callback: js.Function2[
@@ -236,14 +236,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes an execution.
+     * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeExecution(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes an execution.
+     * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeExecution(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeExecutionInput,
@@ -257,14 +257,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes a state machine.
+     * Describes a state machine.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeStateMachine(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes a state machine.
+     * Describes a state machine.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeStateMachine(
     callback: js.Function2[
@@ -277,14 +277,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes a state machine.
+     * Describes a state machine.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeStateMachine(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes a state machine.
+     * Describes a state machine.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeStateMachine(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineInput,
@@ -298,14 +298,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the state machine associated with a specific execution.
+     * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeStateMachineForExecution(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the state machine associated with a specific execution.
+     * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeStateMachineForExecution(
     callback: js.Function2[
@@ -318,7 +318,7 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the state machine associated with a specific execution.
+     * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeStateMachineForExecution(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionInput
@@ -327,7 +327,7 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the state machine associated with a specific execution.
+     * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def describeStateMachineForExecution(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.DescribeStateMachineForExecutionInput,
@@ -341,14 +341,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). 
+     * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). Polling with GetActivityTask can cause latency in some implementations. See Avoid Latency When Polling for Activity Tasks in the Step Functions Developer Guide. 
      */
   def getActivityTask(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). 
+     * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). Polling with GetActivityTask can cause latency in some implementations. See Avoid Latency When Polling for Activity Tasks in the Step Functions Developer Guide. 
      */
   def getActivityTask(
     callback: js.Function2[
@@ -361,14 +361,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). 
+     * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). Polling with GetActivityTask can cause latency in some implementations. See Avoid Latency When Polling for Activity Tasks in the Step Functions Developer Guide. 
      */
   def getActivityTask(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). 
+     * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). Polling with GetActivityTask can cause latency in some implementations. See Avoid Latency When Polling for Activity Tasks in the Step Functions Developer Guide. 
      */
   def getActivityTask(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetActivityTaskInput,
@@ -382,14 +382,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
      */
   def getExecutionHistory(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
      */
   def getExecutionHistory(
     callback: js.Function2[
@@ -402,14 +402,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
      */
   def getExecutionHistory(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
      */
   def getExecutionHistory(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.GetExecutionHistoryInput,
@@ -423,14 +423,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the existing activities. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listActivities(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the existing activities. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listActivities(
     callback: js.Function2[
@@ -443,14 +443,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the existing activities. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listActivities(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the existing activities. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listActivities(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListActivitiesInput,
@@ -464,14 +464,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the executions of a state machine that meet the filtering criteria. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listExecutions(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the executions of a state machine that meet the filtering criteria. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listExecutions(
     callback: js.Function2[
@@ -484,14 +484,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the executions of a state machine that meet the filtering criteria. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listExecutions(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the executions of a state machine that meet the filtering criteria. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listExecutions(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListExecutionsInput,
@@ -505,14 +505,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the existing state machines. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listStateMachines(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the existing state machines. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listStateMachines(
     callback: js.Function2[
@@ -525,14 +525,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the existing state machines. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listStateMachines(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the existing state machines. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+     * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
      */
   def listStateMachines(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ListStateMachinesInput,
@@ -669,14 +669,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a state machine execution.
+     * Starts a state machine execution.   StartExecution is idempotent. If StartExecution is called with the same name and input as a running execution, the call will succeed and return the same response as the original request. If the execution is closed or if the input is different, it will return a 400 ExecutionAlreadyExists error. Names can be reused after 90 days.  
      */
   def startExecution(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a state machine execution.
+     * Starts a state machine execution.   StartExecution is idempotent. If StartExecution is called with the same name and input as a running execution, the call will succeed and return the same response as the original request. If the execution is closed or if the input is different, it will return a 400 ExecutionAlreadyExists error. Names can be reused after 90 days.  
      */
   def startExecution(
     callback: js.Function2[
@@ -689,14 +689,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a state machine execution.
+     * Starts a state machine execution.   StartExecution is idempotent. If StartExecution is called with the same name and input as a running execution, the call will succeed and return the same response as the original request. If the execution is closed or if the input is different, it will return a 400 ExecutionAlreadyExists error. Names can be reused after 90 days.  
      */
   def startExecution(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a state machine execution.
+     * Starts a state machine execution.   StartExecution is idempotent. If StartExecution is called with the same name and input as a running execution, the call will succeed and return the same response as the original request. If the execution is closed or if the input is different, it will return a 400 ExecutionAlreadyExists error. Names can be reused after 90 days.  
      */
   def startExecution(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.StartExecutionInput,
@@ -751,14 +751,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error. 
+     * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
      */
   def updateStateMachine(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error. 
+     * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
      */
   def updateStateMachine(
     callback: js.Function2[
@@ -771,14 +771,14 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error. 
+     * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
      */
   def updateStateMachine(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error. 
+     * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
      */
   def updateStateMachine(
     params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.UpdateStateMachineInput,

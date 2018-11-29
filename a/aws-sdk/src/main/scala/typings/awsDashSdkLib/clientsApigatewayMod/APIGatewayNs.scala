@@ -2731,6 +2731,10 @@ object APIGatewayNs extends js.Object {
          * A map that defines the stage variables for a Stage resource. Variable names can have alphanumeric and underscore characters, and the values must match [A-Za-z0-9-._~:/?#&amp;=,]+.
          */
     var variables: js.UndefOr[MapOfStringToString] = js.undefined
+    /**
+         * The ARN of the WebAcl associated with the Stage.
+         */
+    var webAclArn: js.UndefOr[java.lang.String] = js.undefined
   }
   
   

@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "lambda-phi"
-version := "1.0.29-bb391b"
+version := "1.0.29-27d3b9"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "path-to-regexp" % "2.4.0-50250d",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "path-to-regexp" % "2.4.0-b3f159",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -47,7 +47,7 @@ object CloudWatchLogsNs extends js.Object {
          */
     var destinationPrefix: js.UndefOr[ExportDestinationPrefix] = js.undefined
     /**
-         * The start time of the range for the request, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a time stamp earlier than this time are not exported.
+         * The start time of the range for the request, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp earlier than this time are not exported.
          */
     var from: Timestamp
     /**
@@ -63,7 +63,7 @@ object CloudWatchLogsNs extends js.Object {
          */
     var taskName: js.UndefOr[ExportTaskName] = js.undefined
     /**
-         * The end time of the range for the request, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a time stamp later than this time are not exported.
+         * The end time of the range for the request, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp later than this time are not exported.
          */
     var to: Timestamp
   }
@@ -326,6 +326,32 @@ object CloudWatchLogsNs extends js.Object {
   }
   
   
+  trait DescribeQueriesRequest extends js.Object {
+    /**
+         * Limits the returned queries to only those for the specified log group.
+         */
+    var logGroupName: js.UndefOr[LogGroupName] = js.undefined
+    /**
+         * Limits the number of returned queries to the specified number.
+         */
+    var maxResults: js.UndefOr[DescribeQueriesMaxResults] = js.undefined
+    var nextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * Limits the returned queries to only those that have the specified status. Valid values are Cancelled, Complete, Failed, Running, and Scheduled.
+         */
+    var status: js.UndefOr[QueryStatus] = js.undefined
+  }
+  
+  
+  trait DescribeQueriesResponse extends js.Object {
+    var nextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * The list of queries that match the request.
+         */
+    var queries: js.UndefOr[QueryInfoList] = js.undefined
+  }
+  
+  
   trait DescribeResourcePoliciesRequest extends js.Object {
     /**
          * The maximum number of resource policies to be displayed with one call of this API.
@@ -423,7 +449,7 @@ object CloudWatchLogsNs extends js.Object {
          */
     var executionInfo: js.UndefOr[ExportTaskExecutionInfo] = js.undefined
     /**
-         * The start time, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a time stamp before this time are not exported.
+         * The start time, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp before this time are not exported.
          */
     var from: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -443,7 +469,7 @@ object CloudWatchLogsNs extends js.Object {
          */
     var taskName: js.UndefOr[ExportTaskName] = js.undefined
     /**
-         * The end time, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a time stamp later than this time are not exported.
+         * The end time, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp later than this time are not exported.
          */
     var to: js.UndefOr[Timestamp] = js.undefined
   }
@@ -479,7 +505,7 @@ object CloudWatchLogsNs extends js.Object {
   
   trait FilterLogEventsRequest extends js.Object {
     /**
-         * The end of the time range, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a time stamp later than this time are not returned.
+         * The end of the time range, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp later than this time are not returned.
          */
     var endTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -503,7 +529,7 @@ object CloudWatchLogsNs extends js.Object {
          */
     var logStreamNamePrefix: js.UndefOr[LogStreamName] = js.undefined
     /**
-         * Filters the results to only logs from the log streams in this list. If you specify a value for both logStreamNamePrefix and logStreamNames, but the value for logStreamNamePrefix does not match any log stream names specified in logStreamNames, the action returns an InvalidParameterException error.
+         * Filters the results to only logs from the log streams in this list. If you specify a value for both logStreamNamePrefix and logStreamNames, the action returns an InvalidParameterException error.
          */
     var logStreamNames: js.UndefOr[InputLogStreamNames] = js.undefined
     /**
@@ -511,7 +537,7 @@ object CloudWatchLogsNs extends js.Object {
          */
     var nextToken: js.UndefOr[NextToken] = js.undefined
     /**
-         * The start of the time range, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a time stamp before this time are not returned.
+         * The start of the time range, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp before this time are not returned.
          */
     var startTime: js.UndefOr[Timestamp] = js.undefined
   }
@@ -543,7 +569,7 @@ object CloudWatchLogsNs extends js.Object {
          */
     var ingestionTime: js.UndefOr[Timestamp] = js.undefined
     /**
-         * The name of the log stream this event belongs to.
+         * The name of the log stream to which this event belongs.
          */
     var logStreamName: js.UndefOr[LogStreamName] = js.undefined
     /**
@@ -559,7 +585,7 @@ object CloudWatchLogsNs extends js.Object {
   
   trait GetLogEventsRequest extends js.Object {
     /**
-         * The end of the time range, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a time stamp equal to or later than this time are not included.
+         * The end of the time range, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp equal to or later than this time are not included.
          */
     var endTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -583,7 +609,7 @@ object CloudWatchLogsNs extends js.Object {
          */
     var startFromHead: js.UndefOr[StartFromHead] = js.undefined
     /**
-         * The start of the time range, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a time stamp equal to this time or later than this time are included. Events with a time stamp earlier than this time are not included.
+         * The start of the time range, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. Events with a timestamp equal to this time or later than this time are included. Events with a timestamp earlier than this time are not included.
          */
     var startTime: js.UndefOr[Timestamp] = js.undefined
   }
@@ -602,6 +628,66 @@ object CloudWatchLogsNs extends js.Object {
          * The token for the next set of items in the forward direction. The token expires after 24 hours. If you have reached the end of the stream, it will return the same token you passed in.
          */
     var nextForwardToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait GetLogGroupFieldsRequest extends js.Object {
+    /**
+         * The name of the log group to search.
+         */
+    var logGroupName: LogGroupName
+    /**
+         * The time to set as the center of the query. If you specify time, the 8 minutes before and 8 minutes after this time are searched. If you omit time, the past 15 minutes are queried. The time value is specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
+         */
+    var time: js.UndefOr[Timestamp] = js.undefined
+  }
+  
+  
+  trait GetLogGroupFieldsResponse extends js.Object {
+    /**
+         * The array of fields found in the query. Each object in the array contains the name of the field, along with the percentage of time it appeared in the log events that were queried.
+         */
+    var logGroupFields: js.UndefOr[LogGroupFieldList] = js.undefined
+  }
+  
+  
+  trait GetLogRecordRequest extends js.Object {
+    /**
+         * The pointer corresponding to the log event record you want to retrieve. You get this from the response of a GetQueryResults operation. In that response, the value of the @ptr field for a log event is the value to use as logRecordPointer to retrieve that complete log event record.
+         */
+    var logRecordPointer: LogRecordPointer
+  }
+  
+  
+  trait GetLogRecordResponse extends js.Object {
+    /**
+         * The requested log event, as a JSON string.
+         */
+    var logRecord: js.UndefOr[LogRecord] = js.undefined
+  }
+  
+  
+  trait GetQueryResultsRequest extends js.Object {
+    /**
+         * The ID number of the query.
+         */
+    var queryId: QueryId
+  }
+  
+  
+  trait GetQueryResultsResponse extends js.Object {
+    /**
+         * The log events that matched the query criteria during the most recent time it ran. The results value is an array of arrays. Each log event is one object in the top-level array. Each of these log event objects is an array of field/value pairs.
+         */
+    var results: js.UndefOr[QueryResults] = js.undefined
+    /**
+         * Includes the number of log events scanned by the query, the number of log events that matched the query criteria, and the total number of bytes in the log events that were scanned.
+         */
+    var statistics: js.UndefOr[QueryStatistics] = js.undefined
+    /**
+         * The status of the most recent running of the query. Possible values are Cancelled, Complete, Failed, Running, Scheduled, and Unknown.
+         */
+    var status: js.UndefOr[QueryStatus] = js.undefined
   }
   
   
@@ -662,6 +748,22 @@ object CloudWatchLogsNs extends js.Object {
   }
   
   
+  trait LogGroupField extends js.Object {
+    /**
+         * The name of a log field.
+         */
+    var name: js.UndefOr[Field] = js.undefined
+    /**
+         * The percentage of log events queried that contained the field.
+         */
+    var percent: js.UndefOr[Percentage] = js.undefined
+  }
+  
+  
+  trait LogRecord
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
+  
+  
   trait LogStream extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the log stream.
@@ -676,7 +778,7 @@ object CloudWatchLogsNs extends js.Object {
          */
     var firstEventTimestamp: js.UndefOr[Timestamp] = js.undefined
     /**
-         *  the time of the most recent log event in the log stream in CloudWatch Logs. This number is expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. lastEventTime updates on an eventual consistency basis. It typically updates in less than an hour from ingestion, but may take longer in some rare situations.
+         * The time of the most recent log event in the log stream in CloudWatch Logs. This number is expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. The lastEventTime value updates on an eventual consistency basis. It typically updates in less than an hour from ingestion, but may take longer in some rare situations.
          */
     var lastEventTimestamp: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -916,6 +1018,46 @@ object CloudWatchLogsNs extends js.Object {
   }
   
   
+  trait QueryInfo extends js.Object {
+    /**
+         * The date and time that this query was created.
+         */
+    var createTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The name of the log group scanned by this query.
+         */
+    var logGroupName: js.UndefOr[LogGroupName] = js.undefined
+    /**
+         * The unique ID number of this query.
+         */
+    var queryId: js.UndefOr[QueryId] = js.undefined
+    /**
+         * The query string used in this query.
+         */
+    var queryString: js.UndefOr[QueryString] = js.undefined
+    /**
+         * The status of this query. Possible values are Cancelled, Complete, Failed, Running, Scheduled, and Unknown.
+         */
+    var status: js.UndefOr[QueryStatus] = js.undefined
+  }
+  
+  
+  trait QueryStatistics extends js.Object {
+    /**
+         * The total number of bytes in the log events scanned during the query.
+         */
+    var bytesScanned: js.UndefOr[StatsValue] = js.undefined
+    /**
+         * The number of log events that matched the query string.
+         */
+    var recordsMatched: js.UndefOr[StatsValue] = js.undefined
+    /**
+         * The total number of log events scanned during the query.
+         */
+    var recordsScanned: js.UndefOr[StatsValue] = js.undefined
+  }
+  
+  
   trait RejectedLogEventsInfo extends js.Object {
     /**
          * The expired log events.
@@ -934,7 +1076,7 @@ object CloudWatchLogsNs extends js.Object {
   
   trait ResourcePolicy extends js.Object {
     /**
-         * Time stamp showing when this policy was last updated, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
+         * Timestamp showing when this policy was last updated, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC.
          */
     var lastUpdatedTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -948,6 +1090,18 @@ object CloudWatchLogsNs extends js.Object {
   }
   
   
+  trait ResultField extends js.Object {
+    /**
+         * The log event field.
+         */
+    var field: js.UndefOr[Field] = js.undefined
+    /**
+         * The value of this field.
+         */
+    var value: js.UndefOr[Value] = js.undefined
+  }
+  
+  
   trait SearchedLogStream extends js.Object {
     /**
          * The name of the log stream.
@@ -957,6 +1111,54 @@ object CloudWatchLogsNs extends js.Object {
          * Indicates whether all the events in this log stream were searched.
          */
     var searchedCompletely: js.UndefOr[LogStreamSearchedCompletely] = js.undefined
+  }
+  
+  
+  trait StartQueryRequest extends js.Object {
+    /**
+         * The time to end this query, if it is still running. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
+         */
+    var endTime: Timestamp
+    /**
+         * The maximum number of log events to return in the query. If the query string uses the fields command, only the specified fields and their values are returned.
+         */
+    var limit: js.UndefOr[EventsLimit] = js.undefined
+    /**
+         * The log group on which to perform the query.
+         */
+    var logGroupName: LogGroupName
+    /**
+         * The query string to use. For more information, see CloudWatch Logs Insights Query Syntax.
+         */
+    var queryString: QueryString
+    /**
+         * The time to start the query. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
+         */
+    var startTime: Timestamp
+  }
+  
+  
+  trait StartQueryResponse extends js.Object {
+    /**
+         * The unique ID of the query. 
+         */
+    var queryId: js.UndefOr[QueryId] = js.undefined
+  }
+  
+  
+  trait StopQueryRequest extends js.Object {
+    /**
+         * The ID number of the query to stop. If necessary, you can use DescribeQueries to find this ID number.
+         */
+    var queryId: QueryId
+  }
+  
+  
+  trait StopQueryResponse extends js.Object {
+    /**
+         * This is true if the query was stopped by the StopQuery operation.
+         */
+    var success: js.UndefOr[Success] = js.undefined
   }
   
   
@@ -1429,6 +1631,35 @@ object CloudWatchLogsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeMetricFiltersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Returns a list of CloudWatch Logs Insights queries that are scheduled, executing, or have been executed recently in this account. You can request all queries, or limit it to queries of a specific log group or queries with a certain status.
+       */
+    def describeQueries(): awsDashSdkLib.libRequestMod.Request[DescribeQueriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of CloudWatch Logs Insights queries that are scheduled, executing, or have been executed recently in this account. You can request all queries, or limit it to queries of a specific log group or queries with a certain status.
+       */
+    def describeQueries(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeQueriesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeQueriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of CloudWatch Logs Insights queries that are scheduled, executing, or have been executed recently in this account. You can request all queries, or limit it to queries of a specific log group or queries with a certain status.
+       */
+    def describeQueries(params: DescribeQueriesRequest): awsDashSdkLib.libRequestMod.Request[DescribeQueriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of CloudWatch Logs Insights queries that are scheduled, executing, or have been executed recently in this account. You can request all queries, or limit it to queries of a specific log group or queries with a certain status.
+       */
+    def describeQueries(
+      params: DescribeQueriesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeQueriesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeQueriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Lists the resource policies in this account.
        */
     def describeResourcePolicies(): awsDashSdkLib.libRequestMod.Request[DescribeResourcePoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1566,6 +1797,93 @@ object CloudWatchLogsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetLogEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Returns a list of the fields that are included in log events in the specified log group, along with the percentage of log events that contain each field. The search is limited to a time period that you specify. In the results, fields that start with @ are fields generated by CloudWatch Logs. For example, @timestamp is the timestamp of each log event. The response results are sorted by the frequency percentage, starting with the highest percentage.
+       */
+    def getLogGroupFields(): awsDashSdkLib.libRequestMod.Request[GetLogGroupFieldsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of the fields that are included in log events in the specified log group, along with the percentage of log events that contain each field. The search is limited to a time period that you specify. In the results, fields that start with @ are fields generated by CloudWatch Logs. For example, @timestamp is the timestamp of each log event. The response results are sorted by the frequency percentage, starting with the highest percentage.
+       */
+    def getLogGroupFields(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetLogGroupFieldsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetLogGroupFieldsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of the fields that are included in log events in the specified log group, along with the percentage of log events that contain each field. The search is limited to a time period that you specify. In the results, fields that start with @ are fields generated by CloudWatch Logs. For example, @timestamp is the timestamp of each log event. The response results are sorted by the frequency percentage, starting with the highest percentage.
+       */
+    def getLogGroupFields(params: GetLogGroupFieldsRequest): awsDashSdkLib.libRequestMod.Request[GetLogGroupFieldsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of the fields that are included in log events in the specified log group, along with the percentage of log events that contain each field. The search is limited to a time period that you specify. In the results, fields that start with @ are fields generated by CloudWatch Logs. For example, @timestamp is the timestamp of each log event. The response results are sorted by the frequency percentage, starting with the highest percentage.
+       */
+    def getLogGroupFields(
+      params: GetLogGroupFieldsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetLogGroupFieldsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetLogGroupFieldsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves all the fields and values of a single log event. All fields are retrieved, even if the original query that produced the logRecordPointer retrieved only a subset of fields. Fields are returned as field name/field value pairs. Additionally, the entire unparsed log event is returned within @message.
+       */
+    def getLogRecord(): awsDashSdkLib.libRequestMod.Request[GetLogRecordResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves all the fields and values of a single log event. All fields are retrieved, even if the original query that produced the logRecordPointer retrieved only a subset of fields. Fields are returned as field name/field value pairs. Additionally, the entire unparsed log event is returned within @message.
+       */
+    def getLogRecord(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetLogRecordResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetLogRecordResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves all the fields and values of a single log event. All fields are retrieved, even if the original query that produced the logRecordPointer retrieved only a subset of fields. Fields are returned as field name/field value pairs. Additionally, the entire unparsed log event is returned within @message.
+       */
+    def getLogRecord(params: GetLogRecordRequest): awsDashSdkLib.libRequestMod.Request[GetLogRecordResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves all the fields and values of a single log event. All fields are retrieved, even if the original query that produced the logRecordPointer retrieved only a subset of fields. Fields are returned as field name/field value pairs. Additionally, the entire unparsed log event is returned within @message.
+       */
+    def getLogRecord(
+      params: GetLogRecordRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetLogRecordResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetLogRecordResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the results from the specified query. If the query is in progress, partial results of that current execution are returned. Only the fields requested in the query are returned.  GetQueryResults does not start a query execution. To run a query, use .
+       */
+    def getQueryResults(): awsDashSdkLib.libRequestMod.Request[GetQueryResultsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the results from the specified query. If the query is in progress, partial results of that current execution are returned. Only the fields requested in the query are returned.  GetQueryResults does not start a query execution. To run a query, use .
+       */
+    def getQueryResults(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetQueryResultsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetQueryResultsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the results from the specified query. If the query is in progress, partial results of that current execution are returned. Only the fields requested in the query are returned.  GetQueryResults does not start a query execution. To run a query, use .
+       */
+    def getQueryResults(params: GetQueryResultsRequest): awsDashSdkLib.libRequestMod.Request[GetQueryResultsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the results from the specified query. If the query is in progress, partial results of that current execution are returned. Only the fields requested in the query are returned.  GetQueryResults does not start a query execution. To run a query, use .
+       */
+    def getQueryResults(
+      params: GetQueryResultsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetQueryResultsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetQueryResultsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Lists the tags for the specified log group.
        */
     def listTagsLogGroup(): awsDashSdkLib.libRequestMod.Request[ListTagsLogGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1645,11 +1963,11 @@ object CloudWatchLogsNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Uploads a batch of log events to the specified log stream. You must include the sequence token obtained from the response of the previous call. An upload in a newly created log stream does not require a sequence token. You can also get the sequence token using DescribeLogStreams. If you call PutLogEvents twice within a narrow time period using the same value for sequenceToken, both calls may be successful, or one may be rejected. The batch of events must satisfy the following constraints:   The maximum batch size is 1,048,576 bytes, and this size is calculated as the sum of all event messages in UTF-8, plus 26 bytes for each log event.   None of the log events in the batch can be more than 2 hours in the future.   None of the log events in the batch can be older than 14 days or the retention period of the log group.   The log events in the batch must be in chronological ordered by their time stamp. The time stamp is the time the event occurred, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. (In AWS Tools for PowerShell and the AWS SDK for .NET, the timestamp is specified in .NET format: yyyy-mm-ddThh:mm:ss. For example, 2017-09-15T13:45:30.)    The maximum number of log events in a batch is 10,000.   A batch of log events in a single request cannot span more than 24 hours. Otherwise, the operation fails.   If a call to PutLogEvents returns "UnrecognizedClientException" the most likely cause is an invalid AWS access key ID or secret key. 
+       * Uploads a batch of log events to the specified log stream. You must include the sequence token obtained from the response of the previous call. An upload in a newly created log stream does not require a sequence token. You can also get the sequence token using DescribeLogStreams. If you call PutLogEvents twice within a narrow time period using the same value for sequenceToken, both calls may be successful, or one may be rejected. The batch of events must satisfy the following constraints:   The maximum batch size is 1,048,576 bytes, and this size is calculated as the sum of all event messages in UTF-8, plus 26 bytes for each log event.   None of the log events in the batch can be more than 2 hours in the future.   None of the log events in the batch can be older than 14 days or the retention period of the log group.   The log events in the batch must be in chronological ordered by their timestamp. The timestamp is the time the event occurred, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. (In AWS Tools for PowerShell and the AWS SDK for .NET, the timestamp is specified in .NET format: yyyy-mm-ddThh:mm:ss. For example, 2017-09-15T13:45:30.)    The maximum number of log events in a batch is 10,000.   A batch of log events in a single request cannot span more than 24 hours. Otherwise, the operation fails.   If a call to PutLogEvents returns "UnrecognizedClientException" the most likely cause is an invalid AWS access key ID or secret key. 
        */
     def putLogEvents(): awsDashSdkLib.libRequestMod.Request[PutLogEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Uploads a batch of log events to the specified log stream. You must include the sequence token obtained from the response of the previous call. An upload in a newly created log stream does not require a sequence token. You can also get the sequence token using DescribeLogStreams. If you call PutLogEvents twice within a narrow time period using the same value for sequenceToken, both calls may be successful, or one may be rejected. The batch of events must satisfy the following constraints:   The maximum batch size is 1,048,576 bytes, and this size is calculated as the sum of all event messages in UTF-8, plus 26 bytes for each log event.   None of the log events in the batch can be more than 2 hours in the future.   None of the log events in the batch can be older than 14 days or the retention period of the log group.   The log events in the batch must be in chronological ordered by their time stamp. The time stamp is the time the event occurred, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. (In AWS Tools for PowerShell and the AWS SDK for .NET, the timestamp is specified in .NET format: yyyy-mm-ddThh:mm:ss. For example, 2017-09-15T13:45:30.)    The maximum number of log events in a batch is 10,000.   A batch of log events in a single request cannot span more than 24 hours. Otherwise, the operation fails.   If a call to PutLogEvents returns "UnrecognizedClientException" the most likely cause is an invalid AWS access key ID or secret key. 
+       * Uploads a batch of log events to the specified log stream. You must include the sequence token obtained from the response of the previous call. An upload in a newly created log stream does not require a sequence token. You can also get the sequence token using DescribeLogStreams. If you call PutLogEvents twice within a narrow time period using the same value for sequenceToken, both calls may be successful, or one may be rejected. The batch of events must satisfy the following constraints:   The maximum batch size is 1,048,576 bytes, and this size is calculated as the sum of all event messages in UTF-8, plus 26 bytes for each log event.   None of the log events in the batch can be more than 2 hours in the future.   None of the log events in the batch can be older than 14 days or the retention period of the log group.   The log events in the batch must be in chronological ordered by their timestamp. The timestamp is the time the event occurred, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. (In AWS Tools for PowerShell and the AWS SDK for .NET, the timestamp is specified in .NET format: yyyy-mm-ddThh:mm:ss. For example, 2017-09-15T13:45:30.)    The maximum number of log events in a batch is 10,000.   A batch of log events in a single request cannot span more than 24 hours. Otherwise, the operation fails.   If a call to PutLogEvents returns "UnrecognizedClientException" the most likely cause is an invalid AWS access key ID or secret key. 
        */
     def putLogEvents(
       callback: js.Function2[
@@ -1659,11 +1977,11 @@ object CloudWatchLogsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutLogEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Uploads a batch of log events to the specified log stream. You must include the sequence token obtained from the response of the previous call. An upload in a newly created log stream does not require a sequence token. You can also get the sequence token using DescribeLogStreams. If you call PutLogEvents twice within a narrow time period using the same value for sequenceToken, both calls may be successful, or one may be rejected. The batch of events must satisfy the following constraints:   The maximum batch size is 1,048,576 bytes, and this size is calculated as the sum of all event messages in UTF-8, plus 26 bytes for each log event.   None of the log events in the batch can be more than 2 hours in the future.   None of the log events in the batch can be older than 14 days or the retention period of the log group.   The log events in the batch must be in chronological ordered by their time stamp. The time stamp is the time the event occurred, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. (In AWS Tools for PowerShell and the AWS SDK for .NET, the timestamp is specified in .NET format: yyyy-mm-ddThh:mm:ss. For example, 2017-09-15T13:45:30.)    The maximum number of log events in a batch is 10,000.   A batch of log events in a single request cannot span more than 24 hours. Otherwise, the operation fails.   If a call to PutLogEvents returns "UnrecognizedClientException" the most likely cause is an invalid AWS access key ID or secret key. 
+       * Uploads a batch of log events to the specified log stream. You must include the sequence token obtained from the response of the previous call. An upload in a newly created log stream does not require a sequence token. You can also get the sequence token using DescribeLogStreams. If you call PutLogEvents twice within a narrow time period using the same value for sequenceToken, both calls may be successful, or one may be rejected. The batch of events must satisfy the following constraints:   The maximum batch size is 1,048,576 bytes, and this size is calculated as the sum of all event messages in UTF-8, plus 26 bytes for each log event.   None of the log events in the batch can be more than 2 hours in the future.   None of the log events in the batch can be older than 14 days or the retention period of the log group.   The log events in the batch must be in chronological ordered by their timestamp. The timestamp is the time the event occurred, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. (In AWS Tools for PowerShell and the AWS SDK for .NET, the timestamp is specified in .NET format: yyyy-mm-ddThh:mm:ss. For example, 2017-09-15T13:45:30.)    The maximum number of log events in a batch is 10,000.   A batch of log events in a single request cannot span more than 24 hours. Otherwise, the operation fails.   If a call to PutLogEvents returns "UnrecognizedClientException" the most likely cause is an invalid AWS access key ID or secret key. 
        */
     def putLogEvents(params: PutLogEventsRequest): awsDashSdkLib.libRequestMod.Request[PutLogEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Uploads a batch of log events to the specified log stream. You must include the sequence token obtained from the response of the previous call. An upload in a newly created log stream does not require a sequence token. You can also get the sequence token using DescribeLogStreams. If you call PutLogEvents twice within a narrow time period using the same value for sequenceToken, both calls may be successful, or one may be rejected. The batch of events must satisfy the following constraints:   The maximum batch size is 1,048,576 bytes, and this size is calculated as the sum of all event messages in UTF-8, plus 26 bytes for each log event.   None of the log events in the batch can be more than 2 hours in the future.   None of the log events in the batch can be older than 14 days or the retention period of the log group.   The log events in the batch must be in chronological ordered by their time stamp. The time stamp is the time the event occurred, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. (In AWS Tools for PowerShell and the AWS SDK for .NET, the timestamp is specified in .NET format: yyyy-mm-ddThh:mm:ss. For example, 2017-09-15T13:45:30.)    The maximum number of log events in a batch is 10,000.   A batch of log events in a single request cannot span more than 24 hours. Otherwise, the operation fails.   If a call to PutLogEvents returns "UnrecognizedClientException" the most likely cause is an invalid AWS access key ID or secret key. 
+       * Uploads a batch of log events to the specified log stream. You must include the sequence token obtained from the response of the previous call. An upload in a newly created log stream does not require a sequence token. You can also get the sequence token using DescribeLogStreams. If you call PutLogEvents twice within a narrow time period using the same value for sequenceToken, both calls may be successful, or one may be rejected. The batch of events must satisfy the following constraints:   The maximum batch size is 1,048,576 bytes, and this size is calculated as the sum of all event messages in UTF-8, plus 26 bytes for each log event.   None of the log events in the batch can be more than 2 hours in the future.   None of the log events in the batch can be older than 14 days or the retention period of the log group.   The log events in the batch must be in chronological ordered by their timestamp. The timestamp is the time the event occurred, expressed as the number of milliseconds after Jan 1, 1970 00:00:00 UTC. (In AWS Tools for PowerShell and the AWS SDK for .NET, the timestamp is specified in .NET format: yyyy-mm-ddThh:mm:ss. For example, 2017-09-15T13:45:30.)    The maximum number of log events in a batch is 10,000.   A batch of log events in a single request cannot span more than 24 hours. Otherwise, the operation fails.   If a call to PutLogEvents returns "UnrecognizedClientException" the most likely cause is an invalid AWS access key ID or secret key. 
        */
     def putLogEvents(
       params: PutLogEventsRequest,
@@ -1766,6 +2084,64 @@ object CloudWatchLogsNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group to query, the query string to use, and the time to query. For more information, see CloudWatch Logs Insights Query Syntax.
+       */
+    def startQuery(): awsDashSdkLib.libRequestMod.Request[StartQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group to query, the query string to use, and the time to query. For more information, see CloudWatch Logs Insights Query Syntax.
+       */
+    def startQuery(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StartQueryResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StartQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group to query, the query string to use, and the time to query. For more information, see CloudWatch Logs Insights Query Syntax.
+       */
+    def startQuery(params: StartQueryRequest): awsDashSdkLib.libRequestMod.Request[StartQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group to query, the query string to use, and the time to query. For more information, see CloudWatch Logs Insights Query Syntax.
+       */
+    def startQuery(
+      params: StartQueryRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StartQueryResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StartQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops a CloudWatch Logs Insights query that is in progress. If the query has already ended, the operation returns an error indicating that the specified query is not running.
+       */
+    def stopQuery(): awsDashSdkLib.libRequestMod.Request[StopQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops a CloudWatch Logs Insights query that is in progress. If the query has already ended, the operation returns an error indicating that the specified query is not running.
+       */
+    def stopQuery(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StopQueryResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StopQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops a CloudWatch Logs Insights query that is in progress. If the query has already ended, the operation returns an error indicating that the specified query is not running.
+       */
+    def stopQuery(params: StopQueryRequest): awsDashSdkLib.libRequestMod.Request[StopQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops a CloudWatch Logs Insights query that is in progress. If the query has already ended, the operation returns an error indicating that the specified query is not running.
+       */
+    def stopQuery(
+      params: StopQueryRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StopQueryResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StopQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Adds or updates the specified tags for the specified log group. To list the tags for a log group, use ListTagsLogGroup. To remove tags, use UntagLogGroup. For more information about tags, see Tag Log Groups in Amazon CloudWatch Logs in the Amazon CloudWatch Logs User Guide.
        */
     def tagLogGroup(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1858,6 +2234,7 @@ object CloudWatchLogsNs extends js.Object {
   type DefaultValue = scala.Double
   type Descending = scala.Boolean
   type DescribeLimit = scala.Double
+  type DescribeQueriesMaxResults = scala.Double
   type DestinationArn = java.lang.String
   type DestinationName = java.lang.String
   type Destinations = js.Array[Destination]
@@ -1873,6 +2250,7 @@ object CloudWatchLogsNs extends js.Object {
   type ExportTaskStatusCode = awsDashSdkLib.awsDashSdkLibStrings.CANCELLED | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.PENDING_CANCEL | awsDashSdkLib.awsDashSdkLibStrings.RUNNING | java.lang.String
   type ExportTaskStatusMessage = java.lang.String
   type ExportTasks = js.Array[ExportTask]
+  type Field = java.lang.String
   type FilterCount = scala.Double
   type FilterName = java.lang.String
   type FilterPattern = java.lang.String
@@ -1882,8 +2260,10 @@ object CloudWatchLogsNs extends js.Object {
   type Interleaved = scala.Boolean
   type KmsKeyId = java.lang.String
   type LogEventIndex = scala.Double
+  type LogGroupFieldList = js.Array[LogGroupField]
   type LogGroupName = java.lang.String
   type LogGroups = js.Array[LogGroup]
+  type LogRecordPointer = java.lang.String
   type LogStreamName = java.lang.String
   type LogStreamSearchedCompletely = scala.Boolean
   type LogStreams = js.Array[LogStream]
@@ -1896,15 +2276,24 @@ object CloudWatchLogsNs extends js.Object {
   type NextToken = java.lang.String
   type OrderBy = awsDashSdkLib.awsDashSdkLibStrings.LogStreamName | awsDashSdkLib.awsDashSdkLibStrings.LastEventTime | java.lang.String
   type OutputLogEvents = js.Array[OutputLogEvent]
+  type Percentage = scala.Double
   type PolicyDocument = java.lang.String
   type PolicyName = java.lang.String
+  type QueryId = java.lang.String
+  type QueryInfoList = js.Array[QueryInfo]
+  type QueryResults = js.Array[ResultRows]
+  type QueryStatus = awsDashSdkLib.awsDashSdkLibStrings.Scheduled | awsDashSdkLib.awsDashSdkLibStrings.Running | awsDashSdkLib.awsDashSdkLibStrings.Complete | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Cancelled | java.lang.String
+  type QueryString = java.lang.String
   type ResourcePolicies = js.Array[ResourcePolicy]
+  type ResultRows = js.Array[ResultField]
   type RoleArn = java.lang.String
   type SearchedLogStreams = js.Array[SearchedLogStream]
   type SequenceToken = java.lang.String
   type StartFromHead = scala.Boolean
+  type StatsValue = scala.Double
   type StoredBytes = scala.Double
   type SubscriptionFilters = js.Array[SubscriptionFilter]
+  type Success = scala.Boolean
   type TagKey = java.lang.String
   type TagList = js.Array[TagKey]
   type TagValue = java.lang.String

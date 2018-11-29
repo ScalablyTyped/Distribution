@@ -341,8 +341,8 @@ trait Core extends js.Object {
   def getSchema(): js.Object = js.native
   def getSelected(): js.UndefOr[js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]]] = js.native
   def getSelectedLast(): js.UndefOr[js.Array[scala.Double]] = js.native
-  def getSelectedRange(): js.UndefOr[js.Array[stdLib.Range]] = js.native
-  def getSelectedRangeLast(): js.UndefOr[stdLib.Range] = js.native
+  def getSelectedRange(): js.UndefOr[js.Array[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange]] = js.native
+  def getSelectedRangeLast(): js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange] = js.native
   def getSettings(): handsontableLib.handsontableMod.HandsontableNs.DefaultSettings = js.native
   def getSourceData(): js.Array[_] = js.native
   def getSourceData(r: scala.Double): js.Array[_] = js.native

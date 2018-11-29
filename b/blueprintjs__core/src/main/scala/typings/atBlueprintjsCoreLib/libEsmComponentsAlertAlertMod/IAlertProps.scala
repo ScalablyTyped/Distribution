@@ -34,7 +34,7 @@ trait IAlertProps
   var confirmButtonText: js.UndefOr[java.lang.String] = js.undefined
   /** Name of a Blueprint UI icon (or an icon element) to display on the left side. */
   var icon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /**
        * The intent to be applied to the confirm (right-most) button.

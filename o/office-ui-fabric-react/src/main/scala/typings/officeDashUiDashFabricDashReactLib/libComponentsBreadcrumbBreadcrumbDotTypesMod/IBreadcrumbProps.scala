@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IBreadcrumbProps
-  extends reactLib.reactMod.ReactNs.Props[
+  extends reactLib.reactMod.ReactNs.ClassAttributes[
       officeDashUiDashFabricDashReactLib.libComponentsBreadcrumbBreadcrumbDotBaseMod.BreadcrumbBase
     ] {
   /**
@@ -24,7 +24,7 @@ trait IBreadcrumbProps
        */
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IBreadcrumb]] = js.undefined
   /**
-       * Render a custom divider in place of the default chevron '>'
+       * Render a custom divider in place of the default chevron `>`
        */
   var dividerAs: js.UndefOr[atUifabricUtilitiesLib.libIComponentAsMod.IComponentAs[IDividerAsProps]] = js.undefined
   /**

@@ -28,29 +28,29 @@ class SuggestionsControl[T] protected ()
   /**
        * Selects the next item in the suggestion item type group, given the current index
        * If none is able to be selected, returns false, otherwise returns true
-       * @param itemType The suggestion item type
-       * @param currentIndex The current index, default is -1
+       * @param itemType - The suggestion item type
+       * @param currentIndex - The current index, default is -1
        */
   /* private */ def _selectNextItemOfItemType(itemType: js.Any): js.Any = js.native
   /**
        * Selects the next item in the suggestion item type group, given the current index
        * If none is able to be selected, returns false, otherwise returns true
-       * @param itemType The suggestion item type
-       * @param currentIndex The current index, default is -1
+       * @param itemType - The suggestion item type
+       * @param currentIndex - The current index, default is -1
        */
   /* private */ def _selectNextItemOfItemType(itemType: js.Any, currentIndex: js.Any): js.Any = js.native
   /**
        * Selects the previous item in the suggestion item type group, given the current index
        * If none is able to be selected, returns false, otherwise returns true
-       * @param itemType The suggestion item type
-       * @param currentIndex The current index. If none is provided, the default is the items length of specified type
+       * @param itemType - The suggestion item type
+       * @param currentIndex - The current index. If none is provided, the default is the items length of specified type
        */
   /* private */ def _selectPreviousItemOfItemType(itemType: js.Any): js.Any = js.native
   /**
        * Selects the previous item in the suggestion item type group, given the current index
        * If none is able to be selected, returns false, otherwise returns true
-       * @param itemType The suggestion item type
-       * @param currentIndex The current index. If none is provided, the default is the items length of specified type
+       * @param itemType - The suggestion item type
+       * @param currentIndex - The current index. If none is provided, the default is the items length of specified type
        */
   /* private */ def _selectPreviousItemOfItemType(itemType: js.Any, currentIndex: js.Any): js.Any = js.native
   @JSName("componentDidMount")
@@ -66,7 +66,7 @@ class SuggestionsControl[T] protected ()
   def executeSelectedAction(): scala.Unit = js.native
   /**
        * Handles the key down, returns true, if the event was handled, false otherwise
-       * @param keyCode The keyCode to handle
+       * @param keyCode - The keyCode to handle
        */
   def handleKeyDown(keyCode: scala.Double): scala.Boolean = js.native
   def hasSelection(): scala.Boolean = js.native

@@ -145,7 +145,7 @@ trait App extends EventEmitter {
   @JSName("addListener")
   def `addListener_session-created`(
     event: electronLib.electronLibStrings.`session-created`,
-    listener: js.Function2[/* event */ Event, /* session */ Session, scala.Unit]
+    listener: js.Function1[/* session */ Session, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def `addListener_update-activity-state`(
@@ -569,7 +569,7 @@ trait App extends EventEmitter {
   @JSName("on")
   def `on_session-created`(
     event: electronLib.electronLibStrings.`session-created`,
-    listener: js.Function2[/* event */ Event, /* session */ Session, scala.Unit]
+    listener: js.Function1[/* session */ Session, scala.Unit]
   ): this.type = js.native
   /**
        * Emitted when Handoff is about to be resumed on another device. If you need to
@@ -764,7 +764,7 @@ trait App extends EventEmitter {
   @JSName("once")
   def `once_session-created`(
     event: electronLib.electronLibStrings.`session-created`,
-    listener: js.Function2[/* event */ Event, /* session */ Session, scala.Unit]
+    listener: js.Function1[/* session */ Session, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def `once_update-activity-state`(
@@ -975,7 +975,7 @@ trait App extends EventEmitter {
   @JSName("removeListener")
   def `removeListener_session-created`(
     event: electronLib.electronLibStrings.`session-created`,
-    listener: js.Function2[/* event */ Event, /* session */ Session, scala.Unit]
+    listener: js.Function1[/* session */ Session, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def `removeListener_update-activity-state`(

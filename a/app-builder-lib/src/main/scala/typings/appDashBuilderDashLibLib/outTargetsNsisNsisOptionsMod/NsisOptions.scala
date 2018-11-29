@@ -39,17 +39,17 @@ trait NsisOptions
        */
   val include: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * *assisted installer only.* `MUI_HEADERIMAGE`, relative to the [build resources](/configuration/configuration.md#MetadataDirectories-buildResources) or to the project directory.
+       * *assisted installer only.* `MUI_HEADERIMAGE`, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
        * @default build/installerHeader.bmp
        */
   val installerHeader: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * *one-click installer only.* The path to header icon (above the progress bar), relative to the [build resources](/configuration/configuration.md#MetadataDirectories-buildResources) or to the project directory.
+       * *one-click installer only.* The path to header icon (above the progress bar), relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
        * Defaults to `build/installerHeaderIcon.ico` or application icon.
        */
   val installerHeaderIcon: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * The path to installer icon, relative to the [build resources](/configuration/configuration.md#MetadataDirectories-buildResources) or to the project directory.
+       * The path to installer icon, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
        * Defaults to `build/installerIcon.ico` or application icon.
        */
   val installerIcon: js.UndefOr[java.lang.String | scala.Null] = js.undefined
@@ -58,7 +58,7 @@ trait NsisOptions
        */
   val installerLanguages: js.UndefOr[js.Array[java.lang.String] | java.lang.String | scala.Null] = js.undefined
   /**
-       * *assisted installer only.* `MUI_WELCOMEFINISHPAGE_BITMAP`, relative to the [build resources](/configuration/configuration.md#MetadataDirectories-buildResources) or to the project directory.
+       * *assisted installer only.* `MUI_WELCOMEFINISHPAGE_BITMAP`, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
        * Defaults to `build/installerSidebar.bmp` or `${NSISDIR}\\Contrib\\Graphics\\Wizard\\nsis3-metro.bmp`. Image size 164 × 314 pixels.
        */
   val installerSidebar: js.UndefOr[java.lang.String | scala.Null] = js.undefined
@@ -99,12 +99,12 @@ trait NsisOptions
        */
   val uninstallDisplayName: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The path to uninstaller icon, relative to the [build resources](/configuration/configuration.md#MetadataDirectories-buildResources) or to the project directory.
+       * The path to uninstaller icon, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
        * Defaults to `build/uninstallerIcon.ico` or application icon.
        */
   val uninstallerIcon: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * *assisted installer only.* `MUI_UNWELCOMEFINISHPAGE_BITMAP`, relative to the [build resources](/configuration/configuration.md#MetadataDirectories-buildResources) or to the project directory.
+       * *assisted installer only.* `MUI_UNWELCOMEFINISHPAGE_BITMAP`, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
        * Defaults to `installerSidebar` option or `build/uninstallerSidebar.bmp` or `build/installerSidebar.bmp` or `${NSISDIR}\\Contrib\\Graphics\\Wizard\\nsis3-metro.bmp`
        */
   val uninstallerSidebar: js.UndefOr[java.lang.String | scala.Null] = js.undefined

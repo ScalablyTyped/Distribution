@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libColorsModMembers extends js.Object {
   val DEFAULT_COLORS: Colors = js.native
-  val DEFAULT_LOGGER_COLORS: LoggerColors = js.native
+  val NO_COLORS: Colors = js.native
 }
 

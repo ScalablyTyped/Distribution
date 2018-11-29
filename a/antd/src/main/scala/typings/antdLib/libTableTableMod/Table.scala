@@ -64,6 +64,10 @@ trait Table[T]
   def hasPagination(): scala.Boolean = js.native
   def hasPagination(props: js.Any): scala.Boolean = js.native
   def isFiltersChanged(filters: antdLib.libTableInterfaceMod.TableStateFilters): scala.Boolean = js.native
+  def isSameColumn(): js.Any = js.native
+  def isSameColumn(a: antdLib.libTableInterfaceMod.ColumnProps[T]): js.Any = js.native
+  def isSameColumn(a: antdLib.libTableInterfaceMod.ColumnProps[T], b: antdLib.libTableInterfaceMod.ColumnProps[T]): js.Any = js.native
+  def isSameColumn(a: scala.Null, b: antdLib.libTableInterfaceMod.ColumnProps[T]): js.Any = js.native
   def isSortColumn(column: antdLib.libTableInterfaceMod.ColumnProps[T]): scala.Boolean = js.native
   def onRow(record: T, index: scala.Double): js.Any = js.native
   def prepareParamsArguments(state: js.Any): antdLib.libTableInterfaceMod.PrepareParamsArgumentsReturn[T] = js.native

@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RNode extends js.Object {
+  var nextSibling: RNode | scala.Null = js.native
+  var parentNode: RNode | scala.Null = js.native
   /**
        * Append a child node.
        *

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_DirectionalHint extends js.Object {
   var beakWidth: scala.Double
-  var directionalHint: officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint
+  var directionalHint: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibNumbers.`7`
   var gapSpace: scala.Double
   var isBeakVisible: scala.Boolean
   var minPagePadding: scala.Double

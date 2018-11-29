@@ -140,6 +140,49 @@ trait ServerlessApplicationRepository
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Creates an AWS CloudFormation template.
+     */
+  def createCloudFormationTemplate(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.CreateCloudFormationTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an AWS CloudFormation template.
+     */
+  def createCloudFormationTemplate(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.CreateCloudFormationTemplateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.CreateCloudFormationTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an AWS CloudFormation template.
+     */
+  def createCloudFormationTemplate(
+    params: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.CreateCloudFormationTemplateRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.CreateCloudFormationTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an AWS CloudFormation template.
+     */
+  def createCloudFormationTemplate(
+    params: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.CreateCloudFormationTemplateRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.CreateCloudFormationTemplateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.CreateCloudFormationTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Deletes the specified application.
      */
   def deleteApplication(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -249,6 +292,92 @@ trait ServerlessApplicationRepository
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Gets the specified AWS CloudFormation template.
+     */
+  def getCloudFormationTemplate(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.GetCloudFormationTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the specified AWS CloudFormation template.
+     */
+  def getCloudFormationTemplate(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.GetCloudFormationTemplateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.GetCloudFormationTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the specified AWS CloudFormation template.
+     */
+  def getCloudFormationTemplate(
+    params: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.GetCloudFormationTemplateRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.GetCloudFormationTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the specified AWS CloudFormation template.
+     */
+  def getCloudFormationTemplate(
+    params: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.GetCloudFormationTemplateRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.GetCloudFormationTemplateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.GetCloudFormationTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the list of applications nested in the containing application.
+     */
+  def listApplicationDependencies(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ListApplicationDependenciesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the list of applications nested in the containing application.
+     */
+  def listApplicationDependencies(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ListApplicationDependenciesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ListApplicationDependenciesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the list of applications nested in the containing application.
+     */
+  def listApplicationDependencies(
+    params: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ListApplicationDependenciesRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ListApplicationDependenciesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the list of applications nested in the containing application.
+     */
+  def listApplicationDependencies(
+    params: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ListApplicationDependenciesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ListApplicationDependenciesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ListApplicationDependenciesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Lists versions for the specified application.
      */
   def listApplicationVersions(): awsDashSdkLib.libRequestMod.Request[
@@ -335,18 +464,20 @@ trait ServerlessApplicationRepository
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the permission policy for an application. See
-   Application Permissions
-   for the list of supported actions that can be used with this operation.
+     * Sets the permission policy for an application. For the list of actions supported for this operation, see
+   Application 
+   Permissions
+   .
      */
   def putApplicationPolicy(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.PutApplicationPolicyResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the permission policy for an application. See
-   Application Permissions
-   for the list of supported actions that can be used with this operation.
+     * Sets the permission policy for an application. For the list of actions supported for this operation, see
+   Application 
+   Permissions
+   .
      */
   def putApplicationPolicy(
     callback: js.Function2[
@@ -359,9 +490,10 @@ trait ServerlessApplicationRepository
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the permission policy for an application. See
-   Application Permissions
-   for the list of supported actions that can be used with this operation.
+     * Sets the permission policy for an application. For the list of actions supported for this operation, see
+   Application 
+   Permissions
+   .
      */
   def putApplicationPolicy(
     params: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.PutApplicationPolicyRequest
@@ -370,9 +502,10 @@ trait ServerlessApplicationRepository
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the permission policy for an application. See
-   Application Permissions
-   for the list of supported actions that can be used with this operation.
+     * Sets the permission policy for an application. For the list of actions supported for this operation, see
+   Application 
+   Permissions
+   .
      */
   def putApplicationPolicy(
     params: awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.PutApplicationPolicyRequest,

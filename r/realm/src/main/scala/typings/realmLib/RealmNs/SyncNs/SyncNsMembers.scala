@@ -44,5 +44,6 @@ object SyncNsMembers extends js.Object {
   def setLogLevel_trace(logLevel: realmLib.realmLibStrings.trace): scala.Unit = js.native
   @JSName("setLogLevel")
   def setLogLevel_warn(logLevel: realmLib.realmLibStrings.warn): scala.Unit = js.native
+  def setUserAgent(userAgent: java.lang.String): scala.Unit = js.native
 }
 

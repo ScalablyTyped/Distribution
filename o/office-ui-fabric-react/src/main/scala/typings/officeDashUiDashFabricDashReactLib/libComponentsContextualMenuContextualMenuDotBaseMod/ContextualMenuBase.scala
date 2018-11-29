@@ -23,7 +23,18 @@ class ContextualMenuBase protected ()
   var _host: js.Any = js.native
   var _isFocusingPreviousElement: js.Any = js.native
   var _isScrollIdle: js.Any = js.native
+  /**
+       * Calls `shouldHandleKey` to determine whether the keyboard event should be handled;
+       * if so, stops event propagation and dismisses menu(s).
+       * @param ev The keyboard event.
+       * @param shouldHandleKey Returns whether we should handle this keyboard event.
+       * @param dismissAllMenus If true, dismiss all menus. Otherwise, dismiss only the current menu.
+       * Only does anything if `shouldHandleKey` returns true.
+       * @returns Whether the event was handled.
+       */
   var _keyHandler: js.Any = js.native
+  /** True if the most recent keydown event was for alt (option) or meta (command). */
+  var _lastKeyDownWasAltOrMeta: js.Any = js.native
   var _mounted: js.Any = js.native
   var _onAnchorClick: js.Any = js.native
   var _onItemClick: js.Any = js.native
@@ -53,13 +64,22 @@ class ContextualMenuBase protected ()
        */
   var _onSubMenuDismiss: js.Any = js.native
   var _previousActiveElement: js.Any = js.native
-  var _processingExpandCollapseKeyOnly: js.Any = js.native
   var _scrollIdleTimeoutId: js.Any = js.native
   /**
        * Checks if the submenu should be closed
        */
   var _shouldCloseSubMenu: js.Any = js.native
   var _shouldHandleKeyDown: js.Any = js.native
+  /**
+       * We close the menu on key up only if ALL of the following are true:
+       * - Most recent key down was alt or meta (command)
+       * - The alt/meta key down was NOT followed by some other key (such as down/up arrow to
+       *   expand/collapse the menu)
+       * - We're not on a Mac (or iOS)
+       *
+       * This is because on Windows, pressing alt moves focus to the application menu bar or similar,
+       * closing any open context menus. There is not a similar behavior on Macs.
+       */
   var _shouldHandleKeyUp: js.Any = js.native
   var _shouldUpdateFocusOnMouseEvent: js.Any = js.native
   var _target: js.Any = js.native
@@ -77,7 +97,10 @@ class ContextualMenuBase protected ()
        */
   /* private */ def _getFocusZoneDirection(): js.Any = js.native
   /* private */ def _getSubmenuProps(): js.Any = js.native
-  /* private */ def _isExpandCollapseKey(ev: js.Any): js.Any = js.native
+  /**
+       * Returns true if the key for the event is alt (Mac option) or meta (Mac command).
+       */
+  /* private */ def _isAltOrMeta(ev: js.Any): js.Any = js.native
   /* private */ def _onMenuClosed(): js.Any = js.native
   /* private */ def _onMenuOpened(): js.Any = js.native
   /* private */ def _onRenderSubMenu(subMenuProps: js.Any): js.Any = js.native

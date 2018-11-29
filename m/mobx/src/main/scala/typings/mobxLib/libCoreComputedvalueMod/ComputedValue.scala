@@ -30,7 +30,6 @@ class ComputedValue[T] protected ()
   override var diffValue: scala.Double = js.native
   @JSName("equals")
   var equals_FComputedValue: js.Any = js.native
-  var firstGet: js.Any = js.native
   /* CompleteClass */
   override var isBeingObserved: scala.Boolean = js.native
   var isComputing: scala.Boolean = js.native

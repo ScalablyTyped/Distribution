@@ -6,5 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait Context extends js.Object
+trait Context
+  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any]
 

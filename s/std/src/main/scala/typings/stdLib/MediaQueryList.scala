@@ -51,7 +51,7 @@ trait MediaQueryList extends EventTarget {
   /** @deprecated */
   def removeListener(): scala.Unit = js.native
   /** @deprecated */
-  def removeListener(listener: EventListenerOrEventListenerObject): scala.Unit = js.native
+  def removeListener(listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _]): scala.Unit = js.native
 }
 
 @JSGlobal("MediaQueryList")

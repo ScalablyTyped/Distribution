@@ -154,6 +154,7 @@ trait HostedFields extends js.Object {
        *   }
        * }, callback);
        */
+  def create(options: braintreeDashWebLib.Anon_Client): stdLib.Promise[HostedFields] = js.native
   def create(options: braintreeDashWebLib.Anon_Client, callback: callback): scala.Unit = js.native
   /**
        * Returns an {@link HostedFields~stateObject|object} that includes the state of all fields and possible card types.
@@ -182,7 +183,7 @@ trait HostedFields extends js.Object {
        * });
        * @returns {void}
        */
-  def on(event: java.lang.String, handler: js.Function1[/* event */ js.Any, _]): scala.Unit = js.native
+  def on(event: java.lang.String, handler: js.Function1[/* event */ HostedFieldsStateObject, scala.Unit]): scala.Unit = js.native
   /**
        * Removes a class to a {@link module:braintree-web/hosted-fields~field field}. Useful for updating field styles when events occur elsewhere in your checkout.
        * @public
@@ -352,7 +353,8 @@ trait HostedFields extends js.Object {
        * });
        * @returns {void}
        */
-  def tokenize(): scala.Unit = js.native
+  def tokenize(): stdLib.Promise[HostedFieldsTokenizePayload] = js.native
+  def tokenize(callback: callback): scala.Unit = js.native
   /**
        * Tokenizes fields and returns a nonce payload.
        * @public
@@ -394,48 +396,7 @@ trait HostedFields extends js.Object {
        * });
        * @returns {void}
        */
-  def tokenize(options: braintreeDashWebLib.Anon_Vault): scala.Unit = js.native
-  /**
-       * Tokenizes fields and returns a nonce payload.
-       * @public
-       * @param {object} [options] All tokenization options for the Hosted Fields component.
-       * @param {boolean} [options.vault=false] When true, will vault the tokenized card. Cards will only be vaulted when using a client created with a client token that includes a customer ID.
-       * @param {callback} callback The second argument, <code>data</code>, is a {@link HostedFields~tokenizePayload|tokenizePayload}
-       * @example <caption>Tokenize a card</caption>
-       * hostedFieldsInstance.tokenize(function (tokenizeErr, payload) {
-       *   if (tokenizeErr) {
-       *     switch (tokenizeErr.code) {
-       *       case 'HOSTED_FIELDS_FIELDS_EMPTY':
-       *         console.error('All fields are empty! Please fill out the form.');
-       *         break;
-       *       case 'HOSTED_FIELDS_FIELDS_INVALID':
-       *         console.error('Some fields are invalid:', tokenizeErr.details.invalidFieldKeys);
-       *         break;
-       *       case 'HOSTED_FIELDS_FAILED_TOKENIZATION':
-       *         console.error('Tokenization failed server side. Is the card valid?');
-       *         break;
-       *       case 'HOSTED_FIELDS_TOKENIZATION_NETWORK_ERROR':
-       *         console.error('Network error occurred when tokenizing.');
-       *         break;
-       *       default:
-       *         console.error('Something bad happened!', tokenizeErr);
-       *     }
-       *   } else {
-       *     console.log('Got nonce:', payload.nonce);
-       *   }
-       * });
-       * @example <caption>Tokenize and vault a card</caption>
-       * hostedFieldsInstance.tokenize({
-       *   vault: true
-       * }, function (tokenizeErr, payload) {
-       *   if (tokenizeErr) {
-       *     console.error(tokenizeErr);
-       *   } else {
-       *     console.log('Got nonce:', payload.nonce);
-       *   }
-       * });
-       * @returns {void}
-       */
-  def tokenize(options: braintreeDashWebLib.Anon_Vault, callback: callback): scala.Unit = js.native
+  def tokenize(options: braintreeDashWebLib.Anon_CardholderName): stdLib.Promise[HostedFieldsTokenizePayload] = js.native
+  def tokenize(options: braintreeDashWebLib.Anon_CardholderName, callback: callback): scala.Unit = js.native
 }
 

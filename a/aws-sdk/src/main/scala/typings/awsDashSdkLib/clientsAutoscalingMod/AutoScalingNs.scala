@@ -197,11 +197,15 @@ object AutoScalingNs extends js.Object {
          */
     var MinSize: AutoScalingGroupMinSize
     /**
+         * The mixed instances policy for the group. 
+         */
+    var MixedInstancesPolicy: js.UndefOr[MixedInstancesPolicy] = js.undefined
+    /**
          * Indicates whether newly launched instances are protected from termination by Auto Scaling when scaling in.
          */
     var NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined
     /**
-         * The name of the placement group into which you'll launch your instances, if any. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+         * The name of the placement group into which to launch your instances, if any. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
          */
     var PlacementGroup: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
@@ -361,7 +365,7 @@ object AutoScalingNs extends js.Object {
          */
     var Ebs: js.UndefOr[Ebs] = js.undefined
     /**
-         * Suppresses a device mapping. If this parameter is true for the root device, the instance might fail the EC2 health check. Amazon EC2 Auto Scaling launches a replacement instance if the instance fails the health check.
+         * Suppresses a device mapping. If this parameter is true for the root device, the instance might fail the EC2 health check. In that case, Amazon EC2 Auto Scaling launches a replacement instance.
          */
     var NoDevice: js.UndefOr[NoDevice] = js.undefined
     /**
@@ -432,15 +436,15 @@ object AutoScalingNs extends js.Object {
          */
     var HealthCheckType: js.UndefOr[XmlStringMaxLen32] = js.undefined
     /**
-         * The ID of the instance used to create a launch configuration for the group. You must specify one of the following: an EC2 instance, a launch configuration, or a launch template. When you specify an ID of an instance, Amazon EC2 Auto Scaling creates a new launch configuration and associates it with the group. This launch configuration derives its attributes from the specified instance, with the exception of the block device mapping. For more information, see Create an Auto Scaling Group Using an EC2 Instance in the Amazon EC2 Auto Scaling User Guide.
+         * The ID of the instance used to create a launch configuration for the group. This parameter, a launch configuration, a launch template, or a mixed instances policy must be specified. When you specify an ID of an instance, Amazon EC2 Auto Scaling creates a new launch configuration and associates it with the group. This launch configuration derives its attributes from the specified instance, except for the block device mapping. For more information, see Create an Auto Scaling Group Using an EC2 Instance in the Amazon EC2 Auto Scaling User Guide.
          */
     var InstanceId: js.UndefOr[XmlStringMaxLen19] = js.undefined
     /**
-         * The name of the launch configuration. You must specify one of the following: a launch configuration, a launch template, or an EC2 instance.
+         * The name of the launch configuration. This parameter, a launch template, a mixed instances policy, or an EC2 instance must be specified.
          */
     var LaunchConfigurationName: js.UndefOr[ResourceName] = js.undefined
     /**
-         * The launch template to use to launch instances. You must specify one of the following: a launch template, a launch configuration, or an EC2 instance.
+         * The launch template to use to launch instances. This parameter, a launch configuration, a mixed instances policy, or an EC2 instance must be specified.
          */
     var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
     /**
@@ -460,11 +464,15 @@ object AutoScalingNs extends js.Object {
          */
     var MinSize: AutoScalingGroupMinSize
     /**
+         * The mixed instances policy to use to launch instances. This parameter, a launch template, a launch configuration, or an EC2 instance must be specified.
+         */
+    var MixedInstancesPolicy: js.UndefOr[MixedInstancesPolicy] = js.undefined
+    /**
          * Indicates whether newly launched instances are protected from termination by Auto Scaling when scaling in.
          */
     var NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined
     /**
-         * The name of the placement group into which you'll launch your instances, if any. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+         * The name of the placement group into which to launch your instances, if any. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
          */
     var PlacementGroup: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
@@ -512,7 +520,7 @@ object AutoScalingNs extends js.Object {
          */
     var EbsOptimized: js.UndefOr[EbsOptimized] = js.undefined
     /**
-         * The name or the Amazon Resource Name (ARN) of the instance profile associated with the IAM role for the instance. EC2 instances launched with an IAM role will automatically have AWS security credentials available. You can use IAM roles with Amazon EC2 Auto Scaling to automatically enable applications running on your EC2 instances to securely access other AWS resources. For more information, see Launch Auto Scaling Instances with an IAM Role in the Amazon EC2 Auto Scaling User Guide.
+         * The name or the Amazon Resource Name (ARN) of the instance profile associated with the IAM role for the instance. EC2 instances launched with an IAM role automatically have AWS security credentials available. You can use IAM roles with Amazon EC2 Auto Scaling to automatically enable applications running on your EC2 instances to securely access other AWS resources. For more information, see Launch Auto Scaling Instances with an IAM Role in the Amazon EC2 Auto Scaling User Guide.
          */
     var IamInstanceProfile: js.UndefOr[XmlStringMaxLen1600] = js.undefined
     /**
@@ -520,7 +528,7 @@ object AutoScalingNs extends js.Object {
          */
     var ImageId: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-         * The ID of the instance to use to create the launch configuration. The new launch configuration derives attributes from the instance, with the exception of the block device mapping. If you do not specify InstanceId, you must specify both ImageId and InstanceType. To create a launch configuration with a block device mapping or override any other instance attributes, specify them as part of the same request. For more information, see Create a Launch Configuration Using an EC2 Instance in the Amazon EC2 Auto Scaling User Guide.
+         * The ID of the instance to use to create the launch configuration. The new launch configuration derives attributes from the instance, except for the block device mapping. If you do not specify InstanceId, you must specify both ImageId and InstanceType. To create a launch configuration with a block device mapping or override any other instance attributes, specify them as part of the same request. For more information, see Create a Launch Configuration Using an EC2 Instance in the Amazon EC2 Auto Scaling User Guide.
          */
     var InstanceId: js.UndefOr[XmlStringMaxLen19] = js.undefined
     /**
@@ -544,7 +552,7 @@ object AutoScalingNs extends js.Object {
          */
     var LaunchConfigurationName: XmlStringMaxLen255
     /**
-         * The tenancy of the instance. An instance with a tenancy of dedicated runs on single-tenant hardware and can only be launched into a VPC. You must set the value of this parameter to dedicated if want to launch Dedicated Instances into a shared tenancy VPC (VPC with instance placement tenancy attribute set to default). If you specify this parameter, be sure to specify at least one subnet when you create your group. For more information, see Launching Auto Scaling Instances in a VPC in the Amazon EC2 Auto Scaling User Guide. Valid values: default | dedicated 
+         * The tenancy of the instance. An instance with a tenancy of dedicated runs on single-tenant hardware and can only be launched into a VPC. To launch Dedicated Instances into a shared tenancy VPC (a VPC with the instance placement tenancy attribute set to default), you must set the value of this parameter to dedicated. If you specify this parameter, be sure to specify at least one subnet when you create your group. For more information, see Launching Auto Scaling Instances in a VPC in the Amazon EC2 Auto Scaling User Guide. Valid values: default | dedicated 
          */
     var PlacementTenancy: js.UndefOr[XmlStringMaxLen64] = js.undefined
     /**
@@ -552,7 +560,7 @@ object AutoScalingNs extends js.Object {
          */
     var RamdiskId: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-         * One or more security groups with which to associate the instances. If your instances are launched in EC2-Classic, you can either specify security group names or the security group IDs. For more information about security groups for EC2-Classic, see Amazon EC2 Security Groups in the Amazon Elastic Compute Cloud User Guide. If your instances are launched into a VPC, specify security group IDs. For more information, see Security Groups for Your VPC in the Amazon Virtual Private Cloud User Guide.
+         * One or more security groups with which to associate the instances. If your instances are launched in EC2-Classic, you can either specify security group names or the security group IDs. For more information, see Amazon EC2 Security Groups in the Amazon Elastic Compute Cloud User Guide. If your instances are launched into a VPC, specify security group IDs. For more information, see Security Groups for Your VPC in the Amazon Virtual Private Cloud User Guide.
          */
     var SecurityGroups: js.UndefOr[SecurityGroups] = js.undefined
     /**
@@ -604,7 +612,7 @@ object AutoScalingNs extends js.Object {
          */
     var AutoScalingGroupName: ResourceName
     /**
-         * Specifies that the group will be deleted along with all instances associated with the group, without waiting for all instances to be terminated. This parameter also deletes any lifecycle actions associated with the group.
+         * Specifies that the group is to be deleted along with all instances associated with the group, without waiting for all instances to be terminated. This parameter also deletes any lifecycle actions associated with the group.
          */
     var ForceDelete: js.UndefOr[ForceDelete] = js.undefined
   }
@@ -631,7 +639,7 @@ object AutoScalingNs extends js.Object {
          */
     var AutoScalingGroupName: ResourceName
     /**
-         * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic.
+         * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (Amazon SNS) topic.
          */
     var TopicARN: ResourceName
   }
@@ -859,7 +867,7 @@ object AutoScalingNs extends js.Object {
          */
     var NextToken: js.UndefOr[XmlString] = js.undefined
     /**
-         * The names of one or more policies. If you omit this parameter, all policies are described. If an group name is provided, the results are limited to that group. This list is limited to 50 items. If you specify an unknown policy name, it is ignored with no error.
+         * The names of one or more policies. If you omit this parameter, all policies are described. If a group name is provided, the results are limited to that group. This list is limited to 50 items. If you specify an unknown policy name, it is ignored with no error.
          */
     var PolicyNames: js.UndefOr[PolicyNames] = js.undefined
     /**
@@ -919,7 +927,7 @@ object AutoScalingNs extends js.Object {
   
   trait DescribeTagsType extends js.Object {
     /**
-         * A filter used to scope the tags to return.
+         * One or more filters to scope the tags to return. The maximum number of filters per filter type (for example, auto-scaling-group) is 1000.
          */
     var Filters: js.UndefOr[Filters] = js.undefined
     /**
@@ -935,7 +943,7 @@ object AutoScalingNs extends js.Object {
   
   trait DescribeTerminationPolicyTypesAnswer extends js.Object {
     /**
-         * The termination policies supported by Amazon EC2 Auto Scaling (OldestInstance, OldestLaunchConfiguration, NewestInstance, ClosestToNextInstanceHour, and Default).
+         * The termination policies supported by Amazon EC2 Auto Scaling: OldestInstance, OldestLaunchConfiguration, NewestInstance, ClosestToNextInstanceHour, Default, OldestLaunchTemplate, and AllocationStrategy. Currently, the OldestLaunchTemplate and AllocationStrategy policies are only supported for Auto Scaling groups with MixedInstancesPolicy.
          */
     var TerminationPolicyTypes: js.UndefOr[TerminationPolicies] = js.undefined
   }
@@ -1165,7 +1173,7 @@ object AutoScalingNs extends js.Object {
          */
     var AvailabilityZone: XmlStringMaxLen255
     /**
-         * The last reported health status of the instance. "Healthy" means that the instance is healthy and should remain in service. "Unhealthy" means that the instance is unhealthy and Amazon EC2 Auto Scaling should terminate and replace it.
+         * The last reported health status of the instance. "Healthy" means that the instance is healthy and should remain in service. "Unhealthy" means that the instance is unhealthy and that Amazon EC2 Auto Scaling should terminate and replace it.
          */
     var HealthStatus: XmlStringMaxLen32
     /**
@@ -1181,7 +1189,7 @@ object AutoScalingNs extends js.Object {
          */
     var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
     /**
-         * A description of the current lifecycle state. Note that the Quarantined state is not used.
+         * A description of the current lifecycle state. The Quarantined state is not used.
          */
     var LifecycleState: LifecycleState
     /**
@@ -1196,6 +1204,34 @@ object AutoScalingNs extends js.Object {
          * If true, detailed monitoring is enabled. Otherwise, basic monitoring is enabled.
          */
     var Enabled: js.UndefOr[MonitoringEnabled] = js.undefined
+  }
+  
+  
+  trait InstancesDistribution extends js.Object {
+    /**
+         * Indicates how to allocate instance types to fulfill On-Demand capacity.  The only valid value is prioritized, which is also the default value. This strategy uses the order of instance types in the Overrides array of LaunchTemplate to define the launch priority of each instance type. The first instance type in the array is prioritized higher than the last. If all your On-Demand capacity cannot be fulfilled using your highest priority instance, then the Auto Scaling groups launches the remaining capacity using the second priority instance type, and so on. 
+         */
+    var OnDemandAllocationStrategy: js.UndefOr[XmlString] = js.undefined
+    /**
+         * The minimum amount of the Auto Scaling group's capacity that must be fulfilled by On-Demand Instances. This base portion is provisioned first as your group scales. The default value is 0. If you leave this parameter set to 0, On-Demand Instances are launched as a percentage of the Auto Scaling group's desired capacity, per the OnDemandPercentageAboveBaseCapacity setting.
+         */
+    var OnDemandBaseCapacity: js.UndefOr[OnDemandBaseCapacity] = js.undefined
+    /**
+         * Controls the percentages of On-Demand Instances and Spot Instances for your additional capacity beyond OnDemandBaseCapacity.  The range is 0–100. The default value is 100. If you leave this parameter set to 100, the percentages are 100% for On-Demand Instances and 0% for Spot Instances. 
+         */
+    var OnDemandPercentageAboveBaseCapacity: js.UndefOr[OnDemandPercentageAboveBaseCapacity] = js.undefined
+    /**
+         * Indicates how to allocate Spot capacity across Spot pools. The only valid value is lowest-price, which is also the default value. The Auto Scaling group selects the cheapest Spot pools and evenly allocates your Spot capacity across the number of Spot pools that you specify. 
+         */
+    var SpotAllocationStrategy: js.UndefOr[XmlString] = js.undefined
+    /**
+         * The number of Spot pools to use to allocate your Spot capacity. The Spot pools are determined from the different instance types in the Overrides array of LaunchTemplate.  The range is 1–20 and the default is 2. 
+         */
+    var SpotInstancePools: js.UndefOr[SpotInstancePools] = js.undefined
+    /**
+         * The maximum price per unit hour that you are willing to pay for a Spot Instance. If you leave this value blank (which is the default), the maximum Spot price is set at the On-Demand price. 
+         */
+    var SpotMaxPrice: js.UndefOr[SpotPrice] = js.undefined
   }
   
   
@@ -1315,6 +1351,26 @@ object AutoScalingNs extends js.Object {
   }
   
   
+  trait LaunchTemplate extends js.Object {
+    /**
+         * The launch template to use. You must specify either the launch template ID or launch template name in the request. 
+         */
+    var LaunchTemplateSpecification: js.UndefOr[LaunchTemplateSpecification] = js.undefined
+    /**
+         * Any parameters that you specify override the same parameters in the launch template. Currently, the only supported override is instance type.  You must specify between 2 and 20 overrides.
+         */
+    var Overrides: js.UndefOr[Overrides] = js.undefined
+  }
+  
+  
+  trait LaunchTemplateOverrides extends js.Object {
+    /**
+         * The instance type.  For information about available instance types, see Available Instance Types in the Amazon Elastic Compute Cloud User Guide. 
+         */
+    var InstanceType: js.UndefOr[XmlStringMaxLen255] = js.undefined
+  }
+  
+  
   trait LaunchTemplateSpecification extends js.Object {
     /**
          * The ID of the launch template. You must specify either a template ID or a template name.
@@ -1353,7 +1409,7 @@ object AutoScalingNs extends js.Object {
          */
     var LifecycleHookName: js.UndefOr[AsciiStringMaxLen255] = js.undefined
     /**
-         * The state of the EC2 instance to which you want to attach the lifecycle hook. The following are possible values:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING  
+         * The state of the EC2 instance to which to attach the lifecycle hook. The following are possible values:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING  
          */
     var LifecycleTransition: js.UndefOr[LifecycleTransition] = js.undefined
     /**
@@ -1455,6 +1511,18 @@ object AutoScalingNs extends js.Object {
   }
   
   
+  trait MixedInstancesPolicy extends js.Object {
+    /**
+         * The instances distribution to use.  If you leave this parameter unspecified when creating the group, the default values are used.
+         */
+    var InstancesDistribution: js.UndefOr[InstancesDistribution] = js.undefined
+    /**
+         * The launch template and overrides. This parameter is required when creating an Auto Scaling group with a mixed instances policy, but is not required when updating the group.
+         */
+    var LaunchTemplate: js.UndefOr[LaunchTemplate] = js.undefined
+  }
+  
+  
   trait NotificationConfiguration extends js.Object {
     /**
          * The name of the Auto Scaling group.
@@ -1465,7 +1533,7 @@ object AutoScalingNs extends js.Object {
          */
     var NotificationType: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic.
+         * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (Amazon SNS) topic.
          */
     var TopicARN: js.UndefOr[ResourceName] = js.undefined
   }
@@ -1501,7 +1569,7 @@ object AutoScalingNs extends js.Object {
          */
     var PredefinedMetricType: MetricType
     /**
-         * Identifies the resource associated with the metric type. The following predefined metrics are available:    ASGAverageCPUUtilization - average CPU utilization of the Auto Scaling group    ASGAverageNetworkIn - average number of bytes received on all network interfaces by the Auto Scaling group    ASGAverageNetworkOut - average number of bytes sent out on all network interfaces by the Auto Scaling group    ALBRequestCountPerTarget - number of requests completed per target in an Application Load Balancer target group   For predefined metric types ASGAverageCPUUtilization, ASGAverageNetworkIn, and ASGAverageNetworkOut, the parameter must not be specified as the resource associated with the metric type is the Auto Scaling group. For predefined metric type ALBRequestCountPerTarget, the parameter must be specified in the format: app/load-balancer-name/load-balancer-id/targetgroup/target-group-name/target-group-id , where app/load-balancer-name/load-balancer-id  is the final portion of the load balancer ARN, and targetgroup/target-group-name/target-group-id  is the final portion of the target group ARN. The target group must be attached to the Auto Scaling group.
+         * Identifies the resource associated with the metric type. The following predefined metrics are available:    ASGAverageCPUUtilization - Average CPU utilization of the Auto Scaling group.    ASGAverageNetworkIn - Average number of bytes received on all network interfaces by the Auto Scaling group.    ASGAverageNetworkOut - Average number of bytes sent out on all network interfaces by the Auto Scaling group.    ALBRequestCountPerTarget - Number of requests completed per target in an Application Load Balancer target group.   For predefined metric types ASGAverageCPUUtilization, ASGAverageNetworkIn, and ASGAverageNetworkOut, the parameter must not be specified as the resource associated with the metric type is the Auto Scaling group. For predefined metric type ALBRequestCountPerTarget, the parameter must be specified in the format: app/load-balancer-name/load-balancer-id/targetgroup/target-group-name/target-group-id , where app/load-balancer-name/load-balancer-id  is the final portion of the load balancer ARN, and targetgroup/target-group-name/target-group-id  is the final portion of the target group ARN. The target group must be attached to the Auto Scaling group.
          */
     var ResourceLabel: js.UndefOr[XmlStringMaxLen1023] = js.undefined
   }
@@ -1552,7 +1620,7 @@ object AutoScalingNs extends js.Object {
          */
     var NotificationMetadata: js.UndefOr[XmlStringMaxLen1023] = js.undefined
     /**
-         * The ARN of the notification target that Amazon EC2 Auto Scaling will use to notify you when an instance is in the transition state for the lifecycle hook. This target can be either an SQS queue or an SNS topic. If you specify an empty string, this overrides the current ARN. This operation uses the JSON format when sending notifications to an Amazon SQS queue, and an email key/value pair format when sending notifications to an Amazon SNS topic. When you specify a notification target, Amazon EC2 Auto Scaling sends it a test message. Test messages contains the following additional key/value pair: "Event": "autoscaling:TEST_NOTIFICATION".
+         * The ARN of the notification target that Amazon EC2 Auto Scaling uses to notify you when an instance is in the transition state for the lifecycle hook. This target can be either an SQS queue or an SNS topic. If you specify an empty string, this overrides the current ARN. This operation uses the JSON format when sending notifications to an Amazon SQS queue, and an email key-value pair format when sending notifications to an Amazon SNS topic. When you specify a notification target, Amazon EC2 Auto Scaling sends it a test message. Test messages contain the following additional key-value pair: "Event": "autoscaling:TEST_NOTIFICATION".
          */
     var NotificationTargetARN: js.UndefOr[NotificationTargetResourceName] = js.undefined
     /**
@@ -1568,11 +1636,11 @@ object AutoScalingNs extends js.Object {
          */
     var AutoScalingGroupName: ResourceName
     /**
-         * The type of event that will cause the notification to be sent. For details about notification types supported by Amazon EC2 Auto Scaling, see DescribeAutoScalingNotificationTypes.
+         * The type of event that causes the notification to be sent. For more information about notification types supported by Amazon EC2 Auto Scaling, see DescribeAutoScalingNotificationTypes.
          */
     var NotificationTypes: AutoScalingNotificationTypes
     /**
-         * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (SNS) topic.
+         * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service (Amazon SNS) topic.
          */
     var TopicARN: ResourceName
   }
@@ -1683,7 +1751,7 @@ object AutoScalingNs extends js.Object {
          */
     var InstanceId: js.UndefOr[XmlStringMaxLen19] = js.undefined
     /**
-         * A token that uniquely identifies a specific lifecycle action associated with an instance. Amazon EC2 Auto Scaling sends this token to the notification target you specified when you created the lifecycle hook.
+         * A token that uniquely identifies a specific lifecycle action associated with an instance. Amazon EC2 Auto Scaling sends this token to the notification target that you specified when you created the lifecycle hook.
          */
     var LifecycleActionToken: js.UndefOr[LifecycleActionToken] = js.undefined
     /**
@@ -1811,7 +1879,7 @@ object AutoScalingNs extends js.Object {
          */
     var ScheduledActionName: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
-         * The date and time that the action is scheduled to begin. This date and time can be up to one month in the future. When StartTime and EndTime are specified with Recurrence, they form the boundaries of when the recurring action will start and stop.
+         * The date and time that the action is scheduled to begin. This date and time can be up to one month in the future. When StartTime and EndTime are specified with Recurrence, they form the boundaries of when the recurring action starts and stops.
          */
     var StartTime: js.UndefOr[TimestampType] = js.undefined
     /**
@@ -1871,7 +1939,7 @@ object AutoScalingNs extends js.Object {
   
   trait SetInstanceHealthQuery extends js.Object {
     /**
-         * The health status of the instance. Set to Healthy if you want the instance to remain in service. Set to Unhealthy if you want the instance to be out of service. Amazon EC2 Auto Scaling will terminate and replace the unhealthy instance.
+         * The health status of the instance. Set to Healthy to have the instance remain in service. Set to Unhealthy to have the instance be out of service. Amazon EC2 Auto Scaling terminates and replaces the unhealthy instance.
          */
     var HealthStatus: XmlStringMaxLen32
     /**
@@ -1879,7 +1947,7 @@ object AutoScalingNs extends js.Object {
          */
     var InstanceId: XmlStringMaxLen19
     /**
-         * If the Auto Scaling group of the specified instance has a HealthCheckGracePeriod specified for the group, by default, this call will respect the grace period. Set this to False, if you do not want the call to respect the grace period associated with the group. For more information, see the description of the health check grace period for CreateAutoScalingGroup.
+         * If the Auto Scaling group of the specified instance has a HealthCheckGracePeriod specified for the group, by default, this call respects the grace period. Set this to False, to have the call not respect the grace period associated with the group. For more information about the health check grace period, see CreateAutoScalingGroup.
          */
     var ShouldRespectGracePeriod: js.UndefOr[ShouldRespectGracePeriod] = js.undefined
   }
@@ -1998,7 +2066,7 @@ object AutoScalingNs extends js.Object {
          */
     var CustomizedMetricSpecification: js.UndefOr[CustomizedMetricSpecification] = js.undefined
     /**
-         * Indicates whether scale in by the target tracking policy is disabled. If scale in is disabled, the target tracking policy won't remove instances from the Auto Scaling group. Otherwise, the target tracking policy can remove instances from the Auto Scaling group. The default is disabled.
+         * Indicates whether scaling in by the target tracking policy is disabled. If scaling in is disabled, the target tracking policy doesn't remove instances from the Auto Scaling group. Otherwise, the target tracking policy can remove instances from the Auto Scaling group. The default is disabled.
          */
     var DisableScaleIn: js.UndefOr[DisableScaleIn] = js.undefined
     /**
@@ -2137,11 +2205,11 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchDeleteScheduledActionAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates one or more scheduled scaling actions for an Auto Scaling group. When updating a scheduled scaling action, if you leave a parameter unspecified, the corresponding value remains unchanged.
+       * Creates or updates one or more scheduled scaling actions for an Auto Scaling group. If you leave a parameter unspecified when updating a scheduled scaling action, the corresponding value remains unchanged.
        */
     def batchPutScheduledUpdateGroupAction(): awsDashSdkLib.libRequestMod.Request[BatchPutScheduledUpdateGroupActionAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates one or more scheduled scaling actions for an Auto Scaling group. When updating a scheduled scaling action, if you leave a parameter unspecified, the corresponding value remains unchanged.
+       * Creates or updates one or more scheduled scaling actions for an Auto Scaling group. If you leave a parameter unspecified when updating a scheduled scaling action, the corresponding value remains unchanged.
        */
     def batchPutScheduledUpdateGroupAction(
       callback: js.Function2[
@@ -2151,11 +2219,11 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchPutScheduledUpdateGroupActionAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates one or more scheduled scaling actions for an Auto Scaling group. When updating a scheduled scaling action, if you leave a parameter unspecified, the corresponding value remains unchanged.
+       * Creates or updates one or more scheduled scaling actions for an Auto Scaling group. If you leave a parameter unspecified when updating a scheduled scaling action, the corresponding value remains unchanged.
        */
     def batchPutScheduledUpdateGroupAction(params: BatchPutScheduledUpdateGroupActionType): awsDashSdkLib.libRequestMod.Request[BatchPutScheduledUpdateGroupActionAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates one or more scheduled scaling actions for an Auto Scaling group. When updating a scheduled scaling action, if you leave a parameter unspecified, the corresponding value remains unchanged.
+       * Creates or updates one or more scheduled scaling actions for an Auto Scaling group. If you leave a parameter unspecified when updating a scheduled scaling action, the corresponding value remains unchanged.
        */
     def batchPutScheduledUpdateGroupAction(
       params: BatchPutScheduledUpdateGroupActionType,
@@ -2258,21 +2326,21 @@ object AutoScalingNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified Auto Scaling group. If the group has instances or scaling activities in progress, you must specify the option to force the deletion in order for it to succeed. If the group has policies, deleting the group deletes the policies, the underlying alarm actions, and any alarm that no longer has an associated action. To remove instances from the Auto Scaling group before deleting it, call DetachInstances with the list of instances and the option to decrement the desired capacity so that Amazon EC2 Auto Scaling does not launch replacement instances. To terminate all instances before deleting the Auto Scaling group, call UpdateAutoScalingGroup and set the minimum size and desired capacity of the Auto Scaling group to zero.
+       * Deletes the specified Auto Scaling group. If the group has instances or scaling activities in progress, you must specify the option to force the deletion in order for it to succeed. If the group has policies, deleting the group deletes the policies, the underlying alarm actions, and any alarm that no longer has an associated action. To remove instances from the Auto Scaling group before deleting it, call DetachInstances with the list of instances and the option to decrement the desired capacity. This ensures that Amazon EC2 Auto Scaling does not launch replacement instances. To terminate all instances before deleting the Auto Scaling group, call UpdateAutoScalingGroup and set the minimum size and desired capacity of the Auto Scaling group to zero.
        */
     def deleteAutoScalingGroup(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified Auto Scaling group. If the group has instances or scaling activities in progress, you must specify the option to force the deletion in order for it to succeed. If the group has policies, deleting the group deletes the policies, the underlying alarm actions, and any alarm that no longer has an associated action. To remove instances from the Auto Scaling group before deleting it, call DetachInstances with the list of instances and the option to decrement the desired capacity so that Amazon EC2 Auto Scaling does not launch replacement instances. To terminate all instances before deleting the Auto Scaling group, call UpdateAutoScalingGroup and set the minimum size and desired capacity of the Auto Scaling group to zero.
+       * Deletes the specified Auto Scaling group. If the group has instances or scaling activities in progress, you must specify the option to force the deletion in order for it to succeed. If the group has policies, deleting the group deletes the policies, the underlying alarm actions, and any alarm that no longer has an associated action. To remove instances from the Auto Scaling group before deleting it, call DetachInstances with the list of instances and the option to decrement the desired capacity. This ensures that Amazon EC2 Auto Scaling does not launch replacement instances. To terminate all instances before deleting the Auto Scaling group, call UpdateAutoScalingGroup and set the minimum size and desired capacity of the Auto Scaling group to zero.
        */
     def deleteAutoScalingGroup(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified Auto Scaling group. If the group has instances or scaling activities in progress, you must specify the option to force the deletion in order for it to succeed. If the group has policies, deleting the group deletes the policies, the underlying alarm actions, and any alarm that no longer has an associated action. To remove instances from the Auto Scaling group before deleting it, call DetachInstances with the list of instances and the option to decrement the desired capacity so that Amazon EC2 Auto Scaling does not launch replacement instances. To terminate all instances before deleting the Auto Scaling group, call UpdateAutoScalingGroup and set the minimum size and desired capacity of the Auto Scaling group to zero.
+       * Deletes the specified Auto Scaling group. If the group has instances or scaling activities in progress, you must specify the option to force the deletion in order for it to succeed. If the group has policies, deleting the group deletes the policies, the underlying alarm actions, and any alarm that no longer has an associated action. To remove instances from the Auto Scaling group before deleting it, call DetachInstances with the list of instances and the option to decrement the desired capacity. This ensures that Amazon EC2 Auto Scaling does not launch replacement instances. To terminate all instances before deleting the Auto Scaling group, call UpdateAutoScalingGroup and set the minimum size and desired capacity of the Auto Scaling group to zero.
        */
     def deleteAutoScalingGroup(params: DeleteAutoScalingGroupType): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified Auto Scaling group. If the group has instances or scaling activities in progress, you must specify the option to force the deletion in order for it to succeed. If the group has policies, deleting the group deletes the policies, the underlying alarm actions, and any alarm that no longer has an associated action. To remove instances from the Auto Scaling group before deleting it, call DetachInstances with the list of instances and the option to decrement the desired capacity so that Amazon EC2 Auto Scaling does not launch replacement instances. To terminate all instances before deleting the Auto Scaling group, call UpdateAutoScalingGroup and set the minimum size and desired capacity of the Auto Scaling group to zero.
+       * Deletes the specified Auto Scaling group. If the group has instances or scaling activities in progress, you must specify the option to force the deletion in order for it to succeed. If the group has policies, deleting the group deletes the policies, the underlying alarm actions, and any alarm that no longer has an associated action. To remove instances from the Auto Scaling group before deleting it, call DetachInstances with the list of instances and the option to decrement the desired capacity. This ensures that Amazon EC2 Auto Scaling does not launch replacement instances. To terminate all instances before deleting the Auto Scaling group, call UpdateAutoScalingGroup and set the minimum size and desired capacity of the Auto Scaling group to zero.
        */
     def deleteAutoScalingGroup(
       params: DeleteAutoScalingGroupType,
@@ -2614,11 +2682,11 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeLoadBalancerTargetGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the load balancers for the specified Auto Scaling group. Note that this operation describes only Classic Load Balancers. If you have Application Load Balancers, use DescribeLoadBalancerTargetGroups instead.
+       * Describes the load balancers for the specified Auto Scaling group. This operation describes only Classic Load Balancers. If you have Application Load Balancers, use DescribeLoadBalancerTargetGroups instead.
        */
     def describeLoadBalancers(): awsDashSdkLib.libRequestMod.Request[DescribeLoadBalancersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the load balancers for the specified Auto Scaling group. Note that this operation describes only Classic Load Balancers. If you have Application Load Balancers, use DescribeLoadBalancerTargetGroups instead.
+       * Describes the load balancers for the specified Auto Scaling group. This operation describes only Classic Load Balancers. If you have Application Load Balancers, use DescribeLoadBalancerTargetGroups instead.
        */
     def describeLoadBalancers(
       callback: js.Function2[
@@ -2628,11 +2696,11 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeLoadBalancersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the load balancers for the specified Auto Scaling group. Note that this operation describes only Classic Load Balancers. If you have Application Load Balancers, use DescribeLoadBalancerTargetGroups instead.
+       * Describes the load balancers for the specified Auto Scaling group. This operation describes only Classic Load Balancers. If you have Application Load Balancers, use DescribeLoadBalancerTargetGroups instead.
        */
     def describeLoadBalancers(params: DescribeLoadBalancersRequest): awsDashSdkLib.libRequestMod.Request[DescribeLoadBalancersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the load balancers for the specified Auto Scaling group. Note that this operation describes only Classic Load Balancers. If you have Application Load Balancers, use DescribeLoadBalancerTargetGroups instead.
+       * Describes the load balancers for the specified Auto Scaling group. This operation describes only Classic Load Balancers. If you have Application Load Balancers, use DescribeLoadBalancerTargetGroups instead.
        */
     def describeLoadBalancers(
       params: DescribeLoadBalancersRequest,
@@ -2643,11 +2711,11 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeLoadBalancersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the available CloudWatch metrics for Amazon EC2 Auto Scaling. Note that the GroupStandbyInstances metric is not returned by default. You must explicitly request this metric when calling EnableMetricsCollection.
+       * Describes the available CloudWatch metrics for Amazon EC2 Auto Scaling. The GroupStandbyInstances metric is not returned by default. You must explicitly request this metric when calling EnableMetricsCollection.
        */
     def describeMetricCollectionTypes(): awsDashSdkLib.libRequestMod.Request[DescribeMetricCollectionTypesAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the available CloudWatch metrics for Amazon EC2 Auto Scaling. Note that the GroupStandbyInstances metric is not returned by default. You must explicitly request this metric when calling EnableMetricsCollection.
+       * Describes the available CloudWatch metrics for Amazon EC2 Auto Scaling. The GroupStandbyInstances metric is not returned by default. You must explicitly request this metric when calling EnableMetricsCollection.
        */
     def describeMetricCollectionTypes(
       callback: js.Function2[
@@ -2788,11 +2856,11 @@ object AutoScalingNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ TagsType, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[TagsType, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the termination policies supported by Amazon EC2 Auto Scaling.
+       * Describes the termination policies supported by Amazon EC2 Auto Scaling. For more information, see Controlling Which Auto Scaling Instances Terminate During Scale In in the Amazon EC2 Auto Scaling User Guide.
        */
     def describeTerminationPolicyTypes(): awsDashSdkLib.libRequestMod.Request[DescribeTerminationPolicyTypesAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the termination policies supported by Amazon EC2 Auto Scaling.
+       * Describes the termination policies supported by Amazon EC2 Auto Scaling. For more information, see Controlling Which Auto Scaling Instances Terminate During Scale In in the Amazon EC2 Auto Scaling User Guide.
        */
     def describeTerminationPolicyTypes(
       callback: js.Function2[
@@ -2860,11 +2928,11 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DetachLoadBalancerTargetGroupsResultType, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches one or more Classic Load Balancers from the specified Auto Scaling group. Note that this operation detaches only Classic Load Balancers. If you have Application Load Balancers, use DetachLoadBalancerTargetGroups instead. When you detach a load balancer, it enters the Removing state while deregistering the instances in the group. When all instances are deregistered, then you can no longer describe the load balancer using DescribeLoadBalancers. Note that the instances remain running.
+       * Detaches one or more Classic Load Balancers from the specified Auto Scaling group. This operation detaches only Classic Load Balancers. If you have Application Load Balancers, use DetachLoadBalancerTargetGroups instead. When you detach a load balancer, it enters the Removing state while deregistering the instances in the group. When all instances are deregistered, then you can no longer describe the load balancer using DescribeLoadBalancers. The instances remain running.
        */
     def detachLoadBalancers(): awsDashSdkLib.libRequestMod.Request[DetachLoadBalancersResultType, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches one or more Classic Load Balancers from the specified Auto Scaling group. Note that this operation detaches only Classic Load Balancers. If you have Application Load Balancers, use DetachLoadBalancerTargetGroups instead. When you detach a load balancer, it enters the Removing state while deregistering the instances in the group. When all instances are deregistered, then you can no longer describe the load balancer using DescribeLoadBalancers. Note that the instances remain running.
+       * Detaches one or more Classic Load Balancers from the specified Auto Scaling group. This operation detaches only Classic Load Balancers. If you have Application Load Balancers, use DetachLoadBalancerTargetGroups instead. When you detach a load balancer, it enters the Removing state while deregistering the instances in the group. When all instances are deregistered, then you can no longer describe the load balancer using DescribeLoadBalancers. The instances remain running.
        */
     def detachLoadBalancers(
       callback: js.Function2[
@@ -2874,11 +2942,11 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DetachLoadBalancersResultType, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches one or more Classic Load Balancers from the specified Auto Scaling group. Note that this operation detaches only Classic Load Balancers. If you have Application Load Balancers, use DetachLoadBalancerTargetGroups instead. When you detach a load balancer, it enters the Removing state while deregistering the instances in the group. When all instances are deregistered, then you can no longer describe the load balancer using DescribeLoadBalancers. Note that the instances remain running.
+       * Detaches one or more Classic Load Balancers from the specified Auto Scaling group. This operation detaches only Classic Load Balancers. If you have Application Load Balancers, use DetachLoadBalancerTargetGroups instead. When you detach a load balancer, it enters the Removing state while deregistering the instances in the group. When all instances are deregistered, then you can no longer describe the load balancer using DescribeLoadBalancers. The instances remain running.
        */
     def detachLoadBalancers(params: DetachLoadBalancersType): awsDashSdkLib.libRequestMod.Request[DetachLoadBalancersResultType, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches one or more Classic Load Balancers from the specified Auto Scaling group. Note that this operation detaches only Classic Load Balancers. If you have Application Load Balancers, use DetachLoadBalancerTargetGroups instead. When you detach a load balancer, it enters the Removing state while deregistering the instances in the group. When all instances are deregistered, then you can no longer describe the load balancer using DescribeLoadBalancers. Note that the instances remain running.
+       * Detaches one or more Classic Load Balancers from the specified Auto Scaling group. This operation detaches only Classic Load Balancers. If you have Application Load Balancers, use DetachLoadBalancerTargetGroups instead. When you detach a load balancer, it enters the Removing state while deregistering the instances in the group. When all instances are deregistered, then you can no longer describe the load balancer using DescribeLoadBalancers. The instances remain running.
        */
     def detachLoadBalancers(
       params: DetachLoadBalancersType,
@@ -3010,11 +3078,11 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ExitStandbyAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a lifecycle hook for the specified Auto Scaling Group. A lifecycle hook tells Amazon EC2 Auto Scaling that you want to perform an action on an instance that is not actively in service; for example, either when the instance launches or before the instance terminates. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.   If you finish before the timeout period ends, complete the lifecycle action.   For more information, see Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
+       * Creates or updates a lifecycle hook for the specified Auto Scaling group. A lifecycle hook tells Amazon EC2 Auto Scaling to perform an action on an instance that is not actively in service; for example, either when the instance launches or before the instance terminates. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.   If you finish before the timeout period ends, complete the lifecycle action.   For more information, see Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
        */
     def putLifecycleHook(): awsDashSdkLib.libRequestMod.Request[PutLifecycleHookAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a lifecycle hook for the specified Auto Scaling Group. A lifecycle hook tells Amazon EC2 Auto Scaling that you want to perform an action on an instance that is not actively in service; for example, either when the instance launches or before the instance terminates. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.   If you finish before the timeout period ends, complete the lifecycle action.   For more information, see Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
+       * Creates or updates a lifecycle hook for the specified Auto Scaling group. A lifecycle hook tells Amazon EC2 Auto Scaling to perform an action on an instance that is not actively in service; for example, either when the instance launches or before the instance terminates. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.   If you finish before the timeout period ends, complete the lifecycle action.   For more information, see Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
        */
     def putLifecycleHook(
       callback: js.Function2[
@@ -3024,11 +3092,11 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutLifecycleHookAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a lifecycle hook for the specified Auto Scaling Group. A lifecycle hook tells Amazon EC2 Auto Scaling that you want to perform an action on an instance that is not actively in service; for example, either when the instance launches or before the instance terminates. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.   If you finish before the timeout period ends, complete the lifecycle action.   For more information, see Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
+       * Creates or updates a lifecycle hook for the specified Auto Scaling group. A lifecycle hook tells Amazon EC2 Auto Scaling to perform an action on an instance that is not actively in service; for example, either when the instance launches or before the instance terminates. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.   If you finish before the timeout period ends, complete the lifecycle action.   For more information, see Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
        */
     def putLifecycleHook(params: PutLifecycleHookType): awsDashSdkLib.libRequestMod.Request[PutLifecycleHookAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a lifecycle hook for the specified Auto Scaling Group. A lifecycle hook tells Amazon EC2 Auto Scaling that you want to perform an action on an instance that is not actively in service; for example, either when the instance launches or before the instance terminates. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.   If you finish before the timeout period ends, complete the lifecycle action.   For more information, see Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
+       * Creates or updates a lifecycle hook for the specified Auto Scaling group. A lifecycle hook tells Amazon EC2 Auto Scaling to perform an action on an instance that is not actively in service; for example, either when the instance launches or before the instance terminates. This step is a part of the procedure for adding a lifecycle hook to an Auto Scaling group:   (Optional) Create a Lambda function and a rule that allows CloudWatch Events to invoke your Lambda function when Amazon EC2 Auto Scaling launches or terminates instances.   (Optional) Create a notification target and an IAM role. The target can be either an Amazon SQS queue or an Amazon SNS topic. The role allows Amazon EC2 Auto Scaling to publish lifecycle notifications to the target.    Create the lifecycle hook. Specify whether the hook is used when the instances launch or terminate.    If you need more time, record the lifecycle action heartbeat to keep the instance in a pending state.   If you finish before the timeout period ends, complete the lifecycle action.   For more information, see Auto Scaling Lifecycle Hooks in the Amazon EC2 Auto Scaling User Guide. If you exceed your maximum limit of lifecycle hooks, which by default is 50 per Auto Scaling group, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
        */
     def putLifecycleHook(
       params: PutLifecycleHookType,
@@ -3039,63 +3107,63 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutLifecycleHookAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Configures an Auto Scaling group to send notifications when specified events take place. Subscribers to the specified topic can have messages delivered to an endpoint such as a web server or an email address. This configuration overwrites any existing configuration. For more information see Getting SNS Notifications When Your Auto Scaling Group Scales in the Auto Scaling User Guide.
+       * Configures an Auto Scaling group to send notifications when specified events take place. Subscribers to the specified topic can have messages delivered to an endpoint such as a web server or an email address. This configuration overwrites any existing configuration. For more information, see Getting SNS Notifications When Your Auto Scaling Group Scales in the Auto Scaling User Guide.
        */
     def putNotificationConfiguration(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Configures an Auto Scaling group to send notifications when specified events take place. Subscribers to the specified topic can have messages delivered to an endpoint such as a web server or an email address. This configuration overwrites any existing configuration. For more information see Getting SNS Notifications When Your Auto Scaling Group Scales in the Auto Scaling User Guide.
+       * Configures an Auto Scaling group to send notifications when specified events take place. Subscribers to the specified topic can have messages delivered to an endpoint such as a web server or an email address. This configuration overwrites any existing configuration. For more information, see Getting SNS Notifications When Your Auto Scaling Group Scales in the Auto Scaling User Guide.
        */
     def putNotificationConfiguration(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Configures an Auto Scaling group to send notifications when specified events take place. Subscribers to the specified topic can have messages delivered to an endpoint such as a web server or an email address. This configuration overwrites any existing configuration. For more information see Getting SNS Notifications When Your Auto Scaling Group Scales in the Auto Scaling User Guide.
+       * Configures an Auto Scaling group to send notifications when specified events take place. Subscribers to the specified topic can have messages delivered to an endpoint such as a web server or an email address. This configuration overwrites any existing configuration. For more information, see Getting SNS Notifications When Your Auto Scaling Group Scales in the Auto Scaling User Guide.
        */
     def putNotificationConfiguration(params: PutNotificationConfigurationType): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Configures an Auto Scaling group to send notifications when specified events take place. Subscribers to the specified topic can have messages delivered to an endpoint such as a web server or an email address. This configuration overwrites any existing configuration. For more information see Getting SNS Notifications When Your Auto Scaling Group Scales in the Auto Scaling User Guide.
+       * Configures an Auto Scaling group to send notifications when specified events take place. Subscribers to the specified topic can have messages delivered to an endpoint such as a web server or an email address. This configuration overwrites any existing configuration. For more information, see Getting SNS Notifications When Your Auto Scaling Group Scales in the Auto Scaling User Guide.
        */
     def putNotificationConfiguration(
       params: PutNotificationConfigurationType,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a policy for an Auto Scaling group. To update an existing policy, use the existing policy name and set the parameters you want to change. Any existing parameter not changed in an update to an existing policy is not changed in this update request. If you exceed your maximum limit of step adjustments, which by default is 20 per region, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
+       * Creates or updates a policy for an Auto Scaling group. To update an existing policy, use the existing policy name and set the parameters to change. Any existing parameter not changed in an update to an existing policy is not changed in this update request. If you exceed your maximum limit of step adjustments, which by default is 20 per region, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
        */
     def putScalingPolicy(): awsDashSdkLib.libRequestMod.Request[PolicyARNType, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a policy for an Auto Scaling group. To update an existing policy, use the existing policy name and set the parameters you want to change. Any existing parameter not changed in an update to an existing policy is not changed in this update request. If you exceed your maximum limit of step adjustments, which by default is 20 per region, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
+       * Creates or updates a policy for an Auto Scaling group. To update an existing policy, use the existing policy name and set the parameters to change. Any existing parameter not changed in an update to an existing policy is not changed in this update request. If you exceed your maximum limit of step adjustments, which by default is 20 per region, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
        */
     def putScalingPolicy(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ PolicyARNType, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[PolicyARNType, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a policy for an Auto Scaling group. To update an existing policy, use the existing policy name and set the parameters you want to change. Any existing parameter not changed in an update to an existing policy is not changed in this update request. If you exceed your maximum limit of step adjustments, which by default is 20 per region, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
+       * Creates or updates a policy for an Auto Scaling group. To update an existing policy, use the existing policy name and set the parameters to change. Any existing parameter not changed in an update to an existing policy is not changed in this update request. If you exceed your maximum limit of step adjustments, which by default is 20 per region, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
        */
     def putScalingPolicy(params: PutScalingPolicyType): awsDashSdkLib.libRequestMod.Request[PolicyARNType, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a policy for an Auto Scaling group. To update an existing policy, use the existing policy name and set the parameters you want to change. Any existing parameter not changed in an update to an existing policy is not changed in this update request. If you exceed your maximum limit of step adjustments, which by default is 20 per region, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
+       * Creates or updates a policy for an Auto Scaling group. To update an existing policy, use the existing policy name and set the parameters to change. Any existing parameter not changed in an update to an existing policy is not changed in this update request. If you exceed your maximum limit of step adjustments, which by default is 20 per region, the call fails. For information about updating this limit, see AWS Service Limits in the Amazon Web Services General Reference.
        */
     def putScalingPolicy(
       params: PutScalingPolicyType,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ PolicyARNType, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[PolicyARNType, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a scheduled scaling action for an Auto Scaling group. When updating a scheduled scaling action, if you leave a parameter unspecified, the corresponding value remains unchanged. For more information, see Scheduled Scaling in the Amazon EC2 Auto Scaling User Guide.
+       * Creates or updates a scheduled scaling action for an Auto Scaling group. If you leave a parameter unspecified when updating a scheduled scaling action, the corresponding value remains unchanged. For more information, see Scheduled Scaling in the Amazon EC2 Auto Scaling User Guide.
        */
     def putScheduledUpdateGroupAction(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a scheduled scaling action for an Auto Scaling group. When updating a scheduled scaling action, if you leave a parameter unspecified, the corresponding value remains unchanged. For more information, see Scheduled Scaling in the Amazon EC2 Auto Scaling User Guide.
+       * Creates or updates a scheduled scaling action for an Auto Scaling group. If you leave a parameter unspecified when updating a scheduled scaling action, the corresponding value remains unchanged. For more information, see Scheduled Scaling in the Amazon EC2 Auto Scaling User Guide.
        */
     def putScheduledUpdateGroupAction(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a scheduled scaling action for an Auto Scaling group. When updating a scheduled scaling action, if you leave a parameter unspecified, the corresponding value remains unchanged. For more information, see Scheduled Scaling in the Amazon EC2 Auto Scaling User Guide.
+       * Creates or updates a scheduled scaling action for an Auto Scaling group. If you leave a parameter unspecified when updating a scheduled scaling action, the corresponding value remains unchanged. For more information, see Scheduled Scaling in the Amazon EC2 Auto Scaling User Guide.
        */
     def putScheduledUpdateGroupAction(params: PutScheduledUpdateGroupActionType): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates or updates a scheduled scaling action for an Auto Scaling group. When updating a scheduled scaling action, if you leave a parameter unspecified, the corresponding value remains unchanged. For more information, see Scheduled Scaling in the Amazon EC2 Auto Scaling User Guide.
+       * Creates or updates a scheduled scaling action for an Auto Scaling group. If you leave a parameter unspecified when updating a scheduled scaling action, the corresponding value remains unchanged. For more information, see Scheduled Scaling in the Amazon EC2 Auto Scaling User Guide.
        */
     def putScheduledUpdateGroupAction(
       params: PutScheduledUpdateGroupActionType,
@@ -3223,21 +3291,21 @@ object AutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[SetInstanceProtectionAnswer, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Suspends the specified automatic scaling processes, or all processes, for the specified Auto Scaling group. Note that if you suspend either the Launch or Terminate process types, it can prevent other process types from functioning properly. To resume processes that have been suspended, use ResumeProcesses. For more information, see Suspending and Resuming Scaling Processes in the Amazon EC2 Auto Scaling User Guide.
+       * Suspends the specified automatic scaling processes, or all processes, for the specified Auto Scaling group. If you suspend either the Launch or Terminate process types, it can prevent other process types from functioning properly. To resume processes that have been suspended, use ResumeProcesses. For more information, see Suspending and Resuming Scaling Processes in the Amazon EC2 Auto Scaling User Guide.
        */
     def suspendProcesses(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Suspends the specified automatic scaling processes, or all processes, for the specified Auto Scaling group. Note that if you suspend either the Launch or Terminate process types, it can prevent other process types from functioning properly. To resume processes that have been suspended, use ResumeProcesses. For more information, see Suspending and Resuming Scaling Processes in the Amazon EC2 Auto Scaling User Guide.
+       * Suspends the specified automatic scaling processes, or all processes, for the specified Auto Scaling group. If you suspend either the Launch or Terminate process types, it can prevent other process types from functioning properly. To resume processes that have been suspended, use ResumeProcesses. For more information, see Suspending and Resuming Scaling Processes in the Amazon EC2 Auto Scaling User Guide.
        */
     def suspendProcesses(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Suspends the specified automatic scaling processes, or all processes, for the specified Auto Scaling group. Note that if you suspend either the Launch or Terminate process types, it can prevent other process types from functioning properly. To resume processes that have been suspended, use ResumeProcesses. For more information, see Suspending and Resuming Scaling Processes in the Amazon EC2 Auto Scaling User Guide.
+       * Suspends the specified automatic scaling processes, or all processes, for the specified Auto Scaling group. If you suspend either the Launch or Terminate process types, it can prevent other process types from functioning properly. To resume processes that have been suspended, use ResumeProcesses. For more information, see Suspending and Resuming Scaling Processes in the Amazon EC2 Auto Scaling User Guide.
        */
     def suspendProcesses(params: ScalingProcessQuery): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Suspends the specified automatic scaling processes, or all processes, for the specified Auto Scaling group. Note that if you suspend either the Launch or Terminate process types, it can prevent other process types from functioning properly. To resume processes that have been suspended, use ResumeProcesses. For more information, see Suspending and Resuming Scaling Processes in the Amazon EC2 Auto Scaling User Guide.
+       * Suspends the specified automatic scaling processes, or all processes, for the specified Auto Scaling group. If you suspend either the Launch or Terminate process types, it can prevent other process types from functioning properly. To resume processes that have been suspended, use ResumeProcesses. For more information, see Suspending and Resuming Scaling Processes in the Amazon EC2 Auto Scaling User Guide.
        */
     def suspendProcesses(
       params: ScalingProcessQuery,
@@ -3265,21 +3333,21 @@ object AutoScalingNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ ActivityType, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[ActivityType, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates the configuration for the specified Auto Scaling group. The new settings take effect on any scaling activities after this call returns. Scaling activities that are currently in progress aren't affected. To update an Auto Scaling group with a launch configuration with InstanceMonitoring set to false, you must first disable the collection of group metrics. Otherwise, you will get an error. If you have previously enabled the collection of group metrics, you can disable it using DisableMetricsCollection. Note the following:   If you specify a new value for MinSize without specifying a value for DesiredCapacity, and the new MinSize is larger than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MinSize.   If you specify a new value for MaxSize without specifying a value for DesiredCapacity, and the new MaxSize is smaller than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MaxSize.   All other optional parameters are left unchanged if not specified.  
+       * Updates the configuration for the specified Auto Scaling group. The new settings take effect on any scaling activities after this call returns. Scaling activities that are currently in progress aren't affected. To update an Auto Scaling group with a launch configuration with InstanceMonitoring set to false, you must first disable the collection of group metrics. Otherwise, you get an error. If you have previously enabled the collection of group metrics, you can disable it using DisableMetricsCollection. Note the following:   If you specify a new value for MinSize without specifying a value for DesiredCapacity, and the new MinSize is larger than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MinSize.   If you specify a new value for MaxSize without specifying a value for DesiredCapacity, and the new MaxSize is smaller than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MaxSize.   All other optional parameters are left unchanged if not specified.  
        */
     def updateAutoScalingGroup(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates the configuration for the specified Auto Scaling group. The new settings take effect on any scaling activities after this call returns. Scaling activities that are currently in progress aren't affected. To update an Auto Scaling group with a launch configuration with InstanceMonitoring set to false, you must first disable the collection of group metrics. Otherwise, you will get an error. If you have previously enabled the collection of group metrics, you can disable it using DisableMetricsCollection. Note the following:   If you specify a new value for MinSize without specifying a value for DesiredCapacity, and the new MinSize is larger than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MinSize.   If you specify a new value for MaxSize without specifying a value for DesiredCapacity, and the new MaxSize is smaller than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MaxSize.   All other optional parameters are left unchanged if not specified.  
+       * Updates the configuration for the specified Auto Scaling group. The new settings take effect on any scaling activities after this call returns. Scaling activities that are currently in progress aren't affected. To update an Auto Scaling group with a launch configuration with InstanceMonitoring set to false, you must first disable the collection of group metrics. Otherwise, you get an error. If you have previously enabled the collection of group metrics, you can disable it using DisableMetricsCollection. Note the following:   If you specify a new value for MinSize without specifying a value for DesiredCapacity, and the new MinSize is larger than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MinSize.   If you specify a new value for MaxSize without specifying a value for DesiredCapacity, and the new MaxSize is smaller than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MaxSize.   All other optional parameters are left unchanged if not specified.  
        */
     def updateAutoScalingGroup(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates the configuration for the specified Auto Scaling group. The new settings take effect on any scaling activities after this call returns. Scaling activities that are currently in progress aren't affected. To update an Auto Scaling group with a launch configuration with InstanceMonitoring set to false, you must first disable the collection of group metrics. Otherwise, you will get an error. If you have previously enabled the collection of group metrics, you can disable it using DisableMetricsCollection. Note the following:   If you specify a new value for MinSize without specifying a value for DesiredCapacity, and the new MinSize is larger than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MinSize.   If you specify a new value for MaxSize without specifying a value for DesiredCapacity, and the new MaxSize is smaller than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MaxSize.   All other optional parameters are left unchanged if not specified.  
+       * Updates the configuration for the specified Auto Scaling group. The new settings take effect on any scaling activities after this call returns. Scaling activities that are currently in progress aren't affected. To update an Auto Scaling group with a launch configuration with InstanceMonitoring set to false, you must first disable the collection of group metrics. Otherwise, you get an error. If you have previously enabled the collection of group metrics, you can disable it using DisableMetricsCollection. Note the following:   If you specify a new value for MinSize without specifying a value for DesiredCapacity, and the new MinSize is larger than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MinSize.   If you specify a new value for MaxSize without specifying a value for DesiredCapacity, and the new MaxSize is smaller than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MaxSize.   All other optional parameters are left unchanged if not specified.  
        */
     def updateAutoScalingGroup(params: UpdateAutoScalingGroupType): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates the configuration for the specified Auto Scaling group. The new settings take effect on any scaling activities after this call returns. Scaling activities that are currently in progress aren't affected. To update an Auto Scaling group with a launch configuration with InstanceMonitoring set to false, you must first disable the collection of group metrics. Otherwise, you will get an error. If you have previously enabled the collection of group metrics, you can disable it using DisableMetricsCollection. Note the following:   If you specify a new value for MinSize without specifying a value for DesiredCapacity, and the new MinSize is larger than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MinSize.   If you specify a new value for MaxSize without specifying a value for DesiredCapacity, and the new MaxSize is smaller than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MaxSize.   All other optional parameters are left unchanged if not specified.  
+       * Updates the configuration for the specified Auto Scaling group. The new settings take effect on any scaling activities after this call returns. Scaling activities that are currently in progress aren't affected. To update an Auto Scaling group with a launch configuration with InstanceMonitoring set to false, you must first disable the collection of group metrics. Otherwise, you get an error. If you have previously enabled the collection of group metrics, you can disable it using DisableMetricsCollection. Note the following:   If you specify a new value for MinSize without specifying a value for DesiredCapacity, and the new MinSize is larger than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MinSize.   If you specify a new value for MaxSize without specifying a value for DesiredCapacity, and the new MaxSize is smaller than the current size of the group, we implicitly call SetDesiredCapacity to set the size of the group to the new value of MaxSize.   All other optional parameters are left unchanged if not specified.  
        */
     def updateAutoScalingGroup(
       params: UpdateAutoScalingGroupType,
@@ -3314,11 +3382,11 @@ object AutoScalingNs extends js.Object {
          */
     var HealthCheckType: js.UndefOr[XmlStringMaxLen32] = js.undefined
     /**
-         * The name of the launch configuration. If you specify a launch configuration, you can't specify a launch template.
+         * The name of the launch configuration. If you specify this parameter, you can't specify a launch template or a mixed instances policy.
          */
     var LaunchConfigurationName: js.UndefOr[ResourceName] = js.undefined
     /**
-         * The launch template to use to specify the updates. If you specify a launch template, you can't specify a launch configuration.
+         * The launch template and version to use to specify the updates. If you specify this parameter, you can't specify a launch configuration or a mixed instances policy.
          */
     var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
     /**
@@ -3330,11 +3398,15 @@ object AutoScalingNs extends js.Object {
          */
     var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
     /**
+         * The mixed instances policy to use to specify the updates. If you specify this parameter, you can't specify a launch configuration or a launch template. 
+         */
+    var MixedInstancesPolicy: js.UndefOr[MixedInstancesPolicy] = js.undefined
+    /**
          * Indicates whether newly launched instances are protected from termination by Auto Scaling when scaling in.
          */
     var NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined
     /**
-         * The name of the placement group into which you'll launch your instances, if any. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
+         * The name of the placement group into which to launch your instances, if any. For more information, see Placement Groups in the Amazon Elastic Compute Cloud User Guide.
          */
     var PlacementGroup: js.UndefOr[XmlStringMaxLen255] = js.undefined
     /**
@@ -3425,6 +3497,9 @@ object AutoScalingNs extends js.Object {
   type NotificationTargetResourceName = java.lang.String
   type NumberOfAutoScalingGroups = scala.Double
   type NumberOfLaunchConfigurations = scala.Double
+  type OnDemandBaseCapacity = scala.Double
+  type OnDemandPercentageAboveBaseCapacity = scala.Double
+  type Overrides = js.Array[LaunchTemplateOverrides]
   type PolicyIncrement = scala.Double
   type PolicyNames = js.Array[ResourceName]
   type PolicyTypes = js.Array[XmlStringMaxLen64]
@@ -3442,6 +3517,7 @@ object AutoScalingNs extends js.Object {
   type SecurityGroups = js.Array[XmlString]
   type ShouldDecrementDesiredCapacity = scala.Boolean
   type ShouldRespectGracePeriod = scala.Boolean
+  type SpotInstancePools = scala.Double
   type SpotPrice = java.lang.String
   type StepAdjustments = js.Array[StepAdjustment]
   type SuspendedProcesses = js.Array[SuspendedProcess]

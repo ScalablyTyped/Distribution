@@ -18,7 +18,7 @@ object libTreeModMembers extends js.Object {
     /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     fpDashTsLib.libSetoidMod.Setoid[Tree[js.Any]]
   ] = js.native
-  val tree: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libFoldableMod.Foldable1[URI] with fpDashTsLib.libTraversableMod.Traversable1[URI] with fpDashTsLib.libComonadMod.Comonad1[URI] = js.native
+  val tree: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[URI] with fpDashTsLib.libComonadMod.Comonad1[URI] = js.native
   val unfoldForest: js.Function2[
     /* bs */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
     /* f */ js.Function1[/* b */ js.Any, js.Tuple2[js.Any, fpDashTsLib.libArrayMod.Global.Array[js.Any]]], 

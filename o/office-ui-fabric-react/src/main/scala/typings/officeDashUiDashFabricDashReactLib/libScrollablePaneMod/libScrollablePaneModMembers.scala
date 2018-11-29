@@ -12,5 +12,6 @@ object libScrollablePaneModMembers extends js.Object {
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsScrollablePaneScrollablePaneDotTypesMod.IScrollablePaneProps, 
     reactLib.reactMod.Global.JSXNs.Element
   ] = js.native
+  val ScrollbarVisibility: officeDashUiDashFabricDashReactLib.Anon_Always = js.native
 }
 

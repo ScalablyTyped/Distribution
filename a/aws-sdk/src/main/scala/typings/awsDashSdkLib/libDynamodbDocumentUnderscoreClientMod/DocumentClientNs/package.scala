@@ -25,6 +25,7 @@ package object DocumentClientNs {
   type BackupType = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | java.lang.String
   type BackupTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
   type BackupsInputLimit = scala.Double
+  type BillingMode = awsDashSdkLib.awsDashSdkLibStrings.PROVISIONED | awsDashSdkLib.awsDashSdkLibStrings.PAY_PER_REQUEST | java.lang.String
   type BinaryAttributeValue = nodeLib.Buffer | stdLib.Uint8Array | Blob | java.lang.String
   type BinarySetAttributeValue = js.Array[BinaryAttributeValue]
   type BooleanAttributeValue = scala.Boolean
@@ -58,6 +59,7 @@ package object DocumentClientNs {
   type ItemCollectionSizeEstimateRange = js.Array[ItemCollectionSizeEstimateBound]
   type ItemCount = scala.Double
   type ItemList = js.Array[AttributeMap]
+  type ItemResponseList = js.Array[ItemResponse]
   type KMSMasterKeyArn = java.lang.String
   type KMSMasterKeyId = java.lang.String
   type KeyExpression = java.lang.String
@@ -74,6 +76,7 @@ package object DocumentClientNs {
   type NextTokenString = java.lang.String
   type NonKeyAttributeName = java.lang.String
   type NonKeyAttributeNameList = js.Array[NonKeyAttributeName]
+  type NonNegativeLongObject = scala.Double
   type NullAttributeValue = scala.Boolean
   type NumberAttributeValue = java.lang.String
   type NumberSetAttributeValue = js.Array[NumberAttributeValue]
@@ -96,6 +99,7 @@ package object DocumentClientNs {
   type ReturnConsumedCapacity = awsDashSdkLib.awsDashSdkLibStrings.INDEXES | awsDashSdkLib.awsDashSdkLibStrings.TOTAL | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
   type ReturnItemCollectionMetrics = awsDashSdkLib.awsDashSdkLibStrings.SIZE | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
   type ReturnValue = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.ALL_OLD | awsDashSdkLib.awsDashSdkLibStrings.UPDATED_OLD | awsDashSdkLib.awsDashSdkLibStrings.ALL_NEW | awsDashSdkLib.awsDashSdkLibStrings.UPDATED_NEW | java.lang.String
+  type ReturnValuesOnConditionCheckFailure = awsDashSdkLib.awsDashSdkLibStrings.ALL_OLD | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
   type SSEEnabled = scala.Boolean
   type SSEStatus = awsDashSdkLib.awsDashSdkLibStrings.ENABLING | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLING | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | java.lang.String
   type SSEType = awsDashSdkLib.awsDashSdkLibStrings.AES256 | awsDashSdkLib.awsDashSdkLibStrings.KMS | java.lang.String
@@ -124,6 +128,8 @@ package object DocumentClientNs {
   type TimeToLiveAttributeName = java.lang.String
   type TimeToLiveEnabled = scala.Boolean
   type TimeToLiveStatus = awsDashSdkLib.awsDashSdkLibStrings.ENABLING | awsDashSdkLib.awsDashSdkLibStrings.DISABLING | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type TransactGetItemList = js.Array[TransactGetItem]
+  type TransactWriteItemList = js.Array[TransactWriteItem]
   type UpdateExpression = java.lang.String
   type WriteRequests = js.Array[WriteRequest]
   type _Date = stdLib.Date

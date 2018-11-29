@@ -20,6 +20,10 @@ abstract class Element protected () extends AbstractElement {
        */
   def deepCopy(targetModel: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.IAbstractModel): this.type = js.native
   /**
+       * Creates a deep copy of this element and its children. Also returns a map from original to new IDs.
+       */
+  def deepCopyWithIdMap(targetModel: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.IAbstractModel): mendixmodelsdkLib.Anon_Copy = js.native
+  /**
        * Detaches this element from the model, so that it can be attached in a different place.
        */
   def detach(): this.type = js.native

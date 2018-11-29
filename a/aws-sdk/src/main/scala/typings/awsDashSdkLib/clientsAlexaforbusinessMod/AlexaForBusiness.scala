@@ -11,6 +11,47 @@ trait AlexaForBusiness
   @JSName("config")
   var config_AlexaForBusiness: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ClientConfiguration = js.native
   /**
+     * Associates a skill with the organization under the customer's AWS account. If a skill is private, the user implicitly accepts access to this skill during enablement.
+     */
+  def approveSkill(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ApproveSkillResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates a skill with the organization under the customer's AWS account. If a skill is private, the user implicitly accepts access to this skill during enablement.
+     */
+  def approveSkill(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ApproveSkillResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ApproveSkillResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates a skill with the organization under the customer's AWS account. If a skill is private, the user implicitly accepts access to this skill during enablement.
+     */
+  def approveSkill(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ApproveSkillRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ApproveSkillResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates a skill with the organization under the customer's AWS account. If a skill is private, the user implicitly accepts access to this skill during enablement.
+     */
+  def approveSkill(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ApproveSkillRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ApproveSkillResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ApproveSkillResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Associates a contact with a given address book.
      */
   def associateContactWithAddressBook(): awsDashSdkLib.libRequestMod.Request[
@@ -138,6 +179,49 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Associates a skill with a skill group.
+     */
+  def associateSkillWithSkillGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithSkillGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates a skill with a skill group.
+     */
+  def associateSkillWithSkillGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithSkillGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithSkillGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates a skill with a skill group.
+     */
+  def associateSkillWithSkillGroup(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithSkillGroupRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithSkillGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates a skill with a skill group.
+     */
+  def associateSkillWithSkillGroup(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithSkillGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithSkillGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AssociateSkillWithSkillGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Creates an address book with the specified details.
      */
   def createAddressBook(): awsDashSdkLib.libRequestMod.Request[
@@ -176,6 +260,49 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateAddressBookResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a new conference provider under the user's AWS account.
+     */
+  def createConferenceProvider(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a new conference provider under the user's AWS account.
+     */
+  def createConferenceProvider(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateConferenceProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a new conference provider under the user's AWS account.
+     */
+  def createConferenceProvider(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateConferenceProviderRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds a new conference provider under the user's AWS account.
+     */
+  def createConferenceProvider(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateConferenceProviderRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateConferenceProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateConferenceProviderResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -425,6 +552,49 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Deletes a conference provider.
+     */
+  def deleteConferenceProvider(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a conference provider.
+     */
+  def deleteConferenceProvider(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteConferenceProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a conference provider.
+     */
+  def deleteConferenceProvider(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteConferenceProviderRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a conference provider.
+     */
+  def deleteConferenceProvider(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteConferenceProviderRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteConferenceProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Deletes a contact by the contact ARN.
      */
   def deleteContact(): awsDashSdkLib.libRequestMod.Request[
@@ -463,6 +633,47 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteContactResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes a device from Alexa For Business.
+     */
+  def deleteDevice(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteDeviceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes a device from Alexa For Business.
+     */
+  def deleteDevice(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteDeviceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteDeviceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes a device from Alexa For Business.
+     */
+  def deleteDevice(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteDeviceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteDeviceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes a device from Alexa For Business.
+     */
+  def deleteDevice(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteDeviceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteDeviceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteDeviceResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -588,6 +799,49 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteRoomSkillParameterResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Unlinks a third-party account from a skill.
+     */
+  def deleteSkillAuthorization(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteSkillAuthorizationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Unlinks a third-party account from a skill.
+     */
+  def deleteSkillAuthorization(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteSkillAuthorizationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteSkillAuthorizationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Unlinks a third-party account from a skill.
+     */
+  def deleteSkillAuthorization(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteSkillAuthorizationRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteSkillAuthorizationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Unlinks a third-party account from a skill.
+     */
+  def deleteSkillAuthorization(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteSkillAuthorizationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteSkillAuthorizationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteSkillAuthorizationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -759,6 +1013,49 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Disassociates a skill from a skill group.
+     */
+  def disassociateSkillFromSkillGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromSkillGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a skill from a skill group.
+     */
+  def disassociateSkillFromSkillGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromSkillGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromSkillGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a skill from a skill group.
+     */
+  def disassociateSkillFromSkillGroup(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromSkillGroupRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromSkillGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a skill from a skill group.
+     */
+  def disassociateSkillFromSkillGroup(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromSkillGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromSkillGroupResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DisassociateSkillFromSkillGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Disassociates a skill group from a specified room. This disables all skills in the skill group on all devices in the room.
      */
   def disassociateSkillGroupFromRoom(): awsDashSdkLib.libRequestMod.Request[
@@ -802,6 +1099,49 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Forgets smart home appliances associated to a room.
+     */
+  def forgetSmartHomeAppliances(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ForgetSmartHomeAppliancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Forgets smart home appliances associated to a room.
+     */
+  def forgetSmartHomeAppliances(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ForgetSmartHomeAppliancesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ForgetSmartHomeAppliancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Forgets smart home appliances associated to a room.
+     */
+  def forgetSmartHomeAppliances(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ForgetSmartHomeAppliancesRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ForgetSmartHomeAppliancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Forgets smart home appliances associated to a room.
+     */
+  def forgetSmartHomeAppliances(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ForgetSmartHomeAppliancesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ForgetSmartHomeAppliancesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ForgetSmartHomeAppliancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Gets address the book details by the address book ARN.
      */
   def getAddressBook(): awsDashSdkLib.libRequestMod.Request[
@@ -840,6 +1180,88 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetAddressBookResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the existing conference preferences.
+     */
+  def getConferencePreference(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferencePreferenceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the existing conference preferences.
+     */
+  def getConferencePreference(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferencePreferenceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferencePreferenceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the existing conference preferences.
+     */
+  def getConferencePreference(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferencePreferenceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferencePreferenceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the existing conference preferences.
+     */
+  def getConferencePreference(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferencePreferenceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferencePreferenceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferencePreferenceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets details about a specific conference provider.
+     */
+  def getConferenceProvider(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets details about a specific conference provider.
+     */
+  def getConferenceProvider(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferenceProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets details about a specific conference provider.
+     */
+  def getConferenceProvider(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferenceProviderRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets details about a specific conference provider.
+     */
+  def getConferenceProvider(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferenceProviderRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferenceProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetConferenceProviderResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1089,6 +1511,47 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Lists conference providers under a specific AWS account.
+     */
+  def listConferenceProviders(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListConferenceProvidersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists conference providers under a specific AWS account.
+     */
+  def listConferenceProviders(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListConferenceProvidersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListConferenceProvidersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists conference providers under a specific AWS account.
+     */
+  def listConferenceProviders(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListConferenceProvidersRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListConferenceProvidersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists conference providers under a specific AWS account.
+     */
+  def listConferenceProviders(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListConferenceProvidersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListConferenceProvidersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListConferenceProvidersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Lists the device event history, including device connection status, for up to 30 days.
      */
   def listDeviceEvents(): awsDashSdkLib.libRequestMod.Request[
@@ -1171,6 +1634,133 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Lists all categories in the Alexa skill store.
+     */
+  def listSkillsStoreCategories(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreCategoriesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all categories in the Alexa skill store.
+     */
+  def listSkillsStoreCategories(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreCategoriesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreCategoriesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all categories in the Alexa skill store.
+     */
+  def listSkillsStoreCategories(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreCategoriesRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreCategoriesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all categories in the Alexa skill store.
+     */
+  def listSkillsStoreCategories(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreCategoriesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreCategoriesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreCategoriesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all skills in the Alexa skill store by category.
+     */
+  def listSkillsStoreSkillsByCategory(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreSkillsByCategoryResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all skills in the Alexa skill store by category.
+     */
+  def listSkillsStoreSkillsByCategory(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreSkillsByCategoryResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreSkillsByCategoryResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all skills in the Alexa skill store by category.
+     */
+  def listSkillsStoreSkillsByCategory(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreSkillsByCategoryRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreSkillsByCategoryResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all skills in the Alexa skill store by category.
+     */
+  def listSkillsStoreSkillsByCategory(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreSkillsByCategoryRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreSkillsByCategoryResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSkillsStoreSkillsByCategoryResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all of the smart home appliances associated with a room.
+     */
+  def listSmartHomeAppliances(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSmartHomeAppliancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all of the smart home appliances associated with a room.
+     */
+  def listSmartHomeAppliances(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSmartHomeAppliancesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSmartHomeAppliancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all of the smart home appliances associated with a room.
+     */
+  def listSmartHomeAppliances(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSmartHomeAppliancesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSmartHomeAppliancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists all of the smart home appliances associated with a room.
+     */
+  def listSmartHomeAppliances(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSmartHomeAppliancesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSmartHomeAppliancesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListSmartHomeAppliancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Lists all tags for the specified resource.
      */
   def listTags(): awsDashSdkLib.libRequestMod.Request[
@@ -1212,6 +1802,47 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Sets the conference preferences on a specific conference provider at the account level.
+     */
+  def putConferencePreference(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutConferencePreferenceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Sets the conference preferences on a specific conference provider at the account level.
+     */
+  def putConferencePreference(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutConferencePreferenceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutConferencePreferenceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Sets the conference preferences on a specific conference provider at the account level.
+     */
+  def putConferencePreference(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutConferencePreferenceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutConferencePreferenceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Sets the conference preferences on a specific conference provider at the account level.
+     */
+  def putConferencePreference(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutConferencePreferenceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutConferencePreferenceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutConferencePreferenceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Updates room skill parameter details by room, skill, and parameter key ID. Not all skills have a room skill parameter.
      */
   def putRoomSkillParameter(): awsDashSdkLib.libRequestMod.Request[
@@ -1250,6 +1881,129 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutRoomSkillParameterResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Links a user's account to a third-party skill provider. If this API operation is called by an assumed IAM role, the skill being linked must be a private skill. Also, the skill must be owned by the AWS account that assumed the IAM role.
+     */
+  def putSkillAuthorization(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutSkillAuthorizationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Links a user's account to a third-party skill provider. If this API operation is called by an assumed IAM role, the skill being linked must be a private skill. Also, the skill must be owned by the AWS account that assumed the IAM role.
+     */
+  def putSkillAuthorization(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutSkillAuthorizationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutSkillAuthorizationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Links a user's account to a third-party skill provider. If this API operation is called by an assumed IAM role, the skill being linked must be a private skill. Also, the skill must be owned by the AWS account that assumed the IAM role.
+     */
+  def putSkillAuthorization(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutSkillAuthorizationRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutSkillAuthorizationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Links a user's account to a third-party skill provider. If this API operation is called by an assumed IAM role, the skill being linked must be a private skill. Also, the skill must be owned by the AWS account that assumed the IAM role.
+     */
+  def putSkillAuthorization(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutSkillAuthorizationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutSkillAuthorizationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutSkillAuthorizationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM) using Alexa Voice Service (AVS).
+     */
+  def registerAVSDevice(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RegisterAVSDeviceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM) using Alexa Voice Service (AVS).
+     */
+  def registerAVSDevice(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RegisterAVSDeviceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RegisterAVSDeviceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM) using Alexa Voice Service (AVS).
+     */
+  def registerAVSDevice(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RegisterAVSDeviceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RegisterAVSDeviceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Registers an Alexa-enabled device built by an Original Equipment Manufacturer (OEM) using Alexa Voice Service (AVS).
+     */
+  def registerAVSDevice(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RegisterAVSDeviceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RegisterAVSDeviceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RegisterAVSDeviceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a skill from the organization under a user's AWS account. If the skill is a private skill, it moves to an AcceptStatus of PENDING. Any private or public skill that is rejected can be added later by calling the ApproveSkill API. 
+     */
+  def rejectSkill(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RejectSkillResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a skill from the organization under a user's AWS account. If the skill is a private skill, it moves to an AcceptStatus of PENDING. Any private or public skill that is rejected can be added later by calling the ApproveSkill API. 
+     */
+  def rejectSkill(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RejectSkillResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RejectSkillResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a skill from the organization under a user's AWS account. If the skill is a private skill, it moves to an AcceptStatus of PENDING. Any private or public skill that is rejected can be added later by calling the ApproveSkill API. 
+     */
+  def rejectSkill(params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RejectSkillRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RejectSkillResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a skill from the organization under a user's AWS account. If the skill is a private skill, it moves to an AcceptStatus of PENDING. Any private or public skill that is rejected can be added later by calling the ApproveSkill API. 
+     */
+  def rejectSkill(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RejectSkillRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RejectSkillResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RejectSkillResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1704,6 +2458,49 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Initiates the discovery of any smart home appliances associated with the room.
+     */
+  def startSmartHomeApplianceDiscovery(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.StartSmartHomeApplianceDiscoveryResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Initiates the discovery of any smart home appliances associated with the room.
+     */
+  def startSmartHomeApplianceDiscovery(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.StartSmartHomeApplianceDiscoveryResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.StartSmartHomeApplianceDiscoveryResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Initiates the discovery of any smart home appliances associated with the room.
+     */
+  def startSmartHomeApplianceDiscovery(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.StartSmartHomeApplianceDiscoveryRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.StartSmartHomeApplianceDiscoveryResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Initiates the discovery of any smart home appliances associated with the room.
+     */
+  def startSmartHomeApplianceDiscovery(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.StartSmartHomeApplianceDiscoveryRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.StartSmartHomeApplianceDiscoveryResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.StartSmartHomeApplianceDiscoveryResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Adds metadata tags to a specified resource.
      */
   def tagResource(): awsDashSdkLib.libRequestMod.Request[
@@ -1824,6 +2621,49 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateAddressBookResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an existing conference provider's settings.
+     */
+  def updateConferenceProvider(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an existing conference provider's settings.
+     */
+  def updateConferenceProvider(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateConferenceProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an existing conference provider's settings.
+     */
+  def updateConferenceProvider(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateConferenceProviderRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateConferenceProviderResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an existing conference provider's settings.
+     */
+  def updateConferenceProvider(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateConferenceProviderRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateConferenceProviderResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateConferenceProviderResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

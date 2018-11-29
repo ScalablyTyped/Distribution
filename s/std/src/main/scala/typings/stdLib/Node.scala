@@ -45,6 +45,7 @@ trait Node extends EventTarget {
        * Returns the last child.
        */
   val lastChild: ChildNode | scala.Null = js.native
+  /** @deprecated */
   val namespaceURI: java.lang.String | scala.Null = js.native
   /**
        * Returns the next sibling.

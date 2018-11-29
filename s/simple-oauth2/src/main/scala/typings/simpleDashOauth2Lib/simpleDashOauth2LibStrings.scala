@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object simpleDashOauth2LibStrings {
   @js.native
+  sealed trait Anon_AuthorizeURL extends js.Object
+  
+  @js.native
   sealed trait access_token extends js.Object
   
   @js.native
@@ -24,6 +27,7 @@ object simpleDashOauth2LibStrings {
   @js.native
   sealed trait refresh_token extends js.Object
   
+  def Anon_AuthorizeURL: Anon_AuthorizeURL = "Anon_AuthorizeURL".asInstanceOf[Anon_AuthorizeURL]
   def access_token: access_token = "access_token".asInstanceOf[access_token]
   def body: body = "body".asInstanceOf[body]
   def form: form = "form".asInstanceOf[form]

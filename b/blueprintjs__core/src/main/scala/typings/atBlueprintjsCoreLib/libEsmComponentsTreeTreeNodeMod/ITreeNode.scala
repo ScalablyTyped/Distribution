@@ -21,7 +21,7 @@ trait ITreeNode[T]
        * The name of a Blueprint icon (or an icon element) to render next to the node's label.
        */
   var icon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /**
        * A unique identifier for the node.
@@ -48,6 +48,6 @@ trait ITreeNode[T]
   /**
        * A secondary label/component that is displayed at the right side of the node.
        */
-  var secondaryLabel: js.UndefOr[java.lang.String | reactLib.reactMod.Global.JSXNs.Element] = js.undefined
+  var secondaryLabel: js.UndefOr[java.lang.String | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement] = js.undefined
 }
 

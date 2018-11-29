@@ -12,6 +12,10 @@ trait TableDescription extends js.Object {
        */
   var AttributeDefinitions: js.UndefOr[AttributeDefinitions] = js.undefined
   /**
+       * Contains the details for the read/write capacity mode.
+       */
+  var BillingModeSummary: js.UndefOr[BillingModeSummary] = js.undefined
+  /**
        * The date and time when the table was created, in UNIX epoch time format.
        */
   var CreationDateTime: js.UndefOr[_Date] = js.undefined

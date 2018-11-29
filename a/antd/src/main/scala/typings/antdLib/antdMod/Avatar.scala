@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd", "Avatar")
 @js.native
-class Avatar protected ()
-  extends antdLib.libAvatarMod.default {
-  def this(props: antdLib.libAvatarMod.AvatarProps) = this()
-}
+class Avatar ()
+  extends antdLib.libAvatarMod.default
 
 @JSImport("antd", "Avatar")
 @js.native

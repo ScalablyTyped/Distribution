@@ -13,6 +13,12 @@ class Output[T] ()
 @JSImport("@pulumi/pulumi", "Output")
 @js.native
 object Output extends js.Object {
+  def create[T](): atPulumiPulumiLib.resourceMod.Output[atPulumiPulumiLib.resourceMod.Unwrap[js.UndefOr[T]]] = js.native
+  /**
+       * create takes any Input value and converts it into an Output, deeply unwrapping nested Input
+       * values as necessary.
+       */
+  def create[T](`val`: atPulumiPulumiLib.resourceMod.Input[T]): atPulumiPulumiLib.resourceMod.Output[atPulumiPulumiLib.resourceMod.Unwrap[T]] = js.native
   /**
        * Returns true if the given object is an instance of Output<T>.  This is designed to work even when
        * multiple copies of the Pulumi SDK have been loaded into the same process.

@@ -12,7 +12,7 @@ trait Set[T] extends js.Object {
   var iterator: js.Function0[IterableIterator[T]] = js.native
   val size: scala.Double = js.native
   @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
-  val toStringTag: stdLib.stdLibStrings.Set = js.native
+  val toStringTag: java.lang.String = js.native
   def add(value: T): this.type = js.native
   def clear(): scala.Unit = js.native
   def delete(value: T): scala.Boolean = js.native

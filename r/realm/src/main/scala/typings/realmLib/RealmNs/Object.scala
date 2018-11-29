@@ -18,7 +18,7 @@ trait Object extends js.Object {
   /**
            * @returns Results<T>
            */
-  def linkingObjects[T](objectType: java.lang.String, property: java.lang.String): Results[T]
+  def linkingObjects[T](objectType: java.lang.String, property: java.lang.String): Results[T with Object]
   /**
            * @returns number
            */

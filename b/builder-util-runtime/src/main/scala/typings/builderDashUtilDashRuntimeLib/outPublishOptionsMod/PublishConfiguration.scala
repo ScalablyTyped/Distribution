@@ -22,7 +22,13 @@ trait PublishConfiguration extends js.Object {
   val publishAutoUpdate: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * @private
+       * win-only
        */
-  val publisherName: js.UndefOr[js.Array[java.lang.String] | scala.Null] = js.undefined
+  var publisherName: js.UndefOr[js.Array[java.lang.String] | scala.Null] = js.undefined
+  /**
+       * @private
+       * win-only
+       */
+  val updaterCacheDirName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 

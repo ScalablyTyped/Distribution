@@ -9,9 +9,22 @@ import scala.scalajs.js.annotation._
 @js.native
 object ServerlessApplicationRepositoryNs extends js.Object {
   
+  trait ApplicationDependencySummary extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the nested application.
+         */
+    var ApplicationId: __string
+    /**
+         * The semantic version of the nested application.
+         */
+    var SemanticVersion: __string
+  }
+  
+  
   trait ApplicationPolicyStatement extends js.Object {
     /**
-         * See Application Permissions for the list of supported actions.
+         * For the list of actions supported for this operation, see Application 
+     Permissions.
          */
     var Actions: __listOf__string
     /**
@@ -90,11 +103,11 @@ object ServerlessApplicationRepositoryNs extends js.Object {
     var Labels: js.UndefOr[__listOf__string] = js.undefined
     /**
          * A local text file that contains the license of the app that matches the spdxLicenseID value of your application.
-     The file is of the format file://&lt;path>/&lt;filename>.Maximum size 5 MBNote: Only one of licenseBody and licenseUrl can be specified, otherwise an error will result.
+     The file has the format file://&lt;path>/&lt;filename>.Maximum size 5 MBYou can specify only one of licenseBody and licenseUrl; otherwise, an error results.
          */
     var LicenseBody: js.UndefOr[__string] = js.undefined
     /**
-         * A link to the S3 object that contains the license of the app that matches the spdxLicenseID value of your application.Maximum size 5 MBNote: Only one of licenseBody and licenseUrl can be specified, otherwise an error will result.
+         * A link to the S3 object that contains the license of the app that matches the spdxLicenseID value of your application.Maximum size 5 MBYou can specify only one of licenseBody and licenseUrl; otherwise, an error results.
          */
     var LicenseUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -103,11 +116,11 @@ object ServerlessApplicationRepositoryNs extends js.Object {
     var Name: __string
     /**
          * A local text readme file in Markdown language that contains a more detailed description of the application and how it works.
-     The file is of the format file://&lt;path>/&lt;filename>.Maximum size 5 MBNote: Only one of readmeBody and readmeUrl can be specified, otherwise an error will result.
+     The file has the format file://&lt;path>/&lt;filename>.Maximum size 5 MBYou can specify only one of readmeBody and readmeUrl; otherwise, an error results.
          */
     var ReadmeBody: js.UndefOr[__string] = js.undefined
     /**
-         * A link to the S3 object in Markdown language that contains a more detailed description of the application and how it works.Maximum size 5 MBNote: Only one of readmeBody and readmeUrl can be specified, otherwise an error will result.
+         * A link to the S3 object in Markdown language that contains a more detailed description of the application and how it works.Maximum size 5 MBYou can specify only one of readmeBody and readmeUrl; otherwise, an error results.
          */
     var ReadmeUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -126,11 +139,11 @@ object ServerlessApplicationRepositoryNs extends js.Object {
     var SpdxLicenseId: js.UndefOr[__string] = js.undefined
     /**
          * The local raw packaged AWS SAM template file of your application.
-     The file is of the format file://&lt;path>/&lt;filename>.Note: Only one of templateBody and templateUrl can be specified, otherwise an error will result.
+     The file has the format file://&lt;path>/&lt;filename>.You can specify only one of templateBody and templateUrl; otherwise an error results.
          */
     var TemplateBody: js.UndefOr[__string] = js.undefined
     /**
-         * A link to the S3 object cotaining the packaged AWS SAM template of your application.Note: Only one of templateBody and templateUrl can be specified, otherwise an error will result.
+         * A link to the S3 object containing the packaged AWS SAM template of your application.You can specify only one of templateBody and templateUrl; otherwise an error results.
          */
     var TemplateUrl: js.UndefOr[__string] = js.undefined
   }
@@ -223,6 +236,37 @@ object ServerlessApplicationRepositoryNs extends js.Object {
          */
     var ParameterDefinitions: js.UndefOr[__listOfParameterDefinition] = js.undefined
     /**
+         * A list of values that you must specify before you can deploy certain applications.
+     Some applications might include resources that can affect permissions in your AWS
+     account, for example, by creating new AWS Identity and Access Management (IAM) users.
+     For those applications, you must explicitly acknowledge their capabilities by
+     specifying this parameter.The only valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM,
+     and CAPABILITY_RESOURCE_POLICY.The following resources require you to specify CAPABILITY_IAM or
+     CAPABILITY_NAMED_IAM:
+     AWS::IAM::Group,
+     AWS::IAM::InstanceProfile,
+     AWS::IAM::Policy, and
+     AWS::IAM::Role.
+     If the application contains IAM resources, you can specify either CAPABILITY_IAM
+     or CAPABILITY_NAMED_IAM. If the application contains IAM resources
+     with custom names, you must specify CAPABILITY_NAMED_IAM.The following resources require you to specify CAPABILITY_RESOURCE_POLICY:
+     AWS::Lambda::Permission,
+     AWS::IAM:Policy,
+     AWS::ApplicationAutoScaling::ScalingPolicy,
+     AWS::S3::BucketPolicy,
+     AWS::SQS::QueuePolicy, and
+     AWS::SNS::TopicPolicy.If your application template contains any of the above resources, we recommend that you review
+     all permissions associated with the application before deploying. If you don't specify
+     this parameter for an application that requires capabilities, the call will fail.Valid values: CAPABILITY_IAM | CAPABILITY_NAMED_IAM | CAPABILITY_RESOURCE_POLICY
+     
+         */
+    var RequiredCapabilities: js.UndefOr[__listOfCapability] = js.undefined
+    /**
+         * Whether all of the AWS resources contained in this application are supported in the region
+     in which it is being retrieved.
+         */
+    var ResourcesSupported: js.UndefOr[__boolean] = js.undefined
+    /**
          * The semantic version of the application:
      https://semver.org/
      
@@ -245,9 +289,59 @@ object ServerlessApplicationRepositoryNs extends js.Object {
          */
     var ApplicationId: __string
     /**
+         * A list of values that you must specify before you can deploy certain applications.
+     Some applications might include resources that can affect permissions in your AWS
+     account, for example, by creating new AWS Identity and Access Management (IAM) users.
+     For those applications, you must explicitly acknowledge their capabilities by
+     specifying this parameter.The only valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM,
+     and CAPABILITY_RESOURCE_POLICY.The following resources require you to specify CAPABILITY_IAM or
+     CAPABILITY_NAMED_IAM:
+     AWS::IAM::Group,
+     AWS::IAM::InstanceProfile,
+     AWS::IAM::Policy, and
+     AWS::IAM::Role.
+     If the application contains IAM resources, you can specify either CAPABILITY_IAM
+     or CAPABILITY_NAMED_IAM. If the application contains IAM resources
+     with custom names, you must specify CAPABILITY_NAMED_IAM.The following resources require you to specify CAPABILITY_RESOURCE_POLICY:
+     AWS::Lambda::Permission,
+     AWS::IAM:Policy,
+     AWS::ApplicationAutoScaling::ScalingPolicy,
+     AWS::S3::BucketPolicy,
+     AWS::SQS::QueuePolicy, and
+     AWS::SNS:TopicPolicy.If your application template contains any of the above resources, we recommend that you review
+     all permissions associated with the application before deploying. If you don't specify
+     this parameter for an application that requires capabilities, the call will fail.Valid values: CAPABILITY_IAM | CAPABILITY_NAMED_IAM | CAPABILITY_RESOURCE_POLICY
+     
+         */
+    var Capabilities: js.UndefOr[__listOf__string] = js.undefined
+    /**
+         * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+         */
+    var ChangeSetName: js.UndefOr[__string] = js.undefined
+    /**
+         * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+         */
+    var ClientToken: js.UndefOr[__string] = js.undefined
+    /**
+         * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+         */
+    var Description: js.UndefOr[__string] = js.undefined
+    /**
+         * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+         */
+    var NotificationArns: js.UndefOr[__listOf__string] = js.undefined
+    /**
          * A list of parameter values for the parameters of the application.
          */
     var ParameterOverrides: js.UndefOr[__listOfParameterValue] = js.undefined
+    /**
+         * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+         */
+    var ResourceTypes: js.UndefOr[__listOf__string] = js.undefined
+    /**
+         * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+         */
+    var RollbackConfiguration: js.UndefOr[RollbackConfiguration] = js.undefined
     /**
          * The semantic version of the application:
      https://semver.org/
@@ -255,11 +349,17 @@ object ServerlessApplicationRepositoryNs extends js.Object {
          */
     var SemanticVersion: js.UndefOr[__string] = js.undefined
     /**
-         * The name or the unique ID of the stack for which you are creating a change set. AWS CloudFormation generates
-     the change set by comparing this stack's information with the information that you submit, such as a modified
-     template or different parameter input values. Constraints: Minimum length of 1.Pattern: ([a-zA-Z][-a-zA-Z0-9]*)|(arn:\b(aws|aws-us-gov|aws-cn)\b:[-a-zA-Z0-9:/._+]*)
+         * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
          */
     var StackName: __string
+    /**
+         * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+         */
+    var Tags: js.UndefOr[__listOfTag] = js.undefined
+    /**
+         * The UUID returned by CreateCloudFormationTemplate.Pattern: [0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}
+         */
+    var TemplateId: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -282,6 +382,56 @@ object ServerlessApplicationRepositoryNs extends js.Object {
          * The unique ID of the stack.
          */
     var StackId: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait CreateCloudFormationTemplateRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the application.
+         */
+    var ApplicationId: __string
+    /**
+         * The semantic version of the application:
+     https://semver.org/
+     
+         */
+    var SemanticVersion: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait CreateCloudFormationTemplateResponse extends js.Object {
+    /**
+         * The application Amazon Resource Name (ARN).
+         */
+    var ApplicationId: js.UndefOr[__string] = js.undefined
+    /**
+         * The date and time this resource was created.
+         */
+    var CreationTime: js.UndefOr[__string] = js.undefined
+    /**
+         * The date and time this template expires. Templates
+     expire 1 hour after creation.
+         */
+    var ExpirationTime: js.UndefOr[__string] = js.undefined
+    /**
+         * The semantic version of the application:
+     https://semver.org/
+     
+         */
+    var SemanticVersion: js.UndefOr[__string] = js.undefined
+    /**
+         * Status of the template creation workflow.Possible values: PREPARING | ACTIVE | EXPIRED
+         */
+    var Status: js.UndefOr[Status] = js.undefined
+    /**
+         * The UUID returned by CreateCloudFormationTemplate.Pattern: [0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}
+         */
+    var TemplateId: js.UndefOr[__string] = js.undefined
+    /**
+         * A link to the template that can be used to deploy the application using
+     AWS CloudFormation.
+         */
+    var TemplateUrl: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -367,6 +517,86 @@ object ServerlessApplicationRepositoryNs extends js.Object {
          * Version information about the application.
          */
     var Version: js.UndefOr[Version] = js.undefined
+  }
+  
+  
+  trait GetCloudFormationTemplateRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the application.
+         */
+    var ApplicationId: __string
+    /**
+         * The UUID returned by CreateCloudFormationTemplate.Pattern: [0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}
+         */
+    var TemplateId: __string
+  }
+  
+  
+  trait GetCloudFormationTemplateResponse extends js.Object {
+    /**
+         * The application Amazon Resource Name (ARN).
+         */
+    var ApplicationId: js.UndefOr[__string] = js.undefined
+    /**
+         * The date and time this resource was created.
+         */
+    var CreationTime: js.UndefOr[__string] = js.undefined
+    /**
+         * The date and time this template expires. Templates
+     expire 1 hour after creation.
+         */
+    var ExpirationTime: js.UndefOr[__string] = js.undefined
+    /**
+         * The semantic version of the application:
+     https://semver.org/
+     
+         */
+    var SemanticVersion: js.UndefOr[__string] = js.undefined
+    /**
+         * Status of the template creation workflow.Possible values: PREPARING | ACTIVE | EXPIRED
+         */
+    var Status: js.UndefOr[Status] = js.undefined
+    /**
+         * The UUID returned by CreateCloudFormationTemplate.Pattern: [0-9a-fA-F]{8}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{4}\-[0-9a-fA-F]{12}
+         */
+    var TemplateId: js.UndefOr[__string] = js.undefined
+    /**
+         * A link to the template that can be used to deploy the application using
+     AWS CloudFormation.
+         */
+    var TemplateUrl: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait ListApplicationDependenciesRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the application.
+         */
+    var ApplicationId: __string
+    /**
+         * The total number of items to return.
+         */
+    var MaxItems: js.UndefOr[MaxItems] = js.undefined
+    /**
+         * A token to specify where to start paginating.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+    /**
+         * The semantic version of the application to get.
+         */
+    var SemanticVersion: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait ListApplicationDependenciesResponse extends js.Object {
+    /**
+         * An array of application summaries nested in the application.
+         */
+    var Dependencies: js.UndefOr[__listOfApplicationDependencySummary] = js.undefined
+    /**
+         * The token to request the next page of results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -527,6 +757,45 @@ object ServerlessApplicationRepositoryNs extends js.Object {
     var Statements: js.UndefOr[__listOfApplicationPolicyStatement] = js.undefined
   }
   
+  
+  trait RollbackConfiguration extends js.Object {
+    /**
+         * This property corresponds to the content of the same name for the AWS CloudFormation RollbackConfiguration Data Type.
+         */
+    var MonitoringTimeInMinutes: js.UndefOr[__integer] = js.undefined
+    /**
+         * This property corresponds to the content of the same name for the AWS CloudFormation RollbackConfiguration Data Type.
+         */
+    var RollbackTriggers: js.UndefOr[__listOfRollbackTrigger] = js.undefined
+  }
+  
+  
+  trait RollbackTrigger extends js.Object {
+    /**
+         * This property corresponds to the content of the same name for the AWS CloudFormation RollbackTrigger Data Type.
+         */
+    var Arn: __string
+    /**
+         * This property corresponds to the content of the same name for the AWS CloudFormation RollbackTrigger Data Type.
+         */
+    var Type: __string
+  }
+  
+  
+  trait Tag extends js.Object {
+    /**
+         * This property corresponds to the content of the same name for the AWS CloudFormation Tag Data Type.
+         */
+    var Key: __string
+    /**
+         * This property corresponds to the content of the same name for the AWS CloudFormation 
+     Tag
+     
+     Data Type.
+         */
+    var Value: __string
+  }
+  
   @js.native
   trait Types
     extends awsDashSdkLib.libServiceMod.Service {
@@ -620,6 +889,35 @@ object ServerlessApplicationRepositoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCloudFormationChangeSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Creates an AWS CloudFormation template.
+       */
+    def createCloudFormationTemplate(): awsDashSdkLib.libRequestMod.Request[CreateCloudFormationTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates an AWS CloudFormation template.
+       */
+    def createCloudFormationTemplate(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateCloudFormationTemplateResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateCloudFormationTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates an AWS CloudFormation template.
+       */
+    def createCloudFormationTemplate(params: CreateCloudFormationTemplateRequest): awsDashSdkLib.libRequestMod.Request[CreateCloudFormationTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates an AWS CloudFormation template.
+       */
+    def createCloudFormationTemplate(
+      params: CreateCloudFormationTemplateRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateCloudFormationTemplateResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateCloudFormationTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Deletes the specified application.
        */
     def deleteApplication(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -699,6 +997,64 @@ object ServerlessApplicationRepositoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetApplicationPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Gets the specified AWS CloudFormation template.
+       */
+    def getCloudFormationTemplate(): awsDashSdkLib.libRequestMod.Request[GetCloudFormationTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the specified AWS CloudFormation template.
+       */
+    def getCloudFormationTemplate(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetCloudFormationTemplateResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetCloudFormationTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the specified AWS CloudFormation template.
+       */
+    def getCloudFormationTemplate(params: GetCloudFormationTemplateRequest): awsDashSdkLib.libRequestMod.Request[GetCloudFormationTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the specified AWS CloudFormation template.
+       */
+    def getCloudFormationTemplate(
+      params: GetCloudFormationTemplateRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetCloudFormationTemplateResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetCloudFormationTemplateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the list of applications nested in the containing application.
+       */
+    def listApplicationDependencies(): awsDashSdkLib.libRequestMod.Request[ListApplicationDependenciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the list of applications nested in the containing application.
+       */
+    def listApplicationDependencies(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListApplicationDependenciesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListApplicationDependenciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the list of applications nested in the containing application.
+       */
+    def listApplicationDependencies(params: ListApplicationDependenciesRequest): awsDashSdkLib.libRequestMod.Request[ListApplicationDependenciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the list of applications nested in the containing application.
+       */
+    def listApplicationDependencies(
+      params: ListApplicationDependenciesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListApplicationDependenciesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListApplicationDependenciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Lists versions for the specified application.
        */
     def listApplicationVersions(): awsDashSdkLib.libRequestMod.Request[ListApplicationVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -757,15 +1113,17 @@ object ServerlessApplicationRepositoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListApplicationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Sets the permission policy for an application. See
-     Application Permissions
-     for the list of supported actions that can be used with this operation.
+       * Sets the permission policy for an application. For the list of actions supported for this operation, see
+     Application 
+     Permissions
+     .
        */
     def putApplicationPolicy(): awsDashSdkLib.libRequestMod.Request[PutApplicationPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Sets the permission policy for an application. See
-     Application Permissions
-     for the list of supported actions that can be used with this operation.
+       * Sets the permission policy for an application. For the list of actions supported for this operation, see
+     Application 
+     Permissions
+     .
        */
     def putApplicationPolicy(
       callback: js.Function2[
@@ -775,15 +1133,17 @@ object ServerlessApplicationRepositoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutApplicationPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Sets the permission policy for an application. See
-     Application Permissions
-     for the list of supported actions that can be used with this operation.
+       * Sets the permission policy for an application. For the list of actions supported for this operation, see
+     Application 
+     Permissions
+     .
        */
     def putApplicationPolicy(params: PutApplicationPolicyRequest): awsDashSdkLib.libRequestMod.Request[PutApplicationPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Sets the permission policy for an application. See
-     Application Permissions
-     for the list of supported actions that can be used with this operation.
+       * Sets the permission policy for an application. For the list of actions supported for this operation, see
+     Application 
+     Permissions
+     .
        */
     def putApplicationPolicy(
       params: PutApplicationPolicyRequest,
@@ -921,6 +1281,37 @@ object ServerlessApplicationRepositoryNs extends js.Object {
          */
     var ParameterDefinitions: __listOfParameterDefinition
     /**
+         * A list of values that you must specify before you can deploy certain applications.
+     Some applications might include resources that can affect permissions in your AWS
+     account, for example, by creating new AWS Identity and Access Management (IAM) users.
+     For those applications, you must explicitly acknowledge their capabilities by
+     specifying this parameter.The only valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM,
+     and CAPABILITY_RESOURCE_POLICY.The following resources require you to specify CAPABILITY_IAM or
+     CAPABILITY_NAMED_IAM:
+     AWS::IAM::Group,
+     AWS::IAM::InstanceProfile,
+     AWS::IAM::Policy, and
+     AWS::IAM::Role.
+     If the application contains IAM resources, you can specify either CAPABILITY_IAM
+     or CAPABILITY_NAMED_IAM. If the application contains IAM resources
+     with custom names, you must specify CAPABILITY_NAMED_IAM.The following resources require you to specify CAPABILITY_RESOURCE_POLICY:
+     AWS::Lambda::Permission,
+     AWS::IAM:Policy,
+     AWS::ApplicationAutoScaling::ScalingPolicy,
+     AWS::S3::BucketPolicy,
+     AWS::SQS::QueuePolicy, and
+     AWS::SNS::TopicPolicy.If your application template contains any of the above resources, we recommend that you review
+     all permissions associated with the application before deploying. If you don't specify
+     this parameter for an application that requires capabilities, the call will fail.Valid values: CAPABILITY_IAM | CAPABILITY_NAMED_IAM | CAPABILITY_RESOURCE_POLICY
+     
+         */
+    var RequiredCapabilities: __listOfCapability
+    /**
+         * Whether all of the AWS resources contained in this application are supported in the region
+     in which it is being retrieved.
+         */
+    var ResourcesSupported: __boolean
+    /**
          * The semantic version of the application:
      https://semver.org/
      
@@ -959,14 +1350,20 @@ object ServerlessApplicationRepositoryNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
+  type Capability = awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_IAM | awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_NAMED_IAM | awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_AUTO_EXPAND | awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_RESOURCE_POLICY | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type MaxItems = scala.Double
+  type Status = awsDashSdkLib.awsDashSdkLibStrings.PREPARING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.EXPIRED | java.lang.String
   type __boolean = scala.Boolean
   type __integer = scala.Double
+  type __listOfApplicationDependencySummary = js.Array[ApplicationDependencySummary]
   type __listOfApplicationPolicyStatement = js.Array[ApplicationPolicyStatement]
   type __listOfApplicationSummary = js.Array[ApplicationSummary]
+  type __listOfCapability = js.Array[Capability]
   type __listOfParameterDefinition = js.Array[ParameterDefinition]
   type __listOfParameterValue = js.Array[ParameterValue]
+  type __listOfRollbackTrigger = js.Array[RollbackTrigger]
+  type __listOfTag = js.Array[Tag]
   type __listOfVersionSummary = js.Array[VersionSummary]
   type __listOf__string = js.Array[__string]
   type __string = java.lang.String

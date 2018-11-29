@@ -1,24 +1,24 @@
 organization := "com.scalablytyped"
 name := "hystrixjs"
-version := "0.2-dt-20180910Z-2e7928"
+version := "0.2-dt-20180910Z-085f9e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "rx" % "4.1-dt-20180910Z-0ece3b",
-  "com.scalablytyped" %%% "rx-core" % "4.0-dt-20180910Z-861271",
-  "com.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180910Z-7c2f3d",
-  "com.scalablytyped" %%% "rx-lite" % "4.0-dt-20181018Z-5eb8cf",
-  "com.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20180910Z-3d9ec8",
-  "com.scalablytyped" %%% "rx-lite-async" % "4.0-dt-20181120Z-7032f9",
-  "com.scalablytyped" %%% "rx-lite-backpressure" % "4.0-dt-20180910Z-215596",
-  "com.scalablytyped" %%% "rx-lite-coincidence" % "4.0-dt-20180910Z-de0144",
-  "com.scalablytyped" %%% "rx-lite-experimental" % "4.0-dt-20180910Z-ee1416",
-  "com.scalablytyped" %%% "rx-lite-joinpatterns" % "4.0-dt-20180910Z-9547f5",
-  "com.scalablytyped" %%% "rx-lite-testing" % "4.0-dt-20180910Z-ff0b5b",
-  "com.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20180910Z-4b69c6",
-  "com.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180910Z-bb1b39",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "rx" % "4.1-dt-20180910Z-49bd7e",
+  "com.scalablytyped" %%% "rx-core" % "4.0-dt-20180910Z-b87bbc",
+  "com.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180910Z-df7bfe",
+  "com.scalablytyped" %%% "rx-lite" % "4.0-dt-20181018Z-3db92b",
+  "com.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20180910Z-64ff54",
+  "com.scalablytyped" %%% "rx-lite-async" % "4.0-dt-20181120Z-b0352d",
+  "com.scalablytyped" %%% "rx-lite-backpressure" % "4.0-dt-20180910Z-5d5ac6",
+  "com.scalablytyped" %%% "rx-lite-coincidence" % "4.0-dt-20180910Z-4964ae",
+  "com.scalablytyped" %%% "rx-lite-experimental" % "4.0-dt-20180910Z-00859c",
+  "com.scalablytyped" %%% "rx-lite-joinpatterns" % "4.0-dt-20180910Z-e3a076",
+  "com.scalablytyped" %%% "rx-lite-testing" % "4.0-dt-20180910Z-4b1e9f",
+  "com.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20180910Z-7f8ab3",
+  "com.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180910Z-d01234",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

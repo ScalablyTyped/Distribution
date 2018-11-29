@@ -37,19 +37,21 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
   var realpath: js.UndefOr[js.Function1[/* path */ java.lang.String, java.lang.String]] = js.native
   /** If provided, used to resolve the module names, otherwise typescript's default module resolution */
   var resolveModuleNames: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* moduleNames */ js.Array[java.lang.String], 
       /* containingFile */ java.lang.String, 
       /* reusedNames */ js.UndefOr[js.Array[java.lang.String]], 
-      js.Array[ResolvedModule]
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      js.Array[js.UndefOr[ResolvedModule]]
     ]
   ] = js.native
   /** If provided, used to resolve type reference directives, otherwise typescript's default resolution */
   var resolveTypeReferenceDirectives: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* typeReferenceDirectiveNames */ js.Array[java.lang.String], 
       /* containingFile */ java.lang.String, 
-      js.Array[ResolvedTypeReferenceDirective]
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.native
   /** If provided would be used to write log about compilation */

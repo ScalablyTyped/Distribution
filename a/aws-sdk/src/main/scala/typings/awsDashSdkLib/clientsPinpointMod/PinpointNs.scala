@@ -251,7 +251,7 @@ object PinpointNs extends js.Object {
          */
     var Data: js.UndefOr[MapOf__string] = js.undefined
     /**
-         * The URL that points to a video used in the push notification.
+         * A URL that refers to the location of an image or video that you want to display in the push notification.
          */
     var MediaUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -703,7 +703,16 @@ object PinpointNs extends js.Object {
          */
     var Limits: js.UndefOr[CampaignLimits] = js.undefined
     /**
-         * The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own.
+         * The default quiet time for the app. Campaigns in the app don't send messages to endpoints during the quiet time.
+    
+    Note: Make sure that your endpoints include the Demographics.Timezone attribute if you plan to enable a quiet time for your app. If your endpoints don't include this attribute, they'll receive the messages that you send them, even if quiet time is enabled.
+    
+    When you set up an app to use quiet time, campaigns in that app don't send messages during the time range you specified, as long as all of the following are true:
+    - The endpoint includes a valid Demographic.Timezone attribute.
+    - The current time in the endpoint's time zone is later than or equal to the time specified in the QuietTime.Start attribute for the app (or campaign, if applicable).
+    - The current time in the endpoint's time zone is earlier than or equal to the time specified in the QuietTime.End attribute for the app (or campaign, if applicable).
+    
+    Individual campaigns within the app can have their own quiet time settings, which override the quiet time settings at the app level.
          */
     var QuietTime: js.UndefOr[QuietTime] = js.undefined
   }
@@ -724,7 +733,9 @@ object PinpointNs extends js.Object {
   trait AttributeDimension extends js.Object {
     /**
          * The type of dimension:
+    
     INCLUSIVE - Endpoints that match the criteria are included in the segment.
+    
     EXCLUSIVE - Endpoints that match the criteria are excluded from the segment.
          */
     var AttributeType: js.UndefOr[AttributeType] = js.undefined
@@ -895,6 +906,22 @@ object PinpointNs extends js.Object {
   }
   
   
+  trait CampaignEventFilter extends js.Object {
+    /**
+         * An object that defines the dimensions for the event filter.
+         */
+    var Dimensions: js.UndefOr[EventDimensions] = js.undefined
+    /**
+         * The type of event that causes the campaign to be sent. Possible values:
+    
+    SYSTEM - Send the campaign when a system event occurs. See the System resource for more information.
+    
+    ENDPOINT - Send the campaign when an endpoint event occurs. See the Event resource for more information.
+         */
+    var FilterType: js.UndefOr[FilterType] = js.undefined
+  }
+  
+  
   trait CampaignHook extends js.Object {
     /**
          * Lambda function name or arn to be called for delivery
@@ -913,7 +940,7 @@ object PinpointNs extends js.Object {
   
   trait CampaignLimits extends js.Object {
     /**
-         * The maximum number of messages that the campaign can send daily.
+         * The maximum number of messages that each campaign can send to a single endpoint in a 24-hour period.
          */
     var Daily: js.UndefOr[__integer] = js.undefined
     /**
@@ -925,7 +952,7 @@ object PinpointNs extends js.Object {
          */
     var MessagesPerSecond: js.UndefOr[__integer] = js.undefined
     /**
-         * The maximum total number of messages that the campaign can send.
+         * The maximum number of messages that an individual campaign can send to a single endpoint over the course of the campaign.
          */
     var Total: js.UndefOr[__integer] = js.undefined
   }
@@ -1211,7 +1238,7 @@ object PinpointNs extends js.Object {
          */
     var Data: js.UndefOr[MapOf__string] = js.undefined
     /**
-         * Indicates if the message should display on the users device. Silent pushes can be used for Remote Configuration and Phone Home use cases.
+         * Indicates if the message should display on the recipient's device. You can use silent pushes for remote configuration or to deliver messages to in-app notification centers.
          */
     var SilentPush: js.UndefOr[__boolean] = js.undefined
     /**
@@ -1440,6 +1467,19 @@ object PinpointNs extends js.Object {
   }
   
   
+  trait DeleteVoiceChannelRequest extends js.Object {
+    /**
+         * The unique ID of your Amazon Pinpoint application.
+         */
+    var ApplicationId: __string
+  }
+  
+  
+  trait DeleteVoiceChannelResponse extends js.Object {
+    var VoiceChannelResponse: VoiceChannelResponse
+  }
+  
+  
   trait DirectMessageConfiguration extends js.Object {
     /**
          * The message to ADM channels. Overrides the default push notification message.
@@ -1462,6 +1502,10 @@ object PinpointNs extends js.Object {
          */
     var DefaultPushNotificationMessage: js.UndefOr[DefaultPushNotificationMessage] = js.undefined
     /**
+         * The message to Email channels. Overrides the default message.
+         */
+    var EmailMessage: js.UndefOr[EmailMessage] = js.undefined
+    /**
          * The message to GCM channels. Overrides the default push notification message.
          */
     var GCMMessage: js.UndefOr[GCMMessage] = js.undefined
@@ -1469,10 +1513,18 @@ object PinpointNs extends js.Object {
          * The message to SMS channels. Overrides the default message.
          */
     var SMSMessage: js.UndefOr[SMSMessage] = js.undefined
+    /**
+         * The message to Voice channels. Overrides the default message.
+         */
+    var VoiceMessage: js.UndefOr[VoiceMessage] = js.undefined
   }
   
   
   trait EmailChannelRequest extends js.Object {
+    /**
+         * The configuration set that you want to use when you send email using the Pinpoint Email API.
+         */
+    var ConfigurationSet: js.UndefOr[__string] = js.undefined
     /**
          * If the channel is enabled for sending messages.
          */
@@ -1497,6 +1549,10 @@ object PinpointNs extends js.Object {
          * The unique ID of the application to which the email channel belongs.
          */
     var ApplicationId: js.UndefOr[__string] = js.undefined
+    /**
+         * The configuration set that you want to use when you send email using the Pinpoint Email API.
+         */
+    var ConfigurationSet: js.UndefOr[__string] = js.undefined
     /**
          * The date that the settings were last updated in ISO 8601 format.
          */
@@ -1549,6 +1605,38 @@ object PinpointNs extends js.Object {
          * Version of channel
          */
     var Version: js.UndefOr[__integer] = js.undefined
+  }
+  
+  
+  trait EmailMessage extends js.Object {
+    /**
+         * The body of the email message.
+         */
+    var Body: js.UndefOr[__string] = js.undefined
+    /**
+         * The email address that bounces and complaints will be forwarded to when feedback forwarding is enabled.
+         */
+    var FeedbackForwardingAddress: js.UndefOr[__string] = js.undefined
+    /**
+         * The email address used to send the email from. Defaults to use FromAddress specified in the Email Channel.
+         */
+    var FromAddress: js.UndefOr[__string] = js.undefined
+    /**
+         * An email represented as a raw MIME message.
+         */
+    var RawEmail: js.UndefOr[RawEmail] = js.undefined
+    /**
+         * The reply-to email address(es) for the email. If the recipient replies to the email, each reply-to address will receive the reply.
+         */
+    var ReplyToAddresses: js.UndefOr[ListOf__string] = js.undefined
+    /**
+         * An email composed of a subject, a text part and a html part.
+         */
+    var SimpleEmail: js.UndefOr[SimpleEmail] = js.undefined
+    /**
+         * Default message substitutions. Can be overridden by individual address substitutions.
+         */
+    var Substitutions: js.UndefOr[MapOfListOf__string] = js.undefined
   }
   
   
@@ -1663,7 +1751,7 @@ object PinpointNs extends js.Object {
          */
     var Message: js.UndefOr[__string] = js.undefined
     /**
-         * The status code to respond with for a particular endpoint id after endpoint registration
+         * The status code associated with the merging of an endpoint when issuing a response.
          */
     var StatusCode: js.UndefOr[__integer] = js.undefined
   }
@@ -1675,7 +1763,7 @@ object PinpointNs extends js.Object {
          */
     var City: js.UndefOr[__string] = js.undefined
     /**
-         * The two-letter code for the country or region of the endpoint. Specified as an ISO 3166-1 Alpha-2 code, such as "US" for the United States.
+         * The two-letter code for the country or region of the endpoint. Specified as an ISO 3166-1 alpha-2 code, such as "US" for the United States.
          */
     var Country: js.UndefOr[__string] = js.undefined
     /**
@@ -1713,7 +1801,7 @@ object PinpointNs extends js.Object {
     
     TIMEOUT - The message couldn't be sent within the timeout period.
     
-    QUIET_TIME - The local time for the endpoint was within the Quiet Hours for the campaign.
+    QUIET_TIME - The local time for the endpoint was within the QuietTime for the campaign or app.
     
     DAILY_CAP - The endpoint has received the maximum number of messages it can receive within a 24-hour period.
     
@@ -1937,11 +2025,11 @@ object PinpointNs extends js.Object {
          */
     var EventType: js.UndefOr[__string] = js.undefined
     /**
-         * Event metrics
+         * Custom metrics related to the event.
          */
     var Metrics: js.UndefOr[MapOf__double] = js.undefined
     /**
-         * The session
+         * Information about the session in which the event occurred.
          */
     var Session: js.UndefOr[Session] = js.undefined
     /**
@@ -1951,13 +2039,31 @@ object PinpointNs extends js.Object {
   }
   
   
+  trait EventDimensions extends js.Object {
+    /**
+         * Custom attributes that your app reports to Amazon Pinpoint. You can use these attributes as selection criteria when you create an event filter.
+         */
+    var Attributes: js.UndefOr[MapOfAttributeDimension] = js.undefined
+    /**
+         * The name of the event that causes the campaign to be sent. This can be a standard event type that Amazon Pinpoint generates, such as _session.start, or a custom event that's specific to your app.
+         */
+    var EventType: js.UndefOr[SetDimension] = js.undefined
+    /**
+         * Custom metrics that your app reports to Amazon Pinpoint. You can use these attributes as selection criteria when you create an event filter.
+         */
+    var Metrics: js.UndefOr[MapOfMetricDimension] = js.undefined
+  }
+  
+  
   trait EventItemResponse extends js.Object {
     /**
          * A custom message that is associated with the processing of an event.
          */
     var Message: js.UndefOr[__string] = js.undefined
     /**
-         * The status code to respond with for a particular event id
+         * The status returned in the response as a result of processing the event.
+    
+    Possible values: 400 (for invalid events) and 202 (for events that were accepted).
          */
     var StatusCode: js.UndefOr[__integer] = js.undefined
   }
@@ -1995,11 +2101,11 @@ object PinpointNs extends js.Object {
   
   trait EventsBatch extends js.Object {
     /**
-         * Endpoint information
+         * The PublicEndpoint attached to the EndpointId from the request.
          */
     var Endpoint: js.UndefOr[PublicEndpoint] = js.undefined
     /**
-         * Events
+         * An object that contains a set of events associated with the endpoint.
          */
     var Events: js.UndefOr[MapOfEvent] = js.undefined
   }
@@ -2007,7 +2113,7 @@ object PinpointNs extends js.Object {
   
   trait EventsRequest extends js.Object {
     /**
-         * Batch of events with endpoint id as the key and an object of EventsBatch as value. The EventsBatch object has the PublicEndpoint and a map of event Id's to events
+         * A batch of events to process. Each BatchItem consists of an endpoint ID as the key, and an EventsBatch object as the value.
          */
     var BatchItem: js.UndefOr[MapOfEventsBatch] = js.undefined
   }
@@ -2015,7 +2121,9 @@ object PinpointNs extends js.Object {
   
   trait EventsResponse extends js.Object {
     /**
-         * A map containing a multi part response for each endpoint, with the endpoint id as the key and item response as the value
+         * A map that contains a multipart response for each endpoint. Each item in this object uses the endpoint ID as the key, and the item response as the value.
+    
+    If no item response exists, the value can also be one of the following: 202 (if the request was processed successfully) or 400 (if the payload was invalid, or required fields were missing).
          */
     var Results: js.UndefOr[MapOfItemResponse] = js.undefined
   }
@@ -2843,6 +2951,19 @@ object PinpointNs extends js.Object {
   }
   
   
+  trait GetVoiceChannelRequest extends js.Object {
+    /**
+         * The unique ID of your Amazon Pinpoint application.
+         */
+    var ApplicationId: __string
+  }
+  
+  
+  trait GetVoiceChannelResponse extends js.Object {
+    var VoiceChannelResponse: VoiceChannelResponse
+  }
+  
+  
   trait ImportJobRequest extends js.Object {
     /**
          * Sets whether the endpoints create a segment when they are imported.
@@ -2994,11 +3115,11 @@ object PinpointNs extends js.Object {
   
   trait ItemResponse extends js.Object {
     /**
-         * Endpoint item response after endpoint registration
+         * The response received after the endpoint was accepted.
          */
     var EndpointItemResponse: js.UndefOr[EndpointItemResponse] = js.undefined
     /**
-         * Events item response is a multipart response object per event Id, with eventId as the key and EventItemResponse object as the value
+         * A multipart response object that contains a key and value for each event ID in the request. In each object, the event ID is the key, and an EventItemResponse object is the value.
          */
     var EventsItemResponse: js.UndefOr[MapOfEventItemResponse] = js.undefined
   }
@@ -3099,7 +3220,7 @@ object PinpointNs extends js.Object {
          */
     var JsonBody: js.UndefOr[__string] = js.undefined
     /**
-         * The URL that points to the media resource, for example a .mp4 or .gif file.
+         * A URL that refers to the location of an image or video that you want to display in the push notification.
          */
     var MediaUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -3227,7 +3348,7 @@ object PinpointNs extends js.Object {
     
     TIMEOUT - The message couldn't be sent within the timeout period.
     
-    QUIET_TIME - The local time for the endpoint was within the Quiet Hours for the campaign.
+    QUIET_TIME - The local time for the endpoint was within the QuietTime for the campaign or app.
     
     DAILY_CAP - The endpoint has received the maximum number of messages it can receive within a 24-hour period.
     
@@ -3265,11 +3386,11 @@ object PinpointNs extends js.Object {
   
   trait MetricDimension extends js.Object {
     /**
-         * GREATER_THAN | LESS_THAN | GREATER_THAN_OR_EQUAL | LESS_THAN_OR_EQUAL | EQUAL
+         * The operator that you're using to compare metric values. Possible values: GREATER_THAN, LESS_THAN, GREATER_THAN_OR_EQUAL, LESS_THAN_OR_EQUAL, or EQUAL
          */
     var ComparisonOperator: js.UndefOr[__string] = js.undefined
     /**
-         * Value to be compared.
+         * The value to be compared.
          */
     var Value: js.UndefOr[__double] = js.undefined
   }
@@ -3321,7 +3442,7 @@ object PinpointNs extends js.Object {
          */
     var County: js.UndefOr[__string] = js.undefined
     /**
-         * The two-character ISO code for the country or region that you included in the request body.
+         * The two-character code (in ISO 3166-1 alpha-2 format) for the country or region in the request body.
          */
     var OriginalCountryCodeIso2: js.UndefOr[__string] = js.undefined
     /**
@@ -3359,7 +3480,7 @@ object PinpointNs extends js.Object {
   
   trait PublicEndpoint extends js.Object {
     /**
-         * The unique identifier for the recipient. For example, an address could be a device token or an endpoint ID.
+         * The unique identifier for the recipient. For example, an address could be a device token, email address, or mobile phone number.
          */
     var Address: js.UndefOr[__string] = js.undefined
     /**
@@ -3377,7 +3498,7 @@ object PinpointNs extends js.Object {
          */
     var Demographic: js.UndefOr[EndpointDemographic] = js.undefined
     /**
-         * The date and time when the endpoint was last updated.
+         * The date and time when the endpoint was last updated, in  ISO 8601 format.
          */
     var EffectiveDate: js.UndefOr[__string] = js.undefined
     /**
@@ -3441,25 +3562,36 @@ object PinpointNs extends js.Object {
   
   trait QuietTime extends js.Object {
     /**
-         * The default end time for quiet time in ISO 8601 format.
+         * The time at which quiet time should end. The value that you specify has to be in HH:mm format, where HH is the hour in 24-hour format (with a leading zero, if applicable), and mm is the minutes. For example, use 02:30 to represent 2:30 AM, or 14:30 to represent 2:30 PM.
          */
     var End: js.UndefOr[__string] = js.undefined
     /**
-         * The default start time for quiet time in ISO 8601 format.
+         * The time at which quiet time should begin. The value that you specify has to be in HH:mm format, where HH is the hour in 24-hour format (with a leading zero, if applicable), and mm is the minutes. For example, use 02:30 to represent 2:30 AM, or 14:30 to represent 2:30 PM.
          */
     var Start: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait RawEmail extends js.Object {
+    /**
+         * The raw email message itself. Then entire message must be base64-encoded.
+         */
+    var Data: js.UndefOr[__blob] = js.undefined
   }
   
   
   trait RecencyDimension extends js.Object {
     /**
          * The length of time during which users have been active or inactive with your app.
+    
     Valid values: HR_24, DAY_7, DAY_14, DAY_30
          */
     var Duration: js.UndefOr[Duration] = js.undefined
     /**
          * The recency dimension type:
+    
     ACTIVE - Users who have used your app within the specified duration are included in the segment.
+    
     INACTIVE - Users who have not used your app within the specified duration are included in the segment.
          */
     var RecencyType: js.UndefOr[RecencyType] = js.undefined
@@ -3594,9 +3726,25 @@ object PinpointNs extends js.Object {
          */
     var EndTime: js.UndefOr[__string] = js.undefined
     /**
+         * Defines the type of events that can trigger the campaign. Used when the Frequency is set to EVENT.
+         */
+    var EventFilter: js.UndefOr[CampaignEventFilter] = js.undefined
+    /**
          * How often the campaign delivers messages.
     
-    Valid values: ONCE, HOURLY, DAILY, WEEKLY, MONTHLY
+    Valid values:
+    
+    ONCE
+    
+    HOURLY
+    
+    DAILY
+    
+    WEEKLY
+    
+    MONTHLY
+    
+    EVENT
          */
     var Frequency: js.UndefOr[Frequency] = js.undefined
     /**
@@ -3604,7 +3752,14 @@ object PinpointNs extends js.Object {
          */
     var IsLocalTime: js.UndefOr[__boolean] = js.undefined
     /**
-         * The time during which the campaign sends no messages.
+         * The default quiet time for the campaign. The campaign doesn't send messages to endpoints during the quiet time.
+    
+    Note: Make sure that your endpoints include the Demographics.Timezone attribute if you plan to enable a quiet time for your campaign. If your endpoints don't include this attribute, they'll receive the messages that you send them, even if quiet time is enabled.
+    
+    When you set up a campaign to use quiet time, the campaign doesn't send messages during the time range you specified, as long as all of the following are true:
+    - The endpoint includes a valid Demographic.Timezone attribute.
+    - The current time in the endpoint's time zone is later than or equal to the time specified in the QuietTime.Start attribute for the campaign.
+    - The current time in the endpoint's time zone is earlier than or equal to the time specified in the QuietTime.End attribute for the campaign.
          */
     var QuietTime: js.UndefOr[QuietTime] = js.undefined
     /**
@@ -3722,6 +3877,8 @@ object PinpointNs extends js.Object {
     var Dimensions: js.UndefOr[ListOfSegmentDimensions] = js.undefined
     /**
          * The base segment that you build your segment on. The source segment defines the starting "universe" of endpoints. When you add dimensions to the segment, it filters the source segment based on the dimensions that you specify. You can specify more than one dimensional segment. You can only specify one imported segment.
+    
+    NOTE: If you specify an imported segment for this attribute, the segment size estimate that appears in the Amazon Pinpoint console shows the size of the imported segment, without any filters applied to it.
          */
     var SourceSegments: js.UndefOr[ListOfSegmentReference] = js.undefined
     /**
@@ -3778,7 +3935,7 @@ object PinpointNs extends js.Object {
   
   trait SegmentLocation extends js.Object {
     /**
-         * The country filter according to ISO 3166-1 Alpha-2 codes.
+         * The country or region, in ISO 3166-1 alpha-2 format.
          */
     var Country: js.UndefOr[SetDimension] = js.undefined
     /**
@@ -3924,7 +4081,7 @@ object PinpointNs extends js.Object {
   
   trait Session extends js.Object {
     /**
-         * Session duration in millis
+         * The duration of the session, in milliseconds.
          */
     var Duration: js.UndefOr[__integer] = js.undefined
     /**
@@ -3945,7 +4102,9 @@ object PinpointNs extends js.Object {
   trait SetDimension extends js.Object {
     /**
          * The type of dimension:
+    
     INCLUSIVE - Endpoints that match the criteria are included in the segment.
+    
     EXCLUSIVE - Endpoints that match the criteria are excluded from the segment.
          */
     var DimensionType: js.UndefOr[DimensionType] = js.undefined
@@ -3953,6 +4112,34 @@ object PinpointNs extends js.Object {
          * The criteria values for the segment dimension. Endpoints with matching attribute values are included or excluded from the segment, depending on the setting for Type.
          */
     var Values: js.UndefOr[ListOf__string] = js.undefined
+  }
+  
+  
+  trait SimpleEmail extends js.Object {
+    /**
+         * The content of the message, in HTML format. Use this for email clients that can process HTML. You can include clickable links, formatted text, and much more in an HTML message.
+         */
+    var HtmlPart: js.UndefOr[SimpleEmailPart] = js.undefined
+    /**
+         * The subject of the message: A short summary of the content, which will appear in the recipient's inbox.
+         */
+    var Subject: js.UndefOr[SimpleEmailPart] = js.undefined
+    /**
+         * The content of the message, in text format. Use this for text-based email clients, or clients on high-latency networks (such as mobile devices).
+         */
+    var TextPart: js.UndefOr[SimpleEmailPart] = js.undefined
+  }
+  
+  
+  trait SimpleEmailPart extends js.Object {
+    /**
+         * The character set of the content.
+         */
+    var Charset: js.UndefOr[__string] = js.undefined
+    /**
+         * The textual data of the content.
+         */
+    var Data: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -4572,6 +4759,35 @@ object PinpointNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteUserEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Delete an Voice channel
+       */
+    def deleteVoiceChannel(): awsDashSdkLib.libRequestMod.Request[DeleteVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Delete an Voice channel
+       */
+    def deleteVoiceChannel(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteVoiceChannelResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Delete an Voice channel
+       */
+    def deleteVoiceChannel(params: DeleteVoiceChannelRequest): awsDashSdkLib.libRequestMod.Request[DeleteVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Delete an Voice channel
+       */
+    def deleteVoiceChannel(
+      params: DeleteVoiceChannelRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteVoiceChannelResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Get an ADM channel.
        */
@@ -5456,6 +5672,35 @@ object PinpointNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetUserEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Get a Voice Channel
+       */
+    def getVoiceChannel(): awsDashSdkLib.libRequestMod.Request[GetVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get a Voice Channel
+       */
+    def getVoiceChannel(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetVoiceChannelResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get a Voice Channel
+       */
+    def getVoiceChannel(params: GetVoiceChannelRequest): awsDashSdkLib.libRequestMod.Request[GetVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get a Voice Channel
+       */
+    def getVoiceChannel(
+      params: GetVoiceChannelRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetVoiceChannelResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Returns information about the specified phone number.
        */
     def phoneNumberValidate(): awsDashSdkLib.libRequestMod.Request[PhoneNumberValidateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -6035,6 +6280,35 @@ object PinpointNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateSmsChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Update an Voice channel
+       */
+    def updateVoiceChannel(): awsDashSdkLib.libRequestMod.Request[UpdateVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Update an Voice channel
+       */
+    def updateVoiceChannel(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateVoiceChannelResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Update an Voice channel
+       */
+    def updateVoiceChannel(params: UpdateVoiceChannelRequest): awsDashSdkLib.libRequestMod.Request[UpdateVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Update an Voice channel
+       */
+    def updateVoiceChannel(
+      params: UpdateVoiceChannelRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateVoiceChannelResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
   
@@ -6254,6 +6528,93 @@ object PinpointNs extends js.Object {
   }
   
   
+  trait UpdateVoiceChannelRequest extends js.Object {
+    /**
+         * The unique ID of your Amazon Pinpoint application.
+         */
+    var ApplicationId: __string
+    var VoiceChannelRequest: VoiceChannelRequest
+  }
+  
+  
+  trait UpdateVoiceChannelResponse extends js.Object {
+    var VoiceChannelResponse: VoiceChannelResponse
+  }
+  
+  
+  trait VoiceChannelRequest extends js.Object {
+    /**
+         * If the channel is enabled for sending messages.
+         */
+    var Enabled: js.UndefOr[__boolean] = js.undefined
+  }
+  
+  
+  trait VoiceChannelResponse extends js.Object {
+    /**
+         * Application id
+         */
+    var ApplicationId: js.UndefOr[__string] = js.undefined
+    /**
+         * The date that the settings were last updated in ISO 8601 format.
+         */
+    var CreationDate: js.UndefOr[__string] = js.undefined
+    /**
+         * If the channel is enabled for sending messages.
+         */
+    var Enabled: js.UndefOr[__boolean] = js.undefined
+    var HasCredential: js.UndefOr[__boolean] = js.undefined
+    /**
+         * Channel ID. Not used, only for backwards compatibility.
+         */
+    var Id: js.UndefOr[__string] = js.undefined
+    /**
+         * Is this channel archived
+         */
+    var IsArchived: js.UndefOr[__boolean] = js.undefined
+    /**
+         * Who made the last change
+         */
+    var LastModifiedBy: js.UndefOr[__string] = js.undefined
+    /**
+         * Last date this was updated
+         */
+    var LastModifiedDate: js.UndefOr[__string] = js.undefined
+    /**
+         * Platform type. Will be "Voice"
+         */
+    var Platform: js.UndefOr[__string] = js.undefined
+    /**
+         * Version of channel
+         */
+    var Version: js.UndefOr[__integer] = js.undefined
+  }
+  
+  
+  trait VoiceMessage extends js.Object {
+    /**
+         * The message body of the notification, the email body or the text message.
+         */
+    var Body: js.UndefOr[__string] = js.undefined
+    /**
+         * Language of sent message
+         */
+    var LanguageCode: js.UndefOr[__string] = js.undefined
+    /**
+         * Is the number from the pool or messaging service to send from.
+         */
+    var OriginationNumber: js.UndefOr[__string] = js.undefined
+    /**
+         * Default message substitutions. Can be overridden by individual address substitutions.
+         */
+    var Substitutions: js.UndefOr[MapOfListOf__string] = js.undefined
+    /**
+         * Voice ID of sent message.
+         */
+    var VoiceId: js.UndefOr[__string] = js.undefined
+  }
+  
+  
   trait WriteApplicationSettingsRequest extends js.Object {
     /**
          * Default campaign hook information.
@@ -6264,11 +6625,20 @@ object PinpointNs extends js.Object {
          */
     var CloudWatchMetricsEnabled: js.UndefOr[__boolean] = js.undefined
     /**
-         * The default campaign limits for the app. These limits apply to each campaign for the app, unless the campaign overrides the default with limits of its own.
+         * The limits that apply to each campaign in the project by default. Campaigns can also have their own limits, which override the settings at the project level.
          */
     var Limits: js.UndefOr[CampaignLimits] = js.undefined
     /**
-         * The default quiet time for the app. Each campaign for this app sends no messages during this time unless the campaign overrides the default with a quiet time of its own.
+         * The default quiet time for the app. Campaigns in the app don't send messages to endpoints during the quiet time.
+    
+    Note: Make sure that your endpoints include the Demographics.Timezone attribute if you plan to enable a quiet time for your app. If your endpoints don't include this attribute, they'll receive the messages that you send them, even if quiet time is enabled.
+    
+    When you set up an app to use quiet time, campaigns in that app don't send messages during the time range you specified, as long as all of the following are true:
+    - The endpoint includes a valid Demographic.Timezone attribute.
+    - The current time in the endpoint's time zone is later than or equal to the time specified in the QuietTime.Start attribute for the app (or campaign, if applicable).
+    - The current time in the endpoint's time zone is earlier than or equal to the time specified in the QuietTime.End attribute for the app (or campaign, if applicable).
+    
+    Individual campaigns within the app can have their own quiet time settings, which override the quiet time settings at the app level.
          */
     var QuietTime: js.UndefOr[QuietTime] = js.undefined
   }
@@ -6387,13 +6757,14 @@ object PinpointNs extends js.Object {
   type Action = awsDashSdkLib.awsDashSdkLibStrings.OPEN_APP | awsDashSdkLib.awsDashSdkLibStrings.DEEP_LINK | awsDashSdkLib.awsDashSdkLibStrings.URL | java.lang.String
   type AttributeType = awsDashSdkLib.awsDashSdkLibStrings.INCLUSIVE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUSIVE | java.lang.String
   type CampaignStatus = awsDashSdkLib.awsDashSdkLibStrings.SCHEDULED | awsDashSdkLib.awsDashSdkLibStrings.EXECUTING | awsDashSdkLib.awsDashSdkLibStrings.PENDING_NEXT_RUN | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.PAUSED | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
-  type ChannelType = awsDashSdkLib.awsDashSdkLibStrings.GCM | awsDashSdkLib.awsDashSdkLibStrings.APNS | awsDashSdkLib.awsDashSdkLibStrings.APNS_SANDBOX | awsDashSdkLib.awsDashSdkLibStrings.APNS_VOIP | awsDashSdkLib.awsDashSdkLibStrings.APNS_VOIP_SANDBOX | awsDashSdkLib.awsDashSdkLibStrings.ADM | awsDashSdkLib.awsDashSdkLibStrings.SMS | awsDashSdkLib.awsDashSdkLibStrings.EMAIL | awsDashSdkLib.awsDashSdkLibStrings.BAIDU | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM | java.lang.String
+  type ChannelType = awsDashSdkLib.awsDashSdkLibStrings.GCM | awsDashSdkLib.awsDashSdkLibStrings.APNS | awsDashSdkLib.awsDashSdkLibStrings.APNS_SANDBOX | awsDashSdkLib.awsDashSdkLibStrings.APNS_VOIP | awsDashSdkLib.awsDashSdkLibStrings.APNS_VOIP_SANDBOX | awsDashSdkLib.awsDashSdkLibStrings.ADM | awsDashSdkLib.awsDashSdkLibStrings.SMS | awsDashSdkLib.awsDashSdkLibStrings.VOICE | awsDashSdkLib.awsDashSdkLibStrings.EMAIL | awsDashSdkLib.awsDashSdkLibStrings.BAIDU | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DeliveryStatus = awsDashSdkLib.awsDashSdkLibStrings.SUCCESSFUL | awsDashSdkLib.awsDashSdkLibStrings.THROTTLED | awsDashSdkLib.awsDashSdkLibStrings.TEMPORARY_FAILURE | awsDashSdkLib.awsDashSdkLibStrings.PERMANENT_FAILURE | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN_FAILURE | awsDashSdkLib.awsDashSdkLibStrings.OPT_OUT | awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE | java.lang.String
   type DimensionType = awsDashSdkLib.awsDashSdkLibStrings.INCLUSIVE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUSIVE | java.lang.String
   type Duration = awsDashSdkLib.awsDashSdkLibStrings.HR_24 | awsDashSdkLib.awsDashSdkLibStrings.DAY_7 | awsDashSdkLib.awsDashSdkLibStrings.DAY_14 | awsDashSdkLib.awsDashSdkLibStrings.DAY_30 | java.lang.String
+  type FilterType = awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.ENDPOINT | java.lang.String
   type Format = awsDashSdkLib.awsDashSdkLibStrings.CSV | awsDashSdkLib.awsDashSdkLibStrings.JSON | java.lang.String
-  type Frequency = awsDashSdkLib.awsDashSdkLibStrings.ONCE | awsDashSdkLib.awsDashSdkLibStrings.HOURLY | awsDashSdkLib.awsDashSdkLibStrings.DAILY | awsDashSdkLib.awsDashSdkLibStrings.WEEKLY | awsDashSdkLib.awsDashSdkLibStrings.MONTHLY | java.lang.String
+  type Frequency = awsDashSdkLib.awsDashSdkLibStrings.ONCE | awsDashSdkLib.awsDashSdkLibStrings.HOURLY | awsDashSdkLib.awsDashSdkLibStrings.DAILY | awsDashSdkLib.awsDashSdkLibStrings.WEEKLY | awsDashSdkLib.awsDashSdkLibStrings.MONTHLY | awsDashSdkLib.awsDashSdkLibStrings.EVENT | java.lang.String
   type Include = awsDashSdkLib.awsDashSdkLibStrings.ALL | awsDashSdkLib.awsDashSdkLibStrings.ANY | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
   type JobStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATED | awsDashSdkLib.awsDashSdkLibStrings.INITIALIZING | awsDashSdkLib.awsDashSdkLibStrings.PROCESSING | awsDashSdkLib.awsDashSdkLibStrings.COMPLETING | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.FAILING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
   type ListOfActivityResponse = js.Array[ActivityResponse]
@@ -6416,6 +6787,7 @@ object PinpointNs extends js.Object {
   type SegmentType = awsDashSdkLib.awsDashSdkLibStrings.DIMENSIONAL | awsDashSdkLib.awsDashSdkLibStrings.IMPORT | java.lang.String
   type SourceType = awsDashSdkLib.awsDashSdkLibStrings.ALL | awsDashSdkLib.awsDashSdkLibStrings.ANY | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
   type Type = awsDashSdkLib.awsDashSdkLibStrings.ALL | awsDashSdkLib.awsDashSdkLibStrings.ANY | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
+  type __blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsPinpointMod.Blob | java.lang.String
   type __boolean = scala.Boolean
   type __double = scala.Double
   type __integer = scala.Double

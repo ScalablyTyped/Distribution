@@ -12,6 +12,6 @@ trait GetStorageOptions
   var key: java.lang.String
   /** 接口调用的回调函数,res = {data: key对应的内容} */
   @JSName("success")
-  def success_MGetStorageOptions(res: DataResponse): scala.Unit
+  def success_MGetStorageOptions(res: weixinDashAppLib.Anon_Data): scala.Unit
 }
 

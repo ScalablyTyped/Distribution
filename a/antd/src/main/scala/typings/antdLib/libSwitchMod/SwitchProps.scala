@@ -17,6 +17,7 @@ trait SwitchProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* checked */ scala.Boolean, _]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var unCheckedChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 

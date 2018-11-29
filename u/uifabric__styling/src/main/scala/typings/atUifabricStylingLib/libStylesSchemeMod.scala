@@ -8,14 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/styling/lib/styles/scheme", JSImport.Namespace)
 @js.native
 object libStylesSchemeMod extends js.Object {
-  def getSchemedContext(
-    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
-    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext
-  ): js.UndefOr[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
-  def getSchemedContext(
-    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
+  def getThemedContext(context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
+  def getThemedContext(
     context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
-    settingsTheme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
-  ): js.UndefOr[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
+    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames
+  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
+  def getThemedContext(
+    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
+    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
+    theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
+  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
 }
 

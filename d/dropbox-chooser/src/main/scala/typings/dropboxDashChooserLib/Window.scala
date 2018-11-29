@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Window extends js.Object {
-  var Dropbox: js.UndefOr[DropboxChooser] = js.undefined
+  var Dropbox: js.UndefOr[dropboxDashChooserLib.DropboxNs.Chooser] = js.undefined
 }
 

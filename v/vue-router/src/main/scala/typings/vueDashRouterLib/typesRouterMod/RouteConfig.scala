@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait RouteConfig extends js.Object {
   var alias: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var beforeEnter: js.UndefOr[NavigationGuard] = js.undefined
+  var beforeEnter: js.UndefOr[NavigationGuard[vueLib.typesVueMod.Vue]] = js.undefined
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[js.Array[RouteConfig]] = js.undefined
   var component: js.UndefOr[Component] = js.undefined

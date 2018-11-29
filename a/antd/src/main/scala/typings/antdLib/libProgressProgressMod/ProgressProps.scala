@@ -12,7 +12,7 @@ trait ProgressProps extends js.Object {
     js.Function2[
       /* percent */ js.UndefOr[scala.Double], 
       /* successPercent */ js.UndefOr[scala.Double], 
-      java.lang.String
+      reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
   var gapDegree: js.UndefOr[scala.Double] = js.undefined

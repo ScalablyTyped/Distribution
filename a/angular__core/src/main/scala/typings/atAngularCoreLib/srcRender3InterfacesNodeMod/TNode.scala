@@ -30,7 +30,7 @@ trait TNode extends js.Object {
        */
   var child: TNode | scala.Null
   /**
-       * If this node is part of an i18n block, it indicates whether this container is part of the DOM
+       * If this node is part of an i18n block, it indicates whether this node is part of the DOM.
        * If this node is not part of an i18n block, this field is null.
        */
   var detached: scala.Boolean | scala.Null
@@ -158,6 +158,13 @@ trait TNode extends js.Object {
        *   the process is recursive in nature (not implementation).
        */
   var projection: (js.Array[TNode | scala.Null]) | scala.Double | scala.Null
+  /**
+       * This number stores two values using its bits:
+       *
+       * - the index of the first provider on that node (first 16 bits)
+       * - the count of view providers from the component on this node (last 16 bits)
+       */
+  var providerIndexes: TNodeProviderIndexes
   var stylingTemplate: atAngularCoreLib.srcRender3InterfacesStylingMod.StylingContext | scala.Null
   /**
        * The TView or TViews attached to this node.

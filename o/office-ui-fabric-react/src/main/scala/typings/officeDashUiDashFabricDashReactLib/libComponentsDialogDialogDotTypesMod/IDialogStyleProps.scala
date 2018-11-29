@@ -13,12 +13,12 @@ trait IDialogStyleProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Optional override for container class
-       * @deprecated Pass through via modalProps.className instead
+       * @deprecated Pass through via `modalProps.className` instead.
        */
   var containerClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Optional override content class
-       * @deprecated Pass through via dialogContentProps instead as className
+       * @deprecated Pass through via `dialogContentProps` instead as `className`.
        */
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -37,7 +37,7 @@ trait IDialogStyleProps extends js.Object {
   ] = js.undefined
   /**
        * Whether the dialog is hidden.
-       * @default false
+       * @defaultvalue false
        */
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   /**

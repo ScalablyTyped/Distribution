@@ -463,6 +463,47 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.
+     */
+  def createDBClusterEndpoint(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.
+     */
+  def createDBClusterEndpoint(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.
+     */
+  def createDBClusterEndpoint(params: awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterEndpointMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.
+     */
+  def createDBClusterEndpoint(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.CreateDBClusterEndpointMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Creates a new DB cluster parameter group. Parameters in a DB cluster parameter group apply to all of the instances in a DB cluster.  A DB cluster parameter group is initially created with the default parameters for the database engine used by instances in the DB cluster. To provide custom values for any of the parameters, you must modify the group after creating it using ModifyDBClusterParameterGroup. Once you've created a DB cluster parameter group, you need to associate it with your DB cluster using ModifyDBCluster. When you associate a new DB cluster parameter group with a running DB cluster, you need to reboot the DB instances in the DB cluster without failover for the new DB cluster parameter group and associated settings to take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the DB cluster parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
      */
   def createDBClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[
@@ -832,6 +873,47 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. 
+     */
+  def createGlobalCluster(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. 
+     */
+  def createGlobalCluster(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. 
+     */
+  def createGlobalCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. 
+     */
+  def createGlobalCluster(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.CreateGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Creates a new option group. You can create up to 20 option groups.
      */
   def createOptionGroup(): awsDashSdkLib.libRequestMod.Request[
@@ -911,6 +993,47 @@ trait RDS
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
+     */
+  def deleteDBClusterEndpoint(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
+     */
+  def deleteDBClusterEndpoint(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
+     */
+  def deleteDBClusterEndpoint(params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterEndpointMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
+     */
+  def deleteDBClusterEndpoint(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBClusterEndpointMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1017,21 +1140,62 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specified DBParameterGroup. The DBParameterGroup to be deleted can't be associated with any DB instances.
+     * Deletes automated backups based on the source instance's DbiResourceId value or the restorable instance's resource ID.
+     */
+  def deleteDBInstanceAutomatedBackup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBInstanceAutomatedBackupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes automated backups based on the source instance's DbiResourceId value or the restorable instance's resource ID.
+     */
+  def deleteDBInstanceAutomatedBackup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBInstanceAutomatedBackupResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBInstanceAutomatedBackupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes automated backups based on the source instance's DbiResourceId value or the restorable instance's resource ID.
+     */
+  def deleteDBInstanceAutomatedBackup(params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBInstanceAutomatedBackupMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBInstanceAutomatedBackupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes automated backups based on the source instance's DbiResourceId value or the restorable instance's resource ID.
+     */
+  def deleteDBInstanceAutomatedBackup(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBInstanceAutomatedBackupMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBInstanceAutomatedBackupResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBInstanceAutomatedBackupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.
      */
   def deleteDBParameterGroup(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a specified DBParameterGroup. The DBParameterGroup to be deleted can't be associated with any DB instances.
+     * Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.
      */
   def deleteDBParameterGroup(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a specified DBParameterGroup. The DBParameterGroup to be deleted can't be associated with any DB instances.
+     * Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.
      */
   def deleteDBParameterGroup(params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBParameterGroupMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a specified DBParameterGroup. The DBParameterGroup to be deleted can't be associated with any DB instances.
+     * Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.
      */
   def deleteDBParameterGroup(
     params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBParameterGroupMessage,
@@ -1059,14 +1223,14 @@ trait RDS
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a DBSnapshot. If the snapshot is being copied, the copy operation is terminated.  The DBSnapshot must be in the available state to be deleted. 
+     * Deletes a DB snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB snapshot must be in the available state to be deleted. 
      */
   def deleteDBSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a DBSnapshot. If the snapshot is being copied, the copy operation is terminated.  The DBSnapshot must be in the available state to be deleted. 
+     * Deletes a DB snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB snapshot must be in the available state to be deleted. 
      */
   def deleteDBSnapshot(
     callback: js.Function2[
@@ -1079,14 +1243,14 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a DBSnapshot. If the snapshot is being copied, the copy operation is terminated.  The DBSnapshot must be in the available state to be deleted. 
+     * Deletes a DB snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB snapshot must be in the available state to be deleted. 
      */
   def deleteDBSnapshot(params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBSnapshotMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a DBSnapshot. If the snapshot is being copied, the copy operation is terminated.  The DBSnapshot must be in the available state to be deleted. 
+     * Deletes a DB snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB snapshot must be in the available state to be deleted. 
      */
   def deleteDBSnapshot(
     params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteDBSnapshotMessage,
@@ -1159,6 +1323,47 @@ trait RDS
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DeleteEventSubscriptionResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. 
+     */
+  def deleteGlobalCluster(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. 
+     */
+  def deleteGlobalCluster(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. 
+     */
+  def deleteGlobalCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. 
+     */
+  def deleteGlobalCluster(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DeleteGlobalClusterResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1303,6 +1508,47 @@ trait RDS
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterBacktrackMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about endpoints for an Amazon Aurora DB cluster.
+     */
+  def describeDBClusterEndpoints(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpointMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about endpoints for an Amazon Aurora DB cluster.
+     */
+  def describeDBClusterEndpoints(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpointMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpointMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about endpoints for an Amazon Aurora DB cluster.
+     */
+  def describeDBClusterEndpoints(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClusterEndpointsMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpointMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about endpoints for an Amazon Aurora DB cluster.
+     */
+  def describeDBClusterEndpoints(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBClusterEndpointsMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpointMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpointMessage, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1549,6 +1795,47 @@ trait RDS
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.DBEngineVersionMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the DescribeDBInstanceAutomatedBackups and DescribeDBInstances operations. All parameters are optional.
+     */
+  def describeDBInstanceAutomatedBackups(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBInstanceAutomatedBackupMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the DescribeDBInstanceAutomatedBackups and DescribeDBInstances operations. All parameters are optional.
+     */
+  def describeDBInstanceAutomatedBackups(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DBInstanceAutomatedBackupMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBInstanceAutomatedBackupMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the DescribeDBInstanceAutomatedBackups and DescribeDBInstances operations. All parameters are optional.
+     */
+  def describeDBInstanceAutomatedBackups(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBInstanceAutomatedBackupsMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBInstanceAutomatedBackupMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the DescribeDBInstanceAutomatedBackups and DescribeDBInstances operations. All parameters are optional.
+     */
+  def describeDBInstanceAutomatedBackups(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeDBInstanceAutomatedBackupsMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DBInstanceAutomatedBackupMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBInstanceAutomatedBackupMessage, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -2085,6 +2372,47 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+     */
+  def describeGlobalClusters(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.GlobalClustersMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+     */
+  def describeGlobalClusters(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.GlobalClustersMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.GlobalClustersMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+     */
+  def describeGlobalClusters(params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeGlobalClustersMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.GlobalClustersMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+     */
+  def describeGlobalClusters(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.DescribeGlobalClustersMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.GlobalClustersMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.GlobalClustersMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Describes all available options.
      */
   def describeOptionGroupOptions(): awsDashSdkLib.libRequestMod.Request[
@@ -2606,6 +2934,47 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
+     */
+  def modifyDBClusterEndpoint(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
+     */
+  def modifyDBClusterEndpoint(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
+     */
+  def modifyDBClusterEndpoint(params: awsDashSdkLib.clientsRdsMod.RDSNs.ModifyDBClusterEndpointMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
+     */
+  def modifyDBClusterEndpoint(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.ModifyDBClusterEndpointMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.DBClusterEndpoint, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      *  Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: ParameterName, ParameterValue, and ApplyMethod. A maximum of 20 parameters can be modified in a single request.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified. 
      */
   def modifyDBClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[
@@ -2934,6 +3303,47 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+     */
+  def modifyGlobalCluster(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+     */
+  def modifyGlobalCluster(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+     */
+  def modifyGlobalCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+     */
+  def modifyGlobalCluster(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.ModifyGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Modifies an existing option group.
      */
   def modifyOptionGroup(): awsDashSdkLib.libRequestMod.Request[
@@ -3136,6 +3546,47 @@ trait RDS
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.RebootDBInstanceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. 
+     */
+  def removeFromGlobalCluster(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. 
+     */
+  def removeFromGlobalCluster(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. 
+     */
+  def removeFromGlobalCluster(params: awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. 
+     */
+  def removeFromGlobalCluster(
+    params: awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRdsMod.RDSNs.RemoveFromGlobalClusterResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -3632,14 +4083,14 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB Instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
+     *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
      */
   def startDBInstance(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.StartDBInstanceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB Instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
+     *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
      */
   def startDBInstance(
     callback: js.Function2[
@@ -3652,14 +4103,14 @@ trait RDS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB Instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
+     *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
      */
   def startDBInstance(params: awsDashSdkLib.clientsRdsMod.RDSNs.StartDBInstanceMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsMod.RDSNs.StartDBInstanceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB Instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
+     *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
      */
   def startDBInstance(
     params: awsDashSdkLib.clientsRdsMod.RDSNs.StartDBInstanceMessage,

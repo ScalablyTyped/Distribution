@@ -55,6 +55,6 @@ object tupleNs extends js.Object {
     /* SB */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libTupleMod.Tuple[js.Any, js.Any]]
   ] = js.native
-  val tuple: fpDashTsLib.libSemigroupoidMod.Semigroupoid2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libComonadMod.Comonad2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libTraversableMod.Traversable2[fpDashTsLib.libTupleMod.URI] = js.native
+  val tuple: fpDashTsLib.libSemigroupoidMod.Semigroupoid2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libComonadMod.Comonad2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libTupleMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libTupleMod.URI] = js.native
 }
 

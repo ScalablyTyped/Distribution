@@ -36,6 +36,7 @@ trait HostBindingDecorator
        *   prop;
        * }
        * ```
+       *
        */
   def apply(): js.Any = js.native
   /**
@@ -65,6 +66,7 @@ trait HostBindingDecorator
        *   prop;
        * }
        * ```
+       *
        */
   def apply(hostPropertyName: java.lang.String): js.Any = js.native
 }

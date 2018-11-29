@@ -11,6 +11,49 @@ trait ConfigService
   @JSName("config")
   var config_ConfigService: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ClientConfiguration = js.native
   /**
+     * Returns the current configuration items for resources that are present in your AWS Config aggregator. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceIdentifiers list.     The API does not return results for deleted resources.    The API does not return tags and relationships.   
+     */
+  def batchGetAggregateResourceConfig(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.BatchGetAggregateResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the current configuration items for resources that are present in your AWS Config aggregator. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceIdentifiers list.     The API does not return results for deleted resources.    The API does not return tags and relationships.   
+     */
+  def batchGetAggregateResourceConfig(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.BatchGetAggregateResourceConfigResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.BatchGetAggregateResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the current configuration items for resources that are present in your AWS Config aggregator. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceIdentifiers list.     The API does not return results for deleted resources.    The API does not return tags and relationships.   
+     */
+  def batchGetAggregateResourceConfig(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.BatchGetAggregateResourceConfigRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.BatchGetAggregateResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the current configuration items for resources that are present in your AWS Config aggregator. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceIdentifiers list.     The API does not return results for deleted resources.    The API does not return tags and relationships.   
+     */
+  def batchGetAggregateResourceConfig(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.BatchGetAggregateResourceConfigRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.BatchGetAggregateResourceConfigResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.BatchGetAggregateResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Returns the current configuration for one or more requested resources. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceKeys list.     The API does not return results for deleted resources.    The API does not return any tags for the requested resources. This information is filtered out of the supplementaryConfiguration section of the API response.   
      */
   def batchGetResourceConfig(): awsDashSdkLib.libRequestMod.Request[
@@ -965,6 +1008,90 @@ trait ConfigService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Returns the resource counts across accounts and regions that are present in your AWS Config aggregator. You can request the resource counts by providing filters and GroupByKey. For example, if the input contains accountID 12345678910 and region us-east-1 in filters, the API returns the count of resources in account ID 12345678910 and region us-east-1. If the input contains ACCOUNT_ID as a GroupByKey, the API returns resource counts for all source accounts that are present in your aggregator.
+     */
+  def getAggregateDiscoveredResourceCounts(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateDiscoveredResourceCountsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the resource counts across accounts and regions that are present in your AWS Config aggregator. You can request the resource counts by providing filters and GroupByKey. For example, if the input contains accountID 12345678910 and region us-east-1 in filters, the API returns the count of resources in account ID 12345678910 and region us-east-1. If the input contains ACCOUNT_ID as a GroupByKey, the API returns resource counts for all source accounts that are present in your aggregator.
+     */
+  def getAggregateDiscoveredResourceCounts(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateDiscoveredResourceCountsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateDiscoveredResourceCountsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the resource counts across accounts and regions that are present in your AWS Config aggregator. You can request the resource counts by providing filters and GroupByKey. For example, if the input contains accountID 12345678910 and region us-east-1 in filters, the API returns the count of resources in account ID 12345678910 and region us-east-1. If the input contains ACCOUNT_ID as a GroupByKey, the API returns resource counts for all source accounts that are present in your aggregator.
+     */
+  def getAggregateDiscoveredResourceCounts(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateDiscoveredResourceCountsRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateDiscoveredResourceCountsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the resource counts across accounts and regions that are present in your AWS Config aggregator. You can request the resource counts by providing filters and GroupByKey. For example, if the input contains accountID 12345678910 and region us-east-1 in filters, the API returns the count of resources in account ID 12345678910 and region us-east-1. If the input contains ACCOUNT_ID as a GroupByKey, the API returns resource counts for all source accounts that are present in your aggregator.
+     */
+  def getAggregateDiscoveredResourceCounts(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateDiscoveredResourceCountsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateDiscoveredResourceCountsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateDiscoveredResourceCountsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns configuration item that is aggregated for your specific resource in a specific source account and region.
+     */
+  def getAggregateResourceConfig(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns configuration item that is aggregated for your specific resource in a specific source account and region.
+     */
+  def getAggregateResourceConfig(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateResourceConfigResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns configuration item that is aggregated for your specific resource in a specific source account and region.
+     */
+  def getAggregateResourceConfig(params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateResourceConfigRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns configuration item that is aggregated for your specific resource in a specific source account and region.
+     */
+  def getAggregateResourceConfig(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateResourceConfigRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateResourceConfigResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetAggregateResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Returns the evaluation results for the specified AWS Config rule. The results indicate which AWS resources were evaluated by the rule, when each resource was last evaluated, and whether each resource complies with the rule.
      */
   def getComplianceDetailsByConfigRule(): awsDashSdkLib.libRequestMod.Request[
@@ -1193,6 +1320,49 @@ trait ConfigService
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.GetResourceConfigHistoryResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Accepts a resource type and returns a list of resource identifiers that are aggregated for a specific resource type across accounts and regions. A resource identifier includes the resource type, ID, (if available) the custom resource name, source account, and source region. You can narrow the results to include only resources that have specific resource IDs, or a resource name, or source account ID, or source region. For example, if the input consists of accountID 12345678910 and the region is us-east-1 for resource type AWS::EC2::Instance then the API returns all the EC2 instance identifiers of accountID 12345678910 and region us-east-1.
+     */
+  def listAggregateDiscoveredResources(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListAggregateDiscoveredResourcesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Accepts a resource type and returns a list of resource identifiers that are aggregated for a specific resource type across accounts and regions. A resource identifier includes the resource type, ID, (if available) the custom resource name, source account, and source region. You can narrow the results to include only resources that have specific resource IDs, or a resource name, or source account ID, or source region. For example, if the input consists of accountID 12345678910 and the region is us-east-1 for resource type AWS::EC2::Instance then the API returns all the EC2 instance identifiers of accountID 12345678910 and region us-east-1.
+     */
+  def listAggregateDiscoveredResources(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListAggregateDiscoveredResourcesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListAggregateDiscoveredResourcesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Accepts a resource type and returns a list of resource identifiers that are aggregated for a specific resource type across accounts and regions. A resource identifier includes the resource type, ID, (if available) the custom resource name, source account, and source region. You can narrow the results to include only resources that have specific resource IDs, or a resource name, or source account ID, or source region. For example, if the input consists of accountID 12345678910 and the region is us-east-1 for resource type AWS::EC2::Instance then the API returns all the EC2 instance identifiers of accountID 12345678910 and region us-east-1.
+     */
+  def listAggregateDiscoveredResources(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListAggregateDiscoveredResourcesRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListAggregateDiscoveredResourcesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Accepts a resource type and returns a list of resource identifiers that are aggregated for a specific resource type across accounts and regions. A resource identifier includes the resource type, ID, (if available) the custom resource name, source account, and source region. You can narrow the results to include only resources that have specific resource IDs, or a resource name, or source account ID, or source region. For example, if the input consists of accountID 12345678910 and the region is us-east-1 for resource type AWS::EC2::Instance then the API returns all the EC2 instance identifiers of accountID 12345678910 and region us-east-1.
+     */
+  def listAggregateDiscoveredResources(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListAggregateDiscoveredResourcesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListAggregateDiscoveredResourcesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListAggregateDiscoveredResourcesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

@@ -12,7 +12,7 @@ trait CommonLinuxOptions extends js.Object {
        */
   val category: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * As [description](/configuration/configuration.md#Metadata-description) from application package.json, but allows you to specify different for Linux.
+       * As [description](/configuration/configuration#Metadata-description) from application package.json, but allows you to specify different for Linux.
        */
   val description: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

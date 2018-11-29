@@ -8,42 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-server-core/dist/graphqlOptions", JSImport.Namespace)
 @js.native
 object distGraphqlOptionsModMembers extends js.Object {
-  def resolveGraphqlOptions(
-    options: GraphQLServerOptions[
-      (js.Function0[
-        (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-      ]) | (stdLib.Record[java.lang.String, _])
-    ],
-    args: js.Any*
-  ): stdLib.Promise[
-    GraphQLServerOptions[
-      (js.Function0[
-        (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-      ]) | (stdLib.Record[java.lang.String, _])
-    ]
-  ] = js.native
+  def resolveGraphqlOptions(options: GraphQLServerOptions[stdLib.Record[java.lang.String, _], _], args: js.Any*): stdLib.Promise[GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]] = js.native
   def resolveGraphqlOptions(
     options: js.Function1[
       /* repeated */js.Any, 
-      (stdLib.Promise[
-        GraphQLServerOptions[
-          (js.Function0[
-            (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-          ]) | (stdLib.Record[java.lang.String, _])
-        ]
-      ]) | (GraphQLServerOptions[
-        (js.Function0[
-          (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-        ]) | (stdLib.Record[java.lang.String, _])
-      ])
+      (stdLib.Promise[GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]]) | (GraphQLServerOptions[stdLib.Record[java.lang.String, _], _])
     ],
     args: js.Any*
-  ): stdLib.Promise[
-    GraphQLServerOptions[
-      (js.Function0[
-        (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-      ]) | (stdLib.Record[java.lang.String, _])
-    ]
-  ] = js.native
+  ): stdLib.Promise[GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]] = js.native
 }
 

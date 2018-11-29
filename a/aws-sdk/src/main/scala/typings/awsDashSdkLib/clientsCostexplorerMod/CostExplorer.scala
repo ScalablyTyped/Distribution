@@ -52,6 +52,47 @@ trait CostExplorer
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Retrieves a forecast for how much Amazon Web Services predicts that you will spend over the forecast time period that you select, based on your past costs. 
+     */
+  def getCostForecast(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.GetCostForecastResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a forecast for how much Amazon Web Services predicts that you will spend over the forecast time period that you select, based on your past costs. 
+     */
+  def getCostForecast(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.GetCostForecastResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.GetCostForecastResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a forecast for how much Amazon Web Services predicts that you will spend over the forecast time period that you select, based on your past costs. 
+     */
+  def getCostForecast(params: awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.GetCostForecastRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.GetCostForecastResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a forecast for how much Amazon Web Services predicts that you will spend over the forecast time period that you select, based on your past costs. 
+     */
+  def getCostForecast(
+    params: awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.GetCostForecastRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.GetCostForecastResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.GetCostForecastResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Retrieves all available filter values for a specified filter over a period of time. You can search the dimension values for an arbitrary string. 
      */
   def getDimensionValues(): awsDashSdkLib.libRequestMod.Request[

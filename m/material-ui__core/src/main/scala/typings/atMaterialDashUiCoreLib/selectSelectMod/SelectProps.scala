@@ -28,14 +28,14 @@ trait SelectProps
   var renderValue: js.UndefOr[
     js.Function1[
       /* value */ js.UndefOr[
-        (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean
+        (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
       ], 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var value: js.UndefOr[
-    (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean
+    (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
   ] = js.undefined
   var variant: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.outlined | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.filled

@@ -12,15 +12,15 @@ trait CSSStyleDeclaration
   var alignItems: java.lang.String | scala.Null = js.native
   var alignSelf: java.lang.String | scala.Null = js.native
   var alignmentBaseline: java.lang.String | scala.Null = js.native
-  var animation: java.lang.String | scala.Null = js.native
-  var animationDelay: java.lang.String | scala.Null = js.native
-  var animationDirection: java.lang.String | scala.Null = js.native
-  var animationDuration: java.lang.String | scala.Null = js.native
-  var animationFillMode: java.lang.String | scala.Null = js.native
-  var animationIterationCount: java.lang.String | scala.Null = js.native
-  var animationName: java.lang.String | scala.Null = js.native
-  var animationPlayState: java.lang.String | scala.Null = js.native
-  var animationTimingFunction: java.lang.String | scala.Null = js.native
+  var animation: java.lang.String = js.native
+  var animationDelay: java.lang.String = js.native
+  var animationDirection: java.lang.String = js.native
+  var animationDuration: java.lang.String = js.native
+  var animationFillMode: java.lang.String = js.native
+  var animationIterationCount: java.lang.String = js.native
+  var animationName: java.lang.String = js.native
+  var animationPlayState: java.lang.String = js.native
+  var animationTimingFunction: java.lang.String = js.native
   var backfaceVisibility: java.lang.String | scala.Null = js.native
   var background: java.lang.String | scala.Null = js.native
   var backgroundAttachment: java.lang.String | scala.Null = js.native
@@ -265,6 +265,7 @@ trait CSSStyleDeclaration
   var rubyOverhang: java.lang.String | scala.Null = js.native
   var rubyPosition: java.lang.String | scala.Null = js.native
   var scale: java.lang.String | scala.Null = js.native
+  var scrollBehavior: java.lang.String = js.native
   var stopColor: java.lang.String | scala.Null = js.native
   var stopOpacity: java.lang.String | scala.Null = js.native
   var stroke: java.lang.String | scala.Null = js.native
@@ -290,50 +291,79 @@ trait CSSStyleDeclaration
   var textTransform: java.lang.String | scala.Null = js.native
   var textUnderlinePosition: java.lang.String | scala.Null = js.native
   var top: java.lang.String | scala.Null = js.native
-  var touchAction: java.lang.String | scala.Null = js.native
+  var touchAction: java.lang.String = js.native
   var transform: java.lang.String | scala.Null = js.native
   var transformOrigin: java.lang.String | scala.Null = js.native
   var transformStyle: java.lang.String | scala.Null = js.native
-  var transition: java.lang.String | scala.Null = js.native
-  var transitionDelay: java.lang.String | scala.Null = js.native
-  var transitionDuration: java.lang.String | scala.Null = js.native
-  var transitionProperty: java.lang.String | scala.Null = js.native
-  var transitionTimingFunction: java.lang.String | scala.Null = js.native
+  var transition: java.lang.String = js.native
+  var transitionDelay: java.lang.String = js.native
+  var transitionDuration: java.lang.String = js.native
+  var transitionProperty: java.lang.String = js.native
+  var transitionTimingFunction: java.lang.String = js.native
   var translate: java.lang.String | scala.Null = js.native
   var unicodeBidi: java.lang.String | scala.Null = js.native
   var userSelect: java.lang.String | scala.Null = js.native
   var verticalAlign: java.lang.String | scala.Null = js.native
   var visibility: java.lang.String | scala.Null = js.native
-  var webkitAlignContent: java.lang.String | scala.Null = js.native
-  var webkitAlignItems: java.lang.String | scala.Null = js.native
-  var webkitAlignSelf: java.lang.String | scala.Null = js.native
-  var webkitAnimation: java.lang.String | scala.Null = js.native
-  var webkitAnimationDelay: java.lang.String | scala.Null = js.native
-  var webkitAnimationDirection: java.lang.String | scala.Null = js.native
-  var webkitAnimationDuration: java.lang.String | scala.Null = js.native
-  var webkitAnimationFillMode: java.lang.String | scala.Null = js.native
-  var webkitAnimationIterationCount: java.lang.String | scala.Null = js.native
-  var webkitAnimationName: java.lang.String | scala.Null = js.native
-  var webkitAnimationPlayState: java.lang.String | scala.Null = js.native
-  var webkitAnimationTimingFunction: java.lang.String | scala.Null = js.native
-  var webkitAppearance: java.lang.String | scala.Null = js.native
-  var webkitBackfaceVisibility: java.lang.String | scala.Null = js.native
-  var webkitBackgroundClip: java.lang.String | scala.Null = js.native
-  var webkitBackgroundOrigin: java.lang.String | scala.Null = js.native
-  var webkitBackgroundSize: java.lang.String | scala.Null = js.native
-  var webkitBorderBottomLeftRadius: java.lang.String | scala.Null = js.native
-  var webkitBorderBottomRightRadius: java.lang.String | scala.Null = js.native
+  /** @deprecated */
+  var webkitAlignContent: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAlignItems: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAlignSelf: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAnimation: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAnimationDelay: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAnimationDirection: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAnimationDuration: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAnimationFillMode: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAnimationIterationCount: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAnimationName: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAnimationPlayState: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAnimationTimingFunction: java.lang.String = js.native
+  /** @deprecated */
+  var webkitAppearance: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBackfaceVisibility: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBackgroundClip: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBackgroundOrigin: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBackgroundSize: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBorderBottomLeftRadius: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBorderBottomRightRadius: java.lang.String = js.native
   var webkitBorderImage: java.lang.String | scala.Null = js.native
-  var webkitBorderRadius: java.lang.String | scala.Null = js.native
-  var webkitBorderTopLeftRadius: java.lang.String | scala.Null = js.native
-  var webkitBorderTopRightRadius: java.lang.String | scala.Null = js.native
-  var webkitBoxAlign: java.lang.String | scala.Null = js.native
+  /** @deprecated */
+  var webkitBorderRadius: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBorderTopLeftRadius: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBorderTopRightRadius: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBoxAlign: java.lang.String = js.native
   var webkitBoxDirection: java.lang.String | scala.Null = js.native
-  var webkitBoxFlex: java.lang.String | scala.Null = js.native
-  var webkitBoxOrdinalGroup: java.lang.String | scala.Null = js.native
+  /** @deprecated */
+  var webkitBoxFlex: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBoxOrdinalGroup: java.lang.String = js.native
   var webkitBoxOrient: java.lang.String | scala.Null = js.native
-  var webkitBoxPack: java.lang.String | scala.Null = js.native
-  var webkitBoxSizing: java.lang.String | scala.Null = js.native
+  /** @deprecated */
+  var webkitBoxPack: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBoxShadow: java.lang.String = js.native
+  /** @deprecated */
+  var webkitBoxSizing: java.lang.String = js.native
   var webkitColumnBreakAfter: java.lang.String | scala.Null = js.native
   var webkitColumnBreakBefore: java.lang.String | scala.Null = js.native
   var webkitColumnBreakInside: java.lang.String | scala.Null = js.native
@@ -346,32 +376,85 @@ trait CSSStyleDeclaration
   var webkitColumnSpan: java.lang.String | scala.Null = js.native
   var webkitColumnWidth: js.Any = js.native
   var webkitColumns: java.lang.String | scala.Null = js.native
-  var webkitFilter: java.lang.String | scala.Null = js.native
-  var webkitFlex: java.lang.String | scala.Null = js.native
-  var webkitFlexBasis: java.lang.String | scala.Null = js.native
-  var webkitFlexDirection: java.lang.String | scala.Null = js.native
-  var webkitFlexFlow: java.lang.String | scala.Null = js.native
-  var webkitFlexGrow: java.lang.String | scala.Null = js.native
-  var webkitFlexShrink: java.lang.String | scala.Null = js.native
-  var webkitFlexWrap: java.lang.String | scala.Null = js.native
-  var webkitJustifyContent: java.lang.String | scala.Null = js.native
-  var webkitOrder: java.lang.String | scala.Null = js.native
-  var webkitPerspective: java.lang.String | scala.Null = js.native
-  var webkitPerspectiveOrigin: java.lang.String | scala.Null = js.native
+  /** @deprecated */
+  var webkitFilter: java.lang.String = js.native
+  /** @deprecated */
+  var webkitFlex: java.lang.String = js.native
+  /** @deprecated */
+  var webkitFlexBasis: java.lang.String = js.native
+  /** @deprecated */
+  var webkitFlexDirection: java.lang.String = js.native
+  /** @deprecated */
+  var webkitFlexFlow: java.lang.String = js.native
+  /** @deprecated */
+  var webkitFlexGrow: java.lang.String = js.native
+  /** @deprecated */
+  var webkitFlexShrink: java.lang.String = js.native
+  /** @deprecated */
+  var webkitFlexWrap: java.lang.String = js.native
+  /** @deprecated */
+  var webkitJustifyContent: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMask: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskBoxImage: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskBoxImageOutset: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskBoxImageRepeat: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskBoxImageSlice: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskBoxImageSource: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskBoxImageWidth: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskClip: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskComposite: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskImage: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskOrigin: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskPosition: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskRepeat: java.lang.String = js.native
+  /** @deprecated */
+  var webkitMaskSize: java.lang.String = js.native
+  /** @deprecated */
+  var webkitOrder: java.lang.String = js.native
+  /** @deprecated */
+  var webkitPerspective: java.lang.String = js.native
+  /** @deprecated */
+  var webkitPerspectiveOrigin: java.lang.String = js.native
   var webkitTapHighlightColor: java.lang.String | scala.Null = js.native
-  var webkitTextFillColor: java.lang.String | scala.Null = js.native
-  var webkitTextSizeAdjust: js.Any = js.native
-  var webkitTextStroke: java.lang.String | scala.Null = js.native
-  var webkitTextStrokeColor: java.lang.String | scala.Null = js.native
-  var webkitTextStrokeWidth: java.lang.String | scala.Null = js.native
-  var webkitTransform: java.lang.String | scala.Null = js.native
-  var webkitTransformOrigin: java.lang.String | scala.Null = js.native
-  var webkitTransformStyle: java.lang.String | scala.Null = js.native
-  var webkitTransition: java.lang.String | scala.Null = js.native
-  var webkitTransitionDelay: java.lang.String | scala.Null = js.native
-  var webkitTransitionDuration: java.lang.String | scala.Null = js.native
-  var webkitTransitionProperty: java.lang.String | scala.Null = js.native
-  var webkitTransitionTimingFunction: java.lang.String | scala.Null = js.native
+  /** @deprecated */
+  var webkitTextFillColor: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTextSizeAdjust: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTextStroke: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTextStrokeColor: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTextStrokeWidth: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTransform: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTransformOrigin: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTransformStyle: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTransition: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTransitionDelay: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTransitionDuration: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTransitionProperty: java.lang.String = js.native
+  /** @deprecated */
+  var webkitTransitionTimingFunction: java.lang.String = js.native
   var webkitUserModify: java.lang.String | scala.Null = js.native
   var webkitUserSelect: java.lang.String | scala.Null = js.native
   var webkitWritingMode: java.lang.String | scala.Null = js.native

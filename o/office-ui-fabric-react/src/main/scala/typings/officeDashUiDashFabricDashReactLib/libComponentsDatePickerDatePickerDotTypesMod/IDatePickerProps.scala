@@ -29,10 +29,24 @@ trait IDatePickerProps
        */
   var borderless: js.UndefOr[scala.Boolean] = js.undefined
   /**
+       * Custom Calendar to be used for date picking
+       */
+  var calendarAs: js.UndefOr[
+    atUifabricUtilitiesLib.libIComponentAsMod.IComponentAs[
+      officeDashUiDashFabricDashReactLib.libComponentsCalendarCalendarDotTypesMod.ICalendarProps
+    ]
+  ] = js.undefined
+  /**
        * Pass calendar props to calendar component
        */
   var calendarProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsCalendarCalendarDotTypesMod.ICalendarProps
+  ] = js.undefined
+  /**
+       * Pass callout props to callout component
+       */
+  var calloutProps: js.UndefOr[
+    officeDashUiDashFabricDashReactLib.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
   ] = js.undefined
   /**
        * Apply additional formating to dates, for example localized date formatting.
@@ -47,7 +61,7 @@ trait IDatePickerProps
   var disableAutoFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Disabled state of the DatePicker.
-       * @default false
+       * @defaultvalue false
        */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -160,7 +174,7 @@ trait IDatePickerProps
   var today: js.UndefOr[stdLib.Date] = js.undefined
   /**
        * Whether or not the Textfield of the DatePicker is underlined.
-       * @default false
+       * @defaultvalue false
        */
   var underlined: js.UndefOr[scala.Boolean] = js.undefined
   /**

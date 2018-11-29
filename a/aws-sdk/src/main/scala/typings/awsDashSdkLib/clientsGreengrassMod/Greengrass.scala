@@ -11,14 +11,14 @@ trait Greengrass
   @JSName("config")
   var config_Greengrass: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ClientConfiguration = js.native
   /**
-     * Associates a role with a group. Your AWS Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
+     * Associates a role with a group. Your Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
      */
   def associateRoleToGroup(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.AssociateRoleToGroupResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a role with a group. Your AWS Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
+     * Associates a role with a group. Your Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
      */
   def associateRoleToGroup(
     callback: js.Function2[
@@ -31,14 +31,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a role with a group. Your AWS Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
+     * Associates a role with a group. Your Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
      */
   def associateRoleToGroup(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.AssociateRoleToGroupRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.AssociateRoleToGroupResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a role with a group. Your AWS Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
+     * Associates a role with a group. Your Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
      */
   def associateRoleToGroup(
     params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.AssociateRoleToGroupRequest,
@@ -52,14 +52,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a role with your account. AWS Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
+     * Associates a role with your account. AWS IoT Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
      */
   def associateServiceRoleToAccount(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.AssociateServiceRoleToAccountResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a role with your account. AWS Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
+     * Associates a role with your account. AWS IoT Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
      */
   def associateServiceRoleToAccount(
     callback: js.Function2[
@@ -72,14 +72,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a role with your account. AWS Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
+     * Associates a role with your account. AWS IoT Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
      */
   def associateServiceRoleToAccount(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.AssociateServiceRoleToAccountRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.AssociateServiceRoleToAccountResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a role with your account. AWS Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
+     * Associates a role with your account. AWS IoT Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
      */
   def associateServiceRoleToAccount(
     params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.AssociateServiceRoleToAccountRequest,
@@ -93,14 +93,96 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+     * Creates a connector definition. You may provide the initial version of the connector definition now or use ''CreateConnectorDefinitionVersion'' at a later time.
+     */
+  def createConnectorDefinition(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a connector definition. You may provide the initial version of the connector definition now or use ''CreateConnectorDefinitionVersion'' at a later time.
+     */
+  def createConnectorDefinition(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a connector definition. You may provide the initial version of the connector definition now or use ''CreateConnectorDefinitionVersion'' at a later time.
+     */
+  def createConnectorDefinition(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a connector definition. You may provide the initial version of the connector definition now or use ''CreateConnectorDefinitionVersion'' at a later time.
+     */
+  def createConnectorDefinition(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a version of a connector definition which has already been defined.
+     */
+  def createConnectorDefinitionVersion(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a version of a connector definition which has already been defined.
+     */
+  def createConnectorDefinitionVersion(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionVersionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a version of a connector definition which has already been defined.
+     */
+  def createConnectorDefinitionVersion(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionVersionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a version of a connector definition which has already been defined.
+     */
+  def createConnectorDefinitionVersion(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionVersionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionVersionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateConnectorDefinitionVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. Greengrass groups must each contain exactly one Greengrass core.
      */
   def createCoreDefinition(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateCoreDefinitionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+     * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. Greengrass groups must each contain exactly one Greengrass core.
      */
   def createCoreDefinition(
     callback: js.Function2[
@@ -113,14 +195,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+     * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. Greengrass groups must each contain exactly one Greengrass core.
      */
   def createCoreDefinition(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateCoreDefinitionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateCoreDefinitionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+     * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. Greengrass groups must each contain exactly one Greengrass core.
      */
   def createCoreDefinition(
     params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateCoreDefinitionRequest,
@@ -134,14 +216,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a version of a core definition that has already been defined. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+     * Creates a version of a core definition that has already been defined. Greengrass groups must each contain exactly one Greengrass core.
      */
   def createCoreDefinitionVersion(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateCoreDefinitionVersionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a version of a core definition that has already been defined. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+     * Creates a version of a core definition that has already been defined. Greengrass groups must each contain exactly one Greengrass core.
      */
   def createCoreDefinitionVersion(
     callback: js.Function2[
@@ -154,14 +236,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a version of a core definition that has already been defined. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+     * Creates a version of a core definition that has already been defined. Greengrass groups must each contain exactly one Greengrass core.
      */
   def createCoreDefinitionVersion(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateCoreDefinitionVersionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateCoreDefinitionVersionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a version of a core definition that has already been defined. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+     * Creates a version of a core definition that has already been defined. Greengrass groups must each contain exactly one Greengrass core.
      */
   def createCoreDefinitionVersion(
     params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateCoreDefinitionVersionRequest,
@@ -175,14 +257,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment.
+     * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
      */
   def createDeployment(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateDeploymentResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment.
+     * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
      */
   def createDeployment(
     callback: js.Function2[
@@ -195,14 +277,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment.
+     * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
      */
   def createDeployment(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateDeploymentRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateDeploymentResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment.
+     * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
      */
   def createDeployment(
     params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateDeploymentRequest,
@@ -380,14 +462,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time.
+     * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time. Tip: You can use the ''gg_group_setup'' package (https://github.com/awslabs/aws-greengrass-group-setup) as a library or command-line application to create and deploy Greengrass groups.
      */
   def createGroup(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateGroupResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time.
+     * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time. Tip: You can use the ''gg_group_setup'' package (https://github.com/awslabs/aws-greengrass-group-setup) as a library or command-line application to create and deploy Greengrass groups.
      */
   def createGroup(
     callback: js.Function2[
@@ -400,14 +482,14 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time.
+     * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time. Tip: You can use the ''gg_group_setup'' package (https://github.com/awslabs/aws-greengrass-group-setup) as a library or command-line application to create and deploy Greengrass groups.
      */
   def createGroup(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateGroupRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateGroupResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time.
+     * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time. Tip: You can use the ''gg_group_setup'' package (https://github.com/awslabs/aws-greengrass-group-setup) as a library or command-line application to create and deploy Greengrass groups.
      */
   def createGroup(
     params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateGroupRequest,
@@ -787,6 +869,47 @@ trait Greengrass
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.CreateSubscriptionDefinitionVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a connector definition.
+     */
+  def deleteConnectorDefinition(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.DeleteConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a connector definition.
+     */
+  def deleteConnectorDefinition(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.DeleteConnectorDefinitionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.DeleteConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a connector definition.
+     */
+  def deleteConnectorDefinition(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.DeleteConnectorDefinitionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.DeleteConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a connector definition.
+     */
+  def deleteConnectorDefinition(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.DeleteConnectorDefinitionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.DeleteConnectorDefinitionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.DeleteConnectorDefinitionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1200,6 +1323,47 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Returns the status of a bulk deployment.
+     */
+  def getBulkDeploymentStatus(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the status of a bulk deployment.
+     */
+  def getBulkDeploymentStatus(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the status of a bulk deployment.
+     */
+  def getBulkDeploymentStatus(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the status of a bulk deployment.
+     */
+  def getBulkDeploymentStatus(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetBulkDeploymentStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Retrieves the connectivity information for a core.
      */
   def getConnectivityInfo(): awsDashSdkLib.libRequestMod.Request[
@@ -1238,6 +1402,88 @@ trait Greengrass
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectivityInfoResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves information about a connector definition.
+     */
+  def getConnectorDefinition(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves information about a connector definition.
+     */
+  def getConnectorDefinition(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves information about a connector definition.
+     */
+  def getConnectorDefinition(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves information about a connector definition.
+     */
+  def getConnectorDefinition(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves information about a connector definition version, including the connectors that the version contains. Connectors are prebuilt modules that interact with local infrastructure, device protocols, AWS, and other cloud services.
+     */
+  def getConnectorDefinitionVersion(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves information about a connector definition version, including the connectors that the version contains. Connectors are prebuilt modules that interact with local infrastructure, device protocols, AWS, and other cloud services.
+     */
+  def getConnectorDefinitionVersion(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionVersionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves information about a connector definition version, including the connectors that the version contains. Connectors are prebuilt modules that interact with local infrastructure, device protocols, AWS, and other cloud services.
+     */
+  def getConnectorDefinitionVersion(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionVersionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves information about a connector definition version, including the connectors that the version contains. Connectors are prebuilt modules that interact with local infrastructure, device protocols, AWS, and other cloud services.
+     */
+  def getConnectorDefinitionVersion(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionVersionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionVersionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.GetConnectorDefinitionVersionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1979,6 +2225,170 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
+     */
+  def listBulkDeploymentDetailedReports(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
+     */
+  def listBulkDeploymentDetailedReports(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
+     */
+  def listBulkDeploymentDetailedReports(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
+     */
+  def listBulkDeploymentDetailedReports(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentDetailedReportsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of bulk deployments.
+     */
+  def listBulkDeployments(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of bulk deployments.
+     */
+  def listBulkDeployments(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of bulk deployments.
+     */
+  def listBulkDeployments(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of bulk deployments.
+     */
+  def listBulkDeployments(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListBulkDeploymentsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the versions of a connector definition, which are containers for connectors. Connectors run on the Greengrass core and contain built-in integration with local infrastructure, device protocols, AWS, and other cloud services.
+     */
+  def listConnectorDefinitionVersions(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionVersionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the versions of a connector definition, which are containers for connectors. Connectors run on the Greengrass core and contain built-in integration with local infrastructure, device protocols, AWS, and other cloud services.
+     */
+  def listConnectorDefinitionVersions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionVersionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionVersionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the versions of a connector definition, which are containers for connectors. Connectors run on the Greengrass core and contain built-in integration with local infrastructure, device protocols, AWS, and other cloud services.
+     */
+  def listConnectorDefinitionVersions(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionVersionsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionVersionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the versions of a connector definition, which are containers for connectors. Connectors run on the Greengrass core and contain built-in integration with local infrastructure, device protocols, AWS, and other cloud services.
+     */
+  def listConnectorDefinitionVersions(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionVersionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionVersionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionVersionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list of connector definitions.
+     */
+  def listConnectorDefinitions(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list of connector definitions.
+     */
+  def listConnectorDefinitions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list of connector definitions.
+     */
+  def listConnectorDefinitions(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list of connector definitions.
+     */
+  def listConnectorDefinitions(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ListConnectorDefinitionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Lists the versions of a core definition.
      */
   def listCoreDefinitionVersions(): awsDashSdkLib.libRequestMod.Request[
@@ -2676,6 +3086,88 @@ trait Greengrass
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
+     */
+  def startBulkDeployment(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
+     */
+  def startBulkDeployment(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
+     */
+  def startBulkDeployment(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
+     */
+  def startBulkDeployment(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StartBulkDeploymentResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
+     */
+  def stopBulkDeployment(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
+     */
+  def stopBulkDeployment(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
+     */
+  def stopBulkDeployment(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
+     */
+  def stopBulkDeployment(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.StopBulkDeploymentResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Updates the connectivity information for the core. Any devices that belong to the group which has this core will receive this information in order to find the location of the core and connect to it.
      */
   def updateConnectivityInfo(): awsDashSdkLib.libRequestMod.Request[
@@ -2714,6 +3206,47 @@ trait Greengrass
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGreengrassMod.GreengrassNs.UpdateConnectivityInfoResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a connector definition.
+     */
+  def updateConnectorDefinition(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.UpdateConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a connector definition.
+     */
+  def updateConnectorDefinition(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.UpdateConnectorDefinitionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.UpdateConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a connector definition.
+     */
+  def updateConnectorDefinition(params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.UpdateConnectorDefinitionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.UpdateConnectorDefinitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a connector definition.
+     */
+  def updateConnectorDefinition(
+    params: awsDashSdkLib.clientsGreengrassMod.GreengrassNs.UpdateConnectorDefinitionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGreengrassMod.GreengrassNs.UpdateConnectorDefinitionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGreengrassMod.GreengrassNs.UpdateConnectorDefinitionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

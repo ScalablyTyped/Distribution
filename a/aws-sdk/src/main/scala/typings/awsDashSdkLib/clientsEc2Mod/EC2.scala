@@ -52,6 +52,47 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Accepts a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use RejectTransitGatewayVpcAttachment to reject a VPC attachment request.
+     */
+  def acceptTransitGatewayVpcAttachment(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AcceptTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Accepts a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use RejectTransitGatewayVpcAttachment to reject a VPC attachment request.
+     */
+  def acceptTransitGatewayVpcAttachment(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.AcceptTransitGatewayVpcAttachmentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AcceptTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Accepts a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use RejectTransitGatewayVpcAttachment to reject a VPC attachment request.
+     */
+  def acceptTransitGatewayVpcAttachment(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AcceptTransitGatewayVpcAttachmentRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AcceptTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Accepts a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use RejectTransitGatewayVpcAttachment to reject a VPC attachment request.
+     */
+  def acceptTransitGatewayVpcAttachment(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AcceptTransitGatewayVpcAttachmentRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.AcceptTransitGatewayVpcAttachmentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AcceptTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Accepts one or more interface VPC endpoint connection requests to your VPC endpoint service.
      */
   def acceptVpcEndpointConnections(): awsDashSdkLib.libRequestMod.Request[
@@ -134,14 +175,55 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+     * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
+     */
+  def advertiseByoipCidr(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AdvertiseByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
+     */
+  def advertiseByoipCidr(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.AdvertiseByoipCidrResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AdvertiseByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
+     */
+  def advertiseByoipCidr(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AdvertiseByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AdvertiseByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
+     */
+  def advertiseByoipCidr(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AdvertiseByoipCidrRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.AdvertiseByoipCidrResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AdvertiseByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
      */
   def allocateAddress(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.AllocateAddressResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+     * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
      */
   def allocateAddress(
     callback: js.Function2[
@@ -154,14 +236,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+     * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
      */
   def allocateAddress(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AllocateAddressRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.AllocateAddressResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+     * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
      */
   def allocateAddress(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AllocateAddressRequest,
@@ -257,21 +339,21 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
+     * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
      */
   def assignPrivateIpAddresses(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
+     * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
      */
   def assignPrivateIpAddresses(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
+     * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
      */
   def assignPrivateIpAddresses(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AssignPrivateIpAddressesRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
+     * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
      */
   def assignPrivateIpAddresses(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AssignPrivateIpAddressesRequest,
@@ -460,6 +542,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateSubnetCidrBlockResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
+     */
+  def associateTransitGatewayRouteTable(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
+     */
+  def associateTransitGatewayRouteTable(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateTransitGatewayRouteTableResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
+     */
+  def associateTransitGatewayRouteTable(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateTransitGatewayRouteTableRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
+     */
+  def associateTransitGatewayRouteTable(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateTransitGatewayRouteTableRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateTransitGatewayRouteTableResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.AssociateTransitGatewayRouteTableResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -810,6 +933,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.CancelBundleTaskResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
+     */
+  def cancelCapacityReservation(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CancelCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
+     */
+  def cancelCapacityReservation(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CancelCapacityReservationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CancelCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
+     */
+  def cancelCapacityReservation(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CancelCapacityReservationRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CancelCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
+     */
+  def cancelCapacityReservation(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CancelCapacityReservationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CancelCapacityReservationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CancelCapacityReservationResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1180,6 +1344,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.CopySnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
+     */
+  def createCapacityReservation(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
+     */
+  def createCapacityReservation(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCapacityReservationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
+     */
+  def createCapacityReservation(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCapacityReservationRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
+     */
+  def createCapacityReservation(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCapacityReservationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCapacityReservationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCapacityReservationResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -2247,6 +2452,170 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
+     */
+  def createTransitGateway(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
+     */
+  def createTransitGateway(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
+     */
+  def createTransitGateway(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
+     */
+  def createTransitGateway(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a static route for the specified transit gateway route table.
+     */
+  def createTransitGatewayRoute(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a static route for the specified transit gateway route table.
+     */
+  def createTransitGatewayRoute(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a static route for the specified transit gateway route table.
+     */
+  def createTransitGatewayRoute(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a static route for the specified transit gateway route table.
+     */
+  def createTransitGatewayRoute(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a route table for the specified transit gateway.
+     */
+  def createTransitGatewayRouteTable(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a route table for the specified transit gateway.
+     */
+  def createTransitGatewayRouteTable(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteTableResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a route table for the specified transit gateway.
+     */
+  def createTransitGatewayRouteTable(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteTableRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a route table for the specified transit gateway.
+     */
+  def createTransitGatewayRouteTable(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteTableRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteTableResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Attaches the specified VPC to the specified transit gateway. If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached, the new VPC CIDR range is not propagated to the default propagation route table. To send VPC traffic to an attached transit gateway, add a route to the VPC route table using CreateRoute.
+     */
+  def createTransitGatewayVpcAttachment(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Attaches the specified VPC to the specified transit gateway. If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached, the new VPC CIDR range is not propagated to the default propagation route table. To send VPC traffic to an attached transit gateway, add a route to the VPC route table using CreateRoute.
+     */
+  def createTransitGatewayVpcAttachment(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayVpcAttachmentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Attaches the specified VPC to the specified transit gateway. If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached, the new VPC CIDR range is not propagated to the default propagation route table. To send VPC traffic to an attached transit gateway, add a route to the VPC route table using CreateRoute.
+     */
+  def createTransitGatewayVpcAttachment(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayVpcAttachmentRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Attaches the specified VPC to the specified transit gateway. If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached, the new VPC CIDR range is not propagated to the default propagation route table. To send VPC traffic to an attached transit gateway, add a route to the VPC route table using CreateRoute.
+     */
+  def createTransitGatewayVpcAttachment(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayVpcAttachmentRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayVpcAttachmentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Creates an EBS volume that can be attached to an instance in the same Availability Zone. The volume is created in the regional endpoint that you send the HTTP request to. For more information see Regions and Endpoints. You can create a new empty volume or restore a volume from an EBS snapshot. Any AWS Marketplace product codes from the snapshot are propagated to the volume. You can create encrypted volumes with the Encrypted parameter. Encrypted volumes may only be attached to instances that support Amazon EBS encryption. Volumes that are created from encrypted snapshots are also automatically encrypted. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide. You can tag your volumes during creation. For more information, see Tagging Your Amazon EC2 Resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Creating an Amazon EBS Volume in the Amazon Elastic Compute Cloud User Guide.
      */
   def createVolume(): awsDashSdkLib.libRequestMod.Request[awsDashSdkLib.clientsEc2Mod.EC2Ns.Volume, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3227,6 +3596,170 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     * Deletes the specified transit gateway.
+     */
+  def deleteTransitGateway(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified transit gateway.
+     */
+  def deleteTransitGateway(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified transit gateway.
+     */
+  def deleteTransitGateway(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified transit gateway.
+     */
+  def deleteTransitGateway(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified route from the specified transit gateway route table.
+     */
+  def deleteTransitGatewayRoute(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified route from the specified transit gateway route table.
+     */
+  def deleteTransitGatewayRoute(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified route from the specified transit gateway route table.
+     */
+  def deleteTransitGatewayRoute(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified route from the specified transit gateway route table.
+     */
+  def deleteTransitGatewayRoute(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.
+     */
+  def deleteTransitGatewayRouteTable(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.
+     */
+  def deleteTransitGatewayRouteTable(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteTableResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.
+     */
+  def deleteTransitGatewayRouteTable(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteTableRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.
+     */
+  def deleteTransitGatewayRouteTable(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteTableRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteTableResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified VPC attachment.
+     */
+  def deleteTransitGatewayVpcAttachment(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified VPC attachment.
+     */
+  def deleteTransitGatewayVpcAttachment(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayVpcAttachmentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified VPC attachment.
+     */
+  def deleteTransitGatewayVpcAttachment(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayVpcAttachmentRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified VPC attachment.
+     */
+  def deleteTransitGatewayVpcAttachment(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayVpcAttachmentRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayVpcAttachmentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeleteTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Deletes the specified EBS volume. The volume must be in the available state (not attached to an instance). The volume can remain in the deleting state for several minutes. For more information, see Deleting an Amazon EBS Volume in the Amazon Elastic Compute Cloud User Guide.
      */
   def deleteVolume(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3496,6 +4029,47 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
+     */
+  def deprovisionByoipCidr(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeprovisionByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
+     */
+  def deprovisionByoipCidr(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeprovisionByoipCidrResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeprovisionByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
+     */
+  def deprovisionByoipCidr(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeprovisionByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeprovisionByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
+     */
+  def deprovisionByoipCidr(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DeprovisionByoipCidrRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DeprovisionByoipCidrResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DeprovisionByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Deregisters the specified AMI. After you deregister an AMI, it can't be used to launch new instances; however, it doesn't affect any instances that you've already launched from the AMI. You'll continue to incur usage costs for those instances until you terminate them. When you deregister an Amazon EBS-backed AMI, it doesn't affect the snapshot that was created for the root volume of the instance during the AMI creation process. When you deregister an instance store-backed AMI, it doesn't affect the files that you uploaded to Amazon S3 when you created the AMI.
      */
   def deregisterImage(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3722,6 +4296,88 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
+     */
+  def describeByoipCidrs(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeByoipCidrsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
+     */
+  def describeByoipCidrs(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeByoipCidrsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeByoipCidrsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
+     */
+  def describeByoipCidrs(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeByoipCidrsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeByoipCidrsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
+     */
+  def describeByoipCidrs(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeByoipCidrsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeByoipCidrsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeByoipCidrsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
+     */
+  def describeCapacityReservations(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCapacityReservationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
+     */
+  def describeCapacityReservations(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCapacityReservationsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCapacityReservationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
+     */
+  def describeCapacityReservations(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCapacityReservationsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCapacityReservationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
+     */
+  def describeCapacityReservations(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCapacityReservationsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCapacityReservationsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCapacityReservationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Describes one or more of your linked EC2-Classic instances. This request only returns information about EC2-Classic instances linked to a VPC through ClassicLink. You cannot use this request to return information about other instances.
      */
   def describeClassicLinkInstances(): awsDashSdkLib.libRequestMod.Request[
@@ -3927,14 +4583,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the Elastic GPUs associated with your instances. For more information about Elastic GPUs, see Amazon EC2 Elastic GPUs.
+     * Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.
      */
   def describeElasticGpus(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeElasticGpusResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the Elastic GPUs associated with your instances. For more information about Elastic GPUs, see Amazon EC2 Elastic GPUs.
+     * Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.
      */
   def describeElasticGpus(
     callback: js.Function2[
@@ -3947,14 +4603,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the Elastic GPUs associated with your instances. For more information about Elastic GPUs, see Amazon EC2 Elastic GPUs.
+     * Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.
      */
   def describeElasticGpus(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeElasticGpusRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeElasticGpusResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the Elastic GPUs associated with your instances. For more information about Elastic GPUs, see Amazon EC2 Elastic GPUs.
+     * Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.
      */
   def describeElasticGpus(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeElasticGpusRequest,
@@ -4091,14 +4747,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes one or more of your EC2 Fleet.
+     * Describes one or more of your EC2 Fleets.
      */
   def describeFleets(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeFleetsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes one or more of your EC2 Fleet.
+     * Describes one or more of your EC2 Fleets.
      */
   def describeFleets(
     callback: js.Function2[
@@ -4111,14 +4767,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes one or more of your EC2 Fleet.
+     * Describes one or more of your EC2 Fleets.
      */
   def describeFleets(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeFleetsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeFleetsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes one or more of your EC2 Fleet.
+     * Describes one or more of your EC2 Fleets.
      */
   def describeFleets(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeFleetsRequest,
@@ -5362,6 +6018,47 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Describes the specified IPv4 address pools.
+     */
+  def describePublicIpv4Pools(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribePublicIpv4PoolsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the specified IPv4 address pools.
+     */
+  def describePublicIpv4Pools(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribePublicIpv4PoolsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribePublicIpv4PoolsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the specified IPv4 address pools.
+     */
+  def describePublicIpv4Pools(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribePublicIpv4PoolsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribePublicIpv4PoolsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the specified IPv4 address pools.
+     */
+  def describePublicIpv4Pools(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribePublicIpv4PoolsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribePublicIpv4PoolsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribePublicIpv4PoolsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Describes one or more regions that are currently available to you. For a list of the regions supported by Amazon EC2, see Regions and Endpoints.
      */
   def describeRegions(): awsDashSdkLib.libRequestMod.Request[
@@ -5936,14 +6633,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
+     * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
      */
   def describeSpotFleetRequestHistory(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeSpotFleetRequestHistoryResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
+     * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
      */
   def describeSpotFleetRequestHistory(
     callback: js.Function2[
@@ -5956,14 +6653,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
+     * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
      */
   def describeSpotFleetRequestHistory(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeSpotFleetRequestHistoryRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeSpotFleetRequestHistoryResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
+     * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
      */
   def describeSpotFleetRequestHistory(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeSpotFleetRequestHistoryRequest,
@@ -6220,6 +6917,170 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTagsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
+     */
+  def describeTransitGatewayAttachments(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayAttachmentsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
+     */
+  def describeTransitGatewayAttachments(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayAttachmentsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayAttachmentsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
+     */
+  def describeTransitGatewayAttachments(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayAttachmentsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayAttachmentsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
+     */
+  def describeTransitGatewayAttachments(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayAttachmentsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayAttachmentsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayAttachmentsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more transit gateway route tables. By default, all transit gateway route tables are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGatewayRouteTables(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayRouteTablesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more transit gateway route tables. By default, all transit gateway route tables are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGatewayRouteTables(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayRouteTablesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayRouteTablesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more transit gateway route tables. By default, all transit gateway route tables are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGatewayRouteTables(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayRouteTablesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayRouteTablesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more transit gateway route tables. By default, all transit gateway route tables are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGatewayRouteTables(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayRouteTablesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayRouteTablesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayRouteTablesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGatewayVpcAttachments(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayVpcAttachmentsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGatewayVpcAttachments(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayVpcAttachmentsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayVpcAttachmentsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGatewayVpcAttachments(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayVpcAttachmentsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayVpcAttachmentsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGatewayVpcAttachments(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayVpcAttachmentsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayVpcAttachmentsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewayVpcAttachmentsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGateways(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewaysResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGateways(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewaysResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewaysResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGateways(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewaysRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewaysResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
+     */
+  def describeTransitGateways(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewaysRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewaysResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeTransitGatewaysResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -7065,6 +7926,47 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     * Disables the specified resource attachment from propagating routes to the specified propagation route table.
+     */
+  def disableTransitGatewayRouteTablePropagation(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisableTransitGatewayRouteTablePropagationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disables the specified resource attachment from propagating routes to the specified propagation route table.
+     */
+  def disableTransitGatewayRouteTablePropagation(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DisableTransitGatewayRouteTablePropagationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisableTransitGatewayRouteTablePropagationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disables the specified resource attachment from propagating routes to the specified propagation route table.
+     */
+  def disableTransitGatewayRouteTablePropagation(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DisableTransitGatewayRouteTablePropagationRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisableTransitGatewayRouteTablePropagationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disables the specified resource attachment from propagating routes to the specified propagation route table.
+     */
+  def disableTransitGatewayRouteTablePropagation(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DisableTransitGatewayRouteTablePropagationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DisableTransitGatewayRouteTablePropagationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisableTransitGatewayRouteTablePropagationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Disables a virtual private gateway (VGW) from propagating routes to a specified route table of a VPC.
      */
   def disableVgwRoutePropagation(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -7292,6 +8194,47 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Disassociates a resource attachment from a transit gateway route table.
+     */
+  def disassociateTransitGatewayRouteTable(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a resource attachment from a transit gateway route table.
+     */
+  def disassociateTransitGatewayRouteTable(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateTransitGatewayRouteTableResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a resource attachment from a transit gateway route table.
+     */
+  def disassociateTransitGatewayRouteTable(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateTransitGatewayRouteTableRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Disassociates a resource attachment from a transit gateway route table.
+     */
+  def disassociateTransitGatewayRouteTable(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateTransitGatewayRouteTableRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateTransitGatewayRouteTableResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateTransitGatewayRouteTableResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Disassociates a CIDR block from a VPC. To disassociate the CIDR block, you must specify its association ID. You can get the association ID by using DescribeVpcs. You must detach or delete all gateways and resources that are associated with the CIDR block before you can disassociate it.  You cannot disassociate the CIDR block with which you originally created the VPC (the primary CIDR block).
      */
   def disassociateVpcCidrBlock(): awsDashSdkLib.libRequestMod.Request[
@@ -7330,6 +8273,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DisassociateVpcCidrBlockResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Enables the specified attachment to propagate routes to the specified propagation route table.
+     */
+  def enableTransitGatewayRouteTablePropagation(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.EnableTransitGatewayRouteTablePropagationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Enables the specified attachment to propagate routes to the specified propagation route table.
+     */
+  def enableTransitGatewayRouteTablePropagation(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.EnableTransitGatewayRouteTablePropagationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.EnableTransitGatewayRouteTablePropagationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Enables the specified attachment to propagate routes to the specified propagation route table.
+     */
+  def enableTransitGatewayRouteTablePropagation(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.EnableTransitGatewayRouteTablePropagationRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.EnableTransitGatewayRouteTablePropagationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Enables the specified attachment to propagate routes to the specified propagation route table.
+     */
+  def enableTransitGatewayRouteTablePropagation(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.EnableTransitGatewayRouteTablePropagationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.EnableTransitGatewayRouteTablePropagationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.EnableTransitGatewayRouteTablePropagationResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -7454,6 +8438,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.EnableVpcClassicLinkDnsSupportResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range.
+     */
+  def exportTransitGatewayRoutes(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportTransitGatewayRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range.
+     */
+  def exportTransitGatewayRoutes(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportTransitGatewayRoutesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportTransitGatewayRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range.
+     */
+  def exportTransitGatewayRoutes(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportTransitGatewayRoutesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportTransitGatewayRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range.
+     */
+  def exportTransitGatewayRoutes(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportTransitGatewayRoutesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportTransitGatewayRoutesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ExportTransitGatewayRoutesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -7703,6 +8728,129 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Lists the route tables to which the specified resource attachment propagates routes.
+     */
+  def getTransitGatewayAttachmentPropagations(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayAttachmentPropagationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the route tables to which the specified resource attachment propagates routes.
+     */
+  def getTransitGatewayAttachmentPropagations(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayAttachmentPropagationsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayAttachmentPropagationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the route tables to which the specified resource attachment propagates routes.
+     */
+  def getTransitGatewayAttachmentPropagations(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayAttachmentPropagationsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayAttachmentPropagationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the route tables to which the specified resource attachment propagates routes.
+     */
+  def getTransitGatewayAttachmentPropagations(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayAttachmentPropagationsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayAttachmentPropagationsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayAttachmentPropagationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about the associations for the specified transit gateway route table.
+     */
+  def getTransitGatewayRouteTableAssociations(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTableAssociationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about the associations for the specified transit gateway route table.
+     */
+  def getTransitGatewayRouteTableAssociations(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTableAssociationsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTableAssociationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about the associations for the specified transit gateway route table.
+     */
+  def getTransitGatewayRouteTableAssociations(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTableAssociationsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTableAssociationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about the associations for the specified transit gateway route table.
+     */
+  def getTransitGatewayRouteTableAssociations(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTableAssociationsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTableAssociationsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTableAssociationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about the route table propagations for the specified transit gateway route table.
+     */
+  def getTransitGatewayRouteTablePropagations(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTablePropagationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about the route table propagations for the specified transit gateway route table.
+     */
+  def getTransitGatewayRouteTablePropagations(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTablePropagationsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTablePropagationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about the route table propagations for the specified transit gateway route table.
+     */
+  def getTransitGatewayRouteTablePropagations(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTablePropagationsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTablePropagationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about the route table propagations for the specified transit gateway route table.
+     */
+  def getTransitGatewayRouteTablePropagations(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTablePropagationsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTablePropagationsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.GetTransitGatewayRouteTablePropagationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI). For more information, see Importing a VM as an Image Using VM Import/Export in the VM Import/Export User Guide.
      */
   def importImage(): awsDashSdkLib.libRequestMod.Request[
@@ -7908,6 +9056,47 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
+     */
+  def modifyCapacityReservation(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
+     */
+  def modifyCapacityReservation(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyCapacityReservationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
+     */
+  def modifyCapacityReservation(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyCapacityReservationRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
+     */
+  def modifyCapacityReservation(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyCapacityReservationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyCapacityReservationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyCapacityReservationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Modifies the specified EC2 Fleet. While the EC2 Fleet is being modified, it is in the modifying state.
      */
   def modifyFleet(): awsDashSdkLib.libRequestMod.Request[
@@ -8031,21 +9220,21 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+     * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide. Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
      */
   def modifyIdFormat(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+     * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide. Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
      */
   def modifyIdFormat(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+     * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide. Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
      */
   def modifyIdFormat(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyIdFormatRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+     * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide. Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
      */
   def modifyIdFormat(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyIdFormatRequest,
@@ -8114,6 +9303,47 @@ trait EC2
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstanceAttributeRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
+     */
+  def modifyInstanceCapacityReservationAttributes(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstanceCapacityReservationAttributesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
+     */
+  def modifyInstanceCapacityReservationAttributes(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstanceCapacityReservationAttributesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstanceCapacityReservationAttributesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
+     */
+  def modifyInstanceCapacityReservationAttributes(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstanceCapacityReservationAttributesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstanceCapacityReservationAttributesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
+     */
+  def modifyInstanceCapacityReservationAttributes(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstanceCapacityReservationAttributesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstanceCapacityReservationAttributesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyInstanceCapacityReservationAttributesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
   /**
      * Modifies the credit option for CPU usage on a running or stopped T2 or T3 instance. The credit options are standard and unlimited. For more information, see Burstable Performance Instances in the Amazon Elastic Compute Cloud User Guide.
      */
@@ -8383,6 +9613,47 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     * Modifies the specified VPC attachment.
+     */
+  def modifyTransitGatewayVpcAttachment(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the specified VPC attachment.
+     */
+  def modifyTransitGatewayVpcAttachment(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyTransitGatewayVpcAttachmentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the specified VPC attachment.
+     */
+  def modifyTransitGatewayVpcAttachment(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyTransitGatewayVpcAttachmentRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the specified VPC attachment.
+     */
+  def modifyTransitGatewayVpcAttachment(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyTransitGatewayVpcAttachmentRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyTransitGatewayVpcAttachmentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * You can modify several parameters of an existing EBS volume, including volume size, volume type, and IOPS capacity. If your EBS volume is attached to a current-generation EC2 instance type, you may be able to apply these changes without stopping the instance or detaching the volume from it. For more information about modifying an EBS volume running Linux, see Modifying the Size, IOPS, or Type of an EBS Volume on Linux. For more information about modifying an EBS volume running Windows, see Modifying the Size, IOPS, or Type of an EBS Volume on Windows.   When you complete a resize operation on your volume, you need to extend the volume's file-system size to take advantage of the new storage capacity. For information about extending a Linux file system, see Extending a Linux File System. For information about extending a Windows file system, see Extending a Windows File System.   You can use CloudWatch Events to check the status of a modification to an EBS volume. For information about CloudWatch Events, see the Amazon CloudWatch Events User Guide. You can also track the status of a modification using the DescribeVolumesModifications API. For information about tracking status changes using either method, see Monitoring Volume Modifications.  With previous-generation instance types, resizing an EBS volume may require detaching and reattaching the volume or stopping and restarting the instance. For more information, see Modifying the Size, IOPS, or Type of an EBS Volume on Linux and Modifying the Size, IOPS, or Type of an EBS Volume on Windows. If you reach the maximum volume modification rate per volume limit, you will need to wait at least six hours before applying further modifications to the affected EBS volume.
      */
   def modifyVolume(): awsDashSdkLib.libRequestMod.Request[
@@ -8630,14 +9901,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in different accounts, each owner must initiate a separate request to modify the peering connection options, depending on whether their VPC was the requester or accepter for the VPC peering connection. If the peered VPCs are in the same account, you can modify the requester and accepter options in the same request. To confirm which VPC is the accepter and requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+     * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same AWS account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different AWS accounts or different regions. For peered VPCs in different AWS accounts, each AWS account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the region for the requester VPC to modify the requester VPC peering options and the region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
      */
   def modifyVpcPeeringConnectionOptions(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyVpcPeeringConnectionOptionsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in different accounts, each owner must initiate a separate request to modify the peering connection options, depending on whether their VPC was the requester or accepter for the VPC peering connection. If the peered VPCs are in the same account, you can modify the requester and accepter options in the same request. To confirm which VPC is the accepter and requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+     * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same AWS account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different AWS accounts or different regions. For peered VPCs in different AWS accounts, each AWS account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the region for the requester VPC to modify the requester VPC peering options and the region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
      */
   def modifyVpcPeeringConnectionOptions(
     callback: js.Function2[
@@ -8650,14 +9921,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in different accounts, each owner must initiate a separate request to modify the peering connection options, depending on whether their VPC was the requester or accepter for the VPC peering connection. If the peered VPCs are in the same account, you can modify the requester and accepter options in the same request. To confirm which VPC is the accepter and requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+     * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same AWS account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different AWS accounts or different regions. For peered VPCs in different AWS accounts, each AWS account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the region for the requester VPC to modify the requester VPC peering options and the region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
      */
   def modifyVpcPeeringConnectionOptions(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyVpcPeeringConnectionOptionsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyVpcPeeringConnectionOptionsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in different accounts, each owner must initiate a separate request to modify the peering connection options, depending on whether their VPC was the requester or accepter for the VPC peering connection. If the peered VPCs are in the same account, you can modify the requester and accepter options in the same request. To confirm which VPC is the accepter and requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+     * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same AWS account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different AWS accounts or different regions. For peered VPCs in different AWS accounts, each AWS account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the region for the requester VPC to modify the requester VPC peering options and the region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
      */
   def modifyVpcPeeringConnectionOptions(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyVpcPeeringConnectionOptionsRequest,
@@ -8791,6 +10062,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.MoveAddressToVpcResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
+     */
+  def provisionByoipCidr(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ProvisionByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
+     */
+  def provisionByoipCidr(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ProvisionByoipCidrResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ProvisionByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
+     */
+  def provisionByoipCidr(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ProvisionByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ProvisionByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
+     */
+  def provisionByoipCidr(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ProvisionByoipCidrRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ProvisionByoipCidrResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ProvisionByoipCidrResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -8976,6 +10288,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.RegisterImageResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Rejects a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use AcceptTransitGatewayVpcAttachment to accept a VPC attachment request.
+     */
+  def rejectTransitGatewayVpcAttachment(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.RejectTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Rejects a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use AcceptTransitGatewayVpcAttachment to accept a VPC attachment request.
+     */
+  def rejectTransitGatewayVpcAttachment(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.RejectTransitGatewayVpcAttachmentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.RejectTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Rejects a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use AcceptTransitGatewayVpcAttachment to accept a VPC attachment request.
+     */
+  def rejectTransitGatewayVpcAttachment(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.RejectTransitGatewayVpcAttachmentRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.RejectTransitGatewayVpcAttachmentResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Rejects a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use AcceptTransitGatewayVpcAttachment to accept a VPC attachment request.
+     */
+  def rejectTransitGatewayVpcAttachment(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.RejectTransitGatewayVpcAttachmentRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.RejectTransitGatewayVpcAttachmentResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.RejectTransitGatewayVpcAttachmentResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -9285,6 +10638,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.ReplaceRouteTableAssociationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Replaces the specified route in the specified transit gateway route table.
+     */
+  def replaceTransitGatewayRoute(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ReplaceTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Replaces the specified route in the specified transit gateway route table.
+     */
+  def replaceTransitGatewayRoute(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ReplaceTransitGatewayRouteResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ReplaceTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Replaces the specified route in the specified transit gateway route table.
+     */
+  def replaceTransitGatewayRoute(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ReplaceTransitGatewayRouteRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ReplaceTransitGatewayRouteResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Replaces the specified route in the specified transit gateway route table.
+     */
+  def replaceTransitGatewayRoute(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ReplaceTransitGatewayRouteRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.ReplaceTransitGatewayRouteResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.ReplaceTransitGatewayRouteResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -9669,6 +11063,47 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Searches for routes in the specified transit gateway route table.
+     */
+  def searchTransitGatewayRoutes(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.SearchTransitGatewayRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Searches for routes in the specified transit gateway route table.
+     */
+  def searchTransitGatewayRoutes(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.SearchTransitGatewayRoutesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.SearchTransitGatewayRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Searches for routes in the specified transit gateway route table.
+     */
+  def searchTransitGatewayRoutes(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.SearchTransitGatewayRoutesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.SearchTransitGatewayRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Searches for routes in the specified transit gateway route table.
+     */
+  def searchTransitGatewayRoutes(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.SearchTransitGatewayRoutesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.SearchTransitGatewayRoutesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.SearchTransitGatewayRoutesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Starts an Amazon EBS-backed instance that you've previously stopped. Instances that use Amazon EBS volumes as their root devices can be quickly stopped and started. When an instance is stopped, the compute resources are released and you are not billed for instance usage. However, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. You can restart your instance at any time. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Performing this operation on an instance that uses an instance store as its root device returns an error. For more information, see Stopping Instances in the Amazon Elastic Compute Cloud User Guide.
      */
   def startInstances(): awsDashSdkLib.libRequestMod.Request[
@@ -9710,14 +11145,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops an Amazon EBS-backed instance. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start or stop Spot Instances, and you can't stop instance store-backed instances. When you stop an instance, we shut it down. You can restart your instance at any time. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Stopping an instance is different to rebooting or terminating it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
+     * Stops an Amazon EBS-backed instance. You can use the Stop action to hibernate an instance if the instance is enabled for hibernation and it meets the hibernation prerequisites. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start, stop, or hibernate Spot Instances, and you can't stop or hibernate instance store-backed instances. For information about using hibernation for Spot Instances, see Hibernating Interrupted Spot Instances in the Amazon Elastic Compute Cloud User Guide. When you stop or hibernate an instance, we shut it down. You can restart your instance at any time. Before stopping or hibernating an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM, but hibernating an instance does preserve data stored in RAM. If an instance cannot hibernate successfully, a normal shutdown occurs. Stopping and hibernating an instance is different to rebooting or terminating it. For example, when you stop or hibernate an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, hibernating, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
      */
   def stopInstances(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.StopInstancesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops an Amazon EBS-backed instance. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start or stop Spot Instances, and you can't stop instance store-backed instances. When you stop an instance, we shut it down. You can restart your instance at any time. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Stopping an instance is different to rebooting or terminating it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
+     * Stops an Amazon EBS-backed instance. You can use the Stop action to hibernate an instance if the instance is enabled for hibernation and it meets the hibernation prerequisites. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start, stop, or hibernate Spot Instances, and you can't stop or hibernate instance store-backed instances. For information about using hibernation for Spot Instances, see Hibernating Interrupted Spot Instances in the Amazon Elastic Compute Cloud User Guide. When you stop or hibernate an instance, we shut it down. You can restart your instance at any time. Before stopping or hibernating an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM, but hibernating an instance does preserve data stored in RAM. If an instance cannot hibernate successfully, a normal shutdown occurs. Stopping and hibernating an instance is different to rebooting or terminating it. For example, when you stop or hibernate an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, hibernating, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
      */
   def stopInstances(
     callback: js.Function2[
@@ -9730,14 +11165,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops an Amazon EBS-backed instance. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start or stop Spot Instances, and you can't stop instance store-backed instances. When you stop an instance, we shut it down. You can restart your instance at any time. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Stopping an instance is different to rebooting or terminating it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
+     * Stops an Amazon EBS-backed instance. You can use the Stop action to hibernate an instance if the instance is enabled for hibernation and it meets the hibernation prerequisites. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start, stop, or hibernate Spot Instances, and you can't stop or hibernate instance store-backed instances. For information about using hibernation for Spot Instances, see Hibernating Interrupted Spot Instances in the Amazon Elastic Compute Cloud User Guide. When you stop or hibernate an instance, we shut it down. You can restart your instance at any time. Before stopping or hibernating an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM, but hibernating an instance does preserve data stored in RAM. If an instance cannot hibernate successfully, a normal shutdown occurs. Stopping and hibernating an instance is different to rebooting or terminating it. For example, when you stop or hibernate an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, hibernating, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
      */
   def stopInstances(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.StopInstancesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.StopInstancesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops an Amazon EBS-backed instance. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start or stop Spot Instances, and you can't stop instance store-backed instances. When you stop an instance, we shut it down. You can restart your instance at any time. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Stopping an instance is different to rebooting or terminating it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
+     * Stops an Amazon EBS-backed instance. You can use the Stop action to hibernate an instance if the instance is enabled for hibernation and it meets the hibernation prerequisites. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start, stop, or hibernate Spot Instances, and you can't stop or hibernate instance store-backed instances. For information about using hibernation for Spot Instances, see Hibernating Interrupted Spot Instances in the Amazon Elastic Compute Cloud User Guide. When you stop or hibernate an instance, we shut it down. You can restart your instance at any time. Before stopping or hibernating an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM, but hibernating an instance does preserve data stored in RAM. If an instance cannot hibernate successfully, a normal shutdown occurs. Stopping and hibernating an instance is different to rebooting or terminating it. For example, when you stop or hibernate an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, hibernating, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
      */
   def stopInstances(
     params: awsDashSdkLib.clientsEc2Mod.EC2Ns.StopInstancesRequest,
@@ -11524,6 +12959,47 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeVpnConnectionsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
+     */
+  def withdrawByoipCidr(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.WithdrawByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
+     */
+  def withdrawByoipCidr(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.WithdrawByoipCidrResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.WithdrawByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
+     */
+  def withdrawByoipCidr(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.WithdrawByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.WithdrawByoipCidrResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
+     */
+  def withdrawByoipCidr(
+    params: awsDashSdkLib.clientsEc2Mod.EC2Ns.WithdrawByoipCidrRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEc2Mod.EC2Ns.WithdrawByoipCidrResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEc2Mod.EC2Ns.WithdrawByoipCidrResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
 }

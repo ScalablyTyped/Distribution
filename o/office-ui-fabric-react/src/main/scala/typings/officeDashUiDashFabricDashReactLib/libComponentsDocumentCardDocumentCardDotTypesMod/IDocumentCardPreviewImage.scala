@@ -10,8 +10,8 @@ trait IDocumentCardPreviewImage extends js.Object {
   /**
        * Hex color value of the line below the preview, which should correspond to the document type.
        *
-       * Deprecated at v4.17.1, to be removed at >= v5.0.0.
-       * @deprecated
+       * Deprecated at v4.17.1, to be removed at \>= v5.0.0.
+       * @deprecated To be removed at v5.0.0.
        */
   var accentColor: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -19,8 +19,8 @@ trait IDocumentCardPreviewImage extends js.Object {
        */
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[js.Object]] = js.undefined
   /**
-       * Deprecated at v1.3.6, to be removed at >= v2.0.0.
-       * @deprecated
+       * Deprecated at v1.3.6, to be removed at \>= v2.0.0.
+       * @deprecated To be removed at v2.0.0.
        */
   var errorImageSrc: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -61,7 +61,7 @@ trait IDocumentCardPreviewImage extends js.Object {
   var previewImageSrc: js.UndefOr[java.lang.String] = js.undefined
   /**
        * URL to view the file.
-       * @deprecated Use href inside of linkProps instead.
+       * @deprecated Use `href` inside of `linkProps` instead.
        */
   var url: js.UndefOr[java.lang.String] = js.undefined
   /**

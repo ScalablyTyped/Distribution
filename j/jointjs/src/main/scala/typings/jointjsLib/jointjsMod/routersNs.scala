@@ -16,19 +16,14 @@ object routersNs extends js.Object {
   
   
   trait ManhattanRouterArguments extends js.Object {
-    var endDirections: js.UndefOr[
-        js.Array[
-          jointjsLib.jointjsLibStrings.left | jointjsLib.jointjsLibStrings.right | jointjsLib.jointjsLibStrings.top | jointjsLib.jointjsLibStrings.bottom
-        ]
-      ] = js.undefined
-    var excludeEnds: js.UndefOr[jointjsLib.jointjsLibStrings.source | jointjsLib.jointjsLibStrings.target] = js.undefined
+    var endDirections: js.UndefOr[js.Array[jointjsLib.jointjsMod.diaNs.OrthogonalDirection]] = js.undefined
+    var excludeEnds: js.UndefOr[js.Array[jointjsLib.jointjsMod.diaNs.LinkEnd]] = js.undefined
     var excludeTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+    var maxAllowedDirectionChange: js.UndefOr[scala.Double] = js.undefined
     var maximumLoops: js.UndefOr[scala.Double] = js.undefined
-    var startDirections: js.UndefOr[
-        js.Array[
-          jointjsLib.jointjsLibStrings.left | jointjsLib.jointjsLibStrings.right | jointjsLib.jointjsLibStrings.top | jointjsLib.jointjsLibStrings.bottom
-        ]
-      ] = js.undefined
+    var padding: js.UndefOr[jointjsLib.jointjsMod.diaNs.Sides] = js.undefined
+    var perpendicular: js.UndefOr[scala.Boolean] = js.undefined
+    var startDirections: js.UndefOr[js.Array[jointjsLib.jointjsMod.diaNs.OrthogonalDirection]] = js.undefined
     var step: js.UndefOr[scala.Double] = js.undefined
   }
   
@@ -37,15 +32,14 @@ object routersNs extends js.Object {
   
   
   trait OneSideRouterArguments extends js.Object {
-    var padding: js.UndefOr[scala.Double] = js.undefined
-    var side: js.UndefOr[
-        jointjsLib.jointjsLibStrings.bottom | jointjsLib.jointjsLibStrings.top | jointjsLib.jointjsLibStrings.left | jointjsLib.jointjsLibStrings.right
-      ] = js.undefined
+    var padding: js.UndefOr[jointjsLib.jointjsMod.diaNs.Sides] = js.undefined
+    var side: js.UndefOr[jointjsLib.jointjsMod.diaNs.OrthogonalDirection] = js.undefined
   }
   
   
   trait OrthogonalRouterArguments extends js.Object {
     var elementPadding: js.UndefOr[scala.Double] = js.undefined
+    var padding: js.UndefOr[jointjsLib.jointjsMod.diaNs.Sides] = js.undefined
   }
   
   

@@ -22,7 +22,7 @@ trait IPositioningContainerProps
   var ariaLabelledBy: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The background color of the positioningContainer in hex format ie. #ffffff.
-       * @default $ms-color-white
+       * @defaultvalue $ms-color-white
        */
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -31,24 +31,24 @@ trait IPositioningContainerProps
   var bounds: js.UndefOr[atUifabricUtilitiesLib.libIRectangleMod.IRectangle] = js.undefined
   /**
        * CSS class to apply to the positioningContainer.
-       * @default null
+       * @defaultvalue null
        */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
        * If true the position returned will have the menu element cover the target.
        * If false then it will position next to the target;
-       * @default false
+       * @defaultvalue false
        */
   var coverTarget: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * How the element should be positioned
-       * @default DirectionalHint.BottomAutoEdge
+       * @defaultvalue DirectionalHint.BottomAutoEdge
        */
   var directionalHint: js.UndefOr[officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
   /**
        * If true the position will not change sides in an attempt to fit the positioningContainer within bounds.
        * It will still attempt to align it to whatever bounds are given.
-       * @default false
+       * @defaultvalue false
        */
   var directionalHintFixed: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -67,12 +67,12 @@ trait IPositioningContainerProps
   var finalHeight: js.UndefOr[scala.Double] = js.undefined
   /**
        * The minimum distance the positioningContainer will be away from the edge of the screen.
-       *  @default 8
+       *  @defaultvalue 8
        */
   var minPagePadding: js.UndefOr[scala.Double] = js.undefined
   /**
        * The gap between the positioningContainer and the target
-       * @default 0
+       * @defaultvalue 0
        */
   var offsetFromTarget: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -85,7 +85,7 @@ trait IPositioningContainerProps
   var onLayerMounted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
        * Optional callback that is called once the positioningContainer has been correctly positioned.
-       * @param {IPositionedData} positions gives the user information about how the container is positioned such
+       * @param positions - gives the user information about how the container is positioned such
        * as the element position, the target edge, and the alignment edge of the container.
        */
   var onPositioned: js.UndefOr[
@@ -103,12 +103,12 @@ trait IPositioningContainerProps
   var positioningContainerMaxHeight: js.UndefOr[scala.Double] = js.undefined
   /**
        * Custom width for positioningContainer including borders. If value is 0, no width is applied.
-       * @default 0
+       * @defaultvalue 0
        */
   var positioningContainerWidth: js.UndefOr[scala.Double] = js.undefined
   /**
        * If true then the onClose will not not dismiss on scroll
-       * @default false
+       * @defaultvalue false
        */
   var preventDismissOnScroll: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -132,14 +132,15 @@ trait IPositioningContainerProps
     reactLib.HTMLElement | java.lang.String | reactLib.MouseEvent | atUifabricUtilitiesLib.libIPointMod.IPoint | scala.Null
   ] = js.undefined
   /**
-       * Point used to position the positioningContainer
-       * @deprecated Use 'target' instead
+       * Point used to position the positioningContainer.
+       * Deprecated, use `target` instead.
+       * @deprecated Use `target` instead.
        */
   var targetPoint: js.UndefOr[atUifabricUtilitiesLib.libIPointMod.IPoint] = js.undefined
   /**
        * If true use a point rather than rectangle to position the positioningContainer.
        * For example it can be used to position based on a click.
-       * @deprecated Use 'target' instead
+       * @deprecated Do not use.
        */
   var useTargetPoint: js.UndefOr[scala.Boolean] = js.undefined
 }

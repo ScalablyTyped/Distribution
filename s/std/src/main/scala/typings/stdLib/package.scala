@@ -20,7 +20,7 @@ package object stdLib {
   type BiquadFilterType = stdLib.stdLibStrings.lowpass | stdLib.stdLibStrings.highpass | stdLib.stdLibStrings.bandpass | stdLib.stdLibStrings.lowshelf | stdLib.stdLibStrings.highshelf | stdLib.stdLibStrings.peaking | stdLib.stdLibStrings.notch | stdLib.stdLibStrings.allpass
   type BlobCallback = js.Function1[/* blob */ Blob | scala.Null, scala.Unit]
   type BlobPart = BufferSource | Blob | java.lang.String
-  type BodyInit = Blob | BufferSource | FormData | URLSearchParams | ReadableStream | java.lang.String
+  type BodyInit = Blob | BufferSource | FormData | URLSearchParams | ReadableStream[Uint8Array] | java.lang.String
   type BufferSource = ArrayBufferView | ArrayBuffer
   type CDATASection = Text
   type CSSSupportsRule = CSSConditionRule
@@ -40,6 +40,7 @@ package object stdLib {
   type ClientTypes = stdLib.stdLibStrings.window | stdLib.stdLibStrings.worker | stdLib.stdLibStrings.sharedworker | stdLib.stdLibStrings.all
   type Comment = CharacterData
   type CompositeOperation = stdLib.stdLibStrings.replace | stdLib.stdLibStrings.add | stdLib.stdLibStrings.accumulate
+  type CompositeOperationOrAuto = stdLib.stdLibStrings.replace | stdLib.stdLibStrings.add | stdLib.stdLibStrings.accumulate | stdLib.stdLibStrings.auto
   type ConstrainBoolean = scala.Boolean | ConstrainBooleanParameters
   type ConstrainDOMString = java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters
   type ConstrainDouble = scala.Double | ConstrainDoubleRange
@@ -58,6 +59,7 @@ package object stdLib {
   type DocumentReadyState = stdLib.stdLibStrings.loading | stdLib.stdLibStrings.interactive | stdLib.stdLibStrings.complete
   type DocumentTimeline = AnimationTimeline
   type EndOfStreamError = stdLib.stdLibStrings.network | stdLib.stdLibStrings.decode
+  type EndingType = stdLib.stdLibStrings.transparent | stdLib.stdLibStrings.native
   type ErrorEventHandler = js.Function5[
     /* event */ Event | java.lang.String, 
     /* source */ js.UndefOr[java.lang.String], 
@@ -151,6 +153,7 @@ package object stdLib {
     /* descriptor */ TypedPropertyDescriptor[js.Any], 
     TypedPropertyDescriptor[js.Any] | scala.Unit
   ]
+  /** @deprecated */
   type MouseWheelEvent = WheelEvent
   type MutationCallback = js.Function2[
     /* mutations */ js.Array[MutationRecord], 
@@ -212,7 +215,7 @@ package object stdLib {
     scala.Unit
   ]
   /**
-   * From T pick a set of properties K
+   * From T, pick a set of properties whose keys are in the union K
    */
   type Pick[T, K /* <: java.lang.String */] = stdLib.stdLibStrings.Pick with T
   type PlaybackDirection = stdLib.stdLibStrings.normal | stdLib.stdLibStrings.reverse | stdLib.stdLibStrings.alternate | stdLib.stdLibStrings.`alternate-reverse`
@@ -231,6 +234,7 @@ package object stdLib {
   type PropertyKey = java.lang.String | scala.Double | js.Symbol
   type PushEncryptionKeyName = stdLib.stdLibStrings.p256dh | stdLib.stdLibStrings.auth
   type PushPermissionState = stdLib.stdLibStrings.denied | stdLib.stdLibStrings.granted | stdLib.stdLibStrings.prompt
+  type QueuingStrategySizeCallback[T] = js.Function1[/* chunk */ T, scala.Double]
   type RTCAnswerOptions = RTCOfferAnswerOptions
   type RTCBundlePolicy = stdLib.stdLibStrings.balanced | stdLib.stdLibStrings.`max-compat` | stdLib.stdLibStrings.`max-bundle`
   type RTCDataChannelState = stdLib.stdLibStrings.connecting | stdLib.stdLibStrings.open | stdLib.stdLibStrings.closing | stdLib.stdLibStrings.closed
@@ -268,6 +272,15 @@ package object stdLib {
   type RTCStatsType = stdLib.stdLibStrings.inboundrtp | stdLib.stdLibStrings.outboundrtp | stdLib.stdLibStrings.session | stdLib.stdLibStrings.datachannel | stdLib.stdLibStrings.track | stdLib.stdLibStrings.transport | stdLib.stdLibStrings.candidatepair | stdLib.stdLibStrings.localcandidate | stdLib.stdLibStrings.remotecandidate
   type RTCTransport = RTCDtlsTransport | RTCSrtpSdesTransport
   type RangeError = Error
+  type ReadableByteStreamControllerCallback = js.Function1[
+    /* controller */ ReadableByteStreamController, 
+    scala.Unit | PromiseLike[scala.Unit]
+  ]
+  type ReadableStreamDefaultControllerCallback[R] = js.Function1[
+    /* controller */ ReadableStreamDefaultController[R], 
+    scala.Unit | PromiseLike[scala.Unit]
+  ]
+  type ReadableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | PromiseLike[scala.Unit]]
   /**
    * Make all properties in T readonly
    */
@@ -300,7 +313,7 @@ package object stdLib {
   type SVGPoint = DOMPoint
   type SVGRect = DOMRect
   type ScopedCredentialType = stdLib.stdLibStrings.ScopedCred
-  type ScrollBehavior = stdLib.stdLibStrings.auto | stdLib.stdLibStrings.instant | stdLib.stdLibStrings.smooth
+  type ScrollBehavior = stdLib.stdLibStrings.auto | stdLib.stdLibStrings.smooth
   type ScrollLogicalPosition = stdLib.stdLibStrings.start | stdLib.stdLibStrings.center | stdLib.stdLibStrings.end | stdLib.stdLibStrings.nearest
   type ScrollRestoration = stdLib.stdLibStrings.auto | stdLib.stdLibStrings.manual
   type ScrollSetting = stdLib.stdLibStrings.Empty | stdLib.stdLibStrings.up
@@ -319,6 +332,15 @@ package object stdLib {
   type TimerHandler = java.lang.String | js.Function
   type TouchType = stdLib.stdLibStrings.direct | stdLib.stdLibStrings.stylus
   type Transferable = ArrayBuffer | MessagePort | ImageBitmap
+  type TransformStreamDefaultControllerCallback[O] = js.Function1[
+    /* controller */ TransformStreamDefaultController[O], 
+    scala.Unit | PromiseLike[scala.Unit]
+  ]
+  type TransformStreamDefaultControllerTransformCallback[I, O] = js.Function2[
+    /* chunk */ I, 
+    /* controller */ TransformStreamDefaultController[O], 
+    scala.Unit | PromiseLike[scala.Unit]
+  ]
   type Transport = stdLib.stdLibStrings.usb | stdLib.stdLibStrings.nfc | stdLib.stdLibStrings.ble
   type TypeError = Error
   type URIError = Error
@@ -335,12 +357,21 @@ package object stdLib {
   type WebGLRenderingContext = WebGLRenderingContextBase
   type WebGLShader = WebGLObject
   type WebGLTexture = WebGLObject
+  type WebGLVertexArrayObjectOES = WebGLObject
   type WebKitCSSMatrix = DOMMatrix
   type WindowProxy = Window
   type WorkerType = stdLib.stdLibStrings.classic | stdLib.stdLibStrings.module
-  type WritableStreamChunkCallback = js.Function2[/* chunk */ js.Any, /* controller */ WritableStreamDefaultController, scala.Unit]
-  type WritableStreamDefaultControllerCallback = js.Function1[/* controller */ WritableStreamDefaultController, scala.Unit]
-  type WritableStreamErrorCallback = js.Function1[/* reason */ java.lang.String, scala.Unit]
+  type WritableStreamDefaultControllerCloseCallback = js.Function0[scala.Unit | PromiseLike[scala.Unit]]
+  type WritableStreamDefaultControllerStartCallback = js.Function1[
+    /* controller */ WritableStreamDefaultController, 
+    scala.Unit | PromiseLike[scala.Unit]
+  ]
+  type WritableStreamDefaultControllerWriteCallback[W] = js.Function2[
+    /* chunk */ W, 
+    /* controller */ WritableStreamDefaultController, 
+    scala.Unit | PromiseLike[scala.Unit]
+  ]
+  type WritableStreamErrorCallback = js.Function1[/* reason */ js.Any, scala.Unit | PromiseLike[scala.Unit]]
   type XMLHttpRequestResponseType = stdLib.stdLibStrings.Empty | stdLib.stdLibStrings.arraybuffer | stdLib.stdLibStrings.blob | stdLib.stdLibStrings.document | stdLib.stdLibStrings.json | stdLib.stdLibStrings.text
   type webkitURL = URL
 }

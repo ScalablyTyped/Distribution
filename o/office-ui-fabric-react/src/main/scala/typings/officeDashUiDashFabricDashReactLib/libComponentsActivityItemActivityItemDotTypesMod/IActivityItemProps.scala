@@ -16,8 +16,9 @@ trait IActivityItemProps
     js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode
   ] = js.undefined
   /**
-       * Text describing the activity that occurred and naming the people involved in it. Deprecated, use activityDescription instead.
-       * @deprecated
+       * Text describing the activity that occurred and naming the people involved in it.
+       * Deprecated, use `activityDescription` instead.
+       * @deprecated Use `activityDescription` instead.
        */
   var activityDescriptionText: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -35,7 +36,7 @@ trait IActivityItemProps
   /**
        * Enables/Disables the beacon that radiates
        * from the center of the center of the activity icon. Signals an activity has started.
-       * @default false
+       * @defaultvalue false
        */
   var animateBeaconSignal: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -47,12 +48,13 @@ trait IActivityItemProps
        */
   var beaconColorTwo: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Text of comments or @mention messages. Deprecated, use comments instead.
-       * @deprecated
+       * Text of comments or \@mention messages.
+       * Deprecated, use `comments` instead.
+       * @deprecated Use `comments` instead.
        */
   var commentText: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * An element containing the text of comments or @mention messages.
+       * An element containing the text of comments or \@mention messages.
        * If no comments, commentText, or onRenderComments are included, no comments are shown.
        */
   var comments: js.UndefOr[

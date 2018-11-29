@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "clearbladejs-client"
-version := "1.1-dt-20180910Z-2fb091"
+version := "1.1-dt-20180910Z-f52e91"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "paho-mqtt" % "1.0-dt-20181109Z-fdab82",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "paho-mqtt" % "1.0-dt-20181109Z-46d6e6",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

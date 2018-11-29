@@ -12,7 +12,7 @@ trait AdvancedSettings extends js.Object {
        */
   var backoffStrategies: js.UndefOr[
     ScalablyTyped.runtime.StringDictionary[
-      js.Function2[/* attemptsMade */ scala.Double, /* err */ stdLib.ErrorConstructor, scala.Double]
+      js.Function2[/* attemptsMade */ scala.Double, /* err */ nodeLib.Error, scala.Double]
     ]
   ] = js.undefined
   /**

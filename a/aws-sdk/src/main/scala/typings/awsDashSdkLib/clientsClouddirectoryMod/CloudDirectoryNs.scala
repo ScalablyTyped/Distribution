@@ -307,7 +307,7 @@ object CloudDirectoryNs extends js.Object {
   
   trait BatchCreateIndex extends js.Object {
     /**
-         * The batch reference name. See Batches for more information.
+         * The batch reference name. See Transaction Support for more information.
          */
     var BatchReferenceName: js.UndefOr[BatchReferenceName] = js.undefined
     /**
@@ -339,7 +339,7 @@ object CloudDirectoryNs extends js.Object {
   
   trait BatchCreateObject extends js.Object {
     /**
-         * The batch reference name. See Batches for more information.
+         * The batch reference name. See Transaction Support for more information.
          */
     var BatchReferenceName: js.UndefOr[BatchReferenceName] = js.undefined
     /**
@@ -402,7 +402,7 @@ object CloudDirectoryNs extends js.Object {
   
   trait BatchDetachObject extends js.Object {
     /**
-         * The batch reference name. See Batches for more information.
+         * The batch reference name. See Transaction Support for more information.
          */
     var BatchReferenceName: js.UndefOr[BatchReferenceName] = js.undefined
     /**
@@ -698,6 +698,19 @@ object CloudDirectoryNs extends js.Object {
   }
   
   
+  trait BatchListObjectParents extends js.Object {
+    var MaxResults: js.UndefOr[NumberResults] = js.undefined
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    var ObjectReference: ObjectReference
+  }
+  
+  
+  trait BatchListObjectParentsResponse extends js.Object {
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    var ParentLinks: js.UndefOr[ObjectIdentifierAndLinkNameList] = js.undefined
+  }
+  
+  
   trait BatchListObjectPolicies extends js.Object {
     /**
          * The maximum number of results to retrieve.
@@ -848,7 +861,7 @@ object CloudDirectoryNs extends js.Object {
          */
     var ListAttachedIndices: js.UndefOr[BatchListAttachedIndices] = js.undefined
     /**
-         * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+         * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
          */
     var ListIncomingTypedLinks: js.UndefOr[BatchListIncomingTypedLinks] = js.undefined
     /**
@@ -867,12 +880,13 @@ object CloudDirectoryNs extends js.Object {
          * Retrieves all available parent paths for any object type such as node, leaf node, policy node, and index node objects. For more information about objects, see Directory Structure.
          */
     var ListObjectParentPaths: js.UndefOr[BatchListObjectParentPaths] = js.undefined
+    var ListObjectParents: js.UndefOr[BatchListObjectParents] = js.undefined
     /**
          * Returns policies attached to an object in pagination fashion.
          */
     var ListObjectPolicies: js.UndefOr[BatchListObjectPolicies] = js.undefined
     /**
-         * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+         * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
          */
     var ListOutgoingTypedLinks: js.UndefOr[BatchListOutgoingTypedLinks] = js.undefined
     /**
@@ -940,7 +954,7 @@ object CloudDirectoryNs extends js.Object {
          */
     var ListAttachedIndices: js.UndefOr[BatchListAttachedIndicesResponse] = js.undefined
     /**
-         * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+         * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
          */
     var ListIncomingTypedLinks: js.UndefOr[BatchListIncomingTypedLinksResponse] = js.undefined
     /**
@@ -959,12 +973,13 @@ object CloudDirectoryNs extends js.Object {
          * Retrieves all available parent paths for any object type such as node, leaf node, policy node, and index node objects. For more information about objects, see Directory Structure.
          */
     var ListObjectParentPaths: js.UndefOr[BatchListObjectParentPathsResponse] = js.undefined
+    var ListObjectParents: js.UndefOr[BatchListObjectParentsResponse] = js.undefined
     /**
          * Returns policies attached to an object in pagination fashion.
          */
     var ListObjectPolicies: js.UndefOr[BatchListObjectPoliciesResponse] = js.undefined
     /**
-         * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+         * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
          */
     var ListOutgoingTypedLinks: js.UndefOr[BatchListOutgoingTypedLinksResponse] = js.undefined
     /**
@@ -1046,11 +1061,11 @@ object CloudDirectoryNs extends js.Object {
          */
     var AttachToIndex: js.UndefOr[BatchAttachToIndex] = js.undefined
     /**
-         * Attaches a typed link to a specified source and target object. For more information, see Typed link.
+         * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
          */
     var AttachTypedLink: js.UndefOr[BatchAttachTypedLink] = js.undefined
     /**
-         * Creates an index object. See Indexing for more information.
+         * Creates an index object. See Indexing and search for more information.
          */
     var CreateIndex: js.UndefOr[BatchCreateIndex] = js.undefined
     /**
@@ -1074,7 +1089,7 @@ object CloudDirectoryNs extends js.Object {
          */
     var DetachPolicy: js.UndefOr[BatchDetachPolicy] = js.undefined
     /**
-         * Detaches a typed link from a specified source and target object. For more information, see Typed link.
+         * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
          */
     var DetachTypedLink: js.UndefOr[BatchDetachTypedLink] = js.undefined
     /**
@@ -1110,11 +1125,11 @@ object CloudDirectoryNs extends js.Object {
          */
     var AttachToIndex: js.UndefOr[BatchAttachToIndexResponse] = js.undefined
     /**
-         * Attaches a typed link to a specified source and target object. For more information, see Typed link.
+         * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
          */
     var AttachTypedLink: js.UndefOr[BatchAttachTypedLinkResponse] = js.undefined
     /**
-         * Creates an index object. See Indexing for more information.
+         * Creates an index object. See Indexing and search for more information.
          */
     var CreateIndex: js.UndefOr[BatchCreateIndexResponse] = js.undefined
     /**
@@ -1138,7 +1153,7 @@ object CloudDirectoryNs extends js.Object {
          */
     var DetachPolicy: js.UndefOr[BatchDetachPolicyResponse] = js.undefined
     /**
-         * Detaches a typed link from a specified source and target object. For more information, see Typed link.
+         * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
          */
     var DetachTypedLink: js.UndefOr[BatchDetachTypedLinkResponse] = js.undefined
     /**
@@ -1688,7 +1703,7 @@ object CloudDirectoryNs extends js.Object {
          */
     var ConsistencyLevel: js.UndefOr[ConsistencyLevel] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) that is associated with the Directory where the typed link resides. For more information, see arns or Typed link.
+         * The Amazon Resource Name (ARN) that is associated with the Directory where the typed link resides. For more information, see arns or Typed Links.
          */
     var DirectoryArn: Arn
     /**
@@ -1800,7 +1815,7 @@ object CloudDirectoryNs extends js.Object {
   
   trait GetTypedLinkFacetInformationResponse extends js.Object {
     /**
-         * The order of identity attributes for the facet, from most significant to least significant. The ability to filter typed links considers the order that the attributes are defined on the typed link facet. When providing ranges to typed link selection, any inexact ranges must be specified at the end. Any attributes that do not have a range specified are presumed to match the entire range. Filters are interpreted in the order of the attributes on the typed link facet, not the order in which they are supplied to any API calls. For more information about identity attributes, see Typed link.
+         * The order of identity attributes for the facet, from most significant to least significant. The ability to filter typed links considers the order that the attributes are defined on the typed link facet. When providing ranges to typed link selection, any inexact ranges must be specified at the end. Any attributes that do not have a range specified are presumed to match the entire range. Filters are interpreted in the order of the attributes on the typed link facet, not the order in which they are supplied to any API calls. For more information about identity attributes, see Typed Links.
          */
     var IdentityAttributeOrder: js.UndefOr[AttributeNameList] = js.undefined
   }
@@ -2084,7 +2099,7 @@ object CloudDirectoryNs extends js.Object {
          */
     var IndexReference: ObjectReference
     /**
-         * The maximum number of objects in a single page to retrieve from the index during a request. For more information, see AWS Directory Service Limits.
+         * The maximum number of objects in a single page to retrieve from the index during a request. For more information, see Amazon Cloud Directory Limits.
          */
     var MaxResults: js.UndefOr[NumberResults] = js.undefined
     /**
@@ -2256,6 +2271,10 @@ object CloudDirectoryNs extends js.Object {
          */
     var DirectoryArn: Arn
     /**
+         * When set to True, returns all ListObjectParentsResponse$ParentLinks. There could be multiple links between a parent-child pair.
+         */
+    var IncludeAllLinksToEachParent: js.UndefOr[Bool] = js.undefined
+    /**
          * The maximum number of items to be retrieved in a single call. This is an approximate number.
          */
     var MaxResults: js.UndefOr[NumberResults] = js.undefined
@@ -2275,6 +2294,10 @@ object CloudDirectoryNs extends js.Object {
          * The pagination token.
          */
     var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * Returns a list of parent reference and LinkName Tuples.
+         */
+    var ParentLinks: js.UndefOr[ObjectIdentifierAndLinkNameList] = js.undefined
     /**
          * The parent structure, which is a map with key as the ObjectIdentifier and LinkName as the value.
          */
@@ -2582,13 +2605,25 @@ object CloudDirectoryNs extends js.Object {
   }
   
   
+  trait ObjectIdentifierAndLinkNameTuple extends js.Object {
+    /**
+         * The name of the link between the parent and the child object.
+         */
+    var LinkName: js.UndefOr[LinkName] = js.undefined
+    /**
+         * The ID that is associated with the object.
+         */
+    var ObjectIdentifier: js.UndefOr[ObjectIdentifier] = js.undefined
+  }
+  
+  
   trait ObjectIdentifierToLinkNameMap
     extends /* key */ ScalablyTyped.runtime.StringDictionary[LinkName]
   
   
   trait ObjectReference extends js.Object {
     /**
-         * A path selector supports easy selection of an object by the parent/child links leading to it from the directory root. Use the link names from each parent/child link to construct the path. Path selectors start with a slash (/) and link names are separated by slashes. For more information about paths, see Accessing Objects. You can identify an object in one of the following ways:    $ObjectIdentifier - An object identifier is an opaque string provided by Amazon Cloud Directory. When creating objects, the system will provide you with the identifier of the created object. An object’s identifier is immutable and no two objects will ever share the same object identifier    /some/path - Identifies the object based on path    #SomeBatchReference - Identifies the object in a batch call  
+         * A path selector supports easy selection of an object by the parent/child links leading to it from the directory root. Use the link names from each parent/child link to construct the path. Path selectors start with a slash (/) and link names are separated by slashes. For more information about paths, see Access Objects. You can identify an object in one of the following ways:    $ObjectIdentifier - An object identifier is an opaque string provided by Amazon Cloud Directory. When creating objects, the system will provide you with the identifier of the created object. An object’s identifier is immutable and no two objects will ever share the same object identifier    /some/path - Identifies the object based on path    #SomeBatchReference - Identifies the object in a batch call  
          */
     var Selector: js.UndefOr[SelectorObjectReference] = js.undefined
   }
@@ -3054,11 +3089,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AttachToIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Attaches a typed link to a specified source and target object. For more information, see Typed link.
+       * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
        */
     def attachTypedLink(): awsDashSdkLib.libRequestMod.Request[AttachTypedLinkResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Attaches a typed link to a specified source and target object. For more information, see Typed link.
+       * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
        */
     def attachTypedLink(
       callback: js.Function2[
@@ -3068,11 +3103,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AttachTypedLinkResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Attaches a typed link to a specified source and target object. For more information, see Typed link.
+       * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
        */
     def attachTypedLink(params: AttachTypedLinkRequest): awsDashSdkLib.libRequestMod.Request[AttachTypedLinkResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Attaches a typed link to a specified source and target object. For more information, see Typed link.
+       * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
        */
     def attachTypedLink(
       params: AttachTypedLinkRequest,
@@ -3141,11 +3176,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchWriteResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema.
+       * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema. You can also quickly create a directory using a managed schema, called the QuickStartSchema. For more information, see Managed Schema in the Amazon Cloud Directory Developer Guide.
        */
     def createDirectory(): awsDashSdkLib.libRequestMod.Request[CreateDirectoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema.
+       * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema. You can also quickly create a directory using a managed schema, called the QuickStartSchema. For more information, see Managed Schema in the Amazon Cloud Directory Developer Guide.
        */
     def createDirectory(
       callback: js.Function2[
@@ -3155,11 +3190,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDirectoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema.
+       * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema. You can also quickly create a directory using a managed schema, called the QuickStartSchema. For more information, see Managed Schema in the Amazon Cloud Directory Developer Guide.
        */
     def createDirectory(params: CreateDirectoryRequest): awsDashSdkLib.libRequestMod.Request[CreateDirectoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema.
+       * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema. You can also quickly create a directory using a managed schema, called the QuickStartSchema. For more information, see Managed Schema in the Amazon Cloud Directory Developer Guide.
        */
     def createDirectory(
       params: CreateDirectoryRequest,
@@ -3199,11 +3234,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an index object. See Indexing for more information.
+       * Creates an index object. See Indexing and search for more information.
        */
     def createIndex(): awsDashSdkLib.libRequestMod.Request[CreateIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an index object. See Indexing for more information.
+       * Creates an index object. See Indexing and search for more information.
        */
     def createIndex(
       callback: js.Function2[
@@ -3213,11 +3248,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an index object. See Indexing for more information.
+       * Creates an index object. See Indexing and search for more information.
        */
     def createIndex(params: CreateIndexRequest): awsDashSdkLib.libRequestMod.Request[CreateIndexResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an index object. See Indexing for more information.
+       * Creates an index object. See Indexing and search for more information.
        */
     def createIndex(
       params: CreateIndexRequest,
@@ -3286,11 +3321,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateSchemaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a TypedLinkFacet. For more information, see Typed link.
+       * Creates a TypedLinkFacet. For more information, see Typed Links.
        */
     def createTypedLinkFacet(): awsDashSdkLib.libRequestMod.Request[CreateTypedLinkFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a TypedLinkFacet. For more information, see Typed link.
+       * Creates a TypedLinkFacet. For more information, see Typed Links.
        */
     def createTypedLinkFacet(
       callback: js.Function2[
@@ -3300,11 +3335,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateTypedLinkFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a TypedLinkFacet. For more information, see Typed link.
+       * Creates a TypedLinkFacet. For more information, see Typed Links.
        */
     def createTypedLinkFacet(params: CreateTypedLinkFacetRequest): awsDashSdkLib.libRequestMod.Request[CreateTypedLinkFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a TypedLinkFacet. For more information, see Typed link.
+       * Creates a TypedLinkFacet. For more information, see Typed Links.
        */
     def createTypedLinkFacet(
       params: CreateTypedLinkFacetRequest,
@@ -3373,11 +3408,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted.
+       * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted. The maximum number of attributes that can be deleted during an object deletion is 30. For more information, see Amazon Cloud Directory Limits.
        */
     def deleteObject(): awsDashSdkLib.libRequestMod.Request[DeleteObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted.
+       * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted. The maximum number of attributes that can be deleted during an object deletion is 30. For more information, see Amazon Cloud Directory Limits.
        */
     def deleteObject(
       callback: js.Function2[
@@ -3387,11 +3422,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted.
+       * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted. The maximum number of attributes that can be deleted during an object deletion is 30. For more information, see Amazon Cloud Directory Limits.
        */
     def deleteObject(params: DeleteObjectRequest): awsDashSdkLib.libRequestMod.Request[DeleteObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted.
+       * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted. The maximum number of attributes that can be deleted during an object deletion is 30. For more information, see Amazon Cloud Directory Limits.
        */
     def deleteObject(
       params: DeleteObjectRequest,
@@ -3431,11 +3466,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteSchemaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a TypedLinkFacet. For more information, see Typed link.
+       * Deletes a TypedLinkFacet. For more information, see Typed Links.
        */
     def deleteTypedLinkFacet(): awsDashSdkLib.libRequestMod.Request[DeleteTypedLinkFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a TypedLinkFacet. For more information, see Typed link.
+       * Deletes a TypedLinkFacet. For more information, see Typed Links.
        */
     def deleteTypedLinkFacet(
       callback: js.Function2[
@@ -3445,11 +3480,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteTypedLinkFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a TypedLinkFacet. For more information, see Typed link.
+       * Deletes a TypedLinkFacet. For more information, see Typed Links.
        */
     def deleteTypedLinkFacet(params: DeleteTypedLinkFacetRequest): awsDashSdkLib.libRequestMod.Request[DeleteTypedLinkFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a TypedLinkFacet. For more information, see Typed link.
+       * Deletes a TypedLinkFacet. For more information, see Typed Links.
        */
     def deleteTypedLinkFacet(
       params: DeleteTypedLinkFacetRequest,
@@ -3547,21 +3582,21 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DetachPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches a typed link from a specified source and target object. For more information, see Typed link.
+       * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
        */
     def detachTypedLink(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches a typed link from a specified source and target object. For more information, see Typed link.
+       * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
        */
     def detachTypedLink(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches a typed link from a specified source and target object. For more information, see Typed link.
+       * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
        */
     def detachTypedLink(params: DetachTypedLinkRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches a typed link from a specified source and target object. For more information, see Typed link.
+       * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
        */
     def detachTypedLink(
       params: DetachTypedLinkRequest,
@@ -3829,11 +3864,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetSchemaAsJsonResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed link.
+       * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed Links.
        */
     def getTypedLinkFacetInformation(): awsDashSdkLib.libRequestMod.Request[GetTypedLinkFacetInformationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed link.
+       * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed Links.
        */
     def getTypedLinkFacetInformation(
       callback: js.Function2[
@@ -3843,11 +3878,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetTypedLinkFacetInformationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed link.
+       * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed Links.
        */
     def getTypedLinkFacetInformation(params: GetTypedLinkFacetInformationRequest): awsDashSdkLib.libRequestMod.Request[GetTypedLinkFacetInformationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed link.
+       * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed Links.
        */
     def getTypedLinkFacetInformation(
       params: GetTypedLinkFacetInformationRequest,
@@ -4032,11 +4067,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListFacetNamesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+       * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
        */
     def listIncomingTypedLinks(): awsDashSdkLib.libRequestMod.Request[ListIncomingTypedLinksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+       * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
        */
     def listIncomingTypedLinks(
       callback: js.Function2[
@@ -4046,11 +4081,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListIncomingTypedLinksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+       * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
        */
     def listIncomingTypedLinks(params: ListIncomingTypedLinksRequest): awsDashSdkLib.libRequestMod.Request[ListIncomingTypedLinksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+       * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
        */
     def listIncomingTypedLinks(
       params: ListIncomingTypedLinksRequest,
@@ -4264,11 +4299,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListObjectPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+       * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
        */
     def listOutgoingTypedLinks(): awsDashSdkLib.libRequestMod.Request[ListOutgoingTypedLinksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+       * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
        */
     def listOutgoingTypedLinks(
       callback: js.Function2[
@@ -4278,11 +4313,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListOutgoingTypedLinksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+       * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
        */
     def listOutgoingTypedLinks(params: ListOutgoingTypedLinksRequest): awsDashSdkLib.libRequestMod.Request[ListOutgoingTypedLinksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+       * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
        */
     def listOutgoingTypedLinks(
       params: ListOutgoingTypedLinksRequest,
@@ -4380,11 +4415,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed link.
+       * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed Links.
        */
     def listTypedLinkFacetAttributes(): awsDashSdkLib.libRequestMod.Request[ListTypedLinkFacetAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed link.
+       * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed Links.
        */
     def listTypedLinkFacetAttributes(
       callback: js.Function2[
@@ -4394,11 +4429,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListTypedLinkFacetAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed link.
+       * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed Links.
        */
     def listTypedLinkFacetAttributes(params: ListTypedLinkFacetAttributesRequest): awsDashSdkLib.libRequestMod.Request[ListTypedLinkFacetAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed link.
+       * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed Links.
        */
     def listTypedLinkFacetAttributes(
       params: ListTypedLinkFacetAttributesRequest,
@@ -4409,11 +4444,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListTypedLinkFacetAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed link.
+       * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed Links.
        */
     def listTypedLinkFacetNames(): awsDashSdkLib.libRequestMod.Request[ListTypedLinkFacetNamesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed link.
+       * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed Links.
        */
     def listTypedLinkFacetNames(
       callback: js.Function2[
@@ -4423,11 +4458,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListTypedLinkFacetNamesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed link.
+       * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed Links.
        */
     def listTypedLinkFacetNames(params: ListTypedLinkFacetNamesRequest): awsDashSdkLib.libRequestMod.Request[ListTypedLinkFacetNamesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed link.
+       * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed Links.
        */
     def listTypedLinkFacetNames(
       params: ListTypedLinkFacetNamesRequest,
@@ -4728,11 +4763,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateSchemaResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates a TypedLinkFacet. For more information, see Typed link.
+       * Updates a TypedLinkFacet. For more information, see Typed Links.
        */
     def updateTypedLinkFacet(): awsDashSdkLib.libRequestMod.Request[UpdateTypedLinkFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates a TypedLinkFacet. For more information, see Typed link.
+       * Updates a TypedLinkFacet. For more information, see Typed Links.
        */
     def updateTypedLinkFacet(
       callback: js.Function2[
@@ -4742,11 +4777,11 @@ object CloudDirectoryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateTypedLinkFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates a TypedLinkFacet. For more information, see Typed link.
+       * Updates a TypedLinkFacet. For more information, see Typed Links.
        */
     def updateTypedLinkFacet(params: UpdateTypedLinkFacetRequest): awsDashSdkLib.libRequestMod.Request[UpdateTypedLinkFacetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates a TypedLinkFacet. For more information, see Typed link.
+       * Updates a TypedLinkFacet. For more information, see Typed Links.
        */
     def updateTypedLinkFacet(
       params: UpdateTypedLinkFacetRequest,
@@ -4861,7 +4896,7 @@ object CloudDirectoryNs extends js.Object {
          */
     var AttributeUpdates: LinkAttributeUpdateList
     /**
-         * The Amazon Resource Name (ARN) that is associated with the Directory where the updated typed link resides. For more information, see arns or Typed link.
+         * The Amazon Resource Name (ARN) that is associated with the Directory where the updated typed link resides. For more information, see arns or Typed Links.
          */
     var DirectoryArn: Arn
     /**
@@ -4924,7 +4959,7 @@ object CloudDirectoryNs extends js.Object {
          */
     var AttributeUpdates: TypedLinkFacetAttributeUpdateList
     /**
-         * The order of identity attributes for the facet, from most significant to least significant. The ability to filter typed links considers the order that the attributes are defined on the typed link facet. When providing ranges to a typed link selection, any inexact ranges must be specified at the end. Any attributes that do not have a range specified are presumed to match the entire range. Filters are interpreted in the order of the attributes on the typed link facet, not the order in which they are supplied to any API calls. For more information about identity attributes, see Typed link.
+         * The order of identity attributes for the facet, from most significant to least significant. The ability to filter typed links considers the order that the attributes are defined on the typed link facet. When providing ranges to a typed link selection, any inexact ranges must be specified at the end. Any attributes that do not have a range specified are presumed to match the entire range. Filters are interpreted in the order of the attributes on the typed link facet, not the order in which they are supplied to any API calls. For more information about identity attributes, see Typed Links.
          */
     var IdentityAttributeOrder: AttributeNameList
     /**
@@ -5036,6 +5071,7 @@ object CloudDirectoryNs extends js.Object {
   type ObjectAttributeRangeList = js.Array[ObjectAttributeRange]
   type ObjectAttributeUpdateList = js.Array[ObjectAttributeUpdate]
   type ObjectIdentifier = java.lang.String
+  type ObjectIdentifierAndLinkNameList = js.Array[ObjectIdentifierAndLinkNameTuple]
   type ObjectIdentifierList = js.Array[ObjectIdentifier]
   type ObjectType = awsDashSdkLib.awsDashSdkLibStrings.NODE | awsDashSdkLib.awsDashSdkLibStrings.LEAF_NODE | awsDashSdkLib.awsDashSdkLibStrings.POLICY | awsDashSdkLib.awsDashSdkLibStrings.INDEX | java.lang.String
   type PathString = java.lang.String

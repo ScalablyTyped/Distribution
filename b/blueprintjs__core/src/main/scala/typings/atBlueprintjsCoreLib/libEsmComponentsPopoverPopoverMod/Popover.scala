@@ -43,6 +43,7 @@ class Popover ()
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MPopover(nextProps: IPopoverProps): scala.Unit = js.native
   /* private */ def getIsOpen(props: js.Any): js.Any = js.native
+  /* private */ def getPopperModifiers(): js.Any = js.native
   /* private */ def isArrowEnabled(): js.Any = js.native
   /* private */ def isElementInPopover(element: js.Any): js.Any = js.native
   /* private */ def isHoverInteractionKind(): js.Any = js.native

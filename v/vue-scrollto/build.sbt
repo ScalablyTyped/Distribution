@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "vue-scrollto"
-version := "2.7-dt-20180910Z-4c6dd7"
+version := "2.7-dt-20180910Z-40da14"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "vue" % "2.5.17-0b0f80",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "vue" % "2.5.17-7af1a3",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -34,6 +34,7 @@ trait Event extends js.Object {
        */
   val isTrusted: scala.Boolean = js.native
   var returnValue: scala.Boolean = js.native
+  /** @deprecated */
   val srcElement: Element | scala.Null = js.native
   /**
        * Returns the object to which event is dispatched (its target).

@@ -18,6 +18,11 @@ class TLSSocket protected ()
            */
   def this(socket: nodeLib.netMod.Socket, options: nodeLib.Anon_Server) = this()
   /**
+           * String containing the selected ALPN protocol.
+           * When ALPN has no selected protocol, tlsSocket.alpnProtocol equals false.
+           */
+  var alpnProtocol: js.UndefOr[java.lang.String] = js.native
+  /**
            * The reason why the peer's certificate has not been verified.
            * This property becomes available only when tlsSocket.authorized === false.
            */

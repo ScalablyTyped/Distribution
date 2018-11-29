@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/sdk/internal", "RestTransportation")
 @js.native
 class RestTransportation protected ()
-  extends mendixmodelsdkLib.distSdkInternalTransportationMod.RestTransportation {
+  extends mendixmodelsdkLib.distSdkInternalRestDashTransportationMod.RestTransportation {
   def this(config: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ISdkConfig) = this()
 }
 

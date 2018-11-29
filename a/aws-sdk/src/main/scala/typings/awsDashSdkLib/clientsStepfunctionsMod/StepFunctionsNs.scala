@@ -13,11 +13,11 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the failure.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
          * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
   }
   
   
@@ -41,11 +41,11 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the failure.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
          * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
   }
   
   
@@ -57,7 +57,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The JSON data input to the activity task.
          */
-    var input: js.UndefOr[Data] = js.undefined
+    var input: js.UndefOr[SensitiveData] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the scheduled activity.
          */
@@ -81,7 +81,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The JSON data output by the activity task.
          */
-    var output: js.UndefOr[Data] = js.undefined
+    var output: js.UndefOr[SensitiveData] = js.undefined
   }
   
   
@@ -89,11 +89,11 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the timeout.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
          * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
   }
   
   
@@ -127,11 +127,11 @@ object StepFunctionsNs extends js.Object {
   
   trait CreateStateMachineInput extends js.Object {
     /**
-         * The Amazon States Language definition of the state machine.
+         * The Amazon States Language definition of the state machine. See Amazon States Language.
          */
     var definition: Definition
     /**
-         * The name of the state machine. This name must be unique for your AWS account and region for 90 days. For more information, see  Limits Related to State Machine Executions in the AWS Step Functions Developer Guide. A name must not contain:   whitespace   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
+         * The name of the state machine.  A name must not contain:   whitespace   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
          */
     var name: Name
     /**
@@ -215,7 +215,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The string that contains the JSON input data of the execution.
          */
-    var input: Data
+    var input: SensitiveData
     /**
          * The name of the execution. A name must not contain:   whitespace   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
          */
@@ -223,7 +223,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The JSON output data of the execution.  This field is set only if the execution succeeds. If the execution fails, this field is null. 
          */
-    var output: js.UndefOr[Data] = js.undefined
+    var output: js.UndefOr[SensitiveData] = js.undefined
     /**
          * The date the execution is started.
          */
@@ -253,7 +253,7 @@ object StepFunctionsNs extends js.Object {
   
   trait DescribeStateMachineForExecutionOutput extends js.Object {
     /**
-         * The Amazon States Language definition of the state machine.
+         * The Amazon States Language definition of the state machine. See Amazon States Language.
          */
     var definition: Definition
     /**
@@ -289,7 +289,7 @@ object StepFunctionsNs extends js.Object {
          */
     var creationDate: Timestamp
     /**
-         * The Amazon States Language definition of the state machine.
+         * The Amazon States Language definition of the state machine. See Amazon States Language.
          */
     var definition: Definition
     /**
@@ -315,11 +315,11 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the failure.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
          * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
   }
   
   
@@ -327,11 +327,11 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the failure.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
          * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
   }
   
   
@@ -367,7 +367,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The JSON data input to the execution.
          */
-    var input: js.UndefOr[Data] = js.undefined
+    var input: js.UndefOr[SensitiveData] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the IAM role used for executing AWS Lambda tasks.
          */
@@ -379,7 +379,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The JSON data output by the execution.
          */
-    var output: js.UndefOr[Data] = js.undefined
+    var output: js.UndefOr[SensitiveData] = js.undefined
   }
   
   
@@ -387,11 +387,11 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the timeout.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
          * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
   }
   
   
@@ -411,7 +411,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The string that contains the JSON input data for the task.
          */
-    var input: js.UndefOr[Data] = js.undefined
+    var input: js.UndefOr[SensitiveData] = js.undefined
     /**
          * A token that identifies the scheduled task. This token must be copied and included in subsequent calls to SendTaskHeartbeat, SendTaskSuccess or SendTaskFailure in order to report the progress or completion of the task.
          */
@@ -425,11 +425,11 @@ object StepFunctionsNs extends js.Object {
          */
     var executionArn: Arn
     /**
-         * The maximum number of results that are returned per call. You can use nextToken to obtain further pages of results. The default is 100 and the maximum allowed page size is 100. A value of 0 uses the default. This is only an upper limit. The actual number of results returned per call might be fewer than the specified maximum.
+         * The maximum number of results that are returned per call. You can use nextToken to obtain further pages of results. The default is 100 and the maximum allowed page size is 1000. A value of 0 uses the default. This is only an upper limit. The actual number of results returned per call might be fewer than the specified maximum.
          */
     var maxResults: js.UndefOr[PageSize] = js.undefined
     /**
-         * If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged. The configured maxResults determines how many results can be returned in a single call.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
     /**
@@ -445,7 +445,7 @@ object StepFunctionsNs extends js.Object {
          */
     var events: HistoryEventList
     /**
-         * If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged. The configured maxResults determines how many results can be returned in a single call.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
   }
@@ -454,7 +454,7 @@ object StepFunctionsNs extends js.Object {
   trait HistoryEvent extends js.Object {
     var activityFailedEventDetails: js.UndefOr[ActivityFailedEventDetails] = js.undefined
     /**
-         * Contains details about an activity schedule event which failed during an execution.
+         * Contains details about an activity schedule event that failed during an execution.
          */
     var activityScheduleFailedEventDetails: js.UndefOr[ActivityScheduleFailedEventDetails] = js.undefined
     var activityScheduledEventDetails: js.UndefOr[ActivityScheduledEventDetails] = js.undefined
@@ -474,11 +474,11 @@ object StepFunctionsNs extends js.Object {
     var lambdaFunctionScheduleFailedEventDetails: js.UndefOr[LambdaFunctionScheduleFailedEventDetails] = js.undefined
     var lambdaFunctionScheduledEventDetails: js.UndefOr[LambdaFunctionScheduledEventDetails] = js.undefined
     /**
-         * Contains details about a lambda function which failed to start during an execution.
+         * Contains details about a lambda function that failed to start during an execution.
          */
     var lambdaFunctionStartFailedEventDetails: js.UndefOr[LambdaFunctionStartFailedEventDetails] = js.undefined
     /**
-         * Contains details about a lambda function which terminated successfully during an execution.
+         * Contains details about a lambda function that terminated successfully during an execution.
          */
     var lambdaFunctionSucceededEventDetails: js.UndefOr[LambdaFunctionSucceededEventDetails] = js.undefined
     var lambdaFunctionTimedOutEventDetails: js.UndefOr[LambdaFunctionTimedOutEventDetails] = js.undefined
@@ -488,8 +488,16 @@ object StepFunctionsNs extends js.Object {
     var previousEventId: js.UndefOr[EventId] = js.undefined
     var stateEnteredEventDetails: js.UndefOr[StateEnteredEventDetails] = js.undefined
     var stateExitedEventDetails: js.UndefOr[StateExitedEventDetails] = js.undefined
+    var taskFailedEventDetails: js.UndefOr[TaskFailedEventDetails] = js.undefined
+    var taskScheduledEventDetails: js.UndefOr[TaskScheduledEventDetails] = js.undefined
+    var taskStartFailedEventDetails: js.UndefOr[TaskStartFailedEventDetails] = js.undefined
+    var taskStartedEventDetails: js.UndefOr[TaskStartedEventDetails] = js.undefined
+    var taskSubmitFailedEventDetails: js.UndefOr[TaskSubmitFailedEventDetails] = js.undefined
+    var taskSubmittedEventDetails: js.UndefOr[TaskSubmittedEventDetails] = js.undefined
+    var taskSucceededEventDetails: js.UndefOr[TaskSucceededEventDetails] = js.undefined
+    var taskTimedOutEventDetails: js.UndefOr[TaskTimedOutEventDetails] = js.undefined
     /**
-         * The date the event occurred.
+         * The date and time the event occurred.
          */
     var timestamp: Timestamp
     /**
@@ -503,11 +511,11 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the failure.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
          * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
   }
   
   
@@ -515,11 +523,11 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the failure.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
          * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
   }
   
   
@@ -527,7 +535,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The JSON data input to the lambda function.
          */
-    var input: js.UndefOr[Data] = js.undefined
+    var input: js.UndefOr[SensitiveData] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the scheduled lambda function.
          */
@@ -543,11 +551,11 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the failure.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
          * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
   }
   
   
@@ -555,7 +563,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The JSON data output by the lambda function.
          */
-    var output: js.UndefOr[Data] = js.undefined
+    var output: js.UndefOr[SensitiveData] = js.undefined
   }
   
   
@@ -563,21 +571,21 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the timeout.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
          * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
   }
   
   
   trait ListActivitiesInput extends js.Object {
     /**
-         * The maximum number of results that are returned per call. You can use nextToken to obtain further pages of results. The default is 100 and the maximum allowed page size is 100. A value of 0 uses the default. This is only an upper limit. The actual number of results returned per call might be fewer than the specified maximum.
+         * The maximum number of results that are returned per call. You can use nextToken to obtain further pages of results. The default is 100 and the maximum allowed page size is 1000. A value of 0 uses the default. This is only an upper limit. The actual number of results returned per call might be fewer than the specified maximum.
          */
     var maxResults: js.UndefOr[PageSize] = js.undefined
     /**
-         * If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged. The configured maxResults determines how many results can be returned in a single call.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
   }
@@ -589,7 +597,7 @@ object StepFunctionsNs extends js.Object {
          */
     var activities: ActivityList
     /**
-         * If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged. The configured maxResults determines how many results can be returned in a single call.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
   }
@@ -597,11 +605,11 @@ object StepFunctionsNs extends js.Object {
   
   trait ListExecutionsInput extends js.Object {
     /**
-         * The maximum number of results that are returned per call. You can use nextToken to obtain further pages of results. The default is 100 and the maximum allowed page size is 100. A value of 0 uses the default. This is only an upper limit. The actual number of results returned per call might be fewer than the specified maximum.
+         * The maximum number of results that are returned per call. You can use nextToken to obtain further pages of results. The default is 100 and the maximum allowed page size is 1000. A value of 0 uses the default. This is only an upper limit. The actual number of results returned per call might be fewer than the specified maximum.
          */
     var maxResults: js.UndefOr[PageSize] = js.undefined
     /**
-         * If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged. The configured maxResults determines how many results can be returned in a single call.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
     /**
@@ -621,7 +629,7 @@ object StepFunctionsNs extends js.Object {
          */
     var executions: ExecutionList
     /**
-         * If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged. The configured maxResults determines how many results can be returned in a single call.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
   }
@@ -629,11 +637,11 @@ object StepFunctionsNs extends js.Object {
   
   trait ListStateMachinesInput extends js.Object {
     /**
-         * The maximum number of results that are returned per call. You can use nextToken to obtain further pages of results. The default is 100 and the maximum allowed page size is 100. A value of 0 uses the default. This is only an upper limit. The actual number of results returned per call might be fewer than the specified maximum.
+         * The maximum number of results that are returned per call. You can use nextToken to obtain further pages of results. The default is 100 and the maximum allowed page size is 1000. A value of 0 uses the default. This is only an upper limit. The actual number of results returned per call might be fewer than the specified maximum.
          */
     var maxResults: js.UndefOr[PageSize] = js.undefined
     /**
-         * If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged. The configured maxResults determines how many results can be returned in a single call.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
   }
@@ -641,7 +649,7 @@ object StepFunctionsNs extends js.Object {
   
   trait ListStateMachinesOutput extends js.Object {
     /**
-         * If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged. The configured maxResults determines how many results can be returned in a single call.
+         * If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
          */
     var nextToken: js.UndefOr[PageToken] = js.undefined
     var stateMachines: StateMachineList
@@ -652,11 +660,11 @@ object StepFunctionsNs extends js.Object {
     /**
          * A more detailed explanation of the cause of the failure.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
-         * An arbitrary error code that identifies the cause of the failure.
+         * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
     /**
          * The token that represents this task. Task tokens are generated by the service when the tasks are assigned to a worker (see GetActivityTask::taskToken).
          */
@@ -682,7 +690,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The JSON output of the task.
          */
-    var output: Data
+    var output: SensitiveData
     /**
          * The token that represents this task. Task tokens are generated by the service when the tasks are assigned to a worker (see GetActivityTaskOutput$taskToken).
          */
@@ -697,9 +705,9 @@ object StepFunctionsNs extends js.Object {
     /**
          * The string that contains the JSON input data for the execution, for example:  "input": "{\"first_name\" : \"test\"}"   If you don't include any JSON input data, you still must include the two braces, for example: "input": "{}"  
          */
-    var input: js.UndefOr[Data] = js.undefined
+    var input: js.UndefOr[SensitiveData] = js.undefined
     /**
-         * The name of the execution. This name must be unique for your AWS account and region for 90 days. For more information, see  Limits Related to State Machine Executions in the AWS Step Functions Developer Guide.  An execution can't use the name of another execution for 90 days. When you make multiple StartExecution calls with the same name, the new execution doesn't run and the following rules apply:   When the original execution is open and the execution input from the new call is different, the ExecutionAlreadyExists message is returned.   When the original execution is open and the execution input from the new call is identical, the Success message is returned.   When the original execution is closed, the ExecutionAlreadyExists message is returned regardless of input.    A name must not contain:   whitespace   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
+         * The name of the execution. This name must be unique for your AWS account and region for 90 days. For more information, see  Limits Related to State Machine Executions in the AWS Step Functions Developer Guide. A name must not contain:   whitespace   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)  
          */
     var name: js.UndefOr[Name] = js.undefined
     /**
@@ -725,7 +733,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The string that contains the JSON input data for the state.
          */
-    var input: js.UndefOr[Data] = js.undefined
+    var input: js.UndefOr[SensitiveData] = js.undefined
     /**
          * The name of the state.
          */
@@ -741,7 +749,7 @@ object StepFunctionsNs extends js.Object {
     /**
          * The JSON output data of the state.
          */
-    var output: js.UndefOr[Data] = js.undefined
+    var output: js.UndefOr[SensitiveData] = js.undefined
   }
   
   
@@ -763,13 +771,13 @@ object StepFunctionsNs extends js.Object {
   
   trait StopExecutionInput extends js.Object {
     /**
-         * A more detailed explanation of the cause of the termination.
+         * A more detailed explanation of the cause of the failure.
          */
-    var cause: js.UndefOr[Cause] = js.undefined
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
     /**
-         * An arbitrary error code that identifies the cause of the termination.
+         * The error code of the failure.
          */
-    var error: js.UndefOr[Error] = js.undefined
+    var error: js.UndefOr[SensitiveError] = js.undefined
     /**
          * The Amazon Resource Name (ARN) of the execution to stop.
          */
@@ -784,17 +792,162 @@ object StepFunctionsNs extends js.Object {
     var stopDate: Timestamp
   }
   
+  
+  trait TaskFailedEventDetails extends js.Object {
+    /**
+         * A more detailed explanation of the cause of the failure.
+         */
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
+    /**
+         * The error code of the failure.
+         */
+    var error: js.UndefOr[SensitiveError] = js.undefined
+    /**
+         * The service name of the connected service in a task state.
+         */
+    var resource: Name
+    /**
+         * The action of the connected service called by a task state.
+         */
+    var resourceType: Name
+  }
+  
+  
+  trait TaskScheduledEventDetails extends js.Object {
+    /**
+         * The JSON data passed to the connected service referenced in a task state.
+         */
+    var parameters: ConnectorParameters
+    var region: Name
+    /**
+         * The service name of the connected service in a task state.
+         */
+    var resource: Name
+    /**
+         * The action of the connected service called by a task state.
+         */
+    var resourceType: Name
+    /**
+         * The maximum allowed duration of the task.
+         */
+    var timeoutInSeconds: js.UndefOr[TimeoutInSeconds] = js.undefined
+  }
+  
+  
+  trait TaskStartFailedEventDetails extends js.Object {
+    /**
+         * A more detailed explanation of the cause of the failure.
+         */
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
+    /**
+         * The error code of the failure.
+         */
+    var error: js.UndefOr[SensitiveError] = js.undefined
+    /**
+         * The service name of the connected service in a task state.
+         */
+    var resource: Name
+    /**
+         * The action of the connected service called by a task state.
+         */
+    var resourceType: Name
+  }
+  
+  
+  trait TaskStartedEventDetails extends js.Object {
+    /**
+         * The service name of the connected service in a task state.
+         */
+    var resource: Name
+    /**
+         * The action of the connected service called by a task state.
+         */
+    var resourceType: Name
+  }
+  
+  
+  trait TaskSubmitFailedEventDetails extends js.Object {
+    /**
+         * A more detailed explanation of the cause of the failure.
+         */
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
+    /**
+         * The error code of the failure.
+         */
+    var error: js.UndefOr[SensitiveError] = js.undefined
+    /**
+         * The service name of the connected service in a task state.
+         */
+    var resource: Name
+    /**
+         * The action of the connected service called by a task state.
+         */
+    var resourceType: Name
+  }
+  
+  
+  trait TaskSubmittedEventDetails extends js.Object {
+    /**
+         * The response from a connected service when a task has started.
+         */
+    var output: js.UndefOr[SensitiveData] = js.undefined
+    /**
+         * The service name of the connected service in a task state.
+         */
+    var resource: Name
+    /**
+         * The action of the connected service called by a task state.
+         */
+    var resourceType: Name
+  }
+  
+  
+  trait TaskSucceededEventDetails extends js.Object {
+    /**
+         * The full JSON response from a connected service when a task has succeeded. This response becomes the output of the related task.
+         */
+    var output: js.UndefOr[SensitiveData] = js.undefined
+    /**
+         * The service name of the connected service in a task state.
+         */
+    var resource: Name
+    /**
+         * The action of the connected service called by a task state.
+         */
+    var resourceType: Name
+  }
+  
+  
+  trait TaskTimedOutEventDetails extends js.Object {
+    /**
+         * A more detailed explanation of the cause of the failure.
+         */
+    var cause: js.UndefOr[SensitiveCause] = js.undefined
+    /**
+         * The error code of the failure.
+         */
+    var error: js.UndefOr[SensitiveError] = js.undefined
+    /**
+         * The service name of the connected service in a task state.
+         */
+    var resource: Name
+    /**
+         * The action of the connected service called by a task state.
+         */
+    var resourceType: Name
+  }
+  
   @js.native
   trait Types
     extends awsDashSdkLib.libServiceMod.Service {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-       * Creates an activity. An activity is a task which you write in any programming language and host on any machine which has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
+       * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
        */
     def createActivity(): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an activity. An activity is a task which you write in any programming language and host on any machine which has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
+       * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
        */
     def createActivity(
       callback: js.Function2[
@@ -804,11 +957,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an activity. An activity is a task which you write in any programming language and host on any machine which has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
+       * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
        */
     def createActivity(params: CreateActivityInput): awsDashSdkLib.libRequestMod.Request[CreateActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an activity. An activity is a task which you write in any programming language and host on any machine which has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
+       * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
        */
     def createActivity(
       params: CreateActivityInput,
@@ -906,11 +1059,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes an activity.
+       * Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeActivity(): awsDashSdkLib.libRequestMod.Request[DescribeActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes an activity.
+       * Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeActivity(
       callback: js.Function2[
@@ -920,11 +1073,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes an activity.
+       * Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeActivity(params: DescribeActivityInput): awsDashSdkLib.libRequestMod.Request[DescribeActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes an activity.
+       * Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeActivity(
       params: DescribeActivityInput,
@@ -935,11 +1088,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeActivityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes an execution.
+       * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeExecution(): awsDashSdkLib.libRequestMod.Request[DescribeExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes an execution.
+       * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeExecution(
       callback: js.Function2[
@@ -949,11 +1102,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes an execution.
+       * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeExecution(params: DescribeExecutionInput): awsDashSdkLib.libRequestMod.Request[DescribeExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes an execution.
+       * Describes an execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeExecution(
       params: DescribeExecutionInput,
@@ -964,11 +1117,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes a state machine.
+       * Describes a state machine.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeStateMachine(): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes a state machine.
+       * Describes a state machine.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeStateMachine(
       callback: js.Function2[
@@ -978,11 +1131,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes a state machine.
+       * Describes a state machine.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeStateMachine(params: DescribeStateMachineInput): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes a state machine.
+       * Describes a state machine.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeStateMachine(
       params: DescribeStateMachineInput,
@@ -993,11 +1146,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the state machine associated with a specific execution.
+       * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeStateMachineForExecution(): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineForExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the state machine associated with a specific execution.
+       * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeStateMachineForExecution(
       callback: js.Function2[
@@ -1007,11 +1160,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineForExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the state machine associated with a specific execution.
+       * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeStateMachineForExecution(params: DescribeStateMachineForExecutionInput): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineForExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the state machine associated with a specific execution.
+       * Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def describeStateMachineForExecution(
       params: DescribeStateMachineForExecutionInput,
@@ -1022,11 +1175,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeStateMachineForExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). 
+       * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). Polling with GetActivityTask can cause latency in some implementations. See Avoid Latency When Polling for Activity Tasks in the Step Functions Developer Guide. 
        */
     def getActivityTask(): awsDashSdkLib.libRequestMod.Request[GetActivityTaskOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). 
+       * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). Polling with GetActivityTask can cause latency in some implementations. See Avoid Latency When Polling for Activity Tasks in the Step Functions Developer Guide. 
        */
     def getActivityTask(
       callback: js.Function2[
@@ -1036,11 +1189,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetActivityTaskOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). 
+       * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). Polling with GetActivityTask can cause latency in some implementations. See Avoid Latency When Polling for Activity Tasks in the Step Functions Developer Guide. 
        */
     def getActivityTask(params: GetActivityTaskInput): awsDashSdkLib.libRequestMod.Request[GetActivityTaskOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). 
+       * Used by workers to retrieve a task (with the specified activity ARN) which has been scheduled for execution by a running state machine. This initiates a long poll, where the service holds the HTTP connection open and responds as soon as a task becomes available (i.e. an execution of a task of this type is needed.) The maximum time the service holds on to the request before responding is 60 seconds. If no task is available within 60 seconds, the poll returns a taskToken with a null string.  Workers should set their client side socket timeout to at least 65 seconds (5 seconds higher than the maximum time the service may hold the poll request). Polling with GetActivityTask can cause latency in some implementations. See Avoid Latency When Polling for Activity Tasks in the Step Functions Developer Guide. 
        */
     def getActivityTask(
       params: GetActivityTaskInput,
@@ -1051,11 +1204,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetActivityTaskOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
        */
     def getExecutionHistory(): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
        */
     def getExecutionHistory(
       callback: js.Function2[
@@ -1065,11 +1218,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
        */
     def getExecutionHistory(params: GetExecutionHistoryInput): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Returns the history of the specified execution as a list of events. By default, the results are returned in ascending order of the timeStamp of the events. Use the reverseOrder parameter to get the latest events first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.
        */
     def getExecutionHistory(
       params: GetExecutionHistoryInput,
@@ -1080,11 +1233,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetExecutionHistoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing activities. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listActivities(): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing activities. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listActivities(
       callback: js.Function2[
@@ -1094,11 +1247,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing activities. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listActivities(params: ListActivitiesInput): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing activities. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the existing activities. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listActivities(
       params: ListActivitiesInput,
@@ -1109,11 +1262,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListActivitiesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the executions of a state machine that meet the filtering criteria. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listExecutions(): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the executions of a state machine that meet the filtering criteria. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listExecutions(
       callback: js.Function2[
@@ -1123,11 +1276,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the executions of a state machine that meet the filtering criteria. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listExecutions(params: ListExecutionsInput): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the executions of a state machine that meet the filtering criteria. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the executions of a state machine that meet the filtering criteria. Results are sorted by time, with the most recent execution first. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listExecutions(
       params: ListExecutionsInput,
@@ -1138,11 +1291,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing state machines. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listStateMachines(): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing state machines. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listStateMachines(
       callback: js.Function2[
@@ -1152,11 +1305,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing state machines. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listStateMachines(params: ListStateMachinesInput): awsDashSdkLib.libRequestMod.Request[ListStateMachinesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists the existing state machines. If a nextToken is returned by a previous call, there are more results available. To retrieve the next page of results, make the call again using the returned token in nextToken. Keep all other arguments unchanged.
+       * Lists the existing state machines. If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. Each pagination token expires after 60 seconds. Using an expired pagination token will return an HTTP 400 InvalidToken error.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
        */
     def listStateMachines(
       params: ListStateMachinesInput,
@@ -1254,11 +1407,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[SendTaskSuccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts a state machine execution.
+       * Starts a state machine execution.   StartExecution is idempotent. If StartExecution is called with the same name and input as a running execution, the call will succeed and return the same response as the original request. If the execution is closed or if the input is different, it will return a 400 ExecutionAlreadyExists error. Names can be reused after 90 days.  
        */
     def startExecution(): awsDashSdkLib.libRequestMod.Request[StartExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts a state machine execution.
+       * Starts a state machine execution.   StartExecution is idempotent. If StartExecution is called with the same name and input as a running execution, the call will succeed and return the same response as the original request. If the execution is closed or if the input is different, it will return a 400 ExecutionAlreadyExists error. Names can be reused after 90 days.  
        */
     def startExecution(
       callback: js.Function2[
@@ -1268,11 +1421,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts a state machine execution.
+       * Starts a state machine execution.   StartExecution is idempotent. If StartExecution is called with the same name and input as a running execution, the call will succeed and return the same response as the original request. If the execution is closed or if the input is different, it will return a 400 ExecutionAlreadyExists error. Names can be reused after 90 days.  
        */
     def startExecution(params: StartExecutionInput): awsDashSdkLib.libRequestMod.Request[StartExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts a state machine execution.
+       * Starts a state machine execution.   StartExecution is idempotent. If StartExecution is called with the same name and input as a running execution, the call will succeed and return the same response as the original request. If the execution is closed or if the input is different, it will return a 400 ExecutionAlreadyExists error. Names can be reused after 90 days.  
        */
     def startExecution(
       params: StartExecutionInput,
@@ -1312,11 +1465,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error. 
+       * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
        */
     def updateStateMachine(): awsDashSdkLib.libRequestMod.Request[UpdateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error. 
+       * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
        */
     def updateStateMachine(
       callback: js.Function2[
@@ -1326,11 +1479,11 @@ object StepFunctionsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error. 
+       * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
        */
     def updateStateMachine(params: UpdateStateMachineInput): awsDashSdkLib.libRequestMod.Request[UpdateStateMachineOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error. 
+       * Updates an existing state machine by modifying its definition and/or roleArn. Running executions will continue to use the previous definition and roleArn. You must include at least one of definition or roleArn or you will receive a MissingRequiredParameter error.  All StartExecution calls within a few seconds will use the updated definition and roleArn. Executions started immediately after calling UpdateStateMachine may use the previous state machine definition and roleArn.  
        */
     def updateStateMachine(
       params: UpdateStateMachineInput,
@@ -1345,7 +1498,7 @@ object StepFunctionsNs extends js.Object {
   
   trait UpdateStateMachineInput extends js.Object {
     /**
-         * The Amazon States Language definition of the state machine.
+         * The Amazon States Language definition of the state machine. See Amazon States Language.
          */
     var definition: js.UndefOr[Definition] = js.undefined
     /**
@@ -1369,21 +1522,22 @@ object StepFunctionsNs extends js.Object {
   val TypesNs: this.type = js.native
   type ActivityList = js.Array[ActivityListItem]
   type Arn = java.lang.String
-  type Cause = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type Data = java.lang.String
+  type ConnectorParameters = java.lang.String
   type Definition = java.lang.String
-  type Error = java.lang.String
   type EventId = scala.Double
   type ExecutionList = js.Array[ExecutionListItem]
   type ExecutionStatus = awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT | awsDashSdkLib.awsDashSdkLibStrings.ABORTED | java.lang.String
   type HistoryEventList = js.Array[HistoryEvent]
-  type HistoryEventType = awsDashSdkLib.awsDashSdkLibStrings.ActivityFailed | awsDashSdkLib.awsDashSdkLibStrings.ActivityScheduleFailed | awsDashSdkLib.awsDashSdkLibStrings.ActivityScheduled | awsDashSdkLib.awsDashSdkLibStrings.ActivityStarted | awsDashSdkLib.awsDashSdkLibStrings.ActivitySucceeded | awsDashSdkLib.awsDashSdkLibStrings.ActivityTimedOut | awsDashSdkLib.awsDashSdkLibStrings.ChoiceStateEntered | awsDashSdkLib.awsDashSdkLibStrings.ChoiceStateExited | awsDashSdkLib.awsDashSdkLibStrings.ExecutionFailed | awsDashSdkLib.awsDashSdkLibStrings.ExecutionStarted | awsDashSdkLib.awsDashSdkLibStrings.ExecutionSucceeded | awsDashSdkLib.awsDashSdkLibStrings.ExecutionAborted | awsDashSdkLib.awsDashSdkLibStrings.ExecutionTimedOut | awsDashSdkLib.awsDashSdkLibStrings.FailStateEntered | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionScheduleFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionScheduled | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionStartFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionStarted | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionSucceeded | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionTimedOut | awsDashSdkLib.awsDashSdkLibStrings.SucceedStateEntered | awsDashSdkLib.awsDashSdkLibStrings.SucceedStateExited | awsDashSdkLib.awsDashSdkLibStrings.TaskStateAborted | awsDashSdkLib.awsDashSdkLibStrings.TaskStateEntered | awsDashSdkLib.awsDashSdkLibStrings.TaskStateExited | awsDashSdkLib.awsDashSdkLibStrings.PassStateEntered | awsDashSdkLib.awsDashSdkLibStrings.PassStateExited | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateAborted | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateEntered | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateExited | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateFailed | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateStarted | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateSucceeded | awsDashSdkLib.awsDashSdkLibStrings.WaitStateAborted | awsDashSdkLib.awsDashSdkLibStrings.WaitStateEntered | awsDashSdkLib.awsDashSdkLibStrings.WaitStateExited | java.lang.String
+  type HistoryEventType = awsDashSdkLib.awsDashSdkLibStrings.ActivityFailed | awsDashSdkLib.awsDashSdkLibStrings.ActivityScheduleFailed | awsDashSdkLib.awsDashSdkLibStrings.ActivityScheduled | awsDashSdkLib.awsDashSdkLibStrings.ActivityStarted | awsDashSdkLib.awsDashSdkLibStrings.ActivitySucceeded | awsDashSdkLib.awsDashSdkLibStrings.ActivityTimedOut | awsDashSdkLib.awsDashSdkLibStrings.ChoiceStateEntered | awsDashSdkLib.awsDashSdkLibStrings.ChoiceStateExited | awsDashSdkLib.awsDashSdkLibStrings.TaskFailed | awsDashSdkLib.awsDashSdkLibStrings.TaskScheduled | awsDashSdkLib.awsDashSdkLibStrings.TaskStartFailed | awsDashSdkLib.awsDashSdkLibStrings.TaskStarted | awsDashSdkLib.awsDashSdkLibStrings.TaskSubmitFailed | awsDashSdkLib.awsDashSdkLibStrings.TaskSubmitted | awsDashSdkLib.awsDashSdkLibStrings.TaskSucceeded | awsDashSdkLib.awsDashSdkLibStrings.TaskTimedOut | awsDashSdkLib.awsDashSdkLibStrings.ExecutionFailed | awsDashSdkLib.awsDashSdkLibStrings.ExecutionStarted | awsDashSdkLib.awsDashSdkLibStrings.ExecutionSucceeded | awsDashSdkLib.awsDashSdkLibStrings.ExecutionAborted | awsDashSdkLib.awsDashSdkLibStrings.ExecutionTimedOut | awsDashSdkLib.awsDashSdkLibStrings.FailStateEntered | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionScheduleFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionScheduled | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionStartFailed | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionStarted | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionSucceeded | awsDashSdkLib.awsDashSdkLibStrings.LambdaFunctionTimedOut | awsDashSdkLib.awsDashSdkLibStrings.SucceedStateEntered | awsDashSdkLib.awsDashSdkLibStrings.SucceedStateExited | awsDashSdkLib.awsDashSdkLibStrings.TaskStateAborted | awsDashSdkLib.awsDashSdkLibStrings.TaskStateEntered | awsDashSdkLib.awsDashSdkLibStrings.TaskStateExited | awsDashSdkLib.awsDashSdkLibStrings.PassStateEntered | awsDashSdkLib.awsDashSdkLibStrings.PassStateExited | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateAborted | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateEntered | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateExited | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateFailed | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateStarted | awsDashSdkLib.awsDashSdkLibStrings.ParallelStateSucceeded | awsDashSdkLib.awsDashSdkLibStrings.WaitStateAborted | awsDashSdkLib.awsDashSdkLibStrings.WaitStateEntered | awsDashSdkLib.awsDashSdkLibStrings.WaitStateExited | java.lang.String
   type Identity = java.lang.String
   type Name = java.lang.String
   type PageSize = scala.Double
   type PageToken = java.lang.String
   type ReverseOrder = scala.Boolean
+  type SensitiveCause = java.lang.String
+  type SensitiveData = java.lang.String
+  type SensitiveError = java.lang.String
   type StateMachineList = js.Array[StateMachineListItem]
   type StateMachineStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
   type TaskToken = java.lang.String

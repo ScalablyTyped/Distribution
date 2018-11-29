@@ -10,7 +10,11 @@ trait Anon_UpdateStickyRefHeights extends js.Object {
   var addSticky: js.Function1[/* sticky */ officeDashUiDashFabricDashReactLib.libStickyMod.Sticky, scala.Unit]
   var notifySubscribers: js.Function1[/* sort */ js.UndefOr[scala.Boolean], scala.Unit]
   var removeSticky: js.Function1[/* sticky */ officeDashUiDashFabricDashReactLib.libStickyMod.Sticky, scala.Unit]
-  var sortSticky: js.Function1[/* sticky */ officeDashUiDashFabricDashReactLib.libStickyMod.Sticky, scala.Unit]
+  var sortSticky: js.Function2[
+    /* sticky */ officeDashUiDashFabricDashReactLib.libStickyMod.Sticky, 
+    /* sortAgain */ js.UndefOr[scala.Boolean], 
+    scala.Unit
+  ]
   var subscribe: js.Function1[
     /* handler */ js.Function2[
       /* container */ reactLib.HTMLElement, 
@@ -19,6 +23,7 @@ trait Anon_UpdateStickyRefHeights extends js.Object {
     ], 
     scala.Unit
   ]
+  var syncScrollSticky: js.Function1[/* sticky */ officeDashUiDashFabricDashReactLib.libStickyMod.Sticky, scala.Unit]
   var unsubscribe: js.Function1[
     /* handler */ js.Function2[
       /* container */ reactLib.HTMLElement, 

@@ -60,13 +60,13 @@ object strmapNs extends js.Object {
   ] = js.native
   val singleton: js.Function2[/* k */ java.lang.String, /* a */ js.Any, fpDashTsLib.libStrMapMod.StrMap[js.Any]] = js.native
   val size: js.Function1[/* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], scala.Double] = js.native
-  val strmap: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.libStrMapMod.URI] with fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.libStrMapMod.URI] with fpDashTsLib.libTraversableMod.Traversable1[fpDashTsLib.libStrMapMod.URI] with fpDashTsLib.libCompactableMod.Compactable1[fpDashTsLib.libStrMapMod.URI] with fpDashTsLib.libFilterableMod.Filterable1[fpDashTsLib.libStrMapMod.URI] with fpDashTsLib.libWitherableMod.Witherable1[fpDashTsLib.libStrMapMod.URI] = js.native
+  val strmap: fpDashTsLib.libFunctorMod.Functor1[fpDashTsLib.libStrMapMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libStrMapMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libStrMapMod.URI] with fpDashTsLib.libCompactableMod.Compactable1[fpDashTsLib.libStrMapMod.URI] with fpDashTsLib.libFilterableMod.Filterable1[fpDashTsLib.libStrMapMod.URI] with fpDashTsLib.libWitherableMod.Witherable1[fpDashTsLib.libStrMapMod.URI] = js.native
   val toArray: js.Function1[
     /* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
     fpDashTsLib.libArrayMod.Global.Array[js.Tuple2[java.lang.String, js.Any]]
   ] = js.native
   val toUnfoldable: js.Function1[
-    /* unfoldable */ fpDashTsLib.libUnfoldableMod.Unfoldable[js.Any], 
+    /* U */ fpDashTsLib.libUnfoldableMod.Unfoldable[js.Any], 
     js.Function1[
       /* d */ fpDashTsLib.libStrMapMod.StrMap[js.Any], 
       fpDashTsLib.libHKTMod.HKT[js.Any, js.Tuple2[java.lang.String, js.Any]]

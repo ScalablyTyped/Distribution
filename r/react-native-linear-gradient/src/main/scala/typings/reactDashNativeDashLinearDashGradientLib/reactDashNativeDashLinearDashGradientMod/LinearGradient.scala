@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-linear-gradient", "LinearGradient")
 @js.native
 class LinearGradient ()
-  extends reactLib.reactMod.Component[LinearGradientProps, js.Any, js.Any]
+  extends reactLib.reactMod.Component[LinearGradientProps, js.Object, js.Any]
 

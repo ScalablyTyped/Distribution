@@ -13,6 +13,7 @@ trait Visitor[Result] extends js.Object {
   def visitBoundText(text: BoundText): Result
   def visitContent(content: Content): Result
   def visitElement(element: Element): Result
+  def visitIcu(icu: Icu): Result
   def visitReference(reference: Reference): Result
   def visitTemplate(template: Template): Result
   def visitText(text: Text): Result

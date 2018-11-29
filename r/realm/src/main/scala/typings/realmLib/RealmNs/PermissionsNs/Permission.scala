@@ -15,7 +15,7 @@ class Permission () extends js.Object {
   var canRead: scala.Boolean = js.native
   var canSetPermissions: scala.Boolean = js.native
   var canUpdate: scala.Boolean = js.native
-  var identity: java.lang.String = js.native
+  var role: Role = js.native
 }
 
 @JSGlobal("Realm.Permissions.Permission")

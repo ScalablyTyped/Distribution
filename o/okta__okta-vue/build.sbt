@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "okta__okta-vue"
-version := "1.0-dt-20181018Z-dab2a9"
+version := "1.0-dt-20181018Z-e248b9"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "vue" % "2.5.17-0b0f80",
-  "com.scalablytyped" %%% "vue-router" % "3.0.1-e5969b",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "vue" % "2.5.17-7af1a3",
+  "com.scalablytyped" %%% "vue-router" % "3.0.2-f84d67",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

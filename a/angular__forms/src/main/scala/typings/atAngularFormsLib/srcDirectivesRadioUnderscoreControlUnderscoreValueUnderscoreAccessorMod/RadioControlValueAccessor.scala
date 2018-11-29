@@ -18,9 +18,27 @@ class RadioControlValueAccessor protected ()
   var _registry: js.Any = js.native
   var _renderer: js.Any = js.native
   var _throwNameError: js.Any = js.native
+  /**
+       * @description
+       * Tracks the name of the `FormControl` bound to the directive. The name corresponds
+       * to a key in the parent `FormGroup` or `FormArray`.
+       */
   var formControlName: java.lang.String = js.native
+  /**
+       * @description
+       * Tracks the name of the radio input element.
+       */
   var name: java.lang.String = js.native
+  /**
+       * @description
+       * Tracks the value of the radio input element
+       */
   var value: js.Any = js.native
+  /**
+       * Sets the "value" on the radio input element and unchecks it.
+       *
+       * @param value
+       */
   def fireUncheck(value: js.Any): scala.Unit = js.native
   /**
        * A callback method that performs custom clean-up, invoked immediately
@@ -37,7 +55,15 @@ class RadioControlValueAccessor protected ()
        */
   /* CompleteClass */
   override def ngOnInit(): scala.Unit = js.native
+  /**
+       * @description
+       * The registered callback function called when a change event occurs on the input element.
+       */
   def onChange(): scala.Unit = js.native
+  /**
+       * @description
+       * The registered callback function called when a blur event occurs on the input element.
+       */
   def onTouched(): scala.Unit = js.native
   /**
        * @description
@@ -74,6 +100,12 @@ class RadioControlValueAccessor protected ()
        */
   /* CompleteClass */
   override def registerOnChange(fn: js.Any): scala.Unit = js.native
+  /**
+       * @description
+       * Registers a function called when the control value changes.
+       *
+       * @param fn The callback function
+       */
   def registerOnChange(fn: js.Function1[/* _ */ js.Any, js.Object]): scala.Unit = js.native
   /**
        * @description
@@ -108,7 +140,18 @@ class RadioControlValueAccessor protected ()
        */
   /* CompleteClass */
   override def registerOnTouched(fn: js.Any): scala.Unit = js.native
+  /**
+       * @description
+       * Registers a function called when the control is touched.
+       *
+       * @param fn The callback function
+       */
   def registerOnTouched(fn: js.Function0[js.Object]): scala.Unit = js.native
+  /**
+       * Sets the "disabled" property on the input element.
+       *
+       * @param isDisabled The disabled value
+       */
   @JSName("setDisabledState")
   def setDisabledState_MRadioControlValueAccessor(isDisabled: scala.Boolean): scala.Unit = js.native
   /**

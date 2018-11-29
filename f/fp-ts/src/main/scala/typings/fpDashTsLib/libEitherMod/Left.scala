@@ -16,29 +16,38 @@ class Left[L, A] protected () extends js.Object {
   val value: L = js.native
   def alt(fy: Either[L, A]): Either[L, A] = js.native
   def ap[B](fab: Either[L, js.Function1[/* a */ A, B]]): Either[L, B] = js.native
+  /**
+       * Flipped version of {@link ap}
+       */
   def `ap_`[B, C](`this`: Either[L, js.Function1[/* b */ B, C]], fb: Either[L, B]): Either[L, C] = js.native
   def bimap[V, B](f: js.Function1[/* l */ L, V], g: js.Function1[/* a */ A, B]): Either[V, B] = js.native
   /** Binds the given function across `Right` */
   def chain[B](f: js.Function1[/* a */ A, Either[L, B]]): Either[L, B] = js.native
   def extend[B](f: js.Function1[/* ea */ Either[L, A], B]): Either[L, B] = js.native
+  def filterOrElse(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: L): Either[L, A] = js.native
+  def filterOrElseL(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: js.Function1[/* a */ A, L]): Either[L, A] = js.native
+  /**
+       * Lazy version of {@link filterOrElse}
+       * @since 1.3.0
+       */
+  @JSName("filterOrElseL")
+  def filterOrElseL_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: js.Function1[/* a */ A, L]): Either[L, B] = js.native
   /**
        * Returns `Right` with the existing value of `Right` if this is a `Right` and the given predicate `p` holds for the
        * right value, returns `Left(zero)` if this is a `Right` and the given predicate `p` does not hold for the right
        * value, returns `Left` with the existing value of `Left` if this is a `Left`.
        *
-       * ```ts
-       * right(12).filterOrElse(n => n > 10, -1) // right(12)
-       * right(7).filterOrElse(n => n > 10, -1)  // left(-1)
-       * left(12).filterOrElse(n => n > 10, -1)  // left(12)
-       * ```
+       * @example
+       * import { right, left } from 'fp-ts/lib/Either'
+       *
+       * assert.deepEqual(right(12).filterOrElse(n => n > 10, -1), right(12))
+       * assert.deepEqual(right(7).filterOrElse(n => n > 10, -1), left(-1))
+       * assert.deepEqual(left(12).filterOrElse(n => n > 10, -1), left(12))
+       *
        * @since 1.3.0
        */
-  def filterOrElse(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: L): Either[L, A] = js.native
-  /**
-       * Lazy version of {@link filterOrElse}
-       * @since 1.3.0
-       */
-  def filterOrElseL(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: js.Function1[/* a */ A, L]): Either[L, A] = js.native
+  @JSName("filterOrElse")
+  def filterOrElse_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: L): Either[L, B] = js.native
   /** Applies a function to each case in the data structure */
   def fold[B](whenLeft: js.Function1[/* l */ L, B], whenRight: js.Function1[/* a */ A, B]): B = js.native
   /** Returns the value from this `Right` or the given argument if this is a `Left` */
@@ -56,21 +65,27 @@ class Left[L, A] protected () extends js.Object {
   def mapLeft[M](f: js.Function1[/* l */ L, M]): Either[M, A] = js.native
   /**
        * Lazy version of {@link alt}
-       * @since 1.6.0
-       * @param {(l: L) => Either<M, A>} fy - thunk
+       *
        * @example
+       * import { right } from 'fp-ts/lib/Either'
+       *
        * assert.deepEqual(right(1).orElse(() => right(2)), right(1))
-       * @returns {Either<M, A>}
+       *
+       * @since 1.6.0
        */
   def orElse[M](fy: js.Function1[/* l */ L, Either[M, A]]): Either[M, A] = js.native
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native
   /**
+       * Use {@link filterOrElse} instead
        * @since 1.6.0
+       * @deprecated
        */
   def refineOrElse[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: L): Either[L, B] = js.native
   /**
        * Lazy version of {@link refineOrElse}
+       * Use {@link filterOrElseL} instead
        * @since 1.6.0
+       * @deprecated
        */
   def refineOrElseL[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: js.Function1[/* a */ A, L]): Either[L, B] = js.native
   /** Swaps the disjunction values */

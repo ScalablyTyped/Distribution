@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 trait UploadOptions extends js.Object {
   var chunkSize: js.UndefOr[scala.Double] = js.undefined
   var endpoint: java.lang.String
-  var fingerprint: js.UndefOr[java.lang.String] = js.undefined
+  var fingerprint: js.UndefOr[
+    js.Function2[/* file */ stdLib.File, /* options */ js.UndefOr[UploadOptions], java.lang.String]
+  ] = js.undefined
   var headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var metadata: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var onChunkComplete: js.UndefOr[

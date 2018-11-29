@@ -46,6 +46,14 @@ trait ServerAuthSchemeObject extends js.Object {
     ]
   ] = js.undefined
   /**
+       * a method used to verify the authentication credentials provided
+       * are still valid (e.g. not expired or revoked after the initial authentication).
+       * the method throws an `Error` when the credentials passed are no longer valid (e.g. expired or
+       * revoked). Note that the method does not have access to the original request, only to the
+       * credentials and artifacts produced by the `authenticate()` method.
+       */
+  var verify: js.UndefOr[js.Function1[/* auth */ RequestAuth, stdLib.Promise[scala.Unit]]] = js.undefined
+  /**
        * A lifecycle method function called for each incoming request configured with the authentication scheme. The
        * method is provided with two special toolkit methods for returning an authenticated or an unauthenticate result:
        * * h.authenticated() - indicate request authenticated successfully.

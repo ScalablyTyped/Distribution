@@ -38,7 +38,7 @@ abstract class Injector () extends js.Object {
   def get[T](
     token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T],
     notFoundValue: T,
-    flags: InjectFlags
+    flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
   ): T = js.native
   /**
        * Retrieves an instance from the injector based on the provided token.
@@ -57,7 +57,11 @@ abstract class Injector () extends js.Object {
        * @returns The instance from the injector if defined, otherwise the `notFoundValue`.
        * @throws When the `notFoundValue` is `undefined` or `Injector.THROW_IF_NOT_FOUND`.
        */
-  def get[T](token: atAngularCoreLib.srcTypeMod.Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
+  def get[T](
+    token: atAngularCoreLib.srcTypeMod.Type[T],
+    notFoundValue: T,
+    flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
+  ): T = js.native
 }
 
 @JSImport("@angular/core/src/di/injector", "Injector")
@@ -65,6 +69,7 @@ abstract class Injector () extends js.Object {
 object Injector extends js.Object {
   var NULL: atAngularCoreLib.srcDiInjectorMod.Injector = js.native
   var THROW_IF_NOT_FOUND: js.Object = js.native
+  /** @nocollapse */
   var ngInjectableDef: scala.Nothing = js.native
   def create(options: atAngularCoreLib.Anon_Name): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
   /**

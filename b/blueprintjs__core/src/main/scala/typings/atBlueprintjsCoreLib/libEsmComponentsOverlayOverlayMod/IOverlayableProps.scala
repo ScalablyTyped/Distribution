@@ -48,6 +48,11 @@ trait IOverlayableProps extends IOverlayLifecycleProps {
     ]
   ] = js.undefined
   /**
+       * Space-delimited string of class names applied to the `Portal` element if
+       * `usePortal={true}`.
+       */
+  var portalClassName: js.UndefOr[java.lang.String] = js.undefined
+  /**
        * The container element into which the overlay renders its contents, when `usePortal` is `true`.
        * This prop is ignored if `usePortal` is `false`.
        * @default document.body

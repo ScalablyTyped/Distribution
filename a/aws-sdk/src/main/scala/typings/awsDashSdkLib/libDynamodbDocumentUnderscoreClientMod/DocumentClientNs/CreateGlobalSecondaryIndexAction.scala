@@ -22,6 +22,6 @@ trait CreateGlobalSecondaryIndexAction extends js.Object {
   /**
        * Represents the provisioned throughput settings for the specified global secondary index. For current minimum and maximum provisioned throughput values, see Limits in the Amazon DynamoDB Developer Guide.
        */
-  var ProvisionedThroughput: ProvisionedThroughput
+  var ProvisionedThroughput: js.UndefOr[ProvisionedThroughput] = js.undefined
 }
 

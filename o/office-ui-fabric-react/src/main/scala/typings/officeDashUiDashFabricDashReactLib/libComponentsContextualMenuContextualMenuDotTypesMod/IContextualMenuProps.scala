@@ -10,13 +10,18 @@ trait IContextualMenuProps
   extends atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[IContextualMenu]
      with officeDashUiDashFabricDashReactLib.libUtilitiesDecoratorsWithResponsiveModeMod.IWithResponsiveModeState {
   /**
+       * If true the positioning logic will prefer to flip edges rather than to nudge the rectangle to fit within bounds,
+       * thus making sure the element aligns perfectly with target's alignment edge
+       */
+  var alignTargetEdge: js.UndefOr[scala.Boolean] = js.undefined
+  /**
        * Aria label for accessibility for the ContextualMenu.
        * If none specified no aria label will be applied to the ContextualMenu.
        */
   var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The width of the beak.
-       * @default 16
+       * @defaultvalue 16
        */
   var beakWidth: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -36,7 +41,7 @@ trait IContextualMenuProps
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Method to override the render of the individual menu items
-       * @default ContextualMenuItem
+       * @defaultvalue ContextualMenuItem
        */
   var contextualMenuItemAs: js.UndefOr[
     (reactLib.reactMod.ReactNs.ComponentClass[
@@ -49,25 +54,25 @@ trait IContextualMenuProps
   /**
        * If true the position returned will have the menu element cover the target.
        * If false then it will position next to the target;
-       * @default false
+       * @defaultvalue false
        */
   var coverTarget: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * If true, the contextual menu will not be updated until
        * focus enters the menu via other means. This will only result
        * in different behavior when shouldFocusOnMount = false
-       * @default null
+       * @defaultvalue null
        */
   var delayUpdateFocusOnHover: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * How the element should be positioned
-       * @default DirectionalHint.bottomAutoEdge
+       * @defaultvalue DirectionalHint.bottomAutoEdge
        */
   var directionalHint: js.UndefOr[officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
   /**
        * If true the position will not change sides in an attempt to fit the ContextualMenu within bounds.
        * It will still attempt to align it to whatever bounds are given.
-       * @default false
+       * @defaultvalue false
        */
   var directionalHintFixed: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -77,27 +82,28 @@ trait IContextualMenuProps
   var directionalHintForRTL: js.UndefOr[officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
   /**
        * If true do not render on a new layer. If false render on a new layer.
-       * @default false
+       * @defaultvalue false
        */
   var doNotLayer: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Props to pass down to the FocusZone.
        * NOTE: the default FocusZoneDirection will be used unless a direction
        * is specified in the focusZoneProps (even if other focusZoneProps are defined)
-       * @default {direction: FocusZoneDirection.vertical}
+       * @defaultvalue \{direction: FocusZoneDirection.vertical\}
        */
   var focusZoneProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsFocusZoneFocusZoneDotTypesMod.IFocusZoneProps
   ] = js.undefined
   /**
        * The gap between the ContextualMenu and the target
-       * @default 0
+       * @defaultvalue 0
        */
   var gapSpace: js.UndefOr[scala.Double] = js.undefined
   /**
        * Method to provide the classnames to style the contextual menu. Default value is the getMenuClassnames func
        * defined in ContextualMenu.classnames.
-       * @deprecated Use `styles` prop of `IContextualMenuProps` to leverage mergeStyle API.
+       * Deprecated, use `styles` prop of `IContextualMenuProps` to leverage mergeStyles API.
+       * @deprecated Use `styles` prop of `IContextualMenuProps` to leverage mergeStyles API.
        */
   var getMenuClassNames: js.UndefOr[
     js.Function2[
@@ -129,12 +135,12 @@ trait IContextualMenuProps
   var isSubMenu: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Collection of menu items.
-       * @default []
+       * @defaultvalue []
        */
   var items: js.Array[IContextualMenuItem]
   /**
        * Aria Labelled by labelElementId
-       * @default null
+       * @defaultvalue null
        */
   var labelElementId: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -178,12 +184,12 @@ trait IContextualMenuProps
   ] = js.undefined
   /**
        * Whether to focus on the contextual menu container (as opposed to the first menu item).
-       * @default null
+       * @defaultvalue null
        */
   var shouldFocusOnContainer: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether to focus on the menu when mounted.
-       * @default true
+       * @defaultvalue true
        */
   var shouldFocusOnMount: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -214,12 +220,12 @@ trait IContextualMenuProps
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
        * If true the context menu will have a minimum width equal to the width of the target element
-       * @default false
+       * @defaultvalue false
        */
   var useTargetAsMinWidth: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * If true the context menu will render as the same width as the target element
-       * @default false
+       * @defaultvalue false
        */
   var useTargetWidth: js.UndefOr[scala.Boolean] = js.undefined
 }

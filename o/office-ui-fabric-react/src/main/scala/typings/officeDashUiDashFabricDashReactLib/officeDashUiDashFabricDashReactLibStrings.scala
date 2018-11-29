@@ -19,10 +19,19 @@ object officeDashUiDashFabricDashReactLibStrings {
   sealed trait absolute extends js.Object
   
   @js.native
+  sealed trait always extends js.Object
+  
+  @js.native
   sealed trait anySelected extends js.Object
   
   @js.native
   sealed trait assertive extends js.Object
+  
+  @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
+  sealed trait autoAdjustHeight extends js.Object
   
   @js.native
   sealed trait block extends js.Object
@@ -103,6 +112,9 @@ object officeDashUiDashFabricDashReactLibStrings {
   sealed trait isWide extends js.Object
   
   @js.native
+  sealed trait left extends js.Object
+  
+  @js.native
   sealed trait multiline extends js.Object
   
   @js.native
@@ -122,6 +134,9 @@ object officeDashUiDashFabricDashReactLibStrings {
   
   @js.native
   sealed trait resizable extends js.Object
+  
+  @js.native
+  sealed trait right extends js.Object
   
   @js.native
   sealed trait role extends js.Object
@@ -160,8 +175,11 @@ object officeDashUiDashFabricDashReactLibStrings {
   def IBaseCardProps: IBaseCardProps = "IBaseCardProps".asInstanceOf[IBaseCardProps]
   def IDetailsRowFieldsProps: IDetailsRowFieldsProps = "IDetailsRowFieldsProps".asInstanceOf[IDetailsRowFieldsProps]
   def absolute: absolute = "absolute".asInstanceOf[absolute]
+  def always: always = "always".asInstanceOf[always]
   def anySelected: anySelected = "anySelected".asInstanceOf[anySelected]
   def assertive: assertive = "assertive".asInstanceOf[assertive]
+  def auto: auto = "auto".asInstanceOf[auto]
+  def autoAdjustHeight: autoAdjustHeight = "autoAdjustHeight".asInstanceOf[autoAdjustHeight]
   def block: block = "block".asInstanceOf[block]
   def borderless: borderless = "borderless".asInstanceOf[borderless]
   def bottom: bottom = "bottom".asInstanceOf[bottom]
@@ -188,6 +206,7 @@ object officeDashUiDashFabricDashReactLibStrings {
   def inputClassName: inputClassName = "inputClassName".asInstanceOf[inputClassName]
   def isHeader: isHeader = "isHeader".asInstanceOf[isHeader]
   def isWide: isWide = "isWide".asInstanceOf[isWide]
+  def left: left = "left".asInstanceOf[left]
   def multiline: multiline = "multiline".asInstanceOf[multiline]
   def off: off = "off".asInstanceOf[off]
   def on: on = "on".asInstanceOf[on]
@@ -195,6 +214,7 @@ object officeDashUiDashFabricDashReactLibStrings {
   def relative: relative = "relative".asInstanceOf[relative]
   def required: required = "required".asInstanceOf[required]
   def resizable: resizable = "resizable".asInstanceOf[resizable]
+  def right: right = "right".asInstanceOf[right]
   def role: role = "role".asInstanceOf[role]
   def scrollableContentClassName: scrollableContentClassName = "scrollableContentClassName".asInstanceOf[scrollableContentClassName]
   def selected: selected = "selected".asInstanceOf[selected]

@@ -22,6 +22,10 @@ class Right[L, A] protected () extends js.Object {
   def extend[B](f: js.Function1[/* ea */ Either[L, A], B]): Either[L, B] = js.native
   def filterOrElse(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: L): Either[L, A] = js.native
   def filterOrElseL(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: js.Function1[/* a */ A, L]): Either[L, A] = js.native
+  @JSName("filterOrElseL")
+  def filterOrElseL_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: js.Function1[/* a */ A, L]): Either[L, B] = js.native
+  @JSName("filterOrElse")
+  def filterOrElse_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: L): Either[L, B] = js.native
   def fold[B](whenLeft: js.Function1[/* l */ L, B], whenRight: js.Function1[/* a */ A, B]): B = js.native
   def getOrElse(a: A): A = js.native
   def getOrElseL(f: js.Function1[/* l */ L, A]): A = js.native

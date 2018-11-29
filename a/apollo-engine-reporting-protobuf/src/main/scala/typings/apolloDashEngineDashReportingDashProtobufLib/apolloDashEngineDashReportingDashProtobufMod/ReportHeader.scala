@@ -22,6 +22,12 @@ class ReportHeader () extends IReportHeader {
   /** ReportHeader runtimeVersion. */
   @JSName("runtimeVersion")
   var runtimeVersion_ReportHeader: java.lang.String = js.native
+  /** ReportHeader schemaHash. */
+  @JSName("schemaHash")
+  var schemaHash_ReportHeader: java.lang.String = js.native
+  /** ReportHeader schemaTag. */
+  @JSName("schemaTag")
+  var schemaTag_ReportHeader: java.lang.String = js.native
   /** ReportHeader serviceVersion. */
   @JSName("serviceVersion")
   var serviceVersion_ReportHeader: java.lang.String = js.native

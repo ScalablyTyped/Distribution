@@ -51,8 +51,8 @@ trait IPivotItemProps
     officeDashUiDashFabricDashReactLib.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
   ] = js.undefined
   /**
-       * The text displayed of each pivot link - renaming to 'headerText'.
-       * @deprecated
+       * The text displayed of each pivot link - renaming to `headerText`.
+       * @deprecated Use `headerText` instead.
        */
   var linkText: js.UndefOr[java.lang.String] = js.undefined
   /**

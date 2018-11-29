@@ -25,7 +25,7 @@ trait IInputGroupProps
        * before the user's cursor.
        */
   var leftIcon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /** Placeholder text in the absence of any value. */
   var placeholder: js.UndefOr[java.lang.String] = js.undefined

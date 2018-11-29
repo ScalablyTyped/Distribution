@@ -56,7 +56,8 @@ trait IContextualMenuItem
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Method to provide the classnames to style the individual items inside a menu.
-       * @deprecated Use `styles` prop of `IContextualMenuItemProps` to leverage mergeStyle API.
+       * Deprecated, use `styles` prop of `IContextualMenuItemProps` to leverage mergeStyles API.
+       * @deprecated Use `styles` prop of `IContextualMenuItemProps` to leverage mergeStyles API.
        */
   var getItemClassNames: js.UndefOr[
     js.Function11[
@@ -77,7 +78,7 @@ trait IContextualMenuItem
   /**
        * Method to provide the classnames to style the Vertical Divider of a split button inside a menu.
        * Default value is the getVerticalDividerClassnames func defined in ContextualMenu.classnames
-       * @default getSplitButtonVerticalDividerClassNames
+       * @defaultvalue getSplitButtonVerticalDividerClassNames
        */
   var getSplitButtonVerticalDividerClassNames: js.UndefOr[
     js.Function1[
@@ -119,6 +120,7 @@ trait IContextualMenuItem
   ] = js.undefined
   /**
        * Text description for the menu item to display
+       * Deprecated, use `text` instead.
        * @deprecated Use `text` instead.
        */
   var name: js.UndefOr[java.lang.String] = js.undefined
@@ -199,8 +201,9 @@ trait IContextualMenuItem
   var split: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Additional styles to apply to the menu item
+       * Deprecated, use `styles` instead.
        * @defaultvalue undefined
-       * @deprecated in favor of the styles prop to leverage mergeStyles API.
+       * @deprecated in favor of the `styles` prop to leverage mergeStyles API.
        */
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /**

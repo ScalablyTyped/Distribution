@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript", "ClassificationTypeNames")
 @js.native
 object ClassificationTypeNames extends js.Object {
+  /* "bigint" */ val bigintLiteral: typescriptLib.typescriptMod.tsNs.ClassificationTypeNames.bigintLiteral with java.lang.String = js.native
   /* "class name" */ val className: typescriptLib.typescriptMod.tsNs.ClassificationTypeNames.className with java.lang.String = js.native
   /* "comment" */ val comment: typescriptLib.typescriptMod.tsNs.ClassificationTypeNames.comment with java.lang.String = js.native
   /* "doc comment tag name" */ val docCommentTagName: typescriptLib.typescriptMod.tsNs.ClassificationTypeNames.docCommentTagName with java.lang.String = js.native

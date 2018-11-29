@@ -26,6 +26,26 @@ object RedshiftNs extends js.Object {
   }
   
   
+  trait AccountAttribute extends js.Object {
+    /**
+         * The name of the attribute.
+         */
+    var AttributeName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A list of attribute values.
+         */
+    var AttributeValues: js.UndefOr[AttributeValueList] = js.undefined
+  }
+  
+  
+  trait AccountAttributeList extends js.Object {
+    /**
+         * A list of attributes assigned to an account.
+         */
+    var AccountAttributes: js.UndefOr[AttributeList] = js.undefined
+  }
+  
+  
   trait AccountWithRestoreAccess extends js.Object {
     /**
          * The identifier of an AWS support account authorized to restore a snapshot. For AWS support, the identifier is amazon-redshift-support. 
@@ -35,6 +55,14 @@ object RedshiftNs extends js.Object {
          * The identifier of an AWS customer account authorized to restore a snapshot.
          */
     var AccountId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait AttributeValueTarget extends js.Object {
+    /**
+         * The value of the attribute.
+         */
+    var AttributeValue: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -93,6 +121,62 @@ object RedshiftNs extends js.Object {
   }
   
   
+  trait BatchDeleteClusterSnapshotsRequest extends js.Object {
+    /**
+         * A list of identifiers for the snapshots that you want to delete.
+         */
+    var Identifiers: DeleteClusterSnapshotMessageList
+  }
+  
+  
+  trait BatchDeleteClusterSnapshotsResult extends js.Object {
+    /**
+         * A list of any errors returned.
+         */
+    var Errors: js.UndefOr[BatchSnapshotOperationErrorList] = js.undefined
+    /**
+         * A list of the snapshot identifiers that were deleted. 
+         */
+    var Resources: js.UndefOr[SnapshotIdentifierList] = js.undefined
+  }
+  
+  
+  trait BatchModifyClusterSnapshotsMessage extends js.Object {
+    /**
+         * A boolean value indicating whether to override an exception if the retention period has passed. 
+         */
+    var Force: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The number of days that a manual snapshot is retained. If you specify the value -1, the manual snapshot is retained indefinitely. The number must be either -1 or an integer between 1 and 3,653. If you decrease the manual snapshot retention period from its current value, existing manual snapshots that fall outside of the new retention period will return an error. If you want to suppress the errors and delete the snapshots, use the force option. 
+         */
+    var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+         * A list of snapshot identifiers you want to modify.
+         */
+    var SnapshotIdentifierList: SnapshotIdentifierList
+  }
+  
+  
+  trait BatchModifyClusterSnapshotsOutputMessage extends js.Object {
+    /**
+         * A list of any errors returned.
+         */
+    var Errors: js.UndefOr[BatchSnapshotOperationErrors] = js.undefined
+    /**
+         * A list of the snapshots that were modified.
+         */
+    var Resources: js.UndefOr[SnapshotIdentifierList] = js.undefined
+  }
+  
+  
+  trait CancelResizeMessage extends js.Object {
+    /**
+         * The unique identifier for the cluster that you want to cancel a resize operation for.
+         */
+    var ClusterIdentifier: java.lang.String
+  }
+  
+  
   trait ClientApiVersions extends js.Object {
     /**
          * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
@@ -103,7 +187,7 @@ object RedshiftNs extends js.Object {
   
   trait Cluster extends js.Object {
     /**
-         * A Boolean value that, if true, indicates that major version upgrades will be applied automatically to the cluster during the maintenance window. 
+         * A boolean value that, if true, indicates that major version upgrades will be applied automatically to the cluster during the maintenance window. 
          */
     var AllowVersionUpgrade: js.UndefOr[scala.Boolean] = js.undefined
     /**
@@ -147,7 +231,7 @@ object RedshiftNs extends js.Object {
          */
     var ClusterSnapshotCopyStatus: js.UndefOr[ClusterSnapshotCopyStatus] = js.undefined
     /**
-         *  The current state of the cluster. Possible values are the following:    available     creating     deleting     final-snapshot     hardware-failure     incompatible-hsm     incompatible-network     incompatible-parameters     incompatible-restore     modifying     rebooting     renaming     resizing     rotating-keys     storage-full     updating-hsm   
+         *  The current state of the cluster. Possible values are the following:    available     available, prep-for-resize     available, resize-cleanup     cancelling-resize     creating     deleting     final-snapshot     hardware-failure     incompatible-hsm     incompatible-network     incompatible-parameters     incompatible-restore     modifying     rebooting     renaming     resizing     rotating-keys     storage-full     updating-hsm   
          */
     var ClusterStatus: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -162,16 +246,21 @@ object RedshiftNs extends js.Object {
          * The name of the initial database that was created when the cluster was created. This same name is returned for the life of the cluster. If an initial database was not specified, a database named devdev was created by default. 
          */
     var DBName: js.UndefOr[java.lang.String] = js.undefined
+    var DataTransferProgress: js.UndefOr[DataTransferProgress] = js.undefined
+    /**
+         * Describes a group of DeferredMaintenanceWindow objects.
+         */
+    var DeferredMaintenanceWindows: js.UndefOr[DeferredMaintenanceWindowsList] = js.undefined
     /**
          * The status of the elastic IP (EIP) address.
          */
     var ElasticIpStatus: js.UndefOr[ElasticIpStatus] = js.undefined
     /**
-         * Indicates the number of nodes the cluster can be resized to with the elastic resize method. 
+         * The number of nodes that you can resize the cluster to with the elastic resize method. 
          */
     var ElasticResizeNumberOfNodeOptions: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * A Boolean value that, if true, indicates that data in the cluster is encrypted at rest.
+         * A boolean value that, if true, indicates that data in the cluster is encrypted at rest.
          */
     var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
     /**
@@ -198,6 +287,10 @@ object RedshiftNs extends js.Object {
          * The name of the maintenance track for the cluster.
          */
     var MaintenanceTrackName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The default number of days to retain a manual snapshot. If the value is -1, the snapshot is retained indefinitely. This setting doesn't change the retention period of existing snapshots. The value must be either -1 or an integer between 1 and 3,653.
+         */
+    var ManualSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined
     /**
          * The master user name for the cluster. This name is used to connect to the database that is specified in the DBName parameter. 
          */
@@ -227,13 +320,25 @@ object RedshiftNs extends js.Object {
          */
     var PreferredMaintenanceWindow: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * A Boolean value that, if true, indicates that the cluster can be accessed from a public network.
+         * A boolean value that, if true, indicates that the cluster can be accessed from a public network.
          */
     var PubliclyAccessible: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Returns the following:   AllowCancelResize: a boolean value indicating if the resize operation can be cancelled.   ResizeType: Returns ClassicResize  
+         */
+    var ResizeInfo: js.UndefOr[ResizeInfo] = js.undefined
     /**
          * A value that describes the status of a cluster restore action. This parameter returns null if the cluster was not created by restoring a snapshot.
          */
     var RestoreStatus: js.UndefOr[RestoreStatus] = js.undefined
+    /**
+         * A unique identifier for the cluster snapshot schedule.
+         */
+    var SnapshotScheduleIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The current state of the cluster snapshot schedule.
+         */
+    var SnapshotScheduleState: js.UndefOr[ScheduleState] = js.undefined
     /**
          * The list of tags for the cluster.
          */
@@ -467,6 +572,10 @@ object RedshiftNs extends js.Object {
          */
     var DestinationRegion: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The number of days that automated snapshots are retained in the destination region after they are copied from a source region. If the value is -1, the manual snapshot is retained indefinitely.  The value must be either -1 or an integer between 1 and 3,653.
+         */
+    var ManualSnapshotRetentionPeriod: js.UndefOr[Integer] = js.undefined
+    /**
          * The number of days that automated snapshots are retained in the destination region after they are copied from a source region.
          */
     var RetentionPeriod: js.UndefOr[Long] = js.undefined
@@ -558,6 +667,10 @@ object RedshiftNs extends js.Object {
   
   
   trait CopyClusterSnapshotMessage extends js.Object {
+    /**
+         * The number of days that a manual snapshot is retained. If the value is -1, the manual snapshot is retained indefinitely.  The value must be either -1 or an integer between 1 and 3,653. The default value is -1.
+         */
+    var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
     /**
          * The identifier of the cluster the source snapshot was created from. This parameter is required if your IAM user has a policy containing a snapshot resource element that specifies anything other than * for the cluster name. Constraints:   Must be the identifier for a valid cluster.  
          */
@@ -656,6 +769,10 @@ object RedshiftNs extends js.Object {
          */
     var MaintenanceTrackName: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The default number of days to retain a manual snapshot. If the value is -1, the snapshot is retained indefinitely. This setting doesn't change the retention period of existing snapshots. The value must be either -1 or an integer between 1 and 3,653.
+         */
+    var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
+    /**
          * The password associated with the master user account for the cluster that is being created. Constraints:   Must be between 8 and 64 characters in length.   Must contain at least one uppercase letter.   Must contain at least one lowercase letter.   Must contain one number.   Can be any printable ASCII character (ASCII code 33 to 126) except ' (single quote), " (double quote), \, /, @, or space.  
          */
     var MasterUserPassword: java.lang.String
@@ -683,6 +800,10 @@ object RedshiftNs extends js.Object {
          * If true, the cluster can be accessed from a public network. 
          */
     var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+         * A unique identifier for the snapshot schedule.
+         */
+    var SnapshotScheduleIdentifier: js.UndefOr[java.lang.String] = js.undefined
     /**
          * A list of tag instances.
          */
@@ -751,6 +872,10 @@ object RedshiftNs extends js.Object {
          */
     var ClusterIdentifier: java.lang.String
     /**
+         * The number of days that a manual snapshot is retained. If the value is -1, the manual snapshot is retained indefinitely.  The value must be either -1 or an integer between 1 and 3,653. The default value is -1.
+         */
+    var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
+    /**
          * A unique identifier for the snapshot that you are requesting. This identifier must be unique for all snapshots within the AWS account. Constraints:   Cannot be null, empty, or blank   Must contain from 1 to 255 alphanumeric characters or hyphens   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens   Example: my-snapshot-id 
          */
     var SnapshotIdentifier: java.lang.String
@@ -793,11 +918,11 @@ object RedshiftNs extends js.Object {
   
   trait CreateEventSubscriptionMessage extends js.Object {
     /**
-         * A Boolean value; set to true to activate the subscription, set to false to create the subscription but not active it. 
+         * A boolean value; set to true to activate the subscription, and set to false to create the subscription but not activate it. 
          */
     var Enabled: js.UndefOr[BooleanOptional] = js.undefined
     /**
-         * Specifies the Amazon Redshift event categories to be published by the event notification subscription. Values: Configuration, Management, Monitoring, Security
+         * Specifies the Amazon Redshift event categories to be published by the event notification subscription. Values: configuration, management, monitoring, security
          */
     var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
     /**
@@ -907,6 +1032,25 @@ object RedshiftNs extends js.Object {
   }
   
   
+  trait CreateSnapshotScheduleMessage extends js.Object {
+    var DryRun: js.UndefOr[BooleanOptional] = js.undefined
+    var NextInvocations: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+         * The definition of the snapshot schedule. The definition is made up of schedule expressions, for example "cron(30 12 *)" or "rate(12 hours)". 
+         */
+    var ScheduleDefinitions: js.UndefOr[ScheduleDefinitionList] = js.undefined
+    /**
+         * The description of the snapshot schedule.
+         */
+    var ScheduleDescription: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A unique identifier for a snapshot schedule. Only alphanumeric characters are allowed for the identifier.
+         */
+    var ScheduleIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var Tags: js.UndefOr[TagList] = js.undefined
+  }
+  
+  
   trait CreateTagsMessage extends js.Object {
     /**
          * The Amazon Resource Name (ARN) to which you want to add the tag or tags. For example, arn:aws:redshift:us-east-1:123456789:cluster:t1. 
@@ -916,6 +1060,46 @@ object RedshiftNs extends js.Object {
          * One or more name/value pairs to add as tags to the specified resource. Each tag name is passed in with the parameter Key and the corresponding value is passed in with the parameter Value. The Key and Value parameters are separated by a comma (,). Separate multiple tags with a space. For example, --tags "Key"="owner","Value"="admin" "Key"="environment","Value"="test" "Key"="version","Value"="1.0". 
          */
     var Tags: TagList
+  }
+  
+  
+  trait CustomerStorageMessage extends js.Object {
+    /**
+         * The total amount of storage currently used for snapshots.
+         */
+    var TotalBackupSizeInMegaBytes: js.UndefOr[Double] = js.undefined
+    /**
+         * The total amount of storage currently provisioned.
+         */
+    var TotalProvisionedStorageInMegaBytes: js.UndefOr[Double] = js.undefined
+  }
+  
+  
+  trait DataTransferProgress extends js.Object {
+    /**
+         * Describes the data transfer rate in MB's per second.
+         */
+    var CurrentRateInMegaBytesPerSecond: js.UndefOr[DoubleOptional] = js.undefined
+    /**
+         * Describes the total amount of data that has been transfered in MB's.
+         */
+    var DataTransferredInMegaBytes: js.UndefOr[Long] = js.undefined
+    /**
+         * Describes the number of seconds that have elapsed during the data transfer.
+         */
+    var ElapsedTimeInSeconds: js.UndefOr[LongOptional] = js.undefined
+    /**
+         * Describes the estimated number of seconds remaining to complete the transfer.
+         */
+    var EstimatedTimeToCompletionInSeconds: js.UndefOr[LongOptional] = js.undefined
+    /**
+         * Describes the status of the cluster. While the transfer is in progress the status is transferringdata.
+         */
+    var Status: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Describes the total amount of data to be transfered in megabytes.
+         */
+    var TotalDataInMegaBytes: js.UndefOr[Long] = js.undefined
   }
   
   
@@ -935,6 +1119,22 @@ object RedshiftNs extends js.Object {
   }
   
   
+  trait DeferredMaintenanceWindow extends js.Object {
+    /**
+         *  A timestamp for the end of the time period when we defer maintenance.
+         */
+    var DeferMaintenanceEndTime: js.UndefOr[TStamp] = js.undefined
+    /**
+         * A unique identifier for the maintenance window.
+         */
+    var DeferMaintenanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  A timestamp for the beginning of the time period when we defer maintenance.
+         */
+    var DeferMaintenanceStartTime: js.UndefOr[TStamp] = js.undefined
+  }
+  
+  
   trait DeleteClusterMessage extends js.Object {
     /**
          * The identifier of the cluster to be deleted. Constraints:   Must contain lowercase characters.   Must contain from 1 to 63 alphanumeric characters or hyphens.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
@@ -944,6 +1144,10 @@ object RedshiftNs extends js.Object {
          * The identifier of the final snapshot that is to be created immediately before deleting the cluster. If this parameter is provided, SkipFinalClusterSnapshot must be false.  Constraints:   Must be 1 to 255 alphanumeric characters.   First character must be a letter.   Cannot end with a hyphen or contain two consecutive hyphens.  
          */
     var FinalClusterSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The number of days that a manual snapshot is retained. If the value is -1, the manual snapshot is retained indefinitely. The value must be either -1 or an integer between 1 and 3,653. The default value is -1.
+         */
+    var FinalClusterSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
     /**
          * Determines whether a final snapshot of the cluster is created before Amazon Redshift deletes the cluster. If true, a final cluster snapshot is not created. If false, a final cluster snapshot is created before the cluster is deleted.   The FinalClusterSnapshotIdentifier parameter must be specified if SkipFinalClusterSnapshot is false.  Default: false 
          */
@@ -978,7 +1182,7 @@ object RedshiftNs extends js.Object {
          */
     var SnapshotClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The unique identifier of the manual snapshot to be deleted. Constraints: Must be the name of an existing snapshot that is in the available state.
+         * The unique identifier of the manual snapshot to be deleted. Constraints: Must be the name of an existing snapshot that is in the available, failed, or cancelled state.
          */
     var SnapshotIdentifier: java.lang.String
   }
@@ -1029,6 +1233,14 @@ object RedshiftNs extends js.Object {
   }
   
   
+  trait DeleteSnapshotScheduleMessage extends js.Object {
+    /**
+         * A unique identifier of the snapshot schedule to delete.
+         */
+    var ScheduleIdentifier: java.lang.String
+  }
+  
+  
   trait DeleteTagsMessage extends js.Object {
     /**
          * The Amazon Resource Name (ARN) from which you want to remove the tag or tags. For example, arn:aws:redshift:us-east-1:123456789:cluster:t1. 
@@ -1038,6 +1250,14 @@ object RedshiftNs extends js.Object {
          * The tag key that you want to delete.
          */
     var TagKeys: TagKeyList
+  }
+  
+  
+  trait DescribeAccountAttributesMessage extends js.Object {
+    /**
+         * A list of attribute names.
+         */
+    var AttributeNames: js.UndefOr[AttributeNameList] = js.undefined
   }
   
   
@@ -1158,6 +1378,7 @@ object RedshiftNs extends js.Object {
          * The type of snapshots for which you are requesting information. By default, snapshots of all types are returned. Valid Values: automated | manual 
          */
     var SnapshotType: js.UndefOr[java.lang.String] = js.undefined
+    var SortingEntities: js.UndefOr[SnapshotSortingEntityList] = js.undefined
     /**
          * A value that requests only snapshots created at or after the specified time. The time value is specified in ISO 8601 format. For more information about ISO 8601, go to the ISO8601 Wikipedia page.  Example: 2012-07-16T18:00:00Z 
          */
@@ -1482,6 +1703,46 @@ object RedshiftNs extends js.Object {
   }
   
   
+  trait DescribeSnapshotSchedulesMessage extends js.Object {
+    /**
+         * The unique identifier for the cluster whose snapshot schedules you want to view.
+         */
+    var ClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A value that indicates the starting point for the next set of response records in a subsequent request. If a value is returned in a response, you can retrieve the next set of records by providing this returned marker value in the marker parameter and retrying the command. If the marker field is empty, all response records have been retrieved for the request.
+         */
+    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The maximum number or response records to return in each call. If the number of remaining response records exceeds the specified MaxRecords value, a value is returned in a marker field of the response. You can retrieve the next set of records by retrying the command with the returned marker value.
+         */
+    var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+         * A unique identifier for a snapshot schedule.
+         */
+    var ScheduleIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The key value for a snapshot schedule tag.
+         */
+    var TagKeys: js.UndefOr[TagKeyList] = js.undefined
+    /**
+         * The value corresponding to the key of the snapshot schedule tag.
+         */
+    var TagValues: js.UndefOr[TagValueList] = js.undefined
+  }
+  
+  
+  trait DescribeSnapshotSchedulesOutputMessage extends js.Object {
+    /**
+         * A value that indicates the starting point for the next set of response records in a subsequent request. If a value is returned in a response, you can retrieve the next set of records by providing this returned marker value in the marker parameter and retrying the command. If the marker field is empty, all response records have been retrieved for the request.
+         */
+    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A list of SnapshotSchedules.
+         */
+    var SnapshotSchedules: js.UndefOr[SnapshotScheduleList] = js.undefined
+  }
+  
+  
   trait DescribeTableRestoreStatusMessage extends js.Object {
     /**
          * The Amazon Redshift cluster that the table is being restored to.
@@ -1605,9 +1866,13 @@ object RedshiftNs extends js.Object {
          */
     var ClusterIdentifier: java.lang.String
     /**
-         * The destination region that you want to copy snapshots to. Constraints: Must be the name of a valid region. For more information, see Regions and Endpoints in the Amazon Web Services General Reference. 
+         * The destination AWS Region that you want to copy snapshots to. Constraints: Must be the name of a valid AWS Region. For more information, see Regions and Endpoints in the Amazon Web Services General Reference. 
          */
     var DestinationRegion: java.lang.String
+    /**
+         * The number of days to retain newly copied snapshots in the destination AWS Region after they are copied from the source AWS Region. If the value is -1, the manual snapshot is retained indefinitely.  The value must be either -1 or an integer between 1 and 3,653.
+         */
+    var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
     /**
          * The number of days to retain automated snapshots in the destination region after they are copied from the source region. Default: 7. Constraints: Must be at least 1 and no more than 35.
          */
@@ -1718,7 +1983,7 @@ object RedshiftNs extends js.Object {
          */
     var CustomerAwsId: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * A Boolean value indicating whether the subscription is enabled. true indicates the subscription is enabled.
+         * A boolean value indicating whether the subscription is enabled; true indicates that the subscription is enabled.
          */
     var Enabled: js.UndefOr[scala.Boolean] = js.undefined
     /**
@@ -2014,6 +2279,39 @@ object RedshiftNs extends js.Object {
   }
   
   
+  trait ModifyClusterMaintenanceMessage extends js.Object {
+    /**
+         * A unique identifier for the cluster.
+         */
+    var ClusterIdentifier: java.lang.String
+    /**
+         * A boolean indicating whether to enable the deferred maintenance window. 
+         */
+    var DeferMaintenance: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+         * An integer indicating the duration of the maintenance window in days. If you specify a duration, you can't specify an end time. The duration must be 14 days or less.
+         */
+    var DeferMaintenanceDuration: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+         * A timestamp indicating end time for the deferred maintenance window. If you specify an end time, you can't specify a duration.
+         */
+    var DeferMaintenanceEndTime: js.UndefOr[TStamp] = js.undefined
+    /**
+         * A unique identifier for the deferred maintenance window.
+         */
+    var DeferMaintenanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A timestamp indicating the start time for the deferred maintenance window.
+         */
+    var DeferMaintenanceStartTime: js.UndefOr[TStamp] = js.undefined
+  }
+  
+  
+  trait ModifyClusterMaintenanceResult extends js.Object {
+    var Cluster: js.UndefOr[Cluster] = js.undefined
+  }
+  
+  
   trait ModifyClusterMessage extends js.Object {
     /**
          * If true, major version upgrades will be applied automatically to the cluster during the maintenance window.  Default: false 
@@ -2072,6 +2370,10 @@ object RedshiftNs extends js.Object {
          */
     var MaintenanceTrackName: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The default for number of days that a newly created manual snapshot is retained. If the value is -1, the manual snapshot is retained indefinitely. This value doesn't retroactively change the retention periods of existing manual snapshots. The value must be either -1 or an integer between 1 and 3,653. The default value is -1.
+         */
+    var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
+    /**
          * The new password for the cluster master user. This change is asynchronously applied as soon as possible. Between the time of the request and the completion of the request, the MasterUserPassword element exists in the PendingModifiedValues element of the operation response.   Operations never return the password, so this operation provides a way to regain access to the master user account for a cluster if the password is lost.  Default: Uses existing setting. Constraints:   Must be between 8 and 64 characters in length.   Must contain at least one uppercase letter.   Must contain at least one lowercase letter.   Must contain one number.   Can be any printable ASCII character (ASCII code 33 to 126) except ' (single quote), " (double quote), \, /, @, or space.  
          */
     var MasterUserPassword: js.UndefOr[java.lang.String] = js.undefined
@@ -2119,6 +2421,43 @@ object RedshiftNs extends js.Object {
   }
   
   
+  trait ModifyClusterSnapshotMessage extends js.Object {
+    /**
+         * A Boolean option to override an exception if the retention period has already passed.
+         */
+    var Force: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The number of days that a manual snapshot is retained. If the value is -1, the manual snapshot is retained indefinitely. If the manual snapshot falls outside of the new retention period, you can specify the force option to immediately delete the snapshot. The value must be either -1 or an integer between 1 and 3,653.
+         */
+    var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+         * The identifier of the snapshot whose setting you want to modify.
+         */
+    var SnapshotIdentifier: java.lang.String
+  }
+  
+  
+  trait ModifyClusterSnapshotResult extends js.Object {
+    var Snapshot: js.UndefOr[Snapshot] = js.undefined
+  }
+  
+  
+  trait ModifyClusterSnapshotScheduleMessage extends js.Object {
+    /**
+         * A unique identifier for the cluster whose snapshot schedule you want to modify. 
+         */
+    var ClusterIdentifier: java.lang.String
+    /**
+         * A boolean to indicate whether to remove the assoiciation between the cluster and the schedule.
+         */
+    var DisassociateSchedule: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+         * A unique alphanumeric identifier for the schedule that you want to associate with the cluster.
+         */
+    var ScheduleIdentifier: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait ModifyClusterSubnetGroupMessage extends js.Object {
     /**
          * The name of the subnet group to be modified.
@@ -2146,7 +2485,7 @@ object RedshiftNs extends js.Object {
          */
     var Enabled: js.UndefOr[BooleanOptional] = js.undefined
     /**
-         * Specifies the Amazon Redshift event categories to be published by the event notification subscription. Values: Configuration, Management, Monitoring, Security
+         * Specifies the Amazon Redshift event categories to be published by the event notification subscription. Values: configuration, management, monitoring, security
          */
     var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
     /**
@@ -2179,11 +2518,15 @@ object RedshiftNs extends js.Object {
   
   trait ModifySnapshotCopyRetentionPeriodMessage extends js.Object {
     /**
-         * The unique identifier of the cluster for which you want to change the retention period for automated snapshots that are copied to a destination region. Constraints: Must be the valid name of an existing cluster that has cross-region snapshot copy enabled.
+         * The unique identifier of the cluster for which you want to change the retention period for either automated or manual snapshots that are copied to a destination AWS Region. Constraints: Must be the valid name of an existing cluster that has cross-region snapshot copy enabled.
          */
     var ClusterIdentifier: java.lang.String
     /**
-         * The number of days to retain automated snapshots in the destination region after they are copied from the source region. If you decrease the retention period for automated snapshots that are copied to a destination region, Amazon Redshift will delete any existing automated snapshots that were copied to the destination region and that fall outside of the new retention period. Constraints: Must be at least 1 and no more than 35.
+         * Indicates whether to apply the snapshot retention period to newly copied manual snapshots instead of automated snapshots.
+         */
+    var Manual: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The number of days to retain automated snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this only changes the retention period of copied automated snapshots.  If you decrease the retention period for automated snapshots that are copied to a destination AWS Region, Amazon Redshift deletes any existing automated snapshots that were copied to the destination AWS Region and that fall outside of the new retention period. Constraints: Must be at least 1 and no more than 35 for automated snapshots.  If you specify the manual option, only newly copied manual snapshots will have the new retention period.  If you specify the value of -1 newly copied manual snapshots are retained indefinitely. Constraints: The number of days must be either -1 or an integer between 1 and 3,653 for manual snapshots.
          */
     var RetentionPeriod: Integer
   }
@@ -2191,6 +2534,18 @@ object RedshiftNs extends js.Object {
   
   trait ModifySnapshotCopyRetentionPeriodResult extends js.Object {
     var Cluster: js.UndefOr[Cluster] = js.undefined
+  }
+  
+  
+  trait ModifySnapshotScheduleMessage extends js.Object {
+    /**
+         * An updated list of schedule definitions. A schedule definition is made up of schedule expressions, for example, "cron(30 12 *)" or "rate(12 hours)".
+         */
+    var ScheduleDefinitions: ScheduleDefinitionList
+    /**
+         * A unique alphanumeric identifier of the schedule to modify.
+         */
+    var ScheduleIdentifier: java.lang.String
   }
   
   
@@ -2488,7 +2843,7 @@ object RedshiftNs extends js.Object {
   
   trait ResizeClusterMessage extends js.Object {
     /**
-         * A boolean value indicating whether the resize operation is using the classic resize process. If you don't provide this parameter or set the value to false the resize type is elastic. 
+         * A boolean value indicating whether the resize operation is using the classic resize process. If you don't provide this parameter or set the value to false, the resize type is elastic. 
          */
     var Classic: js.UndefOr[BooleanOptional] = js.undefined
     /**
@@ -2512,6 +2867,18 @@ object RedshiftNs extends js.Object {
   
   trait ResizeClusterResult extends js.Object {
     var Cluster: js.UndefOr[Cluster] = js.undefined
+  }
+  
+  
+  trait ResizeInfo extends js.Object {
+    /**
+         * A boolean value indicating if the resize operation can be cancelled.
+         */
+    var AllowCancelResize: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Returns the value ClassicResize.
+         */
+    var ResizeType: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -2553,7 +2920,7 @@ object RedshiftNs extends js.Object {
          */
     var ResizeType: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The status of the resize operation. Valid Values: NONE | IN_PROGRESS | FAILED | SUCCEEDED 
+         * The status of the resize operation. Valid Values: NONE | IN_PROGRESS | FAILED | SUCCEEDED | CANCELLING 
          */
     var Status: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -2640,6 +3007,7 @@ object RedshiftNs extends js.Object {
          * The name of the maintenance track for the restored cluster. When you take a snapshot, the snapshot inherits the MaintenanceTrack value from the cluster. The snapshot might be on a different track than the cluster that was the source for the snapshot. For example, suppose that you take a snapshot of a cluster that is on the current track and then change the cluster to be on the trailing track. In this case, the snapshot and the source cluster are on different tracks.
          */
     var MaintenanceTrackName: js.UndefOr[java.lang.String] = js.undefined
+    var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
     /**
          * The node type that the restored cluster will be provisioned with. Default: The node type of the cluster from which the snapshot was taken. You can modify this if you are using any DS node type. In that case, you can choose to restore into another DS node type of the same size. For example, you can restore ds1.8xlarge into ds2.8xlarge, or ds1.xlarge into ds2.xlarge. If you have a DC instance type, you must restore into that same instance type and size. In other words, you can only restore a dc1.large instance type into another dc1.large instance type or dc2.large instance type. You can't restore dc1.8xlarge to dc2.8xlarge. First restore to a dc1.8xlareg cluster, then resize to a dc2.8large cluster. For more information about node types, see  About Clusters and Nodes in the Amazon Redshift Cluster Management Guide. 
          */
@@ -2668,6 +3036,10 @@ object RedshiftNs extends js.Object {
          * The name of the snapshot from which to create the new cluster. This parameter isn't case sensitive. Example: my-snapshot-id 
          */
     var SnapshotIdentifier: java.lang.String
+    /**
+         * A unique identifier for the snapshot schedule.
+         */
+    var SnapshotScheduleIdentifier: js.UndefOr[java.lang.String] = js.undefined
     /**
          * A list of Virtual Private Cloud (VPC) security groups to be associated with the cluster. Default: The default VPC security group is associated with the cluster. VPC security groups only apply to clusters in VPCs.
          */
@@ -2890,6 +3262,14 @@ object RedshiftNs extends js.Object {
          */
     var MaintenanceTrackName: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The number of days until a manual snapshot will pass its retention period.
+         */
+    var ManualSnapshotRemainingDays: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+         * The number of days that a manual snapshot is retained. If the value is -1, the manual snapshot is retained indefinitely.  The value must be either -1 or an integer between 1 and 3,653.
+         */
+    var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
+    /**
          * The master user name for the cluster.
          */
     var MasterUsername: js.UndefOr[java.lang.String] = js.undefined
@@ -2914,7 +3294,7 @@ object RedshiftNs extends js.Object {
          */
     var RestorableNodeTypes: js.UndefOr[RestorableNodeTypeList] = js.undefined
     /**
-         * The time (UTC) when Amazon Redshift began the snapshot. A snapshot contains a copy of the cluster data as of this exact time.
+         * The time (in UTC format) when Amazon Redshift began the snapshot. A snapshot contains a copy of the cluster data as of this exact time.
          */
     var SnapshotCreateTime: js.UndefOr[TStamp] = js.undefined
     /**
@@ -2922,7 +3302,11 @@ object RedshiftNs extends js.Object {
          */
     var SnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The snapshot type. Snapshots created using CreateClusterSnapshot and CopyClusterSnapshot will be of type "manual". 
+         * A timestamp representing the start of the retention period for the snapshot.
+         */
+    var SnapshotRetentionStartTime: js.UndefOr[TStamp] = js.undefined
+    /**
+         * The snapshot type. Snapshots created using CreateClusterSnapshot and CopyClusterSnapshot are of type "manual". 
          */
     var SnapshotType: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -2930,7 +3314,7 @@ object RedshiftNs extends js.Object {
          */
     var SourceRegion: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The snapshot status. The value of the status depends on the API operation used.     CreateClusterSnapshot and CopyClusterSnapshot returns status as "creating".     DescribeClusterSnapshots returns status as "creating", "available", "final snapshot", or "failed".    DeleteClusterSnapshot returns status as "deleted".  
+         * The snapshot status. The value of the status depends on the API operation used:     CreateClusterSnapshot and CopyClusterSnapshot returns status as "creating".     DescribeClusterSnapshots returns status as "creating", "available", "final snapshot", or "failed".    DeleteClusterSnapshot returns status as "deleted".  
          */
     var Status: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -2976,6 +3360,26 @@ object RedshiftNs extends js.Object {
   }
   
   
+  trait SnapshotErrorMessage extends js.Object {
+    /**
+         * The failure code for the error.
+         */
+    var FailureCode: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The text message describing the error.
+         */
+    var FailureReason: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A unique identifier for the cluster.
+         */
+    var SnapshotClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A unique identifier for the snapshot returning the error.
+         */
+    var SnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait SnapshotMessage extends js.Object {
     /**
          * A value that indicates the starting point for the next set of response records in a subsequent request. If a value is returned in a response, you can retrieve the next set of records by providing this returned marker value in the Marker parameter and retrying the command. If the Marker field is empty, all response records have been retrieved for the request. 
@@ -2985,6 +3389,39 @@ object RedshiftNs extends js.Object {
          * A list of Snapshot instances. 
          */
     var Snapshots: js.UndefOr[SnapshotList] = js.undefined
+  }
+  
+  
+  trait SnapshotSchedule extends js.Object {
+    var NextInvocations: js.UndefOr[ScheduledSnapshotTimeList] = js.undefined
+    /**
+         * A list of ScheduleDefinitions
+         */
+    var ScheduleDefinitions: js.UndefOr[ScheduleDefinitionList] = js.undefined
+    /**
+         * The description of the schedule.
+         */
+    var ScheduleDescription: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A unique identifier for the schedule.
+         */
+    var ScheduleIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * An optional set of tags describing the schedule.
+         */
+    var Tags: js.UndefOr[TagList] = js.undefined
+  }
+  
+  
+  trait SnapshotSortingEntity extends js.Object {
+    /**
+         * The category for sorting the snapshots.
+         */
+    var Attribute: SnapshotAttributeToSortBy
+    /**
+         * The order for listing the attributes.
+         */
+    var SortOrder: js.UndefOr[SortByOrder] = js.undefined
   }
   
   
@@ -2998,6 +3435,14 @@ object RedshiftNs extends js.Object {
          * The status of the subnet.
          */
     var SubnetStatus: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait SupportedOperation extends js.Object {
+    /**
+         * A list of the supported operations.
+         */
+    var OperationName: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -3092,7 +3537,7 @@ object RedshiftNs extends js.Object {
   
   trait TaggedResource extends js.Object {
     /**
-         * The Amazon Resource Name (ARN) with which the tag is associated. For example, arn:aws:redshift:us-east-1:123456789:cluster:t1.
+         * The Amazon Resource Name (ARN) with which the tag is associated, for example: arn:aws:redshift:us-east-1:123456789:cluster:t1.
          */
     var ResourceName: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -3164,11 +3609,11 @@ object RedshiftNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AcceptReservedNodeExchangeOutputMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
+       * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
        */
     def authorizeClusterSecurityGroupIngress(): awsDashSdkLib.libRequestMod.Request[AuthorizeClusterSecurityGroupIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
+       * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
        */
     def authorizeClusterSecurityGroupIngress(
       callback: js.Function2[
@@ -3178,11 +3623,11 @@ object RedshiftNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AuthorizeClusterSecurityGroupIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
+       * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
        */
     def authorizeClusterSecurityGroupIngress(params: AuthorizeClusterSecurityGroupIngressMessage): awsDashSdkLib.libRequestMod.Request[AuthorizeClusterSecurityGroupIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
+       * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
        */
     def authorizeClusterSecurityGroupIngress(
       params: AuthorizeClusterSecurityGroupIngressMessage,
@@ -3221,6 +3666,93 @@ object RedshiftNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[AuthorizeSnapshotAccessResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a set of cluster snapshots.
+       */
+    def batchDeleteClusterSnapshots(): awsDashSdkLib.libRequestMod.Request[BatchDeleteClusterSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a set of cluster snapshots.
+       */
+    def batchDeleteClusterSnapshots(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchDeleteClusterSnapshotsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchDeleteClusterSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a set of cluster snapshots.
+       */
+    def batchDeleteClusterSnapshots(params: BatchDeleteClusterSnapshotsRequest): awsDashSdkLib.libRequestMod.Request[BatchDeleteClusterSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a set of cluster snapshots.
+       */
+    def batchDeleteClusterSnapshots(
+      params: BatchDeleteClusterSnapshotsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchDeleteClusterSnapshotsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchDeleteClusterSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the settings for a list of snapshots.
+       */
+    def batchModifyClusterSnapshots(): awsDashSdkLib.libRequestMod.Request[BatchModifyClusterSnapshotsOutputMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the settings for a list of snapshots.
+       */
+    def batchModifyClusterSnapshots(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchModifyClusterSnapshotsOutputMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchModifyClusterSnapshotsOutputMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the settings for a list of snapshots.
+       */
+    def batchModifyClusterSnapshots(params: BatchModifyClusterSnapshotsMessage): awsDashSdkLib.libRequestMod.Request[BatchModifyClusterSnapshotsOutputMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the settings for a list of snapshots.
+       */
+    def batchModifyClusterSnapshots(
+      params: BatchModifyClusterSnapshotsMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchModifyClusterSnapshotsOutputMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchModifyClusterSnapshotsOutputMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Cancels a resize operation.
+       */
+    def cancelResize(): awsDashSdkLib.libRequestMod.Request[ResizeProgressMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Cancels a resize operation.
+       */
+    def cancelResize(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ResizeProgressMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ResizeProgressMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Cancels a resize operation.
+       */
+    def cancelResize(params: CancelResizeMessage): awsDashSdkLib.libRequestMod.Request[ResizeProgressMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Cancels a resize operation.
+       */
+    def cancelResize(
+      params: CancelResizeMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ResizeProgressMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ResizeProgressMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Copies the specified automated cluster snapshot to a new manual cluster snapshot. The source must be an automated snapshot and it must be in the available state. When you delete a cluster, Amazon Redshift deletes any automated snapshots of the cluster. Also, when the retention period of the snapshot expires, Amazon Redshift automatically deletes it. If you want to keep an automated snapshot for a longer period, you can make a manual copy of the snapshot. Manual snapshots are retained until you delete them.  For more information about working with snapshots, go to Amazon Redshift Snapshots in the Amazon Redshift Cluster Management Guide.
        */
@@ -3512,6 +4044,35 @@ object RedshiftNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateSnapshotCopyGrantResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Creates a new snapshot schedule.
+       */
+    def createSnapshotSchedule(): awsDashSdkLib.libRequestMod.Request[SnapshotSchedule, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new snapshot schedule.
+       */
+    def createSnapshotSchedule(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ SnapshotSchedule, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[SnapshotSchedule, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new snapshot schedule.
+       */
+    def createSnapshotSchedule(params: CreateSnapshotScheduleMessage): awsDashSdkLib.libRequestMod.Request[SnapshotSchedule, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new snapshot schedule.
+       */
+    def createSnapshotSchedule(
+      params: CreateSnapshotScheduleMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ SnapshotSchedule, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[SnapshotSchedule, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Adds one or more tags to a specified resource. A resource can have up to 50 tags. If you try to create more than 50 tags for a resource, you will receive an error and the attempt will fail. If you specify a key that already exists for the resource, the value for that key will be updated with the new value.
        */
     def createTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3738,6 +4299,27 @@ object RedshiftNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Deletes a snapshot schedule.
+       */
+    def deleteSnapshotSchedule(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a snapshot schedule.
+       */
+    def deleteSnapshotSchedule(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a snapshot schedule.
+       */
+    def deleteSnapshotSchedule(params: DeleteSnapshotScheduleMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a snapshot schedule.
+       */
+    def deleteSnapshotSchedule(
+      params: DeleteSnapshotScheduleMessage,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Deletes a tag or tags from a resource. You must provide the ARN of the resource from which you want to delete the tag or tags.
        */
     def deleteTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3758,6 +4340,35 @@ object RedshiftNs extends js.Object {
       params: DeleteTagsMessage,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of attributes attached to an account
+       */
+    def describeAccountAttributes(): awsDashSdkLib.libRequestMod.Request[AccountAttributeList, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of attributes attached to an account
+       */
+    def describeAccountAttributes(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AccountAttributeList, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AccountAttributeList, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of attributes attached to an account
+       */
+    def describeAccountAttributes(params: DescribeAccountAttributesMessage): awsDashSdkLib.libRequestMod.Request[AccountAttributeList, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of attributes attached to an account
+       */
+    def describeAccountAttributes(
+      params: DescribeAccountAttributesMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AccountAttributeList, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AccountAttributeList, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Returns an array of ClusterDbRevision objects.
        */
@@ -4191,11 +4802,11 @@ object RedshiftNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ LoggingStatus, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[LoggingStatus, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+       * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
        */
     def describeOrderableClusterOptions(): awsDashSdkLib.libRequestMod.Request[OrderableClusterOptionsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+       * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
        */
     def describeOrderableClusterOptions(
       callback: js.Function2[
@@ -4205,11 +4816,11 @@ object RedshiftNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[OrderableClusterOptionsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+       * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
        */
     def describeOrderableClusterOptions(params: DescribeOrderableClusterOptionsMessage): awsDashSdkLib.libRequestMod.Request[OrderableClusterOptionsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+       * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
        */
     def describeOrderableClusterOptions(
       params: DescribeOrderableClusterOptionsMessage,
@@ -4335,6 +4946,49 @@ object RedshiftNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[SnapshotCopyGrantMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of snapshot schedules. 
+       */
+    def describeSnapshotSchedules(): awsDashSdkLib.libRequestMod.Request[DescribeSnapshotSchedulesOutputMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of snapshot schedules. 
+       */
+    def describeSnapshotSchedules(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeSnapshotSchedulesOutputMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeSnapshotSchedulesOutputMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of snapshot schedules. 
+       */
+    def describeSnapshotSchedules(params: DescribeSnapshotSchedulesMessage): awsDashSdkLib.libRequestMod.Request[DescribeSnapshotSchedulesOutputMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of snapshot schedules. 
+       */
+    def describeSnapshotSchedules(
+      params: DescribeSnapshotSchedulesMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeSnapshotSchedulesOutputMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeSnapshotSchedulesOutputMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the total amount of snapshot usage and provisioned storage for a user in megabytes.
+       */
+    def describeStorage(): awsDashSdkLib.libRequestMod.Request[CustomerStorageMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the total amount of snapshot usage and provisioned storage for a user in megabytes.
+       */
+    def describeStorage(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CustomerStorageMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CustomerStorageMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Lists the status of one or more table restore requests made using the RestoreTableFromClusterSnapshot API action. If you don't specify a value for the TableRestoreRequestId parameter, then DescribeTableRestoreStatus returns the status of all table restore requests ordered by the date and time of the request in ascending order. Otherwise DescribeTableRestoreStatus returns the status of the table specified by TableRestoreRequestId.
        */
@@ -4639,6 +5293,35 @@ object RedshiftNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyClusterIamRolesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Modifies the maintenance settings of a cluster. For example, you can defer a maintenance window. You can also update or cancel a deferment. 
+       */
+    def modifyClusterMaintenance(): awsDashSdkLib.libRequestMod.Request[ModifyClusterMaintenanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the maintenance settings of a cluster. For example, you can defer a maintenance window. You can also update or cancel a deferment. 
+       */
+    def modifyClusterMaintenance(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyClusterMaintenanceResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyClusterMaintenanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the maintenance settings of a cluster. For example, you can defer a maintenance window. You can also update or cancel a deferment. 
+       */
+    def modifyClusterMaintenance(params: ModifyClusterMaintenanceMessage): awsDashSdkLib.libRequestMod.Request[ModifyClusterMaintenanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the maintenance settings of a cluster. For example, you can defer a maintenance window. You can also update or cancel a deferment. 
+       */
+    def modifyClusterMaintenance(
+      params: ModifyClusterMaintenanceMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyClusterMaintenanceResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyClusterMaintenanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Modifies the parameters of a parameter group.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
        */
     def modifyClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[ClusterParameterGroupNameMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4667,6 +5350,56 @@ object RedshiftNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ClusterParameterGroupNameMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the settings for a snapshot.
+       */
+    def modifyClusterSnapshot(): awsDashSdkLib.libRequestMod.Request[ModifyClusterSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the settings for a snapshot.
+       */
+    def modifyClusterSnapshot(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyClusterSnapshotResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyClusterSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the settings for a snapshot.
+       */
+    def modifyClusterSnapshot(params: ModifyClusterSnapshotMessage): awsDashSdkLib.libRequestMod.Request[ModifyClusterSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the settings for a snapshot.
+       */
+    def modifyClusterSnapshot(
+      params: ModifyClusterSnapshotMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyClusterSnapshotResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyClusterSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a snapshot schedule for a cluster.
+       */
+    def modifyClusterSnapshotSchedule(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a snapshot schedule for a cluster.
+       */
+    def modifyClusterSnapshotSchedule(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a snapshot schedule for a cluster.
+       */
+    def modifyClusterSnapshotSchedule(params: ModifyClusterSnapshotScheduleMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a snapshot schedule for a cluster.
+       */
+    def modifyClusterSnapshotSchedule(
+      params: ModifyClusterSnapshotScheduleMessage,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Modifies a cluster subnet group to include the specified list of VPC subnets. The operation replaces the existing list of subnets with the new list of subnets.
        */
@@ -4726,11 +5459,11 @@ object RedshiftNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyEventSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the number of days to retain automated snapshots in the destination region after they are copied from the source region.
+       * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
        */
     def modifySnapshotCopyRetentionPeriod(): awsDashSdkLib.libRequestMod.Request[ModifySnapshotCopyRetentionPeriodResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the number of days to retain automated snapshots in the destination region after they are copied from the source region.
+       * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
        */
     def modifySnapshotCopyRetentionPeriod(
       callback: js.Function2[
@@ -4740,11 +5473,11 @@ object RedshiftNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifySnapshotCopyRetentionPeriodResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the number of days to retain automated snapshots in the destination region after they are copied from the source region.
+       * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
        */
     def modifySnapshotCopyRetentionPeriod(params: ModifySnapshotCopyRetentionPeriodMessage): awsDashSdkLib.libRequestMod.Request[ModifySnapshotCopyRetentionPeriodResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the number of days to retain automated snapshots in the destination region after they are copied from the source region.
+       * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
        */
     def modifySnapshotCopyRetentionPeriod(
       params: ModifySnapshotCopyRetentionPeriodMessage,
@@ -4754,6 +5487,35 @@ object RedshiftNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifySnapshotCopyRetentionPeriodResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.
+       */
+    def modifySnapshotSchedule(): awsDashSdkLib.libRequestMod.Request[SnapshotSchedule, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.
+       */
+    def modifySnapshotSchedule(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ SnapshotSchedule, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[SnapshotSchedule, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.
+       */
+    def modifySnapshotSchedule(params: ModifySnapshotScheduleMessage): awsDashSdkLib.libRequestMod.Request[SnapshotSchedule, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.
+       */
+    def modifySnapshotSchedule(
+      params: ModifySnapshotScheduleMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ SnapshotSchedule, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[SnapshotSchedule, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Allows you to purchase reserved nodes. Amazon Redshift offers a predefined set of reserved node offerings. You can purchase one or more of the offerings. You can call the DescribeReservedNodeOfferings API to obtain the available reserved node offerings. You can call this API by providing a specific reserved node offering and the number of nodes you want to reserve.   For more information about reserved node offerings, go to Purchasing Reserved Nodes in the Amazon Redshift Cluster Management Guide.
        */
@@ -4842,11 +5604,11 @@ object RedshiftNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ClusterParameterGroupNameMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize your cluster is avaialble for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes you add must match the node type for the cluster.  
+       * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes that you add must match the node type for the cluster.  
        */
     def resizeCluster(): awsDashSdkLib.libRequestMod.Request[ResizeClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize your cluster is avaialble for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes you add must match the node type for the cluster.  
+       * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes that you add must match the node type for the cluster.  
        */
     def resizeCluster(
       callback: js.Function2[
@@ -4856,11 +5618,11 @@ object RedshiftNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ResizeClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize your cluster is avaialble for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes you add must match the node type for the cluster.  
+       * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes that you add must match the node type for the cluster.  
        */
     def resizeCluster(params: ResizeClusterMessage): awsDashSdkLib.libRequestMod.Request[ResizeClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize your cluster is avaialble for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes you add must match the node type for the cluster.  
+       * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes that you add must match the node type for the cluster.  
        */
     def resizeCluster(
       params: ResizeClusterMessage,
@@ -5147,6 +5909,10 @@ object RedshiftNs extends js.Object {
          * The name of the new maintenance track.
          */
     var MaintenanceTrackName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A list of operations supported by the maintenance track.
+         */
+    var SupportedOperations: js.UndefOr[SupportedOperationList] = js.undefined
   }
   
   
@@ -5163,7 +5929,12 @@ object RedshiftNs extends js.Object {
   
   val TypesNs: this.type = js.native
   type AccountsWithRestoreAccessList = js.Array[AccountWithRestoreAccess]
+  type AttributeList = js.Array[AccountAttribute]
+  type AttributeNameList = js.Array[java.lang.String]
+  type AttributeValueList = js.Array[AttributeValueTarget]
   type AvailabilityZoneList = js.Array[AvailabilityZone]
+  type BatchSnapshotOperationErrorList = js.Array[SnapshotErrorMessage]
+  type BatchSnapshotOperationErrors = js.Array[SnapshotErrorMessage]
   type Boolean = scala.Boolean
   type BooleanOptional = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -5179,6 +5950,8 @@ object RedshiftNs extends js.Object {
   type ClusterSubnetGroups = js.Array[ClusterSubnetGroup]
   type ClusterVersionList = js.Array[ClusterVersion]
   type DbGroupList = js.Array[java.lang.String]
+  type DeferredMaintenanceWindowsList = js.Array[DeferredMaintenanceWindow]
+  type DeleteClusterSnapshotMessageList = js.Array[DeleteClusterSnapshotMessage]
   type Double = scala.Double
   type DoubleOptional = scala.Double
   type EC2SecurityGroupList = js.Array[EC2SecurityGroup]
@@ -5210,14 +5983,23 @@ object RedshiftNs extends js.Object {
   type ReservedNodeOfferingType = awsDashSdkLib.awsDashSdkLibStrings.Regular | awsDashSdkLib.awsDashSdkLibStrings.Upgradable | java.lang.String
   type RestorableNodeTypeList = js.Array[java.lang.String]
   type RevisionTargetsList = js.Array[RevisionTarget]
+  type ScheduleDefinitionList = js.Array[java.lang.String]
+  type ScheduleState = awsDashSdkLib.awsDashSdkLibStrings.MODIFYING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type ScheduledSnapshotTimeList = js.Array[TStamp]
   type SensitiveString = java.lang.String
+  type SnapshotAttributeToSortBy = awsDashSdkLib.awsDashSdkLibStrings.SOURCE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.TOTAL_SIZE | awsDashSdkLib.awsDashSdkLibStrings.CREATE_TIME | java.lang.String
   type SnapshotCopyGrantList = js.Array[SnapshotCopyGrant]
+  type SnapshotIdentifierList = js.Array[java.lang.String]
   type SnapshotList = js.Array[Snapshot]
+  type SnapshotScheduleList = js.Array[SnapshotSchedule]
+  type SnapshotSortingEntityList = js.Array[SnapshotSortingEntity]
+  type SortByOrder = awsDashSdkLib.awsDashSdkLibStrings.ASC | awsDashSdkLib.awsDashSdkLibStrings.DESC | java.lang.String
   type SourceIdsList = js.Array[java.lang.String]
   type SourceType = awsDashSdkLib.awsDashSdkLibStrings.cluster | awsDashSdkLib.awsDashSdkLibStrings.`cluster-parameter-group` | awsDashSdkLib.awsDashSdkLibStrings.`cluster-security-group` | awsDashSdkLib.awsDashSdkLibStrings.`cluster-snapshot` | java.lang.String
   type String = java.lang.String
   type SubnetIdentifierList = js.Array[java.lang.String]
   type SubnetList = js.Array[Subnet]
+  type SupportedOperationList = js.Array[SupportedOperation]
   type SupportedPlatformsList = js.Array[SupportedPlatform]
   type TStamp = stdLib.Date
   type TableRestoreStatusList = js.Array[TableRestoreStatus]

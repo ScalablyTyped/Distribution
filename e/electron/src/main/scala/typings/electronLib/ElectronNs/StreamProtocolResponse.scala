@@ -11,7 +11,7 @@ trait StreamProtocolResponse extends js.Object {
   /**
        * A Node.js readable stream representing the response body
        */
-  var data: stdLib.ReadableStream
+  var data: stdLib.ReadableStream[_]
   /**
        * An object containing the response headers
        */

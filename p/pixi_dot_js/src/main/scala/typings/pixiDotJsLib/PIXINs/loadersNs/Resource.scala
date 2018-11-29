@@ -49,6 +49,7 @@ class Resource protected () extends js.Object {
   var progressChunk: scala.Double = js.native
   var spineAtlas: js.Any = js.native
   var spineData: js.Any = js.native
+  var spritesheet: js.UndefOr[pixiDotJsLib.PIXINs.Spritesheet] = js.native
   var texture: pixiDotJsLib.PIXINs.Texture = js.native
   var textures: js.UndefOr[TextureDictionary] = js.native
   var `type`: scala.Double = js.native

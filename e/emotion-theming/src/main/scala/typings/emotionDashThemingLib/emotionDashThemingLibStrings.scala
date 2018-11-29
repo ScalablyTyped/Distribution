@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 object emotionDashThemingLibStrings {
   @js.native
-  sealed trait `__EMOTION_THEMING__` extends js.Object
+  sealed trait theme extends js.Object
   
-  def `__EMOTION_THEMING__`: `__EMOTION_THEMING__` = "__EMOTION_THEMING__".asInstanceOf[`__EMOTION_THEMING__`]
+  def theme: theme = "theme".asInstanceOf[theme]
 }
 

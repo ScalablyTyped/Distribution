@@ -12,6 +12,9 @@ object stdLibMembers extends js.Object {
   val Array: ArrayConstructor = js.native
   val ArrayBuffer: ArrayBufferConstructor = js.native
   var Atomics: Atomics = js.native
+  val BigInt: BigIntConstructor = js.native
+  val BigInt64Array: BigInt64ArrayConstructor = js.native
+  val BigUint64Array: BigUint64ArrayConstructor = js.native
   var Blob: Anon_BlobParts with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(Blob)))) */js.Any) = js.native
   val Boolean: BooleanConstructor = js.native
   var CSS: CSS = js.native

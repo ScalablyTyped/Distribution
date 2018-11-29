@@ -18,7 +18,7 @@ trait DirectiveMeta extends js.Object {
        *
        * Goes from property names to field names.
        */
-  var inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  var inputs: ScalablyTyped.runtime.StringDictionary[java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])]
   /**
        * Whether the directive is a component.
        */

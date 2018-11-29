@@ -16,9 +16,10 @@ class Credentials () extends js.Object {
 @JSGlobal("Realm.Sync.Credentials")
 @js.native
 object Credentials extends js.Object {
-  def adminToken(token: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
+  def adminToken(token: java.lang.String): realmLib.RealmNs.SyncNs.AdminCredentials = js.native
   def anonymous(): realmLib.RealmNs.SyncNs.Credentials = js.native
   def azureAD(token: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
+  def custom(providerName: java.lang.String, token: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
   def custom(
     providerName: java.lang.String,
     token: java.lang.String,

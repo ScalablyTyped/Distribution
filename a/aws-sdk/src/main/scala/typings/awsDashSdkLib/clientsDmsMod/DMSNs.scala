@@ -138,13 +138,17 @@ object DMSNs extends js.Object {
          */
     var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  The settings in JSON format for the DMS Transfer type source endpoint.  Attributes include:   serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.   bucketName - The name of the S3 bucket to use.   compressionType - An optional parameter to use GZIP to compress the target files. Set to NONE (the default) or do not use to leave the files uncompressed.   Shorthand syntax: ServiceAccessRoleArn=string ,BucketName=string,CompressionType=string JSON syntax:  { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" } 
+         * The settings in JSON format for the DMS transfer type of source endpoint.  Possible attributes include the following:    serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.    bucketName - The name of the S3 bucket to use.    compressionType - An optional parameter to use GZIP to compress the target files. To use GZIP, set this value to NONE (the default). To keep the files uncompressed, don't use this value.    Shorthand syntax for these attributes is as follows: ServiceAccessRoleArn=string,BucketName=string,CompressionType=string  JSON syntax for these attributes is as follows: { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" }  
          */
     var DmsTransferSettings: js.UndefOr[DmsTransferSettings] = js.undefined
     /**
-         * Settings in JSON format for the target Amazon DynamoDB endpoint. For more information about the available settings, see the Using Object Mapping to Migrate Data to DynamoDB section at  Using an Amazon DynamoDB Database as a Target for AWS Database Migration Service. 
+         * Settings in JSON format for the target Amazon DynamoDB endpoint. For more information about the available settings, see Using Object Mapping to Migrate Data to DynamoDB in the AWS Database Migration Service User Guide. 
          */
     var DynamoDbSettings: js.UndefOr[DynamoDbSettings] = js.undefined
+    /**
+         * Settings in JSON format for the target Elasticsearch endpoint. For more information about the available settings, see Extra Connection Attributes When Using Elasticsearch as a Target for AWS DMS in the AWS Database Migration User Guide. 
+         */
+    var ElasticsearchSettings: js.UndefOr[ElasticsearchSettings] = js.undefined
     /**
          * The database endpoint identifier. Identifiers must begin with a letter; must contain only ASCII letters, digits, and hyphens; and must not end with a hyphen or contain two consecutive hyphens.
          */
@@ -154,7 +158,7 @@ object DMSNs extends js.Object {
          */
     var EndpointType: ReplicationEndpointTypeValue
     /**
-         * The type of engine for the endpoint. Valid values, depending on the EndPointType, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, dynamodb, mongodb, and sqlserver.
+         * The type of engine for the endpoint. Valid values, depending on the EndPointType value, include mysql, oracle, postgres, mariadb, aurora, aurora-postgresql, redshift, s3, db2, azuredb, sybase, dynamodb, mongodb, and sqlserver.
          */
     var EngineName: java.lang.String
     /**
@@ -166,15 +170,19 @@ object DMSNs extends js.Object {
          */
     var ExtraConnectionAttributes: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The KMS key identifier that will be used to encrypt the connection parameters. If you do not specify a value for the KmsKeyId parameter, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+         * Settings in JSON format for the target Amazon Kinesis Data Streams endpoint. For more information about the available settings, see Using Object Mapping to Migrate Data to a Kinesis Data Stream in the AWS Database Migration User Guide. 
+         */
+    var KinesisSettings: js.UndefOr[KinesisSettings] = js.undefined
+    /**
+         * The AWS KMS key identifier to use to encrypt the connection parameters. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
     var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * Settings in JSON format for the source MongoDB endpoint. For more information about the available settings, see the Configuration Properties When Using MongoDB as a Source for AWS Database Migration Service section at  Using MongoDB as a Target for AWS Database Migration Service. 
+         * Settings in JSON format for the source MongoDB endpoint. For more information about the available settings, see the configuration properties section in  Using MongoDB as a Target for AWS Database Migration Service in the AWS Database Migration Service User Guide. 
          */
     var MongoDbSettings: js.UndefOr[MongoDbSettings] = js.undefined
     /**
-         * The password to be used to login to the endpoint database.
+         * The password to be used to log in to the endpoint database.
          */
     var Password: js.UndefOr[SecretString] = js.undefined
     /**
@@ -182,7 +190,7 @@ object DMSNs extends js.Object {
          */
     var Port: js.UndefOr[IntegerOptional] = js.undefined
     /**
-         * Settings in JSON format for the target Amazon S3 endpoint. For more information about the available settings, see the Extra Connection Attributes section at  Using Amazon S3 as a Target for AWS Database Migration Service. 
+         * Settings in JSON format for the target Amazon S3 endpoint. For more information about the available settings, see Extra Connection Attributes When Using Amazon S3 as a Target for AWS DMS in the AWS Database Migration Service User Guide. 
          */
     var S3Settings: js.UndefOr[S3Settings] = js.undefined
     /**
@@ -190,11 +198,11 @@ object DMSNs extends js.Object {
          */
     var ServerName: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  The Amazon Resource Name (ARN) for the service access role you want to use to create the endpoint. 
+         *  The Amazon Resource Name (ARN) for the service access role that you want to use to create the endpoint. 
          */
     var ServiceAccessRoleArn: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The SSL mode to use for the SSL connection. SSL mode can be one of four values: none, require, verify-ca, verify-full.  The default value is none.
+         * The Secure Sockets Layer (SSL) mode to use for the SSL connection. The SSL mode can be one of four values: none, require, verify-ca, verify-full. The default value is none.
          */
     var SslMode: js.UndefOr[DmsSslModeValue] = js.undefined
     /**
@@ -202,7 +210,7 @@ object DMSNs extends js.Object {
          */
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
-         * The user name to be used to login to the endpoint database.
+         * The user name to be used to log in to the endpoint database.
          */
     var Username: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -222,7 +230,7 @@ object DMSNs extends js.Object {
          */
     var Enabled: js.UndefOr[BooleanOptional] = js.undefined
     /**
-         *  A list of event categories for a source type that you want to subscribe to. You can see a list of the categories for a given source type by calling the DescribeEventCategories action or in the topic  Working with Events and Notifications in the AWS Database Migration Service User Guide. 
+         *  A list of event categories for a source type that you want to subscribe to. You can see a list of the categories for a given source type by calling the DescribeEventCategories action or in the topic Working with Events and Notifications in the AWS Database Migration Service User Guide. 
          */
     var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
     /**
@@ -270,11 +278,15 @@ object DMSNs extends js.Object {
          */
     var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * A list of DNS name servers supported for the replication instance.
+         */
+    var DnsNameServers: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The engine version number of the replication instance.
          */
     var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The KMS key identifier that will be used to encrypt the content on the replication instance. If you do not specify a value for the KmsKeyId parameter, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+         * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
     var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -374,7 +386,7 @@ object DMSNs extends js.Object {
          */
     var ReplicationTaskIdentifier: java.lang.String
     /**
-         * Settings for the task, such as target metadata settings. For a complete list of task settings, see Task Settings for AWS Database Migration Service Tasks.
+         * Settings for the task, such as target metadata settings. For a complete list of task settings, see Task Settings for AWS Database Migration Service Tasks in the AWS Database Migration User Guide. 
          */
     var ReplicationTaskSettings: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -994,6 +1006,26 @@ object DMSNs extends js.Object {
   }
   
   
+  trait ElasticsearchSettings extends js.Object {
+    /**
+         * The endpoint for the ElasticSearch cluster.
+         */
+    var EndpointUri: java.lang.String
+    /**
+         * The maximum number of seconds that DMS retries failed API requests to the Elasticsearch cluster.
+         */
+    var ErrorRetryDuration: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+         * The maximum percentage of records that can fail to be written before a full load operation stops. 
+         */
+    var FullLoadErrorPercentage: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) used by service to access the IAM role.
+         */
+    var ServiceAccessRoleArn: java.lang.String
+  }
+  
+  
   trait Endpoint extends js.Object {
     /**
          * The Amazon Resource Name (ARN) used for SSL connection to the endpoint.
@@ -1004,13 +1036,17 @@ object DMSNs extends js.Object {
          */
     var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  The settings in JSON format for the DMS Transfer type source endpoint.  Attributes include:   serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.   bucketName - The name of the S3 bucket to use.   compressionType - An optional parameter to use GZIP to compress the target files. Set to NONE (the default) or do not use to leave the files uncompressed.   Shorthand syntax: ServiceAccessRoleArn=string ,BucketName=string,CompressionType=string JSON syntax:  { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" } 
+         * The settings in JSON format for the DMS transfer type of source endpoint.  Possible attributes include the following:    serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.    bucketName - The name of the S3 bucket to use.    compressionType - An optional parameter to use GZIP to compress the target files. To use GZIP, set this value to NONE (the default). To keep the files uncompressed, don't use this value.    Shorthand syntax for these attributes is as follows: ServiceAccessRoleArn=string,BucketName=string,CompressionType=string  JSON syntax for these attributes is as follows: { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" }  
          */
     var DmsTransferSettings: js.UndefOr[DmsTransferSettings] = js.undefined
     /**
          * The settings for the target DynamoDB database. For more information, see the DynamoDBSettings structure.
          */
     var DynamoDbSettings: js.UndefOr[DynamoDbSettings] = js.undefined
+    /**
+         * The settings for the Elasticsearch source endpoint. For more information, see the ElasticsearchSettings structure.
+         */
+    var ElasticsearchSettings: js.UndefOr[ElasticsearchSettings] = js.undefined
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
@@ -1044,7 +1080,11 @@ object DMSNs extends js.Object {
          */
     var ExtraConnectionAttributes: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The KMS key identifier that will be used to encrypt the connection parameters. If you do not specify a value for the KmsKeyId parameter, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+         * The settings for the Amazon Kinesis source endpoint. For more information, see the KinesisSettings structure.
+         */
+    var KinesisSettings: js.UndefOr[KinesisSettings] = js.undefined
+    /**
+         * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
     var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -1198,6 +1238,22 @@ object DMSNs extends js.Object {
   }
   
   
+  trait KinesisSettings extends js.Object {
+    /**
+         * The output format for the records created on the endpoint. The message format is JSON.
+         */
+    var MessageFormat: js.UndefOr[MessageFormatValue] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) for the IAM role that DMS uses to write to the Amazon Kinesis data stream.
+         */
+    var ServiceAccessRoleArn: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) for the Amazon Kinesis Data Streams endpoint.
+         */
+    var StreamArn: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait ListTagsForResourceMessage extends js.Object {
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the AWS DMS resource.
@@ -1224,13 +1280,17 @@ object DMSNs extends js.Object {
          */
     var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  The settings in JSON format for the DMS Transfer type source endpoint.  Attributes include:   serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.   BucketName - The name of the S3 bucket to use.   compressionType - An optional parameter to use GZIP to compress the target files. Set to NONE (the default) or do not use to leave the files uncompressed.   Shorthand syntax: ServiceAccessRoleArn=string ,BucketName=string,CompressionType=string JSON syntax:  { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" } 
+         * The settings in JSON format for the DMS transfer type of source endpoint.  Attributes include the following:   serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.   BucketName - The name of the S3 bucket to use.   compressionType - An optional parameter to use GZIP to compress the target files. Set to NONE (the default) or do not use to leave the files uncompressed.   Shorthand syntax: ServiceAccessRoleArn=string ,BucketName=string,CompressionType=string JSON syntax:  { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" } 
          */
     var DmsTransferSettings: js.UndefOr[DmsTransferSettings] = js.undefined
     /**
-         * Settings in JSON format for the target Amazon DynamoDB endpoint. For more information about the available settings, see the Using Object Mapping to Migrate Data to DynamoDB section at  Using an Amazon DynamoDB Database as a Target for AWS Database Migration Service. 
+         * Settings in JSON format for the target Amazon DynamoDB endpoint. For more information about the available settings, see Using Object Mapping to Migrate Data to DynamoDB in the AWS Database Migration Service User Guide. 
          */
     var DynamoDbSettings: js.UndefOr[DynamoDbSettings] = js.undefined
+    /**
+         * Settings in JSON format for the target Elasticsearch endpoint. For more information about the available settings, see Extra Connection Attributes When Using Elasticsearch as a Target for AWS DMS in the AWS Database Migration User Guide. 
+         */
+    var ElasticsearchSettings: js.UndefOr[ElasticsearchSettings] = js.undefined
     /**
          * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
          */
@@ -1256,7 +1316,11 @@ object DMSNs extends js.Object {
          */
     var ExtraConnectionAttributes: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * Settings in JSON format for the source MongoDB endpoint. For more information about the available settings, see the Configuration Properties When Using MongoDB as a Source for AWS Database Migration Service section at  Using Amazon S3 as a Target for AWS Database Migration Service. 
+         * Settings in JSON format for the target Amazon Kinesis Data Streams endpoint. For more information about the available settings, see Using Object Mapping to Migrate Data to a Kinesis Data Stream in the AWS Database Migration User Guide. 
+         */
+    var KinesisSettings: js.UndefOr[KinesisSettings] = js.undefined
+    /**
+         * Settings in JSON format for the source MongoDB endpoint. For more information about the available settings, see the configuration properties section in  Using MongoDB as a Target for AWS Database Migration Service in the AWS Database Migration Service User Guide. 
          */
     var MongoDbSettings: js.UndefOr[MongoDbSettings] = js.undefined
     /**
@@ -1268,7 +1332,7 @@ object DMSNs extends js.Object {
          */
     var Port: js.UndefOr[IntegerOptional] = js.undefined
     /**
-         * Settings in JSON format for the target S3 endpoint. For more information about the available settings, see the Extra Connection Attributes section at  Using Amazon S3 as a Target for AWS Database Migration Service. 
+         * Settings in JSON format for the target Amazon S3 endpoint. For more information about the available settings, see Extra Connection Attributes When Using Amazon S3 as a Target for AWS DMS in the AWS Database Migration Service User Guide. 
          */
     var S3Settings: js.UndefOr[S3Settings] = js.undefined
     /**
@@ -1480,7 +1544,7 @@ object DMSNs extends js.Object {
          */
     var ExtractDocId: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  The KMS key identifier that will be used to encrypt the connection parameters. If you do not specify a value for the KmsKeyId parameter, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region. 
+         * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
     var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -1655,6 +1719,10 @@ object DMSNs extends js.Object {
          */
     var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The DNS name servers for the replication instance.
+         */
+    var DnsNameServers: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The engine version number of the replication instance.
          */
     var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
@@ -1667,7 +1735,7 @@ object DMSNs extends js.Object {
          */
     var InstanceCreateTime: js.UndefOr[TStamp] = js.undefined
     /**
-         * The KMS key identifier that is used to encrypt the content on the replication instance. If you do not specify a value for the KmsKeyId parameter, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
+         * The AWS KMS key identifier that is used to encrypt the content on the replication instance. If you don't specify a value for the KmsKeyId parameter, then AWS DMS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
          */
     var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -2232,11 +2300,11 @@ object DMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see  Working with Events and Notifications  in the AWS Database MIgration Service User Guide.
+       *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
        */
     def createEventSubscription(): awsDashSdkLib.libRequestMod.Request[CreateEventSubscriptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see  Working with Events and Notifications  in the AWS Database MIgration Service User Guide.
+       *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
        */
     def createEventSubscription(
       callback: js.Function2[
@@ -2246,11 +2314,11 @@ object DMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateEventSubscriptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see  Working with Events and Notifications  in the AWS Database MIgration Service User Guide.
+       *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
        */
     def createEventSubscription(params: CreateEventSubscriptionMessage): awsDashSdkLib.libRequestMod.Request[CreateEventSubscriptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see  Working with Events and Notifications  in the AWS Database MIgration Service User Guide.
+       *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
        */
     def createEventSubscription(
       params: CreateEventSubscriptionMessage,
@@ -2667,11 +2735,11 @@ object DMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in  Working with Events and Notifications  in the AWS Database Migration Service User Guide. 
+       * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
        */
     def describeEventCategories(): awsDashSdkLib.libRequestMod.Request[DescribeEventCategoriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in  Working with Events and Notifications  in the AWS Database Migration Service User Guide. 
+       * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
        */
     def describeEventCategories(
       callback: js.Function2[
@@ -2681,11 +2749,11 @@ object DMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeEventCategoriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in  Working with Events and Notifications  in the AWS Database Migration Service User Guide. 
+       * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
        */
     def describeEventCategories(params: DescribeEventCategoriesMessage): awsDashSdkLib.libRequestMod.Request[DescribeEventCategoriesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in  Working with Events and Notifications  in the AWS Database Migration Service User Guide. 
+       * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
        */
     def describeEventCategories(
       params: DescribeEventCategoriesMessage,
@@ -2725,11 +2793,11 @@ object DMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeEventSubscriptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see  Working with Events and Notifications . 
+       *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
        */
     def describeEvents(): awsDashSdkLib.libRequestMod.Request[DescribeEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see  Working with Events and Notifications . 
+       *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
        */
     def describeEvents(
       callback: js.Function2[
@@ -2739,11 +2807,11 @@ object DMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see  Working with Events and Notifications . 
+       *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
        */
     def describeEvents(params: DescribeEventsMessage): awsDashSdkLib.libRequestMod.Request[DescribeEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see  Working with Events and Notifications . 
+       *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
        */
     def describeEvents(
       params: DescribeEventsMessage,
@@ -3201,11 +3269,11 @@ object DMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyReplicationSubnetGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+       * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
        */
     def modifyReplicationTask(): awsDashSdkLib.libRequestMod.Request[ModifyReplicationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+       * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
        */
     def modifyReplicationTask(
       callback: js.Function2[
@@ -3215,11 +3283,11 @@ object DMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyReplicationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+       * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
        */
     def modifyReplicationTask(params: ModifyReplicationTaskMessage): awsDashSdkLib.libRequestMod.Request[ModifyReplicationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+       * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
        */
     def modifyReplicationTask(
       params: ModifyReplicationTaskMessage,
@@ -3346,11 +3414,11 @@ object DMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RemoveTagsFromResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts the replication task. For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+       * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
        */
     def startReplicationTask(): awsDashSdkLib.libRequestMod.Request[StartReplicationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts the replication task. For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+       * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
        */
     def startReplicationTask(
       callback: js.Function2[
@@ -3360,11 +3428,11 @@ object DMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartReplicationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts the replication task. For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+       * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
        */
     def startReplicationTask(params: StartReplicationTaskMessage): awsDashSdkLib.libRequestMod.Request[StartReplicationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts the replication task. For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+       * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
        */
     def startReplicationTask(
       params: StartReplicationTaskMessage,
@@ -3461,6 +3529,310 @@ object DMSNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[TestConnectionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_endpointDeleted(state: awsDashSdkLib.awsDashSdkLibStrings.endpointDeleted): awsDashSdkLib.libRequestMod.Request[DescribeEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_endpointDeleted(
+      state: awsDashSdkLib.awsDashSdkLibStrings.endpointDeleted,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeEndpointsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_endpointDeleted(
+      state: awsDashSdkLib.awsDashSdkLibStrings.endpointDeleted,
+      params: DescribeEndpointsMessage with awsDashSdkLib.Anon_Waiter
+    ): awsDashSdkLib.libRequestMod.Request[DescribeEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_endpointDeleted(
+      state: awsDashSdkLib.awsDashSdkLibStrings.endpointDeleted,
+      params: DescribeEndpointsMessage with awsDashSdkLib.Anon_Waiter,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeEndpointsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationInstanceAvailable state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 60 seconds (at most 60 times). Wait until DMS replication instance is available.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationInstanceAvailable(state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceAvailable): awsDashSdkLib.libRequestMod.Request[DescribeReplicationInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationInstanceAvailable state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 60 seconds (at most 60 times). Wait until DMS replication instance is available.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationInstanceAvailable(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceAvailable,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationInstancesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationInstanceAvailable state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 60 seconds (at most 60 times). Wait until DMS replication instance is available.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationInstanceAvailable(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceAvailable,
+      params: DescribeReplicationInstancesMessage with awsDashSdkLib.Anon_Waiter
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationInstanceAvailable state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 60 seconds (at most 60 times). Wait until DMS replication instance is available.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationInstanceAvailable(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceAvailable,
+      params: DescribeReplicationInstancesMessage with awsDashSdkLib.Anon_Waiter,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationInstancesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationInstanceDeleted state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 15 seconds (at most 60 times). Wait until DMS replication instance is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationInstanceDeleted(state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceDeleted): awsDashSdkLib.libRequestMod.Request[DescribeReplicationInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationInstanceDeleted state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 15 seconds (at most 60 times). Wait until DMS replication instance is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationInstanceDeleted(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceDeleted,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationInstancesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationInstanceDeleted state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 15 seconds (at most 60 times). Wait until DMS replication instance is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationInstanceDeleted(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceDeleted,
+      params: DescribeReplicationInstancesMessage with awsDashSdkLib.Anon_Waiter
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationInstanceDeleted state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 15 seconds (at most 60 times). Wait until DMS replication instance is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationInstanceDeleted(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceDeleted,
+      params: DescribeReplicationInstancesMessage with awsDashSdkLib.Anon_Waiter,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationInstancesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskDeleted state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskDeleted(state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskDeleted): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskDeleted state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskDeleted(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskDeleted,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationTasksResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskDeleted state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskDeleted(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskDeleted,
+      params: DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskDeleted state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is deleted.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskDeleted(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskDeleted,
+      params: DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationTasksResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskReady state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is ready.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskReady(state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskReady): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskReady state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is ready.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskReady(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskReady,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationTasksResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskReady state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is ready.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskReady(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskReady,
+      params: DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskReady state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is ready.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskReady(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskReady,
+      params: DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationTasksResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskRunning state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is running.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskRunning(state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskRunning): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskRunning state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is running.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskRunning(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskRunning,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationTasksResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskRunning state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is running.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskRunning(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskRunning,
+      params: DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskRunning state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is running.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskRunning(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskRunning,
+      params: DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationTasksResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskStopped state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is stopped.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskStopped(state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskStopped): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskStopped state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is stopped.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskStopped(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskStopped,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationTasksResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskStopped state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is stopped.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskStopped(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskStopped,
+      params: DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the replicationTaskStopped state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is stopped.
+       */
+    @JSName("waitFor")
+    def waitFor_replicationTaskStopped(
+      state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskStopped,
+      params: DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeReplicationTasksResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeReplicationTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.testConnectionoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
+       */
+    @JSName("waitFor")
+    def waitFor_testConnectionSucceeds(state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds): awsDashSdkLib.libRequestMod.Request[TestConnectionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.testConnectionoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
+       */
+    @JSName("waitFor")
+    def waitFor_testConnectionSucceeds(
+      state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TestConnectionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TestConnectionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.testConnectionoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
+       */
+    @JSName("waitFor")
+    def waitFor_testConnectionSucceeds(
+      state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds,
+      params: TestConnectionMessage with awsDashSdkLib.Anon_Waiter
+    ): awsDashSdkLib.libRequestMod.Request[TestConnectionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.testConnectionoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
+       */
+    @JSName("waitFor")
+    def waitFor_testConnectionSucceeds(
+      state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds,
+      params: TestConnectionMessage with awsDashSdkLib.Anon_Waiter,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TestConnectionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TestConnectionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
   
@@ -3498,6 +3870,7 @@ object DMSNs extends js.Object {
   type IntegerOptional = scala.Double
   type KeyList = js.Array[java.lang.String]
   type Long = scala.Double
+  type MessageFormatValue = awsDashSdkLib.awsDashSdkLibStrings.json | java.lang.String
   type MigrationTypeValue = awsDashSdkLib.awsDashSdkLibStrings.`full-load` | awsDashSdkLib.awsDashSdkLibStrings.cdc | awsDashSdkLib.awsDashSdkLibStrings.`full-load-and-cdc` | java.lang.String
   type NestingLevelValue = awsDashSdkLib.awsDashSdkLibStrings.none | awsDashSdkLib.awsDashSdkLibStrings.one | java.lang.String
   type OrderableReplicationInstanceList = js.Array[OrderableReplicationInstance]

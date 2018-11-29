@@ -2594,14 +2594,14 @@ trait WAFRegional
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose delivery stream. For more information, see Creating an Amazon Kinesis Data Firehose Delivery Stream.    Associate that delivery stream to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose delivery stream. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+     * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
      */
   def putLoggingConfiguration(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs.PutLoggingConfigurationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose delivery stream. For more information, see Creating an Amazon Kinesis Data Firehose Delivery Stream.    Associate that delivery stream to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose delivery stream. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+     * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
      */
   def putLoggingConfiguration(
     callback: js.Function2[
@@ -2614,14 +2614,14 @@ trait WAFRegional
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose delivery stream. For more information, see Creating an Amazon Kinesis Data Firehose Delivery Stream.    Associate that delivery stream to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose delivery stream. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+     * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
      */
   def putLoggingConfiguration(params: awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs.PutLoggingConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs.PutLoggingConfigurationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose delivery stream. For more information, see Creating an Amazon Kinesis Data Firehose Delivery Stream.    Associate that delivery stream to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose delivery stream. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+     * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
      */
   def putLoggingConfiguration(
     params: awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs.PutLoggingConfigurationRequest,

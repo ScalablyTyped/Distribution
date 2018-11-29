@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait UpdateGlobalTableSettingsInput extends js.Object {
   /**
+       * The billing mode of the global table. If GlobalTableBillingMode is not specified, the global table defaults to PROVISIONED capacity billing mode.
+       */
+  var GlobalTableBillingMode: js.UndefOr[BillingMode] = js.undefined
+  /**
        * Represents the settings of a global secondary index for a global table that will be modified.
        */
   var GlobalTableGlobalSecondaryIndexSettingsUpdate: js.UndefOr[GlobalTableGlobalSecondaryIndexSettingsUpdateList] = js.undefined

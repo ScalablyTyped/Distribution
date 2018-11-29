@@ -22,15 +22,14 @@ object outPublishPublishManagerModMembers extends js.Object {
     context: electronDashPublishLib.electronDashPublishMod.PublishContext,
     version: java.lang.String,
     publishConfig: builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration,
-    options: electronDashPublishLib.electronDashPublishMod.PublishOptions
+    options: electronDashPublishLib.electronDashPublishMod.PublishOptions,
+    packager: appDashBuilderDashLibLib.outPackagerMod.Packager
   ): electronDashPublishLib.electronDashPublishMod.Publisher | scala.Null = js.native
   def getAppUpdatePublishConfiguration(
     packager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     arch: builderDashUtilLib.outArchMod.Arch,
     errorIfCannot: scala.Boolean
-  ): stdLib.Promise[
-    builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration | scala.Null
-  ] = js.native
+  ): stdLib.Promise[appDashBuilderDashLibLib.Anon_PublishAutoUpdate | scala.Null] = js.native
   def getPublishConfigs(
     platformPackager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
     targetSpecificOptions: appDashBuilderDashLibLib.outOptionsPlatformSpecificBuildOptionsMod.PlatformSpecificBuildOptions,

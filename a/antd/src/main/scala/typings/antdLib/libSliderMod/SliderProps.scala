@@ -21,6 +21,7 @@ trait SliderProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var range: js.UndefOr[scala.Boolean] = js.undefined
   var step: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var tipFormatter: js.UndefOr[
     scala.Null | (js.Function1[/* value */ scala.Double, reactLib.reactMod.ReactNs.ReactNode])
   ] = js.undefined

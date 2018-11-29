@@ -74,42 +74,42 @@ trait Budgets
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers associated with that budget. 
+     * Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers that are associated with that budget. 
      */
   def deleteBudget(): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers associated with that budget. 
+     * Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers that are associated with that budget. 
      */
   def deleteBudget(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers associated with that budget. 
+     * Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers that are associated with that budget. 
      */
   def deleteBudget(params: js.Any): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers associated with that budget. 
+     * Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers that are associated with that budget. 
      */
   def deleteBudget(
     params: js.Any,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a notification.  Deleting a notification also deletes the subscribers associated with the notification. 
+     * Deletes a notification.  Deleting a notification also deletes the subscribers that are associated with the notification. 
      */
   def deleteNotification(): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a notification.  Deleting a notification also deletes the subscribers associated with the notification. 
+     * Deletes a notification.  Deleting a notification also deletes the subscribers that are associated with the notification. 
      */
   def deleteNotification(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a notification.  Deleting a notification also deletes the subscribers associated with the notification. 
+     * Deletes a notification.  Deleting a notification also deletes the subscribers that are associated with the notification. 
      */
   def deleteNotification(params: js.Any): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes a notification.  Deleting a notification also deletes the subscribers associated with the notification. 
+     * Deletes a notification.  Deleting a notification also deletes the subscribers that are associated with the notification. 
      */
   def deleteNotification(
     params: js.Any,
@@ -158,84 +158,105 @@ trait Budgets
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the budgets associated with an account.
+     * Describes the history for DAILY, MONTHLY, and QUARTERLY budgets. Budget history isn't available for ANNUAL budgets.
+     */
+  def describeBudgetPerformanceHistory(): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Describes the history for DAILY, MONTHLY, and QUARTERLY budgets. Budget history isn't available for ANNUAL budgets.
+     */
+  def describeBudgetPerformanceHistory(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Describes the history for DAILY, MONTHLY, and QUARTERLY budgets. Budget history isn't available for ANNUAL budgets.
+     */
+  def describeBudgetPerformanceHistory(params: js.Any): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Describes the history for DAILY, MONTHLY, and QUARTERLY budgets. Budget history isn't available for ANNUAL budgets.
+     */
+  def describeBudgetPerformanceHistory(
+    params: js.Any,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Lists the budgets that are associated with an account.
      */
   def describeBudgets(): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the budgets associated with an account.
+     * Lists the budgets that are associated with an account.
      */
   def describeBudgets(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the budgets associated with an account.
+     * Lists the budgets that are associated with an account.
      */
   def describeBudgets(params: js.Any): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the budgets associated with an account.
+     * Lists the budgets that are associated with an account.
      */
   def describeBudgets(
     params: js.Any,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the notifications associated with a budget.
+     * Lists the notifications that are associated with a budget.
      */
   def describeNotificationsForBudget(): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the notifications associated with a budget.
+     * Lists the notifications that are associated with a budget.
      */
   def describeNotificationsForBudget(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the notifications associated with a budget.
+     * Lists the notifications that are associated with a budget.
      */
   def describeNotificationsForBudget(params: js.Any): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the notifications associated with a budget.
+     * Lists the notifications that are associated with a budget.
      */
   def describeNotificationsForBudget(
     params: js.Any,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the subscribers associated with a notification.
+     * Lists the subscribers that are associated with a notification.
      */
   def describeSubscribersForNotification(): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the subscribers associated with a notification.
+     * Lists the subscribers that are associated with a notification.
      */
   def describeSubscribersForNotification(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the subscribers associated with a notification.
+     * Lists the subscribers that are associated with a notification.
      */
   def describeSubscribersForNotification(params: js.Any): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Lists the subscribers associated with a notification.
+     * Lists the subscribers that are associated with a notification.
      */
   def describeSubscribersForNotification(
     params: js.Any,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When a budget is modified, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.
+     * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.
      */
   def updateBudget(): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When a budget is modified, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.
+     * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.
      */
   def updateBudget(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Any, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When a budget is modified, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.
+     * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.
      */
   def updateBudget(params: js.Any): awsDashSdkLib.libRequestMod.Request[_, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When a budget is modified, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.
+     * Updates a budget. You can change every part of a budget except for the budgetName and the calculatedSpend. When you modify a budget, the calculatedSpend drops to zero until AWS has new usage data to use for forecasting.
      */
   def updateBudget(
     params: js.Any,

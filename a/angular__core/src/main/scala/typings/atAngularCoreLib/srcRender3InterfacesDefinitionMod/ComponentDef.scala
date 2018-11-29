@@ -8,18 +8,24 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ComponentDef[T] extends DirectiveDef[T] {
   /**
+       * Used to store the result of `noSideEffects` function so that it is not removed by closure
+       * compiler. The property should never be read.
+       */
+  val `_`: js.UndefOr[scala.Nothing] = js.native
+  /**
        * The number of nodes, local refs, and pipes in this component template.
        *
        * Used to calculate the length of the component's LViewData array, so we
        * can pre-fill the array and set the binding start index.
        */
-  var consts: scala.Double = js.native
+  val consts: scala.Double = js.native
   /**
        * Defines arbitrary developer-defined data to be stored on a renderer instance.
        * This is useful for renderers that delegate to other renderers.
        */
   val data: ScalablyTyped.runtime.StringDictionary[js.Any] = js.native
   /**
+    
        * Registry of directives and components that may be found in this view.
        *
        * The property is either an array of `DirectiveDef`s or a function which returns the array of
@@ -39,7 +45,7 @@ trait ComponentDef[T] extends DirectiveDef[T] {
   /**
        * Runtime unique component ID.
        */
-  var id: java.lang.String = js.native
+  val id: java.lang.String = js.native
   /** Whether or not this component's ChangeDetectionStrategy is OnPush */
   val onPush: scala.Boolean = js.native
   /**
@@ -49,11 +55,6 @@ trait ComponentDef[T] extends DirectiveDef[T] {
        * `PipeDefs`s. The function is necessary to be able to support forward declarations.
        */
   var pipeDefs: PipeDefListOrFactory | scala.Null = js.native
-  /**
-       * Defines the set of injectable providers that are visible to a Directive and its content DOM
-       * children.
-       */
-  val providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] | scala.Null = js.native
   /**
        * A set of styles that the component needs to be present for component to render correctly.
        */
@@ -69,12 +70,7 @@ trait ComponentDef[T] extends DirectiveDef[T] {
        * Used to calculate the length of the component's LViewData array, so we
        * can pre-fill the array and set the host binding start index.
        */
-  var vars: scala.Double = js.native
-  /**
-       * Defines the set of injectable providers that are visible to a Directive and its view DOM
-       * children only.
-       */
-  val viewProviders: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] | scala.Null = js.native
+  val vars: scala.Double = js.native
   /**
        * Query-related instructions for a component.
        */

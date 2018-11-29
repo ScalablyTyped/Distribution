@@ -126,7 +126,7 @@ trait FileReader extends EventTarget {
   def readAsBinaryString(blob: Blob): scala.Unit = js.native
   def readAsDataURL(blob: Blob): scala.Unit = js.native
   def readAsText(blob: Blob): scala.Unit = js.native
-  def readAsText(blob: Blob, label: java.lang.String): scala.Unit = js.native
+  def readAsText(blob: Blob, encoding: java.lang.String): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_abort(
     `type`: stdLib.stdLibStrings.abort,

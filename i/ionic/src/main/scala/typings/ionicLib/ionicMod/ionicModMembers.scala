@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object ionicModMembers extends js.Object {
   val ASSETS_DIRECTORY: java.lang.String = js.native
   val INTEGRATION_NAMES: js.Array[ionicLib.definitionsMod.IntegrationName] = js.native
-  val MULTI_PROJECT_TYPES: js.Array[ionicLib.definitionsMod.ProjectType] = js.native
   val PROJECT_FILE: /* ionic.config.json */ java.lang.String = js.native
   val PROJECT_TYPES: js.Array[ionicLib.definitionsMod.ProjectType] = js.native
   def generateContext(): stdLib.Promise[ionicLib.definitionsMod.IonicContext] = js.native
@@ -21,6 +20,8 @@ object ionicModMembers extends js.Object {
   def isAppAssociationResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
   def isAppResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
   def isAppsResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
+  def isAuthConnection(connection: js.Any): /* is AuthConnection */scala.Boolean = js.native
+  def isAuthConnectionResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
   def isBitbucketCloudRepoAssociation(association: js.Any): /* is BitbucketCloudRepoAssociation */scala.Boolean = js.native
   def isBitbucketServerRepoAssociation(association: js.Any): /* is BitbucketServerRepoAssociation */scala.Boolean = js.native
   def isCommand(cmd: js.Any): /* is ICommand */scala.Boolean = js.native
@@ -35,7 +36,7 @@ object ionicModMembers extends js.Object {
   def isIntegrationName(name: js.Any): /* is IntegrationName */scala.Boolean = js.native
   def isLogin(login: js.Any): /* is Login */scala.Boolean = js.native
   def isLoginResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
-  def isMultiProjectConfig(configFile: js.Any): /* is MultiProjectConfig */scala.Boolean = js.native
+  def isMultiProjectConfig(configFile: js.Any): /* is IMultiProjectConfig */scala.Boolean = js.native
   def isOAuthLogin(login: js.Any): /* is OAuthLogin */scala.Boolean = js.native
   def isOAuthLoginResponse(res: js.Any): /* is Response */scala.Boolean = js.native
   def isOrg(org: js.Any): /* is Org */scala.Boolean = js.native
@@ -53,12 +54,8 @@ object ionicModMembers extends js.Object {
   def isTreatableAilment(ailment: js.Any): /* is TreatableAilment */scala.Boolean = js.native
   def isUser(user: js.Any): /* is User */scala.Boolean = js.native
   def isUserResponse(res: ionicLib.definitionsMod.APIResponse): /* is Response */scala.Boolean = js.native
-  def loadExecutor(
-    ctx: ionicLib.definitionsMod.IonicContext,
-    pargv: js.Array[java.lang.String],
-    env: nodeLib.NodeJSNs.ProcessEnv
-  ): stdLib.Promise[ionicLib.libExecutorMod.Executor] = js.native
+  def loadExecutor(ctx: ionicLib.definitionsMod.IonicContext, pargv: js.Array[java.lang.String]): stdLib.Promise[ionicLib.libExecutorMod.Executor] = js.native
   def receive(msg: ionicLib.definitionsMod.IPCMessage): stdLib.Promise[scala.Unit] = js.native
-  def run(pargv: js.Array[java.lang.String], env: nodeLib.NodeJSNs.ProcessEnv): stdLib.Promise[scala.Unit] = js.native
+  def run(pargv: js.Array[java.lang.String]): stdLib.Promise[scala.Unit] = js.native
 }
 

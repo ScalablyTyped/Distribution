@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait IColorPickerGridCellProps extends js.Object {
   /**
        * Width of the border that indicates a selected/hovered cell, in pixels
-       * @default 2
+       * @defaultvalue 2
        */
   var borderWidth: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -26,7 +26,7 @@ trait IColorPickerGridCellProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Height of the cell, in pixels
-       * @default 20
+       * @defaultvalue 20
        */
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -122,7 +122,7 @@ trait IColorPickerGridCellProps extends js.Object {
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
        * Width of the cell, in pixels
-       * @default 20
+       * @defaultvalue 20
        */
   var width: js.UndefOr[scala.Double] = js.undefined
 }

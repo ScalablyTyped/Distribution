@@ -5,15 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait ByteLengthQueuingStrategy extends js.Object {
-  var highWaterMark: scala.Double = js.native
-  def size(): scala.Double = js.native
-  def size(chunk: js.Any): scala.Double = js.native
+
+trait ByteLengthQueuingStrategy extends QueuingStrategy[ArrayBufferView] {
+  @JSName("highWaterMark")
+  var highWaterMark_ByteLengthQueuingStrategy: scala.Double
+  @JSName("size")
+  def size_MByteLengthQueuingStrategy(chunk: ArrayBufferView): scala.Double
 }
 
 @JSGlobal("ByteLengthQueuingStrategy")
 @js.native
 object ByteLengthQueuingStrategy
-  extends ScalablyTyped.runtime.Instantiable1[/* strategy */ QueuingStrategy, ByteLengthQueuingStrategy]
+  extends ScalablyTyped.runtime.Instantiable1[/* options */ Anon_HighWaterMarkNumber, ByteLengthQueuingStrategy]
 

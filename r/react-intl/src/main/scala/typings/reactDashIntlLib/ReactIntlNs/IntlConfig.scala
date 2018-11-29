@@ -12,5 +12,6 @@ trait IntlConfig extends js.Object {
   var formats: reactLib.reactMod.ReactNs.Requireable[_]
   var locale: reactLib.reactMod.ReactNs.Requireable[_]
   var messages: reactLib.reactMod.ReactNs.Requireable[_]
+  var onError: reactLib.reactMod.ReactNs.Requireable[_]
 }
 

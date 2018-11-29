@@ -26,6 +26,13 @@ trait DialogOptions extends js.Object {
            */
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
+           * Determines if the pop-up blocker dialog will be shown to the user. Defaults to true.
+           * 
+           * `true` - The framework displays a pop-up to trigger the navigation and avoid the browser's pop-up blocker.
+           * `false` - The dialog will not be shown and the developer must handle pop-ups (by providing a user interface artifact to trigger the navigation).
+           */
+  var promptBeforeOpen: js.UndefOr[scala.Boolean] = js.undefined
+  /**
            * Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
            */
   var width: js.UndefOr[scala.Double] = js.undefined

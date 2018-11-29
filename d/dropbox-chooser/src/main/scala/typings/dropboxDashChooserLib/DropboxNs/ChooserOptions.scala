@@ -21,7 +21,7 @@ trait ChooserOptions extends js.Object {
   var multiselect: js.UndefOr[scala.Boolean] = js.undefined
   // any positive number
   var sizeLimit: js.UndefOr[scala.Double] = js.undefined
-  // alled when a user selects an item in the Chooser
-  def success(files: js.Array[File]): scala.Unit
+  // called when a user selects an item in the Chooser
+  def success(files: js.Array[ChooserFile]): scala.Unit
 }
 

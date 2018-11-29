@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation._
 object reactDashApolloModMembers extends js.Object {
   val ApolloConsumer: reactLib.reactMod.ReactNs.StatelessComponent[reactDashApolloLib.apolloconsumerMod.ApolloConsumerProps] = js.native
   val compose: js.Any = js.native
-  def getDataFromTree(rootElement: reactLib.reactMod.ReactNs.ReactNode): stdLib.Promise[_] = js.native
-  def getDataFromTree(rootElement: reactLib.reactMod.ReactNs.ReactNode, rootContext: js.Any): stdLib.Promise[_] = js.native
+  def getDataFromTree(tree: reactLib.reactMod.ReactNs.ReactNode): stdLib.Promise[java.lang.String] = js.native
+  def getDataFromTree(tree: reactLib.reactMod.ReactNs.ReactNode, context: ScalablyTyped.runtime.StringDictionary[js.Any]): stdLib.Promise[java.lang.String] = js.native
+  def getMarkupFromTree(hasTreeContextRenderFunction: reactDashApolloLib.getDataFromTreeMod.GetMarkupFromTreeOptions): stdLib.Promise[java.lang.String] = js.native
   def graphql[TProps /* <: TGraphQLVariables | js.Object */, TData, TGraphQLVariables, TChildProps](document: graphqlLib.languageAstMod.DocumentNode): js.Function1[
     /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[TChildProps with TProps], 
     reactLib.reactMod.ReactNs.ComponentClass[TProps, _]
@@ -26,25 +27,25 @@ object reactDashApolloModMembers extends js.Object {
   def renderToStringWithData(component: reactLib.reactMod.ReactNs.ReactElement[_]): stdLib.Promise[java.lang.String] = js.native
   def walkTree(
     element: reactLib.reactMod.ReactNs.ReactNode,
-    context: reactDashApolloLib.getDataFromTreeMod.Context,
+    context: reactDashApolloLib.walkTreeMod.Context,
     visitor: js.Function5[
       /* element */ reactLib.reactMod.ReactNs.ReactNode, 
       /* instance */ (reactLib.reactMod.Component[_, js.Object, _]) | scala.Null, 
       /* newContextMap */ lodashLib.lodashMod.Global.Map[_, _], 
-      /* context */ reactDashApolloLib.getDataFromTreeMod.Context, 
-      /* childContext */ js.UndefOr[reactDashApolloLib.getDataFromTreeMod.Context], 
+      /* context */ reactDashApolloLib.walkTreeMod.Context, 
+      /* childContext */ js.UndefOr[reactDashApolloLib.walkTreeMod.Context], 
       scala.Boolean | scala.Unit
     ]
   ): scala.Unit = js.native
   def walkTree(
     element: reactLib.reactMod.ReactNs.ReactNode,
-    context: reactDashApolloLib.getDataFromTreeMod.Context,
+    context: reactDashApolloLib.walkTreeMod.Context,
     visitor: js.Function5[
       /* element */ reactLib.reactMod.ReactNs.ReactNode, 
       /* instance */ (reactLib.reactMod.Component[_, js.Object, _]) | scala.Null, 
       /* newContextMap */ lodashLib.lodashMod.Global.Map[_, _], 
-      /* context */ reactDashApolloLib.getDataFromTreeMod.Context, 
-      /* childContext */ js.UndefOr[reactDashApolloLib.getDataFromTreeMod.Context], 
+      /* context */ reactDashApolloLib.walkTreeMod.Context, 
+      /* childContext */ js.UndefOr[reactDashApolloLib.walkTreeMod.Context], 
       scala.Boolean | scala.Unit
     ],
     newContext: lodashLib.lodashMod.Global.Map[_, _]

@@ -22,7 +22,8 @@ trait IColumn extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Defines how the column's header should render.
-       * @default ColumnActionsMode.clickable */
+       * @defaultvalue ColumnActionsMode.clickable
+       */
   var columnActionsMode: js.UndefOr[ColumnActionsMode] = js.undefined
   /**
        * Internal only value.
@@ -91,7 +92,7 @@ trait IColumn extends js.Object {
   /**
        * Optional flag on whether the column is a header for the given row. There should be only one column with
        * row header set to true.
-       * @default false
+       * @defaultvalue false
        */
   var isRowHeader: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -138,6 +139,13 @@ trait IColumn extends js.Object {
       _
     ]
   ] = js.undefined
+  /**
+       * If provided, will be executed when the column is resized with the column's current width.
+       * Prefer this callback over `DetailsList` `onColumnResize` if you require the `IColumn` to
+       * report its width after every resize event. Consider debouncing the callback if resize events
+       * occur frequently.
+       */
+  var onColumnResize: js.UndefOr[js.Function1[/* width */ js.UndefOr[scala.Double], scala.Unit]] = js.undefined
   /**
        * If provided uses this method to render custom cell content, rather than the default text rendering.
        */

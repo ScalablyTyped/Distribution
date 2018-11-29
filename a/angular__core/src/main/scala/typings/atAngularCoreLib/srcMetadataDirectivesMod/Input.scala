@@ -50,6 +50,7 @@ trait Input extends js.Object {
        *
        * class App {}
        * ```
+       *
        */
   var bindingPropertyName: js.UndefOr[java.lang.String] = js.undefined
 }

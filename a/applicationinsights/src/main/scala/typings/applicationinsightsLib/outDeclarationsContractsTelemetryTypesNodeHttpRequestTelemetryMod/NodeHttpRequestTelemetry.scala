@@ -19,7 +19,7 @@ trait NodeHttpRequestTelemetry
   /**
        * HTTP request object
        */
-  var request: js.Any
+  var request: nodeLib.httpMod.IncomingMessage
   /**
        * HTTP response object
        */

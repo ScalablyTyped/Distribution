@@ -48,7 +48,7 @@ object editorNs extends js.Object {
     val links: scala.Boolean
     val matchBrackets: scala.Boolean
     val occurrencesHighlight: scala.Boolean
-    val parameterHints: scala.Boolean
+    val parameterHints: InternalParameterHintOptions
     val quickSuggestions: scala.Boolean | monacoDashEditorLib.Anon_Strings
     val quickSuggestionsDelay: scala.Double
     val selectionClipboard: scala.Boolean
@@ -59,6 +59,7 @@ object editorNs extends js.Object {
     val suggestLineHeight: scala.Double
     val suggestOnTriggerCharacters: scala.Boolean
     val suggestSelection: monacoDashEditorLib.monacoDashEditorLibStrings.first | monacoDashEditorLib.monacoDashEditorLibStrings.recentlyUsed | monacoDashEditorLib.monacoDashEditorLibStrings.recentlyUsedByPrefix
+    val tabCompletion: monacoDashEditorLib.monacoDashEditorLibStrings.on | monacoDashEditorLib.monacoDashEditorLibStrings.off | monacoDashEditorLib.monacoDashEditorLibStrings.onlySnippets
     val wordBasedSuggestions: scala.Boolean
   }
   
@@ -172,13 +173,14 @@ object editorNs extends js.Object {
   @js.native
   class FindMatch () extends js.Object {
     var _findMatchBrand: scala.Unit = js.native
-    val matches: js.Array[java.lang.String] = js.native
+    val matches: js.Array[java.lang.String] | scala.Null = js.native
     val range: monacoDashEditorLib.monacoDashEditorMod.Range = js.native
   }
   
   @js.native
   class FontInfo () extends BareFontInfo {
     val _editorStylingBrand: scala.Unit = js.native
+    val canUseHalfwidthRightwardsArrow: scala.Boolean = js.native
     val isMonospace: scala.Boolean = js.native
     val isTrusted: scala.Boolean = js.native
     val maxDigitWidth: scala.Double = js.native
@@ -225,9 +227,9 @@ object editorNs extends js.Object {
     var precondition: js.UndefOr[java.lang.String] = js.undefined
     /**
              * Method that will be executed when the action is triggered.
-             * @param editor The editor instance is passed in as a convinience
+             * @param editor The editor instance is passed in as a convenience
              */
-    def run(editor: ICodeEditor): scala.Unit | (monacoDashEditorLib.monacoDashEditorMod.Promise[scala.Unit, _])
+    def run(editor: ICodeEditor): scala.Unit | monacoDashEditorLib.monacoDashEditorMod.Promise[scala.Unit]
   }
   
   
@@ -281,11 +283,11 @@ object editorNs extends js.Object {
              */
     def executeCommand(source: java.lang.String, command: ICommand): scala.Unit = js.native
     /**
-             * Execute multiple (concommitent) commands on the editor.
+             * Execute multiple (concomitant) commands on the editor.
              * @param source The source of the call.
              * @param command The commands to execute
              */
-    def executeCommands(source: java.lang.String, commands: js.Array[ICommand]): scala.Unit = js.native
+    def executeCommands(source: java.lang.String, commands: js.Array[ICommand | scala.Null]): scala.Unit = js.native
     /**
              * Execute edits on the editor.
              * The edits will land on the undo-redo stack, but no "undo stop" will be pushed.
@@ -325,7 +327,7 @@ object editorNs extends js.Object {
     /**
              * Returns the editor's dom node
              */
-    def getDomNode(): stdLib.HTMLElement = js.native
+    def getDomNode(): stdLib.HTMLElement | scala.Null = js.native
     /**
              * Get the layout info for the editor.
              */
@@ -333,7 +335,7 @@ object editorNs extends js.Object {
     /**
              * Get all the decorations on a line (filtering out decorations from other editors).
              */
-    def getLineDecorations(lineNumber: scala.Double): js.Array[IModelDecoration] = js.native
+    def getLineDecorations(lineNumber: scala.Double): js.Array[IModelDecoration] | scala.Null = js.native
     /**
              * Get the horizontal position (left offset) for the column w.r.t to the beginning of the line.
              * This method works only if the line `lineNumber` is currently rendered (in the editor's viewport).
@@ -361,16 +363,16 @@ object editorNs extends js.Object {
              * The result position takes scrolling into account and is relative to the top left corner of the editor.
              * Explanation 1: the results of this method will change for the same `position` if the user scrolls the editor.
              * Explanation 2: the results of this method will not change if the container of the editor gets repositioned.
-             * Warning: the results of this method are innacurate for positions that are outside the current editor viewport.
+             * Warning: the results of this method are inaccurate for positions that are outside the current editor viewport.
              */
-    def getScrolledVisiblePosition(position: monacoDashEditorLib.monacoDashEditorMod.IPosition): monacoDashEditorLib.Anon_Top = js.native
+    def getScrolledVisiblePosition(position: monacoDashEditorLib.monacoDashEditorMod.IPosition): monacoDashEditorLib.Anon_Top | scala.Null = js.native
     /**
              * Get the hit test target at coordinates `clientX` and `clientY`.
              * The coordinates are relative to the top-left of the viewport.
              *
              * @returns Hit test target or null if the coordinates fall outside the editor or the editor has no model.
              */
-    def getTargetAtClientPoint(clientX: scala.Double, clientY: scala.Double): IMouseTarget = js.native
+    def getTargetAtClientPoint(clientX: scala.Double, clientY: scala.Double): IMouseTarget | scala.Null = js.native
     /**
              * Get the vertical position (top offset) for the line w.r.t. to the first line.
              */
@@ -400,14 +402,22 @@ object editorNs extends js.Object {
     def hasWidgetFocus(): scala.Boolean = js.native
     /**
              * Layout/Reposition a content widget. This is a ping to the editor to call widget.getPosition()
-             * and update appropiately.
+             * and update appropriately.
              */
     def layoutContentWidget(widget: IContentWidget): scala.Unit = js.native
     /**
              * Layout/Reposition an overlay widget. This is a ping to the editor to call widget.getPosition()
-             * and update appropiately.
+             * and update appropriately.
              */
     def layoutOverlayWidget(widget: IOverlayWidget): scala.Unit = js.native
+    /**
+             * An event emitted after composition has ended.
+             */
+    def onCompositionEnd(listener: js.Function0[scala.Unit]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
+    /**
+             * An event emitted after composition has started.
+             */
+    def onCompositionStart(listener: js.Function0[scala.Unit]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
     /**
              * An event emitted on a "contextmenu".
              * @event
@@ -507,7 +517,7 @@ object editorNs extends js.Object {
              * An event emitted on a "mouseleave".
              * @event
              */
-    def onMouseLeave(listener: js.Function1[/* e */ IEditorMouseEvent, scala.Unit]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
+    def onMouseLeave(listener: js.Function1[/* e */ IPartialEditorMouseEvent, scala.Unit]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
     /**
              * An event emitted on a "mousemove".
              * @event
@@ -538,6 +548,15 @@ object editorNs extends js.Object {
              * Restores the view state of the editor from a serializable object generated by `saveViewState`.
              */
     def restoreViewState(state: ICodeEditorViewState): scala.Unit = js.native
+    /**
+             * Sets the current model attached to this editor.
+             * If the previous model was created by the editor via the value key in the options
+             * literal object, it will be destroyed. Otherwise, if the previous model was set
+             * via setModel, or the model key in the options literal object, the previous model
+             * will not be destroyed.
+             * It is safe to call setModel(null) to simply detach the current model from the editor.
+             */
+    def setModel(model: ITextModel): scala.Unit = js.native
     /**
              * Change the scrollLeft of the editor's viewport.
              */
@@ -583,7 +602,7 @@ object editorNs extends js.Object {
   trait ICommand extends js.Object {
     /**
              * Compute the cursor state after the edit operations were applied.
-             * @param model The model the commad has executed on.
+             * @param model The model the command has executed on.
              * @param helper A helper to get inverse edit operations and to get previously tracked selections.
              * @return The cursor state after the command executed.
              */
@@ -600,9 +619,12 @@ object editorNs extends js.Object {
   trait IConfigurationChangedEvent extends js.Object {
     val accessibilitySupport: scala.Boolean
     val autoClosingBrackets: scala.Boolean
+    val autoClosingQuotes: scala.Boolean
     val autoIndent: scala.Boolean
+    val autoSurround: scala.Boolean
     val canUseLayerHinting: scala.Boolean
     val contribInfo: scala.Boolean
+    val copyWithSyntaxHighlighting: scala.Boolean
     val dragAndDrop: scala.Boolean
     val editorClassName: scala.Boolean
     val emptySelectionClipboard: scala.Boolean
@@ -639,7 +661,7 @@ object editorNs extends js.Object {
              * Get the placement of the content widget.
              * If null is returned, the content widget will be placed off screen.
              */
-    def getPosition(): IContentWidgetPosition
+    def getPosition(): IContentWidgetPosition | scala.Null
   }
   
   
@@ -648,16 +670,21 @@ object editorNs extends js.Object {
              * Desired position for the content widget.
              * `preference` will also affect the placement.
              */
-    var position: monacoDashEditorLib.monacoDashEditorMod.IPosition
+    var position: monacoDashEditorLib.monacoDashEditorMod.IPosition | scala.Null
     /**
              * Placement preference for position, in order of preference.
              */
     var preference: js.Array[ContentWidgetPositionPreference]
+    /**
+             * Optionally, a range can be provided to further
+             * define the position of the content widget.
+             */
+    var range: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.IRange | scala.Null] = js.undefined
   }
   
   
   trait IContextKey[T] extends js.Object {
-    def get(): T
+    def get(): js.UndefOr[T]
     def reset(): scala.Unit
     def set(value: T): scala.Unit
   }
@@ -729,12 +756,12 @@ object editorNs extends js.Object {
              * Get information based on computed diff about a line number from the modified model.
              * If the diff computation is not finished or the model is missing, will return null.
              */
-    def getDiffLineInformationForModified(lineNumber: scala.Double): IDiffLineInformation = js.native
+    def getDiffLineInformationForModified(lineNumber: scala.Double): IDiffLineInformation | scala.Null = js.native
     /**
              * Get information based on computed diff about a line number from the original model.
              * If the diff computation is not finished or the model is missing, will return null.
              */
-    def getDiffLineInformationForOriginal(lineNumber: scala.Double): IDiffLineInformation = js.native
+    def getDiffLineInformationForOriginal(lineNumber: scala.Double): IDiffLineInformation | scala.Null = js.native
     /**
              * @see ICodeEditor.getDomNode
              */
@@ -742,7 +769,7 @@ object editorNs extends js.Object {
     /**
              * Get the computed diff information.
              */
-    def getLineChanges(): js.Array[ILineChange] = js.native
+    def getLineChanges(): js.Array[ILineChange] | scala.Null = js.native
     /**
              * Get the `modified` editor.
              */
@@ -760,6 +787,15 @@ object editorNs extends js.Object {
              * Restores the view state of the editor from a serializable object generated by `saveViewState`.
              */
     def restoreViewState(state: IDiffEditorViewState): scala.Unit = js.native
+    /**
+             * Sets the current model attached to this editor.
+             * If the previous model was created by the editor via the value key in the options
+             * literal object, it will be destroyed. Otherwise, if the previous model was set
+             * via setModel, or the model key in the options literal object, the previous model
+             * will not be destroyed.
+             * It is safe to call setModel(null) to simply detach the current model from the editor.
+             */
+    def setModel(model: IDiffEditorModel): scala.Unit = js.native
   }
   
   
@@ -853,7 +889,20 @@ object editorNs extends js.Object {
              * @param range The range to replace (delete). May be empty to represent a simple insert.
              * @param text The text to replace with. May be null to represent a simple delete.
              */
+    def addEditOperation(range: monacoDashEditorLib.monacoDashEditorMod.Range): scala.Unit = js.native
+    /**
+             * Add a new edit operation (a replace operation).
+             * @param range The range to replace (delete). May be empty to represent a simple insert.
+             * @param text The text to replace with. May be null to represent a simple delete.
+             */
     def addEditOperation(range: monacoDashEditorLib.monacoDashEditorMod.Range, text: java.lang.String): scala.Unit = js.native
+    /**
+             * Add a new edit operation (a replace operation).
+             * The inverse edits will be accessible in `ICursorStateComputerData.getInverseEditOperations()`
+             * @param range The range to replace (delete). May be empty to represent a simple insert.
+             * @param text The text to replace with. May be null to represent a simple delete.
+             */
+    def addTrackedEditOperation(range: monacoDashEditorLib.monacoDashEditorMod.Range): scala.Unit = js.native
     /**
              * Add a new edit operation (a replace operation).
              * The inverse edits will be accessible in `ICursorStateComputerData.getInverseEditOperations()`
@@ -868,7 +917,7 @@ object editorNs extends js.Object {
              * @param selection The selection to track.
              * @param trackPreviousOnEmpty If set, and the selection is empty, indicates whether the selection
              *           should clamp to the previous or the next character.
-             * @return A unique identifer.
+             * @return A unique identifier.
              */
     def trackSelection(selection: monacoDashEditorLib.monacoDashEditorMod.Selection): java.lang.String = js.native
     /**
@@ -878,7 +927,7 @@ object editorNs extends js.Object {
              * @param selection The selection to track.
              * @param trackPreviousOnEmpty If set, and the selection is empty, indicates whether the selection
              *           should clamp to the previous or the next character.
-             * @return A unique identifer.
+             * @return A unique identifier.
              */
     def trackSelection(selection: monacoDashEditorLib.monacoDashEditorMod.Selection, trackPreviousOnEmpty: scala.Boolean): java.lang.String = js.native
   }
@@ -909,15 +958,15 @@ object editorNs extends js.Object {
     /**
              * Returns the primary position of the cursor.
              */
-    def getPosition(): monacoDashEditorLib.monacoDashEditorMod.Position = js.native
+    def getPosition(): monacoDashEditorLib.monacoDashEditorMod.Position | scala.Null = js.native
     /**
              * Returns the primary selection of the editor.
              */
-    def getSelection(): monacoDashEditorLib.monacoDashEditorMod.Selection = js.native
+    def getSelection(): monacoDashEditorLib.monacoDashEditorMod.Selection | scala.Null = js.native
     /**
              * Returns all the selections of the editor.
              */
-    def getSelections(): js.Array[monacoDashEditorLib.monacoDashEditorMod.Selection] = js.native
+    def getSelections(): js.Array[monacoDashEditorLib.monacoDashEditorMod.Selection] | scala.Null = js.native
     /**
              * Returns all actions associated with this editor.
              */
@@ -1056,7 +1105,7 @@ object editorNs extends js.Object {
     /**
              * Saves current view state of the editor in a serializable object.
              */
-    def saveViewState(): IEditorViewState = js.native
+    def saveViewState(): IEditorViewState | scala.Null = js.native
     /**
              * Sets the current model attached to this editor.
              * If the previous model was created by the editor via the value key in the options
@@ -1124,7 +1173,7 @@ object editorNs extends js.Object {
     val id: java.lang.String
     val label: java.lang.String
     def isSupported(): scala.Boolean
-    def run(): monacoDashEditorLib.monacoDashEditorMod.Promise[scala.Unit, _]
+    def run(): monacoDashEditorLib.monacoDashEditorMod.Promise[scala.Unit]
   }
   
   
@@ -1223,7 +1272,7 @@ object editorNs extends js.Object {
   trait IEditorMinimapOptions extends js.Object {
     /**
              * Enable the rendering of the minimap.
-             * Defaults to false.
+             * Defaults to true.
              */
     var enabled: js.UndefOr[scala.Boolean] = js.undefined
     /**
@@ -1284,15 +1333,25 @@ object editorNs extends js.Object {
              */
     var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * Enable auto closing brackets.
-             * Defaults to true.
+             * Options for auto closing brackets.
+             * Defaults to language defined behavior.
              */
-    var autoClosingBrackets: js.UndefOr[scala.Boolean] = js.undefined
+    var autoClosingBrackets: js.UndefOr[EditorAutoClosingStrategy] = js.undefined
+    /**
+             * Options for auto closing quotes.
+             * Defaults to language defined behavior.
+             */
+    var autoClosingQuotes: js.UndefOr[EditorAutoClosingStrategy] = js.undefined
     /**
              * Enable auto indentation adjustment.
              * Defaults to false.
              */
     var autoIndent: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+             * Options for auto surrounding.
+             * Defaults to always allowing auto surrounding.
+             */
+    var autoSurround: js.UndefOr[EditorAutoSurroundStrategy] = js.undefined
     /**
              * Enable that the editor will install an interval to check if its container dom node size has changed.
              * Enabling this might have a severe performance impact.
@@ -1321,6 +1380,10 @@ object editorNs extends js.Object {
              * Defaults to true.
              */
     var contextmenu: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+             * Syntax highlighting is copied.
+             */
+    var copyWithSyntaxHighlighting: js.UndefOr[scala.Boolean] = js.undefined
     /**
              * Control the cursor animation style, possible values are 'blink', 'smooth', 'phase', 'expand' and 'solid'.
              * Defaults to 'blink'.
@@ -1519,9 +1582,9 @@ object editorNs extends js.Object {
              */
     var overviewRulerLanes: js.UndefOr[scala.Double] = js.undefined
     /**
-             * Enables parameter hints
+             * Parameter hint options.
              */
-    var parameterHints: js.UndefOr[scala.Boolean] = js.undefined
+    var parameterHints: js.UndefOr[IEditorParameterHintOptions] = js.undefined
     /**
              * Enable quick suggestions (shadow suggestions)
              * Defaults to true.
@@ -1660,6 +1723,12 @@ object editorNs extends js.Object {
         monacoDashEditorLib.monacoDashEditorLibStrings.first | monacoDashEditorLib.monacoDashEditorLibStrings.recentlyUsed | monacoDashEditorLib.monacoDashEditorLibStrings.recentlyUsedByPrefix
       ] = js.undefined
     /**
+             * Enable tab completion.
+             */
+    var tabCompletion: js.UndefOr[
+        scala.Boolean | monacoDashEditorLib.monacoDashEditorLibStrings.on | monacoDashEditorLib.monacoDashEditorLibStrings.off | monacoDashEditorLib.monacoDashEditorLibStrings.onlySnippets
+      ] = js.undefined
+    /**
              * Inserting and deleting whitespace follows tab stops.
              */
     var useTabStops: js.UndefOr[scala.Boolean] = js.undefined
@@ -1724,6 +1793,20 @@ object editorNs extends js.Object {
     extends /* index */ ScalablyTyped.runtime.StringDictionary[js.Any]
   
   
+  trait IEditorParameterHintOptions extends js.Object {
+    /**
+             * Enable cycling of parameter hints.
+             * Defaults to false.
+             */
+    var cycle: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+             * Enable parameter hints.
+             * Defaults to true.
+             */
+    var enabled: js.UndefOr[scala.Boolean] = js.undefined
+  }
+  
+  
   trait IEditorScrollbarOptions extends js.Object {
     /**
              * The size of arrows (if displayed).
@@ -1737,10 +1820,11 @@ object editorNs extends js.Object {
     var handleMouseWheel: js.UndefOr[scala.Boolean] = js.undefined
     /**
              * Render horizontal scrollbar.
-             * Accepted values: 'auto', 'visible', 'hidden'.
              * Defaults to 'auto'.
              */
-    var horizontal: js.UndefOr[java.lang.String] = js.undefined
+    var horizontal: js.UndefOr[
+        monacoDashEditorLib.monacoDashEditorLibStrings.auto | monacoDashEditorLib.monacoDashEditorLibStrings.visible | monacoDashEditorLib.monacoDashEditorLibStrings.hidden
+      ] = js.undefined
     /**
              * Render arrows at the left and right of the horizontal scrollbar.
              * Defaults to false.
@@ -1763,10 +1847,11 @@ object editorNs extends js.Object {
     var useShadows: js.UndefOr[scala.Boolean] = js.undefined
     /**
              * Render vertical scrollbar.
-             * Accepted values: 'auto', 'visible', 'hidden'.
              * Defaults to 'auto'.
              */
-    var vertical: js.UndefOr[java.lang.String] = js.undefined
+    var vertical: js.UndefOr[
+        monacoDashEditorLib.monacoDashEditorLibStrings.auto | monacoDashEditorLib.monacoDashEditorLibStrings.visible | monacoDashEditorLib.monacoDashEditorLibStrings.hidden
+      ] = js.undefined
     /**
              * Render arrows at the top and bottom of the vertical scrollbar.
              * Defaults to false.
@@ -1798,12 +1883,12 @@ object editorNs extends js.Object {
     /**
              * The text to replace with. This can be null to emulate a simple delete.
              */
-    var text: java.lang.String
+    var text: java.lang.String | scala.Null
   }
   
   
   trait ILineChange extends IChange {
-    val charChanges: js.Array[ICharChange]
+    val charChanges: js.UndefOr[js.Array[ICharChange]]
   }
   
   
@@ -1841,11 +1926,11 @@ object editorNs extends js.Object {
     /**
              * The `uri` of the new model or null.
              */
-    val newModelUrl: monacoDashEditorLib.monacoDashEditorMod.Uri
+    val newModelUrl: monacoDashEditorLib.monacoDashEditorMod.Uri | scala.Null
     /**
              * The `uri` of the previous model or null.
              */
-    val oldModelUrl: monacoDashEditorLib.monacoDashEditorMod.Uri
+    val oldModelUrl: monacoDashEditorLib.monacoDashEditorMod.Uri | scala.Null
   }
   
   
@@ -1905,7 +1990,7 @@ object editorNs extends js.Object {
              */
     val options: IModelDecorationOptions
     /**
-             * Identifier for a decoration's owener.
+             * Identifier for a decoration's owner.
              */
     val ownerId: scala.Double
     /**
@@ -1919,37 +2004,37 @@ object editorNs extends js.Object {
     /**
              * If set, the decoration will be rendered after the text with this CSS class name.
              */
-    var afterContentClassName: js.UndefOr[java.lang.String] = js.undefined
+    var afterContentClassName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
     /**
              * If set, the decoration will be rendered before the text with this CSS class name.
              */
-    var beforeContentClassName: js.UndefOr[java.lang.String] = js.undefined
+    var beforeContentClassName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
     /**
              * CSS class name describing the decoration.
              */
-    var className: js.UndefOr[java.lang.String] = js.undefined
+    var className: js.UndefOr[java.lang.String | scala.Null] = js.undefined
     /**
              * If set, the decoration will be rendered in the glyph margin with this CSS class name.
              */
-    var glyphMarginClassName: js.UndefOr[java.lang.String] = js.undefined
+    var glyphMarginClassName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
     /**
              * Message to be rendered when hovering over the glyph margin decoration.
              */
     var glyphMarginHoverMessage: js.UndefOr[
-        monacoDashEditorLib.monacoDashEditorMod.IMarkdownString | js.Array[monacoDashEditorLib.monacoDashEditorMod.IMarkdownString]
+        monacoDashEditorLib.monacoDashEditorMod.IMarkdownString | js.Array[monacoDashEditorLib.monacoDashEditorMod.IMarkdownString] | scala.Null
       ] = js.undefined
     /**
              * Array of MarkdownString to render as the decoration message.
              */
     var hoverMessage: js.UndefOr[
-        monacoDashEditorLib.monacoDashEditorMod.IMarkdownString | js.Array[monacoDashEditorLib.monacoDashEditorMod.IMarkdownString]
+        monacoDashEditorLib.monacoDashEditorMod.IMarkdownString | js.Array[monacoDashEditorLib.monacoDashEditorMod.IMarkdownString] | scala.Null
       ] = js.undefined
     /**
              * If set, the decoration will be rendered inline with the text with this CSS class name.
              * Please use this only for CSS rules that must impact the text. For example, use `className`
              * to have a background color decoration.
              */
-    var inlineClassName: js.UndefOr[java.lang.String] = js.undefined
+    var inlineClassName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
     /**
              * If there is an `inlineClassName` which affects letter spacing.
              */
@@ -1961,15 +2046,15 @@ object editorNs extends js.Object {
     /**
              * If set, the decoration will be rendered in the lines decorations with this CSS class name.
              */
-    var linesDecorationsClassName: js.UndefOr[java.lang.String] = js.undefined
+    var linesDecorationsClassName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
     /**
              * If set, the decoration will be rendered in the margin (covering its full width) with this CSS class name.
              */
-    var marginClassName: js.UndefOr[java.lang.String] = js.undefined
+    var marginClassName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
     /**
              * If set, render this decoration in the overview ruler.
              */
-    var overviewRuler: js.UndefOr[IModelDecorationOverviewRulerOptions] = js.undefined
+    var overviewRuler: js.UndefOr[IModelDecorationOverviewRulerOptions | scala.Null] = js.undefined
     /**
              * Customize the growing behavior of the decoration when typing at the edges of the decoration.
              * Defaults to TrackedRangeStickiness.AlwaysGrowsWhenTypingAtEdges
@@ -1988,17 +2073,12 @@ object editorNs extends js.Object {
              * CSS color to render in the overview ruler.
              * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry
              */
-    var color: java.lang.String | ThemeColor
+    var color: js.UndefOr[java.lang.String | ThemeColor]
     /**
              * CSS color to render in the overview ruler.
              * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry
              */
-    var darkColor: java.lang.String | ThemeColor
-    /**
-             * CSS color to render in the overview ruler.
-             * e.g.: rgba(100, 100, 100, 0.5) or a color from the color registry
-             */
-    var hcColor: js.UndefOr[java.lang.String | ThemeColor] = js.undefined
+    var darkColor: js.UndefOr[java.lang.String | ThemeColor] = js.undefined
     /**
              * The position in the overview ruler.
              */
@@ -2056,7 +2136,7 @@ object editorNs extends js.Object {
     /**
              * The target element
              */
-    val element: stdLib.Element
+    val element: stdLib.Element | scala.Null
     /**
              * Desired mouse column (e.g. when position.column gets clamped to text length -- clicking after text on a line).
              */
@@ -2064,11 +2144,11 @@ object editorNs extends js.Object {
     /**
              * The 'approximate' editor position
              */
-    val position: monacoDashEditorLib.monacoDashEditorMod.Position
+    val position: monacoDashEditorLib.monacoDashEditorMod.Position | scala.Null
     /**
              * The 'approximate' editor range
              */
-    val range: monacoDashEditorLib.monacoDashEditorMod.Range
+    val range: monacoDashEditorLib.monacoDashEditorMod.Range | scala.Null
     /**
              * The target type
              */
@@ -2095,7 +2175,7 @@ object editorNs extends js.Object {
              * Get the placement of the overlay widget.
              * If null is returned, the overlay widget is responsible to place itself.
              */
-    def getPosition(): IOverlayWidgetPosition
+    def getPosition(): IOverlayWidgetPosition | scala.Null
   }
   
   
@@ -2103,7 +2183,13 @@ object editorNs extends js.Object {
     /**
              * The position preference for the overlay widget.
              */
-    var preference: OverlayWidgetPositionPreference
+    var preference: OverlayWidgetPositionPreference | scala.Null
+  }
+  
+  
+  trait IPartialEditorMouseEvent extends js.Object {
+    val event: monacoDashEditorLib.monacoDashEditorMod.IMouseEvent
+    val target: IMouseTarget | scala.Null
   }
   
   
@@ -2148,14 +2234,14 @@ object editorNs extends js.Object {
   @js.native
   trait IStandaloneCodeEditor extends ICodeEditor {
     def addAction(descriptor: IActionDescriptor): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
-    def addCommand(keybinding: scala.Double, handler: ICommandHandler, context: java.lang.String): java.lang.String = js.native
+    def addCommand(keybinding: scala.Double, handler: ICommandHandler, context: java.lang.String): java.lang.String | scala.Null = js.native
     def createContextKey[T](key: java.lang.String, defaultValue: T): IContextKey[T] = js.native
   }
   
   @js.native
   trait IStandaloneDiffEditor extends IDiffEditor {
     def addAction(descriptor: IActionDescriptor): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
-    def addCommand(keybinding: scala.Double, handler: ICommandHandler, context: java.lang.String): java.lang.String = js.native
+    def addCommand(keybinding: scala.Double, handler: ICommandHandler, context: java.lang.String): java.lang.String | scala.Null = js.native
     def createContextKey[T](key: java.lang.String, defaultValue: T): IContextKey[T] = js.native
   }
   
@@ -2174,6 +2260,10 @@ object editorNs extends js.Object {
              * Enable graceful matching. Defaults to true.
              */
     var filterGraceful: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+             * Favours words that appear close to the cursor.
+             */
+    var localityBonus: js.UndefOr[scala.Boolean] = js.undefined
     /**
              * Prevent quick suggestions when a snippet is active. Defaults to true.
              */
@@ -2198,7 +2288,7 @@ object editorNs extends js.Object {
              */
     def applyEdits(operations: js.Array[IIdentifiedSingleEditOperation]): js.Array[IIdentifiedSingleEditOperation] = js.native
     /**
-             * Perform a minimum ammount of operations, in order to transform the decorations
+             * Perform a minimum amount of operations, in order to transform the decorations
              * identified by `oldDecorations` to the decorations described by `newDecorations`
              * and returns the new identifiers associated with the resulting decorations.
              *
@@ -2209,7 +2299,7 @@ object editorNs extends js.Object {
              */
     def deltaDecorations(oldDecorations: js.Array[java.lang.String], newDecorations: js.Array[IModelDeltaDecoration]): js.Array[java.lang.String] = js.native
     /**
-             * Perform a minimum ammount of operations, in order to transform the decorations
+             * Perform a minimum amount of operations, in order to transform the decorations
              * identified by `oldDecorations` to the decorations described by `newDecorations`
              * and returns the new identifiers associated with the resulting decorations.
              *
@@ -2405,7 +2495,7 @@ object editorNs extends js.Object {
       matchCase: scala.Boolean,
       wordSeparators: java.lang.String,
       captureMatches: scala.Boolean
-    ): FindMatch = js.native
+    ): FindMatch | scala.Null = js.native
     /**
              * Search the model for the next match. Loops to the beginning of the model if needed.
              * @param searchString The string used to search. If it is a regular expression, set `isRegex` to true.
@@ -2423,7 +2513,7 @@ object editorNs extends js.Object {
       matchCase: scala.Boolean,
       wordSeparators: scala.Null,
       captureMatches: scala.Boolean
-    ): FindMatch = js.native
+    ): FindMatch | scala.Null = js.native
     /**
              * Search the model for the previous match. Loops to the end of the model if needed.
              * @param searchString The string used to search. If it is a regular expression, set `isRegex` to true.
@@ -2441,7 +2531,7 @@ object editorNs extends js.Object {
       matchCase: scala.Boolean,
       wordSeparators: java.lang.String,
       captureMatches: scala.Boolean
-    ): FindMatch = js.native
+    ): FindMatch | scala.Null = js.native
     /**
              * Search the model for the previous match. Loops to the end of the model if needed.
              * @param searchString The string used to search. If it is a regular expression, set `isRegex` to true.
@@ -2459,7 +2549,7 @@ object editorNs extends js.Object {
       matchCase: scala.Boolean,
       wordSeparators: scala.Null,
       captureMatches: scala.Boolean
-    ): FindMatch = js.native
+    ): FindMatch | scala.Null = js.native
     /**
              * Gets all the decorations as an array.
              * @param ownerId If set, it will ignore decorations belonging to other owners.
@@ -2489,15 +2579,15 @@ object editorNs extends js.Object {
              * @param id The decoration id.
              * @return The decoration options or null if the decoration was not found.
              */
-    def getDecorationOptions(id: java.lang.String): IModelDecorationOptions = js.native
+    def getDecorationOptions(id: java.lang.String): IModelDecorationOptions | scala.Null = js.native
     /**
              * Get the range associated with a decoration.
              * @param id The decoration id.
              * @return The decoration range or null if the decoration was not found.
              */
-    def getDecorationRange(id: java.lang.String): monacoDashEditorLib.monacoDashEditorMod.Range = js.native
+    def getDecorationRange(id: java.lang.String): monacoDashEditorLib.monacoDashEditorMod.Range | scala.Null = js.native
     /**
-             * Gets all the deocorations in a range as an array. Only `startLineNumber` and `endLineNumber` from `range` are used for filtering.
+             * Gets all the decorations in a range as an array. Only `startLineNumber` and `endLineNumber` from `range` are used for filtering.
              * So for now it returns all the decorations on the same line as `range`.
              * @param range The range to search in
              * @param ownerId If set, it will ignore decorations belonging to other owners.
@@ -2506,7 +2596,7 @@ object editorNs extends js.Object {
              */
     def getDecorationsInRange(range: monacoDashEditorLib.monacoDashEditorMod.IRange): js.Array[IModelDecoration] = js.native
     /**
-             * Gets all the deocorations in a range as an array. Only `startLineNumber` and `endLineNumber` from `range` are used for filtering.
+             * Gets all the decorations in a range as an array. Only `startLineNumber` and `endLineNumber` from `range` are used for filtering.
              * So for now it returns all the decorations on the same line as `range`.
              * @param range The range to search in
              * @param ownerId If set, it will ignore decorations belonging to other owners.
@@ -2515,7 +2605,7 @@ object editorNs extends js.Object {
              */
     def getDecorationsInRange(range: monacoDashEditorLib.monacoDashEditorMod.IRange, ownerId: scala.Double): js.Array[IModelDecoration] = js.native
     /**
-             * Gets all the deocorations in a range as an array. Only `startLineNumber` and `endLineNumber` from `range` are used for filtering.
+             * Gets all the decorations in a range as an array. Only `startLineNumber` and `endLineNumber` from `range` are used for filtering.
              * So for now it returns all the decorations on the same line as `range`.
              * @param range The range to search in
              * @param ownerId If set, it will ignore decorations belonging to other owners.
@@ -2734,14 +2824,12 @@ object editorNs extends js.Object {
     /**
              * Get the word under or besides `position`.
              * @param position The position to look for a word.
-             * @param skipSyntaxTokens Ignore syntax tokens, as identified by the mode.
              * @return The word under or besides `position`. Might be null.
              */
-    def getWordAtPosition(position: monacoDashEditorLib.monacoDashEditorMod.IPosition): IWordAtPosition = js.native
+    def getWordAtPosition(position: monacoDashEditorLib.monacoDashEditorMod.IPosition): IWordAtPosition | scala.Null = js.native
     /**
              * Get the word under or besides `position` trimmed to `position`.column
              * @param position The position to look for a word.
-             * @param skipSyntaxTokens Ignore syntax tokens, as identified by the mode.
              * @return The word under or besides `position`. Will never be null.
              */
     def getWordUntilPosition(position: monacoDashEditorLib.monacoDashEditorMod.IPosition): IWordAtPosition = js.native
@@ -2750,13 +2838,13 @@ object editorNs extends js.Object {
              */
     def isDisposed(): scala.Boolean = js.native
     /**
-             * Advances the given position by the given offest (negative offsets are also accepted)
+             * Advances the given position by the given offset (negative offsets are also accepted)
              * and returns it as a new valid position.
              *
              * If the offset and position are such that their combination goes beyond the beginning or
              * end of the model, throws an exception.
              *
-             * If the ofsset is such that the new position would be in the middle of a multi-byte
+             * If the offset is such that the new position would be in the middle of a multi-byte
              * line terminator, throws an exception.
              */
     def modifyPosition(position: monacoDashEditorLib.monacoDashEditorMod.IPosition, offset: scala.Double): monacoDashEditorLib.monacoDashEditorMod.Position = js.native
@@ -2802,7 +2890,7 @@ object editorNs extends js.Object {
     /**
              * Push edit operations, basically editing the model. This is the preferred way
              * of editing the model. The edit operations will land on the undo stack.
-             * @param beforeCursorState The cursor state before the edit operaions. This cursor state will be returned when `undo` or `redo` are invoked.
+             * @param beforeCursorState The cursor state before the edit operations. This cursor state will be returned when `undo` or `redo` are invoked.
              * @param editOperations The edit operations.
              * @param cursorStateComputer A callback that can compute the resulting cursors state after the edit operations have been executed.
              * @return The cursor state returned by the `cursorStateComputer`.
@@ -2811,7 +2899,7 @@ object editorNs extends js.Object {
       beforeCursorState: js.Array[monacoDashEditorLib.monacoDashEditorMod.Selection],
       editOperations: js.Array[IIdentifiedSingleEditOperation],
       cursorStateComputer: ICursorStateComputer
-    ): js.Array[monacoDashEditorLib.monacoDashEditorMod.Selection] = js.native
+    ): js.Array[monacoDashEditorLib.monacoDashEditorMod.Selection] | scala.Null = js.native
     /**
              * Push a stack element onto the undo stack. This acts as an undo/redo point.
              * The idea is to use `pushEditOperations` to edit the model and then to
@@ -2898,7 +2986,7 @@ object editorNs extends js.Object {
     /**
              * An optional dom node for the view zone that will be placed in the margin area.
              */
-    var marginDomNode: js.UndefOr[stdLib.HTMLElement] = js.undefined
+    var marginDomNode: js.UndefOr[stdLib.HTMLElement | scala.Null] = js.undefined
     /**
              * The minimum width in px of the view zone.
              * If this is set, the editor will ensure that the scroll width is >= than this value.
@@ -2998,10 +3086,13 @@ object editorNs extends js.Object {
   @js.native
   class InternalEditorOptions () extends js.Object {
     val _internalEditorOptionsBrand: scala.Unit = js.native
-    val autoClosingBrackets: scala.Boolean = js.native
+    val autoClosingBrackets: EditorAutoClosingStrategy = js.native
+    val autoClosingQuotes: EditorAutoClosingStrategy = js.native
     val autoIndent: scala.Boolean = js.native
+    val autoSurround: EditorAutoSurroundStrategy = js.native
     val canUseLayerHinting: scala.Boolean = js.native
     val contribInfo: EditorContribOptions = js.native
+    val copyWithSyntaxHighlighting: scala.Boolean = js.native
     val dragAndDrop: scala.Boolean = js.native
     val editorClassName: java.lang.String = js.native
     val emptySelectionClipboard: scala.Boolean = js.native
@@ -3054,6 +3145,7 @@ object editorNs extends js.Object {
     val overviewRulerBorder: scala.Boolean
     val overviewRulerLanes: scala.Double
     val renderControlCharacters: scala.Boolean
+    val renderCustomLineNumbers: (js.Function1[/* lineNumber */ scala.Double, java.lang.String]) | scala.Null
     val renderIndentGuides: scala.Boolean
     val renderLineHighlight: monacoDashEditorLib.monacoDashEditorLibStrings.none | monacoDashEditorLib.monacoDashEditorLibStrings.gutter | monacoDashEditorLib.monacoDashEditorLibStrings.line | monacoDashEditorLib.monacoDashEditorLibStrings.all
     val renderLineNumbers: RenderLineNumbersType
@@ -3067,12 +3159,18 @@ object editorNs extends js.Object {
     val selectOnLineNumbers: scala.Boolean
     val smoothScrolling: scala.Boolean
     val stopRenderingLineAfter: scala.Double
-    def renderCustomLineNumbers(lineNumber: scala.Double): java.lang.String
+  }
+  
+  
+  trait InternalParameterHintOptions extends js.Object {
+    val cycle: scala.Boolean
+    val enabled: scala.Boolean
   }
   
   
   trait InternalSuggestOptions extends js.Object {
     val filterGraceful: scala.Boolean
+    val localityBonus: scala.Boolean
     val snippets: monacoDashEditorLib.monacoDashEditorLibStrings.top | monacoDashEditorLib.monacoDashEditorLibStrings.bottom | monacoDashEditorLib.monacoDashEditorLibStrings.`inline` | monacoDashEditorLib.monacoDashEditorLibStrings.none
     val snippetsPreventQuickSuggestions: scala.Boolean
   }
@@ -3086,12 +3184,12 @@ object editorNs extends js.Object {
     /**
              * Get a proxy to the arbitrary loaded code.
              */
-    def getProxy(): monacoDashEditorLib.monacoDashEditorMod.Promise[T, _]
+    def getProxy(): monacoDashEditorLib.monacoDashEditorMod.Promise[T]
     /**
              * Synchronize (send) the models at `resources` to the web worker,
              * making them available in the monaco.worker.getMirrorModels().
              */
-    def withSyncedResources(resources: js.Array[monacoDashEditorLib.monacoDashEditorMod.Uri]): monacoDashEditorLib.monacoDashEditorMod.Promise[T, _]
+    def withSyncedResources(resources: js.Array[monacoDashEditorLib.monacoDashEditorMod.Uri]): monacoDashEditorLib.monacoDashEditorMod.Promise[T]
   }
   
   @js.native
@@ -3162,8 +3260,8 @@ object editorNs extends js.Object {
   sealed trait WrappingIndent extends js.Object
   
   val EditorType: monacoDashEditorLib.Anon_ICodeEditor = js.native
-  def colorize(text: java.lang.String, languageId: java.lang.String, options: IColorizerOptions): monacoDashEditorLib.monacoDashEditorMod.Promise[java.lang.String, _] = js.native
-  def colorizeElement(domNode: stdLib.HTMLElement, options: IColorizerElementOptions): monacoDashEditorLib.monacoDashEditorMod.Promise[scala.Unit, _] = js.native
+  def colorize(text: java.lang.String, languageId: java.lang.String, options: IColorizerOptions): monacoDashEditorLib.monacoDashEditorMod.Promise[java.lang.String] = js.native
+  def colorizeElement(domNode: stdLib.HTMLElement, options: IColorizerElementOptions): monacoDashEditorLib.monacoDashEditorMod.Promise[scala.Unit] = js.native
   def colorizeModelLine(model: ITextModel, lineNumber: scala.Double): java.lang.String = js.native
   def colorizeModelLine(model: ITextModel, lineNumber: scala.Double, tabSize: scala.Double): java.lang.String = js.native
   def create(domElement: stdLib.HTMLElement): IStandaloneCodeEditor = js.native
@@ -3191,7 +3289,7 @@ object editorNs extends js.Object {
   ): ITextModel = js.native
   def createWebWorker[T](opts: IWebWorkerOptions): MonacoWebWorker[T] = js.native
   def defineTheme(themeName: java.lang.String, themeData: IStandaloneThemeData): scala.Unit = js.native
-  def getModel(uri: monacoDashEditorLib.monacoDashEditorMod.Uri): ITextModel = js.native
+  def getModel(uri: monacoDashEditorLib.monacoDashEditorMod.Uri): ITextModel | scala.Null = js.native
   def getModelMarkers(filter: monacoDashEditorLib.Anon_Resource): js.Array[IMarker] = js.native
   def getModels(): js.Array[ITextModel] = js.native
   def onDidChangeModelLanguage(listener: js.Function1[/* e */ monacoDashEditorLib.Anon_Model, scala.Unit]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
@@ -3842,10 +3940,12 @@ object editorNs extends js.Object {
   }
   
   type BuiltinTheme = monacoDashEditorLib.monacoDashEditorLibStrings.vs | monacoDashEditorLib.monacoDashEditorLibStrings.`vs-dark` | monacoDashEditorLib.monacoDashEditorLibStrings.`hc-black`
+  type EditorAutoClosingStrategy = monacoDashEditorLib.monacoDashEditorLibStrings.always | monacoDashEditorLib.monacoDashEditorLibStrings.languageDefined | monacoDashEditorLib.monacoDashEditorLibStrings.beforeWhitespace | monacoDashEditorLib.monacoDashEditorLibStrings.never
+  type EditorAutoSurroundStrategy = monacoDashEditorLib.monacoDashEditorLibStrings.languageDefined | monacoDashEditorLib.monacoDashEditorLibStrings.quotes | monacoDashEditorLib.monacoDashEditorLibStrings.brackets | monacoDashEditorLib.monacoDashEditorLibStrings.never
   type ICommandHandler = js.Function1[/* repeated */js.Any, scala.Unit]
   type ICursorStateComputer = js.Function1[
     /* inverseEditOperations */ js.Array[IIdentifiedSingleEditOperation], 
-    js.Array[monacoDashEditorLib.monacoDashEditorMod.Selection]
+    js.Array[monacoDashEditorLib.monacoDashEditorMod.Selection] | scala.Null
   ]
   type IEditorModel = ITextModel | IDiffEditorModel
   type IEditorViewState = ICodeEditorViewState | IDiffEditorViewState

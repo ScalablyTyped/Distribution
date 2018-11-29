@@ -21,7 +21,7 @@ ScalablyTyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Generator] {
        */
   val name: java.lang.String = js.native
   @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
-  val toStringTag: stdLib.stdLibStrings.GeneratorFunction = js.native
+  val toStringTag: java.lang.String = js.native
   /**
        * Creates a new Generator object.
        * @param args A list of arguments the function accepts.

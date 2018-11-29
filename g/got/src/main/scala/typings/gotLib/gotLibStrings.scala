@@ -43,6 +43,9 @@ object gotLibStrings {
   sealed trait TRACE extends js.Object
   
   @js.native
+  sealed trait TimeoutError extends js.Object
+  
+  @js.native
   sealed trait UnsupportedProtocolError extends js.Object
   
   @js.native
@@ -96,6 +99,7 @@ object gotLibStrings {
   def ReadError: ReadError = "ReadError".asInstanceOf[ReadError]
   def RequestError: RequestError = "RequestError".asInstanceOf[RequestError]
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
   def UnsupportedProtocolError: UnsupportedProtocolError = "UnsupportedProtocolError".asInstanceOf[UnsupportedProtocolError]
   def beforeRequest: beforeRequest = "beforeRequest".asInstanceOf[beforeRequest]
   def delete: delete = "delete".asInstanceOf[delete]

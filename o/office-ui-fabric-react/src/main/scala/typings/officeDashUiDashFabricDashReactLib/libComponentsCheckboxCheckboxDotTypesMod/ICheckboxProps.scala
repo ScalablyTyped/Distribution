@@ -30,7 +30,7 @@ trait ICheckboxProps
   var ariaSetSize: js.UndefOr[scala.Double] = js.undefined
   /**
        * Allows you to set the checkbox to be at the before (start) or after (end) the label.
-       * @default 'start'
+       * @defaultvalue 'start'
        */
   var boxSide: js.UndefOr[
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.start | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.end

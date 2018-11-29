@@ -130,7 +130,7 @@ trait HTMLMediaElement extends HTMLElement {
        */
   val seekable: TimeRanges = js.native
   /**
-       * Gets a flag that indicates whether the the client is currently moving to a new playback position in the media resource.
+       * Gets a flag that indicates whether the client is currently moving to a new playback position in the media resource.
        */
   val seeking: scala.Boolean = js.native
   /**

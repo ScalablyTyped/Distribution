@@ -31,6 +31,8 @@ trait RealtimeChannel extends EventEmitter[channelEventCallback, ChannelEvent, C
   def subscribe(eventOrCallback: messageCallback[Message], listener: messageCallback[Message]): scala.Unit = js.native
   def subscribe(eventOrCallback: java.lang.String): scala.Unit = js.native
   def subscribe(eventOrCallback: java.lang.String, listener: messageCallback[Message]): scala.Unit = js.native
+  def subscribe(eventOrCallback: js.Array[java.lang.String]): scala.Unit = js.native
+  def subscribe(eventOrCallback: js.Array[java.lang.String], listener: messageCallback[Message]): scala.Unit = js.native
   def unsubscribe(): scala.Unit = js.native
   def unsubscribe(eventOrCallback: messageCallback[Message]): scala.Unit = js.native
   def unsubscribe(eventOrCallback: messageCallback[Message], listener: messageCallback[Message]): scala.Unit = js.native

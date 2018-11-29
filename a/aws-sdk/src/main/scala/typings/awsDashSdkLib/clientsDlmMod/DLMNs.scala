@@ -193,6 +193,7 @@ object DLMNs extends js.Object {
   
   
   trait Schedule extends js.Object {
+    var CopyTags: js.UndefOr[CopyTags] = js.undefined
     /**
          * The create rule.
          */
@@ -404,6 +405,7 @@ object DLMNs extends js.Object {
   
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  type CopyTags = scala.Boolean
   type Count = scala.Double
   type ExecutionRoleArn = java.lang.String
   type GettablePolicyStateValues = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String

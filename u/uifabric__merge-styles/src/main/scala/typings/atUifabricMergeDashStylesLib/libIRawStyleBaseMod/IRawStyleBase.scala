@@ -524,8 +524,10 @@ trait IRawStyleBase extends IRawFontStyle {
   /**
        * This property specifies the type of rendering box used for an element. It is a
        * shorthand property for many other display properties.
+       * W3: https://www.w3.org/TR/css-display-3/#the-display-properties
+       * MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/display
        */
-  var display: js.UndefOr[ICSSRule | java.lang.String] = js.undefined
+  var display: js.UndefOr[ICSSRule | ICSSDisplayRule] = js.undefined
   /**
        * The ‘fill’ property paints the interior of the given graphical element. The area to
        * be painted consists of any areas inside the outline of the shape. To determine the
@@ -746,7 +748,7 @@ trait IRawStyleBase extends IRawFontStyle {
        * https://www.w3.org/TR/css-flexbox-1/#justify-content-property
        */
   var justifyContent: js.UndefOr[
-    ICSSRule | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`flex-start` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`flex-end` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.center | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`space-between` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`space-around` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`space-evenly`
+    ICSSRule | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`flex-start` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`flex-end` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.center | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`space-between` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`space-around` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.`space-evenly` | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.stretch
   ] = js.undefined
   /**
        * Justifies the box (as the alignment subject) within its containing block (as the alignment container)
@@ -1213,6 +1215,13 @@ trait IRawStyleBase extends IRawFontStyle {
        * See SVG 1.1 https://www.w3.org/TR/SVG/painting.html#Stroke
        */
   var stroke: js.UndefOr[ICSSRule | java.lang.String] = js.undefined
+  /**
+       * SVG: The stroke-linecap attribute defines the shape to be used at the end of open subpaths when they are stroked.
+       * See SVG 1.1 https://www.w3.org/TR/SVG/painting.html#LineCaps
+       */
+  var strokeLinecap: js.UndefOr[
+    ICSSRule | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.butt | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.round | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.square
+  ] = js.undefined
   /**
        * SVG: Specifies the opacity of the outline on the current object.
        * See SVG 1.1 https://www.w3.org/TR/SVG/painting.html#StrokeOpacityProperty

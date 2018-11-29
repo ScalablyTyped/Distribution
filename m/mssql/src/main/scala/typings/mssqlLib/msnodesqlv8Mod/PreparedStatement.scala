@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
 class PreparedStatement ()
   extends mssqlLib.mssqlMod.PreparedStatement {
   def this(connection: mssqlLib.mssqlMod.ConnectionPool) = this()
+  def this(transaction: mssqlLib.mssqlMod.Transaction) = this()
 }
 

@@ -58,10 +58,22 @@ object appDashBuilderDashLibLibStrings {
   sealed trait ask extends js.Object
   
   @js.native
+  sealed trait bottom extends js.Object
+  
+  @js.native
+  sealed trait bottomleft extends js.Object
+  
+  @js.native
+  sealed trait bottomright extends js.Object
+  
+  @js.native
   sealed trait brave extends js.Object
   
   @js.native
   sealed trait bzip2 extends js.Object
+  
+  @js.native
+  sealed trait center extends js.Object
   
   @js.native
   sealed trait classic extends js.Object
@@ -115,6 +127,9 @@ object appDashBuilderDashLibLibStrings {
   sealed trait ico extends js.Object
   
   @js.native
+  sealed trait left extends js.Object
+  
+  @js.native
   sealed trait link extends js.Object
   
   @js.native
@@ -130,13 +145,22 @@ object appDashBuilderDashLibLibStrings {
   sealed trait maximum extends js.Object
   
   @js.native
+  sealed trait none extends js.Object
+  
+  @js.native
   sealed trait normal extends js.Object
   
   @js.native
   sealed trait pkg extends js.Object
   
   @js.native
+  sealed trait proportional extends js.Object
+  
+  @js.native
   sealed trait requireAdministrator extends js.Object
+  
+  @js.native
+  sealed trait right extends js.Object
   
   @js.native
   sealed trait set extends js.Object
@@ -167,6 +191,18 @@ object appDashBuilderDashLibLibStrings {
   
   @js.native
   sealed trait tarDOTxz extends js.Object
+  
+  @js.native
+  sealed trait tofit extends js.Object
+  
+  @js.native
+  sealed trait top extends js.Object
+  
+  @js.native
+  sealed trait topleft extends js.Object
+  
+  @js.native
+  sealed trait topright extends js.Object
   
   @js.native
   sealed trait update extends js.Object
@@ -203,8 +239,12 @@ object appDashBuilderDashLibLibStrings {
   def always: always = "always".asInstanceOf[always]
   def asInvoker: asInvoker = "asInvoker".asInstanceOf[asInvoker]
   def ask: ask = "ask".asInstanceOf[ask]
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
+  def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
   def brave: brave = "brave".asInstanceOf[brave]
   def bzip2: bzip2 = "bzip2".asInstanceOf[bzip2]
+  def center: center = "center".asInstanceOf[center]
   def classic: classic = "classic".asInstanceOf[classic]
   def darwin: darwin = "darwin".asInstanceOf[darwin]
   def default: default = "default".asInstanceOf[default]
@@ -222,14 +262,18 @@ object appDashBuilderDashLibLibStrings {
   def highestAvailable: highestAvailable = "highestAvailable".asInstanceOf[highestAvailable]
   def icns: icns = "icns".asInstanceOf[icns]
   def ico: ico = "ico".asInstanceOf[ico]
+  def left: left = "left".asInstanceOf[left]
   def link: link = "link".asInstanceOf[link]
   def linux: linux = "linux".asInstanceOf[linux]
   def mas: mas = "mas".asInstanceOf[mas]
   def `mas-dev`: `mas-dev` = "mas-dev".asInstanceOf[`mas-dev`]
   def maximum: maximum = "maximum".asInstanceOf[maximum]
+  def none: none = "none".asInstanceOf[none]
   def normal: normal = "normal".asInstanceOf[normal]
   def pkg: pkg = "pkg".asInstanceOf[pkg]
+  def proportional: proportional = "proportional".asInstanceOf[proportional]
   def requireAdministrator: requireAdministrator = "requireAdministrator".asInstanceOf[requireAdministrator]
+  def right: right = "right".asInstanceOf[right]
   def set: set = "set".asInstanceOf[set]
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   def sha256: sha256 = "sha256".asInstanceOf[sha256]
@@ -240,6 +284,10 @@ object appDashBuilderDashLibLibStrings {
   def tarDOTgz: tarDOTgz = "tar.gz".asInstanceOf[tarDOTgz]
   def tarDOTlz: tarDOTlz = "tar.lz".asInstanceOf[tarDOTlz]
   def tarDOTxz: tarDOTxz = "tar.xz".asInstanceOf[tarDOTxz]
+  def tofit: tofit = "tofit".asInstanceOf[tofit]
+  def top: top = "top".asInstanceOf[top]
+  def topleft: topleft = "topleft".asInstanceOf[topleft]
+  def topright: topright = "topright".asInstanceOf[topright]
   def update: update = "update".asInstanceOf[update]
   def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
   def user: user = "user".asInstanceOf[user]

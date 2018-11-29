@@ -9,6 +9,34 @@ import scala.scalajs.js.annotation._
 @js.native
 object IotNs extends js.Object {
   
+  trait AbortConfig extends js.Object {
+    /**
+         * The list of abort criteria to define rules to abort the job.
+         */
+    var criteriaList: AbortCriteriaList
+  }
+  
+  
+  trait AbortCriteria extends js.Object {
+    /**
+         * The type of abort action to initiate a job abort.
+         */
+    var action: AbortAction
+    /**
+         * The type of job execution failure to define a rule to initiate a job abort.
+         */
+    var failureType: JobExecutionFailureType
+    /**
+         * Minimum number of executed things before evaluating an abort rule.
+         */
+    var minNumberOfExecutedThings: MinimumNumberOfExecutedThings
+    /**
+         * The threshold as a percentage of the total number of executed things that will initiate a job abort. AWS IoT supports up to two digits after the decimal (for example, 10.9 and 10.99, but not 10.999).
+         */
+    var thresholdPercentage: AbortThresholdPercentage
+  }
+  
+  
   trait AcceptCertificateTransferRequest extends js.Object {
     /**
          * The ID of the certificate. (The last part of the certificate ARN contains the certificate ID.)
@@ -50,6 +78,10 @@ object IotNs extends js.Object {
          * Sends message data to an AWS IoT Analytics channel.
          */
     var iotAnalytics: js.UndefOr[IotAnalyticsAction] = js.undefined
+    /**
+         * Sends an input to an AWS IoT Events detector.
+         */
+    var iotEvents: js.UndefOr[IotEventsAction] = js.undefined
     /**
          * Write data to an Amazon Kinesis stream.
          */
@@ -117,7 +149,34 @@ object IotNs extends js.Object {
   }
   
   
+  trait AddThingToBillingGroupRequest extends js.Object {
+    /**
+         * The ARN of the billing group.
+         */
+    var billingGroupArn: js.UndefOr[BillingGroupArn] = js.undefined
+    /**
+         * The name of the billing group.
+         */
+    var billingGroupName: js.UndefOr[BillingGroupName] = js.undefined
+    /**
+         * The ARN of the thing to be added to the billing group.
+         */
+    var thingArn: js.UndefOr[ThingArn] = js.undefined
+    /**
+         * The name of the thing to be added to the billing group.
+         */
+    var thingName: js.UndefOr[ThingName] = js.undefined
+  }
+  
+  
+  trait AddThingToBillingGroupResponse extends js.Object
+  
+  
   trait AddThingToThingGroupRequest extends js.Object {
+    /**
+         * Override dynamic thing groups with static thing groups when 10-group limit is reached. If a thing belongs to 10 thing groups, and one or more of those groups are dynamic thing groups, adding a thing to a static group removes the thing from the last dynamic group.
+         */
+    var overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.undefined
     /**
          * The ARN of the thing to add to a group.
          */
@@ -518,6 +577,22 @@ object IotNs extends js.Object {
   }
   
   
+  trait BillingGroupMetadata extends js.Object {
+    /**
+         * The date the billing group was created.
+         */
+    var creationDate: js.UndefOr[CreationDate] = js.undefined
+  }
+  
+  
+  trait BillingGroupProperties extends js.Object {
+    /**
+         * The description of the billing group.
+         */
+    var billingGroupDescription: js.UndefOr[BillingGroupDescription] = js.undefined
+  }
+  
+  
   trait CACertificate extends js.Object {
     /**
          * The ARN of the CA certificate.
@@ -642,6 +717,10 @@ object IotNs extends js.Object {
          * The unique identifier you assigned to this job when it was created.
          */
     var jobId: JobId
+    /**
+         * (Optional)A reason code string that explains why the job was canceled.
+         */
+    var reasonCode: js.UndefOr[ReasonCode] = js.undefined
   }
   
   
@@ -891,6 +970,38 @@ object IotNs extends js.Object {
   }
   
   
+  trait CreateBillingGroupRequest extends js.Object {
+    /**
+         * The name you wish to give to the billing group.
+         */
+    var billingGroupName: BillingGroupName
+    /**
+         * The properties of the billing group.
+         */
+    var billingGroupProperties: js.UndefOr[BillingGroupProperties] = js.undefined
+    /**
+         * Metadata which can be used to manage the billing group.
+         */
+    var tags: js.UndefOr[TagList] = js.undefined
+  }
+  
+  
+  trait CreateBillingGroupResponse extends js.Object {
+    /**
+         * The ARN of the billing group.
+         */
+    var billingGroupArn: js.UndefOr[BillingGroupArn] = js.undefined
+    /**
+         * The ID of the billing group.
+         */
+    var billingGroupId: js.UndefOr[BillingGroupId] = js.undefined
+    /**
+         * The name you gave to the billing group.
+         */
+    var billingGroupName: js.UndefOr[BillingGroupName] = js.undefined
+  }
+  
+  
   trait CreateCertificateFromCsrRequest extends js.Object {
     /**
          * The certificate signing request (CSR).
@@ -919,13 +1030,73 @@ object IotNs extends js.Object {
   }
   
   
+  trait CreateDynamicThingGroupRequest extends js.Object {
+    /**
+         * The dynamic thing group index name.  Currently one index is supported: "AWS_Things". 
+         */
+    var indexName: js.UndefOr[IndexName] = js.undefined
+    /**
+         * The dynamic thing group search query string. See Query Syntax for information about query string syntax.
+         */
+    var queryString: QueryString
+    /**
+         * The dynamic thing group query version.  Currently one query version is supported: "2017-09-30". If not specified, the query version defaults to this value. 
+         */
+    var queryVersion: js.UndefOr[QueryVersion] = js.undefined
+    /**
+         * Metadata which can be used to manage the dynamic thing group.
+         */
+    var tags: js.UndefOr[TagList] = js.undefined
+    /**
+         * The dynamic thing group name to create.
+         */
+    var thingGroupName: ThingGroupName
+    /**
+         * The dynamic thing group properties.
+         */
+    var thingGroupProperties: js.UndefOr[ThingGroupProperties] = js.undefined
+  }
+  
+  
+  trait CreateDynamicThingGroupResponse extends js.Object {
+    /**
+         * The dynamic thing group index name.
+         */
+    var indexName: js.UndefOr[IndexName] = js.undefined
+    /**
+         * The dynamic thing group search query string.
+         */
+    var queryString: js.UndefOr[QueryString] = js.undefined
+    /**
+         * The dynamic thing group query version.
+         */
+    var queryVersion: js.UndefOr[QueryVersion] = js.undefined
+    /**
+         * The dynamic thing group ARN.
+         */
+    var thingGroupArn: js.UndefOr[ThingGroupArn] = js.undefined
+    /**
+         * The dynamic thing group ID.
+         */
+    var thingGroupId: js.UndefOr[ThingGroupId] = js.undefined
+    /**
+         * The dynamic thing group name.
+         */
+    var thingGroupName: js.UndefOr[ThingGroupName] = js.undefined
+  }
+  
+  
   trait CreateJobRequest extends js.Object {
+    /**
+         * Allows you to create criteria to abort a job.
+         */
+    var abortConfig: js.UndefOr[AbortConfig] = js.undefined
     /**
          * A short text description of the job.
          */
     var description: js.UndefOr[JobDescription] = js.undefined
     /**
-         * The job document.
+         * The job document.  If the job document resides in an S3 bucket, you must use a placeholder link when specifying the document. The placeholder link is of the following form:  ${aws:iot:s3-presigned-url:https://s3.amazonaws.com/bucket/key}  where bucket is your bucket name and key is the object in the bucket to which you are linking. 
          */
     var document: js.UndefOr[JobDocument] = js.undefined
     /**
@@ -944,6 +1115,10 @@ object IotNs extends js.Object {
          * Configuration information for pre-signed S3 URLs.
          */
     var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.undefined
+    /**
+         * Metadata which can be used to manage the job.
+         */
+    var tags: js.UndefOr[TagList] = js.undefined
     /**
          * Specifies whether the job will continue to run (CONTINUOUS), or will be complete after all those things specified as targets have completed the job (SNAPSHOT). If continuous, the job may also be run on a thing when a change is detected in a target. For example, a job will run on a thing when the thing is added to a target group, even after the job was completed by all things originally in the group.
          */
@@ -1208,6 +1383,10 @@ object IotNs extends js.Object {
          * The name you are giving to the security profile.
          */
     var securityProfileName: SecurityProfileName
+    /**
+         * Metadata which can be used to manage the security profile.
+         */
+    var tags: js.UndefOr[TagList] = js.undefined
   }
   
   
@@ -1269,6 +1448,10 @@ object IotNs extends js.Object {
          */
     var parentGroupName: js.UndefOr[ThingGroupName] = js.undefined
     /**
+         * Metadata which can be used to manage the thing group.
+         */
+    var tags: js.UndefOr[TagList] = js.undefined
+    /**
          * The thing group name to create.
          */
     var thingGroupName: ThingGroupName
@@ -1301,6 +1484,10 @@ object IotNs extends js.Object {
          */
     var attributePayload: js.UndefOr[AttributePayload] = js.undefined
     /**
+         * The name of the billing group the thing will be added to.
+         */
+    var billingGroupName: js.UndefOr[BillingGroupName] = js.undefined
+    /**
          * The name of the thing to create.
          */
     var thingName: ThingName
@@ -1328,6 +1515,10 @@ object IotNs extends js.Object {
   
   
   trait CreateThingTypeRequest extends js.Object {
+    /**
+         * Metadata which can be used to manage the thing type.
+         */
+    var tags: js.UndefOr[TagList] = js.undefined
     /**
          * The name of the thing type.
          */
@@ -1409,6 +1600,21 @@ object IotNs extends js.Object {
   trait DeleteAuthorizerResponse extends js.Object
   
   
+  trait DeleteBillingGroupRequest extends js.Object {
+    /**
+         * The name of the billing group.
+         */
+    var billingGroupName: BillingGroupName
+    /**
+         * The expected version of the billing group. If the version of the billing group does not match the expected version specified in the request, the DeleteBillingGroup request is rejected with a VersionConflictException.
+         */
+    var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
+  }
+  
+  
+  trait DeleteBillingGroupResponse extends js.Object
+  
+  
   trait DeleteCACertificateRequest extends js.Object {
     /**
          * The ID of the certificate to delete. (The last part of the certificate ARN contains the certificate ID.)
@@ -1430,6 +1636,21 @@ object IotNs extends js.Object {
          */
     var forceDelete: js.UndefOr[ForceDelete] = js.undefined
   }
+  
+  
+  trait DeleteDynamicThingGroupRequest extends js.Object {
+    /**
+         * The expected version of the dynamic thing group to delete.
+         */
+    var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
+    /**
+         * The name of the dynamic thing group to delete.
+         */
+    var thingGroupName: ThingGroupName
+  }
+  
+  
+  trait DeleteDynamicThingGroupResponse extends js.Object
   
   
   trait DeleteJobExecutionRequest extends js.Object {
@@ -1716,6 +1937,42 @@ object IotNs extends js.Object {
   }
   
   
+  trait DescribeBillingGroupRequest extends js.Object {
+    /**
+         * The name of the billing group.
+         */
+    var billingGroupName: BillingGroupName
+  }
+  
+  
+  trait DescribeBillingGroupResponse extends js.Object {
+    /**
+         * The ARN of the billing group.
+         */
+    var billingGroupArn: js.UndefOr[BillingGroupArn] = js.undefined
+    /**
+         * The ID of the billing group.
+         */
+    var billingGroupId: js.UndefOr[BillingGroupId] = js.undefined
+    /**
+         * Additional information about the billing group.
+         */
+    var billingGroupMetadata: js.UndefOr[BillingGroupMetadata] = js.undefined
+    /**
+         * The name of the billing group.
+         */
+    var billingGroupName: js.UndefOr[BillingGroupName] = js.undefined
+    /**
+         * The properties of the billing group.
+         */
+    var billingGroupProperties: js.UndefOr[BillingGroupProperties] = js.undefined
+    /**
+         * The version of the billing group.
+         */
+    var version: js.UndefOr[Version] = js.undefined
+  }
+  
+  
   trait DescribeCACertificateRequest extends js.Object {
     /**
          * The CA certificate identifier.
@@ -1816,7 +2073,7 @@ object IotNs extends js.Object {
          */
     var indexStatus: js.UndefOr[IndexStatus] = js.undefined
     /**
-         * Contains a value that specifies the type of indexing performed. Valid values are:   REGISTRY – Your thing index will contain only registry data.   REGISTRY_AND_SHADOW - Your thing index will contain registry and shadow data.  
+         * Contains a value that specifies the type of indexing performed. Valid values are:   REGISTRY – Your thing index will contain only registry data.   REGISTRY_AND_SHADOW - Your thing index will contain registry data and shadow data.   REGISTRY_AND_CONNECTIVITY_STATUS - Your thing index will contain registry data and thing connectivity status data.   REGISTRY_AND_SHADOW_AND_CONNECTIVITY_STATUS - Your thing index will contain registry data, shadow data, and thing connectivity status data.  
          */
     var schema: js.UndefOr[IndexSchema] = js.undefined
   }
@@ -1988,6 +2245,22 @@ object IotNs extends js.Object {
   
   trait DescribeThingGroupResponse extends js.Object {
     /**
+         * The dynamic thing group index name.
+         */
+    var indexName: js.UndefOr[IndexName] = js.undefined
+    /**
+         * The dynamic thing group search query string.
+         */
+    var queryString: js.UndefOr[QueryString] = js.undefined
+    /**
+         * The dynamic thing group query version.
+         */
+    var queryVersion: js.UndefOr[QueryVersion] = js.undefined
+    /**
+         * The dynamic thing group status.
+         */
+    var status: js.UndefOr[DynamicGroupStatus] = js.undefined
+    /**
          * The thing group ARN.
          */
     var thingGroupArn: js.UndefOr[ThingGroupArn] = js.undefined
@@ -2087,6 +2360,10 @@ object IotNs extends js.Object {
          * The thing attributes.
          */
     var attributes: js.UndefOr[Attributes] = js.undefined
+    /**
+         * The name of the billing group the thing belongs to.
+         */
+    var billingGroupName: js.UndefOr[BillingGroupName] = js.undefined
     /**
          * The default client ID.
          */
@@ -2345,6 +2622,22 @@ object IotNs extends js.Object {
          * The policies that denied the authorization.
          */
     var policies: js.UndefOr[Policies] = js.undefined
+  }
+  
+  
+  trait ExponentialRolloutRate extends js.Object {
+    /**
+         * The minimum number of things that will be notified of a pending job, per minute at the start of job rollout. This parameter allows you to define the initial rate of rollout.
+         */
+    var baseRatePerMinute: RolloutRatePerMinute
+    /**
+         * The exponential factor to increase the rate of rollout for a job.
+         */
+    var incrementFactor: IncrementFactor
+    /**
+         * The criteria to initiate the increase in rate of rollout for a job. AWS IoT supports up to one digit after the decimal (for example, 1.5, but not 1.55).
+         */
+    var rateIncreaseCriteria: RateIncreaseCriteria
   }
   
   
@@ -2636,7 +2929,27 @@ object IotNs extends js.Object {
   }
   
   
+  trait IotEventsAction extends js.Object {
+    /**
+         * The name of the AWS IoT Events input.
+         */
+    var inputName: InputName
+    /**
+         * [Optional] Use this to ensure that only one input (message) with a given messageId will be processed by an AWS IoT Events detector.
+         */
+    var messageId: js.UndefOr[MessageId] = js.undefined
+    /**
+         * The ARN of the role that grants AWS IoT permission to send an input to an AWS IoT Events detector. ("Action":"iotevents:BatchPutMessage").
+         */
+    var roleArn: AwsArn
+  }
+  
+  
   trait Job extends js.Object {
+    /**
+         * Configuration for criteria to abort the job.
+         */
+    var abortConfig: js.UndefOr[AbortConfig] = js.undefined
     /**
          * If the job was updated, describes the reason for the update.
          */
@@ -2682,6 +2995,10 @@ object IotNs extends js.Object {
          */
     var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.undefined
     /**
+         * If the job was updated, provides the reason code for the update.
+         */
+    var reasonCode: js.UndefOr[ReasonCode] = js.undefined
+    /**
          * The status of the job, one of IN_PROGRESS, CANCELED, DELETION_IN_PROGRESS or COMPLETED. 
          */
     var status: js.UndefOr[JobStatus] = js.undefined
@@ -2702,7 +3019,7 @@ object IotNs extends js.Object {
   
   trait JobExecution extends js.Object {
     /**
-         * The estimated number of seconds that remain before the job execution status will be changed to TIMED_OUT.
+         * The estimated number of seconds that remain before the job execution status will be changed to TIMED_OUT. The timeout interval can be anywhere between 1 minute and 7 days (1 to 10080 minutes). The actual job execution timeout can occur up to 60 seconds later than the estimated duration. This value will not be included if the job execution has reached a terminal status.
          */
     var approximateSecondsBeforeTimedOut: js.UndefOr[ApproximateSecondsBeforeTimedOut] = js.undefined
     /**
@@ -2805,6 +3122,10 @@ object IotNs extends js.Object {
   
   
   trait JobExecutionsRolloutConfig extends js.Object {
+    /**
+         * The rate of increase for a job rollout. This parameter allows you to define an exponential rate for a job rollout.
+         */
+    var exponentialRate: js.UndefOr[ExponentialRolloutRate] = js.undefined
     /**
          * The maximum number of things that will be notified of a pending job, per minute. This parameter allows you to create a staged rollout.
          */
@@ -3101,6 +3422,34 @@ object IotNs extends js.Object {
          * A marker used to get the next set of results.
          */
     var nextMarker: js.UndefOr[Marker] = js.undefined
+  }
+  
+  
+  trait ListBillingGroupsRequest extends js.Object {
+    /**
+         * The maximum number of results to return per request.
+         */
+    var maxResults: js.UndefOr[RegistryMaxResults] = js.undefined
+    /**
+         * Limit the results to billing groups whose names have the given prefix.
+         */
+    var namePrefixFilter: js.UndefOr[BillingGroupName] = js.undefined
+    /**
+         * The token to retrieve the next set of results.
+         */
+    var nextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait ListBillingGroupsResponse extends js.Object {
+    /**
+         * The list of billing groups.
+         */
+    var billingGroups: js.UndefOr[BillingGroupNameAndArnList] = js.undefined
+    /**
+         * The token used to get the next set of results, or null if there are no additional results.
+         */
+    var nextToken: js.UndefOr[NextToken] = js.undefined
   }
   
   
@@ -3648,6 +3997,30 @@ object IotNs extends js.Object {
   }
   
   
+  trait ListTagsForResourceRequest extends js.Object {
+    /**
+         * The token to retrieve the next set of results.
+         */
+    var nextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * The ARN of the resource.
+         */
+    var resourceArn: ResourceArn
+  }
+  
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    /**
+         * The token used to get the next set of results, or null if there are no additional results.
+         */
+    var nextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * The list of tags assigned to the resource.
+         */
+    var tags: js.UndefOr[TagList] = js.undefined
+  }
+  
+  
   trait ListTargetsForPolicyRequest extends js.Object {
     /**
          * A marker used to get the next set of results.
@@ -3873,6 +4246,34 @@ object IotNs extends js.Object {
          * The thing types.
          */
     var thingTypes: js.UndefOr[ThingTypeList] = js.undefined
+  }
+  
+  
+  trait ListThingsInBillingGroupRequest extends js.Object {
+    /**
+         * The name of the billing group.
+         */
+    var billingGroupName: BillingGroupName
+    /**
+         * The maximum number of results to return per request.
+         */
+    var maxResults: js.UndefOr[RegistryMaxResults] = js.undefined
+    /**
+         * The token to retrieve the next set of results.
+         */
+    var nextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait ListThingsInBillingGroupResponse extends js.Object {
+    /**
+         * The token used to get the next set of results, or null if there are no additional results.
+         */
+    var nextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * A list of things in the billing group.
+         */
+    var things: js.UndefOr[ThingNameList] = js.undefined
   }
   
   
@@ -4308,6 +4709,18 @@ object IotNs extends js.Object {
   }
   
   
+  trait RateIncreaseCriteria extends js.Object {
+    /**
+         * The threshold for number of notified things that will initiate the increase in rate of rollout.
+         */
+    var numberOfNotifiedThings: js.UndefOr[NumberOfThings] = js.undefined
+    /**
+         * The threshold for number of succeeded things that will initiate the increase in rate of rollout.
+         */
+    var numberOfSucceededThings: js.UndefOr[NumberOfThings] = js.undefined
+  }
+  
+  
   trait RegisterCACertificateRequest extends js.Object {
     /**
          * Allows this CA certificate to be used for auto registration of device certificates.
@@ -4438,6 +4851,29 @@ object IotNs extends js.Object {
          */
     var resourceType: js.UndefOr[ResourceType] = js.undefined
   }
+  
+  
+  trait RemoveThingFromBillingGroupRequest extends js.Object {
+    /**
+         * The ARN of the billing group.
+         */
+    var billingGroupArn: js.UndefOr[BillingGroupArn] = js.undefined
+    /**
+         * The name of the billing group.
+         */
+    var billingGroupName: js.UndefOr[BillingGroupName] = js.undefined
+    /**
+         * The ARN of the thing to be removed from the billing group.
+         */
+    var thingArn: js.UndefOr[ThingArn] = js.undefined
+    /**
+         * The name of the thing to be removed from the billing group.
+         */
+    var thingName: js.UndefOr[ThingName] = js.undefined
+  }
+  
+  
+  trait RemoveThingFromBillingGroupResponse extends js.Object
   
   
   trait RemoveThingFromThingGroupRequest extends js.Object {
@@ -4994,6 +5430,33 @@ object IotNs extends js.Object {
     extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String]
   
   
+  trait Tag extends js.Object {
+    /**
+         * The tag's key.
+         */
+    var Key: js.UndefOr[TagKey] = js.undefined
+    /**
+         * The tag's value.
+         */
+    var Value: js.UndefOr[TagValue] = js.undefined
+  }
+  
+  
+  trait TagResourceRequest extends js.Object {
+    /**
+         * The ARN of the resource.
+         */
+    var resourceArn: ResourceArn
+    /**
+         * The new or modified tags for the resource.
+         */
+    var tags: TagList
+  }
+  
+  
+  trait TagResourceResponse extends js.Object
+  
+  
   trait TaskStatistics extends js.Object {
     /**
          * The number of checks that did not run because the audit was canceled.
@@ -5126,11 +5589,27 @@ object IotNs extends js.Object {
   }
   
   
+  trait ThingConnectivity extends js.Object {
+    /**
+         * True if the thing is connected to the AWS IoT service, false if it is not connected.
+         */
+    var connected: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The epoch time (in milliseconds) when the thing last connected or disconnected. Note that if the thing has been disconnected for more than a few weeks, the time value can be missing.
+         */
+    var timestamp: js.UndefOr[ConnectivityTimestamp] = js.undefined
+  }
+  
+  
   trait ThingDocument extends js.Object {
     /**
          * The attributes.
          */
     var attributes: js.UndefOr[Attributes] = js.undefined
+    /**
+         * Indicates whether or not the thing is connected to the AWS IoT service.
+         */
+    var connectivity: js.UndefOr[ThingConnectivity] = js.undefined
     /**
          * The shadow.
          */
@@ -5216,7 +5695,11 @@ object IotNs extends js.Object {
   
   trait ThingIndexingConfiguration extends js.Object {
     /**
-         * Thing indexing mode. Valid values are:    REGISTRY – Your thing index will contain only registry data.   REGISTRY_AND_SHADOW - Your thing index will contain registry and shadow data.   OFF - Thing indexing is disabled.  
+         * Thing connectivity indexing mode. Valid values are:    STATUS – Your thing index will contain connectivity status. In order to enable thing connectivity indexing, thingIndexMode must not be set to OFF.   OFF - Thing connectivity status indexing is disabled.  
+         */
+    var thingConnectivityIndexingMode: js.UndefOr[ThingConnectivityIndexingMode] = js.undefined
+    /**
+         * Thing indexing mode. Valid values are:   REGISTRY – Your thing index will contain only registry data.   REGISTRY_AND_SHADOW - Your thing index will contain registry and shadow data.   OFF - Thing indexing is disabled.  
          */
     var thingIndexingMode: ThingIndexingMode
   }
@@ -5272,7 +5755,7 @@ object IotNs extends js.Object {
   
   trait TimeoutConfig extends js.Object {
     /**
-         * Specifies the amount of time, in minutes, this device has to finish execution of this job. A timer is started, or restarted, whenever this job's execution status is specified as IN_PROGRESS with this field populated. If the job execution status is not set to a terminal state before the timer expires, or before another job execution status update is sent with this field populated, the status will be automatically set to TIMED_OUT. Note that setting/resetting this timer has no effect on the job execution timeout timer which may have been specified when the job was created (CreateJobExecution using the field timeoutConfig).
+         * Specifies the amount of time, in minutes, this device has to finish execution of this job. The timeout interval can be anywhere between 1 minute and 7 days (1 to 10080 minutes). The in progress timer can't be updated and will apply to all job executions for the job. Whenever a job execution remains in the IN_PROGRESS status for longer than this interval, the job execution will fail and switch to the terminal TIMED_OUT status.
          */
     var inProgressTimeoutInMinutes: js.UndefOr[InProgressTimeoutInMinutes] = js.undefined
   }
@@ -5439,6 +5922,35 @@ object IotNs extends js.Object {
       params: AcceptCertificateTransferRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds a thing to a billing group.
+       */
+    def addThingToBillingGroup(): awsDashSdkLib.libRequestMod.Request[AddThingToBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds a thing to a billing group.
+       */
+    def addThingToBillingGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AddThingToBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AddThingToBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds a thing to a billing group.
+       */
+    def addThingToBillingGroup(params: AddThingToBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[AddThingToBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds a thing to a billing group.
+       */
+    def addThingToBillingGroup(
+      params: AddThingToBillingGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AddThingToBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AddThingToBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Adds a thing to a thing group.
        */
@@ -5756,6 +6268,35 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Creates a billing group.
+       */
+    def createBillingGroup(): awsDashSdkLib.libRequestMod.Request[CreateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a billing group.
+       */
+    def createBillingGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a billing group.
+       */
+    def createBillingGroup(params: CreateBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a billing group.
+       */
+    def createBillingGroup(
+      params: CreateBillingGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Creates an X.509 certificate using the specified certificate signing request.  Note: The CSR must include a public key that is either an RSA key with a length of at least 2048 bits or an ECC key from NIST P-256 or NIST P-384 curves.   Note: Reusing the same certificate signing request (CSR) results in a distinct certificate. You can create multiple certificates in a batch by creating a directory, copying multiple .csr files into that directory, and then specifying that directory on the command line. The following commands show how to create a batch of certificates given a batch of CSRs. Assuming a set of CSRs are located inside of the directory my-csr-directory: On Linux and OS X, the command is: $ ls my-csr-directory/ | xargs -I {} aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/{} This command lists all of the CSRs in my-csr-directory and pipes each CSR file name to the aws iot create-certificate-from-csr AWS CLI command to create a certificate for the corresponding CSR. The aws iot create-certificate-from-csr part of the command can also be run in parallel to speed up the certificate creation process: $ ls my-csr-directory/ | xargs -P 10 -I {} aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/{} On Windows PowerShell, the command to create certificates for all CSRs in my-csr-directory is: &gt; ls -Name my-csr-directory | %{aws iot create-certificate-from-csr --certificate-signing-request file://my-csr-directory/$_} On a Windows command prompt, the command to create certificates for all CSRs in my-csr-directory is: &gt; forfiles /p my-csr-directory /c "cmd /c aws iot create-certificate-from-csr --certificate-signing-request file://@path"
        */
     def createCertificateFromCsr(): awsDashSdkLib.libRequestMod.Request[CreateCertificateFromCsrResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -5784,6 +6325,35 @@ object IotNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCertificateFromCsrResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a dynamic thing group.
+       */
+    def createDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[CreateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a dynamic thing group.
+       */
+    def createDynamicThingGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateDynamicThingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a dynamic thing group.
+       */
+    def createDynamicThingGroup(params: CreateDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a dynamic thing group.
+       */
+    def createDynamicThingGroup(
+      params: CreateDynamicThingGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateDynamicThingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Creates a job.
        */
@@ -6212,6 +6782,35 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Deletes the billing group.
+       */
+    def deleteBillingGroup(): awsDashSdkLib.libRequestMod.Request[DeleteBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the billing group.
+       */
+    def deleteBillingGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the billing group.
+       */
+    def deleteBillingGroup(params: DeleteBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[DeleteBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the billing group.
+       */
+    def deleteBillingGroup(
+      params: DeleteBillingGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Deletes a registered CA certificate.
        */
     def deleteCACertificate(): awsDashSdkLib.libRequestMod.Request[DeleteCACertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -6261,6 +6860,35 @@ object IotNs extends js.Object {
       params: DeleteCertificateRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a dynamic thing group.
+       */
+    def deleteDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[DeleteDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a dynamic thing group.
+       */
+    def deleteDynamicThingGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteDynamicThingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a dynamic thing group.
+       */
+    def deleteDynamicThingGroup(params: DeleteDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[DeleteDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a dynamic thing group.
+       */
+    def deleteDynamicThingGroup(
+      params: DeleteDynamicThingGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteDynamicThingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Deletes a job and its related job executions. Deleting a job may take time, depending on the number of job executions created for the job and various other factors. While the job is being deleted, the status of the job will be shown as "DELETION_IN_PROGRESS". Attempting to delete or cancel a job whose status is already "DELETION_IN_PROGRESS" will result in an error. Only 10 jobs may have status "DELETION_IN_PROGRESS" at the same time, or a LimitExceededException will occur.
        */
@@ -6520,11 +7148,11 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified thing.
+       * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
        */
     def deleteThing(): awsDashSdkLib.libRequestMod.Request[DeleteThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified thing.
+       * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
        */
     def deleteThing(
       callback: js.Function2[
@@ -6534,11 +7162,11 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified thing.
+       * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
        */
     def deleteThing(params: DeleteThingRequest): awsDashSdkLib.libRequestMod.Request[DeleteThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified thing.
+       * Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
        */
     def deleteThing(
       params: DeleteThingRequest,
@@ -6578,11 +7206,11 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified thing type . You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
+       * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
        */
     def deleteThingType(): awsDashSdkLib.libRequestMod.Request[DeleteThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified thing type . You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
+       * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
        */
     def deleteThingType(
       callback: js.Function2[
@@ -6592,11 +7220,11 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified thing type . You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
+       * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
        */
     def deleteThingType(params: DeleteThingTypeRequest): awsDashSdkLib.libRequestMod.Request[DeleteThingTypeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the specified thing type . You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
+       * Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling DeprecateThingType, then remove any associated things by calling UpdateThing to change the thing type on any associated thing, and finally use DeleteThingType to delete the thing type.
        */
     def deleteThingType(
       params: DeleteThingTypeRequest,
@@ -6764,6 +7392,35 @@ object IotNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a billing group.
+       */
+    def describeBillingGroup(): awsDashSdkLib.libRequestMod.Request[DescribeBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a billing group.
+       */
+    def describeBillingGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a billing group.
+       */
+    def describeBillingGroup(params: DescribeBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[DescribeBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a billing group.
+       */
+    def describeBillingGroup(
+      params: DescribeBillingGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Describes a registered CA certificate.
        */
@@ -7300,11 +7957,11 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DetachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches the specified principal from the specified thing.
+       * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
        */
     def detachThingPrincipal(): awsDashSdkLib.libRequestMod.Request[DetachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches the specified principal from the specified thing.
+       * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
        */
     def detachThingPrincipal(
       callback: js.Function2[
@@ -7314,11 +7971,11 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DetachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches the specified principal from the specified thing.
+       * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
        */
     def detachThingPrincipal(params: DetachThingPrincipalRequest): awsDashSdkLib.libRequestMod.Request[DetachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Detaches the specified principal from the specified thing.
+       * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
        */
     def detachThingPrincipal(
       params: DetachThingPrincipalRequest,
@@ -7805,6 +8462,35 @@ object IotNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListAuthorizersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the billing groups you have created.
+       */
+    def listBillingGroups(): awsDashSdkLib.libRequestMod.Request[ListBillingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the billing groups you have created.
+       */
+    def listBillingGroups(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListBillingGroupsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListBillingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the billing groups you have created.
+       */
+    def listBillingGroups(params: ListBillingGroupsRequest): awsDashSdkLib.libRequestMod.Request[ListBillingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the billing groups you have created.
+       */
+    def listBillingGroups(
+      params: ListBillingGroupsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListBillingGroupsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListBillingGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Lists the CA certificates registered for your AWS account. The results are paginated with a default page size of 25. You can use the returned marker to retrieve additional results.
        */
@@ -8357,6 +9043,35 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListStreamsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Lists the tags (metadata) you have assigned to the resource.
+       */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the tags (metadata) you have assigned to the resource.
+       */
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the tags (metadata) you have assigned to the resource.
+       */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the tags (metadata) you have assigned to the resource.
+       */
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * List targets for the specified policy.
        */
     def listTargetsForPolicy(): awsDashSdkLib.libRequestMod.Request[ListTargetsForPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -8618,6 +9333,35 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Lists the things you have added to the given billing group.
+       */
+    def listThingsInBillingGroup(): awsDashSdkLib.libRequestMod.Request[ListThingsInBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the things you have added to the given billing group.
+       */
+    def listThingsInBillingGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListThingsInBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListThingsInBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the things you have added to the given billing group.
+       */
+    def listThingsInBillingGroup(params: ListThingsInBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[ListThingsInBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the things you have added to the given billing group.
+       */
+    def listThingsInBillingGroup(
+      params: ListThingsInBillingGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListThingsInBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListThingsInBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Lists the things in the specified group.
        */
     def listThingsInThingGroup(): awsDashSdkLib.libRequestMod.Request[ListThingsInThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -8841,6 +9585,35 @@ object IotNs extends js.Object {
       params: RejectCertificateTransferRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the given thing from the billing group.
+       */
+    def removeThingFromBillingGroup(): awsDashSdkLib.libRequestMod.Request[RemoveThingFromBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the given thing from the billing group.
+       */
+    def removeThingFromBillingGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ RemoveThingFromBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[RemoveThingFromBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the given thing from the billing group.
+       */
+    def removeThingFromBillingGroup(params: RemoveThingFromBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[RemoveThingFromBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the given thing from the billing group.
+       */
+    def removeThingFromBillingGroup(
+      params: RemoveThingFromBillingGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ RemoveThingFromBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[RemoveThingFromBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Remove the specified thing from the specified group.
        */
@@ -9121,6 +9894,35 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopThingRegistrationTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
+       */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
+       */
+    def tagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
+       */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.
+       */
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Tests if a specified principal is authorized to perform an AWS IoT action on a specified resource. Use this to test and debug the authorization behavior of devices that connect to the AWS IoT device gateway.
        */
     def testAuthorization(): awsDashSdkLib.libRequestMod.Request[TestAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -9208,6 +10010,35 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[TransferCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Removes the given tags (metadata) from the resource.
+       */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the given tags (metadata) from the resource.
+       */
+    def untagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the given tags (metadata) from the resource.
+       */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the given tags (metadata) from the resource.
+       */
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Configures or reconfigures the Device Defender audit settings for this account. Settings include how audit notifications are sent and which audit checks are enabled or disabled.
        */
     def updateAccountAuditConfiguration(): awsDashSdkLib.libRequestMod.Request[UpdateAccountAuditConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -9266,6 +10097,35 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateAuthorizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Updates information about the billing group.
+       */
+    def updateBillingGroup(): awsDashSdkLib.libRequestMod.Request[UpdateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates information about the billing group.
+       */
+    def updateBillingGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates information about the billing group.
+       */
+    def updateBillingGroup(params: UpdateBillingGroupRequest): awsDashSdkLib.libRequestMod.Request[UpdateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates information about the billing group.
+       */
+    def updateBillingGroup(
+      params: UpdateBillingGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateBillingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateBillingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Updates a registered CA certificate.
        */
     def updateCACertificate(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -9307,6 +10167,35 @@ object IotNs extends js.Object {
       params: UpdateCertificateRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a dynamic thing group.
+       */
+    def updateDynamicThingGroup(): awsDashSdkLib.libRequestMod.Request[UpdateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a dynamic thing group.
+       */
+    def updateDynamicThingGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateDynamicThingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a dynamic thing group.
+       */
+    def updateDynamicThingGroup(params: UpdateDynamicThingGroupRequest): awsDashSdkLib.libRequestMod.Request[UpdateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a dynamic thing group.
+       */
+    def updateDynamicThingGroup(
+      params: UpdateDynamicThingGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateDynamicThingGroupResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateDynamicThingGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Updates the event configurations.
        */
@@ -9365,6 +10254,27 @@ object IotNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateIndexingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates supported fields of the specified job.
+       */
+    def updateJob(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates supported fields of the specified job.
+       */
+    def updateJob(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates supported fields of the specified job.
+       */
+    def updateJob(params: UpdateJobRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates supported fields of the specified job.
+       */
+    def updateJob(
+      params: UpdateJobRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Updates a role alias.
        */
@@ -9600,6 +10510,21 @@ object IotNs extends js.Object {
   }
   
   
+  trait UntagResourceRequest extends js.Object {
+    /**
+         * The ARN of the resource.
+         */
+    var resourceArn: ResourceArn
+    /**
+         * A list of the keys of the tags to be removed from the resource.
+         */
+    var tagKeys: TagKeyList
+  }
+  
+  
+  trait UntagResourceResponse extends js.Object
+  
+  
   trait UpdateAccountAuditConfigurationRequest extends js.Object {
     /**
          * Specifies which audit checks are enabled and disabled for this account. Use DescribeAccountAuditConfiguration to see the list of all checks including those that are currently enabled. Note that some data collection may begin immediately when certain checks are enabled. When a check is disabled, any data collected so far in relation to the check is deleted. You cannot disable a check if it is used by any scheduled audit. You must first delete the check from the scheduled audit or delete the scheduled audit itself. On the first call to UpdateAccountAuditConfiguration this parameter is required and must specify at least one enabled check.
@@ -9655,6 +10580,30 @@ object IotNs extends js.Object {
   }
   
   
+  trait UpdateBillingGroupRequest extends js.Object {
+    /**
+         * The name of the billing group.
+         */
+    var billingGroupName: BillingGroupName
+    /**
+         * The properties of the billing group.
+         */
+    var billingGroupProperties: BillingGroupProperties
+    /**
+         * The expected version of the billing group. If the version of the billing group does not match the expected version specified in the request, the UpdateBillingGroup request is rejected with a VersionConflictException.
+         */
+    var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
+  }
+  
+  
+  trait UpdateBillingGroupResponse extends js.Object {
+    /**
+         * The latest version of the billing group.
+         */
+    var version: js.UndefOr[Version] = js.undefined
+  }
+  
+  
   trait UpdateCACertificateRequest extends js.Object {
     /**
          * The CA certificate identifier.
@@ -9691,6 +10640,42 @@ object IotNs extends js.Object {
   }
   
   
+  trait UpdateDynamicThingGroupRequest extends js.Object {
+    /**
+         * The expected version of the dynamic thing group to update.
+         */
+    var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
+    /**
+         * The dynamic thing group index to update.  Currently one index is supported: 'AWS_Things'. 
+         */
+    var indexName: js.UndefOr[IndexName] = js.undefined
+    /**
+         * The dynamic thing group search query string to update.
+         */
+    var queryString: js.UndefOr[QueryString] = js.undefined
+    /**
+         * The dynamic thing group query version to update.  Currently one query version is supported: "2017-09-30". If not specified, the query version defaults to this value. 
+         */
+    var queryVersion: js.UndefOr[QueryVersion] = js.undefined
+    /**
+         * The name of the dynamic thing group to update.
+         */
+    var thingGroupName: ThingGroupName
+    /**
+         * The dynamic thing group properties to update.
+         */
+    var thingGroupProperties: ThingGroupProperties
+  }
+  
+  
+  trait UpdateDynamicThingGroupResponse extends js.Object {
+    /**
+         * The dynamic thing group version.
+         */
+    var version: js.UndefOr[Version] = js.undefined
+  }
+  
+  
   trait UpdateEventConfigurationsRequest extends js.Object {
     /**
          * The new event configuration values.
@@ -9715,6 +10700,34 @@ object IotNs extends js.Object {
   
   
   trait UpdateIndexingConfigurationResponse extends js.Object
+  
+  
+  trait UpdateJobRequest extends js.Object {
+    /**
+         * Allows you to create criteria to abort a job.
+         */
+    var abortConfig: js.UndefOr[AbortConfig] = js.undefined
+    /**
+         * A short text description of the job.
+         */
+    var description: js.UndefOr[JobDescription] = js.undefined
+    /**
+         * Allows you to create a staged rollout of the job.
+         */
+    var jobExecutionsRolloutConfig: js.UndefOr[JobExecutionsRolloutConfig] = js.undefined
+    /**
+         * The ID of the job to be updated.
+         */
+    var jobId: JobId
+    /**
+         * Configuration information for pre-signed S3 URLs.
+         */
+    var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.undefined
+    /**
+         * Specifies the amount of time each device has to finish its execution of the job. The timer is started when the job execution status is set to IN_PROGRESS. If the job execution status is not set to another terminal state before the time expires, it will be automatically set to TIMED_OUT. 
+         */
+    var timeoutConfig: js.UndefOr[TimeoutConfig] = js.undefined
+  }
   
   
   trait UpdateRoleAliasRequest extends js.Object {
@@ -9903,6 +10916,10 @@ object IotNs extends js.Object {
   
   trait UpdateThingGroupsForThingRequest extends js.Object {
     /**
+         * Override dynamic thing groups with static thing groups when 10-group limit is reached. If a thing belongs to 10 thing groups, and one or more of those groups are dynamic thing groups, adding a thing to a static group removes the thing from the last dynamic group.
+         */
+    var overrideDynamicGroups: js.UndefOr[OverrideDynamicGroups] = js.undefined
+    /**
          * The groups to which the thing will be added.
          */
     var thingGroupsToAdd: js.UndefOr[ThingGroupList] = js.undefined
@@ -10007,6 +11024,9 @@ object IotNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
+  type AbortAction = awsDashSdkLib.awsDashSdkLibStrings.CANCEL | java.lang.String
+  type AbortCriteriaList = js.Array[AbortCriteria]
+  type AbortThresholdPercentage = scala.Double
   type ActionList = js.Array[Action]
   type ActionType = awsDashSdkLib.awsDashSdkLibStrings.PUBLISH | awsDashSdkLib.awsDashSdkLibStrings.SUBSCRIBE | awsDashSdkLib.awsDashSdkLibStrings.RECEIVE | awsDashSdkLib.awsDashSdkLibStrings.CONNECT | java.lang.String
   type ActiveViolations = js.Array[ActiveViolation]
@@ -10046,6 +11066,11 @@ object IotNs extends js.Object {
   type BehaviorMetric = java.lang.String
   type BehaviorName = java.lang.String
   type Behaviors = js.Array[Behavior]
+  type BillingGroupArn = java.lang.String
+  type BillingGroupDescription = java.lang.String
+  type BillingGroupId = java.lang.String
+  type BillingGroupName = java.lang.String
+  type BillingGroupNameAndArnList = js.Array[GroupNameAndArn]
   type Boolean = scala.Boolean
   type BucketName = java.lang.String
   type CACertificateStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | java.lang.String
@@ -10072,6 +11097,7 @@ object IotNs extends js.Object {
   type Comment = java.lang.String
   type ComparisonOperator = awsDashSdkLib.awsDashSdkLibStrings.`less-than` | awsDashSdkLib.awsDashSdkLibStrings.`less-than-equals` | awsDashSdkLib.awsDashSdkLibStrings.`greater-than` | awsDashSdkLib.awsDashSdkLibStrings.`greater-than-equals` | awsDashSdkLib.awsDashSdkLibStrings.`in-cidr-set` | awsDashSdkLib.awsDashSdkLibStrings.`not-in-cidr-set` | awsDashSdkLib.awsDashSdkLibStrings.`in-port-set` | awsDashSdkLib.awsDashSdkLibStrings.`not-in-port-set` | java.lang.String
   type CompliantChecksCount = scala.Double
+  type ConnectivityTimestamp = scala.Double
   type Count = scala.Double
   type CreatedAtDate = stdLib.Date
   type CreationDate = stdLib.Date
@@ -10089,6 +11115,7 @@ object IotNs extends js.Object {
   type DetailsValue = java.lang.String
   type DisableAllLogs = scala.Boolean
   type DurationSeconds = scala.Double
+  type DynamicGroupStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.BUILDING | awsDashSdkLib.awsDashSdkLibStrings.REBUILDING | java.lang.String
   type DynamoKeyType = awsDashSdkLib.awsDashSdkLibStrings.STRING | awsDashSdkLib.awsDashSdkLibStrings.NUMBER | java.lang.String
   type DynamoOperation = java.lang.String
   type EffectivePolicies = js.Array[EffectivePolicy]
@@ -10125,11 +11152,13 @@ object IotNs extends js.Object {
   type InProgressChecksCount = scala.Double
   type InProgressThings = scala.Double
   type InProgressTimeoutInMinutes = scala.Double
+  type IncrementFactor = scala.Double
   type IndexName = java.lang.String
   type IndexNamesList = js.Array[IndexName]
   type IndexSchema = java.lang.String
   type IndexStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.BUILDING | awsDashSdkLib.awsDashSdkLibStrings.REBUILDING | java.lang.String
   type InlineDocument = java.lang.String
+  type InputName = java.lang.String
   type IsAuthenticated = scala.Boolean
   type IsDefaultVersion = scala.Boolean
   type IsDisabled = scala.Boolean
@@ -10137,6 +11166,7 @@ object IotNs extends js.Object {
   type JobDescription = java.lang.String
   type JobDocument = java.lang.String
   type JobDocumentSource = java.lang.String
+  type JobExecutionFailureType = awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.REJECTED | awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
   type JobExecutionStatus = awsDashSdkLib.awsDashSdkLibStrings.QUEUED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT | awsDashSdkLib.awsDashSdkLibStrings.REJECTED | awsDashSdkLib.awsDashSdkLibStrings.REMOVED | awsDashSdkLib.awsDashSdkLibStrings.CANCELED | java.lang.String
   type JobExecutionSummaryForJobList = js.Array[JobExecutionSummaryForJob]
   type JobExecutionSummaryForThingList = js.Array[JobExecutionSummaryForThing]
@@ -10160,11 +11190,14 @@ object IotNs extends js.Object {
   type MaximumPerMinute = scala.Double
   type Message = java.lang.String
   type MessageFormat = awsDashSdkLib.awsDashSdkLibStrings.RAW | awsDashSdkLib.awsDashSdkLibStrings.JSON | java.lang.String
+  type MessageId = java.lang.String
+  type MinimumNumberOfExecutedThings = scala.Double
   type MissingContextValue = java.lang.String
   type MissingContextValues = js.Array[MissingContextValue]
   type NextToken = java.lang.String
   type NonCompliantChecksCount = scala.Double
   type NonCompliantResourcesCount = scala.Double
+  type NumberOfThings = scala.Double
   type OTAUpdateArn = java.lang.String
   type OTAUpdateDescription = java.lang.String
   type OTAUpdateErrorMessage = java.lang.String
@@ -10175,6 +11208,7 @@ object IotNs extends js.Object {
   type OTAUpdatesSummary = js.Array[OTAUpdateSummary]
   type OptionalVersion = scala.Double
   type OutgoingCertificates = js.Array[OutgoingCertificate]
+  type OverrideDynamicGroups = scala.Boolean
   type PageSize = scala.Double
   type Parameter = java.lang.String
   type PartitionKey = java.lang.String
@@ -10209,6 +11243,7 @@ object IotNs extends js.Object {
   type QueuedThings = scala.Double
   type RangeKeyField = java.lang.String
   type RangeKeyValue = java.lang.String
+  type ReasonCode = java.lang.String
   type ReasonForNonCompliance = java.lang.String
   type ReasonForNonComplianceCode = java.lang.String
   type Recursive = scala.Boolean
@@ -10232,6 +11267,7 @@ object IotNs extends js.Object {
   type RoleAliasArn = java.lang.String
   type RoleAliases = js.Array[RoleAlias]
   type RoleArn = java.lang.String
+  type RolloutRatePerMinute = scala.Double
   type RuleArn = java.lang.String
   type RuleName = java.lang.String
   type S3Bucket = java.lang.String
@@ -10276,6 +11312,10 @@ object IotNs extends js.Object {
   type String = java.lang.String
   type SucceededThings = scala.Double
   type TableName = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   type Target = java.lang.String
   type TargetArn = java.lang.String
   type TargetAuditCheckNames = js.Array[AuditCheckName]
@@ -10286,6 +11326,7 @@ object IotNs extends js.Object {
   type TemplateBody = java.lang.String
   type ThingArn = java.lang.String
   type ThingAttributeList = js.Array[ThingAttribute]
+  type ThingConnectivityIndexingMode = awsDashSdkLib.awsDashSdkLibStrings.OFF | awsDashSdkLib.awsDashSdkLibStrings.STATUS | java.lang.String
   type ThingDocumentList = js.Array[ThingDocument]
   type ThingGroupArn = java.lang.String
   type ThingGroupDescription = java.lang.String

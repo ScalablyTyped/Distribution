@@ -17,6 +17,5 @@ trait DownloadOptions extends js.Object {
   ] = js.undefined
   val sha2: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   val sha512: js.UndefOr[java.lang.String | scala.Null] = js.undefined
-  val skipDirCreation: js.UndefOr[scala.Boolean] = js.undefined
 }
 

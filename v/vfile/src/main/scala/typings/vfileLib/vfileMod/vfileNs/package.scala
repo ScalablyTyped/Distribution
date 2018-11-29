@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object vfileNs {
-  type Contents = java.lang.String | nodeLib.Buffer
   /**
        * Associates a fatal message with the file, then immediately throws it.
        * Note: fatal errors mean a file is no longer processable.
@@ -53,8 +52,5 @@ package object vfileNs {
        * @param encoding If `contents` is a buffer, `encoding` is used to stringify buffers (default: `'utf8'`).
        */
   type ToString = js.Function1[/* encoding */ js.UndefOr[nodeLib.BufferEncoding], java.lang.String]
-  type VFile[C] = VFileBase[C] with C
-  type VFileParams[C /* <: vfileLib.Anon_Data */] = (VFileParamsBase[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(C))),List()),Left(TsIdentSimple(data))) */js.Any
-  ]) with C
+  type VFileContents = java.lang.String | nodeLib.Buffer
 }

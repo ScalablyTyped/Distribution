@@ -49,6 +49,14 @@ object XRayNs extends js.Object {
     extends /* key */ ScalablyTyped.runtime.StringDictionary[AttributeValue]
   
   
+  trait AvailabilityZoneDetail extends js.Object {
+    /**
+         * The name of a corresponding availability zone.
+         */
+    var Name: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait BackendConnectionErrors extends js.Object {
     /**
          * 
@@ -113,6 +121,26 @@ object XRayNs extends js.Object {
   }
   
   
+  trait CreateGroupRequest extends js.Object {
+    /**
+         * The filter expression defining criteria by which to group traces.
+         */
+    var FilterExpression: js.UndefOr[FilterExpression] = js.undefined
+    /**
+         * The case-sensitive name of the new group. Default is a reserved name and names must be unique.
+         */
+    var GroupName: GroupName
+  }
+  
+  
+  trait CreateGroupResult extends js.Object {
+    /**
+         * The group that was created. Contains the name of the group that was created, the ARN of the group that was generated based on the group name, and the filter expression that was assigned to the group.
+         */
+    var Group: js.UndefOr[Group] = js.undefined
+  }
+  
+  
   trait CreateSamplingRuleRequest extends js.Object {
     /**
          * The rule definition.
@@ -127,6 +155,21 @@ object XRayNs extends js.Object {
          */
     var SamplingRuleRecord: js.UndefOr[SamplingRuleRecord] = js.undefined
   }
+  
+  
+  trait DeleteGroupRequest extends js.Object {
+    /**
+         * The ARN of the group that was generated on creation.
+         */
+    var GroupARN: js.UndefOr[GroupARN] = js.undefined
+    /**
+         * The case-sensitive name of the group.
+         */
+    var GroupName: js.UndefOr[GroupName] = js.undefined
+  }
+  
+  
+  trait DeleteGroupResult extends js.Object
   
   
   trait DeleteSamplingRuleRequest extends js.Object {
@@ -217,6 +260,58 @@ object XRayNs extends js.Object {
   }
   
   
+  trait ErrorRootCause extends js.Object {
+    /**
+         * A list of services corresponding to an error. A service identifies a segment and it contains a name, account ID, type, and inferred flag.
+         */
+    var Services: js.UndefOr[ErrorRootCauseServices] = js.undefined
+  }
+  
+  
+  trait ErrorRootCauseEntity extends js.Object {
+    /**
+         * The types and messages of the exceptions.
+         */
+    var Exceptions: js.UndefOr[RootCauseExceptions] = js.undefined
+    /**
+         * The name of the entity.
+         */
+    var Name: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A flag that denotes a remote subsegment.
+         */
+    var Remote: js.UndefOr[NullableBoolean] = js.undefined
+  }
+  
+  
+  trait ErrorRootCauseService extends js.Object {
+    /**
+         * The account ID associated to the service.
+         */
+    var AccountId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The path of root cause entities found on the service. 
+         */
+    var EntityPath: js.UndefOr[ErrorRootCauseEntityPath] = js.undefined
+    /**
+         * A Boolean value indicating if the service is inferred from the trace.
+         */
+    var Inferred: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+         * The service name.
+         */
+    var Name: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A collection of associated service names.
+         */
+    var Names: js.UndefOr[ServiceNames] = js.undefined
+    /**
+         * The type associated to the service.
+         */
+    var Type: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait ErrorStatistics extends js.Object {
     /**
          * The number of requests that failed with untracked 4xx Client Error status codes.
@@ -230,6 +325,58 @@ object XRayNs extends js.Object {
          * The total number of requests that failed with a 4xx Client Error status code.
          */
     var TotalCount: js.UndefOr[NullableLong] = js.undefined
+  }
+  
+  
+  trait FaultRootCause extends js.Object {
+    /**
+         * A list of corresponding services. A service identifies a segment and it contains a name, account ID, type, and inferred flag.
+         */
+    var Services: js.UndefOr[FaultRootCauseServices] = js.undefined
+  }
+  
+  
+  trait FaultRootCauseEntity extends js.Object {
+    /**
+         * The types and messages of the exceptions.
+         */
+    var Exceptions: js.UndefOr[RootCauseExceptions] = js.undefined
+    /**
+         * The name of the entity.
+         */
+    var Name: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A flag that denotes a remote subsegment.
+         */
+    var Remote: js.UndefOr[NullableBoolean] = js.undefined
+  }
+  
+  
+  trait FaultRootCauseService extends js.Object {
+    /**
+         * The account ID associated to the service.
+         */
+    var AccountId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The path of root cause entities found on the service. 
+         */
+    var EntityPath: js.UndefOr[FaultRootCauseEntityPath] = js.undefined
+    /**
+         * A Boolean value indicating if the service is inferred from the trace.
+         */
+    var Inferred: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+         * The service name.
+         */
+    var Name: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A collection of associated service names.
+         */
+    var Names: js.UndefOr[ServiceNames] = js.undefined
+    /**
+         * The type associated to the service.
+         */
+    var Type: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -253,6 +400,46 @@ object XRayNs extends js.Object {
          * The encryption configuration document.
          */
     var EncryptionConfig: js.UndefOr[EncryptionConfig] = js.undefined
+  }
+  
+  
+  trait GetGroupRequest extends js.Object {
+    /**
+         * The ARN of the group that was generated on creation.
+         */
+    var GroupARN: js.UndefOr[GroupARN] = js.undefined
+    /**
+         * The case-sensitive name of the group.
+         */
+    var GroupName: js.UndefOr[GroupName] = js.undefined
+  }
+  
+  
+  trait GetGroupResult extends js.Object {
+    /**
+         * The group that was requested. Contains the name of the group, the ARN of the group, and the filter expression that assigned to the group.
+         */
+    var Group: js.UndefOr[Group] = js.undefined
+  }
+  
+  
+  trait GetGroupsRequest extends js.Object {
+    /**
+         * Pagination token. Not used.
+         */
+    var NextToken: js.UndefOr[GetGroupsNextToken] = js.undefined
+  }
+  
+  
+  trait GetGroupsResult extends js.Object {
+    /**
+         * The collection of all active groups.
+         */
+    var Groups: js.UndefOr[GroupSummaryList] = js.undefined
+    /**
+         * Pagination token. Not used.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -322,9 +509,17 @@ object XRayNs extends js.Object {
   
   trait GetServiceGraphRequest extends js.Object {
     /**
-         * The end of the time frame for which to generate a graph.
+         * The end of the timeframe for which to generate a graph.
          */
     var EndTime: Timestamp
+    /**
+         * The ARN of a group to generate a graph based on.
+         */
+    var GroupARN: js.UndefOr[GroupARN] = js.undefined
+    /**
+         * The name of a group to generate a graph based on.
+         */
+    var GroupName: js.UndefOr[GroupName] = js.undefined
     /**
          * Pagination token. Not used.
          */
@@ -337,6 +532,10 @@ object XRayNs extends js.Object {
   
   
   trait GetServiceGraphResult extends js.Object {
+    /**
+         * A flag indicating whether the group's filter expression has been consistent, or if the returned service graph may show traces from an older version of the group's filter expression.
+         */
+    var ContainsOldGroupVersions: js.UndefOr[scala.Boolean] = js.undefined
     /**
          * The end of the time frame for which the graph was generated.
          */
@@ -424,6 +623,38 @@ object XRayNs extends js.Object {
   }
   
   
+  trait Group extends js.Object {
+    /**
+         * The filter expression defining the parameters to include traces.
+         */
+    var FilterExpression: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ARN of the group generated based on the GroupName.
+         */
+    var GroupARN: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The unique case-sensitive name of the group.
+         */
+    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait GroupSummary extends js.Object {
+    /**
+         * The filter expression defining the parameters to include traces.
+         */
+    var FilterExpression: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ARN of the group generated based on the GroupName.
+         */
+    var GroupARN: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The unique case-sensitive name of the group.
+         */
+    var GroupName: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait HistogramEntry extends js.Object {
     /**
          * The prevalence of the entry.
@@ -457,6 +688,14 @@ object XRayNs extends js.Object {
          * The request's user agent string.
          */
     var UserAgent: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait InstanceIdDetail extends js.Object {
+    /**
+         * The ID of a corresponding EC2 instance.
+         */
+    var Id: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -516,6 +755,78 @@ object XRayNs extends js.Object {
          * Segments that failed processing.
          */
     var UnprocessedTraceSegments: js.UndefOr[UnprocessedTraceSegmentList] = js.undefined
+  }
+  
+  
+  trait ResourceARNDetail extends js.Object {
+    /**
+         * The ARN of a corresponding resource.
+         */
+    var ARN: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ResponseTimeRootCause extends js.Object {
+    /**
+         * A list of corresponding services. A service identifies a segment and contains a name, account ID, type, and inferred flag.
+         */
+    var Services: js.UndefOr[ResponseTimeRootCauseServices] = js.undefined
+  }
+  
+  
+  trait ResponseTimeRootCauseEntity extends js.Object {
+    /**
+         * The types and messages of the exceptions.
+         */
+    var Coverage: js.UndefOr[NullableDouble] = js.undefined
+    /**
+         * The name of the entity.
+         */
+    var Name: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A flag that denotes a remote subsegment.
+         */
+    var Remote: js.UndefOr[NullableBoolean] = js.undefined
+  }
+  
+  
+  trait ResponseTimeRootCauseService extends js.Object {
+    /**
+         * The account ID associated to the service.
+         */
+    var AccountId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The path of root cause entities found on the service. 
+         */
+    var EntityPath: js.UndefOr[ResponseTimeRootCauseEntityPath] = js.undefined
+    /**
+         * A Boolean value indicating if the service is inferred from the trace.
+         */
+    var Inferred: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+         * The service name.
+         */
+    var Name: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A collection of associated service names.
+         */
+    var Names: js.UndefOr[ServiceNames] = js.undefined
+    /**
+         * The type associated to the service.
+         */
+    var Type: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait RootCauseException extends js.Object {
+    /**
+         * The message of the exception.
+         */
+    var Message: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The name of the exception.
+         */
+    var Name: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -881,9 +1192,25 @@ object XRayNs extends js.Object {
          */
     var Annotations: js.UndefOr[Annotations] = js.undefined
     /**
+         * A list of availability zones for any zone corresponding to the trace segments.
+         */
+    var AvailabilityZones: js.UndefOr[TraceAvailabilityZones] = js.undefined
+    /**
          * The length of time in seconds between the start time of the root segment and the end time of the last segment that completed.
          */
     var Duration: js.UndefOr[NullableDouble] = js.undefined
+    /**
+         * The root of a trace.
+         */
+    var EntryPoint: js.UndefOr[ServiceId] = js.undefined
+    /**
+         * A collection of ErrorRootCause structures corresponding to the trace segments.
+         */
+    var ErrorRootCauses: js.UndefOr[ErrorRootCauses] = js.undefined
+    /**
+         * A collection of FaultRootCause structures corresponding to the the trace segments.
+         */
+    var FaultRootCauses: js.UndefOr[FaultRootCauses] = js.undefined
     /**
          * One or more of the segment documents has a 400 series error.
          */
@@ -905,13 +1232,29 @@ object XRayNs extends js.Object {
          */
     var Id: js.UndefOr[TraceId] = js.undefined
     /**
+         * A list of EC2 instance IDs for any instance corresponding to the trace segments.
+         */
+    var InstanceIds: js.UndefOr[TraceInstanceIds] = js.undefined
+    /**
          * One or more of the segment documents is in progress.
          */
     var IsPartial: js.UndefOr[NullableBoolean] = js.undefined
     /**
+         * A list of resource ARNs for any resource corresponding to the trace segments.
+         */
+    var ResourceARNs: js.UndefOr[TraceResourceARNs] = js.undefined
+    /**
          * The length of time in seconds between the start and end times of the root segment. If the service performs work asynchronously, the response time measures the time before the response is sent to the user, while the duration measures the amount of time before the last traced activity completes.
          */
     var ResponseTime: js.UndefOr[NullableDouble] = js.undefined
+    /**
+         * A collection of ResponseTimeRootCause structures corresponding to the trace segments.
+         */
+    var ResponseTimeRootCauses: js.UndefOr[ResponseTimeRootCauses] = js.undefined
+    /**
+         * The revision number of a trace.
+         */
+    var Revision: js.UndefOr[Integer] = js.undefined
     /**
          * Service IDs from the trace's segment documents.
          */
@@ -969,6 +1312,35 @@ object XRayNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetTracesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Creates a group resource with a name and a filter expression. 
+       */
+    def createGroup(): awsDashSdkLib.libRequestMod.Request[CreateGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a group resource with a name and a filter expression. 
+       */
+    def createGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateGroupResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a group resource with a name and a filter expression. 
+       */
+    def createGroup(params: CreateGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a group resource with a name and a filter expression. 
+       */
+    def createGroup(
+      params: CreateGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateGroupResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Creates a rule to control sampling behavior for instrumented applications. Services retrieve rules with GetSamplingRules, and evaluate each rule in ascending order of priority for each request. If a rule matches, the service records a trace, borrowing it from the reservoir size. After 10 seconds, the service reports back to X-Ray with GetSamplingTargets to get updated versions of each in-use rule. The updated rule contains a trace quota that the service can use instead of borrowing from the reservoir.
        */
     def createSamplingRule(): awsDashSdkLib.libRequestMod.Request[CreateSamplingRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -997,6 +1369,35 @@ object XRayNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateSamplingRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a group resource.
+       */
+    def deleteGroup(): awsDashSdkLib.libRequestMod.Request[DeleteGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a group resource.
+       */
+    def deleteGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteGroupResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a group resource.
+       */
+    def deleteGroup(params: DeleteGroupRequest): awsDashSdkLib.libRequestMod.Request[DeleteGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a group resource.
+       */
+    def deleteGroup(
+      params: DeleteGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteGroupResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Deletes a sampling rule.
        */
@@ -1055,6 +1456,48 @@ object XRayNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetEncryptionConfigResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves group resource details.
+       */
+    def getGroup(): awsDashSdkLib.libRequestMod.Request[GetGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves group resource details.
+       */
+    def getGroup(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetGroupResult, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[GetGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves group resource details.
+       */
+    def getGroup(params: GetGroupRequest): awsDashSdkLib.libRequestMod.Request[GetGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves group resource details.
+       */
+    def getGroup(
+      params: GetGroupRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetGroupResult, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[GetGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves all active group details.
+       */
+    def getGroups(): awsDashSdkLib.libRequestMod.Request[GetGroupsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves all active group details.
+       */
+    def getGroups(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetGroupsResult, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[GetGroupsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves all active group details.
+       */
+    def getGroups(params: GetGroupsRequest): awsDashSdkLib.libRequestMod.Request[GetGroupsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves all active group details.
+       */
+    def getGroups(
+      params: GetGroupsRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetGroupsResult, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[GetGroupsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Retrieves all sampling rules.
        */
@@ -1317,6 +1760,35 @@ object XRayNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutTraceSegmentsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Updates a group resource.
+       */
+    def updateGroup(): awsDashSdkLib.libRequestMod.Request[UpdateGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a group resource.
+       */
+    def updateGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateGroupResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a group resource.
+       */
+    def updateGroup(params: UpdateGroupRequest): awsDashSdkLib.libRequestMod.Request[UpdateGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a group resource.
+       */
+    def updateGroup(
+      params: UpdateGroupRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateGroupResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Modifies a sampling rule's configuration.
        */
     def updateSamplingRule(): awsDashSdkLib.libRequestMod.Request[UpdateSamplingRuleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1380,6 +1852,30 @@ object XRayNs extends js.Object {
   }
   
   
+  trait UpdateGroupRequest extends js.Object {
+    /**
+         * The updated filter expression defining criteria by which to group traces.
+         */
+    var FilterExpression: js.UndefOr[FilterExpression] = js.undefined
+    /**
+         * The ARN that was generated upon creation.
+         */
+    var GroupARN: js.UndefOr[GroupARN] = js.undefined
+    /**
+         * The case-sensitive name of the group.
+         */
+    var GroupName: js.UndefOr[GroupName] = js.undefined
+  }
+  
+  
+  trait UpdateGroupResult extends js.Object {
+    /**
+         * The group that was updated. Contains the name of the group that was updated, the ARN of the group that was updated, and the updated filter expression assigned to the group.
+         */
+    var Group: js.UndefOr[Group] = js.undefined
+  }
+  
+  
   trait UpdateSamplingRuleRequest extends js.Object {
     /**
          * The rule and fields to change.
@@ -1413,6 +1909,7 @@ object XRayNs extends js.Object {
   type AnnotationKey = java.lang.String
   type AttributeKey = java.lang.String
   type AttributeValue = java.lang.String
+  type Boolean = scala.Boolean
   type BorrowCount = scala.Double
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientID = java.lang.String
@@ -1422,8 +1919,18 @@ object XRayNs extends js.Object {
   type EncryptionKeyId = java.lang.String
   type EncryptionStatus = awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | java.lang.String
   type EncryptionType = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.KMS | java.lang.String
+  type ErrorRootCauseEntityPath = js.Array[ErrorRootCauseEntity]
+  type ErrorRootCauseServices = js.Array[ErrorRootCauseService]
+  type ErrorRootCauses = js.Array[ErrorRootCause]
+  type FaultRootCauseEntityPath = js.Array[FaultRootCauseEntity]
+  type FaultRootCauseServices = js.Array[FaultRootCauseService]
+  type FaultRootCauses = js.Array[FaultRootCause]
   type FilterExpression = java.lang.String
   type FixedRate = scala.Double
+  type GetGroupsNextToken = java.lang.String
+  type GroupARN = java.lang.String
+  type GroupName = java.lang.String
+  type GroupSummaryList = js.Array[GroupSummary]
   type HTTPMethod = java.lang.String
   type Histogram = js.Array[HistogramEntry]
   type Host = java.lang.String
@@ -1437,6 +1944,10 @@ object XRayNs extends js.Object {
   type RequestCount = scala.Double
   type ReservoirSize = scala.Double
   type ResourceARN = java.lang.String
+  type ResponseTimeRootCauseEntityPath = js.Array[ResponseTimeRootCauseEntity]
+  type ResponseTimeRootCauseServices = js.Array[ResponseTimeRootCauseService]
+  type ResponseTimeRootCauses = js.Array[ResponseTimeRootCause]
+  type RootCauseExceptions = js.Array[RootCauseException]
   type RuleName = java.lang.String
   type SampledCount = scala.Double
   type SamplingRuleRecordList = js.Array[SamplingRuleRecord]
@@ -1454,9 +1965,12 @@ object XRayNs extends js.Object {
   type String = java.lang.String
   type TelemetryRecordList = js.Array[TelemetryRecord]
   type Timestamp = stdLib.Date
+  type TraceAvailabilityZones = js.Array[AvailabilityZoneDetail]
   type TraceId = java.lang.String
   type TraceIdList = js.Array[TraceId]
+  type TraceInstanceIds = js.Array[InstanceIdDetail]
   type TraceList = js.Array[Trace]
+  type TraceResourceARNs = js.Array[ResourceARNDetail]
   type TraceSegmentDocument = java.lang.String
   type TraceSegmentDocumentList = js.Array[TraceSegmentDocument]
   type TraceSummaryList = js.Array[TraceSummary]

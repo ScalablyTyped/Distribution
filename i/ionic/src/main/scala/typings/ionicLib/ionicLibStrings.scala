@@ -10,6 +10,21 @@ object ionicLibStrings {
   sealed trait DELETE extends js.Object
   
   @js.native
+  sealed trait ERR_INVALID_PROJECT_FILE extends js.Object
+  
+  @js.native
+  sealed trait ERR_INVALID_PROJECT_TYPE extends js.Object
+  
+  @js.native
+  sealed trait ERR_MISSING_PROJECT_TYPE extends js.Object
+  
+  @js.native
+  sealed trait ERR_MULTI_MISSING_CONFIG extends js.Object
+  
+  @js.native
+  sealed trait ERR_MULTI_MISSING_ID extends js.Object
+  
+  @js.native
   sealed trait GET extends js.Object
   
   @js.native
@@ -38,6 +53,12 @@ object ionicLibStrings {
   
   @js.native
   sealed trait angular extends js.Object
+  
+  @js.native
+  sealed trait app extends js.Object
+  
+  @js.native
+  sealed trait bare extends js.Object
   
   @js.native
   sealed trait bitbucket_cloud extends js.Object
@@ -106,6 +127,9 @@ object ionicLibStrings {
   sealed trait max extends js.Object
   
   @js.native
+  sealed trait multiapp extends js.Object
+  
+  @js.native
   sealed trait npm extends js.Object
   
   @js.native
@@ -148,6 +172,9 @@ object ionicLibStrings {
   sealed trait testing extends js.Object
   
   @js.native
+  sealed trait unknown extends js.Object
+  
+  @js.native
   sealed trait windows extends js.Object
   
   @js.native
@@ -157,6 +184,11 @@ object ionicLibStrings {
   sealed trait yarn extends js.Object
   
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  def ERR_INVALID_PROJECT_FILE: ERR_INVALID_PROJECT_FILE = "ERR_INVALID_PROJECT_FILE".asInstanceOf[ERR_INVALID_PROJECT_FILE]
+  def ERR_INVALID_PROJECT_TYPE: ERR_INVALID_PROJECT_TYPE = "ERR_INVALID_PROJECT_TYPE".asInstanceOf[ERR_INVALID_PROJECT_TYPE]
+  def ERR_MISSING_PROJECT_TYPE: ERR_MISSING_PROJECT_TYPE = "ERR_MISSING_PROJECT_TYPE".asInstanceOf[ERR_MISSING_PROJECT_TYPE]
+  def ERR_MULTI_MISSING_CONFIG: ERR_MULTI_MISSING_CONFIG = "ERR_MULTI_MISSING_CONFIG".asInstanceOf[ERR_MULTI_MISSING_CONFIG]
+  def ERR_MULTI_MISSING_ID: ERR_MULTI_MISSING_ID = "ERR_MULTI_MISSING_ID".asInstanceOf[ERR_MULTI_MISSING_ID]
   def GET: GET = "GET".asInstanceOf[GET]
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   def OAuthIdentity: OAuthIdentity = "OAuthIdentity".asInstanceOf[OAuthIdentity]
@@ -167,6 +199,8 @@ object ionicLibStrings {
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   def android: android = "android".asInstanceOf[android]
   def angular: angular = "angular".asInstanceOf[angular]
+  def app: app = "app".asInstanceOf[app]
+  def bare: bare = "bare".asInstanceOf[bare]
   def bitbucket_cloud: bitbucket_cloud = "bitbucket_cloud".asInstanceOf[bitbucket_cloud]
   def bitbucket_server: bitbucket_server = "bitbucket_server".asInstanceOf[bitbucket_server]
   def browser: browser = "browser".asInstanceOf[browser]
@@ -189,6 +223,7 @@ object ionicLibStrings {
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   def latest: latest = "latest".asInstanceOf[latest]
   def max: max = "max".asInstanceOf[max]
+  def multiapp: multiapp = "multiapp".asInstanceOf[multiapp]
   def npm: npm = "npm".asInstanceOf[npm]
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   def production: production = "production".asInstanceOf[production]
@@ -203,6 +238,7 @@ object ionicLibStrings {
   def system: system = "system".asInstanceOf[system]
   def telemetry: telemetry = "telemetry".asInstanceOf[telemetry]
   def testing: testing = "testing".asInstanceOf[testing]
+  def unknown: unknown = "unknown".asInstanceOf[unknown]
   def windows: windows = "windows".asInstanceOf[windows]
   def wp8: wp8 = "wp8".asInstanceOf[wp8]
   def yarn: yarn = "yarn".asInstanceOf[yarn]

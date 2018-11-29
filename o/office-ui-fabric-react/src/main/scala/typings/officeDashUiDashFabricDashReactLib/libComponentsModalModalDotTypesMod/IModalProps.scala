@@ -25,19 +25,25 @@ trait IModalProps
   var containerClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
-       * @default false
+       * @defaultvalue false
        */
   var isBlocking: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the overlay is dark themed.
-       * @default true
+       * @defaultvalue true
        */
   var isDarkOverlay: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the dialog is displayed.
-       * @default false
+       * @defaultvalue false
        */
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+       * Props to be passed through to Layer
+       */
+  var layerProps: js.UndefOr[
+    officeDashUiDashFabricDashReactLib.libComponentsLayerLayerDotTypesMod.ILayerProps
+  ] = js.undefined
   /**
        * A callback function for when the Modal is dismissed light dismiss, before the animation completes.
        */
@@ -53,6 +59,7 @@ trait IModalProps
   var onDismissed: js.UndefOr[js.Function0[_]] = js.undefined
   /**
        * A callback function for when the Modal content is mounted on the overlay layer
+       * @deprecated Use layerProps.onLayerDidMount instead
        */
   var onLayerDidMount: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**

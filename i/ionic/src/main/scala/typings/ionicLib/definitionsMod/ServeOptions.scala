@@ -23,6 +23,5 @@ trait ServeOptions extends js.Object {
   var port: scala.Double
   var project: js.UndefOr[java.lang.String] = js.undefined
   var proxy: scala.Boolean
-  var ssl: scala.Boolean
 }
 

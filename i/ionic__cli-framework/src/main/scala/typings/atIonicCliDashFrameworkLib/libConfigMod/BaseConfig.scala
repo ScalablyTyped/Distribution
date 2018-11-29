@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation._
 abstract class BaseConfig[T /* <: js.Object */] protected () extends js.Object {
   def this(p: java.lang.String) = this()
   def this(p: java.lang.String, hasPathPrefix: BaseConfigOptions) = this()
+  var _getFile: js.Any = js.native
+  var _setFile: js.Any = js.native
   var c: T = js.native
   val file: js.Any = js.native
   val p: java.lang.String = js.native

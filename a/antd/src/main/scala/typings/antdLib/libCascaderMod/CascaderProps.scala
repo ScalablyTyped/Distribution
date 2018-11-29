@@ -27,7 +27,10 @@ trait CascaderProps extends js.Object {
   ] = js.undefined
   /** 次级菜单的展开方式，可选 'click' 和 'hover' */
   var expandTrigger: js.UndefOr[CascaderExpandTrigger] = js.undefined
+  /** use this after antd@3.7.0 */
   var fieldNames: js.UndefOr[FieldNamesType] = js.undefined
+  /** typo props name before antd@3.7.0 */
+  var filedNames: js.UndefOr[FieldNamesType] = js.undefined
   var getPopupContainer: js.UndefOr[
     js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement]
   ] = js.undefined

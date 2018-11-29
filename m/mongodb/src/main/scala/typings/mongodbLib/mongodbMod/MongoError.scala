@@ -19,10 +19,10 @@ class MongoError protected ()
        * client/user (eg. "Email address must be unique" instead of "Both email
        * address and username must be unique") - which caters for a better (app)
        * user experience.
-       * 
+       *
        * Details: https://github.com/Automattic/mongoose/issues/2129 (issue for
        * mongoose, but the same applies for the native mongodb driver)
-       * 
+       *
        * Note that in mongoose (the link above) the prop in question is called
        * 'message' while in mongodb it is called 'errmsg'. This can be seen in
        * multiple places in the source code, for example here:

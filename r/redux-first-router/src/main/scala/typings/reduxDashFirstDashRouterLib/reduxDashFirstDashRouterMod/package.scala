@@ -6,6 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reduxDashFirstDashRouterMod {
+  type ConfirmLeave = js.Function2[/* state */ js.Object, /* action */ js.Object, Nullable[java.lang.String]]
+  type DisplayConfirmLeave = js.Function2[
+    /* message */ java.lang.String, 
+    /* callback */ js.Function1[/* unblock */ scala.Boolean, scala.Unit], 
+    scala.Unit
+  ]
   type HistoryAction = java.lang.String
   type HistoryEntries = js.Array[reduxDashFirstDashRouterLib.Anon_Pathname]
   type Listener = js.Function2[/* location */ HistoryLocation, /* action */ HistoryAction, scala.Unit]

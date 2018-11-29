@@ -16,6 +16,7 @@ object libContextualMenuModMembers extends js.Object {
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuItemDotTypesMod.IContextualMenuItemProps, 
     reactLib.reactMod.Global.JSXNs.Element
   ] = js.native
+  val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_LeftTopEdge = js.native
   def canAnyMenuItemsCheck(
     items: js.Array[
       officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuItem

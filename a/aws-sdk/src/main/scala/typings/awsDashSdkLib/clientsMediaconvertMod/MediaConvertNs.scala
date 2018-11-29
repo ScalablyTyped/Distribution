@@ -73,6 +73,17 @@ object MediaConvertNs extends js.Object {
   }
   
   
+  trait AssociateCertificateRequest extends js.Object {
+    /**
+         * The ARN of the ACM certificate that you want to associate with your MediaConvert resource.
+         */
+    var Arn: __string
+  }
+  
+  
+  trait AssociateCertificateResponse extends js.Object
+  
+  
   trait AudioCodecSettings extends js.Object {
     var AacSettings: js.UndefOr[AacSettings] = js.undefined
     var Ac3Settings: js.UndefOr[Ac3Settings] = js.undefined
@@ -571,7 +582,7 @@ object MediaConvertNs extends js.Object {
          */
     var SegmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined
     /**
-         * When ENABLED, segment durations are indicated in the manifest using SegmentTimeline and SegmentTimeline will be promoted down into Representation from AdaptationSet.
+         * When you enable Precise segment duration in manifests (writeSegmentTimelineInRepresentation), your DASH manifest shows precise segment durations. The segment duration information appears inside the SegmentTimeline element, inside SegmentTemplate at the Representation level. When this feature isn't enabled, the segment durations in your DASH manifest are approximate. The segment duration information appears in the duration attribute of the SegmentTemplate element.
          */
     var WriteSegmentTimelineInRepresentation: js.UndefOr[DashIsoWriteSegmentTimelineInRepresentation] = js.undefined
   }
@@ -640,6 +651,17 @@ object MediaConvertNs extends js.Object {
          */
     var NextToken: js.UndefOr[__string] = js.undefined
   }
+  
+  
+  trait DisassociateCertificateRequest extends js.Object {
+    /**
+         * The ARN of the ACM certificate that you want to disassociate from your MediaConvert resource.
+         */
+    var Arn: __string
+  }
+  
+  
+  trait DisassociateCertificateResponse extends js.Object
   
   
   trait DvbNitSettings extends js.Object {
@@ -1298,7 +1320,7 @@ object MediaConvertNs extends js.Object {
   
   trait ImageInserter extends js.Object {
     /**
-         * Image to insert. Must be 32 bit windows BMP, PNG, or TGA file. Must not be  larger than the output frames.
+         * Specify the images that you want to overlay on your video. The images must be PNG or TGA files.
          */
     var InsertableImages: js.UndefOr[__listOfInsertableImage] = js.undefined
   }
@@ -1318,6 +1340,10 @@ object MediaConvertNs extends js.Object {
          */
     var CaptionSelectors: js.UndefOr[__mapOfCaptionSelector] = js.undefined
     var DeblockFilter: js.UndefOr[InputDeblockFilter] = js.undefined
+    /**
+         * If the input file is encrypted, decryption settings to decrypt the media file
+         */
+    var DecryptionSettings: js.UndefOr[InputDecryptionSettings] = js.undefined
     var DenoiseFilter: js.UndefOr[InputDenoiseFilter] = js.undefined
     /**
          * Use Input (fileInput) to define the source file used in the transcode job. There can be multiple inputs in a job. These inputs are concantenated, in the order they are specified in the job, to create the output.
@@ -1330,6 +1356,10 @@ object MediaConvertNs extends js.Object {
          * Use Filter strength (FilterStrength) to adjust the magnitude the input filter settings (Deblock and Denoise). The range is -5 to 5. Default is 0.
          */
     var FilterStrength: js.UndefOr[__integerMinNegative5Max5] = js.undefined
+    /**
+         * Enable the Image inserter (ImageInserter) feature to include a graphic overlay on your video. Enable or disable this feature for each input individually. This setting is disabled by default.
+         */
+    var ImageInserter: js.UndefOr[ImageInserter] = js.undefined
     /**
          * (InputClippings) contains sets of start and end times that together specify a portion of the input to be used in the outputs. If you provide only a start time, the clip will be the entire input from that point to the end. If you provide only an end time, it will be the entire input up to that point. When you specify more than one input clip, the transcoding service creates the job outputs by stringing the clips together in the order you specify them.
          */
@@ -1356,6 +1386,23 @@ object MediaConvertNs extends js.Object {
   }
   
   
+  trait InputDecryptionSettings extends js.Object {
+    var DecryptionMode: js.UndefOr[DecryptionMode] = js.undefined
+    /**
+         * Decryption key either 128 or 192 or 256 bits encrypted with KMS
+         */
+    var EncryptedDecryptionKey: js.UndefOr[__stringMin24Max512PatternAZaZ0902] = js.undefined
+    /**
+         * Initialization Vector 96 bits (CTR/GCM mode only) or 128 bits.
+         */
+    var InitializationVector: js.UndefOr[__stringMin16Max24PatternAZaZ0922AZaZ0916] = js.undefined
+    /**
+         * The AWS region in which decryption key was encrypted with KMS
+         */
+    var KmsKeyRegion: js.UndefOr[__stringMin9Max19PatternAZ26EastWestCentralNorthSouthEastWest1912] = js.undefined
+  }
+  
+  
   trait InputTemplate extends js.Object {
     /**
          * Specifies set of audio selectors within an input to combine. An input may have multiple audio selector groups. See "Audio Selector Group":#inputs-audio_selector_group for more information.
@@ -1377,6 +1424,10 @@ object MediaConvertNs extends js.Object {
          */
     var FilterStrength: js.UndefOr[__integerMinNegative5Max5] = js.undefined
     /**
+         * Enable the Image inserter (ImageInserter) feature to include a graphic overlay on your video. Enable or disable this feature for each input individually. This setting is disabled by default.
+         */
+    var ImageInserter: js.UndefOr[ImageInserter] = js.undefined
+    /**
          * (InputClippings) contains sets of start and end times that together specify a portion of the input to be used in the outputs. If you provide only a start time, the clip will be the entire input from that point to the end. If you provide only an end time, it will be the entire input up to that point. When you specify more than one input clip, the transcoding service creates the job outputs by stringing the clips together in the order you specify them.
          */
     var InputClippings: js.UndefOr[__listOfInputClipping] = js.undefined
@@ -1392,35 +1443,35 @@ object MediaConvertNs extends js.Object {
   
   trait InsertableImage extends js.Object {
     /**
-         * Use Duration (Duration) to set the time, in milliseconds, for the image to remain on the output video.
+         * Set the time, in milliseconds, for the image to remain on the output video.
          */
-    var Duration: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    var Duration: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
-         * Use Fade in (FadeIut) to set the length, in milliseconds, of the inserted image fade in. If you don't specify a value for Fade in, the image will appear abruptly at the Start time.
+         * Set the length of time, in milliseconds, between the Start time that you specify for the image insertion and the time that the image appears at full opacity. Full opacity is the level that you specify for the opacity setting. If you don't specify a value for Fade-in, the image will appear abruptly at the overlay start time.
          */
-    var FadeIn: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    var FadeIn: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
-         * Use Fade out (FadeOut) to set the length, in milliseconds, of the inserted image fade out. If you don't specify a value for Fade out, the image will disappear abruptly at the end of the inserted image duration.
+         * Specify the length of time, in milliseconds, between the end of the time that you have specified for the image overlay Duration and when the overlaid image has faded to total transparency. If you don't specify a value for Fade-out, the image will disappear abruptly at the end of the inserted image duration.
          */
-    var FadeOut: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    var FadeOut: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
-         * Specify the Height (Height) of the inserted image. Use a value that is less than or equal to the video resolution height. Leave this setting blank to use the native height of the image.
+         * Specify the height of the inserted image in pixels. If you specify a value that's larger than the video resolution height, the service will crop your overlaid image to fit. To use the native height of the image, keep this setting blank.
          */
-    var Height: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    var Height: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
-         * Use Image location (imageInserterInput) to specify the Amazon S3 location of the image to be inserted into the output. Use a 32 bit BMP, PNG, or TGA file that fits inside the video frame.
+         * Use Image location (imageInserterInput) to specify the Amazon S3 location of the image to be inserted into the output. Use a PNG or TGA file that fits inside the video frame.
          */
     var ImageInserterInput: js.UndefOr[__stringMin14PatternS3BmpBMPPngPNGTgaTGA] = js.undefined
     /**
-         * Use Left (ImageX) to set the distance, in pixels, between the inserted image and the left edge of the frame. Required for BMP, PNG and TGA input.
+         * Use Left (ImageX) to set the distance, in pixels, between the inserted image and the left edge of the video frame. Required for any image overlay that you specify.
          */
-    var ImageX: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    var ImageX: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
-         * Use Top (ImageY) to set the distance, in pixels, between the inserted image and the top edge of the video frame. Required for BMP, PNG and TGA input.
+         * Use Top (ImageY) to set the distance, in pixels, between the overlaid image and the top edge of the video frame. Required for any image overlay that you specify.
          */
-    var ImageY: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    var ImageY: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
-         * Use Layer (Layer) to specify how overlapping inserted images appear. Images with higher values of layer appear on top of images with lower values of layer.
+         * Specify how overlapping inserted images appear. Images with higher values for Layer appear on top of images with lower values for Layer.
          */
     var Layer: js.UndefOr[__integerMin0Max99] = js.undefined
     /**
@@ -1432,9 +1483,9 @@ object MediaConvertNs extends js.Object {
          */
     var StartTime: js.UndefOr[__stringPattern01D20305D205D] = js.undefined
     /**
-         * Specify the Width (Width) of the inserted image. Use a value that is less than or equal to the video resolution width. Leave this setting blank to use the native width of the image.
+         * Specify the width of the inserted image in pixels. If you specify a value that's larger than the video resolution width, the service will crop your overlaid image to fit. To use the native width of the image, keep this setting blank.
          */
-    var Width: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    var Width: js.UndefOr[__integerMin0Max2147483647] = js.undefined
   }
   
   
@@ -1499,6 +1550,10 @@ object MediaConvertNs extends js.Object {
          * Use Inputs (inputs) to define source file used in the transcode job. There can be multiple inputs add in a job. These inputs will be concantenated together to create the output.
          */
     var Inputs: js.UndefOr[__listOfInput] = js.undefined
+    /**
+         * Overlay motion graphics on top of your video. The motion graphics that you specify here appear on all outputs in all output groups.
+         */
+    var MotionImageInserter: js.UndefOr[MotionImageInserter] = js.undefined
     var NielsenConfiguration: js.UndefOr[NielsenConfiguration] = js.undefined
     /**
          * (OutputGroups) contains one group of settings for each set of outputs that share a common package type. All unpackaged files (MPEG-4, MPEG-2 TS, Quicktime, MXF, and no container) are grouped in a single output group as well. Required in (OutputGroups) is a group of settings that apply to the whole group. This required object depends on the value you set for (Type) under (OutputGroups)>(OutputGroupSettings). Type, settings object pairs are as follows. * FILE_GROUP_SETTINGS, FileGroupSettings * HLS_GROUP_SETTINGS, HlsGroupSettings * DASH_ISO_GROUP_SETTINGS, DashIsoGroupSettings * MS_SMOOTH_GROUP_SETTINGS, MsSmoothGroupSettings * CMAF_GROUP_SETTINGS, CmafGroupSettings
@@ -1562,6 +1617,10 @@ object MediaConvertNs extends js.Object {
          * Use Inputs (inputs) to define the source file used in the transcode job. There can only be one input in a job template.  Using the API, you can include multiple inputs when referencing a job template.
          */
     var Inputs: js.UndefOr[__listOfInputTemplate] = js.undefined
+    /**
+         * Overlay motion graphics on top of your video. The motion graphics that you specify here appear on all outputs in all output groups.
+         */
+    var MotionImageInserter: js.UndefOr[MotionImageInserter] = js.undefined
     var NielsenConfiguration: js.UndefOr[NielsenConfiguration] = js.undefined
     /**
          * (OutputGroups) contains one group of settings for each set of outputs that share a common package type. All unpackaged files (MPEG-4, MPEG-2 TS, Quicktime, MXF, and no container) are grouped in a single output group as well. Required in (OutputGroups) is a group of settings that apply to the whole group. This required object depends on the value you set for (Type) under (OutputGroups)>(OutputGroupSettings). Type, settings object pairs are as follows. * FILE_GROUP_SETTINGS, FileGroupSettings * HLS_GROUP_SETTINGS, HlsGroupSettings * DASH_ISO_GROUP_SETTINGS, DashIsoGroupSettings * MS_SMOOTH_GROUP_SETTINGS, MsSmoothGroupSettings * CMAF_GROUP_SETTINGS, CmafGroupSettings
@@ -1855,6 +1914,58 @@ object MediaConvertNs extends js.Object {
          * Packet Identifier (PID) of the elementary video stream in the transport stream.
          */
     var VideoPid: js.UndefOr[__integerMin32Max8182] = js.undefined
+  }
+  
+  
+  trait MotionImageInserter extends js.Object {
+    /**
+         * If your motion graphic asset is a .mov file, keep this setting unspecified. If your motion graphic asset is a series of .png files, specify the framerate of the overlay in frames per second, as a fraction. For example, specify 24 fps as 24/1. Make sure that the number of images in your series matches the framerate and your intended overlay duration. For example, if you want a 30-second overlay at 30 fps, you should have 900 .png images. This overlay framerate doesn't need to match the framerate of the underlying video.
+         */
+    var Framerate: js.UndefOr[MotionImageInsertionFramerate] = js.undefined
+    /**
+         * Specify the .mov file or series of .png files that you want to overlay on your video. For .png files, provide the file name of the first file in the series. Make sure that the names of the .png files end with sequential numbers that specify the order that they are played in. For example, overlay_000.png, overlay_001.png, overlay_002.png, and so on. The sequence must start at zero, and each image file name must have the same number of digits. Pad your initial file names with enough zeros to complete the sequence. For example, if the first image is overlay_0.png, there can be only 10 images in the sequence, with the last image being overlay_9.png. But if the first image is overlay_00.png, there can be 100 images in the sequence.
+         */
+    var Input: js.UndefOr[__stringMin14Max1285PatternS3Mov09Png] = js.undefined
+    /**
+         * Choose the type of motion graphic asset that you are providing for your overlay. You can choose either a .mov file or a series of .png files.
+         */
+    var InsertionMode: js.UndefOr[MotionImageInsertionMode] = js.undefined
+    /**
+         * Use Offset to specify the placement of your motion graphic overlay on the video frame. Specify in pixels, from the upper-left corner of the frame. If you don't specify an offset, the service scales your overlay to the full size of the frame. Otherwise, the service inserts the overlay at its native resolution and scales the size up or down with any video scaling.
+         */
+    var Offset: js.UndefOr[MotionImageInsertionOffset] = js.undefined
+    /**
+         * Specify whether your motion graphic overlay repeats on a loop or plays only once.
+         */
+    var Playback: js.UndefOr[MotionImagePlayback] = js.undefined
+    /**
+         * Specify when the motion overlay begins. Use timecode format (HH:MM:SS:FF or HH:MM:SS;FF). Make sure that the timecode you provide here takes into account how you have set up your timecode configuration under both job settings and input settings. The simplest way to do that is to set both to start at 0. If you need to set up your job to follow timecodes embedded in your source that don't start at zero, make sure that you specify a start time that is after the first embedded timecode. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/setting-up-timecode.html Find job-wide and input timecode configuration settings in your JSON job settings specification at settings>timecodeConfig>source and settings>inputs>timecodeSource.
+         */
+    var StartTime: js.UndefOr[__stringMin11Max11Pattern01D20305D205D] = js.undefined
+  }
+  
+  
+  trait MotionImageInsertionFramerate extends js.Object {
+    /**
+         * The bottom of the fraction that expresses your overlay framerate. For example, if your framerate is 24 fps, set this value to 1.
+         */
+    var FramerateDenominator: js.UndefOr[__integerMin1Max17895697] = js.undefined
+    /**
+         * The top of the fraction that expresses your overlay framerate. For example, if your framerate is 24 fps, set this value to 24.
+         */
+    var FramerateNumerator: js.UndefOr[__integerMin1Max2147483640] = js.undefined
+  }
+  
+  
+  trait MotionImageInsertionOffset extends js.Object {
+    /**
+         * Set the distance, in pixels, between the overlay and the left edge of the video frame.
+         */
+    var ImageX: js.UndefOr[__integerMin0Max2147483647] = js.undefined
+    /**
+         * Set the distance, in pixels, between the overlay and the top edge of the video frame.
+         */
+    var ImageY: js.UndefOr[__integerMin0Max2147483647] = js.undefined
   }
   
   
@@ -2297,7 +2408,7 @@ object MediaConvertNs extends js.Object {
          */
     var RenewalType: js.UndefOr[RenewalType] = js.undefined
     /**
-         * Specifies the number of reserved transcode slots (RTSs) for this queue. The number of RTS determines how many jobs the queue can process in parallel; each RTS can process one job at a time. To increase this number, create a replacement contract through the AWS Elemental MediaConvert console.
+         * Specifies the number of reserved transcode slots (RTS) for this queue. The number of RTS determines how many jobs the queue can process in parallel; each RTS can process one job at a time. To increase this number, create a replacement contract through the AWS Elemental MediaConvert console.
          */
     var ReservedSlots: js.UndefOr[__integer] = js.undefined
     /**
@@ -2317,7 +2428,7 @@ object MediaConvertNs extends js.Object {
          */
     var RenewalType: RenewalType
     /**
-         * Specifies the number of reserved transcode slots (RTSs) for this queue. The number of RTS determines how many jobs the queue can process in parallel; each RTS can process one job at a time. To increase this number, create a replacement contract through the AWS Elemental MediaConvert console.
+         * Specifies the number of reserved transcode slots (RTS) for this queue. The number of RTS determines how many jobs the queue can process in parallel; each RTS can process one job at a time. To increase this number, create a replacement contract through the AWS Elemental MediaConvert console.
          */
     var ReservedSlots: __integer
   }
@@ -2341,6 +2452,10 @@ object MediaConvertNs extends js.Object {
   
   
   trait SpekeKeyProvider extends js.Object {
+    /**
+         * Optional AWS Certificate Manager ARN for a certificate to send to the keyprovider. The certificate holds a key used by the keyprovider to encrypt the keys in its response.
+         */
+    var CertificateArn: js.UndefOr[__stringPatternArnAwsAcm] = js.undefined
     /**
          * The SPEKE-compliant server uses Resource ID (ResourceId) to identify content.
          */
@@ -2470,6 +2585,35 @@ object MediaConvertNs extends js.Object {
     extends awsDashSdkLib.libServiceMod.Service {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
+    /**
+       * Associates an AWS Certificate Manager (ACM) Amazon Resource Name (ARN) with AWS Elemental MediaConvert.
+       */
+    def associateCertificate(): awsDashSdkLib.libRequestMod.Request[AssociateCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates an AWS Certificate Manager (ACM) Amazon Resource Name (ARN) with AWS Elemental MediaConvert.
+       */
+    def associateCertificate(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociateCertificateResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AssociateCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates an AWS Certificate Manager (ACM) Amazon Resource Name (ARN) with AWS Elemental MediaConvert.
+       */
+    def associateCertificate(params: AssociateCertificateRequest): awsDashSdkLib.libRequestMod.Request[AssociateCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates an AWS Certificate Manager (ACM) Amazon Resource Name (ARN) with AWS Elemental MediaConvert.
+       */
+    def associateCertificate(
+      params: AssociateCertificateRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociateCertificateResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AssociateCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Permanently remove a job from a queue. Once you have canceled a job, you can't start it again. You can't delete a running job.
        */
@@ -2731,6 +2875,35 @@ object MediaConvertNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes an association between the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert resource.
+       */
+    def disassociateCertificate(): awsDashSdkLib.libRequestMod.Request[DisassociateCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes an association between the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert resource.
+       */
+    def disassociateCertificate(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociateCertificateResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisassociateCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes an association between the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert resource.
+       */
+    def disassociateCertificate(params: DisassociateCertificateRequest): awsDashSdkLib.libRequestMod.Request[DisassociateCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes an association between the Amazon Resource Name (ARN) of an AWS Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert resource.
+       */
+    def disassociateCertificate(
+      params: DisassociateCertificateRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociateCertificateResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisassociateCertificateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Retrieve the JSON for a specific completed transcoding job.
        */
@@ -3221,6 +3394,9 @@ object MediaConvertNs extends js.Object {
   
   
   trait VideoCodecSettings extends js.Object {
+    /**
+         * Specifies the video codec. This must be equal to one of the enum values defined by the object  VideoCodec.
+         */
     var Codec: js.UndefOr[VideoCodec] = js.undefined
     var FrameCaptureSettings: js.UndefOr[FrameCaptureSettings] = js.undefined
     var H264Settings: js.UndefOr[H264Settings] = js.undefined
@@ -3384,8 +3560,8 @@ object MediaConvertNs extends js.Object {
   type BurninSubtitleOutlineColor = awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.WHITE | awsDashSdkLib.awsDashSdkLibStrings.YELLOW | awsDashSdkLib.awsDashSdkLibStrings.RED | awsDashSdkLib.awsDashSdkLibStrings.GREEN | awsDashSdkLib.awsDashSdkLibStrings.BLUE | java.lang.String
   type BurninSubtitleShadowColor = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.WHITE | java.lang.String
   type BurninSubtitleTeletextSpacing = awsDashSdkLib.awsDashSdkLibStrings.FIXED_GRID | awsDashSdkLib.awsDashSdkLibStrings.PROPORTIONAL | java.lang.String
-  type CaptionDestinationType = awsDashSdkLib.awsDashSdkLibStrings.BURN_IN | awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.SCC | awsDashSdkLib.awsDashSdkLibStrings.SRT | awsDashSdkLib.awsDashSdkLibStrings.TELETEXT | awsDashSdkLib.awsDashSdkLibStrings.TTML | awsDashSdkLib.awsDashSdkLibStrings.WEBVTT | java.lang.String
-  type CaptionSourceType = awsDashSdkLib.awsDashSdkLibStrings.ANCILLARY | awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.SCC | awsDashSdkLib.awsDashSdkLibStrings.TTML | awsDashSdkLib.awsDashSdkLibStrings.STL | awsDashSdkLib.awsDashSdkLibStrings.SRT | awsDashSdkLib.awsDashSdkLibStrings.TELETEXT | awsDashSdkLib.awsDashSdkLibStrings.NULL_SOURCE | java.lang.String
+  type CaptionDestinationType = awsDashSdkLib.awsDashSdkLibStrings.BURN_IN | awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED_PLUS_SCTE20 | awsDashSdkLib.awsDashSdkLibStrings.SCTE20_PLUS_EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.SCC | awsDashSdkLib.awsDashSdkLibStrings.SRT | awsDashSdkLib.awsDashSdkLibStrings.SMI | awsDashSdkLib.awsDashSdkLibStrings.TELETEXT | awsDashSdkLib.awsDashSdkLibStrings.TTML | awsDashSdkLib.awsDashSdkLibStrings.WEBVTT | java.lang.String
+  type CaptionSourceType = awsDashSdkLib.awsDashSdkLibStrings.ANCILLARY | awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.SCTE20 | awsDashSdkLib.awsDashSdkLibStrings.SCC | awsDashSdkLib.awsDashSdkLibStrings.TTML | awsDashSdkLib.awsDashSdkLibStrings.STL | awsDashSdkLib.awsDashSdkLibStrings.SRT | awsDashSdkLib.awsDashSdkLibStrings.SMI | awsDashSdkLib.awsDashSdkLibStrings.TELETEXT | awsDashSdkLib.awsDashSdkLibStrings.NULL_SOURCE | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CmafClientCache = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
   type CmafCodecSpecification = awsDashSdkLib.awsDashSdkLibStrings.RFC_6381 | awsDashSdkLib.awsDashSdkLibStrings.RFC_4281 | java.lang.String
@@ -3407,6 +3583,7 @@ object MediaConvertNs extends js.Object {
   type DashIsoHbbtvCompliance = awsDashSdkLib.awsDashSdkLibStrings.HBBTV_1_5 | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
   type DashIsoSegmentControl = awsDashSdkLib.awsDashSdkLibStrings.SINGLE_FILE | awsDashSdkLib.awsDashSdkLibStrings.SEGMENTED_FILES | java.lang.String
   type DashIsoWriteSegmentTimelineInRepresentation = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type DecryptionMode = awsDashSdkLib.awsDashSdkLibStrings.AES_CTR | awsDashSdkLib.awsDashSdkLibStrings.AES_CBC | awsDashSdkLib.awsDashSdkLibStrings.AES_GCM | java.lang.String
   type DeinterlaceAlgorithm = awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE | awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE_TICKER | awsDashSdkLib.awsDashSdkLibStrings.BLEND | awsDashSdkLib.awsDashSdkLibStrings.BLEND_TICKER | java.lang.String
   type DeinterlacerControl = awsDashSdkLib.awsDashSdkLibStrings.FORCE_ALL_FRAMES | awsDashSdkLib.awsDashSdkLibStrings.NORMAL | java.lang.String
   type DeinterlacerMode = awsDashSdkLib.awsDashSdkLibStrings.DEINTERLACE | awsDashSdkLib.awsDashSdkLibStrings.INVERSE_TELECINE | awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE | java.lang.String
@@ -3521,6 +3698,8 @@ object MediaConvertNs extends js.Object {
   type M3u8NielsenId3 = awsDashSdkLib.awsDashSdkLibStrings.INSERT | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
   type M3u8PcrControl = awsDashSdkLib.awsDashSdkLibStrings.PCR_EVERY_PES_PACKET | awsDashSdkLib.awsDashSdkLibStrings.CONFIGURED_PCR_PERIOD | java.lang.String
   type M3u8Scte35Source = awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
+  type MotionImageInsertionMode = awsDashSdkLib.awsDashSdkLibStrings.MOV | awsDashSdkLib.awsDashSdkLibStrings.PNG | java.lang.String
+  type MotionImagePlayback = awsDashSdkLib.awsDashSdkLibStrings.ONCE | awsDashSdkLib.awsDashSdkLibStrings.REPEAT | java.lang.String
   type MovClapAtom = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
   type MovCslgAtom = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
   type MovMpeg2FourCCControl = awsDashSdkLib.awsDashSdkLibStrings.XDCAM | awsDashSdkLib.awsDashSdkLibStrings.MPEG | java.lang.String
@@ -3619,8 +3798,10 @@ object MediaConvertNs extends js.Object {
   type __integerMin1Max10000000 = scala.Double
   type __integerMin1Max1001 = scala.Double
   type __integerMin1Max16 = scala.Double
+  type __integerMin1Max17895697 = scala.Double
   type __integerMin1Max2 = scala.Double
   type __integerMin1Max20 = scala.Double
+  type __integerMin1Max2147483640 = scala.Double
   type __integerMin1Max2147483647 = scala.Double
   type __integerMin1Max31 = scala.Double
   type __integerMin1Max32 = scala.Double
@@ -3678,13 +3859,18 @@ object MediaConvertNs extends js.Object {
   type __string = java.lang.String
   type __stringMin0 = java.lang.String
   type __stringMin1 = java.lang.String
+  type __stringMin11Max11Pattern01D20305D205D = java.lang.String
+  type __stringMin14Max1285PatternS3Mov09Png = java.lang.String
   type __stringMin14PatternS3BmpBMPPngPNG = java.lang.String
   type __stringMin14PatternS3BmpBMPPngPNGTgaTGA = java.lang.String
   type __stringMin14PatternS3SccSCCTtmlTTMLDfxpDFXPStlSTLSrtSRTSmiSMI = java.lang.String
+  type __stringMin16Max24PatternAZaZ0922AZaZ0916 = java.lang.String
   type __stringMin1Max256 = java.lang.String
+  type __stringMin24Max512PatternAZaZ0902 = java.lang.String
   type __stringMin32Max32Pattern09aFAF32 = java.lang.String
   type __stringMin3Max3Pattern1809aFAF09aEAE = java.lang.String
   type __stringMin3Max3PatternAZaZ3 = java.lang.String
+  type __stringMin9Max19PatternAZ26EastWestCentralNorthSouthEastWest1912 = java.lang.String
   type __stringPattern = java.lang.String
   type __stringPattern010920405090509092 = java.lang.String
   type __stringPattern01D20305D205D = java.lang.String
@@ -3692,6 +3878,7 @@ object MediaConvertNs extends js.Object {
   type __stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = java.lang.String
   type __stringPatternAZaZ0902 = java.lang.String
   type __stringPatternAZaZ0932 = java.lang.String
+  type __stringPatternArnAwsAcm = java.lang.String
   type __stringPatternDD = java.lang.String
   type __stringPatternHttps = java.lang.String
   type __stringPatternIdentityAZaZ26AZaZ09163 = java.lang.String

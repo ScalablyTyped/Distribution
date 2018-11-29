@@ -10,13 +10,21 @@ object reactDashSvgLibStrings {
   sealed trait always extends js.Object
   
   @js.native
+  sealed trait div extends js.Object
+  
+  @js.native
   sealed trait never extends js.Object
   
   @js.native
   sealed trait once extends js.Object
   
+  @js.native
+  sealed trait span extends js.Object
+  
   def always: always = "always".asInstanceOf[always]
+  def div: div = "div".asInstanceOf[div]
   def never: never = "never".asInstanceOf[never]
   def once: once = "once".asInstanceOf[once]
+  def span: span = "span".asInstanceOf[span]
 }
 

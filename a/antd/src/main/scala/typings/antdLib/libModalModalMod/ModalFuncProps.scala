@@ -20,6 +20,7 @@ trait ModalFuncProps extends js.Object {
   var iconType: js.UndefOr[java.lang.String] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
   var maskClosable: js.UndefOr[scala.Boolean] = js.undefined
+  var maskStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var okButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   var okCancel: js.UndefOr[scala.Boolean] = js.undefined
   var okText: js.UndefOr[java.lang.String] = js.undefined

@@ -11,6 +11,8 @@ package object ErrorLinkNs {
        */
   type ErrorHandler = js.Function1[
     /* error */ apolloDashLinkDashErrorLib.apolloDashLinkDashErrorMod.ErrorResponse, 
-    scala.Unit
+    (zenDashObservableDashTsLib.libZenObservableMod.Observable[
+      apolloDashLinkLib.libTypesMod.FetchResult[stdLib.Record[java.lang.String, js.Any], stdLib.Record[java.lang.String, js.Any]]
+    ]) | scala.Unit
   ]
 }

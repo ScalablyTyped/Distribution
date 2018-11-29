@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object gotNs {
-  type GotError = gotLib.gotMod.RequestError | gotLib.gotMod.ReadError | gotLib.gotMod.ParseError | gotLib.gotMod.HTTPError | gotLib.gotMod.MaxRedirectsError | gotLib.gotMod.UnsupportedProtocolError | gotLib.gotMod.CancelError
+  type GotError = gotLib.gotMod.RequestError | gotLib.gotMod.ReadError | gotLib.gotMod.ParseError | gotLib.gotMod.HTTPError | gotLib.gotMod.MaxRedirectsError | gotLib.gotMod.UnsupportedProtocolError | gotLib.gotMod.CancelError | gotLib.gotMod.TimeoutError
   type GotPromise[B /* <: nodeLib.Buffer | java.lang.String | js.Object */] = stdLib.Promise[Response[B]] with gotLib.Anon_Cancel
   type GotStreamFn = js.Function2[
     /* url */ GotUrl, 

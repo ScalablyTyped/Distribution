@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait ExpressionWithTypeArguments extends NodeWithTypeArguments {
   var expression: LeftHandSideExpression = js.native
   @JSName("parent")
-  var parent_ExpressionWithTypeArguments: HeritageClause = js.native
+  var parent_ExpressionWithTypeArguments: HeritageClause | JSDocAugmentsTag = js.native
 }
 

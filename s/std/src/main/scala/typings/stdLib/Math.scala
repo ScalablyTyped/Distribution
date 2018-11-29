@@ -24,7 +24,7 @@ trait Math extends js.Object {
   /** The square root of 2. */
   val SQRT2: scala.Double
   @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
-  val toStringTag: stdLib.stdLibStrings.Math
+  val toStringTag: java.lang.String
   /**
         * Returns the absolute value of a number (the value without regard to whether it is positive or negative).
         * For example, the absolute value of -5 is the same as the absolute value of 5.

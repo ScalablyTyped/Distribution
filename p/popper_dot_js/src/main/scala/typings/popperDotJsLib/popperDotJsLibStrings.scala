@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object popperDotJsLibStrings {
   @js.native
+  sealed trait Empty extends js.Object
+  
+  @js.native
   sealed trait auto extends js.Object
   
   @js.native
@@ -69,6 +72,7 @@ object popperDotJsLibStrings {
   @js.native
   sealed trait window extends js.Object
   
+  def Empty: Empty = "".asInstanceOf[Empty]
   def auto: auto = "auto".asInstanceOf[auto]
   def `auto-end`: `auto-end` = "auto-end".asInstanceOf[`auto-end`]
   def `auto-start`: `auto-start` = "auto-start".asInstanceOf[`auto-start`]

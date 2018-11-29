@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_EnableAutofillOnKeyPress extends js.Object {
-  var enableAutofillOnKeyPress: js.Array[atUifabricUtilitiesLib.libKeyCodesMod.KeyCodes]
+  var enableAutofillOnKeyPress: js.Array[scala.Double]
 }
 

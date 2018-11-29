@@ -10,17 +10,17 @@ trait IExpandingCardProps
   extends officeDashUiDashFabricDashReactLib.libComponentsHoverCardBaseCardDotTypesMod.IBaseCardProps[IExpandingCard, IExpandingCardStyles, IExpandingCardStyleProps] {
   /**
        * Height of compact card
-       * @default 156
+       * @defaultvalue 156
        */
   var compactCardHeight: js.UndefOr[scala.Double] = js.undefined
   /**
        * Height of expanded card
-       * @default 384
+       * @defaultvalue 384
        */
   var expandedCardHeight: js.UndefOr[scala.Double] = js.undefined
   /**
        * Use to open the card in expanded format and not wait for the delay
-       * @default ExpandingCardMode.compact
+       * @defaultvalue ExpandingCardMode.compact
        */
   var mode: js.UndefOr[ExpandingCardMode] = js.undefined
   /**

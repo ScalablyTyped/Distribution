@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Analytics extends js.Object {
   /* alias is how you associate one identity with another. */
-  def alias(message: analyticsDashNodeLib.Anon_PreviousId): Analytics = js.native
+  def alias(message: analyticsDashNodeLib.Anon_AnonymousId): Analytics = js.native
   /* alias is how you associate one identity with another. */
   def alias(
-    message: analyticsDashNodeLib.Anon_PreviousId,
+    message: analyticsDashNodeLib.Anon_AnonymousId,
     callback: js.Function2[/* err */ stdLib.Error, /* data */ Data, scala.Unit]
   ): Analytics = js.native
   /* Flush batched calls to make sure nothing is left in the queue */

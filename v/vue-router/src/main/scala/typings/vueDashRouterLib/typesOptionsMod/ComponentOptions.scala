@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 
 trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */] extends js.Object {
-  var beforeRouteEnter: js.UndefOr[vueDashRouterLib.typesRouterMod.NavigationGuard] = js.undefined
-  var beforeRouteLeave: js.UndefOr[vueDashRouterLib.typesRouterMod.NavigationGuard] = js.undefined
-  var beforeRouteUpdate: js.UndefOr[vueDashRouterLib.typesRouterMod.NavigationGuard] = js.undefined
+  var beforeRouteEnter: js.UndefOr[vueDashRouterLib.typesRouterMod.NavigationGuard[V]] = js.undefined
+  var beforeRouteLeave: js.UndefOr[vueDashRouterLib.typesRouterMod.NavigationGuard[V]] = js.undefined
+  var beforeRouteUpdate: js.UndefOr[vueDashRouterLib.typesRouterMod.NavigationGuard[V]] = js.undefined
   var router: js.UndefOr[vueDashRouterLib.typesMod.default] = js.undefined
 }
 

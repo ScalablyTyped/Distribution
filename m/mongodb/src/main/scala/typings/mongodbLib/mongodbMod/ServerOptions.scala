@@ -7,16 +7,29 @@ import scala.scalajs.js.annotation._
 
 
 trait ServerOptions extends SSLOptions {
-  // Default: false;
+  /**
+       * Default: false;
+       */
   var domainsEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  // Default: 10000; The High availability period for replicaset inquiry
+  /**
+       * Default: 10000; The High availability period for replicaset inquiry
+       */
   var haInterval: js.UndefOr[scala.Double] = js.undefined
-  // Default: true;
+  /**
+       * Default: true;
+       */
   var monitoring: js.UndefOr[scala.Boolean] = js.undefined
-  // Default: 1000;
+  /**
+       * Default: 1000;
+       */
   var reconnectInterval: js.UndefOr[scala.Double] = js.undefined
-  // Default: 30;
+  /**
+       * Default: 30;
+       */
   var reconnectTries: js.UndefOr[scala.Double] = js.undefined
+  /**
+       * Socket Options
+       */
   var socketOptions: js.UndefOr[SocketOptions] = js.undefined
 }
 

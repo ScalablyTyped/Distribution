@@ -59,7 +59,7 @@ trait IOverflowSetProps
   var overflowItems: js.UndefOr[js.Array[IOverflowSetItemProps]] = js.native
   /**
        * The role for the OverflowSet.
-       * @default 'menubar'
+       * @defaultvalue 'menubar'
        */
   var role: js.UndefOr[java.lang.String] = js.native
   /**
@@ -70,7 +70,7 @@ trait IOverflowSetProps
   ] = js.native
   /**
        * Change item layout direction to vertical/stacked.
-       * @default false
+       * @defaultvalue false
        */
   var vertical: js.UndefOr[scala.Boolean] = js.native
   /**

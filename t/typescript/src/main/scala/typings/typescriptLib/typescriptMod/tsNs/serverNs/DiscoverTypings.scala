@@ -13,6 +13,6 @@ trait DiscoverTypings extends TypingInstallerRequestWithProjectName {
   val kind: typescriptLib.typescriptLibStrings.discover
   val projectRootPath: typescriptLib.typescriptMod.tsNs.Path
   val typeAcquisition: typescriptLib.typescriptMod.tsNs.TypeAcquisition
-  val unresolvedImports: SortedReadonlyArray[java.lang.String]
+  val unresolvedImports: typescriptLib.typescriptMod.tsNs.SortedReadonlyArray[java.lang.String]
 }
 

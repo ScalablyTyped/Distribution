@@ -1,14 +1,14 @@
 organization := "com.scalablytyped"
 name := "gulp-cheerio"
-version := "0.0-unknown-dt-20180910Z-14b926"
+version := "0.0-unknown-dt-20180910Z-97dd80"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20181126Z-01b5e2",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "vinyl" % "2.0-dt-20180910Z-e8fbb3",
+  "com.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20181126Z-8c85de",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "vinyl" % "2.0-dt-20180910Z-a0b930",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -1,18 +1,18 @@
 organization := "com.scalablytyped"
 name := "babelify"
-version := "v7.3.0-dt-20180910Z-3486f5"
+version := "v7.3.0-dt-20180910Z-53a6e0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "babel-core" % "6.25-dt-20180910Z-d0a22e",
-  "com.scalablytyped" %%% "babel-generator" % "6.25-dt-20180910Z-3a02f7",
-  "com.scalablytyped" %%% "babel-template" % "6.25-dt-20180910Z-db16a8",
-  "com.scalablytyped" %%% "babel-traverse" % "6.25-dt-20180910Z-ad41f5",
-  "com.scalablytyped" %%% "babel-types" % "7.0-dt-20180910Z-5654be",
-  "com.scalablytyped" %%% "babylon" % "6.16-dt-20181109Z-efe294",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "babel-core" % "6.25-dt-20180910Z-f78d7e",
+  "com.scalablytyped" %%% "babel-generator" % "6.25-dt-20180910Z-86c2e0",
+  "com.scalablytyped" %%% "babel-template" % "6.25-dt-20180910Z-4e553c",
+  "com.scalablytyped" %%% "babel-traverse" % "6.25-dt-20180910Z-c44c03",
+  "com.scalablytyped" %%% "babel-types" % "7.0-dt-20180910Z-8e9198",
+  "com.scalablytyped" %%% "babylon" % "6.16-dt-20181109Z-1ea35d",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

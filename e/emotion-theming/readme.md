@@ -1,3 +1,4 @@
 ```
-// TypeScript Version: 2.3
+// Definitions by: Junyoung Clare Jang <https://github.com/Ailrun>
+// TypeScript Version: 2.8
 ```

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("builder-util-runtime", JSImport.Namespace)
 @js.native
 object builderDashUtilDashRuntimeModMembers extends js.Object {
-  val CURRENT_APP_INSTALLER_FILE_NAME: /* __installer.exe */ java.lang.String = js.native
-  val CURRENT_APP_PACKAGE_FILE_NAME: /* __package.7z */ java.lang.String = js.native
+  val CURRENT_APP_INSTALLER_FILE_NAME: /* installer.exe */ java.lang.String = js.native
+  val CURRENT_APP_PACKAGE_FILE_NAME: /* package.7z */ java.lang.String = js.native
   def asArray[T](): js.Array[T] = js.native
   def asArray[T](v: T): js.Array[T] = js.native
   def asArray[T](v: js.Array[T]): js.Array[T] = js.native
@@ -52,6 +52,7 @@ object builderDashUtilDashRuntimeModMembers extends js.Object {
     token: scala.Null,
     method: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.PUT
   ): nodeLib.httpMod.RequestOptions = js.native
+  def configureRequestUrl(url: nodeLib.urlMod.URL, options: nodeLib.httpMod.RequestOptions): scala.Unit = js.native
   def createHttpError(response: nodeLib.httpMod.IncomingMessage): builderDashUtilDashRuntimeLib.outHttpExecutorMod.HttpError = js.native
   def createHttpError(response: nodeLib.httpMod.IncomingMessage, description: js.Any): builderDashUtilDashRuntimeLib.outHttpExecutorMod.HttpError = js.native
   def getS3LikeProviderBaseUrl(configuration: builderDashUtilDashRuntimeLib.outPublishOptionsMod.PublishConfiguration): java.lang.String = js.native

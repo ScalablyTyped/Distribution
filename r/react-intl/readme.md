@@ -10,6 +10,7 @@
 //                 Krister Kari <https://github.com/kristerkari>
 //                 Martin Raedlinger <https://github.com/formatlos>
 //                 Kanitkorn Sujautra <https://github.com/lukyth>
+//                 obedm503 <https://github.com/obedm503>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

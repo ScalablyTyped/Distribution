@@ -49,6 +49,9 @@ object monacoDashEditorLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait beforeWhitespace extends js.Object
+  
+  @js.native
   sealed trait bold extends js.Object
   
   @js.native
@@ -62,6 +65,9 @@ object monacoDashEditorLibStrings {
   
   @js.native
   sealed trait bounded extends js.Object
+  
+  @js.native
+  sealed trait brackets extends js.Object
   
   @js.native
   sealed trait ctrlCmd extends js.Object
@@ -91,6 +97,9 @@ object monacoDashEditorLibStrings {
   sealed trait `hc-black` extends js.Object
   
   @js.native
+  sealed trait hidden extends js.Object
+  
+  @js.native
   sealed trait ignore extends js.Object
   
   @js.native
@@ -109,6 +118,9 @@ object monacoDashEditorLibStrings {
   sealed trait interval extends js.Object
   
   @js.native
+  sealed trait languageDefined extends js.Object
+  
+  @js.native
   sealed trait left extends js.Object
   
   @js.native
@@ -124,6 +136,9 @@ object monacoDashEditorLibStrings {
   sealed trait mouseover extends js.Object
   
   @js.native
+  sealed trait never extends js.Object
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -134,6 +149,12 @@ object monacoDashEditorLibStrings {
   
   @js.native
   sealed trait on extends js.Object
+  
+  @js.native
+  sealed trait onlySnippets extends js.Object
+  
+  @js.native
+  sealed trait quotes extends js.Object
   
   @js.native
   sealed trait recentlyUsed extends js.Object
@@ -152,6 +173,9 @@ object monacoDashEditorLibStrings {
   
   @js.native
   sealed trait top extends js.Object
+  
+  @js.native
+  sealed trait visible extends js.Object
   
   @js.native
   sealed trait vs extends js.Object
@@ -179,11 +203,13 @@ object monacoDashEditorLibStrings {
   def altKey: altKey = "altKey".asInstanceOf[altKey]
   def always: always = "always".asInstanceOf[always]
   def auto: auto = "auto".asInstanceOf[auto]
+  def beforeWhitespace: beforeWhitespace = "beforeWhitespace".asInstanceOf[beforeWhitespace]
   def bold: bold = "bold".asInstanceOf[bold]
   def bolder: bolder = "bolder".asInstanceOf[bolder]
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   def boundary: boundary = "boundary".asInstanceOf[boundary]
   def bounded: bounded = "bounded".asInstanceOf[bounded]
+  def brackets: brackets = "brackets".asInstanceOf[brackets]
   def ctrlCmd: ctrlCmd = "ctrlCmd".asInstanceOf[ctrlCmd]
   def ctrlKey: ctrlKey = "ctrlKey".asInstanceOf[ctrlKey]
   def error: error = "error".asInstanceOf[error]
@@ -193,27 +219,33 @@ object monacoDashEditorLibStrings {
   def `force-expand-multiline`: `force-expand-multiline` = "force-expand-multiline".asInstanceOf[`force-expand-multiline`]
   def gutter: gutter = "gutter".asInstanceOf[gutter]
   def `hc-black`: `hc-black` = "hc-black".asInstanceOf[`hc-black`]
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
   def ignore: ignore = "ignore".asInstanceOf[ignore]
   def indentation: indentation = "indentation".asInstanceOf[indentation]
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   def initial: initial = "initial".asInstanceOf[initial]
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   def interval: interval = "interval".asInstanceOf[interval]
+  def languageDefined: languageDefined = "languageDefined".asInstanceOf[languageDefined]
   def left: left = "left".asInstanceOf[left]
   def lighter: lighter = "lighter".asInstanceOf[lighter]
   def line: line = "line".asInstanceOf[line]
   def metaKey: metaKey = "metaKey".asInstanceOf[metaKey]
   def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
+  def never: never = "never".asInstanceOf[never]
   def none: none = "none".asInstanceOf[none]
   def normal: normal = "normal".asInstanceOf[normal]
   def off: off = "off".asInstanceOf[off]
   def on: on = "on".asInstanceOf[on]
+  def onlySnippets: onlySnippets = "onlySnippets".asInstanceOf[onlySnippets]
+  def quotes: quotes = "quotes".asInstanceOf[quotes]
   def recentlyUsed: recentlyUsed = "recentlyUsed".asInstanceOf[recentlyUsed]
   def recentlyUsedByPrefix: recentlyUsedByPrefix = "recentlyUsedByPrefix".asInstanceOf[recentlyUsedByPrefix]
   def relative: relative = "relative".asInstanceOf[relative]
   def right: right = "right".asInstanceOf[right]
   def smart: smart = "smart".asInstanceOf[smart]
   def top: top = "top".asInstanceOf[top]
+  def visible: visible = "visible".asInstanceOf[visible]
   def vs: vs = "vs".asInstanceOf[vs]
   def `vs-dark`: `vs-dark` = "vs-dark".asInstanceOf[`vs-dark`]
   def warning: warning = "warning".asInstanceOf[warning]

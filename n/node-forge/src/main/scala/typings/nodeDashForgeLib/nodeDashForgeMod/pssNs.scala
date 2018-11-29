@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "pss")
 @js.native
 object pssNs extends js.Object {
-  def create(any: js.Any): js.Any = js.native
+  def create(any: js.Any): PSS = js.native
+  type PSS = js.Any
 }
 

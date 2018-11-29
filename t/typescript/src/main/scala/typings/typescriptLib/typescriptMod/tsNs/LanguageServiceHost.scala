@@ -52,18 +52,20 @@ trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
   ] = js.undefined
   var realpath: js.UndefOr[js.Function1[/* path */ java.lang.String, java.lang.String]] = js.undefined
   var resolveModuleNames: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* moduleNames */ js.Array[java.lang.String], 
       /* containingFile */ java.lang.String, 
       /* reusedNames */ js.UndefOr[js.Array[java.lang.String]], 
-      js.Array[ResolvedModule]
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      js.Array[js.UndefOr[ResolvedModule]]
     ]
   ] = js.undefined
   var resolveTypeReferenceDirectives: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* typeDirectiveNames */ js.Array[java.lang.String], 
       /* containingFile */ java.lang.String, 
-      js.Array[ResolvedTypeReferenceDirective]
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.undefined
   var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, scala.Unit]] = js.undefined

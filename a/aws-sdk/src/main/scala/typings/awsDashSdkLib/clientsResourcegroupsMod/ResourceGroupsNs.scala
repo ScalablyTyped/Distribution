@@ -199,6 +199,10 @@ object ResourceGroupsNs extends js.Object {
          */
     var NextToken: js.UndefOr[NextToken] = js.undefined
     /**
+         * A list of QueryError objects. Each error is an object that contains ErrorCode and Message structures. Possible values for ErrorCode are CLOUDFORMATION_STACK_INACTIVE and CLOUDFORMATION_STACK_NOT_EXISTING.
+         */
+    var QueryErrors: js.UndefOr[QueryErrorList] = js.undefined
+    /**
          * The ARNs and resource types of resources that are members of the group that you specified.
          */
     var ResourceIdentifiers: js.UndefOr[ResourceIdentifierList] = js.undefined
@@ -207,7 +211,7 @@ object ResourceGroupsNs extends js.Object {
   
   trait ListGroupsInput extends js.Object {
     /**
-         * Filters, formatted as GroupFilter objects, that you want to apply to a ListGroups operation.    group-type - Filter groups by resource type. Specify up to five group types in the format AWS::ServiceCode::ResourceType. For example, AWS::EC2::Instance, or AWS::S3::Bucket.  
+         * Filters, formatted as GroupFilter objects, that you want to apply to a ListGroups operation.    resource-type - Filter groups by resource type. Specify up to five resource types in the format AWS::ServiceCode::ResourceType. For example, AWS::EC2::Instance, or AWS::S3::Bucket.  
          */
     var Filters: js.UndefOr[GroupFilterList] = js.undefined
     /**
@@ -234,6 +238,18 @@ object ResourceGroupsNs extends js.Object {
          * The NextToken value to include in a subsequent ListGroups request, to get more results.
          */
     var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait QueryError extends js.Object {
+    /**
+         * Possible values are CLOUDFORMATION_STACK_INACTIVE and CLOUDFORMATION_STACK_NOT_EXISTING.
+         */
+    var ErrorCode: js.UndefOr[QueryErrorCode] = js.undefined
+    /**
+         * A message that explains the ErrorCode value. Messages might state that the specified CloudFormation stack does not exist (or no longer exists). For CLOUDFORMATION_STACK_INACTIVE, the message typically states that the CloudFormation stack has a status that is not (or no longer) active, such as CREATE_FAILED.
+         */
+    var Message: js.UndefOr[QueryErrorMessage] = js.undefined
   }
   
   
@@ -267,7 +283,7 @@ object ResourceGroupsNs extends js.Object {
          */
     var Query: Query
     /**
-         * The type of the query. The valid value in this release is TAG_FILTERS_1_0.   TAG_FILTERS_1_0:  A JSON syntax that lets you specify a collection of simple tag filters for resource types and tags, as supported by the AWS Tagging API GetResources operation. When more than one element is present, only resources that match all filters are part of the result. If a filter specifies more than one value for a key, a resource matches the filter if its tag value matches any of the specified values.
+         * The type of the query. The valid values in this release are TAG_FILTERS_1_0 and CLOUDFORMATION_STACK_1_0.   TAG_FILTERS_1_0:  A JSON syntax that lets you specify a collection of simple tag filters for resource types and tags, as supported by the AWS Tagging API GetResources operation. If you specify more than one tag key, only resources that match all tag keys, and at least one value of each specified tag key, are returned in your query. If you specify more than one value for a tag key, a resource matches the filter if it has a tag key value that matches any of the specified values. For example, consider the following sample query for resources that have two tags, Stage and Version, with two values each. ([{"Key":"Stage","Values":["Test","Deploy"]},{"Key":"Version","Values":["1","2"]}]) The results of this query might include the following.   An EC2 instance that has the following two tags: {"Key":"Stage","Values":["Deploy"]}, and {"Key":"Version","Values":["2"]}    An S3 bucket that has the following two tags: {"Key":"Stage","Values":["Test","Deploy"]}, and {"Key":"Version","Values":["1"]}   The query would not return the following results, however. The following EC2 instance does not have all tag keys specified in the filter, so it is rejected. The RDS database has all of the tag keys, but no values that match at least one of the specified tag key values in the filter.   An EC2 instance that has only the following tag: {"Key":"Stage","Values":["Deploy"]}.   An RDS database that has the following two tags: {"Key":"Stage","Values":["Archived"]}, and {"Key":"Version","Values":["4"]}      CLOUDFORMATION_STACK_1_0:  A JSON syntax that lets you specify a CloudFormation stack ARN.
          */
     var Type: QueryType
   }
@@ -294,6 +310,10 @@ object ResourceGroupsNs extends js.Object {
          * The NextToken value to include in a subsequent SearchResources request, to get more results.
          */
     var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * A list of QueryError objects. Each error is an object that contains ErrorCode and Message structures. Possible values for ErrorCode are CLOUDFORMATION_STACK_INACTIVE and CLOUDFORMATION_STACK_NOT_EXISTING.
+         */
+    var QueryErrors: js.UndefOr[QueryErrorList] = js.undefined
     /**
          * The ARNs and resource types of resources that are members of the group that you specified.
          */
@@ -729,7 +749,10 @@ object ResourceGroupsNs extends js.Object {
   type MaxResults = scala.Double
   type NextToken = java.lang.String
   type Query = java.lang.String
-  type QueryType = awsDashSdkLib.awsDashSdkLibStrings.TAG_FILTERS_1_0 | java.lang.String
+  type QueryErrorCode = awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION_STACK_INACTIVE | awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION_STACK_NOT_EXISTING | java.lang.String
+  type QueryErrorList = js.Array[QueryError]
+  type QueryErrorMessage = java.lang.String
+  type QueryType = awsDashSdkLib.awsDashSdkLibStrings.TAG_FILTERS_1_0 | awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION_STACK_1_0 | java.lang.String
   type ResourceArn = java.lang.String
   type ResourceFilterList = js.Array[ResourceFilter]
   type ResourceFilterName = awsDashSdkLib.awsDashSdkLibStrings.`resource-type` | java.lang.String

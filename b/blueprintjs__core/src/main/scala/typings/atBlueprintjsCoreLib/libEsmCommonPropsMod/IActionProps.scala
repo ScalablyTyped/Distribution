@@ -12,9 +12,7 @@ trait IActionProps
   /** Whether this action is non-interactive. */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /** Name of a Blueprint UI icon (or an icon element) to render before the text. */
-  var icon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
-  ] = js.undefined
+  var icon: js.UndefOr[atBlueprintjsIconsLib.libEsmIconNameMod.IconName | MaybeElement] = js.undefined
   /** Click event handler. */
   var onClick: js.UndefOr[
     js.Function1[/* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], scala.Unit]

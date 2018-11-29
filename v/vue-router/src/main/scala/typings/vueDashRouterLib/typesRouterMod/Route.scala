@@ -14,7 +14,7 @@ trait Route extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var params: Dictionary[java.lang.String]
   var path: java.lang.String
-  var query: Dictionary[java.lang.String]
+  var query: Dictionary[java.lang.String | js.Array[java.lang.String]]
   var redirectedFrom: js.UndefOr[java.lang.String] = js.undefined
 }
 

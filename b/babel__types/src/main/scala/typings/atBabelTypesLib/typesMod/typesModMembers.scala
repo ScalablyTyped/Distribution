@@ -688,16 +688,16 @@ object typesModMembers extends js.Object {
   def isAwaitExpression(node: js.Object, opts: js.Object): /* is AwaitExpression */scala.Boolean = js.native
   def isBigIntLiteral(node: js.Object): /* is BigIntLiteral */scala.Boolean = js.native
   def isBigIntLiteral(node: js.Object, opts: js.Object): /* is BigIntLiteral */scala.Boolean = js.native
-  def isBinary(node: js.Object): scala.Boolean = js.native
-  def isBinary(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isBinary(node: js.Object): /* is Binary */scala.Boolean = js.native
+  def isBinary(node: js.Object, opts: js.Object): /* is Binary */scala.Boolean = js.native
   def isBinaryExpression(node: js.Object): /* is BinaryExpression */scala.Boolean = js.native
   def isBinaryExpression(node: js.Object, opts: js.Object): /* is BinaryExpression */scala.Boolean = js.native
   def isBindExpression(node: js.Object): /* is BindExpression */scala.Boolean = js.native
   def isBindExpression(node: js.Object, opts: js.Object): /* is BindExpression */scala.Boolean = js.native
-  def isBlock(node: js.Object): scala.Boolean = js.native
-  def isBlock(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isBlockParent(node: js.Object): scala.Boolean = js.native
-  def isBlockParent(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isBlock(node: js.Object): /* is Block */scala.Boolean = js.native
+  def isBlock(node: js.Object, opts: js.Object): /* is Block */scala.Boolean = js.native
+  def isBlockParent(node: js.Object): /* is BlockParent */scala.Boolean = js.native
+  def isBlockParent(node: js.Object, opts: js.Object): /* is BlockParent */scala.Boolean = js.native
   def isBlockStatement(node: js.Object): /* is BlockStatement */scala.Boolean = js.native
   def isBlockStatement(node: js.Object, opts: js.Object): /* is BlockStatement */scala.Boolean = js.native
   def isBooleanLiteral(node: js.Object): /* is BooleanLiteral */scala.Boolean = js.native
@@ -712,8 +712,8 @@ object typesModMembers extends js.Object {
   def isCallExpression(node: js.Object, opts: js.Object): /* is CallExpression */scala.Boolean = js.native
   def isCatchClause(node: js.Object): /* is CatchClause */scala.Boolean = js.native
   def isCatchClause(node: js.Object, opts: js.Object): /* is CatchClause */scala.Boolean = js.native
-  def isClass(node: js.Object): scala.Boolean = js.native
-  def isClass(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isClass(node: js.Object): /* is Class */scala.Boolean = js.native
+  def isClass(node: js.Object, opts: js.Object): /* is Class */scala.Boolean = js.native
   def isClassBody(node: js.Object): /* is ClassBody */scala.Boolean = js.native
   def isClassBody(node: js.Object, opts: js.Object): /* is ClassBody */scala.Boolean = js.native
   def isClassDeclaration(node: js.Object): /* is ClassDeclaration */scala.Boolean = js.native
@@ -728,18 +728,18 @@ object typesModMembers extends js.Object {
   def isClassPrivateProperty(node: js.Object, opts: js.Object): /* is ClassPrivateProperty */scala.Boolean = js.native
   def isClassProperty(node: js.Object): /* is ClassProperty */scala.Boolean = js.native
   def isClassProperty(node: js.Object, opts: js.Object): /* is ClassProperty */scala.Boolean = js.native
-  def isCompletionStatement(node: js.Object): scala.Boolean = js.native
-  def isCompletionStatement(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isConditional(node: js.Object): scala.Boolean = js.native
-  def isConditional(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isCompletionStatement(node: js.Object): /* is CompletionStatement */scala.Boolean = js.native
+  def isCompletionStatement(node: js.Object, opts: js.Object): /* is CompletionStatement */scala.Boolean = js.native
+  def isConditional(node: js.Object): /* is Conditional */scala.Boolean = js.native
+  def isConditional(node: js.Object, opts: js.Object): /* is Conditional */scala.Boolean = js.native
   def isConditionalExpression(node: js.Object): /* is ConditionalExpression */scala.Boolean = js.native
   def isConditionalExpression(node: js.Object, opts: js.Object): /* is ConditionalExpression */scala.Boolean = js.native
   def isContinueStatement(node: js.Object): /* is ContinueStatement */scala.Boolean = js.native
   def isContinueStatement(node: js.Object, opts: js.Object): /* is ContinueStatement */scala.Boolean = js.native
   def isDebuggerStatement(node: js.Object): /* is DebuggerStatement */scala.Boolean = js.native
   def isDebuggerStatement(node: js.Object, opts: js.Object): /* is DebuggerStatement */scala.Boolean = js.native
-  def isDeclaration(node: js.Object): scala.Boolean = js.native
-  def isDeclaration(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isDeclaration(node: js.Object): /* is Declaration */scala.Boolean = js.native
+  def isDeclaration(node: js.Object, opts: js.Object): /* is Declaration */scala.Boolean = js.native
   def isDeclareClass(node: js.Object): /* is DeclareClass */scala.Boolean = js.native
   def isDeclareClass(node: js.Object, opts: js.Object): /* is DeclareClass */scala.Boolean = js.native
   def isDeclareExportAllDeclaration(node: js.Object): /* is DeclareExportAllDeclaration */scala.Boolean = js.native
@@ -780,8 +780,8 @@ object typesModMembers extends js.Object {
   def isExistsTypeAnnotation(node: js.Object, opts: js.Object): /* is ExistsTypeAnnotation */scala.Boolean = js.native
   def isExportAllDeclaration(node: js.Object): /* is ExportAllDeclaration */scala.Boolean = js.native
   def isExportAllDeclaration(node: js.Object, opts: js.Object): /* is ExportAllDeclaration */scala.Boolean = js.native
-  def isExportDeclaration(node: js.Object): scala.Boolean = js.native
-  def isExportDeclaration(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isExportDeclaration(node: js.Object): /* is ExportDeclaration */scala.Boolean = js.native
+  def isExportDeclaration(node: js.Object, opts: js.Object): /* is ExportDeclaration */scala.Boolean = js.native
   def isExportDefaultDeclaration(node: js.Object): /* is ExportDefaultDeclaration */scala.Boolean = js.native
   def isExportDefaultDeclaration(node: js.Object, opts: js.Object): /* is ExportDefaultDeclaration */scala.Boolean = js.native
   def isExportDefaultSpecifier(node: js.Object): /* is ExportDefaultSpecifier */scala.Boolean = js.native
@@ -792,42 +792,42 @@ object typesModMembers extends js.Object {
   def isExportNamespaceSpecifier(node: js.Object, opts: js.Object): /* is ExportNamespaceSpecifier */scala.Boolean = js.native
   def isExportSpecifier(node: js.Object): /* is ExportSpecifier */scala.Boolean = js.native
   def isExportSpecifier(node: js.Object, opts: js.Object): /* is ExportSpecifier */scala.Boolean = js.native
-  def isExpression(node: js.Object): scala.Boolean = js.native
-  def isExpression(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isExpression(node: js.Object): /* is Expression */scala.Boolean = js.native
+  def isExpression(node: js.Object, opts: js.Object): /* is Expression */scala.Boolean = js.native
   def isExpressionStatement(node: js.Object): /* is ExpressionStatement */scala.Boolean = js.native
   def isExpressionStatement(node: js.Object, opts: js.Object): /* is ExpressionStatement */scala.Boolean = js.native
-  def isExpressionWrapper(node: js.Object): scala.Boolean = js.native
-  def isExpressionWrapper(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isExpressionWrapper(node: js.Object): /* is ExpressionWrapper */scala.Boolean = js.native
+  def isExpressionWrapper(node: js.Object, opts: js.Object): /* is ExpressionWrapper */scala.Boolean = js.native
   def isFile(node: js.Object): /* is File */scala.Boolean = js.native
   def isFile(node: js.Object, opts: js.Object): /* is File */scala.Boolean = js.native
-  def isFlow(node: js.Object): scala.Boolean = js.native
-  def isFlow(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isFlowBaseAnnotation(node: js.Object): scala.Boolean = js.native
-  def isFlowBaseAnnotation(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isFlowDeclaration(node: js.Object): scala.Boolean = js.native
-  def isFlowDeclaration(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isFlowPredicate(node: js.Object): scala.Boolean = js.native
-  def isFlowPredicate(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isFlowType(node: js.Object): scala.Boolean = js.native
-  def isFlowType(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isFor(node: js.Object): scala.Boolean = js.native
-  def isFor(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isFlow(node: js.Object): /* is Flow */scala.Boolean = js.native
+  def isFlow(node: js.Object, opts: js.Object): /* is Flow */scala.Boolean = js.native
+  def isFlowBaseAnnotation(node: js.Object): /* is FlowBaseAnnotation */scala.Boolean = js.native
+  def isFlowBaseAnnotation(node: js.Object, opts: js.Object): /* is FlowBaseAnnotation */scala.Boolean = js.native
+  def isFlowDeclaration(node: js.Object): /* is FlowDeclaration */scala.Boolean = js.native
+  def isFlowDeclaration(node: js.Object, opts: js.Object): /* is FlowDeclaration */scala.Boolean = js.native
+  def isFlowPredicate(node: js.Object): /* is FlowPredicate */scala.Boolean = js.native
+  def isFlowPredicate(node: js.Object, opts: js.Object): /* is FlowPredicate */scala.Boolean = js.native
+  def isFlowType(node: js.Object): /* is FlowType */scala.Boolean = js.native
+  def isFlowType(node: js.Object, opts: js.Object): /* is FlowType */scala.Boolean = js.native
+  def isFor(node: js.Object): /* is For */scala.Boolean = js.native
+  def isFor(node: js.Object, opts: js.Object): /* is For */scala.Boolean = js.native
   def isForInStatement(node: js.Object): /* is ForInStatement */scala.Boolean = js.native
   def isForInStatement(node: js.Object, opts: js.Object): /* is ForInStatement */scala.Boolean = js.native
   def isForOfStatement(node: js.Object): /* is ForOfStatement */scala.Boolean = js.native
   def isForOfStatement(node: js.Object, opts: js.Object): /* is ForOfStatement */scala.Boolean = js.native
   def isForStatement(node: js.Object): /* is ForStatement */scala.Boolean = js.native
   def isForStatement(node: js.Object, opts: js.Object): /* is ForStatement */scala.Boolean = js.native
-  def isForXStatement(node: js.Object): scala.Boolean = js.native
-  def isForXStatement(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isFunction(node: js.Object): scala.Boolean = js.native
-  def isFunction(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isForXStatement(node: js.Object): /* is ForXStatement */scala.Boolean = js.native
+  def isForXStatement(node: js.Object, opts: js.Object): /* is ForXStatement */scala.Boolean = js.native
+  def isFunction(node: js.Object): /* is Function */scala.Boolean = js.native
+  def isFunction(node: js.Object, opts: js.Object): /* is Function */scala.Boolean = js.native
   def isFunctionDeclaration(node: js.Object): /* is FunctionDeclaration */scala.Boolean = js.native
   def isFunctionDeclaration(node: js.Object, opts: js.Object): /* is FunctionDeclaration */scala.Boolean = js.native
   def isFunctionExpression(node: js.Object): /* is FunctionExpression */scala.Boolean = js.native
   def isFunctionExpression(node: js.Object, opts: js.Object): /* is FunctionExpression */scala.Boolean = js.native
-  def isFunctionParent(node: js.Object): scala.Boolean = js.native
-  def isFunctionParent(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isFunctionParent(node: js.Object): /* is FunctionParent */scala.Boolean = js.native
+  def isFunctionParent(node: js.Object, opts: js.Object): /* is FunctionParent */scala.Boolean = js.native
   def isFunctionTypeAnnotation(node: js.Object): /* is FunctionTypeAnnotation */scala.Boolean = js.native
   def isFunctionTypeAnnotation(node: js.Object, opts: js.Object): /* is FunctionTypeAnnotation */scala.Boolean = js.native
   def isFunctionTypeParam(node: js.Object): /* is FunctionTypeParam */scala.Boolean = js.native
@@ -838,8 +838,8 @@ object typesModMembers extends js.Object {
   def isIdentifier(node: js.Object, opts: js.Object): /* is Identifier */scala.Boolean = js.native
   def isIfStatement(node: js.Object): /* is IfStatement */scala.Boolean = js.native
   def isIfStatement(node: js.Object, opts: js.Object): /* is IfStatement */scala.Boolean = js.native
-  def isImmutable(node: js.Object): scala.Boolean = js.native
-  def isImmutable(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isImmutable(node: js.Object): /* is Immutable */scala.Boolean = js.native
+  def isImmutable(node: js.Object, opts: js.Object): /* is Immutable */scala.Boolean = js.native
   def isImport(node: js.Object): /* is Import */scala.Boolean = js.native
   def isImport(node: js.Object, opts: js.Object): /* is Import */scala.Boolean = js.native
   def isImportDeclaration(node: js.Object): /* is ImportDeclaration */scala.Boolean = js.native
@@ -862,8 +862,8 @@ object typesModMembers extends js.Object {
   def isInterpreterDirective(node: js.Object, opts: js.Object): /* is InterpreterDirective */scala.Boolean = js.native
   def isIntersectionTypeAnnotation(node: js.Object): /* is IntersectionTypeAnnotation */scala.Boolean = js.native
   def isIntersectionTypeAnnotation(node: js.Object, opts: js.Object): /* is IntersectionTypeAnnotation */scala.Boolean = js.native
-  def isJSX(node: js.Object): scala.Boolean = js.native
-  def isJSX(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isJSX(node: js.Object): /* is JSX */scala.Boolean = js.native
+  def isJSX(node: js.Object, opts: js.Object): /* is JSX */scala.Boolean = js.native
   def isJSXAttribute(node: js.Object): /* is JSXAttribute */scala.Boolean = js.native
   def isJSXAttribute(node: js.Object, opts: js.Object): /* is JSXAttribute */scala.Boolean = js.native
   def isJSXClosingElement(node: js.Object): /* is JSXClosingElement */scala.Boolean = js.native
@@ -894,28 +894,28 @@ object typesModMembers extends js.Object {
   def isJSXSpreadChild(node: js.Object, opts: js.Object): /* is JSXSpreadChild */scala.Boolean = js.native
   def isJSXText(node: js.Object): /* is JSXText */scala.Boolean = js.native
   def isJSXText(node: js.Object, opts: js.Object): /* is JSXText */scala.Boolean = js.native
-  def isLVal(node: js.Object): scala.Boolean = js.native
-  def isLVal(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isLVal(node: js.Object): /* is LVal */scala.Boolean = js.native
+  def isLVal(node: js.Object, opts: js.Object): /* is LVal */scala.Boolean = js.native
   def isLabeledStatement(node: js.Object): /* is LabeledStatement */scala.Boolean = js.native
   def isLabeledStatement(node: js.Object, opts: js.Object): /* is LabeledStatement */scala.Boolean = js.native
-  def isLiteral(node: js.Object): scala.Boolean = js.native
-  def isLiteral(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isLiteral(node: js.Object): /* is Literal */scala.Boolean = js.native
+  def isLiteral(node: js.Object, opts: js.Object): /* is Literal */scala.Boolean = js.native
   def isLogicalExpression(node: js.Object): /* is LogicalExpression */scala.Boolean = js.native
   def isLogicalExpression(node: js.Object, opts: js.Object): /* is LogicalExpression */scala.Boolean = js.native
-  def isLoop(node: js.Object): scala.Boolean = js.native
-  def isLoop(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isLoop(node: js.Object): /* is Loop */scala.Boolean = js.native
+  def isLoop(node: js.Object, opts: js.Object): /* is Loop */scala.Boolean = js.native
   def isMemberExpression(node: js.Object): /* is MemberExpression */scala.Boolean = js.native
   def isMemberExpression(node: js.Object, opts: js.Object): /* is MemberExpression */scala.Boolean = js.native
   def isMetaProperty(node: js.Object): /* is MetaProperty */scala.Boolean = js.native
   def isMetaProperty(node: js.Object, opts: js.Object): /* is MetaProperty */scala.Boolean = js.native
-  def isMethod(node: js.Object): scala.Boolean = js.native
-  def isMethod(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isMethod(node: js.Object): /* is Method */scala.Boolean = js.native
+  def isMethod(node: js.Object, opts: js.Object): /* is Method */scala.Boolean = js.native
   def isMixedTypeAnnotation(node: js.Object): /* is MixedTypeAnnotation */scala.Boolean = js.native
   def isMixedTypeAnnotation(node: js.Object, opts: js.Object): /* is MixedTypeAnnotation */scala.Boolean = js.native
-  def isModuleDeclaration(node: js.Object): scala.Boolean = js.native
-  def isModuleDeclaration(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isModuleSpecifier(node: js.Object): scala.Boolean = js.native
-  def isModuleSpecifier(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isModuleDeclaration(node: js.Object): /* is ModuleDeclaration */scala.Boolean = js.native
+  def isModuleDeclaration(node: js.Object, opts: js.Object): /* is ModuleDeclaration */scala.Boolean = js.native
+  def isModuleSpecifier(node: js.Object): /* is ModuleSpecifier */scala.Boolean = js.native
+  def isModuleSpecifier(node: js.Object, opts: js.Object): /* is ModuleSpecifier */scala.Boolean = js.native
   def isNewExpression(node: js.Object): /* is NewExpression */scala.Boolean = js.native
   def isNewExpression(node: js.Object, opts: js.Object): /* is NewExpression */scala.Boolean = js.native
   def isNoop(node: js.Object): /* is Noop */scala.Boolean = js.native
@@ -936,8 +936,8 @@ object typesModMembers extends js.Object {
   def isNumericLiteral(node: js.Object, opts: js.Object): /* is NumericLiteral */scala.Boolean = js.native
   def isObjectExpression(node: js.Object): /* is ObjectExpression */scala.Boolean = js.native
   def isObjectExpression(node: js.Object, opts: js.Object): /* is ObjectExpression */scala.Boolean = js.native
-  def isObjectMember(node: js.Object): scala.Boolean = js.native
-  def isObjectMember(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isObjectMember(node: js.Object): /* is ObjectMember */scala.Boolean = js.native
+  def isObjectMember(node: js.Object, opts: js.Object): /* is ObjectMember */scala.Boolean = js.native
   def isObjectMethod(node: js.Object): /* is ObjectMethod */scala.Boolean = js.native
   def isObjectMethod(node: js.Object, opts: js.Object): /* is ObjectMethod */scala.Boolean = js.native
   def isObjectPattern(node: js.Object): /* is ObjectPattern */scala.Boolean = js.native
@@ -964,20 +964,20 @@ object typesModMembers extends js.Object {
   def isOptionalMemberExpression(node: js.Object, opts: js.Object): /* is OptionalMemberExpression */scala.Boolean = js.native
   def isParenthesizedExpression(node: js.Object): /* is ParenthesizedExpression */scala.Boolean = js.native
   def isParenthesizedExpression(node: js.Object, opts: js.Object): /* is ParenthesizedExpression */scala.Boolean = js.native
-  def isPattern(node: js.Object): scala.Boolean = js.native
-  def isPattern(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isPatternLike(node: js.Object): scala.Boolean = js.native
-  def isPatternLike(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isPrivate(node: js.Object): scala.Boolean = js.native
-  def isPrivate(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isPattern(node: js.Object): /* is Pattern */scala.Boolean = js.native
+  def isPattern(node: js.Object, opts: js.Object): /* is Pattern */scala.Boolean = js.native
+  def isPatternLike(node: js.Object): /* is PatternLike */scala.Boolean = js.native
+  def isPatternLike(node: js.Object, opts: js.Object): /* is PatternLike */scala.Boolean = js.native
+  def isPrivate(node: js.Object): /* is Private */scala.Boolean = js.native
+  def isPrivate(node: js.Object, opts: js.Object): /* is Private */scala.Boolean = js.native
   def isPrivateName(node: js.Object): /* is PrivateName */scala.Boolean = js.native
   def isPrivateName(node: js.Object, opts: js.Object): /* is PrivateName */scala.Boolean = js.native
   def isProgram(node: js.Object): /* is Program */scala.Boolean = js.native
   def isProgram(node: js.Object, opts: js.Object): /* is Program */scala.Boolean = js.native
-  def isProperty(node: js.Object): scala.Boolean = js.native
-  def isProperty(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isPureish(node: js.Object): scala.Boolean = js.native
-  def isPureish(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isProperty(node: js.Object): /* is Property */scala.Boolean = js.native
+  def isProperty(node: js.Object, opts: js.Object): /* is Property */scala.Boolean = js.native
+  def isPureish(node: js.Object): /* is Pureish */scala.Boolean = js.native
+  def isPureish(node: js.Object, opts: js.Object): /* is Pureish */scala.Boolean = js.native
   def isQualifiedTypeIdentifier(node: js.Object): /* is QualifiedTypeIdentifier */scala.Boolean = js.native
   def isQualifiedTypeIdentifier(node: js.Object, opts: js.Object): /* is QualifiedTypeIdentifier */scala.Boolean = js.native
   def isRegExpLiteral(node: js.Object): /* is RegExpLiteral */scala.Boolean = js.native
@@ -990,16 +990,16 @@ object typesModMembers extends js.Object {
   def isRestProperty(node: js.Object, opts: js.Object): scala.Boolean = js.native
   def isReturnStatement(node: js.Object): /* is ReturnStatement */scala.Boolean = js.native
   def isReturnStatement(node: js.Object, opts: js.Object): /* is ReturnStatement */scala.Boolean = js.native
-  def isScopable(node: js.Object): scala.Boolean = js.native
-  def isScopable(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isScopable(node: js.Object): /* is Scopable */scala.Boolean = js.native
+  def isScopable(node: js.Object, opts: js.Object): /* is Scopable */scala.Boolean = js.native
   def isSequenceExpression(node: js.Object): /* is SequenceExpression */scala.Boolean = js.native
   def isSequenceExpression(node: js.Object, opts: js.Object): /* is SequenceExpression */scala.Boolean = js.native
   def isSpreadElement(node: js.Object): /* is SpreadElement */scala.Boolean = js.native
   def isSpreadElement(node: js.Object, opts: js.Object): /* is SpreadElement */scala.Boolean = js.native
   def isSpreadProperty(node: js.Object): scala.Boolean = js.native
   def isSpreadProperty(node: js.Object, opts: js.Object): scala.Boolean = js.native
-  def isStatement(node: js.Object): scala.Boolean = js.native
-  def isStatement(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isStatement(node: js.Object): /* is Statement */scala.Boolean = js.native
+  def isStatement(node: js.Object, opts: js.Object): /* is Statement */scala.Boolean = js.native
   def isStringLiteral(node: js.Object): /* is StringLiteral */scala.Boolean = js.native
   def isStringLiteral(node: js.Object, opts: js.Object): /* is StringLiteral */scala.Boolean = js.native
   def isStringLiteralTypeAnnotation(node: js.Object): /* is StringLiteralTypeAnnotation */scala.Boolean = js.native
@@ -1032,8 +1032,8 @@ object typesModMembers extends js.Object {
   def isTSDeclareFunction(node: js.Object, opts: js.Object): /* is TSDeclareFunction */scala.Boolean = js.native
   def isTSDeclareMethod(node: js.Object): /* is TSDeclareMethod */scala.Boolean = js.native
   def isTSDeclareMethod(node: js.Object, opts: js.Object): /* is TSDeclareMethod */scala.Boolean = js.native
-  def isTSEntityName(node: js.Object): scala.Boolean = js.native
-  def isTSEntityName(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isTSEntityName(node: js.Object): /* is TSEntityName */scala.Boolean = js.native
+  def isTSEntityName(node: js.Object, opts: js.Object): /* is TSEntityName */scala.Boolean = js.native
   def isTSEnumDeclaration(node: js.Object): /* is TSEnumDeclaration */scala.Boolean = js.native
   def isTSEnumDeclaration(node: js.Object, opts: js.Object): /* is TSEnumDeclaration */scala.Boolean = js.native
   def isTSEnumMember(node: js.Object): /* is TSEnumMember */scala.Boolean = js.native
@@ -1102,16 +1102,16 @@ object typesModMembers extends js.Object {
   def isTSThisType(node: js.Object, opts: js.Object): /* is TSThisType */scala.Boolean = js.native
   def isTSTupleType(node: js.Object): /* is TSTupleType */scala.Boolean = js.native
   def isTSTupleType(node: js.Object, opts: js.Object): /* is TSTupleType */scala.Boolean = js.native
-  def isTSType(node: js.Object): scala.Boolean = js.native
-  def isTSType(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isTSType(node: js.Object): /* is TSType */scala.Boolean = js.native
+  def isTSType(node: js.Object, opts: js.Object): /* is TSType */scala.Boolean = js.native
   def isTSTypeAliasDeclaration(node: js.Object): /* is TSTypeAliasDeclaration */scala.Boolean = js.native
   def isTSTypeAliasDeclaration(node: js.Object, opts: js.Object): /* is TSTypeAliasDeclaration */scala.Boolean = js.native
   def isTSTypeAnnotation(node: js.Object): /* is TSTypeAnnotation */scala.Boolean = js.native
   def isTSTypeAnnotation(node: js.Object, opts: js.Object): /* is TSTypeAnnotation */scala.Boolean = js.native
   def isTSTypeAssertion(node: js.Object): /* is TSTypeAssertion */scala.Boolean = js.native
   def isTSTypeAssertion(node: js.Object, opts: js.Object): /* is TSTypeAssertion */scala.Boolean = js.native
-  def isTSTypeElement(node: js.Object): scala.Boolean = js.native
-  def isTSTypeElement(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isTSTypeElement(node: js.Object): /* is TSTypeElement */scala.Boolean = js.native
+  def isTSTypeElement(node: js.Object, opts: js.Object): /* is TSTypeElement */scala.Boolean = js.native
   def isTSTypeLiteral(node: js.Object): /* is TSTypeLiteral */scala.Boolean = js.native
   def isTSTypeLiteral(node: js.Object, opts: js.Object): /* is TSTypeLiteral */scala.Boolean = js.native
   def isTSTypeOperator(node: js.Object): /* is TSTypeOperator */scala.Boolean = js.native
@@ -1142,8 +1142,8 @@ object typesModMembers extends js.Object {
   def isTemplateElement(node: js.Object, opts: js.Object): /* is TemplateElement */scala.Boolean = js.native
   def isTemplateLiteral(node: js.Object): /* is TemplateLiteral */scala.Boolean = js.native
   def isTemplateLiteral(node: js.Object, opts: js.Object): /* is TemplateLiteral */scala.Boolean = js.native
-  def isTerminatorless(node: js.Object): scala.Boolean = js.native
-  def isTerminatorless(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isTerminatorless(node: js.Object): /* is Terminatorless */scala.Boolean = js.native
+  def isTerminatorless(node: js.Object, opts: js.Object): /* is Terminatorless */scala.Boolean = js.native
   def isThisExpression(node: js.Object): /* is ThisExpression */scala.Boolean = js.native
   def isThisExpression(node: js.Object, opts: js.Object): /* is ThisExpression */scala.Boolean = js.native
   def isThisTypeAnnotation(node: js.Object): /* is ThisTypeAnnotation */scala.Boolean = js.native
@@ -1170,14 +1170,14 @@ object typesModMembers extends js.Object {
   def isTypeofTypeAnnotation(node: js.Object, opts: js.Object): /* is TypeofTypeAnnotation */scala.Boolean = js.native
   def isUnaryExpression(node: js.Object): /* is UnaryExpression */scala.Boolean = js.native
   def isUnaryExpression(node: js.Object, opts: js.Object): /* is UnaryExpression */scala.Boolean = js.native
-  def isUnaryLike(node: js.Object): scala.Boolean = js.native
-  def isUnaryLike(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isUnaryLike(node: js.Object): /* is UnaryLike */scala.Boolean = js.native
+  def isUnaryLike(node: js.Object, opts: js.Object): /* is UnaryLike */scala.Boolean = js.native
   def isUnionTypeAnnotation(node: js.Object): /* is UnionTypeAnnotation */scala.Boolean = js.native
   def isUnionTypeAnnotation(node: js.Object, opts: js.Object): /* is UnionTypeAnnotation */scala.Boolean = js.native
   def isUpdateExpression(node: js.Object): /* is UpdateExpression */scala.Boolean = js.native
   def isUpdateExpression(node: js.Object, opts: js.Object): /* is UpdateExpression */scala.Boolean = js.native
-  def isUserWhitespacable(node: js.Object): scala.Boolean = js.native
-  def isUserWhitespacable(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isUserWhitespacable(node: js.Object): /* is UserWhitespacable */scala.Boolean = js.native
+  def isUserWhitespacable(node: js.Object, opts: js.Object): /* is UserWhitespacable */scala.Boolean = js.native
   def isVariableDeclaration(node: js.Object): /* is VariableDeclaration */scala.Boolean = js.native
   def isVariableDeclaration(node: js.Object, opts: js.Object): /* is VariableDeclaration */scala.Boolean = js.native
   def isVariableDeclarator(node: js.Object): /* is VariableDeclarator */scala.Boolean = js.native
@@ -1186,8 +1186,8 @@ object typesModMembers extends js.Object {
   def isVariance(node: js.Object, opts: js.Object): /* is Variance */scala.Boolean = js.native
   def isVoidTypeAnnotation(node: js.Object): /* is VoidTypeAnnotation */scala.Boolean = js.native
   def isVoidTypeAnnotation(node: js.Object, opts: js.Object): /* is VoidTypeAnnotation */scala.Boolean = js.native
-  def isWhile(node: js.Object): scala.Boolean = js.native
-  def isWhile(node: js.Object, opts: js.Object): scala.Boolean = js.native
+  def isWhile(node: js.Object): /* is While */scala.Boolean = js.native
+  def isWhile(node: js.Object, opts: js.Object): /* is While */scala.Boolean = js.native
   def isWhileStatement(node: js.Object): /* is WhileStatement */scala.Boolean = js.native
   def isWhileStatement(node: js.Object, opts: js.Object): /* is WhileStatement */scala.Boolean = js.native
   def isWithStatement(node: js.Object): /* is WithStatement */scala.Boolean = js.native
@@ -1458,8 +1458,24 @@ object typesModMembers extends js.Object {
     properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
     indexers: js.Array[ObjectTypeIndexer],
     callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: scala.Boolean,
+    inexact: scala.Boolean
+  ): ObjectTypeAnnotation = js.native
+  def objectTypeAnnotation(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: js.Array[ObjectTypeCallProperty],
     internalSlots: scala.Null,
     exact: scala.Boolean
+  ): ObjectTypeAnnotation = js.native
+  def objectTypeAnnotation(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: scala.Null,
+    exact: scala.Boolean,
+    inexact: scala.Boolean
   ): ObjectTypeAnnotation = js.native
   def objectTypeAnnotation(
     properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
@@ -1478,8 +1494,24 @@ object typesModMembers extends js.Object {
     properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
     indexers: js.Array[ObjectTypeIndexer],
     callProperties: scala.Null,
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: scala.Boolean,
+    inexact: scala.Boolean
+  ): ObjectTypeAnnotation = js.native
+  def objectTypeAnnotation(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: scala.Null,
     internalSlots: scala.Null,
     exact: scala.Boolean
+  ): ObjectTypeAnnotation = js.native
+  def objectTypeAnnotation(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: js.Array[ObjectTypeIndexer],
+    callProperties: scala.Null,
+    internalSlots: scala.Null,
+    exact: scala.Boolean,
+    inexact: scala.Boolean
   ): ObjectTypeAnnotation = js.native
   def objectTypeAnnotation(
     properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
@@ -1503,8 +1535,24 @@ object typesModMembers extends js.Object {
     properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
     indexers: scala.Null,
     callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: scala.Boolean,
+    inexact: scala.Boolean
+  ): ObjectTypeAnnotation = js.native
+  def objectTypeAnnotation(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: scala.Null,
+    callProperties: js.Array[ObjectTypeCallProperty],
     internalSlots: scala.Null,
     exact: scala.Boolean
+  ): ObjectTypeAnnotation = js.native
+  def objectTypeAnnotation(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: scala.Null,
+    callProperties: js.Array[ObjectTypeCallProperty],
+    internalSlots: scala.Null,
+    exact: scala.Boolean,
+    inexact: scala.Boolean
   ): ObjectTypeAnnotation = js.native
   def objectTypeAnnotation(
     properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
@@ -1523,8 +1571,24 @@ object typesModMembers extends js.Object {
     properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
     indexers: scala.Null,
     callProperties: scala.Null,
+    internalSlots: js.Array[ObjectTypeInternalSlot],
+    exact: scala.Boolean,
+    inexact: scala.Boolean
+  ): ObjectTypeAnnotation = js.native
+  def objectTypeAnnotation(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: scala.Null,
+    callProperties: scala.Null,
     internalSlots: scala.Null,
     exact: scala.Boolean
+  ): ObjectTypeAnnotation = js.native
+  def objectTypeAnnotation(
+    properties: js.Array[ObjectTypeProperty | ObjectTypeSpreadProperty],
+    indexers: scala.Null,
+    callProperties: scala.Null,
+    internalSlots: scala.Null,
+    exact: scala.Boolean,
+    inexact: scala.Boolean
   ): ObjectTypeAnnotation = js.native
   def objectTypeCallProperty(value: FlowType): ObjectTypeCallProperty = js.native
   def objectTypeCallProperty(value: FlowType, _static: scala.Boolean): ObjectTypeCallProperty = js.native

@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd", "Alert")
 @js.native
-class Alert protected ()
-  extends antdLib.libAlertMod.default {
-  def this(props: antdLib.libAlertMod.AlertProps) = this()
-}
+class Alert ()
+  extends antdLib.libAlertMod.default
 

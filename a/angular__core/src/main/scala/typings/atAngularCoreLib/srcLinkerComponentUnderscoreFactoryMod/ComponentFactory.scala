@@ -25,7 +25,7 @@ abstract class ComponentFactory[C] () extends js.Object {
        */
   val outputs: js.Array[atAngularCoreLib.Anon_PropName] = js.native
   /**
-       * The comonent's HTML selector.
+       * The component's HTML selector.
        */
   val selector: java.lang.String = js.native
   /**

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Customizer ()
   extends atUifabricUtilitiesLib.libBaseComponentMod.BaseComponent[ICustomizerProps, js.Object] {
+  var _changeCount: js.Any = js.native
   var _onCustomizationChange: js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MCustomizer(): scala.Unit = js.native

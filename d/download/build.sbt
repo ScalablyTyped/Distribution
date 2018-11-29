@@ -1,15 +1,15 @@
 organization := "com.scalablytyped"
 name := "download"
-version := "6.2-dt-20181031Z-195706"
+version := "6.2-dt-20181031Z-c57fe1"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "decompress" % "4.2-dt-20180910Z-8a68bd",
-  "com.scalablytyped" %%% "got" % "9.2-dt-20181031Z-26ae0e",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181104Z-a9e24d",
+  "com.scalablytyped" %%% "decompress" % "4.2-dt-20180910Z-8e3ae3",
+  "com.scalablytyped" %%% "got" % "9.2-dt-20181128Z-96aa51",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181104Z-65a037",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -18,6 +18,7 @@ trait ITeachingBubbleStyles extends js.Object {
   var primaryButton: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var root: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var secondaryButton: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
+  var subComponentStyles: js.UndefOr[ITeachingBubbleSubComponentStyles] = js.undefined
   var subText: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
 }
 

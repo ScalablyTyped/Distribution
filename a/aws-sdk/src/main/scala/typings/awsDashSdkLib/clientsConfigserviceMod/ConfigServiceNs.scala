@@ -89,6 +89,30 @@ object ConfigServiceNs extends js.Object {
   }
   
   
+  trait AggregateResourceIdentifier extends js.Object {
+    /**
+         * The ID of the AWS resource.
+         */
+    var ResourceId: ResourceId
+    /**
+         * The name of the AWS resource.
+         */
+    var ResourceName: js.UndefOr[ResourceName] = js.undefined
+    /**
+         * The type of the AWS resource.
+         */
+    var ResourceType: ResourceType
+    /**
+         * The 12-digit account ID of the source account.
+         */
+    var SourceAccountId: AccountId
+    /**
+         * The source region where data is aggregated.
+         */
+    var SourceRegion: AwsRegion
+  }
+  
+  
   trait AggregatedSourceStatus extends js.Object {
     /**
          * The region authorized to collect aggregated data.
@@ -143,7 +167,7 @@ object ConfigServiceNs extends js.Object {
   
   trait BaseConfigurationItem extends js.Object {
     /**
-         * The 12 digit AWS account ID associated with the resource.
+         * The 12-digit AWS account ID associated with the resource.
          */
     var accountId: js.UndefOr[AccountId] = js.undefined
     /**
@@ -198,6 +222,30 @@ object ConfigServiceNs extends js.Object {
          * The version number of the resource configuration.
          */
     var version: js.UndefOr[Version] = js.undefined
+  }
+  
+  
+  trait BatchGetAggregateResourceConfigRequest extends js.Object {
+    /**
+         * The name of the configuration aggregator.
+         */
+    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    /**
+         * A list of aggregate ResourceIdentifiers objects. 
+         */
+    var ResourceIdentifiers: ResourceIdentifiersList
+  }
+  
+  
+  trait BatchGetAggregateResourceConfigResponse extends js.Object {
+    /**
+         * A list that contains the current configuration of one or more resources.
+         */
+    var BaseConfigurationItems: js.UndefOr[BaseConfigurationItems] = js.undefined
+    /**
+         * A list of resource identifiers that were not processed with current scope. The list is empty if all the resources are processed.
+         */
+    var UnprocessedResourceIdentifiers: js.UndefOr[UnprocessedResourceIdentifierList] = js.undefined
   }
   
   
@@ -1288,6 +1336,70 @@ object ConfigServiceNs extends js.Object {
   }
   
   
+  trait GetAggregateDiscoveredResourceCountsRequest extends js.Object {
+    /**
+         * The name of the configuration aggregator.
+         */
+    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    /**
+         * Filters the results based on the ResourceCountFilters object.
+         */
+    var Filters: js.UndefOr[ResourceCountFilters] = js.undefined
+    /**
+         * The key to group the resource counts.
+         */
+    var GroupByKey: js.UndefOr[ResourceCountGroupKey] = js.undefined
+    /**
+         * The maximum number of GroupedResourceCount objects returned on each page. The default is 1000. You cannot specify a number greater than 1000. If you specify 0, AWS Config uses the default.
+         */
+    var Limit: js.UndefOr[GroupByAPILimit] = js.undefined
+    /**
+         * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response. 
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait GetAggregateDiscoveredResourceCountsResponse extends js.Object {
+    /**
+         * The key passed into the request object. If GroupByKey is not provided, the result will be empty.
+         */
+    var GroupByKey: js.UndefOr[StringWithCharLimit256] = js.undefined
+    /**
+         * Returns a list of GroupedResourceCount objects.
+         */
+    var GroupedResourceCounts: js.UndefOr[GroupedResourceCountList] = js.undefined
+    /**
+         * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * The total number of resources that are present in an aggregator with the filters that you provide.
+         */
+    var TotalDiscoveredResources: Long
+  }
+  
+  
+  trait GetAggregateResourceConfigRequest extends js.Object {
+    /**
+         * The name of the configuration aggregator.
+         */
+    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    /**
+         * An object that identifies aggregate resource.
+         */
+    var ResourceIdentifier: AggregateResourceIdentifier
+  }
+  
+  
+  trait GetAggregateResourceConfigResponse extends js.Object {
+    /**
+         * Returns a ConfigurationItem object.
+         */
+    var ConfigurationItem: js.UndefOr[ConfigurationItem] = js.undefined
+  }
+  
+  
   trait GetComplianceDetailsByConfigRuleRequest extends js.Object {
     /**
          * Filters the results by compliance. The allowed values are COMPLIANT, NON_COMPLIANT, and NOT_APPLICABLE.
@@ -1449,6 +1561,54 @@ object ConfigServiceNs extends js.Object {
          * The string that you use in a subsequent request to get the next page of results in a paginated response.
          */
     var nextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait GroupedResourceCount extends js.Object {
+    /**
+         * The name of the group that can be region, account ID, or resource type. For example, region1, region2 if the region was chosen as GroupByKey.
+         */
+    var GroupName: StringWithCharLimit256
+    /**
+         * The number of resources in the group.
+         */
+    var ResourceCount: Long
+  }
+  
+  
+  trait ListAggregateDiscoveredResourcesRequest extends js.Object {
+    /**
+         * The name of the configuration aggregator. 
+         */
+    var ConfigurationAggregatorName: ConfigurationAggregatorName
+    /**
+         * Filters the results based on the ResourceFilters object.
+         */
+    var Filters: js.UndefOr[ResourceFilters] = js.undefined
+    /**
+         * The maximum number of resource identifiers returned on each page. The default is 100. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
+         */
+    var Limit: js.UndefOr[Limit] = js.undefined
+    /**
+         * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * The type of resources that you want AWS Config to list in the response.
+         */
+    var ResourceType: ResourceType
+  }
+  
+  
+  trait ListAggregateDiscoveredResourcesResponse extends js.Object {
+    /**
+         * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * Returns a list of ResourceIdentifiers objects.
+         */
+    var ResourceIdentifiers: js.UndefOr[DiscoveredResourceIdentifierList] = js.undefined
   }
   
   
@@ -1676,6 +1836,42 @@ object ConfigServiceNs extends js.Object {
   }
   
   
+  trait ResourceCountFilters extends js.Object {
+    /**
+         * The 12-digit ID of the account.
+         */
+    var AccountId: js.UndefOr[AccountId] = js.undefined
+    /**
+         * The region where the account is located.
+         */
+    var Region: js.UndefOr[AwsRegion] = js.undefined
+    /**
+         * The type of the AWS resource.
+         */
+    var ResourceType: js.UndefOr[ResourceType] = js.undefined
+  }
+  
+  
+  trait ResourceFilters extends js.Object {
+    /**
+         * The 12-digit source account ID.
+         */
+    var AccountId: js.UndefOr[AccountId] = js.undefined
+    /**
+         * The source region.
+         */
+    var Region: js.UndefOr[AwsRegion] = js.undefined
+    /**
+         * The ID of the resource.
+         */
+    var ResourceId: js.UndefOr[ResourceId] = js.undefined
+    /**
+         * The name of the resource.
+         */
+    var ResourceName: js.UndefOr[ResourceName] = js.undefined
+  }
+  
+  
   trait ResourceIdentifier extends js.Object {
     /**
          * The time that the resource was deleted.
@@ -1811,6 +2007,35 @@ object ConfigServiceNs extends js.Object {
     extends awsDashSdkLib.libServiceMod.Service {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
+    /**
+       * Returns the current configuration items for resources that are present in your AWS Config aggregator. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceIdentifiers list.     The API does not return results for deleted resources.    The API does not return tags and relationships.   
+       */
+    def batchGetAggregateResourceConfig(): awsDashSdkLib.libRequestMod.Request[BatchGetAggregateResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the current configuration items for resources that are present in your AWS Config aggregator. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceIdentifiers list.     The API does not return results for deleted resources.    The API does not return tags and relationships.   
+       */
+    def batchGetAggregateResourceConfig(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchGetAggregateResourceConfigResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchGetAggregateResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the current configuration items for resources that are present in your AWS Config aggregator. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceIdentifiers list.     The API does not return results for deleted resources.    The API does not return tags and relationships.   
+       */
+    def batchGetAggregateResourceConfig(params: BatchGetAggregateResourceConfigRequest): awsDashSdkLib.libRequestMod.Request[BatchGetAggregateResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the current configuration items for resources that are present in your AWS Config aggregator. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceIdentifiers list.     The API does not return results for deleted resources.    The API does not return tags and relationships.   
+       */
+    def batchGetAggregateResourceConfig(
+      params: BatchGetAggregateResourceConfigRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchGetAggregateResourceConfigResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchGetAggregateResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Returns the current configuration for one or more requested resources. The operation also returns a list of resources that are not processed in the current request. If there are no unprocessed resources, the operation returns an empty unprocessedResourceKeys list.     The API does not return results for deleted resources.    The API does not return any tags for the requested resources. This information is filtered out of the supplementaryConfiguration section of the API response.   
        */
@@ -2558,6 +2783,64 @@ object ConfigServiceNs extends js.Object {
         awsDashSdkLib.libErrorMod.AWSError
       ] = js.native
     /**
+       * Returns the resource counts across accounts and regions that are present in your AWS Config aggregator. You can request the resource counts by providing filters and GroupByKey. For example, if the input contains accountID 12345678910 and region us-east-1 in filters, the API returns the count of resources in account ID 12345678910 and region us-east-1. If the input contains ACCOUNT_ID as a GroupByKey, the API returns resource counts for all source accounts that are present in your aggregator.
+       */
+    def getAggregateDiscoveredResourceCounts(): awsDashSdkLib.libRequestMod.Request[GetAggregateDiscoveredResourceCountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the resource counts across accounts and regions that are present in your AWS Config aggregator. You can request the resource counts by providing filters and GroupByKey. For example, if the input contains accountID 12345678910 and region us-east-1 in filters, the API returns the count of resources in account ID 12345678910 and region us-east-1. If the input contains ACCOUNT_ID as a GroupByKey, the API returns resource counts for all source accounts that are present in your aggregator.
+       */
+    def getAggregateDiscoveredResourceCounts(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetAggregateDiscoveredResourceCountsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetAggregateDiscoveredResourceCountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the resource counts across accounts and regions that are present in your AWS Config aggregator. You can request the resource counts by providing filters and GroupByKey. For example, if the input contains accountID 12345678910 and region us-east-1 in filters, the API returns the count of resources in account ID 12345678910 and region us-east-1. If the input contains ACCOUNT_ID as a GroupByKey, the API returns resource counts for all source accounts that are present in your aggregator.
+       */
+    def getAggregateDiscoveredResourceCounts(params: GetAggregateDiscoveredResourceCountsRequest): awsDashSdkLib.libRequestMod.Request[GetAggregateDiscoveredResourceCountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the resource counts across accounts and regions that are present in your AWS Config aggregator. You can request the resource counts by providing filters and GroupByKey. For example, if the input contains accountID 12345678910 and region us-east-1 in filters, the API returns the count of resources in account ID 12345678910 and region us-east-1. If the input contains ACCOUNT_ID as a GroupByKey, the API returns resource counts for all source accounts that are present in your aggregator.
+       */
+    def getAggregateDiscoveredResourceCounts(
+      params: GetAggregateDiscoveredResourceCountsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetAggregateDiscoveredResourceCountsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetAggregateDiscoveredResourceCountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns configuration item that is aggregated for your specific resource in a specific source account and region.
+       */
+    def getAggregateResourceConfig(): awsDashSdkLib.libRequestMod.Request[GetAggregateResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns configuration item that is aggregated for your specific resource in a specific source account and region.
+       */
+    def getAggregateResourceConfig(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetAggregateResourceConfigResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetAggregateResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns configuration item that is aggregated for your specific resource in a specific source account and region.
+       */
+    def getAggregateResourceConfig(params: GetAggregateResourceConfigRequest): awsDashSdkLib.libRequestMod.Request[GetAggregateResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns configuration item that is aggregated for your specific resource in a specific source account and region.
+       */
+    def getAggregateResourceConfig(
+      params: GetAggregateResourceConfigRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetAggregateResourceConfigResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetAggregateResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Returns the evaluation results for the specified AWS Config rule. The results indicate which AWS resources were evaluated by the rule, when each resource was last evaluated, and whether each resource complies with the rule.
        */
     def getComplianceDetailsByConfigRule(): awsDashSdkLib.libRequestMod.Request[GetComplianceDetailsByConfigRuleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2716,6 +2999,35 @@ object ConfigServiceNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetResourceConfigHistoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Accepts a resource type and returns a list of resource identifiers that are aggregated for a specific resource type across accounts and regions. A resource identifier includes the resource type, ID, (if available) the custom resource name, source account, and source region. You can narrow the results to include only resources that have specific resource IDs, or a resource name, or source account ID, or source region. For example, if the input consists of accountID 12345678910 and the region is us-east-1 for resource type AWS::EC2::Instance then the API returns all the EC2 instance identifiers of accountID 12345678910 and region us-east-1.
+       */
+    def listAggregateDiscoveredResources(): awsDashSdkLib.libRequestMod.Request[ListAggregateDiscoveredResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Accepts a resource type and returns a list of resource identifiers that are aggregated for a specific resource type across accounts and regions. A resource identifier includes the resource type, ID, (if available) the custom resource name, source account, and source region. You can narrow the results to include only resources that have specific resource IDs, or a resource name, or source account ID, or source region. For example, if the input consists of accountID 12345678910 and the region is us-east-1 for resource type AWS::EC2::Instance then the API returns all the EC2 instance identifiers of accountID 12345678910 and region us-east-1.
+       */
+    def listAggregateDiscoveredResources(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListAggregateDiscoveredResourcesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListAggregateDiscoveredResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Accepts a resource type and returns a list of resource identifiers that are aggregated for a specific resource type across accounts and regions. A resource identifier includes the resource type, ID, (if available) the custom resource name, source account, and source region. You can narrow the results to include only resources that have specific resource IDs, or a resource name, or source account ID, or source region. For example, if the input consists of accountID 12345678910 and the region is us-east-1 for resource type AWS::EC2::Instance then the API returns all the EC2 instance identifiers of accountID 12345678910 and region us-east-1.
+       */
+    def listAggregateDiscoveredResources(params: ListAggregateDiscoveredResourcesRequest): awsDashSdkLib.libRequestMod.Request[ListAggregateDiscoveredResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Accepts a resource type and returns a list of resource identifiers that are aggregated for a specific resource type across accounts and regions. A resource identifier includes the resource type, ID, (if available) the custom resource name, source account, and source region. You can narrow the results to include only resources that have specific resource IDs, or a resource name, or source account ID, or source region. For example, if the input consists of accountID 12345678910 and the region is us-east-1 for resource type AWS::EC2::Instance then the API returns all the EC2 instance identifiers of accountID 12345678910 and region us-east-1.
+       */
+    def listAggregateDiscoveredResources(
+      params: ListAggregateDiscoveredResourcesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListAggregateDiscoveredResourcesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListAggregateDiscoveredResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Accepts a resource type and returns a list of resource identifiers for the resources of that type. A resource identifier includes the resource type, ID, and (if available) the custom resource name. The results consist of resources that AWS Config has discovered, including those that AWS Config is not currently recording. You can narrow the results to include only resources that have specific resource IDs or a resource name.  You can specify either resource IDs or a resource name, but not both, in the same request.  The response is paginated. By default, AWS Config lists 100 resource identifiers on each page. You can customize this number with the limit parameter. The response includes a nextToken string. To get the next page of results, run the request again and specify the string for the nextToken parameter.
        */
@@ -3050,12 +3362,14 @@ object ConfigServiceNs extends js.Object {
   type DeliveryChannelStatusList = js.Array[DeliveryChannelStatus]
   type DeliveryStatus = awsDashSdkLib.awsDashSdkLibStrings.Success | awsDashSdkLib.awsDashSdkLibStrings.Failure | awsDashSdkLib.awsDashSdkLibStrings.Not_Applicable | java.lang.String
   type DescribePendingAggregationRequestsLimit = scala.Double
+  type DiscoveredResourceIdentifierList = js.Array[AggregateResourceIdentifier]
   type EarlierTime = stdLib.Date
   type EmptiableStringWithCharLimit256 = java.lang.String
   type EvaluationResults = js.Array[EvaluationResult]
   type Evaluations = js.Array[Evaluation]
   type EventSource = awsDashSdkLib.awsDashSdkLibStrings.awsDOTconfig | java.lang.String
   type GroupByAPILimit = scala.Double
+  type GroupedResourceCountList = js.Array[GroupedResourceCount]
   type IncludeGlobalResourceTypes = scala.Boolean
   type Integer = scala.Double
   type LaterTime = stdLib.Date
@@ -3075,15 +3389,17 @@ object ConfigServiceNs extends js.Object {
   type RelatedEventList = js.Array[RelatedEvent]
   type RelationshipList = js.Array[Relationship]
   type RelationshipName = java.lang.String
+  type ResourceCountGroupKey = awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT_ID | awsDashSdkLib.awsDashSdkLibStrings.AWS_REGION | java.lang.String
   type ResourceCounts = js.Array[ResourceCount]
   type ResourceCreationTime = stdLib.Date
   type ResourceDeletionTime = stdLib.Date
   type ResourceId = java.lang.String
   type ResourceIdList = js.Array[ResourceId]
   type ResourceIdentifierList = js.Array[ResourceIdentifier]
+  type ResourceIdentifiersList = js.Array[AggregateResourceIdentifier]
   type ResourceKeys = js.Array[ResourceKey]
   type ResourceName = java.lang.String
-  type ResourceType = /* LimitUnionLength: was union type with length 59 */js.Any
+  type ResourceType = /* LimitUnionLength: was union type with length 65 */js.Any
   type ResourceTypeList = js.Array[ResourceType]
   type ResourceTypes = js.Array[StringWithCharLimit256]
   type RetentionConfigurationList = js.Array[RetentionConfiguration]
@@ -3099,6 +3415,7 @@ object ConfigServiceNs extends js.Object {
   type StringWithCharLimit64 = java.lang.String
   type SupplementaryConfigurationName = java.lang.String
   type SupplementaryConfigurationValue = java.lang.String
+  type UnprocessedResourceIdentifierList = js.Array[AggregateResourceIdentifier]
   type Value = java.lang.String
   type Version = java.lang.String
   type _Date = stdLib.Date

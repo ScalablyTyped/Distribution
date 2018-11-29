@@ -1,21 +1,20 @@
 organization := "com.scalablytyped"
 name := "graphql-tools"
-version := "4.0.2-a93493"
+version := "4.0.3-13b271"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "apollo-link" % "1.2.3-ed789a",
-  "com.scalablytyped" %%% "apollo-utilities" % "1.0.21-6af781",
-  "com.scalablytyped" %%% "deprecated-decorator" % "0.1.6-c0ab4d",
-  "com.scalablytyped" %%% "fclone" % "1.0.11-4304d4",
-  "com.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-4871a9",
-  "com.scalablytyped" %%% "iterall" % "1.2.2-770ade",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "uuid" % "3.4-dt-20180910Z-4852fd",
-  "com.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-2ae465",
-  "com.scalablytyped" %%% "zen-observable-ts" % "0.8.10-36203d",
+  "com.scalablytyped" %%% "apollo-link" % "1.2.4-cf91b1",
+  "com.scalablytyped" %%% "apollo-utilities" % "1.0.26-9dddf4",
+  "com.scalablytyped" %%% "deprecated-decorator" % "0.1.6-d4fb36",
+  "com.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-dd545c",
+  "com.scalablytyped" %%% "iterall" % "1.2.2-e9ddad",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "uuid" % "3.4-dt-20180910Z-636507",
+  "com.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-854602",
+  "com.scalablytyped" %%% "zen-observable-ts" % "0.8.11-bacf6e",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -31,6 +31,7 @@ trait DataCollector extends js.Object {
        * @param {callback} callback The second argument, `data`, is the {@link DataCollector} instance.
        * @returns {void}
        */
+  def create(options: braintreeDashWebLib.Anon_ClientKount): stdLib.Promise[DataCollector] = js.native
   def create(options: braintreeDashWebLib.Anon_ClientKount, callback: callback): scala.Unit = js.native
   /**
        * @memberof DataCollector

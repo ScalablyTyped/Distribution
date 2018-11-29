@@ -8,26 +8,45 @@ import scala.scalajs.js.annotation._
 @JSImport("jointjs", "util")
 @js.native
 object utilNs extends js.Object {
+  
+  trait DOMJSONDocument extends js.Object {
+    var fragment: stdLib.DocumentFragment
+    var groupSelectors: ScalablyTyped.runtime.StringDictionary[js.Array[underscoreLib.underscoreMod.Global.Element]]
+    var selectors: ScalablyTyped.runtime.StringDictionary[underscoreLib.underscoreMod.Global.Element]
+  }
+  
   var shapePerimeterConnectionPoint: jointjsLib.jointjsMod.diaNs.LinkViewNs.GetConnectionPoint = js.native
-  def breakText(text: java.lang.String, size: jointjsLib.jointjsMod.diaNs.Size): java.lang.String = js.native
+  def assign(destinationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
+  def bindAll(`object`: js.Object, methodNames: js.Array[PropertyPath]): js.Object = js.native
+  def breakText(text: java.lang.String, size: jointjsLib.Anon_Height): java.lang.String = js.native
   def breakText(
     text: java.lang.String,
-    size: jointjsLib.jointjsMod.diaNs.Size,
+    size: jointjsLib.Anon_Height,
     attrs: jointjsLib.jointjsMod.attributesNs.NativeSVGAttributes
   ): java.lang.String = js.native
   def breakText(
     text: java.lang.String,
-    size: jointjsLib.jointjsMod.diaNs.Size,
+    size: jointjsLib.Anon_Height,
     attrs: jointjsLib.jointjsMod.attributesNs.NativeSVGAttributes,
     opt: jointjsLib.Anon_SvgDocument
   ): java.lang.String = js.native
+  def camelCase(string: java.lang.String): java.lang.String = js.native
   def cancelFrame(requestId: scala.Double): scala.Unit = js.native
+  def clone[T](value: T): T = js.native
+  def cloneDeep[T](value: T): T = js.native
   def dataUriToBlob(dataUri: java.lang.String): stdLib.Blob = js.native
-  def deepMixin(objects: js.Array[_]): js.Any = js.native
-  def deepSupplement(objects: js.Any): js.Any = js.native
-  def deepSupplement(objects: js.Any, defaultIndicator: js.Any): js.Any = js.native
+  def debounce(func: js.Function): js.Function = js.native
+  def debounce(func: js.Function, wait: scala.Double): js.Function = js.native
+  def debounce(func: js.Function, wait: scala.Double, options: js.Object): js.Function = js.native
+  def deepMixin(destinationObject: js.Object, sourceObject: js.Object): js.Object = js.native
+  def deepMixin(destinationObject: js.Object, sourceObject: js.Object, options: js.Object): js.Object = js.native
+  def deepSupplement(destionationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
+  def defaults(destinationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
+  def defaultsDeep(destinationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
+  def difference(array: js.Array[_], excludedValuesArrays: js.Array[_]*): js.Array[_] = js.native
   def downloadBlob(blob: stdLib.Blob, fileName: java.lang.String): scala.Unit = js.native
   def downloadDataUri(dataUri: java.lang.String, fileName: java.lang.String): scala.Unit = js.native
+  def flattenDeep(array: js.Array[_]): js.Array[_] = js.native
   def flattenObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any]): js.Any = js.native
   def flattenObject(`object`: ScalablyTyped.runtime.StringDictionary[js.Any], delim: java.lang.String): js.Any = js.native
   def flattenObject(
@@ -35,6 +54,8 @@ object utilNs extends js.Object {
     delim: java.lang.String,
     stop: js.Function1[/* node */ js.Any, scala.Boolean]
   ): js.Any = js.native
+  def forIn(`object`: js.Object): js.Object = js.native
+  def forIn(`object`: js.Object, iteratee: Iteratee): js.Object = js.native
   def getByPath(`object`: ScalablyTyped.runtime.StringDictionary[js.Any], path: java.lang.String): js.Any = js.native
   def getByPath(
     `object`: ScalablyTyped.runtime.StringDictionary[js.Any],
@@ -48,22 +69,84 @@ object utilNs extends js.Object {
     delim: java.lang.String
   ): js.Any = js.native
   def getElementBBox(el: underscoreLib.underscoreMod.Global.Element): jointjsLib.jointjsMod.diaNs.BBox = js.native
+  def groupBy(collection: Collection): js.Object = js.native
+  def groupBy(collection: Collection, iteratee: Iteratee): js.Object = js.native
   def guid(): java.lang.String = js.native
   def guid(obj: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
+  def has(`object`: js.Object, path: PropertyPath): scala.Boolean = js.native
   def hashCode(str: java.lang.String): java.lang.String = js.native
   def imageToDataUri(
     url: java.lang.String,
     callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* dataUri */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
+  def intersection(arrays: js.Array[_]*): js.Array[_] = js.native
+  def invoke(collection: Collection, functionToInvokeForAll: IterateeFunction): js.Array[_] = js.native
+  def invoke(collection: Collection, functionToInvokeForAll: IterateeFunction, args: js.Array[_]): js.Array[_] = js.native
+  def invoke(collection: Collection, methodPath: PropertyPath): js.Array[_] = js.native
+  def invoke(collection: Collection, methodPath: PropertyPath, args: js.Array[_]): js.Array[_] = js.native
+  def isBoolean(value: js.Any): scala.Boolean = js.native
+  def isEmpty(value: js.Any): scala.Boolean = js.native
+  def isEqual(value: js.Any, otherValue: js.Any): scala.Boolean = js.native
+  def isFunction(value: js.Any): scala.Boolean = js.native
+  def isNumber(value: js.Any): scala.Boolean = js.native
+  def isObject(value: js.Any): scala.Boolean = js.native
   def isPercentage(`val`: js.Any): scala.Boolean = js.native
-  def mixin(objects: js.Array[_]): js.Any = js.native
+  def isPlainObject(value: js.Any): scala.Boolean = js.native
+  def isString(value: js.Any): scala.Boolean = js.native
+  def merge(destinationObject: js.Object, sourceObject1: js.Object, sourceObject2: js.Object): js.Object = js.native
+  def merge(
+    destinationObject: js.Object,
+    sourceObject1: js.Object,
+    sourceObject2: js.Object,
+    customizer: CustomizerFunction
+  ): js.Object = js.native
+  def merge(
+    destinationObject: js.Object,
+    sourceObject1: js.Object,
+    sourceObject2: js.Object,
+    sourceObject3: js.Object
+  ): js.Object = js.native
+  def merge(
+    destinationObject: js.Object,
+    sourceObject1: js.Object,
+    sourceObject2: js.Object,
+    sourceObject3: js.Object,
+    customizer: CustomizerFunction
+  ): js.Object = js.native
+  def merge(
+    destinationObject: js.Object,
+    sourceObject1: js.Object,
+    sourceObject2: js.Object,
+    sourceObject3: js.Object,
+    sourceObject4: js.Object
+  ): js.Object = js.native
+  def merge(
+    destinationObject: js.Object,
+    sourceObject1: js.Object,
+    sourceObject2: js.Object,
+    sourceObject3: js.Object,
+    sourceObject4: js.Object,
+    customizer: CustomizerFunction
+  ): js.Object = js.native
+  def merge(destinationObject: js.Object, sourceObject: js.Object): js.Object = js.native
+  def merge(destinationObject: js.Object, sourceObject: js.Object, customizer: CustomizerFunction): js.Object = js.native
+  def merge(
+    destinationObject: js.Object,
+    /* import warning: Dropping repeated marker of param TsIdentSimple(sourceObjectsOptionalFinalCustomizer) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(SourceObjectsOptionalFinalCustomizer))),List())) is not an array type */sourceObjectsOptionalFinalCustomizer: SourceObjectsOptionalFinalCustomizer
+  ): js.Object = js.native
+  def mixin(destinationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
   def nextFrame(callback: js.Function0[scala.Unit]): scala.Double = js.native
   def nextFrame(callback: js.Function0[scala.Unit], context: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Double = js.native
+  def noop(): scala.Unit = js.native
   def normalizeEvent(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null] = js.native
-  def normalizeSides(sides: jointjsLib.Anon_Bottom): jointjsLib.jointjsMod.diaNs.PaddingJSON = js.native
-  def normalizeSides(sides: scala.Double): jointjsLib.jointjsMod.diaNs.PaddingJSON = js.native
-  def parseCssNumber(str: java.lang.String): jointjsLib.Anon_Value = js.native
-  def parseCssNumber(str: java.lang.String, restrictUnits: js.Array[java.lang.String]): jointjsLib.Anon_Value = js.native
+  def normalizeSides(sides: jointjsLib.jointjsMod.diaNs.Sides): jointjsLib.jointjsMod.diaNs.PaddingJSON = js.native
+  def omit(`object`: js.Object, propertyPathsToOmit: PropertyPath*): js.Object = js.native
+  def parseCssNumeric(`val`: js.Any, restrictUnits: java.lang.String): jointjsLib.Anon_Value | scala.Null = js.native
+  def parseCssNumeric(`val`: js.Any, restrictUnits: js.Array[java.lang.String]): jointjsLib.Anon_Value | scala.Null = js.native
+  def parseDOMJSON(json: jointjsLib.jointjsMod.diaNs.MarkupJSON): DOMJSONDocument = js.native
+  def pick(`object`: js.Object, propertyPathsToPick: PropertyPath*): js.Object = js.native
+  def result(`object`: js.Object, propertyPath: PropertyPath): js.Any = js.native
+  def result(`object`: js.Object, propertyPath: PropertyPath, defaultValue: js.Any): js.Any = js.native
   def sanitizeHTML(html: java.lang.String): java.lang.String = js.native
   def setAttributesBySelector(
     el: underscoreLib.underscoreMod.Global.Element,
@@ -87,6 +170,7 @@ object utilNs extends js.Object {
     value: js.Any,
     delim: java.lang.String
   ): js.Any = js.native
+  def sortBy(collection: Collection, iterateesArray: js.Array[Iteratee]): js.Array[_] = js.native
   def sortElements(
     elements: java.lang.String,
     comparator: js.Function2[
@@ -111,11 +195,19 @@ object utilNs extends js.Object {
       scala.Double
     ]
   ): js.Array[underscoreLib.underscoreMod.Global.Element] = js.native
-  def supplement(objects: js.Array[_]): js.Any = js.native
+  def sortedIndex(sortedArray: js.Array[_], valueToInsert: js.Any): scala.Double = js.native
+  def sortedIndex(sortedArray: js.Array[_], valueToInsert: js.Any, iteratee: Iteratee): scala.Double = js.native
+  def supplement(destinationObject: js.Object, sourceObjects: js.Object*): js.Object = js.native
   def template(html: java.lang.String): js.Function1[/* data */ js.Any, java.lang.String] = js.native
+  def toArray(value: js.Any): js.Array[_] = js.native
   def toKebabCase(str: java.lang.String): java.lang.String = js.native
   def toggleFullScreen(): scala.Unit = js.native
   def toggleFullScreen(el: underscoreLib.underscoreMod.Global.Element): scala.Unit = js.native
+  def union(arrays: js.Array[_]*): js.Array[_] = js.native
+  def uniq(array: js.Array[_]): js.Array[_] = js.native
+  def uniq(array: js.Array[_], iteratee: Iteratee): js.Array[_] = js.native
+  def uniqueId(): java.lang.String = js.native
+  def uniqueId(prefix: java.lang.String): java.lang.String = js.native
   def unsetByPath(`object`: ScalablyTyped.runtime.StringDictionary[js.Any], path: java.lang.String): js.Any = js.native
   def unsetByPath(
     `object`: ScalablyTyped.runtime.StringDictionary[js.Any],
@@ -129,6 +221,7 @@ object utilNs extends js.Object {
     delim: java.lang.String
   ): js.Any = js.native
   def uuid(): java.lang.String = js.native
+  def without(array: js.Array[_], values: js.Any*): js.Array[_] = js.native
   @JSName("filter")
   @js.native
   object filterNs extends js.Object {
@@ -213,5 +306,22 @@ object utilNs extends js.Object {
     type TimingFunction = js.Function1[/* time */ scala.Double, scala.Double]
   }
   
+  type Collection = js.Object | js.Array[js.Any]
+  type CustomizerFunction = js.Function6[
+    /* objValue */ js.Any, 
+    /* srcValue */ js.Any, 
+    /* key */ java.lang.String, 
+    /* object */ js.Any, 
+    /* source */ js.Any, 
+    /* stack */ js.Any, 
+    NotVoid
+  ]
+  type Iteratee = IterateeFunction | IterateeShorthand
+  type IterateeFunction = js.Function1[/* value */ js.Any, NotVoid]
+  type IterateeShorthand = PropertyPath
+  // LODASH FUNCTIONS:
+  type NotVoid = js.UndefOr[js.Object | scala.Null]
+  type PropertyPath = java.lang.String | js.Array[java.lang.String]
+  type SourceObjectsOptionalFinalCustomizer = js.Array[js.Object | CustomizerFunction]
 }
 

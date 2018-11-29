@@ -13,12 +13,9 @@ trait HTML5Backend
   var altKeyPressed: js.Any = js.native
   var asyncEndDragFrameId: js.Any = js.native
   var beginDragNativeItem: js.Any = js.native
-  var checkIfCurrentDragSourceRectChanged: js.Any = js.native
   var clearCurrentDragSourceNode: js.Any = js.native
   var context: js.Any = js.native
   var currentDragSourceNode: js.Any = js.native
-  var currentDragSourceNodeOffset: js.Any = js.native
-  var currentDragSourceNodeOffsetChanged: js.Any = js.native
   var currentNativeHandle: js.Any = js.native
   var currentNativeSource: js.Any = js.native
   var dragEnterTargetIds: js.Any = js.native

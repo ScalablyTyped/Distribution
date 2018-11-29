@@ -14,11 +14,6 @@ object libValidationModMembers extends js.Object {
     /* e */ fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
     Validation[js.Any, js.Any]
   ] = js.native
-  val fromPredicate: js.Function2[
-    /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    /* f */ js.Function1[/* a */ js.Any, js.Any], 
-    js.Function1[/* a */ js.Any, Validation[js.Any, js.Any]]
-  ] = js.native
   val getAlt: js.Function1[
     /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
     fpDashTsLib.libAltMod.Alt2C[fpDashTsLib.fpDashTsLibStrings.Validation, js.Any]
@@ -49,7 +44,10 @@ object libValidationModMembers extends js.Object {
   val isFailure: js.Function1[/* fa */ Validation[js.Any, js.Any], /* is Failure */scala.Boolean] = js.native
   val isSuccess: js.Function1[/* fa */ Validation[js.Any, js.Any], /* is Success */scala.Boolean] = js.native
   val success: js.Function1[/* a */ js.Any, Validation[js.Any, js.Any]] = js.native
-  val validation: fpDashTsLib.libFunctorMod.Functor2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libFoldableMod.Foldable2[URI] with fpDashTsLib.libTraversableMod.Traversable2[URI] = js.native
+  val validation: fpDashTsLib.libFunctorMod.Functor2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[URI] = js.native
+  def fromPredicate[L, A](predicate: fpDashTsLib.libFunctionMod.Predicate[A], f: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, Validation[L, A]] = js.native
+  @JSName("fromPredicate")
+  def fromPredicate_LABA[L, A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B], f: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, Validation[L, B]] = js.native
   def getCompactable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libCompactableMod.Compactable2C[URI, L] = js.native
   def getFilterable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libFilterableMod.Filterable2C[URI, L] = js.native
   def getWitherable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libWitherableMod.Witherable2C[URI, L] = js.native

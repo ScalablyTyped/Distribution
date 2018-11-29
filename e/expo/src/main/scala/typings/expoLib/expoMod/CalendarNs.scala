@@ -100,7 +100,7 @@ object CalendarNs extends js.Object {
     var source: js.UndefOr[Source] = js.undefined
     var sourceId: js.UndefOr[java.lang.String] = js.undefined
      // Android
-    /** Time zone for the calendar	 */
+    /** Time zone for the calendar */
     var timeZone: js.UndefOr[java.lang.String] = js.undefined
     /** Visible name of the calendar */
     var title: js.UndefOr[java.lang.String] = js.undefined
@@ -157,7 +157,7 @@ object CalendarNs extends js.Object {
      // iOS
     /** Date when the event record was last modified */
     var lastModifiedDate: js.UndefOr[java.lang.String] = js.undefined
-    /** Location field of the event	 */
+    /** Location field of the event */
     var location: js.UndefOr[java.lang.String] = js.undefined
      // iOS
     /** Description or notes saved with the event */

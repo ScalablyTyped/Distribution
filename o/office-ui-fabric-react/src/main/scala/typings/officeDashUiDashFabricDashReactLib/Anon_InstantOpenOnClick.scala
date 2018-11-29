@@ -11,7 +11,7 @@ trait Anon_InstantOpenOnClick extends js.Object {
   var cardOpenDelay: scala.Double
   var expandedCardOpenDelay: scala.Double
   var instantOpenOnClick: scala.Boolean
-  var openHotKey: atUifabricUtilitiesLib.libKeyCodesMod.KeyCodes
+  var openHotKey: scala.Double
   var setInitialFocus: scala.Boolean
   var `type`: officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.HoverCardType
 }

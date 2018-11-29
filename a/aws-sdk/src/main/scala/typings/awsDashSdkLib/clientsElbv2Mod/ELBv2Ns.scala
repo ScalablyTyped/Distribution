@@ -43,7 +43,7 @@ object ELBv2Ns extends js.Object {
   
   trait AddListenerCertificatesInput extends js.Object {
     /**
-         * The certificate to add. You can specify one certificate per call.
+         * The certificate to add. You can specify one certificate per call. Set CertificateArn to the certificate ARN but do not set IsDefault.
          */
     var Certificates: CertificateList
     /**
@@ -136,7 +136,7 @@ object ELBv2Ns extends js.Object {
     /**
          * The OAuth 2.0 client secret.
          */
-    var ClientSecret: AuthenticateOidcActionClientSecret
+    var ClientSecret: js.UndefOr[AuthenticateOidcActionClientSecret] = js.undefined
     /**
          * The OIDC issuer identifier of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
          */
@@ -161,6 +161,7 @@ object ELBv2Ns extends js.Object {
          * The token endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
          */
     var TokenEndpoint: AuthenticateOidcActionTokenEndpoint
+    var UseExistingClientSecret: js.UndefOr[AuthenticateOidcActionUseExistingClientSecret] = js.undefined
     /**
          * The user info endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
          */
@@ -173,6 +174,7 @@ object ELBv2Ns extends js.Object {
          * [Network Load Balancers] The static IP address.
          */
     var LoadBalancerAddresses: js.UndefOr[LoadBalancerAddresses] = js.undefined
+    var StaticIp: js.UndefOr[StaticIp] = js.undefined
     /**
          * The ID of the subnet.
          */
@@ -190,7 +192,7 @@ object ELBv2Ns extends js.Object {
          */
     var CertificateArn: js.UndefOr[CertificateArn] = js.undefined
     /**
-         * Indicates whether the certificate is the default certificate.
+         * Indicates whether the certificate is the default certificate. Do not set IsDefault when specifying a certificate as an input parameter.
          */
     var IsDefault: js.UndefOr[Default] = js.undefined
   }
@@ -218,11 +220,11 @@ object ELBv2Ns extends js.Object {
   
   trait CreateListenerInput extends js.Object {
     /**
-         * [HTTPS listeners] The default SSL server certificate. You must provide exactly one default certificate. To create a certificate list, use AddListenerCertificates.
+         * [HTTPS listeners] The default SSL server certificate. You must provide exactly one certificate. Set CertificateArn to the certificate ARN but do not set IsDefault. To create a certificate list, use AddListenerCertificates.
          */
     var Certificates: js.UndefOr[CertificateList] = js.undefined
     /**
-         * The actions for the default rule. The rule must include one forward action or one or more fixed-response actions. If the action type is forward, you can specify a single target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you can use an identity provider that is OpenID Connect (OIDC) compliant to authenticate users as they access your application. [HTTPS listener] If the action type is authenticate-cognito, you can use Amazon Cognito to authenticate users as they access your application. [Application Load Balancer] If the action type is redirect, you can redirect HTTP and HTTPS requests. [Application Load Balancer] If the action type is fixed-response, you can return a custom HTTP response.
+         * The actions for the default rule. The rule must include one forward action or one or more fixed-response actions. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listener] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
          */
     var DefaultActions: Actions
     /**
@@ -298,7 +300,7 @@ object ELBv2Ns extends js.Object {
   
   trait CreateRuleInput extends js.Object {
     /**
-         * The actions. Each rule must include exactly one of the following types of actions: forward, fixed-response, or redirect. If the action type is forward, you can specify a single target group. [HTTPS listener] If the action type is authenticate-oidc, you can use an identity provider that is OpenID Connect (OIDC) compliant to authenticate users as they access your application. [HTTPS listener] If the action type is authenticate-cognito, you can use Amazon Cognito to authenticate users as they access your application. [Application Load Balancer] If the action type is redirect, you can redirect HTTP and HTTPS requests. [Application Load Balancer] If the action type is fixed-response, you can return a custom HTTP response.
+         * The actions. Each rule must include exactly one of the following types of actions: forward, fixed-response, or redirect. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listener] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
          */
     var Actions: Actions
     /**
@@ -326,7 +328,11 @@ object ELBv2Ns extends js.Object {
   
   trait CreateTargetGroupInput extends js.Object {
     /**
-         * The approximate amount of time, in seconds, between health checks of an individual target. For Application Load Balancers, the range is 5–300 seconds. For Network Load Balancers, the supported values are 10 or 30 seconds. The default is 30 seconds.
+         * Indicates whether health checks are enabled. If the target type is instance or ip, the default is true. If the target type is lambda, the default is false.
+         */
+    var HealthCheckEnabled: js.UndefOr[HealthCheckEnabled] = js.undefined
+    /**
+         * The approximate amount of time, in seconds, between health checks of an individual target. For Application Load Balancers, the range is 5–300 seconds. For Network Load Balancers, the supported values are 10 or 30 seconds. If the target type is instance or ip, the default is 30 seconds. If the target type is lambda, the default is 35 seconds.
          */
     var HealthCheckIntervalSeconds: js.UndefOr[HealthCheckIntervalSeconds] = js.undefined
     /**
@@ -342,7 +348,7 @@ object ELBv2Ns extends js.Object {
          */
     var HealthCheckProtocol: js.UndefOr[ProtocolEnum] = js.undefined
     /**
-         * The amount of time, in seconds, during which no response from a target means a failed health check. For Application Load Balancers, the range is 2–60 seconds and the default is 5 seconds. For Network Load Balancers, this is 10 seconds for TCP and HTTPS health checks and 6 seconds for HTTP health checks.
+         * The amount of time, in seconds, during which no response from a target means a failed health check. For Application Load Balancers, the range is 2–120 seconds and the default is 5 seconds if the target type is instance or ip and 30 seconds if the target type is lambda. For Network Load Balancers, this is 10 seconds for TCP and HTTPS health checks and 6 seconds for HTTP health checks.
          */
     var HealthCheckTimeoutSeconds: js.UndefOr[HealthCheckTimeoutSeconds] = js.undefined
     /**
@@ -358,15 +364,15 @@ object ELBv2Ns extends js.Object {
          */
     var Name: TargetGroupName
     /**
-         * The port on which the targets receive traffic. This port is used unless you specify a port override when registering the target.
+         * The port on which the targets receive traffic. This port is used unless you specify a port override when registering the target. If the target is a Lambda function, this parameter does not apply.
          */
-    var Port: Port
+    var Port: js.UndefOr[Port] = js.undefined
     /**
-         * The protocol to use for routing traffic to the targets. For Application Load Balancers, the supported protocols are HTTP and HTTPS. For Network Load Balancers, the supported protocol is TCP.
+         * The protocol to use for routing traffic to the targets. For Application Load Balancers, the supported protocols are HTTP and HTTPS. For Network Load Balancers, the supported protocol is TCP. If the target is a Lambda function, this parameter does not apply.
          */
-    var Protocol: ProtocolEnum
+    var Protocol: js.UndefOr[ProtocolEnum] = js.undefined
     /**
-         * The type of target that you must specify when registering targets with this target group. The possible values are instance (targets are specified by instance ID) or ip (targets are specified by IP address). The default is instance. You can't specify targets for a target group using both instance IDs and IP addresses. If the target type is ip, specify IP addresses from the subnets of the virtual private cloud (VPC) for the target group, the RFC 1918 range (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16), and the RFC 6598 range (100.64.0.0/10). You can't specify publicly routable IP addresses.
+         * The type of target that you must specify when registering targets with this target group. You can't specify targets for a target group using more than one target type.    instance - Targets are specified by instance ID. This is the default value.    ip - Targets are specified by IP address. You can specify IP addresses from the subnets of the virtual private cloud (VPC) for the target group, the RFC 1918 range (10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16), and the RFC 6598 range (100.64.0.0/10). You can't specify publicly routable IP addresses.    lambda - The target groups contains a single Lambda function.  
          */
     var TargetType: js.UndefOr[TargetTypeEnum] = js.undefined
     /**
@@ -374,9 +380,9 @@ object ELBv2Ns extends js.Object {
          */
     var UnhealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined
     /**
-         * The identifier of the virtual private cloud (VPC).
+         * The identifier of the virtual private cloud (VPC). If the target is a Lambda function, this parameter does not apply.
          */
-    var VpcId: VpcId
+    var VpcId: js.UndefOr[VpcId] = js.undefined
   }
   
   
@@ -579,6 +585,16 @@ object ELBv2Ns extends js.Object {
   }
   
   
+  trait DescribeProvisionedCapacityInput extends js.Object {
+    var LoadBalancerArn: LoadBalancerArn
+  }
+  
+  
+  trait DescribeProvisionedCapacityOutput extends js.Object {
+    var ProvisionedCapacity: js.UndefOr[ProvisionedCapacity] = js.undefined
+  }
+  
+  
   trait DescribeRulesInput extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the listener.
@@ -743,6 +759,22 @@ object ELBv2Ns extends js.Object {
   }
   
   
+  trait HostHeaderConditionConfig extends js.Object {
+    var Values: js.UndefOr[ListOfString] = js.undefined
+  }
+  
+  
+  trait HttpHeaderConditionConfig extends js.Object {
+    var HttpHeaderName: js.UndefOr[HttpHeaderConditionName] = js.undefined
+    var Values: js.UndefOr[ListOfString] = js.undefined
+  }
+  
+  
+  trait HttpRequestMethodConditionConfig extends js.Object {
+    var Values: js.UndefOr[HttpRequestMethodList] = js.undefined
+  }
+  
+  
   trait Limit extends js.Object {
     /**
          * The maximum value of the limit.
@@ -885,11 +917,11 @@ object ELBv2Ns extends js.Object {
   
   trait ModifyListenerInput extends js.Object {
     /**
-         * [HTTPS listeners] The default SSL server certificate. You must provide exactly one default certificate. To create a certificate list, use AddListenerCertificates.
+         * [HTTPS listeners] The default SSL server certificate. You must provide exactly one certificate. Set CertificateArn to the certificate ARN but do not set IsDefault. To create a certificate list, use AddListenerCertificates.
          */
     var Certificates: js.UndefOr[CertificateList] = js.undefined
     /**
-         * The actions for the default rule. The rule must include one forward action or one or more fixed-response actions. If the action type is forward, you can specify a single target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you can use an identity provider that is OpenID Connect (OIDC) compliant to authenticate users as they access your application. [HTTPS listener] If the action type is authenticate-cognito, you can use Amazon Cognito to authenticate users as they access your application. [Application Load Balancer] If the action type is redirect, you can redirect HTTP and HTTPS requests. [Application Load Balancer] If the action type is fixed-response, you can return a custom HTTP response.
+         * The actions for the default rule. The rule must include one forward action or one or more fixed-response actions. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listener] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
          */
     var DefaultActions: js.UndefOr[Actions] = js.undefined
     /**
@@ -939,9 +971,20 @@ object ELBv2Ns extends js.Object {
   }
   
   
+  trait ModifyProvisionedCapacityInput extends js.Object {
+    var LoadBalancerArn: LoadBalancerArn
+    var MinimumLBCapacityUnits: LBCapacityUnits
+  }
+  
+  
+  trait ModifyProvisionedCapacityOutput extends js.Object {
+    var ProvisionedCapacity: js.UndefOr[ProvisionedCapacity] = js.undefined
+  }
+  
+  
   trait ModifyRuleInput extends js.Object {
     /**
-         * The actions. If the action type is forward, you can specify a single target group. If the action type is authenticate-oidc, you can use an identity provider that is OpenID Connect (OIDC) compliant to authenticate users as they access your application. If the action type is authenticate-cognito, you can use Amazon Cognito to authenticate users as they access your application.
+         * The actions. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listener] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
          */
     var Actions: js.UndefOr[Actions] = js.undefined
     /**
@@ -985,7 +1028,11 @@ object ELBv2Ns extends js.Object {
   
   trait ModifyTargetGroupInput extends js.Object {
     /**
-         * The approximate amount of time, in seconds, between health checks of an individual target. For Application Load Balancers, the range is 5–300 seconds. For Network Load Balancers, the supported values are 10 or 30 seconds.
+         * Indicates whether health checks are enabled.
+         */
+    var HealthCheckEnabled: js.UndefOr[HealthCheckEnabled] = js.undefined
+    /**
+         * The approximate amount of time, in seconds, between health checks of an individual target. For Application Load Balancers, the range is 5–300 seconds. For Network Load Balancers, the supported values are 10 or 30 seconds. If the protocol of the target group is TCP, you can't modify this setting.
          */
     var HealthCheckIntervalSeconds: js.UndefOr[HealthCheckIntervalSeconds] = js.undefined
     /**
@@ -997,11 +1044,11 @@ object ELBv2Ns extends js.Object {
          */
     var HealthCheckPort: js.UndefOr[HealthCheckPort] = js.undefined
     /**
-         * The protocol the load balancer uses when performing health checks on targets. The TCP protocol is supported only if the protocol of the target group is TCP.
+         * The protocol the load balancer uses when performing health checks on targets. The TCP protocol is supported only if the protocol of the target group is TCP. If the protocol of the target group is TCP, you can't modify this setting.
          */
     var HealthCheckProtocol: js.UndefOr[ProtocolEnum] = js.undefined
     /**
-         * [HTTP/HTTPS health checks] The amount of time, in seconds, during which no response means a failed health check.
+         * [HTTP/HTTPS health checks] The amount of time, in seconds, during which no response means a failed health check. If the protocol of the target group is TCP, you can't modify this setting.
          */
     var HealthCheckTimeoutSeconds: js.UndefOr[HealthCheckTimeoutSeconds] = js.undefined
     /**
@@ -1009,7 +1056,7 @@ object ELBv2Ns extends js.Object {
          */
     var HealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined
     /**
-         * [HTTP/HTTPS health checks] The HTTP codes to use when checking for a successful response from a target.
+         * [HTTP/HTTPS health checks] The HTTP codes to use when checking for a successful response from a target. If the protocol of the target group is TCP, you can't modify this setting.
          */
     var Matcher: js.UndefOr[Matcher] = js.undefined
     /**
@@ -1028,6 +1075,24 @@ object ELBv2Ns extends js.Object {
          * Information about the modified target group.
          */
     var TargetGroups: js.UndefOr[TargetGroups] = js.undefined
+  }
+  
+  
+  trait PathPatternConditionConfig extends js.Object {
+    var Values: js.UndefOr[ListOfString] = js.undefined
+  }
+  
+  
+  trait ProvisionedCapacity extends js.Object {
+    var DecreasesRemaining: js.UndefOr[DecreasesRemaining] = js.undefined
+    var LastModifiedTime: js.UndefOr[LastModifiedTime] = js.undefined
+    var MinimumLBCapacityUnits: js.UndefOr[LBCapacityUnits] = js.undefined
+    var Status: js.UndefOr[ProvisionedCapacityStatus] = js.undefined
+  }
+  
+  
+  trait QueryStringConditionConfig extends js.Object {
+    var Values: js.UndefOr[ListOfString] = js.undefined
   }
   
   
@@ -1065,7 +1130,7 @@ object ELBv2Ns extends js.Object {
          */
     var TargetGroupArn: TargetGroupArn
     /**
-         * The targets.
+         * The targets. To register a target by instance ID, specify the instance ID. To register a target by IP address, specify the IP address. To register a Lambda function, specify the ARN of the Lambda function.
          */
     var Targets: TargetDescriptions
   }
@@ -1076,7 +1141,7 @@ object ELBv2Ns extends js.Object {
   
   trait RemoveListenerCertificatesInput extends js.Object {
     /**
-         * The certificate to remove. You can specify one certificate per call.
+         * The certificate to remove. You can specify one certificate per call. Set CertificateArn to the certificate ARN but do not set IsDefault.
          */
     var Certificates: CertificateList
     /**
@@ -1133,6 +1198,11 @@ object ELBv2Ns extends js.Object {
          * The name of the field. The possible values are host-header and path-pattern.
          */
     var Field: js.UndefOr[ConditionFieldName] = js.undefined
+    var HostHeaderConfig: js.UndefOr[HostHeaderConditionConfig] = js.undefined
+    var HttpHeaderConfig: js.UndefOr[HttpHeaderConditionConfig] = js.undefined
+    var HttpRequestMethodConfig: js.UndefOr[HttpRequestMethodConditionConfig] = js.undefined
+    var PathPatternConfig: js.UndefOr[PathPatternConditionConfig] = js.undefined
+    var QueryStringConfig: js.UndefOr[QueryStringConditionConfig] = js.undefined
     /**
          * The condition value. If the field name is host-header, you can specify a single host name (for example, my.example.com). A host name is case insensitive, can be up to 128 characters in length, and can contain any of the following characters. You can include up to three wildcard characters.   A-Z, a-z, 0-9   - .   * (matches 0 or more characters)   ? (matches exactly 1 character)   If the field name is path-pattern, you can specify a single path pattern (for example, /img/ *). A path pattern is case-sensitive, can be up to 128 characters in length, and can contain any of the following characters. You can include up to three wildcard characters.   A-Z, a-z, 0-9   _ - . $ / ~ " ' @ : +   &amp; (using &amp;amp;)   * (matches 0 or more characters)   ? (matches exactly 1 character)  
          */
@@ -1253,6 +1323,7 @@ object ELBv2Ns extends js.Object {
          * [Network Load Balancers] The allocation ID of the Elastic IP address.
          */
     var AllocationId: js.UndefOr[AllocationId] = js.undefined
+    var StaticIp: js.UndefOr[StaticIp] = js.undefined
     /**
          * The ID of the subnet.
          */
@@ -1286,11 +1357,11 @@ object ELBv2Ns extends js.Object {
   
   trait TargetDescription extends js.Object {
     /**
-         * An Availability Zone or all. This determines whether the target receives traffic from the load balancer nodes in the specified Availability Zone or from all enabled Availability Zones for the load balancer. This parameter is not supported if the target type of the target group is instance. If the IP address is in a subnet of the VPC for the target group, the Availability Zone is automatically detected and this parameter is optional. If the IP address is outside the VPC, this parameter is required. With an Application Load Balancer, if the IP address is outside the VPC for the target group, the only supported value is all.
+         * An Availability Zone or all. This determines whether the target receives traffic from the load balancer nodes in the specified Availability Zone or from all enabled Availability Zones for the load balancer. This parameter is not supported if the target type of the target group is instance. If the target type is ip and the IP address is in a subnet of the VPC for the target group, the Availability Zone is automatically detected and this parameter is optional. If the IP address is outside the VPC, this parameter is required. With an Application Load Balancer, if the target type is ip and the IP address is outside the VPC for the target group, the only supported value is all. If the target type is lambda, this parameter is optional and the only supported value is all.
          */
     var AvailabilityZone: js.UndefOr[ZoneName] = js.undefined
     /**
-         * The ID of the target. If the target type of the target group is instance, specify an instance ID. If the target type is ip, specify an IP address.
+         * The ID of the target. If the target type of the target group is instance, specify an instance ID. If the target type is ip, specify an IP address. If the target type is lambda, specify the ARN of the Lambda function.
          */
     var Id: TargetId
     /**
@@ -1301,6 +1372,10 @@ object ELBv2Ns extends js.Object {
   
   
   trait TargetGroup extends js.Object {
+    /**
+         * Indicates whether health checks are enabled.
+         */
+    var HealthCheckEnabled: js.UndefOr[HealthCheckEnabled] = js.undefined
     /**
          * The approximate amount of time, in seconds, between health checks of an individual target.
          */
@@ -1366,7 +1441,7 @@ object ELBv2Ns extends js.Object {
   
   trait TargetGroupAttribute extends js.Object {
     /**
-         * The name of the attribute. The following attributes are supported by both Application Load Balancers and Network Load Balancers:    deregistration_delay.timeout_seconds - The amount of time, in seconds, for Elastic Load Balancing to wait before changing the state of a deregistering target from draining to unused. The range is 0-3600 seconds. The default value is 300 seconds.   The following attributes are supported by only Application Load Balancers:    slow_start.duration_seconds - The time period, in seconds, during which a newly registered target receives a linearly increasing share of the traffic to the target group. After this time period ends, the target receives its full share of traffic. The range is 30-900 seconds (15 minutes). Slow start mode is disabled by default.    stickiness.enabled - Indicates whether sticky sessions are enabled. The value is true or false. The default is false.    stickiness.type - The type of sticky sessions. The possible value is lb_cookie.    stickiness.lb_cookie.duration_seconds - The time period, in seconds, during which requests from a client should be routed to the same target. After this time period expires, the load balancer-generated cookie is considered stale. The range is 1 second to 1 week (604800 seconds). The default value is 1 day (86400 seconds).   The following attributes are supported by only Network Load Balancers:    proxy_protocol_v2.enabled - Indicates whether Proxy Protocol version 2 is enabled. The value is true or false. The default is false.  
+         * The name of the attribute. The following attribute is supported by both Application Load Balancers and Network Load Balancers:    deregistration_delay.timeout_seconds - The amount of time, in seconds, for Elastic Load Balancing to wait before changing the state of a deregistering target from draining to unused. The range is 0-3600 seconds. The default value is 300 seconds. If the target is a Lambda function, this attribute is not supported.   The following attributes are supported by Application Load Balancers if the target is not a Lambda function:    slow_start.duration_seconds - The time period, in seconds, during which a newly registered target receives a linearly increasing share of the traffic to the target group. After this time period ends, the target receives its full share of traffic. The range is 30-900 seconds (15 minutes). Slow start mode is disabled by default.    stickiness.enabled - Indicates whether sticky sessions are enabled. The value is true or false. The default is false.    stickiness.type - The type of sticky sessions. The possible value is lb_cookie.    stickiness.lb_cookie.duration_seconds - The time period, in seconds, during which requests from a client should be routed to the same target. After this time period expires, the load balancer-generated cookie is considered stale. The range is 1 second to 1 week (604800 seconds). The default value is 1 day (86400 seconds).   The following attribute is supported only if the target is a Lambda function.    lambda.multi_value_headers.enabled - Indicates whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. The value is true or false. The default is false. If the value is false and the request contains a duplicate header field name or query parameter key, the load balancer uses the last value sent by the client.   The following attribute is supported only by Network Load Balancers:    proxy_protocol_v2.enabled - Indicates whether Proxy Protocol version 2 is enabled. The value is true or false. The default is false.  
          */
     var Key: js.UndefOr[TargetGroupAttributeKey] = js.undefined
     /**
@@ -1382,7 +1457,7 @@ object ELBv2Ns extends js.Object {
          */
     var Description: js.UndefOr[Description] = js.undefined
     /**
-         * The reason code. If the target state is healthy, a reason code is not provided. If the target state is initial, the reason code can be one of the following values:    Elb.RegistrationInProgress - The target is in the process of being registered with the load balancer.    Elb.InitialHealthChecking - The load balancer is still sending the target the minimum number of health checks required to determine its health status.   If the target state is unhealthy, the reason code can be one of the following values:    Target.ResponseCodeMismatch - The health checks did not return an expected HTTP code.    Target.Timeout - The health check requests timed out.    Target.FailedHealthChecks - The health checks failed because the connection to the target timed out, the target response was malformed, or the target failed the health check for an unknown reason.    Elb.InternalError - The health checks failed due to an internal error.   If the target state is unused, the reason code can be one of the following values:    Target.NotRegistered - The target is not registered with the target group.    Target.NotInUse - The target group is not used by any load balancer or the target is in an Availability Zone that is not enabled for its load balancer.    Target.IpUnusable - The target IP address is reserved for use by a load balancer.    Target.InvalidState - The target is in the stopped or terminated state.   If the target state is draining, the reason code can be the following value:    Target.DeregistrationInProgress - The target is in the process of being deregistered and the deregistration delay period has not expired.  
+         * The reason code. If the target state is healthy, a reason code is not provided. If the target state is initial, the reason code can be one of the following values:    Elb.RegistrationInProgress - The target is in the process of being registered with the load balancer.    Elb.InitialHealthChecking - The load balancer is still sending the target the minimum number of health checks required to determine its health status.   If the target state is unhealthy, the reason code can be one of the following values:    Target.ResponseCodeMismatch - The health checks did not return an expected HTTP code.    Target.Timeout - The health check requests timed out.    Target.FailedHealthChecks - The health checks failed because the connection to the target timed out, the target response was malformed, or the target failed the health check for an unknown reason.    Elb.InternalError - The health checks failed due to an internal error.   If the target state is unused, the reason code can be one of the following values:    Target.NotRegistered - The target is not registered with the target group.    Target.NotInUse - The target group is not used by any load balancer or the target is in an Availability Zone that is not enabled for its load balancer.    Target.IpUnusable - The target IP address is reserved for use by a load balancer.    Target.InvalidState - The target is in the stopped or terminated state.   If the target state is draining, the reason code can be the following value:    Target.DeregistrationInProgress - The target is in the process of being deregistered and the deregistration delay period has not expired.   If the target state is unavailable, the reason code can be the following value:    Target.HealthCheckDisabled - Health checks are disabled for the target group.  
          */
     var Reason: js.UndefOr[TargetHealthReasonEnum] = js.undefined
     /**
@@ -1413,11 +1488,11 @@ object ELBv2Ns extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-       * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates.
+       * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
        */
     def addListenerCertificates(): awsDashSdkLib.libRequestMod.Request[AddListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates.
+       * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
        */
     def addListenerCertificates(
       callback: js.Function2[
@@ -1427,11 +1502,11 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AddListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates.
+       * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
        */
     def addListenerCertificates(params: AddListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[AddListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates.
+       * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
        */
     def addListenerCertificates(
       params: AddListenerCertificatesInput,
@@ -1869,6 +1944,35 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeLoadBalancersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * 
+       */
+    def describeProvisionedCapacity(): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * 
+       */
+    def describeProvisionedCapacity(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeProvisionedCapacityOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * 
+       */
+    def describeProvisionedCapacity(params: DescribeProvisionedCapacityInput): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * 
+       */
+    def describeProvisionedCapacity(
+      params: DescribeProvisionedCapacityInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeProvisionedCapacityOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Describes the specified rules or the rules for the specified listener. You must specify either a listener or one or more rules.
        */
     def describeRules(): awsDashSdkLib.libRequestMod.Request[DescribeRulesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2101,6 +2205,35 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyLoadBalancerAttributesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * 
+       */
+    def modifyProvisionedCapacity(): awsDashSdkLib.libRequestMod.Request[ModifyProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * 
+       */
+    def modifyProvisionedCapacity(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyProvisionedCapacityOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * 
+       */
+    def modifyProvisionedCapacity(params: ModifyProvisionedCapacityInput): awsDashSdkLib.libRequestMod.Request[ModifyProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * 
+       */
+    def modifyProvisionedCapacity(
+      params: ModifyProvisionedCapacityInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyProvisionedCapacityOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Modifies the specified rule. Any existing properties that you do not modify retain their current values. To modify the actions for the default rule, use ModifyListener.
        */
     def modifyRule(): awsDashSdkLib.libRequestMod.Request[ModifyRuleOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2188,11 +2321,11 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyTargetGroupAttributesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Registers the specified targets with the specified target group. You can register targets by instance ID or by IP address. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
+       * Registers the specified targets with the specified target group. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
        */
     def registerTargets(): awsDashSdkLib.libRequestMod.Request[RegisterTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Registers the specified targets with the specified target group. You can register targets by instance ID or by IP address. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
+       * Registers the specified targets with the specified target group. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
        */
     def registerTargets(
       callback: js.Function2[
@@ -2202,11 +2335,11 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RegisterTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Registers the specified targets with the specified target group. You can register targets by instance ID or by IP address. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
+       * Registers the specified targets with the specified target group. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
        */
     def registerTargets(params: RegisterTargetsInput): awsDashSdkLib.libRequestMod.Request[RegisterTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Registers the specified targets with the specified target group. You can register targets by instance ID or by IP address. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
+       * Registers the specified targets with the specified target group. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
        */
     def registerTargets(
       params: RegisterTargetsInput,
@@ -2584,7 +2717,7 @@ object ELBv2Ns extends js.Object {
   
   val TypesNs: this.type = js.native
   type ActionOrder = scala.Double
-  type ActionTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.forward | awsDashSdkLib.awsDashSdkLibStrings.`authenticate-oidc` | awsDashSdkLib.awsDashSdkLibStrings.`authenticate-cognito` | awsDashSdkLib.awsDashSdkLibStrings.redirect | awsDashSdkLib.awsDashSdkLibStrings.`fixed-response` | java.lang.String
+  type ActionTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.forward | awsDashSdkLib.awsDashSdkLibStrings.`authenticate-oidc` | awsDashSdkLib.awsDashSdkLibStrings.redirect | awsDashSdkLib.awsDashSdkLibStrings.`authenticate-cognito` | awsDashSdkLib.awsDashSdkLibStrings.`fixed-response` | java.lang.String
   type Actions = js.Array[Action]
   type AllocationId = java.lang.String
   type AuthenticateCognitoActionAuthenticationRequestParamName = java.lang.String
@@ -2607,6 +2740,7 @@ object ELBv2Ns extends js.Object {
   type AuthenticateOidcActionSessionCookieName = java.lang.String
   type AuthenticateOidcActionSessionTimeout = scala.Double
   type AuthenticateOidcActionTokenEndpoint = java.lang.String
+  type AuthenticateOidcActionUseExistingClientSecret = scala.Boolean
   type AuthenticateOidcActionUserInfoEndpoint = java.lang.String
   type AvailabilityZones = js.Array[AvailabilityZone]
   type CanonicalHostedZoneId = java.lang.String
@@ -2619,19 +2753,26 @@ object ELBv2Ns extends js.Object {
   type ConditionFieldName = java.lang.String
   type CreatedTime = stdLib.Date
   type DNSName = java.lang.String
+  type DecreasesRemaining = scala.Double
   type Default = scala.Boolean
   type Description = java.lang.String
   type FixedResponseActionContentType = java.lang.String
   type FixedResponseActionMessage = java.lang.String
   type FixedResponseActionStatusCode = java.lang.String
+  type HealthCheckEnabled = scala.Boolean
   type HealthCheckIntervalSeconds = scala.Double
   type HealthCheckPort = java.lang.String
   type HealthCheckThresholdCount = scala.Double
   type HealthCheckTimeoutSeconds = scala.Double
   type HttpCode = java.lang.String
+  type HttpHeaderConditionName = java.lang.String
+  type HttpRequestMethodEnum = awsDashSdkLib.awsDashSdkLibStrings.GET | awsDashSdkLib.awsDashSdkLibStrings.HEAD | awsDashSdkLib.awsDashSdkLibStrings.POST | awsDashSdkLib.awsDashSdkLibStrings.PUT | awsDashSdkLib.awsDashSdkLibStrings.DELETE | awsDashSdkLib.awsDashSdkLibStrings.CONNECT | awsDashSdkLib.awsDashSdkLibStrings.OPTIONS | awsDashSdkLib.awsDashSdkLibStrings.TRACE | awsDashSdkLib.awsDashSdkLibStrings.PATCH | java.lang.String
+  type HttpRequestMethodList = js.Array[HttpRequestMethodEnum]
   type IpAddress = java.lang.String
   type IpAddressType = awsDashSdkLib.awsDashSdkLibStrings.ipv4 | awsDashSdkLib.awsDashSdkLibStrings.dualstack | java.lang.String
   type IsDefault = scala.Boolean
+  type LBCapacityUnits = scala.Double
+  type LastModifiedTime = stdLib.Date
   type Limits = js.Array[Limit]
   type ListOfString = js.Array[StringValue]
   type ListenerArn = java.lang.String
@@ -2655,7 +2796,8 @@ object ELBv2Ns extends js.Object {
   type PageSize = scala.Double
   type Path = java.lang.String
   type Port = scala.Double
-  type ProtocolEnum = awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.HTTPS | awsDashSdkLib.awsDashSdkLibStrings.TCP | java.lang.String
+  type ProtocolEnum = awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.HTTPS | awsDashSdkLib.awsDashSdkLibStrings.TCP | awsDashSdkLib.awsDashSdkLibStrings.TLS | awsDashSdkLib.awsDashSdkLibStrings.UDP | java.lang.String
+  type ProvisionedCapacityStatus = awsDashSdkLib.awsDashSdkLibStrings.disabled | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.provisioned | awsDashSdkLib.awsDashSdkLibStrings.`pre-warmed` | java.lang.String
   type RedirectActionHost = java.lang.String
   type RedirectActionPath = java.lang.String
   type RedirectActionPort = java.lang.String
@@ -2678,6 +2820,7 @@ object ELBv2Ns extends js.Object {
   type SslProtocol = java.lang.String
   type SslProtocols = js.Array[SslProtocol]
   type StateReason = java.lang.String
+  type StaticIp = scala.Boolean
   type String = java.lang.String
   type StringValue = java.lang.String
   type SubnetId = java.lang.String
@@ -2698,10 +2841,10 @@ object ELBv2Ns extends js.Object {
   type TargetGroupNames = js.Array[TargetGroupName]
   type TargetGroups = js.Array[TargetGroup]
   type TargetHealthDescriptions = js.Array[TargetHealthDescription]
-  type TargetHealthReasonEnum = awsDashSdkLib.awsDashSdkLibStrings.ElbDOTRegistrationInProgress | awsDashSdkLib.awsDashSdkLibStrings.ElbDOTInitialHealthChecking | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTResponseCodeMismatch | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTTimeout | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTFailedHealthChecks | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTNotRegistered | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTNotInUse | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTDeregistrationInProgress | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTInvalidState | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTIpUnusable | awsDashSdkLib.awsDashSdkLibStrings.ElbDOTInternalError | java.lang.String
+  type TargetHealthReasonEnum = awsDashSdkLib.awsDashSdkLibStrings.ElbDOTRegistrationInProgress | awsDashSdkLib.awsDashSdkLibStrings.ElbDOTInitialHealthChecking | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTResponseCodeMismatch | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTTimeout | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTFailedHealthChecks | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTNotRegistered | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTNotInUse | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTDeregistrationInProgress | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTInvalidState | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTIpUnusable | awsDashSdkLib.awsDashSdkLibStrings.TargetDOTHealthCheckDisabled | awsDashSdkLib.awsDashSdkLibStrings.ElbDOTInternalError | java.lang.String
   type TargetHealthStateEnum = awsDashSdkLib.awsDashSdkLibStrings.initial | awsDashSdkLib.awsDashSdkLibStrings.healthy | awsDashSdkLib.awsDashSdkLibStrings.unhealthy | awsDashSdkLib.awsDashSdkLibStrings.unused | awsDashSdkLib.awsDashSdkLibStrings.draining | awsDashSdkLib.awsDashSdkLibStrings.unavailable | java.lang.String
   type TargetId = java.lang.String
-  type TargetTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.instance | awsDashSdkLib.awsDashSdkLibStrings.ip | java.lang.String
+  type TargetTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.instance | awsDashSdkLib.awsDashSdkLibStrings.ip | awsDashSdkLib.awsDashSdkLibStrings.lambda | java.lang.String
   type VpcId = java.lang.String
   type ZoneName = java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-12-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcDiForwardUnderscoreRefModMembers extends js.Object {
   def forwardRef(forwardRefFn: ForwardRefFn): atAngularCoreLib.srcTypeMod.Type[_] = js.native
-  def resolveForwardRef(`type`: js.Any): js.Any = js.native
+  def resolveForwardRef[T](`type`: T): T = js.native
 }
 

@@ -1,6 +1,37 @@
 [debug] PhaseRunner.scala:78 Success [id => ldclient-js, phase => typescript] 
-[warn ] PhaseRunner.scala:64 Failed because of, [Base64 => java.lang.IllegalArgumentException: requirement failed: /LICENSE is not an relative path] [id => ldclient-js, phase => typescript] 
-[debug] PhaseRunner.scala:82 Failure, [Base64 => java.lang.IllegalArgumentException: requirement failed: /LICENSE is not an relative path] [id => ldclient-js, phase => typescript] 
-[debug] PhaseRunner.scala:82 Failure, [Base64 => java.lang.IllegalArgumentException: requirement failed: /LICENSE is not an relative path] [id => ldclient-js, phase => scala.js] 
-[debug] PhaseRunner.scala:82 Failure, [Base64 => java.lang.IllegalArgumentException: requirement failed: /LICENSE is not an relative path] [id => ldclient-js, phase => build] 
-[debug] PhaseRunner.scala:82 Failure, [Base64 => java.lang.IllegalArgumentException: requirement failed: /LICENSE is not an relative path] [id => ldclient-js, phase => publish] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/ldclient-js/typings.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/ldclient-js),TsIdentLibrarySimple(ldclient-js)),TsIdentModule(None,List(ldclient-js))) [id => ldclient-js, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(ldclient-js) [id => ldclient-js, phase => typescript] 
+[info ] ExpandCallables.scala:57 Expanded on into 1 methods [id => ldclient-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ldclient-js) / TsDeclInterface(LDClient))] 
+[info ] ExpandCallables.scala:57 Expanded off into 1 methods [id => ldclient-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ldclient-js) / TsDeclInterface(LDClient))] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Initialize) [id => ldclient-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ldclient-js) / TsDeclVar(default) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Current) [id => ldclient-js, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ldclient-js) / TsDeclInterface(LDFlagChangeset) / TsMemberIndex() / TsTypeObject())] 
+[debug] PhaseRunner.scala:78 Success [id => ldclient-js, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(ldclient-js) [id => ldclient-js, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => ldclient-js, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:211 Built ldclient-js in 454 ms [id => ldclient-js, phase => build] 
+[info ] Phase3CompileBloop.scala:221 published local, [/home/tso/.ivy2/local/com.scalablytyped/ldclient-js_sjs0.6_2.12/2.7.5-1ddc59/jars/ldclient-js_sjs0.6_2.12.jar, /home/tso/.ivy2/local/com.scalablytyped/ldclient-js_sjs0.6_2.12/2.7.5-1ddc59/srcs/ldclient-js_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/com.scalablytyped/ldclient-js_sjs0.6_2.12/2.7.5-1ddc59/ivys/ivy.xml, /home/tso/.ivy2/local/com.scalablytyped/ldclient-js_sjs0.6_2.12/2.7.5-1ddc59/poms/ldclient-js_sjs0.6_2.12.pom] [id => ldclient-js, phase => build] 
+[debug] PhaseRunner.scala:78 Success [id => ldclient-js, phase => build] 
+[error] PhaseRes.scala:75 Caught exception [id => ldclient-js, phase => publish] java.util.concurrent.ExecutionException: java.net.ConnectException: connection timed out: api.bintray.com/75.126.118.184:443
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.abort(NettyResponseFuture.java:229)
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.onFutureFailure(NettyConnectListener.java:107)
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.operationComplete(NettyConnectListener.java:115)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:409)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:400)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:362)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:142)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: connection timed out: api.bintray.com/75.126.118.184:443
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.onFutureFailure(NettyConnectListener.java:103)
+	... 13 more
+Caused by: org.jboss.netty.channel.ConnectTimeoutException: connection timed out: api.bintray.com/75.126.118.184:443
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:139)
+	... 8 more
+
+[debug] PhaseRunner.scala:82 Failure, [ldclient-js => java.util.concurrent.ExecutionException: java.net.ConnectException: connection timed out: api.bintray.com/75.126.118.184:443] [id => ldclient-js, phase => publish] 

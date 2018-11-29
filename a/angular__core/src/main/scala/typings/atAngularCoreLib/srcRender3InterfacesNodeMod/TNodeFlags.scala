@@ -21,6 +21,11 @@ object TNodeFlags extends js.Object {
   sealed trait DirectiveStartingIndexShift
     extends atAngularCoreLib.srcRender3InterfacesNodeMod.TNodeFlags
   
+  /** This bit is set if the node has any directives that contain [class properties */
+  @js.native
+  sealed trait hasClassInput
+    extends atAngularCoreLib.srcRender3InterfacesNodeMod.TNodeFlags
+  
   /** This bit is set if the node has any content queries */
   @js.native
   sealed trait hasContentQuery
@@ -37,7 +42,8 @@ object TNodeFlags extends js.Object {
     extends atAngularCoreLib.srcRender3InterfacesNodeMod.TNodeFlags
   
   /* 4095 */ val DirectiveCountMask: DirectiveCountMask with scala.Double = js.native
-  /* 15 */ val DirectiveStartingIndexShift: DirectiveStartingIndexShift with scala.Double = js.native
+  /* 16 */ val DirectiveStartingIndexShift: DirectiveStartingIndexShift with scala.Double = js.native
+  /* 32768 */ val hasClassInput: hasClassInput with scala.Double = js.native
   /* 16384 */ val hasContentQuery: hasContentQuery with scala.Double = js.native
   /* 4096 */ val isComponent: isComponent with scala.Double = js.native
   /* 8192 */ val isProjected: isProjected with scala.Double = js.native

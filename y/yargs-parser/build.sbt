@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "yargs-parser"
-version := "11.0-dt-20181013Z-35a207"
+version := "11.0-dt-20181013Z-900c68"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "yargs" % "12.0-dt-20180929Z-7a332c",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "yargs" % "12.0-dt-20180929Z-9dda57",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

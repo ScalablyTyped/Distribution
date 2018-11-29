@@ -142,6 +142,8 @@
  * })
  * class MyModule {}
  * ```
+ *
+ * @publicApi
  */
 /**
  * @license
@@ -163,7 +165,14 @@
  *
  * By default, this is true, unless a user calls `enableProdMode` before calling this.
  *
- * @experimental APIs related to application bootstrap are currently under review.
+ * @publicApi
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
  */
 /**
  * @license
@@ -208,7 +217,7 @@
  * An example of a `Type` is `MyCustomComponent` class, which in JavaScript is be represented by
  * the `MyCustomComponent` constructor function.
  *
- *
+ * @publicApi
  */
 /**
  * @license
@@ -227,7 +236,7 @@
 /**
  * @description Represents the version of Angular
  *
- *
+ * @publicApi
  */
 /**
  * @license
@@ -256,47 +265,6 @@
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Base class for Angular Views, provides change detection functionality.
- * A change-detection tree collects all views that are to be checked for changes.
- * Use the methods to add and remove views from the tree, initiate change-detection,
- * and explicitly mark views as _dirty_, meaning that they have changed and need to be rerendered.
- *
- * @usageNotes
- *
- * The following examples demonstrate how to modify default change-detection behavior
- * to perform explicit detection when needed.
- *
- * ### Use `markForCheck()` with `CheckOnce` strategy
- *
- * The following example sets the `OnPush` change-detection strategy for a component
- * (`CheckOnce`, rather than the default `CheckAlways`), then forces a second check
- * after an interval. See [live demo](http://plnkr.co/edit/GC512b?p=preview).
- *
- * <code-example path="core/ts/change_detect/change-detection.ts"
- * region="mark-for-check"></code-example>
- *
- * ### Detach change detector to limit how often check occurs
- *
- * The following example defines a component with a large list of read-only data
- * that is expected to change constantly, many times per second.
- * To improve performance, we want to check and update the list
- * less often than the changes actually occur. To do that, we detach
- * the component's change detector and perform an explicit local check every five seconds.
- *
- * <code-example path="core/ts/change_detect/change-detection.ts" region="detach"></code-example>
- *
- *
- * ### Reattaching a detached component
- *
- * The following example creates a component displaying live data.
- * The component detaches its change detector from the main change detector tree
- * when the `live` property is set to false, and reattaches it when the property
- * becomes true.
- *
- * <code-example path="core/ts/change_detect/change-detection.ts" region="reattach"></code-example>
- *
  */
 /**
  * @license
@@ -309,6 +277,7 @@
  * The strategy that the default change detector uses to detect changes.
  * When set, takes effect the next time change detection is triggered.
  *
+ * @publicApi
  */
 /**
  * @license
@@ -341,7 +310,14 @@
  *
  * Invoking `{{ 'ok' | repeat:3 }}` in a template produces `okokok`.
  *
+ * @publicApi
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
  *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
  */
 /**
  * @license
@@ -394,6 +370,8 @@
  */
 /**
  * Type of the Inject decorator / constructor function.
+ *
+ * @publicApi
  */
 /**
  * @license
@@ -437,7 +415,9 @@
  * `Key` should not be created directly. {@link ReflectiveInjector} creates keys automatically when
  * resolving
  * providers.
+ *
  * @deprecated No replacement
+ * @publicApi
  */
 /**
  * @license
@@ -487,18 +467,6 @@
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
- */
-/**
- * A wrapper around a native element inside of a View.
- *
- * An `ElementRef` is backed by a render-specific element. In the browser, this is usually a DOM
- * element.
- *
- * @security Permitting direct access to the DOM can make your application more vulnerable to
- * XSS attacks. Carefully review any use of `ElementRef` in your code. For more detail, see the
- * [Security Guide](http://g.co/ng/security).
- *
- *
  */
 /**
  * @license
@@ -598,7 +566,10 @@
  *
  * @usageNotes
  * ### Example
+ *
  * {@example core/ts/metadata/encapsulation.ts region='longform'}
+ *
+ * @publicApi
  */
 /**
  * @license
@@ -617,7 +588,7 @@
 /**
  * A scope function for the Web Tracing Framework (WTF).
  *
- * @experimental
+ * @publicApi
  */
 /**
  * @license
@@ -689,6 +660,35 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * This file introduces series of globally accessible debug tools
+ * to allow for the Angular debugging story to function.
+ *
+ * To see this in action run the following command:
+ *
+ *   bazel run --define=compile=aot
+ *   //packages/core/test/bundling/todo:devserver
+ *
+ *  Then load `localhost:5432` and start using the console tools.
+ */
+/**
+ * This value reflects the property on the window where the dev
+ * tools are patched (window.ng).
+ * */
 /**
  * @license
  * Copyright Google Inc. All Rights Reserved.
@@ -744,6 +744,13 @@
  * @param index Pipe index where the pipe will be stored.
  * @param pipeName The name of the pipe
  * @returns T the instance of the pipe.
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
  */
 /**
  * @license
@@ -828,8 +835,18 @@
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * Sanitizes the given unsafe, untrusted HTML fragment, and returns HTML text that is safe to add to
- * the DOM in a browser environment.
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
  */
 /**
  * @license
@@ -852,7 +869,7 @@
  *
  * See DomSanitizer for more details on security in Angular applications.
  *
- *
+ * @publicApi
  */
 /**
  * @license
@@ -1090,6 +1107,16 @@
  * found in the LICENSE file at https://angular.io/license
  */
 /**
+ * `I18nMutateOpCode` defines OpCodes for `I18nMutateOpCodes` array.
+ *
+ * OpCodes contain three parts:
+ *  1) Parent node index offset.
+ *  2) Reference node index offset.
+ *  3) The OpCode to execute.
+ *
+ * See: `I18nCreateOpCodes` for example of usage.
+ */
+/**
  * @license
  * Copyright Google Inc. All Rights Reserved.
  *
@@ -1179,11 +1206,42 @@
  * found in the LICENSE file at https://angular.io/license
  */
 /**
+ * Function used to sanitize the value before writing it into the renderer.
+ */
+/**
  * @license
  * Copyright Google Inc. All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * A set of interfaces which are shared between `@angular/core` and `@angular/compiler` to allow
+ * for late binding of `@angular/compiler` for JIT purposes.
+ *
+ * This file has two copies. Please ensure that they are in sync:
+ *  - packages/compiler/src/compiler_facade_interface.ts             (master)
+ *  - packages/core/src/render3/jit/compiler_facade_interface.ts     (copy)
+ *
+ * Please ensure that the two files are in sync using this command:
+ * ```
+ * cp packages/compiler/src/compiler_facade_interface.ts \
+ *    packages/core/src/render3/jit/compiler_facade_interface.ts
+ * ```
  */
 /**
  * @license

@@ -22,7 +22,7 @@ trait MonacoDiffEditorProps extends MonacoEditorBaseProps {
   /**
      * Refer to Monaco interface {monaco.editor.IDiffEditorConstructionOptions}.
      */
-  var options: js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.editorNs.IDiffEditorConstructionOptions] = js.undefined
+  var options: js.UndefOr[js.Any] = js.undefined
   /**
      * The original value to compare against.
      */

@@ -25,11 +25,6 @@ object setNs extends js.Object {
     /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
     scala.Boolean
   ] = js.native
-  val filter: js.Function2[
-    /* x */ stdLib.Set[js.Any], 
-    /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    stdLib.Set[js.Any]
-  ] = js.native
   val fromArray: js.Function1[
     /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     js.Function1[/* as */ fpDashTsLib.libArrayMod.Global.Array[js.Any], stdLib.Set[js.Any]]
@@ -65,11 +60,6 @@ object setNs extends js.Object {
   val member: js.Function1[
     /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     js.Function1[/* x */ stdLib.Set[js.Any], js.Function1[/* a */ js.Any, scala.Boolean]]
-  ] = js.native
-  val partition: js.Function2[
-    /* x */ stdLib.Set[js.Any], 
-    /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    fpDashTsLib.libCompactableMod.Separated[stdLib.Set[js.Any], stdLib.Set[js.Any]]
   ] = js.native
   val partitionMap: js.Function2[
     /* SL */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
@@ -111,5 +101,11 @@ object setNs extends js.Object {
     /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     js.Function2[/* x */ stdLib.Set[js.Any], /* y */ stdLib.Set[js.Any], stdLib.Set[js.Any]]
   ] = js.native
+  def filter[A](x: stdLib.Set[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): stdLib.Set[A] = js.native
+  @JSName("filter")
+  def filter_ABA[A, B /* <: A */](x: stdLib.Set[A], predicate: fpDashTsLib.libFunctionMod.Refinement[A, B]): stdLib.Set[B] = js.native
+  def partition[A](x: stdLib.Set[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libCompactableMod.Separated[stdLib.Set[A], stdLib.Set[A]] = js.native
+  @JSName("partition")
+  def partition_ABA[A, B /* <: A */](x: stdLib.Set[A], predicate: fpDashTsLib.libFunctionMod.Refinement[A, B]): fpDashTsLib.libCompactableMod.Separated[stdLib.Set[A], stdLib.Set[B]] = js.native
 }
 

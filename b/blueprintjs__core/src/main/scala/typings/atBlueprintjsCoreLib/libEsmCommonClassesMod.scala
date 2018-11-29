@@ -33,7 +33,6 @@ object libEsmCommonClassesMod extends js.Object {
   val COLLAPSE: java.lang.String = js.native
   val COLLAPSE_BODY: java.lang.String = js.native
   val COLLAPSIBLE_LIST: java.lang.String = js.native
-  val CONDENSED: java.lang.String = js.native
   val CONTEXT_MENU: java.lang.String = js.native
   val CONTEXT_MENU_POPOVER_TARGET: java.lang.String = js.native
   val CONTROL: java.lang.String = js.native
@@ -78,6 +77,7 @@ object libEsmCommonClassesMod extends js.Object {
   val HTML_SELECT: java.lang.String = js.native
   val HTML_TABLE: java.lang.String = js.native
   val HTML_TABLE_BORDERED: java.lang.String = js.native
+  val HTML_TABLE_CONDENSED: java.lang.String = js.native
   val HTML_TABLE_STRIPED: java.lang.String = js.native
   val ICON: java.lang.String = js.native
   val ICON_LARGE: java.lang.String = js.native

@@ -52,14 +52,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name.
+     * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def attachDisk(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachDiskResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name.
+     * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def attachDisk(
     callback: js.Function2[
@@ -72,14 +72,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name.
+     * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def attachDisk(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachDiskRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachDiskResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name.
+     * Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def attachDisk(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachDiskRequest,
@@ -93,14 +93,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available.
+     * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available. The attach instances to load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def attachInstancesToLoadBalancer(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachInstancesToLoadBalancerResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available.
+     * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available. The attach instances to load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def attachInstancesToLoadBalancer(
     callback: js.Function2[
@@ -113,14 +113,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available.
+     * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available. The attach instances to load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def attachInstancesToLoadBalancer(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachInstancesToLoadBalancerRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachInstancesToLoadBalancerResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available.
+     * Attaches one or more Lightsail instances to a load balancer. After some time, the instances are attached to the load balancer and the health check status is available. The attach instances to load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def attachInstancesToLoadBalancer(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachInstancesToLoadBalancerRequest,
@@ -134,14 +134,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate operation with the non-attached certificate, and it will replace the existing one and become the attached certificate.
+     * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate operation with the non-attached certificate, and it will replace the existing one and become the attached certificate. The attach load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def attachLoadBalancerTlsCertificate(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachLoadBalancerTlsCertificateResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate operation with the non-attached certificate, and it will replace the existing one and become the attached certificate.
+     * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate operation with the non-attached certificate, and it will replace the existing one and become the attached certificate. The attach load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def attachLoadBalancerTlsCertificate(
     callback: js.Function2[
@@ -154,14 +154,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate operation with the non-attached certificate, and it will replace the existing one and become the attached certificate.
+     * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate operation with the non-attached certificate, and it will replace the existing one and become the attached certificate. The attach load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def attachLoadBalancerTlsCertificate(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachLoadBalancerTlsCertificateRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachLoadBalancerTlsCertificateResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate operation with the non-attached certificate, and it will replace the existing one and become the attached certificate.
+     * Attaches a Transport Layer Security (TLS) certificate to your load balancer. TLS is just an updated, more secure version of Secure Socket Layer (SSL). Once you create and validate your certificate, you can attach it to your load balancer. You can also use this API to rotate the certificates on your account. Use the AttachLoadBalancerTlsCertificate operation with the non-attached certificate, and it will replace the existing one and become the attached certificate. The attach load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def attachLoadBalancerTlsCertificate(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.AttachLoadBalancerTlsCertificateRequest,
@@ -216,14 +216,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Closes the public ports on a specific Amazon Lightsail instance.
+     * Closes the public ports on a specific Amazon Lightsail instance. The close instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def closeInstancePublicPorts(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CloseInstancePublicPortsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Closes the public ports on a specific Amazon Lightsail instance.
+     * Closes the public ports on a specific Amazon Lightsail instance. The close instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def closeInstancePublicPorts(
     callback: js.Function2[
@@ -236,14 +236,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Closes the public ports on a specific Amazon Lightsail instance.
+     * Closes the public ports on a specific Amazon Lightsail instance. The close instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def closeInstancePublicPorts(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CloseInstancePublicPortsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CloseInstancePublicPortsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Closes the public ports on a specific Amazon Lightsail instance.
+     * Closes the public ports on a specific Amazon Lightsail instance. The close instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def closeInstancePublicPorts(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CloseInstancePublicPortsRequest,
@@ -257,14 +257,96 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a block storage disk that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail.
+     * Copies an instance or disk snapshot from one AWS Region to another in Amazon Lightsail.
+     */
+  def copySnapshot(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.CopySnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Copies an instance or disk snapshot from one AWS Region to another in Amazon Lightsail.
+     */
+  def copySnapshot(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.CopySnapshotResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.CopySnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Copies an instance or disk snapshot from one AWS Region to another in Amazon Lightsail.
+     */
+  def copySnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CopySnapshotRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.CopySnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Copies an instance or disk snapshot from one AWS Region to another in Amazon Lightsail.
+     */
+  def copySnapshot(
+    params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CopySnapshotRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.CopySnapshotResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.CopySnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an AWS CloudFormation stack, which creates a new Amazon EC2 instance from an exported Amazon Lightsail snapshot. This operation results in a CloudFormation stack record that can be used to track the AWS CloudFormation stack created. Use the get cloud formation stack records operation to get a list of the CloudFormation stacks created.  Wait until after your new Amazon EC2 instance is created before running the create cloud formation stack operation again with the same export snapshot record. 
+     */
+  def createCloudFormationStack(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateCloudFormationStackResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an AWS CloudFormation stack, which creates a new Amazon EC2 instance from an exported Amazon Lightsail snapshot. This operation results in a CloudFormation stack record that can be used to track the AWS CloudFormation stack created. Use the get cloud formation stack records operation to get a list of the CloudFormation stacks created.  Wait until after your new Amazon EC2 instance is created before running the create cloud formation stack operation again with the same export snapshot record. 
+     */
+  def createCloudFormationStack(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateCloudFormationStackResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateCloudFormationStackResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an AWS CloudFormation stack, which creates a new Amazon EC2 instance from an exported Amazon Lightsail snapshot. This operation results in a CloudFormation stack record that can be used to track the AWS CloudFormation stack created. Use the get cloud formation stack records operation to get a list of the CloudFormation stacks created.  Wait until after your new Amazon EC2 instance is created before running the create cloud formation stack operation again with the same export snapshot record. 
+     */
+  def createCloudFormationStack(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateCloudFormationStackRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateCloudFormationStackResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an AWS CloudFormation stack, which creates a new Amazon EC2 instance from an exported Amazon Lightsail snapshot. This operation results in a CloudFormation stack record that can be used to track the AWS CloudFormation stack created. Use the get cloud formation stack records operation to get a list of the CloudFormation stacks created.  Wait until after your new Amazon EC2 instance is created before running the create cloud formation stack operation again with the same export snapshot record. 
+     */
+  def createCloudFormationStack(
+    params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateCloudFormationStackRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateCloudFormationStackResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateCloudFormationStackResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a block storage disk that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail. The create disk operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDisk(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a block storage disk that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail.
+     * Creates a block storage disk that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail. The create disk operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDisk(
     callback: js.Function2[
@@ -277,14 +359,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a block storage disk that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail.
+     * Creates a block storage disk that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail. The create disk operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDisk(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a block storage disk that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail.
+     * Creates a block storage disk that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail. The create disk operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDisk(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskRequest,
@@ -298,14 +380,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a block storage disk from a disk snapshot that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail.
+     * Creates a block storage disk from a disk snapshot that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail. The create disk from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by diskSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createDiskFromSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskFromSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a block storage disk from a disk snapshot that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail.
+     * Creates a block storage disk from a disk snapshot that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail. The create disk from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by diskSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createDiskFromSnapshot(
     callback: js.Function2[
@@ -318,14 +400,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a block storage disk from a disk snapshot that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail.
+     * Creates a block storage disk from a disk snapshot that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail. The create disk from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by diskSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createDiskFromSnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskFromSnapshotRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskFromSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a block storage disk from a disk snapshot that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail.
+     * Creates a block storage disk from a disk snapshot that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail. The create disk from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by diskSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createDiskFromSnapshot(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskFromSnapshotRequest,
@@ -339,14 +421,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending.
+     * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDiskSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending.
+     * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDiskSnapshot(
     callback: js.Function2[
@@ -359,14 +441,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending.
+     * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDiskSnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskSnapshotRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending.
+     * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDiskSnapshot(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDiskSnapshotRequest,
@@ -380,14 +462,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a domain resource for the specified domain (e.g., example.com).
+     * Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDomain(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a domain resource for the specified domain (e.g., example.com).
+     * Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDomain(
     callback: js.Function2[
@@ -400,14 +482,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a domain resource for the specified domain (e.g., example.com).
+     * Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDomain(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a domain resource for the specified domain (e.g., example.com).
+     * Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createDomain(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainRequest,
@@ -421,14 +503,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record.
+     * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record. The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def createDomainEntry(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainEntryResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record.
+     * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record. The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def createDomainEntry(
     callback: js.Function2[
@@ -441,14 +523,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record.
+     * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record. The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def createDomainEntry(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainEntryRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainEntryResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record.
+     * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record. The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def createDomainEntry(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainEntryRequest,
@@ -462,14 +544,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot.
+     * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createInstanceSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstanceSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot.
+     * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createInstanceSnapshot(
     callback: js.Function2[
@@ -482,14 +564,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot.
+     * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createInstanceSnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstanceSnapshotRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstanceSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot.
+     * Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createInstanceSnapshot(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstanceSnapshotRequest,
@@ -503,14 +585,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates one or more Amazon Lightsail virtual private servers, or instances. Create instances using active blueprints. Inactive blueprints are listed to support customers with existing instances but are not necessarily available for launch of new instances. Blueprints are marked inactive when they become outdated due to operating system updates or new application releases. Use the get blueprints operation to return a list of available blueprints.
+     * Creates one or more Amazon Lightsail virtual private servers, or instances. Create instances using active blueprints. Inactive blueprints are listed to support customers with existing instances but are not necessarily available for launch of new instances. Blueprints are marked inactive when they become outdated due to operating system updates or new application releases. Use the get blueprints operation to return a list of available blueprints. The create instances operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createInstances(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstancesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates one or more Amazon Lightsail virtual private servers, or instances. Create instances using active blueprints. Inactive blueprints are listed to support customers with existing instances but are not necessarily available for launch of new instances. Blueprints are marked inactive when they become outdated due to operating system updates or new application releases. Use the get blueprints operation to return a list of available blueprints.
+     * Creates one or more Amazon Lightsail virtual private servers, or instances. Create instances using active blueprints. Inactive blueprints are listed to support customers with existing instances but are not necessarily available for launch of new instances. Blueprints are marked inactive when they become outdated due to operating system updates or new application releases. Use the get blueprints operation to return a list of available blueprints. The create instances operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createInstances(
     callback: js.Function2[
@@ -523,14 +605,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates one or more Amazon Lightsail virtual private servers, or instances. Create instances using active blueprints. Inactive blueprints are listed to support customers with existing instances but are not necessarily available for launch of new instances. Blueprints are marked inactive when they become outdated due to operating system updates or new application releases. Use the get blueprints operation to return a list of available blueprints.
+     * Creates one or more Amazon Lightsail virtual private servers, or instances. Create instances using active blueprints. Inactive blueprints are listed to support customers with existing instances but are not necessarily available for launch of new instances. Blueprints are marked inactive when they become outdated due to operating system updates or new application releases. Use the get blueprints operation to return a list of available blueprints. The create instances operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createInstances(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstancesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstancesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates one or more Amazon Lightsail virtual private servers, or instances. Create instances using active blueprints. Inactive blueprints are listed to support customers with existing instances but are not necessarily available for launch of new instances. Blueprints are marked inactive when they become outdated due to operating system updates or new application releases. Use the get blueprints operation to return a list of available blueprints.
+     * Creates one or more Amazon Lightsail virtual private servers, or instances. Create instances using active blueprints. Inactive blueprints are listed to support customers with existing instances but are not necessarily available for launch of new instances. Blueprints are marked inactive when they become outdated due to operating system updates or new application releases. Use the get blueprints operation to return a list of available blueprints. The create instances operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createInstances(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstancesRequest,
@@ -544,14 +626,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Uses a specific snapshot as a blueprint for creating one or more new instances that are based on that identical configuration.
+     * Uses a specific snapshot as a blueprint for creating one or more new instances that are based on that identical configuration. The create instances from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by instanceSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createInstancesFromSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstancesFromSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Uses a specific snapshot as a blueprint for creating one or more new instances that are based on that identical configuration.
+     * Uses a specific snapshot as a blueprint for creating one or more new instances that are based on that identical configuration. The create instances from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by instanceSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createInstancesFromSnapshot(
     callback: js.Function2[
@@ -564,14 +646,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Uses a specific snapshot as a blueprint for creating one or more new instances that are based on that identical configuration.
+     * Uses a specific snapshot as a blueprint for creating one or more new instances that are based on that identical configuration. The create instances from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by instanceSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createInstancesFromSnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstancesFromSnapshotRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstancesFromSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Uses a specific snapshot as a blueprint for creating one or more new instances that are based on that identical configuration.
+     * Uses a specific snapshot as a blueprint for creating one or more new instances that are based on that identical configuration. The create instances from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by instanceSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createInstancesFromSnapshot(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateInstancesFromSnapshotRequest,
@@ -585,14 +667,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an SSH key pair.
+     * Creates an SSH key pair. The create key pair operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createKeyPair(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateKeyPairResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an SSH key pair.
+     * Creates an SSH key pair. The create key pair operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createKeyPair(
     callback: js.Function2[
@@ -605,14 +687,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an SSH key pair.
+     * Creates an SSH key pair. The create key pair operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createKeyPair(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateKeyPairRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateKeyPairResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an SSH key pair.
+     * Creates an SSH key pair. The create key pair operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createKeyPair(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateKeyPairRequest,
@@ -626,14 +708,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation.
+     * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation. The create load balancer operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createLoadBalancer(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateLoadBalancerResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation.
+     * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation. The create load balancer operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createLoadBalancer(
     callback: js.Function2[
@@ -646,14 +728,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation.
+     * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation. The create load balancer operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createLoadBalancer(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateLoadBalancerRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateLoadBalancerResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation.
+     * Creates a Lightsail load balancer. To learn more about deciding whether to load balance your application, see Configure your Lightsail instances for load balancing. You can create up to 5 load balancers per AWS Region in your account. When you create a load balancer, you can specify a unique name and port settings. To change additional load balancer settings, use the UpdateLoadBalancerAttribute operation. The create load balancer operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createLoadBalancer(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateLoadBalancerRequest,
@@ -667,14 +749,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL).
+     * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The create load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def createLoadBalancerTlsCertificate(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateLoadBalancerTlsCertificateResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL).
+     * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The create load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def createLoadBalancerTlsCertificate(
     callback: js.Function2[
@@ -687,14 +769,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL).
+     * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The create load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def createLoadBalancerTlsCertificate(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateLoadBalancerTlsCertificateRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateLoadBalancerTlsCertificateResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL).
+     * Creates a Lightsail load balancer TLS certificate. TLS is just an updated, more secure version of Secure Socket Layer (SSL). The create load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def createLoadBalancerTlsCertificate(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateLoadBalancerTlsCertificateRequest,
@@ -708,14 +790,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new database in Amazon Lightsail.
+     * Creates a new database in Amazon Lightsail. The create relational database operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabase(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new database in Amazon Lightsail.
+     * Creates a new database in Amazon Lightsail. The create relational database operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabase(
     callback: js.Function2[
@@ -728,14 +810,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new database in Amazon Lightsail.
+     * Creates a new database in Amazon Lightsail. The create relational database operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabase(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new database in Amazon Lightsail.
+     * Creates a new database in Amazon Lightsail. The create relational database operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabase(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseRequest,
@@ -749,14 +831,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan.
+     * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan. The create relational database from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by relationalDatabaseSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabaseFromSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseFromSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan.
+     * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan. The create relational database from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by relationalDatabaseSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabaseFromSnapshot(
     callback: js.Function2[
@@ -769,14 +851,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan.
+     * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan. The create relational database from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by relationalDatabaseSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabaseFromSnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseFromSnapshotRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseFromSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan.
+     * Creates a new database from an existing database snapshot in Amazon Lightsail. You can create a new database from a snapshot in if something goes wrong with your original database, or to change it to a different plan, such as a high availability or standard plan. The create relational database from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by relationalDatabaseSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabaseFromSnapshot(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseFromSnapshotRequest,
@@ -790,14 +872,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database.
+     * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database. The create relational database snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabaseSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database.
+     * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database. The create relational database snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabaseSnapshot(
     callback: js.Function2[
@@ -810,14 +892,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database.
+     * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database. The create relational database snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabaseSnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseSnapshotRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database.
+     * Creates a snapshot of your database in Amazon Lightsail. You can use snapshots for backups, to make copies of a database, and to save data before deleting a database. The create relational database snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
      */
   def createRelationalDatabaseSnapshot(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateRelationalDatabaseSnapshotRequest,
@@ -831,14 +913,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes. 
+     * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes.  The delete disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDisk(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDiskResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes. 
+     * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes.  The delete disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDisk(
     callback: js.Function2[
@@ -851,14 +933,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes. 
+     * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes.  The delete disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDisk(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDiskRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDiskResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes. 
+     * Deletes the specified block storage disk. The disk must be in the available state (not attached to a Lightsail instance).  The disk may remain in the deleting state for several minutes.  The delete disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDisk(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDiskRequest,
@@ -872,14 +954,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk.
+     * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk. The delete disk snapshot operation supports tag-based access control via resource tags applied to the resource identified by diskSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDiskSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDiskSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk.
+     * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk. The delete disk snapshot operation supports tag-based access control via resource tags applied to the resource identified by diskSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDiskSnapshot(
     callback: js.Function2[
@@ -892,14 +974,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk.
+     * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk. The delete disk snapshot operation supports tag-based access control via resource tags applied to the resource identified by diskSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDiskSnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDiskSnapshotRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDiskSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk.
+     * Deletes the specified disk snapshot. When you make periodic snapshots of a disk, the snapshots are incremental, and only the blocks on the device that have changed since your last snapshot are saved in the new snapshot. When you delete a snapshot, only the data not needed for any other snapshot is removed. So regardless of which prior snapshots have been deleted, all active snapshots will have access to all the information needed to restore the disk. The delete disk snapshot operation supports tag-based access control via resource tags applied to the resource identified by diskSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDiskSnapshot(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDiskSnapshotRequest,
@@ -913,14 +995,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified domain recordset and all of its domain records.
+     * Deletes the specified domain recordset and all of its domain records. The delete domain operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDomain(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDomainResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified domain recordset and all of its domain records.
+     * Deletes the specified domain recordset and all of its domain records. The delete domain operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDomain(
     callback: js.Function2[
@@ -933,14 +1015,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified domain recordset and all of its domain records.
+     * Deletes the specified domain recordset and all of its domain records. The delete domain operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDomain(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDomainRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDomainResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified domain recordset and all of its domain records.
+     * Deletes the specified domain recordset and all of its domain records. The delete domain operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDomain(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDomainRequest,
@@ -954,14 +1036,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific domain entry.
+     * Deletes a specific domain entry. The delete domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDomainEntry(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDomainEntryResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific domain entry.
+     * Deletes a specific domain entry. The delete domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDomainEntry(
     callback: js.Function2[
@@ -974,14 +1056,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific domain entry.
+     * Deletes a specific domain entry. The delete domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDomainEntry(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDomainEntryRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDomainEntryResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific domain entry.
+     * Deletes a specific domain entry. The delete domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def deleteDomainEntry(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteDomainEntryRequest,
@@ -995,14 +1077,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific Amazon Lightsail virtual private server, or instance.
+     * Deletes a specific Amazon Lightsail virtual private server, or instance. The delete instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def deleteInstance(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteInstanceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific Amazon Lightsail virtual private server, or instance.
+     * Deletes a specific Amazon Lightsail virtual private server, or instance. The delete instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def deleteInstance(
     callback: js.Function2[
@@ -1015,14 +1097,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific Amazon Lightsail virtual private server, or instance.
+     * Deletes a specific Amazon Lightsail virtual private server, or instance. The delete instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def deleteInstance(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteInstanceRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteInstanceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific Amazon Lightsail virtual private server, or instance.
+     * Deletes a specific Amazon Lightsail virtual private server, or instance. The delete instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def deleteInstance(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteInstanceRequest,
@@ -1036,14 +1118,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific snapshot of a virtual private server (or instance).
+     * Deletes a specific snapshot of a virtual private server (or instance). The delete instance snapshot operation supports tag-based access control via resource tags applied to the resource identified by instanceSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def deleteInstanceSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteInstanceSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific snapshot of a virtual private server (or instance).
+     * Deletes a specific snapshot of a virtual private server (or instance). The delete instance snapshot operation supports tag-based access control via resource tags applied to the resource identified by instanceSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def deleteInstanceSnapshot(
     callback: js.Function2[
@@ -1056,14 +1138,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific snapshot of a virtual private server (or instance).
+     * Deletes a specific snapshot of a virtual private server (or instance). The delete instance snapshot operation supports tag-based access control via resource tags applied to the resource identified by instanceSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def deleteInstanceSnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteInstanceSnapshotRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteInstanceSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific snapshot of a virtual private server (or instance).
+     * Deletes a specific snapshot of a virtual private server (or instance). The delete instance snapshot operation supports tag-based access control via resource tags applied to the resource identified by instanceSnapshotName. For more information, see the Lightsail Dev Guide.
      */
   def deleteInstanceSnapshot(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteInstanceSnapshotRequest,
@@ -1077,14 +1159,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific SSH key pair.
+     * Deletes a specific SSH key pair. The delete key pair operation supports tag-based access control via resource tags applied to the resource identified by keyPairName. For more information, see the Lightsail Dev Guide.
      */
   def deleteKeyPair(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKeyPairResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific SSH key pair.
+     * Deletes a specific SSH key pair. The delete key pair operation supports tag-based access control via resource tags applied to the resource identified by keyPairName. For more information, see the Lightsail Dev Guide.
      */
   def deleteKeyPair(
     callback: js.Function2[
@@ -1097,14 +1179,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific SSH key pair.
+     * Deletes a specific SSH key pair. The delete key pair operation supports tag-based access control via resource tags applied to the resource identified by keyPairName. For more information, see the Lightsail Dev Guide.
      */
   def deleteKeyPair(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKeyPairRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKeyPairResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a specific SSH key pair.
+     * Deletes a specific SSH key pair. The delete key pair operation supports tag-based access control via resource tags applied to the resource identified by keyPairName. For more information, see the Lightsail Dev Guide.
      */
   def deleteKeyPair(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKeyPairRequest,
@@ -1118,14 +1200,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again.
+     * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again. The delete load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def deleteLoadBalancer(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteLoadBalancerResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again.
+     * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again. The delete load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def deleteLoadBalancer(
     callback: js.Function2[
@@ -1138,14 +1220,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again.
+     * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again. The delete load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def deleteLoadBalancer(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteLoadBalancerRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteLoadBalancerResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again.
+     * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again. The delete load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def deleteLoadBalancer(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteLoadBalancerRequest,
@@ -1159,14 +1241,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes an SSL/TLS certificate associated with a Lightsail load balancer.
+     * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The delete load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def deleteLoadBalancerTlsCertificate(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteLoadBalancerTlsCertificateResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes an SSL/TLS certificate associated with a Lightsail load balancer.
+     * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The delete load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def deleteLoadBalancerTlsCertificate(
     callback: js.Function2[
@@ -1179,14 +1261,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes an SSL/TLS certificate associated with a Lightsail load balancer.
+     * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The delete load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def deleteLoadBalancerTlsCertificate(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteLoadBalancerTlsCertificateRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteLoadBalancerTlsCertificateResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes an SSL/TLS certificate associated with a Lightsail load balancer.
+     * Deletes an SSL/TLS certificate associated with a Lightsail load balancer. The delete load balancer tls certificate operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def deleteLoadBalancerTlsCertificate(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteLoadBalancerTlsCertificateRequest,
@@ -1200,14 +1282,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a database in Amazon Lightsail.
+     * Deletes a database in Amazon Lightsail. The delete relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def deleteRelationalDatabase(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a database in Amazon Lightsail.
+     * Deletes a database in Amazon Lightsail. The delete relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def deleteRelationalDatabase(
     callback: js.Function2[
@@ -1220,14 +1302,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a database in Amazon Lightsail.
+     * Deletes a database in Amazon Lightsail. The delete relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def deleteRelationalDatabase(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteRelationalDatabaseRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a database in Amazon Lightsail.
+     * Deletes a database in Amazon Lightsail. The delete relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def deleteRelationalDatabase(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteRelationalDatabaseRequest,
@@ -1241,14 +1323,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a database snapshot in Amazon Lightsail.
+     * Deletes a database snapshot in Amazon Lightsail. The delete relational database snapshot operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def deleteRelationalDatabaseSnapshot(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteRelationalDatabaseSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a database snapshot in Amazon Lightsail.
+     * Deletes a database snapshot in Amazon Lightsail. The delete relational database snapshot operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def deleteRelationalDatabaseSnapshot(
     callback: js.Function2[
@@ -1261,14 +1343,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a database snapshot in Amazon Lightsail.
+     * Deletes a database snapshot in Amazon Lightsail. The delete relational database snapshot operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def deleteRelationalDatabaseSnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteRelationalDatabaseSnapshotRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteRelationalDatabaseSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a database snapshot in Amazon Lightsail.
+     * Deletes a database snapshot in Amazon Lightsail. The delete relational database snapshot operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def deleteRelationalDatabaseSnapshot(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteRelationalDatabaseSnapshotRequest,
@@ -1282,14 +1364,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk.
+     * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk. The detach disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def detachDisk(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DetachDiskResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk.
+     * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk. The detach disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def detachDisk(
     callback: js.Function2[
@@ -1302,14 +1384,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk.
+     * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk. The detach disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def detachDisk(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DetachDiskRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DetachDiskResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk.
+     * Detaches a stopped block storage disk from a Lightsail instance. Make sure to unmount any file systems on the device within your operating system before stopping the instance and detaching the disk. The detach disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.
      */
   def detachDisk(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DetachDiskRequest,
@@ -1323,14 +1405,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer.
+     * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer. The detach instances from load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def detachInstancesFromLoadBalancer(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DetachInstancesFromLoadBalancerResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer.
+     * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer. The detach instances from load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def detachInstancesFromLoadBalancer(
     callback: js.Function2[
@@ -1343,14 +1425,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer.
+     * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer. The detach instances from load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def detachInstancesFromLoadBalancer(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DetachInstancesFromLoadBalancerRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DetachInstancesFromLoadBalancerResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer.
+     * Detaches the specified instances from a Lightsail load balancer. This operation waits until the instances are no longer needed before they are detached from the load balancer. The detach instances from load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def detachInstancesFromLoadBalancer(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DetachInstancesFromLoadBalancerRequest,
@@ -1443,6 +1525,47 @@ trait Lightsail
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DownloadDefaultKeyPairResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Exports a Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by sourceSnapshotName. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
+     */
+  def exportSnapshot(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.ExportSnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Exports a Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by sourceSnapshotName. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
+     */
+  def exportSnapshot(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.ExportSnapshotResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.ExportSnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Exports a Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by sourceSnapshotName. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
+     */
+  def exportSnapshot(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.ExportSnapshotRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.ExportSnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Exports a Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by sourceSnapshotName. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
+     */
+  def exportSnapshot(
+    params: awsDashSdkLib.clientsLightsailMod.LightsailNs.ExportSnapshotRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.ExportSnapshotResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.ExportSnapshotResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1566,6 +1689,47 @@ trait Lightsail
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.GetBundlesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the CloudFormation stack record created as a result of the create cloud formation stack operation. An AWS CloudFormation stack is used to create a new Amazon EC2 instance from an exported Lightsail snapshot.
+     */
+  def getCloudFormationStackRecords(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.GetCloudFormationStackRecordsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the CloudFormation stack record created as a result of the create cloud formation stack operation. An AWS CloudFormation stack is used to create a new Amazon EC2 instance from an exported Lightsail snapshot.
+     */
+  def getCloudFormationStackRecords(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.GetCloudFormationStackRecordsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.GetCloudFormationStackRecordsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the CloudFormation stack record created as a result of the create cloud formation stack operation. An AWS CloudFormation stack is used to create a new Amazon EC2 instance from an exported Lightsail snapshot.
+     */
+  def getCloudFormationStackRecords(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.GetCloudFormationStackRecordsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.GetCloudFormationStackRecordsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the CloudFormation stack record created as a result of the create cloud formation stack operation. An AWS CloudFormation stack is used to create a new Amazon EC2 instance from an exported Lightsail snapshot.
+     */
+  def getCloudFormationStackRecords(
+    params: awsDashSdkLib.clientsLightsailMod.LightsailNs.GetCloudFormationStackRecordsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.GetCloudFormationStackRecordsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.GetCloudFormationStackRecordsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1815,6 +1979,47 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Returns the export snapshot record created as a result of the export snapshot operation. An export snapshot record can be used to create a new Amazon EC2 instance and its related resources with the create cloud formation stack operation.
+     */
+  def getExportSnapshotRecords(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.GetExportSnapshotRecordsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the export snapshot record created as a result of the export snapshot operation. An export snapshot record can be used to create a new Amazon EC2 instance and its related resources with the create cloud formation stack operation.
+     */
+  def getExportSnapshotRecords(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.GetExportSnapshotRecordsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.GetExportSnapshotRecordsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the export snapshot record created as a result of the export snapshot operation. An export snapshot record can be used to create a new Amazon EC2 instance and its related resources with the create cloud formation stack operation.
+     */
+  def getExportSnapshotRecords(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.GetExportSnapshotRecordsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.GetExportSnapshotRecordsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the export snapshot record created as a result of the export snapshot operation. An export snapshot record can be used to create a new Amazon EC2 instance and its related resources with the create cloud formation stack operation.
+     */
+  def getExportSnapshotRecords(
+    params: awsDashSdkLib.clientsLightsailMod.LightsailNs.GetExportSnapshotRecordsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.GetExportSnapshotRecordsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.GetExportSnapshotRecordsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Returns information about a specific Amazon Lightsail instance, which is a virtual private server.
      */
   def getInstance(): awsDashSdkLib.libRequestMod.Request[
@@ -1856,14 +2061,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance.
+     * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance. The get instance access details operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def getInstanceAccessDetails(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.GetInstanceAccessDetailsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance.
+     * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance. The get instance access details operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def getInstanceAccessDetails(
     callback: js.Function2[
@@ -1876,14 +2081,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance.
+     * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance. The get instance access details operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def getInstanceAccessDetails(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.GetInstanceAccessDetailsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.GetInstanceAccessDetailsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance.
+     * Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance. The get instance access details operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def getInstanceAccessDetails(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.GetInstanceAccessDetailsRequest,
@@ -2799,14 +3004,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the current, previous, or pending versions of the master user password for a Lightsail database.
+     * Returns the current, previous, or pending versions of the master user password for a Lightsail database. The asdf operation GetRelationalDatabaseMasterUserPassword supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName.
      */
   def getRelationalDatabaseMasterUserPassword(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.GetRelationalDatabaseMasterUserPasswordResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the current, previous, or pending versions of the master user password for a Lightsail database.
+     * Returns the current, previous, or pending versions of the master user password for a Lightsail database. The asdf operation GetRelationalDatabaseMasterUserPassword supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName.
      */
   def getRelationalDatabaseMasterUserPassword(
     callback: js.Function2[
@@ -2819,7 +3024,7 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the current, previous, or pending versions of the master user password for a Lightsail database.
+     * Returns the current, previous, or pending versions of the master user password for a Lightsail database. The asdf operation GetRelationalDatabaseMasterUserPassword supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName.
      */
   def getRelationalDatabaseMasterUserPassword(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.GetRelationalDatabaseMasterUserPasswordRequest
@@ -2828,7 +3033,7 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the current, previous, or pending versions of the master user password for a Lightsail database.
+     * Returns the current, previous, or pending versions of the master user password for a Lightsail database. The asdf operation GetRelationalDatabaseMasterUserPassword supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName.
      */
   def getRelationalDatabaseMasterUserPassword(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.GetRelationalDatabaseMasterUserPasswordRequest,
@@ -3211,14 +3416,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds public ports to an Amazon Lightsail instance.
+     * Adds public ports to an Amazon Lightsail instance. The open instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def openInstancePublicPorts(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.OpenInstancePublicPortsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds public ports to an Amazon Lightsail instance.
+     * Adds public ports to an Amazon Lightsail instance. The open instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def openInstancePublicPorts(
     callback: js.Function2[
@@ -3231,14 +3436,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds public ports to an Amazon Lightsail instance.
+     * Adds public ports to an Amazon Lightsail instance. The open instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def openInstancePublicPorts(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.OpenInstancePublicPortsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.OpenInstancePublicPortsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds public ports to an Amazon Lightsail instance.
+     * Adds public ports to an Amazon Lightsail instance. The open instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def openInstancePublicPorts(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.OpenInstancePublicPortsRequest,
@@ -3293,14 +3498,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request.
+     * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request. The put instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def putInstancePublicPorts(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.PutInstancePublicPortsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request.
+     * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request. The put instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def putInstancePublicPorts(
     callback: js.Function2[
@@ -3313,14 +3518,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request.
+     * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request. The put instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def putInstancePublicPorts(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.PutInstancePublicPortsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.PutInstancePublicPortsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request.
+     * Sets the specified open ports for an Amazon Lightsail instance, and closes all ports for every protocol not included in the current request. The put instance public ports operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def putInstancePublicPorts(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.PutInstancePublicPortsRequest,
@@ -3334,14 +3539,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Restarts a specific instance. When your Amazon Lightsail instance is finished rebooting, Lightsail assigns a new public IP address. To use the same IP address after restarting, create a static IP address and attach it to the instance.
+     * Restarts a specific instance. When your Amazon Lightsail instance is finished rebooting, Lightsail assigns a new public IP address. To use the same IP address after restarting, create a static IP address and attach it to the instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def rebootInstance(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.RebootInstanceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Restarts a specific instance. When your Amazon Lightsail instance is finished rebooting, Lightsail assigns a new public IP address. To use the same IP address after restarting, create a static IP address and attach it to the instance.
+     * Restarts a specific instance. When your Amazon Lightsail instance is finished rebooting, Lightsail assigns a new public IP address. To use the same IP address after restarting, create a static IP address and attach it to the instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def rebootInstance(
     callback: js.Function2[
@@ -3354,14 +3559,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Restarts a specific instance. When your Amazon Lightsail instance is finished rebooting, Lightsail assigns a new public IP address. To use the same IP address after restarting, create a static IP address and attach it to the instance.
+     * Restarts a specific instance. When your Amazon Lightsail instance is finished rebooting, Lightsail assigns a new public IP address. To use the same IP address after restarting, create a static IP address and attach it to the instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def rebootInstance(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.RebootInstanceRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.RebootInstanceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Restarts a specific instance. When your Amazon Lightsail instance is finished rebooting, Lightsail assigns a new public IP address. To use the same IP address after restarting, create a static IP address and attach it to the instance.
+     * Restarts a specific instance. When your Amazon Lightsail instance is finished rebooting, Lightsail assigns a new public IP address. To use the same IP address after restarting, create a static IP address and attach it to the instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def rebootInstance(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.RebootInstanceRequest,
@@ -3375,14 +3580,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Restarts a specific database in Amazon Lightsail.
+     * Restarts a specific database in Amazon Lightsail. The reboot relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def rebootRelationalDatabase(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.RebootRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Restarts a specific database in Amazon Lightsail.
+     * Restarts a specific database in Amazon Lightsail. The reboot relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def rebootRelationalDatabase(
     callback: js.Function2[
@@ -3395,14 +3600,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Restarts a specific database in Amazon Lightsail.
+     * Restarts a specific database in Amazon Lightsail. The reboot relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def rebootRelationalDatabase(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.RebootRelationalDatabaseRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.RebootRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Restarts a specific database in Amazon Lightsail.
+     * Restarts a specific database in Amazon Lightsail. The reboot relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def rebootRelationalDatabase(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.RebootRelationalDatabaseRequest,
@@ -3457,14 +3662,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.
+     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation. The start instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def startInstance(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.StartInstanceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.
+     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation. The start instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def startInstance(
     callback: js.Function2[
@@ -3477,14 +3682,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.
+     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation. The start instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def startInstance(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.StartInstanceRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.StartInstanceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.
+     * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation. The start instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def startInstance(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.StartInstanceRequest,
@@ -3498,14 +3703,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation.
+     * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation. The start relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def startRelationalDatabase(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.StartRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation.
+     * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation. The start relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def startRelationalDatabase(
     callback: js.Function2[
@@ -3518,14 +3723,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation.
+     * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation. The start relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def startRelationalDatabase(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.StartRelationalDatabaseRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.StartRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation.
+     * Starts a specific database from a stopped state in Amazon Lightsail. To restart a database, use the reboot relational database operation. The start relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def startRelationalDatabase(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.StartRelationalDatabaseRequest,
@@ -3539,14 +3744,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a specific Amazon Lightsail instance that is currently running.
+     * Stops a specific Amazon Lightsail instance that is currently running. The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def stopInstance(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.StopInstanceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a specific Amazon Lightsail instance that is currently running.
+     * Stops a specific Amazon Lightsail instance that is currently running. The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def stopInstance(
     callback: js.Function2[
@@ -3559,14 +3764,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a specific Amazon Lightsail instance that is currently running.
+     * Stops a specific Amazon Lightsail instance that is currently running. The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def stopInstance(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.StopInstanceRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.StopInstanceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a specific Amazon Lightsail instance that is currently running.
+     * Stops a specific Amazon Lightsail instance that is currently running. The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
      */
   def stopInstance(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.StopInstanceRequest,
@@ -3580,14 +3785,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a specific database that is currently running in Amazon Lightsail.
+     * Stops a specific database that is currently running in Amazon Lightsail. The stop relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def stopRelationalDatabase(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.StopRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a specific database that is currently running in Amazon Lightsail.
+     * Stops a specific database that is currently running in Amazon Lightsail. The stop relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def stopRelationalDatabase(
     callback: js.Function2[
@@ -3600,14 +3805,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a specific database that is currently running in Amazon Lightsail.
+     * Stops a specific database that is currently running in Amazon Lightsail. The stop relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def stopRelationalDatabase(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.StopRelationalDatabaseRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.StopRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Stops a specific database that is currently running in Amazon Lightsail.
+     * Stops a specific database that is currently running in Amazon Lightsail. The stop relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def stopRelationalDatabase(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.StopRelationalDatabaseRequest,
@@ -3618,6 +3823,47 @@ trait Lightsail
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.StopRelationalDatabaseResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds one or more tags to the specified Amazon Lightsail resource. Each resource can have a maximum of 50 tags. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see the Lightsail Dev Guide. The tag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resourceName. For more information, see the Lightsail Dev Guide.
+     */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.TagResourceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds one or more tags to the specified Amazon Lightsail resource. Each resource can have a maximum of 50 tags. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see the Lightsail Dev Guide. The tag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resourceName. For more information, see the Lightsail Dev Guide.
+     */
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.TagResourceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.TagResourceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds one or more tags to the specified Amazon Lightsail resource. Each resource can have a maximum of 50 tags. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see the Lightsail Dev Guide. The tag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resourceName. For more information, see the Lightsail Dev Guide.
+     */
+  def tagResource(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.TagResourceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds one or more tags to the specified Amazon Lightsail resource. Each resource can have a maximum of 50 tags. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see the Lightsail Dev Guide. The tag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resourceName. For more information, see the Lightsail Dev Guide.
+     */
+  def tagResource(
+    params: awsDashSdkLib.clientsLightsailMod.LightsailNs.TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.TagResourceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.TagResourceResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -3662,14 +3908,55 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates a domain recordset after it is created.
+     * Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource. The untag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resourceName. For more information, see the Lightsail Dev Guide.
+     */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.UntagResourceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource. The untag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resourceName. For more information, see the Lightsail Dev Guide.
+     */
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.UntagResourceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.UntagResourceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource. The untag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resourceName. For more information, see the Lightsail Dev Guide.
+     */
+  def untagResource(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.UntagResourceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource. The untag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resourceName. For more information, see the Lightsail Dev Guide.
+     */
+  def untagResource(
+    params: awsDashSdkLib.clientsLightsailMod.LightsailNs.UntagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.UntagResourceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.UntagResourceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def updateDomainEntry(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateDomainEntryResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates a domain recordset after it is created.
+     * Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def updateDomainEntry(
     callback: js.Function2[
@@ -3682,14 +3969,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates a domain recordset after it is created.
+     * Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def updateDomainEntry(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateDomainEntryRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateDomainEntryResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates a domain recordset after it is created.
+     * Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
      */
   def updateDomainEntry(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateDomainEntryRequest,
@@ -3703,14 +3990,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates the specified attribute for a load balancer. You can only update one attribute at a time.
+     * Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def updateLoadBalancerAttribute(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateLoadBalancerAttributeResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates the specified attribute for a load balancer. You can only update one attribute at a time.
+     * Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def updateLoadBalancerAttribute(
     callback: js.Function2[
@@ -3723,14 +4010,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates the specified attribute for a load balancer. You can only update one attribute at a time.
+     * Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def updateLoadBalancerAttribute(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateLoadBalancerAttributeRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateLoadBalancerAttributeResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates the specified attribute for a load balancer. You can only update one attribute at a time.
+     * Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
      */
   def updateLoadBalancerAttribute(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateLoadBalancerAttributeRequest,
@@ -3744,14 +4031,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window.
+     * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window. The update relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def updateRelationalDatabase(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window.
+     * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window. The update relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def updateRelationalDatabase(
     callback: js.Function2[
@@ -3764,14 +4051,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window.
+     * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window. The update relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def updateRelationalDatabase(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateRelationalDatabaseRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateRelationalDatabaseResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window.
+     * Allows the update of one or more attributes of a database in Amazon Lightsail. Updates are applied immediately, or in cases where the updates could result in an outage, are applied during the database's predefined maintenance window. The update relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def updateRelationalDatabase(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateRelationalDatabaseRequest,
@@ -3785,14 +4072,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which paramater updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation.
+     * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which paramater updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def updateRelationalDatabaseParameters(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateRelationalDatabaseParametersResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which paramater updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation.
+     * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which paramater updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def updateRelationalDatabaseParameters(
     callback: js.Function2[
@@ -3805,14 +4092,14 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which paramater updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation.
+     * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which paramater updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def updateRelationalDatabaseParameters(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateRelationalDatabaseParametersRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateRelationalDatabaseParametersResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which paramater updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation.
+     * Allows the update of one or more parameters of a database in Amazon Lightsail. Parameter updates don't cause outages; therefore, their application is not subject to the preferred maintenance window. However, there are two ways in which paramater updates are applied: dynamic or pending-reboot. Parameters marked with a dynamic apply type are applied immediately. Parameters marked with a pending-reboot apply type are applied only after the database is rebooted using the reboot relational database operation. The update relational database parameters operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.
      */
   def updateRelationalDatabaseParameters(
     params: awsDashSdkLib.clientsLightsailMod.LightsailNs.UpdateRelationalDatabaseParametersRequest,

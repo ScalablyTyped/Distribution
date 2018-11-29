@@ -17,8 +17,8 @@ trait INavProps extends js.Object {
        */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated at v0.68.1 and will be removed at >= V1.0.0.
-       * @deprecated
+       * Deprecated at v0.68.1 and will be removed at \>= v1.0.0.
+       * @deprecated Removed at v1.0.0.
        **/
   var collapsedStateText: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -31,8 +31,8 @@ trait INavProps extends js.Object {
        */
   var expandButtonAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated at v0.68.1 and will be removed at >= V1.0.0.
-       * @deprecated
+       * Deprecated at v0.68.1 and will be removed at \>= v1.0.0.
+       * @deprecated Removed at v1.0.0.
        **/
   var expandedStateText: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -47,6 +47,15 @@ trait INavProps extends js.Object {
        * Indicates whether the navigation component renders on top of other content in the UI
        */
   var isOnTop: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+       * Render a custom link in place of the normal one.
+       * This replaces the entire button rather than simply button content
+       */
+  var linkAs: js.UndefOr[
+    atUifabricUtilitiesLib.libIComponentAsMod.IComponentAs[
+      officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButtonProps
+    ]
+  ] = js.undefined
   /**
        * Function callback invoked when a link in the navigation is clicked
        */

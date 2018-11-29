@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "prompt-sync-history"
-version := "1.0.1-dt-20180910Z-786a38"
+version := "1.0.1-dt-20180910Z-7db4f1"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "prompt-sync" % "4.1.4-dt-20180910Z-e57120",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "prompt-sync" % "4.1.4-dt-20180910Z-e0c449",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

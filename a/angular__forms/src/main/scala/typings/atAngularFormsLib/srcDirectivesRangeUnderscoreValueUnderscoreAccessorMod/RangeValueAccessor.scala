@@ -12,7 +12,16 @@ class RangeValueAccessor protected ()
   def this(_renderer: atAngularCoreLib.coreMod.Renderer2, _elementRef: atAngularCoreLib.coreMod.ElementRef[_]) = this()
   var _elementRef: js.Any = js.native
   var _renderer: js.Any = js.native
+  /**
+       * @description
+       * The registered callback function called when a change or input event occurs on the input
+       * element.
+       */
   def onChange(`_`: js.Any): scala.Unit = js.native
+  /**
+       * @description
+       * The registered callback function called when a blur event occurs on the input element.
+       */
   def onTouched(): scala.Unit = js.native
   /**
        * @description
@@ -49,6 +58,12 @@ class RangeValueAccessor protected ()
        */
   /* CompleteClass */
   override def registerOnChange(fn: js.Any): scala.Unit = js.native
+  /**
+       * @description
+       * Registers a function called when the control value changes.
+       *
+       * @param fn The callback function
+       */
   def registerOnChange(fn: js.Function1[/* _ */ scala.Double | scala.Null, scala.Unit]): scala.Unit = js.native
   /**
        * @description
@@ -83,7 +98,18 @@ class RangeValueAccessor protected ()
        */
   /* CompleteClass */
   override def registerOnTouched(fn: js.Any): scala.Unit = js.native
+  /**
+       * @description
+       * Registers a function called when the control is touched.
+       *
+       * @param fn The callback function
+       */
   def registerOnTouched(fn: js.Function0[scala.Unit]): scala.Unit = js.native
+  /**
+       * Sets the "disabled" property on the range input element.
+       *
+       * @param isDisabled The disabled value
+       */
   @JSName("setDisabledState")
   def setDisabledState_MRangeValueAccessor(isDisabled: scala.Boolean): scala.Unit = js.native
   /**

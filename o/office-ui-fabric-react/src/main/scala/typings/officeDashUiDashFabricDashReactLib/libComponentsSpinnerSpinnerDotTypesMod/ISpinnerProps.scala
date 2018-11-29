@@ -14,7 +14,7 @@ trait ISpinnerProps
   var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Politeness setting for label update announcement.
-       * @default polite
+       * @defaultvalue polite
        */
   var ariaLive: js.UndefOr[
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.assertive | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.polite | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.off
@@ -30,8 +30,13 @@ trait ISpinnerProps
        */
   var label: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The size of Spinner to render. { extraSmall, small, medium, large }
-       * @default SpinnerType.medium
+       * The position of the label in regards of the spinner animation.
+       * @defaultvalue SpinnerLabelPosition.bottom
+       */
+  var labelPosition: js.UndefOr[SpinnerLabelPosition] = js.undefined
+  /**
+       * The size of Spinner to render. \{ extraSmall, small, medium, large \}
+       * @defaultvalue SpinnerType.medium
        */
   var size: js.UndefOr[SpinnerSize] = js.undefined
   /**
@@ -45,8 +50,8 @@ trait ISpinnerProps
        */
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
-       * Deprecated and will be removed at >= 2.0.0. Use SpinnerSize instead.
-       * @deprecated
+       * Deprecated and will be removed at \>= 2.0.0. Use `SpinnerSize` instead.
+       * @deprecated Use `SpinnerSize` instead.
        */
   var `type`: js.UndefOr[SpinnerType] = js.undefined
 }

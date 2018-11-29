@@ -13,6 +13,10 @@ trait IReportHeader extends js.Object {
   var hostname: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /** ReportHeader runtimeVersion */
   var runtimeVersion: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /** ReportHeader schemaHash */
+  var schemaHash: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /** ReportHeader schemaTag */
+  var schemaTag: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /** ReportHeader service */
   var service: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /** ReportHeader serviceVersion */

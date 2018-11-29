@@ -7,20 +7,30 @@ import scala.scalajs.js.annotation._
 
 
 trait CollectionAggregationOptions extends js.Object {
-  // lets the server know if it can use disk to store
-  // temporary results for the aggregation (requires mongodb 2.6 >).
+  /**
+       * Lets the server know if it can use disk to store
+       * temporary results for the aggregation (requires mongodb 2.6 >).
+       */
   var allowDiskUse: js.UndefOr[scala.Boolean] = js.undefined
-  // Allow driver to bypass schema validation in MongoDB 3.2 or higher.
+  /**
+       * Allow driver to bypass schema validation in MongoDB 3.2 or higher.
+       */
   var bypassDocumentValidation: js.UndefOr[scala.Boolean] = js.undefined
   var collation: js.UndefOr[js.Object] = js.undefined
   var comment: js.UndefOr[java.lang.String] = js.undefined
-  // Return the query as cursor, on 2.6 > it returns as a real cursor
-  // on pre 2.6 it returns as an emulated cursor.
+  /**
+       * Return the query as cursor, on 2.6 > it returns as a real cursor
+       * on pre 2.6 it returns as an emulated cursor.
+       */
   var cursor: js.UndefOr[mongodbLib.Anon_BatchSize] = js.undefined
-  // Explain returns the aggregation execution plan (requires mongodb 2.6 >).
+  /**
+       * Explain returns the aggregation execution plan (requires mongodb 2.6 >).
+       */
   var explain: js.UndefOr[scala.Boolean] = js.undefined
-  // specifies a cumulative time limit in milliseconds for processing operations
-  // on the cursor. MongoDB interrupts the operation at the earliest following interrupt point.
+  /**
+       * specifies a cumulative time limit in milliseconds for processing operations
+       * on the cursor. MongoDB interrupts the operation at the earliest following interrupt point.
+       */
   var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   var promoteBuffers: js.UndefOr[scala.Boolean] = js.undefined
   var promoteLongs: js.UndefOr[scala.Boolean] = js.undefined

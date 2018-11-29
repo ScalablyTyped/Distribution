@@ -13,7 +13,7 @@ object pkcs12Ns extends js.Object {
     var asn1: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1
     var attributes: js.Any
     var cert: js.UndefOr[nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate] = js.undefined
-    var key: js.UndefOr[nodeDashForgeLib.nodeDashForgeMod.pkiNs.Key] = js.undefined
+    var key: js.UndefOr[nodeDashForgeLib.nodeDashForgeMod.pkiNs.PrivateKey] = js.undefined
     var `type`: java.lang.String
   }
   

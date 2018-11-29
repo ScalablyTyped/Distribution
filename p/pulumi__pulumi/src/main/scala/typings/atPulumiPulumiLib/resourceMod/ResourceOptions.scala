@@ -10,7 +10,7 @@ trait ResourceOptions extends js.Object {
   /**
        * An optional additional explicit dependencies on other resources.
        */
-  var dependsOn: js.UndefOr[js.Array[Resource] | Resource] = js.undefined
+  var dependsOn: js.UndefOr[Input[js.Array[Input[Resource]]] | Input[Resource]] = js.undefined
   /**
        * An optional existing ID to load, rather than create.
        */

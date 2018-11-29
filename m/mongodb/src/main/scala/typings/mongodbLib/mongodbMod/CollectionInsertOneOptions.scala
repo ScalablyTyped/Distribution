@@ -11,7 +11,9 @@ trait CollectionInsertOneOptions extends CommonOptions {
   var bypassDocumentValidation: js.UndefOr[scala.Boolean] = js.undefined
   //Force server to assign _id values instead of driver.
   var forceServerObjectId: js.UndefOr[scala.Boolean] = js.undefined
-  // Serialize functions on any object.
+  /**
+       * Serialize functions on any object.
+       */
   var serializeFunctions: js.UndefOr[scala.Boolean] = js.undefined
 }
 

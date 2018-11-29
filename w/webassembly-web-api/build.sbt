@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "webassembly-web-api"
-version := "v1-dt-20181121Z-1a8000"
+version := "v1-dt-20181121Z-c8b67e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "webassembly-js-api" % "0.0-unknown-dt-20181121Z-7e904a",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "webassembly-js-api" % "0.0-unknown-dt-20181121Z-26975f",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

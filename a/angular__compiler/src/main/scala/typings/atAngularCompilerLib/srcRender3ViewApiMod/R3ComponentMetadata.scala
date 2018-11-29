@@ -40,14 +40,18 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
        */
   var template: atAngularCompilerLib.Anon_Nodes
   /**
+       * The list of view providers defined in the component.
+       */
+  var viewProviders: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null
+  /**
        * Information about the view queries made by the component.
        */
   var viewQueries: js.Array[R3QueryMetadata]
   /**
-       * Whether to wrap the 'directives' array, if one is generated, in a closure.
+       * Whether to wrap the 'directives' and/or `pipes` array, if one is generated, in a closure.
        *
-       * This is done when the directives contain forward references.
+       * This is done when the directives or pipes contain forward references.
        */
-  var wrapDirectivesInClosure: scala.Boolean
+  var wrapDirectivesAndPipesInClosure: scala.Boolean
 }
 

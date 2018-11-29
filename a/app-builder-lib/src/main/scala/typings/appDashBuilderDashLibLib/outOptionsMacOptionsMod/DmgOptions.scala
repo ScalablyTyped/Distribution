@@ -30,7 +30,7 @@ trait DmgOptions
     appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.UDRW | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.UDRO | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.UDCO | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.UDZO | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.UDBZ | appDashBuilderDashLibLib.appDashBuilderDashLibLibStrings.ULFO
   ] = js.undefined
   /**
-       * The path to DMG icon (volume icon), which will be shown when mounted, relative to the [build resources](/configuration/configuration.md#MetadataDirectories-buildResources) or to the project directory.
+       * The path to DMG icon (volume icon), which will be shown when mounted, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
        * Defaults to the application icon (`build/icon.icns`).
        */
   val icon: js.UndefOr[java.lang.String | scala.Null] = js.undefined

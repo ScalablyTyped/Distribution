@@ -5,13 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
+@js.native
 trait ErrorResponse extends js.Object {
-  var graphQLErrors: js.UndefOr[js.Array[graphqlLib.graphqlMod.GraphQLError]] = js.undefined
-  var networkError: js.UndefOr[stdLib.Error] = js.undefined
-  var operation: apolloDashLinkLib.libTypesMod.Operation
+  @JSName("forward")
+  var forward_Original: apolloDashLinkLib.libTypesMod.NextLink = js.native
+  var graphQLErrors: js.UndefOr[js.Array[graphqlLib.graphqlMod.GraphQLError]] = js.native
+  var networkError: js.UndefOr[stdLib.Error] = js.native
+  var operation: apolloDashLinkLib.libTypesMod.Operation = js.native
   var response: js.UndefOr[
     graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
-  ] = js.undefined
+  ] = js.native
+  def forward(operation: apolloDashLinkLib.libTypesMod.Operation): zenDashObservableDashTsLib.libZenObservableMod.Observable[
+    apolloDashLinkLib.libTypesMod.FetchResult[stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]]
+  ] = js.native
 }
 

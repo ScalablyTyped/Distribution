@@ -11,29 +11,12 @@ object srcRender3ComponentModMembers extends js.Object {
   val NULL_INJECTOR: atAngularCoreLib.srcDiInjectorMod.Injector = js.native
   def LifecycleHooksFeature(component: js.Any, `def`: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
   def createRootComponent[T](
-    hostRNode: atAngularCoreLib.srcRender3InterfacesRendererMod.RNode,
     componentView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
     componentDef: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[T],
     rootView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
     rootContext: atAngularCoreLib.srcRender3InterfacesViewMod.RootContext
   ): js.Any = js.native
   def createRootComponent[T](
-    hostRNode: atAngularCoreLib.srcRender3InterfacesRendererMod.RNode,
-    componentView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
-    componentDef: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[T],
-    rootView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
-    rootContext: atAngularCoreLib.srcRender3InterfacesViewMod.RootContext,
-    hostFeatures: js.Array[HostFeature]
-  ): js.Any = js.native
-  def createRootComponent[T](
-    hostRNode: scala.Null,
-    componentView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
-    componentDef: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[T],
-    rootView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
-    rootContext: atAngularCoreLib.srcRender3InterfacesViewMod.RootContext
-  ): js.Any = js.native
-  def createRootComponent[T](
-    hostRNode: scala.Null,
     componentView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
     componentDef: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[T],
     rootView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
@@ -66,13 +49,12 @@ object srcRender3ComponentModMembers extends js.Object {
     renderer: atAngularCoreLib.srcRender3InterfacesRendererMod.Renderer3,
     sanitizer: atAngularCoreLib.srcSanitizationSecurityMod.Sanitizer
   ): atAngularCoreLib.srcRender3InterfacesViewMod.LViewData = js.native
+  def createRootContext(): atAngularCoreLib.srcRender3InterfacesViewMod.RootContext = js.native
   def createRootContext(scheduler: js.Function1[/* workFn */ js.Function0[scala.Unit], scala.Unit]): atAngularCoreLib.srcRender3InterfacesViewMod.RootContext = js.native
   def createRootContext(
     scheduler: js.Function1[/* workFn */ js.Function0[scala.Unit], scala.Unit],
     playerHandler: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerHandler
   ): atAngularCoreLib.srcRender3InterfacesViewMod.RootContext = js.native
-  def getHostElement[T](component: T): stdLib.HTMLElement = js.native
-  def getRenderedText(component: js.Any): java.lang.String = js.native
   def renderComponent[T](componentType: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentType[T]): T = js.native
   def renderComponent[T](
     componentType: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentType[T],

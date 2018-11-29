@@ -13,6 +13,7 @@
 //                 Alec Brunelle <https://github.com/aleccool213>
 //                 Dan Manastireanu <https://github.com/danmana>
 //                 Kjell-Morten Bratsberg Thorsen <https://github.com/kjellmorten>
+//                 Christian D. <https://github.com/pc-jedi>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

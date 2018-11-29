@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcUtilsCollectionMod extends js.Object {
   def and(bools: js.Array[scala.Boolean]): scala.Boolean = js.native
-  def andObservables(observables: rxjsLib.rxjsMod.Observable[rxjsLib.rxjsMod.Observable[_]]): rxjsLib.rxjsMod.Observable[scala.Boolean] = js.native
   def flatten[T](arr: js.Array[js.Array[T]]): js.Array[T] = js.native
   def forEach[K, V](
     map: ScalablyTyped.runtime.StringDictionary[V],
@@ -25,9 +24,9 @@ object srcUtilsCollectionMod extends js.Object {
     obj: ScalablyTyped.runtime.StringDictionary[A],
     fn: js.Function2[/* k */ java.lang.String, /* a */ A, rxjsLib.rxjsMod.Observable[B]]
   ): rxjsLib.rxjsMod.Observable[ScalablyTyped.runtime.StringDictionary[B]] = js.native
-  def wrapIntoObservable[T](value: T): rxjsLib.rxjsMod.Observable[T] = js.native
-  def wrapIntoObservable[T](value: atAngularCoreLib.coreMod.NgModuleFactory[T]): rxjsLib.rxjsMod.Observable[T] = js.native
-  def wrapIntoObservable[T](value: rxjsLib.rxjsMod.Observable[T]): rxjsLib.rxjsMod.Observable[T] = js.native
-  def wrapIntoObservable[T](value: stdLib.Promise[T]): rxjsLib.rxjsMod.Observable[T] = js.native
+  def wrapIntoObservable[T](value: T): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
+  def wrapIntoObservable[T](value: atAngularCoreLib.coreMod.NgModuleFactory[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
+  def wrapIntoObservable[T](value: rxjsLib.rxjsMod.Observable[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
+  def wrapIntoObservable[T](value: stdLib.Promise[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
 }
 

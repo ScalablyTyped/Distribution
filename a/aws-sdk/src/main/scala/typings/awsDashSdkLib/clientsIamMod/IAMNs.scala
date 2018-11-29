@@ -387,6 +387,10 @@ object IAMNs extends js.Object {
          * The name of the role to create. This parameter allows (per its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@- Role names are not distinguished by case. For example, you cannot create roles named both "PRODROLE" and "prodrole".
          */
     var RoleName: roleNameType
+    /**
+         * A list of tags that you want to attach to the newly created role. Each tag consists of a key name and an associated value. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.  If any one of the tags is invalid or if you exceed the allowed number of tags per role, then the entire request fails and the role is not created. 
+         */
+    var Tags: js.UndefOr[tagListType] = js.undefined
   }
   
   
@@ -420,11 +424,11 @@ object IAMNs extends js.Object {
   
   trait CreateServiceLinkedRoleRequest extends js.Object {
     /**
-         * The AWS service to which this role is attached. You use a string similar to a URL but without the http:// in front. For example: elasticbeanstalk.amazonaws.com 
+         * The service principal for the AWS service to which this role is attached. You use a string similar to a URL but without the http:// in front. For example: elasticbeanstalk.amazonaws.com.  Service principals are unique and case-sensitive. To find the exact service principal for your service-linked role, see AWS Services That Work with IAM in the IAM User Guide and look for the services that have Yes in the Service-Linked Role column. Choose the Yes link to view the service-linked role documentation for that service.
          */
     var AWSServiceName: groupNameType
     /**
-         * A string that you provide, which is combined with the service name to form the complete role name. If you make multiple requests for the same service, then you must supply a different CustomSuffix for each request. Otherwise the request fails with a duplicate role name error. For example, you could add -1 or -debug to the suffix.
+         *  A string that you provide, which is combined with the service-provided prefix to form the complete role name. If you make multiple requests for the same service, then you must supply a different CustomSuffix for each request. Otherwise the request fails with a duplicate role name error. For example, you could add -1 or -debug to the suffix. Some services do not support the CustomSuffix parameter. If you provide an optional suffix and the operation fails, try the operation again without the suffix.
          */
     var CustomSuffix: js.UndefOr[customSuffixType] = js.undefined
     /**
@@ -471,6 +475,10 @@ object IAMNs extends js.Object {
          * The ARN of the policy that is used to set the permissions boundary for the user.
          */
     var PermissionsBoundary: js.UndefOr[arnType] = js.undefined
+    /**
+         * A list of tags that you want to attach to the newly created user. Each tag consists of a key name and an associated value. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.  If any one of the tags is invalid or if you exceed the allowed number of tags per user, then the entire request fails and the user is not created. 
+         */
+    var Tags: js.UndefOr[tagListType] = js.undefined
     /**
          * The name of the user to create. This parameter allows (per its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-. User names are not distinguished by case. For example, you cannot create users named both "TESTUSER" and "testuser".
          */
@@ -1922,6 +1930,38 @@ object IAMNs extends js.Object {
   }
   
   
+  trait ListRoleTagsRequest extends js.Object {
+    /**
+         * Use this parameter only when paginating results and only after you receive a response indicating that the results are truncated. Set it to the value of the Marker element in the response to indicate where the next call should start.
+         */
+    var Marker: js.UndefOr[markerType] = js.undefined
+    /**
+         * (Optional) Use this only when paginating results to indicate the maximum number of items that you want in the response. If additional items exist beyond the maximum that you specify, the IsTruncated response element is true. If you do not include this parameter, it defaults to 100. Note that IAM might return fewer results, even when more results are available. In that case, the IsTruncated response element returns true, and Marker contains a value to include in the subsequent call that tells the service where to continue from.
+         */
+    var MaxItems: js.UndefOr[maxItemsType] = js.undefined
+    /**
+         * The name of the IAM role for which you want to see the list of tags. This parameter accepts (through its regex pattern) a string of characters that consist of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
+         */
+    var RoleName: roleNameType
+  }
+  
+  
+  trait ListRoleTagsResponse extends js.Object {
+    /**
+         * A flag that indicates whether there are more items to return. If your results were truncated, you can use the Marker request parameter to make a subsequent pagination request that retrieves more items. Note that IAM might return fewer than the MaxItems number of results even when more results are available. Check IsTruncated after every call to ensure that you receive all of your results.
+         */
+    var IsTruncated: js.UndefOr[booleanType] = js.undefined
+    /**
+         * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
+         */
+    var Marker: js.UndefOr[markerType] = js.undefined
+    /**
+         * The list of tags currently that is attached to the role. Each tag consists of a key name and an associated value. If no tags are attached to the specified role, the response contains an empty list.
+         */
+    var Tags: tagListType
+  }
+  
+  
   trait ListRolesRequest extends js.Object {
     /**
          * Use this parameter only when paginating results and only after you receive a response indicating that the results are truncated. Set it to the value of the Marker element in the response that you received to indicate where the next call should start.
@@ -2110,6 +2150,38 @@ object IAMNs extends js.Object {
          * A list of policy names.
          */
     var PolicyNames: policyNameListType
+  }
+  
+  
+  trait ListUserTagsRequest extends js.Object {
+    /**
+         * Use this parameter only when paginating results and only after you receive a response indicating that the results are truncated. Set it to the value of the Marker element in the response to indicate where the next call should start.
+         */
+    var Marker: js.UndefOr[markerType] = js.undefined
+    /**
+         * (Optional) Use this only when paginating results to indicate the maximum number of items that you want in the response. If additional items exist beyond the maximum that you specify, the IsTruncated response element is true. If you do not include this parameter, it defaults to 100. Note that IAM might return fewer results, even when more results are available. In that case, the IsTruncated response element returns true, and Marker contains a value to include in the subsequent call that tells the service where to continue from.
+         */
+    var MaxItems: js.UndefOr[maxItemsType] = js.undefined
+    /**
+         * The name of the IAM user whose tags you want to see. This parameter accepts (through its regex pattern) a string of characters that consist of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: =,.@-
+         */
+    var UserName: existingUserNameType
+  }
+  
+  
+  trait ListUserTagsResponse extends js.Object {
+    /**
+         * A flag that indicates whether there are more items to return. If your results were truncated, you can use the Marker request parameter to make a subsequent pagination request that retrieves more items. Note that IAM might return fewer than the MaxItems number of results even when more results are available. Check IsTruncated after every call to ensure that you receive all of your results.
+         */
+    var IsTruncated: js.UndefOr[booleanType] = js.undefined
+    /**
+         * When IsTruncated is true, this element is present and contains the value to use for the Marker parameter in a subsequent pagination request.
+         */
+    var Marker: js.UndefOr[markerType] = js.undefined
+    /**
+         * The list of tags that are currently attached to the user. Each tag consists of a key name and an associated value. If no tags are attached to the specified user, the response contains an empty list.
+         */
+    var Tags: tagListType
   }
   
   
@@ -2649,6 +2721,10 @@ object IAMNs extends js.Object {
          * The friendly name that identifies the role.
          */
     var RoleName: roleNameType
+    /**
+         * A list of tags that are attached to the specified role. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+         */
+    var Tags: js.UndefOr[tagListType] = js.undefined
   }
   
   
@@ -2690,6 +2766,10 @@ object IAMNs extends js.Object {
          * A list of inline policies embedded in the role. These policies are the role's access (permissions) policies.
          */
     var RolePolicyList: js.UndefOr[policyDetailListType] = js.undefined
+    /**
+         * A list of tags that are attached to the specified role. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+         */
+    var Tags: js.UndefOr[tagListType] = js.undefined
   }
   
   
@@ -3034,6 +3114,42 @@ object IAMNs extends js.Object {
          * The row and column of the beginning of the Statement in an IAM policy.
          */
     var StartPosition: js.UndefOr[Position] = js.undefined
+  }
+  
+  
+  trait Tag extends js.Object {
+    /**
+         * The key name that can be used to look up or retrieve the associated value. For example, Department or Cost Center are common choices.
+         */
+    var Key: tagKeyType
+    /**
+         * The value associated with this tag. For example, tags with a key name of Department could have values such as Human Resources, Accounting, and Support. Tags with a key name of Cost Center might have values that consist of the number associated with the different cost centers in your company. Typically, many resources have tags with the same key name but with different values.  AWS always interprets the tag Value as a single string. If you need to store an array, you can store comma-separated values in the string. However, you must interpret the value in your code. 
+         */
+    var Value: tagValueType
+  }
+  
+  
+  trait TagRoleRequest extends js.Object {
+    /**
+         * The name of the role that you want to add tags to. This parameter accepts (through its regex pattern) a string of characters that consist of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
+         */
+    var RoleName: roleNameType
+    /**
+         * The list of tags that you want to attach to the role. Each tag consists of a key name and an associated value. You can specify this with a JSON string.
+         */
+    var Tags: tagListType
+  }
+  
+  
+  trait TagUserRequest extends js.Object {
+    /**
+         * The list of tags that you want to attach to the user. Each tag consists of a key name and an associated value.
+         */
+    var Tags: tagListType
+    /**
+         * The name of the user that you want to add tags to. This parameter accepts (through its regex pattern) a string of characters that consist of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: =,.@-
+         */
+    var UserName: existingUserNameType
   }
   
   @js.native
@@ -3471,11 +3587,11 @@ object IAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateSAMLProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an IAM role that is linked to a specific AWS service. The service controls the attached policies and when the role can be deleted. This helps ensure that the service is not broken by an unexpectedly changed or deleted role, which could put your AWS resources into an unknown state. Allowing the service to control the role helps improve service stability and proper cleanup when a service and its role are no longer needed. The name of the role is generated by combining the string that you specify for the AWSServiceName parameter with the string that you specify for the CustomSuffix parameter. The resulting name must be unique in your account or the request fails. To attach a policy to this service-linked role, you must make the request using the AWS service that depends on this role.
+       * Creates an IAM role that is linked to a specific AWS service. The service controls the attached policies and when the role can be deleted. This helps ensure that the service is not broken by an unexpectedly changed or deleted role, which could put your AWS resources into an unknown state. Allowing the service to control the role helps improve service stability and proper cleanup when a service and its role are no longer needed. For more information, see Using Service-Linked Roles in the IAM User Guide.  To attach a policy to this service-linked role, you must make the request using the AWS service that depends on this role.
        */
     def createServiceLinkedRole(): awsDashSdkLib.libRequestMod.Request[CreateServiceLinkedRoleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an IAM role that is linked to a specific AWS service. The service controls the attached policies and when the role can be deleted. This helps ensure that the service is not broken by an unexpectedly changed or deleted role, which could put your AWS resources into an unknown state. Allowing the service to control the role helps improve service stability and proper cleanup when a service and its role are no longer needed. The name of the role is generated by combining the string that you specify for the AWSServiceName parameter with the string that you specify for the CustomSuffix parameter. The resulting name must be unique in your account or the request fails. To attach a policy to this service-linked role, you must make the request using the AWS service that depends on this role.
+       * Creates an IAM role that is linked to a specific AWS service. The service controls the attached policies and when the role can be deleted. This helps ensure that the service is not broken by an unexpectedly changed or deleted role, which could put your AWS resources into an unknown state. Allowing the service to control the role helps improve service stability and proper cleanup when a service and its role are no longer needed. For more information, see Using Service-Linked Roles in the IAM User Guide.  To attach a policy to this service-linked role, you must make the request using the AWS service that depends on this role.
        */
     def createServiceLinkedRole(
       callback: js.Function2[
@@ -3485,11 +3601,11 @@ object IAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateServiceLinkedRoleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an IAM role that is linked to a specific AWS service. The service controls the attached policies and when the role can be deleted. This helps ensure that the service is not broken by an unexpectedly changed or deleted role, which could put your AWS resources into an unknown state. Allowing the service to control the role helps improve service stability and proper cleanup when a service and its role are no longer needed. The name of the role is generated by combining the string that you specify for the AWSServiceName parameter with the string that you specify for the CustomSuffix parameter. The resulting name must be unique in your account or the request fails. To attach a policy to this service-linked role, you must make the request using the AWS service that depends on this role.
+       * Creates an IAM role that is linked to a specific AWS service. The service controls the attached policies and when the role can be deleted. This helps ensure that the service is not broken by an unexpectedly changed or deleted role, which could put your AWS resources into an unknown state. Allowing the service to control the role helps improve service stability and proper cleanup when a service and its role are no longer needed. For more information, see Using Service-Linked Roles in the IAM User Guide.  To attach a policy to this service-linked role, you must make the request using the AWS service that depends on this role.
        */
     def createServiceLinkedRole(params: CreateServiceLinkedRoleRequest): awsDashSdkLib.libRequestMod.Request[CreateServiceLinkedRoleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates an IAM role that is linked to a specific AWS service. The service controls the attached policies and when the role can be deleted. This helps ensure that the service is not broken by an unexpectedly changed or deleted role, which could put your AWS resources into an unknown state. Allowing the service to control the role helps improve service stability and proper cleanup when a service and its role are no longer needed. The name of the role is generated by combining the string that you specify for the AWSServiceName parameter with the string that you specify for the CustomSuffix parameter. The resulting name must be unique in your account or the request fails. To attach a policy to this service-linked role, you must make the request using the AWS service that depends on this role.
+       * Creates an IAM role that is linked to a specific AWS service. The service controls the attached policies and when the role can be deleted. This helps ensure that the service is not broken by an unexpectedly changed or deleted role, which could put your AWS resources into an unknown state. Allowing the service to control the role helps improve service stability and proper cleanup when a service and its role are no longer needed. For more information, see Using Service-Linked Roles in the IAM User Guide.  To attach a policy to this service-linked role, you must make the request using the AWS service that depends on this role.
        */
     def createServiceLinkedRole(
       params: CreateServiceLinkedRoleRequest,
@@ -5227,6 +5343,35 @@ object IAMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListRolePoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Lists the tags that are attached to the specified role. The returned list of tags is sorted by tag key. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def listRoleTags(): awsDashSdkLib.libRequestMod.Request[ListRoleTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the tags that are attached to the specified role. The returned list of tags is sorted by tag key. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def listRoleTags(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListRoleTagsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListRoleTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the tags that are attached to the specified role. The returned list of tags is sorted by tag key. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def listRoleTags(params: ListRoleTagsRequest): awsDashSdkLib.libRequestMod.Request[ListRoleTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the tags that are attached to the specified role. The returned list of tags is sorted by tag key. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def listRoleTags(
+      params: ListRoleTagsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListRoleTagsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListRoleTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Lists the IAM roles that have the specified path prefix. If there are none, the operation returns an empty list. For more information about roles, go to Working with Roles. You can paginate the results using the MaxItems and Marker parameters.
        */
     def listRoles(): awsDashSdkLib.libRequestMod.Request[ListRolesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -5429,6 +5574,35 @@ object IAMNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListUserPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the tags that are attached to the specified user. The returned list of tags is sorted by tag key. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def listUserTags(): awsDashSdkLib.libRequestMod.Request[ListUserTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the tags that are attached to the specified user. The returned list of tags is sorted by tag key. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def listUserTags(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListUserTagsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListUserTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the tags that are attached to the specified user. The returned list of tags is sorted by tag key. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def listUserTags(params: ListUserTagsRequest): awsDashSdkLib.libRequestMod.Request[ListUserTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the tags that are attached to the specified user. The returned list of tags is sorted by tag key. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def listUserTags(
+      params: ListUserTagsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListUserTagsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListUserTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Lists the IAM users that have the specified path prefix. If no path prefix is specified, the operation returns all users in the AWS account. If there are none, the operation returns an empty list. You can paginate the results using the MaxItems and Marker parameters.
        */
@@ -5784,6 +5958,90 @@ object IAMNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[SimulatePolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds one or more tags to an IAM role. The role can be a regular role or a service-linked role. If a tag with the same key name already exists, then that tag is overwritten with the new value. A tag consists of a key name and an associated value. By assigning tags to your resources, you can do the following:    Administrative grouping and discovery - Attach tags to resources to aid in organization and search. For example, you could search for all resources with the key name Project and the value MyImportantProject. Or search for all resources with the key name Cost Center and the value 41200.     Access control - Reference tags in IAM user-based and resource-based policies. You can use tags to restrict access to only an IAM user or role that has a specified tag attached. You can also restrict access to only those resources that have a certain tag attached. For examples of policies that show how to use tags to control access, see Control Access Using IAM Tags in the IAM User Guide.    Cost allocation - Use tags to help track which individuals and teams are using which AWS resources.      Make sure that you have no invalid tags and that you do not exceed the allowed number of tags per role. In either case, the entire request fails and no tags are added to the role.   AWS always interprets the tag Value as a single string. If you need to store an array, you can store comma-separated values in the string. However, you must interpret the value in your code.    For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def tagRole(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds one or more tags to an IAM role. The role can be a regular role or a service-linked role. If a tag with the same key name already exists, then that tag is overwritten with the new value. A tag consists of a key name and an associated value. By assigning tags to your resources, you can do the following:    Administrative grouping and discovery - Attach tags to resources to aid in organization and search. For example, you could search for all resources with the key name Project and the value MyImportantProject. Or search for all resources with the key name Cost Center and the value 41200.     Access control - Reference tags in IAM user-based and resource-based policies. You can use tags to restrict access to only an IAM user or role that has a specified tag attached. You can also restrict access to only those resources that have a certain tag attached. For examples of policies that show how to use tags to control access, see Control Access Using IAM Tags in the IAM User Guide.    Cost allocation - Use tags to help track which individuals and teams are using which AWS resources.      Make sure that you have no invalid tags and that you do not exceed the allowed number of tags per role. In either case, the entire request fails and no tags are added to the role.   AWS always interprets the tag Value as a single string. If you need to store an array, you can store comma-separated values in the string. However, you must interpret the value in your code.    For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def tagRole(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds one or more tags to an IAM role. The role can be a regular role or a service-linked role. If a tag with the same key name already exists, then that tag is overwritten with the new value. A tag consists of a key name and an associated value. By assigning tags to your resources, you can do the following:    Administrative grouping and discovery - Attach tags to resources to aid in organization and search. For example, you could search for all resources with the key name Project and the value MyImportantProject. Or search for all resources with the key name Cost Center and the value 41200.     Access control - Reference tags in IAM user-based and resource-based policies. You can use tags to restrict access to only an IAM user or role that has a specified tag attached. You can also restrict access to only those resources that have a certain tag attached. For examples of policies that show how to use tags to control access, see Control Access Using IAM Tags in the IAM User Guide.    Cost allocation - Use tags to help track which individuals and teams are using which AWS resources.      Make sure that you have no invalid tags and that you do not exceed the allowed number of tags per role. In either case, the entire request fails and no tags are added to the role.   AWS always interprets the tag Value as a single string. If you need to store an array, you can store comma-separated values in the string. However, you must interpret the value in your code.    For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def tagRole(params: TagRoleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds one or more tags to an IAM role. The role can be a regular role or a service-linked role. If a tag with the same key name already exists, then that tag is overwritten with the new value. A tag consists of a key name and an associated value. By assigning tags to your resources, you can do the following:    Administrative grouping and discovery - Attach tags to resources to aid in organization and search. For example, you could search for all resources with the key name Project and the value MyImportantProject. Or search for all resources with the key name Cost Center and the value 41200.     Access control - Reference tags in IAM user-based and resource-based policies. You can use tags to restrict access to only an IAM user or role that has a specified tag attached. You can also restrict access to only those resources that have a certain tag attached. For examples of policies that show how to use tags to control access, see Control Access Using IAM Tags in the IAM User Guide.    Cost allocation - Use tags to help track which individuals and teams are using which AWS resources.      Make sure that you have no invalid tags and that you do not exceed the allowed number of tags per role. In either case, the entire request fails and no tags are added to the role.   AWS always interprets the tag Value as a single string. If you need to store an array, you can store comma-separated values in the string. However, you must interpret the value in your code.    For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def tagRole(
+      params: TagRoleRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds one or more tags to an IAM user. If a tag with the same key name already exists, then that tag is overwritten with the new value. A tag consists of a key name and an associated value. By assigning tags to your resources, you can do the following:    Administrative grouping and discovery - Attach tags to resources to aid in organization and search. For example, you could search for all resources with the key name Project and the value MyImportantProject. Or search for all resources with the key name Cost Center and the value 41200.     Access control - Reference tags in IAM user-based and resource-based policies. You can use tags to restrict access to only an IAM requesting user or to a role that has a specified tag attached. You can also restrict access to only those resources that have a certain tag attached. For examples of policies that show how to use tags to control access, see Control Access Using IAM Tags in the IAM User Guide.    Cost allocation - Use tags to help track which individuals and teams are using which AWS resources.      Make sure that you have no invalid tags and that you do not exceed the allowed number of tags per role. In either case, the entire request fails and no tags are added to the role.   AWS always interprets the tag Value as a single string. If you need to store an array, you can store comma-separated values in the string. However, you must interpret the value in your code.    For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def tagUser(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds one or more tags to an IAM user. If a tag with the same key name already exists, then that tag is overwritten with the new value. A tag consists of a key name and an associated value. By assigning tags to your resources, you can do the following:    Administrative grouping and discovery - Attach tags to resources to aid in organization and search. For example, you could search for all resources with the key name Project and the value MyImportantProject. Or search for all resources with the key name Cost Center and the value 41200.     Access control - Reference tags in IAM user-based and resource-based policies. You can use tags to restrict access to only an IAM requesting user or to a role that has a specified tag attached. You can also restrict access to only those resources that have a certain tag attached. For examples of policies that show how to use tags to control access, see Control Access Using IAM Tags in the IAM User Guide.    Cost allocation - Use tags to help track which individuals and teams are using which AWS resources.      Make sure that you have no invalid tags and that you do not exceed the allowed number of tags per role. In either case, the entire request fails and no tags are added to the role.   AWS always interprets the tag Value as a single string. If you need to store an array, you can store comma-separated values in the string. However, you must interpret the value in your code.    For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def tagUser(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds one or more tags to an IAM user. If a tag with the same key name already exists, then that tag is overwritten with the new value. A tag consists of a key name and an associated value. By assigning tags to your resources, you can do the following:    Administrative grouping and discovery - Attach tags to resources to aid in organization and search. For example, you could search for all resources with the key name Project and the value MyImportantProject. Or search for all resources with the key name Cost Center and the value 41200.     Access control - Reference tags in IAM user-based and resource-based policies. You can use tags to restrict access to only an IAM requesting user or to a role that has a specified tag attached. You can also restrict access to only those resources that have a certain tag attached. For examples of policies that show how to use tags to control access, see Control Access Using IAM Tags in the IAM User Guide.    Cost allocation - Use tags to help track which individuals and teams are using which AWS resources.      Make sure that you have no invalid tags and that you do not exceed the allowed number of tags per role. In either case, the entire request fails and no tags are added to the role.   AWS always interprets the tag Value as a single string. If you need to store an array, you can store comma-separated values in the string. However, you must interpret the value in your code.    For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def tagUser(params: TagUserRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds one or more tags to an IAM user. If a tag with the same key name already exists, then that tag is overwritten with the new value. A tag consists of a key name and an associated value. By assigning tags to your resources, you can do the following:    Administrative grouping and discovery - Attach tags to resources to aid in organization and search. For example, you could search for all resources with the key name Project and the value MyImportantProject. Or search for all resources with the key name Cost Center and the value 41200.     Access control - Reference tags in IAM user-based and resource-based policies. You can use tags to restrict access to only an IAM requesting user or to a role that has a specified tag attached. You can also restrict access to only those resources that have a certain tag attached. For examples of policies that show how to use tags to control access, see Control Access Using IAM Tags in the IAM User Guide.    Cost allocation - Use tags to help track which individuals and teams are using which AWS resources.      Make sure that you have no invalid tags and that you do not exceed the allowed number of tags per role. In either case, the entire request fails and no tags are added to the role.   AWS always interprets the tag Value as a single string. If you need to store an array, you can store comma-separated values in the string. However, you must interpret the value in your code.    For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def tagUser(
+      params: TagUserRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the specified tags from the role. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def untagRole(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the specified tags from the role. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def untagRole(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the specified tags from the role. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def untagRole(params: UntagRoleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the specified tags from the role. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def untagRole(
+      params: UntagRoleRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the specified tags from the user. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def untagUser(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the specified tags from the user. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def untagUser(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the specified tags from the user. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def untagUser(params: UntagUserRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the specified tags from the user. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+       */
+    def untagUser(
+      params: UntagUserRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Changes the status of the specified access key from Active to Inactive, or vice versa. This operation can be used to disable a user's key as part of a key rotation workflow. If the UserName field is not specified, the user name is determined implicitly based on the AWS access key ID used to sign the request. Because this operation works for access keys under the AWS account, you can use this operation to manage AWS account root user credentials even if the AWS account has no associated users. For information about rotating keys, see Managing Keys and Certificates in the IAM User Guide.
        */
@@ -6260,6 +6518,30 @@ object IAMNs extends js.Object {
   }
   
   
+  trait UntagRoleRequest extends js.Object {
+    /**
+         * The name of the IAM role from which you want to remove tags. This parameter accepts (through its regex pattern) a string of characters that consist of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
+         */
+    var RoleName: roleNameType
+    /**
+         * A list of key names as a simple array of strings. The tags with matching keys are removed from the specified role.
+         */
+    var TagKeys: tagKeyListType
+  }
+  
+  
+  trait UntagUserRequest extends js.Object {
+    /**
+         * A list of key names as a simple array of strings. The tags with matching keys are removed from the specified user.
+         */
+    var TagKeys: tagKeyListType
+    /**
+         * The name of the IAM user from which you want to remove tags. This parameter accepts (through its regex pattern) a string of characters that consist of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: =,.@-
+         */
+    var UserName: existingUserNameType
+  }
+  
+  
   trait UpdateAccessKeyRequest extends js.Object {
     /**
          * The access key ID of the secret access key you want to update. This parameter allows (per its regex pattern) a string of characters that can consist of any upper or lowercased letter or digit.
@@ -6605,6 +6887,10 @@ object IAMNs extends js.Object {
          */
     var PermissionsBoundary: js.UndefOr[AttachedPermissionsBoundary] = js.undefined
     /**
+         * A list of tags that are associated with the specified user. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+         */
+    var Tags: js.UndefOr[tagListType] = js.undefined
+    /**
          * The stable and unique string identifying the user. For more information about IDs, see IAM Identifiers in the Using IAM guide.
          */
     var UserId: idType
@@ -6637,6 +6923,10 @@ object IAMNs extends js.Object {
          * The ARN of the policy used to set the permissions boundary for the user. For more information about permissions boundaries, see Permissions Boundaries for IAM Identities  in the IAM User Guide.
          */
     var PermissionsBoundary: js.UndefOr[AttachedPermissionsBoundary] = js.undefined
+    /**
+         * A list of tags that are associated with the specified user. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.
+         */
+    var Tags: js.UndefOr[tagListType] = js.undefined
     /**
          * The stable and unique string identifying the user. For more information about IDs, see IAM Identifiers in the Using IAM guide.
          */
@@ -6797,6 +7087,10 @@ object IAMNs extends js.Object {
   type stringType = java.lang.String
   type summaryKeyType = awsDashSdkLib.awsDashSdkLibStrings.Users | awsDashSdkLib.awsDashSdkLibStrings.UsersQuota | awsDashSdkLib.awsDashSdkLibStrings.Groups | awsDashSdkLib.awsDashSdkLibStrings.GroupsQuota | awsDashSdkLib.awsDashSdkLibStrings.ServerCertificates | awsDashSdkLib.awsDashSdkLibStrings.ServerCertificatesQuota | awsDashSdkLib.awsDashSdkLibStrings.UserPolicySizeQuota | awsDashSdkLib.awsDashSdkLibStrings.GroupPolicySizeQuota | awsDashSdkLib.awsDashSdkLibStrings.GroupsPerUserQuota | awsDashSdkLib.awsDashSdkLibStrings.SigningCertificatesPerUserQuota | awsDashSdkLib.awsDashSdkLibStrings.AccessKeysPerUserQuota | awsDashSdkLib.awsDashSdkLibStrings.MFADevices | awsDashSdkLib.awsDashSdkLibStrings.MFADevicesInUse | awsDashSdkLib.awsDashSdkLibStrings.AccountMFAEnabled | awsDashSdkLib.awsDashSdkLibStrings.AccountAccessKeysPresent | awsDashSdkLib.awsDashSdkLibStrings.AccountSigningCertificatesPresent | awsDashSdkLib.awsDashSdkLibStrings.AttachedPoliciesPerGroupQuota | awsDashSdkLib.awsDashSdkLibStrings.AttachedPoliciesPerRoleQuota | awsDashSdkLib.awsDashSdkLibStrings.AttachedPoliciesPerUserQuota | awsDashSdkLib.awsDashSdkLibStrings.Policies | awsDashSdkLib.awsDashSdkLibStrings.PoliciesQuota | awsDashSdkLib.awsDashSdkLibStrings.PolicySizeQuota | awsDashSdkLib.awsDashSdkLibStrings.PolicyVersionsInUse | awsDashSdkLib.awsDashSdkLibStrings.PolicyVersionsInUseQuota | awsDashSdkLib.awsDashSdkLibStrings.VersionsPerPolicyQuota | java.lang.String
   type summaryValueType = scala.Double
+  type tagKeyListType = js.Array[tagKeyType]
+  type tagKeyType = java.lang.String
+  type tagListType = js.Array[Tag]
+  type tagValueType = java.lang.String
   type thumbprintListType = js.Array[thumbprintType]
   type thumbprintType = java.lang.String
   type userDetailListType = js.Array[UserDetail]

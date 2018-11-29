@@ -38,7 +38,6 @@ trait Cypress extends js.Object {
        * @see https://on.cypress.io/cookies
        */
   var Cookies: cypressLib.Anon_Debug = js.native
-  // perhaps we want to add moment as a dependency for types?
   /**
        * Cypress automatically includes Bluebird and exposes it as Cypress.Promise.
        *
@@ -87,6 +86,15 @@ trait Cypress extends js.Object {
        * @see https://on.cypress.io/minimatch
        */
   var minimatch: cypressLib.MimimatchNs.MimimatchStatic = js.native
+  /**
+       * Cypress automatically includes moment.js and exposes it as Cypress.moment.
+       *
+       * @see https://on.cypress.io/moment
+       * @see http://momentjs.com/
+       * @example
+       *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
+       */
+  var moment: cypressLib.MomentNs.MomentStatic = js.native
   /**
        * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
        * @see https://on.cypress.io/catalog-of-events#App-Events
@@ -787,15 +795,6 @@ trait Cypress extends js.Object {
        * @see https://on.cypress.io/cypress-log
        */
   def log(options: stdLib.Partial[LogConfig]): Log = js.native
-  /**
-       * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-       *
-       * @see https://on.cypress.io/moment
-       * @see http://momentjs.com/
-       * @example
-       *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-       */
-  def moment(args: js.Any*): js.Any = js.native
   /**
        * Fires when cy finishes running and executing your command. Useful for debugging and understanding how commands are handled.
        * @see https://on.cypress.io/catalog-of-events#App-Events

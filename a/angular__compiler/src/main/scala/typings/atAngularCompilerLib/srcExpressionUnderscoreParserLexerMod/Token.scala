@@ -25,7 +25,7 @@ class Token protected () extends js.Object {
   def isKeywordTrue(): scala.Boolean = js.native
   def isKeywordUndefined(): scala.Boolean = js.native
   def isNumber(): scala.Boolean = js.native
-  def isOperator(operater: java.lang.String): scala.Boolean = js.native
+  def isOperator(operator: java.lang.String): scala.Boolean = js.native
   def isString(): scala.Boolean = js.native
   def toNumber(): scala.Double = js.native
 }

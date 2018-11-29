@@ -195,15 +195,15 @@ class DateTime ()
 @js.native
 object DateTime extends js.Object {
   /**
+       * Split a combined ISO datetime and timezone into datetime and timezone
+       */
+  var _splitDateFromTimeZone: js.Any = js.native
+  /**
        * Actual time source in use. Setting this property allows to
        * fake time in tests. DateTime.nowLocal() and DateTime.nowUtc()
        * use this property for obtaining the current time.
        */
   var timeSource: timezonecompleteLib.distLibTimesourceMod.TimeSource = js.native
-  /**
-       * Split a combined ISO datetime and timezone into datetime and timezone
-       */
-  /* private */ def _splitDateFromTimeZone(s: js.Any): js.Any = js.native
   /**
        * Check whether a given date exists in the given time zone.
        * E.g. 2015-02-29 returns false (not a leap year)
@@ -269,6 +269,7 @@ object DateTime extends js.Object {
        * @param format the format the string is in. See LDML.md for supported formats.
        * @param zone Optional, the zone to add (if no zone is given in the string)
        * @param locale Optional, different settings for constants like 'AM' etc
+       * @param allowTrailing Allow trailing characters in the source string
        */
   def parse(s: java.lang.String, format: java.lang.String): timezonecompleteLib.distLibDatetimeMod.DateTime = js.native
   /**
@@ -277,6 +278,7 @@ object DateTime extends js.Object {
        * @param format the format the string is in. See LDML.md for supported formats.
        * @param zone Optional, the zone to add (if no zone is given in the string)
        * @param locale Optional, different settings for constants like 'AM' etc
+       * @param allowTrailing Allow trailing characters in the source string
        */
   def parse(
     s: java.lang.String,
@@ -289,12 +291,28 @@ object DateTime extends js.Object {
        * @param format the format the string is in. See LDML.md for supported formats.
        * @param zone Optional, the zone to add (if no zone is given in the string)
        * @param locale Optional, different settings for constants like 'AM' etc
+       * @param allowTrailing Allow trailing characters in the source string
        */
   def parse(
     s: java.lang.String,
     format: java.lang.String,
     zone: timezonecompleteLib.distLibTimezoneMod.TimeZone,
     locale: timezonecompleteLib.distLibLocaleMod.PartialLocale
+  ): timezonecompleteLib.distLibDatetimeMod.DateTime = js.native
+  /**
+       * Parse a date in a given format
+       * @param s the string to parse
+       * @param format the format the string is in. See LDML.md for supported formats.
+       * @param zone Optional, the zone to add (if no zone is given in the string)
+       * @param locale Optional, different settings for constants like 'AM' etc
+       * @param allowTrailing Allow trailing characters in the source string
+       */
+  def parse(
+    s: java.lang.String,
+    format: java.lang.String,
+    zone: timezonecompleteLib.distLibTimezoneMod.TimeZone,
+    locale: timezonecompleteLib.distLibLocaleMod.PartialLocale,
+    allowTrailing: scala.Boolean
   ): timezonecompleteLib.distLibDatetimeMod.DateTime = js.native
 }
 

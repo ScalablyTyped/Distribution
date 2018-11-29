@@ -22,7 +22,7 @@ trait INonIdealStateProps
   var description: js.UndefOr[reactLib.reactMod.ReactNs.ReactChild] = js.undefined
   /** The name of a Blueprint icon or a JSX Element (such as `<Spinner/>`) to render above the title. */
   var icon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /** The title of the non-ideal state. */
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

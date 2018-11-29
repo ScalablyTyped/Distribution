@@ -51,6 +51,21 @@ abstract class ConfigurationOptions () extends js.Object {
        */
   var dynamoDbCrc32: js.UndefOr[scala.Boolean] = js.native
   /**
+       * The size of the global cache storing endpoints from endpoint
+       * discovery operations. Once endpoint cache is created, updating this setting
+       * cannot change existing cache size.
+       */
+  var endpointCacheSize: js.UndefOr[scala.Double] = js.native
+  /**
+       * Whether to enable endpoint discovery for operations that allow optionally using an endpoint returned by 
+       * the service.
+       */
+  var endpointDiscoveryEnabled: js.UndefOr[scala.Boolean] = js.native
+  /**
+       *  whether to marshal request parameters to the prefix of hostname.
+       */
+  var hostPrefixEnabled: js.UndefOr[scala.Boolean] = js.native
+  /**
        * A set of options to pass to the low-level HTTP request.
        */
   var httpOptions: js.UndefOr[HTTPOptions] = js.native

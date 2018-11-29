@@ -25,6 +25,30 @@ object AppSyncNs extends js.Object {
   }
   
   
+  trait AuthorizationConfig extends js.Object {
+    /**
+         * The authorization type required by the HTTP endpoint.    AWS_IAM: The authorization type is Sigv4.  
+         */
+    var authorizationType: AuthorizationType
+    /**
+         * The AWS IAM settings.
+         */
+    var awsIamConfig: js.UndefOr[AwsIamConfig] = js.undefined
+  }
+  
+  
+  trait AwsIamConfig extends js.Object {
+    /**
+         * The signing region for AWS IAM authorization.
+         */
+    var signingRegion: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The signing service name for AWS IAM authorization.
+         */
+    var signingServiceName: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait ClientApiVersions extends js.Object {
     /**
          * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
@@ -67,15 +91,15 @@ object AppSyncNs extends js.Object {
          */
     var description: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * DynamoDB settings.
+         * Amazon DynamoDB settings.
          */
     var dynamodbConfig: js.UndefOr[DynamodbDataSourceConfig] = js.undefined
     /**
-         * Amazon Elasticsearch settings.
+         * Amazon Elasticsearch Service settings.
          */
     var elasticsearchConfig: js.UndefOr[ElasticsearchDataSourceConfig] = js.undefined
     /**
-         * Http endpoint settings.
+         * HTTP endpoint settings.
          */
     var httpConfig: js.UndefOr[HttpDataSourceConfig] = js.undefined
     /**
@@ -87,7 +111,11 @@ object AppSyncNs extends js.Object {
          */
     var name: ResourceName
     /**
-         * The IAM service role ARN for the data source. The system assumes this role when accessing the data source.
+         * Relational database settings.
+         */
+    var relationalDatabaseConfig: js.UndefOr[RelationalDatabaseDataSourceConfig] = js.undefined
+    /**
+         * The AWS IAM service role ARN for the data source. The system assumes this role when accessing the data source.
          */
     var serviceRoleArn: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -105,13 +133,53 @@ object AppSyncNs extends js.Object {
   }
   
   
+  trait CreateFunctionRequest extends js.Object {
+    /**
+         * The GraphQL API ID.
+         */
+    var apiId: java.lang.String
+    /**
+         * The Function DataSource name.
+         */
+    var dataSourceName: ResourceName
+    /**
+         * The Function description.
+         */
+    var description: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The version of the request mapping template. Currently the supported value is 2018-05-29. 
+         */
+    var functionVersion: java.lang.String
+    /**
+         * The Function name. The function name does not have to be unique.
+         */
+    var name: ResourceName
+    /**
+         * The Function request mapping template. Functions support only the 2018-05-29 version of the request mapping template.
+         */
+    var requestMappingTemplate: MappingTemplate
+    /**
+         * The Function response mapping template. 
+         */
+    var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
+  }
+  
+  
+  trait CreateFunctionResponse extends js.Object {
+    /**
+         * The Function object.
+         */
+    var functionConfiguration: js.UndefOr[FunctionConfiguration] = js.undefined
+  }
+  
+  
   trait CreateGraphqlApiRequest extends js.Object {
     /**
-         * The authentication type: API key, IAM, or Amazon Cognito User Pools.
+         * The authentication type: API key, AWS IAM, or Amazon Cognito user pools.
          */
     var authenticationType: AuthenticationType
     /**
-         * The Amazon CloudWatch logs configuration.
+         * The Amazon CloudWatch Logs configuration.
          */
     var logConfig: js.UndefOr[LogConfig] = js.undefined
     /**
@@ -119,11 +187,11 @@ object AppSyncNs extends js.Object {
          */
     var name: java.lang.String
     /**
-         * The Open Id Connect configuration configuration.
+         * The OpenID Connect configuration.
          */
     var openIDConnectConfig: js.UndefOr[OpenIDConnectConfig] = js.undefined
     /**
-         * The Amazon Cognito User Pool configuration.
+         * The Amazon Cognito user pool configuration.
          */
     var userPoolConfig: js.UndefOr[UserPoolConfig] = js.undefined
   }
@@ -145,11 +213,19 @@ object AppSyncNs extends js.Object {
     /**
          * The name of the data source for which the resolver is being created.
          */
-    var dataSourceName: ResourceName
+    var dataSourceName: js.UndefOr[ResourceName] = js.undefined
     /**
          * The name of the field to attach the resolver to.
          */
     var fieldName: ResourceName
+    /**
+         * The resolver type.    UNIT: A UNIT resolver type. A UNIT resolver is the default resolver type. A UNIT resolver enables you to execute a GraphQL query against a single data source.    PIPELINE: A PIPELINE resolver type. A PIPELINE resolver enables you to execute a series of Function in a serial manner. You can use a pipeline resolver to execute a GraphQL query against multiple data sources.  
+         */
+    var kind: js.UndefOr[ResolverKind] = js.undefined
+    /**
+         * The PipelineConfig.
+         */
+    var pipelineConfig: js.UndefOr[PipelineConfig] = js.undefined
     /**
          * The mapping template to be used for requests. A resolver uses a request mapping template to convert a GraphQL expression into a format that a data source can understand. Mapping templates are written in Apache Velocity Template Language (VTL).
          */
@@ -207,19 +283,19 @@ object AppSyncNs extends js.Object {
          */
     var description: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * DynamoDB settings.
+         * Amazon DynamoDB settings.
          */
     var dynamodbConfig: js.UndefOr[DynamodbDataSourceConfig] = js.undefined
     /**
-         * Amazon Elasticsearch settings.
+         * Amazon Elasticsearch Service settings.
          */
     var elasticsearchConfig: js.UndefOr[ElasticsearchDataSourceConfig] = js.undefined
     /**
-         * Http endpoint settings.
+         * HTTP endpoint settings.
          */
     var httpConfig: js.UndefOr[HttpDataSourceConfig] = js.undefined
     /**
-         * Lambda settings.
+         * AWS Lambda settings.
          */
     var lambdaConfig: js.UndefOr[LambdaDataSourceConfig] = js.undefined
     /**
@@ -227,11 +303,15 @@ object AppSyncNs extends js.Object {
          */
     var name: js.UndefOr[ResourceName] = js.undefined
     /**
-         * The IAM service role ARN for the data source. The system assumes this role when accessing the data source.
+         * Relational database settings.
+         */
+    var relationalDatabaseConfig: js.UndefOr[RelationalDatabaseDataSourceConfig] = js.undefined
+    /**
+         * The AWS IAM service role ARN for the data source. The system assumes this role when accessing the data source.
          */
     var serviceRoleArn: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The type of the data source.    AMAZON_DYNAMODB: The data source is an Amazon DynamoDB table.    AMAZON_ELASTICSEARCH: The data source is an Amazon Elasticsearch Service domain.    AWS_LAMBDA: The data source is an AWS Lambda function.    NONE: There is no data source. This type is used when when you wish to invoke a GraphQL operation without connecting to a data source, such as performing data transformation with resolvers or triggering a subscription to be invoked from a mutation.    HTTP: The data source is an HTTP endpoint.  
+         * The type of the data source.    AMAZON_DYNAMODB: The data source is an Amazon DynamoDB table.    AMAZON_ELASTICSEARCH: The data source is an Amazon Elasticsearch Service domain.    AWS_LAMBDA: The data source is an AWS Lambda function.    NONE: There is no data source. This type is used when you wish to invoke a GraphQL operation without connecting to a data source, such as performing data transformation with resolvers or triggering a subscription to be invoked from a mutation.    HTTP: The data source is an HTTP endpoint.    RELATIONAL_DATABASE: The data source is a relational database.  
          */
     var `type`: js.UndefOr[DataSourceType] = js.undefined
   }
@@ -265,6 +345,21 @@ object AppSyncNs extends js.Object {
   
   
   trait DeleteDataSourceResponse extends js.Object
+  
+  
+  trait DeleteFunctionRequest extends js.Object {
+    /**
+         * The GraphQL API ID.
+         */
+    var apiId: java.lang.String
+    /**
+         * The Function ID.
+         */
+    var functionId: ResourceName
+  }
+  
+  
+  trait DeleteFunctionResponse extends js.Object
   
   
   trait DeleteGraphqlApiRequest extends js.Object {
@@ -314,7 +409,7 @@ object AppSyncNs extends js.Object {
   
   trait DynamodbDataSourceConfig extends js.Object {
     /**
-         * The AWS region.
+         * The AWS Region.
          */
     var awsRegion: java.lang.String
     /**
@@ -330,13 +425,49 @@ object AppSyncNs extends js.Object {
   
   trait ElasticsearchDataSourceConfig extends js.Object {
     /**
-         * The AWS region.
+         * The AWS Region.
          */
     var awsRegion: java.lang.String
     /**
          * The endpoint.
          */
     var endpoint: java.lang.String
+  }
+  
+  
+  trait FunctionConfiguration extends js.Object {
+    /**
+         * The name of the DataSource.
+         */
+    var dataSourceName: js.UndefOr[ResourceName] = js.undefined
+    /**
+         * The Function description.
+         */
+    var description: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ARN of the Function object.
+         */
+    var functionArn: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A unique ID representing the Function object.
+         */
+    var functionId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The version of the request mapping template. Currently only the 2018-05-29 version of the template is supported.
+         */
+    var functionVersion: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The name of the Function object.
+         */
+    var name: js.UndefOr[ResourceName] = js.undefined
+    /**
+         * The Function request mapping template. Functions support only the 2018-05-29 version of the request mapping template.
+         */
+    var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
+    /**
+         * The Function response mapping template.
+         */
+    var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   }
   
   
@@ -357,6 +488,26 @@ object AppSyncNs extends js.Object {
          * The DataSource object.
          */
     var dataSource: js.UndefOr[DataSource] = js.undefined
+  }
+  
+  
+  trait GetFunctionRequest extends js.Object {
+    /**
+         * The GraphQL API ID.
+         */
+    var apiId: java.lang.String
+    /**
+         * The Function ID.
+         */
+    var functionId: ResourceName
+  }
+  
+  
+  trait GetFunctionResponse extends js.Object {
+    /**
+         * The Function object.
+         */
+    var functionConfiguration: js.UndefOr[FunctionConfiguration] = js.undefined
   }
   
   
@@ -486,7 +637,7 @@ object AppSyncNs extends js.Object {
          */
     var name: js.UndefOr[ResourceName] = js.undefined
     /**
-         * The Open Id Connect configuration.
+         * The OpenID Connect configuration.
          */
     var openIDConnectConfig: js.UndefOr[OpenIDConnectConfig] = js.undefined
     /**
@@ -494,7 +645,7 @@ object AppSyncNs extends js.Object {
          */
     var uris: js.UndefOr[MapOfStringToString] = js.undefined
     /**
-         * The Amazon Cognito User Pool configuration.
+         * The Amazon Cognito user pool configuration.
          */
     var userPoolConfig: js.UndefOr[UserPoolConfig] = js.undefined
   }
@@ -502,7 +653,11 @@ object AppSyncNs extends js.Object {
   
   trait HttpDataSourceConfig extends js.Object {
     /**
-         * The Http url endpoint. You can either specify the domain name or ip and port combination and the url scheme must be http(s). If the port is not specified, AWS AppSync will use the default port 80 for http endpoint and port 443 for https endpoints.
+         * The authorization config in case the HTTP endpoint requires authorization.
+         */
+    var authorizationConfig: js.UndefOr[AuthorizationConfig] = js.undefined
+    /**
+         * The HTTP URL endpoint. You can either specify the domain name or IP, and port combination, and the URL scheme must be HTTP or HTTPS. If the port is not specified, AWS AppSync uses the default port 80 for the HTTP endpoint and port 443 for HTTPS endpoints.
          */
     var endpoint: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -572,6 +727,34 @@ object AppSyncNs extends js.Object {
   }
   
   
+  trait ListFunctionsRequest extends js.Object {
+    /**
+         * The GraphQL API ID.
+         */
+    var apiId: java.lang.String
+    /**
+         * The maximum number of results you want the request to return.
+         */
+    var maxResults: js.UndefOr[MaxResults] = js.undefined
+    /**
+         * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+         */
+    var nextToken: js.UndefOr[PaginationToken] = js.undefined
+  }
+  
+  
+  trait ListFunctionsResponse extends js.Object {
+    /**
+         * A list of Function objects.
+         */
+    var functions: js.UndefOr[Functions] = js.undefined
+    /**
+         * An identifier that was returned from the previous call to this operation, which can be used to return the next set of items in the list.
+         */
+    var nextToken: js.UndefOr[PaginationToken] = js.undefined
+  }
+  
+  
   trait ListGraphqlApisRequest extends js.Object {
     /**
          * The maximum number of results you want the request to return.
@@ -593,6 +776,38 @@ object AppSyncNs extends js.Object {
          * An identifier to be passed in the next request to this operation to return the next set of items in the list.
          */
     var nextToken: js.UndefOr[PaginationToken] = js.undefined
+  }
+  
+  
+  trait ListResolversByFunctionRequest extends js.Object {
+    /**
+         * The API ID.
+         */
+    var apiId: java.lang.String
+    /**
+         * The Function ID.
+         */
+    var functionId: java.lang.String
+    /**
+         * The maximum number of results you want the request to return.
+         */
+    var maxResults: js.UndefOr[MaxResults] = js.undefined
+    /**
+         * An identifier that was returned from the previous call to this operation, which you can use to return the next set of items in the list.
+         */
+    var nextToken: js.UndefOr[PaginationToken] = js.undefined
+  }
+  
+  
+  trait ListResolversByFunctionResponse extends js.Object {
+    /**
+         * An identifier that can be used to return the next set of items in the list.
+         */
+    var nextToken: js.UndefOr[PaginationToken] = js.undefined
+    /**
+         * The list of resolvers.
+         */
+    var resolvers: js.UndefOr[Resolvers] = js.undefined
   }
   
   
@@ -666,7 +881,7 @@ object AppSyncNs extends js.Object {
          */
     var cloudWatchLogsRoleArn: java.lang.String
     /**
-         * The field logging level. Values can be NONE, ERROR, ALL.     NONE: No field-level logs are captured.    ERROR: Logs the following information only for the fields that are in error:   The error section in the server response.   Field-level errors.   The generated request/response functions that got resolved for error fields.      ALL: The following information is logged for all fields in the query:   Field-level tracing information.   The generated request/response functions that got resolved for each field.    
+         * The field logging level. Values can be NONE, ERROR, or ALL.     NONE: No field-level logs are captured.    ERROR: Logs the following information only for the fields that are in error:   The error section in the server response.   Field-level errors.   The generated request/response functions that got resolved for error fields.      ALL: The following information is logged for all fields in the query:   Field-level tracing information.   The generated request/response functions that got resolved for each field.    
          */
     var fieldLogLevel: FieldLogLevel
   }
@@ -682,7 +897,7 @@ object AppSyncNs extends js.Object {
          */
     var authTTL: js.UndefOr[Long] = js.undefined
     /**
-         * The client identifier of the Relying party at the OpenID Provider. This identifier is typically obtained when the Relying party is registered with the OpenID Provider. You can specify a regular expression so the AWS AppSync can validate against multiple client identifiers at a time
+         * The client identifier of the Relying party at the OpenID identity provider. This identifier is typically obtained when the Relying party is registered with the OpenID identity provider. You can specify a regular expression so the AWS AppSync can validate against multiple client identifiers at a time.
          */
     var clientId: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -690,9 +905,53 @@ object AppSyncNs extends js.Object {
          */
     var iatTTL: js.UndefOr[Long] = js.undefined
     /**
-         * The issuer for the open id connect configuration. The issuer returned by discovery MUST exactly match the value of iss in the ID Token.
+         * The issuer for the OpenID Connect configuration. The issuer returned by discovery must exactly match the value of iss in the ID token.
          */
     var issuer: java.lang.String
+  }
+  
+  
+  trait PipelineConfig extends js.Object {
+    /**
+         * A list of Function objects.
+         */
+    var functions: js.UndefOr[FunctionsIds] = js.undefined
+  }
+  
+  
+  trait RdsHttpEndpointConfig extends js.Object {
+    /**
+         * AWS Region for RDS HTTP endpoint.
+         */
+    var awsRegion: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * AWS secret store ARN for database credentials.
+         */
+    var awsSecretStoreArn: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Logical database name.
+         */
+    var databaseName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Amazon RDS cluster identifier.
+         */
+    var dbClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Logical schema name.
+         */
+    var schema: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait RelationalDatabaseDataSourceConfig extends js.Object {
+    /**
+         * Amazon RDS HTTP endpoint settings.
+         */
+    var rdsHttpEndpointConfig: js.UndefOr[RdsHttpEndpointConfig] = js.undefined
+    /**
+         * Source type for the relational database.    RDS_HTTP_ENDPOINT: The relational database source type is an Amazon RDS HTTP endpoint.  
+         */
+    var relationalDatabaseSourceType: js.UndefOr[RelationalDatabaseSourceType] = js.undefined
   }
   
   
@@ -705,6 +964,14 @@ object AppSyncNs extends js.Object {
          * The resolver field name.
          */
     var fieldName: js.UndefOr[ResourceName] = js.undefined
+    /**
+         * The resolver type.    UNIT: A UNIT resolver type. A UNIT resolver is the default resolver type. A UNIT resolver enables you to execute a GraphQL query against a single data source.    PIPELINE: A PIPELINE resolver type. A PIPELINE resolver enables you to execute a series of Function in a serial manner. You can use a pipeline resolver to execute a GraphQL query against multiple data sources.  
+         */
+    var kind: js.UndefOr[ResolverKind] = js.undefined
+    /**
+         * The PipelineConfig.
+         */
+    var pipelineConfig: js.UndefOr[PipelineConfig] = js.undefined
     /**
          * The request mapping template.
          */
@@ -738,7 +1005,7 @@ object AppSyncNs extends js.Object {
   
   trait StartSchemaCreationResponse extends js.Object {
     /**
-         * The current state of the schema (PROCESSING, ACTIVE, or DELETING). Once the schema is in the ACTIVE state, you can add data.
+         * The current state of the schema (PROCESSING, ACTIVE, or DELETING). When the schema is in the ACTIVE state, you can add data.
          */
     var status: js.UndefOr[SchemaStatus] = js.undefined
   }
@@ -830,6 +1097,35 @@ object AppSyncNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a Function object. A function is a reusable entity. Multiple functions can be used to compose the resolver logic.
+       */
+    def createFunction(): awsDashSdkLib.libRequestMod.Request[CreateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a Function object. A function is a reusable entity. Multiple functions can be used to compose the resolver logic.
+       */
+    def createFunction(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateFunctionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a Function object. A function is a reusable entity. Multiple functions can be used to compose the resolver logic.
+       */
+    def createFunction(params: CreateFunctionRequest): awsDashSdkLib.libRequestMod.Request[CreateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a Function object. A function is a reusable entity. Multiple functions can be used to compose the resolver logic.
+       */
+    def createFunction(
+      params: CreateFunctionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateFunctionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Creates a GraphqlApi object.
        */
@@ -976,6 +1272,35 @@ object AppSyncNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Deletes a Function.
+       */
+    def deleteFunction(): awsDashSdkLib.libRequestMod.Request[DeleteFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a Function.
+       */
+    def deleteFunction(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteFunctionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a Function.
+       */
+    def deleteFunction(params: DeleteFunctionRequest): awsDashSdkLib.libRequestMod.Request[DeleteFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a Function.
+       */
+    def deleteFunction(
+      params: DeleteFunctionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteFunctionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Deletes a GraphqlApi object.
        */
     def deleteGraphqlApi(): awsDashSdkLib.libRequestMod.Request[DeleteGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1091,6 +1416,35 @@ object AppSyncNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get a Function.
+       */
+    def getFunction(): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get a Function.
+       */
+    def getFunction(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetFunctionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get a Function.
+       */
+    def getFunction(params: GetFunctionRequest): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get a Function.
+       */
+    def getFunction(
+      params: GetFunctionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetFunctionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Retrieves a GraphqlApi object.
        */
@@ -1287,6 +1641,35 @@ object AppSyncNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDataSourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * List multiple functions.
+       */
+    def listFunctions(): awsDashSdkLib.libRequestMod.Request[ListFunctionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List multiple functions.
+       */
+    def listFunctions(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListFunctionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListFunctionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List multiple functions.
+       */
+    def listFunctions(params: ListFunctionsRequest): awsDashSdkLib.libRequestMod.Request[ListFunctionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List multiple functions.
+       */
+    def listFunctions(
+      params: ListFunctionsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListFunctionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListFunctionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Lists your GraphQL APIs.
        */
     def listGraphqlApis(): awsDashSdkLib.libRequestMod.Request[ListGraphqlApisResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1344,6 +1727,35 @@ object AppSyncNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListResolversResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List the resolvers that are associated with a specific function.
+       */
+    def listResolversByFunction(): awsDashSdkLib.libRequestMod.Request[ListResolversByFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List the resolvers that are associated with a specific function.
+       */
+    def listResolversByFunction(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListResolversByFunctionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListResolversByFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List the resolvers that are associated with a specific function.
+       */
+    def listResolversByFunction(params: ListResolversByFunctionRequest): awsDashSdkLib.libRequestMod.Request[ListResolversByFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * List the resolvers that are associated with a specific function.
+       */
+    def listResolversByFunction(
+      params: ListResolversByFunctionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListResolversByFunctionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListResolversByFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Lists the types for a given API.
        */
@@ -1461,6 +1873,35 @@ object AppSyncNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateDataSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Updates a Function object.
+       */
+    def updateFunction(): awsDashSdkLib.libRequestMod.Request[UpdateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a Function object.
+       */
+    def updateFunction(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateFunctionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a Function object.
+       */
+    def updateFunction(params: UpdateFunctionRequest): awsDashSdkLib.libRequestMod.Request[UpdateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a Function object.
+       */
+    def updateFunction(
+      params: UpdateFunctionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateFunctionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Updates a GraphqlApi object.
        */
     def updateGraphqlApi(): awsDashSdkLib.libRequestMod.Request[UpdateGraphqlApiResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1552,7 +1993,7 @@ object AppSyncNs extends js.Object {
   
   trait UpdateApiKeyRequest extends js.Object {
     /**
-         * The ID for the GraphQL API
+         * The ID for the GraphQL API.
          */
     var apiId: java.lang.String
     /**
@@ -1588,25 +2029,29 @@ object AppSyncNs extends js.Object {
          */
     var description: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The new DynamoDB configuration.
+         * The new Amazon DynamoDB configuration.
          */
     var dynamodbConfig: js.UndefOr[DynamodbDataSourceConfig] = js.undefined
     /**
-         * The new Elasticsearch configuration.
+         * The new Elasticsearch Service configuration.
          */
     var elasticsearchConfig: js.UndefOr[ElasticsearchDataSourceConfig] = js.undefined
     /**
-         * The new http endpoint configuration
+         * The new HTTP endpoint configuration.
          */
     var httpConfig: js.UndefOr[HttpDataSourceConfig] = js.undefined
     /**
-         * The new Lambda configuration.
+         * The new AWS Lambda configuration.
          */
     var lambdaConfig: js.UndefOr[LambdaDataSourceConfig] = js.undefined
     /**
          * The new name for the data source.
          */
     var name: ResourceName
+    /**
+         * The new relational database configuration.
+         */
+    var relationalDatabaseConfig: js.UndefOr[RelationalDatabaseDataSourceConfig] = js.undefined
     /**
          * The new service role ARN for the data source.
          */
@@ -1626,6 +2071,50 @@ object AppSyncNs extends js.Object {
   }
   
   
+  trait UpdateFunctionRequest extends js.Object {
+    /**
+         * The GraphQL API ID.
+         */
+    var apiId: java.lang.String
+    /**
+         * The Function DataSource name.
+         */
+    var dataSourceName: ResourceName
+    /**
+         * The Function description.
+         */
+    var description: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The function ID.
+         */
+    var functionId: ResourceName
+    /**
+         * The version of the request mapping template. Currently the supported value is 2018-05-29. 
+         */
+    var functionVersion: java.lang.String
+    /**
+         * The Function name.
+         */
+    var name: ResourceName
+    /**
+         * The Function request mapping template. Functions support only the 2018-05-29 version of the request mapping template.
+         */
+    var requestMappingTemplate: MappingTemplate
+    /**
+         * The Function request mapping template. 
+         */
+    var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
+  }
+  
+  
+  trait UpdateFunctionResponse extends js.Object {
+    /**
+         * The Function object.
+         */
+    var functionConfiguration: js.UndefOr[FunctionConfiguration] = js.undefined
+  }
+  
+  
   trait UpdateGraphqlApiRequest extends js.Object {
     /**
          * The API ID.
@@ -1636,7 +2125,7 @@ object AppSyncNs extends js.Object {
          */
     var authenticationType: js.UndefOr[AuthenticationType] = js.undefined
     /**
-         * The Amazon CloudWatch logs configuration for the GraphqlApi object.
+         * The Amazon CloudWatch Logs configuration for the GraphqlApi object.
          */
     var logConfig: js.UndefOr[LogConfig] = js.undefined
     /**
@@ -1644,11 +2133,11 @@ object AppSyncNs extends js.Object {
          */
     var name: java.lang.String
     /**
-         * The Open Id Connect configuration configuration for the GraphqlApi object.
+         * The OpenID Connect configuration for the GraphqlApi object.
          */
     var openIDConnectConfig: js.UndefOr[OpenIDConnectConfig] = js.undefined
     /**
-         * The new Amazon Cognito User Pool configuration for the GraphqlApi object.
+         * The new Amazon Cognito user pool configuration for the GraphqlApi object.
          */
     var userPoolConfig: js.UndefOr[UserPoolConfig] = js.undefined
   }
@@ -1670,11 +2159,19 @@ object AppSyncNs extends js.Object {
     /**
          * The new data source name.
          */
-    var dataSourceName: ResourceName
+    var dataSourceName: js.UndefOr[ResourceName] = js.undefined
     /**
          * The new field name.
          */
     var fieldName: ResourceName
+    /**
+         * The resolver type.    UNIT: A UNIT resolver type. A UNIT resolver is the default resolver type. A UNIT resolver enables you to execute a GraphQL query against a single data source.    PIPELINE: A PIPELINE resolver type. A PIPELINE resolver enables you to execute a series of Function in a serial manner. You can use a pipeline resolver to execute a GraphQL query against multiple data sources.  
+         */
+    var kind: js.UndefOr[ResolverKind] = js.undefined
+    /**
+         * The PipelineConfig.
+         */
+    var pipelineConfig: js.UndefOr[PipelineConfig] = js.undefined
     /**
          * The new request mapping template.
          */
@@ -1728,15 +2225,15 @@ object AppSyncNs extends js.Object {
   
   trait UserPoolConfig extends js.Object {
     /**
-         * A regular expression for validating the incoming Amazon Cognito User Pool app client ID.
+         * A regular expression for validating the incoming Amazon Cognito user pool app client ID.
          */
     var appIdClientRegex: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The AWS region in which the user pool was created.
+         * The AWS Region in which the user pool was created.
          */
     var awsRegion: java.lang.String
     /**
-         * The action that you want your GraphQL API to take when a request that uses Amazon Cognito User Pool authentication doesn't match the Amazon Cognito User Pool configuration.
+         * The action that you want your GraphQL API to take when a request that uses Amazon Cognito user pool authentication doesn't match the Amazon Cognito user pool configuration.
          */
     var defaultAction: DefaultAction
     /**
@@ -1748,18 +2245,23 @@ object AppSyncNs extends js.Object {
   val TypesNs: this.type = js.native
   type ApiKeys = js.Array[ApiKey]
   type AuthenticationType = awsDashSdkLib.awsDashSdkLibStrings.API_KEY | awsDashSdkLib.awsDashSdkLibStrings.AWS_IAM | awsDashSdkLib.awsDashSdkLibStrings.AMAZON_COGNITO_USER_POOLS | awsDashSdkLib.awsDashSdkLibStrings.OPENID_CONNECT | java.lang.String
+  type AuthorizationType = awsDashSdkLib.awsDashSdkLibStrings.AWS_IAM | java.lang.String
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type DataSourceType = awsDashSdkLib.awsDashSdkLibStrings.AWS_LAMBDA | awsDashSdkLib.awsDashSdkLibStrings.AMAZON_DYNAMODB | awsDashSdkLib.awsDashSdkLibStrings.AMAZON_ELASTICSEARCH | awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.HTTP | java.lang.String
+  type DataSourceType = awsDashSdkLib.awsDashSdkLibStrings.AWS_LAMBDA | awsDashSdkLib.awsDashSdkLibStrings.AMAZON_DYNAMODB | awsDashSdkLib.awsDashSdkLibStrings.AMAZON_ELASTICSEARCH | awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.RELATIONAL_DATABASE | java.lang.String
   type DataSources = js.Array[DataSource]
   type DefaultAction = awsDashSdkLib.awsDashSdkLibStrings.ALLOW | awsDashSdkLib.awsDashSdkLibStrings.DENY | java.lang.String
   type FieldLogLevel = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
+  type Functions = js.Array[FunctionConfiguration]
+  type FunctionsIds = js.Array[java.lang.String]
   type GraphqlApis = js.Array[GraphqlApi]
   type Long = scala.Double
   type MappingTemplate = java.lang.String
   type MaxResults = scala.Double
   type OutputType = awsDashSdkLib.awsDashSdkLibStrings.SDL | awsDashSdkLib.awsDashSdkLibStrings.JSON | java.lang.String
   type PaginationToken = java.lang.String
+  type RelationalDatabaseSourceType = awsDashSdkLib.awsDashSdkLibStrings.RDS_HTTP_ENDPOINT | java.lang.String
+  type ResolverKind = awsDashSdkLib.awsDashSdkLibStrings.UNIT | awsDashSdkLib.awsDashSdkLibStrings.PIPELINE | java.lang.String
   type Resolvers = js.Array[Resolver]
   type ResourceName = java.lang.String
   type SchemaStatus = awsDashSdkLib.awsDashSdkLibStrings.PROCESSING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String

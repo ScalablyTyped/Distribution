@@ -1386,6 +1386,10 @@ object WAFRegionalNs extends js.Object {
   
   trait ListResourcesForWebACLRequest extends js.Object {
     /**
+         * The type of resource to list, either and application load balancer or Amazon API Gateway.
+         */
+    var ResourceType: js.UndefOr[ResourceType] = js.undefined
+    /**
          * The unique identifier (ID) of the web ACL for which to list the associated resources.
          */
     var WebACLId: ResourceId
@@ -1570,11 +1574,11 @@ object WAFRegionalNs extends js.Object {
   
   trait LoggingConfiguration extends js.Object {
     /**
-         * An array of Amazon Kinesis Data Firehose delivery stream ARNs.
+         * An array of Amazon Kinesis Data Firehose ARNs.
          */
     var LogDestinationConfigs: LogDestinationConfigs
     /**
-         * The parts of the request that you want redacted from the logs. For example, if you redact the cookie field, the cookie field in the delivery stream will be xxx. 
+         * The parts of the request that you want redacted from the logs. For example, if you redact the cookie field, the cookie field in the firehose will be xxx. 
          */
     var RedactedFields: js.UndefOr[RedactedFields] = js.undefined
     /**
@@ -1602,7 +1606,7 @@ object WAFRegionalNs extends js.Object {
   
   trait PutLoggingConfigurationRequest extends js.Object {
     /**
-         * The Amazon Kinesis Data Firehose delivery streams that contains the inspected traffic information, the redacted fields details, and the Amazon Resource Name (ARN) of the web ACL to monitor.
+         * The Amazon Kinesis Data Firehose that contains the inspected traffic information, the redacted fields details, and the Amazon Resource Name (ARN) of the web ACL to monitor.
          */
     var LoggingConfiguration: LoggingConfiguration
   }
@@ -3827,11 +3831,11 @@ object WAFRegionalNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListXssMatchSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose delivery stream. For more information, see Creating an Amazon Kinesis Data Firehose Delivery Stream.    Associate that delivery stream to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose delivery stream. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+       * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
        */
     def putLoggingConfiguration(): awsDashSdkLib.libRequestMod.Request[PutLoggingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose delivery stream. For more information, see Creating an Amazon Kinesis Data Firehose Delivery Stream.    Associate that delivery stream to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose delivery stream. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+       * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
        */
     def putLoggingConfiguration(
       callback: js.Function2[
@@ -3841,11 +3845,11 @@ object WAFRegionalNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutLoggingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose delivery stream. For more information, see Creating an Amazon Kinesis Data Firehose Delivery Stream.    Associate that delivery stream to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose delivery stream. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+       * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
        */
     def putLoggingConfiguration(params: PutLoggingConfigurationRequest): awsDashSdkLib.libRequestMod.Request[PutLoggingConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose delivery stream. For more information, see Creating an Amazon Kinesis Data Firehose Delivery Stream.    Associate that delivery stream to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose delivery stream. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
+       * Associates a LoggingConfiguration with a specified web ACL. You can access information about all traffic that AWS WAF inspects using the following steps:   Create an Amazon Kinesis Data Firehose .    Associate that firehose to your web ACL using a PutLoggingConfiguration request.   When you successfully enable logging using a PutLoggingConfiguration request, AWS WAF will create a service linked role with the necessary permissions to write logs to the Amazon Kinesis Data Firehose. For more information, see Logging Web ACL Traffic Information in the AWS WAF Developer Guide.
        */
     def putLoggingConfiguration(
       params: PutLoggingConfigurationRequest,
@@ -4565,6 +4569,10 @@ object WAFRegionalNs extends js.Object {
          */
     var Rules: ActivatedRules
     /**
+         * Tha Amazon Resource Name (ARN) of the web ACL.
+         */
+    var WebACLArn: js.UndefOr[ResourceArn] = js.undefined
+    /**
          * A unique identifier for a WebACL. You use WebACLId to get information about a WebACL (see GetWebACL), update a WebACL (see UpdateWebACL), and delete a WebACL from AWS WAF (see DeleteWebACL).  WebACLId is returned by CreateWebACL and by ListWebACLs.
          */
     var WebACLId: ResourceId
@@ -4705,6 +4713,7 @@ object WAFRegionalNs extends js.Object {
   type ResourceArns = js.Array[ResourceArn]
   type ResourceId = java.lang.String
   type ResourceName = java.lang.String
+  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.APPLICATION_LOAD_BALANCER | awsDashSdkLib.awsDashSdkLibStrings.API_GATEWAY | java.lang.String
   type RuleGroupSummaries = js.Array[RuleGroupSummary]
   type RuleGroupUpdates = js.Array[RuleGroupUpdate]
   type RulePriority = scala.Double

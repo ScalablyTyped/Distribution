@@ -190,63 +190,61 @@ class Realm () extends js.Object {
        * @param  {number|string} key
        * @returns {T | undefined}
        */
-  def objectForPrimaryKey[T](`type`: java.lang.String, key: java.lang.String): js.UndefOr[T] = js.native
+  def objectForPrimaryKey[T](`type`: java.lang.String, key: java.lang.String): T with js.UndefOr[realmLib.RealmNs.Object] = js.native
   /**
        * @param  {string|Realm.ObjectType|Function} type
        * @param  {number|string} key
        * @returns {T | undefined}
        */
-  def objectForPrimaryKey[T](`type`: java.lang.String, key: scala.Double): js.UndefOr[T] = js.native
+  def objectForPrimaryKey[T](`type`: java.lang.String, key: scala.Double): T with js.UndefOr[realmLib.RealmNs.Object] = js.native
   /**
        * @param  {string|Realm.ObjectType|Function} type
        * @param  {number|string} key
        * @returns {T | undefined}
        */
-  def objectForPrimaryKey[T](`type`: js.Function, key: java.lang.String): js.UndefOr[T] = js.native
+  def objectForPrimaryKey[T](`type`: js.Function, key: java.lang.String): T with js.UndefOr[realmLib.RealmNs.Object] = js.native
   /**
        * @param  {string|Realm.ObjectType|Function} type
        * @param  {number|string} key
        * @returns {T | undefined}
        */
-  def objectForPrimaryKey[T](`type`: js.Function, key: scala.Double): js.UndefOr[T] = js.native
+  def objectForPrimaryKey[T](`type`: js.Function, key: scala.Double): T with js.UndefOr[realmLib.RealmNs.Object] = js.native
   /**
        * @param  {string|Realm.ObjectType|Function} type
        * @param  {number|string} key
        * @returns {T | undefined}
        */
-  def objectForPrimaryKey[T](`type`: realmLib.RealmNs.ObjectType, key: java.lang.String): js.UndefOr[T] = js.native
+  def objectForPrimaryKey[T](`type`: realmLib.RealmNs.ObjectType, key: java.lang.String): T with js.UndefOr[realmLib.RealmNs.Object] = js.native
   /**
        * @param  {string|Realm.ObjectType|Function} type
        * @param  {number|string} key
        * @returns {T | undefined}
        */
-  def objectForPrimaryKey[T](`type`: realmLib.RealmNs.ObjectType, key: scala.Double): js.UndefOr[T] = js.native
+  def objectForPrimaryKey[T](`type`: realmLib.RealmNs.ObjectType, key: scala.Double): T with js.UndefOr[realmLib.RealmNs.Object] = js.native
   /**
        * @param  {string|Realm.ObjectType|Function} type
        * @returns Realm
        */
-  def objects[T](`type`: java.lang.String): realmLib.RealmNs.Results[T] = js.native
+  def objects[T](`type`: java.lang.String): realmLib.RealmNs.Results[T with realmLib.RealmNs.Object] = js.native
   /**
        * @param  {string|Realm.ObjectType|Function} type
        * @returns Realm
        */
-  def objects[T](`type`: js.Function): realmLib.RealmNs.Results[T] = js.native
+  def objects[T](`type`: js.Function): realmLib.RealmNs.Results[T with realmLib.RealmNs.Object] = js.native
   /**
        * @param  {string|Realm.ObjectType|Function} type
        * @returns Realm
        */
-  def objects[T](`type`: realmLib.RealmNs.ObjectType): realmLib.RealmNs.Results[T] = js.native
+  def objects[T](`type`: realmLib.RealmNs.ObjectType): realmLib.RealmNs.Results[T with realmLib.RealmNs.Object] = js.native
   def permissions(): realmLib.RealmNs.PermissionsNs.Realm = js.native
   def permissions(objectType: java.lang.String): realmLib.RealmNs.PermissionsNs.Class = js.native
   def permissions(objectType: js.Function): realmLib.RealmNs.PermissionsNs.Class = js.native
   def permissions(objectType: realmLib.RealmNs.ObjectSchema): realmLib.RealmNs.PermissionsNs.Class = js.native
-  def privileges(): realmLib.RealmNs.PermissionsNs.Realm = js.native
+  def privileges(): realmLib.RealmNs.PermissionsNs.RealmPrivileges = js.native
   def privileges(objectType: java.lang.String): realmLib.RealmNs.PermissionsNs.ClassPrivileges = js.native
   def privileges(objectType: js.Function): realmLib.RealmNs.PermissionsNs.ClassPrivileges = js.native
   def privileges(objectType: realmLib.RealmNs.ObjectSchema): realmLib.RealmNs.PermissionsNs.ClassPrivileges = js.native
   def privileges(obj: realmLib.RealmNs.Object): realmLib.RealmNs.PermissionsNs.ObjectPrivileges = js.native
-  @JSName("privileges")
-  def privileges_RealmPrivileges(): realmLib.RealmNs.PermissionsNs.RealmPrivileges = js.native
   /**
        * @param  {string} name?
        * @returns void
@@ -277,6 +275,9 @@ class Realm () extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def subscriptions(): js.Array[NamedSubscription] = js.native
+  def subscriptions(name: java.lang.String): js.Array[NamedSubscription] = js.native
+  def unsubscribe(name: java.lang.String): scala.Unit = js.native
   /**
        * @param  {()=>void} callback
        * @returns void
@@ -325,7 +326,7 @@ object Realm extends js.Object {
        * @param {Realm.ObjectSchema} object schema describing the object that should be created.
        * @returns {T}
        */
-  def createTemplateObject[T](objectSchema: realmLib.RealmNs.ObjectSchema): T = js.native
+  def createTemplateObject[T](objectSchema: realmLib.RealmNs.ObjectSchema): T with realmLib.RealmNs.Object = js.native
   /**
        * Delete the Realm file for the given configuration.
        * @param {Configuration} config

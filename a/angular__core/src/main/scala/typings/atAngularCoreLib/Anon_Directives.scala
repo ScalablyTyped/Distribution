@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Directives[T] extends js.Object {
   /**
-       * Registry of the animation triggers present on the component that will be used by the view.
-       */
-  var animations: js.UndefOr[js.Array[_] | scala.Null] = js.undefined
-  /**
        * Static attributes to set on host element.
        *
        * Even indices: attribute name
@@ -35,7 +31,7 @@ trait Anon_Directives[T] extends js.Object {
   /**
        * Function to create instances of content queries associated with a given directive.
        */
-  var contentQueries: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var contentQueries: js.UndefOr[js.Function1[/* dirIndex */ scala.Double, scala.Unit]] = js.undefined
   /** Refreshes content queries associated with directives in a given view */
   var contentQueriesRefresh: js.UndefOr[
     js.Function2[/* directiveIndex */ scala.Double, /* queryIndex */ scala.Double, scala.Unit]
@@ -69,11 +65,11 @@ trait Anon_Directives[T] extends js.Object {
   /**
        * Factory method used to create an instance of directive.
        */
-  var factory: js.Function0[T]
+  var factory: js.Function1[/* t */ atAngularCoreLib.srcTypeMod.Type[T] | scala.Null, T]
   /**
        * A list of optional features to apply.
        *
-       * See: {@link NgOnChangesFeature}, {@link PublicFeature}
+       * See: {@link NgOnChangesFeature}, {@link ProvidersFeature}
        */
   var features: js.UndefOr[js.Array[atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDefFeature]] = js.undefined
   /**
@@ -153,11 +149,6 @@ trait Anon_Directives[T] extends js.Object {
   var pipes: js.UndefOr[
     atAngularCoreLib.srcRender3InterfacesDefinitionMod.PipeTypesOrFactory | scala.Null
   ] = js.undefined
-  /**
-       * Defines the set of injectable objects that are visible to a Directive and its light DOM
-       * children.
-       */
-  var providers: js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.Provider]] = js.undefined
   /** The selectors that will be used to match nodes to this component. */
   var selectors: atAngularCoreLib.srcRender3InterfacesProjectionMod.CssSelectorList
   /**
@@ -205,10 +196,6 @@ trait Anon_Directives[T] extends js.Object {
        * can pre-fill the array and set the host binding start index.
        */
   var vars: scala.Double
-  /**
-       * Defines the set of injectable objects that are visible to its view DOM children.
-       */
-  var viewProviders: js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.Provider]] = js.undefined
   /**
        * Additional set of instructions specific to view query processing. This could be seen as a
        * set of instruction to be inserted into the template function.

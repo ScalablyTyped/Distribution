@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait ThemeProviderProps[Theme] extends js.Object {
-  var theme: stdLib.Partial[Theme] | (js.Function1[/* theme */ Theme, Theme])
+  var theme: stdLib.Partial[Theme] | (js.Function1[/* outerTheme */ Theme, Theme])
 }
 

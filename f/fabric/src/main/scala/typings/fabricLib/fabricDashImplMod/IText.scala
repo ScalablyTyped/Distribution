@@ -105,6 +105,13 @@ class IText protected () extends Text {
   	 */
   def getSelectionStyles(startIndex: scala.Double, endIndex: scala.Double): js.Any = js.native
   /**
+  	 * Gets style of a current selection/cursor (at the start position)
+  	 * @param [startIndex] Start index to get styles at
+  	 * @param [endIndex] End index to get styles at
+  	 * @return styles Style object at a specified (or current) index
+  	 */
+  def getSelectionStyles(startIndex: scala.Double, endIndex: scala.Double, complete: scala.Boolean): js.Any = js.native
+  /**
   	 * Initializes "added" event handler
   	 */
   def initAddedHandler(): scala.Unit = js.native

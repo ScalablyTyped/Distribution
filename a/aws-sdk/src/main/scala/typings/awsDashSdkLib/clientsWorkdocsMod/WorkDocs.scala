@@ -278,14 +278,14 @@ trait WorkDocs
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Configure WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Confirm the Subscription in the Amazon Simple Notification Service Developer Guide.
+     * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
      */
   def createNotificationSubscription(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.CreateNotificationSubscriptionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Configure WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Confirm the Subscription in the Amazon Simple Notification Service Developer Guide.
+     * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
      */
   def createNotificationSubscription(
     callback: js.Function2[
@@ -298,14 +298,14 @@ trait WorkDocs
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Configure WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Confirm the Subscription in the Amazon Simple Notification Service Developer Guide.
+     * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
      */
   def createNotificationSubscription(params: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.CreateNotificationSubscriptionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.CreateNotificationSubscriptionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Configure WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Confirm the Subscription in the Amazon Simple Notification Service Developer Guide.
+     * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
      */
   def createNotificationSubscription(
     params: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.CreateNotificationSubscriptionRequest,
@@ -753,14 +753,14 @@ trait WorkDocs
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the groups specified by query.
+     * Describes the groups specified by the query. Groups are defined by the underlying Active Directory.
      */
   def describeGroups(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.DescribeGroupsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the groups specified by query.
+     * Describes the groups specified by the query. Groups are defined by the underlying Active Directory.
      */
   def describeGroups(
     callback: js.Function2[
@@ -773,14 +773,14 @@ trait WorkDocs
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the groups specified by query.
+     * Describes the groups specified by the query. Groups are defined by the underlying Active Directory.
      */
   def describeGroups(params: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.DescribeGroupsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.DescribeGroupsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the groups specified by query.
+     * Describes the groups specified by the query. Groups are defined by the underlying Active Directory.
      */
   def describeGroups(
     params: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.DescribeGroupsRequest,
@@ -876,14 +876,14 @@ trait WorkDocs
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients.
+     * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients. This action requires an authentication token. To get an authentication token, register an application with Amazon WorkDocs. For more information, see Authentication and Access Control for User Applications in the Amazon WorkDocs Developer Guide.
      */
   def describeRootFolders(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.DescribeRootFoldersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients.
+     * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients. This action requires an authentication token. To get an authentication token, register an application with Amazon WorkDocs. For more information, see Authentication and Access Control for User Applications in the Amazon WorkDocs Developer Guide.
      */
   def describeRootFolders(
     callback: js.Function2[
@@ -896,14 +896,14 @@ trait WorkDocs
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients.
+     * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients. This action requires an authentication token. To get an authentication token, register an application with Amazon WorkDocs. For more information, see Authentication and Access Control for User Applications in the Amazon WorkDocs Developer Guide.
      */
   def describeRootFolders(params: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.DescribeRootFoldersRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.DescribeRootFoldersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients.
+     * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients. This action requires an authentication token. To get an authentication token, register an application with Amazon WorkDocs. For more information, see Authentication and Access Control for User Applications in the Amazon WorkDocs Developer Guide.
      */
   def describeRootFolders(
     params: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.DescribeRootFoldersRequest,
@@ -1201,6 +1201,47 @@ trait WorkDocs
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.GetFolderPathResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a collection of resources, including folders and documents. The only CollectionType supported is SHARED_WITH_ME.
+     */
+  def getResources(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.GetResourcesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a collection of resources, including folders and documents. The only CollectionType supported is SHARED_WITH_ME.
+     */
+  def getResources(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.GetResourcesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.GetResourcesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a collection of resources, including folders and documents. The only CollectionType supported is SHARED_WITH_ME.
+     */
+  def getResources(params: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.GetResourcesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.GetResourcesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a collection of resources, including folders and documents. The only CollectionType supported is SHARED_WITH_ME.
+     */
+  def getResources(
+    params: awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.GetResourcesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.GetResourcesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.GetResourcesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

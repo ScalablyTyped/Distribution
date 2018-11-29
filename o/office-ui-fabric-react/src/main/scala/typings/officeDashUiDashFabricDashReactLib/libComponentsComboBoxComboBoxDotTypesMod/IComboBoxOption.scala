@@ -17,7 +17,7 @@ trait IComboBoxOption
   /**
        * In scenarios where embedded data is used at the text prop, we will use the ariaLabel prop
        * to set the aria-label and preview text. Default to false
-       * @default false;
+       * @defaultvalue false;
        */
   var useAriaLabelAsText: js.UndefOr[scala.Boolean] = js.undefined
 }

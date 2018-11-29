@@ -22,6 +22,9 @@ object weixinDashAppLibStrings {
   sealed trait `4g` extends js.Object
   
   @js.native
+  sealed trait Anon_AuthSetting extends js.Object
+  
+  @js.native
   sealed trait CONNECT extends js.Object
   
   @js.native
@@ -199,6 +202,12 @@ object weixinDashAppLibStrings {
   sealed trait scopeDOTaddress extends js.Object
   
   @js.native
+  sealed trait scopeDOTcamera extends js.Object
+  
+  @js.native
+  sealed trait scopeDOTinvoice extends js.Object
+  
+  @js.native
   sealed trait scopeDOTinvoiceTitle extends js.Object
   
   @js.native
@@ -278,6 +287,7 @@ object weixinDashAppLibStrings {
   def `2g`: `2g` = "2g".asInstanceOf[`2g`]
   def `3g`: `3g` = "3g".asInstanceOf[`3g`]
   def `4g`: `4g` = "4g".asInstanceOf[`4g`]
+  def Anon_AuthSetting: Anon_AuthSetting = "Anon_AuthSetting".asInstanceOf[Anon_AuthSetting]
   def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   def Component: Component = "Component".asInstanceOf[Component]
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
@@ -337,6 +347,8 @@ object weixinDashAppLibStrings {
   def right: right = "right".asInstanceOf[right]
   def round: round = "round".asInstanceOf[round]
   def scopeDOTaddress: scopeDOTaddress = "scope.address".asInstanceOf[scopeDOTaddress]
+  def scopeDOTcamera: scopeDOTcamera = "scope.camera".asInstanceOf[scopeDOTcamera]
+  def scopeDOTinvoice: scopeDOTinvoice = "scope.invoice".asInstanceOf[scopeDOTinvoice]
   def scopeDOTinvoiceTitle: scopeDOTinvoiceTitle = "scope.invoiceTitle".asInstanceOf[scopeDOTinvoiceTitle]
   def scopeDOTrecord: scopeDOTrecord = "scope.record".asInstanceOf[scopeDOTrecord]
   def scopeDOTuserInfo: scopeDOTuserInfo = "scope.userInfo".asInstanceOf[scopeDOTuserInfo]

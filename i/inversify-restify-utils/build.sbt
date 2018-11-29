@@ -1,17 +1,17 @@
 organization := "com.scalablytyped"
 name := "inversify-restify-utils"
-version := "3.4.0-85154e"
+version := "3.4.0-a08707"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-406998",
-  "com.scalablytyped" %%% "gulp-debug" % "v2.0.1-dt-20180910Z-319512",
-  "com.scalablytyped" %%% "inversify" % "5.0.1-c85029",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "restify" % "7.2-dt-20181121Z-0c8203",
-  "com.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-80f04c",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-e292a0",
+  "com.scalablytyped" %%% "gulp-debug" % "v2.0.1-dt-20180910Z-d83860",
+  "com.scalablytyped" %%% "inversify" % "5.0.1-59cb6c",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "restify" % "7.2-dt-20181121Z-03549b",
+  "com.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-16a77c",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -49,6 +49,7 @@ trait OutputOptions extends js.Object {
   ] = js.undefined
   var paths: js.UndefOr[OptionsPaths] = js.undefined
   var sourcemap: js.UndefOr[scala.Boolean | rollupLib.rollupLibStrings.`inline`] = js.undefined
+  var sourcemapExcludeSources: js.UndefOr[scala.Boolean] = js.undefined
   var sourcemapFile: js.UndefOr[java.lang.String] = js.undefined
   var sourcemapPathTransform: js.UndefOr[js.Function1[/* sourcePath */ java.lang.String, java.lang.String]] = js.undefined
   var strict: js.UndefOr[scala.Boolean] = js.undefined

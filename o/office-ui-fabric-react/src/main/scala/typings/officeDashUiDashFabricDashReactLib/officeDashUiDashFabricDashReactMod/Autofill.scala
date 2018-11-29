@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* RemoveMultipleInheritance: Dropped parents List(officeDashUiDashFabricDashReactLib.libPickersMod.Autofill because Inheritance from two classes)*/
 @JSImport("office-ui-fabric-react", "Autofill")
 @js.native
 class Autofill protected ()
-  extends officeDashUiDashFabricDashReactLib.libPickersMod.Autofill {
+  extends officeDashUiDashFabricDashReactLib.libAutofillMod.Autofill {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsAutofillAutofillDotTypesMod.IAutofillProps) = this()
 }
 

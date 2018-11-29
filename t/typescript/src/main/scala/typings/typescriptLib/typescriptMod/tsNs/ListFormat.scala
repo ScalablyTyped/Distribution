@@ -32,6 +32,10 @@ object ListFormat extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.ListFormat
   
   @js.native
+  sealed trait AsteriskDelimited
+    extends typescriptLib.typescriptMod.tsNs.ListFormat
+  
+  @js.native
   sealed trait BarDelimited
     extends typescriptLib.typescriptMod.tsNs.ListFormat
   
@@ -105,6 +109,10 @@ object ListFormat extends js.Object {
   
   @js.native
   sealed trait IntersectionTypeConstituents
+    extends typescriptLib.typescriptMod.tsNs.ListFormat
+  
+  @js.native
+  sealed trait JSDocComment
     extends typescriptLib.typescriptMod.tsNs.ListFormat
   
   @js.native

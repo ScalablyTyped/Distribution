@@ -52,14 +52,14 @@ trait Redshift
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
+     * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
      */
   def authorizeClusterSecurityGroupIngress(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AuthorizeClusterSecurityGroupIngressResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
+     * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
      */
   def authorizeClusterSecurityGroupIngress(
     callback: js.Function2[
@@ -72,14 +72,14 @@ trait Redshift
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
+     * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
      */
   def authorizeClusterSecurityGroupIngress(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AuthorizeClusterSecurityGroupIngressMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AuthorizeClusterSecurityGroupIngressResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
+     * Adds an inbound (ingress) rule to an Amazon Redshift security group. Depending on whether the application accessing your cluster is running on the Internet or an Amazon EC2 instance, you can authorize inbound access to either a Classless Interdomain Routing (CIDR)/Internet Protocol (IP) range or to an Amazon EC2 security group. You can add as many as 20 ingress rules to an Amazon Redshift security group. If you authorize access to an Amazon EC2 security group, specify EC2SecurityGroupName and EC2SecurityGroupOwnerId. The Amazon EC2 security group and Amazon Redshift cluster must be in the same AWS Region.  If you authorize access to a CIDR/IP address range, specify CIDRIP. For an overview of CIDR blocks, see the Wikipedia article on Classless Inter-Domain Routing.  You must also associate the security group with a cluster so that clients running on these IP addresses or the EC2 instance are authorized to connect to the cluster. For information about managing security groups, go to Working with Security Groups in the Amazon Redshift Cluster Management Guide.
      */
   def authorizeClusterSecurityGroupIngress(
     params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AuthorizeClusterSecurityGroupIngressMessage,
@@ -131,6 +131,129 @@ trait Redshift
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AuthorizeSnapshotAccessResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a set of cluster snapshots.
+     */
+  def batchDeleteClusterSnapshots(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchDeleteClusterSnapshotsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a set of cluster snapshots.
+     */
+  def batchDeleteClusterSnapshots(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchDeleteClusterSnapshotsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchDeleteClusterSnapshotsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a set of cluster snapshots.
+     */
+  def batchDeleteClusterSnapshots(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchDeleteClusterSnapshotsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchDeleteClusterSnapshotsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a set of cluster snapshots.
+     */
+  def batchDeleteClusterSnapshots(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchDeleteClusterSnapshotsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchDeleteClusterSnapshotsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchDeleteClusterSnapshotsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the settings for a list of snapshots.
+     */
+  def batchModifyClusterSnapshots(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchModifyClusterSnapshotsOutputMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the settings for a list of snapshots.
+     */
+  def batchModifyClusterSnapshots(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchModifyClusterSnapshotsOutputMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchModifyClusterSnapshotsOutputMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the settings for a list of snapshots.
+     */
+  def batchModifyClusterSnapshots(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchModifyClusterSnapshotsMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchModifyClusterSnapshotsOutputMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the settings for a list of snapshots.
+     */
+  def batchModifyClusterSnapshots(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchModifyClusterSnapshotsMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchModifyClusterSnapshotsOutputMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.BatchModifyClusterSnapshotsOutputMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Cancels a resize operation.
+     */
+  def cancelResize(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ResizeProgressMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Cancels a resize operation.
+     */
+  def cancelResize(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ResizeProgressMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ResizeProgressMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Cancels a resize operation.
+     */
+  def cancelResize(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.CancelResizeMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ResizeProgressMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Cancels a resize operation.
+     */
+  def cancelResize(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.CancelResizeMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ResizeProgressMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ResizeProgressMessage, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -544,6 +667,47 @@ trait Redshift
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Creates a new snapshot schedule.
+     */
+  def createSnapshotSchedule(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new snapshot schedule.
+     */
+  def createSnapshotSchedule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new snapshot schedule.
+     */
+  def createSnapshotSchedule(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.CreateSnapshotScheduleMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new snapshot schedule.
+     */
+  def createSnapshotSchedule(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.CreateSnapshotScheduleMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Adds one or more tags to a specified resource. A resource can have up to 50 tags. If you try to create more than 50 tags for a resource, you will receive an error and the attempt will fail. If you specify a key that already exists for the resource, the value for that key will be updated with the new value.
      */
   def createTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -794,6 +958,27 @@ trait Redshift
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     * Deletes a snapshot schedule.
+     */
+  def deleteSnapshotSchedule(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a snapshot schedule.
+     */
+  def deleteSnapshotSchedule(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a snapshot schedule.
+     */
+  def deleteSnapshotSchedule(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DeleteSnapshotScheduleMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a snapshot schedule.
+     */
+  def deleteSnapshotSchedule(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DeleteSnapshotScheduleMessage,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
      * Deletes a tag or tags from a resource. You must provide the ARN of the resource from which you want to delete the tag or tags.
      */
   def deleteTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -814,6 +999,47 @@ trait Redshift
     params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DeleteTagsMessage,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Returns a list of attributes attached to an account
+     */
+  def describeAccountAttributes(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AccountAttributeList, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of attributes attached to an account
+     */
+  def describeAccountAttributes(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AccountAttributeList, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AccountAttributeList, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of attributes attached to an account
+     */
+  def describeAccountAttributes(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeAccountAttributesMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AccountAttributeList, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of attributes attached to an account
+     */
+  def describeAccountAttributes(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeAccountAttributesMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AccountAttributeList, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.AccountAttributeList, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
   /**
      * Returns an array of ClusterDbRevision objects.
      */
@@ -1471,14 +1697,14 @@ trait Redshift
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+     * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
      */
   def describeOrderableClusterOptions(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.OrderableClusterOptionsMessage, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+     * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
      */
   def describeOrderableClusterOptions(
     callback: js.Function2[
@@ -1491,14 +1717,14 @@ trait Redshift
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+     * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
      */
   def describeOrderableClusterOptions(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeOrderableClusterOptionsMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.OrderableClusterOptionsMessage, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
+     * Returns a list of orderable cluster options. Before you create a new cluster you can use this operation to find what options are available, such as the EC2 Availability Zones (AZ) in the specific AWS Region that you can specify, and the node types you can request. The node types differ by available storage, memory, CPU and price. With the cost involved you might want to obtain a list of cluster options in the specific region and specify values when creating a cluster. For more information about managing clusters, go to Amazon Redshift Clusters in the Amazon Redshift Cluster Management Guide.
      */
   def describeOrderableClusterOptions(
     params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeOrderableClusterOptionsMessage,
@@ -1673,6 +1899,67 @@ trait Redshift
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotCopyGrantMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of snapshot schedules. 
+     */
+  def describeSnapshotSchedules(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeSnapshotSchedulesOutputMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of snapshot schedules. 
+     */
+  def describeSnapshotSchedules(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeSnapshotSchedulesOutputMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeSnapshotSchedulesOutputMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of snapshot schedules. 
+     */
+  def describeSnapshotSchedules(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeSnapshotSchedulesMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeSnapshotSchedulesOutputMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a list of snapshot schedules. 
+     */
+  def describeSnapshotSchedules(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeSnapshotSchedulesMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeSnapshotSchedulesOutputMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.DescribeSnapshotSchedulesOutputMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the total amount of snapshot usage and provisioned storage for a user in megabytes.
+     */
+  def describeStorage(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.CustomerStorageMessage, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the total amount of snapshot usage and provisioned storage for a user in megabytes.
+     */
+  def describeStorage(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.CustomerStorageMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.CustomerStorageMessage, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -2127,6 +2414,47 @@ trait Redshift
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Modifies the maintenance settings of a cluster. For example, you can defer a maintenance window. You can also update or cancel a deferment. 
+     */
+  def modifyClusterMaintenance(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterMaintenanceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the maintenance settings of a cluster. For example, you can defer a maintenance window. You can also update or cancel a deferment. 
+     */
+  def modifyClusterMaintenance(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterMaintenanceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterMaintenanceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the maintenance settings of a cluster. For example, you can defer a maintenance window. You can also update or cancel a deferment. 
+     */
+  def modifyClusterMaintenance(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterMaintenanceMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterMaintenanceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the maintenance settings of a cluster. For example, you can defer a maintenance window. You can also update or cancel a deferment. 
+     */
+  def modifyClusterMaintenance(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterMaintenanceMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterMaintenanceResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterMaintenanceResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Modifies the parameters of a parameter group.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.
      */
   def modifyClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[
@@ -2167,6 +2495,68 @@ trait Redshift
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ClusterParameterGroupNameMessage, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
+  /**
+     * Modifies the settings for a snapshot.
+     */
+  def modifyClusterSnapshot(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterSnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the settings for a snapshot.
+     */
+  def modifyClusterSnapshot(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterSnapshotResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterSnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the settings for a snapshot.
+     */
+  def modifyClusterSnapshot(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterSnapshotMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterSnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the settings for a snapshot.
+     */
+  def modifyClusterSnapshot(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterSnapshotMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterSnapshotResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterSnapshotResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies a snapshot schedule for a cluster.
+     */
+  def modifyClusterSnapshotSchedule(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Modifies a snapshot schedule for a cluster.
+     */
+  def modifyClusterSnapshotSchedule(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Modifies a snapshot schedule for a cluster.
+     */
+  def modifyClusterSnapshotSchedule(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterSnapshotScheduleMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Modifies a snapshot schedule for a cluster.
+     */
+  def modifyClusterSnapshotSchedule(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifyClusterSnapshotScheduleMessage,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
      * Modifies a cluster subnet group to include the specified list of VPC subnets. The operation replaces the existing list of subnets with the new list of subnets.
      */
@@ -2250,14 +2640,14 @@ trait Redshift
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the number of days to retain automated snapshots in the destination region after they are copied from the source region.
+     * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
      */
   def modifySnapshotCopyRetentionPeriod(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifySnapshotCopyRetentionPeriodResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the number of days to retain automated snapshots in the destination region after they are copied from the source region.
+     * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
      */
   def modifySnapshotCopyRetentionPeriod(
     callback: js.Function2[
@@ -2270,14 +2660,14 @@ trait Redshift
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the number of days to retain automated snapshots in the destination region after they are copied from the source region.
+     * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
      */
   def modifySnapshotCopyRetentionPeriod(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifySnapshotCopyRetentionPeriodMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifySnapshotCopyRetentionPeriodResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the number of days to retain automated snapshots in the destination region after they are copied from the source region.
+     * Modifies the number of days to retain snapshots in the destination AWS Region after they are copied from the source AWS Region. By default, this operation only changes the retention period of copied automated snapshots. The retention periods for both new and existing copied automated snapshots are updated with the new retention period. You can set the manual option to change only the retention periods of copied manual snapshots. If you set this option, only newly copied manual snapshots have the new retention period. 
      */
   def modifySnapshotCopyRetentionPeriod(
     params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifySnapshotCopyRetentionPeriodMessage,
@@ -2288,6 +2678,47 @@ trait Redshift
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifySnapshotCopyRetentionPeriodResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.
+     */
+  def modifySnapshotSchedule(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.
+     */
+  def modifySnapshotSchedule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.
+     */
+  def modifySnapshotSchedule(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifySnapshotScheduleMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.
+     */
+  def modifySnapshotSchedule(
+    params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ModifySnapshotScheduleMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRedshiftMod.RedshiftNs.SnapshotSchedule, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -2414,14 +2845,14 @@ trait Redshift
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize your cluster is avaialble for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes you add must match the node type for the cluster.  
+     * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes that you add must match the node type for the cluster.  
      */
   def resizeCluster(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ResizeClusterResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize your cluster is avaialble for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes you add must match the node type for the cluster.  
+     * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes that you add must match the node type for the cluster.  
      */
   def resizeCluster(
     callback: js.Function2[
@@ -2434,14 +2865,14 @@ trait Redshift
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize your cluster is avaialble for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes you add must match the node type for the cluster.  
+     * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes that you add must match the node type for the cluster.  
      */
   def resizeCluster(params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ResizeClusterMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ResizeClusterResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize your cluster is avaialble for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes you add must match the node type for the cluster.  
+     * Changes the size of the cluster. You can change the cluster's type, or change the number or type of nodes. The default behavior is to use the elastic resize method. With an elastic resize, your cluster is available for read and write operations more quickly than with the classic resize method.  Elastic resize operations have the following restrictions:   You can only resize clusters of the following types:   dc2.large   dc2.8xlarge   ds2.xlarge   ds2.8xlarge     The type of nodes that you add must match the node type for the cluster.  
      */
   def resizeCluster(
     params: awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ResizeClusterMessage,

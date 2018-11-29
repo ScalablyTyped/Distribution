@@ -122,10 +122,21 @@ trait IAbstractModel extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Get the deployment status of the working copy. Can be STARTED, STARTING, UPDATING, STOPPED and APP_NOT_FOUND.
+       * Get the deployment status of the working copy. Can be STAGING, STARTED, STARTING, UPDATING, STOPPED,
+       * FAILED_STAGING, FAILED and APP_NOT_FOUND.
        * Contains other deployment info as well.
        */
   def getAppEnvironmentStatus(
+    callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IEnvironmentStatus],
+    errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
+  ): scala.Unit = js.native
+  /**
+       * Get the deployment status of the working copy. Can be STAGING, STARTED, STARTING, UPDATING, STOPPED,
+       * FAILED_STAGING, FAILED, APP_NOT_FOUND, INVALID_PROJECTID, INVALID_OPENID, UNKNOWN_DEPLOYER, UNKNOWN_PROJECT,
+       * UNKNOWN_ACCOUNT, BUSY_PROVISIONIN, UNLINKED, NO_WEBMODELER_TARGET_SELECTED.
+       * Contains other deployment info as well.
+       */
+  def getAppEnvironmentStatusV2(
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IEnvironmentStatus],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
@@ -220,6 +231,7 @@ trait IAbstractModel extends js.Object {
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[T],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
+  def onEventProcessed(callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback): scala.Unit = js.native
   /**
        * Uploads the supplied file to the specified filepath.
        */

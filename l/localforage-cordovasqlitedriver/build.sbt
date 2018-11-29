@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "localforage-cordovasqlitedriver"
-version := "1.7.0-a78cd7"
+version := "1.7.0-d90740"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "localforage" % "1.7.2-45aaba",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "localforage" % "1.7.3-9d471f",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -93,14 +93,14 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see  Working with Events and Notifications  in the AWS Database MIgration Service User Guide.
+     *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
      */
   def createEventSubscription(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.CreateEventSubscriptionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see  Working with Events and Notifications  in the AWS Database MIgration Service User Guide.
+     *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
      */
   def createEventSubscription(
     callback: js.Function2[
@@ -113,14 +113,14 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see  Working with Events and Notifications  in the AWS Database MIgration Service User Guide.
+     *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
      */
   def createEventSubscription(params: awsDashSdkLib.clientsDmsMod.DMSNs.CreateEventSubscriptionMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.CreateEventSubscriptionResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see  Working with Events and Notifications  in the AWS Database MIgration Service User Guide.
+     *  Creates an AWS DMS event notification subscription.  You can specify the type of source (SourceType) you want to be notified of, provide a list of AWS DMS source IDs (SourceIds) that triggers the events, and provide a list of event categories (EventCategories) for events you want to be notified of. If you specify both the SourceType and SourceIds, such as SourceType = replication-instance and SourceIdentifier = my-replinstance, you will be notified of all the replication instance events for the specified source. If you specify a SourceType but don't specify a SourceIdentifier, you receive notice of the events for that source type for all your AWS DMS sources. If you don't specify either SourceType nor SourceIdentifier, you will be notified of events generated from all AWS DMS sources belonging to your customer account. For more information about AWS DMS events, see Working with Events and Notifications in the AWS Database Migration Service User Guide. 
      */
   def createEventSubscription(
     params: awsDashSdkLib.clientsDmsMod.DMSNs.CreateEventSubscriptionMessage,
@@ -708,14 +708,14 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in  Working with Events and Notifications  in the AWS Database Migration Service User Guide. 
+     * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
      */
   def describeEventCategories(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEventCategoriesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in  Working with Events and Notifications  in the AWS Database Migration Service User Guide. 
+     * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
      */
   def describeEventCategories(
     callback: js.Function2[
@@ -728,14 +728,14 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in  Working with Events and Notifications  in the AWS Database Migration Service User Guide. 
+     * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
      */
   def describeEventCategories(params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEventCategoriesMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEventCategoriesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in  Working with Events and Notifications  in the AWS Database Migration Service User Guide. 
+     * Lists categories for all event source types, or, if specified, for a specified source type. You can see a list of the event categories and source types in Working with Events and Notifications in the AWS Database Migration Service User Guide. 
      */
   def describeEventCategories(
     params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEventCategoriesMessage,
@@ -790,14 +790,14 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see  Working with Events and Notifications . 
+     *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
      */
   def describeEvents(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEventsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see  Working with Events and Notifications . 
+     *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
      */
   def describeEvents(
     callback: js.Function2[
@@ -810,14 +810,14 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see  Working with Events and Notifications . 
+     *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
      */
   def describeEvents(params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEventsMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEventsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see  Working with Events and Notifications . 
+     *  Lists events for a given source identifier and source type. You can also specify a start and end time. For more information on AWS DMS events, see Working with Events and Notifications in the AWS Database Migration User Guide. 
      */
   def describeEvents(
     params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEventsMessage,
@@ -1446,14 +1446,14 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+     * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
      */
   def modifyReplicationTask(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.ModifyReplicationTaskResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+     * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
      */
   def modifyReplicationTask(
     callback: js.Function2[
@@ -1466,14 +1466,14 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+     * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
      */
   def modifyReplicationTask(params: awsDashSdkLib.clientsDmsMod.DMSNs.ModifyReplicationTaskMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.ModifyReplicationTaskResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+     * Modifies the specified replication task. You can't modify the task endpoints. The task must be stopped before you can modify it.  For more information about AWS DMS tasks, see Working with Migration Tasks in the AWS Database Migration Service User Guide.
      */
   def modifyReplicationTask(
     params: awsDashSdkLib.clientsDmsMod.DMSNs.ModifyReplicationTaskMessage,
@@ -1651,14 +1651,14 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts the replication task. For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+     * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
      */
   def startReplicationTask(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.StartReplicationTaskResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts the replication task. For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+     * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
      */
   def startReplicationTask(
     callback: js.Function2[
@@ -1671,14 +1671,14 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts the replication task. For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+     * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
      */
   def startReplicationTask(params: awsDashSdkLib.clientsDmsMod.DMSNs.StartReplicationTaskMessage): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.StartReplicationTaskResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts the replication task. For more information about AWS DMS tasks, see the AWS DMS user guide at  Working with Migration Tasks  
+     * Starts the replication task. For more information about AWS DMS tasks, see Working with Migration Tasks  in the AWS Database Migration Service User Guide. 
      */
   def startReplicationTask(
     params: awsDashSdkLib.clientsDmsMod.DMSNs.StartReplicationTaskMessage,
@@ -1805,6 +1805,406 @@ trait DMS
      */
   def testConnection(
     params: awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_endpointDeleted(state: awsDashSdkLib.awsDashSdkLibStrings.endpointDeleted): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_endpointDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.endpointDeleted,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEndpointsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_endpointDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.endpointDeleted,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEndpointsMessage with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the endpointDeleted state by periodically calling the underlying DMS.describeEndpointsoperation every 5 seconds (at most 60 times). Wait until testing endpoint is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_endpointDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.endpointDeleted,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEndpointsMessage with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEndpointsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationInstanceAvailable state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 60 seconds (at most 60 times). Wait until DMS replication instance is available.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationInstanceAvailable(state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceAvailable): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationInstanceAvailable state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 60 seconds (at most 60 times). Wait until DMS replication instance is available.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationInstanceAvailable(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceAvailable,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationInstanceAvailable state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 60 seconds (at most 60 times). Wait until DMS replication instance is available.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationInstanceAvailable(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceAvailable,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesMessage with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationInstanceAvailable state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 60 seconds (at most 60 times). Wait until DMS replication instance is available.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationInstanceAvailable(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceAvailable,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesMessage with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationInstanceDeleted state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 15 seconds (at most 60 times). Wait until DMS replication instance is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationInstanceDeleted(state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceDeleted): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationInstanceDeleted state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 15 seconds (at most 60 times). Wait until DMS replication instance is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationInstanceDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceDeleted,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationInstanceDeleted state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 15 seconds (at most 60 times). Wait until DMS replication instance is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationInstanceDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceDeleted,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesMessage with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationInstanceDeleted state by periodically calling the underlying DMS.describeReplicationInstancesoperation every 15 seconds (at most 60 times). Wait until DMS replication instance is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationInstanceDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationInstanceDeleted,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesMessage with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationInstancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskDeleted state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskDeleted(state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskDeleted): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskDeleted state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskDeleted,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskDeleted state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskDeleted,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskDeleted state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is deleted.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskDeleted(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskDeleted,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskReady state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is ready.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskReady(state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskReady): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskReady state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is ready.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskReady(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskReady,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskReady state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is ready.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskReady(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskReady,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskReady state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is ready.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskReady(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskReady,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskRunning state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is running.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskRunning(state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskRunning): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskRunning state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is running.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskRunning(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskRunning,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskRunning state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is running.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskRunning(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskRunning,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskRunning state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is running.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskRunning(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskRunning,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskStopped state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is stopped.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskStopped(state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskStopped): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskStopped state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is stopped.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskStopped(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskStopped,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskStopped state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is stopped.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskStopped(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskStopped,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the replicationTaskStopped state by periodically calling the underlying DMS.describeReplicationTasksoperation every 15 seconds (at most 60 times). Wait until DMS replication task is stopped.
+     */
+  @JSName("waitFor")
+  def waitFor_replicationTaskStopped(
+    state: awsDashSdkLib.awsDashSdkLibStrings.replicationTaskStopped,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksMessage with awsDashSdkLib.Anon_Waiter,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeReplicationTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.testConnectionoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
+     */
+  @JSName("waitFor")
+  def waitFor_testConnectionSucceeds(state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.testConnectionoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
+     */
+  @JSName("waitFor")
+  def waitFor_testConnectionSucceeds(
+    state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.testConnectionoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
+     */
+  @JSName("waitFor")
+  def waitFor_testConnectionSucceeds(
+    state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionMessage with awsDashSdkLib.Anon_Waiter
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.testConnectionoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
+     */
+  @JSName("waitFor")
+  def waitFor_testConnectionSucceeds(
+    state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionMessage with awsDashSdkLib.Anon_Waiter,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
       /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 

@@ -233,6 +233,7 @@ object IoTAnalyticsNs extends js.Object {
          * A list of actions that create the data set contents.
          */
     var actions: DatasetActions
+    var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
     /**
          * The name of the data set.
          */
@@ -337,6 +338,7 @@ object IoTAnalyticsNs extends js.Object {
          * The ARN of the data set.
          */
     var arn: js.UndefOr[DatasetArn] = js.undefined
+    var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
     /**
          * When the data set was created.
          */
@@ -389,6 +391,17 @@ object IoTAnalyticsNs extends js.Object {
          * The type of action by which the data set's contents are automatically created.
          */
     var actionType: js.UndefOr[DatasetActionType] = js.undefined
+  }
+  
+  
+  trait DatasetContentDeliveryDestination extends js.Object {
+    var iotEventsDestinationConfiguration: js.UndefOr[IotEventsDestinationConfiguration] = js.undefined
+  }
+  
+  
+  trait DatasetContentDeliveryRule extends js.Object {
+    var destination: DatasetContentDeliveryDestination
+    var entryName: js.UndefOr[EntryName] = js.undefined
   }
   
   
@@ -800,6 +813,12 @@ object IoTAnalyticsNs extends js.Object {
          * The time when the request was made.
          */
     var timestamp: js.UndefOr[Timestamp] = js.undefined
+  }
+  
+  
+  trait IotEventsDestinationConfiguration extends js.Object {
+    var inputName: IotEventsInputName
+    var roleArn: RoleArn
   }
   
   
@@ -2275,6 +2294,7 @@ object IoTAnalyticsNs extends js.Object {
          * A list of "DatasetAction" objects.
          */
     var actions: DatasetActions
+    var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
     /**
          * The name of the data set to update.
          */
@@ -2354,6 +2374,7 @@ object IoTAnalyticsNs extends js.Object {
   type DatasetActionType = awsDashSdkLib.awsDashSdkLibStrings.QUERY | awsDashSdkLib.awsDashSdkLibStrings.CONTAINER | java.lang.String
   type DatasetActions = js.Array[DatasetAction]
   type DatasetArn = java.lang.String
+  type DatasetContentDeliveryRules = js.Array[DatasetContentDeliveryRule]
   type DatasetContentState = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
   type DatasetContentSummaries = js.Array[DatasetContentSummary]
   type DatasetContentVersion = java.lang.String
@@ -2374,6 +2395,7 @@ object IoTAnalyticsNs extends js.Object {
   type FilterExpression = java.lang.String
   type Image = java.lang.String
   type IncludeStatisticsFlag = scala.Boolean
+  type IotEventsInputName = java.lang.String
   type LambdaName = java.lang.String
   type LogResult = java.lang.String
   type LoggingEnabled = scala.Boolean

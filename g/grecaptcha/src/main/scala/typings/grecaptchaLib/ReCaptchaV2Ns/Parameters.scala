@@ -41,7 +41,7 @@ trait Parameters extends js.Object {
   /**
        * Your sitekey.
        */
-  var sitekey: java.lang.String
+  var sitekey: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Optional. The size of the widget.
        * Accepted values: "compact", "normal", "invisible".

@@ -71,9 +71,26 @@ class Period protected () extends js.Object {
        */
   def this(reference: timezonecompleteLib.distLibDatetimeMod.DateTime, amount: scala.Double, unit: timezonecompleteLib.distLibBasicsMod.TimeUnit, dst: PeriodDst) = this()
   /**
+       * Normalize the values where possible - not all values
+       * are convertible into one another. Weeks are converted to days.
+       * E.g. more than 60 minutes is transferred to hours,
+       * but seconds cannot be transferred to minutes due to leap seconds.
+       * Weeks are converted back to days.
+       */
+  var _calcInternalValues: js.Any = js.native
+  /**
+       * Corrects the difference between _reference and _intReference.
+       */
+  var _correctDay: js.Any = js.native
+  /**
        * DST handling
        */
   var _dst: js.Any = js.native
+  /**
+       * Returns true if DST handling is relevant for us.
+       * (i.e. if the reference time zone has DST)
+       */
+  var _dstRelevant: js.Any = js.native
   /**
        * Normalized internal DST handling. If DST handling is irrelevant
        * (because the reference time zone does not have DST)
@@ -94,38 +111,15 @@ class Period protected () extends js.Object {
        */
   var _interval: js.Any = js.native
   /**
+       * If this._internalUnit in [Month, Year], normalizes the day-of-month
+       * to <= 28.
+       * @return a new date if different, otherwise the exact same object (no clone!)
+       */
+  var _normalizeDay: js.Any = js.native
+  /**
        * Reference moment of period
        */
   var _reference: js.Any = js.native
-  /**
-       * Normalize the values where possible - not all values
-       * are convertible into one another. Weeks are converted to days.
-       * E.g. more than 60 minutes is transferred to hours,
-       * but seconds cannot be transferred to minutes due to leap seconds.
-       * Weeks are converted back to days.
-       */
-  /* private */ def _calcInternalValues(): js.Any = js.native
-  /**
-       * Corrects the difference between _reference and _intReference.
-       */
-  /* private */ def _correctDay(d: js.Any): js.Any = js.native
-  /**
-       * Returns true if DST handling is relevant for us.
-       * (i.e. if the reference time zone has DST)
-       */
-  /* private */ def _dstRelevant(): js.Any = js.native
-  /**
-       * If this._internalUnit in [Month, Year], normalizes the day-of-month
-       * to <= 28.
-       * @return a new date if different, otherwise the exact same object (no clone!)
-       */
-  /* private */ def _normalizeDay(d: js.Any): js.Any = js.native
-  /**
-       * If this._internalUnit in [Month, Year], normalizes the day-of-month
-       * to <= 28.
-       * @return a new date if different, otherwise the exact same object (no clone!)
-       */
-  /* private */ def _normalizeDay(d: js.Any, anymonth: js.Any): js.Any = js.native
   /**
        * The amount of units of the interval
        */

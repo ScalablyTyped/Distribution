@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "emissary"
-version := "0.0-unknown-dt-20180910Z-779cc2"
+version := "0.0-unknown-dt-20180910Z-903b2c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "mixto" % "0.0-unknown-dt-20180910Z-fb4ebc",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "mixto" % "0.0-unknown-dt-20180910Z-066b1f",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -24,6 +24,10 @@ object TNodeType extends js.Object {
     extends atAngularCoreLib.srcRender3InterfacesNodeMod.TNodeType
   
   @js.native
+  sealed trait IcuContainer
+    extends atAngularCoreLib.srcRender3InterfacesNodeMod.TNodeType
+  
+  @js.native
   sealed trait Projection
     extends atAngularCoreLib.srcRender3InterfacesNodeMod.TNodeType
   
@@ -38,6 +42,7 @@ object TNodeType extends js.Object {
   /* 0 */ val Container: Container with scala.Double = js.native
   /* 3 */ val Element: Element with scala.Double = js.native
   /* 4 */ val ElementContainer: ElementContainer with scala.Double = js.native
+  /* 5 */ val IcuContainer: IcuContainer with scala.Double = js.native
   /* 1 */ val Projection: Projection with scala.Double = js.native
   /* 2 */ val View: View with scala.Double = js.native
   /* 2 */ val ViewOrElement: ViewOrElement with scala.Double = js.native

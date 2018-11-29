@@ -20,10 +20,10 @@ trait IToastProps
   ] = js.undefined
   /** Name of a Blueprint UI icon (or an icon element) to render before the message. */
   var icon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /** Message to display in the body of the toast. */
-  var message: java.lang.String | reactLib.reactMod.Global.JSXNs.Element
+  var message: reactLib.reactMod.ReactNs.ReactNode
   /**
        * Callback invoked when the toast is dismissed, either by the user or by the timeout.
        * The value of the argument indicates whether the toast was closed because the timeout expired.

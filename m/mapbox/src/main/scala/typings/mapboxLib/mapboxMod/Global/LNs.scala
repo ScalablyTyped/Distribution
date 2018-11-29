@@ -216,6 +216,12 @@ object LNs extends js.Object {
       var url: js.UndefOr[java.lang.String] = js.undefined
     }
     
+    
+    trait StyleLayerOptions
+      extends leafletLib.leafletMod.TileLayerOptions {
+      var sanitizer: js.UndefOr[js.Function1[/* template */ java.lang.String, java.lang.String]] = js.undefined
+    }
+    
     @js.native
     trait TileLayer
       extends leafletLib.leafletMod.TileLayer {
@@ -361,6 +367,18 @@ object LNs extends js.Object {
     		 * Adds a "Share" button to the map, which can be used to share the map to Twitter or Facebook, or generate HTML for a map embed.
     		 */
     def shareControl(id: java.lang.String, options: ShareControlOptions): ShareControl = js.native
+    // StyleLayer
+    //////////////////////////////////////////////////////////////////////
+    /**
+             * L.mapbox.styleLayer provides a way to integrate styles created with Mapbox Studio into your map.
+             */
+    def styleLayer(url: java.lang.String): StyleLayer = js.native
+    // StyleLayer
+    //////////////////////////////////////////////////////////////////////
+    /**
+             * L.mapbox.styleLayer provides a way to integrate styles created with Mapbox Studio into your map.
+             */
+    def styleLayer(url: java.lang.String, options: StyleLayerOptions): StyleLayer = js.native
     /**
     		 * A mustache template rendering function, as used by the templating feature provided by L.mapbox.gridControl.
     		 */
@@ -427,6 +445,7 @@ object LNs extends js.Object {
     }
     
     type FilterFunction = js.Function1[/* feature */ js.Any, scala.Boolean]
+    type StyleLayer = leafletLib.leafletMod.TileLayer
   }
   
 }

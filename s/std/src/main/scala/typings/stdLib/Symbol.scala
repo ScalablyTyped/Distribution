@@ -12,7 +12,7 @@ trait Symbol extends js.Object {
        */
   val description: java.lang.String
   @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
-  val toStringTag: stdLib.stdLibStrings.Symbol
+  val toStringTag: java.lang.String
 }
 
 @JSGlobal("Symbol")

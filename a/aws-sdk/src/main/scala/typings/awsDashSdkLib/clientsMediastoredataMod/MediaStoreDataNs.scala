@@ -138,11 +138,11 @@ object MediaStoreDataNs extends js.Object {
   
   trait ListItemsRequest extends js.Object {
     /**
-         * The maximum results to return. The service might return fewer results.
+         * The maximum number of results to return per API request. For example, you submit a ListItems request with MaxResults set at 500. Although 2,000 items match your request, the service returns no more than the first 500 items. (The service also returns a NextToken value that you can use to fetch the next batch of results.) The service might return fewer results than the MaxResults value. If MaxResults is not included in the request, the service defaults to pagination with a maximum of 1,000 results per page.
          */
     var MaxResults: js.UndefOr[ListLimit] = js.undefined
     /**
-         * The NextToken received in the ListItemsResponse for the same container and path. Tokens expire after 15 minutes.
+         * The token that identifies which batch of results that you want to see. For example, you submit a ListItems request with MaxResults set at 500. The service returns the first batch of results (up to 500) and a NextToken value. To see the next batch of results, you can submit the ListItems request a second time and specify the NextToken value. Tokens expire after 15 minutes.
          */
     var NextToken: js.UndefOr[PaginationToken] = js.undefined
     /**
@@ -154,11 +154,11 @@ object MediaStoreDataNs extends js.Object {
   
   trait ListItemsResponse extends js.Object {
     /**
-         * Metadata entries for the folders and objects at the requested path.
+         * The metadata entries for the folders and objects at the requested path.
          */
     var Items: js.UndefOr[ItemList] = js.undefined
     /**
-         * The NextToken used to request the next page of results using ListItems.
+         * The token that can be used in a request to view the next set of results. For example, you submit a ListItems request that matches 2,000 items with MaxResults set at 500. The service returns the first batch of results (up to 500) and a NextToken value that can be used to fetch the next batch of results.
          */
     var NextToken: js.UndefOr[PaginationToken] = js.undefined
   }
@@ -198,7 +198,7 @@ object MediaStoreDataNs extends js.Object {
          */
     var ETag: js.UndefOr[ETag] = js.undefined
     /**
-         * The storage class where the object was persisted. Should be “Temporal”.
+         * The storage class where the object was persisted. The class should be “Temporal”.
          */
     var StorageClass: js.UndefOr[StorageClass] = js.undefined
   }
@@ -325,11 +325,11 @@ object MediaStoreDataNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListItemsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Uploads an object to the specified path. Object sizes are limited to 10 MB.
+       * Uploads an object to the specified path. Object sizes are limited to 25 MB.
        */
     def putObject(): awsDashSdkLib.libRequestMod.Request[PutObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Uploads an object to the specified path. Object sizes are limited to 10 MB.
+       * Uploads an object to the specified path. Object sizes are limited to 25 MB.
        */
     def putObject(
       callback: js.Function2[
@@ -339,11 +339,11 @@ object MediaStoreDataNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Uploads an object to the specified path. Object sizes are limited to 10 MB.
+       * Uploads an object to the specified path. Object sizes are limited to 25 MB.
        */
     def putObject(params: PutObjectRequest): awsDashSdkLib.libRequestMod.Request[PutObjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Uploads an object to the specified path. Object sizes are limited to 10 MB.
+       * Uploads an object to the specified path. Object sizes are limited to 25 MB.
        */
     def putObject(
       params: PutObjectRequest,

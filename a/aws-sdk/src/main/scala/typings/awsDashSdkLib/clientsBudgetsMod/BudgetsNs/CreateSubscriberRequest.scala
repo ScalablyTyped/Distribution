@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateSubscriberRequest extends js.Object {
   /**
-       * The accountId associated with the budget that you want to create a subscriber for.
+       * The accountId that is associated with the budget that you want to create a subscriber for.
        */
   var AccountId: AccountId
   /**

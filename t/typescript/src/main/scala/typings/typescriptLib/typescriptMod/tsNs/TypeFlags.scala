@@ -16,6 +16,18 @@ object TypeFlags extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.TypeFlags
   
   @js.native
+  sealed trait BigInt
+    extends typescriptLib.typescriptMod.tsNs.TypeFlags
+  
+  @js.native
+  sealed trait BigIntLike
+    extends typescriptLib.typescriptMod.tsNs.TypeFlags
+  
+  @js.native
+  sealed trait BigIntLiteral
+    extends typescriptLib.typescriptMod.tsNs.TypeFlags
+  
+  @js.native
   sealed trait Boolean
     extends typescriptLib.typescriptMod.tsNs.TypeFlags
   

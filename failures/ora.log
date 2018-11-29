@@ -1,0 +1,28 @@
+[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(ora) [id => ora, phase => typescript, file => ../types/ora/index.d.ts] 
+[debug] PhaseRunner.scala:78 Success [id => ora, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ora/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ora),TsIdentLibrarySimple(ora)),TsIdentModule(None,List(ora))) [id => ora, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(ora)) [id => ora, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(ora) [id => ora, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => ora, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(ora) [id => ora, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => ora, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:211 Built ora in 894 ms [id => ora, phase => build] 
+[info ] Phase3CompileBloop.scala:221 published local, [/home/tso/.ivy2/local/com.scalablytyped/ora_sjs0.6_2.12/1.3-dt-20180910Z-a97356/jars/ora_sjs0.6_2.12.jar, /home/tso/.ivy2/local/com.scalablytyped/ora_sjs0.6_2.12/1.3-dt-20180910Z-a97356/srcs/ora_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/com.scalablytyped/ora_sjs0.6_2.12/1.3-dt-20180910Z-a97356/ivys/ivy.xml, /home/tso/.ivy2/local/com.scalablytyped/ora_sjs0.6_2.12/1.3-dt-20180910Z-a97356/poms/ora_sjs0.6_2.12.pom] [id => ora, phase => build] 
+[debug] PhaseRunner.scala:78 Success [id => ora, phase => build] 
+[error] PhaseRes.scala:75 Caught exception [id => ora, phase => publish] java.lang.RuntimeException: was not able to find or create a package for oyvindberg in ScalablyTyped named ora
+	at scala.sys.package$.error(package.scala:26)
+	at com.olvind.tso.importer.build.BinTrayPublisher.$anonfun$ensurePackage$2(BinTrayPublisher.scala:49)
+	at com.olvind.tso.importer.build.BinTrayPublisher.$anonfun$ensurePackage$2$adapted(BinTrayPublisher.scala:46)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+
+[debug] PhaseRunner.scala:82 Failure, [ora => java.lang.RuntimeException: was not able to find or create a package for oyvindberg in ScalablyTyped named ora] [id => ora, phase => publish] 

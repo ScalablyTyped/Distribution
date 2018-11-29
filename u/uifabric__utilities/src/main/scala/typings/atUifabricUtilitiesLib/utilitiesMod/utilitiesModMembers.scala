@@ -12,6 +12,7 @@ object utilitiesModMembers extends js.Object {
   val DATA_IS_SCROLLABLE_ATTRIBUTE: /* data-is-scrollable */ java.lang.String = js.native
   val DATA_PORTAL_ATTRIBUTE: /* data-portal-element */ java.lang.String = js.native
   val IsFocusVisibleClassName: /* ms-Fabric--isFocusVisible */ java.lang.String = js.native
+  val KeyCodes: atUifabricUtilitiesLib.Anon_E = js.native
   val allowScrollOnElement: js.Function2[
     /* element */ reactLib.HTMLElement | scala.Null, 
     /* events */ atUifabricUtilitiesLib.libEventGroupMod.EventGroup, 
@@ -200,6 +201,8 @@ object utilitiesModMembers extends js.Object {
   def isElementTabbable(element: reactLib.HTMLElement, checkTabIndex: scala.Boolean): scala.Boolean = js.native
   def isElementVisible(): scala.Boolean = js.native
   def isElementVisible(element: reactLib.HTMLElement): scala.Boolean = js.native
+  def isMac(): scala.Boolean = js.native
+  def isMac(reset: scala.Boolean): scala.Boolean = js.native
   def mapEnumByName[T](
     theEnum: js.Any,
     callback: js.Function2[
@@ -222,6 +225,16 @@ object utilitiesModMembers extends js.Object {
     props: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerProps,
     parentContext: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext
   ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
+  def mergeSettings(): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
+  def mergeSettings(oldSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
+  def mergeSettings(
+    oldSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings,
+    newSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings
+  ): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
+  def mergeSettings(
+    oldSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings,
+    newSettings: atUifabricUtilitiesLib.libCustomizationsMod.SettingsFunction
+  ): atUifabricUtilitiesLib.libCustomizationsMod.Settings = js.native
   def nullRender(): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def portalContainsElement(target: reactLib.HTMLElement): scala.Boolean = js.native
   def portalContainsElement(target: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Boolean = js.native

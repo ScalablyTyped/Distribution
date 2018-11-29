@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "preloadjs"
-version := "0.6.2-dt-20180910Z-933c0c"
+version := "0.6.2-dt-20180910Z-56a4cd"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "createjs-lib" % "0.0-unknown-dt-20180910Z-904c85",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "createjs-lib" % "0.0-unknown-dt-20180910Z-826474",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

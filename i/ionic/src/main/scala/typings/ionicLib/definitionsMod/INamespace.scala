@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
+@js.native
 trait INamespace
   extends atIonicCliDashFrameworkLib.definitionsMod.INamespace[
       ICommand, 
@@ -14,7 +14,7 @@ trait INamespace
       atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput, 
       CommandMetadataOption
     ] {
-  var env: IonicEnvironment
-  var project: js.UndefOr[IProject] = js.undefined
+  var env: IonicEnvironment = js.native
+  var project: js.UndefOr[IProject] = js.native
 }
 

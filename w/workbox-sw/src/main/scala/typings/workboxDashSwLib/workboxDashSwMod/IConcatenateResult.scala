@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 
 trait IConcatenateResult extends js.Object {
   var done: stdLib.Promise[workboxDashSwLib.StreamSource]
-  var stream: stdLib.ReadableStream
+  var stream: stdLib.ReadableStream[_]
 }
 

@@ -33,12 +33,17 @@ trait MacConfiguration
   /** @private */
   val cscInstallerLink: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
+       * Whether a dark mode is supported. If your app does have a dark mode, you can make your app follow the system-wide dark mode setting.
+       * @default false
+       */
+  val darkModeSupport: js.UndefOr[scala.Boolean] = js.undefined
+  /**
        * The electron locales. By default Electron locales used as is.
        */
   val electronLanguages: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
   /**
        * The path to entitlements file for signing the app. `build/entitlements.mac.plist` will be used if exists (it is a recommended way to set).
-       * MAS entitlements is specified in the [mas](mas.md).
+       * MAS entitlements is specified in the [mas](/configuration/mas).
        */
   val entitlements: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
@@ -62,8 +67,8 @@ trait MacConfiguration
        */
   val helperBundleId: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](/code-signing.md) instead of specifying this option.
-       * MAS installer identity is specified in the [mas](mas.md).
+       * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](/code-signing) instead of specifying this option.
+       * MAS installer identity is specified in the [mas](/configuration/mas).
        */
   val identity: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

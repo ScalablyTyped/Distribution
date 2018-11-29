@@ -89,24 +89,7 @@ trait TView extends js.Object {
        * Odd indices: Starting index of content queries (stored in CONTENT_QUERIES) for this directive
        */
   var contentQueries: js.Array[scala.Double] | scala.Null
-  /**
-       * Selector matches for a node are temporarily cached on the TView so the
-       * DI system can eagerly instantiate directives on the same node if they are
-       * created out of order. They are overwritten after each node.
-       *
-       * <div dirA dirB></div>
-       *
-       * e.g. DirA injects DirB, but DirA is created first. DI should instantiate
-       * DirB when it finds that it's on the same node, but not yet created.
-       *
-       * Even indices: Directive defs
-       * Odd indices:
-       *   - Null if the associated directive hasn't been instantiated yet
-       *   - Directive index, if associated directive has been created
-       *   - String, temporary 'CIRCULAR' token set while dependencies are being resolved
-       */
-  var currentMatches: CurrentMatchesList | scala.Null
-  /** Static data equivalent of LView.data[]. Contains TNodes. */
+  /** Static data equivalent of LView.data[]. Contains TNodes, PipeDefInternal or TI18n. */
   var data: TData
   /**
        * Array of ngOnDestroy hooks that should be executed when this view is destroyed.

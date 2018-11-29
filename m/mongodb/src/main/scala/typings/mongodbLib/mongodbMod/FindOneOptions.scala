@@ -11,6 +11,9 @@ trait FindOneOptions extends js.Object {
   var collation: js.UndefOr[js.Object] = js.undefined
   var comment: js.UndefOr[java.lang.String] = js.undefined
   var explain: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+       * @deprecated Use options.projection instead
+       */
   var fields: js.UndefOr[js.Object] = js.undefined
   var hint: js.UndefOr[js.Object] = js.undefined
   var limit: js.UndefOr[scala.Double] = js.undefined
@@ -28,7 +31,6 @@ trait FindOneOptions extends js.Object {
   var returnKey: js.UndefOr[scala.Boolean] = js.undefined
   var session: js.UndefOr[ClientSession] = js.undefined
   var showDiskLoc: js.UndefOr[scala.Boolean] = js.undefined
-   // Deprecated Use options.projection instead
   var skip: js.UndefOr[scala.Double] = js.undefined
   var snapshot: js.UndefOr[scala.Boolean] = js.undefined
   var sort: js.UndefOr[js.Array[_] | js.Object] = js.undefined

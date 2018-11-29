@@ -19,9 +19,10 @@ object ImageLoadState extends js.Object {
     extends officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.ImageLoadState
   
   /**
-       * Deprecated at v1.3.6, to replace the src in case of errors, use onLoadingStateChange instead
+       * Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead
        * and rerender the Image with a difference src.
-       * @deprecated
+       * @deprecated Use `onLoadingStateChange` instead
+       * and rerender the Image with a difference src.
        */
   @js.native
   sealed trait errorLoaded

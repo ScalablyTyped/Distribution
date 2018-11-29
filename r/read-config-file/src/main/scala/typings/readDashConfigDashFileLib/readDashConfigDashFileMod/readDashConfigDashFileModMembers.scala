@@ -16,7 +16,6 @@ object readDashConfigDashFileModMembers extends js.Object {
   def loadParentConfig[T](request: ReadConfigRequest, spec: java.lang.String): stdLib.Promise[ReadConfigResult[T]] = js.native
   def orIfFileNotExist[T](promise: stdLib.Promise[T], fallbackValue: T): stdLib.Promise[T] = js.native
   def orNullIfFileNotExist[T](promise: stdLib.Promise[T]): stdLib.Promise[T | scala.Null] = js.native
-  def readConfig[T](configFile: java.lang.String): stdLib.Promise[ReadConfigResult[T]] = js.native
   def validateConfig(
     config: js.Any,
     scheme: lazyDashValLib.lazyDashValMod.Lazy[_],

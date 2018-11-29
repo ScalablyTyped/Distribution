@@ -46,7 +46,6 @@ package object webpackNs {
   type NamedModulesPlugin = Plugin
   /** @deprecated use config.optimization.noEmitOnErrors */
   type NoEmitOnErrorsPlugin = Plugin
-  /** @deprecated use webpack.NoEmitOnErrorsPlugin */
   type NormalModuleReplacementPlugin = Plugin
   /** @deprecated use webpack.Options.Performance */
   type PerformanceOptions = webpackLib.webpackMod.webpackNs.OptionsNs.Performance

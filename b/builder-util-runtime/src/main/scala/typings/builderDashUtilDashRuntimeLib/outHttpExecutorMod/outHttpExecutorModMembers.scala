@@ -47,6 +47,7 @@ object outHttpExecutorModMembers extends js.Object {
     token: scala.Null,
     method: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.PUT
   ): nodeLib.httpMod.RequestOptions = js.native
+  def configureRequestUrl(url: nodeLib.urlMod.URL, options: nodeLib.httpMod.RequestOptions): scala.Unit = js.native
   def createHttpError(response: nodeLib.httpMod.IncomingMessage): HttpError = js.native
   def createHttpError(response: nodeLib.httpMod.IncomingMessage, description: js.Any): HttpError = js.native
   def parseJson(result: stdLib.Promise[java.lang.String | scala.Null]): stdLib.Promise[_] = js.native

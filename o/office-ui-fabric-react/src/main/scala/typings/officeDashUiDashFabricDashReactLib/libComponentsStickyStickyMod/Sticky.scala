@@ -18,6 +18,7 @@ class Sticky protected ()
   var _getStickyDistanceFromTopForFooter: js.Any = js.native
   var _nonStickyContent: js.Any = js.native
   var _onScrollEvent: js.Any = js.native
+  var _placeHolder: js.Any = js.native
   var _root: js.Any = js.native
   var _stickyContentBottom: js.Any = js.native
   var _stickyContentTop: js.Any = js.native
@@ -27,6 +28,7 @@ class Sticky protected ()
   var context_Sticky: officeDashUiDashFabricDashReactLib.libComponentsScrollablePaneScrollablePaneDotBaseMod.IScrollablePaneContext = js.native
   var distanceFromTop: scala.Double = js.native
   val nonStickyContent: reactLib.HTMLDivElement | scala.Null = js.native
+  val placeholder: reactLib.HTMLDivElement | scala.Null = js.native
   val root: reactLib.HTMLDivElement | scala.Null = js.native
   val stickyContentBottom: reactLib.HTMLDivElement | scala.Null = js.native
   val stickyContentTop: reactLib.HTMLDivElement | scala.Null = js.native
@@ -34,6 +36,7 @@ class Sticky protected ()
   /* private */ def _getContentStyles(isSticky: js.Any): js.Any = js.native
   /* private */ def _getNonStickyPlaceholderHeight(): js.Any = js.native
   /* private */ def _getStickyPlaceholderHeight(isSticky: js.Any): js.Any = js.native
+  /* private */ def _setDistanceFromTop(distance: js.Any): js.Any = js.native
   def addSticky(stickyContent: reactLib.HTMLDivElement): scala.Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSticky(): scala.Unit = js.native

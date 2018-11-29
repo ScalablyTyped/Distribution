@@ -67,6 +67,7 @@ trait ThreeDSecure extends js.Object {
        *   client: client
        * }, callback);
        */
+  def create(options: braintreeDashWebLib.Anon_Client_681695910): stdLib.Promise[ThreeDSecure] = js.native
   def create(options: braintreeDashWebLib.Anon_Client_681695910, callback: callback): scala.Unit = js.native
   /**
        * @callback ThreeDSecure~removeFrameCallback
@@ -133,6 +134,7 @@ trait ThreeDSecure extends js.Object {
        *   }
        * });
        */
-  def verifyCard(options: braintreeDashWebLib.Anon_Nonce, callback: callback): scala.Unit = js.native
+  def verifyCard(options: braintreeDashWebLib.Anon_Nonce): stdLib.Promise[ThreeDSecureVerifyPayload] = js.native
+  def verifyCard(options: braintreeDashWebLib.Anon_NonceAmount, callback: callback): scala.Unit = js.native
 }
 

@@ -19,6 +19,8 @@ class TransformVisitor () extends Visitor[Node] {
   /* CompleteClass */
   override def visitElement(element: Element): Node = js.native
   /* CompleteClass */
+  override def visitIcu(icu: Icu): Node = js.native
+  /* CompleteClass */
   override def visitReference(reference: Reference): Node = js.native
   /* CompleteClass */
   override def visitTemplate(template: Template): Node = js.native

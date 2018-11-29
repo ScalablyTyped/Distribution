@@ -12,6 +12,6 @@ trait UseDualstackConfigOptions extends js.Object {
        * In most cases the network stack in the client environment will automatically prefer the AAAA record and make a connection using the IPv6 address. 
        * Note, however, that currently on Windows, the IPv4 address will be preferred.
        */
-  var useDualStack: js.UndefOr[scala.Boolean] = js.undefined
+  var useDualstack: js.UndefOr[scala.Boolean] = js.undefined
 }
 

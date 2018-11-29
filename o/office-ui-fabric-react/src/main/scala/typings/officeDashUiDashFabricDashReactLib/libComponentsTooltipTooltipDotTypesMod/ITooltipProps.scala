@@ -12,7 +12,7 @@ trait ITooltipProps
     ] {
   /**
        * Properties to pass through for Callout, reference detail properties in ICalloutProps
-       * @default isBeakVisible: true, beakWidth: 16, gapSpace: 0, setInitialFocus: true, doNotLayer: false
+       * @defaultvalue isBeakVisible: true, beakWidth: 16, gapSpace: 0, setInitialFocus: true, doNotLayer: false
        */
   var calloutProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsCalloutCalloutDotTypesMod.ICalloutProps
@@ -28,12 +28,12 @@ trait ITooltipProps
   var content: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Length of delay. Can be set to zero if you do not want a delay.
-       * @default medium
+       * @defaultvalue medium
        */
   var delay: js.UndefOr[TooltipDelay] = js.undefined
   /**
        * Indicator of how the tooltip should be anchored to its targetElement.
-       * @default DirectionalHint.topCenter
+       * @defaultvalue DirectionalHint.topCenter
        */
   var directionalHint: js.UndefOr[officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
   /**
@@ -43,7 +43,7 @@ trait ITooltipProps
   var directionalHintForRTL: js.UndefOr[officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint] = js.undefined
   /**
        * Max width of tooltip
-       * @default 364px
+       * @defaultvalue 364px
        */
   var maxWidth: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

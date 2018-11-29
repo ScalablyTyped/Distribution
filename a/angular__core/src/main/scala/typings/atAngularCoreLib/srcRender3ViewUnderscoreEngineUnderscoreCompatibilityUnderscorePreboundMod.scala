@@ -11,6 +11,6 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityUnderscorePreboundMo
   def templateRefExtractor(
     tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     currentView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
-  ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object] = js.native
+  ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object] | scala.Null = js.native
 }
 

@@ -1,26 +1,41 @@
 organization := "com.scalablytyped"
 name := "mali-compose"
-version := "1.1-dt-20181120Z-cc63f0"
+version := "1.1-dt-20181120Z-4f93d3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "grpc" % "1.15.1-f61946",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-caf0c5",
-  "com.scalablytyped" %%% "long" % "4.0.0-dt-20180910Z-ace41c",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "protobufjs" % "6.8.8-6842ae",
-  "com.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-2c7cd8",
-  "com.scalablytyped" %%% "protobufjs__base64" % "1.1.2-2c8f62",
-  "com.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-63e3a1",
-  "com.scalablytyped" %%% "protobufjs__eventemitter" % "1.1.0-03b0c2",
-  "com.scalablytyped" %%% "protobufjs__fetch" % "1.1.0-2abc1b",
-  "com.scalablytyped" %%% "protobufjs__float" % "1.0.2-960bf5",
-  "com.scalablytyped" %%% "protobufjs__inquire" % "1.1.0-e8e70d",
-  "com.scalablytyped" %%% "protobufjs__path" % "1.1.2-c48b13",
-  "com.scalablytyped" %%% "protobufjs__pool" % "1.1.0-2fb531",
-  "com.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-0af194",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "destroy" % "1.0-dt-20180910Z-93b483",
+  "com.scalablytyped" %%% "grpc" % "1.16.1-638629",
+  "com.scalablytyped" %%% "is-stream" % "1.1-dt-20180910Z-7e82fe",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20180910Z-79552e",
+  "com.scalablytyped" %%% "lodash_dot_concat" % "4.5-dt-20180910Z-8fb552",
+  "com.scalablytyped" %%% "lodash_dot_find" % "4.6-dt-20180910Z-1d3572",
+  "com.scalablytyped" %%% "lodash_dot_forown" % "4.4-dt-20180910Z-c51c1c",
+  "com.scalablytyped" %%% "lodash_dot_intersection" % "4.4-dt-20180910Z-281e64",
+  "com.scalablytyped" %%% "lodash_dot_isplainobject" % "4.0-dt-20180910Z-04eb2b",
+  "com.scalablytyped" %%% "lodash_dot_pick" % "4.4-dt-20180910Z-e1532f",
+  "com.scalablytyped" %%% "lodash_dot_pull" % "4.1-dt-20180910Z-1076da",
+  "com.scalablytyped" %%% "lodash_dot_upperfirst" % "4.3-dt-20180910Z-383b57",
+  "com.scalablytyped" %%% "lodash_dot_values" % "4.3-dt-20180910Z-f95c7a",
+  "com.scalablytyped" %%% "long" % "4.0.0-dt-20180910Z-cac3f5",
+  "com.scalablytyped" %%% "mali" % "0.10.2-041f9a",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "p-map" % "1.1-dt-20180910Z-6f0117",
+  "com.scalablytyped" %%% "pify" % "3.0.0-dt-20180910Z-6e073d",
+  "com.scalablytyped" %%% "protobufjs" % "6.8.8-183195",
+  "com.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-f1a9b6",
+  "com.scalablytyped" %%% "protobufjs__base64" % "1.1.2-b9574f",
+  "com.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-bc632a",
+  "com.scalablytyped" %%% "protobufjs__eventemitter" % "1.1.0-f0b1ba",
+  "com.scalablytyped" %%% "protobufjs__fetch" % "1.1.0-7e30cc",
+  "com.scalablytyped" %%% "protobufjs__float" % "1.0.2-e23db2",
+  "com.scalablytyped" %%% "protobufjs__inquire" % "1.1.0-dd54d5",
+  "com.scalablytyped" %%% "protobufjs__path" % "1.1.2-e3ab94",
+  "com.scalablytyped" %%% "protobufjs__pool" % "1.1.0-26d6db",
+  "com.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-778e95",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

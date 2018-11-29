@@ -16,7 +16,7 @@ trait UpdateSubscriberRequest extends js.Object {
        */
   var BudgetName: BudgetName
   /**
-       * The updated subscriber associated with a budget notification.
+       * The updated subscriber that is associated with a budget notification.
        */
   var NewSubscriber: Subscriber
   /**
@@ -24,7 +24,7 @@ trait UpdateSubscriberRequest extends js.Object {
        */
   var Notification: Notification
   /**
-       * The previous subscriber associated with a budget notification.
+       * The previous subscriber that is associated with a budget notification.
        */
   var OldSubscriber: Subscriber
 }

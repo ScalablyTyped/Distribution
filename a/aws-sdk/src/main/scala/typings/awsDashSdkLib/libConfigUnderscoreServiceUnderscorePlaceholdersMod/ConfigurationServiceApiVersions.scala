@@ -10,10 +10,12 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var acm: js.UndefOr[awsDashSdkLib.clientsAcmMod.ACMNs.apiVersion] = js.undefined
   var acmpca: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.apiVersion] = js.undefined
   var alexaforbusiness: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.apiVersion] = js.undefined
+  var amplify: js.UndefOr[awsDashSdkLib.clientsAmplifyMod.AmplifyNs.apiVersion] = js.undefined
   var apigateway: js.UndefOr[awsDashSdkLib.clientsApigatewayMod.APIGatewayNs.apiVersion] = js.undefined
   var applicationautoscaling: js.UndefOr[
     awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.apiVersion
   ] = js.undefined
+  var appmesh: js.UndefOr[awsDashSdkLib.clientsAppmeshMod.AppMeshNs.apiVersion] = js.undefined
   var appstream: js.UndefOr[awsDashSdkLib.clientsAppstreamMod.AppStreamNs.apiVersion] = js.undefined
   var appsync: js.UndefOr[awsDashSdkLib.clientsAppsyncMod.AppSyncNs.apiVersion] = js.undefined
   var athena: js.UndefOr[awsDashSdkLib.clientsAthenaMod.AthenaNs.apiVersion] = js.undefined
@@ -21,6 +23,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var autoscalingplans: js.UndefOr[awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.apiVersion] = js.undefined
   var batch: js.UndefOr[awsDashSdkLib.clientsBatchMod.BatchNs.apiVersion] = js.undefined
   var budgets: js.UndefOr[js.Any] = js.undefined
+  var chime: js.UndefOr[awsDashSdkLib.clientsChimeMod.ChimeNs.apiVersion] = js.undefined
   var cloud9: js.UndefOr[awsDashSdkLib.clientsCloud9Mod.Cloud9Ns.apiVersion] = js.undefined
   var clouddirectory: js.UndefOr[awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.apiVersion] = js.undefined
   var cloudformation: js.UndefOr[awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.apiVersion] = js.undefined
@@ -44,11 +47,13 @@ trait ConfigurationServiceApiVersions extends js.Object {
   ] = js.undefined
   var cognitosync: js.UndefOr[awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.apiVersion] = js.undefined
   var comprehend: js.UndefOr[awsDashSdkLib.clientsComprehendMod.ComprehendNs.apiVersion] = js.undefined
+  var comprehendmedical: js.UndefOr[awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.apiVersion] = js.undefined
   var configservice: js.UndefOr[awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.apiVersion] = js.undefined
   var connect: js.UndefOr[awsDashSdkLib.clientsConnectMod.ConnectNs.apiVersion] = js.undefined
   var costexplorer: js.UndefOr[awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.apiVersion] = js.undefined
   var cur: js.UndefOr[awsDashSdkLib.clientsCurMod.CURNs.apiVersion] = js.undefined
   var datapipeline: js.UndefOr[awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs.apiVersion] = js.undefined
+  var datasync: js.UndefOr[awsDashSdkLib.clientsDatasyncMod.DataSyncNs.apiVersion] = js.undefined
   var dax: js.UndefOr[awsDashSdkLib.clientsDaxMod.DAXNs.apiVersion] = js.undefined
   var devicefarm: js.UndefOr[awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs.apiVersion] = js.undefined
   var directconnect: js.UndefOr[awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.apiVersion] = js.undefined
@@ -72,8 +77,10 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var es: js.UndefOr[awsDashSdkLib.clientsEsMod.ESNs.apiVersion] = js.undefined
   var firehose: js.UndefOr[awsDashSdkLib.clientsFirehoseMod.FirehoseNs.apiVersion] = js.undefined
   var fms: js.UndefOr[awsDashSdkLib.clientsFmsMod.FMSNs.apiVersion] = js.undefined
+  var fsx: js.UndefOr[awsDashSdkLib.clientsFsxMod.FSxNs.apiVersion] = js.undefined
   var gamelift: js.UndefOr[awsDashSdkLib.clientsGameliftMod.GameLiftNs.apiVersion] = js.undefined
   var glacier: js.UndefOr[awsDashSdkLib.clientsGlacierMod.GlacierNs.apiVersion] = js.undefined
+  var globalaccelerator: js.UndefOr[awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.apiVersion] = js.undefined
   var glue: js.UndefOr[awsDashSdkLib.clientsGlueMod.GlueNs.apiVersion] = js.undefined
   var greengrass: js.UndefOr[awsDashSdkLib.clientsGreengrassMod.GreengrassNs.apiVersion] = js.undefined
   var guardduty: js.UndefOr[awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.apiVersion] = js.undefined
@@ -89,8 +96,10 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var iotanalytics: js.UndefOr[awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.apiVersion] = js.undefined
   var iotdata: js.UndefOr[awsDashSdkLib.clientsIotdataMod.IotDataNs.apiVersion] = js.undefined
   var iotjobsdataplane: js.UndefOr[awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs.apiVersion] = js.undefined
+  var kafka: js.UndefOr[awsDashSdkLib.clientsKafkaMod.KafkaNs.apiVersion] = js.undefined
   var kinesis: js.UndefOr[awsDashSdkLib.clientsKinesisMod.KinesisNs.apiVersion] = js.undefined
   var kinesisanalytics: js.UndefOr[awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.apiVersion] = js.undefined
+  var kinesisanalyticsv2: js.UndefOr[awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns.apiVersion] = js.undefined
   var kinesisvideo: js.UndefOr[awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs.apiVersion] = js.undefined
   var kinesisvideoarchivedmedia: js.UndefOr[
     awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs.apiVersion
@@ -102,6 +111,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
     awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs.apiVersion
   ] = js.undefined
   var lexruntime: js.UndefOr[awsDashSdkLib.clientsLexruntimeMod.LexRuntimeNs.apiVersion] = js.undefined
+  var licensemanager: js.UndefOr[awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs.apiVersion] = js.undefined
   var lightsail: js.UndefOr[awsDashSdkLib.clientsLightsailMod.LightsailNs.apiVersion] = js.undefined
   var machinelearning: js.UndefOr[awsDashSdkLib.clientsMachinelearningMod.MachineLearningNs.apiVersion] = js.undefined
   var macie: js.UndefOr[awsDashSdkLib.clientsMacieMod.MacieNs.apiVersion] = js.undefined
@@ -112,6 +122,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
     awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs.apiVersion
   ] = js.undefined
   var marketplacemetering: js.UndefOr[awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.apiVersion] = js.undefined
+  var mediaconnect: js.UndefOr[awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.apiVersion] = js.undefined
   var mediaconvert: js.UndefOr[awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.apiVersion] = js.undefined
   var medialive: js.UndefOr[awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.apiVersion] = js.undefined
   var mediapackage: js.UndefOr[awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.apiVersion] = js.undefined
@@ -129,21 +140,30 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var organizations: js.UndefOr[awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.apiVersion] = js.undefined
   var pi: js.UndefOr[awsDashSdkLib.clientsPiMod.PINs.apiVersion] = js.undefined
   var pinpoint: js.UndefOr[awsDashSdkLib.clientsPinpointMod.PinpointNs.apiVersion] = js.undefined
+  var pinpointemail: js.UndefOr[awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.apiVersion] = js.undefined
+  var pinpointsmsvoice: js.UndefOr[awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.apiVersion] = js.undefined
   var polly: js.UndefOr[awsDashSdkLib.clientsPollyMod.PollyNs.apiVersion] = js.undefined
   var pricing: js.UndefOr[awsDashSdkLib.clientsPricingMod.PricingNs.apiVersion] = js.undefined
+  var quicksight: js.UndefOr[awsDashSdkLib.clientsQuicksightMod.QuickSightNs.apiVersion] = js.undefined
+  var ram: js.UndefOr[awsDashSdkLib.clientsRamMod.RAMNs.apiVersion] = js.undefined
   var rds: js.UndefOr[awsDashSdkLib.clientsRdsMod.RDSNs.apiVersion] = js.undefined
+  var rdsdataservice: js.UndefOr[awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.apiVersion] = js.undefined
   var redshift: js.UndefOr[awsDashSdkLib.clientsRedshiftMod.RedshiftNs.apiVersion] = js.undefined
   var rekognition: js.UndefOr[awsDashSdkLib.clientsRekognitionMod.RekognitionNs.apiVersion] = js.undefined
   var resourcegroups: js.UndefOr[awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.apiVersion] = js.undefined
   var resourcegroupstaggingapi: js.UndefOr[
     awsDashSdkLib.clientsResourcegroupstaggingapiMod.ResourceGroupsTaggingAPINs.apiVersion
   ] = js.undefined
+  var robomaker: js.UndefOr[awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.apiVersion] = js.undefined
   var route53: js.UndefOr[awsDashSdkLib.clientsRoute53Mod.Route53Ns.apiVersion] = js.undefined
   var route53domains: js.UndefOr[awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.apiVersion] = js.undefined
+  var route53resolver: js.UndefOr[awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.apiVersion] = js.undefined
   var s3: js.UndefOr[awsDashSdkLib.clientsS3Mod.S3Ns.apiVersion] = js.undefined
+  var s3control: js.UndefOr[awsDashSdkLib.clientsS3controlMod.S3ControlNs.apiVersion] = js.undefined
   var sagemaker: js.UndefOr[awsDashSdkLib.clientsSagemakerMod.SageMakerNs.apiVersion] = js.undefined
   var sagemakerruntime: js.UndefOr[awsDashSdkLib.clientsSagemakerruntimeMod.SageMakerRuntimeNs.apiVersion] = js.undefined
   var secretsmanager: js.UndefOr[awsDashSdkLib.clientsSecretsmanagerMod.SecretsManagerNs.apiVersion] = js.undefined
+  var securityhub: js.UndefOr[awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.apiVersion] = js.undefined
   var serverlessapplicationrepository: js.UndefOr[
     awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.apiVersion
   ] = js.undefined
@@ -164,6 +184,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var support: js.UndefOr[awsDashSdkLib.clientsSupportMod.SupportNs.apiVersion] = js.undefined
   var swf: js.UndefOr[awsDashSdkLib.clientsSwfMod.SWFNs.apiVersion] = js.undefined
   var transcribeservice: js.UndefOr[awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.apiVersion] = js.undefined
+  var transfer: js.UndefOr[awsDashSdkLib.clientsTransferMod.TransferNs.apiVersion] = js.undefined
   var translate: js.UndefOr[awsDashSdkLib.clientsTranslateMod.TranslateNs.apiVersion] = js.undefined
   var waf: js.UndefOr[awsDashSdkLib.clientsWafMod.WAFNs.apiVersion] = js.undefined
   var wafregional: js.UndefOr[awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs.apiVersion] = js.undefined

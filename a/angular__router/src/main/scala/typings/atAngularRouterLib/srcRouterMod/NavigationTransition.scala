@@ -14,7 +14,7 @@ trait NavigationTransition extends js.Object {
   var extractedUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
   var extras: NavigationExtras
   var guards: atAngularRouterLib.srcUtilsPreactivationMod.Checks
-  var guardsResult: scala.Boolean | scala.Null
+  var guardsResult: scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree | scala.Null
   var id: scala.Double
   var promise: stdLib.Promise[scala.Boolean]
   var rawUrl: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree

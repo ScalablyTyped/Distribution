@@ -27,6 +27,6 @@ object readerNs extends js.Object {
       fpDashTsLib.libReaderMod.Reader[js.Any, js.Any]
     ]
   ] = js.native
-  val reader: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libReaderMod.URI] = js.native
+  val reader: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libReaderMod.URI] with fpDashTsLib.libProfunctorMod.Profunctor2[fpDashTsLib.libReaderMod.URI] with fpDashTsLib.libCategoryMod.Category2[fpDashTsLib.libReaderMod.URI] with fpDashTsLib.libStrongMod.Strong2[fpDashTsLib.libReaderMod.URI] with fpDashTsLib.libChoiceMod.Choice2[fpDashTsLib.libReaderMod.URI] = js.native
 }
 

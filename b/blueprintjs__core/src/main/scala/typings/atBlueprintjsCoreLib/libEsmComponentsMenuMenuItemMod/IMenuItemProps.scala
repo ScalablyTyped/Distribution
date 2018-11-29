@@ -48,6 +48,11 @@ trait IMenuItemProps
        * @default true
        */
   var shouldDismissPopover: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+       * Name of the HTML tag that wraps the MenuItem.
+       * @default "a"
+       */
+  var tagName: js.UndefOr[/* LimitUnionLength: was union type with length 170 */java.lang.String] = js.undefined
   /** Item text, required for usability. */
   @JSName("text")
   var text_IMenuItemProps: reactLib.reactMod.ReactNs.ReactNode

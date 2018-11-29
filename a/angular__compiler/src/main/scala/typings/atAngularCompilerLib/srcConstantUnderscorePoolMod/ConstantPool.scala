@@ -13,7 +13,6 @@ class ConstantPool () extends js.Object {
   var definitionsOf: js.Any = js.native
   var directiveDefinitions: js.Any = js.native
   var freshName: js.Any = js.native
-  var freshTranslationName: js.Any = js.native
   var injectorDefinitions: js.Any = js.native
   var keyOf: js.Any = js.native
   var literalFactories: js.Any = js.native
@@ -21,7 +20,6 @@ class ConstantPool () extends js.Object {
   var nextNameIndex: js.Any = js.native
   var pipeDefinitions: js.Any = js.native
   var statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement] = js.native
-  var translations: js.Any = js.native
   def getConstLiteral(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def getConstLiteral(
     literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
@@ -36,7 +34,6 @@ class ConstantPool () extends js.Object {
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def getLiteralFactory(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralArrayExpr): atAngularCompilerLib.Anon_LiteralFactoryArguments = js.native
   def getLiteralFactory(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralMapExpr): atAngularCompilerLib.Anon_LiteralFactoryArguments = js.native
-  def getTranslation(message: java.lang.String, meta: atAngularCompilerLib.Anon_Description, suffix: java.lang.String): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
   def propertyNameOf(kind: DefinitionKind): java.lang.String = js.native
   /**
        * Produce a unique name.

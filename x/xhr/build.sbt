@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "xhr"
-version := "2.5.0-1b2e17"
+version := "2.5.0-d5da94"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "xtend" % "4.0.1-dt-20180910Z-a53ca1",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "xtend" % "4.0.1-dt-20180910Z-aeabf6",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -32,6 +32,10 @@ object ObjectFlags extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.ObjectFlags
   
   @js.native
+  sealed trait FreshLiteral
+    extends typescriptLib.typescriptMod.tsNs.ObjectFlags
+  
+  @js.native
   sealed trait Instantiated
     extends typescriptLib.typescriptMod.tsNs.ObjectFlags
   

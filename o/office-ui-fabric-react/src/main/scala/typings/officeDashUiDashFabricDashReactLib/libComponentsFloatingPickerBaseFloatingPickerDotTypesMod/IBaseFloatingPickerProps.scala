@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IBaseFloatingPickerProps[T]
-  extends reactLib.reactMod.ReactNs.Props[js.Any] {
+  extends reactLib.reactMod.ReactNs.ClassAttributes[js.Any] {
   /**
        * Width for the suggestions callout
        */
@@ -16,9 +16,7 @@ trait IBaseFloatingPickerProps[T]
        * ClassName for the picker.
        */
   var className: js.UndefOr[java.lang.String] = js.native
-  var componentRef: js.UndefOr[
-    js.Function1[/* component */ js.UndefOr[IBaseFloatingPicker | scala.Null], scala.Unit]
-  ] = js.native
+  var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IBaseFloatingPicker]] = js.native
   /**
        * Function that specifies how arbitrary text entered into the well is handled.
        */

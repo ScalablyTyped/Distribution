@@ -63,9 +63,10 @@ trait DefineOptions[TInstance] extends js.Object {
   /**
            * An object of hook function that are called before and after certain lifecycle events.
            * The possible hooks are: beforeValidate, afterValidate, beforeBulkCreate, beforeBulkDestroy,
-           * beforeBulkUpdate, beforeCreate, beforeDestroy, beforeUpdate, afterCreate, afterDestroy, afterUpdate,
-           * afterBulkCreate, afterBulkDestory and afterBulkUpdate. See Hooks for more information about hook
-           * functions and their signatures. Each property can either be a function, or an array of functions.
+           * beforeBulkUpdate, beforeCreate, beforeDestroy, beforeSave, beforeUpdate, afterCreate, afterDestroy,
+           * afterSave, afterUpdate, afterBulkCreate, afterBulkDestory and afterBulkUpdate.
+           * See Hooks for more information about hook functions and their signatures. Each property can either
+           * be a function, or an array of functions.
            */
   var hooks: js.UndefOr[HooksDefineOptions[TInstance]] = js.undefined
   /**

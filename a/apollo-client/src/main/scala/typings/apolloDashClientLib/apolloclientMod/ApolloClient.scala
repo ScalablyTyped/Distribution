@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait ApolloClient[TCacheShape]
   extends apolloDashCacheLib.libTypesDataProxyMod.DataProxy {
   var cache: apolloDashCacheLib.apolloDashCacheMod.ApolloCache[TCacheShape] = js.native
+  var clientAwareness: js.Any = js.native
   var defaultOptions: DefaultOptions = js.native
   var devToolsHookCb: js.Any = js.native
   var disableNetworkFetches: scala.Boolean = js.native

@@ -175,14 +175,14 @@ trait MediaStoreData
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Uploads an object to the specified path. Object sizes are limited to 10 MB.
+     * Uploads an object to the specified path. Object sizes are limited to 25 MB.
      */
   def putObject(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediastoredataMod.MediaStoreDataNs.PutObjectResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Uploads an object to the specified path. Object sizes are limited to 10 MB.
+     * Uploads an object to the specified path. Object sizes are limited to 25 MB.
      */
   def putObject(
     callback: js.Function2[
@@ -195,14 +195,14 @@ trait MediaStoreData
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Uploads an object to the specified path. Object sizes are limited to 10 MB.
+     * Uploads an object to the specified path. Object sizes are limited to 25 MB.
      */
   def putObject(params: awsDashSdkLib.clientsMediastoredataMod.MediaStoreDataNs.PutObjectRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediastoredataMod.MediaStoreDataNs.PutObjectResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Uploads an object to the specified path. Object sizes are limited to 10 MB.
+     * Uploads an object to the specified path. Object sizes are limited to 25 MB.
      */
   def putObject(
     params: awsDashSdkLib.clientsMediastoredataMod.MediaStoreDataNs.PutObjectRequest,

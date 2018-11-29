@@ -19,7 +19,7 @@ trait Anon_Resolvers extends js.Object {
     ]
   ] = js.undefined
   var schemas: js.Array[
-    java.lang.String | graphqlLib.graphqlMod.GraphQLSchema | js.Array[graphqlLib.typeDefinitionMod.GraphQLNamedType]
+    java.lang.String | graphqlLib.graphqlMod.GraphQLSchema | graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.typeDefinitionMod.GraphQLNamedType]
   ]
 }
 

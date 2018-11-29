@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/HoverCard", JSImport.Namespace)
 @js.native
 object libHoverCardModMembers extends js.Object {
+  val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_LeftTopEdge = js.native
   val ExpandingCard: js.Function1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsHoverCardExpandingCardDotTypesMod.IExpandingCardProps, 
     reactLib.reactMod.Global.JSXNs.Element

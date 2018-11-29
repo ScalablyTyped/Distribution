@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait NotificationWithSubscribers extends js.Object {
   /**
-       * The notification associated with a budget.
+       * The notification that is associated with a budget.
        */
   var Notification: Notification
   /**

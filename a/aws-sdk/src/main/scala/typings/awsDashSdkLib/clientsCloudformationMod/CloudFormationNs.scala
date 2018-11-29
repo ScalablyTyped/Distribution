@@ -206,7 +206,7 @@ object CloudFormationNs extends js.Object {
   
   trait CreateStackInput extends js.Object {
     /**
-         * A list of values that you must specify before AWS CloudFormation can create certain stacks. Some stack templates might include resources that can affect permissions in your AWS account, for example, by creating new AWS Identity and Access Management (IAM) users. For those stacks, you must explicitly acknowledge their capabilities by specifying this parameter. The only valid values are CAPABILITY_IAM and CAPABILITY_NAMED_IAM. The following resources require you to specify this parameter:  AWS::IAM::AccessKey,  AWS::IAM::Group,  AWS::IAM::InstanceProfile,  AWS::IAM::Policy,  AWS::IAM::Role,  AWS::IAM::User, and  AWS::IAM::UserToGroupAddition. If your stack template contains these resources, we recommend that you review all permissions associated with them and edit their permissions if necessary. If you have IAM resources, you can specify either capability. If you have IAM resources with custom names, you must specify CAPABILITY_NAMED_IAM. If you don't specify this parameter, this action returns an InsufficientCapabilities error. For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.
+         * In some cases, you must explicity acknowledge that your stack template contains certain capabilities in order for AWS CloudFormation to create the stack.    CAPABILITY_IAM and CAPABILITY_NAMED_IAM  Some stack templates might include resources that can affect permissions in your AWS account; for example, by creating new AWS Identity and Access Management (IAM) users. For those stacks, you must explicitly acknowledge this by specifying one of these capabilities. The following IAM resources require you to specify either the CAPABILITY_IAM or CAPABILITY_NAMED_IAM capability.   If you have IAM resources, you can specify either capability.    If you have IAM resources with custom names, you must specify CAPABILITY_NAMED_IAM.    If you don't specify either of these capabilities, AWS CloudFormation returns an InsufficientCapabilities error.   If your stack template contains these resources, we recommend that you review all permissions associated with them and edit their permissions if necessary.     AWS::IAM::AccessKey      AWS::IAM::Group      AWS::IAM::InstanceProfile      AWS::IAM::Policy      AWS::IAM::Role      AWS::IAM::User      AWS::IAM::UserToGroupAddition    For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.    CAPABILITY_AUTO_EXPAND  Some template contain macros. Macros perform custom processing on templates; this can include simple actions like find-and-replace operations, all the way to extensive transformations of entire templates. Because of this, users typically create a change set from the processed template, so that they can review the changes resulting from the macros before actually creating the stack. If your stack template contains one or more macros, and you choose to create a stack directly from the processed template, without first reviewing the resulting changes in a change set, you must acknowledge this capability. This includes the AWS::Include and AWS::Serverless transforms, which are macros hosted by AWS CloudFormation. Change sets do not currently support nested stacks. If you want to create a stack from a stack template that contains macros and nested stacks, you must create the stack directly from the template using this capability.  You should only create stacks directly from a stack template that contains macros if you know what processing the macro performs. Each macro relies on an underlying Lambda service function for processing stack templates. Be aware that the Lambda function owner can update the function operation without AWS CloudFormation being notified.  For more information, see Using AWS CloudFormation Macros to Perform Custom Processing on Templates.  
          */
     var Capabilities: js.UndefOr[Capabilities] = js.undefined
     /**
@@ -558,6 +558,46 @@ object CloudFormationNs extends js.Object {
   }
   
   
+  trait DescribeStackDriftDetectionStatusInput extends js.Object {
+    /**
+         * The ID of the drift detection results of this operation.  AWS CloudFormation generates new results, with a new drift detection ID, each time this operation is run. However, the number of drift results AWS CloudFormation retains for any given stack, and for how long, may vary. 
+         */
+    var StackDriftDetectionId: StackDriftDetectionId
+  }
+  
+  
+  trait DescribeStackDriftDetectionStatusOutput extends js.Object {
+    /**
+         * The status of the stack drift detection operation.    DETECTION_COMPLETE: The stack drift detection operation has successfully completed for all resources in the stack that support drift detection. (Resources that do not currently support stack detection remain unchecked.) If you specified logical resource IDs for AWS CloudFormation to use as a filter for the stack drift detection operation, only the resources with those logical IDs are checked for drift.    DETECTION_FAILED: The stack drift detection operation has failed for at least one resource in the stack. Results will be available for resources on which AWS CloudFormation successfully completed drift detection.    DETECTION_IN_PROGRESS: The stack drift detection operation is currently in progress.  
+         */
+    var DetectionStatus: StackDriftDetectionStatus
+    /**
+         * The reason the stack drift detection operation has its current status.
+         */
+    var DetectionStatusReason: js.UndefOr[StackDriftDetectionStatusReason] = js.undefined
+    /**
+         * Total number of stack resources that have drifted. This is NULL until the drift detection operation reaches a status of DETECTION_COMPLETE. This value will be 0 for stacks whose drift status is IN_SYNC.
+         */
+    var DriftedStackResourceCount: js.UndefOr[BoxedInteger] = js.undefined
+    /**
+         * The ID of the drift detection results of this operation.  AWS CloudFormation generates new results, with a new drift detection ID, each time this operation is run. However, the number of reports AWS CloudFormation retains for any given stack, and for how long, may vary.
+         */
+    var StackDriftDetectionId: StackDriftDetectionId
+    /**
+         * Status of the stack's actual configuration compared to its expected configuration.     DRIFTED: The stack differs from its expected template configuration. A stack is considered to have drifted if one or more of its resources have drifted.    NOT_CHECKED: AWS CloudFormation has not checked if the stack differs from its expected template configuration.    IN_SYNC: The stack's actual configuration matches its expected template configuration.    UNKNOWN: This value is reserved for future use.  
+         */
+    var StackDriftStatus: js.UndefOr[StackDriftStatus] = js.undefined
+    /**
+         * The ID of the stack.
+         */
+    var StackId: StackId
+    /**
+         * Time at which the stack drift detection operation was initiated.
+         */
+    var Timestamp: Timestamp
+  }
+  
+  
   trait DescribeStackEventsInput extends js.Object {
     /**
          * A string that identifies the next page of events that you want to retrieve.
@@ -603,6 +643,38 @@ object CloudFormationNs extends js.Object {
          * The stack instance that matches the specified request parameters.
          */
     var StackInstance: js.UndefOr[StackInstance] = js.undefined
+  }
+  
+  
+  trait DescribeStackResourceDriftsInput extends js.Object {
+    /**
+         * The maximum number of results to be returned with a single call. If the number of available results exceeds this maximum, the response includes a NextToken value that you can assign to the NextToken request parameter to get the next set of results.
+         */
+    var MaxResults: js.UndefOr[BoxedMaxResults] = js.undefined
+    /**
+         * A string that identifies the next page of stack resource drift results.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * The name of the stack for which you want drift information.
+         */
+    var StackName: StackNameOrId
+    /**
+         * The resource drift status values to use as filters for the resource drift results returned.    DELETED: The resource differs from its expected template configuration in that the resource has been deleted.    MODIFIED: One or more resource properties differ from their expected template values.    IN_SYNC: The resources's actual configuration matches its expected template configuration.    NOT_CHECKED: AWS CloudFormation does not currently return this value.  
+         */
+    var StackResourceDriftStatusFilters: js.UndefOr[StackResourceDriftStatusFilters] = js.undefined
+  }
+  
+  
+  trait DescribeStackResourceDriftsOutput extends js.Object {
+    /**
+         * If the request doesn't return all of the remaining results, NextToken is set to a token. To retrieve the next set of results, call DescribeStackResourceDrifts again and assign that token to the request object's NextToken parameter. If the request returns all results, NextToken is set to null.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * Drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where AWS CloudFormation detects drift. For a given stack, there will be one StackResourceDrift for each stack resource that has been checked for drift. Resources that have not yet been checked for drift are not included. Resources that do not currently support drift detection are not checked, and so not included. For a list of resources that support drift detection, see Resources that Support Drift Detection.
+         */
+    var StackResourceDrifts: StackResourceDrifts
   }
   
   
@@ -707,6 +779,46 @@ object CloudFormationNs extends js.Object {
          * A list of stack structures.
          */
     var Stacks: js.UndefOr[Stacks] = js.undefined
+  }
+  
+  
+  trait DetectStackDriftInput extends js.Object {
+    /**
+         * The logical names of any resources you want to use as filters.
+         */
+    var LogicalResourceIds: js.UndefOr[LogicalResourceIds] = js.undefined
+    /**
+         * The name of the stack for which you want to detect drift. 
+         */
+    var StackName: StackNameOrId
+  }
+  
+  
+  trait DetectStackDriftOutput extends js.Object {
+    /**
+         * The ID of the drift detection results of this operation.  AWS CloudFormation generates new results, with a new drift detection ID, each time this operation is run. However, the number of drift results AWS CloudFormation retains for any given stack, and for how long, may vary. 
+         */
+    var StackDriftDetectionId: StackDriftDetectionId
+  }
+  
+  
+  trait DetectStackResourceDriftInput extends js.Object {
+    /**
+         * The logical name of the resource for which to return drift information.
+         */
+    var LogicalResourceId: LogicalResourceId
+    /**
+         * The name of the stack to which the resource belongs.
+         */
+    var StackName: StackNameOrId
+  }
+  
+  
+  trait DetectStackResourceDriftOutput extends js.Object {
+    /**
+         * Information about whether the resource's actual configuration has drifted from its expected template configuration, including actual and expected property values and any differences detected.
+         */
+    var StackResourceDrift: StackResourceDrift
   }
   
   
@@ -1185,6 +1297,38 @@ object CloudFormationNs extends js.Object {
   }
   
   
+  trait PhysicalResourceIdContextKeyValuePair extends js.Object {
+    /**
+         * The resource context key.
+         */
+    var Key: Key
+    /**
+         * The resource context value.
+         */
+    var Value: Value
+  }
+  
+  
+  trait PropertyDifference extends js.Object {
+    /**
+         * The actual property value of the resource property.
+         */
+    var ActualValue: PropertyValue
+    /**
+         * The type of property difference.    ADD: A value has been added to a resource property that is an array or list data type.    REMOVE: The property has been removed from the current resource configuration.    NOT_EQUAL: The current property value differs from its expected value (as defined in the stack template and any values specified as template parameters).  
+         */
+    var DifferenceType: DifferenceType
+    /**
+         * The expected property value of the resource property, as defined in the stack template and any values specified as template parameters.
+         */
+    var ExpectedValue: PropertyValue
+    /**
+         * The fully-qualified path to the resource property.
+         */
+    var PropertyPath: PropertyPath
+  }
+  
+  
   trait ResourceChange extends js.Object {
     /**
          * The action that AWS CloudFormation takes on the resource, such as Add (adds a new resource), Modify (changes a resource), or Remove (deletes a resource).
@@ -1339,6 +1483,10 @@ object CloudFormationNs extends js.Object {
          */
     var DisableRollback: js.UndefOr[DisableRollback] = js.undefined
     /**
+         * Information on whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
+         */
+    var DriftInformation: js.UndefOr[StackDriftInformation] = js.undefined
+    /**
          * Whether termination protection is enabled for the stack.  For nested stacks, termination protection is set on the root stack and cannot be changed directly on the nested stack. For more information, see Protecting a Stack From Being Deleted in the AWS CloudFormation User Guide.
          */
     var EnableTerminationProtection: js.UndefOr[EnableTerminationProtection] = js.undefined
@@ -1398,6 +1546,30 @@ object CloudFormationNs extends js.Object {
          * The amount of time within which stack creation should complete.
          */
     var TimeoutInMinutes: js.UndefOr[TimeoutMinutes] = js.undefined
+  }
+  
+  
+  trait StackDriftInformation extends js.Object {
+    /**
+         * Most recent time when a drift detection operation was initiated on the stack, or any of its individual resources that support drift detection.
+         */
+    var LastCheckTimestamp: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * Status of the stack's actual configuration compared to its expected template configuration.     DRIFTED: The stack differs from its expected template configuration. A stack is considered to have drifted if one or more of its resources have drifted.    NOT_CHECKED: AWS CloudFormation has not checked if the stack differs from its expected template configuration.    IN_SYNC: The stack's actual configuration matches its expected template configuration.    UNKNOWN: This value is reserved for future use.  
+         */
+    var StackDriftStatus: StackDriftStatus
+  }
+  
+  
+  trait StackDriftInformationSummary extends js.Object {
+    /**
+         * Most recent time when a drift detection operation was initiated on the stack, or any of its individual resources that support drift detection.
+         */
+    var LastCheckTimestamp: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * Status of the stack's actual configuration compared to its expected template configuration.     DRIFTED: The stack differs from its expected template configuration. A stack is considered to have drifted if one or more of its resources have drifted.    NOT_CHECKED: AWS CloudFormation has not checked if the stack differs from its expected template configuration.    IN_SYNC: The stack's actual configuration matches its expected template configuration.    UNKNOWN: This value is reserved for future use.  
+         */
+    var StackDriftStatus: StackDriftStatus
   }
   
   
@@ -1515,6 +1687,10 @@ object CloudFormationNs extends js.Object {
          */
     var Description: js.UndefOr[Description] = js.undefined
     /**
+         * Information about whether the resource's actual configuration differs, or has drifted, from its expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
+         */
+    var DriftInformation: js.UndefOr[StackResourceDriftInformation] = js.undefined
+    /**
          * The logical name of the resource specified in the template.
          */
     var LogicalResourceId: LogicalResourceId
@@ -1555,6 +1731,10 @@ object CloudFormationNs extends js.Object {
          */
     var Description: js.UndefOr[Description] = js.undefined
     /**
+         * Information about whether the resource's actual configuration differs, or has drifted, from its expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
+         */
+    var DriftInformation: js.UndefOr[StackResourceDriftInformation] = js.undefined
+    /**
          * Time the status was updated.
          */
     var LastUpdatedTimestamp: Timestamp
@@ -1593,7 +1773,79 @@ object CloudFormationNs extends js.Object {
   }
   
   
+  trait StackResourceDrift extends js.Object {
+    /**
+         * A JSON structure containing the actual property values of the stack resource. For resources whose StackResourceDriftStatus is DELETED, this structure will not be present. 
+         */
+    var ActualProperties: js.UndefOr[Properties] = js.undefined
+    /**
+         * A JSON structure containing the expected property values of the stack resource, as defined in the stack template and any values specified as template parameters.  For resources whose StackResourceDriftStatus is DELETED, this structure will not be present. 
+         */
+    var ExpectedProperties: js.UndefOr[Properties] = js.undefined
+    /**
+         * The logical name of the resource specified in the template.
+         */
+    var LogicalResourceId: LogicalResourceId
+    /**
+         * The name or unique identifier that corresponds to a physical instance ID of a resource supported by AWS CloudFormation. 
+         */
+    var PhysicalResourceId: js.UndefOr[PhysicalResourceId] = js.undefined
+    /**
+         * Context information that enables AWS CloudFormation to uniquely identify a resource. AWS CloudFormation uses context key-value pairs in cases where a resource's logical and physical IDs are not enough to uniquely identify that resource. Each context key-value pair specifies a unique resource that contains the targeted resource.
+         */
+    var PhysicalResourceIdContext: js.UndefOr[PhysicalResourceIdContext] = js.undefined
+    /**
+         * A collection of the resource properties whose actual values differ from their expected values. These will be present only for resources whose StackResourceDriftStatus is MODIFIED. 
+         */
+    var PropertyDifferences: js.UndefOr[PropertyDifferences] = js.undefined
+    /**
+         * The type of the resource.
+         */
+    var ResourceType: ResourceType
+    /**
+         * The ID of the stack.
+         */
+    var StackId: StackId
+    /**
+         * Status of the resource's actual configuration compared to its expected configuration    DELETED: The resource differs from its expected template configuration because the resource has been deleted.    MODIFIED: One or more resource properties differ from their expected values (as defined in the stack template and any values specified as template parameters).    IN_SYNC: The resources's actual configuration matches its expected template configuration.    NOT_CHECKED: AWS CloudFormation does not currently return this value.  
+         */
+    var StackResourceDriftStatus: StackResourceDriftStatus
+    /**
+         * Time at which AWS CloudFormation performed drift detection on the stack resource.
+         */
+    var Timestamp: Timestamp
+  }
+  
+  
+  trait StackResourceDriftInformation extends js.Object {
+    /**
+         * When AWS CloudFormation last checked if the resource had drifted from its expected configuration.
+         */
+    var LastCheckTimestamp: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * Status of the resource's actual configuration compared to its expected configuration    DELETED: The resource differs from its expected configuration in that it has been deleted.    MODIFIED: The resource differs from its expected configuration.    NOT_CHECKED: AWS CloudFormation has not checked if the resource differs from its expected configuration. Any resources that do not currently support drift detection have a status of NOT_CHECKED. For more information, see Resources that Support Drift Detection.     IN_SYNC: The resources's actual configuration matches its expected configuration.  
+         */
+    var StackResourceDriftStatus: StackResourceDriftStatus
+  }
+  
+  
+  trait StackResourceDriftInformationSummary extends js.Object {
+    /**
+         * When AWS CloudFormation last checked if the resource had drifted from its expected configuration.
+         */
+    var LastCheckTimestamp: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * Status of the resource's actual configuration compared to its expected configuration    DELETED: The resource differs from its expected configuration in that it has been deleted.    MODIFIED: The resource differs from its expected configuration.    NOT_CHECKED: AWS CloudFormation has not checked if the resource differs from its expected configuration. Any resources that do not currently support drift detection have a status of NOT_CHECKED. For more information, see Resources that Support Drift Detection. If you performed an ContinueUpdateRollback operation on a stack, any resources included in ResourcesToSkip will also have a status of NOT_CHECKED. For more information on skipping resources during rollback operations, see Continue Rolling Back an Update in the AWS CloudFormation User Guide.    IN_SYNC: The resources's actual configuration matches its expected configuration.  
+         */
+    var StackResourceDriftStatus: StackResourceDriftStatus
+  }
+  
+  
   trait StackResourceSummary extends js.Object {
+    /**
+         * Information about whether the resource's actual configuration differs, or has drifted, from its expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
+         */
+    var DriftInformation: js.UndefOr[StackResourceDriftInformationSummary] = js.undefined
     /**
          * Time the status was updated.
          */
@@ -1814,6 +2066,10 @@ object CloudFormationNs extends js.Object {
          * The time the stack was deleted.
          */
     var DeletionTime: js.UndefOr[DeletionTime] = js.undefined
+    /**
+         * Summarizes information on whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources.
+         */
+    var DriftInformation: js.UndefOr[StackDriftInformationSummary] = js.undefined
     /**
          * The time the stack was last updated. This field will only be returned if the stack has been updated at least once.
          */
@@ -2233,6 +2489,35 @@ object CloudFormationNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeChangeSetOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Returns information about a stack drift detection operation. A stack drift detection operation detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. A stack is considered to have drifted if one or more of its resources have drifted. For more information on stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to initiate a stack drift detection operation. DetectStackDrift returns a StackDriftDetectionId you can use to monitor the progress of the operation using DescribeStackDriftDetectionStatus. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources.
+       */
+    def describeStackDriftDetectionStatus(): awsDashSdkLib.libRequestMod.Request[DescribeStackDriftDetectionStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a stack drift detection operation. A stack drift detection operation detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. A stack is considered to have drifted if one or more of its resources have drifted. For more information on stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to initiate a stack drift detection operation. DetectStackDrift returns a StackDriftDetectionId you can use to monitor the progress of the operation using DescribeStackDriftDetectionStatus. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources.
+       */
+    def describeStackDriftDetectionStatus(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeStackDriftDetectionStatusOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeStackDriftDetectionStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a stack drift detection operation. A stack drift detection operation detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. A stack is considered to have drifted if one or more of its resources have drifted. For more information on stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to initiate a stack drift detection operation. DetectStackDrift returns a StackDriftDetectionId you can use to monitor the progress of the operation using DescribeStackDriftDetectionStatus. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources.
+       */
+    def describeStackDriftDetectionStatus(params: DescribeStackDriftDetectionStatusInput): awsDashSdkLib.libRequestMod.Request[DescribeStackDriftDetectionStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a stack drift detection operation. A stack drift detection operation detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. A stack is considered to have drifted if one or more of its resources have drifted. For more information on stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to initiate a stack drift detection operation. DetectStackDrift returns a StackDriftDetectionId you can use to monitor the progress of the operation using DescribeStackDriftDetectionStatus. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources.
+       */
+    def describeStackDriftDetectionStatus(
+      params: DescribeStackDriftDetectionStatusInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeStackDriftDetectionStatusOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeStackDriftDetectionStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Returns all stack related events for a specified stack in reverse chronological order. For more information about a stack's event history, go to Stacks in the AWS CloudFormation User Guide.  You can list events for stacks that have failed to create or have been deleted by specifying the unique stack identifier (stack ID). 
        */
     def describeStackEvents(): awsDashSdkLib.libRequestMod.Request[DescribeStackEventsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2319,6 +2604,35 @@ object CloudFormationNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeStackResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where AWS CloudFormation detects configuration drift. For a given stack, there will be one StackResourceDrift for each stack resource that has been checked for drift. Resources that have not yet been checked for drift are not included. Resources that do not currently support drift detection are not checked, and so not included. For a list of resources that support drift detection, see Resources that Support Drift Detection. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all supported resources for a given stack.
+       */
+    def describeStackResourceDrifts(): awsDashSdkLib.libRequestMod.Request[DescribeStackResourceDriftsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where AWS CloudFormation detects configuration drift. For a given stack, there will be one StackResourceDrift for each stack resource that has been checked for drift. Resources that have not yet been checked for drift are not included. Resources that do not currently support drift detection are not checked, and so not included. For a list of resources that support drift detection, see Resources that Support Drift Detection. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all supported resources for a given stack.
+       */
+    def describeStackResourceDrifts(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeStackResourceDriftsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeStackResourceDriftsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where AWS CloudFormation detects configuration drift. For a given stack, there will be one StackResourceDrift for each stack resource that has been checked for drift. Resources that have not yet been checked for drift are not included. Resources that do not currently support drift detection are not checked, and so not included. For a list of resources that support drift detection, see Resources that Support Drift Detection. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all supported resources for a given stack.
+       */
+    def describeStackResourceDrifts(params: DescribeStackResourceDriftsInput): awsDashSdkLib.libRequestMod.Request[DescribeStackResourceDriftsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns drift information for the resources that have been checked for drift in the specified stack. This includes actual and expected configuration values for resources where AWS CloudFormation detects configuration drift. For a given stack, there will be one StackResourceDrift for each stack resource that has been checked for drift. Resources that have not yet been checked for drift are not included. Resources that do not currently support drift detection are not checked, and so not included. For a list of resources that support drift detection, see Resources that Support Drift Detection. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all supported resources for a given stack.
+       */
+    def describeStackResourceDrifts(
+      params: DescribeStackResourceDriftsInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeStackResourceDriftsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeStackResourceDriftsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Returns AWS resource descriptions for running and deleted stacks. If StackName is specified, all the associated resources that are part of the stack are returned. If PhysicalResourceId is specified, the associated resources of the stack that the resource belongs to are returned.  Only the first 100 resources will be returned. If your stack has more resources than this, you should use ListStackResources instead.  For deleted stacks, DescribeStackResources returns resource information for up to 90 days after the stack has been deleted. You must specify either StackName or PhysicalResourceId, but not both. In addition, you can specify LogicalResourceId to filter the returned result. For more information about resources, the LogicalResourceId and PhysicalResourceId, go to the AWS CloudFormation User Guide.  A ValidationError is returned if you specify both StackName and PhysicalResourceId in the same request. 
        */
@@ -2435,6 +2749,64 @@ object CloudFormationNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeStacksOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For each resource in the stack that supports drift detection, AWS CloudFormation compares the actual configuration of the resource with its expected template configuration. Only resource properties explicitly defined in the stack template are checked for drift. A stack is considered to have drifted if one or more of its resources differ from their expected template configurations. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to detect drift on all supported resources for a given stack, or DetectStackResourceDrift to detect drift on individual resources. For a list of stack resources that currently support drift detection, see Resources that Support Drift Detection.  DetectStackDrift can take up to several minutes, depending on the number of resources contained within the stack. Use DescribeStackDriftDetectionStatus to monitor the progress of a detect stack drift operation. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources. When detecting drift on a stack, AWS CloudFormation does not detect drift on any nested stacks belonging to that stack. Perform DetectStackDrift directly on the nested stack itself.
+       */
+    def detectStackDrift(): awsDashSdkLib.libRequestMod.Request[DetectStackDriftOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For each resource in the stack that supports drift detection, AWS CloudFormation compares the actual configuration of the resource with its expected template configuration. Only resource properties explicitly defined in the stack template are checked for drift. A stack is considered to have drifted if one or more of its resources differ from their expected template configurations. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to detect drift on all supported resources for a given stack, or DetectStackResourceDrift to detect drift on individual resources. For a list of stack resources that currently support drift detection, see Resources that Support Drift Detection.  DetectStackDrift can take up to several minutes, depending on the number of resources contained within the stack. Use DescribeStackDriftDetectionStatus to monitor the progress of a detect stack drift operation. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources. When detecting drift on a stack, AWS CloudFormation does not detect drift on any nested stacks belonging to that stack. Perform DetectStackDrift directly on the nested stack itself.
+       */
+    def detectStackDrift(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DetectStackDriftOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DetectStackDriftOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For each resource in the stack that supports drift detection, AWS CloudFormation compares the actual configuration of the resource with its expected template configuration. Only resource properties explicitly defined in the stack template are checked for drift. A stack is considered to have drifted if one or more of its resources differ from their expected template configurations. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to detect drift on all supported resources for a given stack, or DetectStackResourceDrift to detect drift on individual resources. For a list of stack resources that currently support drift detection, see Resources that Support Drift Detection.  DetectStackDrift can take up to several minutes, depending on the number of resources contained within the stack. Use DescribeStackDriftDetectionStatus to monitor the progress of a detect stack drift operation. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources. When detecting drift on a stack, AWS CloudFormation does not detect drift on any nested stacks belonging to that stack. Perform DetectStackDrift directly on the nested stack itself.
+       */
+    def detectStackDrift(params: DetectStackDriftInput): awsDashSdkLib.libRequestMod.Request[DetectStackDriftOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Detects whether a stack's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. For each resource in the stack that supports drift detection, AWS CloudFormation compares the actual configuration of the resource with its expected template configuration. Only resource properties explicitly defined in the stack template are checked for drift. A stack is considered to have drifted if one or more of its resources differ from their expected template configurations. For more information, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackDrift to detect drift on all supported resources for a given stack, or DetectStackResourceDrift to detect drift on individual resources. For a list of stack resources that currently support drift detection, see Resources that Support Drift Detection.  DetectStackDrift can take up to several minutes, depending on the number of resources contained within the stack. Use DescribeStackDriftDetectionStatus to monitor the progress of a detect stack drift operation. Once the drift detection operation has completed, use DescribeStackResourceDrifts to return drift information about the stack and its resources. When detecting drift on a stack, AWS CloudFormation does not detect drift on any nested stacks belonging to that stack. Perform DetectStackDrift directly on the nested stack itself.
+       */
+    def detectStackDrift(
+      params: DetectStackDriftInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DetectStackDriftOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DetectStackDriftOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about whether a resource's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. This information includes actual and expected property values for resources in which AWS CloudFormation detects drift. Only resource properties explicitly defined in the stack template are checked for drift. For more information about stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all resources in a given stack that support drift detection. Resources that do not currently support drift detection cannot be checked. For a list of resources that support drift detection, see Resources that Support Drift Detection.
+       */
+    def detectStackResourceDrift(): awsDashSdkLib.libRequestMod.Request[DetectStackResourceDriftOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about whether a resource's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. This information includes actual and expected property values for resources in which AWS CloudFormation detects drift. Only resource properties explicitly defined in the stack template are checked for drift. For more information about stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all resources in a given stack that support drift detection. Resources that do not currently support drift detection cannot be checked. For a list of resources that support drift detection, see Resources that Support Drift Detection.
+       */
+    def detectStackResourceDrift(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DetectStackResourceDriftOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DetectStackResourceDriftOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about whether a resource's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. This information includes actual and expected property values for resources in which AWS CloudFormation detects drift. Only resource properties explicitly defined in the stack template are checked for drift. For more information about stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all resources in a given stack that support drift detection. Resources that do not currently support drift detection cannot be checked. For a list of resources that support drift detection, see Resources that Support Drift Detection.
+       */
+    def detectStackResourceDrift(params: DetectStackResourceDriftInput): awsDashSdkLib.libRequestMod.Request[DetectStackResourceDriftOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about whether a resource's actual configuration differs, or has drifted, from it's expected configuration, as defined in the stack template and any values specified as template parameters. This information includes actual and expected property values for resources in which AWS CloudFormation detects drift. Only resource properties explicitly defined in the stack template are checked for drift. For more information about stack and resource drift, see Detecting Unregulated Configuration Changes to Stacks and Resources. Use DetectStackResourceDrift to detect drift on individual resources, or DetectStackDrift to detect drift on all resources in a given stack that support drift detection. Resources that do not currently support drift detection cannot be checked. For a list of resources that support drift detection, see Resources that Support Drift Detection.
+       */
+    def detectStackResourceDrift(
+      params: DetectStackResourceDriftInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DetectStackResourceDriftOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DetectStackResourceDriftOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Returns the estimated monthly cost of a template. The return value is an AWS Simple Monthly Calculator URL with a query string that describes the resources required to run the template.
        */
@@ -3252,7 +3624,7 @@ object CloudFormationNs extends js.Object {
   
   trait UpdateStackInput extends js.Object {
     /**
-         * A list of values that you must specify before AWS CloudFormation can update certain stacks. Some stack templates might include resources that can affect permissions in your AWS account, for example, by creating new AWS Identity and Access Management (IAM) users. For those stacks, you must explicitly acknowledge their capabilities by specifying this parameter. The only valid values are CAPABILITY_IAM and CAPABILITY_NAMED_IAM. The following resources require you to specify this parameter:  AWS::IAM::AccessKey,  AWS::IAM::Group,  AWS::IAM::InstanceProfile,  AWS::IAM::Policy,  AWS::IAM::Role,  AWS::IAM::User, and  AWS::IAM::UserToGroupAddition. If your stack template contains these resources, we recommend that you review all permissions associated with them and edit their permissions if necessary. If you have IAM resources, you can specify either capability. If you have IAM resources with custom names, you must specify CAPABILITY_NAMED_IAM. If you don't specify this parameter, this action returns an InsufficientCapabilities error. For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.
+         * In some cases, you must explicity acknowledge that your stack template contains certain capabilities in order for AWS CloudFormation to update the stack.    CAPABILITY_IAM and CAPABILITY_NAMED_IAM  Some stack templates might include resources that can affect permissions in your AWS account; for example, by creating new AWS Identity and Access Management (IAM) users. For those stacks, you must explicitly acknowledge this by specifying one of these capabilities. The following IAM resources require you to specify either the CAPABILITY_IAM or CAPABILITY_NAMED_IAM capability.   If you have IAM resources, you can specify either capability.    If you have IAM resources with custom names, you must specify CAPABILITY_NAMED_IAM.    If you don't specify either of these capabilities, AWS CloudFormation returns an InsufficientCapabilities error.   If your stack template contains these resources, we recommend that you review all permissions associated with them and edit their permissions if necessary.     AWS::IAM::AccessKey      AWS::IAM::Group      AWS::IAM::InstanceProfile      AWS::IAM::Policy      AWS::IAM::Role      AWS::IAM::User      AWS::IAM::UserToGroupAddition    For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.    CAPABILITY_AUTO_EXPAND  Some template contain macros. Macros perform custom processing on templates; this can include simple actions like find-and-replace operations, all the way to extensive transformations of entire templates. Because of this, users typically create a change set from the processed template, so that they can review the changes resulting from the macros before actually updating the stack. If your stack template contains one or more macros, and you choose to update a stack directly from the processed template, without first reviewing the resulting changes in a change set, you must acknowledge this capability. This includes the AWS::Include and AWS::Serverless transforms, which are macros hosted by AWS CloudFormation. Change sets do not currently support nested stacks. If you want to update a stack from a stack template that contains macros and nested stacks, you must update the stack directly from the template using this capability.  You should only update stacks directly from a stack template that contains macros if you know what processing the macro performs. Each macro relies on an underlying Lambda service function for processing stack templates. Be aware that the Lambda function owner can update the function operation without AWS CloudFormation being notified.  For more information, see Using AWS CloudFormation Macros to Perform Custom Processing on Templates.  
          */
     var Capabilities: js.UndefOr[Capabilities] = js.undefined
     /**
@@ -3494,9 +3866,11 @@ object CloudFormationNs extends js.Object {
   type AllowedValue = java.lang.String
   type AllowedValues = js.Array[AllowedValue]
   type Arn = java.lang.String
+  type BoxedInteger = scala.Double
+  type BoxedMaxResults = scala.Double
   type Capabilities = js.Array[Capability]
   type CapabilitiesReason = java.lang.String
-  type Capability = awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_IAM | awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_NAMED_IAM | java.lang.String
+  type Capability = awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_IAM | awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_NAMED_IAM | awsDashSdkLib.awsDashSdkLibStrings.CAPABILITY_AUTO_EXPAND | java.lang.String
   type CausingEntity = java.lang.String
   type ChangeAction = awsDashSdkLib.awsDashSdkLibStrings.Add | awsDashSdkLib.awsDashSdkLibStrings.Modify | awsDashSdkLib.awsDashSdkLibStrings.Remove | java.lang.String
   type ChangeSetId = java.lang.String
@@ -3515,6 +3889,7 @@ object CloudFormationNs extends js.Object {
   type CreationTime = stdLib.Date
   type DeletionTime = stdLib.Date
   type Description = java.lang.String
+  type DifferenceType = awsDashSdkLib.awsDashSdkLibStrings.ADD | awsDashSdkLib.awsDashSdkLibStrings.REMOVE | awsDashSdkLib.awsDashSdkLibStrings.NOT_EQUAL | java.lang.String
   type DisableRollback = scala.Boolean
   type EnableTerminationProtection = scala.Boolean
   type EvaluationType = awsDashSdkLib.awsDashSdkLibStrings.Static | awsDashSdkLib.awsDashSdkLibStrings.Dynamic | java.lang.String
@@ -3527,10 +3902,12 @@ object CloudFormationNs extends js.Object {
   type FailureToleranceCount = scala.Double
   type FailureTolerancePercentage = scala.Double
   type Imports = js.Array[StackName]
+  type Key = java.lang.String
   type LastUpdatedTime = stdLib.Date
   type LimitName = java.lang.String
   type LimitValue = scala.Double
   type LogicalResourceId = java.lang.String
+  type LogicalResourceIds = js.Array[LogicalResourceId]
   type MaxConcurrentCount = scala.Double
   type MaxConcurrentPercentage = scala.Double
   type MaxResults = scala.Double
@@ -3550,7 +3927,12 @@ object CloudFormationNs extends js.Object {
   type ParameterValue = java.lang.String
   type Parameters = js.Array[Parameter]
   type PhysicalResourceId = java.lang.String
+  type PhysicalResourceIdContext = js.Array[PhysicalResourceIdContextKeyValuePair]
+  type Properties = java.lang.String
+  type PropertyDifferences = js.Array[PropertyDifference]
   type PropertyName = java.lang.String
+  type PropertyPath = java.lang.String
+  type PropertyValue = java.lang.String
   type Reason = java.lang.String
   type Region = java.lang.String
   type RegionList = js.Array[Region]
@@ -3573,6 +3955,10 @@ object CloudFormationNs extends js.Object {
   type RoleARN = java.lang.String
   type RollbackTriggers = js.Array[RollbackTrigger]
   type Scope = js.Array[ResourceAttribute]
+  type StackDriftDetectionId = java.lang.String
+  type StackDriftDetectionStatus = awsDashSdkLib.awsDashSdkLibStrings.DETECTION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.DETECTION_FAILED | awsDashSdkLib.awsDashSdkLibStrings.DETECTION_COMPLETE | java.lang.String
+  type StackDriftDetectionStatusReason = java.lang.String
+  type StackDriftStatus = awsDashSdkLib.awsDashSdkLibStrings.DRIFTED | awsDashSdkLib.awsDashSdkLibStrings.IN_SYNC | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | awsDashSdkLib.awsDashSdkLibStrings.NOT_CHECKED | java.lang.String
   type StackEvents = js.Array[StackEvent]
   type StackId = java.lang.String
   type StackInstanceStatus = awsDashSdkLib.awsDashSdkLibStrings.CURRENT | awsDashSdkLib.awsDashSdkLibStrings.OUTDATED | awsDashSdkLib.awsDashSdkLibStrings.INOPERABLE | java.lang.String
@@ -3583,6 +3969,9 @@ object CloudFormationNs extends js.Object {
   type StackPolicyDuringUpdateBody = java.lang.String
   type StackPolicyDuringUpdateURL = java.lang.String
   type StackPolicyURL = java.lang.String
+  type StackResourceDriftStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_SYNC | awsDashSdkLib.awsDashSdkLibStrings.MODIFIED | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.NOT_CHECKED | java.lang.String
+  type StackResourceDriftStatusFilters = js.Array[StackResourceDriftStatus]
+  type StackResourceDrifts = js.Array[StackResourceDrift]
   type StackResourceSummaries = js.Array[StackResourceSummary]
   type StackResources = js.Array[StackResource]
   type StackSetARN = java.lang.String
@@ -3618,6 +4007,7 @@ object CloudFormationNs extends js.Object {
   type Url = java.lang.String
   type UsePreviousTemplate = scala.Boolean
   type UsePreviousValue = scala.Boolean
+  type Value = java.lang.String
   type Version = java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2010-05-15` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }

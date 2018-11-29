@@ -22,6 +22,12 @@ class QueryStats () extends IQueryStats {
   /** QueryStats perType. */
   @JSName("perType")
   var perType_QueryStats: js.Array[ITypeStat] = js.native
+  /** QueryStats queryStatsWithContext. */
+  @JSName("queryStatsWithContext")
+  var queryStatsWithContext_QueryStats: js.Array[IContextualizedQueryLatencyStats] = js.native
+  /** QueryStats typeStatsWithContext. */
+  @JSName("typeStatsWithContext")
+  var typeStatsWithContext_QueryStats: js.Array[IContextualizedTypeStats] = js.native
   /**
        * Converts this QueryStats to JSON.
        * @returns JSON object

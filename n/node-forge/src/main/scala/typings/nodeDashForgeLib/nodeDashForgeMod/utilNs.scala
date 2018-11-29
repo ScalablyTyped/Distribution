@@ -62,7 +62,10 @@ object utilNs extends js.Object {
   
   def bytesToHex(bytes: nodeDashForgeLib.nodeDashForgeMod.Bytes): nodeDashForgeLib.nodeDashForgeMod.Hex = js.native
   def createBuffer(): ByteBuffer = js.native
-  def createBuffer(input: java.lang.String, encode: java.lang.String): ByteBuffer = js.native
+  def createBuffer(input: nodeDashForgeLib.nodeDashForgeMod.Bytes, encode: java.lang.String): ByteBuffer = js.native
+  def createBuffer(input: ArrayBufferView, encode: java.lang.String): ByteBuffer = js.native
+  def createBuffer(input: ByteStringBuffer, encode: java.lang.String): ByteBuffer = js.native
+  def createBuffer(input: stdLib.ArrayBuffer, encode: java.lang.String): ByteBuffer = js.native
   def decode64(encoded: nodeDashForgeLib.nodeDashForgeMod.Base64): nodeDashForgeLib.nodeDashForgeMod.Bytes = js.native
   def decodeUtf8(encoded: nodeDashForgeLib.nodeDashForgeMod.Utf8): java.lang.String = js.native
   def encode64(bytes: nodeDashForgeLib.nodeDashForgeMod.Bytes): nodeDashForgeLib.nodeDashForgeMod.Base64 = js.native

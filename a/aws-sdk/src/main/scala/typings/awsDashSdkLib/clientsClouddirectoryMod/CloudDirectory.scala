@@ -216,14 +216,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a typed link to a specified source and target object. For more information, see Typed link.
+     * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
      */
   def attachTypedLink(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.AttachTypedLinkResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a typed link to a specified source and target object. For more information, see Typed link.
+     * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
      */
   def attachTypedLink(
     callback: js.Function2[
@@ -236,14 +236,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a typed link to a specified source and target object. For more information, see Typed link.
+     * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
      */
   def attachTypedLink(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.AttachTypedLinkRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.AttachTypedLinkResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Attaches a typed link to a specified source and target object. For more information, see Typed link.
+     * Attaches a typed link to a specified source and target object. For more information, see Typed Links.
      */
   def attachTypedLink(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.AttachTypedLinkRequest,
@@ -339,14 +339,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema.
+     * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema. You can also quickly create a directory using a managed schema, called the QuickStartSchema. For more information, see Managed Schema in the Amazon Cloud Directory Developer Guide.
      */
   def createDirectory(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateDirectoryResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema.
+     * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema. You can also quickly create a directory using a managed schema, called the QuickStartSchema. For more information, see Managed Schema in the Amazon Cloud Directory Developer Guide.
      */
   def createDirectory(
     callback: js.Function2[
@@ -359,14 +359,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema.
+     * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema. You can also quickly create a directory using a managed schema, called the QuickStartSchema. For more information, see Managed Schema in the Amazon Cloud Directory Developer Guide.
      */
   def createDirectory(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateDirectoryRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateDirectoryResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema.
+     * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema. You can also quickly create a directory using a managed schema, called the QuickStartSchema. For more information, see Managed Schema in the Amazon Cloud Directory Developer Guide.
      */
   def createDirectory(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateDirectoryRequest,
@@ -421,14 +421,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an index object. See Indexing for more information.
+     * Creates an index object. See Indexing and search for more information.
      */
   def createIndex(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateIndexResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an index object. See Indexing for more information.
+     * Creates an index object. See Indexing and search for more information.
      */
   def createIndex(
     callback: js.Function2[
@@ -441,14 +441,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an index object. See Indexing for more information.
+     * Creates an index object. See Indexing and search for more information.
      */
   def createIndex(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateIndexRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateIndexResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates an index object. See Indexing for more information.
+     * Creates an index object. See Indexing and search for more information.
      */
   def createIndex(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateIndexRequest,
@@ -544,14 +544,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a TypedLinkFacet. For more information, see Typed link.
+     * Creates a TypedLinkFacet. For more information, see Typed Links.
      */
   def createTypedLinkFacet(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateTypedLinkFacetResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a TypedLinkFacet. For more information, see Typed link.
+     * Creates a TypedLinkFacet. For more information, see Typed Links.
      */
   def createTypedLinkFacet(
     callback: js.Function2[
@@ -564,14 +564,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a TypedLinkFacet. For more information, see Typed link.
+     * Creates a TypedLinkFacet. For more information, see Typed Links.
      */
   def createTypedLinkFacet(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateTypedLinkFacetRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateTypedLinkFacetResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a TypedLinkFacet. For more information, see Typed link.
+     * Creates a TypedLinkFacet. For more information, see Typed Links.
      */
   def createTypedLinkFacet(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.CreateTypedLinkFacetRequest,
@@ -667,14 +667,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted.
+     * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted. The maximum number of attributes that can be deleted during an object deletion is 30. For more information, see Amazon Cloud Directory Limits.
      */
   def deleteObject(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DeleteObjectResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted.
+     * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted. The maximum number of attributes that can be deleted during an object deletion is 30. For more information, see Amazon Cloud Directory Limits.
      */
   def deleteObject(
     callback: js.Function2[
@@ -687,14 +687,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted.
+     * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted. The maximum number of attributes that can be deleted during an object deletion is 30. For more information, see Amazon Cloud Directory Limits.
      */
   def deleteObject(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DeleteObjectRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DeleteObjectResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted.
+     * Deletes an object and its associated attributes. Only objects with no children and no parents can be deleted. The maximum number of attributes that can be deleted during an object deletion is 30. For more information, see Amazon Cloud Directory Limits.
      */
   def deleteObject(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DeleteObjectRequest,
@@ -749,14 +749,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a TypedLinkFacet. For more information, see Typed link.
+     * Deletes a TypedLinkFacet. For more information, see Typed Links.
      */
   def deleteTypedLinkFacet(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DeleteTypedLinkFacetResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a TypedLinkFacet. For more information, see Typed link.
+     * Deletes a TypedLinkFacet. For more information, see Typed Links.
      */
   def deleteTypedLinkFacet(
     callback: js.Function2[
@@ -769,14 +769,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a TypedLinkFacet. For more information, see Typed link.
+     * Deletes a TypedLinkFacet. For more information, see Typed Links.
      */
   def deleteTypedLinkFacet(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DeleteTypedLinkFacetRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DeleteTypedLinkFacetResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes a TypedLinkFacet. For more information, see Typed link.
+     * Deletes a TypedLinkFacet. For more information, see Typed Links.
      */
   def deleteTypedLinkFacet(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DeleteTypedLinkFacetRequest,
@@ -913,21 +913,21 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Detaches a typed link from a specified source and target object. For more information, see Typed link.
+     * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
      */
   def detachTypedLink(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Detaches a typed link from a specified source and target object. For more information, see Typed link.
+     * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
      */
   def detachTypedLink(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Detaches a typed link from a specified source and target object. For more information, see Typed link.
+     * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
      */
   def detachTypedLink(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DetachTypedLinkRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Detaches a typed link from a specified source and target object. For more information, see Typed link.
+     * Detaches a typed link from a specified source and target object. For more information, see Typed Links.
      */
   def detachTypedLink(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.DetachTypedLinkRequest,
@@ -1303,14 +1303,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed link.
+     * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed Links.
      */
   def getTypedLinkFacetInformation(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.GetTypedLinkFacetInformationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed link.
+     * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed Links.
      */
   def getTypedLinkFacetInformation(
     callback: js.Function2[
@@ -1323,7 +1323,7 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed link.
+     * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed Links.
      */
   def getTypedLinkFacetInformation(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.GetTypedLinkFacetInformationRequest
@@ -1332,7 +1332,7 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed link.
+     * Returns the identity attribute order for a specific TypedLinkFacet. For more information, see Typed Links.
      */
   def getTypedLinkFacetInformation(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.GetTypedLinkFacetInformationRequest,
@@ -1592,14 +1592,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+     * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
      */
   def listIncomingTypedLinks(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListIncomingTypedLinksResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+     * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
      */
   def listIncomingTypedLinks(
     callback: js.Function2[
@@ -1612,14 +1612,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+     * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
      */
   def listIncomingTypedLinks(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListIncomingTypedLinksRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListIncomingTypedLinksResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+     * Returns a paginated list of all the incoming TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
      */
   def listIncomingTypedLinks(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListIncomingTypedLinksRequest,
@@ -1920,14 +1920,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+     * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
      */
   def listOutgoingTypedLinks(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListOutgoingTypedLinksResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+     * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
      */
   def listOutgoingTypedLinks(
     callback: js.Function2[
@@ -1940,14 +1940,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+     * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
      */
   def listOutgoingTypedLinks(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListOutgoingTypedLinksRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListOutgoingTypedLinksResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed link.
+     * Returns a paginated list of all the outgoing TypedLinkSpecifier information for an object. It also supports filtering by typed link facet and identity attributes. For more information, see Typed Links.
      */
   def listOutgoingTypedLinks(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListOutgoingTypedLinksRequest,
@@ -2084,14 +2084,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed link.
+     * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed Links.
      */
   def listTypedLinkFacetAttributes(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListTypedLinkFacetAttributesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed link.
+     * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed Links.
      */
   def listTypedLinkFacetAttributes(
     callback: js.Function2[
@@ -2104,7 +2104,7 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed link.
+     * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed Links.
      */
   def listTypedLinkFacetAttributes(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListTypedLinkFacetAttributesRequest
@@ -2113,7 +2113,7 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed link.
+     * Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed Links.
      */
   def listTypedLinkFacetAttributes(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListTypedLinkFacetAttributesRequest,
@@ -2127,14 +2127,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed link.
+     * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed Links.
      */
   def listTypedLinkFacetNames(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListTypedLinkFacetNamesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed link.
+     * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed Links.
      */
   def listTypedLinkFacetNames(
     callback: js.Function2[
@@ -2147,14 +2147,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed link.
+     * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed Links.
      */
   def listTypedLinkFacetNames(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListTypedLinkFacetNamesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListTypedLinkFacetNamesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed link.
+     * Returns a paginated list of TypedLink facet names for a particular schema. For more information, see Typed Links.
      */
   def listTypedLinkFacetNames(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ListTypedLinkFacetNamesRequest,
@@ -2578,14 +2578,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates a TypedLinkFacet. For more information, see Typed link.
+     * Updates a TypedLinkFacet. For more information, see Typed Links.
      */
   def updateTypedLinkFacet(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.UpdateTypedLinkFacetResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates a TypedLinkFacet. For more information, see Typed link.
+     * Updates a TypedLinkFacet. For more information, see Typed Links.
      */
   def updateTypedLinkFacet(
     callback: js.Function2[
@@ -2598,14 +2598,14 @@ trait CloudDirectory
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates a TypedLinkFacet. For more information, see Typed link.
+     * Updates a TypedLinkFacet. For more information, see Typed Links.
      */
   def updateTypedLinkFacet(params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.UpdateTypedLinkFacetRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.UpdateTypedLinkFacetResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Updates a TypedLinkFacet. For more information, see Typed link.
+     * Updates a TypedLinkFacet. For more information, see Typed Links.
      */
   def updateTypedLinkFacet(
     params: awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.UpdateTypedLinkFacetRequest,

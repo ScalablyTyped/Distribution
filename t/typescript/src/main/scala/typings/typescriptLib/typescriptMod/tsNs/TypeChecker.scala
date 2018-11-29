@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait TypeChecker extends js.Object {
   /** Follow all aliases to get the original symbol. */
   def getAliasedSymbol(symbol: Symbol): Symbol = js.native
-  def getAllAttributesTypeFromJsxOpeningLikeElement(elementNode: JsxOpeningLikeElement): js.UndefOr[Type] = js.native
   def getAmbientModules(): js.Array[Symbol] = js.native
   def getApparentType(`type`: Type): Type = js.native
   def getAugmentedPropertiesOfType(`type`: Type): js.Array[Symbol] = js.native

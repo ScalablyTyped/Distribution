@@ -12,8 +12,6 @@ object AnnotationNs extends js.Object {
   class BinaryAnnotation protected ()
     extends zipkinLib.zipkinMod.zipkinNs.AnnotationNs.BinaryAnnotation {
     def this(key: java.lang.String, value: java.lang.String) = this()
-    def this(key: java.lang.String, value: scala.Boolean) = this()
-    def this(key: java.lang.String, value: scala.Double) = this()
     /* CompleteClass */
     override val annotationType: java.lang.String = js.native
     /* CompleteClass */

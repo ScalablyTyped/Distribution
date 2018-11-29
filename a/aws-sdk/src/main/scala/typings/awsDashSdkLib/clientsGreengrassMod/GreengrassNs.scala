@@ -11,7 +11,7 @@ object GreengrassNs extends js.Object {
   
   trait AssociateRoleToGroupRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
     /**
@@ -45,6 +45,74 @@ object GreengrassNs extends js.Object {
   }
   
   
+  trait BulkDeployment extends js.Object {
+    /**
+         * The ARN of the bulk deployment.
+         */
+    var BulkDeploymentArn: js.UndefOr[__string] = js.undefined
+    /**
+         * The ID of the bulk deployment.
+         */
+    var BulkDeploymentId: js.UndefOr[__string] = js.undefined
+    /**
+         * The time, in ISO format, when the deployment was created.
+         */
+    var CreatedAt: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait BulkDeploymentMetrics extends js.Object {
+    /**
+         * The total number of records that returned a non-retryable error. For example, this can occur if a group record from the input file uses an invalid format or specifies a nonexistent group version, or if the execution role doesn't grant permission to deploy a group or group version.
+         */
+    var InvalidInputRecords: js.UndefOr[__integer] = js.undefined
+    /**
+         * The total number of group records from the input file that have been processed so far, or attempted.
+         */
+    var RecordsProcessed: js.UndefOr[__integer] = js.undefined
+    /**
+         * The total number of deployment attempts that returned a retryable error. For example, a retry is triggered if the attempt to deploy a group returns a throttling error. ''StartBulkDeployment'' retries a group deployment up to five times.
+         */
+    var RetryAttempts: js.UndefOr[__integer] = js.undefined
+  }
+  
+  
+  trait BulkDeploymentResult extends js.Object {
+    /**
+         * The time, in ISO format, when the deployment was created.
+         */
+    var CreatedAt: js.UndefOr[__string] = js.undefined
+    /**
+         * The ARN of the group deployment.
+         */
+    var DeploymentArn: js.UndefOr[__string] = js.undefined
+    /**
+         * The ID of the group deployment.
+         */
+    var DeploymentId: js.UndefOr[__string] = js.undefined
+    /**
+         * The current status of the group deployment: ''Pending'', ''InProgress'', ''Success'', or ''Failure''.
+         */
+    var DeploymentStatus: js.UndefOr[__string] = js.undefined
+    /**
+         * The type of the deployment.
+         */
+    var DeploymentType: js.UndefOr[DeploymentType] = js.undefined
+    /**
+         * Details about the error.
+         */
+    var ErrorDetails: js.UndefOr[ErrorDetails] = js.undefined
+    /**
+         * The error message for a failed deployment
+         */
+    var ErrorMessage: js.UndefOr[__string] = js.undefined
+    /**
+         * The ARN of the Greengrass group.
+         */
+    var GroupArn: js.UndefOr[__string] = js.undefined
+  }
+  
+  
   trait ClientApiVersions extends js.Object {
     /**
          * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
@@ -73,13 +141,37 @@ object GreengrassNs extends js.Object {
   }
   
   
+  trait Connector extends js.Object {
+    /**
+         * The ARN of the connector.
+         */
+    var ConnectorArn: js.UndefOr[__string] = js.undefined
+    /**
+         * A descriptive or arbitrary ID for the connector. This value must be unique within the connector definition version. Max length is 128 characters with pattern [a-zA-Z0-9:_-]+.
+         */
+    var Id: js.UndefOr[__string] = js.undefined
+    /**
+         * The parameters or configuration that the connector uses.
+         */
+    var Parameters: js.UndefOr[__mapOf__string] = js.undefined
+  }
+  
+  
+  trait ConnectorDefinitionVersion extends js.Object {
+    /**
+         * A list of references to connectors in this version, with their corresponding configuration settings.
+         */
+    var Connectors: js.UndefOr[__listOfConnector] = js.undefined
+  }
+  
+  
   trait Core extends js.Object {
     /**
          * The ARN of the certificate associated with the core.
          */
     var CertificateArn: js.UndefOr[__string] = js.undefined
     /**
-         * The ID of the core.
+         * A descriptive or arbitrary ID for the core. This value must be unique within the core definition version. Max length is 128 characters with pattern ''[a-zA-Z0-9:_-]+''.
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
@@ -98,6 +190,90 @@ object GreengrassNs extends js.Object {
          * A list of cores in the core definition version.
          */
     var Cores: js.UndefOr[__listOfCore] = js.undefined
+  }
+  
+  
+  trait CreateConnectorDefinitionRequest extends js.Object {
+    /**
+         * A client token used to correlate requests and responses.
+         */
+    var AmznClientToken: js.UndefOr[__string] = js.undefined
+    /**
+         * Information about the initial version of the connector definition.
+         */
+    var InitialVersion: js.UndefOr[ConnectorDefinitionVersion] = js.undefined
+    /**
+         * The name of the connector definition.
+         */
+    var Name: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait CreateConnectorDefinitionResponse extends js.Object {
+    /**
+         * The ARN of the definition.
+         */
+    var Arn: js.UndefOr[__string] = js.undefined
+    /**
+         * The time, in milliseconds since the epoch, when the definition was created.
+         */
+    var CreationTimestamp: js.UndefOr[__string] = js.undefined
+    /**
+         * The ID of the definition.
+         */
+    var Id: js.UndefOr[__string] = js.undefined
+    /**
+         * The time, in milliseconds since the epoch, when the definition was last updated.
+         */
+    var LastUpdatedTimestamp: js.UndefOr[__string] = js.undefined
+    /**
+         * The latest version of the definition.
+         */
+    var LatestVersion: js.UndefOr[__string] = js.undefined
+    /**
+         * The ARN of the latest version of the definition.
+         */
+    var LatestVersionArn: js.UndefOr[__string] = js.undefined
+    /**
+         * The name of the definition.
+         */
+    var Name: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait CreateConnectorDefinitionVersionRequest extends js.Object {
+    /**
+         * A client token used to correlate requests and responses.
+         */
+    var AmznClientToken: js.UndefOr[__string] = js.undefined
+    /**
+         * The ID of the connector definition.
+         */
+    var ConnectorDefinitionId: __string
+    /**
+         * A list of references to connectors in this version, with their corresponding configuration settings.
+         */
+    var Connectors: js.UndefOr[__listOfConnector] = js.undefined
+  }
+  
+  
+  trait CreateConnectorDefinitionVersionResponse extends js.Object {
+    /**
+         * The ARN of the version.
+         */
+    var Arn: js.UndefOr[__string] = js.undefined
+    /**
+         * The time, in milliseconds since the epoch, when the version was created.
+         */
+    var CreationTimestamp: js.UndefOr[__string] = js.undefined
+    /**
+         * The ID of the version.
+         */
+    var Id: js.UndefOr[__string] = js.undefined
+    /**
+         * The unique ID of the version.
+         */
+    var Version: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -199,7 +375,7 @@ object GreengrassNs extends js.Object {
          */
     var DeploymentType: js.UndefOr[DeploymentType] = js.undefined
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
     /**
@@ -359,6 +535,10 @@ object GreengrassNs extends js.Object {
          */
     var AmznClientToken: js.UndefOr[__string] = js.undefined
     /**
+         * Default configuration that will apply to all Lambda functions in this function definition version
+         */
+    var DefaultConfig: js.UndefOr[FunctionDefaultConfig] = js.undefined
+    /**
          * The ID of the Lambda function definition.
          */
     var FunctionDefinitionId: __string
@@ -395,7 +575,7 @@ object GreengrassNs extends js.Object {
          */
     var AmznClientToken: js.UndefOr[__string] = js.undefined
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -463,6 +643,10 @@ object GreengrassNs extends js.Object {
          */
     var AmznClientToken: js.UndefOr[__string] = js.undefined
     /**
+         * The ARN of the connector definition version for this group.
+         */
+    var ConnectorDefinitionVersionArn: js.UndefOr[__string] = js.undefined
+    /**
          * The ARN of the core definition version for this group.
          */
     var CoreDefinitionVersionArn: js.UndefOr[__string] = js.undefined
@@ -475,7 +659,7 @@ object GreengrassNs extends js.Object {
          */
     var FunctionDefinitionVersionArn: js.UndefOr[__string] = js.undefined
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
     /**
@@ -483,7 +667,7 @@ object GreengrassNs extends js.Object {
          */
     var LoggerDefinitionVersionArn: js.UndefOr[__string] = js.undefined
     /**
-         * The resource definition version ARN for this group.
+         * The ARN of the resource definition version for this group.
          */
     var ResourceDefinitionVersionArn: js.UndefOr[__string] = js.undefined
     /**
@@ -823,6 +1007,17 @@ object GreengrassNs extends js.Object {
   }
   
   
+  trait DeleteConnectorDefinitionRequest extends js.Object {
+    /**
+         * The ID of the connector definition.
+         */
+    var ConnectorDefinitionId: __string
+  }
+  
+  
+  trait DeleteConnectorDefinitionResponse extends js.Object
+  
+  
   trait DeleteCoreDefinitionRequest extends js.Object {
     /**
          * The ID of the core definition.
@@ -858,7 +1053,7 @@ object GreengrassNs extends js.Object {
   
   trait DeleteGroupRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -930,7 +1125,7 @@ object GreengrassNs extends js.Object {
          */
     var CertificateArn: js.UndefOr[__string] = js.undefined
     /**
-         * The ID of the device.
+         * A descriptive or arbitrary ID for the device. This value must be unique within the device definition version. Max length is 128 characters with pattern ''[a-zA-Z0-9:_-]+''.
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
@@ -954,7 +1149,7 @@ object GreengrassNs extends js.Object {
   
   trait DisassociateRoleFromGroupRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -1001,7 +1196,7 @@ object GreengrassNs extends js.Object {
          */
     var FunctionConfiguration: js.UndefOr[FunctionConfiguration] = js.native
     /**
-         * The ID of the Lambda function.
+         * A descriptive or arbitrary ID for the function. This value must be unique within the function definition version. Max length is 128 characters with pattern ''[a-zA-Z0-9:_-]+''.
          */
     var Id: js.UndefOr[__string] = js.native
   }
@@ -1025,7 +1220,7 @@ object GreengrassNs extends js.Object {
          */
     var Executable: js.UndefOr[__string] = js.undefined
     /**
-         * The memory size, in KB, which the function requires.
+         * The memory size, in KB, which the function requires. This setting is not applicable and should be cleared when you run the Lambda function without containerization.
          */
     var MemorySize: js.UndefOr[__integer] = js.undefined
     /**
@@ -1033,7 +1228,7 @@ object GreengrassNs extends js.Object {
          */
     var Pinned: js.UndefOr[__boolean] = js.undefined
     /**
-         * The allowed function execution time, after which Lambda should terminate the function. This timeout still applies to pinned lambdas for each request.
+         * The allowed function execution time, after which Lambda should terminate the function. This timeout still applies to pinned Lambda functions for each request.
          */
     var Timeout: js.UndefOr[__integer] = js.undefined
   }
@@ -1041,11 +1236,15 @@ object GreengrassNs extends js.Object {
   
   trait FunctionConfigurationEnvironment extends js.Object {
     /**
-         * If true, the Lambda function is allowed to access the host's /sys folder. Use this when the Lambda function needs to read device information from /sys.
+         * If true, the Lambda function is allowed to access the host's /sys folder. Use this when the Lambda function needs to read device information from /sys. This setting applies only when you run the Lambda function in a Greengrass container.
          */
     var AccessSysfs: js.UndefOr[__boolean] = js.undefined
     /**
-         * A list of the resources, with their permissions, to which the Lambda function will be granted access. A Lambda function can have at most 10 resources.
+         * Configuration related to executing the Lambda function
+         */
+    var Execution: js.UndefOr[FunctionExecutionConfig] = js.undefined
+    /**
+         * A list of the resources, with their permissions, to which the Lambda function will be granted access. A Lambda function can have at most 10 resources. ResourceAccessPolicies apply only when you run the Lambda function in a Greengrass container.
          */
     var ResourceAccessPolicies: js.UndefOr[__listOfResourceAccessPolicy] = js.undefined
     /**
@@ -1055,7 +1254,21 @@ object GreengrassNs extends js.Object {
   }
   
   
+  trait FunctionDefaultConfig extends js.Object {
+    var Execution: js.UndefOr[FunctionDefaultExecutionConfig] = js.undefined
+  }
+  
+  
+  trait FunctionDefaultExecutionConfig extends js.Object {
+    var IsolationMode: js.UndefOr[FunctionIsolationMode] = js.undefined
+  }
+  
+  
   trait FunctionDefinitionVersion extends js.Object {
+    /**
+         * Default configuration that will apply to all Lambda functions in this function definition version
+         */
+    var DefaultConfig: js.UndefOr[FunctionDefaultConfig] = js.undefined
     /**
          * A list of Lambda functions in this function definition version.
          */
@@ -1063,9 +1276,27 @@ object GreengrassNs extends js.Object {
   }
   
   
+  trait FunctionExecutionConfig extends js.Object {
+    var IsolationMode: js.UndefOr[FunctionIsolationMode] = js.undefined
+    var RunAs: js.UndefOr[FunctionRunAsConfig] = js.undefined
+  }
+  
+  
+  trait FunctionRunAsConfig extends js.Object {
+    /**
+         * The Group ID whose permissions are used to run a Lambda function.
+         */
+    var Gid: js.UndefOr[__integer] = js.undefined
+    /**
+         * The User ID whose permissions are used to run a Lambda function.
+         */
+    var Uid: js.UndefOr[__integer] = js.undefined
+  }
+  
+  
   trait GetAssociatedRoleRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -1080,6 +1311,38 @@ object GreengrassNs extends js.Object {
          * The ARN of the role that is associated with the group.
          */
     var RoleArn: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait GetBulkDeploymentStatusRequest extends js.Object {
+    /**
+         * The ID of the bulk deployment.
+         */
+    var BulkDeploymentId: __string
+  }
+  
+  
+  trait GetBulkDeploymentStatusResponse extends js.Object {
+    /**
+         * Relevant metrics on input records processed during bulk deployment.
+         */
+    var BulkDeploymentMetrics: js.UndefOr[BulkDeploymentMetrics] = js.undefined
+    /**
+         * The status of the bulk deployment.
+         */
+    var BulkDeploymentStatus: js.UndefOr[BulkDeploymentStatus] = js.undefined
+    /**
+         * The time, in ISO format, when the deployment was created.
+         */
+    var CreatedAt: js.UndefOr[__string] = js.undefined
+    /**
+         * Error details
+         */
+    var ErrorDetails: js.UndefOr[ErrorDetails] = js.undefined
+    /**
+         * Error message
+         */
+    var ErrorMessage: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -1100,6 +1363,90 @@ object GreengrassNs extends js.Object {
          * A message about the connectivity info request.
          */
     var Message: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait GetConnectorDefinitionRequest extends js.Object {
+    /**
+         * The ID of the connector definition.
+         */
+    var ConnectorDefinitionId: __string
+  }
+  
+  
+  trait GetConnectorDefinitionResponse extends js.Object {
+    /**
+         * The ARN of the definition.
+         */
+    var Arn: js.UndefOr[__string] = js.undefined
+    /**
+         * The time, in milliseconds since the epoch, when the definition was created.
+         */
+    var CreationTimestamp: js.UndefOr[__string] = js.undefined
+    /**
+         * The ID of the definition.
+         */
+    var Id: js.UndefOr[__string] = js.undefined
+    /**
+         * The time, in milliseconds since the epoch, when the definition was last updated.
+         */
+    var LastUpdatedTimestamp: js.UndefOr[__string] = js.undefined
+    /**
+         * The latest version of the definition.
+         */
+    var LatestVersion: js.UndefOr[__string] = js.undefined
+    /**
+         * The ARN of the latest version of the definition.
+         */
+    var LatestVersionArn: js.UndefOr[__string] = js.undefined
+    /**
+         * The name of the definition.
+         */
+    var Name: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait GetConnectorDefinitionVersionRequest extends js.Object {
+    /**
+         * The ID of the connector definition.
+         */
+    var ConnectorDefinitionId: __string
+    /**
+         * The ID of the connector definition version.
+         */
+    var ConnectorDefinitionVersionId: __string
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait GetConnectorDefinitionVersionResponse extends js.Object {
+    /**
+         * The ARN of the connector definition version.
+         */
+    var Arn: js.UndefOr[__string] = js.undefined
+    /**
+         * The time, in milliseconds since the epoch, when the connector definition version was created.
+         */
+    var CreationTimestamp: js.UndefOr[__string] = js.undefined
+    /**
+         * Information about the connector definition version.
+         */
+    var Definition: js.UndefOr[ConnectorDefinitionVersion] = js.undefined
+    /**
+         * The ID of the connector definition version.
+         */
+    var Id: js.UndefOr[__string] = js.undefined
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+    /**
+         * The version of the connector definition version.
+         */
+    var Version: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -1173,6 +1520,10 @@ object GreengrassNs extends js.Object {
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+    /**
          * The version of the core definition version.
          */
     var Version: js.UndefOr[__string] = js.undefined
@@ -1185,7 +1536,7 @@ object GreengrassNs extends js.Object {
          */
     var DeploymentId: __string
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -1193,7 +1544,7 @@ object GreengrassNs extends js.Object {
   
   trait GetDeploymentStatusResponse extends js.Object {
     /**
-         * The status of the deployment.
+         * The status of the deployment: ''Pending'', ''InProgress'', ''Success'', or ''Failure''.
          */
     var DeploymentStatus: js.UndefOr[__string] = js.undefined
     /**
@@ -1264,6 +1615,10 @@ object GreengrassNs extends js.Object {
          * The ID of the device definition version.
          */
     var DeviceDefinitionVersionId: __string
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -1284,6 +1639,10 @@ object GreengrassNs extends js.Object {
          * The ID of the device definition version.
          */
     var Id: js.UndefOr[__string] = js.undefined
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
     /**
          * The version of the device definition version.
          */
@@ -1340,6 +1699,10 @@ object GreengrassNs extends js.Object {
          * The ID of the function definition version.
          */
     var FunctionDefinitionVersionId: __string
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -1361,6 +1724,10 @@ object GreengrassNs extends js.Object {
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+    /**
          * The version of the function definition version.
          */
     var Version: js.UndefOr[__string] = js.undefined
@@ -1373,7 +1740,7 @@ object GreengrassNs extends js.Object {
          */
     var CertificateAuthorityId: __string
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -1397,7 +1764,7 @@ object GreengrassNs extends js.Object {
   
   trait GetGroupCertificateConfigurationRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -1421,7 +1788,7 @@ object GreengrassNs extends js.Object {
   
   trait GetGroupRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -1461,7 +1828,7 @@ object GreengrassNs extends js.Object {
   
   trait GetGroupVersionRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
     /**
@@ -1544,6 +1911,10 @@ object GreengrassNs extends js.Object {
          * The ID of the logger definition version.
          */
     var LoggerDefinitionVersionId: __string
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -1704,6 +2075,10 @@ object GreengrassNs extends js.Object {
   
   trait GetSubscriptionDefinitionVersionRequest extends js.Object {
     /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+    /**
          * The ID of the subscription definition.
          */
     var SubscriptionDefinitionId: __string
@@ -1731,6 +2106,10 @@ object GreengrassNs extends js.Object {
          * The ID of the subscription definition version.
          */
     var Id: js.UndefOr[__string] = js.undefined
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
     /**
          * The version of the subscription definition version.
          */
@@ -1784,7 +2163,7 @@ object GreengrassNs extends js.Object {
   
   trait GroupOwnerSetting extends js.Object {
     /**
-         * If true, GreenGrass automatically adds the specified Linux OS group owner of the resource to the Lambda process privileges. Thus the Lambda process will have the file access permissions of the added Linux group.
+         * If true, AWS IoT Greengrass automatically adds the specified Linux OS group owner of the resource to the Lambda process privileges. Thus the Lambda process will have the file access permissions of the added Linux group.
          */
     var AutoAddGroupOwner: js.UndefOr[__boolean] = js.undefined
     /**
@@ -1795,6 +2174,10 @@ object GreengrassNs extends js.Object {
   
   
   trait GroupVersion extends js.Object {
+    /**
+         * The ARN of the connector definition version for this group.
+         */
+    var ConnectorDefinitionVersionArn: js.UndefOr[__string] = js.undefined
     /**
          * The ARN of the core definition version for this group.
          */
@@ -1812,13 +2195,117 @@ object GreengrassNs extends js.Object {
          */
     var LoggerDefinitionVersionArn: js.UndefOr[__string] = js.undefined
     /**
-         * The resource definition version ARN for this group.
+         * The ARN of the resource definition version for this group.
          */
     var ResourceDefinitionVersionArn: js.UndefOr[__string] = js.undefined
     /**
          * The ARN of the subscription definition version for this group.
          */
     var SubscriptionDefinitionVersionArn: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait ListBulkDeploymentDetailedReportsRequest extends js.Object {
+    /**
+         * The ID of the bulk deployment.
+         */
+    var BulkDeploymentId: __string
+    /**
+         * The maximum number of results to be returned per request.
+         */
+    var MaxResults: js.UndefOr[__string] = js.undefined
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait ListBulkDeploymentDetailedReportsResponse extends js.Object {
+    /**
+         * A list of the individual group deployments in the bulk deployment operation.
+         */
+    var Deployments: js.UndefOr[BulkDeploymentResults] = js.undefined
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait ListBulkDeploymentsRequest extends js.Object {
+    /**
+         * The maximum number of results to be returned per request.
+         */
+    var MaxResults: js.UndefOr[__string] = js.undefined
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait ListBulkDeploymentsResponse extends js.Object {
+    /**
+         * A list of bulk deployments.
+         */
+    var BulkDeployments: js.UndefOr[BulkDeployments] = js.undefined
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait ListConnectorDefinitionVersionsRequest extends js.Object {
+    /**
+         * The ID of the connector definition.
+         */
+    var ConnectorDefinitionId: __string
+    /**
+         * The maximum number of results to be returned per request.
+         */
+    var MaxResults: js.UndefOr[__string] = js.undefined
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait ListConnectorDefinitionVersionsResponse extends js.Object {
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+    /**
+         * Information about a version.
+         */
+    var Versions: js.UndefOr[__listOfVersionInformation] = js.undefined
+  }
+  
+  
+  trait ListConnectorDefinitionsRequest extends js.Object {
+    /**
+         * The maximum number of results to be returned per request.
+         */
+    var MaxResults: js.UndefOr[__string] = js.undefined
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait ListConnectorDefinitionsResponse extends js.Object {
+    /**
+         * Information about a definition.
+         */
+    var Definitions: js.UndefOr[__listOfDefinitionInformation] = js.undefined
+    /**
+         * The token for the next set of results, or ''null'' if there are no additional results.
+         */
+    var NextToken: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -1876,7 +2363,7 @@ object GreengrassNs extends js.Object {
   
   trait ListDeploymentsRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
     /**
@@ -2008,7 +2495,7 @@ object GreengrassNs extends js.Object {
   
   trait ListGroupCertificateAuthoritiesRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -2024,7 +2511,7 @@ object GreengrassNs extends js.Object {
   
   trait ListGroupVersionsRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
     /**
@@ -2244,7 +2731,7 @@ object GreengrassNs extends js.Object {
   
   trait LocalVolumeResourceData extends js.Object {
     /**
-         * The absolute local path of the resource inside the lambda environment.
+         * The absolute local path of the resource inside the Lambda environment.
          */
     var DestinationPath: js.UndefOr[__string] = js.undefined
     /**
@@ -2264,7 +2751,7 @@ object GreengrassNs extends js.Object {
          */
     var Component: js.UndefOr[LoggerComponent] = js.undefined
     /**
-         * The id of the logger.
+         * A descriptive or arbitrary ID for the logger. This value must be unique within the logger definition version. Max length is 128 characters with pattern ''[a-zA-Z0-9:_-]+''.
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
@@ -2300,7 +2787,7 @@ object GreengrassNs extends js.Object {
          */
     var Force: js.UndefOr[__boolean] = js.undefined
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -2324,7 +2811,7 @@ object GreengrassNs extends js.Object {
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * The descriptive resource name, which is displayed on the Greengrass console. Max length 128 characters with pattern ''[a-zA-Z0-9:_-]+''. This must be unique within a Greengrass group.
+         * The descriptive resource name, which is displayed on the AWS IoT Greengrass console. Max length 128 characters with pattern ''[a-zA-Z0-9:_-]+''. This must be unique within a Greengrass group.
          */
     var Name: js.UndefOr[__string] = js.undefined
     /**
@@ -2356,13 +2843,17 @@ object GreengrassNs extends js.Object {
          */
     var LocalVolumeResourceData: js.UndefOr[LocalVolumeResourceData] = js.undefined
     /**
-         * Attributes that define an S3 machine learning resource.
+         * Attributes that define an Amazon S3 machine learning resource.
          */
     var S3MachineLearningModelResourceData: js.UndefOr[S3MachineLearningModelResourceData] = js.undefined
     /**
-         * Attributes that define an SageMaker machine learning resource.
+         * Attributes that define an Amazon SageMaker machine learning resource.
          */
     var SageMakerMachineLearningModelResourceData: js.UndefOr[SageMakerMachineLearningModelResourceData] = js.undefined
+    /**
+         * Attributes that define a secret resource, which references a secret from AWS Secrets Manager.
+         */
+    var SecretsManagerSecretResourceData: js.UndefOr[SecretsManagerSecretResourceData] = js.undefined
   }
   
   
@@ -2392,19 +2883,70 @@ object GreengrassNs extends js.Object {
          */
     var DestinationPath: js.UndefOr[__string] = js.undefined
     /**
-         * The ARN of the SageMaker training job that represents the source model.
+         * The ARN of the Amazon SageMaker training job that represents the source model.
          */
     var SageMakerJobArn: js.UndefOr[__string] = js.undefined
   }
   
   
+  trait SecretsManagerSecretResourceData extends js.Object {
+    /**
+         * The ARN of the Secrets Manager secret to make available on the core. The value of the secret's latest version (represented by the ''AWSCURRENT'' staging label) is included by default.
+         */
+    var ARN: js.UndefOr[__string] = js.undefined
+    /**
+         * Optional. The staging labels whose values you want to make available on the core, in addition to ''AWSCURRENT''.
+         */
+    var AdditionalStagingLabelsToDownload: js.UndefOr[__listOf__string] = js.undefined
+  }
+  
+  
+  trait StartBulkDeploymentRequest extends js.Object {
+    /**
+         * A client token used to correlate requests and responses.
+         */
+    var AmznClientToken: js.UndefOr[__string] = js.undefined
+    /**
+         * The ARN of the execution role to associate with the bulk deployment operation. This IAM role must allow the ''greengrass:CreateDeployment'' action for all group versions that are listed in the input file. This IAM role must have access to the S3 bucket containing the input file.
+         */
+    var ExecutionRoleArn: js.UndefOr[__string] = js.undefined
+    /**
+         * The URI of the input file contained in the S3 bucket. The execution role must have ''getObject'' permissions on this bucket to access the input file. The input file is a JSON-serialized, line delimited file with UTF-8 encoding that provides a list of group and version IDs and the deployment type. This file must be less than 100 MB. Currently, AWS IoT Greengrass supports only ''NewDeployment'' deployment types.
+         */
+    var InputFileUri: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait StartBulkDeploymentResponse extends js.Object {
+    /**
+         * The ARN of the bulk deployment.
+         */
+    var BulkDeploymentArn: js.UndefOr[__string] = js.undefined
+    /**
+         * The ID of the bulk deployment.
+         */
+    var BulkDeploymentId: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait StopBulkDeploymentRequest extends js.Object {
+    /**
+         * The ID of the bulk deployment.
+         */
+    var BulkDeploymentId: __string
+  }
+  
+  
+  trait StopBulkDeploymentResponse extends js.Object
+  
+  
   trait Subscription extends js.Object {
     /**
-         * The id of the subscription.
+         * A descriptive or arbitrary ID for the subscription. This value must be unique within the subscription definition version. Max length is 128 characters with pattern ''[a-zA-Z0-9:_-]+''.
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
-         * The source of the subscription. Can be a thing ARN, a Lambda function ARN, 'cloud' (which represents the IoT cloud), or 'GGShadowService'.
+         * The source of the subscription. Can be a thing ARN, a Lambda function ARN, a connector ARN, 'cloud' (which represents the AWS IoT cloud), or 'GGShadowService'.
          */
     var Source: js.UndefOr[__string] = js.undefined
     /**
@@ -2412,7 +2954,7 @@ object GreengrassNs extends js.Object {
          */
     var Subject: js.UndefOr[__string] = js.undefined
     /**
-         * Where the message is sent to. Can be a thing ARN, a Lambda function ARN, 'cloud' (which represents the IoT cloud), or 'GGShadowService'.
+         * Where the message is sent to. Can be a thing ARN, a Lambda function ARN, a connector ARN, 'cloud' (which represents the AWS IoT cloud), or 'GGShadowService'.
          */
     var Target: js.UndefOr[__string] = js.undefined
   }
@@ -2431,11 +2973,11 @@ object GreengrassNs extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-       * Associates a role with a group. Your AWS Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
+       * Associates a role with a group. Your Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
        */
     def associateRoleToGroup(): awsDashSdkLib.libRequestMod.Request[AssociateRoleToGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a role with a group. Your AWS Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
+       * Associates a role with a group. Your Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
        */
     def associateRoleToGroup(
       callback: js.Function2[
@@ -2445,11 +2987,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateRoleToGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a role with a group. Your AWS Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
+       * Associates a role with a group. Your Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
        */
     def associateRoleToGroup(params: AssociateRoleToGroupRequest): awsDashSdkLib.libRequestMod.Request[AssociateRoleToGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a role with a group. Your AWS Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
+       * Associates a role with a group. Your Greengrass core will use the role to access AWS cloud services. The role's permissions should allow Greengrass core Lambda functions to perform actions against the cloud.
        */
     def associateRoleToGroup(
       params: AssociateRoleToGroupRequest,
@@ -2460,11 +3002,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateRoleToGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a role with your account. AWS Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
+       * Associates a role with your account. AWS IoT Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
        */
     def associateServiceRoleToAccount(): awsDashSdkLib.libRequestMod.Request[AssociateServiceRoleToAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a role with your account. AWS Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
+       * Associates a role with your account. AWS IoT Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
        */
     def associateServiceRoleToAccount(
       callback: js.Function2[
@@ -2474,11 +3016,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateServiceRoleToAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a role with your account. AWS Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
+       * Associates a role with your account. AWS IoT Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
        */
     def associateServiceRoleToAccount(params: AssociateServiceRoleToAccountRequest): awsDashSdkLib.libRequestMod.Request[AssociateServiceRoleToAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates a role with your account. AWS Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
+       * Associates a role with your account. AWS IoT Greengrass will use the role to access your Lambda functions and AWS IoT resources. This is necessary for deployments to succeed. The role must have at least minimum permissions in the policy ''AWSGreengrassResourceAccessRolePolicy''.
        */
     def associateServiceRoleToAccount(
       params: AssociateServiceRoleToAccountRequest,
@@ -2489,11 +3031,69 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateServiceRoleToAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+       * Creates a connector definition. You may provide the initial version of the connector definition now or use ''CreateConnectorDefinitionVersion'' at a later time.
+       */
+    def createConnectorDefinition(): awsDashSdkLib.libRequestMod.Request[CreateConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a connector definition. You may provide the initial version of the connector definition now or use ''CreateConnectorDefinitionVersion'' at a later time.
+       */
+    def createConnectorDefinition(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateConnectorDefinitionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a connector definition. You may provide the initial version of the connector definition now or use ''CreateConnectorDefinitionVersion'' at a later time.
+       */
+    def createConnectorDefinition(params: CreateConnectorDefinitionRequest): awsDashSdkLib.libRequestMod.Request[CreateConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a connector definition. You may provide the initial version of the connector definition now or use ''CreateConnectorDefinitionVersion'' at a later time.
+       */
+    def createConnectorDefinition(
+      params: CreateConnectorDefinitionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateConnectorDefinitionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a version of a connector definition which has already been defined.
+       */
+    def createConnectorDefinitionVersion(): awsDashSdkLib.libRequestMod.Request[CreateConnectorDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a version of a connector definition which has already been defined.
+       */
+    def createConnectorDefinitionVersion(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateConnectorDefinitionVersionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateConnectorDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a version of a connector definition which has already been defined.
+       */
+    def createConnectorDefinitionVersion(params: CreateConnectorDefinitionVersionRequest): awsDashSdkLib.libRequestMod.Request[CreateConnectorDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a version of a connector definition which has already been defined.
+       */
+    def createConnectorDefinitionVersion(
+      params: CreateConnectorDefinitionVersionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateConnectorDefinitionVersionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateConnectorDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. Greengrass groups must each contain exactly one Greengrass core.
        */
     def createCoreDefinition(): awsDashSdkLib.libRequestMod.Request[CreateCoreDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+       * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. Greengrass groups must each contain exactly one Greengrass core.
        */
     def createCoreDefinition(
       callback: js.Function2[
@@ -2503,11 +3103,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCoreDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+       * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. Greengrass groups must each contain exactly one Greengrass core.
        */
     def createCoreDefinition(params: CreateCoreDefinitionRequest): awsDashSdkLib.libRequestMod.Request[CreateCoreDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+       * Creates a core definition. You may provide the initial version of the core definition now or use ''CreateCoreDefinitionVersion'' at a later time. Greengrass groups must each contain exactly one Greengrass core.
        */
     def createCoreDefinition(
       params: CreateCoreDefinitionRequest,
@@ -2518,11 +3118,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCoreDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a version of a core definition that has already been defined. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+       * Creates a version of a core definition that has already been defined. Greengrass groups must each contain exactly one Greengrass core.
        */
     def createCoreDefinitionVersion(): awsDashSdkLib.libRequestMod.Request[CreateCoreDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a version of a core definition that has already been defined. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+       * Creates a version of a core definition that has already been defined. Greengrass groups must each contain exactly one Greengrass core.
        */
     def createCoreDefinitionVersion(
       callback: js.Function2[
@@ -2532,11 +3132,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCoreDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a version of a core definition that has already been defined. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+       * Creates a version of a core definition that has already been defined. Greengrass groups must each contain exactly one Greengrass core.
        */
     def createCoreDefinitionVersion(params: CreateCoreDefinitionVersionRequest): awsDashSdkLib.libRequestMod.Request[CreateCoreDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a version of a core definition that has already been defined. AWS Greengrass groups must each contain exactly one AWS Greengrass core.
+       * Creates a version of a core definition that has already been defined. Greengrass groups must each contain exactly one Greengrass core.
        */
     def createCoreDefinitionVersion(
       params: CreateCoreDefinitionVersionRequest,
@@ -2547,11 +3147,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCoreDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a deployment.
+       * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
        */
     def createDeployment(): awsDashSdkLib.libRequestMod.Request[CreateDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a deployment.
+       * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
        */
     def createDeployment(
       callback: js.Function2[
@@ -2561,11 +3161,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a deployment.
+       * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
        */
     def createDeployment(params: CreateDeploymentRequest): awsDashSdkLib.libRequestMod.Request[CreateDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a deployment.
+       * Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.
        */
     def createDeployment(
       params: CreateDeploymentRequest,
@@ -2692,11 +3292,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateFunctionDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time.
+       * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time. Tip: You can use the ''gg_group_setup'' package (https://github.com/awslabs/aws-greengrass-group-setup) as a library or command-line application to create and deploy Greengrass groups.
        */
     def createGroup(): awsDashSdkLib.libRequestMod.Request[CreateGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time.
+       * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time. Tip: You can use the ''gg_group_setup'' package (https://github.com/awslabs/aws-greengrass-group-setup) as a library or command-line application to create and deploy Greengrass groups.
        */
     def createGroup(
       callback: js.Function2[
@@ -2706,11 +3306,11 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time.
+       * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time. Tip: You can use the ''gg_group_setup'' package (https://github.com/awslabs/aws-greengrass-group-setup) as a library or command-line application to create and deploy Greengrass groups.
        */
     def createGroup(params: CreateGroupRequest): awsDashSdkLib.libRequestMod.Request[CreateGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time.
+       * Creates a group. You may provide the initial version of the group or use ''CreateGroupVersion'' at a later time. Tip: You can use the ''gg_group_setup'' package (https://github.com/awslabs/aws-greengrass-group-setup) as a library or command-line application to create and deploy Greengrass groups.
        */
     def createGroup(
       params: CreateGroupRequest,
@@ -2981,6 +3581,35 @@ object GreengrassNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateSubscriptionDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a connector definition.
+       */
+    def deleteConnectorDefinition(): awsDashSdkLib.libRequestMod.Request[DeleteConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a connector definition.
+       */
+    def deleteConnectorDefinition(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteConnectorDefinitionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a connector definition.
+       */
+    def deleteConnectorDefinition(params: DeleteConnectorDefinitionRequest): awsDashSdkLib.libRequestMod.Request[DeleteConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a connector definition.
+       */
+    def deleteConnectorDefinition(
+      params: DeleteConnectorDefinitionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteConnectorDefinitionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Deletes a core definition.
        */
@@ -3272,6 +3901,35 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetAssociatedRoleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Returns the status of a bulk deployment.
+       */
+    def getBulkDeploymentStatus(): awsDashSdkLib.libRequestMod.Request[GetBulkDeploymentStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the status of a bulk deployment.
+       */
+    def getBulkDeploymentStatus(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetBulkDeploymentStatusResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetBulkDeploymentStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the status of a bulk deployment.
+       */
+    def getBulkDeploymentStatus(params: GetBulkDeploymentStatusRequest): awsDashSdkLib.libRequestMod.Request[GetBulkDeploymentStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the status of a bulk deployment.
+       */
+    def getBulkDeploymentStatus(
+      params: GetBulkDeploymentStatusRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetBulkDeploymentStatusResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetBulkDeploymentStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Retrieves the connectivity information for a core.
        */
     def getConnectivityInfo(): awsDashSdkLib.libRequestMod.Request[GetConnectivityInfoResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3300,6 +3958,64 @@ object GreengrassNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetConnectivityInfoResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves information about a connector definition.
+       */
+    def getConnectorDefinition(): awsDashSdkLib.libRequestMod.Request[GetConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves information about a connector definition.
+       */
+    def getConnectorDefinition(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetConnectorDefinitionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves information about a connector definition.
+       */
+    def getConnectorDefinition(params: GetConnectorDefinitionRequest): awsDashSdkLib.libRequestMod.Request[GetConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves information about a connector definition.
+       */
+    def getConnectorDefinition(
+      params: GetConnectorDefinitionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetConnectorDefinitionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves information about a connector definition version, including the connectors that the version contains. Connectors are prebuilt modules that interact with local infrastructure, device protocols, AWS, and other cloud services.
+       */
+    def getConnectorDefinitionVersion(): awsDashSdkLib.libRequestMod.Request[GetConnectorDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves information about a connector definition version, including the connectors that the version contains. Connectors are prebuilt modules that interact with local infrastructure, device protocols, AWS, and other cloud services.
+       */
+    def getConnectorDefinitionVersion(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetConnectorDefinitionVersionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetConnectorDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves information about a connector definition version, including the connectors that the version contains. Connectors are prebuilt modules that interact with local infrastructure, device protocols, AWS, and other cloud services.
+       */
+    def getConnectorDefinitionVersion(params: GetConnectorDefinitionVersionRequest): awsDashSdkLib.libRequestMod.Request[GetConnectorDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves information about a connector definition version, including the connectors that the version contains. Connectors are prebuilt modules that interact with local infrastructure, device protocols, AWS, and other cloud services.
+       */
+    def getConnectorDefinitionVersion(
+      params: GetConnectorDefinitionVersionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetConnectorDefinitionVersionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetConnectorDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Retrieves information about a core definition version.
        */
@@ -3823,6 +4539,122 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetSubscriptionDefinitionVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
+       */
+    def listBulkDeploymentDetailedReports(): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentDetailedReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
+       */
+    def listBulkDeploymentDetailedReports(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListBulkDeploymentDetailedReportsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentDetailedReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
+       */
+    def listBulkDeploymentDetailedReports(params: ListBulkDeploymentDetailedReportsRequest): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentDetailedReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a paginated list of the deployments that have been started in a bulk deployment operation, and their current deployment status.
+       */
+    def listBulkDeploymentDetailedReports(
+      params: ListBulkDeploymentDetailedReportsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListBulkDeploymentDetailedReportsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentDetailedReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of bulk deployments.
+       */
+    def listBulkDeployments(): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of bulk deployments.
+       */
+    def listBulkDeployments(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListBulkDeploymentsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of bulk deployments.
+       */
+    def listBulkDeployments(params: ListBulkDeploymentsRequest): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns a list of bulk deployments.
+       */
+    def listBulkDeployments(
+      params: ListBulkDeploymentsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListBulkDeploymentsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListBulkDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the versions of a connector definition, which are containers for connectors. Connectors run on the Greengrass core and contain built-in integration with local infrastructure, device protocols, AWS, and other cloud services.
+       */
+    def listConnectorDefinitionVersions(): awsDashSdkLib.libRequestMod.Request[ListConnectorDefinitionVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the versions of a connector definition, which are containers for connectors. Connectors run on the Greengrass core and contain built-in integration with local infrastructure, device protocols, AWS, and other cloud services.
+       */
+    def listConnectorDefinitionVersions(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListConnectorDefinitionVersionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListConnectorDefinitionVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the versions of a connector definition, which are containers for connectors. Connectors run on the Greengrass core and contain built-in integration with local infrastructure, device protocols, AWS, and other cloud services.
+       */
+    def listConnectorDefinitionVersions(params: ListConnectorDefinitionVersionsRequest): awsDashSdkLib.libRequestMod.Request[ListConnectorDefinitionVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the versions of a connector definition, which are containers for connectors. Connectors run on the Greengrass core and contain built-in integration with local infrastructure, device protocols, AWS, and other cloud services.
+       */
+    def listConnectorDefinitionVersions(
+      params: ListConnectorDefinitionVersionsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListConnectorDefinitionVersionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListConnectorDefinitionVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a list of connector definitions.
+       */
+    def listConnectorDefinitions(): awsDashSdkLib.libRequestMod.Request[ListConnectorDefinitionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a list of connector definitions.
+       */
+    def listConnectorDefinitions(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListConnectorDefinitionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListConnectorDefinitionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a list of connector definitions.
+       */
+    def listConnectorDefinitions(params: ListConnectorDefinitionsRequest): awsDashSdkLib.libRequestMod.Request[ListConnectorDefinitionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a list of connector definitions.
+       */
+    def listConnectorDefinitions(
+      params: ListConnectorDefinitionsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListConnectorDefinitionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListConnectorDefinitionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Lists the versions of a core definition.
        */
     def listCoreDefinitionVersions(): awsDashSdkLib.libRequestMod.Request[ListCoreDefinitionVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4316,6 +5148,64 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ResetDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
+       */
+    def startBulkDeployment(): awsDashSdkLib.libRequestMod.Request[StartBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
+       */
+    def startBulkDeployment(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StartBulkDeploymentResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StartBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
+       */
+    def startBulkDeployment(params: StartBulkDeploymentRequest): awsDashSdkLib.libRequestMod.Request[StartBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.
+       */
+    def startBulkDeployment(
+      params: StartBulkDeploymentRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StartBulkDeploymentResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StartBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
+       */
+    def stopBulkDeployment(): awsDashSdkLib.libRequestMod.Request[StopBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
+       */
+    def stopBulkDeployment(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StopBulkDeploymentResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StopBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
+       */
+    def stopBulkDeployment(params: StopBulkDeploymentRequest): awsDashSdkLib.libRequestMod.Request[StopBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops the execution of a bulk deployment. This action returns a status of ''Stopping'' until the deployment is stopped. You cannot start a new bulk deployment while a previous deployment is in the ''Stopping'' state. This action doesn't rollback completed deployments or cancel pending deployments.
+       */
+    def stopBulkDeployment(
+      params: StopBulkDeploymentRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StopBulkDeploymentResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StopBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Updates the connectivity information for the core. Any devices that belong to the group which has this core will receive this information in order to find the location of the core and connect to it.
        */
     def updateConnectivityInfo(): awsDashSdkLib.libRequestMod.Request[UpdateConnectivityInfoResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4344,6 +5234,35 @@ object GreengrassNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateConnectivityInfoResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a connector definition.
+       */
+    def updateConnectorDefinition(): awsDashSdkLib.libRequestMod.Request[UpdateConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a connector definition.
+       */
+    def updateConnectorDefinition(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateConnectorDefinitionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a connector definition.
+       */
+    def updateConnectorDefinition(params: UpdateConnectorDefinitionRequest): awsDashSdkLib.libRequestMod.Request[UpdateConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates a connector definition.
+       */
+    def updateConnectorDefinition(
+      params: UpdateConnectorDefinitionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateConnectorDefinitionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateConnectorDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Updates a core definition.
        */
@@ -4603,6 +5522,21 @@ object GreengrassNs extends js.Object {
   }
   
   
+  trait UpdateConnectorDefinitionRequest extends js.Object {
+    /**
+         * The ID of the connector definition.
+         */
+    var ConnectorDefinitionId: __string
+    /**
+         * The name of the definition.
+         */
+    var Name: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait UpdateConnectorDefinitionResponse extends js.Object
+  
+  
   trait UpdateCoreDefinitionRequest extends js.Object {
     /**
          * The ID of the core definition.
@@ -4654,7 +5588,7 @@ object GreengrassNs extends js.Object {
          */
     var CertificateExpiryInMilliseconds: js.UndefOr[__string] = js.undefined
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
   }
@@ -4678,7 +5612,7 @@ object GreengrassNs extends js.Object {
   
   trait UpdateGroupRequest extends js.Object {
     /**
-         * The ID of the AWS Greengrass group.
+         * The ID of the Greengrass group.
          */
     var GroupId: __string
     /**
@@ -4760,11 +5694,15 @@ object GreengrassNs extends js.Object {
     extends /* key */ ScalablyTyped.runtime.StringDictionary[__string]
   
   val TypesNs: this.type = js.native
+  type BulkDeploymentResults = js.Array[BulkDeploymentResult]
+  type BulkDeploymentStatus = awsDashSdkLib.awsDashSdkLibStrings.Initializing | awsDashSdkLib.awsDashSdkLibStrings.Running | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Stopping | awsDashSdkLib.awsDashSdkLibStrings.Stopped | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type BulkDeployments = js.Array[BulkDeployment]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DeploymentType = awsDashSdkLib.awsDashSdkLibStrings.NewDeployment | awsDashSdkLib.awsDashSdkLibStrings.Redeployment | awsDashSdkLib.awsDashSdkLibStrings.ResetDeployment | awsDashSdkLib.awsDashSdkLibStrings.ForceResetDeployment | java.lang.String
   type Deployments = js.Array[Deployment]
   type EncodingType = awsDashSdkLib.awsDashSdkLibStrings.binary | awsDashSdkLib.awsDashSdkLibStrings.json | java.lang.String
   type ErrorDetails = js.Array[ErrorDetail]
+  type FunctionIsolationMode = awsDashSdkLib.awsDashSdkLibStrings.GreengrassContainer | awsDashSdkLib.awsDashSdkLibStrings.NoContainer | java.lang.String
   type LoggerComponent = awsDashSdkLib.awsDashSdkLibStrings.GreengrassSystem | awsDashSdkLib.awsDashSdkLibStrings.Lambda | java.lang.String
   type LoggerLevel = awsDashSdkLib.awsDashSdkLibStrings.DEBUG | awsDashSdkLib.awsDashSdkLibStrings.INFO | awsDashSdkLib.awsDashSdkLibStrings.WARN | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.FATAL | java.lang.String
   type LoggerType = awsDashSdkLib.awsDashSdkLibStrings.FileSystem | awsDashSdkLib.awsDashSdkLibStrings.AWSCloudWatch | java.lang.String
@@ -4778,6 +5716,7 @@ object GreengrassNs extends js.Object {
   type __boolean = scala.Boolean
   type __integer = scala.Double
   type __listOfConnectivityInfo = js.Array[ConnectivityInfo]
+  type __listOfConnector = js.Array[Connector]
   type __listOfCore = js.Array[Core]
   type __listOfDefinitionInformation = js.Array[DefinitionInformation]
   type __listOfDevice = js.Array[Device]
@@ -4789,6 +5728,7 @@ object GreengrassNs extends js.Object {
   type __listOfResourceAccessPolicy = js.Array[ResourceAccessPolicy]
   type __listOfSubscription = js.Array[Subscription]
   type __listOfVersionInformation = js.Array[VersionInformation]
+  type __listOf__string = js.Array[__string]
   type __string = java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-06-07` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }

@@ -490,6 +490,9 @@ object awsDashSdkLibStrings {
   sealed trait `2018-01-01` extends js.Object
   
   @js.native
+  sealed trait `2018-01-04` extends js.Object
+  
+  @js.native
   sealed trait `2018-01-06` extends js.Object
   
   @js.native
@@ -499,13 +502,61 @@ object awsDashSdkLibStrings {
   sealed trait `2018-02-27` extends js.Object
   
   @js.native
+  sealed trait `2018-03-01` extends js.Object
+  
+  @js.native
+  sealed trait `2018-04-01` extends js.Object
+  
+  @js.native
   sealed trait `2018-04-23` extends js.Object
+  
+  @js.native
+  sealed trait `2018-05-01` extends js.Object
   
   @js.native
   sealed trait `2018-05-14` extends js.Object
   
   @js.native
+  sealed trait `2018-05-23` extends js.Object
+  
+  @js.native
   sealed trait `2018-06-18` extends js.Object
+  
+  @js.native
+  sealed trait `2018-06-29` extends js.Object
+  
+  @js.native
+  sealed trait `2018-07-26` extends js.Object
+  
+  @js.native
+  sealed trait `2018-08-01` extends js.Object
+  
+  @js.native
+  sealed trait `2018-08-08` extends js.Object
+  
+  @js.native
+  sealed trait `2018-08-20` extends js.Object
+  
+  @js.native
+  sealed trait `2018-09-05` extends js.Object
+  
+  @js.native
+  sealed trait `2018-10-01` extends js.Object
+  
+  @js.native
+  sealed trait `2018-10-26` extends js.Object
+  
+  @js.native
+  sealed trait `2018-10-30` extends js.Object
+  
+  @js.native
+  sealed trait `2018-11-05` extends js.Object
+  
+  @js.native
+  sealed trait `2018-11-09` extends js.Object
+  
+  @js.native
+  sealed trait `2018-11-14` extends js.Object
   
   @js.native
   sealed trait `237` extends js.Object
@@ -577,6 +628,9 @@ object awsDashSdkLibStrings {
   sealed trait ACCOUNT_SETTINGS extends js.Object
   
   @js.native
+  sealed trait ACTION_NEEDED extends js.Object
+  
+  @js.native
   sealed trait ACTIVATED extends js.Object
   
   @js.native
@@ -613,6 +667,9 @@ object awsDashSdkLibStrings {
   sealed trait ACTUAL extends js.Object
   
   @js.native
+  sealed trait ACUITY extends js.Object
+  
+  @js.native
   sealed trait ACU_1 extends js.Object
   
   @js.native
@@ -629,6 +686,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ADDITIONAL_VERIFICATION_REQUIRED extends js.Object
+  
+  @js.native
+  sealed trait ADDRESS extends js.Object
   
   @js.native
   sealed trait ADD_DNSSEC extends js.Object
@@ -667,6 +727,9 @@ object awsDashSdkLibStrings {
   sealed trait ADVANCED_AUDIO extends js.Object
   
   @js.native
+  sealed trait ADWARE extends js.Object
+  
+  @js.native
   sealed trait AD_CONNECTOR extends js.Object
   
   @js.native
@@ -683,6 +746,15 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait AES_256 extends js.Object
+  
+  @js.native
+  sealed trait AES_CBC extends js.Object
+  
+  @js.native
+  sealed trait AES_CTR extends js.Object
+  
+  @js.native
+  sealed trait AES_GCM extends js.Object
   
   @js.native
   sealed trait AFD_0000 extends js.Object
@@ -730,6 +802,9 @@ object awsDashSdkLibStrings {
   sealed trait AFTER_SEQUENCE_NUMBER extends js.Object
   
   @js.native
+  sealed trait AGE extends js.Object
+  
+  @js.native
   sealed trait AGENT extends js.Object
   
   @js.native
@@ -770,6 +845,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ALBRequestCountPerTarget extends js.Object
+  
+  @js.native
+  sealed trait ALBTargetGroupRequestCount extends js.Object
   
   @js.native
   sealed trait ALEXA extends js.Object
@@ -850,6 +928,12 @@ object awsDashSdkLibStrings {
   sealed trait AMAZON_LINUX_2 extends js.Object
   
   @js.native
+  sealed trait AMORTIZED_COST extends js.Object
+  
+  @js.native
+  sealed trait ANATOMY extends js.Object
+  
+  @js.native
   sealed trait ANCILLARY extends js.Object
   
   @js.native
@@ -871,6 +955,9 @@ object awsDashSdkLibStrings {
   sealed trait ANONYMOUS extends js.Object
   
   @js.native
+  sealed trait ANSWERED extends js.Object
+  
+  @js.native
   sealed trait ANY extends js.Object
   
   @js.native
@@ -881,6 +968,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait API_CONTACTS_HANDLED extends js.Object
+  
+  @js.native
+  sealed trait API_GATEWAY extends js.Object
   
   @js.native
   sealed trait API_KEY extends js.Object
@@ -988,6 +1078,9 @@ object awsDashSdkLibStrings {
   sealed trait APPLICATION_CRASH_REPORT extends js.Object
   
   @js.native
+  sealed trait APPLICATION_LOAD_BALANCER extends js.Object
+  
+  @js.native
   sealed trait APPLICATION_MISSING extends js.Object
   
   @js.native
@@ -1007,6 +1100,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ARCHIVE_NOT_ALLOWED extends js.Object
+  
+  @js.native
+  sealed trait ARM64 extends js.Object
+  
+  @js.native
+  sealed trait ARMHF extends js.Object
   
   @js.native
   sealed trait ARN extends js.Object
@@ -1030,6 +1129,15 @@ object awsDashSdkLibStrings {
   sealed trait ASGAverageNetworkOut extends js.Object
   
   @js.native
+  sealed trait ASGTotalCPUUtilization extends js.Object
+  
+  @js.native
+  sealed trait ASGTotalNetworkIn extends js.Object
+  
+  @js.native
+  sealed trait ASGTotalNetworkOut extends js.Object
+  
+  @js.native
   sealed trait ASNEEDED extends js.Object
   
   @js.native
@@ -1040,6 +1148,15 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ASSESSMENT_RUN_STATE_CHANGED extends js.Object
+  
+  @js.native
+  sealed trait ASSIGNED extends js.Object
+  
+  @js.native
+  sealed trait ASSOCIATED extends js.Object
+  
+  @js.native
+  sealed trait ASSOCIATING extends js.Object
   
   @js.native
   sealed trait ASSOCIATION extends js.Object
@@ -1078,6 +1195,9 @@ object awsDashSdkLibStrings {
   sealed trait AUDIT extends js.Object
   
   @js.native
+  sealed trait AUTHOR extends js.Object
+  
+  @js.native
   sealed trait AUTHORIZER extends js.Object
   
   @js.native
@@ -1100,6 +1220,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait AUTOMATION_OUTPUT extends js.Object
+  
+  @js.native
+  sealed trait AUTOSCALING_VALIDATION_ERROR extends js.Object
+  
+  @js.native
+  sealed trait AUTO_RECOVERING extends js.Object
   
   @js.native
   sealed trait AUTO_RENEW extends js.Object
@@ -1165,6 +1291,9 @@ object awsDashSdkLibStrings {
   sealed trait AWSWAF extends js.Object
   
   @js.native
+  sealed trait AWS_CLOUDHSM extends js.Object
+  
+  @js.native
   sealed trait AWS_IAM extends js.Object
   
   @js.native
@@ -1172,6 +1301,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait AWS_LAMBDA extends js.Object
+  
+  @js.native
+  sealed trait AWS_ORGANIZATIONS extends js.Object
   
   @js.native
   sealed trait AWS_PROXY extends js.Object
@@ -1190,6 +1322,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Accept extends js.Object
+  
+  @js.native
+  sealed trait Accepted extends js.Object
   
   @js.native
   sealed trait AccessDenied extends js.Object
@@ -1318,7 +1453,13 @@ object awsDashSdkLibStrings {
   sealed trait AmazonCustomerByEmail extends js.Object
   
   @js.native
+  sealed trait And extends js.Object
+  
+  @js.native
   sealed trait Any extends js.Object
+  
+  @js.native
+  sealed trait AppSpecContent extends js.Object
   
   @js.native
   sealed trait ApplicationMetrics extends js.Object
@@ -1417,6 +1558,9 @@ object awsDashSdkLibStrings {
   sealed trait AttachedPoliciesPerUserQuota extends js.Object
   
   @js.native
+  sealed trait AugmentedManifestFile extends js.Object
+  
+  @js.native
   sealed trait AuthenticatedRole extends js.Object
   
   @js.native
@@ -1430,6 +1574,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Automation extends js.Object
+  
+  @js.native
+  sealed trait AutomationType extends js.Object
   
   @js.native
   sealed trait `Availability Zone` extends js.Object
@@ -1459,6 +1606,9 @@ object awsDashSdkLibStrings {
   sealed trait B extends js.Object
   
   @js.native
+  sealed trait BACKDOOR extends js.Object
+  
+  @js.native
   sealed trait BACKING_UP extends js.Object
   
   @js.native
@@ -1486,10 +1636,22 @@ object awsDashSdkLibStrings {
   sealed trait BEGIN_WITH extends js.Object
   
   @js.native
+  sealed trait BENIGN_POSITIVE extends js.Object
+  
+  @js.native
+  sealed trait BEST_EFFORT extends js.Object
+  
+  @js.native
+  sealed trait BETA extends js.Object
+  
+  @js.native
   sealed trait BETWEEN extends js.Object
   
   @js.native
   sealed trait BILATERAL extends js.Object
+  
+  @js.native
+  sealed trait BILLING_ENTITY extends js.Object
   
   @js.native
   sealed trait BINARY extends js.Object
@@ -1534,6 +1696,12 @@ object awsDashSdkLibStrings {
   sealed trait BLEND extends js.Object
   
   @js.native
+  sealed trait BLENDED_COST extends js.Object
+  
+  @js.native
+  sealed trait BLENDED_THREAT extends js.Object
+  
+  @js.native
   sealed trait BLEND_TICKER extends js.Object
   
   @js.native
@@ -1541,6 +1709,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait BLUE extends js.Object
+  
+  @js.native
+  sealed trait BLUEJEANS extends js.Object
   
   @js.native
   sealed trait BLUETOOTH extends js.Object
@@ -1564,6 +1735,12 @@ object awsDashSdkLibStrings {
   sealed trait BOT extends js.Object
   
   @js.native
+  sealed trait BOTH extends js.Object
+  
+  @js.native
+  sealed trait BOTNET_AGENT extends js.Object
+  
+  @js.native
   sealed trait BOTTOM_CENTER extends js.Object
   
   @js.native
@@ -1576,10 +1753,19 @@ object awsDashSdkLibStrings {
   sealed trait BOTTOM_RIGHT extends js.Object
   
   @js.native
+  sealed trait BOUNCE extends js.Object
+  
+  @js.native
+  sealed trait BRAND_NAME extends js.Object
+  
+  @js.native
   sealed trait BRAND_NUMBER extends js.Object
   
   @js.native
   sealed trait BROADCASTER_MIXED_AD extends js.Object
+  
+  @js.native
+  sealed trait BROKER extends js.Object
   
   @js.native
   sealed trait BUILD extends js.Object
@@ -1609,7 +1795,19 @@ object awsDashSdkLibStrings {
   sealed trait BURN_IN extends js.Object
   
   @js.native
+  sealed trait BUSY extends js.Object
+  
+  @js.native
   sealed trait BYOL extends js.Object
+  
+  @js.native
+  sealed trait BYOL_GRAPHICS extends js.Object
+  
+  @js.native
+  sealed trait BYOL_GRAPHICSPRO extends js.Object
+  
+  @js.native
+  sealed trait BYOL_REGULAR extends js.Object
   
   @js.native
   sealed trait BYTES extends js.Object
@@ -1621,7 +1819,31 @@ object awsDashSdkLibStrings {
   sealed trait BZIP2 extends js.Object
   
   @js.native
+  sealed trait BadPermissionError extends js.Object
+  
+  @js.native
+  sealed trait BadPermissionsCloudwatchLogs extends js.Object
+  
+  @js.native
+  sealed trait BadPermissionsRobotApplication extends js.Object
+  
+  @js.native
+  sealed trait BadPermissionsS3Output extends js.Object
+  
+  @js.native
+  sealed trait BadPermissionsSimulationApplication extends js.Object
+  
+  @js.native
+  sealed trait BadPermissionsUserCredentials extends js.Object
+  
+  @js.native
+  sealed trait BadRequest extends js.Object
+  
+  @js.native
   sealed trait Base64 extends js.Object
+  
+  @js.native
+  sealed trait Basic extends js.Object
   
   @js.native
   sealed trait BatchPrediction extends js.Object
@@ -1726,6 +1948,9 @@ object awsDashSdkLibStrings {
   sealed trait CALM extends js.Object
   
   @js.native
+  sealed trait CANCEL extends js.Object
+  
+  @js.native
   sealed trait CANCELED extends js.Object
   
   @js.native
@@ -1741,10 +1966,19 @@ object awsDashSdkLibStrings {
   sealed trait CANCEL_PENDING extends js.Object
   
   @js.native
+  sealed trait CAPABILITY_AUTO_EXPAND extends js.Object
+  
+  @js.native
   sealed trait CAPABILITY_IAM extends js.Object
   
   @js.native
   sealed trait CAPABILITY_NAMED_IAM extends js.Object
+  
+  @js.native
+  sealed trait CAPABILITY_RESOURCE_POLICY extends js.Object
+  
+  @js.native
+  sealed trait CARD_STEALER extends js.Object
   
   @js.native
   sealed trait CAVLC extends js.Object
@@ -1763,6 +1997,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CBR extends js.Object
+  
+  @js.native
+  sealed trait CCONJ extends js.Object
   
   @js.native
   sealed trait CELSIUS extends js.Object
@@ -1816,6 +2053,9 @@ object awsDashSdkLibStrings {
   sealed trait CHILD_POLICY_APPLIED extends js.Object
   
   @js.native
+  sealed trait CHIME extends js.Object
+  
+  @js.native
   sealed trait CHUNKED extends js.Object
   
   @js.native
@@ -1826,6 +2066,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CLEAN_EFFECTS extends js.Object
+  
+  @js.native
+  sealed trait CLICK extends js.Object
   
   @js.native
   sealed trait CLIENT_ID extends js.Object
@@ -1843,6 +2086,15 @@ object awsDashSdkLibStrings {
   sealed trait CLOUDFORMATION extends js.Object
   
   @js.native
+  sealed trait CLOUDFORMATION_STACK_1_0 extends js.Object
+  
+  @js.native
+  sealed trait CLOUDFORMATION_STACK_INACTIVE extends js.Object
+  
+  @js.native
+  sealed trait CLOUDFORMATION_STACK_NOT_EXISTING extends js.Object
+  
+  @js.native
   sealed trait CLOUDWATCH_METRIC extends js.Object
   
   @js.native
@@ -1850,6 +2102,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CLUSTER extends js.Object
+  
+  @js.native
+  sealed trait CLUSTER_NOT_FOUND extends js.Object
   
   @js.native
   sealed trait CLUSTER_TERMINATED extends js.Object
@@ -1871,6 +2126,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CODEPIPELINE extends js.Object
+  
+  @js.native
+  sealed trait CODE_DEPLOY extends js.Object
   
   @js.native
   sealed trait CODE_SIGNING extends js.Object
@@ -1900,6 +2158,9 @@ object awsDashSdkLibStrings {
   sealed trait COGNITO_USER_POOLS extends js.Object
   
   @js.native
+  sealed trait COIN_MINER extends js.Object
+  
+  @js.native
   sealed trait COLLECTING_DATA extends js.Object
   
   @js.native
@@ -1915,6 +2176,9 @@ object awsDashSdkLibStrings {
   sealed trait COMBINE_DUPLICATE_STREAMS extends js.Object
   
   @js.native
+  sealed trait COMMAND_AND_CONTROL extends js.Object
+  
+  @js.native
   sealed trait COMMENTARY extends js.Object
   
   @js.native
@@ -1927,10 +2191,16 @@ object awsDashSdkLibStrings {
   sealed trait COMPANY extends js.Object
   
   @js.native
+  sealed trait COMPLAINT extends js.Object
+  
+  @js.native
   sealed trait COMPLETE extends js.Object
   
   @js.native
   sealed trait COMPLETED extends js.Object
+  
+  @js.native
+  sealed trait COMPLETED_CALL extends js.Object
   
   @js.native
   sealed trait COMPLETED_COMPLIANT extends js.Object
@@ -1946,6 +2216,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait COMPLETING extends js.Object
+  
+  @js.native
+  sealed trait COMPLIANCE extends js.Object
   
   @js.native
   sealed trait COMPLIANT extends js.Object
@@ -1970,6 +2243,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CONDITIONALLY extends js.Object
+  
+  @js.native
+  sealed trait CONFIGURATION_INVALID extends js.Object
+  
+  @js.native
+  sealed trait CONFIGURATION_IN_PROGRESS extends js.Object
   
   @js.native
   sealed trait CONFIGURED_PCR_PERIOD extends js.Object
@@ -1997,6 +2276,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CONNECTED extends js.Object
+  
+  @js.native
+  sealed trait CONNECTING extends js.Object
   
   @js.native
   sealed trait CONNECTION extends js.Object
@@ -2057,6 +2339,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CONTACTS_TRANSFERRED_OUT_FROM_QUEUE extends js.Object
+  
+  @js.native
+  sealed trait CONTACT_POINT extends js.Object
   
   @js.native
   sealed trait CONTAINER extends js.Object
@@ -2167,6 +2452,9 @@ object awsDashSdkLibStrings {
   sealed trait CREATE_SUCCESS extends js.Object
   
   @js.native
+  sealed trait CREATE_TIME extends js.Object
+  
+  @js.native
   sealed trait CREATING extends js.Object
   
   @js.native
@@ -2263,6 +2551,12 @@ object awsDashSdkLibStrings {
   sealed trait CanonicalUser extends js.Object
   
   @js.native
+  sealed trait CapacityForecast extends js.Object
+  
+  @js.native
+  sealed trait Categorical extends js.Object
+  
+  @js.native
   sealed trait Causes extends js.Object
   
   @js.native
@@ -2285,6 +2579,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CloseInstancePublicPorts extends js.Object
+  
+  @js.native
+  sealed trait CloudFormationStackRecord extends js.Object
   
   @js.native
   sealed trait CodeCommit extends js.Object
@@ -2341,6 +2638,9 @@ object awsDashSdkLibStrings {
   sealed trait ConfirmIntent extends js.Object
   
   @js.native
+  sealed trait Conflict extends js.Object
+  
+  @js.native
   sealed trait Connected extends js.Object
   
   @js.native
@@ -2359,10 +2659,19 @@ object awsDashSdkLibStrings {
   sealed trait ContentRejected extends js.Object
   
   @js.native
+  sealed trait Continue extends js.Object
+  
+  @js.native
   sealed trait ContinueAsNewWorkflowExecution extends js.Object
   
   @js.native
+  sealed trait Continuous extends js.Object
+  
+  @js.native
   sealed trait CopyTags extends js.Object
+  
+  @js.native
+  sealed trait Core extends js.Object
   
   @js.native
   sealed trait Count extends js.Object
@@ -2372,6 +2681,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Country extends js.Object
+  
+  @js.native
+  sealed trait CreateDate extends js.Object
   
   @js.native
   sealed trait CreateDisk extends js.Object
@@ -2402,6 +2714,15 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CreateLoadBalancerTlsCertificate extends js.Object
+  
+  @js.native
+  sealed trait CreateRelationalDatabase extends js.Object
+  
+  @js.native
+  sealed trait CreateRelationalDatabaseFromSnapshot extends js.Object
+  
+  @js.native
+  sealed trait CreateRelationalDatabaseSnapshot extends js.Object
   
   @js.native
   sealed trait CreateRoute extends js.Object
@@ -2441,6 +2762,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CreationTime extends js.Object
+  
+  @js.native
+  sealed trait CrossAccount extends js.Object
   
   @js.native
   sealed trait Current extends js.Object
@@ -2527,6 +2851,9 @@ object awsDashSdkLibStrings {
   sealed trait DECREASE_DATA_RETENTION extends js.Object
   
   @js.native
+  sealed trait DEDICATED extends js.Object
+  
+  @js.native
   sealed trait DEEP_LINK extends js.Object
   
   @js.native
@@ -2563,6 +2890,9 @@ object awsDashSdkLibStrings {
   sealed trait DEFAULT_TASK_START_TO_CLOSE_TIMEOUT_UNDEFINED extends js.Object
   
   @js.native
+  sealed trait DEFERRED extends js.Object
+  
+  @js.native
   sealed trait DEGRADED extends js.Object
   
   @js.native
@@ -2582,6 +2912,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait DELETE_FAILED extends js.Object
+  
+  @js.native
+  sealed trait DELETE_FAILED_FAS_EXPIRED extends js.Object
   
   @js.native
   sealed trait DELETE_FROM_DATABASE extends js.Object
@@ -2617,10 +2950,28 @@ object awsDashSdkLibStrings {
   sealed trait DELIVERY extends js.Object
   
   @js.native
+  sealed trait DELTA_LAUNCH_FAILED extends js.Object
+  
+  @js.native
+  sealed trait DELTA_LAUNCH_IN_PROGRESS extends js.Object
+  
+  @js.native
+  sealed trait DELTA_REPLICATED extends js.Object
+  
+  @js.native
+  sealed trait DELTA_REPLICATION_FAILED extends js.Object
+  
+  @js.native
+  sealed trait DELTA_REPLICATION_IN_PROGRESS extends js.Object
+  
+  @js.native
   sealed trait DENY extends js.Object
   
   @js.native
   sealed trait DENY_ALL extends js.Object
+  
+  @js.native
+  sealed trait DEPLOYED extends js.Object
   
   @js.native
   sealed trait DEPLOYMENT_FAILURE extends js.Object
@@ -2674,6 +3025,18 @@ object awsDashSdkLibStrings {
   sealed trait DETACHING extends js.Object
   
   @js.native
+  sealed trait DETECTION_COMPLETE extends js.Object
+  
+  @js.native
+  sealed trait DETECTION_FAILED extends js.Object
+  
+  @js.native
+  sealed trait DETECTION_IN_PROGRESS extends js.Object
+  
+  @js.native
+  sealed trait DEVELOPMENT extends js.Object
+  
+  @js.native
   sealed trait DEVICE_CERTIFICATE extends js.Object
   
   @js.native
@@ -2695,6 +3058,9 @@ object awsDashSdkLibStrings {
   sealed trait DEVICE_WAS_OFFLINE extends js.Object
   
   @js.native
+  sealed trait DIAGNOSIS extends js.Object
+  
+  @js.native
   sealed trait DIALOGUE extends js.Object
   
   @js.native
@@ -2708,6 +3074,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait DIRECT extends js.Object
+  
+  @js.native
+  sealed trait DIRECTION extends js.Object
   
   @js.native
   sealed trait DISABLE extends js.Object
@@ -2731,10 +3100,16 @@ object awsDashSdkLibStrings {
   sealed trait DISALLOWED_ELEMENT_REMOVED extends js.Object
   
   @js.native
+  sealed trait DISASSOCIATED extends js.Object
+  
+  @js.native
   sealed trait DISASSOCIATING extends js.Object
   
   @js.native
   sealed trait DISCONNECTED extends js.Object
+  
+  @js.native
+  sealed trait DISCONNECTING extends js.Object
   
   @js.native
   sealed trait DISCONNECT_IMMEDIATELY extends js.Object
@@ -2824,7 +3199,16 @@ object awsDashSdkLibStrings {
   sealed trait DOCUMENT_VERSION_DELETED extends js.Object
   
   @js.native
+  sealed trait DOCUMENT_VERSION_DOWNLOADED extends js.Object
+  
+  @js.native
   sealed trait DOCUMENT_VERSION_UPLOADED extends js.Object
+  
+  @js.native
+  sealed trait DOCUMENT_VERSION_VIEWED extends js.Object
+  
+  @js.native
+  sealed trait DOMAIN extends js.Object
   
   @js.native
   sealed trait DOMAIN_JOIN_ERROR_ACCESS_DENIED extends js.Object
@@ -2881,6 +3265,9 @@ object awsDashSdkLibStrings {
   sealed trait DONT_LOG extends js.Object
   
   @js.native
+  sealed trait DOSAGE extends js.Object
+  
+  @js.native
   sealed trait DOTNET extends js.Object
   
   @js.native
@@ -2908,10 +3295,16 @@ object awsDashSdkLibStrings {
   sealed trait DRAINING extends js.Object
   
   @js.native
+  sealed trait DRIFTED extends js.Object
+  
+  @js.native
   sealed trait DROP extends js.Object
   
   @js.native
   sealed trait DROP_PROGRAM extends js.Object
+  
+  @js.native
+  sealed trait DROP_SITE extends js.Object
   
   @js.native
   sealed trait DROP_TS extends js.Object
@@ -2930,6 +3323,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait DUPLICATE_RESOURCE extends js.Object
+  
+  @js.native
+  sealed trait DURATION extends js.Object
   
   @js.native
   sealed trait DVB extends js.Object
@@ -3004,6 +3400,12 @@ object awsDashSdkLibStrings {
   sealed trait DeleteLoadBalancerTlsCertificate extends js.Object
   
   @js.native
+  sealed trait DeleteRelationalDatabase extends js.Object
+  
+  @js.native
+  sealed trait DeleteRelationalDatabaseSnapshot extends js.Object
+  
+  @js.native
   sealed trait DeleteSchema extends js.Object
   
   @js.native
@@ -3029,6 +3431,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Deploy extends js.Object
+  
+  @js.native
+  sealed trait Deploying extends js.Object
   
   @js.native
   sealed trait Deployment extends js.Object
@@ -3187,16 +3592,34 @@ object awsDashSdkLibStrings {
   sealed trait EC2SpotFleetRequestAverageNetworkOut extends js.Object
   
   @js.native
+  sealed trait EC2_AMI extends js.Object
+  
+  @js.native
+  sealed trait EC2_HOST extends js.Object
+  
+  @js.native
+  sealed trait EC2_INSTANCE extends js.Object
+  
+  @js.native
   sealed trait ECDSA extends js.Object
   
   @js.native
   sealed trait ECHO extends js.Object
   
   @js.native
+  sealed trait ECS extends js.Object
+  
+  @js.native
   sealed trait ECSServiceAverageCPUUtilization extends js.Object
   
   @js.native
   sealed trait ECSServiceAverageMemoryUtilization extends js.Object
+  
+  @js.native
+  sealed trait ECSTarget extends js.Object
+  
+  @js.native
+  sealed trait ECS_UPDATE_ERROR extends js.Object
   
   @js.native
   sealed trait EC_prime256v1 extends js.Object
@@ -3209,6 +3632,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait EDGE extends js.Object
+  
+  @js.native
+  sealed trait EDGE_C extends js.Object
+  
+  @js.native
+  sealed trait EDGE_CG extends js.Object
   
   @js.native
   sealed trait `EIP-ASSOCIATE` extends js.Object
@@ -3232,13 +3661,22 @@ object awsDashSdkLibStrings {
   sealed trait EMAIL extends js.Object
   
   @js.native
+  sealed trait EMAIL_ADDRESS extends js.Object
+  
+  @js.native
   sealed trait EMAIL_ALREADY_EXISTS extends js.Object
+  
+  @js.native
+  sealed trait EMAIL_HEADER extends js.Object
   
   @js.native
   sealed trait EMAIL_PROTECTION extends js.Object
   
   @js.native
   sealed trait EMBEDDED extends js.Object
+  
+  @js.native
+  sealed trait EMBEDDED_PLUS_SCTE20 extends js.Object
   
   @js.native
   sealed trait EMERGENCY extends js.Object
@@ -3274,7 +3712,13 @@ object awsDashSdkLibStrings {
   sealed trait ENCRYPT_DECRYPT extends js.Object
   
   @js.native
+  sealed trait END extends js.Object
+  
+  @js.native
   sealed trait ENDED extends js.Object
+  
+  @js.native
+  sealed trait ENDPOINT extends js.Object
   
   @js.native
   sealed trait ENDS_WITH extends js.Object
@@ -3287,6 +3731,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ENHANCED extends js.Object
+  
+  @js.native
+  sealed trait ENILimitExceeded extends js.Object
+  
+  @js.native
+  sealed trait ENTITLED extends js.Object
   
   @js.native
   sealed trait EN_US extends js.Object
@@ -3385,6 +3835,9 @@ object awsDashSdkLibStrings {
   sealed trait EXERCISER_MONKEY_OUTPUT extends js.Object
   
   @js.native
+  sealed trait EXPERIMENTAL extends js.Object
+  
+  @js.native
   sealed trait EXPIRE extends js.Object
   
   @js.native
@@ -3407,6 +3860,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait EXPLICIT_REJECTED extends js.Object
+  
+  @js.native
+  sealed trait EXPLOIT_KIT extends js.Object
+  
+  @js.native
+  sealed trait EXPLOIT_SITE extends js.Object
   
   @js.native
   sealed trait EXPLORER_EVENT_LOG extends js.Object
@@ -3475,6 +3934,15 @@ object awsDashSdkLibStrings {
   sealed trait Enterprise extends js.Object
   
   @js.native
+  sealed trait EnterpriseDirectory extends js.Object
+  
+  @js.native
+  sealed trait EnterpriseLWA extends js.Object
+  
+  @js.native
+  sealed trait EnterpriseOIDC extends js.Object
+  
+  @js.native
   sealed trait Equal extends js.Object
   
   @js.native
@@ -3482,6 +3950,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Equals extends js.Object
+  
+  @js.native
+  sealed trait EssentialContainerExited extends js.Object
   
   @js.native
   sealed trait Evaluation extends js.Object
@@ -3541,7 +4012,13 @@ object awsDashSdkLibStrings {
   sealed trait Export extends js.Object
   
   @js.native
+  sealed trait ExportSnapshotRecord extends js.Object
+  
+  @js.native
   sealed trait External extends js.Object
+  
+  @js.native
+  sealed trait ExtractingBundleFailure extends js.Object
   
   @js.native
   sealed trait F4V extends js.Object
@@ -3557,6 +4034,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait FAILED_ACTIONS extends js.Object
+  
+  @js.native
+  sealed trait FAILED_CREATION extends js.Object
+  
+  @js.native
+  sealed trait FAILED_RESOURCE_GONE extends js.Object
   
   @js.native
   sealed trait FAILING extends js.Object
@@ -3575,6 +4058,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait FALSE extends js.Object
+  
+  @js.native
+  sealed trait FALSE_POSITIVE extends js.Object
   
   @js.native
   sealed trait FARGATE extends js.Object
@@ -3733,6 +4219,9 @@ object awsDashSdkLibStrings {
   sealed trait FLEET_VPC_PEERING_SUCCEEDED extends js.Object
   
   @js.native
+  sealed trait `FLINK-1_6` extends js.Object
+  
+  @js.native
   sealed trait FLOATING_POINT extends js.Object
   
   @js.native
@@ -3823,7 +4312,13 @@ object awsDashSdkLibStrings {
   sealed trait FORECASTED extends js.Object
   
   @js.native
+  sealed trait FORM extends js.Object
+  
+  @js.native
   sealed trait FORM_FACTOR extends js.Object
+  
+  @js.native
+  sealed trait FORWARD extends js.Object
   
   @js.native
   sealed trait FQDN extends js.Object
@@ -3850,6 +4345,9 @@ object awsDashSdkLibStrings {
   sealed trait FRAME_CAPTURE extends js.Object
   
   @js.native
+  sealed trait FREQUENCY extends js.Object
+  
+  @js.native
   sealed trait FRI extends js.Object
   
   @js.native
@@ -3871,10 +4369,16 @@ object awsDashSdkLibStrings {
   sealed trait FULL_NAME extends js.Object
   
   @js.native
+  sealed trait FUZE extends js.Object
+  
+  @js.native
   sealed trait Facebook extends js.Object
   
   @js.native
   sealed trait FacetValidationException extends js.Object
+  
+  @js.native
+  sealed trait Fail extends js.Object
   
   @js.native
   sealed trait FailStateEntered extends js.Object
@@ -3898,6 +4402,9 @@ object awsDashSdkLibStrings {
   sealed trait Failure extends js.Object
   
   @js.native
+  sealed trait FailureThresholdBreached extends js.Object
+  
+  @js.native
   sealed trait False extends js.Object
   
   @js.native
@@ -3916,7 +4423,16 @@ object awsDashSdkLibStrings {
   sealed trait FinalObjectiveMetricValue extends js.Object
   
   @js.native
+  sealed trait Forbidden extends js.Object
+  
+  @js.native
   sealed trait ForceResetDeployment extends js.Object
+  
+  @js.native
+  sealed trait ForecastAndScale extends js.Object
+  
+  @js.native
+  sealed trait ForecastOnly extends js.Object
   
   @js.native
   sealed trait Forest extends js.Object
@@ -3928,7 +4444,16 @@ object awsDashSdkLibStrings {
   sealed trait Forward extends js.Object
   
   @js.native
+  sealed trait FreeOfAdultContent extends js.Object
+  
+  @js.native
+  sealed trait FreeOfPersonallyIdentifiableInformation extends js.Object
+  
+  @js.native
   sealed trait FreeStorageSpace extends js.Object
+  
+  @js.native
+  sealed trait FreeText extends js.Object
   
   @js.native
   sealed trait Fulfilled extends js.Object
@@ -3959,6 +4484,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait GENERIC_EVENT extends js.Object
+  
+  @js.native
+  sealed trait GENERIC_NAME extends js.Object
   
   @js.native
   sealed trait GET extends js.Object
@@ -4006,6 +4534,12 @@ object awsDashSdkLibStrings {
   sealed trait GOOGLE_DRIVE extends js.Object
   
   @js.native
+  sealed trait GOOGLE_HANGOUTS extends js.Object
+  
+  @js.native
+  sealed trait GOVERNANCE extends js.Object
+  
+  @js.native
   sealed trait GRAPHICS extends js.Object
   
   @js.native
@@ -4043,6 +4577,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Gateway extends js.Object
+  
+  @js.native
+  sealed trait Gazebo extends js.Object
   
   @js.native
   sealed trait GenerateDataKey extends js.Object
@@ -4091,6 +4628,15 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Green extends js.Object
+  
+  @js.native
+  sealed trait GreengrassContainer extends js.Object
+  
+  @js.native
+  sealed trait GreengrassDeploymentFailed extends js.Object
+  
+  @js.native
+  sealed trait GreengrassGroupVersionDoesNotExist extends js.Object
   
   @js.native
   sealed trait GreengrassSystem extends js.Object
@@ -4168,6 +4714,9 @@ object awsDashSdkLibStrings {
   sealed trait H264_LEVEL_AUTO extends js.Object
   
   @js.native
+  sealed trait H323 extends js.Object
+  
+  @js.native
   sealed trait HANDLE_TIME extends js.Object
   
   @js.native
@@ -4181,6 +4730,18 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait HASH extends js.Object
+  
+  @js.native
+  sealed trait HASH_MD5 extends js.Object
+  
+  @js.native
+  sealed trait HASH_SHA1 extends js.Object
+  
+  @js.native
+  sealed trait HASH_SHA256 extends js.Object
+  
+  @js.native
+  sealed trait HASH_SHA512 extends js.Object
   
   @js.native
   sealed trait HBBTV_1_5 extends js.Object
@@ -4342,6 +4903,9 @@ object awsDashSdkLibStrings {
   sealed trait HVC1 extends js.Object
   
   @js.native
+  sealed trait `HYPERV-MANAGER` extends js.Object
+  
+  @js.native
   sealed trait H_264 extends js.Object
   
   @js.native
@@ -4423,6 +4987,9 @@ object awsDashSdkLibStrings {
   sealed trait ID extends js.Object
   
   @js.native
+  sealed trait IDENTIFIER extends js.Object
+  
+  @js.native
   sealed trait IDLE extends js.Object
   
   @js.native
@@ -4477,6 +5044,9 @@ object awsDashSdkLibStrings {
   sealed trait INACTIVE extends js.Object
   
   @js.native
+  sealed trait INBOUND extends js.Object
+  
+  @js.native
   sealed trait INCLUDE extends js.Object
   
   @js.native
@@ -4507,6 +5077,9 @@ object awsDashSdkLibStrings {
   sealed trait INHERITED extends js.Object
   
   @js.native
+  sealed trait INITIAL extends js.Object
+  
+  @js.native
   sealed trait INITIALIZED extends js.Object
   
   @js.native
@@ -4517,6 +5090,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait INITIALIZING extends js.Object
+  
+  @js.native
+  sealed trait INITIATED_CALL extends js.Object
   
   @js.native
   sealed trait INOPERABLE extends js.Object
@@ -4594,6 +5170,9 @@ object awsDashSdkLibStrings {
   sealed trait INSTRUMENTATION_TEST_SPEC extends js.Object
   
   @js.native
+  sealed trait INSUFFICIENT_CLOUDHSM_HSMS extends js.Object
+  
+  @js.native
   sealed trait INSUFFICIENT_DATA extends js.Object
   
   @js.native
@@ -4607,6 +5186,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait INTEGRATION_TIMEOUT extends js.Object
+  
+  @js.native
+  sealed trait INTELLIGENT_TIERING extends js.Object
   
   @js.native
   sealed trait INTENT extends js.Object
@@ -4660,6 +5242,9 @@ object awsDashSdkLibStrings {
   sealed trait INTRA_DC_PRECISION_9 extends js.Object
   
   @js.native
+  sealed trait INT_VALUE extends js.Object
+  
+  @js.native
   sealed trait INVALID extends js.Object
   
   @js.native
@@ -4675,6 +5260,12 @@ object awsDashSdkLibStrings {
   sealed trait INVALID_ATTRIBUTE_VALUE_REMOVED extends js.Object
   
   @js.native
+  sealed trait INVALID_CREDENTIALS extends js.Object
+  
+  @js.native
+  sealed trait INVALID_ECS_SERVICE extends js.Object
+  
+  @js.native
   sealed trait INVALID_EMAIL extends js.Object
   
   @js.native
@@ -4685,6 +5276,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait INVALID_PUBLIC_DOMAIN extends js.Object
+  
+  @js.native
+  sealed trait INVALID_REVISION extends js.Object
   
   @js.native
   sealed trait INVALID_SIGNATURE extends js.Object
@@ -4702,6 +5296,9 @@ object awsDashSdkLibStrings {
   sealed trait INVITED extends js.Object
   
   @js.native
+  sealed trait IN_ERROR extends js.Object
+  
+  @js.native
   sealed trait IN_PLACE extends js.Object
   
   @js.native
@@ -4709,6 +5306,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait IN_PROGRESS_IN_ERROR extends js.Object
+  
+  @js.native
+  sealed trait IN_SYNC extends js.Object
   
   @js.native
   sealed trait IN_USE extends js.Object
@@ -4783,6 +5383,9 @@ object awsDashSdkLibStrings {
   sealed trait Id extends js.Object
   
   @js.native
+  sealed trait IdenticalDataAndAlgorithm extends js.Object
+  
+  @js.native
   sealed trait IdleInstances extends js.Object
   
   @js.native
@@ -4808,6 +5411,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait InService extends js.Object
+  
+  @js.native
+  sealed trait InSync extends js.Object
   
   @js.native
   sealed trait InTransitToAWS extends js.Object
@@ -4909,10 +5515,16 @@ object awsDashSdkLibStrings {
   sealed trait InstanceSuccess extends js.Object
   
   @js.native
+  sealed trait InstanceTarget extends js.Object
+  
+  @js.native
   sealed trait InstanceType extends js.Object
   
   @js.native
   sealed trait InstancesHealth extends js.Object
+  
+  @js.native
+  sealed trait Integer extends js.Object
   
   @js.native
   sealed trait Intended extends js.Object
@@ -4933,6 +5545,9 @@ object awsDashSdkLibStrings {
   sealed trait InternalServerError extends js.Object
   
   @js.native
+  sealed trait InternalServiceError extends js.Object
+  
+  @js.native
   sealed trait InternalServiceException extends js.Object
   
   @js.native
@@ -4940,6 +5555,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait InvalidArnException extends js.Object
+  
+  @js.native
+  sealed trait InvalidBundleRobotApplication extends js.Object
+  
+  @js.native
+  sealed trait InvalidBundleSimulationApplication extends js.Object
   
   @js.native
   sealed trait InvalidEnvironmentState extends js.Object
@@ -5059,6 +5680,9 @@ object awsDashSdkLibStrings {
   sealed trait KEEP_ALIVE extends js.Object
   
   @js.native
+  sealed trait KEYLOGGER extends js.Object
+  
+  @js.native
   sealed trait KEYS_ONLY extends js.Object
   
   @js.native
@@ -5098,6 +5722,9 @@ object awsDashSdkLibStrings {
   sealed trait KMS extends js.Object
   
   @js.native
+  sealed trait KeepExternalPolicies extends js.Object
+  
+  @js.native
   sealed trait KeyId extends js.Object
   
   @js.native
@@ -5120,6 +5747,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait KinesisStreamAsSource extends js.Object
+  
+  @js.native
+  sealed trait Kinetic extends js.Object
   
   @js.native
   sealed trait KmsDataKeyReusePeriodSeconds extends js.Object
@@ -5162,6 +5792,21 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait LATM_LOAS extends js.Object
+  
+  @js.native
+  sealed trait LAUNCHED extends js.Object
+  
+  @js.native
+  sealed trait LAUNCHING extends js.Object
+  
+  @js.native
+  sealed trait LAUNCH_FAILED extends js.Object
+  
+  @js.native
+  sealed trait LAUNCH_IN_PROGRESS extends js.Object
+  
+  @js.native
+  sealed trait LAUNCH_PENDING extends js.Object
   
   @js.native
   sealed trait LC extends js.Object
@@ -5266,6 +5911,9 @@ object awsDashSdkLibStrings {
   sealed trait LINKED_ACCOUNT extends js.Object
   
   @js.native
+  sealed trait LINK_TAG extends js.Object
+  
+  @js.native
   sealed trait LINUX extends js.Object
   
   @js.native
@@ -5326,6 +5974,9 @@ object awsDashSdkLibStrings {
   sealed trait LT_RT extends js.Object
   
   @js.native
+  sealed trait LUSTRE extends js.Object
+  
+  @js.native
   sealed trait Lambda extends js.Object
   
   @js.native
@@ -5351,6 +6002,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait LambdaFunctionTimedOut extends js.Object
+  
+  @js.native
+  sealed trait LambdaTarget extends js.Object
   
   @js.native
   sealed trait Large extends js.Object
@@ -5440,6 +6094,9 @@ object awsDashSdkLibStrings {
   sealed trait LoadBalancerTlsCertificate extends js.Object
   
   @js.native
+  sealed trait LoadForecast extends js.Object
+  
+  @js.native
   sealed trait Local extends js.Object
   
   @js.native
@@ -5462,6 +6119,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait M3U8 extends js.Object
+  
+  @js.native
+  sealed trait MACRO extends js.Object
   
   @js.native
   sealed trait MAC_ADDRESS extends js.Object
@@ -5501,6 +6161,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait MANAGED extends js.Object
+  
+  @js.native
+  sealed trait MANAGED_DOMAIN extends js.Object
   
   @js.native
   sealed trait MANIFESTS_AND_SEGMENTS extends js.Object
@@ -5584,6 +6247,12 @@ object awsDashSdkLibStrings {
   sealed trait MEASURE_ONLY extends js.Object
   
   @js.native
+  sealed trait MEDICAL_CONDITION extends js.Object
+  
+  @js.native
+  sealed trait MEDICATION extends js.Object
+  
+  @js.native
   sealed trait MEDIUM extends js.Object
   
   @js.native
@@ -5612,6 +6281,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait MESSAGE_LOG extends js.Object
+  
+  @js.native
+  sealed trait MESSAGE_TAG extends js.Object
   
   @js.native
   sealed trait METADATA extends js.Object
@@ -5698,6 +6370,9 @@ object awsDashSdkLibStrings {
   sealed trait MODEL extends js.Object
   
   @js.native
+  sealed trait MODIFIED extends js.Object
+  
+  @js.native
   sealed trait MODIFY extends js.Object
   
   @js.native
@@ -5729,6 +6404,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait MP4 extends js.Object
+  
+  @js.native
+  sealed trait MP4_FILE extends js.Object
   
   @js.native
   sealed trait MPD extends js.Object
@@ -5782,10 +6460,16 @@ object awsDashSdkLibStrings {
   sealed trait MUST_EXIST extends js.Object
   
   @js.native
+  sealed trait MUTEX extends js.Object
+  
+  @js.native
   sealed trait MX extends js.Object
   
   @js.native
   sealed trait MXF extends js.Object
+  
+  @js.native
+  sealed trait MXNET extends js.Object
   
   @js.native
   sealed trait MailFromDomainNotVerified extends js.Object
@@ -5893,6 +6577,15 @@ object awsDashSdkLibStrings {
   sealed trait MissingLayerDigest extends js.Object
   
   @js.native
+  sealed trait MissingRobotApplicationArchitecture extends js.Object
+  
+  @js.native
+  sealed trait MissingRobotArchitecture extends js.Object
+  
+  @js.native
+  sealed trait MissingRobotDeploymentResource extends js.Object
+  
+  @js.native
   sealed trait Modify extends js.Object
   
   @js.native
@@ -5941,13 +6634,25 @@ object awsDashSdkLibStrings {
   sealed trait NE extends js.Object
   
   @js.native
+  sealed trait NEGATION extends js.Object
+  
+  @js.native
   sealed trait NEGATIVE extends js.Object
   
   @js.native
   sealed trait NETWORK extends js.Object
   
   @js.native
+  sealed trait NETWORK_ERRORS extends js.Object
+  
+  @js.native
   sealed trait NETWORK_INTERFACE_LIMIT_EXCEEDED extends js.Object
+  
+  @js.native
+  sealed trait NET_AMORTIZED_COST extends js.Object
+  
+  @js.native
+  sealed trait NET_UNBLENDED_COST extends js.Object
   
   @js.native
   sealed trait NEUTRAL extends js.Object
@@ -5972,6 +6677,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NFS extends js.Object
+  
+  @js.native
+  sealed trait NO extends js.Object
   
   @js.native
   sealed trait NODE extends js.Object
@@ -6001,6 +6709,9 @@ object awsDashSdkLibStrings {
   sealed trait NORMAL extends js.Object
   
   @js.native
+  sealed trait NORMALIZED_USAGE_AMOUNT extends js.Object
+  
+  @js.native
   sealed trait NOTES extends js.Object
   
   @js.native
@@ -6016,6 +6727,9 @@ object awsDashSdkLibStrings {
   sealed trait NOT_BUILT extends js.Object
   
   @js.native
+  sealed trait NOT_CHECKED extends js.Object
+  
+  @js.native
   sealed trait NOT_CONTAINS extends js.Object
   
   @js.native
@@ -6026,6 +6740,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NOT_EQUAL extends js.Object
+  
+  @js.native
+  sealed trait NOT_EQUALS extends js.Object
   
   @js.native
   sealed trait NOT_EXIST extends js.Object
@@ -6049,6 +6766,9 @@ object awsDashSdkLibStrings {
   sealed trait NOT_SCHEDULED extends js.Object
   
   @js.native
+  sealed trait NOT_SHARED extends js.Object
+  
+  @js.native
   sealed trait NOT_STARTED extends js.Object
   
   @js.native
@@ -6062,6 +6782,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NO_ACTION extends js.Object
+  
+  @js.native
+  sealed trait NO_ANSWER extends js.Object
   
   @js.native
   sealed trait NO_ARTIFACTS extends js.Object
@@ -6157,6 +6880,9 @@ object awsDashSdkLibStrings {
   sealed trait `No Upfront` extends js.Object
   
   @js.native
+  sealed trait NoContainer extends js.Object
+  
+  @js.native
   sealed trait NoData extends js.Object
   
   @js.native
@@ -6167,6 +6893,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NoProtection extends js.Object
+  
+  @js.native
+  sealed trait NoResponse extends js.Object
   
   @js.native
   sealed trait NoRisk extends js.Object
@@ -6193,6 +6922,12 @@ object awsDashSdkLibStrings {
   sealed trait NotEqualTo extends js.Object
   
   @js.native
+  sealed trait NotEquals extends js.Object
+  
+  @js.native
+  sealed trait NotFound extends js.Object
+  
+  @js.native
   sealed trait NotIn extends js.Object
   
   @js.native
@@ -6206,6 +6941,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NotReviewed extends js.Object
+  
+  @js.native
+  sealed trait NotSent extends js.Object
   
   @js.native
   sealed trait NotStarted extends js.Object
@@ -6232,6 +6970,9 @@ object awsDashSdkLibStrings {
   sealed trait OBJECT extends js.Object
   
   @js.native
+  sealed trait OBSERVED extends js.Object
+  
+  @js.native
   sealed trait OBSOLETE extends js.Object
   
   @js.native
@@ -6245,6 +6986,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait OFFLINE extends js.Object
+  
+  @js.native
+  sealed trait OGRE extends js.Object
   
   @js.native
   sealed trait OIDC extends js.Object
@@ -6290,6 +7034,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ONLINE extends js.Object
+  
+  @js.native
+  sealed trait ONNX extends js.Object
   
   @js.native
   sealed trait ON_DEMAND extends js.Object
@@ -6343,7 +7090,13 @@ object awsDashSdkLibStrings {
   sealed trait OPERATION extends js.Object
   
   @js.native
+  sealed trait OPERATIONAL extends js.Object
+  
+  @js.native
   sealed trait OPERATION_NOT_PERMITTED extends js.Object
+  
+  @js.native
+  sealed trait OPERATOR extends js.Object
   
   @js.native
   sealed trait OPERATOR_INITIATED extends js.Object
@@ -6388,13 +7141,25 @@ object awsDashSdkLibStrings {
   sealed trait OTHER extends js.Object
   
   @js.native
+  sealed trait `OTHER-ACCOUNTS` extends js.Object
+  
+  @js.native
   sealed trait OTX_CSV extends js.Object
+  
+  @js.native
+  sealed trait OUT extends js.Object
+  
+  @js.native
+  sealed trait OUTBOUND extends js.Object
   
   @js.native
   sealed trait OUTDATED extends js.Object
   
   @js.native
   sealed trait OUTPUT extends js.Object
+  
+  @js.native
+  sealed trait OVERRIDDEN extends js.Object
   
   @js.native
   sealed trait OVERWRITE extends js.Object
@@ -6406,7 +7171,19 @@ object awsDashSdkLibStrings {
   sealed trait OVER_MAX_INSTANCES extends js.Object
   
   @js.native
+  sealed trait OWNED extends js.Object
+  
+  @js.native
   sealed trait OWNER extends js.Object
+  
+  @js.native
+  sealed trait ObjectLockLegalHoldStatus extends js.Object
+  
+  @js.native
+  sealed trait ObjectLockMode extends js.Object
+  
+  @js.native
+  sealed trait ObjectLockRetainUntilDate extends js.Object
   
   @js.native
   sealed trait Ok extends js.Object
@@ -6440,6 +7217,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Optional extends js.Object
+  
+  @js.native
+  sealed trait Or extends js.Object
   
   @js.native
   sealed trait OrganizationUnit extends js.Object
@@ -6478,6 +7258,9 @@ object awsDashSdkLibStrings {
   sealed trait PAP extends js.Object
   
   @js.native
+  sealed trait PARALLELISM extends js.Object
+  
+  @js.native
   sealed trait PARAMETER_GROUP extends js.Object
   
   @js.native
@@ -6514,6 +7297,9 @@ object awsDashSdkLibStrings {
   sealed trait PATCH extends js.Object
   
   @js.native
+  sealed trait PATCHING extends js.Object
+  
+  @js.native
   sealed trait PATCH_ID extends js.Object
   
   @js.native
@@ -6523,10 +7309,16 @@ object awsDashSdkLibStrings {
   sealed trait PAUSED extends js.Object
   
   @js.native
+  sealed trait PAUSED_ON_FAILURE extends js.Object
+  
+  @js.native
   sealed trait PAUSE_OUTPUT extends js.Object
   
   @js.native
   sealed trait PAYER extends js.Object
+  
+  @js.native
+  sealed trait PAY_PER_REQUEST extends js.Object
   
   @js.native
   sealed trait PCA_INVALID_ARGS extends js.Object
@@ -6580,6 +7372,9 @@ object awsDashSdkLibStrings {
   sealed trait PENDING_DELETION extends js.Object
   
   @js.native
+  sealed trait PENDING_DEPLOYMENT extends js.Object
+  
+  @js.native
   sealed trait PENDING_DEVICE extends js.Object
   
   @js.native
@@ -6601,6 +7396,9 @@ object awsDashSdkLibStrings {
   sealed trait PENDING_VALIDATION extends js.Object
   
   @js.native
+  sealed trait PENDING_VERIFICATION extends js.Object
+  
+  @js.native
   sealed trait PERCENT extends js.Object
   
   @js.native
@@ -6619,13 +7417,25 @@ object awsDashSdkLibStrings {
   sealed trait PERSON extends js.Object
   
   @js.native
+  sealed trait PER_BROKER extends js.Object
+  
+  @js.native
+  sealed trait PER_TOPIC_PER_BROKER extends js.Object
+  
+  @js.native
   sealed trait PHONE extends js.Object
+  
+  @js.native
+  sealed trait PHP extends js.Object
   
   @js.native
   sealed trait PIC_TIMING_SEI extends js.Object
   
   @js.native
   sealed trait PID extends js.Object
+  
+  @js.native
+  sealed trait PIPELINE extends js.Object
   
   @js.native
   sealed trait PLACING extends js.Object
@@ -6640,7 +7450,16 @@ object awsDashSdkLibStrings {
   sealed trait PLATFORM extends js.Object
   
   @js.native
+  sealed trait PNG extends js.Object
+  
+  @js.native
+  sealed trait POINT_IN_TIME_CONSISTENT extends js.Object
+  
+  @js.native
   sealed trait POLICY extends js.Object
+  
+  @js.native
+  sealed trait POLYCOM extends js.Object
   
   @js.native
   sealed trait PORT extends js.Object
@@ -6655,6 +7474,9 @@ object awsDashSdkLibStrings {
   sealed trait POST_BUILD extends js.Object
   
   @js.native
+  sealed trait POTENTIALLY_UNWANTED extends js.Object
+  
+  @js.native
   sealed trait POWER extends js.Object
   
   @js.native
@@ -6664,10 +7486,16 @@ object awsDashSdkLibStrings {
   sealed trait POWERUSER extends js.Object
   
   @js.native
+  sealed trait PREFIX extends js.Object
+  
+  @js.native
   sealed trait PREMIUM extends js.Object
   
   @js.native
   sealed trait PREPARING extends js.Object
+  
+  @js.native
+  sealed trait PRESERVE extends js.Object
   
   @js.native
   sealed trait PRESET extends js.Object
@@ -6685,6 +7513,9 @@ object awsDashSdkLibStrings {
   sealed trait PRIMARY extends js.Object
   
   @js.native
+  sealed trait PRINCIPAL extends js.Object
+  
+  @js.native
   sealed trait PRINTING_TO_LOCAL_DEVICE extends js.Object
   
   @js.native
@@ -6700,6 +7531,9 @@ object awsDashSdkLibStrings {
   sealed trait PRIVILEGE_WITHDRAWN extends js.Object
   
   @js.native
+  sealed trait PROCEDURE_NAME extends js.Object
+  
+  @js.native
   sealed trait PROCESS extends js.Object
   
   @js.native
@@ -6713,6 +7547,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PRODUCTION extends js.Object
+  
+  @js.native
+  sealed trait PROFESSION extends js.Object
   
   @js.native
   sealed trait PROFILE_422 extends js.Object
@@ -6746,6 +7583,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PRORES extends js.Object
+  
+  @js.native
+  sealed trait PROTECTED_HEALTH_INFORMATION extends js.Object
   
   @js.native
   sealed trait PROVISIONED extends js.Object
@@ -6806,6 +7646,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PYTHON extends js.Object
+  
+  @js.native
+  sealed trait PYTORCH extends js.Object
+  
+  @js.native
+  sealed trait Package extends js.Object
   
   @js.native
   sealed trait ParallelStateAborted extends js.Object
@@ -6889,6 +7735,9 @@ object awsDashSdkLibStrings {
   sealed trait PendingImport extends js.Object
   
   @js.native
+  sealed trait PendingNewDeployment extends js.Object
+  
+  @js.native
   sealed trait PendingSpotBidPlacement extends js.Object
   
   @js.native
@@ -6937,6 +7786,9 @@ object awsDashSdkLibStrings {
   sealed trait PlatformUpdate extends js.Object
   
   @js.native
+  sealed trait Plus extends js.Object
+  
+  @js.native
   sealed trait Policies extends js.Object
   
   @js.native
@@ -6955,10 +7807,22 @@ object awsDashSdkLibStrings {
   sealed trait PolicyVersionsInUseQuota extends js.Object
   
   @js.native
+  sealed trait PostLaunchFileFailure extends js.Object
+  
+  @js.native
   sealed trait PreInService extends js.Object
   
   @js.native
+  sealed trait PreLaunchFileFailure extends js.Object
+  
+  @js.native
+  sealed trait PreconditionFailed extends js.Object
+  
+  @js.native
   sealed trait PredictiveModelType extends js.Object
+  
+  @js.native
+  sealed trait Preparing extends js.Object
   
   @js.native
   sealed trait PreparingAppliance extends js.Object
@@ -6985,6 +7849,12 @@ object awsDashSdkLibStrings {
   sealed trait Private extends js.Object
   
   @js.native
+  sealed trait Pro extends js.Object
+  
+  @js.native
+  sealed trait ProTrial extends js.Object
+  
+  @js.native
   sealed trait Processed extends js.Object
   
   @js.native
@@ -7001,6 +7871,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PutInstancePublicPorts extends js.Object
+  
+  @js.native
+  sealed trait QUALITY extends js.Object
   
   @js.native
   sealed trait QUANTITY extends js.Object
@@ -7063,6 +7936,12 @@ object awsDashSdkLibStrings {
   sealed trait RANGE extends js.Object
   
   @js.native
+  sealed trait RANSOMWARE extends js.Object
+  
+  @js.native
+  sealed trait RATE extends js.Object
+  
+  @js.native
   sealed trait RATE_BASED extends js.Object
   
   @js.native
@@ -7078,13 +7957,34 @@ object awsDashSdkLibStrings {
   sealed trait RDSReaderAverageDatabaseConnections extends js.Object
   
   @js.native
+  sealed trait RDS_HTTP_ENDPOINT extends js.Object
+  
+  @js.native
+  sealed trait REACT_NATIVE extends js.Object
+  
+  @js.native
   sealed trait READ extends js.Object
+  
+  @js.native
+  sealed trait READER extends js.Object
   
   @js.native
   sealed trait READY extends js.Object
   
   @js.native
   sealed trait READY_BASIC_TESTING extends js.Object
+  
+  @js.native
+  sealed trait READY_FOR_CONFIGURATION extends js.Object
+  
+  @js.native
+  sealed trait READY_FOR_LAUNCH extends js.Object
+  
+  @js.native
+  sealed trait READY_FOR_REPLICATION extends js.Object
+  
+  @js.native
+  sealed trait READY_WAIT extends js.Object
   
   @js.native
   sealed trait READ_ACP extends js.Object
@@ -7109,6 +8009,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RECURRING extends js.Object
+  
+  @js.native
+  sealed trait RECURSIVE extends js.Object
   
   @js.native
   sealed trait RECYCLED extends js.Object
@@ -7192,6 +8095,24 @@ object awsDashSdkLibStrings {
   sealed trait REJECTED extends js.Object
   
   @js.native
+  sealed trait REJECT_MESSAGE extends js.Object
+  
+  @js.native
+  sealed trait RELATIONAL_DATABASE extends js.Object
+  
+  @js.native
+  sealed trait RELEASE extends js.Object
+  
+  @js.native
+  sealed trait REMAP_ATTACHING extends js.Object
+  
+  @js.native
+  sealed trait REMAP_DETACHING extends js.Object
+  
+  @js.native
+  sealed trait REMOTE_ACCESS extends js.Object
+  
+  @js.native
   sealed trait REMOTE_ACCESS_ENABLED extends js.Object
   
   @js.native
@@ -7202,6 +8123,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait REMOTE_DEBUG_ENABLED extends js.Object
+  
+  @js.native
+  sealed trait REMOVAL_FAILED extends js.Object
   
   @js.native
   sealed trait REMOVE extends js.Object
@@ -7216,16 +8140,43 @@ object awsDashSdkLibStrings {
   sealed trait REMOVE_FROM_CRL extends js.Object
   
   @js.native
+  sealed trait RENDERING_FAILURE extends js.Object
+  
+  @js.native
   sealed trait RENEW extends js.Object
   
   @js.native
   sealed trait RENEW_DOMAIN extends js.Object
   
   @js.native
+  sealed trait REPEAT extends js.Object
+  
+  @js.native
   sealed trait REPLACE extends js.Object
   
   @js.native
   sealed trait REPLICA extends js.Object
+  
+  @js.native
+  sealed trait REPLICATED extends js.Object
+  
+  @js.native
+  sealed trait REPLICATION_FAILED extends js.Object
+  
+  @js.native
+  sealed trait REPLICATION_IN_PROGRESS extends js.Object
+  
+  @js.native
+  sealed trait REPLICATION_PENDING extends js.Object
+  
+  @js.native
+  sealed trait REPLICATION_STOPPED extends js.Object
+  
+  @js.native
+  sealed trait REPLICATION_STOPPING extends js.Object
+  
+  @js.native
+  sealed trait REPLICATION_STOP_FAILED extends js.Object
   
   @js.native
   sealed trait REQUEST extends js.Object
@@ -7273,6 +8224,9 @@ object awsDashSdkLibStrings {
   sealed trait RESERVATIONS extends js.Object
   
   @js.native
+  sealed trait RESERVATION_ID extends js.Object
+  
+  @js.native
   sealed trait RESERVED extends js.Object
   
   @js.native
@@ -7283,6 +8237,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RESIZING extends js.Object
+  
+  @js.native
+  sealed trait RESOLVED extends js.Object
   
   @js.native
   sealed trait RESOURCE extends js.Object
@@ -7300,6 +8257,9 @@ object awsDashSdkLibStrings {
   sealed trait RESOURCE_NOT_FOUND extends js.Object
   
   @js.native
+  sealed trait RESOURCE_TYPE extends js.Object
+  
+  @js.native
   sealed trait RESPOND extends js.Object
   
   @js.native
@@ -7312,7 +8272,19 @@ object awsDashSdkLibStrings {
   sealed trait RESPONSE_HEADER extends js.Object
   
   @js.native
+  sealed trait RESTORE_FROM_CUSTOM_SNAPSHOT extends js.Object
+  
+  @js.native
+  sealed trait RESTORE_FROM_LATEST_SNAPSHOT extends js.Object
+  
+  @js.native
   sealed trait RESTORING extends js.Object
+  
+  @js.native
+  sealed trait RESTRICTED_AUTHOR extends js.Object
+  
+  @js.native
+  sealed trait RESTRICTED_READER extends js.Object
   
   @js.native
   sealed trait RESTRICT_GROUP0 extends js.Object
@@ -7331,6 +8303,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RETAIN extends js.Object
+  
+  @js.native
+  sealed trait RETRY extends js.Object
   
   @js.native
   sealed trait REVIEW_IN_PROGRESS extends js.Object
@@ -7352,6 +8327,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RIFF extends js.Object
+  
+  @js.native
+  sealed trait RINGCENTRAL extends js.Object
+  
+  @js.native
+  sealed trait RINGING extends js.Object
   
   @js.native
   sealed trait RI_COVERAGE extends js.Object
@@ -7381,7 +8362,13 @@ object awsDashSdkLibStrings {
   sealed trait ROOT extends js.Object
   
   @js.native
+  sealed trait ROOTKIT extends js.Object
+  
+  @js.native
   sealed trait ROOT_VOLUME extends js.Object
+  
+  @js.native
+  sealed trait ROS extends js.Object
   
   @js.native
   sealed trait ROTATE_0 extends js.Object
@@ -7394,6 +8381,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ROTATE_90 extends js.Object
+  
+  @js.native
+  sealed trait ROUTE_OR_MODE extends js.Object
   
   @js.native
   sealed trait RP2027 extends js.Object
@@ -7489,6 +8479,9 @@ object awsDashSdkLibStrings {
   sealed trait RebootInstance extends js.Object
   
   @js.native
+  sealed trait RebootRelationalDatabase extends js.Object
+  
+  @js.native
   sealed trait ReceiveMessageWaitTimeSeconds extends js.Object
   
   @js.native
@@ -7499,6 +8492,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Red extends js.Object
+  
+  @js.native
+  sealed trait `Red Hat Enterprise Linux` extends js.Object
   
   @js.native
   sealed trait Redeployment extends js.Object
@@ -7564,6 +8560,9 @@ object awsDashSdkLibStrings {
   sealed trait Removing extends js.Object
   
   @js.native
+  sealed trait ReplaceExternalPolicies extends js.Object
+  
+  @js.native
   sealed trait Replicating extends js.Object
   
   @js.native
@@ -7621,6 +8620,9 @@ object awsDashSdkLibStrings {
   sealed trait ResourceName extends js.Object
   
   @js.native
+  sealed trait ResourceNotFound extends js.Object
+  
+  @js.native
   sealed trait ResourceNotFoundException extends js.Object
   
   @js.native
@@ -7634,6 +8636,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ResourceType extends js.Object
+  
+  @js.native
+  sealed trait Restarting extends js.Object
   
   @js.native
   sealed trait RestoreFailed extends js.Object
@@ -7675,6 +8680,15 @@ object awsDashSdkLibStrings {
   sealed trait Revoked extends js.Object
   
   @js.native
+  sealed trait RobotApplicationCrash extends js.Object
+  
+  @js.native
+  sealed trait RobotApplicationVersionMismatchedEtag extends js.Object
+  
+  @js.native
+  sealed trait RobotDeploymentNoResponse extends js.Object
+  
+  @js.native
   sealed trait Role extends js.Object
   
   @js.native
@@ -7709,6 +8723,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Running extends js.Object
+  
+  @js.native
+  sealed trait RunningFailed extends js.Object
   
   @js.native
   sealed trait S extends js.Object
@@ -7774,10 +8791,19 @@ object awsDashSdkLibStrings {
   sealed trait SCREENSHOT extends js.Object
   
   @js.native
+  sealed trait SCTE20 extends js.Object
+  
+  @js.native
+  sealed trait SCTE20_PLUS_EMBEDDED extends js.Object
+  
+  @js.native
   sealed trait SCTE35_ENHANCED extends js.Object
   
   @js.native
   sealed trait SCTE_35 extends js.Object
+  
+  @js.native
+  sealed trait SCVMM extends js.Object
   
   @js.native
   sealed trait SD extends js.Object
@@ -7838,6 +8864,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SELECT_MFA_TYPE extends js.Object
+  
+  @js.native
+  sealed trait SELF extends js.Object
   
   @js.native
   sealed trait SELF_CONTAINED extends js.Object
@@ -7909,6 +8938,9 @@ object awsDashSdkLibStrings {
   sealed trait SERVICE_LOG extends js.Object
   
   @js.native
+  sealed trait SERVICE_MANAGED extends js.Object
+  
+  @js.native
   sealed trait SETUP extends js.Object
   
   @js.native
@@ -7954,6 +8986,12 @@ object awsDashSdkLibStrings {
   sealed trait SHARED extends js.Object
   
   @js.native
+  sealed trait SHARED_BY_ME extends js.Object
+  
+  @js.native
+  sealed trait SHARED_WITH_ME extends js.Object
+  
+  @js.native
   sealed trait SHARPEN extends js.Object
   
   @js.native
@@ -7964,6 +9002,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SHUTTING_DOWN extends js.Object
+  
+  @js.native
+  sealed trait SIGN extends js.Object
   
   @js.native
   sealed trait SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED extends js.Object
@@ -7999,6 +9040,12 @@ object awsDashSdkLibStrings {
   sealed trait SINGLE_QUERY_ARG extends js.Object
   
   @js.native
+  sealed trait SIP extends js.Object
+  
+  @js.native
+  sealed trait SIPS extends js.Object
+  
+  @js.native
   sealed trait SIXTY_DAYS extends js.Object
   
   @js.native
@@ -8018,6 +9065,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SKIP_EVALUATION extends js.Object
+  
+  @js.native
+  sealed trait SKIP_RESTORE_FROM_SNAPSHOT extends js.Object
+  
+  @js.native
+  sealed trait SKYPE_FOR_BUSINESS extends js.Object
   
   @js.native
   sealed trait SLATE extends js.Object
@@ -8041,6 +9094,9 @@ object awsDashSdkLibStrings {
   sealed trait SMB extends js.Object
   
   @js.native
+  sealed trait SMI extends js.Object
+  
+  @js.native
   sealed trait SMS extends js.Object
   
   @js.native
@@ -8054,6 +9110,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SNAPSHOTTING extends js.Object
+  
+  @js.native
+  sealed trait SNAPSHOT_BATCHING extends js.Object
   
   @js.native
   sealed trait SNS extends js.Object
@@ -8077,7 +9136,13 @@ object awsDashSdkLibStrings {
   sealed trait SOURCE_COUNTRY extends js.Object
   
   @js.native
+  sealed trait SOURCE_IP extends js.Object
+  
+  @js.native
   sealed trait SOURCE_IP_ADDRESS extends js.Object
+  
+  @js.native
+  sealed trait SOURCE_TYPE extends js.Object
   
   @js.native
   sealed trait SOURCE_USER_AGENT extends js.Object
@@ -8107,7 +9172,13 @@ object awsDashSdkLibStrings {
   sealed trait SPOT extends js.Object
   
   @js.native
+  sealed trait SPYWARE extends js.Object
+  
+  @js.native
   sealed trait SQL extends js.Object
+  
+  @js.native
+  sealed trait `SQL-1_0` extends js.Object
   
   @js.native
   sealed trait SQS extends js.Object
@@ -8143,6 +9214,9 @@ object awsDashSdkLibStrings {
   sealed trait SSM_AUTOMATION extends js.Object
   
   @js.native
+  sealed trait STABILIZING extends js.Object
+  
+  @js.native
   sealed trait STACK_NOT_FOUND extends js.Object
   
   @js.native
@@ -8156,6 +9230,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait STANDARD_IA extends js.Object
+  
+  @js.native
+  sealed trait STANDBY extends js.Object
+  
+  @js.native
+  sealed trait START extends js.Object
   
   @js.native
   sealed trait STARTED extends js.Object
@@ -8198,6 +9278,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait STATUS extends js.Object
+  
+  @js.native
+  sealed trait STEADY_STATE extends js.Object
   
   @js.native
   sealed trait STEP_FAILURE extends js.Object
@@ -8254,6 +9337,9 @@ object awsDashSdkLibStrings {
   sealed trait STORAGE_USED extends js.Object
   
   @js.native
+  sealed trait STRENGTH extends js.Object
+  
+  @js.native
   sealed trait STRETCH_TO_OUTPUT extends js.Object
   
   @js.native
@@ -8291,6 +9377,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SUBSCRIPTION_ID extends js.Object
+  
+  @js.native
+  sealed trait SUCCEED extends js.Object
   
   @js.native
   sealed trait SUCCEEDED extends js.Object
@@ -8335,6 +9424,9 @@ object awsDashSdkLibStrings {
   sealed trait SUSE extends js.Object
   
   @js.native
+  sealed trait `SUSE Linux` extends js.Object
+  
+  @js.native
   sealed trait SUSPENDED extends js.Object
   
   @js.native
@@ -8353,6 +9445,9 @@ object awsDashSdkLibStrings {
   sealed trait SYMLINK extends js.Object
   
   @js.native
+  sealed trait SYMPTOM extends js.Object
+  
+  @js.native
   sealed trait SYNCING extends js.Object
   
   @js.native
@@ -8363,6 +9458,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SYSTEM_CLOCK extends js.Object
+  
+  @js.native
+  sealed trait SYSTEM_ORGAN_SITE extends js.Object
   
   @js.native
   sealed trait SYSTEM_USER extends js.Object
@@ -8390,6 +9488,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Scheduled extends js.Object
+  
+  @js.native
+  sealed trait ScheduledActionMaxCapacity extends js.Object
+  
+  @js.native
+  sealed trait ScheduledActionMinCapacity extends js.Object
   
   @js.native
   sealed trait ScheduledNotification extends js.Object
@@ -8422,6 +9526,9 @@ object awsDashSdkLibStrings {
   sealed trait SenderId extends js.Object
   
   @js.native
+  sealed trait Sent extends js.Object
+  
+  @js.native
   sealed trait SentTimestamp extends js.Object
   
   @js.native
@@ -8437,7 +9544,16 @@ object awsDashSdkLibStrings {
   sealed trait ServerCertificatesQuota extends js.Object
   
   @js.native
+  sealed trait ServerInstanceLabel extends js.Object
+  
+  @js.native
   sealed trait Service extends js.Object
+  
+  @js.native
+  sealed trait ServiceFailure extends js.Object
+  
+  @js.native
+  sealed trait ServiceUnavailable extends js.Object
   
   @js.native
   sealed trait Session extends js.Object
@@ -8447,6 +9563,15 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SessionStickiness_LB_CookieDurationSeconds extends js.Object
+  
+  @js.native
+  sealed trait SetForecastCapacityToMaxCapacity extends js.Object
+  
+  @js.native
+  sealed trait SetMaxCapacityAboveForecastCapacity extends js.Object
+  
+  @js.native
+  sealed trait SetMaxCapacityToForecastCapacity extends js.Object
   
   @js.native
   sealed trait Severe extends js.Object
@@ -8491,6 +9616,12 @@ object awsDashSdkLibStrings {
   sealed trait SimpleAD extends js.Object
   
   @js.native
+  sealed trait SimulationApplicationCrash extends js.Object
+  
+  @js.native
+  sealed trait SimulationApplicationVersionMismatchedEtag extends js.Object
+  
+  @js.native
   sealed trait SingleRecord extends js.Object
   
   @js.native
@@ -8515,6 +9646,9 @@ object awsDashSdkLibStrings {
   sealed trait Snappy extends js.Object
   
   @js.native
+  sealed trait Socket extends js.Object
+  
+  @js.native
   sealed trait SoftFailure extends js.Object
   
   @js.native
@@ -8522,6 +9656,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SourceProductId extends js.Object
+  
+  @js.native
+  sealed trait SourceUrl extends js.Object
   
   @js.native
   sealed trait SqlInjectionMatch extends js.Object
@@ -8537,6 +9674,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait StartInstance extends js.Object
+  
+  @js.native
+  sealed trait StartRelationalDatabase extends js.Object
   
   @js.native
   sealed trait StartStep extends js.Object
@@ -8596,6 +9736,9 @@ object awsDashSdkLibStrings {
   sealed trait StopInstance extends js.Object
   
   @js.native
+  sealed trait StopRelationalDatabase extends js.Object
+  
+  @js.native
   sealed trait StopStep extends js.Object
   
   @js.native
@@ -8618,6 +9761,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Subnet extends js.Object
+  
+  @js.native
+  sealed trait SubnetIpLimitExceeded extends js.Object
   
   @js.native
   sealed trait SucceedStateEntered extends js.Object
@@ -8656,6 +9802,9 @@ object awsDashSdkLibStrings {
   sealed trait T100 extends js.Object
   
   @js.native
+  sealed trait T42 extends js.Object
+  
+  @js.native
   sealed trait T50 extends js.Object
   
   @js.native
@@ -8683,6 +9832,9 @@ object awsDashSdkLibStrings {
   sealed trait TASK extends js.Object
   
   @js.native
+  sealed trait TASK_DEFINITION extends js.Object
+  
+  @js.native
   sealed trait TCP extends js.Object
   
   @js.native
@@ -8699,6 +9851,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait TENANCY extends js.Object
+  
+  @js.native
+  sealed trait TENSORFLOW extends js.Object
   
   @js.native
   sealed trait TERA_BITS extends js.Object
@@ -8734,16 +9889,37 @@ object awsDashSdkLibStrings {
   sealed trait TERMINATE_CLUSTER extends js.Object
   
   @js.native
+  sealed trait TERMINATE_FAILED extends js.Object
+  
+  @js.native
+  sealed trait TERMINATE_IN_PROGRESS extends js.Object
+  
+  @js.native
   sealed trait TERMINATE_JOB_FLOW extends js.Object
   
   @js.native
   sealed trait TERMINATING extends js.Object
   
   @js.native
+  sealed trait TERMINATION_WAIT extends js.Object
+  
+  @js.native
   sealed trait TERM_MATCH extends js.Object
   
   @js.native
   sealed trait TESTSPEC_OUTPUT extends js.Object
+  
+  @js.native
+  sealed trait TEST_NAME extends js.Object
+  
+  @js.native
+  sealed trait TEST_TREATMENT_PROCEDURE extends js.Object
+  
+  @js.native
+  sealed trait TEST_UNITS extends js.Object
+  
+  @js.native
+  sealed trait TEST_VALUE extends js.Object
   
   @js.native
   sealed trait THEME_NAME extends js.Object
@@ -8815,6 +9991,9 @@ object awsDashSdkLibStrings {
   sealed trait TITLE extends js.Object
   
   @js.native
+  sealed trait TLS extends js.Object
+  
+  @js.native
   sealed trait TLS_WEB_CLIENT_AUTHENTICATION extends js.Object
   
   @js.native
@@ -8837,6 +10016,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait TLSv1_2016 extends js.Object
+  
+  @js.native
+  sealed trait TMX extends js.Object
   
   @js.native
   sealed trait TOKEN extends js.Object
@@ -8863,16 +10045,28 @@ object awsDashSdkLibStrings {
   sealed trait TOTAL extends js.Object
   
   @js.native
+  sealed trait TOTAL_SIZE extends js.Object
+  
+  @js.native
   sealed trait TRACE extends js.Object
   
   @js.native
   sealed trait TRACK extends js.Object
   
   @js.native
+  sealed trait TRAINED extends js.Object
+  
+  @js.native
+  sealed trait TRAINING extends js.Object
+  
+  @js.native
   sealed trait TRANSACTIONAL extends js.Object
   
   @js.native
   sealed trait TRANSFERABLE extends js.Object
+  
+  @js.native
+  sealed trait TRANSFERRING extends js.Object
   
   @js.native
   sealed trait TRANSFER_IN_DOMAIN extends js.Object
@@ -8884,13 +10078,22 @@ object awsDashSdkLibStrings {
   sealed trait TRANSITIONING extends js.Object
   
   @js.native
+  sealed trait TREATMENT_NAME extends js.Object
+  
+  @js.native
   sealed trait TRIM_HORIZON extends js.Object
+  
+  @js.native
+  sealed trait TROJAN extends js.Object
   
   @js.native
   sealed trait TRUE extends js.Object
   
   @js.native
   sealed trait TRUE_PEAK extends js.Object
+  
+  @js.native
+  sealed trait TRUE_POSITIVE extends js.Object
   
   @js.native
   sealed trait TTML extends js.Object
@@ -8932,6 +10135,9 @@ object awsDashSdkLibStrings {
   sealed trait TargetDOTFailedHealthChecks extends js.Object
   
   @js.native
+  sealed trait TargetDOTHealthCheckDisabled extends js.Object
+  
+  @js.native
   sealed trait TargetDOTInvalidState extends js.Object
   
   @js.native
@@ -8950,7 +10156,25 @@ object awsDashSdkLibStrings {
   sealed trait TargetDOTTimeout extends js.Object
   
   @js.native
+  sealed trait TargetStatus extends js.Object
+  
+  @js.native
   sealed trait TargetTrackingScaling extends js.Object
+  
+  @js.native
+  sealed trait TaskFailed extends js.Object
+  
+  @js.native
+  sealed trait TaskFailedToStart extends js.Object
+  
+  @js.native
+  sealed trait TaskScheduled extends js.Object
+  
+  @js.native
+  sealed trait TaskStartFailed extends js.Object
+  
+  @js.native
+  sealed trait TaskStarted extends js.Object
   
   @js.native
   sealed trait TaskStateAborted extends js.Object
@@ -8960,6 +10184,21 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait TaskStateExited extends js.Object
+  
+  @js.native
+  sealed trait TaskSubmitFailed extends js.Object
+  
+  @js.native
+  sealed trait TaskSubmitted extends js.Object
+  
+  @js.native
+  sealed trait TaskSucceeded extends js.Object
+  
+  @js.native
+  sealed trait TaskTimedOut extends js.Object
+  
+  @js.native
+  sealed trait Team extends js.Object
   
   @js.native
   sealed trait TemplateDoesNotExist extends js.Object
@@ -9001,6 +10240,9 @@ object awsDashSdkLibStrings {
   sealed trait Three_Hours extends js.Object
   
   @js.native
+  sealed trait Throttled extends js.Object
+  
+  @js.native
   sealed trait TimeBasedCanary extends js.Object
   
   @js.native
@@ -9035,6 +10277,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait TrainingDataURI extends js.Object
+  
+  @js.native
+  sealed trait TrainingJob extends js.Object
+  
+  @js.native
+  sealed trait TransferLearning extends js.Object
   
   @js.native
   sealed trait TransientFailure extends js.Object
@@ -9103,6 +10351,9 @@ object awsDashSdkLibStrings {
   sealed trait UNAVAILABLE_RESTRICTED extends js.Object
   
   @js.native
+  sealed trait UNBLENDED_COST extends js.Object
+  
+  @js.native
   sealed trait UNCOMPRESSED extends js.Object
   
   @js.native
@@ -9134,6 +10385,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait UNINITIALIZED extends js.Object
+  
+  @js.native
+  sealed trait UNIT extends js.Object
   
   @js.native
   sealed trait UNKNOWN extends js.Object
@@ -9268,6 +10522,9 @@ object awsDashSdkLibStrings {
   sealed trait USAGE extends js.Object
   
   @js.native
+  sealed trait USAGE_QUANTITY extends js.Object
+  
+  @js.native
   sealed trait USAGE_TYPE extends js.Object
   
   @js.native
@@ -9290,6 +10547,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait USERPOOL extends js.Object
+  
+  @js.native
+  sealed trait USER_INITIATED extends js.Object
+  
+  @js.native
+  sealed trait USER_LOCKED_OUT extends js.Object
   
   @js.native
   sealed trait USER_NAME extends js.Object
@@ -9323,6 +10586,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait USE_CONFIGURED_OFFSET extends js.Object
+  
+  @js.native
+  sealed trait USE_DEFAULT_VALUE extends js.Object
   
   @js.native
   sealed trait USE_EVENT_START_DATE extends js.Object
@@ -9361,6 +10627,12 @@ object awsDashSdkLibStrings {
   sealed trait Unassigned extends js.Object
   
   @js.native
+  sealed trait Unauthorized extends js.Object
+  
+  @js.native
+  sealed trait Unavailable extends js.Object
+  
+  @js.native
   sealed trait Undefined extends js.Object
   
   @js.native
@@ -9379,7 +10651,13 @@ object awsDashSdkLibStrings {
   sealed trait UnknownError extends js.Object
   
   @js.native
+  sealed trait Unprocessable extends js.Object
+  
+  @js.native
   sealed trait Unprocessed extends js.Object
+  
+  @js.native
+  sealed trait Unregistered extends js.Object
   
   @js.native
   sealed trait UpdateCancelled extends js.Object
@@ -9398,6 +10676,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait UpdatePolicy extends js.Object
+  
+  @js.native
+  sealed trait UpdateRelationalDatabase extends js.Object
+  
+  @js.native
+  sealed trait UpdateRelationalDatabaseParameters extends js.Object
   
   @js.native
   sealed trait Updated extends js.Object
@@ -9419,6 +10703,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait User extends js.Object
+  
+  @js.native
+  sealed trait UserInitiated extends js.Object
   
   @js.native
   sealed trait UserPolicySizeQuota extends js.Object
@@ -9454,6 +10741,9 @@ object awsDashSdkLibStrings {
   sealed trait VALIDATION_ERROR extends js.Object
   
   @js.native
+  sealed trait VALIDATION_IN_PROGRESS extends js.Object
+  
+  @js.native
   sealed trait VALIDATION_TIMED_OUT extends js.Object
   
   @js.native
@@ -9476,6 +10766,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait VERBOSE extends js.Object
+  
+  @js.native
+  sealed trait VERIFYING extends js.Object
   
   @js.native
   sealed trait VERIFY_AUTHENTICITY extends js.Object
@@ -9515,6 +10808,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait VIRTUAL_MACHINE extends js.Object
+  
+  @js.native
+  sealed trait VIRUS extends js.Object
   
   @js.native
   sealed trait VISUALLY_IMPAIRED extends js.Object
@@ -9625,6 +10921,12 @@ object awsDashSdkLibStrings {
   sealed trait WAV extends js.Object
   
   @js.native
+  sealed trait WEB extends js.Object
+  
+  @js.native
+  sealed trait WEBEX extends js.Object
+  
+  @js.native
   sealed trait WEBKIT_LOG extends js.Object
   
   @js.native
@@ -9641,6 +10943,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait WEB_DELIVERY_NOT_ALLOWED extends js.Object
+  
+  @js.native
+  sealed trait WEB_HOOK extends js.Object
   
   @js.native
   sealed trait WEB_PERFORMANCE_PROFILE extends js.Object
@@ -9706,6 +11011,9 @@ object awsDashSdkLibStrings {
   sealed trait WORK_IN_PROGRESS extends js.Object
   
   @js.native
+  sealed trait WORM extends js.Object
+  
+  @js.native
   sealed trait WRITE extends js.Object
   
   @js.native
@@ -9754,6 +11062,18 @@ object awsDashSdkLibStrings {
   sealed trait `Windows (Amazon VPC)` extends js.Object
   
   @js.native
+  sealed trait `Windows with SQL Server` extends js.Object
+  
+  @js.native
+  sealed trait `Windows with SQL Server Enterprise` extends js.Object
+  
+  @js.native
+  sealed trait `Windows with SQL Server Standard` extends js.Object
+  
+  @js.native
+  sealed trait `Windows with SQL Server Web` extends js.Object
+  
+  @js.native
   sealed trait WithAWS extends js.Object
   
   @js.native
@@ -9767,6 +11087,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait WriteProvisionedThroughputExceeded extends js.Object
+  
+  @js.native
+  sealed trait X86_64 extends js.Object
   
   @js.native
   sealed trait XCTEST extends js.Object
@@ -9790,6 +11113,9 @@ object awsDashSdkLibStrings {
   sealed trait XDCAM extends js.Object
   
   @js.native
+  sealed trait XGBOOST extends js.Object
+  
+  @js.native
   sealed trait XssMatch extends js.Object
   
   @js.native
@@ -9802,6 +11128,9 @@ object awsDashSdkLibStrings {
   sealed trait YELLOW extends js.Object
   
   @js.native
+  sealed trait YES extends js.Object
+  
+  @js.native
   sealed trait Yellow extends js.Object
   
   @js.native
@@ -9811,7 +11140,16 @@ object awsDashSdkLibStrings {
   sealed trait ZIP extends js.Object
   
   @js.native
+  sealed trait ZIPFILE extends js.Object
+  
+  @js.native
   sealed trait ZLIB extends js.Object
+  
+  @js.native
+  sealed trait ZONAL_RESOURCE_INACCESSIBLE extends js.Object
+  
+  @js.native
+  sealed trait ZOOM extends js.Object
   
   @js.native
   sealed trait Zip extends js.Object
@@ -9833,6 +11171,18 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait add extends js.Object
+  
+  @js.native
+  sealed trait advertised extends js.Object
+  
+  @js.native
+  sealed trait aes128 extends js.Object
+  
+  @js.native
+  sealed trait aes192 extends js.Object
+  
+  @js.native
+  sealed trait aes256 extends js.Object
   
   @js.native
   sealed trait `alarm-cleared` extends js.Object
@@ -9913,6 +11263,9 @@ object awsDashSdkLibStrings {
   sealed trait archive extends js.Object
   
   @js.native
+  sealed trait arm64 extends js.Object
+  
+  @js.native
   sealed trait armv7l extends js.Object
   
   @js.native
@@ -9961,6 +11314,12 @@ object awsDashSdkLibStrings {
   sealed trait available extends js.Object
   
   @js.native
+  sealed trait aws extends js.Object
+  
+  @js.native
+  sealed trait `aws-cn` extends js.Object
+  
+  @js.native
   sealed trait `aws-exec-read` extends js.Object
   
   @js.native
@@ -9968,6 +11327,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `aws-managed` extends js.Object
+  
+  @js.native
+  sealed trait `aws-us-gov` extends js.Object
   
   @js.native
   sealed trait `aws:kms` extends js.Object
@@ -9980,6 +11342,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait awsvpc extends js.Object
+  
+  @js.native
+  sealed trait `backup-type` extends js.Object
   
   @js.native
   sealed trait batchPredictionAvailable extends js.Object
@@ -10138,6 +11503,9 @@ object awsDashSdkLibStrings {
   sealed trait changeSetCreateComplete extends js.Object
   
   @js.native
+  sealed trait chinBottom extends js.Object
+  
+  @js.native
   sealed trait citrix extends js.Object
   
   @js.native
@@ -10166,6 +11534,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `cluster-snapshot` extends js.Object
+  
+  @js.native
+  sealed trait clusterActive extends js.Object
   
   @js.native
   sealed trait clusterAvailable extends js.Object
@@ -10220,6 +11591,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `container-instance` extends js.Object
+  
+  @js.native
+  sealed trait containerInstanceLongArnFormat extends js.Object
   
   @js.native
   sealed trait conversionTaskCancelled extends js.Object
@@ -10396,6 +11770,9 @@ object awsDashSdkLibStrings {
   sealed trait `dedicated-host` extends js.Object
   
   @js.native
+  sealed trait deeplens extends js.Object
+  
+  @js.native
   sealed trait default extends js.Object
   
   @js.native
@@ -10438,7 +11815,13 @@ object awsDashSdkLibStrings {
   sealed trait deploymentSuccessful extends js.Object
   
   @js.native
+  sealed trait deprovisioned extends js.Object
+  
+  @js.native
   sealed trait deregistered extends js.Object
+  
+  @js.native
+  sealed trait desc extends js.Object
   
   @js.native
   sealed trait descending extends js.Object
@@ -10457,6 +11840,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `dhcp-options` extends js.Object
+  
+  @js.native
+  sealed trait disable extends js.Object
   
   @js.native
   sealed trait disableApiTermination extends js.Object
@@ -10576,6 +11962,9 @@ object awsDashSdkLibStrings {
   sealed trait el extends js.Object
   
   @js.native
+  sealed trait `elastic-ip` extends js.Object
+  
+  @js.native
   sealed trait elasticmapreduce extends js.Object
   
   @js.native
@@ -10603,13 +11992,13 @@ object awsDashSdkLibStrings {
   sealed trait `en-IN` extends js.Object
   
   @js.native
-  sealed trait `en-UK` extends js.Object
-  
-  @js.native
   sealed trait `en-US` extends js.Object
   
   @js.native
   sealed trait enaSupport extends js.Object
+  
+  @js.native
+  sealed trait enable extends js.Object
   
   @js.native
   sealed trait enableDnsHostnames extends js.Object
@@ -10640,6 +12029,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `es-ES` extends js.Object
+  
+  @js.native
+  sealed trait `es-MX` extends js.Object
   
   @js.native
   sealed trait `es-US` extends js.Object
@@ -10708,10 +12100,19 @@ object awsDashSdkLibStrings {
   sealed trait failed extends js.Object
   
   @js.native
+  sealed trait `failed-deprovision` extends js.Object
+  
+  @js.native
+  sealed trait `failed-provision` extends js.Object
+  
+  @js.native
   sealed trait failing extends js.Object
   
   @js.native
   sealed trait fi extends js.Object
+  
+  @js.native
+  sealed trait `file-system-id` extends js.Object
   
   @js.native
   sealed trait firstUsedTime extends js.Object
@@ -10721,6 +12122,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait flac extends js.Object
+  
+  @js.native
+  sealed trait fleet extends js.Object
   
   @js.native
   sealed trait `fleet-change` extends js.Object
@@ -10757,6 +12161,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait forward extends js.Object
+  
+  @js.native
+  sealed trait `fpga-image` extends js.Object
   
   @js.native
   sealed trait fr extends js.Object
@@ -11050,6 +12457,9 @@ object awsDashSdkLibStrings {
   sealed trait instanceType extends js.Object
   
   @js.native
+  sealed trait instant extends js.Object
+  
+  @js.native
   sealed trait `insufficient-data` extends js.Object
   
   @js.native
@@ -11128,6 +12538,12 @@ object awsDashSdkLibStrings {
   sealed trait java8 extends js.Object
   
   @js.native
+  sealed trait jetson_tx1 extends js.Object
+  
+  @js.native
+  sealed trait jetson_tx2 extends js.Object
+  
+  @js.native
   sealed trait jobComplete extends js.Object
   
   @js.native
@@ -11152,6 +12568,9 @@ object awsDashSdkLibStrings {
   sealed trait `ko-KR` extends js.Object
   
   @js.native
+  sealed trait lambda extends js.Object
+  
+  @js.native
   sealed trait lastModifiedDate extends js.Object
   
   @js.native
@@ -11162,6 +12581,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait latlon extends js.Object
+  
+  @js.native
+  sealed trait `launch-template` extends js.Object
   
   @js.native
   sealed trait launchPermission extends js.Object
@@ -11216,6 +12638,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait light extends js.Object
+  
+  @js.native
+  sealed trait limited extends js.Object
   
   @js.native
   sealed trait linkTag extends js.Object
@@ -11353,6 +12778,12 @@ object awsDashSdkLibStrings {
   sealed trait microsoft extends js.Object
   
   @js.native
+  sealed trait midJawlineLeft extends js.Object
+  
+  @js.native
+  sealed trait midJawlineRight extends js.Object
+  
+  @js.native
   sealed trait minimal extends js.Object
   
   @js.native
@@ -11390,6 +12821,30 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait mlDOTc5DOTxlarge extends js.Object
+  
+  @js.native
+  sealed trait mlDOTc5dDOT18xlarge extends js.Object
+  
+  @js.native
+  sealed trait mlDOTc5dDOT2xlarge extends js.Object
+  
+  @js.native
+  sealed trait mlDOTc5dDOT4xlarge extends js.Object
+  
+  @js.native
+  sealed trait mlDOTc5dDOT9xlarge extends js.Object
+  
+  @js.native
+  sealed trait mlDOTc5dDOTxlarge extends js.Object
+  
+  @js.native
+  sealed trait mlDOTeia1DOTlarge extends js.Object
+  
+  @js.native
+  sealed trait mlDOTeia1DOTmedium extends js.Object
+  
+  @js.native
+  sealed trait mlDOTeia1DOTxlarge extends js.Object
   
   @js.native
   sealed trait mlDOTm4DOT10xlarge extends js.Object
@@ -11455,6 +12910,36 @@ object awsDashSdkLibStrings {
   sealed trait mlDOTt2DOTxlarge extends js.Object
   
   @js.native
+  sealed trait mlDOTt3DOT2xlarge extends js.Object
+  
+  @js.native
+  sealed trait mlDOTt3DOTlarge extends js.Object
+  
+  @js.native
+  sealed trait mlDOTt3DOTmedium extends js.Object
+  
+  @js.native
+  sealed trait mlDOTt3DOTxlarge extends js.Object
+  
+  @js.native
+  sealed trait ml_c4 extends js.Object
+  
+  @js.native
+  sealed trait ml_c5 extends js.Object
+  
+  @js.native
+  sealed trait ml_m4 extends js.Object
+  
+  @js.native
+  sealed trait ml_m5 extends js.Object
+  
+  @js.native
+  sealed trait ml_p2 extends js.Object
+  
+  @js.native
+  sealed trait ml_p3 extends js.Object
+  
+  @js.native
   sealed trait modifying extends js.Object
   
   @js.native
@@ -11500,6 +12985,9 @@ object awsDashSdkLibStrings {
   sealed trait mul extends js.Object
   
   @js.native
+  sealed trait multinode extends js.Object
+  
+  @js.native
   sealed trait mysql extends js.Object
   
   @js.native
@@ -11510,6 +12998,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait natGatewayAvailable extends js.Object
+  
+  @js.native
+  sealed trait natgateway extends js.Object
   
   @js.native
   sealed trait `nb-NO` extends js.Object
@@ -11713,13 +13204,22 @@ object awsDashSdkLibStrings {
   sealed trait `pending-acceptance` extends js.Object
   
   @js.native
+  sealed trait `pending-deprovision` extends js.Object
+  
+  @js.native
   sealed trait `pending-fulfillment` extends js.Object
+  
+  @js.native
+  sealed trait `pending-provision` extends js.Object
   
   @js.native
   sealed trait `pending-reboot` extends js.Object
   
   @js.native
   sealed trait `pending-termination` extends js.Object
+  
+  @js.native
+  sealed trait pendingAcceptance extends js.Object
   
   @js.native
   sealed trait pending_fulfillment extends js.Object
@@ -11758,6 +13258,9 @@ object awsDashSdkLibStrings {
   sealed trait `pl-PL` extends js.Object
   
   @js.native
+  sealed trait `pre-warmed` extends js.Object
+  
+  @js.native
   sealed trait preferred_username extends js.Object
   
   @js.native
@@ -11771,6 +13274,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait productCodes extends js.Object
+  
+  @js.native
+  sealed trait propagated extends js.Object
+  
+  @js.native
+  sealed trait provided extends js.Object
   
   @js.native
   sealed trait provisioned extends js.Object
@@ -11801,6 +13310,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait python3DOT6 extends js.Object
+  
+  @js.native
+  sealed trait python3DOT7 extends js.Object
   
   @js.native
   sealed trait r3DOT2xlarge extends js.Object
@@ -11881,6 +13393,9 @@ object awsDashSdkLibStrings {
   sealed trait random extends js.Object
   
   @js.native
+  sealed trait rasp3b extends js.Object
+  
+  @js.native
   sealed trait raspbian extends js.Object
   
   @js.native
@@ -11926,6 +13441,9 @@ object awsDashSdkLibStrings {
   sealed trait rejected extends js.Object
   
   @js.native
+  sealed trait rejecting extends js.Object
+  
+  @js.native
   sealed trait relayed extends js.Object
   
   @js.native
@@ -11960,6 +13478,24 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait replicationGroupDeleted extends js.Object
+  
+  @js.native
+  sealed trait replicationInstanceAvailable extends js.Object
+  
+  @js.native
+  sealed trait replicationInstanceDeleted extends js.Object
+  
+  @js.native
+  sealed trait replicationTaskDeleted extends js.Object
+  
+  @js.native
+  sealed trait replicationTaskReady extends js.Object
+  
+  @js.native
+  sealed trait replicationTaskRunning extends js.Object
+  
+  @js.native
+  sealed trait replicationTaskStopped extends js.Object
   
   @js.native
   sealed trait repositoryName extends js.Object
@@ -12052,6 +13588,9 @@ object awsDashSdkLibStrings {
   sealed trait rollback extends js.Object
   
   @js.native
+  sealed trait rollingBack extends js.Object
+  
+  @js.native
   sealed trait rootDeviceName extends js.Object
   
   @js.native
@@ -12059,6 +13598,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait rss extends js.Object
+  
+  @js.native
+  sealed trait rtp extends js.Object
+  
+  @js.native
+  sealed trait `rtp-fec` extends js.Object
   
   @js.native
   sealed trait rtprio extends js.Object
@@ -12071,6 +13616,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `ru-RU` extends js.Object
+  
+  @js.native
+  sealed trait ruby2DOT5 extends js.Object
   
   @js.native
   sealed trait running extends js.Object
@@ -12104,6 +13652,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `s3:ObjectRemoved:DeleteMarkerCreated` extends js.Object
+  
+  @js.native
+  sealed trait `s3:ObjectRestore:Completed` extends js.Object
+  
+  @js.native
+  sealed trait `s3:ObjectRestore:Post` extends js.Object
   
   @js.native
   sealed trait `s3:ReducedRedundancyLostObject` extends js.Object
@@ -12167,6 +13721,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `service-error` extends js.Object
+  
+  @js.native
+  sealed trait serviceLongArnFormat extends js.Object
   
   @js.native
   sealed trait servicesInactive extends js.Object
@@ -12275,6 +13832,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait static extends js.Object
+  
+  @js.native
+  sealed trait `static-key` extends js.Object
   
   @js.native
   sealed trait stepComplete extends js.Object
@@ -12397,7 +13957,13 @@ object awsDashSdkLibStrings {
   sealed trait targetInService extends js.Object
   
   @js.native
+  sealed trait targeted extends js.Object
+  
+  @js.native
   sealed trait task extends js.Object
+  
+  @js.native
+  sealed trait taskLongArnFormat extends js.Object
   
   @js.native
   sealed trait tasksRunning extends js.Object
@@ -12419,6 +13985,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait test extends js.Object
+  
+  @js.native
+  sealed trait testConnectionSucceeds extends js.Object
   
   @js.native
   sealed trait test_customer_support_contacts_data extends js.Object
@@ -12463,6 +14032,15 @@ object awsDashSdkLibStrings {
   sealed trait transient extends js.Object
   
   @js.native
+  sealed trait `transit-gateway` extends js.Object
+  
+  @js.native
+  sealed trait `transit-gateway-attachment` extends js.Object
+  
+  @js.native
+  sealed trait `transit-gateway-route-table` extends js.Object
+  
+  @js.native
   sealed trait ubuntu extends js.Object
   
   @js.native
@@ -12487,6 +14065,9 @@ object awsDashSdkLibStrings {
   sealed trait unknown extends js.Object
   
   @js.native
+  sealed trait unlimited extends js.Object
+  
+  @js.native
   sealed trait unresponsive extends js.Object
   
   @js.native
@@ -12509,6 +14090,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait updating extends js.Object
+  
+  @js.native
+  sealed trait upperJawlineLeft extends js.Object
+  
+  @js.native
+  sealed trait upperJawlineRight extends js.Object
   
   @js.native
   sealed trait url extends js.Object
@@ -12548,6 +14135,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait v4 extends js.Object
+  
+  @js.native
+  sealed trait vCPU extends js.Object
   
   @js.native
   sealed trait validate extends js.Object
@@ -12601,6 +14191,9 @@ object awsDashSdkLibStrings {
   sealed trait vpc extends js.Object
   
   @js.native
+  sealed trait `vpc-peering-connection` extends js.Object
+  
+  @js.native
   sealed trait vpcAvailable extends js.Object
   
   @js.native
@@ -12611,6 +14204,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait vpcPeeringConnectionExists extends js.Object
+  
+  @js.native
+  sealed trait vpn extends js.Object
   
   @js.native
   sealed trait `vpn-connection` extends js.Object
@@ -12652,6 +14248,9 @@ object awsDashSdkLibStrings {
   sealed trait xen extends js.Object
   
   @js.native
+  sealed trait yes extends js.Object
+  
+  @js.native
   sealed trait `zh-Hans` extends js.Object
   
   @js.native
@@ -12665,6 +14264,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait zip extends js.Object
+  
+  @js.native
+  sealed trait `zixi-push` extends js.Object
   
   def `0DOT5`: `0DOT5` = "0.5".asInstanceOf[`0DOT5`]
   def `118`: `118` = "118".asInstanceOf[`118`]
@@ -12827,12 +14429,29 @@ object awsDashSdkLibStrings {
   def `2017-11-28`: `2017-11-28` = "2017-11-28".asInstanceOf[`2017-11-28`]
   def `2017-12-19`: `2017-12-19` = "2017-12-19".asInstanceOf[`2017-12-19`]
   def `2018-01-01`: `2018-01-01` = "2018-01-01".asInstanceOf[`2018-01-01`]
+  def `2018-01-04`: `2018-01-04` = "2018-01-04".asInstanceOf[`2018-01-04`]
   def `2018-01-06`: `2018-01-06` = "2018-01-06".asInstanceOf[`2018-01-06`]
   def `2018-01-12`: `2018-01-12` = "2018-01-12".asInstanceOf[`2018-01-12`]
   def `2018-02-27`: `2018-02-27` = "2018-02-27".asInstanceOf[`2018-02-27`]
+  def `2018-03-01`: `2018-03-01` = "2018-03-01".asInstanceOf[`2018-03-01`]
+  def `2018-04-01`: `2018-04-01` = "2018-04-01".asInstanceOf[`2018-04-01`]
   def `2018-04-23`: `2018-04-23` = "2018-04-23".asInstanceOf[`2018-04-23`]
+  def `2018-05-01`: `2018-05-01` = "2018-05-01".asInstanceOf[`2018-05-01`]
   def `2018-05-14`: `2018-05-14` = "2018-05-14".asInstanceOf[`2018-05-14`]
+  def `2018-05-23`: `2018-05-23` = "2018-05-23".asInstanceOf[`2018-05-23`]
   def `2018-06-18`: `2018-06-18` = "2018-06-18".asInstanceOf[`2018-06-18`]
+  def `2018-06-29`: `2018-06-29` = "2018-06-29".asInstanceOf[`2018-06-29`]
+  def `2018-07-26`: `2018-07-26` = "2018-07-26".asInstanceOf[`2018-07-26`]
+  def `2018-08-01`: `2018-08-01` = "2018-08-01".asInstanceOf[`2018-08-01`]
+  def `2018-08-08`: `2018-08-08` = "2018-08-08".asInstanceOf[`2018-08-08`]
+  def `2018-08-20`: `2018-08-20` = "2018-08-20".asInstanceOf[`2018-08-20`]
+  def `2018-09-05`: `2018-09-05` = "2018-09-05".asInstanceOf[`2018-09-05`]
+  def `2018-10-01`: `2018-10-01` = "2018-10-01".asInstanceOf[`2018-10-01`]
+  def `2018-10-26`: `2018-10-26` = "2018-10-26".asInstanceOf[`2018-10-26`]
+  def `2018-10-30`: `2018-10-30` = "2018-10-30".asInstanceOf[`2018-10-30`]
+  def `2018-11-05`: `2018-11-05` = "2018-11-05".asInstanceOf[`2018-11-05`]
+  def `2018-11-09`: `2018-11-09` = "2018-11-09".asInstanceOf[`2018-11-09`]
+  def `2018-11-14`: `2018-11-14` = "2018-11-14".asInstanceOf[`2018-11-14`]
   def `237`: `237` = "237".asInstanceOf[`237`]
   def `28DOT4`: `28DOT4` = "28.4".asInstanceOf[`28DOT4`]
   def `58DOT2`: `58DOT2` = "58.2".asInstanceOf[`58DOT2`]
@@ -12856,6 +14475,7 @@ object awsDashSdkLibStrings {
   def ACCOUNT_ID: ACCOUNT_ID = "ACCOUNT_ID".asInstanceOf[ACCOUNT_ID]
   def ACCOUNT_LIMIT_EXCEEDED: ACCOUNT_LIMIT_EXCEEDED = "ACCOUNT_LIMIT_EXCEEDED".asInstanceOf[ACCOUNT_LIMIT_EXCEEDED]
   def ACCOUNT_SETTINGS: ACCOUNT_SETTINGS = "ACCOUNT_SETTINGS".asInstanceOf[ACCOUNT_SETTINGS]
+  def ACTION_NEEDED: ACTION_NEEDED = "ACTION_NEEDED".asInstanceOf[ACTION_NEEDED]
   def ACTIVATED: ACTIVATED = "ACTIVATED".asInstanceOf[ACTIVATED]
   def ACTIVATING: ACTIVATING = "ACTIVATING".asInstanceOf[ACTIVATING]
   def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
@@ -12868,12 +14488,14 @@ object awsDashSdkLibStrings {
   def ACTIVITY_TYPE_DEPRECATED: ACTIVITY_TYPE_DEPRECATED = "ACTIVITY_TYPE_DEPRECATED".asInstanceOf[ACTIVITY_TYPE_DEPRECATED]
   def ACTIVITY_TYPE_DOES_NOT_EXIST: ACTIVITY_TYPE_DOES_NOT_EXIST = "ACTIVITY_TYPE_DOES_NOT_EXIST".asInstanceOf[ACTIVITY_TYPE_DOES_NOT_EXIST]
   def ACTUAL: ACTUAL = "ACTUAL".asInstanceOf[ACTUAL]
+  def ACUITY: ACUITY = "ACUITY".asInstanceOf[ACUITY]
   def ACU_1: ACU_1 = "ACU_1".asInstanceOf[ACU_1]
   def ACU_2: ACU_2 = "ACU_2".asInstanceOf[ACU_2]
   def ADAPTIVE: ADAPTIVE = "ADAPTIVE".asInstanceOf[ADAPTIVE]
   def ADConnector: ADConnector = "ADConnector".asInstanceOf[ADConnector]
   def ADD: ADD = "ADD".asInstanceOf[ADD]
   def ADDITIONAL_VERIFICATION_REQUIRED: ADDITIONAL_VERIFICATION_REQUIRED = "ADDITIONAL_VERIFICATION_REQUIRED".asInstanceOf[ADDITIONAL_VERIFICATION_REQUIRED]
+  def ADDRESS: ADDRESS = "ADDRESS".asInstanceOf[ADDRESS]
   def ADD_DNSSEC: ADD_DNSSEC = "ADD_DNSSEC".asInstanceOf[ADD_DNSSEC]
   def ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE: ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE = "ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE".asInstanceOf[ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE]
   def ADJ: ADJ = "ADJ".asInstanceOf[ADJ]
@@ -12886,12 +14508,16 @@ object awsDashSdkLibStrings {
   def ADS: ADS = "ADS".asInstanceOf[ADS]
   def ADV: ADV = "ADV".asInstanceOf[ADV]
   def ADVANCED_AUDIO: ADVANCED_AUDIO = "ADVANCED_AUDIO".asInstanceOf[ADVANCED_AUDIO]
+  def ADWARE: ADWARE = "ADWARE".asInstanceOf[ADWARE]
   def AD_CONNECTOR: AD_CONNECTOR = "AD_CONNECTOR".asInstanceOf[AD_CONNECTOR]
   def AD_RECEIVER_MIX: AD_RECEIVER_MIX = "AD_RECEIVER_MIX".asInstanceOf[AD_RECEIVER_MIX]
   def AES128: AES128 = "AES128".asInstanceOf[AES128]
   def AES256: AES256 = "AES256".asInstanceOf[AES256]
   def AES_128: AES_128 = "AES_128".asInstanceOf[AES_128]
   def AES_256: AES_256 = "AES_256".asInstanceOf[AES_256]
+  def AES_CBC: AES_CBC = "AES_CBC".asInstanceOf[AES_CBC]
+  def AES_CTR: AES_CTR = "AES_CTR".asInstanceOf[AES_CTR]
+  def AES_GCM: AES_GCM = "AES_GCM".asInstanceOf[AES_GCM]
   def AFD_0000: AFD_0000 = "AFD_0000".asInstanceOf[AFD_0000]
   def AFD_0010: AFD_0010 = "AFD_0010".asInstanceOf[AFD_0010]
   def AFD_0011: AFD_0011 = "AFD_0011".asInstanceOf[AFD_0011]
@@ -12907,6 +14533,7 @@ object awsDashSdkLibStrings {
   def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
   def AFTER_CONTACT_WORK_TIME: AFTER_CONTACT_WORK_TIME = "AFTER_CONTACT_WORK_TIME".asInstanceOf[AFTER_CONTACT_WORK_TIME]
   def AFTER_SEQUENCE_NUMBER: AFTER_SEQUENCE_NUMBER = "AFTER_SEQUENCE_NUMBER".asInstanceOf[AFTER_SEQUENCE_NUMBER]
+  def AGE: AGE = "AGE".asInstanceOf[AGE]
   def AGENT: AGENT = "AGENT".asInstanceOf[AGENT]
   def AGENTS_AFTER_CONTACT_WORK: AGENTS_AFTER_CONTACT_WORK = "AGENTS_AFTER_CONTACT_WORK".asInstanceOf[AGENTS_AFTER_CONTACT_WORK]
   def AGENTS_AVAILABLE: AGENTS_AVAILABLE = "AGENTS_AVAILABLE".asInstanceOf[AGENTS_AVAILABLE]
@@ -12921,6 +14548,7 @@ object awsDashSdkLibStrings {
   def ALARM: ALARM = "ALARM".asInstanceOf[ALARM]
   def ALARM_ACTIVE: ALARM_ACTIVE = "ALARM_ACTIVE".asInstanceOf[ALARM_ACTIVE]
   def ALBRequestCountPerTarget: ALBRequestCountPerTarget = "ALBRequestCountPerTarget".asInstanceOf[ALBRequestCountPerTarget]
+  def ALBTargetGroupRequestCount: ALBTargetGroupRequestCount = "ALBTargetGroupRequestCount".asInstanceOf[ALBTargetGroupRequestCount]
   def ALEXA: ALEXA = "ALEXA".asInstanceOf[ALEXA]
   def ALEXA_SKILLS_KIT: ALEXA_SKILLS_KIT = "ALEXA_SKILLS_KIT".asInstanceOf[ALEXA_SKILLS_KIT]
   def ALIEN_VAULT: ALIEN_VAULT = "ALIEN_VAULT".asInstanceOf[ALIEN_VAULT]
@@ -12947,6 +14575,8 @@ object awsDashSdkLibStrings {
   def AMAZON_ISSUED: AMAZON_ISSUED = "AMAZON_ISSUED".asInstanceOf[AMAZON_ISSUED]
   def AMAZON_LINUX: AMAZON_LINUX = "AMAZON_LINUX".asInstanceOf[AMAZON_LINUX]
   def AMAZON_LINUX_2: AMAZON_LINUX_2 = "AMAZON_LINUX_2".asInstanceOf[AMAZON_LINUX_2]
+  def AMORTIZED_COST: AMORTIZED_COST = "AMORTIZED_COST".asInstanceOf[AMORTIZED_COST]
+  def ANATOMY: ANATOMY = "ANATOMY".asInstanceOf[ANATOMY]
   def ANCILLARY: ANCILLARY = "ANCILLARY".asInstanceOf[ANCILLARY]
   def AND: AND = "AND".asInstanceOf[AND]
   def ANDROID: ANDROID = "ANDROID".asInstanceOf[ANDROID]
@@ -12954,10 +14584,12 @@ object awsDashSdkLibStrings {
   def ANGRY: ANGRY = "ANGRY".asInstanceOf[ANGRY]
   def ANNUALLY: ANNUALLY = "ANNUALLY".asInstanceOf[ANNUALLY]
   def ANONYMOUS: ANONYMOUS = "ANONYMOUS".asInstanceOf[ANONYMOUS]
+  def ANSWERED: ANSWERED = "ANSWERED".asInstanceOf[ANSWERED]
   def ANY: ANY = "ANY".asInstanceOf[ANY]
   def API: API = "API".asInstanceOf[API]
   def API_CONFIGURATION_ERROR: API_CONFIGURATION_ERROR = "API_CONFIGURATION_ERROR".asInstanceOf[API_CONFIGURATION_ERROR]
   def API_CONTACTS_HANDLED: API_CONTACTS_HANDLED = "API_CONTACTS_HANDLED".asInstanceOf[API_CONTACTS_HANDLED]
+  def API_GATEWAY: API_GATEWAY = "API_GATEWAY".asInstanceOf[API_GATEWAY]
   def API_KEY: API_KEY = "API_KEY".asInstanceOf[API_KEY]
   def APNS: APNS = "APNS".asInstanceOf[APNS]
   def APNS_SANDBOX: APNS_SANDBOX = "APNS_SANDBOX".asInstanceOf[APNS_SANDBOX]
@@ -12993,6 +14625,7 @@ object awsDashSdkLibStrings {
   def APPLE_PRORES_422_PROXY: APPLE_PRORES_422_PROXY = "APPLE_PRORES_422_PROXY".asInstanceOf[APPLE_PRORES_422_PROXY]
   def APPLICATION: APPLICATION = "APPLICATION".asInstanceOf[APPLICATION]
   def APPLICATION_CRASH_REPORT: APPLICATION_CRASH_REPORT = "APPLICATION_CRASH_REPORT".asInstanceOf[APPLICATION_CRASH_REPORT]
+  def APPLICATION_LOAD_BALANCER: APPLICATION_LOAD_BALANCER = "APPLICATION_LOAD_BALANCER".asInstanceOf[APPLICATION_LOAD_BALANCER]
   def APPLICATION_MISSING: APPLICATION_MISSING = "APPLICATION_MISSING".asInstanceOf[APPLICATION_MISSING]
   def APPROVED: APPROVED = "APPROVED".asInstanceOf[APPROVED]
   def APPROVE_ALL_FEATURES: APPROVE_ALL_FEATURES = "APPROVE_ALL_FEATURES".asInstanceOf[APPROVE_ALL_FEATURES]
@@ -13000,6 +14633,8 @@ object awsDashSdkLibStrings {
   def ARCHIVED: ARCHIVED = "ARCHIVED".asInstanceOf[ARCHIVED]
   def ARCHIVE_ALLOWED: ARCHIVE_ALLOWED = "ARCHIVE_ALLOWED".asInstanceOf[ARCHIVE_ALLOWED]
   def ARCHIVE_NOT_ALLOWED: ARCHIVE_NOT_ALLOWED = "ARCHIVE_NOT_ALLOWED".asInstanceOf[ARCHIVE_NOT_ALLOWED]
+  def ARM64: ARM64 = "ARM64".asInstanceOf[ARM64]
+  def ARMHF: ARMHF = "ARMHF".asInstanceOf[ARMHF]
   def ARN: ARN = "ARN".asInstanceOf[ARN]
   def ARRESTED: ARRESTED = "ARRESTED".asInstanceOf[ARRESTED]
   def ASC: ASC = "ASC".asInstanceOf[ASC]
@@ -13007,10 +14642,16 @@ object awsDashSdkLibStrings {
   def ASGAverageCPUUtilization: ASGAverageCPUUtilization = "ASGAverageCPUUtilization".asInstanceOf[ASGAverageCPUUtilization]
   def ASGAverageNetworkIn: ASGAverageNetworkIn = "ASGAverageNetworkIn".asInstanceOf[ASGAverageNetworkIn]
   def ASGAverageNetworkOut: ASGAverageNetworkOut = "ASGAverageNetworkOut".asInstanceOf[ASGAverageNetworkOut]
+  def ASGTotalCPUUtilization: ASGTotalCPUUtilization = "ASGTotalCPUUtilization".asInstanceOf[ASGTotalCPUUtilization]
+  def ASGTotalNetworkIn: ASGTotalNetworkIn = "ASGTotalNetworkIn".asInstanceOf[ASGTotalNetworkIn]
+  def ASGTotalNetworkOut: ASGTotalNetworkOut = "ASGTotalNetworkOut".asInstanceOf[ASGTotalNetworkOut]
   def ASNEEDED: ASNEEDED = "ASNEEDED".asInstanceOf[ASNEEDED]
   def ASSESSMENT_RUN_COMPLETED: ASSESSMENT_RUN_COMPLETED = "ASSESSMENT_RUN_COMPLETED".asInstanceOf[ASSESSMENT_RUN_COMPLETED]
   def ASSESSMENT_RUN_STARTED: ASSESSMENT_RUN_STARTED = "ASSESSMENT_RUN_STARTED".asInstanceOf[ASSESSMENT_RUN_STARTED]
   def ASSESSMENT_RUN_STATE_CHANGED: ASSESSMENT_RUN_STATE_CHANGED = "ASSESSMENT_RUN_STATE_CHANGED".asInstanceOf[ASSESSMENT_RUN_STATE_CHANGED]
+  def ASSIGNED: ASSIGNED = "ASSIGNED".asInstanceOf[ASSIGNED]
+  def ASSOCIATED: ASSOCIATED = "ASSOCIATED".asInstanceOf[ASSOCIATED]
+  def ASSOCIATING: ASSOCIATING = "ASSOCIATING".asInstanceOf[ASSOCIATING]
   def ASSOCIATION: ASSOCIATION = "ASSOCIATION".asInstanceOf[ASSOCIATION]
   def ASSUME_ROLE_FAILED: ASSUME_ROLE_FAILED = "ASSUME_ROLE_FAILED".asInstanceOf[ASSUME_ROLE_FAILED]
   def ATSC: ATSC = "ATSC".asInstanceOf[ATSC]
@@ -13023,6 +14664,7 @@ object awsDashSdkLibStrings {
   def AUDIO_NORMALIZATION: AUDIO_NORMALIZATION = "AUDIO_NORMALIZATION".asInstanceOf[AUDIO_NORMALIZATION]
   def AUDIO_ONLY_VARIANT_STREAM: AUDIO_ONLY_VARIANT_STREAM = "AUDIO_ONLY_VARIANT_STREAM".asInstanceOf[AUDIO_ONLY_VARIANT_STREAM]
   def AUDIT: AUDIT = "AUDIT".asInstanceOf[AUDIT]
+  def AUTHOR: AUTHOR = "AUTHOR".asInstanceOf[AUTHOR]
   def AUTHORIZER: AUTHORIZER = "AUTHORIZER".asInstanceOf[AUTHORIZER]
   def AUTHORIZER_CONFIGURATION_ERROR: AUTHORIZER_CONFIGURATION_ERROR = "AUTHORIZER_CONFIGURATION_ERROR".asInstanceOf[AUTHORIZER_CONFIGURATION_ERROR]
   def AUTHORIZER_FAILURE: AUTHORIZER_FAILURE = "AUTHORIZER_FAILURE".asInstanceOf[AUTHORIZER_FAILURE]
@@ -13031,6 +14673,8 @@ object awsDashSdkLibStrings {
   def AUTOMATIC: AUTOMATIC = "AUTOMATIC".asInstanceOf[AUTOMATIC]
   def AUTOMATION: AUTOMATION = "AUTOMATION".asInstanceOf[AUTOMATION]
   def AUTOMATION_OUTPUT: AUTOMATION_OUTPUT = "AUTOMATION_OUTPUT".asInstanceOf[AUTOMATION_OUTPUT]
+  def AUTOSCALING_VALIDATION_ERROR: AUTOSCALING_VALIDATION_ERROR = "AUTOSCALING_VALIDATION_ERROR".asInstanceOf[AUTOSCALING_VALIDATION_ERROR]
+  def AUTO_RECOVERING: AUTO_RECOVERING = "AUTO_RECOVERING".asInstanceOf[AUTO_RECOVERING]
   def AUTO_RENEW: AUTO_RENEW = "AUTO_RENEW".asInstanceOf[AUTO_RENEW]
   def AUTO_SCALING: AUTO_SCALING = "AUTO_SCALING".asInstanceOf[AUTO_SCALING]
   def AUTO_SCALING_CONFIGURATION: AUTO_SCALING_CONFIGURATION = "AUTO_SCALING_CONFIGURATION".asInstanceOf[AUTO_SCALING_CONFIGURATION]
@@ -13052,15 +14696,18 @@ object awsDashSdkLibStrings {
   def AWSIoT: AWSIoT = "AWSIoT".asInstanceOf[AWSIoT]
   def AWSManagedPolicy: AWSManagedPolicy = "AWSManagedPolicy".asInstanceOf[AWSManagedPolicy]
   def AWSWAF: AWSWAF = "AWSWAF".asInstanceOf[AWSWAF]
+  def AWS_CLOUDHSM: AWS_CLOUDHSM = "AWS_CLOUDHSM".asInstanceOf[AWS_CLOUDHSM]
   def AWS_IAM: AWS_IAM = "AWS_IAM".asInstanceOf[AWS_IAM]
   def AWS_KMS: AWS_KMS = "AWS_KMS".asInstanceOf[AWS_KMS]
   def AWS_LAMBDA: AWS_LAMBDA = "AWS_LAMBDA".asInstanceOf[AWS_LAMBDA]
+  def AWS_ORGANIZATIONS: AWS_ORGANIZATIONS = "AWS_ORGANIZATIONS".asInstanceOf[AWS_ORGANIZATIONS]
   def AWS_PROXY: AWS_PROXY = "AWS_PROXY".asInstanceOf[AWS_PROXY]
   def AWS_REGION: AWS_REGION = "AWS_REGION".asInstanceOf[AWS_REGION]
   def AWS_SERVICECATALOG: AWS_SERVICECATALOG = "AWS_SERVICECATALOG".asInstanceOf[AWS_SERVICECATALOG]
   def AZ: AZ = "AZ".asInstanceOf[AZ]
   def A_A_COMPROMISE: A_A_COMPROMISE = "A_A_COMPROMISE".asInstanceOf[A_A_COMPROMISE]
   def Accept: Accept = "Accept".asInstanceOf[Accept]
+  def Accepted: Accepted = "Accepted".asInstanceOf[Accepted]
   def AccessDenied: AccessDenied = "AccessDenied".asInstanceOf[AccessDenied]
   def AccessDeniedException: AccessDeniedException = "AccessDeniedException".asInstanceOf[AccessDeniedException]
   def AccessKeyId: AccessKeyId = "AccessKeyId".asInstanceOf[AccessKeyId]
@@ -13103,7 +14750,9 @@ object awsDashSdkLibStrings {
   def Allow: Allow = "Allow".asInstanceOf[Allow]
   def Always: Always = "Always".asInstanceOf[Always]
   def AmazonCustomerByEmail: AmazonCustomerByEmail = "AmazonCustomerByEmail".asInstanceOf[AmazonCustomerByEmail]
+  def And: And = "And".asInstanceOf[And]
   def Any: Any = "Any".asInstanceOf[Any]
+  def AppSpecContent: AppSpecContent = "AppSpecContent".asInstanceOf[AppSpecContent]
   def ApplicationMetrics: ApplicationMetrics = "ApplicationMetrics".asInstanceOf[ApplicationMetrics]
   def Approval: Approval = "Approval".asInstanceOf[Approval]
   def Approve: Approve = "Approve".asInstanceOf[Approve]
@@ -13136,11 +14785,13 @@ object awsDashSdkLibStrings {
   def AttachedPoliciesPerGroupQuota: AttachedPoliciesPerGroupQuota = "AttachedPoliciesPerGroupQuota".asInstanceOf[AttachedPoliciesPerGroupQuota]
   def AttachedPoliciesPerRoleQuota: AttachedPoliciesPerRoleQuota = "AttachedPoliciesPerRoleQuota".asInstanceOf[AttachedPoliciesPerRoleQuota]
   def AttachedPoliciesPerUserQuota: AttachedPoliciesPerUserQuota = "AttachedPoliciesPerUserQuota".asInstanceOf[AttachedPoliciesPerUserQuota]
+  def AugmentedManifestFile: AugmentedManifestFile = "AugmentedManifestFile".asInstanceOf[AugmentedManifestFile]
   def AuthenticatedRole: AuthenticatedRole = "AuthenticatedRole".asInstanceOf[AuthenticatedRole]
   def Auto: Auto = "Auto".asInstanceOf[Auto]
   def AutoBundleOnDeploy: AutoBundleOnDeploy = "AutoBundleOnDeploy".asInstanceOf[AutoBundleOnDeploy]
   def Automatic: Automatic = "Automatic".asInstanceOf[Automatic]
   def Automation: Automation = "Automation".asInstanceOf[Automation]
+  def AutomationType: AutomationType = "AutomationType".asInstanceOf[AutomationType]
   def `Availability Zone`: `Availability Zone` = "Availability Zone".asInstanceOf[`Availability Zone`]
   def AvailabilityZone: AvailabilityZone = "AvailabilityZone".asInstanceOf[AvailabilityZone]
   def Available: Available = "Available".asInstanceOf[Available]
@@ -13150,6 +14801,7 @@ object awsDashSdkLibStrings {
   def AwaitingQuorum: AwaitingQuorum = "AwaitingQuorum".asInstanceOf[AwaitingQuorum]
   def AwsFlowRubySettings: AwsFlowRubySettings = "AwsFlowRubySettings".asInstanceOf[AwsFlowRubySettings]
   def B: B = "B".asInstanceOf[B]
+  def BACKDOOR: BACKDOOR = "BACKDOOR".asInstanceOf[BACKDOOR]
   def BACKING_UP: BACKING_UP = "BACKING_UP".asInstanceOf[BACKING_UP]
   def BAD_REQUEST_BODY: BAD_REQUEST_BODY = "BAD_REQUEST_BODY".asInstanceOf[BAD_REQUEST_BODY]
   def BAD_REQUEST_PARAMETERS: BAD_REQUEST_PARAMETERS = "BAD_REQUEST_PARAMETERS".asInstanceOf[BAD_REQUEST_PARAMETERS]
@@ -13159,8 +14811,12 @@ object awsDashSdkLibStrings {
   def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
   def BEGINS_WITH: BEGINS_WITH = "BEGINS_WITH".asInstanceOf[BEGINS_WITH]
   def BEGIN_WITH: BEGIN_WITH = "BEGIN_WITH".asInstanceOf[BEGIN_WITH]
+  def BENIGN_POSITIVE: BENIGN_POSITIVE = "BENIGN_POSITIVE".asInstanceOf[BENIGN_POSITIVE]
+  def BEST_EFFORT: BEST_EFFORT = "BEST_EFFORT".asInstanceOf[BEST_EFFORT]
+  def BETA: BETA = "BETA".asInstanceOf[BETA]
   def BETWEEN: BETWEEN = "BETWEEN".asInstanceOf[BETWEEN]
   def BILATERAL: BILATERAL = "BILATERAL".asInstanceOf[BILATERAL]
+  def BILLING_ENTITY: BILLING_ENTITY = "BILLING_ENTITY".asInstanceOf[BILLING_ENTITY]
   def BINARY: BINARY = "BINARY".asInstanceOf[BINARY]
   def BINARY_LENGTH: BINARY_LENGTH = "BINARY_LENGTH".asInstanceOf[BINARY_LENGTH]
   def BIOS_ID: BIOS_ID = "BIOS_ID".asInstanceOf[BIOS_ID]
@@ -13175,9 +14831,12 @@ object awsDashSdkLibStrings {
   def BLACK: BLACK = "BLACK".asInstanceOf[BLACK]
   def BLACKLISTED: BLACKLISTED = "BLACKLISTED".asInstanceOf[BLACKLISTED]
   def BLEND: BLEND = "BLEND".asInstanceOf[BLEND]
+  def BLENDED_COST: BLENDED_COST = "BLENDED_COST".asInstanceOf[BLENDED_COST]
+  def BLENDED_THREAT: BLENDED_THREAT = "BLENDED_THREAT".asInstanceOf[BLENDED_THREAT]
   def BLEND_TICKER: BLEND_TICKER = "BLEND_TICKER".asInstanceOf[BLEND_TICKER]
   def BLOCK: BLOCK = "BLOCK".asInstanceOf[BLOCK]
   def BLUE: BLUE = "BLUE".asInstanceOf[BLUE]
+  def BLUEJEANS: BLUEJEANS = "BLUEJEANS".asInstanceOf[BLUEJEANS]
   def BLUETOOTH: BLUETOOTH = "BLUETOOTH".asInstanceOf[BLUETOOTH]
   def BLUE_GREEN: BLUE_GREEN = "BLUE_GREEN".asInstanceOf[BLUE_GREEN]
   def BODY: BODY = "BODY".asInstanceOf[BODY]
@@ -13185,12 +14844,17 @@ object awsDashSdkLibStrings {
   def BOOTSTRAPPING: BOOTSTRAPPING = "BOOTSTRAPPING".asInstanceOf[BOOTSTRAPPING]
   def BOOTSTRAP_FAILURE: BOOTSTRAP_FAILURE = "BOOTSTRAP_FAILURE".asInstanceOf[BOOTSTRAP_FAILURE]
   def BOT: BOT = "BOT".asInstanceOf[BOT]
+  def BOTH: BOTH = "BOTH".asInstanceOf[BOTH]
+  def BOTNET_AGENT: BOTNET_AGENT = "BOTNET_AGENT".asInstanceOf[BOTNET_AGENT]
   def BOTTOM_CENTER: BOTTOM_CENTER = "BOTTOM_CENTER".asInstanceOf[BOTTOM_CENTER]
   def BOTTOM_FIELD: BOTTOM_FIELD = "BOTTOM_FIELD".asInstanceOf[BOTTOM_FIELD]
   def BOTTOM_LEFT: BOTTOM_LEFT = "BOTTOM_LEFT".asInstanceOf[BOTTOM_LEFT]
   def BOTTOM_RIGHT: BOTTOM_RIGHT = "BOTTOM_RIGHT".asInstanceOf[BOTTOM_RIGHT]
+  def BOUNCE: BOUNCE = "BOUNCE".asInstanceOf[BOUNCE]
+  def BRAND_NAME: BRAND_NAME = "BRAND_NAME".asInstanceOf[BRAND_NAME]
   def BRAND_NUMBER: BRAND_NUMBER = "BRAND_NUMBER".asInstanceOf[BRAND_NUMBER]
   def BROADCASTER_MIXED_AD: BROADCASTER_MIXED_AD = "BROADCASTER_MIXED_AD".asInstanceOf[BROADCASTER_MIXED_AD]
+  def BROKER: BROKER = "BROKER".asInstanceOf[BROKER]
   def BUILD: BUILD = "BUILD".asInstanceOf[BUILD]
   def BUILDING: BUILDING = "BUILDING".asInstanceOf[BUILDING]
   def BUILD_GENERAL1_LARGE: BUILD_GENERAL1_LARGE = "BUILD_GENERAL1_LARGE".asInstanceOf[BUILD_GENERAL1_LARGE]
@@ -13200,11 +14864,23 @@ object awsDashSdkLibStrings {
   def BUILTIN_EXPLORER: BUILTIN_EXPLORER = "BUILTIN_EXPLORER".asInstanceOf[BUILTIN_EXPLORER]
   def BUILTIN_FUZZ: BUILTIN_FUZZ = "BUILTIN_FUZZ".asInstanceOf[BUILTIN_FUZZ]
   def BURN_IN: BURN_IN = "BURN_IN".asInstanceOf[BURN_IN]
+  def BUSY: BUSY = "BUSY".asInstanceOf[BUSY]
   def BYOL: BYOL = "BYOL".asInstanceOf[BYOL]
+  def BYOL_GRAPHICS: BYOL_GRAPHICS = "BYOL_GRAPHICS".asInstanceOf[BYOL_GRAPHICS]
+  def BYOL_GRAPHICSPRO: BYOL_GRAPHICSPRO = "BYOL_GRAPHICSPRO".asInstanceOf[BYOL_GRAPHICSPRO]
+  def BYOL_REGULAR: BYOL_REGULAR = "BYOL_REGULAR".asInstanceOf[BYOL_REGULAR]
   def BYTES: BYTES = "BYTES".asInstanceOf[BYTES]
   def BYTES_PER_SECOND: BYTES_PER_SECOND = "BYTES_PER_SECOND".asInstanceOf[BYTES_PER_SECOND]
   def BZIP2: BZIP2 = "BZIP2".asInstanceOf[BZIP2]
+  def BadPermissionError: BadPermissionError = "BadPermissionError".asInstanceOf[BadPermissionError]
+  def BadPermissionsCloudwatchLogs: BadPermissionsCloudwatchLogs = "BadPermissionsCloudwatchLogs".asInstanceOf[BadPermissionsCloudwatchLogs]
+  def BadPermissionsRobotApplication: BadPermissionsRobotApplication = "BadPermissionsRobotApplication".asInstanceOf[BadPermissionsRobotApplication]
+  def BadPermissionsS3Output: BadPermissionsS3Output = "BadPermissionsS3Output".asInstanceOf[BadPermissionsS3Output]
+  def BadPermissionsSimulationApplication: BadPermissionsSimulationApplication = "BadPermissionsSimulationApplication".asInstanceOf[BadPermissionsSimulationApplication]
+  def BadPermissionsUserCredentials: BadPermissionsUserCredentials = "BadPermissionsUserCredentials".asInstanceOf[BadPermissionsUserCredentials]
+  def BadRequest: BadRequest = "BadRequest".asInstanceOf[BadRequest]
   def Base64: Base64 = "Base64".asInstanceOf[Base64]
+  def Basic: Basic = "Basic".asInstanceOf[Basic]
   def BatchPrediction: BatchPrediction = "BatchPrediction".asInstanceOf[BatchPrediction]
   def Bayesian: Bayesian = "Bayesian".asInstanceOf[Bayesian]
   def BeginWith: BeginWith = "BeginWith".asInstanceOf[BeginWith]
@@ -13239,19 +14915,24 @@ object awsDashSdkLibStrings {
   def CALCULATED: CALCULATED = "CALCULATED".asInstanceOf[CALCULATED]
   def CALLBACK_CONTACTS_HANDLED: CALLBACK_CONTACTS_HANDLED = "CALLBACK_CONTACTS_HANDLED".asInstanceOf[CALLBACK_CONTACTS_HANDLED]
   def CALM: CALM = "CALM".asInstanceOf[CALM]
+  def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
   def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
   def CANCELLED: CANCELLED = "CANCELLED".asInstanceOf[CANCELLED]
   def CANCELLING: CANCELLING = "CANCELLING".asInstanceOf[CANCELLING]
   def CANCEL_AND_WAIT: CANCEL_AND_WAIT = "CANCEL_AND_WAIT".asInstanceOf[CANCEL_AND_WAIT]
   def CANCEL_PENDING: CANCEL_PENDING = "CANCEL_PENDING".asInstanceOf[CANCEL_PENDING]
+  def CAPABILITY_AUTO_EXPAND: CAPABILITY_AUTO_EXPAND = "CAPABILITY_AUTO_EXPAND".asInstanceOf[CAPABILITY_AUTO_EXPAND]
   def CAPABILITY_IAM: CAPABILITY_IAM = "CAPABILITY_IAM".asInstanceOf[CAPABILITY_IAM]
   def CAPABILITY_NAMED_IAM: CAPABILITY_NAMED_IAM = "CAPABILITY_NAMED_IAM".asInstanceOf[CAPABILITY_NAMED_IAM]
+  def CAPABILITY_RESOURCE_POLICY: CAPABILITY_RESOURCE_POLICY = "CAPABILITY_RESOURCE_POLICY".asInstanceOf[CAPABILITY_RESOURCE_POLICY]
+  def CARD_STEALER: CARD_STEALER = "CARD_STEALER".asInstanceOf[CARD_STEALER]
   def CAVLC: CAVLC = "CAVLC".asInstanceOf[CAVLC]
   def CA_BUSINESS_ENTITY_TYPE: CA_BUSINESS_ENTITY_TYPE = "CA_BUSINESS_ENTITY_TYPE".asInstanceOf[CA_BUSINESS_ENTITY_TYPE]
   def CA_CERTIFICATE: CA_CERTIFICATE = "CA_CERTIFICATE".asInstanceOf[CA_CERTIFICATE]
   def CA_COMPROMISE: CA_COMPROMISE = "CA_COMPROMISE".asInstanceOf[CA_COMPROMISE]
   def CA_LEGAL_TYPE: CA_LEGAL_TYPE = "CA_LEGAL_TYPE".asInstanceOf[CA_LEGAL_TYPE]
   def CBR: CBR = "CBR".asInstanceOf[CBR]
+  def CCONJ: CCONJ = "CCONJ".asInstanceOf[CCONJ]
   def CELSIUS: CELSIUS = "CELSIUS".asInstanceOf[CELSIUS]
   def CENTERED: CENTERED = "CENTERED".asInstanceOf[CENTERED]
   def CENTOS: CENTOS = "CENTOS".asInstanceOf[CENTOS]
@@ -13269,18 +14950,24 @@ object awsDashSdkLibStrings {
   def CHECK_CRYPTOGRAPHY_ONLY: CHECK_CRYPTOGRAPHY_ONLY = "CHECK_CRYPTOGRAPHY_ONLY".asInstanceOf[CHECK_CRYPTOGRAPHY_ONLY]
   def CHILD_CREATION_RATE_EXCEEDED: CHILD_CREATION_RATE_EXCEEDED = "CHILD_CREATION_RATE_EXCEEDED".asInstanceOf[CHILD_CREATION_RATE_EXCEEDED]
   def CHILD_POLICY_APPLIED: CHILD_POLICY_APPLIED = "CHILD_POLICY_APPLIED".asInstanceOf[CHILD_POLICY_APPLIED]
+  def CHIME: CHIME = "CHIME".asInstanceOf[CHIME]
   def CHUNKED: CHUNKED = "CHUNKED".asInstanceOf[CHUNKED]
   def CLASSIFICATION: CLASSIFICATION = "CLASSIFICATION".asInstanceOf[CLASSIFICATION]
   def CLEANUP_FAILURE: CLEANUP_FAILURE = "CLEANUP_FAILURE".asInstanceOf[CLEANUP_FAILURE]
   def CLEAN_EFFECTS: CLEAN_EFFECTS = "CLEAN_EFFECTS".asInstanceOf[CLEAN_EFFECTS]
+  def CLICK: CLICK = "CLICK".asInstanceOf[CLICK]
   def CLIENT_ID: CLIENT_ID = "CLIENT_ID".asInstanceOf[CLIENT_ID]
   def CLIPBOARD_COPY_FROM_LOCAL_DEVICE: CLIPBOARD_COPY_FROM_LOCAL_DEVICE = "CLIPBOARD_COPY_FROM_LOCAL_DEVICE".asInstanceOf[CLIPBOARD_COPY_FROM_LOCAL_DEVICE]
   def CLIPBOARD_COPY_TO_LOCAL_DEVICE: CLIPBOARD_COPY_TO_LOCAL_DEVICE = "CLIPBOARD_COPY_TO_LOCAL_DEVICE".asInstanceOf[CLIPBOARD_COPY_TO_LOCAL_DEVICE]
   def CLOSED: CLOSED = "CLOSED".asInstanceOf[CLOSED]
   def CLOUDFORMATION: CLOUDFORMATION = "CLOUDFORMATION".asInstanceOf[CLOUDFORMATION]
+  def CLOUDFORMATION_STACK_1_0: CLOUDFORMATION_STACK_1_0 = "CLOUDFORMATION_STACK_1_0".asInstanceOf[CLOUDFORMATION_STACK_1_0]
+  def CLOUDFORMATION_STACK_INACTIVE: CLOUDFORMATION_STACK_INACTIVE = "CLOUDFORMATION_STACK_INACTIVE".asInstanceOf[CLOUDFORMATION_STACK_INACTIVE]
+  def CLOUDFORMATION_STACK_NOT_EXISTING: CLOUDFORMATION_STACK_NOT_EXISTING = "CLOUDFORMATION_STACK_NOT_EXISTING".asInstanceOf[CLOUDFORMATION_STACK_NOT_EXISTING]
   def CLOUDWATCH_METRIC: CLOUDWATCH_METRIC = "CLOUDWATCH_METRIC".asInstanceOf[CLOUDWATCH_METRIC]
   def CLOUD_FORMATION_TEMPLATE: CLOUD_FORMATION_TEMPLATE = "CLOUD_FORMATION_TEMPLATE".asInstanceOf[CLOUD_FORMATION_TEMPLATE]
   def CLUSTER: CLUSTER = "CLUSTER".asInstanceOf[CLUSTER]
+  def CLUSTER_NOT_FOUND: CLUSTER_NOT_FOUND = "CLUSTER_NOT_FOUND".asInstanceOf[CLUSTER_NOT_FOUND]
   def CLUSTER_TERMINATED: CLUSTER_TERMINATED = "CLUSTER_TERMINATED".asInstanceOf[CLUSTER_TERMINATED]
   def CMAF_GROUP_SETTINGS: CMAF_GROUP_SETTINGS = "CMAF_GROUP_SETTINGS".asInstanceOf[CMAF_GROUP_SETTINGS]
   def CMD_LINE: CMD_LINE = "CMD_LINE".asInstanceOf[CMD_LINE]
@@ -13288,6 +14975,7 @@ object awsDashSdkLibStrings {
   def CNAME: CNAME = "CNAME".asInstanceOf[CNAME]
   def CODECOMMIT: CODECOMMIT = "CODECOMMIT".asInstanceOf[CODECOMMIT]
   def CODEPIPELINE: CODEPIPELINE = "CODEPIPELINE".asInstanceOf[CODEPIPELINE]
+  def CODE_DEPLOY: CODE_DEPLOY = "CODE_DEPLOY".asInstanceOf[CODE_DEPLOY]
   def CODE_SIGNING: CODE_SIGNING = "CODE_SIGNING".asInstanceOf[CODE_SIGNING]
   def CODING_MODE_1_0: CODING_MODE_1_0 = "CODING_MODE_1_0".asInstanceOf[CODING_MODE_1_0]
   def CODING_MODE_1_1: CODING_MODE_1_1 = "CODING_MODE_1_1".asInstanceOf[CODING_MODE_1_1]
@@ -13297,22 +14985,27 @@ object awsDashSdkLibStrings {
   def CODING_MODE_5_1: CODING_MODE_5_1 = "CODING_MODE_5_1".asInstanceOf[CODING_MODE_5_1]
   def COGNITO_IDENTITY_POOL: COGNITO_IDENTITY_POOL = "COGNITO_IDENTITY_POOL".asInstanceOf[COGNITO_IDENTITY_POOL]
   def COGNITO_USER_POOLS: COGNITO_USER_POOLS = "COGNITO_USER_POOLS".asInstanceOf[COGNITO_USER_POOLS]
+  def COIN_MINER: COIN_MINER = "COIN_MINER".asInstanceOf[COIN_MINER]
   def COLLECTING_DATA: COLLECTING_DATA = "COLLECTING_DATA".asInstanceOf[COLLECTING_DATA]
   def COLOR: COLOR = "COLOR".asInstanceOf[COLOR]
   def COLUMN: COLUMN = "COLUMN".asInstanceOf[COLUMN]
   def COLUMN_AND_ROW: COLUMN_AND_ROW = "COLUMN_AND_ROW".asInstanceOf[COLUMN_AND_ROW]
   def COMBINE_DUPLICATE_STREAMS: COMBINE_DUPLICATE_STREAMS = "COMBINE_DUPLICATE_STREAMS".asInstanceOf[COMBINE_DUPLICATE_STREAMS]
+  def COMMAND_AND_CONTROL: COMMAND_AND_CONTROL = "COMMAND_AND_CONTROL".asInstanceOf[COMMAND_AND_CONTROL]
   def COMMENTARY: COMMENTARY = "COMMENTARY".asInstanceOf[COMMENTARY]
   def COMMERCIAL_ITEM: COMMERCIAL_ITEM = "COMMERCIAL_ITEM".asInstanceOf[COMMERCIAL_ITEM]
   def COMMON: COMMON = "COMMON".asInstanceOf[COMMON]
   def COMPANY: COMPANY = "COMPANY".asInstanceOf[COMPANY]
+  def COMPLAINT: COMPLAINT = "COMPLAINT".asInstanceOf[COMPLAINT]
   def COMPLETE: COMPLETE = "COMPLETE".asInstanceOf[COMPLETE]
   def COMPLETED: COMPLETED = "COMPLETED".asInstanceOf[COMPLETED]
+  def COMPLETED_CALL: COMPLETED_CALL = "COMPLETED_CALL".asInstanceOf[COMPLETED_CALL]
   def COMPLETED_COMPLIANT: COMPLETED_COMPLIANT = "COMPLETED_COMPLIANT".asInstanceOf[COMPLETED_COMPLIANT]
   def COMPLETED_NON_COMPLIANT: COMPLETED_NON_COMPLIANT = "COMPLETED_NON_COMPLIANT".asInstanceOf[COMPLETED_NON_COMPLIANT]
   def COMPLETED_WITH_ERRORS: COMPLETED_WITH_ERRORS = "COMPLETED_WITH_ERRORS".asInstanceOf[COMPLETED_WITH_ERRORS]
   def COMPLETE_MAIN: COMPLETE_MAIN = "COMPLETE_MAIN".asInstanceOf[COMPLETE_MAIN]
   def COMPLETING: COMPLETING = "COMPLETING".asInstanceOf[COMPLETING]
+  def COMPLIANCE: COMPLIANCE = "COMPLIANCE".asInstanceOf[COMPLIANCE]
   def COMPLIANT: COMPLIANT = "COMPLIANT".asInstanceOf[COMPLIANT]
   def COMPRESS_WHITE_SPACE: COMPRESS_WHITE_SPACE = "COMPRESS_WHITE_SPACE".asInstanceOf[COMPRESS_WHITE_SPACE]
   def COMPROMISED: COMPROMISED = "COMPROMISED".asInstanceOf[COMPROMISED]
@@ -13321,6 +15014,8 @@ object awsDashSdkLibStrings {
   def CONCURRENT_ACCOUNT_MODIFICATION: CONCURRENT_ACCOUNT_MODIFICATION = "CONCURRENT_ACCOUNT_MODIFICATION".asInstanceOf[CONCURRENT_ACCOUNT_MODIFICATION]
   def CONDITIONAL: CONDITIONAL = "CONDITIONAL".asInstanceOf[CONDITIONAL]
   def CONDITIONALLY: CONDITIONALLY = "CONDITIONALLY".asInstanceOf[CONDITIONALLY]
+  def CONFIGURATION_INVALID: CONFIGURATION_INVALID = "CONFIGURATION_INVALID".asInstanceOf[CONFIGURATION_INVALID]
+  def CONFIGURATION_IN_PROGRESS: CONFIGURATION_IN_PROGRESS = "CONFIGURATION_IN_PROGRESS".asInstanceOf[CONFIGURATION_IN_PROGRESS]
   def CONFIGURED_PCR_PERIOD: CONFIGURED_PCR_PERIOD = "CONFIGURED_PCR_PERIOD".asInstanceOf[CONFIGURED_PCR_PERIOD]
   def CONFIG_FILES: CONFIG_FILES = "CONFIG_FILES".asInstanceOf[CONFIG_FILES]
   def CONFIRMED: CONFIRMED = "CONFIRMED".asInstanceOf[CONFIRMED]
@@ -13330,6 +15025,7 @@ object awsDashSdkLibStrings {
   def CONJ: CONJ = "CONJ".asInstanceOf[CONJ]
   def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   def CONNECTED: CONNECTED = "CONNECTED".asInstanceOf[CONNECTED]
+  def CONNECTING: CONNECTING = "CONNECTING".asInstanceOf[CONNECTING]
   def CONNECTION: CONNECTION = "CONNECTION".asInstanceOf[CONNECTION]
   def CONNECTION_LOST: CONNECTION_LOST = "CONNECTION_LOST".asInstanceOf[CONNECTION_LOST]
   def CONNECTION_STATUS: CONNECTION_STATUS = "CONNECTION_STATUS".asInstanceOf[CONNECTION_STATUS]
@@ -13350,6 +15046,7 @@ object awsDashSdkLibStrings {
   def CONTACTS_TRANSFERRED_IN_FROM_QUEUE: CONTACTS_TRANSFERRED_IN_FROM_QUEUE = "CONTACTS_TRANSFERRED_IN_FROM_QUEUE".asInstanceOf[CONTACTS_TRANSFERRED_IN_FROM_QUEUE]
   def CONTACTS_TRANSFERRED_OUT: CONTACTS_TRANSFERRED_OUT = "CONTACTS_TRANSFERRED_OUT".asInstanceOf[CONTACTS_TRANSFERRED_OUT]
   def CONTACTS_TRANSFERRED_OUT_FROM_QUEUE: CONTACTS_TRANSFERRED_OUT_FROM_QUEUE = "CONTACTS_TRANSFERRED_OUT_FROM_QUEUE".asInstanceOf[CONTACTS_TRANSFERRED_OUT_FROM_QUEUE]
+  def CONTACT_POINT: CONTACT_POINT = "CONTACT_POINT".asInstanceOf[CONTACT_POINT]
   def CONTAINER: CONTAINER = "CONTAINER".asInstanceOf[CONTAINER]
   def CONTAINS: CONTAINS = "CONTAINS".asInstanceOf[CONTAINS]
   def CONTAINS_WORD: CONTAINS_WORD = "CONTAINS_WORD".asInstanceOf[CONTAINS_WORD]
@@ -13386,6 +15083,7 @@ object awsDashSdkLibStrings {
   def CREATE_OR_UPDATE: CREATE_OR_UPDATE = "CREATE_OR_UPDATE".asInstanceOf[CREATE_OR_UPDATE]
   def CREATE_PENDING: CREATE_PENDING = "CREATE_PENDING".asInstanceOf[CREATE_PENDING]
   def CREATE_SUCCESS: CREATE_SUCCESS = "CREATE_SUCCESS".asInstanceOf[CREATE_SUCCESS]
+  def CREATE_TIME: CREATE_TIME = "CREATE_TIME".asInstanceOf[CREATE_TIME]
   def CREATING: CREATING = "CREATING".asInstanceOf[CREATING]
   def CREATIONPOLICY: CREATIONPOLICY = "CREATIONPOLICY".asInstanceOf[CREATIONPOLICY]
   def CREATION_DATE: CREATION_DATE = "CREATION_DATE".asInstanceOf[CREATION_DATE]
@@ -13418,6 +15116,8 @@ object awsDashSdkLibStrings {
   def Cancelling: Cancelling = "Cancelling".asInstanceOf[Cancelling]
   def CannotListParentOfRootException: CannotListParentOfRootException = "CannotListParentOfRootException".asInstanceOf[CannotListParentOfRootException]
   def CanonicalUser: CanonicalUser = "CanonicalUser".asInstanceOf[CanonicalUser]
+  def CapacityForecast: CapacityForecast = "CapacityForecast".asInstanceOf[CapacityForecast]
+  def Categorical: Categorical = "Categorical".asInstanceOf[Categorical]
   def Causes: Causes = "Causes".asInstanceOf[Causes]
   def ChangeInCapacity: ChangeInCapacity = "ChangeInCapacity".asInstanceOf[ChangeInCapacity]
   def ChildHealthChecks: ChildHealthChecks = "ChildHealthChecks".asInstanceOf[ChildHealthChecks]
@@ -13426,6 +15126,7 @@ object awsDashSdkLibStrings {
   def Client: Client = "Client".asInstanceOf[Client]
   def ClientTLSNegotiationErrorCount: ClientTLSNegotiationErrorCount = "ClientTLSNegotiationErrorCount".asInstanceOf[ClientTLSNegotiationErrorCount]
   def CloseInstancePublicPorts: CloseInstancePublicPorts = "CloseInstancePublicPorts".asInstanceOf[CloseInstancePublicPorts]
+  def CloudFormationStackRecord: CloudFormationStackRecord = "CloudFormationStackRecord".asInstanceOf[CloudFormationStackRecord]
   def CodeCommit: CodeCommit = "CodeCommit".asInstanceOf[CodeCommit]
   def CodeHook: CodeHook = "CodeHook".asInstanceOf[CodeHook]
   def Color: Color = "Color".asInstanceOf[Color]
@@ -13444,17 +15145,22 @@ object awsDashSdkLibStrings {
   def ConfigurationSnapshotDeliveryCompleted: ConfigurationSnapshotDeliveryCompleted = "ConfigurationSnapshotDeliveryCompleted".asInstanceOf[ConfigurationSnapshotDeliveryCompleted]
   def ConfigurationUpdate: ConfigurationUpdate = "ConfigurationUpdate".asInstanceOf[ConfigurationUpdate]
   def ConfirmIntent: ConfirmIntent = "ConfirmIntent".asInstanceOf[ConfirmIntent]
+  def Conflict: Conflict = "Conflict".asInstanceOf[Conflict]
   def Connected: Connected = "Connected".asInstanceOf[Connected]
   def Connecting: Connecting = "Connecting".asInstanceOf[Connecting]
   def ConnectionLost: ConnectionLost = "ConnectionLost".asInstanceOf[ConnectionLost]
   def Contains: Contains = "Contains".asInstanceOf[Contains]
   def ContentBasedDeduplication: ContentBasedDeduplication = "ContentBasedDeduplication".asInstanceOf[ContentBasedDeduplication]
   def ContentRejected: ContentRejected = "ContentRejected".asInstanceOf[ContentRejected]
+  def Continue: Continue = "Continue".asInstanceOf[Continue]
   def ContinueAsNewWorkflowExecution: ContinueAsNewWorkflowExecution = "ContinueAsNewWorkflowExecution".asInstanceOf[ContinueAsNewWorkflowExecution]
+  def Continuous: Continuous = "Continuous".asInstanceOf[Continuous]
   def CopyTags: CopyTags = "CopyTags".asInstanceOf[CopyTags]
+  def Core: Core = "Core".asInstanceOf[Core]
   def Count: Count = "Count".asInstanceOf[Count]
   def `Count/Second`: `Count/Second` = "Count/Second".asInstanceOf[`Count/Second`]
   def Country: Country = "Country".asInstanceOf[Country]
+  def CreateDate: CreateDate = "CreateDate".asInstanceOf[CreateDate]
   def CreateDisk: CreateDisk = "CreateDisk".asInstanceOf[CreateDisk]
   def CreateDiskFromSnapshot: CreateDiskFromSnapshot = "CreateDiskFromSnapshot".asInstanceOf[CreateDiskFromSnapshot]
   def CreateDiskSnapshot: CreateDiskSnapshot = "CreateDiskSnapshot".asInstanceOf[CreateDiskSnapshot]
@@ -13465,6 +15171,9 @@ object awsDashSdkLibStrings {
   def CreateInstancesFromSnapshot: CreateInstancesFromSnapshot = "CreateInstancesFromSnapshot".asInstanceOf[CreateInstancesFromSnapshot]
   def CreateLoadBalancer: CreateLoadBalancer = "CreateLoadBalancer".asInstanceOf[CreateLoadBalancer]
   def CreateLoadBalancerTlsCertificate: CreateLoadBalancerTlsCertificate = "CreateLoadBalancerTlsCertificate".asInstanceOf[CreateLoadBalancerTlsCertificate]
+  def CreateRelationalDatabase: CreateRelationalDatabase = "CreateRelationalDatabase".asInstanceOf[CreateRelationalDatabase]
+  def CreateRelationalDatabaseFromSnapshot: CreateRelationalDatabaseFromSnapshot = "CreateRelationalDatabaseFromSnapshot".asInstanceOf[CreateRelationalDatabaseFromSnapshot]
+  def CreateRelationalDatabaseSnapshot: CreateRelationalDatabaseSnapshot = "CreateRelationalDatabaseSnapshot".asInstanceOf[CreateRelationalDatabaseSnapshot]
   def CreateRoute: CreateRoute = "CreateRoute".asInstanceOf[CreateRoute]
   def CreateRouteTable: CreateRouteTable = "CreateRouteTable".asInstanceOf[CreateRouteTable]
   def Created: Created = "Created".asInstanceOf[Created]
@@ -13478,6 +15187,7 @@ object awsDashSdkLibStrings {
   def CreationInProgress: CreationInProgress = "CreationInProgress".asInstanceOf[CreationInProgress]
   def CreationPolicy: CreationPolicy = "CreationPolicy".asInstanceOf[CreationPolicy]
   def CreationTime: CreationTime = "CreationTime".asInstanceOf[CreationTime]
+  def CrossAccount: CrossAccount = "CrossAccount".asInstanceOf[CrossAccount]
   def Current: Current = "Current".asInstanceOf[Current]
   def CurrentAction: CurrentAction = "CurrentAction".asInstanceOf[CurrentAction]
   def CurrentPlayerSessions: CurrentPlayerSessions = "CurrentPlayerSessions".asInstanceOf[CurrentPlayerSessions]
@@ -13506,6 +15216,7 @@ object awsDashSdkLibStrings {
   def DECIPHER_ONLY: DECIPHER_ONLY = "DECIPHER_ONLY".asInstanceOf[DECIPHER_ONLY]
   def DECLINED: DECLINED = "DECLINED".asInstanceOf[DECLINED]
   def DECREASE_DATA_RETENTION: DECREASE_DATA_RETENTION = "DECREASE_DATA_RETENTION".asInstanceOf[DECREASE_DATA_RETENTION]
+  def DEDICATED: DEDICATED = "DEDICATED".asInstanceOf[DEDICATED]
   def DEEP_LINK: DEEP_LINK = "DEEP_LINK".asInstanceOf[DEEP_LINK]
   def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   def DEFAULT_4XX: DEFAULT_4XX = "DEFAULT_4XX".asInstanceOf[DEFAULT_4XX]
@@ -13518,6 +15229,7 @@ object awsDashSdkLibStrings {
   def DEFAULT_START_TO_CLOSE_TIMEOUT_UNDEFINED: DEFAULT_START_TO_CLOSE_TIMEOUT_UNDEFINED = "DEFAULT_START_TO_CLOSE_TIMEOUT_UNDEFINED".asInstanceOf[DEFAULT_START_TO_CLOSE_TIMEOUT_UNDEFINED]
   def DEFAULT_TASK_LIST_UNDEFINED: DEFAULT_TASK_LIST_UNDEFINED = "DEFAULT_TASK_LIST_UNDEFINED".asInstanceOf[DEFAULT_TASK_LIST_UNDEFINED]
   def DEFAULT_TASK_START_TO_CLOSE_TIMEOUT_UNDEFINED: DEFAULT_TASK_START_TO_CLOSE_TIMEOUT_UNDEFINED = "DEFAULT_TASK_START_TO_CLOSE_TIMEOUT_UNDEFINED".asInstanceOf[DEFAULT_TASK_START_TO_CLOSE_TIMEOUT_UNDEFINED]
+  def DEFERRED: DEFERRED = "DEFERRED".asInstanceOf[DEFERRED]
   def DEGRADED: DEGRADED = "DEGRADED".asInstanceOf[DEGRADED]
   def DEINTERLACE: DEINTERLACE = "DEINTERLACE".asInstanceOf[DEINTERLACE]
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
@@ -13525,6 +15237,7 @@ object awsDashSdkLibStrings {
   def DELETE_COMPLETE: DELETE_COMPLETE = "DELETE_COMPLETE".asInstanceOf[DELETE_COMPLETE]
   def DELETE_DOMAIN: DELETE_DOMAIN = "DELETE_DOMAIN".asInstanceOf[DELETE_DOMAIN]
   def DELETE_FAILED: DELETE_FAILED = "DELETE_FAILED".asInstanceOf[DELETE_FAILED]
+  def DELETE_FAILED_FAS_EXPIRED: DELETE_FAILED_FAS_EXPIRED = "DELETE_FAILED_FAS_EXPIRED".asInstanceOf[DELETE_FAILED_FAS_EXPIRED]
   def DELETE_FROM_DATABASE: DELETE_FROM_DATABASE = "DELETE_FROM_DATABASE".asInstanceOf[DELETE_FROM_DATABASE]
   def DELETE_IN_PROGRESS: DELETE_IN_PROGRESS = "DELETE_IN_PROGRESS".asInstanceOf[DELETE_IN_PROGRESS]
   def DELETE_NAMESPACE: DELETE_NAMESPACE = "DELETE_NAMESPACE".asInstanceOf[DELETE_NAMESPACE]
@@ -13536,8 +15249,14 @@ object awsDashSdkLibStrings {
   def DELETIONPOLICY: DELETIONPOLICY = "DELETIONPOLICY".asInstanceOf[DELETIONPOLICY]
   def DELETION_IN_PROGRESS: DELETION_IN_PROGRESS = "DELETION_IN_PROGRESS".asInstanceOf[DELETION_IN_PROGRESS]
   def DELIVERY: DELIVERY = "DELIVERY".asInstanceOf[DELIVERY]
+  def DELTA_LAUNCH_FAILED: DELTA_LAUNCH_FAILED = "DELTA_LAUNCH_FAILED".asInstanceOf[DELTA_LAUNCH_FAILED]
+  def DELTA_LAUNCH_IN_PROGRESS: DELTA_LAUNCH_IN_PROGRESS = "DELTA_LAUNCH_IN_PROGRESS".asInstanceOf[DELTA_LAUNCH_IN_PROGRESS]
+  def DELTA_REPLICATED: DELTA_REPLICATED = "DELTA_REPLICATED".asInstanceOf[DELTA_REPLICATED]
+  def DELTA_REPLICATION_FAILED: DELTA_REPLICATION_FAILED = "DELTA_REPLICATION_FAILED".asInstanceOf[DELTA_REPLICATION_FAILED]
+  def DELTA_REPLICATION_IN_PROGRESS: DELTA_REPLICATION_IN_PROGRESS = "DELTA_REPLICATION_IN_PROGRESS".asInstanceOf[DELTA_REPLICATION_IN_PROGRESS]
   def DENY: DENY = "DENY".asInstanceOf[DENY]
   def DENY_ALL: DENY_ALL = "DENY_ALL".asInstanceOf[DENY_ALL]
+  def DEPLOYED: DEPLOYED = "DEPLOYED".asInstanceOf[DEPLOYED]
   def DEPLOYMENT_FAILURE: DEPLOYMENT_FAILURE = "DEPLOYMENT_FAILURE".asInstanceOf[DEPLOYMENT_FAILURE]
   def DEPLOYMENT_GROUP_MISSING: DEPLOYMENT_GROUP_MISSING = "DEPLOYMENT_GROUP_MISSING".asInstanceOf[DEPLOYMENT_GROUP_MISSING]
   def DEPLOYMENT_OPTION: DEPLOYMENT_OPTION = "DEPLOYMENT_OPTION".asInstanceOf[DEPLOYMENT_OPTION]
@@ -13555,6 +15274,10 @@ object awsDashSdkLibStrings {
   def DET: DET = "DET".asInstanceOf[DET]
   def DETACHED: DETACHED = "DETACHED".asInstanceOf[DETACHED]
   def DETACHING: DETACHING = "DETACHING".asInstanceOf[DETACHING]
+  def DETECTION_COMPLETE: DETECTION_COMPLETE = "DETECTION_COMPLETE".asInstanceOf[DETECTION_COMPLETE]
+  def DETECTION_FAILED: DETECTION_FAILED = "DETECTION_FAILED".asInstanceOf[DETECTION_FAILED]
+  def DETECTION_IN_PROGRESS: DETECTION_IN_PROGRESS = "DETECTION_IN_PROGRESS".asInstanceOf[DETECTION_IN_PROGRESS]
+  def DEVELOPMENT: DEVELOPMENT = "DEVELOPMENT".asInstanceOf[DEVELOPMENT]
   def DEVICE_CERTIFICATE: DEVICE_CERTIFICATE = "DEVICE_CERTIFICATE".asInstanceOf[DEVICE_CERTIFICATE]
   def DEVICE_LOG: DEVICE_LOG = "DEVICE_LOG".asInstanceOf[DEVICE_LOG]
   def DEVICE_PASSWORD_VERIFIER: DEVICE_PASSWORD_VERIFIER = "DEVICE_PASSWORD_VERIFIER".asInstanceOf[DEVICE_PASSWORD_VERIFIER]
@@ -13562,11 +15285,13 @@ object awsDashSdkLibStrings {
   def DEVICE_SRP_AUTH: DEVICE_SRP_AUTH = "DEVICE_SRP_AUTH".asInstanceOf[DEVICE_SRP_AUTH]
   def DEVICE_STATUS: DEVICE_STATUS = "DEVICE_STATUS".asInstanceOf[DEVICE_STATUS]
   def DEVICE_WAS_OFFLINE: DEVICE_WAS_OFFLINE = "DEVICE_WAS_OFFLINE".asInstanceOf[DEVICE_WAS_OFFLINE]
+  def DIAGNOSIS: DIAGNOSIS = "DIAGNOSIS".asInstanceOf[DIAGNOSIS]
   def DIALOGUE: DIALOGUE = "DIALOGUE".asInstanceOf[DIALOGUE]
   def DIGITAL_SIGNATURE: DIGITAL_SIGNATURE = "DIGITAL_SIGNATURE".asInstanceOf[DIGITAL_SIGNATURE]
   def DIMENSION: DIMENSION = "DIMENSION".asInstanceOf[DIMENSION]
   def DIMENSIONAL: DIMENSIONAL = "DIMENSIONAL".asInstanceOf[DIMENSIONAL]
   def DIRECT: DIRECT = "DIRECT".asInstanceOf[DIRECT]
+  def DIRECTION: DIRECTION = "DIRECTION".asInstanceOf[DIRECTION]
   def DISABLE: DISABLE = "DISABLE".asInstanceOf[DISABLE]
   def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
   def DISABLE_AUTORENEW: DISABLE_AUTORENEW = "DISABLE_AUTORENEW".asInstanceOf[DISABLE_AUTORENEW]
@@ -13574,8 +15299,10 @@ object awsDashSdkLibStrings {
   def DISALLOW: DISALLOW = "DISALLOW".asInstanceOf[DISALLOW]
   def DISALLOWED_ATTRIBUTE_REMOVED: DISALLOWED_ATTRIBUTE_REMOVED = "DISALLOWED_ATTRIBUTE_REMOVED".asInstanceOf[DISALLOWED_ATTRIBUTE_REMOVED]
   def DISALLOWED_ELEMENT_REMOVED: DISALLOWED_ELEMENT_REMOVED = "DISALLOWED_ELEMENT_REMOVED".asInstanceOf[DISALLOWED_ELEMENT_REMOVED]
+  def DISASSOCIATED: DISASSOCIATED = "DISASSOCIATED".asInstanceOf[DISASSOCIATED]
   def DISASSOCIATING: DISASSOCIATING = "DISASSOCIATING".asInstanceOf[DISASSOCIATING]
   def DISCONNECTED: DISCONNECTED = "DISCONNECTED".asInstanceOf[DISCONNECTED]
+  def DISCONNECTING: DISCONNECTING = "DISCONNECTING".asInstanceOf[DISCONNECTING]
   def DISCONNECT_IMMEDIATELY: DISCONNECT_IMMEDIATELY = "DISCONNECT_IMMEDIATELY".asInstanceOf[DISCONNECT_IMMEDIATELY]
   def DISCOVER_EXISTING: DISCOVER_EXISTING = "DISCOVER_EXISTING".asInstanceOf[DISCOVER_EXISTING]
   def DISGUSTED: DISGUSTED = "DISGUSTED".asInstanceOf[DISGUSTED]
@@ -13605,7 +15332,10 @@ object awsDashSdkLibStrings {
   def DOCUMENT_SHARE_PERMISSION_CHANGED: DOCUMENT_SHARE_PERMISSION_CHANGED = "DOCUMENT_SHARE_PERMISSION_CHANGED".asInstanceOf[DOCUMENT_SHARE_PERMISSION_CHANGED]
   def DOCUMENT_UNSHARED: DOCUMENT_UNSHARED = "DOCUMENT_UNSHARED".asInstanceOf[DOCUMENT_UNSHARED]
   def DOCUMENT_VERSION_DELETED: DOCUMENT_VERSION_DELETED = "DOCUMENT_VERSION_DELETED".asInstanceOf[DOCUMENT_VERSION_DELETED]
+  def DOCUMENT_VERSION_DOWNLOADED: DOCUMENT_VERSION_DOWNLOADED = "DOCUMENT_VERSION_DOWNLOADED".asInstanceOf[DOCUMENT_VERSION_DOWNLOADED]
   def DOCUMENT_VERSION_UPLOADED: DOCUMENT_VERSION_UPLOADED = "DOCUMENT_VERSION_UPLOADED".asInstanceOf[DOCUMENT_VERSION_UPLOADED]
+  def DOCUMENT_VERSION_VIEWED: DOCUMENT_VERSION_VIEWED = "DOCUMENT_VERSION_VIEWED".asInstanceOf[DOCUMENT_VERSION_VIEWED]
+  def DOMAIN: DOMAIN = "DOMAIN".asInstanceOf[DOMAIN]
   def DOMAIN_JOIN_ERROR_ACCESS_DENIED: DOMAIN_JOIN_ERROR_ACCESS_DENIED = "DOMAIN_JOIN_ERROR_ACCESS_DENIED".asInstanceOf[DOMAIN_JOIN_ERROR_ACCESS_DENIED]
   def DOMAIN_JOIN_ERROR_DS_MACHINE_ACCOUNT_QUOTA_EXCEEDED: DOMAIN_JOIN_ERROR_DS_MACHINE_ACCOUNT_QUOTA_EXCEEDED = "DOMAIN_JOIN_ERROR_DS_MACHINE_ACCOUNT_QUOTA_EXCEEDED".asInstanceOf[DOMAIN_JOIN_ERROR_DS_MACHINE_ACCOUNT_QUOTA_EXCEEDED]
   def DOMAIN_JOIN_ERROR_FILE_NOT_FOUND: DOMAIN_JOIN_ERROR_FILE_NOT_FOUND = "DOMAIN_JOIN_ERROR_FILE_NOT_FOUND".asInstanceOf[DOMAIN_JOIN_ERROR_FILE_NOT_FOUND]
@@ -13624,6 +15354,7 @@ object awsDashSdkLibStrings {
   def DONE: DONE = "DONE".asInstanceOf[DONE]
   def DONT_KNOW: DONT_KNOW = "DONT_KNOW".asInstanceOf[DONT_KNOW]
   def DONT_LOG: DONT_LOG = "DONT_LOG".asInstanceOf[DONT_LOG]
+  def DOSAGE: DOSAGE = "DOSAGE".asInstanceOf[DOSAGE]
   def DOTNET: DOTNET = "DOTNET".asInstanceOf[DOTNET]
   def DOWN: DOWN = "DOWN".asInstanceOf[DOWN]
   def DOWNLOADING: DOWNLOADING = "DOWNLOADING".asInstanceOf[DOWNLOADING]
@@ -13633,14 +15364,17 @@ object awsDashSdkLibStrings {
   def DPL2: DPL2 = "DPL2".asInstanceOf[DPL2]
   def DRAFT: DRAFT = "DRAFT".asInstanceOf[DRAFT]
   def DRAINING: DRAINING = "DRAINING".asInstanceOf[DRAINING]
+  def DRIFTED: DRIFTED = "DRIFTED".asInstanceOf[DRIFTED]
   def DROP: DROP = "DROP".asInstanceOf[DROP]
   def DROP_PROGRAM: DROP_PROGRAM = "DROP_PROGRAM".asInstanceOf[DROP_PROGRAM]
+  def DROP_SITE: DROP_SITE = "DROP_SITE".asInstanceOf[DROP_SITE]
   def DROP_TS: DROP_TS = "DROP_TS".asInstanceOf[DROP_TS]
   def DUNS_NUMBER: DUNS_NUMBER = "DUNS_NUMBER".asInstanceOf[DUNS_NUMBER]
   def DUPLICATE: DUPLICATE = "DUPLICATE".asInstanceOf[DUPLICATE]
   def DUPLICATE_ARN: DUPLICATE_ARN = "DUPLICATE_ARN".asInstanceOf[DUPLICATE_ARN]
   def DUPLICATE_DROP: DUPLICATE_DROP = "DUPLICATE_DROP".asInstanceOf[DUPLICATE_DROP]
   def DUPLICATE_RESOURCE: DUPLICATE_RESOURCE = "DUPLICATE_RESOURCE".asInstanceOf[DUPLICATE_RESOURCE]
+  def DURATION: DURATION = "DURATION".asInstanceOf[DURATION]
   def DVB: DVB = "DVB".asInstanceOf[DVB]
   def DVB_SUB: DVB_SUB = "DVB_SUB".asInstanceOf[DVB_SUB]
   def DYNAMIC: DYNAMIC = "DYNAMIC".asInstanceOf[DYNAMIC]
@@ -13665,6 +15399,8 @@ object awsDashSdkLibStrings {
   def DeleteInstanceSnapshot: DeleteInstanceSnapshot = "DeleteInstanceSnapshot".asInstanceOf[DeleteInstanceSnapshot]
   def DeleteLoadBalancer: DeleteLoadBalancer = "DeleteLoadBalancer".asInstanceOf[DeleteLoadBalancer]
   def DeleteLoadBalancerTlsCertificate: DeleteLoadBalancerTlsCertificate = "DeleteLoadBalancerTlsCertificate".asInstanceOf[DeleteLoadBalancerTlsCertificate]
+  def DeleteRelationalDatabase: DeleteRelationalDatabase = "DeleteRelationalDatabase".asInstanceOf[DeleteRelationalDatabase]
+  def DeleteRelationalDatabaseSnapshot: DeleteRelationalDatabaseSnapshot = "DeleteRelationalDatabaseSnapshot".asInstanceOf[DeleteRelationalDatabaseSnapshot]
   def DeleteSchema: DeleteSchema = "DeleteSchema".asInstanceOf[DeleteSchema]
   def Deleted: Deleted = "Deleted".asInstanceOf[Deleted]
   def Deleting: Deleting = "Deleting".asInstanceOf[Deleting]
@@ -13674,6 +15410,7 @@ object awsDashSdkLibStrings {
   def Delivery: Delivery = "Delivery".asInstanceOf[Delivery]
   def Deny: Deny = "Deny".asInstanceOf[Deny]
   def Deploy: Deploy = "Deploy".asInstanceOf[Deploy]
+  def Deploying: Deploying = "Deploying".asInstanceOf[Deploying]
   def Deployment: Deployment = "Deployment".asInstanceOf[Deployment]
   def DeploymentFailure: DeploymentFailure = "DeploymentFailure".asInstanceOf[DeploymentFailure]
   def DeploymentReady: DeploymentReady = "DeploymentReady".asInstanceOf[DeploymentReady]
@@ -13726,14 +15463,22 @@ object awsDashSdkLibStrings {
   def EC2SpotFleetRequestAverageCPUUtilization: EC2SpotFleetRequestAverageCPUUtilization = "EC2SpotFleetRequestAverageCPUUtilization".asInstanceOf[EC2SpotFleetRequestAverageCPUUtilization]
   def EC2SpotFleetRequestAverageNetworkIn: EC2SpotFleetRequestAverageNetworkIn = "EC2SpotFleetRequestAverageNetworkIn".asInstanceOf[EC2SpotFleetRequestAverageNetworkIn]
   def EC2SpotFleetRequestAverageNetworkOut: EC2SpotFleetRequestAverageNetworkOut = "EC2SpotFleetRequestAverageNetworkOut".asInstanceOf[EC2SpotFleetRequestAverageNetworkOut]
+  def EC2_AMI: EC2_AMI = "EC2_AMI".asInstanceOf[EC2_AMI]
+  def EC2_HOST: EC2_HOST = "EC2_HOST".asInstanceOf[EC2_HOST]
+  def EC2_INSTANCE: EC2_INSTANCE = "EC2_INSTANCE".asInstanceOf[EC2_INSTANCE]
   def ECDSA: ECDSA = "ECDSA".asInstanceOf[ECDSA]
   def ECHO: ECHO = "ECHO".asInstanceOf[ECHO]
+  def ECS: ECS = "ECS".asInstanceOf[ECS]
   def ECSServiceAverageCPUUtilization: ECSServiceAverageCPUUtilization = "ECSServiceAverageCPUUtilization".asInstanceOf[ECSServiceAverageCPUUtilization]
   def ECSServiceAverageMemoryUtilization: ECSServiceAverageMemoryUtilization = "ECSServiceAverageMemoryUtilization".asInstanceOf[ECSServiceAverageMemoryUtilization]
+  def ECSTarget: ECSTarget = "ECSTarget".asInstanceOf[ECSTarget]
+  def ECS_UPDATE_ERROR: ECS_UPDATE_ERROR = "ECS_UPDATE_ERROR".asInstanceOf[ECS_UPDATE_ERROR]
   def EC_prime256v1: EC_prime256v1 = "EC_prime256v1".asInstanceOf[EC_prime256v1]
   def EC_secp384r1: EC_secp384r1 = "EC_secp384r1".asInstanceOf[EC_secp384r1]
   def EC_secp521r1: EC_secp521r1 = "EC_secp521r1".asInstanceOf[EC_secp521r1]
   def EDGE: EDGE = "EDGE".asInstanceOf[EDGE]
+  def EDGE_C: EDGE_C = "EDGE_C".asInstanceOf[EDGE_C]
+  def EDGE_CG: EDGE_CG = "EDGE_CG".asInstanceOf[EDGE_CG]
   def `EIP-ASSOCIATE`: `EIP-ASSOCIATE` = "EIP-ASSOCIATE".asInstanceOf[`EIP-ASSOCIATE`]
   def ELASTIC_LOAD_BALANCING_INVALID: ELASTIC_LOAD_BALANCING_INVALID = "ELASTIC_LOAD_BALANCING_INVALID".asInstanceOf[ELASTIC_LOAD_BALANCING_INVALID]
   def ELB_INVALID_INSTANCE: ELB_INVALID_INSTANCE = "ELB_INVALID_INSTANCE".asInstanceOf[ELB_INVALID_INSTANCE]
@@ -13741,9 +15486,12 @@ object awsDashSdkLibStrings {
   def ELEMENTAL_SCTE35: ELEMENTAL_SCTE35 = "ELEMENTAL_SCTE35".asInstanceOf[ELEMENTAL_SCTE35]
   def ELIGIBLE: ELIGIBLE = "ELIGIBLE".asInstanceOf[ELIGIBLE]
   def EMAIL: EMAIL = "EMAIL".asInstanceOf[EMAIL]
+  def EMAIL_ADDRESS: EMAIL_ADDRESS = "EMAIL_ADDRESS".asInstanceOf[EMAIL_ADDRESS]
   def EMAIL_ALREADY_EXISTS: EMAIL_ALREADY_EXISTS = "EMAIL_ALREADY_EXISTS".asInstanceOf[EMAIL_ALREADY_EXISTS]
+  def EMAIL_HEADER: EMAIL_HEADER = "EMAIL_HEADER".asInstanceOf[EMAIL_HEADER]
   def EMAIL_PROTECTION: EMAIL_PROTECTION = "EMAIL_PROTECTION".asInstanceOf[EMAIL_PROTECTION]
   def EMBEDDED: EMBEDDED = "EMBEDDED".asInstanceOf[EMBEDDED]
+  def EMBEDDED_PLUS_SCTE20: EMBEDDED_PLUS_SCTE20 = "EMBEDDED_PLUS_SCTE20".asInstanceOf[EMBEDDED_PLUS_SCTE20]
   def EMERGENCY: EMERGENCY = "EMERGENCY".asInstanceOf[EMERGENCY]
   def EMIT_OUTPUT: EMIT_OUTPUT = "EMIT_OUTPUT".asInstanceOf[EMIT_OUTPUT]
   def EMIT_PROGRAM: EMIT_PROGRAM = "EMIT_PROGRAM".asInstanceOf[EMIT_PROGRAM]
@@ -13755,11 +15503,15 @@ object awsDashSdkLibStrings {
   def ENCIPHER_ONLY: ENCIPHER_ONLY = "ENCIPHER_ONLY".asInstanceOf[ENCIPHER_ONLY]
   def ENCODE_SILENCE: ENCODE_SILENCE = "ENCODE_SILENCE".asInstanceOf[ENCODE_SILENCE]
   def ENCRYPT_DECRYPT: ENCRYPT_DECRYPT = "ENCRYPT_DECRYPT".asInstanceOf[ENCRYPT_DECRYPT]
+  def END: END = "END".asInstanceOf[END]
   def ENDED: ENDED = "ENDED".asInstanceOf[ENDED]
+  def ENDPOINT: ENDPOINT = "ENDPOINT".asInstanceOf[ENDPOINT]
   def ENDS_WITH: ENDS_WITH = "ENDS_WITH".asInstanceOf[ENDS_WITH]
   def END_DATE: END_DATE = "END_DATE".asInstanceOf[END_DATE]
   def ENFORCED: ENFORCED = "ENFORCED".asInstanceOf[ENFORCED]
   def ENHANCED: ENHANCED = "ENHANCED".asInstanceOf[ENHANCED]
+  def ENILimitExceeded: ENILimitExceeded = "ENILimitExceeded".asInstanceOf[ENILimitExceeded]
+  def ENTITLED: ENTITLED = "ENTITLED".asInstanceOf[ENTITLED]
   def EN_US: EN_US = "EN_US".asInstanceOf[EN_US]
   def EQ: EQ = "EQ".asInstanceOf[EQ]
   def EQUAL: EQUAL = "EQUAL".asInstanceOf[EQUAL]
@@ -13792,6 +15544,7 @@ object awsDashSdkLibStrings {
   def EXECUTE_SUCCESS: EXECUTE_SUCCESS = "EXECUTE_SUCCESS".asInstanceOf[EXECUTE_SUCCESS]
   def EXECUTING: EXECUTING = "EXECUTING".asInstanceOf[EXECUTING]
   def EXERCISER_MONKEY_OUTPUT: EXERCISER_MONKEY_OUTPUT = "EXERCISER_MONKEY_OUTPUT".asInstanceOf[EXERCISER_MONKEY_OUTPUT]
+  def EXPERIMENTAL: EXPERIMENTAL = "EXPERIMENTAL".asInstanceOf[EXPERIMENTAL]
   def EXPIRE: EXPIRE = "EXPIRE".asInstanceOf[EXPIRE]
   def EXPIRED: EXPIRED = "EXPIRED".asInstanceOf[EXPIRED]
   def EXPIRED_TOKEN: EXPIRED_TOKEN = "EXPIRED_TOKEN".asInstanceOf[EXPIRED_TOKEN]
@@ -13800,6 +15553,8 @@ object awsDashSdkLibStrings {
   def EXPLICIT_APPROVED: EXPLICIT_APPROVED = "EXPLICIT_APPROVED".asInstanceOf[EXPLICIT_APPROVED]
   def EXPLICIT_DENY: EXPLICIT_DENY = "EXPLICIT_DENY".asInstanceOf[EXPLICIT_DENY]
   def EXPLICIT_REJECTED: EXPLICIT_REJECTED = "EXPLICIT_REJECTED".asInstanceOf[EXPLICIT_REJECTED]
+  def EXPLOIT_KIT: EXPLOIT_KIT = "EXPLOIT_KIT".asInstanceOf[EXPLOIT_KIT]
+  def EXPLOIT_SITE: EXPLOIT_SITE = "EXPLOIT_SITE".asInstanceOf[EXPLOIT_SITE]
   def EXPLORER_EVENT_LOG: EXPLORER_EVENT_LOG = "EXPLORER_EVENT_LOG".asInstanceOf[EXPLORER_EVENT_LOG]
   def EXPLORER_SUMMARY_LOG: EXPLORER_SUMMARY_LOG = "EXPLORER_SUMMARY_LOG".asInstanceOf[EXPLORER_SUMMARY_LOG]
   def EXPORT: EXPORT = "EXPORT".asInstanceOf[EXPORT]
@@ -13822,9 +15577,13 @@ object awsDashSdkLibStrings {
   def EncryptionStatus: EncryptionStatus = "EncryptionStatus".asInstanceOf[EncryptionStatus]
   def EnteringStandby: EnteringStandby = "EnteringStandby".asInstanceOf[EnteringStandby]
   def Enterprise: Enterprise = "Enterprise".asInstanceOf[Enterprise]
+  def EnterpriseDirectory: EnterpriseDirectory = "EnterpriseDirectory".asInstanceOf[EnterpriseDirectory]
+  def EnterpriseLWA: EnterpriseLWA = "EnterpriseLWA".asInstanceOf[EnterpriseLWA]
+  def EnterpriseOIDC: EnterpriseOIDC = "EnterpriseOIDC".asInstanceOf[EnterpriseOIDC]
   def Equal: Equal = "Equal".asInstanceOf[Equal]
   def EqualTo: EqualTo = "EqualTo".asInstanceOf[EqualTo]
   def Equals: Equals = "Equals".asInstanceOf[Equals]
+  def EssentialContainerExited: EssentialContainerExited = "EssentialContainerExited".asInstanceOf[EssentialContainerExited]
   def Evaluation: Evaluation = "Evaluation".asInstanceOf[Evaluation]
   def Event: Event = "Event".asInstanceOf[Event]
   def EventId: EventId = "EventId".asInstanceOf[EventId]
@@ -13844,18 +15603,23 @@ object awsDashSdkLibStrings {
   def Expedited: Expedited = "Expedited".asInstanceOf[Expedited]
   def Expired: Expired = "Expired".asInstanceOf[Expired]
   def Export: Export = "Export".asInstanceOf[Export]
+  def ExportSnapshotRecord: ExportSnapshotRecord = "ExportSnapshotRecord".asInstanceOf[ExportSnapshotRecord]
   def External: External = "External".asInstanceOf[External]
+  def ExtractingBundleFailure: ExtractingBundleFailure = "ExtractingBundleFailure".asInstanceOf[ExtractingBundleFailure]
   def F4V: F4V = "F4V".asInstanceOf[F4V]
   def FAHRENHEIT: FAHRENHEIT = "FAHRENHEIT".asInstanceOf[FAHRENHEIT]
   def FAIL: FAIL = "FAIL".asInstanceOf[FAIL]
   def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   def FAILED_ACTIONS: FAILED_ACTIONS = "FAILED_ACTIONS".asInstanceOf[FAILED_ACTIONS]
+  def FAILED_CREATION: FAILED_CREATION = "FAILED_CREATION".asInstanceOf[FAILED_CREATION]
+  def FAILED_RESOURCE_GONE: FAILED_RESOURCE_GONE = "FAILED_RESOURCE_GONE".asInstanceOf[FAILED_RESOURCE_GONE]
   def FAILING: FAILING = "FAILING".asInstanceOf[FAILING]
   def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
   def FAIL_ON_CONFLICT: FAIL_ON_CONFLICT = "FAIL_ON_CONFLICT".asInstanceOf[FAIL_ON_CONFLICT]
   def FAIL_WITH_403: FAIL_WITH_403 = "FAIL_WITH_403".asInstanceOf[FAIL_WITH_403]
   def FALLBACK: FALLBACK = "FALLBACK".asInstanceOf[FALLBACK]
   def FALSE: FALSE = "FALSE".asInstanceOf[FALSE]
+  def FALSE_POSITIVE: FALSE_POSITIVE = "FALSE_POSITIVE".asInstanceOf[FALSE_POSITIVE]
   def FARGATE: FARGATE = "FARGATE".asInstanceOf[FARGATE]
   def FAST_FORWARD_MERGE: FAST_FORWARD_MERGE = "FAST_FORWARD_MERGE".asInstanceOf[FAST_FORWARD_MERGE]
   def FATAL: FATAL = "FATAL".asInstanceOf[FATAL]
@@ -13908,6 +15672,7 @@ object awsDashSdkLibStrings {
   def FLEET_VPC_PEERING_DELETED: FLEET_VPC_PEERING_DELETED = "FLEET_VPC_PEERING_DELETED".asInstanceOf[FLEET_VPC_PEERING_DELETED]
   def FLEET_VPC_PEERING_FAILED: FLEET_VPC_PEERING_FAILED = "FLEET_VPC_PEERING_FAILED".asInstanceOf[FLEET_VPC_PEERING_FAILED]
   def FLEET_VPC_PEERING_SUCCEEDED: FLEET_VPC_PEERING_SUCCEEDED = "FLEET_VPC_PEERING_SUCCEEDED".asInstanceOf[FLEET_VPC_PEERING_SUCCEEDED]
+  def `FLINK-1_6`: `FLINK-1_6` = "FLINK-1_6".asInstanceOf[`FLINK-1_6`]
   def FLOATING_POINT: FLOATING_POINT = "FLOATING_POINT".asInstanceOf[FLOATING_POINT]
   def FLUSH_IN_PROGRESS: FLUSH_IN_PROGRESS = "FLUSH_IN_PROGRESS".asInstanceOf[FLUSH_IN_PROGRESS]
   def FOLDER: FOLDER = "FOLDER".asInstanceOf[FOLDER]
@@ -13938,7 +15703,9 @@ object awsDashSdkLibStrings {
   def FORCE_HDR10: FORCE_HDR10 = "FORCE_HDR10".asInstanceOf[FORCE_HDR10]
   def FORCE_HLG_2020: FORCE_HLG_2020 = "FORCE_HLG_2020".asInstanceOf[FORCE_HLG_2020]
   def FORECASTED: FORECASTED = "FORECASTED".asInstanceOf[FORECASTED]
+  def FORM: FORM = "FORM".asInstanceOf[FORM]
   def FORM_FACTOR: FORM_FACTOR = "FORM_FACTOR".asInstanceOf[FORM_FACTOR]
+  def FORWARD: FORWARD = "FORWARD".asInstanceOf[FORWARD]
   def FQDN: FQDN = "FQDN".asInstanceOf[FQDN]
   def FRAGMENT_NUMBER: FRAGMENT_NUMBER = "FRAGMENT_NUMBER".asInstanceOf[FRAGMENT_NUMBER]
   def FRAMERATE_23_97: FRAMERATE_23_97 = "FRAMERATE_23_97".asInstanceOf[FRAMERATE_23_97]
@@ -13947,6 +15714,7 @@ object awsDashSdkLibStrings {
   def FRAMERATE_29_97_NON_DROPFRAME: FRAMERATE_29_97_NON_DROPFRAME = "FRAMERATE_29_97_NON_DROPFRAME".asInstanceOf[FRAMERATE_29_97_NON_DROPFRAME]
   def FRAMES: FRAMES = "FRAMES".asInstanceOf[FRAMES]
   def FRAME_CAPTURE: FRAME_CAPTURE = "FRAME_CAPTURE".asInstanceOf[FRAME_CAPTURE]
+  def FREQUENCY: FREQUENCY = "FREQUENCY".asInstanceOf[FREQUENCY]
   def FRI: FRI = "FRI".asInstanceOf[FRI]
   def FRIDAY: FRIDAY = "FRIDAY".asInstanceOf[FRIDAY]
   def FULFILLED: FULFILLED = "FULFILLED".asInstanceOf[FULFILLED]
@@ -13954,8 +15722,10 @@ object awsDashSdkLibStrings {
   def FULL_ACCESS: FULL_ACCESS = "FULL_ACCESS".asInstanceOf[FULL_ACCESS]
   def FULL_CONTROL: FULL_CONTROL = "FULL_CONTROL".asInstanceOf[FULL_CONTROL]
   def FULL_NAME: FULL_NAME = "FULL_NAME".asInstanceOf[FULL_NAME]
+  def FUZE: FUZE = "FUZE".asInstanceOf[FUZE]
   def Facebook: Facebook = "Facebook".asInstanceOf[Facebook]
   def FacetValidationException: FacetValidationException = "FacetValidationException".asInstanceOf[FacetValidationException]
+  def Fail: Fail = "Fail".asInstanceOf[Fail]
   def FailStateEntered: FailStateEntered = "FailStateEntered".asInstanceOf[FailStateEntered]
   def FailWorkflowExecution: FailWorkflowExecution = "FailWorkflowExecution".asInstanceOf[FailWorkflowExecution]
   def Failed: Failed = "Failed".asInstanceOf[Failed]
@@ -13963,17 +15733,24 @@ object awsDashSdkLibStrings {
   def FailedEventsOnly: FailedEventsOnly = "FailedEventsOnly".asInstanceOf[FailedEventsOnly]
   def FailedToValidate: FailedToValidate = "FailedToValidate".asInstanceOf[FailedToValidate]
   def Failure: Failure = "Failure".asInstanceOf[Failure]
+  def FailureThresholdBreached: FailureThresholdBreached = "FailureThresholdBreached".asInstanceOf[FailureThresholdBreached]
   def False: False = "False".asInstanceOf[False]
   def Female: Female = "Female".asInstanceOf[Female]
   def FifoQueue: FifoQueue = "FifoQueue".asInstanceOf[FifoQueue]
   def File: File = "File".asInstanceOf[File]
   def FileSystem: FileSystem = "FileSystem".asInstanceOf[FileSystem]
   def FinalObjectiveMetricValue: FinalObjectiveMetricValue = "FinalObjectiveMetricValue".asInstanceOf[FinalObjectiveMetricValue]
+  def Forbidden: Forbidden = "Forbidden".asInstanceOf[Forbidden]
   def ForceResetDeployment: ForceResetDeployment = "ForceResetDeployment".asInstanceOf[ForceResetDeployment]
+  def ForecastAndScale: ForecastAndScale = "ForecastAndScale".asInstanceOf[ForecastAndScale]
+  def ForecastOnly: ForecastOnly = "ForecastOnly".asInstanceOf[ForecastOnly]
   def Forest: Forest = "Forest".asInstanceOf[Forest]
   def ForgotPassword: ForgotPassword = "ForgotPassword".asInstanceOf[ForgotPassword]
   def Forward: Forward = "Forward".asInstanceOf[Forward]
+  def FreeOfAdultContent: FreeOfAdultContent = "FreeOfAdultContent".asInstanceOf[FreeOfAdultContent]
+  def FreeOfPersonallyIdentifiableInformation: FreeOfPersonallyIdentifiableInformation = "FreeOfPersonallyIdentifiableInformation".asInstanceOf[FreeOfPersonallyIdentifiableInformation]
   def FreeStorageSpace: FreeStorageSpace = "FreeStorageSpace".asInstanceOf[FreeStorageSpace]
+  def FreeText: FreeText = "FreeText".asInstanceOf[FreeText]
   def Fulfilled: Fulfilled = "Fulfilled".asInstanceOf[Fulfilled]
   def FullProtection: FullProtection = "FullProtection".asInstanceOf[FullProtection]
   def FullTextSearch: FullTextSearch = "FullTextSearch".asInstanceOf[FullTextSearch]
@@ -13984,6 +15761,7 @@ object awsDashSdkLibStrings {
   def GCM: GCM = "GCM".asInstanceOf[GCM]
   def GE: GE = "GE".asInstanceOf[GE]
   def GENERIC_EVENT: GENERIC_EVENT = "GENERIC_EVENT".asInstanceOf[GENERIC_EVENT]
+  def GENERIC_NAME: GENERIC_NAME = "GENERIC_NAME".asInstanceOf[GENERIC_NAME]
   def GET: GET = "GET".asInstanceOf[GET]
   def GET_HLS_STREAMING_SESSION_URL: GET_HLS_STREAMING_SESSION_URL = "GET_HLS_STREAMING_SESSION_URL".asInstanceOf[GET_HLS_STREAMING_SESSION_URL]
   def GET_MEDIA: GET_MEDIA = "GET_MEDIA".asInstanceOf[GET_MEDIA]
@@ -13999,6 +15777,8 @@ object awsDashSdkLibStrings {
   def GLACIER: GLACIER = "GLACIER".asInstanceOf[GLACIER]
   def GOLANG: GOLANG = "GOLANG".asInstanceOf[GOLANG]
   def GOOGLE_DRIVE: GOOGLE_DRIVE = "GOOGLE_DRIVE".asInstanceOf[GOOGLE_DRIVE]
+  def GOOGLE_HANGOUTS: GOOGLE_HANGOUTS = "GOOGLE_HANGOUTS".asInstanceOf[GOOGLE_HANGOUTS]
+  def GOVERNANCE: GOVERNANCE = "GOVERNANCE".asInstanceOf[GOVERNANCE]
   def GRAPHICS: GRAPHICS = "GRAPHICS".asInstanceOf[GRAPHICS]
   def GRAPHICSPRO: GRAPHICSPRO = "GRAPHICSPRO".asInstanceOf[GRAPHICSPRO]
   def GRAPHML: GRAPHML = "GRAPHML".asInstanceOf[GRAPHML]
@@ -14012,6 +15792,7 @@ object awsDashSdkLibStrings {
   def GangliaUrl: GangliaUrl = "GangliaUrl".asInstanceOf[GangliaUrl]
   def GangliaUser: GangliaUser = "GangliaUser".asInstanceOf[GangliaUser]
   def Gateway: Gateway = "Gateway".asInstanceOf[Gateway]
+  def Gazebo: Gazebo = "Gazebo".asInstanceOf[Gazebo]
   def GenerateDataKey: GenerateDataKey = "GenerateDataKey".asInstanceOf[GenerateDataKey]
   def GenerateDataKeyWithoutPlaintext: GenerateDataKeyWithoutPlaintext = "GenerateDataKeyWithoutPlaintext".asInstanceOf[GenerateDataKeyWithoutPlaintext]
   def GeoMatch: GeoMatch = "GeoMatch".asInstanceOf[GeoMatch]
@@ -14028,6 +15809,9 @@ object awsDashSdkLibStrings {
   def GreaterThanOrEqualToThreshold: GreaterThanOrEqualToThreshold = "GreaterThanOrEqualToThreshold".asInstanceOf[GreaterThanOrEqualToThreshold]
   def GreaterThanThreshold: GreaterThanThreshold = "GreaterThanThreshold".asInstanceOf[GreaterThanThreshold]
   def Green: Green = "Green".asInstanceOf[Green]
+  def GreengrassContainer: GreengrassContainer = "GreengrassContainer".asInstanceOf[GreengrassContainer]
+  def GreengrassDeploymentFailed: GreengrassDeploymentFailed = "GreengrassDeploymentFailed".asInstanceOf[GreengrassDeploymentFailed]
+  def GreengrassGroupVersionDoesNotExist: GreengrassGroupVersionDoesNotExist = "GreengrassGroupVersionDoesNotExist".asInstanceOf[GreengrassGroupVersionDoesNotExist]
   def GreengrassSystem: GreengrassSystem = "GreengrassSystem".asInstanceOf[GreengrassSystem]
   def Grey: Grey = "Grey".asInstanceOf[Grey]
   def Group: Group = "Group".asInstanceOf[Group]
@@ -14053,11 +15837,16 @@ object awsDashSdkLibStrings {
   def H264_LEVEL_5_1: H264_LEVEL_5_1 = "H264_LEVEL_5_1".asInstanceOf[H264_LEVEL_5_1]
   def H264_LEVEL_5_2: H264_LEVEL_5_2 = "H264_LEVEL_5_2".asInstanceOf[H264_LEVEL_5_2]
   def H264_LEVEL_AUTO: H264_LEVEL_AUTO = "H264_LEVEL_AUTO".asInstanceOf[H264_LEVEL_AUTO]
+  def H323: H323 = "H323".asInstanceOf[H323]
   def HANDLE_TIME: HANDLE_TIME = "HANDLE_TIME".asInstanceOf[HANDLE_TIME]
   def HANDSHAKE: HANDSHAKE = "HANDSHAKE".asInstanceOf[HANDSHAKE]
   def HAPPY: HAPPY = "HAPPY".asInstanceOf[HAPPY]
   def HARD: HARD = "HARD".asInstanceOf[HARD]
   def HASH: HASH = "HASH".asInstanceOf[HASH]
+  def HASH_MD5: HASH_MD5 = "HASH_MD5".asInstanceOf[HASH_MD5]
+  def HASH_SHA1: HASH_SHA1 = "HASH_SHA1".asInstanceOf[HASH_SHA1]
+  def HASH_SHA256: HASH_SHA256 = "HASH_SHA256".asInstanceOf[HASH_SHA256]
+  def HASH_SHA512: HASH_SHA512 = "HASH_SHA512".asInstanceOf[HASH_SHA512]
   def HBBTV_1_5: HBBTV_1_5 = "HBBTV_1_5".asInstanceOf[HBBTV_1_5]
   def HD: HD = "HD".asInstanceOf[HD]
   def HDR10: HDR10 = "HDR10".asInstanceOf[HDR10]
@@ -14111,6 +15900,7 @@ object awsDashSdkLibStrings {
   def HTTP_PROXY: HTTP_PROXY = "HTTP_PROXY".asInstanceOf[HTTP_PROXY]
   def HTTP_STR_MATCH: HTTP_STR_MATCH = "HTTP_STR_MATCH".asInstanceOf[HTTP_STR_MATCH]
   def HVC1: HVC1 = "HVC1".asInstanceOf[HVC1]
+  def `HYPERV-MANAGER`: `HYPERV-MANAGER` = "HYPERV-MANAGER".asInstanceOf[`HYPERV-MANAGER`]
   def H_264: H_264 = "H_264".asInstanceOf[H_264]
   def H_265: H_265 = "H_265".asInstanceOf[H_265]
   def HaproxyHealthCheckMethod: HaproxyHealthCheckMethod = "HaproxyHealthCheckMethod".asInstanceOf[HaproxyHealthCheckMethod]
@@ -14138,6 +15928,7 @@ object awsDashSdkLibStrings {
   def IAM_SERVICE_ROLE_MISSING_ENI_DELETE_ACTION: IAM_SERVICE_ROLE_MISSING_ENI_DELETE_ACTION = "IAM_SERVICE_ROLE_MISSING_ENI_DELETE_ACTION".asInstanceOf[IAM_SERVICE_ROLE_MISSING_ENI_DELETE_ACTION]
   def IAM_SERVICE_ROLE_MISSING_ENI_DESCRIBE_ACTION: IAM_SERVICE_ROLE_MISSING_ENI_DESCRIBE_ACTION = "IAM_SERVICE_ROLE_MISSING_ENI_DESCRIBE_ACTION".asInstanceOf[IAM_SERVICE_ROLE_MISSING_ENI_DESCRIBE_ACTION]
   def ID: ID = "ID".asInstanceOf[ID]
+  def IDENTIFIER: IDENTIFIER = "IDENTIFIER".asInstanceOf[IDENTIFIER]
   def IDLE: IDLE = "IDLE".asInstanceOf[IDLE]
   def ID_ALREADY_IN_USE: ID_ALREADY_IN_USE = "ID_ALREADY_IN_USE".asInstanceOf[ID_ALREADY_IN_USE]
   def IGNORE: IGNORE = "IGNORE".asInstanceOf[IGNORE]
@@ -14156,6 +15947,7 @@ object awsDashSdkLibStrings {
   def IMPORTING: IMPORTING = "IMPORTING".asInstanceOf[IMPORTING]
   def IN: IN = "IN".asInstanceOf[IN]
   def INACTIVE: INACTIVE = "INACTIVE".asInstanceOf[INACTIVE]
+  def INBOUND: INBOUND = "INBOUND".asInstanceOf[INBOUND]
   def INCLUDE: INCLUDE = "INCLUDE".asInstanceOf[INCLUDE]
   def INCLUSIVE: INCLUSIVE = "INCLUSIVE".asInstanceOf[INCLUSIVE]
   def INCREASE_DATA_RETENTION: INCREASE_DATA_RETENTION = "INCREASE_DATA_RETENTION".asInstanceOf[INCREASE_DATA_RETENTION]
@@ -14166,10 +15958,12 @@ object awsDashSdkLibStrings {
   def INFO: INFO = "INFO".asInstanceOf[INFO]
   def INFORMATIONAL: INFORMATIONAL = "INFORMATIONAL".asInstanceOf[INFORMATIONAL]
   def INHERITED: INHERITED = "INHERITED".asInstanceOf[INHERITED]
+  def INITIAL: INITIAL = "INITIAL".asInstanceOf[INITIAL]
   def INITIALIZED: INITIALIZED = "INITIALIZED".asInstanceOf[INITIALIZED]
   def INITIALIZE_FROM_SOURCE: INITIALIZE_FROM_SOURCE = "INITIALIZE_FROM_SOURCE".asInstanceOf[INITIALIZE_FROM_SOURCE]
   def INITIALIZE_IN_PROGRESS: INITIALIZE_IN_PROGRESS = "INITIALIZE_IN_PROGRESS".asInstanceOf[INITIALIZE_IN_PROGRESS]
   def INITIALIZING: INITIALIZING = "INITIALIZING".asInstanceOf[INITIALIZING]
+  def INITIATED_CALL: INITIATED_CALL = "INITIATED_CALL".asInstanceOf[INITIATED_CALL]
   def INOPERABLE: INOPERABLE = "INOPERABLE".asInstanceOf[INOPERABLE]
   def INPROGRESS: INPROGRESS = "INPROGRESS".asInstanceOf[INPROGRESS]
   def INPUT: INPUT = "INPUT".asInstanceOf[INPUT]
@@ -14195,11 +15989,13 @@ object awsDashSdkLibStrings {
   def INSTRUMENTATION_OUTPUT: INSTRUMENTATION_OUTPUT = "INSTRUMENTATION_OUTPUT".asInstanceOf[INSTRUMENTATION_OUTPUT]
   def INSTRUMENTATION_TEST_PACKAGE: INSTRUMENTATION_TEST_PACKAGE = "INSTRUMENTATION_TEST_PACKAGE".asInstanceOf[INSTRUMENTATION_TEST_PACKAGE]
   def INSTRUMENTATION_TEST_SPEC: INSTRUMENTATION_TEST_SPEC = "INSTRUMENTATION_TEST_SPEC".asInstanceOf[INSTRUMENTATION_TEST_SPEC]
+  def INSUFFICIENT_CLOUDHSM_HSMS: INSUFFICIENT_CLOUDHSM_HSMS = "INSUFFICIENT_CLOUDHSM_HSMS".asInstanceOf[INSUFFICIENT_CLOUDHSM_HSMS]
   def INSUFFICIENT_DATA: INSUFFICIENT_DATA = "INSUFFICIENT_DATA".asInstanceOf[INSUFFICIENT_DATA]
   def INSYNC: INSYNC = "INSYNC".asInstanceOf[INSYNC]
   def INTEGER: INTEGER = "INTEGER".asInstanceOf[INTEGER]
   def INTEGRATION_FAILURE: INTEGRATION_FAILURE = "INTEGRATION_FAILURE".asInstanceOf[INTEGRATION_FAILURE]
   def INTEGRATION_TIMEOUT: INTEGRATION_TIMEOUT = "INTEGRATION_TIMEOUT".asInstanceOf[INTEGRATION_TIMEOUT]
+  def INTELLIGENT_TIERING: INTELLIGENT_TIERING = "INTELLIGENT_TIERING".asInstanceOf[INTELLIGENT_TIERING]
   def INTENT: INTENT = "INTENT".asInstanceOf[INTENT]
   def INTERACTION_AND_HOLD_TIME: INTERACTION_AND_HOLD_TIME = "INTERACTION_AND_HOLD_TIME".asInstanceOf[INTERACTION_AND_HOLD_TIME]
   def INTERACTION_TIME: INTERACTION_TIME = "INTERACTION_TIME".asInstanceOf[INTERACTION_TIME]
@@ -14217,23 +16013,29 @@ object awsDashSdkLibStrings {
   def INTRA_DC_PRECISION_11: INTRA_DC_PRECISION_11 = "INTRA_DC_PRECISION_11".asInstanceOf[INTRA_DC_PRECISION_11]
   def INTRA_DC_PRECISION_8: INTRA_DC_PRECISION_8 = "INTRA_DC_PRECISION_8".asInstanceOf[INTRA_DC_PRECISION_8]
   def INTRA_DC_PRECISION_9: INTRA_DC_PRECISION_9 = "INTRA_DC_PRECISION_9".asInstanceOf[INTRA_DC_PRECISION_9]
+  def INT_VALUE: INT_VALUE = "INT_VALUE".asInstanceOf[INT_VALUE]
   def INVALID: INVALID = "INVALID".asInstanceOf[INVALID]
   def INVALID_ADDRESS: INVALID_ADDRESS = "INVALID_ADDRESS".asInstanceOf[INVALID_ADDRESS]
   def INVALID_API_KEY: INVALID_API_KEY = "INVALID_API_KEY".asInstanceOf[INVALID_API_KEY]
   def INVALID_ARN: INVALID_ARN = "INVALID_ARN".asInstanceOf[INVALID_ARN]
   def INVALID_ATTRIBUTE_VALUE_REMOVED: INVALID_ATTRIBUTE_VALUE_REMOVED = "INVALID_ATTRIBUTE_VALUE_REMOVED".asInstanceOf[INVALID_ATTRIBUTE_VALUE_REMOVED]
+  def INVALID_CREDENTIALS: INVALID_CREDENTIALS = "INVALID_CREDENTIALS".asInstanceOf[INVALID_CREDENTIALS]
+  def INVALID_ECS_SERVICE: INVALID_ECS_SERVICE = "INVALID_ECS_SERVICE".asInstanceOf[INVALID_ECS_SERVICE]
   def INVALID_EMAIL: INVALID_EMAIL = "INVALID_EMAIL".asInstanceOf[INVALID_EMAIL]
   def INVALID_LAMBDA_CONFIGURATION: INVALID_LAMBDA_CONFIGURATION = "INVALID_LAMBDA_CONFIGURATION".asInstanceOf[INVALID_LAMBDA_CONFIGURATION]
   def INVALID_LAMBDA_FUNCTION: INVALID_LAMBDA_FUNCTION = "INVALID_LAMBDA_FUNCTION".asInstanceOf[INVALID_LAMBDA_FUNCTION]
   def INVALID_PUBLIC_DOMAIN: INVALID_PUBLIC_DOMAIN = "INVALID_PUBLIC_DOMAIN".asInstanceOf[INVALID_PUBLIC_DOMAIN]
+  def INVALID_REVISION: INVALID_REVISION = "INVALID_REVISION".asInstanceOf[INVALID_REVISION]
   def INVALID_SIGNATURE: INVALID_SIGNATURE = "INVALID_SIGNATURE".asInstanceOf[INVALID_SIGNATURE]
   def INVALID_SUBNET_CONFIGURATION: INVALID_SUBNET_CONFIGURATION = "INVALID_SUBNET_CONFIGURATION".asInstanceOf[INVALID_SUBNET_CONFIGURATION]
   def INVERSE_TELECINE: INVERSE_TELECINE = "INVERSE_TELECINE".asInstanceOf[INVERSE_TELECINE]
   def INVITE: INVITE = "INVITE".asInstanceOf[INVITE]
   def INVITED: INVITED = "INVITED".asInstanceOf[INVITED]
+  def IN_ERROR: IN_ERROR = "IN_ERROR".asInstanceOf[IN_ERROR]
   def IN_PLACE: IN_PLACE = "IN_PLACE".asInstanceOf[IN_PLACE]
   def IN_PROGRESS: IN_PROGRESS = "IN_PROGRESS".asInstanceOf[IN_PROGRESS]
   def IN_PROGRESS_IN_ERROR: IN_PROGRESS_IN_ERROR = "IN_PROGRESS_IN_ERROR".asInstanceOf[IN_PROGRESS_IN_ERROR]
+  def IN_SYNC: IN_SYNC = "IN_SYNC".asInstanceOf[IN_SYNC]
   def IN_USE: IN_USE = "IN_USE".asInstanceOf[IN_USE]
   def IOS: IOS = "IOS".asInstanceOf[IOS]
   def IOS_APP: IOS_APP = "IOS_APP".asInstanceOf[IOS_APP]
@@ -14258,6 +16060,7 @@ object awsDashSdkLibStrings {
   def IT_REGISTRANT_ENTITY_TYPE: IT_REGISTRANT_ENTITY_TYPE = "IT_REGISTRANT_ENTITY_TYPE".asInstanceOf[IT_REGISTRANT_ENTITY_TYPE]
   def IamRole: IamRole = "IamRole".asInstanceOf[IamRole]
   def Id: Id = "Id".asInstanceOf[Id]
+  def IdenticalDataAndAlgorithm: IdenticalDataAndAlgorithm = "IdenticalDataAndAlgorithm".asInstanceOf[IdenticalDataAndAlgorithm]
   def IdleInstances: IdleInstances = "IdleInstances".asInstanceOf[IdleInstances]
   def ImageNotFound: ImageNotFound = "ImageNotFound".asInstanceOf[ImageNotFound]
   def ImageTagDoesNotMatchDigest: ImageTagDoesNotMatchDigest = "ImageTagDoesNotMatchDigest".asInstanceOf[ImageTagDoesNotMatchDigest]
@@ -14267,6 +16070,7 @@ object awsDashSdkLibStrings {
   def InClassic: InClassic = "InClassic".asInstanceOf[InClassic]
   def InProgress: InProgress = "InProgress".asInstanceOf[InProgress]
   def InService: InService = "InService".asInstanceOf[InService]
+  def InSync: InSync = "InSync".asInstanceOf[InSync]
   def InTransitToAWS: InTransitToAWS = "InTransitToAWS".asInstanceOf[InTransitToAWS]
   def InTransitToCustomer: InTransitToCustomer = "InTransitToCustomer".asInstanceOf[InTransitToCustomer]
   def InUse: InUse = "InUse".asInstanceOf[InUse]
@@ -14300,17 +16104,22 @@ object awsDashSdkLibStrings {
   def InstanceSnapshot: InstanceSnapshot = "InstanceSnapshot".asInstanceOf[InstanceSnapshot]
   def InstanceStart: InstanceStart = "InstanceStart".asInstanceOf[InstanceStart]
   def InstanceSuccess: InstanceSuccess = "InstanceSuccess".asInstanceOf[InstanceSuccess]
+  def InstanceTarget: InstanceTarget = "InstanceTarget".asInstanceOf[InstanceTarget]
   def InstanceType: InstanceType = "InstanceType".asInstanceOf[InstanceType]
   def InstancesHealth: InstancesHealth = "InstancesHealth".asInstanceOf[InstancesHealth]
+  def Integer: Integer = "Integer".asInstanceOf[Integer]
   def Intended: Intended = "Intended".asInstanceOf[Intended]
   def Interactive: Interactive = "Interactive".asInstanceOf[Interactive]
   def Interface: Interface = "Interface".asInstanceOf[Interface]
   def InternalError: InternalError = "InternalError".asInstanceOf[InternalError]
   def InternalFailure: InternalFailure = "InternalFailure".asInstanceOf[InternalFailure]
   def InternalServerError: InternalServerError = "InternalServerError".asInstanceOf[InternalServerError]
+  def InternalServiceError: InternalServiceError = "InternalServiceError".asInstanceOf[InternalServiceError]
   def InternalServiceException: InternalServiceException = "InternalServiceException".asInstanceOf[InternalServiceException]
   def Invalid: Invalid = "Invalid".asInstanceOf[Invalid]
   def InvalidArnException: InvalidArnException = "InvalidArnException".asInstanceOf[InvalidArnException]
+  def InvalidBundleRobotApplication: InvalidBundleRobotApplication = "InvalidBundleRobotApplication".asInstanceOf[InvalidBundleRobotApplication]
+  def InvalidBundleSimulationApplication: InvalidBundleSimulationApplication = "InvalidBundleSimulationApplication".asInstanceOf[InvalidBundleSimulationApplication]
   def InvalidEnvironmentState: InvalidEnvironmentState = "InvalidEnvironmentState".asInstanceOf[InvalidEnvironmentState]
   def InvalidImageDigest: InvalidImageDigest = "InvalidImageDigest".asInstanceOf[InvalidImageDigest]
   def InvalidImageTag: InvalidImageTag = "InvalidImageTag".asInstanceOf[InvalidImageTag]
@@ -14350,6 +16159,7 @@ object awsDashSdkLibStrings {
   def JvmOptions: JvmOptions = "JvmOptions".asInstanceOf[JvmOptions]
   def JvmVersion: JvmVersion = "JvmVersion".asInstanceOf[JvmVersion]
   def KEEP_ALIVE: KEEP_ALIVE = "KEEP_ALIVE".asInstanceOf[KEEP_ALIVE]
+  def KEYLOGGER: KEYLOGGER = "KEYLOGGER".asInstanceOf[KEYLOGGER]
   def KEYS_ONLY: KEYS_ONLY = "KEYS_ONLY".asInstanceOf[KEYS_ONLY]
   def KEY_AGREEMENT: KEY_AGREEMENT = "KEY_AGREEMENT".asInstanceOf[KEY_AGREEMENT]
   def KEY_AND_VALUE: KEY_AND_VALUE = "KEY_AND_VALUE".asInstanceOf[KEY_AND_VALUE]
@@ -14363,6 +16173,7 @@ object awsDashSdkLibStrings {
   def KILO_BYTES: KILO_BYTES = "KILO_BYTES".asInstanceOf[KILO_BYTES]
   def KILO_BYTES_PER_SECOND: KILO_BYTES_PER_SECOND = "KILO_BYTES_PER_SECOND".asInstanceOf[KILO_BYTES_PER_SECOND]
   def KMS: KMS = "KMS".asInstanceOf[KMS]
+  def KeepExternalPolicies: KeepExternalPolicies = "KeepExternalPolicies".asInstanceOf[KeepExternalPolicies]
   def KeyId: KeyId = "KeyId".asInstanceOf[KeyId]
   def KeyPair: KeyPair = "KeyPair".asInstanceOf[KeyPair]
   def Kik: Kik = "Kik".asInstanceOf[Kik]
@@ -14371,6 +16182,7 @@ object awsDashSdkLibStrings {
   def Kilobytes: Kilobytes = "Kilobytes".asInstanceOf[Kilobytes]
   def `Kilobytes/Second`: `Kilobytes/Second` = "Kilobytes/Second".asInstanceOf[`Kilobytes/Second`]
   def KinesisStreamAsSource: KinesisStreamAsSource = "KinesisStreamAsSource".asInstanceOf[KinesisStreamAsSource]
+  def Kinetic: Kinetic = "Kinetic".asInstanceOf[Kinetic]
   def KmsDataKeyReusePeriodSeconds: KmsDataKeyReusePeriodSeconds = "KmsDataKeyReusePeriodSeconds".asInstanceOf[KmsDataKeyReusePeriodSeconds]
   def KmsMasterKeyId: KmsMasterKeyId = "KmsMasterKeyId".asInstanceOf[KmsMasterKeyId]
   def LAMBDA: LAMBDA = "LAMBDA".asInstanceOf[LAMBDA]
@@ -14385,6 +16197,11 @@ object awsDashSdkLibStrings {
   def LAST_STOPPED_POINT: LAST_STOPPED_POINT = "LAST_STOPPED_POINT".asInstanceOf[LAST_STOPPED_POINT]
   def LATEST: LATEST = "LATEST".asInstanceOf[LATEST]
   def LATM_LOAS: LATM_LOAS = "LATM_LOAS".asInstanceOf[LATM_LOAS]
+  def LAUNCHED: LAUNCHED = "LAUNCHED".asInstanceOf[LAUNCHED]
+  def LAUNCHING: LAUNCHING = "LAUNCHING".asInstanceOf[LAUNCHING]
+  def LAUNCH_FAILED: LAUNCH_FAILED = "LAUNCH_FAILED".asInstanceOf[LAUNCH_FAILED]
+  def LAUNCH_IN_PROGRESS: LAUNCH_IN_PROGRESS = "LAUNCH_IN_PROGRESS".asInstanceOf[LAUNCH_IN_PROGRESS]
+  def LAUNCH_PENDING: LAUNCH_PENDING = "LAUNCH_PENDING".asInstanceOf[LAUNCH_PENDING]
   def LC: LC = "LC".asInstanceOf[LC]
   def LE: LE = "LE".asInstanceOf[LE]
   def LEAF_NODE: LEAF_NODE = "LEAF_NODE".asInstanceOf[LEAF_NODE]
@@ -14419,6 +16236,7 @@ object awsDashSdkLibStrings {
   def LINES: LINES = "LINES".asInstanceOf[LINES]
   def LINKED: LINKED = "LINKED".asInstanceOf[LINKED]
   def LINKED_ACCOUNT: LINKED_ACCOUNT = "LINKED_ACCOUNT".asInstanceOf[LINKED_ACCOUNT]
+  def LINK_TAG: LINK_TAG = "LINK_TAG".asInstanceOf[LINK_TAG]
   def LINUX: LINUX = "LINUX".asInstanceOf[LINUX]
   def LINUX_CONTAINER: LINUX_CONTAINER = "LINUX_CONTAINER".asInstanceOf[LINUX_CONTAINER]
   def LINUX_UNIX: LINUX_UNIX = "LINUX_UNIX".asInstanceOf[LINUX_UNIX]
@@ -14439,6 +16257,7 @@ object awsDashSdkLibStrings {
   def LO_RO: LO_RO = "LO_RO".asInstanceOf[LO_RO]
   def LT: LT = "LT".asInstanceOf[LT]
   def LT_RT: LT_RT = "LT_RT".asInstanceOf[LT_RT]
+  def LUSTRE: LUSTRE = "LUSTRE".asInstanceOf[LUSTRE]
   def Lambda: Lambda = "Lambda".asInstanceOf[Lambda]
   def LambdaArn: LambdaArn = "LambdaArn".asInstanceOf[LambdaArn]
   def LambdaFunctionFailed: LambdaFunctionFailed = "LambdaFunctionFailed".asInstanceOf[LambdaFunctionFailed]
@@ -14448,6 +16267,7 @@ object awsDashSdkLibStrings {
   def LambdaFunctionStarted: LambdaFunctionStarted = "LambdaFunctionStarted".asInstanceOf[LambdaFunctionStarted]
   def LambdaFunctionSucceeded: LambdaFunctionSucceeded = "LambdaFunctionSucceeded".asInstanceOf[LambdaFunctionSucceeded]
   def LambdaFunctionTimedOut: LambdaFunctionTimedOut = "LambdaFunctionTimedOut".asInstanceOf[LambdaFunctionTimedOut]
+  def LambdaTarget: LambdaTarget = "LambdaTarget".asInstanceOf[LambdaTarget]
   def Large: Large = "Large".asInstanceOf[Large]
   def LastEventTime: LastEventTime = "LastEventTime".asInstanceOf[LastEventTime]
   def LastExecutedAfter: LastExecutedAfter = "LastExecutedAfter".asInstanceOf[LastExecutedAfter]
@@ -14477,6 +16297,7 @@ object awsDashSdkLibStrings {
   def Listing: Listing = "Listing".asInstanceOf[Listing]
   def LoadBalancer: LoadBalancer = "LoadBalancer".asInstanceOf[LoadBalancer]
   def LoadBalancerTlsCertificate: LoadBalancerTlsCertificate = "LoadBalancerTlsCertificate".asInstanceOf[LoadBalancerTlsCertificate]
+  def LoadForecast: LoadForecast = "LoadForecast".asInstanceOf[LoadForecast]
   def Local: Local = "Local".asInstanceOf[Local]
   def LocalManagedPolicy: LocalManagedPolicy = "LocalManagedPolicy".asInstanceOf[LocalManagedPolicy]
   def LogStreamName: LogStreamName = "LogStreamName".asInstanceOf[LogStreamName]
@@ -14485,6 +16306,7 @@ object awsDashSdkLibStrings {
   def M: M = "M".asInstanceOf[M]
   def M2TS: M2TS = "M2TS".asInstanceOf[M2TS]
   def M3U8: M3U8 = "M3U8".asInstanceOf[M3U8]
+  def MACRO: MACRO = "MACRO".asInstanceOf[MACRO]
   def MAC_ADDRESS: MAC_ADDRESS = "MAC_ADDRESS".asInstanceOf[MAC_ADDRESS]
   def MAIN: MAIN = "MAIN".asInstanceOf[MAIN]
   def MAIN10_HIGH: MAIN10_HIGH = "MAIN10_HIGH".asInstanceOf[MAIN10_HIGH]
@@ -14498,6 +16320,7 @@ object awsDashSdkLibStrings {
   def MAIN_HIGH: MAIN_HIGH = "MAIN_HIGH".asInstanceOf[MAIN_HIGH]
   def MAIN_MAIN: MAIN_MAIN = "MAIN_MAIN".asInstanceOf[MAIN_MAIN]
   def MANAGED: MANAGED = "MANAGED".asInstanceOf[MANAGED]
+  def MANAGED_DOMAIN: MANAGED_DOMAIN = "MANAGED_DOMAIN".asInstanceOf[MANAGED_DOMAIN]
   def MANIFESTS_AND_SEGMENTS: MANIFESTS_AND_SEGMENTS = "MANIFESTS_AND_SEGMENTS".asInstanceOf[MANIFESTS_AND_SEGMENTS]
   def MANUAL: MANUAL = "MANUAL".asInstanceOf[MANUAL]
   def MANUAL_STOP: MANUAL_STOP = "MANUAL_STOP".asInstanceOf[MANUAL_STOP]
@@ -14525,6 +16348,8 @@ object awsDashSdkLibStrings {
   def MAX_ZONES_BY_REUSABLE_DELEGATION_SET: MAX_ZONES_BY_REUSABLE_DELEGATION_SET = "MAX_ZONES_BY_REUSABLE_DELEGATION_SET".asInstanceOf[MAX_ZONES_BY_REUSABLE_DELEGATION_SET]
   def MEAN: MEAN = "MEAN".asInstanceOf[MEAN]
   def MEASURE_ONLY: MEASURE_ONLY = "MEASURE_ONLY".asInstanceOf[MEASURE_ONLY]
+  def MEDICAL_CONDITION: MEDICAL_CONDITION = "MEDICAL_CONDITION".asInstanceOf[MEDICAL_CONDITION]
+  def MEDICATION: MEDICATION = "MEDICATION".asInstanceOf[MEDICATION]
   def MEDIUM: MEDIUM = "MEDIUM".asInstanceOf[MEDIUM]
   def MEDIUM_HIGH: MEDIUM_HIGH = "MEDIUM_HIGH".asInstanceOf[MEDIUM_HIGH]
   def MEDIUM_LOW: MEDIUM_LOW = "MEDIUM_LOW".asInstanceOf[MEDIUM_LOW]
@@ -14535,6 +16360,7 @@ object awsDashSdkLibStrings {
   def MEGA_BYTES_PER_SECOND: MEGA_BYTES_PER_SECOND = "MEGA_BYTES_PER_SECOND".asInstanceOf[MEGA_BYTES_PER_SECOND]
   def MEMORY: MEMORY = "MEMORY".asInstanceOf[MEMORY]
   def MESSAGE_LOG: MESSAGE_LOG = "MESSAGE_LOG".asInstanceOf[MESSAGE_LOG]
+  def MESSAGE_TAG: MESSAGE_TAG = "MESSAGE_TAG".asInstanceOf[MESSAGE_TAG]
   def METADATA: METADATA = "METADATA".asInstanceOf[METADATA]
   def METERED: METERED = "METERED".asInstanceOf[METERED]
   def METHOD: METHOD = "METHOD".asInstanceOf[METHOD]
@@ -14563,6 +16389,7 @@ object awsDashSdkLibStrings {
   def MLModelType: MLModelType = "MLModelType".asInstanceOf[MLModelType]
   def MOCK: MOCK = "MOCK".asInstanceOf[MOCK]
   def MODEL: MODEL = "MODEL".asInstanceOf[MODEL]
+  def MODIFIED: MODIFIED = "MODIFIED".asInstanceOf[MODIFIED]
   def MODIFY: MODIFY = "MODIFY".asInstanceOf[MODIFY]
   def MODIFYING: MODIFYING = "MODIFYING".asInstanceOf[MODIFYING]
   def MON: MON = "MON".asInstanceOf[MON]
@@ -14574,6 +16401,7 @@ object awsDashSdkLibStrings {
   def MOV: MOV = "MOV".asInstanceOf[MOV]
   def MP2: MP2 = "MP2".asInstanceOf[MP2]
   def MP4: MP4 = "MP4".asInstanceOf[MP4]
+  def MP4_FILE: MP4_FILE = "MP4_FILE".asInstanceOf[MP4_FILE]
   def MPD: MPD = "MPD".asInstanceOf[MPD]
   def MPEG: MPEG = "MPEG".asInstanceOf[MPEG]
   def MPEG2: MPEG2 = "MPEG2".asInstanceOf[MPEG2]
@@ -14591,8 +16419,10 @@ object awsDashSdkLibStrings {
   def MUSIC_LIGHT: MUSIC_LIGHT = "MUSIC_LIGHT".asInstanceOf[MUSIC_LIGHT]
   def MUSIC_STANDARD: MUSIC_STANDARD = "MUSIC_STANDARD".asInstanceOf[MUSIC_STANDARD]
   def MUST_EXIST: MUST_EXIST = "MUST_EXIST".asInstanceOf[MUST_EXIST]
+  def MUTEX: MUTEX = "MUTEX".asInstanceOf[MUTEX]
   def MX: MX = "MX".asInstanceOf[MX]
   def MXF: MXF = "MXF".asInstanceOf[MXF]
+  def MXNET: MXNET = "MXNET".asInstanceOf[MXNET]
   def MailFromDomainNotVerified: MailFromDomainNotVerified = "MailFromDomainNotVerified".asInstanceOf[MailFromDomainNotVerified]
   def MaintenanceWindow: MaintenanceWindow = "MaintenanceWindow".asInstanceOf[MaintenanceWindow]
   def Male: Male = "Male".asInstanceOf[Male]
@@ -14628,6 +16458,9 @@ object awsDashSdkLibStrings {
   def Missed: Missed = "Missed".asInstanceOf[Missed]
   def MissingDigestAndTag: MissingDigestAndTag = "MissingDigestAndTag".asInstanceOf[MissingDigestAndTag]
   def MissingLayerDigest: MissingLayerDigest = "MissingLayerDigest".asInstanceOf[MissingLayerDigest]
+  def MissingRobotApplicationArchitecture: MissingRobotApplicationArchitecture = "MissingRobotApplicationArchitecture".asInstanceOf[MissingRobotApplicationArchitecture]
+  def MissingRobotArchitecture: MissingRobotArchitecture = "MissingRobotArchitecture".asInstanceOf[MissingRobotArchitecture]
+  def MissingRobotDeploymentResource: MissingRobotDeploymentResource = "MissingRobotDeploymentResource".asInstanceOf[MissingRobotDeploymentResource]
   def Modify: Modify = "Modify".asInstanceOf[Modify]
   def MoveInProgress: MoveInProgress = "MoveInProgress".asInstanceOf[MoveInProgress]
   def MultiRecord: MultiRecord = "MultiRecord".asInstanceOf[MultiRecord]
@@ -14644,9 +16477,13 @@ object awsDashSdkLibStrings {
   def NATIVE_MAX_DRAWTIME: NATIVE_MAX_DRAWTIME = "NATIVE_MAX_DRAWTIME".asInstanceOf[NATIVE_MAX_DRAWTIME]
   def NATIVE_MIN_DRAWTIME: NATIVE_MIN_DRAWTIME = "NATIVE_MIN_DRAWTIME".asInstanceOf[NATIVE_MIN_DRAWTIME]
   def NE: NE = "NE".asInstanceOf[NE]
+  def NEGATION: NEGATION = "NEGATION".asInstanceOf[NEGATION]
   def NEGATIVE: NEGATIVE = "NEGATIVE".asInstanceOf[NEGATIVE]
   def NETWORK: NETWORK = "NETWORK".asInstanceOf[NETWORK]
+  def NETWORK_ERRORS: NETWORK_ERRORS = "NETWORK_ERRORS".asInstanceOf[NETWORK_ERRORS]
   def NETWORK_INTERFACE_LIMIT_EXCEEDED: NETWORK_INTERFACE_LIMIT_EXCEEDED = "NETWORK_INTERFACE_LIMIT_EXCEEDED".asInstanceOf[NETWORK_INTERFACE_LIMIT_EXCEEDED]
+  def NET_AMORTIZED_COST: NET_AMORTIZED_COST = "NET_AMORTIZED_COST".asInstanceOf[NET_AMORTIZED_COST]
+  def NET_UNBLENDED_COST: NET_UNBLENDED_COST = "NET_UNBLENDED_COST".asInstanceOf[NET_UNBLENDED_COST]
   def NEUTRAL: NEUTRAL = "NEUTRAL".asInstanceOf[NEUTRAL]
   def NEVER: NEVER = "NEVER".asInstanceOf[NEVER]
   def NEW: NEW = "NEW".asInstanceOf[NEW]
@@ -14655,6 +16492,7 @@ object awsDashSdkLibStrings {
   def NEW_PASSWORD_REQUIRED: NEW_PASSWORD_REQUIRED = "NEW_PASSWORD_REQUIRED".asInstanceOf[NEW_PASSWORD_REQUIRED]
   def NEXT_DAY: NEXT_DAY = "NEXT_DAY".asInstanceOf[NEXT_DAY]
   def NFS: NFS = "NFS".asInstanceOf[NFS]
+  def NO: NO = "NO".asInstanceOf[NO]
   def NODE: NODE = "NODE".asInstanceOf[NODE]
   def NODE_JS: NODE_JS = "NODE_JS".asInstanceOf[NODE_JS]
   def NODE_TYPE_SPECIFIC: NODE_TYPE_SPECIFIC = "NODE_TYPE_SPECIFIC".asInstanceOf[NODE_TYPE_SPECIFIC]
@@ -14664,15 +16502,18 @@ object awsDashSdkLibStrings {
   def NON_REPUDIATION: NON_REPUDIATION = "NON_REPUDIATION".asInstanceOf[NON_REPUDIATION]
   def NOOP: NOOP = "NOOP".asInstanceOf[NOOP]
   def NORMAL: NORMAL = "NORMAL".asInstanceOf[NORMAL]
+  def NORMALIZED_USAGE_AMOUNT: NORMALIZED_USAGE_AMOUNT = "NORMALIZED_USAGE_AMOUNT".asInstanceOf[NORMALIZED_USAGE_AMOUNT]
   def NOTES: NOTES = "NOTES".asInstanceOf[NOTES]
   def NOTIFICATIONS: NOTIFICATIONS = "NOTIFICATIONS".asInstanceOf[NOTIFICATIONS]
   def NOT_APPLICABLE: NOT_APPLICABLE = "NOT_APPLICABLE".asInstanceOf[NOT_APPLICABLE]
   def NOT_AVAILABLE: NOT_AVAILABLE = "NOT_AVAILABLE".asInstanceOf[NOT_AVAILABLE]
   def NOT_BUILT: NOT_BUILT = "NOT_BUILT".asInstanceOf[NOT_BUILT]
+  def NOT_CHECKED: NOT_CHECKED = "NOT_CHECKED".asInstanceOf[NOT_CHECKED]
   def NOT_CONTAINS: NOT_CONTAINS = "NOT_CONTAINS".asInstanceOf[NOT_CONTAINS]
   def NOT_DEFAULT: NOT_DEFAULT = "NOT_DEFAULT".asInstanceOf[NOT_DEFAULT]
   def NOT_ELIGIBLE: NOT_ELIGIBLE = "NOT_ELIGIBLE".asInstanceOf[NOT_ELIGIBLE]
   def NOT_EQUAL: NOT_EQUAL = "NOT_EQUAL".asInstanceOf[NOT_EQUAL]
+  def NOT_EQUALS: NOT_EQUALS = "NOT_EQUALS".asInstanceOf[NOT_EQUALS]
   def NOT_EXIST: NOT_EXIST = "NOT_EXIST".asInstanceOf[NOT_EXIST]
   def NOT_IMPORTED: NOT_IMPORTED = "NOT_IMPORTED".asInstanceOf[NOT_IMPORTED]
   def NOT_IN: NOT_IN = "NOT_IN".asInstanceOf[NOT_IN]
@@ -14680,11 +16521,13 @@ object awsDashSdkLibStrings {
   def NOT_NULL: NOT_NULL = "NOT_NULL".asInstanceOf[NOT_NULL]
   def NOT_REQUIRED: NOT_REQUIRED = "NOT_REQUIRED".asInstanceOf[NOT_REQUIRED]
   def NOT_SCHEDULED: NOT_SCHEDULED = "NOT_SCHEDULED".asInstanceOf[NOT_SCHEDULED]
+  def NOT_SHARED: NOT_SHARED = "NOT_SHARED".asInstanceOf[NOT_SHARED]
   def NOT_STARTED: NOT_STARTED = "NOT_STARTED".asInstanceOf[NOT_STARTED]
   def NOT_USEFUL: NOT_USEFUL = "NOT_USEFUL".asInstanceOf[NOT_USEFUL]
   def NOUN: NOUN = "NOUN".asInstanceOf[NOUN]
   def NOW: NOW = "NOW".asInstanceOf[NOW]
   def NO_ACTION: NO_ACTION = "NO_ACTION".asInstanceOf[NO_ACTION]
+  def NO_ANSWER: NO_ANSWER = "NO_ANSWER".asInstanceOf[NO_ANSWER]
   def NO_ARTIFACTS: NO_ARTIFACTS = "NO_ARTIFACTS".asInstanceOf[NO_ARTIFACTS]
   def NO_AVAILABLE_CONTACTS: NO_AVAILABLE_CONTACTS = "NO_AVAILABLE_CONTACTS".asInstanceOf[NO_AVAILABLE_CONTACTS]
   def NO_CACHE: NO_CACHE = "NO_CACHE".asInstanceOf[NO_CACHE]
@@ -14716,10 +16559,12 @@ object awsDashSdkLibStrings {
   def New: New = "New".asInstanceOf[New]
   def NewDeployment: NewDeployment = "NewDeployment".asInstanceOf[NewDeployment]
   def `No Upfront`: `No Upfront` = "No Upfront".asInstanceOf[`No Upfront`]
+  def NoContainer: NoContainer = "NoContainer".asInstanceOf[NoContainer]
   def NoData: NoData = "NoData".asInstanceOf[NoData]
   def NoEncryption: NoEncryption = "NoEncryption".asInstanceOf[NoEncryption]
   def NoPreference: NoPreference = "NoPreference".asInstanceOf[NoPreference]
   def NoProtection: NoProtection = "NoProtection".asInstanceOf[NoProtection]
+  def NoResponse: NoResponse = "NoResponse".asInstanceOf[NoResponse]
   def NoRisk: NoRisk = "NoRisk".asInstanceOf[NoRisk]
   def NoRotation: NoRotation = "NoRotation".asInstanceOf[NoRotation]
   def NoUpfront: NoUpfront = "NoUpfront".asInstanceOf[NoUpfront]
@@ -14728,11 +16573,14 @@ object awsDashSdkLibStrings {
   def NotConnected: NotConnected = "NotConnected".asInstanceOf[NotConnected]
   def NotEqual: NotEqual = "NotEqual".asInstanceOf[NotEqual]
   def NotEqualTo: NotEqualTo = "NotEqualTo".asInstanceOf[NotEqualTo]
+  def NotEquals: NotEquals = "NotEquals".asInstanceOf[NotEquals]
+  def NotFound: NotFound = "NotFound".asInstanceOf[NotFound]
   def NotIn: NotIn = "NotIn".asInstanceOf[NotIn]
   def NotIndexException: NotIndexException = "NotIndexException".asInstanceOf[NotIndexException]
   def NotNodeException: NotNodeException = "NotNodeException".asInstanceOf[NotNodeException]
   def NotPolicyException: NotPolicyException = "NotPolicyException".asInstanceOf[NotPolicyException]
   def NotReviewed: NotReviewed = "NotReviewed".asInstanceOf[NotReviewed]
+  def NotSent: NotSent = "NotSent".asInstanceOf[NotSent]
   def NotStarted: NotStarted = "NotStarted".asInstanceOf[NotStarted]
   def Not_Applicable: Not_Applicable = "Not_Applicable".asInstanceOf[Not_Applicable]
   def Number: Number = "Number".asInstanceOf[Number]
@@ -14741,11 +16589,13 @@ object awsDashSdkLibStrings {
   def OAUTH: OAUTH = "OAUTH".asInstanceOf[OAUTH]
   def OBJC: OBJC = "OBJC".asInstanceOf[OBJC]
   def OBJECT: OBJECT = "OBJECT".asInstanceOf[OBJECT]
+  def OBSERVED: OBSERVED = "OBSERVED".asInstanceOf[OBSERVED]
   def OBSOLETE: OBSOLETE = "OBSOLETE".asInstanceOf[OBSOLETE]
   def OCCUPANCY: OCCUPANCY = "OCCUPANCY".asInstanceOf[OCCUPANCY]
   def OCSP_SIGNING: OCSP_SIGNING = "OCSP_SIGNING".asInstanceOf[OCSP_SIGNING]
   def OFF: OFF = "OFF".asInstanceOf[OFF]
   def OFFLINE: OFFLINE = "OFFLINE".asInstanceOf[OFFLINE]
+  def OGRE: OGRE = "OGRE".asInstanceOf[OGRE]
   def OIDC: OIDC = "OIDC".asInstanceOf[OIDC]
   def OK: OK = "OK".asInstanceOf[OK]
   def OLDEST_CONTACT_AGE: OLDEST_CONTACT_AGE = "OLDEST_CONTACT_AGE".asInstanceOf[OLDEST_CONTACT_AGE]
@@ -14761,6 +16611,7 @@ object awsDashSdkLibStrings {
   def ONE_HOUR: ONE_HOUR = "ONE_HOUR".asInstanceOf[ONE_HOUR]
   def ONE_YEAR: ONE_YEAR = "ONE_YEAR".asInstanceOf[ONE_YEAR]
   def ONLINE: ONLINE = "ONLINE".asInstanceOf[ONLINE]
+  def ONNX: ONNX = "ONNX".asInstanceOf[ONNX]
   def ON_DEMAND: ON_DEMAND = "ON_DEMAND".asInstanceOf[ON_DEMAND]
   def ON_DEMAND_AUDIT_TASK: ON_DEMAND_AUDIT_TASK = "ON_DEMAND_AUDIT_TASK".asInstanceOf[ON_DEMAND_AUDIT_TASK]
   def OPEN: OPEN = "OPEN".asInstanceOf[OPEN]
@@ -14778,7 +16629,9 @@ object awsDashSdkLibStrings {
   def OPEN_WORKFLOWS_LIMIT_EXCEEDED: OPEN_WORKFLOWS_LIMIT_EXCEEDED = "OPEN_WORKFLOWS_LIMIT_EXCEEDED".asInstanceOf[OPEN_WORKFLOWS_LIMIT_EXCEEDED]
   def OPERATING_SYSTEM: OPERATING_SYSTEM = "OPERATING_SYSTEM".asInstanceOf[OPERATING_SYSTEM]
   def OPERATION: OPERATION = "OPERATION".asInstanceOf[OPERATION]
+  def OPERATIONAL: OPERATIONAL = "OPERATIONAL".asInstanceOf[OPERATIONAL]
   def OPERATION_NOT_PERMITTED: OPERATION_NOT_PERMITTED = "OPERATION_NOT_PERMITTED".asInstanceOf[OPERATION_NOT_PERMITTED]
+  def OPERATOR: OPERATOR = "OPERATOR".asInstanceOf[OPERATOR]
   def OPERATOR_INITIATED: OPERATOR_INITIATED = "OPERATOR_INITIATED".asInstanceOf[OPERATOR_INITIATED]
   def OPTIONAL: OPTIONAL = "OPTIONAL".asInstanceOf[OPTIONAL]
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
@@ -14793,13 +16646,21 @@ object awsDashSdkLibStrings {
   def ORIGINAL_VALUE: ORIGINAL_VALUE = "ORIGINAL_VALUE".asInstanceOf[ORIGINAL_VALUE]
   def OSX: OSX = "OSX".asInstanceOf[OSX]
   def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
+  def `OTHER-ACCOUNTS`: `OTHER-ACCOUNTS` = "OTHER-ACCOUNTS".asInstanceOf[`OTHER-ACCOUNTS`]
   def OTX_CSV: OTX_CSV = "OTX_CSV".asInstanceOf[OTX_CSV]
+  def OUT: OUT = "OUT".asInstanceOf[OUT]
+  def OUTBOUND: OUTBOUND = "OUTBOUND".asInstanceOf[OUTBOUND]
   def OUTDATED: OUTDATED = "OUTDATED".asInstanceOf[OUTDATED]
   def OUTPUT: OUTPUT = "OUTPUT".asInstanceOf[OUTPUT]
+  def OVERRIDDEN: OVERRIDDEN = "OVERRIDDEN".asInstanceOf[OVERRIDDEN]
   def OVERWRITE: OVERWRITE = "OVERWRITE".asInstanceOf[OVERWRITE]
   def OVERWRITE_LATEST: OVERWRITE_LATEST = "OVERWRITE_LATEST".asInstanceOf[OVERWRITE_LATEST]
   def OVER_MAX_INSTANCES: OVER_MAX_INSTANCES = "OVER_MAX_INSTANCES".asInstanceOf[OVER_MAX_INSTANCES]
+  def OWNED: OWNED = "OWNED".asInstanceOf[OWNED]
   def OWNER: OWNER = "OWNER".asInstanceOf[OWNER]
+  def ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatus = "ObjectLockLegalHoldStatus".asInstanceOf[ObjectLockLegalHoldStatus]
+  def ObjectLockMode: ObjectLockMode = "ObjectLockMode".asInstanceOf[ObjectLockMode]
+  def ObjectLockRetainUntilDate: ObjectLockRetainUntilDate = "ObjectLockRetainUntilDate".asInstanceOf[ObjectLockRetainUntilDate]
   def Ok: Ok = "Ok".asInstanceOf[Ok]
   def `One-Way: Incoming`: `One-Way: Incoming` = "One-Way: Incoming".asInstanceOf[`One-Way: Incoming`]
   def `One-Way: Outgoing`: `One-Way: Outgoing` = "One-Way: Outgoing".asInstanceOf[`One-Way: Outgoing`]
@@ -14811,6 +16672,7 @@ object awsDashSdkLibStrings {
   def Online: Online = "Online".asInstanceOf[Online]
   def OpenInstancePublicPorts: OpenInstancePublicPorts = "OpenInstancePublicPorts".asInstanceOf[OpenInstancePublicPorts]
   def Optional: Optional = "Optional".asInstanceOf[Optional]
+  def Or: Or = "Or".asInstanceOf[Or]
   def OrganizationUnit: OrganizationUnit = "OrganizationUnit".asInstanceOf[OrganizationUnit]
   def Original: Original = "Original".asInstanceOf[Original]
   def OutOfService: OutOfService = "OutOfService".asInstanceOf[OutOfService]
@@ -14823,6 +16685,7 @@ object awsDashSdkLibStrings {
   def PACKETS: PACKETS = "PACKETS".asInstanceOf[PACKETS]
   def PAFF: PAFF = "PAFF".asInstanceOf[PAFF]
   def PAP: PAP = "PAP".asInstanceOf[PAP]
+  def PARALLELISM: PARALLELISM = "PARALLELISM".asInstanceOf[PARALLELISM]
   def PARAMETER_GROUP: PARAMETER_GROUP = "PARAMETER_GROUP".asInstanceOf[PARAMETER_GROUP]
   def PARAMETER_STORE: PARAMETER_STORE = "PARAMETER_STORE".asInstanceOf[PARAMETER_STORE]
   def PARENT_HANDSHAKE: PARENT_HANDSHAKE = "PARENT_HANDSHAKE".asInstanceOf[PARENT_HANDSHAKE]
@@ -14835,11 +16698,14 @@ object awsDashSdkLibStrings {
   def PASSWORD_CHANGE: PASSWORD_CHANGE = "PASSWORD_CHANGE".asInstanceOf[PASSWORD_CHANGE]
   def PASSWORD_VERIFIER: PASSWORD_VERIFIER = "PASSWORD_VERIFIER".asInstanceOf[PASSWORD_VERIFIER]
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  def PATCHING: PATCHING = "PATCHING".asInstanceOf[PATCHING]
   def PATCH_ID: PATCH_ID = "PATCH_ID".asInstanceOf[PATCH_ID]
   def PATH_PARAMETER: PATH_PARAMETER = "PATH_PARAMETER".asInstanceOf[PATH_PARAMETER]
   def PAUSED: PAUSED = "PAUSED".asInstanceOf[PAUSED]
+  def PAUSED_ON_FAILURE: PAUSED_ON_FAILURE = "PAUSED_ON_FAILURE".asInstanceOf[PAUSED_ON_FAILURE]
   def PAUSE_OUTPUT: PAUSE_OUTPUT = "PAUSE_OUTPUT".asInstanceOf[PAUSE_OUTPUT]
   def PAYER: PAYER = "PAYER".asInstanceOf[PAYER]
+  def PAY_PER_REQUEST: PAY_PER_REQUEST = "PAY_PER_REQUEST".asInstanceOf[PAY_PER_REQUEST]
   def PCA_INVALID_ARGS: PCA_INVALID_ARGS = "PCA_INVALID_ARGS".asInstanceOf[PCA_INVALID_ARGS]
   def PCA_INVALID_ARN: PCA_INVALID_ARN = "PCA_INVALID_ARN".asInstanceOf[PCA_INVALID_ARN]
   def PCA_INVALID_STATE: PCA_INVALID_STATE = "PCA_INVALID_STATE".asInstanceOf[PCA_INVALID_STATE]
@@ -14857,6 +16723,7 @@ object awsDashSdkLibStrings {
   def PENDING_CERTIFICATE: PENDING_CERTIFICATE = "PENDING_CERTIFICATE".asInstanceOf[PENDING_CERTIFICATE]
   def PENDING_CONCURRENCY: PENDING_CONCURRENCY = "PENDING_CONCURRENCY".asInstanceOf[PENDING_CONCURRENCY]
   def PENDING_DELETION: PENDING_DELETION = "PENDING_DELETION".asInstanceOf[PENDING_DELETION]
+  def PENDING_DEPLOYMENT: PENDING_DEPLOYMENT = "PENDING_DEPLOYMENT".asInstanceOf[PENDING_DEPLOYMENT]
   def PENDING_DEVICE: PENDING_DEVICE = "PENDING_DEVICE".asInstanceOf[PENDING_DEVICE]
   def PENDING_DISABLE: PENDING_DISABLE = "PENDING_DISABLE".asInstanceOf[PENDING_DISABLE]
   def PENDING_ENABLE: PENDING_ENABLE = "PENDING_ENABLE".asInstanceOf[PENDING_ENABLE]
@@ -14864,44 +16731,58 @@ object awsDashSdkLibStrings {
   def PENDING_TRANSFER: PENDING_TRANSFER = "PENDING_TRANSFER".asInstanceOf[PENDING_TRANSFER]
   def PENDING_UPDATE: PENDING_UPDATE = "PENDING_UPDATE".asInstanceOf[PENDING_UPDATE]
   def PENDING_VALIDATION: PENDING_VALIDATION = "PENDING_VALIDATION".asInstanceOf[PENDING_VALIDATION]
+  def PENDING_VERIFICATION: PENDING_VERIFICATION = "PENDING_VERIFICATION".asInstanceOf[PENDING_VERIFICATION]
   def PERCENT: PERCENT = "PERCENT".asInstanceOf[PERCENT]
   def PERCENTAGE: PERCENTAGE = "PERCENTAGE".asInstanceOf[PERCENTAGE]
   def PERCENT_CHANGE_IN_CAPACITY: PERCENT_CHANGE_IN_CAPACITY = "PERCENT_CHANGE_IN_CAPACITY".asInstanceOf[PERCENT_CHANGE_IN_CAPACITY]
   def PERFORMANCE: PERFORMANCE = "PERFORMANCE".asInstanceOf[PERFORMANCE]
   def PERMANENT_FAILURE: PERMANENT_FAILURE = "PERMANENT_FAILURE".asInstanceOf[PERMANENT_FAILURE]
   def PERSON: PERSON = "PERSON".asInstanceOf[PERSON]
+  def PER_BROKER: PER_BROKER = "PER_BROKER".asInstanceOf[PER_BROKER]
+  def PER_TOPIC_PER_BROKER: PER_TOPIC_PER_BROKER = "PER_TOPIC_PER_BROKER".asInstanceOf[PER_TOPIC_PER_BROKER]
   def PHONE: PHONE = "PHONE".asInstanceOf[PHONE]
+  def PHP: PHP = "PHP".asInstanceOf[PHP]
   def PIC_TIMING_SEI: PIC_TIMING_SEI = "PIC_TIMING_SEI".asInstanceOf[PIC_TIMING_SEI]
   def PID: PID = "PID".asInstanceOf[PID]
+  def PIPELINE: PIPELINE = "PIPELINE".asInstanceOf[PIPELINE]
   def PLACING: PLACING = "PLACING".asInstanceOf[PLACING]
   def PLAINTEXT: PLAINTEXT = "PLAINTEXT".asInstanceOf[PLAINTEXT]
   def PLAN_IN_PROGRESS: PLAN_IN_PROGRESS = "PLAN_IN_PROGRESS".asInstanceOf[PLAN_IN_PROGRESS]
   def PLATFORM: PLATFORM = "PLATFORM".asInstanceOf[PLATFORM]
+  def PNG: PNG = "PNG".asInstanceOf[PNG]
+  def POINT_IN_TIME_CONSISTENT: POINT_IN_TIME_CONSISTENT = "POINT_IN_TIME_CONSISTENT".asInstanceOf[POINT_IN_TIME_CONSISTENT]
   def POLICY: POLICY = "POLICY".asInstanceOf[POLICY]
+  def POLYCOM: POLYCOM = "POLYCOM".asInstanceOf[POLYCOM]
   def PORT: PORT = "PORT".asInstanceOf[PORT]
   def POSITIVE: POSITIVE = "POSITIVE".asInstanceOf[POSITIVE]
   def POST: POST = "POST".asInstanceOf[POST]
   def POST_BUILD: POST_BUILD = "POST_BUILD".asInstanceOf[POST_BUILD]
+  def POTENTIALLY_UNWANTED: POTENTIALLY_UNWANTED = "POTENTIALLY_UNWANTED".asInstanceOf[POTENTIALLY_UNWANTED]
   def POWER: POWER = "POWER".asInstanceOf[POWER]
   def POWERPRO: POWERPRO = "POWERPRO".asInstanceOf[POWERPRO]
   def POWERUSER: POWERUSER = "POWERUSER".asInstanceOf[POWERUSER]
+  def PREFIX: PREFIX = "PREFIX".asInstanceOf[PREFIX]
   def PREMIUM: PREMIUM = "PREMIUM".asInstanceOf[PREMIUM]
   def PREPARING: PREPARING = "PREPARING".asInstanceOf[PREPARING]
+  def PRESERVE: PRESERVE = "PRESERVE".asInstanceOf[PRESERVE]
   def PRESET: PRESET = "PRESET".asInstanceOf[PRESET]
   def PREVIOUS: PREVIOUS = "PREVIOUS".asInstanceOf[PREVIOUS]
   def PRE_BUILD: PRE_BUILD = "PRE_BUILD".asInstanceOf[PRE_BUILD]
   def PRE_UPGRADE_CHECK: PRE_UPGRADE_CHECK = "PRE_UPGRADE_CHECK".asInstanceOf[PRE_UPGRADE_CHECK]
   def PRIMARY: PRIMARY = "PRIMARY".asInstanceOf[PRIMARY]
+  def PRINCIPAL: PRINCIPAL = "PRINCIPAL".asInstanceOf[PRINCIPAL]
   def PRINTING_TO_LOCAL_DEVICE: PRINTING_TO_LOCAL_DEVICE = "PRINTING_TO_LOCAL_DEVICE".asInstanceOf[PRINTING_TO_LOCAL_DEVICE]
   def PRIORITY: PRIORITY = "PRIORITY".asInstanceOf[PRIORITY]
   def PRIV: PRIV = "PRIV".asInstanceOf[PRIV]
   def PRIVATE: PRIVATE = "PRIVATE".asInstanceOf[PRIVATE]
   def PRIVILEGE_WITHDRAWN: PRIVILEGE_WITHDRAWN = "PRIVILEGE_WITHDRAWN".asInstanceOf[PRIVILEGE_WITHDRAWN]
+  def PROCEDURE_NAME: PROCEDURE_NAME = "PROCEDURE_NAME".asInstanceOf[PROCEDURE_NAME]
   def PROCESS: PROCESS = "PROCESS".asInstanceOf[PROCESS]
   def PROCESSING: PROCESSING = "PROCESSING".asInstanceOf[PROCESSING]
   def PRODUCER_TIMESTAMP: PRODUCER_TIMESTAMP = "PRODUCER_TIMESTAMP".asInstanceOf[PRODUCER_TIMESTAMP]
   def PRODUCT: PRODUCT = "PRODUCT".asInstanceOf[PRODUCT]
   def PRODUCTION: PRODUCTION = "PRODUCTION".asInstanceOf[PRODUCTION]
+  def PROFESSION: PROFESSION = "PROFESSION".asInstanceOf[PROFESSION]
   def PROFILE_422: PROFILE_422 = "PROFILE_422".asInstanceOf[PROFILE_422]
   def PROGRESSING: PROGRESSING = "PROGRESSING".asInstanceOf[PROGRESSING]
   def PROGRESSIVE: PROGRESSIVE = "PROGRESSIVE".asInstanceOf[PROGRESSIVE]
@@ -14913,6 +16794,7 @@ object awsDashSdkLibStrings {
   def PROPN: PROPN = "PROPN".asInstanceOf[PROPN]
   def PROPORTIONAL: PROPORTIONAL = "PROPORTIONAL".asInstanceOf[PROPORTIONAL]
   def PRORES: PRORES = "PRORES".asInstanceOf[PRORES]
+  def PROTECTED_HEALTH_INFORMATION: PROTECTED_HEALTH_INFORMATION = "PROTECTED_HEALTH_INFORMATION".asInstanceOf[PROTECTED_HEALTH_INFORMATION]
   def PROVISIONED: PROVISIONED = "PROVISIONED".asInstanceOf[PROVISIONED]
   def PROVISIONING: PROVISIONING = "PROVISIONING".asInstanceOf[PROVISIONING]
   def PROVISION_FAILURE: PROVISION_FAILURE = "PROVISION_FAILURE".asInstanceOf[PROVISION_FAILURE]
@@ -14933,6 +16815,8 @@ object awsDashSdkLibStrings {
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   def PUT_MEDIA: PUT_MEDIA = "PUT_MEDIA".asInstanceOf[PUT_MEDIA]
   def PYTHON: PYTHON = "PYTHON".asInstanceOf[PYTHON]
+  def PYTORCH: PYTORCH = "PYTORCH".asInstanceOf[PYTORCH]
+  def Package: Package = "Package".asInstanceOf[Package]
   def ParallelStateAborted: ParallelStateAborted = "ParallelStateAborted".asInstanceOf[ParallelStateAborted]
   def ParallelStateEntered: ParallelStateEntered = "ParallelStateEntered".asInstanceOf[ParallelStateEntered]
   def ParallelStateExited: ParallelStateExited = "ParallelStateExited".asInstanceOf[ParallelStateExited]
@@ -14960,6 +16844,7 @@ object awsDashSdkLibStrings {
   def PendingAcceptance: PendingAcceptance = "PendingAcceptance".asInstanceOf[PendingAcceptance]
   def PendingDeletion: PendingDeletion = "PendingDeletion".asInstanceOf[PendingDeletion]
   def PendingImport: PendingImport = "PendingImport".asInstanceOf[PendingImport]
+  def PendingNewDeployment: PendingNewDeployment = "PendingNewDeployment".asInstanceOf[PendingNewDeployment]
   def PendingSpotBidPlacement: PendingSpotBidPlacement = "PendingSpotBidPlacement".asInstanceOf[PendingSpotBidPlacement]
   def Percent: Percent = "Percent".asInstanceOf[Percent]
   def PercentAvailableGameSessions: PercentAvailableGameSessions = "PercentAvailableGameSessions".asInstanceOf[PercentAvailableGameSessions]
@@ -14976,14 +16861,19 @@ object awsDashSdkLibStrings {
   def PlainText: PlainText = "PlainText".asInstanceOf[PlainText]
   def PlatformTypes: PlatformTypes = "PlatformTypes".asInstanceOf[PlatformTypes]
   def PlatformUpdate: PlatformUpdate = "PlatformUpdate".asInstanceOf[PlatformUpdate]
+  def Plus: Plus = "Plus".asInstanceOf[Plus]
   def Policies: Policies = "Policies".asInstanceOf[Policies]
   def PoliciesQuota: PoliciesQuota = "PoliciesQuota".asInstanceOf[PoliciesQuota]
   def Policy: Policy = "Policy".asInstanceOf[Policy]
   def PolicySizeQuota: PolicySizeQuota = "PolicySizeQuota".asInstanceOf[PolicySizeQuota]
   def PolicyVersionsInUse: PolicyVersionsInUse = "PolicyVersionsInUse".asInstanceOf[PolicyVersionsInUse]
   def PolicyVersionsInUseQuota: PolicyVersionsInUseQuota = "PolicyVersionsInUseQuota".asInstanceOf[PolicyVersionsInUseQuota]
+  def PostLaunchFileFailure: PostLaunchFileFailure = "PostLaunchFileFailure".asInstanceOf[PostLaunchFileFailure]
   def PreInService: PreInService = "PreInService".asInstanceOf[PreInService]
+  def PreLaunchFileFailure: PreLaunchFileFailure = "PreLaunchFileFailure".asInstanceOf[PreLaunchFileFailure]
+  def PreconditionFailed: PreconditionFailed = "PreconditionFailed".asInstanceOf[PreconditionFailed]
   def PredictiveModelType: PredictiveModelType = "PredictiveModelType".asInstanceOf[PredictiveModelType]
+  def Preparing: Preparing = "Preparing".asInstanceOf[Preparing]
   def PreparingAppliance: PreparingAppliance = "PreparingAppliance".asInstanceOf[PreparingAppliance]
   def PreparingShipment: PreparingShipment = "PreparingShipment".asInstanceOf[PreparingShipment]
   def PreparingTrainingStack: PreparingTrainingStack = "PreparingTrainingStack".asInstanceOf[PreparingTrainingStack]
@@ -14992,12 +16882,15 @@ object awsDashSdkLibStrings {
   def PriceClass_200: PriceClass_200 = "PriceClass_200".asInstanceOf[PriceClass_200]
   def PriceClass_All: PriceClass_All = "PriceClass_All".asInstanceOf[PriceClass_All]
   def Private: Private = "Private".asInstanceOf[Private]
+  def Pro: Pro = "Pro".asInstanceOf[Pro]
+  def ProTrial: ProTrial = "ProTrial".asInstanceOf[ProTrial]
   def Processed: Processed = "Processed".asInstanceOf[Processed]
   def Processing: Processing = "Processing".asInstanceOf[Processing]
   def ProductType: ProductType = "ProductType".asInstanceOf[ProductType]
   def Properties: Properties = "Properties".asInstanceOf[Properties]
   def Public: Public = "Public".asInstanceOf[Public]
   def PutInstancePublicPorts: PutInstancePublicPorts = "PutInstancePublicPorts".asInstanceOf[PutInstancePublicPorts]
+  def QUALITY: QUALITY = "QUALITY".asInstanceOf[QUALITY]
   def QUANTITY: QUANTITY = "QUANTITY".asInstanceOf[QUANTITY]
   def QUARTERLY: QUARTERLY = "QUARTERLY".asInstanceOf[QUARTERLY]
   def QUERY: QUERY = "QUERY".asInstanceOf[QUERY]
@@ -15018,14 +16911,23 @@ object awsDashSdkLibStrings {
   def RAI_ADAPT: RAI_ADAPT = "RAI_ADAPT".asInstanceOf[RAI_ADAPT]
   def RAI_SEGSTART: RAI_SEGSTART = "RAI_SEGSTART".asInstanceOf[RAI_SEGSTART]
   def RANGE: RANGE = "RANGE".asInstanceOf[RANGE]
+  def RANSOMWARE: RANSOMWARE = "RANSOMWARE".asInstanceOf[RANSOMWARE]
+  def RATE: RATE = "RATE".asInstanceOf[RATE]
   def RATE_BASED: RATE_BASED = "RATE_BASED".asInstanceOf[RATE_BASED]
   def RAW: RAW = "RAW".asInstanceOf[RAW]
   def RDS: RDS = "RDS".asInstanceOf[RDS]
   def RDSReaderAverageCPUUtilization: RDSReaderAverageCPUUtilization = "RDSReaderAverageCPUUtilization".asInstanceOf[RDSReaderAverageCPUUtilization]
   def RDSReaderAverageDatabaseConnections: RDSReaderAverageDatabaseConnections = "RDSReaderAverageDatabaseConnections".asInstanceOf[RDSReaderAverageDatabaseConnections]
+  def RDS_HTTP_ENDPOINT: RDS_HTTP_ENDPOINT = "RDS_HTTP_ENDPOINT".asInstanceOf[RDS_HTTP_ENDPOINT]
+  def REACT_NATIVE: REACT_NATIVE = "REACT_NATIVE".asInstanceOf[REACT_NATIVE]
   def READ: READ = "READ".asInstanceOf[READ]
+  def READER: READER = "READER".asInstanceOf[READER]
   def READY: READY = "READY".asInstanceOf[READY]
   def READY_BASIC_TESTING: READY_BASIC_TESTING = "READY_BASIC_TESTING".asInstanceOf[READY_BASIC_TESTING]
+  def READY_FOR_CONFIGURATION: READY_FOR_CONFIGURATION = "READY_FOR_CONFIGURATION".asInstanceOf[READY_FOR_CONFIGURATION]
+  def READY_FOR_LAUNCH: READY_FOR_LAUNCH = "READY_FOR_LAUNCH".asInstanceOf[READY_FOR_LAUNCH]
+  def READY_FOR_REPLICATION: READY_FOR_REPLICATION = "READY_FOR_REPLICATION".asInstanceOf[READY_FOR_REPLICATION]
+  def READY_WAIT: READY_WAIT = "READY_WAIT".asInstanceOf[READY_WAIT]
   def READ_ACP: READ_ACP = "READ_ACP".asInstanceOf[READ_ACP]
   def REBOOTING: REBOOTING = "REBOOTING".asInstanceOf[REBOOTING]
   def REBOOT_IN_PROGRESS: REBOOT_IN_PROGRESS = "REBOOT_IN_PROGRESS".asInstanceOf[REBOOT_IN_PROGRESS]
@@ -15034,6 +16936,7 @@ object awsDashSdkLibStrings {
   def RECORD_TYPE: RECORD_TYPE = "RECORD_TYPE".asInstanceOf[RECORD_TYPE]
   def RECOVERING: RECOVERING = "RECOVERING".asInstanceOf[RECOVERING]
   def RECURRING: RECURRING = "RECURRING".asInstanceOf[RECURRING]
+  def RECURSIVE: RECURSIVE = "RECURSIVE".asInstanceOf[RECURSIVE]
   def RECYCLED: RECYCLED = "RECYCLED".asInstanceOf[RECYCLED]
   def RECYCLING: RECYCLING = "RECYCLING".asInstanceOf[RECYCLING]
   def REC_601: REC_601 = "REC_601".asInstanceOf[REC_601]
@@ -15061,18 +16964,34 @@ object awsDashSdkLibStrings {
   def REGULAR: REGULAR = "REGULAR".asInstanceOf[REGULAR]
   def REJECT: REJECT = "REJECT".asInstanceOf[REJECT]
   def REJECTED: REJECTED = "REJECTED".asInstanceOf[REJECTED]
+  def REJECT_MESSAGE: REJECT_MESSAGE = "REJECT_MESSAGE".asInstanceOf[REJECT_MESSAGE]
+  def RELATIONAL_DATABASE: RELATIONAL_DATABASE = "RELATIONAL_DATABASE".asInstanceOf[RELATIONAL_DATABASE]
+  def RELEASE: RELEASE = "RELEASE".asInstanceOf[RELEASE]
+  def REMAP_ATTACHING: REMAP_ATTACHING = "REMAP_ATTACHING".asInstanceOf[REMAP_ATTACHING]
+  def REMAP_DETACHING: REMAP_DETACHING = "REMAP_DETACHING".asInstanceOf[REMAP_DETACHING]
+  def REMOTE_ACCESS: REMOTE_ACCESS = "REMOTE_ACCESS".asInstanceOf[REMOTE_ACCESS]
   def REMOTE_ACCESS_ENABLED: REMOTE_ACCESS_ENABLED = "REMOTE_ACCESS_ENABLED".asInstanceOf[REMOTE_ACCESS_ENABLED]
   def REMOTE_ACCESS_RECORD: REMOTE_ACCESS_RECORD = "REMOTE_ACCESS_RECORD".asInstanceOf[REMOTE_ACCESS_RECORD]
   def REMOTE_ACCESS_REPLAY: REMOTE_ACCESS_REPLAY = "REMOTE_ACCESS_REPLAY".asInstanceOf[REMOTE_ACCESS_REPLAY]
   def REMOTE_DEBUG_ENABLED: REMOTE_DEBUG_ENABLED = "REMOTE_DEBUG_ENABLED".asInstanceOf[REMOTE_DEBUG_ENABLED]
+  def REMOVAL_FAILED: REMOVAL_FAILED = "REMOVAL_FAILED".asInstanceOf[REMOVAL_FAILED]
   def REMOVE: REMOVE = "REMOVE".asInstanceOf[REMOVE]
   def REMOVED: REMOVED = "REMOVED".asInstanceOf[REMOVED]
   def REMOVE_DNSSEC: REMOVE_DNSSEC = "REMOVE_DNSSEC".asInstanceOf[REMOVE_DNSSEC]
   def REMOVE_FROM_CRL: REMOVE_FROM_CRL = "REMOVE_FROM_CRL".asInstanceOf[REMOVE_FROM_CRL]
+  def RENDERING_FAILURE: RENDERING_FAILURE = "RENDERING_FAILURE".asInstanceOf[RENDERING_FAILURE]
   def RENEW: RENEW = "RENEW".asInstanceOf[RENEW]
   def RENEW_DOMAIN: RENEW_DOMAIN = "RENEW_DOMAIN".asInstanceOf[RENEW_DOMAIN]
+  def REPEAT: REPEAT = "REPEAT".asInstanceOf[REPEAT]
   def REPLACE: REPLACE = "REPLACE".asInstanceOf[REPLACE]
   def REPLICA: REPLICA = "REPLICA".asInstanceOf[REPLICA]
+  def REPLICATED: REPLICATED = "REPLICATED".asInstanceOf[REPLICATED]
+  def REPLICATION_FAILED: REPLICATION_FAILED = "REPLICATION_FAILED".asInstanceOf[REPLICATION_FAILED]
+  def REPLICATION_IN_PROGRESS: REPLICATION_IN_PROGRESS = "REPLICATION_IN_PROGRESS".asInstanceOf[REPLICATION_IN_PROGRESS]
+  def REPLICATION_PENDING: REPLICATION_PENDING = "REPLICATION_PENDING".asInstanceOf[REPLICATION_PENDING]
+  def REPLICATION_STOPPED: REPLICATION_STOPPED = "REPLICATION_STOPPED".asInstanceOf[REPLICATION_STOPPED]
+  def REPLICATION_STOPPING: REPLICATION_STOPPING = "REPLICATION_STOPPING".asInstanceOf[REPLICATION_STOPPING]
+  def REPLICATION_STOP_FAILED: REPLICATION_STOP_FAILED = "REPLICATION_STOP_FAILED".asInstanceOf[REPLICATION_STOP_FAILED]
   def REQUEST: REQUEST = "REQUEST".asInstanceOf[REQUEST]
   def REQUESTED: REQUESTED = "REQUESTED".asInstanceOf[REQUESTED]
   def REQUESTS: REQUESTS = "REQUESTS".asInstanceOf[REQUESTS]
@@ -15088,26 +17007,34 @@ object awsDashSdkLibStrings {
   def RESELLER: RESELLER = "RESELLER".asInstanceOf[RESELLER]
   def RESEND: RESEND = "RESEND".asInstanceOf[RESEND]
   def RESERVATIONS: RESERVATIONS = "RESERVATIONS".asInstanceOf[RESERVATIONS]
+  def RESERVATION_ID: RESERVATION_ID = "RESERVATION_ID".asInstanceOf[RESERVATION_ID]
   def RESERVED: RESERVED = "RESERVED".asInstanceOf[RESERVED]
   def RESET_CADENCE: RESET_CADENCE = "RESET_CADENCE".asInstanceOf[RESET_CADENCE]
   def RESET_REQUIRED: RESET_REQUIRED = "RESET_REQUIRED".asInstanceOf[RESET_REQUIRED]
   def RESIZING: RESIZING = "RESIZING".asInstanceOf[RESIZING]
+  def RESOLVED: RESOLVED = "RESOLVED".asInstanceOf[RESOLVED]
   def RESOURCE: RESOURCE = "RESOURCE".asInstanceOf[RESOURCE]
   def RESOURCES: RESOURCES = "RESOURCES".asInstanceOf[RESOURCES]
   def RESOURCE_INCORRECT_WEB_ACL: RESOURCE_INCORRECT_WEB_ACL = "RESOURCE_INCORRECT_WEB_ACL".asInstanceOf[RESOURCE_INCORRECT_WEB_ACL]
   def RESOURCE_MISSING_WEB_ACL: RESOURCE_MISSING_WEB_ACL = "RESOURCE_MISSING_WEB_ACL".asInstanceOf[RESOURCE_MISSING_WEB_ACL]
   def RESOURCE_NOT_FOUND: RESOURCE_NOT_FOUND = "RESOURCE_NOT_FOUND".asInstanceOf[RESOURCE_NOT_FOUND]
+  def RESOURCE_TYPE: RESOURCE_TYPE = "RESOURCE_TYPE".asInstanceOf[RESOURCE_TYPE]
   def RESPOND: RESPOND = "RESPOND".asInstanceOf[RESPOND]
   def RESPONSE: RESPONSE = "RESPONSE".asInstanceOf[RESPONSE]
   def RESPONSE_BODY: RESPONSE_BODY = "RESPONSE_BODY".asInstanceOf[RESPONSE_BODY]
   def RESPONSE_HEADER: RESPONSE_HEADER = "RESPONSE_HEADER".asInstanceOf[RESPONSE_HEADER]
+  def RESTORE_FROM_CUSTOM_SNAPSHOT: RESTORE_FROM_CUSTOM_SNAPSHOT = "RESTORE_FROM_CUSTOM_SNAPSHOT".asInstanceOf[RESTORE_FROM_CUSTOM_SNAPSHOT]
+  def RESTORE_FROM_LATEST_SNAPSHOT: RESTORE_FROM_LATEST_SNAPSHOT = "RESTORE_FROM_LATEST_SNAPSHOT".asInstanceOf[RESTORE_FROM_LATEST_SNAPSHOT]
   def RESTORING: RESTORING = "RESTORING".asInstanceOf[RESTORING]
+  def RESTRICTED_AUTHOR: RESTRICTED_AUTHOR = "RESTRICTED_AUTHOR".asInstanceOf[RESTRICTED_AUTHOR]
+  def RESTRICTED_READER: RESTRICTED_READER = "RESTRICTED_READER".asInstanceOf[RESTRICTED_READER]
   def RESTRICT_GROUP0: RESTRICT_GROUP0 = "RESTRICT_GROUP0".asInstanceOf[RESTRICT_GROUP0]
   def RESTRICT_GROUP1: RESTRICT_GROUP1 = "RESTRICT_GROUP1".asInstanceOf[RESTRICT_GROUP1]
   def RESTRICT_GROUP2: RESTRICT_GROUP2 = "RESTRICT_GROUP2".asInstanceOf[RESTRICT_GROUP2]
   def RESULTS: RESULTS = "RESULTS".asInstanceOf[RESULTS]
   def RESULT_LOG: RESULT_LOG = "RESULT_LOG".asInstanceOf[RESULT_LOG]
   def RETAIN: RETAIN = "RETAIN".asInstanceOf[RETAIN]
+  def RETRY: RETRY = "RETRY".asInstanceOf[RETRY]
   def REVIEW_IN_PROGRESS: REVIEW_IN_PROGRESS = "REVIEW_IN_PROGRESS".asInstanceOf[REVIEW_IN_PROGRESS]
   def REVISION_MISSING: REVISION_MISSING = "REVISION_MISSING".asInstanceOf[REVISION_MISSING]
   def REVOKED: REVOKED = "REVOKED".asInstanceOf[REVOKED]
@@ -15115,6 +17042,8 @@ object awsDashSdkLibStrings {
   def RFC_4281: RFC_4281 = "RFC_4281".asInstanceOf[RFC_4281]
   def RFC_6381: RFC_6381 = "RFC_6381".asInstanceOf[RFC_6381]
   def RIFF: RIFF = "RIFF".asInstanceOf[RIFF]
+  def RINGCENTRAL: RINGCENTRAL = "RINGCENTRAL".asInstanceOf[RINGCENTRAL]
+  def RINGING: RINGING = "RINGING".asInstanceOf[RINGING]
   def RI_COVERAGE: RI_COVERAGE = "RI_COVERAGE".asInstanceOf[RI_COVERAGE]
   def RI_UTILIZATION: RI_UTILIZATION = "RI_UTILIZATION".asInstanceOf[RI_UTILIZATION]
   def ROLE: ROLE = "ROLE".asInstanceOf[ROLE]
@@ -15124,11 +17053,14 @@ object awsDashSdkLibStrings {
   def ROLLBACK_IN_PROGRESS: ROLLBACK_IN_PROGRESS = "ROLLBACK_IN_PROGRESS".asInstanceOf[ROLLBACK_IN_PROGRESS]
   def ROOM: ROOM = "ROOM".asInstanceOf[ROOM]
   def ROOT: ROOT = "ROOT".asInstanceOf[ROOT]
+  def ROOTKIT: ROOTKIT = "ROOTKIT".asInstanceOf[ROOTKIT]
   def ROOT_VOLUME: ROOT_VOLUME = "ROOT_VOLUME".asInstanceOf[ROOT_VOLUME]
+  def ROS: ROS = "ROS".asInstanceOf[ROS]
   def ROTATE_0: ROTATE_0 = "ROTATE_0".asInstanceOf[ROTATE_0]
   def ROTATE_180: ROTATE_180 = "ROTATE_180".asInstanceOf[ROTATE_180]
   def ROTATE_270: ROTATE_270 = "ROTATE_270".asInstanceOf[ROTATE_270]
   def ROTATE_90: ROTATE_90 = "ROTATE_90".asInstanceOf[ROTATE_90]
+  def ROUTE_OR_MODE: ROUTE_OR_MODE = "ROUTE_OR_MODE".asInstanceOf[ROUTE_OR_MODE]
   def RP2027: RP2027 = "RP2027".asInstanceOf[RP2027]
   def RSA: RSA = "RSA".asInstanceOf[RSA]
   def RSAES_OAEP_SHA_1: RSAES_OAEP_SHA_1 = "RSAES_OAEP_SHA_1".asInstanceOf[RSAES_OAEP_SHA_1]
@@ -15160,10 +17092,12 @@ object awsDashSdkLibStrings {
   def ReadyForFulfillment: ReadyForFulfillment = "ReadyForFulfillment".asInstanceOf[ReadyForFulfillment]
   def RealtimeEndpointStatus: RealtimeEndpointStatus = "RealtimeEndpointStatus".asInstanceOf[RealtimeEndpointStatus]
   def RebootInstance: RebootInstance = "RebootInstance".asInstanceOf[RebootInstance]
+  def RebootRelationalDatabase: RebootRelationalDatabase = "RebootRelationalDatabase".asInstanceOf[RebootRelationalDatabase]
   def ReceiveMessageWaitTimeSeconds: ReceiveMessageWaitTimeSeconds = "ReceiveMessageWaitTimeSeconds".asInstanceOf[ReceiveMessageWaitTimeSeconds]
   def RecordIO: RecordIO = "RecordIO".asInstanceOf[RecordIO]
   def RecordMarker: RecordMarker = "RecordMarker".asInstanceOf[RecordMarker]
   def Red: Red = "Red".asInstanceOf[Red]
+  def `Red Hat Enterprise Linux`: `Red Hat Enterprise Linux` = "Red Hat Enterprise Linux".asInstanceOf[`Red Hat Enterprise Linux`]
   def Redeployment: Redeployment = "Redeployment".asInstanceOf[Redeployment]
   def RedrivePolicy: RedrivePolicy = "RedrivePolicy".asInstanceOf[RedrivePolicy]
   def RefreshedAt: RefreshedAt = "RefreshedAt".asInstanceOf[RefreshedAt]
@@ -15185,6 +17119,7 @@ object awsDashSdkLibStrings {
   def RemoveFailed: RemoveFailed = "RemoveFailed".asInstanceOf[RemoveFailed]
   def Removed: Removed = "Removed".asInstanceOf[Removed]
   def Removing: Removing = "Removing".asInstanceOf[Removing]
+  def ReplaceExternalPolicies: ReplaceExternalPolicies = "ReplaceExternalPolicies".asInstanceOf[ReplaceExternalPolicies]
   def Replicating: Replicating = "Replicating".asInstanceOf[Replicating]
   def ReplicationStatus: ReplicationStatus = "ReplicationStatus".asInstanceOf[ReplicationStatus]
   def RequestCancelActivityTask: RequestCancelActivityTask = "RequestCancelActivityTask".asInstanceOf[RequestCancelActivityTask]
@@ -15204,11 +17139,13 @@ object awsDashSdkLibStrings {
   def ResourceDiscovered: ResourceDiscovered = "ResourceDiscovered".asInstanceOf[ResourceDiscovered]
   def ResourceId: ResourceId = "ResourceId".asInstanceOf[ResourceId]
   def ResourceName: ResourceName = "ResourceName".asInstanceOf[ResourceName]
+  def ResourceNotFound: ResourceNotFound = "ResourceNotFound".asInstanceOf[ResourceNotFound]
   def ResourceNotFoundException: ResourceNotFoundException = "ResourceNotFoundException".asInstanceOf[ResourceNotFoundException]
   def ResourceNotRecorded: ResourceNotRecorded = "ResourceNotRecorded".asInstanceOf[ResourceNotRecorded]
   def ResourcePath: ResourcePath = "ResourcePath".asInstanceOf[ResourcePath]
   def ResourceReference: ResourceReference = "ResourceReference".asInstanceOf[ResourceReference]
   def ResourceType: ResourceType = "ResourceType".asInstanceOf[ResourceType]
+  def Restarting: Restarting = "Restarting".asInstanceOf[Restarting]
   def RestoreFailed: RestoreFailed = "RestoreFailed".asInstanceOf[RestoreFailed]
   def Restoring: Restoring = "Restoring".asInstanceOf[Restoring]
   def Resume: Resume = "Resume".asInstanceOf[Resume]
@@ -15222,6 +17159,9 @@ object awsDashSdkLibStrings {
   def RevisionOutOfSync: RevisionOutOfSync = "RevisionOutOfSync".asInstanceOf[RevisionOutOfSync]
   def RevisionUnavailable: RevisionUnavailable = "RevisionUnavailable".asInstanceOf[RevisionUnavailable]
   def Revoked: Revoked = "Revoked".asInstanceOf[Revoked]
+  def RobotApplicationCrash: RobotApplicationCrash = "RobotApplicationCrash".asInstanceOf[RobotApplicationCrash]
+  def RobotApplicationVersionMismatchedEtag: RobotApplicationVersionMismatchedEtag = "RobotApplicationVersionMismatchedEtag".asInstanceOf[RobotApplicationVersionMismatchedEtag]
+  def RobotDeploymentNoResponse: RobotDeploymentNoResponse = "RobotDeploymentNoResponse".asInstanceOf[RobotDeploymentNoResponse]
   def Role: Role = "Role".asInstanceOf[Role]
   def RoleArn: RoleArn = "RoleArn".asInstanceOf[RoleArn]
   def RollbackFailed: RollbackFailed = "RollbackFailed".asInstanceOf[RollbackFailed]
@@ -15234,6 +17174,7 @@ object awsDashSdkLibStrings {
   def RuleSet: RuleSet = "RuleSet".asInstanceOf[RuleSet]
   def Rules: Rules = "Rules".asInstanceOf[Rules]
   def Running: Running = "Running".asInstanceOf[Running]
+  def RunningFailed: RunningFailed = "RunningFailed".asInstanceOf[RunningFailed]
   def S: S = "S".asInstanceOf[S]
   def S3: S3 = "S3".asInstanceOf[S3]
   def S3Prefix: S3Prefix = "S3Prefix".asInstanceOf[S3Prefix]
@@ -15255,8 +17196,11 @@ object awsDashSdkLibStrings {
   def SCONJ: SCONJ = "SCONJ".asInstanceOf[SCONJ]
   def SCOPE: SCOPE = "SCOPE".asInstanceOf[SCOPE]
   def SCREENSHOT: SCREENSHOT = "SCREENSHOT".asInstanceOf[SCREENSHOT]
+  def SCTE20: SCTE20 = "SCTE20".asInstanceOf[SCTE20]
+  def SCTE20_PLUS_EMBEDDED: SCTE20_PLUS_EMBEDDED = "SCTE20_PLUS_EMBEDDED".asInstanceOf[SCTE20_PLUS_EMBEDDED]
   def SCTE35_ENHANCED: SCTE35_ENHANCED = "SCTE35_ENHANCED".asInstanceOf[SCTE35_ENHANCED]
   def SCTE_35: SCTE_35 = "SCTE_35".asInstanceOf[SCTE_35]
+  def SCVMM: SCVMM = "SCVMM".asInstanceOf[SCVMM]
   def SD: SD = "SD".asInstanceOf[SD]
   def SDL: SDL = "SDL".asInstanceOf[SDL]
   def SDT_FOLLOW: SDT_FOLLOW = "SDT_FOLLOW".asInstanceOf[SDT_FOLLOW]
@@ -15277,6 +17221,7 @@ object awsDashSdkLibStrings {
   def SEGMENTS_ONLY: SEGMENTS_ONLY = "SEGMENTS_ONLY".asInstanceOf[SEGMENTS_ONLY]
   def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
   def SELECT_MFA_TYPE: SELECT_MFA_TYPE = "SELECT_MFA_TYPE".asInstanceOf[SELECT_MFA_TYPE]
+  def SELF: SELF = "SELF".asInstanceOf[SELF]
   def SELF_CONTAINED: SELF_CONTAINED = "SELF_CONTAINED".asInstanceOf[SELF_CONTAINED]
   def SELF_SIGNED: SELF_SIGNED = "SELF_SIGNED".asInstanceOf[SELF_SIGNED]
   def SEND: SEND = "SEND".asInstanceOf[SEND]
@@ -15300,6 +17245,7 @@ object awsDashSdkLibStrings {
   def SERVICE_ID: SERVICE_ID = "SERVICE_ID".asInstanceOf[SERVICE_ID]
   def SERVICE_LEVEL: SERVICE_LEVEL = "SERVICE_LEVEL".asInstanceOf[SERVICE_LEVEL]
   def SERVICE_LOG: SERVICE_LOG = "SERVICE_LOG".asInstanceOf[SERVICE_LOG]
+  def SERVICE_MANAGED: SERVICE_MANAGED = "SERVICE_MANAGED".asInstanceOf[SERVICE_MANAGED]
   def SETUP: SETUP = "SETUP".asInstanceOf[SETUP]
   def SEVEN_DAYS: SEVEN_DAYS = "SEVEN_DAYS".asInstanceOf[SEVEN_DAYS]
   def SEVERITY: SEVERITY = "SEVERITY".asInstanceOf[SEVERITY]
@@ -15315,10 +17261,13 @@ object awsDashSdkLibStrings {
   def SHA512WITHECDSA: SHA512WITHECDSA = "SHA512WITHECDSA".asInstanceOf[SHA512WITHECDSA]
   def SHA512WITHRSA: SHA512WITHRSA = "SHA512WITHRSA".asInstanceOf[SHA512WITHRSA]
   def SHARED: SHARED = "SHARED".asInstanceOf[SHARED]
+  def SHARED_BY_ME: SHARED_BY_ME = "SHARED_BY_ME".asInstanceOf[SHARED_BY_ME]
+  def SHARED_WITH_ME: SHARED_WITH_ME = "SHARED_WITH_ME".asInstanceOf[SHARED_WITH_ME]
   def SHARPEN: SHARPEN = "SHARPEN".asInstanceOf[SHARPEN]
   def SHIFT_90_DEGREES: SHIFT_90_DEGREES = "SHIFT_90_DEGREES".asInstanceOf[SHIFT_90_DEGREES]
   def SHUTDOWN: SHUTDOWN = "SHUTDOWN".asInstanceOf[SHUTDOWN]
   def SHUTTING_DOWN: SHUTTING_DOWN = "SHUTTING_DOWN".asInstanceOf[SHUTTING_DOWN]
+  def SIGN: SIGN = "SIGN".asInstanceOf[SIGN]
   def SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED: SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED = "SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED".asInstanceOf[SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED]
   def SIGN_IN: SIGN_IN = "SIGN_IN".asInstanceOf[SIGN_IN]
   def SIGN_UP: SIGN_UP = "SIGN_UP".asInstanceOf[SIGN_UP]
@@ -15330,6 +17279,8 @@ object awsDashSdkLibStrings {
   def SINGLE_PASS: SINGLE_PASS = "SINGLE_PASS".asInstanceOf[SINGLE_PASS]
   def SINGLE_PASS_HQ: SINGLE_PASS_HQ = "SINGLE_PASS_HQ".asInstanceOf[SINGLE_PASS_HQ]
   def SINGLE_QUERY_ARG: SINGLE_QUERY_ARG = "SINGLE_QUERY_ARG".asInstanceOf[SINGLE_QUERY_ARG]
+  def SIP: SIP = "SIP".asInstanceOf[SIP]
+  def SIPS: SIPS = "SIPS".asInstanceOf[SIPS]
   def SIXTY_DAYS: SIXTY_DAYS = "SIXTY_DAYS".asInstanceOf[SIXTY_DAYS]
   def SIX_HOURS: SIX_HOURS = "SIX_HOURS".asInstanceOf[SIX_HOURS]
   def SIZE: SIZE = "SIZE".asInstanceOf[SIZE]
@@ -15337,6 +17288,8 @@ object awsDashSdkLibStrings {
   def SKIPPED: SKIPPED = "SKIPPED".asInstanceOf[SKIPPED]
   def SKIPPED_OVERLAPPING: SKIPPED_OVERLAPPING = "SKIPPED_OVERLAPPING".asInstanceOf[SKIPPED_OVERLAPPING]
   def SKIP_EVALUATION: SKIP_EVALUATION = "SKIP_EVALUATION".asInstanceOf[SKIP_EVALUATION]
+  def SKIP_RESTORE_FROM_SNAPSHOT: SKIP_RESTORE_FROM_SNAPSHOT = "SKIP_RESTORE_FROM_SNAPSHOT".asInstanceOf[SKIP_RESTORE_FROM_SNAPSHOT]
+  def SKYPE_FOR_BUSINESS: SKYPE_FOR_BUSINESS = "SKYPE_FOR_BUSINESS".asInstanceOf[SKYPE_FOR_BUSINESS]
   def SLATE: SLATE = "SLATE".asInstanceOf[SLATE]
   def SLOT_TYPE: SLOT_TYPE = "SLOT_TYPE".asInstanceOf[SLOT_TYPE]
   def SMALL: SMALL = "SMALL".asInstanceOf[SMALL]
@@ -15344,11 +17297,13 @@ object awsDashSdkLibStrings {
   def SMALL_HQ: SMALL_HQ = "SMALL_HQ".asInstanceOf[SMALL_HQ]
   def SMART: SMART = "SMART".asInstanceOf[SMART]
   def SMB: SMB = "SMB".asInstanceOf[SMB]
+  def SMI: SMI = "SMI".asInstanceOf[SMI]
   def SMS: SMS = "SMS".asInstanceOf[SMS]
   def SMS_MFA: SMS_MFA = "SMS_MFA".asInstanceOf[SMS_MFA]
   def SNAPPY: SNAPPY = "SNAPPY".asInstanceOf[SNAPPY]
   def SNAPSHOT: SNAPSHOT = "SNAPSHOT".asInstanceOf[SNAPSHOT]
   def SNAPSHOTTING: SNAPSHOTTING = "SNAPSHOTTING".asInstanceOf[SNAPSHOTTING]
+  def SNAPSHOT_BATCHING: SNAPSHOT_BATCHING = "SNAPSHOT_BATCHING".asInstanceOf[SNAPSHOT_BATCHING]
   def SNS: SNS = "SNS".asInstanceOf[SNS]
   def SOA: SOA = "SOA".asInstanceOf[SOA]
   def SOFT: SOFT = "SOFT".asInstanceOf[SOFT]
@@ -15356,7 +17311,9 @@ object awsDashSdkLibStrings {
   def SOFT_PHONE: SOFT_PHONE = "SOFT_PHONE".asInstanceOf[SOFT_PHONE]
   def SOURCE_ASN: SOURCE_ASN = "SOURCE_ASN".asInstanceOf[SOURCE_ASN]
   def SOURCE_COUNTRY: SOURCE_COUNTRY = "SOURCE_COUNTRY".asInstanceOf[SOURCE_COUNTRY]
+  def SOURCE_IP: SOURCE_IP = "SOURCE_IP".asInstanceOf[SOURCE_IP]
   def SOURCE_IP_ADDRESS: SOURCE_IP_ADDRESS = "SOURCE_IP_ADDRESS".asInstanceOf[SOURCE_IP_ADDRESS]
+  def SOURCE_TYPE: SOURCE_TYPE = "SOURCE_TYPE".asInstanceOf[SOURCE_TYPE]
   def SOURCE_USER_AGENT: SOURCE_USER_AGENT = "SOURCE_USER_AGENT".asInstanceOf[SOURCE_USER_AGENT]
   def SPATIAL: SPATIAL = "SPATIAL".asInstanceOf[SPATIAL]
   def SPECIFIC_ATTRIBUTES: SPECIFIC_ATTRIBUTES = "SPECIFIC_ATTRIBUTES".asInstanceOf[SPECIFIC_ATTRIBUTES]
@@ -15366,7 +17323,9 @@ object awsDashSdkLibStrings {
   def SPEKE: SPEKE = "SPEKE".asInstanceOf[SPEKE]
   def SPF: SPF = "SPF".asInstanceOf[SPF]
   def SPOT: SPOT = "SPOT".asInstanceOf[SPOT]
+  def SPYWARE: SPYWARE = "SPYWARE".asInstanceOf[SPYWARE]
   def SQL: SQL = "SQL".asInstanceOf[SQL]
+  def `SQL-1_0`: `SQL-1_0` = "SQL-1_0".asInstanceOf[`SQL-1_0`]
   def SQS: SQS = "SQS".asInstanceOf[SQS]
   def SRT: SRT = "SRT".asInstanceOf[SRT]
   def SRV: SRV = "SRV".asInstanceOf[SRV]
@@ -15378,11 +17337,14 @@ object awsDashSdkLibStrings {
   def SSLv3: SSLv3 = "SSLv3".asInstanceOf[SSLv3]
   def SSML: SSML = "SSML".asInstanceOf[SSML]
   def SSM_AUTOMATION: SSM_AUTOMATION = "SSM_AUTOMATION".asInstanceOf[SSM_AUTOMATION]
+  def STABILIZING: STABILIZING = "STABILIZING".asInstanceOf[STABILIZING]
   def STACK_NOT_FOUND: STACK_NOT_FOUND = "STACK_NOT_FOUND".asInstanceOf[STACK_NOT_FOUND]
   def STAGED: STAGED = "STAGED".asInstanceOf[STAGED]
   def STAGING: STAGING = "STAGING".asInstanceOf[STAGING]
   def STANDARD: STANDARD = "STANDARD".asInstanceOf[STANDARD]
   def STANDARD_IA: STANDARD_IA = "STANDARD_IA".asInstanceOf[STANDARD_IA]
+  def STANDBY: STANDBY = "STANDBY".asInstanceOf[STANDBY]
+  def START: START = "START".asInstanceOf[START]
   def STARTED: STARTED = "STARTED".asInstanceOf[STARTED]
   def STARTING: STARTING = "STARTING".asInstanceOf[STARTING]
   def STARTS_WITH: STARTS_WITH = "STARTS_WITH".asInstanceOf[STARTS_WITH]
@@ -15397,6 +17359,7 @@ object awsDashSdkLibStrings {
   def STATIC_KEY: STATIC_KEY = "STATIC_KEY".asInstanceOf[STATIC_KEY]
   def STATISTICS: STATISTICS = "STATISTICS".asInstanceOf[STATISTICS]
   def STATUS: STATUS = "STATUS".asInstanceOf[STATUS]
+  def STEADY_STATE: STEADY_STATE = "STEADY_STATE".asInstanceOf[STEADY_STATE]
   def STEP_FAILURE: STEP_FAILURE = "STEP_FAILURE".asInstanceOf[STEP_FAILURE]
   def STEP_FUNCTIONS: STEP_FUNCTIONS = "STEP_FUNCTIONS".asInstanceOf[STEP_FUNCTIONS]
   def STIX: STIX = "STIX".asInstanceOf[STIX]
@@ -15415,6 +17378,7 @@ object awsDashSdkLibStrings {
   def STORAGE_CONNECTOR_ONE_DRIVE: STORAGE_CONNECTOR_ONE_DRIVE = "STORAGE_CONNECTOR_ONE_DRIVE".asInstanceOf[STORAGE_CONNECTOR_ONE_DRIVE]
   def STORAGE_LIMIT: STORAGE_LIMIT = "STORAGE_LIMIT".asInstanceOf[STORAGE_LIMIT]
   def STORAGE_USED: STORAGE_USED = "STORAGE_USED".asInstanceOf[STORAGE_USED]
+  def STRENGTH: STRENGTH = "STRENGTH".asInstanceOf[STRENGTH]
   def STRETCH_TO_OUTPUT: STRETCH_TO_OUTPUT = "STRETCH_TO_OUTPUT".asInstanceOf[STRETCH_TO_OUTPUT]
   def STRICT: STRICT = "STRICT".asInstanceOf[STRICT]
   def STRING: STRING = "STRING".asInstanceOf[STRING]
@@ -15428,6 +17392,7 @@ object awsDashSdkLibStrings {
   def SUBORDINATE: SUBORDINATE = "SUBORDINATE".asInstanceOf[SUBORDINATE]
   def SUBSCRIBE: SUBSCRIBE = "SUBSCRIBE".asInstanceOf[SUBSCRIBE]
   def SUBSCRIPTION_ID: SUBSCRIPTION_ID = "SUBSCRIPTION_ID".asInstanceOf[SUBSCRIPTION_ID]
+  def SUCCEED: SUCCEED = "SUCCEED".asInstanceOf[SUCCEED]
   def SUCCEEDED: SUCCEEDED = "SUCCEEDED".asInstanceOf[SUCCEEDED]
   def SUCCEEDED_WITH_ISSUES: SUCCEEDED_WITH_ISSUES = "SUCCEEDED_WITH_ISSUES".asInstanceOf[SUCCEEDED_WITH_ISSUES]
   def SUCCEED_WITHOUT_RESPONSE_HEADER: SUCCEED_WITHOUT_RESPONSE_HEADER = "SUCCEED_WITHOUT_RESPONSE_HEADER".asInstanceOf[SUCCEED_WITHOUT_RESPONSE_HEADER]
@@ -15442,16 +17407,19 @@ object awsDashSdkLibStrings {
   def SUPPRESS: SUPPRESS = "SUPPRESS".asInstanceOf[SUPPRESS]
   def SURPRISED: SURPRISED = "SURPRISED".asInstanceOf[SURPRISED]
   def SUSE: SUSE = "SUSE".asInstanceOf[SUSE]
+  def `SUSE Linux`: `SUSE Linux` = "SUSE Linux".asInstanceOf[`SUSE Linux`]
   def SUSPENDED: SUSPENDED = "SUSPENDED".asInstanceOf[SUSPENDED]
   def SWIFT: SWIFT = "SWIFT".asInstanceOf[SWIFT]
   def SWITCH_AND_LOOP_INPUTS: SWITCH_AND_LOOP_INPUTS = "SWITCH_AND_LOOP_INPUTS".asInstanceOf[SWITCH_AND_LOOP_INPUTS]
   def SWITCH_TO_ON_DEMAND: SWITCH_TO_ON_DEMAND = "SWITCH_TO_ON_DEMAND".asInstanceOf[SWITCH_TO_ON_DEMAND]
   def SYM: SYM = "SYM".asInstanceOf[SYM]
   def SYMLINK: SYMLINK = "SYMLINK".asInstanceOf[SYMLINK]
+  def SYMPTOM: SYMPTOM = "SYMPTOM".asInstanceOf[SYMPTOM]
   def SYNCING: SYNCING = "SYNCING".asInstanceOf[SYNCING]
   def SYSTEM: SYSTEM = "SYSTEM".asInstanceOf[SYSTEM]
   def SYSTEMCLOCK: SYSTEMCLOCK = "SYSTEMCLOCK".asInstanceOf[SYSTEMCLOCK]
   def SYSTEM_CLOCK: SYSTEM_CLOCK = "SYSTEM_CLOCK".asInstanceOf[SYSTEM_CLOCK]
+  def SYSTEM_ORGAN_SITE: SYSTEM_ORGAN_SITE = "SYSTEM_ORGAN_SITE".asInstanceOf[SYSTEM_ORGAN_SITE]
   def SYSTEM_USER: SYSTEM_USER = "SYSTEM_USER".asInstanceOf[SYSTEM_USER]
   def SageMakerVariantInvocationsPerInstance: SageMakerVariantInvocationsPerInstance = "SageMakerVariantInvocationsPerInstance".asInstanceOf[SageMakerVariantInvocationsPerInstance]
   def SampleCount: SampleCount = "SampleCount".asInstanceOf[SampleCount]
@@ -15461,6 +17429,8 @@ object awsDashSdkLibStrings {
   def ScheduleActivityTask: ScheduleActivityTask = "ScheduleActivityTask".asInstanceOf[ScheduleActivityTask]
   def ScheduleLambdaFunction: ScheduleLambdaFunction = "ScheduleLambdaFunction".asInstanceOf[ScheduleLambdaFunction]
   def Scheduled: Scheduled = "Scheduled".asInstanceOf[Scheduled]
+  def ScheduledActionMaxCapacity: ScheduledActionMaxCapacity = "ScheduledActionMaxCapacity".asInstanceOf[ScheduledActionMaxCapacity]
+  def ScheduledActionMinCapacity: ScheduledActionMinCapacity = "ScheduledActionMinCapacity".asInstanceOf[ScheduledActionMinCapacity]
   def ScheduledNotification: ScheduledNotification = "ScheduledNotification".asInstanceOf[ScheduledNotification]
   def ScriptFailed: ScriptFailed = "ScriptFailed".asInstanceOf[ScriptFailed]
   def ScriptMissing: ScriptMissing = "ScriptMissing".asInstanceOf[ScriptMissing]
@@ -15471,15 +17441,22 @@ object awsDashSdkLibStrings {
   def SecureString: SecureString = "SecureString".asInstanceOf[SecureString]
   def Select: Select = "Select".asInstanceOf[Select]
   def SenderId: SenderId = "SenderId".asInstanceOf[SenderId]
+  def Sent: Sent = "Sent".asInstanceOf[Sent]
   def SentTimestamp: SentTimestamp = "SentTimestamp".asInstanceOf[SentTimestamp]
   def SequenceNumber: SequenceNumber = "SequenceNumber".asInstanceOf[SequenceNumber]
   def Server: Server = "Server".asInstanceOf[Server]
   def ServerCertificates: ServerCertificates = "ServerCertificates".asInstanceOf[ServerCertificates]
   def ServerCertificatesQuota: ServerCertificatesQuota = "ServerCertificatesQuota".asInstanceOf[ServerCertificatesQuota]
+  def ServerInstanceLabel: ServerInstanceLabel = "ServerInstanceLabel".asInstanceOf[ServerInstanceLabel]
   def Service: Service = "Service".asInstanceOf[Service]
+  def ServiceFailure: ServiceFailure = "ServiceFailure".asInstanceOf[ServiceFailure]
+  def ServiceUnavailable: ServiceUnavailable = "ServiceUnavailable".asInstanceOf[ServiceUnavailable]
   def Session: Session = "Session".asInstanceOf[Session]
   def SessionStickinessEnabled: SessionStickinessEnabled = "SessionStickinessEnabled".asInstanceOf[SessionStickinessEnabled]
   def SessionStickiness_LB_CookieDurationSeconds: SessionStickiness_LB_CookieDurationSeconds = "SessionStickiness_LB_CookieDurationSeconds".asInstanceOf[SessionStickiness_LB_CookieDurationSeconds]
+  def SetForecastCapacityToMaxCapacity: SetForecastCapacityToMaxCapacity = "SetForecastCapacityToMaxCapacity".asInstanceOf[SetForecastCapacityToMaxCapacity]
+  def SetMaxCapacityAboveForecastCapacity: SetMaxCapacityAboveForecastCapacity = "SetMaxCapacityAboveForecastCapacity".asInstanceOf[SetMaxCapacityAboveForecastCapacity]
+  def SetMaxCapacityToForecastCapacity: SetMaxCapacityToForecastCapacity = "SetMaxCapacityToForecastCapacity".asInstanceOf[SetMaxCapacityToForecastCapacity]
   def Severe: Severe = "Severe".asInstanceOf[Severe]
   def Sha1: Sha1 = "Sha1".asInstanceOf[Sha1]
   def Sha256: Sha256 = "Sha256".asInstanceOf[Sha256]
@@ -15494,6 +17471,8 @@ object awsDashSdkLibStrings {
   def SignalExternalWorkflowExecution: SignalExternalWorkflowExecution = "SignalExternalWorkflowExecution".asInstanceOf[SignalExternalWorkflowExecution]
   def SigningCertificatesPerUserQuota: SigningCertificatesPerUserQuota = "SigningCertificatesPerUserQuota".asInstanceOf[SigningCertificatesPerUserQuota]
   def SimpleAD: SimpleAD = "SimpleAD".asInstanceOf[SimpleAD]
+  def SimulationApplicationCrash: SimulationApplicationCrash = "SimulationApplicationCrash".asInstanceOf[SimulationApplicationCrash]
+  def SimulationApplicationVersionMismatchedEtag: SimulationApplicationVersionMismatchedEtag = "SimulationApplicationVersionMismatchedEtag".asInstanceOf[SimulationApplicationVersionMismatchedEtag]
   def SingleRecord: SingleRecord = "SingleRecord".asInstanceOf[SingleRecord]
   def Six_Hours: Six_Hours = "Six_Hours".asInstanceOf[Six_Hours]
   def Size: Size = "Size".asInstanceOf[Size]
@@ -15502,14 +17481,17 @@ object awsDashSdkLibStrings {
   def Slack: Slack = "Slack".asInstanceOf[Slack]
   def Small: Small = "Small".asInstanceOf[Small]
   def Snappy: Snappy = "Snappy".asInstanceOf[Snappy]
+  def Socket: Socket = "Socket".asInstanceOf[Socket]
   def SoftFailure: SoftFailure = "SoftFailure".asInstanceOf[SoftFailure]
   def Source: Source = "Source".asInstanceOf[Source]
   def SourceProductId: SourceProductId = "SourceProductId".asInstanceOf[SourceProductId]
+  def SourceUrl: SourceUrl = "SourceUrl".asInstanceOf[SourceUrl]
   def SqlInjectionMatch: SqlInjectionMatch = "SqlInjectionMatch".asInstanceOf[SqlInjectionMatch]
   def Standard: Standard = "Standard".asInstanceOf[Standard]
   def Standby: Standby = "Standby".asInstanceOf[Standby]
   def StartChildWorkflowExecution: StartChildWorkflowExecution = "StartChildWorkflowExecution".asInstanceOf[StartChildWorkflowExecution]
   def StartInstance: StartInstance = "StartInstance".asInstanceOf[StartInstance]
+  def StartRelationalDatabase: StartRelationalDatabase = "StartRelationalDatabase".asInstanceOf[StartRelationalDatabase]
   def StartStep: StartStep = "StartStep".asInstanceOf[StartStep]
   def StartTimeAfter: StartTimeAfter = "StartTimeAfter".asInstanceOf[StartTimeAfter]
   def StartTimeBefore: StartTimeBefore = "StartTimeBefore".asInstanceOf[StartTimeBefore]
@@ -15529,6 +17511,7 @@ object awsDashSdkLibStrings {
   def StepName: StepName = "StepName".asInstanceOf[StepName]
   def StepScaling: StepScaling = "StepScaling".asInstanceOf[StepScaling]
   def StopInstance: StopInstance = "StopInstance".asInstanceOf[StopInstance]
+  def StopRelationalDatabase: StopRelationalDatabase = "StopRelationalDatabase".asInstanceOf[StopRelationalDatabase]
   def StopStep: StopStep = "StopStep".asInstanceOf[StopStep]
   def Stopped: Stopped = "Stopped".asInstanceOf[Stopped]
   def Stopping: Stopping = "Stopping".asInstanceOf[Stopping]
@@ -15537,6 +17520,7 @@ object awsDashSdkLibStrings {
   def StringList: StringList = "StringList".asInstanceOf[StringList]
   def Submitted: Submitted = "Submitted".asInstanceOf[Submitted]
   def Subnet: Subnet = "Subnet".asInstanceOf[Subnet]
+  def SubnetIpLimitExceeded: SubnetIpLimitExceeded = "SubnetIpLimitExceeded".asInstanceOf[SubnetIpLimitExceeded]
   def SucceedStateEntered: SucceedStateEntered = "SucceedStateEntered".asInstanceOf[SucceedStateEntered]
   def SucceedStateExited: SucceedStateExited = "SucceedStateExited".asInstanceOf[SucceedStateExited]
   def Succeeded: Succeeded = "Succeeded".asInstanceOf[Succeeded]
@@ -15549,6 +17533,7 @@ object awsDashSdkLibStrings {
   def SystemUnavailable: SystemUnavailable = "SystemUnavailable".asInstanceOf[SystemUnavailable]
   def SystemUpdating: SystemUpdating = "SystemUpdating".asInstanceOf[SystemUpdating]
   def T100: T100 = "T100".asInstanceOf[T100]
+  def T42: T42 = "T42".asInstanceOf[T42]
   def T50: T50 = "T50".asInstanceOf[T50]
   def T80: T80 = "T80".asInstanceOf[T80]
   def TABLET: TABLET = "TABLET".asInstanceOf[TABLET]
@@ -15558,12 +17543,14 @@ object awsDashSdkLibStrings {
   def TAG_FILTERS_1_0: TAG_FILTERS_1_0 = "TAG_FILTERS_1_0".asInstanceOf[TAG_FILTERS_1_0]
   def TAINTED: TAINTED = "TAINTED".asInstanceOf[TAINTED]
   def TASK: TASK = "TASK".asInstanceOf[TASK]
+  def TASK_DEFINITION: TASK_DEFINITION = "TASK_DEFINITION".asInstanceOf[TASK_DEFINITION]
   def TCP: TCP = "TCP".asInstanceOf[TCP]
   def TDRL: TDRL = "TDRL".asInstanceOf[TDRL]
   def TELETEXT: TELETEXT = "TELETEXT".asInstanceOf[TELETEXT]
   def TEMPORAL: TEMPORAL = "TEMPORAL".asInstanceOf[TEMPORAL]
   def TEMPORARY_FAILURE: TEMPORARY_FAILURE = "TEMPORARY_FAILURE".asInstanceOf[TEMPORARY_FAILURE]
   def TENANCY: TENANCY = "TENANCY".asInstanceOf[TENANCY]
+  def TENSORFLOW: TENSORFLOW = "TENSORFLOW".asInstanceOf[TENSORFLOW]
   def TERA_BITS: TERA_BITS = "TERA_BITS".asInstanceOf[TERA_BITS]
   def TERA_BITS_PER_SECOND: TERA_BITS_PER_SECOND = "TERA_BITS_PER_SECOND".asInstanceOf[TERA_BITS_PER_SECOND]
   def TERA_BYTES: TERA_BYTES = "TERA_BYTES".asInstanceOf[TERA_BYTES]
@@ -15575,10 +17562,17 @@ object awsDashSdkLibStrings {
   def TERMINATE_AT_INSTANCE_HOUR: TERMINATE_AT_INSTANCE_HOUR = "TERMINATE_AT_INSTANCE_HOUR".asInstanceOf[TERMINATE_AT_INSTANCE_HOUR]
   def TERMINATE_AT_TASK_COMPLETION: TERMINATE_AT_TASK_COMPLETION = "TERMINATE_AT_TASK_COMPLETION".asInstanceOf[TERMINATE_AT_TASK_COMPLETION]
   def TERMINATE_CLUSTER: TERMINATE_CLUSTER = "TERMINATE_CLUSTER".asInstanceOf[TERMINATE_CLUSTER]
+  def TERMINATE_FAILED: TERMINATE_FAILED = "TERMINATE_FAILED".asInstanceOf[TERMINATE_FAILED]
+  def TERMINATE_IN_PROGRESS: TERMINATE_IN_PROGRESS = "TERMINATE_IN_PROGRESS".asInstanceOf[TERMINATE_IN_PROGRESS]
   def TERMINATE_JOB_FLOW: TERMINATE_JOB_FLOW = "TERMINATE_JOB_FLOW".asInstanceOf[TERMINATE_JOB_FLOW]
   def TERMINATING: TERMINATING = "TERMINATING".asInstanceOf[TERMINATING]
+  def TERMINATION_WAIT: TERMINATION_WAIT = "TERMINATION_WAIT".asInstanceOf[TERMINATION_WAIT]
   def TERM_MATCH: TERM_MATCH = "TERM_MATCH".asInstanceOf[TERM_MATCH]
   def TESTSPEC_OUTPUT: TESTSPEC_OUTPUT = "TESTSPEC_OUTPUT".asInstanceOf[TESTSPEC_OUTPUT]
+  def TEST_NAME: TEST_NAME = "TEST_NAME".asInstanceOf[TEST_NAME]
+  def TEST_TREATMENT_PROCEDURE: TEST_TREATMENT_PROCEDURE = "TEST_TREATMENT_PROCEDURE".asInstanceOf[TEST_TREATMENT_PROCEDURE]
+  def TEST_UNITS: TEST_UNITS = "TEST_UNITS".asInstanceOf[TEST_UNITS]
+  def TEST_VALUE: TEST_VALUE = "TEST_VALUE".asInstanceOf[TEST_VALUE]
   def THEME_NAME: THEME_NAME = "THEME_NAME".asInstanceOf[THEME_NAME]
   def THING: THING = "THING".asInstanceOf[THING]
   def THING_GROUP: THING_GROUP = "THING_GROUP".asInstanceOf[THING_GROUP]
@@ -15602,6 +17596,7 @@ object awsDashSdkLibStrings {
   def TIMESTAMP: TIMESTAMP = "TIMESTAMP".asInstanceOf[TIMESTAMP]
   def TIME_STAMPING: TIME_STAMPING = "TIME_STAMPING".asInstanceOf[TIME_STAMPING]
   def TITLE: TITLE = "TITLE".asInstanceOf[TITLE]
+  def TLS: TLS = "TLS".asInstanceOf[TLS]
   def TLS_WEB_CLIENT_AUTHENTICATION: TLS_WEB_CLIENT_AUTHENTICATION = "TLS_WEB_CLIENT_AUTHENTICATION".asInstanceOf[TLS_WEB_CLIENT_AUTHENTICATION]
   def TLS_WEB_SERVER_AUTHENTICATION: TLS_WEB_SERVER_AUTHENTICATION = "TLS_WEB_SERVER_AUTHENTICATION".asInstanceOf[TLS_WEB_SERVER_AUTHENTICATION]
   def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
@@ -15610,6 +17605,7 @@ object awsDashSdkLibStrings {
   def TLSv1DOT2: TLSv1DOT2 = "TLSv1.2".asInstanceOf[TLSv1DOT2]
   def TLSv1DOT2_2018: TLSv1DOT2_2018 = "TLSv1.2_2018".asInstanceOf[TLSv1DOT2_2018]
   def TLSv1_2016: TLSv1_2016 = "TLSv1_2016".asInstanceOf[TLSv1_2016]
+  def TMX: TMX = "TMX".asInstanceOf[TMX]
   def TOKEN: TOKEN = "TOKEN".asInstanceOf[TOKEN]
   def TOPIC_DOES_NOT_EXIST: TOPIC_DOES_NOT_EXIST = "TOPIC_DOES_NOT_EXIST".asInstanceOf[TOPIC_DOES_NOT_EXIST]
   def TOP_CENTER: TOP_CENTER = "TOP_CENTER".asInstanceOf[TOP_CENTER]
@@ -15618,16 +17614,23 @@ object awsDashSdkLibStrings {
   def TOP_RESOLUTION: TOP_RESOLUTION = "TOP_RESOLUTION".asInstanceOf[TOP_RESOLUTION]
   def TOP_RIGHT: TOP_RIGHT = "TOP_RIGHT".asInstanceOf[TOP_RIGHT]
   def TOTAL: TOTAL = "TOTAL".asInstanceOf[TOTAL]
+  def TOTAL_SIZE: TOTAL_SIZE = "TOTAL_SIZE".asInstanceOf[TOTAL_SIZE]
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   def TRACK: TRACK = "TRACK".asInstanceOf[TRACK]
+  def TRAINED: TRAINED = "TRAINED".asInstanceOf[TRAINED]
+  def TRAINING: TRAINING = "TRAINING".asInstanceOf[TRAINING]
   def TRANSACTIONAL: TRANSACTIONAL = "TRANSACTIONAL".asInstanceOf[TRANSACTIONAL]
   def TRANSFERABLE: TRANSFERABLE = "TRANSFERABLE".asInstanceOf[TRANSFERABLE]
+  def TRANSFERRING: TRANSFERRING = "TRANSFERRING".asInstanceOf[TRANSFERRING]
   def TRANSFER_IN_DOMAIN: TRANSFER_IN_DOMAIN = "TRANSFER_IN_DOMAIN".asInstanceOf[TRANSFER_IN_DOMAIN]
   def TRANSFER_OUT_DOMAIN: TRANSFER_OUT_DOMAIN = "TRANSFER_OUT_DOMAIN".asInstanceOf[TRANSFER_OUT_DOMAIN]
   def TRANSITIONING: TRANSITIONING = "TRANSITIONING".asInstanceOf[TRANSITIONING]
+  def TREATMENT_NAME: TREATMENT_NAME = "TREATMENT_NAME".asInstanceOf[TREATMENT_NAME]
   def TRIM_HORIZON: TRIM_HORIZON = "TRIM_HORIZON".asInstanceOf[TRIM_HORIZON]
+  def TROJAN: TROJAN = "TROJAN".asInstanceOf[TROJAN]
   def TRUE: TRUE = "TRUE".asInstanceOf[TRUE]
   def TRUE_PEAK: TRUE_PEAK = "TRUE_PEAK".asInstanceOf[TRUE_PEAK]
+  def TRUE_POSITIVE: TRUE_POSITIVE = "TRUE_POSITIVE".asInstanceOf[TRUE_POSITIVE]
   def TTML: TTML = "TTML".asInstanceOf[TTML]
   def TUE: TUE = "TUE".asInstanceOf[TUE]
   def TUESDAY: TUESDAY = "TUESDAY".asInstanceOf[TUESDAY]
@@ -15641,16 +17644,28 @@ object awsDashSdkLibStrings {
   def TargetBased: TargetBased = "TargetBased".asInstanceOf[TargetBased]
   def TargetDOTDeregistrationInProgress: TargetDOTDeregistrationInProgress = "Target.DeregistrationInProgress".asInstanceOf[TargetDOTDeregistrationInProgress]
   def TargetDOTFailedHealthChecks: TargetDOTFailedHealthChecks = "Target.FailedHealthChecks".asInstanceOf[TargetDOTFailedHealthChecks]
+  def TargetDOTHealthCheckDisabled: TargetDOTHealthCheckDisabled = "Target.HealthCheckDisabled".asInstanceOf[TargetDOTHealthCheckDisabled]
   def TargetDOTInvalidState: TargetDOTInvalidState = "Target.InvalidState".asInstanceOf[TargetDOTInvalidState]
   def TargetDOTIpUnusable: TargetDOTIpUnusable = "Target.IpUnusable".asInstanceOf[TargetDOTIpUnusable]
   def TargetDOTNotInUse: TargetDOTNotInUse = "Target.NotInUse".asInstanceOf[TargetDOTNotInUse]
   def TargetDOTNotRegistered: TargetDOTNotRegistered = "Target.NotRegistered".asInstanceOf[TargetDOTNotRegistered]
   def TargetDOTResponseCodeMismatch: TargetDOTResponseCodeMismatch = "Target.ResponseCodeMismatch".asInstanceOf[TargetDOTResponseCodeMismatch]
   def TargetDOTTimeout: TargetDOTTimeout = "Target.Timeout".asInstanceOf[TargetDOTTimeout]
+  def TargetStatus: TargetStatus = "TargetStatus".asInstanceOf[TargetStatus]
   def TargetTrackingScaling: TargetTrackingScaling = "TargetTrackingScaling".asInstanceOf[TargetTrackingScaling]
+  def TaskFailed: TaskFailed = "TaskFailed".asInstanceOf[TaskFailed]
+  def TaskFailedToStart: TaskFailedToStart = "TaskFailedToStart".asInstanceOf[TaskFailedToStart]
+  def TaskScheduled: TaskScheduled = "TaskScheduled".asInstanceOf[TaskScheduled]
+  def TaskStartFailed: TaskStartFailed = "TaskStartFailed".asInstanceOf[TaskStartFailed]
+  def TaskStarted: TaskStarted = "TaskStarted".asInstanceOf[TaskStarted]
   def TaskStateAborted: TaskStateAborted = "TaskStateAborted".asInstanceOf[TaskStateAborted]
   def TaskStateEntered: TaskStateEntered = "TaskStateEntered".asInstanceOf[TaskStateEntered]
   def TaskStateExited: TaskStateExited = "TaskStateExited".asInstanceOf[TaskStateExited]
+  def TaskSubmitFailed: TaskSubmitFailed = "TaskSubmitFailed".asInstanceOf[TaskSubmitFailed]
+  def TaskSubmitted: TaskSubmitted = "TaskSubmitted".asInstanceOf[TaskSubmitted]
+  def TaskSucceeded: TaskSucceeded = "TaskSucceeded".asInstanceOf[TaskSucceeded]
+  def TaskTimedOut: TaskTimedOut = "TaskTimedOut".asInstanceOf[TaskTimedOut]
+  def Team: Team = "Team".asInstanceOf[Team]
   def TemplateDoesNotExist: TemplateDoesNotExist = "TemplateDoesNotExist".asInstanceOf[TemplateDoesNotExist]
   def TemporaryFailure: TemporaryFailure = "TemporaryFailure".asInstanceOf[TemporaryFailure]
   def Terabits: Terabits = "Terabits".asInstanceOf[Terabits]
@@ -15664,6 +17679,7 @@ object awsDashSdkLibStrings {
   def Test: Test = "Test".asInstanceOf[Test]
   def ThirdParty: ThirdParty = "ThirdParty".asInstanceOf[ThirdParty]
   def Three_Hours: Three_Hours = "Three_Hours".asInstanceOf[Three_Hours]
+  def Throttled: Throttled = "Throttled".asInstanceOf[Throttled]
   def TimeBasedCanary: TimeBasedCanary = "TimeBasedCanary".asInstanceOf[TimeBasedCanary]
   def TimeBasedLinear: TimeBasedLinear = "TimeBasedLinear".asInstanceOf[TimeBasedLinear]
   def TimedOut: TimedOut = "TimedOut".asInstanceOf[TimedOut]
@@ -15676,6 +17692,8 @@ object awsDashSdkLibStrings {
   def Training: Training = "Training".asInstanceOf[Training]
   def TrainingDataSourceId: TrainingDataSourceId = "TrainingDataSourceId".asInstanceOf[TrainingDataSourceId]
   def TrainingDataURI: TrainingDataURI = "TrainingDataURI".asInstanceOf[TrainingDataURI]
+  def TrainingJob: TrainingJob = "TrainingJob".asInstanceOf[TrainingJob]
+  def TransferLearning: TransferLearning = "TransferLearning".asInstanceOf[TransferLearning]
   def TransientFailure: TransientFailure = "TransientFailure".asInstanceOf[TransientFailure]
   def True: True = "True".asInstanceOf[True]
   def Twelve_Hours: Twelve_Hours = "Twelve_Hours".asInstanceOf[Twelve_Hours]
@@ -15698,6 +17716,7 @@ object awsDashSdkLibStrings {
   def UNAVAILABLE: UNAVAILABLE = "UNAVAILABLE".asInstanceOf[UNAVAILABLE]
   def UNAVAILABLE_PREMIUM: UNAVAILABLE_PREMIUM = "UNAVAILABLE_PREMIUM".asInstanceOf[UNAVAILABLE_PREMIUM]
   def UNAVAILABLE_RESTRICTED: UNAVAILABLE_RESTRICTED = "UNAVAILABLE_RESTRICTED".asInstanceOf[UNAVAILABLE_RESTRICTED]
+  def UNBLENDED_COST: UNBLENDED_COST = "UNBLENDED_COST".asInstanceOf[UNBLENDED_COST]
   def UNCOMPRESSED: UNCOMPRESSED = "UNCOMPRESSED".asInstanceOf[UNCOMPRESSED]
   def UNCONFIRMED: UNCONFIRMED = "UNCONFIRMED".asInstanceOf[UNCONFIRMED]
   def UNDEFINED: UNDEFINED = "UNDEFINED".asInstanceOf[UNDEFINED]
@@ -15709,6 +17728,7 @@ object awsDashSdkLibStrings {
   def UNIFORM_SCALING: UNIFORM_SCALING = "UNIFORM_SCALING".asInstanceOf[UNIFORM_SCALING]
   def UNIMPAIRED: UNIMPAIRED = "UNIMPAIRED".asInstanceOf[UNIMPAIRED]
   def UNINITIALIZED: UNINITIALIZED = "UNINITIALIZED".asInstanceOf[UNINITIALIZED]
+  def UNIT: UNIT = "UNIT".asInstanceOf[UNIT]
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   def UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION: UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION = "UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION".asInstanceOf[UNKNOWN_EXTERNAL_WORKFLOW_EXECUTION]
   def UNKNOWN_FAILURE: UNKNOWN_FAILURE = "UNKNOWN_FAILURE".asInstanceOf[UNKNOWN_FAILURE]
@@ -15753,6 +17773,7 @@ object awsDashSdkLibStrings {
   def URL_DECODE: URL_DECODE = "URL_DECODE".asInstanceOf[URL_DECODE]
   def URL_PULL: URL_PULL = "URL_PULL".asInstanceOf[URL_PULL]
   def USAGE: USAGE = "USAGE".asInstanceOf[USAGE]
+  def USAGE_QUANTITY: USAGE_QUANTITY = "USAGE_QUANTITY".asInstanceOf[USAGE_QUANTITY]
   def USAGE_TYPE: USAGE_TYPE = "USAGE_TYPE".asInstanceOf[USAGE_TYPE]
   def USAGE_TYPE_GROUP: USAGE_TYPE_GROUP = "USAGE_TYPE_GROUP".asInstanceOf[USAGE_TYPE_GROUP]
   def USD: USD = "USD".asInstanceOf[USD]
@@ -15761,6 +17782,8 @@ object awsDashSdkLibStrings {
   def USER: USER = "USER".asInstanceOf[USER]
   def USERNAME: USERNAME = "USERNAME".asInstanceOf[USERNAME]
   def USERPOOL: USERPOOL = "USERPOOL".asInstanceOf[USERPOOL]
+  def USER_INITIATED: USER_INITIATED = "USER_INITIATED".asInstanceOf[USER_INITIATED]
+  def USER_LOCKED_OUT: USER_LOCKED_OUT = "USER_LOCKED_OUT".asInstanceOf[USER_LOCKED_OUT]
   def USER_NAME: USER_NAME = "USER_NAME".asInstanceOf[USER_NAME]
   def USER_NAME_NOT_FOUND: USER_NAME_NOT_FOUND = "USER_NAME_NOT_FOUND".asInstanceOf[USER_NAME_NOT_FOUND]
   def USER_PASSWORD_AUTH: USER_PASSWORD_AUTH = "USER_PASSWORD_AUTH".asInstanceOf[USER_PASSWORD_AUTH]
@@ -15772,6 +17795,7 @@ object awsDashSdkLibStrings {
   def USE_CONFIGURED: USE_CONFIGURED = "USE_CONFIGURED".asInstanceOf[USE_CONFIGURED]
   def USE_CONFIGURED_CLOCK: USE_CONFIGURED_CLOCK = "USE_CONFIGURED_CLOCK".asInstanceOf[USE_CONFIGURED_CLOCK]
   def USE_CONFIGURED_OFFSET: USE_CONFIGURED_OFFSET = "USE_CONFIGURED_OFFSET".asInstanceOf[USE_CONFIGURED_OFFSET]
+  def USE_DEFAULT_VALUE: USE_DEFAULT_VALUE = "USE_DEFAULT_VALUE".asInstanceOf[USE_DEFAULT_VALUE]
   def USE_EVENT_START_DATE: USE_EVENT_START_DATE = "USE_EVENT_START_DATE".asInstanceOf[USE_EVENT_START_DATE]
   def USE_INPUT_SEGMENTATION: USE_INPUT_SEGMENTATION = "USE_INPUT_SEGMENTATION".asInstanceOf[USE_INPUT_SEGMENTATION]
   def USE_PSI: USE_PSI = "USE_PSI".asInstanceOf[USE_PSI]
@@ -15784,19 +17808,25 @@ object awsDashSdkLibStrings {
   def UTILITY: UTILITY = "UTILITY".asInstanceOf[UTILITY]
   def Unassignable: Unassignable = "Unassignable".asInstanceOf[Unassignable]
   def Unassigned: Unassigned = "Unassigned".asInstanceOf[Unassigned]
+  def Unauthorized: Unauthorized = "Unauthorized".asInstanceOf[Unauthorized]
+  def Unavailable: Unavailable = "Unavailable".asInstanceOf[Unavailable]
   def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
   def Unfulfilled: Unfulfilled = "Unfulfilled".asInstanceOf[Unfulfilled]
   def Unhealthy: Unhealthy = "Unhealthy".asInstanceOf[Unhealthy]
   def UnhealthyHostCount: UnhealthyHostCount = "UnhealthyHostCount".asInstanceOf[UnhealthyHostCount]
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   def UnknownError: UnknownError = "UnknownError".asInstanceOf[UnknownError]
+  def Unprocessable: Unprocessable = "Unprocessable".asInstanceOf[Unprocessable]
   def Unprocessed: Unprocessed = "Unprocessed".asInstanceOf[Unprocessed]
+  def Unregistered: Unregistered = "Unregistered".asInstanceOf[Unregistered]
   def UpdateCancelled: UpdateCancelled = "UpdateCancelled".asInstanceOf[UpdateCancelled]
   def UpdateDomainEntry: UpdateDomainEntry = "UpdateDomainEntry".asInstanceOf[UpdateDomainEntry]
   def UpdateFailed: UpdateFailed = "UpdateFailed".asInstanceOf[UpdateFailed]
   def UpdateInProgress: UpdateInProgress = "UpdateInProgress".asInstanceOf[UpdateInProgress]
   def UpdateLoadBalancerAttribute: UpdateLoadBalancerAttribute = "UpdateLoadBalancerAttribute".asInstanceOf[UpdateLoadBalancerAttribute]
   def UpdatePolicy: UpdatePolicy = "UpdatePolicy".asInstanceOf[UpdatePolicy]
+  def UpdateRelationalDatabase: UpdateRelationalDatabase = "UpdateRelationalDatabase".asInstanceOf[UpdateRelationalDatabase]
+  def UpdateRelationalDatabaseParameters: UpdateRelationalDatabaseParameters = "UpdateRelationalDatabaseParameters".asInstanceOf[UpdateRelationalDatabaseParameters]
   def Updated: Updated = "Updated".asInstanceOf[Updated]
   def Updating: Updating = "Updating".asInstanceOf[Updating]
   def UpdatingSchema: UpdatingSchema = "UpdatingSchema".asInstanceOf[UpdatingSchema]
@@ -15804,6 +17834,7 @@ object awsDashSdkLibStrings {
   def Uploading: Uploading = "Uploading".asInstanceOf[Uploading]
   def UseDefaultValue: UseDefaultValue = "UseDefaultValue".asInstanceOf[UseDefaultValue]
   def User: User = "User".asInstanceOf[User]
+  def UserInitiated: UserInitiated = "UserInitiated".asInstanceOf[UserInitiated]
   def UserPolicySizeQuota: UserPolicySizeQuota = "UserPolicySizeQuota".asInstanceOf[UserPolicySizeQuota]
   def Username: Username = "Username".asInstanceOf[Username]
   def Users: Users = "Users".asInstanceOf[Users]
@@ -15815,6 +17846,7 @@ object awsDashSdkLibStrings {
   def VALID: VALID = "VALID".asInstanceOf[VALID]
   def VALIDATING: VALIDATING = "VALIDATING".asInstanceOf[VALIDATING]
   def VALIDATION_ERROR: VALIDATION_ERROR = "VALIDATION_ERROR".asInstanceOf[VALIDATION_ERROR]
+  def VALIDATION_IN_PROGRESS: VALIDATION_IN_PROGRESS = "VALIDATION_IN_PROGRESS".asInstanceOf[VALIDATION_IN_PROGRESS]
   def VALIDATION_TIMED_OUT: VALIDATION_TIMED_OUT = "VALIDATION_TIMED_OUT".asInstanceOf[VALIDATION_TIMED_OUT]
   def VALUE: VALUE = "VALUE".asInstanceOf[VALUE]
   def VALUE_ONLY: VALUE_ONLY = "VALUE_ONLY".asInstanceOf[VALUE_ONLY]
@@ -15823,6 +17855,7 @@ object awsDashSdkLibStrings {
   def VBR: VBR = "VBR".asInstanceOf[VBR]
   def VERB: VERB = "VERB".asInstanceOf[VERB]
   def VERBOSE: VERBOSE = "VERBOSE".asInstanceOf[VERBOSE]
+  def VERIFYING: VERIFYING = "VERIFYING".asInstanceOf[VERIFYING]
   def VERIFY_AUTHENTICITY: VERIFY_AUTHENTICITY = "VERIFY_AUTHENTICITY".asInstanceOf[VERIFY_AUTHENTICITY]
   def VHD: VHD = "VHD".asInstanceOf[VHD]
   def VIDEO: VIDEO = "VIDEO".asInstanceOf[VIDEO]
@@ -15836,6 +17869,7 @@ object awsDashSdkLibStrings {
   def VIDEO_PID: VIDEO_PID = "VIDEO_PID".asInstanceOf[VIDEO_PID]
   def VIEWER: VIEWER = "VIEWER".asInstanceOf[VIEWER]
   def VIRTUAL_MACHINE: VIRTUAL_MACHINE = "VIRTUAL_MACHINE".asInstanceOf[VIRTUAL_MACHINE]
+  def VIRUS: VIRUS = "VIRUS".asInstanceOf[VIRUS]
   def VISUALLY_IMPAIRED: VISUALLY_IMPAIRED = "VISUALLY_IMPAIRED".asInstanceOf[VISUALLY_IMPAIRED]
   def VISUAL_IMPAIRED_COMMENTARY: VISUAL_IMPAIRED_COMMENTARY = "VISUAL_IMPAIRED_COMMENTARY".asInstanceOf[VISUAL_IMPAIRED_COMMENTARY]
   def VMDK: VMDK = "VMDK".asInstanceOf[VMDK]
@@ -15872,12 +17906,15 @@ object awsDashSdkLibStrings {
   def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
   def WAS_OFFLINE: WAS_OFFLINE = "WAS_OFFLINE".asInstanceOf[WAS_OFFLINE]
   def WAV: WAV = "WAV".asInstanceOf[WAV]
+  def WEB: WEB = "WEB".asInstanceOf[WEB]
+  def WEBEX: WEBEX = "WEBEX".asInstanceOf[WEBEX]
   def WEBKIT_LOG: WEBKIT_LOG = "WEBKIT_LOG".asInstanceOf[WEBKIT_LOG]
   def WEBVTT: WEBVTT = "WEBVTT".asInstanceOf[WEBVTT]
   def WEB_ACL_MISSING_RULE_GROUP: WEB_ACL_MISSING_RULE_GROUP = "WEB_ACL_MISSING_RULE_GROUP".asInstanceOf[WEB_ACL_MISSING_RULE_GROUP]
   def WEB_APP: WEB_APP = "WEB_APP".asInstanceOf[WEB_APP]
   def WEB_DELIVERY_ALLOWED: WEB_DELIVERY_ALLOWED = "WEB_DELIVERY_ALLOWED".asInstanceOf[WEB_DELIVERY_ALLOWED]
   def WEB_DELIVERY_NOT_ALLOWED: WEB_DELIVERY_NOT_ALLOWED = "WEB_DELIVERY_NOT_ALLOWED".asInstanceOf[WEB_DELIVERY_NOT_ALLOWED]
+  def WEB_HOOK: WEB_HOOK = "WEB_HOOK".asInstanceOf[WEB_HOOK]
   def WEB_PERFORMANCE_PROFILE: WEB_PERFORMANCE_PROFILE = "WEB_PERFORMANCE_PROFILE".asInstanceOf[WEB_PERFORMANCE_PROFILE]
   def WED: WED = "WED".asInstanceOf[WED]
   def WEDNESDAY: WEDNESDAY = "WEDNESDAY".asInstanceOf[WEDNESDAY]
@@ -15899,6 +17936,7 @@ object awsDashSdkLibStrings {
   def WORKFLOW_TYPE_DOES_NOT_EXIST: WORKFLOW_TYPE_DOES_NOT_EXIST = "WORKFLOW_TYPE_DOES_NOT_EXIST".asInstanceOf[WORKFLOW_TYPE_DOES_NOT_EXIST]
   def WORKSPACESUSER: WORKSPACESUSER = "WORKSPACESUSER".asInstanceOf[WORKSPACESUSER]
   def WORK_IN_PROGRESS: WORK_IN_PROGRESS = "WORK_IN_PROGRESS".asInstanceOf[WORK_IN_PROGRESS]
+  def WORM: WORM = "WORM".asInstanceOf[WORM]
   def WRITE: WRITE = "WRITE".asInstanceOf[WRITE]
   def WRITE_ACP: WRITE_ACP = "WRITE_ACP".asInstanceOf[WRITE_ACP]
   def WaitStateAborted: WaitStateAborted = "WaitStateAborted".asInstanceOf[WaitStateAborted]
@@ -15915,11 +17953,16 @@ object awsDashSdkLibStrings {
   def Weekly: Weekly = "Weekly".asInstanceOf[Weekly]
   def Windows: Windows = "Windows".asInstanceOf[Windows]
   def `Windows (Amazon VPC)`: `Windows (Amazon VPC)` = "Windows (Amazon VPC)".asInstanceOf[`Windows (Amazon VPC)`]
+  def `Windows with SQL Server`: `Windows with SQL Server` = "Windows with SQL Server".asInstanceOf[`Windows with SQL Server`]
+  def `Windows with SQL Server Enterprise`: `Windows with SQL Server Enterprise` = "Windows with SQL Server Enterprise".asInstanceOf[`Windows with SQL Server Enterprise`]
+  def `Windows with SQL Server Standard`: `Windows with SQL Server Standard` = "Windows with SQL Server Standard".asInstanceOf[`Windows with SQL Server Standard`]
+  def `Windows with SQL Server Web`: `Windows with SQL Server Web` = "Windows with SQL Server Web".asInstanceOf[`Windows with SQL Server Web`]
   def WithAWS: WithAWS = "WithAWS".asInstanceOf[WithAWS]
   def WithAWSSortingFacility: WithAWSSortingFacility = "WithAWSSortingFacility".asInstanceOf[WithAWSSortingFacility]
   def WithCustomer: WithCustomer = "WithCustomer".asInstanceOf[WithCustomer]
   def WriteOnly: WriteOnly = "WriteOnly".asInstanceOf[WriteOnly]
   def WriteProvisionedThroughputExceeded: WriteProvisionedThroughputExceeded = "WriteProvisionedThroughputExceeded".asInstanceOf[WriteProvisionedThroughputExceeded]
+  def X86_64: X86_64 = "X86_64".asInstanceOf[X86_64]
   def XCTEST: XCTEST = "XCTEST".asInstanceOf[XCTEST]
   def XCTEST_LOG: XCTEST_LOG = "XCTEST_LOG".asInstanceOf[XCTEST_LOG]
   def XCTEST_TEST_PACKAGE: XCTEST_TEST_PACKAGE = "XCTEST_TEST_PACKAGE".asInstanceOf[XCTEST_TEST_PACKAGE]
@@ -15927,14 +17970,19 @@ object awsDashSdkLibStrings {
   def XCTEST_UI_TEST_PACKAGE: XCTEST_UI_TEST_PACKAGE = "XCTEST_UI_TEST_PACKAGE".asInstanceOf[XCTEST_UI_TEST_PACKAGE]
   def XCTEST_UI_TEST_SPEC: XCTEST_UI_TEST_SPEC = "XCTEST_UI_TEST_SPEC".asInstanceOf[XCTEST_UI_TEST_SPEC]
   def XDCAM: XDCAM = "XDCAM".asInstanceOf[XDCAM]
+  def XGBOOST: XGBOOST = "XGBOOST".asInstanceOf[XGBOOST]
   def XssMatch: XssMatch = "XssMatch".asInstanceOf[XssMatch]
   def YAML: YAML = "YAML".asInstanceOf[YAML]
   def YEARS: YEARS = "YEARS".asInstanceOf[YEARS]
   def YELLOW: YELLOW = "YELLOW".asInstanceOf[YELLOW]
+  def YES: YES = "YES".asInstanceOf[YES]
   def Yellow: Yellow = "Yellow".asInstanceOf[Yellow]
   def ZEROBASED: ZEROBASED = "ZEROBASED".asInstanceOf[ZEROBASED]
   def ZIP: ZIP = "ZIP".asInstanceOf[ZIP]
+  def ZIPFILE: ZIPFILE = "ZIPFILE".asInstanceOf[ZIPFILE]
   def ZLIB: ZLIB = "ZLIB".asInstanceOf[ZLIB]
+  def ZONAL_RESOURCE_INACCESSIBLE: ZONAL_RESOURCE_INACCESSIBLE = "ZONAL_RESOURCE_INACCESSIBLE".asInstanceOf[ZONAL_RESOURCE_INACCESSIBLE]
+  def ZOOM: ZOOM = "ZOOM".asInstanceOf[ZOOM]
   def Zip: Zip = "Zip".asInstanceOf[Zip]
   def aarch64: aarch64 = "aarch64".asInstanceOf[aarch64]
   def accountNotification: accountNotification = "accountNotification".asInstanceOf[accountNotification]
@@ -15942,6 +17990,10 @@ object awsDashSdkLibStrings {
   def active: active = "active".asInstanceOf[active]
   def active_impaired: active_impaired = "active_impaired".asInstanceOf[active_impaired]
   def add: add = "add".asInstanceOf[add]
+  def advertised: advertised = "advertised".asInstanceOf[advertised]
+  def aes128: aes128 = "aes128".asInstanceOf[aes128]
+  def aes192: aes192 = "aes192".asInstanceOf[aes192]
+  def aes256: aes256 = "aes256".asInstanceOf[aes256]
   def `alarm-cleared`: `alarm-cleared` = "alarm-cleared".asInstanceOf[`alarm-cleared`]
   def `alarm-invalidated`: `alarm-invalidated` = "alarm-invalidated".asInstanceOf[`alarm-invalidated`]
   def alarmExists: alarmExists = "alarmExists".asInstanceOf[alarmExists]
@@ -15968,6 +18020,7 @@ object awsDashSdkLibStrings {
   def `appstream:fleet:DesiredCapacity`: `appstream:fleet:DesiredCapacity` = "appstream:fleet:DesiredCapacity".asInstanceOf[`appstream:fleet:DesiredCapacity`]
   def ar: ar = "ar".asInstanceOf[ar]
   def archive: archive = "archive".asInstanceOf[archive]
+  def arm64: arm64 = "arm64".asInstanceOf[arm64]
   def armv7l: armv7l = "armv7l".asInstanceOf[armv7l]
   def asc: asc = "asc".asInstanceOf[asc]
   def ascending: ascending = "ascending".asInstanceOf[ascending]
@@ -15984,13 +18037,17 @@ object awsDashSdkLibStrings {
   def autoscaling: autoscaling = "autoscaling".asInstanceOf[autoscaling]
   def `autoscaling:autoScalingGroup:DesiredCapacity`: `autoscaling:autoScalingGroup:DesiredCapacity` = "autoscaling:autoScalingGroup:DesiredCapacity".asInstanceOf[`autoscaling:autoScalingGroup:DesiredCapacity`]
   def available: available = "available".asInstanceOf[available]
+  def aws: aws = "aws".asInstanceOf[aws]
+  def `aws-cn`: `aws-cn` = "aws-cn".asInstanceOf[`aws-cn`]
   def `aws-exec-read`: `aws-exec-read` = "aws-exec-read".asInstanceOf[`aws-exec-read`]
   def `aws-flow-ruby`: `aws-flow-ruby` = "aws-flow-ruby".asInstanceOf[`aws-flow-ruby`]
   def `aws-managed`: `aws-managed` = "aws-managed".asInstanceOf[`aws-managed`]
+  def `aws-us-gov`: `aws-us-gov` = "aws-us-gov".asInstanceOf[`aws-us-gov`]
   def `aws:kms`: `aws:kms` = "aws:kms".asInstanceOf[`aws:kms`]
   def awsDOTconfig: awsDOTconfig = "aws.config".asInstanceOf[awsDOTconfig]
   def awslogs: awslogs = "awslogs".asInstanceOf[awslogs]
   def awsvpc: awsvpc = "awsvpc".asInstanceOf[awsvpc]
+  def `backup-type`: `backup-type` = "backup-type".asInstanceOf[`backup-type`]
   def batchPredictionAvailable: batchPredictionAvailable = "batchPredictionAvailable".asInstanceOf[batchPredictionAvailable]
   def bg: bg = "bg".asInstanceOf[bg]
   def binary: binary = "binary".asInstanceOf[binary]
@@ -16043,6 +18100,7 @@ object awsDashSdkLibStrings {
   def cdc: cdc = "cdc".asInstanceOf[cdc]
   def certificateValidated: certificateValidated = "certificateValidated".asInstanceOf[certificateValidated]
   def changeSetCreateComplete: changeSetCreateComplete = "changeSetCreateComplete".asInstanceOf[changeSetCreateComplete]
+  def chinBottom: chinBottom = "chinBottom".asInstanceOf[chinBottom]
   def citrix: citrix = "citrix".asInstanceOf[citrix]
   def click: click = "click".asInstanceOf[click]
   def client_credentials: client_credentials = "client_credentials".asInstanceOf[client_credentials]
@@ -16053,6 +18111,7 @@ object awsDashSdkLibStrings {
   def `cluster-parameter-group`: `cluster-parameter-group` = "cluster-parameter-group".asInstanceOf[`cluster-parameter-group`]
   def `cluster-security-group`: `cluster-security-group` = "cluster-security-group".asInstanceOf[`cluster-security-group`]
   def `cluster-snapshot`: `cluster-snapshot` = "cluster-snapshot".asInstanceOf[`cluster-snapshot`]
+  def clusterActive: clusterActive = "clusterActive".asInstanceOf[clusterActive]
   def clusterAvailable: clusterAvailable = "clusterAvailable".asInstanceOf[clusterAvailable]
   def clusterDeleted: clusterDeleted = "clusterDeleted".asInstanceOf[clusterDeleted]
   def clusterRestored: clusterRestored = "clusterRestored".asInstanceOf[clusterRestored]
@@ -16071,6 +18130,7 @@ object awsDashSdkLibStrings {
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   def container: container = "container".asInstanceOf[container]
   def `container-instance`: `container-instance` = "container-instance".asInstanceOf[`container-instance`]
+  def containerInstanceLongArnFormat: containerInstanceLongArnFormat = "containerInstanceLongArnFormat".asInstanceOf[containerInstanceLongArnFormat]
   def conversionTaskCancelled: conversionTaskCancelled = "conversionTaskCancelled".asInstanceOf[conversionTaskCancelled]
   def conversionTaskCompleted: conversionTaskCompleted = "conversionTaskCompleted".asInstanceOf[conversionTaskCompleted]
   def conversionTaskDeleted: conversionTaskDeleted = "conversionTaskDeleted".asInstanceOf[conversionTaskDeleted]
@@ -16129,6 +18189,7 @@ object awsDashSdkLibStrings {
   def `de-DE`: `de-DE` = "de-DE".asInstanceOf[`de-DE`]
   def dedicated: dedicated = "dedicated".asInstanceOf[dedicated]
   def `dedicated-host`: `dedicated-host` = "dedicated-host".asInstanceOf[`dedicated-host`]
+  def deeplens: deeplens = "deeplens".asInstanceOf[deeplens]
   def default: default = "default".asInstanceOf[default]
   def `default-vpc`: `default-vpc` = "default-vpc".asInstanceOf[`default-vpc`]
   def delayed: delayed = "delayed".asInstanceOf[delayed]
@@ -16143,13 +18204,16 @@ object awsDashSdkLibStrings {
   def deploy: deploy = "deploy".asInstanceOf[deploy]
   def deployed: deployed = "deployed".asInstanceOf[deployed]
   def deploymentSuccessful: deploymentSuccessful = "deploymentSuccessful".asInstanceOf[deploymentSuccessful]
+  def deprovisioned: deprovisioned = "deprovisioned".asInstanceOf[deprovisioned]
   def deregistered: deregistered = "deregistered".asInstanceOf[deregistered]
+  def desc: desc = "desc".asInstanceOf[desc]
   def descending: descending = "descending".asInstanceOf[descending]
   def description: description = "description".asInstanceOf[description]
   def detached: detached = "detached".asInstanceOf[detached]
   def detaching: detaching = "detaching".asInstanceOf[detaching]
   def devpay: devpay = "devpay".asInstanceOf[devpay]
   def `dhcp-options`: `dhcp-options` = "dhcp-options".asInstanceOf[`dhcp-options`]
+  def disable: disable = "disable".asInstanceOf[disable]
   def disableApiTermination: disableApiTermination = "disableApiTermination".asInstanceOf[disableApiTermination]
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   def disabling: disabling = "disabling".asInstanceOf[disabling]
@@ -16189,6 +18253,7 @@ object awsDashSdkLibStrings {
   def `ecs-cluster`: `ecs-cluster` = "ecs-cluster".asInstanceOf[`ecs-cluster`]
   def `ecs:service:DesiredCount`: `ecs:service:DesiredCount` = "ecs:service:DesiredCount".asInstanceOf[`ecs:service:DesiredCount`]
   def el: el = "el".asInstanceOf[el]
+  def `elastic-ip`: `elastic-ip` = "elastic-ip".asInstanceOf[`elastic-ip`]
   def elasticmapreduce: elasticmapreduce = "elasticmapreduce".asInstanceOf[elasticmapreduce]
   def `elasticmapreduce:instancegroup:InstanceCount`: `elasticmapreduce:instancegroup:InstanceCount` = "elasticmapreduce:instancegroup:InstanceCount".asInstanceOf[`elasticmapreduce:instancegroup:InstanceCount`]
   def email: email = "email".asInstanceOf[email]
@@ -16198,9 +18263,9 @@ object awsDashSdkLibStrings {
   def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
   def `en-GB-WLS`: `en-GB-WLS` = "en-GB-WLS".asInstanceOf[`en-GB-WLS`]
   def `en-IN`: `en-IN` = "en-IN".asInstanceOf[`en-IN`]
-  def `en-UK`: `en-UK` = "en-UK".asInstanceOf[`en-UK`]
   def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   def enaSupport: enaSupport = "enaSupport".asInstanceOf[enaSupport]
+  def enable: enable = "enable".asInstanceOf[enable]
   def enableDnsHostnames: enableDnsHostnames = "enableDnsHostnames".asInstanceOf[enableDnsHostnames]
   def enableDnsSupport: enableDnsSupport = "enableDnsSupport".asInstanceOf[enableDnsSupport]
   def enabled: enabled = "enabled".asInstanceOf[enabled]
@@ -16211,6 +18276,7 @@ object awsDashSdkLibStrings {
   def error: error = "error".asInstanceOf[error]
   def es: es = "es".asInstanceOf[es]
   def `es-ES`: `es-ES` = "es-ES".asInstanceOf[`es-ES`]
+  def `es-MX`: `es-MX` = "es-MX".asInstanceOf[`es-MX`]
   def `es-US`: `es-US` = "es-US".asInstanceOf[`es-US`]
   def eu: eu = "eu".asInstanceOf[eu]
   def `eu-central-1`: `eu-central-1` = "eu-central-1".asInstanceOf[`eu-central-1`]
@@ -16233,11 +18299,15 @@ object awsDashSdkLibStrings {
   def eyeRight: eyeRight = "eyeRight".asInstanceOf[eyeRight]
   def fa: fa = "fa".asInstanceOf[fa]
   def failed: failed = "failed".asInstanceOf[failed]
+  def `failed-deprovision`: `failed-deprovision` = "failed-deprovision".asInstanceOf[`failed-deprovision`]
+  def `failed-provision`: `failed-provision` = "failed-provision".asInstanceOf[`failed-provision`]
   def failing: failing = "failing".asInstanceOf[failing]
   def fi: fi = "fi".asInstanceOf[fi]
+  def `file-system-id`: `file-system-id` = "file-system-id".asInstanceOf[`file-system-id`]
   def firstUsedTime: firstUsedTime = "firstUsedTime".asInstanceOf[firstUsedTime]
   def `fixed-response`: `fixed-response` = "fixed-response".asInstanceOf[`fixed-response`]
   def flac: flac = "flac".asInstanceOf[flac]
+  def fleet: fleet = "fleet".asInstanceOf[fleet]
   def `fleet-change`: `fleet-change` = "fleet-change".asInstanceOf[`fleet-change`]
   def fleetIdDoesNotExist: fleetIdDoesNotExist = "fleetIdDoesNotExist".asInstanceOf[fleetIdDoesNotExist]
   def fleetIdMalformed: fleetIdMalformed = "fleetIdMalformed".asInstanceOf[fleetIdMalformed]
@@ -16250,6 +18320,7 @@ object awsDashSdkLibStrings {
   def fleetStopped: fleetStopped = "fleetStopped".asInstanceOf[fleetStopped]
   def fluentd: fluentd = "fluentd".asInstanceOf[fluentd]
   def forward: forward = "forward".asInstanceOf[forward]
+  def `fpga-image`: `fpga-image` = "fpga-image".asInstanceOf[`fpga-image`]
   def fr: fr = "fr".asInstanceOf[fr]
   def `fr-CA`: `fr-CA` = "fr-CA".asInstanceOf[`fr-CA`]
   def `fr-FR`: `fr-FR` = "fr-FR".asInstanceOf[`fr-FR`]
@@ -16347,6 +18418,7 @@ object awsDashSdkLibStrings {
   def instanceStopped: instanceStopped = "instanceStopped".asInstanceOf[instanceStopped]
   def instanceTerminated: instanceTerminated = "instanceTerminated".asInstanceOf[instanceTerminated]
   def instanceType: instanceType = "instanceType".asInstanceOf[instanceType]
+  def instant: instant = "instant".asInstanceOf[instant]
   def `insufficient-data`: `insufficient-data` = "insufficient-data".asInstanceOf[`insufficient-data`]
   def int: int = "int".asInstanceOf[int]
   def `int-array`: `int-array` = "int-array".asInstanceOf[`int-array`]
@@ -16373,6 +18445,8 @@ object awsDashSdkLibStrings {
   def java: java = "java".asInstanceOf[java]
   def `java-app`: `java-app` = "java-app".asInstanceOf[`java-app`]
   def java8: java8 = "java8".asInstanceOf[java8]
+  def jetson_tx1: jetson_tx1 = "jetson_tx1".asInstanceOf[jetson_tx1]
+  def jetson_tx2: jetson_tx2 = "jetson_tx2".asInstanceOf[jetson_tx2]
   def jobComplete: jobComplete = "jobComplete".asInstanceOf[jobComplete]
   def journald: journald = "journald".asInstanceOf[journald]
   def json: json = "json".asInstanceOf[json]
@@ -16381,10 +18455,12 @@ object awsDashSdkLibStrings {
   def keyPairExists: keyPairExists = "keyPairExists".asInstanceOf[keyPairExists]
   def ko: ko = "ko".asInstanceOf[ko]
   def `ko-KR`: `ko-KR` = "ko-KR".asInstanceOf[`ko-KR`]
+  def lambda: lambda = "lambda".asInstanceOf[lambda]
   def lastModifiedDate: lastModifiedDate = "lastModifiedDate".asInstanceOf[lastModifiedDate]
   def lastUsedTime: lastUsedTime = "lastUsedTime".asInstanceOf[lastUsedTime]
   def latest: latest = "latest".asInstanceOf[latest]
   def latlon: latlon = "latlon".asInstanceOf[latlon]
+  def `launch-template`: `launch-template` = "launch-template".asInstanceOf[`launch-template`]
   def launchPermission: launchPermission = "launchPermission".asInstanceOf[launchPermission]
   def launchTemplateIdDoesNotExist: launchTemplateIdDoesNotExist = "launchTemplateIdDoesNotExist".asInstanceOf[launchTemplateIdDoesNotExist]
   def launchTemplateIdMalformed: launchTemplateIdMalformed = "launchTemplateIdMalformed".asInstanceOf[launchTemplateIdMalformed]
@@ -16403,6 +18479,7 @@ object awsDashSdkLibStrings {
   def `less-than`: `less-than` = "less-than".asInstanceOf[`less-than`]
   def `less-than-equals`: `less-than-equals` = "less-than-equals".asInstanceOf[`less-than-equals`]
   def light: light = "light".asInstanceOf[light]
+  def limited: limited = "limited".asInstanceOf[limited]
   def linkTag: linkTag = "linkTag".asInstanceOf[linkTag]
   def literal: literal = "literal".asInstanceOf[literal]
   def `literal-array`: `literal-array` = "literal-array".asInstanceOf[`literal-array`]
@@ -16448,6 +18525,8 @@ object awsDashSdkLibStrings {
   def merge: merge = "merge".asInstanceOf[merge]
   def messageTag: messageTag = "messageTag".asInstanceOf[messageTag]
   def microsoft: microsoft = "microsoft".asInstanceOf[microsoft]
+  def midJawlineLeft: midJawlineLeft = "midJawlineLeft".asInstanceOf[midJawlineLeft]
+  def midJawlineRight: midJawlineRight = "midJawlineRight".asInstanceOf[midJawlineRight]
   def minimal: minimal = "minimal".asInstanceOf[minimal]
   def mknod: mknod = "mknod".asInstanceOf[mknod]
   def mlDOTc4DOT2xlarge: mlDOTc4DOT2xlarge = "ml.c4.2xlarge".asInstanceOf[mlDOTc4DOT2xlarge]
@@ -16461,6 +18540,14 @@ object awsDashSdkLibStrings {
   def mlDOTc5DOT9xlarge: mlDOTc5DOT9xlarge = "ml.c5.9xlarge".asInstanceOf[mlDOTc5DOT9xlarge]
   def mlDOTc5DOTlarge: mlDOTc5DOTlarge = "ml.c5.large".asInstanceOf[mlDOTc5DOTlarge]
   def mlDOTc5DOTxlarge: mlDOTc5DOTxlarge = "ml.c5.xlarge".asInstanceOf[mlDOTc5DOTxlarge]
+  def mlDOTc5dDOT18xlarge: mlDOTc5dDOT18xlarge = "ml.c5d.18xlarge".asInstanceOf[mlDOTc5dDOT18xlarge]
+  def mlDOTc5dDOT2xlarge: mlDOTc5dDOT2xlarge = "ml.c5d.2xlarge".asInstanceOf[mlDOTc5dDOT2xlarge]
+  def mlDOTc5dDOT4xlarge: mlDOTc5dDOT4xlarge = "ml.c5d.4xlarge".asInstanceOf[mlDOTc5dDOT4xlarge]
+  def mlDOTc5dDOT9xlarge: mlDOTc5dDOT9xlarge = "ml.c5d.9xlarge".asInstanceOf[mlDOTc5dDOT9xlarge]
+  def mlDOTc5dDOTxlarge: mlDOTc5dDOTxlarge = "ml.c5d.xlarge".asInstanceOf[mlDOTc5dDOTxlarge]
+  def mlDOTeia1DOTlarge: mlDOTeia1DOTlarge = "ml.eia1.large".asInstanceOf[mlDOTeia1DOTlarge]
+  def mlDOTeia1DOTmedium: mlDOTeia1DOTmedium = "ml.eia1.medium".asInstanceOf[mlDOTeia1DOTmedium]
+  def mlDOTeia1DOTxlarge: mlDOTeia1DOTxlarge = "ml.eia1.xlarge".asInstanceOf[mlDOTeia1DOTxlarge]
   def mlDOTm4DOT10xlarge: mlDOTm4DOT10xlarge = "ml.m4.10xlarge".asInstanceOf[mlDOTm4DOT10xlarge]
   def mlDOTm4DOT16xlarge: mlDOTm4DOT16xlarge = "ml.m4.16xlarge".asInstanceOf[mlDOTm4DOT16xlarge]
   def mlDOTm4DOT2xlarge: mlDOTm4DOT2xlarge = "ml.m4.2xlarge".asInstanceOf[mlDOTm4DOT2xlarge]
@@ -16482,6 +18569,16 @@ object awsDashSdkLibStrings {
   def mlDOTt2DOTlarge: mlDOTt2DOTlarge = "ml.t2.large".asInstanceOf[mlDOTt2DOTlarge]
   def mlDOTt2DOTmedium: mlDOTt2DOTmedium = "ml.t2.medium".asInstanceOf[mlDOTt2DOTmedium]
   def mlDOTt2DOTxlarge: mlDOTt2DOTxlarge = "ml.t2.xlarge".asInstanceOf[mlDOTt2DOTxlarge]
+  def mlDOTt3DOT2xlarge: mlDOTt3DOT2xlarge = "ml.t3.2xlarge".asInstanceOf[mlDOTt3DOT2xlarge]
+  def mlDOTt3DOTlarge: mlDOTt3DOTlarge = "ml.t3.large".asInstanceOf[mlDOTt3DOTlarge]
+  def mlDOTt3DOTmedium: mlDOTt3DOTmedium = "ml.t3.medium".asInstanceOf[mlDOTt3DOTmedium]
+  def mlDOTt3DOTxlarge: mlDOTt3DOTxlarge = "ml.t3.xlarge".asInstanceOf[mlDOTt3DOTxlarge]
+  def ml_c4: ml_c4 = "ml_c4".asInstanceOf[ml_c4]
+  def ml_c5: ml_c5 = "ml_c5".asInstanceOf[ml_c5]
+  def ml_m4: ml_m4 = "ml_m4".asInstanceOf[ml_m4]
+  def ml_m5: ml_m5 = "ml_m5".asInstanceOf[ml_m5]
+  def ml_p2: ml_p2 = "ml_p2".asInstanceOf[ml_p2]
+  def ml_p3: ml_p3 = "ml_p3".asInstanceOf[ml_p3]
   def modifying: modifying = "modifying".asInstanceOf[modifying]
   def mongodb_cr: mongodb_cr = "mongodb_cr".asInstanceOf[mongodb_cr]
   def `monitoring-master`: `monitoring-master` = "monitoring-master".asInstanceOf[`monitoring-master`]
@@ -16497,10 +18594,12 @@ object awsDashSdkLibStrings {
   def mp4: mp4 = "mp4".asInstanceOf[mp4]
   def msgqueue: msgqueue = "msgqueue".asInstanceOf[msgqueue]
   def mul: mul = "mul".asInstanceOf[mul]
+  def multinode: multinode = "multinode".asInstanceOf[multinode]
   def mysql: mysql = "mysql".asInstanceOf[mysql]
   def name: name = "name".asInstanceOf[name]
   def natGateway: natGateway = "natGateway".asInstanceOf[natGateway]
   def natGatewayAvailable: natGatewayAvailable = "natGatewayAvailable".asInstanceOf[natGatewayAvailable]
+  def natgateway: natgateway = "natgateway".asInstanceOf[natgateway]
   def `nb-NO`: `nb-NO` = "nb-NO".asInstanceOf[`nb-NO`]
   def network: network = "network".asInstanceOf[network]
   def `network-acl`: `network-acl` = "network-acl".asInstanceOf[`network-acl`]
@@ -16568,9 +18667,12 @@ object awsDashSdkLibStrings {
   def pcm: pcm = "pcm".asInstanceOf[pcm]
   def pending: pending = "pending".asInstanceOf[pending]
   def `pending-acceptance`: `pending-acceptance` = "pending-acceptance".asInstanceOf[`pending-acceptance`]
+  def `pending-deprovision`: `pending-deprovision` = "pending-deprovision".asInstanceOf[`pending-deprovision`]
   def `pending-fulfillment`: `pending-fulfillment` = "pending-fulfillment".asInstanceOf[`pending-fulfillment`]
+  def `pending-provision`: `pending-provision` = "pending-provision".asInstanceOf[`pending-provision`]
   def `pending-reboot`: `pending-reboot` = "pending-reboot".asInstanceOf[`pending-reboot`]
   def `pending-termination`: `pending-termination` = "pending-termination".asInstanceOf[`pending-termination`]
+  def pendingAcceptance: pendingAcceptance = "pendingAcceptance".asInstanceOf[pendingAcceptance]
   def pending_fulfillment: pending_fulfillment = "pending_fulfillment".asInstanceOf[pending_fulfillment]
   def pending_termination: pending_termination = "pending_termination".asInstanceOf[pending_termination]
   def `performance-ebs-volume`: `performance-ebs-volume` = "performance-ebs-volume".asInstanceOf[`performance-ebs-volume`]
@@ -16583,11 +18685,14 @@ object awsDashSdkLibStrings {
   def php: php = "php".asInstanceOf[php]
   def `php-app`: `php-app` = "php-app".asInstanceOf[`php-app`]
   def `pl-PL`: `pl-PL` = "pl-PL".asInstanceOf[`pl-PL`]
+  def `pre-warmed`: `pre-warmed` = "pre-warmed".asInstanceOf[`pre-warmed`]
   def preferred_username: preferred_username = "preferred_username".asInstanceOf[preferred_username]
   def prefix: prefix = "prefix".asInstanceOf[prefix]
   def prioritized: prioritized = "prioritized".asInstanceOf[prioritized]
   def `private`: `private` = "private".asInstanceOf[`private`]
   def productCodes: productCodes = "productCodes".asInstanceOf[productCodes]
+  def propagated: propagated = "propagated".asInstanceOf[propagated]
+  def provided: provided = "provided".asInstanceOf[provided]
   def provisioned: provisioned = "provisioned".asInstanceOf[provisioned]
   def provisioning: provisioning = "provisioning".asInstanceOf[provisioning]
   def pt: pt = "pt".asInstanceOf[pt]
@@ -16598,6 +18703,7 @@ object awsDashSdkLibStrings {
   def `public-read-write`: `public-read-write` = "public-read-write".asInstanceOf[`public-read-write`]
   def python2DOT7: python2DOT7 = "python2.7".asInstanceOf[python2DOT7]
   def python3DOT6: python3DOT6 = "python3.6".asInstanceOf[python3DOT6]
+  def python3DOT7: python3DOT7 = "python3.7".asInstanceOf[python3DOT7]
   def r3DOT2xlarge: r3DOT2xlarge = "r3.2xlarge".asInstanceOf[r3DOT2xlarge]
   def r3DOT2xlargeDOTelasticsearch: r3DOT2xlargeDOTelasticsearch = "r3.2xlarge.elasticsearch".asInstanceOf[r3DOT2xlargeDOTelasticsearch]
   def r3DOT4xlarge: r3DOT4xlarge = "r3.4xlarge".asInstanceOf[r3DOT4xlarge]
@@ -16624,6 +18730,7 @@ object awsDashSdkLibStrings {
   def `rails-app`: `rails-app` = "rails-app".asInstanceOf[`rails-app`]
   def ramdisk: ramdisk = "ramdisk".asInstanceOf[ramdisk]
   def random: random = "random".asInstanceOf[random]
+  def rasp3b: rasp3b = "rasp3b".asInstanceOf[rasp3b]
   def raspbian: raspbian = "raspbian".asInstanceOf[raspbian]
   def rdp: rdp = "rdp".asInstanceOf[rdp]
   def rds: rds = "rds".asInstanceOf[rds]
@@ -16639,6 +18746,7 @@ object awsDashSdkLibStrings {
   def registerTime: registerTime = "registerTime".asInstanceOf[registerTime]
   def reject: reject = "reject".asInstanceOf[reject]
   def rejected: rejected = "rejected".asInstanceOf[rejected]
+  def rejecting: rejecting = "rejecting".asInstanceOf[rejecting]
   def relayed: relayed = "relayed".asInstanceOf[relayed]
   def released: released = "released".asInstanceOf[released]
   def `released-permanent-failure`: `released-permanent-failure` = "released-permanent-failure".asInstanceOf[`released-permanent-failure`]
@@ -16651,6 +18759,12 @@ object awsDashSdkLibStrings {
   def `replication-instance`: `replication-instance` = "replication-instance".asInstanceOf[`replication-instance`]
   def replicationGroupAvailable: replicationGroupAvailable = "replicationGroupAvailable".asInstanceOf[replicationGroupAvailable]
   def replicationGroupDeleted: replicationGroupDeleted = "replicationGroupDeleted".asInstanceOf[replicationGroupDeleted]
+  def replicationInstanceAvailable: replicationInstanceAvailable = "replicationInstanceAvailable".asInstanceOf[replicationInstanceAvailable]
+  def replicationInstanceDeleted: replicationInstanceDeleted = "replicationInstanceDeleted".asInstanceOf[replicationInstanceDeleted]
+  def replicationTaskDeleted: replicationTaskDeleted = "replicationTaskDeleted".asInstanceOf[replicationTaskDeleted]
+  def replicationTaskReady: replicationTaskReady = "replicationTaskReady".asInstanceOf[replicationTaskReady]
+  def replicationTaskRunning: replicationTaskRunning = "replicationTaskRunning".asInstanceOf[replicationTaskRunning]
+  def replicationTaskStopped: replicationTaskStopped = "replicationTaskStopped".asInstanceOf[replicationTaskStopped]
   def repositoryName: repositoryName = "repositoryName".asInstanceOf[repositoryName]
   def reputationOptions: reputationOptions = "reputationOptions".asInstanceOf[reputationOptions]
   def request: request = "request".asInstanceOf[request]
@@ -16681,13 +18795,17 @@ object awsDashSdkLibStrings {
   def `ro-RO`: `ro-RO` = "ro-RO".asInstanceOf[`ro-RO`]
   def role: role = "role".asInstanceOf[role]
   def rollback: rollback = "rollback".asInstanceOf[rollback]
+  def rollingBack: rollingBack = "rollingBack".asInstanceOf[rollingBack]
   def rootDeviceName: rootDeviceName = "rootDeviceName".asInstanceOf[rootDeviceName]
   def `route-table`: `route-table` = "route-table".asInstanceOf[`route-table`]
   def rss: rss = "rss".asInstanceOf[rss]
+  def rtp: rtp = "rtp".asInstanceOf[rtp]
+  def `rtp-fec`: `rtp-fec` = "rtp-fec".asInstanceOf[`rtp-fec`]
   def rtprio: rtprio = "rtprio".asInstanceOf[rtprio]
   def rttime: rttime = "rttime".asInstanceOf[rttime]
   def ru: ru = "ru".asInstanceOf[ru]
   def `ru-RU`: `ru-RU` = "ru-RU".asInstanceOf[`ru-RU`]
+  def ruby2DOT5: ruby2DOT5 = "ruby2.5".asInstanceOf[ruby2DOT5]
   def running: running = "running".asInstanceOf[running]
   def rw: rw = "rw".asInstanceOf[rw]
   def s3: s3 = "s3".asInstanceOf[s3]
@@ -16699,6 +18817,8 @@ object awsDashSdkLibStrings {
   def `s3:ObjectRemoved:*`: `s3:ObjectRemoved:*` = "s3:ObjectRemoved:*".asInstanceOf[`s3:ObjectRemoved:*`]
   def `s3:ObjectRemoved:Delete`: `s3:ObjectRemoved:Delete` = "s3:ObjectRemoved:Delete".asInstanceOf[`s3:ObjectRemoved:Delete`]
   def `s3:ObjectRemoved:DeleteMarkerCreated`: `s3:ObjectRemoved:DeleteMarkerCreated` = "s3:ObjectRemoved:DeleteMarkerCreated".asInstanceOf[`s3:ObjectRemoved:DeleteMarkerCreated`]
+  def `s3:ObjectRestore:Completed`: `s3:ObjectRestore:Completed` = "s3:ObjectRestore:Completed".asInstanceOf[`s3:ObjectRestore:Completed`]
+  def `s3:ObjectRestore:Post`: `s3:ObjectRestore:Post` = "s3:ObjectRestore:Post".asInstanceOf[`s3:ObjectRestore:Post`]
   def `s3:ReducedRedundancyLostObject`: `s3:ReducedRedundancyLostObject` = "s3:ReducedRedundancyLostObject".asInstanceOf[`s3:ReducedRedundancyLostObject`]
   def `sa-east-1`: `sa-east-1` = "sa-east-1".asInstanceOf[`sa-east-1`]
   def sagemaker: sagemaker = "sagemaker".asInstanceOf[sagemaker]
@@ -16720,6 +18840,7 @@ object awsDashSdkLibStrings {
   def send: send = "send".asInstanceOf[send]
   def sentence: sentence = "sentence".asInstanceOf[sentence]
   def `service-error`: `service-error` = "service-error".asInstanceOf[`service-error`]
+  def serviceLongArnFormat: serviceLongArnFormat = "serviceLongArnFormat".asInstanceOf[serviceLongArnFormat]
   def servicesInactive: servicesInactive = "servicesInactive".asInstanceOf[servicesInactive]
   def servicesStable: servicesStable = "servicesStable".asInstanceOf[servicesStable]
   def setup: setup = "setup".asInstanceOf[setup]
@@ -16756,6 +18877,7 @@ object awsDashSdkLibStrings {
   def `start-replication`: `start-replication` = "start-replication".asInstanceOf[`start-replication`]
   def start_of_file: start_of_file = "start_of_file".asInstanceOf[start_of_file]
   def static: static = "static".asInstanceOf[static]
+  def `static-key`: `static-key` = "static-key".asInstanceOf[`static-key`]
   def stepComplete: stepComplete = "stepComplete".asInstanceOf[stepComplete]
   def stop: stop = "stop".asInstanceOf[stop]
   def stopped: stopped = "stopped".asInstanceOf[stopped]
@@ -16796,7 +18918,9 @@ object awsDashSdkLibStrings {
   def target: target = "target".asInstanceOf[target]
   def targetDeregistered: targetDeregistered = "targetDeregistered".asInstanceOf[targetDeregistered]
   def targetInService: targetInService = "targetInService".asInstanceOf[targetInService]
+  def targeted: targeted = "targeted".asInstanceOf[targeted]
   def task: task = "task".asInstanceOf[task]
+  def taskLongArnFormat: taskLongArnFormat = "taskLongArnFormat".asInstanceOf[taskLongArnFormat]
   def tasksRunning: tasksRunning = "tasksRunning".asInstanceOf[tasksRunning]
   def tasksStopped: tasksStopped = "tasksStopped".asInstanceOf[tasksStopped]
   def tcp: tcp = "tcp".asInstanceOf[tcp]
@@ -16804,6 +18928,7 @@ object awsDashSdkLibStrings {
   def terminated: terminated = "terminated".asInstanceOf[terminated]
   def termination: termination = "termination".asInstanceOf[termination]
   def test: test = "test".asInstanceOf[test]
+  def testConnectionSucceeds: testConnectionSucceeds = "testConnectionSucceeds".asInstanceOf[testConnectionSucceeds]
   def test_customer_support_contacts_data: test_customer_support_contacts_data = "test_customer_support_contacts_data".asInstanceOf[test_customer_support_contacts_data]
   def text: text = "text".asInstanceOf[text]
   def `text-array`: `text-array` = "text-array".asInstanceOf[`text-array`]
@@ -16818,6 +18943,9 @@ object awsDashSdkLibStrings {
   def trainingJobCompletedOrStopped: trainingJobCompletedOrStopped = "trainingJobCompletedOrStopped".asInstanceOf[trainingJobCompletedOrStopped]
   def transformJobCompletedOrStopped: transformJobCompletedOrStopped = "transformJobCompletedOrStopped".asInstanceOf[transformJobCompletedOrStopped]
   def transient: transient = "transient".asInstanceOf[transient]
+  def `transit-gateway`: `transit-gateway` = "transit-gateway".asInstanceOf[`transit-gateway`]
+  def `transit-gateway-attachment`: `transit-gateway-attachment` = "transit-gateway-attachment".asInstanceOf[`transit-gateway-attachment`]
+  def `transit-gateway-route-table`: `transit-gateway-route-table` = "transit-gateway-route-table".asInstanceOf[`transit-gateway-route-table`]
   def ubuntu: ubuntu = "ubuntu".asInstanceOf[ubuntu]
   def udp: udp = "udp".asInstanceOf[udp]
   def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
@@ -16826,6 +18954,7 @@ object awsDashSdkLibStrings {
   def unexpectedError: unexpectedError = "unexpectedError".asInstanceOf[unexpectedError]
   def unhealthy: unhealthy = "unhealthy".asInstanceOf[unhealthy]
   def unknown: unknown = "unknown".asInstanceOf[unknown]
+  def unlimited: unlimited = "unlimited".asInstanceOf[unlimited]
   def unresponsive: unresponsive = "unresponsive".asInstanceOf[unresponsive]
   def unused: unused = "unused".asInstanceOf[unused]
   def up: up = "up".asInstanceOf[up]
@@ -16834,6 +18963,8 @@ object awsDashSdkLibStrings {
   def update_custom_cookbooks: update_custom_cookbooks = "update_custom_cookbooks".asInstanceOf[update_custom_cookbooks]
   def update_dependencies: update_dependencies = "update_dependencies".asInstanceOf[update_dependencies]
   def updating: updating = "updating".asInstanceOf[updating]
+  def upperJawlineLeft: upperJawlineLeft = "upperJawlineLeft".asInstanceOf[upperJawlineLeft]
+  def upperJawlineRight: upperJawlineRight = "upperJawlineRight".asInstanceOf[upperJawlineRight]
   def url: url = "url".asInstanceOf[url]
   def `us-east-1`: `us-east-1` = "us-east-1".asInstanceOf[`us-east-1`]
   def `us-east-2`: `us-east-2` = "us-east-2".asInstanceOf[`us-east-2`]
@@ -16847,6 +18978,7 @@ object awsDashSdkLibStrings {
   def v2: v2 = "v2".asInstanceOf[v2]
   def v3: v3 = "v3".asInstanceOf[v3]
   def v4: v4 = "v4".asInstanceOf[v4]
+  def vCPU: vCPU = "vCPU".asInstanceOf[vCPU]
   def validate: validate = "validate".asInstanceOf[validate]
   def `validate-only`: `validate-only` = "validate-only".asInstanceOf[`validate-only`]
   def vaultExists: vaultExists = "vaultExists".asInstanceOf[vaultExists]
@@ -16864,10 +18996,12 @@ object awsDashSdkLibStrings {
   def volumeDeleted: volumeDeleted = "volumeDeleted".asInstanceOf[volumeDeleted]
   def volumeInUse: volumeInUse = "volumeInUse".asInstanceOf[volumeInUse]
   def vpc: vpc = "vpc".asInstanceOf[vpc]
+  def `vpc-peering-connection`: `vpc-peering-connection` = "vpc-peering-connection".asInstanceOf[`vpc-peering-connection`]
   def vpcAvailable: vpcAvailable = "vpcAvailable".asInstanceOf[vpcAvailable]
   def vpcExists: vpcExists = "vpcExists".asInstanceOf[vpcExists]
   def vpcPeeringConnectionDeleted: vpcPeeringConnectionDeleted = "vpcPeeringConnectionDeleted".asInstanceOf[vpcPeeringConnectionDeleted]
   def vpcPeeringConnectionExists: vpcPeeringConnectionExists = "vpcPeeringConnectionExists".asInstanceOf[vpcPeeringConnectionExists]
+  def vpn: vpn = "vpn".asInstanceOf[vpn]
   def `vpn-connection`: `vpn-connection` = "vpn-connection".asInstanceOf[`vpn-connection`]
   def `vpn-gateway`: `vpn-gateway` = "vpn-gateway".asInstanceOf[`vpn-gateway`]
   def vpnConnectionAvailable: vpnConnectionAvailable = "vpnConnectionAvailable".asInstanceOf[vpnConnectionAvailable]
@@ -16881,10 +19015,12 @@ object awsDashSdkLibStrings {
   def write: write = "write".asInstanceOf[write]
   def x86_64: x86_64 = "x86_64".asInstanceOf[x86_64]
   def xen: xen = "xen".asInstanceOf[xen]
+  def yes: yes = "yes".asInstanceOf[yes]
   def `zh-Hans`: `zh-Hans` = "zh-Hans".asInstanceOf[`zh-Hans`]
   def `zh-Hant`: `zh-Hant` = "zh-Hant".asInstanceOf[`zh-Hant`]
   def zh_CN: zh_CN = "zh_CN".asInstanceOf[zh_CN]
   def zh_TW: zh_TW = "zh_TW".asInstanceOf[zh_TW]
   def zip: zip = "zip".asInstanceOf[zip]
+  def `zixi-push`: `zixi-push` = "zixi-push".asInstanceOf[`zixi-push`]
 }
 

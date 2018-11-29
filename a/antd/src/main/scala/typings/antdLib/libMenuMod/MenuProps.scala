@@ -19,6 +19,7 @@ trait MenuProps extends js.Object {
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* param */ ClickParam, scala.Unit]] = js.undefined
   var onDeselect: js.UndefOr[js.Function1[/* param */ SelectParam, scala.Unit]] = js.undefined
+  var onMouseEnter: js.UndefOr[js.Function1[/* e */ reactLib.MouseEvent, scala.Unit]] = js.undefined
   var onOpenChange: js.UndefOr[js.Function1[/* openKeys */ js.Array[java.lang.String], scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* param */ SelectParam, scala.Unit]] = js.undefined
   var openAnimation: js.UndefOr[java.lang.String | js.Object] = js.undefined

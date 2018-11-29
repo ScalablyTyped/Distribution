@@ -11,11 +11,7 @@ class ApolloServer ()
   extends apolloDashServerDashCoreLib.apolloDashServerDashCoreMod.ApolloServerBase {
   def applyMiddleware(hasAppPathCorsBodyParserConfigDisableHealthCheckOnHealthCheck: ServerRegistration): scala.Unit = js.native
   def createGraphQLServerOptions(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): stdLib.Promise[
-    apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[
-      (js.Function0[
-        (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-      ]) | (stdLib.Record[java.lang.String, _])
-    ]
+    apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
   ] = js.native
 }
 

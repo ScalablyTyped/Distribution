@@ -46,6 +46,8 @@ trait RealtimePresence extends js.Object {
   def subscribe(presenceOrCallback: PresenceAction, listener: messageCallback[PresenceMessage]): scala.Unit = js.native
   def subscribe(presenceOrCallback: messageCallback[PresenceMessage]): scala.Unit = js.native
   def subscribe(presenceOrCallback: messageCallback[PresenceMessage], listener: messageCallback[PresenceMessage]): scala.Unit = js.native
+  def subscribe(presenceOrCallback: js.Array[PresenceAction]): scala.Unit = js.native
+  def subscribe(presenceOrCallback: js.Array[PresenceAction], listener: messageCallback[PresenceMessage]): scala.Unit = js.native
   def unsubscribe(): scala.Unit = js.native
   def unsubscribe(presence: PresenceAction): scala.Unit = js.native
   def unsubscribe(presence: PresenceAction, listener: messageCallback[PresenceMessage]): scala.Unit = js.native

@@ -271,6 +271,9 @@ object stripejsLibStrings {
   sealed trait pass extends js.Object
   
   @js.native
+  sealed trait paymentRequestButton extends js.Object
+  
+  @js.native
   sealed trait pending extends js.Object
   
   @js.native
@@ -463,6 +466,7 @@ object stripejsLibStrings {
   def p24: p24 = "p24".asInstanceOf[p24]
   def paper_check: paper_check = "paper_check".asInstanceOf[paper_check]
   def pass: pass = "pass".asInstanceOf[pass]
+  def paymentRequestButton: paymentRequestButton = "paymentRequestButton".asInstanceOf[paymentRequestButton]
   def pending: pending = "pending".asInstanceOf[pending]
   def pii: pii = "pii".asInstanceOf[pii]
   def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]

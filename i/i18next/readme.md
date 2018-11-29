@@ -1,5 +1,5 @@
 ```
-// Type definitions for i18next 11.9
+// Type definitions for i18next 12.1
 // Project: http://i18next.com
 // Definitions by: Michael Ledin <https://github.com/mxl>
 //                 Budi Irawan <https://github.com/deerawan>

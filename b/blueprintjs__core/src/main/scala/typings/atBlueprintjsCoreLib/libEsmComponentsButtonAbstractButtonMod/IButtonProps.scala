@@ -38,7 +38,7 @@ trait IButtonProps
   var minimal: js.UndefOr[scala.Boolean] = js.undefined
   /** Name of a Blueprint UI icon (or an icon element) to render after the text. */
   var rightIcon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /** Whether this button should use small styles. */
   var small: js.UndefOr[scala.Boolean] = js.undefined

@@ -13,6 +13,7 @@ trait Props extends js.Object {
   var initialNow: js.UndefOr[js.Any] = js.undefined
   var locale: js.UndefOr[java.lang.String] = js.undefined
   var messages: js.UndefOr[js.Any] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* error */ java.lang.String, scala.Unit]] = js.undefined
   var textComponent: js.UndefOr[js.Any] = js.undefined
   var timeZone: js.UndefOr[java.lang.String] = js.undefined
 }

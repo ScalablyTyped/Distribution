@@ -83,7 +83,7 @@ object CostExplorerNs extends js.Object {
          */
     var Key: js.UndefOr[Dimension] = js.undefined
     /**
-         * The metadata values that you can use to filter and group your results. You can use GetDimensionValues to find specific values.
+         * The metadata values that you can use to filter and group your results. You can use GetDimensionValues to find specific values. Valid values for the SERVICE dimension are Amazon Elastic Compute Cloud - Compute, Amazon Elasticsearch Service, Amazon ElastiCache, Amazon Redshift, and Amazon Relational Database Service.
          */
     var Values: js.UndefOr[Values] = js.undefined
   }
@@ -221,6 +221,26 @@ object CostExplorerNs extends js.Object {
   }
   
   
+  trait ForecastResult extends js.Object {
+    /**
+         * The mean value of the forecast.
+         */
+    var MeanValue: js.UndefOr[GenericString] = js.undefined
+    /**
+         * The lower limit for the prediction interval. 
+         */
+    var PredictionIntervalLowerBound: js.UndefOr[GenericString] = js.undefined
+    /**
+         * The upper limit for the prediction interval. 
+         */
+    var PredictionIntervalUpperBound: js.UndefOr[GenericString] = js.undefined
+    /**
+         * The period of time that the forecast covers.
+         */
+    var TimePeriod: js.UndefOr[DateInterval] = js.undefined
+  }
+  
+  
   trait GetCostAndUsageRequest extends js.Object {
     /**
          * Filters AWS costs by different dimensions. For example, you can specify SERVICE and LINKED_ACCOUNT and get the costs that are associated with that account's usage of that service. You can nest Expression objects to define any combination of dimension filters. For more information, see Expression. 
@@ -235,7 +255,7 @@ object CostExplorerNs extends js.Object {
          */
     var GroupBy: js.UndefOr[GroupDefinitions] = js.undefined
     /**
-         * Which metrics are returned in the query. For more information about blended and unblended rates, see Why does the "blended" annotation appear on some line items in my bill?.  Valid values are AmortizedCost, BlendedCost, UnblendedCost, and UsageQuantity.  If you return the UsageQuantity metric, the service aggregates all usage numbers without taking into account the units. For example, if you aggregate usageQuantity across all of EC2, the results aren't meaningful because EC2 compute hours and data transfer are measured in different units (for example, hours vs. GB). To get more meaningful UsageQuantity metrics, filter by UsageType or UsageTypeGroups.    Metrics is required for GetCostAndUsage requests.
+         * Which metrics are returned in the query. For more information about blended and unblended rates, see Why does the "blended" annotation appear on some line items in my bill?.  Valid values are AmortizedCost, BlendedCost, NetAmortizedCost, NetUnblendedCost, NormalizedUsageAmount, UnblendedCost, and UsageQuantity.   If you return the UsageQuantity metric, the service aggregates all usage numbers without taking into account the units. For example, if you aggregate usageQuantity across all of EC2, the results aren't meaningful because EC2 compute hours and data transfer are measured in different units (for example, hours vs. GB). To get more meaningful UsageQuantity metrics, filter by UsageType or UsageTypeGroups.    Metrics is required for GetCostAndUsage requests.
          */
     var Metrics: js.UndefOr[MetricNames] = js.undefined
     /**
@@ -262,6 +282,42 @@ object CostExplorerNs extends js.Object {
          * The time period that is covered by the results in the response.
          */
     var ResultsByTime: js.UndefOr[ResultsByTime] = js.undefined
+  }
+  
+  
+  trait GetCostForecastRequest extends js.Object {
+    /**
+         * The filters that you want to use to filter your forecast. Cost Explorer API supports all of the Cost Explorer filters.
+         */
+    var Filter: js.UndefOr[Expression] = js.undefined
+    /**
+         * How granular you want the forecast to be. You can get 3 months of DAILY forecasts or 12 months of MONTHLY forecasts.
+         */
+    var Granularity: Granularity
+    /**
+         * Which metric Cost Explorer uses to create your forecast. For more information about blended and unblended rates, see Why does the "blended" annotation appear on some line items in my bill?.  Valid values for a GetCostForecast call are the following:   AmortizedCost   BlendedCost   NetAmortizedCost   NetUnblendedCost   UnblendedCost  
+         */
+    var Metric: Metric
+    /**
+         * Cost Explorer always returns the mean forecast as a single point. You can request a prediction interval around the mean by specifying a confidence level. The higher the confidence level, the more confident Cost Explorer is about the actual value falling in the prediction interval. Higher confidence levels result in wider prediction intervals.
+         */
+    var PredictionIntervalLevel: js.UndefOr[PredictionIntervalLevel] = js.undefined
+    /**
+         * The period of time that you want the forecast to cover.
+         */
+    var TimePeriod: DateInterval
+  }
+  
+  
+  trait GetCostForecastResponse extends js.Object {
+    /**
+         * The forecasts for your query, in order. For DAILY forecasts, this is a list of days. For MONTHLY forecasts, this is a list of months.
+         */
+    var ForecastResultsByTime: js.UndefOr[ForecastResultsByTime] = js.undefined
+    /**
+         * How much you are forecasted to spend over the forecast period, in USD.
+         */
+    var Total: js.UndefOr[MetricValue] = js.undefined
   }
   
   
@@ -702,6 +758,7 @@ object CostExplorerNs extends js.Object {
   
   
   trait ReservationPurchaseRecommendationDetail extends js.Object {
+    var AccountId: js.UndefOr[GenericString] = js.undefined
     /**
          * The average number of normalized units that you used in an hour during the historical period. AWS uses this to calculate your recommended reservation purchases.
          */
@@ -899,6 +956,35 @@ object CostExplorerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetCostAndUsageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Retrieves a forecast for how much Amazon Web Services predicts that you will spend over the forecast time period that you select, based on your past costs. 
+       */
+    def getCostForecast(): awsDashSdkLib.libRequestMod.Request[GetCostForecastResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a forecast for how much Amazon Web Services predicts that you will spend over the forecast time period that you select, based on your past costs. 
+       */
+    def getCostForecast(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetCostForecastResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetCostForecastResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a forecast for how much Amazon Web Services predicts that you will spend over the forecast time period that you select, based on your past costs. 
+       */
+    def getCostForecast(params: GetCostForecastRequest): awsDashSdkLib.libRequestMod.Request[GetCostForecastResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a forecast for how much Amazon Web Services predicts that you will spend over the forecast time period that you select, based on your past costs. 
+       */
+    def getCostForecast(
+      params: GetCostForecastRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetCostForecastResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetCostForecastResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Retrieves all available filter values for a specified filter over a period of time. You can search the dimension values for an arbitrary string. 
        */
     def getDimensionValues(): awsDashSdkLib.libRequestMod.Request[GetDimensionValuesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1063,14 +1149,15 @@ object CostExplorerNs extends js.Object {
   type Context = awsDashSdkLib.awsDashSdkLibStrings.COST_AND_USAGE | awsDashSdkLib.awsDashSdkLibStrings.RESERVATIONS | java.lang.String
   type CoverageHoursPercentage = java.lang.String
   type CoveragesByTime = js.Array[CoverageByTime]
-  type Dimension = awsDashSdkLib.awsDashSdkLibStrings.AZ | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.LINKED_ACCOUNT | awsDashSdkLib.awsDashSdkLibStrings.OPERATION | awsDashSdkLib.awsDashSdkLibStrings.PURCHASE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.REGION | awsDashSdkLib.awsDashSdkLibStrings.SERVICE | awsDashSdkLib.awsDashSdkLibStrings.USAGE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.USAGE_TYPE_GROUP | awsDashSdkLib.awsDashSdkLibStrings.RECORD_TYPE | awsDashSdkLib.awsDashSdkLibStrings.OPERATING_SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.TENANCY | awsDashSdkLib.awsDashSdkLibStrings.SCOPE | awsDashSdkLib.awsDashSdkLibStrings.PLATFORM | awsDashSdkLib.awsDashSdkLibStrings.SUBSCRIPTION_ID | awsDashSdkLib.awsDashSdkLibStrings.LEGAL_ENTITY_NAME | awsDashSdkLib.awsDashSdkLibStrings.DEPLOYMENT_OPTION | awsDashSdkLib.awsDashSdkLibStrings.DATABASE_ENGINE | awsDashSdkLib.awsDashSdkLibStrings.CACHE_ENGINE | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_TYPE_FAMILY | java.lang.String
+  type Dimension = awsDashSdkLib.awsDashSdkLibStrings.AZ | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.LINKED_ACCOUNT | awsDashSdkLib.awsDashSdkLibStrings.OPERATION | awsDashSdkLib.awsDashSdkLibStrings.PURCHASE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.REGION | awsDashSdkLib.awsDashSdkLibStrings.SERVICE | awsDashSdkLib.awsDashSdkLibStrings.USAGE_TYPE | awsDashSdkLib.awsDashSdkLibStrings.USAGE_TYPE_GROUP | awsDashSdkLib.awsDashSdkLibStrings.RECORD_TYPE | awsDashSdkLib.awsDashSdkLibStrings.OPERATING_SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.TENANCY | awsDashSdkLib.awsDashSdkLibStrings.SCOPE | awsDashSdkLib.awsDashSdkLibStrings.PLATFORM | awsDashSdkLib.awsDashSdkLibStrings.SUBSCRIPTION_ID | awsDashSdkLib.awsDashSdkLibStrings.LEGAL_ENTITY_NAME | awsDashSdkLib.awsDashSdkLibStrings.DEPLOYMENT_OPTION | awsDashSdkLib.awsDashSdkLibStrings.DATABASE_ENGINE | awsDashSdkLib.awsDashSdkLibStrings.CACHE_ENGINE | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_TYPE_FAMILY | awsDashSdkLib.awsDashSdkLibStrings.BILLING_ENTITY | awsDashSdkLib.awsDashSdkLibStrings.RESERVATION_ID | java.lang.String
   type DimensionValuesWithAttributesList = js.Array[DimensionValuesWithAttributes]
   type Entity = java.lang.String
   type Estimated = scala.Boolean
   type Expressions = js.Array[Expression]
+  type ForecastResultsByTime = js.Array[ForecastResult]
   type GenericBoolean = scala.Boolean
   type GenericString = java.lang.String
-  type Granularity = awsDashSdkLib.awsDashSdkLibStrings.DAILY | awsDashSdkLib.awsDashSdkLibStrings.MONTHLY | java.lang.String
+  type Granularity = awsDashSdkLib.awsDashSdkLibStrings.DAILY | awsDashSdkLib.awsDashSdkLibStrings.MONTHLY | awsDashSdkLib.awsDashSdkLibStrings.HOURLY | java.lang.String
   type GroupDefinitionKey = java.lang.String
   type GroupDefinitionType = awsDashSdkLib.awsDashSdkLibStrings.DIMENSION | awsDashSdkLib.awsDashSdkLibStrings.TAG | java.lang.String
   type GroupDefinitions = js.Array[GroupDefinition]
@@ -1078,6 +1165,7 @@ object CostExplorerNs extends js.Object {
   type Key = java.lang.String
   type Keys = js.Array[Key]
   type LookbackPeriodInDays = awsDashSdkLib.awsDashSdkLibStrings.SEVEN_DAYS | awsDashSdkLib.awsDashSdkLibStrings.THIRTY_DAYS | awsDashSdkLib.awsDashSdkLibStrings.SIXTY_DAYS | java.lang.String
+  type Metric = awsDashSdkLib.awsDashSdkLibStrings.BLENDED_COST | awsDashSdkLib.awsDashSdkLibStrings.UNBLENDED_COST | awsDashSdkLib.awsDashSdkLibStrings.AMORTIZED_COST | awsDashSdkLib.awsDashSdkLibStrings.NET_UNBLENDED_COST | awsDashSdkLib.awsDashSdkLibStrings.NET_AMORTIZED_COST | awsDashSdkLib.awsDashSdkLibStrings.USAGE_QUANTITY | awsDashSdkLib.awsDashSdkLibStrings.NORMALIZED_USAGE_AMOUNT | java.lang.String
   type MetricAmount = java.lang.String
   type MetricName = java.lang.String
   type MetricNames = js.Array[MetricName]
@@ -1090,6 +1178,7 @@ object CostExplorerNs extends js.Object {
   type OnDemandHours = java.lang.String
   type PageSize = scala.Double
   type PaymentOption = awsDashSdkLib.awsDashSdkLibStrings.NO_UPFRONT | awsDashSdkLib.awsDashSdkLibStrings.PARTIAL_UPFRONT | awsDashSdkLib.awsDashSdkLibStrings.ALL_UPFRONT | awsDashSdkLib.awsDashSdkLibStrings.LIGHT_UTILIZATION | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM_UTILIZATION | awsDashSdkLib.awsDashSdkLibStrings.HEAVY_UTILIZATION | java.lang.String
+  type PredictionIntervalLevel = scala.Double
   type PurchasedHours = java.lang.String
   type ReservationCoverageGroups = js.Array[ReservationCoverageGroup]
   type ReservationGroupKey = java.lang.String

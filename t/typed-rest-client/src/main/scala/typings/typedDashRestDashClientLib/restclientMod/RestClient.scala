@@ -149,3 +149,9 @@ class RestClient protected () extends js.Object {
   ): stdLib.Promise[IRestResponse[T]] = js.native
 }
 
+@JSImport("typed-rest-client/RestClient", "RestClient")
+@js.native
+object RestClient extends js.Object {
+  /* private */ def dateTimeDeserializer(key: js.Any, value: js.Any): js.Any = js.native
+}
+

@@ -12,6 +12,7 @@ trait ISession extends js.Object {
   def isLoggedIn(): scala.Boolean
   def login(email: java.lang.String, password: java.lang.String): stdLib.Promise[scala.Unit]
   def logout(): stdLib.Promise[scala.Unit]
+  def ssoLogin(email: java.lang.String): stdLib.Promise[scala.Unit]
   def tokenLogin(token: java.lang.String): stdLib.Promise[scala.Unit]
 }
 

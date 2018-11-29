@@ -32,10 +32,11 @@ trait CompilerHost extends ModuleResolutionHost {
     ]
   ] = js.native
   var resolveModuleNames: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* moduleNames */ js.Array[java.lang.String], 
       /* containingFile */ java.lang.String, 
       /* reusedNames */ js.UndefOr[js.Array[java.lang.String]], 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
       js.Array[js.UndefOr[ResolvedModule]]
     ]
   ] = js.native
@@ -43,10 +44,11 @@ trait CompilerHost extends ModuleResolutionHost {
            * This method is a companion for 'resolveModuleNames' and is used to resolve 'types' references to actual type declaration files
            */
   var resolveTypeReferenceDirectives: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* typeReferenceDirectiveNames */ js.Array[java.lang.String], 
       /* containingFile */ java.lang.String, 
-      js.Array[ResolvedTypeReferenceDirective]
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.native
   @JSName("writeFile")

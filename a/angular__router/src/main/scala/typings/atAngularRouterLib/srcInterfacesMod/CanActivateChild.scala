@@ -10,6 +10,6 @@ trait CanActivateChild extends js.Object {
   def canActivateChild(
     childRoute: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot,
     state: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot
-  ): rxjsLib.rxjsMod.Observable[scala.Boolean] | stdLib.Promise[scala.Boolean] | scala.Boolean
+  ): (rxjsLib.rxjsMod.Observable[scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree]) | (stdLib.Promise[scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree]) | scala.Boolean | atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
 }
 

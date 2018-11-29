@@ -1,19 +1,19 @@
 organization := "com.scalablytyped"
 name := "postcss-modules-scope"
-version := "1.1-dt-20181120Z-9369e5"
+version := "1.1-dt-20181120Z-573ea2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-16b038",
-  "com.scalablytyped" %%% "chalk" % "2.4.1-ea2afe",
-  "com.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-566c3e",
-  "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-76e9e4",
-  "com.scalablytyped" %%% "js-base64" % "2.3-dt-20180910Z-b4a065",
-  "com.scalablytyped" %%% "postcss" % "5.2.18-7d3203",
-  "com.scalablytyped" %%% "source-map" % "0.7.3-2a06d1",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-f11a37",
+  "com.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-8b01ce",
+  "com.scalablytyped" %%% "chalk" % "2.4.1-557431",
+  "com.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-20e4ae",
+  "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-450016",
+  "com.scalablytyped" %%% "js-base64" % "2.3-dt-20180910Z-bc1045",
+  "com.scalablytyped" %%% "postcss" % "5.2.18-f1f08e",
+  "com.scalablytyped" %%% "source-map" % "0.7.3-ecab3d",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-a10740",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

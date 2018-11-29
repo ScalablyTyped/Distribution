@@ -1,16 +1,16 @@
 organization := "com.scalablytyped"
 name := "pouchdb-adapter-memory"
-version := "6.1-dt-20180910Z-d16234"
+version := "6.1-dt-20180910Z-6d208d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-8c87a5",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-de4761",
-  "com.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20181121Z-e2e7d1",
-  "com.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20180910Z-4f298c",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-e9dd4f",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-654656",
+  "com.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20181121Z-83da08",
+  "com.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20180910Z-fe90da",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object coreMod {
   type ChangeDetectionStrategy = atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectionStrategy
-  type InjectFlags = atAngularCoreLib.srcDiInjectorMod.InjectFlags
+  type InjectFlags = atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
   type MissingTranslationStrategy = atAngularCoreLib.srcI18nTokensMod.MissingTranslationStrategy
   type RendererStyleFlags2 = atAngularCoreLib.srcRenderApiMod.RendererStyleFlags2
   type SecurityContext = atAngularCoreLib.srcSanitizationSecurityMod.SecurityContext

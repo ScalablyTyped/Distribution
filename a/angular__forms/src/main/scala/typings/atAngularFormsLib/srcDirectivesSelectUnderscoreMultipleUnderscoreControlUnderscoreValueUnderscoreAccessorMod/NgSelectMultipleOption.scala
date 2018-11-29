@@ -14,7 +14,17 @@ class NgSelectMultipleOption protected ()
   var _renderer: js.Any = js.native
   var _select: js.Any = js.native
   var id: java.lang.String = js.native
+  /**
+       * @description
+       * Tracks the value bound to the option element. Unlike the value binding,
+       * ngValue supports binding to objects.
+       */
   var ngValue: js.Any = js.native
+  /**
+       * @description
+       * Tracks simple string values bound to the option element.
+       * For objects, use the `ngValue` input binding.
+       */
   var value: js.Any = js.native
   /**
        * A callback method that performs custom clean-up, invoked immediately

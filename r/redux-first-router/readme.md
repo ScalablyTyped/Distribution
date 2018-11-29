@@ -7,6 +7,7 @@
 //                 corydeppen <https://github.com/corydeppen>
 //                 jscinoz <https://github.com/jscinoz>
 //                 surgeboris <https://github.com/surgeboris>
+//                 geirsagberg <https://github.com/geirsagberg>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 ```

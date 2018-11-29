@@ -189,6 +189,13 @@ class DateTime () extends js.Object {
        */
   def this(year: scala.Double, month: scala.Double, day: scala.Double, hour: scala.Double, minute: scala.Double, second: scala.Double, millisecond: scala.Double, timeZone: timezonecompleteLib.distLibTimezoneMod.TimeZone) = this()
   /**
+       * Add an amount of time to the given time struct. Note: does not normalize.
+       * Keeps lower unit fields the same where possible, clamps day to end-of-month if
+       * necessary.
+       */
+  var _addToTimeStruct: js.Any = js.native
+  var _unixTimeStampToExcel: js.Any = js.native
+  /**
        * UTC timestamp (lazily calculated)
        */
   var _utcDate: js.UndefOr[js.Any] = js.native
@@ -207,13 +214,6 @@ class DateTime () extends js.Object {
   var kind: java.lang.String = js.native
   var utcDate: js.Any = js.native
   var zoneDate: js.Any = js.native
-  /**
-       * Add an amount of time to the given time struct. Note: does not normalize.
-       * Keeps lower unit fields the same where possible, clamps day to end-of-month if
-       * necessary.
-       */
-  /* private */ def _addToTimeStruct(tm: js.Any, amount: js.Any, unit: js.Any): js.Any = js.native
-  /* private */ def _unixTimeStampToExcel(n: js.Any): js.Any = js.native
   /**
        * Add an amount of time relative to UTC, as regularly as possible. Returns a new DateTime
        *
@@ -420,6 +420,7 @@ class DateTime () extends js.Object {
   /**
        * Proper ISO 8601 format string with any IANA zone converted to ISO offset
        * E.g. "2014-01-01T23:15:33+01:00" for Europe/Amsterdam
+       * Unaware dates have no zone information at the end.
        */
   def toIsoString(): java.lang.String = js.native
   /**
@@ -428,6 +429,12 @@ class DateTime () extends js.Object {
        * @return an Excel date/time number i.e. days since 1-1-1900 where 1900 is incorrectly seen as leap year
        */
   def toUtcExcel(): scala.Double = js.native
+  /**
+       * Convert to UTC and then return ISO string ending in 'Z'. This is equivalent to Date#toISOString()
+       * e.g. "2014-01-01T23:15:33 Europe/Amsterdam" becomes "2014-01-01T22:15:33Z".
+       * Unaware dates are assumed to be in UTC
+       */
+  def toUtcIsoString(): java.lang.String = js.native
   /**
        * Modified ISO 8601 format string in UTC without time zone info
        */
@@ -586,15 +593,15 @@ class DateTime () extends js.Object {
 @js.native
 object DateTime extends js.Object {
   /**
+       * Split a combined ISO datetime and timezone into datetime and timezone
+       */
+  var _splitDateFromTimeZone: js.Any = js.native
+  /**
        * Actual time source in use. Setting this property allows to
        * fake time in tests. DateTime.nowLocal() and DateTime.nowUtc()
        * use this property for obtaining the current time.
        */
   var timeSource: timezonecompleteLib.distLibTimesourceMod.TimeSource = js.native
-  /**
-       * Split a combined ISO datetime and timezone into datetime and timezone
-       */
-  /* private */ def _splitDateFromTimeZone(s: js.Any): js.Any = js.native
   /**
        * Check whether a given date exists in the given time zone.
        * E.g. 2015-02-29 returns false (not a leap year)
@@ -660,6 +667,7 @@ object DateTime extends js.Object {
        * @param format the format the string is in. See LDML.md for supported formats.
        * @param zone Optional, the zone to add (if no zone is given in the string)
        * @param locale Optional, different settings for constants like 'AM' etc
+       * @param allowTrailing Allow trailing characters in the source string
        */
   def parse(s: java.lang.String, format: java.lang.String): timezonecompleteLib.distLibDatetimeMod.DateTime = js.native
   /**
@@ -668,6 +676,7 @@ object DateTime extends js.Object {
        * @param format the format the string is in. See LDML.md for supported formats.
        * @param zone Optional, the zone to add (if no zone is given in the string)
        * @param locale Optional, different settings for constants like 'AM' etc
+       * @param allowTrailing Allow trailing characters in the source string
        */
   def parse(
     s: java.lang.String,
@@ -680,12 +689,28 @@ object DateTime extends js.Object {
        * @param format the format the string is in. See LDML.md for supported formats.
        * @param zone Optional, the zone to add (if no zone is given in the string)
        * @param locale Optional, different settings for constants like 'AM' etc
+       * @param allowTrailing Allow trailing characters in the source string
        */
   def parse(
     s: java.lang.String,
     format: java.lang.String,
     zone: timezonecompleteLib.distLibTimezoneMod.TimeZone,
     locale: timezonecompleteLib.distLibLocaleMod.PartialLocale
+  ): timezonecompleteLib.distLibDatetimeMod.DateTime = js.native
+  /**
+       * Parse a date in a given format
+       * @param s the string to parse
+       * @param format the format the string is in. See LDML.md for supported formats.
+       * @param zone Optional, the zone to add (if no zone is given in the string)
+       * @param locale Optional, different settings for constants like 'AM' etc
+       * @param allowTrailing Allow trailing characters in the source string
+       */
+  def parse(
+    s: java.lang.String,
+    format: java.lang.String,
+    zone: timezonecompleteLib.distLibTimezoneMod.TimeZone,
+    locale: timezonecompleteLib.distLibLocaleMod.PartialLocale,
+    allowTrailing: scala.Boolean
   ): timezonecompleteLib.distLibDatetimeMod.DateTime = js.native
 }
 

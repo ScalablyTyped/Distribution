@@ -29,6 +29,10 @@ trait ProductVariant
        */
   var grams: scala.Double
   /**
+       * The unique identifier for the inventory item, which is used in the Inventory API to query for inventory information.
+       */
+  var inventory_item_id: scala.Double
+  /**
        * Specifies whether or not Shopify tracks the number of items in stock for this product variant.
        */
   var inventory_management: java.lang.String

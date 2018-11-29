@@ -20,6 +20,14 @@ trait TokenOptions extends js.Object {
            */
   var alwaysIssueNewRefreshToken: js.UndefOr[scala.Boolean] = js.undefined
   /**
+           * Additional supported grant types.
+           */
+  var extendedGrantTypes: js.UndefOr[
+    ScalablyTyped.runtime.StringDictionary[
+      ScalablyTyped.runtime.Instantiable1[/* options */ TokenOptions, AbstractGrantType]
+    ]
+  ] = js.undefined
+  /**
            * Lifetime of generated refresh tokens in seconds (default = 2 weeks)
            */
   var refreshTokenLifetime: js.UndefOr[scala.Double] = js.undefined

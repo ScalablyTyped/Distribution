@@ -13,7 +13,7 @@ trait ServerAuth extends js.Object {
        * returned from its implementation function.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverauthapi)
        */
-  var api: hapiLib.hapiMod.UtilNs.Dictionary[_] = js.native
+  var api: hapiLib.hapiMod.UtilNs.Dictionary[ServerAuthSchemeObjectApi] = js.native
   /**
        * Contains the default authentication configuration is a default strategy was set via
        * [server.auth.default()](https://github.com/hapijs/hapi/blob/master/API.md#server.auth.default()).
@@ -93,6 +93,17 @@ trait ServerAuth extends js.Object {
        * include verifying scope, entity, or other route properties.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverauthteststrategy-request)
        */
-  def test(strategy: java.lang.String, request: Request): stdLib.Promise[_] = js.native
+  def test(strategy: java.lang.String, request: Request): stdLib.Promise[AuthCredentials] = js.native
+  /**
+       * Verify a request's authentication credentials against an authentication strategy.
+       * Returns nothing if verification was successful, otherwise throws an error.
+       *
+       * Note that the `verify()` method does not take into account the route authentication configuration
+       * or any other information from the request other than the `request.auth` object. It also does not
+       * perform payload authentication. It is limited to verifying that the previously valid credentials
+       * are still valid (e.g. have not been revoked or expired). It does not include verifying scope,
+       * entity, or other route properties.
+       */
+  def verify(request: Request): stdLib.Promise[scala.Unit] = js.native
 }
 

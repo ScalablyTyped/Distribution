@@ -17,10 +17,5 @@ abstract class Target protected () extends js.Object {
   def build(appOutDir: java.lang.String, arch: builderDashUtilLib.outArchMod.Arch): stdLib.Promise[_] = js.native
   def checkOptions(): stdLib.Promise[_] = js.native
   def finishBuild(): stdLib.Promise[_] = js.native
-  /* protected */ def logBuilding(
-    targetPresentableName: java.lang.String,
-    artifactPath: java.lang.String,
-    arch: builderDashUtilLib.outArchMod.Arch
-  ): scala.Unit = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Body extends js.Object {
-  val body: ReadableStream | scala.Null
+  val body: ReadableStream[Uint8Array] | scala.Null
   val bodyUsed: scala.Boolean
   def arrayBuffer(): Promise[ArrayBuffer]
   def blob(): Promise[Blob]

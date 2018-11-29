@@ -378,6 +378,30 @@ object RDSNs extends js.Object {
   }
   
   
+  trait CreateDBClusterEndpointMessage extends js.Object {
+    /**
+         * The identifier to use for the new endpoint. This parameter is stored as a lowercase string.
+         */
+    var DBClusterEndpointIdentifier: java.lang.String
+    /**
+         * The DB cluster identifier of the DB cluster associated with the endpoint. This parameter is stored as a lowercase string.
+         */
+    var DBClusterIdentifier: java.lang.String
+    /**
+         * The type of the endpoint. One of: READER, ANY. 
+         */
+    var EndpointType: java.lang.String
+    /**
+         * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty.
+         */
+    var ExcludedMembers: js.UndefOr[StringList] = js.undefined
+    /**
+         * List of DB instance identifiers that are part of the custom endpoint group.
+         */
+    var StaticMembers: js.UndefOr[StringList] = js.undefined
+  }
+  
+  
   trait CreateDBClusterMessage extends js.Object {
     /**
          * A list of EC2 Availability Zones that instances in the DB cluster can be created in. For information on AWS Regions and Availability Zones, see Choosing the Regions and Availability Zones in the Amazon Aurora User Guide. 
@@ -428,13 +452,17 @@ object RDSNs extends js.Object {
          */
     var Engine: java.lang.String
     /**
-         * The DB engine mode of the DB cluster, either provisioned, serverless, or parallelquery.
+         * The DB engine mode of the DB cluster, either provisioned, serverless, parallelquery, or global.
          */
     var EngineMode: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The version number of the database engine to use.  Aurora MySQL  Example: 5.6.10a, 5.7.12   Aurora PostgreSQL  Example: 9.6.3 
          */
     var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The global cluster ID of an Aurora cluster that becomes the primary cluster in the new global database cluster. 
+         */
+    var GlobalClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The AWS KMS key identifier for an encrypted DB cluster. The KMS key identifier is the Amazon Resource Name (ARN) for the KMS encryption key. If you are creating a DB cluster with the same AWS account that owns the KMS encryption key used to encrypt the new DB cluster, then you can use the KMS key alias instead of the ARN for the KMS encryption key. If an encryption key is not specified in KmsKeyId:   If ReplicationSourceIdentifier identifies an encrypted source, then Amazon RDS will use the encryption key used to encrypt the source. Otherwise, Amazon RDS will use your default encryption key.    If the StorageEncrypted parameter is true and ReplicationSourceIdentifier is not specified, then Amazon RDS will use your default encryption key.   AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region. If you create a Read Replica of an encrypted DB cluster in another AWS Region, you must set KmsKeyId to a KMS key ID that is valid in the destination AWS Region. This key is used to encrypt the Read Replica in that AWS Region.
          */
@@ -541,7 +569,7 @@ object RDSNs extends js.Object {
   
   trait CreateDBInstanceMessage extends js.Object {
     /**
-         * The amount of storage (in gibibytes) to allocate for the DB instance. Type: Integer  Amazon Aurora  Not applicable. Aurora cluster volumes automatically grow as the amount of data in your database increases, though you are only charged for the space that you use in an Aurora cluster volume.  MySQL  Constraints to the amount of storage for each storage type are the following:    General Purpose (SSD) storage (gp2): Must be an integer from 20 to 16384.   Provisioned IOPS storage (io1): Must be an integer from 100 to 16384.   Magnetic storage (standard): Must be an integer from 5 to 3072.    MariaDB  Constraints to the amount of storage for each storage type are the following:    General Purpose (SSD) storage (gp2): Must be an integer from 20 to 16384.   Provisioned IOPS storage (io1): Must be an integer from 100 to 16384.   Magnetic storage (standard): Must be an integer from 5 to 3072.    PostgreSQL  Constraints to the amount of storage for each storage type are the following:    General Purpose (SSD) storage (gp2): Must be an integer from 20 to 16384.   Provisioned IOPS storage (io1): Must be an integer from 100 to 16384.   Magnetic storage (standard): Must be an integer from 5 to 3072.    Oracle  Constraints to the amount of storage for each storage type are the following:    General Purpose (SSD) storage (gp2): Must be an integer from 20 to 16384.   Provisioned IOPS storage (io1): Must be an integer from 100 to 16384.   Magnetic storage (standard): Must be an integer from 10 to 3072.    SQL Server  Constraints to the amount of storage for each storage type are the following:    General Purpose (SSD) storage (gp2):   Enterprise and Standard editions: Must be an integer from 200 to 16384.   Web and Express editions: Must be an integer from 20 to 16384.     Provisioned IOPS storage (io1):   Enterprise and Standard editions: Must be an integer from 200 to 16384.   Web and Express editions: Must be an integer from 100 to 16384.     Magnetic storage (standard):   Enterprise and Standard editions: Must be an integer from 200 to 1024.   Web and Express editions: Must be an integer from 20 to 1024.    
+         * The amount of storage (in gibibytes) to allocate for the DB instance. Type: Integer  Amazon Aurora  Not applicable. Aurora cluster volumes automatically grow as the amount of data in your database increases, though you are only charged for the space that you use in an Aurora cluster volume.  MySQL  Constraints to the amount of storage for each storage type are the following:    General Purpose (SSD) storage (gp2): Must be an integer from 20 to 16384.   Provisioned IOPS storage (io1): Must be an integer from 100 to 16384.   Magnetic storage (standard): Must be an integer from 5 to 3072.    MariaDB  Constraints to the amount of storage for each storage type are the following:    General Purpose (SSD) storage (gp2): Must be an integer from 20 to 16384.   Provisioned IOPS storage (io1): Must be an integer from 100 to 16384.   Magnetic storage (standard): Must be an integer from 5 to 3072.    PostgreSQL  Constraints to the amount of storage for each storage type are the following:    General Purpose (SSD) storage (gp2): Must be an integer from 20 to 16384.   Provisioned IOPS storage (io1): Must be an integer from 100 to 16384.   Magnetic storage (standard): Must be an integer from 5 to 3072.    Oracle  Constraints to the amount of storage for each storage type are the following:    General Purpose (SSD) storage (gp2): Must be an integer from 20 to 32768.   Provisioned IOPS storage (io1): Must be an integer from 100 to 32768.   Magnetic storage (standard): Must be an integer from 10 to 3072.    SQL Server  Constraints to the amount of storage for each storage type are the following:    General Purpose (SSD) storage (gp2):   Enterprise and Standard editions: Must be an integer from 200 to 16384.   Web and Express editions: Must be an integer from 20 to 16384.     Provisioned IOPS storage (io1):   Enterprise and Standard editions: Must be an integer from 200 to 16384.   Web and Express editions: Must be an integer from 100 to 16384.     Magnetic storage (standard):   Enterprise and Standard editions: Must be an integer from 200 to 1024.   Web and Express editions: Must be an integer from 20 to 1024.    
          */
     var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
     /**
@@ -653,7 +681,7 @@ object RDSNs extends js.Object {
          */
     var MonitoringRoleArn: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * Specifies if the DB instance is a Multi-AZ deployment. You can't set the AvailabilityZone parameter if the MultiAZ parameter is set to true.
+         * A value that specifies whether the DB instance is a Multi-AZ deployment. You can't set the AvailabilityZone parameter if the MultiAZ parameter is set to true.
          */
     var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
     /**
@@ -714,7 +742,7 @@ object RDSNs extends js.Object {
          */
     var Timezone: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * A list of EC2 VPC security groups to associate with this DB instance.  Amazon Aurora  Not applicable. The associated list of EC2 VPC security groups is managed by the DB cluster. For more information, see CreateDBCluster. Default: The default EC2 VPC security group for the DB subnet group's VPC.
+         * A list of Amazon EC2 VPC security groups to associate with this DB instance.  Amazon Aurora  Not applicable. The associated list of EC2 VPC security groups is managed by the DB cluster. For more information, see CreateDBCluster. Default: The default EC2 VPC security group for the DB subnet group's VPC.
          */
     var VpcSecurityGroupIds: js.UndefOr[VpcSecurityGroupIdList] = js.undefined
   }
@@ -754,7 +782,7 @@ object RDSNs extends js.Object {
          */
     var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
     /**
-         * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. You can enable IAM database authentication for the following database engines   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher   Aurora 5.6 or higher.   Default: false 
+         * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. You can enable IAM database authentication for the following database engines   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher   Aurora MySQL 5.6 or higher   Default: false 
          */
     var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
     /**
@@ -810,7 +838,7 @@ object RDSNs extends js.Object {
          */
     var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
     /**
-         * The identifier of the DB instance that will act as the source for the Read Replica. Each DB instance can have up to five Read Replicas. Constraints:   Must be the identifier of an existing MySQL, MariaDB, or PostgreSQL DB instance.   Can specify a DB instance that is a MySQL Read Replica only if the source is running MySQL 5.6.   Can specify a DB instance that is a PostgreSQL DB instance only if the source is running PostgreSQL 9.3.5 or later (9.4.7 and higher for cross-region replication).   The specified DB instance must have automatic backups enabled, its backup retention period must be greater than 0.   If the source DB instance is in the same AWS Region as the Read Replica, specify a valid DB instance identifier.   If the source DB instance is in a different AWS Region than the Read Replica, specify a valid DB instance ARN. For more information, go to  Constructing an ARN for Amazon RDS in the Amazon RDS User Guide.  
+         * The identifier of the DB instance that will act as the source for the Read Replica. Each DB instance can have up to five Read Replicas. Constraints:   Must be the identifier of an existing MySQL, MariaDB, or PostgreSQL DB instance.   Can specify a DB instance that is a MySQL Read Replica only if the source is running MySQL 5.6 or later.   Can specify a DB instance that is a PostgreSQL DB instance only if the source is running PostgreSQL 9.3.5 or later (9.4.7 and higher for cross-region replication).   The specified DB instance must have automatic backups enabled, its backup retention period must be greater than 0.   If the source DB instance is in the same AWS Region as the Read Replica, specify a valid DB instance identifier.   If the source DB instance is in a different AWS Region than the Read Replica, specify a valid DB instance ARN. For more information, go to  Constructing an ARN for Amazon RDS in the Amazon RDS User Guide.  
          */
     var SourceDBInstanceIdentifier: java.lang.String
     /**
@@ -826,6 +854,10 @@ object RDSNs extends js.Object {
          * A value that specifies that the DB instance class of the DB instance uses its default processor features.
          */
     var UseDefaultProcessorFeatures: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+         *  A list of EC2 VPC security groups to associate with the Read Replica.   Default: The default EC2 VPC security group for the DB subnet group's VPC. 
+         */
+    var VpcSecurityGroupIds: js.UndefOr[VpcSecurityGroupIdList] = js.undefined
   }
   
   
@@ -953,6 +985,43 @@ object RDSNs extends js.Object {
   }
   
   
+  trait CreateGlobalClusterMessage extends js.Object {
+    /**
+         *  The name for your database of up to 64 alpha-numeric characters. If you do not provide a name, Amazon Aurora will not create a database in the global database cluster you are creating. 
+         */
+    var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The deletion protection setting for the new global database. The global database can't be deleted when this value is set to true. 
+         */
+    var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+         * Provides the name of the database engine to be used for this DB cluster.
+         */
+    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The engine version of the Aurora global database.
+         */
+    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The cluster identifier of the new global database cluster.
+         */
+    var GlobalClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The Amazon Resource Name (ARN) to use as the primary cluster of the global database. This parameter is optional. 
+         */
+    var SourceDBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The storage encryption setting for the new global database cluster. 
+         */
+    var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
+  }
+  
+  
+  trait CreateGlobalClusterResult extends js.Object {
+    var GlobalCluster: js.UndefOr[GlobalCluster] = js.undefined
+  }
+  
+  
   trait CreateOptionGroupMessage extends js.Object {
     /**
          * Specifies the name of the engine that this option group should be associated with.
@@ -1017,6 +1086,10 @@ object RDSNs extends js.Object {
          * Specifies the time when the DB cluster was created, in Universal Coordinated Time (UTC).
          */
     var ClusterCreateTime: js.UndefOr[TStamp] = js.undefined
+    /**
+         * Identifies all custom endpoints associated with the cluster.
+         */
+    var CustomEndpoints: js.UndefOr[StringList] = js.undefined
     /**
          * The Amazon Resource Name (ARN) for the DB cluster.
          */
@@ -1085,6 +1158,10 @@ object RDSNs extends js.Object {
          * Specifies the ID that Amazon Route 53 assigns when you create a hosted zone.
          */
     var HostedZoneId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  HTTP endpoint functionality is in beta for Aurora Serverless and is subject to change.  Value that is true if the HTTP endpoint for an Aurora Serverless DB cluster is enabled and false otherwise. When enabled, the HTTP endpoint provides a connectionless web service API for running SQL queries on the Aurora Serverless DB cluster. You can also query your database from inside the RDS console with the query editor. For more information about Aurora Serverless, see Using Amazon Aurora Serverless in the Amazon Aurora User Guide.
+         */
+    var HttpEndpointEnabled: js.UndefOr[scala.Boolean] = js.undefined
     /**
          * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
          */
@@ -1210,6 +1287,62 @@ object RDSNs extends js.Object {
          * The timeout action of a call to ModifyCurrentDBClusterCapacity, either ForceApplyCapacityChange or RollbackCapacityChange.
          */
     var TimeoutAction: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait DBClusterEndpoint extends js.Object {
+    /**
+         * The type associated with a custom endpoint. One of: READER, ANY.
+         */
+    var CustomEndpointType: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) for the endpoint.
+         */
+    var DBClusterEndpointArn: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The identifier associated with the endpoint. This parameter is stored as a lowercase string.
+         */
+    var DBClusterEndpointIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A unique system-generated identifier for an endpoint. It remains the same for the whole life of the endpoint.
+         */
+    var DBClusterEndpointResourceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The DB cluster identifier of the DB cluster associated with the endpoint. This parameter is stored as a lowercase string.
+         */
+    var DBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The DNS address of the endpoint.
+         */
+    var Endpoint: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The type of the endpoint. One of: READER, WRITER, CUSTOM.
+         */
+    var EndpointType: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty.
+         */
+    var ExcludedMembers: js.UndefOr[StringList] = js.undefined
+    /**
+         * List of DB instance identifiers that are part of the custom endpoint group.
+         */
+    var StaticMembers: js.UndefOr[StringList] = js.undefined
+    /**
+         * The current status of the endpoint. One of: creating, available, deleting, modifying.
+         */
+    var Status: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait DBClusterEndpointMessage extends js.Object {
+    /**
+         * Contains the details of the endpoints associated with the cluster and matching any filter conditions.
+         */
+    var DBClusterEndpoints: js.UndefOr[DBClusterEndpointList] = js.undefined
+    /**
+         *  An optional pagination token provided by a previous DescribeDBClusterEndpoints request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+         */
+    var Marker: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -1636,6 +1769,10 @@ object RDSNs extends js.Object {
          */
     var LicenseModel: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * Specifies the listener connection endpoint for SQL Server Always On.
+         */
+    var ListenerEndpoint: js.UndefOr[Endpoint] = js.undefined
+    /**
          * Contains the master username for the DB instance.
          */
     var MasterUsername: js.UndefOr[java.lang.String] = js.undefined
@@ -1731,6 +1868,114 @@ object RDSNs extends js.Object {
          * Provides a list of VPC security group elements that the DB instance belongs to.
          */
     var VpcSecurityGroups: js.UndefOr[VpcSecurityGroupMembershipList] = js.undefined
+  }
+  
+  
+  trait DBInstanceAutomatedBackup extends js.Object {
+    /**
+         * Specifies the allocated storage size in gibibytes (GiB).
+         */
+    var AllocatedStorage: js.UndefOr[Integer] = js.undefined
+    /**
+         * The Availability Zone that the automated backup was created in. For information on AWS Regions and Availability Zones, see Regions and Availability Zones.
+         */
+    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) for the automated backup.
+         */
+    var DBInstanceArn: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The customer id of the instance that is/was associated with the automated backup. 
+         */
+    var DBInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The identifier for the source DB instance, which can't be changed and which is unique to an AWS Region.
+         */
+    var DbiResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Specifies whether the automated backup is encrypted.
+         */
+    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The name of the database engine for this automated backup.
+         */
+    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The version of the database engine for the automated backup.
+         */
+    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
+         */
+    var IAMDatabaseAuthenticationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Provides the date and time that the DB instance was created. 
+         */
+    var InstanceCreateTime: js.UndefOr[TStamp] = js.undefined
+    /**
+         * The IOPS (I/O operations per second) value for the automated backup. 
+         */
+    var Iops: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+         * The AWS KMS key ID for an automated backup. The KMS key ID is the Amazon Resource Name (ARN), KMS key identifier, or the KMS key alias for the KMS encryption key. 
+         */
+    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * License model information for the automated backup.
+         */
+    var LicenseModel: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The license model of an automated backup.
+         */
+    var MasterUsername: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The option group the automated backup is associated with. If omitted, the default option group for the engine specified is used.
+         */
+    var OptionGroupName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The port number that the automated backup used for connections. Default: Inherits from the source DB instance Valid Values: 1150-65535 
+         */
+    var Port: js.UndefOr[Integer] = js.undefined
+    /**
+         * The AWS Region associated with the automated backup.
+         */
+    var Region: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Earliest and latest time an instance can be restored to.
+         */
+    var RestoreWindow: js.UndefOr[RestoreWindow] = js.undefined
+    /**
+         * Provides a list of status information for an automated backup:    active - automated backups for current instances    retained - automated backups for deleted instances    creating - automated backups that are waiting for the first automated snapshot to be available.  
+         */
+    var Status: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Specifies the storage type associated with the automated backup.
+         */
+    var StorageType: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ARN from the key store with which the automated backup is associated for TDE encryption.
+         */
+    var TdeCredentialArn: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The time zone of the automated backup. In most cases, the Timezone element is empty. Timezone content appears only for Microsoft SQL Server DB instances that were created with a time zone specified.
+         */
+    var Timezone: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Provides the VPC ID associated with the DB instance
+         */
+    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait DBInstanceAutomatedBackupMessage extends js.Object {
+    /**
+         *  A list of DBInstanceAutomatedBackup instances. 
+         */
+    var DBInstanceAutomatedBackups: js.UndefOr[DBInstanceAutomatedBackupList] = js.undefined
+    /**
+         *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
+         */
+    var Marker: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -1908,6 +2153,10 @@ object RDSNs extends js.Object {
          */
     var DBSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The identifier for the source DB instance, which can't be changed and which is unique to an AWS Region.
+         */
+    var DbiResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * Specifies whether the DB snapshot is encrypted.
          */
     var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
@@ -2074,6 +2323,14 @@ object RDSNs extends js.Object {
   }
   
   
+  trait DeleteDBClusterEndpointMessage extends js.Object {
+    /**
+         * The identifier associated with the custom endpoint. This parameter is stored as a lowercase string.
+         */
+    var DBClusterEndpointIdentifier: java.lang.String
+  }
+  
+  
   trait DeleteDBClusterMessage extends js.Object {
     /**
          * The DB cluster identifier for the DB cluster to be deleted. This parameter isn't case-sensitive. Constraints:   Must match an existing DBClusterIdentifier.  
@@ -2116,17 +2373,34 @@ object RDSNs extends js.Object {
   }
   
   
+  trait DeleteDBInstanceAutomatedBackupMessage extends js.Object {
+    /**
+         * The identifier for the source DB instance, which can't be changed and which is unique to an AWS Region.
+         */
+    var DbiResourceId: java.lang.String
+  }
+  
+  
+  trait DeleteDBInstanceAutomatedBackupResult extends js.Object {
+    var DBInstanceAutomatedBackup: js.UndefOr[DBInstanceAutomatedBackup] = js.undefined
+  }
+  
+  
   trait DeleteDBInstanceMessage extends js.Object {
     /**
          * The DB instance identifier for the DB instance to be deleted. This parameter isn't case-sensitive. Constraints:   Must match the name of an existing DB instance.  
          */
     var DBInstanceIdentifier: java.lang.String
     /**
-         *  The DBSnapshotIdentifier of the new DBSnapshot created when SkipFinalSnapshot is set to false.   Specifying this parameter and also setting the SkipFinalShapshot parameter to true results in an error.  Constraints:   Must be 1 to 255 letters or numbers.   First character must be a letter   Can't end with a hyphen or contain two consecutive hyphens   Can't be specified when deleting a Read Replica.  
+         * A value that indicates whether to remove automated backups immediately after the DB instance is deleted. This parameter isn't case-sensitive. This parameter defaults to true.
+         */
+    var DeleteAutomatedBackups: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+         *  The DBSnapshotIdentifier of the new DB snapshot created when SkipFinalSnapshot is set to false.   Specifying this parameter and also setting the SkipFinalShapshot parameter to true results in an error.  Constraints:   Must be 1 to 255 letters or numbers.   First character must be a letter.   Can't end with a hyphen or contain two consecutive hyphens.   Can't be specified when deleting a Read Replica.  
          */
     var FinalDBSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
     /**
-         *  Determines whether a final DB snapshot is created before the DB instance is deleted. If true is specified, no DBSnapshot is created. If false is specified, a DB snapshot is created before the DB instance is deleted.  Note that when a DB instance is in a failure state and has a status of 'failed', 'incompatible-restore', or 'incompatible-network', it can only be deleted when the SkipFinalSnapshot parameter is set to "true". Specify true when deleting a Read Replica.  The FinalDBSnapshotIdentifier parameter must be specified if SkipFinalSnapshot is false.  Default: false 
+         *  A value that indicates whether a final DB snapshot is created before the DB instance is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB instance is deleted.  When a DB instance is in a failure state and has a status of failed, incompatible-restore, or incompatible-network, you can only delete it when the SkipFinalSnapshot parameter is set to true. Specify true when deleting a Read Replica.  The FinalDBSnapshotIdentifier parameter must be specified if SkipFinalSnapshot is false.  Default: false 
          */
     var SkipFinalSnapshot: js.UndefOr[scala.Boolean] = js.undefined
   }
@@ -2155,7 +2429,7 @@ object RDSNs extends js.Object {
   
   trait DeleteDBSnapshotMessage extends js.Object {
     /**
-         * The DBSnapshot identifier. Constraints: Must be the name of an existing DB snapshot in the available state.
+         * The DB snapshot identifier. Constraints: Must be the name of an existing DB snapshot in the available state.
          */
     var DBSnapshotIdentifier: java.lang.String
   }
@@ -2184,6 +2458,19 @@ object RDSNs extends js.Object {
   
   trait DeleteEventSubscriptionResult extends js.Object {
     var EventSubscription: js.UndefOr[EventSubscription] = js.undefined
+  }
+  
+  
+  trait DeleteGlobalClusterMessage extends js.Object {
+    /**
+         *  The cluster identifier of the global database cluster being deleted. 
+         */
+    var GlobalClusterIdentifier: java.lang.String
+  }
+  
+  
+  trait DeleteGlobalClusterResult extends js.Object {
+    var GlobalCluster: js.UndefOr[GlobalCluster] = js.undefined
   }
   
   
@@ -2233,6 +2520,30 @@ object RDSNs extends js.Object {
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
          *  An optional pagination token provided by a previous DescribeDBClusterBacktracks request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+         */
+    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
+         */
+    var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+  }
+  
+  
+  trait DescribeDBClusterEndpointsMessage extends js.Object {
+    /**
+         * The identifier of the endpoint to describe. This parameter is stored as a lowercase string.
+         */
+    var DBClusterEndpointIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The DB cluster identifier of the DB cluster associated with the endpoint. This parameter is stored as a lowercase string.
+         */
+    var DBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A set of name-value pairs that define which endpoints to include in the output. The filters are specified as name-value pairs, in the format Name=endpoint_type,Values=endpoint_type1,endpoint_type2,.... Name can be one of: db-cluster-endpoint-type, db-cluster-endpoint-custom-type, db-cluster-endpoint-id, db-cluster-endpoint-status. Values for the  db-cluster-endpoint-type filter can be one or more of: reader, writer, custom. Values for the db-cluster-endpoint-custom-type filter can be one or more of: reader, any. Values for the db-cluster-endpoint-status filter can be one or more of: available, creating, deleting, modifying. 
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         *  An optional pagination token provided by a previous DescribeDBClusterEndpoints request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
          */
     var Marker: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -2390,6 +2701,30 @@ object RDSNs extends js.Object {
     var Marker: js.UndefOr[java.lang.String] = js.undefined
     /**
          *  The maximum number of records to include in the response. If more than the MaxRecords value is available, a pagination token called a marker is included in the response so that the following results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
+         */
+    var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+  }
+  
+  
+  trait DescribeDBInstanceAutomatedBackupsMessage extends js.Object {
+    /**
+         * (Optional) The user-supplied instance identifier. If this parameter is specified, it must match the identifier of an existing DB instance. It returns information from the specific DB instance' automated backup. This parameter isn't case-sensitive. 
+         */
+    var DBInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The resource ID of the DB instance that is the source of the automated backup. This parameter isn't case-sensitive. 
+         */
+    var DbiResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A filter that specifies which resources to return based on status. Supported filters are the following:    status     active - automated backups for current instances    retained - automated backups for deleted instances    creating - automated backups that are waiting for the first automated snapshot to be available      db-instance-id - Accepts DB instance identifiers and Amazon Resource Names (ARNs) for DB instances. The results list includes only information about the DB instance automated backupss identified by these ARNs.    dbi-resource-id - Accepts DB instance resource identifiers and DB Amazon Resource Names (ARNs) for DB instances. The results list includes only information about the DB instance resources identified by these ARNs.   Returns all resources by default. The status for each resource is specified in the response.
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The pagination token provided in the previous request. If this parameter is specified the response includes only records beyond the marker, up to MaxRecords.
+         */
+    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.
          */
     var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   }
@@ -2562,6 +2897,10 @@ object RDSNs extends js.Object {
          */
     var DBSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * A specific DB resource ID to describe.
+         */
+    var DbiResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * This parameter is not currently supported.
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
@@ -2727,6 +3066,26 @@ object RDSNs extends js.Object {
          *  The beginning of the time interval to retrieve events for, specified in ISO 8601 format. For more information about ISO 8601, go to the ISO8601 Wikipedia page.  Example: 2009-07-08T18:00Z
          */
     var StartTime: js.UndefOr[TStamp] = js.undefined
+  }
+  
+  
+  trait DescribeGlobalClustersMessage extends js.Object {
+    /**
+         * A filter that specifies one or more global DB clusters to describe. Supported filters:    db-cluster-id - Accepts DB cluster identifiers and DB cluster Amazon Resource Names (ARNs). The results list will only include information about the DB clusters identified by these ARNs.  
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         *  The user-supplied DB cluster identifier. If this parameter is specified, information from only the specific DB cluster is returned. This parameter isn't case-sensitive.  Constraints:   If supplied, must match an existing DBClusterIdentifier.  
+         */
+    var GlobalClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  An optional pagination token provided by a previous DescribeGlobalClusters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+         */
+    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
+         */
+    var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   }
   
   
@@ -3195,7 +3554,7 @@ object RDSNs extends js.Object {
     /**
          * A DB cluster identifier to force a failover for. This parameter is not case-sensitive. Constraints:   Must match the identifier of an existing DBCluster.  
          */
-    var DBClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    var DBClusterIdentifier: java.lang.String
     /**
          * The name of the instance to promote to the primary instance. You must specify the instance identifier for an Aurora Replica in the DB cluster. For example, mydbcluster-replica1.
          */
@@ -3217,6 +3576,78 @@ object RDSNs extends js.Object {
          * One or more filter values. Filter values are case-sensitive.
          */
     var Values: FilterValueList
+  }
+  
+  
+  trait GlobalCluster extends js.Object {
+    /**
+         *  The default database name within the new global database cluster. 
+         */
+    var DatabaseName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The deletion protection setting for the new global database cluster. 
+         */
+    var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+         *  The Aurora database engine used by the global database cluster. 
+         */
+    var Engine: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Indicates the database engine version.
+         */
+    var EngineVersion: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) for the global database cluster.
+         */
+    var GlobalClusterArn: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  Contains a user-supplied global database cluster identifier. This identifier is the unique key that identifies a global database cluster. 
+         */
+    var GlobalClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The list of cluster IDs for secondary clusters within the global database cluster. Currently limited to 1 item. 
+         */
+    var GlobalClusterMembers: js.UndefOr[GlobalClusterMemberList] = js.undefined
+    /**
+         *  The AWS Region-unique, immutable identifier for the global database cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed. 
+         */
+    var GlobalClusterResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Specifies the current state of this global database cluster.
+         */
+    var Status: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The storage encryption setting for the global database cluster. 
+         */
+    var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
+  }
+  
+  
+  trait GlobalClusterMember extends js.Object {
+    /**
+         *  The Amazon Resource Name (ARN) for each Aurora cluster. 
+         */
+    var DBClusterArn: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  Specifies whether the Aurora cluster is the primary cluster (that is, has read-write capability) for the Aurora global database with which it is associated. 
+         */
+    var IsWriter: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         *  The Amazon Resource Name (ARN) for each read-only secondary cluster associated with the Aurora global database. 
+         */
+    var Readers: js.UndefOr[ReadersArnList] = js.undefined
+  }
+  
+  
+  trait GlobalClustersMessage extends js.Object {
+    /**
+         *  The list of global clusters returned by this request. 
+         */
+    var GlobalClusters: js.UndefOr[GlobalClusterList] = js.undefined
+    /**
+         *  An optional pagination token provided by a previous DescribeGlobalClusters request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+         */
+    var Marker: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -3276,6 +3707,26 @@ object RDSNs extends js.Object {
   }
   
   
+  trait ModifyDBClusterEndpointMessage extends js.Object {
+    /**
+         * The identifier of the endpoint to modify. This parameter is stored as a lowercase string.
+         */
+    var DBClusterEndpointIdentifier: java.lang.String
+    /**
+         * The type of the endpoint. One of: READER, ANY. 
+         */
+    var EndpointType: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty.
+         */
+    var ExcludedMembers: js.UndefOr[StringList] = js.undefined
+    /**
+         * List of DB instance identifiers that are part of the custom endpoint group.
+         */
+    var StaticMembers: js.UndefOr[StringList] = js.undefined
+  }
+  
+  
   trait ModifyDBClusterMessage extends js.Object {
     /**
          * A value that specifies whether the modifications in this request and any pending modifications are asynchronously applied as soon as possible, regardless of the PreferredMaintenanceWindow setting for the DB cluster. If this parameter is set to false, changes to the DB cluster are applied during the next maintenance window. The ApplyImmediately parameter only affects the EnableIAMDatabaseAuthentication, MasterUserPassword, and NewDBClusterIdentifier values. If you set the ApplyImmediately parameter value to false, then changes to the EnableIAMDatabaseAuthentication, MasterUserPassword, and NewDBClusterIdentifier values are applied during the next maintenance window. All other changes are applied immediately, regardless of the value of the ApplyImmediately parameter. Default: false 
@@ -3305,6 +3756,10 @@ object RDSNs extends js.Object {
          * Indicates if the DB cluster has deletion protection enabled. The database can't be deleted when this value is set to true. 
          */
     var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+         *  HTTP endpoint functionality is in beta for Aurora Serverless and is subject to change.  A value that indicates whether to enable the HTTP endpoint for an Aurora Serverless DB cluster. By default, the HTTP endpoint is disabled. When enabled, the HTTP endpoint provides a connectionless web service API for running SQL queries on the Aurora Serverless DB cluster. You can also query your database from inside the RDS console with the query editor. For more information about Aurora Serverless, see Using Amazon Aurora Serverless in the Amazon Aurora User Guide.
+         */
+    var EnableHttpEndpoint: js.UndefOr[BooleanOptional] = js.undefined
     /**
          * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
          */
@@ -3408,7 +3863,7 @@ object RDSNs extends js.Object {
          */
     var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
     /**
-         * The number of days to retain automated backups. Setting this parameter to a positive number enables backups. Setting this parameter to 0 disables automated backups. Changing this parameter can result in an outage if you change from 0 to a non-zero value or from a non-zero value to 0. These changes are applied during the next maintenance window unless the ApplyImmediately parameter is set to true for this request. If you change the parameter from one non-zero value to another non-zero value, the change is asynchronously applied as soon as possible.  Amazon Aurora  Not applicable. The retention period for automated backups is managed by the DB cluster. For more information, see ModifyDBCluster. Default: Uses existing setting Constraints:   Must be a value from 0 to 35   Can be specified for a MySQL Read Replica only if the source is running MySQL 5.6   Can be specified for a PostgreSQL Read Replica only if the source is running PostgreSQL 9.3.5   Can't be set to 0 if the DB instance is a source to Read Replicas  
+         * The number of days to retain automated backups. Setting this parameter to a positive number enables backups. Setting this parameter to 0 disables automated backups. Changing this parameter can result in an outage if you change from 0 to a non-zero value or from a non-zero value to 0. These changes are applied during the next maintenance window unless the ApplyImmediately parameter is set to true for this request. If you change the parameter from one non-zero value to another non-zero value, the change is asynchronously applied as soon as possible.  Amazon Aurora  Not applicable. The retention period for automated backups is managed by the DB cluster. For more information, see ModifyDBCluster. Default: Uses existing setting Constraints:   Must be a value from 0 to 35   Can be specified for a MySQL Read Replica only if the source is running MySQL 5.6 or later   Can be specified for a PostgreSQL Read Replica only if the source is running PostgreSQL 9.3.5   Can't be set to 0 if the DB instance is a source to Read Replicas  
          */
     var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
     /**
@@ -3664,6 +4119,27 @@ object RDSNs extends js.Object {
   
   trait ModifyEventSubscriptionResult extends js.Object {
     var EventSubscription: js.UndefOr[EventSubscription] = js.undefined
+  }
+  
+  
+  trait ModifyGlobalClusterMessage extends js.Object {
+    /**
+         *  Indicates if the global database cluster has deletion protection enabled. The global database cluster can't be deleted when this value is set to true. 
+         */
+    var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+         *  The DB cluster identifier for the global cluster being modified. This parameter is not case-sensitive.  Constraints:   Must match the identifier of an existing global database cluster.  
+         */
+    var GlobalClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The new cluster identifier for the global database cluster when modifying a global database cluster. This value is stored as a lowercase string.  Constraints:   Must contain from 1 to 63 letters, numbers, or hyphens   The first character must be a letter   Can't end with a hyphen or contain two consecutive hyphens   Example: my-cluster2 
+         */
+    var NewGlobalClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ModifyGlobalClusterResult extends js.Object {
+    var GlobalCluster: js.UndefOr[GlobalCluster] = js.undefined
   }
   
   
@@ -4363,6 +4839,23 @@ object RDSNs extends js.Object {
   }
   
   
+  trait RemoveFromGlobalClusterMessage extends js.Object {
+    /**
+         *  The Amazon Resource Name (ARN) identifying the cluster that was detached from the Aurora global database cluster. 
+         */
+    var DbClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The cluster identifier to detach from the Aurora global database cluster. 
+         */
+    var GlobalClusterIdentifier: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait RemoveFromGlobalClusterResult extends js.Object {
+    var GlobalCluster: js.UndefOr[GlobalCluster] = js.undefined
+  }
+  
+  
   trait RemoveRoleFromDBClusterMessage extends js.Object {
     /**
          * The name of the DB cluster to disassociate the IAM role from.
@@ -4959,6 +5452,10 @@ object RDSNs extends js.Object {
          * A value that specifies that the DB instance class of the DB instance uses its default processor features.
          */
     var UseDefaultProcessorFeatures: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+         *  A list of EC2 VPC security groups to associate with this DB instance.   Default: The default EC2 VPC security group for the DB subnet group's VPC. 
+         */
+    var VpcSecurityGroupIds: js.UndefOr[VpcSecurityGroupIdList] = js.undefined
   }
   
   
@@ -5236,7 +5733,11 @@ object RDSNs extends js.Object {
     /**
          * The identifier of the source DB instance from which to restore. Constraints:   Must match the identifier of an existing DB instance.  
          */
-    var SourceDBInstanceIdentifier: java.lang.String
+    var SourceDBInstanceIdentifier: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The resource ID of the source DB instance from which to restore.
+         */
+    var SourceDbiResourceId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * Specifies the storage type to be associated with the DB instance.  Valid values: standard | gp2 | io1   If you specify io1, you must also include a value for the Iops parameter.   Default: io1 if the Iops parameter is specified, otherwise standard 
          */
@@ -5262,11 +5763,27 @@ object RDSNs extends js.Object {
          *  Specifies whether (true) or not (false) the DB instance is restored from the latest backup time.  Default: false  Constraints: Can't be specified if RestoreTime parameter is provided.
          */
     var UseLatestRestorableTime: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         *  A list of EC2 VPC security groups to associate with this DB instance.   Default: The default EC2 VPC security group for the DB subnet group's VPC. 
+         */
+    var VpcSecurityGroupIds: js.UndefOr[VpcSecurityGroupIdList] = js.undefined
   }
   
   
   trait RestoreDBInstanceToPointInTimeResult extends js.Object {
     var DBInstance: js.UndefOr[DBInstance] = js.undefined
+  }
+  
+  
+  trait RestoreWindow extends js.Object {
+    /**
+         * The earliest time you can restore an instance to.
+         */
+    var EarliestTime: js.UndefOr[TStamp] = js.undefined
+    /**
+         * The latest time you can restore an instance to.
+         */
+    var LatestTime: js.UndefOr[TStamp] = js.undefined
   }
   
   
@@ -5824,6 +6341,35 @@ object RDSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.
+       */
+    def createDBClusterEndpoint(): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.
+       */
+    def createDBClusterEndpoint(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DBClusterEndpoint, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.
+       */
+    def createDBClusterEndpoint(params: CreateDBClusterEndpointMessage): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.
+       */
+    def createDBClusterEndpoint(
+      params: CreateDBClusterEndpointMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DBClusterEndpoint, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Creates a new DB cluster parameter group. Parameters in a DB cluster parameter group apply to all of the instances in a DB cluster.  A DB cluster parameter group is initially created with the default parameters for the database engine used by instances in the DB cluster. To provide custom values for any of the parameters, you must modify the group after creating it using ModifyDBClusterParameterGroup. Once you've created a DB cluster parameter group, you need to associate it with your DB cluster using ModifyDBCluster. When you associate a new DB cluster parameter group with a running DB cluster, you need to reboot the DB instances in the DB cluster without failover for the new DB cluster parameter group and associated settings to take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the DB cluster parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
        */
     def createDBClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[CreateDBClusterParameterGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -6085,6 +6631,35 @@ object RDSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateEventSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. 
+       */
+    def createGlobalCluster(): awsDashSdkLib.libRequestMod.Request[CreateGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. 
+       */
+    def createGlobalCluster(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateGlobalClusterResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. 
+       */
+    def createGlobalCluster(params: CreateGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[CreateGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *    Creates an Aurora global database spread across multiple regions. The global database contains a single primary cluster with read-write capability, and a read-only secondary cluster that receives data from the primary cluster through high-speed replication performed by the Aurora storage subsystem.   You can create a global database that is initially empty, and then add a primary cluster and a secondary cluster to it. Or you can specify an existing Aurora cluster during the create operation, and this cluster becomes the primary cluster of the global database. 
+       */
+    def createGlobalCluster(
+      params: CreateGlobalClusterMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateGlobalClusterResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Creates a new option group. You can create up to 20 option groups.
        */
     def createOptionGroup(): awsDashSdkLib.libRequestMod.Request[CreateOptionGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -6142,6 +6717,35 @@ object RDSNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
+       */
+    def deleteDBClusterEndpoint(): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
+       */
+    def deleteDBClusterEndpoint(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DBClusterEndpoint, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
+       */
+    def deleteDBClusterEndpoint(params: DeleteDBClusterEndpointMessage): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
+       */
+    def deleteDBClusterEndpoint(
+      params: DeleteDBClusterEndpointMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DBClusterEndpoint, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Deletes a specified DB cluster parameter group. The DB cluster parameter group to be deleted can't be associated with any DB clusters. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
        */
@@ -6222,21 +6826,50 @@ object RDSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteDBInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a specified DBParameterGroup. The DBParameterGroup to be deleted can't be associated with any DB instances.
+       * Deletes automated backups based on the source instance's DbiResourceId value or the restorable instance's resource ID.
+       */
+    def deleteDBInstanceAutomatedBackup(): awsDashSdkLib.libRequestMod.Request[DeleteDBInstanceAutomatedBackupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes automated backups based on the source instance's DbiResourceId value or the restorable instance's resource ID.
+       */
+    def deleteDBInstanceAutomatedBackup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteDBInstanceAutomatedBackupResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteDBInstanceAutomatedBackupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes automated backups based on the source instance's DbiResourceId value or the restorable instance's resource ID.
+       */
+    def deleteDBInstanceAutomatedBackup(params: DeleteDBInstanceAutomatedBackupMessage): awsDashSdkLib.libRequestMod.Request[DeleteDBInstanceAutomatedBackupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes automated backups based on the source instance's DbiResourceId value or the restorable instance's resource ID.
+       */
+    def deleteDBInstanceAutomatedBackup(
+      params: DeleteDBInstanceAutomatedBackupMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteDBInstanceAutomatedBackupResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteDBInstanceAutomatedBackupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.
        */
     def deleteDBParameterGroup(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a specified DBParameterGroup. The DBParameterGroup to be deleted can't be associated with any DB instances.
+       * Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.
        */
     def deleteDBParameterGroup(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a specified DBParameterGroup. The DBParameterGroup to be deleted can't be associated with any DB instances.
+       * Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.
        */
     def deleteDBParameterGroup(params: DeleteDBParameterGroupMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a specified DBParameterGroup. The DBParameterGroup to be deleted can't be associated with any DB instances.
+       * Deletes a specified DB parameter group. The DB parameter group to be deleted can't be associated with any DB instances.
        */
     def deleteDBParameterGroup(
       params: DeleteDBParameterGroupMessage,
@@ -6264,11 +6897,11 @@ object RDSNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a DBSnapshot. If the snapshot is being copied, the copy operation is terminated.  The DBSnapshot must be in the available state to be deleted. 
+       * Deletes a DB snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB snapshot must be in the available state to be deleted. 
        */
     def deleteDBSnapshot(): awsDashSdkLib.libRequestMod.Request[DeleteDBSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a DBSnapshot. If the snapshot is being copied, the copy operation is terminated.  The DBSnapshot must be in the available state to be deleted. 
+       * Deletes a DB snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB snapshot must be in the available state to be deleted. 
        */
     def deleteDBSnapshot(
       callback: js.Function2[
@@ -6278,11 +6911,11 @@ object RDSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteDBSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a DBSnapshot. If the snapshot is being copied, the copy operation is terminated.  The DBSnapshot must be in the available state to be deleted. 
+       * Deletes a DB snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB snapshot must be in the available state to be deleted. 
        */
     def deleteDBSnapshot(params: DeleteDBSnapshotMessage): awsDashSdkLib.libRequestMod.Request[DeleteDBSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a DBSnapshot. If the snapshot is being copied, the copy operation is terminated.  The DBSnapshot must be in the available state to be deleted. 
+       * Deletes a DB snapshot. If the snapshot is being copied, the copy operation is terminated.  The DB snapshot must be in the available state to be deleted. 
        */
     def deleteDBSnapshot(
       params: DeleteDBSnapshotMessage,
@@ -6342,6 +6975,35 @@ object RDSNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteEventSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. 
+       */
+    def deleteGlobalCluster(): awsDashSdkLib.libRequestMod.Request[DeleteGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. 
+       */
+    def deleteGlobalCluster(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteGlobalClusterResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. 
+       */
+    def deleteGlobalCluster(params: DeleteGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[DeleteGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. 
+       */
+    def deleteGlobalCluster(
+      params: DeleteGlobalClusterMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteGlobalClusterResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Deletes an existing option group.
        */
@@ -6450,6 +7112,35 @@ object RDSNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DBClusterBacktrackMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about endpoints for an Amazon Aurora DB cluster.
+       */
+    def describeDBClusterEndpoints(): awsDashSdkLib.libRequestMod.Request[DBClusterEndpointMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about endpoints for an Amazon Aurora DB cluster.
+       */
+    def describeDBClusterEndpoints(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DBClusterEndpointMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DBClusterEndpointMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about endpoints for an Amazon Aurora DB cluster.
+       */
+    def describeDBClusterEndpoints(params: DescribeDBClusterEndpointsMessage): awsDashSdkLib.libRequestMod.Request[DBClusterEndpointMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about endpoints for an Amazon Aurora DB cluster.
+       */
+    def describeDBClusterEndpoints(
+      params: DescribeDBClusterEndpointsMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DBClusterEndpointMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DBClusterEndpointMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        *  Returns a list of DBClusterParameterGroup descriptions. If a DBClusterParameterGroupName parameter is specified, the list will contain only the description of the specified DB cluster parameter group.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
        */
@@ -6624,6 +7315,35 @@ object RDSNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DBEngineVersionMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the DescribeDBInstanceAutomatedBackups and DescribeDBInstances operations. All parameters are optional.
+       */
+    def describeDBInstanceAutomatedBackups(): awsDashSdkLib.libRequestMod.Request[DBInstanceAutomatedBackupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the DescribeDBInstanceAutomatedBackups and DescribeDBInstances operations. All parameters are optional.
+       */
+    def describeDBInstanceAutomatedBackups(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DBInstanceAutomatedBackupMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DBInstanceAutomatedBackupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the DescribeDBInstanceAutomatedBackups and DescribeDBInstances operations. All parameters are optional.
+       */
+    def describeDBInstanceAutomatedBackups(params: DescribeDBInstanceAutomatedBackupsMessage): awsDashSdkLib.libRequestMod.Request[DBInstanceAutomatedBackupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the DescribeDBInstanceAutomatedBackups and DescribeDBInstances operations. All parameters are optional.
+       */
+    def describeDBInstanceAutomatedBackups(
+      params: DescribeDBInstanceAutomatedBackupsMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DBInstanceAutomatedBackupMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DBInstanceAutomatedBackupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Returns information about provisioned RDS instances. This API supports pagination.
        */
@@ -6994,6 +7714,35 @@ object RDSNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ EventsMessage, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[EventsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+       */
+    def describeGlobalClusters(): awsDashSdkLib.libRequestMod.Request[GlobalClustersMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+       */
+    def describeGlobalClusters(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GlobalClustersMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GlobalClustersMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+       */
+    def describeGlobalClusters(params: DescribeGlobalClustersMessage): awsDashSdkLib.libRequestMod.Request[GlobalClustersMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+       */
+    def describeGlobalClusters(
+      params: DescribeGlobalClustersMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GlobalClustersMessage, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GlobalClustersMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Describes all available options.
        */
     def describeOptionGroupOptions(): awsDashSdkLib.libRequestMod.Request[OptionGroupOptionsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -7355,6 +8104,35 @@ object RDSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
+       */
+    def modifyDBClusterEndpoint(): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
+       */
+    def modifyDBClusterEndpoint(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DBClusterEndpoint, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
+       */
+    def modifyDBClusterEndpoint(params: ModifyDBClusterEndpointMessage): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
+       */
+    def modifyDBClusterEndpoint(
+      params: ModifyDBClusterEndpointMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DBClusterEndpoint, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DBClusterEndpoint, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        *  Modifies the parameters of a DB cluster parameter group. To modify more than one parameter, submit a list of the following: ParameterName, ParameterValue, and ApplyMethod. A maximum of 20 parameters can be modified in a single request.  For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   Changes to dynamic parameters are applied immediately. Changes to static parameters require a reboot without failover to the DB cluster associated with the parameter group before the change can take effect.   After you create a DB cluster parameter group, you should wait at least 5 minutes before creating your first DB cluster that uses that DB cluster parameter group as the default parameter group. This allows Amazon RDS to fully complete the create action before the parameter group is used as the default for a new DB cluster. This is especially important for parameters that are critical when creating the default database for a DB cluster, such as the character set for the default database defined by the character_set_database parameter. You can use the Parameter Groups option of the Amazon RDS console or the DescribeDBClusterParameters command to verify that your DB cluster parameter group has been created or modified. 
        */
     def modifyDBClusterParameterGroup(): awsDashSdkLib.libRequestMod.Request[DBClusterParameterGroupNameMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -7587,6 +8365,35 @@ object RDSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyEventSubscriptionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+       */
+    def modifyGlobalCluster(): awsDashSdkLib.libRequestMod.Request[ModifyGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+       */
+    def modifyGlobalCluster(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyGlobalClusterResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+       */
+    def modifyGlobalCluster(params: ModifyGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[ModifyGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. 
+       */
+    def modifyGlobalCluster(
+      params: ModifyGlobalClusterMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyGlobalClusterResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Modifies an existing option group.
        */
     def modifyOptionGroup(): awsDashSdkLib.libRequestMod.Request[ModifyOptionGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -7731,6 +8538,35 @@ object RDSNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[RebootDBInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. 
+       */
+    def removeFromGlobalCluster(): awsDashSdkLib.libRequestMod.Request[RemoveFromGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. 
+       */
+    def removeFromGlobalCluster(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ RemoveFromGlobalClusterResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[RemoveFromGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. 
+       */
+    def removeFromGlobalCluster(params: RemoveFromGlobalClusterMessage): awsDashSdkLib.libRequestMod.Request[RemoveFromGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Detaches an Aurora secondary cluster from an Aurora global database cluster. The cluster becomes a standalone cluster with read-write capability instead of being read-only and receiving data from a primary cluster in a different region. 
+       */
+    def removeFromGlobalCluster(
+      params: RemoveFromGlobalClusterMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ RemoveFromGlobalClusterResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[RemoveFromGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Disassociates an Identity and Access Management (IAM) role from an Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf  in the Amazon Aurora User Guide.
        */
@@ -8093,11 +8929,11 @@ object RDSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB Instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
+       *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
        */
     def startDBInstance(): awsDashSdkLib.libRequestMod.Request[StartDBInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB Instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
+       *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
        */
     def startDBInstance(
       callback: js.Function2[
@@ -8107,11 +8943,11 @@ object RDSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartDBInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB Instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
+       *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
        */
     def startDBInstance(params: StartDBInstanceMessage): awsDashSdkLib.libRequestMod.Request[StartDBInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB Instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
+       *  Starts an Amazon RDS DB instance that was stopped using the AWS console, the stop-db-instance AWS CLI command, or the StopDBInstance action.  For more information, see  Starting an Amazon RDS DB instance That Was Previously Stopped in the Amazon RDS User Guide.    This command doesn't apply to Aurora MySQL and Aurora PostgreSQL. For Aurora DB clusters, use StartDBCluster instead.  
        */
     def startDBInstance(
       params: StartDBInstanceMessage,
@@ -8429,6 +9265,7 @@ object RDSNs extends js.Object {
   type CertificateList = js.Array[Certificate]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DBClusterBacktrackList = js.Array[DBClusterBacktrack]
+  type DBClusterEndpointList = js.Array[DBClusterEndpoint]
   type DBClusterList = js.Array[DBCluster]
   type DBClusterMemberList = js.Array[DBClusterMember]
   type DBClusterOptionGroupMemberships = js.Array[DBClusterOptionGroupStatus]
@@ -8437,6 +9274,7 @@ object RDSNs extends js.Object {
   type DBClusterSnapshotAttributeList = js.Array[DBClusterSnapshotAttribute]
   type DBClusterSnapshotList = js.Array[DBClusterSnapshot]
   type DBEngineVersionList = js.Array[DBEngineVersion]
+  type DBInstanceAutomatedBackupList = js.Array[DBInstanceAutomatedBackup]
   type DBInstanceList = js.Array[DBInstance]
   type DBInstanceStatusInfoList = js.Array[DBInstanceStatusInfo]
   type DBParameterGroupList = js.Array[DBParameterGroup]
@@ -8460,6 +9298,8 @@ object RDSNs extends js.Object {
   type EventSubscriptionsList = js.Array[EventSubscription]
   type FilterList = js.Array[Filter]
   type FilterValueList = js.Array[java.lang.String]
+  type GlobalClusterList = js.Array[GlobalCluster]
+  type GlobalClusterMemberList = js.Array[GlobalClusterMember]
   type IPRangeList = js.Array[IPRange]
   type Integer = scala.Double
   type IntegerOptional = scala.Double
@@ -8489,6 +9329,7 @@ object RDSNs extends js.Object {
   type ReadReplicaDBClusterIdentifierList = js.Array[java.lang.String]
   type ReadReplicaDBInstanceIdentifierList = js.Array[java.lang.String]
   type ReadReplicaIdentifierList = js.Array[java.lang.String]
+  type ReadersArnList = js.Array[java.lang.String]
   type RecurringChargeList = js.Array[RecurringCharge]
   type ReservedDBInstanceList = js.Array[ReservedDBInstance]
   type ReservedDBInstancesOfferingList = js.Array[ReservedDBInstancesOffering]
@@ -8496,6 +9337,7 @@ object RDSNs extends js.Object {
   type SourceRegionList = js.Array[SourceRegion]
   type SourceType = awsDashSdkLib.awsDashSdkLibStrings.`db-instance` | awsDashSdkLib.awsDashSdkLibStrings.`db-parameter-group` | awsDashSdkLib.awsDashSdkLibStrings.`db-security-group` | awsDashSdkLib.awsDashSdkLibStrings.`db-snapshot` | awsDashSdkLib.awsDashSdkLibStrings.`db-cluster` | awsDashSdkLib.awsDashSdkLibStrings.`db-cluster-snapshot` | java.lang.String
   type String = java.lang.String
+  type StringList = js.Array[java.lang.String]
   type SubnetIdentifierList = js.Array[java.lang.String]
   type SubnetList = js.Array[Subnet]
   type SupportedCharacterSetsList = js.Array[CharacterSet]

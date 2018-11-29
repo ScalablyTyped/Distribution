@@ -132,10 +132,13 @@ object Pkcs11JsNsMembers extends js.Object {
   val CKD_SHA256_KDF: scala.Double = js.native
   val CKD_SHA384_KDF: scala.Double = js.native
   val CKD_SHA512_KDF: scala.Double = js.native
+  val CKF_CLOCK_ON_TOKEN: scala.Double = js.native
   val CKF_DECRYPT: scala.Double = js.native
   val CKF_DERIVE: scala.Double = js.native
   val CKF_DIGEST: scala.Double = js.native
+  val CKF_DUAL_CRYPTO_OPERATIONS: scala.Double = js.native
   val CKF_ENCRYPT: scala.Double = js.native
+  val CKF_ERROR_STATE: scala.Double = js.native
   val CKF_GENERATE: scala.Double = js.native
   val CKF_GENERATE_KEY_PAIR: scala.Double = js.native
   //#endregion
@@ -144,17 +147,35 @@ object Pkcs11JsNsMembers extends js.Object {
   //#endregion
   // Initialize flags
   val CKF_LIBRARY_CANT_CREATE_OS_THREADS: scala.Double = js.native
+  val CKF_LOGIN_REQUIRED: scala.Double = js.native
   val CKF_OS_LOCKING_OK: scala.Double = js.native
+  val CKF_PROTECTED_AUTHENTICATION_PATH: scala.Double = js.native
+  val CKF_RESTORE_KEY_NOT_NEEDED: scala.Double = js.native
+  //#endregion
+  //#region Token Information Flags
+  val CKF_RNG: scala.Double = js.native
   //#endregion
   //#region Session flags
   val CKF_RW_SESSION: scala.Double = js.native
+  val CKF_SECONDARY_AUTHENTICATION: scala.Double = js.native
   val CKF_SERIAL_SESSION: scala.Double = js.native
   val CKF_SIGN: scala.Double = js.native
   val CKF_SIGN_RECOVER: scala.Double = js.native
+  val CKF_SO_PIN_COUNT_LOW: scala.Double = js.native
+  val CKF_SO_PIN_FINAL_TRY: scala.Double = js.native
+  val CKF_SO_PIN_LOCKED: scala.Double = js.native
+  val CKF_SO_PIN_TO_BE_CHANGED: scala.Double = js.native
+  val CKF_TOKEN_INITIALIZED: scala.Double = js.native
   val CKF_UNWRAP: scala.Double = js.native
+  val CKF_USER_PIN_COUNT_LOW: scala.Double = js.native
+  val CKF_USER_PIN_FINAL_TRY: scala.Double = js.native
+  val CKF_USER_PIN_INITIALIZED: scala.Double = js.native
+  val CKF_USER_PIN_LOCKED: scala.Double = js.native
+  val CKF_USER_PIN_TO_BE_CHANGED: scala.Double = js.native
   val CKF_VERIFY: scala.Double = js.native
   val CKF_VERIFY_RECOVER: scala.Double = js.native
   val CKF_WRAP: scala.Double = js.native
+  val CKF_WRITE_PROTECTED: scala.Double = js.native
   //#endregion
   //#region MGFs
   val CKG_MGF1_SHA1: scala.Double = js.native

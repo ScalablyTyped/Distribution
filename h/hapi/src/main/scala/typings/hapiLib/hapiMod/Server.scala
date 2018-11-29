@@ -24,7 +24,7 @@ class Server () extends js.Object {
   /**
        * Server Auth: properties and methods
        */
-  var auth: ServerAuth = js.native
+  val auth: ServerAuth = js.native
   /**
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servercacheoptions)
        */
@@ -305,7 +305,7 @@ class Server () extends js.Object {
   ): scala.Unit = js.native
   /**
        * Used within a plugin to declare a required dependency on other plugins where:
-       * @param dependencies - a single string or an array of plugin name strings which must be registered in order for this plugin to operate. Plugins listed must be registered before the server is
+       * @param dependencies - plugins which must be registered in order for this plugin to operate. Plugins listed must be registered before the server is
        *     initialized or started.
        * @param after - (optional) a function that is called after all the specified dependencies have been registered and before the server starts. The function is only called if the server is
        *     initialized or started. The function signature is async function(server) where: server - the server the dependency() method was called on.
@@ -315,10 +315,10 @@ class Server () extends js.Object {
        * The method does not provide version dependency which should be implemented using npm peer dependencies.
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverdependencydependencies-after)
        */
-  def dependency(dependencies: java.lang.String): scala.Unit = js.native
+  def dependency(dependencies: Dependencies): scala.Unit = js.native
   /**
        * Used within a plugin to declare a required dependency on other plugins where:
-       * @param dependencies - a single string or an array of plugin name strings which must be registered in order for this plugin to operate. Plugins listed must be registered before the server is
+       * @param dependencies - plugins which must be registered in order for this plugin to operate. Plugins listed must be registered before the server is
        *     initialized or started.
        * @param after - (optional) a function that is called after all the specified dependencies have been registered and before the server starts. The function is only called if the server is
        *     initialized or started. The function signature is async function(server) where: server - the server the dependency() method was called on.
@@ -329,36 +329,7 @@ class Server () extends js.Object {
        * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverdependencydependencies-after)
        */
   def dependency(
-    dependencies: java.lang.String,
-    after: js.Function1[/* server */ this.type, stdLib.Promise[scala.Unit]]
-  ): scala.Unit = js.native
-  /**
-       * Used within a plugin to declare a required dependency on other plugins where:
-       * @param dependencies - a single string or an array of plugin name strings which must be registered in order for this plugin to operate. Plugins listed must be registered before the server is
-       *     initialized or started.
-       * @param after - (optional) a function that is called after all the specified dependencies have been registered and before the server starts. The function is only called if the server is
-       *     initialized or started. The function signature is async function(server) where: server - the server the dependency() method was called on.
-       * @return Return value: none.
-       * The after method is identical to setting a server extension point on 'onPreStart'.
-       * If a circular dependency is detected, an exception is thrown (e.g. two plugins each has an after function to be called after the other).
-       * The method does not provide version dependency which should be implemented using npm peer dependencies.
-       * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverdependencydependencies-after)
-       */
-  def dependency(dependencies: js.Array[java.lang.String]): scala.Unit = js.native
-  /**
-       * Used within a plugin to declare a required dependency on other plugins where:
-       * @param dependencies - a single string or an array of plugin name strings which must be registered in order for this plugin to operate. Plugins listed must be registered before the server is
-       *     initialized or started.
-       * @param after - (optional) a function that is called after all the specified dependencies have been registered and before the server starts. The function is only called if the server is
-       *     initialized or started. The function signature is async function(server) where: server - the server the dependency() method was called on.
-       * @return Return value: none.
-       * The after method is identical to setting a server extension point on 'onPreStart'.
-       * If a circular dependency is detected, an exception is thrown (e.g. two plugins each has an after function to be called after the other).
-       * The method does not provide version dependency which should be implemented using npm peer dependencies.
-       * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverdependencydependencies-after)
-       */
-  def dependency(
-    dependencies: js.Array[java.lang.String],
+    dependencies: Dependencies,
     after: js.Function1[/* server */ this.type, stdLib.Promise[scala.Unit]]
   ): scala.Unit = js.native
   /**

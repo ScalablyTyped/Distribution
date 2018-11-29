@@ -12,6 +12,10 @@ sealed trait EmitHint extends js.Object
 @js.native
 object EmitHint extends js.Object {
   @js.native
+  sealed trait EmbeddedStatement
+    extends typescriptLib.typescriptMod.tsNs.EmitHint
+  
+  @js.native
   sealed trait Expression
     extends typescriptLib.typescriptMod.tsNs.EmitHint
   

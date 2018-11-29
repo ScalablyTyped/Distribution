@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait CommonNsisOptions extends js.Object {
   /**
-       * See [GUID vs Application Name](../configuration/nsis.md#guid-vs-application-name).
+       * See [GUID vs Application Name](../configuration/nsis#guid-vs-application-name).
        */
   val guid: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

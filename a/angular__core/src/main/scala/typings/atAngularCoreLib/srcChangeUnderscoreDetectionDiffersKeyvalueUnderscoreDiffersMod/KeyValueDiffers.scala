@@ -19,6 +19,8 @@ class KeyValueDiffers protected () extends js.Object {
 @JSImport("@angular/core/src/change_detection/differs/keyvalue_differs", "KeyValueDiffers")
 @js.native
 object KeyValueDiffers extends js.Object {
+  /** @nocollapse */
+  var ngInjectableDef: scala.Nothing = js.native
   def create[S](
     factories: js.Array[
       atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDifferFactory

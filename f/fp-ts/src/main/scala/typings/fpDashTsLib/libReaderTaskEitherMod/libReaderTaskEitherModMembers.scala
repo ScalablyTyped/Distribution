@@ -24,11 +24,6 @@ object libReaderTaskEitherModMembers extends js.Object {
     ReaderTaskEither[js.Any, js.Any, js.Any]
   ] = js.native
   val fromLeft: js.Function1[/* l */ js.Any, ReaderTaskEither[js.Any, js.Any, js.Any]] = js.native
-  val fromPredicate: js.Function2[
-    /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    /* whenFalse */ js.Function1[/* a */ js.Any, js.Any], 
-    js.Function1[/* a */ js.Any, ReaderTaskEither[js.Any, js.Any, js.Any]]
-  ] = js.native
   val fromReader: js.Function1[
     /* fa */ fpDashTsLib.libReaderMod.Reader[js.Any, js.Any], 
     ReaderTaskEither[js.Any, js.Any, js.Any]
@@ -48,15 +43,19 @@ object libReaderTaskEitherModMembers extends js.Object {
       ReaderTaskEither[js.Any, js.Any, js.Any]
     ]
   ] = js.native
-  val readerTaskEither: fpDashTsLib.libMonadMod.Monad3[URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[URI] with fpDashTsLib.libAltMod.Alt3[URI] = js.native
+  val readerTaskEither: fpDashTsLib.libMonadMod.Monad3[URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[URI] with fpDashTsLib.libAltMod.Alt3[URI] with fpDashTsLib.libMonadIOMod.MonadIO3[URI] with fpDashTsLib.libMonadTaskMod.MonadTask3[URI] = js.native
+  val readerTaskEitherSeq: fpDashTsLib.libMonadMod.Monad3[URI] with fpDashTsLib.libBifunctorMod.Bifunctor3[URI] with fpDashTsLib.libAltMod.Alt3[URI] with fpDashTsLib.libMonadIOMod.MonadIO3[URI] with fpDashTsLib.libMonadTaskMod.MonadTask3[URI] = js.native
   val right: js.Function1[
     /* fa */ fpDashTsLib.libTaskMod.Task[js.Any], 
     ReaderTaskEither[js.Any, js.Any, js.Any]
   ] = js.native
   val tryCatch: js.Function2[
     /* f */ js.Function1[/* e */ js.Any, stdLib.Promise[js.Any]], 
-    /* onrejected */ js.Function1[/* reason */ js.Object, js.Any], 
+    /* onrejected */ js.Function2[/* reason */ js.Any, /* e */ js.Any, js.Any], 
     ReaderTaskEither[js.Any, js.Any, js.Any]
   ] = js.native
+  def fromPredicate[E, L, A](predicate: fpDashTsLib.libFunctionMod.Predicate[A], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, ReaderTaskEither[E, L, A]] = js.native
+  @JSName("fromPredicate")
+  def fromPredicate_ELABA[E, L, A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, ReaderTaskEither[E, L, B]] = js.native
 }
 

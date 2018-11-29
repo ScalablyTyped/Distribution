@@ -13,6 +13,6 @@ trait SetTypings extends ProjectResponse {
   val typeAcquisition: typescriptLib.typescriptMod.tsNs.TypeAcquisition
   @JSName("typings")
   val `typings_`: js.Array[java.lang.String]
-  val unresolvedImports: SortedReadonlyArray[java.lang.String]
+  val unresolvedImports: typescriptLib.typescriptMod.tsNs.SortedReadonlyArray[java.lang.String]
 }
 

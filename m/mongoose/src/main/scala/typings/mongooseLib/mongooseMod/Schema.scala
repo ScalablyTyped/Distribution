@@ -80,6 +80,13 @@ trait Schema
        */
   def plugin(plugin: js.Function1[/* schema */ this.type, scala.Unit]): this.type = js.native
   def plugin[T](plugin: js.Function2[/* schema */ this.type, /* options */ T, scala.Unit], opts: T): this.type = js.native
+  /**
+       * Defines a post hook for the document
+       * Post hooks fire on the event emitted from document instances of Models compiled
+       *   from this schema.
+       * @param method name of the method to hook
+       * @param fn callback
+       */
   def post[T /* <: Document */](
     method: java.lang.String,
     fn: js.Function2[
@@ -88,13 +95,6 @@ trait Schema
       scala.Unit
     ]
   ): this.type = js.native
-  /**
-       * Defines a post hook for the document
-       * Post hooks fire on the event emitted from document instances of Models compiled
-       *   from this schema.
-       * @param method name of the method to hook
-       * @param fn callback
-       */
   def post[T /* <: Document */](
     method: java.lang.String,
     fn: js.Function3[

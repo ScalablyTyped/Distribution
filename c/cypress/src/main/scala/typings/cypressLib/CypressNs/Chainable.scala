@@ -40270,7 +40270,7 @@ trait Chainable[Subject] extends js.Object {
        *    cy.screenshot()
        *    cy.get(".post").screenshot()
        */
-  def screenshot(options: stdLib.Partial[Loggable with Timeoutable]): Chainable[scala.Null] = js.native
+  def screenshot(options: stdLib.Partial[Loggable with Timeoutable with ScreenshotOptions]): Chainable[scala.Null] = js.native
   /**
        * Scroll an element into view.
        *

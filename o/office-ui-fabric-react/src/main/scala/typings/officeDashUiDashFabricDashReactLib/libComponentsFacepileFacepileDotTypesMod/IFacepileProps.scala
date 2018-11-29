@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IFacepileProps
-  extends reactLib.reactMod.ReactNs.Props[
+  extends reactLib.reactMod.ReactNs.ClassAttributes[
       officeDashUiDashFabricDashReactLib.libComponentsFacepileFacepileDotBaseMod.FacepileBase
     ] {
   /** Button properties for the add face button */
@@ -17,8 +17,8 @@ trait IFacepileProps
   /** ARIA label for persona list */
   var ariaDescription: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Deprecated at v0.70, use 'overflowButtonProps' instead;
-       * @deprecated
+       * Deprecated at v0.70, use `overflowButtonProps` instead.
+       * @deprecated Use `overflowButtonProps` instead.
        */
   var chevronButtonProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButtonProps

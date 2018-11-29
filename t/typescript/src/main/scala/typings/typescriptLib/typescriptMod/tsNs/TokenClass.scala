@@ -12,6 +12,10 @@ sealed trait TokenClass extends js.Object
 @js.native
 object TokenClass extends js.Object {
   @js.native
+  sealed trait BigIntLiteral
+    extends typescriptLib.typescriptMod.tsNs.TokenClass
+  
+  @js.native
   sealed trait Comment
     extends typescriptLib.typescriptMod.tsNs.TokenClass
   

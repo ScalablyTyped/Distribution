@@ -37,10 +37,31 @@ object nodeDashForgeLibStrings {
   sealed trait `DES-ECB` extends js.Object
   
   @js.native
+  sealed trait NONE extends js.Object
+  
+  @js.native
+  sealed trait RAW extends js.Object
+  
+  @js.native
+  sealed trait `RSA-OAEP` extends js.Object
+  
+  @js.native
+  sealed trait `RSAES-PKCS1-V1_5` extends js.Object
+  
+  @js.native
+  sealed trait `RSASSA-PKCS1-V1_5` extends js.Object
+  
+  @js.native
   sealed trait binary extends js.Object
   
   @js.native
   sealed trait hex extends js.Object
+  
+  @js.native
+  sealed trait raw extends js.Object
+  
+  @js.native
+  sealed trait utf8 extends js.Object
   
   def `3DES-CBC`: `3DES-CBC` = "3DES-CBC".asInstanceOf[`3DES-CBC`]
   def `3DES-ECB`: `3DES-ECB` = "3DES-ECB".asInstanceOf[`3DES-ECB`]
@@ -52,7 +73,14 @@ object nodeDashForgeLibStrings {
   def `AES-OFB`: `AES-OFB` = "AES-OFB".asInstanceOf[`AES-OFB`]
   def `DES-CBC`: `DES-CBC` = "DES-CBC".asInstanceOf[`DES-CBC`]
   def `DES-ECB`: `DES-ECB` = "DES-ECB".asInstanceOf[`DES-ECB`]
+  def NONE: NONE = "NONE".asInstanceOf[NONE]
+  def RAW: RAW = "RAW".asInstanceOf[RAW]
+  def `RSA-OAEP`: `RSA-OAEP` = "RSA-OAEP".asInstanceOf[`RSA-OAEP`]
+  def `RSAES-PKCS1-V1_5`: `RSAES-PKCS1-V1_5` = "RSAES-PKCS1-V1_5".asInstanceOf[`RSAES-PKCS1-V1_5`]
+  def `RSASSA-PKCS1-V1_5`: `RSASSA-PKCS1-V1_5` = "RSASSA-PKCS1-V1_5".asInstanceOf[`RSASSA-PKCS1-V1_5`]
   def binary: binary = "binary".asInstanceOf[binary]
   def hex: hex = "hex".asInstanceOf[hex]
+  def raw: raw = "raw".asInstanceOf[raw]
+  def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
 

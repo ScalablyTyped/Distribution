@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "ex-react-native-i18n"
-version := "0.0-dt-20180910Z-d8e50c"
+version := "0.0-dt-20180910Z-2f513d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "i18n-js" % "3.0-dt-20180910Z-e27345",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "i18n-js" % "3.0-dt-20180910Z-59b918",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -1463,13 +1463,25 @@ object MediaLiveNs extends js.Object {
   }
   
   
+  trait FollowModeScheduleActionStartSettings extends js.Object {
+    /**
+         * Identifies whether this action starts relative to the start or relative to the end of the reference action.
+         */
+    var FollowPoint: FollowPoint
+    /**
+         * The action name of another action that this one refers to.
+         */
+    var ReferenceActionName: __string
+  }
+  
+  
   trait GlobalConfiguration extends js.Object {
     /**
          * Value to set the initial audio gain for the Live Event.
          */
     var InitialAudioGain: js.UndefOr[__integerMinNegative60Max60] = js.undefined
     /**
-         * Indicates the action to take when the input completes (e.g. end-of-file). Options include looping on the input (via "switchAndLoopInputs") or transcoding black / color / slate images per the "Input Loss Behavior" configuration (via "none").
+         * Indicates the action to take when the current input completes (e.g. end-of-file). When switchAndLoopInputs is configured the encoder will restart at the beginning of the first input.  When "none" is configured the encoder will transcode either black, a solid color, or a user specified slate images per the "Input Loss Behavior" configuration until the next input switch occurs (which is controlled through the Channel Schedule API).
          */
     var InputEndAction: js.UndefOr[GlobalConfigurationInputEndAction] = js.undefined
     /**
@@ -1826,6 +1838,10 @@ object MediaLiveNs extends js.Object {
          */
     var ProgramDateTimePeriod: js.UndefOr[__integerMin0Max3600] = js.undefined
     /**
+         * When set to "enabled", includes the media playlists from both pipelines in the master manifest (.m3u8) file.
+         */
+    var RedundantManifest: js.UndefOr[HlsRedundantManifest] = js.undefined
+    /**
          * Length of MPEG-2 Transport Stream segments to create (in seconds). Note that segments will end on the next keyframe after this number of seconds, so actual segment length may be longer.
          */
     var SegmentLength: js.UndefOr[__integerMin1] = js.undefined
@@ -1985,6 +2001,10 @@ object MediaLiveNs extends js.Object {
   
   
   trait InputAttachment extends js.Object {
+    /**
+         * User-specified name for the attachment. This is required if the user wants to use this input in an input switch action.
+         */
+    var InputAttachmentName: js.UndefOr[__string] = js.undefined
     /**
          * The ID of the input
          */
@@ -2194,6 +2214,14 @@ object MediaLiveNs extends js.Object {
          * Input resolution, categorized coarsely
          */
     var Resolution: js.UndefOr[InputResolution] = js.undefined
+  }
+  
+  
+  trait InputSwitchScheduleActionSettings extends js.Object {
+    /**
+         * The name of the input attachment that should be switched to by this action.
+         */
+    var InputAttachmentNameReference: __string
   }
   
   
@@ -3059,6 +3087,13 @@ object MediaLiveNs extends js.Object {
          */
     var CaptionData: js.UndefOr[RtmpCaptionData] = js.undefined
     /**
+         * Controls the behavior of this RTMP group if input becomes unavailable.
+    
+    - emitOutput: Emit a slate until input returns.
+    - pauseOutput: Stop transmitting data until input returns. This does not close the underlying RTMP connection.
+         */
+    var InputLossAction: js.UndefOr[InputLossActionForRtmpOut] = js.undefined
+    /**
          * If a streaming output fails, number of seconds to wait until a restart is initiated. A value of 0 means never restart.
          */
     var RestartDelay: js.UndefOr[__integerMin0] = js.undefined
@@ -3103,6 +3138,10 @@ object MediaLiveNs extends js.Object {
   
   trait ScheduleActionSettings extends js.Object {
     /**
+         * Settings to switch an input
+         */
+    var InputSwitchSettings: js.UndefOr[InputSwitchScheduleActionSettings] = js.undefined
+    /**
          * Settings for SCTE-35 return_to_network message
          */
     var Scte35ReturnToNetworkSettings: js.UndefOr[Scte35ReturnToNetworkScheduleActionSettings] = js.undefined
@@ -3130,6 +3169,10 @@ object MediaLiveNs extends js.Object {
          * Holds the start time for the action.
          */
     var FixedModeScheduleActionStartSettings: js.UndefOr[FixedModeScheduleActionStartSettings] = js.undefined
+    /**
+         * Specifies an action to follow for scheduling this action.
+         */
+    var FollowModeScheduleActionStartSettings: js.UndefOr[FollowModeScheduleActionStartSettings] = js.undefined
   }
   
   
@@ -4521,6 +4564,7 @@ object MediaLiveNs extends js.Object {
   type EmbeddedScte20Detection = awsDashSdkLib.awsDashSdkLibStrings.AUTO | awsDashSdkLib.awsDashSdkLibStrings.OFF | java.lang.String
   type FecOutputIncludeFec = awsDashSdkLib.awsDashSdkLibStrings.COLUMN | awsDashSdkLib.awsDashSdkLibStrings.COLUMN_AND_ROW | java.lang.String
   type FixedAfd = awsDashSdkLib.awsDashSdkLibStrings.AFD_0000 | awsDashSdkLib.awsDashSdkLibStrings.AFD_0010 | awsDashSdkLib.awsDashSdkLibStrings.AFD_0011 | awsDashSdkLib.awsDashSdkLibStrings.AFD_0100 | awsDashSdkLib.awsDashSdkLibStrings.AFD_1000 | awsDashSdkLib.awsDashSdkLibStrings.AFD_1001 | awsDashSdkLib.awsDashSdkLibStrings.AFD_1010 | awsDashSdkLib.awsDashSdkLibStrings.AFD_1011 | awsDashSdkLib.awsDashSdkLibStrings.AFD_1101 | awsDashSdkLib.awsDashSdkLibStrings.AFD_1110 | awsDashSdkLib.awsDashSdkLibStrings.AFD_1111 | java.lang.String
+  type FollowPoint = awsDashSdkLib.awsDashSdkLibStrings.END | awsDashSdkLib.awsDashSdkLibStrings.START | java.lang.String
   type GlobalConfigurationInputEndAction = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.SWITCH_AND_LOOP_INPUTS | java.lang.String
   type GlobalConfigurationLowFramerateInputs = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
   type GlobalConfigurationOutputTimingSource = awsDashSdkLib.awsDashSdkLibStrings.INPUT_CLOCK | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM_CLOCK | java.lang.String
@@ -4557,6 +4601,7 @@ object MediaLiveNs extends js.Object {
   type HlsMode = awsDashSdkLib.awsDashSdkLibStrings.LIVE | awsDashSdkLib.awsDashSdkLibStrings.VOD | java.lang.String
   type HlsOutputSelection = awsDashSdkLib.awsDashSdkLibStrings.MANIFESTS_AND_SEGMENTS | awsDashSdkLib.awsDashSdkLibStrings.SEGMENTS_ONLY | java.lang.String
   type HlsProgramDateTime = awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | java.lang.String
+  type HlsRedundantManifest = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
   type HlsSegmentationMode = awsDashSdkLib.awsDashSdkLibStrings.USE_INPUT_SEGMENTATION | awsDashSdkLib.awsDashSdkLibStrings.USE_SEGMENT_DURATION | java.lang.String
   type HlsStreamInfResolution = awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | java.lang.String
   type HlsTimedMetadataId3Frame = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.PRIV | awsDashSdkLib.awsDashSdkLibStrings.TDRL | java.lang.String
@@ -4568,6 +4613,7 @@ object MediaLiveNs extends js.Object {
   type InputFilter = awsDashSdkLib.awsDashSdkLibStrings.AUTO | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.FORCED | java.lang.String
   type InputLossActionForHlsOut = awsDashSdkLib.awsDashSdkLibStrings.EMIT_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.PAUSE_OUTPUT | java.lang.String
   type InputLossActionForMsSmoothOut = awsDashSdkLib.awsDashSdkLibStrings.EMIT_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.PAUSE_OUTPUT | java.lang.String
+  type InputLossActionForRtmpOut = awsDashSdkLib.awsDashSdkLibStrings.EMIT_OUTPUT | awsDashSdkLib.awsDashSdkLibStrings.PAUSE_OUTPUT | java.lang.String
   type InputLossActionForUdpOut = awsDashSdkLib.awsDashSdkLibStrings.DROP_PROGRAM | awsDashSdkLib.awsDashSdkLibStrings.DROP_TS | awsDashSdkLib.awsDashSdkLibStrings.EMIT_PROGRAM | java.lang.String
   type InputLossImageType = awsDashSdkLib.awsDashSdkLibStrings.COLOR | awsDashSdkLib.awsDashSdkLibStrings.SLATE | java.lang.String
   type InputMaximumBitrate = awsDashSdkLib.awsDashSdkLibStrings.MAX_10_MBPS | awsDashSdkLib.awsDashSdkLibStrings.MAX_20_MBPS | awsDashSdkLib.awsDashSdkLibStrings.MAX_50_MBPS | java.lang.String
@@ -4575,7 +4621,7 @@ object MediaLiveNs extends js.Object {
   type InputSecurityGroupState = awsDashSdkLib.awsDashSdkLibStrings.IDLE | awsDashSdkLib.awsDashSdkLibStrings.IN_USE | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
   type InputSourceEndBehavior = awsDashSdkLib.awsDashSdkLibStrings.CONTINUE | awsDashSdkLib.awsDashSdkLibStrings.LOOP | java.lang.String
   type InputState = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.DETACHED | awsDashSdkLib.awsDashSdkLibStrings.ATTACHED | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
-  type InputType = awsDashSdkLib.awsDashSdkLibStrings.UDP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTMP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTMP_PULL | awsDashSdkLib.awsDashSdkLibStrings.URL_PULL | java.lang.String
+  type InputType = awsDashSdkLib.awsDashSdkLibStrings.UDP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTMP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTMP_PULL | awsDashSdkLib.awsDashSdkLibStrings.URL_PULL | awsDashSdkLib.awsDashSdkLibStrings.MP4_FILE | java.lang.String
   type LogLevel = awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.WARNING | awsDashSdkLib.awsDashSdkLibStrings.INFO | awsDashSdkLib.awsDashSdkLibStrings.DEBUG | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
   type M2tsAbsentInputAudioBehavior = awsDashSdkLib.awsDashSdkLibStrings.DROP | awsDashSdkLib.awsDashSdkLibStrings.ENCODE_SILENCE | java.lang.String
   type M2tsArib = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String

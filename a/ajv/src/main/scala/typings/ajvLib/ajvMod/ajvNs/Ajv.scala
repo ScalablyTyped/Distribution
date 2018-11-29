@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Ajv extends js.Object {
-  var errors: js.UndefOr[js.Array[ErrorObject]] = js.native
+  var errors: js.UndefOr[js.Array[ErrorObject] | scala.Null] = js.native
   /**
       * Add custom format
       * @param {string} name format name

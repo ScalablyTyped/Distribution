@@ -10,11 +10,20 @@ trait PrettyOptions extends js.Object {
   /**
            * If set to true, will add color information to the formatted output message. Default: `false`.
            */
-  var forceColor: js.UndefOr[scala.Boolean] = js.undefined
+  var colorize: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * A custom function to format the line, is passed the JSON object as an argument and should return a string value.
+           * Appends carriage return and line feed, instead of just a line feed, to the formatted log line.
            */
-  var formatter: js.UndefOr[js.Function1[/* log */ LogDescriptor, java.lang.String]] = js.undefined
+  var crlf: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+           * Define the log keys that are associated with error like objects. Default: ["err", "error"]
+           */
+  var errorLikeObjectKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+           *  When formatting an error object, display this list of properties.
+           *  The list should be a comma separated list of properties. Default: ''
+           */
+  var errorProps: js.UndefOr[java.lang.String] = js.undefined
   /**
            * If set to true, it will print the name of the log level as the first field in the log line. Default: `false`.
            */
@@ -24,8 +33,15 @@ trait PrettyOptions extends js.Object {
            */
   var messageKey: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * If set to true, it will only covert the unix timestamp to ISO 8601 date format, and reserialize the JSON (equivalent to pino -t).
+           * Specify a search pattern according to {@link http://jmespath.org|jmespath}
            */
-  var timeTransOnly: js.UndefOr[scala.Boolean] = js.undefined
+  var search: js.UndefOr[java.lang.String] = js.undefined
+  /**
+           * Translate the epoch time value into a human readable date and time string.
+           * This flag also can set the format string to apply when translating the date to human readable format.
+           * The default format is yyyy-mm-dd HH:MM:ss.l o in UTC.
+           * For a list of available pattern letters see the {@link https://www.npmjs.com/package/dateformat|dateformat documentation}.
+           */
+  var translateTime: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 

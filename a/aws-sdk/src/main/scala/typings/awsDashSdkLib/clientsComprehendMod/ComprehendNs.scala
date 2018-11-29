@@ -205,11 +205,169 @@ object ComprehendNs extends js.Object {
   }
   
   
+  trait ClassifierEvaluationMetrics extends js.Object {
+    /**
+         * The fraction of the labels that were correct recognized. It is computed by dividing the number of labels in the test documents that were correctly recognized by the total number of labels in the test documents.
+         */
+    var Accuracy: js.UndefOr[Double] = js.undefined
+    /**
+         * A measure of how accurate the classifier results are for the test data. It is derived from the Precision and Recall values. The F1Score is the harmonic average of the two scores. The highest score is 1, and the worst score is 0. 
+         */
+    var F1Score: js.UndefOr[Double] = js.undefined
+    /**
+         * A measure of the usefulness of the classifier results in the test data. High precision means that the classifier returned substantially more relevant results than irrelevant ones.
+         */
+    var Precision: js.UndefOr[Double] = js.undefined
+    /**
+         * A measure of how complete the classifier results are for the test data. High recall means that the classifier returned most of the relevant results. 
+         */
+    var Recall: js.UndefOr[Double] = js.undefined
+  }
+  
+  
+  trait ClassifierMetadata extends js.Object {
+    /**
+         *  Describes the result metrics for the test data associated with an documentation classifier.
+         */
+    var EvaluationMetrics: js.UndefOr[ClassifierEvaluationMetrics] = js.undefined
+    /**
+         * The number of labels in the input data. 
+         */
+    var NumberOfLabels: js.UndefOr[Integer] = js.undefined
+    /**
+         * The number of documents in the input data that were used to test the classifier. Typically this is 10 to 20 percent of the input documents.
+         */
+    var NumberOfTestDocuments: js.UndefOr[Integer] = js.undefined
+    /**
+         * The number of documents in the input data that were used to train the classifier. Typically this is 80 to 90 percent of the input documents.
+         */
+    var NumberOfTrainedDocuments: js.UndefOr[Integer] = js.undefined
+  }
+  
+  
   trait ClientApiVersions extends js.Object {
     /**
          * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
          */
     var apiVersion: js.UndefOr[apiVersion] = js.undefined
+  }
+  
+  
+  trait CreateDocumentClassifierRequest extends js.Object {
+    /**
+         * A unique identifier for the request. If you don't set the client request token, Amazon Comprehend generates one.
+         */
+    var ClientRequestToken: js.UndefOr[ClientRequestTokenString] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the AWS Identity and Management (IAM) role that grants Amazon Comprehend read access to your input data.
+         */
+    var DataAccessRoleArn: IamRoleArn
+    /**
+         * The name of the document classifier.
+         */
+    var DocumentClassifierName: ComprehendArnName
+    /**
+         * Specifies the format and location of the input data for the job.
+         */
+    var InputDataConfig: DocumentClassifierInputDataConfig
+    /**
+         * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
+         */
+    var LanguageCode: LanguageCode
+  }
+  
+  
+  trait CreateDocumentClassifierResponse extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) that identifies the document classifier.
+         */
+    var DocumentClassifierArn: js.UndefOr[DocumentClassifierArn] = js.undefined
+  }
+  
+  
+  trait CreateEntityRecognizerRequest extends js.Object {
+    /**
+         *  A unique identifier for the request. If you don't set the client request token, Amazon Comprehend generates one.
+         */
+    var ClientRequestToken: js.UndefOr[ClientRequestTokenString] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the AWS Identity and Management (IAM) role that grants Amazon Comprehend read access to your input data.
+         */
+    var DataAccessRoleArn: IamRoleArn
+    /**
+         * Specifies the format and location of the input data. The S3 bucket containing the input data must be located in the same region as the entity recognizer being created. 
+         */
+    var InputDataConfig: EntityRecognizerInputDataConfig
+    /**
+         *  The language of the input documents. All documents must be in the same language. Only English ("en") is currently supported. 
+         */
+    var LanguageCode: LanguageCode
+    /**
+         * The name given to the newly created recognizer. Recognizer names can be a maximum of 256 characters. Alphanumeric characters, hyphens (-) and underscores (_) are allowed. The name must be unique in the account/region.
+         */
+    var RecognizerName: ComprehendArnName
+  }
+  
+  
+  trait CreateEntityRecognizerResponse extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) that identifies the entity recognizer.
+         */
+    var EntityRecognizerArn: js.UndefOr[EntityRecognizerArn] = js.undefined
+  }
+  
+  
+  trait DeleteDocumentClassifierRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) that identifies the document classifier. 
+         */
+    var DocumentClassifierArn: DocumentClassifierArn
+  }
+  
+  
+  trait DeleteDocumentClassifierResponse extends js.Object
+  
+  
+  trait DeleteEntityRecognizerRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) that identifies the entity recognizer.
+         */
+    var EntityRecognizerArn: EntityRecognizerArn
+  }
+  
+  
+  trait DeleteEntityRecognizerResponse extends js.Object
+  
+  
+  trait DescribeDocumentClassificationJobRequest extends js.Object {
+    /**
+         * The identifier that Amazon Comprehend generated for the job. The operation returns this identifier in its response.
+         */
+    var JobId: JobId
+  }
+  
+  
+  trait DescribeDocumentClassificationJobResponse extends js.Object {
+    /**
+         * An object that describes the properties associated with the document classification job.
+         */
+    var DocumentClassificationJobProperties: js.UndefOr[DocumentClassificationJobProperties] = js.undefined
+  }
+  
+  
+  trait DescribeDocumentClassifierRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) that identifies the document classifier. The operation returns this identifier in its response.
+         */
+    var DocumentClassifierArn: DocumentClassifierArn
+  }
+  
+  
+  trait DescribeDocumentClassifierResponse extends js.Object {
+    /**
+         * An object that contains the properties associated with a document classifier.
+         */
+    var DocumentClassifierProperties: js.UndefOr[DocumentClassifierProperties] = js.undefined
   }
   
   
@@ -242,6 +400,22 @@ object ComprehendNs extends js.Object {
          * An object that contains the properties associated with an entities detection job.
          */
     var EntitiesDetectionJobProperties: js.UndefOr[EntitiesDetectionJobProperties] = js.undefined
+  }
+  
+  
+  trait DescribeEntityRecognizerRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) that identifies the entity recognizer.
+         */
+    var EntityRecognizerArn: EntityRecognizerArn
+  }
+  
+  
+  trait DescribeEntityRecognizerResponse extends js.Object {
+    /**
+         * Describes information associated with an entity recognizer.
+         */
+    var EntityRecognizerProperties: js.UndefOr[EntityRecognizerProperties] = js.undefined
   }
   
   
@@ -393,6 +567,142 @@ object ComprehendNs extends js.Object {
   }
   
   
+  trait DocumentClassificationJobFilter extends js.Object {
+    /**
+         * Filters on the name of the job.
+         */
+    var JobName: js.UndefOr[JobName] = js.undefined
+    /**
+         * Filters the list based on job status. Returns only jobs with the specified status.
+         */
+    var JobStatus: js.UndefOr[JobStatus] = js.undefined
+    /**
+         * Filters the list of jobs based on the time that the job was submitted for processing. Returns only jobs submitted before the specified time. Jobs are returned in descending order, newest to oldest.
+         */
+    var SubmitTimeAfter: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * Filters the list of jobs based on the time that the job was submitted for processing. Returns only jobs submitted after the specified time. Jobs are returned in ascending order, oldest to newest.
+         */
+    var SubmitTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  }
+  
+  
+  trait DocumentClassificationJobProperties extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the AWS identity and Access Management (IAM) role that grants Amazon Comprehend read access to your input data.
+         */
+    var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) that identifies the document classifier. 
+         */
+    var DocumentClassifierArn: js.UndefOr[DocumentClassifierArn] = js.undefined
+    /**
+         * The time that the document classification job completed.
+         */
+    var EndTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The input data configuration that you supplied when you created the document classification job.
+         */
+    var InputDataConfig: js.UndefOr[InputDataConfig] = js.undefined
+    /**
+         * The identifier assigned to the document classification job.
+         */
+    var JobId: js.UndefOr[JobId] = js.undefined
+    /**
+         * The name that you assigned to the document classification job.
+         */
+    var JobName: js.UndefOr[JobName] = js.undefined
+    /**
+         * The current status of the document classification job. If the status is FAILED, the Message field shows the reason for the failure.
+         */
+    var JobStatus: js.UndefOr[JobStatus] = js.undefined
+    /**
+         * A description of the status of the job.
+         */
+    var Message: js.UndefOr[AnyLengthString] = js.undefined
+    /**
+         * The output data configuration that you supplied when you created the document classification job.
+         */
+    var OutputDataConfig: js.UndefOr[OutputDataConfig] = js.undefined
+    /**
+         * The time that the document classification job was submitted for processing.
+         */
+    var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+  }
+  
+  
+  trait DocumentClassifierFilter extends js.Object {
+    /**
+         * Filters the list of classifiers based on status. 
+         */
+    var Status: js.UndefOr[ModelStatus] = js.undefined
+    /**
+         * Filters the list of classifiers based on the time that the classifier was submitted for processing. Returns only classifiers submitted after the specified time. Classifiers are returned in descending order, newest to oldest.
+         */
+    var SubmitTimeAfter: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * Filters the list of classifiers based on the time that the classifier was submitted for processing. Returns only classifiers submitted before the specified time. Classifiers are returned in ascending order, oldest to newest.
+         */
+    var SubmitTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  }
+  
+  
+  trait DocumentClassifierInputDataConfig extends js.Object {
+    /**
+         * The Amazon S3 URI for the input data. The S3 bucket must be in the same region as the API endpoint that you are calling. The URI can point to a single input file or it can provide the prefix for a collection of input files. For example, if you use the URI S3://bucketName/prefix, if the prefix is a single file, Amazon Comprehend uses that file as input. If more than one file begins with the prefix, Amazon Comprehend uses all of them as input.
+         */
+    var S3Uri: S3Uri
+  }
+  
+  
+  trait DocumentClassifierProperties extends js.Object {
+    /**
+         * Information about the document classifier, including the number of documents used for training the classifier, the number of documents used for test the classifier, and an accuracy rating.
+         */
+    var ClassifierMetadata: js.UndefOr[ClassifierMetadata] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the AWS Identity and Management (IAM) role that grants Amazon Comprehend read access to your input data.
+         */
+    var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) that identifies the document classifier.
+         */
+    var DocumentClassifierArn: js.UndefOr[DocumentClassifierArn] = js.undefined
+    /**
+         * The time that training the document classifier completed.
+         */
+    var EndTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The input data configuration that you supplied when you created the document classifier for training.
+         */
+    var InputDataConfig: js.UndefOr[DocumentClassifierInputDataConfig] = js.undefined
+    /**
+         * The language code for the language of the documents that the classifier was trained on.
+         */
+    var LanguageCode: js.UndefOr[LanguageCode] = js.undefined
+    /**
+         * Additional information about the status of the classifier.
+         */
+    var Message: js.UndefOr[AnyLengthString] = js.undefined
+    /**
+         * The status of the document classifier. The the status is TRAINED the classifier is ready to use. If the status is FAILED you can see additional information about why the classifier wasn't trained in the Message field.
+         */
+    var Status: js.UndefOr[ModelStatus] = js.undefined
+    /**
+         * The time that the document classifier was submitted for training.
+         */
+    var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The time that training of the document classifier was completed. Indicates the time when the training completes on documentation classifiers. You are billed for the time interval between this time and the value of TrainingStartTime.
+         */
+    var TrainingEndTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * Indicates the time when the training starts on documentation classifiers. You are billed for the time interval between this time and the value of TrainingEndTime. 
+         */
+    var TrainingStartTime: js.UndefOr[Timestamp] = js.undefined
+  }
+  
+  
   trait DominantLanguage extends js.Object {
     /**
          * The RFC 5646 language code for the dominant language. For more information about RFC 5646, see Tags for Identifying Languages on the IETF Tools web site.
@@ -495,6 +805,10 @@ object ComprehendNs extends js.Object {
          */
     var EndTime: js.UndefOr[Timestamp] = js.undefined
     /**
+         * The Amazon Resource Name (ARN) that identifies the entity recognizer.
+         */
+    var EntityRecognizerArn: js.UndefOr[EntityRecognizerArn] = js.undefined
+    /**
          * The input data configuration that you supplied when you created the entities detection job.
          */
     var InputDataConfig: js.UndefOr[InputDataConfig] = js.undefined
@@ -550,6 +864,166 @@ object ComprehendNs extends js.Object {
          * The entity's type.
          */
     var Type: js.UndefOr[EntityType] = js.undefined
+  }
+  
+  
+  trait EntityRecognizerAnnotations extends js.Object {
+    /**
+         *  Specifies the Amazon S3 location where the annotations for an entity recognizer are located. The URI must be in the same region as the API endpoint that you are calling.
+         */
+    var S3Uri: S3Uri
+  }
+  
+  
+  trait EntityRecognizerDocuments extends js.Object {
+    /**
+         *  Specifies the Amazon S3 location where the training documents for an entity recognizer are located. The URI must be in the same region as the API endpoint that you are calling.
+         */
+    var S3Uri: S3Uri
+  }
+  
+  
+  trait EntityRecognizerEntityList extends js.Object {
+    /**
+         * Specifies the Amazon S3 location where the entity list is located. The URI must be in the same region as the API endpoint that you are calling.
+         */
+    var S3Uri: S3Uri
+  }
+  
+  
+  trait EntityRecognizerEvaluationMetrics extends js.Object {
+    /**
+         * A measure of how accurate the recognizer results are for the test data. It is derived from the Precision and Recall values. The F1Score is the harmonic average of the two scores. The highest score is 1, and the worst score is 0. 
+         */
+    var F1Score: js.UndefOr[Double] = js.undefined
+    /**
+         * A measure of the usefulness of the recognizer results in the test data. High precision means that the recognizer returned substantially more relevant results than irrelevant ones. 
+         */
+    var Precision: js.UndefOr[Double] = js.undefined
+    /**
+         * A measure of how complete the recognizer results are for the test data. High recall means that the recognizer returned most of the relevant results.
+         */
+    var Recall: js.UndefOr[Double] = js.undefined
+  }
+  
+  
+  trait EntityRecognizerFilter extends js.Object {
+    /**
+         * The status of an entity recognizer.
+         */
+    var Status: js.UndefOr[ModelStatus] = js.undefined
+    /**
+         * Filters the list of entities based on the time that the list was submitted for processing. Returns only jobs submitted after the specified time. Jobs are returned in ascending order, oldest to newest.
+         */
+    var SubmitTimeAfter: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * Filters the list of entities based on the time that the list was submitted for processing. Returns only jobs submitted before the specified time. Jobs are returned in descending order, newest to oldest.
+         */
+    var SubmitTimeBefore: js.UndefOr[Timestamp] = js.undefined
+  }
+  
+  
+  trait EntityRecognizerInputDataConfig extends js.Object {
+    /**
+         * S3 location of the annotations file for an entity recognizer.
+         */
+    var Annotations: js.UndefOr[EntityRecognizerAnnotations] = js.undefined
+    /**
+         * S3 location of the documents folder for an entity recognizer
+         */
+    var Documents: EntityRecognizerDocuments
+    /**
+         * S3 location of the entity list for an entity recognizer.
+         */
+    var EntityList: js.UndefOr[EntityRecognizerEntityList] = js.undefined
+    /**
+         * The entity types in the input data for an entity recognizer.
+         */
+    var EntityTypes: EntityTypesList
+  }
+  
+  
+  trait EntityRecognizerMetadata extends js.Object {
+    /**
+         * Entity types from the metadata of an entity recognizer.
+         */
+    var EntityTypes: js.UndefOr[EntityRecognizerMetadataEntityTypesList] = js.undefined
+    /**
+         *  Detailed information about the accuracy of an entity recognizer.
+         */
+    var EvaluationMetrics: js.UndefOr[EntityRecognizerEvaluationMetrics] = js.undefined
+    /**
+         *  The number of documents in the input data that were used to test the entity recognizer. Typically this is 10 to 20 percent of the input documents.
+         */
+    var NumberOfTestDocuments: js.UndefOr[Integer] = js.undefined
+    /**
+         *  The number of documents in the input data that were used to train the entity recognizer. Typically this is 80 to 90 percent of the input documents.
+         */
+    var NumberOfTrainedDocuments: js.UndefOr[Integer] = js.undefined
+  }
+  
+  
+  trait EntityRecognizerMetadataEntityTypesListItem extends js.Object {
+    /**
+         * Type of entity from the list of entity types in the metadata of an entity recognizer. 
+         */
+    var Type: js.UndefOr[AnyLengthString] = js.undefined
+  }
+  
+  
+  trait EntityRecognizerProperties extends js.Object {
+    /**
+         *  The Amazon Resource Name (ARN) of the AWS Identity and Management (IAM) role that grants Amazon Comprehend read access to your input data.
+         */
+    var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
+    /**
+         * The time that the recognizer creation completed.
+         */
+    var EndTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) that identifies the entity recognizer.
+         */
+    var EntityRecognizerArn: js.UndefOr[EntityRecognizerArn] = js.undefined
+    /**
+         * The input data properties of an entity recognizer.
+         */
+    var InputDataConfig: js.UndefOr[EntityRecognizerInputDataConfig] = js.undefined
+    /**
+         *  The language of the input documents. All documents must be in the same language. Only English ("en") is currently supported.
+         */
+    var LanguageCode: js.UndefOr[LanguageCode] = js.undefined
+    /**
+         *  A description of the status of the recognizer.
+         */
+    var Message: js.UndefOr[AnyLengthString] = js.undefined
+    /**
+         *  Provides information about an entity recognizer.
+         */
+    var RecognizerMetadata: js.UndefOr[EntityRecognizerMetadata] = js.undefined
+    /**
+         * Provides the status of the entity recognizer.
+         */
+    var Status: js.UndefOr[ModelStatus] = js.undefined
+    /**
+         * The time that the recognizer was submitted for processing.
+         */
+    var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The time that training of the entity recognizer was completed.
+         */
+    var TrainingEndTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The time that training of the entity recognizer started.
+         */
+    var TrainingStartTime: js.UndefOr[Timestamp] = js.undefined
+  }
+  
+  
+  trait EntityTypesListItem extends js.Object {
+    /**
+         * Entity type of an item on an entity type list.
+         */
+    var Type: EntityTypeName
   }
   
   
@@ -649,6 +1123,62 @@ object ComprehendNs extends js.Object {
   }
   
   
+  trait ListDocumentClassificationJobsRequest extends js.Object {
+    /**
+         * Filters the jobs that are returned. You can filter jobs on their names, status, or the date and time that they were submitted. You can only set one filter at a time.
+         */
+    var Filter: js.UndefOr[DocumentClassificationJobFilter] = js.undefined
+    /**
+         * The maximum number of results to return in each page. The default is 100.
+         */
+    var MaxResults: js.UndefOr[MaxResultsInteger] = js.undefined
+    /**
+         * Identifies the next page of results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ListDocumentClassificationJobsResponse extends js.Object {
+    /**
+         * A list containing the properties of each job returned.
+         */
+    var DocumentClassificationJobPropertiesList: js.UndefOr[DocumentClassificationJobPropertiesList] = js.undefined
+    /**
+         * Identifies the next page of results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ListDocumentClassifiersRequest extends js.Object {
+    /**
+         * Filters the jobs that are returned. You can filter jobs on their name, status, or the date and time that they were submitted. You can only set one filter at a time.
+         */
+    var Filter: js.UndefOr[DocumentClassifierFilter] = js.undefined
+    /**
+         * The maximum number of results to return in each page. The default is 100.
+         */
+    var MaxResults: js.UndefOr[MaxResultsInteger] = js.undefined
+    /**
+         * Identifies the next page of results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ListDocumentClassifiersResponse extends js.Object {
+    /**
+         * A list containing the properties of each job returned.
+         */
+    var DocumentClassifierPropertiesList: js.UndefOr[DocumentClassifierPropertiesList] = js.undefined
+    /**
+         * Identifies the next page of results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait ListDominantLanguageDetectionJobsRequest extends js.Object {
     /**
          * Filters that jobs that are returned. You can filter jobs on their name, status, or the date and time that they were submitted. You can only set one filter at a time.
@@ -698,6 +1228,34 @@ object ComprehendNs extends js.Object {
          * A list containing the properties of each job that is returned.
          */
     var EntitiesDetectionJobPropertiesList: js.UndefOr[EntitiesDetectionJobPropertiesList] = js.undefined
+    /**
+         * Identifies the next page of results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ListEntityRecognizersRequest extends js.Object {
+    /**
+         * Filters the list of entities returned. You can filter on Status, SubmitTimeBefore, or SubmitTimeAfter. You can only set one filter at a time.
+         */
+    var Filter: js.UndefOr[EntityRecognizerFilter] = js.undefined
+    /**
+         *  The maximum number of results to return on each page. The default is 100.
+         */
+    var MaxResults: js.UndefOr[MaxResultsInteger] = js.undefined
+    /**
+         * Identifies the next page of results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ListEntityRecognizersResponse extends js.Object {
+    /**
+         * The list of properties of an entity recognizer.
+         */
+    var EntityRecognizerPropertiesList: js.UndefOr[EntityRecognizerPropertiesList] = js.undefined
     /**
          * Identifies the next page of results to return.
          */
@@ -893,6 +1451,46 @@ object ComprehendNs extends js.Object {
   }
   
   
+  trait StartDocumentClassificationJobRequest extends js.Object {
+    /**
+         * A unique identifier for the request. If you do not set the client request token, Amazon Comprehend generates one.
+         */
+    var ClientRequestToken: js.UndefOr[ClientRequestTokenString] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that grants Amazon Comprehend read access to your input data.
+         */
+    var DataAccessRoleArn: IamRoleArn
+    /**
+         * The Amazon Resource Name (ARN) of the document classifier to use to process the job.
+         */
+    var DocumentClassifierArn: DocumentClassifierArn
+    /**
+         * Specifies the format and location of the input data for the job.
+         */
+    var InputDataConfig: InputDataConfig
+    /**
+         * The identifier of the job.
+         */
+    var JobName: js.UndefOr[JobName] = js.undefined
+    /**
+         * Specifies where to send the output files.
+         */
+    var OutputDataConfig: OutputDataConfig
+  }
+  
+  
+  trait StartDocumentClassificationJobResponse extends js.Object {
+    /**
+         * The identifier generated for the job. To get the status of the job, use this identifier with the operation.
+         */
+    var JobId: js.UndefOr[JobId] = js.undefined
+    /**
+         * The status of the job:   SUBMITTED - The job has been received and queued for processing.   IN_PROGRESS - Amazon Comprehend is processing the job.   COMPLETED - The job was successfully completed and the output is available.   FAILED - The job did not complete. For details, use the operation.   STOP_REQUESTED - Amazon Comprehend has received a stop request for the job and is processing the request.   STOPPED - The job was successfully stopped without completing.  
+         */
+    var JobStatus: js.UndefOr[JobStatus] = js.undefined
+  }
+  
+  
   trait StartDominantLanguageDetectionJobRequest extends js.Object {
     /**
          * A unique identifier for the request. If you do not set the client request token, Amazon Comprehend generates one.
@@ -939,6 +1537,10 @@ object ComprehendNs extends js.Object {
          */
     var DataAccessRoleArn: IamRoleArn
     /**
+         * The Amazon Resource Name (ARN) that identifies the specific entity recognizer to be used by the StartEntitiesDetectionJob. This ARN is optional and is only used for a custom entity recognition job.
+         */
+    var EntityRecognizerArn: js.UndefOr[EntityRecognizerArn] = js.undefined
+    /**
          * Specifies the format and location of the input data for the job.
          */
     var InputDataConfig: InputDataConfig
@@ -947,7 +1549,7 @@ object ComprehendNs extends js.Object {
          */
     var JobName: js.UndefOr[JobName] = js.undefined
     /**
-         * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
+         * The language of the input documents. All documents must be in the same language. You can specify any of the languages supported by Amazon Comprehend: English ("en"), Spanish ("es"), French ("fr"), German ("de"), Italian ("it"), or Portuguese ("pt"). If custom entities recognition is used, this parameter is ignored and the language used for training the model is used instead.
          */
     var LanguageCode: LanguageCode
     /**
@@ -963,7 +1565,7 @@ object ComprehendNs extends js.Object {
          */
     var JobId: js.UndefOr[JobId] = js.undefined
     /**
-         * The status of the job.    SUBMITTED - The job has been received and is queued for processing.   IN_PROGRESS - Amazon Comprehend is processing the job.   COMPLETED - The job was successfully completed and the output is available.   FAILED - The job did not complete. To get details, use the operation.  
+         * The status of the job.    SUBMITTED - The job has been received and is queued for processing.   IN_PROGRESS - Amazon Comprehend is processing the job.   COMPLETED - The job was successfully completed and the output is available.   FAILED - The job did not complete. To get details, use the operation.   STOP_REQUESTED - Amazon Comprehend has received a stop request for the job and is processing the request.   STOPPED - The job was successfully stopped without completing.  
          */
     var JobStatus: js.UndefOr[JobStatus] = js.undefined
   }
@@ -1403,6 +2005,180 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchDetectSyntaxResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+       */
+    def createDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[CreateDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+       */
+    def createDocumentClassifier(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateDocumentClassifierResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+       */
+    def createDocumentClassifier(params: CreateDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[CreateDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+       */
+    def createDocumentClassifier(
+      params: CreateDocumentClassifierRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateDocumentClassifierResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+       */
+    def createEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[CreateEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+       */
+    def createEntityRecognizer(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateEntityRecognizerResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+       */
+    def createEntityRecognizer(params: CreateEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[CreateEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+       */
+    def createEntityRecognizer(
+      params: CreateEntityRecognizerRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateEntityRecognizerResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
+       */
+    def deleteDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[DeleteDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
+       */
+    def deleteDocumentClassifier(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteDocumentClassifierResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
+       */
+    def deleteDocumentClassifier(params: DeleteDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[DeleteDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
+       */
+    def deleteDocumentClassifier(
+      params: DeleteDocumentClassifierRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteDocumentClassifierResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
+       */
+    def deleteEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[DeleteEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
+       */
+    def deleteEntityRecognizer(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteEntityRecognizerResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
+       */
+    def deleteEntityRecognizer(params: DeleteEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[DeleteEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
+       */
+    def deleteEntityRecognizer(
+      params: DeleteEntityRecognizerRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteEntityRecognizerResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
+       */
+    def describeDocumentClassificationJob(): awsDashSdkLib.libRequestMod.Request[DescribeDocumentClassificationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
+       */
+    def describeDocumentClassificationJob(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeDocumentClassificationJobResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeDocumentClassificationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
+       */
+    def describeDocumentClassificationJob(params: DescribeDocumentClassificationJobRequest): awsDashSdkLib.libRequestMod.Request[DescribeDocumentClassificationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
+       */
+    def describeDocumentClassificationJob(
+      params: DescribeDocumentClassificationJobRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeDocumentClassificationJobResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeDocumentClassificationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the properties associated with a document classifier.
+       */
+    def describeDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[DescribeDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the properties associated with a document classifier.
+       */
+    def describeDocumentClassifier(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeDocumentClassifierResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the properties associated with a document classifier.
+       */
+    def describeDocumentClassifier(params: DescribeDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[DescribeDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the properties associated with a document classifier.
+       */
+    def describeDocumentClassifier(
+      params: DescribeDocumentClassifierRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeDocumentClassifierResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeDocumentClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.
        */
     def describeDominantLanguageDetectionJob(): awsDashSdkLib.libRequestMod.Request[DescribeDominantLanguageDetectionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1460,6 +2236,35 @@ object ComprehendNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeEntitiesDetectionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
+       */
+    def describeEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[DescribeEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
+       */
+    def describeEntityRecognizer(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeEntityRecognizerResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
+       */
+    def describeEntityRecognizer(params: DescribeEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[DescribeEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
+       */
+    def describeEntityRecognizer(
+      params: DescribeEntityRecognizerRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeEntityRecognizerResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Gets the properties associated with a key phrases detection job. Use this operation to get the status of a detection job.
        */
@@ -1693,6 +2498,64 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DetectSyntaxResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Gets a list of the documentation classification jobs that you have submitted.
+       */
+    def listDocumentClassificationJobs(): awsDashSdkLib.libRequestMod.Request[ListDocumentClassificationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the documentation classification jobs that you have submitted.
+       */
+    def listDocumentClassificationJobs(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListDocumentClassificationJobsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListDocumentClassificationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the documentation classification jobs that you have submitted.
+       */
+    def listDocumentClassificationJobs(params: ListDocumentClassificationJobsRequest): awsDashSdkLib.libRequestMod.Request[ListDocumentClassificationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the documentation classification jobs that you have submitted.
+       */
+    def listDocumentClassificationJobs(
+      params: ListDocumentClassificationJobsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListDocumentClassificationJobsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListDocumentClassificationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the document classifiers that you have created.
+       */
+    def listDocumentClassifiers(): awsDashSdkLib.libRequestMod.Request[ListDocumentClassifiersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the document classifiers that you have created.
+       */
+    def listDocumentClassifiers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListDocumentClassifiersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListDocumentClassifiersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the document classifiers that you have created.
+       */
+    def listDocumentClassifiers(params: ListDocumentClassifiersRequest): awsDashSdkLib.libRequestMod.Request[ListDocumentClassifiersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the document classifiers that you have created.
+       */
+    def listDocumentClassifiers(
+      params: ListDocumentClassifiersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListDocumentClassifiersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListDocumentClassifiersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Gets a list of the dominant language detection jobs that you have submitted.
        */
     def listDominantLanguageDetectionJobs(): awsDashSdkLib.libRequestMod.Request[ListDominantLanguageDetectionJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1750,6 +2613,35 @@ object ComprehendNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListEntitiesDetectionJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
+       */
+    def listEntityRecognizers(): awsDashSdkLib.libRequestMod.Request[ListEntityRecognizersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
+       */
+    def listEntityRecognizers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListEntityRecognizersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListEntityRecognizersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
+       */
+    def listEntityRecognizers(params: ListEntityRecognizersRequest): awsDashSdkLib.libRequestMod.Request[ListEntityRecognizersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
+       */
+    def listEntityRecognizers(
+      params: ListEntityRecognizersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListEntityRecognizersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListEntityRecognizersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Get a list of key phrase detection jobs that you have submitted.
        */
@@ -1838,6 +2730,35 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListTopicsDetectionJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+       */
+    def startDocumentClassificationJob(): awsDashSdkLib.libRequestMod.Request[StartDocumentClassificationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+       */
+    def startDocumentClassificationJob(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StartDocumentClassificationJobResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StartDocumentClassificationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+       */
+    def startDocumentClassificationJob(params: StartDocumentClassificationJobRequest): awsDashSdkLib.libRequestMod.Request[StartDocumentClassificationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+       */
+    def startDocumentClassificationJob(
+      params: StartDocumentClassificationJobRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StartDocumentClassificationJobResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StartDocumentClassificationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Starts an asynchronous dominant language detection job for a collection of documents. Use the operation to track the status of a job.
        */
     def startDominantLanguageDetectionJob(): awsDashSdkLib.libRequestMod.Request[StartDominantLanguageDetectionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1867,11 +2788,11 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartDominantLanguageDetectionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job.
+       * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
        */
     def startEntitiesDetectionJob(): awsDashSdkLib.libRequestMod.Request[StartEntitiesDetectionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job.
+       * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
        */
     def startEntitiesDetectionJob(
       callback: js.Function2[
@@ -1881,11 +2802,11 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartEntitiesDetectionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job.
+       * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
        */
     def startEntitiesDetectionJob(params: StartEntitiesDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[StartEntitiesDetectionJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job.
+       * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
        */
     def startEntitiesDetectionJob(
       params: StartEntitiesDetectionJobRequest,
@@ -2105,9 +3026,19 @@ object ComprehendNs extends js.Object {
   type BatchItemErrorList = js.Array[BatchItemError]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientRequestTokenString = java.lang.String
+  type ComprehendArnName = java.lang.String
+  type DocumentClassificationJobPropertiesList = js.Array[DocumentClassificationJobProperties]
+  type DocumentClassifierArn = java.lang.String
+  type DocumentClassifierPropertiesList = js.Array[DocumentClassifierProperties]
   type DominantLanguageDetectionJobPropertiesList = js.Array[DominantLanguageDetectionJobProperties]
+  type Double = scala.Double
   type EntitiesDetectionJobPropertiesList = js.Array[EntitiesDetectionJobProperties]
+  type EntityRecognizerArn = java.lang.String
+  type EntityRecognizerMetadataEntityTypesList = js.Array[EntityRecognizerMetadataEntityTypesListItem]
+  type EntityRecognizerPropertiesList = js.Array[EntityRecognizerProperties]
   type EntityType = awsDashSdkLib.awsDashSdkLibStrings.PERSON | awsDashSdkLib.awsDashSdkLibStrings.LOCATION | awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATION | awsDashSdkLib.awsDashSdkLibStrings.COMMERCIAL_ITEM | awsDashSdkLib.awsDashSdkLibStrings.EVENT | awsDashSdkLib.awsDashSdkLibStrings.DATE | awsDashSdkLib.awsDashSdkLibStrings.QUANTITY | awsDashSdkLib.awsDashSdkLibStrings.TITLE | awsDashSdkLib.awsDashSdkLibStrings.OTHER | java.lang.String
+  type EntityTypeName = java.lang.String
+  type EntityTypesList = js.Array[EntityTypesListItem]
   type Float = scala.Double
   type IamRoleArn = java.lang.String
   type InputFormat = awsDashSdkLib.awsDashSdkLibStrings.ONE_DOC_PER_FILE | awsDashSdkLib.awsDashSdkLibStrings.ONE_DOC_PER_LINE | java.lang.String
@@ -2127,8 +3058,9 @@ object ComprehendNs extends js.Object {
   type ListOfKeyPhrases = js.Array[KeyPhrase]
   type ListOfSyntaxTokens = js.Array[SyntaxToken]
   type MaxResultsInteger = scala.Double
+  type ModelStatus = awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED | awsDashSdkLib.awsDashSdkLibStrings.TRAINING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.IN_ERROR | awsDashSdkLib.awsDashSdkLibStrings.TRAINED | java.lang.String
   type NumberOfTopicsInteger = scala.Double
-  type PartOfSpeechTagType = awsDashSdkLib.awsDashSdkLibStrings.ADJ | awsDashSdkLib.awsDashSdkLibStrings.ADP | awsDashSdkLib.awsDashSdkLibStrings.ADV | awsDashSdkLib.awsDashSdkLibStrings.AUX | awsDashSdkLib.awsDashSdkLibStrings.CONJ | awsDashSdkLib.awsDashSdkLibStrings.DET | awsDashSdkLib.awsDashSdkLibStrings.INTJ | awsDashSdkLib.awsDashSdkLibStrings.NOUN | awsDashSdkLib.awsDashSdkLibStrings.NUM | awsDashSdkLib.awsDashSdkLibStrings.O | awsDashSdkLib.awsDashSdkLibStrings.PART | awsDashSdkLib.awsDashSdkLibStrings.PRON | awsDashSdkLib.awsDashSdkLibStrings.PROPN | awsDashSdkLib.awsDashSdkLibStrings.PUNCT | awsDashSdkLib.awsDashSdkLibStrings.SCONJ | awsDashSdkLib.awsDashSdkLibStrings.SYM | awsDashSdkLib.awsDashSdkLibStrings.VERB | java.lang.String
+  type PartOfSpeechTagType = awsDashSdkLib.awsDashSdkLibStrings.ADJ | awsDashSdkLib.awsDashSdkLibStrings.ADP | awsDashSdkLib.awsDashSdkLibStrings.ADV | awsDashSdkLib.awsDashSdkLibStrings.AUX | awsDashSdkLib.awsDashSdkLibStrings.CONJ | awsDashSdkLib.awsDashSdkLibStrings.CCONJ | awsDashSdkLib.awsDashSdkLibStrings.DET | awsDashSdkLib.awsDashSdkLibStrings.INTJ | awsDashSdkLib.awsDashSdkLibStrings.NOUN | awsDashSdkLib.awsDashSdkLibStrings.NUM | awsDashSdkLib.awsDashSdkLibStrings.O | awsDashSdkLib.awsDashSdkLibStrings.PART | awsDashSdkLib.awsDashSdkLibStrings.PRON | awsDashSdkLib.awsDashSdkLibStrings.PROPN | awsDashSdkLib.awsDashSdkLibStrings.PUNCT | awsDashSdkLib.awsDashSdkLibStrings.SCONJ | awsDashSdkLib.awsDashSdkLibStrings.SYM | awsDashSdkLib.awsDashSdkLibStrings.VERB | java.lang.String
   type S3Uri = java.lang.String
   type SentimentDetectionJobPropertiesList = js.Array[SentimentDetectionJobProperties]
   type SentimentType = awsDashSdkLib.awsDashSdkLibStrings.POSITIVE | awsDashSdkLib.awsDashSdkLibStrings.NEGATIVE | awsDashSdkLib.awsDashSdkLibStrings.NEUTRAL | awsDashSdkLib.awsDashSdkLibStrings.MIXED | java.lang.String

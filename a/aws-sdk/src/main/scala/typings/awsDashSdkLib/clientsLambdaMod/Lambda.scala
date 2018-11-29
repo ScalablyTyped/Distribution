@@ -11,6 +11,47 @@ trait Lambda
   @JSName("config")
   var config_Lambda: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsLambdaMod.LambdaNs.ClientConfiguration = js.native
   /**
+     * Adds permissions to the resource-based policy of a version of a function layer. Use this action to grant layer usage permission to other accounts. You can grant permission to a single account, all AWS accounts, or all accounts in an organization. To revoke permission, call RemoveLayerVersionPermission with the statement ID that you specified when you added it.
+     */
+  def addLayerVersionPermission(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.AddLayerVersionPermissionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds permissions to the resource-based policy of a version of a function layer. Use this action to grant layer usage permission to other accounts. You can grant permission to a single account, all AWS accounts, or all accounts in an organization. To revoke permission, call RemoveLayerVersionPermission with the statement ID that you specified when you added it.
+     */
+  def addLayerVersionPermission(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.AddLayerVersionPermissionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.AddLayerVersionPermissionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds permissions to the resource-based policy of a version of a function layer. Use this action to grant layer usage permission to other accounts. You can grant permission to a single account, all AWS accounts, or all accounts in an organization. To revoke permission, call RemoveLayerVersionPermission with the statement ID that you specified when you added it.
+     */
+  def addLayerVersionPermission(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.AddLayerVersionPermissionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.AddLayerVersionPermissionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Adds permissions to the resource-based policy of a version of a function layer. Use this action to grant layer usage permission to other accounts. You can grant permission to a single account, all AWS accounts, or all accounts in an organization. To revoke permission, call RemoveLayerVersionPermission with the statement ID that you specified when you added it.
+     */
+  def addLayerVersionPermission(
+    params: awsDashSdkLib.clientsLambdaMod.LambdaNs.AddLayerVersionPermissionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.AddLayerVersionPermissionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.AddLayerVersionPermissionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Adds a permission to the resource policy associated with the specified AWS Lambda function. You use resource policies to grant permissions to event sources that use the push model. In a push model, event sources (such as Amazon S3 and custom applications) invoke your Lambda function. Each permission you add to the resource policy allows an event source permission to invoke the Lambda function.  Permissions apply to the Amazon Resource Name (ARN) used to invoke the function, which can be unqualified (the unpublished version of the function), or include a version or alias. If a client uses a version or alias to invoke a function, use the Qualifier parameter to apply permissions to that ARN. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:AddPermission action.
      */
   def addPermission(): awsDashSdkLib.libRequestMod.Request[
@@ -93,14 +134,14 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Identifies a poll-based event source for a Lambda function. It can be either an Amazon Kinesis or DynamoDB stream. AWS Lambda invokes the specified function when records are posted to the event source. This association between a poll-based source and a Lambda function is called the event source mapping. You provide mapping information (for example, which stream or SQS queue to read from and which Lambda function to invoke) in the request body. Amazon Kinesis or DynamoDB stream event sources can be associated with multiple AWS Lambda functions and a given Lambda function can be associated with multiple AWS event sources. For Amazon SQS, you can configure multiple queues as event sources for a single Lambda function, but an SQS queue can be mapped only to a single Lambda function. You can configure an SQS queue in an account separate from your Lambda function's account. Also the queue needs to reside in the same AWS region as your function.  If you are using versioning, you can specify a specific function version or an alias via the function name parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:CreateEventSourceMapping action.
+     * Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and triggers the function. For details about each event source type, see the following topics.    Using AWS Lambda with Amazon Kinesis     Using AWS Lambda with Amazon SQS     Using AWS Lambda with Amazon DynamoDB   
      */
   def createEventSourceMapping(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.EventSourceMappingConfiguration, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Identifies a poll-based event source for a Lambda function. It can be either an Amazon Kinesis or DynamoDB stream. AWS Lambda invokes the specified function when records are posted to the event source. This association between a poll-based source and a Lambda function is called the event source mapping. You provide mapping information (for example, which stream or SQS queue to read from and which Lambda function to invoke) in the request body. Amazon Kinesis or DynamoDB stream event sources can be associated with multiple AWS Lambda functions and a given Lambda function can be associated with multiple AWS event sources. For Amazon SQS, you can configure multiple queues as event sources for a single Lambda function, but an SQS queue can be mapped only to a single Lambda function. You can configure an SQS queue in an account separate from your Lambda function's account. Also the queue needs to reside in the same AWS region as your function.  If you are using versioning, you can specify a specific function version or an alias via the function name parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:CreateEventSourceMapping action.
+     * Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and triggers the function. For details about each event source type, see the following topics.    Using AWS Lambda with Amazon Kinesis     Using AWS Lambda with Amazon SQS     Using AWS Lambda with Amazon DynamoDB   
      */
   def createEventSourceMapping(
     callback: js.Function2[
@@ -113,14 +154,14 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Identifies a poll-based event source for a Lambda function. It can be either an Amazon Kinesis or DynamoDB stream. AWS Lambda invokes the specified function when records are posted to the event source. This association between a poll-based source and a Lambda function is called the event source mapping. You provide mapping information (for example, which stream or SQS queue to read from and which Lambda function to invoke) in the request body. Amazon Kinesis or DynamoDB stream event sources can be associated with multiple AWS Lambda functions and a given Lambda function can be associated with multiple AWS event sources. For Amazon SQS, you can configure multiple queues as event sources for a single Lambda function, but an SQS queue can be mapped only to a single Lambda function. You can configure an SQS queue in an account separate from your Lambda function's account. Also the queue needs to reside in the same AWS region as your function.  If you are using versioning, you can specify a specific function version or an alias via the function name parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:CreateEventSourceMapping action.
+     * Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and triggers the function. For details about each event source type, see the following topics.    Using AWS Lambda with Amazon Kinesis     Using AWS Lambda with Amazon SQS     Using AWS Lambda with Amazon DynamoDB   
      */
   def createEventSourceMapping(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.CreateEventSourceMappingRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.EventSourceMappingConfiguration, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Identifies a poll-based event source for a Lambda function. It can be either an Amazon Kinesis or DynamoDB stream. AWS Lambda invokes the specified function when records are posted to the event source. This association between a poll-based source and a Lambda function is called the event source mapping. You provide mapping information (for example, which stream or SQS queue to read from and which Lambda function to invoke) in the request body. Amazon Kinesis or DynamoDB stream event sources can be associated with multiple AWS Lambda functions and a given Lambda function can be associated with multiple AWS event sources. For Amazon SQS, you can configure multiple queues as event sources for a single Lambda function, but an SQS queue can be mapped only to a single Lambda function. You can configure an SQS queue in an account separate from your Lambda function's account. Also the queue needs to reside in the same AWS region as your function.  If you are using versioning, you can specify a specific function version or an alias via the function name parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:CreateEventSourceMapping action.
+     * Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and triggers the function. For details about each event source type, see the following topics.    Using AWS Lambda with Amazon Kinesis     Using AWS Lambda with Amazon SQS     Using AWS Lambda with Amazon DynamoDB   
      */
   def createEventSourceMapping(
     params: awsDashSdkLib.clientsLambdaMod.LambdaNs.CreateEventSourceMappingRequest,
@@ -196,14 +237,14 @@ trait Lambda
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Removes an event source mapping. This means AWS Lambda will no longer invoke the function for events in the associated source. This operation requires permission for the lambda:DeleteEventSourceMapping action.
+     * Deletes an event source mapping.
      */
   def deleteEventSourceMapping(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.EventSourceMappingConfiguration, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Removes an event source mapping. This means AWS Lambda will no longer invoke the function for events in the associated source. This operation requires permission for the lambda:DeleteEventSourceMapping action.
+     * Deletes an event source mapping.
      */
   def deleteEventSourceMapping(
     callback: js.Function2[
@@ -216,14 +257,14 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Removes an event source mapping. This means AWS Lambda will no longer invoke the function for events in the associated source. This operation requires permission for the lambda:DeleteEventSourceMapping action.
+     * Deletes an event source mapping.
      */
   def deleteEventSourceMapping(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.DeleteEventSourceMappingRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.EventSourceMappingConfiguration, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Removes an event source mapping. This means AWS Lambda will no longer invoke the function for events in the associated source. This operation requires permission for the lambda:DeleteEventSourceMapping action.
+     * Deletes an event source mapping.
      */
   def deleteEventSourceMapping(
     params: awsDashSdkLib.clientsLambdaMod.LambdaNs.DeleteEventSourceMappingRequest,
@@ -276,6 +317,27 @@ trait Lambda
      */
   def deleteFunctionConcurrency(
     params: awsDashSdkLib.clientsLambdaMod.LambdaNs.DeleteFunctionConcurrencyRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a version of a function layer. Deleted versions can no longer be viewed or added to functions. However, a copy of the version remains in Lambda until no functions refer to it.
+     */
+  def deleteLayerVersion(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a version of a function layer. Deleted versions can no longer be viewed or added to functions. However, a copy of the version remains in Lambda until no functions refer to it.
+     */
+  def deleteLayerVersion(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a version of a function layer. Deleted versions can no longer be viewed or added to functions. However, a copy of the version remains in Lambda until no functions refer to it.
+     */
+  def deleteLayerVersion(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.DeleteLayerVersionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a version of a function layer. Deleted versions can no longer be viewed or added to functions. However, a copy of the version remains in Lambda until no functions refer to it.
+     */
+  def deleteLayerVersion(
+    params: awsDashSdkLib.clientsLambdaMod.LambdaNs.DeleteLayerVersionRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -361,14 +423,14 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns configuration information for the specified event source mapping (see CreateEventSourceMapping). This operation requires permission for the lambda:GetEventSourceMapping action.
+     * Returns details about an event source mapping.
      */
   def getEventSourceMapping(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.EventSourceMappingConfiguration, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns configuration information for the specified event source mapping (see CreateEventSourceMapping). This operation requires permission for the lambda:GetEventSourceMapping action.
+     * Returns details about an event source mapping.
      */
   def getEventSourceMapping(
     callback: js.Function2[
@@ -381,14 +443,14 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns configuration information for the specified event source mapping (see CreateEventSourceMapping). This operation requires permission for the lambda:GetEventSourceMapping action.
+     * Returns details about an event source mapping.
      */
   def getEventSourceMapping(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.GetEventSourceMappingRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.EventSourceMappingConfiguration, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns configuration information for the specified event source mapping (see CreateEventSourceMapping). This operation requires permission for the lambda:GetEventSourceMapping action.
+     * Returns details about an event source mapping.
      */
   def getEventSourceMapping(
     params: awsDashSdkLib.clientsLambdaMod.LambdaNs.GetEventSourceMappingRequest,
@@ -481,6 +543,88 @@ trait Lambda
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a version of a function layer, with a link to download the layer archive that's valid for 10 minutes.
+     */
+  def getLayerVersion(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a version of a function layer, with a link to download the layer archive that's valid for 10 minutes.
+     */
+  def getLayerVersion(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a version of a function layer, with a link to download the layer archive that's valid for 10 minutes.
+     */
+  def getLayerVersion(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a version of a function layer, with a link to download the layer archive that's valid for 10 minutes.
+     */
+  def getLayerVersion(
+    params: awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the permission policy for a layer version. For more information, see AddLayerVersionPermission.
+     */
+  def getLayerVersionPolicy(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionPolicyResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the permission policy for a layer version. For more information, see AddLayerVersionPermission.
+     */
+  def getLayerVersionPolicy(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionPolicyResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionPolicyResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the permission policy for a layer version. For more information, see AddLayerVersionPermission.
+     */
+  def getLayerVersionPolicy(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionPolicyRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionPolicyResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the permission policy for a layer version. For more information, see AddLayerVersionPermission.
+     */
+  def getLayerVersionPolicy(
+    params: awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionPolicyRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionPolicyResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.GetLayerVersionPolicyResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -648,14 +792,14 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping).  For each mapping, the API returns configuration information. You can optionally specify filters to retrieve specific event source mappings. This operation requires permission for the lambda:ListEventSourceMappings action.
+     * Lists event source mappings. Specify an EventSourceArn to only show event source mappings for a single event source.
      */
   def listEventSourceMappings(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.ListEventSourceMappingsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping).  For each mapping, the API returns configuration information. You can optionally specify filters to retrieve specific event source mappings. This operation requires permission for the lambda:ListEventSourceMappings action.
+     * Lists event source mappings. Specify an EventSourceArn to only show event source mappings for a single event source.
      */
   def listEventSourceMappings(
     callback: js.Function2[
@@ -668,14 +812,14 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping).  For each mapping, the API returns configuration information. You can optionally specify filters to retrieve specific event source mappings. This operation requires permission for the lambda:ListEventSourceMappings action.
+     * Lists event source mappings. Specify an EventSourceArn to only show event source mappings for a single event source.
      */
   def listEventSourceMappings(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.ListEventSourceMappingsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.ListEventSourceMappingsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping).  For each mapping, the API returns configuration information. You can optionally specify filters to retrieve specific event source mappings. This operation requires permission for the lambda:ListEventSourceMappings action.
+     * Lists event source mappings. Specify an EventSourceArn to only show event source mappings for a single event source.
      */
   def listEventSourceMappings(
     params: awsDashSdkLib.clientsLambdaMod.LambdaNs.ListEventSourceMappingsRequest,
@@ -727,6 +871,88 @@ trait Lambda
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.ListFunctionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the versions of a function layer. Versions that have been deleted aren't listed. Specify a runtime identifier to list only versions that indicate that they're compatible with that runtime.
+     */
+  def listLayerVersions(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayerVersionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the versions of a function layer. Versions that have been deleted aren't listed. Specify a runtime identifier to list only versions that indicate that they're compatible with that runtime.
+     */
+  def listLayerVersions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayerVersionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayerVersionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the versions of a function layer. Versions that have been deleted aren't listed. Specify a runtime identifier to list only versions that indicate that they're compatible with that runtime.
+     */
+  def listLayerVersions(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayerVersionsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayerVersionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the versions of a function layer. Versions that have been deleted aren't listed. Specify a runtime identifier to list only versions that indicate that they're compatible with that runtime.
+     */
+  def listLayerVersions(
+    params: awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayerVersionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayerVersionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayerVersionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists function layers and shows information about the latest version of each. Specify a runtime identifier to list only layers that indicate that they're compatible with that runtime.
+     */
+  def listLayers(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists function layers and shows information about the latest version of each. Specify a runtime identifier to list only layers that indicate that they're compatible with that runtime.
+     */
+  def listLayers(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists function layers and shows information about the latest version of each. Specify a runtime identifier to list only layers that indicate that they're compatible with that runtime.
+     */
+  def listLayers(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayersRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists function layers and shows information about the latest version of each. Specify a runtime identifier to list only layers that indicate that they're compatible with that runtime.
+     */
+  def listLayers(
+    params: awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.ListLayersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -812,6 +1038,47 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Creates a function layer from a ZIP archive. Each time you call PublishLayerVersion with the same version name, a new version is created. Add layers to your function with CreateFunction or UpdateFunctionConfiguration.
+     */
+  def publishLayerVersion(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.PublishLayerVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a function layer from a ZIP archive. Each time you call PublishLayerVersion with the same version name, a new version is created. Add layers to your function with CreateFunction or UpdateFunctionConfiguration.
+     */
+  def publishLayerVersion(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.PublishLayerVersionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.PublishLayerVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a function layer from a ZIP archive. Each time you call PublishLayerVersion with the same version name, a new version is created. Add layers to your function with CreateFunction or UpdateFunctionConfiguration.
+     */
+  def publishLayerVersion(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.PublishLayerVersionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.PublishLayerVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a function layer from a ZIP archive. Each time you call PublishLayerVersion with the same version name, a new version is created. Add layers to your function with CreateFunction or UpdateFunctionConfiguration.
+     */
+  def publishLayerVersion(
+    params: awsDashSdkLib.clientsLambdaMod.LambdaNs.PublishLayerVersionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLambdaMod.LambdaNs.PublishLayerVersionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLambdaMod.LambdaNs.PublishLayerVersionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Publishes a version of your function from the current snapshot of $LATEST. That is, AWS Lambda takes a snapshot of the function code and configuration information from $LATEST and publishes a new version. The code and configuration cannot be modified after publication. For information about the versioning feature, see AWS Lambda Function Versioning and Aliases. 
      */
   def publishVersion(): awsDashSdkLib.libRequestMod.Request[
@@ -893,6 +1160,27 @@ trait Lambda
     awsDashSdkLib.clientsLambdaMod.LambdaNs.Concurrency, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
+  /**
+     * Removes a statement from the permissions policy for a layer version. For more information, see AddLayerVersionPermission.
+     */
+  def removeLayerVersionPermission(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Removes a statement from the permissions policy for a layer version. For more information, see AddLayerVersionPermission.
+     */
+  def removeLayerVersionPermission(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Removes a statement from the permissions policy for a layer version. For more information, see AddLayerVersionPermission.
+     */
+  def removeLayerVersionPermission(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.RemoveLayerVersionPermissionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Removes a statement from the permissions policy for a layer version. For more information, see AddLayerVersionPermission.
+     */
+  def removeLayerVersionPermission(
+    params: awsDashSdkLib.clientsLambdaMod.LambdaNs.RemoveLayerVersionPermissionRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
      * Removes permissions from a function. You can remove individual permissions from an resource policy associated with a Lambda function by providing a statement ID that you provided when you added the permission. When you remove permissions, disable the event source mapping or trigger configuration first to avoid errors. Permissions apply to the Amazon Resource Name (ARN) used to invoke the function, which can be unqualified (the unpublished version of the function), or include a version or alias. If a client uses a version or alias to invoke a function, use the Qualifier parameter to apply permissions to that ARN. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  You need permission for the lambda:RemovePermission action.
      */
@@ -998,14 +1286,14 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * You can update an event source mapping. This is useful if you want to change the parameters of the existing mapping without losing your position in the stream. You can change which function will receive the stream records, but to change the stream itself, you must create a new mapping. If you disable the event source mapping, AWS Lambda stops polling. If you enable again, it will resume polling from the time it had stopped polling, so you don't lose processing of any records. However, if you delete event source mapping and create it again, it will reset. This operation requires permission for the lambda:UpdateEventSourceMapping action.
+     * Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and resume later from the same location.
      */
   def updateEventSourceMapping(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.EventSourceMappingConfiguration, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * You can update an event source mapping. This is useful if you want to change the parameters of the existing mapping without losing your position in the stream. You can change which function will receive the stream records, but to change the stream itself, you must create a new mapping. If you disable the event source mapping, AWS Lambda stops polling. If you enable again, it will resume polling from the time it had stopped polling, so you don't lose processing of any records. However, if you delete event source mapping and create it again, it will reset. This operation requires permission for the lambda:UpdateEventSourceMapping action.
+     * Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and resume later from the same location.
      */
   def updateEventSourceMapping(
     callback: js.Function2[
@@ -1018,14 +1306,14 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * You can update an event source mapping. This is useful if you want to change the parameters of the existing mapping without losing your position in the stream. You can change which function will receive the stream records, but to change the stream itself, you must create a new mapping. If you disable the event source mapping, AWS Lambda stops polling. If you enable again, it will resume polling from the time it had stopped polling, so you don't lose processing of any records. However, if you delete event source mapping and create it again, it will reset. This operation requires permission for the lambda:UpdateEventSourceMapping action.
+     * Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and resume later from the same location.
      */
   def updateEventSourceMapping(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.UpdateEventSourceMappingRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.EventSourceMappingConfiguration, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * You can update an event source mapping. This is useful if you want to change the parameters of the existing mapping without losing your position in the stream. You can change which function will receive the stream records, but to change the stream itself, you must create a new mapping. If you disable the event source mapping, AWS Lambda stops polling. If you enable again, it will resume polling from the time it had stopped polling, so you don't lose processing of any records. However, if you delete event source mapping and create it again, it will reset. This operation requires permission for the lambda:UpdateEventSourceMapping action.
+     * Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and resume later from the same location.
      */
   def updateEventSourceMapping(
     params: awsDashSdkLib.clientsLambdaMod.LambdaNs.UpdateEventSourceMappingRequest,

@@ -13,5 +13,9 @@ trait IQueryStats extends js.Object {
   var perType: js.UndefOr[js.Array[ITypeStat] | scala.Null] = js.undefined
   /** QueryStats perTypeStat */
   var perTypeStat: js.UndefOr[ScalablyTyped.runtime.StringDictionary[ITypeStat] | scala.Null] = js.undefined
+  /** QueryStats queryStatsWithContext */
+  var queryStatsWithContext: js.UndefOr[js.Array[IContextualizedQueryLatencyStats] | scala.Null] = js.undefined
+  /** QueryStats typeStatsWithContext */
+  var typeStatsWithContext: js.UndefOr[js.Array[IContextualizedTypeStats] | scala.Null] = js.undefined
 }
 

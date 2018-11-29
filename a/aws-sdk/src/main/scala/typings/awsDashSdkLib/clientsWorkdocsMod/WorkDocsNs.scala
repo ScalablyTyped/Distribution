@@ -55,6 +55,10 @@ object WorkDocsNs extends js.Object {
          */
     var Initiator: js.UndefOr[UserMetadata] = js.undefined
     /**
+         * Indicates whether an activity is indirect or direct. An indirect activity results from a direct activity performed on a parent resource. For example, sharing a parent folder (the direct activity) shares all of the subfolders and documents within the parent folder (the indirect activity).
+         */
+    var IsIndirectActivity: js.UndefOr[BooleanType] = js.undefined
+    /**
          * The ID of the organization.
          */
     var OrganizationId: js.UndefOr[IdType] = js.undefined
@@ -515,6 +519,10 @@ object WorkDocsNs extends js.Object {
   
   trait DescribeActivitiesRequest extends js.Object {
     /**
+         * Specifies which activity types to include in the response. If this field is left empty, all activity types are returned.
+         */
+    var ActivityTypes: js.UndefOr[ActivityNamesFilterType] = js.undefined
+    /**
          * Amazon WorkDocs authentication token. Do not set this field when using administrative API actions, as in accessing the API using AWS credentials.
          */
     var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
@@ -522,6 +530,10 @@ object WorkDocsNs extends js.Object {
          * The timestamp that determines the end time of the activities. The response includes the activities performed before the specified timestamp.
          */
     var EndTime: js.UndefOr[TimestampType] = js.undefined
+    /**
+         * Includes indirect activities. An indirect activity results from a direct activity performed on a parent resource. For example, sharing a parent folder (the direct activity) shares all of the subfolders and documents within the parent folder (the indirect activity).
+         */
+    var IncludeIndirectActivities: js.UndefOr[BooleanType] = js.undefined
     /**
          * The maximum number of items to return.
          */
@@ -534,6 +546,10 @@ object WorkDocsNs extends js.Object {
          * The ID of the organization. This is a mandatory parameter when using administrative API (SigV4) requests.
          */
     var OrganizationId: js.UndefOr[IdType] = js.undefined
+    /**
+         * The document or folder ID for which to describe activity types.
+         */
+    var ResourceId: js.UndefOr[IdType] = js.undefined
     /**
          * The timestamp that determines the starting time of the activities. The response includes the activities performed after the specified timestamp.
          */
@@ -1193,6 +1209,46 @@ object WorkDocsNs extends js.Object {
   }
   
   
+  trait GetResourcesRequest extends js.Object {
+    /**
+         * The Amazon WorkDocs authentication token. Do not set this field when using administrative API actions, as in accessing the API operation using AWS credentials.
+         */
+    var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
+    /**
+         * The collection type.
+         */
+    var CollectionType: js.UndefOr[ResourceCollectionType] = js.undefined
+    /**
+         * The maximum number of resources to return.
+         */
+    var Limit: js.UndefOr[LimitType] = js.undefined
+    /**
+         * The marker for the next set of results. This marker was received from a previous call.
+         */
+    var Marker: js.UndefOr[PageMarkerType] = js.undefined
+    /**
+         * The user ID for the resource collection. This is a required field for accessing the API operation using IAM credentials.
+         */
+    var UserId: js.UndefOr[IdType] = js.undefined
+  }
+  
+  
+  trait GetResourcesResponse extends js.Object {
+    /**
+         * The documents in the specified collection.
+         */
+    var Documents: js.UndefOr[DocumentMetadataList] = js.undefined
+    /**
+         * The folders in the specified folder.
+         */
+    var Folders: js.UndefOr[FolderMetadataList] = js.undefined
+    /**
+         * The marker to use when requesting the next set of results. If there are no additional results, the string is empty.
+         */
+    var Marker: js.UndefOr[PageMarkerType] = js.undefined
+  }
+  
+  
   trait GroupMetadata extends js.Object {
     /**
          * The ID of the user group.
@@ -1406,6 +1462,10 @@ object WorkDocsNs extends js.Object {
   
   
   trait ShareResult extends js.Object {
+    /**
+         * The ID of the invited user.
+         */
+    var InviteePrincipalId: js.UndefOr[IdType] = js.undefined
     /**
          * The ID of the principal.
          */
@@ -1661,11 +1721,11 @@ object WorkDocsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateLabelsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Configure WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Confirm the Subscription in the Amazon Simple Notification Service Developer Guide.
+       * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
        */
     def createNotificationSubscription(): awsDashSdkLib.libRequestMod.Request[CreateNotificationSubscriptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Configure WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Confirm the Subscription in the Amazon Simple Notification Service Developer Guide.
+       * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
        */
     def createNotificationSubscription(
       callback: js.Function2[
@@ -1675,11 +1735,11 @@ object WorkDocsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateNotificationSubscriptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Configure WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Confirm the Subscription in the Amazon Simple Notification Service Developer Guide.
+       * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
        */
     def createNotificationSubscription(params: CreateNotificationSubscriptionRequest): awsDashSdkLib.libRequestMod.Request[CreateNotificationSubscriptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Configure WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Confirm the Subscription in the Amazon Simple Notification Service Developer Guide.
+       * Configure Amazon WorkDocs to use Amazon SNS notifications. The endpoint receives a confirmation message, and must confirm the subscription. For more information, see Subscribe to Notifications in the Amazon WorkDocs Developer Guide.
        */
     def createNotificationSubscription(
       params: CreateNotificationSubscriptionRequest,
@@ -2040,11 +2100,11 @@ object WorkDocsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeFolderContentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the groups specified by query.
+       * Describes the groups specified by the query. Groups are defined by the underlying Active Directory.
        */
     def describeGroups(): awsDashSdkLib.libRequestMod.Request[DescribeGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the groups specified by query.
+       * Describes the groups specified by the query. Groups are defined by the underlying Active Directory.
        */
     def describeGroups(
       callback: js.Function2[
@@ -2054,11 +2114,11 @@ object WorkDocsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the groups specified by query.
+       * Describes the groups specified by the query. Groups are defined by the underlying Active Directory.
        */
     def describeGroups(params: DescribeGroupsRequest): awsDashSdkLib.libRequestMod.Request[DescribeGroupsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the groups specified by query.
+       * Describes the groups specified by the query. Groups are defined by the underlying Active Directory.
        */
     def describeGroups(
       params: DescribeGroupsRequest,
@@ -2127,11 +2187,11 @@ object WorkDocsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeResourcePermissionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients.
+       * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients. This action requires an authentication token. To get an authentication token, register an application with Amazon WorkDocs. For more information, see Authentication and Access Control for User Applications in the Amazon WorkDocs Developer Guide.
        */
     def describeRootFolders(): awsDashSdkLib.libRequestMod.Request[DescribeRootFoldersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients.
+       * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients. This action requires an authentication token. To get an authentication token, register an application with Amazon WorkDocs. For more information, see Authentication and Access Control for User Applications in the Amazon WorkDocs Developer Guide.
        */
     def describeRootFolders(
       callback: js.Function2[
@@ -2141,11 +2201,11 @@ object WorkDocsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeRootFoldersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients.
+       * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients. This action requires an authentication token. To get an authentication token, register an application with Amazon WorkDocs. For more information, see Authentication and Access Control for User Applications in the Amazon WorkDocs Developer Guide.
        */
     def describeRootFolders(params: DescribeRootFoldersRequest): awsDashSdkLib.libRequestMod.Request[DescribeRootFoldersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients.
+       * Describes the current user's special folders; the RootFolder and the RecycleBin. RootFolder is the root of user's files and folders and RecycleBin is the root of recycled items. This is not a valid action for SigV4 (administrative API) clients. This action requires an authentication token. To get an authentication token, register an application with Amazon WorkDocs. For more information, see Authentication and Access Control for User Applications in the Amazon WorkDocs Developer Guide.
        */
     def describeRootFolders(
       params: DescribeRootFoldersRequest,
@@ -2358,6 +2418,35 @@ object WorkDocsNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetFolderPathResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a collection of resources, including folders and documents. The only CollectionType supported is SHARED_WITH_ME.
+       */
+    def getResources(): awsDashSdkLib.libRequestMod.Request[GetResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a collection of resources, including folders and documents. The only CollectionType supported is SHARED_WITH_ME.
+       */
+    def getResources(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetResourcesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a collection of resources, including folders and documents. The only CollectionType supported is SHARED_WITH_ME.
+       */
+    def getResources(params: GetResourcesRequest): awsDashSdkLib.libRequestMod.Request[GetResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves a collection of resources, including folders and documents. The only CollectionType supported is SHARED_WITH_ME.
+       */
+    def getResources(
+      params: GetResourcesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetResourcesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Creates a new document object and version object. The client specifies the parent folder ID and name of the document to upload. The ID is optionally specified when creating a new version of an existing document. This is the first step to upload a document. Next, upload the document to the URL returned from the call, and then call UpdateDocumentVersion. To cancel the document upload, call AbortDocumentVersionUpload.
        */
@@ -2752,7 +2841,8 @@ object WorkDocsNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
-  type ActivityType = awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_CHECKED_IN | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_CHECKED_OUT | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_RENAMED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_VERSION_UPLOADED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_VERSION_DELETED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_RECYCLED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_RESTORED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_REVERTED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHARED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_UNSHARED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHARE_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHAREABLE_LINK_CREATED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHAREABLE_LINK_REMOVED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHAREABLE_LINK_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_MOVED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_COMMENT_ADDED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_COMMENT_DELETED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_ANNOTATION_ADDED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_ANNOTATION_DELETED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_CREATED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_DELETED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_RENAMED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_RECYCLED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_RESTORED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHARED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_UNSHARED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHARE_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHAREABLE_LINK_CREATED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHAREABLE_LINK_REMOVED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHAREABLE_LINK_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_MOVED | java.lang.String
+  type ActivityNamesFilterType = java.lang.String
+  type ActivityType = awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_CHECKED_IN | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_CHECKED_OUT | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_RENAMED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_VERSION_UPLOADED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_VERSION_DELETED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_VERSION_VIEWED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_VERSION_DOWNLOADED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_RECYCLED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_RESTORED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_REVERTED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHARED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_UNSHARED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHARE_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHAREABLE_LINK_CREATED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHAREABLE_LINK_REMOVED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_SHAREABLE_LINK_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_MOVED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_COMMENT_ADDED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_COMMENT_DELETED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_ANNOTATION_ADDED | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_ANNOTATION_DELETED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_CREATED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_DELETED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_RENAMED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_RECYCLED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_RESTORED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHARED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_UNSHARED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHARE_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHAREABLE_LINK_CREATED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHAREABLE_LINK_REMOVED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_SHAREABLE_LINK_PERMISSION_CHANGED | awsDashSdkLib.awsDashSdkLibStrings.FOLDER_MOVED | java.lang.String
   type AuthenticationHeaderType = java.lang.String
   type BooleanEnumType = awsDashSdkLib.awsDashSdkLibStrings.TRUE | awsDashSdkLib.awsDashSdkLibStrings.FALSE | java.lang.String
   type BooleanType = scala.Boolean
@@ -2796,6 +2886,7 @@ object WorkDocsNs extends js.Object {
   type PositiveSizeType = scala.Double
   type PrincipalList = js.Array[Principal]
   type PrincipalType = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.GROUP | awsDashSdkLib.awsDashSdkLibStrings.INVITE | awsDashSdkLib.awsDashSdkLibStrings.ANONYMOUS | awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATION | java.lang.String
+  type ResourceCollectionType = awsDashSdkLib.awsDashSdkLibStrings.SHARED_WITH_ME | java.lang.String
   type ResourceIdType = java.lang.String
   type ResourceNameType = java.lang.String
   type ResourcePathComponentList = js.Array[ResourcePathComponent]

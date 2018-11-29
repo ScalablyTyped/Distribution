@@ -15,6 +15,8 @@ trait ITrace extends js.Object {
   var clientAddress: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /** Trace clientName */
   var clientName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /** Trace clientReferenceId */
+  var clientReferenceId: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /** Trace clientVersion */
   var clientVersion: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /** Trace details */

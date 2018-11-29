@@ -45,6 +45,50 @@ object LambdaNs extends js.Object {
   }
   
   
+  trait AddLayerVersionPermissionRequest extends js.Object {
+    /**
+         * The API action that grants access to the layer. For example, lambda:GetLayerVersion.
+         */
+    var Action: LayerPermissionAllowedAction
+    /**
+         * The name of the layer.
+         */
+    var LayerName: LayerName
+    /**
+         * With the principal set to *, grant permission to all accounts in the specified organization.
+         */
+    var OrganizationId: js.UndefOr[OrganizationId] = js.undefined
+    /**
+         * An account ID, or * to grant permission to all AWS accounts.
+         */
+    var Principal: LayerPermissionAllowedPrincipal
+    /**
+         * Only update the policy if the revision ID matches the ID specified. Use this option to avoid modifying a policy that has changed since you last read it.
+         */
+    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * An identifier that distinguishes the policy from others on the same layer version.
+         */
+    var StatementId: StatementId
+    /**
+         * The version number.
+         */
+    var VersionNumber: LayerVersionNumber
+  }
+  
+  
+  trait AddLayerVersionPermissionResponse extends js.Object {
+    /**
+         * A unique identifier for the current revision of the policy.
+         */
+    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The permission statement.
+         */
+    var Statement: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait AddPermissionRequest extends js.Object {
     /**
          * The AWS Lambda action you want to allow in this statement. Each Lambda action is a string starting with lambda: followed by the API name . For example, lambda:CreateFunction. You can use wildcard (lambda:*) to grant permission for all AWS Lambda actions. 
@@ -55,7 +99,7 @@ object LambdaNs extends js.Object {
          */
     var EventSourceToken: js.UndefOr[EventSourceToken] = js.undefined
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: FunctionName
     /**
@@ -175,27 +219,27 @@ object LambdaNs extends js.Object {
   
   trait CreateEventSourceMappingRequest extends js.Object {
     /**
-         * The largest number of records that AWS Lambda will retrieve from your event source at the time of invoking your function. Your function receives an event with all the retrieved records. The default for Amazon Kinesis and Amazon DynamoDB is 100 records. Both the default and maximum for Amazon SQS are 10 messages.
+         * The maximum number of items to retrieve in a single batch.    Amazon Kinesis - Default 100. Max 10,000.    Amazon DynamoDB Streams - Default 100. Max 1,000.    Amazon Simple Queue Service - Default 10. Max 10.  
          */
     var BatchSize: js.UndefOr[BatchSize] = js.undefined
     /**
-         * Set to false to disable the event source upon creation. 
+         * Disables the event source mapping to pause polling and invocation.
          */
     var Enabled: js.UndefOr[Enabled] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the event source.
+         * The Amazon Resource Name (ARN) of the event source.    Amazon Kinesis - The ARN of the data stream or a stream consumer.    Amazon DynamoDB Streams - The ARN of the stream.    Amazon Simple Queue Service - The ARN of the queue.  
          */
     var EventSourceArn: Arn
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Version or Alias ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction:PROD.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Version or Alias ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction:PROD.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it's limited to 64 characters in length.
          */
     var FunctionName: FunctionName
     /**
-         * The position in the DynamoDB or Kinesis stream where AWS Lambda should start reading. For more information, see GetShardIterator in the Amazon Kinesis API Reference Guide or GetShardIterator in the Amazon DynamoDB API Reference Guide. The AT_TIMESTAMP value is supported only for Kinesis streams. 
+         * The position in a stream from which to start reading. Required for Amazon Kinesis and Amazon DynamoDB Streams sources. AT_TIMESTAMP is only supported for Amazon Kinesis streams.
          */
     var StartingPosition: js.UndefOr[EventSourcePosition] = js.undefined
     /**
-         * The timestamp of the data record from which to start reading. Used with shard iterator type AT_TIMESTAMP. If a record with this exact timestamp does not exist, the iterator returned is for the next (later) record. If the timestamp is older than the current trim horizon, the iterator returned is for the oldest untrimmed data record (TRIM_HORIZON). Valid only for Kinesis streams. 
+         * With StartingPosition set to AT_TIMESTAMP, the Unix time in seconds from which to start reading.
          */
     var StartingPositionTimestamp: js.UndefOr[_Date] = js.undefined
   }
@@ -219,7 +263,7 @@ object LambdaNs extends js.Object {
          */
     var Environment: js.UndefOr[Environment] = js.undefined
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: FunctionName
     /**
@@ -230,6 +274,10 @@ object LambdaNs extends js.Object {
          * The ARN of the KMS key used to encrypt your function's environment variables. If not provided, AWS Lambda will use a default service key.
          */
     var KMSKeyArn: js.UndefOr[KMSKeyArn] = js.undefined
+    /**
+         * A list of function layers to add to the function's execution environment.
+         */
+    var Layers: js.UndefOr[LayerList] = js.undefined
     /**
          * The amount of memory that your function has access to. Increasing the function's memory also increases it's CPU allocation. The default value is 128 MB. The value must be a multiple of 64 MB.
          */
@@ -287,7 +335,7 @@ object LambdaNs extends js.Object {
   
   trait DeleteEventSourceMappingRequest extends js.Object {
     /**
-         * The event source mapping ID.
+         * The identifier of the event source mapping.
          */
     var UUID: java.lang.String
   }
@@ -295,7 +343,7 @@ object LambdaNs extends js.Object {
   
   trait DeleteFunctionConcurrencyRequest extends js.Object {
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: FunctionName
   }
@@ -303,13 +351,25 @@ object LambdaNs extends js.Object {
   
   trait DeleteFunctionRequest extends js.Object {
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: FunctionName
     /**
          * Specify a version to delete. You cannot delete a version that is referenced by an alias.
          */
     var Qualifier: js.UndefOr[Qualifier] = js.undefined
+  }
+  
+  
+  trait DeleteLayerVersionRequest extends js.Object {
+    /**
+         * The name of the layer.
+         */
+    var LayerName: LayerName
+    /**
+         * The version number.
+         */
+    var VersionNumber: LayerVersionNumber
   }
   
   
@@ -351,35 +411,35 @@ object LambdaNs extends js.Object {
   
   trait EventSourceMappingConfiguration extends js.Object {
     /**
-         * The largest number of records that AWS Lambda will retrieve from your event source at the time of invoking your function. Your function receives an event with all the retrieved records.
+         * The maximum number of items to retrieve in a single batch.
          */
     var BatchSize: js.UndefOr[BatchSize] = js.undefined
     /**
-         * The Amazon Resource Name (ARN) of the Amazon Kinesis or DynamoDB stream that is the source of events.
+         * The Amazon Resource Name (ARN) of the event source.
          */
     var EventSourceArn: js.UndefOr[Arn] = js.undefined
     /**
-         * The Lambda function to invoke when AWS Lambda detects an event on the poll-based source.
+         * The ARN of the Lambda function.
          */
     var FunctionArn: js.UndefOr[FunctionArn] = js.undefined
     /**
-         * The UTC time string indicating the last time the event mapping was updated.
+         * The date that the event source mapping was last updated, in Unix time seconds.
          */
     var LastModified: js.UndefOr[_Date] = js.undefined
     /**
-         * The result of the last AWS Lambda invocation of your Lambda function. This value will be null if an SQS queue is the event source.
+         * The result of the last AWS Lambda invocation of your Lambda function.
          */
     var LastProcessingResult: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The state of the event source mapping. It can be Creating, Enabled, Disabled, Enabling, Disabling, Updating, or Deleting.
+         * The state of the event source mapping. It can be one of the following: Creating, Enabling, Enabled, Disabling, Disabled, Updating, or Deleting.
          */
     var State: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The reason the event source mapping is in its current state. It is either user-requested or an AWS Lambda-initiated state transition.
+         * The cause of the last state change, either User initiated or Lambda initiated.
          */
     var StateTransitionReason: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The AWS Lambda assigned opaque identifier for the mapping.
+         * The identifier of the event source mapping.
          */
     var UUID: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -455,9 +515,13 @@ object LambdaNs extends js.Object {
          */
     var KMSKeyArn: js.UndefOr[KMSKeyArn] = js.undefined
     /**
-         * The date and time that the function was last updated, in ISO-8601 format (YYYY-MM-DDThh:mm:ssTZD).
+         * The date and time that the function was last updated, in ISO-8601 format (YYYY-MM-DDThh:mm:ss.sTZD).
          */
     var LastModified: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * A list of function layers.
+         */
+    var Layers: js.UndefOr[LayersReferenceList] = js.undefined
     /**
          * The ARN of the master function.
          */
@@ -526,7 +590,7 @@ object LambdaNs extends js.Object {
   
   trait GetEventSourceMappingRequest extends js.Object {
     /**
-         * The AWS Lambda assigned ID of the event source mapping.
+         * The identifier of the event source mapping.
          */
     var UUID: java.lang.String
   }
@@ -534,7 +598,7 @@ object LambdaNs extends js.Object {
   
   trait GetFunctionConfigurationRequest extends js.Object {
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: NamespacedFunctionName
     /**
@@ -546,7 +610,7 @@ object LambdaNs extends js.Object {
   
   trait GetFunctionRequest extends js.Object {
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: NamespacedFunctionName
     /**
@@ -573,6 +637,78 @@ object LambdaNs extends js.Object {
          * Returns the list of tags associated with the function. For more information, see Tagging Lambda Functions in the AWS Lambda Developer Guide.
          */
     var Tags: js.UndefOr[Tags] = js.undefined
+  }
+  
+  
+  trait GetLayerVersionPolicyRequest extends js.Object {
+    /**
+         * The name of the layer.
+         */
+    var LayerName: LayerName
+    /**
+         * The version number.
+         */
+    var VersionNumber: LayerVersionNumber
+  }
+  
+  
+  trait GetLayerVersionPolicyResponse extends js.Object {
+    /**
+         * The policy document.
+         */
+    var Policy: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * A unique identifier for the current revision of the policy.
+         */
+    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait GetLayerVersionRequest extends js.Object {
+    /**
+         * The name of the layer.
+         */
+    var LayerName: LayerName
+    /**
+         * The version number.
+         */
+    var VersionNumber: LayerVersionNumber
+  }
+  
+  
+  trait GetLayerVersionResponse extends js.Object {
+    /**
+         * The layer's compatible runtimes.
+         */
+    var CompatibleRuntimes: js.UndefOr[CompatibleRuntimes] = js.undefined
+    /**
+         * Details about the layer version.
+         */
+    var Content: js.UndefOr[LayerVersionContentOutput] = js.undefined
+    /**
+         * The date that the layer version was created, in ISO-8601 format (YYYY-MM-DDThh:mm:ss.sTZD).
+         */
+    var CreatedDate: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The description of the version.
+         */
+    var Description: js.UndefOr[Description] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the function layer.
+         */
+    var LayerArn: js.UndefOr[LayerArn] = js.undefined
+    /**
+         * The ARN of the layer version.
+         */
+    var LayerVersionArn: js.UndefOr[LayerVersionArn] = js.undefined
+    /**
+         * The layer's software license.
+         */
+    var LicenseInfo: js.UndefOr[LicenseInfo] = js.undefined
+    /**
+         * The version number.
+         */
+    var Version: js.UndefOr[LayerVersionNumber] = js.undefined
   }
   
   
@@ -606,7 +742,7 @@ object LambdaNs extends js.Object {
          */
     var ClientContext: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: NamespacedFunctionName
     /**
@@ -654,7 +790,7 @@ object LambdaNs extends js.Object {
   
   trait InvokeAsyncRequest extends js.Object {
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: NamespacedFunctionName
     /**
@@ -669,6 +805,98 @@ object LambdaNs extends js.Object {
          * It will be 202 upon success.
          */
     var Status: js.UndefOr[HttpStatus] = js.undefined
+  }
+  
+  
+  trait Layer extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the function layer.
+         */
+    var Arn: js.UndefOr[LayerVersionArn] = js.undefined
+    /**
+         * The size of the layer archive in bytes.
+         */
+    var CodeSize: js.UndefOr[Long] = js.undefined
+  }
+  
+  
+  trait LayerVersionContentInput extends js.Object {
+    /**
+         * The Amazon S3 bucket of the layer archive.
+         */
+    var S3Bucket: js.UndefOr[S3Bucket] = js.undefined
+    /**
+         * The Amazon S3 key of the layer archive.
+         */
+    var S3Key: js.UndefOr[S3Key] = js.undefined
+    /**
+         * For versioned objects, the version of the layer archive object to use.
+         */
+    var S3ObjectVersion: js.UndefOr[S3ObjectVersion] = js.undefined
+    /**
+         * The base64-encoded contents of the layer archive. AWS SDK and AWS CLI clients handle the encoding for you.
+         */
+    var ZipFile: js.UndefOr[_Blob] = js.undefined
+  }
+  
+  
+  trait LayerVersionContentOutput extends js.Object {
+    /**
+         * The SHA-256 hash of the layer archive.
+         */
+    var CodeSha256: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The size of the layer archive in bytes.
+         */
+    var CodeSize: js.UndefOr[Long] = js.undefined
+    /**
+         * A link to the layer archive in Amazon S3 that is valid for 10 minutes.
+         */
+    var Location: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait LayerVersionsListItem extends js.Object {
+    /**
+         * The layer's compatible runtimes.
+         */
+    var CompatibleRuntimes: js.UndefOr[CompatibleRuntimes] = js.undefined
+    /**
+         * The date that the version was created, in ISO 8601 format. For example, 2018-11-27T15:10:45.123+0000.
+         */
+    var CreatedDate: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The description of the version.
+         */
+    var Description: js.UndefOr[Description] = js.undefined
+    /**
+         * The ARN of the layer version.
+         */
+    var LayerVersionArn: js.UndefOr[LayerVersionArn] = js.undefined
+    /**
+         * The layer's open-source license.
+         */
+    var LicenseInfo: js.UndefOr[LicenseInfo] = js.undefined
+    /**
+         * The version number.
+         */
+    var Version: js.UndefOr[LayerVersionNumber] = js.undefined
+  }
+  
+  
+  trait LayersListItem extends js.Object {
+    /**
+         * The newest version of the layer.
+         */
+    var LatestMatchingVersion: js.UndefOr[LayerVersionsListItem] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the function layer.
+         */
+    var LayerArn: js.UndefOr[LayerArn] = js.undefined
+    /**
+         * The name of the layer.
+         */
+    var LayerName: js.UndefOr[LayerName] = js.undefined
   }
   
   
@@ -706,19 +934,19 @@ object LambdaNs extends js.Object {
   
   trait ListEventSourceMappingsRequest extends js.Object {
     /**
-         * The Amazon Resource Name (ARN) of the Amazon Kinesis or DynamoDB stream. (This parameter is optional.)
+         * The Amazon Resource Name (ARN) of the event source.    Amazon Kinesis - The ARN of the data stream or a stream consumer.    Amazon DynamoDB Streams - The ARN of the stream.    Amazon Simple Queue Service - The ARN of the queue.  
          */
     var EventSourceArn: js.UndefOr[Arn] = js.undefined
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Version or Alias ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction:PROD.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Version or Alias ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction:PROD.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it's limited to 64 characters in length.
          */
     var FunctionName: js.UndefOr[FunctionName] = js.undefined
     /**
-         * Optional string. An opaque pagination token returned from a previous ListEventSourceMappings operation. If present, specifies to continue the list from where the returning call left off. 
+         * A pagination token returned by a previous call.
          */
     var Marker: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * Optional integer. Specifies the maximum number of event sources to return in response. This value must be greater than 0.
+         * The maximum number of event source mappings to return.
          */
     var MaxItems: js.UndefOr[MaxListItems] = js.undefined
   }
@@ -726,11 +954,11 @@ object LambdaNs extends js.Object {
   
   trait ListEventSourceMappingsResponse extends js.Object {
     /**
-         * An array of EventSourceMappingConfiguration objects.
+         * A list of event source mappings.
          */
     var EventSourceMappings: js.UndefOr[EventSourceMappingsList] = js.undefined
     /**
-         * A string, present if there are more event source mappings.
+         * A pagination token that's returned when the response doesn't contain all event source mappings.
          */
     var NextMarker: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -763,6 +991,66 @@ object LambdaNs extends js.Object {
     var Functions: js.UndefOr[FunctionList] = js.undefined
     /**
          * A string, present if there are more functions.
+         */
+    var NextMarker: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ListLayerVersionsRequest extends js.Object {
+    /**
+         * A runtime identifier. For example, go1.x.
+         */
+    var CompatibleRuntime: js.UndefOr[Runtime] = js.undefined
+    /**
+         * The name of the layer.
+         */
+    var LayerName: LayerName
+    /**
+         * A pagination token returned by a previous call.
+         */
+    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The maximum number of versions to return.
+         */
+    var MaxItems: js.UndefOr[MaxLayerListItems] = js.undefined
+  }
+  
+  
+  trait ListLayerVersionsResponse extends js.Object {
+    /**
+         * A list of versions.
+         */
+    var LayerVersions: js.UndefOr[LayerVersionsList] = js.undefined
+    /**
+         * A pagination token returned when the response doesn't contain all versions.
+         */
+    var NextMarker: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ListLayersRequest extends js.Object {
+    /**
+         * A runtime identifier. For example, go1.x.
+         */
+    var CompatibleRuntime: js.UndefOr[Runtime] = js.undefined
+    /**
+         * A pagination token returned by a previous call.
+         */
+    var Marker: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The maximum number of layers to return.
+         */
+    var MaxItems: js.UndefOr[MaxLayerListItems] = js.undefined
+  }
+  
+  
+  trait ListLayersResponse extends js.Object {
+    /**
+         * A list of function layers.
+         */
+    var Layers: js.UndefOr[LayersList] = js.undefined
+    /**
+         * A pagination token returned when the response doesn't contain all layers.
          */
     var NextMarker: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -812,6 +1100,66 @@ object LambdaNs extends js.Object {
   }
   
   
+  trait PublishLayerVersionRequest extends js.Object {
+    /**
+         * A list of compatible function runtimes. Used for filtering with ListLayers and ListLayerVersions.
+         */
+    var CompatibleRuntimes: js.UndefOr[CompatibleRuntimes] = js.undefined
+    /**
+         * The function layer archive.
+         */
+    var Content: LayerVersionContentInput
+    /**
+         * The description of the version.
+         */
+    var Description: js.UndefOr[Description] = js.undefined
+    /**
+         * The name of the layer.
+         */
+    var LayerName: LayerName
+    /**
+         * The layer's software license. It can be any of the following:   An SPDX license identifier. For example, MIT.   The URL of a license hosted on the internet. For example, https://opensource.org/licenses/MIT.   The full text of the license.  
+         */
+    var LicenseInfo: js.UndefOr[LicenseInfo] = js.undefined
+  }
+  
+  
+  trait PublishLayerVersionResponse extends js.Object {
+    /**
+         * The layer's compatible runtimes.
+         */
+    var CompatibleRuntimes: js.UndefOr[CompatibleRuntimes] = js.undefined
+    /**
+         * Details about the layer version.
+         */
+    var Content: js.UndefOr[LayerVersionContentOutput] = js.undefined
+    /**
+         * The date that the layer version was created, in ISO-8601 format (YYYY-MM-DDThh:mm:ss.sTZD).
+         */
+    var CreatedDate: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The description of the version.
+         */
+    var Description: js.UndefOr[Description] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the function layer.
+         */
+    var LayerArn: js.UndefOr[LayerArn] = js.undefined
+    /**
+         * The ARN of the layer version.
+         */
+    var LayerVersionArn: js.UndefOr[LayerVersionArn] = js.undefined
+    /**
+         * The layer's software license.
+         */
+    var LicenseInfo: js.UndefOr[LicenseInfo] = js.undefined
+    /**
+         * The version number.
+         */
+    var Version: js.UndefOr[LayerVersionNumber] = js.undefined
+  }
+  
+  
   trait PublishVersionRequest extends js.Object {
     /**
          * The SHA256 hash of the deployment package you want to publish. This provides validation on the code you are publishing. If you provide this parameter, the value must match the SHA256 of the $LATEST version for the publication to succeed. You can use the DryRun parameter of UpdateFunctionCode to verify the hash value that will be returned before publishing your new version.
@@ -834,7 +1182,7 @@ object LambdaNs extends js.Object {
   
   trait PutFunctionConcurrencyRequest extends js.Object {
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: FunctionName
     /**
@@ -844,9 +1192,29 @@ object LambdaNs extends js.Object {
   }
   
   
+  trait RemoveLayerVersionPermissionRequest extends js.Object {
+    /**
+         * The name of the layer.
+         */
+    var LayerName: LayerName
+    /**
+         * Only update the policy if the revision ID matches the ID specified. Use this option to avoid modifying a policy that has changed since you last read it.
+         */
+    var RevisionId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The identifier that was specified when the statement was added.
+         */
+    var StatementId: StatementId
+    /**
+         * The version number.
+         */
+    var VersionNumber: LayerVersionNumber
+  }
+  
+  
   trait RemovePermissionRequest extends js.Object {
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: FunctionName
     /**
@@ -900,6 +1268,35 @@ object LambdaNs extends js.Object {
     extends awsDashSdkLib.libServiceMod.Service {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
+    /**
+       * Adds permissions to the resource-based policy of a version of a function layer. Use this action to grant layer usage permission to other accounts. You can grant permission to a single account, all AWS accounts, or all accounts in an organization. To revoke permission, call RemoveLayerVersionPermission with the statement ID that you specified when you added it.
+       */
+    def addLayerVersionPermission(): awsDashSdkLib.libRequestMod.Request[AddLayerVersionPermissionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds permissions to the resource-based policy of a version of a function layer. Use this action to grant layer usage permission to other accounts. You can grant permission to a single account, all AWS accounts, or all accounts in an organization. To revoke permission, call RemoveLayerVersionPermission with the statement ID that you specified when you added it.
+       */
+    def addLayerVersionPermission(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AddLayerVersionPermissionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AddLayerVersionPermissionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds permissions to the resource-based policy of a version of a function layer. Use this action to grant layer usage permission to other accounts. You can grant permission to a single account, all AWS accounts, or all accounts in an organization. To revoke permission, call RemoveLayerVersionPermission with the statement ID that you specified when you added it.
+       */
+    def addLayerVersionPermission(params: AddLayerVersionPermissionRequest): awsDashSdkLib.libRequestMod.Request[AddLayerVersionPermissionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Adds permissions to the resource-based policy of a version of a function layer. Use this action to grant layer usage permission to other accounts. You can grant permission to a single account, all AWS accounts, or all accounts in an organization. To revoke permission, call RemoveLayerVersionPermission with the statement ID that you specified when you added it.
+       */
+    def addLayerVersionPermission(
+      params: AddLayerVersionPermissionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AddLayerVersionPermissionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AddLayerVersionPermissionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Adds a permission to the resource policy associated with the specified AWS Lambda function. You use resource policies to grant permissions to event sources that use the push model. In a push model, event sources (such as Amazon S3 and custom applications) invoke your Lambda function. Each permission you add to the resource policy allows an event source permission to invoke the Lambda function.  Permissions apply to the Amazon Resource Name (ARN) used to invoke the function, which can be unqualified (the unpublished version of the function), or include a version or alias. If a client uses a version or alias to invoke a function, use the Qualifier parameter to apply permissions to that ARN. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:AddPermission action.
        */
@@ -959,11 +1356,11 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AliasConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Identifies a poll-based event source for a Lambda function. It can be either an Amazon Kinesis or DynamoDB stream. AWS Lambda invokes the specified function when records are posted to the event source. This association between a poll-based source and a Lambda function is called the event source mapping. You provide mapping information (for example, which stream or SQS queue to read from and which Lambda function to invoke) in the request body. Amazon Kinesis or DynamoDB stream event sources can be associated with multiple AWS Lambda functions and a given Lambda function can be associated with multiple AWS event sources. For Amazon SQS, you can configure multiple queues as event sources for a single Lambda function, but an SQS queue can be mapped only to a single Lambda function. You can configure an SQS queue in an account separate from your Lambda function's account. Also the queue needs to reside in the same AWS region as your function.  If you are using versioning, you can specify a specific function version or an alias via the function name parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:CreateEventSourceMapping action.
+       * Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and triggers the function. For details about each event source type, see the following topics.    Using AWS Lambda with Amazon Kinesis     Using AWS Lambda with Amazon SQS     Using AWS Lambda with Amazon DynamoDB   
        */
     def createEventSourceMapping(): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Identifies a poll-based event source for a Lambda function. It can be either an Amazon Kinesis or DynamoDB stream. AWS Lambda invokes the specified function when records are posted to the event source. This association between a poll-based source and a Lambda function is called the event source mapping. You provide mapping information (for example, which stream or SQS queue to read from and which Lambda function to invoke) in the request body. Amazon Kinesis or DynamoDB stream event sources can be associated with multiple AWS Lambda functions and a given Lambda function can be associated with multiple AWS event sources. For Amazon SQS, you can configure multiple queues as event sources for a single Lambda function, but an SQS queue can be mapped only to a single Lambda function. You can configure an SQS queue in an account separate from your Lambda function's account. Also the queue needs to reside in the same AWS region as your function.  If you are using versioning, you can specify a specific function version or an alias via the function name parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:CreateEventSourceMapping action.
+       * Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and triggers the function. For details about each event source type, see the following topics.    Using AWS Lambda with Amazon Kinesis     Using AWS Lambda with Amazon SQS     Using AWS Lambda with Amazon DynamoDB   
        */
     def createEventSourceMapping(
       callback: js.Function2[
@@ -973,11 +1370,11 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Identifies a poll-based event source for a Lambda function. It can be either an Amazon Kinesis or DynamoDB stream. AWS Lambda invokes the specified function when records are posted to the event source. This association between a poll-based source and a Lambda function is called the event source mapping. You provide mapping information (for example, which stream or SQS queue to read from and which Lambda function to invoke) in the request body. Amazon Kinesis or DynamoDB stream event sources can be associated with multiple AWS Lambda functions and a given Lambda function can be associated with multiple AWS event sources. For Amazon SQS, you can configure multiple queues as event sources for a single Lambda function, but an SQS queue can be mapped only to a single Lambda function. You can configure an SQS queue in an account separate from your Lambda function's account. Also the queue needs to reside in the same AWS region as your function.  If you are using versioning, you can specify a specific function version or an alias via the function name parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:CreateEventSourceMapping action.
+       * Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and triggers the function. For details about each event source type, see the following topics.    Using AWS Lambda with Amazon Kinesis     Using AWS Lambda with Amazon SQS     Using AWS Lambda with Amazon DynamoDB   
        */
     def createEventSourceMapping(params: CreateEventSourceMappingRequest): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Identifies a poll-based event source for a Lambda function. It can be either an Amazon Kinesis or DynamoDB stream. AWS Lambda invokes the specified function when records are posted to the event source. This association between a poll-based source and a Lambda function is called the event source mapping. You provide mapping information (for example, which stream or SQS queue to read from and which Lambda function to invoke) in the request body. Amazon Kinesis or DynamoDB stream event sources can be associated with multiple AWS Lambda functions and a given Lambda function can be associated with multiple AWS event sources. For Amazon SQS, you can configure multiple queues as event sources for a single Lambda function, but an SQS queue can be mapped only to a single Lambda function. You can configure an SQS queue in an account separate from your Lambda function's account. Also the queue needs to reside in the same AWS region as your function.  If you are using versioning, you can specify a specific function version or an alias via the function name parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:CreateEventSourceMapping action.
+       * Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and triggers the function. For details about each event source type, see the following topics.    Using AWS Lambda with Amazon Kinesis     Using AWS Lambda with Amazon SQS     Using AWS Lambda with Amazon DynamoDB   
        */
     def createEventSourceMapping(
       params: CreateEventSourceMappingRequest,
@@ -1038,11 +1435,11 @@ object LambdaNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Removes an event source mapping. This means AWS Lambda will no longer invoke the function for events in the associated source. This operation requires permission for the lambda:DeleteEventSourceMapping action.
+       * Deletes an event source mapping.
        */
     def deleteEventSourceMapping(): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Removes an event source mapping. This means AWS Lambda will no longer invoke the function for events in the associated source. This operation requires permission for the lambda:DeleteEventSourceMapping action.
+       * Deletes an event source mapping.
        */
     def deleteEventSourceMapping(
       callback: js.Function2[
@@ -1052,11 +1449,11 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Removes an event source mapping. This means AWS Lambda will no longer invoke the function for events in the associated source. This operation requires permission for the lambda:DeleteEventSourceMapping action.
+       * Deletes an event source mapping.
        */
     def deleteEventSourceMapping(params: DeleteEventSourceMappingRequest): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Removes an event source mapping. This means AWS Lambda will no longer invoke the function for events in the associated source. This operation requires permission for the lambda:DeleteEventSourceMapping action.
+       * Deletes an event source mapping.
        */
     def deleteEventSourceMapping(
       params: DeleteEventSourceMappingRequest,
@@ -1106,6 +1503,27 @@ object LambdaNs extends js.Object {
        */
     def deleteFunctionConcurrency(
       params: DeleteFunctionConcurrencyRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a version of a function layer. Deleted versions can no longer be viewed or added to functions. However, a copy of the version remains in Lambda until no functions refer to it.
+       */
+    def deleteLayerVersion(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a version of a function layer. Deleted versions can no longer be viewed or added to functions. However, a copy of the version remains in Lambda until no functions refer to it.
+       */
+    def deleteLayerVersion(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a version of a function layer. Deleted versions can no longer be viewed or added to functions. However, a copy of the version remains in Lambda until no functions refer to it.
+       */
+    def deleteLayerVersion(params: DeleteLayerVersionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes a version of a function layer. Deleted versions can no longer be viewed or added to functions. However, a copy of the version remains in Lambda until no functions refer to it.
+       */
+    def deleteLayerVersion(
+      params: DeleteLayerVersionRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
@@ -1167,11 +1585,11 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AliasConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns configuration information for the specified event source mapping (see CreateEventSourceMapping). This operation requires permission for the lambda:GetEventSourceMapping action.
+       * Returns details about an event source mapping.
        */
     def getEventSourceMapping(): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns configuration information for the specified event source mapping (see CreateEventSourceMapping). This operation requires permission for the lambda:GetEventSourceMapping action.
+       * Returns details about an event source mapping.
        */
     def getEventSourceMapping(
       callback: js.Function2[
@@ -1181,11 +1599,11 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns configuration information for the specified event source mapping (see CreateEventSourceMapping). This operation requires permission for the lambda:GetEventSourceMapping action.
+       * Returns details about an event source mapping.
        */
     def getEventSourceMapping(params: GetEventSourceMappingRequest): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns configuration information for the specified event source mapping (see CreateEventSourceMapping). This operation requires permission for the lambda:GetEventSourceMapping action.
+       * Returns details about an event source mapping.
        */
     def getEventSourceMapping(
       params: GetEventSourceMappingRequest,
@@ -1253,6 +1671,64 @@ object LambdaNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a version of a function layer, with a link to download the layer archive that's valid for 10 minutes.
+       */
+    def getLayerVersion(): awsDashSdkLib.libRequestMod.Request[GetLayerVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a version of a function layer, with a link to download the layer archive that's valid for 10 minutes.
+       */
+    def getLayerVersion(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetLayerVersionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetLayerVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a version of a function layer, with a link to download the layer archive that's valid for 10 minutes.
+       */
+    def getLayerVersion(params: GetLayerVersionRequest): awsDashSdkLib.libRequestMod.Request[GetLayerVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns information about a version of a function layer, with a link to download the layer archive that's valid for 10 minutes.
+       */
+    def getLayerVersion(
+      params: GetLayerVersionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetLayerVersionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetLayerVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the permission policy for a layer version. For more information, see AddLayerVersionPermission.
+       */
+    def getLayerVersionPolicy(): awsDashSdkLib.libRequestMod.Request[GetLayerVersionPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the permission policy for a layer version. For more information, see AddLayerVersionPermission.
+       */
+    def getLayerVersionPolicy(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetLayerVersionPolicyResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetLayerVersionPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the permission policy for a layer version. For more information, see AddLayerVersionPermission.
+       */
+    def getLayerVersionPolicy(params: GetLayerVersionPolicyRequest): awsDashSdkLib.libRequestMod.Request[GetLayerVersionPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the permission policy for a layer version. For more information, see AddLayerVersionPermission.
+       */
+    def getLayerVersionPolicy(
+      params: GetLayerVersionPolicyRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetLayerVersionPolicyResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetLayerVersionPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Returns the resource policy associated with the specified Lambda function. This action requires permission for the lambda:GetPolicy action. 
        */
@@ -1370,11 +1846,11 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListAliasesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping).  For each mapping, the API returns configuration information. You can optionally specify filters to retrieve specific event source mappings. This operation requires permission for the lambda:ListEventSourceMappings action.
+       * Lists event source mappings. Specify an EventSourceArn to only show event source mappings for a single event source.
        */
     def listEventSourceMappings(): awsDashSdkLib.libRequestMod.Request[ListEventSourceMappingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping).  For each mapping, the API returns configuration information. You can optionally specify filters to retrieve specific event source mappings. This operation requires permission for the lambda:ListEventSourceMappings action.
+       * Lists event source mappings. Specify an EventSourceArn to only show event source mappings for a single event source.
        */
     def listEventSourceMappings(
       callback: js.Function2[
@@ -1384,11 +1860,11 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListEventSourceMappingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping).  For each mapping, the API returns configuration information. You can optionally specify filters to retrieve specific event source mappings. This operation requires permission for the lambda:ListEventSourceMappings action.
+       * Lists event source mappings. Specify an EventSourceArn to only show event source mappings for a single event source.
        */
     def listEventSourceMappings(params: ListEventSourceMappingsRequest): awsDashSdkLib.libRequestMod.Request[ListEventSourceMappingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping).  For each mapping, the API returns configuration information. You can optionally specify filters to retrieve specific event source mappings. This operation requires permission for the lambda:ListEventSourceMappings action.
+       * Lists event source mappings. Specify an EventSourceArn to only show event source mappings for a single event source.
        */
     def listEventSourceMappings(
       params: ListEventSourceMappingsRequest,
@@ -1427,6 +1903,64 @@ object LambdaNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListFunctionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the versions of a function layer. Versions that have been deleted aren't listed. Specify a runtime identifier to list only versions that indicate that they're compatible with that runtime.
+       */
+    def listLayerVersions(): awsDashSdkLib.libRequestMod.Request[ListLayerVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the versions of a function layer. Versions that have been deleted aren't listed. Specify a runtime identifier to list only versions that indicate that they're compatible with that runtime.
+       */
+    def listLayerVersions(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListLayerVersionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListLayerVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the versions of a function layer. Versions that have been deleted aren't listed. Specify a runtime identifier to list only versions that indicate that they're compatible with that runtime.
+       */
+    def listLayerVersions(params: ListLayerVersionsRequest): awsDashSdkLib.libRequestMod.Request[ListLayerVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the versions of a function layer. Versions that have been deleted aren't listed. Specify a runtime identifier to list only versions that indicate that they're compatible with that runtime.
+       */
+    def listLayerVersions(
+      params: ListLayerVersionsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListLayerVersionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListLayerVersionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists function layers and shows information about the latest version of each. Specify a runtime identifier to list only layers that indicate that they're compatible with that runtime.
+       */
+    def listLayers(): awsDashSdkLib.libRequestMod.Request[ListLayersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists function layers and shows information about the latest version of each. Specify a runtime identifier to list only layers that indicate that they're compatible with that runtime.
+       */
+    def listLayers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListLayersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListLayersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists function layers and shows information about the latest version of each. Specify a runtime identifier to list only layers that indicate that they're compatible with that runtime.
+       */
+    def listLayers(params: ListLayersRequest): awsDashSdkLib.libRequestMod.Request[ListLayersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists function layers and shows information about the latest version of each. Specify a runtime identifier to list only layers that indicate that they're compatible with that runtime.
+       */
+    def listLayers(
+      params: ListLayersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListLayersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListLayersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Returns a list of tags assigned to a function when supplied the function ARN (Amazon Resource Name). For more information on Tagging, see Tagging Lambda Functions in the AWS Lambda Developer Guide.
        */
@@ -1486,6 +2020,35 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListVersionsByFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Creates a function layer from a ZIP archive. Each time you call PublishLayerVersion with the same version name, a new version is created. Add layers to your function with CreateFunction or UpdateFunctionConfiguration.
+       */
+    def publishLayerVersion(): awsDashSdkLib.libRequestMod.Request[PublishLayerVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a function layer from a ZIP archive. Each time you call PublishLayerVersion with the same version name, a new version is created. Add layers to your function with CreateFunction or UpdateFunctionConfiguration.
+       */
+    def publishLayerVersion(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PublishLayerVersionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PublishLayerVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a function layer from a ZIP archive. Each time you call PublishLayerVersion with the same version name, a new version is created. Add layers to your function with CreateFunction or UpdateFunctionConfiguration.
+       */
+    def publishLayerVersion(params: PublishLayerVersionRequest): awsDashSdkLib.libRequestMod.Request[PublishLayerVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a function layer from a ZIP archive. Each time you call PublishLayerVersion with the same version name, a new version is created. Add layers to your function with CreateFunction or UpdateFunctionConfiguration.
+       */
+    def publishLayerVersion(
+      params: PublishLayerVersionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PublishLayerVersionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PublishLayerVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Publishes a version of your function from the current snapshot of $LATEST. That is, AWS Lambda takes a snapshot of the function code and configuration information from $LATEST and publishes a new version. The code and configuration cannot be modified after publication. For information about the versioning feature, see AWS Lambda Function Versioning and Aliases. 
        */
     def publishVersion(): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1535,6 +2098,27 @@ object LambdaNs extends js.Object {
       params: PutFunctionConcurrencyRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Concurrency, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Concurrency, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes a statement from the permissions policy for a layer version. For more information, see AddLayerVersionPermission.
+       */
+    def removeLayerVersionPermission(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes a statement from the permissions policy for a layer version. For more information, see AddLayerVersionPermission.
+       */
+    def removeLayerVersionPermission(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes a statement from the permissions policy for a layer version. For more information, see AddLayerVersionPermission.
+       */
+    def removeLayerVersionPermission(params: RemoveLayerVersionPermissionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes a statement from the permissions policy for a layer version. For more information, see AddLayerVersionPermission.
+       */
+    def removeLayerVersionPermission(
+      params: RemoveLayerVersionPermissionRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Removes permissions from a function. You can remove individual permissions from an resource policy associated with a Lambda function by providing a statement ID that you provided when you added the permission. When you remove permissions, disable the event source mapping or trigger configuration first to avoid errors. Permissions apply to the Amazon Resource Name (ARN) used to invoke the function, which can be unqualified (the unpublished version of the function), or include a version or alias. If a client uses a version or alias to invoke a function, use the Qualifier parameter to apply permissions to that ARN. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  You need permission for the lambda:RemovePermission action.
        */
@@ -1628,11 +2212,11 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AliasConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * You can update an event source mapping. This is useful if you want to change the parameters of the existing mapping without losing your position in the stream. You can change which function will receive the stream records, but to change the stream itself, you must create a new mapping. If you disable the event source mapping, AWS Lambda stops polling. If you enable again, it will resume polling from the time it had stopped polling, so you don't lose processing of any records. However, if you delete event source mapping and create it again, it will reset. This operation requires permission for the lambda:UpdateEventSourceMapping action.
+       * Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and resume later from the same location.
        */
     def updateEventSourceMapping(): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * You can update an event source mapping. This is useful if you want to change the parameters of the existing mapping without losing your position in the stream. You can change which function will receive the stream records, but to change the stream itself, you must create a new mapping. If you disable the event source mapping, AWS Lambda stops polling. If you enable again, it will resume polling from the time it had stopped polling, so you don't lose processing of any records. However, if you delete event source mapping and create it again, it will reset. This operation requires permission for the lambda:UpdateEventSourceMapping action.
+       * Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and resume later from the same location.
        */
     def updateEventSourceMapping(
       callback: js.Function2[
@@ -1642,11 +2226,11 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * You can update an event source mapping. This is useful if you want to change the parameters of the existing mapping without losing your position in the stream. You can change which function will receive the stream records, but to change the stream itself, you must create a new mapping. If you disable the event source mapping, AWS Lambda stops polling. If you enable again, it will resume polling from the time it had stopped polling, so you don't lose processing of any records. However, if you delete event source mapping and create it again, it will reset. This operation requires permission for the lambda:UpdateEventSourceMapping action.
+       * Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and resume later from the same location.
        */
     def updateEventSourceMapping(params: UpdateEventSourceMappingRequest): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * You can update an event source mapping. This is useful if you want to change the parameters of the existing mapping without losing your position in the stream. You can change which function will receive the stream records, but to change the stream itself, you must create a new mapping. If you disable the event source mapping, AWS Lambda stops polling. If you enable again, it will resume polling from the time it had stopped polling, so you don't lose processing of any records. However, if you delete event source mapping and create it again, it will reset. This operation requires permission for the lambda:UpdateEventSourceMapping action.
+       * Updates an event source mapping. You can change the function that AWS Lambda invokes, or pause invocation and resume later from the same location.
        */
     def updateEventSourceMapping(
       params: UpdateEventSourceMappingRequest,
@@ -1759,19 +2343,19 @@ object LambdaNs extends js.Object {
   
   trait UpdateEventSourceMappingRequest extends js.Object {
     /**
-         * The largest number of records that AWS Lambda will retrieve from your event source at the time of invoking your function. Your function receives an event with all the retrieved records.
+         * The maximum number of items to retrieve in a single batch.    Amazon Kinesis - Default 100. Max 10,000.    Amazon DynamoDB Streams - Default 100. Max 1,000.    Amazon Simple Queue Service - Default 10. Max 10.  
          */
     var BatchSize: js.UndefOr[BatchSize] = js.undefined
     /**
-         * Specifies whether AWS Lambda should actively poll the stream or not. If disabled, AWS Lambda will not poll the stream.
+         * Disables the event source mapping to pause polling and invocation.
          */
     var Enabled: js.UndefOr[Enabled] = js.undefined
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Version or Alias ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction:PROD.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Version or Alias ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction:PROD.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it's limited to 64 characters in length.
          */
     var FunctionName: js.UndefOr[FunctionName] = js.undefined
     /**
-         * The event source mapping identifier.
+         * The identifier of the event source mapping.
          */
     var UUID: java.lang.String
   }
@@ -1783,7 +2367,7 @@ object LambdaNs extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: FunctionName
     /**
@@ -1827,7 +2411,7 @@ object LambdaNs extends js.Object {
          */
     var Environment: js.UndefOr[Environment] = js.undefined
     /**
-         * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+         * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
          */
     var FunctionName: FunctionName
     /**
@@ -1838,6 +2422,10 @@ object LambdaNs extends js.Object {
          * The Amazon Resource Name (ARN) of the KMS key used to encrypt your function's environment variables. If you elect to use the AWS Lambda default service key, pass in an empty string ("") for this parameter.
          */
     var KMSKeyArn: js.UndefOr[KMSKeyArn] = js.undefined
+    /**
+         * A list of function layers to add to the function's execution environment.
+         */
+    var Layers: js.UndefOr[LayerList] = js.undefined
     /**
          * The amount of memory, in MB, your Lambda function is given. AWS Lambda uses this memory size to infer the amount of CPU allocated to your function. Your function use-case determines your CPU and memory requirements. For example, a database operation might need less memory compared to an image processing function. The default value is 128 MB. The value must be a multiple of 64 MB.
          */
@@ -1906,6 +2494,7 @@ object LambdaNs extends js.Object {
   type BlobStream = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsLambdaMod.Blob | java.lang.String | nodeLib.streamMod.Readable
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  type CompatibleRuntimes = js.Array[Runtime]
   type Description = java.lang.String
   type Enabled = scala.Boolean
   type EnvironmentVariableName = java.lang.String
@@ -1922,20 +2511,33 @@ object LambdaNs extends js.Object {
   type Integer = scala.Double
   type InvocationType = awsDashSdkLib.awsDashSdkLibStrings.Event | awsDashSdkLib.awsDashSdkLibStrings.RequestResponse | awsDashSdkLib.awsDashSdkLibStrings.DryRun | java.lang.String
   type KMSKeyArn = java.lang.String
+  type LayerArn = java.lang.String
+  type LayerList = js.Array[LayerVersionArn]
+  type LayerName = java.lang.String
+  type LayerPermissionAllowedAction = java.lang.String
+  type LayerPermissionAllowedPrincipal = java.lang.String
+  type LayerVersionArn = java.lang.String
+  type LayerVersionNumber = scala.Double
+  type LayerVersionsList = js.Array[LayerVersionsListItem]
+  type LayersList = js.Array[LayersListItem]
+  type LayersReferenceList = js.Array[Layer]
+  type LicenseInfo = java.lang.String
   type LogType = awsDashSdkLib.awsDashSdkLibStrings.None | awsDashSdkLib.awsDashSdkLibStrings.Tail | java.lang.String
   type Long = scala.Double
   type MasterRegion = java.lang.String
+  type MaxLayerListItems = scala.Double
   type MaxListItems = scala.Double
   type MemorySize = scala.Double
   type NameSpacedFunctionArn = java.lang.String
   type NamespacedFunctionName = java.lang.String
   type NamespacedStatementId = java.lang.String
+  type OrganizationId = java.lang.String
   type Principal = java.lang.String
   type Qualifier = java.lang.String
   type ReservedConcurrentExecutions = scala.Double
   type ResourceArn = java.lang.String
   type RoleArn = java.lang.String
-  type Runtime = awsDashSdkLib.awsDashSdkLibStrings.nodejs | awsDashSdkLib.awsDashSdkLibStrings.nodejs4DOT3 | awsDashSdkLib.awsDashSdkLibStrings.nodejs6DOT10 | awsDashSdkLib.awsDashSdkLibStrings.nodejs8DOT10 | awsDashSdkLib.awsDashSdkLibStrings.java8 | awsDashSdkLib.awsDashSdkLibStrings.python2DOT7 | awsDashSdkLib.awsDashSdkLibStrings.python3DOT6 | awsDashSdkLib.awsDashSdkLibStrings.dotnetcore1DOT0 | awsDashSdkLib.awsDashSdkLibStrings.dotnetcore2DOT0 | awsDashSdkLib.awsDashSdkLibStrings.dotnetcore2DOT1 | awsDashSdkLib.awsDashSdkLibStrings.`nodejs4DOT3-edge` | awsDashSdkLib.awsDashSdkLibStrings.go1DOTx | java.lang.String
+  type Runtime = awsDashSdkLib.awsDashSdkLibStrings.nodejs | awsDashSdkLib.awsDashSdkLibStrings.nodejs4DOT3 | awsDashSdkLib.awsDashSdkLibStrings.nodejs6DOT10 | awsDashSdkLib.awsDashSdkLibStrings.nodejs8DOT10 | awsDashSdkLib.awsDashSdkLibStrings.java8 | awsDashSdkLib.awsDashSdkLibStrings.python2DOT7 | awsDashSdkLib.awsDashSdkLibStrings.python3DOT6 | awsDashSdkLib.awsDashSdkLibStrings.python3DOT7 | awsDashSdkLib.awsDashSdkLibStrings.dotnetcore1DOT0 | awsDashSdkLib.awsDashSdkLibStrings.dotnetcore2DOT0 | awsDashSdkLib.awsDashSdkLibStrings.dotnetcore2DOT1 | awsDashSdkLib.awsDashSdkLibStrings.`nodejs4DOT3-edge` | awsDashSdkLib.awsDashSdkLibStrings.go1DOTx | awsDashSdkLib.awsDashSdkLibStrings.ruby2DOT5 | awsDashSdkLib.awsDashSdkLibStrings.provided | java.lang.String
   type S3Bucket = java.lang.String
   type S3Key = java.lang.String
   type S3ObjectVersion = java.lang.String

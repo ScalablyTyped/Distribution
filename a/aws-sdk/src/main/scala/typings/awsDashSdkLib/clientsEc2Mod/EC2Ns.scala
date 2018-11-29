@@ -33,6 +33,26 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait AcceptTransitGatewayVpcAttachmentRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: java.lang.String
+  }
+  
+  
+  trait AcceptTransitGatewayVpcAttachmentResult extends js.Object {
+    /**
+         * The VPC attachment.
+         */
+    var TransitGatewayVpcAttachment: js.UndefOr[TransitGatewayVpcAttachment] = js.undefined
+  }
+  
+  
   trait AcceptVpcEndpointConnectionsRequest extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -151,15 +171,39 @@ object EC2Ns extends js.Object {
          */
     var PublicIp: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The ID of an address pool.
+         */
+    var PublicIpv4Pool: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * Any tags assigned to the Elastic IP address.
          */
     var Tags: js.UndefOr[TagList] = js.undefined
   }
   
   
+  trait AdvertiseByoipCidrRequest extends js.Object {
+    /**
+         * The IPv4 address range, in CIDR notation.
+         */
+    var Cidr: java.lang.String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  }
+  
+  
+  trait AdvertiseByoipCidrResult extends js.Object {
+    /**
+         * Information about the address range.
+         */
+    var ByoipCidr: js.UndefOr[ByoipCidr] = js.undefined
+  }
+  
+  
   trait AllocateAddressRequest extends js.Object {
     /**
-         * [EC2-VPC] The Elastic IP address to recover.
+         * [EC2-VPC] The Elastic IP address to recover or an IPv4 address from an address pool.
          */
     var Address: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -170,6 +214,10 @@ object EC2Ns extends js.Object {
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of an address pool that you own. Use this parameter to let Amazon EC2 select an address from the address pool. To specify a specific address from the address pool, use the Address parameter instead.
+         */
+    var PublicIpv4Pool: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -186,6 +234,10 @@ object EC2Ns extends js.Object {
          * The Elastic IP address.
          */
     var PublicIp: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of an address pool.
+         */
+    var PublicIpv4Pool: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -406,6 +458,30 @@ object EC2Ns extends js.Object {
          * The ID of the subnet.
          */
     var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait AssociateTransitGatewayRouteTableRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: java.lang.String
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait AssociateTransitGatewayRouteTableResult extends js.Object {
+    /**
+         * The ID of the association.
+         */
+    var Association: js.UndefOr[TransitGatewayAssociation] = js.undefined
   }
   
   
@@ -671,6 +747,10 @@ object EC2Ns extends js.Object {
          */
     var State: js.UndefOr[AvailabilityZoneState] = js.undefined
     /**
+         * The ID of the Availability Zone.
+         */
+    var ZoneId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The name of the Availability Zone.
          */
     var ZoneName: js.UndefOr[java.lang.String] = js.undefined
@@ -794,6 +874,26 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait ByoipCidr extends js.Object {
+    /**
+         * The public IPv4 address range, in CIDR notation.
+         */
+    var Cidr: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The description of the address range.
+         */
+    var Description: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The state of the address pool.
+         */
+    var State: js.UndefOr[ByoipCidrState] = js.undefined
+    /**
+         * Upon success, contains the ID of the address pool. Otherwise, contains an error message.
+         */
+    var StatusMessage: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait CancelBundleTaskRequest extends js.Object {
     /**
          * The ID of the bundle task.
@@ -811,6 +911,26 @@ object EC2Ns extends js.Object {
          * Information about the bundle task.
          */
     var BundleTask: js.UndefOr[BundleTask] = js.undefined
+  }
+  
+  
+  trait CancelCapacityReservationRequest extends js.Object {
+    /**
+         * The ID of the Capacity Reservation to be cancelled.
+         */
+    var CapacityReservationId: java.lang.String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  }
+  
+  
+  trait CancelCapacityReservationResult extends js.Object {
+    /**
+         * Returns true if the request succeeds; otherwise, it returns an error.
+         */
+    var Return: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   
@@ -983,6 +1103,122 @@ object EC2Ns extends js.Object {
          * The state of the Spot Instance request.
          */
     var State: js.UndefOr[CancelSpotInstanceRequestState] = js.undefined
+  }
+  
+  
+  trait CapacityReservation extends js.Object {
+    /**
+         * The Availability Zone in which the capacity is reserved.
+         */
+    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The remaining capacity. Indicates the number of instances that can be launched in the Capacity Reservation.
+         */
+    var AvailableInstanceCount: js.UndefOr[Integer] = js.undefined
+    /**
+         * The ID of the Capacity Reservation.
+         */
+    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The date and time at which the Capacity Reservation was created.
+         */
+    var CreateDate: js.UndefOr[DateTime] = js.undefined
+    /**
+         * Indicates whether the Capacity Reservation supports EBS-optimized instances. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS- optimized instance.
+         */
+    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time.
+         */
+    var EndDate: js.UndefOr[DateTime] = js.undefined
+    /**
+         * Indicates the way in which the Capacity Reservation ends. A Capacity Reservation can have one of the following end types:    unlimited - The Capacity Reservation remains active until you explicitly cancel it.    limited - The Capacity Reservation expires automatically at a specified date and time.  
+         */
+    var EndDateType: js.UndefOr[EndDateType] = js.undefined
+    /**
+         * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+         */
+    var EphemeralStorage: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Indicates the type of instance launches that the Capacity Reservation accepts. The options include:    open - The Capacity Reservation accepts all instances that have matching attributes (instance type, platform, and Availability Zone). Instances that have matching attributes launch into the Capacity Reservation automatically without specifying any additional parameters.    targeted - The Capacity Reservation only accepts instances that have matching attributes (instance type, platform, and Availability Zone), and explicitly target the Capacity Reservation. This ensures that only permitted instances can use the reserved capacity.   
+         */
+    var InstanceMatchCriteria: js.UndefOr[InstanceMatchCriteria] = js.undefined
+    /**
+         * The type of operating system for which the Capacity Reservation reserves capacity.
+         */
+    var InstancePlatform: js.UndefOr[CapacityReservationInstancePlatform] = js.undefined
+    /**
+         * The type of instance for which the Capacity Reservation reserves capacity.
+         */
+    var InstanceType: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The current state of the Capacity Reservation. A Capacity Reservation can be in one of the following states:    active - The Capacity Reservation is active and the capacity is available for your use.    cancelled - The Capacity Reservation expired automatically at the date and time specified in your request. The reserved capacity is no longer available for your use.    expired - The Capacity Reservation was manually cancelled. The reserved capacity is no longer available for your use.    pending - The Capacity Reservation request was successful but the capacity provisioning is still pending.    failed - The Capacity Reservation request has failed. A request might fail due to invalid request parameters, capacity constraints, or instance limit constraints. Failed requests are retained for 60 minutes.  
+         */
+    var State: js.UndefOr[CapacityReservationState] = js.undefined
+    /**
+         * Any tags assigned to the Capacity Reservation.
+         */
+    var Tags: js.UndefOr[TagList] = js.undefined
+    /**
+         * Indicates the tenancy of the Capacity Reservation. A Capacity Reservation can have one of the following tenancy settings:    default - The Capacity Reservation is created on hardware that is shared with other AWS accounts.    dedicated - The Capacity Reservation is created on single-tenant hardware that is dedicated to a single AWS account.  
+         */
+    var Tenancy: js.UndefOr[CapacityReservationTenancy] = js.undefined
+    /**
+         * The number of instances for which the Capacity Reservation reserves capacity.
+         */
+    var TotalInstanceCount: js.UndefOr[Integer] = js.undefined
+  }
+  
+  
+  trait CapacityReservationSpecification extends js.Object {
+    /**
+         * Indicates the instance's Capacity Reservation preferences. Possible preferences include:    open - The instance can run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).    none - The instance avoids running in a Capacity Reservation even if one is available. The instance runs as an On-Demand Instance.  
+         */
+    var CapacityReservationPreference: js.UndefOr[CapacityReservationPreference] = js.undefined
+    /**
+         * Information about the target Capacity Reservation.
+         */
+    var CapacityReservationTarget: js.UndefOr[CapacityReservationTarget] = js.undefined
+  }
+  
+  
+  trait CapacityReservationSpecificationResponse extends js.Object {
+    /**
+         * Describes the instance's Capacity Reservation preferences. Possible preferences include:    open - The instance can run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).    none - The instance avoids running in a Capacity Reservation even if one is available. The instance runs in On-Demand capacity.  
+         */
+    var CapacityReservationPreference: js.UndefOr[CapacityReservationPreference] = js.undefined
+    /**
+         * Information about the targeted Capacity Reservation.
+         */
+    var CapacityReservationTarget: js.UndefOr[CapacityReservationTargetResponse] = js.undefined
+  }
+  
+  
+  trait CapacityReservationTarget extends js.Object {
+    /**
+         * The ID of the Capacity Reservation.
+         */
+    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait CapacityReservationTargetResponse extends js.Object {
+    /**
+         * The ID of the Capacity Reservation.
+         */
+    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait CidrAuthorizationContext extends js.Object {
+    /**
+         * The plain-text authorization message for the prefix and account.
+         */
+    var Message: java.lang.String
+    /**
+         * The signed authorization message for the prefix and account.
+         */
+    var Signature: java.lang.String
   }
   
   
@@ -1310,6 +1546,70 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait CreateCapacityReservationRequest extends js.Object {
+    /**
+         * The Availability Zone in which to create the Capacity Reservation.
+         */
+    var AvailabilityZone: java.lang.String
+    /**
+         * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency. Constraint: Maximum 64 ASCII characters.
+         */
+    var ClientToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Indicates whether the Capacity Reservation supports EBS-optimized instances. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS- optimized instance.
+         */
+    var EbsOptimized: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time. You must provide an EndDate value if EndDateType is limited. Omit EndDate if EndDateType is unlimited. If the EndDateType is limited, the Capacity Reservation is cancelled within an hour from the specified time. For example, if you specify 5/31/2019, 13:30:55, the Capacity Reservation is guaranteed to end between 13:30:55 and 14:30:55 on 5/31/2019.
+         */
+    var EndDate: js.UndefOr[DateTime] = js.undefined
+    /**
+         * Indicates the way in which the Capacity Reservation ends. A Capacity Reservation can have one of the following end types:    unlimited - The Capacity Reservation remains active until you explicitly cancel it. Do not provide an EndDate if the EndDateType is unlimited.    limited - The Capacity Reservation expires automatically at a specified date and time. You must provide an EndDate value if the EndDateType value is limited.  
+         */
+    var EndDateType: js.UndefOr[EndDateType] = js.undefined
+    /**
+         * Indicates whether the Capacity Reservation supports instances with temporary, block-level storage.
+         */
+    var EphemeralStorage: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The number of instances for which to reserve capacity.
+         */
+    var InstanceCount: Integer
+    /**
+         * Indicates the type of instance launches that the Capacity Reservation accepts. The options include:    open - The Capacity Reservation automatically matches all instances that have matching attributes (instance type, platform, and Availability Zone). Instances that have matching attributes run in the Capacity Reservation automatically without specifying any additional parameters.    targeted - The Capacity Reservation only accepts instances that have matching attributes (instance type, platform, and Availability Zone), and explicitly target the Capacity Reservation. This ensures that only permitted instances can use the reserved capacity.    Default: open 
+         */
+    var InstanceMatchCriteria: js.UndefOr[InstanceMatchCriteria] = js.undefined
+    /**
+         * The type of operating system for which to reserve capacity.
+         */
+    var InstancePlatform: CapacityReservationInstancePlatform
+    /**
+         * The instance type for which to reserve capacity. For more information, see Instance Types in the Amazon Elastic Compute Cloud User Guide.
+         */
+    var InstanceType: java.lang.String
+    /**
+         * The tags to apply to the Capacity Reservation during launch.
+         */
+    var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
+    /**
+         * Indicates the tenancy of the Capacity Reservation. A Capacity Reservation can have one of the following tenancy settings:    default - The Capacity Reservation is created on hardware that is shared with other AWS accounts.    dedicated - The Capacity Reservation is created on single-tenant hardware that is dedicated to a single AWS account.  
+         */
+    var Tenancy: js.UndefOr[CapacityReservationTenancy] = js.undefined
+  }
+  
+  
+  trait CreateCapacityReservationResult extends js.Object {
+    /**
+         * Information about the Capacity Reservation.
+         */
+    var CapacityReservation: js.UndefOr[CapacityReservation] = js.undefined
+  }
+  
+  
   trait CreateCustomerGatewayRequest extends js.Object {
     /**
          * For devices that support BGP, the customer gateway's BGP ASN. Default: 65000
@@ -1422,6 +1722,50 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait CreateFleetError extends js.Object {
+    /**
+         * The error code that indicates why the instance could not be launched. For more information about error codes, see Error Codes.
+         */
+    var ErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The error message that describes why the instance could not be launched. For more information about error messages, see ee Error Codes.
+         */
+    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The launch templates and overrides that were used for launching the instances. Any parameters that you specify in the Overrides override the same parameters in the launch template.
+         */
+    var LaunchTemplateAndOverrides: js.UndefOr[LaunchTemplateAndOverridesResponse] = js.undefined
+    /**
+         * Indicates if the instance that could not be launched was a Spot Instance or On-Demand Instance.
+         */
+    var Lifecycle: js.UndefOr[InstanceLifecycle] = js.undefined
+  }
+  
+  
+  trait CreateFleetInstance extends js.Object {
+    /**
+         * The IDs of the instances.
+         */
+    var InstanceIds: js.UndefOr[InstanceIdsSet] = js.undefined
+    /**
+         * The instance type.
+         */
+    var InstanceType: js.UndefOr[InstanceType] = js.undefined
+    /**
+         * The launch templates and overrides that were used for launching the instances. Any parameters that you specify in the Overrides override the same parameters in the launch template.
+         */
+    var LaunchTemplateAndOverrides: js.UndefOr[LaunchTemplateAndOverridesResponse] = js.undefined
+    /**
+         * Indicates if the instance that was launched is a Spot Instance or On-Demand Instance.
+         */
+    var Lifecycle: js.UndefOr[InstanceLifecycle] = js.undefined
+    /**
+         * The value is Windows for Windows instances; otherwise blank.
+         */
+    var Platform: js.UndefOr[PlatformValues] = js.undefined
+  }
+  
+  
   trait CreateFleetRequest extends js.Object {
     /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
@@ -1464,7 +1808,7 @@ object EC2Ns extends js.Object {
          */
     var TerminateInstancesWithExpiration: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. If you request a certain target capacity, EC2 Fleet only places the required requests. It does not attempt to replenish instances if capacity is diminished, and does not submit requests in alternative capacity pools if capacity is unavailable. To maintain a certain target capacity, EC2 Fleet places the required requests to meet this target capacity. It also automatically replenishes any interrupted Spot Instances. Default: maintain.
+         * The type of the request. By default, the EC2 Fleet places an asynchronous request for your desired capacity, and maintains it by replenishing interrupted Spot Instances (maintain). A value of instant places a synchronous one-time request, and returns errors for any instances that could not be launched. A value of request places an asynchronous one-time request without maintaining capacity or submitting requests in alternative capacity pools if capacity is unavailable. For more information, see EC2 Fleet Request Types in the Amazon Elastic Compute Cloud User Guide.
          */
     var Type: js.UndefOr[FleetType] = js.undefined
     /**
@@ -1480,9 +1824,17 @@ object EC2Ns extends js.Object {
   
   trait CreateFleetResult extends js.Object {
     /**
+         * Information about the instances that could not be launched by the fleet. Valid only when Type is set to instant.
+         */
+    var Errors: js.UndefOr[CreateFleetErrorsSet] = js.undefined
+    /**
          * The ID of the EC2 Fleet.
          */
     var FleetId: js.UndefOr[FleetIdentifier] = js.undefined
+    /**
+         * Information about the instances that were launched by the fleet. Valid only when Type is set to instant.
+         */
+    var Instances: js.UndefOr[CreateFleetInstancesSet] = js.undefined
   }
   
   
@@ -1788,7 +2140,7 @@ object EC2Ns extends js.Object {
          */
     var Egress: scala.Boolean
     /**
-         * ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying the ICMP protocol, or protocol 58 (ICMPv6) with an IPv6 CIDR block.
+         * ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying protocol 1 (ICMP) or protocol 58 (ICMPv6) with an IPv6 CIDR block.
          */
     var IcmpTypeCode: js.UndefOr[IcmpTypeCode] = js.undefined
     /**
@@ -1800,11 +2152,11 @@ object EC2Ns extends js.Object {
          */
     var NetworkAclId: java.lang.String
     /**
-         * TCP or UDP protocols: The range of ports the rule applies to.
+         * TCP or UDP protocols: The range of ports the rule applies to. Required if specifying protocol 6 (TCP) or 17 (UDP).
          */
     var PortRange: js.UndefOr[PortRange] = js.undefined
     /**
-         * The protocol. A value of -1 or all means all protocols. If you specify all, -1, or a protocol number other than 6 (tcp), 17 (udp), or 1 (icmp), traffic on all ports is allowed, regardless of any ports or ICMP types or codes that you specify. If you specify protocol 58 (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol 58 (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
+         * The protocol number. A value of "-1" means all protocols. If you specify "-1" or a protocol number other than "6" (TCP), "17" (UDP), or "1" (ICMP), traffic on all ports is allowed, regardless of any ports or ICMP types or codes that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
          */
     var Protocol: java.lang.String
     /**
@@ -2000,6 +2352,10 @@ object EC2Ns extends js.Object {
          */
     var RouteTableId: java.lang.String
     /**
+         * The ID of a transit gateway.
+         */
+    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The ID of a VPC peering connection.
          */
     var VpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
@@ -2112,6 +2468,10 @@ object EC2Ns extends js.Object {
          */
     var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The AZ ID of the subnet.
+         */
+    var AvailabilityZoneId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The IPv4 network range for the subnet, in CIDR notation. For example, 10.0.0.0/24.
          */
     var CidrBlock: java.lang.String
@@ -2144,13 +2504,145 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * The IDs of one or more resources to tag. For example, ami-1a2b3c4d.
+         * The IDs of one or more resources, separated by spaces.
          */
     var Resources: ResourceIdList
     /**
          * One or more tags. The value parameter is required, but if you don't want the tag to have a value, specify the parameter with no value, and we set the value to an empty string. 
          */
     var Tags: TagList
+  }
+  
+  
+  trait CreateTransitGatewayRequest extends js.Object {
+    /**
+         * A description of the transit gateway.
+         */
+    var Description: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The transit gateway options.
+         */
+    var Options: js.UndefOr[TransitGatewayRequestOptions] = js.undefined
+    /**
+         * The tags to apply to the transit gateway.
+         */
+    var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
+  }
+  
+  
+  trait CreateTransitGatewayResult extends js.Object {
+    /**
+         * Information about the transit gateway.
+         */
+    var TransitGateway: js.UndefOr[TransitGateway] = js.undefined
+  }
+  
+  
+  trait CreateTransitGatewayRouteRequest extends js.Object {
+    /**
+         * Indicates whether traffic matching this route is to be dropped.
+         */
+    var Blackhole: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The CIDR range used for destination matches. Routing decisions are based on the most specific match.
+         */
+    var DestinationCidrBlock: java.lang.String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait CreateTransitGatewayRouteResult extends js.Object {
+    /**
+         * Information about the route.
+         */
+    var Route: js.UndefOr[TransitGatewayRoute] = js.undefined
+  }
+  
+  
+  trait CreateTransitGatewayRouteTableRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The tags to apply to the transit gateway route table.
+         */
+    var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
+    /**
+         * The ID of the transit gateway.
+         */
+    var TransitGatewayId: java.lang.String
+  }
+  
+  
+  trait CreateTransitGatewayRouteTableResult extends js.Object {
+    /**
+         * Information about the transit gateway route table.
+         */
+    var TransitGatewayRouteTable: js.UndefOr[TransitGatewayRouteTable] = js.undefined
+  }
+  
+  
+  trait CreateTransitGatewayVpcAttachmentRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The VPC attachment options.
+         */
+    var Options: js.UndefOr[CreateTransitGatewayVpcAttachmentRequestOptions] = js.undefined
+    /**
+         * The IDs of one or more subnets. You can specify only one subnet per Availability Zone. You must specify at least one subnet, but we recommend that you specify two subnets for better availability. The transit gateway uses one IP address from each specified subnet.
+         */
+    var SubnetIds: ValueStringList
+    /**
+         * The tags to apply to the VPC attachment.
+         */
+    var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
+    /**
+         * The ID of the transit gateway.
+         */
+    var TransitGatewayId: java.lang.String
+    /**
+         * The ID of the VPC.
+         */
+    var VpcId: java.lang.String
+  }
+  
+  
+  trait CreateTransitGatewayVpcAttachmentRequestOptions extends js.Object {
+    /**
+         * Enable or disable DNS support. The default is enable.
+         */
+    var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
+    /**
+         * Enable or disable IPv6 support. The default is enable.
+         */
+    var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.undefined
+  }
+  
+  
+  trait CreateTransitGatewayVpcAttachmentResult extends js.Object {
+    /**
+         * Information about the VPC attachment.
+         */
+    var TransitGatewayVpcAttachment: js.UndefOr[TransitGatewayVpcAttachment] = js.undefined
   }
   
   
@@ -2192,7 +2684,7 @@ object EC2Ns extends js.Object {
          */
     var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * The number of I/O operations per second (IOPS) to provision for the volume, with a maximum ratio of 50 IOPS/GiB. Range is 100 to 32000 IOPS for volumes in most regions. For exceptions, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. This parameter is valid only for Provisioned IOPS SSD (io1) volumes.
+         * The number of I/O operations per second (IOPS) to provision for the volume, with a maximum ratio of 50 IOPS/GiB. Range is 100 to 64,000IOPS for volumes in most regions. Maximum IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. This parameter is valid only for Provisioned IOPS SSD (io1) volumes.
          */
     var Iops: js.UndefOr[Integer] = js.undefined
     /**
@@ -2200,7 +2692,7 @@ object EC2Ns extends js.Object {
          */
     var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The size of the volume, in GiBs. Constraints: 1-16384 for gp2, 4-16384 for io1, 500-16384 for st1, 500-16384 for sc1, and 1-1024 for standard. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.
+         * The size of the volume, in GiBs. Constraints: 1-16,384 for gp2, 4-16,384 for io1, 500-16,384 for st1, 500-16,384 for sc1, and 1-1,024 for standard. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.
          */
     var Size: js.UndefOr[Integer] = js.undefined
     /**
@@ -2420,13 +2912,17 @@ object EC2Ns extends js.Object {
          */
     var Options: js.UndefOr[VpnConnectionOptionsSpecification] = js.undefined
     /**
+         * The ID of the transit gateway. If you specify a transit gateway, you cannot specify a virtual private gateway.
+         */
+    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The type of VPN connection (ipsec.1).
          */
     var Type: java.lang.String
     /**
-         * The ID of the virtual private gateway.
+         * The ID of the virtual private gateway. If you specify a virtual private gateway, you cannot specify a transit gateway.
          */
-    var VpnGatewayId: java.lang.String
+    var VpnGatewayId: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -2972,13 +3468,97 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * The IDs of one or more resources.
+         * The IDs of one or more resources, separated by spaces.
          */
     var Resources: ResourceIdList
     /**
          * One or more tags to delete. Specify a tag key and an optional tag value to delete specific tags. If you specify a tag key without a tag value, we delete any tag with this key regardless of its value. If you specify a tag key with an empty string as the tag value, we delete the tag only if its value is an empty string. If you omit this parameter, we delete all user-defined tags for the specified resources. We do not delete AWS-generated tags (tags that have the aws: prefix).
          */
     var Tags: js.UndefOr[TagList] = js.undefined
+  }
+  
+  
+  trait DeleteTransitGatewayRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the transit gateway.
+         */
+    var TransitGatewayId: java.lang.String
+  }
+  
+  
+  trait DeleteTransitGatewayResult extends js.Object {
+    /**
+         * Information about the deleted transit gateway.
+         */
+    var TransitGateway: js.UndefOr[TransitGateway] = js.undefined
+  }
+  
+  
+  trait DeleteTransitGatewayRouteRequest extends js.Object {
+    /**
+         * The CIDR range for the route. This must match the CIDR for the route exactly.
+         */
+    var DestinationCidrBlock: java.lang.String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait DeleteTransitGatewayRouteResult extends js.Object {
+    /**
+         * Information about the route.
+         */
+    var Route: js.UndefOr[TransitGatewayRoute] = js.undefined
+  }
+  
+  
+  trait DeleteTransitGatewayRouteTableRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait DeleteTransitGatewayRouteTableResult extends js.Object {
+    /**
+         * Information about the deleted transit gateway route table.
+         */
+    var TransitGatewayRouteTable: js.UndefOr[TransitGatewayRouteTable] = js.undefined
+  }
+  
+  
+  trait DeleteTransitGatewayVpcAttachmentRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: java.lang.String
+  }
+  
+  
+  trait DeleteTransitGatewayVpcAttachmentResult extends js.Object {
+    /**
+         * Information about the deleted VPC attachment.
+         */
+    var TransitGatewayVpcAttachment: js.UndefOr[TransitGatewayVpcAttachment] = js.undefined
   }
   
   
@@ -3122,6 +3702,26 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait DeprovisionByoipCidrRequest extends js.Object {
+    /**
+         * The public IPv4 address range, in CIDR notation. The prefix must be the same prefix that you specified when you provisioned the address range.
+         */
+    var Cidr: java.lang.String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  }
+  
+  
+  trait DeprovisionByoipCidrResult extends js.Object {
+    /**
+         * Information about the address range.
+         */
+    var ByoipCidr: js.UndefOr[ByoipCidr] = js.undefined
+  }
+  
+  
   trait DeregisterImageRequest extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -3208,9 +3808,13 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * One or more filters.    message - Information about the Availability Zone.    region-name - The name of the region for the Availability Zone (for example, us-east-1).    state - The state of the Availability Zone (available | information | impaired | unavailable).    zone-name - The name of the Availability Zone (for example, us-east-1a).  
+         * One or more filters.    message - Information about the Availability Zone.    region-name - The name of the region for the Availability Zone (for example, us-east-1).    state - The state of the Availability Zone (available | information | impaired | unavailable).    zone-id - The ID of the Availability Zone (for example, use1-az1).    zone-name - The name of the Availability Zone (for example, us-east-1a).  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The IDs of one or more Availability Zones.
+         */
+    var ZoneIds: js.UndefOr[ZoneIdStringList] = js.undefined
     /**
          * The names of one or more Availability Zones.
          */
@@ -3247,6 +3851,70 @@ object EC2Ns extends js.Object {
          * Information about one or more bundle tasks.
          */
     var BundleTasks: js.UndefOr[BundleTaskList] = js.undefined
+  }
+  
+  
+  trait DescribeByoipCidrsRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+         */
+    var MaxResults: MaxResults
+    /**
+         * The token for the next page of results.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait DescribeByoipCidrsResult extends js.Object {
+    /**
+         * Information about your address ranges.
+         */
+    var ByoipCidrs: js.UndefOr[ByoipCidrSet] = js.undefined
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait DescribeCapacityReservationsRequest extends js.Object {
+    /**
+         * The ID of the Capacity Reservation.
+         */
+    var CapacityReservationIds: js.UndefOr[CapacityReservationIdSet] = js.undefined
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * One or more filters.
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the returned nextToken value.
+         */
+    var MaxResults: js.UndefOr[Integer] = js.undefined
+    /**
+         * The token to retrieve the next page of results.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait DescribeCapacityReservationsResult extends js.Object {
+    /**
+         * Information about the Capacity Reservations.
+         */
+    var CapacityReservations: js.UndefOr[CapacityReservationSet] = js.undefined
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -3340,7 +4008,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * One or more filters.    dhcp-options-id - The ID of a set of DHCP options.    key - The key for one of the options (for example, domain-name).    value - The value for one of the options.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
+         * One or more filters.    dhcp-options-id - The ID of a DHCP options set.    key - The key for one of the options (for example, domain-name).    value - The value for one of the options.    owner-id - The ID of the AWS account that owns the DHCP options set.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
   }
@@ -3392,11 +4060,11 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * One or more Elastic GPU IDs.
+         * One or more Elastic Graphics accelerator IDs.
          */
     var ElasticGpuIds: js.UndefOr[ElasticGpuIdSet] = js.undefined
     /**
-         * One or more filters.    availability-zone - The Availability Zone in which the Elastic GPU resides.    elastic-gpu-health - The status of the Elastic GPU (OK | IMPAIRED).    elastic-gpu-state - The state of the Elastic GPU (ATTACHED).    elastic-gpu-type - The type of Elastic GPU; for example, eg1.medium.    instance-id - The ID of the instance to which the Elastic GPU is associated.  
+         * One or more filters.    availability-zone - The Availability Zone in which the Elastic Graphics accelerator resides.    elastic-gpu-health - The status of the Elastic Graphics accelerator (OK | IMPAIRED).    elastic-gpu-state - The state of the Elastic Graphics accelerator (ATTACHED).    elastic-gpu-type - The type of Elastic Graphics accelerator; for example, eg1.medium.    instance-id - The ID of the instance to which the Elastic Graphics accelerator is associated.  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -3412,7 +4080,7 @@ object EC2Ns extends js.Object {
   
   trait DescribeElasticGpusResult extends js.Object {
     /**
-         * Information about the Elastic GPUs.
+         * Information about the Elastic Graphics accelerators.
          */
     var ElasticGpuSet: js.UndefOr[ElasticGpuSet] = js.undefined
     /**
@@ -3439,6 +4107,26 @@ object EC2Ns extends js.Object {
          * Information about the export tasks.
          */
     var ExportTasks: js.UndefOr[ExportTaskList] = js.undefined
+  }
+  
+  
+  trait DescribeFleetError extends js.Object {
+    /**
+         * The error code that indicates why the instance could not be launched. For more information about error codes, see Error Codes.
+         */
+    var ErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The error message that describes why the instance could not be launched. For more information about error messages, see ee Error Codes.
+         */
+    var ErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The launch templates and overrides that were used for launching the instances. Any parameters that you specify in the Overrides override the same parameters in the launch template.
+         */
+    var LaunchTemplateAndOverrides: js.UndefOr[LaunchTemplateAndOverridesResponse] = js.undefined
+    /**
+         * Indicates if the instance that could not be launched was a Spot Instance or On-Demand Instance.
+         */
+    var Lifecycle: js.UndefOr[InstanceLifecycle] = js.undefined
   }
   
   
@@ -3534,13 +4222,37 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait DescribeFleetsInstances extends js.Object {
+    /**
+         * The IDs of the instances.
+         */
+    var InstanceIds: js.UndefOr[InstanceIdsSet] = js.undefined
+    /**
+         * The instance type.
+         */
+    var InstanceType: js.UndefOr[InstanceType] = js.undefined
+    /**
+         * The launch templates and overrides that were used for launching the instances. Any parameters that you specify in the Overrides override the same parameters in the launch template.
+         */
+    var LaunchTemplateAndOverrides: js.UndefOr[LaunchTemplateAndOverridesResponse] = js.undefined
+    /**
+         * Indicates if the instance that was launched is a Spot Instance or On-Demand Instance.
+         */
+    var Lifecycle: js.UndefOr[InstanceLifecycle] = js.undefined
+    /**
+         * The value is Windows for Windows instances; otherwise blank.
+         */
+    var Platform: js.UndefOr[PlatformValues] = js.undefined
+  }
+  
+  
   trait DescribeFleetsRequest extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * One or more filters.    activity-status - The progress of the EC2 Fleet ( error | pending-fulfillment | pending-termination | fulfilled).    excess-capacity-termination-policy - Indicates whether to terminate running instances if the target capacity is decreased below the current EC2 Fleet size (true | false).    fleet-state - The state of the EC2 Fleet (submitted | active | deleted | failed | deleted-running | deleted-terminating | modifying).    replace-unhealthy-instances - Indicates whether EC2 Fleet should replace unhealthy instances (true | false).    type - The type of request (request | maintain).  
+         * One or more filters.    activity-status - The progress of the EC2 Fleet ( error | pending-fulfillment | pending-termination | fulfilled).    excess-capacity-termination-policy - Indicates whether to terminate running instances if the target capacity is decreased below the current EC2 Fleet size (true | false).    fleet-state - The state of the EC2 Fleet (submitted | active | deleted | failed | deleted-running | deleted-terminating | modifying).    replace-unhealthy-instances - Indicates whether EC2 Fleet should replace unhealthy instances (true | false).    type - The type of request (instant | request | maintain).  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -4060,7 +4772,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * One or more filters.    affinity - The affinity setting for an instance running on a Dedicated Host (default | host).    architecture - The instance architecture (i386 | x86_64).    availability-zone - The Availability Zone of the instance.    block-device-mapping.attach-time - The attach time for an EBS volume mapped to the instance, for example, 2010-09-15T17:15:20.000Z.    block-device-mapping.delete-on-termination - A Boolean that indicates whether the EBS volume is deleted on instance termination.    block-device-mapping.device-name - The device name specified in the block device mapping (for example, /dev/sdh or xvdh).    block-device-mapping.status - The status for the EBS volume (attaching | attached | detaching | detached).    block-device-mapping.volume-id - The volume ID of the EBS volume.    client-token - The idempotency token you provided when you launched the instance.    dns-name - The public DNS name of the instance.    group-id - The ID of the security group for the instance. EC2-Classic only.    group-name - The name of the security group for the instance. EC2-Classic only.    host-id - The ID of the Dedicated Host on which the instance is running, if applicable.    hypervisor - The hypervisor type of the instance (ovm | xen).    iam-instance-profile.arn - The instance profile associated with the instance. Specified as an ARN.    image-id - The ID of the image used to launch the instance.    instance-id - The ID of the instance.    instance-lifecycle - Indicates whether this is a Spot Instance or a Scheduled Instance (spot | scheduled).    instance-state-code - The state of the instance, as a 16-bit unsigned integer. The high byte is used for internal purposes and should be ignored. The low byte is set based on the state represented. The valid values are: 0 (pending), 16 (running), 32 (shutting-down), 48 (terminated), 64 (stopping), and 80 (stopped).    instance-state-name - The state of the instance (pending | running | shutting-down | terminated | stopping | stopped).    instance-type - The type of instance (for example, t2.micro).    instance.group-id - The ID of the security group for the instance.     instance.group-name - The name of the security group for the instance.     ip-address - The public IPv4 address of the instance.    kernel-id - The kernel ID.    key-name - The name of the key pair used when the instance was launched.    launch-index - When launching multiple instances, this is the index for the instance in the launch group (for example, 0, 1, 2, and so on).     launch-time - The time when the instance was launched.    monitoring-state - Indicates whether detailed monitoring is enabled (disabled | enabled).    network-interface.addresses.private-ip-address - The private IPv4 address associated with the network interface.    network-interface.addresses.primary - Specifies whether the IPv4 address of the network interface is the primary private IPv4 address.    network-interface.addresses.association.public-ip - The ID of the association of an Elastic IP address (IPv4) with a network interface.    network-interface.addresses.association.ip-owner-id - The owner ID of the private IPv4 address associated with the network interface.    network-interface.association.public-ip - The address of the Elastic IP address (IPv4) bound to the network interface.    network-interface.association.ip-owner-id - The owner of the Elastic IP address (IPv4) associated with the network interface.    network-interface.association.allocation-id - The allocation ID returned when you allocated the Elastic IP address (IPv4) for your network interface.    network-interface.association.association-id - The association ID returned when the network interface was associated with an IPv4 address.    network-interface.attachment.attachment-id - The ID of the interface attachment.    network-interface.attachment.instance-id - The ID of the instance to which the network interface is attached.    network-interface.attachment.instance-owner-id - The owner ID of the instance to which the network interface is attached.    network-interface.attachment.device-index - The device index to which the network interface is attached.    network-interface.attachment.status - The status of the attachment (attaching | attached | detaching | detached).    network-interface.attachment.attach-time - The time that the network interface was attached to an instance.    network-interface.attachment.delete-on-termination - Specifies whether the attachment is deleted when an instance is terminated.    network-interface.availability-zone - The Availability Zone for the network interface.    network-interface.description - The description of the network interface.    network-interface.group-id - The ID of a security group associated with the network interface.    network-interface.group-name - The name of a security group associated with the network interface.    network-interface.ipv6-addresses.ipv6-address - The IPv6 address associated with the network interface.    network-interface.mac-address - The MAC address of the network interface.    network-interface.network-interface-id - The ID of the network interface.    network-interface.owner-id - The ID of the owner of the network interface.    network-interface.private-dns-name - The private DNS name of the network interface.    network-interface.requester-id - The requester ID for the network interface.    network-interface.requester-managed - Indicates whether the network interface is being managed by AWS.    network-interface.status - The status of the network interface (available) | in-use).    network-interface.source-dest-check - Whether the network interface performs source/destination checking. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the network interface to perform network address translation (NAT) in your VPC.    network-interface.subnet-id - The ID of the subnet for the network interface.    network-interface.vpc-id - The ID of the VPC for the network interface.    owner-id - The AWS account ID of the instance owner.    placement-group-name - The name of the placement group for the instance.    platform - The platform. Use windows if you have Windows instances; otherwise, leave blank.    private-dns-name - The private IPv4 DNS name of the instance.    private-ip-address - The private IPv4 address of the instance.    product-code - The product code associated with the AMI used to launch the instance.    product-code.type - The type of product code (devpay | marketplace).    ramdisk-id - The RAM disk ID.    reason - The reason for the current state of the instance (for example, shows "User Initiated [date]" when you stop or terminate the instance). Similar to the state-reason-code filter.    requester-id - The ID of the entity that launched the instance on your behalf (for example, AWS Management Console, Auto Scaling, and so on).    reservation-id - The ID of the instance's reservation. A reservation ID is created any time you launch an instance. A reservation ID has a one-to-one relationship with an instance launch request, but can be associated with more than one instance if you launch multiple instances using the same launch request. For example, if you launch one instance, you get one reservation ID. If you launch ten instances using the same launch request, you also get one reservation ID.    root-device-name - The device name of the root device volume (for example, /dev/sda1).    root-device-type - The type of the root device volume (ebs | instance-store).    source-dest-check - Indicates whether the instance performs source/destination checking. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the instance to perform network address translation (NAT) in your VPC.     spot-instance-request-id - The ID of the Spot Instance request.    state-reason-code - The reason code for the state change.    state-reason-message - A message that describes the state change.    subnet-id - The ID of the subnet for the instance.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources that have a tag with a specific key, regardless of the tag value.    tenancy - The tenancy of an instance (dedicated | default | host).    virtualization-type - The virtualization type of the instance (paravirtual | hvm).    vpc-id - The ID of the VPC that the instance is running in.  
+         * One or more filters.    affinity - The affinity setting for an instance running on a Dedicated Host (default | host).    architecture - The instance architecture (i386 | x86_64).    availability-zone - The Availability Zone of the instance.    block-device-mapping.attach-time - The attach time for an EBS volume mapped to the instance, for example, 2010-09-15T17:15:20.000Z.    block-device-mapping.delete-on-termination - A Boolean that indicates whether the EBS volume is deleted on instance termination.    block-device-mapping.device-name - The device name specified in the block device mapping (for example, /dev/sdh or xvdh).    block-device-mapping.status - The status for the EBS volume (attaching | attached | detaching | detached).    block-device-mapping.volume-id - The volume ID of the EBS volume.    client-token - The idempotency token you provided when you launched the instance.    dns-name - The public DNS name of the instance.    group-id - The ID of the security group for the instance. EC2-Classic only.    group-name - The name of the security group for the instance. EC2-Classic only.    hibernation-options.configured - A Boolean that indicates whether the instance is enabled for hibernation. A value of true means that the instance is enabled for hibernation.     host-id - The ID of the Dedicated Host on which the instance is running, if applicable.    hypervisor - The hypervisor type of the instance (ovm | xen).    iam-instance-profile.arn - The instance profile associated with the instance. Specified as an ARN.    image-id - The ID of the image used to launch the instance.    instance-id - The ID of the instance.    instance-lifecycle - Indicates whether this is a Spot Instance or a Scheduled Instance (spot | scheduled).    instance-state-code - The state of the instance, as a 16-bit unsigned integer. The high byte is used for internal purposes and should be ignored. The low byte is set based on the state represented. The valid values are: 0 (pending), 16 (running), 32 (shutting-down), 48 (terminated), 64 (stopping), and 80 (stopped).    instance-state-name - The state of the instance (pending | running | shutting-down | terminated | stopping | stopped).    instance-type - The type of instance (for example, t2.micro).    instance.group-id - The ID of the security group for the instance.     instance.group-name - The name of the security group for the instance.     ip-address - The public IPv4 address of the instance.    kernel-id - The kernel ID.    key-name - The name of the key pair used when the instance was launched.    launch-index - When launching multiple instances, this is the index for the instance in the launch group (for example, 0, 1, 2, and so on).     launch-time - The time when the instance was launched.    monitoring-state - Indicates whether detailed monitoring is enabled (disabled | enabled).    network-interface.addresses.private-ip-address - The private IPv4 address associated with the network interface.    network-interface.addresses.primary - Specifies whether the IPv4 address of the network interface is the primary private IPv4 address.    network-interface.addresses.association.public-ip - The ID of the association of an Elastic IP address (IPv4) with a network interface.    network-interface.addresses.association.ip-owner-id - The owner ID of the private IPv4 address associated with the network interface.    network-interface.association.public-ip - The address of the Elastic IP address (IPv4) bound to the network interface.    network-interface.association.ip-owner-id - The owner of the Elastic IP address (IPv4) associated with the network interface.    network-interface.association.allocation-id - The allocation ID returned when you allocated the Elastic IP address (IPv4) for your network interface.    network-interface.association.association-id - The association ID returned when the network interface was associated with an IPv4 address.    network-interface.attachment.attachment-id - The ID of the interface attachment.    network-interface.attachment.instance-id - The ID of the instance to which the network interface is attached.    network-interface.attachment.instance-owner-id - The owner ID of the instance to which the network interface is attached.    network-interface.attachment.device-index - The device index to which the network interface is attached.    network-interface.attachment.status - The status of the attachment (attaching | attached | detaching | detached).    network-interface.attachment.attach-time - The time that the network interface was attached to an instance.    network-interface.attachment.delete-on-termination - Specifies whether the attachment is deleted when an instance is terminated.    network-interface.availability-zone - The Availability Zone for the network interface.    network-interface.description - The description of the network interface.    network-interface.group-id - The ID of a security group associated with the network interface.    network-interface.group-name - The name of a security group associated with the network interface.    network-interface.ipv6-addresses.ipv6-address - The IPv6 address associated with the network interface.    network-interface.mac-address - The MAC address of the network interface.    network-interface.network-interface-id - The ID of the network interface.    network-interface.owner-id - The ID of the owner of the network interface.    network-interface.private-dns-name - The private DNS name of the network interface.    network-interface.requester-id - The requester ID for the network interface.    network-interface.requester-managed - Indicates whether the network interface is being managed by AWS.    network-interface.status - The status of the network interface (available) | in-use).    network-interface.source-dest-check - Whether the network interface performs source/destination checking. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the network interface to perform network address translation (NAT) in your VPC.    network-interface.subnet-id - The ID of the subnet for the network interface.    network-interface.vpc-id - The ID of the VPC for the network interface.    owner-id - The AWS account ID of the instance owner.    placement-group-name - The name of the placement group for the instance.    platform - The platform. Use windows if you have Windows instances; otherwise, leave blank.    private-dns-name - The private IPv4 DNS name of the instance.    private-ip-address - The private IPv4 address of the instance.    product-code - The product code associated with the AMI used to launch the instance.    product-code.type - The type of product code (devpay | marketplace).    ramdisk-id - The RAM disk ID.    reason - The reason for the current state of the instance (for example, shows "User Initiated [date]" when you stop or terminate the instance). Similar to the state-reason-code filter.    requester-id - The ID of the entity that launched the instance on your behalf (for example, AWS Management Console, Auto Scaling, and so on).    reservation-id - The ID of the instance's reservation. A reservation ID is created any time you launch an instance. A reservation ID has a one-to-one relationship with an instance launch request, but can be associated with more than one instance if you launch multiple instances using the same launch request. For example, if you launch one instance, you get one reservation ID. If you launch ten instances using the same launch request, you also get one reservation ID.    root-device-name - The device name of the root device volume (for example, /dev/sda1).    root-device-type - The type of the root device volume (ebs | instance-store).    source-dest-check - Indicates whether the instance performs source/destination checking. A value of true means that checking is enabled, and false means that checking is disabled. The value must be false for the instance to perform network address translation (NAT) in your VPC.     spot-instance-request-id - The ID of the Spot Instance request.    state-reason-code - The reason code for the state change.    state-reason-message - A message that describes the state change.    subnet-id - The ID of the subnet for the instance.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources that have a tag with a specific key, regardless of the tag value.    tenancy - The tenancy of an instance (dedicated | default | host).    virtualization-type - The virtualization type of the instance (paravirtual | hvm).    vpc-id - The ID of the VPC that the instance is running in.  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -4096,7 +4808,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * One or more filters.    attachment.state - The current state of the attachment between the gateway and the VPC (available). Present only if a VPC is attached.    attachment.vpc-id - The ID of an attached VPC.    internet-gateway-id - The ID of the Internet gateway.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
+         * One or more filters.    attachment.state - The current state of the attachment between the gateway and the VPC (available). Present only if a VPC is attached.    attachment.vpc-id - The ID of an attached VPC.    internet-gateway-id - The ID of the Internet gateway.    owner-id - The ID of the AWS account that owns the internet gateway.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -4208,7 +4920,7 @@ object EC2Ns extends js.Object {
          */
     var LaunchTemplateNames: js.UndefOr[LaunchTemplateNameStringList] = js.undefined
     /**
-         * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. This value can be between 5 and 1000.
+         * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. This value can be between 1 and 200.
          */
     var MaxResults: js.UndefOr[Integer] = js.undefined
     /**
@@ -4244,7 +4956,7 @@ object EC2Ns extends js.Object {
          */
     var MaxResults: js.UndefOr[Integer] = js.undefined
     /**
-         * The token to use to retrieve the next page of results.
+         * The token for the next page of results.
          */
     var NextToken: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -4304,7 +5016,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * One or more filters.    association.association-id - The ID of an association ID for the ACL.    association.network-acl-id - The ID of the network ACL involved in the association.    association.subnet-id - The ID of the subnet involved in the association.    default - Indicates whether the ACL is the default network ACL for the VPC.    entry.cidr - The IPv4 CIDR range specified in the entry.    entry.icmp.code - The ICMP code specified in the entry, if any.    entry.icmp.type - The ICMP type specified in the entry, if any.    entry.ipv6-cidr - The IPv6 CIDR range specified in the entry.    entry.port-range.from - The start of the port range specified in the entry.     entry.port-range.to - The end of the port range specified in the entry.     entry.protocol - The protocol specified in the entry (tcp | udp | icmp or a protocol number).    entry.rule-action - Allows or denies the matching traffic (allow | deny).    entry.rule-number - The number of an entry (in other words, rule) in the set of ACL entries.    network-acl-id - The ID of the network ACL.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC for the network ACL.  
+         * One or more filters.    association.association-id - The ID of an association ID for the ACL.    association.network-acl-id - The ID of the network ACL involved in the association.    association.subnet-id - The ID of the subnet involved in the association.    default - Indicates whether the ACL is the default network ACL for the VPC.    entry.cidr - The IPv4 CIDR range specified in the entry.    entry.icmp.code - The ICMP code specified in the entry, if any.    entry.icmp.type - The ICMP type specified in the entry, if any.    entry.ipv6-cidr - The IPv6 CIDR range specified in the entry.    entry.port-range.from - The start of the port range specified in the entry.     entry.port-range.to - The end of the port range specified in the entry.     entry.protocol - The protocol specified in the entry (tcp | udp | icmp or a protocol number).    entry.rule-action - Allows or denies the matching traffic (allow | deny).    entry.rule-number - The number of an entry (in other words, rule) in the set of ACL entries.    network-acl-id - The ID of the network ACL.    owner-id - The ID of the AWS account that owns the network ACL.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC for the network ACL.  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -4522,6 +5234,34 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait DescribePublicIpv4PoolsRequest extends js.Object {
+    /**
+         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+         */
+    var MaxResults: js.UndefOr[PoolMaxResults] = js.undefined
+    /**
+         * The token for the next page of results.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+         * The IDs of the address pools.
+         */
+    var PoolIds: js.UndefOr[ValueStringList] = js.undefined
+  }
+  
+  
+  trait DescribePublicIpv4PoolsResult extends js.Object {
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Information about the address pools.
+         */
+    var PublicIpv4Pools: js.UndefOr[PublicIpv4PoolSet] = js.undefined
+  }
+  
+  
   trait DescribeRegionsRequest extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -4712,7 +5452,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * One or more filters.    association.route-table-association-id - The ID of an association ID for the route table.    association.route-table-id - The ID of the route table involved in the association.    association.subnet-id - The ID of the subnet involved in the association.    association.main - Indicates whether the route table is the main route table for the VPC (true | false). Route tables that do not have an association ID are not returned in the response.    route-table-id - The ID of the route table.    route.destination-cidr-block - The IPv4 CIDR range specified in a route in the table.    route.destination-ipv6-cidr-block - The IPv6 CIDR range specified in a route in the route table.    route.destination-prefix-list-id - The ID (prefix) of the AWS service specified in a route in the table.    route.egress-only-internet-gateway-id - The ID of an egress-only Internet gateway specified in a route in the route table.    route.gateway-id - The ID of a gateway specified in a route in the table.    route.instance-id - The ID of an instance specified in a route in the table.    route.nat-gateway-id - The ID of a NAT gateway.    route.origin - Describes how the route was created. CreateRouteTable indicates that the route was automatically created when the route table was created; CreateRoute indicates that the route was manually added to the route table; EnableVgwRoutePropagation indicates that the route was propagated by route propagation.    route.state - The state of a route in the route table (active | blackhole). The blackhole state indicates that the route's target isn't available (for example, the specified gateway isn't attached to the VPC, the specified NAT instance has been terminated, and so on).    route.vpc-peering-connection-id - The ID of a VPC peering connection specified in a route in the table.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC for the route table.  
+         * One or more filters.    association.route-table-association-id - The ID of an association ID for the route table.    association.route-table-id - The ID of the route table involved in the association.    association.subnet-id - The ID of the subnet involved in the association.    association.main - Indicates whether the route table is the main route table for the VPC (true | false). Route tables that do not have an association ID are not returned in the response.    owner-id - The ID of the AWS account that owns the route table.    route-table-id - The ID of the route table.    route.destination-cidr-block - The IPv4 CIDR range specified in a route in the table.    route.destination-ipv6-cidr-block - The IPv6 CIDR range specified in a route in the route table.    route.destination-prefix-list-id - The ID (prefix) of the AWS service specified in a route in the table.    route.egress-only-internet-gateway-id - The ID of an egress-only Internet gateway specified in a route in the route table.    route.gateway-id - The ID of a gateway specified in a route in the table.    route.instance-id - The ID of an instance specified in a route in the table.    route.nat-gateway-id - The ID of a NAT gateway.    route.transit-gateway-id - The ID of a transit gateway.    route.origin - Describes how the route was created. CreateRouteTable indicates that the route was automatically created when the route table was created; CreateRoute indicates that the route was manually added to the route table; EnableVgwRoutePropagation indicates that the route was propagated by route propagation.    route.state - The state of a route in the route table (active | blackhole). The blackhole state indicates that the route's target isn't available (for example, the specified gateway isn't attached to the VPC, the specified NAT instance has been terminated, and so on).    route.vpc-peering-connection-id - The ID of a VPC peering connection specified in a route in the table.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    transit-gateway-id - The ID of a transit gateway.    vpc-id - The ID of the VPC for the route table.  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -5216,7 +5956,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * One or more filters.    availabilityZone - The Availability Zone for the subnet. You can also use availability-zone as the filter name.    available-ip-address-count - The number of IPv4 addresses in the subnet that are available.    cidrBlock - The IPv4 CIDR block of the subnet. The CIDR block you specify must exactly match the subnet's CIDR block for information to be returned for the subnet. You can also use cidr or cidr-block as the filter names.    defaultForAz - Indicates whether this is the default subnet for the Availability Zone. You can also use default-for-az as the filter name.    ipv6-cidr-block-association.ipv6-cidr-block - An IPv6 CIDR block associated with the subnet.    ipv6-cidr-block-association.association-id - An association ID for an IPv6 CIDR block associated with the subnet.    ipv6-cidr-block-association.state - The state of an IPv6 CIDR block associated with the subnet.    state - The state of the subnet (pending | available).    subnet-id - The ID of the subnet.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC for the subnet.  
+         * One or more filters.    availability-zone - The Availability Zone for the subnet. You can also use availabilityZone as the filter name.    availability-zone-id - The ID of the Availability Zone for the subnet. You can also use availabilityZoneId as the filter name.    available-ip-address-count - The number of IPv4 addresses in the subnet that are available.    cidr-block - The IPv4 CIDR block of the subnet. The CIDR block you specify must exactly match the subnet's CIDR block for information to be returned for the subnet. You can also use cidr or cidrBlock as the filter names.    default-for-az - Indicates whether this is the default subnet for the Availability Zone. You can also use defaultForAz as the filter name.    ipv6-cidr-block-association.ipv6-cidr-block - An IPv6 CIDR block associated with the subnet.    ipv6-cidr-block-association.association-id - An association ID for an IPv6 CIDR block associated with the subnet.    ipv6-cidr-block-association.state - The state of an IPv6 CIDR block associated with the subnet.    owner-id - The ID of the AWS account that owns the subnet.    state - The state of the subnet (pending | available).    subnet-arn - The Amazon Resource Name (ARN) of the subnet.    subnet-id - The ID of the subnet.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC for the subnet.  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -5263,6 +6003,150 @@ object EC2Ns extends js.Object {
          * The tags.
          */
     var Tags: js.UndefOr[TagDescriptionList] = js.undefined
+  }
+  
+  
+  trait DescribeTransitGatewayAttachmentsRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * One or more filters. The possible values are:    association-id - The ID of the association.    association-route-table-id - The ID of the route table for the transit gateway.    associate-state - The state of the association (associating | associated | disassociating).    resource-id - The ID of the resource.    resource-type - The resource type (vpc | vpn).    state - The state of the attachment (pendingAcceptance | pending | available | modifying | deleting | deleted | failed | rejected).    transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-id - The ID of the transit gateway.    transit-gateway-owner - The ID of the AWS account that owns the transit gateway.  
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+         */
+    var MaxResults: js.UndefOr[TransitGatewayMaxResults] = js.undefined
+    /**
+         * The token for the next page of results.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The IDs of the attachments.
+         */
+    var TransitGatewayAttachmentIds: js.UndefOr[TransitGatewayAttachmentIdStringList] = js.undefined
+  }
+  
+  
+  trait DescribeTransitGatewayAttachmentsResult extends js.Object {
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Information about the attachments.
+         */
+    var TransitGatewayAttachments: js.UndefOr[TransitGatewayAttachmentList] = js.undefined
+  }
+  
+  
+  trait DescribeTransitGatewayRouteTablesRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * One or more filters. The possible values are:    default-association-route-table - Indicates whether this is the default association route table for the transit gateway (true | false).    default-propagation-route-table - Indicates whether this is the default propagation route table for the transit gateway (true | false).    transit-gateway-id - The ID of the transit gateway.    transit-gateway-route-table-id - The ID of the transit gateway route table.    transit-gateway-route-table-state - The state (pending | available | deleting | deleted).  
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+         */
+    var MaxResults: js.UndefOr[TransitGatewayMaxResults] = js.undefined
+    /**
+         * The token for the next page of results.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The IDs of the transit gateway route tables.
+         */
+    var TransitGatewayRouteTableIds: js.UndefOr[TransitGatewayRouteTableIdStringList] = js.undefined
+  }
+  
+  
+  trait DescribeTransitGatewayRouteTablesResult extends js.Object {
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Information about the transit gateway route tables.
+         */
+    var TransitGatewayRouteTables: js.UndefOr[TransitGatewayRouteTableList] = js.undefined
+  }
+  
+  
+  trait DescribeTransitGatewayVpcAttachmentsRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * One or more filters. The possible values are:    transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-attachment-state - The state of the attachment (pendingAcceptance | pending | available | modifying | deleting | deleted | failed | rejected).    transit-gateway-id - The ID of the transit gateway.    vpc-id - The ID of the VPC.  
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+         */
+    var MaxResults: js.UndefOr[TransitGatewayMaxResults] = js.undefined
+    /**
+         * The token for the next page of results.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The IDs of the attachments.
+         */
+    var TransitGatewayAttachmentIds: js.UndefOr[TransitGatewayAttachmentIdStringList] = js.undefined
+  }
+  
+  
+  trait DescribeTransitGatewayVpcAttachmentsResult extends js.Object {
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Information about the VPC attachments.
+         */
+    var TransitGatewayVpcAttachments: js.UndefOr[TransitGatewayVpcAttachmentList] = js.undefined
+  }
+  
+  
+  trait DescribeTransitGatewaysRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * One or more filters. The possible values are:    amazon-side-asn - The private ASN for the Amazon side of a BGP session.    association-default-route-table-id - The ID of the default association route table.    default-route-table-association - Indicates whether resource attachments are automatically associated with the default association route table (enable | disable).    default-route-table-propagation - Indicates whether resource attachments automatically propagate routes to the default propagation route table (enable | disable).    owner-account-id - The ID of the AWS account that owns the transit gateway.    propagation-default-route-table-id - The ID of the default propagation route table.    transit-gateway-id - The ID of the transit gateway.    transit-gateway-state - The state of the transit gateway (pending | available | deleting | deleted).  
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+         */
+    var MaxResults: js.UndefOr[TransitGatewayMaxResults] = js.undefined
+    /**
+         * The token for the next page of results.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The IDs of the transit gateways.
+         */
+    var TransitGatewayIds: js.UndefOr[TransitGatewayIdStringList] = js.undefined
+  }
+  
+  
+  trait DescribeTransitGatewaysResult extends js.Object {
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Information about the transit gateways.
+         */
+    var TransitGateways: js.UndefOr[TransitGatewayList] = js.undefined
   }
   
   
@@ -5736,7 +6620,7 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * One or more filters.    cidr - The primary IPv4 CIDR block of the VPC. The CIDR block you specify must exactly match the VPC's CIDR block for information to be returned for the VPC. Must contain the slash followed by one or two digits (for example, /28).    cidr-block-association.cidr-block - An IPv4 CIDR block associated with the VPC.    cidr-block-association.association-id - The association ID for an IPv4 CIDR block associated with the VPC.    cidr-block-association.state - The state of an IPv4 CIDR block associated with the VPC.    dhcp-options-id - The ID of a set of DHCP options.    ipv6-cidr-block-association.ipv6-cidr-block - An IPv6 CIDR block associated with the VPC.    ipv6-cidr-block-association.association-id - The association ID for an IPv6 CIDR block associated with the VPC.    ipv6-cidr-block-association.state - The state of an IPv6 CIDR block associated with the VPC.    isDefault - Indicates whether the VPC is the default VPC.    state - The state of the VPC (pending | available).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC.  
+         * One or more filters.    cidr - The primary IPv4 CIDR block of the VPC. The CIDR block you specify must exactly match the VPC's CIDR block for information to be returned for the VPC. Must contain the slash followed by one or two digits (for example, /28).    cidr-block-association.cidr-block - An IPv4 CIDR block associated with the VPC.    cidr-block-association.association-id - The association ID for an IPv4 CIDR block associated with the VPC.    cidr-block-association.state - The state of an IPv4 CIDR block associated with the VPC.    dhcp-options-id - The ID of a set of DHCP options.    ipv6-cidr-block-association.ipv6-cidr-block - An IPv6 CIDR block associated with the VPC.    ipv6-cidr-block-association.association-id - The association ID for an IPv6 CIDR block associated with the VPC.    ipv6-cidr-block-association.state - The state of an IPv6 CIDR block associated with the VPC.    isDefault - Indicates whether the VPC is the default VPC.    owner-id - The ID of the AWS account that owns the VPC.    state - The state of the VPC (pending | available).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    vpc-id - The ID of the VPC.  
          */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -5920,9 +6804,37 @@ object EC2Ns extends js.Object {
          */
     var DhcpOptionsId: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The ID of the AWS account that owns the DHCP options set.
+         */
+    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * Any tags assigned to the DHCP options set.
          */
     var Tags: js.UndefOr[TagList] = js.undefined
+  }
+  
+  
+  trait DisableTransitGatewayRouteTablePropagationRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: java.lang.String
+    /**
+         * The ID of the propagation route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait DisableTransitGatewayRouteTablePropagationResult extends js.Object {
+    /**
+         * Information about route propagation.
+         */
+    var Propagation: js.UndefOr[TransitGatewayPropagation] = js.undefined
   }
   
   
@@ -6038,6 +6950,30 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait DisassociateTransitGatewayRouteTableRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: java.lang.String
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait DisassociateTransitGatewayRouteTableResult extends js.Object {
+    /**
+         * Information about the association.
+         */
+    var Association: js.UndefOr[TransitGatewayAssociation] = js.undefined
+  }
+  
+  
   trait DisassociateVpcCidrBlockRequest extends js.Object {
     /**
          * The association ID for the CIDR block.
@@ -6148,7 +7084,7 @@ object EC2Ns extends js.Object {
          */
     var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * The number of I/O operations per second (IOPS) that the volume supports. For io1, this represents the number of IOPS that are provisioned for the volume. For gp2, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraint: Range is 100-20000 IOPS for io1 volumes and 100-10000 IOPS for gp2 volumes. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
+         * The number of I/O operations per second (IOPS) that the volume supports. For io1, this represents the number of IOPS that are provisioned for the volume. For gp2, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-10,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes in most regions. Maximum io1IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
          */
     var Iops: js.UndefOr[Integer] = js.undefined
     /**
@@ -6220,15 +7156,15 @@ object EC2Ns extends js.Object {
          */
     var ElasticGpuAssociationId: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The state of the association between the instance and the Elastic GPU.
+         * The state of the association between the instance and the Elastic Graphics accelerator.
          */
     var ElasticGpuAssociationState: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The time the Elastic GPU was associated with the instance.
+         * The time the Elastic Graphics accelerator was associated with the instance.
          */
     var ElasticGpuAssociationTime: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The ID of the Elastic GPU.
+         * The ID of the Elastic Graphics accelerator.
          */
     var ElasticGpuId: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -6244,7 +7180,7 @@ object EC2Ns extends js.Object {
   
   trait ElasticGpuSpecification extends js.Object {
     /**
-         * The type of Elastic GPU.
+         * The type of Elastic Graphics accelerator.
          */
     var Type: java.lang.String
   }
@@ -6260,29 +7196,81 @@ object EC2Ns extends js.Object {
   
   trait ElasticGpus extends js.Object {
     /**
-         * The Availability Zone in the which the Elastic GPU resides.
+         * The Availability Zone in the which the Elastic Graphics accelerator resides.
          */
     var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The status of the Elastic GPU.
+         * The status of the Elastic Graphics accelerator.
          */
     var ElasticGpuHealth: js.UndefOr[ElasticGpuHealth] = js.undefined
     /**
-         * The ID of the Elastic GPU.
+         * The ID of the Elastic Graphics accelerator.
          */
     var ElasticGpuId: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The state of the Elastic GPU.
+         * The state of the Elastic Graphics accelerator.
          */
     var ElasticGpuState: js.UndefOr[ElasticGpuState] = js.undefined
     /**
-         * The type of Elastic GPU.
+         * The type of Elastic Graphics accelerator.
          */
     var ElasticGpuType: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The ID of the instance to which the Elastic GPU is attached.
+         * The ID of the instance to which the Elastic Graphics accelerator is attached.
          */
     var InstanceId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ElasticInferenceAccelerator extends js.Object {
+    /**
+         *  The type of elastic inference accelerator. The possible values are eia1.small, eia1.medium, and eia1.large. 
+         */
+    var Type: java.lang.String
+  }
+  
+  
+  trait ElasticInferenceAcceleratorAssociation extends js.Object {
+    /**
+         *  The Amazon Resource Name (ARN) of the elastic inference accelerator. 
+         */
+    var ElasticInferenceAcceleratorArn: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The ID of the association. 
+         */
+    var ElasticInferenceAcceleratorAssociationId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The state of the elastic inference accelerator. 
+         */
+    var ElasticInferenceAcceleratorAssociationState: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         *  The time at which the elastic inference accelerator is associated with an instance. 
+         */
+    var ElasticInferenceAcceleratorAssociationTime: js.UndefOr[DateTime] = js.undefined
+  }
+  
+  
+  trait EnableTransitGatewayRouteTablePropagationRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: java.lang.String
+    /**
+         * The ID of the propagation route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait EnableTransitGatewayRouteTablePropagationResult extends js.Object {
+    /**
+         * Information about route propagation.
+         */
+    var Propagation: js.UndefOr[TransitGatewayPropagation] = js.undefined
   }
   
   
@@ -6430,6 +7418,34 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait ExportTransitGatewayRoutesRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * One or more filters. The possible values are:    transit-gateway-route-destination-cidr-block - The CIDR range.    transit-gateway-route-state - The state of the route (active | blackhole).    transit-gateway-route-transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-route-type - The route type (static | propagated).    transit-gateway-route-vpn-connection-id - The ID of the VPN connection.  
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The name of the S3 bucket.
+         */
+    var S3Bucket: java.lang.String
+    /**
+         * The ID of the route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait ExportTransitGatewayRoutesResult extends js.Object {
+    /**
+         * The URL of the exported file in Amazon S3. For example, s3://bucket_name/VPCTransitGateway/TransitGatewayRouteTables/file_name.
+         */
+    var S3Location: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait Filter extends js.Object {
     /**
          * The name of the filter. Filter names are case-sensitive.
@@ -6456,6 +7472,10 @@ object EC2Ns extends js.Object {
          */
     var CreateTime: js.UndefOr[DateTime] = js.undefined
     /**
+         * Information about the instances that could not be launched by the fleet. Valid only when Type is set to instant.
+         */
+    var Errors: js.UndefOr[DescribeFleetsErrorSet] = js.undefined
+    /**
          * Indicates whether running instances should be terminated if the target capacity of the EC2 Fleet is decreased below the current size of the EC2 Fleet.
          */
     var ExcessCapacityTerminationPolicy: js.UndefOr[FleetExcessCapacityTerminationPolicy] = js.undefined
@@ -6475,6 +7495,10 @@ object EC2Ns extends js.Object {
          * The number of units fulfilled by this request compared to the set target On-Demand capacity.
          */
     var FulfilledOnDemandCapacity: js.UndefOr[Double] = js.undefined
+    /**
+         * Information about the instances that were launched by the fleet. Valid only when Type is set to instant.
+         */
+    var Instances: js.UndefOr[DescribeFleetsInstancesSet] = js.undefined
     /**
          * The launch template and overrides.
          */
@@ -6556,6 +7580,10 @@ object EC2Ns extends js.Object {
          */
     var MaxPrice: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The location where the instance launched, if applicable.
+         */
+    var Placement: js.UndefOr[PlacementResponse] = js.undefined
+    /**
          * The priority for the launch template override. If AllocationStrategy is set to prioritized, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. Valid values are whole numbers starting at 0. The lower the number, the higher the priority. If no number is set, the override has the lowest priority.
          */
     var Priority: js.UndefOr[Double] = js.undefined
@@ -6583,6 +7611,10 @@ object EC2Ns extends js.Object {
          * The maximum price per unit hour that you are willing to pay for a Spot Instance.
          */
     var MaxPrice: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The location where the instance launched, if applicable.
+         */
+    var Placement: js.UndefOr[Placement] = js.undefined
     /**
          * The priority for the launch template override. If AllocationStrategy is set to prioritized, EC2 Fleet uses priority to determine which launch template override to use first in fulfilling On-Demand capacity. The highest priority is launched first. Valid values are whole numbers starting at 0. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority.
          */
@@ -6970,6 +8002,114 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait GetTransitGatewayAttachmentPropagationsRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * One or more filters. The possible values are:    transit-gateway-route-table-id - The ID of the transit gateway route table.  
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+         */
+    var MaxResults: js.UndefOr[TransitGatewayMaxResults] = js.undefined
+    /**
+         * The token for the next page of results.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: java.lang.String
+  }
+  
+  
+  trait GetTransitGatewayAttachmentPropagationsResult extends js.Object {
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Information about the propagation route tables.
+         */
+    var TransitGatewayAttachmentPropagations: js.UndefOr[TransitGatewayAttachmentPropagationList] = js.undefined
+  }
+  
+  
+  trait GetTransitGatewayRouteTableAssociationsRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * One or more filters. The possible values are:    association-id - The ID of the association.    resource-id - The ID of the resource.    resource-type - The resource type (vpc | vpn).    transit-gateway-attachment-id - The ID of the attachment.  
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+         */
+    var MaxResults: js.UndefOr[TransitGatewayMaxResults] = js.undefined
+    /**
+         * The token for the next page of results.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait GetTransitGatewayRouteTableAssociationsResult extends js.Object {
+    /**
+         * Information about the associations.
+         */
+    var Associations: js.UndefOr[TransitGatewayRouteTableAssociationList] = js.undefined
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait GetTransitGatewayRouteTablePropagationsRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * One or more filters. The possible values are:    resource-id - The ID of the resource.    resource-type - The resource type (vpc | vpn).    transit-gateway-attachment-id - The ID of the attachment.  
+         */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+         * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+         */
+    var MaxResults: js.UndefOr[TransitGatewayMaxResults] = js.undefined
+    /**
+         * The token for the next page of results.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait GetTransitGatewayRouteTablePropagationsResult extends js.Object {
+    /**
+         * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+         */
+    var NextToken: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Information about the route table propagations.
+         */
+    var TransitGatewayRouteTablePropagations: js.UndefOr[TransitGatewayRouteTablePropagationList] = js.undefined
+  }
+  
+  
   trait GroupIdentifier extends js.Object {
     /**
          * The ID of the security group.
@@ -6979,6 +8119,22 @@ object EC2Ns extends js.Object {
          * The name of the security group.
          */
     var GroupName: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait HibernationOptions extends js.Object {
+    /**
+         * If this parameter is set to true, your instance is enabled for hibernation; otherwise, it is not enabled for hibernation.
+         */
+    var Configured: js.UndefOr[scala.Boolean] = js.undefined
+  }
+  
+  
+  trait HibernationOptionsRequest extends js.Object {
+    /**
+         * If you set this parameter to true, your instance is enabled for hibernation. Default: false 
+         */
+    var Configured: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   
@@ -7452,9 +8608,17 @@ object EC2Ns extends js.Object {
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
     /**
+         * Specifies whether the destination AMI of the imported image should be encrypted. The default CMK for EBS is used unless you specify a non-default AWS Key Management Service (AWS KMS) CMK using KmsKeyId. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide.
+         */
+    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    /**
          * The target hypervisor platform. Valid values: xen 
          */
     var Hypervisor: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * An identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted AMI. This parameter is only required if you want to use a non-default CMK; if this parameter is not specified, the default CMK for EBS is used. If a KmsKeyId is specified, the Encrypted flag must also be set.  The CMK identifier may be provided in any of the following formats:    Key ID   Key alias, in the form alias/ExampleAlias     ARN using key ID. The ID ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.   ARN using key alias. The alias ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the alias namespace, and then the CMK alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.    AWS parses KmsKeyId asynchronously, meaning that the action you call may appear to complete even though you provided an invalid identifier. This action will eventually report failure.  The specified CMK must exist in the region that the AMI is being copied to. 
+         */
+    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The license type to be used for the Amazon Machine Image (AMI) after importing.  Note: You may only use BYOL if you have existing licenses with rights to use these licenses in a third party cloud like AWS. For more information, see Prerequisites in the VM Import/Export User Guide. Valid values: AWS | BYOL 
          */
@@ -7480,6 +8644,10 @@ object EC2Ns extends js.Object {
          */
     var Description: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * Indicates whether the AMI is encypted.
+         */
+    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    /**
          * The target hypervisor of the import task.
          */
     var Hypervisor: js.UndefOr[java.lang.String] = js.undefined
@@ -7491,6 +8659,10 @@ object EC2Ns extends js.Object {
          * The task ID of the import image task.
          */
     var ImportTaskId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted AMI.
+         */
+    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The license type of the virtual machine.
          */
@@ -7528,6 +8700,10 @@ object EC2Ns extends js.Object {
          */
     var Description: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * Indicates whether the image is encrypted.
+         */
+    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    /**
          * The target hypervisor for the import task. Valid values: xen 
          */
     var Hypervisor: js.UndefOr[java.lang.String] = js.undefined
@@ -7539,6 +8715,10 @@ object EC2Ns extends js.Object {
          * The ID of the import image task.
          */
     var ImportTaskId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted image.
+         */
+    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The license type of the virtual machine.
          */
@@ -7670,11 +8850,11 @@ object EC2Ns extends js.Object {
     /**
          * The Availability Zone where the resulting instance will reside.
          */
-    var AvailabilityZone: java.lang.String
+    var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The number of bytes converted so far.
          */
-    var BytesConverted: Long
+    var BytesConverted: js.UndefOr[Long] = js.undefined
     /**
          * A description of the task.
          */
@@ -7682,11 +8862,11 @@ object EC2Ns extends js.Object {
     /**
          * The image.
          */
-    var Image: DiskImageDescription
+    var Image: js.UndefOr[DiskImageDescription] = js.undefined
     /**
          * The status of the import of this particular disk image.
          */
-    var Status: java.lang.String
+    var Status: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The status information or errors related to the disk image.
          */
@@ -7694,7 +8874,7 @@ object EC2Ns extends js.Object {
     /**
          * The volume.
          */
-    var Volume: DiskImageVolumeDescription
+    var Volume: js.UndefOr[DiskImageVolumeDescription] = js.undefined
   }
   
   
@@ -7747,6 +8927,14 @@ object EC2Ns extends js.Object {
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
          */
     var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Specifies whether the destination snapshot of the imported image should be encrypted. The default CMK for EBS is used unless you specify a non-default AWS Key Management Service (AWS KMS) CMK using KmsKeyId. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide.
+         */
+    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * An identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted snapshot. This parameter is only required if you want to use a non-default CMK; if this parameter is not specified, the default CMK for EBS is used. If a KmsKeyId is specified, the Encrypted flag must also be set.  The CMK identifier may be provided in any of the following formats:    Key ID   Key alias, in the form alias/ExampleAlias     ARN using key ID. The ID ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.   ARN using key alias. The alias ARN contains the arn:aws:kms namespace, followed by the region of the CMK, the AWS account ID of the CMK owner, the alias namespace, and then the CMK alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.    AWS parses KmsKeyId asynchronously, meaning that the action you call may appear to complete even though you provided an invalid identifier. This action will eventually report failure.  The specified CMK must exist in the region that the snapshot is being copied to. 
+         */
+    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The name of the role to use when not using the default role, 'vmimport'.
          */
@@ -7856,6 +9044,14 @@ object EC2Ns extends js.Object {
          */
     var BlockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappingList] = js.undefined
     /**
+         * The ID of the Capacity Reservation.
+         */
+    var CapacityReservationId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Information about the Capacity Reservation targeting option.
+         */
+    var CapacityReservationSpecification: js.UndefOr[CapacityReservationSpecificationResponse] = js.undefined
+    /**
          * The idempotency token you provided when you launched the instance, if applicable.
          */
     var ClientToken: js.UndefOr[java.lang.String] = js.undefined
@@ -7872,9 +9068,17 @@ object EC2Ns extends js.Object {
          */
     var ElasticGpuAssociations: js.UndefOr[ElasticGpuAssociationList] = js.undefined
     /**
+         *  The elastic inference accelerator associated with the instance. 
+         */
+    var ElasticInferenceAcceleratorAssociations: js.UndefOr[ElasticInferenceAcceleratorAssociationList] = js.undefined
+    /**
          * Specifies whether enhanced networking with ENA is enabled.
          */
     var EnaSupport: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Indicates whether the instance is enabled for hibernation.
+         */
+    var HibernationOptions: js.UndefOr[HibernationOptions] = js.undefined
     /**
          * The hypervisor type of the instance.
          */
@@ -7911,6 +9115,10 @@ object EC2Ns extends js.Object {
          * The time the instance was launched.
          */
     var LaunchTime: js.UndefOr[DateTime] = js.undefined
+    /**
+         * The license configurations.
+         */
+    var Licenses: js.UndefOr[LicenseList] = js.undefined
     /**
          * The monitoring for the instance.
          */
@@ -8496,6 +9704,10 @@ object EC2Ns extends js.Object {
          */
     var InternetGatewayId: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The ID of the AWS account that owns the internet gateway.
+         */
+    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * Any tags assigned to the internet gateway.
          */
     var Tags: js.UndefOr[TagList] = js.undefined
@@ -8723,6 +9935,18 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait LaunchTemplateAndOverridesResponse extends js.Object {
+    /**
+         * The launch template.
+         */
+    var LaunchTemplateSpecification: js.UndefOr[FleetLaunchTemplateSpecification] = js.undefined
+    /**
+         * Any parameters that you specify override the same parameters in the launch template.
+         */
+    var Overrides: js.UndefOr[FleetLaunchTemplateOverrides] = js.undefined
+  }
+  
+  
   trait LaunchTemplateBlockDeviceMapping extends js.Object {
     /**
          * The device name.
@@ -8760,6 +9984,30 @@ object EC2Ns extends js.Object {
          * The virtual device name (ephemeralN). Instance store volumes are numbered starting from 0. An instance type with 2 available instance store volumes can specify mappings for ephemeral0 and ephemeral1. The number of available instance store volumes depends on the instance type. After you connect to the instance, you must mount the volume.
          */
     var VirtualName: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait LaunchTemplateCapacityReservationSpecificationRequest extends js.Object {
+    /**
+         * Indicates the instance's Capacity Reservation preferences. Possible preferences include:    open - The instance can run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).    none - The instance avoids running in a Capacity Reservation even if one is available. The instance runs in On-Demand capacity.  
+         */
+    var CapacityReservationPreference: js.UndefOr[CapacityReservationPreference] = js.undefined
+    /**
+         * Information about the target Capacity Reservation.
+         */
+    var CapacityReservationTarget: js.UndefOr[CapacityReservationTarget] = js.undefined
+  }
+  
+  
+  trait LaunchTemplateCapacityReservationSpecificationResponse extends js.Object {
+    /**
+         * Indicates the instance's Capacity Reservation preferences. Possible preferences include:    open - The instance can run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).    none - The instance avoids running in a Capacity Reservation even if one is available. The instance runs in On-Demand capacity.  
+         */
+    var CapacityReservationPreference: js.UndefOr[CapacityReservationPreference] = js.undefined
+    /**
+         * Information about the target Capacity Reservation.
+         */
+    var CapacityReservationTarget: js.UndefOr[CapacityReservationTargetResponse] = js.undefined
   }
   
   
@@ -8860,6 +10108,38 @@ object EC2Ns extends js.Object {
          * The volume type.
          */
     var VolumeType: js.UndefOr[VolumeType] = js.undefined
+  }
+  
+  
+  trait LaunchTemplateElasticInferenceAccelerator extends js.Object {
+    /**
+         *  The type of elastic inference accelerator. The possible values are eia1.medium, eia1.large, and eia1.xlarge. 
+         */
+    var Type: java.lang.String
+  }
+  
+  
+  trait LaunchTemplateElasticInferenceAcceleratorResponse extends js.Object {
+    /**
+         *  The type of elastic inference accelerator. The possible values are eia1.medium, eia1.large, and eia1.xlarge. 
+         */
+    var Type: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait LaunchTemplateHibernationOptions extends js.Object {
+    /**
+         * If this parameter is set to true, the instance is enabled for hibernation; otherwise, it is not enabled for hibernation.
+         */
+    var Configured: js.UndefOr[scala.Boolean] = js.undefined
+  }
+  
+  
+  trait LaunchTemplateHibernationOptionsRequest extends js.Object {
+    /**
+         * If you set this parameter to true, the instance is enabled for hibernation. Default: false 
+         */
+    var Configured: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   
@@ -9012,6 +10292,22 @@ object EC2Ns extends js.Object {
          * The ID of the subnet for the network interface.
          */
     var SubnetId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait LaunchTemplateLicenseConfiguration extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the license configuration.
+         */
+    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait LaunchTemplateLicenseConfigurationRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the license configuration.
+         */
+    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -9239,6 +10535,22 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait LicenseConfiguration extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the license configuration.
+         */
+    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait LicenseConfigurationRequest extends js.Object {
+    /**
+         * The Amazon Resource Name (ARN) of the license configuration.
+         */
+    var LicenseConfigurationArn: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
   trait LoadBalancersConfig extends js.Object {
     /**
          * The Classic Load Balancers.
@@ -9284,6 +10596,38 @@ object EC2Ns extends js.Object {
          * The AWS account ID.
          */
     var UserId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ModifyCapacityReservationRequest extends js.Object {
+    /**
+         * The ID of the Capacity Reservation.
+         */
+    var CapacityReservationId: java.lang.String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The date and time at which the Capacity Reservation expires. When a Capacity Reservation expires, the reserved capacity is released and you can no longer launch instances into it. The Capacity Reservation's state changes to expired when it reaches its end date and time. The Capacity Reservation is cancelled within an hour from the specified time. For example, if you specify 5/31/2019, 13:30:55, the Capacity Reservation is guaranteed to end between 13:30:55 and 14:30:55 on 5/31/2019. You must provide an EndDate value if EndDateType is limited. Omit EndDate if EndDateType is unlimited.
+         */
+    var EndDate: js.UndefOr[DateTime] = js.undefined
+    /**
+         * Indicates the way in which the Capacity Reservation ends. A Capacity Reservation can have one of the following end types:    unlimited - The Capacity Reservation remains active until you explicitly cancel it. Do not provide an EndDate value if EndDateType is unlimited.    limited - The Capacity Reservation expires automatically at a specified date and time. You must provide an EndDate value if EndDateType is limited.  
+         */
+    var EndDateType: js.UndefOr[EndDateType] = js.undefined
+    /**
+         * The number of instances for which to reserve capacity.
+         */
+    var InstanceCount: js.UndefOr[Integer] = js.undefined
+  }
+  
+  
+  trait ModifyCapacityReservationResult extends js.Object {
+    /**
+         * Information about the Capacity Reservation.
+         */
+    var Return: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   
@@ -9531,6 +10875,30 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait ModifyInstanceCapacityReservationAttributesRequest extends js.Object {
+    /**
+         * Information about the Capacity Reservation targeting option.
+         */
+    var CapacityReservationSpecification: CapacityReservationSpecification
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the instance to be modified.
+         */
+    var InstanceId: java.lang.String
+  }
+  
+  
+  trait ModifyInstanceCapacityReservationAttributesResult extends js.Object {
+    /**
+         * Returns true if the request succeeds; otherwise, it returns an error.
+         */
+    var Return: js.UndefOr[scala.Boolean] = js.undefined
+  }
+  
+  
   trait ModifyInstanceCreditSpecificationRequest extends js.Object {
     /**
          * A unique, case-sensitive token that you provide to ensure idempotency of your modification request. For more information, see Ensuring Idempotency.
@@ -9744,6 +11112,50 @@ object EC2Ns extends js.Object {
          * The ID of the subnet.
          */
     var SubnetId: java.lang.String
+  }
+  
+  
+  trait ModifyTransitGatewayVpcAttachmentRequest extends js.Object {
+    /**
+         * The IDs of one or more subnets to add. You can specify at most one subnet per Availability Zone.
+         */
+    var AddSubnetIds: js.UndefOr[ValueStringList] = js.undefined
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The new VPC attachment options.
+         */
+    var Options: js.UndefOr[ModifyTransitGatewayVpcAttachmentRequestOptions] = js.undefined
+    /**
+         * The IDs of one or more subnets to remove.
+         */
+    var RemoveSubnetIds: js.UndefOr[ValueStringList] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: java.lang.String
+  }
+  
+  
+  trait ModifyTransitGatewayVpcAttachmentRequestOptions extends js.Object {
+    /**
+         * Enable or disable DNS support. The default is enable.
+         */
+    var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
+    /**
+         * Enable or disable IPv6 support. The default is enable.
+         */
+    var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.undefined
+  }
+  
+  
+  trait ModifyTransitGatewayVpcAttachmentResult extends js.Object {
+    /**
+         * Information about the modified attachment.
+         */
+    var TransitGatewayVpcAttachment: js.UndefOr[TransitGatewayVpcAttachment] = js.undefined
   }
   
   
@@ -10161,6 +11573,10 @@ object EC2Ns extends js.Object {
          */
     var NetworkAclId: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The ID of the AWS account that owns the network ACL.
+         */
+    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * Any tags assigned to the network ACL.
          */
     var Tags: js.UndefOr[TagList] = js.undefined
@@ -10209,7 +11625,7 @@ object EC2Ns extends js.Object {
          */
     var PortRange: js.UndefOr[PortRange] = js.undefined
     /**
-         * The protocol. A value of -1 means all protocols.
+         * The protocol number. A value of "-1" means all protocols.
          */
     var Protocol: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -10454,6 +11870,14 @@ object EC2Ns extends js.Object {
          * The order of the launch template overrides to use in fulfilling On-Demand capacity. If you specify lowest-price, EC2 Fleet uses price to determine the order, launching the lowest price first. If you specify prioritized, EC2 Fleet uses the priority that you assigned to each launch template override, launching the highest priority first. If you do not specify a value, EC2 Fleet defaults to lowest-price.
          */
     var AllocationStrategy: js.UndefOr[FleetOnDemandAllocationStrategy] = js.undefined
+    /**
+         * The minimum target capacity for On-Demand Instances in the fleet. If the minimum target capacity is not reached, the fleet launches no instances.
+         */
+    var MinTargetCapacity: js.UndefOr[Integer] = js.undefined
+    /**
+         * Indicates that the fleet uses a single instance type to launch all On-Demand Instances in the fleet.
+         */
+    var SingleInstanceType: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   
@@ -10462,6 +11886,14 @@ object EC2Ns extends js.Object {
          * The order of the launch template overrides to use in fulfilling On-Demand capacity. If you specify lowest-price, EC2 Fleet uses price to determine the order, launching the lowest price first. If you specify prioritized, EC2 Fleet uses the priority that you assigned to each launch template override, launching the highest priority first. If you do not specify a value, EC2 Fleet defaults to lowest-price.
          */
     var AllocationStrategy: js.UndefOr[FleetOnDemandAllocationStrategy] = js.undefined
+    /**
+         * The minimum target capacity for On-Demand Instances in the fleet. If the minimum target capacity is not reached, the fleet launches no instances.
+         */
+    var MinTargetCapacity: js.UndefOr[Integer] = js.undefined
+    /**
+         * Indicates that the fleet uses a single instance type to launch all On-Demand Instances in the fleet.
+         */
+    var SingleInstanceType: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   
@@ -10558,6 +11990,14 @@ object EC2Ns extends js.Object {
          * The placement strategy.
          */
     var Strategy: js.UndefOr[PlacementStrategy] = js.undefined
+  }
+  
+  
+  trait PlacementResponse extends js.Object {
+    /**
+         * The name of the placement group the instance is in.
+         */
+    var GroupName: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -10693,6 +12133,34 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait ProvisionByoipCidrRequest extends js.Object {
+    /**
+         * The public IPv4 address range, in CIDR notation. The most specific prefix that you can specify is /24. The address range cannot overlap with another address range that you've brought to this or another region.
+         */
+    var Cidr: java.lang.String
+    /**
+         * A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP.
+         */
+    var CidrAuthorizationContext: js.UndefOr[CidrAuthorizationContext] = js.undefined
+    /**
+         * A description for the address range and the address pool.
+         */
+    var Description: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  }
+  
+  
+  trait ProvisionByoipCidrResult extends js.Object {
+    /**
+         * Information about the address pool.
+         */
+    var ByoipCidr: js.UndefOr[ByoipCidr] = js.undefined
+  }
+  
+  
   trait ProvisionedBandwidth extends js.Object {
     /**
          * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
@@ -10714,6 +12182,50 @@ object EC2Ns extends js.Object {
          * Reserved. If you need to sustain traffic greater than the documented limits, contact us through the Support Center.
          */
     var Status: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait PublicIpv4Pool extends js.Object {
+    /**
+         * A description of the address pool.
+         */
+    var Description: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The address ranges.
+         */
+    var PoolAddressRanges: js.UndefOr[PublicIpv4PoolRangeSet] = js.undefined
+    /**
+         * The ID of the IPv4 address pool.
+         */
+    var PoolId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The total number of addresses.
+         */
+    var TotalAddressCount: js.UndefOr[Integer] = js.undefined
+    /**
+         * The total number of available addresses.
+         */
+    var TotalAvailableAddressCount: js.UndefOr[Integer] = js.undefined
+  }
+  
+  
+  trait PublicIpv4PoolRange extends js.Object {
+    /**
+         * The number of addresses in the range.
+         */
+    var AddressCount: js.UndefOr[Integer] = js.undefined
+    /**
+         * The number of available addresses in the range.
+         */
+    var AvailableAddressCount: js.UndefOr[Integer] = js.undefined
+    /**
+         * The first IP address in the range.
+         */
+    var FirstAddress: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The last IP address in the range.
+         */
+    var LastAddress: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -10965,6 +12477,26 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait RejectTransitGatewayVpcAttachmentRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: java.lang.String
+  }
+  
+  
+  trait RejectTransitGatewayVpcAttachmentResult extends js.Object {
+    /**
+         * Information about the attachment.
+         */
+    var TransitGatewayVpcAttachment: js.UndefOr[TransitGatewayVpcAttachment] = js.undefined
+  }
+  
+  
   trait RejectVpcEndpointConnectionsRequest extends js.Object {
     /**
          * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -11103,7 +12635,7 @@ object EC2Ns extends js.Object {
          */
     var Egress: scala.Boolean
     /**
-         * ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying the ICMP (1) protocol, or protocol 58 (ICMPv6) with an IPv6 CIDR block.
+         * ICMP protocol: The ICMP or ICMPv6 type and code. Required if specifying protocol 1 (ICMP) or protocol 58 (ICMPv6) with an IPv6 CIDR block.
          */
     var IcmpTypeCode: js.UndefOr[IcmpTypeCode] = js.undefined
     /**
@@ -11115,11 +12647,11 @@ object EC2Ns extends js.Object {
          */
     var NetworkAclId: java.lang.String
     /**
-         * TCP or UDP protocols: The range of ports the rule applies to. Required if specifying TCP (6) or UDP (17) for the protocol.
+         * TCP or UDP protocols: The range of ports the rule applies to. Required if specifying protocol 6 (TCP) or 17 (UDP).
          */
     var PortRange: js.UndefOr[PortRange] = js.undefined
     /**
-         * The IP protocol. You can specify all or -1 to mean all protocols. If you specify all, -1, or a protocol number other than tcp, udp, or icmp, traffic on all ports is allowed, regardless of any ports or ICMP types or codes you that specify. If you specify protocol 58 (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol 58 (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
+         * The protocol number. A value of "-1" means all protocols. If you specify "-1" or a protocol number other than "6" (TCP), "17" (UDP), or "1" (ICMP), traffic on all ports is allowed, regardless of any ports or ICMP types or codes that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv4 CIDR block, traffic for all ICMP types and codes allowed, regardless of any that you specify. If you specify protocol "58" (ICMPv6) and specify an IPv6 CIDR block, you must specify an ICMP type and code.
          */
     var Protocol: java.lang.String
     /**
@@ -11171,6 +12703,10 @@ object EC2Ns extends js.Object {
          */
     var RouteTableId: java.lang.String
     /**
+         * The ID of a transit gateway.
+         */
+    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The ID of a VPC peering connection.
          */
     var VpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
@@ -11198,6 +12734,38 @@ object EC2Ns extends js.Object {
          * The ID of the new association.
          */
     var NewAssociationId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait ReplaceTransitGatewayRouteRequest extends js.Object {
+    /**
+         * Indicates whether traffic matching this route is to be dropped.
+         */
+    var Blackhole: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The CIDR range used for the destination match. Routing decisions are based on the most specific match.
+         */
+    var DestinationCidrBlock: java.lang.String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait ReplaceTransitGatewayRouteResult extends js.Object {
+    /**
+         * Information about the modified route.
+         */
+    var Route: js.UndefOr[TransitGatewayRoute] = js.undefined
   }
   
   
@@ -11239,6 +12807,10 @@ object EC2Ns extends js.Object {
          */
     var BlockDeviceMappings: js.UndefOr[LaunchTemplateBlockDeviceMappingRequestList] = js.undefined
     /**
+         * The Capacity Reservation targeting option.
+         */
+    var CapacityReservationSpecification: js.UndefOr[LaunchTemplateCapacityReservationSpecificationRequest] = js.undefined
+    /**
          * The CPU options for the instance. For more information, see Optimizing CPU Options in the Amazon Elastic Compute Cloud User Guide.
          */
     var CpuOptions: js.UndefOr[LaunchTemplateCpuOptionsRequest] = js.undefined
@@ -11258,6 +12830,14 @@ object EC2Ns extends js.Object {
          * An elastic GPU to associate with the instance.
          */
     var ElasticGpuSpecifications: js.UndefOr[ElasticGpuSpecificationList] = js.undefined
+    /**
+         *  The elastic inference accelerator for the instance. 
+         */
+    var ElasticInferenceAccelerators: js.UndefOr[LaunchTemplateElasticInferenceAcceleratorList] = js.undefined
+    /**
+         * Indicates whether an instance is enabled for hibernation. This parameter is valid only if the instance meets the hibernation prerequisites. Hibernation is currently supported only for Amazon Linux. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide.
+         */
+    var HibernationOptions: js.UndefOr[LaunchTemplateHibernationOptionsRequest] = js.undefined
     /**
          * The IAM instance profile.
          */
@@ -11286,6 +12866,10 @@ object EC2Ns extends js.Object {
          * The name of the key pair. You can create a key pair using CreateKeyPair or ImportKeyPair.  If you do not specify a key pair, you can't connect to the instance unless you choose an AMI that is configured to allow users another way to log in. 
          */
     var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The license configurations.
+         */
+    var LicenseSpecifications: js.UndefOr[LaunchTemplateLicenseSpecificationListRequest] = js.undefined
     /**
          * The monitoring for the instance.
          */
@@ -11907,6 +13491,10 @@ object EC2Ns extends js.Object {
          */
     var BlockDeviceMappings: js.UndefOr[LaunchTemplateBlockDeviceMappingList] = js.undefined
     /**
+         * Information about the Capacity Reservation targeting option.
+         */
+    var CapacityReservationSpecification: js.UndefOr[LaunchTemplateCapacityReservationSpecificationResponse] = js.undefined
+    /**
          * The CPU options for the instance. For more information, see Optimizing CPU Options in the Amazon Elastic Compute Cloud User Guide.
          */
     var CpuOptions: js.UndefOr[LaunchTemplateCpuOptions] = js.undefined
@@ -11926,6 +13514,14 @@ object EC2Ns extends js.Object {
          * The elastic GPU specification.
          */
     var ElasticGpuSpecifications: js.UndefOr[ElasticGpuSpecificationResponseList] = js.undefined
+    /**
+         *  The elastic inference accelerator for the instance. 
+         */
+    var ElasticInferenceAccelerators: js.UndefOr[LaunchTemplateElasticInferenceAcceleratorResponseList] = js.undefined
+    /**
+         * Indicates whether an instance is configured for hibernation. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide.
+         */
+    var HibernationOptions: js.UndefOr[LaunchTemplateHibernationOptions] = js.undefined
     /**
          * The IAM instance profile.
          */
@@ -11954,6 +13550,10 @@ object EC2Ns extends js.Object {
          * The name of the key pair.
          */
     var KeyName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The license configurations.
+         */
+    var LicenseSpecifications: js.UndefOr[LaunchTemplateLicenseList] = js.undefined
     /**
          * The monitoring for the instance.
          */
@@ -12143,7 +13743,11 @@ object EC2Ns extends js.Object {
          */
     var State: js.UndefOr[RouteState] = js.undefined
     /**
-         * The ID of the VPC peering connection.
+         * The ID of a transit gateway.
+         */
+    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of a VPC peering connection.
          */
     var VpcPeeringConnectionId: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -12154,6 +13758,10 @@ object EC2Ns extends js.Object {
          * The associations between the route table and one or more subnets.
          */
     var Associations: js.UndefOr[RouteTableAssociationList] = js.undefined
+    /**
+         * The ID of the AWS account that owns the route table.
+         */
+    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * Any virtual private gateway (VGW) propagating routes.
          */
@@ -12215,6 +13823,10 @@ object EC2Ns extends js.Object {
          */
     var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingRequestList] = js.undefined
     /**
+         * Information about the Capacity Reservation targeting option.
+         */
+    var CapacityReservationSpecification: js.UndefOr[CapacityReservationSpecification] = js.undefined
+    /**
          * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraints: Maximum 64 ASCII characters
          */
     var ClientToken: js.UndefOr[java.lang.String] = js.undefined
@@ -12242,6 +13854,14 @@ object EC2Ns extends js.Object {
          * An elastic GPU to associate with the instance.
          */
     var ElasticGpuSpecification: js.UndefOr[ElasticGpuSpecifications] = js.undefined
+    /**
+         *  An elastic inference accelerator. 
+         */
+    var ElasticInferenceAccelerators: js.UndefOr[ElasticInferenceAccelerators] = js.undefined
+    /**
+         * Indicates whether an instance is enabled for hibernation. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide.
+         */
+    var HibernationOptions: js.UndefOr[HibernationOptionsRequest] = js.undefined
     /**
          * The IAM instance profile.
          */
@@ -12282,6 +13902,10 @@ object EC2Ns extends js.Object {
          * The launch template to use to launch the instances. Any parameters that you specify in RunInstances override the same parameters in the launch template. You can specify either the name or ID of a launch template, but not both.
          */
     var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
+    /**
+         * The license configurations.
+         */
+    var LicenseSpecifications: js.UndefOr[LicenseSpecificationListRequest] = js.undefined
     /**
          * The maximum number of instances to launch. If you specify more instances than Amazon EC2 can launch in the target Availability Zone, Amazon EC2 launches the largest possible number of instances above MinCount. Constraints: Between 1 and the maximum number you're allowed for the specified instance type. For more information about the default limits, and how to request an increase, see How many instances can I run in Amazon EC2 in the Amazon EC2 FAQ.
          */
@@ -12769,6 +14393,38 @@ object EC2Ns extends js.Object {
   }
   
   
+  trait SearchTransitGatewayRoutesRequest extends js.Object {
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * One or more filters. The possible values are:    transit-gateway-route-destination-cidr-block - The CIDR range.    transit-gateway-route-state - The state of the route (active | blackhole).    transit-gateway-route-transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-route-type - The route type (static | propagated).    transit-gateway-route-vpn-connection-id - The ID of the VPN connection.  
+         */
+    var Filters: FilterList
+    /**
+         * The maximum number of routes to return.
+         */
+    var MaxResults: js.UndefOr[TransitGatewayMaxResults] = js.undefined
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: java.lang.String
+  }
+  
+  
+  trait SearchTransitGatewayRoutesResult extends js.Object {
+    /**
+         * Indicates whether there are additional routes available.
+         */
+    var AdditionalRoutesAvailable: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Information about the routes.
+         */
+    var Routes: js.UndefOr[TransitGatewayRouteList] = js.undefined
+  }
+  
+  
   trait SecurityGroup extends js.Object {
     /**
          * A description of the security group.
@@ -12821,11 +14477,11 @@ object EC2Ns extends js.Object {
     /**
          * The ID of your security group.
          */
-    var GroupId: java.lang.String
+    var GroupId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The ID of the VPC with the referencing security group.
          */
-    var ReferencingVpcId: java.lang.String
+    var ReferencingVpcId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The ID of the VPC peering connection.
          */
@@ -13075,9 +14731,17 @@ object EC2Ns extends js.Object {
          */
     var DiskImageSize: js.UndefOr[Double] = js.undefined
     /**
+         * Indicates whether the snapshot is encrypted.
+         */
+    var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
+    /**
          * The format of the disk image from which the snapshot is created.
          */
     var Format: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted snapshot.
+         */
+    var KmsKeyId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The percentage of completion for the import snapshot task.
          */
@@ -13251,7 +14915,7 @@ object EC2Ns extends js.Object {
          */
     var ExcessCapacityTerminationPolicy: js.UndefOr[ExcessCapacityTerminationPolicy] = js.undefined
     /**
-         * The number of units fulfilled by this request compared to the set target capacity.
+         * The number of units fulfilled by this request compared to the set target capacity. You cannot set this value.
          */
     var FulfilledCapacity: js.UndefOr[Double] = js.undefined
     /**
@@ -13478,6 +15142,14 @@ object EC2Ns extends js.Object {
          * The number of Spot pools across which to allocate your target Spot capacity. Valid only when AllocationStrategy is set to lowestPrice. EC2 Fleet selects the cheapest Spot pools and evenly allocates your target Spot capacity across the number of Spot pools that you specify.
          */
     var InstancePoolsToUseCount: js.UndefOr[Integer] = js.undefined
+    /**
+         * The minimum target capacity for Spot Instances in the fleet. If the minimum target capacity is not reached, the fleet launches no instances.
+         */
+    var MinTargetCapacity: js.UndefOr[Integer] = js.undefined
+    /**
+         * Indicates that the fleet uses a single instance type to launch all Spot Instances in the fleet.
+         */
+    var SingleInstanceType: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   
@@ -13494,6 +15166,14 @@ object EC2Ns extends js.Object {
          * The number of Spot pools across which to allocate your target Spot capacity. Valid only when Spot AllocationStrategy is set to lowest-price. EC2 Fleet selects the cheapest Spot pools and evenly allocates your target Spot capacity across the number of Spot pools that you specify.
          */
     var InstancePoolsToUseCount: js.UndefOr[Integer] = js.undefined
+    /**
+         * The minimum target capacity for Spot Instances in the fleet. If the minimum target capacity is not reached, the fleet launches no instances.
+         */
+    var MinTargetCapacity: js.UndefOr[Integer] = js.undefined
+    /**
+         * Indicates that the fleet uses a single instance type to launch all Spot Instances in the fleet.
+         */
+    var SingleInstanceType: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   
@@ -13573,7 +15253,7 @@ object EC2Ns extends js.Object {
     /**
          * The ID of the security group.
          */
-    var GroupId: java.lang.String
+    var GroupId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The name of the security group.
          */
@@ -13623,7 +15303,7 @@ object EC2Ns extends js.Object {
          */
     var Code: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The message for the state change.    Server.InsufficientInstanceCapacity: There was insufficient capacity available to satisfy the launch request.    Server.InternalError: An internal error caused the instance to terminate during launch.    Server.ScheduledStop: The instance was stopped due to a scheduled retirement.    Server.SpotInstanceShutdown: The instance was stopped because the number of Spot requests with a maximum price equal to or higher than the Spot price exceeded available capacity or because of an increase in the Spot price.    Server.SpotInstanceTermination: The instance was terminated because the number of Spot requests with a maximum price equal to or higher than the Spot price exceeded available capacity or because of an increase in the Spot price.    Client.InstanceInitiatedShutdown: The instance was shut down using the shutdown -h command from the instance.    Client.InstanceTerminated: The instance was terminated or rebooted during AMI creation.    Client.InternalError: A client error caused the instance to terminate during launch.    Client.InvalidSnapshot.NotFound: The specified snapshot was not found.    Client.UserInitiatedShutdown: The instance was shut down using the Amazon EC2 API.    Client.VolumeLimitExceeded: The limit on the number of EBS volumes or total storage was exceeded. Decrease usage or request an increase in your account limits.  
+         * The message for the state change.    Server.InsufficientInstanceCapacity: There was insufficient capacity available to satisfy the launch request.    Server.InternalError: An internal error caused the instance to terminate during launch.    Server.ScheduledStop: The instance was stopped due to a scheduled retirement.    Server.SpotInstanceShutdown: The instance was stopped because the number of Spot requests with a maximum price equal to or higher than the Spot price exceeded available capacity or because of an increase in the Spot price.    Server.SpotInstanceTermination: The instance was terminated because the number of Spot requests with a maximum price equal to or higher than the Spot price exceeded available capacity or because of an increase in the Spot price.    Client.InstanceInitiatedShutdown: The instance was shut down using the shutdown -h command from the instance.    Client.InstanceTerminated: The instance was terminated or rebooted during AMI creation.    Client.InternalError: A client error caused the instance to terminate during launch.    Client.InvalidSnapshot.NotFound: The specified snapshot was not found.    Client.UserInitiatedHibernate: Hibernation was initiated on the instance.    Client.UserInitiatedShutdown: The instance was shut down using the Amazon EC2 API.    Client.VolumeLimitExceeded: The limit on the number of EBS volumes or total storage was exceeded. Decrease usage or request an increase in your account limits.  
          */
     var Message: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -13638,6 +15318,10 @@ object EC2Ns extends js.Object {
          * Forces the instances to stop. The instances do not have an opportunity to flush file system caches or file system metadata. If you use this option, you must perform file system check and repair procedures. This option is not recommended for Windows instances. Default: false 
          */
     var Force: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Hibernates the instance if the instance was enabled for hibernation at launch. If the instance cannot hibernate successfully, a normal shutdown occurs. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide.  Default: false 
+         */
+    var Hibernate: js.UndefOr[scala.Boolean] = js.undefined
     /**
          * One or more instance IDs.
          */
@@ -13683,6 +15367,10 @@ object EC2Ns extends js.Object {
          */
     var AvailabilityZone: js.UndefOr[java.lang.String] = js.undefined
     /**
+         * The AZ ID of the subnet.
+         */
+    var AvailabilityZoneId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The number of unused private IPv4 addresses in the subnet. The IPv4 addresses for any stopped instances are considered unavailable.
          */
     var AvailableIpAddressCount: js.UndefOr[Integer] = js.undefined
@@ -13703,9 +15391,17 @@ object EC2Ns extends js.Object {
          */
     var MapPublicIpOnLaunch: js.UndefOr[scala.Boolean] = js.undefined
     /**
+         * The ID of the AWS account that owns the subnet.
+         */
+    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The current state of the subnet.
          */
     var State: js.UndefOr[SubnetState] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the subnet.
+         */
+    var SubnetArn: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The ID of the subnet.
          */
@@ -13775,7 +15471,7 @@ object EC2Ns extends js.Object {
          */
     var Key: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The ID of the resource. For example, ami-1a2b3c4d.
+         * The ID of the resource.
          */
     var ResourceId: js.UndefOr[java.lang.String] = js.undefined
     /**
@@ -13912,6 +15608,382 @@ object EC2Ns extends js.Object {
     var TerminatingInstances: js.UndefOr[InstanceStateChangeList] = js.undefined
   }
   
+  
+  trait TransitGateway extends js.Object {
+    /**
+         * The creation time.
+         */
+    var CreationTime: js.UndefOr[DateTime] = js.undefined
+    /**
+         * The description of the transit gateway.
+         */
+    var Description: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The transit gateway options.
+         */
+    var Options: js.UndefOr[TransitGatewayOptions] = js.undefined
+    /**
+         * The ID of the AWS account ID that owns the transit gateway.
+         */
+    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The state of the transit gateway.
+         */
+    var State: js.UndefOr[TransitGatewayState] = js.undefined
+    /**
+         * The tags for the transit gateway.
+         */
+    var Tags: js.UndefOr[TagList] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the transit gateway.
+         */
+    var TransitGatewayArn: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the transit gateway.
+         */
+    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayAssociation extends js.Object {
+    /**
+         * The ID of the resource.
+         */
+    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The resource type.
+         */
+    var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
+    /**
+         * The state of the association.
+         */
+    var State: js.UndefOr[TransitGatewayAssociationState] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayAttachment extends js.Object {
+    /**
+         * The association.
+         */
+    var Association: js.UndefOr[TransitGatewayAttachmentAssociation] = js.undefined
+    /**
+         * The creation time.
+         */
+    var CreationTime: js.UndefOr[DateTime] = js.undefined
+    /**
+         * The ID of the resource.
+         */
+    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the AWS account that owns the resource.
+         */
+    var ResourceOwnerId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The resource type.
+         */
+    var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
+    /**
+         * The attachment state.
+         */
+    var State: js.UndefOr[TransitGatewayAttachmentState] = js.undefined
+    /**
+         * The tags for the attachment.
+         */
+    var Tags: js.UndefOr[TagList] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the transit gateway.
+         */
+    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the AWS account that owns the transit gateway.
+         */
+    var TransitGatewayOwnerId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayAttachmentAssociation extends js.Object {
+    /**
+         * The state of the association.
+         */
+    var State: js.UndefOr[TransitGatewayAssociationState] = js.undefined
+    /**
+         * The ID of the route table for the transit gateway.
+         */
+    var TransitGatewayRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayAttachmentPropagation extends js.Object {
+    /**
+         * The state of the propagation route table.
+         */
+    var State: js.UndefOr[TransitGatewayPropagationState] = js.undefined
+    /**
+         * The ID of the propagation route table.
+         */
+    var TransitGatewayRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayOptions extends js.Object {
+    /**
+         * A private Autonomous System Number (ASN) for the Amazon side of a BGP session. The range is 64512 to 65534 for 16-bit ASNs and 4200000000 to 4294967294 for 32-bit ASNs.
+         */
+    var AmazonSideAsn: js.UndefOr[Long] = js.undefined
+    /**
+         * The ID of the default association route table.
+         */
+    var AssociationDefaultRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Indicates whether attachment requests are automatically accepted.
+         */
+    var AutoAcceptSharedAttachments: js.UndefOr[AutoAcceptSharedAttachmentsValue] = js.undefined
+    /**
+         * Indicates whether resource attachments are automatically associated with the default association route table.
+         */
+    var DefaultRouteTableAssociation: js.UndefOr[DefaultRouteTableAssociationValue] = js.undefined
+    /**
+         * Indicates whether resource attachments automatically propagate routes to the default propagation route table.
+         */
+    var DefaultRouteTablePropagation: js.UndefOr[DefaultRouteTablePropagationValue] = js.undefined
+    /**
+         * Indicates whether DNS support is enabled.
+         */
+    var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
+    /**
+         * The ID of the default propagation route table.
+         */
+    var PropagationDefaultRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * Indicates whether Equal Cost Multipath Protocol support is enabled.
+         */
+    var VpnEcmpSupport: js.UndefOr[VpnEcmpSupportValue] = js.undefined
+  }
+  
+  
+  trait TransitGatewayPropagation extends js.Object {
+    /**
+         * The ID of the resource.
+         */
+    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The resource type.
+         */
+    var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
+    /**
+         * The state.
+         */
+    var State: js.UndefOr[TransitGatewayPropagationState] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayRequestOptions extends js.Object {
+    /**
+         * A private Autonomous System Number (ASN) for the Amazon side of a BGP session. The range is 64512 to 65534 for 16-bit ASNs and 4200000000 to 4294967294 for 32-bit ASNs.
+         */
+    var AmazonSideAsn: js.UndefOr[Long] = js.undefined
+    /**
+         * Enable or disable automatic acceptance of attachment requests. The default is disable.
+         */
+    var AutoAcceptSharedAttachments: js.UndefOr[AutoAcceptSharedAttachmentsValue] = js.undefined
+    /**
+         * Enable or disable automatic association with the default association route table. The default is enable.
+         */
+    var DefaultRouteTableAssociation: js.UndefOr[DefaultRouteTableAssociationValue] = js.undefined
+    /**
+         * Enable or disable automatic propagation of routes to the default propagation route table. The default is enable.
+         */
+    var DefaultRouteTablePropagation: js.UndefOr[DefaultRouteTablePropagationValue] = js.undefined
+    /**
+         * Enable or disable DNS support.
+         */
+    var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
+    /**
+         * Enable or disable Equal Cost Multipath Protocol support.
+         */
+    var VpnEcmpSupport: js.UndefOr[VpnEcmpSupportValue] = js.undefined
+  }
+  
+  
+  trait TransitGatewayRoute extends js.Object {
+    /**
+         * The CIDR block used for destination matches.
+         */
+    var DestinationCidrBlock: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The state of the route.
+         */
+    var State: js.UndefOr[TransitGatewayRouteState] = js.undefined
+    /**
+         * The attachments.
+         */
+    var TransitGatewayAttachments: js.UndefOr[TransitGatewayRouteAttachmentList] = js.undefined
+    /**
+         * The route type.
+         */
+    var Type: js.UndefOr[TransitGatewayRouteType] = js.undefined
+  }
+  
+  
+  trait TransitGatewayRouteAttachment extends js.Object {
+    /**
+         * The ID of the resource.
+         */
+    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The resource type.
+         */
+    var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayRouteTable extends js.Object {
+    /**
+         * The creation time.
+         */
+    var CreationTime: js.UndefOr[DateTime] = js.undefined
+    /**
+         * Indicates whether this is the default association route table for the transit gateway.
+         */
+    var DefaultAssociationRouteTable: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * Indicates whether this is the default propagation route table for the transit gateway.
+         */
+    var DefaultPropagationRouteTable: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The state of the transit gateway route table.
+         */
+    var State: js.UndefOr[TransitGatewayRouteTableState] = js.undefined
+    /**
+         * Any tags assigned to the route table.
+         */
+    var Tags: js.UndefOr[TagList] = js.undefined
+    /**
+         * The ID of the transit gateway.
+         */
+    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the transit gateway route table.
+         */
+    var TransitGatewayRouteTableId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayRouteTableAssociation extends js.Object {
+    /**
+         * The ID of the resource.
+         */
+    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The resource type.
+         */
+    var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
+    /**
+         * The state of the association.
+         */
+    var State: js.UndefOr[TransitGatewayAssociationState] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayRouteTablePropagation extends js.Object {
+    /**
+         * The ID of the resource.
+         */
+    var ResourceId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The type of resource.
+         */
+    var ResourceType: js.UndefOr[TransitGatewayAttachmentResourceType] = js.undefined
+    /**
+         * The state of the resource.
+         */
+    var State: js.UndefOr[TransitGatewayPropagationState] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayVpcAttachment extends js.Object {
+    /**
+         * The creation time.
+         */
+    var CreationTime: js.UndefOr[DateTime] = js.undefined
+    /**
+         * The VPC attachment options.
+         */
+    var Options: js.UndefOr[TransitGatewayVpcAttachmentOptions] = js.undefined
+    /**
+         * The state of the VPC attachment.
+         */
+    var State: js.UndefOr[TransitGatewayAttachmentState] = js.undefined
+    /**
+         * The IDs of the subnets.
+         */
+    var SubnetIds: js.UndefOr[ValueStringList] = js.undefined
+    /**
+         * The tags for the VPC attachment.
+         */
+    var Tags: js.UndefOr[TagList] = js.undefined
+    /**
+         * The ID of the attachment.
+         */
+    var TransitGatewayAttachmentId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the transit gateway.
+         */
+    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the VPC.
+         */
+    var VpcId: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The ID of the AWS account that owns the VPC.
+         */
+    var VpcOwnerId: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
+  
+  trait TransitGatewayVpcAttachmentOptions extends js.Object {
+    /**
+         * Indicates whether DNS support is enabled.
+         */
+    var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
+    /**
+         * Indicates whether IPv6 support is enabled.
+         */
+    var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.undefined
+  }
+  
   @js.native
   trait Types
     extends awsDashSdkLib.libServiceMod.Service {
@@ -13946,6 +16018,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[AcceptReservedInstancesExchangeQuoteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Accepts a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use RejectTransitGatewayVpcAttachment to reject a VPC attachment request.
+       */
+    def acceptTransitGatewayVpcAttachment(): awsDashSdkLib.libRequestMod.Request[AcceptTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Accepts a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use RejectTransitGatewayVpcAttachment to reject a VPC attachment request.
+       */
+    def acceptTransitGatewayVpcAttachment(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AcceptTransitGatewayVpcAttachmentResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AcceptTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Accepts a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use RejectTransitGatewayVpcAttachment to reject a VPC attachment request.
+       */
+    def acceptTransitGatewayVpcAttachment(params: AcceptTransitGatewayVpcAttachmentRequest): awsDashSdkLib.libRequestMod.Request[AcceptTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Accepts a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use RejectTransitGatewayVpcAttachment to reject a VPC attachment request.
+       */
+    def acceptTransitGatewayVpcAttachment(
+      params: AcceptTransitGatewayVpcAttachmentRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AcceptTransitGatewayVpcAttachmentResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AcceptTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Accepts one or more interface VPC endpoint connection requests to your VPC endpoint service.
        */
@@ -14005,11 +16106,40 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AcceptVpcPeeringConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+       * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
+       */
+    def advertiseByoipCidr(): awsDashSdkLib.libRequestMod.Request[AdvertiseByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
+       */
+    def advertiseByoipCidr(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AdvertiseByoipCidrResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AdvertiseByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
+       */
+    def advertiseByoipCidr(params: AdvertiseByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[AdvertiseByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Advertises an IPv4 address range that is provisioned for use with your AWS resources through bring your own IP addresses (BYOIP). You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. We recommend that you stop advertising the BYOIP CIDR from other locations when you advertise it from AWS. To minimize down time, you can configure your AWS resources to use an address from a BYOIP CIDR before it is advertised, and then simultaneously stop advertising it from the current location and start advertising it through AWS. It can take a few minutes before traffic to the specified addresses starts routing to AWS because of BGP propagation delays. To stop advertising the BYOIP CIDR, use WithdrawByoipCidr.
+       */
+    def advertiseByoipCidr(
+      params: AdvertiseByoipCidrRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AdvertiseByoipCidrResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AdvertiseByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
        */
     def allocateAddress(): awsDashSdkLib.libRequestMod.Request[AllocateAddressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
        */
     def allocateAddress(
       callback: js.Function2[
@@ -14019,11 +16149,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AllocateAddressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
        */
     def allocateAddress(params: AllocateAddressRequest): awsDashSdkLib.libRequestMod.Request[AllocateAddressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
+       * Allocates an Elastic IP address to your AWS account. After you allocate the Elastic IP address you can associate it with an instance or network interface. After you release an Elastic IP address, it is released to the IP address pool and can be allocated to a different AWS account. You can allocate an Elastic IP address from an address pool owned by AWS or from an address pool created from a public IPv4 address range that you have brought to AWS for use with your AWS resources using bring your own IP addresses (BYOIP). For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. [EC2-VPC] If you release an Elastic IP address, you might be able to recover it. You cannot recover an Elastic IP address that you released after it is allocated to another AWS account. You cannot recover an Elastic IP address for EC2-Classic. To attempt to recover an Elastic IP address that you released, specify it in this operation. An Elastic IP address is for use either in the EC2-Classic platform or in a VPC. By default, you can allocate 5 Elastic IP addresses for EC2-Classic per region and 5 Elastic IP addresses for EC2-VPC per region. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide.
        */
     def allocateAddress(
       params: AllocateAddressRequest,
@@ -14092,21 +16222,21 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssignIpv6AddressesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
+       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
        */
     def assignPrivateIpAddresses(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
+       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
        */
     def assignPrivateIpAddresses(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
+       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
        */
     def assignPrivateIpAddresses(params: AssignPrivateIpAddressesRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. AssignPrivateIpAddresses is available only in EC2-VPC.
+       * Assigns one or more secondary private IP addresses to the specified network interface. You can specify one or more specific secondary IP addresses, or you can specify the number of secondary IP addresses to be automatically assigned within the subnet's CIDR block range. The number of secondary IP addresses that you can assign to an instance varies by instance type. For information about instance types, see Instance Types in the Amazon Elastic Compute Cloud User Guide. For more information about Elastic IP addresses, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. When you move a secondary private IP address to another network interface, any Elastic IP address that is associated with the IP address is also moved. Remapping an IP address is an asynchronous operation. When you move an IP address from one network interface to another, check network/interfaces/macs/mac/local-ipv4s in the instance metadata to confirm that the remapping is complete.
        */
     def assignPrivateIpAddresses(
       params: AssignPrivateIpAddressesRequest,
@@ -14249,6 +16379,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateSubnetCidrBlockResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
+       */
+    def associateTransitGatewayRouteTable(): awsDashSdkLib.libRequestMod.Request[AssociateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
+       */
+    def associateTransitGatewayRouteTable(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociateTransitGatewayRouteTableResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AssociateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
+       */
+    def associateTransitGatewayRouteTable(params: AssociateTransitGatewayRouteTableRequest): awsDashSdkLib.libRequestMod.Request[AssociateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Associates the specified attachment with the specified transit gateway route table. You can associate only one route table with an attachment.
+       */
+    def associateTransitGatewayRouteTable(
+      params: AssociateTransitGatewayRouteTableRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociateTransitGatewayRouteTableResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AssociateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Associates a CIDR block with your VPC. You can associate a secondary IPv4 CIDR block, or you can associate an Amazon-provided IPv6 CIDR block. The IPv6 CIDR block size is fixed at /56. For more information about associating CIDR blocks with your VPC and applicable restrictions, see VPC and Subnet Sizing in the Amazon Virtual Private Cloud User Guide.
        */
@@ -14516,6 +16675,35 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CancelBundleTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
+       */
+    def cancelCapacityReservation(): awsDashSdkLib.libRequestMod.Request[CancelCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
+       */
+    def cancelCapacityReservation(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CancelCapacityReservationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CancelCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
+       */
+    def cancelCapacityReservation(params: CancelCapacityReservationRequest): awsDashSdkLib.libRequestMod.Request[CancelCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Cancels the specified Capacity Reservation, releases the reserved capacity, and changes the Capacity Reservation's state to cancelled. Instances running in the reserved capacity continue running until you stop them. Stopped instances that target the Capacity Reservation can no longer launch. Modify these instances to either target a different Capacity Reservation, launch On-Demand Instance capacity, or run in any open Capacity Reservation that has matching attributes and sufficient capacity.
+       */
+    def cancelCapacityReservation(
+      params: CancelCapacityReservationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CancelCapacityReservationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CancelCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Cancels an active conversion task. The task can be the import of an instance or volume. The action removes all artifacts of the conversion, including a partially uploaded volume or instance. If the conversion is complete or is in the process of transferring the final disk image, the command fails and returns an exception. For more information, see Importing a Virtual Machine Using the Amazon EC2 CLI.
        */
     def cancelConversionTask(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -14781,6 +16969,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[CopySnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
+       */
+    def createCapacityReservation(): awsDashSdkLib.libRequestMod.Request[CreateCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
+       */
+    def createCapacityReservation(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateCapacityReservationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
+       */
+    def createCapacityReservation(params: CreateCapacityReservationRequest): awsDashSdkLib.libRequestMod.Request[CreateCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a new Capacity Reservation with the specified attributes. Capacity Reservations enable you to reserve capacity for your Amazon EC2 instances in a specific Availability Zone for any duration. This gives you the flexibility to selectively add capacity reservations and still get the Regional RI discounts for that usage. By creating Capacity Reservations, you ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. For more information, see Capacity Reservations in the Amazon Elastic Compute Cloud User Guide. Your request to create a Capacity Reservation could fail if Amazon EC2 does not have sufficient capacity to fulfill the request. If your request fails due to Amazon EC2 capacity constraints, either try again at a later time, try in a different Availability Zone, or request a smaller capacity reservation. If your application is flexible across instance types and sizes, try to create a Capacity Reservation with different instance attributes. Your request could also fail if the requested quantity exceeds your On-Demand Instance limit for the selected instance type. If your request fails due to limit constraints, increase your On-Demand Instance limit for the required instance type and try again. For more information about increasing your instance limits, see Amazon EC2 Service Limits in the Amazon Elastic Compute Cloud User Guide.
+       */
+    def createCapacityReservation(
+      params: CreateCapacityReservationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateCapacityReservationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
        */
@@ -15553,6 +17770,122 @@ object EC2Ns extends js.Object {
       params: CreateTagsRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
+       */
+    def createTransitGateway(): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
+       */
+    def createTransitGateway(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateTransitGatewayResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
+       */
+    def createTransitGateway(params: CreateTransitGatewayRequest): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a transit gateway. You can use a transit gateway to interconnect your virtual private clouds (VPC) and on-premises networks. After the transit gateway enters the available state, you can attach your VPCs and VPN connections to the transit gateway. To attach your VPCs, use CreateTransitGatewayVpcAttachment. To attach a VPN connection, use CreateCustomerGateway to create a customer gateway and specify the ID of the customer gateway and the ID of the transit gateway in a call to CreateVpnConnection. When you create a transit gateway, we create a default transit gateway route table and use it as the default association route table and the default propagation route table. You can use CreateTransitGatewayRouteTable to create additional transit gateway route tables. If you disable automatic route propagation, we do not create a default transit gateway route table. You can use EnableTransitGatewayRouteTablePropagation to propagate routes from a resource attachment to a transit gateway route table. If you disable automatic associations, you can use AssociateTransitGatewayRouteTable to associate a resource attachment with a transit gateway route table.
+       */
+    def createTransitGateway(
+      params: CreateTransitGatewayRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateTransitGatewayResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a static route for the specified transit gateway route table.
+       */
+    def createTransitGatewayRoute(): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a static route for the specified transit gateway route table.
+       */
+    def createTransitGatewayRoute(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateTransitGatewayRouteResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a static route for the specified transit gateway route table.
+       */
+    def createTransitGatewayRoute(params: CreateTransitGatewayRouteRequest): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a static route for the specified transit gateway route table.
+       */
+    def createTransitGatewayRoute(
+      params: CreateTransitGatewayRouteRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateTransitGatewayRouteResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a route table for the specified transit gateway.
+       */
+    def createTransitGatewayRouteTable(): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a route table for the specified transit gateway.
+       */
+    def createTransitGatewayRouteTable(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateTransitGatewayRouteTableResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a route table for the specified transit gateway.
+       */
+    def createTransitGatewayRouteTable(params: CreateTransitGatewayRouteTableRequest): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a route table for the specified transit gateway.
+       */
+    def createTransitGatewayRouteTable(
+      params: CreateTransitGatewayRouteTableRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateTransitGatewayRouteTableResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Attaches the specified VPC to the specified transit gateway. If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached, the new VPC CIDR range is not propagated to the default propagation route table. To send VPC traffic to an attached transit gateway, add a route to the VPC route table using CreateRoute.
+       */
+    def createTransitGatewayVpcAttachment(): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Attaches the specified VPC to the specified transit gateway. If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached, the new VPC CIDR range is not propagated to the default propagation route table. To send VPC traffic to an attached transit gateway, add a route to the VPC route table using CreateRoute.
+       */
+    def createTransitGatewayVpcAttachment(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateTransitGatewayVpcAttachmentResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Attaches the specified VPC to the specified transit gateway. If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached, the new VPC CIDR range is not propagated to the default propagation route table. To send VPC traffic to an attached transit gateway, add a route to the VPC route table using CreateRoute.
+       */
+    def createTransitGatewayVpcAttachment(params: CreateTransitGatewayVpcAttachmentRequest): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Attaches the specified VPC to the specified transit gateway. If you attach a VPC with a CIDR range that overlaps the CIDR range of a VPC that is already attached, the new VPC CIDR range is not propagated to the default propagation route table. To send VPC traffic to an attached transit gateway, add a route to the VPC route table using CreateRoute.
+       */
+    def createTransitGatewayVpcAttachment(
+      params: CreateTransitGatewayVpcAttachmentRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateTransitGatewayVpcAttachmentResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Creates an EBS volume that can be attached to an instance in the same Availability Zone. The volume is created in the regional endpoint that you send the HTTP request to. For more information see Regions and Endpoints. You can create a new empty volume or restore a volume from an EBS snapshot. Any AWS Marketplace product codes from the snapshot are propagated to the volume. You can create encrypted volumes with the Encrypted parameter. Encrypted volumes may only be attached to instances that support Amazon EBS encryption. Volumes that are created from encrypted snapshots are also automatically encrypted. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide. You can tag your volumes during creation. For more information, see Tagging Your Amazon EC2 Resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Creating an Amazon EBS Volume in the Amazon Elastic Compute Cloud User Guide.
        */
@@ -16338,6 +18671,122 @@ object EC2Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Deletes the specified transit gateway.
+       */
+    def deleteTransitGateway(): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified transit gateway.
+       */
+    def deleteTransitGateway(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteTransitGatewayResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified transit gateway.
+       */
+    def deleteTransitGateway(params: DeleteTransitGatewayRequest): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified transit gateway.
+       */
+    def deleteTransitGateway(
+      params: DeleteTransitGatewayRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteTransitGatewayResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified route from the specified transit gateway route table.
+       */
+    def deleteTransitGatewayRoute(): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified route from the specified transit gateway route table.
+       */
+    def deleteTransitGatewayRoute(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteTransitGatewayRouteResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified route from the specified transit gateway route table.
+       */
+    def deleteTransitGatewayRoute(params: DeleteTransitGatewayRouteRequest): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified route from the specified transit gateway route table.
+       */
+    def deleteTransitGatewayRoute(
+      params: DeleteTransitGatewayRouteRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteTransitGatewayRouteResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.
+       */
+    def deleteTransitGatewayRouteTable(): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.
+       */
+    def deleteTransitGatewayRouteTable(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteTransitGatewayRouteTableResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.
+       */
+    def deleteTransitGatewayRouteTable(params: DeleteTransitGatewayRouteTableRequest): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.
+       */
+    def deleteTransitGatewayRouteTable(
+      params: DeleteTransitGatewayRouteTableRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteTransitGatewayRouteTableResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified VPC attachment.
+       */
+    def deleteTransitGatewayVpcAttachment(): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified VPC attachment.
+       */
+    def deleteTransitGatewayVpcAttachment(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteTransitGatewayVpcAttachmentResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified VPC attachment.
+       */
+    def deleteTransitGatewayVpcAttachment(params: DeleteTransitGatewayVpcAttachmentRequest): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the specified VPC attachment.
+       */
+    def deleteTransitGatewayVpcAttachment(
+      params: DeleteTransitGatewayVpcAttachmentRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteTransitGatewayVpcAttachmentResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Deletes the specified EBS volume. The volume must be in the available state (not attached to an instance). The volume can remain in the deleting state for several minutes. For more information, see Deleting an Amazon EBS Volume in the Amazon Elastic Compute Cloud User Guide.
        */
     def deleteVolume(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -16559,6 +19008,35 @@ object EC2Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
+       */
+    def deprovisionByoipCidr(): awsDashSdkLib.libRequestMod.Request[DeprovisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
+       */
+    def deprovisionByoipCidr(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeprovisionByoipCidrResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeprovisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
+       */
+    def deprovisionByoipCidr(params: DeprovisionByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[DeprovisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Releases the specified address range that you provisioned for use with your AWS resources through bring your own IP addresses (BYOIP) and deletes the corresponding address pool. Before you can release an address range, you must stop advertising it using WithdrawByoipCidr and you must not have any IP addresses allocated from its address range.
+       */
+    def deprovisionByoipCidr(
+      params: DeprovisionByoipCidrRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeprovisionByoipCidrResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeprovisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Deregisters the specified AMI. After you deregister an AMI, it can't be used to launch new instances; however, it doesn't affect any instances that you've already launched from the AMI. You'll continue to incur usage costs for those instances until you terminate them. When you deregister an Amazon EBS-backed AMI, it doesn't affect the snapshot that was created for the root volume of the instance during the AMI creation process. When you deregister an instance store-backed AMI, it doesn't affect the files that you uploaded to Amazon S3 when you created the AMI.
        */
     def deregisterImage(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -16725,6 +19203,64 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeBundleTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
+       */
+    def describeByoipCidrs(): awsDashSdkLib.libRequestMod.Request[DescribeByoipCidrsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
+       */
+    def describeByoipCidrs(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeByoipCidrsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeByoipCidrsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
+       */
+    def describeByoipCidrs(params: DescribeByoipCidrsRequest): awsDashSdkLib.libRequestMod.Request[DescribeByoipCidrsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.
+       */
+    def describeByoipCidrs(
+      params: DescribeByoipCidrsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeByoipCidrsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeByoipCidrsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
+       */
+    def describeCapacityReservations(): awsDashSdkLib.libRequestMod.Request[DescribeCapacityReservationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
+       */
+    def describeCapacityReservations(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeCapacityReservationsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeCapacityReservationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
+       */
+    def describeCapacityReservations(params: DescribeCapacityReservationsRequest): awsDashSdkLib.libRequestMod.Request[DescribeCapacityReservationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more of your Capacity Reservations. The results describe only the Capacity Reservations in the AWS Region that you're currently using.
+       */
+    def describeCapacityReservations(
+      params: DescribeCapacityReservationsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeCapacityReservationsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeCapacityReservationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Describes one or more of your linked EC2-Classic instances. This request only returns information about EC2-Classic instances linked to a VPC through ClassicLink. You cannot use this request to return information about other instances.
        */
     def describeClassicLinkInstances(): awsDashSdkLib.libRequestMod.Request[DescribeClassicLinkInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -16870,11 +19406,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeEgressOnlyInternetGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the Elastic GPUs associated with your instances. For more information about Elastic GPUs, see Amazon EC2 Elastic GPUs.
+       * Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.
        */
     def describeElasticGpus(): awsDashSdkLib.libRequestMod.Request[DescribeElasticGpusResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the Elastic GPUs associated with your instances. For more information about Elastic GPUs, see Amazon EC2 Elastic GPUs.
+       * Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.
        */
     def describeElasticGpus(
       callback: js.Function2[
@@ -16884,11 +19420,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeElasticGpusResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the Elastic GPUs associated with your instances. For more information about Elastic GPUs, see Amazon EC2 Elastic GPUs.
+       * Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.
        */
     def describeElasticGpus(params: DescribeElasticGpusRequest): awsDashSdkLib.libRequestMod.Request[DescribeElasticGpusResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the Elastic GPUs associated with your instances. For more information about Elastic GPUs, see Amazon EC2 Elastic GPUs.
+       * Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.
        */
     def describeElasticGpus(
       params: DescribeElasticGpusRequest,
@@ -16986,11 +19522,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeFleetInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes one or more of your EC2 Fleet.
+       * Describes one or more of your EC2 Fleets.
        */
     def describeFleets(): awsDashSdkLib.libRequestMod.Request[DescribeFleetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes one or more of your EC2 Fleet.
+       * Describes one or more of your EC2 Fleets.
        */
     def describeFleets(
       callback: js.Function2[
@@ -17000,11 +19536,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeFleetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes one or more of your EC2 Fleet.
+       * Describes one or more of your EC2 Fleets.
        */
     def describeFleets(params: DescribeFleetsRequest): awsDashSdkLib.libRequestMod.Request[DescribeFleetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes one or more of your EC2 Fleet.
+       * Describes one or more of your EC2 Fleets.
        */
     def describeFleets(
       params: DescribeFleetsRequest,
@@ -17877,6 +20413,35 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribePrincipalIdFormatResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Describes the specified IPv4 address pools.
+       */
+    def describePublicIpv4Pools(): awsDashSdkLib.libRequestMod.Request[DescribePublicIpv4PoolsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the specified IPv4 address pools.
+       */
+    def describePublicIpv4Pools(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribePublicIpv4PoolsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribePublicIpv4PoolsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the specified IPv4 address pools.
+       */
+    def describePublicIpv4Pools(params: DescribePublicIpv4PoolsRequest): awsDashSdkLib.libRequestMod.Request[DescribePublicIpv4PoolsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes the specified IPv4 address pools.
+       */
+    def describePublicIpv4Pools(
+      params: DescribePublicIpv4PoolsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribePublicIpv4PoolsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribePublicIpv4PoolsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Describes one or more regions that are currently available to you. For a list of the regions supported by Amazon EC2, see Regions and Endpoints.
        */
     def describeRegions(): awsDashSdkLib.libRequestMod.Request[DescribeRegionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -18283,11 +20848,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeSpotFleetInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
+       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
        */
     def describeSpotFleetRequestHistory(): awsDashSdkLib.libRequestMod.Request[DescribeSpotFleetRequestHistoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
+       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
        */
     def describeSpotFleetRequestHistory(
       callback: js.Function2[
@@ -18297,11 +20862,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeSpotFleetRequestHistoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
+       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
        */
     def describeSpotFleetRequestHistory(params: DescribeSpotFleetRequestHistoryRequest): awsDashSdkLib.libRequestMod.Request[DescribeSpotFleetRequestHistoryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event.
+       * Describes the events for the specified Spot Fleet request during the specified time. Spot Fleet events are delayed by up to 30 seconds before they can be described. This ensures that you can query by the last evaluated time and not miss a recorded event. Spot Fleet events are available for 48 hours.
        */
     def describeSpotFleetRequestHistory(
       params: DescribeSpotFleetRequestHistoryRequest,
@@ -18485,6 +21050,122 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeTagsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
+       */
+    def describeTransitGatewayAttachments(): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayAttachmentsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
+       */
+    def describeTransitGatewayAttachments(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeTransitGatewayAttachmentsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayAttachmentsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
+       */
+    def describeTransitGatewayAttachments(params: DescribeTransitGatewayAttachmentsRequest): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayAttachmentsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more attachments between resources and transit gateways. By default, all attachments are described. Alternatively, you can filter the results by attachment ID, attachment state, resource ID, or resource owner.
+       */
+    def describeTransitGatewayAttachments(
+      params: DescribeTransitGatewayAttachmentsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeTransitGatewayAttachmentsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayAttachmentsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more transit gateway route tables. By default, all transit gateway route tables are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGatewayRouteTables(): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayRouteTablesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more transit gateway route tables. By default, all transit gateway route tables are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGatewayRouteTables(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeTransitGatewayRouteTablesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayRouteTablesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more transit gateway route tables. By default, all transit gateway route tables are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGatewayRouteTables(params: DescribeTransitGatewayRouteTablesRequest): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayRouteTablesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more transit gateway route tables. By default, all transit gateway route tables are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGatewayRouteTables(
+      params: DescribeTransitGatewayRouteTablesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeTransitGatewayRouteTablesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayRouteTablesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGatewayVpcAttachments(): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayVpcAttachmentsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGatewayVpcAttachments(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeTransitGatewayVpcAttachmentsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayVpcAttachmentsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGatewayVpcAttachments(params: DescribeTransitGatewayVpcAttachmentsRequest): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayVpcAttachmentsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more VPC attachments. By default, all VPC attachments are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGatewayVpcAttachments(
+      params: DescribeTransitGatewayVpcAttachmentsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeTransitGatewayVpcAttachmentsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewayVpcAttachmentsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGateways(): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGateways(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeTransitGatewaysResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGateways(params: DescribeTransitGatewaysRequest): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Describes one or more transit gateways. By default, all transit gateways are described. Alternatively, you can filter the results.
+       */
+    def describeTransitGateways(
+      params: DescribeTransitGatewaysRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeTransitGatewaysResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeTransitGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Describes the specified attribute of the specified volume. You can specify only one attribute at a time. For more information about EBS volumes, see Amazon EBS Volumes in the Amazon Elastic Compute Cloud User Guide.
        */
@@ -19112,6 +21793,47 @@ object EC2Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Disables the specified resource attachment from propagating routes to the specified propagation route table.
+       */
+    def disableTransitGatewayRouteTablePropagation(): awsDashSdkLib.libRequestMod.Request[
+        DisableTransitGatewayRouteTablePropagationResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Disables the specified resource attachment from propagating routes to the specified propagation route table.
+       */
+    def disableTransitGatewayRouteTablePropagation(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisableTransitGatewayRouteTablePropagationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        DisableTransitGatewayRouteTablePropagationResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Disables the specified resource attachment from propagating routes to the specified propagation route table.
+       */
+    def disableTransitGatewayRouteTablePropagation(params: DisableTransitGatewayRouteTablePropagationRequest): awsDashSdkLib.libRequestMod.Request[
+        DisableTransitGatewayRouteTablePropagationResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Disables the specified resource attachment from propagating routes to the specified propagation route table.
+       */
+    def disableTransitGatewayRouteTablePropagation(
+      params: DisableTransitGatewayRouteTablePropagationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisableTransitGatewayRouteTablePropagationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        DisableTransitGatewayRouteTablePropagationResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
        * Disables a virtual private gateway (VGW) from propagating routes to a specified route table of a VPC.
        */
     def disableVgwRoutePropagation(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -19291,6 +22013,35 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DisassociateSubnetCidrBlockResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Disassociates a resource attachment from a transit gateway route table.
+       */
+    def disassociateTransitGatewayRouteTable(): awsDashSdkLib.libRequestMod.Request[DisassociateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Disassociates a resource attachment from a transit gateway route table.
+       */
+    def disassociateTransitGatewayRouteTable(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociateTransitGatewayRouteTableResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisassociateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Disassociates a resource attachment from a transit gateway route table.
+       */
+    def disassociateTransitGatewayRouteTable(params: DisassociateTransitGatewayRouteTableRequest): awsDashSdkLib.libRequestMod.Request[DisassociateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Disassociates a resource attachment from a transit gateway route table.
+       */
+    def disassociateTransitGatewayRouteTable(
+      params: DisassociateTransitGatewayRouteTableRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociateTransitGatewayRouteTableResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisassociateTransitGatewayRouteTableResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Disassociates a CIDR block from a VPC. To disassociate the CIDR block, you must specify its association ID. You can get the association ID by using DescribeVpcs. You must detach or delete all gateways and resources that are associated with the CIDR block before you can disassociate it.  You cannot disassociate the CIDR block with which you originally created the VPC (the primary CIDR block).
        */
     def disassociateVpcCidrBlock(): awsDashSdkLib.libRequestMod.Request[DisassociateVpcCidrBlockResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -19319,6 +22070,47 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DisassociateVpcCidrBlockResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Enables the specified attachment to propagate routes to the specified propagation route table.
+       */
+    def enableTransitGatewayRouteTablePropagation(): awsDashSdkLib.libRequestMod.Request[
+        EnableTransitGatewayRouteTablePropagationResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Enables the specified attachment to propagate routes to the specified propagation route table.
+       */
+    def enableTransitGatewayRouteTablePropagation(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ EnableTransitGatewayRouteTablePropagationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        EnableTransitGatewayRouteTablePropagationResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Enables the specified attachment to propagate routes to the specified propagation route table.
+       */
+    def enableTransitGatewayRouteTablePropagation(params: EnableTransitGatewayRouteTablePropagationRequest): awsDashSdkLib.libRequestMod.Request[
+        EnableTransitGatewayRouteTablePropagationResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Enables the specified attachment to propagate routes to the specified propagation route table.
+       */
+    def enableTransitGatewayRouteTablePropagation(
+      params: EnableTransitGatewayRouteTablePropagationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ EnableTransitGatewayRouteTablePropagationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        EnableTransitGatewayRouteTablePropagationResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
     /**
        * Enables a virtual private gateway (VGW) to propagate routes to the specified route table of a VPC.
        */
@@ -19419,6 +22211,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[EnableVpcClassicLinkDnsSupportResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range.
+       */
+    def exportTransitGatewayRoutes(): awsDashSdkLib.libRequestMod.Request[ExportTransitGatewayRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range.
+       */
+    def exportTransitGatewayRoutes(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ExportTransitGatewayRoutesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ExportTransitGatewayRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range.
+       */
+    def exportTransitGatewayRoutes(params: ExportTransitGatewayRoutesRequest): awsDashSdkLib.libRequestMod.Request[ExportTransitGatewayRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Exports routes from the specified transit gateway route table to the specified S3 bucket. By default, all routes are exported. Alternatively, you can filter by CIDR range.
+       */
+    def exportTransitGatewayRoutes(
+      params: ExportTransitGatewayRoutesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ExportTransitGatewayRoutesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ExportTransitGatewayRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Gets the console output for the specified instance. For Linux instances, the instance console output displays the exact console output that would normally be displayed on a physical monitor attached to a computer. For Windows instances, the instance console output includes the last three system event log errors. By default, the console output returns buffered information that was posted shortly after an instance transition state (start, stop, reboot, or terminate). This information is available for at least one hour after the most recent post. Only the most recent 64 KB of console output is available. You can optionally retrieve the latest serial console output at any time during the instance lifecycle. This option is supported on instance types that use the Nitro hypervisor. For more information, see Instance Console Output in the Amazon Elastic Compute Cloud User Guide.
        */
@@ -19594,6 +22415,93 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetReservedInstancesExchangeQuoteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Lists the route tables to which the specified resource attachment propagates routes.
+       */
+    def getTransitGatewayAttachmentPropagations(): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayAttachmentPropagationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the route tables to which the specified resource attachment propagates routes.
+       */
+    def getTransitGatewayAttachmentPropagations(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetTransitGatewayAttachmentPropagationsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayAttachmentPropagationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the route tables to which the specified resource attachment propagates routes.
+       */
+    def getTransitGatewayAttachmentPropagations(params: GetTransitGatewayAttachmentPropagationsRequest): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayAttachmentPropagationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the route tables to which the specified resource attachment propagates routes.
+       */
+    def getTransitGatewayAttachmentPropagations(
+      params: GetTransitGatewayAttachmentPropagationsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetTransitGatewayAttachmentPropagationsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayAttachmentPropagationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets information about the associations for the specified transit gateway route table.
+       */
+    def getTransitGatewayRouteTableAssociations(): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayRouteTableAssociationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets information about the associations for the specified transit gateway route table.
+       */
+    def getTransitGatewayRouteTableAssociations(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetTransitGatewayRouteTableAssociationsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayRouteTableAssociationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets information about the associations for the specified transit gateway route table.
+       */
+    def getTransitGatewayRouteTableAssociations(params: GetTransitGatewayRouteTableAssociationsRequest): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayRouteTableAssociationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets information about the associations for the specified transit gateway route table.
+       */
+    def getTransitGatewayRouteTableAssociations(
+      params: GetTransitGatewayRouteTableAssociationsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetTransitGatewayRouteTableAssociationsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayRouteTableAssociationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets information about the route table propagations for the specified transit gateway route table.
+       */
+    def getTransitGatewayRouteTablePropagations(): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayRouteTablePropagationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets information about the route table propagations for the specified transit gateway route table.
+       */
+    def getTransitGatewayRouteTablePropagations(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetTransitGatewayRouteTablePropagationsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayRouteTablePropagationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets information about the route table propagations for the specified transit gateway route table.
+       */
+    def getTransitGatewayRouteTablePropagations(params: GetTransitGatewayRouteTablePropagationsRequest): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayRouteTablePropagationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets information about the route table propagations for the specified transit gateway route table.
+       */
+    def getTransitGatewayRouteTablePropagations(
+      params: GetTransitGatewayRouteTablePropagationsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetTransitGatewayRouteTablePropagationsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetTransitGatewayRouteTablePropagationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI). For more information, see Importing a VM as an Image Using VM Import/Export in the VM Import/Export User Guide.
        */
     def importImage(): awsDashSdkLib.libRequestMod.Request[ImportImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -19739,6 +22647,35 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ImportVolumeResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
+       */
+    def modifyCapacityReservation(): awsDashSdkLib.libRequestMod.Request[ModifyCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
+       */
+    def modifyCapacityReservation(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyCapacityReservationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
+       */
+    def modifyCapacityReservation(params: ModifyCapacityReservationRequest): awsDashSdkLib.libRequestMod.Request[ModifyCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies a Capacity Reservation's capacity and the conditions under which it is to be released. You cannot change a Capacity Reservation's instance type, EBS optimization, instance store settings, platform, Availability Zone, or instance eligibility. If you need to modify any of these attributes, we recommend that you cancel the Capacity Reservation, and then create a new one with the required attributes.
+       */
+    def modifyCapacityReservation(
+      params: ModifyCapacityReservationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyCapacityReservationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyCapacityReservationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Modifies the specified EC2 Fleet. While the EC2 Fleet is being modified, it is in the modifying state.
        */
     def modifyFleet(): awsDashSdkLib.libRequestMod.Request[ModifyFleetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -19826,21 +22763,21 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyHostsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+       * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide. Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
        */
     def modifyIdFormat(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+       * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide. Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
        */
     def modifyIdFormat(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+       * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide. Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
        */
     def modifyIdFormat(params: ModifyIdFormatRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide.  Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
+       * Modifies the ID format for the specified resource on a per-region basis. You can specify that resources should receive longer IDs (17-character IDs) when they are created. This request can only be used to modify longer ID settings for resource types that are within the opt-in period. Resources currently in their opt-in period include: bundle | conversion-task | customer-gateway | dhcp-options | elastic-ip-allocation | elastic-ip-association | export-task | flow-log | image | import-task | internet-gateway | network-acl | network-acl-association | network-interface | network-interface-attachment | prefix-list | route-table | route-table-association | security-group | subnet | subnet-cidr-block-association | vpc | vpc-cidr-block-association | vpc-endpoint | vpc-peering-connection | vpn-connection | vpn-gateway. This setting applies to the IAM user who makes the request; it does not apply to the entire AWS account. By default, an IAM user defaults to the same settings as the root user. If you're using this action as the root user, then these settings apply to the entire account, unless an IAM user explicitly overrides these settings for themselves. For more information, see Resource IDs in the Amazon Elastic Compute Cloud User Guide. Resources created with longer IDs are visible to all IAM roles and users, regardless of these settings and provided that they have permission to use the relevant Describe command for the resource type.
        */
     def modifyIdFormat(
       params: ModifyIdFormatRequest,
@@ -19909,6 +22846,47 @@ object EC2Ns extends js.Object {
       params: ModifyInstanceAttributeRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
+       */
+    def modifyInstanceCapacityReservationAttributes(): awsDashSdkLib.libRequestMod.Request[
+        ModifyInstanceCapacityReservationAttributesResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
+       */
+    def modifyInstanceCapacityReservationAttributes(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyInstanceCapacityReservationAttributesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        ModifyInstanceCapacityReservationAttributesResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
+       */
+    def modifyInstanceCapacityReservationAttributes(params: ModifyInstanceCapacityReservationAttributesRequest): awsDashSdkLib.libRequestMod.Request[
+        ModifyInstanceCapacityReservationAttributesResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+       * Modifies the Capacity Reservation settings for a stopped instance. Use this action to configure an instance to target a specific Capacity Reservation, run in any open Capacity Reservation with matching attributes, or run On-Demand Instance capacity.
+       */
+    def modifyInstanceCapacityReservationAttributes(
+      params: ModifyInstanceCapacityReservationAttributesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyInstanceCapacityReservationAttributesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        ModifyInstanceCapacityReservationAttributesResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
     /**
        * Modifies the credit option for CPU usage on a running or stopped T2 or T3 instance. The credit options are standard and unlimited. For more information, see Burstable Performance Instances in the Amazon Elastic Compute Cloud User Guide.
        */
@@ -20118,6 +23096,35 @@ object EC2Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Modifies the specified VPC attachment.
+       */
+    def modifyTransitGatewayVpcAttachment(): awsDashSdkLib.libRequestMod.Request[ModifyTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the specified VPC attachment.
+       */
+    def modifyTransitGatewayVpcAttachment(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyTransitGatewayVpcAttachmentResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the specified VPC attachment.
+       */
+    def modifyTransitGatewayVpcAttachment(params: ModifyTransitGatewayVpcAttachmentRequest): awsDashSdkLib.libRequestMod.Request[ModifyTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Modifies the specified VPC attachment.
+       */
+    def modifyTransitGatewayVpcAttachment(
+      params: ModifyTransitGatewayVpcAttachmentRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ModifyTransitGatewayVpcAttachmentResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ModifyTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * You can modify several parameters of an existing EBS volume, including volume size, volume type, and IOPS capacity. If your EBS volume is attached to a current-generation EC2 instance type, you may be able to apply these changes without stopping the instance or detaching the volume from it. For more information about modifying an EBS volume running Linux, see Modifying the Size, IOPS, or Type of an EBS Volume on Linux. For more information about modifying an EBS volume running Windows, see Modifying the Size, IOPS, or Type of an EBS Volume on Windows.   When you complete a resize operation on your volume, you need to extend the volume's file-system size to take advantage of the new storage capacity. For information about extending a Linux file system, see Extending a Linux File System. For information about extending a Windows file system, see Extending a Windows File System.   You can use CloudWatch Events to check the status of a modification to an EBS volume. For information about CloudWatch Events, see the Amazon CloudWatch Events User Guide. You can also track the status of a modification using the DescribeVolumesModifications API. For information about tracking status changes using either method, see Monitoring Volume Modifications.  With previous-generation instance types, resizing an EBS volume may require detaching and reattaching the volume or stopping and restarting the instance. For more information, see Modifying the Size, IOPS, or Type of an EBS Volume on Linux and Modifying the Size, IOPS, or Type of an EBS Volume on Windows. If you reach the maximum volume modification rate per volume limit, you will need to wait at least six hours before applying further modifications to the affected EBS volume.
        */
     def modifyVolume(): awsDashSdkLib.libRequestMod.Request[ModifyVolumeResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -20305,11 +23312,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyVpcEndpointServicePermissionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in different accounts, each owner must initiate a separate request to modify the peering connection options, depending on whether their VPC was the requester or accepter for the VPC peering connection. If the peered VPCs are in the same account, you can modify the requester and accepter options in the same request. To confirm which VPC is the accepter and requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+       * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same AWS account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different AWS accounts or different regions. For peered VPCs in different AWS accounts, each AWS account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the region for the requester VPC to modify the requester VPC peering options and the region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
        */
     def modifyVpcPeeringConnectionOptions(): awsDashSdkLib.libRequestMod.Request[ModifyVpcPeeringConnectionOptionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in different accounts, each owner must initiate a separate request to modify the peering connection options, depending on whether their VPC was the requester or accepter for the VPC peering connection. If the peered VPCs are in the same account, you can modify the requester and accepter options in the same request. To confirm which VPC is the accepter and requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+       * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same AWS account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different AWS accounts or different regions. For peered VPCs in different AWS accounts, each AWS account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the region for the requester VPC to modify the requester VPC peering options and the region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
        */
     def modifyVpcPeeringConnectionOptions(
       callback: js.Function2[
@@ -20319,11 +23326,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyVpcPeeringConnectionOptionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in different accounts, each owner must initiate a separate request to modify the peering connection options, depending on whether their VPC was the requester or accepter for the VPC peering connection. If the peered VPCs are in the same account, you can modify the requester and accepter options in the same request. To confirm which VPC is the accepter and requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+       * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same AWS account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different AWS accounts or different regions. For peered VPCs in different AWS accounts, each AWS account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the region for the requester VPC to modify the requester VPC peering options and the region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
        */
     def modifyVpcPeeringConnectionOptions(params: ModifyVpcPeeringConnectionOptionsRequest): awsDashSdkLib.libRequestMod.Request[ModifyVpcPeeringConnectionOptionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in different accounts, each owner must initiate a separate request to modify the peering connection options, depending on whether their VPC was the requester or accepter for the VPC peering connection. If the peered VPCs are in the same account, you can modify the requester and accepter options in the same request. To confirm which VPC is the accepter and requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+       * Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same AWS account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different AWS accounts or different regions. For peered VPCs in different AWS accounts, each AWS account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the region for the requester VPC to modify the requester VPC peering options and the region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
        */
     def modifyVpcPeeringConnectionOptions(
       params: ModifyVpcPeeringConnectionOptionsRequest,
@@ -20420,6 +23427,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[MoveAddressToVpcResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
+       */
+    def provisionByoipCidr(): awsDashSdkLib.libRequestMod.Request[ProvisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
+       */
+    def provisionByoipCidr(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ProvisionByoipCidrResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ProvisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
+       */
+    def provisionByoipCidr(params: ProvisionByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[ProvisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Provisions an address range for use with your AWS resources through bring your own IP addresses (BYOIP) and creates a corresponding address pool. After the address range is provisioned, it is ready to be advertised using AdvertiseByoipCidr. AWS verifies that you own the address range and are authorized to advertise it. You must ensure that the address range is registered to you and that you created an RPKI ROA to authorize Amazon ASNs 16509 and 14618 to advertise the address range. For more information, see Bring Your Own IP Addresses (BYOIP) in the Amazon Elastic Compute Cloud User Guide. Provisioning an address range is an asynchronous operation, so the call returns immediately, but the address range is not ready to use until its status changes from pending-provision to provisioned. To monitor the status of an address range, use DescribeByoipCidrs. To allocate an Elastic IP address from your address pool, use AllocateAddress with either the specific address from the address pool or the ID of the address pool.
+       */
+    def provisionByoipCidr(
+      params: ProvisionByoipCidrRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ProvisionByoipCidrResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ProvisionByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Purchase a reservation with configurations that match those of your Dedicated Host. You must have active Dedicated Hosts in your account before you purchase a reservation. This action results in the specified reservation being purchased and charged to your account.
        */
@@ -20557,6 +23593,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[RegisterImageResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Rejects a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use AcceptTransitGatewayVpcAttachment to accept a VPC attachment request.
+       */
+    def rejectTransitGatewayVpcAttachment(): awsDashSdkLib.libRequestMod.Request[RejectTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Rejects a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use AcceptTransitGatewayVpcAttachment to accept a VPC attachment request.
+       */
+    def rejectTransitGatewayVpcAttachment(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ RejectTransitGatewayVpcAttachmentResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[RejectTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Rejects a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use AcceptTransitGatewayVpcAttachment to accept a VPC attachment request.
+       */
+    def rejectTransitGatewayVpcAttachment(params: RejectTransitGatewayVpcAttachmentRequest): awsDashSdkLib.libRequestMod.Request[RejectTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Rejects a request to attach a VPC to a transit gateway. The VPC attachment must be in the pendingAcceptance state. Use DescribeTransitGatewayVpcAttachments to view your pending VPC attachment requests. Use AcceptTransitGatewayVpcAttachment to accept a VPC attachment request.
+       */
+    def rejectTransitGatewayVpcAttachment(
+      params: RejectTransitGatewayVpcAttachmentRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ RejectTransitGatewayVpcAttachmentResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[RejectTransitGatewayVpcAttachmentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Rejects one or more VPC endpoint connection requests to your VPC endpoint service.
        */
@@ -20794,6 +23859,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ReplaceRouteTableAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Replaces the specified route in the specified transit gateway route table.
+       */
+    def replaceTransitGatewayRoute(): awsDashSdkLib.libRequestMod.Request[ReplaceTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Replaces the specified route in the specified transit gateway route table.
+       */
+    def replaceTransitGatewayRoute(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ReplaceTransitGatewayRouteResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ReplaceTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Replaces the specified route in the specified transit gateway route table.
+       */
+    def replaceTransitGatewayRoute(params: ReplaceTransitGatewayRouteRequest): awsDashSdkLib.libRequestMod.Request[ReplaceTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Replaces the specified route in the specified transit gateway route table.
+       */
+    def replaceTransitGatewayRoute(
+      params: ReplaceTransitGatewayRouteRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ReplaceTransitGatewayRouteResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ReplaceTransitGatewayRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Submits feedback about the status of an instance. The instance must be in the running state. If your experience with the instance differs from the instance status returned by DescribeInstanceStatus, use ReportInstanceStatus to report your experience with the instance. Amazon EC2 collects this information to improve the accuracy of status checks. Use of this action does not change the value returned by DescribeInstanceStatus.
        */
@@ -21108,6 +24202,35 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RunScheduledInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Searches for routes in the specified transit gateway route table.
+       */
+    def searchTransitGatewayRoutes(): awsDashSdkLib.libRequestMod.Request[SearchTransitGatewayRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Searches for routes in the specified transit gateway route table.
+       */
+    def searchTransitGatewayRoutes(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ SearchTransitGatewayRoutesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[SearchTransitGatewayRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Searches for routes in the specified transit gateway route table.
+       */
+    def searchTransitGatewayRoutes(params: SearchTransitGatewayRoutesRequest): awsDashSdkLib.libRequestMod.Request[SearchTransitGatewayRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Searches for routes in the specified transit gateway route table.
+       */
+    def searchTransitGatewayRoutes(
+      params: SearchTransitGatewayRoutesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ SearchTransitGatewayRoutesResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[SearchTransitGatewayRoutesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Starts an Amazon EBS-backed instance that you've previously stopped. Instances that use Amazon EBS volumes as their root devices can be quickly stopped and started. When an instance is stopped, the compute resources are released and you are not billed for instance usage. However, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. You can restart your instance at any time. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Performing this operation on an instance that uses an instance store as its root device returns an error. For more information, see Stopping Instances in the Amazon Elastic Compute Cloud User Guide.
        */
     def startInstances(): awsDashSdkLib.libRequestMod.Request[StartInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -21137,11 +24260,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Stops an Amazon EBS-backed instance. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start or stop Spot Instances, and you can't stop instance store-backed instances. When you stop an instance, we shut it down. You can restart your instance at any time. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Stopping an instance is different to rebooting or terminating it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
+       * Stops an Amazon EBS-backed instance. You can use the Stop action to hibernate an instance if the instance is enabled for hibernation and it meets the hibernation prerequisites. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start, stop, or hibernate Spot Instances, and you can't stop or hibernate instance store-backed instances. For information about using hibernation for Spot Instances, see Hibernating Interrupted Spot Instances in the Amazon Elastic Compute Cloud User Guide. When you stop or hibernate an instance, we shut it down. You can restart your instance at any time. Before stopping or hibernating an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM, but hibernating an instance does preserve data stored in RAM. If an instance cannot hibernate successfully, a normal shutdown occurs. Stopping and hibernating an instance is different to rebooting or terminating it. For example, when you stop or hibernate an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, hibernating, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
        */
     def stopInstances(): awsDashSdkLib.libRequestMod.Request[StopInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Stops an Amazon EBS-backed instance. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start or stop Spot Instances, and you can't stop instance store-backed instances. When you stop an instance, we shut it down. You can restart your instance at any time. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Stopping an instance is different to rebooting or terminating it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
+       * Stops an Amazon EBS-backed instance. You can use the Stop action to hibernate an instance if the instance is enabled for hibernation and it meets the hibernation prerequisites. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start, stop, or hibernate Spot Instances, and you can't stop or hibernate instance store-backed instances. For information about using hibernation for Spot Instances, see Hibernating Interrupted Spot Instances in the Amazon Elastic Compute Cloud User Guide. When you stop or hibernate an instance, we shut it down. You can restart your instance at any time. Before stopping or hibernating an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM, but hibernating an instance does preserve data stored in RAM. If an instance cannot hibernate successfully, a normal shutdown occurs. Stopping and hibernating an instance is different to rebooting or terminating it. For example, when you stop or hibernate an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, hibernating, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
        */
     def stopInstances(
       callback: js.Function2[
@@ -21151,11 +24274,11 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Stops an Amazon EBS-backed instance. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start or stop Spot Instances, and you can't stop instance store-backed instances. When you stop an instance, we shut it down. You can restart your instance at any time. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Stopping an instance is different to rebooting or terminating it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
+       * Stops an Amazon EBS-backed instance. You can use the Stop action to hibernate an instance if the instance is enabled for hibernation and it meets the hibernation prerequisites. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start, stop, or hibernate Spot Instances, and you can't stop or hibernate instance store-backed instances. For information about using hibernation for Spot Instances, see Hibernating Interrupted Spot Instances in the Amazon Elastic Compute Cloud User Guide. When you stop or hibernate an instance, we shut it down. You can restart your instance at any time. Before stopping or hibernating an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM, but hibernating an instance does preserve data stored in RAM. If an instance cannot hibernate successfully, a normal shutdown occurs. Stopping and hibernating an instance is different to rebooting or terminating it. For example, when you stop or hibernate an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, hibernating, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
        */
     def stopInstances(params: StopInstancesRequest): awsDashSdkLib.libRequestMod.Request[StopInstancesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Stops an Amazon EBS-backed instance. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start or stop Spot Instances, and you can't stop instance store-backed instances. When you stop an instance, we shut it down. You can restart your instance at any time. Before stopping an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM. Stopping an instance is different to rebooting or terminating it. For example, when you stop an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
+       * Stops an Amazon EBS-backed instance. You can use the Stop action to hibernate an instance if the instance is enabled for hibernation and it meets the hibernation prerequisites. For more information, see Hibernate Your Instance in the Amazon Elastic Compute Cloud User Guide. We don't charge usage for a stopped instance, or data transfer fees; however, your root partition Amazon EBS volume remains and continues to persist your data, and you are charged for Amazon EBS volume usage. Every time you start your Windows instance, Amazon EC2 charges you for a full instance hour. If you stop and restart your Windows instance, a new instance hour begins and Amazon EC2 charges you for another full instance hour even if you are still within the same 60-minute period when it was stopped. Every time you start your Linux instance, Amazon EC2 charges a one-minute minimum for instance usage, and thereafter charges per second for instance usage. You can't start, stop, or hibernate Spot Instances, and you can't stop or hibernate instance store-backed instances. For information about using hibernation for Spot Instances, see Hibernating Interrupted Spot Instances in the Amazon Elastic Compute Cloud User Guide. When you stop or hibernate an instance, we shut it down. You can restart your instance at any time. Before stopping or hibernating an instance, make sure it is in a state from which it can be restarted. Stopping an instance does not preserve data stored in RAM, but hibernating an instance does preserve data stored in RAM. If an instance cannot hibernate successfully, a normal shutdown occurs. Stopping and hibernating an instance is different to rebooting or terminating it. For example, when you stop or hibernate an instance, the root device and any other devices attached to the instance persist. When you terminate an instance, the root device and any other devices attached during the instance launch are automatically deleted. For more information about the differences between rebooting, stopping, hibernating, and terminating instances, see Instance Lifecycle in the Amazon Elastic Compute Cloud User Guide. When you stop an instance, we attempt to shut it down forcibly after a short while. If your instance appears stuck in the stopping state after a period of time, there may be an issue with the underlying host computer. For more information, see Troubleshooting Stopping Your Instance in the Amazon Elastic Compute Cloud User Guide.
        */
     def stopInstances(
       params: StopInstancesRequest,
@@ -22533,6 +25656,35 @@ object EC2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
+       */
+    def withdrawByoipCidr(): awsDashSdkLib.libRequestMod.Request[WithdrawByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
+       */
+    def withdrawByoipCidr(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ WithdrawByoipCidrResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[WithdrawByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
+       */
+    def withdrawByoipCidr(params: WithdrawByoipCidrRequest): awsDashSdkLib.libRequestMod.Request[WithdrawByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Stops advertising an IPv4 address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time. It can take a few minutes before traffic to the specified addresses stops routing to AWS because of BGP propagation delays.
+       */
+    def withdrawByoipCidr(
+      params: WithdrawByoipCidrRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ WithdrawByoipCidrResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[WithdrawByoipCidrResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
   
@@ -22802,7 +25954,7 @@ object EC2Ns extends js.Object {
          */
     var Encrypted: js.UndefOr[scala.Boolean] = js.undefined
     /**
-         * The number of I/O operations per second (IOPS) that the volume supports. For Provisioned IOPS SSD volumes, this represents the number of IOPS that are provisioned for the volume. For General Purpose SSD volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraint: Range is 100-32000 IOPS for io1 volumes and 100-10000 IOPS for gp2 volumes. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
+         * The number of I/O operations per second (IOPS) that the volume supports. For Provisioned IOPS SSD volumes, this represents the number of IOPS that are provisioned for the volume. For General Purpose SSD volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information about General Purpose SSD baseline performance, I/O credits, and bursting, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-10,000 IOPS for gp2 volumes and 100 to 64,000IOPS for io1 volumes in most regions. Maximum io1IOPS of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. For more information, see Amazon EBS Volume Types in the Amazon Elastic Compute Cloud User Guide. Condition: This parameter is required for requests to create io1 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
          */
     var Iops: js.UndefOr[Integer] = js.undefined
     /**
@@ -23041,6 +26193,10 @@ object EC2Ns extends js.Object {
          * Indicates whether the VPC is the default VPC.
          */
     var IsDefault: js.UndefOr[scala.Boolean] = js.undefined
+    /**
+         * The ID of the AWS account that owns the VPC.
+         */
+    var OwnerId: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The current state of the VPC.
          */
@@ -23326,6 +26482,10 @@ object EC2Ns extends js.Object {
          */
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
+         * The ID of the transit gateway associated with the VPN connection.
+         */
+    var TransitGatewayId: js.UndefOr[java.lang.String] = js.undefined
+    /**
          * The type of VPN connection.
          */
     var Type: js.UndefOr[GatewayType] = js.undefined
@@ -23423,6 +26583,26 @@ object EC2Ns extends js.Object {
     var TunnelInsideCidr: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  
+  trait WithdrawByoipCidrRequest extends js.Object {
+    /**
+         * The public IPv4 address range, in CIDR notation.
+         */
+    var Cidr: java.lang.String
+    /**
+         * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
+         */
+    var DryRun: js.UndefOr[scala.Boolean] = js.undefined
+  }
+  
+  
+  trait WithdrawByoipCidrResult extends js.Object {
+    /**
+         * Information about the address pool.
+         */
+    var ByoipCidr: js.UndefOr[ByoipCidr] = js.undefined
+  }
+  
   val TypesNs: this.type = js.native
   type AccountAttributeList = js.Array[AccountAttribute]
   type AccountAttributeName = awsDashSdkLib.awsDashSdkLibStrings.`supported-platforms` | awsDashSdkLib.awsDashSdkLibStrings.`default-vpc` | java.lang.String
@@ -23436,9 +26616,10 @@ object EC2Ns extends js.Object {
   type AllocationState = awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.`under-assessment` | awsDashSdkLib.awsDashSdkLibStrings.`permanent-failure` | awsDashSdkLib.awsDashSdkLibStrings.released | awsDashSdkLib.awsDashSdkLibStrings.`released-permanent-failure` | java.lang.String
   type AllocationStrategy = awsDashSdkLib.awsDashSdkLibStrings.lowestPrice | awsDashSdkLib.awsDashSdkLibStrings.diversified | java.lang.String
   type AllowedPrincipalSet = js.Array[AllowedPrincipal]
-  type ArchitectureValues = awsDashSdkLib.awsDashSdkLibStrings.i386 | awsDashSdkLib.awsDashSdkLibStrings.x86_64 | java.lang.String
+  type ArchitectureValues = awsDashSdkLib.awsDashSdkLibStrings.i386 | awsDashSdkLib.awsDashSdkLibStrings.x86_64 | awsDashSdkLib.awsDashSdkLibStrings.arm64 | java.lang.String
   type AssociationIdList = js.Array[java.lang.String]
   type AttachmentStatus = awsDashSdkLib.awsDashSdkLibStrings.attaching | awsDashSdkLib.awsDashSdkLibStrings.attached | awsDashSdkLib.awsDashSdkLibStrings.detaching | awsDashSdkLib.awsDashSdkLibStrings.detached | java.lang.String
+  type AutoAcceptSharedAttachmentsValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
   type AutoPlacement = awsDashSdkLib.awsDashSdkLibStrings.on | awsDashSdkLib.awsDashSdkLibStrings.off | java.lang.String
   type AvailabilityZoneList = js.Array[AvailabilityZone]
   type AvailabilityZoneMessageList = js.Array[AvailabilityZoneMessage]
@@ -23452,11 +26633,19 @@ object EC2Ns extends js.Object {
   type BundleIdStringList = js.Array[java.lang.String]
   type BundleTaskList = js.Array[BundleTask]
   type BundleTaskState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.`waiting-for-shutdown` | awsDashSdkLib.awsDashSdkLibStrings.bundling | awsDashSdkLib.awsDashSdkLibStrings.storing | awsDashSdkLib.awsDashSdkLibStrings.cancelling | awsDashSdkLib.awsDashSdkLibStrings.complete | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
+  type ByoipCidrSet = js.Array[ByoipCidr]
+  type ByoipCidrState = awsDashSdkLib.awsDashSdkLibStrings.advertised | awsDashSdkLib.awsDashSdkLibStrings.deprovisioned | awsDashSdkLib.awsDashSdkLibStrings.`failed-deprovision` | awsDashSdkLib.awsDashSdkLibStrings.`failed-provision` | awsDashSdkLib.awsDashSdkLibStrings.`pending-deprovision` | awsDashSdkLib.awsDashSdkLibStrings.`pending-provision` | awsDashSdkLib.awsDashSdkLibStrings.provisioned | java.lang.String
   type CancelBatchErrorCode = awsDashSdkLib.awsDashSdkLibStrings.fleetRequestIdDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestIdMalformed | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestNotInCancellableState | awsDashSdkLib.awsDashSdkLibStrings.unexpectedError | java.lang.String
   type CancelSpotFleetRequestsErrorSet = js.Array[CancelSpotFleetRequestsErrorItem]
   type CancelSpotFleetRequestsSuccessSet = js.Array[CancelSpotFleetRequestsSuccessItem]
   type CancelSpotInstanceRequestState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.closed | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.completed | java.lang.String
   type CancelledSpotInstanceRequestList = js.Array[CancelledSpotInstanceRequest]
+  type CapacityReservationIdSet = js.Array[java.lang.String]
+  type CapacityReservationInstancePlatform = awsDashSdkLib.awsDashSdkLibStrings.`Linux/UNIX` | (awsDashSdkLib.awsDashSdkLibStrings.`Red Hat Enterprise Linux`) | (awsDashSdkLib.awsDashSdkLibStrings.`SUSE Linux`) | awsDashSdkLib.awsDashSdkLibStrings.Windows | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Enterprise`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Standard`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Web`) | java.lang.String
+  type CapacityReservationPreference = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.none | java.lang.String
+  type CapacityReservationSet = js.Array[CapacityReservation]
+  type CapacityReservationState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.expired | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
+  type CapacityReservationTenancy = awsDashSdkLib.awsDashSdkLibStrings.default | awsDashSdkLib.awsDashSdkLibStrings.dedicated | java.lang.String
   type CidrBlockSet = js.Array[CidrBlock]
   type ClassicLinkDnsSupportList = js.Array[ClassicLinkDnsSupport]
   type ClassicLinkInstanceList = js.Array[ClassicLinkInstance]
@@ -23468,12 +26657,16 @@ object EC2Ns extends js.Object {
   type ContainerFormat = awsDashSdkLib.awsDashSdkLibStrings.ova | java.lang.String
   type ConversionIdStringList = js.Array[java.lang.String]
   type ConversionTaskState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.cancelling | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.completed | java.lang.String
+  type CreateFleetErrorsSet = js.Array[CreateFleetError]
+  type CreateFleetInstancesSet = js.Array[CreateFleetInstance]
   type CreateVolumePermissionList = js.Array[CreateVolumePermission]
   type CurrencyCodeValues = awsDashSdkLib.awsDashSdkLibStrings.USD | java.lang.String
   type CustomerGatewayIdStringList = js.Array[java.lang.String]
   type CustomerGatewayList = js.Array[CustomerGateway]
   type DatafeedSubscriptionState = awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.Inactive | java.lang.String
   type DateTime = stdLib.Date
+  type DefaultRouteTableAssociationValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
+  type DefaultRouteTablePropagationValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
   type DefaultTargetCapacityType = awsDashSdkLib.awsDashSdkLibStrings.spot | awsDashSdkLib.awsDashSdkLibStrings.`on-demand` | java.lang.String
   type DeleteFleetErrorCode = awsDashSdkLib.awsDashSdkLibStrings.fleetIdDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.fleetIdMalformed | awsDashSdkLib.awsDashSdkLibStrings.fleetNotInDeletableState | awsDashSdkLib.awsDashSdkLibStrings.unexpectedError | java.lang.String
   type DeleteFleetErrorSet = js.Array[DeleteFleetErrorItem]
@@ -23481,6 +26674,8 @@ object EC2Ns extends js.Object {
   type DeleteLaunchTemplateVersionsResponseErrorSet = js.Array[DeleteLaunchTemplateVersionsResponseErrorItem]
   type DeleteLaunchTemplateVersionsResponseSuccessSet = js.Array[DeleteLaunchTemplateVersionsResponseSuccessItem]
   type DescribeConversionTaskList = js.Array[ConversionTask]
+  type DescribeFleetsErrorSet = js.Array[DescribeFleetError]
+  type DescribeFleetsInstancesSet = js.Array[DescribeFleetsInstances]
   type DeviceType = awsDashSdkLib.awsDashSdkLibStrings.ebs | awsDashSdkLib.awsDashSdkLibStrings.`instance-store` | java.lang.String
   type DhcpConfigurationList = js.Array[DhcpConfiguration]
   type DhcpConfigurationValueList = js.Array[AttributeValue]
@@ -23489,6 +26684,7 @@ object EC2Ns extends js.Object {
   type DiskImageFormat = awsDashSdkLib.awsDashSdkLibStrings.VMDK | awsDashSdkLib.awsDashSdkLibStrings.RAW | awsDashSdkLib.awsDashSdkLibStrings.VHD | java.lang.String
   type DiskImageList = js.Array[DiskImage]
   type DnsEntrySet = js.Array[DnsEntry]
+  type DnsSupportValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
   type DomainType = awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.standard | java.lang.String
   type Double = scala.Double
   type EgressOnlyInternetGatewayId = java.lang.String
@@ -23502,6 +26698,9 @@ object EC2Ns extends js.Object {
   type ElasticGpuSpecifications = js.Array[ElasticGpuSpecification]
   type ElasticGpuState = awsDashSdkLib.awsDashSdkLibStrings.ATTACHED | java.lang.String
   type ElasticGpuStatus = awsDashSdkLib.awsDashSdkLibStrings.OK | awsDashSdkLib.awsDashSdkLibStrings.IMPAIRED | java.lang.String
+  type ElasticInferenceAcceleratorAssociationList = js.Array[ElasticInferenceAcceleratorAssociation]
+  type ElasticInferenceAccelerators = js.Array[ElasticInferenceAccelerator]
+  type EndDateType = awsDashSdkLib.awsDashSdkLibStrings.unlimited | awsDashSdkLib.awsDashSdkLibStrings.limited | java.lang.String
   type EventCode = awsDashSdkLib.awsDashSdkLibStrings.`instance-reboot` | awsDashSdkLib.awsDashSdkLibStrings.`system-reboot` | awsDashSdkLib.awsDashSdkLibStrings.`system-maintenance` | awsDashSdkLib.awsDashSdkLibStrings.`instance-retirement` | awsDashSdkLib.awsDashSdkLibStrings.`instance-stop` | java.lang.String
   type EventType = awsDashSdkLib.awsDashSdkLibStrings.instanceChange | awsDashSdkLib.awsDashSdkLibStrings.fleetRequestChange | awsDashSdkLib.awsDashSdkLibStrings.error | java.lang.String
   type ExcessCapacityTerminationPolicy = awsDashSdkLib.awsDashSdkLibStrings.noTermination | awsDashSdkLib.awsDashSdkLibStrings.default | java.lang.String
@@ -23523,7 +26722,7 @@ object EC2Ns extends js.Object {
   type FleetOnDemandAllocationStrategy = awsDashSdkLib.awsDashSdkLibStrings.`lowest-price` | awsDashSdkLib.awsDashSdkLibStrings.prioritized | java.lang.String
   type FleetSet = js.Array[FleetData]
   type FleetStateCode = awsDashSdkLib.awsDashSdkLibStrings.submitted | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.`deleted-running` | awsDashSdkLib.awsDashSdkLibStrings.`deleted-terminating` | awsDashSdkLib.awsDashSdkLibStrings.modifying | java.lang.String
-  type FleetType = awsDashSdkLib.awsDashSdkLibStrings.request | awsDashSdkLib.awsDashSdkLibStrings.maintain | java.lang.String
+  type FleetType = awsDashSdkLib.awsDashSdkLibStrings.request | awsDashSdkLib.awsDashSdkLibStrings.maintain | awsDashSdkLib.awsDashSdkLibStrings.instant | java.lang.String
   type Float = scala.Double
   type FlowLogSet = js.Array[FlowLog]
   type FlowLogsResourceType = awsDashSdkLib.awsDashSdkLibStrings.VPC | awsDashSdkLib.awsDashSdkLibStrings.Subnet | awsDashSdkLib.awsDashSdkLibStrings.NetworkInterface | java.lang.String
@@ -23566,13 +26765,17 @@ object EC2Ns extends js.Object {
   type InstanceCreditSpecificationList = js.Array[InstanceCreditSpecification]
   type InstanceCreditSpecificationListRequest = js.Array[InstanceCreditSpecificationRequest]
   type InstanceHealthStatus = awsDashSdkLib.awsDashSdkLibStrings.healthy | awsDashSdkLib.awsDashSdkLibStrings.unhealthy | java.lang.String
+  type InstanceId = java.lang.String
   type InstanceIdSet = js.Array[java.lang.String]
   type InstanceIdStringList = js.Array[java.lang.String]
+  type InstanceIdsSet = js.Array[InstanceId]
   type InstanceInterruptionBehavior = awsDashSdkLib.awsDashSdkLibStrings.hibernate | awsDashSdkLib.awsDashSdkLibStrings.stop | awsDashSdkLib.awsDashSdkLibStrings.terminate | java.lang.String
   type InstanceIpv6AddressList = js.Array[InstanceIpv6Address]
   type InstanceIpv6AddressListRequest = js.Array[InstanceIpv6AddressRequest]
+  type InstanceLifecycle = awsDashSdkLib.awsDashSdkLibStrings.spot | awsDashSdkLib.awsDashSdkLibStrings.`on-demand` | java.lang.String
   type InstanceLifecycleType = awsDashSdkLib.awsDashSdkLibStrings.spot | awsDashSdkLib.awsDashSdkLibStrings.scheduled | java.lang.String
   type InstanceList = js.Array[Instance]
+  type InstanceMatchCriteria = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.targeted | java.lang.String
   type InstanceMonitoringList = js.Array[InstanceMonitoring]
   type InstanceNetworkInterfaceList = js.Array[InstanceNetworkInterface]
   type InstanceNetworkInterfaceSpecificationList = js.Array[InstanceNetworkInterfaceSpecification]
@@ -23582,7 +26785,7 @@ object EC2Ns extends js.Object {
   type InstanceStatusDetailsList = js.Array[InstanceStatusDetails]
   type InstanceStatusEventList = js.Array[InstanceStatusEvent]
   type InstanceStatusList = js.Array[InstanceStatus]
-  type InstanceType = /* LimitUnionLength: was union type with length 155 */js.Any
+  type InstanceType = /* LimitUnionLength: was union type with length 178 */js.Any
   type InstanceTypeList = js.Array[InstanceType]
   type Integer = scala.Double
   type InterfacePermissionType = awsDashSdkLib.awsDashSdkLibStrings.`INSTANCE-ATTACH` | awsDashSdkLib.awsDashSdkLibStrings.`EIP-ASSOCIATE` | java.lang.String
@@ -23595,6 +26798,7 @@ object EC2Ns extends js.Object {
   type Ipv6AddressList = js.Array[java.lang.String]
   type Ipv6CidrBlockSet = js.Array[Ipv6CidrBlock]
   type Ipv6RangeList = js.Array[Ipv6Range]
+  type Ipv6SupportValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
   type KeyNameStringList = js.Array[java.lang.String]
   type KeyPairList = js.Array[KeyPairInfo]
   type LaunchPermissionList = js.Array[LaunchPermission]
@@ -23602,9 +26806,13 @@ object EC2Ns extends js.Object {
   type LaunchTemplateBlockDeviceMappingList = js.Array[LaunchTemplateBlockDeviceMapping]
   type LaunchTemplateBlockDeviceMappingRequestList = js.Array[LaunchTemplateBlockDeviceMappingRequest]
   type LaunchTemplateConfigList = js.Array[LaunchTemplateConfig]
+  type LaunchTemplateElasticInferenceAcceleratorList = js.Array[LaunchTemplateElasticInferenceAccelerator]
+  type LaunchTemplateElasticInferenceAcceleratorResponseList = js.Array[LaunchTemplateElasticInferenceAcceleratorResponse]
   type LaunchTemplateErrorCode = awsDashSdkLib.awsDashSdkLibStrings.launchTemplateIdDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.launchTemplateIdMalformed | awsDashSdkLib.awsDashSdkLibStrings.launchTemplateNameDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.launchTemplateNameMalformed | awsDashSdkLib.awsDashSdkLibStrings.launchTemplateVersionDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.unexpectedError | java.lang.String
   type LaunchTemplateInstanceNetworkInterfaceSpecificationList = js.Array[LaunchTemplateInstanceNetworkInterfaceSpecification]
   type LaunchTemplateInstanceNetworkInterfaceSpecificationRequestList = js.Array[LaunchTemplateInstanceNetworkInterfaceSpecificationRequest]
+  type LaunchTemplateLicenseList = js.Array[LaunchTemplateLicenseConfiguration]
+  type LaunchTemplateLicenseSpecificationListRequest = js.Array[LaunchTemplateLicenseConfigurationRequest]
   type LaunchTemplateName = java.lang.String
   type LaunchTemplateNameStringList = js.Array[LaunchTemplateName]
   type LaunchTemplateOverridesList = js.Array[LaunchTemplateOverrides]
@@ -23612,6 +26820,8 @@ object EC2Ns extends js.Object {
   type LaunchTemplateTagSpecificationList = js.Array[LaunchTemplateTagSpecification]
   type LaunchTemplateTagSpecificationRequestList = js.Array[LaunchTemplateTagSpecificationRequest]
   type LaunchTemplateVersionSet = js.Array[LaunchTemplateVersion]
+  type LicenseList = js.Array[LicenseConfiguration]
+  type LicenseSpecificationListRequest = js.Array[LicenseConfigurationRequest]
   type ListingState = awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.sold | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.pending | java.lang.String
   type ListingStatus = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.closed | java.lang.String
   type LoadPermissionList = js.Array[LoadPermission]
@@ -23655,6 +26865,7 @@ object EC2Ns extends js.Object {
   type PlacementGroupStringList = js.Array[java.lang.String]
   type PlacementStrategy = awsDashSdkLib.awsDashSdkLibStrings.cluster | awsDashSdkLib.awsDashSdkLibStrings.spread | java.lang.String
   type PlatformValues = awsDashSdkLib.awsDashSdkLibStrings.Windows | java.lang.String
+  type PoolMaxResults = scala.Double
   type PrefixListIdList = js.Array[PrefixListId]
   type PrefixListIdSet = js.Array[java.lang.String]
   type PrefixListSet = js.Array[PrefixList]
@@ -23672,6 +26883,8 @@ object EC2Ns extends js.Object {
   type ProductDescriptionList = js.Array[java.lang.String]
   type PropagatingVgwList = js.Array[PropagatingVgw]
   type PublicIpStringList = js.Array[java.lang.String]
+  type PublicIpv4PoolRangeSet = js.Array[PublicIpv4PoolRange]
+  type PublicIpv4PoolSet = js.Array[PublicIpv4Pool]
   type PurchaseRequestSet = js.Array[PurchaseRequest]
   type PurchaseSet = js.Array[Purchase]
   type PurchasedScheduledInstanceSet = js.Array[ScheduledInstance]
@@ -23704,7 +26917,7 @@ object EC2Ns extends js.Object {
   type ResetImageAttributeName = awsDashSdkLib.awsDashSdkLibStrings.launchPermission | java.lang.String
   type ResourceIdList = js.Array[java.lang.String]
   type ResourceList = js.Array[java.lang.String]
-  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.`customer-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`dedicated-host` | awsDashSdkLib.awsDashSdkLibStrings.`dhcp-options` | awsDashSdkLib.awsDashSdkLibStrings.image | awsDashSdkLib.awsDashSdkLibStrings.instance | awsDashSdkLib.awsDashSdkLibStrings.`internet-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`network-acl` | awsDashSdkLib.awsDashSdkLibStrings.`network-interface` | awsDashSdkLib.awsDashSdkLibStrings.`reserved-instances` | awsDashSdkLib.awsDashSdkLibStrings.`route-table` | awsDashSdkLib.awsDashSdkLibStrings.snapshot | awsDashSdkLib.awsDashSdkLibStrings.`spot-instances-request` | awsDashSdkLib.awsDashSdkLibStrings.subnet | awsDashSdkLib.awsDashSdkLibStrings.`security-group` | awsDashSdkLib.awsDashSdkLibStrings.volume | awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.`vpn-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-gateway` | java.lang.String
+  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.`customer-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`dedicated-host` | awsDashSdkLib.awsDashSdkLibStrings.`dhcp-options` | awsDashSdkLib.awsDashSdkLibStrings.`elastic-ip` | awsDashSdkLib.awsDashSdkLibStrings.fleet | awsDashSdkLib.awsDashSdkLibStrings.`fpga-image` | awsDashSdkLib.awsDashSdkLibStrings.image | awsDashSdkLib.awsDashSdkLibStrings.instance | awsDashSdkLib.awsDashSdkLibStrings.`internet-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`launch-template` | awsDashSdkLib.awsDashSdkLibStrings.natgateway | awsDashSdkLib.awsDashSdkLibStrings.`network-acl` | awsDashSdkLib.awsDashSdkLibStrings.`network-interface` | awsDashSdkLib.awsDashSdkLibStrings.`reserved-instances` | awsDashSdkLib.awsDashSdkLibStrings.`route-table` | awsDashSdkLib.awsDashSdkLibStrings.`security-group` | awsDashSdkLib.awsDashSdkLibStrings.snapshot | awsDashSdkLib.awsDashSdkLibStrings.`spot-instances-request` | awsDashSdkLib.awsDashSdkLibStrings.subnet | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-attachment` | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-route-table` | awsDashSdkLib.awsDashSdkLibStrings.volume | awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.`vpc-peering-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-gateway` | java.lang.String
   type ResponseHostIdList = js.Array[java.lang.String]
   type ResponseHostIdSet = js.Array[java.lang.String]
   type RestorableByStringList = js.Array[java.lang.String]
@@ -23768,6 +26981,27 @@ object EC2Ns extends js.Object {
   type TelemetryStatus = awsDashSdkLib.awsDashSdkLibStrings.UP | awsDashSdkLib.awsDashSdkLibStrings.DOWN | java.lang.String
   type Tenancy = awsDashSdkLib.awsDashSdkLibStrings.default | awsDashSdkLib.awsDashSdkLibStrings.dedicated | awsDashSdkLib.awsDashSdkLibStrings.host | java.lang.String
   type TrafficType = awsDashSdkLib.awsDashSdkLibStrings.ACCEPT | awsDashSdkLib.awsDashSdkLibStrings.REJECT | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
+  type TransitGatewayAssociationState = awsDashSdkLib.awsDashSdkLibStrings.associating | awsDashSdkLib.awsDashSdkLibStrings.associated | awsDashSdkLib.awsDashSdkLibStrings.disassociating | awsDashSdkLib.awsDashSdkLibStrings.disassociated | java.lang.String
+  type TransitGatewayAttachmentIdStringList = js.Array[java.lang.String]
+  type TransitGatewayAttachmentList = js.Array[TransitGatewayAttachment]
+  type TransitGatewayAttachmentPropagationList = js.Array[TransitGatewayAttachmentPropagation]
+  type TransitGatewayAttachmentResourceType = awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.vpn | java.lang.String
+  type TransitGatewayAttachmentState = awsDashSdkLib.awsDashSdkLibStrings.pendingAcceptance | awsDashSdkLib.awsDashSdkLibStrings.rollingBack | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.modifying | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.rejected | awsDashSdkLib.awsDashSdkLibStrings.rejecting | awsDashSdkLib.awsDashSdkLibStrings.failing | java.lang.String
+  type TransitGatewayIdStringList = js.Array[java.lang.String]
+  type TransitGatewayList = js.Array[TransitGateway]
+  type TransitGatewayMaxResults = scala.Double
+  type TransitGatewayPropagationState = awsDashSdkLib.awsDashSdkLibStrings.enabling | awsDashSdkLib.awsDashSdkLibStrings.enabled | awsDashSdkLib.awsDashSdkLibStrings.disabling | awsDashSdkLib.awsDashSdkLibStrings.disabled | java.lang.String
+  type TransitGatewayRouteAttachmentList = js.Array[TransitGatewayRouteAttachment]
+  type TransitGatewayRouteList = js.Array[TransitGatewayRoute]
+  type TransitGatewayRouteState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.blackhole | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type TransitGatewayRouteTableAssociationList = js.Array[TransitGatewayRouteTableAssociation]
+  type TransitGatewayRouteTableIdStringList = js.Array[java.lang.String]
+  type TransitGatewayRouteTableList = js.Array[TransitGatewayRouteTable]
+  type TransitGatewayRouteTablePropagationList = js.Array[TransitGatewayRouteTablePropagation]
+  type TransitGatewayRouteTableState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type TransitGatewayRouteType = awsDashSdkLib.awsDashSdkLibStrings.static | awsDashSdkLib.awsDashSdkLibStrings.propagated | java.lang.String
+  type TransitGatewayState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.modifying | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type TransitGatewayVpcAttachmentList = js.Array[TransitGatewayVpcAttachment]
   type TunnelOptionsList = js.Array[VpnTunnelOptionsSpecification]
   type UnsuccessfulInstanceCreditSpecificationErrorCode = awsDashSdkLib.awsDashSdkLibStrings.InvalidInstanceIDDOTMalformed | awsDashSdkLib.awsDashSdkLibStrings.InvalidInstanceIDDOTNotFound | awsDashSdkLib.awsDashSdkLibStrings.IncorrectInstanceState | awsDashSdkLib.awsDashSdkLibStrings.InstanceCreditSpecificationDOTNotSupported | java.lang.String
   type UnsuccessfulInstanceCreditSpecificationSet = js.Array[UnsuccessfulInstanceCreditSpecificationItem]
@@ -23815,11 +27049,13 @@ object EC2Ns extends js.Object {
   type VpcTenancy = awsDashSdkLib.awsDashSdkLibStrings.default | java.lang.String
   type VpnConnectionIdStringList = js.Array[java.lang.String]
   type VpnConnectionList = js.Array[VpnConnection]
+  type VpnEcmpSupportValue = awsDashSdkLib.awsDashSdkLibStrings.enable | awsDashSdkLib.awsDashSdkLibStrings.disable | java.lang.String
   type VpnGatewayIdStringList = js.Array[java.lang.String]
   type VpnGatewayList = js.Array[VpnGateway]
   type VpnState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
   type VpnStaticRouteList = js.Array[VpnStaticRoute]
   type VpnStaticRouteSource = awsDashSdkLib.awsDashSdkLibStrings.Static | java.lang.String
+  type ZoneIdStringList = js.Array[java.lang.String]
   type ZoneNameStringList = js.Array[java.lang.String]
   type _Blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsEc2Mod.Blob | java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-06-15` | awsDashSdkLib.awsDashSdkLibStrings.`2013-10-15` | awsDashSdkLib.awsDashSdkLibStrings.`2014-02-01` | awsDashSdkLib.awsDashSdkLibStrings.`2014-05-01` | awsDashSdkLib.awsDashSdkLibStrings.`2014-06-15` | awsDashSdkLib.awsDashSdkLibStrings.`2014-09-01` | awsDashSdkLib.awsDashSdkLibStrings.`2014-10-01` | awsDashSdkLib.awsDashSdkLibStrings.`2015-03-01` | awsDashSdkLib.awsDashSdkLibStrings.`2015-04-15` | awsDashSdkLib.awsDashSdkLibStrings.`2015-10-01` | awsDashSdkLib.awsDashSdkLibStrings.`2016-04-01` | awsDashSdkLib.awsDashSdkLibStrings.`2016-09-15` | awsDashSdkLib.awsDashSdkLibStrings.`2016-11-15` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String

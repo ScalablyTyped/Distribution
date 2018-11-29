@@ -19,7 +19,7 @@ trait GraphqlQueryControls[TGraphQLVariables] extends js.Object {
   def startPolling(pollInterval: scala.Double): scala.Unit = js.native
   def stopPolling(): scala.Unit = js.native
   def subscribeToMore(
-    options: apolloDashClientLib.coreWatchQueryOptionsMod.SubscribeToMoreOptions[_, apolloDashClientLib.coreTypesMod.OperationVariables]
+    options: apolloDashClientLib.coreWatchQueryOptionsMod.SubscribeToMoreOptions[_, apolloDashClientLib.coreTypesMod.OperationVariables, _]
   ): js.Function0[scala.Unit] = js.native
   def updateQuery(
     mapFn: js.Function2[

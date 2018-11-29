@@ -20,7 +20,7 @@ trait UpdateNotificationRequest extends js.Object {
        */
   var NewNotification: Notification
   /**
-       * The previous notification associated with a budget.
+       * The previous notification that is associated with a budget.
        */
   var OldNotification: Notification
 }

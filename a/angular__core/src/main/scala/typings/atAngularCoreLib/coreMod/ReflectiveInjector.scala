@@ -35,7 +35,6 @@ object ReflectiveInjector extends js.Object {
        * var injector = ReflectiveInjector.fromResolvedProviders(providers);
        * expect(injector.get(Car) instanceof Car).toBe(true);
        * ```
-       * @experimental
        */
   def fromResolvedProviders(
     providers: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider]
@@ -62,7 +61,6 @@ object ReflectiveInjector extends js.Object {
        * var injector = ReflectiveInjector.fromResolvedProviders(providers);
        * expect(injector.get(Car) instanceof Car).toBe(true);
        * ```
-       * @experimental
        */
   def fromResolvedProviders(
     providers: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider],

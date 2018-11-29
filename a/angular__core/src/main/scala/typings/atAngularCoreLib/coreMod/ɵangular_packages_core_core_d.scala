@@ -8,15 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core", "ɵangular_packages_core_core_d")
 @js.native
 class ɵangular_packages_core_core_d protected ()
-  extends atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ReflectiveDependency {
-  def this(key: atAngularCoreLib.srcDiReflectiveUnderscoreKeyMod.ReflectiveKey, optional: scala.Boolean) = this()
-  def this(key: atAngularCoreLib.srcDiReflectiveUnderscoreKeyMod.ReflectiveKey, optional: scala.Boolean, visibility: atAngularCoreLib.srcDiMetadataMod.Self) = this()
-  def this(key: atAngularCoreLib.srcDiReflectiveUnderscoreKeyMod.ReflectiveKey, optional: scala.Boolean, visibility: atAngularCoreLib.srcDiMetadataMod.SkipSelf) = this()
+  extends atAngularCoreLib.srcDiReflectiveUnderscoreInjectorMod.`ReflectiveInjector_` {
+  /**
+       * Private
+       */
+  def this(_providers: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider]) = this()
+  /**
+       * Private
+       */
+  def this(_providers: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider], _parent: atAngularCoreLib.srcDiInjectorMod.Injector) = this()
 }
 
 @JSImport("@angular/core", "ɵangular_packages_core_core_d")
 @js.native
 object ɵangular_packages_core_core_d extends js.Object {
-  def fromKey(key: atAngularCoreLib.srcDiReflectiveUnderscoreKeyMod.ReflectiveKey): atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ReflectiveDependency = js.native
+  var INJECTOR_KEY: js.Any = js.native
 }
 

@@ -38,6 +38,24 @@ trait Configuration
   val appImage: js.UndefOr[appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.AppImageOptions | scala.Null] = js.undefined
   val appx: js.UndefOr[appDashBuilderDashLibLib.outOptionsAppXOptionsMod.AppXOptions | scala.Null] = js.undefined
   /**
+       * The function (or path to file or module id) to be run on artifact build completed.
+       */
+  val artifactBuildCompleted: js.UndefOr[
+    (js.Function1[
+      /* context */ appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated, 
+      stdLib.Promise[_] | _
+    ]) | java.lang.String | scala.Null
+  ] = js.undefined
+  /**
+       * The function (or path to file or module id) to be run on artifact build start.
+       */
+  val artifactBuildStarted: js.UndefOr[
+    (js.Function1[
+      /* context */ appDashBuilderDashLibLib.outPackagerApiMod.ArtifactBuildStarted, 
+      stdLib.Promise[_] | _
+    ]) | java.lang.String | scala.Null
+  ] = js.undefined
+  /**
        * The function (or path to file or module id) to be run before dependencies are installed or rebuilt. Works when `npmRebuild` is set to `true`. Resolving to `false` will skip dependencies install or rebuild.
        *
        * If provided and `node_modules` are missing, it will not invoke production dependencies check.
@@ -98,6 +116,10 @@ trait Configuration
        * Inject properties to `package.json`.
        */
   val extraMetadata: js.UndefOr[js.Any] = js.undefined
+  /**
+       * The framework name. One of `electron`, `proton-native`, `libui`. Defaults to `electron`.
+       */
+  val framework: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   val freebsd: js.UndefOr[
     appDashBuilderDashLibLib.outOptionsLinuxOptionsMod.LinuxTargetSpecificOptions | scala.Null
   ] = js.undefined
@@ -106,6 +128,10 @@ trait Configuration
        * @default false
        */
   val includePdb: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+       * *libui-based frameworks only* The version of LaunchUI you are packaging for. Applicable for Windows only. Defaults to version suitable for used framework version.
+       */
+  val launchUiVersion: js.UndefOr[scala.Boolean | java.lang.String | scala.Null] = js.undefined
   /**
        * Options related to how build Linux targets.
        */
@@ -133,6 +159,11 @@ trait Configuration
        * @default false
        */
   val nodeGypRebuild: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+       * *libui-based frameworks only* The version of NodeJS you are packaging for.
+       * You can set it to `current` to set the Node.js version that you use to run.
+       */
+  val nodeVersion: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
        * Additional command line arguments to use when installing app native deps.
        */
@@ -166,7 +197,7 @@ trait Configuration
   /**
        * macOS PKG options.
        */
-  val pkg: js.UndefOr[appDashBuilderDashLibLib.outOptionsMacOptionsMod.PkgOptions | scala.Null] = js.undefined
+  val pkg: js.UndefOr[appDashBuilderDashLibLib.outOptionsPkgOptionsMod.PkgOptions | scala.Null] = js.undefined
   val portable: js.UndefOr[
     appDashBuilderDashLibLib.outTargetsNsisNsisOptionsMod.PortableOptions | scala.Null
   ] = js.undefined
@@ -175,8 +206,8 @@ trait Configuration
        */
   val productName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * *Proton Native only* The version of NodeJS you are packaging for.
-       * You can set it to `current` to set the Node.js version that you use to run electron-builder.
+       * @private
+       * @deprecated Set framework and nodeVersion if need.
        */
   val protonNodeVersion: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

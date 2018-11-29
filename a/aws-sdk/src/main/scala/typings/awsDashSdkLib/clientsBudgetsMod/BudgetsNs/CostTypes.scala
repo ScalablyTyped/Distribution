@@ -48,7 +48,7 @@ trait CostTypes extends js.Object {
        */
   var UseAmortized: js.UndefOr[NullableBoolean] = js.undefined
   /**
-       * Specifies whether a budget uses blended rate. The default value is false.
+       * Specifies whether a budget uses a blended rate. The default value is false.
        */
   var UseBlended: js.UndefOr[NullableBoolean] = js.undefined
 }

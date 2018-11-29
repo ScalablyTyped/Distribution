@@ -77,6 +77,12 @@ class Packager protected () extends js.Object {
     handler: js.Function1[/* event */ appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated, scala.Unit]
   ): Packager = js.native
   def build(): stdLib.Promise[BuildResult] = js.native
+  def callArtifactBuildCompleted(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated): stdLib.Promise[scala.Unit] = js.native
+  def callArtifactBuildStarted(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactBuildStarted): stdLib.Promise[scala.Unit] = js.native
+  def callArtifactBuildStarted(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactBuildStarted, logFields: js.Any): stdLib.Promise[scala.Unit] = js.native
+  /**
+       * Only for sub artifacts (update info), for main artifacts use `callArtifactBuildCompleted`.
+       */
   def dispatchArtifactCreated(event: appDashBuilderDashLibLib.outPackagerApiMod.ArtifactCreated): scala.Unit = js.native
   def stageDirPathCustomizer(
     target: appDashBuilderDashLibLib.outMod.Target,

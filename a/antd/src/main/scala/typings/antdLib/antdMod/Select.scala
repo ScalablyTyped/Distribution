@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd", "Select")
 @js.native
-class Select protected ()
-  extends antdLib.libSelectMod.default {
-  def this(props: antdLib.libSelectMod.SelectProps) = this()
+class Select[T] protected ()
+  extends antdLib.libSelectMod.default[T] {
+  def this(props: antdLib.libSelectMod.SelectProps[T]) = this()
 }
 
 @JSImport("antd", "Select")

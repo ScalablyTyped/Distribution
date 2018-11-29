@@ -52,6 +52,47 @@ trait XRay
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Creates a group resource with a name and a filter expression. 
+     */
+  def createGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.CreateGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a group resource with a name and a filter expression. 
+     */
+  def createGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsXrayMod.XRayNs.CreateGroupResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.CreateGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a group resource with a name and a filter expression. 
+     */
+  def createGroup(params: awsDashSdkLib.clientsXrayMod.XRayNs.CreateGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.CreateGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a group resource with a name and a filter expression. 
+     */
+  def createGroup(
+    params: awsDashSdkLib.clientsXrayMod.XRayNs.CreateGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsXrayMod.XRayNs.CreateGroupResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.CreateGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Creates a rule to control sampling behavior for instrumented applications. Services retrieve rules with GetSamplingRules, and evaluate each rule in ascending order of priority for each request. If a rule matches, the service records a trace, borrowing it from the reservoir size. After 10 seconds, the service reports back to X-Ray with GetSamplingTargets to get updated versions of each in-use rule. The updated rule contains a trace quota that the service can use instead of borrowing from the reservoir.
      */
   def createSamplingRule(): awsDashSdkLib.libRequestMod.Request[
@@ -90,6 +131,47 @@ trait XRay
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsXrayMod.XRayNs.CreateSamplingRuleResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a group resource.
+     */
+  def deleteGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.DeleteGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a group resource.
+     */
+  def deleteGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsXrayMod.XRayNs.DeleteGroupResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.DeleteGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a group resource.
+     */
+  def deleteGroup(params: awsDashSdkLib.clientsXrayMod.XRayNs.DeleteGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.DeleteGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a group resource.
+     */
+  def deleteGroup(
+    params: awsDashSdkLib.clientsXrayMod.XRayNs.DeleteGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsXrayMod.XRayNs.DeleteGroupResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.DeleteGroupResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -172,6 +254,88 @@ trait XRay
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsXrayMod.XRayNs.GetEncryptionConfigResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves group resource details.
+     */
+  def getGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves group resource details.
+     */
+  def getGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves group resource details.
+     */
+  def getGroup(params: awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves group resource details.
+     */
+  def getGroup(
+    params: awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves all active group details.
+     */
+  def getGroups(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves all active group details.
+     */
+  def getGroups(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves all active group details.
+     */
+  def getGroups(params: awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves all active group details.
+     */
+  def getGroups(
+    params: awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.GetGroupsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -541,6 +705,47 @@ trait XRay
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsXrayMod.XRayNs.PutTraceSegmentsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a group resource.
+     */
+  def updateGroup(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.UpdateGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a group resource.
+     */
+  def updateGroup(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsXrayMod.XRayNs.UpdateGroupResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.UpdateGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a group resource.
+     */
+  def updateGroup(params: awsDashSdkLib.clientsXrayMod.XRayNs.UpdateGroupRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.UpdateGroupResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates a group resource.
+     */
+  def updateGroup(
+    params: awsDashSdkLib.clientsXrayMod.XRayNs.UpdateGroupRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsXrayMod.XRayNs.UpdateGroupResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsXrayMod.XRayNs.UpdateGroupResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

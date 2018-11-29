@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ParseConfigHost extends js.Object {
+  var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, scala.Unit]] = js.native
   var useCaseSensitiveFileNames: scala.Boolean = js.native
   /**
            * Gets a value indicating whether the specified path exists and is a file.

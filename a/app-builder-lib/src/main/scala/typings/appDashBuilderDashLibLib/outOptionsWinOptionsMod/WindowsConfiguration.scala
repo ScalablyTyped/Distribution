@@ -14,12 +14,12 @@ trait WindowsConfiguration
   val additionalCertificateFile: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
        * The path to the *.pfx certificate you want to sign with. Please use it only if you cannot use env variable `CSC_LINK` (`WIN_CSC_LINK`) for some reason.
-       * Please see [Code Signing](../code-signing.md).
+       * Please see [Code Signing](/code-signing).
        */
   val certificateFile: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
        * The password to the certificate provided in `certificateFile`. Please use it only if you cannot use env variable `CSC_KEY_PASSWORD` (`WIN_CSC_KEY_PASSWORD`) for some reason.
-       * Please see [Code Signing](../code-signing.md).
+       * Please see [Code Signing](/code-signing).
        */
   val certificatePassword: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
@@ -54,7 +54,7 @@ trait WindowsConfiguration
        * The custom function (or path to file or module id) to sign Windows executable.
        */
   val sign: js.UndefOr[
-    appDashBuilderDashLibLib.outWindowsCodeSignMod.CustomWindowsSign | java.lang.String | scala.Null
+    appDashBuilderDashLibLib.outCodeSignWindowsCodeSignMod.CustomWindowsSign | java.lang.String | scala.Null
   ] = js.undefined
   /**
        * Whether to sign and add metadata to executable. Advanced option.
@@ -77,7 +77,7 @@ trait WindowsConfiguration
     ]) | scala.Null
   ] = js.undefined
   /**
-       * The target package type: list of `nsis`, `nsis-web` (Web installer), `portable` ([portable](/configuration/nsis.md#portable) app without installation), `appx`, `msi`, `squirrel`, `7z`, `zip`, `tar.xz`, `tar.lz`, `tar.gz`, `tar.bz2`, `dir`.
+       * The target package type: list of `nsis`, `nsis-web` (Web installer), `portable` ([portable](/configuration/nsis#portable) app without installation), `appx`, `msi`, `squirrel`, `7z`, `zip`, `tar.xz`, `tar.lz`, `tar.gz`, `tar.bz2`, `dir`.
        * AppX package can be built only on Windows 10.
        *
        * To use Squirrel.Windows please install `electron-builder-squirrel-windows` dependency.

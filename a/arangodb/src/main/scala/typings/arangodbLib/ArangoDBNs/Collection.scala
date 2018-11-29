@@ -11,11 +11,8 @@ trait Collection[T /* <: js.Object */] extends js.Object {
   def all(): Cursor[Document[T]] = js.native
   def any(): Document[T] = js.native
   def byExample(example: stdLib.Partial[Document[T]]): Cursor[Document[T]] = js.native
-  // Collection
   def checksum(): CollectionChecksum = js.native
-  // Collection
   def checksum(withRevisions: scala.Boolean): CollectionChecksum = js.native
-  // Collection
   def checksum(withRevisions: scala.Boolean, withData: scala.Boolean): CollectionChecksum = js.native
   def count(): scala.Double = js.native
   def document(selector: DocumentLike): Document[T] = js.native
@@ -49,6 +46,8 @@ trait Collection[T /* <: js.Object */] extends js.Object {
   def iterate(iterator: DocumentIterator[T]): scala.Unit = js.native
   def iterate(iterator: DocumentIterator[T], options: IterateOptions): scala.Unit = js.native
   def load(): scala.Unit = js.native
+  // Collection
+  def name(): java.lang.String = js.native
   def outEdges(vertex: ObjectWithId): js.Array[Edge[T]] = js.native
   def outEdges(vertex: java.lang.String): js.Array[Edge[T]] = js.native
   def outEdges(vertex: js.Array[java.lang.String | ObjectWithId]): js.Array[Edge[T]] = js.native

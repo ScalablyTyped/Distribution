@@ -12,6 +12,9 @@ class Task[A] protected () extends js.Object {
   val _A: A = js.native
   val _URI: URI = js.native
   def ap[B](fab: Task[js.Function1[/* a */ A, B]]): Task[B] = js.native
+  /**
+       * Flipped version of {@link ap}
+       */
   def `ap_`[B, C](`this`: Task[js.Function1[/* b */ B, C]], fb: Task[B]): Task[C] = js.native
   /**
        * Combine two effectful actions, keeping only the result of the first

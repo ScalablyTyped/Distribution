@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** @deprecated use webpack.NoEmitOnErrorsPlugin */
 @JSImport("webpack", "NormalModuleReplacementPlugin")
 @js.native
 class NormalModuleReplacementPlugin protected ()

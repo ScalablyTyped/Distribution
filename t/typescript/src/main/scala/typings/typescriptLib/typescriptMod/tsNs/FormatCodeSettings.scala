@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 
 trait FormatCodeSettings extends EditorSettings {
-  var indentMultiLineObjectLiteralBeginningOnBlankLine: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterCommaDelimiter: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterConstructor: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterFunctionKeywordForAnonymousFunctions: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterKeywordsInControlFlowStatements: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterSemicolonInForStatements: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceAfterTypeAssertion: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceBeforeAndAfterBinaryOperators: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceBeforeFunctionParenthesis: js.UndefOr[scala.Boolean] = js.undefined
-  var insertSpaceBeforeTypeAnnotation: js.UndefOr[scala.Boolean] = js.undefined
-  var placeOpenBraceOnNewLineForControlBlocks: js.UndefOr[scala.Boolean] = js.undefined
-  var placeOpenBraceOnNewLineForFunctions: js.UndefOr[scala.Boolean] = js.undefined
+  val indentMultiLineObjectLiteralBeginningOnBlankLine: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterCommaDelimiter: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterConstructor: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterFunctionKeywordForAnonymousFunctions: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterKeywordsInControlFlowStatements: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterSemicolonInForStatements: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceAfterTypeAssertion: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceBeforeAndAfterBinaryOperators: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceBeforeFunctionParenthesis: js.UndefOr[scala.Boolean] = js.undefined
+  val insertSpaceBeforeTypeAnnotation: js.UndefOr[scala.Boolean] = js.undefined
+  val placeOpenBraceOnNewLineForControlBlocks: js.UndefOr[scala.Boolean] = js.undefined
+  val placeOpenBraceOnNewLineForFunctions: js.UndefOr[scala.Boolean] = js.undefined
 }
 

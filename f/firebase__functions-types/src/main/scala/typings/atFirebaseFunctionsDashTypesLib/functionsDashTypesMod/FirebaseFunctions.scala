@@ -23,6 +23,6 @@ class FirebaseFunctions protected () extends js.Object {
      * @param origin The origin of the local emulator, such as
      * "http://localhost:5005".
      */
-  def useFunctionsEmulator(origin: java.lang.String): js.Any = js.native
+  def useFunctionsEmulator(origin: java.lang.String): scala.Unit = js.native
 }
 

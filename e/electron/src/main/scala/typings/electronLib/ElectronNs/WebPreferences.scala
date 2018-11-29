@@ -99,7 +99,9 @@ trait WebPreferences extends js.Object {
        */
   var minimumFontSize: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Whether to use native window.open(). Defaults to false. This option is currently
+       * Whether to use native window.open(). If set to true, the webPreferences of child
+       * window will always be the same with parent window, regardless of the parameters
+       * passed to window.open(). Defaults to false. This option is currently
        * experimental.
        */
   var nativeWindowOpen: js.UndefOr[scala.Boolean] = js.undefined

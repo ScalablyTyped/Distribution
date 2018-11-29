@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IDialogContentProps
-  extends reactLib.reactMod.ReactNs.Props[
+  extends reactLib.reactMod.ReactNs.ClassAttributes[
       officeDashUiDashFabricDashReactLib.libComponentsDialogDialogContentDotBaseMod.DialogContentBase
     ] {
   /**
@@ -16,7 +16,7 @@ trait IDialogContentProps
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Label to be passed to to aria-label of close button
-       * @default Close
+       * @defaultvalue Close
        */
   var closeButtonAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -83,7 +83,7 @@ trait IDialogContentProps
   ] = js.undefined
   /**
        * The type of Dialog to display.
-       * @default DialogType.normal
+       * @defaultvalue DialogType.normal
        */
   var `type`: js.UndefOr[DialogType] = js.undefined
 }

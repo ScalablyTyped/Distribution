@@ -8,8 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait PopconfirmProps
   extends antdLib.libTooltipMod.AbstractTooltipProps {
+  var cancelButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   var cancelText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var okButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   var okText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var okType: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
   var onCancel: js.UndefOr[

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("typescript", "EmitHint")
 @js.native
 object EmitHint extends js.Object {
+  /* 5 */ val EmbeddedStatement: typescriptLib.typescriptMod.tsNs.EmitHint.EmbeddedStatement with scala.Double = js.native
   /* 1 */ val Expression: typescriptLib.typescriptMod.tsNs.EmitHint.Expression with scala.Double = js.native
   /* 2 */ val IdentifierName: typescriptLib.typescriptMod.tsNs.EmitHint.IdentifierName with scala.Double = js.native
   /* 3 */ val MappedTypeParameter: typescriptLib.typescriptMod.tsNs.EmitHint.MappedTypeParameter with scala.Double = js.native

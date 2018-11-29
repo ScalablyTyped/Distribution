@@ -20,6 +20,7 @@ trait TooltipProps
   var enterDelay: js.UndefOr[scala.Double] = js.undefined
   var enterTouchDelay: js.UndefOr[scala.Double] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
+  var interactive: js.UndefOr[scala.Boolean] = js.undefined
   var leaveDelay: js.UndefOr[scala.Double] = js.undefined
   var leaveTouchDelay: js.UndefOr[scala.Double] = js.undefined
   var onClose: js.UndefOr[

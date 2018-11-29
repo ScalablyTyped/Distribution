@@ -10,7 +10,7 @@ trait IShimmerLineProps
   extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement] {
   /**
        * Use to set custom styling of the shimmerLine borders.
-       * @deprecated Use 'styles' prop to leverage mergeStyle API.
+       * @deprecated Use `styles` prop to leverage mergeStyle API.
        */
   var borderStyle: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle] = js.undefined
   /**
@@ -20,7 +20,7 @@ trait IShimmerLineProps
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IShimmerLine]] = js.undefined
   /**
        * Sets the height of the rectangle.
-       * @default 16px
+       * @defaultvalue 16px
        */
   @JSName("height")
   var height_IShimmerLineProps: js.UndefOr[scala.Double] = js.undefined

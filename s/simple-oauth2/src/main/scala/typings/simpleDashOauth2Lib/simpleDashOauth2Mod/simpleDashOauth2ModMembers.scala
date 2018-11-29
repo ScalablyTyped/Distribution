@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("simple-oauth2", JSImport.Namespace)
 @js.native
 object simpleDashOauth2ModMembers extends js.Object {
-  def create(options: ModuleOptions): OAuthClient = js.native
+  def create[ClientIdName /* <: java.lang.String */](options: ModuleOptions[ClientIdName]): OAuthClient[ClientIdName] = js.native
 }
 

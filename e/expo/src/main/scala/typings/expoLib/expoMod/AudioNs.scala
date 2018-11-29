@@ -16,6 +16,8 @@ object AudioNs extends js.Object {
     var interruptionModeAndroid: InterruptionModeAndroid
     /** Enum selecting how your experience’s audio should interact with the audio from other apps on iOS. */
     var interruptionModeIOS: InterruptionModeIos
+    /** Boolean selecting if audio should go to earpiece (only on Android). */
+    var playThroughEarpieceAndroid: scala.Boolean
     /** Boolean selecting if your experience’s audio should play in silent mode on iOS. This value defaults to `false`. */
     var playsInSilentModeIOS: scala.Boolean
     /** Boolean selecting if your experience’s audio should automatically be lowered in volume ("duck") if audio from another app interrupts your experience. This value defaults to true. If false, audio from other apps will pause your audio. */

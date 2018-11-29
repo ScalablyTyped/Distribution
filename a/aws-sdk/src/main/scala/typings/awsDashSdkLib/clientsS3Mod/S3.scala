@@ -258,21 +258,21 @@ trait S3
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes the cors configuration information set for the bucket.
+     * Deletes the CORS configuration information set for the bucket.
      */
   def deleteBucketCors(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes the cors configuration information set for the bucket.
+     * Deletes the CORS configuration information set for the bucket.
      */
   def deleteBucketCors(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes the cors configuration information set for the bucket.
+     * Deletes the CORS configuration information set for the bucket.
      */
   def deleteBucketCors(params: awsDashSdkLib.clientsS3Mod.S3Ns.DeleteBucketCorsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes the cors configuration information set for the bucket.
+     * Deletes the CORS configuration information set for the bucket.
      */
   def deleteBucketCors(
     params: awsDashSdkLib.clientsS3Mod.S3Ns.DeleteBucketCorsRequest,
@@ -384,21 +384,21 @@ trait S3
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes the replication configuration from the bucket.
+     *  Deletes the replication configuration from the bucket. For information about replication configuration, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
      */
   def deleteBucketReplication(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes the replication configuration from the bucket.
+     *  Deletes the replication configuration from the bucket. For information about replication configuration, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
      */
   def deleteBucketReplication(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes the replication configuration from the bucket.
+     *  Deletes the replication configuration from the bucket. For information about replication configuration, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
      */
   def deleteBucketReplication(params: awsDashSdkLib.clientsS3Mod.S3Ns.DeleteBucketReplicationRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes the replication configuration from the bucket.
+     *  Deletes the replication configuration from the bucket. For information about replication configuration, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
      */
   def deleteBucketReplication(
     params: awsDashSdkLib.clientsS3Mod.S3Ns.DeleteBucketReplicationRequest,
@@ -570,6 +570,27 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Removes the PublicAccessBlock configuration from an Amazon S3 bucket.
+     */
+  def deletePublicAccessBlock(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Removes the PublicAccessBlock configuration from an Amazon S3 bucket.
+     */
+  def deletePublicAccessBlock(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Removes the PublicAccessBlock configuration from an Amazon S3 bucket.
+     */
+  def deletePublicAccessBlock(params: awsDashSdkLib.clientsS3Mod.S3Ns.DeletePublicAccessBlockRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Removes the PublicAccessBlock configuration from an Amazon S3 bucket.
+     */
+  def deletePublicAccessBlock(
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.DeletePublicAccessBlockRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
      * Returns the accelerate configuration of a bucket.
      */
   def getBucketAccelerateConfiguration(): awsDashSdkLib.libRequestMod.Request[
@@ -693,14 +714,14 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the cors configuration for the bucket.
+     * Returns the CORS configuration for the bucket.
      */
   def getBucketCors(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketCorsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the cors configuration for the bucket.
+     * Returns the CORS configuration for the bucket.
      */
   def getBucketCors(
     callback: js.Function2[
@@ -713,14 +734,14 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the cors configuration for the bucket.
+     * Returns the CORS configuration for the bucket.
      */
   def getBucketCors(params: awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketCorsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketCorsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the cors configuration for the bucket.
+     * Returns the CORS configuration for the bucket.
      */
   def getBucketCors(
     params: awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketCorsRequest,
@@ -1144,14 +1165,55 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the replication configuration of a bucket.
+     * Retrieves the policy status for an Amazon S3 bucket, indicating whether the bucket is public.
+     */
+  def getBucketPolicyStatus(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketPolicyStatusOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the policy status for an Amazon S3 bucket, indicating whether the bucket is public.
+     */
+  def getBucketPolicyStatus(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketPolicyStatusOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketPolicyStatusOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the policy status for an Amazon S3 bucket, indicating whether the bucket is public.
+     */
+  def getBucketPolicyStatus(params: awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketPolicyStatusRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketPolicyStatusOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the policy status for an Amazon S3 bucket, indicating whether the bucket is public.
+     */
+  def getBucketPolicyStatus(
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketPolicyStatusRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketPolicyStatusOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketPolicyStatusOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns the replication configuration of a bucket.   It can take a while to propagate the put or delete a replication configuration to all Amazon S3 systems. Therefore, a get request soon after put or delete can return a wrong result.  
      */
   def getBucketReplication(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketReplicationOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the replication configuration of a bucket.
+     * Returns the replication configuration of a bucket.   It can take a while to propagate the put or delete a replication configuration to all Amazon S3 systems. Therefore, a get request soon after put or delete can return a wrong result.  
      */
   def getBucketReplication(
     callback: js.Function2[
@@ -1164,14 +1226,14 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the replication configuration of a bucket.
+     * Returns the replication configuration of a bucket.   It can take a while to propagate the put or delete a replication configuration to all Amazon S3 systems. Therefore, a get request soon after put or delete can return a wrong result.  
      */
   def getBucketReplication(params: awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketReplicationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketReplicationOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns the replication configuration of a bucket.
+     * Returns the replication configuration of a bucket.   It can take a while to propagate the put or delete a replication configuration to all Amazon S3 systems. Therefore, a get request soon after put or delete can return a wrong result.  
      */
   def getBucketReplication(
     params: awsDashSdkLib.clientsS3Mod.S3Ns.GetBucketReplicationRequest,
@@ -1431,6 +1493,129 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Gets an object's current Legal Hold status.
+     */
+  def getObjectLegalHold(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLegalHoldOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets an object's current Legal Hold status.
+     */
+  def getObjectLegalHold(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLegalHoldOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLegalHoldOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets an object's current Legal Hold status.
+     */
+  def getObjectLegalHold(params: awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLegalHoldRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLegalHoldOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets an object's current Legal Hold status.
+     */
+  def getObjectLegalHold(
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLegalHoldRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLegalHoldOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLegalHoldOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the Object Lock configuration for a bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+     */
+  def getObjectLockConfiguration(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLockConfigurationOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the Object Lock configuration for a bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+     */
+  def getObjectLockConfiguration(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLockConfigurationOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLockConfigurationOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the Object Lock configuration for a bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+     */
+  def getObjectLockConfiguration(params: awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLockConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLockConfigurationOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the Object Lock configuration for a bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+     */
+  def getObjectLockConfiguration(
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLockConfigurationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLockConfigurationOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectLockConfigurationOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves an object's retention settings.
+     */
+  def getObjectRetention(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectRetentionOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves an object's retention settings.
+     */
+  def getObjectRetention(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectRetentionOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectRetentionOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves an object's retention settings.
+     */
+  def getObjectRetention(params: awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectRetentionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectRetentionOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves an object's retention settings.
+     */
+  def getObjectRetention(
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectRetentionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectRetentionOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectRetentionOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Returns the tag-set of an object.
      */
   def getObjectTagging(): awsDashSdkLib.libRequestMod.Request[
@@ -1510,6 +1695,47 @@ trait S3
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsS3Mod.S3Ns.GetObjectTorrentOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the PublicAccessBlock configuration for an Amazon S3 bucket.
+     */
+  def getPublicAccessBlock(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetPublicAccessBlockOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the PublicAccessBlock configuration for an Amazon S3 bucket.
+     */
+  def getPublicAccessBlock(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.GetPublicAccessBlockOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetPublicAccessBlockOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the PublicAccessBlock configuration for an Amazon S3 bucket.
+     */
+  def getPublicAccessBlock(params: awsDashSdkLib.clientsS3Mod.S3Ns.GetPublicAccessBlockRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetPublicAccessBlockOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves the PublicAccessBlock configuration for an Amazon S3 bucket.
+     */
+  def getPublicAccessBlock(
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.GetPublicAccessBlockRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.GetPublicAccessBlockOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.GetPublicAccessBlockOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1986,21 +2212,21 @@ trait S3
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Sets the cors configuration for a bucket.
+     * Sets the CORS configuration for a bucket.
      */
   def putBucketCors(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Sets the cors configuration for a bucket.
+     * Sets the CORS configuration for a bucket.
      */
   def putBucketCors(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Sets the cors configuration for a bucket.
+     * Sets the CORS configuration for a bucket.
      */
   def putBucketCors(params: awsDashSdkLib.clientsS3Mod.S3Ns.PutBucketCorsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Sets the cors configuration for a bucket.
+     * Sets the CORS configuration for a bucket.
      */
   def putBucketCors(
     params: awsDashSdkLib.clientsS3Mod.S3Ns.PutBucketCorsRequest,
@@ -2196,21 +2422,21 @@ trait S3
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     *  Creates a new replication configuration (or replaces an existing one, if present). For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
+     *  Creates a replication configuration or replaces an existing one. For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
      */
   def putBucketReplication(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     *  Creates a new replication configuration (or replaces an existing one, if present). For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
+     *  Creates a replication configuration or replaces an existing one. For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
      */
   def putBucketReplication(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     *  Creates a new replication configuration (or replaces an existing one, if present). For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
+     *  Creates a replication configuration or replaces an existing one. For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
      */
   def putBucketReplication(params: awsDashSdkLib.clientsS3Mod.S3Ns.PutBucketReplicationRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     *  Creates a new replication configuration (or replaces an existing one, if present). For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
+     *  Creates a replication configuration or replaces an existing one. For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
      */
   def putBucketReplication(
     params: awsDashSdkLib.clientsS3Mod.S3Ns.PutBucketReplicationRequest,
@@ -2383,6 +2609,129 @@ trait S3
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Applies a Legal Hold configuration to the specified object.
+     */
+  def putObjectLegalHold(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLegalHoldOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Applies a Legal Hold configuration to the specified object.
+     */
+  def putObjectLegalHold(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLegalHoldOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLegalHoldOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Applies a Legal Hold configuration to the specified object.
+     */
+  def putObjectLegalHold(params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLegalHoldRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLegalHoldOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Applies a Legal Hold configuration to the specified object.
+     */
+  def putObjectLegalHold(
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLegalHoldRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLegalHoldOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLegalHoldOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Places an Object Lock configuration on the specified bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+     */
+  def putObjectLockConfiguration(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLockConfigurationOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Places an Object Lock configuration on the specified bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+     */
+  def putObjectLockConfiguration(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLockConfigurationOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLockConfigurationOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Places an Object Lock configuration on the specified bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+     */
+  def putObjectLockConfiguration(params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLockConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLockConfigurationOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Places an Object Lock configuration on the specified bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+     */
+  def putObjectLockConfiguration(
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLockConfigurationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLockConfigurationOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectLockConfigurationOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Places an Object Retention configuration on an object.
+     */
+  def putObjectRetention(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRetentionOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Places an Object Retention configuration on an object.
+     */
+  def putObjectRetention(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRetentionOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRetentionOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Places an Object Retention configuration on an object.
+     */
+  def putObjectRetention(params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRetentionRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRetentionOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Places an Object Retention configuration on an object.
+     */
+  def putObjectRetention(
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRetentionRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRetentionOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectRetentionOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Sets the supplied tag-set to an object that already exists in a bucket
      */
   def putObjectTagging(): awsDashSdkLib.libRequestMod.Request[
@@ -2423,6 +2772,27 @@ trait S3
     awsDashSdkLib.clientsS3Mod.S3Ns.PutObjectTaggingOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
+  /**
+     * Creates or modifies the PublicAccessBlock configuration for an Amazon S3 bucket.
+     */
+  def putPublicAccessBlock(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Creates or modifies the PublicAccessBlock configuration for an Amazon S3 bucket.
+     */
+  def putPublicAccessBlock(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Creates or modifies the PublicAccessBlock configuration for an Amazon S3 bucket.
+     */
+  def putPublicAccessBlock(params: awsDashSdkLib.clientsS3Mod.S3Ns.PutPublicAccessBlockRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Creates or modifies the PublicAccessBlock configuration for an Amazon S3 bucket.
+     */
+  def putPublicAccessBlock(
+    params: awsDashSdkLib.clientsS3Mod.S3Ns.PutPublicAccessBlockRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
      * Restores an archived copy of an object back into Amazon S3
      */

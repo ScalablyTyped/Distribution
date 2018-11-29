@@ -13,6 +13,7 @@ object ObjectFlags extends js.Object {
   /* 3 */ val ClassOrInterface: typescriptLib.typescriptMod.tsNs.ObjectFlags.ClassOrInterface with scala.Double = js.native
   /* 1024 */ val ContainsSpread: typescriptLib.typescriptMod.tsNs.ObjectFlags.ContainsSpread with scala.Double = js.native
   /* 256 */ val EvolvingArray: typescriptLib.typescriptMod.tsNs.ObjectFlags.EvolvingArray with scala.Double = js.native
+  /* 32768 */ val FreshLiteral: typescriptLib.typescriptMod.tsNs.ObjectFlags.FreshLiteral with scala.Double = js.native
   /* 64 */ val Instantiated: typescriptLib.typescriptMod.tsNs.ObjectFlags.Instantiated with scala.Double = js.native
   /* 2 */ val Interface: typescriptLib.typescriptMod.tsNs.ObjectFlags.Interface with scala.Double = js.native
   /* 16384 */ val JSLiteral: typescriptLib.typescriptMod.tsNs.ObjectFlags.JSLiteral with scala.Double = js.native

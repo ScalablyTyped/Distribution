@@ -40,15 +40,19 @@ object StylingIndex extends js.Object {
     extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingIndex
   
   @js.native
+  sealed trait PlayerBuilderIndexOffset
+    extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingIndex
+  
+  @js.native
   sealed trait PlayerContext
     extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingIndex
   
   @js.native
-  sealed trait PreviousMultiClassValue
+  sealed trait PreviousMultiStyleValue
     extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingIndex
   
   @js.native
-  sealed trait PreviousMultiStyleValue
+  sealed trait PreviousOrCachedMultiClassValue
     extends atAngularCoreLib.srcRender3InterfacesStylingMod.StylingIndex
   
   @js.native
@@ -78,12 +82,13 @@ object StylingIndex extends js.Object {
   /* 0 */ val FlagsOffset: FlagsOffset with scala.Double = js.native
   /* 2 */ val InitialStylesPosition: InitialStylesPosition with scala.Double = js.native
   /* 3 */ val MasterFlagPosition: MasterFlagPosition with scala.Double = js.native
+  /* 3 */ val PlayerBuilderIndexOffset: PlayerBuilderIndexOffset with scala.Double = js.native
   /* 0 */ val PlayerContext: PlayerContext with scala.Double = js.native
-  /* 6 */ val PreviousMultiClassValue: PreviousMultiClassValue with scala.Double = js.native
   /* 7 */ val PreviousMultiStyleValue: PreviousMultiStyleValue with scala.Double = js.native
+  /* 6 */ val PreviousOrCachedMultiClassValue: PreviousOrCachedMultiClassValue with scala.Double = js.native
   /* 1 */ val PropertyOffset: PropertyOffset with scala.Double = js.native
   /* 8 */ val SingleStylesStartPosition: SingleStylesStartPosition with scala.Double = js.native
-  /* 3 */ val Size: Size with scala.Double = js.native
+  /* 4 */ val Size: Size with scala.Double = js.native
   /* 1 */ val StyleSanitizerPosition: StyleSanitizerPosition with scala.Double = js.native
   /* 2 */ val ValueOffset: ValueOffset with scala.Double = js.native
   @JSBracketAccess

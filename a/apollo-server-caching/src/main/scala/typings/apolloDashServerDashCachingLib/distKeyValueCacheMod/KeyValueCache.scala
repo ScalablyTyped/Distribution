@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait KeyValueCache extends js.Object {
+  def delete(key: java.lang.String): stdLib.Promise[scala.Boolean | scala.Unit] = js.native
   def get(key: java.lang.String): stdLib.Promise[js.UndefOr[java.lang.String]] = js.native
   def set(key: java.lang.String, value: java.lang.String): stdLib.Promise[scala.Unit] = js.native
   def set(key: java.lang.String, value: java.lang.String, options: apolloDashServerDashCachingLib.Anon_Ttl): stdLib.Promise[scala.Unit] = js.native

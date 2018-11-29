@@ -140,7 +140,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_animation(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animation): java.lang.String | scala.Null = js.native
+  def css_animation(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animation): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -159,7 +159,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_animationDelay(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationDelay): java.lang.String | scala.Null = js.native
+  def css_animationDelay(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationDelay): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -173,20 +173,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_animationDelay_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationDelay): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_animationDirection(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationDirection): java.lang.String | scala.Null = js.native
+  def css_animationDirection(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationDirection): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -200,20 +192,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_animationDirection_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationDirection): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_animationDuration(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationDuration): java.lang.String | scala.Null = js.native
+  def css_animationDuration(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationDuration): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -227,20 +211,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_animationDuration_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationDuration): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_animationFillMode(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationFillMode): java.lang.String | scala.Null = js.native
+  def css_animationFillMode(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationFillMode): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -254,20 +230,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_animationFillMode_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationFillMode): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_animationIterationCount(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationIterationCount): java.lang.String | scala.Null = js.native
+  def css_animationIterationCount(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationIterationCount): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -281,20 +249,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_animationIterationCount_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationIterationCount): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_animationName(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationName): java.lang.String | scala.Null = js.native
+  def css_animationName(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationName): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -308,20 +268,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_animationName_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationName): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_animationPlayState(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationPlayState): java.lang.String | scala.Null = js.native
+  def css_animationPlayState(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationPlayState): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -335,20 +287,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_animationPlayState_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationPlayState): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_animationTimingFunction(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationTimingFunction): java.lang.String | scala.Null = js.native
+  def css_animationTimingFunction(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationTimingFunction): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -361,22 +305,6 @@ trait Utils extends js.Object {
     prop: sortablejsLib.sortablejsLibStrings.animationTimingFunction,
     value: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_animationTimingFunction_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animationTimingFunction): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_animation_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.animation): scala.Unit = js.native
   /**
            * Get the value of style properties.
            * @param element an HTMLElement.
@@ -6655,6 +6583,25 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
+  def css_scrollBehavior(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.scrollBehavior): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_scrollBehavior(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.scrollBehavior,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
   def css_stopColor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.stopColor): java.lang.String | scala.Null = js.native
   /**
            * Set one CSS property.
@@ -7326,7 +7273,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_touchAction(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.touchAction): java.lang.String | scala.Null = js.native
+  def css_touchAction(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.touchAction): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7339,14 +7286,6 @@ trait Utils extends js.Object {
     prop: sortablejsLib.sortablejsLibStrings.touchAction,
     value: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_touchAction_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.touchAction): scala.Unit = js.native
   /**
            * Get the value of style properties.
            * @param element an HTMLElement.
@@ -7434,7 +7373,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_transition(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transition): java.lang.String | scala.Null = js.native
+  def css_transition(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transition): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7453,7 +7392,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_transitionDelay(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionDelay): java.lang.String | scala.Null = js.native
+  def css_transitionDelay(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionDelay): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7467,20 +7406,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_transitionDelay_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionDelay): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_transitionDuration(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionDuration): java.lang.String | scala.Null = js.native
+  def css_transitionDuration(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionDuration): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7494,20 +7425,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_transitionDuration_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionDuration): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_transitionProperty(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionProperty): java.lang.String | scala.Null = js.native
+  def css_transitionProperty(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionProperty): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7521,20 +7444,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_transitionProperty_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionProperty): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_transitionTimingFunction(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionTimingFunction): java.lang.String | scala.Null = js.native
+  def css_transitionTimingFunction(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionTimingFunction): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7547,22 +7462,6 @@ trait Utils extends js.Object {
     prop: sortablejsLib.sortablejsLibStrings.transitionTimingFunction,
     value: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_transitionTimingFunction_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transitionTimingFunction): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_transition_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.transition): scala.Unit = js.native
   /**
            * Get the value of style properties.
            * @param element an HTMLElement.
@@ -7704,7 +7603,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAlignContent(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAlignContent): java.lang.String | scala.Null = js.native
+  def css_webkitAlignContent(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAlignContent): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7718,20 +7617,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAlignContent_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAlignContent): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAlignItems(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAlignItems): java.lang.String | scala.Null = js.native
+  def css_webkitAlignItems(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAlignItems): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7745,20 +7636,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAlignItems_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAlignItems): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAlignSelf(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAlignSelf): java.lang.String | scala.Null = js.native
+  def css_webkitAlignSelf(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAlignSelf): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7772,20 +7655,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAlignSelf_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAlignSelf): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAnimation(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimation): java.lang.String | scala.Null = js.native
+  def css_webkitAnimation(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimation): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7804,7 +7679,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAnimationDelay(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationDelay): java.lang.String | scala.Null = js.native
+  def css_webkitAnimationDelay(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationDelay): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7818,20 +7693,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAnimationDelay_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationDelay): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAnimationDirection(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationDirection): java.lang.String | scala.Null = js.native
+  def css_webkitAnimationDirection(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationDirection): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7845,20 +7712,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAnimationDirection_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationDirection): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAnimationDuration(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationDuration): java.lang.String | scala.Null = js.native
+  def css_webkitAnimationDuration(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationDuration): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7872,20 +7731,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAnimationDuration_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationDuration): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAnimationFillMode(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationFillMode): java.lang.String | scala.Null = js.native
+  def css_webkitAnimationFillMode(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationFillMode): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7899,14 +7750,6 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAnimationFillMode_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationFillMode): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
@@ -7915,7 +7758,7 @@ trait Utils extends js.Object {
   def css_webkitAnimationIterationCount(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.webkitAnimationIterationCount
-  ): java.lang.String | scala.Null = js.native
+  ): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7929,23 +7772,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAnimationIterationCount_Unit(
-    element: stdLib.HTMLElement,
-    prop: sortablejsLib.sortablejsLibStrings.webkitAnimationIterationCount
-  ): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAnimationName(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationName): java.lang.String | scala.Null = js.native
+  def css_webkitAnimationName(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationName): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7959,20 +7791,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAnimationName_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationName): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAnimationPlayState(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationPlayState): java.lang.String | scala.Null = js.native
+  def css_webkitAnimationPlayState(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationPlayState): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -7986,14 +7810,6 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAnimationPlayState_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimationPlayState): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
@@ -8002,7 +7818,7 @@ trait Utils extends js.Object {
   def css_webkitAnimationTimingFunction(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.webkitAnimationTimingFunction
-  ): java.lang.String | scala.Null = js.native
+  ): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8016,31 +7832,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAnimationTimingFunction_Unit(
-    element: stdLib.HTMLElement,
-    prop: sortablejsLib.sortablejsLibStrings.webkitAnimationTimingFunction
-  ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAnimation_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAnimation): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitAppearance(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAppearance): java.lang.String | scala.Null = js.native
+  def css_webkitAppearance(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAppearance): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8054,20 +7851,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitAppearance_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitAppearance): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBackfaceVisibility(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackfaceVisibility): java.lang.String | scala.Null = js.native
+  def css_webkitBackfaceVisibility(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackfaceVisibility): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8081,20 +7870,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBackfaceVisibility_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackfaceVisibility): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBackgroundClip(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackgroundClip): java.lang.String | scala.Null = js.native
+  def css_webkitBackgroundClip(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackgroundClip): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8108,20 +7889,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBackgroundClip_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackgroundClip): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBackgroundOrigin(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackgroundOrigin): java.lang.String | scala.Null = js.native
+  def css_webkitBackgroundOrigin(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackgroundOrigin): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8135,20 +7908,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBackgroundOrigin_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackgroundOrigin): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBackgroundSize(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackgroundSize): java.lang.String | scala.Null = js.native
+  def css_webkitBackgroundSize(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackgroundSize): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8162,20 +7927,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBackgroundSize_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBackgroundSize): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBorderBottomLeftRadius(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderBottomLeftRadius): java.lang.String | scala.Null = js.native
+  def css_webkitBorderBottomLeftRadius(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderBottomLeftRadius): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8189,14 +7946,6 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBorderBottomLeftRadius_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderBottomLeftRadius): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
@@ -8205,7 +7954,7 @@ trait Utils extends js.Object {
   def css_webkitBorderBottomRightRadius(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.webkitBorderBottomRightRadius
-  ): java.lang.String | scala.Null = js.native
+  ): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8217,17 +7966,6 @@ trait Utils extends js.Object {
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.webkitBorderBottomRightRadius,
     value: java.lang.String
-  ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBorderBottomRightRadius_Unit(
-    element: stdLib.HTMLElement,
-    prop: sortablejsLib.sortablejsLibStrings.webkitBorderBottomRightRadius
   ): scala.Unit = js.native
   /**
            * Get the value of style properties.
@@ -8262,7 +8000,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBorderRadius(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderRadius): java.lang.String | scala.Null = js.native
+  def css_webkitBorderRadius(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderRadius): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8276,20 +8014,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBorderRadius_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderRadius): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBorderTopLeftRadius(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderTopLeftRadius): java.lang.String | scala.Null = js.native
+  def css_webkitBorderTopLeftRadius(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderTopLeftRadius): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8303,20 +8033,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBorderTopLeftRadius_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderTopLeftRadius): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBorderTopRightRadius(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderTopRightRadius): java.lang.String | scala.Null = js.native
+  def css_webkitBorderTopRightRadius(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderTopRightRadius): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8330,20 +8052,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBorderTopRightRadius_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBorderTopRightRadius): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBoxAlign(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxAlign): java.lang.String | scala.Null = js.native
+  def css_webkitBoxAlign(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxAlign): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8356,14 +8070,6 @@ trait Utils extends js.Object {
     prop: sortablejsLib.sortablejsLibStrings.webkitBoxAlign,
     value: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBoxAlign_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxAlign): scala.Unit = js.native
   /**
            * Get the value of style properties.
            * @param element an HTMLElement.
@@ -8397,7 +8103,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBoxFlex(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxFlex): java.lang.String | scala.Null = js.native
+  def css_webkitBoxFlex(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxFlex): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8411,20 +8117,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBoxFlex_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxFlex): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBoxOrdinalGroup(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxOrdinalGroup): java.lang.String | scala.Null = js.native
+  def css_webkitBoxOrdinalGroup(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxOrdinalGroup): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8437,14 +8135,6 @@ trait Utils extends js.Object {
     prop: sortablejsLib.sortablejsLibStrings.webkitBoxOrdinalGroup,
     value: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBoxOrdinalGroup_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxOrdinalGroup): scala.Unit = js.native
   /**
            * Get the value of style properties.
            * @param element an HTMLElement.
@@ -8478,7 +8168,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBoxPack(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxPack): java.lang.String | scala.Null = js.native
+  def css_webkitBoxPack(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxPack): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8492,20 +8182,31 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitBoxShadow(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxShadow): java.lang.String = js.native
+  /**
            * Set one CSS property.
            * @param element an HTMLElement.
            * @param prop a property key.
            * @param value a property value.
            */
   @JSName("css")
-  def css_webkitBoxPack_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxPack): scala.Unit = js.native
+  def css_webkitBoxShadow(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitBoxShadow,
+    value: java.lang.String
+  ): scala.Unit = js.native
   /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitBoxSizing(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxSizing): java.lang.String | scala.Null = js.native
+  def css_webkitBoxSizing(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxSizing): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8518,14 +8219,6 @@ trait Utils extends js.Object {
     prop: sortablejsLib.sortablejsLibStrings.webkitBoxSizing,
     value: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitBoxSizing_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitBoxSizing): scala.Unit = js.native
   /**
            * Get the value of style properties.
            * @param element an HTMLElement.
@@ -8816,7 +8509,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitFilter(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFilter): java.lang.String | scala.Null = js.native
+  def css_webkitFilter(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFilter): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8830,20 +8523,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitFilter_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFilter): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitFlex(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlex): java.lang.String | scala.Null = js.native
+  def css_webkitFlex(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlex): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8862,7 +8547,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitFlexBasis(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexBasis): java.lang.String | scala.Null = js.native
+  def css_webkitFlexBasis(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexBasis): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8876,20 +8561,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitFlexBasis_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexBasis): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitFlexDirection(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexDirection): java.lang.String | scala.Null = js.native
+  def css_webkitFlexDirection(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexDirection): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8903,20 +8580,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitFlexDirection_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexDirection): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitFlexFlow(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexFlow): java.lang.String | scala.Null = js.native
+  def css_webkitFlexFlow(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexFlow): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8930,20 +8599,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitFlexFlow_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexFlow): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitFlexGrow(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexGrow): java.lang.String | scala.Null = js.native
+  def css_webkitFlexGrow(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexGrow): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8957,20 +8618,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitFlexGrow_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexGrow): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitFlexShrink(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexShrink): java.lang.String | scala.Null = js.native
+  def css_webkitFlexShrink(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexShrink): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -8984,20 +8637,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitFlexShrink_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexShrink): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitFlexWrap(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexWrap): java.lang.String | scala.Null = js.native
+  def css_webkitFlexWrap(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexWrap): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9011,28 +8656,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitFlexWrap_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlexWrap): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitFlex_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitFlex): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitJustifyContent(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitJustifyContent): java.lang.String | scala.Null = js.native
+  def css_webkitJustifyContent(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitJustifyContent): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9046,20 +8675,278 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMask(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMask): java.lang.String = js.native
+  /**
            * Set one CSS property.
            * @param element an HTMLElement.
            * @param prop a property key.
            * @param value a property value.
            */
   @JSName("css")
-  def css_webkitJustifyContent_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitJustifyContent): scala.Unit = js.native
+  def css_webkitMask(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMask,
+    value: java.lang.String
+  ): scala.Unit = js.native
   /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitOrder(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitOrder): java.lang.String | scala.Null = js.native
+  def css_webkitMaskBoxImage(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImage): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImage(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImage,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImageOutset(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImageOutset): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImageOutset(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImageOutset,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImageRepeat(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImageRepeat): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImageRepeat(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImageRepeat,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImageSlice(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImageSlice): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImageSlice(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImageSlice,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImageSource(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImageSource): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImageSource(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImageSource,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImageWidth(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImageWidth): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskBoxImageWidth(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskBoxImageWidth,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskClip(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskClip): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskClip(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskClip,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskComposite(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskComposite): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskComposite(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskComposite,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskImage(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskImage): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskImage(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskImage,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskOrigin(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskOrigin): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskOrigin(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskOrigin,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskPosition(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskPosition): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskPosition(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskPosition,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskRepeat(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskRepeat): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskRepeat(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskRepeat,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitMaskSize(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitMaskSize): java.lang.String = js.native
+  /**
+           * Set one CSS property.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           * @param value a property value.
+           */
+  @JSName("css")
+  def css_webkitMaskSize(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.webkitMaskSize,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  /**
+           * Get the value of style properties.
+           * @param element an HTMLElement.
+           * @param prop a property key.
+           */
+  @JSName("css")
+  def css_webkitOrder(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitOrder): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9073,20 +8960,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitOrder_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitOrder): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitPerspective(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitPerspective): java.lang.String | scala.Null = js.native
+  def css_webkitPerspective(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitPerspective): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9105,7 +8984,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitPerspectiveOrigin(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitPerspectiveOrigin): java.lang.String | scala.Null = js.native
+  def css_webkitPerspectiveOrigin(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitPerspectiveOrigin): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9118,22 +8997,6 @@ trait Utils extends js.Object {
     prop: sortablejsLib.sortablejsLibStrings.webkitPerspectiveOrigin,
     value: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitPerspectiveOrigin_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitPerspectiveOrigin): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitPerspective_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitPerspective): scala.Unit = js.native
   /**
            * Get the value of style properties.
            * @param element an HTMLElement.
@@ -9167,7 +9030,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTextFillColor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextFillColor): java.lang.String | scala.Null = js.native
+  def css_webkitTextFillColor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextFillColor): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9181,20 +9044,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTextFillColor_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextFillColor): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTextSizeAdjust(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextSizeAdjust): js.Any = js.native
+  def css_webkitTextSizeAdjust(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextSizeAdjust): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9205,7 +9060,7 @@ trait Utils extends js.Object {
   def css_webkitTextSizeAdjust(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.webkitTextSizeAdjust,
-    value: js.Any
+    value: java.lang.String
   ): scala.Unit = js.native
   /**
            * Get the value of style properties.
@@ -9213,7 +9068,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTextStroke(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextStroke): java.lang.String | scala.Null = js.native
+  def css_webkitTextStroke(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextStroke): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9232,7 +9087,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTextStrokeColor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextStrokeColor): java.lang.String | scala.Null = js.native
+  def css_webkitTextStrokeColor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextStrokeColor): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9246,20 +9101,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTextStrokeColor_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextStrokeColor): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTextStrokeWidth(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextStrokeWidth): java.lang.String | scala.Null = js.native
+  def css_webkitTextStrokeWidth(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextStrokeWidth): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9273,28 +9120,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTextStrokeWidth_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextStrokeWidth): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTextStroke_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTextStroke): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTransform(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransform): java.lang.String | scala.Null = js.native
+  def css_webkitTransform(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransform): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9313,7 +9144,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTransformOrigin(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransformOrigin): java.lang.String | scala.Null = js.native
+  def css_webkitTransformOrigin(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransformOrigin): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9327,20 +9158,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTransformOrigin_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransformOrigin): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTransformStyle(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransformStyle): java.lang.String | scala.Null = js.native
+  def css_webkitTransformStyle(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransformStyle): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9354,28 +9177,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTransformStyle_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransformStyle): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTransform_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransform): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTransition(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransition): java.lang.String | scala.Null = js.native
+  def css_webkitTransition(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransition): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9394,7 +9201,7 @@ trait Utils extends js.Object {
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTransitionDelay(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransitionDelay): java.lang.String | scala.Null = js.native
+  def css_webkitTransitionDelay(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransitionDelay): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9408,20 +9215,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTransitionDelay_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransitionDelay): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTransitionDuration(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransitionDuration): java.lang.String | scala.Null = js.native
+  def css_webkitTransitionDuration(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransitionDuration): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9435,20 +9234,12 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTransitionDuration_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransitionDuration): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
            */
   @JSName("css")
-  def css_webkitTransitionProperty(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransitionProperty): java.lang.String | scala.Null = js.native
+  def css_webkitTransitionProperty(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransitionProperty): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9462,14 +9253,6 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTransitionProperty_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransitionProperty): scala.Unit = js.native
-  /**
            * Get the value of style properties.
            * @param element an HTMLElement.
            * @param prop a property key.
@@ -9478,7 +9261,7 @@ trait Utils extends js.Object {
   def css_webkitTransitionTimingFunction(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.webkitTransitionTimingFunction
-  ): java.lang.String | scala.Null = js.native
+  ): java.lang.String = js.native
   /**
            * Set one CSS property.
            * @param element an HTMLElement.
@@ -9491,25 +9274,6 @@ trait Utils extends js.Object {
     prop: sortablejsLib.sortablejsLibStrings.webkitTransitionTimingFunction,
     value: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTransitionTimingFunction_Unit(
-    element: stdLib.HTMLElement,
-    prop: sortablejsLib.sortablejsLibStrings.webkitTransitionTimingFunction
-  ): scala.Unit = js.native
-  /**
-           * Set one CSS property.
-           * @param element an HTMLElement.
-           * @param prop a property key.
-           * @param value a property value.
-           */
-  @JSName("css")
-  def css_webkitTransition_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.webkitTransition): scala.Unit = js.native
   /**
            * Get the value of style properties.
            * @param element an HTMLElement.

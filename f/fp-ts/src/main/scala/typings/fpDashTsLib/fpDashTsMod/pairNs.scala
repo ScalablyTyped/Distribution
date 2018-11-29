@@ -31,6 +31,6 @@ object pairNs extends js.Object {
     /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libPairMod.Pair[js.Any]]
   ] = js.native
-  val pair: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.libPairMod.URI] with fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.libPairMod.URI] with fpDashTsLib.libTraversableMod.Traversable1[fpDashTsLib.libPairMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libPairMod.URI] = js.native
+  val pair: fpDashTsLib.libApplicativeMod.Applicative1[fpDashTsLib.libPairMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libPairMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libPairMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libPairMod.URI] = js.native
 }
 

@@ -93,7 +93,7 @@ trait Protocol extends EventEmitter {
     handler: js.Function2[
       /* request */ InterceptStreamProtocolRequest, 
       /* callback */ js.Function1[
-        /* stream */ js.UndefOr[stdLib.ReadableStream | StreamProtocolResponse], 
+        /* stream */ js.UndefOr[stdLib.ReadableStream[_] | StreamProtocolResponse], 
         scala.Unit
       ], 
       scala.Unit
@@ -108,7 +108,7 @@ trait Protocol extends EventEmitter {
     handler: js.Function2[
       /* request */ InterceptStreamProtocolRequest, 
       /* callback */ js.Function1[
-        /* stream */ js.UndefOr[stdLib.ReadableStream | StreamProtocolResponse], 
+        /* stream */ js.UndefOr[stdLib.ReadableStream[_] | StreamProtocolResponse], 
         scala.Unit
       ], 
       scala.Unit
@@ -302,7 +302,7 @@ trait Protocol extends EventEmitter {
     handler: js.Function2[
       /* request */ RegisterStreamProtocolRequest, 
       /* callback */ js.Function1[
-        /* stream */ js.UndefOr[stdLib.ReadableStream | StreamProtocolResponse], 
+        /* stream */ js.UndefOr[stdLib.ReadableStream[_] | StreamProtocolResponse], 
         scala.Unit
       ], 
       scala.Unit
@@ -321,7 +321,7 @@ trait Protocol extends EventEmitter {
     handler: js.Function2[
       /* request */ RegisterStreamProtocolRequest, 
       /* callback */ js.Function1[
-        /* stream */ js.UndefOr[stdLib.ReadableStream | StreamProtocolResponse], 
+        /* stream */ js.UndefOr[stdLib.ReadableStream[_] | StreamProtocolResponse], 
         scala.Unit
       ], 
       scala.Unit

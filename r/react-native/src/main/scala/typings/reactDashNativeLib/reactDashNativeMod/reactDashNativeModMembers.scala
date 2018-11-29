@@ -79,33 +79,6 @@ object reactDashNativeModMembers extends js.Object {
   ): scala.Null | scala.Double = js.native
   def findNodeHandle(componentOrHandle: scala.Double): scala.Null | scala.Double = js.native
   def processColor(color: js.Any): scala.Double = js.native
-  def requireNativeComponent[P, NP](viewName: java.lang.String): reactLib.reactMod.ReactNs.ComponentClass[
-    (/* InlineNestedIdentityAlias: stdLib.Partial*/ propDashTypesLib.propDashTypesMod.InferProps[
-      propDashTypesLib.propDashTypesMod.ValidationMap[
-        (/* InlineNestedIdentityAlias: stdLib.Partial*/ propDashTypesLib.propDashTypesMod.InferProps[propDashTypesLib.propDashTypesMod.ValidationMap[P]]) with reactDashNativeLib.reactDashNativeLibStrings.requireNativeComponent with js.Any
-      ]
-    ]) with reactDashNativeLib.reactDashNativeLibStrings.requireNativeComponent with js.Any, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
-  def requireNativeComponent[P, NP](viewName: java.lang.String, componentInterface: ComponentInterface[P]): reactLib.reactMod.ReactNs.ComponentClass[
-    (/* InlineNestedIdentityAlias: stdLib.Partial*/ propDashTypesLib.propDashTypesMod.InferProps[
-      propDashTypesLib.propDashTypesMod.ValidationMap[
-        (/* InlineNestedIdentityAlias: stdLib.Partial*/ propDashTypesLib.propDashTypesMod.InferProps[propDashTypesLib.propDashTypesMod.ValidationMap[P]]) with reactDashNativeLib.reactDashNativeLibStrings.requireNativeComponent with js.Any
-      ]
-    ]) with reactDashNativeLib.reactDashNativeLibStrings.requireNativeComponent with js.Any, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
-  def requireNativeComponent[P, NP](
-    viewName: java.lang.String,
-    componentInterface: ComponentInterface[P],
-    extraConfig: reactDashNativeLib.Anon_NativeOnly[NP]
-  ): reactLib.reactMod.ReactNs.ComponentClass[
-    (/* InlineNestedIdentityAlias: stdLib.Partial*/ propDashTypesLib.propDashTypesMod.InferProps[
-      propDashTypesLib.propDashTypesMod.ValidationMap[
-        (/* InlineNestedIdentityAlias: stdLib.Partial*/ propDashTypesLib.propDashTypesMod.InferProps[propDashTypesLib.propDashTypesMod.ValidationMap[P]]) with reactDashNativeLib.reactDashNativeLibStrings.requireNativeComponent with js.Any
-      ]
-    ]) with reactDashNativeLib.reactDashNativeLibStrings.requireNativeComponent with js.Any, 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
+  def requireNativeComponent(viewName: java.lang.String): reactLib.reactMod.ReactNs.ReactType[_] = js.native
 }
 

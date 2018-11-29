@@ -40,6 +40,10 @@ class Range protected () extends js.Object {
   /**
        * Test if this range equals other.
        */
+  def equalsRange(): scala.Boolean = js.native
+  /**
+       * Test if this range equals other.
+       */
   def equalsRange(other: IRange): scala.Boolean = js.native
   /**
        * Return the end position (which will be after or equal to the start position)
@@ -52,7 +56,7 @@ class Range protected () extends js.Object {
   /**
        * A intersection of the two ranges.
        */
-  def intersectRanges(range: IRange): Range = js.native
+  def intersectRanges(range: IRange): Range | scala.Null = js.native
   /**
        * Test if this range is empty.
        */
@@ -105,10 +109,30 @@ object Range extends js.Object {
        * A function that compares ranges, useful for sorting ranges
        * It will first compare ranges on the startPosition and then on the endPosition
        */
+  def compareRangesUsingStarts(): scala.Double = js.native
+  /**
+       * A function that compares ranges, useful for sorting ranges
+       * It will first compare ranges on the startPosition and then on the endPosition
+       */
+  def compareRangesUsingStarts(a: js.UndefOr[scala.Nothing], b: monacoDashEditorLib.monacoDashEditorMod.IRange): scala.Double = js.native
+  /**
+       * A function that compares ranges, useful for sorting ranges
+       * It will first compare ranges on the startPosition and then on the endPosition
+       */
+  def compareRangesUsingStarts(a: monacoDashEditorLib.monacoDashEditorMod.IRange): scala.Double = js.native
+  /**
+       * A function that compares ranges, useful for sorting ranges
+       * It will first compare ranges on the startPosition and then on the endPosition
+       */
   def compareRangesUsingStarts(
     a: monacoDashEditorLib.monacoDashEditorMod.IRange,
     b: monacoDashEditorLib.monacoDashEditorMod.IRange
   ): scala.Double = js.native
+  /**
+       * A function that compares ranges, useful for sorting ranges
+       * It will first compare ranges on the startPosition and then on the endPosition
+       */
+  def compareRangesUsingStarts(a: scala.Null, b: monacoDashEditorLib.monacoDashEditorMod.IRange): scala.Double = js.native
   /**
        * Test if `position` is in `range`. If the position is at the edges, will return true.
        */
@@ -126,10 +150,22 @@ object Range extends js.Object {
   /**
        * Test if range `a` equals `b`.
        */
+  def equalsRange(): scala.Boolean = js.native
+  /**
+       * Test if range `a` equals `b`.
+       */
+  def equalsRange(a: monacoDashEditorLib.monacoDashEditorMod.IRange): scala.Boolean = js.native
+  /**
+       * Test if range `a` equals `b`.
+       */
   def equalsRange(
     a: monacoDashEditorLib.monacoDashEditorMod.IRange,
     b: monacoDashEditorLib.monacoDashEditorMod.IRange
   ): scala.Boolean = js.native
+  /**
+       * Test if range `a` equals `b`.
+       */
+  def equalsRange(a: scala.Null, b: monacoDashEditorLib.monacoDashEditorMod.IRange): scala.Boolean = js.native
   def fromPositions(start: monacoDashEditorLib.monacoDashEditorMod.IPosition): monacoDashEditorLib.monacoDashEditorMod.Range = js.native
   def fromPositions(
     start: monacoDashEditorLib.monacoDashEditorMod.IPosition,
@@ -141,7 +177,7 @@ object Range extends js.Object {
   def intersectRanges(
     a: monacoDashEditorLib.monacoDashEditorMod.IRange,
     b: monacoDashEditorLib.monacoDashEditorMod.IRange
-  ): monacoDashEditorLib.monacoDashEditorMod.Range = js.native
+  ): monacoDashEditorLib.monacoDashEditorMod.Range | scala.Null = js.native
   /**
        * Test if `range` is empty.
        */
@@ -153,6 +189,7 @@ object Range extends js.Object {
   /**
        * Create a `Range` from an `IRange`.
        */
+  def lift(): scala.Null = js.native
   def lift(range: monacoDashEditorLib.monacoDashEditorMod.IRange): monacoDashEditorLib.monacoDashEditorMod.Range = js.native
   /**
        * A reunion of the two ranges.

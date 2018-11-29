@@ -175,14 +175,14 @@ trait CodeBuild
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, enables AWS CodeBuild to begin automatically rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds will be created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you will be billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
+     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
      */
   def createWebhook(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.CreateWebhookOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, enables AWS CodeBuild to begin automatically rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds will be created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you will be billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
+     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
      */
   def createWebhook(
     callback: js.Function2[
@@ -195,14 +195,14 @@ trait CodeBuild
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, enables AWS CodeBuild to begin automatically rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds will be created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you will be billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
+     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
      */
   def createWebhook(params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.CreateWebhookInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.CreateWebhookOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, enables AWS CodeBuild to begin automatically rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds will be created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you will be billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
+     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the source code every time a code change is pushed to the repository.  If you enable webhooks for an AWS CodeBuild project, and the project is used as a build step in AWS CodePipeline, then two identical builds are created for each commit. One build is triggered through webhooks, and one through AWS CodePipeline. Because billing is on a per-build basis, you are billed for both builds. Therefore, if you are using AWS CodePipeline, we recommend that you disable webhooks in AWS CodeBuild. In the AWS CodeBuild console, clear the Webhook box. For more information, see step 5 in Change a Build Project's Settings. 
      */
   def createWebhook(
     params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.CreateWebhookInput,
@@ -257,14 +257,14 @@ trait CodeBuild
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, stops AWS CodeBuild from automatically rebuilding the source code every time a code change is pushed to the repository.
+     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
      */
   def deleteWebhook(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteWebhookOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, stops AWS CodeBuild from automatically rebuilding the source code every time a code change is pushed to the repository.
+     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
      */
   def deleteWebhook(
     callback: js.Function2[
@@ -277,14 +277,14 @@ trait CodeBuild
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, stops AWS CodeBuild from automatically rebuilding the source code every time a code change is pushed to the repository.
+     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
      */
   def deleteWebhook(params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteWebhookInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteWebhookOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub repository, stops AWS CodeBuild from automatically rebuilding the source code every time a code change is pushed to the repository.
+     * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
      */
   def deleteWebhook(
     params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteWebhookInput,
@@ -626,14 +626,14 @@ trait CodeBuild
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Updates the webhook associated with an AWS CodeBuild build project. 
+     *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
      */
   def updateWebhook(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.UpdateWebhookOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Updates the webhook associated with an AWS CodeBuild build project. 
+     *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
      */
   def updateWebhook(
     callback: js.Function2[
@@ -646,14 +646,14 @@ trait CodeBuild
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Updates the webhook associated with an AWS CodeBuild build project. 
+     *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
      */
   def updateWebhook(params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.UpdateWebhookInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.UpdateWebhookOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     *  Updates the webhook associated with an AWS CodeBuild build project. 
+     *  Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  
      */
   def updateWebhook(
     params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.UpdateWebhookInput,

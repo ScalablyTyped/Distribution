@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core/src/render3", JSImport.Namespace)
 @js.native
 object srcRender3ModMembers extends js.Object {
-  val NO_CHANGE: atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
+  val NO_CHANGE: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
   val QueryList: ScalablyTyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[js.Object]] = js.native
   val WRAP_RENDERER_FACTORY2: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[
     js.Function1[
@@ -21,8 +21,18 @@ object srcRender3ModMembers extends js.Object {
   def InheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[_]): scala.Unit = js.native
   def LifecycleHooksFeature(component: js.Any, `def`: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
   def NgOnChangesFeature[T](definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[T]): scala.Unit = js.native
-  def PublicFeature[T](definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[T]): scala.Unit = js.native
-  def bind[T](value: T): T | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
+  def ProvidersFeature[T](providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider]): js.Function1[
+    /* definition */ atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[T], 
+    scala.Unit
+  ] = js.native
+  def ProvidersFeature[T](
+    providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider],
+    viewProviders: js.Array[atAngularCoreLib.srcDiProviderMod.Provider]
+  ): js.Function1[
+    /* definition */ atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[T], 
+    scala.Unit
+  ] = js.native
+  def bind[T](value: T): T | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
   def container(index: scala.Double): scala.Unit = js.native
   def containerRefreshEnd(): scala.Unit = js.native
   def containerRefreshStart(index: scala.Double): scala.Unit = js.native
@@ -36,10 +46,13 @@ object srcRender3ModMembers extends js.Object {
   def directiveInject[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T = js.native
   def directiveInject[T](
     token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T],
-    flags: atAngularCoreLib.srcDiInjectorMod.InjectFlags
+    flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
   ): T = js.native
   def directiveInject[T](token: atAngularCoreLib.srcTypeMod.Type[T]): T = js.native
-  def directiveInject[T](token: atAngularCoreLib.srcTypeMod.Type[T], flags: atAngularCoreLib.srcDiInjectorMod.InjectFlags): T = js.native
+  def directiveInject[T](
+    token: atAngularCoreLib.srcTypeMod.Type[T],
+    flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
+  ): T = js.native
   def disableBindings(): scala.Unit = js.native
   def element(index: scala.Double, name: java.lang.String): scala.Unit = js.native
   def element(
@@ -64,14 +77,21 @@ object srcRender3ModMembers extends js.Object {
     index: scala.Double,
     name: java.lang.String,
     value: js.Any,
-    sanitizer: atAngularCoreLib.srcRender3InstructionsMod.SanitizerFn
+    sanitizer: atAngularCoreLib.srcRender3InterfacesSanitizationMod.SanitizerFn
   ): scala.Unit = js.native
-  def elementClassProp[T](index: scala.Double, stylingIndex: scala.Double, value: T): scala.Unit = js.native
-  def elementClassProp[T](
+  def elementClassProp(
     index: scala.Double,
-    stylingIndex: scala.Double,
-    value: atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE
+    classIndex: scala.Double,
+    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory
   ): scala.Unit = js.native
+  def elementClassProp(
+    index: scala.Double,
+    classIndex: scala.Double,
+    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementClassProp(index: scala.Double, classIndex: scala.Double, value: scala.Boolean): scala.Unit = js.native
+  def elementClassProp(index: scala.Double, classIndex: scala.Double, value: scala.Boolean, directiveIndex: scala.Double): scala.Unit = js.native
   def elementContainerEnd(): scala.Unit = js.native
   def elementContainerStart(index: scala.Double): scala.Unit = js.native
   def elementContainerStart(index: scala.Double, attrs: atAngularCoreLib.srcRender3InterfacesNodeMod.TAttributes): scala.Unit = js.native
@@ -87,18 +107,18 @@ object srcRender3ModMembers extends js.Object {
     index: scala.Double,
     propName: java.lang.String,
     value: T,
-    sanitizer: atAngularCoreLib.srcRender3InstructionsMod.SanitizerFn
+    sanitizer: atAngularCoreLib.srcRender3InterfacesSanitizationMod.SanitizerFn
   ): scala.Unit = js.native
   def elementProperty[T](
     index: scala.Double,
     propName: java.lang.String,
-    value: atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE
+    value: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
   ): scala.Unit = js.native
   def elementProperty[T](
     index: scala.Double,
     propName: java.lang.String,
-    value: atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE,
-    sanitizer: atAngularCoreLib.srcRender3InstructionsMod.SanitizerFn
+    value: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    sanitizer: atAngularCoreLib.srcRender3InterfacesSanitizationMod.SanitizerFn
   ): scala.Unit = js.native
   def elementStart(index: scala.Double, name: java.lang.String): scala.Unit = js.native
   def elementStart(
@@ -118,17 +138,58 @@ object srcRender3ModMembers extends js.Object {
     attrs: scala.Null,
     localRefs: js.Array[java.lang.String]
   ): scala.Unit = js.native
-  def elementStyleProp[T](index: scala.Double, styleIndex: scala.Double): scala.Unit = js.native
-  def elementStyleProp[T](index: scala.Double, styleIndex: scala.Double, value: T): scala.Unit = js.native
-  def elementStyleProp[T](index: scala.Double, styleIndex: scala.Double, value: T, suffix: java.lang.String): scala.Unit = js.native
-  def elementStyleProp[T](index: scala.Double, styleIndex: scala.Double, value: scala.Null, suffix: java.lang.String): scala.Unit = js.native
-  def elementStyling[T](): scala.Unit = js.native
-  def elementStyling[T](
+  def elementStyleProp(index: scala.Double, styleIndex: scala.Double): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory
+  ): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory,
+    suffix: java.lang.String
+  ): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory,
+    suffix: java.lang.String,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String): scala.Unit = js.native
+  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: java.lang.String, suffix: java.lang.String): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: java.lang.String,
+    suffix: java.lang.String,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Double): scala.Unit = js.native
+  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Double, suffix: java.lang.String): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: scala.Double,
+    suffix: java.lang.String,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyleProp(index: scala.Double, styleIndex: scala.Double, value: scala.Null, suffix: java.lang.String): scala.Unit = js.native
+  def elementStyleProp(
+    index: scala.Double,
+    styleIndex: scala.Double,
+    value: scala.Null,
+    suffix: java.lang.String,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyling(): scala.Unit = js.native
+  def elementStyling(
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ]
   ): scala.Unit = js.native
-  def elementStyling[T](
+  def elementStyling(
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
@@ -136,7 +197,7 @@ object srcRender3ModMembers extends js.Object {
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ]
   ): scala.Unit = js.native
-  def elementStyling[T](
+  def elementStyling(
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
@@ -145,32 +206,97 @@ object srcRender3ModMembers extends js.Object {
     ],
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def elementStyling[T](
+  def elementStyling(
+    classDeclarations: js.Array[
+      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+    ],
+    styleDeclarations: js.Array[
+      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+    ],
+    styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyling(
+    classDeclarations: js.Array[
+      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+    ],
+    styleDeclarations: js.Array[
+      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+    ],
+    styleSanitizer: scala.Null,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyling(
     classDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
     styleDeclarations: scala.Null,
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def elementStyling[T](
+  def elementStyling(
+    classDeclarations: js.Array[
+      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+    ],
+    styleDeclarations: scala.Null,
+    styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyling(
+    classDeclarations: js.Array[
+      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+    ],
+    styleDeclarations: scala.Null,
+    styleSanitizer: scala.Null,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyling(
     classDeclarations: scala.Null,
     styleDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ]
   ): scala.Unit = js.native
-  def elementStyling[T](
+  def elementStyling(
     classDeclarations: scala.Null,
     styleDeclarations: js.Array[
       java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
     ],
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def elementStyling[T](
+  def elementStyling(
+    classDeclarations: scala.Null,
+    styleDeclarations: js.Array[
+      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+    ],
+    styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyling(
+    classDeclarations: scala.Null,
+    styleDeclarations: js.Array[
+      java.lang.String | scala.Boolean | atAngularCoreLib.srcRender3InterfacesDefinitionMod.InitialStylingFlags
+    ],
+    styleSanitizer: scala.Null,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyling(
     classDeclarations: scala.Null,
     styleDeclarations: scala.Null,
     styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn
   ): scala.Unit = js.native
-  def elementStylingApply[T](index: scala.Double): scala.Unit = js.native
+  def elementStyling(
+    classDeclarations: scala.Null,
+    styleDeclarations: scala.Null,
+    styleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStyling(
+    classDeclarations: scala.Null,
+    styleDeclarations: scala.Null,
+    styleSanitizer: scala.Null,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStylingApply(index: scala.Double): scala.Unit = js.native
+  def elementStylingApply(index: scala.Double, directiveIndex: scala.Double): scala.Unit = js.native
   def elementStylingMap[T](index: scala.Double): scala.Unit = js.native
   def elementStylingMap[T](index: scala.Double, classes: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def elementStylingMap[T](
@@ -178,188 +304,122 @@ object srcRender3ModMembers extends js.Object {
     classes: ScalablyTyped.runtime.StringDictionary[js.Any],
     styles: ScalablyTyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
+    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
+  ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: ScalablyTyped.runtime.StringDictionary[js.Any],
+    styles: scala.Null,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStylingMap[T](index: scala.Double, classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    styles: ScalablyTyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
+  ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    styles: scala.Null,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
   def elementStylingMap[T](index: scala.Double, classes: java.lang.String): scala.Unit = js.native
   def elementStylingMap[T](
     index: scala.Double,
     classes: java.lang.String,
     styles: ScalablyTyped.runtime.StringDictionary[js.Any]
   ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: java.lang.String,
+    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: java.lang.String,
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE
+  ): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: java.lang.String,
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStylingMap[T](index: scala.Double, classes: java.lang.String, styles: scala.Null, directiveIndex: scala.Double): scala.Unit = js.native
   def elementStylingMap[T](index: scala.Double, classes: scala.Null, styles: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: scala.Null,
+    styles: ScalablyTyped.runtime.StringDictionary[js.Any],
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStylingMap[T](index: scala.Double, classes: scala.Null, styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
+  def elementStylingMap[T](
+    index: scala.Double,
+    classes: scala.Null,
+    styles: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE,
+    directiveIndex: scala.Double
+  ): scala.Unit = js.native
+  def elementStylingMap[T](index: scala.Double, classes: scala.Null, styles: scala.Null, directiveIndex: scala.Double): scala.Unit = js.native
   def embeddedViewEnd(): scala.Unit = js.native
   def embeddedViewStart(viewBlockId: scala.Double, consts: scala.Double, vars: scala.Double): atAngularCoreLib.srcRender3InterfacesDefinitionMod.RenderFlags = js.native
   def enableBindings(): scala.Unit = js.native
   def getCurrentView(): atAngularCoreLib.srcRender3InterfacesViewMod.OpaqueViewState = js.native
-  def getFactoryOf[T](`type`: atAngularCoreLib.srcTypeMod.Type[_]): (js.Function1[/* type */ js.UndefOr[atAngularCoreLib.srcTypeMod.Type[T]], T]) | scala.Null = js.native
-  def getHostElement[T](component: T): stdLib.HTMLElement = js.native
+  def getFactoryOf[T](`type`: atAngularCoreLib.srcTypeMod.Type[_]): (js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T] | scala.Null, T]) | scala.Null = js.native
+  def getHostElement[T](directive: T): stdLib.Element = js.native
   def getInheritedFactory[T](`type`: atAngularCoreLib.srcTypeMod.Type[_]): js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], T] = js.native
   def getRenderedText(component: js.Any): java.lang.String = js.native
-  def i18nApply(
-    startIndex: scala.Double,
-    instructions: js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]
-  ): scala.Unit = js.native
-  def i18nAttribute(index: scala.Double, attrs: js.Array[_]): scala.Unit = js.native
+  def i18n(index: scala.Double, message: java.lang.String): scala.Unit = js.native
+  def i18n(index: scala.Double, message: java.lang.String, subTemplateIndex: scala.Double): scala.Unit = js.native
+  def i18nApply(index: scala.Double): scala.Unit = js.native
+  def i18nAttributes(index: scala.Double, values: js.Array[java.lang.String]): scala.Unit = js.native
   def i18nEnd(): scala.Unit = js.native
-  def i18nExp(expression: js.Any): scala.Unit = js.native
-  def i18nExpMapping(translation: java.lang.String, placeholders: atAngularCoreLib.srcRender3I18nMod.PlaceholderMap): js.Array[atAngularCoreLib.srcRender3I18nMod.I18nExpInstruction] = js.native
-  def i18nInterpolation1(instructions: js.Array[atAngularCoreLib.srcRender3I18nMod.I18nExpInstruction], v0: js.Any): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def i18nInterpolation2(
-    instructions: js.Array[atAngularCoreLib.srcRender3I18nMod.I18nExpInstruction],
-    v0: js.Any,
-    v1: js.Any
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def i18nInterpolation3(
-    instructions: js.Array[atAngularCoreLib.srcRender3I18nMod.I18nExpInstruction],
-    v0: js.Any,
-    v1: js.Any,
-    v2: js.Any
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def i18nInterpolation4(
-    instructions: js.Array[atAngularCoreLib.srcRender3I18nMod.I18nExpInstruction],
-    v0: js.Any,
-    v1: js.Any,
-    v2: js.Any,
-    v3: js.Any
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def i18nInterpolation5(
-    instructions: js.Array[atAngularCoreLib.srcRender3I18nMod.I18nExpInstruction],
-    v0: js.Any,
-    v1: js.Any,
-    v2: js.Any,
-    v3: js.Any,
-    v4: js.Any
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def i18nInterpolation6(
-    instructions: js.Array[atAngularCoreLib.srcRender3I18nMod.I18nExpInstruction],
-    v0: js.Any,
-    v1: js.Any,
-    v2: js.Any,
-    v3: js.Any,
-    v4: js.Any,
-    v5: js.Any
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def i18nInterpolation7(
-    instructions: js.Array[atAngularCoreLib.srcRender3I18nMod.I18nExpInstruction],
-    v0: js.Any,
-    v1: js.Any,
-    v2: js.Any,
-    v3: js.Any,
-    v4: js.Any,
-    v5: js.Any,
-    v6: js.Any
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def i18nInterpolation8(
-    instructions: js.Array[atAngularCoreLib.srcRender3I18nMod.I18nExpInstruction],
-    v0: js.Any,
-    v1: js.Any,
-    v2: js.Any,
-    v3: js.Any,
-    v4: js.Any,
-    v5: js.Any,
-    v6: js.Any,
-    v7: js.Any
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def i18nInterpolationV(instructions: js.Array[atAngularCoreLib.srcRender3I18nMod.I18nExpInstruction], values: js.Array[_]): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def i18nMapping(translation: java.lang.String): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null]
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    expressions: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null]
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    expressions: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    templateRoots: js.Array[java.lang.String]
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    expressions: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    templateRoots: js.Array[java.lang.String],
-    lastChildIndex: scala.Double
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    expressions: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    templateRoots: scala.Null,
-    lastChildIndex: scala.Double
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    expressions: scala.Null,
-    templateRoots: js.Array[java.lang.String]
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    expressions: scala.Null,
-    templateRoots: js.Array[java.lang.String],
-    lastChildIndex: scala.Double
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    expressions: scala.Null,
-    templateRoots: scala.Null,
-    lastChildIndex: scala.Double
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: scala.Null,
-    expressions: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null]
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: scala.Null,
-    expressions: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    templateRoots: js.Array[java.lang.String]
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: scala.Null,
-    expressions: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    templateRoots: js.Array[java.lang.String],
-    lastChildIndex: scala.Double
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: scala.Null,
-    expressions: js.Array[atAngularCoreLib.srcRender3I18nMod.PlaceholderMap | scala.Null],
-    templateRoots: scala.Null,
-    lastChildIndex: scala.Double
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: scala.Null,
-    expressions: scala.Null,
-    templateRoots: js.Array[java.lang.String]
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: scala.Null,
-    expressions: scala.Null,
-    templateRoots: js.Array[java.lang.String],
-    lastChildIndex: scala.Double
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
-  def i18nMapping(
-    translation: java.lang.String,
-    elements: scala.Null,
-    expressions: scala.Null,
-    templateRoots: scala.Null,
-    lastChildIndex: scala.Double
-  ): js.Array[js.Array[atAngularCoreLib.srcRender3I18nMod.I18nInstruction]] = js.native
+  def i18nExp[T](expression: T): scala.Unit = js.native
+  def i18nExp[T](expression: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
+  def i18nPostprocess(
+    message: java.lang.String,
+    replacements: ScalablyTyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
+  ): java.lang.String = js.native
   def i18nStart(index: scala.Double, message: java.lang.String): scala.Unit = js.native
   def i18nStart(index: scala.Double, message: java.lang.String, subTemplateIndex: scala.Double): scala.Unit = js.native
   def injectAttribute(attrNameToInject: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def injectComponentFactoryResolver(): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryUnderscoreResolverMod.ComponentFactoryResolver = js.native
-  def interpolation1(prefix: java.lang.String, v0: js.Any, suffix: java.lang.String): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def interpolation2(prefix: java.lang.String, v0: js.Any, i0: java.lang.String, v1: js.Any, suffix: java.lang.String): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
+  def interpolation1(prefix: java.lang.String, v0: js.Any, suffix: java.lang.String): java.lang.String | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
+  def interpolation2(prefix: java.lang.String, v0: js.Any, i0: java.lang.String, v1: js.Any, suffix: java.lang.String): java.lang.String | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
   def interpolation3(
     prefix: java.lang.String,
     v0: js.Any,
@@ -368,7 +428,7 @@ object srcRender3ModMembers extends js.Object {
     i1: java.lang.String,
     v2: js.Any,
     suffix: java.lang.String
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
+  ): java.lang.String | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
   def interpolation4(
     prefix: java.lang.String,
     v0: js.Any,
@@ -379,7 +439,7 @@ object srcRender3ModMembers extends js.Object {
     i2: java.lang.String,
     v3: js.Any,
     suffix: java.lang.String
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
+  ): java.lang.String | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
   def interpolation5(
     prefix: java.lang.String,
     v0: js.Any,
@@ -392,7 +452,7 @@ object srcRender3ModMembers extends js.Object {
     i3: java.lang.String,
     v4: js.Any,
     suffix: java.lang.String
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
+  ): java.lang.String | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
   def interpolation6(
     prefix: java.lang.String,
     v0: js.Any,
@@ -407,7 +467,7 @@ object srcRender3ModMembers extends js.Object {
     i4: java.lang.String,
     v5: js.Any,
     suffix: java.lang.String
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
+  ): java.lang.String | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
   def interpolation7(
     prefix: java.lang.String,
     v0: js.Any,
@@ -424,7 +484,7 @@ object srcRender3ModMembers extends js.Object {
     i5: java.lang.String,
     v6: js.Any,
     suffix: java.lang.String
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
+  ): java.lang.String | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
   def interpolation8(
     prefix: java.lang.String,
     v0: js.Any,
@@ -443,8 +503,8 @@ object srcRender3ModMembers extends js.Object {
     i6: java.lang.String,
     v7: js.Any,
     suffix: java.lang.String
-  ): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
-  def interpolationV(values: js.Array[_]): java.lang.String | atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE = js.native
+  ): java.lang.String | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
+  def interpolationV(values: js.Array[_]): java.lang.String | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
   def listener(eventName: java.lang.String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _]): scala.Unit = js.native
   def listener(
     eventName: java.lang.String,
@@ -706,7 +766,7 @@ object srcRender3ModMembers extends js.Object {
   ): atAngularCoreLib.srcRender3QueryMod.QueryList[T] = js.native
   def queryRefresh(queryList: atAngularCoreLib.srcRender3QueryMod.QueryList[_]): scala.Boolean = js.native
   def reference[T](index: scala.Double): T = js.native
-  def registerContentQuery[Q](queryList: atAngularCoreLib.srcLinkerMod.QueryList[Q]): scala.Unit = js.native
+  def registerContentQuery[Q](queryList: atAngularCoreLib.srcLinkerMod.QueryList[Q], currentDirectiveIndex: scala.Double): scala.Unit = js.native
   def renderComponent[T](componentType: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentType[T]): T = js.native
   def renderComponent[T](
     componentType: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentType[T],
@@ -718,6 +778,34 @@ object srcRender3ModMembers extends js.Object {
     opts: atAngularCoreLib.srcRender3ComponentMod.CreateComponentOptions
   ): T = js.native
   def restoreView(viewToRestore: atAngularCoreLib.srcRender3InterfacesViewMod.OpaqueViewState): scala.Unit = js.native
+  def setClassMetadata(`type`: atAngularCoreLib.srcTypeMod.Type[_]): scala.Unit = js.native
+  def setClassMetadata(`type`: atAngularCoreLib.srcTypeMod.Type[_], decorators: js.Array[_]): scala.Unit = js.native
+  def setClassMetadata(`type`: atAngularCoreLib.srcTypeMod.Type[_], decorators: js.Array[_], ctorParameters: js.Array[_]): scala.Unit = js.native
+  def setClassMetadata(
+    `type`: atAngularCoreLib.srcTypeMod.Type[_],
+    decorators: js.Array[_],
+    ctorParameters: js.Array[_],
+    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def setClassMetadata(
+    `type`: atAngularCoreLib.srcTypeMod.Type[_],
+    decorators: js.Array[_],
+    ctorParameters: scala.Null,
+    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def setClassMetadata(`type`: atAngularCoreLib.srcTypeMod.Type[_], decorators: scala.Null, ctorParameters: js.Array[_]): scala.Unit = js.native
+  def setClassMetadata(
+    `type`: atAngularCoreLib.srcTypeMod.Type[_],
+    decorators: scala.Null,
+    ctorParameters: js.Array[_],
+    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
+  def setClassMetadata(
+    `type`: atAngularCoreLib.srcTypeMod.Type[_],
+    decorators: scala.Null,
+    ctorParameters: scala.Null,
+    propDecorators: ScalablyTyped.runtime.StringDictionary[js.Any]
+  ): scala.Unit = js.native
   def store[T](index: scala.Double, value: T): scala.Unit = js.native
   def template(
     index: scala.Double,
@@ -1007,11 +1095,11 @@ object srcRender3ModMembers extends js.Object {
   def templateRefExtractor(
     tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     currentView: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData
-  ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object] = js.native
+  ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object] | scala.Null = js.native
   def text(index: scala.Double): scala.Unit = js.native
   def text(index: scala.Double, value: js.Any): scala.Unit = js.native
   def textBinding[T](index: scala.Double, value: T): scala.Unit = js.native
-  def textBinding[T](index: scala.Double, value: atAngularCoreLib.srcRender3InstructionsMod.NO_CHANGE): scala.Unit = js.native
+  def textBinding[T](index: scala.Double, value: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE): scala.Unit = js.native
   def tick[T](component: T): scala.Unit = js.native
   def whenRendered(component: js.Any): stdLib.Promise[scala.Null] = js.native
 }

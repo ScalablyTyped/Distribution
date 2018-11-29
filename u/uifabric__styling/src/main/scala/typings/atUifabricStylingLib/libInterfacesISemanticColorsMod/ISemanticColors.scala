@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 trait ISemanticColors
   extends atUifabricStylingLib.libInterfacesISemanticTextColorsMod.ISemanticTextColors {
   /**
+       * Background of an accent button (kicker)
+       */
+  var accentButtonBackground: java.lang.String
+  /**
        * Background for blocking issues, which is more severe than a warning, but not as bad as an error.
        */
   var blockingBackground: java.lang.String

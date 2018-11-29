@@ -153,7 +153,7 @@ object CloudFrontNs extends js.Object {
   
   trait CloudFrontOriginAccessIdentityConfig extends js.Object {
     /**
-         * A unique number that ensures the request can't be replayed. If the CallerReference is new (no matter the content of the CloudFrontOriginAccessIdentityConfig object), a new origin access identity is created. If the CallerReference is a value already sent in a previous identity request, and the content of the CloudFrontOriginAccessIdentityConfig is identical to the original request (ignoring white space), the response includes the same information returned to the original request.  If the CallerReference is a value you already sent in a previous request to create an identity, but the content of the CloudFrontOriginAccessIdentityConfig is different from the original request, CloudFront returns a CloudFrontOriginAccessIdentityAlreadyExists error. 
+         * A unique value (for example, a date-time stamp) that ensures that the request can't be replayed. If the value of CallerReference is new (regardless of the content of the CloudFrontOriginAccessIdentityConfig object), a new origin access identity is created. If the CallerReference is a value already sent in a previous identity request, and the content of the CloudFrontOriginAccessIdentityConfig is identical to the original request (ignoring white space), the response includes the same information returned to the original request.  If the CallerReference is a value you already sent in a previous request to create an identity, but the content of the CloudFrontOriginAccessIdentityConfig is different from the original request, CloudFront returns a CloudFrontOriginAccessIdentityAlreadyExists error. 
          */
     var CallerReference: java.lang.String
     /**
@@ -472,6 +472,9 @@ object CloudFrontNs extends js.Object {
   
   
   trait CreateStreamingDistributionWithTagsResult extends js.Object {
+    /**
+         * The current version of the distribution created.
+         */
     var ETag: js.UndefOr[java.lang.String] = js.undefined
     /**
          * The fully qualified URI of the new streaming distribution resource just created. For example: https://cloudfront.amazonaws.com/2010-11-01/streaming-distribution/EGTXBD79H29TRA8.
@@ -720,7 +723,7 @@ object CloudFrontNs extends js.Object {
          */
     var CacheBehaviors: js.UndefOr[CacheBehaviors] = js.undefined
     /**
-         * A unique value (for example, a date-time stamp) that ensures that the request can't be replayed. If the value of CallerReference is new (regardless of the content of the DistributionConfig object), CloudFront creates a new distribution. If CallerReference is a value you already sent in a previous request to create a distribution, and if the content of the DistributionConfig is identical to the original request (ignoring white space), CloudFront returns the same the response that it returned to the original request. If CallerReference is a value you already sent in a previous request to create a distribution but the content of the DistributionConfig is different from the original request, CloudFront returns a DistributionAlreadyExists error.
+         * A unique value (for example, a date-time stamp) that ensures that the request can't be replayed. If the value of CallerReference is new (regardless of the content of the DistributionConfig object), CloudFront creates a new distribution. If CallerReference is a value that you already sent in a previous request to create a distribution, CloudFront returns a DistributionAlreadyExists error.
          */
     var CallerReference: java.lang.String
     /**
@@ -756,6 +759,10 @@ object CloudFrontNs extends js.Object {
          */
     var Logging: js.UndefOr[LoggingConfig] = js.undefined
     /**
+         *  A complex type that contains information about origin groups for this distribution.
+         */
+    var OriginGroups: js.UndefOr[OriginGroups] = js.undefined
+    /**
          * A complex type that contains information about origins for this distribution. 
          */
     var Origins: Origins
@@ -763,7 +770,13 @@ object CloudFrontNs extends js.Object {
          * The price class that corresponds with the maximum price that you want to pay for CloudFront service. If you specify PriceClass_All, CloudFront responds to requests for your objects from all CloudFront edge locations. If you specify a price class other than PriceClass_All, CloudFront serves your objects from the CloudFront edge location that has the lowest latency among the edge locations in your price class. Viewers who are in or near regions that are excluded from your specified price class may encounter slower performance. For more information about price classes, see Choosing the Price Class for a CloudFront Distribution in the Amazon CloudFront Developer Guide. For information about CloudFront pricing, including how price classes (such as Price Class 100) map to CloudFront regions, see Amazon CloudFront Pricing. For price class information, scroll down to see the table at the bottom of the page.
          */
     var PriceClass: js.UndefOr[PriceClass] = js.undefined
+    /**
+         * 
+         */
     var Restrictions: js.UndefOr[Restrictions] = js.undefined
+    /**
+         * 
+         */
     var ViewerCertificate: js.UndefOr[ViewerCertificate] = js.undefined
     /**
          * A unique identifier that specifies the AWS WAF web ACL, if any, to associate with this distribution. AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to CloudFront, and lets you control access to your content. Based on conditions that you specify, such as the IP addresses that requests originate from or the values of query strings, CloudFront responds to requests either with the requested content or with an HTTP 403 status code (Forbidden). You can also configure CloudFront to return a custom error page when a request is blocked. For more information about AWS WAF, see the AWS WAF Developer Guide. 
@@ -862,15 +875,28 @@ object CloudFrontNs extends js.Object {
          */
     var LastModifiedTime: timestamp
     /**
+         *  A complex type that contains information about origin groups for this distribution.
+         */
+    var OriginGroups: js.UndefOr[OriginGroups] = js.undefined
+    /**
          * A complex type that contains information about origins for this distribution.
          */
     var Origins: Origins
+    /**
+         * A complex type that contains information about price class for this streaming distribution. 
+         */
     var PriceClass: PriceClass
+    /**
+         * 
+         */
     var Restrictions: Restrictions
     /**
          * The current status of the distribution. When the status is Deployed, the distribution's information is propagated to all CloudFront edge locations.
          */
     var Status: java.lang.String
+    /**
+         * 
+         */
     var ViewerCertificate: ViewerCertificate
     /**
          * The Web ACL Id (if any) associated with the distribution.
@@ -981,7 +1007,7 @@ object CloudFrontNs extends js.Object {
   
   trait FieldLevelEncryptionProfileConfig extends js.Object {
     /**
-         * A unique number that ensures the request can't be replayed.
+         * A unique number that ensures that the request can't be replayed.
          */
     var CallerReference: java.lang.String
     /**
@@ -1448,6 +1474,9 @@ object CloudFrontNs extends js.Object {
   
   
   trait InvalidationSummary extends js.Object {
+    /**
+         * The time that an invalidation request was created.
+         */
     var CreateTime: timestamp
     /**
          * The unique ID for an invalidation request.
@@ -1474,7 +1503,7 @@ object CloudFrontNs extends js.Object {
   
   trait LambdaFunctionAssociation extends js.Object {
     /**
-         * Specifies the event type that triggers a Lambda function invocation. You can specify the following values:    viewer-request: The function executes when CloudFront receives a request from a viewer and before it checks to see whether the requested object is in the edge cache.     origin-request: The function executes only when CloudFront forwards a request to your origin. When the requested object is in the edge cache, the function doesn't execute.    origin-response: The function executes after CloudFront receives a response from the origin and before it caches the object in the response. When the requested object is in the edge cache, the function doesn't execute. If the origin returns an HTTP status code other than HTTP 200 (OK), the function doesn't execute.    viewer-response: The function executes before CloudFront returns the requested object to the viewer. The function executes regardless of whether the object was already in the edge cache. If the origin returns an HTTP status code other than HTTP 200 (OK), the function doesn't execute.  
+         * Specifies the event type that triggers a Lambda function invocation. You can specify the following values:    viewer-request: The function executes when CloudFront receives a request from a viewer and before it checks to see whether the requested object is in the edge cache.     origin-request: The function executes only when CloudFront forwards a request to your origin. When the requested object is in the edge cache, the function doesn't execute.    origin-response: The function executes after CloudFront receives a response from the origin and before it caches the object in the response. When the requested object is in the edge cache, the function doesn't execute.    viewer-response: The function executes before CloudFront returns the requested object to the viewer. The function executes regardless of whether the object was already in the edge cache. If the origin returns an HTTP status code other than HTTP 200 (OK), the function doesn't execute.  
          */
     var EventType: EventType
     /**
@@ -1714,11 +1743,11 @@ object CloudFrontNs extends js.Object {
          */
     var CustomOriginConfig: js.UndefOr[CustomOriginConfig] = js.undefined
     /**
-         *  Amazon S3 origins: The DNS name of the Amazon S3 bucket from which you want CloudFront to get objects for this origin, for example, myawsbucket.s3.amazonaws.com. If you set up your bucket to be configured as a website endpoint, enter the Amazon S3 static website hosting endpoint for the bucket. Constraints for Amazon S3 origins:    If you configured Amazon S3 Transfer Acceleration for your bucket, don't specify the s3-accelerate endpoint for DomainName.   The bucket name must be between 3 and 63 characters long (inclusive).   The bucket name must contain only lowercase characters, numbers, periods, underscores, and dashes.   The bucket name must not contain adjacent periods.    Custom Origins: The DNS domain name for the HTTP server from which you want CloudFront to get objects for this origin, for example, www.example.com.  Constraints for custom origins:    DomainName must be a valid DNS name that contains only a-z, A-Z, 0-9, dot (.), hyphen (-), or underscore (_) characters.   The name cannot exceed 128 characters.  
+         *  Amazon S3 origins: The DNS name of the Amazon S3 bucket from which you want CloudFront to get objects for this origin, for example, myawsbucket.s3.amazonaws.com. If you set up your bucket to be configured as a website endpoint, enter the Amazon S3 static website hosting endpoint for the bucket. For more information about specifying this value for different types of origins, see Origin Domain Name in the Amazon CloudFront Developer Guide. Constraints for Amazon S3 origins:    If you configured Amazon S3 Transfer Acceleration for your bucket, don't specify the s3-accelerate endpoint for DomainName.   The bucket name must be between 3 and 63 characters long (inclusive).   The bucket name must contain only lowercase characters, numbers, periods, underscores, and dashes.   The bucket name must not contain adjacent periods.    Custom Origins: The DNS domain name for the HTTP server from which you want CloudFront to get objects for this origin, for example, www.example.com.  Constraints for custom origins:    DomainName must be a valid DNS name that contains only a-z, A-Z, 0-9, dot (.), hyphen (-), or underscore (_) characters.   The name cannot exceed 128 characters.  
          */
     var DomainName: java.lang.String
     /**
-         * A unique identifier for the origin. The value of Id must be unique within the distribution. When you specify the value of TargetOriginId for the default cache behavior or for another cache behavior, you indicate the origin to which you want the cache behavior to route requests by specifying the value of the Id element for that origin. When a request matches the path pattern for that cache behavior, CloudFront routes the request to the specified origin. For more information, see Cache Behavior Settings in the Amazon CloudFront Developer Guide.
+         * A unique identifier for the origin or origin group. The value of Id must be unique within the distribution. When you specify the value of TargetOriginId for the default cache behavior or for another cache behavior, you indicate the origin to which you want the cache behavior to route requests by specifying the value of the Id element for that origin. When a request matches the path pattern for that cache behavior, CloudFront routes the request to the specified origin. For more information, see Cache Behavior Settings in the Amazon CloudFront Developer Guide.
          */
     var Id: java.lang.String
     /**
@@ -1744,6 +1773,62 @@ object CloudFrontNs extends js.Object {
   }
   
   
+  trait OriginGroup extends js.Object {
+    /**
+         * A complex type that contains information about the failover criteria for an origin group.
+         */
+    var FailoverCriteria: OriginGroupFailoverCriteria
+    /**
+         * The origin group's ID.
+         */
+    var Id: java.lang.String
+    /**
+         * A complex type that contains information about the origins in an origin group.
+         */
+    var Members: OriginGroupMembers
+  }
+  
+  
+  trait OriginGroupFailoverCriteria extends js.Object {
+    /**
+         * The status codes that, when returned from the primary origin, will trigger CloudFront to failover to the second origin.
+         */
+    var StatusCodes: StatusCodes
+  }
+  
+  
+  trait OriginGroupMember extends js.Object {
+    /**
+         * The ID for an origin in an origin group.
+         */
+    var OriginId: java.lang.String
+  }
+  
+  
+  trait OriginGroupMembers extends js.Object {
+    /**
+         * Items (origins) in an origin group.
+         */
+    var Items: OriginGroupMemberList
+    /**
+         * The number of origins in an origin group.
+         */
+    var Quantity: integer
+  }
+  
+  
+  trait OriginGroups extends js.Object {
+    /**
+         * The items (origin groups) in a distribution.
+         */
+    var Items: js.UndefOr[OriginGroupList] = js.undefined
+    /**
+         * The number of origin groups.
+         */
+    var Quantity: integer
+  }
+  
+  
   trait OriginSslProtocols extends js.Object {
     /**
          * A list that contains allowed SSL/TLS protocols for this distribution.
@@ -1758,11 +1843,11 @@ object CloudFrontNs extends js.Object {
   
   trait Origins extends js.Object {
     /**
-         * A complex type that contains origins for this distribution.
+         * A complex type that contains origins or origin groups for this distribution.
          */
-    var Items: js.UndefOr[OriginList] = js.undefined
+    var Items: OriginList
     /**
-         * The number of origins for this distribution.
+         * The number of origins or origin groups for this distribution.
          */
     var Quantity: integer
   }
@@ -1798,7 +1883,7 @@ object CloudFrontNs extends js.Object {
   
   trait PublicKeyConfig extends js.Object {
     /**
-         * A unique number that ensures the request can't be replayed.
+         * A unique number that ensures that the request can't be replayed.
          */
     var CallerReference: java.lang.String
     /**
@@ -2000,7 +2085,22 @@ object CloudFrontNs extends js.Object {
   }
   
   
+  trait StatusCodes extends js.Object {
+    /**
+         * The items (status codes) for an origin group.
+         */
+    var Items: StatusCodeList
+    /**
+         * The number of status codes.
+         */
+    var Quantity: integer
+  }
+  
+  
   trait StreamingDistribution extends js.Object {
+    /**
+         * The ARN (Amazon Resource Name) for the distribution. For example: arn:aws:cloudfront::123456789012:distribution/EDFDVBD632BHDS5, where 123456789012 is your AWS account ID.
+         */
     var ARN: java.lang.String
     /**
          * A complex type that lists the AWS accounts, if any, that you included in the TrustedSigners complex type for this distribution. These are the accounts that you want to allow to create signed URLs for private content. The Signer complex type lists the AWS account number of the trusted signer or self if the signer is the AWS account that created the distribution. The Signer element also includes the IDs of any active CloudFront key pairs that are associated with the trusted signer's AWS account. If no KeyPairId element appears for a Signer, that signer can't create signed URLs. For more information, see Serving Private Content through CloudFront in the Amazon CloudFront Developer Guide. 
@@ -2035,7 +2135,7 @@ object CloudFrontNs extends js.Object {
          */
     var Aliases: js.UndefOr[Aliases] = js.undefined
     /**
-         * A unique number that ensures that the request can't be replayed. If the CallerReference is new (no matter the content of the StreamingDistributionConfig object), a new streaming distribution is created. If the CallerReference is a value that you already sent in a previous request to create a streaming distribution, and the content of the StreamingDistributionConfig is identical to the original request (ignoring white space), the response includes the same information returned to the original request. If the CallerReference is a value that you already sent in a previous request to create a streaming distribution but the content of the StreamingDistributionConfig is different from the original request, CloudFront returns a DistributionAlreadyExists error. 
+         * A unique value (for example, a date-time stamp) that ensures that the request can't be replayed. If the value of CallerReference is new (regardless of the content of the StreamingDistributionConfig object), CloudFront creates a new distribution. If CallerReference is a value that you already sent in a previous request to create a distribution, CloudFront returns a DistributionAlreadyExists error.
          */
     var CallerReference: java.lang.String
     /**
@@ -2134,6 +2234,9 @@ object CloudFrontNs extends js.Object {
          * The date and time the distribution was last modified.
          */
     var LastModifiedTime: timestamp
+    /**
+         * 
+         */
     var PriceClass: PriceClass
     /**
          * A complex type that contains information about the Amazon S3 bucket from which you want CloudFront to get your media files for distribution.
@@ -3876,6 +3979,8 @@ object CloudFrontNs extends js.Object {
   type MethodsList = js.Array[Method]
   type MinimumProtocolVersion = awsDashSdkLib.awsDashSdkLibStrings.SSLv3 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1_2016 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1DOT1_2016 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1DOT2_2018 | java.lang.String
   type OriginCustomHeadersList = js.Array[OriginCustomHeader]
+  type OriginGroupList = js.Array[OriginGroup]
+  type OriginGroupMemberList = js.Array[OriginGroupMember]
   type OriginList = js.Array[Origin]
   type OriginProtocolPolicy = awsDashSdkLib.awsDashSdkLibStrings.`http-only` | awsDashSdkLib.awsDashSdkLibStrings.`match-viewer` | awsDashSdkLib.awsDashSdkLibStrings.`https-only` | java.lang.String
   type PathList = js.Array[java.lang.String]
@@ -3888,13 +3993,14 @@ object CloudFrontNs extends js.Object {
   type SignerList = js.Array[_Signer]
   type SslProtocol = awsDashSdkLib.awsDashSdkLibStrings.SSLv3 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1DOT1 | awsDashSdkLib.awsDashSdkLibStrings.TLSv1DOT2 | java.lang.String
   type SslProtocolsList = js.Array[SslProtocol]
+  type StatusCodeList = js.Array[integer]
   type StreamingDistributionSummaryList = js.Array[StreamingDistributionSummary]
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
   type ViewerProtocolPolicy = awsDashSdkLib.awsDashSdkLibStrings.`allow-all` | awsDashSdkLib.awsDashSdkLibStrings.`https-only` | awsDashSdkLib.awsDashSdkLibStrings.`redirect-to-https` | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-05-12` | awsDashSdkLib.awsDashSdkLibStrings.`2013-11-11` | awsDashSdkLib.awsDashSdkLibStrings.`2014-05-31` | awsDashSdkLib.awsDashSdkLibStrings.`2014-10-21` | awsDashSdkLib.awsDashSdkLibStrings.`2014-11-06` | awsDashSdkLib.awsDashSdkLibStrings.`2015-04-17` | awsDashSdkLib.awsDashSdkLibStrings.`2015-07-27` | awsDashSdkLib.awsDashSdkLibStrings.`2015-09-17` | awsDashSdkLib.awsDashSdkLibStrings.`2016-01-13` | awsDashSdkLib.awsDashSdkLibStrings.`2016-01-28` | awsDashSdkLib.awsDashSdkLibStrings.`2016-08-01` | awsDashSdkLib.awsDashSdkLibStrings.`2016-08-20` | awsDashSdkLib.awsDashSdkLibStrings.`2016-09-07` | awsDashSdkLib.awsDashSdkLibStrings.`2016-09-29` | awsDashSdkLib.awsDashSdkLibStrings.`2016-11-25` | awsDashSdkLib.awsDashSdkLibStrings.`2017-03-25` | awsDashSdkLib.awsDashSdkLibStrings.`2017-10-30` | awsDashSdkLib.awsDashSdkLibStrings.`2018-06-18` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-05-12` | awsDashSdkLib.awsDashSdkLibStrings.`2013-11-11` | awsDashSdkLib.awsDashSdkLibStrings.`2014-05-31` | awsDashSdkLib.awsDashSdkLibStrings.`2014-10-21` | awsDashSdkLib.awsDashSdkLibStrings.`2014-11-06` | awsDashSdkLib.awsDashSdkLibStrings.`2015-04-17` | awsDashSdkLib.awsDashSdkLibStrings.`2015-07-27` | awsDashSdkLib.awsDashSdkLibStrings.`2015-09-17` | awsDashSdkLib.awsDashSdkLibStrings.`2016-01-13` | awsDashSdkLib.awsDashSdkLibStrings.`2016-01-28` | awsDashSdkLib.awsDashSdkLibStrings.`2016-08-01` | awsDashSdkLib.awsDashSdkLibStrings.`2016-08-20` | awsDashSdkLib.awsDashSdkLibStrings.`2016-09-07` | awsDashSdkLib.awsDashSdkLibStrings.`2016-09-29` | awsDashSdkLib.awsDashSdkLibStrings.`2016-11-25` | awsDashSdkLib.awsDashSdkLibStrings.`2017-03-25` | awsDashSdkLib.awsDashSdkLibStrings.`2017-10-30` | awsDashSdkLib.awsDashSdkLibStrings.`2018-06-18` | awsDashSdkLib.awsDashSdkLibStrings.`2018-11-05` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
   type integer = scala.Double
   type long = scala.Double
   type timestamp = stdLib.Date

@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("builder-util-runtime/out/httpExecutor", "HttpExecutor")
 @js.native
 abstract class HttpExecutor[REQUEST] () extends js.Object {
+  var addTimeOutHandler: js.Any = js.native
   var handleResponse: js.Any = js.native
-  val maxRedirects: scala.Double = js.native
+  val maxRedirects: /* 10 */ scala.Double = js.native
   def addErrorAndTimeoutHandlers(request: js.Any, reject: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
   /* protected */ def addRedirectHandlers(
     request: js.Any,
@@ -18,7 +19,8 @@ abstract class HttpExecutor[REQUEST] () extends js.Object {
     redirectCount: scala.Double,
     handler: js.Function1[/* options */ nodeLib.httpMod.RequestOptions, scala.Unit]
   ): scala.Unit = js.native
-  /* protected */ def addTimeOutHandler(request: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
+  /* protected */ def createMaxRedirectError(): nodeLib.Error = js.native
+  def createRequest(options: js.Any, callback: js.Function1[/* response */ js.Any, scala.Unit]): js.Any = js.native
   def doApiRequest(
     options: nodeLib.httpMod.RequestOptions,
     cancellationToken: builderDashUtilDashRuntimeLib.outCancellationTokenMod.CancellationToken,
@@ -38,15 +40,8 @@ abstract class HttpExecutor[REQUEST] () extends js.Object {
     ],
     redirectCount: scala.Double
   ): stdLib.Promise[java.lang.String] = js.native
-  /* protected */ def doDownload(
-    requestOptions: js.Any,
-    destination: java.lang.String,
-    redirectCount: scala.Double,
-    options: DownloadOptions,
-    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit],
-    onCancel: js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]
-  ): scala.Unit = js.native
-  def doRequest(options: js.Any, callback: js.Function1[/* response */ js.Any, scala.Unit]): js.Any = js.native
+  /* protected */ def doDownload(requestOptions: js.Any, options: DownloadCallOptions, redirectCount: scala.Double): scala.Unit = js.native
+  def downloadToBuffer(url: nodeLib.urlMod.URL, options: DownloadOptions): stdLib.Promise[nodeLib.Buffer] = js.native
   def request(options: nodeLib.httpMod.RequestOptions): stdLib.Promise[java.lang.String | scala.Null] = js.native
   def request(
     options: nodeLib.httpMod.RequestOptions,

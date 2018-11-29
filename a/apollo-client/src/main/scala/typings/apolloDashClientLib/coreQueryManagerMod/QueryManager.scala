@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-client/core/QueryManager", "QueryManager")
 @js.native
 class QueryManager[TStore] protected () extends js.Object {
-  def this(hasLinkQueryDeduplicationStoreOnBroadcastSsrMode: apolloDashClientLib.Anon_Store[TStore]) = this()
+  def this(hasLinkQueryDeduplicationStoreOnBroadcastSsrModeClientAwareness: apolloDashClientLib.Anon_ClientAwareness[TStore]) = this()
   var buildOperationForLink: js.Any = js.native
+  var clientAwareness: js.Any = js.native
   var dataStore: apolloDashClientLib.dataStoreMod.DataStore[TStore] = js.native
   var deduplicator: js.Any = js.native
   var fetchQueryPromises: js.Any = js.native

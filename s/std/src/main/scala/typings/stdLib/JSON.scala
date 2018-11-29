@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JSON extends js.Object {
   @JSName(ScalablyTyped.runtime.Symbol.toStringTag)
-  val toStringTag: stdLib.stdLibStrings.JSON = js.native
+  val toStringTag: java.lang.String = js.native
   /**
         * Converts a JavaScript Object Notation (JSON) string into an object.
         * @param text A valid JSON string.

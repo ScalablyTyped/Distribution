@@ -12,14 +12,16 @@ sealed trait SpinnerType extends js.Object
 @js.native
 object SpinnerType extends js.Object {
   /**
-       * Deprecated and will be removed at >= 2.0.0. Use SpinnerSize.large instead.
+       * Deprecated and will be removed at \>= 2.0.0. Use `SpinnerSize.large` instead.
+       * @deprecated Use `SpinnerSize.large` instead.
        */
   @js.native
   sealed trait large
     extends officeDashUiDashFabricDashReactLib.libComponentsSpinnerSpinnerDotTypesMod.SpinnerType
   
   /**
-       * Deprecated and will be removed at >= 2.0.0. Use SpinnerSize.medium instead.
+       * Deprecated and will be removed at \>= 2.0.0. Use `SpinnerSize.medium` instead.
+       * @deprecated Use `SpinnerSize.medium` instead.
        */
   @js.native
   sealed trait normal

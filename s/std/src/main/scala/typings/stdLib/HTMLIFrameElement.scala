@@ -52,6 +52,7 @@ trait HTMLIFrameElement
        * Sets or retrieves the frame name.
        */
   var name: java.lang.String = js.native
+  val referrerPolicy: ReferrerPolicy = js.native
   val sandbox: DOMTokenList = js.native
   /**
        * Sets or retrieves whether the frame can be scrolled.

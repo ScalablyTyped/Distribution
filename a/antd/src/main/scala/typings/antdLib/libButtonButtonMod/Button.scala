@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Button
   extends reactLib.reactMod.Component[ButtonProps, js.Any, js.Any] {
+  var buttonNode: js.Any = js.native
   var delayTimeout: js.Any = js.native
   @JSName("handleClick")
   var handleClick_Original: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLButtonElement | reactLib.HTMLAnchorElement] = js.native
@@ -24,5 +25,7 @@ trait Button
     event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement | reactLib.HTMLAnchorElement]
   ): scala.Unit = js.native
   def isNeedInserted(): scala.Boolean = js.native
+  def saveButtonRef(): scala.Unit = js.native
+  def saveButtonRef(node: reactLib.HTMLElement): scala.Unit = js.native
 }
 

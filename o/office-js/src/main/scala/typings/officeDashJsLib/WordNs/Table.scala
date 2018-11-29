@@ -901,7 +901,7 @@ class Table ()
   def insertContentControl(): ContentControl = js.native
   /**
            *
-           * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a paragraph at the specified location. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -911,7 +911,7 @@ class Table ()
   def insertParagraph(paragraphText: java.lang.String, insertLocation: InsertLocation): Paragraph = js.native
   /**
            *
-           * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a paragraph at the specified location. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -922,7 +922,7 @@ class Table ()
   def insertParagraph_After(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.After): Paragraph = js.native
   /**
            *
-           * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a paragraph at the specified location. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -933,7 +933,7 @@ class Table ()
   def insertParagraph_Before(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Before): Paragraph = js.native
   /**
            *
-           * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a paragraph at the specified location. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -944,7 +944,7 @@ class Table ()
   def insertParagraph_End(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.End): Paragraph = js.native
   /**
            *
-           * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a paragraph at the specified location. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -955,7 +955,7 @@ class Table ()
   def insertParagraph_Replace(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Replace): Paragraph = js.native
   /**
            *
-           * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a paragraph at the specified location. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -966,7 +966,7 @@ class Table ()
   def insertParagraph_Start(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Start): Paragraph = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -978,7 +978,7 @@ class Table ()
   def insertTable(rowCount: scala.Double, columnCount: scala.Double, insertLocation: InsertLocation): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -995,7 +995,7 @@ class Table ()
   ): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -1012,7 +1012,7 @@ class Table ()
   ): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -1030,7 +1030,7 @@ class Table ()
   ): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -1047,7 +1047,7 @@ class Table ()
   ): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -1065,7 +1065,7 @@ class Table ()
   ): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -1082,7 +1082,7 @@ class Table ()
   ): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -1100,7 +1100,7 @@ class Table ()
   ): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -1117,7 +1117,7 @@ class Table ()
   ): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -1135,7 +1135,7 @@ class Table ()
   ): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *
@@ -1152,7 +1152,7 @@ class Table ()
   ): Table = js.native
   /**
            *
-           * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
+           * Inserts a table with the specified number of rows and columns. 
            *
            * [Api set: WordApi 1.3]
            *

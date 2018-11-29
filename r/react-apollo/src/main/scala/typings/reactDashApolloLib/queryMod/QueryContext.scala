@@ -11,5 +11,6 @@ trait QueryContext extends js.Object {
   var operations: js.UndefOr[
     lodashLib.lodashMod.Global.Map[java.lang.String, reactDashApolloLib.Anon_Variables]
   ] = js.undefined
+  var renderPromises: js.UndefOr[reactDashApolloLib.getDataFromTreeMod.RenderPromises] = js.undefined
 }
 

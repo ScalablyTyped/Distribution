@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object elementMod {
-  type ElementType = stripejsLib.stripejsLibStrings.card | stripejsLib.stripejsLibStrings.cardNumber | stripejsLib.stripejsLibStrings.cardExpiry | stripejsLib.stripejsLibStrings.cardCvc | stripejsLib.stripejsLibStrings.postalCode
+  type ElementType = stripejsLib.stripejsLibStrings.card | stripejsLib.stripejsLibStrings.cardNumber | stripejsLib.stripejsLibStrings.cardExpiry | stripejsLib.stripejsLibStrings.cardCvc | stripejsLib.stripejsLibStrings.postalCode | stripejsLib.stripejsLibStrings.paymentRequestButton
 }

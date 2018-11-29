@@ -10,7 +10,7 @@ package object typesMod {
   type Block = BlockStatement | Program
   type BlockParent = BlockStatement | CatchClause | DoWhileStatement | ForInStatement | ForStatement | FunctionDeclaration | FunctionExpression | Program | ObjectMethod | SwitchStatement | WhileStatement | ArrowFunctionExpression | ForOfStatement | ClassMethod
   type Class = ClassDeclaration | ClassExpression
-  type Comment = BlockComment | LineComment
+  type Comment = CommentBlock | CommentLine
   type CompletionStatement = BreakStatement | ContinueStatement | ReturnStatement | ThrowStatement
   type Conditional = ConditionalExpression | IfStatement
   type Declaration = FunctionDeclaration | VariableDeclaration | ClassDeclaration | ExportAllDeclaration | ExportDefaultDeclaration | ExportNamedDeclaration | ImportDeclaration | DeclareClass | DeclareFunction | DeclareInterface | DeclareModule | DeclareModuleExports | DeclareTypeAlias | DeclareOpaqueType | DeclareVariable | DeclareExportDeclaration | DeclareExportAllDeclaration | InterfaceDeclaration | OpaqueType | TypeAlias | TSDeclareFunction | TSInterfaceDeclaration | TSTypeAliasDeclaration | TSEnumDeclaration | TSModuleDeclaration

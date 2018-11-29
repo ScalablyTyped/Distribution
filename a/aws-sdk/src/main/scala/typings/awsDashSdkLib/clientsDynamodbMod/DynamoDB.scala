@@ -1098,6 +1098,88 @@ trait DynamoDB
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     *  TransactGetItems is a synchronous operation that atomically retrieves multiple items from one or more tables (but not from indexes) in a single account and region. A TransactGetItems call can contain up to 10 TransactGetItem objects, each of which contains a Get structure that specifies an item to retrieve from a table in the account and region. A call to TransactGetItems cannot retrieve items from tables in more than one AWS account or region. DynamoDB rejects the entire TransactGetItems request if any of the following is true:   A conflicting operation is in the process of updating an item to be read.   There is insufficient provisioned capacity for the transaction to be completed.   There is a user error, such as an invalid data format.  
+     */
+  def transactGetItems(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactGetItemsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  TransactGetItems is a synchronous operation that atomically retrieves multiple items from one or more tables (but not from indexes) in a single account and region. A TransactGetItems call can contain up to 10 TransactGetItem objects, each of which contains a Get structure that specifies an item to retrieve from a table in the account and region. A call to TransactGetItems cannot retrieve items from tables in more than one AWS account or region. DynamoDB rejects the entire TransactGetItems request if any of the following is true:   A conflicting operation is in the process of updating an item to be read.   There is insufficient provisioned capacity for the transaction to be completed.   There is a user error, such as an invalid data format.  
+     */
+  def transactGetItems(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactGetItemsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactGetItemsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  TransactGetItems is a synchronous operation that atomically retrieves multiple items from one or more tables (but not from indexes) in a single account and region. A TransactGetItems call can contain up to 10 TransactGetItem objects, each of which contains a Get structure that specifies an item to retrieve from a table in the account and region. A call to TransactGetItems cannot retrieve items from tables in more than one AWS account or region. DynamoDB rejects the entire TransactGetItems request if any of the following is true:   A conflicting operation is in the process of updating an item to be read.   There is insufficient provisioned capacity for the transaction to be completed.   There is a user error, such as an invalid data format.  
+     */
+  def transactGetItems(params: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactGetItemsInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactGetItemsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  TransactGetItems is a synchronous operation that atomically retrieves multiple items from one or more tables (but not from indexes) in a single account and region. A TransactGetItems call can contain up to 10 TransactGetItem objects, each of which contains a Get structure that specifies an item to retrieve from a table in the account and region. A call to TransactGetItems cannot retrieve items from tables in more than one AWS account or region. DynamoDB rejects the entire TransactGetItems request if any of the following is true:   A conflicting operation is in the process of updating an item to be read.   There is insufficient provisioned capacity for the transaction to be completed.   There is a user error, such as an invalid data format.  
+     */
+  def transactGetItems(
+    params: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactGetItemsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactGetItemsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactGetItemsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  TransactWriteItems is a synchronous write operation that groups up to 10 action requests. These actions can target items in different tables, but not in different AWS accounts or regions, and no two actions can target the same item. For example, you cannot both ConditionCheck and Update the same item. The actions are completed atomically so that either all of them succeed, or all of them fail. They are defined by the following objects:    Put  &#x97;   Initiates a PutItem operation to write a new item. This structure specifies the primary key of the item to be written, the name of the table to write it in, an optional condition expression that must be satisfied for the write to succeed, a list of the item's attributes, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    Update  &#x97;   Initiates an UpdateItem operation to update an existing item. This structure specifies the primary key of the item to be updated, the name of the table where it resides, an optional condition expression that must be satisfied for the update to succeed, an expression that defines one or more attributes to be updated, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    Delete  &#x97;   Initiates a DeleteItem operation to delete an existing item. This structure specifies the primary key of the item to be deleted, the name of the table where it resides, an optional condition expression that must be satisfied for the deletion to succeed, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    ConditionCheck  &#x97;   Applies a condition to an item that is not being modified by the transaction. This structure specifies the primary key of the item to be checked, the name of the table where it resides, a condition expression that must be satisfied for the transaction to succeed, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.   DynamoDB rejects the entire TransactWriteItems request if any of the following is true:   A condition in one of the condition expressions is not met.   A conflicting operation is in the process of updating the same item.   There is insufficient provisioned capacity for the transaction to be completed.   An item size becomes too large (bigger than 400 KB), a Local Secondary Index (LSI) becomes too large, or a similar validation error occurs because of changes made by the transaction.   There is a user error, such as an invalid data format.  
+     */
+  def transactWriteItems(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactWriteItemsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  TransactWriteItems is a synchronous write operation that groups up to 10 action requests. These actions can target items in different tables, but not in different AWS accounts or regions, and no two actions can target the same item. For example, you cannot both ConditionCheck and Update the same item. The actions are completed atomically so that either all of them succeed, or all of them fail. They are defined by the following objects:    Put  &#x97;   Initiates a PutItem operation to write a new item. This structure specifies the primary key of the item to be written, the name of the table to write it in, an optional condition expression that must be satisfied for the write to succeed, a list of the item's attributes, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    Update  &#x97;   Initiates an UpdateItem operation to update an existing item. This structure specifies the primary key of the item to be updated, the name of the table where it resides, an optional condition expression that must be satisfied for the update to succeed, an expression that defines one or more attributes to be updated, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    Delete  &#x97;   Initiates a DeleteItem operation to delete an existing item. This structure specifies the primary key of the item to be deleted, the name of the table where it resides, an optional condition expression that must be satisfied for the deletion to succeed, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    ConditionCheck  &#x97;   Applies a condition to an item that is not being modified by the transaction. This structure specifies the primary key of the item to be checked, the name of the table where it resides, a condition expression that must be satisfied for the transaction to succeed, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.   DynamoDB rejects the entire TransactWriteItems request if any of the following is true:   A condition in one of the condition expressions is not met.   A conflicting operation is in the process of updating the same item.   There is insufficient provisioned capacity for the transaction to be completed.   An item size becomes too large (bigger than 400 KB), a Local Secondary Index (LSI) becomes too large, or a similar validation error occurs because of changes made by the transaction.   There is a user error, such as an invalid data format.  
+     */
+  def transactWriteItems(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactWriteItemsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactWriteItemsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  TransactWriteItems is a synchronous write operation that groups up to 10 action requests. These actions can target items in different tables, but not in different AWS accounts or regions, and no two actions can target the same item. For example, you cannot both ConditionCheck and Update the same item. The actions are completed atomically so that either all of them succeed, or all of them fail. They are defined by the following objects:    Put  &#x97;   Initiates a PutItem operation to write a new item. This structure specifies the primary key of the item to be written, the name of the table to write it in, an optional condition expression that must be satisfied for the write to succeed, a list of the item's attributes, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    Update  &#x97;   Initiates an UpdateItem operation to update an existing item. This structure specifies the primary key of the item to be updated, the name of the table where it resides, an optional condition expression that must be satisfied for the update to succeed, an expression that defines one or more attributes to be updated, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    Delete  &#x97;   Initiates a DeleteItem operation to delete an existing item. This structure specifies the primary key of the item to be deleted, the name of the table where it resides, an optional condition expression that must be satisfied for the deletion to succeed, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    ConditionCheck  &#x97;   Applies a condition to an item that is not being modified by the transaction. This structure specifies the primary key of the item to be checked, the name of the table where it resides, a condition expression that must be satisfied for the transaction to succeed, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.   DynamoDB rejects the entire TransactWriteItems request if any of the following is true:   A condition in one of the condition expressions is not met.   A conflicting operation is in the process of updating the same item.   There is insufficient provisioned capacity for the transaction to be completed.   An item size becomes too large (bigger than 400 KB), a Local Secondary Index (LSI) becomes too large, or a similar validation error occurs because of changes made by the transaction.   There is a user error, such as an invalid data format.  
+     */
+  def transactWriteItems(params: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactWriteItemsInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactWriteItemsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  TransactWriteItems is a synchronous write operation that groups up to 10 action requests. These actions can target items in different tables, but not in different AWS accounts or regions, and no two actions can target the same item. For example, you cannot both ConditionCheck and Update the same item. The actions are completed atomically so that either all of them succeed, or all of them fail. They are defined by the following objects:    Put  &#x97;   Initiates a PutItem operation to write a new item. This structure specifies the primary key of the item to be written, the name of the table to write it in, an optional condition expression that must be satisfied for the write to succeed, a list of the item's attributes, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    Update  &#x97;   Initiates an UpdateItem operation to update an existing item. This structure specifies the primary key of the item to be updated, the name of the table where it resides, an optional condition expression that must be satisfied for the update to succeed, an expression that defines one or more attributes to be updated, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    Delete  &#x97;   Initiates a DeleteItem operation to delete an existing item. This structure specifies the primary key of the item to be deleted, the name of the table where it resides, an optional condition expression that must be satisfied for the deletion to succeed, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.    ConditionCheck  &#x97;   Applies a condition to an item that is not being modified by the transaction. This structure specifies the primary key of the item to be checked, the name of the table where it resides, a condition expression that must be satisfied for the transaction to succeed, and a field indicating whether or not to retrieve the item's attributes if the condition is not met.   DynamoDB rejects the entire TransactWriteItems request if any of the following is true:   A condition in one of the condition expressions is not met.   A conflicting operation is in the process of updating the same item.   There is insufficient provisioned capacity for the transaction to be completed.   An item size becomes too large (bigger than 400 KB), a Local Secondary Index (LSI) becomes too large, or a similar validation error occurs because of changes made by the transaction.   There is a user error, such as an invalid data format.  
+     */
+  def transactWriteItems(
+    params: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactWriteItemsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactWriteItemsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.TransactWriteItemsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Removes the association of tags from an Amazon DynamoDB resource. You can call UntagResource up to 5 times per second, per account.  For an overview on tagging DynamoDB resources, see Tagging for DynamoDB in the Amazon DynamoDB Developer Guide.
      */
   def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native

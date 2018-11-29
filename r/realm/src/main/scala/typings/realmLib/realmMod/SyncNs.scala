@@ -19,6 +19,10 @@ object SyncNs extends js.Object {
     def this(local_path: java.lang.String, server_url: java.lang.String, admin_user: realmLib.RealmNs.SyncNs.User, regex: java.lang.String, change_callback: js.Function, ssl: realmLib.RealmNs.SyncNs.SSLConfiguration) = this()
   }
   
+  @js.native
+  class AdminCredentials ()
+    extends realmLib.RealmNs.SyncNs.AdminCredentials
+  
   /**
       * AuthError
       * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.AuthError.html }
@@ -106,6 +110,7 @@ object SyncNs extends js.Object {
   def setLogLevel_trace(logLevel: realmLib.realmLibStrings.trace): scala.Unit = js.native
   @JSName("setLogLevel")
   def setLogLevel_warn(logLevel: realmLib.realmLibStrings.warn): scala.Unit = js.native
+  def setUserAgent(userAgent: java.lang.String): scala.Unit = js.native
   @js.native
   object ConnectionState extends js.Object {
     /* "connected" */ val Connected: realmLib.RealmNs.SyncNs.ConnectionState.Connected with java.lang.String = js.native
@@ -117,9 +122,10 @@ object SyncNs extends js.Object {
   
   @js.native
   object Credentials extends js.Object {
-    def adminToken(token: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
+    def adminToken(token: java.lang.String): realmLib.RealmNs.SyncNs.AdminCredentials = js.native
     def anonymous(): realmLib.RealmNs.SyncNs.Credentials = js.native
     def azureAD(token: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
+    def custom(providerName: java.lang.String, token: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
     def custom(
       providerName: java.lang.String,
       token: java.lang.String,
@@ -165,7 +171,8 @@ object SyncNs extends js.Object {
     def completePasswordReset(server: java.lang.String, resetToken: java.lang.String, newPassword: java.lang.String): stdLib.Promise[scala.Unit] = js.native
     def confirmEmail(server: java.lang.String, confirmationToken: java.lang.String): stdLib.Promise[scala.Unit] = js.native
     def deserialize(serialized: realmLib.RealmNs.SyncNs.SerializedUser): realmLib.RealmNs.SyncNs.User = js.native
-    def login(server: java.lang.String, credentials: realmLib.RealmNs.SyncNs.Credentials): stdLib.Promise[realmLib.RealmNs.SyncNs.User] | realmLib.RealmNs.SyncNs.User = js.native
+    def login(server: java.lang.String, credentials: realmLib.RealmNs.SyncNs.AdminCredentials): realmLib.RealmNs.SyncNs.User = js.native
+    def login(server: java.lang.String, credentials: realmLib.RealmNs.SyncNs.Credentials): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native
     /** @deprecated, to be removed in future versions */
     def login(server: java.lang.String, username: java.lang.String, password: java.lang.String): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native
     /** @deprecated, to be removed in future versions */

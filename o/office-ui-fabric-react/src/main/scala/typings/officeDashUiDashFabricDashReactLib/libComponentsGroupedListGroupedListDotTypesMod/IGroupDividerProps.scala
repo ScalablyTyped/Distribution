@@ -27,8 +27,8 @@ trait IGroupDividerProps extends js.Object {
   /** Callback to determine if a group has missing items and needs to load them from the server. */
   var isGroupLoading: js.UndefOr[js.Function1[/* group */ IGroup, scala.Boolean]] = js.undefined
   /**
-       * Deprecated at v.65.1 and will be removed by v 1.0. Use 'selected' instead.
-       * @deprecated
+       * Deprecated at v.65.1 and will be removed by v 1.0. Use `selected` instead.
+       * @deprecated Use `selected` instead.
        */
   var isSelected: js.UndefOr[scala.Boolean] = js.undefined
   /** Text shown on group headers to indicate the group is being loaded. */

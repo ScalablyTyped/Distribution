@@ -12,11 +12,11 @@ trait DescribeBudgetsRequest extends js.Object {
        */
   var AccountId: AccountId
   /**
-       * Optional integer. Specifies the maximum number of results to return in response.
+       * An optional integer that represents how many entries a paginated response contains. The maximum is 100.
        */
   var MaxResults: js.UndefOr[MaxResults] = js.undefined
   /**
-       * The pagination token that indicates the next set of results to retrieve.
+       * The pagination token that you include in your request to indicate the next set of results that you want to retrieve.
        */
   var NextToken: js.UndefOr[GenericString] = js.undefined
 }

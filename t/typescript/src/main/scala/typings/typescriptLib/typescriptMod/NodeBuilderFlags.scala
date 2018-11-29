@@ -12,12 +12,13 @@ object NodeBuilderFlags extends js.Object {
   /* 2097152 */ val AllowEmptyIndexInfoType: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowEmptyIndexInfoType with scala.Double = js.native
   /* 524288 */ val AllowEmptyTuple: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowEmptyTuple with scala.Double = js.native
   /* 262144 */ val AllowEmptyUnionOrIntersection: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowEmptyUnionOrIntersection with scala.Double = js.native
+  /* 67108864 */ val AllowNodeModulesRelativePaths: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowNodeModulesRelativePaths with scala.Double = js.native
   /* 65536 */ val AllowQualifedNameInPlaceOfIdentifier: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowQualifedNameInPlaceOfIdentifier with scala.Double = js.native
   /* 32768 */ val AllowThisInObjectLiteral: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowThisInObjectLiteral with scala.Double = js.native
   /* 1048576 */ val AllowUniqueESSymbolType: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.AllowUniqueESSymbolType with scala.Double = js.native
   /* 16 */ val ForbidIndexedAccessSymbolReferences: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.ForbidIndexedAccessSymbolReferences with scala.Double = js.native
   /* 4 */ val GenerateNamesForShadowedTypeParams: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.GenerateNamesForShadowedTypeParams with scala.Double = js.native
-  /* 3112960 */ val IgnoreErrors: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.IgnoreErrors with scala.Double = js.native
+  /* 70221824 */ val IgnoreErrors: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.IgnoreErrors with scala.Double = js.native
   /* 16777216 */ val InInitialEntityName: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.InInitialEntityName with scala.Double = js.native
   /* 4194304 */ val InObjectTypeLiteral: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.InObjectTypeLiteral with scala.Double = js.native
   /* 33554432 */ val InReverseMappedType: typescriptLib.typescriptMod.tsNs.NodeBuilderFlags.InReverseMappedType with scala.Double = js.native

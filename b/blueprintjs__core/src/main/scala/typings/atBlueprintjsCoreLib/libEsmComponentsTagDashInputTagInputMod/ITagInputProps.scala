@@ -48,7 +48,7 @@ trait ITagInputProps
   var large: js.UndefOr[scala.Boolean] = js.undefined
   /** Name of a Blueprint UI icon (or an icon element) to render on the left side of the input. */
   var leftIcon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /**
        * Callback invoked when new tags are added by the user pressing `enter` on the input.

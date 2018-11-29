@@ -51,7 +51,7 @@ object theseNs extends js.Object {
   val isThat: js.Function1[/* fa */ fpDashTsLib.libTheseMod.These[js.Any, js.Any], /* is That */scala.Boolean] = js.native
   val isThis: js.Function1[/* fa */ fpDashTsLib.libTheseMod.These[js.Any, js.Any], /* is This */scala.Boolean] = js.native
   val that: js.Function1[/* a */ js.Any, fpDashTsLib.libTheseMod.These[js.Any, js.Any]] = js.native
-  val these: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libTraversableMod.Traversable2[fpDashTsLib.libTheseMod.URI] = js.native
+  val these: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libTheseMod.URI] = js.native
   val theseLeft: js.Function1[
     /* fa */ fpDashTsLib.libTheseMod.These[js.Any, js.Any], 
     fpDashTsLib.libOptionMod.Option[js.Any]

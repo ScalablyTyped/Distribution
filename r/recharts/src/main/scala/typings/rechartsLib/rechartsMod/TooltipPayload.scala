@@ -12,6 +12,7 @@ trait TooltipPayload extends js.Object {
   var fill: js.UndefOr[java.lang.String] = js.undefined
   var formatter: js.UndefOr[TooltipFormatter] = js.undefined
   var name: java.lang.String
+  var payload: js.UndefOr[js.Any] = js.undefined
   var unit: js.UndefOr[java.lang.String] = js.undefined
   var value: java.lang.String | scala.Double | (js.Array[java.lang.String | scala.Double])
 }

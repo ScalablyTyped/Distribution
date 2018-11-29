@@ -14,7 +14,7 @@ trait IPanelProps
   var closeButtonAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Deprecated property. Serves no function.
-       * @deprecated
+       * @deprecated Serves no function.
        */
   var componentId: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -28,13 +28,13 @@ trait IPanelProps
   var customWidth: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Sets the HTMLElement to focus on when exiting the FocusTrapZone.
-       * @default The element.target that triggered the Panel.
+       * @defaultvalue The element.target that triggered the Panel.
        */
   var elementToFocusOnDismiss: js.UndefOr[reactLib.HTMLElement] = js.undefined
   /**
        * Indicates the selector for first focusable item.
-       * Deprecated, use focusTrapZoneProps.
-       * @deprecated
+       * Deprecated, use `focusTrapZoneProps`.
+       * @deprecated Use `focusTrapZoneProps`.
        */
   var firstFocusableSelector: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -45,14 +45,14 @@ trait IPanelProps
   ] = js.undefined
   /**
        * Indicates whether Panel should force focus inside the focus trap zone
-       * Deprecated, use focusTrapZoneProps.
-       * @default true
-       * @deprecated
+       * Deprecated, use `focusTrapZoneProps`.
+       * @defaultvalue true
+       * @deprecated Use `focusTrapZoneProps`.
        */
   var forceFocusInsideTrap: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Has the close button visible.
-       * @default true
+       * @defaultvalue true
        */
   var hasCloseButton: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -61,40 +61,40 @@ trait IPanelProps
   var headerClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Header text for the Panel.
-       * @default ""
+       * @defaultvalue ""
        */
   var headerText: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Indicates if this Panel will ignore keeping track of HTMLElement that activated the Zone.
-       * Deprecated, use focusTrapZoneProps.
-       * @default false
-       * @deprecated
+       * Deprecated, use `focusTrapZoneProps`.
+       * @defaultvalue false
+       * @deprecated Use `focusTrapZoneProps`.
        */
   var ignoreExternalFocusing: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the panel uses a modal overlay or not
-       * @default true
+       * @defaultvalue true
        */
   var isBlocking: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Determines if content should stretch to fill available space putting footer at the bottom of the page
-       * @default false
+       * @defaultvalue false
        */
   var isFooterAtBottom: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the panel is hidden on dismiss, instead of destroyed in the DOM.
        * Protects the contents from being destroyed when the panel is dismissed.
-       * @default false
+       * @defaultvalue false
        */
   var isHiddenOnDismiss: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the panel can be light dismissed.
-       * @default false
+       * @defaultvalue false
        */
   var isLightDismiss: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Whether the panel is displayed.
-       * @default false
+       * @defaultvalue false
        */
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -157,7 +157,7 @@ trait IPanelProps
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
        * Type of the panel.
-       * @default PanelType.smallFixedRight
+       * @defaultvalue PanelType.smallFixedRight
        */
   var `type`: js.UndefOr[PanelType] = js.undefined
 }

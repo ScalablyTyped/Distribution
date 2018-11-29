@@ -14,36 +14,10 @@ trait Cascader
   def clearSelection(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement]): scala.Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MCascader(nextProps: CascaderProps): scala.Unit = js.native
-  def flattenTree(options: js.Array[CascaderOptionType]): js.Array[js.Array[CascaderOptionType]] = js.native
+  def flattenTree(options: js.Array[CascaderOptionType], props: CascaderProps): js.Array[js.Array[CascaderOptionType]] = js.native
   def flattenTree(
     options: js.Array[CascaderOptionType],
-    changeOnSelect: js.UndefOr[scala.Nothing],
-    fieldNames: FieldNamesType
-  ): js.Array[js.Array[CascaderOptionType]] = js.native
-  def flattenTree(
-    options: js.Array[CascaderOptionType],
-    changeOnSelect: js.UndefOr[scala.Nothing],
-    fieldNames: FieldNamesType,
-    ancestor: js.Array[CascaderOptionType]
-  ): js.Array[js.Array[CascaderOptionType]] = js.native
-  def flattenTree(
-    options: js.Array[CascaderOptionType],
-    changeOnSelect: js.UndefOr[scala.Nothing],
-    fieldNames: js.UndefOr[scala.Nothing],
-    ancestor: js.Array[CascaderOptionType]
-  ): js.Array[js.Array[CascaderOptionType]] = js.native
-  def flattenTree(options: js.Array[CascaderOptionType], changeOnSelect: scala.Boolean): js.Array[js.Array[CascaderOptionType]] = js.native
-  def flattenTree(options: js.Array[CascaderOptionType], changeOnSelect: scala.Boolean, fieldNames: FieldNamesType): js.Array[js.Array[CascaderOptionType]] = js.native
-  def flattenTree(
-    options: js.Array[CascaderOptionType],
-    changeOnSelect: scala.Boolean,
-    fieldNames: FieldNamesType,
-    ancestor: js.Array[CascaderOptionType]
-  ): js.Array[js.Array[CascaderOptionType]] = js.native
-  def flattenTree(
-    options: js.Array[CascaderOptionType],
-    changeOnSelect: scala.Boolean,
-    fieldNames: js.UndefOr[scala.Nothing],
+    props: CascaderProps,
     ancestor: js.Array[CascaderOptionType]
   ): js.Array[js.Array[CascaderOptionType]] = js.native
   def focus(): scala.Unit = js.native

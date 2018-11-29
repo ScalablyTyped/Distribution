@@ -34,6 +34,10 @@ object libTraversableModMembers extends js.Object {
     /* tfa */ fpDashTsLib.libHKTMod.HKT[T, fpDashTsLib.libHKTMod.HKT[F, _]], 
     fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[T, _]]
   ] = js.native
+  def sequence[F, T /* <: fpDashTsLib.libHKTMod.URIS */](F: fpDashTsLib.libApplicativeMod.Applicative[F], T: Traversable1[T]): js.Function1[
+    /* tfa */ fpDashTsLib.libHKTMod.Type[T, fpDashTsLib.libHKTMod.HKT[F, _]], 
+    fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.Type[T, _]]
+  ] = js.native
   def sequence[F /* <: fpDashTsLib.libHKTMod.URIS2 */, T /* <: fpDashTsLib.libHKTMod.URIS */, L](F: fpDashTsLib.libApplicativeMod.Applicative2C[F, L], T: Traversable1[T]): js.Function1[
     /* tfa */ fpDashTsLib.libHKTMod.Type[T, fpDashTsLib.libHKTMod.Type2[F, L, _]], 
     fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libHKTMod.Type[T, _]]

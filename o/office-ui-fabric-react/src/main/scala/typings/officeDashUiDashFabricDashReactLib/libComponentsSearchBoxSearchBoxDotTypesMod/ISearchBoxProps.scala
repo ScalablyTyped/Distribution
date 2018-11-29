@@ -28,13 +28,13 @@ trait ISearchBoxProps
        * The default value of the text in the SearchBox, in the case of an uncontrolled component.
        * Up till now, this has not been implemented, deprecating. Will re-implement if uncontrolled
        * component behavior is implemented.
-       * @deprecated
+       * @deprecated Not implmented.
        */
   @JSName("defaultValue")
   var defaultValue_ISearchBoxProps: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Whether or not to animate the SearchBox icon on focus.
-       * @default false
+       * @defaultvalue false
        */
   var disableAnimation: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -50,8 +50,8 @@ trait ISearchBoxProps
     ]
   ] = js.undefined
   /**
-       * Deprecated. Use placeholder instead.
-       * @deprecated
+       * Deprecated. Use `placeholder` instead.
+       * @deprecated Use `placeholder` instead.
        */
   var labelText: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -60,8 +60,8 @@ trait ISearchBoxProps
   @JSName("onChange")
   var onChange_ISearchBoxProps: js.UndefOr[js.Function1[/* newValue */ js.Any, scala.Unit]] = js.undefined
   /**
-       * Deprecated at v0.52.2, use 'onChange' instead.
-       * @deprecated
+       * Deprecated at v0.52.2, use `onChange` instead.
+       * @deprecated Use `onChange` instead.
        */
   var onChanged: js.UndefOr[js.Function1[/* newValue */ js.Any, scala.Unit]] = js.undefined
   /**
@@ -88,7 +88,7 @@ trait ISearchBoxProps
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
        * Whether or not the SearchBox is underlined.
-       * @default false
+       * @defaultvalue false
        */
   var underlined: js.UndefOr[scala.Boolean] = js.undefined
   /**

@@ -98,33 +98,33 @@ abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlat
     ]
   ): scala.Unit = js.native
   /* protected */ def createTransformerForExtraFiles(packContext: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext): builderDashUtilLib.outFsMod.FileTransformer | scala.Null = js.native
-  def dispatchArtifactCreated(file: java.lang.String): scala.Unit = js.native
-  def dispatchArtifactCreated(file: java.lang.String, target: appDashBuilderDashLibLib.outMod.Target): scala.Unit = js.native
+  def dispatchArtifactCreated(file: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def dispatchArtifactCreated(file: java.lang.String, target: appDashBuilderDashLibLib.outMod.Target): stdLib.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
     target: appDashBuilderDashLibLib.outMod.Target,
     arch: builderDashUtilLib.outArchMod.Arch
-  ): scala.Unit = js.native
+  ): stdLib.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
     target: appDashBuilderDashLibLib.outMod.Target,
     arch: builderDashUtilLib.outArchMod.Arch,
     safeArtifactName: java.lang.String
-  ): scala.Unit = js.native
+  ): stdLib.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
     target: appDashBuilderDashLibLib.outMod.Target,
     arch: scala.Null,
     safeArtifactName: java.lang.String
-  ): scala.Unit = js.native
-  def dispatchArtifactCreated(file: java.lang.String, target: scala.Null, arch: builderDashUtilLib.outArchMod.Arch): scala.Unit = js.native
+  ): stdLib.Promise[scala.Unit] = js.native
+  def dispatchArtifactCreated(file: java.lang.String, target: scala.Null, arch: builderDashUtilLib.outArchMod.Arch): stdLib.Promise[scala.Unit] = js.native
   def dispatchArtifactCreated(
     file: java.lang.String,
     target: scala.Null,
     arch: builderDashUtilLib.outArchMod.Arch,
     safeArtifactName: java.lang.String
-  ): scala.Unit = js.native
-  def dispatchArtifactCreated(file: java.lang.String, target: scala.Null, arch: scala.Null, safeArtifactName: java.lang.String): scala.Unit = js.native
+  ): stdLib.Promise[scala.Unit] = js.native
+  def dispatchArtifactCreated(file: java.lang.String, target: scala.Null, arch: scala.Null, safeArtifactName: java.lang.String): stdLib.Promise[scala.Unit] = js.native
   /* protected */ def doGetCscPassword(): js.UndefOr[java.lang.String | scala.Null] = js.native
   /* protected */ def doPack(
     outDir: java.lang.String,
@@ -134,6 +134,23 @@ abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlat
     platformSpecificBuildOptions: DC,
     targets: js.Array[appDashBuilderDashLibLib.outMod.Target]
   ): stdLib.Promise[scala.Unit] = js.native
+  def expandArtifactBeautyNamePattern(
+    targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
+    ext: java.lang.String
+  ): java.lang.String = js.native
+  def expandArtifactBeautyNamePattern(
+    targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
+    ext: java.lang.String,
+    arch: builderDashUtilLib.outArchMod.Arch
+  ): java.lang.String = js.native
+  def expandArtifactBeautyNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: java.lang.String): java.lang.String = js.native
+  def expandArtifactBeautyNamePattern(
+    targetSpecificOptions: js.UndefOr[scala.Nothing],
+    ext: java.lang.String,
+    arch: builderDashUtilLib.outArchMod.Arch
+  ): java.lang.String = js.native
+  def expandArtifactBeautyNamePattern(targetSpecificOptions: scala.Null, ext: java.lang.String): java.lang.String = js.native
+  def expandArtifactBeautyNamePattern(targetSpecificOptions: scala.Null, ext: java.lang.String, arch: builderDashUtilLib.outArchMod.Arch): java.lang.String = js.native
   def expandArtifactNamePattern(
     targetSpecificOptions: appDashBuilderDashLibLib.outCoreMod.TargetSpecificOptions,
     ext: java.lang.String
@@ -249,6 +266,7 @@ abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlat
   /* protected */ def getCscLink(): js.UndefOr[java.lang.String | scala.Null] = js.native
   /* protected */ def getCscLink(extraEnvName: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = js.native
   /* protected */ def getCscPassword(): java.lang.String = js.native
+  def getDefaultFrameworkIcon(): java.lang.String | scala.Null = js.native
   def getElectronDestinationDir(appOutDir: java.lang.String): java.lang.String = js.native
   def getElectronSrcDir(dist: java.lang.String): java.lang.String = js.native
   def getIconPath(): stdLib.Promise[java.lang.String | scala.Null] = js.native
@@ -271,7 +289,11 @@ abstract class PlatformPackager[DC /* <: appDashBuilderDashLibLib.outOptionsPlat
     taskManager: builderDashUtilLib.builderDashUtilMod.AsyncTaskManager
   ): scala.Unit = js.native
   /* protected */ def prepareAppInfo(appInfo: appDashBuilderDashLibLib.outAppInfoMod.AppInfo): appDashBuilderDashLibLib.outAppInfoMod.AppInfo = js.native
-  def resolveIcon(sources: js.Array[java.lang.String], outputFormat: IconFormat): stdLib.Promise[js.Array[IconInfo]] = js.native
+  def resolveIcon(
+    sources: js.Array[java.lang.String],
+    fallbackSources: js.Array[java.lang.String],
+    outputFormat: IconFormat
+  ): stdLib.Promise[js.Array[IconInfo]] = js.native
   /* protected */ def signApp(packContext: appDashBuilderDashLibLib.outConfigurationMod.AfterPackContext, isAsar: scala.Boolean): stdLib.Promise[_] = js.native
 }
 

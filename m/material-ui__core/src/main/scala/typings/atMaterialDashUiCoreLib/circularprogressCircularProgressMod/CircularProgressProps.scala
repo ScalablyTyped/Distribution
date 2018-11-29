@@ -13,6 +13,7 @@ trait CircularProgressProps
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit
   ] = js.undefined
+  var disableShrink: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var thickness: js.UndefOr[scala.Double] = js.undefined

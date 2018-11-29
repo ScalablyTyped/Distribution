@@ -25,47 +25,26 @@ object apolloDashServerDashCoreModMembers extends js.Object {
   def formatApolloErrors(errors: js.Array[stdLib.Error]): js.Array[apolloDashServerDashErrorsLib.apolloDashServerDashErrorsMod.ApolloError] = js.native
   def formatApolloErrors(errors: js.Array[stdLib.Error], options: apolloDashServerDashErrorsLib.Anon_Formatter): js.Array[apolloDashServerDashErrorsLib.apolloDashServerDashErrorsMod.ApolloError] = js.native
   def resolveGraphqlOptions(
-    options: apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[
-      (js.Function0[
-        (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-      ]) | (stdLib.Record[java.lang.String, _])
-    ],
+    options: apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _],
     args: js.Any*
   ): stdLib.Promise[
-    apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[
-      (js.Function0[
-        (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-      ]) | (stdLib.Record[java.lang.String, _])
-    ]
+    apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
   ] = js.native
   def resolveGraphqlOptions(
     options: js.Function1[
       /* repeated */js.Any, 
       (stdLib.Promise[
-        apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[
-          (js.Function0[
-            (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-          ]) | (stdLib.Record[java.lang.String, _])
-        ]
-      ]) | (apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[
-        (js.Function0[
-          (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-        ]) | (stdLib.Record[java.lang.String, _])
-      ])
+        apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
+      ]) | (apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _])
     ],
     args: js.Any*
   ): stdLib.Promise[
-    apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[
-      (js.Function0[
-        (stdLib.Promise[stdLib.Record[java.lang.String, _]]) | (stdLib.Record[java.lang.String, _])
-      ]) | (stdLib.Record[java.lang.String, _])
-    ]
+    apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
   ] = js.native
   def runHttpQuery(
-    handlerArguments: js.Array[_],
+    handlerArguments: apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[_],
     request: apolloDashServerDashCoreLib.distRunHttpQueryMod.HttpQueryRequest
   ): stdLib.Promise[apolloDashServerDashCoreLib.distRunHttpQueryMod.HttpQueryResponse] = js.native
-  def runQuery(options: apolloDashServerDashCoreLib.distRunQueryMod.QueryOptions): stdLib.Promise[apolloDashServerDashCoreLib.distRunQueryMod.GraphQLResponse] = js.native
   def toApolloError(error: stdLib.Error with apolloDashServerDashErrorsLib.Anon_Extensions): stdLib.Error with apolloDashServerDashErrorsLib.Anon_ExtensionsRecord = js.native
   def toApolloError(error: stdLib.Error with apolloDashServerDashErrorsLib.Anon_Extensions, code: java.lang.String): stdLib.Error with apolloDashServerDashErrorsLib.Anon_ExtensionsRecord = js.native
 }

@@ -44,8 +44,18 @@ trait Hooks extends js.Object {
     ]
   ] = js.undefined
   var afterContextMenuDefaultOptions: js.UndefOr[js.Function1[/* predefinedItems */ js.Array[_], scala.Unit]] = js.undefined
-  var afterContextMenuHide: js.UndefOr[js.Function1[/* context */ js.Object, scala.Unit]] = js.undefined
-  var afterContextMenuShow: js.UndefOr[js.Function1[/* context */ js.Object, scala.Unit]] = js.undefined
+  var afterContextMenuHide: js.UndefOr[
+    js.Function1[
+      /* context */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu, 
+      scala.Unit
+    ]
+  ] = js.undefined
+  var afterContextMenuShow: js.UndefOr[
+    js.Function1[
+      /* context */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var afterCopy: js.UndefOr[js.Function2[/* data */ js.Array[_], /* coords */ js.Array[_], scala.Unit]] = js.undefined
   var afterCopyLimit: js.UndefOr[
     js.Function4[
@@ -253,7 +263,7 @@ trait Hooks extends js.Object {
     js.Function2[/* changes */ js.Array[_], /* source */ java.lang.String, scala.Unit]
   ] = js.undefined
   var beforeColumnMove: js.UndefOr[
-    js.Function2[/* startColumn */ scala.Double, /* endColumn */ scala.Double, scala.Unit]
+    js.Function2[/* columns */ js.Array[scala.Double], /* target */ scala.Double, scala.Unit]
   ] = js.undefined
   var beforeColumnResize: js.UndefOr[
     js.Function3[
@@ -271,7 +281,12 @@ trait Hooks extends js.Object {
     ]
   ] = js.undefined
   var beforeContextMenuSetItems: js.UndefOr[js.Function1[/* menuItems */ js.Array[_], scala.Unit]] = js.undefined
-  var beforeContextMenuShow: js.UndefOr[js.Function1[/* context */ js.Object, scala.Unit]] = js.undefined
+  var beforeContextMenuShow: js.UndefOr[
+    js.Function1[
+      /* context */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var beforeCopy: js.UndefOr[js.Function2[/* data */ js.Array[_], /* coords */ js.Array[_], _]] = js.undefined
   var beforeCreateCol: js.UndefOr[
     js.Function3[
@@ -369,7 +384,9 @@ trait Hooks extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var beforeRowMove: js.UndefOr[js.Function2[/* startRow */ scala.Double, /* endRow */ scala.Double, scala.Unit]] = js.undefined
+  var beforeRowMove: js.UndefOr[
+    js.Function2[/* columns */ js.Array[scala.Double], /* target */ scala.Double, scala.Unit]
+  ] = js.undefined
   var beforeRowResize: js.UndefOr[
     js.Function3[
       /* currentRow */ scala.Double, 

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Select
-  extends reactLib.reactMod.Component[SelectProps, js.Object, js.Any] {
+trait Select[T]
+  extends reactLib.reactMod.Component[SelectProps[T], js.Object, js.Any] {
   var rcSelect: js.Any = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native

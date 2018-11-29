@@ -15,7 +15,7 @@ trait IShimmerElementsGroupProps
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IShimmerElementsGroup]] = js.undefined
   /**
        * Optional boolean for enabling flexWrap of the container containing the shimmerElements.
-       * @default false
+       * @defaultvalue false
        */
   var flexWrap: js.UndefOr[scala.Boolean] = js.undefined
   /**

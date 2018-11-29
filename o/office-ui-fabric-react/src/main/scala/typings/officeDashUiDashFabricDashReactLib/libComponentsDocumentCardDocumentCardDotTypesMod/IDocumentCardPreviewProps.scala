@@ -10,7 +10,7 @@ trait IDocumentCardPreviewProps
   extends atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[js.Object] {
   /**
        * The function return string that will describe the number of overflow documents.
-       * such as  (overflowCount: number) => `+${ overflowCount } more`,
+       * such as  (overflowCount: number) =\> `+${ overflowCount } more`,
        */
   var getOverflowDocumentCountText: js.UndefOr[js.Function1[/* overflowCount */ scala.Double, java.lang.String]] = js.undefined
   /**

@@ -42,7 +42,9 @@ trait GridSettings extends Hooks {
   var collapsibleColumns: js.UndefOr[scala.Boolean | js.Array[_]] = js.undefined
    // pro
   var columnHeaderHeight: js.UndefOr[scala.Double | js.Array[_]] = js.undefined
-  var columnSorting: js.UndefOr[scala.Boolean | js.Object] = js.undefined
+  var columnSorting: js.UndefOr[
+    scala.Boolean | handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Settings
+  ] = js.undefined
   var columnSummary: js.UndefOr[js.Object] = js.undefined
   var columns: js.UndefOr[(js.Function1[/* index */ js.UndefOr[scala.Double], scala.Unit]) | js.Array[_]] = js.undefined
   var commentedCellClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -107,7 +109,9 @@ trait GridSettings extends Hooks {
   var minRows: js.UndefOr[scala.Double] = js.undefined
   var minSpareCols: js.UndefOr[scala.Double] = js.undefined
   var minSpareRows: js.UndefOr[scala.Double] = js.undefined
-  var multiColumnSorting: js.UndefOr[scala.Boolean | js.Object] = js.undefined
+  var multiColumnSorting: js.UndefOr[
+    scala.Boolean | handsontableLib.handsontableMod.HandsontableNs.multiColumnSortingNs.Settings
+  ] = js.undefined
   var nestedHeaders: js.UndefOr[js.Array[_]] = js.undefined
    // pro
   var noWordWrapClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -136,8 +140,6 @@ trait GridSettings extends Hooks {
   ] = js.undefined
   var skipColumnOnPaste: js.UndefOr[scala.Boolean] = js.undefined
   var sortByRelevance: js.UndefOr[scala.Boolean] = js.undefined
-  var sortFunction: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var sortIndicator: js.UndefOr[scala.Boolean] = js.undefined
   var source: js.UndefOr[js.Array[_] | js.Function0[scala.Unit]] = js.undefined
   var startCols: js.UndefOr[scala.Double] = js.undefined
   var startRows: js.UndefOr[scala.Double] = js.undefined

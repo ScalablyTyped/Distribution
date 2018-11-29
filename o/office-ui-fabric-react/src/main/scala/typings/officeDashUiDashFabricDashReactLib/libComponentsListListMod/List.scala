@@ -71,16 +71,16 @@ class List protected ()
   /* private */ def _measurePage(page: js.Any): js.Any = js.native
   /**
        * Notify consumers that the rendered pages have changed
-       * @param oldPages The old pages
-       * @param newPages The new pages
-       * @param props The props to use
+       * @param oldPages - The old pages
+       * @param newPages - The new pages
+       * @param props - The props to use
        */
   /* private */ def _notifyPageChanges(oldPages: js.Any, newPages: js.Any): js.Any = js.native
   /**
        * Notify consumers that the rendered pages have changed
-       * @param oldPages The old pages
-       * @param newPages The new pages
-       * @param props The props to use
+       * @param oldPages - The old pages
+       * @param newPages - The new pages
+       * @param props - The props to use
        */
   /* private */ def _notifyPageChanges(oldPages: js.Any, newPages: js.Any, props: js.Any): js.Any = js.native
   /**

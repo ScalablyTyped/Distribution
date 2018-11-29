@@ -23,7 +23,7 @@ trait IShimmerProps
   var customElementsGroup: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
        * Controls when the shimmer is swapped with actual data through an animated transition.
-       * @default false
+       * @defaultvalue false
        */
   var isDataLoaded: js.UndefOr[scala.Boolean] = js.undefined
   /**

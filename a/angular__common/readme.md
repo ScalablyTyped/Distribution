@@ -51,6 +51,7 @@
  * * The `exports` options make the declared directives and pipes available for import
  * by other NgModules.
  *
+ * @publicApi
  */
 /**
  * @license
@@ -94,6 +95,8 @@
  */
 /**
  * Manages the scroll position.
+ *
+ * @publicApi
  */
 /**
  * @license
@@ -180,7 +183,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * @experimental i18n support is experimental.
+ * @publicApi
  */
 /**
  * @license
@@ -193,7 +196,7 @@
  * The different format styles that can be used to represent numbers.
  * Used by the function {@link getLocaleNumberFormat}.
  *
- * @experimental i18n support is experimental.
+ * @publicApi
  */
 /**
  * @license

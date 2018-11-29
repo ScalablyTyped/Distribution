@@ -137,8 +137,8 @@ trait LanguageService extends js.Object {
     name: java.lang.String,
     source: java.lang.String
   ): js.UndefOr[Symbol] = js.native
-  def getCompletionsAtPosition(fileName: java.lang.String, position: scala.Double): js.UndefOr[CompletionInfo] = js.native
-  def getCompletionsAtPosition(fileName: java.lang.String, position: scala.Double, options: GetCompletionsAtPositionOptions): js.UndefOr[CompletionInfo] = js.native
+  def getCompletionsAtPosition(fileName: java.lang.String, position: scala.Double): js.UndefOr[WithMetadata[CompletionInfo]] = js.native
+  def getCompletionsAtPosition(fileName: java.lang.String, position: scala.Double, options: GetCompletionsAtPositionOptions): js.UndefOr[WithMetadata[CompletionInfo]] = js.native
   def getDefinitionAndBoundSpan(fileName: java.lang.String, position: scala.Double): js.UndefOr[DefinitionInfoAndBoundSpan] = js.native
   def getDefinitionAtPosition(fileName: java.lang.String, position: scala.Double): js.UndefOr[js.Array[DefinitionInfo]] = js.native
   def getDocCommentTemplateAtPosition(fileName: java.lang.String, position: scala.Double): js.UndefOr[TextInsertion] = js.native

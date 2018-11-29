@@ -1,14 +1,14 @@
 organization := "com.scalablytyped"
 name := "knockout_dot_kogrid"
-version := "0.0-unknown-dt-20180910Z-3aa3de"
+version := "0.0-unknown-dt-20180910Z-95b408"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-c6ff09",
-  "com.scalablytyped" %%% "knockout" % "v3.4.0-dt-20181120Z-9cc3d8",
-  "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-99baa3",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-d287eb",
+  "com.scalablytyped" %%% "knockout" % "v3.4.0-dt-20181120Z-cbbd34",
+  "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-9c5dc2",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

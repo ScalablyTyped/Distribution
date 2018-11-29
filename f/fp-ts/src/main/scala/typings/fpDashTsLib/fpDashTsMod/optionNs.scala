@@ -24,10 +24,6 @@ object optionNs extends js.Object {
     fpDashTsLib.libOptionMod.Option[js.Any]
   ] = js.native
   val fromNullable: js.Function1[/* a */ js.UndefOr[js.Any | scala.Null], fpDashTsLib.libOptionMod.Option[js.Any]] = js.native
-  val fromPredicate: js.Function1[
-    /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    js.Function1[/* a */ js.Any, fpDashTsLib.libOptionMod.Option[js.Any]]
-  ] = js.native
   val fromRefinement: js.Function1[
     /* refinement */ fpDashTsLib.libFunctionMod.Refinement[js.Any, js.Any], 
     js.Function1[/* a */ js.Any, fpDashTsLib.libOptionMod.Option[js.Any]]
@@ -61,12 +57,15 @@ object optionNs extends js.Object {
   val isNone: js.Function1[/* fa */ fpDashTsLib.libOptionMod.Option[js.Any], /* is None */scala.Boolean] = js.native
   val isSome: js.Function1[/* fa */ fpDashTsLib.libOptionMod.Option[js.Any], /* is Some */scala.Boolean] = js.native
   val none: fpDashTsLib.libOptionMod.Option[scala.Nothing] = js.native
-  val option: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libFoldableMod.Foldable1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libPlusMod.Plus1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libTraversableMod.Traversable1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libAlternativeMod.Alternative1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libExtendMod.Extend1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libCompactableMod.Compactable1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libFilterableMod.Filterable1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libWitherableMod.Witherable1[fpDashTsLib.libOptionMod.URI] = js.native
+  val option: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libPlusMod.Plus1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libAlternativeMod.Alternative1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libExtendMod.Extend1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libCompactableMod.Compactable1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libFilterableMod.Filterable1[fpDashTsLib.libOptionMod.URI] with fpDashTsLib.libWitherableMod.Witherable1[fpDashTsLib.libOptionMod.URI] = js.native
   val some: js.Function1[/* a */ js.Any, fpDashTsLib.libOptionMod.Option[js.Any]] = js.native
   val tryCatch: js.Function1[
     /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Any], 
     fpDashTsLib.libOptionMod.Option[js.Any]
   ] = js.native
+  def fromPredicate[A](predicate: fpDashTsLib.libFunctionMod.Predicate[A]): js.Function1[/* a */ A, fpDashTsLib.libOptionMod.Option[A]] = js.native
+  @JSName("fromPredicate")
+  def fromPredicate_ABA[A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B]): js.Function1[/* a */ A, fpDashTsLib.libOptionMod.Option[B]] = js.native
   @js.native
   object None extends js.Object {
     var value: fpDashTsLib.libOptionMod.Option[scala.Nothing] = js.native

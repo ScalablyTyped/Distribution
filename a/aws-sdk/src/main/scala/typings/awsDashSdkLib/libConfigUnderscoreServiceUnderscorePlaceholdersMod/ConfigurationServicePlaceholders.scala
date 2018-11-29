@@ -11,10 +11,12 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var acm: js.UndefOr[awsDashSdkLib.clientsAcmMod.ACMNs.ClientConfiguration] = js.native
   var acmpca: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ClientConfiguration] = js.native
   var alexaforbusiness: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ClientConfiguration] = js.native
+  var amplify: js.UndefOr[awsDashSdkLib.clientsAmplifyMod.AmplifyNs.ClientConfiguration] = js.native
   var apigateway: js.UndefOr[awsDashSdkLib.clientsApigatewayMod.APIGatewayNs.ClientConfiguration] = js.native
   var applicationautoscaling: js.UndefOr[
     awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.ClientConfiguration
   ] = js.native
+  var appmesh: js.UndefOr[awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ClientConfiguration] = js.native
   var appstream: js.UndefOr[awsDashSdkLib.clientsAppstreamMod.AppStreamNs.ClientConfiguration] = js.native
   var appsync: js.UndefOr[awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ClientConfiguration] = js.native
   var athena: js.UndefOr[awsDashSdkLib.clientsAthenaMod.AthenaNs.ClientConfiguration] = js.native
@@ -22,6 +24,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var autoscalingplans: js.UndefOr[awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ClientConfiguration] = js.native
   var batch: js.UndefOr[awsDashSdkLib.clientsBatchMod.BatchNs.ClientConfiguration] = js.native
   var budgets: js.UndefOr[js.Any] = js.native
+  var chime: js.UndefOr[awsDashSdkLib.clientsChimeMod.ChimeNs.ClientConfiguration] = js.native
   var cloud9: js.UndefOr[awsDashSdkLib.clientsCloud9Mod.Cloud9Ns.ClientConfiguration] = js.native
   var clouddirectory: js.UndefOr[awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs.ClientConfiguration] = js.native
   var cloudformation: js.UndefOr[awsDashSdkLib.clientsCloudformationMod.CloudFormationNs.ClientConfiguration] = js.native
@@ -47,11 +50,15 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   ] = js.native
   var cognitosync: js.UndefOr[awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs.ClientConfiguration] = js.native
   var comprehend: js.UndefOr[awsDashSdkLib.clientsComprehendMod.ComprehendNs.ClientConfiguration] = js.native
+  var comprehendmedical: js.UndefOr[
+    awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.ClientConfiguration
+  ] = js.native
   var configservice: js.UndefOr[awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ClientConfiguration] = js.native
   var connect: js.UndefOr[awsDashSdkLib.clientsConnectMod.ConnectNs.ClientConfiguration] = js.native
   var costexplorer: js.UndefOr[awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs.ClientConfiguration] = js.native
   var cur: js.UndefOr[awsDashSdkLib.clientsCurMod.CURNs.ClientConfiguration] = js.native
   var datapipeline: js.UndefOr[awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs.ClientConfiguration] = js.native
+  var datasync: js.UndefOr[awsDashSdkLib.clientsDatasyncMod.DataSyncNs.ClientConfiguration] = js.native
   var dax: js.UndefOr[awsDashSdkLib.clientsDaxMod.DAXNs.ClientConfiguration] = js.native
   var devicefarm: js.UndefOr[awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs.ClientConfiguration] = js.native
   var directconnect: js.UndefOr[awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.ClientConfiguration] = js.native
@@ -77,8 +84,12 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var es: js.UndefOr[awsDashSdkLib.clientsEsMod.ESNs.ClientConfiguration] = js.native
   var firehose: js.UndefOr[awsDashSdkLib.clientsFirehoseMod.FirehoseNs.ClientConfiguration] = js.native
   var fms: js.UndefOr[awsDashSdkLib.clientsFmsMod.FMSNs.ClientConfiguration] = js.native
+  var fsx: js.UndefOr[awsDashSdkLib.clientsFsxMod.FSxNs.ClientConfiguration] = js.native
   var gamelift: js.UndefOr[awsDashSdkLib.clientsGameliftMod.GameLiftNs.ClientConfiguration] = js.native
   var glacier: js.UndefOr[awsDashSdkLib.clientsGlacierMod.GlacierNs.ClientConfiguration] = js.native
+  var globalaccelerator: js.UndefOr[
+    awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.ClientConfiguration
+  ] = js.native
   var glue: js.UndefOr[awsDashSdkLib.clientsGlueMod.GlueNs.ClientConfiguration] = js.native
   var greengrass: js.UndefOr[awsDashSdkLib.clientsGreengrassMod.GreengrassNs.ClientConfiguration] = js.native
   var guardduty: js.UndefOr[awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs.ClientConfiguration] = js.native
@@ -96,8 +107,12 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var iotanalytics: js.UndefOr[awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.ClientConfiguration] = js.native
   var iotdata: js.UndefOr[awsDashSdkLib.clientsIotdataMod.IotDataNs.ClientConfiguration] = js.native
   var iotjobsdataplane: js.UndefOr[awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs.ClientConfiguration] = js.native
+  var kafka: js.UndefOr[awsDashSdkLib.clientsKafkaMod.KafkaNs.ClientConfiguration] = js.native
   var kinesis: js.UndefOr[awsDashSdkLib.clientsKinesisMod.KinesisNs.ClientConfiguration] = js.native
   var kinesisanalytics: js.UndefOr[awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ClientConfiguration] = js.native
+  var kinesisanalyticsv2: js.UndefOr[
+    awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns.ClientConfiguration
+  ] = js.native
   var kinesisvideo: js.UndefOr[awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs.ClientConfiguration] = js.native
   var kinesisvideoarchivedmedia: js.UndefOr[
     awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs.ClientConfiguration
@@ -111,6 +126,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
     awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs.ClientConfiguration
   ] = js.native
   var lexruntime: js.UndefOr[awsDashSdkLib.clientsLexruntimeMod.LexRuntimeNs.ClientConfiguration] = js.native
+  var licensemanager: js.UndefOr[awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs.ClientConfiguration] = js.native
   var lightsail: js.UndefOr[awsDashSdkLib.clientsLightsailMod.LightsailNs.ClientConfiguration] = js.native
   var machinelearning: js.UndefOr[awsDashSdkLib.clientsMachinelearningMod.MachineLearningNs.ClientConfiguration] = js.native
   var macie: js.UndefOr[awsDashSdkLib.clientsMacieMod.MacieNs.ClientConfiguration] = js.native
@@ -123,6 +139,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var marketplacemetering: js.UndefOr[
     awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.ClientConfiguration
   ] = js.native
+  var mediaconnect: js.UndefOr[awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.ClientConfiguration] = js.native
   var mediaconvert: js.UndefOr[awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.ClientConfiguration] = js.native
   var medialive: js.UndefOr[awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ClientConfiguration] = js.native
   var mediapackage: js.UndefOr[awsDashSdkLib.clientsMediapackageMod.MediaPackageNs.ClientConfiguration] = js.native
@@ -140,21 +157,30 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var organizations: js.UndefOr[awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs.ClientConfiguration] = js.native
   var pi: js.UndefOr[awsDashSdkLib.clientsPiMod.PINs.ClientConfiguration] = js.native
   var pinpoint: js.UndefOr[awsDashSdkLib.clientsPinpointMod.PinpointNs.ClientConfiguration] = js.native
+  var pinpointemail: js.UndefOr[awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ClientConfiguration] = js.native
+  var pinpointsmsvoice: js.UndefOr[awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ClientConfiguration] = js.native
   var polly: js.UndefOr[awsDashSdkLib.clientsPollyMod.PollyNs.ClientConfiguration] = js.native
   var pricing: js.UndefOr[awsDashSdkLib.clientsPricingMod.PricingNs.ClientConfiguration] = js.native
+  var quicksight: js.UndefOr[awsDashSdkLib.clientsQuicksightMod.QuickSightNs.ClientConfiguration] = js.native
+  var ram: js.UndefOr[awsDashSdkLib.clientsRamMod.RAMNs.ClientConfiguration] = js.native
   var rds: js.UndefOr[awsDashSdkLib.clientsRdsMod.RDSNs.ClientConfiguration] = js.native
+  var rdsdataservice: js.UndefOr[awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ClientConfiguration] = js.native
   var redshift: js.UndefOr[awsDashSdkLib.clientsRedshiftMod.RedshiftNs.ClientConfiguration] = js.native
   var rekognition: js.UndefOr[awsDashSdkLib.clientsRekognitionMod.RekognitionNs.ClientConfiguration] = js.native
   var resourcegroups: js.UndefOr[awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.ClientConfiguration] = js.native
   var resourcegroupstaggingapi: js.UndefOr[
     awsDashSdkLib.clientsResourcegroupstaggingapiMod.ResourceGroupsTaggingAPINs.ClientConfiguration
   ] = js.native
+  var robomaker: js.UndefOr[awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ClientConfiguration] = js.native
   var route53: js.UndefOr[awsDashSdkLib.clientsRoute53Mod.Route53Ns.ClientConfiguration] = js.native
   var route53domains: js.UndefOr[awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs.ClientConfiguration] = js.native
+  var route53resolver: js.UndefOr[awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.ClientConfiguration] = js.native
   var s3: js.UndefOr[awsDashSdkLib.clientsS3Mod.S3Ns.ClientConfiguration] = js.native
+  var s3control: js.UndefOr[awsDashSdkLib.clientsS3controlMod.S3ControlNs.ClientConfiguration] = js.native
   var sagemaker: js.UndefOr[awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ClientConfiguration] = js.native
   var sagemakerruntime: js.UndefOr[awsDashSdkLib.clientsSagemakerruntimeMod.SageMakerRuntimeNs.ClientConfiguration] = js.native
   var secretsmanager: js.UndefOr[awsDashSdkLib.clientsSecretsmanagerMod.SecretsManagerNs.ClientConfiguration] = js.native
+  var securityhub: js.UndefOr[awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ClientConfiguration] = js.native
   var serverlessapplicationrepository: js.UndefOr[
     awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs.ClientConfiguration
   ] = js.native
@@ -177,6 +203,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var transcribeservice: js.UndefOr[
     awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.ClientConfiguration
   ] = js.native
+  var transfer: js.UndefOr[awsDashSdkLib.clientsTransferMod.TransferNs.ClientConfiguration] = js.native
   var translate: js.UndefOr[awsDashSdkLib.clientsTranslateMod.TranslateNs.ClientConfiguration] = js.native
   var waf: js.UndefOr[awsDashSdkLib.clientsWafMod.WAFNs.ClientConfiguration] = js.native
   var wafregional: js.UndefOr[awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs.ClientConfiguration] = js.native

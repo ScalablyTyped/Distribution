@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 
 trait RequestInit extends js.Object {
-  var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined
+  var agent: js.UndefOr[
+    RequestAgent | apolloDashServerDashEnvLib.apolloDashServerDashEnvLibNumbers.`false`
+  ] = js.undefined
   var body: js.UndefOr[BodyInit] = js.undefined
   var cache: js.UndefOr[RequestCache] = js.undefined
   // Cloudflare Workers accept a `cf` property to control Cloudflare features

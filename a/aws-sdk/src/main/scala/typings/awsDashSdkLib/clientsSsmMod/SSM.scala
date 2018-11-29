@@ -175,14 +175,14 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
      */
   def createAssociation(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.CreateAssociationResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
      */
   def createAssociation(
     callback: js.Function2[
@@ -195,14 +195,14 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
      */
   def createAssociation(params: awsDashSdkLib.clientsSsmMod.SSMNs.CreateAssociationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.CreateAssociationResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
      */
   def createAssociation(
     params: awsDashSdkLib.clientsSsmMod.SSMNs.CreateAssociationRequest,
@@ -216,14 +216,14 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
      */
   def createAssociationBatch(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.CreateAssociationBatchResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
      */
   def createAssociationBatch(
     callback: js.Function2[
@@ -236,14 +236,14 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
      */
   def createAssociationBatch(params: awsDashSdkLib.clientsSsmMod.SSMNs.CreateAssociationBatchRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.CreateAssociationBatchResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+     * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
      */
   def createAssociationBatch(
     params: awsDashSdkLib.clientsSsmMod.SSMNs.CreateAssociationBatchRequest,

@@ -16,7 +16,7 @@ trait FormControlLabelProps
   var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
   var label: reactLib.reactMod.ReactNs.ReactNode
   var labelPlacement: js.UndefOr[
-    atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.end | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.start
+    atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.end | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.start | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom
   ] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[

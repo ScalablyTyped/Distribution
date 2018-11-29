@@ -74,6 +74,14 @@ trait It extends js.Object {
            * @param fn The function for your test
            * @param timeout The timeout for an async function test
            */
+  def apply(name: java.lang.String): scala.Unit = js.native
+  /**
+           * Creates a test closure.
+           *
+           * @param name The name of your test
+           * @param fn The function for your test
+           * @param timeout The timeout for an async function test
+           */
   def apply(name: java.lang.String, fn: ProvidesCallback): scala.Unit = js.native
   /**
            * Creates a test closure.
@@ -83,6 +91,17 @@ trait It extends js.Object {
            * @param timeout The timeout for an async function test
            */
   def apply(name: java.lang.String, fn: ProvidesCallback, timeout: scala.Double): scala.Unit = js.native
+  /**
+           * Creates a test closure.
+           *
+           * @param name The name of your test
+           * @param fn The function for your test
+           * @param timeout The timeout for an async function test
+           */
+  /**
+           * Experimental and should be avoided.
+           */
+  def concurrent(name: java.lang.String): scala.Unit = js.native
   /**
            * Creates a test closure.
            *
@@ -201,6 +220,17 @@ trait It extends js.Object {
   /**
            * Only runs this test in the current file.
            */
+  def only(name: java.lang.String): scala.Unit = js.native
+  /**
+           * Creates a test closure.
+           *
+           * @param name The name of your test
+           * @param fn The function for your test
+           * @param timeout The timeout for an async function test
+           */
+  /**
+           * Only runs this test in the current file.
+           */
   def only(name: java.lang.String, fn: ProvidesCallback): scala.Unit = js.native
   /**
            * Creates a test closure.
@@ -213,6 +243,17 @@ trait It extends js.Object {
            * Only runs this test in the current file.
            */
   def only(name: java.lang.String, fn: ProvidesCallback, timeout: scala.Double): scala.Unit = js.native
+  /**
+           * Creates a test closure.
+           *
+           * @param name The name of your test
+           * @param fn The function for your test
+           * @param timeout The timeout for an async function test
+           */
+  /**
+           * Skips running this test in the current file.
+           */
+  def skip(name: java.lang.String): scala.Unit = js.native
   /**
            * Creates a test closure.
            *

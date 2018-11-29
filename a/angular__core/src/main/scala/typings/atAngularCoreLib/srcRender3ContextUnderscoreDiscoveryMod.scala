@@ -10,14 +10,15 @@ import scala.scalajs.js.annotation._
 object srcRender3ContextUnderscoreDiscoveryMod extends js.Object {
   def attachPatchData(target: js.Any, data: atAngularCoreLib.srcRender3InterfacesContextMod.LContext): scala.Unit = js.native
   def attachPatchData(target: js.Any, data: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData): scala.Unit = js.native
-  def discoverDirectives(
+  def discoverLocalRefs(lViewData: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData, nodeIndex: scala.Double): ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null = js.native
+  def getComponentAtNodeIndex(nodeIndex: scala.Double, lViewData: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData): js.Object | scala.Null = js.native
+  def getComponentViewByInstance(componentInstance: js.Object): atAngularCoreLib.srcRender3InterfacesViewMod.LViewData = js.native
+  def getContext(target: js.Any): atAngularCoreLib.srcRender3InterfacesContextMod.LContext | scala.Null = js.native
+  def getDirectivesAtNodeIndex(
     nodeIndex: scala.Double,
     lViewData: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData,
     includeComponents: scala.Boolean
   ): js.Array[_] | scala.Null = js.native
-  def discoverLocalRefs(lViewData: atAngularCoreLib.srcRender3InterfacesViewMod.LViewData, nodeIndex: scala.Double): ScalablyTyped.runtime.StringDictionary[js.Any] | scala.Null = js.native
-  def getComponentViewByInstance(componentInstance: js.Object): atAngularCoreLib.srcRender3InterfacesViewMod.LViewData = js.native
-  def getContext(target: js.Any): atAngularCoreLib.srcRender3InterfacesContextMod.LContext | scala.Null = js.native
   def isComponentInstance(instance: js.Any): scala.Boolean = js.native
   def isDirectiveInstance(instance: js.Any): scala.Boolean = js.native
 }

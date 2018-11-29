@@ -7,10 +7,31 @@ import scala.scalajs.js.annotation._
 
 object mongodbLibStrings {
   @js.native
+  sealed trait DEFAULT extends js.Object
+  
+  @js.native
   sealed trait Empty extends js.Object
   
   @js.native
   sealed trait FilterQuery extends js.Object
+  
+  @js.native
+  sealed trait GSSAPI extends js.Object
+  
+  @js.native
+  sealed trait `MONGODB-CR` extends js.Object
+  
+  @js.native
+  sealed trait `MONGODB-X509` extends js.Object
+  
+  @js.native
+  sealed trait PLAIN extends js.Object
+  
+  @js.native
+  sealed trait `SCRAM-SHA-1` extends js.Object
+  
+  @js.native
+  sealed trait `SCRAM-SHA-256` extends js.Object
   
   @js.native
   sealed trait UpdateQuery extends js.Object
@@ -57,8 +78,15 @@ object mongodbLibStrings {
   @js.native
   sealed trait warn extends js.Object
   
+  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   def Empty: Empty = "".asInstanceOf[Empty]
   def FilterQuery: FilterQuery = "FilterQuery".asInstanceOf[FilterQuery]
+  def GSSAPI: GSSAPI = "GSSAPI".asInstanceOf[GSSAPI]
+  def `MONGODB-CR`: `MONGODB-CR` = "MONGODB-CR".asInstanceOf[`MONGODB-CR`]
+  def `MONGODB-X509`: `MONGODB-X509` = "MONGODB-X509".asInstanceOf[`MONGODB-X509`]
+  def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
+  def `SCRAM-SHA-1`: `SCRAM-SHA-1` = "SCRAM-SHA-1".asInstanceOf[`SCRAM-SHA-1`]
+  def `SCRAM-SHA-256`: `SCRAM-SHA-256` = "SCRAM-SHA-256".asInstanceOf[`SCRAM-SHA-256`]
   def UpdateQuery: UpdateQuery = "UpdateQuery".asInstanceOf[UpdateQuery]
   def all: all = "all".asInstanceOf[all]
   def available: available = "available".asInstanceOf[available]

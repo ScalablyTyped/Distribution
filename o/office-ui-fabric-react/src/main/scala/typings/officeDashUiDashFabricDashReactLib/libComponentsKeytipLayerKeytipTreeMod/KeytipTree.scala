@@ -48,7 +48,7 @@ class KeytipTree () extends js.Object {
        * If no node is given, will use the 'currentKeytip'
        *
        * @param node - Node to get the children for
-       * @returns {string[]} List of node IDs that are the children of the node
+       * @returns List of node IDs that are the children of the node
        */
   def getChildren(): js.Array[java.lang.String] = js.native
   /**
@@ -56,7 +56,7 @@ class KeytipTree () extends js.Object {
        * If no node is given, will use the 'currentKeytip'
        *
        * @param node - Node to get the children for
-       * @returns {string[]} List of node IDs that are the children of the node
+       * @returns List of node IDs that are the children of the node
        */
   def getChildren(
     node: officeDashUiDashFabricDashReactLib.libComponentsKeytipLayerIKeytipTreeNodeMod.IKeytipTreeNode
@@ -66,8 +66,8 @@ class KeytipTree () extends js.Object {
        * will match persisted nodes
        *
        * @param keySequence - string to match
-       * @param currentKeytip - The keytip who's children will try to match
-       * @returns {IKeytipTreeNode | undefined} The node that exactly matched the keySequence, or undefined if none matched
+       * @param currentKeytip - The keytip whose children will try to match
+       * @returns The node that exactly matched the keySequence, or undefined if none matched
        */
   def getExactMatchedNode(
     keySequence: java.lang.String,
@@ -79,7 +79,7 @@ class KeytipTree () extends js.Object {
        * Gets a single node from its ID
        *
        * @param id - ID of the node to get
-       * @returns {IKeytipTreeNode | undefined} Node with the given ID, if found
+       * @returns Node with the given ID, if found
        */
   def getNode(id: java.lang.String): js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsKeytipLayerIKeytipTreeNodeMod.IKeytipTreeNode
@@ -88,7 +88,7 @@ class KeytipTree () extends js.Object {
        * Gets all nodes from their IDs
        *
        * @param ids List of keytip IDs
-       * @returns {IKeytipTreeNode[]} Array of nodes that match the given IDs, can be empty
+       * @returns Array of nodes that match the given IDs, can be empty
        */
   def getNodes(ids: js.Array[java.lang.String]): js.Array[
     officeDashUiDashFabricDashReactLib.libComponentsKeytipLayerIKeytipTreeNodeMod.IKeytipTreeNode
@@ -98,8 +98,8 @@ class KeytipTree () extends js.Object {
        * disabled nodes but will match persisted nodes
        *
        * @param keySequence - string to partially match
-       * @param currentKeytip - The keytip who's children will try to partially match
-       * @returns {IKeytipTreeNode[]} List of tree nodes that partially match the given sequence
+       * @param currentKeytip - The keytip whose children will try to partially match
+       * @returns List of tree nodes that partially match the given sequence
        */
   def getPartiallyMatchedNodes(
     keySequence: java.lang.String,
@@ -111,7 +111,7 @@ class KeytipTree () extends js.Object {
        * Tests if the currentKeytip in this.keytipTree is the parent of 'keytipProps'
        *
        * @param keytipProps - Keytip to test the parent for
-       * @returns {boolean} T/F if the currentKeytip is this keytipProps' parent
+       * @returns T/F if the currentKeytip is this keytipProps' parent
        */
   def isCurrentKeytipParent(keytipProps: officeDashUiDashFabricDashReactLib.libComponentsKeytipKeytipDotTypesMod.IKeytipProps): scala.Boolean = js.native
   /**

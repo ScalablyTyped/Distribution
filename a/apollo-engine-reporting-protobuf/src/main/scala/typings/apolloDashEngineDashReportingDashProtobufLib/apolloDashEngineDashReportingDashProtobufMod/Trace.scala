@@ -19,6 +19,9 @@ class Trace () extends ITrace {
   /** Trace clientName. */
   @JSName("clientName")
   var clientName_Trace: java.lang.String = js.native
+  /** Trace clientReferenceId. */
+  @JSName("clientReferenceId")
+  var clientReferenceId_Trace: java.lang.String = js.native
   /** Trace clientVersion. */
   @JSName("clientVersion")
   var clientVersion_Trace: java.lang.String = js.native

@@ -14,9 +14,6 @@ trait WheelEvent extends MouseEvent {
   val deltaX: scala.Double = js.native
   val deltaY: scala.Double = js.native
   val deltaZ: scala.Double = js.native
-  val wheelDelta: scala.Double = js.native
-  val wheelDeltaX: scala.Double = js.native
-  val wheelDeltaY: scala.Double = js.native
   def getCurrentPoint(element: Element): scala.Unit = js.native
   def initWheelEvent(
     typeArg: java.lang.String,

@@ -1,16 +1,16 @@
 organization := "com.scalablytyped"
 name := "enzyme-redux"
-version := "0.2-dt-20180910Z-e028f5"
+version := "0.2-dt-20180910Z-e9c52f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20181126Z-01b5e2",
-  "com.scalablytyped" %%% "csstype" % "2.5.7-eccde3",
-  "com.scalablytyped" %%% "enzyme" % "3.1-dt-20181109Z-11f9da",
-  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181122Z-2ddd12",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "cheerio" % "v0.22.0-dt-20181126Z-8c85de",
+  "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
+  "com.scalablytyped" %%% "enzyme" % "3.1-dt-20181109Z-1b1c0a",
+  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
+  "com.scalablytyped" %%% "react" % "16.7-dt-20181129Z-4e32c2",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

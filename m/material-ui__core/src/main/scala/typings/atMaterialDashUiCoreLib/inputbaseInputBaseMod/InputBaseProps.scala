@@ -12,7 +12,9 @@ trait InputBaseProps
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var defaultValue: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var defaultValue: js.UndefOr[
+    (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
+  ] = js.undefined
   var disableUnderline: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var endAdornment: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
@@ -22,7 +24,9 @@ trait InputBaseProps
   var inputComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[InputBaseComponentProps]] = js.undefined
   var inputProps: js.UndefOr[InputBaseComponentProps] = js.undefined
   var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_]] = js.undefined
-  var margin: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dense] = js.undefined
+  var margin: js.UndefOr[
+    atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dense | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none
+  ] = js.undefined
   var multiline: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -36,6 +40,7 @@ trait InputBaseProps
   var onChange: js.UndefOr[
     reactLib.reactMod.ReactNs.ChangeEventHandler[reactLib.HTMLTextAreaElement | reactLib.HTMLInputElement]
   ] = js.undefined
+  var onFilled: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onKeyDown: js.UndefOr[
     reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLTextAreaElement | reactLib.HTMLInputElement]
   ] = js.undefined
@@ -44,6 +49,12 @@ trait InputBaseProps
   ] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
+  var renderPrefix: js.UndefOr[
+    js.Function1[
+      /* state */ atMaterialDashUiCoreLib.Anon_Margin, 
+      reactLib.reactMod.ReactNs.ReactNode
+    ]
+  ] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var rows: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var rowsMax: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -51,7 +62,7 @@ trait InputBaseProps
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[
-    (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean
+    (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
   ] = js.undefined
 }
 

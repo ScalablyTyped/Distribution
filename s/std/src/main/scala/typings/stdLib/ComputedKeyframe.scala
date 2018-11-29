@@ -5,12 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Record) */ 
-trait ComputedKeyframe extends js.Object {
-  var composite: js.UndefOr[CompositeOperation | scala.Null] = js.undefined
-  var computedOffset: js.UndefOr[scala.Double] = js.undefined
-  var easing: js.UndefOr[java.lang.String] = js.undefined
-  var offset: js.UndefOr[scala.Double | scala.Null] = js.undefined
+
+trait ComputedKeyframe
+  extends /* property */ ScalablyTyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Null]] {
+  var composite: CompositeOperationOrAuto
+  var computedOffset: scala.Double
+  var easing: java.lang.String
+  var offset: scala.Double | scala.Null
 }
 

@@ -54,7 +54,7 @@ class Item () extends js.Object {
   /**
            * The fill color of the item.
            */
-  var fillColor: Color | java.lang.String = js.native
+  var fillColor: Color | java.lang.String | scala.Null = js.native
   /**
            * The fill-rule with which the shape gets filled. Please note that only modern browsers support fill-rules other than 'nonzero'.
            * Values - 'nonzero', 'evenodd'
@@ -173,7 +173,7 @@ class Item () extends js.Object {
   /**
            * The shadow color.
            */
-  var shadowColor: Color | java.lang.String = js.native
+  var shadowColor: Color | java.lang.String | scala.Null = js.native
   /**
            * The shadow’s offset.
            * Default - 0
@@ -191,7 +191,7 @@ class Item () extends js.Object {
   /**
            * The color of the stroke.
            */
-  var strokeColor: Color | java.lang.String = js.native
+  var strokeColor: Color | java.lang.String | scala.Null = js.native
   /**
            * The shape to be used at the segments and corners of Path items when they have a stroke.
            * String('miter', 'round', 'bevel')

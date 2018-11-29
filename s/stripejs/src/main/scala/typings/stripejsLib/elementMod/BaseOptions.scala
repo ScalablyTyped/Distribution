@@ -25,6 +25,6 @@ trait BaseOptions extends js.Object {
   /**
        * Customize appearance using CSS properties
        */
-  var style: js.UndefOr[stripejsLib.Anon_BaseInvalidEmpty] = js.undefined
+  var style: js.UndefOr[stripejsLib.Anon_BaseInvalid] = js.undefined
 }
 

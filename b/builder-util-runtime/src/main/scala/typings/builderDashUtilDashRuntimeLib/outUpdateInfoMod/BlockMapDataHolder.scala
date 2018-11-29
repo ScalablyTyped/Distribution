@@ -13,6 +13,7 @@ trait BlockMapDataHolder extends js.Object {
        * so, to reduce request count, block map size is specified in the update metadata too.
        */
   var blockMapSize: js.UndefOr[scala.Double] = js.undefined
+  val isAdminRightsRequired: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * The file checksum.
        */

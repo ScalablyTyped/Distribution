@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object libTaskEitherModMembers extends js.Object {
   val URI: /* TaskEither */ java.lang.String = js.native
+  val bracket: js.Function3[
+    /* acquire */ TaskEither[js.Any, js.Any], 
+    /* use */ js.Function1[/* a */ js.Any, TaskEither[js.Any, js.Any]], 
+    /* release */ js.Function2[
+      /* a */ js.Any, 
+      /* e */ fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
+      TaskEither[js.Any, scala.Unit]
+    ], 
+    TaskEither[js.Any, js.Any]
+  ] = js.native
   val fromEither: js.Function1[
     /* fa */ fpDashTsLib.libEitherMod.Either[js.Any, js.Any], 
     TaskEither[js.Any, js.Any]
@@ -19,11 +29,6 @@ object libTaskEitherModMembers extends js.Object {
     TaskEither[js.Any, js.Any]
   ] = js.native
   val fromLeft: js.Function1[/* l */ js.Any, TaskEither[js.Any, js.Any]] = js.native
-  val fromPredicate: js.Function2[
-    /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    /* whenFalse */ js.Function1[/* a */ js.Any, js.Any], 
-    js.Function1[/* a */ js.Any, TaskEither[js.Any, js.Any]]
-  ] = js.native
   val getApplyMonoid: js.Function1[
     /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
     fpDashTsLib.libMonoidMod.Monoid[TaskEither[js.Any, js.Any]]
@@ -38,12 +43,16 @@ object libTaskEitherModMembers extends js.Object {
   ] = js.native
   val left: js.Function1[/* fa */ fpDashTsLib.libTaskMod.Task[js.Any], TaskEither[js.Any, js.Any]] = js.native
   val right: js.Function1[/* fa */ fpDashTsLib.libTaskMod.Task[js.Any], TaskEither[js.Any, js.Any]] = js.native
-  val taskEither: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] = js.native
+  val taskEither: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] with fpDashTsLib.libMonadIOMod.MonadIO2[URI] with fpDashTsLib.libMonadTaskMod.MonadTask2[URI] = js.native
+  val taskEitherSeq: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libAltMod.Alt2[URI] with fpDashTsLib.libMonadIOMod.MonadIO2[URI] with fpDashTsLib.libMonadTaskMod.MonadTask2[URI] = js.native
   val tryCatch: js.Function2[
     /* f */ fpDashTsLib.libFunctionMod.Lazy[stdLib.Promise[js.Any]], 
-    /* onrejected */ js.Function1[/* reason */ js.Object, js.Any], 
+    /* onrejected */ js.Function1[/* reason */ js.Any, js.Any], 
     TaskEither[js.Any, js.Any]
   ] = js.native
+  def fromPredicate[L, A](predicate: fpDashTsLib.libFunctionMod.Predicate[A], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, TaskEither[L, A]] = js.native
+  @JSName("fromPredicate")
+  def fromPredicate_LABA[L, A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, TaskEither[L, B]] = js.native
   def taskify[L, R](
     f: js.Function1[
       /* cb */ js.Function2[/* e */ js.UndefOr[L | scala.Null], /* r */ js.UndefOr[R], scala.Unit], 

@@ -314,45 +314,53 @@ trait Queue[T] extends js.Object {
        *
        * The callback is called everytime a job is placed in the queue.
        * It is passed an instance of the job as first argument.
-       * The callback can also be defined as the string path to a module
-       * exporting the callback function. Using a path has several advantages:
-       * - The process is sandboxed so if it crashes it does not affect the worker.
-       * - You can run blocking code without affecting the queue (jobs will not stall).
-       * - Much better utilization of multi-core CPUs.
-       * - Less connections to redis.
        *
-       * A promise must be returned to signal job completion.
-       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
-       * If it is resolved, its value will be the "completed" event's second argument.
-       */
-  def process(callback: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  /**
-       * Defines a processing function for the jobs placed into a given Queue.
-       *
-       * The callback is called everytime a job is placed in the queue.
-       * It is passed an instance of the job as first argument.
-       * The callback can also be defined as the string path to a module
-       * exporting the callback function. Using a path has several advantages:
-       * - The process is sandboxed so if it crashes it does not affect the worker.
-       * - You can run blocking code without affecting the queue (jobs will not stall).
-       * - Much better utilization of multi-core CPUs.
-       * - Less connections to redis.
-       *
-       * A promise must be returned to signal job completion.
-       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
-       * If it is resolved, its value will be the "completed" event's second argument.
-       */
-  def process(callback: js.Function1[/* job */ Job[T], scala.Unit]): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  /**
-       * Defines a processing function for the jobs placed into a given Queue.
-       *
-       * The callback is called everytime a job is placed in the queue.
-       * It is passed an instance of the job as first argument.
-       *
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
        * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
-       * or with a result as second argument as second argument (e.g.: done(null, result);) when the job is successful.
-       * Errors will be passed as a second argument to the "failed" event;
-       * results, as a second argument to the "completed" event.
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
+       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+       * If it is resolved, its value will be the "completed" event's second argument.
+       */
+  def process(callback: java.lang.String): scala.Unit = js.native
+  /**
+       * Defines a processing function for the jobs placed into a given Queue.
+       *
+       * The callback is called everytime a job is placed in the queue.
+       * It is passed an instance of the job as first argument.
+       *
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
+       * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
+       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+       * If it is resolved, its value will be the "completed" event's second argument.
+       */
+  def process(callback: js.Function1[/* job */ Job[T], bluebirdLib.bluebirdMod.namespaced[_]]): scala.Unit = js.native
+  /**
+       * Defines a processing function for the jobs placed into a given Queue.
+       *
+       * The callback is called everytime a job is placed in the queue.
+       * It is passed an instance of the job as first argument.
+       *
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
+       * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
+       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+       * If it is resolved, its value will be the "completed" event's second argument.
        */
   def process(callback: js.Function2[/* job */ Job[T], /* done */ DoneCallback, scala.Unit]): scala.Unit = js.native
   /**
@@ -360,106 +368,128 @@ trait Queue[T] extends js.Object {
        *
        * The callback is called everytime a job is placed in the queue.
        * It is passed an instance of the job as first argument.
-       * The callback can also be defined as the string path to a module
-       * exporting the callback function. Using a path has several advantages:
-       * - The process is sandboxed so if it crashes it does not affect the worker.
-       * - You can run blocking code without affecting the queue (jobs will not stall).
-       * - Much better utilization of multi-core CPUs.
-       * - Less connections to redis.
        *
-       * A promise must be returned to signal job completion.
-       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
-       * If it is resolved, its value will be the "completed" event's second argument.
-       *
-       * @param concurrency Bull will then call you handler in parallel respecting this max number.
-       */
-  def process(concurrency: scala.Double, callback: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  /**
-       * Defines a processing function for the jobs placed into a given Queue.
-       *
-       * The callback is called everytime a job is placed in the queue.
-       * It is passed an instance of the job as first argument.
-       * The callback can also be defined as the string path to a module
-       * exporting the callback function. Using a path has several advantages:
-       * - The process is sandboxed so if it crashes it does not affect the worker.
-       * - You can run blocking code without affecting the queue (jobs will not stall).
-       * - Much better utilization of multi-core CPUs.
-       * - Less connections to redis.
-       *
-       * A promise must be returned to signal job completion.
-       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
-       * If it is resolved, its value will be the "completed" event's second argument.
-       *
-       * @param concurrency Bull will then call you handler in parallel respecting this max number.
-       */
-  def process(concurrency: scala.Double, callback: js.Function1[/* job */ Job[T], scala.Unit]): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  /**
-       * Defines a processing function for the jobs placed into a given Queue.
-       *
-       * The callback is called everytime a job is placed in the queue.
-       * It is passed an instance of the job as first argument.
-       *
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
        * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
-       * or with a result as second argument as second argument (e.g.: done(null, result);) when the job is successful.
-       * Errors will be passed as a second argument to the "failed" event;
-       * results, as a second argument to the "completed" event.
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
        *
-       * @param concurrency Bull will then call you handler in parallel respecting this max number.
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
+       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+       * If it is resolved, its value will be the "completed" event's second argument.
+       *
+       * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
+       */
+  def process(concurrency: scala.Double, callback: java.lang.String): scala.Unit = js.native
+  /**
+       * Defines a processing function for the jobs placed into a given Queue.
+       *
+       * The callback is called everytime a job is placed in the queue.
+       * It is passed an instance of the job as first argument.
+       *
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
+       * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
+       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+       * If it is resolved, its value will be the "completed" event's second argument.
+       *
+       * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
+       */
+  def process(
+    concurrency: scala.Double,
+    callback: js.Function1[/* job */ Job[T], bluebirdLib.bluebirdMod.namespaced[_]]
+  ): scala.Unit = js.native
+  /**
+       * Defines a processing function for the jobs placed into a given Queue.
+       *
+       * The callback is called everytime a job is placed in the queue.
+       * It is passed an instance of the job as first argument.
+       *
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
+       * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
+       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+       * If it is resolved, its value will be the "completed" event's second argument.
+       *
+       * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
        */
   def process(
     concurrency: scala.Double,
     callback: js.Function2[/* job */ Job[T], /* done */ DoneCallback, scala.Unit]
   ): scala.Unit = js.native
   /**
-       * Defines a named processing function for the jobs placed into a given Queue.
+       * Defines a processing function for the jobs placed into a given Queue.
        *
        * The callback is called everytime a job is placed in the queue.
        * It is passed an instance of the job as first argument.
-       * The callback can also be defined as the string path to a module
-       * exporting the callback function. Using a path has several advantages:
-       * - The process is sandboxed so if it crashes it does not affect the worker.
-       * - You can run blocking code without affecting the queue (jobs will not stall).
-       * - Much better utilization of multi-core CPUs.
-       * - Less connections to redis.
        *
-       * A promise must be returned to signal job completion.
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
+       * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
        * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
        * If it is resolved, its value will be the "completed" event's second argument.
        *
        * @param name Bull will only call the handler if the job name matches
        */
   // tslint:disable-next-line:unified-signatures
-  def process(name: java.lang.String, callback: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  /**
-       * Defines a named processing function for the jobs placed into a given Queue.
-       *
-       * The callback is called everytime a job is placed in the queue.
-       * It is passed an instance of the job as first argument.
-       * The callback can also be defined as the string path to a module
-       * exporting the callback function. Using a path has several advantages:
-       * - The process is sandboxed so if it crashes it does not affect the worker.
-       * - You can run blocking code without affecting the queue (jobs will not stall).
-       * - Much better utilization of multi-core CPUs.
-       * - Less connections to redis.
-       *
-       * A promise must be returned to signal job completion.
-       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
-       * If it is resolved, its value will be the "completed" event's second argument.
-       *
-       * @param name Bull will only call the handler if the job name matches
-       */
-  // tslint:disable-next-line:unified-signatures
-  def process(name: java.lang.String, callback: js.Function1[/* job */ Job[T], scala.Unit]): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def process(name: java.lang.String, callback: java.lang.String): scala.Unit = js.native
   /**
        * Defines a processing function for the jobs placed into a given Queue.
        *
        * The callback is called everytime a job is placed in the queue.
        * It is passed an instance of the job as first argument.
        *
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
        * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
-       * or with a result as second argument as second argument (e.g.: done(null, result);) when the job is successful.
-       * Errors will be passed as a second argument to the "failed" event;
-       * results, as a second argument to the "completed" event.
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
+       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+       * If it is resolved, its value will be the "completed" event's second argument.
+       *
+       * @param name Bull will only call the handler if the job name matches
+       */
+  // tslint:disable-next-line:unified-signatures
+  def process(
+    name: java.lang.String,
+    callback: js.Function1[/* job */ Job[T], bluebirdLib.bluebirdMod.namespaced[_]]
+  ): scala.Unit = js.native
+  /**
+       * Defines a processing function for the jobs placed into a given Queue.
+       *
+       * The callback is called everytime a job is placed in the queue.
+       * It is passed an instance of the job as first argument.
+       *
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
+       * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
+       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+       * If it is resolved, its value will be the "completed" event's second argument.
        *
        * @param name Bull will only call the handler if the job name matches
        */
@@ -469,62 +499,70 @@ trait Queue[T] extends js.Object {
     callback: js.Function2[/* job */ Job[T], /* done */ DoneCallback, scala.Unit]
   ): scala.Unit = js.native
   /**
-       * Defines a named processing function for the jobs placed into a given Queue.
+       * Defines a processing function for the jobs placed into a given Queue.
        *
        * The callback is called everytime a job is placed in the queue.
        * It is passed an instance of the job as first argument.
-       * The callback can also be defined as the string path to a module
-       * exporting the callback function. Using a path has several advantages:
-       * - The process is sandboxed so if it crashes it does not affect the worker.
-       * - You can run blocking code without affecting the queue (jobs will not stall).
-       * - Much better utilization of multi-core CPUs.
-       * - Less connections to redis.
        *
-       * A promise must be returned to signal job completion.
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
+       * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
        * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
        * If it is resolved, its value will be the "completed" event's second argument.
        *
        * @param name Bull will only call the handler if the job name matches
-       * @param concurrency Bull will then call you handler in parallel respecting this max number.
+       * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
        */
-  def process(name: java.lang.String, concurrency: scala.Double, callback: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  /**
-       * Defines a named processing function for the jobs placed into a given Queue.
-       *
-       * The callback is called everytime a job is placed in the queue.
-       * It is passed an instance of the job as first argument.
-       * The callback can also be defined as the string path to a module
-       * exporting the callback function. Using a path has several advantages:
-       * - The process is sandboxed so if it crashes it does not affect the worker.
-       * - You can run blocking code without affecting the queue (jobs will not stall).
-       * - Much better utilization of multi-core CPUs.
-       * - Less connections to redis.
-       *
-       * A promise must be returned to signal job completion.
-       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
-       * If it is resolved, its value will be the "completed" event's second argument.
-       *
-       * @param name Bull will only call the handler if the job name matches
-       * @param concurrency Bull will then call you handler in parallel respecting this max number.
-       */
-  def process(
-    name: java.lang.String,
-    concurrency: scala.Double,
-    callback: js.Function1[/* job */ Job[T], scala.Unit]
-  ): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def process(name: java.lang.String, concurrency: scala.Double, callback: java.lang.String): scala.Unit = js.native
   /**
        * Defines a processing function for the jobs placed into a given Queue.
        *
        * The callback is called everytime a job is placed in the queue.
        * It is passed an instance of the job as first argument.
        *
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
        * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
-       * or with a result as second argument as second argument (e.g.: done(null, result);) when the job is successful.
-       * Errors will be passed as a second argument to the "failed" event;
-       * results, as a second argument to the "completed" event.
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
+       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+       * If it is resolved, its value will be the "completed" event's second argument.
        *
        * @param name Bull will only call the handler if the job name matches
-       * @param concurrency Bull will then call you handler in parallel respecting this max number.
+       * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
+       */
+  def process(
+    name: java.lang.String,
+    concurrency: scala.Double,
+    callback: js.Function1[/* job */ Job[T], bluebirdLib.bluebirdMod.namespaced[_]]
+  ): scala.Unit = js.native
+  /**
+       * Defines a processing function for the jobs placed into a given Queue.
+       *
+       * The callback is called everytime a job is placed in the queue.
+       * It is passed an instance of the job as first argument.
+       *
+       * If the callback signature contains the second optional done argument,
+       * the callback will be passed a done callback to be called after the job has been completed.
+       * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
+       * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+       * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+       *
+       * If, however, the callback signature does not contain the done argument,
+       * a promise must be returned to signal job completion.
+       * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+       * If it is resolved, its value will be the "completed" event's second argument.
+       *
+       * @param name Bull will only call the handler if the job name matches
+       * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
        */
   def process(
     name: java.lang.String,

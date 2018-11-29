@@ -15,6 +15,6 @@ object libReaderModMembers extends js.Object {
     /* f */ js.Function1[/* e */ js.Any, js.Any], 
     js.Function1[/* fa */ Reader[js.Any, js.Any], Reader[js.Any, js.Any]]
   ] = js.native
-  val reader: fpDashTsLib.libMonadMod.Monad2[URI] = js.native
+  val reader: fpDashTsLib.libMonadMod.Monad2[URI] with fpDashTsLib.libProfunctorMod.Profunctor2[URI] with fpDashTsLib.libCategoryMod.Category2[URI] with fpDashTsLib.libStrongMod.Strong2[URI] with fpDashTsLib.libChoiceMod.Choice2[URI] = js.native
 }
 

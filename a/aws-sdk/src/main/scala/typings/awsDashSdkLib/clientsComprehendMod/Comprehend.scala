@@ -216,6 +216,252 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+     */
+  def createDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+     */
+  def createDocumentClassifier(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+     */
+  def createDocumentClassifier(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new document classifier that you can use to categorize documents. To create a classifier you provide a set of training documents that labeled with the categories that you want to use. After the classifier is trained you can use it to categorize a set of labeled documents into the categories. 
+     */
+  def createDocumentClassifier(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+     */
+  def createEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+     */
+  def createEntityRecognizer(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+     */
+  def createEntityRecognizer(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates an entity recognizer using submitted files. After your CreateEntityRecognizer request is submitted, you can check job status using the API. 
+     */
+  def createEntityRecognizer(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.CreateEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
+     */
+  def deleteDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
+     */
+  def deleteDocumentClassifier(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
+     */
+  def deleteDocumentClassifier(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes a previously created document classifier Only those classifiers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the classifier into a DELETING state, and it is then removed by a background job. Once removed, the classifier disappears from your account and is no longer available for use. 
+     */
+  def deleteDocumentClassifier(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
+     */
+  def deleteEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
+     */
+  def deleteEntityRecognizer(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
+     */
+  def deleteEntityRecognizer(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. 
+     */
+  def deleteEntityRecognizer(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DeleteEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
+     */
+  def describeDocumentClassificationJob(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
+     */
+  def describeDocumentClassificationJob(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
+     */
+  def describeDocumentClassificationJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the properties associated with a document classification job. Use this operation to get the status of a classification job.
+     */
+  def describeDocumentClassificationJob(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassificationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the properties associated with a document classifier.
+     */
+  def describeDocumentClassifier(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the properties associated with a document classifier.
+     */
+  def describeDocumentClassifier(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the properties associated with a document classifier.
+     */
+  def describeDocumentClassifier(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets the properties associated with a document classifier.
+     */
+  def describeDocumentClassifier(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeDocumentClassifierResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.
      */
   def describeDominantLanguageDetectionJob(): awsDashSdkLib.libRequestMod.Request[
@@ -297,6 +543,47 @@ trait Comprehend
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntitiesDetectionJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
+     */
+  def describeEntityRecognizer(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
+     */
+  def describeEntityRecognizer(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
+     */
+  def describeEntityRecognizer(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.
+     */
+  def describeEntityRecognizer(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.DescribeEntityRecognizerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -628,6 +915,88 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Gets a list of the documentation classification jobs that you have submitted.
+     */
+  def listDocumentClassificationJobs(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the documentation classification jobs that you have submitted.
+     */
+  def listDocumentClassificationJobs(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the documentation classification jobs that you have submitted.
+     */
+  def listDocumentClassificationJobs(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the documentation classification jobs that you have submitted.
+     */
+  def listDocumentClassificationJobs(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassificationJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the document classifiers that you have created.
+     */
+  def listDocumentClassifiers(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the document classifiers that you have created.
+     */
+  def listDocumentClassifiers(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the document classifiers that you have created.
+     */
+  def listDocumentClassifiers(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the document classifiers that you have created.
+     */
+  def listDocumentClassifiers(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListDocumentClassifiersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Gets a list of the dominant language detection jobs that you have submitted.
      */
   def listDominantLanguageDetectionJobs(): awsDashSdkLib.libRequestMod.Request[
@@ -707,6 +1076,47 @@ trait Comprehend
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntitiesDetectionJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
+     */
+  def listEntityRecognizers(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
+     */
+  def listEntityRecognizers(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
+     */
+  def listEntityRecognizers(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the properties of all entity recognizers that you created, including recognizers currently in training. Allows you to filter the list of recognizers based on criteria such as status and submission time. This call returns up to 500 entity recognizers in the list, with a default number of 100 recognizers in the list. The results of this list are not in any particular order. Please get the list and sort locally if needed.
+     */
+  def listEntityRecognizers(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListEntityRecognizersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -833,6 +1243,47 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+     */
+  def startDocumentClassificationJob(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+     */
+  def startDocumentClassificationJob(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+     */
+  def startDocumentClassificationJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Starts an asynchronous document classification job. Use the operation to track the progress of the job.
+     */
+  def startDocumentClassificationJob(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartDocumentClassificationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Starts an asynchronous dominant language detection job for a collection of documents. Use the operation to track the status of a job.
      */
   def startDominantLanguageDetectionJob(): awsDashSdkLib.libRequestMod.Request[
@@ -874,14 +1325,14 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job.
+     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
      */
   def startEntitiesDetectionJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartEntitiesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job.
+     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
      */
   def startEntitiesDetectionJob(
     callback: js.Function2[
@@ -894,14 +1345,14 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job.
+     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
      */
   def startEntitiesDetectionJob(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartEntitiesDetectionJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartEntitiesDetectionJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job.
+     * Starts an asynchronous entity detection job for a collection of documents. Use the operation to track the status of a job. This API can be used for either standard entity detection or custom entity recognition. In order to be used for custom entity recognition, the optional EntityRecognizerArn must be used in order to provide access to the recognizer being used to detect the custom entity.
      */
   def startEntitiesDetectionJob(
     params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.StartEntitiesDetectionJobRequest,

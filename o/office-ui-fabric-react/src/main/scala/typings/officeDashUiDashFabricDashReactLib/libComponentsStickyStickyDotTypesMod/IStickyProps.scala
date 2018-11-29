@@ -14,7 +14,7 @@ trait IStickyProps
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[IStickyProps]] = js.undefined
   /**
        * If true, then match scrolling position of placeholder element in Sticky.
-       * @default true
+       * @defaultvalue true
        */
   var isScrollSynced: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait IStickyProps
   var stickyClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Region to render sticky component in.
-       * @default Both
+       * @defaultvalue Both
        */
   var stickyPosition: js.UndefOr[StickyPositionType] = js.undefined
 }

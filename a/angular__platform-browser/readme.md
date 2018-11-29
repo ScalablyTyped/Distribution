@@ -78,7 +78,7 @@
 /**
  * Represents a meta element.
  *
- * @experimental
+ * @publicApi
  */
 /**
  * @license

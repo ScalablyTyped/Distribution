@@ -19,10 +19,14 @@ class Session () extends js.Object {
   val user: User = js.native
   def addConnectionNotification(callback: ConnectionNotificationCallback): scala.Unit = js.native
   def addProgressNotification(direction: ProgressDirection, mode: ProgressMode, progressCallback: ProgressNotificationCallback): scala.Unit = js.native
+  def downloadAllServerChanges(): stdLib.Promise[scala.Unit] = js.native
+  def downloadAllServerChanges(timeoutMs: scala.Double): stdLib.Promise[scala.Unit] = js.native
   def isConnected(): scala.Boolean = js.native
   def pause(): scala.Unit = js.native
   def removeConnectionNotification(callback: ConnectionNotificationCallback): scala.Unit = js.native
   def removeProgressNotification(progressCallback: ProgressNotificationCallback): scala.Unit = js.native
   def resume(): scala.Unit = js.native
+  def uploadAllLocalChanges(): stdLib.Promise[scala.Unit] = js.native
+  def uploadAllLocalChanges(timeoutMs: scala.Double): stdLib.Promise[scala.Unit] = js.native
 }
 

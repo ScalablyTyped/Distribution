@@ -34,9 +34,7 @@ trait IIconProps
        *   should avoid using `<Icon icon={<Element />}` directly; simply render
        *   `<Element />` instead.
        */
-  var icon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`false` | scala.Null
-  ]
+  var icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   /**
        * Size of the icon, in pixels. Blueprint contains 16px and 20px SVG icon
        * images, and chooses the appropriate resolution based on this prop.

@@ -16,6 +16,9 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait BEFORE extends js.Object
   
   @js.native
+  sealed trait CASCADE extends js.Object
+  
+  @js.native
   sealed trait CASCADED extends js.Object
   
   @js.native
@@ -52,10 +55,16 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait LOCAL extends js.Object
   
   @js.native
+  sealed trait `NO ACTION` extends js.Object
+  
+  @js.native
   sealed trait `NO FORCE` extends js.Object
   
   @js.native
   sealed trait OUT extends js.Object
+  
+  @js.native
+  sealed trait RESTRICT extends js.Object
   
   @js.native
   sealed trait RESTRICTED extends js.Object
@@ -68,6 +77,12 @@ object nodeDashPgDashMigrateLibStrings {
   
   @js.native
   sealed trait SELECT extends js.Object
+  
+  @js.native
+  sealed trait `SET DEFAULT` extends js.Object
+  
+  @js.native
+  sealed trait `SET NULL` extends js.Object
   
   @js.native
   sealed trait SIMPLE extends js.Object
@@ -120,6 +135,7 @@ object nodeDashPgDashMigrateLibStrings {
   def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
   def ALL: ALL = "ALL".asInstanceOf[ALL]
   def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
+  def CASCADE: CASCADE = "CASCADE".asInstanceOf[CASCADE]
   def CASCADED: CASCADED = "CASCADED".asInstanceOf[CASCADED]
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   def DISABLE: DISABLE = "DISABLE".asInstanceOf[DISABLE]
@@ -132,12 +148,16 @@ object nodeDashPgDashMigrateLibStrings {
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
   def `INSTEAD OF`: `INSTEAD OF` = "INSTEAD OF".asInstanceOf[`INSTEAD OF`]
   def LOCAL: LOCAL = "LOCAL".asInstanceOf[LOCAL]
+  def `NO ACTION`: `NO ACTION` = "NO ACTION".asInstanceOf[`NO ACTION`]
   def `NO FORCE`: `NO FORCE` = "NO FORCE".asInstanceOf[`NO FORCE`]
   def OUT: OUT = "OUT".asInstanceOf[OUT]
+  def RESTRICT: RESTRICT = "RESTRICT".asInstanceOf[RESTRICT]
   def RESTRICTED: RESTRICTED = "RESTRICTED".asInstanceOf[RESTRICTED]
   def ROW: ROW = "ROW".asInstanceOf[ROW]
   def SAFE: SAFE = "SAFE".asInstanceOf[SAFE]
   def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
+  def `SET DEFAULT`: `SET DEFAULT` = "SET DEFAULT".asInstanceOf[`SET DEFAULT`]
+  def `SET NULL`: `SET NULL` = "SET NULL".asInstanceOf[`SET NULL`]
   def SIMPLE: SIMPLE = "SIMPLE".asInstanceOf[SIMPLE]
   def STABLE: STABLE = "STABLE".asInstanceOf[STABLE]
   def STATEMENT: STATEMENT = "STATEMENT".asInstanceOf[STATEMENT]

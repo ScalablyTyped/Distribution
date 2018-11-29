@@ -19,7 +19,7 @@ trait IToggleProps
     atUifabricUtilitiesLib.libIComponentAsMod.IComponentAs[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]]
   ] = js.undefined
   /**
-       * Checked state of the toggle. If you are maintaining state yourself, use this property. Otherwise refer to 'defaultChecked'.
+       * Checked state of the toggle. If you are maintaining state yourself, use this property. Otherwise refer to `defaultChecked`.
        */
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -42,7 +42,7 @@ trait IToggleProps
        */
   var label: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * @deprecated Use ariaLabel for name, and let the metadata convey state
+       * @deprecated Use `ariaLabel` for name, and let the metadata convey state
        */
   var offAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -50,7 +50,7 @@ trait IToggleProps
        */
   var offText: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * @deprecated Use ariaLabel for name, and let the metadata convey state
+       * @deprecated Use `ariaLabel` for name, and let the metadata convey state
        */
   var onAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -65,7 +65,7 @@ trait IToggleProps
     ]
   ] = js.undefined
   /**
-       * @deprecated Use onChange instead.
+       * @deprecated Use `onChange` instead.
        */
   var onChanged: js.UndefOr[js.Function1[/* checked */ scala.Boolean, scala.Unit]] = js.undefined
   /**

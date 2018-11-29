@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
+@js.native
 trait Client extends js.Object {
   /**
        * @description The current version of the SDK, i.e. `3.0.2`.
        * @type {string}
        */
-  var VERSION: java.lang.String
-  var authorization: java.lang.String
+  var VERSION: java.lang.String = js.native
+  var authorization: java.lang.String = js.native
   /**
        * @function
        * @description This function is the entry point for the <code>braintree.client</code> module. It is used for creating {@link Client} instances that service communication to Braintree servers.
@@ -30,13 +30,14 @@ trait Client extends js.Object {
        * });
        * @static
        */
-  def create(options: braintreeDashWebLib.Anon_Authorization, callback: callback): scala.Unit
+  def create(options: braintreeDashWebLib.Anon_Authorization): stdLib.Promise[Client] = js.native
+  def create(options: braintreeDashWebLib.Anon_Authorization, callback: callback): scala.Unit = js.native
   /**
        * Returns a copy of the configuration values.
        * @public
        * @returns {Client~configuration} configuration
        */
-  def getConfiguration(): Configuration
+  def getConfiguration(): Configuration = js.native
   /**
        * Used by other modules to formulate all network requests to the Braintree gateway. It is also capable of being used directly from your own form to tokenize credit card information. However, be sure to satisfy PCI compliance if you use direct card tokenization.
        * @public
@@ -84,6 +85,6 @@ trait Client extends js.Object {
        * });
        * @returns {void}
        */
-  def request(options: braintreeDashWebLib.Anon_Endpoint, callback: callback): scala.Unit
+  def request(options: braintreeDashWebLib.Anon_Endpoint, callback: callback): scala.Unit = js.native
 }
 

@@ -64,7 +64,7 @@
  * @public
  */
 /**
- * Const enum for keycodes.
+ * Simulated enum for keycodes. These will get inlined by uglify when used much like an enum
  *
  * @public
  */
@@ -173,6 +173,10 @@
  * Compares a to b and b to a.
  *
  * @public
+ */
+/**
+ * Returns true if the user is on a Mac. Caches the result value.
+ * @param reset - Reset the cached result value (mainly for testing).
  */
 /**
  * Detects whether an element's content has horizontal overflow

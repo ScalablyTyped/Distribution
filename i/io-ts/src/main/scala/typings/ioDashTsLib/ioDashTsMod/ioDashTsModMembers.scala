@@ -11,7 +11,7 @@ object ioDashTsModMembers extends js.Object {
   val Array: AnyArrayType = js.native
   val Dictionary: AnyDictionaryType = js.native
   val Function: FunctionType = js.native
-  val Integer: RefinementType[NumberType, scala.Double, scala.Double, mixed] = js.native
+  val Integer: RefinementType[NumberType, scala.Double, scala.Double, js.Any] = js.native
   val any: AnyType = js.native
   val appendContext: js.Function3[
     /* c */ Context, 
@@ -30,7 +30,7 @@ object ioDashTsModMembers extends js.Object {
       ioDashTsLib.ioDashTsMod.Global.Array[
         /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Mixed))),List()),Left(TsIdentSimple(_O))) */js.Any
       ], 
-      mixed
+      js.Any
     ]
   ] = js.native
   val boolean: BooleanType = js.native
@@ -38,10 +38,10 @@ object ioDashTsModMembers extends js.Object {
     /* domain */ Mixed, 
     /* codomain */ Mixed, 
     /* name */ js.UndefOr[java.lang.String], 
-    DictionaryType[Mixed, Mixed, TypeOfDictionary[Mixed, Mixed], OutputOfDictionary[Mixed, Mixed], mixed]
+    DictionaryType[Mixed, Mixed, TypeOfDictionary[Mixed, Mixed], OutputOfDictionary[Mixed, Mixed], js.Any]
   ] = js.native
   val failure: js.Function2[
-    /* value */ mixed, 
+    /* value */ js.Any, 
     /* context */ Context, 
     fpDashTsLib.libEitherMod.Either[Errors, js.Any]
   ] = js.native
@@ -56,21 +56,21 @@ object ioDashTsModMembers extends js.Object {
       java.lang.String | scala.Double | scala.Boolean
     ]
   ] = js.native
-  val getValidationError: js.Function2[/* value */ mixed, /* context */ Context, ValidationError] = js.native
+  val getValidationError: js.Function2[/* value */ js.Any, /* context */ Context, ValidationError] = js.native
   val identity: js.Function1[/* a */ js.Any, js.Any] = js.native
   val interface: js.Function2[
     /* props */ Props, 
     /* name */ js.UndefOr[java.lang.String], 
-    InterfaceType[Props, TypeOfProps[Props], OutputOfProps[Props], mixed]
+    InterfaceType[Props, TypeOfProps[Props], OutputOfProps[Props], js.Any]
   ] = js.native
   val isTagged: js.Function1[
     /* tag */ java.lang.String, 
     js.Function1[/* type */ Mixed, /* is Tagged */scala.Boolean]
   ] = js.native
   val keyof: js.Function2[
-    /* keys */ ScalablyTyped.runtime.StringDictionary[mixed], 
+    /* keys */ ScalablyTyped.runtime.StringDictionary[js.Any], 
     /* name */ js.UndefOr[java.lang.String], 
-    KeyofType[ScalablyTyped.runtime.StringDictionary[mixed]]
+    KeyofType[ScalablyTyped.runtime.StringDictionary[js.Any]]
   ] = js.native
   val literal: js.Function2[
     /* value */ java.lang.String | scala.Double | scala.Boolean, 
@@ -85,7 +85,7 @@ object ioDashTsModMembers extends js.Object {
   val partial: js.Function2[
     /* props */ Props, 
     /* name */ js.UndefOr[java.lang.String], 
-    PartialType[Props, TypeOfPartialProps[Props], OutputOfPartialProps[Props], mixed]
+    PartialType[Props, TypeOfPartialProps[Props], OutputOfPartialProps[Props], js.Any]
   ] = js.native
   val readonly: js.Function2[
     /* type */ Mixed, 
@@ -98,7 +98,7 @@ object ioDashTsModMembers extends js.Object {
       stdLib.Readonly[
         /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Mixed))),List()),Left(TsIdentSimple(_O))) */js.Any
       ], 
-      mixed
+      js.Any
     ]
   ] = js.native
   val readonlyArray: js.Function2[
@@ -112,7 +112,7 @@ object ioDashTsModMembers extends js.Object {
       js.Array[
         /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Mixed))),List()),Left(TsIdentSimple(_O))) */js.Any
       ], 
-      mixed
+      js.Any
     ]
   ] = js.native
   val recursion: js.Function2[
@@ -136,7 +136,7 @@ object ioDashTsModMembers extends js.Object {
   val strict: js.Function2[
     /* props */ Props, 
     /* name */ js.UndefOr[java.lang.String], 
-    StrictType[Props, TypeOfProps[Props], OutputOfProps[Props], mixed]
+    StrictType[Props, TypeOfProps[Props], OutputOfProps[Props], js.Any]
   ] = js.native
   val string: StringType = js.native
   val success: js.Function1[/* value */ js.Any, fpDashTsLib.libEitherMod.Either[Errors, js.Any]] = js.native
@@ -149,13 +149,13 @@ object ioDashTsModMembers extends js.Object {
       ioDashTsLib.ioDashTsMod.Global.Array[Tagged[java.lang.String, js.Any, js.Any]], 
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Global), TsIdentSimple(Array))),List(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Tagged))),List(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List()), TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()), TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()))))),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_A))) */js.Any, 
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Global), TsIdentSimple(Array))),List(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Tagged))),List(TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List()), TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()), TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()))))),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_O))) */js.Any, 
-      mixed
+      js.Any
     ]
   ] = js.native
   val `type`: js.Function2[
     /* props */ Props, 
     /* name */ js.UndefOr[java.lang.String], 
-    InterfaceType[Props, TypeOfProps[Props], OutputOfProps[Props], mixed]
+    InterfaceType[Props, TypeOfProps[Props], OutputOfProps[Props], js.Any]
   ] = js.native
   val undefined: UndefinedType = js.native
   val union: js.Function2[
@@ -165,7 +165,7 @@ object ioDashTsModMembers extends js.Object {
       ioDashTsLib.ioDashTsMod.Global.Array[Mixed], 
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Global), TsIdentSimple(Array))),List(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Mixed))),List()))),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_A))) */js.Any, 
       /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Global), TsIdentSimple(Array))),List(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(io-ts), TsIdentModule(None,List(io-ts)), TsIdentSimple(Mixed))),List()))),Left(TsIdentSimple(_A))),Left(TsIdentSimple(_O))) */js.Any, 
-      mixed
+      js.Any
     ]
   ] = js.native
   val void: VoidType = js.native
@@ -178,42 +178,52 @@ object ioDashTsModMembers extends js.Object {
   def exact[RT /* <: HasProps */](`type`: RT, name: java.lang.String): ExactType[RT, TypeOf[RT], OutputOf[RT], InputOf[RT]] = js.native
   def intersection[A /* <: Mixed */](types: js.Array[A]): IntersectionType[js.Array[A], TypeOf[A], OutputOf[A], mixed] = js.native
   def intersection[A /* <: Mixed */](types: js.Array[A], name: java.lang.String): IntersectionType[js.Array[A], TypeOf[A], OutputOf[A], mixed] = js.native
-  def intersection[A /* <: Mixed */, B /* <: Mixed */](types: js.Tuple2[A, B]): IntersectionType[js.Tuple2[A, B], TypeOf[A] with TypeOf[B], OutputOf[A] with OutputOf[B], mixed] = js.native
-  def intersection[A /* <: Mixed */, B /* <: Mixed */](types: js.Tuple2[A, B], name: java.lang.String): IntersectionType[js.Tuple2[A, B], TypeOf[A] with TypeOf[B], OutputOf[A] with OutputOf[B], mixed] = js.native
+  def intersection[A /* <: Mixed */, B /* <: Mixed */](types: js.Tuple2[A, B]): IntersectionType[
+    js.Tuple2[A, B], 
+    Compact[TypeOf[A] with TypeOf[B]], 
+    Compact[OutputOf[A] with OutputOf[B]], 
+    mixed
+  ] = js.native
+  def intersection[A /* <: Mixed */, B /* <: Mixed */](types: js.Tuple2[A, B], name: java.lang.String): IntersectionType[
+    js.Tuple2[A, B], 
+    Compact[TypeOf[A] with TypeOf[B]], 
+    Compact[OutputOf[A] with OutputOf[B]], 
+    mixed
+  ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */](types: js.Tuple3[A, B, C]): IntersectionType[
     js.Tuple3[A, B, C], 
-    TypeOf[A] with TypeOf[B] with TypeOf[C], 
-    OutputOf[A] with OutputOf[B] with OutputOf[C], 
+    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C]], 
+    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C]], 
     mixed
   ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */](types: js.Tuple3[A, B, C], name: java.lang.String): IntersectionType[
     js.Tuple3[A, B, C], 
-    TypeOf[A] with TypeOf[B] with TypeOf[C], 
-    OutputOf[A] with OutputOf[B] with OutputOf[C], 
+    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C]], 
+    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C]], 
     mixed
   ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */, D /* <: Mixed */](types: js.Tuple4[A, B, C, D]): IntersectionType[
     js.Tuple4[A, B, C, D], 
-    TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D], 
-    OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D], 
+    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D]], 
+    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D]], 
     mixed
   ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */, D /* <: Mixed */](types: js.Tuple4[A, B, C, D], name: java.lang.String): IntersectionType[
     js.Tuple4[A, B, C, D], 
-    TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D], 
-    OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D], 
+    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D]], 
+    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D]], 
     mixed
   ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */, D /* <: Mixed */, E /* <: Mixed */](types: js.Tuple5[A, B, C, D, E]): IntersectionType[
     js.Tuple5[A, B, C, D, E], 
-    TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D] with TypeOf[E], 
-    OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D] with OutputOf[E], 
+    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D] with TypeOf[E]], 
+    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D] with OutputOf[E]], 
     mixed
   ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */, D /* <: Mixed */, E /* <: Mixed */](types: js.Tuple5[A, B, C, D, E], name: java.lang.String): IntersectionType[
     js.Tuple5[A, B, C, D, E], 
-    TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D] with TypeOf[E], 
-    OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D] with OutputOf[E], 
+    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D] with TypeOf[E]], 
+    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D] with OutputOf[E]], 
     mixed
   ] = js.native
   def tuple[A /* <: Mixed */](types: js.Array[A]): TupleType[js.Array[A], js.Array[TypeOf[A]], js.Array[OutputOf[A]], mixed] = js.native

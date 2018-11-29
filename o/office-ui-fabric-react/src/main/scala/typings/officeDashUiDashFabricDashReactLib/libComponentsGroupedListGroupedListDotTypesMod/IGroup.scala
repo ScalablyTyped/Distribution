@@ -39,7 +39,7 @@ trait IGroup extends js.Object {
   var isDropEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
        * Deprecated at 1.0.0, selection state will be controled by the selection store only.
-       * @deprecated
+       * @deprecated At 1.0.0, selection state wil be controlled by the selection store only.
        */
   var isSelected: js.UndefOr[scala.Boolean] = js.undefined
   /**

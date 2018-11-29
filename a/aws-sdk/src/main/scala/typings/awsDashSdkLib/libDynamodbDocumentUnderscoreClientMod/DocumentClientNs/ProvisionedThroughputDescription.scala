@@ -22,10 +22,10 @@ trait ProvisionedThroughputDescription extends js.Object {
   /**
        * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ThrottlingException. Eventually consistent reads require less effort than strongly consistent reads, so a setting of 50 ReadCapacityUnits per second provides 100 eventually consistent ReadCapacityUnits per second.
        */
-  var ReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  var ReadCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined
   /**
        * The maximum number of writes consumed per second before DynamoDB returns a ThrottlingException.
        */
-  var WriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
+  var WriteCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined
 }
 

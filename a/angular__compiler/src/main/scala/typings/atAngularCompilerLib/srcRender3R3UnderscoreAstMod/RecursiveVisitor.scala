@@ -20,6 +20,8 @@ class RecursiveVisitor ()
   /* CompleteClass */
   override def visitElement(element: Element): scala.Unit = js.native
   /* CompleteClass */
+  override def visitIcu(icu: Icu): scala.Unit = js.native
+  /* CompleteClass */
   override def visitReference(reference: Reference): scala.Unit = js.native
   /* CompleteClass */
   override def visitTemplate(template: Template): scala.Unit = js.native

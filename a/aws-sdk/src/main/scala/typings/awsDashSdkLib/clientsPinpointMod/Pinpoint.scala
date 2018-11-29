@@ -831,6 +831,47 @@ trait Pinpoint
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Delete an Voice channel
+     */
+  def deleteVoiceChannel(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.DeleteVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Delete an Voice channel
+     */
+  def deleteVoiceChannel(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointMod.PinpointNs.DeleteVoiceChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.DeleteVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Delete an Voice channel
+     */
+  def deleteVoiceChannel(params: awsDashSdkLib.clientsPinpointMod.PinpointNs.DeleteVoiceChannelRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.DeleteVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Delete an Voice channel
+     */
+  def deleteVoiceChannel(
+    params: awsDashSdkLib.clientsPinpointMod.PinpointNs.DeleteVoiceChannelRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointMod.PinpointNs.DeleteVoiceChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.DeleteVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Get an ADM channel.
      */
   def getAdmChannel(): awsDashSdkLib.libRequestMod.Request[
@@ -2102,6 +2143,47 @@ trait Pinpoint
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Get a Voice Channel
+     */
+  def getVoiceChannel(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.GetVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Get a Voice Channel
+     */
+  def getVoiceChannel(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointMod.PinpointNs.GetVoiceChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.GetVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Get a Voice Channel
+     */
+  def getVoiceChannel(params: awsDashSdkLib.clientsPinpointMod.PinpointNs.GetVoiceChannelRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.GetVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Get a Voice Channel
+     */
+  def getVoiceChannel(
+    params: awsDashSdkLib.clientsPinpointMod.PinpointNs.GetVoiceChannelRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointMod.PinpointNs.GetVoiceChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.GetVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Returns information about the specified phone number.
      */
   def phoneNumberValidate(): awsDashSdkLib.libRequestMod.Request[
@@ -2919,6 +3001,47 @@ trait Pinpoint
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsPinpointMod.PinpointNs.UpdateSmsChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Update an Voice channel
+     */
+  def updateVoiceChannel(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.UpdateVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Update an Voice channel
+     */
+  def updateVoiceChannel(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointMod.PinpointNs.UpdateVoiceChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.UpdateVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Update an Voice channel
+     */
+  def updateVoiceChannel(params: awsDashSdkLib.clientsPinpointMod.PinpointNs.UpdateVoiceChannelRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.UpdateVoiceChannelResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Update an Voice channel
+     */
+  def updateVoiceChannel(
+    params: awsDashSdkLib.clientsPinpointMod.PinpointNs.UpdateVoiceChannelRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointMod.PinpointNs.UpdateVoiceChannelResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointMod.PinpointNs.UpdateVoiceChannelResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
 }

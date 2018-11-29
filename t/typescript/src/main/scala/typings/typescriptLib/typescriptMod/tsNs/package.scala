@@ -18,7 +18,6 @@ package object tsNs {
   type AssignmentOperatorToken = Token[AssignmentOperator]
   type AssignmentPattern = ObjectLiteralExpression | ArrayLiteralExpression
   type AsteriskToken = Token[SyntaxKind]
-  type AtToken = Token[SyntaxKind]
   type AwaitKeywordToken = Token[SyntaxKind]
   type BaseType = ObjectType | IntersectionType
   type BinaryOperator = AssignmentOperatorOrHigher | SyntaxKind
@@ -55,7 +54,7 @@ package object tsNs {
     /* projectReferences */ js.UndefOr[js.Array[ProjectReference]], 
     T
   ]
-  type DeclarationName = Identifier | StringLiteral | NumericLiteral | ComputedPropertyName | BindingPattern
+  type DeclarationName = Identifier | StringLiteralLike | NumericLiteral | ComputedPropertyName | BindingPattern
   type DeclarationWithTypeParameterChildren = SignatureDeclaration | ClassLikeDeclaration | InterfaceDeclaration | TypeAliasDeclaration | JSDocTemplateTag
   type DeclarationWithTypeParameters = DeclarationWithTypeParameterChildren | JSDocTypedefTag | JSDocCallbackTag | JSDocSignature
   type DestructuringAssignment = ObjectDestructuringAssignment | ArrayDestructuringAssignment
@@ -99,7 +98,7 @@ package object tsNs {
   type IntersectionType = UnionOrIntersectionType
   type JSDocNamespaceBody = Identifier | JSDocNamespaceDeclaration
   type JSDocTypeReferencingNode = JSDocVariadicType | JSDocOptionalType | JSDocNullableType | JSDocNonNullableType
-  type JsDocSyntaxKind = SyntaxKind
+  type JsDocSyntaxKind = SyntaxKind | KeywordSyntaxKind
   /** @deprecated Use FileExtensionInfo instead. */
   type JsFileExtensionInfo = FileExtensionInfo
   type JsxAttributeLike = JsxAttribute | JsxSpreadAttribute
@@ -107,6 +106,7 @@ package object tsNs {
   type JsxOpeningLikeElement = JsxSelfClosingElement | JsxOpeningElement
   type JsxTagNameExpression = Identifier | ThisExpression | JsxTagNamePropertyAccess
   type JsxTokenSyntaxKind = SyntaxKind
+  type KeywordSyntaxKind = SyntaxKind
   type LogicalOperator = SyntaxKind
   type LogicalOperatorOrHigher = BitwiseOperatorOrHigher | LogicalOperator
   type MinusToken = Token[SyntaxKind]
@@ -136,7 +136,6 @@ package object tsNs {
   type RelationalOperator = SyntaxKind
   type RelationalOperatorOrHigher = ShiftOperatorOrHigher | RelationalOperator
   type RenameInfo = RenameInfoSuccess | RenameInfoFailure
-  type RenameLocation = DocumentSpan
   /**
        * Branded string for keeping track of when we've turned an ambiguous path
        * specified like "./blah" to an absolute path to an actual
@@ -187,6 +186,7 @@ package object tsNs {
     /* options */ CompilerOptions, 
     scala.Unit
   ]
+  type WithMetadata[T] = T with typescriptLib.Anon_Metadata
   type WriteFileCallback = js.Function5[
     /* fileName */ java.lang.String, 
     /* data */ java.lang.String, 

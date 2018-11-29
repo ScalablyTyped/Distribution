@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_TabLabel extends js.Object {
-  var tabLabel: reactLib.reactMod.ReactNs.ReactType[_]
+  var tabLabel: reactLib.reactMod.ReactNs.ReactChild
 }
 

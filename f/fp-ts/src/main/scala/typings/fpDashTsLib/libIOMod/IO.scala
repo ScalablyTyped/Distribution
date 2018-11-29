@@ -12,6 +12,9 @@ class IO[A] protected () extends js.Object {
   val _A: A = js.native
   val _URI: URI = js.native
   def ap[B](fab: IO[js.Function1[/* a */ A, B]]): IO[B] = js.native
+  /**
+       * Flipped version of {@link ap}
+       */
   def `ap_`[B, C](`this`: IO[js.Function1[/* b */ B, C]], fb: IO[B]): IO[C] = js.native
   /**
        * Combine two effectful actions, keeping only the result of the first

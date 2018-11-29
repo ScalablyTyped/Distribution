@@ -122,6 +122,7 @@ object compilerModMembers extends js.Object {
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Boolean): scala.Boolean = js.native
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Boolean, defaultSetting: scala.Boolean): scala.Boolean = js.native
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Null, defaultSetting: scala.Boolean): scala.Boolean = js.native
+  def publishFacade(global: js.Any): scala.Unit = js.native
   def removeSummaryDuplicates[T /* <: atAngularCompilerLib.Anon_Type */](items: js.Array[T]): js.Array[T] = js.native
   def rendererTypeName(compType: js.Any): java.lang.String = js.native
   def sanitizeIdentifier(name: java.lang.String): java.lang.String = js.native

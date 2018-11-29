@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object nodeDashPgDashMigrateMod {
+  type Action = (nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.`NO ACTION`) | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.RESTRICT | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.CASCADE | (nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.`SET NULL`) | (nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.`SET DEFAULT`)
   type CreatePolicyOptions = CreatePolicyOptionsEn with PolicyOptions
   type DomainOptionsAlter = DomainOptionsAlterEn with DomainOptions
   type DomainOptionsCreate = DomainOptionsCreateEn with DomainOptions

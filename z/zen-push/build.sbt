@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "zen-push"
-version := "0.1-dt-20180910Z-54a4c9"
+version := "0.1-dt-20180910Z-2eb616"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-2ae465",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-854602",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

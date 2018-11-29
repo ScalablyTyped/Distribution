@@ -889,9 +889,6 @@ object reactDashNativeLibStrings {
   sealed trait repeat extends js.Object
   
   @js.native
-  sealed trait requireNativeComponent extends js.Object
-  
-  @js.native
   sealed trait resize extends js.Object
   
   @js.native
@@ -1386,7 +1383,6 @@ object reactDashNativeLibStrings {
   def relative: relative = "relative".asInstanceOf[relative]
   def reload: reload = "reload".asInstanceOf[reload]
   def repeat: repeat = "repeat".asInstanceOf[repeat]
-  def requireNativeComponent: requireNativeComponent = "requireNativeComponent".asInstanceOf[requireNativeComponent]
   def resize: resize = "resize".asInstanceOf[resize]
   def right: right = "right".asInstanceOf[right]
   def round: round = "round".asInstanceOf[round]

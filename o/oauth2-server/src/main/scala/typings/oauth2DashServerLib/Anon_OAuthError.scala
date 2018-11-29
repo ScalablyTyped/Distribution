@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_OAuthError extends js.Object {
+  var AbstractGrantType: ScalablyTyped.runtime.Instantiable1[
+    /* options */ oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.TokenOptions, 
+    oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AbstractGrantType
+  ]
   var AccessDeniedError: ScalablyTyped.runtime.Instantiable0[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.AccessDeniedError]
   var InsufficientScopeError: ScalablyTyped.runtime.Instantiable0[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.InsufficientScopeError]
   var InvalidArgumentError: ScalablyTyped.runtime.Instantiable0[oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.InvalidArgumentError]

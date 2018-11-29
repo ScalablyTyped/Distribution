@@ -298,6 +298,170 @@ trait WorkSpaces
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image. 
+     */
+  def deleteWorkspaceImage(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DeleteWorkspaceImageResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image. 
+     */
+  def deleteWorkspaceImage(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DeleteWorkspaceImageResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DeleteWorkspaceImageResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image. 
+     */
+  def deleteWorkspaceImage(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DeleteWorkspaceImageRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DeleteWorkspaceImageResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image. 
+     */
+  def deleteWorkspaceImage(
+    params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DeleteWorkspaceImageRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DeleteWorkspaceImageResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DeleteWorkspaceImageResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def describeAccount(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def describeAccount(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def describeAccount(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def describeAccount(
+    params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes modifications to the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def describeAccountModifications(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountModificationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes modifications to the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def describeAccountModifications(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountModificationsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountModificationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes modifications to the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def describeAccountModifications(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountModificationsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountModificationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes modifications to the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def describeAccountModifications(
+    params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountModificationsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountModificationsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeAccountModificationsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes one or more specified Amazon WorkSpaces clients.
+     */
+  def describeClientProperties(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeClientPropertiesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes one or more specified Amazon WorkSpaces clients.
+     */
+  def describeClientProperties(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeClientPropertiesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeClientPropertiesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes one or more specified Amazon WorkSpaces clients.
+     */
+  def describeClientProperties(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeClientPropertiesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeClientPropertiesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes one or more specified Amazon WorkSpaces clients.
+     */
+  def describeClientProperties(
+    params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeClientPropertiesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeClientPropertiesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeClientPropertiesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Describes one or more of your IP access control groups.
      */
   def describeIpGroups(): awsDashSdkLib.libRequestMod.Request[
@@ -380,14 +544,14 @@ trait WorkSpaces
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the available WorkSpace bundles. You can filter the results using either bundle ID or owner, but not both.
+     * Retrieves a list that describes the available WorkSpace bundles. You can filter the results using either bundle ID or owner, but not both.
      */
   def describeWorkspaceBundles(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceBundlesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the available WorkSpace bundles. You can filter the results using either bundle ID or owner, but not both.
+     * Retrieves a list that describes the available WorkSpace bundles. You can filter the results using either bundle ID or owner, but not both.
      */
   def describeWorkspaceBundles(
     callback: js.Function2[
@@ -400,14 +564,14 @@ trait WorkSpaces
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the available WorkSpace bundles. You can filter the results using either bundle ID or owner, but not both.
+     * Retrieves a list that describes the available WorkSpace bundles. You can filter the results using either bundle ID or owner, but not both.
      */
   def describeWorkspaceBundles(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceBundlesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceBundlesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the available WorkSpace bundles. You can filter the results using either bundle ID or owner, but not both.
+     * Retrieves a list that describes the available WorkSpace bundles. You can filter the results using either bundle ID or owner, but not both.
      */
   def describeWorkspaceBundles(
     params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceBundlesRequest,
@@ -462,14 +626,55 @@ trait WorkSpaces
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the specified WorkSpaces. You can filter the results using bundle ID, directory ID, or owner, but you can specify only one filter at a time.
+     * Retrieves a list that describes one or more specified images, if the image identifiers are provided. Otherwise, all images in the account are described. 
+     */
+  def describeWorkspaceImages(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceImagesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes one or more specified images, if the image identifiers are provided. Otherwise, all images in the account are described. 
+     */
+  def describeWorkspaceImages(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceImagesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceImagesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes one or more specified images, if the image identifiers are provided. Otherwise, all images in the account are described. 
+     */
+  def describeWorkspaceImages(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceImagesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceImagesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list that describes one or more specified images, if the image identifiers are provided. Otherwise, all images in the account are described. 
+     */
+  def describeWorkspaceImages(
+    params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceImagesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceImagesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspaceImagesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Describes the specified WorkSpaces. You can filter the results by using the bundle identifier, directory identifier, or owner, but you can specify only one filter at a time.
      */
   def describeWorkspaces(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspacesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the specified WorkSpaces. You can filter the results using bundle ID, directory ID, or owner, but you can specify only one filter at a time.
+     * Describes the specified WorkSpaces. You can filter the results by using the bundle identifier, directory identifier, or owner, but you can specify only one filter at a time.
      */
   def describeWorkspaces(
     callback: js.Function2[
@@ -482,14 +687,14 @@ trait WorkSpaces
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the specified WorkSpaces. You can filter the results using bundle ID, directory ID, or owner, but you can specify only one filter at a time.
+     * Describes the specified WorkSpaces. You can filter the results by using the bundle identifier, directory identifier, or owner, but you can specify only one filter at a time.
      */
   def describeWorkspaces(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspacesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspacesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Describes the specified WorkSpaces. You can filter the results using bundle ID, directory ID, or owner, but you can specify only one filter at a time.
+     * Describes the specified WorkSpaces. You can filter the results by using the bundle identifier, directory identifier, or owner, but you can specify only one filter at a time.
      */
   def describeWorkspaces(
     params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DescribeWorkspacesRequest,
@@ -582,6 +787,170 @@ trait WorkSpaces
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.DisassociateIpGroupsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Imports the specified Windows 7 or Windows 10 bring your own license (BYOL) image into Amazon WorkSpaces. The image must be an already licensed EC2 image that is in your AWS account, and you must own the image. 
+     */
+  def importWorkspaceImage(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ImportWorkspaceImageResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Imports the specified Windows 7 or Windows 10 bring your own license (BYOL) image into Amazon WorkSpaces. The image must be an already licensed EC2 image that is in your AWS account, and you must own the image. 
+     */
+  def importWorkspaceImage(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ImportWorkspaceImageResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ImportWorkspaceImageResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Imports the specified Windows 7 or Windows 10 bring your own license (BYOL) image into Amazon WorkSpaces. The image must be an already licensed EC2 image that is in your AWS account, and you must own the image. 
+     */
+  def importWorkspaceImage(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ImportWorkspaceImageRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ImportWorkspaceImageResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Imports the specified Windows 7 or Windows 10 bring your own license (BYOL) image into Amazon WorkSpaces. The image must be an already licensed EC2 image that is in your AWS account, and you must own the image. 
+     */
+  def importWorkspaceImage(
+    params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ImportWorkspaceImageRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ImportWorkspaceImageResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ImportWorkspaceImageResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you can use for the network management interface when you enable bring your own license (BYOL).  The management network interface is connected to a secure Amazon WorkSpaces management network. It is used for interactive streaming of the WorkSpace desktop to Amazon WorkSpaces clients, and to allow Amazon WorkSpaces to manage the WorkSpace.
+     */
+  def listAvailableManagementCidrRanges(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ListAvailableManagementCidrRangesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you can use for the network management interface when you enable bring your own license (BYOL).  The management network interface is connected to a secure Amazon WorkSpaces management network. It is used for interactive streaming of the WorkSpace desktop to Amazon WorkSpaces clients, and to allow Amazon WorkSpaces to manage the WorkSpace.
+     */
+  def listAvailableManagementCidrRanges(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ListAvailableManagementCidrRangesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ListAvailableManagementCidrRangesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you can use for the network management interface when you enable bring your own license (BYOL).  The management network interface is connected to a secure Amazon WorkSpaces management network. It is used for interactive streaming of the WorkSpace desktop to Amazon WorkSpaces clients, and to allow Amazon WorkSpaces to manage the WorkSpace.
+     */
+  def listAvailableManagementCidrRanges(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ListAvailableManagementCidrRangesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ListAvailableManagementCidrRangesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you can use for the network management interface when you enable bring your own license (BYOL).  The management network interface is connected to a secure Amazon WorkSpaces management network. It is used for interactive streaming of the WorkSpace desktop to Amazon WorkSpaces clients, and to allow Amazon WorkSpaces to manage the WorkSpace.
+     */
+  def listAvailableManagementCidrRanges(
+    params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ListAvailableManagementCidrRangesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ListAvailableManagementCidrRangesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ListAvailableManagementCidrRangesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def modifyAccount(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyAccountResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def modifyAccount(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyAccountResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyAccountResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def modifyAccount(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyAccountRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyAccountResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the configuration of bring your own license (BYOL) for the specified account.
+     */
+  def modifyAccount(
+    params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyAccountRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyAccountResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyAccountResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the properties of the specified Amazon WorkSpaces client.
+     */
+  def modifyClientProperties(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the properties of the specified Amazon WorkSpaces client.
+     */
+  def modifyClientProperties(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the properties of the specified Amazon WorkSpaces client.
+     */
+  def modifyClientProperties(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Modifies the properties of the specified Amazon WorkSpaces client.
+     */
+  def modifyClientProperties(
+    params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

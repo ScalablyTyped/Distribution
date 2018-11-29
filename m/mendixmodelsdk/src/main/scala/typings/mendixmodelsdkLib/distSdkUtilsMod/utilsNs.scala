@@ -33,11 +33,6 @@ object utilsNs extends js.Object {
        */
   def randomUuid(): java.lang.String = js.native
   def removeFromArray[T](list: js.Array[T], item: T): scala.Unit = js.native
-  /**
-       * Given a unit, generates JavaScript(/TypeScript) code that would re-create the same unit.
-       * Useful as scaffolding for model generators.
-       */
-  def serializeToJs(unit: mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit): java.lang.String = js.native
   def shallowEquals(first: js.Array[_], second: js.Array[_]): scala.Boolean = js.native
 }
 

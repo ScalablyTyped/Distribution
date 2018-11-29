@@ -155,6 +155,11 @@ trait InitOptions extends js.Object {
            */
   var parseMissingKeyHandler: js.UndefOr[js.Function1[/* key */ java.lang.String, _]] = js.undefined
   /**
+           * Allow initializing with bundled resources while using a backend to load non bundled ones.
+           * @default false
+           */
+  var partialBundledLanguages: js.UndefOr[scala.Boolean] = js.undefined
+  /**
            * char to split plural from key
            * @default '_'
            */

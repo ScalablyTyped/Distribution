@@ -19,6 +19,9 @@ object atUifabricStylingLibStrings {
   sealed trait absolute extends js.Object
   
   @js.native
+  sealed trait accentButtonText extends js.Object
+  
+  @js.native
   sealed trait actionLink extends js.Object
   
   @js.native
@@ -58,6 +61,9 @@ object atUifabricStylingLibStrings {
   sealed trait default extends js.Object
   
   @js.native
+  sealed trait disabledBodySubtext extends js.Object
+  
+  @js.native
   sealed trait disabledBodyText extends js.Object
   
   @js.native
@@ -74,6 +80,12 @@ object atUifabricStylingLibStrings {
   
   @js.native
   sealed trait inputPlaceholderText extends js.Object
+  
+  @js.native
+  sealed trait inputText extends js.Object
+  
+  @js.native
+  sealed trait inputTextHovered extends js.Object
   
   @js.native
   sealed trait link extends js.Object
@@ -121,6 +133,7 @@ object atUifabricStylingLibStrings {
   def IPartialTypography: IPartialTypography = "IPartialTypography".asInstanceOf[IPartialTypography]
   def ITheme: ITheme = "ITheme".asInstanceOf[ITheme]
   def absolute: absolute = "absolute".asInstanceOf[absolute]
+  def accentButtonText: accentButtonText = "accentButtonText".asInstanceOf[accentButtonText]
   def actionLink: actionLink = "actionLink".asInstanceOf[actionLink]
   def actionLinkHovered: actionLinkHovered = "actionLinkHovered".asInstanceOf[actionLinkHovered]
   def bodySubtext: bodySubtext = "bodySubtext".asInstanceOf[bodySubtext]
@@ -134,12 +147,15 @@ object atUifabricStylingLibStrings {
   def buttonTextHovered: buttonTextHovered = "buttonTextHovered".asInstanceOf[buttonTextHovered]
   def buttonTextPressed: buttonTextPressed = "buttonTextPressed".asInstanceOf[buttonTextPressed]
   def default: default = "default".asInstanceOf[default]
+  def disabledBodySubtext: disabledBodySubtext = "disabledBodySubtext".asInstanceOf[disabledBodySubtext]
   def disabledBodyText: disabledBodyText = "disabledBodyText".asInstanceOf[disabledBodyText]
   def disabledSubtext: disabledSubtext = "disabledSubtext".asInstanceOf[disabledSubtext]
   def disabledText: disabledText = "disabledText".asInstanceOf[disabledText]
   def errorText: errorText = "errorText".asInstanceOf[errorText]
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   def inputPlaceholderText: inputPlaceholderText = "inputPlaceholderText".asInstanceOf[inputPlaceholderText]
+  def inputText: inputText = "inputText".asInstanceOf[inputText]
+  def inputTextHovered: inputTextHovered = "inputTextHovered".asInstanceOf[inputTextHovered]
   def link: link = "link".asInstanceOf[link]
   def linkHovered: linkHovered = "linkHovered".asInstanceOf[linkHovered]
   def listText: listText = "listText".asInstanceOf[listText]

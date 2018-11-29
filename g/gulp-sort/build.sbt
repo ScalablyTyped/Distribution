@@ -1,20 +1,20 @@
 organization := "com.scalablytyped"
 name := "gulp-sort"
-version := "0.0-unknown-dt-20180910Z-c30aa4"
+version := "0.0-unknown-dt-20180910Z-2a1ce2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-16b038",
-  "com.scalablytyped" %%% "chalk" % "2.4.1-ea2afe",
-  "com.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-566c3e",
-  "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-76e9e4",
-  "com.scalablytyped" %%% "gulp-util" % "3.0-dt-20180910Z-34fba0",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-f11a37",
-  "com.scalablytyped" %%% "through2" % "2.0-dt-20180910Z-36328f",
-  "com.scalablytyped" %%% "vinyl" % "2.0-dt-20180910Z-e8fbb3",
+  "com.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-8b01ce",
+  "com.scalablytyped" %%% "chalk" % "2.4.1-557431",
+  "com.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-20e4ae",
+  "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-450016",
+  "com.scalablytyped" %%% "gulp-util" % "3.0-dt-20180910Z-8585fb",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-a10740",
+  "com.scalablytyped" %%% "through2" % "2.0-dt-20180910Z-15ecbb",
+  "com.scalablytyped" %%% "vinyl" % "2.0-dt-20180910Z-a0b930",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

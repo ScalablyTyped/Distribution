@@ -24,7 +24,7 @@ class BindingScope protected ()
   def getSharedContextName(retrievalLevel: scala.Double): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr | scala.Null = js.native
   def isListenerScope(): scala.Boolean | scala.Null = js.native
   def maybeGenerateSharedContextVar(value: BindingData): scala.Unit = js.native
-  def maybeRestoreView(retrievalLevel: scala.Double): scala.Unit = js.native
+  def maybeRestoreView(retrievalLevel: scala.Double, localRefLookup: scala.Boolean): scala.Unit = js.native
   def nestedScope(level: scala.Double): BindingScope = js.native
   def restoreViewStatement(): js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement] = js.native
   /**
@@ -35,6 +35,7 @@ class BindingScope protected ()
        * @param lhs AST representing the left hand side of the `let lhs = rhs;`.
        * @param priority The sorting priority of this var
        * @param declareLocalCallback The callback to invoke when declaring this local var
+       * @param localRef Whether or not this is a local ref
        */
   def set(
     retrievalLevel: scala.Double,
@@ -49,6 +50,7 @@ class BindingScope protected ()
        * @param lhs AST representing the left hand side of the `let lhs = rhs;`.
        * @param priority The sorting priority of this var
        * @param declareLocalCallback The callback to invoke when declaring this local var
+       * @param localRef Whether or not this is a local ref
        */
   def set(
     retrievalLevel: scala.Double,
@@ -64,6 +66,7 @@ class BindingScope protected ()
        * @param lhs AST representing the left hand side of the `let lhs = rhs;`.
        * @param priority The sorting priority of this var
        * @param declareLocalCallback The callback to invoke when declaring this local var
+       * @param localRef Whether or not this is a local ref
        */
   def set(
     retrievalLevel: scala.Double,
@@ -71,6 +74,24 @@ class BindingScope protected ()
     lhs: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr,
     priority: scala.Double,
     declareLocalCallback: DeclareLocalVarCallback
+  ): BindingScope = js.native
+  /**
+       * Create a local variable for later reference.
+       *
+       * @param retrievalLevel The level from which this value can be retrieved
+       * @param name Name of the variable.
+       * @param lhs AST representing the left hand side of the `let lhs = rhs;`.
+       * @param priority The sorting priority of this var
+       * @param declareLocalCallback The callback to invoke when declaring this local var
+       * @param localRef Whether or not this is a local ref
+       */
+  def set(
+    retrievalLevel: scala.Double,
+    name: java.lang.String,
+    lhs: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr,
+    priority: scala.Double,
+    declareLocalCallback: DeclareLocalVarCallback,
+    localRef: atAngularCompilerLib.atAngularCompilerLibNumbers.`true`
   ): BindingScope = js.native
   def variableDeclarations(): js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement] = js.native
   def viewSnapshotStatements(): js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement] = js.native

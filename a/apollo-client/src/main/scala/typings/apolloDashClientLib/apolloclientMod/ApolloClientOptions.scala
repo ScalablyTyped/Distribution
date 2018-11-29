@@ -11,8 +11,10 @@ trait ApolloClientOptions[TCacheShape] extends js.Object {
   var connectToDevTools: js.UndefOr[scala.Boolean] = js.undefined
   var defaultOptions: js.UndefOr[DefaultOptions] = js.undefined
   var link: apolloDashLinkLib.apolloDashLinkMod.ApolloLink
+  var name: js.UndefOr[java.lang.String] = js.undefined
   var queryDeduplication: js.UndefOr[scala.Boolean] = js.undefined
   var ssrForceFetchDelay: js.UndefOr[scala.Double] = js.undefined
   var ssrMode: js.UndefOr[scala.Boolean] = js.undefined
+  var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

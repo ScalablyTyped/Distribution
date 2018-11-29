@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
      * interfaces.
      *
      * beforeValidate, afterValidate, beforeBulkCreate, beforeBulkDestroy, beforeBulkUpdate, beforeCreate,
-     * beforeDestroy, beforeUpdate, afterCreate, afterDestroy, afterUpdate, afterBulkCreate, afterBulkDestroy and
-     * afterBulkUpdate.
+     * beforeDestroy, beforeSave, beforeUpdate, afterCreate, afterDestroy, afterSave, afterUpdate, afterBulkCreate,
+     * afterBulkDestroy and afterBulkUpdate.
      */
 
 trait HooksDefineOptions[TInstance] extends js.Object {
@@ -54,6 +54,9 @@ trait HooksDefineOptions[TInstance] extends js.Object {
       _
     ]
   ] = js.undefined
+  var afterSave: js.UndefOr[
+    js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
+  ] = js.undefined
   var afterUpdate: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
   ] = js.undefined
@@ -88,6 +91,9 @@ trait HooksDefineOptions[TInstance] extends js.Object {
   var beforeFind: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
   var beforeFindAfterExpandIncludeAll: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
   var beforeFindAfterOptions: js.UndefOr[js.Function2[/* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]] = js.undefined
+  var beforeSave: js.UndefOr[
+    js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
+  ] = js.undefined
   var beforeUpdate: js.UndefOr[
     js.Function3[/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function], _]
   ] = js.undefined

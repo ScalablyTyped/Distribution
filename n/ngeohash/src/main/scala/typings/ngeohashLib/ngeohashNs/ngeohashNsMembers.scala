@@ -30,6 +30,12 @@ object ngeohashNsMembers extends js.Object {
   def decode_bbox_int(hashinteger: scala.Double, bitDepth: scala.Double): GeographicBoundingBox = js.native
   def decode_int(hashinteger: scala.Double): GeographicPoint = js.native
   def decode_int(hashinteger: scala.Double, bitDepth: scala.Double): GeographicPoint = js.native
+  def encode(latitude: java.lang.String, longitude: java.lang.String): java.lang.String = js.native
+  def encode(latitude: java.lang.String, longitude: java.lang.String, precision: scala.Double): java.lang.String = js.native
+  def encode(latitude: java.lang.String, longitude: scala.Double): java.lang.String = js.native
+  def encode(latitude: java.lang.String, longitude: scala.Double, precision: scala.Double): java.lang.String = js.native
+  def encode(latitude: scala.Double, longitude: java.lang.String): java.lang.String = js.native
+  def encode(latitude: scala.Double, longitude: java.lang.String, precision: scala.Double): java.lang.String = js.native
   def encode(latitude: scala.Double, longitude: scala.Double): java.lang.String = js.native
   def encode(latitude: scala.Double, longitude: scala.Double, precision: scala.Double): java.lang.String = js.native
   def encode_int(latitude: scala.Double, longitude: scala.Double): scala.Double = js.native

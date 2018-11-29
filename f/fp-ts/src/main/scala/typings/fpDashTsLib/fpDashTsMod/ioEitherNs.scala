@@ -31,8 +31,13 @@ object ioEitherNs extends js.Object {
   ] = js.native
   val tryCatch: js.Function2[
     /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Any], 
-    /* onerror */ js.UndefOr[js.Function1[/* reason */ js.Object, stdLib.Error]], 
+    /* onerror */ js.UndefOr[js.Function1[/* reason */ js.Any, stdLib.Error]], 
     fpDashTsLib.libIOEitherMod.IOEither[stdLib.Error, js.Any]
+  ] = js.native
+  val tryCatch2v: js.Function2[
+    /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Any], 
+    /* onerror */ js.Function1[/* reason */ js.Any, js.Any], 
+    fpDashTsLib.libIOEitherMod.IOEither[js.Any, js.Any]
   ] = js.native
 }
 

@@ -14,8 +14,8 @@ object libLoggerModMembers extends js.Object {
   def createPrefixedFormatter(prefix: js.Function0[java.lang.String]): LoggerFormatter = js.native
   def createTaggedFormatter(): LoggerFormatter = js.native
   def createTaggedFormatter(hasColorsPrefixTitleizeWrap: CreateTaggedFormatterOptions): LoggerFormatter = js.native
-  def getLoggerLevelColor(colors: atIonicCliDashFrameworkLib.libColorsMod.Colors): js.UndefOr[chalkLib.chalkMod.Chalk] = js.native
-  def getLoggerLevelColor(colors: atIonicCliDashFrameworkLib.libColorsMod.Colors, level: LoggerLevelWeight): js.UndefOr[chalkLib.chalkMod.Chalk] = js.native
+  def getLoggerLevelColor(colors: atIonicCliDashFrameworkLib.libColorsMod.Colors): js.UndefOr[atIonicCliDashFrameworkLib.libColorsMod.ColorFunction] = js.native
+  def getLoggerLevelColor(colors: atIonicCliDashFrameworkLib.libColorsMod.Colors, level: LoggerLevelWeight): js.UndefOr[atIonicCliDashFrameworkLib.libColorsMod.ColorFunction] = js.native
   def getLoggerLevelName(): js.UndefOr[LoggerLevel] = js.native
   def getLoggerLevelName(level: LoggerLevelWeight): js.UndefOr[LoggerLevel] = js.native
 }

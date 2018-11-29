@@ -17,7 +17,7 @@ trait ITagProps
   var active: js.UndefOr[scala.Boolean] = js.undefined
   /** Name of a Blueprint UI icon (or an icon element) to render before the children. */
   var icon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /**
        * Whether the tag should visually respond to user interactions. If set
@@ -67,7 +67,7 @@ trait ITagProps
   ] = js.undefined
   /** Name of a Blueprint UI icon (or an icon element) to render after the children. */
   var rightIcon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
   /**
        * Whether this tag should have rounded ends.

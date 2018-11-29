@@ -18,6 +18,10 @@ object ServiceCatalogNs extends js.Object {
          * The portfolio identifier.
          */
     var PortfolioId: Id
+    /**
+         * The type of shared portfolios to accept. The default is to accept imported portfolios.    AWS_ORGANIZATIONS - Accept portfolios shared by the master account of your organization.    IMPORTED - Accept imported portfolios.    AWS_SERVICECATALOG - Not supported. (Throws ResourceNotFoundException.)   For example, aws servicecatalog accept-portfolio-share --portfolio-id "port-2qwzkwxt3y5fk" --portfolio-share-type AWS_ORGANIZATIONS 
+         */
+    var PortfolioShareType: js.UndefOr[PortfolioShareType] = js.undefined
   }
   
   
@@ -262,7 +266,7 @@ object ServiceCatalogNs extends js.Object {
          */
     var IdempotencyToken: IdempotencyToken
     /**
-         * The constraint parameters, in JSON format. The syntax depends on the constraint type as follows:  LAUNCH  Specify the RoleArn property as follows: \"RoleArn\" : \"arn:aws:iam::123456789012:role/LaunchRole\"  NOTIFICATION  Specify the NotificationArns property as follows: \"NotificationArns\" : [\"arn:aws:sns:us-east-1:123456789012:Topic\"]  TEMPLATE  Specify the Rules property. For more information, see Template Constraint Rules.  
+         * The constraint parameters, in JSON format. The syntax depends on the constraint type as follows:  LAUNCH  Specify the RoleArn property as follows:  {"RoleArn" : "arn:aws:iam::123456789012:role/LaunchRole"}  You cannot have both a LAUNCH and a STACKSET constraint. You also cannot have more than one LAUNCH constraint on a product and portfolio.  NOTIFICATION  Specify the NotificationArns property as follows:  {"NotificationArns" : ["arn:aws:sns:us-east-1:123456789012:Topic"]}   STACKSET  Specify the Parameters property as follows:  {"Version": "String", "Properties": {"AccountList": [ "String" ], "RegionList": [ "String" ], "AdminRole": "String", "ExecutionRole": "String"}}  You cannot have both a LAUNCH and a STACKSET constraint. You also cannot have more than one STACKSET constraint on a product and portfolio. Products with a STACKSET constraint will launch an AWS CloudFormation stack set.  TEMPLATE  Specify the Rules property. For more information, see Template Constraint Rules.  
          */
     var Parameters: ConstraintParameters
     /**
@@ -274,7 +278,7 @@ object ServiceCatalogNs extends js.Object {
          */
     var ProductId: Id
     /**
-         * The type of constraint.    LAUNCH     NOTIFICATION     TEMPLATE   
+         * The type of constraint.    LAUNCH     NOTIFICATION     STACKSET     TEMPLATE   
          */
     var Type: ConstraintType
   }
@@ -342,9 +346,13 @@ object ServiceCatalogNs extends js.Object {
          */
     var AcceptLanguage: js.UndefOr[AcceptLanguage] = js.undefined
     /**
-         * The AWS account ID.
+         * The AWS account ID. For example, 123456789012.
          */
-    var AccountId: AccountId
+    var AccountId: js.UndefOr[AccountId] = js.undefined
+    /**
+         * The organization node to whom you are going to share. If OrganizationNode is passed in, PortfolioShare will be created for the node and its children (when applies), and a PortfolioShareToken will be returned in the output in order for the administrator to monitor the status of the PortfolioShare creation process.
+         */
+    var OrganizationNode: js.UndefOr[OrganizationNode] = js.undefined
     /**
          * The portfolio identifier.
          */
@@ -352,7 +360,12 @@ object ServiceCatalogNs extends js.Object {
   }
   
   
-  trait CreatePortfolioShareOutput extends js.Object
+  trait CreatePortfolioShareOutput extends js.Object {
+    /**
+         * The portfolio share unique identifier. This will only be returned if portfolio is shared to an organization node.
+         */
+    var PortfolioShareToken: js.UndefOr[PortfolioShareToken] = js.undefined
+  }
   
   
   trait CreateProductInput extends js.Object {
@@ -625,7 +638,11 @@ object ServiceCatalogNs extends js.Object {
     /**
          * The AWS account ID.
          */
-    var AccountId: AccountId
+    var AccountId: js.UndefOr[AccountId] = js.undefined
+    /**
+         * The organization node to whom you are going to stop sharing.
+         */
+    var OrganizationNode: js.UndefOr[OrganizationNode] = js.undefined
     /**
          * The portfolio identifier.
          */
@@ -633,7 +650,12 @@ object ServiceCatalogNs extends js.Object {
   }
   
   
-  trait DeletePortfolioShareOutput extends js.Object
+  trait DeletePortfolioShareOutput extends js.Object {
+    /**
+         * The portfolio share unique identifier. This will only be returned if delete is made to an organization node.
+         */
+    var PortfolioShareToken: js.UndefOr[PortfolioShareToken] = js.undefined
+  }
   
   
   trait DeleteProductInput extends js.Object {
@@ -796,6 +818,38 @@ object ServiceCatalogNs extends js.Object {
          * Information about the tags associated with the portfolio.
          */
     var Tags: js.UndefOr[Tags] = js.undefined
+  }
+  
+  
+  trait DescribePortfolioShareStatusInput extends js.Object {
+    /**
+         * The token for the portfolio share operation. This token is returned either by CreatePortfolioShare or by DeletePortfolioShare.
+         */
+    var PortfolioShareToken: PortfolioShareToken
+  }
+  
+  
+  trait DescribePortfolioShareStatusOutput extends js.Object {
+    /**
+         * Organization node identifier. It can be either account id, organizational unit id or organization id.
+         */
+    var OrganizationNodeValue: js.UndefOr[OrganizationNodeValue] = js.undefined
+    /**
+         * The portfolio identifier.
+         */
+    var PortfolioId: js.UndefOr[Id] = js.undefined
+    /**
+         * The token for the portfolio share operation. For example, share-6v24abcdefghi.
+         */
+    var PortfolioShareToken: js.UndefOr[PortfolioShareToken] = js.undefined
+    /**
+         * Information about the portfolio share operation.
+         */
+    var ShareDetails: js.UndefOr[ShareDetails] = js.undefined
+    /**
+         * Status of the portfolio share operation.
+         */
+    var Status: js.UndefOr[ShareStatus] = js.undefined
   }
   
   
@@ -1005,6 +1059,10 @@ object ServiceCatalogNs extends js.Object {
          */
     var ProvisioningArtifactParameters: js.UndefOr[ProvisioningArtifactParameters] = js.undefined
     /**
+         * An object that contains information about preferences, such as regions and accounts, for the provisioning artifact.
+         */
+    var ProvisioningArtifactPreferences: js.UndefOr[ProvisioningArtifactPreferences] = js.undefined
+    /**
          * Information about the TagOptions associated with the resource.
          */
     var TagOptions: js.UndefOr[TagOptionSummaries] = js.undefined
@@ -1087,6 +1145,12 @@ object ServiceCatalogNs extends js.Object {
   }
   
   
+  trait DisableAWSOrganizationsAccessInput extends js.Object
+  
+  
+  trait DisableAWSOrganizationsAccessOutput extends js.Object
+  
+  
   trait DisassociatePrincipalFromPortfolioInput extends js.Object {
     /**
          * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -1161,6 +1225,12 @@ object ServiceCatalogNs extends js.Object {
   
   
   trait DisassociateTagOptionFromResourceOutput extends js.Object
+  
+  
+  trait EnableAWSOrganizationsAccessInput extends js.Object
+  
+  
+  trait EnableAWSOrganizationsAccessOutput extends js.Object
   
   
   trait ExecuteProvisionedProductPlanInput extends js.Object {
@@ -1239,6 +1309,17 @@ object ServiceCatalogNs extends js.Object {
   }
   
   
+  trait GetAWSOrganizationsAccessStatusInput extends js.Object
+  
+  
+  trait GetAWSOrganizationsAccessStatusOutput extends js.Object {
+    /**
+         * The status of the portfolio share feature.
+         */
+    var AccessStatus: js.UndefOr[AccessStatus] = js.undefined
+  }
+  
+  
   trait LaunchPathSummary extends js.Object {
     /**
          * The constraints on the portfolio-product relationship.
@@ -1273,7 +1354,7 @@ object ServiceCatalogNs extends js.Object {
          */
     var PageToken: js.UndefOr[PageToken] = js.undefined
     /**
-         * The type of shared portfolios to list. The default is to list imported portfolios.    AWS_SERVICECATALOG - List default portfolios    IMPORTED - List imported portfolios  
+         * The type of shared portfolios to list. The default is to list imported portfolios.    AWS_ORGANIZATIONS - List portfolios shared by the master account of your organization    AWS_SERVICECATALOG - List default portfolios    IMPORTED - List imported portfolios  
          */
     var PortfolioShareType: js.UndefOr[PortfolioShareType] = js.undefined
   }
@@ -1356,6 +1437,42 @@ object ServiceCatalogNs extends js.Object {
          * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
          */
     var NextPageToken: js.UndefOr[PageToken] = js.undefined
+  }
+  
+  
+  trait ListOrganizationPortfolioAccessInput extends js.Object {
+    /**
+         * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
+         */
+    var AcceptLanguage: js.UndefOr[AcceptLanguage] = js.undefined
+    /**
+         * The organization node type that will be returned in the output.    ORGANIZATION - Organization that has access to the portfolio.     ORGANIZATIONAL_UNIT - Organizational unit that has access to the portfolio within your organization.    ACCOUNT - Account that has access to the portfolio within your organization.  
+         */
+    var OrganizationNodeType: OrganizationNodeType
+    /**
+         * The maximum number of items to return with this call.
+         */
+    var PageSize: js.UndefOr[PageSize] = js.undefined
+    /**
+         * The page token for the next set of results. To retrieve the first set of results, use null.
+         */
+    var PageToken: js.UndefOr[PageToken] = js.undefined
+    /**
+         * The portfolio identifier. For example, port-2abcdext3y5fk.
+         */
+    var PortfolioId: Id
+  }
+  
+  
+  trait ListOrganizationPortfolioAccessOutput extends js.Object {
+    /**
+         * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
+         */
+    var NextPageToken: js.UndefOr[PageToken] = js.undefined
+    /**
+         * Displays information about the organization nodes.
+         */
+    var OrganizationNodes: js.UndefOr[OrganizationNodes] = js.undefined
   }
   
   
@@ -1755,6 +1872,18 @@ object ServiceCatalogNs extends js.Object {
   }
   
   
+  trait OrganizationNode extends js.Object {
+    /**
+         * 
+         */
+    var Type: js.UndefOr[OrganizationNodeType] = js.undefined
+    /**
+         * 
+         */
+    var Value: js.UndefOr[OrganizationNodeValue] = js.undefined
+  }
+  
+  
   trait ParameterConstraints extends js.Object {
     /**
          * The values that the administrator has allowed for the parameter.
@@ -1925,6 +2054,10 @@ object ServiceCatalogNs extends js.Object {
          */
     var ProvisioningParameters: js.UndefOr[ProvisioningParameters] = js.undefined
     /**
+         * An object that contains information about the provisioning preferences for a stack set.
+         */
+    var ProvisioningPreferences: js.UndefOr[ProvisioningPreferences] = js.undefined
+    /**
          * One or more tags.
          */
     var Tags: js.UndefOr[Tags] = js.undefined
@@ -1989,7 +2122,7 @@ object ServiceCatalogNs extends js.Object {
          */
     var Tags: js.UndefOr[Tags] = js.undefined
     /**
-         * The type of provisioned product. The supported value is CFN_STACK.
+         * The type of provisioned product. The supported values are CFN_STACK and CFN_STACKSET.
          */
     var Type: js.UndefOr[ProvisionedProductType] = js.undefined
     /**
@@ -2045,7 +2178,7 @@ object ServiceCatalogNs extends js.Object {
          */
     var StatusMessage: js.UndefOr[ProvisionedProductStatusMessage] = js.undefined
     /**
-         * The type of provisioned product. The supported value is CFN_STACK.
+         * The type of provisioned product. The supported values are CFN_STACK and CFN_STACKSET.
          */
     var Type: js.UndefOr[ProvisionedProductType] = js.undefined
   }
@@ -2227,6 +2360,18 @@ object ServiceCatalogNs extends js.Object {
   }
   
   
+  trait ProvisioningArtifactPreferences extends js.Object {
+    /**
+         * One or more AWS accounts where stack instances are deployed from the stack set. These accounts can be scoped in ProvisioningPreferences$StackSetAccounts and UpdateProvisioningPreferences$StackSetAccounts. Applicable only to a CFN_STACKSET provisioned product type.
+         */
+    var StackSetAccounts: js.UndefOr[StackSetAccounts] = js.undefined
+    /**
+         * One or more AWS Regions where stack instances are deployed from the stack set. These regions can be scoped in ProvisioningPreferences$StackSetRegions and UpdateProvisioningPreferences$StackSetRegions. Applicable only to a CFN_STACKSET provisioned product type.
+         */
+    var StackSetRegions: js.UndefOr[StackSetRegions] = js.undefined
+  }
+  
+  
   trait ProvisioningArtifactProperties extends js.Object {
     /**
          * The description of the provisioning artifact, including how it differs from the previous provisioning artifact.
@@ -2295,6 +2440,34 @@ object ServiceCatalogNs extends js.Object {
   }
   
   
+  trait ProvisioningPreferences extends js.Object {
+    /**
+         * One or more AWS accounts that will have access to the provisioned product. Applicable only to a CFN_STACKSET provisioned product type. The AWS accounts specified should be within the list of accounts in the STACKSET constraint. To get the list of accounts in the STACKSET constraint, use the DescribeProvisioningParameters operation. If no values are specified, the default value is all accounts from the STACKSET constraint.
+         */
+    var StackSetAccounts: js.UndefOr[StackSetAccounts] = js.undefined
+    /**
+         * The number of accounts, per region, for which this operation can fail before AWS Service Catalog stops the operation in that region. If the operation is stopped in a region, AWS Service Catalog doesn't attempt the operation in any subsequent regions. Applicable only to a CFN_STACKSET provisioned product type. Conditional: You must specify either StackSetFailureToleranceCount or StackSetFailureTolerancePercentage, but not both. The default value is 0 if no value is specified.
+         */
+    var StackSetFailureToleranceCount: js.UndefOr[StackSetFailureToleranceCount] = js.undefined
+    /**
+         * The percentage of accounts, per region, for which this stack operation can fail before AWS Service Catalog stops the operation in that region. If the operation is stopped in a region, AWS Service Catalog doesn't attempt the operation in any subsequent regions. When calculating the number of accounts based on the specified percentage, AWS Service Catalog rounds down to the next whole number. Applicable only to a CFN_STACKSET provisioned product type. Conditional: You must specify either StackSetFailureToleranceCount or StackSetFailureTolerancePercentage, but not both.
+         */
+    var StackSetFailureTolerancePercentage: js.UndefOr[StackSetFailureTolerancePercentage] = js.undefined
+    /**
+         * The maximum number of accounts in which to perform this operation at one time. This is dependent on the value of StackSetFailureToleranceCount. StackSetMaxConcurrentCount is at most one more than the StackSetFailureToleranceCount. Note that this setting lets you specify the maximum for operations. For large deployments, under certain circumstances the actual number of accounts acted upon concurrently may be lower due to service throttling. Applicable only to a CFN_STACKSET provisioned product type. Conditional: You must specify either StackSetMaxConcurrentCount or StackSetMaxConcurrentPercentage, but not both.
+         */
+    var StackSetMaxConcurrencyCount: js.UndefOr[StackSetMaxConcurrencyCount] = js.undefined
+    /**
+         * The maximum percentage of accounts in which to perform this operation at one time. When calculating the number of accounts based on the specified percentage, AWS Service Catalog rounds down to the next whole number. This is true except in cases where rounding down would result is zero. In this case, AWS Service Catalog sets the number as 1 instead. Note that this setting lets you specify the maximum for operations. For large deployments, under certain circumstances the actual number of accounts acted upon concurrently may be lower due to service throttling. Applicable only to a CFN_STACKSET provisioned product type. Conditional: You must specify either StackSetMaxConcurrentCount or StackSetMaxConcurrentPercentage, but not both.
+         */
+    var StackSetMaxConcurrencyPercentage: js.UndefOr[StackSetMaxConcurrencyPercentage] = js.undefined
+    /**
+         * One or more AWS Regions where the provisioned product will be available. Applicable only to a CFN_STACKSET provisioned product type. The specified regions should be within the list of regions from the STACKSET constraint. To get the list of regions in the STACKSET constraint, use the DescribeProvisioningParameters operation. If no values are specified, the default value is all regions from the STACKSET constraint.
+         */
+    var StackSetRegions: js.UndefOr[StackSetRegions] = js.undefined
+  }
+  
+  
   trait RecordDetail extends js.Object {
     /**
          * The UTC time stamp of the creation time.
@@ -2317,7 +2490,7 @@ object ServiceCatalogNs extends js.Object {
          */
     var ProvisionedProductName: js.UndefOr[ProvisionedProductName] = js.undefined
     /**
-         * The type of provisioned product. The supported value is CFN_STACK.
+         * The type of provisioned product. The supported values are CFN_STACK and CFN_STACKSET.
          */
     var ProvisionedProductType: js.UndefOr[ProvisionedProductType] = js.undefined
     /**
@@ -2400,6 +2573,10 @@ object ServiceCatalogNs extends js.Object {
          * The portfolio identifier.
          */
     var PortfolioId: Id
+    /**
+         * The type of shared portfolios to reject. The default is to reject imported portfolios.    AWS_ORGANIZATIONS - Reject portfolios shared by the master account of your organization.    IMPORTED - Reject imported portfolios.    AWS_SERVICECATALOG - Not supported. (Throws ResourceNotFoundException.)   For example, aws servicecatalog reject-portfolio-share --portfolio-id "port-2qwzkwxt3y5fk" --portfolio-share-type AWS_ORGANIZATIONS 
+         */
+    var PortfolioShareType: js.UndefOr[PortfolioShareType] = js.undefined
   }
   
   
@@ -2715,6 +2892,34 @@ object ServiceCatalogNs extends js.Object {
          * The self-service action name.
          */
     var Name: js.UndefOr[ServiceActionName] = js.undefined
+  }
+  
+  
+  trait ShareDetails extends js.Object {
+    /**
+         * List of errors.
+         */
+    var ShareErrors: js.UndefOr[ShareErrors] = js.undefined
+    /**
+         * List of accounts for whom the operation succeeded.
+         */
+    var SuccessfulShares: js.UndefOr[SuccessfulShares] = js.undefined
+  }
+  
+  
+  trait ShareError extends js.Object {
+    /**
+         * List of accounts impacted by the error.
+         */
+    var Accounts: js.UndefOr[Namespaces] = js.undefined
+    /**
+         * Error type that happened when processing the operation.
+         */
+    var Error: js.UndefOr[Error] = js.undefined
+    /**
+         * Information about the error.
+         */
+    var Message: js.UndefOr[Message] = js.undefined
   }
   
   
@@ -3129,11 +3334,11 @@ object ServiceCatalogNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreatePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Shares the specified portfolio with the specified account.
+       * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
        */
     def createPortfolioShare(): awsDashSdkLib.libRequestMod.Request[CreatePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Shares the specified portfolio with the specified account.
+       * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
        */
     def createPortfolioShare(
       callback: js.Function2[
@@ -3143,11 +3348,11 @@ object ServiceCatalogNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreatePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Shares the specified portfolio with the specified account.
+       * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
        */
     def createPortfolioShare(params: CreatePortfolioShareInput): awsDashSdkLib.libRequestMod.Request[CreatePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Shares the specified portfolio with the specified account.
+       * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the master account of an Organization. AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node.
        */
     def createPortfolioShare(
       params: CreatePortfolioShareInput,
@@ -3361,11 +3566,11 @@ object ServiceCatalogNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeletePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Stops sharing the specified portfolio with the specified account.
+       * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
        */
     def deletePortfolioShare(): awsDashSdkLib.libRequestMod.Request[DeletePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Stops sharing the specified portfolio with the specified account.
+       * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
        */
     def deletePortfolioShare(
       callback: js.Function2[
@@ -3375,11 +3580,11 @@ object ServiceCatalogNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeletePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Stops sharing the specified portfolio with the specified account.
+       * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
        */
     def deletePortfolioShare(params: DeletePortfolioShareInput): awsDashSdkLib.libRequestMod.Request[DeletePortfolioShareOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Stops sharing the specified portfolio with the specified account.
+       * Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.
        */
     def deletePortfolioShare(
       params: DeletePortfolioShareInput,
@@ -3621,6 +3826,35 @@ object ServiceCatalogNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribePortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
+       */
+    def describePortfolioShareStatus(): awsDashSdkLib.libRequestMod.Request[DescribePortfolioShareStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
+       */
+    def describePortfolioShareStatus(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribePortfolioShareStatusOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribePortfolioShareStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
+       */
+    def describePortfolioShareStatus(params: DescribePortfolioShareStatusInput): awsDashSdkLib.libRequestMod.Request[DescribePortfolioShareStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the status of the specified portfolio share operation. This API can only be called by the master account in the organization.
+       */
+    def describePortfolioShareStatus(
+      params: DescribePortfolioShareStatusInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribePortfolioShareStatusOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribePortfolioShareStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Gets information about the specified product.
        */
@@ -3912,6 +4146,35 @@ object ServiceCatalogNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeTagOptionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
+       */
+    def disableAWSOrganizationsAccess(): awsDashSdkLib.libRequestMod.Request[DisableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
+       */
+    def disableAWSOrganizationsAccess(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisableAWSOrganizationsAccessOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
+       */
+    def disableAWSOrganizationsAccess(params: DisableAWSOrganizationsAccessInput): awsDashSdkLib.libRequestMod.Request[DisableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Disable portfolio sharing through AWS Organizations feature. This feature will not delete your current shares but it will prevent you from creating new shares throughout your organization. Current shares will not be in sync with your organization structure if it changes after calling this API. This API can only be called by the master account in the organization.
+       */
+    def disableAWSOrganizationsAccess(
+      params: DisableAWSOrganizationsAccessInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisableAWSOrganizationsAccessOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Disassociates a previously associated principal ARN from a specified portfolio.
        */
     def disassociatePrincipalFromPortfolio(): awsDashSdkLib.libRequestMod.Request[DisassociatePrincipalFromPortfolioOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4040,6 +4303,35 @@ object ServiceCatalogNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DisassociateTagOptionFromResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
+       */
+    def enableAWSOrganizationsAccess(): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
+       */
+    def enableAWSOrganizationsAccess(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ EnableAWSOrganizationsAccessOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
+       */
+    def enableAWSOrganizationsAccess(params: EnableAWSOrganizationsAccessInput): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
+       */
+    def enableAWSOrganizationsAccess(
+      params: EnableAWSOrganizationsAccessInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ EnableAWSOrganizationsAccessOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Provisions or modifies a product based on the resource changes for the specified plan.
        */
     def executeProvisionedProductPlan(): awsDashSdkLib.libRequestMod.Request[ExecuteProvisionedProductPlanOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4097,6 +4389,35 @@ object ServiceCatalogNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ExecuteProvisionedProductServiceActionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
+       */
+    def getAWSOrganizationsAccessStatus(): awsDashSdkLib.libRequestMod.Request[GetAWSOrganizationsAccessStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
+       */
+    def getAWSOrganizationsAccessStatus(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetAWSOrganizationsAccessStatusOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetAWSOrganizationsAccessStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
+       */
+    def getAWSOrganizationsAccessStatus(params: GetAWSOrganizationsAccessStatusInput): awsDashSdkLib.libRequestMod.Request[GetAWSOrganizationsAccessStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Get the Access Status for AWS Organization portfolio share feature. This API can only be called by the master account in the organization.
+       */
+    def getAWSOrganizationsAccessStatus(
+      params: GetAWSOrganizationsAccessStatusInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetAWSOrganizationsAccessStatusOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetAWSOrganizationsAccessStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Lists all portfolios for which sharing was accepted by this account.
        */
@@ -4184,6 +4505,35 @@ object ServiceCatalogNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListLaunchPathsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
+       */
+    def listOrganizationPortfolioAccess(): awsDashSdkLib.libRequestMod.Request[ListOrganizationPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
+       */
+    def listOrganizationPortfolioAccess(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListOrganizationPortfolioAccessOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListOrganizationPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
+       */
+    def listOrganizationPortfolioAccess(params: ListOrganizationPortfolioAccessInput): awsDashSdkLib.libRequestMod.Request[ListOrganizationPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.
+       */
+    def listOrganizationPortfolioAccess(
+      params: ListOrganizationPortfolioAccessInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListOrganizationPortfolioAccessOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListOrganizationPortfolioAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Lists the account IDs that have access to the specified portfolio.
        */
@@ -5111,7 +5461,7 @@ object ServiceCatalogNs extends js.Object {
          */
     var PathId: js.UndefOr[Id] = js.undefined
     /**
-         * The identifier of the provisioned product.
+         * The identifier of the product.
          */
     var ProductId: js.UndefOr[Id] = js.undefined
     /**
@@ -5130,6 +5480,10 @@ object ServiceCatalogNs extends js.Object {
          * The new parameters.
          */
     var ProvisioningParameters: js.UndefOr[UpdateProvisioningParameters] = js.undefined
+    /**
+         * An object that contains information about the provisioning preferences for a stack set.
+         */
+    var ProvisioningPreferences: js.UndefOr[UpdateProvisioningPreferences] = js.undefined
     /**
          * The idempotency token that uniquely identifies the provisioning update request.
          */
@@ -5205,6 +5559,38 @@ object ServiceCatalogNs extends js.Object {
   }
   
   
+  trait UpdateProvisioningPreferences extends js.Object {
+    /**
+         * One or more AWS accounts that will have access to the provisioned product. Applicable only to a CFN_STACKSET provisioned product type. The AWS accounts specified should be within the list of accounts in the STACKSET constraint. To get the list of accounts in the STACKSET constraint, use the DescribeProvisioningParameters operation. If no values are specified, the default value is all accounts from the STACKSET constraint.
+         */
+    var StackSetAccounts: js.UndefOr[StackSetAccounts] = js.undefined
+    /**
+         * The number of accounts, per region, for which this operation can fail before AWS Service Catalog stops the operation in that region. If the operation is stopped in a region, AWS Service Catalog doesn't attempt the operation in any subsequent regions. Applicable only to a CFN_STACKSET provisioned product type. Conditional: You must specify either StackSetFailureToleranceCount or StackSetFailureTolerancePercentage, but not both. The default value is 0 if no value is specified.
+         */
+    var StackSetFailureToleranceCount: js.UndefOr[StackSetFailureToleranceCount] = js.undefined
+    /**
+         * The percentage of accounts, per region, for which this stack operation can fail before AWS Service Catalog stops the operation in that region. If the operation is stopped in a region, AWS Service Catalog doesn't attempt the operation in any subsequent regions. When calculating the number of accounts based on the specified percentage, AWS Service Catalog rounds down to the next whole number. Applicable only to a CFN_STACKSET provisioned product type. Conditional: You must specify either StackSetFailureToleranceCount or StackSetFailureTolerancePercentage, but not both.
+         */
+    var StackSetFailureTolerancePercentage: js.UndefOr[StackSetFailureTolerancePercentage] = js.undefined
+    /**
+         * The maximum number of accounts in which to perform this operation at one time. This is dependent on the value of StackSetFailureToleranceCount. StackSetMaxConcurrentCount is at most one more than the StackSetFailureToleranceCount. Note that this setting lets you specify the maximum for operations. For large deployments, under certain circumstances the actual number of accounts acted upon concurrently may be lower due to service throttling. Applicable only to a CFN_STACKSET provisioned product type. Conditional: You must specify either StackSetMaxConcurrentCount or StackSetMaxConcurrentPercentage, but not both.
+         */
+    var StackSetMaxConcurrencyCount: js.UndefOr[StackSetMaxConcurrencyCount] = js.undefined
+    /**
+         * The maximum percentage of accounts in which to perform this operation at one time. When calculating the number of accounts based on the specified percentage, AWS Service Catalog rounds down to the next whole number. This is true except in cases where rounding down would result is zero. In this case, AWS Service Catalog sets the number as 1 instead. Note that this setting lets you specify the maximum for operations. For large deployments, under certain circumstances the actual number of accounts acted upon concurrently may be lower due to service throttling. Applicable only to a CFN_STACKSET provisioned product type. Conditional: You must specify either StackSetMaxConcurrentCount or StackSetMaxConcurrentPercentage, but not both.
+         */
+    var StackSetMaxConcurrencyPercentage: js.UndefOr[StackSetMaxConcurrencyPercentage] = js.undefined
+    /**
+         * Determines what action AWS Service Catalog performs to a stack set or a stack instance represented by the provisioned product. The default value is UPDATE if nothing is specified. Applicable only to a CFN_STACKSET provisioned product type.  CREATE  Creates a new stack instance in the stack set represented by the provisioned product. In this case, only new stack instances are created based on accounts and regions; if new ProductId or ProvisioningArtifactID are passed, they will be ignored.  UPDATE  Updates the stack set represented by the provisioned product and also its stack instances.  DELETE  Deletes a stack instance in the stack set represented by the provisioned product.  
+         */
+    var StackSetOperationType: js.UndefOr[StackSetOperationType] = js.undefined
+    /**
+         * One or more AWS Regions where the provisioned product will be available. Applicable only to a CFN_STACKSET provisioned product type. The specified regions should be within the list of regions from the STACKSET constraint. To get the list of regions in the STACKSET constraint, use the DescribeProvisioningParameters operation. If no values are specified, the default value is all regions from the STACKSET constraint.
+         */
+    var StackSetRegions: js.UndefOr[StackSetRegions] = js.undefined
+  }
+  
+  
   trait UpdateServiceActionInput extends js.Object {
     /**
          * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
@@ -5276,6 +5662,7 @@ object ServiceCatalogNs extends js.Object {
   type AcceptLanguage = java.lang.String
   type AccessLevelFilterKey = awsDashSdkLib.awsDashSdkLibStrings.Account | awsDashSdkLib.awsDashSdkLibStrings.Role | awsDashSdkLib.awsDashSdkLibStrings.User | java.lang.String
   type AccessLevelFilterValue = java.lang.String
+  type AccessStatus = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.UNDER_CHANGE | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
   type AccountId = java.lang.String
   type AccountIds = js.Array[AccountId]
   type AddTags = js.Array[Tag]
@@ -5300,6 +5687,7 @@ object ServiceCatalogNs extends js.Object {
   type CreationTime = stdLib.Date
   type DefaultValue = java.lang.String
   type Description = java.lang.String
+  type Error = java.lang.String
   type ErrorCode = java.lang.String
   type ErrorDescription = java.lang.String
   type EvaluationType = awsDashSdkLib.awsDashSdkLibStrings.STATIC | awsDashSdkLib.awsDashSdkLibStrings.DYNAMIC | java.lang.String
@@ -5313,9 +5701,14 @@ object ServiceCatalogNs extends js.Object {
   type LastRequestId = java.lang.String
   type LaunchPathSummaries = js.Array[LaunchPathSummary]
   type LogicalResourceId = java.lang.String
+  type Message = java.lang.String
+  type Namespaces = js.Array[AccountId]
   type NoEcho = scala.Boolean
   type NotificationArn = java.lang.String
   type NotificationArns = js.Array[NotificationArn]
+  type OrganizationNodeType = awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATION | awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATIONAL_UNIT | awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT | java.lang.String
+  type OrganizationNodeValue = java.lang.String
+  type OrganizationNodes = js.Array[OrganizationNode]
   type OutputKey = java.lang.String
   type OutputValue = java.lang.String
   type PageSize = scala.Double
@@ -5330,7 +5723,8 @@ object ServiceCatalogNs extends js.Object {
   type PortfolioDetails = js.Array[PortfolioDetail]
   type PortfolioDisplayName = java.lang.String
   type PortfolioName = java.lang.String
-  type PortfolioShareType = awsDashSdkLib.awsDashSdkLibStrings.IMPORTED | awsDashSdkLib.awsDashSdkLibStrings.AWS_SERVICECATALOG | java.lang.String
+  type PortfolioShareToken = java.lang.String
+  type PortfolioShareType = awsDashSdkLib.awsDashSdkLibStrings.IMPORTED | awsDashSdkLib.awsDashSdkLibStrings.AWS_SERVICECATALOG | awsDashSdkLib.awsDashSdkLibStrings.AWS_ORGANIZATIONS | java.lang.String
   type PrincipalARN = java.lang.String
   type PrincipalType = awsDashSdkLib.awsDashSdkLibStrings.IAM | java.lang.String
   type Principals = js.Array[Principal]
@@ -5389,6 +5783,7 @@ object ServiceCatalogNs extends js.Object {
   type RecordTagValue = java.lang.String
   type RecordTags = js.Array[RecordTag]
   type RecordType = java.lang.String
+  type Region = java.lang.String
   type Replacement = awsDashSdkLib.awsDashSdkLibStrings.TRUE | awsDashSdkLib.awsDashSdkLibStrings.FALSE | awsDashSdkLib.awsDashSdkLibStrings.CONDITIONAL | java.lang.String
   type RequiresRecreation = awsDashSdkLib.awsDashSdkLibStrings.NEVER | awsDashSdkLib.awsDashSdkLibStrings.CONDITIONALLY | awsDashSdkLib.awsDashSdkLibStrings.ALWAYS | java.lang.String
   type ResourceARN = java.lang.String
@@ -5416,12 +5811,22 @@ object ServiceCatalogNs extends js.Object {
   type ServiceActionDescription = java.lang.String
   type ServiceActionName = java.lang.String
   type ServiceActionSummaries = js.Array[ServiceActionSummary]
+  type ShareErrors = js.Array[ShareError]
+  type ShareStatus = awsDashSdkLib.awsDashSdkLibStrings.NOT_STARTED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED_WITH_ERRORS | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String
   type SortField = java.lang.String
   type SortOrder = awsDashSdkLib.awsDashSdkLibStrings.ASCENDING | awsDashSdkLib.awsDashSdkLibStrings.DESCENDING | java.lang.String
   type SourceProvisioningArtifactProperties = js.Array[SourceProvisioningArtifactPropertiesMap]
+  type StackSetAccounts = js.Array[AccountId]
+  type StackSetFailureToleranceCount = scala.Double
+  type StackSetFailureTolerancePercentage = scala.Double
+  type StackSetMaxConcurrencyCount = scala.Double
+  type StackSetMaxConcurrencyPercentage = scala.Double
+  type StackSetOperationType = awsDashSdkLib.awsDashSdkLibStrings.CREATE | awsDashSdkLib.awsDashSdkLibStrings.UPDATE | awsDashSdkLib.awsDashSdkLibStrings.DELETE | java.lang.String
+  type StackSetRegions = js.Array[Region]
   type Status = awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
   type StatusDetail = java.lang.String
   type StatusMessage = java.lang.String
+  type SuccessfulShares = js.Array[AccountId]
   type SupportDescription = java.lang.String
   type SupportEmail = java.lang.String
   type SupportUrl = java.lang.String

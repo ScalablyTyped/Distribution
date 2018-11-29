@@ -24,8 +24,8 @@ trait R3QueryMetadata extends js.Object {
        */
   var propertyName: java.lang.String
   /**
-       * An expression representing a type to read from each matched node, or null if the node itself
-       * is to be returned.
+       * An expression representing a type to read from each matched node, or null if the default value
+       * for a given node is to be returned.
        */
   var read: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null
 }

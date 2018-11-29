@@ -49,6 +49,24 @@ object AWSNs extends js.Object {
   }
   
   @js.native
+  class Amplify ()
+    extends awsDashSdkLib.awsDashSdkMod.Amplify {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsAmplifyMod.AmplifyNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class AppMesh ()
+    extends awsDashSdkLib.awsDashSdkMod.AppMesh {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
   class AppStream ()
     extends awsDashSdkLib.awsDashSdkMod.AppStream {
     /**
@@ -127,6 +145,15 @@ object AWSNs extends js.Object {
        * Constructs a service object. This object has one method for each API operation.
        */
     def this(options: awsDashSdkLib.clientsCurMod.CURNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class Chime ()
+    extends awsDashSdkLib.awsDashSdkMod.Chime {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsChimeMod.ChimeNs.ClientConfiguration) = this()
   }
   
   @js.native
@@ -332,6 +359,15 @@ object AWSNs extends js.Object {
   }
   
   @js.native
+  class ComprehendMedical ()
+    extends awsDashSdkLib.awsDashSdkMod.ComprehendMedical {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
   class Config ()
     extends awsDashSdkLib.awsDashSdkMod.Config {
     /**
@@ -440,6 +476,15 @@ object AWSNs extends js.Object {
        * Constructs a service object. This object has one method for each API operation.
        */
     def this(options: awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class DataSync ()
+    extends awsDashSdkLib.awsDashSdkMod.DataSync {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.ClientConfiguration) = this()
   }
   
   @js.native
@@ -653,6 +698,15 @@ object AWSNs extends js.Object {
   }
   
   @js.native
+  class FSx ()
+    extends awsDashSdkLib.awsDashSdkMod.FSx {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsFsxMod.FSxNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
   class FileSystemCredentials protected ()
     extends awsDashSdkLib.awsDashSdkMod.FileSystemCredentials {
     /**
@@ -687,6 +741,15 @@ object AWSNs extends js.Object {
        * Constructs a service object. This object has one method for each API operation.
        */
     def this(options: awsDashSdkLib.clientsGlacierMod.GlacierNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class GlobalAccelerator ()
+    extends awsDashSdkLib.awsDashSdkMod.GlobalAccelerator {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.ClientConfiguration) = this()
   }
   
   @js.native
@@ -833,6 +896,15 @@ object AWSNs extends js.Object {
   }
   
   @js.native
+  class Kafka ()
+    extends awsDashSdkLib.awsDashSdkMod.Kafka {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsKafkaMod.KafkaNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
   class Kinesis ()
     extends awsDashSdkLib.awsDashSdkMod.Kinesis {
     /**
@@ -848,6 +920,15 @@ object AWSNs extends js.Object {
        * Constructs a service object. This object has one method for each API operation.
        */
     def this(options: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class KinesisAnalyticsV2 ()
+    extends awsDashSdkLib.awsDashSdkMod.KinesisAnalyticsV2 {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns.ClientConfiguration) = this()
   }
   
   @js.native
@@ -902,6 +983,15 @@ object AWSNs extends js.Object {
        * Constructs a service object. This object has one method for each API operation.
        */
     def this(options: awsDashSdkLib.clientsLexruntimeMod.LexRuntimeNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class LicenseManager ()
+    extends awsDashSdkLib.awsDashSdkMod.LicenseManager {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs.ClientConfiguration) = this()
   }
   
   @js.native
@@ -974,6 +1064,15 @@ object AWSNs extends js.Object {
        * Constructs a service object. This object has one method for each API operation.
        */
     def this(options: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class MediaConnect ()
+    extends awsDashSdkLib.awsDashSdkMod.MediaConnect {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.ClientConfiguration) = this()
   }
   
   @js.native
@@ -1121,6 +1220,24 @@ object AWSNs extends js.Object {
   }
   
   @js.native
+  class PinpointEmail ()
+    extends awsDashSdkLib.awsDashSdkMod.PinpointEmail {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class PinpointSMSVoice ()
+    extends awsDashSdkLib.awsDashSdkMod.PinpointSMSVoice {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
   class Polly ()
     extends awsDashSdkLib.awsDashSdkMod.Polly {
     /**
@@ -1139,12 +1256,39 @@ object AWSNs extends js.Object {
   }
   
   @js.native
+  class QuickSight ()
+    extends awsDashSdkLib.awsDashSdkMod.QuickSight {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class RAM ()
+    extends awsDashSdkLib.awsDashSdkMod.RAM {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsRamMod.RAMNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
   class RDS ()
     extends awsDashSdkLib.awsDashSdkMod.RDS {
     /**
        * Constructs a service object. This object has one method for each API operation.
        */
     def this(options: awsDashSdkLib.clientsRdsMod.RDSNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class RDSDataService ()
+    extends awsDashSdkLib.awsDashSdkMod.RDSDataService {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ClientConfiguration) = this()
   }
   
   @js.native
@@ -1219,6 +1363,15 @@ object AWSNs extends js.Object {
     extends awsDashSdkLib.awsDashSdkMod.Response[D, E]
   
   @js.native
+  class RoboMaker ()
+    extends awsDashSdkLib.awsDashSdkMod.RoboMaker {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
   class Route53 ()
     extends awsDashSdkLib.awsDashSdkMod.Route53 {
     /**
@@ -1237,12 +1390,30 @@ object AWSNs extends js.Object {
   }
   
   @js.native
+  class Route53Resolver ()
+    extends awsDashSdkLib.awsDashSdkMod.Route53Resolver {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
   class S3 ()
     extends awsDashSdkLib.awsDashSdkMod.S3 {
     /**
        * Constructs a service object. This object has one method for each API operation.
        */
     def this(options: awsDashSdkLib.clientsS3Mod.S3Ns.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class S3Control ()
+    extends awsDashSdkLib.awsDashSdkMod.S3Control {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsS3controlMod.S3ControlNs.ClientConfiguration) = this()
   }
   
   @js.native
@@ -1343,6 +1514,15 @@ object AWSNs extends js.Object {
        * Constructs a service object. This object has one method for each API operation.
        */
     def this(options: awsDashSdkLib.clientsSecretsmanagerMod.SecretsManagerNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class SecurityHub ()
+    extends awsDashSdkLib.awsDashSdkMod.SecurityHub {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ClientConfiguration) = this()
   }
   
   @js.native
@@ -1477,6 +1657,15 @@ object AWSNs extends js.Object {
        * Constructs a service object. This object has one method for each API operation.
        */
     def this(options: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  class Transfer ()
+    extends awsDashSdkLib.awsDashSdkMod.Transfer {
+    /**
+       * Constructs a service object. This object has one method for each API operation.
+       */
+    def this(options: awsDashSdkLib.clientsTransferMod.TransferNs.ClientConfiguration) = this()
   }
   
   @js.native
@@ -1639,6 +1828,48 @@ object AWSNs extends js.Object {
     @JSName("AlexaForBusiness")
     @js.native
     object AlexaForBusinessNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("Amplify")
+  @js.native
+  object AmplifyNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.AmplifyNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsAmplifyMod.AmplifyNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("Amplify")
+    @js.native
+    object AmplifyNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("AppMesh")
+  @js.native
+  object AppMeshNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.AppMeshNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("AppMesh")
+    @js.native
+    object AppMeshNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     
@@ -1807,6 +2038,27 @@ object AWSNs extends js.Object {
     @JSName("CUR")
     @js.native
     object CURNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("Chime")
+  @js.native
+  object ChimeNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.ChimeNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsChimeMod.ChimeNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("Chime")
+    @js.native
+    object ChimeNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     
@@ -2261,6 +2513,27 @@ object AWSNs extends js.Object {
     
   }
   
+  @JSName("ComprehendMedical")
+  @js.native
+  object ComprehendMedicalNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.ComprehendMedicalNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("ComprehendMedical")
+    @js.native
+    object ComprehendMedicalNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
   @JSName("Comprehend")
   @js.native
   object ComprehendNs extends js.Object {
@@ -2436,6 +2709,27 @@ object AWSNs extends js.Object {
     @JSName("DataPipeline")
     @js.native
     object DataPipelineNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("DataSync")
+  @js.native
+  object DataSyncNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.DataSyncNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("DataSync")
+    @js.native
+    object DataSyncNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     
@@ -2924,6 +3218,27 @@ object AWSNs extends js.Object {
     
   }
   
+  @JSName("FSx")
+  @js.native
+  object FSxNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.FSxNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsFsxMod.FSxNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("FSx")
+    @js.native
+    object FSxNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
   @JSName("Firehose")
   @js.native
   object FirehoseNs extends js.Object {
@@ -2982,6 +3297,27 @@ object AWSNs extends js.Object {
     @JSName("Glacier")
     @js.native
     object GlacierNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("GlobalAccelerator")
+  @js.native
+  object GlobalAcceleratorNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.GlobalAcceleratorNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("GlobalAccelerator")
+    @js.native
+    object GlobalAcceleratorNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     
@@ -3281,6 +3617,27 @@ object AWSNs extends js.Object {
     
   }
   
+  @JSName("Kafka")
+  @js.native
+  object KafkaNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.KafkaNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsKafkaMod.KafkaNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("Kafka")
+    @js.native
+    object KafkaNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
   @JSName("KinesisAnalytics")
   @js.native
   object KinesisAnalyticsNs extends js.Object {
@@ -3297,6 +3654,27 @@ object AWSNs extends js.Object {
     @JSName("KinesisAnalytics")
     @js.native
     object KinesisAnalyticsNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("KinesisAnalyticsV2")
+  @js.native
+  object KinesisAnalyticsV2Ns extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.KinesisAnalyticsV2Ns.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("KinesisAnalyticsV2")
+    @js.native
+    object KinesisAnalyticsV2Ns extends js.Object {
       val TypesNs: this.type = js.native
     }
     
@@ -3444,6 +3822,27 @@ object AWSNs extends js.Object {
     @JSName("LexRuntime")
     @js.native
     object LexRuntimeNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("LicenseManager")
+  @js.native
+  object LicenseManagerNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.LicenseManagerNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("LicenseManager")
+    @js.native
+    object LicenseManagerNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     
@@ -3612,6 +4011,27 @@ object AWSNs extends js.Object {
     @JSName("MarketplaceMetering")
     @js.native
     object MarketplaceMeteringNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("MediaConnect")
+  @js.native
+  object MediaConnectNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.MediaConnectNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("MediaConnect")
+    @js.native
+    object MediaConnectNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     
@@ -3919,6 +4339,27 @@ object AWSNs extends js.Object {
     
   }
   
+  @JSName("PinpointEmail")
+  @js.native
+  object PinpointEmailNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.PinpointEmailNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("PinpointEmail")
+    @js.native
+    object PinpointEmailNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
   @JSName("Pinpoint")
   @js.native
   object PinpointNs extends js.Object {
@@ -3935,6 +4376,27 @@ object AWSNs extends js.Object {
     @JSName("Pinpoint")
     @js.native
     object PinpointNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("PinpointSMSVoice")
+  @js.native
+  object PinpointSMSVoiceNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.PinpointSMSVoiceNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("PinpointSMSVoice")
+    @js.native
+    object PinpointSMSVoiceNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     
@@ -3995,6 +4457,69 @@ object AWSNs extends js.Object {
     @JSName("Pricing")
     @js.native
     object PricingNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("QuickSight")
+  @js.native
+  object QuickSightNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.QuickSightNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("QuickSight")
+    @js.native
+    object QuickSightNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("RAM")
+  @js.native
+  object RAMNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.RAMNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsRamMod.RAMNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("RAM")
+    @js.native
+    object RAMNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("RDSDataService")
+  @js.native
+  object RDSDataServiceNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.RDSDataServiceNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("RDSDataService")
+    @js.native
+    object RDSDataServiceNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     
@@ -4123,6 +4648,27 @@ object AWSNs extends js.Object {
     
   }
   
+  @JSName("RoboMaker")
+  @js.native
+  object RoboMakerNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.RoboMakerNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("RoboMaker")
+    @js.native
+    object RoboMakerNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
   @JSName("Route53Domains")
   @js.native
   object Route53DomainsNs extends js.Object {
@@ -4160,6 +4706,48 @@ object AWSNs extends js.Object {
     @JSName("Route53")
     @js.native
     object Route53Ns extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("Route53Resolver")
+  @js.native
+  object Route53ResolverNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.Route53ResolverNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("Route53Resolver")
+    @js.native
+    object Route53ResolverNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("S3Control")
+  @js.native
+  object S3ControlNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.S3ControlNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsS3controlMod.S3ControlNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("S3Control")
+    @js.native
+    object S3ControlNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     
@@ -4450,6 +5038,27 @@ object AWSNs extends js.Object {
     
   }
   
+  @JSName("SecurityHub")
+  @js.native
+  object SecurityHubNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.SecurityHubNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("SecurityHub")
+    @js.native
+    object SecurityHubNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
   @JSName("ServerlessApplicationRepository")
   @js.native
   object ServerlessApplicationRepositoryNs extends js.Object {
@@ -4681,6 +5290,27 @@ object AWSNs extends js.Object {
     @JSName("TranscribeService")
     @js.native
     object TranscribeServiceNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("Transfer")
+  @js.native
+  object TransferNs extends js.Object {
+    @js.native
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.TransferNs.Types {
+      /**
+         * Constructs a service object. This object has one method for each API operation.
+         */
+      def this(options: awsDashSdkLib.clientsTransferMod.TransferNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("Transfer")
+    @js.native
+    object TransferNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     

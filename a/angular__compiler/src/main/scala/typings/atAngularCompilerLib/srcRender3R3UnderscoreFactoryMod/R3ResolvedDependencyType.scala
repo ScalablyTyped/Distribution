@@ -21,13 +21,6 @@ object R3ResolvedDependencyType extends js.Object {
     extends atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType
   
   /**
-       * The dependency is for the `Injector` type itself.
-       */
-  @js.native
-  sealed trait Injector
-    extends atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType
-  
-  /**
        * A normal token dependency.
        */
   @js.native
@@ -35,7 +28,6 @@ object R3ResolvedDependencyType extends js.Object {
     extends atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType
   
   /* 1 */ val Attribute: Attribute with scala.Double = js.native
-  /* 2 */ val Injector: Injector with scala.Double = js.native
   /* 0 */ val Token: Token with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[

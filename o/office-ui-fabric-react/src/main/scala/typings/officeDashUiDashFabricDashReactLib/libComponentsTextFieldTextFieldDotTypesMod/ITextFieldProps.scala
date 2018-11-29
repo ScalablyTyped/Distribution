@@ -9,17 +9,16 @@ import scala.scalajs.js.annotation._
 trait ITextFieldProps
   extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLInputElement | reactLib.HTMLTextAreaElement] {
   /**
-       * @deprecated
-       * Deprecated; use prefix instead.
+       * @deprecated Use `prefix` instead.
        */
   var addonString: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Aria Label for textfield, if any.
+       * Aria label for the text field.
        */
   var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Whether or not to auto adjust textField height. Applies only to multiline textfield.
-       * @default false
+       * Whether or not to auto adjust text field height. Applies only to multiline text field.
+       * @defaultvalue false
        */
   var autoAdjustHeight: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -31,46 +30,45 @@ trait ITextFieldProps
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.on | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.off
   ] = js.undefined
   /**
-       * Whether or not the textfield is borderless.
-       * @default false
+       * Whether or not the text field is borderless.
+       * @defaultvalue false
        */
   var borderless: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Deprecated property. Serves no function.
-       * @deprecated
+       * @deprecated Serves no function.
        */
   var componentId: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Optional callback to access the ITextField interface. Use this instead of ref for accessing
+       * Optional callback to access the ITextField component. Use this instead of ref for accessing
        * the public methods and properties of the component.
        */
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[ITextField]] = js.undefined
   /**
-       * Default value of the textfield, if any. Only provide this if the textfield is an uncontrolled component;
-       * otherwise, use the "value" property.
+       * Default value of the text field. Only provide this if the text field is an uncontrolled component;
+       * otherwise, use the `value` property.
        */
   @JSName("defaultValue")
   var defaultValue_ITextFieldProps: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Text field will start to validate after users stop typing for `deferredValidationTime` milliseconds.
-       * @default 200
+       * @defaultvalue 200
        */
   var deferredValidationTime: js.UndefOr[scala.Double] = js.undefined
   /**
-       * The textfield input description
+       * Description displayed below the text field to provide additional details about what text to enter.
        */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * If set, this will display an error message for the text field.
+       * Static error message displayed below the text field. Use `onGetErrorMessage` to dynamically
+       * change the error message displayed (if any) based on the current value.
        */
   var errorMessage: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * @deprecated
-       * Deprecated; use iconProps instead.
+       * @deprecated Use `iconProps` instead.
        */
   var iconClass: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Optional icon props for an icon.
+       * Props for an optional icon, displayed in the far right end of the text field.
        */
   var iconProps: js.UndefOr[officeDashUiDashFabricDashReactLib.libComponentsIconIconDotTypesMod.IIconProps] = js.undefined
   /**
@@ -84,29 +82,32 @@ trait ITextFieldProps
        * '9': [0-9]
        * 'a': [a-zA-Z]
        * '*': [a-zA-Z0-9]
+       *
+       * @example `Phone Number: (999) 999-9999`
        */
   var mask: js.UndefOr[java.lang.String] = js.undefined
   /**
        * The character to show in place of unfilled characters of the mask.
-       * @default '_'
+       * @defaultvalue '_'
        */
   var maskChar: js.UndefOr[java.lang.String] = js.undefined
   /**
        * An object defining the format characters and corresponding regexp values.
-       * Default format characters: {
+       * Default format characters: \{
        *  '9': /[0-9]/,
        *  'a': /[a-zA-Z]/,
        *  '*': /[a-zA-Z0-9]/
-       * }
+       * \}
        */
   var maskFormat: js.UndefOr[ScalablyTyped.runtime.StringDictionary[stdLib.RegExp]] = js.undefined
   /**
-       * Whether or not the textfield is a multiline textfield.
-       * @default false
+       * Whether or not the text field is a multiline text field.
+       * @defaultvalue false
        */
   var multiline: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Callback for the onBeforeChange event.
+       * Called after the input's value updates but before re-rendering.
+       * @param newValue - The new value. Type should be string.
        */
   var onBeforeChange: js.UndefOr[js.Function1[/* newValue */ js.Any, scala.Unit]] = js.undefined
   /**
@@ -121,11 +122,11 @@ trait ITextFieldProps
     ]
   ] = js.undefined
   /**
-       * @deprecated Use onChange instead.
+       * @deprecated Use `onChange` instead.
        */
   var onChanged: js.UndefOr[js.Function1[/* newValue */ js.Any, scala.Unit]] = js.undefined
   /**
-       * The method is used to get the validation error message and determine whether the input value is valid or not.
+       * Function used to determine whether the input value is valid and get an error message if not.
        *
        *   When it returns string:
        *   - If valid, it returns empty string.
@@ -144,7 +145,7 @@ trait ITextFieldProps
     ]
   ] = js.undefined
   /**
-       * Callback for the onNotifyValidationResult event.
+       * Function called after validation completes.
        */
   var onNotifyValidationResult: js.UndefOr[
     js.Function2[
@@ -154,16 +155,15 @@ trait ITextFieldProps
     ]
   ] = js.undefined
   /**
-       * @deprecated
-       * Deprecated; use onRenderPrefix instead.
+       * @deprecated Use `onRenderPrefix` instead.
        */
   var onRenderAddon: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[ITextFieldProps]] = js.undefined
   /**
-       * Optional custom renderer for the description.
+       * Custom renderer for the description.
        */
   var onRenderDescription: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[ITextFieldProps]] = js.undefined
   /**
-       * Optional custom renderer for the label.
+       * Custom renderer for the label.
        */
   var onRenderLabel: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[ITextFieldProps]] = js.undefined
   /**
@@ -175,8 +175,8 @@ trait ITextFieldProps
        */
   var onRenderSuffix: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[ITextFieldProps]] = js.undefined
   /**
-       * Whether or not the multiline textfield is resizable.
-       * @default true
+       * Whether or not the multiline text field is resizable.
+       * @defaultvalue true
        */
   var resizable: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -186,36 +186,36 @@ trait ITextFieldProps
     atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[ITextFieldStyleProps, ITextFieldStyles]
   ] = js.undefined
   /**
-       * String for suffix
+       * Suffix displayed after the text field contents. This is not included in the value.
        */
   var suffix: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Theme (provided through customization.)
+       * Theme (provided through customization).
        */
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
-       * Whether or not the textfield is underlined.
-       * @default false
+       * Whether or not the text field is underlined.
+       * @defaultvalue false
        */
   var underlined: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Run validation only on input focus
-       * @default false
+       * Run validation only on input focus.
+       * @defaultvalue false
        */
   var validateOnFocusIn: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Run validation only on input focus out
-       * @default false
+       * Run validation only on input focus out.
+       * @defaultvalue false
        */
   var validateOnFocusOut: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Optional flag to disable onload validation
-       * @default true
+       * Disable on-load validation.
+       * @defaultvalue true
        */
   var validateOnLoad: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Current value of the textfield. Only provide this if the textfield is a controlled component where you
-       * are maintaining its current state; otherwise, use the "defaultValue" property.
+       * Current value of the text field. Only provide this if the text field is a controlled component where you
+       * are maintaining its current state; otherwise, use the `defaultValue` property.
        */
   @JSName("value")
   var value_ITextFieldProps: js.UndefOr[java.lang.String] = js.undefined

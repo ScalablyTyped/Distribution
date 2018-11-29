@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IDocumentCardActivityProps
-  extends reactLib.reactMod.ReactNs.Props[
+  extends reactLib.reactMod.ReactNs.ClassAttributes[
       officeDashUiDashFabricDashReactLib.libComponentsDocumentCardDocumentCardActivityMod.DocumentCardActivity
     ] {
   /**

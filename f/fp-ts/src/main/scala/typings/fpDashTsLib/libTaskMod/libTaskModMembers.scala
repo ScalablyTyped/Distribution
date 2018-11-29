@@ -20,10 +20,11 @@ object libTaskModMembers extends js.Object {
     /* S */ fpDashTsLib.libSemigroupMod.Semigroup[js.Any], 
     fpDashTsLib.libSemigroupMod.Semigroup[Task[js.Any]]
   ] = js.native
-  val task: fpDashTsLib.libMonadMod.Monad1[URI] = js.native
+  val task: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libMonadIOMod.MonadIO1[URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[URI] = js.native
+  val taskSeq: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libMonadIOMod.MonadIO1[URI] with fpDashTsLib.libMonadTaskMod.MonadTask1[URI] = js.native
   val tryCatch: js.Function2[
     /* f */ fpDashTsLib.libFunctionMod.Lazy[stdLib.Promise[js.Any]], 
-    /* onrejected */ js.Function1[/* reason */ js.Object, js.Any], 
+    /* onrejected */ js.Function1[/* reason */ js.Any, js.Any], 
     Task[fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]
   ] = js.native
 }

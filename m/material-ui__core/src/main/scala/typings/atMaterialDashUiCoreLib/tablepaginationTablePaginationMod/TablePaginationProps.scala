@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 - Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ @js.native
 trait TablePaginationProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TablePaginationClassKey] {
-  var ActionsComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TablePaginationBaseProps]] = js.native
+  var ActionsComponent: js.UndefOr[
+    reactLib.reactMod.ReactNs.ReactType[
+      atMaterialDashUiCoreLib.tablepaginationTablePaginationActionsMod.TablePaginationActionsProps
+    ]
+  ] = js.native
   var SelectProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.selectSelectMod.SelectProps]] = js.native
   var backIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconbuttonIconButtonMod.IconButtonProps]] = js.native
   var className: js.UndefOr[java.lang.String] = js.native

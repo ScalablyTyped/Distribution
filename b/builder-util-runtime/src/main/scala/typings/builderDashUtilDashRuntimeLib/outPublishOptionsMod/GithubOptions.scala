@@ -17,7 +17,7 @@ trait GithubOptions extends PublishConfiguration {
        */
   val owner: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * Whether to use private github auto-update provider if `GH_TOKEN` environment variable is defined. See [Private GitHub Update Repo](/auto-update.md#private-github-update-repo).
+       * Whether to use private github auto-update provider if `GH_TOKEN` environment variable is defined. See [Private GitHub Update Repo](/auto-update#private-github-update-repo).
        */
   val `private`: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
   /**
@@ -46,7 +46,7 @@ trait GithubOptions extends PublishConfiguration {
        */
   val repo: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**
-       * The access token to support auto-update from private github repositories. Never specify it in the configuration files. Only for [setFeedURL](/auto-update.md#appupdatersetfeedurloptions).
+       * The access token to support auto-update from private github repositories. Never specify it in the configuration files. Only for [setFeedURL](/auto-update#appupdatersetfeedurloptions).
        */
   val token: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /**

@@ -14,7 +14,11 @@ trait Anon_ParsedQuery[TContext] extends js.Object {
   var persistedQueryHit: js.UndefOr[scala.Boolean] = js.undefined
   var persistedQueryRegister: js.UndefOr[scala.Boolean] = js.undefined
   var queryString: js.UndefOr[java.lang.String] = js.undefined
-  var request: apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request
+  var request: stdLib.Pick[
+    apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request, 
+    graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.url | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.method | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.headers
+  ]
+  var requestContext: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext]
   var variables: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

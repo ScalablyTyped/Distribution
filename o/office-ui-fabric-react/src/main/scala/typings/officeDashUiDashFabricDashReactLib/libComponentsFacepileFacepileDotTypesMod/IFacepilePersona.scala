@@ -36,6 +36,12 @@ trait IFacepilePersona
     officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaInitialsColor
   ] = js.undefined
   /**
+       * Optional keytip for this button that is only added when 'onClick' is defined for the persona
+       */
+  var keytipProps: js.UndefOr[
+    officeDashUiDashFabricDashReactLib.libComponentsKeytipKeytipDotTypesMod.IKeytipProps
+  ] = js.undefined
+  /**
        * If provided, persona will be rendered with cursor:pointer and the handler will be
        * called on click.
        */

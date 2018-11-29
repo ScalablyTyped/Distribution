@@ -25,9 +25,6 @@ object stdLibStrings {
   sealed trait AnimationPlaybackEvent extends js.Object
   
   @js.native
-  sealed trait ArrayBuffer extends js.Object
-  
-  @js.native
   sealed trait Atomics extends js.Object
   
   @js.native
@@ -40,6 +37,15 @@ object stdLibStrings {
   sealed trait BeforeUnloadEvent extends js.Object
   
   @js.native
+  sealed trait BigInt extends js.Object
+  
+  @js.native
+  sealed trait BigInt64Array extends js.Object
+  
+  @js.native
+  sealed trait BigUint64Array extends js.Object
+  
+  @js.native
   sealed trait ClipboardEvent extends js.Object
   
   @js.native
@@ -50,9 +56,6 @@ object stdLibStrings {
   
   @js.native
   sealed trait CustomEvent extends js.Object
-  
-  @js.native
-  sealed trait DataView extends js.Object
   
   @js.native
   sealed trait DeviceLightEvent extends js.Object
@@ -115,9 +118,6 @@ object stdLibStrings {
   sealed trait GamepadEvent extends js.Object
   
   @js.native
-  sealed trait GeneratorFunction extends js.Object
-  
-  @js.native
   sealed trait HRTF extends js.Object
   
   @js.native
@@ -134,9 +134,6 @@ object stdLibStrings {
   
   @js.native
   sealed trait Int8Array extends js.Object
-  
-  @js.native
-  sealed trait JSON extends js.Object
   
   @js.native
   sealed trait KeyboardEvent extends js.Object
@@ -218,12 +215,6 @@ object stdLibStrings {
   
   @js.native
   sealed trait MSVideoOptimalLayoutChanged extends js.Object
-  
-  @js.native
-  sealed trait Map extends js.Object
-  
-  @js.native
-  sealed trait Math extends js.Object
   
   @js.native
   sealed trait MediaEncryptedEvent extends js.Object
@@ -325,9 +316,6 @@ object stdLibStrings {
   sealed trait ProgressEvent extends js.Object
   
   @js.native
-  sealed trait Promise extends js.Object
-  
-  @js.native
   sealed trait PromiseRejectionEvent extends js.Object
   
   @js.native
@@ -397,9 +385,6 @@ object stdLibStrings {
   sealed trait ServiceWorkerMessageEvent extends js.Object
   
   @js.native
-  sealed trait Set extends js.Object
-  
-  @js.native
   sealed trait SharedArrayBuffer extends js.Object
   
   @js.native
@@ -416,9 +401,6 @@ object stdLibStrings {
   
   @js.native
   sealed trait StorageEvent extends js.Object
-  
-  @js.native
-  sealed trait Symbol extends js.Object
   
   @js.native
   sealed trait TextEvent extends js.Object
@@ -485,12 +467,6 @@ object stdLibStrings {
   
   @js.native
   sealed trait WEBGL_lose_context extends js.Object
-  
-  @js.native
-  sealed trait WeakMap extends js.Object
-  
-  @js.native
-  sealed trait WeakSet extends js.Object
   
   @js.native
   sealed trait WebGLContextEvent extends js.Object
@@ -745,6 +721,12 @@ object stdLibStrings {
   sealed trait button extends js.Object
   
   @js.native
+  sealed trait byob extends js.Object
+  
+  @js.native
+  sealed trait bytes extends js.Object
+  
+  @js.native
   sealed trait cached extends js.Object
   
   @js.native
@@ -878,6 +860,9 @@ object stdLibStrings {
   
   @js.native
   sealed trait currency extends js.Object
+  
+  @js.native
+  sealed trait cursor extends js.Object
   
   @js.native
   sealed trait custom extends js.Object
@@ -1453,9 +1438,6 @@ object stdLibStrings {
   sealed trait installing extends js.Object
   
   @js.native
-  sealed trait instant extends js.Object
-  
-  @js.native
   sealed trait integer extends js.Object
   
   @js.native
@@ -1736,6 +1718,9 @@ object stdLibStrings {
   
   @js.native
   sealed trait nan extends js.Object
+  
+  @js.native
+  sealed trait native extends js.Object
   
   @js.native
   sealed trait natural extends js.Object
@@ -2509,6 +2494,9 @@ object stdLibStrings {
   sealed trait transitionstart extends js.Object
   
   @js.native
+  sealed trait transparent extends js.Object
+  
+  @js.native
   sealed trait transport extends js.Object
   
   @js.native
@@ -2682,16 +2670,17 @@ object stdLibStrings {
   def ANGLE_instanced_arrays: ANGLE_instanced_arrays = "ANGLE_instanced_arrays".asInstanceOf[ANGLE_instanced_arrays]
   def AnimationEvent: AnimationEvent = "AnimationEvent".asInstanceOf[AnimationEvent]
   def AnimationPlaybackEvent: AnimationPlaybackEvent = "AnimationPlaybackEvent".asInstanceOf[AnimationPlaybackEvent]
-  def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
   def Atomics: Atomics = "Atomics".asInstanceOf[Atomics]
   def AudioProcessingEvent: AudioProcessingEvent = "AudioProcessingEvent".asInstanceOf[AudioProcessingEvent]
   def BT: BT = "BT".asInstanceOf[BT]
   def BeforeUnloadEvent: BeforeUnloadEvent = "BeforeUnloadEvent".asInstanceOf[BeforeUnloadEvent]
+  def BigInt: BigInt = "BigInt".asInstanceOf[BigInt]
+  def BigInt64Array: BigInt64Array = "BigInt64Array".asInstanceOf[BigInt64Array]
+  def BigUint64Array: BigUint64Array = "BigUint64Array".asInstanceOf[BigUint64Array]
   def ClipboardEvent: ClipboardEvent = "ClipboardEvent".asInstanceOf[ClipboardEvent]
   def CloseEvent: CloseEvent = "CloseEvent".asInstanceOf[CloseEvent]
   def CompositionEvent: CompositionEvent = "CompositionEvent".asInstanceOf[CompositionEvent]
   def CustomEvent: CustomEvent = "CustomEvent".asInstanceOf[CustomEvent]
-  def DataView: DataView = "DataView".asInstanceOf[DataView]
   def DeviceLightEvent: DeviceLightEvent = "DeviceLightEvent".asInstanceOf[DeviceLightEvent]
   def DeviceMotionEvent: DeviceMotionEvent = "DeviceMotionEvent".asInstanceOf[DeviceMotionEvent]
   def DeviceOrientationEvent: DeviceOrientationEvent = "DeviceOrientationEvent".asInstanceOf[DeviceOrientationEvent]
@@ -2712,14 +2701,12 @@ object stdLibStrings {
   def FocusEvent: FocusEvent = "FocusEvent".asInstanceOf[FocusEvent]
   def FocusNavigationEvent: FocusNavigationEvent = "FocusNavigationEvent".asInstanceOf[FocusNavigationEvent]
   def GamepadEvent: GamepadEvent = "GamepadEvent".asInstanceOf[GamepadEvent]
-  def GeneratorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
   def HRTF: HRTF = "HRTF".asInstanceOf[HRTF]
   def HashChangeEvent: HashChangeEvent = "HashChangeEvent".asInstanceOf[HashChangeEvent]
   def IDBVersionChangeEvent: IDBVersionChangeEvent = "IDBVersionChangeEvent".asInstanceOf[IDBVersionChangeEvent]
   def Int16Array: Int16Array = "Int16Array".asInstanceOf[Int16Array]
   def Int32Array: Int32Array = "Int32Array".asInstanceOf[Int32Array]
   def Int8Array: Int8Array = "Int8Array".asInstanceOf[Int8Array]
-  def JSON: JSON = "JSON".asInstanceOf[JSON]
   def KeyboardEvent: KeyboardEvent = "KeyboardEvent".asInstanceOf[KeyboardEvent]
   def ListeningStateChangedEvent: ListeningStateChangedEvent = "ListeningStateChangedEvent".asInstanceOf[ListeningStateChangedEvent]
   def MSCandidateWindowHide: MSCandidateWindowHide = "MSCandidateWindowHide".asInstanceOf[MSCandidateWindowHide]
@@ -2747,8 +2734,6 @@ object stdLibStrings {
   def MSVideoFormatChanged: MSVideoFormatChanged = "MSVideoFormatChanged".asInstanceOf[MSVideoFormatChanged]
   def MSVideoFrameStepCompleted: MSVideoFrameStepCompleted = "MSVideoFrameStepCompleted".asInstanceOf[MSVideoFrameStepCompleted]
   def MSVideoOptimalLayoutChanged: MSVideoOptimalLayoutChanged = "MSVideoOptimalLayoutChanged".asInstanceOf[MSVideoOptimalLayoutChanged]
-  def Map: Map = "Map".asInstanceOf[Map]
-  def Math: Math = "Math".asInstanceOf[Math]
   def MediaEncryptedEvent: MediaEncryptedEvent = "MediaEncryptedEvent".asInstanceOf[MediaEncryptedEvent]
   def MediaKeyMessageEvent: MediaKeyMessageEvent = "MediaKeyMessageEvent".asInstanceOf[MediaKeyMessageEvent]
   def MediaQueryListEvent: MediaQueryListEvent = "MediaQueryListEvent".asInstanceOf[MediaQueryListEvent]
@@ -2782,7 +2767,6 @@ object stdLibStrings {
   def PointerEvent: PointerEvent = "PointerEvent".asInstanceOf[PointerEvent]
   def PopStateEvent: PopStateEvent = "PopStateEvent".asInstanceOf[PopStateEvent]
   def ProgressEvent: ProgressEvent = "ProgressEvent".asInstanceOf[ProgressEvent]
-  def Promise: Promise = "Promise".asInstanceOf[Promise]
   def PromiseRejectionEvent: PromiseRejectionEvent = "PromiseRejectionEvent".asInstanceOf[PromiseRejectionEvent]
   def RTCDTMFToneChangeEvent: RTCDTMFToneChangeEvent = "RTCDTMFToneChangeEvent".asInstanceOf[RTCDTMFToneChangeEvent]
   def RTCDataChannelEvent: RTCDataChannelEvent = "RTCDataChannelEvent".asInstanceOf[RTCDataChannelEvent]
@@ -2806,14 +2790,12 @@ object stdLibStrings {
   def ScopedCred: ScopedCred = "ScopedCred".asInstanceOf[ScopedCred]
   def SecurityPolicyViolationEvent: SecurityPolicyViolationEvent = "SecurityPolicyViolationEvent".asInstanceOf[SecurityPolicyViolationEvent]
   def ServiceWorkerMessageEvent: ServiceWorkerMessageEvent = "ServiceWorkerMessageEvent".asInstanceOf[ServiceWorkerMessageEvent]
-  def Set: Set = "Set".asInstanceOf[Set]
   def SharedArrayBuffer: SharedArrayBuffer = "SharedArrayBuffer".asInstanceOf[SharedArrayBuffer]
   def SpeechRecognitionError: SpeechRecognitionError = "SpeechRecognitionError".asInstanceOf[SpeechRecognitionError]
   def SpeechRecognitionEvent: SpeechRecognitionEvent = "SpeechRecognitionEvent".asInstanceOf[SpeechRecognitionEvent]
   def SpeechSynthesisErrorEvent: SpeechSynthesisErrorEvent = "SpeechSynthesisErrorEvent".asInstanceOf[SpeechSynthesisErrorEvent]
   def SpeechSynthesisEvent: SpeechSynthesisEvent = "SpeechSynthesisEvent".asInstanceOf[SpeechSynthesisEvent]
   def StorageEvent: StorageEvent = "StorageEvent".asInstanceOf[StorageEvent]
-  def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
   def TextEvent: TextEvent = "TextEvent".asInstanceOf[TextEvent]
   def TouchEvent: TouchEvent = "TouchEvent".asInstanceOf[TouchEvent]
   def TrackEvent: TrackEvent = "TrackEvent".asInstanceOf[TrackEvent]
@@ -2836,8 +2818,6 @@ object stdLibStrings {
   def WEBGL_depth_texture: WEBGL_depth_texture = "WEBGL_depth_texture".asInstanceOf[WEBGL_depth_texture]
   def WEBGL_draw_buffers: WEBGL_draw_buffers = "WEBGL_draw_buffers".asInstanceOf[WEBGL_draw_buffers]
   def WEBGL_lose_context: WEBGL_lose_context = "WEBGL_lose_context".asInstanceOf[WEBGL_lose_context]
-  def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
-  def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
   def WebGLContextEvent: WebGLContextEvent = "WebGLContextEvent".asInstanceOf[WebGLContextEvent]
   def WheelEvent: WheelEvent = "WheelEvent".asInstanceOf[WheelEvent]
   def a: a = "a".asInstanceOf[a]
@@ -2922,6 +2902,8 @@ object stdLibStrings {
   def bufferedamountlow: bufferedamountlow = "bufferedamountlow".asInstanceOf[bufferedamountlow]
   def butt: butt = "butt".asInstanceOf[butt]
   def button: button = "button".asInstanceOf[button]
+  def byob: byob = "byob".asInstanceOf[byob]
+  def bytes: bytes = "bytes".asInstanceOf[bytes]
   def cached: cached = "cached".asInstanceOf[cached]
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   def canceled: canceled = "canceled".asInstanceOf[canceled]
@@ -2967,6 +2949,7 @@ object stdLibStrings {
   def cors: cors = "cors".asInstanceOf[cors]
   def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
   def currency: currency = "currency".asInstanceOf[currency]
+  def cursor: cursor = "cursor".asInstanceOf[cursor]
   def custom: custom = "custom".asInstanceOf[custom]
   def cut: cut = "cut".asInstanceOf[cut]
   def data: data = "data".asInstanceOf[data]
@@ -3158,7 +3141,6 @@ object stdLibStrings {
   def ins: ins = "ins".asInstanceOf[ins]
   def installed: installed = "installed".asInstanceOf[installed]
   def installing: installing = "installing".asInstanceOf[installing]
-  def instant: instant = "instant".asInstanceOf[instant]
   def integer: integer = "integer".asInstanceOf[integer]
   def interactive: interactive = "interactive".asInstanceOf[interactive]
   def `internal-error`: `internal-error` = "internal-error".asInstanceOf[`internal-error`]
@@ -3253,6 +3235,7 @@ object stdLibStrings {
   def msneedkey: msneedkey = "msneedkey".asInstanceOf[msneedkey]
   def mute: mute = "mute".asInstanceOf[mute]
   def nan: nan = "nan".asInstanceOf[nan]
+  def native: native = "native".asInstanceOf[native]
   def natural: natural = "natural".asInstanceOf[natural]
   def nav: nav = "nav".asInstanceOf[nav]
   def navigate: navigate = "navigate".asInstanceOf[navigate]
@@ -3510,6 +3493,7 @@ object stdLibStrings {
   def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
   def transitionrun: transitionrun = "transitionrun".asInstanceOf[transitionrun]
   def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
+  def transparent: transparent = "transparent".asInstanceOf[transparent]
   def transport: transport = "transport".asInstanceOf[transport]
   def triangle: triangle = "triangle".asInstanceOf[triangle]
   def tspan: tspan = "tspan".asInstanceOf[tspan]

@@ -13,6 +13,7 @@ trait ConfigFile extends js.Object {
   var `git.setup`: js.UndefOr[scala.Boolean] = js.undefined
   var interactive: js.UndefOr[scala.Boolean] = js.undefined
   var npmClient: NpmClient
+  var `org.id`: js.UndefOr[java.lang.String] = js.undefined
   var proxy: js.UndefOr[java.lang.String] = js.undefined
   var `ssl.cafile`: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var `ssl.certfile`: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

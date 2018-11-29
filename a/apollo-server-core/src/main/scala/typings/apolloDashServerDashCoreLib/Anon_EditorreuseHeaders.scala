@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_EditorreuseHeaders extends js.Object {
+  var `editor.cursorShape`: java.lang.String
   var `editor.fontFamily`: java.lang.String
   var `editor.fontSize`: scala.Double
   var `editor.reuseHeaders`: scala.Boolean

@@ -56,6 +56,7 @@
 /**
  * Supported http methods.
  * @deprecated see https://angular.io/guide/http
+ * @publicApi
  */
 /**
  * @license
@@ -92,6 +93,7 @@
  * ```
  *
  * @deprecated see https://angular.io/guide/http
+ * @publicApi
  */
 /**
  * @license
@@ -144,6 +146,7 @@
  */
 /**
  * @deprecated see https://angular.io/guide/http
+ * @publicApi
  **/
 /**
  * @license
@@ -177,6 +180,7 @@
  * Take care not to evaluate this in non-browser contexts.
  *
  * @deprecated see https://angular.io/guide/http
+ * @publicApi
  */
 /**
  * @license

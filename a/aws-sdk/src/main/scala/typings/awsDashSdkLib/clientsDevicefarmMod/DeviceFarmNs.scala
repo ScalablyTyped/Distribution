@@ -351,7 +351,7 @@ object DeviceFarmNs extends js.Object {
          */
     var projectArn: AmazonResourceName
     /**
-         * The upload's upload type. Must be one of the following values:   ANDROID_APP: An Android upload.   IOS_APP: An iOS upload.   WEB_APP: A web application upload.   EXTERNAL_DATA: An external data upload.   APPIUM_JAVA_JUNIT_TEST_PACKAGE: An Appium Java JUnit test package upload.   APPIUM_JAVA_TESTNG_TEST_PACKAGE: An Appium Java TestNG test package upload.   APPIUM_PYTHON_TEST_PACKAGE: An Appium Python test package upload.   APPIUM_WEB_JAVA_JUNIT_TEST_PACKAGE: An Appium Java JUnit test package upload.   APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE: An Appium Java TestNG test package upload.   APPIUM_WEB_PYTHON_TEST_PACKAGE: An Appium Python test package upload.   CALABASH_TEST_PACKAGE: A Calabash test package upload.   INSTRUMENTATION_TEST_PACKAGE: An instrumentation upload.   UIAUTOMATION_TEST_PACKAGE: A uiautomation test package upload.   UIAUTOMATOR_TEST_PACKAGE: A uiautomator test package upload.   XCTEST_TEST_PACKAGE: An XCode test package upload.   XCTEST_UI_TEST_PACKAGE: An XCode UI test package upload.    Note If you call CreateUpload with WEB_APP specified, AWS Device Farm throws an ArgumentException error.
+         * The upload's upload type. Must be one of the following values:   ANDROID_APP: An Android upload.   IOS_APP: An iOS upload.   WEB_APP: A web application upload.   EXTERNAL_DATA: An external data upload.   APPIUM_JAVA_JUNIT_TEST_PACKAGE: An Appium Java JUnit test package upload.   APPIUM_JAVA_TESTNG_TEST_PACKAGE: An Appium Java TestNG test package upload.   APPIUM_PYTHON_TEST_PACKAGE: An Appium Python test package upload.   APPIUM_WEB_JAVA_JUNIT_TEST_PACKAGE: An Appium Java JUnit test package upload.   APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE: An Appium Java TestNG test package upload.   APPIUM_WEB_PYTHON_TEST_PACKAGE: An Appium Python test package upload.   CALABASH_TEST_PACKAGE: A Calabash test package upload.   INSTRUMENTATION_TEST_PACKAGE: An instrumentation upload.   UIAUTOMATION_TEST_PACKAGE: A uiautomation test package upload.   UIAUTOMATOR_TEST_PACKAGE: A uiautomator test package upload.   XCTEST_TEST_PACKAGE: An XCode test package upload.   XCTEST_UI_TEST_PACKAGE: An XCode UI test package upload.   APPIUM_JAVA_JUNIT_TEST_SPEC: An Appium Java JUnit test spec upload.   APPIUM_JAVA_TESTNG_TEST_SPEC: An Appium Java TestNG test spec upload.   APPIUM_PYTHON_TEST_SPEC: An Appium Python test spec upload.   APPIUM_WEB_JAVA_JUNIT_TEST_SPEC: An Appium Java JUnit test spec upload.   APPIUM_WEB_JAVA_TESTNG_TEST_SPEC: An Appium Java TestNG test spec upload.   APPIUM_WEB_PYTHON_TEST_SPEC: An Appium Python test spec upload.   INSTRUMENTATION_TEST_SPEC: An instrumentation test spec upload.   XCTEST_UI_TEST_SPEC: An XCode UI test spec upload.    Note If you call CreateUpload with WEB_APP specified, AWS Device Farm throws an ArgumentException error.
          */
     var `type`: UploadType
   }
@@ -1406,7 +1406,7 @@ object DeviceFarmNs extends js.Object {
   
   trait ListSamplesRequest extends js.Object {
     /**
-         * The Amazon Resource Name (ARN) of the project for which you want to list samples.
+         * The Amazon Resource Name (ARN) of the job used to list samples.
          */
     var arn: AmazonResourceName
     /**
@@ -2202,7 +2202,7 @@ object DeviceFarmNs extends js.Object {
          */
     var filter: js.UndefOr[Filter] = js.undefined
     /**
-         * The test's parameters, such as the following test framework parameters and fixture settings: For Calabash tests:   profile: A cucumber profile, for example, "my_profile_name".   tags: You can limit execution to features or scenarios that have (or don't have) certain tags, for example, "@smoke" or "@smoke,~@wip".   For Appium tests (all types):   appium_version: The Appium version. Currently supported values are "1.4.16", "1.6.3", "latest", and "default".   “latest” will run the latest Appium version supported by Device Farm (1.6.3).   For “default”, Device Farm will choose a compatible version of Appium for the device. The current behavior is to run 1.4.16 on Android devices and iOS 9 and earlier, 1.6.3 for iOS 10 and later.   This behavior is subject to change.     For Fuzz tests (Android only):   event_count: The number of events, between 1 and 10000, that the UI fuzz test should perform.   throttle: The time, in ms, between 0 and 1000, that the UI fuzz test should wait between events.   seed: A seed to use for randomizing the UI fuzz test. Using the same seed value between tests ensures identical event sequences.   For Explorer tests:   username: A username to use if the Explorer encounters a login form. If not supplied, no username will be inserted.   password: A password to use if the Explorer encounters a login form. If not supplied, no password will be inserted.   For Instrumentation:   filter: A test filter string. Examples:   Running a single test case: "com.android.abc.Test1"   Running a single test: "com.android.abc.Test1#smoke"   Running multiple tests: "com.android.abc.Test1,com.android.abc.Test2"     For XCTest and XCTestUI:   filter: A test filter string. Examples:   Running a single test class: "LoginTests"   Running a multiple test classes: "LoginTests,SmokeTests"   Running a single test: "LoginTests/testValid"   Running multiple tests: "LoginTests/testValid,LoginTests/testInvalid"     For UIAutomator:   filter: A test filter string. Examples:   Running a single test case: "com.android.abc.Test1"   Running a single test: "com.android.abc.Test1#smoke"   Running multiple tests: "com.android.abc.Test1,com.android.abc.Test2"    
+         * The test's parameters, such as test framework parameters and fixture settings. Parameters are represented by name-value pairs of strings. For all tests:   app_performance_monitoring: Performance monitoring is enabled by default. Set this parameter to "false" to disable it.   For Calabash tests:   profile: A cucumber profile, for example, "my_profile_name".   tags: You can limit execution to features or scenarios that have (or don't have) certain tags, for example, "@smoke" or "@smoke,~@wip".   For Appium tests (all types):   appium_version: The Appium version. Currently supported values are "1.7.2", "1.7.1", "1.6.5", "latest", and "default".   “latest” will run the latest Appium version supported by Device Farm (1.7.2).   For “default”, Device Farm will choose a compatible version of Appium for the device. The current behavior is to run 1.7.2 on Android devices and iOS 9 and earlier, 1.7.2 for iOS 10 and later.   This behavior is subject to change.     For Fuzz tests (Android only):   event_count: The number of events, between 1 and 10000, that the UI fuzz test should perform.   throttle: The time, in ms, between 0 and 1000, that the UI fuzz test should wait between events.   seed: A seed to use for randomizing the UI fuzz test. Using the same seed value between tests ensures identical event sequences.   For Explorer tests:   username: A username to use if the Explorer encounters a login form. If not supplied, no username will be inserted.   password: A password to use if the Explorer encounters a login form. If not supplied, no password will be inserted.   For Instrumentation:   filter: A test filter string. Examples:   Running a single test case: "com.android.abc.Test1"   Running a single test: "com.android.abc.Test1#smoke"   Running multiple tests: "com.android.abc.Test1,com.android.abc.Test2"     For XCTest and XCTestUI:   filter: A test filter string. Examples:   Running a single test class: "LoginTests"   Running a multiple test classes: "LoginTests,SmokeTests"   Running a single test: "LoginTests/testValid"   Running multiple tests: "LoginTests/testValid,LoginTests/testInvalid"     For UIAutomator:   filter: A test filter string. Examples:   Running a single test case: "com.android.abc.Test1"   Running a single test: "com.android.abc.Test1#smoke"   Running multiple tests: "com.android.abc.Test1,com.android.abc.Test2"    
          */
     var parameters: js.UndefOr[TestParameters] = js.undefined
     /**
@@ -3618,11 +3618,11 @@ object DeviceFarmNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ ListRunsResult, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[ListRunsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets information about samples, given an AWS Device Farm project ARN
+       * Gets information about samples, given an AWS Device Farm job ARN.
        */
     def listSamples(): awsDashSdkLib.libRequestMod.Request[ListSamplesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets information about samples, given an AWS Device Farm project ARN
+       * Gets information about samples, given an AWS Device Farm job ARN.
        */
     def listSamples(
       callback: js.Function2[
@@ -3632,11 +3632,11 @@ object DeviceFarmNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListSamplesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets information about samples, given an AWS Device Farm project ARN
+       * Gets information about samples, given an AWS Device Farm job ARN.
        */
     def listSamples(params: ListSamplesRequest): awsDashSdkLib.libRequestMod.Request[ListSamplesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Gets information about samples, given an AWS Device Farm project ARN
+       * Gets information about samples, given an AWS Device Farm job ARN.
        */
     def listSamples(
       params: ListSamplesRequest,
@@ -4429,7 +4429,7 @@ object DeviceFarmNs extends js.Object {
          */
     var status: js.UndefOr[UploadStatus] = js.undefined
     /**
-         * The upload's type. Must be one of the following values:   ANDROID_APP: An Android upload.   IOS_APP: An iOS upload.   WEB_APP: A web appliction upload.   EXTERNAL_DATA: An external data upload.   APPIUM_JAVA_JUNIT_TEST_PACKAGE: An Appium Java JUnit test package upload.   APPIUM_JAVA_TESTNG_TEST_PACKAGE: An Appium Java TestNG test package upload.   APPIUM_PYTHON_TEST_PACKAGE: An Appium Python test package upload.   APPIUM_WEB_JAVA_JUNIT_TEST_PACKAGE: An Appium Java JUnit test package upload.   APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE: An Appium Java TestNG test package upload.   APPIUM_WEB_PYTHON_TEST_PACKAGE: An Appium Python test package upload.   CALABASH_TEST_PACKAGE: A Calabash test package upload.   INSTRUMENTATION_TEST_PACKAGE: An instrumentation upload.   UIAUTOMATION_TEST_PACKAGE: A uiautomation test package upload.   UIAUTOMATOR_TEST_PACKAGE: A uiautomator test package upload.   XCTEST_TEST_PACKAGE: An XCode test package upload.   XCTEST_UI_TEST_PACKAGE: An XCode UI test package upload.  
+         * The upload's type. Must be one of the following values:   ANDROID_APP: An Android upload.   IOS_APP: An iOS upload.   WEB_APP: A web appliction upload.   EXTERNAL_DATA: An external data upload.   APPIUM_JAVA_JUNIT_TEST_PACKAGE: An Appium Java JUnit test package upload.   APPIUM_JAVA_TESTNG_TEST_PACKAGE: An Appium Java TestNG test package upload.   APPIUM_PYTHON_TEST_PACKAGE: An Appium Python test package upload.   APPIUM_WEB_JAVA_JUNIT_TEST_PACKAGE: An Appium Java JUnit test package upload.   APPIUM_WEB_JAVA_TESTNG_TEST_PACKAGE: An Appium Java TestNG test package upload.   APPIUM_WEB_PYTHON_TEST_PACKAGE: An Appium Python test package upload.   CALABASH_TEST_PACKAGE: A Calabash test package upload.   INSTRUMENTATION_TEST_PACKAGE: An instrumentation upload.   UIAUTOMATION_TEST_PACKAGE: A uiautomation test package upload.   UIAUTOMATOR_TEST_PACKAGE: A uiautomator test package upload.   XCTEST_TEST_PACKAGE: An XCode test package upload.   XCTEST_UI_TEST_PACKAGE: An XCode UI test package upload.   APPIUM_JAVA_JUNIT_TEST_SPEC: An Appium Java JUnit test spec upload.   APPIUM_JAVA_TESTNG_TEST_SPEC: An Appium Java TestNG test spec upload.   APPIUM_PYTHON_TEST_SPEC: An Appium Python test spec upload.   APPIUM_WEB_JAVA_JUNIT_TEST_SPEC: An Appium Java JUnit test spec upload.   APPIUM_WEB_JAVA_TESTNG_TEST_SPEC: An Appium Java TestNG test spec upload.   APPIUM_WEB_PYTHON_TEST_SPEC: An Appium Python test spec upload.   INSTRUMENTATION_TEST_SPEC: An instrumentation test spec upload.   XCTEST_UI_TEST_SPEC: An XCode UI test spec upload.  
          */
     var `type`: js.UndefOr[UploadType] = js.undefined
     /**

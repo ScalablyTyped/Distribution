@@ -11,14 +11,14 @@ trait ELBv2
   @JSName("config")
   var config_ELBv2: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ClientConfiguration = js.native
   /**
-     * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates.
+     * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
      */
   def addListenerCertificates(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.AddListenerCertificatesOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates.
+     * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
      */
   def addListenerCertificates(
     callback: js.Function2[
@@ -31,14 +31,14 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates.
+     * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
      */
   def addListenerCertificates(params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.AddListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.AddListenerCertificatesOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates.
+     * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
      */
   def addListenerCertificates(
     params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.AddListenerCertificatesInput,
@@ -667,6 +667,47 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * 
+     */
+  def describeProvisionedCapacity(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * 
+     */
+  def describeProvisionedCapacity(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * 
+     */
+  def describeProvisionedCapacity(params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * 
+     */
+  def describeProvisionedCapacity(
+    params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Describes the specified rules or the rules for the specified listener. You must specify either a listener or one or more rules.
      */
   def describeRules(): awsDashSdkLib.libRequestMod.Request[
@@ -995,6 +1036,47 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * 
+     */
+  def modifyProvisionedCapacity(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * 
+     */
+  def modifyProvisionedCapacity(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * 
+     */
+  def modifyProvisionedCapacity(params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * 
+     */
+  def modifyProvisionedCapacity(
+    params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Modifies the specified rule. Any existing properties that you do not modify retain their current values. To modify the actions for the default rule, use ModifyListener.
      */
   def modifyRule(): awsDashSdkLib.libRequestMod.Request[
@@ -1118,14 +1200,14 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Registers the specified targets with the specified target group. You can register targets by instance ID or by IP address. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
+     * Registers the specified targets with the specified target group. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
      */
   def registerTargets(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.RegisterTargetsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Registers the specified targets with the specified target group. You can register targets by instance ID or by IP address. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
+     * Registers the specified targets with the specified target group. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
      */
   def registerTargets(
     callback: js.Function2[
@@ -1138,14 +1220,14 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Registers the specified targets with the specified target group. You can register targets by instance ID or by IP address. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
+     * Registers the specified targets with the specified target group. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
      */
   def registerTargets(params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.RegisterTargetsInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.RegisterTargetsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Registers the specified targets with the specified target group. You can register targets by instance ID or by IP address. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
+     * Registers the specified targets with the specified target group. If the target is an EC2 instance, it must be in the running state when you register it. By default, the load balancer routes requests to registered targets using the protocol and port for the target group. Alternatively, you can override the port for a target when you register it. You can register each EC2 instance or IP address with the same target group multiple times using different ports. With a Network Load Balancer, you cannot register instances by instance ID if they have the following instance types: C1, CC1, CC2, CG1, CG2, CR1, CS1, G1, G2, HI1, HS1, M1, M2, M3, and T1. You can register instances of these types by IP address. To remove a target from a target group, use DeregisterTargets.
      */
   def registerTargets(
     params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.RegisterTargetsInput,

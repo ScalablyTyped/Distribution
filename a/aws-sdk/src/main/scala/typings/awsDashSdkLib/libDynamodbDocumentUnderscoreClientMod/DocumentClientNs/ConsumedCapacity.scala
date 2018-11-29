@@ -20,6 +20,10 @@ trait ConsumedCapacity extends js.Object {
        */
   var LocalSecondaryIndexes: js.UndefOr[SecondaryIndexesCapacityMap] = js.undefined
   /**
+       * The total number of read capacity units consumed by the operation.
+       */
+  var ReadCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined
+  /**
        * The amount of throughput consumed on the table affected by the operation.
        */
   var Table: js.UndefOr[Capacity] = js.undefined
@@ -27,5 +31,9 @@ trait ConsumedCapacity extends js.Object {
        * The name of the table that was affected by the operation.
        */
   var TableName: js.UndefOr[TableName] = js.undefined
+  /**
+       * The total number of write capacity units consumed by the operation.
+       */
+  var WriteCapacityUnits: js.UndefOr[ConsumedCapacityUnits] = js.undefined
 }
 

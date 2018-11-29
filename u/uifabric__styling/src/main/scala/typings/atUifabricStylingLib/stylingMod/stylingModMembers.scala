@@ -16,6 +16,7 @@ object stylingModMembers extends js.Object {
   val HighContrastSelector: /* @media screen and (-ms-high-contrast: active) */ java.lang.String = js.native
   val HighContrastSelectorBlack: /* @media screen and (-ms-high-contrast: white-on-black) */ java.lang.String = js.native
   val HighContrastSelectorWhite: /* @media screen and (-ms-high-contrast: black-on-white) */ java.lang.String = js.native
+  val InjectionMode: atUifabricMergeDashStylesLib.Anon_None = js.native
   val PulsingBeaconAnimationStyles: atUifabricStylingLib.Anon_CreateDefaultAnimation = js.native
   val ScreenWidthMaxLarge: scala.Double = js.native
   val ScreenWidthMaxMedium: scala.Double = js.native
@@ -613,18 +614,19 @@ object stylingModMembers extends js.Object {
   def getIcon(): js.UndefOr[atUifabricStylingLib.libUtilitiesIconsMod.IIconRecord] = js.native
   def getIcon(name: java.lang.String): js.UndefOr[atUifabricStylingLib.libUtilitiesIconsMod.IIconRecord] = js.native
   def getIconClassName(name: java.lang.String): java.lang.String = js.native
-  def getSchemedContext(
-    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
-    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext
-  ): js.UndefOr[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
-  def getSchemedContext(
-    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
-    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
-    settingsTheme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
-  ): js.UndefOr[atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext] = js.native
   def getScreenSelector(min: scala.Double, max: scala.Double): java.lang.String = js.native
   def getTheme(): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def getTheme(depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
+  def getThemedContext(context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
+  def getThemedContext(
+    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
+    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames
+  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
+  def getThemedContext(
+    context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext,
+    scheme: atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames,
+    theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
+  ): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
   def keyframes(timeline: ScalablyTyped.runtime.StringDictionary[js.Object]): java.lang.String = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme, depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native

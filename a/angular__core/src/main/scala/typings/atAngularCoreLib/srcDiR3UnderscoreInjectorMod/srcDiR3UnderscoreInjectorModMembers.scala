@@ -20,5 +20,7 @@ object srcDiR3UnderscoreInjectorModMembers extends js.Object {
     parent: scala.Null,
     additionalProviders: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]
   ): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
+  def isTypeProvider(value: SingleProvider): /* is TypeProvider */scala.Boolean = js.native
+  def providerToFactory(provider: SingleProvider): js.Function0[_] = js.native
 }
 

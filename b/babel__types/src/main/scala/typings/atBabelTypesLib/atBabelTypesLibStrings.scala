@@ -109,9 +109,6 @@ object atBabelTypesLibStrings {
   sealed trait BindExpression extends js.Object
   
   @js.native
-  sealed trait BlockComment extends js.Object
-  
-  @js.native
   sealed trait BlockStatement extends js.Object
   
   @js.native
@@ -152,6 +149,12 @@ object atBabelTypesLibStrings {
   
   @js.native
   sealed trait ClassProperty extends js.Object
+  
+  @js.native
+  sealed trait CommentBlock extends js.Object
+  
+  @js.native
+  sealed trait CommentLine extends js.Object
   
   @js.native
   sealed trait CommonJS extends js.Object
@@ -359,9 +362,6 @@ object atBabelTypesLibStrings {
   
   @js.native
   sealed trait LabeledStatement extends js.Object
-  
-  @js.native
-  sealed trait LineComment extends js.Object
   
   @js.native
   sealed trait LogicalExpression extends js.Object
@@ -850,7 +850,6 @@ object atBabelTypesLibStrings {
   def BigIntLiteral: BigIntLiteral = "BigIntLiteral".asInstanceOf[BigIntLiteral]
   def BinaryExpression: BinaryExpression = "BinaryExpression".asInstanceOf[BinaryExpression]
   def BindExpression: BindExpression = "BindExpression".asInstanceOf[BindExpression]
-  def BlockComment: BlockComment = "BlockComment".asInstanceOf[BlockComment]
   def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
   def BooleanLiteral: BooleanLiteral = "BooleanLiteral".asInstanceOf[BooleanLiteral]
   def BooleanLiteralTypeAnnotation: BooleanLiteralTypeAnnotation = "BooleanLiteralTypeAnnotation".asInstanceOf[BooleanLiteralTypeAnnotation]
@@ -865,6 +864,8 @@ object atBabelTypesLibStrings {
   def ClassMethod: ClassMethod = "ClassMethod".asInstanceOf[ClassMethod]
   def ClassPrivateProperty: ClassPrivateProperty = "ClassPrivateProperty".asInstanceOf[ClassPrivateProperty]
   def ClassProperty: ClassProperty = "ClassProperty".asInstanceOf[ClassProperty]
+  def CommentBlock: CommentBlock = "CommentBlock".asInstanceOf[CommentBlock]
+  def CommentLine: CommentLine = "CommentLine".asInstanceOf[CommentLine]
   def CommonJS: CommonJS = "CommonJS".asInstanceOf[CommonJS]
   def ConditionalExpression: ConditionalExpression = "ConditionalExpression".asInstanceOf[ConditionalExpression]
   def ContinueStatement: ContinueStatement = "ContinueStatement".asInstanceOf[ContinueStatement]
@@ -934,7 +935,6 @@ object atBabelTypesLibStrings {
   def JSXSpreadChild: JSXSpreadChild = "JSXSpreadChild".asInstanceOf[JSXSpreadChild]
   def JSXText: JSXText = "JSXText".asInstanceOf[JSXText]
   def LabeledStatement: LabeledStatement = "LabeledStatement".asInstanceOf[LabeledStatement]
-  def LineComment: LineComment = "LineComment".asInstanceOf[LineComment]
   def LogicalExpression: LogicalExpression = "LogicalExpression".asInstanceOf[LogicalExpression]
   def MemberExpression: MemberExpression = "MemberExpression".asInstanceOf[MemberExpression]
   def MetaProperty: MetaProperty = "MetaProperty".asInstanceOf[MetaProperty]

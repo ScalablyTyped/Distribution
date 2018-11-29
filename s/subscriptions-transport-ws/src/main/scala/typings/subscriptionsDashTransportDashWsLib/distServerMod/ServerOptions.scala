@@ -16,6 +16,8 @@ trait ServerOptions extends js.Object {
   var rootValue: js.UndefOr[js.Any] = js.undefined
   var schema: js.UndefOr[graphqlLib.graphqlMod.GraphQLSchema] = js.undefined
   var subscribe: js.UndefOr[SubscribeFunction] = js.undefined
-  var validationRules: js.UndefOr[js.Array[js.Function1[/* context */ graphqlLib.graphqlMod.ValidationContext, _]]] = js.undefined
+  var validationRules: js.UndefOr[
+    (js.Array[js.Function1[/* context */ graphqlLib.graphqlMod.ValidationContext, _]]) | js.Array[_]
+  ] = js.undefined
 }
 

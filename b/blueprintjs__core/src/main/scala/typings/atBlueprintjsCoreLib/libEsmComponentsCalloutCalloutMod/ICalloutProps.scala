@@ -17,7 +17,7 @@ trait ICalloutProps
        * If this prop is explicitly `null`, no icon will be displayed (regardless of `intent`).
        */
   var icon: js.UndefOr[
-    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | reactLib.reactMod.Global.JSXNs.Element | scala.Null
+    atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement
   ] = js.undefined
 }
 

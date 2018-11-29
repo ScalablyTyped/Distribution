@@ -251,7 +251,7 @@ object TranscribeServiceNs extends js.Object {
          */
     var Settings: js.UndefOr[Settings] = js.undefined
     /**
-         * The name of the job. You can't use the strings "." or ".." in the job name. The name must be unique within an AWS account.
+         * The name of the job. Note that you can't use the strings "." or ".." by themselves as the job name. The name must also be unique within an AWS account.
          */
     var TranscriptionJobName: TranscriptionJobName
   }
@@ -387,21 +387,21 @@ object TranscribeServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateVocabularyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a previously submitted transcription job as well as any other generated results such as the transcription, models, and so on.
+       * Deletes a previously submitted transcription job along with any other generated results such as the transcription, models, and so on.
        */
     def deleteTranscriptionJob(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a previously submitted transcription job as well as any other generated results such as the transcription, models, and so on.
+       * Deletes a previously submitted transcription job along with any other generated results such as the transcription, models, and so on.
        */
     def deleteTranscriptionJob(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a previously submitted transcription job as well as any other generated results such as the transcription, models, and so on.
+       * Deletes a previously submitted transcription job along with any other generated results such as the transcription, models, and so on.
        */
     def deleteTranscriptionJob(params: DeleteTranscriptionJobRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes a previously submitted transcription job as well as any other generated results such as the transcription, models, and so on.
+       * Deletes a previously submitted transcription job along with any other generated results such as the transcription, models, and so on.
        */
     def deleteTranscriptionJob(
       params: DeleteTranscriptionJobRequest,
@@ -665,7 +665,7 @@ object TranscribeServiceNs extends js.Object {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DateTime = stdLib.Date
   type FailureReason = java.lang.String
-  type LanguageCode = awsDashSdkLib.awsDashSdkLibStrings.`en-US` | awsDashSdkLib.awsDashSdkLibStrings.`es-US` | awsDashSdkLib.awsDashSdkLibStrings.`en-AU` | awsDashSdkLib.awsDashSdkLibStrings.`fr-CA` | awsDashSdkLib.awsDashSdkLibStrings.`en-UK` | java.lang.String
+  type LanguageCode = awsDashSdkLib.awsDashSdkLibStrings.`en-US` | awsDashSdkLib.awsDashSdkLibStrings.`es-US` | awsDashSdkLib.awsDashSdkLibStrings.`en-AU` | awsDashSdkLib.awsDashSdkLibStrings.`fr-CA` | awsDashSdkLib.awsDashSdkLibStrings.`en-GB` | awsDashSdkLib.awsDashSdkLibStrings.`de-DE` | awsDashSdkLib.awsDashSdkLibStrings.`pt-BR` | awsDashSdkLib.awsDashSdkLibStrings.`fr-FR` | java.lang.String
   type MaxResults = scala.Double
   type MaxSpeakers = scala.Double
   type MediaFormat = awsDashSdkLib.awsDashSdkLibStrings.mp3 | awsDashSdkLib.awsDashSdkLibStrings.mp4 | awsDashSdkLib.awsDashSdkLibStrings.wav | awsDashSdkLib.awsDashSdkLibStrings.flac | java.lang.String

@@ -15,5 +15,8 @@ trait DividerProps
   var inset: js.UndefOr[scala.Boolean] = js.undefined
   var light: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var variant: js.UndefOr[
+    atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fullWidth | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inset | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.middle
+  ] = js.undefined
 }
 

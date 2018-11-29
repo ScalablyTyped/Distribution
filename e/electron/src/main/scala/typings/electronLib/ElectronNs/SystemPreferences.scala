@@ -156,7 +156,7 @@ trait SystemPreferences extends EventEmitter {
   def subscribeLocalNotification(
     event: java.lang.String,
     callback: js.Function2[/* event */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
-  ): scala.Unit = js.native
+  ): scala.Double = js.native
   /**
        * Subscribes to native notifications of macOS, callback will be called with
        * callback(event, userInfo) when the corresponding event happens. The userInfo is
@@ -168,7 +168,7 @@ trait SystemPreferences extends EventEmitter {
   def subscribeNotification(
     event: java.lang.String,
     callback: js.Function2[/* event */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
-  ): scala.Unit = js.native
+  ): scala.Double = js.native
   /**
        * Same as subscribeNotification, but uses
        * NSWorkspace.sharedWorkspace.notificationCenter. This is necessary for events

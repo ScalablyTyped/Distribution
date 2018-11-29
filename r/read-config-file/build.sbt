@@ -1,24 +1,24 @@
 organization := "com.scalablytyped"
 name := "read-config-file"
-version := "3.1.2-5f66de"
+version := "3.2.0-0d075c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "ajv" % "6.5.4-9e8709",
-  "com.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-3124ce",
-  "com.scalablytyped" %%% "bluebird-lst" % "1.0.5-f4447e",
-  "com.scalablytyped" %%% "dotenv" % "6.1-dt-20181109Z-716235",
-  "com.scalablytyped" %%% "dotenv-expand" % "4.2.0-e7e7ab",
-  "com.scalablytyped" %%% "fast-deep-equal" % "2.0.1-ef0253",
-  "com.scalablytyped" %%% "fs-extra" % "5.0-dt-20180910Z-61412b",
-  "com.scalablytyped" %%% "fs-extra-p" % "4.6.1-a77bad",
-  "com.scalablytyped" %%% "js-yaml" % "3.11-dt-20180910Z-fd3121",
-  "com.scalablytyped" %%% "json5" % "0.0-unknown-dt-20180910Z-6e2bd3",
-  "com.scalablytyped" %%% "lazy-val" % "1.0.3-501d39",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181121Z-5a910f",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "uri-js" % "4.2.2-32727b",
+  "com.scalablytyped" %%% "ajv" % "6.6.1-b44699",
+  "com.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-7bd99a",
+  "com.scalablytyped" %%% "bluebird-lst" % "1.0.6-98debd",
+  "com.scalablytyped" %%% "dotenv" % "6.1-dt-20181109Z-103725",
+  "com.scalablytyped" %%% "dotenv-expand" % "4.2.0-daa748",
+  "com.scalablytyped" %%% "fast-deep-equal" % "2.0.1-892599",
+  "com.scalablytyped" %%% "fs-extra" % "5.0-dt-20180910Z-748b3b",
+  "com.scalablytyped" %%% "fs-extra-p" % "7.0.0-c19546",
+  "com.scalablytyped" %%% "js-yaml" % "3.11-dt-20180910Z-2da08f",
+  "com.scalablytyped" %%% "json5" % "0.0-unknown-dt-20180910Z-1bb86e",
+  "com.scalablytyped" %%% "lazy-val" % "1.0.3-d82200",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "uri-js" % "4.2.2-56439b",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

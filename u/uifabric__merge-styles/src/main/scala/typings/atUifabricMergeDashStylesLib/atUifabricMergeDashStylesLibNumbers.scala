@@ -10,7 +10,13 @@ object atUifabricMergeDashStylesLibNumbers {
   sealed trait `0` extends js.Object
   
   @js.native
+  sealed trait `1` extends js.Object
+  
+  @js.native
   sealed trait `100` extends js.Object
+  
+  @js.native
+  sealed trait `2` extends js.Object
   
   @js.native
   sealed trait `200` extends js.Object
@@ -40,7 +46,9 @@ object atUifabricMergeDashStylesLibNumbers {
   sealed trait `false` extends js.Object
   
   def `0`: `0` = 0.asInstanceOf[`0`]
+  def `1`: `1` = 1.asInstanceOf[`1`]
   def `100`: `100` = 100.asInstanceOf[`100`]
+  def `2`: `2` = 2.asInstanceOf[`2`]
   def `200`: `200` = 200.asInstanceOf[`200`]
   def `300`: `300` = 300.asInstanceOf[`300`]
   def `400`: `400` = 400.asInstanceOf[`400`]

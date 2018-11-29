@@ -7,8 +7,13 @@ import scala.scalajs.js.annotation._
 
 
 trait LoggerOptions extends js.Object {
-  // Custom logger function
+  /**
+       * Override default global log level.
+       */
   var logger: js.UndefOr[log] = js.undefined
+  /**
+       * Custom logger function
+       */
   var loggerLevel: js.UndefOr[java.lang.String] = js.undefined
 }
 

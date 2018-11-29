@@ -11,7 +11,7 @@ class Filter[U /* <: js.Object */] ()
   extends pixiDotJsLib.PIXINs.Filter[U] {
   def this(vertexSrc: java.lang.String) = this()
   def this(vertexSrc: java.lang.String, fragmentSrc: java.lang.String) = this()
-  def this(vertexSrc: java.lang.String, fragmentSrc: java.lang.String, uniforms: pixiDotJsLib.PIXINs.UniformDataMap[U]) = this()
+  def this(vertexSrc: java.lang.String, fragmentSrc: java.lang.String, uniformData: pixiDotJsLib.PIXINs.UniformDataMap[U]) = this()
 }
 
 @JSImport("pixi.js", "Filter")

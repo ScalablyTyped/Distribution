@@ -23,7 +23,8 @@ trait Anon_Name extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
   var name: java.lang.String
   var profile: java.lang.String
-  var state: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.AppState
+  var state: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.SuccessAppState
+  var `type`: mendixmodelsdkLib.mendixmodelsdkLibStrings.success
   var url: java.lang.String
 }
 

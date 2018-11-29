@@ -106,7 +106,7 @@ object linkToolsNs extends js.Object {
     trait Options
       extends jointjsLib.jointjsMod.diaNs.ToolViewNs.Options {
       var action: js.UndefOr[ActionCallback] = js.undefined
-      var distance: js.UndefOr[scala.Double] = js.undefined
+      var distance: js.UndefOr[scala.Double | java.lang.String] = js.undefined
       var markup: js.UndefOr[jointjsLib.jointjsMod.diaNs.MarkupJSON] = js.undefined
       var offset: js.UndefOr[scala.Double] = js.undefined
       var rotate: js.UndefOr[scala.Boolean] = js.undefined

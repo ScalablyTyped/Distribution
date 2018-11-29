@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Filter[U /* <: js.Object */] () extends js.Object {
   def this(vertexSrc: java.lang.String) = this()
   def this(vertexSrc: java.lang.String, fragmentSrc: java.lang.String) = this()
-  def this(vertexSrc: java.lang.String, fragmentSrc: java.lang.String, uniforms: UniformDataMap[U]) = this()
+  def this(vertexSrc: java.lang.String, fragmentSrc: java.lang.String, uniformData: UniformDataMap[U]) = this()
   var _blendMode: scala.Double = js.native
   var autoFit: scala.Boolean = js.native
   var blendMode: scala.Double = js.native

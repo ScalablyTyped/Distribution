@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait SyncConfiguration extends js.Object {
   var _disableQueryBasedSyncUrlChecks: js.UndefOr[scala.Boolean] = js.undefined
+  var customQueryBasedSyncIdentifier: js.UndefOr[java.lang.String] = js.undefined
   var custom_http_headers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var error: js.UndefOr[ErrorCallback] = js.undefined
   var fullSynchronization: js.UndefOr[scala.Boolean] = js.undefined

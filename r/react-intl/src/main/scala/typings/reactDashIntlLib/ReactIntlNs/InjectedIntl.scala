@@ -36,5 +36,6 @@ trait InjectedIntl extends js.Object {
   def formatTime(value: DateSource): java.lang.String = js.native
   def formatTime(value: DateSource, options: reactDashIntlLib.ReactIntlNs.FormattedTimeNs.PropsBase): java.lang.String = js.native
   def now(): scala.Double = js.native
+  def onError(error: java.lang.String): scala.Unit = js.native
 }
 

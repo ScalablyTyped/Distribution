@@ -1,0 +1,41 @@
+[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(react-syntax-highlighter) [id => react-syntax-highlighter, phase => typescript, file => ../types/react-syntax-highlighter/index.d.ts] 
+[debug] PhaseRunner.scala:86 Ignored [id => react-syntax-highlighter, phase => typescript] 
+[debug] PhaseRunner.scala:78 Success [id => react-syntax-highlighter, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-syntax-highlighter/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/react-syntax-highlighter),TsIdentLibrarySimple(react-syntax-highlighter)),TsIdentModule(None,List(react-syntax-highlighter))) [id => react-syntax-highlighter, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(react-syntax-highlighter) [id => react-syntax-highlighter, phase => typescript] 
+[info ] PreferTypeAlias.scala:112 Simplified to type alias [id => react-syntax-highlighter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-syntax-highlighter/light) / TsDeclInterface(SyntaxHighlighter))] 
+[info ] PreferTypeAlias.scala:112 Simplified to type alias [id => react-syntax-highlighter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-syntax-highlighter/prism-light) / TsDeclInterface(SyntaxHighlighter))] 
+[debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(S) at TreeScope(TsParsedFile() / TsDeclModule(react-syntax-highlighter/light) / TsDeclTypeAlias(SyntaxHighlighter) / TsTypeRef()) [id => react-syntax-highlighter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-syntax-highlighter/light) / TsDeclTypeAlias(SyntaxHighlighter) / TsTypeRef())] 
+[debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(SS) at TreeScope(TsParsedFile() / TsDeclModule(react-syntax-highlighter/light) / TsDeclTypeAlias(SyntaxHighlighter) / TsTypeRef()) [id => react-syntax-highlighter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-syntax-highlighter/light) / TsDeclTypeAlias(SyntaxHighlighter) / TsTypeRef())] 
+[debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(S) at TreeScope(TsParsedFile() / TsDeclModule(react-syntax-highlighter/prism-light) / TsDeclTypeAlias(SyntaxHighlighter) / TsTypeRef()) [id => react-syntax-highlighter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-syntax-highlighter/prism-light) / TsDeclTypeAlias(SyntaxHighlighter) / TsTypeRef())] 
+[debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(SS) at TreeScope(TsParsedFile() / TsDeclModule(react-syntax-highlighter/prism-light) / TsDeclTypeAlias(SyntaxHighlighter) / TsTypeRef()) [id => react-syntax-highlighter, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-syntax-highlighter/prism-light) / TsDeclTypeAlias(SyntaxHighlighter) / TsTypeRef())] 
+[debug] PhaseRunner.scala:78 Success [id => react-syntax-highlighter, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(react-syntax-highlighter) [id => react-syntax-highlighter, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => react-syntax-highlighter, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:211 Built react-syntax-highlighter in 3736 ms [id => react-syntax-highlighter, phase => build] 
+[info ] Phase3CompileBloop.scala:221 published local, [/home/tso/.ivy2/local/com.scalablytyped/react-syntax-highlighter_sjs0.6_2.12/0.0-unknown-dt-20181104Z-77b70a/jars/react-syntax-highlighter_sjs0.6_2.12.jar, /home/tso/.ivy2/local/com.scalablytyped/react-syntax-highlighter_sjs0.6_2.12/0.0-unknown-dt-20181104Z-77b70a/srcs/react-syntax-highlighter_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/com.scalablytyped/react-syntax-highlighter_sjs0.6_2.12/0.0-unknown-dt-20181104Z-77b70a/ivys/ivy.xml, /home/tso/.ivy2/local/com.scalablytyped/react-syntax-highlighter_sjs0.6_2.12/0.0-unknown-dt-20181104Z-77b70a/poms/react-syntax-highlighter_sjs0.6_2.12.pom] [id => react-syntax-highlighter, phase => build] 
+[debug] PhaseRunner.scala:78 Success [id => react-syntax-highlighter, phase => build] 
+[error] PhaseRes.scala:75 Caught exception [id => react-syntax-highlighter, phase => publish] java.util.concurrent.ExecutionException: java.net.ConnectException: connection timed out: api.bintray.com/75.126.118.184:443
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.abort(NettyResponseFuture.java:229)
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.onFutureFailure(NettyConnectListener.java:107)
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.operationComplete(NettyConnectListener.java:115)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:409)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListeners(DefaultChannelFuture.java:400)
+	at org.jboss.netty.channel.DefaultChannelFuture.setFailure(DefaultChannelFuture.java:362)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:142)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: connection timed out: api.bintray.com/75.126.118.184:443
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.onFutureFailure(NettyConnectListener.java:103)
+	... 13 more
+Caused by: org.jboss.netty.channel.ConnectTimeoutException: connection timed out: api.bintray.com/75.126.118.184:443
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:139)
+	... 8 more
+
+[debug] PhaseRunner.scala:82 Failure, [react-syntax-highlighter => java.util.concurrent.ExecutionException: java.net.ConnectException: connection timed out: api.bintray.com/75.126.118.184:443] [id => react-syntax-highlighter, phase => publish] 

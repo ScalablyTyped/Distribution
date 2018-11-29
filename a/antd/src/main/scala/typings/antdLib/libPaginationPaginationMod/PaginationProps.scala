@@ -13,9 +13,10 @@ trait PaginationProps extends js.Object {
   var defaultPageSize: js.UndefOr[scala.Double] = js.undefined
   var hideOnSinglePage: js.UndefOr[scala.Boolean] = js.undefined
   var itemRender: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* page */ scala.Double, 
       /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, 
+      /* originalElement */ reactLib.HTMLElement, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined

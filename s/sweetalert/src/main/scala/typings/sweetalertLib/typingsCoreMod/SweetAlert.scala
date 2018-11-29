@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SweetAlert extends js.Object {
-  var close: js.UndefOr[js.Function1[/* namespace */ java.lang.String, scala.Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[java.lang.String], scala.Unit]] = js.native
   var getState: js.UndefOr[js.Function0[sweetalertLib.typingsModulesStateMod.SwalState]] = js.native
   var setActionValue: js.UndefOr[
     js.Function1[

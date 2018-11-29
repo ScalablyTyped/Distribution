@@ -11,14 +11,14 @@ trait SageMaker
   @JSName("config")
   var config_SageMaker: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ClientConfiguration = js.native
   /**
-     * Adds or overwrites one or more tags for the specified Amazon SageMaker resource. You can add tags to notebook instances, training jobs, models, endpoint configurations, and endpoints.  Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide. 
+     * Adds or overwrites one or more tags for the specified Amazon SageMaker resource. You can add tags to notebook instances, training jobs, hyperparameter tuning jobs, models, endpoint configurations, and endpoints. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see For more information, see AWS Tagging Strategies.  Tags that you add to a hyperparameter tuning job by calling this API are also added to any training jobs that the hyperparameter tuning job launches after you call this API, but not to training jobs that the hyperparameter tuning job launched before you called this API. To make sure that the tags associated with a hyperparameter tuning job are also added to all training jobs that the hyperparameter tuning job launches, add the tags when you first create the tuning job by specifying them in the Tags parameter of CreateHyperParameterTuningJob  
      */
   def addTags(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AddTagsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds or overwrites one or more tags for the specified Amazon SageMaker resource. You can add tags to notebook instances, training jobs, models, endpoint configurations, and endpoints.  Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide. 
+     * Adds or overwrites one or more tags for the specified Amazon SageMaker resource. You can add tags to notebook instances, training jobs, hyperparameter tuning jobs, models, endpoint configurations, and endpoints. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see For more information, see AWS Tagging Strategies.  Tags that you add to a hyperparameter tuning job by calling this API are also added to any training jobs that the hyperparameter tuning job launches after you call this API, but not to training jobs that the hyperparameter tuning job launched before you called this API. To make sure that the tags associated with a hyperparameter tuning job are also added to all training jobs that the hyperparameter tuning job launches, add the tags when you first create the tuning job by specifying them in the Tags parameter of CreateHyperParameterTuningJob  
      */
   def addTags(
     callback: js.Function2[
@@ -31,14 +31,14 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds or overwrites one or more tags for the specified Amazon SageMaker resource. You can add tags to notebook instances, training jobs, models, endpoint configurations, and endpoints.  Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide. 
+     * Adds or overwrites one or more tags for the specified Amazon SageMaker resource. You can add tags to notebook instances, training jobs, hyperparameter tuning jobs, models, endpoint configurations, and endpoints. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see For more information, see AWS Tagging Strategies.  Tags that you add to a hyperparameter tuning job by calling this API are also added to any training jobs that the hyperparameter tuning job launches after you call this API, but not to training jobs that the hyperparameter tuning job launched before you called this API. To make sure that the tags associated with a hyperparameter tuning job are also added to all training jobs that the hyperparameter tuning job launches, add the tags when you first create the tuning job by specifying them in the Tags parameter of CreateHyperParameterTuningJob  
      */
   def addTags(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AddTagsInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AddTagsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Adds or overwrites one or more tags for the specified Amazon SageMaker resource. You can add tags to notebook instances, training jobs, models, endpoint configurations, and endpoints.  Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide. 
+     * Adds or overwrites one or more tags for the specified Amazon SageMaker resource. You can add tags to notebook instances, training jobs, hyperparameter tuning jobs, models, endpoint configurations, and endpoints. Each tag consists of a key and an optional value. Tag keys must be unique per resource. For more information about tags, see For more information, see AWS Tagging Strategies.  Tags that you add to a hyperparameter tuning job by calling this API are also added to any training jobs that the hyperparameter tuning job launches after you call this API, but not to training jobs that the hyperparameter tuning job launched before you called this API. To make sure that the tags associated with a hyperparameter tuning job are also added to all training jobs that the hyperparameter tuning job launches, add the tags when you first create the tuning job by specifying them in the Tags parameter of CreateHyperParameterTuningJob  
      */
   def addTags(
     params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AddTagsInput,
@@ -49,6 +49,129 @@ trait SageMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.AddTagsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a machine learning algorithm that you can use in Amazon SageMaker and list in the AWS Marketplace.
+     */
+  def createAlgorithm(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateAlgorithmOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a machine learning algorithm that you can use in Amazon SageMaker and list in the AWS Marketplace.
+     */
+  def createAlgorithm(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateAlgorithmOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateAlgorithmOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a machine learning algorithm that you can use in Amazon SageMaker and list in the AWS Marketplace.
+     */
+  def createAlgorithm(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateAlgorithmInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateAlgorithmOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a machine learning algorithm that you can use in Amazon SageMaker and list in the AWS Marketplace.
+     */
+  def createAlgorithm(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateAlgorithmInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateAlgorithmOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateAlgorithmOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use git source control for the notebooks you create. The git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other git repository.
+     */
+  def createCodeRepository(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use git source control for the notebooks you create. The git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other git repository.
+     */
+  def createCodeRepository(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use git source control for the notebooks you create. The git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other git repository.
+     */
+  def createCodeRepository(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Create a git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use git source control for the notebooks you create. The git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other git repository.
+     */
+  def createCodeRepository(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Starts a model compilation job. After the model has been compiled, Amazon SageMaker saves the resulting model artifacts to an Amazon Simple Storage Service (Amazon S3) bucket that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts with AWS IoT Greengrass. In that case, deploy them as an ML resource. In the request body, you provide the following:   A name for the compilation job    Information about the input model artifacts    The output location for the compiled model and the device (target) that the model runs on     The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker assumes to perform the model compilation job    You can also provide a Tag to track the model compilation job's resource use and costs. The response body contains the CompilationJobArn for the compiled job. To stop a model compilation job, use StopCompilationJob. To get information about a particular model compilation job, use DescribeCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
+     */
+  def createCompilationJob(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCompilationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Starts a model compilation job. After the model has been compiled, Amazon SageMaker saves the resulting model artifacts to an Amazon Simple Storage Service (Amazon S3) bucket that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts with AWS IoT Greengrass. In that case, deploy them as an ML resource. In the request body, you provide the following:   A name for the compilation job    Information about the input model artifacts    The output location for the compiled model and the device (target) that the model runs on     The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker assumes to perform the model compilation job    You can also provide a Tag to track the model compilation job's resource use and costs. The response body contains the CompilationJobArn for the compiled job. To stop a model compilation job, use StopCompilationJob. To get information about a particular model compilation job, use DescribeCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
+     */
+  def createCompilationJob(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCompilationJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCompilationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Starts a model compilation job. After the model has been compiled, Amazon SageMaker saves the resulting model artifacts to an Amazon Simple Storage Service (Amazon S3) bucket that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts with AWS IoT Greengrass. In that case, deploy them as an ML resource. In the request body, you provide the following:   A name for the compilation job    Information about the input model artifacts    The output location for the compiled model and the device (target) that the model runs on     The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker assumes to perform the model compilation job    You can also provide a Tag to track the model compilation job's resource use and costs. The response body contains the CompilationJobArn for the compiled job. To stop a model compilation job, use StopCompilationJob. To get information about a particular model compilation job, use DescribeCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
+     */
+  def createCompilationJob(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCompilationJobRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCompilationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Starts a model compilation job. After the model has been compiled, Amazon SageMaker saves the resulting model artifacts to an Amazon Simple Storage Service (Amazon S3) bucket that you specify.  If you choose to host your model using Amazon SageMaker hosting services, you can use the resulting model artifacts as part of the model. You can also use the artifacts with AWS IoT Greengrass. In that case, deploy them as an ML resource. In the request body, you provide the following:   A name for the compilation job    Information about the input model artifacts    The output location for the compiled model and the device (target) that the model runs on     The Amazon Resource Name (ARN) of the IAM role that Amazon SageMaker assumes to perform the model compilation job    You can also provide a Tag to track the model compilation job's resource use and costs. The response body contains the CompilationJobArn for the compiled job. To stop a model compilation job, use StopCompilationJob. To get information about a particular model compilation job, use DescribeCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
+     */
+  def createCompilationJob(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCompilationJobRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCompilationJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCompilationJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -134,14 +257,14 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a hyperparameter tuning job.
+     * Starts a hyperparameter tuning job. A hyperparameter tuning job finds the best version of a model by running many training jobs on your dataset using the algorithm you choose and values for hyperparameters within ranges that you specify. It then chooses the hyperparameter values that result in a model that performs the best, as measured by an objective metric that you choose.
      */
   def createHyperParameterTuningJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateHyperParameterTuningJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a hyperparameter tuning job.
+     * Starts a hyperparameter tuning job. A hyperparameter tuning job finds the best version of a model by running many training jobs on your dataset using the algorithm you choose and values for hyperparameters within ranges that you specify. It then chooses the hyperparameter values that result in a model that performs the best, as measured by an objective metric that you choose.
      */
   def createHyperParameterTuningJob(
     callback: js.Function2[
@@ -154,14 +277,14 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a hyperparameter tuning job.
+     * Starts a hyperparameter tuning job. A hyperparameter tuning job finds the best version of a model by running many training jobs on your dataset using the algorithm you choose and values for hyperparameters within ranges that you specify. It then chooses the hyperparameter values that result in a model that performs the best, as measured by an objective metric that you choose.
      */
   def createHyperParameterTuningJob(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateHyperParameterTuningJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateHyperParameterTuningJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Starts a hyperparameter tuning job.
+     * Starts a hyperparameter tuning job. A hyperparameter tuning job finds the best version of a model by running many training jobs on your dataset using the algorithm you choose and values for hyperparameters within ranges that you specify. It then chooses the hyperparameter values that result in a model that performs the best, as measured by an objective metric that you choose.
      */
   def createHyperParameterTuningJob(
     params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateHyperParameterTuningJobRequest,
@@ -172,6 +295,47 @@ trait SageMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateHyperParameterTuningJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a job that uses human workers to label the data objects in your input dataset. You can use the labeled data to train machine learning models You can select your workforce from one of three providers:   A private workforce that you create. It can include employees, contractors, and outside experts. Use a private workforce when the data is highly confidential or a specific set of skills is required.   One or more vendors that you select from the Amazon Marketplace. Vendors provide expertise in specific areas. Vendors are selected by AWS and meet a minimum standard of data security requirements.   The Amazon Mechanical Turk workforce. This is the largest workforce, but it should only be used for public data or data that has been stripped of any personally identifiable information.   You can also use automated data labeling to reduce the number of data objects that need to be labeled by a human. Automated data labeling uses active learning to determine if a data object can be labeled by machine or if it needs to be sent to a human worker. The data objects to be labeled are contained in an Amazon S3 bucket. You create a manifest file that describes the location of each object. For more information, see Using Input and Output Data. The output can be used as the manifest file for another labeling job or as training data for your machine learning models.
+     */
+  def createLabelingJob(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateLabelingJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a job that uses human workers to label the data objects in your input dataset. You can use the labeled data to train machine learning models You can select your workforce from one of three providers:   A private workforce that you create. It can include employees, contractors, and outside experts. Use a private workforce when the data is highly confidential or a specific set of skills is required.   One or more vendors that you select from the Amazon Marketplace. Vendors provide expertise in specific areas. Vendors are selected by AWS and meet a minimum standard of data security requirements.   The Amazon Mechanical Turk workforce. This is the largest workforce, but it should only be used for public data or data that has been stripped of any personally identifiable information.   You can also use automated data labeling to reduce the number of data objects that need to be labeled by a human. Automated data labeling uses active learning to determine if a data object can be labeled by machine or if it needs to be sent to a human worker. The data objects to be labeled are contained in an Amazon S3 bucket. You create a manifest file that describes the location of each object. For more information, see Using Input and Output Data. The output can be used as the manifest file for another labeling job or as training data for your machine learning models.
+     */
+  def createLabelingJob(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateLabelingJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateLabelingJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a job that uses human workers to label the data objects in your input dataset. You can use the labeled data to train machine learning models You can select your workforce from one of three providers:   A private workforce that you create. It can include employees, contractors, and outside experts. Use a private workforce when the data is highly confidential or a specific set of skills is required.   One or more vendors that you select from the Amazon Marketplace. Vendors provide expertise in specific areas. Vendors are selected by AWS and meet a minimum standard of data security requirements.   The Amazon Mechanical Turk workforce. This is the largest workforce, but it should only be used for public data or data that has been stripped of any personally identifiable information.   You can also use automated data labeling to reduce the number of data objects that need to be labeled by a human. Automated data labeling uses active learning to determine if a data object can be labeled by machine or if it needs to be sent to a human worker. The data objects to be labeled are contained in an Amazon S3 bucket. You create a manifest file that describes the location of each object. For more information, see Using Input and Output Data. The output can be used as the manifest file for another labeling job or as training data for your machine learning models.
+     */
+  def createLabelingJob(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateLabelingJobRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateLabelingJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a job that uses human workers to label the data objects in your input dataset. You can use the labeled data to train machine learning models You can select your workforce from one of three providers:   A private workforce that you create. It can include employees, contractors, and outside experts. Use a private workforce when the data is highly confidential or a specific set of skills is required.   One or more vendors that you select from the Amazon Marketplace. Vendors provide expertise in specific areas. Vendors are selected by AWS and meet a minimum standard of data security requirements.   The Amazon Mechanical Turk workforce. This is the largest workforce, but it should only be used for public data or data that has been stripped of any personally identifiable information.   You can also use automated data labeling to reduce the number of data objects that need to be labeled by a human. Automated data labeling uses active learning to determine if a data object can be labeled by machine or if it needs to be sent to a human worker. The data objects to be labeled are contained in an Amazon S3 bucket. You create a manifest file that describes the location of each object. For more information, see Using Input and Output Data. The output can be used as the manifest file for another labeling job or as training data for your machine learning models.
+     */
+  def createLabelingJob(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateLabelingJobRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateLabelingJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateLabelingJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -216,6 +380,47 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Creates a model package that you can use to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def createModelPackage(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateModelPackageOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a model package that you can use to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def createModelPackage(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateModelPackageOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateModelPackageOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a model package that you can use to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def createModelPackage(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateModelPackageInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateModelPackageOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a model package that you can use to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def createModelPackage(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateModelPackageInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateModelPackageOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateModelPackageOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Creates an Amazon SageMaker notebook instance. A notebook instance is a machine learning (ML) compute instance running on a Jupyter notebook.  In a CreateNotebookInstance request, specify the type of ML compute instance that you want to run. Amazon SageMaker launches the instance, installs common libraries that you can use to explore datasets for model training, and attaches an ML storage volume to the notebook instance.  Amazon SageMaker also provides a set of example notebooks. Each notebook demonstrates how to use Amazon SageMaker with a specific algorithm or with a machine learning framework.  After receiving the request, Amazon SageMaker does the following:   Creates a network interface in the Amazon SageMaker VPC.   (Option) If you specified SubnetId, Amazon SageMaker creates a network interface in your own VPC, which is inferred from the subnet ID that you provide in the input. When creating this network interface, Amazon SageMaker attaches the security group that you specified in the request to the network interface that it creates in your VPC.   Launches an EC2 instance of the type specified in the request in the Amazon SageMaker VPC. If you specified SubnetId of your VPC, Amazon SageMaker specifies both network interfaces when launching this instance. This enables inbound traffic from your own VPC to the notebook instance, assuming that the security groups allow it.   After creating the notebook instance, Amazon SageMaker returns its Amazon Resource Name (ARN). After Amazon SageMaker creates the notebook instance, you can connect to the Jupyter server and work in Jupyter notebooks. For example, you can write code to explore a dataset that you can use for model training, train a model, host models by creating Amazon SageMaker endpoints, and validate hosted models.  For more information, see How It Works. 
      */
   def createNotebookInstance(): awsDashSdkLib.libRequestMod.Request[
@@ -257,14 +462,14 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a lifecycle configuration that you can associate with a notebook instance. A lifecycle configuration is a collection of shell scripts that run when you create or start a notebook instance. Each lifecycle configuration script has a limit of 16384 characters. The value of the $PATH environment variable that is available to both scripts is /sbin:bin:/usr/sbin:/usr/bin. View CloudWatch Logs for notebook instance lifecycle configurations in log group /aws/sagemaker/NotebookInstances in log stream [notebook-instance-name]/[LifecycleConfigHook]. Lifecycle configuration scripts cannot run for longer than 5 minutes. If a script runs for longer than 5 minutes, it fails and the notebook instance is not created or started. For information about notebook instance lifestyle configurations, see notebook-lifecycle-config.
+     * Creates a lifecycle configuration that you can associate with a notebook instance. A lifecycle configuration is a collection of shell scripts that run when you create or start a notebook instance. Each lifecycle configuration script has a limit of 16384 characters. The value of the $PATH environment variable that is available to both scripts is /sbin:bin:/usr/sbin:/usr/bin. View CloudWatch Logs for notebook instance lifecycle configurations in log group /aws/sagemaker/NotebookInstances in log stream [notebook-instance-name]/[LifecycleConfigHook]. Lifecycle configuration scripts cannot run for longer than 5 minutes. If a script runs for longer than 5 minutes, it fails and the notebook instance is not created or started. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance.
      */
   def createNotebookInstanceLifecycleConfig(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateNotebookInstanceLifecycleConfigOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a lifecycle configuration that you can associate with a notebook instance. A lifecycle configuration is a collection of shell scripts that run when you create or start a notebook instance. Each lifecycle configuration script has a limit of 16384 characters. The value of the $PATH environment variable that is available to both scripts is /sbin:bin:/usr/sbin:/usr/bin. View CloudWatch Logs for notebook instance lifecycle configurations in log group /aws/sagemaker/NotebookInstances in log stream [notebook-instance-name]/[LifecycleConfigHook]. Lifecycle configuration scripts cannot run for longer than 5 minutes. If a script runs for longer than 5 minutes, it fails and the notebook instance is not created or started. For information about notebook instance lifestyle configurations, see notebook-lifecycle-config.
+     * Creates a lifecycle configuration that you can associate with a notebook instance. A lifecycle configuration is a collection of shell scripts that run when you create or start a notebook instance. Each lifecycle configuration script has a limit of 16384 characters. The value of the $PATH environment variable that is available to both scripts is /sbin:bin:/usr/sbin:/usr/bin. View CloudWatch Logs for notebook instance lifecycle configurations in log group /aws/sagemaker/NotebookInstances in log stream [notebook-instance-name]/[LifecycleConfigHook]. Lifecycle configuration scripts cannot run for longer than 5 minutes. If a script runs for longer than 5 minutes, it fails and the notebook instance is not created or started. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance.
      */
   def createNotebookInstanceLifecycleConfig(
     callback: js.Function2[
@@ -277,14 +482,14 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a lifecycle configuration that you can associate with a notebook instance. A lifecycle configuration is a collection of shell scripts that run when you create or start a notebook instance. Each lifecycle configuration script has a limit of 16384 characters. The value of the $PATH environment variable that is available to both scripts is /sbin:bin:/usr/sbin:/usr/bin. View CloudWatch Logs for notebook instance lifecycle configurations in log group /aws/sagemaker/NotebookInstances in log stream [notebook-instance-name]/[LifecycleConfigHook]. Lifecycle configuration scripts cannot run for longer than 5 minutes. If a script runs for longer than 5 minutes, it fails and the notebook instance is not created or started. For information about notebook instance lifestyle configurations, see notebook-lifecycle-config.
+     * Creates a lifecycle configuration that you can associate with a notebook instance. A lifecycle configuration is a collection of shell scripts that run when you create or start a notebook instance. Each lifecycle configuration script has a limit of 16384 characters. The value of the $PATH environment variable that is available to both scripts is /sbin:bin:/usr/sbin:/usr/bin. View CloudWatch Logs for notebook instance lifecycle configurations in log group /aws/sagemaker/NotebookInstances in log stream [notebook-instance-name]/[LifecycleConfigHook]. Lifecycle configuration scripts cannot run for longer than 5 minutes. If a script runs for longer than 5 minutes, it fails and the notebook instance is not created or started. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance.
      */
   def createNotebookInstanceLifecycleConfig(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateNotebookInstanceLifecycleConfigInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateNotebookInstanceLifecycleConfigOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a lifecycle configuration that you can associate with a notebook instance. A lifecycle configuration is a collection of shell scripts that run when you create or start a notebook instance. Each lifecycle configuration script has a limit of 16384 characters. The value of the $PATH environment variable that is available to both scripts is /sbin:bin:/usr/sbin:/usr/bin. View CloudWatch Logs for notebook instance lifecycle configurations in log group /aws/sagemaker/NotebookInstances in log stream [notebook-instance-name]/[LifecycleConfigHook]. Lifecycle configuration scripts cannot run for longer than 5 minutes. If a script runs for longer than 5 minutes, it fails and the notebook instance is not created or started. For information about notebook instance lifestyle configurations, see notebook-lifecycle-config.
+     * Creates a lifecycle configuration that you can associate with a notebook instance. A lifecycle configuration is a collection of shell scripts that run when you create or start a notebook instance. Each lifecycle configuration script has a limit of 16384 characters. The value of the $PATH environment variable that is available to both scripts is /sbin:bin:/usr/sbin:/usr/bin. View CloudWatch Logs for notebook instance lifecycle configurations in log group /aws/sagemaker/NotebookInstances in log stream [notebook-instance-name]/[LifecycleConfigHook]. Lifecycle configuration scripts cannot run for longer than 5 minutes. If a script runs for longer than 5 minutes, it fails and the notebook instance is not created or started. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance.
      */
   def createNotebookInstanceLifecycleConfig(
     params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateNotebookInstanceLifecycleConfigInput,
@@ -298,14 +503,14 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a URL that you can use to connect to the Jupyter server from a notebook instance. In the Amazon SageMaker console, when you choose Open next to a notebook instance, Amazon SageMaker opens a new tab showing the Jupyter server home page from the notebook instance. The console uses this API to get the URL and show the page. You can restrict access to this API and to the URL that it returns to a list of IP addresses that you specify. To restrict access, attach an IAM policy that denies access to this API unless the call comes from an IP address in the specified list to every AWS Identity and Access Management user, group, or role used to access the notebook instance. Use the NotIpAddress condition operator and the aws:SourceIP condition context key to specify the list of IP addresses that you want to have access to the notebook instance. For more information, see nbi-ip-filter.
+     * Returns a URL that you can use to connect to the Jupyter server from a notebook instance. In the Amazon SageMaker console, when you choose Open next to a notebook instance, Amazon SageMaker opens a new tab showing the Jupyter server home page from the notebook instance. The console uses this API to get the URL and show the page. You can restrict access to this API and to the URL that it returns to a list of IP addresses that you specify. To restrict access, attach an IAM policy that denies access to this API unless the call comes from an IP address in the specified list to every AWS Identity and Access Management user, group, or role used to access the notebook instance. Use the NotIpAddress condition operator and the aws:SourceIP condition context key to specify the list of IP addresses that you want to have access to the notebook instance. For more information, see Limit Access to a Notebook Instance by IP Address.
      */
   def createPresignedNotebookInstanceUrl(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreatePresignedNotebookInstanceUrlOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a URL that you can use to connect to the Jupyter server from a notebook instance. In the Amazon SageMaker console, when you choose Open next to a notebook instance, Amazon SageMaker opens a new tab showing the Jupyter server home page from the notebook instance. The console uses this API to get the URL and show the page. You can restrict access to this API and to the URL that it returns to a list of IP addresses that you specify. To restrict access, attach an IAM policy that denies access to this API unless the call comes from an IP address in the specified list to every AWS Identity and Access Management user, group, or role used to access the notebook instance. Use the NotIpAddress condition operator and the aws:SourceIP condition context key to specify the list of IP addresses that you want to have access to the notebook instance. For more information, see nbi-ip-filter.
+     * Returns a URL that you can use to connect to the Jupyter server from a notebook instance. In the Amazon SageMaker console, when you choose Open next to a notebook instance, Amazon SageMaker opens a new tab showing the Jupyter server home page from the notebook instance. The console uses this API to get the URL and show the page. You can restrict access to this API and to the URL that it returns to a list of IP addresses that you specify. To restrict access, attach an IAM policy that denies access to this API unless the call comes from an IP address in the specified list to every AWS Identity and Access Management user, group, or role used to access the notebook instance. Use the NotIpAddress condition operator and the aws:SourceIP condition context key to specify the list of IP addresses that you want to have access to the notebook instance. For more information, see Limit Access to a Notebook Instance by IP Address.
      */
   def createPresignedNotebookInstanceUrl(
     callback: js.Function2[
@@ -318,14 +523,14 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a URL that you can use to connect to the Jupyter server from a notebook instance. In the Amazon SageMaker console, when you choose Open next to a notebook instance, Amazon SageMaker opens a new tab showing the Jupyter server home page from the notebook instance. The console uses this API to get the URL and show the page. You can restrict access to this API and to the URL that it returns to a list of IP addresses that you specify. To restrict access, attach an IAM policy that denies access to this API unless the call comes from an IP address in the specified list to every AWS Identity and Access Management user, group, or role used to access the notebook instance. Use the NotIpAddress condition operator and the aws:SourceIP condition context key to specify the list of IP addresses that you want to have access to the notebook instance. For more information, see nbi-ip-filter.
+     * Returns a URL that you can use to connect to the Jupyter server from a notebook instance. In the Amazon SageMaker console, when you choose Open next to a notebook instance, Amazon SageMaker opens a new tab showing the Jupyter server home page from the notebook instance. The console uses this API to get the URL and show the page. You can restrict access to this API and to the URL that it returns to a list of IP addresses that you specify. To restrict access, attach an IAM policy that denies access to this API unless the call comes from an IP address in the specified list to every AWS Identity and Access Management user, group, or role used to access the notebook instance. Use the NotIpAddress condition operator and the aws:SourceIP condition context key to specify the list of IP addresses that you want to have access to the notebook instance. For more information, see Limit Access to a Notebook Instance by IP Address.
      */
   def createPresignedNotebookInstanceUrl(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreatePresignedNotebookInstanceUrlInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreatePresignedNotebookInstanceUrlOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a URL that you can use to connect to the Jupyter server from a notebook instance. In the Amazon SageMaker console, when you choose Open next to a notebook instance, Amazon SageMaker opens a new tab showing the Jupyter server home page from the notebook instance. The console uses this API to get the URL and show the page. You can restrict access to this API and to the URL that it returns to a list of IP addresses that you specify. To restrict access, attach an IAM policy that denies access to this API unless the call comes from an IP address in the specified list to every AWS Identity and Access Management user, group, or role used to access the notebook instance. Use the NotIpAddress condition operator and the aws:SourceIP condition context key to specify the list of IP addresses that you want to have access to the notebook instance. For more information, see nbi-ip-filter.
+     * Returns a URL that you can use to connect to the Jupyter server from a notebook instance. In the Amazon SageMaker console, when you choose Open next to a notebook instance, Amazon SageMaker opens a new tab showing the Jupyter server home page from the notebook instance. The console uses this API to get the URL and show the page. You can restrict access to this API and to the URL that it returns to a list of IP addresses that you specify. To restrict access, attach an IAM policy that denies access to this API unless the call comes from an IP address in the specified list to every AWS Identity and Access Management user, group, or role used to access the notebook instance. Use the NotIpAddress condition operator and the aws:SourceIP condition context key to specify the list of IP addresses that you want to have access to the notebook instance. For more information, see Limit Access to a Notebook Instance by IP Address.
      */
   def createPresignedNotebookInstanceUrl(
     params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreatePresignedNotebookInstanceUrlInput,
@@ -421,6 +626,89 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Creates a new work team for labeling your data. A work team is defined by one or more Amazon Cognito user pools. You must first create the user pools before you can create a work team. You cannot create more than 25 work teams in an account and region.
+     */
+  def createWorkteam(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new work team for labeling your data. A work team is defined by one or more Amazon Cognito user pools. You must first create the user pools before you can create a work team. You cannot create more than 25 work teams in an account and region.
+     */
+  def createWorkteam(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new work team for labeling your data. A work team is defined by one or more Amazon Cognito user pools. You must first create the user pools before you can create a work team. You cannot create more than 25 work teams in an account and region.
+     */
+  def createWorkteam(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateWorkteamRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a new work team for labeling your data. A work team is defined by one or more Amazon Cognito user pools. You must first create the user pools before you can create a work team. You cannot create more than 25 work teams in an account and region.
+     */
+  def createWorkteam(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateWorkteamRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Removes the specified algorithm from your account.
+     */
+  def deleteAlgorithm(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Removes the specified algorithm from your account.
+     */
+  def deleteAlgorithm(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Removes the specified algorithm from your account.
+     */
+  def deleteAlgorithm(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteAlgorithmInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Removes the specified algorithm from your account.
+     */
+  def deleteAlgorithm(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteAlgorithmInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes the specified git repository from your account.
+     */
+  def deleteCodeRepository(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes the specified git repository from your account.
+     */
+  def deleteCodeRepository(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes the specified git repository from your account.
+     */
+  def deleteCodeRepository(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes the specified git repository from your account.
+     */
+  def deleteCodeRepository(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteCodeRepositoryInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
      * Deletes an endpoint. Amazon SageMaker frees up all of the resources that were deployed when the endpoint was created.  Amazon SageMaker retires any custom KMS key grants associated with the endpoint, meaning you don't need to use the RevokeGrant API call.
      */
   def deleteEndpoint(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -484,6 +772,27 @@ trait SageMaker
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     * Deletes a model package. A model package is used to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def deleteModelPackage(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a model package. A model package is used to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def deleteModelPackage(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a model package. A model package is used to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def deleteModelPackage(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteModelPackageInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Deletes a model package. A model package is used to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def deleteModelPackage(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteModelPackageInput,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
      *  Deletes an Amazon SageMaker notebook instance. Before you can delete a notebook instance, you must call the StopNotebookInstance API.   When you delete a notebook instance, you lose all of your data. Amazon SageMaker removes the ML compute instance, and deletes the ML storage volume and the network interface associated with the notebook instance.  
      */
   def deleteNotebookInstance(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -526,14 +835,14 @@ trait SageMaker
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-     * Deletes the specified tags from an Amazon SageMaker resource. To list a resource's tags, use the ListTags API. 
+     * Deletes the specified tags from an Amazon SageMaker resource. To list a resource's tags, use the ListTags API.   When you call this API to delete tags from a hyperparameter tuning job, the deleted tags are not removed from training jobs that the hyperparameter tuning job launched before you called this API. 
      */
   def deleteTags(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteTagsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified tags from an Amazon SageMaker resource. To list a resource's tags, use the ListTags API. 
+     * Deletes the specified tags from an Amazon SageMaker resource. To list a resource's tags, use the ListTags API.   When you call this API to delete tags from a hyperparameter tuning job, the deleted tags are not removed from training jobs that the hyperparameter tuning job launched before you called this API. 
      */
   def deleteTags(
     callback: js.Function2[
@@ -546,14 +855,14 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified tags from an Amazon SageMaker resource. To list a resource's tags, use the ListTags API. 
+     * Deletes the specified tags from an Amazon SageMaker resource. To list a resource's tags, use the ListTags API.   When you call this API to delete tags from a hyperparameter tuning job, the deleted tags are not removed from training jobs that the hyperparameter tuning job launched before you called this API. 
      */
   def deleteTags(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteTagsInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteTagsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Deletes the specified tags from an Amazon SageMaker resource. To list a resource's tags, use the ListTags API. 
+     * Deletes the specified tags from an Amazon SageMaker resource. To list a resource's tags, use the ListTags API.   When you call this API to delete tags from a hyperparameter tuning job, the deleted tags are not removed from training jobs that the hyperparameter tuning job launched before you called this API. 
      */
   def deleteTags(
     params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteTagsInput,
@@ -564,6 +873,170 @@ trait SageMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteTagsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes an existing work team. This operation can't be undone.
+     */
+  def deleteWorkteam(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes an existing work team. This operation can't be undone.
+     */
+  def deleteWorkteam(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes an existing work team. This operation can't be undone.
+     */
+  def deleteWorkteam(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteWorkteamRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes an existing work team. This operation can't be undone.
+     */
+  def deleteWorkteam(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteWorkteamRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a description of the specified algorithm that is in your account.
+     */
+  def describeAlgorithm(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeAlgorithmOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a description of the specified algorithm that is in your account.
+     */
+  def describeAlgorithm(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeAlgorithmOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeAlgorithmOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a description of the specified algorithm that is in your account.
+     */
+  def describeAlgorithm(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeAlgorithmInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeAlgorithmOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a description of the specified algorithm that is in your account.
+     */
+  def describeAlgorithm(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeAlgorithmInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeAlgorithmOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeAlgorithmOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets details about the specified git repository.
+     */
+  def describeCodeRepository(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets details about the specified git repository.
+     */
+  def describeCodeRepository(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets details about the specified git repository.
+     */
+  def describeCodeRepository(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets details about the specified git repository.
+     */
+  def describeCodeRepository(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a model compilation job. To create a model compilation job, use CreateCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
+     */
+  def describeCompilationJob(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCompilationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a model compilation job. To create a model compilation job, use CreateCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
+     */
+  def describeCompilationJob(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCompilationJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCompilationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a model compilation job. To create a model compilation job, use CreateCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
+     */
+  def describeCompilationJob(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCompilationJobRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCompilationJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns information about a model compilation job. To create a model compilation job, use CreateCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.
+     */
+  def describeCompilationJob(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCompilationJobRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCompilationJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCompilationJobResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -690,6 +1163,47 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Gets information about a labeling job.
+     */
+  def describeLabelingJob(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeLabelingJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a labeling job.
+     */
+  def describeLabelingJob(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeLabelingJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeLabelingJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a labeling job.
+     */
+  def describeLabelingJob(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeLabelingJobRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeLabelingJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a labeling job.
+     */
+  def describeLabelingJob(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeLabelingJobRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeLabelingJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeLabelingJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Describes a model that you created using the CreateModel API.
      */
   def describeModel(): awsDashSdkLib.libRequestMod.Request[
@@ -728,6 +1242,47 @@ trait SageMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeModelOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a description of the specified model package, which is used to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def describeModelPackage(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeModelPackageOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a description of the specified model package, which is used to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def describeModelPackage(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeModelPackageOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeModelPackageOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a description of the specified model package, which is used to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def describeModelPackage(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeModelPackageInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeModelPackageOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns a description of the specified model package, which is used to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.
+     */
+  def describeModelPackage(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeModelPackageInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeModelPackageOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeModelPackageOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -772,14 +1327,14 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see notebook-lifecycle-config.
+     * Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance.
      */
   def describeNotebookInstanceLifecycleConfig(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeNotebookInstanceLifecycleConfigOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see notebook-lifecycle-config.
+     * Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance.
      */
   def describeNotebookInstanceLifecycleConfig(
     callback: js.Function2[
@@ -792,14 +1347,14 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see notebook-lifecycle-config.
+     * Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance.
      */
   def describeNotebookInstanceLifecycleConfig(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeNotebookInstanceLifecycleConfigInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeNotebookInstanceLifecycleConfigOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see notebook-lifecycle-config.
+     * Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance.
      */
   def describeNotebookInstanceLifecycleConfig(
     params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeNotebookInstanceLifecycleConfigInput,
@@ -810,6 +1365,47 @@ trait SageMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeNotebookInstanceLifecycleConfigOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a work team provided by a vendor. It returns details about the subscription with a vendor in the AWS Marketplace.
+     */
+  def describeSubscribedWorkteam(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeSubscribedWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a work team provided by a vendor. It returns details about the subscription with a vendor in the AWS Marketplace.
+     */
+  def describeSubscribedWorkteam(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeSubscribedWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeSubscribedWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a work team provided by a vendor. It returns details about the subscription with a vendor in the AWS Marketplace.
+     */
+  def describeSubscribedWorkteam(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeSubscribedWorkteamRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeSubscribedWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a work team provided by a vendor. It returns details about the subscription with a vendor in the AWS Marketplace.
+     */
+  def describeSubscribedWorkteam(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeSubscribedWorkteamRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeSubscribedWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeSubscribedWorkteamResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -892,6 +1488,211 @@ trait SageMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeTransformJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a specific work team. You can see information such as the create date, the last updated date, membership information, and the work team's Amazon Resource Name (ARN).
+     */
+  def describeWorkteam(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a specific work team. You can see information such as the create date, the last updated date, membership information, and the work team's Amazon Resource Name (ARN).
+     */
+  def describeWorkteam(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a specific work team. You can see information such as the create date, the last updated date, membership information, and the work team's Amazon Resource Name (ARN).
+     */
+  def describeWorkteam(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeWorkteamRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets information about a specific work team. You can see information such as the create date, the last updated date, membership information, and the work team's Amazon Resource Name (ARN).
+     */
+  def describeWorkteam(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeWorkteamRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns suggestions for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.
+     */
+  def getSearchSuggestions(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.GetSearchSuggestionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns suggestions for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.
+     */
+  def getSearchSuggestions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.GetSearchSuggestionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.GetSearchSuggestionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns suggestions for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.
+     */
+  def getSearchSuggestions(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.GetSearchSuggestionsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.GetSearchSuggestionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Returns suggestions for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.
+     */
+  def getSearchSuggestions(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.GetSearchSuggestionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.GetSearchSuggestionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.GetSearchSuggestionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the machine learning algorithms that have been created.
+     */
+  def listAlgorithms(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListAlgorithmsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the machine learning algorithms that have been created.
+     */
+  def listAlgorithms(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListAlgorithmsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListAlgorithmsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the machine learning algorithms that have been created.
+     */
+  def listAlgorithms(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListAlgorithmsInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListAlgorithmsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the machine learning algorithms that have been created.
+     */
+  def listAlgorithms(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListAlgorithmsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListAlgorithmsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListAlgorithmsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the git repositories in your account.
+     */
+  def listCodeRepositories(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the git repositories in your account.
+     */
+  def listCodeRepositories(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the git repositories in your account.
+     */
+  def listCodeRepositories(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the git repositories in your account.
+     */
+  def listCodeRepositories(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists model compilation jobs that satisfy various filters. To create a model compilation job, use CreateCompilationJob. To get information about a particular model compilation job you have created, use DescribeCompilationJob.
+     */
+  def listCompilationJobs(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCompilationJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists model compilation jobs that satisfy various filters. To create a model compilation job, use CreateCompilationJob. To get information about a particular model compilation job you have created, use DescribeCompilationJob.
+     */
+  def listCompilationJobs(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCompilationJobsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCompilationJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists model compilation jobs that satisfy various filters. To create a model compilation job, use CreateCompilationJob. To get information about a particular model compilation job you have created, use DescribeCompilationJob.
+     */
+  def listCompilationJobs(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCompilationJobsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCompilationJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists model compilation jobs that satisfy various filters. To create a model compilation job, use CreateCompilationJob. To get information about a particular model compilation job you have created, use DescribeCompilationJob.
+     */
+  def listCompilationJobs(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCompilationJobsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCompilationJobsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCompilationJobsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1018,6 +1819,129 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Gets a list of labeling jobs.
+     */
+  def listLabelingJobs(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of labeling jobs.
+     */
+  def listLabelingJobs(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of labeling jobs.
+     */
+  def listLabelingJobs(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of labeling jobs.
+     */
+  def listLabelingJobs(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of labeling jobs assigned to a specified work team.
+     */
+  def listLabelingJobsForWorkteam(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsForWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of labeling jobs assigned to a specified work team.
+     */
+  def listLabelingJobsForWorkteam(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsForWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsForWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of labeling jobs assigned to a specified work team.
+     */
+  def listLabelingJobsForWorkteam(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsForWorkteamRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsForWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of labeling jobs assigned to a specified work team.
+     */
+  def listLabelingJobsForWorkteam(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsForWorkteamRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsForWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListLabelingJobsForWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the model packages that have been created.
+     */
+  def listModelPackages(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListModelPackagesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the model packages that have been created.
+     */
+  def listModelPackages(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListModelPackagesOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListModelPackagesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the model packages that have been created.
+     */
+  def listModelPackages(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListModelPackagesInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListModelPackagesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the model packages that have been created.
+     */
+  def listModelPackages(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListModelPackagesInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListModelPackagesOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListModelPackagesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Lists models created with the CreateModel API.
      */
   def listModels(): awsDashSdkLib.libRequestMod.Request[
@@ -1138,6 +2062,47 @@ trait SageMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListNotebookInstancesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the work teams that you are subscribed to in the AWS Marketplace. The list may be empty if no work team satisfies the filter specified in the NameContains parameter.
+     */
+  def listSubscribedWorkteams(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListSubscribedWorkteamsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the work teams that you are subscribed to in the AWS Marketplace. The list may be empty if no work team satisfies the filter specified in the NameContains parameter.
+     */
+  def listSubscribedWorkteams(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListSubscribedWorkteamsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListSubscribedWorkteamsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the work teams that you are subscribed to in the AWS Marketplace. The list may be empty if no work team satisfies the filter specified in the NameContains parameter.
+     */
+  def listSubscribedWorkteams(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListSubscribedWorkteamsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListSubscribedWorkteamsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of the work teams that you are subscribed to in the AWS Marketplace. The list may be empty if no work team satisfies the filter specified in the NameContains parameter.
+     */
+  def listSubscribedWorkteams(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListSubscribedWorkteamsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListSubscribedWorkteamsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListSubscribedWorkteamsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1307,6 +2272,129 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Gets a list of work teams that you have defined in a region. The list may be empty if no work team satisfies the filter specified in the NameContains parameter.
+     */
+  def listWorkteams(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListWorkteamsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of work teams that you have defined in a region. The list may be empty if no work team satisfies the filter specified in the NameContains parameter.
+     */
+  def listWorkteams(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListWorkteamsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListWorkteamsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of work teams that you have defined in a region. The list may be empty if no work team satisfies the filter specified in the NameContains parameter.
+     */
+  def listWorkteams(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListWorkteamsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListWorkteamsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Gets a list of work teams that you have defined in a region. The list may be empty if no work team satisfies the filter specified in the NameContains parameter.
+     */
+  def listWorkteams(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListWorkteamsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListWorkteamsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListWorkteamsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Renders the UI template so that you can preview the worker's experience. 
+     */
+  def renderUiTemplate(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RenderUiTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Renders the UI template so that you can preview the worker's experience. 
+     */
+  def renderUiTemplate(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RenderUiTemplateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RenderUiTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Renders the UI template so that you can preview the worker's experience. 
+     */
+  def renderUiTemplate(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RenderUiTemplateRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RenderUiTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Renders the UI template so that you can preview the worker's experience. 
+     */
+  def renderUiTemplate(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RenderUiTemplateRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RenderUiTemplateResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.RenderUiTemplateResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Finds Amazon SageMaker resources that match a search query. Matching resource objects are returned as a list of SearchResult objects in the response. The search results can be sorted by any resrouce property in a ascending or descending order. You can query against the following value types: numerical, text, Booleans, and timestamps.
+     */
+  def search(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SearchResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Finds Amazon SageMaker resources that match a search query. Matching resource objects are returned as a list of SearchResult objects in the response. The search results can be sorted by any resrouce property in a ascending or descending order. You can query against the following value types: numerical, text, Booleans, and timestamps.
+     */
+  def search(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SearchResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SearchResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Finds Amazon SageMaker resources that match a search query. Matching resource objects are returned as a list of SearchResult objects in the response. The search results can be sorted by any resrouce property in a ascending or descending order. You can query against the following value types: numerical, text, Booleans, and timestamps.
+     */
+  def search(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SearchRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SearchResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Finds Amazon SageMaker resources that match a search query. Matching resource objects are returned as a list of SearchResult objects in the response. The search results can be sorted by any resrouce property in a ascending or descending order. You can query against the following value types: numerical, text, Booleans, and timestamps.
+     */
+  def search(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SearchRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SearchResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.SearchResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Launches an ML compute instance with the latest version of the libraries and attaches your ML storage volume. After configuring the notebook instance, Amazon SageMaker sets the notebook instance status to InService. A notebook instance's status must be InService before you can connect to your Jupyter notebook. 
      */
   def startNotebookInstance(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1328,6 +2416,27 @@ trait SageMaker
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+     * Stops a model compilation job.  To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal. This gracefully shuts the job down. If the job hasn’t stopped, it sends the SIGKILL signal. When it receives a StopCompilationJob request, Amazon SageMaker changes the CompilationJobSummary$CompilationJobStatus of the job to Stopping. After Amazon SageMaker stops the job, it sets the CompilationJobSummary$CompilationJobStatus to Stopped. 
+     */
+  def stopCompilationJob(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Stops a model compilation job.  To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal. This gracefully shuts the job down. If the job hasn’t stopped, it sends the SIGKILL signal. When it receives a StopCompilationJob request, Amazon SageMaker changes the CompilationJobSummary$CompilationJobStatus of the job to Stopping. After Amazon SageMaker stops the job, it sets the CompilationJobSummary$CompilationJobStatus to Stopped. 
+     */
+  def stopCompilationJob(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Stops a model compilation job.  To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal. This gracefully shuts the job down. If the job hasn’t stopped, it sends the SIGKILL signal. When it receives a StopCompilationJob request, Amazon SageMaker changes the CompilationJobSummary$CompilationJobStatus of the job to Stopping. After Amazon SageMaker stops the job, it sets the CompilationJobSummary$CompilationJobStatus to Stopped. 
+     */
+  def stopCompilationJob(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StopCompilationJobRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Stops a model compilation job.  To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal. This gracefully shuts the job down. If the job hasn’t stopped, it sends the SIGKILL signal. When it receives a StopCompilationJob request, Amazon SageMaker changes the CompilationJobSummary$CompilationJobStatus of the job to Stopping. After Amazon SageMaker stops the job, it sets the CompilationJobSummary$CompilationJobStatus to Stopped. 
+     */
+  def stopCompilationJob(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StopCompilationJobRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
      * Stops a running hyperparameter tuning job and all running training jobs that the tuning job launched. All model artifacts output from the training jobs are stored in Amazon Simple Storage Service (Amazon S3). All data that the training jobs write to Amazon CloudWatch Logs are still available in CloudWatch. After the tuning job moves to the Stopped state, it releases all reserved resources for the tuning job.
      */
   def stopHyperParameterTuningJob(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1346,6 +2455,27 @@ trait SageMaker
      */
   def stopHyperParameterTuningJob(
     params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StopHyperParameterTuningJobRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Stops a running labeling job. A job that is stopped cannot be restarted. Any results obtained before the job is stopped are placed in the Amazon S3 output bucket.
+     */
+  def stopLabelingJob(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Stops a running labeling job. A job that is stopped cannot be restarted. Any results obtained before the job is stopped are placed in the Amazon S3 output bucket.
+     */
+  def stopLabelingJob(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Stops a running labeling job. A job that is stopped cannot be restarted. Any results obtained before the job is stopped are placed in the Amazon S3 output bucket.
+     */
+  def stopLabelingJob(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StopLabelingJobRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Stops a running labeling job. A job that is stopped cannot be restarted. Any results obtained before the job is stopped are placed in the Amazon S3 output bucket.
+     */
+  def stopLabelingJob(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StopLabelingJobRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -1411,6 +2541,47 @@ trait SageMaker
     params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.StopTransformJobRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Updates the specified git repository with the specified values.
+     */
+  def updateCodeRepository(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates the specified git repository with the specified values.
+     */
+  def updateCodeRepository(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates the specified git repository with the specified values.
+     */
+  def updateCodeRepository(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates the specified git repository with the specified values.
+     */
+  def updateCodeRepository(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
   /**
      *  Deploys the new EndpointConfig specified in the request, switches to using newly created endpoint, and then deletes resources provisioned for the endpoint using the previous EndpointConfig (there is no availability loss).  When Amazon SageMaker receives the request, it sets the endpoint status to Updating. After updating the endpoint, it sets the status to InService. To check the status of an endpoint, use the DescribeEndpoint API.   You cannot update an endpoint with the current EndpointConfig. To update an endpoint, you must create a new EndpointConfig. 
      */
@@ -1573,6 +2744,47 @@ trait SageMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateNotebookInstanceLifecycleConfigOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an existing work team with new member definitions or description.
+     */
+  def updateWorkteam(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an existing work team with new member definitions or description.
+     */
+  def updateWorkteam(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an existing work team with new member definitions or description.
+     */
+  def updateWorkteam(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateWorkteamRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateWorkteamResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates an existing work team with new member definitions or description.
+     */
+  def updateWorkteam(
+    params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateWorkteamRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateWorkteamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateWorkteamResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

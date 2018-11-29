@@ -1,7 +1,7 @@
 ```
 /*!-----------------------------------------------------------
  * Copyright (c) Microsoft Corporation. All rights reserved.
- * Type definitions for monaco-editor v0.14.3
+ * Type definitions for monaco-editor v0.15.6
  * Released under the MIT license
 *-----------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------

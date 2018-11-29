@@ -20,7 +20,7 @@ class ColorPickerGridCellBase ()
   var _getClassNames: js.Any = js.native
   /**
        * Render the core of a color cell
-       * @returns {JSX.Element} - Element representing the core of the item
+       * @returns - Element representing the core of the item
        */
   var _onRenderColorOption: js.Any = js.native
   /**

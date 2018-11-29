@@ -23,6 +23,7 @@ trait MapOptions extends js.Object {
   var loadTilesWhileAnimating: js.UndefOr[scala.Boolean] = js.undefined
   var loadTilesWhileInteracting: js.UndefOr[scala.Boolean] = js.undefined
   var logo: js.UndefOr[scala.Boolean | java.lang.String | LogoOptions | stdLib.Element] = js.undefined
+  var moveTolerance: js.UndefOr[scala.Double] = js.undefined
   var overlays: js.UndefOr[
     openlayersLib.openlayersMod.Collection[openlayersLib.openlayersMod.Overlay] | js.Array[openlayersLib.openlayersMod.Overlay]
   ] = js.undefined

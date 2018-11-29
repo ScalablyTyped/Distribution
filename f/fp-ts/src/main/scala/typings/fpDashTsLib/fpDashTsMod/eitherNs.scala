@@ -21,7 +21,7 @@ object eitherNs extends js.Object {
   }
   
   val URI: /* Either */ java.lang.String = js.native
-  val either: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libFoldableMod.Foldable2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libTraversableMod.Traversable2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libExtendMod.Extend2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libChainRecMod.ChainRec2[fpDashTsLib.libEitherMod.URI] = js.native
+  val either: fpDashTsLib.libMonadMod.Monad2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libAltMod.Alt2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libExtendMod.Extend2[fpDashTsLib.libEitherMod.URI] with fpDashTsLib.libChainRecMod.ChainRec2[fpDashTsLib.libEitherMod.URI] = js.native
   val fromNullable: js.Function1[
     /* defaultValue */ js.Any, 
     js.Function1[
@@ -42,11 +42,6 @@ object eitherNs extends js.Object {
       /* fa */ fpDashTsLib.libOptionMod.Option[js.Any], 
       fpDashTsLib.libEitherMod.Either[js.Any, js.Any]
     ]
-  ] = js.native
-  val fromPredicate: js.Function2[
-    /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
-    /* whenFalse */ js.Function1[/* a */ js.Any, js.Any], 
-    js.Function1[/* a */ js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]
   ] = js.native
   val fromRefinement: js.Function2[
     /* refinement */ fpDashTsLib.libFunctionMod.Refinement[js.Any, js.Any], 
@@ -84,12 +79,20 @@ object eitherNs extends js.Object {
   ] = js.native
   val left: js.Function1[/* l */ js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]] = js.native
   val right: js.Function1[/* a */ js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]] = js.native
-  val toError: js.Function1[/* e */ js.Object, stdLib.Error] = js.native
+  val toError: js.Function1[/* e */ js.Any, stdLib.Error] = js.native
   val tryCatch: js.Function2[
     /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Any], 
-    /* onerror */ js.UndefOr[js.Function1[/* e */ js.Object, stdLib.Error]], 
+    /* onerror */ js.UndefOr[js.Function1[/* e */ js.Any, stdLib.Error]], 
     fpDashTsLib.libEitherMod.Either[stdLib.Error, js.Any]
   ] = js.native
+  val tryCatch2v: js.Function2[
+    /* f */ fpDashTsLib.libFunctionMod.Lazy[js.Any], 
+    /* onerror */ js.Function1[/* e */ js.Any, js.Any], 
+    fpDashTsLib.libEitherMod.Either[js.Any, js.Any]
+  ] = js.native
+  def fromPredicate[L, A](predicate: fpDashTsLib.libFunctionMod.Predicate[A], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[L, A]] = js.native
+  @JSName("fromPredicate")
+  def fromPredicate_LABA[L, A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[L, B]] = js.native
   def getCompactable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libCompactableMod.Compactable2C[fpDashTsLib.libEitherMod.URI, L] = js.native
   def getFilterable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libFilterableMod.Filterable2C[fpDashTsLib.libEitherMod.URI, L] = js.native
   def getWitherable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libWitherableMod.Witherable2C[fpDashTsLib.libEitherMod.URI, L] = js.native

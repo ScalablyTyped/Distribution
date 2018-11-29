@@ -13,7 +13,7 @@ class Spritesheet protected () extends js.Object {
   var _batchIndex: scala.Double = js.native
   var _frameKeys: java.lang.String = js.native
   var _frames: js.Any = js.native
-  var animations: ScalablyTyped.runtime.StringDictionary[Texture] = js.native
+  var animations: ScalablyTyped.runtime.StringDictionary[js.Array[Texture]] = js.native
   var baseTexture: BaseTexture = js.native
   var data: js.Any = js.native
   var resolution: scala.Double = js.native

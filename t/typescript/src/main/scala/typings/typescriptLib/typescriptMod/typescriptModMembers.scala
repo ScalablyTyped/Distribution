@@ -26,7 +26,7 @@ object typescriptModMembers extends js.Object {
   ] = js.native
   /** The version of the TypeScript compiler release */
   val version: java.lang.String = js.native
-  val versionMajorMinor: /* 3.1 */ java.lang.String = js.native
+  val versionMajorMinor: /* 3.2 */ java.lang.String = js.native
   /**
        * Adds an EmitHelper to a node.
        */
@@ -65,6 +65,14 @@ object typescriptModMembers extends js.Object {
     compilerOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions,
     host: typescriptLib.typescriptMod.tsNs.ModuleResolutionHost,
     cache: typescriptLib.typescriptMod.tsNs.NonRelativeModuleNameResolutionCache
+  ): typescriptLib.typescriptMod.tsNs.ResolvedModuleWithFailedLookupLocations = js.native
+  def classicNameResolver(
+    moduleName: java.lang.String,
+    containingFile: java.lang.String,
+    compilerOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    host: typescriptLib.typescriptMod.tsNs.ModuleResolutionHost,
+    cache: typescriptLib.typescriptMod.tsNs.NonRelativeModuleNameResolutionCache,
+    redirectedReference: typescriptLib.typescriptMod.tsNs.ResolvedProjectReference
   ): typescriptLib.typescriptMod.tsNs.ResolvedModuleWithFailedLookupLocations = js.native
   /**
        * Called to merge all the changes that occurred across several versions of a script snapshot
@@ -373,6 +381,7 @@ object typescriptModMembers extends js.Object {
     right: typescriptLib.typescriptMod.tsNs.Expression
   ): typescriptLib.typescriptMod.tsNs.DestructuringAssignment = js.native
   def createAwait(expression: typescriptLib.typescriptMod.tsNs.Expression): typescriptLib.typescriptMod.tsNs.AwaitExpression = js.native
+  def createBigIntLiteral(value: java.lang.String): typescriptLib.typescriptMod.tsNs.BigIntLiteral = js.native
   def createBinary(
     left: typescriptLib.typescriptMod.tsNs.Expression,
     operator: typescriptLib.typescriptMod.tsNs.BinaryOperatorToken,
@@ -1508,6 +1517,7 @@ object typescriptModMembers extends js.Object {
   def createLiteral(value: typescriptLib.typescriptMod.tsNs.NoSubstitutionTemplateLiteral): typescriptLib.typescriptMod.tsNs.StringLiteral = js.native
   /** If a node is passed, creates a string literal whose source text is read from a source node during emit. */
   def createLiteral(value: typescriptLib.typescriptMod.tsNs.NumericLiteral): typescriptLib.typescriptMod.tsNs.StringLiteral = js.native
+  def createLiteral(value: typescriptLib.typescriptMod.tsNs.PseudoBigInt): typescriptLib.typescriptMod.tsNs.NumericLiteral = js.native
   /** If a node is passed, creates a string literal whose source text is read from a source node during emit. */
   def createLiteral(value: typescriptLib.typescriptMod.tsNs.StringLiteral): typescriptLib.typescriptMod.tsNs.StringLiteral = js.native
   def createLiteralTypeNode(literal: typescriptLib.typescriptMod.tsNs.BooleanLiteral): typescriptLib.typescriptMod.tsNs.LiteralTypeNode = js.native
@@ -1519,6 +1529,8 @@ object typescriptModMembers extends js.Object {
   def createLiteral_PrimaryExpression(value: scala.Boolean): typescriptLib.typescriptMod.tsNs.PrimaryExpression = js.native
   @JSName("createLiteral")
   def createLiteral_PrimaryExpression(value: scala.Double): typescriptLib.typescriptMod.tsNs.PrimaryExpression = js.native
+  @JSName("createLiteral")
+  def createLiteral_PrimaryExpression(value: typescriptLib.typescriptMod.tsNs.PseudoBigInt): typescriptLib.typescriptMod.tsNs.PrimaryExpression = js.native
   def createLogicalAnd(
     left: typescriptLib.typescriptMod.tsNs.Expression,
     right: typescriptLib.typescriptMod.tsNs.Expression
@@ -3340,6 +3352,16 @@ object typescriptModMembers extends js.Object {
     diagnostics: js.Array[typescriptLib.typescriptMod.tsNs.Diagnostic],
     host: typescriptLib.typescriptMod.tsNs.FormatDiagnosticsHost
   ): java.lang.String = js.native
+  def generateTypesForGlobal(
+    name: java.lang.String,
+    globalValue: js.Any,
+    formatSettings: typescriptLib.typescriptMod.tsNs.FormatCodeSettings
+  ): java.lang.String = js.native
+  def generateTypesForModule(
+    name: java.lang.String,
+    moduleValue: js.Any,
+    formatSettings: typescriptLib.typescriptMod.tsNs.FormatCodeSettings
+  ): java.lang.String = js.native
   /** Gets all JSDoc tags of a specified kind, or undefined if not present. */
   def getAllJSDocTagsOfKind(node: typescriptLib.typescriptMod.tsNs.Node, kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): js.Array[typescriptLib.typescriptMod.tsNs.JSDocTag] = js.native
   /**
@@ -3370,6 +3392,8 @@ object typescriptModMembers extends js.Object {
        */
   def getConstantValue(node: typescriptLib.typescriptMod.tsNs.PropertyAccessExpression): js.UndefOr[java.lang.String | scala.Double] = js.native
   def getDefaultCompilerOptions(): typescriptLib.typescriptMod.tsNs.CompilerOptions = js.native
+  def getDefaultFormatCodeSettings(): typescriptLib.typescriptMod.tsNs.FormatCodeSettings = js.native
+  def getDefaultFormatCodeSettings(newLineCharacter: java.lang.String): typescriptLib.typescriptMod.tsNs.FormatCodeSettings = js.native
   def getDefaultLibFileName(options: typescriptLib.typescriptMod.tsNs.CompilerOptions): java.lang.String = js.native
   /**
        * Get the path of the default library files (lib.d.ts) as distributed with the typescript
@@ -3589,6 +3613,7 @@ object typescriptModMembers extends js.Object {
   def isAsExpression(node: typescriptLib.typescriptMod.tsNs.Node): /* is AsExpression */scala.Boolean = js.native
   def isAssertionExpression(node: typescriptLib.typescriptMod.tsNs.Node): /* is AssertionExpression */scala.Boolean = js.native
   def isAwaitExpression(node: typescriptLib.typescriptMod.tsNs.Node): /* is AwaitExpression */scala.Boolean = js.native
+  def isBigIntLiteral(node: typescriptLib.typescriptMod.tsNs.Node): /* is BigIntLiteral */scala.Boolean = js.native
   def isBinaryExpression(node: typescriptLib.typescriptMod.tsNs.Node): /* is BinaryExpression */scala.Boolean = js.native
   def isBindingElement(node: typescriptLib.typescriptMod.tsNs.Node): /* is BindingElement */scala.Boolean = js.native
   def isBindingName(node: typescriptLib.typescriptMod.tsNs.Node): /* is BindingName */scala.Boolean = js.native
@@ -3656,6 +3681,7 @@ object typescriptModMembers extends js.Object {
   def isImportClause(node: typescriptLib.typescriptMod.tsNs.Node): /* is ImportClause */scala.Boolean = js.native
   def isImportDeclaration(node: typescriptLib.typescriptMod.tsNs.Node): /* is ImportDeclaration */scala.Boolean = js.native
   def isImportEqualsDeclaration(node: typescriptLib.typescriptMod.tsNs.Node): /* is ImportEqualsDeclaration */scala.Boolean = js.native
+  def isImportOrExportSpecifier(node: typescriptLib.typescriptMod.tsNs.Node): scala.Boolean = js.native
   def isImportSpecifier(node: typescriptLib.typescriptMod.tsNs.Node): /* is ImportSpecifier */scala.Boolean = js.native
   def isImportTypeNode(node: typescriptLib.typescriptMod.tsNs.Node): /* is ImportTypeNode */scala.Boolean = js.native
   def isIndexSignatureDeclaration(node: typescriptLib.typescriptMod.tsNs.Node): /* is IndexSignatureDeclaration */scala.Boolean = js.native
@@ -3831,6 +3857,14 @@ object typescriptModMembers extends js.Object {
     compilerOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions,
     host: typescriptLib.typescriptMod.tsNs.ModuleResolutionHost,
     cache: typescriptLib.typescriptMod.tsNs.ModuleResolutionCache
+  ): typescriptLib.typescriptMod.tsNs.ResolvedModuleWithFailedLookupLocations = js.native
+  def nodeModuleNameResolver(
+    moduleName: java.lang.String,
+    containingFile: java.lang.String,
+    compilerOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    host: typescriptLib.typescriptMod.tsNs.ModuleResolutionHost,
+    cache: typescriptLib.typescriptMod.tsNs.ModuleResolutionCache,
+    redirectedReference: typescriptLib.typescriptMod.tsNs.ResolvedProjectReference
   ): typescriptLib.typescriptMod.tsNs.ResolvedModuleWithFailedLookupLocations = js.native
   def parseCommandLine(commandLine: js.Array[java.lang.String]): typescriptLib.typescriptMod.tsNs.ParsedCommandLine = js.native
   def parseCommandLine(
@@ -4056,6 +4090,14 @@ object typescriptModMembers extends js.Object {
     host: typescriptLib.typescriptMod.tsNs.ModuleResolutionHost,
     cache: typescriptLib.typescriptMod.tsNs.ModuleResolutionCache
   ): typescriptLib.typescriptMod.tsNs.ResolvedModuleWithFailedLookupLocations = js.native
+  def resolveModuleName(
+    moduleName: java.lang.String,
+    containingFile: java.lang.String,
+    compilerOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    host: typescriptLib.typescriptMod.tsNs.ModuleResolutionHost,
+    cache: typescriptLib.typescriptMod.tsNs.ModuleResolutionCache,
+    redirectedReference: typescriptLib.typescriptMod.tsNs.ResolvedProjectReference
+  ): typescriptLib.typescriptMod.tsNs.ResolvedModuleWithFailedLookupLocations = js.native
   def resolveModuleNameFromCache(
     moduleName: java.lang.String,
     containingFile: java.lang.String,
@@ -4089,9 +4131,33 @@ object typescriptModMembers extends js.Object {
        */
   def resolveTypeReferenceDirective(
     typeReferenceDirectiveName: java.lang.String,
+    containingFile: java.lang.String,
+    options: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    host: typescriptLib.typescriptMod.tsNs.ModuleResolutionHost,
+    redirectedReference: typescriptLib.typescriptMod.tsNs.ResolvedProjectReference
+  ): typescriptLib.typescriptMod.tsNs.ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+  /**
+       * @param {string | undefined} containingFile - file that contains type reference directive, can be undefined if containing file is unknown.
+       * This is possible in case if resolution is performed for directives specified via 'types' parameter. In this case initial path for secondary lookups
+       * is assumed to be the same as root directory of the project.
+       */
+  def resolveTypeReferenceDirective(
+    typeReferenceDirectiveName: java.lang.String,
     containingFile: js.UndefOr[scala.Nothing],
     options: typescriptLib.typescriptMod.tsNs.CompilerOptions,
     host: typescriptLib.typescriptMod.tsNs.ModuleResolutionHost
+  ): typescriptLib.typescriptMod.tsNs.ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+  /**
+       * @param {string | undefined} containingFile - file that contains type reference directive, can be undefined if containing file is unknown.
+       * This is possible in case if resolution is performed for directives specified via 'types' parameter. In this case initial path for secondary lookups
+       * is assumed to be the same as root directory of the project.
+       */
+  def resolveTypeReferenceDirective(
+    typeReferenceDirectiveName: java.lang.String,
+    containingFile: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.tsNs.CompilerOptions,
+    host: typescriptLib.typescriptMod.tsNs.ModuleResolutionHost,
+    redirectedReference: typescriptLib.typescriptMod.tsNs.ResolvedProjectReference
   ): typescriptLib.typescriptMod.tsNs.ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   /**
        * Sets a custom text range to use when emitting comments.
@@ -4147,7 +4213,7 @@ object typescriptModMembers extends js.Object {
   ): T = js.native
   def skipPartiallyEmittedExpressions(node: typescriptLib.typescriptMod.tsNs.Expression): typescriptLib.typescriptMod.tsNs.Expression = js.native
   def skipPartiallyEmittedExpressions(node: typescriptLib.typescriptMod.tsNs.Node): typescriptLib.typescriptMod.tsNs.Node = js.native
-  def sortAndDeduplicateDiagnostics[T /* <: typescriptLib.typescriptMod.tsNs.Diagnostic */](diagnostics: js.Array[T]): js.Array[T] = js.native
+  def sortAndDeduplicateDiagnostics[T /* <: typescriptLib.typescriptMod.tsNs.Diagnostic */](diagnostics: js.Array[T]): typescriptLib.typescriptMod.tsNs.SortedReadonlyArray[T] = js.native
   def symbolName(symbol: typescriptLib.typescriptMod.tsNs.Symbol): java.lang.String = js.native
   def textChangeRangeIsUnchanged(range: typescriptLib.typescriptMod.tsNs.TextChangeRange): scala.Boolean = js.native
   def textChangeRangeNewSpan(range: typescriptLib.typescriptMod.tsNs.TextChangeRange): typescriptLib.typescriptMod.tsNs.TextSpan = js.native

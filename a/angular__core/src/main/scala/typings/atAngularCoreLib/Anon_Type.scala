@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Type[T] extends js.Object {
   /** A factory for creating a pipe instance. */
-  var factory: js.Function0[T]
+  var factory: js.Function1[/* t */ atAngularCoreLib.srcTypeMod.Type[T] | scala.Null, T]
   /** Name of the pipe. Used for matching pipes in template to pipe defs. */
   var name: java.lang.String
   /** Whether the pipe is pure. */

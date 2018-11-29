@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "easeljs"
-version := "1.0.0-dt-20181120Z-7d56af"
+version := "1.0.0-dt-20181120Z-96f467"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "createjs-lib" % "0.0-unknown-dt-20180910Z-904c85",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "com.scalablytyped" %%% "tweenjs" % "1.0.2-dt-20180910Z-50a262",
+  "com.scalablytyped" %%% "createjs-lib" % "0.0-unknown-dt-20180910Z-826474",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
+  "com.scalablytyped" %%% "tweenjs" % "1.0.2-dt-20180910Z-28b45b",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -28,6 +28,10 @@ object NodeBuilderFlags extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.NodeBuilderFlags
   
   @js.native
+  sealed trait AllowNodeModulesRelativePaths
+    extends typescriptLib.typescriptMod.tsNs.NodeBuilderFlags
+  
+  @js.native
   sealed trait AllowQualifedNameInPlaceOfIdentifier
     extends typescriptLib.typescriptMod.tsNs.NodeBuilderFlags
   

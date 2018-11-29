@@ -155,14 +155,14 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about one or more instance that are part of a deployment group.
+     *   This method works, but is considered deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
      */
   def batchGetDeploymentInstances(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentInstancesOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about one or more instance that are part of a deployment group.
+     *   This method works, but is considered deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
      */
   def batchGetDeploymentInstances(
     callback: js.Function2[
@@ -175,14 +175,14 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about one or more instance that are part of a deployment group.
+     *   This method works, but is considered deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
      */
   def batchGetDeploymentInstances(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentInstancesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentInstancesOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about one or more instance that are part of a deployment group.
+     *   This method works, but is considered deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
      */
   def batchGetDeploymentInstances(
     params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentInstancesInput,
@@ -193,6 +193,47 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentInstancesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises - Information about EC2 instance targets.     AWS Lambda - Information about Lambda functions targets.     Amazon ECS - Information about ECS service targets.   
+     */
+  def batchGetDeploymentTargets(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises - Information about EC2 instance targets.     AWS Lambda - Information about Lambda functions targets.     Amazon ECS - Information about ECS service targets.   
+     */
+  def batchGetDeploymentTargets(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises - Information about EC2 instance targets.     AWS Lambda - Information about Lambda functions targets.     Amazon ECS - Information about ECS service targets.   
+     */
+  def batchGetDeploymentTargets(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises - Information about EC2 instance targets.     AWS Lambda - Information about Lambda functions targets.     Amazon ECS - Information about ECS service targets.   
+     */
+  def batchGetDeploymentTargets(
+    params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -381,14 +422,14 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment configuration.
+     *  Creates a deployment configuration. 
      */
   def createDeploymentConfig(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.CreateDeploymentConfigOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment configuration.
+     *  Creates a deployment configuration. 
      */
   def createDeploymentConfig(
     callback: js.Function2[
@@ -401,14 +442,14 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment configuration.
+     *  Creates a deployment configuration. 
      */
   def createDeploymentConfig(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.CreateDeploymentConfigInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.CreateDeploymentConfigOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Creates a deployment configuration.
+     *  Creates a deployment configuration. 
      */
   def createDeploymentConfig(
     params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.CreateDeploymentConfigInput,
@@ -854,14 +895,55 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about an on-premises instance.
+     *  Returns information about a deployment target. 
+     */
+  def getDeploymentTarget(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentTargetOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns information about a deployment target. 
+     */
+  def getDeploymentTarget(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentTargetOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentTargetOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns information about a deployment target. 
+     */
+  def getDeploymentTarget(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentTargetInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentTargetOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns information about a deployment target. 
+     */
+  def getDeploymentTarget(
+    params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentTargetInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentTargetOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetDeploymentTargetOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Gets information about an on-premises instance. 
      */
   def getOnPremisesInstance(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetOnPremisesInstanceOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about an on-premises instance.
+     *  Gets information about an on-premises instance. 
      */
   def getOnPremisesInstance(
     callback: js.Function2[
@@ -874,14 +956,14 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about an on-premises instance.
+     *  Gets information about an on-premises instance. 
      */
   def getOnPremisesInstance(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetOnPremisesInstanceInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetOnPremisesInstanceOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about an on-premises instance.
+     *  Gets information about an on-premises instance. 
      */
   def getOnPremisesInstance(
     params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.GetOnPremisesInstanceInput,
@@ -1059,14 +1141,14 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the instance for a deployment associated with the applicable IAM user or AWS account.
+     *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the applicable IAM user or AWS account. 
      */
   def listDeploymentInstances(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentInstancesOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the instance for a deployment associated with the applicable IAM user or AWS account.
+     *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the applicable IAM user or AWS account. 
      */
   def listDeploymentInstances(
     callback: js.Function2[
@@ -1079,14 +1161,14 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the instance for a deployment associated with the applicable IAM user or AWS account.
+     *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the applicable IAM user or AWS account. 
      */
   def listDeploymentInstances(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentInstancesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentInstancesOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Lists the instance for a deployment associated with the applicable IAM user or AWS account.
+     *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the applicable IAM user or AWS account. 
      */
   def listDeploymentInstances(
     params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentInstancesInput,
@@ -1097,6 +1179,47 @@ trait CodeDeploy
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentInstancesOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns an array of target IDs that are associated a deployment. 
+     */
+  def listDeploymentTargets(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentTargetsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns an array of target IDs that are associated a deployment. 
+     */
+  def listDeploymentTargets(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentTargetsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentTargetsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns an array of target IDs that are associated a deployment. 
+     */
+  def listDeploymentTargets(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentTargetsInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentTargetsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns an array of target IDs that are associated a deployment. 
+     */
+  def listDeploymentTargets(
+    params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentTargetsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentTargetsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentTargetsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1223,14 +1346,14 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed.
+     *  Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed. 
      */
   def putLifecycleEventHookExecutionStatus(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.PutLifecycleEventHookExecutionStatusOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed.
+     *  Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed. 
      */
   def putLifecycleEventHookExecutionStatus(
     callback: js.Function2[
@@ -1243,14 +1366,14 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed.
+     *  Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed. 
      */
   def putLifecycleEventHookExecutionStatus(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.PutLifecycleEventHookExecutionStatusInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.PutLifecycleEventHookExecutionStatusOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed.
+     *  Sets the result of a Lambda validation function. The function validates one or both lifecycle events (BeforeAllowTraffic and AfterAllowTraffic) and returns Succeeded or Failed. 
      */
   def putLifecycleEventHookExecutionStatus(
     params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.PutLifecycleEventHookExecutionStatusInput,

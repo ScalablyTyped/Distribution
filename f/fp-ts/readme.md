@@ -1,6 +1,6 @@
 ```
 /**
- * A join-semilattice (or upper semilattice) is a semilattice whose operation is called "join", and which can be thought
+ * A join-semilattice (or upper semilattice) is a semilattice whose operation is called `join`, and which can be thought
  * of as a least upper bound.
  *
  * A `JoinSemilattice` must satisfy the following laws:
@@ -13,7 +13,7 @@
  * @since 1.4.0
  */
 /**
- * A meet-semilattice (or lower semilattice) is a semilattice whose operation is called "meet", and which can be thought
+ * A meet-semilattice (or lower semilattice) is a semilattice whose operation is called `meet`, and which can be thought
  * of as a greatest lower bound.
  *
  * A `MeetSemilattice` must satisfy the following laws:
@@ -42,8 +42,8 @@
  *   - Right distributivity: `(a + b) * c = (a * c) + (b * c)`
  * - Annihilation: `zero * a = a * zero = zero`
  *
- * **Note:** The `Number` and `Int` types are not fully law abiding members of this class hierarchy due to the potential
- * for arithmetic overflows, and in the case of `Number`, the presence of `NaN` and `Infinity` values. The behaviour is
+ * **Note:** The `number` type is not fully law abiding members of this class hierarchy due to the potential
+ * for arithmetic overflows, and the presence of `NaN` and `Infinity` values. The behaviour is
  * unspecified in these cases.
  *
  * @typeclass

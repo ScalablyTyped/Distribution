@@ -18,8 +18,7 @@ class BaseFloatingPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   var _onValidateInput: js.Any = js.native
   var currentPromise: stdLib.PromiseLike[_] = js.native
   val currentSelectedSuggestionIndex: scala.Double = js.native
-  @JSName("root")
-  var root_Original: officeDashUiDashFabricDashReactLib.Anon_Component = js.native
+  var root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
   var selection: stdLib.Selection = js.native
   var suggestionStore: officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerSuggestionsSuggestionsStoreMod.SuggestionsStore[T] = js.native
   var suggestionsControl: officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionsControl[T] = js.native
@@ -44,8 +43,6 @@ class BaseFloatingPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
   /* protected */ def onSuggestionClick(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], item: T, index: scala.Double): scala.Unit = js.native
   /* protected */ def onSuggestionRemove(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement], item: T, index: scala.Double): scala.Unit = js.native
   /* protected */ def renderSuggestions(): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
-  /* protected */ def root(): scala.Unit = js.native
-  /* protected */ def root(component: reactLib.HTMLDivElement): scala.Unit = js.native
   /* protected */ def updateSuggestionWithZeroState(): scala.Unit = js.native
   def updateSuggestions(suggestions: js.Array[T]): scala.Unit = js.native
   def updateSuggestions(suggestions: js.Array[T], forceUpdate: scala.Boolean): scala.Unit = js.native

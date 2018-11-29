@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait UnderlyingSink extends js.Object {
-  var abort: js.UndefOr[WritableStreamErrorCallback] = js.native
-  var close: js.UndefOr[WritableStreamDefaultControllerCallback] = js.native
-  @JSName("start")
-  var start_Original: WritableStreamDefaultControllerCallback = js.native
-  var write: js.UndefOr[WritableStreamChunkCallback] = js.native
-  def start(controller: WritableStreamDefaultController): scala.Unit = js.native
+
+trait UnderlyingSink[W] extends js.Object {
+  var abort: js.UndefOr[WritableStreamErrorCallback] = js.undefined
+  var close: js.UndefOr[WritableStreamDefaultControllerCloseCallback] = js.undefined
+  var start: js.UndefOr[WritableStreamDefaultControllerStartCallback] = js.undefined
+  var `type`: js.UndefOr[scala.Nothing] = js.undefined
+  var write: js.UndefOr[WritableStreamDefaultControllerWriteCallback[W]] = js.undefined
 }
 

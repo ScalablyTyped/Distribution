@@ -126,6 +126,10 @@ object SSMNs extends js.Object {
          */
     var AssociationVersion: js.UndefOr[AssociationVersion] = js.undefined
     /**
+         * The severity level that is assigned to the association.
+         */
+    var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
+    /**
          * The date when the association was made.
          */
     var Date: js.UndefOr[DateTime] = js.undefined
@@ -358,6 +362,10 @@ object SSMNs extends js.Object {
          */
     var AssociationVersion: js.UndefOr[AssociationVersion] = js.undefined
     /**
+         * The severity level that is assigned to the association.
+         */
+    var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
+    /**
          * The date the association version was created.
          */
     var CreatedDate: js.UndefOr[DateTime] = js.undefined
@@ -393,6 +401,47 @@ object SSMNs extends js.Object {
          * The targets specified for the association when the association version was created. 
          */
     var Targets: js.UndefOr[Targets] = js.undefined
+  }
+  
+  
+  trait AttachmentContent extends js.Object {
+    /**
+         * The cryptographic hash value of the document content.
+         */
+    var Hash: js.UndefOr[AttachmentHash] = js.undefined
+    /**
+         * The hash algorithm used to calculate the hash value.
+         */
+    var HashType: js.UndefOr[AttachmentHashType] = js.undefined
+    /**
+         * The name of an attachment.
+         */
+    var Name: js.UndefOr[AttachmentName] = js.undefined
+    /**
+         * The size of an attachment in bytes.
+         */
+    var Size: js.UndefOr[ContentLength] = js.undefined
+    /**
+         * The URL location of the attachment content.
+         */
+    var Url: js.UndefOr[AttachmentUrl] = js.undefined
+  }
+  
+  
+  trait AttachmentInformation extends js.Object {
+    var Name: js.UndefOr[AttachmentName] = js.undefined
+  }
+  
+  
+  trait AttachmentsSource extends js.Object {
+    /**
+         * The key of a key and value pair that identifies the location of an attachment to a document.
+         */
+    var Key: js.UndefOr[AttachmentsSourceKey] = js.undefined
+    /**
+         * The URL of the location of a document attachment, such as the URL of an Amazon S3 bucket.
+         */
+    var Values: js.UndefOr[AttachmentsSourceValues] = js.undefined
   }
   
   
@@ -462,6 +511,10 @@ object SSMNs extends js.Object {
          */
     var ParentAutomationExecutionId: js.UndefOr[AutomationExecutionId] = js.undefined
     /**
+         * An aggregate of step execution statuses displayed in the AWS Console for a multi-Region and multi-account Automation execution.
+         */
+    var ProgressCounters: js.UndefOr[ProgressCounters] = js.undefined
+    /**
          * A list of resolved targets in the rate control execution.
          */
     var ResolvedTargets: js.UndefOr[ResolvedTargets] = js.undefined
@@ -477,6 +530,10 @@ object SSMNs extends js.Object {
          * The target of the execution.
          */
     var Target: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The combination of AWS Regions and/or AWS accounts where you want to execute the Automation.
+         */
+    var TargetLocations: js.UndefOr[TargetLocations] = js.undefined
     /**
          * The specified key-value mapping of document parameters to target resources.
          */
@@ -513,6 +570,10 @@ object SSMNs extends js.Object {
          * The status of the execution. Valid values include: Running, Succeeded, Failed, Timed out, or Cancelled.
          */
     var AutomationExecutionStatus: js.UndefOr[AutomationExecutionStatus] = js.undefined
+    /**
+         * Use this filter with DescribeAutomationExecution. Specify either Local of CrossAccount. CrossAccount is an Automation that executes in multiple AWS Regions and accounts. For more information, see Concurrently Executing Automations in Multiple AWS Regions and Accounts in the AWS Systems Manager User Guide. 
+         */
+    var AutomationType: js.UndefOr[AutomationType] = js.undefined
     /**
          * The action of the currently executing step.
          */
@@ -749,7 +810,7 @@ object SSMNs extends js.Object {
          */
     var key: CommandFilterKey
     /**
-         * The filter value. Valid values for each filter key are as follows:   InvokedAfter: A timestamp to limit your results. For example, specify 2018-07-07T00:00:00Z to see results occurring July 7, 2018, and later.   InvokedBefore: A timestamp to limit your results. For example, specify 2018-07-07T00:00:00Z to see results before July 7, 2018.   Status: Specify a valid command status to see a list of all command executions with that status. Status values you can specify include:   Pending   InProgress   Success   Cancelled   Failed   TimedOut   Cancelling      DocumentName: The name of the SSM document for which you want to see command results. For example, specify AWS-RunPatchBaseline to see command executions that used this SSM document to perform security patching operations on instances.    ExecutionStage: An enum whose value can be either Executing or Complete.   Specify Executing to see a list of command executions that are currently still running.   Specify Complete to see a list of command exeuctions that have already completed.    
+         * The filter value. Valid values for each filter key are as follows:    InvokedAfter: Specify a timestamp to limit your results. For example, specify 2018-07-07T00:00:00Z to see a list of command executions occurring July 7, 2018, and later.    InvokedBefore: Specify a timestamp to limit your results. For example, specify 2018-07-07T00:00:00Z to see a list of command executions from before July 7, 2018.    Status: Specify a valid command status to see a list of all command executions with that status. Status values you can specify include:    Pending     InProgress     Success     Cancelled     Failed     TimedOut     Cancelling       DocumentName: Specify name of the SSM document for which you want to see command execution results. For example, specify AWS-RunPatchBaseline to see command executions that used this SSM document to perform security patching operations on instances.     ExecutionStage: Specify one of the following values:    Executing: Returns a list of command executions that are currently still running.    Complete: Returns a list of command executions that have already completed.     
          */
     var value: CommandFilterValue
   }
@@ -1050,6 +1111,10 @@ object SSMNs extends js.Object {
          */
     var AssociationName: js.UndefOr[AssociationName] = js.undefined
     /**
+         * The severity level to assign to the association.
+         */
+    var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
+    /**
          * The document version.
          */
     var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
@@ -1106,6 +1171,10 @@ object SSMNs extends js.Object {
          */
     var AssociationName: js.UndefOr[AssociationName] = js.undefined
     /**
+         * The severity level to assign to the association.
+         */
+    var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
+    /**
          * The document version you want to associate with the target(s). Can be a specific version or the default version.
          */
     var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
@@ -1154,6 +1223,10 @@ object SSMNs extends js.Object {
   
   trait CreateDocumentRequest extends js.Object {
     /**
+         * A list of key and value pairs that describe attachments to a version of a document.
+         */
+    var Attachments: js.UndefOr[AttachmentsSourceList] = js.undefined
+    /**
          * A valid JSON or YAML string.
          */
     var Content: DocumentContent
@@ -1162,7 +1235,7 @@ object SSMNs extends js.Object {
          */
     var DocumentFormat: js.UndefOr[DocumentFormat] = js.undefined
     /**
-         * The type of document to create. Valid document types include: Policy, Automation, and Command.
+         * The type of document to create. Valid document types include: Command, Policy, Automation, Session, and Package.
          */
     var DocumentType: js.UndefOr[DocumentType] = js.undefined
     /**
@@ -1173,6 +1246,10 @@ object SSMNs extends js.Object {
          * Specify a target type to define the kinds of resources the document can run on. For example, to run a document on EC2 instances, specify the following value: /AWS::EC2::Instance. If you specify a value of '/' the document can run on all types of resources. If you don't specify a value, the document can't run on any resources. For a list of valid resource types, see AWS Resource Types Reference in the AWS CloudFormation User Guide. 
          */
     var TargetType: js.UndefOr[TargetType] = js.undefined
+    /**
+         * An optional field specifying the version of the artifact you are creating with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
+         */
+    var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
   }
   
   
@@ -1806,6 +1883,10 @@ object SSMNs extends js.Object {
          * The name of the Systems Manager document.
          */
     var Name: DocumentARN
+    /**
+         * An optional field specifying the version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
+         */
+    var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
   }
   
   
@@ -2483,6 +2564,10 @@ object SSMNs extends js.Object {
          */
     var DefaultVersion: js.UndefOr[DocumentVersion] = js.undefined
     /**
+         * The default version of the artifact associated with the document.
+         */
+    var DefaultVersionName: js.UndefOr[DocumentVersionName] = js.undefined
+    /**
          * The name of the document.
          */
     var Name: js.UndefOr[DocumentName] = js.undefined
@@ -2490,6 +2575,10 @@ object SSMNs extends js.Object {
   
   
   trait DocumentDescription extends js.Object {
+    /**
+         * Details about the document attachments, including names, locations, sizes, etc.
+         */
+    var AttachmentsInformation: js.UndefOr[AttachmentInformationList] = js.undefined
     /**
          * The date when the document was created.
          */
@@ -2507,7 +2596,7 @@ object SSMNs extends js.Object {
          */
     var DocumentFormat: js.UndefOr[DocumentFormat] = js.undefined
     /**
-         * The type of document. 
+         * The type of document.
          */
     var DocumentType: js.UndefOr[DocumentType] = js.undefined
     /**
@@ -2519,7 +2608,7 @@ object SSMNs extends js.Object {
          */
     var Hash: js.UndefOr[DocumentHash] = js.undefined
     /**
-         * Sha256 or Sha1.  Sha1 hashes have been deprecated. 
+         * The hash type of the document. Valid values include Sha256 or Sha1.  Sha1 hashes have been deprecated. 
          */
     var HashType: js.UndefOr[DocumentHashType] = js.undefined
     /**
@@ -2555,6 +2644,10 @@ object SSMNs extends js.Object {
          */
     var Status: js.UndefOr[DocumentStatus] = js.undefined
     /**
+         * A message returned by AWS Systems Manager that explains the Status value. For example, a Failed status might be explained by the StatusInformation message, "The specified S3 bucket does not exist. Verify that the URL of the S3 bucket is correct."
+         */
+    var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.undefined
+    /**
          * The tags, or metadata, that have been applied to the document.
          */
     var Tags: js.UndefOr[TagList] = js.undefined
@@ -2562,6 +2655,10 @@ object SSMNs extends js.Object {
          * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS Resource Types Reference in the AWS CloudFormation User Guide. 
          */
     var TargetType: js.UndefOr[TargetType] = js.undefined
+    /**
+         * The version of the artifact associated with the document.
+         */
+    var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
   }
   
   
@@ -2614,6 +2711,10 @@ object SSMNs extends js.Object {
          * The target type which defines the kinds of resources the document can run on. For example, /AWS::EC2::Instance. For a list of valid resource types, see AWS Resource Types Reference in the AWS CloudFormation User Guide. 
          */
     var TargetType: js.UndefOr[TargetType] = js.undefined
+    /**
+         * An optional field specifying the version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
+         */
+    var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
   }
   
   
@@ -2670,6 +2771,18 @@ object SSMNs extends js.Object {
          * The document name.
          */
     var Name: js.UndefOr[DocumentName] = js.undefined
+    /**
+         * The status of the Systems Manager document, such as Creating, Active, Failed, and Deleting.
+         */
+    var Status: js.UndefOr[DocumentStatus] = js.undefined
+    /**
+         * A message returned by AWS Systems Manager that explains the Status value. For example, a Failed status might be explained by the StatusInformation message, "The specified S3 bucket does not exist. Verify that the URL of the S3 bucket is correct."
+         */
+    var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.undefined
+    /**
+         * The version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
+         */
+    var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
   }
   
   
@@ -2906,10 +3019,18 @@ object SSMNs extends js.Object {
          * The name of the Systems Manager document.
          */
     var Name: DocumentARN
+    /**
+         * An optional field specifying the version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
+         */
+    var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
   }
   
   
   trait GetDocumentResult extends js.Object {
+    /**
+         * A description of the document attachments, including names, locations, sizes, etc.
+         */
+    var AttachmentsContent: js.UndefOr[AttachmentContentList] = js.undefined
     /**
          * The contents of the Systems Manager document.
          */
@@ -2930,6 +3051,18 @@ object SSMNs extends js.Object {
          * The name of the Systems Manager document.
          */
     var Name: js.UndefOr[DocumentARN] = js.undefined
+    /**
+         * The status of the Systems Manager document, such as Creating, Active, Updating, Failed, and Deleting.
+         */
+    var Status: js.UndefOr[DocumentStatus] = js.undefined
+    /**
+         * A message returned by AWS Systems Manager that explains the Status value. For example, a Failed status might be explained by the StatusInformation message, "The specified S3 bucket does not exist. Verify that the URL of the S3 bucket is correct."
+         */
+    var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.undefined
+    /**
+         * The version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
+         */
+    var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
   }
   
   
@@ -4707,7 +4840,7 @@ object SSMNs extends js.Object {
          */
     var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
     /**
-         * If this time is reached and the command has not already started executing, it doesn not execute.
+         * If this time is reached and the command has not already started executing, it doesn't run.
          */
     var TimeoutSeconds: js.UndefOr[TimeoutSeconds] = js.undefined
   }
@@ -5269,6 +5402,30 @@ object SSMNs extends js.Object {
          * The approval status of a patch (APPROVED, PENDING_APPROVAL, EXPLICIT_APPROVED, EXPLICIT_REJECTED).
          */
     var DeploymentStatus: js.UndefOr[PatchDeploymentStatus] = js.undefined
+  }
+  
+  
+  trait ProgressCounters extends js.Object {
+    /**
+         * The total number of steps that the system cancelled in all specified AWS Regions and accounts for the current Automation execution.
+         */
+    var CancelledSteps: js.UndefOr[Integer] = js.undefined
+    /**
+         * The total number of steps that failed to execute in all specified AWS Regions and accounts for the current Automation execution.
+         */
+    var FailedSteps: js.UndefOr[Integer] = js.undefined
+    /**
+         * The total number of steps that successfully completed in all specified AWS Regions and accounts for the current Automation execution.
+         */
+    var SuccessSteps: js.UndefOr[Integer] = js.undefined
+    /**
+         * The total number of steps that timed out in all specified AWS Regions and accounts for the current Automation execution.
+         */
+    var TimedOutSteps: js.UndefOr[Integer] = js.undefined
+    /**
+         * The total number of steps executed in all specified AWS Regions and accounts for the current Automation execution.
+         */
+    var TotalSteps: js.UndefOr[Integer] = js.undefined
   }
   
   
@@ -5942,6 +6099,10 @@ object SSMNs extends js.Object {
          */
     var Parameters: js.UndefOr[AutomationParameterMap] = js.undefined
     /**
+         * A location is a combination of AWS Regions and/or AWS accounts where you want to execute the Automation. Use this action to start an Automation in multiple Regions and multiple accounts. For more information, see Concurrently Executing Automations in Multiple AWS Regions and Accounts in the AWS Systems Manager User Guide. 
+         */
+    var TargetLocations: js.UndefOr[TargetLocations] = js.undefined
+    /**
          * A key-value mapping of document parameters to target resources. Both Targets and TargetMaps cannot be specified together.
          */
     var TargetMaps: js.UndefOr[TargetMaps] = js.undefined
@@ -6070,6 +6231,14 @@ object SSMNs extends js.Object {
          */
     var StepStatus: js.UndefOr[AutomationExecutionStatus] = js.undefined
     /**
+         * The combination of AWS Regions and accounts targeted by the current Automation execution.
+         */
+    var TargetLocation: js.UndefOr[TargetLocation] = js.undefined
+    /**
+         * The targets for the step execution.
+         */
+    var Targets: js.UndefOr[Targets] = js.undefined
+    /**
          * The timeout seconds of the step.
          */
     var TimeoutSeconds: js.UndefOr[Long] = js.undefined
@@ -6128,6 +6297,30 @@ object SSMNs extends js.Object {
          * User-defined criteria that maps to Key. For example, if you specified tag:ServerRole, you could specify value:WebServer to execute a command on instances that include Amazon EC2 tags of ServerRole,WebServer. For more information about how to send commands that target instances using Key,Value parameters, see Sending Commands to a Fleet in the AWS Systems Manager User Guide.
          */
     var Values: js.UndefOr[TargetValues] = js.undefined
+  }
+  
+  
+  trait TargetLocation extends js.Object {
+    /**
+         * The AWS accounts targeted by the current Automation execution.
+         */
+    var Accounts: js.UndefOr[Accounts] = js.undefined
+    /**
+         * The Automation execution role used by the currently executing Automation.
+         */
+    var ExecutionRoleName: js.UndefOr[ExecutionRoleName] = js.undefined
+    /**
+         * The AWS Regions targeted by the current Automation execution.
+         */
+    var Regions: js.UndefOr[Regions] = js.undefined
+    /**
+         * The maxium number of AWS accounts and AWS regions allowed to run the Automation concurrently 
+         */
+    var TargetLocationMaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
+    /**
+         * The maxium number of errors allowed before the system stops queueing additional Automation executions for the currently executing Automation. 
+         */
+    var TargetLocationMaxErrors: js.UndefOr[MaxErrors] = js.undefined
   }
   
   
@@ -6272,11 +6465,11 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateActivationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
        */
     def createAssociation(): awsDashSdkLib.libRequestMod.Request[CreateAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
        */
     def createAssociation(
       callback: js.Function2[
@@ -6286,11 +6479,11 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
        */
     def createAssociation(params: CreateAssociationRequest): awsDashSdkLib.libRequestMod.Request[CreateAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
        */
     def createAssociation(
       params: CreateAssociationRequest,
@@ -6301,11 +6494,11 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
        */
     def createAssociationBatch(): awsDashSdkLib.libRequestMod.Request[CreateAssociationBatchResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
        */
     def createAssociationBatch(
       callback: js.Function2[
@@ -6315,11 +6508,11 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateAssociationBatchResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
        */
     def createAssociationBatch(params: CreateAssociationBatchRequest): awsDashSdkLib.libRequestMod.Request[CreateAssociationBatchResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system throws the AssociationAlreadyExists exception.
+       * Associates the specified Systems Manager document with the specified instances or targets. When you associate a document with one or more instances using instance IDs or tags, SSM Agent running on the instance processes the document and configures the instance as specified. If you associate a document with an instance that already has an associated document, the system returns the AssociationAlreadyExists exception.
        */
     def createAssociationBatch(
       params: CreateAssociationBatchRequest,
@@ -9415,6 +9608,10 @@ object SSMNs extends js.Object {
          */
     var AssociationVersion: js.UndefOr[AssociationVersion] = js.undefined
     /**
+         * The severity level to assign to the association.
+         */
+    var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
+    /**
          * The document version you want update for the association. 
          */
     var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
@@ -9503,7 +9700,11 @@ object SSMNs extends js.Object {
   
   trait UpdateDocumentRequest extends js.Object {
     /**
-         * The content in a document that you want to update.
+         * A list of key and value pairs that describe attachments to a version of a document.
+         */
+    var Attachments: js.UndefOr[AttachmentsSourceList] = js.undefined
+    /**
+         * A valid JSON or YAML string.
          */
     var Content: DocumentContent
     /**
@@ -9522,6 +9723,10 @@ object SSMNs extends js.Object {
          * Specify a new target type for the document.
          */
     var TargetType: js.UndefOr[TargetType] = js.undefined
+    /**
+         * An optional field specifying the version of the artifact you are updating with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
+         */
+    var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
   }
   
   
@@ -9936,8 +10141,10 @@ object SSMNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
+  type Account = java.lang.String
   type AccountId = java.lang.String
   type AccountIdList = js.Array[AccountId]
+  type Accounts = js.Array[Account]
   type ActivationCode = java.lang.String
   type ActivationDescription = java.lang.String
   type ActivationId = java.lang.String
@@ -9946,6 +10153,7 @@ object SSMNs extends js.Object {
   type AggregatorSchemaOnly = scala.Boolean
   type AllowedPattern = java.lang.String
   type ApproveAfterDays = scala.Double
+  type AssociationComplianceSeverity = awsDashSdkLib.awsDashSdkLibStrings.CRITICAL | awsDashSdkLib.awsDashSdkLibStrings.HIGH | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM | awsDashSdkLib.awsDashSdkLibStrings.LOW | awsDashSdkLib.awsDashSdkLibStrings.UNSPECIFIED | java.lang.String
   type AssociationDescriptionList = js.Array[AssociationDescription]
   type AssociationExecutionFilterKey = awsDashSdkLib.awsDashSdkLibStrings.ExecutionId | awsDashSdkLib.awsDashSdkLibStrings.Status | awsDashSdkLib.awsDashSdkLibStrings.CreatedTime | java.lang.String
   type AssociationExecutionFilterList = js.Array[AssociationExecutionFilter]
@@ -9969,10 +10177,20 @@ object SSMNs extends js.Object {
   type AssociationStatusName = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Success | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
   type AssociationVersion = java.lang.String
   type AssociationVersionList = js.Array[AssociationVersionInfo]
+  type AttachmentContentList = js.Array[AttachmentContent]
+  type AttachmentHash = java.lang.String
+  type AttachmentHashType = awsDashSdkLib.awsDashSdkLibStrings.Sha256 | java.lang.String
+  type AttachmentInformationList = js.Array[AttachmentInformation]
+  type AttachmentName = java.lang.String
+  type AttachmentUrl = java.lang.String
+  type AttachmentsSourceKey = awsDashSdkLib.awsDashSdkLibStrings.SourceUrl | java.lang.String
+  type AttachmentsSourceList = js.Array[AttachmentsSource]
+  type AttachmentsSourceValue = java.lang.String
+  type AttachmentsSourceValues = js.Array[AttachmentsSourceValue]
   type AttributeName = java.lang.String
   type AttributeValue = java.lang.String
   type AutomationActionName = java.lang.String
-  type AutomationExecutionFilterKey = awsDashSdkLib.awsDashSdkLibStrings.DocumentNamePrefix | awsDashSdkLib.awsDashSdkLibStrings.ExecutionStatus | awsDashSdkLib.awsDashSdkLibStrings.ExecutionId | awsDashSdkLib.awsDashSdkLibStrings.ParentExecutionId | awsDashSdkLib.awsDashSdkLibStrings.CurrentAction | awsDashSdkLib.awsDashSdkLibStrings.StartTimeBefore | awsDashSdkLib.awsDashSdkLibStrings.StartTimeAfter | java.lang.String
+  type AutomationExecutionFilterKey = awsDashSdkLib.awsDashSdkLibStrings.DocumentNamePrefix | awsDashSdkLib.awsDashSdkLibStrings.ExecutionStatus | awsDashSdkLib.awsDashSdkLibStrings.ExecutionId | awsDashSdkLib.awsDashSdkLibStrings.ParentExecutionId | awsDashSdkLib.awsDashSdkLibStrings.CurrentAction | awsDashSdkLib.awsDashSdkLibStrings.StartTimeBefore | awsDashSdkLib.awsDashSdkLibStrings.StartTimeAfter | awsDashSdkLib.awsDashSdkLibStrings.AutomationType | java.lang.String
   type AutomationExecutionFilterList = js.Array[AutomationExecutionFilter]
   type AutomationExecutionFilterValue = java.lang.String
   type AutomationExecutionFilterValueList = js.Array[AutomationExecutionFilterValue]
@@ -9982,6 +10200,7 @@ object SSMNs extends js.Object {
   type AutomationParameterKey = java.lang.String
   type AutomationParameterValue = java.lang.String
   type AutomationParameterValueList = js.Array[AutomationParameterValue]
+  type AutomationType = awsDashSdkLib.awsDashSdkLibStrings.CrossAccount | awsDashSdkLib.awsDashSdkLibStrings.Local | java.lang.String
   type BaselineDescription = java.lang.String
   type BaselineId = java.lang.String
   type BaselineName = java.lang.String
@@ -10029,6 +10248,7 @@ object SSMNs extends js.Object {
   type ComplianceTypeName = java.lang.String
   type ComputerName = java.lang.String
   type ConnectionStatus = awsDashSdkLib.awsDashSdkLibStrings.Connected | awsDashSdkLib.awsDashSdkLibStrings.NotConnected | java.lang.String
+  type ContentLength = scala.Double
   type CreateAssociationBatchRequestEntries = js.Array[CreateAssociationBatchRequestEntry]
   type CreatedDate = stdLib.Date
   type DateTime = stdLib.Date
@@ -10061,16 +10281,19 @@ object SSMNs extends js.Object {
   type DocumentPermissionType = awsDashSdkLib.awsDashSdkLibStrings.Share | java.lang.String
   type DocumentSchemaVersion = java.lang.String
   type DocumentSha1 = java.lang.String
-  type DocumentStatus = awsDashSdkLib.awsDashSdkLibStrings.Creating | awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.Updating | awsDashSdkLib.awsDashSdkLibStrings.Deleting | java.lang.String
-  type DocumentType = awsDashSdkLib.awsDashSdkLibStrings.Command | awsDashSdkLib.awsDashSdkLibStrings.Policy | awsDashSdkLib.awsDashSdkLibStrings.Automation | awsDashSdkLib.awsDashSdkLibStrings.Session | java.lang.String
+  type DocumentStatus = awsDashSdkLib.awsDashSdkLibStrings.Creating | awsDashSdkLib.awsDashSdkLibStrings.Active | awsDashSdkLib.awsDashSdkLibStrings.Updating | awsDashSdkLib.awsDashSdkLibStrings.Deleting | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type DocumentStatusInformation = java.lang.String
+  type DocumentType = awsDashSdkLib.awsDashSdkLibStrings.Command | awsDashSdkLib.awsDashSdkLibStrings.Policy | awsDashSdkLib.awsDashSdkLibStrings.Automation | awsDashSdkLib.awsDashSdkLibStrings.Session | awsDashSdkLib.awsDashSdkLibStrings.Package | java.lang.String
   type DocumentVersion = java.lang.String
   type DocumentVersionList = js.Array[DocumentVersionInfo]
+  type DocumentVersionName = java.lang.String
   type DocumentVersionNumber = java.lang.String
   type DryRun = scala.Boolean
   type EffectiveInstanceAssociationMaxResults = scala.Double
   type EffectivePatchList = js.Array[EffectivePatch]
   type ErrorCount = scala.Double
   type ExecutionMode = awsDashSdkLib.awsDashSdkLibStrings.Auto | awsDashSdkLib.awsDashSdkLibStrings.Interactive | java.lang.String
+  type ExecutionRoleName = java.lang.String
   type ExpirationDate = stdLib.Date
   type FailedCreateAssociationList = js.Array[FailedCreateAssociation]
   type Fault = awsDashSdkLib.awsDashSdkLibStrings.Client | awsDashSdkLib.awsDashSdkLibStrings.Server | awsDashSdkLib.awsDashSdkLibStrings.Unknown | java.lang.String
@@ -10281,6 +10504,8 @@ object SSMNs extends js.Object {
   type PlatformTypeList = js.Array[PlatformType]
   type Product = java.lang.String
   type PutInventoryMessage = java.lang.String
+  type Region = java.lang.String
+  type Regions = js.Array[Region]
   type RegistrationLimit = scala.Double
   type RegistrationsCount = scala.Double
   type RemainingCount = scala.Double
@@ -10346,6 +10571,7 @@ object SSMNs extends js.Object {
   type TagValue = java.lang.String
   type TargetCount = scala.Double
   type TargetKey = java.lang.String
+  type TargetLocations = js.Array[TargetLocation]
   type TargetMapKey = java.lang.String
   type TargetMapValue = java.lang.String
   type TargetMapValueList = js.Array[TargetMapValue]

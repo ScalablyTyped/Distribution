@@ -27,6 +27,8 @@ trait ProceduralRenderer3 extends js.Object {
     eventName: java.lang.String,
     callback: js.Function1[/* event */ js.Any, scala.Boolean | scala.Unit]
   ): js.Function0[scala.Unit] = js.native
+  def nextSibling(node: RNode): RNode | scala.Null = js.native
+  def parentNode(node: RNode): RElement | scala.Null = js.native
   def removeAttribute(el: RElement, name: java.lang.String): scala.Unit = js.native
   def removeAttribute(el: RElement, name: java.lang.String, namespace: java.lang.String): scala.Unit = js.native
   def removeChild(parent: RElement, oldChild: RNode): scala.Unit = js.native

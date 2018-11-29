@@ -15,7 +15,7 @@ class Query[TData, TVariables] protected ()
 @JSImport("react-apollo", "Query")
 @js.native
 object Query extends js.Object {
-  var contextTypes: reactDashApolloLib.Anon_ClientOperationsRequireable = js.native
+  var contextTypes: reactDashApolloLib.Anon_ClientOperationsRenderPromises = js.native
   var propTypes: reactDashApolloLib.Anon_ChildrenArgs = js.native
 }
 

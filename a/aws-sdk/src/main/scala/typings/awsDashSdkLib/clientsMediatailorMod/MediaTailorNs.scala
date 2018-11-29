@@ -29,6 +29,14 @@ object MediaTailorNs extends js.Object {
   }
   
   
+  trait DashConfiguration extends js.Object {
+    /**
+         * The URL that is used to initiate a playback session for devices that support DASH. 
+         */
+    var ManifestEndpointPrefix: js.UndefOr[__string] = js.undefined
+  }
+  
+  
   trait DeletePlaybackConfigurationRequest extends js.Object {
     /**
          * The identifier for the configuration.
@@ -58,6 +66,10 @@ object MediaTailorNs extends js.Object {
          */
     var CdnConfiguration: js.UndefOr[CdnConfiguration] = js.undefined
     /**
+         * The configuration object for DASH content. 
+         */
+    var DashConfiguration: js.UndefOr[DashConfiguration] = js.undefined
+    /**
          * The configuration for HLS content. 
          */
     var HlsConfiguration: js.UndefOr[HlsConfiguration] = js.undefined
@@ -77,6 +89,10 @@ object MediaTailorNs extends js.Object {
          * URL for a high-quality video asset to transcode and use to fill in time that's not used by ads. AWS Elemental MediaTailor shows the slate to fill in gaps in media content. Configuring the slate is optional for non-VPAID configurations. For VPAID, the slate is required because AWS Elemental MediaTailor provides it in the slots designated for dynamic ad content. The slate must be a high-quality asset that contains both audio and video. 
          */
     var SlateAdUrl: js.UndefOr[__string] = js.undefined
+    /**
+         * Associate this playbackConfiguration with a custom transcode profile, overriding MediaTailor's dynamic transcoding defaults. Do not include this field if you have not setup custom profiles with the MediaTailor service team. 
+         */
+    var TranscodeProfileName: js.UndefOr[__string] = js.undefined
     /**
          * The URL prefix for the master playlist for the stream, minus the asset ID. The maximum length is 512 characters.
          */
@@ -158,6 +174,10 @@ object MediaTailorNs extends js.Object {
          */
     var SlateAdUrl: js.UndefOr[__string] = js.undefined
     /**
+         * Associate this playbackConfiguration with a custom transcode profile, overriding MediaTailor's dynamic transcoding defaults. Do not include this field if you have not setup custom profiles with the MediaTailor service team. 
+         */
+    var TranscodeProfileName: js.UndefOr[__string] = js.undefined
+    /**
          * The URL prefix for the master playlist for the stream, minus the asset ID. The maximum length is 512 characters.
          */
     var VideoContentSourceUrl: js.UndefOr[__string] = js.undefined
@@ -173,6 +193,10 @@ object MediaTailorNs extends js.Object {
          * The configuration for using a content delivery network (CDN), like Amazon CloudFront, for content and ad segment management. 
          */
     var CdnConfiguration: js.UndefOr[CdnConfiguration] = js.undefined
+    /**
+         * The configuration object for DASH content. 
+         */
+    var DashConfiguration: js.UndefOr[DashConfiguration] = js.undefined
     /**
          * The configuration for HLS content. 
          */
@@ -193,6 +217,10 @@ object MediaTailorNs extends js.Object {
          * URL for a high-quality video asset to transcode and use to fill in time that's not used by ads. AWS Elemental MediaTailor shows the slate to fill in gaps in media content. Configuring the slate is optional for non-VPAID configurations. For VPAID, the slate is required because AWS Elemental MediaTailor provides it in the slots designated for dynamic ad content. The slate must be a high-quality asset that contains both audio and video. 
          */
     var SlateAdUrl: js.UndefOr[__string] = js.undefined
+    /**
+         * Associate this playbackConfiguration with a custom transcode profile, overriding MediaTailor's dynamic transcoding defaults. Do not include this field if you have not setup custom profiles with the MediaTailor service team. 
+         */
+    var TranscodeProfileName: js.UndefOr[__string] = js.undefined
     /**
          * The URL prefix for the master playlist for the stream, minus the asset ID. The maximum length is 512 characters.
          */

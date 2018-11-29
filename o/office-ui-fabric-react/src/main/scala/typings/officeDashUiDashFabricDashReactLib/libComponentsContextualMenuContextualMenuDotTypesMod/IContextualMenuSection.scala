@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IContextualMenuSection
-  extends reactLib.reactMod.ReactNs.Props[js.Any] {
+  extends reactLib.reactMod.ReactNs.ClassAttributes[js.Any] {
   /**
        * If set to true, the section will display a divider at the bottom of the section.
        */

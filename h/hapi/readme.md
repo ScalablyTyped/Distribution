@@ -1,5 +1,5 @@
 ```
-// Type definitions for hapi 17.6
+// Type definitions for hapi 17.8
 // Project: https://github.com/hapijs/hapi
 // Definitions by: Rafael Souza Fijalkowski <https://github.com/rafaelsouzaf>
 //                 Justin Simms <https://github.com/jhsimms>

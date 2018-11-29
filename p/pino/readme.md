@@ -6,6 +6,7 @@
 //                 Christian Rackerseder <https://github.com/screendriver>
 //                 GP <https://github.com/paambaati>
 //                 Alex Ferrando <https://github.com/alferpal>
+//                 Oleksandr Sidko <https://github.com/mortiy>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 ```

@@ -13,6 +13,6 @@ object libIdentityModMembers extends js.Object {
     /* setoid */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     fpDashTsLib.libSetoidMod.Setoid[Identity[js.Any]]
   ] = js.native
-  val identity: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libFoldableMod.Foldable1[URI] with fpDashTsLib.libTraversableMod.Traversable1[URI] with fpDashTsLib.libAltMod.Alt1[URI] with fpDashTsLib.libComonadMod.Comonad1[URI] with fpDashTsLib.libChainRecMod.ChainRec1[URI] = js.native
+  val identity: fpDashTsLib.libMonadMod.Monad1[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[URI] with fpDashTsLib.libAltMod.Alt1[URI] with fpDashTsLib.libComonadMod.Comonad1[URI] with fpDashTsLib.libChainRecMod.ChainRec1[URI] = js.native
 }
 

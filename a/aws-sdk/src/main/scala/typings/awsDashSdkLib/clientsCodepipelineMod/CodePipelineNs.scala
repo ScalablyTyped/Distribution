@@ -143,6 +143,10 @@ object CodePipelineNs extends js.Object {
          */
     var outputArtifacts: js.UndefOr[OutputArtifactList] = js.undefined
     /**
+         * The action declaration's AWS Region, such as us-east-1.
+         */
+    var region: js.UndefOr[AWSRegionName] = js.undefined
+    /**
          * The ARN of the IAM service role that will perform the declared action. This is assumed through the roleArn for the pipeline.
          */
     var roleArn: js.UndefOr[RoleArn] = js.undefined
@@ -391,6 +395,10 @@ object CodePipelineNs extends js.Object {
          */
     var `type`: ArtifactStoreType
   }
+  
+  
+  trait ArtifactStoreMap
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[ArtifactStore]
   
   
   trait BlockerDeclaration extends js.Object {
@@ -971,7 +979,11 @@ object CodePipelineNs extends js.Object {
     /**
          * Represents information about the Amazon S3 bucket where artifacts are stored for the pipeline. 
          */
-    var artifactStore: ArtifactStore
+    var artifactStore: js.UndefOr[ArtifactStore] = js.undefined
+    /**
+         * A mapping of artifactStore objects and their corresponding regions. There must be an artifact store for the pipeline region and for each cross-region action within the pipeline. You can only use either artifactStore or artifactStores, not both. If you create a cross-region action in your pipeline, you must use artifactStores.
+         */
+    var artifactStores: js.UndefOr[ArtifactStoreMap] = js.undefined
     /**
          * The name of the action to be performed.
          */
@@ -1024,6 +1036,9 @@ object CodePipelineNs extends js.Object {
          * The ID of the pipeline execution.
          */
     var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
+    /**
+         * A list of the source artifact revisions that initiated a pipeline execution.
+         */
     var sourceRevisions: js.UndefOr[SourceRevisionList] = js.undefined
     /**
          * The date and time when the pipeline execution began, in timestamp format.
@@ -1324,9 +1339,21 @@ object CodePipelineNs extends js.Object {
   
   
   trait SourceRevision extends js.Object {
+    /**
+         * The name of the action that processed the revision to the source artifact.
+         */
     var actionName: ActionName
+    /**
+         * The system-generated unique ID that identifies the revision number of the artifact.
+         */
     var revisionId: js.UndefOr[Revision] = js.undefined
+    /**
+         * Summary information about the most recent revision of the artifact. For GitHub and AWS CodeCommit repositories, the commit message. For Amazon S3 buckets or actions, the user-provided content of a codepipeline-artifact-revision-summary key specified in the object metadata.
+         */
     var revisionSummary: js.UndefOr[RevisionSummary] = js.undefined
+    /**
+         * The commit ID for the artifact revision. For artifacts stored in GitHub or AWS CodeCommit repositories, the commit ID is linked to a commit details page.
+         */
     var revisionUrl: js.UndefOr[Url] = js.undefined
   }
   
@@ -1388,6 +1415,10 @@ object CodePipelineNs extends js.Object {
   
   
   trait StartPipelineExecutionInput extends js.Object {
+    /**
+         * The system-generated unique ID used to identify a unique execution request.
+         */
+    var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
     /**
          * The name of the pipeline to start.
          */
@@ -2375,7 +2406,13 @@ object CodePipelineNs extends js.Object {
   
   
   trait WebhookAuthConfiguration extends js.Object {
+    /**
+         * The property used to configure acceptance of webhooks within a specific IP range. For IP, only the AllowedIPRange property must be set, and this property must be set to a valid CIDR range.
+         */
     var AllowedIPRange: js.UndefOr[WebhookAuthConfigurationAllowedIPRange] = js.undefined
+    /**
+         * The property used to configure GitHub authentication. For GITHUB_HMAC, only the SecretToken property must be set.
+         */
     var SecretToken: js.UndefOr[WebhookAuthConfigurationSecretToken] = js.undefined
   }
   
@@ -2420,6 +2457,7 @@ object CodePipelineNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
+  type AWSRegionName = java.lang.String
   type AccessKeyId = java.lang.String
   type AccountId = java.lang.String
   type ActionCategory = awsDashSdkLib.awsDashSdkLibStrings.Source | awsDashSdkLib.awsDashSdkLibStrings.Build | awsDashSdkLib.awsDashSdkLibStrings.Deploy | awsDashSdkLib.awsDashSdkLibStrings.Test | awsDashSdkLib.awsDashSdkLibStrings.Invoke | awsDashSdkLib.awsDashSdkLibStrings.Approval | java.lang.String
@@ -2450,6 +2488,7 @@ object CodePipelineNs extends js.Object {
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientId = java.lang.String
+  type ClientRequestToken = java.lang.String
   type ClientToken = java.lang.String
   type Code = java.lang.String
   type ContinuationToken = java.lang.String

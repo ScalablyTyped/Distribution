@@ -14,6 +14,6 @@ trait Anon_Nonce extends js.Object {
   ]
   var amount: scala.Double
   var nonce: java.lang.String
-  var removeFrame: js.Function0[scala.Unit]
+  var removeFrame: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 

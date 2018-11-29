@@ -102,7 +102,6 @@ object diaNs extends js.Object {
     def addTools(tools: ToolsView): this.type = js.native
     def can(feature: java.lang.String): scala.Boolean = js.native
     /* protected */ def contextmenu(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    def findAttribute(attributeName: java.lang.String, node: Element): java.lang.String | scala.Null = js.native
     def findBySelector(selector: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
     def findBySelector(selector: java.lang.String, root: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
     def findBySelector(selector: java.lang.String, root: jqueryLib.JQuery[stdLib.HTMLElement]): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
@@ -200,6 +199,13 @@ object diaNs extends js.Object {
     def removePort(port: java.lang.String, opt: jointjsLib.jointjsMod.diaNs.CellNs.Options): this.type = js.native
     def removePort(port: jointjsLib.jointjsMod.diaNs.ElementNs.Port): this.type = js.native
     def removePort(port: jointjsLib.jointjsMod.diaNs.ElementNs.Port, opt: jointjsLib.jointjsMod.diaNs.CellNs.Options): this.type = js.native
+    def removePorts(): this.type = js.native
+    def removePorts(opt: jointjsLib.jointjsMod.diaNs.CellNs.Options): this.type = js.native
+    def removePorts(ports: js.Array[jointjsLib.jointjsMod.diaNs.ElementNs.Port | java.lang.String]): this.type = js.native
+    def removePorts(
+      ports: js.Array[jointjsLib.jointjsMod.diaNs.ElementNs.Port | java.lang.String],
+      opt: jointjsLib.jointjsMod.diaNs.CellNs.Options
+    ): this.type = js.native
     def resize(width: scala.Double, height: scala.Double): this.type = js.native
     def resize(width: scala.Double, height: scala.Double, opt: jointjsLib.Anon_KeyDirection): this.type = js.native
     def rotate(deg: scala.Double): this.type = js.native
@@ -230,14 +236,22 @@ object diaNs extends js.Object {
   
   @js.native
   class ElementView () extends CellViewGeneric[Element] {
+    /* protected */ def addLinkFromMagnet(magnet: stdLib.SVGElement, x: scala.Double, y: scala.Double): LinkView = js.native
     /* protected */ def drag(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
     /* protected */ def dragEnd(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragLinkStart(
+      evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null],
+      magnet: stdLib.SVGElement,
+      x: scala.Double,
+      y: scala.Double
+    ): scala.Unit = js.native
     /* protected */ def dragMagnet(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
     /* protected */ def dragMagnetEnd(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
     /* protected */ def dragMagnetStart(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
     /* protected */ def dragStart(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
     def getBBox(): jointjsLib.jointjsMod.gNs.Rect = js.native
     def getBBox(opt: jointjsLib.Anon_UseModelGeometry): jointjsLib.jointjsMod.gNs.Rect = js.native
+    def getDelegatedView(): ElementView | scala.Null = js.native
     def getNodeBBox(magnet: stdLib.SVGElement): jointjsLib.jointjsMod.gNs.Rect = js.native
     def getNodeUnrotatedBBox(magnet: stdLib.SVGElement): jointjsLib.jointjsMod.gNs.Rect = js.native
     /* protected */ def renderJSONMarkup(markup: MarkupJSON): scala.Unit = js.native
@@ -580,10 +594,12 @@ object diaNs extends js.Object {
     var attributes: js.UndefOr[jointjsLib.jointjsMod.attributesNs.NativeSVGAttributes] = js.undefined
     var children: js.UndefOr[MarkupJSON] = js.undefined
     var className: js.UndefOr[java.lang.String] = js.undefined
+    var groupSelector: js.UndefOr[java.lang.String] = js.undefined
     var namespaceUri: js.UndefOr[java.lang.String] = js.undefined
     var selector: js.UndefOr[java.lang.String] = js.undefined
     var style: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
     var tagName: java.lang.String
+    var textContent: js.UndefOr[java.lang.String] = js.undefined
   }
   
   
@@ -643,6 +659,7 @@ object diaNs extends js.Object {
     def fitToContent(gridWidth: scala.Double, gridHeight: scala.Double, padding: scala.Double, opt: js.Any): scala.Unit = js.native
     def fitToContent(opt: jointjsLib.jointjsMod.diaNs.PaperNs.FitToContentOptions): scala.Unit = js.native
     def getArea(): jointjsLib.jointjsMod.gNs.Rect = js.native
+    def getComputedSize(): Size = js.native
     def getContentArea(): jointjsLib.jointjsMod.gNs.Rect = js.native
     def getContentBBox(): jointjsLib.jointjsMod.gNs.Rect = js.native
     def getDefaultLink(cellView: CellView, magnet: stdLib.SVGElement): Link = js.native
@@ -709,7 +726,10 @@ object diaNs extends js.Object {
     def scale(sx: scala.Double, sy: scala.Double, ox: scala.Double, oy: scala.Double): this.type = js.native
     def scaleContentToFit(): scala.Unit = js.native
     def scaleContentToFit(opt: jointjsLib.jointjsMod.diaNs.PaperNs.ScaleContentOptions): scala.Unit = js.native
-    def setDimensions(width: scala.Double, height: scala.Double): scala.Unit = js.native
+    def setDimensions(
+      width: jointjsLib.jointjsMod.diaNs.PaperNs.Dimension,
+      height: jointjsLib.jointjsMod.diaNs.PaperNs.Dimension
+    ): scala.Unit = js.native
     def setGridSize(gridSize: scala.Double): this.type = js.native
     def setInteractivity(value: js.Any): scala.Unit = js.native
     def setOrigin(x: scala.Double, y: scala.Double): this.type = js.native
@@ -723,6 +743,16 @@ object diaNs extends js.Object {
     def update(): this.type = js.native
     /* protected */ def updateBackgroundColor(color: java.lang.String): scala.Unit = js.native
     /* protected */ def updateBackgroundImage(opt: jointjsLib.Anon_PositionSize): scala.Unit = js.native
+  }
+  
+  
+  trait SidesJSON extends js.Object {
+    var bottom: js.UndefOr[scala.Double] = js.undefined
+    var horizontal: js.UndefOr[scala.Double] = js.undefined
+    var left: js.UndefOr[scala.Double] = js.undefined
+    var right: js.UndefOr[scala.Double] = js.undefined
+    var top: js.UndefOr[scala.Double] = js.undefined
+    var vertical: js.UndefOr[scala.Double] = js.undefined
   }
   
   @js.native
@@ -1039,7 +1069,7 @@ object diaNs extends js.Object {
         /* view */ jointjsLib.jointjsMod.diaNs.ElementView, 
         /* magnet */ stdLib.SVGElement, 
         /* reference */ jointjsLib.jointjsMod.diaNs.Point, 
-        /* end */ jointjsLib.jointjsLibStrings.source | jointjsLib.jointjsLibStrings.target, 
+        /* end */ jointjsLib.jointjsMod.diaNs.LinkEnd, 
         jointjsLib.jointjsMod.diaNs.Point
       ]
     type VertexOptions = jointjsLib.jointjsMod.diaNs.CellNs.Options
@@ -1152,7 +1182,7 @@ object diaNs extends js.Object {
               scala.Boolean
             ]
           ] = js.undefined
-      var height: js.UndefOr[scala.Double] = js.undefined
+      var height: js.UndefOr[Dimension] = js.undefined
       var highlighterNamespace: js.UndefOr[js.Any] = js.undefined
       var highlighting: js.UndefOr[
             ScalablyTyped.runtime.StringDictionary[jointjsLib.jointjsMod.highlightersNs.HighlighterJSON]
@@ -1172,6 +1202,7 @@ object diaNs extends js.Object {
               ScalablyTyped.runtime.Instantiable0[jointjsLib.jointjsMod.diaNs.LinkView]
             ])
           ] = js.undefined
+      var magnetThreshold: js.UndefOr[scala.Double | java.lang.String] = js.undefined
       var markAvailable: js.UndefOr[scala.Boolean] = js.undefined
       var moveThreshold: js.UndefOr[scala.Double] = js.undefined
       var multiLinks: js.UndefOr[scala.Boolean] = js.undefined
@@ -1192,7 +1223,7 @@ object diaNs extends js.Object {
               /* magnetS */ stdLib.SVGElement, 
               /* cellViewT */ jointjsLib.jointjsMod.diaNs.CellView, 
               /* magnetT */ stdLib.SVGElement, 
-              /* end */ jointjsLib.jointjsLibStrings.source | jointjsLib.jointjsLibStrings.target, 
+              /* end */ jointjsLib.jointjsMod.diaNs.LinkEnd, 
               /* linkView */ jointjsLib.jointjsMod.diaNs.LinkView, 
               scala.Boolean
             ]
@@ -1213,7 +1244,7 @@ object diaNs extends js.Object {
             ]
           ] = js.undefined
       // appearance
-      var width: js.UndefOr[scala.Double] = js.undefined
+      var width: js.UndefOr[Dimension] = js.undefined
     }
     
     
@@ -1230,6 +1261,7 @@ object diaNs extends js.Object {
       var scaleGrid: js.UndefOr[scala.Double] = js.undefined
     }
     
+    type Dimension = scala.Double | java.lang.String | scala.Null
   }
   
   @JSName("ToolView")
@@ -1256,10 +1288,13 @@ object diaNs extends js.Object {
   }
   
   type BBox = jointjsLib.jointjsMod.gNs.PlainRect
-  type Direction = jointjsLib.jointjsLibStrings.left | jointjsLib.jointjsLibStrings.right | jointjsLib.jointjsLibStrings.top | jointjsLib.jointjsLibStrings.bottom | jointjsLib.jointjsLibStrings.`top-right` | jointjsLib.jointjsLibStrings.`top-left` | jointjsLib.jointjsLibStrings.`bottom-left` | jointjsLib.jointjsLibStrings.`bottom-right`
+  type Direction = OrthogonalDirection | jointjsLib.jointjsLibStrings.`top-left` | jointjsLib.jointjsLibStrings.`top-right` | jointjsLib.jointjsLibStrings.`bottom-right` | jointjsLib.jointjsLibStrings.`bottom-left`
+  type LinkEnd = jointjsLib.jointjsLibStrings.source | jointjsLib.jointjsLibStrings.target
   type MarkupJSON = js.Array[MarkupNodeJSON]
+  type OrthogonalDirection = jointjsLib.jointjsLibStrings.left | jointjsLib.jointjsLibStrings.top | jointjsLib.jointjsLibStrings.right | jointjsLib.jointjsLibStrings.bottom
   type Padding = scala.Double | PaddingJSON
   type Point = jointjsLib.jointjsMod.gNs.PlainPoint
+  type Sides = scala.Double | SidesJSON
   type Size = stdLib.Pick[BBox, jointjsLib.jointjsLibStrings.width | jointjsLib.jointjsLibStrings.height]
 }
 

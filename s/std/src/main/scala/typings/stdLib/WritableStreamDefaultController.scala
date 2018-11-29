@@ -11,8 +11,3 @@ trait WritableStreamDefaultController extends js.Object {
   def error(error: js.Any): scala.Unit = js.native
 }
 
-@JSGlobal("WritableStreamDefaultController")
-@js.native
-object WritableStreamDefaultController
-  extends ScalablyTyped.runtime.Instantiable0[WritableStreamDefaultController]
-

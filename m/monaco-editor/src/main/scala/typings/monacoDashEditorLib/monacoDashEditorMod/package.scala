@@ -11,7 +11,5 @@ package object monacoDashEditorMod {
     /* thisArg */ js.UndefOr[js.Any], 
     IDisposable
   ]
-  type ProgressCallback[TProgress] = js.Function1[/* progress */ TProgress, scala.Unit]
-  type TValueCallback[T] = js.Function1[/* value */ T | stdLib.PromiseLike[T], scala.Unit]
   type Thenable[T] = stdLib.PromiseLike[T]
 }

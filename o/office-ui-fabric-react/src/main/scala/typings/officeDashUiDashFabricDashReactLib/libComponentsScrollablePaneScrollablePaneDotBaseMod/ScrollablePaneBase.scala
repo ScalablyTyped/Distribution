@@ -60,7 +60,9 @@ class ScrollablePaneBase protected ()
     nextState: IScrollablePaneState
   ): scala.Boolean = js.native
   def sortSticky(sticky: officeDashUiDashFabricDashReactLib.libStickyMod.Sticky): scala.Unit = js.native
+  def sortSticky(sticky: officeDashUiDashFabricDashReactLib.libStickyMod.Sticky, sortAgain: scala.Boolean): scala.Unit = js.native
   def subscribe(handler: js.Function): scala.Unit = js.native
+  def syncScrollSticky(sticky: officeDashUiDashFabricDashReactLib.libStickyMod.Sticky): scala.Unit = js.native
   def unsubscribe(handler: js.Function): scala.Unit = js.native
   def updateStickyRefHeights(): scala.Unit = js.native
 }

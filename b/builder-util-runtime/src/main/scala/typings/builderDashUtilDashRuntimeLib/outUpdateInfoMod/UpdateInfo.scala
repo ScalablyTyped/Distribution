@@ -25,7 +25,7 @@ trait UpdateInfo extends js.Object {
   /** @deprecated */
   val sha512: java.lang.String
   /**
-       * The [staged rollout](auto-update.md#staged-rollouts) percentage, 0-100.
+       * The [staged rollout](/auto-update#staged-rollouts) percentage, 0-100.
        */
   val stagingPercentage: js.UndefOr[scala.Double] = js.undefined
   /**

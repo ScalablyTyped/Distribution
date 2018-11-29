@@ -9,5 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcDiInjectableModMembers extends js.Object {
   val Injectable: InjectableDecorator = js.native
+  val `SWITCH_COMPILE_INJECTABLE__POST_R3__`: js.Function2[
+    /* type */ atAngularCoreLib.srcTypeMod.Type[js.Any], 
+    /* srcMeta */ js.UndefOr[Injectable], 
+    scala.Unit
+  ] = js.native
 }
 

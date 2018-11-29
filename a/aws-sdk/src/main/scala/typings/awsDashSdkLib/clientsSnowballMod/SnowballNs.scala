@@ -165,11 +165,11 @@ object SnowballNs extends js.Object {
          */
     var RoleARN: js.UndefOr[RoleARN] = js.undefined
     /**
-         * The shipping speed for each node in this cluster. This speed doesn't dictate how soon you'll get each Snowball Edge device, rather it represents how quickly each device moves to its destination while in transit. Regional shipping speeds are as follows:   In Australia, you have access to express shipping. Typically, devices shipped express are delivered in about a day.   In the European Union (EU), you have access to express shipping. Typically, Snowball Edges shipped express are delivered in about a day. In addition, most countries in the EU have access to standard shipping, which typically takes less than a week, one way.   In India, Snowball Edges are delivered in one to seven days.   In the US, you have access to one-day shipping and two-day shipping.  
+         * The shipping speed for each node in this cluster. This speed doesn't dictate how soon you'll get each device, rather it represents how quickly each device moves to its destination while in transit. Regional shipping speeds are as follows:   In Australia, you have access to express shipping. Typically, devices shipped express are delivered in about a day.   In the European Union (EU), you have access to express shipping. Typically, devices shipped express are delivered in about a day. In addition, most countries in the EU have access to standard shipping, which typically takes less than a week, one way.   In India, devices are delivered in one to seven days.   In the US, you have access to one-day shipping and two-day shipping.  
          */
     var ShippingOption: js.UndefOr[ShippingOption] = js.undefined
     /**
-         * The type of AWS Snowball device to use for this cluster. Currently, the only supported device type for cluster jobs is EDGE.
+         * The type of AWS Snowball device to use for this cluster. The only supported device types for cluster jobs are EDGE, EDGE_C, and EDGE_CG.
          */
     var SnowballType: js.UndefOr[SnowballType] = js.undefined
   }
@@ -237,11 +237,11 @@ object SnowballNs extends js.Object {
          */
     var RoleARN: RoleARN
     /**
-         * The shipping speed for each node in this cluster. This speed doesn't dictate how soon you'll get each Snowball Edge device, rather it represents how quickly each device moves to its destination while in transit. Regional shipping speeds are as follows:   In Australia, you have access to express shipping. Typically, devices shipped express are delivered in about a day.   In the European Union (EU), you have access to express shipping. Typically, Snowball Edges shipped express are delivered in about a day. In addition, most countries in the EU have access to standard shipping, which typically takes less than a week, one way.   In India, Snowball Edges are delivered in one to seven days.   In the US, you have access to one-day shipping and two-day shipping.  
+         * The shipping speed for each node in this cluster. This speed doesn't dictate how soon you'll get each Snowball Edge device, rather it represents how quickly each device moves to its destination while in transit. Regional shipping speeds are as follows:   In Australia, you have access to express shipping. Typically, devices shipped express are delivered in about a day.   In the European Union (EU), you have access to express shipping. Typically, Snowball Edges shipped express are delivered in about a day. In addition, most countries in the EU have access to standard shipping, which typically takes less than a week, one way.   In India, devices are delivered in one to seven days.   In the US, you have access to one-day shipping and two-day shipping.  
          */
     var ShippingOption: ShippingOption
     /**
-         * The type of AWS Snowball device to use for this cluster. Currently, the only supported device type for cluster jobs is EDGE.
+         * The type of AWS Snowball device to use for this cluster. The only supported device types for cluster jobs are EDGE, EDGE_C, and EDGE_CG.
          */
     var SnowballType: js.UndefOr[SnowballType] = js.undefined
   }
@@ -301,7 +301,7 @@ object SnowballNs extends js.Object {
          */
     var SnowballCapacityPreference: js.UndefOr[SnowballCapacity] = js.undefined
     /**
-         * The type of AWS Snowball device to use for this job. Currently, the only supported device type for cluster jobs is EDGE.
+         * The type of AWS Snowball device to use for this job. The only supported device types for cluster jobs are EDGE, EDGE_C, and EDGE_CG.
          */
     var SnowballType: js.UndefOr[SnowballType] = js.undefined
   }
@@ -417,7 +417,7 @@ object SnowballNs extends js.Object {
          */
     var AmiId: AmiId
     /**
-         * The ID of the AMI on the Snowball Edge device.
+         * The ID of the AMI on the supported device.
          */
     var SnowballAmiId: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -692,7 +692,7 @@ object SnowballNs extends js.Object {
   
   trait ListCompatibleImagesRequest extends js.Object {
     /**
-         * The maximum number of results for the list of compatible images. Currently, a Snowball Edge device can store 10 AMIs.
+         * The maximum number of results for the list of compatible images. Currently, each supported device can store 10 AMIs.
          */
     var MaxResults: js.UndefOr[ListLimit] = js.undefined
     /**
@@ -704,7 +704,7 @@ object SnowballNs extends js.Object {
   
   trait ListCompatibleImagesResult extends js.Object {
     /**
-         * A JSON-formatted object that describes a compatible AMI, including the ID and name for a Snowball Edge AMI.
+         * A JSON-formatted object that describes a compatible AMI.
          */
     var CompatibleImages: js.UndefOr[CompatibleImageList] = js.undefined
     /**
@@ -1189,11 +1189,11 @@ object SnowballNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListClustersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on a Snowball Edge device. Currently, supported AMIs are based on the CentOS 7 (x86_64) - with Updates HVM, Ubuntu Server 14.04 LTS (HVM), and Ubuntu 16.04 LTS - Xenial (HVM) images, available on the AWS Marketplace.
+       * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on EDGE, EDGE_C, and EDGE_CG devices. For more information on compatible AMIs, see Using Amazon EC2 Compute Instances in the AWS Snowball Developer Guide.
        */
     def listCompatibleImages(): awsDashSdkLib.libRequestMod.Request[ListCompatibleImagesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on a Snowball Edge device. Currently, supported AMIs are based on the CentOS 7 (x86_64) - with Updates HVM, Ubuntu Server 14.04 LTS (HVM), and Ubuntu 16.04 LTS - Xenial (HVM) images, available on the AWS Marketplace.
+       * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on EDGE, EDGE_C, and EDGE_CG devices. For more information on compatible AMIs, see Using Amazon EC2 Compute Instances in the AWS Snowball Developer Guide.
        */
     def listCompatibleImages(
       callback: js.Function2[
@@ -1203,11 +1203,11 @@ object SnowballNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListCompatibleImagesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on a Snowball Edge device. Currently, supported AMIs are based on the CentOS 7 (x86_64) - with Updates HVM, Ubuntu Server 14.04 LTS (HVM), and Ubuntu 16.04 LTS - Xenial (HVM) images, available on the AWS Marketplace.
+       * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on EDGE, EDGE_C, and EDGE_CG devices. For more information on compatible AMIs, see Using Amazon EC2 Compute Instances in the AWS Snowball Developer Guide.
        */
     def listCompatibleImages(params: ListCompatibleImagesRequest): awsDashSdkLib.libRequestMod.Request[ListCompatibleImagesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on a Snowball Edge device. Currently, supported AMIs are based on the CentOS 7 (x86_64) - with Updates HVM, Ubuntu Server 14.04 LTS (HVM), and Ubuntu 16.04 LTS - Xenial (HVM) images, available on the AWS Marketplace.
+       * This action returns a list of the different Amazon EC2 Amazon Machine Images (AMIs) that are owned by your AWS account that would be supported for use on EDGE, EDGE_C, and EDGE_CG devices. For more information on compatible AMIs, see Using Amazon EC2 Compute Instances in the AWS Snowball Developer Guide.
        */
     def listCompatibleImages(
       params: ListCompatibleImagesRequest,
@@ -1399,8 +1399,8 @@ object SnowballNs extends js.Object {
   type RoleARN = java.lang.String
   type S3ResourceList = js.Array[S3Resource]
   type ShippingOption = awsDashSdkLib.awsDashSdkLibStrings.SECOND_DAY | awsDashSdkLib.awsDashSdkLibStrings.NEXT_DAY | awsDashSdkLib.awsDashSdkLibStrings.EXPRESS | awsDashSdkLib.awsDashSdkLibStrings.STANDARD | java.lang.String
-  type SnowballCapacity = awsDashSdkLib.awsDashSdkLibStrings.T50 | awsDashSdkLib.awsDashSdkLibStrings.T80 | awsDashSdkLib.awsDashSdkLibStrings.T100 | awsDashSdkLib.awsDashSdkLibStrings.NoPreference | java.lang.String
-  type SnowballType = awsDashSdkLib.awsDashSdkLibStrings.STANDARD | awsDashSdkLib.awsDashSdkLibStrings.EDGE | java.lang.String
+  type SnowballCapacity = awsDashSdkLib.awsDashSdkLibStrings.T50 | awsDashSdkLib.awsDashSdkLibStrings.T80 | awsDashSdkLib.awsDashSdkLibStrings.T100 | awsDashSdkLib.awsDashSdkLibStrings.T42 | awsDashSdkLib.awsDashSdkLibStrings.NoPreference | java.lang.String
+  type SnowballType = awsDashSdkLib.awsDashSdkLibStrings.STANDARD | awsDashSdkLib.awsDashSdkLibStrings.EDGE | awsDashSdkLib.awsDashSdkLibStrings.EDGE_C | awsDashSdkLib.awsDashSdkLibStrings.EDGE_CG | java.lang.String
   type SnsTopicARN = java.lang.String
   type String = java.lang.String
   type Timestamp = stdLib.Date

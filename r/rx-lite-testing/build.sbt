@@ -1,15 +1,15 @@
 organization := "com.scalablytyped"
 name := "rx-lite-testing"
-version := "4.0-dt-20180910Z-ff0b5b"
+version := "4.0-dt-20180910Z-4b1e9f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "rx-core" % "4.0-dt-20180910Z-861271",
-  "com.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180910Z-7c2f3d",
-  "com.scalablytyped" %%% "rx-lite" % "4.0-dt-20181018Z-5eb8cf",
-  "com.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180910Z-bb1b39",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
+  "com.scalablytyped" %%% "rx-core" % "4.0-dt-20180910Z-b87bbc",
+  "com.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180910Z-df7bfe",
+  "com.scalablytyped" %%% "rx-lite" % "4.0-dt-20181018Z-3db92b",
+  "com.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180910Z-d01234",
+  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

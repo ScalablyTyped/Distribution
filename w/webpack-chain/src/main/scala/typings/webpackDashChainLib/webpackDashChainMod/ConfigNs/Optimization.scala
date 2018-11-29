@@ -12,7 +12,7 @@ trait Optimization
   def flagIncludedChunks(value: scala.Boolean): this.type = js.native
   def mergeDuplicateChunks(value: scala.Boolean): this.type = js.native
   def minimize(value: scala.Boolean): this.type = js.native
-  def minimizer(value: js.Array[webpackLib.webpackMod.Plugin]): this.type = js.native
+  def minimizer(name: java.lang.String): Plugin[this.type] = js.native
   def namedChunks(value: scala.Boolean): this.type = js.native
   def namedModules(value: scala.Boolean): this.type = js.native
   def noEmitOnErrors(value: scala.Boolean): this.type = js.native

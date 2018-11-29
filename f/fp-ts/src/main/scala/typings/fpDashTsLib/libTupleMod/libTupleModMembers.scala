@@ -49,6 +49,6 @@ object libTupleModMembers extends js.Object {
     /* SB */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     fpDashTsLib.libSetoidMod.Setoid[Tuple[js.Any, js.Any]]
   ] = js.native
-  val tuple: fpDashTsLib.libSemigroupoidMod.Semigroupoid2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libComonadMod.Comonad2[URI] with fpDashTsLib.libFoldableMod.Foldable2[URI] with fpDashTsLib.libTraversableMod.Traversable2[URI] = js.native
+  val tuple: fpDashTsLib.libSemigroupoidMod.Semigroupoid2[URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[URI] with fpDashTsLib.libComonadMod.Comonad2[URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[URI] = js.native
 }
 

@@ -1856,14 +1856,14 @@ trait DeviceFarm
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about samples, given an AWS Device Farm project ARN
+     * Gets information about samples, given an AWS Device Farm job ARN.
      */
   def listSamples(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs.ListSamplesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about samples, given an AWS Device Farm project ARN
+     * Gets information about samples, given an AWS Device Farm job ARN.
      */
   def listSamples(
     callback: js.Function2[
@@ -1876,14 +1876,14 @@ trait DeviceFarm
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about samples, given an AWS Device Farm project ARN
+     * Gets information about samples, given an AWS Device Farm job ARN.
      */
   def listSamples(params: awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs.ListSamplesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs.ListSamplesResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Gets information about samples, given an AWS Device Farm project ARN
+     * Gets information about samples, given an AWS Device Farm job ARN.
      */
   def listSamples(
     params: awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs.ListSamplesRequest,

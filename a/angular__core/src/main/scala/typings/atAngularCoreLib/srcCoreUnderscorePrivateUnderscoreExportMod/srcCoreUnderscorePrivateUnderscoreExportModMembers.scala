@@ -25,10 +25,13 @@ object srcCoreUnderscorePrivateUnderscoreExportModMembers extends js.Object {
   def ɵinject[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T | scala.Null = js.native
   def ɵinject[T](
     token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T],
-    flags: atAngularCoreLib.srcDiInjectorMod.InjectFlags
+    flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
   ): T | scala.Null = js.native
   def ɵinject[T](token: atAngularCoreLib.srcTypeMod.Type[T]): T | scala.Null = js.native
-  def ɵinject[T](token: atAngularCoreLib.srcTypeMod.Type[T], flags: atAngularCoreLib.srcDiInjectorMod.InjectFlags): T | scala.Null = js.native
+  def ɵinject[T](
+    token: atAngularCoreLib.srcTypeMod.Type[T],
+    flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
+  ): T | scala.Null = js.native
   @JSName("ɵinject")
   def ɵinject_TT[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T = js.native
   @JSName("ɵinject")

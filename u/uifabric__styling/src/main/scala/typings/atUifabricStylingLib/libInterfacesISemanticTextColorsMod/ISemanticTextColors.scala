@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 
 trait ISemanticTextColors extends js.Object {
   /**
+       * Color of text for accent button (kicker)
+       */
+  var accentButtonText: java.lang.String
+  /**
        * Neutral colored links and links for action buttons.
        */
   var actionLink: java.lang.String
@@ -52,6 +56,10 @@ trait ISemanticTextColors extends js.Object {
        */
   var buttonTextPressed: java.lang.String
   /**
+       * Disabled de-emphasized text, for use on the default background (bodyBackground).
+       */
+  var disabledBodySubtext: java.lang.String
+  /**
        * The default color for disabled text on the default background (bodyBackground).
        */
   var disabledBodyText: java.lang.String
@@ -71,6 +79,14 @@ trait ISemanticTextColors extends js.Object {
        * The color of placeholder text.
        */
   var inputPlaceholderText: java.lang.String
+  /**
+       * The color of input text.
+       */
+  var inputText: java.lang.String
+  /**
+       * The color of input text on hover.
+       */
+  var inputTextHovered: java.lang.String
   /**
        * The color of a link.
        */

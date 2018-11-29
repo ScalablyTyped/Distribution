@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("apollo-engine-reporting/dist/agent", "EngineReportingAgent")
 @js.native
-class EngineReportingAgent[TContext] () extends js.Object {
-  def this(options: EngineReportingOptions) = this()
+class EngineReportingAgent[TContext] protected () extends js.Object {
+  def this(options: EngineReportingOptions[TContext], hasSchemaHash: js.Any) = this()
+  def this(options: js.UndefOr[scala.Nothing], hasSchemaHash: js.Any) = this()
   var apiKey: js.Any = js.native
   var options: js.Any = js.native
   var report: js.Any = js.native
+  var reportHeader: js.Any = js.native
   var reportSize: js.Any = js.native
   var reportTimer: js.Any = js.native
   var resetReport: js.Any = js.native

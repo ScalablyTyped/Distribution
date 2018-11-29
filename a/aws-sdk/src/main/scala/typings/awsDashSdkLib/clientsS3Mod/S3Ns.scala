@@ -184,11 +184,11 @@ object S3Ns extends js.Object {
          */
     var AllowQuotedRecordDelimiter: js.UndefOr[AllowQuotedRecordDelimiter] = js.undefined
     /**
-         * Single character used to indicate a row should be ignored when present at the start of a row.
+         * The single character used to indicate a row should be ignored when present at the start of a row.
          */
     var Comments: js.UndefOr[Comments] = js.undefined
     /**
-         * Value used to separate individual fields in a record.
+         * The value used to separate individual fields in a record.
          */
     var FieldDelimiter: js.UndefOr[FieldDelimiter] = js.undefined
     /**
@@ -200,11 +200,11 @@ object S3Ns extends js.Object {
          */
     var QuoteCharacter: js.UndefOr[QuoteCharacter] = js.undefined
     /**
-         * Single character used for escaping the quote character inside an already escaped value.
+         * The single character used for escaping the quote character inside an already escaped value.
          */
     var QuoteEscapeCharacter: js.UndefOr[QuoteEscapeCharacter] = js.undefined
     /**
-         * Value used to separate individual records.
+         * The value used to separate individual records.
          */
     var RecordDelimiter: js.UndefOr[RecordDelimiter] = js.undefined
   }
@@ -212,15 +212,15 @@ object S3Ns extends js.Object {
   
   trait CSVOutput extends js.Object {
     /**
-         * Value used to separate individual fields in a record.
+         * The value used to separate individual fields in a record.
          */
     var FieldDelimiter: js.UndefOr[FieldDelimiter] = js.undefined
     /**
-         * Value used for escaping where the field delimiter is part of the value.
+         * The value used for escaping where the field delimiter is part of the value.
          */
     var QuoteCharacter: js.UndefOr[QuoteCharacter] = js.undefined
     /**
-         * Single character used for escaping the quote character inside an already escaped value.
+         * Th single character used for escaping the quote character inside an already escaped value.
          */
     var QuoteEscapeCharacter: js.UndefOr[QuoteEscapeCharacter] = js.undefined
     /**
@@ -228,7 +228,7 @@ object S3Ns extends js.Object {
          */
     var QuoteFields: js.UndefOr[QuoteFields] = js.undefined
     /**
-         * Value used to separate individual records.
+         * The value used to separate individual records.
          */
     var RecordDelimiter: js.UndefOr[RecordDelimiter] = js.undefined
   }
@@ -443,6 +443,18 @@ object S3Ns extends js.Object {
          * Specifies whether the metadata is copied from the source object or replaced with metadata provided in the request.
          */
     var MetadataDirective: js.UndefOr[MetadataDirective] = js.undefined
+    /**
+         * Specifies whether you want to apply a Legal Hold to the copied object.
+         */
+    var ObjectLockLegalHoldStatus: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
+    /**
+         * The Object Lock mode that you want to apply to the copied object.
+         */
+    var ObjectLockMode: js.UndefOr[ObjectLockMode] = js.undefined
+    /**
+         * The date and time when you want the copied object's Object Lock to expire.
+         */
+    var ObjectLockRetainUntilDate: js.UndefOr[ObjectLockRetainUntilDate] = js.undefined
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
     /**
          * Specifies the algorithm to use to when encrypting the object (e.g., AES256).
@@ -541,6 +553,10 @@ object S3Ns extends js.Object {
          * Allows grantee to write the ACL for the applicable bucket.
          */
     var GrantWriteACP: js.UndefOr[GrantWriteACP] = js.undefined
+    /**
+         * Specifies whether you want S3 Object Lock to be enabled for the new bucket.
+         */
+    var ObjectLockEnabledForBucket: js.UndefOr[ObjectLockEnabledForBucket] = js.undefined
   }
   
   
@@ -636,6 +652,18 @@ object S3Ns extends js.Object {
          * A map of metadata to store with the object in S3.
          */
     var Metadata: js.UndefOr[Metadata] = js.undefined
+    /**
+         * Specifies whether you want to apply a Legal Hold to the uploaded object.
+         */
+    var ObjectLockLegalHoldStatus: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
+    /**
+         * Specifies the Object Lock mode that you want to apply to the uploaded object.
+         */
+    var ObjectLockMode: js.UndefOr[ObjectLockMode] = js.undefined
+    /**
+         * Specifies the date and time when you want the Object Lock to expire.
+         */
+    var ObjectLockRetainUntilDate: js.UndefOr[ObjectLockRetainUntilDate] = js.undefined
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
     /**
          * Specifies the algorithm to use to when encrypting the object (e.g., AES256).
@@ -669,6 +697,22 @@ object S3Ns extends js.Object {
          * If the bucket is configured as a website, redirects requests for this object to another object in the same bucket or to an external URL. Amazon S3 stores the value of this header in the object metadata.
          */
     var WebsiteRedirectLocation: js.UndefOr[WebsiteRedirectLocation] = js.undefined
+  }
+  
+  
+  trait DefaultRetention extends js.Object {
+    /**
+         * The number of days that you want to specify for the default retention period.
+         */
+    var Days: js.UndefOr[Days] = js.undefined
+    /**
+         * The default Object Lock retention mode you want to apply to new objects placed in the specified bucket.
+         */
+    var Mode: js.UndefOr[ObjectLockRetentionMode] = js.undefined
+    /**
+         * The number of years that you want to specify for the default retention period.
+         */
+    var Years: js.UndefOr[Years] = js.undefined
   }
   
   
@@ -742,7 +786,7 @@ object S3Ns extends js.Object {
   
   trait DeleteBucketReplicationRequest extends js.Object {
     /**
-         * Deletes the replication subresource associated with the specified bucket.  There is usually some time lag before replication configuration deletion is fully propagated to all the Amazon S3 systems.   For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
+         *  The bucket name.   It can take a while to propagate the deletion of a replication configuration to all Amazon S3 systems. 
          */
     var Bucket: BucketName
   }
@@ -786,7 +830,7 @@ object S3Ns extends js.Object {
   
   trait DeleteMarkerReplication extends js.Object {
     /**
-         * The status of the delete marker replication.   In the current implementation, Amazon S3 does not replicate the delete markers. Therefore, the status must be Disabled.  
+         * The status of the delete marker replication.   In the current implementation, Amazon S3 doesn't replicate the delete markers. The status must be Disabled.  
          */
     var Status: js.UndefOr[DeleteMarkerReplicationStatus] = js.undefined
   }
@@ -807,6 +851,10 @@ object S3Ns extends js.Object {
   
   trait DeleteObjectRequest extends js.Object {
     var Bucket: BucketName
+    /**
+         * 
+         */
+    var BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined
     var Key: ObjectKey
     /**
          * The concatenation of the authentication device's serial number, a space, and the value that is displayed on your authentication device.
@@ -847,12 +895,24 @@ object S3Ns extends js.Object {
   
   trait DeleteObjectsRequest extends js.Object {
     var Bucket: BucketName
+    /**
+         * Specifies whether you want to delete this object even if it has a Governance-type Object Lock in place. You must have sufficient permissions to perform this operation.
+         */
+    var BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined
     var Delete: Delete
     /**
          * The concatenation of the authentication device's serial number, a space, and the value that is displayed on your authentication device.
          */
     var MFA: js.UndefOr[MFA] = js.undefined
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+  }
+  
+  
+  trait DeletePublicAccessBlockRequest extends js.Object {
+    /**
+         * The Amazon S3 bucket whose PublicAccessBlock configuration you want to delete. 
+         */
+    var Bucket: BucketName
   }
   
   
@@ -866,23 +926,23 @@ object S3Ns extends js.Object {
   
   trait Destination extends js.Object {
     /**
-         *  Container for information regarding the access control for replicas.   Use only in a cross-account scenario, where source and destination bucket owners are not the same, when you want to change replica ownership to the AWS account that owns the destination bucket. If you don't add this element to the replication configuration, the replicas are owned by same AWS account that owns the source object. 
+         * A container for information about access control for replicas.  Use this element only in a cross-account scenario where source and destination bucket owners are not the same to change replica ownership to the AWS account that owns the destination bucket. If you don't add this element to the replication configuration, the replicas are owned by same AWS account that owns the source object. 
          */
     var AccessControlTranslation: js.UndefOr[AccessControlTranslation] = js.undefined
     /**
-         *  Account ID of the destination bucket. Currently Amazon S3 verifies this value only if Access Control Translation is enabled.   In a cross-account scenario, if you tell Amazon S3 to change replica ownership to the AWS account that owns the destination bucket by adding the AccessControlTranslation element, this is the account ID of the destination bucket owner. 
+         * The account ID of the destination bucket. Currently, Amazon S3 verifies this value only if Access Control Translation is enabled.  In a cross-account scenario, if you change replica ownership to the AWS account that owns the destination bucket by adding the AccessControlTranslation element, this is the account ID of the owner of the destination bucket. 
          */
     var Account: js.UndefOr[AccountId] = js.undefined
     /**
-         *  Amazon resource name (ARN) of the bucket where you want Amazon S3 to store replicas of the object identified by the rule.   If you have multiple rules in your replication configuration, all rules must specify the same bucket as the destination. A replication configuration can replicate objects only to one destination bucket. 
+         *  The Amazon Resource Name (ARN) of the bucket where you want Amazon S3 to store replicas of the object identified by the rule.   If there are multiple rules in your replication configuration, all rules must specify the same bucket as the destination. A replication configuration can replicate objects to only one destination bucket. 
          */
     var Bucket: BucketName
     /**
-         *  Container that provides encryption-related information. You must specify this element if the SourceSelectionCriteria is specified. 
+         * A container that provides information about encryption. If SourceSelectionCriteria is specified, you must specify this element. 
          */
     var EncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
     /**
-         * The class of storage used to store the object.
+         *  The class of storage used to store the object. By default Amazon S3 uses storage class of the source object when creating a replica. 
          */
     var StorageClass: js.UndefOr[StorageClass] = js.undefined
   }
@@ -906,7 +966,7 @@ object S3Ns extends js.Object {
   
   trait EncryptionConfiguration extends js.Object {
     /**
-         *  The ID of the AWS KMS key for the region where the destination bucket resides. Amazon S3 uses this key to encrypt the replica object. 
+         * The ID of the AWS KMS key for the AWS Region where the destination bucket resides. Amazon S3 uses this key to encrypt the replica object. 
          */
     var ReplicaKmsKeyID: js.UndefOr[ReplicaKmsKeyID] = js.undefined
   }
@@ -933,7 +993,7 @@ object S3Ns extends js.Object {
   
   trait FilterRule extends js.Object {
     /**
-         * Object key name prefix or suffix identifying one or more objects to which the filtering rule applies. Maximum prefix length can be up to 1,024 characters. Overlapping prefixes and suffixes are not supported. For more information, go to Configuring Event Notifications in the Amazon Simple Storage Service Developer Guide.
+         * The object key name prefix or suffix identifying one or more objects to which the filtering rule applies. The maximum prefix length is 1,024 characters. Overlapping prefixes and suffixes are not supported. For more information, see Configuring Event Notifications in the Amazon Simple Storage Service Developer Guide.
          */
     var Name: js.UndefOr[FilterRuleName] = js.undefined
     var Value: js.UndefOr[FilterRuleValue] = js.undefined
@@ -1114,6 +1174,22 @@ object S3Ns extends js.Object {
   }
   
   
+  trait GetBucketPolicyStatusOutput extends js.Object {
+    /**
+         * The policy status for the specified bucket.
+         */
+    var PolicyStatus: js.UndefOr[PolicyStatus] = js.undefined
+  }
+  
+  
+  trait GetBucketPolicyStatusRequest extends js.Object {
+    /**
+         * The name of the Amazon S3 bucket whose policy status you want to retrieve.
+         */
+    var Bucket: BucketName
+  }
+  
+  
   trait GetBucketReplicationOutput extends js.Object {
     var ReplicationConfiguration: js.UndefOr[ReplicationConfiguration] = js.undefined
   }
@@ -1198,6 +1274,47 @@ object S3Ns extends js.Object {
   }
   
   
+  trait GetObjectLegalHoldOutput extends js.Object {
+    /**
+         * The current Legal Hold status for the specified object.
+         */
+    var LegalHold: js.UndefOr[ObjectLockLegalHold] = js.undefined
+  }
+  
+  
+  trait GetObjectLegalHoldRequest extends js.Object {
+    /**
+         * The bucket containing the object whose Legal Hold status you want to retrieve.
+         */
+    var Bucket: BucketName
+    /**
+         * The key name for the object whose Legal Hold status you want to retrieve.
+         */
+    var Key: ObjectKey
+    var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+    /**
+         * The version ID of the object whose Legal Hold status you want to retrieve.
+         */
+    var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
+  }
+  
+  
+  trait GetObjectLockConfigurationOutput extends js.Object {
+    /**
+         * The specified bucket's Object Lock configuration.
+         */
+    var ObjectLockConfiguration: js.UndefOr[ObjectLockConfiguration] = js.undefined
+  }
+  
+  
+  trait GetObjectLockConfigurationRequest extends js.Object {
+    /**
+         * The bucket whose Object Lock configuration you want to retrieve.
+         */
+    var Bucket: BucketName
+  }
+  
+  
   trait GetObjectOutput extends js.Object {
     var AcceptRanges: js.UndefOr[AcceptRanges] = js.undefined
     /**
@@ -1260,6 +1377,18 @@ object S3Ns extends js.Object {
          * This is set to the number of metadata entries not returned in x-amz-meta headers. This can happen if you create metadata using an API like SOAP that supports more flexible metadata than the REST API. For example, using SOAP, you can create metadata whose values are not legal HTTP headers.
          */
     var MissingMeta: js.UndefOr[MissingMeta] = js.undefined
+    /**
+         * 
+         */
+    var ObjectLockLegalHoldStatus: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
+    /**
+         * The Object Lock mode currently in place for this object.
+         */
+    var ObjectLockMode: js.UndefOr[ObjectLockMode] = js.undefined
+    /**
+         * The date and time when this object's Object Lock will expire.
+         */
+    var ObjectLockRetainUntilDate: js.UndefOr[ObjectLockRetainUntilDate] = js.undefined
     /**
          * The count of parts this object has.
          */
@@ -1373,6 +1502,31 @@ object S3Ns extends js.Object {
   }
   
   
+  trait GetObjectRetentionOutput extends js.Object {
+    /**
+         * The container element for an object's retention settings.
+         */
+    var Retention: js.UndefOr[ObjectLockRetention] = js.undefined
+  }
+  
+  
+  trait GetObjectRetentionRequest extends js.Object {
+    /**
+         * The bucket containing the object whose retention settings you want to retrieve.
+         */
+    var Bucket: BucketName
+    /**
+         * The key name for the object whose retention settings you want to retrieve.
+         */
+    var Key: ObjectKey
+    var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+    /**
+         * The version ID for the object whose retention settings you want to retrieve.
+         */
+    var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
+  }
+  
+  
   trait GetObjectTaggingOutput extends js.Object {
     var TagSet: TagSet
     var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
@@ -1396,6 +1550,22 @@ object S3Ns extends js.Object {
     var Bucket: BucketName
     var Key: ObjectKey
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+  }
+  
+  
+  trait GetPublicAccessBlockOutput extends js.Object {
+    /**
+         * The PublicAccessBlock configuration currently in effect for this Amazon S3 bucket.
+         */
+    var PublicAccessBlockConfiguration: js.UndefOr[PublicAccessBlockConfiguration] = js.undefined
+  }
+  
+  
+  trait GetPublicAccessBlockRequest extends js.Object {
+    /**
+         * The name of the Amazon S3 bucket whose PublicAccessBlock configuration you want to retrieve. 
+         */
+    var Bucket: BucketName
   }
   
   
@@ -1499,6 +1669,18 @@ object S3Ns extends js.Object {
          * This is set to the number of metadata entries not returned in x-amz-meta headers. This can happen if you create metadata using an API like SOAP that supports more flexible metadata than the REST API. For example, using SOAP, you can create metadata whose values are not legal HTTP headers.
          */
     var MissingMeta: js.UndefOr[MissingMeta] = js.undefined
+    /**
+         * The Legal Hold status for the specified object.
+         */
+    var ObjectLockLegalHoldStatus: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
+    /**
+         * The Object Lock mode currently in place for this object.
+         */
+    var ObjectLockMode: js.UndefOr[ObjectLockMode] = js.undefined
+    /**
+         * The date and time when this object's Object Lock will expire.
+         */
+    var ObjectLockRetainUntilDate: js.UndefOr[ObjectLockRetainUntilDate] = js.undefined
     /**
          * The count of parts this object has.
          */
@@ -1666,11 +1848,11 @@ object S3Ns extends js.Object {
   
   trait InventoryEncryption extends js.Object {
     /**
-         * Specifies the use of SSE-KMS to encrypt delievered Inventory reports.
+         * Specifies the use of SSE-KMS to encrypt delivered Inventory reports.
          */
     var SSEKMS: js.UndefOr[SSEKMS] = js.undefined
     /**
-         * Specifies the use of SSE-S3 to encrypt delievered Inventory reports.
+         * Specifies the use of SSE-S3 to encrypt delivered Inventory reports.
          */
     var SSES3: js.UndefOr[SSES3] = js.undefined
   }
@@ -1737,7 +1919,7 @@ object S3Ns extends js.Object {
     var Filter: js.UndefOr[NotificationConfigurationFilter] = js.undefined
     var Id: js.UndefOr[NotificationId] = js.undefined
     /**
-         * Lambda cloud function ARN that Amazon S3 can invoke when it detects events of the specified type.
+         * The Amazon Resource Name (ARN) of the Lambda cloud function that Amazon S3 can invoke when it detects events of the specified type.
          */
     var LambdaFunctionArn: LambdaFunctionArn
   }
@@ -2444,6 +2626,46 @@ object S3Ns extends js.Object {
   }
   
   
+  trait ObjectLockConfiguration extends js.Object {
+    /**
+         * Indicates whether this object has an Object Lock configuration enabled.
+         */
+    var ObjectLockEnabled: js.UndefOr[ObjectLockEnabled] = js.undefined
+    /**
+         * The Object Lock rule in place for the specified object.
+         */
+    var Rule: js.UndefOr[ObjectLockRule] = js.undefined
+  }
+  
+  
+  trait ObjectLockLegalHold extends js.Object {
+    /**
+         * Indicates whether the specified object has a Legal Hold in place.
+         */
+    var Status: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
+  }
+  
+  
+  trait ObjectLockRetention extends js.Object {
+    /**
+         * Indicates the Retention mode for the specified object.
+         */
+    var Mode: js.UndefOr[ObjectLockRetentionMode] = js.undefined
+    /**
+         * 
+         */
+    var RetainUntilDate: js.UndefOr[_Date] = js.undefined
+  }
+  
+  
+  trait ObjectLockRule extends js.Object {
+    /**
+         * The default retention period that you want to apply to new objects placed in the specified bucket.
+         */
+    var DefaultRetention: js.UndefOr[DefaultRetention] = js.undefined
+  }
+  
+  
   trait ObjectVersion extends js.Object {
     var ETag: js.UndefOr[ETag] = js.undefined
     /**
@@ -2517,9 +2739,17 @@ object S3Ns extends js.Object {
          */
     var PartNumber: js.UndefOr[PartNumber] = js.undefined
     /**
-         * Size of the uploaded part data.
+         * Size in bytes of the uploaded part data.
          */
     var Size: js.UndefOr[Size] = js.undefined
+  }
+  
+  
+  trait PolicyStatus extends js.Object {
+    /**
+         * The policy status for this bucket. TRUE indicates that this bucket is public. FALSE indicates that the bucket is not public.
+         */
+    var IsPublic: js.UndefOr[IsPublic] = js.undefined
   }
   
   @js.native
@@ -2537,15 +2767,15 @@ object S3Ns extends js.Object {
   
   trait Progress extends js.Object {
     /**
-         * Current number of uncompressed object bytes processed.
+         * The current number of uncompressed object bytes processed.
          */
     var BytesProcessed: js.UndefOr[BytesProcessed] = js.undefined
     /**
-         * Current number of bytes of records payload data returned.
+         * The current number of bytes of records payload data returned.
          */
     var BytesReturned: js.UndefOr[BytesReturned] = js.undefined
     /**
-         * Current number of object bytes scanned.
+         * The current number of object bytes scanned.
          */
     var BytesScanned: js.UndefOr[BytesScanned] = js.undefined
   }
@@ -2556,6 +2786,26 @@ object S3Ns extends js.Object {
          * The Progress event details.
          */
     var Details: js.UndefOr[Progress] = js.undefined
+  }
+  
+  
+  trait PublicAccessBlockConfiguration extends js.Object {
+    /**
+         * Specifies whether Amazon S3 should block public access control lists (ACLs) for this bucket and objects in this bucket. Setting this element to TRUE causes the following behavior:   PUT Bucket acl and PUT Object acl calls fail if the specified ACL is public.   PUT Object calls fail if the request includes a public ACL.   Enabling this setting doesn't affect existing policies or ACLs.
+         */
+    var BlockPublicAcls: js.UndefOr[Setting] = js.undefined
+    /**
+         * Specifies whether Amazon S3 should block public bucket policies for this bucket. Setting this element to TRUE causes Amazon S3 to reject calls to PUT Bucket policy if the specified bucket policy allows public access.  Enabling this setting doesn't affect existing bucket policies.
+         */
+    var BlockPublicPolicy: js.UndefOr[Setting] = js.undefined
+    /**
+         * Specifies whether Amazon S3 should ignore public ACLs for this bucket and objects in this bucket. Setting this element to TRUE causes Amazon S3 to ignore all public ACLs on this bucket and objects in this bucket. Enabling this setting doesn't affect the persistence of any existing ACLs and doesn't prevent new public ACLs from being set.
+         */
+    var IgnorePublicAcls: js.UndefOr[Setting] = js.undefined
+    /**
+         * Specifies whether Amazon S3 should restrict public bucket policies for this bucket. Setting this element to TRUE restricts access to this bucket to only AWS services and authorized users within this account if the bucket has a public policy. Enabling this setting doesn't affect previously stored bucket policies, except that public and cross-account access within any public bucket policy, including non-public delegation to specific accounts, is blocked.
+         */
+    var RestrictPublicBuckets: js.UndefOr[Setting] = js.undefined
   }
   
   
@@ -2798,6 +3048,62 @@ object S3Ns extends js.Object {
   }
   
   
+  trait PutObjectLegalHoldOutput extends js.Object {
+    var RequestCharged: js.UndefOr[RequestCharged] = js.undefined
+  }
+  
+  
+  trait PutObjectLegalHoldRequest extends js.Object {
+    /**
+         * The bucket containing the object that you want to place a Legal Hold on.
+         */
+    var Bucket: BucketName
+    /**
+         * The MD5 signature for the configuration included in your request.
+         */
+    var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
+    /**
+         * The key name for the object that you want to place a Legal Hold on.
+         */
+    var Key: ObjectKey
+    /**
+         * Container element for the Legal Hold configuration you want to apply to the specified object.
+         */
+    var LegalHold: js.UndefOr[ObjectLockLegalHold] = js.undefined
+    var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+    /**
+         * The version ID of the object that you want to place a Legal Hold on.
+         */
+    var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
+  }
+  
+  
+  trait PutObjectLockConfigurationOutput extends js.Object {
+    var RequestCharged: js.UndefOr[RequestCharged] = js.undefined
+  }
+  
+  
+  trait PutObjectLockConfigurationRequest extends js.Object {
+    /**
+         * The bucket whose Object Lock configuration you want to create or replace.
+         */
+    var Bucket: BucketName
+    /**
+         * The MD5 signature for the configuration included in your request.
+         */
+    var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
+    /**
+         * The Object Lock configuration that you want to apply to the specified bucket.
+         */
+    var ObjectLockConfiguration: js.UndefOr[ObjectLockConfiguration] = js.undefined
+    var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+    /**
+         * 
+         */
+    var Token: js.UndefOr[ObjectLockToken] = js.undefined
+  }
+  
+  
   trait PutObjectOutput extends js.Object {
     /**
          * Entity tag for the uploaded object.
@@ -2900,6 +3206,18 @@ object S3Ns extends js.Object {
          * A map of metadata to store with the object in S3.
          */
     var Metadata: js.UndefOr[Metadata] = js.undefined
+    /**
+         * The Legal Hold status that you want to apply to the specified object.
+         */
+    var ObjectLockLegalHoldStatus: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
+    /**
+         * The Object Lock mode that you want to apply to this object.
+         */
+    var ObjectLockMode: js.UndefOr[ObjectLockMode] = js.undefined
+    /**
+         * The date and time when you want this object's Object Lock to expire.
+         */
+    var ObjectLockRetainUntilDate: js.UndefOr[ObjectLockRetainUntilDate] = js.undefined
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
     /**
          * Specifies the algorithm to use to when encrypting the object (e.g., AES256).
@@ -2926,13 +3244,47 @@ object S3Ns extends js.Object {
          */
     var StorageClass: js.UndefOr[StorageClass] = js.undefined
     /**
-         * The tag-set for the object. The tag-set must be encoded as URL Query parameters
+         * The tag-set for the object. The tag-set must be encoded as URL Query parameters. (For example, "Key1=Value1")
          */
     var Tagging: js.UndefOr[TaggingHeader] = js.undefined
     /**
          * If the bucket is configured as a website, redirects requests for this object to another object in the same bucket or to an external URL. Amazon S3 stores the value of this header in the object metadata.
          */
     var WebsiteRedirectLocation: js.UndefOr[WebsiteRedirectLocation] = js.undefined
+  }
+  
+  
+  trait PutObjectRetentionOutput extends js.Object {
+    var RequestCharged: js.UndefOr[RequestCharged] = js.undefined
+  }
+  
+  
+  trait PutObjectRetentionRequest extends js.Object {
+    /**
+         * The bucket that contains the object you want to apply this Object Retention configuration to.
+         */
+    var Bucket: BucketName
+    /**
+         * 
+         */
+    var BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined
+    /**
+         * The MD5 signature for the configuration included in your request.
+         */
+    var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
+    /**
+         * The key name for the object that you want to apply this Object Retention configuration to.
+         */
+    var Key: ObjectKey
+    var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+    /**
+         * The container element for the Object Retention configuration.
+         */
+    var Retention: js.UndefOr[ObjectLockRetention] = js.undefined
+    /**
+         * The version ID for the object that you want to apply this Object Retention configuration to.
+         */
+    var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
   }
   
   
@@ -2950,12 +3302,28 @@ object S3Ns extends js.Object {
   }
   
   
+  trait PutPublicAccessBlockRequest extends js.Object {
+    /**
+         * The name of the Amazon S3 bucket whose PublicAccessBlock configuration you want to set.
+         */
+    var Bucket: BucketName
+    /**
+         * The MD5 hash of the PutPublicAccessBlock request body. 
+         */
+    var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
+    /**
+         * The PublicAccessBlock configuration that you want to apply to this Amazon S3 bucket. You can enable the configuration options in any combination. For more information about when Amazon S3 considers a bucket or object public, see The Meaning of "Public" in the Amazon Simple Storage Service Developer Guide.
+         */
+    var PublicAccessBlockConfiguration: PublicAccessBlockConfiguration
+  }
+  
+  
   trait QueueConfiguration extends js.Object {
     var Events: EventList
     var Filter: js.UndefOr[NotificationConfigurationFilter] = js.undefined
     var Id: js.UndefOr[NotificationId] = js.undefined
     /**
-         * Amazon SQS queue ARN to which Amazon S3 will publish a message when it detects events of specified type.
+         * The Amazon Resource Name (ARN) of the Amazon SQS queue to which Amazon S3 will publish a message when it detects events of the specified type.
          */
     var QueueArn: QueueArn
   }
@@ -3015,11 +3383,11 @@ object S3Ns extends js.Object {
   
   trait ReplicationConfiguration extends js.Object {
     /**
-         * Amazon Resource Name (ARN) of an IAM role for Amazon S3 to assume when replicating the objects.
+         * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that Amazon S3 can assume when replicating the objects.
          */
     var Role: Role
     /**
-         * Container for one or more replication rules. Replication configuration must have at least one rule and can contain up to 1,000 rules. 
+         * A container for one or more replication rules. A replication configuration must have at least one rule and can contain a maximum of 1,000 rules. 
          */
     var Rules: ReplicationRules
   }
@@ -3028,28 +3396,28 @@ object S3Ns extends js.Object {
   trait ReplicationRule extends js.Object {
     var DeleteMarkerReplication: js.UndefOr[DeleteMarkerReplication] = js.undefined
     /**
-         * Container for replication destination information.
+         * A container for information about the replication destination.
          */
     var Destination: Destination
     var Filter: js.UndefOr[ReplicationRuleFilter] = js.undefined
     /**
-         * Unique identifier for the rule. The value cannot be longer than 255 characters.
+         * A unique identifier for the rule. The maximum value is 255 characters.
          */
     var ID: js.UndefOr[ID] = js.undefined
     /**
-         * Object keyname prefix identifying one or more objects to which the rule applies. Maximum prefix length can be up to 1,024 characters. 
+         * An object keyname prefix that identifies the object or objects to which the rule applies. The maximum prefix length is 1,024 characters. 
          */
     var Prefix: js.UndefOr[Prefix] = js.undefined
     /**
-         * The priority associated with the rule. If you specify multiple rules in a replication configuration, then Amazon S3 applies rule priority in the event there are conflicts (two or more rules identify the same object based on filter specified). The rule with higher priority takes precedence. For example,   Same object quality prefix based filter criteria If prefixes you specified in multiple rules overlap.    Same object qualify tag based filter criteria specified in multiple rules   For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide.
+         * The priority associated with the rule. If you specify multiple rules in a replication configuration, Amazon S3 prioritizes the rules to prevent conflicts when filtering. If two or more rules identify the same object based on a specified filter, the rule with higher priority takes precedence. For example:   Same object quality prefix based filter criteria If prefixes you specified in multiple rules overlap    Same object qualify tag based filter criteria specified in multiple rules   For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide.
          */
     var Priority: js.UndefOr[Priority] = js.undefined
     /**
-         *  Container that describes additional filters in identifying source objects that you want to replicate. Currently, Amazon S3 supports only the filter that you can specify for objects created with server-side encryption using an AWS KMS-managed key. You can choose to enable or disable replication of these objects.   if you want Amazon S3 to replicate objects created with server-side encryption using AWS KMS-managed keys. 
+         * A container that describes additional filters for identifying the source objects that you want to replicate. You can choose to enable or disable the replication of these objects. Currently, Amazon S3 supports only the filter that you can specify for objects created with server-side encryption using an AWS KMS-Managed Key (SSE-KMS).   If you want Amazon S3 to replicate objects created with server-side encryption using AWS KMS-Managed Keys. 
          */
     var SourceSelectionCriteria: js.UndefOr[SourceSelectionCriteria] = js.undefined
     /**
-         * The rule is ignored if status is not Enabled.
+         * If status isn't enabled, the rule is ignored.
          */
     var Status: ReplicationRuleStatus
   }
@@ -3063,15 +3431,15 @@ object S3Ns extends js.Object {
   
   trait ReplicationRuleFilter extends js.Object {
     /**
-         * Container for specifying rule filters. These filters determine the subset of objects to which the rule applies. The element is required only if you specify more than one filter. For example:    You specify both a Prefix and a Tag filters. Then you wrap these in an And tag.   You specify filter based on multiple tags. Then you wrap the Tag elements in an And tag.  
+         * A container for specifying rule filters. The filters determine the subset of objects to which the rule applies. This element is required only if you specify more than one filter. For example:    If you specify both a Prefix and a Tag filter, wrap these filters in an And tag.   If you specify a filter based on multiple tags, wrap the Tag elements in an And tag.  
          */
     var And: js.UndefOr[ReplicationRuleAndOperator] = js.undefined
     /**
-         * Object keyname prefix that identifies subset of objects to which the rule applies.
+         * An object keyname prefix that identifies the subset of objects to which the rule applies.
          */
     var Prefix: js.UndefOr[Prefix] = js.undefined
     /**
-         * Container for specifying a tag key and value.  The rule applies only to objects having the tag in its tagset.
+         * A container for specifying a tag key and value.  The rule applies only to objects that have the tag in their tag set.
          */
     var Tag: js.UndefOr[Tag] = js.undefined
   }
@@ -3149,7 +3517,7 @@ object S3Ns extends js.Object {
          */
     var Condition: js.UndefOr[Condition] = js.undefined
     /**
-         * Container for redirect information. You can redirect requests to another host, to another page, or with another protocol. In the event of an error, you can can specify a different error code to return.
+         * Container for redirect information. You can redirect requests to another host, to another page, or with another protocol. In the event of an error, you can specify a different error code to return.
          */
     var Redirect: Redirect
   }
@@ -3232,7 +3600,7 @@ object S3Ns extends js.Object {
   
   trait SelectObjectContentRequest extends js.Object {
     /**
-         * The S3 Bucket.
+         * The S3 bucket.
          */
     var Bucket: BucketName
     /**
@@ -3240,7 +3608,7 @@ object S3Ns extends js.Object {
          */
     var Expression: Expression
     /**
-         * The type of the provided expression (e.g., SQL).
+         * The type of the provided expression (for example., SQL).
          */
     var ExpressionType: ExpressionType
     /**
@@ -3248,7 +3616,7 @@ object S3Ns extends js.Object {
          */
     var InputSerialization: InputSerialization
     /**
-         * The Object Key.
+         * The object key.
          */
     var Key: ObjectKey
     /**
@@ -3260,15 +3628,15 @@ object S3Ns extends js.Object {
          */
     var RequestProgress: js.UndefOr[RequestProgress] = js.undefined
     /**
-         * The SSE Algorithm used to encrypt the object. For more information, go to  Server-Side Encryption (Using Customer-Provided Encryption Keys. 
+         * The SSE Algorithm used to encrypt the object. For more information, see  Server-Side Encryption (Using Customer-Provided Encryption Keys. 
          */
     var SSECustomerAlgorithm: js.UndefOr[SSECustomerAlgorithm] = js.undefined
     /**
-         * The SSE Customer Key. For more information, go to  Server-Side Encryption (Using Customer-Provided Encryption Keys. 
+         * The SSE Customer Key. For more information, see  Server-Side Encryption (Using Customer-Provided Encryption Keys. 
          */
     var SSECustomerKey: js.UndefOr[SSECustomerKey] = js.undefined
     /**
-         * The SSE Customer Key MD5. For more information, go to  Server-Side Encryption (Using Customer-Provided Encryption Keys. 
+         * The SSE Customer Key MD5. For more information, see  Server-Side Encryption (Using Customer-Provided Encryption Keys. 
          */
     var SSECustomerKeyMD5: js.UndefOr[SSECustomerKeyMD5] = js.undefined
   }
@@ -3324,7 +3692,7 @@ object S3Ns extends js.Object {
   
   trait SourceSelectionCriteria extends js.Object {
     /**
-         *  Container for filter information of selection of KMS Encrypted S3 objects. The element is required if you include SourceSelectionCriteria in the replication configuration. 
+         *  A container for filter information for the selection of S3 objects encrypted with AWS KMS. If you include SourceSelectionCriteria in the replication configuration, this element is required. 
          */
     var SseKmsEncryptedObjects: js.UndefOr[SseKmsEncryptedObjects] = js.undefined
   }
@@ -3332,7 +3700,7 @@ object S3Ns extends js.Object {
   
   trait SseKmsEncryptedObjects extends js.Object {
     /**
-         * The replication for KMS encrypted S3 objects is disabled if status is not Enabled.
+         *  If the status is not Enabled, replication for S3 objects encrypted with AWS KMS is disabled.
          */
     var Status: SseKmsEncryptedObjectsStatus
   }
@@ -3340,15 +3708,15 @@ object S3Ns extends js.Object {
   
   trait Stats extends js.Object {
     /**
-         * Total number of uncompressed object bytes processed.
+         * The total number of uncompressed object bytes processed.
          */
     var BytesProcessed: js.UndefOr[BytesProcessed] = js.undefined
     /**
-         * Total number of bytes of records payload data returned.
+         * The total number of bytes of records payload data returned.
          */
     var BytesReturned: js.UndefOr[BytesReturned] = js.undefined
     /**
-         * Total number of object bytes scanned.
+         * The total number of object bytes scanned.
          */
     var BytesScanned: js.UndefOr[BytesScanned] = js.undefined
   }
@@ -3413,7 +3781,7 @@ object S3Ns extends js.Object {
     var Filter: js.UndefOr[NotificationConfigurationFilter] = js.undefined
     var Id: js.UndefOr[NotificationId] = js.undefined
     /**
-         * Amazon SNS topic ARN to which Amazon S3 will publish a message when it detects events of specified type.
+         * The Amazon Resource Name (ARN) of the Amazon SNS topic to which Amazon S3 will publish a message when it detects events of the specified type.
          */
     var TopicArn: TopicArn
   }
@@ -3641,21 +4009,21 @@ object S3Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the cors configuration information set for the bucket.
+       * Deletes the CORS configuration information set for the bucket.
        */
     def deleteBucketCors(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the cors configuration information set for the bucket.
+       * Deletes the CORS configuration information set for the bucket.
        */
     def deleteBucketCors(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the cors configuration information set for the bucket.
+       * Deletes the CORS configuration information set for the bucket.
        */
     def deleteBucketCors(params: DeleteBucketCorsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the cors configuration information set for the bucket.
+       * Deletes the CORS configuration information set for the bucket.
        */
     def deleteBucketCors(
       params: DeleteBucketCorsRequest,
@@ -3767,21 +4135,21 @@ object S3Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the replication configuration from the bucket.
+       *  Deletes the replication configuration from the bucket. For information about replication configuration, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
        */
     def deleteBucketReplication(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the replication configuration from the bucket.
+       *  Deletes the replication configuration from the bucket. For information about replication configuration, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
        */
     def deleteBucketReplication(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the replication configuration from the bucket.
+       *  Deletes the replication configuration from the bucket. For information about replication configuration, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
        */
     def deleteBucketReplication(params: DeleteBucketReplicationRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the replication configuration from the bucket.
+       *  Deletes the replication configuration from the bucket. For information about replication configuration, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
        */
     def deleteBucketReplication(
       params: DeleteBucketReplicationRequest,
@@ -3917,6 +4285,27 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteObjectsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Removes the PublicAccessBlock configuration from an Amazon S3 bucket.
+       */
+    def deletePublicAccessBlock(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the PublicAccessBlock configuration from an Amazon S3 bucket.
+       */
+    def deletePublicAccessBlock(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the PublicAccessBlock configuration from an Amazon S3 bucket.
+       */
+    def deletePublicAccessBlock(params: DeletePublicAccessBlockRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Removes the PublicAccessBlock configuration from an Amazon S3 bucket.
+       */
+    def deletePublicAccessBlock(
+      params: DeletePublicAccessBlockRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Returns the accelerate configuration of a bucket.
        */
     def getBucketAccelerateConfiguration(): awsDashSdkLib.libRequestMod.Request[GetBucketAccelerateConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4004,11 +4393,11 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetBucketAnalyticsConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the cors configuration for the bucket.
+       * Returns the CORS configuration for the bucket.
        */
     def getBucketCors(): awsDashSdkLib.libRequestMod.Request[GetBucketCorsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the cors configuration for the bucket.
+       * Returns the CORS configuration for the bucket.
        */
     def getBucketCors(
       callback: js.Function2[
@@ -4018,11 +4407,11 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetBucketCorsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the cors configuration for the bucket.
+       * Returns the CORS configuration for the bucket.
        */
     def getBucketCors(params: GetBucketCorsRequest): awsDashSdkLib.libRequestMod.Request[GetBucketCorsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the cors configuration for the bucket.
+       * Returns the CORS configuration for the bucket.
        */
     def getBucketCors(
       params: GetBucketCorsRequest,
@@ -4323,11 +4712,40 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetBucketPolicyOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the replication configuration of a bucket.
+       * Retrieves the policy status for an Amazon S3 bucket, indicating whether the bucket is public.
+       */
+    def getBucketPolicyStatus(): awsDashSdkLib.libRequestMod.Request[GetBucketPolicyStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the policy status for an Amazon S3 bucket, indicating whether the bucket is public.
+       */
+    def getBucketPolicyStatus(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetBucketPolicyStatusOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetBucketPolicyStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the policy status for an Amazon S3 bucket, indicating whether the bucket is public.
+       */
+    def getBucketPolicyStatus(params: GetBucketPolicyStatusRequest): awsDashSdkLib.libRequestMod.Request[GetBucketPolicyStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the policy status for an Amazon S3 bucket, indicating whether the bucket is public.
+       */
+    def getBucketPolicyStatus(
+      params: GetBucketPolicyStatusRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetBucketPolicyStatusOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetBucketPolicyStatusOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Returns the replication configuration of a bucket.   It can take a while to propagate the put or delete a replication configuration to all Amazon S3 systems. Therefore, a get request soon after put or delete can return a wrong result.  
        */
     def getBucketReplication(): awsDashSdkLib.libRequestMod.Request[GetBucketReplicationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the replication configuration of a bucket.
+       * Returns the replication configuration of a bucket.   It can take a while to propagate the put or delete a replication configuration to all Amazon S3 systems. Therefore, a get request soon after put or delete can return a wrong result.  
        */
     def getBucketReplication(
       callback: js.Function2[
@@ -4337,11 +4755,11 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetBucketReplicationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the replication configuration of a bucket.
+       * Returns the replication configuration of a bucket.   It can take a while to propagate the put or delete a replication configuration to all Amazon S3 systems. Therefore, a get request soon after put or delete can return a wrong result.  
        */
     def getBucketReplication(params: GetBucketReplicationRequest): awsDashSdkLib.libRequestMod.Request[GetBucketReplicationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Returns the replication configuration of a bucket.
+       * Returns the replication configuration of a bucket.   It can take a while to propagate the put or delete a replication configuration to all Amazon S3 systems. Therefore, a get request soon after put or delete can return a wrong result.  
        */
     def getBucketReplication(
       params: GetBucketReplicationRequest,
@@ -4518,6 +4936,93 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetObjectAclOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Gets an object's current Legal Hold status.
+       */
+    def getObjectLegalHold(): awsDashSdkLib.libRequestMod.Request[GetObjectLegalHoldOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets an object's current Legal Hold status.
+       */
+    def getObjectLegalHold(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetObjectLegalHoldOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetObjectLegalHoldOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets an object's current Legal Hold status.
+       */
+    def getObjectLegalHold(params: GetObjectLegalHoldRequest): awsDashSdkLib.libRequestMod.Request[GetObjectLegalHoldOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets an object's current Legal Hold status.
+       */
+    def getObjectLegalHold(
+      params: GetObjectLegalHoldRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetObjectLegalHoldOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetObjectLegalHoldOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the Object Lock configuration for a bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+       */
+    def getObjectLockConfiguration(): awsDashSdkLib.libRequestMod.Request[GetObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the Object Lock configuration for a bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+       */
+    def getObjectLockConfiguration(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetObjectLockConfigurationOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the Object Lock configuration for a bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+       */
+    def getObjectLockConfiguration(params: GetObjectLockConfigurationRequest): awsDashSdkLib.libRequestMod.Request[GetObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Gets the Object Lock configuration for a bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+       */
+    def getObjectLockConfiguration(
+      params: GetObjectLockConfigurationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetObjectLockConfigurationOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves an object's retention settings.
+       */
+    def getObjectRetention(): awsDashSdkLib.libRequestMod.Request[GetObjectRetentionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves an object's retention settings.
+       */
+    def getObjectRetention(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetObjectRetentionOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetObjectRetentionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves an object's retention settings.
+       */
+    def getObjectRetention(params: GetObjectRetentionRequest): awsDashSdkLib.libRequestMod.Request[GetObjectRetentionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves an object's retention settings.
+       */
+    def getObjectRetention(
+      params: GetObjectRetentionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetObjectRetentionOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetObjectRetentionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Returns the tag-set of an object.
        */
     def getObjectTagging(): awsDashSdkLib.libRequestMod.Request[GetObjectTaggingOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4575,6 +5080,35 @@ object S3Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetObjectTorrentOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the PublicAccessBlock configuration for an Amazon S3 bucket.
+       */
+    def getPublicAccessBlock(): awsDashSdkLib.libRequestMod.Request[GetPublicAccessBlockOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the PublicAccessBlock configuration for an Amazon S3 bucket.
+       */
+    def getPublicAccessBlock(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetPublicAccessBlockOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetPublicAccessBlockOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the PublicAccessBlock configuration for an Amazon S3 bucket.
+       */
+    def getPublicAccessBlock(params: GetPublicAccessBlockRequest): awsDashSdkLib.libRequestMod.Request[GetPublicAccessBlockOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Retrieves the PublicAccessBlock configuration for an Amazon S3 bucket.
+       */
+    def getPublicAccessBlock(
+      params: GetPublicAccessBlockRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetPublicAccessBlockOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetPublicAccessBlockOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * This operation is useful to determine if a bucket exists and you have permission to access it.
        */
@@ -4927,21 +5461,21 @@ object S3Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Sets the cors configuration for a bucket.
+       * Sets the CORS configuration for a bucket.
        */
     def putBucketCors(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Sets the cors configuration for a bucket.
+       * Sets the CORS configuration for a bucket.
        */
     def putBucketCors(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Sets the cors configuration for a bucket.
+       * Sets the CORS configuration for a bucket.
        */
     def putBucketCors(params: PutBucketCorsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Sets the cors configuration for a bucket.
+       * Sets the CORS configuration for a bucket.
        */
     def putBucketCors(
       params: PutBucketCorsRequest,
@@ -5137,21 +5671,21 @@ object S3Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Creates a new replication configuration (or replaces an existing one, if present). For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
+       *  Creates a replication configuration or replaces an existing one. For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
        */
     def putBucketReplication(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Creates a new replication configuration (or replaces an existing one, if present). For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
+       *  Creates a replication configuration or replaces an existing one. For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
        */
     def putBucketReplication(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Creates a new replication configuration (or replaces an existing one, if present). For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
+       *  Creates a replication configuration or replaces an existing one. For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
        */
     def putBucketReplication(params: PutBucketReplicationRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       *  Creates a new replication configuration (or replaces an existing one, if present). For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
+       *  Creates a replication configuration or replaces an existing one. For more information, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. 
        */
     def putBucketReplication(
       params: PutBucketReplicationRequest,
@@ -5292,6 +5826,93 @@ object S3Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutObjectAclOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Applies a Legal Hold configuration to the specified object.
+       */
+    def putObjectLegalHold(): awsDashSdkLib.libRequestMod.Request[PutObjectLegalHoldOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Applies a Legal Hold configuration to the specified object.
+       */
+    def putObjectLegalHold(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutObjectLegalHoldOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutObjectLegalHoldOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Applies a Legal Hold configuration to the specified object.
+       */
+    def putObjectLegalHold(params: PutObjectLegalHoldRequest): awsDashSdkLib.libRequestMod.Request[PutObjectLegalHoldOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Applies a Legal Hold configuration to the specified object.
+       */
+    def putObjectLegalHold(
+      params: PutObjectLegalHoldRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutObjectLegalHoldOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutObjectLegalHoldOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Places an Object Lock configuration on the specified bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+       */
+    def putObjectLockConfiguration(): awsDashSdkLib.libRequestMod.Request[PutObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Places an Object Lock configuration on the specified bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+       */
+    def putObjectLockConfiguration(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutObjectLockConfigurationOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Places an Object Lock configuration on the specified bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+       */
+    def putObjectLockConfiguration(params: PutObjectLockConfigurationRequest): awsDashSdkLib.libRequestMod.Request[PutObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Places an Object Lock configuration on the specified bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+       */
+    def putObjectLockConfiguration(
+      params: PutObjectLockConfigurationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutObjectLockConfigurationOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Places an Object Retention configuration on an object.
+       */
+    def putObjectRetention(): awsDashSdkLib.libRequestMod.Request[PutObjectRetentionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Places an Object Retention configuration on an object.
+       */
+    def putObjectRetention(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutObjectRetentionOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutObjectRetentionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Places an Object Retention configuration on an object.
+       */
+    def putObjectRetention(params: PutObjectRetentionRequest): awsDashSdkLib.libRequestMod.Request[PutObjectRetentionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Places an Object Retention configuration on an object.
+       */
+    def putObjectRetention(
+      params: PutObjectRetentionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutObjectRetentionOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutObjectRetentionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Sets the supplied tag-set to an object that already exists in a bucket
        */
     def putObjectTagging(): awsDashSdkLib.libRequestMod.Request[PutObjectTaggingOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -5320,6 +5941,27 @@ object S3Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutObjectTaggingOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates or modifies the PublicAccessBlock configuration for an Amazon S3 bucket.
+       */
+    def putPublicAccessBlock(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates or modifies the PublicAccessBlock configuration for an Amazon S3 bucket.
+       */
+    def putPublicAccessBlock(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates or modifies the PublicAccessBlock configuration for an Amazon S3 bucket.
+       */
+    def putPublicAccessBlock(params: PutPublicAccessBlockRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates or modifies the PublicAccessBlock configuration for an Amazon S3 bucket.
+       */
+    def putPublicAccessBlock(
+      params: PutPublicAccessBlockRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Restores an archived copy of an object back into Amazon S3
        */
@@ -5906,6 +6548,7 @@ object S3Ns extends js.Object {
   type BucketName = java.lang.String
   type BucketVersioningStatus = awsDashSdkLib.awsDashSdkLibStrings.Enabled | awsDashSdkLib.awsDashSdkLibStrings.Suspended | java.lang.String
   type Buckets = js.Array[Bucket]
+  type BypassGovernanceRetention = scala.Boolean
   type BytesProcessed = scala.Double
   type BytesReturned = scala.Double
   type BytesScanned = scala.Double
@@ -5953,7 +6596,7 @@ object S3Ns extends js.Object {
   type EnableRequestProgress = scala.Boolean
   type EncodingType = awsDashSdkLib.awsDashSdkLibStrings.url | java.lang.String
   type Errors = js.Array[Error]
-  type Event = awsDashSdkLib.awsDashSdkLibStrings.`s3:ReducedRedundancyLostObject` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectCreated:*` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectCreated:Put` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectCreated:Post` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectCreated:Copy` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectCreated:CompleteMultipartUpload` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectRemoved:*` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectRemoved:Delete` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectRemoved:DeleteMarkerCreated` | java.lang.String
+  type Event = awsDashSdkLib.awsDashSdkLibStrings.`s3:ReducedRedundancyLostObject` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectCreated:*` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectCreated:Put` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectCreated:Post` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectCreated:Copy` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectCreated:CompleteMultipartUpload` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectRemoved:*` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectRemoved:Delete` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectRemoved:DeleteMarkerCreated` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectRestore:Post` | awsDashSdkLib.awsDashSdkLibStrings.`s3:ObjectRestore:Completed` | java.lang.String
   type EventList = js.Array[Event]
   type Expiration = java.lang.String
   type ExpirationStatus = awsDashSdkLib.awsDashSdkLibStrings.Enabled | awsDashSdkLib.awsDashSdkLibStrings.Disabled | java.lang.String
@@ -5989,10 +6632,11 @@ object S3Ns extends js.Object {
   type InventoryFrequency = awsDashSdkLib.awsDashSdkLibStrings.Daily | awsDashSdkLib.awsDashSdkLibStrings.Weekly | java.lang.String
   type InventoryId = java.lang.String
   type InventoryIncludedObjectVersions = awsDashSdkLib.awsDashSdkLibStrings.All | awsDashSdkLib.awsDashSdkLibStrings.Current | java.lang.String
-  type InventoryOptionalField = awsDashSdkLib.awsDashSdkLibStrings.Size | awsDashSdkLib.awsDashSdkLibStrings.LastModifiedDate | awsDashSdkLib.awsDashSdkLibStrings.StorageClass | awsDashSdkLib.awsDashSdkLibStrings.ETag | awsDashSdkLib.awsDashSdkLibStrings.IsMultipartUploaded | awsDashSdkLib.awsDashSdkLibStrings.ReplicationStatus | awsDashSdkLib.awsDashSdkLibStrings.EncryptionStatus | java.lang.String
+  type InventoryOptionalField = awsDashSdkLib.awsDashSdkLibStrings.Size | awsDashSdkLib.awsDashSdkLibStrings.LastModifiedDate | awsDashSdkLib.awsDashSdkLibStrings.StorageClass | awsDashSdkLib.awsDashSdkLibStrings.ETag | awsDashSdkLib.awsDashSdkLibStrings.IsMultipartUploaded | awsDashSdkLib.awsDashSdkLibStrings.ReplicationStatus | awsDashSdkLib.awsDashSdkLibStrings.EncryptionStatus | awsDashSdkLib.awsDashSdkLibStrings.ObjectLockRetainUntilDate | awsDashSdkLib.awsDashSdkLibStrings.ObjectLockMode | awsDashSdkLib.awsDashSdkLibStrings.ObjectLockLegalHoldStatus | java.lang.String
   type InventoryOptionalFields = js.Array[InventoryOptionalField]
   type IsEnabled = scala.Boolean
   type IsLatest = scala.Boolean
+  type IsPublic = scala.Boolean
   type IsTruncated = scala.Boolean
   type JSONType = awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT | awsDashSdkLib.awsDashSdkLibStrings.LINES | java.lang.String
   type KMSContext = java.lang.String
@@ -6034,7 +6678,14 @@ object S3Ns extends js.Object {
   type ObjectIdentifierList = js.Array[ObjectIdentifier]
   type ObjectKey = java.lang.String
   type ObjectList = js.Array[js.Object]
-  type ObjectStorageClass = awsDashSdkLib.awsDashSdkLibStrings.STANDARD | awsDashSdkLib.awsDashSdkLibStrings.REDUCED_REDUNDANCY | awsDashSdkLib.awsDashSdkLibStrings.GLACIER | awsDashSdkLib.awsDashSdkLibStrings.STANDARD_IA | awsDashSdkLib.awsDashSdkLibStrings.ONEZONE_IA | java.lang.String
+  type ObjectLockEnabled = awsDashSdkLib.awsDashSdkLibStrings.Enabled | java.lang.String
+  type ObjectLockEnabledForBucket = scala.Boolean
+  type ObjectLockLegalHoldStatus = awsDashSdkLib.awsDashSdkLibStrings.ON | awsDashSdkLib.awsDashSdkLibStrings.OFF | java.lang.String
+  type ObjectLockMode = awsDashSdkLib.awsDashSdkLibStrings.GOVERNANCE | awsDashSdkLib.awsDashSdkLibStrings.COMPLIANCE | java.lang.String
+  type ObjectLockRetainUntilDate = stdLib.Date
+  type ObjectLockRetentionMode = awsDashSdkLib.awsDashSdkLibStrings.GOVERNANCE | awsDashSdkLib.awsDashSdkLibStrings.COMPLIANCE | java.lang.String
+  type ObjectLockToken = java.lang.String
+  type ObjectStorageClass = awsDashSdkLib.awsDashSdkLibStrings.STANDARD | awsDashSdkLib.awsDashSdkLibStrings.REDUCED_REDUNDANCY | awsDashSdkLib.awsDashSdkLibStrings.GLACIER | awsDashSdkLib.awsDashSdkLibStrings.STANDARD_IA | awsDashSdkLib.awsDashSdkLibStrings.ONEZONE_IA | awsDashSdkLib.awsDashSdkLibStrings.INTELLIGENT_TIERING | java.lang.String
   type ObjectVersionId = java.lang.String
   type ObjectVersionList = js.Array[ObjectVersion]
   type ObjectVersionStorageClass = awsDashSdkLib.awsDashSdkLibStrings.STANDARD | java.lang.String
@@ -6084,10 +6735,11 @@ object S3Ns extends js.Object {
   type SelectObjectContentEventStream = awsDashSdkLib.libEventDashStreamEventDashStreamMod.EventStream[awsDashSdkLib.Anon_Records]
   type ServerSideEncryption = awsDashSdkLib.awsDashSdkLibStrings.AES256 | awsDashSdkLib.awsDashSdkLibStrings.`aws:kms` | java.lang.String
   type ServerSideEncryptionRules = js.Array[ServerSideEncryptionRule]
+  type Setting = scala.Boolean
   type Size = scala.Double
   type SseKmsEncryptedObjectsStatus = awsDashSdkLib.awsDashSdkLibStrings.Enabled | awsDashSdkLib.awsDashSdkLibStrings.Disabled | java.lang.String
   type StartAfter = java.lang.String
-  type StorageClass = awsDashSdkLib.awsDashSdkLibStrings.STANDARD | awsDashSdkLib.awsDashSdkLibStrings.REDUCED_REDUNDANCY | awsDashSdkLib.awsDashSdkLibStrings.STANDARD_IA | awsDashSdkLib.awsDashSdkLibStrings.ONEZONE_IA | java.lang.String
+  type StorageClass = awsDashSdkLib.awsDashSdkLibStrings.STANDARD | awsDashSdkLib.awsDashSdkLibStrings.REDUCED_REDUNDANCY | awsDashSdkLib.awsDashSdkLibStrings.STANDARD_IA | awsDashSdkLib.awsDashSdkLibStrings.ONEZONE_IA | awsDashSdkLib.awsDashSdkLibStrings.INTELLIGENT_TIERING | awsDashSdkLib.awsDashSdkLibStrings.GLACIER | java.lang.String
   type StorageClassAnalysisSchemaVersion = awsDashSdkLib.awsDashSdkLibStrings.V_1 | java.lang.String
   type Suffix = java.lang.String
   type TagCount = scala.Double
@@ -6102,7 +6754,7 @@ object S3Ns extends js.Object {
   type TopicArn = java.lang.String
   type TopicConfigurationList = js.Array[TopicConfiguration]
   type TransitionList = js.Array[Transition]
-  type TransitionStorageClass = awsDashSdkLib.awsDashSdkLibStrings.GLACIER | awsDashSdkLib.awsDashSdkLibStrings.STANDARD_IA | awsDashSdkLib.awsDashSdkLibStrings.ONEZONE_IA | java.lang.String
+  type TransitionStorageClass = awsDashSdkLib.awsDashSdkLibStrings.GLACIER | awsDashSdkLib.awsDashSdkLibStrings.STANDARD_IA | awsDashSdkLib.awsDashSdkLibStrings.ONEZONE_IA | awsDashSdkLib.awsDashSdkLibStrings.INTELLIGENT_TIERING | java.lang.String
   type Type = awsDashSdkLib.awsDashSdkLibStrings.CanonicalUser | awsDashSdkLib.awsDashSdkLibStrings.AmazonCustomerByEmail | awsDashSdkLib.awsDashSdkLibStrings.Group | java.lang.String
   type URI = java.lang.String
   type UploadIdMarker = java.lang.String
@@ -6110,6 +6762,7 @@ object S3Ns extends js.Object {
   type Value = java.lang.String
   type VersionIdMarker = java.lang.String
   type WebsiteRedirectLocation = java.lang.String
+  type Years = scala.Double
   type _Date = stdLib.Date
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2006-03-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
 }

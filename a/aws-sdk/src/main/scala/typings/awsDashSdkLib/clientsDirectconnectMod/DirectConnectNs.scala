@@ -147,6 +147,10 @@ object DirectConnectNs extends js.Object {
          */
     var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.undefined
     /**
+         * The ID of the BGP peer.
+         */
+    var bgpPeerId: js.UndefOr[BGPPeerId] = js.undefined
+    /**
          * The state of the BGP peer. The following are the possible values:    verifying: The BGP peering addresses or ASN require validation before the BGP peer can be created. This state applies only to public virtual interfaces.    pending: The BGP peer is created, and remains in this state until it is ready to be established.    available: The BGP peer is ready to be established.    deleting: The BGP peer is being deleted.    deleted: The BGP peer is deleted and cannot be established.  
          */
     var bgpPeerState: js.UndefOr[BGPPeerState] = js.undefined
@@ -250,6 +254,10 @@ object DirectConnectNs extends js.Object {
          * The state of the connection. The following are the possible values:    ordering: The initial state of a hosted connection provisioned on an interconnect. The connection stays in the ordering state until the owner of the hosted connection confirms or declines the connection order.    requested: The initial state of a standard connection. The connection stays in the requested state until the Letter of Authorization (LOA) is sent to the customer.    pending: The connection has been approved and is being initialized.    available: The network link is up and the connection is ready for use.    down: The network link is down.    deleting: The connection is being deleted.    deleted: The connection has been deleted.    rejected: A hosted connection in the ordering state enters the rejected state if it is deleted by the customer.  
          */
     var connectionState: js.UndefOr[ConnectionState] = js.undefined
+    /**
+         * Indicates whether the connection supports a secondary BGP peer in the same address family (IPv4/IPv6).
+         */
+    var hasLogicalRedundancy: js.UndefOr[HasLogicalRedundancy] = js.undefined
     /**
          * Indicates whether jumbo frames (9001 MTU) are supported.
          */
@@ -446,6 +454,10 @@ object DirectConnectNs extends js.Object {
          * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
          */
     var asn: js.UndefOr[ASN] = js.undefined
+    /**
+         * The ID of the BGP peer.
+         */
+    var bgpPeerId: js.UndefOr[BGPPeerId] = js.undefined
     /**
          * The IP address assigned to the customer interface.
          */
@@ -883,6 +895,10 @@ object DirectConnectNs extends js.Object {
          */
     var bandwidth: js.UndefOr[Bandwidth] = js.undefined
     /**
+         * Indicates whether the interconnect supports a secondary BGP in the same address family (IPv4/IPv6).
+         */
+    var hasLogicalRedundancy: js.UndefOr[HasLogicalRedundancy] = js.undefined
+    /**
          * The ID of the interconnect.
          */
     var interconnectId: js.UndefOr[InterconnectId] = js.undefined
@@ -946,6 +962,10 @@ object DirectConnectNs extends js.Object {
          * The individual bandwidth of the physical connections bundled by the LAG. The possible values are 1Gbps and 10Gbps.
          */
     var connectionsBandwidth: js.UndefOr[Bandwidth] = js.undefined
+    /**
+         * Indicates whether the LAG supports a secondary BGP peer in the same address family (IPv4/IPv6).
+         */
+    var hasLogicalRedundancy: js.UndefOr[HasLogicalRedundancy] = js.undefined
     /**
          * Indicates whether jumbo frames (9001 MTU) are supported.
          */
@@ -1515,11 +1535,11 @@ object DirectConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ConfirmPublicVirtualInterfaceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a BGP peer on the specified virtual interface. The BGP peer cannot be in the same address family (IPv4/IPv6) of an existing BGP peer on the virtual interface. You must create a BGP peer for the corresponding address family in order to access AWS resources that also use that address family. When creating a IPv6 BGP peer, omit the Amazon address and customer address. IPv6 addresses are automatically assigned from the Amazon pool of IPv6 addresses; you cannot specify custom IPv6 addresses. For a public virtual interface, the Autonomous System Number (ASN) must be private or already whitelisted for the virtual interface.
+       * Creates a BGP peer on the specified virtual interface. You must create a BGP peer for the corresponding address family (IPv4/IPv6) in order to access AWS resources that also use that address family. If logical redundancy is not supported by the connection, interconnect, or LAG, the BGP peer cannot be in the same address family as an existing BGP peer on the virtual interface. When creating a IPv6 BGP peer, omit the Amazon address and customer address. IPv6 addresses are automatically assigned from the Amazon pool of IPv6 addresses; you cannot specify custom IPv6 addresses. For a public virtual interface, the Autonomous System Number (ASN) must be private or already whitelisted for the virtual interface.
        */
     def createBGPPeer(): awsDashSdkLib.libRequestMod.Request[CreateBGPPeerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a BGP peer on the specified virtual interface. The BGP peer cannot be in the same address family (IPv4/IPv6) of an existing BGP peer on the virtual interface. You must create a BGP peer for the corresponding address family in order to access AWS resources that also use that address family. When creating a IPv6 BGP peer, omit the Amazon address and customer address. IPv6 addresses are automatically assigned from the Amazon pool of IPv6 addresses; you cannot specify custom IPv6 addresses. For a public virtual interface, the Autonomous System Number (ASN) must be private or already whitelisted for the virtual interface.
+       * Creates a BGP peer on the specified virtual interface. You must create a BGP peer for the corresponding address family (IPv4/IPv6) in order to access AWS resources that also use that address family. If logical redundancy is not supported by the connection, interconnect, or LAG, the BGP peer cannot be in the same address family as an existing BGP peer on the virtual interface. When creating a IPv6 BGP peer, omit the Amazon address and customer address. IPv6 addresses are automatically assigned from the Amazon pool of IPv6 addresses; you cannot specify custom IPv6 addresses. For a public virtual interface, the Autonomous System Number (ASN) must be private or already whitelisted for the virtual interface.
        */
     def createBGPPeer(
       callback: js.Function2[
@@ -1529,11 +1549,11 @@ object DirectConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateBGPPeerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a BGP peer on the specified virtual interface. The BGP peer cannot be in the same address family (IPv4/IPv6) of an existing BGP peer on the virtual interface. You must create a BGP peer for the corresponding address family in order to access AWS resources that also use that address family. When creating a IPv6 BGP peer, omit the Amazon address and customer address. IPv6 addresses are automatically assigned from the Amazon pool of IPv6 addresses; you cannot specify custom IPv6 addresses. For a public virtual interface, the Autonomous System Number (ASN) must be private or already whitelisted for the virtual interface.
+       * Creates a BGP peer on the specified virtual interface. You must create a BGP peer for the corresponding address family (IPv4/IPv6) in order to access AWS resources that also use that address family. If logical redundancy is not supported by the connection, interconnect, or LAG, the BGP peer cannot be in the same address family as an existing BGP peer on the virtual interface. When creating a IPv6 BGP peer, omit the Amazon address and customer address. IPv6 addresses are automatically assigned from the Amazon pool of IPv6 addresses; you cannot specify custom IPv6 addresses. For a public virtual interface, the Autonomous System Number (ASN) must be private or already whitelisted for the virtual interface.
        */
     def createBGPPeer(params: CreateBGPPeerRequest): awsDashSdkLib.libRequestMod.Request[CreateBGPPeerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Creates a BGP peer on the specified virtual interface. The BGP peer cannot be in the same address family (IPv4/IPv6) of an existing BGP peer on the virtual interface. You must create a BGP peer for the corresponding address family in order to access AWS resources that also use that address family. When creating a IPv6 BGP peer, omit the Amazon address and customer address. IPv6 addresses are automatically assigned from the Amazon pool of IPv6 addresses; you cannot specify custom IPv6 addresses. For a public virtual interface, the Autonomous System Number (ASN) must be private or already whitelisted for the virtual interface.
+       * Creates a BGP peer on the specified virtual interface. You must create a BGP peer for the corresponding address family (IPv4/IPv6) in order to access AWS resources that also use that address family. If logical redundancy is not supported by the connection, interconnect, or LAG, the BGP peer cannot be in the same address family as an existing BGP peer on the virtual interface. When creating a IPv6 BGP peer, omit the Amazon address and customer address. IPv6 addresses are automatically assigned from the Amazon pool of IPv6 addresses; you cannot specify custom IPv6 addresses. For a public virtual interface, the Autonomous System Number (ASN) must be private or already whitelisted for the virtual interface.
        */
     def createBGPPeer(
       params: CreateBGPPeerRequest,
@@ -1721,11 +1741,11 @@ object DirectConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[VirtualInterface, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the BGP peer on the specified virtual interface with the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.
+       * Deletes the specified BGP peer on the specified virtual interface with the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.
        */
     def deleteBGPPeer(): awsDashSdkLib.libRequestMod.Request[DeleteBGPPeerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the BGP peer on the specified virtual interface with the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.
+       * Deletes the specified BGP peer on the specified virtual interface with the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.
        */
     def deleteBGPPeer(
       callback: js.Function2[
@@ -1735,11 +1755,11 @@ object DirectConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteBGPPeerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the BGP peer on the specified virtual interface with the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.
+       * Deletes the specified BGP peer on the specified virtual interface with the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.
        */
     def deleteBGPPeer(params: DeleteBGPPeerRequest): awsDashSdkLib.libRequestMod.Request[DeleteBGPPeerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Deletes the BGP peer on the specified virtual interface with the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.
+       * Deletes the specified BGP peer on the specified virtual interface with the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.
        */
     def deleteBGPPeer(
       params: DeleteBGPPeerRequest,
@@ -2553,6 +2573,7 @@ object DirectConnectNs extends js.Object {
   type AwsDevice = java.lang.String
   type AwsDeviceV2 = java.lang.String
   type BGPAuthKey = java.lang.String
+  type BGPPeerId = java.lang.String
   type BGPPeerList = js.Array[BGPPeer]
   type BGPPeerState = awsDashSdkLib.awsDashSdkLibStrings.verifying | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
   type BGPStatus = awsDashSdkLib.awsDashSdkLibStrings.up | awsDashSdkLib.awsDashSdkLibStrings.down | java.lang.String
@@ -2574,6 +2595,7 @@ object DirectConnectNs extends js.Object {
   type DirectConnectGatewayList = js.Array[DirectConnectGateway]
   type DirectConnectGatewayName = java.lang.String
   type DirectConnectGatewayState = awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.available | awsDashSdkLib.awsDashSdkLibStrings.deleting | awsDashSdkLib.awsDashSdkLibStrings.deleted | java.lang.String
+  type HasLogicalRedundancy = awsDashSdkLib.awsDashSdkLibStrings.unknown | awsDashSdkLib.awsDashSdkLibStrings.yes | awsDashSdkLib.awsDashSdkLibStrings.no | java.lang.String
   type InterconnectId = java.lang.String
   type InterconnectList = js.Array[Interconnect]
   type InterconnectName = java.lang.String

@@ -17,6 +17,7 @@ class IterableDiffers protected ()
 @JSImport("@angular/core/public_api", "IterableDiffers")
 @js.native
 object IterableDiffers extends js.Object {
+  /** @nocollapse */
   var ngInjectableDef: scala.Nothing = js.native
   def create(
     factories: js.Array[

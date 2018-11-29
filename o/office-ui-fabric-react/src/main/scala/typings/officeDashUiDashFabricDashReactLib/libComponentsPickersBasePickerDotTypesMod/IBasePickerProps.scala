@@ -29,14 +29,14 @@ trait IBasePickerProps[T]
   var defaultSelectedItems: js.UndefOr[js.Array[T]] = js.native
   /**
        * Flag for disabling the picker.
-       * @default false
+       * @defaultvalue false
        */
   var disabled: js.UndefOr[scala.Boolean] = js.native
   /**
        * Adds an additional alert for the currently selected suggestion. This prop should be set to true for IE11 and below, as it
        * enables proper screen reader behavior for each suggestion (since aria-activedescendant does not work with IE11).
        * It should not be set for modern browsers (Edge, Chrome).
-       * @default false
+       * @defaultvalue false
        */
   var enableSelectedSuggestionAlert: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -47,12 +47,12 @@ trait IBasePickerProps[T]
   ] = js.native
   /**
        * AutoFill input native props
-       * @default undefined
+       * @defaultvalue undefined
        */
   var inputProps: js.UndefOr[IInputProps] = js.native
   /**
        * Restrict the amount of selectable items.
-       * @default undefined
+       * @defaultvalue undefined
        */
   var itemLimit: js.UndefOr[scala.Double] = js.native
   /**
@@ -151,7 +151,7 @@ trait IBasePickerProps[T]
   var pickerSuggestionsProps: js.UndefOr[IBasePickerSuggestionsProps] = js.native
   /**
        * Aria label for the "X" button in the selected item component.
-       * @default ''
+       * @defaultvalue ''
        */
   var removeButtonAriaLabel: js.UndefOr[java.lang.String] = js.native
   /**

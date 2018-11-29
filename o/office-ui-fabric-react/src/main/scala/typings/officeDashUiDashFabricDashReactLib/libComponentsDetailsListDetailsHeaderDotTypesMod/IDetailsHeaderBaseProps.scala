@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IDetailsHeaderBaseProps
-  extends reactLib.reactMod.ReactNs.Props[
+  extends reactLib.reactMod.ReactNs.ClassAttributes[
       officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsHeaderDotBaseMod.DetailsHeaderBase
     ]
      with officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsRowDotTypesMod.IDetailsItemProps {

@@ -172,6 +172,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait bar2Buffer extends js.Object
   
   @js.native
+  sealed trait bar2Determinate extends js.Object
+  
+  @js.native
   sealed trait bar2Indeterminate extends js.Object
   
   @js.native
@@ -233,6 +236,9 @@ object atMaterialDashUiCoreLibStrings {
   
   @js.native
   sealed trait circle extends js.Object
+  
+  @js.native
+  sealed trait circleDisableShrink extends js.Object
   
   @js.native
   sealed trait circleIndeterminate extends js.Object
@@ -805,6 +811,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait message extends js.Object
   
   @js.native
+  sealed trait middle extends js.Object
+  
+  @js.native
   sealed trait mini extends js.Object
   
   @js.native
@@ -1342,6 +1351,7 @@ object atMaterialDashUiCoreLibStrings {
   def bar1Determinate: bar1Determinate = "bar1Determinate".asInstanceOf[bar1Determinate]
   def bar1Indeterminate: bar1Indeterminate = "bar1Indeterminate".asInstanceOf[bar1Indeterminate]
   def bar2Buffer: bar2Buffer = "bar2Buffer".asInstanceOf[bar2Buffer]
+  def bar2Determinate: bar2Determinate = "bar2Determinate".asInstanceOf[bar2Determinate]
   def bar2Indeterminate: bar2Indeterminate = "bar2Indeterminate".asInstanceOf[bar2Indeterminate]
   def barColorPrimary: barColorPrimary = "barColorPrimary".asInstanceOf[barColorPrimary]
   def barColorSecondary: barColorSecondary = "barColorSecondary".asInstanceOf[barColorSecondary]
@@ -1363,6 +1373,7 @@ object atMaterialDashUiCoreLibStrings {
   def childLeaving: childLeaving = "childLeaving".asInstanceOf[childLeaving]
   def childPulsate: childPulsate = "childPulsate".asInstanceOf[childPulsate]
   def circle: circle = "circle".asInstanceOf[circle]
+  def circleDisableShrink: circleDisableShrink = "circleDisableShrink".asInstanceOf[circleDisableShrink]
   def circleIndeterminate: circleIndeterminate = "circleIndeterminate".asInstanceOf[circleIndeterminate]
   def circleStatic: circleStatic = "circleStatic".asInstanceOf[circleStatic]
   def className: className = "className".asInstanceOf[className]
@@ -1553,6 +1564,7 @@ object atMaterialDashUiCoreLibStrings {
   def medium: medium = "medium".asInstanceOf[medium]
   def menuItem: menuItem = "menuItem".asInstanceOf[menuItem]
   def message: message = "message".asInstanceOf[message]
+  def middle: middle = "middle".asInstanceOf[middle]
   def mini: mini = "mini".asInstanceOf[mini]
   def modal: modal = "modal".asInstanceOf[modal]
   def mountOnEnter: mountOnEnter = "mountOnEnter".asInstanceOf[mountOnEnter]

@@ -1,0 +1,48 @@
+[debug] PhaseRunner.scala:78 Success [id => xss, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/xss/typings/xss.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/xss),TsIdentLibrarySimple(xss)),TsIdentModule(None,List(xss))) [id => xss, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(xss) [id => xss, phase => typescript] 
+[info ] ResolveTypeQueries.scala:94 Resolved TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(xss), TsIdentModule(None,List(xss)), TsIdentSimple(FilterXSS)))) [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS) / TsMemberProperty(FilterXSS) / TsTypeQuery())] 
+[info ] ResolveTypeQueries.scala:94 Resolved TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(xss), TsIdentModule(None,List(xss)), TsIdentSimple(StripTagBody)))) [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS) / TsMemberProperty(StripTagBody) / TsTypeQuery())] 
+[info ] ExpandCallables.scala:57 Expanded onTag into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded onIgnoreTag into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded onTagAttr into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded onIgnoreTagAttr into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded safeAttrValue into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded escapeHtml into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded escapeQuote into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded unescapeQuote into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded escapeHtmlEntities into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded escapeDangerHtml5Entities into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded clearNonPrintableCharacter into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded friendlyAttrValue into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded escapeAttrValue into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded StripTagBody into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded stripCommentTag into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExpandCallables.scala:57 Expanded stripBlankChar into 1 methods [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS))] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Position) [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS) / TsMemberFunction(StripTagBody) / TsFunSig() / TsTypeObject() / TsMemberFunction(onIgnoreTag) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_OnIgnoreTag) [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS) / TsMemberFunction(StripTagBody) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Position) [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS) / TsMemberProperty(StripTagBody) / TsTypeFunction() / TsFunSig() / TsTypeObject() / TsMemberFunction(onIgnoreTag) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_OnIgnoreTag) [id => xss, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(xss) / TsDeclInterface(filterXSS) / TsMemberProperty(StripTagBody) / TsTypeFunction() / TsFunSig() / TsTypeObject())] 
+[debug] PhaseRunner.scala:78 Success [id => xss, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(xss) [id => xss, phase => scala.js] 
+[debug] PhaseRunner.scala:78 Success [id => xss, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:211 Built xss in 2000 ms [id => xss, phase => build] 
+[info ] Phase3CompileBloop.scala:221 published local, [/home/tso/.ivy2/local/com.scalablytyped/xss_sjs0.6_2.12/0.3.8-8428ee/jars/xss_sjs0.6_2.12.jar, /home/tso/.ivy2/local/com.scalablytyped/xss_sjs0.6_2.12/0.3.8-8428ee/srcs/xss_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/com.scalablytyped/xss_sjs0.6_2.12/0.3.8-8428ee/ivys/ivy.xml, /home/tso/.ivy2/local/com.scalablytyped/xss_sjs0.6_2.12/0.3.8-8428ee/poms/xss_sjs0.6_2.12.pom] [id => xss, phase => build] 
+[debug] PhaseRunner.scala:78 Success [id => xss, phase => build] 
+[error] PhaseRes.scala:75 Caught exception [id => xss, phase => publish] java.lang.RuntimeException: was not able to find or create a package for oyvindberg in ScalablyTyped named xss
+	at scala.sys.package$.error(package.scala:26)
+	at com.olvind.tso.importer.build.BinTrayPublisher.$anonfun$ensurePackage$2(BinTrayPublisher.scala:49)
+	at com.olvind.tso.importer.build.BinTrayPublisher.$anonfun$ensurePackage$2$adapted(BinTrayPublisher.scala:46)
+	at scala.util.Success.$anonfun$map$1(Try.scala:251)
+	at scala.util.Success.map(Try.scala:209)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:288)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:29)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:29)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:60)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+
+[debug] PhaseRunner.scala:82 Failure, [xss => java.lang.RuntimeException: was not able to find or create a package for oyvindberg in ScalablyTyped named xss] [id => xss, phase => publish] 

@@ -9,5 +9,22 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcSanitizationHtmlUnderscoreSanitizerMod extends js.Object {
   def _sanitizeHtml(defaultDoc: js.Any, unsafeHtmlInput: java.lang.String): java.lang.String = js.native
+  def getTemplateContent(el: stdLib.Node): stdLib.Node | scala.Null = js.native
+  @js.native
+  object SRCSET_ATTRS
+    extends /* k */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  
+  @js.native
+  object URI_ATTRS
+    extends /* k */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  
+  @js.native
+  object VALID_ATTRS
+    extends /* k */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  
+  @js.native
+  object VALID_ELEMENTS
+    extends /* k */ ScalablyTyped.runtime.StringDictionary[scala.Boolean]
+  
 }
 

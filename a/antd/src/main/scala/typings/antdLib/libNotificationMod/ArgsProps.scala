@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ArgsProps extends js.Object {
   var btn: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var description: reactLib.reactMod.ReactNs.ReactNode
+  var description: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var duration: js.UndefOr[scala.Double | scala.Null] = js.undefined
   var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined

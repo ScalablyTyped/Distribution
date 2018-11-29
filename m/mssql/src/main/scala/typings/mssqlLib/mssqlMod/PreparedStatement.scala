@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class PreparedStatement ()
   extends nodeLib.eventsMod.EventEmitter {
   def this(connection: ConnectionPool) = this()
+  def this(transaction: Transaction) = this()
   var parameters: IRequestParameters = js.native
   var prepared: scala.Boolean = js.native
   var statement: java.lang.String = js.native

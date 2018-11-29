@@ -51,6 +51,7 @@ object coreModMembers extends js.Object {
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLOListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLOListElement]
   ] = js.native
   val PopoverInteractionKind: atBlueprintjsCoreLib.Anon_HOVERTARGETONLY = js.native
+  val PopoverPosition: atBlueprintjsCoreLib.Anon_TOPRIGHTTopright = js.native
   val Position: atBlueprintjsCoreLib.Anon_TOPRIGHT = js.native
   val Pre: reactLib.reactMod.ReactNs.StatelessComponent[
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLElement]

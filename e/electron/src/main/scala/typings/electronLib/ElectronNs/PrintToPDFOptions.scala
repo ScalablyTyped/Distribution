@@ -20,7 +20,7 @@ trait PrintToPDFOptions extends js.Object {
        * Specify page size of the generated PDF. Can be A3, A4, A5, Legal, Letter,
        * Tabloid or an Object containing height and width in microns.
        */
-  var pageSize: js.UndefOr[java.lang.String] = js.undefined
+  var pageSize: js.UndefOr[java.lang.String | Size] = js.undefined
   /**
        * Whether to print CSS backgrounds.
        */

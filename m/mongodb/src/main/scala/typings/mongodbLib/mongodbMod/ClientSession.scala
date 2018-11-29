@@ -11,12 +11,12 @@ trait ClientSession
   /** The server id associated with this session */
   var id: js.Any = js.native
   /**
-       * Aborts the currently active transaction in this session. 
+       * Aborts the currently active transaction in this session.
        * @param {MongoCallback<void>} [cb] Optional callback for completion of this operation
        */
   def abortTransaction(): stdLib.Promise[scala.Unit] = js.native
   /**
-       * Aborts the currently active transaction in this session. 
+       * Aborts the currently active transaction in this session.
        * @param {MongoCallback<void>} [cb] Optional callback for completion of this operation
        */
   def abortTransaction(cb: MongoCallback[scala.Unit]): stdLib.Promise[scala.Unit] = js.native
@@ -26,12 +26,12 @@ trait ClientSession
        */
   def advanceOperationTime(operamtionTime: bsonLib.bsonMod.Timestamp): scala.Unit = js.native
   /**
-       * Commits the currently active transaction in this session. 
+       * Commits the currently active transaction in this session.
        * @param {MongoCallback<void>} [cb] Optional callback for completion of this operation
        */
   def commitTransaction(): stdLib.Promise[scala.Unit] = js.native
   /**
-       * Commits the currently active transaction in this session. 
+       * Commits the currently active transaction in this session.
        * @param {MongoCallback<void>} [cb] Optional callback for completion of this operation
        */
   def commitTransaction(cb: MongoCallback[scala.Unit]): stdLib.Promise[scala.Unit] = js.native
@@ -61,24 +61,24 @@ trait ClientSession
        * Used to determine if this session equals another
        *
        * @param {ClientSession} session A class representing a client session on the server
-       * @returns {boolean} if the sessions are equal 
+       * @returns {boolean} if the sessions are equal
        */
   def equals(session: ClientSession): scala.Boolean = js.native
   /**
-       * @returns {boolean} this session is currently in a transaction or not 
+       * @returns {boolean} this session is currently in a transaction or not
        */
   def inTransaction(): scala.Boolean = js.native
   /** Increment the transaction number on the internal ServerSession */
   def incrementTransactionNumber(): scala.Unit = js.native
   /**
        * Starts a new transaction with the given options.
-       * @param {TransactionOptions} options 
+       * @param {TransactionOptions} options
        * @memberof ClientSession
        */
   def startTransaction(): scala.Unit = js.native
   /**
        * Starts a new transaction with the given options.
-       * @param {TransactionOptions} options 
+       * @param {TransactionOptions} options
        * @memberof ClientSession
        */
   def startTransaction(options: TransactionOptions): scala.Unit = js.native

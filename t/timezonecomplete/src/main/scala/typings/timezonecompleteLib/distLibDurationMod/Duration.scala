@@ -30,6 +30,11 @@ class Duration () extends js.Object {
        * Given amount in constructor
        */
   var _amount: js.Any = js.native
+  var _fromString: js.Any = js.native
+  /**
+       * Return this % unit, always positive
+       */
+  var _part: js.Any = js.native
   /**
        * Unit
        */
@@ -38,11 +43,6 @@ class Duration () extends js.Object {
        * Allow not using instanceof
        */
   var kind: java.lang.String = js.native
-  /* private */ def _fromString(s: js.Any): js.Any = js.native
-  /**
-       * Return this % unit, always positive
-       */
-  /* private */ def _part(unit: js.Any): js.Any = js.native
   /**
        * Return the absolute value of the duration i.e. remove the sign.
        */

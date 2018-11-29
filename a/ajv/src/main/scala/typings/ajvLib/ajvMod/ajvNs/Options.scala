@@ -29,6 +29,7 @@ trait Options extends js.Object {
       stdLib.PromiseLike[js.Object | scala.Boolean]
     ]
   ] = js.undefined
+  var logger: js.UndefOr[CustomLogger | ajvLib.ajvLibNumbers.`false`] = js.undefined
   var loopRequired: js.UndefOr[scala.Double] = js.undefined
   var messages: js.UndefOr[scala.Boolean] = js.undefined
   var meta: js.UndefOr[scala.Boolean | js.Object] = js.undefined
@@ -36,6 +37,7 @@ trait Options extends js.Object {
     ajvLib.ajvLibNumbers.`true` | ajvLib.ajvLibStrings.ignore | ajvLib.ajvLibStrings.fail
   ] = js.undefined
   var multipleOfPrecision: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
+  var nullable: js.UndefOr[scala.Boolean] = js.undefined
   var ownProperties: js.UndefOr[scala.Boolean] = js.undefined
   var passContext: js.UndefOr[scala.Boolean] = js.undefined
   var processCode: js.UndefOr[js.Function1[/* code */ java.lang.String, java.lang.String]] = js.undefined
@@ -44,6 +46,9 @@ trait Options extends js.Object {
     ajvLib.ajvLibStrings.DOLLARid | ajvLib.ajvLibStrings.id | ajvLib.ajvLibStrings.auto
   ] = js.undefined
   var schemas: js.UndefOr[js.Array[js.Object] | js.Object] = js.undefined
+  var serialize: js.UndefOr[
+    (js.Function1[/* schema */ js.Object | scala.Boolean, _]) | ajvLib.ajvLibNumbers.`false`
+  ] = js.undefined
   var sourceCode: js.UndefOr[scala.Boolean] = js.undefined
   var transpile: js.UndefOr[java.lang.String | (js.Function1[/* code */ java.lang.String, java.lang.String])] = js.undefined
   var unicode: js.UndefOr[scala.Boolean] = js.undefined

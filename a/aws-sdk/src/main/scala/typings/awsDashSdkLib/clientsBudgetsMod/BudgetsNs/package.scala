@@ -9,6 +9,7 @@ package object BudgetsNs {
   type AccountId = java.lang.String
   type BudgetName = java.lang.String
   type BudgetType = awsDashSdkLib.awsDashSdkLibStrings.USAGE | awsDashSdkLib.awsDashSdkLibStrings.COST | awsDashSdkLib.awsDashSdkLibStrings.RI_UTILIZATION | awsDashSdkLib.awsDashSdkLibStrings.RI_COVERAGE | java.lang.String
+  type BudgetedAndActualAmountsList = js.Array[BudgetedAndActualAmounts]
   type Budgets = js.Array[Budget]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ComparisonOperator = awsDashSdkLib.awsDashSdkLibStrings.GREATER_THAN | awsDashSdkLib.awsDashSdkLibStrings.LESS_THAN | awsDashSdkLib.awsDashSdkLibStrings.EQUAL_TO | java.lang.String
@@ -16,6 +17,7 @@ package object BudgetsNs {
   type GenericString = java.lang.String
   type GenericTimestamp = stdLib.Date
   type MaxResults = scala.Double
+  type NotificationState = awsDashSdkLib.awsDashSdkLibStrings.OK | awsDashSdkLib.awsDashSdkLibStrings.ALARM | java.lang.String
   type NotificationThreshold = scala.Double
   type NotificationType = awsDashSdkLib.awsDashSdkLibStrings.ACTUAL | awsDashSdkLib.awsDashSdkLibStrings.FORECASTED | java.lang.String
   type NotificationWithSubscribersList = js.Array[NotificationWithSubscribers]

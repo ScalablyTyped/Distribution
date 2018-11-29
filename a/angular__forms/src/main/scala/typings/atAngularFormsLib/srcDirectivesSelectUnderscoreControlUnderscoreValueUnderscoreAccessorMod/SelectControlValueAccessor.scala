@@ -14,8 +14,21 @@ class SelectControlValueAccessor protected ()
   var _elementRef: js.Any = js.native
   var _renderer: js.Any = js.native
   var value: js.Any = js.native
+  /**
+       * @description
+       * Tracks the option comparison algorithm for tracking identities when
+       * checking for changes.
+       */
   def compareWith(o1: js.Any, o2: js.Any): scala.Boolean = js.native
+  /**
+       * @description
+       * The registered callback function called when a change event occurs on the input element.
+       */
   def onChange(`_`: js.Any): scala.Unit = js.native
+  /**
+       * @description
+       * The registered callback function called when a blur event occurs on the input element.
+       */
   def onTouched(): scala.Unit = js.native
   /**
        * @description
@@ -52,6 +65,12 @@ class SelectControlValueAccessor protected ()
        */
   /* CompleteClass */
   override def registerOnChange(fn: js.Any): scala.Unit = js.native
+  /**
+       * @description
+       * Registers a function called when the control value changes.
+       *
+       * @param fn The callback function
+       */
   def registerOnChange(fn: js.Function1[/* value */ js.Any, _]): scala.Unit = js.native
   /**
        * @description
@@ -86,7 +105,18 @@ class SelectControlValueAccessor protected ()
        */
   /* CompleteClass */
   override def registerOnTouched(fn: js.Any): scala.Unit = js.native
+  /**
+       * @description
+       * Registers a function called when the control is touched.
+       *
+       * @param fn The callback function
+       */
   def registerOnTouched(fn: js.Function0[_]): scala.Unit = js.native
+  /**
+       * Sets the "disabled" property on the select input element.
+       *
+       * @param isDisabled The disabled value
+       */
   @JSName("setDisabledState")
   def setDisabledState_MSelectControlValueAccessor(isDisabled: scala.Boolean): scala.Unit = js.native
   /**

@@ -17,13 +17,27 @@ trait ModalProps extends js.Object {
   var backdropTransitionInTiming: js.UndefOr[scala.Double] = js.undefined
   var backdropTransitionOutTiming: js.UndefOr[scala.Double] = js.undefined
   var children: reactLib.reactMod.ReactNs.ReactNode
+  var deviceHeight: js.UndefOr[scala.Double] = js.undefined
+  var deviceWidth: js.UndefOr[scala.Double] = js.undefined
+  var hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined
   var hideModalContentWhileAnimating: js.UndefOr[scala.Boolean] = js.undefined
   var isVisible: scala.Boolean
   var onBackButtonPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onBackdropPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onDismiss: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onModalHide: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onModalShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onOrientationChange: js.UndefOr[
+    js.Function1[
+      /* orientation */ reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.portrait | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.landscape, 
+      scala.Unit
+    ]
+  ] = js.undefined
+  var onShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onSwipe: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var presentationStyle: js.UndefOr[
+    reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.fullScreen | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.pageSheet | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.formSheet | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.overFullScreen
+  ] = js.undefined
   var scrollOffset: js.UndefOr[scala.Double] = js.undefined
   var scrollOffsetMax: js.UndefOr[scala.Double] = js.undefined
   var scrollTo: js.UndefOr[js.Function1[/* e */ js.Any, scala.Unit]] = js.undefined

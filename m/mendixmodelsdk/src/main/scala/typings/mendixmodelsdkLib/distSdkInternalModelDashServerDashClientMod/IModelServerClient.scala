@@ -13,6 +13,15 @@ trait IModelServerClient extends js.Object {
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[scala.Boolean],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
+  /**
+       * Commits the contents of the working copy with the given id to the team server
+       */
+  def commit(
+    workingCopyId: java.lang.String,
+    message: java.lang.String,
+    callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[scala.Double],
+    errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
+  ): scala.Unit = js.native
   def createWorkingCopy(
     workingCopyInfo: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ICreateWorkingCopyParameters,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy],
@@ -68,6 +77,11 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   def getAppEnvironmentStatus(
+    workingCopyId: java.lang.String,
+    callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IEnvironmentStatus],
+    errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
+  ): scala.Unit = js.native
+  def getAppEnvironmentStatusV2(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IEnvironmentStatus],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback

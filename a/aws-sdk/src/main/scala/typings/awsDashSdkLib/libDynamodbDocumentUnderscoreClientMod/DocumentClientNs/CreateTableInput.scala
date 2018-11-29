@@ -12,6 +12,10 @@ trait CreateTableInput extends js.Object {
        */
   var AttributeDefinitions: AttributeDefinitions
   /**
+       * Controls how you are charged for read and write throughput and how you manage capacity. This setting can be changed later.    PROVISIONED - Sets the billing mode to PROVISIONED. We recommend using PROVISIONED for predictable workloads.    PAY_PER_REQUEST - Sets the billing mode to PAY_PER_REQUEST. We recommend using PAY_PER_REQUEST for unpredictable workloads.   
+       */
+  var BillingMode: js.UndefOr[BillingMode] = js.undefined
+  /**
        * One or more global secondary indexes (the maximum is five) to be created on the table. Each global secondary index in the array includes the following:    IndexName - The name of the global secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the global secondary index.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 20. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      ProvisionedThroughput - The provisioned throughput settings for the global secondary index, consisting of read and write capacity units.  
        */
   var GlobalSecondaryIndexes: js.UndefOr[GlobalSecondaryIndexList] = js.undefined
@@ -24,9 +28,9 @@ trait CreateTableInput extends js.Object {
        */
   var LocalSecondaryIndexes: js.UndefOr[LocalSecondaryIndexList] = js.undefined
   /**
-       * Represents the provisioned throughput settings for a specified table or index. The settings can be modified using the UpdateTable operation. For current minimum and maximum provisioned throughput values, see Limits in the Amazon DynamoDB Developer Guide.
+       * Represents the provisioned throughput settings for a specified table or index. The settings can be modified using the UpdateTable operation.  If you set BillingMode as PROVISIONED, you must specify this property. If you set BillingMode as PAY_PER_REQUEST, you cannot specify this property.  For current minimum and maximum provisioned throughput values, see Limits in the Amazon DynamoDB Developer Guide.
        */
-  var ProvisionedThroughput: ProvisionedThroughput
+  var ProvisionedThroughput: js.UndefOr[ProvisionedThroughput] = js.undefined
   /**
        * Represents the settings used to enable server-side encryption.
        */

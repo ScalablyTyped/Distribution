@@ -9,160 +9,236 @@ import scala.scalajs.js.annotation._
 @js.native
 class FormBuilder () extends js.Object {
   /**
-       * @description
-       * Construct a new `FormArray` instance.
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
        *
-       * @param controlsConfig An array of child controls. The key for each child control is its index
-       * in the array.
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        */
   def array(controlsConfig: js.Array[_]): atAngularFormsLib.srcModelMod.FormArray = js.native
   /**
-       * @description
-       * Construct a new `FormArray` instance.
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
        *
-       * @param controlsConfig An array of child controls. The key for each child control is its index
-       * in the array.
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
-       */
-  def array(controlsConfig: js.Array[_], validator: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn): atAngularFormsLib.srcModelMod.FormArray = js.native
-  /**
-       * @description
-       * Construct a new `FormArray` instance.
-       *
-       * @param controlsConfig An array of child controls. The key for each child control is its index
-       * in the array.
-       *
-       * @param validator A synchronous validator function, or an array of synchronous validator
-       * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        */
   def array(
     controlsConfig: js.Array[_],
-    validator: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn,
+    validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn
+  ): atAngularFormsLib.srcModelMod.FormArray = js.native
+  /**
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
+       *
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       */
+  def array(
+    controlsConfig: js.Array[_],
+    validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn,
     asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn
   ): atAngularFormsLib.srcModelMod.FormArray = js.native
   /**
-       * @description
-       * Construct a new `FormArray` instance.
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
        *
-       * @param controlsConfig An array of child controls. The key for each child control is its index
-       * in the array.
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        */
   def array(
     controlsConfig: js.Array[_],
-    validator: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn,
+    validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn,
+    asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]
+  ): atAngularFormsLib.srcModelMod.FormArray = js.native
+  /**
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
+       *
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       */
+  def array(controlsConfig: js.Array[_], validatorOrOpts: atAngularFormsLib.srcModelMod.AbstractControlOptions): atAngularFormsLib.srcModelMod.FormArray = js.native
+  /**
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
+       *
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       */
+  def array(
+    controlsConfig: js.Array[_],
+    validatorOrOpts: atAngularFormsLib.srcModelMod.AbstractControlOptions,
+    asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn
+  ): atAngularFormsLib.srcModelMod.FormArray = js.native
+  /**
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
+       *
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       */
+  def array(
+    controlsConfig: js.Array[_],
+    validatorOrOpts: atAngularFormsLib.srcModelMod.AbstractControlOptions,
+    asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]
+  ): atAngularFormsLib.srcModelMod.FormArray = js.native
+  /**
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
+       *
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       */
+  def array(
+    controlsConfig: js.Array[_],
+    validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn]
+  ): atAngularFormsLib.srcModelMod.FormArray = js.native
+  /**
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
+       *
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       */
+  def array(
+    controlsConfig: js.Array[_],
+    validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn],
+    asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn
+  ): atAngularFormsLib.srcModelMod.FormArray = js.native
+  /**
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
+       *
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       */
+  def array(
+    controlsConfig: js.Array[_],
+    validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn],
+    asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]
+  ): atAngularFormsLib.srcModelMod.FormArray = js.native
+  /**
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
+       *
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       */
+  def array(
+    controlsConfig: js.Array[_],
+    validatorOrOpts: scala.Null,
+    asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn
+  ): atAngularFormsLib.srcModelMod.FormArray = js.native
+  /**
+       * Constructs a new `FormArray` from the given array of configurations,
+       * validators and options.
+       *
+       * @param controlsConfig An array of child controls or control configs. Each
+       * child control is given an index when it is registered.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       */
+  def array(
+    controlsConfig: js.Array[_],
+    validatorOrOpts: scala.Null,
     asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]
   ): atAngularFormsLib.srcModelMod.FormArray = js.native
   /**
        * @description
-       * Construct a new `FormArray` instance.
+       * Construct a new `FormControl` with the given state, validators and options.
        *
-       * @param controlsConfig An array of child controls. The key for each child control is its index
-       * in the array.
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
-       */
-  def array(
-    controlsConfig: js.Array[_],
-    validator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn]
-  ): atAngularFormsLib.srcModelMod.FormArray = js.native
-  /**
-       * @description
-       * Construct a new `FormArray` instance.
-       *
-       * @param controlsConfig An array of child controls. The key for each child control is its index
-       * in the array.
-       *
-       * @param validator A synchronous validator function, or an array of synchronous validator
-       * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
-       */
-  def array(
-    controlsConfig: js.Array[_],
-    validator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn],
-    asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn
-  ): atAngularFormsLib.srcModelMod.FormArray = js.native
-  /**
-       * @description
-       * Construct a new `FormArray` instance.
-       *
-       * @param controlsConfig An array of child controls. The key for each child control is its index
-       * in the array.
-       *
-       * @param validator A synchronous validator function, or an array of synchronous validator
-       * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
-       */
-  def array(
-    controlsConfig: js.Array[_],
-    validator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn],
-    asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]
-  ): atAngularFormsLib.srcModelMod.FormArray = js.native
-  /**
-       * @description
-       * Construct a new `FormArray` instance.
-       *
-       * @param controlsConfig An array of child controls. The key for each child control is its index
-       * in the array.
-       *
-       * @param validator A synchronous validator function, or an array of synchronous validator
-       * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
-       */
-  def array(
-    controlsConfig: js.Array[_],
-    validator: scala.Null,
-    asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn
-  ): atAngularFormsLib.srcModelMod.FormArray = js.native
-  /**
-       * @description
-       * Construct a new `FormArray` instance.
-       *
-       * @param controlsConfig An array of child controls. The key for each child control is its index
-       * in the array.
-       *
-       * @param validator A synchronous validator function, or an array of synchronous validator
-       * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
-       */
-  def array(
-    controlsConfig: js.Array[_],
-    validator: scala.Null,
-    asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]
-  ): atAngularFormsLib.srcModelMod.FormArray = js.native
-  /**
-       * @description
-       * Construct a new `FormControl` instance.
-       *
-       * @param formState Initializes the control with an initial value,
-       * or an object that defines the initial value and disabled state.
-       *
-       * @param validator A synchronous validator function, or an array of synchronous validator
-       * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        *
        * @usageNotes
        *
@@ -173,20 +249,21 @@ class FormBuilder () extends js.Object {
        * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
        *   linenums="false" region="disabled-control">
        * </code-example>
-       *
        */
   def control(formState: js.Any): atAngularFormsLib.srcModelMod.FormControl = js.native
   /**
        * @description
-       * Construct a new `FormControl` instance.
+       * Construct a new `FormControl` with the given state, validators and options.
        *
-       * @param formState Initializes the control with an initial value,
-       * or an object that defines the initial value and disabled state.
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        *
        * @usageNotes
        *
@@ -197,20 +274,21 @@ class FormBuilder () extends js.Object {
        * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
        *   linenums="false" region="disabled-control">
        * </code-example>
-       *
        */
-  def control(formState: js.Any, validator: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn): atAngularFormsLib.srcModelMod.FormControl = js.native
+  def control(formState: js.Any, validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn): atAngularFormsLib.srcModelMod.FormControl = js.native
   /**
        * @description
-       * Construct a new `FormControl` instance.
+       * Construct a new `FormControl` with the given state, validators and options.
        *
-       * @param formState Initializes the control with an initial value,
-       * or an object that defines the initial value and disabled state.
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        *
        * @usageNotes
        *
@@ -221,24 +299,25 @@ class FormBuilder () extends js.Object {
        * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
        *   linenums="false" region="disabled-control">
        * </code-example>
-       *
        */
   def control(
     formState: js.Any,
-    validator: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn,
+    validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn,
     asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn
   ): atAngularFormsLib.srcModelMod.FormControl = js.native
   /**
        * @description
-       * Construct a new `FormControl` instance.
+       * Construct a new `FormControl` with the given state, validators and options.
        *
-       * @param formState Initializes the control with an initial value,
-       * or an object that defines the initial value and disabled state.
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        *
        * @usageNotes
        *
@@ -249,24 +328,25 @@ class FormBuilder () extends js.Object {
        * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
        *   linenums="false" region="disabled-control">
        * </code-example>
-       *
        */
   def control(
     formState: js.Any,
-    validator: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn,
+    validatorOrOpts: atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn,
     asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]
   ): atAngularFormsLib.srcModelMod.FormControl = js.native
   /**
        * @description
-       * Construct a new `FormControl` instance.
+       * Construct a new `FormControl` with the given state, validators and options.
        *
-       * @param formState Initializes the control with an initial value,
-       * or an object that defines the initial value and disabled state.
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        *
        * @usageNotes
        *
@@ -277,20 +357,21 @@ class FormBuilder () extends js.Object {
        * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
        *   linenums="false" region="disabled-control">
        * </code-example>
-       *
        */
-  def control(formState: js.Any, validator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn]): atAngularFormsLib.srcModelMod.FormControl = js.native
+  def control(formState: js.Any, validatorOrOpts: atAngularFormsLib.srcModelMod.AbstractControlOptions): atAngularFormsLib.srcModelMod.FormControl = js.native
   /**
        * @description
-       * Construct a new `FormControl` instance.
+       * Construct a new `FormControl` with the given state, validators and options.
        *
-       * @param formState Initializes the control with an initial value,
-       * or an object that defines the initial value and disabled state.
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        *
        * @usageNotes
        *
@@ -301,24 +382,25 @@ class FormBuilder () extends js.Object {
        * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
        *   linenums="false" region="disabled-control">
        * </code-example>
-       *
        */
   def control(
     formState: js.Any,
-    validator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn],
+    validatorOrOpts: atAngularFormsLib.srcModelMod.AbstractControlOptions,
     asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn
   ): atAngularFormsLib.srcModelMod.FormControl = js.native
   /**
        * @description
-       * Construct a new `FormControl` instance.
+       * Construct a new `FormControl` with the given state, validators and options.
        *
-       * @param formState Initializes the control with an initial value,
-       * or an object that defines the initial value and disabled state.
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        *
        * @usageNotes
        *
@@ -329,24 +411,25 @@ class FormBuilder () extends js.Object {
        * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
        *   linenums="false" region="disabled-control">
        * </code-example>
-       *
        */
   def control(
     formState: js.Any,
-    validator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn],
+    validatorOrOpts: atAngularFormsLib.srcModelMod.AbstractControlOptions,
     asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]
   ): atAngularFormsLib.srcModelMod.FormControl = js.native
   /**
        * @description
-       * Construct a new `FormControl` instance.
+       * Construct a new `FormControl` with the given state, validators and options.
        *
-       * @param formState Initializes the control with an initial value,
-       * or an object that defines the initial value and disabled state.
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        *
        * @usageNotes
        *
@@ -357,24 +440,53 @@ class FormBuilder () extends js.Object {
        * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
        *   linenums="false" region="disabled-control">
        * </code-example>
-       *
        */
   def control(
     formState: js.Any,
-    validator: scala.Null,
+    validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn]
+  ): atAngularFormsLib.srcModelMod.FormControl = js.native
+  /**
+       * @description
+       * Construct a new `FormControl` with the given state, validators and options.
+       *
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       *
+       * @usageNotes
+       *
+       * ### Initialize a control as disabled
+       *
+       * The following example returns a control with an initial value in a disabled state.
+       *
+       * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
+       *   linenums="false" region="disabled-control">
+       * </code-example>
+       */
+  def control(
+    formState: js.Any,
+    validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn],
     asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn
   ): atAngularFormsLib.srcModelMod.FormControl = js.native
   /**
        * @description
-       * Construct a new `FormControl` instance.
+       * Construct a new `FormControl` with the given state, validators and options.
        *
-       * @param formState Initializes the control with an initial value,
-       * or an object that defines the initial value and disabled state.
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
        *
-       * @param validator A synchronous validator function, or an array of synchronous validator
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
        * functions.
-       *
-       * @param asyncValidator A single async validator or array of async validator functions
        *
        * @usageNotes
        *
@@ -385,11 +497,68 @@ class FormBuilder () extends js.Object {
        * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
        *   linenums="false" region="disabled-control">
        * </code-example>
-       *
        */
   def control(
     formState: js.Any,
-    validator: scala.Null,
+    validatorOrOpts: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn],
+    asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]
+  ): atAngularFormsLib.srcModelMod.FormControl = js.native
+  /**
+       * @description
+       * Construct a new `FormControl` with the given state, validators and options.
+       *
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       *
+       * @usageNotes
+       *
+       * ### Initialize a control as disabled
+       *
+       * The following example returns a control with an initial value in a disabled state.
+       *
+       * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
+       *   linenums="false" region="disabled-control">
+       * </code-example>
+       */
+  def control(
+    formState: js.Any,
+    validatorOrOpts: scala.Null,
+    asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn
+  ): atAngularFormsLib.srcModelMod.FormControl = js.native
+  /**
+       * @description
+       * Construct a new `FormControl` with the given state, validators and options.
+       *
+       * @param formState Initializes the control with an initial state value, or
+       * with an object that contains both a value and a disabled status.
+       *
+       * @param validatorOrOpts A synchronous validator function, or an array of
+       * such functions, or an `AbstractControlOptions` object that contains
+       * validation functions and a validation trigger.
+       *
+       * @param asyncValidator A single async validator or array of async validator
+       * functions.
+       *
+       * @usageNotes
+       *
+       * ### Initialize a control as disabled
+       *
+       * The following example returns a control with an initial value in a disabled state.
+       *
+       * <code-example path="forms/ts/formBuilder/form_builder_example.ts"
+       *   linenums="false" region="disabled-control">
+       * </code-example>
+       */
+  def control(
+    formState: js.Any,
+    validatorOrOpts: scala.Null,
     asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]
   ): atAngularFormsLib.srcModelMod.FormControl = js.native
   /**
@@ -399,7 +568,16 @@ class FormBuilder () extends js.Object {
        * @param controlsConfig A collection of child controls. The key for each child is the name
        * under which it is registered.
        *
-       * @param extra An object of configuration options for the `FormGroup`.
+       * @param legacyOrOpts Configuration options object for the `FormGroup`. The object can
+       * have two shapes:
+       *
+       * 1) `AbstractControlOptions` object (preferred), which consists of:
+       * * `validators`: A synchronous validator function, or an array of validator functions
+       * * `asyncValidators`: A single async validator or array of async validator functions
+       * * `updateOn`: The event upon which the control should be updated (options: 'change' | 'blur' |
+       * submit')
+       *
+       * 2) Legacy configuration object, which consists of:
        * * `validator`: A synchronous validator function, or an array of validator functions
        * * `asyncValidator`: A single async validator or array of async validator functions
        *
@@ -412,14 +590,23 @@ class FormBuilder () extends js.Object {
        * @param controlsConfig A collection of child controls. The key for each child is the name
        * under which it is registered.
        *
-       * @param extra An object of configuration options for the `FormGroup`.
+       * @param legacyOrOpts Configuration options object for the `FormGroup`. The object can
+       * have two shapes:
+       *
+       * 1) `AbstractControlOptions` object (preferred), which consists of:
+       * * `validators`: A synchronous validator function, or an array of validator functions
+       * * `asyncValidators`: A single async validator or array of async validator functions
+       * * `updateOn`: The event upon which the control should be updated (options: 'change' | 'blur' |
+       * submit')
+       *
+       * 2) Legacy configuration object, which consists of:
        * * `validator`: A synchronous validator function, or an array of validator functions
        * * `asyncValidator`: A single async validator or array of async validator functions
        *
        */
   def group(
     controlsConfig: ScalablyTyped.runtime.StringDictionary[js.Any],
-    extra: ScalablyTyped.runtime.StringDictionary[js.Any]
+    legacyOrOpts: ScalablyTyped.runtime.StringDictionary[js.Any]
   ): atAngularFormsLib.srcModelMod.FormGroup = js.native
 }
 
