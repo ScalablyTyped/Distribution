@@ -28,6 +28,7 @@
 //                 Alec Hill <https://github.com/alechill>
 //                 Lachlan Young <https://github.com/builtbyproxy>
 //                 Jason Killian <https://github.com/jkillian>
+//                 Jeroen Vervaeke <https://github.com/jeroenvervaeke>
 //                 Fellipe Chagas <https://github.com/chagasaway>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8

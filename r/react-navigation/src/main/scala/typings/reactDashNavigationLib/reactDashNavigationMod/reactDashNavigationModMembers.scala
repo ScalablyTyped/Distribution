@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-navigation", JSImport.Namespace)
 @js.native
 object reactDashNavigationModMembers extends js.Object {
-  val DrawerItems: reactLib.reactMod.ReactNs.ReactType[js.Any] = js.native
+  val DrawerItems: reactLib.reactMod.ReactNs.ComponentType[DrawerItemsProps] = js.native
   val HeaderBackButton: reactLib.reactMod.ReactNs.ComponentClass[HeaderBackButtonProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
   val NavigationEvents: reactLib.reactMod.ReactNs.ComponentType[NavigationEventsProps] = js.native
   val SafeAreaView: reactLib.reactMod.ReactNs.ComponentClass[SafeAreaViewProps, reactLib.reactMod.ReactNs.ComponentState] = js.native

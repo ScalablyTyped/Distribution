@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-native-calendars"
-version := "1.20-dt-20181116Z-f30b9d"
+version := "1.20-dt-20181116Z-96cf98"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181129Z-4e32c2",
-  "com.scalablytyped" %%% "react-native" % "0.57-dt-20181128Z-49384d",
+  "com.scalablytyped" %%% "react-native" % "0.57-dt-20181130Z-28b117",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "xdate" % "0.8-dt-20180910Z-49b2e6",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

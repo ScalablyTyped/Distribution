@@ -38,6 +38,7 @@ trait TimelineOptions extends js.Object {
   var multiselectPerGroup: js.UndefOr[scala.Boolean] = js.undefined
   var onAdd: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
   var onAddGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.undefined
+  var onInitialDrawComplete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onMove: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
   var onMoveGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.undefined
   var onMoving: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined

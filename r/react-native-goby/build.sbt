@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-native-goby"
-version := "0.0.5-c3807c"
+version := "0.0.5-1ccfe9"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "plist" % "3.0-dt-20181031Z-8dce11",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181129Z-4e32c2",
-  "com.scalablytyped" %%% "react-native" % "0.57-dt-20181128Z-49384d",
+  "com.scalablytyped" %%% "react-native" % "0.57-dt-20181130Z-28b117",
   "com.scalablytyped" %%% "rx" % "4.1-dt-20180910Z-49bd7e",
   "com.scalablytyped" %%% "rx-core" % "4.0-dt-20180910Z-b87bbc",
   "com.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180910Z-df7bfe",

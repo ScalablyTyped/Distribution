@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-gravatar"
-version := "2.6-dt-20180910Z-927572"
+version := "2.6-dt-20181130Z-772511"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

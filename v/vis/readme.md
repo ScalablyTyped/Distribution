@@ -12,5 +12,6 @@
 //                 Oleksii Kachura <https://github.com/alex-kachura>
 //                 dcop <https://github.com/dcop>
 //                 Avraham Essoudry <https://github.com/avrahamcool>
+//                 Dmitriy Trifonov <https://github.com/divideby>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

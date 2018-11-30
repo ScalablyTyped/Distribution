@@ -158,6 +158,8 @@ trait IAppInsights extends js.Object {
            * @param   totalTime total request time
            * @param   success   indicates if the request was sessessful
            * @param   resultCode    response code returned by the dependency request
+           * @param   properties    map[string, string] - additional data used to filter events and metrics in the portal. Defaults to empty.
+           * @param   measurements  map[string, number] - metrics associated with this event, displayed in Metrics Explorer on the portal. Defaults to empty.
            */
   def trackDependency(
     id: java.lang.String,
@@ -167,6 +169,51 @@ trait IAppInsights extends js.Object {
     totalTime: scala.Double,
     success: scala.Boolean,
     resultCode: scala.Double
+  ): js.Any = js.native
+  /**
+           * Log a dependency call
+           * @param   id    unique id, this is used by the backend o correlate server requests. Use Util.newId() to generate a unique Id.
+           * @param   method    represents request verb (GET, POST, etc.)
+           * @param   absoluteUrl   absolute url used to make the dependency request
+           * @param   pathName  the path part of the absolute url
+           * @param   totalTime total request time
+           * @param   success   indicates if the request was sessessful
+           * @param   resultCode    response code returned by the dependency request
+           * @param   properties    map[string, string] - additional data used to filter events and metrics in the portal. Defaults to empty.
+           * @param   measurements  map[string, number] - metrics associated with this event, displayed in Metrics Explorer on the portal. Defaults to empty.
+           */
+  def trackDependency(
+    id: java.lang.String,
+    method: java.lang.String,
+    absoluteUrl: java.lang.String,
+    pathName: java.lang.String,
+    totalTime: scala.Double,
+    success: scala.Boolean,
+    resultCode: scala.Double,
+    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
+  ): js.Any = js.native
+  /**
+           * Log a dependency call
+           * @param   id    unique id, this is used by the backend o correlate server requests. Use Util.newId() to generate a unique Id.
+           * @param   method    represents request verb (GET, POST, etc.)
+           * @param   absoluteUrl   absolute url used to make the dependency request
+           * @param   pathName  the path part of the absolute url
+           * @param   totalTime total request time
+           * @param   success   indicates if the request was sessessful
+           * @param   resultCode    response code returned by the dependency request
+           * @param   properties    map[string, string] - additional data used to filter events and metrics in the portal. Defaults to empty.
+           * @param   measurements  map[string, number] - metrics associated with this event, displayed in Metrics Explorer on the portal. Defaults to empty.
+           */
+  def trackDependency(
+    id: java.lang.String,
+    method: java.lang.String,
+    absoluteUrl: java.lang.String,
+    pathName: java.lang.String,
+    totalTime: scala.Double,
+    success: scala.Boolean,
+    resultCode: scala.Double,
+    properties: ScalablyTyped.runtime.StringDictionary[java.lang.String],
+    measurements: ScalablyTyped.runtime.StringDictionary[scala.Double]
   ): js.Any = js.native
   /**
            * Log a user action or other occurrence.

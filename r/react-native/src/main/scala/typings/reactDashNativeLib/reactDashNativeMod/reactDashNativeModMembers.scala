@@ -79,6 +79,6 @@ object reactDashNativeModMembers extends js.Object {
   ): scala.Null | scala.Double = js.native
   def findNodeHandle(componentOrHandle: scala.Double): scala.Null | scala.Double = js.native
   def processColor(color: js.Any): scala.Double = js.native
-  def requireNativeComponent(viewName: java.lang.String): reactLib.reactMod.ReactNs.ReactType[_] = js.native
+  def requireNativeComponent(viewName: java.lang.String): js.Any = js.native
 }
 

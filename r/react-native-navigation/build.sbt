@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-native-navigation"
-version := "2.1.3-7b3b1a"
+version := "2.1.3-3ad8cf"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181129Z-4e32c2",
-  "com.scalablytyped" %%% "react-native" % "0.57-dt-20181128Z-49384d",
+  "com.scalablytyped" %%% "react-native" % "0.57-dt-20181130Z-28b117",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "tslib" % "1.9.3-9baf35",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
