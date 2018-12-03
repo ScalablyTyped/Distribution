@@ -12,6 +12,11 @@ trait ImagePropsAndroid extends js.Object {
        */
   var fadeDuration: js.UndefOr[scala.Double] = js.undefined
   /**
+       * Required if loading images via 'uri' from drawable folder on Android
+       * Explanation: https://medium.com/@adamjacobb/react-native-performance-images-adf5843e120
+       */
+  var height: js.UndefOr[scala.Double] = js.undefined
+  /**
        * The mechanism that should be used to resize the image when the image's dimensions
        * differ from the image view's dimensions. Defaults to auto.
        *
@@ -27,5 +32,10 @@ trait ImagePropsAndroid extends js.Object {
   var resizeMethod: js.UndefOr[
     reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.resize | reactDashNativeLib.reactDashNativeLibStrings.scale
   ] = js.undefined
+  /**
+       * Required if loading images via 'uri' from drawable folder on Android.
+       * Explanation: https://medium.com/@adamjacobb/react-native-performance-images-adf5843e120
+       */
+  var width: js.UndefOr[scala.Double] = js.undefined
 }
 

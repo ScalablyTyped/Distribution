@@ -1,5 +1,5 @@
 ```
-// Type definitions for bull 3.4
+// Type definitions for bull 3.5
 // Project: https://github.com/OptimalBits/bull
 // Definitions by: Bruno Grieder <https://github.com/bgrieder>
 //                 Cameron Crothers <https://github.com/JProgrammer>

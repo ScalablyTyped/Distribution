@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-google-places-suggest"
-version := "3.4-dt-20180910Z-0113ce"
+version := "3.4-dt-20180910Z-c0d0ed"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
   "com.scalablytyped" %%% "googlemaps" % "3.30-dt-20181027Z-18ab7e",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181129Z-4e32c2",
+  "com.scalablytyped" %%% "react" % "16.7-dt-20181203Z-843f9f",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

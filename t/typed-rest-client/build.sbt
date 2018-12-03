@@ -1,14 +1,14 @@
 organization := "com.scalablytyped"
 name := "typed-rest-client"
-version := "1.0.11-08ceda"
+version := "1.0.11-2a2fcc"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "nock" % "v9.3.3-dt-20180910Z-350291",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "nock" % "v9.3.3-dt-20180910Z-5f40cb",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "tunnel" % "0.0-dt-20180910Z-ab0bf0",
+  "com.scalablytyped" %%% "tunnel" % "0.0-dt-20180910Z-4381e5",
   "com.scalablytyped" %%% "underscore" % "1.8-dt-20180910Z-87c49b",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

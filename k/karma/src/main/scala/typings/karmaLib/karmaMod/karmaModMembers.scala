@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("karma", JSImport.Namespace)
 @js.native
-object karmaModMembers
-  extends ScalablyTyped.runtime.TopLevel[karmaLib.karmaMod.karmaNs.Karma]
+object karmaModMembers extends js.Object {
+  val VERSION: java.lang.String = js.native
+  val constants: Constants = js.native
+  val runner: Runner = js.native
+  val server: DeprecatedServer = js.native
+  val stopper: Stopper = js.native
+}
 

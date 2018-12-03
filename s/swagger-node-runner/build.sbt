@@ -1,30 +1,30 @@
 organization := "com.scalablytyped"
 name := "swagger-node-runner"
-version := "0.5-dt-20181027Z-8bd1d7"
+version := "0.5-dt-20181027Z-3e3a11"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-bbb8a6",
+  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-6b0d80",
   "com.scalablytyped" %%% "boom" % "7.2-dt-20181120Z-500330",
-  "com.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-e292a0",
+  "com.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-08fe9c",
   "com.scalablytyped" %%% "catbox" % "10.0-dt-20181121Z-981978",
-  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-c1f383",
-  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-1b16d7",
-  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-bec6af",
-  "com.scalablytyped" %%% "hapi" % "17.8-dt-20181129Z-db5334",
-  "com.scalablytyped" %%% "iron" % "5.0-dt-20180910Z-4d9ee8",
+  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-b92a74",
+  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-b5e732",
+  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-5d5875",
+  "com.scalablytyped" %%% "hapi" % "17.8-dt-20181129Z-009512",
+  "com.scalablytyped" %%% "iron" % "5.0-dt-20180910Z-689c40",
   "com.scalablytyped" %%% "joi" % "14.0-dt-20181031Z-cbdcd6",
   "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
   "com.scalablytyped" %%% "mime-db" % "1.27-dt-20180910Z-fdb4ff",
   "com.scalablytyped" %%% "mimos" % "3.0-dt-20180910Z-d42ee9",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "podium" % "1.0-dt-20180910Z-458a88",
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",
-  "com.scalablytyped" %%% "restify" % "7.2-dt-20181121Z-03549b",
-  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-953de2",
-  "com.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-90a3c7",
-  "com.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-16a77c",
+  "com.scalablytyped" %%% "restify" % "7.2-dt-20181121Z-44b1d0",
+  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-9a9ab6",
+  "com.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-fedd0b",
+  "com.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-e403be",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20181121Z-54b5e0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

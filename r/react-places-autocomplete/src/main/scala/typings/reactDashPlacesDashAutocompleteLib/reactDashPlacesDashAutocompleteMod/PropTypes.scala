@@ -10,7 +10,14 @@ trait PropTypes extends js.Object {
   var classNames: js.UndefOr[reactDashPlacesDashAutocompleteLib.Anon_RootAutocompleteItemActive] = js.undefined
   var debounce: js.UndefOr[scala.Double] = js.undefined
   var highlightFirstSuggestion: js.UndefOr[scala.Boolean] = js.undefined
-  var inputProps: reactDashPlacesDashAutocompleteLib.Anon_OnBlur
+  var inputProps: js.UndefOr[reactDashPlacesDashAutocompleteLib.Anon_Type] = js.undefined
+  var onBlur: js.UndefOr[
+    js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLInputElement], 
+      scala.Unit
+    ]
+  ] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* value */ java.lang.String, scala.Unit]] = js.undefined
   var onError: js.UndefOr[
     js.Function2[
       /* status */ java.lang.String, 
@@ -32,5 +39,6 @@ trait PropTypes extends js.Object {
   ] = js.undefined
   var shouldFetchSuggestions: js.UndefOr[js.Function1[/* value */ java.lang.String, scala.Boolean]] = js.undefined
   var styles: js.UndefOr[reactDashPlacesDashAutocompleteLib.Anon_Root] = js.undefined
+  var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

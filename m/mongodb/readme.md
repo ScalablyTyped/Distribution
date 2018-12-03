@@ -20,6 +20,7 @@
 //                 Mikael Lirbank <https://github.com/lirbank>
 //                 Hector Ribes <https://github.com/hector7>
 //                 Florian Richter <https://github.com/floric>
+//                 Erik Christensen <https://github.com/erikc5000>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 // Documentation : http://mongodb.github.io/node-mongodb-native/3.1/api/

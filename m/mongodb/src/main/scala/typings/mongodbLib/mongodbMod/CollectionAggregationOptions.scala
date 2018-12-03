@@ -16,7 +16,7 @@ trait CollectionAggregationOptions extends js.Object {
        * Allow driver to bypass schema validation in MongoDB 3.2 or higher.
        */
   var bypassDocumentValidation: js.UndefOr[scala.Boolean] = js.undefined
-  var collation: js.UndefOr[js.Object] = js.undefined
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   var comment: js.UndefOr[java.lang.String] = js.undefined
   /**
        * Return the query as cursor, on 2.6 > it returns as a real cursor
@@ -27,6 +27,7 @@ trait CollectionAggregationOptions extends js.Object {
        * Explain returns the aggregation execution plan (requires mongodb 2.6 >).
        */
   var explain: js.UndefOr[scala.Boolean] = js.undefined
+  var hint: js.UndefOr[java.lang.String | js.Object] = js.undefined
   /**
        * specifies a cumulative time limit in milliseconds for processing operations
        * on the cursor. MongoDB interrupts the operation at the earliest following interrupt point.

@@ -7,11 +7,17 @@ import scala.scalajs.js.annotation._
 
 
 trait Point extends js.Object {
-  /** >= 1 */
+  /**
+       * Column in a source file (1-indexed integer).
+       */
   var column: scala.Double
-  /** >= 1 */
+  /**
+       * Line in a source file (1-indexed integer).
+       */
   var line: scala.Double
-  /** >= 0 */
+  /**
+       * Character in a source file (0-indexed integer).
+       */
   var offset: js.UndefOr[scala.Double] = js.undefined
 }
 

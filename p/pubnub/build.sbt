@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "pubnub"
-version := "4.0-dt-20180910Z-746002"
+version := "4.0-dt-20181203Z-4d16ce"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

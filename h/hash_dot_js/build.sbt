@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "hash_dot_js"
-version := "1.1.5-a14031"
+version := "1.1.5-7e4ca2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20180910Z-b6f728",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20180910Z-733098",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

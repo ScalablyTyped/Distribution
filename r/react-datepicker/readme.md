@@ -1,5 +1,5 @@
 ```
-// Type definitions for react-datepicker 1.8
+// Type definitions for react-datepicker 2.0
 // Project: https://github.com/Hacker0x01/react-datepicker
 // Definitions by: Rajab Shakirov <https://github.com/radziksh>,
 //                 Andrey Balokha <https://github.com/andrewBalekha>,
@@ -9,6 +9,7 @@
 //                 Koala Human <https://github.com/KoalaHuman>
 //                 Sean Kelley <https://github.com/seansfkelley>
 //                 Justin Grant <https://github.com/justingrant>
+//                 Jake Boone <https://github.com/jakeboone02>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

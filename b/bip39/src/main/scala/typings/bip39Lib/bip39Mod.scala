@@ -11,6 +11,8 @@ object bip39Mod extends js.Object {
   val wordlists: bip39Lib.Anon_French = js.native
   def entropyToMnemonic(entropyHex: java.lang.String): java.lang.String = js.native
   def entropyToMnemonic(entropyHex: java.lang.String, wordlist: js.Array[java.lang.String]): java.lang.String = js.native
+  def entropyToMnemonic(entropyHex: nodeLib.Buffer): java.lang.String = js.native
+  def entropyToMnemonic(entropyHex: nodeLib.Buffer, wordlist: js.Array[java.lang.String]): java.lang.String = js.native
   def generateMnemonic(): java.lang.String = js.native
   def generateMnemonic(strength: scala.Double): java.lang.String = js.native
   def generateMnemonic(strength: scala.Double, rng: js.Function1[/* size */ scala.Double, nodeLib.Buffer]): java.lang.String = js.native

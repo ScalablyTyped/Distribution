@@ -1,6 +1,6 @@
 ```
 // Type definitions for ansicolors
 // Project: https://github.com/thlorenz/ansicolors
-// Definitions by: rogierschouten <https://github.com/rogierschouten>
+// Definitions by: Benjamin Arthur Lupton <https://github.com/balupton>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

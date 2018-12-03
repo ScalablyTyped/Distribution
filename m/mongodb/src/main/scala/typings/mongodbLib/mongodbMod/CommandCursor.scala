@@ -12,17 +12,21 @@ class CommandCursor ()
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#batchSize */
   def batchSize(value: scala.Double): CommandCursor = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#close */
-  def close(): stdLib.Promise[AggregationCursorResult] = js.native
-  def close(callback: MongoCallback[AggregationCursorResult]): scala.Unit = js.native
+  def close(): stdLib.Promise[CommandCursorResult] = js.native
+  def close(callback: MongoCallback[CommandCursorResult]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#each */
-  def each(callback: MongoCallback[AggregationCursorResult]): scala.Unit = js.native
+  def each(callback: MongoCallback[CommandCursorResult]): scala.Unit = js.native
+  /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#hasNext */
+  def hasNext(): stdLib.Promise[CommandCursorResult] = js.native
+  /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#hasNext */
+  def hasNext(callback: MongoCallback[CommandCursorResult]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#isClosed */
   def isClosed(): scala.Boolean = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#maxTimeMS */
   def maxTimeMS(value: scala.Double): CommandCursor = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#next */
-  def next(): stdLib.Promise[AggregationCursorResult] = js.native
-  def next(callback: MongoCallback[AggregationCursorResult]): scala.Unit = js.native
+  def next(): stdLib.Promise[CommandCursorResult] = js.native
+  def next(callback: MongoCallback[CommandCursorResult]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#rewind */
   def rewind(): CommandCursor = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#setReadPreference */

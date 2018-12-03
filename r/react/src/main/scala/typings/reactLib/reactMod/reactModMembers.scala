@@ -15,7 +15,7 @@ object reactModMembers extends js.Object {
        * This feature is not yet available for server-side rendering.
        * Suspense support will be added in a later release.
        */
-  val Suspense: reactLib.reactMod.ReactNs.ExoticComponent[reactLib.Anon_ChildrenFallback] = js.native
+  val Suspense: reactLib.reactMod.ReactNs.ExoticComponent[reactLib.reactMod.ReactNs.SuspenseProps] = js.native
   val version: java.lang.String = js.native
   // Custom components
   def cloneElement[P](element: reactLib.reactMod.ReactNs.FunctionComponentElement[P]): reactLib.reactMod.ReactNs.FunctionComponentElement[P] = js.native
@@ -344,31 +344,6 @@ object reactModMembers extends js.Object {
        * @see https://reactjs.org/docs/hooks-reference.html#usememo
        */
   def useMemo[T](factory: js.Function0[T], inputs: reactLib.reactMod.ReactNs.InputIdentityList): T = js.native
-  /**
-       * The signature is identical to `useEffect`, but it fires synchronously during the same phase that
-       * React performs its DOM mutations, before sibling components have been updated. Use this to perform
-       * custom DOM mutations.
-       *
-       * Prefer the standard `useEffect` when possible to avoid blocking visual updates.
-       *
-       * @version experimental
-       * @see https://reactjs.org/docs/hooks-reference.html#usemutationeffect
-       */
-  def useMutationEffect(effect: reactLib.reactMod.ReactNs.EffectCallback): scala.Unit = js.native
-  /**
-       * The signature is identical to `useEffect`, but it fires synchronously during the same phase that
-       * React performs its DOM mutations, before sibling components have been updated. Use this to perform
-       * custom DOM mutations.
-       *
-       * Prefer the standard `useEffect` when possible to avoid blocking visual updates.
-       *
-       * @version experimental
-       * @see https://reactjs.org/docs/hooks-reference.html#usemutationeffect
-       */
-  def useMutationEffect(
-    effect: reactLib.reactMod.ReactNs.EffectCallback,
-    inputs: reactLib.reactMod.ReactNs.InputIdentityList
-  ): scala.Unit = js.native
   /**
        * An alternative to `useState`.
        *

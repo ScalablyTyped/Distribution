@@ -30,6 +30,7 @@ trait DateRangePickerShape extends js.Object {
   var hideKeyboardShortcutsPanel: js.UndefOr[scala.Boolean] = js.native
   var horizontalMargin: js.UndefOr[scala.Double] = js.native
   var initialVisibleMonth: js.UndefOr[js.Function0[reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj]] = js.native
+  var inputIconPosition: js.UndefOr[IconPositionShape] = js.native
   var isDayBlocked: js.UndefOr[js.Function1[/* day */ js.Any, scala.Boolean]] = js.native
   var isDayHighlighted: js.UndefOr[js.Function1[/* day */ js.Any, scala.Boolean]] = js.native
   var isOutsideRange: js.UndefOr[js.Function1[/* day */ js.Any, scala.Boolean]] = js.native

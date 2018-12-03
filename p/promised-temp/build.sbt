@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "promised-temp"
-version := "0.1-dt-20180910Z-feb827"
+version := "0.1-dt-20180910Z-f06b02"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "temp" % "0.8-dt-20180910Z-73afa1",
+  "com.scalablytyped" %%% "temp" % "0.8-dt-20180910Z-2a047d",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

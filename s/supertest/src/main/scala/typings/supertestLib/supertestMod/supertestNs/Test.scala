@@ -16,6 +16,7 @@ trait Test
   def expect(body: stdLib.RegExp): this.type = js.native
   def expect(body: stdLib.RegExp, callback: CallbackHandler): this.type = js.native
   def expect(checker: js.Function1[/* res */ Response, _]): this.type = js.native
+  def expect(checker: js.Function1[/* res */ Response, _], callback: CallbackHandler): this.type = js.native
   def expect(field: java.lang.String, `val`: java.lang.String): this.type = js.native
   def expect(field: java.lang.String, `val`: java.lang.String, callback: CallbackHandler): this.type = js.native
   def expect(field: java.lang.String, `val`: stdLib.RegExp): this.type = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait CollectionCreateOptions extends CommonOptions {
   var autoIndexId: js.UndefOr[scala.Boolean] = js.undefined
   var capped: js.UndefOr[scala.Boolean] = js.undefined
-  var collation: js.UndefOr[js.Object] = js.undefined
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   var flags: js.UndefOr[scala.Double] = js.undefined
   var indexOptionDefaults: js.UndefOr[js.Object] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined

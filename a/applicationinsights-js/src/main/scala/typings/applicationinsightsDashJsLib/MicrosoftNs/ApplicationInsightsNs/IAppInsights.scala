@@ -59,39 +59,41 @@ trait IAppInsights extends js.Object {
            */
   def setAuthenticatedUserContext(authenticatedUserId: java.lang.String, accountId: java.lang.String, storeInCookie: scala.Boolean): js.Any = js.native
   /**
-           * Start timing an extended event. Call {@link stopTrackEvent} to log the event when it ends.
+           * Start timing an extended event. Call `stopTrackEvent` to log the event when it ends.
            * @param   name    A string that identifies this event uniquely within the document.
            */
   def startTrackEvent(name: java.lang.String): js.Any = js.native
   /**
-           * Starts timing how long the user views a page or other item. Call this when the page opens.
-           * This method doesn't send any telemetry. Call {@link stopTrackTelemetry} to log the page when it closes.
+           * Starts the timer for tracking a page load time. Use this instead of `trackPageView` if you want to control when the page view timer starts and stops,
+           * but don't want to calculate the duration yourself. This method doesn't send any telemetry. Call `stopTrackPage` to log the end of the page view
+           * and send the event.
            * @param   name  A string that idenfities this item, unique within this HTML document. Defaults to the document title.
            */
   def startTrackPage(): js.Any = js.native
   /**
-           * Starts timing how long the user views a page or other item. Call this when the page opens.
-           * This method doesn't send any telemetry. Call {@link stopTrackTelemetry} to log the page when it closes.
+           * Starts the timer for tracking a page load time. Use this instead of `trackPageView` if you want to control when the page view timer starts and stops,
+           * but don't want to calculate the duration yourself. This method doesn't send any telemetry. Call `stopTrackPage` to log the end of the page view
+           * and send the event.
            * @param   name  A string that idenfities this item, unique within this HTML document. Defaults to the document title.
            */
   def startTrackPage(name: java.lang.String): js.Any = js.native
   /**
-           * Log an extended event that you started timing with {@link startTrackEvent}.
-           * @param   name    The string you used to identify this event in startTrackEvent.
+           * Log an extended event that you started timing with `startTrackEvent`.
+           * @param   name    The string you used to identify this event in `startTrackEvent`.
            * @param   properties  map[string, string] - additional data used to filter events and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this event, displayed in Metrics Explorer on the portal. Defaults to empty.
            */
   def stopTrackEvent(name: java.lang.String): js.Any = js.native
   /**
-           * Log an extended event that you started timing with {@link startTrackEvent}.
-           * @param   name    The string you used to identify this event in startTrackEvent.
+           * Log an extended event that you started timing with `startTrackEvent`.
+           * @param   name    The string you used to identify this event in `startTrackEvent`.
            * @param   properties  map[string, string] - additional data used to filter events and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this event, displayed in Metrics Explorer on the portal. Defaults to empty.
            */
   def stopTrackEvent(name: java.lang.String, properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]): js.Any = js.native
   /**
-           * Log an extended event that you started timing with {@link startTrackEvent}.
-           * @param   name    The string you used to identify this event in startTrackEvent.
+           * Log an extended event that you started timing with `startTrackEvent`.
+           * @param   name    The string you used to identify this event in `startTrackEvent`.
            * @param   properties  map[string, string] - additional data used to filter events and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this event, displayed in Metrics Explorer on the portal. Defaults to empty.
            */
@@ -101,32 +103,36 @@ trait IAppInsights extends js.Object {
     measurements: ScalablyTyped.runtime.StringDictionary[scala.Double]
   ): js.Any = js.native
   /**
-           * Logs how long a page or other item was visible, after {@link startTrackPage}. Call this when the page closes.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * Stops the timer that was started by calling `startTrackPage` and sends the pageview load time telemetry with the specified properties and measurements.
+           * The duration of the page view will be the time between calling `startTrackPage` and `stopTrackPage`.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
            */
   def stopTrackPage(): js.Any = js.native
   /**
-           * Logs how long a page or other item was visible, after {@link startTrackPage}. Call this when the page closes.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * Stops the timer that was started by calling `startTrackPage` and sends the pageview load time telemetry with the specified properties and measurements.
+           * The duration of the page view will be the time between calling `startTrackPage` and `stopTrackPage`.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
            */
   def stopTrackPage(name: java.lang.String): js.Any = js.native
   /**
-           * Logs how long a page or other item was visible, after {@link startTrackPage}. Call this when the page closes.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * Stops the timer that was started by calling `startTrackPage` and sends the pageview load time telemetry with the specified properties and measurements.
+           * The duration of the page view will be the time between calling `startTrackPage` and `stopTrackPage`.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
            */
   def stopTrackPage(name: java.lang.String, url: java.lang.String): js.Any = js.native
   /**
-           * Logs how long a page or other item was visible, after {@link startTrackPage}. Call this when the page closes.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * Stops the timer that was started by calling `startTrackPage` and sends the pageview load time telemetry with the specified properties and measurements.
+           * The duration of the page view will be the time between calling `startTrackPage` and `stopTrackPage`.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
@@ -137,8 +143,9 @@ trait IAppInsights extends js.Object {
     properties: ScalablyTyped.runtime.StringDictionary[java.lang.String]
   ): js.Any = js.native
   /**
-           * Logs how long a page or other item was visible, after {@link startTrackPage}. Call this when the page closes.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * Stops the timer that was started by calling `startTrackPage` and sends the pageview load time telemetry with the specified properties and measurements.
+           * The duration of the page view will be the time between calling `startTrackPage` and `stopTrackPage`.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
@@ -365,7 +372,7 @@ trait IAppInsights extends js.Object {
   ): js.Any = js.native
   /**
            * Logs that a page or other item was viewed.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
@@ -374,7 +381,7 @@ trait IAppInsights extends js.Object {
   def trackPageView(): js.Any = js.native
   /**
            * Logs that a page or other item was viewed.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
@@ -383,7 +390,7 @@ trait IAppInsights extends js.Object {
   def trackPageView(name: java.lang.String): js.Any = js.native
   /**
            * Logs that a page or other item was viewed.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
@@ -392,7 +399,7 @@ trait IAppInsights extends js.Object {
   def trackPageView(name: java.lang.String, url: java.lang.String): js.Any = js.native
   /**
            * Logs that a page or other item was viewed.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
@@ -405,7 +412,7 @@ trait IAppInsights extends js.Object {
   ): js.Any = js.native
   /**
            * Logs that a page or other item was viewed.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.
@@ -419,7 +426,7 @@ trait IAppInsights extends js.Object {
   ): js.Any = js.native
   /**
            * Logs that a page or other item was viewed.
-           * @param   name  The string you used as the name in startTrackPage. Defaults to the document title.
+           * @param   name  The string you used as the name in `startTrackPage`. Defaults to the document title.
            * @param   url   String - a relative or absolute URL that identifies the page or other item. Defaults to the window location.
            * @param   properties  map[string, string] - additional data used to filter pages and metrics in the portal. Defaults to empty.
            * @param   measurements    map[string, number] - metrics associated with this page, displayed in Metrics Explorer on the portal. Defaults to empty.

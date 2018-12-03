@@ -11,7 +11,7 @@ trait IndexOptions extends CommonOptions {
        * Creates the index in the background, yielding whenever possible.
        */
   var background: js.UndefOr[scala.Boolean] = js.undefined
-  var collation: js.UndefOr[js.Object] = js.undefined
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   var default_language: js.UndefOr[java.lang.String] = js.undefined
   /**
        * A unique index cannot be created on a key that has pre-existing duplicate values.

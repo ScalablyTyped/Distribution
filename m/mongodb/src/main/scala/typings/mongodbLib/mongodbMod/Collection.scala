@@ -74,12 +74,12 @@ trait Collection[TSchema] extends js.Object {
   def createIndex(fieldOrSpec: js.Any, callback: MongoCallback[java.lang.String]): scala.Unit = js.native
   def createIndex(fieldOrSpec: js.Any, options: IndexOptions): stdLib.Promise[java.lang.String] = js.native
   def createIndex(fieldOrSpec: js.Any, options: IndexOptions, callback: MongoCallback[java.lang.String]): scala.Unit = js.native
-  def createIndexes(indexSpecs: js.Array[js.Object]): stdLib.Promise[_] = js.native
+  def createIndexes(indexSpecs: js.Array[IndexSpecification]): stdLib.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#createIndexes and  http://docs.mongodb.org/manual/reference/command/createIndexes/ */
-  def createIndexes(indexSpecs: js.Array[js.Object], callback: MongoCallback[_]): scala.Unit = js.native
-  def createIndexes(indexSpecs: js.Array[js.Object], options: mongodbLib.Anon_SessionClientSession_1575395223): stdLib.Promise[_] = js.native
+  def createIndexes(indexSpecs: js.Array[IndexSpecification], callback: MongoCallback[_]): scala.Unit = js.native
+  def createIndexes(indexSpecs: js.Array[IndexSpecification], options: mongodbLib.Anon_SessionClientSession_1575395223): stdLib.Promise[_] = js.native
   def createIndexes(
-    indexSpecs: js.Array[js.Object],
+    indexSpecs: js.Array[IndexSpecification],
     options: mongodbLib.Anon_SessionClientSession_1575395223,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
@@ -179,17 +179,31 @@ trait Collection[TSchema] extends js.Object {
     options: FindOneAndReplaceOption,
     callback: MongoCallback[FindAndModifyWriteOpResultObject[TSchema]]
   ): scala.Unit = js.native
-  def findOneAndUpdate(filter: FilterQuery[TSchema], update: js.Object): stdLib.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
+  def findOneAndUpdate(filter: FilterQuery[TSchema], update: TSchema): stdLib.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#findOneAndUpdate */
   def findOneAndUpdate(
     filter: FilterQuery[TSchema],
-    update: js.Object,
+    update: TSchema,
     callback: MongoCallback[FindAndModifyWriteOpResultObject[TSchema]]
   ): scala.Unit = js.native
-  def findOneAndUpdate(filter: FilterQuery[TSchema], update: js.Object, options: FindOneAndUpdateOption): stdLib.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
+  def findOneAndUpdate(filter: FilterQuery[TSchema], update: TSchema, options: FindOneAndUpdateOption): stdLib.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
   def findOneAndUpdate(
     filter: FilterQuery[TSchema],
-    update: js.Object,
+    update: TSchema,
+    options: FindOneAndUpdateOption,
+    callback: MongoCallback[FindAndModifyWriteOpResultObject[TSchema]]
+  ): scala.Unit = js.native
+  def findOneAndUpdate(filter: FilterQuery[TSchema], update: UpdateQuery[TSchema]): stdLib.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
+  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#findOneAndUpdate */
+  def findOneAndUpdate(
+    filter: FilterQuery[TSchema],
+    update: UpdateQuery[TSchema],
+    callback: MongoCallback[FindAndModifyWriteOpResultObject[TSchema]]
+  ): scala.Unit = js.native
+  def findOneAndUpdate(filter: FilterQuery[TSchema], update: UpdateQuery[TSchema], options: FindOneAndUpdateOption): stdLib.Promise[FindAndModifyWriteOpResultObject[TSchema]] = js.native
+  def findOneAndUpdate(
+    filter: FilterQuery[TSchema],
+    update: UpdateQuery[TSchema],
     options: FindOneAndUpdateOption,
     callback: MongoCallback[FindAndModifyWriteOpResultObject[TSchema]]
   ): scala.Unit = js.native

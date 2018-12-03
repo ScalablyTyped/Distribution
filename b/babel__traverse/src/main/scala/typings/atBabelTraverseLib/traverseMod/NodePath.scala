@@ -986,7 +986,7 @@ class NodePath[T] protected () extends js.Object {
   def skip(): scala.Unit = js.native
   def skipKey(key: java.lang.String): scala.Unit = js.native
   def stop(): scala.Unit = js.native
-  def traverse(visitor: Visitor[Node]): scala.Unit = js.native
+  def traverse(visitor: Visitor[js.Object]): scala.Unit = js.native
   def traverse[T](visitor: Visitor[T], state: T): scala.Unit = js.native
   /** Update all sibling node paths after `fromIndex` by `incrementBy`. */
   def updateSiblingKeys(fromIndex: scala.Double, incrementBy: scala.Double): scala.Unit = js.native

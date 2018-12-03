@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "yeoman-generator"
-version := "3.0-dt-20181116Z-fae5bd"
+version := "3.0-dt-20181116Z-0bd02a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180910Z-a9c9e6",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180910Z-a423ba",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "rx" % "4.1-dt-20180910Z-49bd7e",
   "com.scalablytyped" %%% "rx-core" % "4.0-dt-20180910Z-b87bbc",
   "com.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180910Z-df7bfe",
@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20180910Z-7f8ab3",
   "com.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180910Z-d01234",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "through" % "0.0-unknown-dt-20180910Z-312c0e",
+  "com.scalablytyped" %%% "through" % "0.0-unknown-dt-20180910Z-d9bdc2",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

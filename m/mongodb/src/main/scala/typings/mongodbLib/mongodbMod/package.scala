@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object mongodbMod {
   type AggregationCursorResult = js.Any | scala.Unit
+  type CommandCursorResult = js.Any | scala.Unit
   type CursorResult = js.Any | scala.Unit | scala.Boolean
   type EndCallback = js.Function1[/* error */ MongoError, scala.Unit]
   type FilterQuery[T] = (mongodbLib.mongodbLibStrings.FilterQuery with T) | ScalablyTyped.runtime.StringDictionary[js.Any]

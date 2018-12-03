@@ -388,7 +388,7 @@ trait IFactory[T] extends js.Object {
        * @param {function(number): *=} builder
        * @return {Factory}
        */
-  def sequence(name: java.lang.String): IFactory[T] = js.native
+  def sequence[K /* <: java.lang.String */](name: K): IFactory[T] = js.native
   /**
        * Defines an attribute that, by default, simply has an auto-incrementing
        * numeric value starting at 1. You can provide your own builder function
@@ -406,28 +406,11 @@ trait IFactory[T] extends js.Object {
        * @param {function(number): *=} builder
        * @return {Factory}
        */
-  def sequence(name: java.lang.String, dependenciesOrBuilder: js.Function0[_ | java.lang.String]): IFactory[T] = js.native
-  /**
-       * Defines an attribute that, by default, simply has an auto-incrementing
-       * numeric value starting at 1. You can provide your own builder function
-       * that accepts the number of the sequence and returns whatever value you'd
-       * like it to be.
-       *
-       * Sequence values are inherited such that a factory derived from another
-       * with a sequence will share the state of that sequence and they will never
-       * conflict.
-       *
-       *   Factory.define('Person').sequence('id');
-       *
-       * @param {string} attr
-       * @param {Array.<string>=} | Function dependencies or builder
-       * @param {function(number): *=} builder
-       * @return {Factory}
-       */
-  def sequence(
-    name: java.lang.String,
-    dependenciesOrBuilder: js.Function0[_ | java.lang.String],
-    builder: js.Function
+  def sequence[K /* <: java.lang.String */](name: K, builder: js.Function1[/* i */ scala.Double, _]): IFactory[T] = js.native
+  def sequence[K /* <: java.lang.String */, D /* <: java.lang.String */](
+    name: K,
+    dependencies: js.Array[D],
+    builder: js.Function2[/* i */ scala.Double, /* repeated */js.Any, _]
   ): IFactory[T] = js.native
 }
 

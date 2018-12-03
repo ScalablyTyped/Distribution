@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "watchpack"
-version := "1.1-dt-20180910Z-6fb8ab"
+version := "1.1-dt-20180910Z-e929b7"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "chokidar" % "1.7-dt-20180910Z-4d8c2f",
-  "com.scalablytyped" %%% "graceful-fs" % "4.1-dt-20180910Z-578095",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "chokidar" % "1.7-dt-20180910Z-d67b41",
+  "com.scalablytyped" %%% "graceful-fs" % "4.1-dt-20180910Z-112bdf",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

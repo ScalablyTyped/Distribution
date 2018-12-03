@@ -1,34 +1,34 @@
 organization := "com.scalablytyped"
 name := "optics-agent"
-version := "1.1-dt-20181027Z-76a4f7"
+version := "1.1-dt-20181027Z-096e4a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "accepts" % "1.3-dt-20180910Z-f7a5e3",
-  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-bbb8a6",
+  "com.scalablytyped" %%% "accepts" % "1.3-dt-20180910Z-34187c",
+  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-6b0d80",
   "com.scalablytyped" %%% "boom" % "7.2-dt-20181120Z-500330",
   "com.scalablytyped" %%% "catbox" % "10.0-dt-20181121Z-981978",
-  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-c1f383",
-  "com.scalablytyped" %%% "cookies" % "0.7-dt-20180910Z-1de26b",
-  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-1b16d7",
-  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-bec6af",
+  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-b92a74",
+  "com.scalablytyped" %%% "cookies" % "0.7-dt-20180910Z-b6d66c",
+  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-b5e732",
+  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-5d5875",
   "com.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-dd545c",
-  "com.scalablytyped" %%% "hapi" % "17.8-dt-20181129Z-db5334",
+  "com.scalablytyped" %%% "hapi" % "17.8-dt-20181129Z-009512",
   "com.scalablytyped" %%% "http-assert" % "1.3-dt-20181121Z-ac939d",
-  "com.scalablytyped" %%% "iron" % "5.0-dt-20180910Z-4d9ee8",
+  "com.scalablytyped" %%% "iron" % "5.0-dt-20180910Z-689c40",
   "com.scalablytyped" %%% "joi" % "14.0-dt-20181031Z-cbdcd6",
   "com.scalablytyped" %%% "keygrip" % "1.0-dt-20180910Z-3baf7b",
-  "com.scalablytyped" %%% "koa" % "2.x-dt-20181120Z-77c5a7",
+  "com.scalablytyped" %%% "koa" % "2.x-dt-20181120Z-c6d029",
   "com.scalablytyped" %%% "koa-compose" % "3.2-dt-20180910Z-ef7f7b",
   "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
   "com.scalablytyped" %%% "mime-db" % "1.27-dt-20180910Z-fdb4ff",
   "com.scalablytyped" %%% "mimos" % "3.0-dt-20180910Z-d42ee9",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "podium" % "1.0-dt-20180910Z-458a88",
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",
-  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-953de2",
-  "com.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-90a3c7",
+  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-9a9ab6",
+  "com.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-fedd0b",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

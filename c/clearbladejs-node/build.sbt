@@ -1,14 +1,14 @@
 organization := "com.scalablytyped"
 name := "clearbladejs-node"
-version := "1.0-dt-20180910Z-733b1d"
+version := "1.0-dt-20180910Z-d8703c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "caseless" % "0.12-dt-20180910Z-2bf221",
-  "com.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-b1edcb",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
-  "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-fa2110",
+  "com.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-52b360",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
+  "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-67a93f",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181104Z-65a037",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

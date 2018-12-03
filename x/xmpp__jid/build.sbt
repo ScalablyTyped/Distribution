@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "xmpp__jid"
-version := "0.0-dt-20180910Z-8c0aaf"
+version := "0.6-dt-20181203Z-e67f15"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

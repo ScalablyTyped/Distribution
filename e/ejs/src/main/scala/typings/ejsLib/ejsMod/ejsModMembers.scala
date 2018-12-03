@@ -32,8 +32,11 @@ object ejsModMembers extends js.Object {
     data: js.UndefOr[scala.Nothing],
     opts: Options with ejsLib.Anon_AsyncNever
   ): java.lang.String = js.native
+  def renderFile[T](path: java.lang.String): stdLib.Promise[T] = js.native
   def renderFile[T](path: java.lang.String, cb: RenderFileCallback[T]): T = js.native
+  def renderFile[T](path: java.lang.String, data: Data): stdLib.Promise[T] = js.native
   def renderFile[T](path: java.lang.String, data: Data, cb: RenderFileCallback[T]): T = js.native
+  def renderFile[T](path: java.lang.String, data: Data, opts: Options): stdLib.Promise[T] = js.native
   def renderFile[T](path: java.lang.String, data: Data, opts: Options, cb: RenderFileCallback[T]): T = js.native
   @JSName("render")
   def render_Promise(template: java.lang.String, data: Data, opts: Options with ejsLib.Anon_AsyncTrue): stdLib.Promise[java.lang.String] = js.native

@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait IFactoryStatic extends js.Object {
+trait IFactoryStatic
+  extends ScalablyTyped.runtime.Instantiable0[IFactory[js.Object]] {
   /**
        * Locates a factory by name and calls #attributes on it.
        *

@@ -16,10 +16,7 @@ class MongoClient protected ()
   def close(callback: MongoCallback[scala.Unit]): scala.Unit = js.native
   def close(force: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
   def close(force: scala.Boolean, callback: MongoCallback[scala.Unit]): scala.Unit = js.native
-  /**
-       * @deprecated
-       * http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#connect
-       */
+  /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#connect */
   def connect(): stdLib.Promise[MongoClient] = js.native
   def connect(callback: MongoCallback[MongoClient]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#db */

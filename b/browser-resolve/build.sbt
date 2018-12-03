@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "browser-resolve"
-version := "0.0-unknown-dt-20180910Z-f3b885"
+version := "0.0-unknown-dt-20180910Z-2eb992"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
-  "com.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180910Z-a05246",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
+  "com.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180910Z-3a1d7c",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

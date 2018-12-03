@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "webgme"
-version := "2.33.0-34c0fd"
+version := "2.33.0-f37562"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "q" % "1.5-dt-20180915Z-726082",
   "com.scalablytyped" %%% "requirejs" % "2.1.20-dt-20180910Z-20145a",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",

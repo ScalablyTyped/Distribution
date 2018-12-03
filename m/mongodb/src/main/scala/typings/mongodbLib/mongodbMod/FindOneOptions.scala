@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait FindOneOptions extends js.Object {
   var batchSize: js.UndefOr[scala.Double] = js.undefined
-  var collation: js.UndefOr[js.Object] = js.undefined
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   var comment: js.UndefOr[java.lang.String] = js.undefined
   var explain: js.UndefOr[scala.Boolean] = js.undefined
   /**

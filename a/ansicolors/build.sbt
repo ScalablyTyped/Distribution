@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "ansicolors"
-version := "0.0-unknown-dt-20180910Z-0f9315"
+version := "0.0-unknown-dt-20181203Z-c93bdf"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

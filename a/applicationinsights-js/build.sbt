@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "applicationinsights-js"
-version := "1.0-dt-20181130Z-980451"
+version := "1.0-dt-20181203Z-c2cca4"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

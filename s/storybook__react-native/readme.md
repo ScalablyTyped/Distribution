@@ -5,6 +5,7 @@
 //                 Anton Izmailov <https://github.com/wapgear>
 //                 Alec Hill <https://github.com/alechill>
 //                 Kyle Roach <https://github.com/iRoachie>
+//                 Ceyhun Ozugur <https://github.com/ceyhuno>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

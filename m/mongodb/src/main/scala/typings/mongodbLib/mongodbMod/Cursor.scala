@@ -23,7 +23,7 @@ class Cursor[T] ()
   def close(): stdLib.Promise[CursorResult] = js.native
   def close(callback: MongoCallback[CursorResult]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#collation */
-  def collation(value: js.Object): Cursor[T] = js.native
+  def collation(value: CollationDocument): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#comment */
   def comment(value: java.lang.String): Cursor[T] = js.native
   def count(): stdLib.Promise[scala.Double] = js.native

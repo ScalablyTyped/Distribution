@@ -1,17 +1,17 @@
 organization := "com.scalablytyped"
 name := "anydb-sql-migrations"
-version := "2.3.1-60000d"
+version := "2.3.1-5ff442"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "any-db" % "2.1.0-dt-20180910Z-b0e0a1",
-  "com.scalablytyped" %%% "any-db-transaction" % "2.2.1-dt-20180910Z-cde1fc",
-  "com.scalablytyped" %%% "anydb-sql" % "0.7.0-d6db25",
+  "com.scalablytyped" %%% "any-db" % "2.1.0-dt-20180910Z-c7d78b",
+  "com.scalablytyped" %%% "any-db-transaction" % "2.2.1-dt-20180910Z-1b1ab4",
+  "com.scalablytyped" %%% "anydb-sql" % "0.7.0-00e8ce",
   "com.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-7bd99a",
   "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
-  "com.scalablytyped" %%% "sqlite3" % "3.1-dt-20180910Z-a7ad0d",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
+  "com.scalablytyped" %%% "sqlite3" % "3.1-dt-20180910Z-9a7270",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "yargs" % "12.0-dt-20180929Z-9dda57",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

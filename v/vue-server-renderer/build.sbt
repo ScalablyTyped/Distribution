@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "vue-server-renderer"
-version := "2.5.17-819b35"
+version := "2.5.17-e52eab"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,8 +14,8 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
   "com.scalablytyped" %%% "lodash_dot_template" % "4.4-dt-20180910Z-d5c4fe",
   "com.scalablytyped" %%% "lodash_dot_uniq" % "4.5-dt-20180910Z-570a54",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
-  "com.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180910Z-a05246",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
+  "com.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180910Z-3a1d7c",
   "com.scalablytyped" %%% "serialize-javascript" % "1.5-dt-20181018Z-d33dfa",
   "com.scalablytyped" %%% "source-map" % "0.7.3-ecab3d",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",

@@ -12,10 +12,10 @@ object debounceMod extends js.Object {
     /* f */ js.Function, 
     /* interval */ js.UndefOr[scala.Double], 
     /* immediate */ js.UndefOr[scala.Boolean], 
-    js.Function with debounceLib.Anon_Clear
+    js.Function with debounceLib.Anon_Clear with debounceLib.Anon_Flush
   ] = js.native
-  def apply[A /* <: js.Function */](f: A): A with debounceLib.Anon_Clear = js.native
-  def apply[A /* <: js.Function */](f: A, interval: scala.Double): A with debounceLib.Anon_Clear = js.native
-  def apply[A /* <: js.Function */](f: A, interval: scala.Double, immediate: scala.Boolean): A with debounceLib.Anon_Clear = js.native
+  def apply[A /* <: js.Function */](f: A): A with debounceLib.Anon_Clear with debounceLib.Anon_Flush = js.native
+  def apply[A /* <: js.Function */](f: A, interval: scala.Double): A with debounceLib.Anon_Clear with debounceLib.Anon_Flush = js.native
+  def apply[A /* <: js.Function */](f: A, interval: scala.Double, immediate: scala.Boolean): A with debounceLib.Anon_Clear with debounceLib.Anon_Flush = js.native
 }
 

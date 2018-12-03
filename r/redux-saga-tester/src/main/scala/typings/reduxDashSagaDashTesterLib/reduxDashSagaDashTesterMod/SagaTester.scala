@@ -10,15 +10,15 @@ trait SagaTester[StateType /* <: js.Object */] extends js.Object {
   /**
        * Dispatches an action to the redux store.
        */
-  def dispatch(action: AnyAction): scala.Unit = js.native
+  def dispatch(action: reduxLib.reduxMod.AnyAction): scala.Unit = js.native
   /**
        * Returns an array of all actions dispatched.
        */
-  def getCalledActions(): js.Array[AnyAction] = js.native
+  def getCalledActions(): js.Array[reduxLib.reduxMod.AnyAction] = js.native
   /**
        * Returns the last action dispatched to the store.
        */
-  def getLatestCalledAction(): AnyAction = js.native
+  def getLatestCalledAction(): reduxLib.reduxMod.AnyAction = js.native
   /**
        * Returns the state of the redux store.
        */
@@ -40,7 +40,7 @@ trait SagaTester[StateType /* <: js.Object */] extends js.Object {
   /**
        * Starts execution of the provided saga.
        */
-  def start(saga: SagaFunction): scala.Unit = js.native
+  def start(saga: SagaFunction, args: js.Any*): reduxDashSagaLib.reduxDashSagaMod.Task = js.native
   /**
        * Assigns the newState into the current state. (Only works with the default reducer.)
        */

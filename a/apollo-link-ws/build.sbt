@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "apollo-link-ws"
-version := "1.0.10-cb8a58"
+version := "1.0.10-379e12"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,11 +11,11 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "eventemitter3" % "3.1.0-88be71",
   "com.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-dd545c",
   "com.scalablytyped" %%% "iterall" % "1.2.2-e9ddad",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.15-4a1a0f",
+  "com.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.15-0fb9ca",
   "com.scalablytyped" %%% "symbol-observable" % "1.2.0-45b962",
-  "com.scalablytyped" %%% "ws" % "6.0-dt-20180910Z-bc92a5",
+  "com.scalablytyped" %%% "ws" % "6.0-dt-20180910Z-fd1ae5",
   "com.scalablytyped" %%% "zen-observable" % "0.8-dt-20180910Z-854602",
   "com.scalablytyped" %%% "zen-observable-ts" % "0.8.11-bacf6e",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

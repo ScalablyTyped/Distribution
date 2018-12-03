@@ -14,6 +14,12 @@ trait UnderscoreStringStaticExports extends js.Object {
            */
   def camelize(str: java.lang.String): java.lang.String = js.native
   /**
+           * Converts underscored or dasherized string to a camelized one.
+           * ('-moz-transform') => 'MozTransform'
+           * @param str
+           */
+  def camelize(str: java.lang.String, decapitalize: scala.Boolean): java.lang.String = js.native
+  /**
            * Converts first letter of the string to uppercase.
            * ('foo Bar') => 'Foo Bar'
            * @param str

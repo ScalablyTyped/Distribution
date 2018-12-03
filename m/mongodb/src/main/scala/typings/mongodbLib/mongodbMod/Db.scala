@@ -95,7 +95,7 @@ class Db protected ()
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#listCollections */
   def listCollections(filter: js.Object): CommandCursor = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#listCollections */
-  def listCollections(filter: js.Object, options: mongodbLib.Anon_ReadPreferenceBatchSize): CommandCursor = js.native
+  def listCollections(filter: js.Object, options: mongodbLib.Anon_NameOnly): CommandCursor = js.native
   def profilingInfo(): stdLib.Promise[scala.Unit] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#profilingInfo */
   /** @deprecated Query the system.profile collection directly. */

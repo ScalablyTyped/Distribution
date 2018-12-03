@@ -25,7 +25,19 @@ object skywayLibStrings {
   sealed trait error extends js.Object
   
   @js.native
+  sealed trait log extends js.Object
+  
+  @js.native
   sealed trait open extends js.Object
+  
+  @js.native
+  sealed trait peerJoin extends js.Object
+  
+  @js.native
+  sealed trait peerLeave extends js.Object
+  
+  @js.native
+  sealed trait removeStream extends js.Object
   
   @js.native
   sealed trait stream extends js.Object
@@ -36,7 +48,11 @@ object skywayLibStrings {
   def data: data = "data".asInstanceOf[data]
   def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   def error: error = "error".asInstanceOf[error]
+  def log: log = "log".asInstanceOf[log]
   def open: open = "open".asInstanceOf[open]
+  def peerJoin: peerJoin = "peerJoin".asInstanceOf[peerJoin]
+  def peerLeave: peerLeave = "peerLeave".asInstanceOf[peerLeave]
+  def removeStream: removeStream = "removeStream".asInstanceOf[removeStream]
   def stream: stream = "stream".asInstanceOf[stream]
 }
 

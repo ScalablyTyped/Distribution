@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "ngx-infinite-scroll"
-version := "6.0.1-67f848"
+version := "6.0.1-7e3d55"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "angular__common" % "7.1.1-2b5817",
-  "com.scalablytyped" %%% "angular__core" % "7.1.1-22a1f3",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "angular__common" % "7.1.1-7cb3f5",
+  "com.scalablytyped" %%% "angular__core" % "7.1.1-884318",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "rxjs" % "6.3.3-d1a1f7",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "tslib" % "1.9.3-9baf35",

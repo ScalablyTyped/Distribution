@@ -38,7 +38,7 @@ trait Request extends js.Object {
   /**
      * @returns The `Frame` object that initiated the request, or `null` if navigating to error pages
      */
-  def frame(): stdLib.Promise[Frame | scala.Null] = js.native
+  def frame(): Frame | scala.Null = js.native
   /**
      * An object with HTTP headers associated with the request.
      * All header names are lower-case.

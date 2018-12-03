@@ -1,12 +1,11 @@
 organization := "com.scalablytyped"
 name := "skyway"
-version := "0.0-unknown-dt-20180910Z-8bb4bc"
+version := "0.0-unknown-dt-20181203Z-e71b16"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "webrtc" % "2016-09-13-dt-20180910Z-5d81a0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

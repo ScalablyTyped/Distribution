@@ -15,6 +15,7 @@ class CLIEngine protected () extends js.Object {
   def executeOnText(text: java.lang.String): eslintLib.eslintMod.CLIEngineNs.LintReport = js.native
   def executeOnText(text: java.lang.String, filename: java.lang.String): eslintLib.eslintMod.CLIEngineNs.LintReport = js.native
   def getConfigForFile(filePath: java.lang.String): eslintLib.eslintMod.LinterNs.Config = js.native
+  def getFormatter(): eslintLib.eslintMod.CLIEngineNs.Formatter = js.native
   def getFormatter(format: java.lang.String): eslintLib.eslintMod.CLIEngineNs.Formatter = js.native
   def getRules(): stdLib.Map[java.lang.String, eslintLib.eslintMod.RuleNs.RuleModule] = js.native
   def isPathIgnored(filePath: java.lang.String): scala.Boolean = js.native

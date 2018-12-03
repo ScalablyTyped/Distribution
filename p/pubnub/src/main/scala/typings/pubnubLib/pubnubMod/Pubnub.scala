@@ -8,6 +8,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Pubnub extends js.Object {
   def addListener(params: pubnubLib.pubnubMod.PubnubNs.ListenerParameters): scala.Unit = js.native
+  def decrypt(data: js.Object): js.Any = js.native
+  def decrypt(data: js.Object, customCipherKey: java.lang.String): js.Any = js.native
+  def decrypt(
+    data: js.Object,
+    customCipherKey: java.lang.String,
+    options: pubnubLib.pubnubMod.PubnubNs.CryptoParameters
+  ): js.Any = js.native
+  def encrypt(data: java.lang.String): js.Any = js.native
+  def encrypt(data: java.lang.String, customCipherKey: java.lang.String): js.Any = js.native
+  def encrypt(
+    data: java.lang.String,
+    customCipherKey: java.lang.String,
+    options: pubnubLib.pubnubMod.PubnubNs.CryptoParameters
+  ): js.Any = js.native
   def fire(params: pubnubLib.pubnubMod.PubnubNs.FireParameters): stdLib.Promise[pubnubLib.pubnubMod.PubnubNs.PublishResponse] = js.native
   def fire(
     params: pubnubLib.pubnubMod.PubnubNs.FireParameters,
