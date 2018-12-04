@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "rethinkdb"
-version := "2.3-dt-20180910Z-e3f175"
+version := "2.3-dt-20181204Z-7a0d44"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

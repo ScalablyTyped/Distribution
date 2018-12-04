@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Parser ()
   extends ltxLib.libParserMod.Parser {
-  def this(options: js.Any) = this()
+  def this(options: ltxLib.libParserMod.ParserOptions) = this()
 }
 

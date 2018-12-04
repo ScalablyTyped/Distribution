@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Instance[D]
-  extends reactLib.reactMod.Component[stdLib.Partial[TableProps[D]], js.Object, js.Any] {
+  extends reactLib.reactMod.Component[stdLib.Partial[TableProps[D, D]], js.Object, js.Any] {
   @JSName("onPageChange")
   var onPageChange_Original: PageChangeFunction = js.native
   @JSName("onPageSizeChange")
   var onPageSizeChange_Original: PageSizeChangeFunction = js.native
   @JSName("props")
-  var props_Instance: stdLib.Partial[TableProps[D]] = js.native
+  var props_Instance: stdLib.Partial[TableProps[D, D]] = js.native
   @JSName("state")
   var state_Instance: FinalState[D] = js.native
   def filterColumn(props: js.Any*): js.Any = js.native

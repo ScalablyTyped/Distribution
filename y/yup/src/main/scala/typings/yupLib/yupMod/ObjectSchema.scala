@@ -13,7 +13,7 @@ trait ObjectSchema[T] extends Schema[T] {
   def from(fromKey: java.lang.String, toKey: java.lang.String, alias: scala.Boolean): ObjectSchema[T] = js.native
   def noUnknown(): ObjectSchema[T] = js.native
   def noUnknown(onlyKnownKeys: scala.Boolean): ObjectSchema[T] = js.native
-  def noUnknown(onlyKnownKeys: scala.Boolean, message: java.lang.String): ObjectSchema[T] = js.native
+  def noUnknown(onlyKnownKeys: scala.Boolean, message: TestOptionsMessage): ObjectSchema[T] = js.native
   def shape(fields: yupLib.yupLibStrings.ObjectSchema with T): ObjectSchema[T] = js.native
   def shape(
     fields: yupLib.yupLibStrings.ObjectSchema with T,

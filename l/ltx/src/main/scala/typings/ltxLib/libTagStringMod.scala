@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ltx/lib/tagString", JSImport.Namespace)
 @js.native
 object libTagStringMod extends js.Object {
-  def tagString(d: js.Any): java.lang.String = js.native
+  def tagString(literals: js.Array[java.lang.String], substitutions: java.lang.String*): java.lang.String = js.native
 }
 

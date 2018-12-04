@@ -14,9 +14,7 @@ trait TestOptions extends js.Object {
   /**
        * The validation error message
        */
-  var message: js.UndefOr[
-    java.lang.String | (js.Function1[/* params */ js.Object with stdLib.Partial[TestMessageParams], java.lang.String])
-  ] = js.undefined
+  var message: js.UndefOr[TestOptionsMessage] = js.undefined
   /**
        * Unique name identifying the test
        */

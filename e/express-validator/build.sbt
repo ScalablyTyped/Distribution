@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "express-validator"
-version := "5.3.0-e4994e"
+version := "5.3.0-438215"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-b92a74",
   "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-b5e732",
   "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-5d5875",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",

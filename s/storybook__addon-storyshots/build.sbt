@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "storybook__addon-storyshots"
-version := "3.4-dt-20180910Z-f9ea56"
+version := "3.4-dt-20180910Z-c28f25"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
-  "com.scalablytyped" %%% "puppeteer" % "1.10-dt-20181203Z-90d934",
+  "com.scalablytyped" %%% "puppeteer" % "1.11-dt-20181204Z-2c388a",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181203Z-843f9f",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "storybook__react" % "4.0-dt-20181109Z-bfc841",

@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "mongoose"
-version := "5.3.4-dt-20181129Z-925005"
+version := "5.3.4-dt-20181204Z-6e5ee2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

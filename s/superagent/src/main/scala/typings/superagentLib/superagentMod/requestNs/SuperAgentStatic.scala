@@ -12,6 +12,6 @@ trait SuperAgentStatic extends SuperAgent[SuperAgentRequest] {
   // tslint:disable-next-line:unified-signatures
   def apply(method: java.lang.String, url: java.lang.String): SuperAgentRequest = js.native
   def apply(url: java.lang.String): SuperAgentRequest = js.native
-  def agent(): SuperAgent[SuperAgentRequest] = js.native
+  def agent(): this.type with Request = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "p-defer"
-version := "1.0-dt-20180910Z-d32a92"
+version := "1.0-dt-20181204Z-977dcd"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

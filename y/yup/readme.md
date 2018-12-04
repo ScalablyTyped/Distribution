@@ -6,6 +6,7 @@
 //                 Moreton Bay Regional Council <https://github.com/MoretonBayRC>,
 //                 Sindre Seppola <https://github.com/sseppola>
 //                 Yash Kulshrestha <https://github.com/YashdalfTheGray>
+//                 Vincent Pizzo <https://github.com/vincentjames501>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 ```

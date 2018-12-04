@@ -17,6 +17,26 @@ trait Anon_Parser extends js.Object {
   ] = js.native
   /**
        * @param src String of markdown source to be compiled
+       * @param links Array of links
+       * @param options Hash of options
+       * @return String of compiled HTML
+       */
+  
+  def inlineLexer(src: java.lang.String, links: js.Array[java.lang.String]): java.lang.String = js.native
+  /**
+       * @param src String of markdown source to be compiled
+       * @param links Array of links
+       * @param options Hash of options
+       * @return String of compiled HTML
+       */
+  
+  def inlineLexer(
+    src: java.lang.String,
+    links: js.Array[java.lang.String],
+    options: markedLib.markedMod.markedNs.MarkedOptions
+  ): java.lang.String = js.native
+  /**
+       * @param src String of markdown source to be compiled
        * @param options Hash of options
        */
   def lexer(src: java.lang.String): markedLib.markedMod.markedNs.TokensList = js.native

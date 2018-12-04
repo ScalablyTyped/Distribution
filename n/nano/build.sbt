@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "nano"
-version := "7.1.1-37f002"
+version := "7.1.1-4bc397"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "caseless" % "0.12-dt-20180910Z-2bf221",
   "com.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-e9dd4f",
   "com.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-52b360",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
-  "com.scalablytyped" %%% "lodash_dot_isempty" % "4.4-dt-20180910Z-0688fa",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
+  "com.scalablytyped" %%% "lodash_dot_isempty" % "4.4-dt-20180910Z-e9a6ce",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-67a93f",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",

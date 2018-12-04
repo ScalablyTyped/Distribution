@@ -9,6 +9,19 @@ import scala.scalajs.js.annotation._
 @js.native
 object pkiNs extends js.Object {
   @js.native
+  trait CAStore extends js.Object {
+    def addCertificate(cert: java.lang.String): scala.Unit = js.native
+    def addCertificate(cert: Certificate): scala.Unit = js.native
+    def getBySubject(subject: java.lang.String): Certificate | scala.Null = js.native
+    def getIssuer(subject: Certificate): Certificate | scala.Null = js.native
+    def hasCertificate(cert: java.lang.String): scala.Boolean = js.native
+    def hasCertificate(cert: Certificate): scala.Boolean = js.native
+    def listAllCertificates(): js.Array[Certificate] = js.native
+    def removeCertificate(cert: java.lang.String): Certificate | scala.Null = js.native
+    def removeCertificate(cert: Certificate): Certificate | scala.Null = js.native
+  }
+  
+  @js.native
   trait Certificate extends js.Object {
     var extensions: js.Array[_] = js.native
     var issuer: nodeDashForgeLib.Anon_Hash = js.native
@@ -58,14 +71,14 @@ object pkiNs extends js.Object {
                   */
     def setExtensions(exts: js.Array[_]): scala.Unit = js.native
     /**
-                  * Sets the subject of this certificate.
+                  * Sets the issuer of this certificate.
                   *
                   * @param attrs the array of subject attributes to use.
                   * @param uniqueId an optional a unique ID to use.
                   */
     def setIssuer(attrs: js.Array[CertificateField]): scala.Unit = js.native
     /**
-                  * Sets the subject of this certificate.
+                  * Sets the issuer of this certificate.
                   *
                   * @param attrs the array of subject attributes to use.
                   * @param uniqueId an optional a unique ID to use.
@@ -148,6 +161,7 @@ object pkiNs extends js.Object {
   def certificationRequestFromPem(pem: PEM, computeHash: scala.Boolean, strict: scala.Boolean): Certificate = js.native
   def certificationRequestToPem(cert: Certificate): PEM = js.native
   def certificationRequestToPem(cert: Certificate, maxline: scala.Double): PEM = js.native
+  def createCaStore(): CAStore = js.native
   def createCertificate(): Certificate = js.native
   def createCertificationRequest(): Certificate = js.native
   def decryptRsaPrivateKey(pem: PEM): PrivateKey = js.native
@@ -163,6 +177,17 @@ object pkiNs extends js.Object {
   def publicKeyToPem(key: PublicKey): PEM = js.native
   def publicKeyToPem(key: PublicKey, maxline: scala.Double): PEM = js.native
   def publicKeyToRSAPublicKey(publicKey: PublicKey): js.Any = js.native
+  def verifyCertificateChain(caStore: CAStore, chain: js.Array[Certificate]): scala.Boolean = js.native
+  def verifyCertificateChain(
+    caStore: CAStore,
+    chain: js.Array[Certificate],
+    customVerifyCallback: js.Function3[
+      /* verified */ scala.Boolean | java.lang.String, 
+      /* depth */ scala.Double, 
+      /* chain */ js.Array[Certificate], 
+      scala.Boolean
+    ]
+  ): scala.Boolean = js.native
   @JSName("ed25519")
   @js.native
   object ed25519Ns extends js.Object {

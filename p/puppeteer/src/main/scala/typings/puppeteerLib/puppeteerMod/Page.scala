@@ -512,7 +512,12 @@ trait Page
   def setBypassCSP(enabled: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
   /**
      * Determines whether cache is enabled on the page.
-     * @param enabled Whether or not to enable cache on the page.
+     * @param [enabled=true] Whether or not to enable cache on the page.
+     */
+  def setCacheEnabled(): stdLib.Promise[scala.Unit] = js.native
+  /**
+     * Determines whether cache is enabled on the page.
+     * @param [enabled=true] Whether or not to enable cache on the page.
      */
   def setCacheEnabled(enabled: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
   /**

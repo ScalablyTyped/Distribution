@@ -22,13 +22,13 @@ trait Schema[T] extends js.Object {
   def meta(): js.Any = js.native
   def meta(metadata: js.Any): this.type = js.native
   def notOneOf(arrayOfValues: js.Array[_]): this.type = js.native
-  def notOneOf(arrayOfValues: js.Array[_], message: java.lang.String): this.type = js.native
+  def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage): this.type = js.native
   def notRequired(): this.type = js.native
   def nullable(isNullable: scala.Boolean): this.type = js.native
   def oneOf(arrayOfValues: js.Array[_]): this.type = js.native
-  def oneOf(arrayOfValues: js.Array[_], message: java.lang.String): this.type = js.native
+  def oneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage): this.type = js.native
   def required(): this.type = js.native
-  def required(message: java.lang.String): this.type = js.native
+  def required(message: TestOptionsMessage): this.type = js.native
   def strict(isStrict: scala.Boolean): this.type = js.native
   def strip(strip: scala.Boolean): this.type = js.native
   def test(
@@ -72,7 +72,7 @@ trait Schema[T] extends js.Object {
   def test(options: TestOptions): this.type = js.native
   def transform(fn: TransformFunction[this.type]): this.type = js.native
   def typeError(): this.type = js.native
-  def typeError(message: java.lang.String): this.type = js.native
+  def typeError(message: TestOptionsMessage): this.type = js.native
   def validate(value: T): stdLib.Promise[T] = js.native
   def validate(value: T, options: ValidateOptions): stdLib.Promise[T] = js.native
   def validateAt(path: java.lang.String, value: T): stdLib.Promise[T] = js.native

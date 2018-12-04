@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "ionic"
-version := "4.5.0-f56529"
+version := "4.5.0-7dd37b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,11 +15,11 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-450016",
   "com.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-b89aff",
   "com.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180910Z-a423ba",
-  "com.scalablytyped" %%% "ionic__cli-framework" % "1.5.0-108b2c",
+  "com.scalablytyped" %%% "ionic__cli-framework" % "1.5.0-537335",
   "com.scalablytyped" %%% "ionic__discover" % "1.0.8-f87484",
   "com.scalablytyped" %%% "ionic__utils-fs" % "0.0.5-9ba74c",
   "com.scalablytyped" %%% "ionic__utils-network" % "0.0.4-3e90a5",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "log-update" % "2.0-dt-20180910Z-2f7d4e",
   "com.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-5ec0b9",
   "com.scalablytyped" %%% "minimist" % "1.2.0-dt-20180910Z-a475cc",
@@ -48,7 +48,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "string-width" % "2.0-dt-20180910Z-fa7884",
   "com.scalablytyped" %%% "strip-ansi" % "3.0-dt-20180910Z-174468",
-  "com.scalablytyped" %%% "superagent" % "3.8-dt-20180910Z-a6138d",
+  "com.scalablytyped" %%% "superagent" % "3.8-dt-20181204Z-c8e3e2",
   "com.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-a10740",
   "com.scalablytyped" %%% "tar" % "4.0-dt-20180910Z-8a9e09",
   "com.scalablytyped" %%% "through" % "0.0-unknown-dt-20180910Z-d9bdc2",

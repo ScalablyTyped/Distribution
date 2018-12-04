@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "umzug"
-version := "v2.2.0-dt-20180910Z-3b8ee0"
+version := "v2.2.0-dt-20180910Z-ec3363"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,10 +8,10 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-7bd99a",
   "com.scalablytyped" %%% "bson" % "1.0.6-dt-20180910Z-78f798",
   "com.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20180910Z-4f46cd",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "mongodb" % "v3.1-dt-20181203Z-a0786c",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "sequelize" % "4.27.10-dt-20181128Z-e3fdb2",
+  "com.scalablytyped" %%% "sequelize" % "4.27.10-dt-20181128Z-e07e45",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "validator" % "v9.4-dt-20181116Z-1f35af",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

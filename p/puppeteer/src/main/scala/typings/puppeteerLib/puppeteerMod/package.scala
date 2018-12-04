@@ -13,6 +13,7 @@ package object puppeteerMod {
   type EvaluateFn = java.lang.String | (js.Function1[/* repeated */js.Any, js.Any])
   type Headers = stdLib.Record[java.lang.String, java.lang.String]
   type HttpMethod = puppeteerLib.puppeteerLibStrings.GET | puppeteerLib.puppeteerLibStrings.POST | puppeteerLib.puppeteerLibStrings.PATCH | puppeteerLib.puppeteerLibStrings.PUT | puppeteerLib.puppeteerLibStrings.DELETE | puppeteerLib.puppeteerLibStrings.OPTIONS
+  type LayoutDimension = java.lang.String | scala.Double
   type LoadEvent = puppeteerLib.puppeteerLibStrings.load | puppeteerLib.puppeteerLibStrings.domcontentloaded | puppeteerLib.puppeteerLibStrings.networkidle0 | puppeteerLib.puppeteerLibStrings.networkidle2
   type MediaType = puppeteerLib.puppeteerLibStrings.screen | puppeteerLib.puppeteerLibStrings.print
   type MouseButtons = puppeteerLib.puppeteerLibStrings.left | puppeteerLib.puppeteerLibStrings.right | puppeteerLib.puppeteerLibStrings.middle

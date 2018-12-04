@@ -3,7 +3,7 @@
  * TimeoutError is emitted whenever certain operations are terminated due to timeout,
  * e.g. page.waitForSelector(selector[, options]) or puppeteer.launch([options]).
  */
-// Type definitions for puppeteer 1.10
+// Type definitions for puppeteer 1.11
 // Project: https://github.com/GoogleChrome/puppeteer#readme
 // Definitions by: Marvin Hagemeister <https://github.com/marvinhagemeister>
 //                 Christopher Deutsch <https://github.com/cdeutsch>

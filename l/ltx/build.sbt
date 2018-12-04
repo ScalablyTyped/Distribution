@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "ltx"
-version := "2.6-dt-20181018Z-8911fd"
+version := "2.8-dt-20181204Z-45bc2b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

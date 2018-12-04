@@ -35,14 +35,14 @@ trait PDFOptions extends js.Object {
      * - `totalPages` total pages in the document
      */
   var headerTemplate: js.UndefOr[java.lang.String] = js.undefined
-  /** Paper height, accepts values labeled with units. */
-  var height: js.UndefOr[java.lang.String] = js.undefined
+  /** Paper height. */
+  var height: js.UndefOr[LayoutDimension] = js.undefined
   /**
      * Paper orientation.
      * @default false
      */
   var landscape: js.UndefOr[scala.Boolean] = js.undefined
-  /** Paper margins, defaults to none.  */
+  /** Paper margins, defaults to none. */
   var margin: js.UndefOr[puppeteerLib.Anon_Bottom] = js.undefined
   /**
      * Paper ranges to print, e.g., '1-5, 8, 11-13'.
@@ -71,7 +71,7 @@ trait PDFOptions extends js.Object {
      * @default 1
      */
   var scale: js.UndefOr[scala.Double] = js.undefined
-  /** Paper width, accepts values labeled with units. */
-  var width: js.UndefOr[java.lang.String] = js.undefined
+  /** Paper width. */
+  var width: js.UndefOr[LayoutDimension] = js.undefined
 }
 

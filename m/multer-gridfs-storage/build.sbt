@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "multer-gridfs-storage"
-version := "3.1-dt-20181020Z-d03012"
+version := "3.1-dt-20181020Z-3f699e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-5d5875",
   "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
   "com.scalablytyped" %%% "mongodb" % "v3.1-dt-20181203Z-a0786c",
-  "com.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181129Z-925005",
+  "com.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181204Z-6e5ee2",
   "com.scalablytyped" %%% "multer" % "1.3-dt-20180910Z-ac3289",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",

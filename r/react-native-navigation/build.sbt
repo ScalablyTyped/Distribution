@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "react-native-navigation"
-version := "2.1.3-73361a"
+version := "2.1.3-c3d544"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
   "com.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-05e35b",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181203Z-843f9f",
   "com.scalablytyped" %%% "react-native" % "0.57-dt-20181203Z-efa953",

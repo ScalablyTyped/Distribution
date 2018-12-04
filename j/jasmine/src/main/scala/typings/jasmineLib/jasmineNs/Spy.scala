@@ -13,5 +13,6 @@ trait Spy extends js.Object {
   var identity: java.lang.String = js.native
   var mostRecentCall: jasmineLib.Anon_Args = js.native
   def apply(params: js.Any*): js.Any = js.native
+  def withArgs(args: js.Any*): Spy = js.native
 }
 

@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait ConnectOptions extends js.Object {
+trait ConnectOptions extends BrowserOptions {
   /** A browser websocket endpoint to connect to. */
   var browserWSEndpoint: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Whether to ignore HTTPS errors during navigation.
-     * @default false
+     * **Experimental** Specify a custom transport object for Puppeteer to use.
      */
-  var ignoreHTTPSErrors: js.UndefOr[scala.Boolean] = js.undefined
+  var transport: js.UndefOr[ConnectionTransport] = js.undefined
 }
 

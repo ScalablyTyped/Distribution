@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Bottom extends js.Object {
-  /** Bottom margin, accepts values labeled with units. */
-  var bottom: js.UndefOr[java.lang.String] = js.undefined
-  /** Left margin, accepts values labeled with units. */
-  var left: js.UndefOr[java.lang.String] = js.undefined
-  /** Right margin, accepts values labeled with units. */
-  var right: js.UndefOr[java.lang.String] = js.undefined
-  /** Top margin, accepts values labeled with units. */
-  var top: js.UndefOr[java.lang.String] = js.undefined
+  /** Bottom margin. */
+  var bottom: js.UndefOr[puppeteerLib.puppeteerMod.LayoutDimension] = js.undefined
+  /** Left margin. */
+  var left: js.UndefOr[puppeteerLib.puppeteerMod.LayoutDimension] = js.undefined
+  /** Right margin. */
+  var right: js.UndefOr[puppeteerLib.puppeteerMod.LayoutDimension] = js.undefined
+  /** Top margin. */
+  var top: js.UndefOr[puppeteerLib.puppeteerMod.LayoutDimension] = js.undefined
 }
 

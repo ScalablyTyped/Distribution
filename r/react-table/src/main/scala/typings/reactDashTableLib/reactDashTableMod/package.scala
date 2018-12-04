@@ -53,7 +53,7 @@ package object reactDashTableMod {
   type PageChangeFunction = js.Function1[/* page */ scala.Double, scala.Unit]
   type PageSizeChangeFunction = js.Function2[/* newPageSize */ scala.Double, /* newPage */ scala.Double, scala.Unit]
   type PivotRenderer = (js.Function1[/* cellInfo */ CellInfo, reactLib.reactMod.ReactNs.ReactNode]) | js.Function0[js.Any] | java.lang.String | reactLib.reactMod.ReactNs.ReactNode
-  type ReactTable[D] = reactLib.reactMod.Component[stdLib.Partial[TableProps[D]], js.Object, js.Any]
+  type ReactTable[D] = reactLib.reactMod.Component[stdLib.Partial[TableProps[D, D]], js.Object, js.Any]
   type ReactTableFunction = js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit]
   type ResizedChangeFunction = js.Function2[/* newResized */ js.Array[Resize], /* event */ js.Any, scala.Unit]
   type SortFunction = js.Function3[/* a */ js.Any, /* b */ js.Any, /* desc */ js.Any, scala.Double]

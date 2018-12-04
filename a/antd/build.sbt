@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "antd"
-version := "3.10.9-f52704"
+version := "3.10.9-42e2d9"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "create-react-context" % "0.2.3-e558e0",
   "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
   "com.scalablytyped" %%% "enquire_dot_js" % "2.1-dt-20180910Z-8c0b7c",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "moment" % "2.22.2-cce931",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",

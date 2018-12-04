@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "node-pg-migrate"
-version := "3.14.0-4c99c6"
+version := "3.14.0-544f6d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "mkdirp" % "0.5-dt-20180910Z-b8ec46",
   "com.scalablytyped" %%% "moment" % "2.22.2-cce931",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",

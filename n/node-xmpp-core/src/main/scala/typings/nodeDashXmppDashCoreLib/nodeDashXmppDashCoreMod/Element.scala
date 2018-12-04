@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Element protected ()
   extends ltxLib.ltxMod.Element {
   def this(name: java.lang.String) = this()
-  def this(name: java.lang.String, attrs: js.Any) = this()
+  def this(name: java.lang.String, attrs: ScalablyTyped.runtime.StringDictionary[js.Any]) = this()
+  def this(name: java.lang.String, attrs: java.lang.String) = this()
 }
 

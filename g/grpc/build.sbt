@@ -1,14 +1,14 @@
 organization := "com.scalablytyped"
 name := "grpc"
-version := "1.16.1-638629"
+version := "1.16.1-b03b84"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "long" % "4.0.0-dt-20180910Z-cac3f5",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
-  "com.scalablytyped" %%% "protobufjs" % "6.8.8-183195",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
+  "com.scalablytyped" %%% "protobufjs" % "6.8.8-ee9f43",
   "com.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-f1a9b6",
   "com.scalablytyped" %%% "protobufjs__base64" % "1.1.2-b9574f",
   "com.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-bc632a",

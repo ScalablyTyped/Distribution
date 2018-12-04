@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-native-svg"
-version := "8.0.8-93cb91"
+version := "8.0.8-86f383"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "color-convert" % "1.9-dt-20180910Z-b5b898",
   "com.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-20e4ae",
   "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "pegjs" % "v0.10.0-dt-20180910Z-c7da73",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181203Z-843f9f",

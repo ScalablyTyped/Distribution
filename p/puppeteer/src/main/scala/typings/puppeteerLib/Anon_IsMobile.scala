@@ -13,7 +13,6 @@ trait Anon_IsMobile extends js.Object {
        */
   var deviceScaleFactor: js.UndefOr[scala.Double] = js.undefined
   /**
-       *
        * Specifies if viewport supports touch events.
        * @default false
        */

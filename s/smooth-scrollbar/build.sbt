@@ -1,13 +1,13 @@
 organization := "com.scalablytyped"
 name := "smooth-scrollbar"
-version := "8.3.1-3be08e"
+version := "8.3.1-78c834"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-afbfd8",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
-  "com.scalablytyped" %%% "lodash-es" % "4.17-dt-20180910Z-9909b5",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
+  "com.scalablytyped" %%% "lodash-es" % "4.17-dt-20180910Z-048616",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "tslib" % "1.9.3-9baf35",

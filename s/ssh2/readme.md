@@ -4,5 +4,6 @@
 // Definitions by: Qubo <https://github.com/tkQubo>
 //                 Ron Buckton <https://github.com/rbuckton>
 //                 Will Boyce <https://github.com/wrboyce>
+//                 Lucas Motta <https://github.com/lucasmotta>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "node-xmpp-core"
-version := "5.0-dt-20180910Z-de033e"
+version := "5.0-dt-20180910Z-cd346b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "ltx" % "2.6-dt-20181018Z-8911fd",
+  "com.scalablytyped" %%% "ltx" % "2.8-dt-20181204Z-45bc2b",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

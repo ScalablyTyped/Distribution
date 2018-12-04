@@ -96,8 +96,15 @@ trait FrameBase extends Evalable {
   /**
      * Sets the page content.
      * @param html HTML markup to assign to the page.
+     * @param options The navigation parameters.
      */
   def setContent(html: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  /**
+     * Sets the page content.
+     * @param html HTML markup to assign to the page.
+     * @param options The navigation parameters.
+     */
+  def setContent(html: java.lang.String, options: NavigationOptions): stdLib.Promise[scala.Unit] = js.native
   /**
      * This method fetches an element with `selector`, scrolls it into view if needed,
      * and then uses page.touchscreen to tap in the center of the element.

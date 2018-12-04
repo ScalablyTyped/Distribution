@@ -364,6 +364,32 @@ trait SFTPWrapper
   ): scala.Boolean = js.native
   /**
        * (Client-only)
+       * Reads a file in memory and returns its contents
+       */
+  def readFile(
+    remotePath: java.lang.String,
+    callback: js.Function2[/* err */ js.Any, /* handle */ nodeLib.Buffer, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+       * (Client-only)
+       * Reads a file in memory and returns its contents
+       */
+  def readFile(
+    remotePath: java.lang.String,
+    encoding: java.lang.String,
+    callback: js.Function2[/* err */ js.Any, /* handle */ nodeLib.Buffer, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+       * (Client-only)
+       * Reads a file in memory and returns its contents
+       */
+  def readFile(
+    remotePath: java.lang.String,
+    options: ssh2DashStreamsLib.ssh2DashStreamsMod.ReadFileOptions,
+    callback: js.Function2[/* err */ js.Any, /* handle */ nodeLib.Buffer, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+       * (Client-only)
        * Retrieves a directory listing.
        *
        * Returns `false` if you should wait for the `continue` event before sending any more traffic.

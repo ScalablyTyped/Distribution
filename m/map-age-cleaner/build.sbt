@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "map-age-cleaner"
-version := "0.1.3-bc6743"
+version := "0.1.3-24e085"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "p-defer" % "1.0-dt-20180910Z-d32a92",
+  "com.scalablytyped" %%% "p-defer" % "1.0-dt-20181204Z-977dcd",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

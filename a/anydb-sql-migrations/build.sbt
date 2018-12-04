@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "anydb-sql-migrations"
-version := "2.3.1-5ff442"
+version := "2.3.1-0d025d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "any-db-transaction" % "2.2.1-dt-20180910Z-1b1ab4",
   "com.scalablytyped" %%% "anydb-sql" % "0.7.0-00e8ce",
   "com.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-7bd99a",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "sqlite3" % "3.1-dt-20180910Z-9a7270",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",

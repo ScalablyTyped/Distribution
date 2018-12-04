@@ -115,6 +115,12 @@ object web3LibStrings {
   sealed trait noether extends js.Object
   
   @js.native
+  sealed trait nonpayable extends js.Object
+  
+  @js.native
+  sealed trait payable extends js.Object
+  
+  @js.native
   sealed trait pending extends js.Object
   
   @js.native
@@ -122,6 +128,9 @@ object web3LibStrings {
   
   @js.native
   sealed trait picoether extends js.Object
+  
+  @js.native
+  sealed trait pure extends js.Object
   
   @js.native
   sealed trait receipt extends js.Object
@@ -146,6 +155,9 @@ object web3LibStrings {
   
   @js.native
   sealed trait uint256 extends js.Object
+  
+  @js.native
+  sealed trait view extends js.Object
   
   @js.native
   sealed trait wei extends js.Object
@@ -186,9 +198,12 @@ object web3LibStrings {
   def nanoether: nanoether = "nanoether".asInstanceOf[nanoether]
   def newBlockHeaders: newBlockHeaders = "newBlockHeaders".asInstanceOf[newBlockHeaders]
   def noether: noether = "noether".asInstanceOf[noether]
+  def nonpayable: nonpayable = "nonpayable".asInstanceOf[nonpayable]
+  def payable: payable = "payable".asInstanceOf[payable]
   def pending: pending = "pending".asInstanceOf[pending]
   def pendingTransactions: pendingTransactions = "pendingTransactions".asInstanceOf[pendingTransactions]
   def picoether: picoether = "picoether".asInstanceOf[picoether]
+  def pure: pure = "pure".asInstanceOf[pure]
   def receipt: receipt = "receipt".asInstanceOf[receipt]
   def shannon: shannon = "shannon".asInstanceOf[shannon]
   def string: string = "string".asInstanceOf[string]
@@ -197,6 +212,7 @@ object web3LibStrings {
   def tether: tether = "tether".asInstanceOf[tether]
   def transactionHash: transactionHash = "transactionHash".asInstanceOf[transactionHash]
   def uint256: uint256 = "uint256".asInstanceOf[uint256]
+  def view: view = "view".asInstanceOf[view]
   def wei: wei = "wei".asInstanceOf[wei]
 }
 

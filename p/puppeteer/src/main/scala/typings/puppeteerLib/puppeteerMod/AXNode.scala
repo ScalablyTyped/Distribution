@@ -14,7 +14,7 @@ trait AXNode extends js.Object {
   /**
      * Whether the checkbox is checked, or "mixed".
      */
-  var checked: scala.Boolean | java.lang.String
+  var checked: scala.Boolean | puppeteerLib.puppeteerLibStrings.mixed
   /**
      * Child nodes of this node, if any.
      */
@@ -74,7 +74,7 @@ trait AXNode extends js.Object {
   /**
      * Whether the toggle button is checked, or "mixed".
      */
-  var pressed: scala.Boolean | java.lang.String
+  var pressed: scala.Boolean | puppeteerLib.puppeteerLibStrings.mixed
   /**
      * Whether the node is read only.
      */

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait FinalState[D] extends TableProps[D] {
+trait FinalState[D] extends TableProps[D, D] {
   var allDecoratedColumns: js.Array[Column[D]] = js.native
   var allVisibleColumns: js.Array[Column[D]] = js.native
   var canNext: scala.Boolean = js.native

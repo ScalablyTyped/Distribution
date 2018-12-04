@@ -1,22 +1,22 @@
 organization := "com.scalablytyped"
 name := "server"
-version := "1.0-dt-20180910Z-1a51b3"
+version := "1.0-dt-20180910Z-f150d2"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-bbb8a6",
-  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-c1f383",
-  "com.scalablytyped" %%% "csurf" % "1.9.0-dt-20180910Z-125be2",
-  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-1b16d7",
-  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-bec6af",
-  "com.scalablytyped" %%% "express-session" % "1.15-dt-20180910Z-bd380a",
-  "com.scalablytyped" %%% "formidable" % "1.0.16-dt-20180910Z-55f9b4",
-  "com.scalablytyped" %%% "helmet" % "0.0-unknown-dt-20180927Z-3c1fbc",
+  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-6b0d80",
+  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-b92a74",
+  "com.scalablytyped" %%% "csurf" % "1.9.0-dt-20180910Z-2b4da1",
+  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-b5e732",
+  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-5d5875",
+  "com.scalablytyped" %%% "express-session" % "1.15-dt-20180910Z-3be5b8",
+  "com.scalablytyped" %%% "formidable" % "1.0.16-dt-20180910Z-739047",
+  "com.scalablytyped" %%% "helmet" % "0.0-unknown-dt-20180927Z-d2baee",
   "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181129Z-9f7a18",
+  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",
-  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-953de2",
+  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-9a9ab6",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

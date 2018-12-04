@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "protractor"
-version := "5.4.1-ec40a9"
+version := "5.4.1-0b76e5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,8 +16,8 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-52b360",
   "com.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-b89aff",
   "com.scalablytyped" %%% "ini" % "v1.3.3-dt-20181129Z-b9b7a3",
-  "com.scalablytyped" %%% "jasmine" % "3.3-dt-20181120Z-481213",
-  "com.scalablytyped" %%% "jasminewd2" % "2.0-dt-20181109Z-d2add8",
+  "com.scalablytyped" %%% "jasmine" % "3.3-dt-20181204Z-b1b044",
+  "com.scalablytyped" %%% "jasminewd2" % "2.0-dt-20181109Z-0751f1",
   "com.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-5ec0b9",
   "com.scalablytyped" %%% "minimist" % "1.2.0-dt-20180910Z-a475cc",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",

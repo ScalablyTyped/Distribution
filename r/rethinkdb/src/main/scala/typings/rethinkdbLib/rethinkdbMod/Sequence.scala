@@ -35,7 +35,7 @@ trait Sequence
   def changes(opts: ChangesOptions): Sequence = js.native
   /**
            * Turn a sequence into an array or object, necessary when merging a sequence.
-           * 
+           *
            * See: https://www.rethinkdb.com/api/javascript/coerce_to/
            */
   @JSName("coerceTo")

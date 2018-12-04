@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "yeoman-test"
-version := "1.7-dt-20180910Z-5654e8"
+version := "2.0-dt-20181204Z-32b8ce"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

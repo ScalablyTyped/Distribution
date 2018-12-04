@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Parser ()
   extends nodeLib.eventsMod.EventEmitter {
-  def this(options: js.Any) = this()
+  def this(options: ParserOptions) = this()
+  def end(data: java.lang.String): scala.Unit = js.native
+  def write(data: java.lang.String): scala.Unit = js.native
 }
 

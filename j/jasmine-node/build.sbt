@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "jasmine-node"
-version := "v1.14.5-dt-20181109Z-a43d53"
+version := "v1.14.5-dt-20181109Z-0b1a70"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "jasmine" % "3.3-dt-20181120Z-481213",
+  "com.scalablytyped" %%% "jasmine" % "3.3-dt-20181204Z-b1b044",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

@@ -71,6 +71,24 @@ trait ConnectionBase
       scala.Unit
     ]
   ): stdLib.Promise[scala.Unit] = js.native
+  /**
+       * Removes the model named `name` from this connection, if it exists. You can
+       * use this function to clean up any models you created in your tests to
+       * prevent OverwriteModelErrors.
+       *
+       * @param name if string, the name of the model to remove. If regexp, removes all models whose name matches the regexp.
+       * @returns this
+       */
+  def deleteModel(name: java.lang.String): Connection = js.native
+  /**
+       * Removes the model named `name` from this connection, if it exists. You can
+       * use this function to clean up any models you created in your tests to
+       * prevent OverwriteModelErrors.
+       *
+       * @param name if string, the name of the model to remove. If regexp, removes all models whose name matches the regexp.
+       * @returns this
+       */
+  def deleteModel(name: stdLib.RegExp): Connection = js.native
   /** Helper for dropCollection() */
   def dropCollection(name: java.lang.String): stdLib.Promise[scala.Unit] = js.native
   /** Helper for dropCollection() */

@@ -23,6 +23,8 @@ trait Cookie extends js.Object {
   var secure: scala.Boolean
   /** The session cookie flag. */
   var session: scala.Boolean
+  /** The cookie size */
+  var size: scala.Double
   /** The cookie value. */
   var value: java.lang.String
 }

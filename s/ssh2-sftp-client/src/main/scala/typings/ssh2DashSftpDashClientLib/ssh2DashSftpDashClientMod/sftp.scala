@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait sftp extends js.Object {
+  def chmod(remotePath: java.lang.String, mode: java.lang.String): stdLib.Promise[java.lang.String] = js.native
+  def chmod(remotePath: java.lang.String, mode: scala.Double): stdLib.Promise[java.lang.String] = js.native
   def connect(options: ssh2Lib.ssh2Mod.ConnectConfig): stdLib.Promise[scala.Unit] = js.native
   def delete(remoteFilePath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
   def end(): stdLib.Promise[scala.Unit] = js.native
+  def exists(remotePath: java.lang.String): stdLib.Promise[java.lang.String] = js.native
   def fastGet(remoteFilePath: java.lang.String, localPath: java.lang.String): stdLib.Promise[java.lang.String] = js.native
   def fastGet(
     remoteFilePath: java.lang.String,
@@ -60,5 +63,6 @@ trait sftp extends js.Object {
   def rename(remoteSourcePath: java.lang.String, remoteDestPath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
   def rmdir(remoteFilePath: java.lang.String): stdLib.Promise[scala.Unit] = js.native
   def rmdir(remoteFilePath: java.lang.String, recursive: scala.Boolean): stdLib.Promise[scala.Unit] = js.native
+  def stat(remotePath: java.lang.String): stdLib.Promise[ssh2DashSftpDashClientLib.ssh2DashSftpDashClientMod.sftpNs.FileStats] = js.native
 }
 

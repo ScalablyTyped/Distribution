@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RunContext
-  extends nodeLib.eventsMod.EventEmitter {
+  extends nodeLib.eventsMod.EventEmitter
+     with RunContextConstructor {
+  var answers: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Answers = js.native
+  var args: js.Array[java.lang.String] = js.native
   /**
   	 * Promise `.catch()` duck typing
   	 */
@@ -15,6 +18,9 @@ trait RunContext
     /* onrejected */ js.Function1[/* reason */ js.Any, _ | stdLib.PromiseLike[_]], 
     stdLib.Promise[java.lang.String | _]
   ]) = js.native
+  var dependencies: js.Array[Dependency] = js.native
+  var inDirSet: scala.Boolean = js.native
+  var ran: scala.Boolean = js.native
   /**
   	 * Promise `.then()` duck typing
   	 */
@@ -50,6 +56,14 @@ trait RunContext
   	 * Clean the directory used for tests inside inDir/inTmpDir
   	 */
   def cleanTestDirectory(): scala.Unit = js.native
+  /**
+  	 * Clean the provided directory, then change directory into it
+  	 * @param  dirPath - Directory path (relative to CWD). Prefer passing an absolute
+  	 *                            file path for predictable results
+  	 * @param [cb] - callback who'll receive the folder path as argument
+  	 * @return run context instance
+  	 */
+  def inDir(dirPath: java.lang.String): this.type = js.native
   /**
   	 * Clean the provided directory, then change directory into it
   	 * @param  dirPath - Directory path (relative to CWD). Prefer passing an absolute
@@ -113,6 +127,6 @@ trait RunContext
   	 * Mock the prompt with dummy answers
   	 * @param  answers - Answers to the prompt questions
   	 */
-  def withPrompts(answers: Dictionary[_]): this.type = js.native
+  def withPrompts(answers: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Answers): this.type = js.native
 }
 

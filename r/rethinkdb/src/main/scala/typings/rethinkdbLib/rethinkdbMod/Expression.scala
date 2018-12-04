@@ -11,6 +11,7 @@ trait Expression[T]
      with Operation[T]
      with HasFields[Expression[scala.Double]] {
   def apply(prop: java.lang.String): Expression[_] = js.native
+  def add(n: Expression[scala.Double]): Expression[scala.Double] = js.native
   def add(n: scala.Double): Expression[scala.Double] = js.native
   def and(b: Expression[scala.Boolean]): Expression[scala.Boolean] = js.native
   def and(b: scala.Boolean): Expression[scala.Boolean] = js.native

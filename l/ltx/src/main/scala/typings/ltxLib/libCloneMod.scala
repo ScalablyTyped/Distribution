@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ltx/lib/clone", JSImport.Namespace)
 @js.native
 object libCloneMod extends js.Object {
-  def clone(el: js.Any): js.Any = js.native
+  def clone[T /* <: ltxLib.libElementMod.Element */](el: T): T = js.native
 }
 

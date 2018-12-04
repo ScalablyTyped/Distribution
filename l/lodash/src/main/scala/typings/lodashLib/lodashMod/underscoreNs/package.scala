@@ -189,5 +189,12 @@ package object underscoreNs {
     scala.Boolean
   ]
   // isMatchWith
-  type isMatchWithCustomizer = js.Function3[/* value */ js.Any, /* other */ js.Any, /* indexOrKey */ PropertyName, scala.Boolean]
+  type isMatchWithCustomizer = js.Function5[
+    /* value */ js.Any, 
+    /* other */ js.Any, 
+    /* indexOrKey */ PropertyName, 
+    /* object */ js.Object, 
+    /* source */ js.Object, 
+    scala.Boolean
+  ]
 }

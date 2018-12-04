@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
 - Lifted 6 members from Set(std.Partial) */ @js.native
-trait TableProps[D] extends js.Object {
+trait TableProps[D, ResolvedData] extends js.Object {
   /**
        * Default: string
        * Adding a -striped className to ReactTable will slightly color odd numbered rows for legibility
@@ -23,7 +23,7 @@ trait TableProps[D] extends js.Object {
   /** Global Column Defaults */
   var column: stdLib.Partial[GlobalColumn] = js.native
   /** Array of all Available Columns */
-  var columns: js.UndefOr[js.Array[Column[D]]] = js.native
+  var columns: js.UndefOr[js.Array[Column[ResolvedData]]] = js.native
   /** Default: [] */
   var data: js.Array[D] = js.native
   /** Default: ... */
@@ -75,6 +75,7 @@ trait TableProps[D] extends js.Object {
   var pivotDefaults: stdLib.Partial[PivotDefaults] = js.native
   /** Default: true */
   var resizable: scala.Boolean = js.native
+  var resolveData: js.UndefOr[js.Function1[/* data */ js.Array[D], js.Array[ResolvedData]]] = js.native
   /** Default: false */
   var showFilters: scala.Boolean = js.native
   /** Default: true */
@@ -95,9 +96,9 @@ trait TableProps[D] extends js.Object {
   def PadRowComponent(): reactLib.reactMod.ReactNs.ReactNode = js.native
   /** Control callback for functional rendering */
   def children(
-    state: FinalState[D],
+    state: FinalState[ResolvedData],
     makeTable: js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]],
-    instance: Instance[D]
+    instance: Instance[ResolvedData]
   ): reactLib.reactMod.ReactNs.ReactNode = js.native
   /** Default: ... */
   def defaultFilterMethod(filter: Filter, row: js.Any, column: js.Any): scala.Boolean = js.native

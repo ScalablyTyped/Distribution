@@ -247,6 +247,9 @@ object puppeteerLibStrings {
   sealed trait `midi-sysex` extends js.Object
   
   @js.native
+  sealed trait mixed extends js.Object
+  
+  @js.native
   sealed trait mutation extends js.Object
   
   @js.native
@@ -446,6 +449,7 @@ object puppeteerLibStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   def midi: midi = "midi".asInstanceOf[midi]
   def `midi-sysex`: `midi-sysex` = "midi-sysex".asInstanceOf[`midi-sysex`]
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
   def mutation: mutation = "mutation".asInstanceOf[mutation]
   def namenotresolved: namenotresolved = "namenotresolved".asInstanceOf[namenotresolved]
   def networkidle0: networkidle0 = "networkidle0".asInstanceOf[networkidle0]

@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "epilogue"
-version := "0.7-dt-20180910Z-b9a825"
+version := "0.7-dt-20180910Z-f57a63"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,11 +11,11 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20180910Z-4f46cd",
   "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-b5e732",
   "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-5d5875",
-  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181105Z-aa3127",
+  "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",
-  "com.scalablytyped" %%% "sequelize" % "4.27.10-dt-20181128Z-e3fdb2",
+  "com.scalablytyped" %%% "sequelize" % "4.27.10-dt-20181128Z-e07e45",
   "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-9a9ab6",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "validator" % "v9.4-dt-20181116Z-1f35af",
