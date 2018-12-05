@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 trait ReferenceDotProps extends EventAttributes {
   var alwaysShow: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var ifOverflow: js.UndefOr[IfOverflowType] = js.undefined
   var isFront: js.UndefOr[scala.Boolean] = js.undefined
   var r: js.UndefOr[scala.Double] = js.undefined
   var shape: js.UndefOr[

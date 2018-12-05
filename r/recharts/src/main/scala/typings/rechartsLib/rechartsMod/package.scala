@@ -22,6 +22,7 @@ package object rechartsMod {
   ])
   type DataPointFormatter = js.Function2[/* entry */ js.Any, /* dataKey */ DataKey, rechartsLib.Anon_Y]
   type IconType = rechartsLib.rechartsLibStrings.plainline | rechartsLib.rechartsLibStrings.line | rechartsLib.rechartsLibStrings.square | rechartsLib.rechartsLibStrings.rect | rechartsLib.rechartsLibStrings.circle | rechartsLib.rechartsLibStrings.cross | rechartsLib.rechartsLibStrings.diamond | rechartsLib.rechartsLibStrings.star | rechartsLib.rechartsLibStrings.triangle | rechartsLib.rechartsLibStrings.wye
+  type IfOverflowType = rechartsLib.rechartsLibStrings.hidden | rechartsLib.rechartsLibStrings.visible | rechartsLib.rechartsLibStrings.discard | rechartsLib.rechartsLibStrings.extendDomain
   type ItemSorter[T] = js.Function2[/* a */ T, /* b */ T, scala.Double]
   type LabelFormatter = js.Function1[/* label */ java.lang.String | scala.Double, reactLib.reactMod.ReactNs.ReactNode]
   type LayoutType = rechartsLib.rechartsLibStrings.horizontal | rechartsLib.rechartsLibStrings.vertical

@@ -116,6 +116,24 @@ trait VFile extends js.Object {
            * @param position Place at which the message occurred in `vfile`.
            * @param ruleId Category of message.
            */
+  def fail(reason: java.lang.String, position: unistLib.unistMod.Node): scala.Nothing = js.native
+  /**
+           * Associates a fatal message with the file, then immediately throws it.
+           * Note: fatal errors mean a file is no longer processable.
+           * Calls `message()` internally.
+           * @param reason Reason for message. Uses the stack and message of the error if given.
+           * @param position Place at which the message occurred in `vfile`.
+           * @param ruleId Category of message.
+           */
+  def fail(reason: java.lang.String, position: unistLib.unistMod.Node, ruleId: java.lang.String): scala.Nothing = js.native
+  /**
+           * Associates a fatal message with the file, then immediately throws it.
+           * Note: fatal errors mean a file is no longer processable.
+           * Calls `message()` internally.
+           * @param reason Reason for message. Uses the stack and message of the error if given.
+           * @param position Place at which the message occurred in `vfile`.
+           * @param ruleId Category of message.
+           */
   def fail(reason: java.lang.String, position: unistLib.unistMod.Point): scala.Nothing = js.native
   /**
            * Associates a fatal message with the file, then immediately throws it.
@@ -145,28 +163,6 @@ trait VFile extends js.Object {
            */
   def fail(reason: java.lang.String, position: unistLib.unistMod.Position, ruleId: java.lang.String): scala.Nothing = js.native
   /**
-           * Associates a fatal message with the file, then immediately throws it.
-           * Note: fatal errors mean a file is no longer processable.
-           * Calls `message()` internally.
-           * @param reason Reason for message. Uses the stack and message of the error if given.
-           * @param position Place at which the message occurred in `vfile`.
-           * @param ruleId Category of message.
-           */
-  def fail(reason: java.lang.String, position: vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.AnyNode): scala.Nothing = js.native
-  /**
-           * Associates a fatal message with the file, then immediately throws it.
-           * Note: fatal errors mean a file is no longer processable.
-           * Calls `message()` internally.
-           * @param reason Reason for message. Uses the stack and message of the error if given.
-           * @param position Place at which the message occurred in `vfile`.
-           * @param ruleId Category of message.
-           */
-  def fail(
-    reason: java.lang.String,
-    position: vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.AnyNode,
-    ruleId: java.lang.String
-  ): scala.Nothing = js.native
-  /**
            * Associates an informational message with the file, where `fatal` is set to `null`.
            * Calls `message()` internally.
            * @param reason Reason for message. Uses the stack and message of the error if given.
@@ -174,6 +170,22 @@ trait VFile extends js.Object {
            * @param ruleId Category of message.
            */
   def info(reason: java.lang.String): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
+  /**
+           * Associates an informational message with the file, where `fatal` is set to `null`.
+           * Calls `message()` internally.
+           * @param reason Reason for message. Uses the stack and message of the error if given.
+           * @param position Place at which the message occurred in `vfile`.
+           * @param ruleId Category of message.
+           */
+  def info(reason: java.lang.String, position: unistLib.unistMod.Node): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
+  /**
+           * Associates an informational message with the file, where `fatal` is set to `null`.
+           * Calls `message()` internally.
+           * @param reason Reason for message. Uses the stack and message of the error if given.
+           * @param position Place at which the message occurred in `vfile`.
+           * @param ruleId Category of message.
+           */
+  def info(reason: java.lang.String, position: unistLib.unistMod.Node, ruleId: java.lang.String): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
   /**
            * Associates an informational message with the file, where `fatal` is set to `null`.
            * Calls `message()` internally.
@@ -207,26 +219,6 @@ trait VFile extends js.Object {
            */
   def info(reason: java.lang.String, position: unistLib.unistMod.Position, ruleId: java.lang.String): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
   /**
-           * Associates an informational message with the file, where `fatal` is set to `null`.
-           * Calls `message()` internally.
-           * @param reason Reason for message. Uses the stack and message of the error if given.
-           * @param position Place at which the message occurred in `vfile`.
-           * @param ruleId Category of message.
-           */
-  def info(reason: java.lang.String, position: vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.AnyNode): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
-  /**
-           * Associates an informational message with the file, where `fatal` is set to `null`.
-           * Calls `message()` internally.
-           * @param reason Reason for message. Uses the stack and message of the error if given.
-           * @param position Place at which the message occurred in `vfile`.
-           * @param ruleId Category of message.
-           */
-  def info(
-    reason: java.lang.String,
-    position: vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.AnyNode,
-    ruleId: java.lang.String
-  ): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
-  /**
            * Associates a message with the file for `reason` at `position`.
            * When an error is passed in as `reason`, copies the stack.
            * Each message has a `fatal` property which by default is set to `false` (ie. `warning`).
@@ -235,6 +227,24 @@ trait VFile extends js.Object {
            * @param ruleId Category of message.
            */
   def message(reason: java.lang.String): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
+  /**
+           * Associates a message with the file for `reason` at `position`.
+           * When an error is passed in as `reason`, copies the stack.
+           * Each message has a `fatal` property which by default is set to `false` (ie. `warning`).
+           * @param reason Reason for message. Uses the stack and message of the error if given.
+           * @param position Place at which the message occurred in `vfile`.
+           * @param ruleId Category of message.
+           */
+  def message(reason: java.lang.String, position: unistLib.unistMod.Node): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
+  /**
+           * Associates a message with the file for `reason` at `position`.
+           * When an error is passed in as `reason`, copies the stack.
+           * Each message has a `fatal` property which by default is set to `false` (ie. `warning`).
+           * @param reason Reason for message. Uses the stack and message of the error if given.
+           * @param position Place at which the message occurred in `vfile`.
+           * @param ruleId Category of message.
+           */
+  def message(reason: java.lang.String, position: unistLib.unistMod.Node, ruleId: java.lang.String): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
   /**
            * Associates a message with the file for `reason` at `position`.
            * When an error is passed in as `reason`, copies the stack.
@@ -271,28 +281,6 @@ trait VFile extends js.Object {
            * @param ruleId Category of message.
            */
   def message(reason: java.lang.String, position: unistLib.unistMod.Position, ruleId: java.lang.String): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
-  /**
-           * Associates a message with the file for `reason` at `position`.
-           * When an error is passed in as `reason`, copies the stack.
-           * Each message has a `fatal` property which by default is set to `false` (ie. `warning`).
-           * @param reason Reason for message. Uses the stack and message of the error if given.
-           * @param position Place at which the message occurred in `vfile`.
-           * @param ruleId Category of message.
-           */
-  def message(reason: java.lang.String, position: vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.AnyNode): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
-  /**
-           * Associates a message with the file for `reason` at `position`.
-           * When an error is passed in as `reason`, copies the stack.
-           * Each message has a `fatal` property which by default is set to `false` (ie. `warning`).
-           * @param reason Reason for message. Uses the stack and message of the error if given.
-           * @param position Place at which the message occurred in `vfile`.
-           * @param ruleId Category of message.
-           */
-  def message(
-    reason: java.lang.String,
-    position: vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.AnyNode,
-    ruleId: java.lang.String
-  ): vfileDashMessageLib.vfileDashMessageMod.vfileMessageNs.VFileMessage = js.native
   /**
            * Convert contents of `vfile` to string.
            * @param encoding If `contents` is a buffer, `encoding` is used to stringify buffers (default: `'utf8'`).

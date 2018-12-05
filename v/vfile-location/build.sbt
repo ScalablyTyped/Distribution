@@ -1,15 +1,15 @@
 organization := "com.scalablytyped"
 name := "vfile-location"
-version := "2.0-dt-20181128Z-6ff2ca"
+version := "2.0-dt-20181128Z-126733"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "unist" % "2.0-dt-20181203Z-2f2959",
-  "com.scalablytyped" %%% "vfile" % "3.0-dt-20181204Z-b9eed0",
-  "com.scalablytyped" %%% "vfile-message" % "1.0-dt-20181204Z-6674f5",
+  "com.scalablytyped" %%% "unist" % "2.0-dt-20181205Z-4d5b82",
+  "com.scalablytyped" %%% "vfile" % "3.0-dt-20181205Z-b08356",
+  "com.scalablytyped" %%% "vfile-message" % "1.0-dt-20181205Z-7b949f",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

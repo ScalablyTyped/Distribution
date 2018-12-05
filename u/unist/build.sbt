@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "unist"
-version := "2.0-dt-20181203Z-2f2959"
+version := "2.0-dt-20181205Z-4d5b82"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

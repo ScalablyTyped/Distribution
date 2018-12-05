@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("iframe-resizer", JSImport.Namespace)
 @js.native
 object iframeDashResizerModMembers extends js.Object {
-  def iframeResizer(options: IFrameOptions, target: java.lang.String): js.Array[IFrameComponent] = js.native
-  def iframeResizer(options: IFrameOptions, target: stdLib.HTMLElement): js.Array[IFrameComponent] = js.native
+  def apply(
+    options: iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.IFrameOptions,
+    target: java.lang.String | stdLib.HTMLElement
+  ): js.Array[iframeDashResizerLib.iframeDashResizerMod.iframeResizerNs.IFrameComponent] = js.native
 }
 

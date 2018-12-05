@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait Node extends js.Object {
+trait Node
+  extends /* key */ ScalablyTyped.runtime.StringDictionary[js.Any] {
   /**
        * Information from the ecosystem.
        */

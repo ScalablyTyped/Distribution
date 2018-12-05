@@ -73,6 +73,24 @@ trait VFileMessage
            * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
            * @param origin Place in code the message originates from (`string`, optional).
            */
+  def apply(reason: java.lang.String, position: unistLib.unistMod.Node): VFileMessage = js.native
+  /**
+           * Constructor of a message for `reason` at `position` from `origin`.
+           * When an error is passed in as `reason`, copies the `stack`.
+           *
+           * @param reason Reason for message (`string` or `Error`). Uses the stack and message of the error if given.
+           * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
+           * @param origin Place in code the message originates from (`string`, optional).
+           */
+  def apply(reason: java.lang.String, position: unistLib.unistMod.Node, origin: java.lang.String): VFileMessage = js.native
+  /**
+           * Constructor of a message for `reason` at `position` from `origin`.
+           * When an error is passed in as `reason`, copies the `stack`.
+           *
+           * @param reason Reason for message (`string` or `Error`). Uses the stack and message of the error if given.
+           * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
+           * @param origin Place in code the message originates from (`string`, optional).
+           */
   def apply(reason: java.lang.String, position: unistLib.unistMod.Point): VFileMessage = js.native
   /**
            * Constructor of a message for `reason` at `position` from `origin`.
@@ -109,25 +127,25 @@ trait VFileMessage
            * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
            * @param origin Place in code the message originates from (`string`, optional).
            */
-  def apply(reason: java.lang.String, position: AnyNode): VFileMessage = js.native
-  /**
-           * Constructor of a message for `reason` at `position` from `origin`.
-           * When an error is passed in as `reason`, copies the `stack`.
-           *
-           * @param reason Reason for message (`string` or `Error`). Uses the stack and message of the error if given.
-           * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
-           * @param origin Place in code the message originates from (`string`, optional).
-           */
-  def apply(reason: java.lang.String, position: AnyNode, origin: java.lang.String): VFileMessage = js.native
-  /**
-           * Constructor of a message for `reason` at `position` from `origin`.
-           * When an error is passed in as `reason`, copies the `stack`.
-           *
-           * @param reason Reason for message (`string` or `Error`). Uses the stack and message of the error if given.
-           * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
-           * @param origin Place in code the message originates from (`string`, optional).
-           */
   def apply(reason: nodeLib.Error): VFileMessage = js.native
+  /**
+           * Constructor of a message for `reason` at `position` from `origin`.
+           * When an error is passed in as `reason`, copies the `stack`.
+           *
+           * @param reason Reason for message (`string` or `Error`). Uses the stack and message of the error if given.
+           * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
+           * @param origin Place in code the message originates from (`string`, optional).
+           */
+  def apply(reason: nodeLib.Error, position: unistLib.unistMod.Node): VFileMessage = js.native
+  /**
+           * Constructor of a message for `reason` at `position` from `origin`.
+           * When an error is passed in as `reason`, copies the `stack`.
+           *
+           * @param reason Reason for message (`string` or `Error`). Uses the stack and message of the error if given.
+           * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
+           * @param origin Place in code the message originates from (`string`, optional).
+           */
+  def apply(reason: nodeLib.Error, position: unistLib.unistMod.Node, origin: java.lang.String): VFileMessage = js.native
   /**
            * Constructor of a message for `reason` at `position` from `origin`.
            * When an error is passed in as `reason`, copies the `stack`.
@@ -164,23 +182,5 @@ trait VFileMessage
            * @param origin Place in code the message originates from (`string`, optional).
            */
   def apply(reason: nodeLib.Error, position: unistLib.unistMod.Position, origin: java.lang.String): VFileMessage = js.native
-  /**
-           * Constructor of a message for `reason` at `position` from `origin`.
-           * When an error is passed in as `reason`, copies the `stack`.
-           *
-           * @param reason Reason for message (`string` or `Error`). Uses the stack and message of the error if given.
-           * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
-           * @param origin Place in code the message originates from (`string`, optional).
-           */
-  def apply(reason: nodeLib.Error, position: AnyNode): VFileMessage = js.native
-  /**
-           * Constructor of a message for `reason` at `position` from `origin`.
-           * When an error is passed in as `reason`, copies the `stack`.
-           *
-           * @param reason Reason for message (`string` or `Error`). Uses the stack and message of the error if given.
-           * @param position Place at which the message occurred in a file (`Node`, `Position`, or `Point`, optional).
-           * @param origin Place in code the message originates from (`string`, optional).
-           */
-  def apply(reason: nodeLib.Error, position: AnyNode, origin: java.lang.String): VFileMessage = js.native
 }
 

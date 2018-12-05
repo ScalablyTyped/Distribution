@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "mdast"
-version := "3.0-dt-20181203Z-0273ea"
+version := "3.0-dt-20181203Z-804a32"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "unist" % "2.0-dt-20181203Z-2f2959",
+  "com.scalablytyped" %%% "unist" % "2.0-dt-20181205Z-4d5b82",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

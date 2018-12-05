@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 trait ReferenceLineProps extends js.Object {
   var alwaysShow: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var ifOverflow: js.UndefOr[IfOverflowType] = js.undefined
   var isFront: js.UndefOr[scala.Boolean] = js.undefined
   var label: js.UndefOr[
     java.lang.String | scala.Double | ContentRenderer[_] | reactLib.reactMod.ReactNs.ReactElement[_]

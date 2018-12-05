@@ -85,6 +85,9 @@ object rechartsLibStrings {
   sealed trait direction extends js.Object
   
   @js.native
+  sealed trait discard extends js.Object
+  
+  @js.native
   sealed trait display extends js.Object
   
   @js.native
@@ -110,6 +113,9 @@ object rechartsLibStrings {
   
   @js.native
   sealed trait expand extends js.Object
+  
+  @js.native
+  sealed trait extendDomain extends js.Object
   
   @js.native
   sealed trait fill extends js.Object
@@ -152,6 +158,9 @@ object rechartsLibStrings {
   
   @js.native
   sealed trait glyphOrientationVertical extends js.Object
+  
+  @js.native
+  sealed trait hidden extends js.Object
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -397,6 +406,9 @@ object rechartsLibStrings {
   sealed trait visibility extends js.Object
   
   @js.native
+  sealed trait visible extends js.Object
+  
+  @js.native
   sealed trait wiggle extends js.Object
   
   @js.native
@@ -431,6 +443,7 @@ object rechartsLibStrings {
   def dataMin: dataMin = "dataMin".asInstanceOf[dataMin]
   def diamond: diamond = "diamond".asInstanceOf[diamond]
   def direction: direction = "direction".asInstanceOf[direction]
+  def discard: discard = "discard".asInstanceOf[discard]
   def display: display = "display".asInstanceOf[display]
   def dominantBaseline: dominantBaseline = "dominantBaseline".asInstanceOf[dominantBaseline]
   def ease: ease = "ease".asInstanceOf[ease]
@@ -440,6 +453,7 @@ object rechartsLibStrings {
   def enableBackground: enableBackground = "enableBackground".asInstanceOf[enableBackground]
   def end: end = "end".asInstanceOf[end]
   def expand: expand = "expand".asInstanceOf[expand]
+  def extendDomain: extendDomain = "extendDomain".asInstanceOf[extendDomain]
   def fill: fill = "fill".asInstanceOf[fill]
   def fillRule: fillRule = "fillRule".asInstanceOf[fillRule]
   def filter: filter = "filter".asInstanceOf[filter]
@@ -454,6 +468,7 @@ object rechartsLibStrings {
   def geometricPrecision: geometricPrecision = "geometricPrecision".asInstanceOf[geometricPrecision]
   def glyphOrientationHorizontal: glyphOrientationHorizontal = "glyphOrientationHorizontal".asInstanceOf[glyphOrientationHorizontal]
   def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   def identity: identity = "identity".asInstanceOf[identity]
   def inherit: inherit = "inherit".asInstanceOf[inherit]
@@ -535,6 +550,7 @@ object rechartsLibStrings {
   def utcTime: utcTime = "utcTime".asInstanceOf[utcTime]
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   def visibility: visibility = "visibility".asInstanceOf[visibility]
+  def visible: visible = "visible".asInstanceOf[visible]
   def wiggle: wiggle = "wiggle".asInstanceOf[wiggle]
   def writingMode: writingMode = "writingMode".asInstanceOf[writingMode]
   def wye: wye = "wye".asInstanceOf[wye]

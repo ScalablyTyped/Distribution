@@ -268,10 +268,37 @@ object v2Ns extends js.Object {
     var port: scala.Double = js.native
     var scopes: js.Array[java.lang.String] = js.native
     var servicePath: java.lang.String = js.native
+    def createSessionEntityType(request: dialogflowLib.dialogflowMod.CreateSessionEntityTypeRequest): stdLib.Promise[js.Array[dialogflowLib.dialogflowMod.SessionEntityType]] = js.native
+    def createSessionEntityType(
+      request: dialogflowLib.dialogflowMod.CreateSessionEntityTypeRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): stdLib.Promise[js.Array[dialogflowLib.dialogflowMod.SessionEntityType]] = js.native
+    def deleteSessionEntityType(request: dialogflowLib.dialogflowMod.DeleteSessionEntityTypeRequest): stdLib.Promise[scala.Unit] = js.native
+    def deleteSessionEntityType(
+      request: dialogflowLib.dialogflowMod.DeleteSessionEntityTypeRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): stdLib.Promise[scala.Unit] = js.native
     def getProjectId(): scala.Unit = js.native
     def getProjectId(callback: js.Function2[/* error */ stdLib.Error, /* id */ java.lang.String, java.lang.String]): scala.Unit = js.native
     @JSName("getProjectId")
     def getProjectId_Promise(): stdLib.Promise[java.lang.String] = js.native
+    def getSessionEntityType(request: dialogflowLib.dialogflowMod.GetSessionEntityTypeRequest): stdLib.Promise[js.Array[dialogflowLib.dialogflowMod.SessionEntityType]] = js.native
+    def getSessionEntityType(
+      request: dialogflowLib.dialogflowMod.GetSessionEntityTypeRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): stdLib.Promise[js.Array[dialogflowLib.dialogflowMod.SessionEntityType]] = js.native
+    // TODO: add streaming calls
+    def listSessionEntityTypes(request: dialogflowLib.dialogflowMod.ListSessionEntityTypesRequest): stdLib.Promise[js.Array[js.Array[dialogflowLib.dialogflowMod.SessionEntityType]]] = js.native
+    // TODO: add streaming calls
+    def listSessionEntityTypes(
+      request: dialogflowLib.dialogflowMod.ListSessionEntityTypesRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): stdLib.Promise[js.Array[js.Array[dialogflowLib.dialogflowMod.SessionEntityType]]] = js.native
+    def updateSessionEntityType(request: dialogflowLib.dialogflowMod.UpdateSessionEntityTypeRequest): stdLib.Promise[js.Array[dialogflowLib.dialogflowMod.SessionEntityType]] = js.native
+    def updateSessionEntityType(
+      request: dialogflowLib.dialogflowMod.UpdateSessionEntityTypeRequest,
+      options: dialogflowLib.dialogflowMod.gaxNs.CallOptions
+    ): stdLib.Promise[js.Array[dialogflowLib.dialogflowMod.SessionEntityType]] = js.native
   }
   
   @js.native

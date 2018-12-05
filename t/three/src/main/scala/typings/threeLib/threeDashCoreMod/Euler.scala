@@ -20,7 +20,7 @@ class Euler () extends js.Object {
   def copy(euler: this.type): this.type = js.native
   def equals(euler: Euler): scala.Boolean = js.native
   def fromArray(xyzo: js.Array[_]): Euler = js.native
-  def onChange(callback: js.Function): scala.Unit = js.native
+  def onChange(callback: js.Function): this.type = js.native
   def reorder(newOrder: java.lang.String): Euler = js.native
   def set(x: scala.Double, y: scala.Double, z: scala.Double): Euler = js.native
   def set(x: scala.Double, y: scala.Double, z: scala.Double, order: java.lang.String): Euler = js.native

@@ -75,7 +75,7 @@ object wxNsMembers extends js.Object {
   /**
        * 获取“分享到QQ空间”按钮点击状态及自定义分享内容接口
        */
-  def onMenuShareQzone(config: MenuShareWeibo): scala.Unit = js.native
+  def onMenuShareQZone(config: MenuShareWeibo): scala.Unit = js.native
   /**
        * 获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
        */
