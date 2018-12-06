@@ -3,7 +3,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(rc-editor-core)) [id => rc-editor-core, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(rc-editor-core) [id => rc-editor-core, phase => typescript] 
 [debug] PhaseRunner.scala:78 Success [id => rc-editor-core, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(rc-editor-core) [id => rc-editor-core, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing rc-editor-core [id => rc-editor-core, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => rc-editor-core, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [immutable => Compilation failed] [id => rc-editor-core, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [immutable => Compilation failed] [id => rc-editor-core, phase => build] 

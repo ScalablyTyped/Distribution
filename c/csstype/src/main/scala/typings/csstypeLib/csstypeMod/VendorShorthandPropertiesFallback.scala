@@ -15,8 +15,6 @@ trait VendorShorthandPropertiesFallback[TLength] extends js.Object {
   var MozColumnRule: js.UndefOr[ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]]] = js.undefined
   /** The **`columns`** CSS property sets the column width and column count of an element. */
   var MozColumns: js.UndefOr[ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]] = js.undefined
-  /** In Mozilla applications like Firefox, the **`-moz-outline-radius`** CSS property can be used to give an element's `outline` rounded corners. */
-  var MozOutlineRadius: js.UndefOr[MozOutlineRadiusProperty[TLength] | js.Array[MozOutlineRadiusProperty[TLength]]] = js.undefined
   /** The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`. */
   var MozTransition: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
   /** The **`border-image`** CSS property lets you draw an image in place of an element's `border-style`. */

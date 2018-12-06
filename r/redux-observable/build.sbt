@@ -1,16 +1,16 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "redux-observable"
-version := "1.0.0-3ea39e"
+version := "1.0.0-f03f2b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "redux" % "4.0.1-9e09bf",
-  "com.scalablytyped" %%% "rxjs" % "6.3.3-d1a1f7",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "symbol-observable" % "1.2.0-45b962",
-  "com.scalablytyped" %%% "tslib" % "1.9.3-9baf35",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "redux" % "4.0.1-5c98ab",
+  "org.scalablytyped" %%% "rxjs" % "6.3.3-0ffcd9",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-46014e",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-6146fe")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -8,7 +8,7 @@
 [debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(S) at TreeScope(TsParsedFile() / TsDeclModule(react-date-range) / TsDeclClass(DateRange) / TsTypeRef()) [id => react-date-range, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-date-range) / TsDeclClass(DateRange) / TsTypeRef())] 
 [debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(SS) at TreeScope(TsParsedFile() / TsDeclModule(react-date-range) / TsDeclClass(DateRange) / TsTypeRef()) [id => react-date-range, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-date-range) / TsDeclClass(DateRange) / TsTypeRef())] 
 [debug] PhaseRunner.scala:78 Success [id => react-date-range, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(react-date-range) [id => react-date-range, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing react-date-range [id => react-date-range, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => react-date-range, phase => scala.js] 
 [error] package.scala:9 type Moment is not a member of package typings.momentDashTimezoneLib.momentDashTimezoneMod,   type AnyDate = java.lang.String | momentDashTimezoneLib.momentDashTimezoneMod.Moment [id => react-date-range, phase => build] 
 [error] package.scala:10 type Moment is not a member of package typings.momentDashTimezoneLib.momentDashTimezoneMod,   type DateFunc = js.Function1[/* now */ momentDashTimezoneLib.momentDashTimezoneMod.Moment, AnyDate] [id => react-date-range, phase => build] 

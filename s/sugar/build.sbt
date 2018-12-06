@@ -1,13 +1,13 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "sugar"
-version := "2.0.6-4a0b94"
+version := "2.0.6-239e46"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "sugar-core" % "2.0.4-7b7033",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
+  "org.scalablytyped" %%% "sugar-core" % "2.0.6-2c473b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

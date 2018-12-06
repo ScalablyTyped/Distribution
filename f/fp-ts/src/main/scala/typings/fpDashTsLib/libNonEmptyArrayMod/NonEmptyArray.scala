@@ -14,8 +14,6 @@ class NonEmptyArray[A] protected () extends js.Object {
   val head: A = js.native
   val tail: fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   /**
-       * Instance-bound implementation of {@link Apply}
-       *
        * @example
        * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
        *
@@ -36,8 +34,6 @@ class NonEmptyArray[A] protected () extends js.Object {
        */
   def `ap_`[B, C](`this`: NonEmptyArray[js.Function1[/* b */ B, C]], fb: NonEmptyArray[B]): NonEmptyArray[C] = js.native
   /**
-       * Instance-bound implementation of {@link Chain}
-       *
        * @example
        * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
        *
@@ -47,8 +43,6 @@ class NonEmptyArray[A] protected () extends js.Object {
        */
   def chain[B](f: js.Function1[/* a */ A, NonEmptyArray[B]]): NonEmptyArray[B] = js.native
   /**
-       * Instance-bound implementation of {@link Semigroup}
-       *
        * @example
        * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
        *
@@ -67,8 +61,6 @@ class NonEmptyArray[A] protected () extends js.Object {
        */
   def concatArray(as: fpDashTsLib.libArrayMod.Global.Array[A]): NonEmptyArray[A] = js.native
   /**
-       * Instance-bound implementation of {@link Extend}
-       *
        * @example
        * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
        * import { fold, monoidSum } from 'fp-ts/lib/Monoid'
@@ -78,8 +70,6 @@ class NonEmptyArray[A] protected () extends js.Object {
        */
   def extend[B](f: js.Function1[/* fa */ NonEmptyArray[A], B]): NonEmptyArray[B] = js.native
   /**
-       * Instance-bound implementation of {@link Comonad}
-       *
        * @example
        * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
        *
@@ -87,6 +77,11 @@ class NonEmptyArray[A] protected () extends js.Object {
        */
   def extract(): A = js.native
   def filter(predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native
+  /**
+       * @function
+       * @since 1.12.0
+       */
+  def filterWithIndex(predicate: js.Function2[/* i */ scala.Double, /* a */ A, scala.Boolean]): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native
   /**
        * Filter an NonEmptyArray, keeping the elements which satisfy a predicate function, creating a new NonEmptyArray or returning `None` in case the resulting NonEmptyArray would have no remaining elements.
        * @function
@@ -158,6 +153,14 @@ class NonEmptyArray[A] protected () extends js.Object {
   @JSName("findLast")
   def findLast_BA[B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B]): fpDashTsLib.libOptionMod.Option[B] = js.native
   /**
+       * @since 1.12.0
+       */
+  def foldr[B](b: B, f: js.Function2[/* a */ A, /* b */ B, B]): B = js.native
+  /**
+       * @since 1.12.0
+       */
+  def foldrWithIndex[B](b: B, f: js.Function3[/* i */ scala.Double, /* a */ A, /* b */ B, B]): B = js.native
+  /**
        * This function provides a safe way to read a value at a particular index from an NonEmptyArray
        *
        * @example
@@ -205,8 +208,6 @@ class NonEmptyArray[A] protected () extends js.Object {
        */
   def length(): scala.Double = js.native
   /**
-       * Instance-bound implementation of {@link Functor}
-       *
        * @example
        * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
        *
@@ -214,6 +215,7 @@ class NonEmptyArray[A] protected () extends js.Object {
        * assert.deepEqual(new NonEmptyArray(1, [2]).map(double), new NonEmptyArray(2, [4]))
        */
   def map[B](f: js.Function1[/* a */ A, B]): NonEmptyArray[B] = js.native
+  def mapWithIndex[B](f: js.Function2[/* i */ scala.Double, /* a */ A, B]): NonEmptyArray[B] = js.native
   /**
        * Gets maximum of this {@link NonEmptyArray} using specified {@link Ord} instance
        *
@@ -239,8 +241,6 @@ class NonEmptyArray[A] protected () extends js.Object {
        */
   def min(ord: fpDashTsLib.libOrdMod.Ord[A]): A = js.native
   /**
-       * Instance-bound implementation of {@link Foldable}
-       *
        * @example
        * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
        *
@@ -248,6 +248,10 @@ class NonEmptyArray[A] protected () extends js.Object {
        * assert.strictEqual(x.reduce('', (b, a) => b + a), 'ab')
        */
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native
+  /**
+       * @since 1.12.0
+       */
+  def reduceWithIndex[B](b: B, f: js.Function3[/* i */ scala.Double, /* b */ B, /* a */ A, B]): B = js.native
   /**
        * Reverts this {@link NonEmptyArray}
        *

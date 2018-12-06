@@ -22,7 +22,7 @@
 [debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(HistoryLocationState) at TreeScope(TsParsedFile() / TsDeclModule(redux-bootstrap/dts/interfaces/interfaces) / TsDeclNamespace(interfaces) / TsDeclInterface(RootComponentProps) / TsMemberProperty(history) / TsTypeRef()) [id => redux-bootstrap, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-bootstrap/dts/interfaces/interfaces) / TsDeclNamespace(interfaces) / TsDeclInterface(RootComponentProps) / TsMemberProperty(history) / TsTypeRef())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Accept) [id => redux-bootstrap, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(redux-bootstrap/dts/interfaces/interfaces) / TsDeclNamespace(interfaces) / TsDeclInterface(NodeModule) / TsMemberProperty(hot) / TsTypeObject())] 
 [debug] PhaseRunner.scala:78 Success [id => redux-bootstrap, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(redux-bootstrap) [id => redux-bootstrap, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing redux-bootstrap [id => redux-bootstrap, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => redux-bootstrap, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [immutable => Compilation failed] [id => redux-bootstrap, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [immutable => Compilation failed] [id => redux-bootstrap, phase => build] 

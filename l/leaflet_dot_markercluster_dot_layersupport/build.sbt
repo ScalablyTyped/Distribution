@@ -1,15 +1,15 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "leaflet_dot_markercluster_dot_layersupport"
-version := "1.0-dt-20180910Z-7eee23"
+version := "1.0-dt-20180910Z-531b07"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "geojson" % "7946.0-dt-20180910Z-76d217",
-  "com.scalablytyped" %%% "leaflet" % "1.2-dt-20181109Z-ba728d",
-  "com.scalablytyped" %%% "leaflet_dot_markercluster" % "1.0-dt-20180910Z-245580",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180910Z-3f2d21",
+  "org.scalablytyped" %%% "leaflet" % "1.2-dt-20181109Z-26559d",
+  "org.scalablytyped" %%% "leaflet_dot_markercluster" % "1.0-dt-20180910Z-4f6d8e",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

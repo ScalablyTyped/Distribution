@@ -1,19 +1,19 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "karma-coverage"
-version := "1.1-dt-20181203Z-3c5378"
+version := "1.1-dt-20181203Z-b29456"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-7bd99a",
-  "com.scalablytyped" %%% "circular-json" % "0.4-dt-20180910Z-026cdb",
-  "com.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-e9dd4f",
-  "com.scalablytyped" %%% "istanbul" % "v0.4.0-dt-20180910Z-b8ff7c",
-  "com.scalablytyped" %%% "karma" % "3.0-dt-20181203Z-5bf12f",
-  "com.scalablytyped" %%% "log4js" % "3.0.6-9c892f",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-3eb23e",
+  "org.scalablytyped" %%% "circular-json" % "0.4-dt-20180910Z-2eb50b",
+  "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-0c31be",
+  "org.scalablytyped" %%% "istanbul" % "v0.4.0-dt-20180910Z-d98c9a",
+  "org.scalablytyped" %%% "karma" % "3.0-dt-20181203Z-7f2fb8",
+  "org.scalablytyped" %%% "log4js" % "3.0.6-e87979",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

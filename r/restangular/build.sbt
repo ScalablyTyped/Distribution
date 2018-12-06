@@ -1,13 +1,13 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "restangular"
-version := "v1.5.0-dt-20180910Z-5a1f1d"
+version := "v1.5.0-dt-20180910Z-ee2b7a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "angular" % "1.6-dt-20180918Z-dc4282",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20180918Z-0ba0d0",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

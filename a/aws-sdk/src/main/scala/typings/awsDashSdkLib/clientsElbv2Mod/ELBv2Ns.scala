@@ -136,7 +136,7 @@ object ELBv2Ns extends js.Object {
     /**
          * The OAuth 2.0 client secret.
          */
-    var ClientSecret: js.UndefOr[AuthenticateOidcActionClientSecret] = js.undefined
+    var ClientSecret: AuthenticateOidcActionClientSecret
     /**
          * The OIDC issuer identifier of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
          */
@@ -161,7 +161,6 @@ object ELBv2Ns extends js.Object {
          * The token endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
          */
     var TokenEndpoint: AuthenticateOidcActionTokenEndpoint
-    var UseExistingClientSecret: js.UndefOr[AuthenticateOidcActionUseExistingClientSecret] = js.undefined
     /**
          * The user info endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
          */
@@ -174,7 +173,6 @@ object ELBv2Ns extends js.Object {
          * [Network Load Balancers] The static IP address.
          */
     var LoadBalancerAddresses: js.UndefOr[LoadBalancerAddresses] = js.undefined
-    var StaticIp: js.UndefOr[StaticIp] = js.undefined
     /**
          * The ID of the subnet.
          */
@@ -585,16 +583,6 @@ object ELBv2Ns extends js.Object {
   }
   
   
-  trait DescribeProvisionedCapacityInput extends js.Object {
-    var LoadBalancerArn: LoadBalancerArn
-  }
-  
-  
-  trait DescribeProvisionedCapacityOutput extends js.Object {
-    var ProvisionedCapacity: js.UndefOr[ProvisionedCapacity] = js.undefined
-  }
-  
-  
   trait DescribeRulesInput extends js.Object {
     /**
          * The Amazon Resource Name (ARN) of the listener.
@@ -756,22 +744,6 @@ object ELBv2Ns extends js.Object {
          * The HTTP response code (2XX, 4XX, or 5XX).
          */
     var StatusCode: FixedResponseActionStatusCode
-  }
-  
-  
-  trait HostHeaderConditionConfig extends js.Object {
-    var Values: js.UndefOr[ListOfString] = js.undefined
-  }
-  
-  
-  trait HttpHeaderConditionConfig extends js.Object {
-    var HttpHeaderName: js.UndefOr[HttpHeaderConditionName] = js.undefined
-    var Values: js.UndefOr[ListOfString] = js.undefined
-  }
-  
-  
-  trait HttpRequestMethodConditionConfig extends js.Object {
-    var Values: js.UndefOr[HttpRequestMethodList] = js.undefined
   }
   
   
@@ -971,17 +943,6 @@ object ELBv2Ns extends js.Object {
   }
   
   
-  trait ModifyProvisionedCapacityInput extends js.Object {
-    var LoadBalancerArn: LoadBalancerArn
-    var MinimumLBCapacityUnits: LBCapacityUnits
-  }
-  
-  
-  trait ModifyProvisionedCapacityOutput extends js.Object {
-    var ProvisionedCapacity: js.UndefOr[ProvisionedCapacity] = js.undefined
-  }
-  
-  
   trait ModifyRuleInput extends js.Object {
     /**
          * The actions. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listener] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
@@ -1075,24 +1036,6 @@ object ELBv2Ns extends js.Object {
          * Information about the modified target group.
          */
     var TargetGroups: js.UndefOr[TargetGroups] = js.undefined
-  }
-  
-  
-  trait PathPatternConditionConfig extends js.Object {
-    var Values: js.UndefOr[ListOfString] = js.undefined
-  }
-  
-  
-  trait ProvisionedCapacity extends js.Object {
-    var DecreasesRemaining: js.UndefOr[DecreasesRemaining] = js.undefined
-    var LastModifiedTime: js.UndefOr[LastModifiedTime] = js.undefined
-    var MinimumLBCapacityUnits: js.UndefOr[LBCapacityUnits] = js.undefined
-    var Status: js.UndefOr[ProvisionedCapacityStatus] = js.undefined
-  }
-  
-  
-  trait QueryStringConditionConfig extends js.Object {
-    var Values: js.UndefOr[ListOfString] = js.undefined
   }
   
   
@@ -1198,11 +1141,6 @@ object ELBv2Ns extends js.Object {
          * The name of the field. The possible values are host-header and path-pattern.
          */
     var Field: js.UndefOr[ConditionFieldName] = js.undefined
-    var HostHeaderConfig: js.UndefOr[HostHeaderConditionConfig] = js.undefined
-    var HttpHeaderConfig: js.UndefOr[HttpHeaderConditionConfig] = js.undefined
-    var HttpRequestMethodConfig: js.UndefOr[HttpRequestMethodConditionConfig] = js.undefined
-    var PathPatternConfig: js.UndefOr[PathPatternConditionConfig] = js.undefined
-    var QueryStringConfig: js.UndefOr[QueryStringConditionConfig] = js.undefined
     /**
          * The condition value. If the field name is host-header, you can specify a single host name (for example, my.example.com). A host name is case insensitive, can be up to 128 characters in length, and can contain any of the following characters. You can include up to three wildcard characters.   A-Z, a-z, 0-9   - .   * (matches 0 or more characters)   ? (matches exactly 1 character)   If the field name is path-pattern, you can specify a single path pattern (for example, /img/ *). A path pattern is case-sensitive, can be up to 128 characters in length, and can contain any of the following characters. You can include up to three wildcard characters.   A-Z, a-z, 0-9   _ - . $ / ~ " ' @ : +   &amp; (using &amp;amp;)   * (matches 0 or more characters)   ? (matches exactly 1 character)  
          */
@@ -1323,7 +1261,6 @@ object ELBv2Ns extends js.Object {
          * [Network Load Balancers] The allocation ID of the Elastic IP address.
          */
     var AllocationId: js.UndefOr[AllocationId] = js.undefined
-    var StaticIp: js.UndefOr[StaticIp] = js.undefined
     /**
          * The ID of the subnet.
          */
@@ -1944,35 +1881,6 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeLoadBalancersOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * 
-       */
-    def describeProvisionedCapacity(): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * 
-       */
-    def describeProvisionedCapacity(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DescribeProvisionedCapacityOutput, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * 
-       */
-    def describeProvisionedCapacity(params: DescribeProvisionedCapacityInput): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * 
-       */
-    def describeProvisionedCapacity(
-      params: DescribeProvisionedCapacityInput,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ DescribeProvisionedCapacityOutput, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[DescribeProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
        * Describes the specified rules or the rules for the specified listener. You must specify either a listener or one or more rules.
        */
     def describeRules(): awsDashSdkLib.libRequestMod.Request[DescribeRulesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2204,35 +2112,6 @@ object ELBv2Ns extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyLoadBalancerAttributesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * 
-       */
-    def modifyProvisionedCapacity(): awsDashSdkLib.libRequestMod.Request[ModifyProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * 
-       */
-    def modifyProvisionedCapacity(
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ModifyProvisionedCapacityOutput, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ModifyProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * 
-       */
-    def modifyProvisionedCapacity(params: ModifyProvisionedCapacityInput): awsDashSdkLib.libRequestMod.Request[ModifyProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
-    /**
-       * 
-       */
-    def modifyProvisionedCapacity(
-      params: ModifyProvisionedCapacityInput,
-      callback: js.Function2[
-          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-          /* data */ ModifyProvisionedCapacityOutput, 
-          scala.Unit
-        ]
-    ): awsDashSdkLib.libRequestMod.Request[ModifyProvisionedCapacityOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Modifies the specified rule. Any existing properties that you do not modify retain their current values. To modify the actions for the default rule, use ModifyListener.
        */
@@ -2717,7 +2596,7 @@ object ELBv2Ns extends js.Object {
   
   val TypesNs: this.type = js.native
   type ActionOrder = scala.Double
-  type ActionTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.forward | awsDashSdkLib.awsDashSdkLibStrings.`authenticate-oidc` | awsDashSdkLib.awsDashSdkLibStrings.redirect | awsDashSdkLib.awsDashSdkLibStrings.`authenticate-cognito` | awsDashSdkLib.awsDashSdkLibStrings.`fixed-response` | java.lang.String
+  type ActionTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.forward | awsDashSdkLib.awsDashSdkLibStrings.`authenticate-oidc` | awsDashSdkLib.awsDashSdkLibStrings.`authenticate-cognito` | awsDashSdkLib.awsDashSdkLibStrings.redirect | awsDashSdkLib.awsDashSdkLibStrings.`fixed-response` | java.lang.String
   type Actions = js.Array[Action]
   type AllocationId = java.lang.String
   type AuthenticateCognitoActionAuthenticationRequestParamName = java.lang.String
@@ -2740,7 +2619,6 @@ object ELBv2Ns extends js.Object {
   type AuthenticateOidcActionSessionCookieName = java.lang.String
   type AuthenticateOidcActionSessionTimeout = scala.Double
   type AuthenticateOidcActionTokenEndpoint = java.lang.String
-  type AuthenticateOidcActionUseExistingClientSecret = scala.Boolean
   type AuthenticateOidcActionUserInfoEndpoint = java.lang.String
   type AvailabilityZones = js.Array[AvailabilityZone]
   type CanonicalHostedZoneId = java.lang.String
@@ -2753,7 +2631,6 @@ object ELBv2Ns extends js.Object {
   type ConditionFieldName = java.lang.String
   type CreatedTime = stdLib.Date
   type DNSName = java.lang.String
-  type DecreasesRemaining = scala.Double
   type Default = scala.Boolean
   type Description = java.lang.String
   type FixedResponseActionContentType = java.lang.String
@@ -2765,14 +2642,9 @@ object ELBv2Ns extends js.Object {
   type HealthCheckThresholdCount = scala.Double
   type HealthCheckTimeoutSeconds = scala.Double
   type HttpCode = java.lang.String
-  type HttpHeaderConditionName = java.lang.String
-  type HttpRequestMethodEnum = awsDashSdkLib.awsDashSdkLibStrings.GET | awsDashSdkLib.awsDashSdkLibStrings.HEAD | awsDashSdkLib.awsDashSdkLibStrings.POST | awsDashSdkLib.awsDashSdkLibStrings.PUT | awsDashSdkLib.awsDashSdkLibStrings.DELETE | awsDashSdkLib.awsDashSdkLibStrings.CONNECT | awsDashSdkLib.awsDashSdkLibStrings.OPTIONS | awsDashSdkLib.awsDashSdkLibStrings.TRACE | awsDashSdkLib.awsDashSdkLibStrings.PATCH | java.lang.String
-  type HttpRequestMethodList = js.Array[HttpRequestMethodEnum]
   type IpAddress = java.lang.String
   type IpAddressType = awsDashSdkLib.awsDashSdkLibStrings.ipv4 | awsDashSdkLib.awsDashSdkLibStrings.dualstack | java.lang.String
   type IsDefault = scala.Boolean
-  type LBCapacityUnits = scala.Double
-  type LastModifiedTime = stdLib.Date
   type Limits = js.Array[Limit]
   type ListOfString = js.Array[StringValue]
   type ListenerArn = java.lang.String
@@ -2796,8 +2668,7 @@ object ELBv2Ns extends js.Object {
   type PageSize = scala.Double
   type Path = java.lang.String
   type Port = scala.Double
-  type ProtocolEnum = awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.HTTPS | awsDashSdkLib.awsDashSdkLibStrings.TCP | awsDashSdkLib.awsDashSdkLibStrings.TLS | awsDashSdkLib.awsDashSdkLibStrings.UDP | java.lang.String
-  type ProvisionedCapacityStatus = awsDashSdkLib.awsDashSdkLibStrings.disabled | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.provisioned | awsDashSdkLib.awsDashSdkLibStrings.`pre-warmed` | java.lang.String
+  type ProtocolEnum = awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.HTTPS | awsDashSdkLib.awsDashSdkLibStrings.TCP | java.lang.String
   type RedirectActionHost = java.lang.String
   type RedirectActionPath = java.lang.String
   type RedirectActionPort = java.lang.String
@@ -2820,7 +2691,6 @@ object ELBv2Ns extends js.Object {
   type SslProtocol = java.lang.String
   type SslProtocols = js.Array[SslProtocol]
   type StateReason = java.lang.String
-  type StaticIp = scala.Boolean
   type String = java.lang.String
   type StringValue = java.lang.String
   type SubnetId = java.lang.String

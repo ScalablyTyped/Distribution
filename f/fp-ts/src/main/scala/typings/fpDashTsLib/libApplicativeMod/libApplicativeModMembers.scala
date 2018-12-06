@@ -15,8 +15,9 @@ object libApplicativeModMembers extends js.Object {
   def getApplicativeComposition[F, G](F: Applicative[F], G: Applicative[G]): ApplicativeComposition[F, G] = js.native
   def getApplicativeComposition[F, G /* <: fpDashTsLib.libHKTMod.URIS */](F: Applicative[F], G: Applicative1[G]): ApplicativeComposition[F, G] = js.native
   def getApplicativeComposition[F, G /* <: fpDashTsLib.libHKTMod.URIS2 */](F: Applicative[F], G: Applicative2[G]): ApplicativeComposition[F, G] = js.native
-  def getApplicativeComposition[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, L](F: Applicative1[F], G: Applicative2C[G, L]): ApplicativeComposition12C[F, G, L] = js.native
-  def getApplicativeComposition[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, L](F: Applicative2[F], G: Applicative2C[G, L]): ApplicativeComposition22C[F, G, L] = js.native
+  def getApplicativeComposition[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, LG](F: Applicative1[F], G: Applicative2C[G, LG]): ApplicativeComposition12C[F, G, LG] = js.native
+  def getApplicativeComposition[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, LG](F: Applicative2[F], G: Applicative2C[G, LG]): ApplicativeComposition22C[F, G, LG] = js.native
+  def getApplicativeComposition[F /* <: fpDashTsLib.libHKTMod.URIS3 */, G /* <: fpDashTsLib.libHKTMod.URIS */, UF, LF](F: Applicative3C[F, UF, LF], G: Applicative1[G]): ApplicativeComposition3C1[F, G, UF, LF] = js.native
   def getMonoid[F /* <: fpDashTsLib.libHKTMod.URIS */, A](F: Applicative1[F], M: fpDashTsLib.libMonoidMod.Monoid[A]): js.Function0[fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type[F, A]]] = js.native
   def getMonoid[F /* <: fpDashTsLib.libHKTMod.URIS2 */, A](F: Applicative2[F], M: fpDashTsLib.libMonoidMod.Monoid[A]): js.Function0[fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type2[F, _, A]]] = js.native
   def getMonoid[F /* <: fpDashTsLib.libHKTMod.URIS3 */, A](F: Applicative3[F], M: fpDashTsLib.libMonoidMod.Monoid[A]): js.Function0[fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libHKTMod.Type3[F, _, _, A]]] = js.native

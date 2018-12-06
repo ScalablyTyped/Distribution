@@ -43,6 +43,10 @@ object libFunctorModMembers extends js.Object {
   def getFunctorComposition[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS */](F: Functor2[F], G: Functor1[G]): FunctorComposition21[F, G] = js.native
   def getFunctorComposition[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS2 */](F: Functor2[F], G: Functor2[G]): FunctorComposition22[F, G] = js.native
   def getFunctorComposition[F, G](F: Functor[F], G: Functor[G]): FunctorComposition[F, G] = js.native
+  def getFunctorComposition[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, LG](F: Functor1[F], G: Functor2C[G, LG]): FunctorComposition12C[F, G, LG] = js.native
+  def getFunctorComposition[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS */, LF](F: Functor2C[F, LF], G: Functor1[G]): FunctorComposition2C1[F, G, LF] = js.native
+  def getFunctorComposition[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, LG](F: Functor2[F], G: Functor2C[G, LG]): FunctorComposition22C[F, G, LG] = js.native
+  def getFunctorComposition[F /* <: fpDashTsLib.libHKTMod.URIS3 */, G /* <: fpDashTsLib.libHKTMod.URIS */, UF, LF](F: Functor3C[F, UF, LF], G: Functor1[G]): FunctorComposition3C1[F, G, UF, LF] = js.native
   def lift[F](F: Functor[F]): js.Function1[
     /* f */ js.Function1[/* a */ js.Any, _], 
     js.Function1[/* fa */ fpDashTsLib.libHKTMod.HKT[F, _], fpDashTsLib.libHKTMod.HKT[F, _]]

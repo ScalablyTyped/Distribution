@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object arrayNs extends js.Object {
   val URI: /* Array */ java.lang.String = js.native
-  val array: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libAlternativeMod.Alternative1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libPlusMod.Plus1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libExtendMod.Extend1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libCompactableMod.Compactable1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libFilterableMod.Filterable1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libWitherableMod.Witherable1[fpDashTsLib.libArrayMod.URI] = js.native
+  val array: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libUnfoldableMod.Unfoldable1[fpDashTsLib.libArrayMod.URI] with (fpDashTsLib.libTraversableWithIndexMod.TraversableWithIndex1[fpDashTsLib.libArrayMod.URI, scala.Double]) with fpDashTsLib.libAlternativeMod.Alternative1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libPlusMod.Plus1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libExtendMod.Extend1[fpDashTsLib.libArrayMod.URI] with fpDashTsLib.libCompactableMod.Compactable1[fpDashTsLib.libArrayMod.URI] with (fpDashTsLib.libFilterableWithIndexMod.FilterableWithIndex1[fpDashTsLib.libArrayMod.URI, scala.Double]) with fpDashTsLib.libWitherableMod.Witherable1[fpDashTsLib.libArrayMod.URI] with (fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex1[fpDashTsLib.libArrayMod.URI, scala.Double]) with (fpDashTsLib.libFoldableWithIndexMod.FoldableWithIndex1[fpDashTsLib.libArrayMod.URI, scala.Double]) = js.native
   val catOptions: js.Function1[
     /* as */ fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libOptionMod.Option[js.Any]], 
     fpDashTsLib.libArrayMod.Global.Array[js.Any]
@@ -40,6 +40,14 @@ object arrayNs extends js.Object {
     /* i */ scala.Double, 
     /* as */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
     fpDashTsLib.libOptionMod.Option[fpDashTsLib.libArrayMod.Global.Array[js.Any]]
+  ] = js.native
+  val difference: js.Function1[
+    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
+    js.Function2[
+      /* xs */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
+      /* ys */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
+      fpDashTsLib.libArrayMod.Global.Array[js.Any]
+    ]
   ] = js.native
   val drop: js.Function2[
     /* n */ scala.Double, 
@@ -122,6 +130,14 @@ object arrayNs extends js.Object {
     /* a */ js.Any, 
     /* as */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
     fpDashTsLib.libOptionMod.Option[fpDashTsLib.libArrayMod.Global.Array[js.Any]]
+  ] = js.native
+  val intersection: js.Function1[
+    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
+    js.Function2[
+      /* xs */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
+      /* ys */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
+      fpDashTsLib.libArrayMod.Global.Array[js.Any]
+    ]
   ] = js.native
   val isEmpty: js.Function1[/* as */ fpDashTsLib.libArrayMod.Global.Array[js.Any], scala.Boolean] = js.native
   val isOutOfBound: js.Function2[
@@ -246,6 +262,14 @@ object arrayNs extends js.Object {
     /* as */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
     fpDashTsLib.libArrayMod.Global.Array[js.Any]
   ] = js.native
+  val union: js.Function1[
+    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
+    js.Function2[
+      /* xs */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
+      /* ys */ fpDashTsLib.libArrayMod.Global.Array[js.Any], 
+      fpDashTsLib.libArrayMod.Global.Array[js.Any]
+    ]
+  ] = js.native
   val uniq: js.Function1[
     /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     js.Function1[
@@ -334,6 +358,9 @@ object arrayNs extends js.Object {
     as: fpDashTsLib.libArrayMod.Global.Array[A],
     predicate: fpDashTsLib.libFunctionMod.Refinement[A, B]
   ): fpDashTsLib.libOptionMod.Option[B] = js.native
+  def partition[A](fa: fpDashTsLib.libArrayMod.Global.Array[A], p: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libArrayMod.Global.Array[A], fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
+  @JSName("partition")
+  def partition_ABA[A, B /* <: A */](fa: fpDashTsLib.libArrayMod.Global.Array[A], p: fpDashTsLib.libFunctionMod.Refinement[A, B]): fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libArrayMod.Global.Array[A], fpDashTsLib.libArrayMod.Global.Array[B]] = js.native
   def span[A](as: fpDashTsLib.libArrayMod.Global.Array[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.Anon_InitRest[A] = js.native
   @JSName("span")
   def span_ABAAnon_Init[A, B /* <: A */](

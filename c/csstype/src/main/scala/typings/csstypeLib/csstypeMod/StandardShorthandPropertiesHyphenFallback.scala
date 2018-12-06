@@ -12,9 +12,9 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
      *
      * **Initial value**: There is no practical initial value for it.
      *
-     * | Chrome | Firefox | Safari | Edge | IE  |
-     * | :----: | :-----: | :----: | :--: | :-: |
-     * | **37** | **27**  |   No   | n/a  | No  |
+     * | Chrome | Firefox | Safari  | Edge | IE  |
+     * | :----: | :-----: | :-----: | :--: | :-: |
+     * | **37** | **27**  | **9.1** |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/all
      */
@@ -55,7 +55,7 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * |   No   | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end
      */
@@ -65,7 +65,7 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * |   No   | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start
      */
@@ -355,28 +355,7 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
   var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.undefined
   /** The **`mask-border`** CSS property lets you create a mask along the edge of an element's border. */
   var `mask-border`: js.UndefOr[MaskBorderProperty | js.Array[MaskBorderProperty]] = js.undefined
-  /**
-     * The **`offset`** CSS property is a shorthand property for animating an element along a defined path.
-     *
-     * |    Chrome     | Firefox | Safari | Edge | IE  |
-     * | :-----------: | :-----: | :----: | :--: | :-: |
-     * |    **55**     |   n/a   |  n/a   | n/a  | n/a |
-     * | 46 _(motion)_ |         |        |      |     |
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/offset
-     */
-  var motion: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.undefined
-  /**
-     * The **`offset`** CSS property is a shorthand property for animating an element along a defined path.
-     *
-     * |    Chrome     | Firefox | Safari | Edge | IE  |
-     * | :-----------: | :-----: | :----: | :--: | :-: |
-     * |    **55**     |   n/a   |  n/a   | n/a  | n/a |
-     * | 46 _(motion)_ |         |        |      |     |
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/offset
-     */
-  var offset: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.undefined
+  var motion: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
   /**
      * The **`outline`** CSS property is a shorthand for setting various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
      *

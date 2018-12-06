@@ -1,32 +1,32 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "webdriver-manager"
-version := "12.1.0-bbec2b"
+version := "12.1.0-cc28e3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "adm-zip" % "v0.4.4-dt-20180910Z-76d0ca",
-  "com.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-8b01ce",
-  "com.scalablytyped" %%% "caseless" % "0.12-dt-20180910Z-2bf221",
-  "com.scalablytyped" %%% "chalk" % "2.4.1-557431",
-  "com.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-20e4ae",
-  "com.scalablytyped" %%% "del" % "3.0-dt-20180910Z-17986e",
-  "com.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-450016",
-  "com.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-52b360",
-  "com.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-b89aff",
-  "com.scalablytyped" %%% "ini" % "v1.3.3-dt-20181129Z-b9b7a3",
-  "com.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-5ec0b9",
-  "com.scalablytyped" %%% "minimist" % "1.2.0-dt-20180910Z-a475cc",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "q" % "1.5-dt-20181206Z-726082",
-  "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-67a93f",
-  "com.scalablytyped" %%% "rimraf" % "2.0-dt-20180910Z-40a17a",
-  "com.scalablytyped" %%% "semver" % "5.5-dt-20180910Z-b64c1e",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-a10740",
-  "com.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181104Z-65a037",
-  "com.scalablytyped" %%% "xml2js" % "0.4-dt-20180910Z-7c981e",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "adm-zip" % "v0.4.4-dt-20180910Z-bd763a",
+  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181018Z-c75411",
+  "org.scalablytyped" %%% "caseless" % "0.12-dt-20180910Z-88463f",
+  "org.scalablytyped" %%% "chalk" % "2.4.1-668e15",
+  "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-2e1e39",
+  "org.scalablytyped" %%% "del" % "3.0-dt-20180910Z-b079ad",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-7b7662",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181120Z-961b6c",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180927Z-63ba70",
+  "org.scalablytyped" %%% "ini" % "v1.3.3-dt-20181129Z-9253c2",
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-4563df",
+  "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180910Z-231fe7",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
+  "org.scalablytyped" %%% "q" % "1.5-dt-20181206Z-1f4c94",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20181105Z-2b1e0f",
+  "org.scalablytyped" %%% "rimraf" % "2.0-dt-20180910Z-017a29",
+  "org.scalablytyped" %%% "semver" % "5.5-dt-20180910Z-c36488",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
+  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180910Z-b77f09",
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181104Z-171ce9",
+  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180910Z-766ebf")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

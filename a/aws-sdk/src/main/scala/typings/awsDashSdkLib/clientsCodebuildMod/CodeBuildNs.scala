@@ -376,6 +376,22 @@ object CodeBuildNs extends js.Object {
   trait DeleteProjectOutput extends js.Object
   
   
+  trait DeleteSourceCredentialsInput extends js.Object {
+    /**
+         *  The Amazon Resource Name (ARN) of the token.
+         */
+    var arn: NonEmptyString
+  }
+  
+  
+  trait DeleteSourceCredentialsOutput extends js.Object {
+    /**
+         *  The Amazon Resource Name (ARN) of the token. 
+         */
+    var arn: js.UndefOr[NonEmptyString] = js.undefined
+  }
+  
+  
   trait DeleteWebhookInput extends js.Object {
     /**
          * The name of the AWS CodeBuild project.
@@ -440,6 +456,34 @@ object CodeBuildNs extends js.Object {
          * The value of the environment variable.  We strongly discourage the use of environment variables to store sensitive values, especially AWS secret key IDs and secret access keys. Environment variables can be displayed in plain text using the AWS CodeBuild console and the AWS Command Line Interface (AWS CLI). 
          */
     var value: java.lang.String
+  }
+  
+  
+  trait ImportSourceCredentialsInput extends js.Object {
+    /**
+         *  The type of authentication used to connect to a GitHub, GitHub Enterprise, or Bitbucket repository. An OAUTH connection is not supported by the API and must be created using the AWS CodeBuild console. 
+         */
+    var authType: AuthType
+    /**
+         *  The source provider used for this project. 
+         */
+    var serverType: ServerType
+    /**
+         *  For GitHub or GitHub Enterprise, this is the personal access token. For Bitbucket, this is the app password. 
+         */
+    var token: SensitiveNonEmptyString
+    /**
+         *  The Bitbucket username when the authType is BASIC_AUTH. This parameter is not valid for other types of source providers or connections. 
+         */
+    var username: js.UndefOr[NonEmptyString] = js.undefined
+  }
+  
+  
+  trait ImportSourceCredentialsOutput extends js.Object {
+    /**
+         *  The Amazon Resource Name (ARN) of the token. 
+         */
+    var arn: js.UndefOr[NonEmptyString] = js.undefined
   }
   
   
@@ -542,6 +586,17 @@ object CodeBuildNs extends js.Object {
          * The list of build project names, with each build project name representing a single build project.
          */
     var projects: js.UndefOr[ProjectNames] = js.undefined
+  }
+  
+  
+  trait ListSourceCredentialsInput extends js.Object
+  
+  
+  trait ListSourceCredentialsOutput extends js.Object {
+    /**
+         *  A list of SourceCredentialsInfo objects. Each SourceCredentialsInfo object includes the authentication type, token ARN, and type of source provider for one set of credentials. 
+         */
+    var sourceCredentialsInfos: js.UndefOr[SourceCredentialsInfos] = js.undefined
   }
   
   
@@ -787,7 +842,7 @@ object CodeBuildNs extends js.Object {
   
   trait ProjectSource extends js.Object {
     /**
-         * Information about the authorization settings for AWS CodeBuild to access the source code to be built. This information is for the AWS CodeBuild console's use only. Your code should not get or set this information directly (unless the build project's source type value is BITBUCKET or GITHUB).
+         * Information about the authorization settings for AWS CodeBuild to access the source code to be built. This information is for the AWS CodeBuild console's use only. Your code should not get or set this information directly.
          */
     var auth: js.UndefOr[SourceAuth] = js.undefined
     /**
@@ -851,9 +906,25 @@ object CodeBuildNs extends js.Object {
          */
     var resource: js.UndefOr[java.lang.String] = js.undefined
     /**
-         * The authorization type to use. The only valid value is OAUTH, which represents the OAuth authorization type.
+         *   This data type is deprecated and is no longer accurate or used.   The authorization type to use. The only valid value is OAUTH, which represents the OAuth authorization type.
          */
     var `type`: SourceAuthType
+  }
+  
+  
+  trait SourceCredentialsInfo extends js.Object {
+    /**
+         *  The Amazon Resource Name (ARN) of the token. 
+         */
+    var arn: js.UndefOr[NonEmptyString] = js.undefined
+    /**
+         *  The type of authentication used by the credentials. Valid options are OAUTH, BASIC_AUTH, or PERSONAL_ACCESS_TOKEN. 
+         */
+    var authType: js.UndefOr[AuthType] = js.undefined
+    /**
+         *  The type of source provider. The valid options are GITHUB, GITHUB_ENTERPRISE, or BITBUCKET. 
+         */
+    var serverType: js.UndefOr[ServerType] = js.undefined
   }
   
   
@@ -1176,6 +1247,35 @@ object CodeBuildNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteProjectOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       *  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials. 
+       */
+    def deleteSourceCredentials(): awsDashSdkLib.libRequestMod.Request[DeleteSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials. 
+       */
+    def deleteSourceCredentials(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteSourceCredentialsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials. 
+       */
+    def deleteSourceCredentials(params: DeleteSourceCredentialsInput): awsDashSdkLib.libRequestMod.Request[DeleteSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials. 
+       */
+    def deleteSourceCredentials(
+      params: DeleteSourceCredentialsInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteSourceCredentialsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
        */
     def deleteWebhook(): awsDashSdkLib.libRequestMod.Request[DeleteWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1204,6 +1304,35 @@ object CodeBuildNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteWebhookOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
+       */
+    def importSourceCredentials(): awsDashSdkLib.libRequestMod.Request[ImportSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
+       */
+    def importSourceCredentials(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ImportSourceCredentialsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ImportSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
+       */
+    def importSourceCredentials(params: ImportSourceCredentialsInput): awsDashSdkLib.libRequestMod.Request[ImportSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
+       */
+    def importSourceCredentials(
+      params: ImportSourceCredentialsInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ImportSourceCredentialsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ImportSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Resets the cache for a project.
        */
@@ -1349,6 +1478,35 @@ object CodeBuildNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListProjectsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Returns a list of SourceCredentialsInfo objects. 
+       */
+    def listSourceCredentials(): awsDashSdkLib.libRequestMod.Request[ListSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Returns a list of SourceCredentialsInfo objects. 
+       */
+    def listSourceCredentials(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListSourceCredentialsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Returns a list of SourceCredentialsInfo objects. 
+       */
+    def listSourceCredentials(params: ListSourceCredentialsInput): awsDashSdkLib.libRequestMod.Request[ListSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       *  Returns a list of SourceCredentialsInfo objects. 
+       */
+    def listSourceCredentials(
+      params: ListSourceCredentialsInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListSourceCredentialsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListSourceCredentialsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Starts running a build.
        */
@@ -1603,6 +1761,7 @@ object CodeBuildNs extends js.Object {
   type ArtifactNamespace = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.BUILD_ID | java.lang.String
   type ArtifactPackaging = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.ZIP | java.lang.String
   type ArtifactsType = awsDashSdkLib.awsDashSdkLibStrings.CODEPIPELINE | awsDashSdkLib.awsDashSdkLibStrings.S3 | awsDashSdkLib.awsDashSdkLibStrings.NO_ARTIFACTS | java.lang.String
+  type AuthType = awsDashSdkLib.awsDashSdkLibStrings.OAUTH | awsDashSdkLib.awsDashSdkLibStrings.BASIC_AUTH | awsDashSdkLib.awsDashSdkLibStrings.PERSONAL_ACCESS_TOKEN | java.lang.String
   type Boolean = scala.Boolean
   type BuildArtifactsList = js.Array[BuildArtifacts]
   type BuildIds = js.Array[NonEmptyString]
@@ -1636,8 +1795,11 @@ object CodeBuildNs extends js.Object {
   type ProjectSources = js.Array[ProjectSource]
   type Projects = js.Array[Project]
   type SecurityGroupIds = js.Array[NonEmptyString]
+  type SensitiveNonEmptyString = java.lang.String
+  type ServerType = awsDashSdkLib.awsDashSdkLibStrings.GITHUB | awsDashSdkLib.awsDashSdkLibStrings.BITBUCKET | awsDashSdkLib.awsDashSdkLibStrings.GITHUB_ENTERPRISE | java.lang.String
   type SortOrderType = awsDashSdkLib.awsDashSdkLibStrings.ASCENDING | awsDashSdkLib.awsDashSdkLibStrings.DESCENDING | java.lang.String
   type SourceAuthType = awsDashSdkLib.awsDashSdkLibStrings.OAUTH | java.lang.String
+  type SourceCredentialsInfos = js.Array[SourceCredentialsInfo]
   type SourceType = awsDashSdkLib.awsDashSdkLibStrings.CODECOMMIT | awsDashSdkLib.awsDashSdkLibStrings.CODEPIPELINE | awsDashSdkLib.awsDashSdkLibStrings.GITHUB | awsDashSdkLib.awsDashSdkLibStrings.S3 | awsDashSdkLib.awsDashSdkLibStrings.BITBUCKET | awsDashSdkLib.awsDashSdkLibStrings.GITHUB_ENTERPRISE | awsDashSdkLib.awsDashSdkLibStrings.NO_SOURCE | java.lang.String
   type StatusType = awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.FAULT | awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.STOPPED | java.lang.String
   type String = java.lang.String

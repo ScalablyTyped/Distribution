@@ -5,7 +5,7 @@
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(String))] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Args) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(Enumerable) / TsMemberFunction(ofType) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [debug] PhaseRunner.scala:78 Success [id => multiplexjs, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(multiplexjs) [id => multiplexjs, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing multiplexjs [id => multiplexjs, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => multiplexjs, phase => scala.js] 
 [error] Lookup.scala:17 name clash between defined and inherited member:
 def contains(value: typings.multiplexjsLib.multiplexNs.Grouping[TKey,TElement]): Boolean in trait Enumerable and

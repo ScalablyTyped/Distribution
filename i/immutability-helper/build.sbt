@@ -1,13 +1,13 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "immutability-helper"
-version := "2.8.1-9d3305"
+version := "2.8.1-2aae4c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "invariant" % "2.2.0-dt-20180910Z-118bf2",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180910Z-cbed6e",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

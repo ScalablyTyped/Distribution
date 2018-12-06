@@ -1,13 +1,13 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "marker-animate-unobtrusive"
-version := "0.2.8-dt-20180910Z-64f02d"
+version := "0.2.8-dt-20180910Z-6789cb"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "googlemaps" % "3.30-dt-20181027Z-18ab7e",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "googlemaps" % "3.30-dt-20181027Z-79cd07",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

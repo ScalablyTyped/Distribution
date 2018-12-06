@@ -4,7 +4,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(x-ray)) [id => x-ray, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(x-ray) [id => x-ray, phase => typescript] 
 [debug] PhaseRunner.scala:78 Success [id => x-ray, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(x-ray) [id => x-ray, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing x-ray [id => x-ray, phase => scala.js] 
 [info ] RemoveDuplicateInheritance.scala:55 Dropped parents QualifiedName(List(Name(ScalablyTyped), Name(runtime), Name(NumberDictionary))) at Name(xDashRayLib) / Name(xDashRayMod) / Name(XRayNs) / Name(SelectorArray) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(ScalablyTyped), Name(runtime), Name(NumberDictionary))),List(),Comments(1))) [id => x-ray, phase => scala.js, this => Name(xDashRayLib) / Name(xDashRayMod) / Name(XRayNs) / Name(SelectorArray)] 
 [debug] PhaseRunner.scala:78 Success [id => x-ray, phase => scala.js] 
 [error] package.scala:13 illegal cyclic reference involving type Selector,   type ScalarSelector = java.lang.String | InstanceInvocation | ScalablyTyped.runtime.StringDictionary[Selector] [id => x-ray, phase => build] 

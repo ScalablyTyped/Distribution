@@ -1,18 +1,18 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "mobx-react-devtools"
-version := "6.0.3-0dcafd"
+version := "6.0.3-38caf4"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
-  "com.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-05e35b",
-  "com.scalablytyped" %%% "mobx" % "5.6.0-777693",
-  "com.scalablytyped" %%% "mobx-react" % "5.4.2-e78f6b",
-  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181203Z-843f9f",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-46b7b4",
+  "org.scalablytyped" %%% "mobx" % "5.7.0-26bb85",
+  "org.scalablytyped" %%% "mobx-react" % "5.4.2-df7596",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-dcbd7c",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-65cffa",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -13,8 +13,8 @@ trait Foldable2vComposition12[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpD
     /* f */ js.Function1[/* a */ js.Any, M], 
     M
   ]
-  def foldr[L, A, B](
-    fa: fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, L, A]],
+  def foldr[LG, A, B](
+    fa: fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type2[G, LG, A]],
     b: B,
     f: js.Function2[/* a */ A, /* b */ B, B]
   ): B

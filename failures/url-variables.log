@@ -3,7 +3,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(url-variables)) [id => url-variables, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(url-variables) [id => url-variables, phase => typescript] 
 [debug] PhaseRunner.scala:78 Success [id => url-variables, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(url-variables) [id => url-variables, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing url-variables [id => url-variables, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => url-variables, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [tstl => Compilation failed] [id => url-variables, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [tstl => Compilation failed] [id => url-variables, phase => build] 

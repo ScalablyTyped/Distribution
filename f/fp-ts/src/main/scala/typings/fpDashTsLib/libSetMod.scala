@@ -16,7 +16,15 @@ object libSetMod extends js.Object {
       stdLib.Set[js.Any]
     ]
   ] = js.native
+  val compact: js.Function1[
+    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
+    js.Function1[/* fa */ stdLib.Set[fpDashTsLib.libOptionMod.Option[js.Any]], stdLib.Set[js.Any]]
+  ] = js.native
   val difference: js.Function1[
+    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
+    js.Function2[/* x */ stdLib.Set[js.Any], /* y */ stdLib.Set[js.Any], stdLib.Set[js.Any]]
+  ] = js.native
+  val difference2v: js.Function1[
     /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     js.Function2[/* x */ stdLib.Set[js.Any], /* y */ stdLib.Set[js.Any], stdLib.Set[js.Any]]
   ] = js.native
@@ -24,6 +32,14 @@ object libSetMod extends js.Object {
     /* x */ stdLib.Set[js.Any], 
     /* predicate */ fpDashTsLib.libFunctionMod.Predicate[js.Any], 
     scala.Boolean
+  ] = js.native
+  val filterMap: js.Function1[
+    /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
+    js.Function2[
+      /* fa */ stdLib.Set[js.Any], 
+      /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
+      stdLib.Set[js.Any]
+    ]
   ] = js.native
   val fromArray: js.Function1[
     /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
@@ -82,6 +98,14 @@ object libSetMod extends js.Object {
   val remove: js.Function1[
     /* S */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
     js.Function2[/* a */ js.Any, /* x */ stdLib.Set[js.Any], stdLib.Set[js.Any]]
+  ] = js.native
+  val separate: js.Function2[
+    /* SL */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
+    /* SR */ fpDashTsLib.libSetoidMod.Setoid[js.Any], 
+    js.Function1[
+      /* fa */ stdLib.Set[fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
+      fpDashTsLib.libCompactableMod.Separated[stdLib.Set[js.Any], stdLib.Set[js.Any]]
+    ]
   ] = js.native
   val singleton: js.Function1[/* a */ js.Any, stdLib.Set[js.Any]] = js.native
   val some: js.Function2[

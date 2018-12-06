@@ -4,7 +4,7 @@
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(theo) [id => theo, phase => typescript] 
 [info ] ExpandKeyOfTypeParams.scala:38 Expanding 4 members for TsIdentSimple(get) [id => theo, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(theo) / TsDeclInterface(ImmutableStyleMap))] 
 [debug] PhaseRunner.scala:78 Success [id => theo, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(theo) [id => theo, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing theo [id => theo, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => theo, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [immutable => Compilation failed] [id => theo, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [immutable => Compilation failed] [id => theo, phase => build] 

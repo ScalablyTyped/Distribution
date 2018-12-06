@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object preactModMembers extends js.Object {
   var options: preactLib.Anon_DebounceRendering = js.native
-  def cloneElement(element: preactLib.preactMod.Global.JSXNs.Element, props: js.Any): preactLib.preactMod.Global.JSXNs.Element = js.native
+  def cloneElement(
+    element: preactLib.preactMod.Global.JSXNs.Element,
+    props: js.Any,
+    children: preactLib.preactMod.preactNs.ComponentChildren*
+  ): preactLib.preactMod.Global.JSXNs.Element = js.native
   def h(
     node: java.lang.String,
     params: preactLib.preactMod.Global.JSXNs.HTMLAttributes with preactLib.preactMod.Global.JSXNs.SVGAttributes with ((stdLib.Record[java.lang.String, _]) | scala.Null),

@@ -1,0 +1,6 @@
+[debug] PhaseRunner.scala:82 Failure, [json_ml => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/json_ml/index.d.ts): Parse error at 9.38 '']'' expected but '...' found] [id => json_ml, phase => typescript] 
+[warn ] PhaseRunner.scala:64 Failed because of, [json_ml => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/json_ml/index.d.ts): Parse error at 9.38 '']'' expected but '...' found] [id => json_ml, phase => typescript] 
+[debug] PhaseRunner.scala:82 Failure, [json_ml => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/json_ml/index.d.ts): Parse error at 9.38 '']'' expected but '...' found] [id => json_ml, phase => typescript] 
+[debug] PhaseRunner.scala:82 Failure, [json_ml => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/json_ml/index.d.ts): Parse error at 9.38 '']'' expected but '...' found] [id => json_ml, phase => scala.js] 
+[debug] PhaseRunner.scala:82 Failure, [json_ml => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/json_ml/index.d.ts): Parse error at 9.38 '']'' expected but '...' found] [id => json_ml, phase => build] 
+[debug] PhaseRunner.scala:82 Failure, [json_ml => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/json_ml/index.d.ts): Parse error at 9.38 '']'' expected but '...' found] [id => json_ml, phase => publish] 

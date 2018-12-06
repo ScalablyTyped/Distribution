@@ -3,7 +3,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(immutable)) [id => immutable, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(immutable) [id => immutable, phase => typescript] 
 [debug] PhaseRunner.scala:78 Success [id => immutable, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(immutable) [id => immutable, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing immutable [id => immutable, phase => scala.js] 
 [info ] ImportType.scala:160 Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TProps))),List()),Left(TsIdentSimple(K))) [id => immutable, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(immutable) / TsDeclFunction(set) / TsFunParam() / TsTypeLookup())] 
 [info ] ImportType.scala:160 Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(C))),List()),Left(TsIdentSimple(K))) [id => immutable, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(immutable) / TsDeclFunction(set) / TsFunParam() / TsTypeLookup())] 
 [info ] ImportType.scala:160 Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TProps))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(TProps))),List())))) [id => immutable, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(immutable) / TsDeclInterface(Record) / TsMemberIndex() / TsTypeFunction() / TsTypeRef() / TsTypeTuple() / TsTypeLookup())] 

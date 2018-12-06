@@ -68,12 +68,6 @@ trait VendorLonghandPropertiesHyphenFallback[TLength] extends js.Object {
      */
   var `-moz-backface-visibility`: js.UndefOr[BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]] = js.undefined
   /**
-     * The **`-moz-binding`** CSS property is used by Mozilla\-based applications to attach an XBL binding to a DOM element.
-     *
-     * **Initial value**: `none`
-     */
-  var `-moz-binding`: js.UndefOr[MozBindingProperty | js.Array[MozBindingProperty]] = js.undefined
-  /**
      * In Mozilla applications like Firefox, the **`-moz-border-bottom-colors`** CSS property sets a list of colors for the bottom border.
      *
      * **Initial value**: `none`
@@ -312,12 +306,6 @@ trait VendorLonghandPropertiesHyphenFallback[TLength] extends js.Object {
      */
   var `-moz-tab-size`: js.UndefOr[TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]]] = js.undefined
   /**
-     * The **`-moz-text-blink`** non\-standard Mozilla CSS extension specifies the blink mode.
-     *
-     * **Initial value**: `none`
-     */
-  var `-moz-text-blink`: js.UndefOr[MozTextBlinkProperty | js.Array[MozTextBlinkProperty]] = js.undefined
-  /**
      * The **`text-size-adjust`** CSS property controls the text inflation algorithm used on some smartphones and tablets. Other browsers will ignore this property.
      *
      * **Initial value**: `auto` for smartphone browsers supporting inflation, `none` in other cases (and then not modifiable).
@@ -365,12 +353,6 @@ trait VendorLonghandPropertiesHyphenFallback[TLength] extends js.Object {
      * **Initial value**: `none`
      */
   var `-moz-user-focus`: js.UndefOr[MozUserFocusProperty | js.Array[MozUserFocusProperty]] = js.undefined
-  /**
-     * In Mozilla applications, **`-moz-user-input`** determines if an element will accept user input.
-     *
-     * **Initial value**: `auto`
-     */
-  var `-moz-user-input`: js.UndefOr[MozUserInputProperty | js.Array[MozUserInputProperty]] = js.undefined
   /**
      * The **`-moz-user-modify`** property has no effect. It was originally planned to determine whether or not the content of an element can be edited by a user.
      *
@@ -712,12 +694,6 @@ trait VendorLonghandPropertiesHyphenFallback[TLength] extends js.Object {
      */
   var `-ms-writing-mode`: js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]] = js.undefined
   /**
-     * The **`background-size`** CSS property specifies the size of the element's background image. The image can be left to its natural size, stretched to a new size, or constrained to fit the available space while preserving its intrinsic proportions.
-     *
-     * **Initial value**: `auto auto`
-     */
-  var `-o-background-size`: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.undefined
-  /**
      * The **`object-fit`** CSS property specifies how the contents of a replaced element, such as an `<img>` or `<video>`, should be resized to fit its container.
      *
      * **Initial value**: `fill`
@@ -831,6 +807,18 @@ trait VendorLonghandPropertiesHyphenFallback[TLength] extends js.Object {
      * **Initial value**: `visible`
      */
   var `-webkit-backface-visibility`: js.UndefOr[BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]] = js.undefined
+  /**
+     * The **`background-clip`** CSS property specifies if an element's background, whether a `<color>` or an `<image>`, extends underneath its border.
+     *
+     * **Initial value**: `border-box`
+     */
+  var `-webkit-background-clip`: js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]] = js.undefined
+  /**
+     * The **`background-origin`** CSS property sets the _background positioning area_, i.e., the origin position of an image specified using the `background-image` property.
+     *
+     * **Initial value**: `padding-box`
+     */
+  var `-webkit-background-origin`: js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]] = js.undefined
   /**
      * The **`background-size`** CSS property specifies the size of the element's background image. The image can be left to its natural size, stretched to a new size, or constrained to fit the available space while preserving its intrinsic proportions.
      *

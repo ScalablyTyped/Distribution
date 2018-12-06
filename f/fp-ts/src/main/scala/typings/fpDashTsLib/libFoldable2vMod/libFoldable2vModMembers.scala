@@ -85,6 +85,10 @@ object libFoldable2vModMembers extends js.Object {
   def getFoldableComposition[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS */](F: Foldable2v2[F], G: Foldable2v1[G]): Foldable2vComposition21[F, G] = js.native
   def getFoldableComposition[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS2 */](F: Foldable2v2[F], G: Foldable2v2[G]): Foldable2vComposition22[F, G] = js.native
   def getFoldableComposition[F, G](F: Foldable2v[F], G: Foldable2v[G]): Foldable2vComposition[F, G] = js.native
+  def getFoldableComposition[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, LG](F: Foldable2v1[F], G: Foldable2v2C[G, LG]): Foldable2vComposition12C[F, G, LG] = js.native
+  def getFoldableComposition[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS */, LF](F: Foldable2v2C[F, LF], G: Foldable2v1[G]): Foldable2vComposition2C1[F, G, LF] = js.native
+  def getFoldableComposition[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS2 */, LG](F: Foldable2v2[F], G: Foldable2v2C[G, LG]): Foldable2vComposition22C[F, G, LG] = js.native
+  def getFoldableComposition[F /* <: fpDashTsLib.libHKTMod.URIS3 */, G /* <: fpDashTsLib.libHKTMod.URIS */, UF, LF](F: Foldable2v3C[F, UF, LF], G: Foldable2v1[G]): Foldable2vComposition3C1[F, G, UF, LF] = js.native
   def intercalate[M, F](M: fpDashTsLib.libMonoidMod.Monoid[M], F: Foldable2v[F]): js.Function2[/* sep */ M, /* fm */ fpDashTsLib.libHKTMod.HKT[F, M], M] = js.native
   def intercalate[M, F /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonoidMod.Monoid[M], F: Foldable2v1[F]): js.Function2[/* sep */ M, /* fm */ fpDashTsLib.libHKTMod.Type[F, M], M] = js.native
   def intercalate[M, F /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonoidMod.Monoid[M], F: Foldable2v2[F]): js.Function2[/* sep */ M, /* fm */ fpDashTsLib.libHKTMod.Type2[F, _, M], M] = js.native

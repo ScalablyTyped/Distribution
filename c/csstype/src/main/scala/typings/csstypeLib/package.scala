@@ -12,8 +12,6 @@ package object csstypeLib {
   type BgSize[TLength] = TLength | csstypeLib.csstypeLibStrings.auto | csstypeLib.csstypeLibStrings.contain | csstypeLib.csstypeLibStrings.cover | java.lang.String
   type BlendMode = csstypeLib.csstypeLibStrings.color | csstypeLib.csstypeLibStrings.`color-burn` | csstypeLib.csstypeLibStrings.`color-dodge` | csstypeLib.csstypeLibStrings.darken | csstypeLib.csstypeLibStrings.difference | csstypeLib.csstypeLibStrings.exclusion | csstypeLib.csstypeLibStrings.`hard-light` | csstypeLib.csstypeLibStrings.hue | csstypeLib.csstypeLibStrings.lighten | csstypeLib.csstypeLibStrings.luminosity | csstypeLib.csstypeLibStrings.multiply | csstypeLib.csstypeLibStrings.normal | csstypeLib.csstypeLibStrings.overlay | csstypeLib.csstypeLibStrings.saturation | csstypeLib.csstypeLibStrings.screen | csstypeLib.csstypeLibStrings.`soft-light`
   type Box = csstypeLib.csstypeLibStrings.`border-box` | csstypeLib.csstypeLibStrings.`content-box` | csstypeLib.csstypeLibStrings.`padding-box`
-  type BrStyle = csstypeLib.csstypeLibStrings.dashed | csstypeLib.csstypeLibStrings.dotted | csstypeLib.csstypeLibStrings.double | csstypeLib.csstypeLibStrings.groove | csstypeLib.csstypeLibStrings.hidden | csstypeLib.csstypeLibStrings.inset | csstypeLib.csstypeLibStrings.none | csstypeLib.csstypeLibStrings.outset | csstypeLib.csstypeLibStrings.ridge | csstypeLib.csstypeLibStrings.solid
-  type BrWidth[TLength] = TLength | csstypeLib.csstypeLibStrings.medium | csstypeLib.csstypeLibStrings.thick | csstypeLib.csstypeLibStrings.thin
   type Color = NamedColor | DeprecatedSystemColor | csstypeLib.csstypeLibStrings.currentcolor | java.lang.String
   type CompositeStyle = csstypeLib.csstypeLibStrings.clear | csstypeLib.csstypeLibStrings.copy | csstypeLib.csstypeLibStrings.`destination-atop` | csstypeLib.csstypeLibStrings.`destination-in` | csstypeLib.csstypeLibStrings.`destination-out` | csstypeLib.csstypeLibStrings.`destination-over` | csstypeLib.csstypeLibStrings.`source-atop` | csstypeLib.csstypeLibStrings.`source-in` | csstypeLib.csstypeLibStrings.`source-out` | csstypeLib.csstypeLibStrings.`source-over` | csstypeLib.csstypeLibStrings.xor
   type CompositingOperator = csstypeLib.csstypeLibStrings.add | csstypeLib.csstypeLibStrings.exclude | csstypeLib.csstypeLibStrings.intersect | csstypeLib.csstypeLibStrings.subtract
@@ -46,6 +44,8 @@ package object csstypeLib {
   type GlobalsNumber = js.Any | scala.Double
   type GlobalsString = js.Any | java.lang.String
   type GridLine = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
+  type LineStyle = csstypeLib.csstypeLibStrings.dashed | csstypeLib.csstypeLibStrings.dotted | csstypeLib.csstypeLibStrings.double | csstypeLib.csstypeLibStrings.groove | csstypeLib.csstypeLibStrings.hidden | csstypeLib.csstypeLibStrings.inset | csstypeLib.csstypeLibStrings.none | csstypeLib.csstypeLibStrings.outset | csstypeLib.csstypeLibStrings.ridge | csstypeLib.csstypeLibStrings.solid
+  type LineWidth[TLength] = TLength | csstypeLib.csstypeLibStrings.medium | csstypeLib.csstypeLibStrings.thick | csstypeLib.csstypeLibStrings.thin
   type MaskLayer[TLength] = Position[TLength] | RepeatStyle | GeometryBox | CompositingOperator | MaskingMode | csstypeLib.csstypeLibStrings.`no-clip` | csstypeLib.csstypeLibStrings.none | java.lang.String
   type MaskingMode = csstypeLib.csstypeLibStrings.alpha | csstypeLib.csstypeLibStrings.luminance | csstypeLib.csstypeLibStrings.`match-source`
   type NamedColor = /* LimitUnionLength: was union type with length 149 */java.lang.String

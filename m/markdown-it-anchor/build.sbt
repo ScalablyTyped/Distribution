@@ -1,14 +1,14 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "markdown-it-anchor"
-version := "4.0-dt-20181104Z-d57665"
+version := "4.0-dt-20181104Z-603aeb"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "linkify-it" % "2.0.3-dt-20181018Z-e28e2d",
-  "com.scalablytyped" %%% "markdown-it" % "0.0-unknown-dt-20181104Z-7836bf",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "linkify-it" % "2.0.3-dt-20181018Z-d059d1",
+  "org.scalablytyped" %%% "markdown-it" % "0.0-unknown-dt-20181104Z-1898d6",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

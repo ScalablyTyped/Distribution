@@ -15,8 +15,6 @@ trait VendorShorthandPropertiesHyphenFallback[TLength] extends js.Object {
   var `-moz-column-rule`: js.UndefOr[ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]]] = js.undefined
   /** The **`columns`** CSS property sets the column width and column count of an element. */
   var `-moz-columns`: js.UndefOr[ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]] = js.undefined
-  /** In Mozilla applications like Firefox, the **`-moz-outline-radius`** CSS property can be used to give an element's `outline` rounded corners. */
-  var `-moz-outline-radius`: js.UndefOr[MozOutlineRadiusProperty[TLength] | js.Array[MozOutlineRadiusProperty[TLength]]] = js.undefined
   /** The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`. */
   var `-moz-transition`: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
   /** The **`-ms-content-zoom-limit`** CSS shorthand property is a Microsoft extension that specifies values for the `-ms-content-zoom-limit-min` and `-ms-content-zoom-limit-max` properties. */

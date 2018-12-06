@@ -23,12 +23,12 @@ class TaskEither[L, A] protected () extends js.Object {
        */
   def `ap_`[B, C](`this`: TaskEither[L, js.Function1[/* b */ B, C]], fb: TaskEither[L, B]): TaskEither[L, C] = js.native
   /**
-       * Combine two effectful actions, keeping only the result of the first
+       * Combine two (parallel) effectful actions, keeping only the result of the first
        * @since 1.6.0
        */
   def applyFirst[B](fb: TaskEither[L, B]): TaskEither[L, A] = js.native
   /**
-       * Combine two effectful actions, keeping only the result of the second
+       * Combine two (parallel) effectful actions, keeping only the result of the second
        * @since 1.5.0
        */
   def applySecond[B](fb: TaskEither[L, B]): TaskEither[L, B] = js.native
@@ -42,6 +42,16 @@ class TaskEither[L, A] protected () extends js.Object {
        */
   def bimap[V, B](f: js.Function1[/* l */ L, V], g: js.Function1[/* a */ A, B]): TaskEither[V, B] = js.native
   def chain[B](f: js.Function1[/* a */ A, TaskEither[L, B]]): TaskEither[L, B] = js.native
+  /**
+       * Combine two (sequential) effectful actions, keeping only the result of the first
+       * @since 1.12.0
+       */
+  def chainFirst[B](fb: TaskEither[L, B]): TaskEither[L, A] = js.native
+  /**
+       * Combine two (sequential) effectful actions, keeping only the result of the second
+       * @since 1.12.0
+       */
+  def chainSecond[B](fb: TaskEither[L, B]): TaskEither[L, B] = js.native
   def filterOrElse(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: L): TaskEither[L, A] = js.native
   def filterOrElseL(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: js.Function1[/* a */ A, L]): TaskEither[L, A] = js.native
   /**

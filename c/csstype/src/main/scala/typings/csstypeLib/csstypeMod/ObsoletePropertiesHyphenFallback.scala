@@ -72,6 +72,14 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
      */
   var `-khtml-box-pack`: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.undefined
   /**
+     * The **`background-clip`** CSS property specifies if an element's background, whether a `<color>` or an `<image>`, extends underneath its border.
+     *
+     * **Initial value**: `border-box`
+     *
+     * @deprecated
+     */
+  var `-moz-background-clip`: js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]] = js.undefined
+  /**
      * The **`box-decoration-break`** CSS property specifies how an element's fragments should be rendered when broken across multiple lines, columns, or pages.
      *
      * **Initial value**: `slice`
@@ -80,6 +88,14 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
      */
   var `-moz-background-inline-policy`: js.UndefOr[BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]] = js.undefined
   /**
+     * The **`background-origin`** CSS property sets the _background positioning area_, i.e., the origin position of an image specified using the `background-image` property.
+     *
+     * **Initial value**: `padding-box`
+     *
+     * @deprecated
+     */
+  var `-moz-background-origin`: js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]] = js.undefined
+  /**
      * The **`background-size`** CSS property specifies the size of the element's background image. The image can be left to its natural size, stretched to a new size, or constrained to fit the available space while preserving its intrinsic proportions.
      *
      * **Initial value**: `auto auto`
@@ -87,6 +103,14 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
      * @deprecated
      */
   var `-moz-background-size`: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.undefined
+  /**
+     * The **`-moz-binding`** CSS property is used by Mozilla\-based applications to attach an XBL binding to a DOM element.
+     *
+     * **Initial value**: `none`
+     *
+     * @deprecated
+     */
+  var `-moz-binding`: js.UndefOr[MozBindingProperty | js.Array[MozBindingProperty]] = js.undefined
   /**
      * The **`border-radius`** CSS property lets you round the corners of an element's outer border edge. You can specify a single radius to make circular corners, or two radii to make elliptical corners.
      *
@@ -212,6 +236,12 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
      */
   var `-moz-outline-color`: js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]] = js.undefined
   /**
+     * In Mozilla applications like Firefox, the **`-moz-outline-radius`** CSS property can be used to give an element's `outline` rounded corners.
+     *
+     * @deprecated
+     */
+  var `-moz-outline-radius`: js.UndefOr[MozOutlineRadiusProperty[TLength] | js.Array[MozOutlineRadiusProperty[TLength]]] = js.undefined
+  /**
      * The **`outline-style`** CSS property sets the style of an element's outline. An outline is a line that is drawn around an element, outside the `border`.
      *
      * **Initial value**: `none`
@@ -244,6 +274,14 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
      */
   var `-moz-text-align-last`: js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]] = js.undefined
   /**
+     * The **`-moz-text-blink`** non\-standard Mozilla CSS extension specifies the blink mode.
+     *
+     * **Initial value**: `none`
+     *
+     * @deprecated
+     */
+  var `-moz-text-blink`: js.UndefOr[MozTextBlinkProperty | js.Array[MozTextBlinkProperty]] = js.undefined
+  /**
      * The **`text-decoration-color`** CSS property sets the color of the decorative additions to text that are specified by `text-decoration-line`; these include underlines and overlines, strikethroughs, and wavy lines like those typically used to indicate content is misspelled (for example). The specified color applies to all such decorative lines in the scope of the property's value.
      *
      * **Initial value**: `currentcolor`
@@ -267,6 +305,14 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
      * @deprecated
      */
   var `-moz-text-decoration-style`: js.UndefOr[TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]] = js.undefined
+  /**
+     * In Mozilla applications, **`-moz-user-input`** determines if an element will accept user input.
+     *
+     * **Initial value**: `auto`
+     *
+     * @deprecated
+     */
+  var `-moz-user-input`: js.UndefOr[MozUserInputProperty | js.Array[MozUserInputProperty]] = js.undefined
   /**
      * The **`ime-mode`** CSS property controls the state of the input method editor (IME) for text fields. This property is obsolete.
      *
@@ -412,6 +458,14 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
      */
   var `-o-animation-timing-function`: js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]] = js.undefined
   /**
+     * The **`background-size`** CSS property specifies the size of the element's background image. The image can be left to its natural size, stretched to a new size, or constrained to fit the available space while preserving its intrinsic proportions.
+     *
+     * **Initial value**: `auto auto`
+     *
+     * @deprecated
+     */
+  var `-o-background-size`: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.undefined
+  /**
      * The **`transform`** CSS property lets you rotate, scale, skew, or translate a given element. This is achieved by modifying the coordinate space of the CSS visual formatting model.
      *
      * **Initial value**: `none`
@@ -537,14 +591,6 @@ trait ObsoletePropertiesHyphenFallback[TLength] extends js.Object {
      * @deprecated
      */
   var `-webkit-scroll-snap-points-y`: js.UndefOr[ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty]] = js.undefined
-  /**
-     * In combination with `elevation`, the **`azimuth`** CSS property enables different audio sources to be positioned spatially for aural presentation. This is important in that it provides a natural way to tell several voices apart, as each can be positioned to originate at a different location on the sound stage. Stereo output produce a lateral sound stage, while binaural headphones and multi\-speaker setups allow for a fully three\-dimensional stage.
-     *
-     * **Initial value**: `center`
-     *
-     * @deprecated
-     */
-  var azimuth: js.UndefOr[AzimuthProperty | js.Array[AzimuthProperty]] = js.undefined
   /**
      * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
      *

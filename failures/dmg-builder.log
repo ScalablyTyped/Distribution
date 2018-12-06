@@ -4,7 +4,7 @@
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(dmg-builder) [id => dmg-builder, phase => typescript] 
 [warn ] QualifyReferences.scala:47 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(MacPackager))),List()), defaulting to any [id => dmg-builder, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(dmg-builder) / TsExport() / TsExporteeTree() / TsDeclClass(DmgTarget) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeRef())] 
 [debug] PhaseRunner.scala:78 Success [id => dmg-builder, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(dmg-builder) [id => dmg-builder, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing dmg-builder [id => dmg-builder, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => dmg-builder, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [iconv-lite => Compilation failed] [id => dmg-builder, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [iconv-lite => Compilation failed] [id => dmg-builder, phase => build] 

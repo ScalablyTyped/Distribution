@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class MobXGlobals () extends js.Object {
   /**
+       * globally unique token to signal unchanged
+       */
+  var UNCHANGED: IUNCHANGED = js.native
+  /**
        * Is it allowed to change observables at this point?
        * In general, MobX doesn't allow that when running computations and React.render.
        * To ensure that those functions stay pure.

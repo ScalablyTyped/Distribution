@@ -3,7 +3,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(auth-header)) [id => auth-header, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(auth-header) [id => auth-header, phase => typescript] 
 [debug] PhaseRunner.scala:78 Success [id => auth-header, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(auth-header) [id => auth-header, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing auth-header [id => auth-header, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => auth-header, phase => scala.js] 
 [error] TokenOptions.scala:10 not found: type Params,   var params: js.UndefOr[Params] = js.undefined [id => auth-header, phase => build] 
 [error] TokenOptions.scala:10 not found: type Params,   var params: js.UndefOr[Params] = js.undefined [id => auth-header, phase => build] 

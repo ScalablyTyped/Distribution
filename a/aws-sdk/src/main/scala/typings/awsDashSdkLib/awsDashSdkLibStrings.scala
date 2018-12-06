@@ -1630,6 +1630,9 @@ object awsDashSdkLibStrings {
   sealed trait BASELINE extends js.Object
   
   @js.native
+  sealed trait BASIC_AUTH extends js.Object
+  
+  @js.native
   sealed trait BEFORE extends js.Object
   
   @js.native
@@ -6259,6 +6262,9 @@ object awsDashSdkLibStrings {
   sealed trait MEASURE_ONLY extends js.Object
   
   @js.native
+  sealed trait MEDIACONNECT extends js.Object
+  
+  @js.native
   sealed trait MEDICAL_CONDITION extends js.Object
   
   @js.native
@@ -7430,6 +7436,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PERSON extends js.Object
+  
+  @js.native
+  sealed trait PERSONAL_ACCESS_TOKEN extends js.Object
   
   @js.native
   sealed trait PER_BROKER extends js.Object
@@ -10010,9 +10019,6 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait TITLE extends js.Object
-  
-  @js.native
-  sealed trait TLS extends js.Object
   
   @js.native
   sealed trait TLS_WEB_CLIENT_AUTHENTICATION extends js.Object
@@ -13279,9 +13285,6 @@ object awsDashSdkLibStrings {
   sealed trait `pl-PL` extends js.Object
   
   @js.native
-  sealed trait `pre-warmed` extends js.Object
-  
-  @js.native
   sealed trait preferred_username extends js.Object
   
   @js.native
@@ -14830,6 +14833,7 @@ object awsDashSdkLibStrings {
   def BAIDU: BAIDU = "BAIDU".asInstanceOf[BAIDU]
   def BASE: BASE = "BASE".asInstanceOf[BASE]
   def BASELINE: BASELINE = "BASELINE".asInstanceOf[BASELINE]
+  def BASIC_AUTH: BASIC_AUTH = "BASIC_AUTH".asInstanceOf[BASIC_AUTH]
   def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
   def BEGINS_WITH: BEGINS_WITH = "BEGINS_WITH".asInstanceOf[BEGINS_WITH]
   def BEGIN_WITH: BEGIN_WITH = "BEGIN_WITH".asInstanceOf[BEGIN_WITH]
@@ -16373,6 +16377,7 @@ object awsDashSdkLibStrings {
   def MAX_ZONES_BY_REUSABLE_DELEGATION_SET: MAX_ZONES_BY_REUSABLE_DELEGATION_SET = "MAX_ZONES_BY_REUSABLE_DELEGATION_SET".asInstanceOf[MAX_ZONES_BY_REUSABLE_DELEGATION_SET]
   def MEAN: MEAN = "MEAN".asInstanceOf[MEAN]
   def MEASURE_ONLY: MEASURE_ONLY = "MEASURE_ONLY".asInstanceOf[MEASURE_ONLY]
+  def MEDIACONNECT: MEDIACONNECT = "MEDIACONNECT".asInstanceOf[MEDIACONNECT]
   def MEDICAL_CONDITION: MEDICAL_CONDITION = "MEDICAL_CONDITION".asInstanceOf[MEDICAL_CONDITION]
   def MEDICATION: MEDICATION = "MEDICATION".asInstanceOf[MEDICATION]
   def MEDIUM: MEDIUM = "MEDIUM".asInstanceOf[MEDIUM]
@@ -16764,6 +16769,7 @@ object awsDashSdkLibStrings {
   def PERFORMANCE: PERFORMANCE = "PERFORMANCE".asInstanceOf[PERFORMANCE]
   def PERMANENT_FAILURE: PERMANENT_FAILURE = "PERMANENT_FAILURE".asInstanceOf[PERMANENT_FAILURE]
   def PERSON: PERSON = "PERSON".asInstanceOf[PERSON]
+  def PERSONAL_ACCESS_TOKEN: PERSONAL_ACCESS_TOKEN = "PERSONAL_ACCESS_TOKEN".asInstanceOf[PERSONAL_ACCESS_TOKEN]
   def PER_BROKER: PER_BROKER = "PER_BROKER".asInstanceOf[PER_BROKER]
   def PER_TOPIC_PER_BROKER: PER_TOPIC_PER_BROKER = "PER_TOPIC_PER_BROKER".asInstanceOf[PER_TOPIC_PER_BROKER]
   def PHONE: PHONE = "PHONE".asInstanceOf[PHONE]
@@ -17624,7 +17630,6 @@ object awsDashSdkLibStrings {
   def TIMESTAMP: TIMESTAMP = "TIMESTAMP".asInstanceOf[TIMESTAMP]
   def TIME_STAMPING: TIME_STAMPING = "TIME_STAMPING".asInstanceOf[TIME_STAMPING]
   def TITLE: TITLE = "TITLE".asInstanceOf[TITLE]
-  def TLS: TLS = "TLS".asInstanceOf[TLS]
   def TLS_WEB_CLIENT_AUTHENTICATION: TLS_WEB_CLIENT_AUTHENTICATION = "TLS_WEB_CLIENT_AUTHENTICATION".asInstanceOf[TLS_WEB_CLIENT_AUTHENTICATION]
   def TLS_WEB_SERVER_AUTHENTICATION: TLS_WEB_SERVER_AUTHENTICATION = "TLS_WEB_SERVER_AUTHENTICATION".asInstanceOf[TLS_WEB_SERVER_AUTHENTICATION]
   def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
@@ -18713,7 +18718,6 @@ object awsDashSdkLibStrings {
   def php: php = "php".asInstanceOf[php]
   def `php-app`: `php-app` = "php-app".asInstanceOf[`php-app`]
   def `pl-PL`: `pl-PL` = "pl-PL".asInstanceOf[`pl-PL`]
-  def `pre-warmed`: `pre-warmed` = "pre-warmed".asInstanceOf[`pre-warmed`]
   def preferred_username: preferred_username = "preferred_username".asInstanceOf[preferred_username]
   def prefix: prefix = "prefix".asInstanceOf[prefix]
   def prioritized: prioritized = "prioritized".asInstanceOf[prioritized]

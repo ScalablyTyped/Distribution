@@ -1,14 +1,14 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "karma-chai-sinon"
-version := "0.1.5-dt-20181120Z-548bd3"
+version := "0.1.5-dt-20181120Z-a9f316"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "chai" % "4.1-dt-20181027Z-5ee5e8",
-  "com.scalablytyped" %%% "sinon" % "5.0-dt-20181120Z-d75ff9",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "chai" % "4.1-dt-20181027Z-9be48b",
+  "org.scalablytyped" %%% "sinon" % "5.0-dt-20181120Z-43cb8f",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

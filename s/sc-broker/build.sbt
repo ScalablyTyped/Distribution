@@ -1,18 +1,18 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "sc-broker"
-version := "5.1-dt-20181205Z-850bec"
+version := "5.1-dt-20181205Z-7e20ba"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "expirymanager" % "0.9-dt-20181205Z-52731f",
-  "com.scalablytyped" %%% "fleximap" % "0.9-dt-20181205Z-45e1f4",
-  "com.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20181104Z-5545fe",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "sc-auth" % "5.0-dt-20181205Z-7849ef",
-  "com.scalablytyped" %%% "socketcluster" % "14.0-dt-20181205Z-98a6cb",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20181205Z-365542",
+  "org.scalablytyped" %%% "fleximap" % "0.9-dt-20181205Z-969394",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20181104Z-1302f9",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
+  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181205Z-faf5cd",
+  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20181205Z-603bd9",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

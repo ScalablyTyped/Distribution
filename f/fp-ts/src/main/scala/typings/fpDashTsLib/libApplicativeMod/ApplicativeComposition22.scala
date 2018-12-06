@@ -12,6 +12,6 @@ trait ApplicativeComposition22[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: f
     fgab: fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libHKTMod.Type2[G, M, js.Function1[/* a */ A, B]]],
     fga: fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libHKTMod.Type2[G, M, A]]
   ): fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libHKTMod.Type2[G, M, B]]
-  def of[L, M, A](a: A): fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libHKTMod.Type2[G, M, A]]
+  def of[LF, LG, A](a: A): fpDashTsLib.libHKTMod.Type2[F, LF, fpDashTsLib.libHKTMod.Type2[G, LG, A]]
 }
 

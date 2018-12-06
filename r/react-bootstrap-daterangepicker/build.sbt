@@ -1,19 +1,19 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "react-bootstrap-daterangepicker"
-version := "0.0-unknown-dt-20180910Z-d47717"
+version := "0.0-unknown-dt-20180910Z-a00496"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
-  "com.scalablytyped" %%% "daterangepicker" % "3.0-dt-20180910Z-e17209",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181206Z-02d7ed",
-  "com.scalablytyped" %%% "moment" % "2.22.2-cce931",
-  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181203Z-843f9f",
-  "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-9c5dc2",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
+  "org.scalablytyped" %%% "daterangepicker" % "3.0-dt-20180910Z-014237",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181206Z-03d301",
+  "org.scalablytyped" %%% "moment" % "2.22.2-39aab6",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-dcbd7c",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-65cffa",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-3181aa",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

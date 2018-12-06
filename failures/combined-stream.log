@@ -4,7 +4,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(combined-stream)) [id => combined-stream, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(combined-stream) [id => combined-stream, phase => typescript] 
 [debug] PhaseRunner.scala:78 Success [id => combined-stream, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(combined-stream) [id => combined-stream, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing combined-stream [id => combined-stream, phase => scala.js] 
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(pipe), Name(pipe)) [id => combined-stream, phase => scala.js, this => Name(combinedDashStreamLib) / Name(combinedDashStreamMod) / Name(CombinedStream)] 
 [debug] PhaseRunner.scala:78 Success [id => combined-stream, phase => scala.js] 
 [error] package.scala:9 illegal cyclic reference involving type Appendable,   type NextFunction = js.Function1[/* next */ js.Function1[/* stream */ Appendable, js.Any], js.Any] [id => combined-stream, phase => build] 

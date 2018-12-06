@@ -22,7 +22,7 @@
 [debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(TElement) at TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(FastCollectionView) / TsMemberFunction(findElByIndex) / TsFunSig() / TsTypeRef()) [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(FastCollectionView) / TsMemberFunction(findElByIndex) / TsFunSig() / TsTypeRef())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_TModel) [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclClass(Collection) / TsMemberProperty(model) / TsTypeObject())] 
 [debug] PhaseRunner.scala:78 Success [id => giraffe, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(giraffe) [id => giraffe, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing giraffe [id => giraffe, phase => scala.js] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Collection)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Model)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Router)] 

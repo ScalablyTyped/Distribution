@@ -8,7 +8,7 @@
 [debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(SS) at TreeScope(TsParsedFile() / TsDeclModule(braft-editor) / TsDeclInterface(BraftEditor) / TsTypeRef()) [id => braft-editor, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(braft-editor) / TsDeclInterface(BraftEditor) / TsTypeRef())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Type) [id => braft-editor, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(braft-editor) / TsDeclNamespace(BraftEditor) / TsDeclInterface(editorProps) / TsMemberFunction(insertMedias) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeObject())] 
 [debug] PhaseRunner.scala:78 Success [id => braft-editor, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(braft-editor) [id => braft-editor, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing braft-editor [id => braft-editor, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => braft-editor, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [immutable => Compilation failed] [id => braft-editor, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [immutable => Compilation failed] [id => braft-editor, phase => build] 

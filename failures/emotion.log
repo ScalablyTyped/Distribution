@@ -3,7 +3,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(emotion)) [id => emotion, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(emotion) [id => emotion, phase => typescript] 
 [debug] PhaseRunner.scala:78 Success [id => emotion, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(emotion) [id => emotion, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing emotion [id => emotion, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => emotion, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [@emotion/serialize => Compilation failed] [id => emotion, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [@emotion/serialize => Compilation failed] [id => emotion, phase => build] 

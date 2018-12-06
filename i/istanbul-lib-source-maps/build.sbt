@@ -1,14 +1,14 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "istanbul-lib-source-maps"
-version := "1.2-dt-20180910Z-6792a1"
+version := "1.2-dt-20180910Z-05c358"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "istanbul-lib-coverage" % "1.1-dt-20180910Z-f65891",
-  "com.scalablytyped" %%% "source-map" % "0.7.3-ecab3d",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "istanbul-lib-coverage" % "1.1-dt-20180910Z-17c730",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-faaeaa",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

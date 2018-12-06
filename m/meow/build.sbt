@@ -1,14 +1,14 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "meow"
-version := "5.x-dt-20181009Z-f5b8f7"
+version := "5.x-dt-20181009Z-e71ad3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "minimist" % "1.2.0-dt-20180910Z-a475cc",
-  "com.scalablytyped" %%% "minimist-options" % "3.0-dt-20180910Z-f12800",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180910Z-231fe7",
+  "org.scalablytyped" %%% "minimist-options" % "3.0-dt-20180910Z-cac754",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -38,7 +38,7 @@
 [debug] DefaultedTParams.scala:29 Defaulting type parameter TsIdentSimple(SS) at TreeScope(TsParsedFile() / TsDeclModule(catalog) / TsDeclClass(VideoSpecimen) / TsTypeRef()) [id => catalog, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(catalog) / TsDeclClass(VideoSpecimen) / TsTypeRef())] 
 [info ] ExtractInterfaces.scala:30 Extracted anonymous interface TsIdentSimple(Anon_Default) [id => catalog, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(catalog) / TsDeclFunction(pageLoader) / TsFunSig() / TsFunParam() / TsTypeFunction() / TsFunSig() / TsTypeRef() / TsTypeObject())] 
 [debug] PhaseRunner.scala:78 Success [id => catalog, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(catalog) [id => catalog, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing catalog [id => catalog, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => catalog, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [@emotion/serialize => Compilation failed] [id => catalog, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [@emotion/serialize => Compilation failed] [id => catalog, phase => build] 

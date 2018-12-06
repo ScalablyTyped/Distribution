@@ -1,20 +1,20 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "http-aws-es"
-version := "1.1-dt-20180910Z-24968d"
+version := "1.1-dt-20180910Z-e9ffb0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "aws-sdk" % "2.367.0-52891f",
-  "com.scalablytyped" %%% "elasticsearch" % "5.0-dt-20181130Z-b23d6d",
-  "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-2ed531",
-  "com.scalablytyped" %%% "jmespath" % "0.15-dt-20180910Z-213c15",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "sax" % "1.x-dt-20180910Z-cee1b1",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "uuid" % "3.4-dt-20180910Z-ea6562",
-  "com.scalablytyped" %%% "xml2js" % "0.4-dt-20180910Z-7c981e",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "aws-sdk" % "2.372.0-325b17",
+  "org.scalablytyped" %%% "elasticsearch" % "5.0-dt-20181130Z-0cc407",
+  "org.scalablytyped" %%% "events" % "1.2-dt-20180910Z-7d2d2b",
+  "org.scalablytyped" %%% "jmespath" % "0.15-dt-20180910Z-d82a54",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
+  "org.scalablytyped" %%% "sax" % "1.x-dt-20180910Z-fcb303",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180910Z-00c113",
+  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180910Z-766ebf")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

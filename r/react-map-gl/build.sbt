@@ -1,17 +1,17 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "react-map-gl"
-version := "4.0-dt-20181126Z-1f5b1a"
+version := "4.0-dt-20181126Z-dc516c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
-  "com.scalablytyped" %%% "geojson" % "7946.0-dt-20180910Z-76d217",
-  "com.scalablytyped" %%% "mapbox-gl" % "v0.51.0-dt-20181203Z-1ad235",
-  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181203Z-843f9f",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180910Z-3f2d21",
+  "org.scalablytyped" %%% "mapbox-gl" % "v0.51.0-dt-20181203Z-e671a1",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-dcbd7c",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-65cffa",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,17 +1,17 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "router5"
-version := "6.6.2-abe6d9"
+version := "6.6.2-6b6c2a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "path-parser" % "4.2.0-b5dd96",
-  "com.scalablytyped" %%% "route-node" % "3.4.2-bc963e",
-  "com.scalablytyped" %%% "router5-transition-path" % "5.4.0-9192cc",
-  "com.scalablytyped" %%% "search-params" % "2.1.3-e9442d",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "symbol-observable" % "1.2.0-45b962",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "path-parser" % "4.2.0-8ed767",
+  "org.scalablytyped" %%% "route-node" % "3.4.2-187996",
+  "org.scalablytyped" %%% "router5-transition-path" % "5.4.0-78c6cb",
+  "org.scalablytyped" %%% "search-params" % "2.1.3-af070c",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-46014e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

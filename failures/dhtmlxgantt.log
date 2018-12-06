@@ -2,7 +2,7 @@
 [info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/dhtmlxgantt/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/dhtmlxgantt),TsIdentLibrarySimple(dhtmlxgantt)),TsIdentModule(None,List(dhtmlxgantt))) [id => dhtmlxgantt, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(dhtmlxgantt) [id => dhtmlxgantt, phase => typescript] 
 [debug] PhaseRunner.scala:78 Success [id => dhtmlxgantt, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(dhtmlxgantt) [id => dhtmlxgantt, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing dhtmlxgantt [id => dhtmlxgantt, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => dhtmlxgantt, phase => scala.js] 
 [error] ganttMod.scala:15 ganttMod is already defined as object ganttMod, object ganttMod [id => dhtmlxgantt, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [dhtmlxgantt => Compilation failed] [id => dhtmlxgantt, phase => build] 

@@ -1,30 +1,30 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "change-case"
-version := "3.0.2-81ae5f"
+version := "3.0.2-ee3ddc"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "camel-case" % "3.0.0-24ec40",
-  "com.scalablytyped" %%% "constant-case" % "2.0.0-699b47",
-  "com.scalablytyped" %%% "dot-case" % "2.1.1-a68759",
-  "com.scalablytyped" %%% "header-case" % "1.0.1-26d1d8",
-  "com.scalablytyped" %%% "is-lower-case" % "1.1.3-966d03",
-  "com.scalablytyped" %%% "is-upper-case" % "1.1.2-1db5ed",
-  "com.scalablytyped" %%% "lower-case" % "1.1.4-2cc349",
-  "com.scalablytyped" %%% "lower-case-first" % "1.0.2-1a60ad",
-  "com.scalablytyped" %%% "no-case" % "2.3.2-08c5aa",
-  "com.scalablytyped" %%% "param-case" % "2.1.1-41a98c",
-  "com.scalablytyped" %%% "pascal-case" % "2.0.1-ccc10b",
-  "com.scalablytyped" %%% "path-case" % "2.1.1-80412a",
-  "com.scalablytyped" %%% "sentence-case" % "2.1.1-93244f",
-  "com.scalablytyped" %%% "snake-case" % "2.1.0-bedfb7",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "swap-case" % "1.1.2-ad555a",
-  "com.scalablytyped" %%% "title-case" % "2.1.1-636548",
-  "com.scalablytyped" %%% "upper-case" % "1.1.3-317ed2",
-  "com.scalablytyped" %%% "upper-case-first" % "1.1.2-1da625",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "camel-case" % "3.0.0-2b46fc",
+  "org.scalablytyped" %%% "constant-case" % "2.0.0-d54b27",
+  "org.scalablytyped" %%% "dot-case" % "2.1.1-22d98e",
+  "org.scalablytyped" %%% "header-case" % "1.0.1-319e9b",
+  "org.scalablytyped" %%% "is-lower-case" % "1.1.3-e20e85",
+  "org.scalablytyped" %%% "is-upper-case" % "1.1.2-881c67",
+  "org.scalablytyped" %%% "lower-case" % "1.1.4-6e1f08",
+  "org.scalablytyped" %%% "lower-case-first" % "1.0.2-fedbd9",
+  "org.scalablytyped" %%% "no-case" % "2.3.2-288496",
+  "org.scalablytyped" %%% "param-case" % "2.1.1-1f09b0",
+  "org.scalablytyped" %%% "pascal-case" % "2.0.1-c3de23",
+  "org.scalablytyped" %%% "path-case" % "2.1.1-c31f27",
+  "org.scalablytyped" %%% "sentence-case" % "2.1.1-c37c83",
+  "org.scalablytyped" %%% "snake-case" % "2.1.0-09191b",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
+  "org.scalablytyped" %%% "swap-case" % "1.1.2-8af6af",
+  "org.scalablytyped" %%% "title-case" % "2.1.1-5fb87f",
+  "org.scalablytyped" %%% "upper-case" % "1.1.3-da6d8a",
+  "org.scalablytyped" %%% "upper-case-first" % "1.1.2-9e4c41")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,33 +1,33 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "material-ui__core"
-version := "3.6.1-1a6061"
+version := "3.6.1-720100"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "classnames" % "2.2-dt-20180910Z-d2b0a8",
-  "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
-  "com.scalablytyped" %%% "debounce" % "1.2-dt-20181203Z-b4da0f",
-  "com.scalablytyped" %%% "deepmerge" % "3.0.0-d0c656",
-  "com.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-05e35b",
-  "com.scalablytyped" %%% "indefinite-observable" % "1.0.2-19bfe2",
-  "com.scalablytyped" %%% "is-plain-object" % "2.0.4-09c4c7",
-  "com.scalablytyped" %%% "isobject" % "3.0.1-e233f5",
-  "com.scalablytyped" %%% "jss" % "9.5-dt-20181018Z-8fd95a",
-  "com.scalablytyped" %%% "keycode" % "2.2.0-7dd102",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "normalize-scroll-left" % "0.1.2-28e812",
-  "com.scalablytyped" %%% "popper_dot_js" % "1.14.6-6a8603",
-  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181203Z-843f9f",
-  "com.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-0eb952",
-  "com.scalablytyped" %%% "react-event-listener" % "0.4-dt-20180910Z-f1edfb",
-  "com.scalablytyped" %%% "react-transition-group" % "2.0-dt-20180910Z-035397",
-  "com.scalablytyped" %%% "recompose" % "0.30-dt-20181120Z-c867d1",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "symbol-observable" % "1.2.0-45b962",
-  "com.scalablytyped" %%% "warning" % "3.0.0-dt-20180910Z-d608ff",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20180910Z-f5e9e0",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
+  "org.scalablytyped" %%% "debounce" % "1.2-dt-20181203Z-f43dce",
+  "org.scalablytyped" %%% "deepmerge" % "3.0.0-cbfb94",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-46b7b4",
+  "org.scalablytyped" %%% "indefinite-observable" % "1.0.2-f33470",
+  "org.scalablytyped" %%% "is-plain-object" % "2.0.4-7d965d",
+  "org.scalablytyped" %%% "isobject" % "3.0.1-381fdb",
+  "org.scalablytyped" %%% "jss" % "9.5-dt-20181018Z-95c5e5",
+  "org.scalablytyped" %%% "keycode" % "2.2.0-c006ed",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
+  "org.scalablytyped" %%% "normalize-scroll-left" % "0.1.2-fa39ab",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.14.6-8df7a3",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-dcbd7c",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-65cffa",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181122Z-221490",
+  "org.scalablytyped" %%% "react-event-listener" % "0.4-dt-20180910Z-f689c3",
+  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20180910Z-b0c8bc",
+  "org.scalablytyped" %%% "recompose" % "0.30-dt-20181120Z-402fb0",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-46014e",
+  "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180910Z-5828e4")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

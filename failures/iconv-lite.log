@@ -3,7 +3,7 @@
 [info ] Phase1ReadTypescript.scala:152 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/iconv-lite/lib/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/iconv-lite),TsIdentLibrarySimple(iconv-lite)),TsIdentModule(None,List(iconv-lite))) [id => iconv-lite, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(iconv-lite) [id => iconv-lite, phase => typescript] 
 [debug] PhaseRunner.scala:78 Success [id => iconv-lite, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(iconv-lite) [id => iconv-lite, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing iconv-lite [id => iconv-lite, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => iconv-lite, phase => scala.js] 
 [error] iconvDashLiteMod.scala:12 type Options is not a member of package typings.iconvDashLiteLib,   def decode(buffer: nodeLib.Buffer, encoding: java.lang.String, options: iconvDashLiteLib.Options): java.lang.String = js.native [id => iconv-lite, phase => build] 
 [error] iconvDashLiteMod.scala:14 type Options is not a member of package typings.iconvDashLiteLib,   def decodeStream(encoding: java.lang.String, options: iconvDashLiteLib.Options): nodeLib.NodeJSNs.ReadWriteStream = js.native [id => iconv-lite, phase => build] 

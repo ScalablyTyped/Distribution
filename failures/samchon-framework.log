@@ -3,7 +3,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(samchon-framework)) [id => samchon-framework, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:190 Processing TsIdentLibrarySimple(samchon-framework) [id => samchon-framework, phase => typescript] 
 [debug] PhaseRunner.scala:78 Success [id => samchon-framework, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(samchon-framework) [id => samchon-framework, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing samchon-framework [id => samchon-framework, phase => scala.js] 
 [debug] PhaseRunner.scala:78 Success [id => samchon-framework, phase => scala.js] 
 [warn ] PhaseRunner.scala:64 Failed because of, [tstl => Compilation failed] [id => samchon-framework, phase => build] 
 [debug] PhaseRunner.scala:82 Failure, [tstl => Compilation failed] [id => samchon-framework, phase => build] 

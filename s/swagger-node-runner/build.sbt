@@ -1,33 +1,33 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "swagger-node-runner"
-version := "0.5-dt-20181027Z-3e3a11"
+version := "0.5-dt-20181027Z-e4b0bf"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-6b0d80",
-  "com.scalablytyped" %%% "boom" % "7.2-dt-20181120Z-500330",
-  "com.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-08fe9c",
-  "com.scalablytyped" %%% "catbox" % "10.0-dt-20181121Z-981978",
-  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-b92a74",
-  "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-b5e732",
-  "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-5d5875",
-  "com.scalablytyped" %%% "hapi" % "17.8-dt-20181129Z-009512",
-  "com.scalablytyped" %%% "iron" % "5.0-dt-20180910Z-689c40",
-  "com.scalablytyped" %%% "joi" % "14.0-dt-20181031Z-cbdcd6",
-  "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
-  "com.scalablytyped" %%% "mime-db" % "1.27-dt-20180910Z-fdb4ff",
-  "com.scalablytyped" %%% "mimos" % "3.0-dt-20180910Z-d42ee9",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "podium" % "1.0-dt-20180910Z-458a88",
-  "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",
-  "com.scalablytyped" %%% "restify" % "7.2-dt-20181121Z-44b1d0",
-  "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-9a9ab6",
-  "com.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-fedd0b",
-  "com.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-e403be",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20181121Z-54b5e0",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-d7d4ef",
+  "org.scalablytyped" %%% "boom" % "7.2-dt-20181120Z-eea1b3",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-5390c7",
+  "org.scalablytyped" %%% "catbox" % "10.0-dt-20181121Z-19ab3d",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-448588",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20180910Z-6e8abe",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-dfbf83",
+  "org.scalablytyped" %%% "hapi" % "17.8-dt-20181129Z-90dff1",
+  "org.scalablytyped" %%% "iron" % "5.0-dt-20180910Z-0492bb",
+  "org.scalablytyped" %%% "joi" % "14.0-dt-20181031Z-f53b7a",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-399889",
+  "org.scalablytyped" %%% "mime-db" % "1.27-dt-20180910Z-7ba122",
+  "org.scalablytyped" %%% "mimos" % "3.0-dt-20180910Z-7ce4b8",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
+  "org.scalablytyped" %%% "podium" % "1.0-dt-20180910Z-b3d782",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-db862f",
+  "org.scalablytyped" %%% "restify" % "7.2-dt-20181121Z-3a7e77",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-c19301",
+  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-a43e12",
+  "org.scalablytyped" %%% "spdy" % "3.4-dt-20181121Z-a9c117",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
+  "org.scalablytyped" %%% "swagger-schema-official" % "2.0-dt-20181121Z-faf5be")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

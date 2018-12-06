@@ -1,20 +1,20 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "angular-meteor"
-version := "0.8-dt-20181120Z-28948e"
+version := "0.8-dt-20181120Z-6afe9d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "angular" % "1.6-dt-20180918Z-dc4282",
-  "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-b92a74",
-  "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
-  "com.scalablytyped" %%% "meteor" % "1.4-dt-20181020Z-ecc80b",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181203Z-843f9f",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "com.scalablytyped" %%% "underscore" % "1.8-dt-20180910Z-87c49b",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20180918Z-0ba0d0",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-448588",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
+  "org.scalablytyped" %%% "meteor" % "1.4-dt-20181020Z-b1ae1f",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-dcbd7c",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-65cffa",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
+  "org.scalablytyped" %%% "underscore" % "1.8-dt-20180910Z-6762b5")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

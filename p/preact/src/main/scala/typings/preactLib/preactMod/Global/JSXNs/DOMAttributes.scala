@@ -70,6 +70,7 @@ trait DOMAttributes
   var onEncryptedCapture: js.UndefOr[GenericEventHandler] = js.undefined
   var onEnded: js.UndefOr[GenericEventHandler] = js.undefined
   var onEndedCapture: js.UndefOr[GenericEventHandler] = js.undefined
+  var onError: js.UndefOr[GenericEventHandler] = js.undefined
   // Focus Events
   var onFocus: js.UndefOr[FocusEventHandler] = js.undefined
   var onFocusCapture: js.UndefOr[FocusEventHandler] = js.undefined
@@ -77,6 +78,7 @@ trait DOMAttributes
   var onGotPointerCaptureCapture: js.UndefOr[PointerEventHandler] = js.undefined
   var onInput: js.UndefOr[GenericEventHandler] = js.undefined
   var onInputCapture: js.UndefOr[GenericEventHandler] = js.undefined
+  var onInvalid: js.UndefOr[GenericEventHandler] = js.undefined
   // Keyboard Events
   var onKeyDown: js.UndefOr[KeyboardEventHandler] = js.undefined
   var onKeyDownCapture: js.UndefOr[KeyboardEventHandler] = js.undefined

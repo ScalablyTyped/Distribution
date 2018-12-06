@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object csstypeLibStrings {
   @js.native
-  sealed trait `-moz-available` extends js.Object
-  
-  @js.native
   sealed trait `-moz-crisp-edges` extends js.Object
   
   @js.native
@@ -103,16 +100,7 @@ object csstypeLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `:-moz-any` extends js.Object
-  
-  @js.native
   sealed trait `:-moz-dir` extends js.Object
-  
-  @js.native
-  sealed trait `:-ms-matches` extends js.Object
-  
-  @js.native
-  sealed trait `:-webkit-any` extends js.Object
   
   @js.native
   sealed trait `::cue` extends js.Object
@@ -133,10 +121,10 @@ object csstypeLibStrings {
   sealed trait `:host-context` extends js.Object
   
   @js.native
-  sealed trait `:lang` extends js.Object
+  sealed trait `:is` extends js.Object
   
   @js.native
-  sealed trait `:matches` extends js.Object
+  sealed trait `:lang` extends js.Object
   
   @js.native
   sealed trait `:not` extends js.Object
@@ -152,6 +140,9 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `:nth-of-type` extends js.Object
+  
+  @js.native
+  sealed trait `:where` extends js.Object
   
   @js.native
   sealed trait `@charset` extends js.Object
@@ -361,9 +352,6 @@ object csstypeLibStrings {
   sealed trait `before-edge` extends js.Object
   
   @js.native
-  sealed trait behind extends js.Object
-  
-  @js.native
   sealed trait below extends js.Object
   
   @js.native
@@ -443,12 +431,6 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait center extends js.Object
-  
-  @js.native
-  sealed trait `center-left` extends js.Object
-  
-  @js.native
-  sealed trait `center-right` extends js.Object
   
   @js.native
   sealed trait central extends js.Object
@@ -560,6 +542,9 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait cyclic extends js.Object
+  
+  @js.native
+  sealed trait dark extends js.Object
   
   @js.native
   sealed trait darken extends js.Object
@@ -686,12 +671,6 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait fantasy extends js.Object
-  
-  @js.native
-  sealed trait `far-left` extends js.Object
-  
-  @js.native
-  sealed trait `far-right` extends js.Object
   
   @js.native
   sealed trait fill extends js.Object
@@ -931,13 +910,10 @@ object csstypeLibStrings {
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait `left-side` extends js.Object
-  
-  @js.native
-  sealed trait leftwards extends js.Object
-  
-  @js.native
   sealed trait legacy extends js.Object
+  
+  @js.native
+  sealed trait light extends js.Object
   
   @js.native
   sealed trait lighten extends js.Object
@@ -1382,12 +1358,6 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait right extends js.Object
-  
-  @js.native
-  sealed trait `right-side` extends js.Object
-  
-  @js.native
-  sealed trait rightwards extends js.Object
   
   @js.native
   sealed trait rl extends js.Object
@@ -1872,7 +1842,6 @@ object csstypeLibStrings {
   @js.native
   sealed trait `zoom-out` extends js.Object
   
-  def `-moz-available`: `-moz-available` = "-moz-available".asInstanceOf[`-moz-available`]
   def `-moz-crisp-edges`: `-moz-crisp-edges` = "-moz-crisp-edges".asInstanceOf[`-moz-crisp-edges`]
   def `-moz-fit-content`: `-moz-fit-content` = "-moz-fit-content".asInstanceOf[`-moz-fit-content`]
   def `-moz-grab`: `-moz-grab` = "-moz-grab".asInstanceOf[`-moz-grab`]
@@ -1904,23 +1873,21 @@ object csstypeLibStrings {
   def `-webkit-min-content`: `-webkit-min-content` = "-webkit-min-content".asInstanceOf[`-webkit-min-content`]
   def `-webkit-optimize-contrast`: `-webkit-optimize-contrast` = "-webkit-optimize-contrast".asInstanceOf[`-webkit-optimize-contrast`]
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
-  def `:-moz-any`: `:-moz-any` = ":-moz-any".asInstanceOf[`:-moz-any`]
   def `:-moz-dir`: `:-moz-dir` = ":-moz-dir".asInstanceOf[`:-moz-dir`]
-  def `:-ms-matches`: `:-ms-matches` = ":-ms-matches".asInstanceOf[`:-ms-matches`]
-  def `:-webkit-any`: `:-webkit-any` = ":-webkit-any".asInstanceOf[`:-webkit-any`]
   def `::cue`: `::cue` = "::cue".asInstanceOf[`::cue`]
   def `::slotted`: `::slotted` = "::slotted".asInstanceOf[`::slotted`]
   def `:dir`: `:dir` = ":dir".asInstanceOf[`:dir`]
   def `:has`: `:has` = ":has".asInstanceOf[`:has`]
   def `:host`: `:host` = ":host".asInstanceOf[`:host`]
   def `:host-context`: `:host-context` = ":host-context".asInstanceOf[`:host-context`]
+  def `:is`: `:is` = ":is".asInstanceOf[`:is`]
   def `:lang`: `:lang` = ":lang".asInstanceOf[`:lang`]
-  def `:matches`: `:matches` = ":matches".asInstanceOf[`:matches`]
   def `:not`: `:not` = ":not".asInstanceOf[`:not`]
   def `:nth-child`: `:nth-child` = ":nth-child".asInstanceOf[`:nth-child`]
   def `:nth-last-child`: `:nth-last-child` = ":nth-last-child".asInstanceOf[`:nth-last-child`]
   def `:nth-last-of-type`: `:nth-last-of-type` = ":nth-last-of-type".asInstanceOf[`:nth-last-of-type`]
   def `:nth-of-type`: `:nth-of-type` = ":nth-of-type".asInstanceOf[`:nth-of-type`]
+  def `:where`: `:where` = ":where".asInstanceOf[`:where`]
   def `@charset`: `@charset` = "@charset".asInstanceOf[`@charset`]
   def `@counter-style`: `@counter-style` = "@counter-style".asInstanceOf[`@counter-style`]
   def `@document`: `@document` = "@document".asInstanceOf[`@document`]
@@ -1990,7 +1957,6 @@ object csstypeLibStrings {
   def `balance-all`: `balance-all` = "balance-all".asInstanceOf[`balance-all`]
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
-  def behind: behind = "behind".asInstanceOf[behind]
   def below: below = "below".asInstanceOf[below]
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   def `bidi-override`: `bidi-override` = "bidi-override".asInstanceOf[`bidi-override`]
@@ -2018,8 +1984,6 @@ object csstypeLibStrings {
   def caret: caret = "caret".asInstanceOf[caret]
   def cell: cell = "cell".asInstanceOf[cell]
   def center: center = "center".asInstanceOf[center]
-  def `center-left`: `center-left` = "center-left".asInstanceOf[`center-left`]
-  def `center-right`: `center-right` = "center-right".asInstanceOf[`center-right`]
   def central: central = "central".asInstanceOf[central]
   def chained: chained = "chained".asInstanceOf[chained]
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
@@ -2056,6 +2020,7 @@ object csstypeLibStrings {
   def currentcolor: currentcolor = "currentcolor".asInstanceOf[currentcolor]
   def cursive: cursive = "cursive".asInstanceOf[cursive]
   def cyclic: cyclic = "cyclic".asInstanceOf[cyclic]
+  def dark: dark = "dark".asInstanceOf[dark]
   def darken: darken = "darken".asInstanceOf[darken]
   def dashed: dashed = "dashed".asInstanceOf[dashed]
   def default: default = "default".asInstanceOf[default]
@@ -2098,8 +2063,6 @@ object csstypeLibStrings {
   def fallback: fallback = "fallback".asInstanceOf[fallback]
   def `false`: `false` = "false".asInstanceOf[`false`]
   def fantasy: fantasy = "fantasy".asInstanceOf[fantasy]
-  def `far-left`: `far-left` = "far-left".asInstanceOf[`far-left`]
-  def `far-right`: `far-right` = "far-right".asInstanceOf[`far-right`]
   def fill: fill = "fill".asInstanceOf[fill]
   def `fill-available`: `fill-available` = "fill-available".asInstanceOf[`fill-available`]
   def `fill-box`: `fill-box` = "fill-box".asInstanceOf[`fill-box`]
@@ -2179,9 +2142,8 @@ object csstypeLibStrings {
   def layout: layout = "layout".asInstanceOf[layout]
   def `leading-spaces`: `leading-spaces` = "leading-spaces".asInstanceOf[`leading-spaces`]
   def left: left = "left".asInstanceOf[left]
-  def `left-side`: `left-side` = "left-side".asInstanceOf[`left-side`]
-  def leftwards: leftwards = "leftwards".asInstanceOf[leftwards]
   def legacy: legacy = "legacy".asInstanceOf[legacy]
+  def light: light = "light".asInstanceOf[light]
   def lighten: lighten = "lighten".asInstanceOf[lighten]
   def lighter: lighter = "lighter".asInstanceOf[lighter]
   def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
@@ -2330,8 +2292,6 @@ object csstypeLibStrings {
   def revert: revert = "revert".asInstanceOf[revert]
   def ridge: ridge = "ridge".asInstanceOf[ridge]
   def right: right = "right".asInstanceOf[right]
-  def `right-side`: `right-side` = "right-side".asInstanceOf[`right-side`]
-  def rightwards: rightwards = "rightwards".asInstanceOf[rightwards]
   def rl: rl = "rl".asInstanceOf[rl]
   def round: round = "round".asInstanceOf[round]
   def row: row = "row".asInstanceOf[row]

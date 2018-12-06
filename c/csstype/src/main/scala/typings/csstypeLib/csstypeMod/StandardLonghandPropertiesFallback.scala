@@ -27,7 +27,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox |  Safari  |  Edge  | IE  |
      * | :----: | :-----: | :------: | :----: | :-: |
-     * | **57** | **52**  | **10.1** | **16** | n/a |
+     * | **57** | **52**  | **10.1** | **16** | No  |
      *
      * ---
      *
@@ -377,7 +377,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **57** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/block-size
      */
@@ -389,7 +389,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end-color
      */
@@ -401,7 +401,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end-style
      */
@@ -413,7 +413,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end-width
      */
@@ -427,7 +427,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start-color
      */
@@ -439,7 +439,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * |   No   | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start-style
      */
@@ -451,7 +451,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start-width
      */
@@ -607,7 +607,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end-color
      */
@@ -619,7 +619,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome |           Firefox            | Safari | Edge | IE  |
      * | :----: | :--------------------------: | :----: | :--: | :-: |
-     * |   No   |            **41**            |   No   | n/a  | No  |
+     * | **69** |            **41**            |   No   |  No  | No  |
      * |        | 38 _(-moz-border-end-style)_ |        |      |     |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end-style
@@ -632,7 +632,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end-width
      */
@@ -646,7 +646,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome |            Firefox             | Safari | Edge | IE  |
      * | :----: | :----------------------------: | :----: | :--: | :-: |
-     * |   No   |             **41**             |   No   | n/a  | No  |
+     * | **69** |             **41**             |   No   |  No  | No  |
      * |        | 38 _(-moz-border-start-color)_ |        |      |     |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-start-color
@@ -659,7 +659,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-start-style
      */
@@ -671,7 +671,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-start-width
      */
@@ -1094,7 +1094,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari |  Edge  |   IE   |
      * | :----: | :-----: | :----: | :----: | :----: |
-     * | **50** |   No    |  Yes   | **12** | **10** |
+     * | **50** |   n/a   |  Yes   | **12** | **10** |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/column-span
      */
@@ -1391,7 +1391,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari |  Edge  |  IE   |
      * | :----: | :-----: | :----: | :----: | :---: |
-     * | **48** |  **9**  | **11** | **12** | **9** |
+     * | **60** |  **9**  | **11** | **12** | **9** |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/font-stretch
      */
@@ -1645,6 +1645,12 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      * The **`hanging-punctuation`** CSS property specifies whether a punctuation mark should hang at the start or end of a line of text. Hanging punctuation may be placed outside the line box.
      *
      * **Initial value**: `none`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * |   No   |   No    | **10** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/hanging-punctuation
      */
   var hangingPunctuation: js.UndefOr[HangingPunctuationProperty | js.Array[HangingPunctuationProperty]] = js.undefined
   /**
@@ -1664,10 +1670,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * **Initial value**: `manual`
      *
-     * |  Chrome  | Firefox |    Safari     | Edge |      IE      |
-     * | :------: | :-----: | :-----------: | :--: | :----------: |
-     * |  **55**  | **43**  | **5.1** _-x-_ | n/a  | **10** _-x-_ |
-     * | 13 _-x-_ | 6 _-x-_ |               |      |              |
+     * |  Chrome  | Firefox |    Safari     |     Edge     |      IE      |
+     * | :------: | :-----: | :-----------: | :----------: | :----------: |
+     * |  **55**  | **43**  | **5.1** _-x-_ | **12** _-x-_ | **10** _-x-_ |
+     * | 13 _-x-_ | 6 _-x-_ |               |              |              |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/hyphens
      */
@@ -1717,7 +1723,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **57** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/inline-size
      */
@@ -1802,7 +1808,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox |  Safari  |  Edge  | IE  |
      * | :----: | :-----: | :------: | :----: | :-: |
-     * | **57** | **52**  | **10.1** | **16** | n/a |
+     * | **57** | **52**  | **10.1** | **16** | No  |
      *
      * ---
      *
@@ -1911,18 +1917,6 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      */
   var lineHeight: js.UndefOr[LineHeightProperty[TLength] | js.Array[LineHeightProperty[TLength]]] = js.undefined
   /**
-     * The **`line-height-step`** CSS property defines the step units for line box heights. When the step unit is positive, line box heights are rounded up to the closest multiple of the unit. Negative values are invalid.
-     *
-     * **Initial value**: `0`
-     *
-     * | Chrome | Firefox | Safari | Edge | IE  |
-     * | :----: | :-----: | :----: | :--: | :-: |
-     * |  n/a   |   n/a   |  n/a   | n/a  | n/a |
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/line-height-step
-     */
-  var lineHeightStep: js.UndefOr[LineHeightStepProperty[TLength] | js.Array[LineHeightStepProperty[TLength]]] = js.undefined
-  /**
      * The **`list-style-image`** CSS property specifies an image to be used as the list item marker. It is often more convenient to use the shorthand `list-style`.
      *
      * **Initial value**: `none`
@@ -1965,7 +1959,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * | **69** | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/margin-block-end
      */
@@ -1977,7 +1971,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * | **69** | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/margin-block-start
      */
@@ -2001,7 +1995,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * |          Chrome          |        Firefox        |            Safari            | Edge | IE  |
      * | :----------------------: | :-------------------: | :--------------------------: | :--: | :-: |
-     * |          **69**          |        **41**         | **3** _(-webkit-margin-end)_ | n/a  | No  |
+     * |          **69**          |        **41**         | **3** _(-webkit-margin-end)_ |  No  | No  |
      * | 2 _(-webkit-margin-end)_ | 3 _(-moz-margin-end)_ |                              |      |     |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/margin-inline-end
@@ -2014,7 +2008,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * |           Chrome           |         Firefox         |             Safari             | Edge | IE  |
      * | :------------------------: | :---------------------: | :----------------------------: | :--: | :-: |
-     * |           **69**           |         **41**          | **3** _(-webkit-margin-start)_ | n/a  | No  |
+     * |           **69**           |         **41**          | **3** _(-webkit-margin-start)_ |  No  | No  |
      * | 2 _(-webkit-margin-start)_ | 3 _(-moz-margin-start)_ |                                |      |     |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/margin-inline-start
@@ -2111,9 +2105,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * **Initial value**: `add`
      *
-     * | Chrome | Firefox | Safari | Edge | IE  |
-     * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **53**  |   No   | n/a  | No  |
+     * | Chrome | Firefox | Safari |  Edge  | IE  |
+     * | :----: | :-----: | :----: | :----: | :-: |
+     * |   No   | **53**  |   No   | **18** | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/mask-composite
      */
@@ -2159,9 +2153,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * **Initial value**: `center`
      *
-     * |   Chrome    | Firefox |   Safari    | Edge | IE  |
-     * | :---------: | :-----: | :---------: | :--: | :-: |
-     * | **1** _-x-_ | **53**  | **4** _-x-_ | n/a  | n/a |
+     * |   Chrome    | Firefox |   Safari    |  Edge  | IE  |
+     * | :---------: | :-----: | :---------: | :----: | :-: |
+     * | **1** _-x-_ | **53**  | **4** _-x-_ | **18** | n/a |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/mask-position
      */
@@ -2171,9 +2165,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * **Initial value**: `no-repeat`
      *
-     * |   Chrome    | Firefox |   Safari    | Edge | IE  |
-     * | :---------: | :-----: | :---------: | :--: | :-: |
-     * | **1** _-x-_ | **53**  | **4** _-x-_ | n/a  | n/a |
+     * |   Chrome    | Firefox |   Safari    |  Edge  | IE  |
+     * | :---------: | :-----: | :---------: | :----: | :-: |
+     * | **1** _-x-_ | **53**  | **4** _-x-_ | **18** | n/a |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/mask-repeat
      */
@@ -2183,9 +2177,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * **Initial value**: `auto`
      *
-     * | Chrome | Firefox | Safari | Edge | IE  |
-     * | :----: | :-----: | :----: | :--: | :-: |
-     * |  n/a   | **53**  |  n/a   | n/a  | n/a |
+     * | Chrome | Firefox | Safari |  Edge  | IE  |
+     * | :----: | :-----: | :----: | :----: | :-: |
+     * |  n/a   | **53**  |  n/a   | **17** | n/a |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/mask-size
      */
@@ -2206,6 +2200,12 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      * The `**max-block-size**` CSS property specifies the maximum size of an element in the direction opposite that of the writing direction as specified by `writing-mode`. That is, if the writing direction is horizontal, then `max-block-size` is equivalent to `max-height`; if the writing direction is vertical, `max-block-size` is the same as `max-width`.
      *
      * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **57** | **41**  |   No   |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/max-block-size
      */
   var maxBlockSize: js.UndefOr[MaxBlockSizeProperty[TLength] | js.Array[MaxBlockSizeProperty[TLength]]] = js.undefined
   /**
@@ -2227,7 +2227,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox |     Safari     | Edge | IE  |
      * | :----: | :-----: | :------------: | :--: | :-: |
-     * |  Yes   | **41**  | **10.1** _-x-_ |  No  | No  |
+     * | **57** | **41**  | **10.1** _-x-_ |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/max-inline-size
      */
@@ -2253,7 +2253,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **57** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/min-block-size
      */
@@ -2277,7 +2277,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * |   No   | **41**  |   No   | n/a  | No  |
+     * | **57** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/min-inline-size
      */
@@ -2306,45 +2306,12 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      * @see https://developer.mozilla.org/docs/Web/CSS/mix-blend-mode
      */
   var mixBlendMode: js.UndefOr[MixBlendModeProperty | js.Array[MixBlendModeProperty]] = js.undefined
-  /**
-     * The **`offset-distance`** CSS property specifies a position along an `offset-path`.
-     *
-     * **Initial value**: `0`
-     *
-     * |         Chrome         | Firefox | Safari | Edge | IE  |
-     * | :--------------------: | :-----: | :----: | :--: | :-: |
-     * |         **55**         |   n/a   |  n/a   | n/a  | n/a |
-     * | 46 _(motion-distance)_ |         |        |      |     |
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
-     */
-  var motionDistance: js.UndefOr[OffsetDistanceProperty[TLength] | js.Array[OffsetDistanceProperty[TLength]]] = js.undefined
-  /**
-     * The **`offset-path`** CSS property specifies a motion path for an element to follow and defines the element's positioning within the parent container or SVG coordinate system.
-     *
-     * **Initial value**: `none`
-     *
-     * |       Chrome       | Firefox | Safari | Edge | IE  |
-     * | :----------------: | :-----: | :----: | :--: | :-: |
-     * |       **55**       |   n/a   |  n/a   | n/a  | n/a |
-     * | 46 _(motion-path)_ |         |        |      |     |
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
-     */
-  var motionPath: js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]] = js.undefined
-  /**
-     * The **`offset-rotate`** CSS property defines the direction of the element while positioning along the offset path.
-     *
-     * **Initial value**: `auto`
-     *
-     * |         Chrome         | Firefox | Safari | Edge | IE  |
-     * | :--------------------: | :-----: | :----: | :--: | :-: |
-     * |         **56**         |   n/a   |  n/a   | n/a  | n/a |
-     * | 46 _(motion-rotation)_ |         |        |      |     |
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
-     */
-  var motionRotation: js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]] = js.undefined
+  /** **Initial value**: `<code>0</code>` */
+  var motionOffset: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
+  /** **Initial value**: `<code>none</code>` */
+  var motionPath: js.UndefOr[MotionPathProperty | js.Array[MotionPathProperty]] = js.undefined
+  /** **Initial value**: `<code>auto</code>` */
+  var motionRotation: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
   /**
      * The **`object-fit`** CSS property specifies how the contents of a replaced element, such as an `<img>` or `<video>`, should be resized to fit its container.
      *
@@ -2352,7 +2319,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari |  Edge  | IE  |
      * | :----: | :-----: | :----: | :----: | :-: |
-     * | **31** | **36**  |  Yes   | **16** | No  |
+     * | **31** | **36**  | **10** | **16** | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/object-fit
      */
@@ -2370,61 +2337,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      */
   var objectPosition: js.UndefOr[ObjectPositionProperty[TLength] | js.Array[ObjectPositionProperty[TLength]]] = js.undefined
   /** **Initial value**: `auto` */
-  var offsetAnchor: js.UndefOr[OffsetAnchorProperty[TLength] | js.Array[OffsetAnchorProperty[TLength]]] = js.undefined
-  /**
-     * The **`offset-distance`** CSS property specifies a position along an `offset-path`.
-     *
-     * **Initial value**: `0`
-     *
-     * |         Chrome         | Firefox | Safari | Edge | IE  |
-     * | :--------------------: | :-----: | :----: | :--: | :-: |
-     * |         **55**         |   n/a   |  n/a   | n/a  | n/a |
-     * | 46 _(motion-distance)_ |         |        |      |     |
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
-     */
-  var offsetDistance: js.UndefOr[OffsetDistanceProperty[TLength] | js.Array[OffsetDistanceProperty[TLength]]] = js.undefined
-  /**
-     * The **`offset-path`** CSS property specifies a motion path for an element to follow and defines the element's positioning within the parent container or SVG coordinate system.
-     *
-     * **Initial value**: `none`
-     *
-     * |       Chrome       | Firefox | Safari | Edge | IE  |
-     * | :----------------: | :-----: | :----: | :--: | :-: |
-     * |       **55**       |   n/a   |  n/a   | n/a  | n/a |
-     * | 46 _(motion-path)_ |         |        |      |     |
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
-     */
-  var offsetPath: js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]] = js.undefined
-  /** **Initial value**: `auto` */
   var offsetPosition: js.UndefOr[OffsetPositionProperty[TLength] | js.Array[OffsetPositionProperty[TLength]]] = js.undefined
-  /**
-     * The **`offset-rotate`** CSS property defines the direction of the element while positioning along the offset path.
-     *
-     * **Initial value**: `auto`
-     *
-     * |         Chrome         | Firefox | Safari | Edge | IE  |
-     * | :--------------------: | :-----: | :----: | :--: | :-: |
-     * |         **56**         |   n/a   |  n/a   | n/a  | n/a |
-     * | 46 _(motion-rotation)_ |         |        |      |     |
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
-     */
-  var offsetRotate: js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]] = js.undefined
-  /**
-     * The **`offset-rotate`** CSS property defines the direction of the element while positioning along the offset path.
-     *
-     * **Initial value**: `auto`
-     *
-     * |         Chrome         | Firefox | Safari | Edge | IE  |
-     * | :--------------------: | :-----: | :----: | :--: | :-: |
-     * |         **56**         |   n/a   |  n/a   | n/a  | n/a |
-     * | 46 _(motion-rotation)_ |         |        |      |     |
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
-     */
-  var offsetRotation: js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]] = js.undefined
   /**
      * The **`opacity`** CSS property specifies the level of transparency of an element, that is, the degree to which the content behind the element is visible.
      *
@@ -2522,7 +2435,15 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      * @see https://developer.mozilla.org/docs/Web/CSS/overflow
      */
   var overflow: js.UndefOr[OverflowProperty | js.Array[OverflowProperty]] = js.undefined
-  /** **Initial value**: `auto` */
+  /**
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **56** |   No    |   No   |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/overflow-anchor
+     */
   var overflowAnchor: js.UndefOr[OverflowAnchorProperty | js.Array[OverflowAnchorProperty]] = js.undefined
   /** **Initial value**: `auto` */
   var overflowBlock: js.UndefOr[OverflowBlockProperty | js.Array[OverflowBlockProperty]] = js.undefined
@@ -2530,6 +2451,12 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      * The **`overflow-clip-box`** CSS property specifies relative to which box the clipping happens when there is an overflow. It is short hand for the `overflow-clip-box-inline` and `overflow-clip-box-block` properties.
      *
      * **Initial value**: `padding-box`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * |   No   | **29**  |   No   |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Mozilla/CSS/overflow-clip-box
      */
   var overflowClipBox: js.UndefOr[OverflowClipBoxProperty | js.Array[OverflowClipBoxProperty]] = js.undefined
   /** **Initial value**: `auto` */
@@ -2539,10 +2466,10 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * **Initial value**: `normal`
      *
-     * |       Chrome        |      Firefox      |       Safari        |         Edge         |          IE           |
-     * | :-----------------: | :---------------: | :-----------------: | :------------------: | :-------------------: |
-     * | **1** _(word-wrap)_ |      **49**       | **1** _(word-wrap)_ | **12** _(word-wrap)_ | **5.5** _(word-wrap)_ |
-     * |                     | 3.5 _(word-wrap)_ |                     |                      |                       |
+     * |       Chrome        |      Firefox      |       Safari        |       Edge       |          IE           |
+     * | :-----------------: | :---------------: | :-----------------: | :--------------: | :-------------------: |
+     * | **1** _(word-wrap)_ |      **49**       | **1** _(word-wrap)_ |      **18**      | **5.5** _(word-wrap)_ |
+     * |                     | 3.5 _(word-wrap)_ |                     | 12 _(word-wrap)_ |                       |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/overflow-wrap
      */
@@ -2576,9 +2503,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * **Initial value**: `auto`
      *
-     * | Chrome | Firefox | Safari | Edge | IE  |
-     * | :----: | :-----: | :----: | :--: | :-: |
-     * | **63** | **59**  |   No   |  No  | No  |
+     * | Chrome | Firefox | Safari |  Edge  | IE  |
+     * | :----: | :-----: | :----: | :----: | :-: |
+     * | **63** | **59**  |   No   | **18** | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior
      */
@@ -2588,9 +2515,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * **Initial value**: `auto`
      *
-     * | Chrome | Firefox | Safari | Edge | IE  |
-     * | :----: | :-----: | :----: | :--: | :-: |
-     * | **63** | **59**  |   No   |  No  | No  |
+     * | Chrome | Firefox | Safari |  Edge  | IE  |
+     * | :----: | :-----: | :----: | :----: | :-: |
+     * | **63** | **59**  |   No   | **18** | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior-x
      */
@@ -2600,9 +2527,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * **Initial value**: `auto`
      *
-     * | Chrome | Firefox | Safari | Edge | IE  |
-     * | :----: | :-----: | :----: | :--: | :-: |
-     * | **63** | **59**  |   No   |  No  | No  |
+     * | Chrome | Firefox | Safari |  Edge  | IE  |
+     * | :----: | :-----: | :----: | :----: | :-: |
+     * | **63** | **59**  |   No   | **18** | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/overscroll-behavior-y
      */
@@ -2614,7 +2541,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * | **69** | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/padding-block-end
      */
@@ -2626,7 +2553,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * | Chrome | Firefox | Safari | Edge | IE  |
      * | :----: | :-----: | :----: | :--: | :-: |
-     * | **69** | **41**  |   No   | n/a  | No  |
+     * | **69** | **41**  |   No   |  No  | No  |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/padding-block-start
      */
@@ -2652,7 +2579,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * |          Chrome           |        Firefox         |            Safari             | Edge | IE  |
      * | :-----------------------: | :--------------------: | :---------------------------: | :--: | :-: |
-     * |          **69**           |         **41**         | **3** _(-webkit-padding-end)_ | n/a  | No  |
+     * |          **69**           |         **41**         | **3** _(-webkit-padding-end)_ |  No  | No  |
      * | 2 _(-webkit-padding-end)_ | 3 _(-moz-padding-end)_ |                               |      |     |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/padding-inline-end
@@ -2665,7 +2592,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      *
      * |           Chrome            |         Firefox          |             Safari              | Edge | IE  |
      * | :-------------------------: | :----------------------: | :-----------------------------: | :--: | :-: |
-     * |           **69**            |          **41**          | **3** _(-webkit-padding-start)_ | n/a  | No  |
+     * |           **69**            |          **41**          | **3** _(-webkit-padding-start)_ |  No  | No  |
      * | 2 _(-webkit-padding-start)_ | 3 _(-moz-padding-start)_ |                                 |      |     |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/padding-inline-start
@@ -2969,17 +2896,356 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
      */
   var scrollBehavior: js.UndefOr[ScrollBehaviorProperty | js.Array[ScrollBehaviorProperty]] = js.undefined
   /**
+     * The `scroll-margin` property is a shorthand property which sets all of the scroll-margin longhands, assigning values much like the margin property does for the margin-\* longhands.
+     *
+     * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin
+     */
+  var scrollMargin: js.UndefOr[ScrollMarginProperty[TLength] | js.Array[ScrollMarginProperty[TLength]]] = js.undefined
+  /**
+     * The `scroll-margin-block` property is a shorthand property which sets the scroll-margin longhands in the block dimension.
+     *
+     * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    |   No   |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-block
+     */
+  var scrollMarginBlock: js.UndefOr[
+    ScrollMarginBlockProperty[TLength] | js.Array[ScrollMarginBlockProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-margin-block-end` property defines the margin of the scroll snap area at the end of the block dimension that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.
+     *
+     * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-block-end
+     */
+  var scrollMarginBlockEnd: js.UndefOr[
+    ScrollMarginBlockEndProperty[TLength] | js.Array[ScrollMarginBlockEndProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-margin-block-start` property defines the margin of the scroll snap area at the start of the block dimension that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.
+     *
+     * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-block-start
+     */
+  var scrollMarginBlockStart: js.UndefOr[
+    ScrollMarginBlockStartProperty[TLength] | js.Array[ScrollMarginBlockStartProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-margin-bottom` property defines the bottom margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.
+     *
+     * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-bottom
+     */
+  var scrollMarginBottom: js.UndefOr[
+    ScrollMarginBottomProperty[TLength] | js.Array[ScrollMarginBottomProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-margin-inline-end` property defines the margin of the scroll snap area at the end of the inline dimension that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.
+     *
+     * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-inline-end
+     */
+  var scrollMarginInlineEnd: js.UndefOr[
+    ScrollMarginInlineEndProperty[TLength] | js.Array[ScrollMarginInlineEndProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-margin-inline-start` property defines the margin of the scroll snap area at the start of the inline dimension that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.
+     *
+     * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-inline-start
+     */
+  var scrollMarginInlineStart: js.UndefOr[
+    ScrollMarginInlineStartProperty[TLength] | js.Array[ScrollMarginInlineStartProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-margin-left` property defines the left margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.
+     *
+     * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-left
+     */
+  var scrollMarginLeft: js.UndefOr[ScrollMarginLeftProperty[TLength] | js.Array[ScrollMarginLeftProperty[TLength]]] = js.undefined
+  /**
+     * The `scroll-margin-right` property defines the right margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.
+     *
+     * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-right
+     */
+  var scrollMarginRight: js.UndefOr[
+    ScrollMarginRightProperty[TLength] | js.Array[ScrollMarginRightProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-margin-top` property defines the top margin of the scroll snap area that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.
+     *
+     * **Initial value**: `0`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-top
+     */
+  var scrollMarginTop: js.UndefOr[ScrollMarginTopProperty[TLength] | js.Array[ScrollMarginTopProperty[TLength]]] = js.undefined
+  /**
+   * The scroll-padding property is a shorthand property which sets all of the scroll-padding longhands, assigning values much like the padding property does for the padding-\* longhands.  
+    
+  The scroll-padding properties define offsets for the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+   * 
+   * **Initial value**: `auto`
+   * 
+   * | Chrome | Firefox | Safari | Edge | IE  |
+   * | :----: | :-----: | :----: | :--: | :-: |
+   * | **69** |   No    | **11** |  No  | No  |
+   * 
+   * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding
+   */
+  var scrollPadding: js.UndefOr[ScrollPaddingProperty[TLength] | js.Array[ScrollPaddingProperty[TLength]]] = js.undefined
+  /**
+   * The `scroll-padding-block` property is a shorthand property which sets the scroll-padding longhands for the block dimension.  
+    
+  The scroll-padding properties define offsets for the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+   * 
+   * **Initial value**: `auto`
+   * 
+   * | Chrome | Firefox | Safari | Edge | IE  |
+   * | :----: | :-----: | :----: | :--: | :-: |
+   * | **69** |   No    |   No   |  No  | No  |
+   * 
+   * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-block
+   */
+  var scrollPaddingBlock: js.UndefOr[
+    ScrollPaddingBlockProperty[TLength] | js.Array[ScrollPaddingBlockProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-padding-block-end` property defines offsets for the end edge in the block dimension of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+     *
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-block-end
+     */
+  var scrollPaddingBlockEnd: js.UndefOr[
+    ScrollPaddingBlockEndProperty[TLength] | js.Array[ScrollPaddingBlockEndProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-padding-block-start` property defines offsets for the start edge in the block dimension of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+     *
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-block-start
+     */
+  var scrollPaddingBlockStart: js.UndefOr[
+    ScrollPaddingBlockStartProperty[TLength] | js.Array[ScrollPaddingBlockStartProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-padding-bottom` property defines offsets for the bottom of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+     *
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-bottom
+     */
+  var scrollPaddingBottom: js.UndefOr[
+    ScrollPaddingBottomProperty[TLength] | js.Array[ScrollPaddingBottomProperty[TLength]]
+  ] = js.undefined
+  /**
+   * The `scroll-padding-inline` property is a shorthand property which sets the scroll-padding longhands for the inline dimension.  
+    
+  The scroll-padding properties define offsets for the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+   * 
+   * **Initial value**: `auto`
+   * 
+   * | Chrome | Firefox | Safari | Edge | IE  |
+   * | :----: | :-----: | :----: | :--: | :-: |
+   * | **69** |   No    |   No   |  No  | No  |
+   * 
+   * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-inline
+   */
+  var scrollPaddingInline: js.UndefOr[
+    ScrollPaddingInlineProperty[TLength] | js.Array[ScrollPaddingInlineProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-padding-inline-end` property defines offsets for the end edge in the inline dimension of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+     *
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-inline-end
+     */
+  var scrollPaddingInlineEnd: js.UndefOr[
+    ScrollPaddingInlineEndProperty[TLength] | js.Array[ScrollPaddingInlineEndProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-padding-inline-start` property defines offsets for the start edge in the inline dimension of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+     *
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-inline-start
+     */
+  var scrollPaddingInlineStart: js.UndefOr[
+    ScrollPaddingInlineStartProperty[TLength] | js.Array[ScrollPaddingInlineStartProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-padding-left` property defines offsets for the left of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+     *
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-left
+     */
+  var scrollPaddingLeft: js.UndefOr[
+    ScrollPaddingLeftProperty[TLength] | js.Array[ScrollPaddingLeftProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-padding-right` property defines offsets for the right of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+     *
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-right
+     */
+  var scrollPaddingRight: js.UndefOr[
+    ScrollPaddingRightProperty[TLength] | js.Array[ScrollPaddingRightProperty[TLength]]
+  ] = js.undefined
+  /**
+     * The `scroll-padding-top` property defines offsets for the top of the optimal viewing region of the scrollport: the region used as the target region for placing things in view of the user. This allows the author to exclude regions of the scrollport that are obscured by other content (such as fixed-positioned toolbars or sidebars) or simply to put more breathing room between a targetted element and the edges of the scrollport.
+     *
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-top
+     */
+  var scrollPaddingTop: js.UndefOr[ScrollPaddingTopProperty[TLength] | js.Array[ScrollPaddingTopProperty[TLength]]] = js.undefined
+  /**
+     * The `scroll-snap-align` property specifies the box’s snap position as an alignment of its snap area (as the alignment subject) within its snap container’s snapport (as the alignment container). The two values specify the snapping alignment in the block axis and inline axis, respectively. If only one value is specified, the second value defaults to the same value.
+     *
+     * **Initial value**: `none`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    | **11** |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-snap-align
+     */
+  var scrollSnapAlign: js.UndefOr[ScrollSnapAlignProperty | js.Array[ScrollSnapAlignProperty]] = js.undefined
+  /**
+     * The **`scroll-snap-stop`** CSS property defines whether the scroll container is allowed to "pass over" possible snap positions.
+     *
+     * **Initial value**: `normal`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * | **69** |   No    |   No   |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-snap-stop
+     */
+  var scrollSnapStop: js.UndefOr[ScrollSnapStopProperty | js.Array[ScrollSnapStopProperty]] = js.undefined
+  /**
      * The **`scroll-snap-type`** CSS property defines how strictly snap points are enforced on the scroll container in case there is one.
      *
      * **Initial value**: `none`
      *
-     * | Chrome | Firefox |   Safari    |     Edge     |      IE      |
-     * | :----: | :-----: | :---------: | :----------: | :----------: |
-     * |   No   | **39**  | **9** _-x-_ | **12** _-x-_ | **10** _-x-_ |
+     * | Chrome | Firefox | Safari  |     Edge     |      IE      |
+     * | :----: | :-----: | :-----: | :----------: | :----------: |
+     * | **69** | **39**  | **11**  | **12** _-x-_ | **10** _-x-_ |
+     * |        |         | 9 _-x-_ |              |              |
      *
      * @see https://developer.mozilla.org/docs/Web/CSS/scroll-snap-type
      */
   var scrollSnapType: js.UndefOr[ScrollSnapTypeProperty | js.Array[ScrollSnapTypeProperty]] = js.undefined
+  /**
+     * The **`scrollbar-color`** CSS property sets the color of the scrollbar track and thumb.
+     *
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * |   No   | **64**  |   No   |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scrollbar-color
+     */
+  var scrollbarColor: js.UndefOr[ScrollbarColorProperty | js.Array[ScrollbarColorProperty]] = js.undefined
+  /**
+     * The `scrollbar-width` property allows the author to set the maximum thickness of an element’s scrollbars when they are shown.
+     *
+     * **Initial value**: `auto`
+     *
+     * | Chrome | Firefox | Safari | Edge | IE  |
+     * | :----: | :-----: | :----: | :--: | :-: |
+     * |   No   | **64**  |   No   |  No  | No  |
+     *
+     * @see https://developer.mozilla.org/docs/Web/CSS/scrollbar-width
+     */
+  var scrollbarWidth: js.UndefOr[ScrollbarWidthProperty[TLength] | js.Array[ScrollbarWidthProperty[TLength]]] = js.undefined
   /**
      * The **`shape-image-threshold`** CSS property defines the alpha channel threshold used to extract the shape using an image as the value for `shape-outside`.
      *

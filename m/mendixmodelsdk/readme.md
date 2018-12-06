@@ -26,11 +26,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-/** Current SDK version: 4.16.0 */
+/** Current SDK version: 4.17.0 */
 /**
  * Convenience to be able to export everything at once.
  */
-/** Highest supported Metamodel version: 7.20.0 */
+/** Highest supported Metamodel version: 7.21.0 */
 /**
  * The `utils` module contains various utility interfaces and functions.
  */

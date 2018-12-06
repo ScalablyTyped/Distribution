@@ -694,6 +694,13 @@ object MediaLiveNs extends js.Object {
          */
     var InputSecurityGroups: js.UndefOr[__listOf__string] = js.undefined
     /**
+         * A list of the MediaConnect Flows that you want to use in this input. You can specify as few as one
+    Flow and presently, as many as two. The only requirement is when you have more than one is that each Flow is in a
+    separate Availability Zone as this ensures your EML input is redundant to AZ issues.
+    
+         */
+    var MediaConnectFlows: js.UndefOr[__listOfMediaConnectFlowRequest] = js.undefined
+    /**
          * Name of the input.
          */
     var Name: js.UndefOr[__string] = js.undefined
@@ -703,6 +710,10 @@ object MediaLiveNs extends js.Object {
     
          */
     var RequestId: js.UndefOr[__string] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
+         */
+    var RoleArn: js.UndefOr[__string] = js.undefined
     /**
          * The source URLs for a PULL-type input. Every PULL type input needs
     exactly two source URLs for redundancy.
@@ -968,9 +979,17 @@ object MediaLiveNs extends js.Object {
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
+         * A list of MediaConnect Flows for this input.
+         */
+    var MediaConnectFlows: js.UndefOr[__listOfMediaConnectFlow] = js.undefined
+    /**
          * The user-assigned name (This is a mutable value).
          */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
+         */
+    var RoleArn: js.UndefOr[__string] = js.undefined
     /**
          * A list of IDs for all the security groups attached to the input.
          */
@@ -1509,7 +1528,7 @@ object MediaLiveNs extends js.Object {
          */
     var AfdSignaling: js.UndefOr[AfdSignaling] = js.undefined
     /**
-         * Average bitrate in bits/second. Required for VBR, CBR, and ABR. For MS Smooth outputs, bitrates must be unique when rounded down to the nearest multiple of 1000.
+         * Average bitrate in bits/second. Required when the rate control mode is VBR or CBR. Not used for QVBR. In an MS Smooth output group, each output must have a unique value when its bitrate is rounded down to the nearest multiple of 1000.
          */
     var Bitrate: js.UndefOr[__integerMin1000] = js.undefined
     /**
@@ -1577,9 +1596,9 @@ object MediaLiveNs extends js.Object {
          */
     var LookAheadRateControl: js.UndefOr[H264LookAheadRateControl] = js.undefined
     /**
-         * Maximum bitrate in bits/second (for VBR and QVBR modes only).
+         * For QVBR: See the tooltip for Quality level 
     
-    Required when rateControlMode is "qvbr".
+    For VBR: Set the maximum bitrate in order to accommodate expected spikes in the complexity of the video.
          */
     var MaxBitrate: js.UndefOr[__integerMin1000] = js.undefined
     /**
@@ -1607,19 +1626,23 @@ object MediaLiveNs extends js.Object {
          */
     var Profile: js.UndefOr[H264Profile] = js.undefined
     /**
-         * Target quality value. Applicable only to QVBR mode. 1 is the lowest quality and 10 is the
-    highest and approaches lossless. Typical levels for content distribution are between 6 and 8.
+         * Controls the target quality for the video encode. Applies only when the rate control mode is QVBR. Set values for the QVBR quality level field and Max bitrate field that suit your most important viewing devices. Recommended values are:
+    - Primary screen: Quality level: 8 to 10. Max bitrate: 4M
+    - PC or tablet: Quality level: 7. Max bitrate: 1.5M to 3M
+    - Smartphone: Quality level: 6. Max bitrate: 1M to 1.5M
          */
     var QvbrQualityLevel: js.UndefOr[__integerMin1Max10] = js.undefined
     /**
          * Rate control mode. 
     
-    - CBR: Constant Bit Rate
-    - VBR: Variable Bit Rate
-    - QVBR: Encoder dynamically controls the bitrate to meet the desired quality (specified
-    through the qvbrQualityLevel field). The bitrate will not exceed the bitrate specified in
-    the maxBitrate field and will not fall below the bitrate required to meet the desired
-    quality level.
+    QVBR: Quality will match the specified quality level except when it is constrained by the
+    maximum bitrate.  Recommended if you or your viewers pay for bandwidth.
+    
+    VBR: Quality and bitrate vary, depending on the video complexity. Recommended instead of QVBR
+    if you want to maintain a specific average bitrate over the duration of the channel.
+    
+    CBR: Quality varies, depending on the video complexity. Recommended only if you distribute
+    your assets to devices that cannot handle variable bitrates.
          */
     var RateControlMode: js.UndefOr[H264RateControlMode] = js.undefined
     /**
@@ -1984,9 +2007,17 @@ object MediaLiveNs extends js.Object {
          */
     var Id: js.UndefOr[__string] = js.undefined
     /**
+         * A list of MediaConnect Flows for this input.
+         */
+    var MediaConnectFlows: js.UndefOr[__listOfMediaConnectFlow] = js.undefined
+    /**
          * The user-assigned name (This is a mutable value).
          */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
+         */
+    var RoleArn: js.UndefOr[__string] = js.undefined
     /**
          * A list of IDs for all the security groups attached to the input.
          */
@@ -2645,6 +2676,22 @@ object MediaLiveNs extends js.Object {
          * Packet Identifier (PID) of the elementary video stream in the transport stream. Can be entered as a decimal or hexadecimal value.
          */
     var VideoPid: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait MediaConnectFlow extends js.Object {
+    /**
+         * The unique ARN of the MediaConnect Flow being used as a source.
+         */
+    var FlowArn: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait MediaConnectFlowRequest extends js.Object {
+    /**
+         * The ARN of the MediaConnect Flow that you want to use as a source.
+         */
+    var FlowArn: js.UndefOr[__string] = js.undefined
   }
   
   
@@ -4394,9 +4441,20 @@ object MediaLiveNs extends js.Object {
          */
     var InputSecurityGroups: js.UndefOr[__listOf__string] = js.undefined
     /**
+         * A list of the MediaConnect Flow ARNs that you want to use as the source of the input. You can specify as few as one
+    Flow and presently, as many as two. The only requirement is when you have more than one is that each Flow is in a
+    separate Availability Zone as this ensures your EML input is redundant to AZ issues.
+    
+         */
+    var MediaConnectFlows: js.UndefOr[__listOfMediaConnectFlowRequest] = js.undefined
+    /**
          * Name of the input.
          */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+         * The Amazon Resource Name (ARN) of the role this input assumes during and after creation.
+         */
+    var RoleArn: js.UndefOr[__string] = js.undefined
     /**
          * The source URLs for a PULL-type input. Every PULL type input needs
     exactly two source URLs for redundancy.
@@ -4621,7 +4679,7 @@ object MediaLiveNs extends js.Object {
   type InputSecurityGroupState = awsDashSdkLib.awsDashSdkLibStrings.IDLE | awsDashSdkLib.awsDashSdkLibStrings.IN_USE | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
   type InputSourceEndBehavior = awsDashSdkLib.awsDashSdkLibStrings.CONTINUE | awsDashSdkLib.awsDashSdkLibStrings.LOOP | java.lang.String
   type InputState = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.DETACHED | awsDashSdkLib.awsDashSdkLibStrings.ATTACHED | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
-  type InputType = awsDashSdkLib.awsDashSdkLibStrings.UDP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTMP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTMP_PULL | awsDashSdkLib.awsDashSdkLibStrings.URL_PULL | awsDashSdkLib.awsDashSdkLibStrings.MP4_FILE | java.lang.String
+  type InputType = awsDashSdkLib.awsDashSdkLibStrings.UDP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTMP_PUSH | awsDashSdkLib.awsDashSdkLibStrings.RTMP_PULL | awsDashSdkLib.awsDashSdkLibStrings.URL_PULL | awsDashSdkLib.awsDashSdkLibStrings.MP4_FILE | awsDashSdkLib.awsDashSdkLibStrings.MEDIACONNECT | java.lang.String
   type LogLevel = awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.WARNING | awsDashSdkLib.awsDashSdkLibStrings.INFO | awsDashSdkLib.awsDashSdkLibStrings.DEBUG | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
   type M2tsAbsentInputAudioBehavior = awsDashSdkLib.awsDashSdkLibStrings.DROP | awsDashSdkLib.awsDashSdkLibStrings.ENCODE_SILENCE | java.lang.String
   type M2tsArib = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
@@ -4751,6 +4809,8 @@ object MediaLiveNs extends js.Object {
   type __listOfInputSourceRequest = js.Array[InputSourceRequest]
   type __listOfInputWhitelistRule = js.Array[InputWhitelistRule]
   type __listOfInputWhitelistRuleCidr = js.Array[InputWhitelistRuleCidr]
+  type __listOfMediaConnectFlow = js.Array[MediaConnectFlow]
+  type __listOfMediaConnectFlowRequest = js.Array[MediaConnectFlowRequest]
   type __listOfOffering = js.Array[Offering]
   type __listOfOutput = js.Array[Output]
   type __listOfOutputDestination = js.Array[OutputDestination]

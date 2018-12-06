@@ -16,6 +16,7 @@ package object JSXNs {
   type FocusEventHandler = EventHandler[stdLib.FocusEvent]
   type GenericEventHandler = EventHandler[stdLib.Event]
   type KeyboardEventHandler = EventHandler[stdLib.KeyboardEvent]
+  type LibraryManagedAttributes[Component, Props] = Props | (preactLib.Defaultize[Props, js.Any])
   type MouseEventHandler = EventHandler[stdLib.MouseEvent]
   type PointerEventHandler = EventHandler[stdLib.PointerEvent]
   type TouchEventHandler = EventHandler[stdLib.TouchEvent]

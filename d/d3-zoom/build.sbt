@@ -1,15 +1,15 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "d3-zoom"
-version := "1.7-dt-20181206Z-d28326"
+version := "1.7-dt-20181206Z-8f507d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "d3-color" % "1.2-dt-20180910Z-4cd0f3",
-  "com.scalablytyped" %%% "d3-interpolate" % "1.3-dt-20180927Z-a45541",
-  "com.scalablytyped" %%% "d3-selection" % "1.3-dt-20181206Z-ca857a",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "d3-color" % "1.2-dt-20180910Z-63ebbb",
+  "org.scalablytyped" %%% "d3-interpolate" % "1.3-dt-20180927Z-11b81b",
+  "org.scalablytyped" %%% "d3-selection" % "1.3-dt-20181206Z-aaebc1",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

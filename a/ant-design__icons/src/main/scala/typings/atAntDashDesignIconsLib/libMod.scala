@@ -249,6 +249,9 @@ object libMod extends js.Object {
   val ExperimentTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val ExportOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val EyeFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val EyeInvisibleFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val EyeInvisibleOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val EyeInvisibleTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val EyeOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val EyeTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val FacebookFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native

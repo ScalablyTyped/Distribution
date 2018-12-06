@@ -12,7 +12,6 @@ object libInternalModMembers extends js.Object {
   val $mobx: js.Symbol = js.native
   val EMPTY_ARRAY: js.Array[scala.Nothing] = js.native
   val OBFUSCATED_ERROR: /* An invariant failed, however the error is obfuscated because this is an production build. */ java.lang.String = js.native
-  val UNCHANGED: mobxLib.libTypesObservablevalueMod.IUNCHANGED = js.native
   var action: mobxLib.libApiActionMod.IActionFactory = js.native
   val comparer: mobxLib.Anon_Default = js.native
   var computed: mobxLib.libApiComputedMod.IComputed = js.native

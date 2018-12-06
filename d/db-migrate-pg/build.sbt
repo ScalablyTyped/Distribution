@@ -1,18 +1,18 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "db-migrate-pg"
-version := "0.0-unknown-dt-20181121Z-04fe02"
+version := "0.0-unknown-dt-20181121Z-41cb80"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-7bd99a",
-  "com.scalablytyped" %%% "db-migrate-base" % "0.0-unknown-dt-20181121Z-65136b",
-  "com.scalablytyped" %%% "moment" % "2.22.2-cce931",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "pg" % "7.4-dt-20181009Z-ed42f5",
-  "com.scalablytyped" %%% "pg-types" % "1.11-dt-20180910Z-22496f",
-  "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20180910Z-3eb23e",
+  "org.scalablytyped" %%% "db-migrate-base" % "0.0-unknown-dt-20181121Z-306297",
+  "org.scalablytyped" %%% "moment" % "2.22.2-39aab6",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
+  "org.scalablytyped" %%% "pg" % "7.4-dt-20181009Z-985d2e",
+  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180910Z-6f9337",
+  "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

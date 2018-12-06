@@ -257,6 +257,47 @@ trait CodeBuild
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     *  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials. 
+     */
+  def deleteSourceCredentials(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteSourceCredentialsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials. 
+     */
+  def deleteSourceCredentials(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteSourceCredentialsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteSourceCredentialsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials. 
+     */
+  def deleteSourceCredentials(params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteSourceCredentialsInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteSourceCredentialsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Deletes a set of GitHub, GitHub Enterprise, or Bitbucket source credentials. 
+     */
+  def deleteSourceCredentials(
+    params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteSourceCredentialsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteSourceCredentialsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteSourceCredentialsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * For an existing AWS CodeBuild build project that has its source code stored in a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the source code every time a code change is pushed to the repository.
      */
   def deleteWebhook(): awsDashSdkLib.libRequestMod.Request[
@@ -295,6 +336,47 @@ trait CodeBuild
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.DeleteWebhookOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
+     */
+  def importSourceCredentials(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ImportSourceCredentialsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
+     */
+  def importSourceCredentials(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ImportSourceCredentialsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ImportSourceCredentialsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
+     */
+  def importSourceCredentials(params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ImportSourceCredentialsInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ImportSourceCredentialsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Imports the source repository credentials for an AWS CodeBuild project that has its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository. 
+     */
+  def importSourceCredentials(
+    params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ImportSourceCredentialsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ImportSourceCredentialsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ImportSourceCredentialsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -500,6 +582,47 @@ trait CodeBuild
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ListProjectsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns a list of SourceCredentialsInfo objects. 
+     */
+  def listSourceCredentials(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ListSourceCredentialsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns a list of SourceCredentialsInfo objects. 
+     */
+  def listSourceCredentials(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ListSourceCredentialsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ListSourceCredentialsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns a list of SourceCredentialsInfo objects. 
+     */
+  def listSourceCredentials(params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ListSourceCredentialsInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ListSourceCredentialsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     *  Returns a list of SourceCredentialsInfo objects. 
+     */
+  def listSourceCredentials(
+    params: awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ListSourceCredentialsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ListSourceCredentialsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodebuildMod.CodeBuildNs.ListSourceCredentialsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

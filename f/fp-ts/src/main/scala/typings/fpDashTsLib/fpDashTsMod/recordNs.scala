@@ -23,6 +23,16 @@ object recordNs extends js.Object {
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
     stdLib.Record[java.lang.String, js.Any]
   ] = js.native
+  val filterMapWithIndex: js.Function2[
+    /* fa */ stdLib.Record[java.lang.String, js.Any], 
+    /* f */ js.Function2[/* key */ java.lang.String, /* a */ js.Any, fpDashTsLib.libOptionMod.Option[js.Any]], 
+    stdLib.Record[java.lang.String, js.Any]
+  ] = js.native
+  val filterWithIndex: js.Function2[
+    /* fa */ stdLib.Record[java.lang.String, js.Any], 
+    /* p */ js.Function2[/* key */ java.lang.String, /* a */ js.Any, scala.Boolean], 
+    stdLib.Record[java.lang.String, js.Any]
+  ] = js.native
   val foldMap: js.Function1[
     /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
     js.Function2[
@@ -31,10 +41,24 @@ object recordNs extends js.Object {
       js.Any
     ]
   ] = js.native
+  val foldMapWithKey: js.Function1[
+    /* M */ fpDashTsLib.libMonoidMod.Monoid[js.Any], 
+    js.Function2[
+      /* fa */ stdLib.Record[java.lang.String, js.Any], 
+      /* f */ js.Function2[/* k */ java.lang.String, /* a */ js.Any, js.Any], 
+      js.Any
+    ]
+  ] = js.native
   val foldr: js.Function3[
     /* fa */ stdLib.Record[java.lang.String, js.Any], 
     /* b */ js.Any, 
     /* f */ js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any], 
+    js.Any
+  ] = js.native
+  val foldrWithKey: js.Function3[
+    /* fa */ stdLib.Record[java.lang.String, js.Any], 
+    /* b */ js.Any, 
+    /* f */ js.Function3[/* k */ java.lang.String, /* a */ js.Any, /* b */ js.Any, js.Any], 
     js.Any
   ] = js.native
   val getMonoid: js.Function1[
@@ -85,6 +109,20 @@ object recordNs extends js.Object {
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
     fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, js.Any], stdLib.Record[java.lang.String, js.Any]]
   ] = js.native
+  val partitionMapWithIndex: js.Function2[
+    /* fa */ stdLib.Record[java.lang.String, js.Any], 
+    /* f */ js.Function2[
+      /* key */ java.lang.String, 
+      /* a */ js.Any, 
+      fpDashTsLib.libEitherMod.Either[js.Any, js.Any]
+    ], 
+    fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, js.Any], stdLib.Record[java.lang.String, js.Any]]
+  ] = js.native
+  val partitionWithIndex: js.Function2[
+    /* fa */ stdLib.Record[java.lang.String, js.Any], 
+    /* p */ js.Function2[/* key */ java.lang.String, /* a */ js.Any, scala.Boolean], 
+    fpDashTsLib.libCompactableMod.Separated[stdLib.Record[java.lang.String, js.Any], stdLib.Record[java.lang.String, js.Any]]
+  ] = js.native
   val pop: js.Function2[
     /* k */ java.lang.String, 
     /* d */ stdLib.Record[java.lang.String, js.Any], 
@@ -94,6 +132,12 @@ object recordNs extends js.Object {
     /* fa */ stdLib.Record[java.lang.String, js.Any], 
     /* b */ js.Any, 
     /* f */ js.Function2[/* b */ js.Any, /* a */ js.Any, js.Any], 
+    js.Any
+  ] = js.native
+  val reduceWithKey: js.Function3[
+    /* fa */ stdLib.Record[java.lang.String, js.Any], 
+    /* b */ js.Any, 
+    /* f */ js.Function3[/* k */ java.lang.String, /* b */ js.Any, /* a */ js.Any, js.Any], 
     js.Any
   ] = js.native
   val remove: js.Function2[

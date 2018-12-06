@@ -94,7 +94,7 @@
 [info ] InferReturnTypes.scala:32 Could not infer return type [id => 3d-bin-packing, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(boxologic) / TsDeclClass(Boxologic) / TsMemberFunction(report_results))] 
 [info ] InferReturnTypes.scala:32 Could not infer return type [id => 3d-bin-packing, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(boxologic) / TsDeclClass(Boxologic) / TsMemberFunction(write_box_file))] 
 [debug] PhaseRunner.scala:78 Success [id => 3d-bin-packing, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:34 Processing TsIdentLibrarySimple(3d-bin-packing) [id => 3d-bin-packing, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:34 Processing 3d-bin-packing [id => 3d-bin-packing, phase => scala.js] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(setName, getWidth, setWidth, setHeight, TYPE, getHeight, getVolume, getName, getLength, setLength) [id => 3d-bin-packing, phase => scala.js, this => Name(3dDashBinDashPackingLib) / Name(bwsNs) / Name(packerNs) / Name(Product)] 
 [info ] CompleteClass.scala:60 Completed implementations Vector(setName, getWidth, setWidth, setHeight, TYPE, getHeight, getVolume, getName, getLength, setLength) [id => 3d-bin-packing, phase => scala.js, this => Name(3dDashBinDashPackingLib) / Name(bwsNs) / Name(packerNs) / Name(Wrapper)] 
 [debug] PhaseRunner.scala:78 Success [id => 3d-bin-packing, phase => scala.js] 

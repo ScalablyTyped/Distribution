@@ -667,47 +667,6 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * 
-     */
-  def describeProvisionedCapacity(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * 
-     */
-  def describeProvisionedCapacity(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * 
-     */
-  def describeProvisionedCapacity(params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * 
-     */
-  def describeProvisionedCapacity(
-    params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeProvisionedCapacityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
      * Describes the specified rules or the rules for the specified listener. You must specify either a listener or one or more rules.
      */
   def describeRules(): awsDashSdkLib.libRequestMod.Request[
@@ -1033,47 +992,6 @@ trait ELBv2
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyLoadBalancerAttributesOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * 
-     */
-  def modifyProvisionedCapacity(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * 
-     */
-  def modifyProvisionedCapacity(
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * 
-     */
-  def modifyProvisionedCapacity(params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityInput): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
-    awsDashSdkLib.libErrorMod.AWSError
-  ] = js.native
-  /**
-     * 
-     */
-  def modifyProvisionedCapacity(
-    params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityInput,
-    callback: js.Function2[
-      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
-      scala.Unit
-    ]
-  ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyProvisionedCapacityOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
