@@ -37,7 +37,7 @@ trait PjaxStatic extends js.Object {
        * - push: a boolean indicates whether to pushState the URL. Default is true.
        * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
        */
-  def click(event: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
+  def click(event: jqueryLib.JQueryNs.Event): scala.Unit = js.native
   /**
        * PJAX on click handler.
        * @param event A jQuery click event.
@@ -47,10 +47,7 @@ trait PjaxStatic extends js.Object {
        * - push: a boolean indicates whether to pushState the URL. Default is true.
        * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
        */
-  def click(
-    event: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null],
-    containerSelector: java.lang.String
-  ): scala.Unit = js.native
+  def click(event: jqueryLib.JQueryNs.Event, containerSelector: java.lang.String): scala.Unit = js.native
   /**
        * PJAX on click handler.
        * @param event A jQuery click event.
@@ -60,11 +57,7 @@ trait PjaxStatic extends js.Object {
        * - push: a boolean indicates whether to pushState the URL. Default is true.
        * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
        */
-  def click(
-    event: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null],
-    containerSelector: java.lang.String,
-    options: PjaxSettings
-  ): scala.Unit = js.native
+  def click(event: jqueryLib.JQueryNs.Event, containerSelector: java.lang.String, options: PjaxSettings): scala.Unit = js.native
   /**
        * PJAX on click handler.
        * @param event A jQuery click event.
@@ -73,7 +66,7 @@ trait PjaxStatic extends js.Object {
        * - push: a boolean indicates whether to pushState the URL. Default is true.
        * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
        */
-  def click(event: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], options: PjaxSettings): scala.Unit = js.native
+  def click(event: jqueryLib.JQueryNs.Event, options: PjaxSettings): scala.Unit = js.native
   /**
        * Disable pushState behavior.
        * This is the case when a browser doesn't support pushState. It is sometimes useful to disable pushState for debugging on a modern browser.
@@ -99,7 +92,7 @@ trait PjaxStatic extends js.Object {
        * - push: a boolean indicates whether to pushState the URL. Default is true.
        * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
        */
-  def submit(event: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
+  def submit(event: jqueryLib.JQueryNs.Event): scala.Unit = js.native
   /**
        * PJAX on form submit handler
        * @param event A jQuery click event.
@@ -109,10 +102,7 @@ trait PjaxStatic extends js.Object {
        * - push: a boolean indicates whether to pushState the URL. Default is true.
        * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
        */
-  def submit(
-    event: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null],
-    containerSelector: java.lang.String
-  ): scala.Unit = js.native
+  def submit(event: jqueryLib.JQueryNs.Event, containerSelector: java.lang.String): scala.Unit = js.native
   /**
        * PJAX on form submit handler
        * @param event A jQuery click event.
@@ -122,11 +112,7 @@ trait PjaxStatic extends js.Object {
        * - push: a boolean indicates whether to pushState the URL. Default is true.
        * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
        */
-  def submit(
-    event: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null],
-    containerSelector: java.lang.String,
-    options: PjaxSettings
-  ): scala.Unit = js.native
+  def submit(event: jqueryLib.JQueryNs.Event, containerSelector: java.lang.String, options: PjaxSettings): scala.Unit = js.native
   /**
        * PJAX on form submit handler
        * @param event A jQuery click event.
@@ -135,6 +121,6 @@ trait PjaxStatic extends js.Object {
        * - push: a boolean indicates whether to pushState the URL. Default is true.
        * - replace: a boolean indicates whether to use replaceState instead of pushState. Default is false.
        */
-  def submit(event: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], options: PjaxSettings): scala.Unit = js.native
+  def submit(event: jqueryLib.JQueryNs.Event, options: PjaxSettings): scala.Unit = js.native
 }
 

@@ -21,8 +21,8 @@ object mvcNs extends js.Object {
     def delegateDocumentEvents(): this.type = js.native
     def delegateDocumentEvents(events: backboneLib.backboneMod.BackboneNs.EventsHash): this.type = js.native
     def delegateDocumentEvents(events: backboneLib.backboneMod.BackboneNs.EventsHash, data: viewEventData): this.type = js.native
-    def eventData(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): viewEventData = js.native
-    def eventData(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], data: viewEventData): this.type = js.native
+    def eventData(evt: jqueryLib.JQueryNs.Event): viewEventData = js.native
+    def eventData(evt: jqueryLib.JQueryNs.Event, data: viewEventData): this.type = js.native
     def findAttribute(attributeName: java.lang.String, node: underscoreLib.underscoreMod.Global.Element): java.lang.String | scala.Null = js.native
     def getEventNamespace(): java.lang.String = js.native
     /* protected */ def init(): scala.Unit = js.native

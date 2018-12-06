@@ -42,6 +42,9 @@ trait TransferProps extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
+  var onSearch: js.UndefOr[
+    js.Function2[/* direction */ TransferDirection, /* value */ java.lang.String, scala.Unit]
+  ] = js.undefined
   var onSearchChange: js.UndefOr[
     js.Function2[
       /* direction */ TransferDirection, 

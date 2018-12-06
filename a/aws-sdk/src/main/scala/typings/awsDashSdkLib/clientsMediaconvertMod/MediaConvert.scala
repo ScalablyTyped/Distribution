@@ -216,14 +216,14 @@ trait MediaConvert
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Create a new transcoding queue. For information about job templates see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+     * Create a new transcoding queue. For information about queues, see Working With Queues in the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html
      */
   def createQueue(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.CreateQueueResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Create a new transcoding queue. For information about job templates see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+     * Create a new transcoding queue. For information about queues, see Working With Queues in the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html
      */
   def createQueue(
     callback: js.Function2[
@@ -236,14 +236,14 @@ trait MediaConvert
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Create a new transcoding queue. For information about job templates see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+     * Create a new transcoding queue. For information about queues, see Working With Queues in the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html
      */
   def createQueue(params: awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.CreateQueueRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.CreateQueueResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Create a new transcoding queue. For information about job templates see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+     * Create a new transcoding queue. For information about queues, see Working With Queues in the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html
      */
   def createQueue(
     params: awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.CreateQueueRequest,

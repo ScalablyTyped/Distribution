@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "gulp-help"
-version := "0.0-unknown-dt-20180910Z-f863de"
+version := "0.0-unknown-dt-20180910Z-61b3f0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "gulp" % "4.0-dt-20180910Z-27b735",
   "com.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-5ec0b9",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "orchestrator" % "0.3-dt-20180910Z-0342fb",
-  "com.scalablytyped" %%% "q" % "1.5-dt-20180915Z-726082",
+  "com.scalablytyped" %%% "orchestrator" % "0.3-dt-20180910Z-e1c927",
+  "com.scalablytyped" %%% "q" % "1.5-dt-20181206Z-726082",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "undertaker" % "1.2-dt-20180910Z-480d34",
   "com.scalablytyped" %%% "undertaker-registry" % "1.0-dt-20180910Z-e28108",

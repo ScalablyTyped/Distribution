@@ -38,6 +38,11 @@ trait Session extends js.Object {
   def mute(options: ExtraHeadersOptions): scala.Unit = js.native
   def on(name: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")
+  def `on_SessionDescriptionHandler-created`(
+    name: sipDotJsLib.sipDotJsLibStrings.`SessionDescriptionHandler-created`,
+    callback: js.Function0[scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
   def on_accepted(
     name: sipDotJsLib.sipDotJsLibStrings.accepted,
     callback: js.Function1[/* data */ sipDotJsLib.Anon_Code, scala.Unit]
@@ -49,6 +54,8 @@ trait Session extends js.Object {
   ): scala.Unit = js.native
   @JSName("on")
   def on_cancel(name: sipDotJsLib.sipDotJsLibStrings.cancel, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  @JSName("on")
+  def on_directionChanged(name: sipDotJsLib.sipDotJsLibStrings.directionChanged, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")
   def on_dtmf(
     name: sipDotJsLib.sipDotJsLibStrings.dtmf,
@@ -69,6 +76,11 @@ trait Session extends js.Object {
     callback: js.Function1[/* data */ sipDotJsLib.sipDotJsMod.SessionNs.Muted, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
+  def on_notify(
+    name: sipDotJsLib.sipDotJsLibStrings.notify,
+    callback: js.Function1[/* request */ IncomingRequest, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
   def on_progress(
     name: sipDotJsLib.sipDotJsLibStrings.progress,
     callback: js.Function1[/* response */ IncomingResponse, scala.Unit]
@@ -77,6 +89,46 @@ trait Session extends js.Object {
   def on_refer(
     name: sipDotJsLib.sipDotJsLibStrings.refer,
     callback: js.Function1[/* request */ IncomingRequest, scala.Unit]
+  ): scala.Unit = js.native
+  /*    these come from the ClientContext that is on the session somehow */
+  @JSName("on")
+  def on_referAccepted(
+    name: sipDotJsLib.sipDotJsLibStrings.referAccepted,
+    callback: js.Function1[/* ClientContext */ ClientContext, scala.Unit]
+  ): scala.Unit = js.native
+  /*    these come from the ClientContext that is on the session somehow */
+  @JSName("on")
+  def on_referProgress(
+    name: sipDotJsLib.sipDotJsLibStrings.referProgress,
+    callback: js.Function1[/* ClientContext */ ClientContext, scala.Unit]
+  ): scala.Unit = js.native
+  /*    these come from the ClientContext that is on the session somehow */
+  @JSName("on")
+  def on_referRejected(
+    name: sipDotJsLib.sipDotJsLibStrings.referRejected,
+    callback: js.Function1[/* ClientContext */ ClientContext, scala.Unit]
+  ): scala.Unit = js.native
+  /*    these come from the ClientContext that is on the session somehow */
+  @JSName("on")
+  def on_referRequestAccepted(
+    name: sipDotJsLib.sipDotJsLibStrings.referRequestAccepted,
+    callback: js.Function1[/* ClientContext */ ClientContext, scala.Unit]
+  ): scala.Unit = js.native
+  /*    these come from the ClientContext that is on the session somehow */
+  @JSName("on")
+  def on_referRequestRejected(
+    name: sipDotJsLib.sipDotJsLibStrings.referRequestRejected,
+    callback: js.Function1[/* ClientContext */ ClientContext, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
+  def on_referRequested(
+    name: sipDotJsLib.sipDotJsLibStrings.referRequested,
+    callback: js.Function1[/* request */ ClientContext | ServerContext, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
+  def on_reinvite(
+    name: sipDotJsLib.sipDotJsLibStrings.reinvite,
+    callback: js.Function1[/* newSession */ this.type, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_rejected(
@@ -93,6 +145,8 @@ trait Session extends js.Object {
     name: sipDotJsLib.sipDotJsLibStrings.terminated,
     callback: js.Function2[/* message */ IncomingResponse, /* cause */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
+  @JSName("on")
+  def on_trackAdded(name: sipDotJsLib.sipDotJsLibStrings.trackAdded, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")
   def on_unmuted(
     name: sipDotJsLib.sipDotJsLibStrings.unmuted,

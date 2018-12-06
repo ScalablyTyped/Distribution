@@ -11,5 +11,6 @@ trait Dropdown
   @JSName("componentDidMount")
   def componentDidMount_MDropdown(): scala.Unit = js.native
   def getTransitionName(): java.lang.String = js.native
+  def renderDropDown(hasGetPopupContainer: antdLib.libConfigDashProviderMod.ConfigProviderProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

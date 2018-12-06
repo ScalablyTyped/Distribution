@@ -29,7 +29,7 @@ trait Constructor
   def chars[T](instance: java.lang.String): js.Array[T] = js.native
   def chars[T](
     instance: java.lang.String,
-    callback: js.Function3[
+    eachCharFn: js.Function3[
       /* char */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 
@@ -39,7 +39,7 @@ trait Constructor
   def codes[T](instance: java.lang.String): js.Array[T] = js.native
   def codes[T](
     instance: java.lang.String,
-    callback: js.Function3[/* code */ scala.Double, /* i */ scala.Double, /* str */ java.lang.String, scala.Unit]
+    eachCodeFn: js.Function3[/* code */ scala.Double, /* i */ scala.Double, /* str */ java.lang.String, scala.Unit]
   ): js.Array[T] = js.native
   def compact(instance: java.lang.String): java.lang.String = js.native
   def dasherize(instance: java.lang.String): java.lang.String = js.native
@@ -53,7 +53,7 @@ trait Constructor
   def forEach[T](instance: java.lang.String): js.Array[T] = js.native
   def forEach[T](
     instance: java.lang.String,
-    callback: js.Function3[
+    eachFn: js.Function3[
       /* match */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 
@@ -64,7 +64,7 @@ trait Constructor
   def forEach[T](
     instance: java.lang.String,
     search: java.lang.String,
-    callback: js.Function3[
+    eachFn: js.Function3[
       /* match */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 
@@ -75,7 +75,7 @@ trait Constructor
   def forEach[T](
     instance: java.lang.String,
     search: stdLib.RegExp,
-    callback: js.Function3[
+    eachFn: js.Function3[
       /* match */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 
@@ -126,7 +126,7 @@ trait Constructor
   def lines[T](instance: java.lang.String): js.Array[T] = js.native
   def lines[T](
     instance: java.lang.String,
-    callback: js.Function3[
+    eachLineFn: js.Function3[
       /* line */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 
@@ -152,7 +152,7 @@ trait Constructor
   def removeTags(instance: java.lang.String): java.lang.String = js.native
   def removeTags(instance: java.lang.String, tag: java.lang.String): java.lang.String = js.native
   def removeTags(instance: java.lang.String, tag: java.lang.String, replace: java.lang.String): java.lang.String = js.native
-  def removeTags(instance: java.lang.String, tag: java.lang.String, replace: tagReplaceFn): java.lang.String = js.native
+  def removeTags(instance: java.lang.String, tag: java.lang.String, replace: replaceFn): java.lang.String = js.native
   def replaceAll(instance: java.lang.String, f: java.lang.String, args: js.Any*): java.lang.String = js.native
   def replaceAll(instance: java.lang.String, f: stdLib.RegExp, args: js.Any*): java.lang.String = js.native
   def reverse(instance: java.lang.String): java.lang.String = js.native
@@ -162,7 +162,7 @@ trait Constructor
   def stripTags(instance: java.lang.String): java.lang.String = js.native
   def stripTags(instance: java.lang.String, tag: java.lang.String): java.lang.String = js.native
   def stripTags(instance: java.lang.String, tag: java.lang.String, replace: java.lang.String): java.lang.String = js.native
-  def stripTags(instance: java.lang.String, tag: java.lang.String, replace: tagReplaceFn): java.lang.String = js.native
+  def stripTags(instance: java.lang.String, tag: java.lang.String, replace: replaceFn): java.lang.String = js.native
   def titleize(instance: java.lang.String): java.lang.String = js.native
   def to(instance: java.lang.String): java.lang.String = js.native
   def to(instance: java.lang.String, index: scala.Double): java.lang.String = js.native
@@ -193,7 +193,7 @@ trait Constructor
   def words[T](instance: java.lang.String): js.Array[T] = js.native
   def words[T](
     instance: java.lang.String,
-    callback: js.Function3[
+    eachWordFn: js.Function3[
       /* word */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 

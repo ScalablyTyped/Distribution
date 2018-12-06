@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "babel__parser"
-version := "7.1.6-8641e4"
+version := "7.2.0-c05681"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "babel__types" % "7.1.6-7239b1",
+  "com.scalablytyped" %%% "babel__types" % "7.2.0-7f6146",
   "com.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-0335c2",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

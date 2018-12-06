@@ -51140,7 +51140,7 @@ trait Chainable[Subject] extends js.Object {
        *
        * @see https://on.cypress.io/wait
        */
-  def wait(alias: java.lang.String, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[WaitXHR] = js.native
+  def wait(alias: java.lang.String, options: stdLib.Partial[Loggable with Timeoutable with TimeoutableXHR]): Chainable[WaitXHR] = js.native
   /**
        * Wait for list of XHR requests to complete.
        *
@@ -51152,7 +51152,10 @@ trait Chainable[Subject] extends js.Object {
        *
        * @see https://on.cypress.io/wait
        */
-  def wait(alias: js.Array[java.lang.String], options: stdLib.Partial[Loggable with Timeoutable]): Chainable[js.Array[WaitXHR]] = js.native
+  def wait(
+    alias: js.Array[java.lang.String],
+    options: stdLib.Partial[Loggable with Timeoutable with TimeoutableXHR]
+  ): Chainable[js.Array[WaitXHR]] = js.native
   /**
        * Wait for a number of milliseconds or wait for an aliased resource to resolve before moving on to the next command.
        *
@@ -51286,6 +51289,28 @@ trait Chainable[Subject] extends js.Object {
        */
   @JSName("wrap")
   def wrap_ENode[E /* <: stdLib.Node */](element: E, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[jqueryLib.JQuery[E]] = js.native
+  /**
+       * Yield the element passed into `.wrap()` to the next command in the Cypress chain.
+       *
+       * @see https://on.cypress.io/wrap
+       * @example
+       *    cy.wrap(new Promise((resolve, reject) => {
+       *      setTimeout(resolve, 1000);
+       *    }).then(result => {})
+       */
+  @JSName("wrap")
+  def wrap_FPromiseS[F /* <: stdLib.Promise[S] */, S](promise: F): Chainable[S] = js.native
+  /**
+       * Yield the element passed into `.wrap()` to the next command in the Cypress chain.
+       *
+       * @see https://on.cypress.io/wrap
+       * @example
+       *    cy.wrap(new Promise((resolve, reject) => {
+       *      setTimeout(resolve, 1000);
+       *    }).then(result => {})
+       */
+  @JSName("wrap")
+  def wrap_FPromiseS[F /* <: stdLib.Promise[S] */, S](promise: F, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[S] = js.native
   /**
        * Write to a file with the specified contents.
        *

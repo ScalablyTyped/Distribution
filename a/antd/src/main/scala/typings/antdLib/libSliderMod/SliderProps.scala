@@ -26,6 +26,7 @@ trait SliderProps extends js.Object {
     scala.Null | (js.Function1[/* value */ scala.Double, reactLib.reactMod.ReactNs.ReactNode])
   ] = js.undefined
   var tooltipPrefixCls: js.UndefOr[java.lang.String] = js.undefined
+  var tooltipVisible: js.UndefOr[scala.Boolean] = js.undefined
   var value: js.UndefOr[SliderValue] = js.undefined
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }

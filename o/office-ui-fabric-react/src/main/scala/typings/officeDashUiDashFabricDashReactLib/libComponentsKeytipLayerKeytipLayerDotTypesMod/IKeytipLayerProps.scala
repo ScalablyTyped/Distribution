@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IKeytipLayerProps
-  extends reactLib.reactMod.ReactNs.Props[IKeytipLayer] {
+  extends reactLib.reactMod.ReactNs.ClassAttributes[IKeytipLayer] {
   /**
        * Optional callback to access the KeytipLayer component. Use this instead of ref for accessing
        * the public methods and properties of the component.

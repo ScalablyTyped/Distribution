@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "select2"
-version := "4.0-dt-20180910Z-31b807"
+version := "4.0-dt-20180910Z-a81fa6"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-d287eb",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181206Z-02d7ed",
   "com.scalablytyped" %%% "requirejs" % "2.1.20-dt-20180910Z-20145a",
   "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-9c5dc2",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",

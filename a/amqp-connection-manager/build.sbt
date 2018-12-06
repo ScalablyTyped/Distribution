@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "amqp-connection-manager"
-version := "2.0-dt-20180910Z-6e9b93"
+version := "2.0-dt-20181206Z-923ca5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

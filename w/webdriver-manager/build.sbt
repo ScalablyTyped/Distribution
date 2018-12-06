@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "webdriver-manager"
-version := "12.1.0-02638a"
+version := "12.1.0-bbec2b"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "minimatch" % "3.0-dt-20180910Z-5ec0b9",
   "com.scalablytyped" %%% "minimist" % "1.2.0-dt-20180910Z-a475cc",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "q" % "1.5-dt-20180915Z-726082",
+  "com.scalablytyped" %%% "q" % "1.5-dt-20181206Z-726082",
   "com.scalablytyped" %%% "request" % "2.48-dt-20181105Z-67a93f",
   "com.scalablytyped" %%% "rimraf" % "2.0-dt-20180910Z-40a17a",
   "com.scalablytyped" %%% "semver" % "5.5-dt-20180910Z-b64c1e",

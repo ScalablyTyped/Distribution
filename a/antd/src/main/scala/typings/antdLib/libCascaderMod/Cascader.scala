@@ -30,6 +30,7 @@ trait Cascader
   def handleInputClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
   def handleKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
   def handlePopupVisibleChange(popupVisible: scala.Boolean): scala.Unit = js.native
+  def renderCascader(hasGetPopupContainer: antdLib.libConfigDashProviderMod.ConfigProviderProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveInput(node: antdLib.libInputMod.default): scala.Unit = js.native
   def setValue(value: js.Array[java.lang.String]): scala.Unit = js.native
   def setValue(value: js.Array[java.lang.String], selectedOptions: js.Array[CascaderOptionType]): scala.Unit = js.native

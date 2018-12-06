@@ -68,7 +68,10 @@ trait Volume extends js.Object {
                */
   val gcePersistentDisk: GCEPersistentDiskVolumeSource
   /**
-               * GitRepo represents a git repository at a particular revision.
+               * GitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is
+               * deprecated. To provision a container with a git repo, mount an EmptyDir into an
+               * InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's
+               * container.
                */
   val gitRepo: GitRepoVolumeSource
   /**

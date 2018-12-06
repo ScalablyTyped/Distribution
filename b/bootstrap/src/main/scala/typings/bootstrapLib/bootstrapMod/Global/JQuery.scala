@@ -61,11 +61,14 @@ trait JQuery[TElement] extends js.Object {
   def modal_toggle(action: bootstrapLib.bootstrapLibStrings.toggle): this.type = js.native
   def on(
     events: bootstrapLib.bootstrapMod.AlertEvent | bootstrapLib.bootstrapMod.CarouselEvent | bootstrapLib.bootstrapMod.CollapseEvent | bootstrapLib.bootstrapMod.DropdownEvent | bootstrapLib.bootstrapMod.ModalEvent | bootstrapLib.bootstrapMod.PopoverEvent | bootstrapLib.bootstrapMod.TapEvent | bootstrapLib.bootstrapMod.TooltipEvent,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[TElement, bootstrapLib.bootstrapMod.CarouselEventHandler[TElement]])
+    handler: (jqueryLib.JQueryNs.EventHandler[TElement, js.UndefOr[scala.Nothing]]) | (jqueryLib.JQueryNs.EventHandlerBase[
+      TElement, 
+      bootstrapLib.bootstrapMod.CarouselEventHandler[TElement] | bootstrapLib.bootstrapMod.TapEventHandler[TElement]
+    ])
   ): this.type = js.native
   def on(
     events: bootstrapLib.bootstrapMod.ScrollspyEvent,
-    handler: jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]
+    handler: jqueryLib.JQueryNs.EventHandler[TElement, js.UndefOr[scala.Nothing]]
   ): this.type = js.native
   def popover(): this.type = js.native
   def popover(options: bootstrapLib.bootstrapMod.PopoverOption): this.type = js.native

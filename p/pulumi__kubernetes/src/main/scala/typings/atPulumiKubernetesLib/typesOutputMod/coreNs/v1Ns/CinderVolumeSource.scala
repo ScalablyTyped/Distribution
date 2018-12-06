@@ -24,6 +24,10 @@ trait CinderVolumeSource extends js.Object {
                */
   val readOnly: scala.Boolean
   /**
+               * Optional: points to a secret object containing parameters used to connect to OpenStack.
+               */
+  val secretRef: LocalObjectReference
+  /**
                * volume id used to identify the volume in cinder More info:
                * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
                */

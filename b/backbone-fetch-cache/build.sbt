@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "backbone-fetch-cache"
-version := "1.4.0-dt-20181121Z-cd94ac"
+version := "1.4.0-dt-20181121Z-c5a60c"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "backbone" % "1.3.3-dt-20181121Z-4472e4",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-d287eb",
+  "com.scalablytyped" %%% "backbone" % "1.3.3-dt-20181206Z-d3d5c5",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181206Z-02d7ed",
   "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-9c5dc2",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "underscore" % "1.8-dt-20180910Z-87c49b",

@@ -65,14 +65,14 @@ trait Constructor
   def downto[T](
     instance: scala.Double,
     num: scala.Double,
-    fn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ sugarLib.sugarjsNs.Range, scala.Unit]
+    everyFn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ sugarLib.sugarjsNs.Range, scala.Unit]
   ): js.Array[T] = js.native
   def downto[T](instance: scala.Double, num: scala.Double, step: scala.Double): js.Array[T] = js.native
   def downto[T](
     instance: scala.Double,
     num: scala.Double,
     step: scala.Double,
-    fn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ sugarLib.sugarjsNs.Range, scala.Unit]
+    everyFn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ sugarLib.sugarjsNs.Range, scala.Unit]
   ): js.Array[T] = js.native
   def duration(instance: scala.Double): java.lang.String = js.native
   def duration(instance: scala.Double, localeCode: java.lang.String): java.lang.String = js.native
@@ -262,20 +262,20 @@ trait Constructor
   def sin(instance: scala.Double): scala.Double = js.native
   def sqrt(instance: scala.Double): scala.Double = js.native
   def tan(instance: scala.Double): scala.Double = js.native
-  def times[T](instance: scala.Double, fn: js.Function1[/* i */ scala.Double, _]): T = js.native
+  def times[T](instance: scala.Double, indexMapFn: js.Function1[/* i */ scala.Double, _]): T = js.native
   def toNumber(instance: scala.Double): scala.Double = js.native
   def upto[T](instance: scala.Double, num: scala.Double): js.Array[T] = js.native
   def upto[T](
     instance: scala.Double,
     num: scala.Double,
-    fn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ sugarLib.sugarjsNs.Range, scala.Unit]
+    everyFn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ sugarLib.sugarjsNs.Range, scala.Unit]
   ): js.Array[T] = js.native
   def upto[T](instance: scala.Double, num: scala.Double, step: scala.Double): js.Array[T] = js.native
   def upto[T](
     instance: scala.Double,
     num: scala.Double,
     step: scala.Double,
-    fn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ sugarLib.sugarjsNs.Range, scala.Unit]
+    everyFn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ sugarLib.sugarjsNs.Range, scala.Unit]
   ): js.Array[T] = js.native
   def week(instance: scala.Double): scala.Double = js.native
   def weekAfter(instance: scala.Double, d: java.lang.String): stdLib.Date = js.native

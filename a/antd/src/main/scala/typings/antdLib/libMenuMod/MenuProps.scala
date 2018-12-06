@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait MenuProps extends js.Object {
+trait MenuProps
+  extends antdLib.libConfigDashProviderMod.ConfigProviderProps {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultOpenKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var defaultSelectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var focusable: js.UndefOr[scala.Boolean] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inlineCollapsed: js.UndefOr[scala.Boolean] = js.undefined
   var inlineIndent: js.UndefOr[scala.Double] = js.undefined

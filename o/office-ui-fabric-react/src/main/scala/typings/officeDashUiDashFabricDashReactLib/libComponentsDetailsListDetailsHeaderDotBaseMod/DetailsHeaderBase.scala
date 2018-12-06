@@ -59,12 +59,15 @@ class DetailsHeaderBase protected ()
   var _rootElement: js.Any = js.native
   var _subscriptionObject: js.Any = js.native
   /* private */ def _getHeaderDragDropOptions(): js.Any = js.native
+  /* private */ def _isAfter(a: js.Any, b: js.Any): js.Any = js.native
+  /* private */ def _isBefore(a: js.Any, b: js.Any): js.Any = js.native
   /**
        * @returns whether or not the "Select All" checkbox column is hidden.
        */
   /* private */ def _isCheckboxColumnHidden(): js.Any = js.native
   /* private */ def _isEventOnHeader(event: js.Any): js.Any = js.native
   /* private */ def _isValidCurrentDropHintIndex(): js.Any = js.native
+  /* private */ def _liesBetween(target: js.Any, left: js.Any, right: js.Any): js.Any = js.native
   /* private */ def _onDragOver(item: js.Any, event: js.Any): js.Any = js.native
   /* private */ def _onDrop(): js.Any = js.native
   /* private */ def _onDrop(item: js.Any): js.Any = js.native

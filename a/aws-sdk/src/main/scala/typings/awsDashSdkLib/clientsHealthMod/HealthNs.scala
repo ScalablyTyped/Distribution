@@ -18,6 +18,7 @@ object HealthNs extends js.Object {
          * The unique identifier for the entity. Format: arn:aws:health:entity-region:aws-account:entity/entity-id . Example: arn:aws:health:us-east-1:111222333444:entity/AVh5GGT7ul1arKr1sE1K 
          */
     var entityArn: js.UndefOr[entityArn] = js.undefined
+    var entityUrl: js.UndefOr[entityUrl] = js.undefined
     /**
          * The ID of the affected entity.
          */
@@ -664,6 +665,7 @@ object HealthNs extends js.Object {
   type entityArnList = js.Array[entityArn]
   type entityStatusCode = awsDashSdkLib.awsDashSdkLibStrings.IMPAIRED | awsDashSdkLib.awsDashSdkLibStrings.UNIMPAIRED | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | java.lang.String
   type entityStatusCodeList = js.Array[entityStatusCode]
+  type entityUrl = java.lang.String
   type entityValue = java.lang.String
   type entityValueList = js.Array[entityValue]
   type eventAggregateField = awsDashSdkLib.awsDashSdkLibStrings.eventTypeCategory | java.lang.String

@@ -34,7 +34,7 @@ class User () extends js.Object {
   def offerPermissions(realmUrl: java.lang.String, accessLevel: AccessLevel, expiresAt: stdLib.Date): stdLib.Promise[java.lang.String] = js.native
   def openManagementRealm(): realmLib.Realm = js.native
   def retrieveAccount(provider: java.lang.String, username: java.lang.String): stdLib.Promise[Account] = js.native
-  def serialize(): SerializedUser = js.native
+  def serialize(): SerializedUser | SerializedTokenUser = js.native
 }
 
 /**
@@ -56,6 +56,7 @@ object User extends js.Object {
   def authenticate(server: java.lang.String, provider: java.lang.String, options: js.Any): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native
   def completePasswordReset(server: java.lang.String, resetToken: java.lang.String, newPassword: java.lang.String): stdLib.Promise[scala.Unit] = js.native
   def confirmEmail(server: java.lang.String, confirmationToken: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+  def deserialize(serialized: realmLib.RealmNs.SyncNs.SerializedTokenUser): realmLib.RealmNs.SyncNs.User = js.native
   def deserialize(serialized: realmLib.RealmNs.SyncNs.SerializedUser): realmLib.RealmNs.SyncNs.User = js.native
   def login(server: java.lang.String, credentials: realmLib.RealmNs.SyncNs.AdminCredentials): realmLib.RealmNs.SyncNs.User = js.native
   def login(server: java.lang.String, credentials: realmLib.RealmNs.SyncNs.Credentials): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native

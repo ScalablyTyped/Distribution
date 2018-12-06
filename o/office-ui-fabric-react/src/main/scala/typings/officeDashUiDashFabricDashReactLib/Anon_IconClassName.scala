@@ -14,5 +14,7 @@ trait Anon_IconClassName extends js.Object {
   var isIconOnly: js.UndefOr[scala.Boolean] = js.undefined
   var isIconVisible: js.UndefOr[scala.Boolean] = js.undefined
   var isPadded: js.UndefOr[scala.Boolean] = js.undefined
+  var transitionDurationDrag: js.UndefOr[scala.Double] = js.undefined
+  var transitionDurationDrop: js.UndefOr[scala.Double] = js.undefined
 }
 

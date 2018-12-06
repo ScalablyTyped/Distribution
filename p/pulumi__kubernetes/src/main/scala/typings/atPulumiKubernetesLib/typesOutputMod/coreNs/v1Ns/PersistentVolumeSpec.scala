@@ -42,7 +42,7 @@ trait PersistentVolumeSpec extends js.Object {
                * Cinder represents a cinder volume attached and mounted on kubelets host machine More info:
                * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
                */
-  val cinder: CinderVolumeSource
+  val cinder: CinderPersistentVolumeSource
   /**
                * ClaimRef is part of a bi-directional binding between PersistentVolume and
                * PersistentVolumeClaim. Expected to be non-nil when bound. claim.VolumeName is the
@@ -51,7 +51,7 @@ trait PersistentVolumeSpec extends js.Object {
                */
   val claimRef: ObjectReference
   /**
-               * CSI represents storage that handled by an external CSI driver
+               * CSI represents storage that handled by an external CSI driver (Beta feature).
                */
   val csi: CSIPersistentVolumeSource
   /**
@@ -63,7 +63,7 @@ trait PersistentVolumeSpec extends js.Object {
                * FlexVolume represents a generic volume resource that is provisioned/attached using an exec
                * based plugin.
                */
-  val flexVolume: FlexVolumeSource
+  val flexVolume: FlexPersistentVolumeSource
   /**
                * Flocker represents a Flocker volume attached to a kubelet's host machine and exposed to the
                * pod for its usage. This depends on the Flocker control service being running
@@ -80,7 +80,7 @@ trait PersistentVolumeSpec extends js.Object {
                * Provisioned by an admin. More info:
                * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md
                */
-  val glusterfs: GlusterfsVolumeSource
+  val glusterfs: GlusterfsPersistentVolumeSource
   /**
                * HostPath represents a directory on the host. Provisioned by a developer or tester. This is
                * useful for single-node development and testing only! On-host storage is not supported in
@@ -109,9 +109,15 @@ trait PersistentVolumeSpec extends js.Object {
                */
   val nfs: NFSVolumeSource
   /**
+               * NodeAffinity defines constraints that limit what nodes this volume can be accessed from.
+               * This field influences the scheduling of pods that use this volume.
+               */
+  val nodeAffinity: VolumeNodeAffinity
+  /**
                * What happens to a persistent volume when released from its claim. Valid options are Retain
-               * (default) and Recycle. Recycling must be supported by the volume plugin underlying this
-               * persistent volume. More info:
+               * (default for manually created PersistentVolumes), Delete (default for dynamically
+               * provisioned PersistentVolumes), and Recycle (deprecated). Recycle must be supported by the
+               * volume plugin underlying this PersistentVolume. More info:
                * https://kubernetes.io/docs/concepts/storage/persistent-volumes#reclaiming
                */
   val persistentVolumeReclaimPolicy: java.lang.String
@@ -151,7 +157,7 @@ trait PersistentVolumeSpec extends js.Object {
   /**
                * volumeMode defines if a volume is intended to be used with a formatted filesystem or to
                * remain in raw block state. Value of Filesystem is implied when not included in spec. This
-               * is an alpha feature and may change in the future.
+               * is a beta feature.
                */
   val volumeMode: java.lang.String
   /**

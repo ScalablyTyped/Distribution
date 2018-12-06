@@ -16,8 +16,7 @@ trait VolumeMount extends js.Object {
   val mountPath: java.lang.String
   /**
                * mountPropagation determines how mounts are propagated from the host to container and the
-               * other way around. When not set, MountPropagationHostToContainer is used. This field is
-               * alpha in 1.8 and can be reworked or removed in a future release.
+               * other way around. When not set, MountPropagationNone is used. This field is beta in 1.10.
                */
   val mountPropagation: java.lang.String
   /**

@@ -13,7 +13,8 @@ object reactDashInstantsearchDashCoreModMembers extends js.Object {
   def connectAutoComplete(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectBreadcrumb(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectConfigure(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  def connectCurrentRefinements(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def connectCurrentRefinements(stateless: reactLib.reactMod.ReactNs.StatelessComponent[CurrentRefinementsProvided]): reactLib.reactMod.ReactNs.ComponentClass[CurrentRefinementsExposed, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def connectCurrentRefinements[TProps /* <: stdLib.Partial[CurrentRefinementsProvided] */](Composed: reactLib.reactMod.ReactNs.ComponentType[TProps]): ConnectedComponentClass[TProps, CurrentRefinementsProvided, CurrentRefinementsExposed] = js.native
   def connectGeoSearch(stateless: reactLib.reactMod.ReactNs.StatelessComponent[GeoSearchProvided[_]]): reactLib.reactMod.ReactNs.ComponentClass[GeoSearchExposed, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectGeoSearch[TProps /* <: stdLib.Partial[GeoSearchProvided[THit]] */, THit](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): ConnectedComponentClass[TProps, GeoSearchProvided[THit], GeoSearchExposed] = js.native
   def connectHierarchicalMenu(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native

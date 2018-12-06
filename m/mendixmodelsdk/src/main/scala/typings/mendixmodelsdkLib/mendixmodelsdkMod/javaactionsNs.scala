@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object javaactionsNs extends js.Object {
   /**
+       * In version 7.21.0: deleted
        * In version 6.7.0: introduced
        */
   @js.native
@@ -18,6 +19,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -27,6 +29,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -36,6 +39,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -45,6 +49,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -54,6 +59,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -63,6 +69,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.7.0: introduced
        */
   @js.native
@@ -72,6 +79,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -81,6 +89,16 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  class ExportMappingJavaActionParameterType protected ()
+    extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.javaactionsNs.ExportMappingJavaActionParameterType {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  /**
+       * In version 7.21.0: deleted
        * In version 7.2.0: introduced
        */
   @js.native
@@ -90,6 +108,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -99,6 +118,16 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  class ImportMappingJavaActionParameterType protected ()
+    extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.javaactionsNs.ImportMappingJavaActionParameterType {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  /**
+       * In version 7.21.0: deleted
        * In version 7.2.0: introduced
        */
   @js.native
@@ -108,6 +137,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -132,6 +162,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -141,6 +172,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.10.0: removed experimental
        * In version 6.6.0: introduced
        */
@@ -151,6 +183,16 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  class MicroflowJavaActionParameterType protected ()
+    extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.javaactionsNs.MicroflowJavaActionParameterType {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  /**
+       * In version 7.21.0: deleted
        * In version 6.9.0: introduced
        */
   @js.native
@@ -160,6 +202,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.7.0: introduced
        */
   @js.native
@@ -169,6 +212,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -178,6 +222,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -187,6 +232,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -196,6 +242,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -205,6 +252,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -214,6 +262,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.7.0: introduced
        */
   @js.native
@@ -232,12 +281,13 @@ object javaactionsNs extends js.Object {
              * of the parent JavaActionParameter element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -256,7 +306,7 @@ object javaactionsNs extends js.Object {
              * of the parent BasicParameterType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BooleanType = js.native
     /**
@@ -274,12 +324,13 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BooleanType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -298,7 +349,7 @@ object javaactionsNs extends js.Object {
              * of the parent BasicParameterType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ConcreteEntityType = js.native
     /**
@@ -316,7 +367,7 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ConcreteEntityType = js.native
     /**
@@ -325,12 +376,13 @@ object javaactionsNs extends js.Object {
              * of the parent ListType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInListTypeUnderParameter(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ListType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ConcreteEntityType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -349,7 +401,7 @@ object javaactionsNs extends js.Object {
              * of the parent BasicParameterType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.DateTimeType = js.native
     /**
@@ -367,12 +419,13 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.DateTimeType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -391,7 +444,7 @@ object javaactionsNs extends js.Object {
              * of the parent BasicParameterType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.DecimalType = js.native
     /**
@@ -409,12 +462,13 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.DecimalType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -424,6 +478,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.7.0: introduced
        */
   @js.native
@@ -442,12 +497,13 @@ object javaactionsNs extends js.Object {
              * of the parent JavaActionParameter element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.EntityTypeParameterType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -466,7 +522,7 @@ object javaactionsNs extends js.Object {
              * of the parent BasicParameterType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.EnumerationType = js.native
     /**
@@ -484,12 +540,28 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.EnumerationType = js.native
   }
   
   /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object ExportMappingJavaActionParameterType extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenJavaactionsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new ExportMappingJavaActionParameterType instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ExportMappingJavaActionParameterType = js.native
+  }
+  
+  /**
+       * In version 7.21.0: deleted
        * In version 7.2.0: introduced
        */
   @js.native
@@ -508,12 +580,13 @@ object javaactionsNs extends js.Object {
              * of the parent JavaActionParameter element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.2.0 and higher
+             *  7.2.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ExportMappingParameterType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -532,7 +605,7 @@ object javaactionsNs extends js.Object {
              * of the parent BasicParameterType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.FloatType = js.native
     /**
@@ -550,12 +623,28 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.FloatType = js.native
   }
   
   /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object ImportMappingJavaActionParameterType extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenJavaactionsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new ImportMappingJavaActionParameterType instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ImportMappingJavaActionParameterType = js.native
+  }
+  
+  /**
+       * In version 7.21.0: deleted
        * In version 7.2.0: introduced
        */
   @js.native
@@ -574,12 +663,13 @@ object javaactionsNs extends js.Object {
              * of the parent JavaActionParameter element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.2.0 and higher
+             *  7.2.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ImportMappingParameterType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -598,7 +688,7 @@ object javaactionsNs extends js.Object {
              * of the parent BasicParameterType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IntegerType = js.native
     /**
@@ -616,7 +706,7 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IntegerType = js.native
   }
@@ -647,13 +737,26 @@ object javaactionsNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter = js.native
     /**
              * Creates and returns a new JavaActionParameter instance in the SDK and on the server.
+             * The new JavaActionParameter will be automatically stored in the 'actionParameters' property
+             * of the parent codeactions.CodeAction element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInCodeActionUnderActionParameters(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter = js.native
+    /**
+             * Creates and returns a new JavaActionParameter instance in the SDK and on the server.
              * The new JavaActionParameter will be automatically stored in the 'parameters' property
              * of the parent JavaAction element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  6.0.0 to 7.20.0
              */
-    def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter = js.native
+    def createInJavaActionUnderParameters(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -672,7 +775,7 @@ object javaactionsNs extends js.Object {
              * of the parent BasicParameterType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ListType = js.native
     /**
@@ -690,12 +793,13 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ListType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.10.0: removed experimental
        * In version 6.6.0: introduced
        */
@@ -715,12 +819,28 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.MicroflowActionInfo = js.native
   }
   
   /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object MicroflowJavaActionParameterType extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenJavaactionsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new MicroflowJavaActionParameterType instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.MicroflowJavaActionParameterType = js.native
+  }
+  
+  /**
+       * In version 7.21.0: deleted
        * In version 6.9.0: introduced
        */
   @js.native
@@ -739,12 +859,13 @@ object javaactionsNs extends js.Object {
              * of the parent JavaActionParameter element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.9.0 and higher
+             *  6.9.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.MicroflowParameterType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.7.0: introduced
        */
   @js.native
@@ -754,6 +875,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -772,7 +894,7 @@ object javaactionsNs extends js.Object {
              * of the parent BasicParameterType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ParameterizedEntityType = js.native
     /**
@@ -790,7 +912,7 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ParameterizedEntityType = js.native
     /**
@@ -799,12 +921,13 @@ object javaactionsNs extends js.Object {
              * of the parent ListType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInListTypeUnderParameter(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ListType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ParameterizedEntityType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -814,6 +937,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -832,7 +956,7 @@ object javaactionsNs extends js.Object {
              * of the parent BasicParameterType element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.StringType = js.native
     /**
@@ -850,12 +974,13 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.StringType = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -865,6 +990,7 @@ object javaactionsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.6.0: introduced
        */
   @js.native
@@ -883,7 +1009,7 @@ object javaactionsNs extends js.Object {
              * of the parent JavaAction element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.6.0 and higher
+             *  6.6.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.TypeParameter = js.native
   }

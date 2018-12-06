@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Event
-  extends jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null] {
+  extends jqueryLib.JQueryNs.Event {
   /**
            * Passed away the final date?
            */

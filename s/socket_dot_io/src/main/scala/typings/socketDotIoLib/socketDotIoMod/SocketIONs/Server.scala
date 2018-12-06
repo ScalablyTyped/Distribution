@@ -69,7 +69,7 @@ trait Server extends js.Object {
   		 */
   def attach(srv: js.Any, opts: ServerOptions): Server = js.native
   /**
-  		 * Binds socket.io to an engine.io intsance
+  		 * Binds socket.io to an engine.io instance
   		 * @param src The Engine.io (or compatible) server to bind to
   		 * @return This Server
   		 */

@@ -10,7 +10,7 @@ trait File extends js.Object {
   var content: java.lang.String
   var fileNameNormalized: java.lang.String
   var fileNameOriginal: java.lang.String
-  var gulp: js.UndefOr[vinylLib.vinylMod.File] = js.undefined
+  var gulp: js.UndefOr[gulpDashTypescriptLib.releaseTypesMod.VinylFile] = js.undefined
   var kind: FileKind
   var ts: js.UndefOr[typescriptLib.typescriptMod.tsNs.SourceFile] = js.undefined
 }

@@ -19,6 +19,9 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
+  sealed trait bezel extends js.Object
+  
+  @js.native
   sealed trait black extends js.Object
   
   @js.native
@@ -35,6 +38,9 @@ object reactDashNativeDashNavigationLibStrings {
   
   @js.native
   sealed trait destructive extends js.Object
+  
+  @js.native
+  sealed trait entireScreen extends js.Object
   
   @js.native
   sealed trait fill extends js.Object
@@ -73,12 +79,14 @@ object reactDashNativeDashNavigationLibStrings {
   def alwaysHide: alwaysHide = "alwaysHide".asInstanceOf[alwaysHide]
   def alwaysShow: alwaysShow = "alwaysShow".asInstanceOf[alwaysShow]
   def auto: auto = "auto".asInstanceOf[auto]
+  def bezel: bezel = "bezel".asInstanceOf[bezel]
   def black: black = "black".asInstanceOf[black]
   def center: center = "center".asInstanceOf[center]
   def dark: dark = "dark".asInstanceOf[dark]
   def decelerate: decelerate = "decelerate".asInstanceOf[decelerate]
   def default: default = "default".asInstanceOf[default]
   def destructive: destructive = "destructive".asInstanceOf[destructive]
+  def entireScreen: entireScreen = "entireScreen".asInstanceOf[entireScreen]
   def fill: fill = "fill".asInstanceOf[fill]
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   def landscape: landscape = "landscape".asInstanceOf[landscape]

@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "gl-react"
-version := "3.15-dt-20181121Z-3760fa"
+version := "3.15-dt-20181206Z-4fd824"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

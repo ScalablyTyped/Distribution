@@ -14,7 +14,10 @@ trait Transfer
   def getLocale(transferLocale: TransferLocale): antdLib.Anon_ItemsUnit = js.native
   def getSelectedKeysName(direction: TransferDirection): antdLib.antdLibStrings.sourceSelectedKeys | antdLib.antdLibStrings.targetSelectedKeys = js.native
   def getTitles(transferLocale: TransferLocale): js.Array[java.lang.String] = js.native
-  def handleClear(direction: java.lang.String): scala.Unit = js.native
+  @JSName("handleClear")
+  def handleClear_left(direction: antdLib.antdLibStrings.left): scala.Unit = js.native
+  @JSName("handleClear")
+  def handleClear_right(direction: antdLib.antdLibStrings.right): scala.Unit = js.native
   @JSName("handleFilter")
   def handleFilter_left(
     direction: antdLib.antdLibStrings.left,

@@ -20,9 +20,9 @@ object linkToolsNs extends js.Object {
     extends jointjsLib.jointjsMod.diaNs.ToolView {
     var arrowheadType: java.lang.String = js.native
     var ratio: scala.Double = js.native
-    /* protected */ def onPointerDown(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def onPointerMove(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def onPointerUp(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
+    /* protected */ def onPointerDown(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def onPointerMove(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def onPointerUp(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
   }
   
   @js.native
@@ -35,7 +35,7 @@ object linkToolsNs extends js.Object {
   class Button ()
     extends jointjsLib.jointjsMod.diaNs.ToolView {
     def this(opt: jointjsLib.jointjsMod.linkToolsNs.ButtonNs.Options) = this()
-    /* protected */ def onPointerDown(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
+    /* protected */ def onPointerDown(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
   }
   
   @js.native
@@ -113,7 +113,7 @@ object linkToolsNs extends js.Object {
     }
     
     type ActionCallback = js.Function2[
-        /* evt */ jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], 
+        /* evt */ jqueryLib.JQueryNs.Event, 
         /* view */ jointjsLib.jointjsMod.diaNs.LinkView, 
         scala.Unit
       ]

@@ -72,9 +72,7 @@ trait ServiceSpec extends js.Object {
                * the notReadyAddresses of subsets for the Endpoints associated with the Service. The default
                * value is false. The primary use case for setting this field is to use a StatefulSet's
                * Headless Service to propagate SRV records for its Pods without respect to their readiness
-               * for purpose of peer discovery. This field will replace the
-               * service.alpha.kubernetes.io/tolerate-unready-endpoints when that annotation is deprecated
-               * and all clients have been converted to use this field.
+               * for purpose of peer discovery.
                */
   val publishNotReadyAddresses: scala.Boolean
   /**

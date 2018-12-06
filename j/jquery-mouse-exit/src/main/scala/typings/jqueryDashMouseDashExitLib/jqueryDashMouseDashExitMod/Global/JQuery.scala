@@ -13,7 +13,7 @@ trait JQuery extends js.Object {
   def on_mouseExit(
     event: jqueryDashMouseDashExitLib.jqueryDashMouseDashExitLibStrings.mouseExit,
     handler: js.Function2[
-      /* event */ jqueryLib.JQueryNs.Event[stdLib.HTMLElement, scala.Null], 
+      /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.HTMLElement, _, _, _], 
       /* data */ jqueryDashMouseDashExitLib.jqueryDashMouseDashExitMod.FocusElements, 
       scala.Unit
     ]

@@ -1072,12 +1072,31 @@ object StorageGatewayNs extends js.Object {
   
   
   trait Disk extends js.Object {
+    /**
+         * The iSCSI Qualified Name (IQN) that is defined for a disk. This field is not included in the response if the local disk is not defined as an iSCSI target. The format of this field is targetIqn::LUNNumber::region-volumeId. 
+         */
     var DiskAllocationResource: js.UndefOr[java.lang.String] = js.undefined
     var DiskAllocationType: js.UndefOr[DiskAllocationType] = js.undefined
+    var DiskAttributeList: js.UndefOr[DiskAttributeList] = js.undefined
+    /**
+         * The unique device ID or other distinguishing data that identifies a local disk.
+         */
     var DiskId: js.UndefOr[DiskId] = js.undefined
+    /**
+         * The device node of a local disk as assigned by the virtualization environment.
+         */
     var DiskNode: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The path of a local disk in the gateway virtual machine (VM).
+         */
     var DiskPath: js.UndefOr[java.lang.String] = js.undefined
+    /**
+         * The local disk size in bytes.
+         */
     var DiskSizeInBytes: js.UndefOr[long] = js.undefined
+    /**
+         * A value that represents the status of a local disk.
+         */
     var DiskStatus: js.UndefOr[java.lang.String] = js.undefined
   }
   
@@ -4069,6 +4088,8 @@ object StorageGatewayNs extends js.Object {
   type Description = java.lang.String
   type DeviceType = java.lang.String
   type DiskAllocationType = java.lang.String
+  type DiskAttribute = java.lang.String
+  type DiskAttributeList = js.Array[DiskAttribute]
   type DiskId = java.lang.String
   type DiskIds = js.Array[DiskId]
   type Disks = js.Array[Disk]

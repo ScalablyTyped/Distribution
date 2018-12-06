@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait WebhookClientConfig extends js.Object {
   /**
                * `caBundle` is a PEM encoded CA bundle which will be used to validate the webhook's server
-               * certificate. Required.
+               * certificate. If unspecified, system trust roots on the apiserver are used.
                */
   val caBundle: java.lang.String
   /**
@@ -21,13 +21,12 @@ trait WebhookClientConfig extends js.Object {
                *
                * If the webhook is running within the cluster, then you should use `service`.
                *
-               * If there is only one port open for the service, that port will be used. If there are
-               * multiple ports open, port 443 will be used if it is open, otherwise it is an error.
+               * Port 443 will be used if it is open, otherwise it is an error.
                */
   val service: ServiceReference
   /**
-               * `url` gives the location of the webhook, in standard URL form
-               * (`[scheme://]host:port/path`). Exactly one of `url` or `service` must be specified.
+               * `url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`).
+               * Exactly one of `url` or `service` must be specified.
                *
                * The `host` should not refer to a service running in the cluster; use the `service` field
                * instead. The host might be resolved via external DNS in some apiservers (e.g.,

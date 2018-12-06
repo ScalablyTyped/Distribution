@@ -13,6 +13,6 @@ trait Anon_Trigger[TTarget, TData] extends js.Object {
            * The trigger hook is called early in the process of triggering an event, just after the `jQuery.Event` object is constructed and before any handlers have been called. It can process the triggered event in any way, for example by calling `event.stopPropagation()` or `event.preventDefault()` before returning. If the hook returns `false`, jQuery does not perform any further event triggering actions and returns immediately. Otherwise, it performs the normal trigger processing, calling any event handlers for the element and bubbling the event (unless propagation is stopped in advance or `noBubble` was specified for the special event) to call event handlers attached to parent elements.
            * @see \`{@link https://learn.jquery.com/events/event-extensions/#trigger-function-event-jquery-event-data-object }\`
            */
-  def trigger(`this`: TTarget, event: jqueryLib.JQueryNs.Event[TTarget, TData], data: TData): scala.Unit | jqueryLib.jqueryLibNumbers.`false`
+  def trigger(`this`: TTarget, event: jqueryLib.JQueryNs.Event, data: TData): scala.Unit | jqueryLib.jqueryLibNumbers.`false`
 }
 

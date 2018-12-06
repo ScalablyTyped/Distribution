@@ -387,9 +387,22 @@ object admissionregistrationNs extends js.Object {
           ] = js.undefined
       /**
                    * Rules describes what operations on what resources/subresources the webhook cares about. The
-                   * webhook cares about an operation if it matches _any_ Rule.
+                   * webhook cares about an operation if it matches _any_ Rule. However, in order to prevent
+                   * ValidatingAdmissionWebhooks and MutatingAdmissionWebhooks from putting the cluster in a
+                   * state which cannot be recovered from without completely disabling the plugin,
+                   * ValidatingAdmissionWebhooks and MutatingAdmissionWebhooks are never called on admission
+                   * requests for ValidatingWebhookConfiguration and MutatingWebhookConfiguration objects.
                    */
       var rules: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[RuleWithOperations]]] = js.undefined
+      /**
+                   * SideEffects states whether this webhookk has side effects. Acceptable values are: Unknown,
+                   * None, Some, NoneOnDryRun Webhooks with side effects MUST implement a reconciliation system,
+                   * since a request may be rejected by a future step in the admission change and the side
+                   * effects therefore need to be undone. Requests with the dryRun attribute will be
+                   * auto-rejected if they match a webhook with sideEffects == Unknown or Some. Defaults to
+                   * Unknown.
+                   */
+      var sideEffects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -399,22 +412,21 @@ object admissionregistrationNs extends js.Object {
     trait WebhookClientConfig extends js.Object {
       /**
                    * `caBundle` is a PEM encoded CA bundle which will be used to validate the webhook's server
-                   * certificate. Required.
+                   * certificate. If unspecified, system trust roots on the apiserver are used.
                    */
-      var caBundle: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var caBundle: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
                    * `service` is a reference to the service for this webhook. Either `service` or `url` must be
                    * specified.
                    *
                    * If the webhook is running within the cluster, then you should use `service`.
                    *
-                   * If there is only one port open for the service, that port will be used. If there are
-                   * multiple ports open, port 443 will be used if it is open, otherwise it is an error.
+                   * Port 443 will be used if it is open, otherwise it is an error.
                    */
       var service: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ServiceReference]] = js.undefined
       /**
-                   * `url` gives the location of the webhook, in standard URL form
-                   * (`[scheme://]host:port/path`). Exactly one of `url` or `service` must be specified.
+                   * `url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`).
+                   * Exactly one of `url` or `service` must be specified.
                    *
                    * The `host` should not refer to a service running in the cluster; use the `service` field
                    * instead. The host might be resolved via external DNS in some apiservers (e.g.,

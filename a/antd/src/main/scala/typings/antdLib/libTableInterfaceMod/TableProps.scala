@@ -18,6 +18,9 @@ trait TableProps[T] extends js.Object {
   var defaultExpandAllRows: js.UndefOr[scala.Boolean] = js.undefined
   var defaultExpandedRowKeys: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double]] = js.undefined
   var dropdownPrefixCls: js.UndefOr[java.lang.String] = js.undefined
+  var expandIcon: js.UndefOr[
+    js.Function1[/* props */ ExpandIconProps[T], reactLib.reactMod.ReactNs.ReactNode]
+  ] = js.undefined
   var expandIconAsCell: js.UndefOr[scala.Boolean] = js.undefined
   var expandIconColumnIndex: js.UndefOr[scala.Double] = js.undefined
   var expandRowByClick: js.UndefOr[scala.Boolean] = js.undefined

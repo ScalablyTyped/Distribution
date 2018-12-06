@@ -12,6 +12,65 @@ object apiextensionsNs extends js.Object {
   @js.native
   object v1beta1Ns extends js.Object {
     /**
+             * CustomResourceColumnDefinition specifies a column for server side printing.
+             */
+    
+    trait CustomResourceColumnDefinition extends js.Object {
+      /**
+                   * JSONPath is a simple JSON path, i.e. with array notation.
+                   */
+      var JSONPath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * description is a human readable description of this column.
+                   */
+      var description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * format is an optional OpenAPI type definition for this column. The 'name' format is applied
+                   * to the primary identifier column to assist in clients identifying column is the resource
+                   * name. See
+                   * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for
+                   * more.
+                   */
+      var format: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * name is a human readable name for the column.
+                   */
+      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * priority is an integer defining the relative importance of this column compared to others.
+                   * Lower numbers are considered higher priority. Columns that may be omitted in limited space
+                   * scenarios should be given a higher priority.
+                   */
+      var priority: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      /**
+                   * type is an OpenAPI type definition for this column. See
+                   * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for
+                   * more.
+                   */
+      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
+             * CustomResourceConversion describes how to convert different versions of a CR.
+             */
+    
+    trait CustomResourceConversion extends js.Object {
+      /**
+                   * `strategy` specifies the conversion strategy. Allowed values are: - `None`: The converter
+                   * only change the apiVersion and would not touch any other field in the CR. - `Webhook`: API
+                   * Server will call to an external webhook to do the conversion. Additional information is
+                   * needed for this option.
+                   */
+      var strategy: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * `webhookClientConfig` is the instructions for how to call the webhook if strategy is
+                   * `Webhook`. This field is alpha-level and is only honored by servers that enable the
+                   * CustomResourceWebhookConversion feature.
+                   */
+      var webhookClientConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[WebhookClientConfig]] = js.undefined
+    }
+    
+    /**
              * CustomResourceDefinition represents a resource that should be exposed on the API server.  Its
              * name MUST be in the format <.spec.name>.<.spec.group>.
              */
@@ -37,7 +96,7 @@ object apiextensionsNs extends js.Object {
       /**
                    * Spec describes how the user wants the resources to appear
                    */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinitionSpec]] = js.undefined
+      var spec: atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinitionSpec]
       /**
                    * Status indicates the actual state of the CustomResourceDefinition
                    */
@@ -105,6 +164,10 @@ object apiextensionsNs extends js.Object {
     
     trait CustomResourceDefinitionNames extends js.Object {
       /**
+                   * Categories is a list of grouped resources custom resources belong to (e.g. 'all')
+                   */
+      var categories: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
                    * Kind is the serialized kind of the resource.  It is normally CamelCase and singular.
                    */
       var kind: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
@@ -134,6 +197,16 @@ object apiextensionsNs extends js.Object {
     
     trait CustomResourceDefinitionSpec extends js.Object {
       /**
+                   * AdditionalPrinterColumns are additional columns shown e.g. in kubectl next to the name.
+                   * Defaults to a created-at column. Optional, the global columns for all versions. Top-level
+                   * and per-version columns are mutually exclusive.
+                   */
+      var additionalPrinterColumns: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[CustomResourceColumnDefinition]]] = js.undefined
+      /**
+                   * `conversion` defines conversion settings for the CRD.
+                   */
+      var conversion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceConversion]] = js.undefined
+      /**
                    * Group is the group this resource belongs in
                    */
       var group: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
@@ -147,13 +220,37 @@ object apiextensionsNs extends js.Object {
                    */
       var scope: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
       /**
-                   * Validation describes the validation methods for CustomResources
+                   * Subresources describes the subresources for CustomResource Optional, the global
+                   * subresources for all versions. Top-level and per-version subresources are mutually
+                   * exclusive.
+                   */
+      var subresources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceSubresources]] = js.undefined
+      /**
+                   * Validation describes the validation methods for CustomResources Optional, the global
+                   * validation schema for all versions. Top-level and per-version schemas are mutually
+                   * exclusive.
                    */
       var validation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceValidation]] = js.undefined
       /**
-                   * Version is the version this resource belongs in
+                   * Version is the version this resource belongs in Should be always first item in Versions
+                   * field if provided. Optional, but at least one of Version or Versions must be set.
+                   * Deprecated: Please use `Versions`.
                    */
-      var version: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var version: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * Versions is the list of all supported versions for this resource. If Version field is
+                   * provided, this field is optional. Validation: All versions must use the same validation
+                   * schema for now. i.e., top level Validation field is applied to all of these versions.
+                   * Order: The version name will be used to compute the order. If the version string is
+                   * "kube-like", it will sort above non "kube-like" version strings, which are ordered
+                   * lexicographically. "Kube-like" versions start with a "v", then are followed by a number
+                   * (the major version), then optionally the string "alpha" or "beta" and another number (the
+                   * minor version). These are sorted first by GA > beta > alpha (where GA is a version with no
+                   * suffix such as beta or alpha), and then by comparing major version, then minor version. An
+                   * example sorted list of versions: v10, v2, v1, v11beta2, v10beta3, v3beta1, v12alpha1,
+                   * v11alpha2, foo1, foo10.
+                   */
+      var versions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[CustomResourceDefinitionVersion]]] = js.undefined
     }
     
     /**
@@ -170,6 +267,105 @@ object apiextensionsNs extends js.Object {
                    * Conditions indicate state for particular aspects of a CustomResourceDefinition
                    */
       var conditions: atPulumiPulumiLib.resourceMod.Input[js.Array[CustomResourceDefinitionCondition]]
+      /**
+                   * StoredVersions are all versions of CustomResources that were ever persisted. Tracking these
+                   * versions allows a migration path for stored versions in etcd. The field is mutable so the
+                   * migration controller can first finish a migration to another version (i.e. that no old
+                   * objects are left in the storage), and then remove the rest of the versions from this list.
+                   * None of the versions in this list can be removed from the spec.Versions field.
+                   */
+      var storedVersions: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+    }
+    
+    /**
+             * CustomResourceDefinitionVersion describes a version for CRD.
+             */
+    
+    trait CustomResourceDefinitionVersion extends js.Object {
+      /**
+                   * AdditionalPrinterColumns are additional columns shown e.g. in kubectl next to the name.
+                   * Defaults to a created-at column. Top-level and per-version columns are mutually exclusive.
+                   * Per-version columns must not all be set to identical values (top-level columns should be
+                   * used instead) This field is alpha-level and is only honored by servers that enable the
+                   * CustomResourceWebhookConversion feature. NOTE: CRDs created prior to 1.13 populated the
+                   * top-level additionalPrinterColumns field by default. To apply an update that changes to
+                   * per-version additionalPrinterColumns, the top-level additionalPrinterColumns field must be
+                   * explicitly set to null
+                   */
+      var additionalPrinterColumns: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[CustomResourceColumnDefinition]]] = js.undefined
+      /**
+                   * Name is the version name, e.g. “v1”, “v2beta1”, etc.
+                   */
+      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * Schema describes the schema for CustomResource used in validation, pruning, and defaulting.
+                   * Top-level and per-version schemas are mutually exclusive. Per-version schemas must not all
+                   * be set to identical values (top-level validation schema should be used instead) This field
+                   * is alpha-level and is only honored by servers that enable the
+                   * CustomResourceWebhookConversion feature.
+                   */
+      var schema: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceValidation]] = js.undefined
+      /**
+                   * Served is a flag enabling/disabling this version from being served via REST APIs
+                   */
+      var served: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      /**
+                   * Storage flags the version as storage version. There must be exactly one flagged as storage
+                   * version.
+                   */
+      var storage: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      /**
+                   * Subresources describes the subresources for CustomResource Top-level and per-version
+                   * subresources are mutually exclusive. Per-version subresources must not all be set to
+                   * identical values (top-level subresources should be used instead) This field is alpha-level
+                   * and is only honored by servers that enable the CustomResourceWebhookConversion feature.
+                   */
+      var subresources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceSubresources]] = js.undefined
+    }
+    
+    /**
+             * CustomResourceSubresourceScale defines how to serve the scale subresource for
+             * CustomResources.
+             */
+    
+    trait CustomResourceSubresourceScale extends js.Object {
+      /**
+                   * LabelSelectorPath defines the JSON path inside of a CustomResource that corresponds to
+                   * Scale.Status.Selector. Only JSON paths without the array notation are allowed. Must be a
+                   * JSON Path under .status. Must be set to work with HPA. If there is no value under the given
+                   * path in the CustomResource, the status label selector value in the /scale subresource will
+                   * default to the empty string.
+                   */
+      var labelSelectorPath: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * SpecReplicasPath defines the JSON path inside of a CustomResource that corresponds to
+                   * Scale.Spec.Replicas. Only JSON paths without the array notation are allowed. Must be a JSON
+                   * Path under .spec. If there is no value under the given path in the CustomResource, the
+                   * /scale subresource will return an error on GET.
+                   */
+      var specReplicasPath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * StatusReplicasPath defines the JSON path inside of a CustomResource that corresponds to
+                   * Scale.Status.Replicas. Only JSON paths without the array notation are allowed. Must be a
+                   * JSON Path under .status. If there is no value under the given path in the CustomResource,
+                   * the status replica value in the /scale subresource will default to 0.
+                   */
+      var statusReplicasPath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
+             * CustomResourceSubresources defines the status and scale subresources for CustomResources.
+             */
+    
+    trait CustomResourceSubresources extends js.Object {
+      /**
+                   * Scale denotes the scale subresource for CustomResources
+                   */
+      var scale: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceSubresourceScale]] = js.undefined
+      /**
+                   * Status denotes the status subresource for CustomResources
+                   */
+      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[_]] = js.undefined
     }
     
     /**
@@ -193,15 +389,6 @@ object apiextensionsNs extends js.Object {
     }
     
     /**
-             * JSON represents any valid JSON value. These types are supported: bool, int64, float64,
-             * string, []interface{}, map[string]interface{} and nil.
-             */
-    
-    trait JSON extends js.Object {
-      var Raw: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-    }
-    
-    /**
              * JSONSchemaProps is a JSON-Schema following Specification Draft 4 (http://json-schema.org/).
              */
     
@@ -210,22 +397,22 @@ object apiextensionsNs extends js.Object {
       var $ref: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       @JSName("$schema")
       var $schema: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var additionalItems: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaPropsOrBool]] = js.undefined
-      var additionalProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaPropsOrBool]] = js.undefined
+      var additionalItems: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps | scala.Boolean]] = js.undefined
+      var additionalProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps | scala.Boolean]] = js.undefined
       var allOf: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[JSONSchemaProps]]] = js.undefined
       var anyOf: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[JSONSchemaProps]]] = js.undefined
-      var default: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSON]] = js.undefined
+      var default: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[_]] = js.undefined
       var definitions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
       var dependencies: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
       var description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var enum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[JSON]]] = js.undefined
-      var example: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSON]] = js.undefined
+      var enum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[_]]] = js.undefined
+      var example: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[_]] = js.undefined
       var exclusiveMaximum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       var exclusiveMinimum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       var externalDocs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ExternalDocumentation]] = js.undefined
       var format: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       var id: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var items: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaPropsOrArray]] = js.undefined
+      var items: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps | js.Array[_]]] = js.undefined
       var maxItems: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       var maxLength: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       var maxProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
@@ -247,32 +434,67 @@ object apiextensionsNs extends js.Object {
     }
     
     /**
-             * JSONSchemaPropsOrArray represents a value that can either be a JSONSchemaProps or an array of
-             * JSONSchemaProps. Mainly here for serialization purposes.
+             * ServiceReference holds a reference to Service.legacy.k8s.io
              */
     
-    trait JSONSchemaPropsOrArray extends js.Object {
-      var JSONSchemas: atPulumiPulumiLib.resourceMod.Input[js.Array[JSONSchemaProps]]
-      var Schema: atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]
+    trait ServiceReference extends js.Object {
+      /**
+                   * `name` is the name of the service. Required
+                   */
+      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * `namespace` is the namespace of the service. Required
+                   */
+      var namespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * `path` is an optional URL path which will be sent in any request to this service.
+                   */
+      var path: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
-             * JSONSchemaPropsOrBool represents JSONSchemaProps or a boolean value. Defaults to true for the
-             * boolean property.
+             * WebhookClientConfig contains the information to make a TLS connection with the webhook. It
+             * has the same field as admissionregistration.v1beta1.WebhookClientConfig.
              */
     
-    trait JSONSchemaPropsOrBool extends js.Object {
-      var Allows: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
-      var Schema: atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]
-    }
-    
-    /**
-             * JSONSchemaPropsOrStringArray represents a JSONSchemaProps or a string array.
-             */
-    
-    trait JSONSchemaPropsOrStringArray extends js.Object {
-      var Property: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
-      var Schema: atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]
+    trait WebhookClientConfig extends js.Object {
+      /**
+                   * `caBundle` is a PEM encoded CA bundle which will be used to validate the webhook's server
+                   * certificate. If unspecified, system trust roots on the apiserver are used.
+                   */
+      var caBundle: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * `service` is a reference to the service for this webhook. Either `service` or `url` must be
+                   * specified.
+                   *
+                   * If the webhook is running within the cluster, then you should use `service`.
+                   *
+                   * Port 443 will be used if it is open, otherwise it is an error.
+                   */
+      var service: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ServiceReference]] = js.undefined
+      /**
+                   * `url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`).
+                   * Exactly one of `url` or `service` must be specified.
+                   *
+                   * The `host` should not refer to a service running in the cluster; use the `service` field
+                   * instead. The host might be resolved via external DNS in some apiservers (e.g.,
+                   * `kube-apiserver` cannot resolve in-cluster DNS as that would be a layering violation).
+                   * `host` may also be an IP address.
+                   *
+                   * Please note that using `localhost` or `127.0.0.1` as a `host` is risky unless you take
+                   * great care to run this webhook on all hosts which run an apiserver which might need to make
+                   * calls to this webhook. Such installs are likely to be non-portable, i.e., not easy to turn
+                   * up in a new cluster.
+                   *
+                   * The scheme must be "https"; the URL must begin with "https://".
+                   *
+                   * A path is optional, and if present may be any string permissible in a URL. You may use the
+                   * path to pass an arbitrary string to the webhook, for example, a cluster identifier.
+                   *
+                   * Attempting to use a user or basic auth e.g. "user:password@" is not allowed. Fragments
+                   * ("#...") and query parameters ("?...") are not allowed, either.
+                   */
+      var url: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
     }
     
     def isCustomResourceDefinition(o: js.Any): /* is CustomResourceDefinition */scala.Boolean = js.native

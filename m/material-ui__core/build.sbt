@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "material-ui__core"
-version := "3.6.0-253c68"
+version := "3.6.1-1a6061"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "classnames" % "2.2-dt-20180910Z-d2b0a8",
   "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
   "com.scalablytyped" %%% "debounce" % "1.2-dt-20181203Z-b4da0f",
-  "com.scalablytyped" %%% "deepmerge" % "2.2.1-d0c656",
+  "com.scalablytyped" %%% "deepmerge" % "3.0.0-d0c656",
   "com.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180910Z-05e35b",
   "com.scalablytyped" %%% "indefinite-observable" % "1.0.2-19bfe2",
   "com.scalablytyped" %%% "is-plain-object" % "2.0.4-09c4c7",

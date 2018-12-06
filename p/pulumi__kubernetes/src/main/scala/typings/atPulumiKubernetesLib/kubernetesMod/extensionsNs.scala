@@ -308,8 +308,9 @@ object extensionsNs extends js.Object {
     }
     
     /**
-             * Pod Security Policy governs the ability to make requests that affect the Security Context
-             * that will be applied to a pod and container.
+             * PodSecurityPolicy governs the ability to make requests that affect the Security Context that
+             * will be applied to a pod and container. Deprecated: use PodSecurityPolicy from policy API
+             * Group instead.
              */
     @js.native
     class PodSecurityPolicy protected ()
@@ -341,7 +342,8 @@ object extensionsNs extends js.Object {
     }
     
     /**
-             * Pod Security Policy List is a list of PodSecurityPolicy objects.
+             * PodSecurityPolicyList is a list of PodSecurityPolicy objects. Deprecated: use
+             * PodSecurityPolicyList from policy API Group instead.
              */
     @js.native
     class PodSecurityPolicyList protected ()
@@ -650,8 +652,9 @@ object extensionsNs extends js.Object {
     }
     
     /**
-             * Pod Security Policy governs the ability to make requests that affect the Security Context
-             * that will be applied to a pod and container.
+             * PodSecurityPolicy governs the ability to make requests that affect the Security Context that
+             * will be applied to a pod and container. Deprecated: use PodSecurityPolicy from policy API
+             * Group instead.
              */
     @js.native
     object PodSecurityPolicy extends js.Object {
@@ -670,7 +673,8 @@ object extensionsNs extends js.Object {
     }
     
     /**
-             * Pod Security Policy List is a list of PodSecurityPolicy objects.
+             * PodSecurityPolicyList is a list of PodSecurityPolicy objects. Deprecated: use
+             * PodSecurityPolicyList from policy API Group instead.
              */
     @js.native
     object PodSecurityPolicyList extends js.Object {

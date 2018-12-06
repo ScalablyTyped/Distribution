@@ -98,7 +98,7 @@ object rbacNs extends js.Object {
       /**
                    * Subjects holds references to the objects the role applies to.
                    */
-      var subjects: atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]
+      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
     }
     
     /**
@@ -268,7 +268,7 @@ object rbacNs extends js.Object {
       /**
                    * Subjects holds references to the objects the role applies to.
                    */
-      var subjects: atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]
+      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
     }
     
     /**
@@ -481,7 +481,7 @@ object rbacNs extends js.Object {
       /**
                    * Subjects holds references to the objects the role applies to.
                    */
-      var subjects: atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]
+      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
     }
     
     /**
@@ -652,7 +652,7 @@ object rbacNs extends js.Object {
       /**
                    * Subjects holds references to the objects the role applies to.
                    */
-      var subjects: atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]
+      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
     }
     
     /**
@@ -867,7 +867,7 @@ object rbacNs extends js.Object {
       /**
                    * Subjects holds references to the objects the role applies to.
                    */
-      var subjects: atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]
+      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
     }
     
     /**
@@ -1038,7 +1038,7 @@ object rbacNs extends js.Object {
       /**
                    * Subjects holds references to the objects the role applies to.
                    */
-      var subjects: atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]
+      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
     }
     
     /**

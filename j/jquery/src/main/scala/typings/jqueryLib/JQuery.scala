@@ -892,7 +892,7 @@ trait JQuery[TElement]
   def ajaxComplete(
     handler: js.ThisFunction3[
       /* this */ stdLib.Document, 
-      /* event */ jqueryLib.JQueryNs.Event[stdLib.Document, scala.Null], 
+      /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.Document, js.UndefOr[scala.Nothing], stdLib.Document, stdLib.Document], 
       /* jqXHR */ jqueryLib.JQueryNs.jqXHR[_], 
       /* ajaxOptions */ jqueryLib.JQueryNs.AjaxSettings[_], 
       scala.Unit | jqueryLib.jqueryLibNumbers.`false`
@@ -913,7 +913,7 @@ trait JQuery[TElement]
   def ajaxError(
     handler: js.ThisFunction4[
       /* this */ stdLib.Document, 
-      /* event */ jqueryLib.JQueryNs.Event[stdLib.Document, scala.Null], 
+      /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.Document, js.UndefOr[scala.Nothing], stdLib.Document, stdLib.Document], 
       /* jqXHR */ jqueryLib.JQueryNs.jqXHR[_], 
       /* ajaxSettings */ jqueryLib.JQueryNs.AjaxSettings[_], 
       /* thrownError */ java.lang.String, 
@@ -935,7 +935,7 @@ trait JQuery[TElement]
   def ajaxSend(
     handler: js.ThisFunction3[
       /* this */ stdLib.Document, 
-      /* event */ jqueryLib.JQueryNs.Event[stdLib.Document, scala.Null], 
+      /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.Document, js.UndefOr[scala.Nothing], stdLib.Document, stdLib.Document], 
       /* jqXHR */ jqueryLib.JQueryNs.jqXHR[_], 
       /* ajaxOptions */ jqueryLib.JQueryNs.AjaxSettings[_], 
       scala.Unit | jqueryLib.jqueryLibNumbers.`false`
@@ -986,7 +986,7 @@ trait JQuery[TElement]
   def ajaxSuccess(
     handler: js.ThisFunction4[
       /* this */ stdLib.Document, 
-      /* event */ jqueryLib.JQueryNs.Event[stdLib.Document, scala.Null], 
+      /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.Document, js.UndefOr[scala.Nothing], stdLib.Document, stdLib.Document], 
       /* jqXHR */ jqueryLib.JQueryNs.jqXHR[_], 
       /* ajaxOptions */ jqueryLib.JQueryNs.AjaxSettings[_], 
       /* data */ jqueryLib.JQueryNs.PlainObject[_], 
@@ -2354,390 +2354,6 @@ trait JQuery[TElement]
   ): this.type = js.native
   /**
        * Attach a handler to an event for the elements.
-       * @param eventType A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
-       * @param handler_preventBubble _&#x40;param_ `handler_preventBubble`
-       * <br>
-       * * `handler` — A function to execute each time the event is triggered. <br>
-       * * `preventBubble` — Setting the third argument to false will attach a function that prevents the default action from
-       *                     occurring and stops the event from bubbling. The default is `true`.
-       * @see \`{@link https://api.jquery.com/bind/ }\`
-       * @since 1.0
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link on }\`.
-       *
-       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
-       *
-       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
-       * @example ​ ````Handle click and double-click for the paragraph.  Note: the coordinates are window relative, so in this case relative to the demo iframe.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>bind demo</title>
-    <style>
-    p {
-      background: yellow;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 5px;
-    }
-    p.over {
-       background: #ccc;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Click or double click here.</p>
-  <span></span>
-  ​
-  <script>
-  $( "p" ).bind( "click", function( event ) {
-    var str = "( " + event.pageX + ", " + event.pageY + " )";
-    $( "span" ).text( "Click happened! " + str );
-  });
-  $( "p" ).bind( "dblclick", function() {
-    $( "span" ).text( "Double-click happened in " + this.nodeName );
-  });
-  $( "p" ).bind( "mouseenter mouseleave", function( event ) {
-    $( this ).toggleClass( "over" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````To display each paragraph&#39;s text in an alert box whenever it is clicked:
-  ```javascript
-  $( "p" ).bind( "click", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````Cancel a default action and prevent it from bubbling up by returning false:
-  ```javascript
-  $( "form" ).bind( "submit", function() {
-    return false;
-  })
-  ```
-       * @example ​ ````Cancel only the default action by using the .preventDefault() method.
-  ```javascript
-  $( "form" ).bind( "submit", function( event ) {
-    event.preventDefault();
-  });
-  ```
-       * @example ​ ````Stop an event from bubbling without preventing the default action by using the .stopPropagation() method.
-  ```javascript
-  $( "form" ).bind( "submit", function( event ) {
-    event.stopPropagation();
-  });
-  ```
-       * @example ​ ````Bind custom events.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>bind demo</title>
-    <style>
-    p {
-      color: red;
-    }
-    span {
-      color: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Has an attached custom event.</p>
-  <button>Trigger custom event</button>
-  <span style="display: none;"></span>
-  ​
-  <script>
-  $( "p" ).bind( "myCustomEvent", function( e, myName, myValue ) {
-    $( this ).text( myName + ", hi there!" );
-    $( "span" )
-      .stop()
-      .css( "opacity", 1 )
-      .text( "myName = " + myName )
-      .fadeIn( 30 )
-      .fadeOut( 1000 );
-    });
-  $( "button" ).click(function() {
-    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
-  def bind(eventType: java.lang.String): this.type = js.native
-  /**
-       * Attach a handler to an event for the elements.
-       * @param eventType A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
-       * @param handler_preventBubble _&#x40;param_ `handler_preventBubble`
-       * <br>
-       * * `handler` — A function to execute each time the event is triggered. <br>
-       * * `preventBubble` — Setting the third argument to false will attach a function that prevents the default action from
-       *                     occurring and stops the event from bubbling. The default is `true`.
-       * @see \`{@link https://api.jquery.com/bind/ }\`
-       * @since 1.0
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link on }\`.
-       *
-       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
-       *
-       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
-       * @example ​ ````Handle click and double-click for the paragraph.  Note: the coordinates are window relative, so in this case relative to the demo iframe.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>bind demo</title>
-    <style>
-    p {
-      background: yellow;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 5px;
-    }
-    p.over {
-       background: #ccc;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Click or double click here.</p>
-  <span></span>
-  ​
-  <script>
-  $( "p" ).bind( "click", function( event ) {
-    var str = "( " + event.pageX + ", " + event.pageY + " )";
-    $( "span" ).text( "Click happened! " + str );
-  });
-  $( "p" ).bind( "dblclick", function() {
-    $( "span" ).text( "Double-click happened in " + this.nodeName );
-  });
-  $( "p" ).bind( "mouseenter mouseleave", function( event ) {
-    $( this ).toggleClass( "over" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````To display each paragraph&#39;s text in an alert box whenever it is clicked:
-  ```javascript
-  $( "p" ).bind( "click", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````Cancel a default action and prevent it from bubbling up by returning false:
-  ```javascript
-  $( "form" ).bind( "submit", function() {
-    return false;
-  })
-  ```
-       * @example ​ ````Cancel only the default action by using the .preventDefault() method.
-  ```javascript
-  $( "form" ).bind( "submit", function( event ) {
-    event.preventDefault();
-  });
-  ```
-       * @example ​ ````Stop an event from bubbling without preventing the default action by using the .stopPropagation() method.
-  ```javascript
-  $( "form" ).bind( "submit", function( event ) {
-    event.stopPropagation();
-  });
-  ```
-       * @example ​ ````Bind custom events.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>bind demo</title>
-    <style>
-    p {
-      color: red;
-    }
-    span {
-      color: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Has an attached custom event.</p>
-  <button>Trigger custom event</button>
-  <span style="display: none;"></span>
-  ​
-  <script>
-  $( "p" ).bind( "myCustomEvent", function( e, myName, myValue ) {
-    $( this ).text( myName + ", hi there!" );
-    $( "span" )
-      .stop()
-      .css( "opacity", 1 )
-      .text( "myName = " + myName )
-      .fadeIn( 30 )
-      .fadeOut( 1000 );
-    });
-  $( "button" ).click(function() {
-    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
-  def bind(
-    eventType: java.lang.String,
-    handler_preventBubble: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
-  /**
-       * Attach a handler to an event for the elements.
-       * @param eventType A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
-       * @param handler_preventBubble _&#x40;param_ `handler_preventBubble`
-       * <br>
-       * * `handler` — A function to execute each time the event is triggered. <br>
-       * * `preventBubble` — Setting the third argument to false will attach a function that prevents the default action from
-       *                     occurring and stops the event from bubbling. The default is `true`.
-       * @see \`{@link https://api.jquery.com/bind/ }\`
-       * @since 1.0
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link on }\`.
-       *
-       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
-       *
-       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
-       * @example ​ ````Handle click and double-click for the paragraph.  Note: the coordinates are window relative, so in this case relative to the demo iframe.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>bind demo</title>
-    <style>
-    p {
-      background: yellow;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 5px;
-    }
-    p.over {
-       background: #ccc;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Click or double click here.</p>
-  <span></span>
-  ​
-  <script>
-  $( "p" ).bind( "click", function( event ) {
-    var str = "( " + event.pageX + ", " + event.pageY + " )";
-    $( "span" ).text( "Click happened! " + str );
-  });
-  $( "p" ).bind( "dblclick", function() {
-    $( "span" ).text( "Double-click happened in " + this.nodeName );
-  });
-  $( "p" ).bind( "mouseenter mouseleave", function( event ) {
-    $( this ).toggleClass( "over" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````To display each paragraph&#39;s text in an alert box whenever it is clicked:
-  ```javascript
-  $( "p" ).bind( "click", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````Cancel a default action and prevent it from bubbling up by returning false:
-  ```javascript
-  $( "form" ).bind( "submit", function() {
-    return false;
-  })
-  ```
-       * @example ​ ````Cancel only the default action by using the .preventDefault() method.
-  ```javascript
-  $( "form" ).bind( "submit", function( event ) {
-    event.preventDefault();
-  });
-  ```
-       * @example ​ ````Stop an event from bubbling without preventing the default action by using the .stopPropagation() method.
-  ```javascript
-  $( "form" ).bind( "submit", function( event ) {
-    event.stopPropagation();
-  });
-  ```
-       * @example ​ ````Bind custom events.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>bind demo</title>
-    <style>
-    p {
-      color: red;
-    }
-    span {
-      color: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Has an attached custom event.</p>
-  <button>Trigger custom event</button>
-  <span style="display: none;"></span>
-  ​
-  <script>
-  $( "p" ).bind( "myCustomEvent", function( e, myName, myValue ) {
-    $( this ).text( myName + ", hi there!" );
-    $( "span" )
-      .stop()
-      .css( "opacity", 1 )
-      .text( "myName = " + myName )
-      .fadeIn( 30 )
-      .fadeOut( 1000 );
-    });
-  $( "button" ).click(function() {
-    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
-  def bind(eventType: java.lang.String, handler_preventBubble: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
-  /**
-       * Attach a handler to an event for the elements.
        * @param events An object containing one or more DOM event types and functions to execute for them.
        * @see \`{@link https://api.jquery.com/bind/ }\`
        * @since 1.4
@@ -2762,10 +2378,392 @@ trait JQuery[TElement]
   ```
        */
   def bind(
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]]) | jqueryLib.jqueryLibNumbers.`false`
-    ]
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], TElement, TElement]
   ): this.type = js.native
+  /**
+       * Attach a handler to an event for the elements.
+       * @param eventType A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
+       * @param handler_preventBubble _&#x40;param_ `handler_preventBubble`
+       * <br>
+       * * `handler` — A function to execute each time the event is triggered. <br>
+       * * `preventBubble` — Setting the third argument to false will attach a function that prevents the default action from
+       *                     occurring and stops the event from bubbling. The default is `true`.
+       * @see \`{@link https://api.jquery.com/bind/ }\`
+       * @since 1.0
+       * @since 1.4.3
+       * @deprecated ​ Deprecated since 3.0. Use \`{@link on }\`.
+       *
+       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
+       *
+       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
+       * @example ​ ````Handle click and double-click for the paragraph.  Note: the coordinates are window relative, so in this case relative to the demo iframe.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>bind demo</title>
+    <style>
+    p {
+      background: yellow;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+    p.over {
+       background: #ccc;
+    }
+    span {
+      color: red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Click or double click here.</p>
+  <span></span>
+  ​
+  <script>
+  $( "p" ).bind( "click", function( event ) {
+    var str = "( " + event.pageX + ", " + event.pageY + " )";
+    $( "span" ).text( "Click happened! " + str );
+  });
+  $( "p" ).bind( "dblclick", function() {
+    $( "span" ).text( "Double-click happened in " + this.nodeName );
+  });
+  $( "p" ).bind( "mouseenter mouseleave", function( event ) {
+    $( this ).toggleClass( "over" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````To display each paragraph&#39;s text in an alert box whenever it is clicked:
+  ```javascript
+  $( "p" ).bind( "click", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````Cancel a default action and prevent it from bubbling up by returning false:
+  ```javascript
+  $( "form" ).bind( "submit", function() {
+    return false;
+  })
+  ```
+       * @example ​ ````Cancel only the default action by using the .preventDefault() method.
+  ```javascript
+  $( "form" ).bind( "submit", function( event ) {
+    event.preventDefault();
+  });
+  ```
+       * @example ​ ````Stop an event from bubbling without preventing the default action by using the .stopPropagation() method.
+  ```javascript
+  $( "form" ).bind( "submit", function( event ) {
+    event.stopPropagation();
+  });
+  ```
+       * @example ​ ````Bind custom events.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>bind demo</title>
+    <style>
+    p {
+      color: red;
+    }
+    span {
+      color: blue;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Has an attached custom event.</p>
+  <button>Trigger custom event</button>
+  <span style="display: none;"></span>
+  ​
+  <script>
+  $( "p" ).bind( "myCustomEvent", function( e, myName, myValue ) {
+    $( this ).text( myName + ", hi there!" );
+    $( "span" )
+      .stop()
+      .css( "opacity", 1 )
+      .text( "myName = " + myName )
+      .fadeIn( 30 )
+      .fadeOut( 1000 );
+    });
+  $( "button" ).click(function() {
+    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       */
+  def bind[TType /* <: java.lang.String */](eventType: TType): this.type = js.native
+  /**
+       * Attach a handler to an event for the elements.
+       * @param eventType A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
+       * @param handler_preventBubble _&#x40;param_ `handler_preventBubble`
+       * <br>
+       * * `handler` — A function to execute each time the event is triggered. <br>
+       * * `preventBubble` — Setting the third argument to false will attach a function that prevents the default action from
+       *                     occurring and stops the event from bubbling. The default is `true`.
+       * @see \`{@link https://api.jquery.com/bind/ }\`
+       * @since 1.0
+       * @since 1.4.3
+       * @deprecated ​ Deprecated since 3.0. Use \`{@link on }\`.
+       *
+       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
+       *
+       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
+       * @example ​ ````Handle click and double-click for the paragraph.  Note: the coordinates are window relative, so in this case relative to the demo iframe.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>bind demo</title>
+    <style>
+    p {
+      background: yellow;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+    p.over {
+       background: #ccc;
+    }
+    span {
+      color: red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Click or double click here.</p>
+  <span></span>
+  ​
+  <script>
+  $( "p" ).bind( "click", function( event ) {
+    var str = "( " + event.pageX + ", " + event.pageY + " )";
+    $( "span" ).text( "Click happened! " + str );
+  });
+  $( "p" ).bind( "dblclick", function() {
+    $( "span" ).text( "Double-click happened in " + this.nodeName );
+  });
+  $( "p" ).bind( "mouseenter mouseleave", function( event ) {
+    $( this ).toggleClass( "over" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````To display each paragraph&#39;s text in an alert box whenever it is clicked:
+  ```javascript
+  $( "p" ).bind( "click", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````Cancel a default action and prevent it from bubbling up by returning false:
+  ```javascript
+  $( "form" ).bind( "submit", function() {
+    return false;
+  })
+  ```
+       * @example ​ ````Cancel only the default action by using the .preventDefault() method.
+  ```javascript
+  $( "form" ).bind( "submit", function( event ) {
+    event.preventDefault();
+  });
+  ```
+       * @example ​ ````Stop an event from bubbling without preventing the default action by using the .stopPropagation() method.
+  ```javascript
+  $( "form" ).bind( "submit", function( event ) {
+    event.stopPropagation();
+  });
+  ```
+       * @example ​ ````Bind custom events.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>bind demo</title>
+    <style>
+    p {
+      color: red;
+    }
+    span {
+      color: blue;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Has an attached custom event.</p>
+  <button>Trigger custom event</button>
+  <span style="display: none;"></span>
+  ​
+  <script>
+  $( "p" ).bind( "myCustomEvent", function( e, myName, myValue ) {
+    $( this ).text( myName + ", hi there!" );
+    $( "span" )
+      .stop()
+      .css( "opacity", 1 )
+      .text( "myName = " + myName )
+      .fadeIn( 30 )
+      .fadeOut( 1000 );
+    });
+  $( "button" ).click(function() {
+    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       */
+  def bind[TType /* <: java.lang.String */](
+    eventType: TType,
+    handler_preventBubble: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], TElement, TElement, TType]
+  ): this.type = js.native
+  /**
+       * Attach a handler to an event for the elements.
+       * @param eventType A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
+       * @param handler_preventBubble _&#x40;param_ `handler_preventBubble`
+       * <br>
+       * * `handler` — A function to execute each time the event is triggered. <br>
+       * * `preventBubble` — Setting the third argument to false will attach a function that prevents the default action from
+       *                     occurring and stops the event from bubbling. The default is `true`.
+       * @see \`{@link https://api.jquery.com/bind/ }\`
+       * @since 1.0
+       * @since 1.4.3
+       * @deprecated ​ Deprecated since 3.0. Use \`{@link on }\`.
+       *
+       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
+       *
+       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
+       * @example ​ ````Handle click and double-click for the paragraph.  Note: the coordinates are window relative, so in this case relative to the demo iframe.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>bind demo</title>
+    <style>
+    p {
+      background: yellow;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+    p.over {
+       background: #ccc;
+    }
+    span {
+      color: red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Click or double click here.</p>
+  <span></span>
+  ​
+  <script>
+  $( "p" ).bind( "click", function( event ) {
+    var str = "( " + event.pageX + ", " + event.pageY + " )";
+    $( "span" ).text( "Click happened! " + str );
+  });
+  $( "p" ).bind( "dblclick", function() {
+    $( "span" ).text( "Double-click happened in " + this.nodeName );
+  });
+  $( "p" ).bind( "mouseenter mouseleave", function( event ) {
+    $( this ).toggleClass( "over" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````To display each paragraph&#39;s text in an alert box whenever it is clicked:
+  ```javascript
+  $( "p" ).bind( "click", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````Cancel a default action and prevent it from bubbling up by returning false:
+  ```javascript
+  $( "form" ).bind( "submit", function() {
+    return false;
+  })
+  ```
+       * @example ​ ````Cancel only the default action by using the .preventDefault() method.
+  ```javascript
+  $( "form" ).bind( "submit", function( event ) {
+    event.preventDefault();
+  });
+  ```
+       * @example ​ ````Stop an event from bubbling without preventing the default action by using the .stopPropagation() method.
+  ```javascript
+  $( "form" ).bind( "submit", function( event ) {
+    event.stopPropagation();
+  });
+  ```
+       * @example ​ ````Bind custom events.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>bind demo</title>
+    <style>
+    p {
+      color: red;
+    }
+    span {
+      color: blue;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Has an attached custom event.</p>
+  <button>Trigger custom event</button>
+  <span style="display: none;"></span>
+  ​
+  <script>
+  $( "p" ).bind( "myCustomEvent", function( e, myName, myValue ) {
+    $( this ).text( myName + ", hi there!" );
+    $( "span" )
+      .stop()
+      .css( "opacity", 1 )
+      .text( "myName = " + myName )
+      .fadeIn( 30 )
+      .fadeOut( 1000 );
+    });
+  $( "button" ).click(function() {
+    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       */
+  def bind[TType /* <: java.lang.String */](eventType: TType, handler_preventBubble: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   // [bind() overloads] https://github.com/jquery/api.jquery.com/issues/1048
   /**
        * Attach a handler to an event for the elements.
@@ -2781,10 +2779,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
        */
-  def bind[TData](
-    eventType: java.lang.String,
+  def bind[TType /* <: java.lang.String */, TData](
+    eventType: TType,
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
   /**
        * Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
@@ -2817,9 +2815,7 @@ trait JQuery[TElement]
   $( "p" ).blur();
   ```
        */
-  def blur(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def blur(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -2835,7 +2831,10 @@ trait JQuery[TElement]
   $( "p" ).blur();
   ```
        */
-  def blur(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("blur")
+  def blur_blur(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.blur]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -2848,9 +2847,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def blur[TData](
+  @JSName("blur")
+  def blur_blur[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.blur]
   ): this.type = js.native
   /**
        * Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
@@ -2969,9 +2969,7 @@ trait JQuery[TElement]
   });
   ```
        */
-  def change(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def change(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -3030,7 +3028,10 @@ trait JQuery[TElement]
   });
   ```
        */
-  def change(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("change")
+  def change_change(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.change]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -3043,9 +3044,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def change[TData](
+  @JSName("change")
+  def change_change[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.change]
   ): this.type = js.native
   /**
        * Get the children of each element in the set of matched elements, optionally filtered by a selector.
@@ -3624,9 +3626,7 @@ trait JQuery[TElement]
   $( "p" ).click();
   ```
        */
-  def click(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def click(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "click" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -3676,7 +3676,10 @@ trait JQuery[TElement]
   $( "p" ).click();
   ```
        */
-  def click(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("click")
+  def click_click(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.click]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "click" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -3689,9 +3692,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def click[TData](
+  @JSName("click")
+  def click_click[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.click]
   ): this.type = js.native
   /**
        * Create a deep copy of the set of matched elements.
@@ -4172,9 +4176,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def contextmenu(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def contextmenu(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "contextmenu" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -4228,7 +4230,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def contextmenu(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("contextmenu")
+  def contextmenu_contextmenu(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.contextmenu]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "contextmenu" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -4241,9 +4246,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def contextmenu[TData](
+  @JSName("contextmenu")
+  def contextmenu_contextmenu[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.contextmenu]
   ): this.type = js.native
   /**
        * Set one or more CSS properties for the set of matched elements.
@@ -5184,9 +5190,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def dblclick(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def dblclick(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "dblclick" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -5240,7 +5244,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def dblclick(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("dblclick")
+  def dblclick_dblclick(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.dblclick]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "dblclick" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -5253,9 +5260,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def dblclick[TData](
+  @JSName("dblclick")
+  def dblclick_dblclick[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.dblclick]
   ): this.type = js.native
   /**
        * Set a timer to delay execution of subsequent items in the queue.
@@ -5358,238 +5366,6 @@ trait JQuery[TElement]
   /**
        * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
        * @param selector A selector to filter the elements that trigger the event.
-       * @param eventType A string containing one or more space-separated JavaScript event types, such as "click" or
-       *                  "keydown," or custom event names.
-       * @param handler A function to execute each time the event is triggered.
-       * @see \`{@link https://api.jquery.com/delegate/ }\`
-       * @since 1.4.2
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link on }\`.
-       *
-       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
-       *
-       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
-       * @example ​ ````Click a paragraph to add another. Note that .delegate() attaches a click event handler to all paragraphs - even new ones.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>delegate demo</title>
-    <style>
-    p {
-      background: yellow;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 5px;
-    }
-    p.over {
-      background: #ccc;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Click me!</p>
-  ​
-  <span></span>
-  ​
-  <script>
-  $( "body" ).delegate( "p", "click", function() {
-    $( this ).after( "<p>Another paragraph!</p>" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````To display each paragraph&#39;s text in an alert box whenever it is clicked:
-  ```javascript
-  $( "body" ).delegate( "p", "click", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````To cancel a default action and prevent it from bubbling up, return false:
-  ```javascript
-  $( "body" ).delegate( "a", "click", function() {
-    return false;
-  });
-  ```
-       * @example ​ ````To cancel only the default action by using the preventDefault method.
-  ```javascript
-  $( "body" ).delegate( "a", "click", function( event ) {
-    event.preventDefault();
-  });
-  ```
-       * @example ​ ````Can bind custom events too.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>delegate demo</title>
-    <style>
-    p {
-      color: red;
-    }
-    span {
-      color: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Has an attached custom event.</p>
-  <button>Trigger custom event</button>
-  <span style="display:none;"></span>
-  ​
-  <script>
-  $( "body" ).delegate( "p", "myCustomEvent", function( e, myName, myValue ) {
-    $( this ).text( "Hi there!" );
-    $( "span" )
-      .stop()
-      .css( "opacity", 1 )
-      .text( "myName = " + myName )
-      .fadeIn( 30 )
-      .fadeOut( 1000 );
-  });
-  $( "button" ).click(function() {
-    $( "p" ).trigger( "myCustomEvent" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
-  def delegate(
-    selector: jqueryLib.JQueryNs.Selector,
-    eventType: java.lang.String,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
-  /**
-       * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
-       * @param selector A selector to filter the elements that trigger the event.
-       * @param eventType A string containing one or more space-separated JavaScript event types, such as "click" or
-       *                  "keydown," or custom event names.
-       * @param handler A function to execute each time the event is triggered.
-       * @see \`{@link https://api.jquery.com/delegate/ }\`
-       * @since 1.4.2
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link on }\`.
-       *
-       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
-       *
-       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
-       * @example ​ ````Click a paragraph to add another. Note that .delegate() attaches a click event handler to all paragraphs - even new ones.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>delegate demo</title>
-    <style>
-    p {
-      background: yellow;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 5px;
-    }
-    p.over {
-      background: #ccc;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Click me!</p>
-  ​
-  <span></span>
-  ​
-  <script>
-  $( "body" ).delegate( "p", "click", function() {
-    $( this ).after( "<p>Another paragraph!</p>" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````To display each paragraph&#39;s text in an alert box whenever it is clicked:
-  ```javascript
-  $( "body" ).delegate( "p", "click", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````To cancel a default action and prevent it from bubbling up, return false:
-  ```javascript
-  $( "body" ).delegate( "a", "click", function() {
-    return false;
-  });
-  ```
-       * @example ​ ````To cancel only the default action by using the preventDefault method.
-  ```javascript
-  $( "body" ).delegate( "a", "click", function( event ) {
-    event.preventDefault();
-  });
-  ```
-       * @example ​ ````Can bind custom events too.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>delegate demo</title>
-    <style>
-    p {
-      color: red;
-    }
-    span {
-      color: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Has an attached custom event.</p>
-  <button>Trigger custom event</button>
-  <span style="display:none;"></span>
-  ​
-  <script>
-  $( "body" ).delegate( "p", "myCustomEvent", function( e, myName, myValue ) {
-    $( this ).text( "Hi there!" );
-    $( "span" )
-      .stop()
-      .css( "opacity", 1 )
-      .text( "myName = " + myName )
-      .fadeIn( 30 )
-      .fadeOut( 1000 );
-  });
-  $( "button" ).click(function() {
-    $( "p" ).trigger( "myCustomEvent" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
-  def delegate(
-    selector: jqueryLib.JQueryNs.Selector,
-    eventType: java.lang.String,
-    handler: jqueryLib.jqueryLibNumbers.`false`
-  ): this.type = js.native
-  /**
-       * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
-       * @param selector A selector to filter the elements that trigger the event.
        * @param events A plain object of one or more event types and functions to execute for them.
        * @see \`{@link https://api.jquery.com/delegate/ }\`
        * @since 1.4.3
@@ -5601,9 +5377,239 @@ trait JQuery[TElement]
        */
   def delegate(
     selector: jqueryLib.JQueryNs.Selector,
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]]) | jqueryLib.jqueryLibNumbers.`false`
-    ]
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], _, _]
+  ): this.type = js.native
+  /**
+       * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
+       * @param selector A selector to filter the elements that trigger the event.
+       * @param eventType A string containing one or more space-separated JavaScript event types, such as "click" or
+       *                  "keydown," or custom event names.
+       * @param handler A function to execute each time the event is triggered.
+       * @see \`{@link https://api.jquery.com/delegate/ }\`
+       * @since 1.4.2
+       * @deprecated ​ Deprecated since 3.0. Use \`{@link on }\`.
+       *
+       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
+       *
+       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
+       * @example ​ ````Click a paragraph to add another. Note that .delegate() attaches a click event handler to all paragraphs - even new ones.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>delegate demo</title>
+    <style>
+    p {
+      background: yellow;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+    p.over {
+      background: #ccc;
+    }
+    span {
+      color: red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Click me!</p>
+  ​
+  <span></span>
+  ​
+  <script>
+  $( "body" ).delegate( "p", "click", function() {
+    $( this ).after( "<p>Another paragraph!</p>" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````To display each paragraph&#39;s text in an alert box whenever it is clicked:
+  ```javascript
+  $( "body" ).delegate( "p", "click", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````To cancel a default action and prevent it from bubbling up, return false:
+  ```javascript
+  $( "body" ).delegate( "a", "click", function() {
+    return false;
+  });
+  ```
+       * @example ​ ````To cancel only the default action by using the preventDefault method.
+  ```javascript
+  $( "body" ).delegate( "a", "click", function( event ) {
+    event.preventDefault();
+  });
+  ```
+       * @example ​ ````Can bind custom events too.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>delegate demo</title>
+    <style>
+    p {
+      color: red;
+    }
+    span {
+      color: blue;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Has an attached custom event.</p>
+  <button>Trigger custom event</button>
+  <span style="display:none;"></span>
+  ​
+  <script>
+  $( "body" ).delegate( "p", "myCustomEvent", function( e, myName, myValue ) {
+    $( this ).text( "Hi there!" );
+    $( "span" )
+      .stop()
+      .css( "opacity", 1 )
+      .text( "myName = " + myName )
+      .fadeIn( 30 )
+      .fadeOut( 1000 );
+  });
+  $( "button" ).click(function() {
+    $( "p" ).trigger( "myCustomEvent" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       */
+  def delegate[TType /* <: java.lang.String */](
+    selector: jqueryLib.JQueryNs.Selector,
+    eventType: TType,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], _, _, TType]
+  ): this.type = js.native
+  /**
+       * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
+       * @param selector A selector to filter the elements that trigger the event.
+       * @param eventType A string containing one or more space-separated JavaScript event types, such as "click" or
+       *                  "keydown," or custom event names.
+       * @param handler A function to execute each time the event is triggered.
+       * @see \`{@link https://api.jquery.com/delegate/ }\`
+       * @since 1.4.2
+       * @deprecated ​ Deprecated since 3.0. Use \`{@link on }\`.
+       *
+       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
+       *
+       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
+       * @example ​ ````Click a paragraph to add another. Note that .delegate() attaches a click event handler to all paragraphs - even new ones.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>delegate demo</title>
+    <style>
+    p {
+      background: yellow;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+    p.over {
+      background: #ccc;
+    }
+    span {
+      color: red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Click me!</p>
+  ​
+  <span></span>
+  ​
+  <script>
+  $( "body" ).delegate( "p", "click", function() {
+    $( this ).after( "<p>Another paragraph!</p>" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````To display each paragraph&#39;s text in an alert box whenever it is clicked:
+  ```javascript
+  $( "body" ).delegate( "p", "click", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````To cancel a default action and prevent it from bubbling up, return false:
+  ```javascript
+  $( "body" ).delegate( "a", "click", function() {
+    return false;
+  });
+  ```
+       * @example ​ ````To cancel only the default action by using the preventDefault method.
+  ```javascript
+  $( "body" ).delegate( "a", "click", function( event ) {
+    event.preventDefault();
+  });
+  ```
+       * @example ​ ````Can bind custom events too.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>delegate demo</title>
+    <style>
+    p {
+      color: red;
+    }
+    span {
+      color: blue;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Has an attached custom event.</p>
+  <button>Trigger custom event</button>
+  <span style="display:none;"></span>
+  ​
+  <script>
+  $( "body" ).delegate( "p", "myCustomEvent", function( e, myName, myValue ) {
+    $( this ).text( "Hi there!" );
+    $( "span" )
+      .stop()
+      .css( "opacity", 1 )
+      .text( "myName = " + myName )
+      .fadeIn( 30 )
+      .fadeOut( 1000 );
+  });
+  $( "button" ).click(function() {
+    $( "p" ).trigger( "myCustomEvent" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       */
+  def delegate[TType /* <: java.lang.String */](
+    selector: jqueryLib.JQueryNs.Selector,
+    eventType: TType,
+    handler: jqueryLib.jqueryLibNumbers.`false`
   ): this.type = js.native
   /**
        * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
@@ -5620,11 +5626,11 @@ trait JQuery[TElement]
        *
        * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
        */
-  def delegate[TData](
+  def delegate[TType /* <: java.lang.String */, TData](
     selector: jqueryLib.JQueryNs.Selector,
-    eventType: java.lang.String,
+    eventType: TType,
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, _, _, TType]
   ): this.type = js.native
   /**
        * Execute the next function on the queue for the matched elements.
@@ -8815,9 +8821,7 @@ trait JQuery[TElement]
   });
   ```
        */
-  def focus(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def focus(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "focus" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -8869,7 +8873,10 @@ trait JQuery[TElement]
   });
   ```
        */
-  def focus(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("focus")
+  def focus_focus(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.focus]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "focus" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -8882,9 +8889,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def focus[TData](
+  @JSName("focus")
+  def focus_focus[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.focus]
   ): this.type = js.native
   /**
        * Bind an event handler to the "focusin" event.
@@ -8965,9 +8973,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def focusin(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def focusin(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "focusin" event.
        * @param handler A function to execute each time the event is triggered.
@@ -9007,7 +9013,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def focusin(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("focusin")
+  def focusin_focusin(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.focusin]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "focusin" event.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -9020,9 +9029,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def focusin[TData](
+  @JSName("focusin")
+  def focusin_focusin[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.focusin]
   ): this.type = js.native
   /**
        * Bind an event handler to the "focusout" JavaScript event.
@@ -9145,9 +9155,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def focusout(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def focusout(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "focusout" JavaScript event.
        * @param handler A function to execute each time the event is triggered.
@@ -9208,7 +9216,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def focusout(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("focusout")
+  def focusout_focusout(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.focusout]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "focusout" JavaScript event.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -9221,9 +9232,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def focusout[TData](
+  @JSName("focusout")
+  def focusout_focusout[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.focusout]
   ): this.type = js.native
   /**
        * Retrieve the elements matched by the jQuery object.
@@ -10113,79 +10125,15 @@ trait JQuery[TElement]
     complete: js.ThisFunction0[/* this */ TElement, scala.Unit]
   ): this.type = js.native
   /**
-       * Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
+       * Bind a single handler to the matched elements, to be executed when the mouse pointer enters or leaves the elements.
        * @param handlerInOut A function to execute when the mouse pointer enters or leaves the element.
-       * @param handlerOut A function to execute when the mouse pointer leaves the element.
        * @see \`{@link https://api.jquery.com/hover/ }\`
-       * @since 1.0
        * @since 1.4
        * @deprecated ​ Deprecated.
        *
        * **Cause**: The `.hover()` method is a shorthand for the use of the `mouseover`/`mouseout` events. It is often a poor user interface choice because it does not allow for any small amounts of delay between when the mouse enters or exits an area and when the event fires. This can make it quite difficult to use with UI widgets such as drop-down menus. For more information on the problems of hovering, see the \`{@link http://cherne.net/brian/resources/jquery.hoverIntent.html hoverIntent plugin}\`.
        *
        * **Solution**: Review uses of `.hover()` to determine if they are appropriate, and consider use of plugins such as `hoverIntent` as an alternative. The direct replacement for `.hover(fn1, fn2)`, is `.on("mouseenter", fn1).on("mouseleave", fn2)`.
-       * @example ​ ````To add a special style to list items that are being hovered over, try:
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>hover demo</title>
-    <style>
-    ul {
-      margin-left: 20px;
-      color: blue;
-    }
-    li {
-      cursor: default;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <ul>
-    <li>Milk</li>
-    <li>Bread</li>
-    <li class="fade">Chips</li>
-    <li class="fade">Socks</li>
-  </ul>
-  ​
-  <script>
-  $( "li" ).hover(
-    function() {
-      $( this ).append( $( "<span> ***</span>" ) );
-    }, function() {
-      $( this ).find( "span:last" ).remove();
-    }
-  );
-  ​
-  $( "li.fade" ).hover(function() {
-    $( this ).fadeOut( 100 );
-    $( this ).fadeIn( 500 );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````To add a special style to table cells that are being hovered over, try:
-  ```javascript
-  $( "td" ).hover(
-    function() {
-      $( this ).addClass( "hover" );
-    }, function() {
-      $( this ).removeClass( "hover" );
-    }
-  );
-  ```
-       * @example ​ ````To unbind the above example use:
-  ```javascript
-  $( "td" ).off( "mouseenter mouseleave" );
-  ```
        * @example ​ ````Slide the next sibling LI up or down on hover, and toggle a class.
   ```html
   <!doctype html>
@@ -10241,18 +10189,87 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  // HACK: The type parameter T is not used but ensures the 'event' callback parameter is typed correctly.
-  // tslint:disable-next-line:no-unnecessary-generics
-  def hover[T](
-    handlerInOut: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
+  def hover(
+    handlerInOut: jqueryLib.JQueryNs.TypeEventHandler[
+      TElement, 
+      scala.Null, 
+      TElement, 
+      TElement, 
+      jqueryLib.jqueryLibStrings.mouseenter | jqueryLib.jqueryLibStrings.mouseleave
+    ]
   ): this.type = js.native
   /**
-       * Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
+       * Bind a single handler to the matched elements, to be executed when the mouse pointer enters or leaves the elements.
        * @param handlerInOut A function to execute when the mouse pointer enters or leaves the element.
+       * @see \`{@link https://api.jquery.com/hover/ }\`
+       * @since 1.4
+       * @deprecated ​ Deprecated.
+       *
+       * **Cause**: The `.hover()` method is a shorthand for the use of the `mouseover`/`mouseout` events. It is often a poor user interface choice because it does not allow for any small amounts of delay between when the mouse enters or exits an area and when the event fires. This can make it quite difficult to use with UI widgets such as drop-down menus. For more information on the problems of hovering, see the \`{@link http://cherne.net/brian/resources/jquery.hoverIntent.html hoverIntent plugin}\`.
+       *
+       * **Solution**: Review uses of `.hover()` to determine if they are appropriate, and consider use of plugins such as `hoverIntent` as an alternative. The direct replacement for `.hover(fn1, fn2)`, is `.on("mouseenter", fn1).on("mouseleave", fn2)`.
+       * @example ​ ````Slide the next sibling LI up or down on hover, and toggle a class.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>hover demo</title>
+    <style>
+    ul {
+      margin-left: 20px;
+      color: blue;
+    }
+    li {
+      cursor: default;
+    }
+    li.active {
+      background: black;
+      color: white;
+    }
+    span {
+      color:red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <ul>
+    <li>Milk</li>
+    <li>White</li>
+    <li>Carrots</li>
+    <li>Orange</li>
+    <li>Broccoli</li>
+    <li>Green</li>
+  </ul>
+  ​
+  <script>
+  $( "li" )
+    .filter( ":odd" )
+      .hide()
+    .end()
+    .filter( ":even" )
+      .hover(function() {
+        $( this )
+          .toggleClass( "active" )
+          .next()
+            .stop( true, true )
+            .slideToggle();
+      });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       */
+  def hover(handlerInOut: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  /**
+       * Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
+       * @param handlerIn A function to execute when the mouse pointer enters the element.
        * @param handlerOut A function to execute when the mouse pointer leaves the element.
        * @see \`{@link https://api.jquery.com/hover/ }\`
        * @since 1.0
-       * @since 1.4
        * @deprecated ​ Deprecated.
        *
        * **Cause**: The `.hover()` method is a shorthand for the use of the `mouseover`/`mouseout` events. It is often a poor user interface choice because it does not allow for any small amounts of delay between when the mouse enters or exits an area and when the event fires. This can make it quite difficult to use with UI widgets such as drop-down menus. For more information on the problems of hovering, see the \`{@link http://cherne.net/brian/resources/jquery.hoverIntent.html hoverIntent plugin}\`.
@@ -10320,74 +10337,17 @@ trait JQuery[TElement]
   ```javascript
   $( "td" ).off( "mouseenter mouseleave" );
   ```
-       * @example ​ ````Slide the next sibling LI up or down on hover, and toggle a class.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>hover demo</title>
-    <style>
-    ul {
-      margin-left: 20px;
-      color: blue;
-    }
-    li {
-      cursor: default;
-    }
-    li.active {
-      background: black;
-      color: white;
-    }
-    span {
-      color:red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <ul>
-    <li>Milk</li>
-    <li>White</li>
-    <li>Carrots</li>
-    <li>Orange</li>
-    <li>Broccoli</li>
-    <li>Green</li>
-  </ul>
-  ​
-  <script>
-  $( "li" )
-    .filter( ":odd" )
-      .hide()
-    .end()
-    .filter( ":even" )
-      .hover(function() {
-        $( this )
-          .toggleClass( "active" )
-          .next()
-            .stop( true, true )
-            .slideToggle();
-      });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
        */
-  // HACK: The type parameter T is not used but ensures the 'event' callback parameter is typed correctly.
-  // tslint:disable-next-line:no-unnecessary-generics
-  def hover[T](
-    handlerInOut: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]]),
-    handlerOut: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
+  def hover(
+    handlerIn: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseenter],
+    handlerOut: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseleave]
   ): this.type = js.native
   /**
-       * Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
-       * @param handlerInOut A function to execute when the mouse pointer enters or leaves the element.
+       * Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
+       * @param handlerIn A function to execute when the mouse pointer enters the element.
        * @param handlerOut A function to execute when the mouse pointer leaves the element.
        * @see \`{@link https://api.jquery.com/hover/ }\`
        * @since 1.0
-       * @since 1.4
        * @deprecated ​ Deprecated.
        *
        * **Cause**: The `.hover()` method is a shorthand for the use of the `mouseover`/`mouseout` events. It is often a poor user interface choice because it does not allow for any small amounts of delay between when the mouse enters or exits an area and when the event fires. This can make it quite difficult to use with UI widgets such as drop-down menus. For more information on the problems of hovering, see the \`{@link http://cherne.net/brian/resources/jquery.hoverIntent.html hoverIntent plugin}\`.
@@ -10455,7 +10415,20 @@ trait JQuery[TElement]
   ```javascript
   $( "td" ).off( "mouseenter mouseleave" );
   ```
-       * @example ​ ````Slide the next sibling LI up or down on hover, and toggle a class.
+       */
+  def hover(handlerIn: jqueryLib.jqueryLibNumbers.`false`, handlerOut: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  /**
+       * Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
+       * @param handlerIn A function to execute when the mouse pointer enters the element.
+       * @param handlerOut A function to execute when the mouse pointer leaves the element.
+       * @see \`{@link https://api.jquery.com/hover/ }\`
+       * @since 1.0
+       * @deprecated ​ Deprecated.
+       *
+       * **Cause**: The `.hover()` method is a shorthand for the use of the `mouseover`/`mouseout` events. It is often a poor user interface choice because it does not allow for any small amounts of delay between when the mouse enters or exits an area and when the event fires. This can make it quite difficult to use with UI widgets such as drop-down menus. For more information on the problems of hovering, see the \`{@link http://cherne.net/brian/resources/jquery.hoverIntent.html hoverIntent plugin}\`.
+       *
+       * **Solution**: Review uses of `.hover()` to determine if they are appropriate, and consider use of plugins such as `hoverIntent` as an alternative. The direct replacement for `.hover(fn1, fn2)`, is `.on("mouseenter", fn1).on("mouseleave", fn2)`.
+       * @example ​ ````To add a special style to list items that are being hovered over, try:
   ```html
   <!doctype html>
   <html lang="en">
@@ -10470,12 +10443,8 @@ trait JQuery[TElement]
     li {
       cursor: default;
     }
-    li.active {
-      background: black;
-      color: white;
-    }
     span {
-      color:red;
+      color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -10484,45 +10453,55 @@ trait JQuery[TElement]
   ​
   <ul>
     <li>Milk</li>
-    <li>White</li>
-    <li>Carrots</li>
-    <li>Orange</li>
-    <li>Broccoli</li>
-    <li>Green</li>
+    <li>Bread</li>
+    <li class="fade">Chips</li>
+    <li class="fade">Socks</li>
   </ul>
   ​
   <script>
-  $( "li" )
-    .filter( ":odd" )
-      .hide()
-    .end()
-    .filter( ":even" )
-      .hover(function() {
-        $( this )
-          .toggleClass( "active" )
-          .next()
-            .stop( true, true )
-            .slideToggle();
-      });
+  $( "li" ).hover(
+    function() {
+      $( this ).append( $( "<span> ***</span>" ) );
+    }, function() {
+      $( this ).find( "span:last" ).remove();
+    }
+  );
+  ​
+  $( "li.fade" ).hover(function() {
+    $( this ).fadeOut( 100 );
+    $( this ).fadeIn( 500 );
+  });
   </script>
   ​
   </body>
   </html>
   ```
+       * @example ​ ````To add a special style to table cells that are being hovered over, try:
+  ```javascript
+  $( "td" ).hover(
+    function() {
+      $( this ).addClass( "hover" );
+    }, function() {
+      $( this ).removeClass( "hover" );
+    }
+  );
+  ```
+       * @example ​ ````To unbind the above example use:
+  ```javascript
+  $( "td" ).off( "mouseenter mouseleave" );
+  ```
        */
-  // HACK: The type parameter T is not used but ensures the 'event' callback parameter is typed correctly.
-  // tslint:disable-next-line:no-unnecessary-generics
-  def hover[T](
-    handlerInOut: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]]),
+  @JSName("hover")
+  def hover_mouseenter(
+    handlerIn: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseenter],
     handlerOut: jqueryLib.jqueryLibNumbers.`false`
   ): this.type = js.native
   /**
-       * Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
-       * @param handlerInOut A function to execute when the mouse pointer enters or leaves the element.
+       * Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
+       * @param handlerIn A function to execute when the mouse pointer enters the element.
        * @param handlerOut A function to execute when the mouse pointer leaves the element.
        * @see \`{@link https://api.jquery.com/hover/ }\`
        * @since 1.0
-       * @since 1.4
        * @deprecated ​ Deprecated.
        *
        * **Cause**: The `.hover()` method is a shorthand for the use of the `mouseover`/`mouseout` events. It is often a poor user interface choice because it does not allow for any small amounts of delay between when the mouse enters or exits an area and when the event fires. This can make it quite difficult to use with UI widgets such as drop-down menus. For more information on the problems of hovering, see the \`{@link http://cherne.net/brian/resources/jquery.hoverIntent.html hoverIntent plugin}\`.
@@ -10590,331 +10569,12 @@ trait JQuery[TElement]
   ```javascript
   $( "td" ).off( "mouseenter mouseleave" );
   ```
-       * @example ​ ````Slide the next sibling LI up or down on hover, and toggle a class.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>hover demo</title>
-    <style>
-    ul {
-      margin-left: 20px;
-      color: blue;
-    }
-    li {
-      cursor: default;
-    }
-    li.active {
-      background: black;
-      color: white;
-    }
-    span {
-      color:red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <ul>
-    <li>Milk</li>
-    <li>White</li>
-    <li>Carrots</li>
-    <li>Orange</li>
-    <li>Broccoli</li>
-    <li>Green</li>
-  </ul>
-  ​
-  <script>
-  $( "li" )
-    .filter( ":odd" )
-      .hide()
-    .end()
-    .filter( ":even" )
-      .hover(function() {
-        $( this )
-          .toggleClass( "active" )
-          .next()
-            .stop( true, true )
-            .slideToggle();
-      });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
        */
-  // HACK: The type parameter T is not used but ensures the 'event' callback parameter is typed correctly.
-  // tslint:disable-next-line:no-unnecessary-generics
-  def hover[T](handlerInOut: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
-  /**
-       * Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
-       * @param handlerInOut A function to execute when the mouse pointer enters or leaves the element.
-       * @param handlerOut A function to execute when the mouse pointer leaves the element.
-       * @see \`{@link https://api.jquery.com/hover/ }\`
-       * @since 1.0
-       * @since 1.4
-       * @deprecated ​ Deprecated.
-       *
-       * **Cause**: The `.hover()` method is a shorthand for the use of the `mouseover`/`mouseout` events. It is often a poor user interface choice because it does not allow for any small amounts of delay between when the mouse enters or exits an area and when the event fires. This can make it quite difficult to use with UI widgets such as drop-down menus. For more information on the problems of hovering, see the \`{@link http://cherne.net/brian/resources/jquery.hoverIntent.html hoverIntent plugin}\`.
-       *
-       * **Solution**: Review uses of `.hover()` to determine if they are appropriate, and consider use of plugins such as `hoverIntent` as an alternative. The direct replacement for `.hover(fn1, fn2)`, is `.on("mouseenter", fn1).on("mouseleave", fn2)`.
-       * @example ​ ````To add a special style to list items that are being hovered over, try:
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>hover demo</title>
-    <style>
-    ul {
-      margin-left: 20px;
-      color: blue;
-    }
-    li {
-      cursor: default;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <ul>
-    <li>Milk</li>
-    <li>Bread</li>
-    <li class="fade">Chips</li>
-    <li class="fade">Socks</li>
-  </ul>
-  ​
-  <script>
-  $( "li" ).hover(
-    function() {
-      $( this ).append( $( "<span> ***</span>" ) );
-    }, function() {
-      $( this ).find( "span:last" ).remove();
-    }
-  );
-  ​
-  $( "li.fade" ).hover(function() {
-    $( this ).fadeOut( 100 );
-    $( this ).fadeIn( 500 );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````To add a special style to table cells that are being hovered over, try:
-  ```javascript
-  $( "td" ).hover(
-    function() {
-      $( this ).addClass( "hover" );
-    }, function() {
-      $( this ).removeClass( "hover" );
-    }
-  );
-  ```
-       * @example ​ ````To unbind the above example use:
-  ```javascript
-  $( "td" ).off( "mouseenter mouseleave" );
-  ```
-       * @example ​ ````Slide the next sibling LI up or down on hover, and toggle a class.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>hover demo</title>
-    <style>
-    ul {
-      margin-left: 20px;
-      color: blue;
-    }
-    li {
-      cursor: default;
-    }
-    li.active {
-      background: black;
-      color: white;
-    }
-    span {
-      color:red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <ul>
-    <li>Milk</li>
-    <li>White</li>
-    <li>Carrots</li>
-    <li>Orange</li>
-    <li>Broccoli</li>
-    <li>Green</li>
-  </ul>
-  ​
-  <script>
-  $( "li" )
-    .filter( ":odd" )
-      .hide()
-    .end()
-    .filter( ":even" )
-      .hover(function() {
-        $( this )
-          .toggleClass( "active" )
-          .next()
-            .stop( true, true )
-            .slideToggle();
-      });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
-  // HACK: The type parameter T is not used but ensures the 'event' callback parameter is typed correctly.
-  // tslint:disable-next-line:no-unnecessary-generics
-  def hover[T](
-    handlerInOut: jqueryLib.jqueryLibNumbers.`false`,
-    handlerOut: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
+  @JSName("hover")
+  def hover_mouseleave(
+    handlerIn: jqueryLib.jqueryLibNumbers.`false`,
+    handlerOut: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseleave]
   ): this.type = js.native
-  /**
-       * Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
-       * @param handlerInOut A function to execute when the mouse pointer enters or leaves the element.
-       * @param handlerOut A function to execute when the mouse pointer leaves the element.
-       * @see \`{@link https://api.jquery.com/hover/ }\`
-       * @since 1.0
-       * @since 1.4
-       * @deprecated ​ Deprecated.
-       *
-       * **Cause**: The `.hover()` method is a shorthand for the use of the `mouseover`/`mouseout` events. It is often a poor user interface choice because it does not allow for any small amounts of delay between when the mouse enters or exits an area and when the event fires. This can make it quite difficult to use with UI widgets such as drop-down menus. For more information on the problems of hovering, see the \`{@link http://cherne.net/brian/resources/jquery.hoverIntent.html hoverIntent plugin}\`.
-       *
-       * **Solution**: Review uses of `.hover()` to determine if they are appropriate, and consider use of plugins such as `hoverIntent` as an alternative. The direct replacement for `.hover(fn1, fn2)`, is `.on("mouseenter", fn1).on("mouseleave", fn2)`.
-       * @example ​ ````To add a special style to list items that are being hovered over, try:
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>hover demo</title>
-    <style>
-    ul {
-      margin-left: 20px;
-      color: blue;
-    }
-    li {
-      cursor: default;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <ul>
-    <li>Milk</li>
-    <li>Bread</li>
-    <li class="fade">Chips</li>
-    <li class="fade">Socks</li>
-  </ul>
-  ​
-  <script>
-  $( "li" ).hover(
-    function() {
-      $( this ).append( $( "<span> ***</span>" ) );
-    }, function() {
-      $( this ).find( "span:last" ).remove();
-    }
-  );
-  ​
-  $( "li.fade" ).hover(function() {
-    $( this ).fadeOut( 100 );
-    $( this ).fadeIn( 500 );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````To add a special style to table cells that are being hovered over, try:
-  ```javascript
-  $( "td" ).hover(
-    function() {
-      $( this ).addClass( "hover" );
-    }, function() {
-      $( this ).removeClass( "hover" );
-    }
-  );
-  ```
-       * @example ​ ````To unbind the above example use:
-  ```javascript
-  $( "td" ).off( "mouseenter mouseleave" );
-  ```
-       * @example ​ ````Slide the next sibling LI up or down on hover, and toggle a class.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>hover demo</title>
-    <style>
-    ul {
-      margin-left: 20px;
-      color: blue;
-    }
-    li {
-      cursor: default;
-    }
-    li.active {
-      background: black;
-      color: white;
-    }
-    span {
-      color:red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <ul>
-    <li>Milk</li>
-    <li>White</li>
-    <li>Carrots</li>
-    <li>Orange</li>
-    <li>Broccoli</li>
-    <li>Green</li>
-  </ul>
-  ​
-  <script>
-  $( "li" )
-    .filter( ":odd" )
-      .hide()
-    .end()
-    .filter( ":even" )
-      .hover(function() {
-        $( this )
-          .toggleClass( "active" )
-          .next()
-            .stop( true, true )
-            .slideToggle();
-      });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
-  // HACK: The type parameter T is not used but ensures the 'event' callback parameter is typed correctly.
-  // tslint:disable-next-line:no-unnecessary-generics
-  def hover[T](handlerInOut: jqueryLib.jqueryLibNumbers.`false`, handlerOut: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Get the HTML contents of the first element in the set of matched elements.
        * @see \`{@link https://api.jquery.com/html/ }\`
@@ -13528,9 +13188,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def keydown(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def keydown(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "keydown" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -13602,7 +13260,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def keydown(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("keydown")
+  def keydown_keydown(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.keydown]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "keydown" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -13615,9 +13276,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def keydown[TData](
+  @JSName("keydown")
+  def keydown_keydown[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.keydown]
   ): this.type = js.native
   /**
        * Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.
@@ -13762,9 +13424,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def keypress(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def keypress(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -13836,7 +13496,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def keypress(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("keypress")
+  def keypress_keypress(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.keypress]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -13849,9 +13512,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def keypress[TData](
+  @JSName("keypress")
+  def keypress_keypress[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.keypress]
   ): this.type = js.native
   /**
        * Bind an event handler to the "keyup" JavaScript event, or trigger that event on an element.
@@ -13998,9 +13662,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def keyup(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def keyup(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "keyup" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -14073,7 +13735,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def keyup(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("keyup")
+  def keyup_keyup(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.keyup]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "keyup" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -14086,9 +13751,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def keyup[TData](
+  @JSName("keyup")
+  def keyup_keyup[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.keyup]
   ): this.type = js.native
   /**
        * Reduce the set of matched elements to the final one in the set.
@@ -14728,9 +14394,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mousedown(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def mousedown(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "mousedown" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -14768,7 +14432,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mousedown(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mousedown")
+  def mousedown_mousedown(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mousedown]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "mousedown" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -14781,9 +14448,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def mousedown[TData](
+  @JSName("mousedown")
+  def mousedown_mousedown[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.mousedown]
   ): this.type = js.native
   /**
        * Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.
@@ -14946,9 +14614,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mouseenter(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def mouseenter(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -15029,7 +14695,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mouseenter(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mouseenter")
+  def mouseenter_mouseenter(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseenter]
+  ): this.type = js.native
   /**
        * Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -15042,9 +14711,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def mouseenter[TData](
+  @JSName("mouseenter")
+  def mouseenter_mouseenter[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.mouseenter]
   ): this.type = js.native
   /**
        * Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
@@ -15203,9 +14873,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mouseleave(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def mouseleave(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -15284,7 +14952,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mouseleave(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mouseleave")
+  def mouseleave_mouseleave(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseleave]
+  ): this.type = js.native
   /**
        * Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -15297,9 +14968,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def mouseleave[TData](
+  @JSName("mouseleave")
+  def mouseleave_mouseleave[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.mouseleave]
   ): this.type = js.native
   /**
        * Bind an event handler to the "mousemove" JavaScript event, or trigger that event on an element.
@@ -15428,9 +15100,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mousemove(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def mousemove(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "mousemove" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -15494,7 +15164,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mousemove(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mousemove")
+  def mousemove_mousemove(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mousemove]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "mousemove" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -15507,9 +15180,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def mousemove[TData](
+  @JSName("mousemove")
+  def mousemove_mousemove[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.mousemove]
   ): this.type = js.native
   /**
        * Bind an event handler to the "mouseout" JavaScript event, or trigger that event on an element.
@@ -15672,9 +15346,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mouseout(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def mouseout(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "mouseout" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -15755,7 +15427,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mouseout(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mouseout")
+  def mouseout_mouseout(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseout]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "mouseout" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -15768,9 +15443,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def mouseout[TData](
+  @JSName("mouseout")
+  def mouseout_mouseout[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.mouseout]
   ): this.type = js.native
   /**
        * Bind an event handler to the "mouseover" JavaScript event, or trigger that event on an element.
@@ -15933,9 +15609,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mouseover(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def mouseover(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "mouseover" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -16016,7 +15690,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mouseover(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mouseover")
+  def mouseover_mouseover(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseover]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "mouseover" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -16029,9 +15706,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def mouseover[TData](
+  @JSName("mouseover")
+  def mouseover_mouseover[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.mouseover]
   ): this.type = js.native
   /**
        * Bind an event handler to the "mouseup" JavaScript event, or trigger that event on an element.
@@ -16108,9 +15786,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mouseup(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def mouseup(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "mouseup" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -16148,7 +15824,10 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def mouseup(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mouseup")
+  def mouseup_mouseup(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseup]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "mouseup" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -16161,9 +15840,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def mouseup[TData](
+  @JSName("mouseup")
+  def mouseup_mouseup[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.mouseup]
   ): this.type = js.native
   /**
        * Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector.
@@ -17115,7 +16795,7 @@ trait JQuery[TElement]
   $( "p" ).off();
   ```
        */
-  def off(event: jqueryLib.JQueryNs.Event[TElement, scala.Null]): this.type = js.native
+  def off(event: jqueryLib.JQueryNs.TriggeredEvent[TElement, _, _, _]): this.type = js.native
   /**
        * Remove an event handler.
        * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
@@ -17175,10 +16855,7 @@ trait JQuery[TElement]
   $( "form" ).off( ".validator" );
   ```
        */
-  def off(
-    events: java.lang.String,
-    selector_handler: jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, _]]
-  ): this.type = js.native
+  def off(events: java.lang.String, selector_handler: jqueryLib.JQueryNs.Selector): this.type = js.native
   /**
        * Remove an event handler.
        * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
@@ -17208,7 +16885,10 @@ trait JQuery[TElement]
   $( "form" ).off( ".validator" );
   ```
        */
-  def off(events: java.lang.String, selector_handler: jqueryLib.JQueryNs.Selector): this.type = js.native
+  def off(
+    events: java.lang.String,
+    selector_handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, java.lang.String]
+  ): this.type = js.native
   /**
        * Remove an event handler.
        * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
@@ -17309,7 +16989,7 @@ trait JQuery[TElement]
   def off(
     events: java.lang.String,
     selector: jqueryLib.JQueryNs.Selector,
-    handler: jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, _]]
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, java.lang.String]
   ): this.type = js.native
   /**
        * Remove an event handler.
@@ -17391,11 +17071,7 @@ trait JQuery[TElement]
        * @see \`{@link https://api.jquery.com/off/ }\`
        * @since 1.7
        */
-  def off(
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, _]]) | jqueryLib.jqueryLibNumbers.`false`
-    ]
-  ): this.type = js.native
+  def off(events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, _, _, _]): this.type = js.native
   /**
        * Remove an event handler.
        * @param events An object where the string keys represent one or more space-separated event types and optional
@@ -17405,9 +17081,7 @@ trait JQuery[TElement]
        * @since 1.7
        */
   def off(
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, _]]) | jqueryLib.jqueryLibNumbers.`false`
-    ],
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, _, _, _],
     selector: jqueryLib.JQueryNs.Selector
   ): this.type = js.native
   /**
@@ -17620,11 +17294,157 @@ trait JQuery[TElement]
   /**
        * Attach an event handler function for one or more events to the selected elements.
        * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
-       * @param data Data to be passed to the handler in event.data when an event is triggered.
        * @param handler A function to execute when the event is triggered.
        * @see \`{@link https://api.jquery.com/on/ }\`
        * @since 1.7
        * @deprecated ​ Deprecated. Use \`{@link JQuery.Event }\` in place of \`{@link JQueryEventObject }\`.
+       * @example ​ ````Display a paragraph&#39;s text in an alert when it is clicked:
+  ```javascript
+  $( "p" ).on( "click", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````Cancel a form submit action and prevent the event from bubbling up by returning false:
+  ```javascript
+  $( "form" ).on( "submit", false );
+  ```
+       * @example ​ ````Cancel only the default action by using .preventDefault().
+  ```javascript
+  $( "form" ).on( "submit", function( event ) {
+    event.preventDefault();
+  });
+  ```
+       * @example ​ ````Stop submit events from bubbling without preventing form submit, using .stopPropagation().
+  ```javascript
+  $( "form" ).on( "submit", function( event ) {
+    event.stopPropagation();
+  });
+  ```
+       * @example ​ ````Pass data to the event handler using the second argument to .trigger()
+  ```javascript
+  $( "div" ).on( "click", function( event, person ) {
+    alert( "Hello, " + person.name );
+  });
+  $( "div" ).trigger( "click", { name: "Jim" } );
+  ```
+       * @example ​ ````Use the the second argument of .trigger() to pass an array of data to the event handler
+  ```javascript
+  $( "div" ).on( "click", function( event, salutation, name ) {
+    alert( salutation + ", " + name );
+  });
+  $( "div" ).trigger( "click", [ "Goodbye", "Jim" ] );
+  ```
+       * @example ​ ````Attach and trigger custom (non-browser) events.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>on demo</title>
+    <style>
+    p {
+      color: red;
+    }
+    span {
+      color: blue;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Has an attached custom event.</p>
+  <button>Trigger custom event</button>
+  <span style="display:none;"></span>
+  ​
+  <script>
+  $( "p" ).on( "myCustomEvent", function( event, myName ) {
+    $( this ).text( myName + ", hi there!" );
+    $( "span" )
+      .stop()
+      .css( "opacity", 1 )
+      .text( "myName = " + myName )
+      .fadeIn( 30 )
+      .fadeOut( 1000 );
+  });
+  $( "button" ).click(function () {
+    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````Attach multiple events—one on mouseenter and one on mouseleave to the same element:
+  ```javascript
+  $( "#cart" ).on( "mouseenter mouseleave", function( event ) {
+    $( this ).toggleClass( "active" );
+  });
+  ```
+       */
+  def on(events: java.lang.String, handler: js.Function1[/* event */ JQueryEventObject, scala.Unit]): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+       * @param selector_data _&#x40;param_ `selector_data`
+       * <br>
+       * * `selector` — A selector string to filter the descendants of the selected elements that trigger the event. If the
+       *                selector is null or omitted, the event is always triggered when it reaches the selected element. <br>
+       * * `data` — Data to be passed to the handler in event.data when an event is triggered.
+       * @param handler A function to execute when the event is triggered.
+       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @since 1.7
+       * @deprecated ​ Deprecated. Use \`{@link JQuery.Event }\` in place of \`{@link JQueryEventObject }\`.
+       * @example ​ ````Click any paragraph to add another after it. Note that .on() allows a click event on any paragraph--even new ones--since the event is handled by the ever-present body element after it bubbles to there.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>on demo</title>
+    <style>
+    p {
+      background: yellow;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+    p.over {
+      background: #ccc;
+    }
+    span {
+      color: red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Click me!</p>
+  <span></span>
+  ​
+  <script>
+  var count = 0;
+  $( "body" ).on( "click", "p", function() {
+    $( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````Display each paragraph&#39;s text in an alert box whenever it is clicked:
+  ```javascript
+  $( "body" ).on( "click", "p", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````Cancel a link&#39;s default action using the .preventDefault() method:
+  ```javascript
+  $( "body" ).on( "click", "a", function( event ) {
+    event.preventDefault();
+  });
+  ```
        * @example ​ ````Pass data to the event handler, which is specified here by name:
   ```javascript
   function myHandler( event ) {
@@ -17635,292 +17455,8 @@ trait JQuery[TElement]
        */
   def on(
     events: java.lang.String,
-    // tslint:disable-next-line:unified-signatures
-  data: js.Any,
+    selector_data: js.Any,
     handler: js.Function1[/* event */ JQueryEventObject, scala.Unit]
-  ): this.type = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
-       * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
-       *                for a function that simply does return false.
-       * @see \`{@link https://api.jquery.com/on/ }\`
-       * @since 1.7
-       * @example ​ ````Display a paragraph&#39;s text in an alert when it is clicked:
-  ```javascript
-  $( "p" ).on( "click", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````Cancel a form submit action and prevent the event from bubbling up by returning false:
-  ```javascript
-  $( "form" ).on( "submit", false );
-  ```
-       * @example ​ ````Cancel only the default action by using .preventDefault().
-  ```javascript
-  $( "form" ).on( "submit", function( event ) {
-    event.preventDefault();
-  });
-  ```
-       * @example ​ ````Stop submit events from bubbling without preventing form submit, using .stopPropagation().
-  ```javascript
-  $( "form" ).on( "submit", function( event ) {
-    event.stopPropagation();
-  });
-  ```
-       * @example ​ ````Pass data to the event handler using the second argument to .trigger()
-  ```javascript
-  $( "div" ).on( "click", function( event, person ) {
-    alert( "Hello, " + person.name );
-  });
-  $( "div" ).trigger( "click", { name: "Jim" } );
-  ```
-       * @example ​ ````Use the the second argument of .trigger() to pass an array of data to the event handler
-  ```javascript
-  $( "div" ).on( "click", function( event, salutation, name ) {
-    alert( salutation + ", " + name );
-  });
-  $( "div" ).trigger( "click", [ "Goodbye", "Jim" ] );
-  ```
-       * @example ​ ````Attach and trigger custom (non-browser) events.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>on demo</title>
-    <style>
-    p {
-      color: red;
-    }
-    span {
-      color: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Has an attached custom event.</p>
-  <button>Trigger custom event</button>
-  <span style="display:none;"></span>
-  ​
-  <script>
-  $( "p" ).on( "myCustomEvent", function( event, myName ) {
-    $( this ).text( myName + ", hi there!" );
-    $( "span" )
-      .stop()
-      .css( "opacity", 1 )
-      .text( "myName = " + myName )
-      .fadeIn( 30 )
-      .fadeOut( 1000 );
-  });
-  $( "button" ).click(function () {
-    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Attach multiple events—one on mouseenter and one on mouseleave to the same element:
-  ```javascript
-  $( "#cart" ).on( "mouseenter mouseleave", function( event ) {
-    $( this ).toggleClass( "active" );
-  });
-  ```
-       */
-  def on(
-    events: java.lang.String,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
-       * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
-       *                for a function that simply does return false.
-       * @see \`{@link https://api.jquery.com/on/ }\`
-       * @since 1.7
-       * @example ​ ````Display a paragraph&#39;s text in an alert when it is clicked:
-  ```javascript
-  $( "p" ).on( "click", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````Cancel a form submit action and prevent the event from bubbling up by returning false:
-  ```javascript
-  $( "form" ).on( "submit", false );
-  ```
-       * @example ​ ````Cancel only the default action by using .preventDefault().
-  ```javascript
-  $( "form" ).on( "submit", function( event ) {
-    event.preventDefault();
-  });
-  ```
-       * @example ​ ````Stop submit events from bubbling without preventing form submit, using .stopPropagation().
-  ```javascript
-  $( "form" ).on( "submit", function( event ) {
-    event.stopPropagation();
-  });
-  ```
-       * @example ​ ````Pass data to the event handler using the second argument to .trigger()
-  ```javascript
-  $( "div" ).on( "click", function( event, person ) {
-    alert( "Hello, " + person.name );
-  });
-  $( "div" ).trigger( "click", { name: "Jim" } );
-  ```
-       * @example ​ ````Use the the second argument of .trigger() to pass an array of data to the event handler
-  ```javascript
-  $( "div" ).on( "click", function( event, salutation, name ) {
-    alert( salutation + ", " + name );
-  });
-  $( "div" ).trigger( "click", [ "Goodbye", "Jim" ] );
-  ```
-       * @example ​ ````Attach and trigger custom (non-browser) events.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>on demo</title>
-    <style>
-    p {
-      color: red;
-    }
-    span {
-      color: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Has an attached custom event.</p>
-  <button>Trigger custom event</button>
-  <span style="display:none;"></span>
-  ​
-  <script>
-  $( "p" ).on( "myCustomEvent", function( event, myName ) {
-    $( this ).text( myName + ", hi there!" );
-    $( "span" )
-      .stop()
-      .css( "opacity", 1 )
-      .text( "myName = " + myName )
-      .fadeIn( 30 )
-      .fadeOut( 1000 );
-  });
-  $( "button" ).click(function () {
-    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Attach multiple events—one on mouseenter and one on mouseleave to the same element:
-  ```javascript
-  $( "#cart" ).on( "mouseenter mouseleave", function( event ) {
-    $( this ).toggleClass( "active" );
-  });
-  ```
-       */
-  def on(events: java.lang.String, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
-       * @param handler A function to execute when the event is triggered.
-       * @see \`{@link https://api.jquery.com/on/ }\`
-       * @since 1.7
-       * @deprecated ​ Deprecated. Use \`{@link JQuery.Event }\` in place of \`{@link JQueryEventObject }\`.
-       * @example ​ ````Display a paragraph&#39;s text in an alert when it is clicked:
-  ```javascript
-  $( "p" ).on( "click", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````Cancel a form submit action and prevent the event from bubbling up by returning false:
-  ```javascript
-  $( "form" ).on( "submit", false );
-  ```
-       * @example ​ ````Cancel only the default action by using .preventDefault().
-  ```javascript
-  $( "form" ).on( "submit", function( event ) {
-    event.preventDefault();
-  });
-  ```
-       * @example ​ ````Stop submit events from bubbling without preventing form submit, using .stopPropagation().
-  ```javascript
-  $( "form" ).on( "submit", function( event ) {
-    event.stopPropagation();
-  });
-  ```
-       * @example ​ ````Pass data to the event handler using the second argument to .trigger()
-  ```javascript
-  $( "div" ).on( "click", function( event, person ) {
-    alert( "Hello, " + person.name );
-  });
-  $( "div" ).trigger( "click", { name: "Jim" } );
-  ```
-       * @example ​ ````Use the the second argument of .trigger() to pass an array of data to the event handler
-  ```javascript
-  $( "div" ).on( "click", function( event, salutation, name ) {
-    alert( salutation + ", " + name );
-  });
-  $( "div" ).trigger( "click", [ "Goodbye", "Jim" ] );
-  ```
-       * @example ​ ````Attach and trigger custom (non-browser) events.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>on demo</title>
-    <style>
-    p {
-      color: red;
-    }
-    span {
-      color: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Has an attached custom event.</p>
-  <button>Trigger custom event</button>
-  <span style="display:none;"></span>
-  ​
-  <script>
-  $( "p" ).on( "myCustomEvent", function( event, myName ) {
-    $( this ).text( myName + ", hi there!" );
-    $( "span" )
-      .stop()
-      .css( "opacity", 1 )
-      .text( "myName = " + myName )
-      .fadeIn( 30 )
-      .fadeOut( 1000 );
-  });
-  $( "button" ).click(function () {
-    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Attach multiple events—one on mouseenter and one on mouseleave to the same element:
-  ```javascript
-  $( "#cart" ).on( "mouseenter mouseleave", function( event ) {
-    $( this ).toggleClass( "active" );
-  });
-  ```
-       */
-  def on(
-    events: java.lang.String,
-    // tslint:disable-next-line:unified-signatures
-  handler: js.Function1[/* event */ JQueryEventObject, scala.Unit]
   ): this.type = js.native
   /**
        * Attach an event handler function for one or more events to the selected elements.
@@ -17944,196 +17480,17 @@ trait JQuery[TElement]
        * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
        * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
        *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
-       * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
-       *                for a function that simply does return false.
-       * @see \`{@link https://api.jquery.com/on/ }\`
-       * @since 1.7
-       * @example ​ ````Click any paragraph to add another after it. Note that .on() allows a click event on any paragraph--even new ones--since the event is handled by the ever-present body element after it bubbles to there.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>on demo</title>
-    <style>
-    p {
-      background: yellow;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 5px;
-    }
-    p.over {
-      background: #ccc;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Click me!</p>
-  <span></span>
-  ​
-  <script>
-  var count = 0;
-  $( "body" ).on( "click", "p", function() {
-    $( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Display each paragraph&#39;s text in an alert box whenever it is clicked:
-  ```javascript
-  $( "body" ).on( "click", "p", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````Cancel a link&#39;s default action using the .preventDefault() method:
-  ```javascript
-  $( "body" ).on( "click", "a", function( event ) {
-    event.preventDefault();
-  });
-  ```
-       */
-  def on(
-    events: java.lang.String,
-    selector: jqueryLib.JQueryNs.Selector,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
-       * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
-       *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
-       * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
-       *                for a function that simply does return false.
-       * @see \`{@link https://api.jquery.com/on/ }\`
-       * @since 1.7
-       * @example ​ ````Click any paragraph to add another after it. Note that .on() allows a click event on any paragraph--even new ones--since the event is handled by the ever-present body element after it bubbles to there.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>on demo</title>
-    <style>
-    p {
-      background: yellow;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 5px;
-    }
-    p.over {
-      background: #ccc;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Click me!</p>
-  <span></span>
-  ​
-  <script>
-  var count = 0;
-  $( "body" ).on( "click", "p", function() {
-    $( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Display each paragraph&#39;s text in an alert box whenever it is clicked:
-  ```javascript
-  $( "body" ).on( "click", "p", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````Cancel a link&#39;s default action using the .preventDefault() method:
-  ```javascript
-  $( "body" ).on( "click", "a", function( event ) {
-    event.preventDefault();
-  });
-  ```
-       */
-  def on(
-    events: java.lang.String,
-    selector: jqueryLib.JQueryNs.Selector,
-    handler: jqueryLib.jqueryLibNumbers.`false`
-  ): this.type = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
-       * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
-       *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event is triggered.
        * @param handler A function to execute when the event is triggered.
        * @see \`{@link https://api.jquery.com/on/ }\`
        * @since 1.7
        * @deprecated ​ Deprecated. Use \`{@link JQuery.Event }\` in place of \`{@link JQueryEventObject }\`.
-       * @example ​ ````Click any paragraph to add another after it. Note that .on() allows a click event on any paragraph--even new ones--since the event is handled by the ever-present body element after it bubbles to there.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>on demo</title>
-    <style>
-    p {
-      background: yellow;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 5px;
-    }
-    p.over {
-      background: #ccc;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Click me!</p>
-  <span></span>
-  ​
-  <script>
-  var count = 0;
-  $( "body" ).on( "click", "p", function() {
-    $( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Display each paragraph&#39;s text in an alert box whenever it is clicked:
-  ```javascript
-  $( "body" ).on( "click", "p", function() {
-    alert( $( this ).text() );
-  });
-  ```
-       * @example ​ ````Cancel a link&#39;s default action using the .preventDefault() method:
-  ```javascript
-  $( "body" ).on( "click", "a", function( event ) {
-    event.preventDefault();
-  });
-  ```
        */
   def on(
     events: java.lang.String,
-    selector: jqueryLib.JQueryNs.Selector,
-    // tslint:disable-next-line:unified-signatures
-  handler: js.Function1[/* event */ JQueryEventObject, scala.Unit]
+    selector: js.UndefOr[scala.Nothing],
+    data: js.Any,
+    handler: js.Function1[/* event */ JQueryEventObject, scala.Unit]
   ): this.type = js.native
   /**
        * Attach an event handler function for one or more events to the selected elements.
@@ -18201,9 +17558,7 @@ trait JQuery[TElement]
   ```
        */
   def on(
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]]) | jqueryLib.jqueryLibNumbers.`false`
-    ]
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], TElement, TElement]
   ): this.type = js.native
   /**
        * Attach an event handler function for one or more events to the selected elements.
@@ -18215,11 +17570,375 @@ trait JQuery[TElement]
        * @since 1.7
        */
   def on(
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]]) | jqueryLib.jqueryLibNumbers.`false`
-    ],
-    // tslint:disable-next-line:unified-signatures
-  selector: jqueryLib.JQueryNs.Selector
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], _, _],
+    selector: jqueryLib.JQueryNs.Selector
+  ): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+       * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
+       *                for a function that simply does return false.
+       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @since 1.7
+       * @example ​ ````Display a paragraph&#39;s text in an alert when it is clicked:
+  ```javascript
+  $( "p" ).on( "click", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````Cancel a form submit action and prevent the event from bubbling up by returning false:
+  ```javascript
+  $( "form" ).on( "submit", false );
+  ```
+       * @example ​ ````Cancel only the default action by using .preventDefault().
+  ```javascript
+  $( "form" ).on( "submit", function( event ) {
+    event.preventDefault();
+  });
+  ```
+       * @example ​ ````Stop submit events from bubbling without preventing form submit, using .stopPropagation().
+  ```javascript
+  $( "form" ).on( "submit", function( event ) {
+    event.stopPropagation();
+  });
+  ```
+       * @example ​ ````Pass data to the event handler using the second argument to .trigger()
+  ```javascript
+  $( "div" ).on( "click", function( event, person ) {
+    alert( "Hello, " + person.name );
+  });
+  $( "div" ).trigger( "click", { name: "Jim" } );
+  ```
+       * @example ​ ````Use the the second argument of .trigger() to pass an array of data to the event handler
+  ```javascript
+  $( "div" ).on( "click", function( event, salutation, name ) {
+    alert( salutation + ", " + name );
+  });
+  $( "div" ).trigger( "click", [ "Goodbye", "Jim" ] );
+  ```
+       * @example ​ ````Attach and trigger custom (non-browser) events.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>on demo</title>
+    <style>
+    p {
+      color: red;
+    }
+    span {
+      color: blue;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Has an attached custom event.</p>
+  <button>Trigger custom event</button>
+  <span style="display:none;"></span>
+  ​
+  <script>
+  $( "p" ).on( "myCustomEvent", function( event, myName ) {
+    $( this ).text( myName + ", hi there!" );
+    $( "span" )
+      .stop()
+      .css( "opacity", 1 )
+      .text( "myName = " + myName )
+      .fadeIn( 30 )
+      .fadeOut( 1000 );
+  });
+  $( "button" ).click(function () {
+    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````Attach multiple events—one on mouseenter and one on mouseleave to the same element:
+  ```javascript
+  $( "#cart" ).on( "mouseenter mouseleave", function( event ) {
+    $( this ).toggleClass( "active" );
+  });
+  ```
+       */
+  def on[TType /* <: java.lang.String */](
+    events: TType,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], TElement, TElement, TType]
+  ): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+       * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
+       *                for a function that simply does return false.
+       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @since 1.7
+       * @example ​ ````Display a paragraph&#39;s text in an alert when it is clicked:
+  ```javascript
+  $( "p" ).on( "click", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````Cancel a form submit action and prevent the event from bubbling up by returning false:
+  ```javascript
+  $( "form" ).on( "submit", false );
+  ```
+       * @example ​ ````Cancel only the default action by using .preventDefault().
+  ```javascript
+  $( "form" ).on( "submit", function( event ) {
+    event.preventDefault();
+  });
+  ```
+       * @example ​ ````Stop submit events from bubbling without preventing form submit, using .stopPropagation().
+  ```javascript
+  $( "form" ).on( "submit", function( event ) {
+    event.stopPropagation();
+  });
+  ```
+       * @example ​ ````Pass data to the event handler using the second argument to .trigger()
+  ```javascript
+  $( "div" ).on( "click", function( event, person ) {
+    alert( "Hello, " + person.name );
+  });
+  $( "div" ).trigger( "click", { name: "Jim" } );
+  ```
+       * @example ​ ````Use the the second argument of .trigger() to pass an array of data to the event handler
+  ```javascript
+  $( "div" ).on( "click", function( event, salutation, name ) {
+    alert( salutation + ", " + name );
+  });
+  $( "div" ).trigger( "click", [ "Goodbye", "Jim" ] );
+  ```
+       * @example ​ ````Attach and trigger custom (non-browser) events.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>on demo</title>
+    <style>
+    p {
+      color: red;
+    }
+    span {
+      color: blue;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Has an attached custom event.</p>
+  <button>Trigger custom event</button>
+  <span style="display:none;"></span>
+  ​
+  <script>
+  $( "p" ).on( "myCustomEvent", function( event, myName ) {
+    $( this ).text( myName + ", hi there!" );
+    $( "span" )
+      .stop()
+      .css( "opacity", 1 )
+      .text( "myName = " + myName )
+      .fadeIn( 30 )
+      .fadeOut( 1000 );
+  });
+  $( "button" ).click(function () {
+    $( "p" ).trigger( "myCustomEvent", [ "John" ] );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````Attach multiple events—one on mouseenter and one on mouseleave to the same element:
+  ```javascript
+  $( "#cart" ).on( "mouseenter mouseleave", function( event ) {
+    $( this ).toggleClass( "active" );
+  });
+  ```
+       */
+  def on[TType /* <: java.lang.String */](events: TType, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+       * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
+       *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
+       * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
+       *                for a function that simply does return false.
+       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @since 1.7
+       * @example ​ ````Click any paragraph to add another after it. Note that .on() allows a click event on any paragraph--even new ones--since the event is handled by the ever-present body element after it bubbles to there.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>on demo</title>
+    <style>
+    p {
+      background: yellow;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+    p.over {
+      background: #ccc;
+    }
+    span {
+      color: red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Click me!</p>
+  <span></span>
+  ​
+  <script>
+  var count = 0;
+  $( "body" ).on( "click", "p", function() {
+    $( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````Display each paragraph&#39;s text in an alert box whenever it is clicked:
+  ```javascript
+  $( "body" ).on( "click", "p", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````Cancel a link&#39;s default action using the .preventDefault() method:
+  ```javascript
+  $( "body" ).on( "click", "a", function( event ) {
+    event.preventDefault();
+  });
+  ```
+       */
+  def on[TType /* <: java.lang.String */](
+    events: TType,
+    selector: jqueryLib.JQueryNs.Selector,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], _, _, TType]
+  ): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+       * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
+       *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
+       * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
+       *                for a function that simply does return false.
+       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @since 1.7
+       * @example ​ ````Click any paragraph to add another after it. Note that .on() allows a click event on any paragraph--even new ones--since the event is handled by the ever-present body element after it bubbles to there.
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>on demo</title>
+    <style>
+    p {
+      background: yellow;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 5px;
+    }
+    p.over {
+      background: #ccc;
+    }
+    span {
+      color: red;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <p>Click me!</p>
+  <span></span>
+  ​
+  <script>
+  var count = 0;
+  $( "body" ).on( "click", "p", function() {
+    $( this ).after( "<p>Another paragraph! " + (++count) + "</p>" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       * @example ​ ````Display each paragraph&#39;s text in an alert box whenever it is clicked:
+  ```javascript
+  $( "body" ).on( "click", "p", function() {
+    alert( $( this ).text() );
+  });
+  ```
+       * @example ​ ````Cancel a link&#39;s default action using the .preventDefault() method:
+  ```javascript
+  $( "body" ).on( "click", "a", function( event ) {
+    event.preventDefault();
+  });
+  ```
+       */
+  def on[TType /* <: java.lang.String */](events: TType, selector: jqueryLib.JQueryNs.Selector, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       * @param events An object in which the string keys represent one or more space-separated event types and optional
+       *               namespaces, and the values represent a handler function to be called for the event(s).
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @since 1.7
+       */
+  def on[TData](events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement], data: TData): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       * @param events An object in which the string keys represent one or more space-separated event types and optional
+       *               namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
+       *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @since 1.7
+       */
+  def on[TData](
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, _, _],
+    selector: jqueryLib.JQueryNs.Selector,
+    data: TData
+  ): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       * @param events An object in which the string keys represent one or more space-separated event types and optional
+       *               namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
+       *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @since 1.7
+       */
+  def on[TData](
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement],
+    selector: js.UndefOr[scala.Nothing],
+    data: TData
+  ): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       * @param events An object in which the string keys represent one or more space-separated event types and optional
+       *               namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
+       *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @since 1.7
+       */
+  def on[TData](
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement],
+    selector: scala.Null,
+    data: TData
   ): this.type = js.native
   /**
        * Attach an event handler function for one or more events to the selected elements.
@@ -18236,10 +17955,10 @@ trait JQuery[TElement]
   $( "p" ).on( "click", { foo: "bar" }, myHandler );
   ```
        */
-  def on[TData](
-    events: java.lang.String,
+  def on[TType /* <: java.lang.String */, TData](
+    events: TType,
     data: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
   /**
        * Attach an event handler function for one or more events to the selected elements.
@@ -18251,11 +17970,11 @@ trait JQuery[TElement]
        * @see \`{@link https://api.jquery.com/on/ }\`
        * @since 1.7
        */
-  def on[TData](
-    events: java.lang.String,
+  def on[TType /* <: java.lang.String */, TData](
+    events: TType,
     selector: jqueryLib.JQueryNs.Selector,
     data: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, _, _, TType]
   ): this.type = js.native
   /**
        * Attach an event handler function for one or more events to the selected elements.
@@ -18267,59 +17986,50 @@ trait JQuery[TElement]
        * @see \`{@link https://api.jquery.com/on/ }\`
        * @since 1.7
        */
-  def on[TData](
-    events: java.lang.String,
+  def on[TType /* <: java.lang.String */, TData](
+    events: TType,
+    selector: js.UndefOr[scala.Nothing],
+    data: TData,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
+  ): this.type = js.native
+  /**
+       * Attach an event handler function for one or more events to the selected elements.
+       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+       * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
+       *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event is triggered.
+       * @param handler A function to execute when the event is triggered.
+       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @since 1.7
+       */
+  def on[TType /* <: java.lang.String */, TData](
+    events: TType,
     selector: scala.Null,
     data: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
   /**
-       * Attach an event handler function for one or more events to the selected elements.
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
        * @param events An object in which the string keys represent one or more space-separated event types and optional
        *               namespaces, and the values represent a handler function to be called for the event(s).
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @see \`{@link https://api.jquery.com/one/ }\`
        * @since 1.7
        */
-  def on[TData](
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]]) | jqueryLib.jqueryLibNumbers.`false`
-    ],
-    data: TData
+  def one(
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], TElement, TElement]
   ): this.type = js.native
   /**
-       * Attach an event handler function for one or more events to the selected elements.
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
        * @param events An object in which the string keys represent one or more space-separated event types and optional
        *               namespaces, and the values represent a handler function to be called for the event(s).
        * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
        *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see \`{@link https://api.jquery.com/on/ }\`
+       * @see \`{@link https://api.jquery.com/one/ }\`
        * @since 1.7
        */
-  def on[TData](
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]]) | jqueryLib.jqueryLibNumbers.`false`
-    ],
-    selector: jqueryLib.JQueryNs.Selector,
-    data: TData
-  ): this.type = js.native
-  /**
-       * Attach an event handler function for one or more events to the selected elements.
-       * @param events An object in which the string keys represent one or more space-separated event types and optional
-       *               namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
-       *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see \`{@link https://api.jquery.com/on/ }\`
-       * @since 1.7
-       */
-  def on[TData](
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]]) | jqueryLib.jqueryLibNumbers.`false`
-    ],
-    selector: scala.Null,
-    data: TData
+  def one(
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, js.UndefOr[scala.Nothing], _, _],
+    selector: jqueryLib.JQueryNs.Selector
   ): this.type = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -18409,9 +18119,9 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def one(
-    events: java.lang.String,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
+  def one[TType /* <: java.lang.String */](
+    events: TType,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], TElement, TElement, TType]
   ): this.type = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -18501,7 +18211,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def one(events: java.lang.String, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  def one[TType /* <: java.lang.String */](events: TType, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
        * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -18512,10 +18222,10 @@ trait JQuery[TElement]
        * @see \`{@link https://api.jquery.com/one/ }\`
        * @since 1.7
        */
-  def one(
-    events: java.lang.String,
+  def one[TType /* <: java.lang.String */](
+    events: TType,
     selector: jqueryLib.JQueryNs.Selector,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], _, _, TType]
   ): this.type = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -18527,22 +18237,30 @@ trait JQuery[TElement]
        * @see \`{@link https://api.jquery.com/one/ }\`
        * @since 1.7
        */
-  def one(
-    events: java.lang.String,
-    selector: jqueryLib.JQueryNs.Selector,
-    handler: jqueryLib.jqueryLibNumbers.`false`
-  ): this.type = js.native
+  def one[TType /* <: java.lang.String */](events: TType, selector: jqueryLib.JQueryNs.Selector, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
        * @param events An object in which the string keys represent one or more space-separated event types and optional
        *               namespaces, and the values represent a handler function to be called for the event(s).
+       * @param data Data to be passed to the handler in event.data when an event occurs.
        * @see \`{@link https://api.jquery.com/one/ }\`
        * @since 1.7
        */
-  def one(
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]]) | jqueryLib.jqueryLibNumbers.`false`
-    ]
+  def one[TData](events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement], data: TData): this.type = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       * @param events An object in which the string keys represent one or more space-separated event types and optional
+       *               namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
+       *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see \`{@link https://api.jquery.com/one/ }\`
+       * @since 1.7
+       */
+  def one[TData](
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, _, _],
+    selector: jqueryLib.JQueryNs.Selector,
+    data: TData
   ): this.type = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -18550,15 +18268,29 @@ trait JQuery[TElement]
        *               namespaces, and the values represent a handler function to be called for the event(s).
        * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
        *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
        * @see \`{@link https://api.jquery.com/one/ }\`
        * @since 1.7
        */
-  def one(
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]]) | jqueryLib.jqueryLibNumbers.`false`
-    ],
-    // tslint:disable-next-line:unified-signatures
-  selector: jqueryLib.JQueryNs.Selector
+  def one[TData](
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement],
+    selector: js.UndefOr[scala.Nothing],
+    data: TData
+  ): this.type = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       * @param events An object in which the string keys represent one or more space-separated event types and optional
+       *               namespaces, and the values represent a handler function to be called for the event(s).
+       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
+       *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event occurs.
+       * @see \`{@link https://api.jquery.com/one/ }\`
+       * @since 1.7
+       */
+  def one[TData](
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement],
+    selector: scala.Null,
+    data: TData
   ): this.type = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -18568,10 +18300,10 @@ trait JQuery[TElement]
        * @see \`{@link https://api.jquery.com/one/ }\`
        * @since 1.7
        */
-  def one[TData](
-    events: java.lang.String,
+  def one[TType /* <: java.lang.String */, TData](
+    events: TType,
     data: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -18583,11 +18315,11 @@ trait JQuery[TElement]
        * @see \`{@link https://api.jquery.com/one/ }\`
        * @since 1.7
        */
-  def one[TData](
-    events: java.lang.String,
+  def one[TType /* <: java.lang.String */, TData](
+    events: TType,
     selector: jqueryLib.JQueryNs.Selector,
     data: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, _, _, TType]
   ): this.type = js.native
   /**
        * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -18599,59 +18331,27 @@ trait JQuery[TElement]
        * @see \`{@link https://api.jquery.com/one/ }\`
        * @since 1.7
        */
-  def one[TData](
-    events: java.lang.String,
+  def one[TType /* <: java.lang.String */, TData](
+    events: TType,
+    selector: js.UndefOr[scala.Nothing],
+    data: TData,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
+  ): this.type = js.native
+  /**
+       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+       * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+       * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
+       *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
+       * @param data Data to be passed to the handler in event.data when an event is triggered.
+       * @param handler A function to execute when the event is triggered.
+       * @see \`{@link https://api.jquery.com/one/ }\`
+       * @since 1.7
+       */
+  def one[TType /* <: java.lang.String */, TData](
+    events: TType,
     selector: scala.Null,
     data: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
-  ): this.type = js.native
-  /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
-       * @param events An object in which the string keys represent one or more space-separated event types and optional
-       *               namespaces, and the values represent a handler function to be called for the event(s).
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see \`{@link https://api.jquery.com/one/ }\`
-       * @since 1.7
-       */
-  def one[TData](
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]]) | jqueryLib.jqueryLibNumbers.`false`
-    ],
-    data: TData
-  ): this.type = js.native
-  /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
-       * @param events An object in which the string keys represent one or more space-separated event types and optional
-       *               namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
-       *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see \`{@link https://api.jquery.com/one/ }\`
-       * @since 1.7
-       */
-  def one[TData](
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]]) | jqueryLib.jqueryLibNumbers.`false`
-    ],
-    selector: jqueryLib.JQueryNs.Selector,
-    data: TData
-  ): this.type = js.native
-  /**
-       * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
-       * @param events An object in which the string keys represent one or more space-separated event types and optional
-       *               namespaces, and the values represent a handler function to be called for the event(s).
-       * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
-       *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
-       * @param data Data to be passed to the handler in event.data when an event occurs.
-       * @see \`{@link https://api.jquery.com/one/ }\`
-       * @since 1.7
-       */
-  def one[TData](
-    events: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]]) | jqueryLib.jqueryLibNumbers.`false`
-    ],
-    selector: scala.Null,
-    data: TData
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
   /**
        * Get the current computed outer height (including padding, border, and optionally margin) for the first element in the set of matched elements.
@@ -23230,9 +22930,7 @@ trait JQuery[TElement]
   });
   ```
        */
-  def resize(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def resize(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "resize" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -23250,7 +22948,10 @@ trait JQuery[TElement]
   });
   ```
        */
-  def resize(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("resize")
+  def resize_resize(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.resize]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "resize" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -23263,9 +22964,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def resize[TData](
+  @JSName("resize")
+  def resize_resize[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.resize]
   ): this.type = js.native
   /**
        * Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
@@ -23366,75 +23068,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def scroll(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
-  /**
-       * Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
-       * @param handler A function to execute each time the event is triggered.
-       * @see \`{@link https://api.jquery.com/scroll/ }\`
-       * @since 1.0
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link on }\` or \`{@link trigger }\`.
-       *
-       * **Cause**: The `.on()` and `.trigger()` methods can set an event handler or generate an event for any event type, and should be used instead of the shortcut methods. This message also applies to the other event shorthands, including: blur, focus, focusin, focusout, resize, scroll, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select, submit, keydown, keypress, keyup, and contextmenu.
-       *
-       * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
-       * @example ​ ````To do something when your page is scrolled:
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>scroll demo</title>
-    <style>
-    div {
-      color: blue;
-    }
-    p {
-      color: green;
-    }
-    span {
-      color: red;
-      display: none;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>Try scrolling the iframe.</div>
-  <p>Paragraph - <span>Scroll happened!</span></p>
-  ​
-  <script>
-  $( "p" ).clone().appendTo( document.body );
-  $( "p" ).clone().appendTo( document.body );
-  $( "p" ).clone().appendTo( document.body );
-  $( window ).scroll(function() {
-    $( "span" ).css( "display", "inline" ).fadeOut( "slow" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def scroll(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
-  /**
-       * Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
-       * @param eventData An object containing data that will be passed to the event handler.
-       * @param handler A function to execute each time the event is triggered.
-       * @see \`{@link https://api.jquery.com/scroll/ }\`
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link on }\` or \`{@link trigger }\`.
-       *
-       * **Cause**: The `.on()` and `.trigger()` methods can set an event handler or generate an event for any event type, and should be used instead of the shortcut methods. This message also applies to the other event shorthands, including: blur, focus, focusin, focusout, resize, scroll, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select, submit, keydown, keypress, keyup, and contextmenu.
-       *
-       * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
-       */
-  def scroll[TData](
-    eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
-  ): this.type = js.native
   /**
        * Get the current horizontal position of the scroll bar for the first element in the set of matched elements.
        * @see \`{@link https://api.jquery.com/scrollLeft/ }\`
@@ -23596,6 +23230,76 @@ trait JQuery[TElement]
        */
   def scrollTop(value: scala.Double): this.type = js.native
   /**
+       * Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
+       * @param handler A function to execute each time the event is triggered.
+       * @see \`{@link https://api.jquery.com/scroll/ }\`
+       * @since 1.0
+       * @deprecated ​ Deprecated since 3.3. Use \`{@link on }\` or \`{@link trigger }\`.
+       *
+       * **Cause**: The `.on()` and `.trigger()` methods can set an event handler or generate an event for any event type, and should be used instead of the shortcut methods. This message also applies to the other event shorthands, including: blur, focus, focusin, focusout, resize, scroll, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select, submit, keydown, keypress, keyup, and contextmenu.
+       *
+       * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
+       * @example ​ ````To do something when your page is scrolled:
+  ```html
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>scroll demo</title>
+    <style>
+    div {
+      color: blue;
+    }
+    p {
+      color: green;
+    }
+    span {
+      color: red;
+      display: none;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+  ​
+  <div>Try scrolling the iframe.</div>
+  <p>Paragraph - <span>Scroll happened!</span></p>
+  ​
+  <script>
+  $( "p" ).clone().appendTo( document.body );
+  $( "p" ).clone().appendTo( document.body );
+  $( "p" ).clone().appendTo( document.body );
+  $( window ).scroll(function() {
+    $( "span" ).css( "display", "inline" ).fadeOut( "slow" );
+  });
+  </script>
+  ​
+  </body>
+  </html>
+  ```
+       */
+  @JSName("scroll")
+  def scroll_scroll(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.scroll]
+  ): this.type = js.native
+  /**
+       * Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
+       * @param eventData An object containing data that will be passed to the event handler.
+       * @param handler A function to execute each time the event is triggered.
+       * @see \`{@link https://api.jquery.com/scroll/ }\`
+       * @since 1.4.3
+       * @deprecated ​ Deprecated since 3.3. Use \`{@link on }\` or \`{@link trigger }\`.
+       *
+       * **Cause**: The `.on()` and `.trigger()` methods can set an event handler or generate an event for any event type, and should be used instead of the shortcut methods. This message also applies to the other event shorthands, including: blur, focus, focusin, focusout, resize, scroll, dblclick, mousedown, mouseup, mousemove, mouseover, mouseout, mouseenter, mouseleave, change, select, submit, keydown, keypress, keyup, and contextmenu.
+       *
+       * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
+       */
+  @JSName("scroll")
+  def scroll_scroll[TData](
+    eventData: TData,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.scroll]
+  ): this.type = js.native
+  /**
        * Bind an event handler to the "select" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
        * @see \`{@link https://api.jquery.com/select/ }\`
@@ -23692,9 +23396,7 @@ trait JQuery[TElement]
   $( "input" ).select();
   ```
        */
-  def select(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def select(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "select" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -23743,7 +23445,10 @@ trait JQuery[TElement]
   $( "input" ).select();
   ```
        */
-  def select(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("select")
+  def select_select(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.select]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "select" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -23756,9 +23461,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def select[TData](
+  @JSName("select")
+  def select_select[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.select]
   ): this.type = js.native
   /**
        * Encode a set of form elements as a string for submission.
@@ -26312,9 +26018,7 @@ trait JQuery[TElement]
   $( "form:first" ).submit();
   ```
        */
-  def submit(
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, scala.Null]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
+  def submit(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
        * Bind an event handler to the "submit" JavaScript event, or trigger that event on an element.
        * @param handler A function to execute each time the event is triggered.
@@ -26383,7 +26087,10 @@ trait JQuery[TElement]
   $( "form:first" ).submit();
   ```
        */
-  def submit(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("submit")
+  def submit_submit(
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.submit]
+  ): this.type = js.native
   /**
        * Bind an event handler to the "submit" JavaScript event, or trigger that event on an element.
        * @param eventData An object containing data that will be passed to the event handler.
@@ -26396,9 +26103,10 @@ trait JQuery[TElement]
        *
        * **Solution**: Instead of `.click(fn)` use `.on("click", fn)`. Instead of `.click()` use `.trigger("click")`.
        */
-  def submit[TData](
+  @JSName("submit")
+  def submit_submit[TData](
     eventData: TData,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, TData]) | (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, TData]])
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.submit]
   ): this.type = js.native
   /**
        * Get the combined text contents of each element in the set of matched elements, including their descendants.
@@ -28530,7 +28238,7 @@ trait JQuery[TElement]
   });
   ```
        */
-  def trigger(eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null]): this.type = js.native
+  def trigger(eventType_event: jqueryLib.JQueryNs.Event): this.type = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -28625,7 +28333,7 @@ trait JQuery[TElement]
   });
   ```
        */
-  def trigger(eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null], extraParameters: java.lang.String): this.type = js.native
+  def trigger(eventType_event: jqueryLib.JQueryNs.Event, extraParameters: java.lang.String): this.type = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -28720,10 +28428,7 @@ trait JQuery[TElement]
   });
   ```
        */
-  def trigger(
-    eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null],
-    extraParameters: jqueryLib.JQueryNs.PlainObject[_]
-  ): this.type = js.native
+  def trigger(eventType_event: jqueryLib.JQueryNs.Event, extraParameters: jqueryLib.JQueryNs.PlainObject[_]): this.type = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -28818,7 +28523,7 @@ trait JQuery[TElement]
   });
   ```
        */
-  def trigger(eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null], extraParameters: js.Array[_]): this.type = js.native
+  def trigger(eventType_event: jqueryLib.JQueryNs.Event, extraParameters: js.Array[_]): this.type = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -28913,7 +28618,7 @@ trait JQuery[TElement]
   });
   ```
        */
-  def trigger(eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null], extraParameters: scala.Boolean): this.type = js.native
+  def trigger(eventType_event: jqueryLib.JQueryNs.Event, extraParameters: scala.Boolean): this.type = js.native
   /**
        * Execute all handlers and behaviors attached to the matched elements for the given event type.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -29008,7 +28713,7 @@ trait JQuery[TElement]
   });
   ```
        */
-  def trigger(eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null], extraParameters: scala.Double): this.type = js.native
+  def trigger(eventType_event: jqueryLib.JQueryNs.Event, extraParameters: scala.Double): this.type = js.native
   /**
        * Execute all handlers attached to an element for an event.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -29309,7 +29014,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null]): js.Any = js.native
+  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event): js.Any = js.native
   /**
        * Execute all handlers attached to an element for an event.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -29352,7 +29057,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null], extraParameters: java.lang.String): js.Any = js.native
+  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event, extraParameters: java.lang.String): js.Any = js.native
   /**
        * Execute all handlers attached to an element for an event.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -29395,10 +29100,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def triggerHandler(
-    eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null],
-    extraParameters: jqueryLib.JQueryNs.PlainObject[_]
-  ): js.Any = js.native
+  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event, extraParameters: jqueryLib.JQueryNs.PlainObject[_]): js.Any = js.native
   /**
        * Execute all handlers attached to an element for an event.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -29441,7 +29143,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null], extraParameters: js.Array[_]): js.Any = js.native
+  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event, extraParameters: js.Array[_]): js.Any = js.native
   /**
        * Execute all handlers attached to an element for an event.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -29484,7 +29186,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null], extraParameters: scala.Boolean): js.Any = js.native
+  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event, extraParameters: scala.Boolean): js.Any = js.native
   /**
        * Execute all handlers attached to an element for an event.
        * @param eventType_event _&#x40;param_ `eventType_event`
@@ -29527,7 +29229,7 @@ trait JQuery[TElement]
   </html>
   ```
        */
-  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event[TElement, scala.Null], extraParameters: scala.Double): js.Any = js.native
+  def triggerHandler(eventType_event: jqueryLib.JQueryNs.Event, extraParameters: scala.Double): js.Any = js.native
   /**
        * Remove a previously-attached event handler from the elements.
        * @param event A string containing one or more DOM event types, such as "click" or "submit," or custom event names.
@@ -29639,7 +29341,7 @@ trait JQuery[TElement]
        */
   def unbind(
     event: java.lang.String,
-    handler: jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, _]]
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, TElement, TElement, java.lang.String]
   ): this.type = js.native
   /**
        * Remove a previously-attached event handler from the elements.
@@ -29729,7 +29431,7 @@ trait JQuery[TElement]
   $( "p" ).unbind( "click" );
   ```
        */
-  def unbind(event: jqueryLib.JQueryNs.Event[TElement, scala.Null]): this.type = js.native
+  def unbind(event: jqueryLib.JQueryNs.TriggeredEvent[TElement, _, _, _]): this.type = js.native
   /**
        * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
        * @param namespace A selector which will be used to filter the event results.
@@ -29803,6 +29505,43 @@ trait JQuery[TElement]
   /**
        * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
        * @param selector A selector which will be used to filter the event results.
+       * @param eventType_events _&#x40;param_ `eventType_events`
+       * <br>
+       * * `eventType` — A string containing a JavaScript event type, such as "click" or "keydown" <br>
+       * * `events` — An object of one or more event types and previously bound functions to unbind from them.
+       * @see \`{@link https://api.jquery.com/undelegate/ }\`
+       * @since 1.4.2
+       * @since 1.4.3
+       * @deprecated ​ Deprecated since 3.0. Use \`{@link off }\`.
+       *
+       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
+       *
+       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
+       */
+  def undelegate(selector: jqueryLib.JQueryNs.Selector, eventType_events: java.lang.String): this.type = js.native
+  /**
+       * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
+       * @param selector A selector which will be used to filter the event results.
+       * @param eventType_events _&#x40;param_ `eventType_events`
+       * <br>
+       * * `eventType` — A string containing a JavaScript event type, such as "click" or "keydown" <br>
+       * * `events` — An object of one or more event types and previously bound functions to unbind from them.
+       * @see \`{@link https://api.jquery.com/undelegate/ }\`
+       * @since 1.4.2
+       * @since 1.4.3
+       * @deprecated ​ Deprecated since 3.0. Use \`{@link off }\`.
+       *
+       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
+       *
+       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
+       */
+  def undelegate(
+    selector: jqueryLib.JQueryNs.Selector,
+    eventType_events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, _, _, _]
+  ): this.type = js.native
+  /**
+       * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
+       * @param selector A selector which will be used to filter the event results.
        * @param eventType A string containing a JavaScript event type, such as "click" or "keydown"
        * @param handler A function to execute each time the event is triggered.
        * @see \`{@link https://api.jquery.com/undelegate/ }\`
@@ -29872,7 +29611,7 @@ trait JQuery[TElement]
   def undelegate(
     selector: jqueryLib.JQueryNs.Selector,
     eventType: java.lang.String,
-    handler: jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, _]]
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, java.lang.String]
   ): this.type = js.native
   /**
        * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
@@ -29947,41 +29686,6 @@ trait JQuery[TElement]
     selector: jqueryLib.JQueryNs.Selector,
     eventType: java.lang.String,
     handler: jqueryLib.jqueryLibNumbers.`false`
-  ): this.type = js.native
-  /**
-       * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
-       * @param selector A selector which will be used to filter the event results.
-       * @param eventTypes A string containing a JavaScript event type, such as "click" or "keydown"
-       *                   An object of one or more event types and previously bound functions to unbind from them.
-       * @see \`{@link https://api.jquery.com/undelegate/ }\`
-       * @since 1.4.2
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link off }\`.
-       *
-       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
-       *
-       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
-       */
-  def undelegate(selector: jqueryLib.JQueryNs.Selector, eventTypes: java.lang.String): this.type = js.native
-  /**
-       * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
-       * @param selector A selector which will be used to filter the event results.
-       * @param eventTypes A string containing a JavaScript event type, such as "click" or "keydown"
-       *                   An object of one or more event types and previously bound functions to unbind from them.
-       * @see \`{@link https://api.jquery.com/undelegate/ }\`
-       * @since 1.4.2
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link off }\`.
-       *
-       * **Cause**: These event binding methods have been deprecated in favor of the `.on()` and `.off()` methods which can handle both delegated and direct event binding. Although the older methods are still present in jQuery 3.0, they may be removed as early as the next major-version update.
-       *
-       * **Solution**: Change the method call to use `.on()` or `.off()`, the documentation for the old methods include specific instructions. In general, the `.bind()` and `.unbind()` methods can be renamed directly to `.on()` and `.off()` respectively since the argument orders are identical.
-       */
-  def undelegate(
-    selector: jqueryLib.JQueryNs.Selector,
-    eventTypes: jqueryLib.JQueryNs.PlainObject[
-      (jqueryLib.JQueryNs.EventHandlerBase[_, jqueryLib.JQueryNs.Event[TElement, _]]) | jqueryLib.jqueryLibNumbers.`false`
-    ]
   ): this.type = js.native
   /**
        * Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.

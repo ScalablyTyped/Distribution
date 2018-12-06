@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
          * EventSeries contain information on series of events, i.e. thing that was/is happening
-         * continously for some time.
+         * continuously for some time.
          */
 
 trait EventSeries extends js.Object {

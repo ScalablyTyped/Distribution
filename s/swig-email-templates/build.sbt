@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "swig-email-templates"
-version := "5.0-dt-20181018Z-aa9b6b"
+version := "5.0-dt-20181018Z-a513f8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-d287eb",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181206Z-02d7ed",
   "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-9c5dc2",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "swig" % "0.0-unknown-dt-20180910Z-cec2b8",

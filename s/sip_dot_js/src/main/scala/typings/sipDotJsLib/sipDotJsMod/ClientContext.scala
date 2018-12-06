@@ -5,9 +5,65 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("sip.js", "ClientContext")
 @js.native
-trait ClientContext extends Context {
+class ClientContext () extends Context {
   def cancel(): ClientContext = js.native
   def cancel(options: sipDotJsLib.Anon_Statuscode): ClientContext = js.native
+  def on(name: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  // This exists on all Context, but I cant make it work right
+  @JSName("on")
+  def on_accepted(
+    name: sipDotJsLib.sipDotJsLibStrings.accepted,
+    callback: js.Function2[/* response */ IncomingMessage, /* cause */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
+  // This exists on all Context, but I cant make it work right
+  @JSName("on")
+  def on_failed(
+    name: sipDotJsLib.sipDotJsLibStrings.failed,
+    callback: js.Function2[/* response */ IncomingMessage, /* cause */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
+  def on_notify(
+    name: sipDotJsLib.sipDotJsLibStrings.notify,
+    callback: js.Function1[/* request */ IncomingRequest, scala.Unit]
+  ): scala.Unit = js.native
+  // This exists on all Context, but I cant make it work right
+  @JSName("on")
+  def on_progress(
+    name: sipDotJsLib.sipDotJsLibStrings.progress,
+    callback: js.Function2[/* response */ IncomingMessage, /* cause */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
+  def on_referAccepted(
+    name: sipDotJsLib.sipDotJsLibStrings.referAccepted,
+    callback: js.Function1[/* ClientContext */ this.type, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
+  def on_referProgress(
+    name: sipDotJsLib.sipDotJsLibStrings.referProgress,
+    callback: js.Function1[/* ClientContext */ this.type, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
+  def on_referRejected(
+    name: sipDotJsLib.sipDotJsLibStrings.referRejected,
+    callback: js.Function1[/* ClientContext */ this.type, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
+  def on_referRequestAccepted(
+    name: sipDotJsLib.sipDotJsLibStrings.referRequestAccepted,
+    callback: js.Function1[/* ClientContext */ this.type, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("on")
+  def on_referRequestRejected(
+    name: sipDotJsLib.sipDotJsLibStrings.referRequestRejected,
+    callback: js.Function1[/* ClientContext */ this.type, scala.Unit]
+  ): scala.Unit = js.native
+  // This exists on all Context, but I cant make it work right
+  @JSName("on")
+  def on_rejected(
+    name: sipDotJsLib.sipDotJsLibStrings.rejected,
+    callback: js.Function2[/* response */ IncomingMessage, /* cause */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
 }
 

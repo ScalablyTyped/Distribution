@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "angular-locker"
-version := "v2.0.3-dt-20180910Z-9a184e"
+version := "v2.0.3-dt-20181206Z-9a184e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "semantic-ui-modal"
-version := "2.2-dt-20180910Z-8bc192"
+version := "2.2-dt-20180910Z-7313a3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-d287eb",
-  "com.scalablytyped" %%% "semantic-ui-dimmer" % "2.2-dt-20180910Z-0e1a23",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181206Z-02d7ed",
+  "com.scalablytyped" %%% "semantic-ui-dimmer" % "2.2-dt-20180910Z-1625b6",
   "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-9c5dc2",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

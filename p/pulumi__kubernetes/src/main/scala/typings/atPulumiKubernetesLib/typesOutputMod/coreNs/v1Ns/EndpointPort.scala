@@ -20,7 +20,7 @@ trait EndpointPort extends js.Object {
                */
   val port: scala.Double
   /**
-               * The IP protocol for this port. Must be UDP or TCP. Default is TCP.
+               * The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP.
                */
   val protocol: java.lang.String
 }

@@ -383,5 +383,169 @@ object autoscalingNs extends js.Object {
     
   }
   
+  @JSName("v2beta2")
+  @js.native
+  object v2beta2Ns extends js.Object {
+    /**
+             * CrossVersionObjectReference contains enough information to let you identify the referred
+             * resource.
+             */
+    @js.native
+    class CrossVersionObjectReference protected ()
+      extends atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.CrossVersionObjectReference {
+      /**
+                  * Create a autoscaling.v2beta2.CrossVersionObjectReference resource with the given unique name, arguments, and options.
+                  *
+                  * @param name The _unique_ name of the resource.
+                  * @param args The arguments to use to populate this resource's properties.
+                  * @param opts A bag of options that control this resource's behavior.
+                  */
+      def this(name: java.lang.String) = this()
+      /**
+                  * Create a autoscaling.v2beta2.CrossVersionObjectReference resource with the given unique name, arguments, and options.
+                  *
+                  * @param name The _unique_ name of the resource.
+                  * @param args The arguments to use to populate this resource's properties.
+                  * @param opts A bag of options that control this resource's behavior.
+                  */
+      def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.CrossVersionObjectReference) = this()
+      /**
+                  * Create a autoscaling.v2beta2.CrossVersionObjectReference resource with the given unique name, arguments, and options.
+                  *
+                  * @param name The _unique_ name of the resource.
+                  * @param args The arguments to use to populate this resource's properties.
+                  * @param opts A bag of options that control this resource's behavior.
+                  */
+      def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.CrossVersionObjectReference, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+    }
+    
+    /**
+             * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which
+             * automatically manages the replica count of any resource implementing the scale subresource
+             * based on the metrics specified.
+             */
+    @js.native
+    class HorizontalPodAutoscaler protected ()
+      extends atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler {
+      /**
+                  * Create a autoscaling.v2beta2.HorizontalPodAutoscaler resource with the given unique name, arguments, and options.
+                  *
+                  * @param name The _unique_ name of the resource.
+                  * @param args The arguments to use to populate this resource's properties.
+                  * @param opts A bag of options that control this resource's behavior.
+                  */
+      def this(name: java.lang.String) = this()
+      /**
+                  * Create a autoscaling.v2beta2.HorizontalPodAutoscaler resource with the given unique name, arguments, and options.
+                  *
+                  * @param name The _unique_ name of the resource.
+                  * @param args The arguments to use to populate this resource's properties.
+                  * @param opts A bag of options that control this resource's behavior.
+                  */
+      def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler) = this()
+      /**
+                  * Create a autoscaling.v2beta2.HorizontalPodAutoscaler resource with the given unique name, arguments, and options.
+                  *
+                  * @param name The _unique_ name of the resource.
+                  * @param args The arguments to use to populate this resource's properties.
+                  * @param opts A bag of options that control this resource's behavior.
+                  */
+      def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+    }
+    
+    /**
+             * HorizontalPodAutoscalerList is a list of horizontal pod autoscaler objects.
+             */
+    @js.native
+    class HorizontalPodAutoscalerList protected ()
+      extends atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList {
+      /**
+                  * Create a autoscaling.v2beta2.HorizontalPodAutoscalerList resource with the given unique name, arguments, and options.
+                  *
+                  * @param name The _unique_ name of the resource.
+                  * @param args The arguments to use to populate this resource's properties.
+                  * @param opts A bag of options that control this resource's behavior.
+                  */
+      def this(name: java.lang.String) = this()
+      /**
+                  * Create a autoscaling.v2beta2.HorizontalPodAutoscalerList resource with the given unique name, arguments, and options.
+                  *
+                  * @param name The _unique_ name of the resource.
+                  * @param args The arguments to use to populate this resource's properties.
+                  * @param opts A bag of options that control this resource's behavior.
+                  */
+      def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList) = this()
+      /**
+                  * Create a autoscaling.v2beta2.HorizontalPodAutoscalerList resource with the given unique name, arguments, and options.
+                  *
+                  * @param name The _unique_ name of the resource.
+                  * @param args The arguments to use to populate this resource's properties.
+                  * @param opts A bag of options that control this resource's behavior.
+                  */
+      def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+    }
+    
+    /**
+             * CrossVersionObjectReference contains enough information to let you identify the referred
+             * resource.
+             */
+    @js.native
+    object CrossVersionObjectReference extends js.Object {
+      /**
+                   * Get the state of an existing `CrossVersionObjectReference` resource, as identified by `id`.
+                   * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
+                   * Kubernetes convention) the ID becomes default/<name>.
+                   *
+                   * Pulumi will keep track of this resource using `name` as the Pulumi ID.
+                   *
+                   * @param name _Unique_ name used to register this resource with Pulumi.
+                   * @param id An ID for the Kubernetes resource to retrive. Takes the form
+                   *  <namespace>/<name> or <name>.
+                   */
+      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.CrossVersionObjectReference = js.native
+    }
+    
+    /**
+             * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which
+             * automatically manages the replica count of any resource implementing the scale subresource
+             * based on the metrics specified.
+             */
+    @js.native
+    object HorizontalPodAutoscaler extends js.Object {
+      /**
+                   * Get the state of an existing `HorizontalPodAutoscaler` resource, as identified by `id`.
+                   * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
+                   * Kubernetes convention) the ID becomes default/<name>.
+                   *
+                   * Pulumi will keep track of this resource using `name` as the Pulumi ID.
+                   *
+                   * @param name _Unique_ name used to register this resource with Pulumi.
+                   * @param id An ID for the Kubernetes resource to retrive. Takes the form
+                   *  <namespace>/<name> or <name>.
+                   */
+      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler = js.native
+    }
+    
+    /**
+             * HorizontalPodAutoscalerList is a list of horizontal pod autoscaler objects.
+             */
+    @js.native
+    object HorizontalPodAutoscalerList extends js.Object {
+      /**
+                   * Get the state of an existing `HorizontalPodAutoscalerList` resource, as identified by `id`.
+                   * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
+                   * Kubernetes convention) the ID becomes default/<name>.
+                   *
+                   * Pulumi will keep track of this resource using `name` as the Pulumi ID.
+                   *
+                   * @param name _Unique_ name used to register this resource with Pulumi.
+                   * @param id An ID for the Kubernetes resource to retrive. Takes the form
+                   *  <namespace>/<name> or <name>.
+                   */
+      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList = js.native
+    }
+    
+  }
+  
 }
 

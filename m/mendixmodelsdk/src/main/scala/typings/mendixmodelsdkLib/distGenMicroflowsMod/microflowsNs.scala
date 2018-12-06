@@ -114,6 +114,23 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  class BasicCodeActionParameterValue protected () extends CodeActionParameterValue {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    /**
+             * The value of this property is conceptually of type microflowExpressions.MicroflowExpression.
+             */
+    var argument: java.lang.String = js.native
+    /**
+             * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+             */
+    var argumentModel: mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.Expression = js.native
+  }
+  
+  /**
+       * In version 7.21.0: deleted
        * In version 6.7.0: introduced
        */
   @js.native
@@ -251,6 +268,19 @@ object microflowsNs extends js.Object {
   @js.native
   class CloseFormAction protected () extends MicroflowAction {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+  }
+  
+  /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  abstract class CodeActionParameterValue protected ()
+    extends mendixmodelsdkLib.distSdkInternalMod.Element {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    val containerAsJavaActionParameterMapping: JavaActionParameterMapping = js.native
+    val containerAsJavaScriptActionParameterMapping: JavaScriptActionParameterMapping = js.native
+    @JSName("model")
+    var model_CodeActionParameterValue: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
   }
   
   /**
@@ -446,6 +476,17 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  class EntityTypeCodeActionParameterValue protected () extends CodeActionParameterValue {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    var entity: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IEntity | scala.Null = js.native
+    val entityQualifiedName: java.lang.String | scala.Null = js.native
+  }
+  
+  /**
+       * In version 7.21.0: deleted
        * In version 6.8.0: introduced
        */
   @js.native
@@ -498,10 +539,21 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 7.2.0: introduced
        */
   @js.native
   class ExportMappingJavaActionParameterValue protected () extends JavaActionParameterValue {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    var exportMapping: mendixmodelsdkLib.distGenExportmappingsMod.exportmappingsNs.IExportMapping | scala.Null = js.native
+    val exportMappingQualifiedName: java.lang.String | scala.Null = js.native
+  }
+  
+  /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  class ExportMappingParameterValue protected () extends CodeActionParameterValue {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var exportMapping: mendixmodelsdkLib.distGenExportmappingsMod.exportmappingsNs.IExportMapping | scala.Null = js.native
     val exportMappingQualifiedName: java.lang.String | scala.Null = js.native
@@ -832,10 +884,21 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 7.2.0: introduced
        */
   @js.native
   class ImportMappingJavaActionParameterValue protected () extends JavaActionParameterValue {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    var importMapping: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.IImportMapping | scala.Null = js.native
+    val importMappingQualifiedName: java.lang.String | scala.Null = js.native
+  }
+  
+  /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  class ImportMappingParameterValue protected () extends CodeActionParameterValue {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var importMapping: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.IImportMapping | scala.Null = js.native
     val importMappingQualifiedName: java.lang.String | scala.Null = js.native
@@ -929,12 +992,18 @@ object microflowsNs extends js.Object {
     var parameter: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaActionParameter = js.native
     val parameterQualifiedName: java.lang.String = js.native
     /**
+             * In version 7.21.0: introduced
+             */
+    var parameterValue: CodeActionParameterValue = js.native
+    /**
+             * In version 7.21.0: deleted
              * In version 6.7.0: introduced
              */
     var value: JavaActionParameterValue = js.native
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.7.0: introduced
        */
   @js.native
@@ -944,6 +1013,47 @@ object microflowsNs extends js.Object {
     val containerAsJavaActionParameterMapping: JavaActionParameterMapping = js.native
     @JSName("model")
     var model_JavaActionParameterValue: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
+  }
+  
+  /**
+       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+       *
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  class JavaScriptActionCallAction protected () extends MicroflowAction {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    /**
+             * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+             */
+    var javaScriptAction: mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptAction | scala.Null = js.native
+    val javaScriptActionQualifiedName: java.lang.String | scala.Null = js.native
+    var outputVariableName: java.lang.String = js.native
+    /**
+             * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+             */
+    val parameterMappings: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[JavaScriptActionParameterMapping] = js.native
+    var useReturnVariable: scala.Boolean = js.native
+  }
+  
+  /**
+       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+       *
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  class JavaScriptActionParameterMapping protected ()
+    extends mendixmodelsdkLib.distSdkInternalMod.Element {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    val containerAsJavaScriptActionCallAction: JavaScriptActionCallAction = js.native
+    @JSName("model")
+    var model_JavaScriptActionParameterMapping: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
+    /**
+             * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+             */
+    var parameter: mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptActionParameter = js.native
+    val parameterQualifiedName: java.lang.String = js.native
+    var parameterValue: CodeActionParameterValue = js.native
   }
   
   @js.native
@@ -1139,6 +1249,7 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.9.0: introduced
        */
   @js.native
@@ -1220,6 +1331,16 @@ object microflowsNs extends js.Object {
              * In version 7.9.0: introduced
              */
     var variableType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType = js.native
+  }
+  
+  /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  class MicroflowParameterValue protected () extends CodeActionParameterValue {
+    def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    var microflow: IMicroflow | scala.Null = js.native
+    val microflowQualifiedName: java.lang.String | scala.Null = js.native
   }
   
   /**
@@ -2009,6 +2130,40 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object BasicCodeActionParameterValue extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new BasicCodeActionParameterValue instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.BasicCodeActionParameterValue = js.native
+    /**
+             * Creates and returns a new BasicCodeActionParameterValue instance in the SDK and on the server.
+             * The new BasicCodeActionParameterValue will be automatically stored in the 'parameterValue' property
+             * of the parent JavaActionParameterMapping element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInJavaActionParameterMappingUnderParameterValue(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.BasicCodeActionParameterValue = js.native
+    /**
+             * Creates and returns a new BasicCodeActionParameterValue instance in the SDK and on the server.
+             * The new BasicCodeActionParameterValue will be automatically stored in the 'parameterValue' property
+             * of the parent JavaScriptActionParameterMapping element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInJavaScriptActionParameterMappingUnderParameterValue(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaScriptActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.BasicCodeActionParameterValue = js.native
+  }
+  
+  /**
+       * In version 7.21.0: deleted
        * In version 6.7.0: introduced
        */
   @js.native
@@ -2027,7 +2182,7 @@ object microflowsNs extends js.Object {
              * of the parent JavaActionParameterMapping element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 and higher
+             *  6.7.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.BasicJavaActionParameterValue = js.native
   }
@@ -2231,6 +2386,15 @@ object microflowsNs extends js.Object {
              * of the parent ActionActivity element passed as argument.
              */
     def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ActionActivity): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.CloseFormAction = js.native
+  }
+  
+  /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object CodeActionParameterValue extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
   }
   
   /**
@@ -2550,6 +2714,40 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object EntityTypeCodeActionParameterValue extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new EntityTypeCodeActionParameterValue instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.EntityTypeCodeActionParameterValue = js.native
+    /**
+             * Creates and returns a new EntityTypeCodeActionParameterValue instance in the SDK and on the server.
+             * The new EntityTypeCodeActionParameterValue will be automatically stored in the 'parameterValue' property
+             * of the parent JavaActionParameterMapping element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInJavaActionParameterMappingUnderParameterValue(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.EntityTypeCodeActionParameterValue = js.native
+    /**
+             * Creates and returns a new EntityTypeCodeActionParameterValue instance in the SDK and on the server.
+             * The new EntityTypeCodeActionParameterValue will be automatically stored in the 'parameterValue' property
+             * of the parent JavaScriptActionParameterMapping element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInJavaScriptActionParameterMappingUnderParameterValue(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaScriptActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.EntityTypeCodeActionParameterValue = js.native
+  }
+  
+  /**
+       * In version 7.21.0: deleted
        * In version 6.8.0: introduced
        */
   @js.native
@@ -2568,7 +2766,7 @@ object microflowsNs extends js.Object {
              * of the parent JavaActionParameterMapping element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.8.0 and higher
+             *  6.8.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.EntityTypeJavaActionParameterValue = js.native
   }
@@ -2669,6 +2867,7 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 7.2.0: introduced
        */
   @js.native
@@ -2687,9 +2886,42 @@ object microflowsNs extends js.Object {
              * of the parent JavaActionParameterMapping element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.2.0 and higher
+             *  7.2.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ExportMappingJavaActionParameterValue = js.native
+  }
+  
+  /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object ExportMappingParameterValue extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new ExportMappingParameterValue instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ExportMappingParameterValue = js.native
+    /**
+             * Creates and returns a new ExportMappingParameterValue instance in the SDK and on the server.
+             * The new ExportMappingParameterValue will be automatically stored in the 'parameterValue' property
+             * of the parent JavaActionParameterMapping element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInJavaActionParameterMappingUnderParameterValue(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ExportMappingParameterValue = js.native
+    /**
+             * Creates and returns a new ExportMappingParameterValue instance in the SDK and on the server.
+             * The new ExportMappingParameterValue will be automatically stored in the 'parameterValue' property
+             * of the parent JavaScriptActionParameterMapping element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInJavaScriptActionParameterMappingUnderParameterValue(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaScriptActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ExportMappingParameterValue = js.native
   }
   
   /**
@@ -2912,6 +3144,7 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 7.2.0: introduced
        */
   @js.native
@@ -2930,9 +3163,42 @@ object microflowsNs extends js.Object {
              * of the parent JavaActionParameterMapping element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.2.0 and higher
+             *  7.2.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ImportMappingJavaActionParameterValue = js.native
+  }
+  
+  /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object ImportMappingParameterValue extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new ImportMappingParameterValue instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ImportMappingParameterValue = js.native
+    /**
+             * Creates and returns a new ImportMappingParameterValue instance in the SDK and on the server.
+             * The new ImportMappingParameterValue will be automatically stored in the 'parameterValue' property
+             * of the parent JavaActionParameterMapping element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInJavaActionParameterMappingUnderParameterValue(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ImportMappingParameterValue = js.native
+    /**
+             * Creates and returns a new ImportMappingParameterValue instance in the SDK and on the server.
+             * The new ImportMappingParameterValue will be automatically stored in the 'parameterValue' property
+             * of the parent JavaScriptActionParameterMapping element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInJavaScriptActionParameterMappingUnderParameterValue(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaScriptActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ImportMappingParameterValue = js.native
   }
   
   /**
@@ -3059,12 +3325,65 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.7.0: introduced
        */
   @js.native
   object JavaActionParameterValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+  }
+  
+  /**
+       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+       *
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object JavaScriptActionCallAction extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new JavaScriptActionCallAction instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaScriptActionCallAction = js.native
+    /**
+             * Creates and returns a new JavaScriptActionCallAction instance in the SDK and on the server.
+             * The new JavaScriptActionCallAction will be automatically stored in the 'action' property
+             * of the parent ActionActivity element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ActionActivity): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaScriptActionCallAction = js.native
+  }
+  
+  /**
+       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+       *
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object JavaScriptActionParameterMapping extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new JavaScriptActionParameterMapping instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaScriptActionParameterMapping = js.native
+    /**
+             * Creates and returns a new JavaScriptActionParameterMapping instance in the SDK and on the server.
+             * The new JavaScriptActionParameterMapping will be automatically stored in the 'parameterMappings' property
+             * of the parent JavaScriptActionCallAction element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaScriptActionCallAction): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaScriptActionParameterMapping = js.native
   }
   
   @js.native
@@ -3315,6 +3634,7 @@ object microflowsNs extends js.Object {
   }
   
   /**
+       * In version 7.21.0: deleted
        * In version 6.9.0: introduced
        */
   @js.native
@@ -3333,7 +3653,7 @@ object microflowsNs extends js.Object {
              * of the parent JavaActionParameterMapping element passed as argument.
              *
              * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.9.0 and higher
+             *  6.9.0 to 7.20.0
              */
     def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowJavaActionParameterValue = js.native
   }
@@ -3402,6 +3722,39 @@ object microflowsNs extends js.Object {
              * of the parent MicroflowObjectCollection element passed as argument.
              */
     def createIn(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowObjectCollection): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterObject = js.native
+  }
+  
+  /**
+       * In version 7.21.0: introduced
+       */
+  @js.native
+  object MicroflowParameterValue extends js.Object {
+    var structureTypeName: java.lang.String = js.native
+    var versionInfo: mendixmodelsdkLib.distGenMicroflowsMod.StructureVersionInfo = js.native
+    /**
+             * Creates and returns a new MicroflowParameterValue instance in the SDK and on the server.
+             * Expects one argument: the IModel object the instance will "live on".
+             * After creation, assign or add this instance to a property that accepts this kind of objects.
+             */
+    def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterValue = js.native
+    /**
+             * Creates and returns a new MicroflowParameterValue instance in the SDK and on the server.
+             * The new MicroflowParameterValue will be automatically stored in the 'parameterValue' property
+             * of the parent JavaActionParameterMapping element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInJavaActionParameterMappingUnderParameterValue(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterValue = js.native
+    /**
+             * Creates and returns a new MicroflowParameterValue instance in the SDK and on the server.
+             * The new MicroflowParameterValue will be automatically stored in the 'parameterValue' property
+             * of the parent JavaScriptActionParameterMapping element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInJavaScriptActionParameterMappingUnderParameterValue(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.JavaScriptActionParameterMapping): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterValue = js.native
   }
   
   /**

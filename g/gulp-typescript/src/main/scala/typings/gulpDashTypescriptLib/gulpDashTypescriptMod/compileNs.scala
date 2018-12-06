@@ -17,6 +17,7 @@ object compileNs extends js.Object {
     var declaration: js.UndefOr[scala.Boolean] = js.undefined
     var declarationFiles: js.UndefOr[scala.Boolean] = js.undefined
     var experimentalDecorators: js.UndefOr[scala.Boolean] = js.undefined
+    var getCustomTransformers: js.UndefOr[gulpDashTypescriptLib.releaseTypesMod.GetCustomTransformers] = js.undefined
     var isolatedModules: js.UndefOr[scala.Boolean] = js.undefined
     var jsx: js.UndefOr[java.lang.String | scala.Double] = js.undefined
     var lib: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -85,7 +86,7 @@ object compileNs extends js.Object {
       extends nodeLib.Error {
       var diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic
       var endPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Position] = js.undefined
-      var file: js.UndefOr[vinylLib.vinylMod.File] = js.undefined
+      var file: js.UndefOr[gulpDashTypescriptLib.releaseTypesMod.VinylFile] = js.undefined
       var fullFilename: js.UndefOr[java.lang.String] = js.undefined
       var relativeFilename: js.UndefOr[java.lang.String] = js.undefined
       var startPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Position] = js.undefined

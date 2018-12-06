@@ -142,27 +142,34 @@ object networkingNs extends js.Object {
     }
     
     /**
-             * NetworkPolicyPeer describes a peer to allow traffic from. Exactly one of its fields must be
-             * specified.
+             * NetworkPolicyPeer describes a peer to allow traffic from. Only certain combinations of fields
+             * are allowed
              */
     
     trait NetworkPolicyPeer extends js.Object {
       /**
-                   * IPBlock defines policy on a particular IPBlock
+                   * IPBlock defines policy on a particular IPBlock. If this field is set then neither of the
+                   * other fields can be.
                    */
       var ipBlock: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[IPBlock]] = js.undefined
       /**
-                   * Selects Namespaces using cluster scoped-labels. This matches all pods in all namespaces
-                   * selected by this label selector. This field follows standard label selector semantics. If
-                   * present but empty, this selector selects all namespaces.
+                   * Selects Namespaces using cluster-scoped labels. This field follows standard label selector
+                   * semantics; if present but empty, it selects all namespaces.
+                   *
+                   * If PodSelector is also set, then the NetworkPolicyPeer as a whole selects the Pods matching
+                   * PodSelector in the Namespaces selected by NamespaceSelector. Otherwise it selects all Pods
+                   * in the Namespaces selected by NamespaceSelector.
                    */
       var namespaceSelector: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
           ] = js.undefined
       /**
-                   * This is a label selector which selects Pods in this namespace. This field follows standard
-                   * label selector semantics. If present but empty, this selector selects all pods in this
-                   * namespace.
+                   * This is a label selector which selects Pods. This field follows standard label selector
+                   * semantics; if present but empty, it selects all pods.
+                   *
+                   * If NamespaceSelector is also set, then the NetworkPolicyPeer as a whole selects the Pods
+                   * matching PodSelector in the Namespaces selected by NamespaceSelector. Otherwise it selects
+                   * the Pods matching PodSelector in the policy's own Namespace.
                    */
       var podSelector: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
@@ -180,8 +187,8 @@ object networkingNs extends js.Object {
                    */
       var port: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
       /**
-                   * The protocol (TCP or UDP) which traffic must match. If not specified, this field defaults
-                   * to TCP.
+                   * The protocol (TCP, UDP, or SCTP) which traffic must match. If not specified, this field
+                   * defaults to TCP.
                    */
       var protocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
     }

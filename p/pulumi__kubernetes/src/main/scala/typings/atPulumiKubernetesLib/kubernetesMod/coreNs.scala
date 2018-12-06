@@ -473,39 +473,6 @@ object coreNs extends js.Object {
     }
     
     /**
-             * NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding
-             * metadata) must be non-nil.
-             */
-    @js.native
-    class NodeConfigSource protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NodeConfigSource {
-      /**
-                  * Create a core.v1.NodeConfigSource resource with the given unique name, arguments, and options.
-                  *
-                  * @param name The _unique_ name of the resource.
-                  * @param args The arguments to use to populate this resource's properties.
-                  * @param opts A bag of options that control this resource's behavior.
-                  */
-      def this(name: java.lang.String) = this()
-      /**
-                  * Create a core.v1.NodeConfigSource resource with the given unique name, arguments, and options.
-                  *
-                  * @param name The _unique_ name of the resource.
-                  * @param args The arguments to use to populate this resource's properties.
-                  * @param opts A bag of options that control this resource's behavior.
-                  */
-      def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.NodeConfigSource) = this()
-      /**
-                  * Create a core.v1.NodeConfigSource resource with the given unique name, arguments, and options.
-                  *
-                  * @param name The _unique_ name of the resource.
-                  * @param args The arguments to use to populate this resource's properties.
-                  * @param opts A bag of options that control this resource's behavior.
-                  */
-      def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.NodeConfigSource, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-    }
-    
-    /**
              * NodeList is the whole list of all Nodes which have been registered with master.
              */
     @js.native
@@ -1429,26 +1396,6 @@ object coreNs extends js.Object {
                    *  <namespace>/<name> or <name>.
                    */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Node = js.native
-    }
-    
-    /**
-             * NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding
-             * metadata) must be non-nil.
-             */
-    @js.native
-    object NodeConfigSource extends js.Object {
-      /**
-                   * Get the state of an existing `NodeConfigSource` resource, as identified by `id`.
-                   * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-                   * Kubernetes convention) the ID becomes default/<name>.
-                   *
-                   * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-                   *
-                   * @param name _Unique_ name used to register this resource with Pulumi.
-                   * @param id An ID for the Kubernetes resource to retrive. Takes the form
-                   *  <namespace>/<name> or <name>.
-                   */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NodeConfigSource = js.native
     }
     
     /**

@@ -12,30 +12,37 @@ object extensionsNs extends js.Object {
   @js.native
   object v1beta1Ns extends js.Object {
     /**
-             * AllowedFlexVolume represents a single Flexvolume that is allowed to be used.
+             * AllowedFlexVolume represents a single Flexvolume that is allowed to be used. Deprecated: use
+             * AllowedFlexVolume from policy API Group instead.
              */
     
     trait AllowedFlexVolume extends js.Object {
       /**
-                   * Driver is the name of the Flexvolume driver.
+                   * driver is the name of the Flexvolume driver.
                    */
       var driver: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
     }
     
     /**
-             * defines the host volume conditions that will be enabled by a policy for pods to use. It
-             * requires the path prefix to be defined.
+             * AllowedHostPath defines the host volume conditions that will be enabled by a policy for pods
+             * to use. It requires the path prefix to be defined. Deprecated: use AllowedHostPath from
+             * policy API Group instead.
              */
     
     trait AllowedHostPath extends js.Object {
       /**
-                   * is the path prefix that the host volume must match. It does not support `*`. Trailing
-                   * slashes are trimmed when validating the path prefix with a host path.
+                   * pathPrefix is the path prefix that the host volume must match. It does not support `*`.
+                   * Trailing slashes are trimmed when validating the path prefix with a host path.
                    *
                    * Examples: `/foo` would allow `/foo`, `/foo/` and `/foo/bar` `/foo` would not allow `/food`
                    * or `/etc/foo`
                    */
       var pathPrefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * when set to true, will allow host volumes matching the pathPrefix only if all volume mounts
+                   * are readOnly.
+                   */
+      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -404,7 +411,7 @@ object extensionsNs extends js.Object {
                    * failed. The deployment controller will continue to process failed deployments and a
                    * condition with a ProgressDeadlineExceeded reason will be surfaced in the deployment status.
                    * Note that progress will not be estimated during the time a deployment is paused. This is
-                   * not set by default.
+                   * set to the max value of int32 (i.e. 2147483647) by default, which means "no deadline".
                    */
       var progressDeadlineSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       /**
@@ -414,7 +421,8 @@ object extensionsNs extends js.Object {
       var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       /**
                    * The number of old ReplicaSets to retain to allow rollback. This is a pointer to distinguish
-                   * between explicit zero and not specified.
+                   * between explicit zero and not specified. This is set to the max value of int32 (i.e.
+                   * 2147483647) by default, which means "retaining all old RelicaSets".
                    */
       var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       /**
@@ -502,16 +510,17 @@ object extensionsNs extends js.Object {
     
     /**
              * FSGroupStrategyOptions defines the strategy type and options used to create the strategy.
+             * Deprecated: use FSGroupStrategyOptions from policy API Group instead.
              */
     
     trait FSGroupStrategyOptions extends js.Object {
       /**
-                   * Ranges are the allowed ranges of fs groups.  If you would like to force a single fs group
-                   * then supply a single range with the same start and end.
+                   * ranges are the allowed ranges of fs groups.  If you would like to force a single fs group
+                   * then supply a single range with the same start and end. Required for MustRunAs.
                    */
       var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
       /**
-                   * Rule is the strategy that will dictate what FSGroup is used in the SecurityContext.
+                   * rule is the strategy that will dictate what FSGroup is used in the SecurityContext.
                    */
       var rule: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
     }
@@ -551,8 +560,9 @@ object extensionsNs extends js.Object {
     }
     
     /**
-             * Host Port Range defines a range of host ports that will be enabled by a policy for pods to
-             * use.  It requires both the start and end to be defined.
+             * HostPortRange defines a range of host ports that will be enabled by a policy for pods to use.
+             * It requires both the start and end to be defined. Deprecated: use HostPortRange from policy
+             * API Group instead.
              */
     
     trait HostPortRange extends js.Object {
@@ -567,16 +577,17 @@ object extensionsNs extends js.Object {
     }
     
     /**
-             * ID Range provides a min/max of an allowed range of IDs.
+             * IDRange provides a min/max of an allowed range of IDs. Deprecated: use IDRange from policy
+             * API Group instead.
              */
     
     trait IDRange extends js.Object {
       /**
-                   * Max is the end of the range, inclusive.
+                   * max is the end of the range, inclusive.
                    */
       var max: atPulumiPulumiLib.resourceMod.Input[scala.Double]
       /**
-                   * Min is the start of the range, inclusive.
+                   * min is the start of the range, inclusive.
                    */
       var min: atPulumiPulumiLib.resourceMod.Input[scala.Double]
     }
@@ -892,21 +903,28 @@ object extensionsNs extends js.Object {
     
     trait NetworkPolicyPeer extends js.Object {
       /**
-                   * IPBlock defines policy on a particular IPBlock
+                   * IPBlock defines policy on a particular IPBlock. If this field is set then neither of the
+                   * other fields can be.
                    */
       var ipBlock: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[IPBlock]] = js.undefined
       /**
-                   * Selects Namespaces using cluster scoped-labels.  This matches all pods in all namespaces
-                   * selected by this label selector. This field follows standard label selector semantics. If
-                   * present but empty, this selector selects all namespaces.
+                   * Selects Namespaces using cluster-scoped labels. This field follows standard label selector
+                   * semantics; if present but empty, it selects all namespaces.
+                   *
+                   * If PodSelector is also set, then the NetworkPolicyPeer as a whole selects the Pods matching
+                   * PodSelector in the Namespaces selected by NamespaceSelector. Otherwise it selects all Pods
+                   * in the Namespaces selected by NamespaceSelector.
                    */
       var namespaceSelector: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
           ] = js.undefined
       /**
-                   * This is a label selector which selects Pods in this namespace. This field follows standard
-                   * label selector semantics. If present but empty, this selector selects all pods in this
-                   * namespace.
+                   * This is a label selector which selects Pods. This field follows standard label selector
+                   * semantics; if present but empty, it selects all pods.
+                   *
+                   * If NamespaceSelector is also set, then the NetworkPolicyPeer as a whole selects the Pods
+                   * matching PodSelector in the Namespaces selected by NamespaceSelector. Otherwise it selects
+                   * the Pods matching PodSelector in the policy's own Namespace.
                    */
       var podSelector: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
@@ -926,8 +944,8 @@ object extensionsNs extends js.Object {
                    */
       var port: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
       /**
-                   * Optional.  The protocol (TCP or UDP) which traffic must match. If not specified, this field
-                   * defaults to TCP.
+                   * Optional.  The protocol (TCP, UDP, or SCTP) which traffic must match. If not specified,
+                   * this field defaults to TCP.
                    */
       var protocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
     }
@@ -979,8 +997,9 @@ object extensionsNs extends js.Object {
     }
     
     /**
-             * Pod Security Policy governs the ability to make requests that affect the Security Context
-             * that will be applied to a pod and container.
+             * PodSecurityPolicy governs the ability to make requests that affect the Security Context that
+             * will be applied to a pod and container. Deprecated: use PodSecurityPolicy from policy API
+             * Group instead.
              */
     
     trait PodSecurityPolicy extends js.Object {
@@ -1012,7 +1031,8 @@ object extensionsNs extends js.Object {
     }
     
     /**
-             * Pod Security Policy List is a list of PodSecurityPolicy objects.
+             * PodSecurityPolicyList is a list of PodSecurityPolicy objects. Deprecated: use
+             * PodSecurityPolicyList from policy API Group instead.
              */
     
     trait PodSecurityPolicyList extends js.Object {
@@ -1024,7 +1044,7 @@ object extensionsNs extends js.Object {
                    */
       var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
-                   * Items is a list of schema objects.
+                   * items is a list of schema objects.
                    */
       var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PodSecurityPolicy]]
       /**
@@ -1044,45 +1064,72 @@ object extensionsNs extends js.Object {
     }
     
     /**
-             * Pod Security Policy Spec defines the policy enforced.
+             * PodSecurityPolicySpec defines the policy enforced. Deprecated: use PodSecurityPolicySpec from
+             * policy API Group instead.
              */
     
     trait PodSecurityPolicySpec extends js.Object {
       /**
-                   * AllowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If
+                   * allowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If
                    * unspecified, defaults to true.
                    */
       var allowPrivilegeEscalation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
-                   * AllowedCapabilities is a list of capabilities that can be requested to add to the
+                   * allowedCapabilities is a list of capabilities that can be requested to add to the
                    * container. Capabilities in this field may be added at the pod author's discretion. You must
-                   * not list a capability in both AllowedCapabilities and RequiredDropCapabilities.
+                   * not list a capability in both allowedCapabilities and requiredDropCapabilities.
                    */
       var allowedCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
       /**
-                   * AllowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all
+                   * allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all
                    * Flexvolumes may be used.  This parameter is effective only when the usage of the
-                   * Flexvolumes is allowed in the "Volumes" field.
+                   * Flexvolumes is allowed in the "volumes" field.
                    */
       var allowedFlexVolumes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[AllowedFlexVolume]]] = js.undefined
       /**
-                   * is a white list of allowed host paths. Empty indicates that all host paths may be used.
+                   * allowedHostPaths is a white list of allowed host paths. Empty indicates that all host paths
+                   * may be used.
                    */
       var allowedHostPaths: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[AllowedHostPath]]] = js.undefined
       /**
-                   * DefaultAddCapabilities is the default set of capabilities that will be added to the
+                   * AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil indicates that
+                   * only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to
+                   * be enabled.
+                   */
+      var allowedProcMountTypes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
+                   * allowedUnsafeSysctls is a list of explicitly allowed unsafe sysctls, defaults to none. Each
+                   * entry is either a plain sysctl name or ends in "*" in which case it is considered as a
+                   * prefix of allowed sysctls. Single * means all unsafe sysctls are allowed. Kubelet has to
+                   * whitelist all allowed unsafe sysctls explicitly to avoid rejection.
+                   *
+                   * Examples: e.g. "foo/ *" allows "foo/bar", "foo/baz", etc. e.g. "foo.*" allows "foo.bar",
+                   * "foo.baz", etc.
+                   */
+      var allowedUnsafeSysctls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
+                   * defaultAddCapabilities is the default set of capabilities that will be added to the
                    * container unless the pod spec specifically drops the capability.  You may not list a
-                   * capability in both DefaultAddCapabilities and RequiredDropCapabilities. Capabilities added
-                   * here are implicitly allowed, and need not be included in the AllowedCapabilities list.
+                   * capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added
+                   * here are implicitly allowed, and need not be included in the allowedCapabilities list.
                    */
       var defaultAddCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
       /**
-                   * DefaultAllowPrivilegeEscalation controls the default setting for whether a process can gain
+                   * defaultAllowPrivilegeEscalation controls the default setting for whether a process can gain
                    * more privileges than its parent process.
                    */
       var defaultAllowPrivilegeEscalation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
-                   * FSGroup is the strategy that will dictate what fs group is used by the SecurityContext.
+                   * forbiddenSysctls is a list of explicitly forbidden sysctls, defaults to none. Each entry is
+                   * either a plain sysctl name or ends in "*" in which case it is considered as a prefix of
+                   * forbidden sysctls. Single * means all sysctls are forbidden.
+                   *
+                   * Examples: e.g. "foo/ *" forbids "foo/bar", "foo/baz", etc. e.g. "foo.*" forbids "foo.bar",
+                   * "foo.baz", etc.
+                   */
+      var forbiddenSysctls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
+                   * fsGroup is the strategy that will dictate what fs group is used by the SecurityContext.
                    */
       var fsGroup: atPulumiPulumiLib.resourceMod.Input[FSGroupStrategyOptions]
       /**
@@ -1106,17 +1153,23 @@ object extensionsNs extends js.Object {
                    */
       var privileged: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
-                   * ReadOnlyRootFilesystem when set to true will force containers to run with a read only root
+                   * readOnlyRootFilesystem when set to true will force containers to run with a read only root
                    * file system.  If the container specifically requests to run with a non-read only root file
                    * system the PSP should deny the pod. If set to false the container may run with a read only
                    * root file system if it wishes but it will not be forced to.
                    */
       var readOnlyRootFilesystem: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
-                   * RequiredDropCapabilities are the capabilities that will be dropped from the container.
+                   * requiredDropCapabilities are the capabilities that will be dropped from the container.
                    * These are required to be dropped and cannot be added.
                    */
       var requiredDropCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
+                   * RunAsGroup is the strategy that will dictate the allowable RunAsGroup values that may be
+                   * set. If this field is omitted, the pod's RunAsGroup can take any value. This field requires
+                   * the RunAsGroup feature gate to be enabled.
+                   */
+      var runAsGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RunAsGroupStrategyOptions]] = js.undefined
       /**
                    * runAsUser is the strategy that will dictate the allowable RunAsUser values that may be set.
                    */
@@ -1126,13 +1179,13 @@ object extensionsNs extends js.Object {
                    */
       var seLinux: atPulumiPulumiLib.resourceMod.Input[SELinuxStrategyOptions]
       /**
-                   * SupplementalGroups is the strategy that will dictate what supplemental groups are used by
+                   * supplementalGroups is the strategy that will dictate what supplemental groups are used by
                    * the SecurityContext.
                    */
       var supplementalGroups: atPulumiPulumiLib.resourceMod.Input[SupplementalGroupsStrategyOptions]
       /**
-                   * volumes is a white list of allowed volume plugins.  Empty indicates that all plugins may be
-                   * used.
+                   * volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be
+                   * used. To allow all volumes you may use '*'.
                    */
       var volumes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
     }
@@ -1369,29 +1422,47 @@ object extensionsNs extends js.Object {
     }
     
     /**
-             * Run A sUser Strategy Options defines the strategy type and any options used to create the
-             * strategy.
+             * RunAsGroupStrategyOptions defines the strategy type and any options used to create the
+             * strategy. Deprecated: use RunAsGroupStrategyOptions from policy API Group instead.
              */
     
-    trait RunAsUserStrategyOptions extends js.Object {
+    trait RunAsGroupStrategyOptions extends js.Object {
       /**
-                   * Ranges are the allowed ranges of uids that may be used.
+                   * ranges are the allowed ranges of gids that may be used. If you would like to force a single
+                   * gid then supply a single range with the same start and end. Required for MustRunAs.
                    */
       var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
       /**
-                   * Rule is the strategy that will dictate the allowable RunAsUser values that may be set.
+                   * rule is the strategy that will dictate the allowable RunAsGroup values that may be set.
                    */
       var rule: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
     }
     
     /**
-             * SELinux  Strategy Options defines the strategy type and any options used to create the
-             * strategy.
+             * RunAsUserStrategyOptions defines the strategy type and any options used to create the
+             * strategy. Deprecated: use RunAsUserStrategyOptions from policy API Group instead.
+             */
+    
+    trait RunAsUserStrategyOptions extends js.Object {
+      /**
+                   * ranges are the allowed ranges of uids that may be used. If you would like to force a single
+                   * uid then supply a single range with the same start and end. Required for MustRunAs.
+                   */
+      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      /**
+                   * rule is the strategy that will dictate the allowable RunAsUser values that may be set.
+                   */
+      var rule: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
+             * SELinuxStrategyOptions defines the strategy type and any options used to create the strategy.
+             * Deprecated: use SELinuxStrategyOptions from policy API Group instead.
              */
     
     trait SELinuxStrategyOptions extends js.Object {
       /**
-                   * type is the strategy that will dictate the allowable labels that may be set.
+                   * rule is the strategy that will dictate the allowable labels that may be set.
                    */
       var rule: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
       /**
@@ -1484,17 +1555,18 @@ object extensionsNs extends js.Object {
     
     /**
              * SupplementalGroupsStrategyOptions defines the strategy type and options used to create the
-             * strategy.
+             * strategy. Deprecated: use SupplementalGroupsStrategyOptions from policy API Group instead.
              */
     
     trait SupplementalGroupsStrategyOptions extends js.Object {
       /**
-                   * Ranges are the allowed ranges of supplemental groups.  If you would like to force a single
-                   * supplemental group then supply a single range with the same start and end.
+                   * ranges are the allowed ranges of supplemental groups.  If you would like to force a single
+                   * supplemental group then supply a single range with the same start and end. Required for
+                   * MustRunAs.
                    */
       var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
       /**
-                   * Rule is the strategy that will dictate what supplemental groups is used in the
+                   * rule is the strategy that will dictate what supplemental groups is used in the
                    * SecurityContext.
                    */
       var rule: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined

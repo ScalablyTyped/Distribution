@@ -17,7 +17,7 @@ trait DialogProps
   var fullScreen: js.UndefOr[scala.Boolean] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var maxWidth: js.UndefOr[
-    atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.xs | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.sm | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.md | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.lg | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibNumbers.`false`
+    atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.xs | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.sm | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.md | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.lg | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.xl | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibNumbers.`false`
   ] = js.undefined
   var scroll: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.body | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.paper

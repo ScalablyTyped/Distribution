@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 
-trait Anon_PreDispatch[TTarget, TData] extends js.Object {
-  def preDispatch(`this`: TTarget, event: jqueryLib.JQueryNs.Event[TTarget, TData]): jqueryLib.jqueryLibNumbers.`false` | scala.Unit
+trait Anon_PreDispatch[TTarget] extends js.Object {
+  def preDispatch(`this`: TTarget, event: jqueryLib.JQueryNs.Event): jqueryLib.jqueryLibNumbers.`false` | scala.Unit
 }
 

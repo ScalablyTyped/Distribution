@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "backgrid"
-version := "0.2.6-dt-20180910Z-318fea"
+version := "0.2.6-dt-20180910Z-e43ef5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "backbone" % "1.3.3-dt-20181121Z-4472e4",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-d287eb",
+  "com.scalablytyped" %%% "backbone" % "1.3.3-dt-20181206Z-d3d5c5",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181206Z-02d7ed",
   "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-9c5dc2",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "underscore" % "1.8-dt-20180910Z-87c49b",

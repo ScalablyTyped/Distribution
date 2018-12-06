@@ -132,12 +132,54 @@ trait ChaiJQueryStatic extends js.Object {
        * @param beforeStart A function that is called just before the constructor returns.
        */
   def Deferred[T](beforeStart: js.Function1[/* deferred */ jqueryLib.JQueryDeferred[T], _]): jqueryLib.JQueryDeferred[T] = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
-  def Event[T /* <: js.Object */, TTarget /* <: stdLib.EventTarget */](event: java.lang.String): (jqueryLib.JQueryNs.Event[TTarget, scala.Null]) with T = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
-  def Event[T /* <: js.Object */, TTarget /* <: stdLib.EventTarget */](event: java.lang.String, properties: T): (jqueryLib.JQueryNs.Event[TTarget, scala.Null]) with T = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
-  def Event[T /* <: jqueryLib.JQueryNs.EventLike */, TTarget /* <: stdLib.EventTarget */](properties: T): (jqueryLib.JQueryNs.Event[TTarget, scala.Null]) with T = js.native
+  /**
+           * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
+           *
+           * Check \`{@link https://api.jquery.com/trigger/ trigger}\`'s documentation to see how to combine it with your own event object.
+           * @see \`{@link https://api.jquery.com/category/events/event-object/ }\`
+           * @since 1.6
+           * @example
+  ```javascript
+  //Create a new jQuery.Event object without the "new" operator.
+  var e = jQuery.Event( "click" );
+  ​
+  // trigger an artificial click event
+  jQuery( "body" ).trigger( e );
+  ```
+           * @example
+  ```javascript
+  // Create a new jQuery.Event object with specified event properties.
+  var e = jQuery.Event( "keydown", { keyCode: 64 } );
+  ​
+  // trigger an artificial keydown event with keyCode 64
+  jQuery( "body" ).trigger( e );
+  ```
+           */
+  def Event[T /* <: js.Object */](event: java.lang.String): jqueryLib.JQueryNs.Event with T = js.native
+  /**
+           * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
+           *
+           * Check \`{@link https://api.jquery.com/trigger/ trigger}\`'s documentation to see how to combine it with your own event object.
+           * @see \`{@link https://api.jquery.com/category/events/event-object/ }\`
+           * @since 1.6
+           * @example
+  ```javascript
+  //Create a new jQuery.Event object without the "new" operator.
+  var e = jQuery.Event( "click" );
+  ​
+  // trigger an artificial click event
+  jQuery( "body" ).trigger( e );
+  ```
+           * @example
+  ```javascript
+  // Create a new jQuery.Event object with specified event properties.
+  var e = jQuery.Event( "keydown", { keyCode: 64 } );
+  ​
+  // trigger an artificial keydown event with keyCode 64
+  jQuery( "body" ).trigger( e );
+  ```
+           */
+  def Event[T /* <: js.Object */](event: java.lang.String, properties: T): jqueryLib.JQueryNs.Event with T = js.native
   /**
        * Perform an asynchronous HTTP (Ajax) request.
        *

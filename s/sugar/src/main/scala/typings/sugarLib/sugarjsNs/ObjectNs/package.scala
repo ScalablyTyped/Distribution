@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 package object ObjectNs {
   type Chainable[RawValue] = ChainableBase[RawValue]
-  type mapFn = js.Function3[/* val */ js.Any, /* key */ java.lang.String, /* obj */ js.Object, js.Any]
-  type resolveFn = js.Function5[
+  type mapFn[T, U] = js.Function3[/* val */ T, /* key */ java.lang.String, /* obj */ js.Object, U]
+  type resolveFn[T] = js.Function5[
     /* key */ java.lang.String, 
-    /* targetVal */ js.Any, 
-    /* sourceVal */ js.Any, 
+    /* targetVal */ T, 
+    /* sourceVal */ T, 
     /* target */ js.Object, 
     /* source */ js.Object, 
     scala.Boolean
   ]
-  type searchFn = js.Function3[/* key */ java.lang.String, /* val */ js.Any, /* obj */ js.Object, scala.Boolean]
+  type searchFn[T] = js.Function3[/* key */ java.lang.String, /* val */ T, /* obj */ js.Object, scala.Boolean]
 }

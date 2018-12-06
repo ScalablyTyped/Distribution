@@ -18,8 +18,8 @@ trait NetworkPolicyPort extends js.Object {
                */
   val port: scala.Double | java.lang.String
   /**
-               * Optional.  The protocol (TCP or UDP) which traffic must match. If not specified, this field
-               * defaults to TCP.
+               * Optional.  The protocol (TCP, UDP, or SCTP) which traffic must match. If not specified,
+               * this field defaults to TCP.
                */
   val protocol: java.lang.String
 }

@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "cordova-plugin-ibeacon"
-version := "v3.3.0-dt-20180910Z-a00f8b"
+version := "v3.3.0-dt-20180910Z-f6374f"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "q" % "1.5-dt-20180915Z-726082",
+  "com.scalablytyped" %%% "q" % "1.5-dt-20181206Z-726082",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

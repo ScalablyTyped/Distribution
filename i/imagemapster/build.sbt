@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "imagemapster"
-version := "1.2.10-dt-20180910Z-542b1b"
+version := "1.2.10-dt-20180910Z-cd0c1a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-d287eb",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181206Z-02d7ed",
   "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-9c5dc2",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 abstract class BaseModel ()
   extends mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.AbstractModel {
   def allBuildingBlocks(): js.Array[mendixmodelsdkLib.distGenPagesMod.pagesNs.IBuildingBlock] = js.native
+  def allCodeActions(): js.Array[mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ICodeAction] = js.native
   def allConstants(): js.Array[mendixmodelsdkLib.distGenConstantsMod.constantsNs.IConstant] = js.native
   def allConsumedAppServices(): js.Array[mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IConsumedAppService] = js.native
   def allConsumedODataServices(): js.Array[mendixmodelsdkLib.distGenRestMod.restNs.IConsumedODataService] = js.native
@@ -29,6 +30,9 @@ abstract class BaseModel ()
   def allImportMappings(): js.Array[mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.IImportMapping] = js.native
   def allImportedWebServices(): js.Array[mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IImportedWebService] = js.native
   def allJavaActions(): js.Array[mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaAction] = js.native
+  def allJavaScriptActions(): js.Array[
+    mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptAction
+  ] = js.native
   def allJsonStructures(): js.Array[mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.IJsonStructure] = js.native
   def allLayouts(): js.Array[mendixmodelsdkLib.distGenPagesMod.pagesNs.ILayout] = js.native
   def allMappingDocuments(): js.Array[mendixmodelsdkLib.distGenMappingsMod.mappingsNs.IMappingDocument] = js.native
@@ -43,6 +47,8 @@ abstract class BaseModel ()
   def allModules(): js.Array[mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule] = js.native
   def allMxSchemas(): js.Array[mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IMxSchema] = js.native
   def allNanoflows(): js.Array[mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflow] = js.native
+  def allNativeLayouts(): js.Array[mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayout] = js.native
+  def allNativePages(): js.Array[mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativePage] = js.native
   def allNavigationDocuments(): js.Array[mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationDocument] = js.native
   def allPageTemplates(): js.Array[mendixmodelsdkLib.distGenPagesMod.pagesNs.IPageTemplate] = js.native
   def allPages(): js.Array[mendixmodelsdkLib.distGenPagesMod.pagesNs.IPage] = js.native
@@ -83,6 +89,8 @@ abstract class BaseModel ()
   def findImportedWebServiceByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IImportedWebService = js.native
   def findJavaActionByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaAction = js.native
   def findJavaActionParameterByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaActionParameter = js.native
+  def findJavaScriptActionByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptAction = js.native
+  def findJavaScriptActionParameterByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptActionParameter = js.native
   def findJsonStructureByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.IJsonStructure = js.native
   def findLayoutByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenPagesMod.pagesNs.ILayout = js.native
   def findLayoutParameterByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenPagesMod.pagesNs.ILayoutParameter = js.native
@@ -93,6 +101,7 @@ abstract class BaseModel ()
   def findModuleRoleByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleRole = js.native
   def findNanoflowByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflow = js.native
   def findNanoflowParameterByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflowParameter = js.native
+  def findNativeLayoutByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayout = js.native
   def findNavigationProfileByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfile = js.native
   def findPageByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenPagesMod.pagesNs.IPage = js.native
   def findRegularExpressionByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenRegularexpressionsMod.regularexpressionsNs.IRegularExpression = js.native

@@ -156,7 +156,7 @@ trait IUtilMisc extends js.Object {
     url: java.lang.String,
     callback: js.Function1[/* image */ stdLib.HTMLImageElement, scala.Unit],
     context: js.Any,
-    crossOrigin: scala.Boolean
+    crossOrigin: java.lang.String
   ): scala.Unit = js.native
   /**
   	 * Multiply matrix A by matrix B to nest transformations

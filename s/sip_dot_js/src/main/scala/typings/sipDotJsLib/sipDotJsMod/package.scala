@@ -12,7 +12,6 @@ package object sipDotJsMod {
   ]
   type IncomingMessage = Request
   type IncomingRequest = Request
-  type IncomingResponse = Request
   type OutgoingRequest = Request
   type Request = Context
 }

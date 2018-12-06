@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("polished/lib/mixins/placeholder", JSImport.Namespace)
 @js.native
 object libMixinsPlaceholderMod extends js.Object {
-  def default(styles: js.Object): js.Object = js.native
-  def default(styles: js.Object, parent: java.lang.String): js.Object = js.native
+  def default(styles: polishedLib.libTypesStyleMod.Styles): polishedLib.libTypesStyleMod.Styles = js.native
+  def default(styles: polishedLib.libTypesStyleMod.Styles, parent: java.lang.String): polishedLib.libTypesStyleMod.Styles = js.native
 }
 

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait LegendPayload extends js.Object {
+  var color: js.UndefOr[java.lang.String] = js.undefined
   var id: js.Any
   var `type`: LegendType
   var value: js.Any

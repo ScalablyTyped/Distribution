@@ -30,9 +30,21 @@ trait SecurityContext extends js.Object {
                */
   val privileged: scala.Boolean
   /**
+               * procMount denotes the type of proc mount to use for the containers. The default is
+               * DefaultProcMount which uses the container runtime defaults for readonly paths and masked
+               * paths. This requires the ProcMountType feature flag to be enabled.
+               */
+  val procMount: java.lang.String
+  /**
                * Whether this container has a read-only root filesystem. Default is false.
                */
   val readOnlyRootFilesystem: scala.Boolean
+  /**
+               * The GID to run the entrypoint of the container process. Uses runtime default if unset. May
+               * also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext,
+               * the value specified in SecurityContext takes precedence.
+               */
+  val runAsGroup: scala.Double
   /**
                * Indicates that the container must run as a non-root user. If true, the Kubelet will
                * validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to

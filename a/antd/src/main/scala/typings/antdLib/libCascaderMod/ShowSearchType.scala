@@ -15,6 +15,7 @@ trait ShowSearchType extends js.Object {
       scala.Boolean
     ]
   ] = js.undefined
+  var limit: js.UndefOr[scala.Double | antdLib.antdLibNumbers.`false`] = js.undefined
   var matchInputWidth: js.UndefOr[scala.Boolean] = js.undefined
   var render: js.UndefOr[
     js.Function4[

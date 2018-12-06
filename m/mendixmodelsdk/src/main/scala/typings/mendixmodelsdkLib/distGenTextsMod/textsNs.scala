@@ -422,6 +422,15 @@ object textsNs extends js.Object {
     def createInSearchFieldUnderCaption(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SearchField): mendixmodelsdkLib.distGenTextsMod.textsNs.Text = js.native
     /**
              * Creates and returns a new Text instance in the SDK and on the server.
+             * The new Text will be automatically stored in the 'placeholder' property
+             * of the parent pages.SearchField element passed as argument.
+             *
+             * Warning! Can only be used on models with the following Mendix meta model versions:
+             *  7.21.0 and higher
+             */
+    def createInSearchFieldUnderPlaceholder(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SearchField): mendixmodelsdkLib.distGenTextsMod.textsNs.Text = js.native
+    /**
+             * Creates and returns a new Text instance in the SDK and on the server.
              * The new Text will be automatically stored in the 'caption' property
              * of the parent documenttemplates.StaticLabel element passed as argument.
              */

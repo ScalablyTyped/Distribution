@@ -21,6 +21,10 @@ trait LayoutSideMenu extends js.Object {
        */
   var left: js.UndefOr[LayoutStackChildren] = js.undefined
   /**
+       * Set the bottom tabs options
+       */
+  var options: js.UndefOr[reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options] = js.undefined
+  /**
        * Set the right side bar
        */
   var right: js.UndefOr[LayoutStackChildren] = js.undefined

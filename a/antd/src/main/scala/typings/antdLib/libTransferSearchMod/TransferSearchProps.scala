@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait TransferSearchProps extends js.Object {
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var handleClear: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.MouseEvent[_], scala.Unit]] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* e */ reactLib.reactMod.ReactNs.FormEvent[_], scala.Unit]] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined

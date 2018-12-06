@@ -19,6 +19,10 @@ trait SassException
        */
   var file: java.lang.String
   /**
+       * The formatted error.
+       */
+  var formatted: java.lang.String
+  /**
        * The line number of error.
        */
   var line: scala.Double

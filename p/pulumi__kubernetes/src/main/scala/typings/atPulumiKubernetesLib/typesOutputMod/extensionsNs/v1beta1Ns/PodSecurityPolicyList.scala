@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Pod Security Policy List is a list of PodSecurityPolicy objects.
+         * PodSecurityPolicyList is a list of PodSecurityPolicy objects. Deprecated: use
+         * PodSecurityPolicyList from policy API Group instead.
          */
 
 trait PodSecurityPolicyList extends js.Object {
@@ -18,7 +19,7 @@ trait PodSecurityPolicyList extends js.Object {
                */
   val apiVersion: java.lang.String
   /**
-               * Items is a list of schema objects.
+               * items is a list of schema objects.
                */
   val items: js.Array[PodSecurityPolicy]
   /**

@@ -11,6 +11,13 @@ import scala.scalajs.js.annotation._
 
 trait MetricStatus extends js.Object {
   /**
+               * external refers to a global metric that is not associated with any Kubernetes object. It
+               * allows autoscaling based on information coming from components running outside of cluster
+               * (for example length of queue in cloud messaging service, or QPS from loadbalancer running
+               * outside of cluster).
+               */
+  val external: ExternalMetricStatus
+  /**
                * object refers to a metric describing a single kubernetes object (for example,
                * hits-per-second on an Ingress object).
                */
@@ -29,7 +36,8 @@ trait MetricStatus extends js.Object {
                */
   val resource: ResourceMetricStatus
   /**
-               * type is the type of metric source.  It will match one of the fields below.
+               * type is the type of metric source.  It will be one of "Object", "Pods" or "Resource", each
+               * corresponds to a matching field in the object.
                */
   val `type`: java.lang.String
 }

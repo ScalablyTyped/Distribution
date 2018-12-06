@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "babel__types"
-version := "7.1.6-7239b1"
+version := "7.2.0-7f6146"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

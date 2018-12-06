@@ -16,10 +16,6 @@ trait HandleObject[TTarget, TData] extends js.Object {
            */
   val data: TData
   /**
-           * Event handler function passed to jQuery during event binding. If `false` was passed during event binding, the handler refers to a single shared function that simply returns `false`.
-           */
-  val handler: EventHandler[TTarget, TData]
-  /**
            * Namespace(s), if any, provided when the event was attached, such as `"myPlugin"`. When multiple namespaces are given, they are separated by periods and sorted in ascending alphabetical order. If no namespaces are provided, this property is an empty string.
            */
   val namespace: java.lang.String
@@ -35,5 +31,9 @@ trait HandleObject[TTarget, TData] extends js.Object {
            * The type of event, such as `"click"`. When special event mapping is used via `bindType` or `delegateType`, this will be the mapped type.
            */
   val `type`: java.lang.String
+  /**
+           * Event handler function passed to jQuery during event binding. If `false` was passed during event binding, the handler refers to a single shared function that simply returns `false`.
+           */
+  def handler(`this`: TTarget, t: TriggeredEvent[_, TData, _, _], args: js.Any*): js.Any
 }
 

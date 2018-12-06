@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "multer-s3"
-version := "2.7-dt-20180910Z-7ba013"
+version := "2.7-dt-20180910Z-655930"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "aws-sdk" % "2.367.0-0868c4",
+  "com.scalablytyped" %%% "aws-sdk" % "2.367.0-52891f",
   "com.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-6b0d80",
   "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-b92a74",
   "com.scalablytyped" %%% "events" % "1.2-dt-20180910Z-2ed531",

@@ -29,7 +29,7 @@ trait ServicePort extends js.Object {
                */
   val port: scala.Double
   /**
-               * The IP protocol for this port. Supports "TCP" and "UDP". Default is TCP.
+               * The IP protocol for this port. Supports "TCP", "UDP", and "SCTP". Default is TCP.
                */
   val protocol: java.lang.String
   /**

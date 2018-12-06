@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "convict"
-version := "4.2-dt-20180910Z-67630d"
+version := "4.2-dt-20181206Z-fdede8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -16,6 +16,7 @@ trait IScheme extends js.Object {
        * Customizer will not get the global styles applied to them.
        */
   var disableGlobalClassNames: scala.Boolean
+  var effects: atUifabricStylingLib.libInterfacesIEffectsMod.IEffects
   var fonts: atUifabricStylingLib.libInterfacesIFontStylesMod.IFontStyles
   var isInverted: scala.Boolean
   var palette: atUifabricStylingLib.libInterfacesIPaletteMod.IPalette

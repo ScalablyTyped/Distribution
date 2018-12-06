@@ -13,7 +13,7 @@ trait JQuery extends js.Object {
   def on_focusExit(
     event: jqueryDashFocusDashExitLib.jqueryDashFocusDashExitLibStrings.focusExit,
     handler: js.Function2[
-      /* event */ jqueryLib.JQueryNs.Event[stdLib.HTMLElement, scala.Null], 
+      /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.HTMLElement, _, _, _], 
       /* data */ jqueryDashFocusDashExitLib.jqueryDashFocusDashExitMod.FocusElements, 
       scala.Unit
     ]
@@ -21,7 +21,10 @@ trait JQuery extends js.Object {
   @JSName("one")
   def one_focusin(
     event: jqueryDashFocusDashExitLib.jqueryDashFocusDashExitLibStrings.focusin,
-    handler: js.Function1[/* event */ jqueryLib.JQueryNs.Event[stdLib.HTMLElement, scala.Null], scala.Unit]
+    handler: js.Function1[
+      /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.HTMLElement, _, _, _], 
+      scala.Unit
+    ]
   ): JQuery = js.native
 }
 

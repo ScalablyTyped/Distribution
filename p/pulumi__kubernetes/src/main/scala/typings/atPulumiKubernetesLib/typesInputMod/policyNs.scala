@@ -12,6 +12,38 @@ object policyNs extends js.Object {
   @js.native
   object v1beta1Ns extends js.Object {
     /**
+             * AllowedFlexVolume represents a single Flexvolume that is allowed to be used.
+             */
+    
+    trait AllowedFlexVolume extends js.Object {
+      /**
+                   * driver is the name of the Flexvolume driver.
+                   */
+      var driver: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
+             * AllowedHostPath defines the host volume conditions that will be enabled by a policy for pods
+             * to use. It requires the path prefix to be defined.
+             */
+    
+    trait AllowedHostPath extends js.Object {
+      /**
+                   * pathPrefix is the path prefix that the host volume must match. It does not support `*`.
+                   * Trailing slashes are trimmed when validating the path prefix with a host path.
+                   *
+                   * Examples: `/foo` would allow `/foo`, `/foo/` and `/foo/bar` `/foo` would not allow `/food`
+                   * or `/etc/foo`
+                   */
+      var pathPrefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * when set to true, will allow host volumes matching the pathPrefix only if all volume mounts
+                   * are readOnly.
+                   */
+      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+    }
+    
+    /**
              * Eviction evicts a pod from its node subject to certain policies and safety constraints. This
              * is a subresource of Pod.  A request to cause such an eviction is created by POSTing to
              * .../pods/<pod name>/evictions.
@@ -44,6 +76,53 @@ object policyNs extends js.Object {
       var metadata: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
+    }
+    
+    /**
+             * FSGroupStrategyOptions defines the strategy type and options used to create the strategy.
+             */
+    
+    trait FSGroupStrategyOptions extends js.Object {
+      /**
+                   * ranges are the allowed ranges of fs groups.  If you would like to force a single fs group
+                   * then supply a single range with the same start and end. Required for MustRunAs.
+                   */
+      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      /**
+                   * rule is the strategy that will dictate what FSGroup is used in the SecurityContext.
+                   */
+      var rule: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+    }
+    
+    /**
+             * HostPortRange defines a range of host ports that will be enabled by a policy for pods to use.
+             * It requires both the start and end to be defined.
+             */
+    
+    trait HostPortRange extends js.Object {
+      /**
+                   * max is the end of the range, inclusive.
+                   */
+      var max: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      /**
+                   * min is the start of the range, inclusive.
+                   */
+      var min: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+    }
+    
+    /**
+             * IDRange provides a min/max of an allowed range of IDs.
+             */
+    
+    trait IDRange extends js.Object {
+      /**
+                   * max is the end of the range, inclusive.
+                   */
+      var max: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      /**
+                   * min is the start of the range, inclusive.
+                   */
+      var min: atPulumiPulumiLib.resourceMod.Input[scala.Double]
     }
     
     /**
@@ -156,7 +235,7 @@ object policyNs extends js.Object {
                    * this map should be empty for the most of the time. Large number of entries in the map may
                    * indicate problems with pod deletions.
                    */
-      var disruptedPods: atPulumiPulumiLib.resourceMod.Input[js.Object]
+      var disruptedPods: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
       /**
                    * Number of pod disruptions that are currently allowed.
                    */
@@ -173,9 +252,273 @@ object policyNs extends js.Object {
       var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
     }
     
+    /**
+             * PodSecurityPolicy governs the ability to make requests that affect the Security Context that
+             * will be applied to a pod and container.
+             */
+    
+    trait PodSecurityPolicy extends js.Object {
+      /**
+                   * APIVersion defines the versioned schema of this representation of an object. Servers should
+                   * convert recognized schemas to the latest internal value, and may reject unrecognized
+                   * values. More info:
+                   * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+                   */
+      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * Kind is a string value representing the REST resource this object represents. Servers may
+                   * infer this from the endpoint the client submits requests to. Cannot be updated. In
+                   * CamelCase. More info:
+                   * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+                   */
+      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * Standard object's metadata. More info:
+                   * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+                   */
+      var metadata: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+          ] = js.undefined
+      /**
+                   * spec defines the policy enforced.
+                   */
+      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodSecurityPolicySpec]] = js.undefined
+    }
+    
+    /**
+             * PodSecurityPolicyList is a list of PodSecurityPolicy objects.
+             */
+    
+    trait PodSecurityPolicyList extends js.Object {
+      /**
+                   * APIVersion defines the versioned schema of this representation of an object. Servers should
+                   * convert recognized schemas to the latest internal value, and may reject unrecognized
+                   * values. More info:
+                   * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+                   */
+      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * items is a list of schema objects.
+                   */
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PodSecurityPolicy]]
+      /**
+                   * Kind is a string value representing the REST resource this object represents. Servers may
+                   * infer this from the endpoint the client submits requests to. Cannot be updated. In
+                   * CamelCase. More info:
+                   * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+                   */
+      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * Standard list metadata. More info:
+                   * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+                   */
+      var metadata: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+          ] = js.undefined
+    }
+    
+    /**
+             * PodSecurityPolicySpec defines the policy enforced.
+             */
+    
+    trait PodSecurityPolicySpec extends js.Object {
+      /**
+                   * allowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If
+                   * unspecified, defaults to true.
+                   */
+      var allowPrivilegeEscalation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * allowedCapabilities is a list of capabilities that can be requested to add to the
+                   * container. Capabilities in this field may be added at the pod author's discretion. You must
+                   * not list a capability in both allowedCapabilities and requiredDropCapabilities.
+                   */
+      var allowedCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
+                   * allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all
+                   * Flexvolumes may be used.  This parameter is effective only when the usage of the
+                   * Flexvolumes is allowed in the "volumes" field.
+                   */
+      var allowedFlexVolumes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[AllowedFlexVolume]]] = js.undefined
+      /**
+                   * allowedHostPaths is a white list of allowed host paths. Empty indicates that all host paths
+                   * may be used.
+                   */
+      var allowedHostPaths: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[AllowedHostPath]]] = js.undefined
+      /**
+                   * AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil indicates that
+                   * only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to
+                   * be enabled.
+                   */
+      var allowedProcMountTypes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
+                   * allowedUnsafeSysctls is a list of explicitly allowed unsafe sysctls, defaults to none. Each
+                   * entry is either a plain sysctl name or ends in "*" in which case it is considered as a
+                   * prefix of allowed sysctls. Single * means all unsafe sysctls are allowed. Kubelet has to
+                   * whitelist all allowed unsafe sysctls explicitly to avoid rejection.
+                   *
+                   * Examples: e.g. "foo/ *" allows "foo/bar", "foo/baz", etc. e.g. "foo.*" allows "foo.bar",
+                   * "foo.baz", etc.
+                   */
+      var allowedUnsafeSysctls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
+                   * defaultAddCapabilities is the default set of capabilities that will be added to the
+                   * container unless the pod spec specifically drops the capability.  You may not list a
+                   * capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added
+                   * here are implicitly allowed, and need not be included in the allowedCapabilities list.
+                   */
+      var defaultAddCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
+                   * defaultAllowPrivilegeEscalation controls the default setting for whether a process can gain
+                   * more privileges than its parent process.
+                   */
+      var defaultAllowPrivilegeEscalation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * forbiddenSysctls is a list of explicitly forbidden sysctls, defaults to none. Each entry is
+                   * either a plain sysctl name or ends in "*" in which case it is considered as a prefix of
+                   * forbidden sysctls. Single * means all sysctls are forbidden.
+                   *
+                   * Examples: e.g. "foo/ *" forbids "foo/bar", "foo/baz", etc. e.g. "foo.*" forbids "foo.bar",
+                   * "foo.baz", etc.
+                   */
+      var forbiddenSysctls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
+                   * fsGroup is the strategy that will dictate what fs group is used by the SecurityContext.
+                   */
+      var fsGroup: atPulumiPulumiLib.resourceMod.Input[FSGroupStrategyOptions]
+      /**
+                   * hostIPC determines if the policy allows the use of HostIPC in the pod spec.
+                   */
+      var hostIPC: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * hostNetwork determines if the policy allows the use of HostNetwork in the pod spec.
+                   */
+      var hostNetwork: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * hostPID determines if the policy allows the use of HostPID in the pod spec.
+                   */
+      var hostPID: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * hostPorts determines which host port ranges are allowed to be exposed.
+                   */
+      var hostPorts: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[HostPortRange]]] = js.undefined
+      /**
+                   * privileged determines if a pod can request to be run as privileged.
+                   */
+      var privileged: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * readOnlyRootFilesystem when set to true will force containers to run with a read only root
+                   * file system.  If the container specifically requests to run with a non-read only root file
+                   * system the PSP should deny the pod. If set to false the container may run with a read only
+                   * root file system if it wishes but it will not be forced to.
+                   */
+      var readOnlyRootFilesystem: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * requiredDropCapabilities are the capabilities that will be dropped from the container.
+                   * These are required to be dropped and cannot be added.
+                   */
+      var requiredDropCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
+                   * RunAsGroup is the strategy that will dictate the allowable RunAsGroup values that may be
+                   * set. If this field is omitted, the pod's RunAsGroup can take any value. This field requires
+                   * the RunAsGroup feature gate to be enabled.
+                   */
+      var runAsGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RunAsGroupStrategyOptions]] = js.undefined
+      /**
+                   * runAsUser is the strategy that will dictate the allowable RunAsUser values that may be set.
+                   */
+      var runAsUser: atPulumiPulumiLib.resourceMod.Input[RunAsUserStrategyOptions]
+      /**
+                   * seLinux is the strategy that will dictate the allowable labels that may be set.
+                   */
+      var seLinux: atPulumiPulumiLib.resourceMod.Input[SELinuxStrategyOptions]
+      /**
+                   * supplementalGroups is the strategy that will dictate what supplemental groups are used by
+                   * the SecurityContext.
+                   */
+      var supplementalGroups: atPulumiPulumiLib.resourceMod.Input[SupplementalGroupsStrategyOptions]
+      /**
+                   * volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be
+                   * used. To allow all volumes you may use '*'.
+                   */
+      var volumes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+    }
+    
+    /**
+             * RunAsGroupStrategyOptions defines the strategy type and any options used to create the
+             * strategy.
+             */
+    
+    trait RunAsGroupStrategyOptions extends js.Object {
+      /**
+                   * ranges are the allowed ranges of gids that may be used. If you would like to force a single
+                   * gid then supply a single range with the same start and end. Required for MustRunAs.
+                   */
+      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      /**
+                   * rule is the strategy that will dictate the allowable RunAsGroup values that may be set.
+                   */
+      var rule: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
+             * RunAsUserStrategyOptions defines the strategy type and any options used to create the
+             * strategy.
+             */
+    
+    trait RunAsUserStrategyOptions extends js.Object {
+      /**
+                   * ranges are the allowed ranges of uids that may be used. If you would like to force a single
+                   * uid then supply a single range with the same start and end. Required for MustRunAs.
+                   */
+      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      /**
+                   * rule is the strategy that will dictate the allowable RunAsUser values that may be set.
+                   */
+      var rule: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
+             * SELinuxStrategyOptions defines the strategy type and any options used to create the strategy.
+             */
+    
+    trait SELinuxStrategyOptions extends js.Object {
+      /**
+                   * rule is the strategy that will dictate the allowable labels that may be set.
+                   */
+      var rule: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * seLinuxOptions required to run as; required for MustRunAs More info:
+                   * https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
+                   */
+      var seLinuxOptions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.SELinuxOptions]
+          ] = js.undefined
+    }
+    
+    /**
+             * SupplementalGroupsStrategyOptions defines the strategy type and options used to create the
+             * strategy.
+             */
+    
+    trait SupplementalGroupsStrategyOptions extends js.Object {
+      /**
+                   * ranges are the allowed ranges of supplemental groups.  If you would like to force a single
+                   * supplemental group then supply a single range with the same start and end. Required for
+                   * MustRunAs.
+                   */
+      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      /**
+                   * rule is the strategy that will dictate what supplemental groups is used in the
+                   * SecurityContext.
+                   */
+      var rule: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+    }
+    
     def isEviction(o: js.Any): /* is Eviction */scala.Boolean = js.native
     def isPodDisruptionBudget(o: js.Any): /* is PodDisruptionBudget */scala.Boolean = js.native
     def isPodDisruptionBudgetList(o: js.Any): /* is PodDisruptionBudgetList */scala.Boolean = js.native
+    def isPodSecurityPolicy(o: js.Any): /* is PodSecurityPolicy */scala.Boolean = js.native
+    def isPodSecurityPolicyList(o: js.Any): /* is PodSecurityPolicyList */scala.Boolean = js.native
   }
   
 }

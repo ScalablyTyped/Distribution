@@ -21,7 +21,7 @@ class FileCache protected () extends js.Object {
   var typescript: js.Any = js.native
   var version: scala.Double = js.native
   def addContent(fileName: java.lang.String, content: java.lang.String): File = js.native
-  def addGulp(gFile: vinylLib.vinylMod.File): File = js.native
+  def addGulp(gFile: gulpDashTypescriptLib.releaseTypesMod.VinylFile): File = js.native
   def getFile(name: java.lang.String): File = js.native
   def getFileChange(name: java.lang.String): FileChange = js.native
   def getFileNames(): js.Array[java.lang.String] = js.native

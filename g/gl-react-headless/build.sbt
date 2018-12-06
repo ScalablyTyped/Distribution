@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "gl-react-headless"
-version := "3.15-dt-20181121Z-b9dcef"
+version := "3.15-dt-20181206Z-62af90"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "com.scalablytyped" %%% "csstype" % "2.5.7-d075d3",
-  "com.scalablytyped" %%% "gl-react" % "3.15-dt-20181121Z-3760fa",
+  "com.scalablytyped" %%% "gl-react" % "3.15-dt-20181206Z-4fd824",
   "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-c5aad4",
   "com.scalablytyped" %%% "react" % "16.7-dt-20181203Z-843f9f",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",

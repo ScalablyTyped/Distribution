@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait IModalProps
-  extends reactLib.reactMod.ReactNs.Props[officeDashUiDashFabricDashReactLib.libComponentsModalModalDotBaseMod.ModalBase]
+  extends reactLib.reactMod.ReactNs.ClassAttributes[officeDashUiDashFabricDashReactLib.libComponentsModalModalDotBaseMod.ModalBase]
      with officeDashUiDashFabricDashReactLib.libUtilitiesDecoratorsWithResponsiveModeMod.IWithResponsiveModeState
      with officeDashUiDashFabricDashReactLib.libCommonIAccessiblePopupPropsMod.IAccessiblePopupProps {
   /**

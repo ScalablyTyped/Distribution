@@ -17,6 +17,12 @@ trait PodsMetricSource extends js.Object {
                */
   val metricName: java.lang.String
   /**
+               * selector is the string-encoded form of a standard kubernetes label selector for the given
+               * metric When set, it is passed as an additional parameter to the metrics server for more
+               * specific metrics scoping When unset, just the metricName will be used to gather metrics.
+               */
+  val selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
+  /**
                * targetAverageValue is the target value of the average of the metric across all relevant
                * pods (as a quantity)
                */

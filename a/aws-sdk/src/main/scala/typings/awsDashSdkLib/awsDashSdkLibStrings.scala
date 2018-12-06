@@ -1252,6 +1252,9 @@ object awsDashSdkLibStrings {
   sealed trait AU_ID_TYPE extends js.Object
   
   @js.native
+  sealed trait AVAILABILITY extends js.Object
+  
+  @js.native
   sealed trait AVAILABLE extends js.Object
   
   @js.native
@@ -4555,6 +4558,9 @@ object awsDashSdkLibStrings {
   sealed trait GREATER_THAN_OR_EQUAL extends js.Object
   
   @js.native
+  sealed trait GREATER_THAN_OR_EQUALS extends js.Object
+  
+  @js.native
   sealed trait GREEN extends js.Object
   
   @js.native
@@ -4793,6 +4799,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait HIGHER extends js.Object
+  
+  @js.native
+  sealed trait HIGHLY_AVAILABLE extends js.Object
   
   @js.native
   sealed trait HIGH_10BIT extends js.Object
@@ -5828,6 +5837,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait LESS_THAN_OR_EQUAL extends js.Object
+  
+  @js.native
+  sealed trait LESS_THAN_OR_EQUALS extends js.Object
   
   @js.native
   sealed trait LEVEL_1 extends js.Object
@@ -7138,6 +7150,9 @@ object awsDashSdkLibStrings {
   sealed trait OSX extends js.Object
   
   @js.native
+  sealed trait OS_VERSION extends js.Object
+  
+  @js.native
   sealed trait OTHER extends js.Object
   
   @js.native
@@ -7682,6 +7697,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ParentExecutionId extends js.Object
+  
+  @js.native
+  sealed trait Parquet extends js.Object
   
   @js.native
   sealed trait `Partial Upfront` extends js.Object
@@ -9848,6 +9866,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait TEMPORARY_FAILURE extends js.Object
+  
+  @js.native
+  sealed trait TEMPORARY_NOT_AVAILABLE extends js.Object
   
   @js.native
   sealed trait TENANCY extends js.Object
@@ -14683,6 +14704,7 @@ object awsDashSdkLibStrings {
   def AUX: AUX = "AUX".asInstanceOf[AUX]
   def AU_ID_NUMBER: AU_ID_NUMBER = "AU_ID_NUMBER".asInstanceOf[AU_ID_NUMBER]
   def AU_ID_TYPE: AU_ID_TYPE = "AU_ID_TYPE".asInstanceOf[AU_ID_TYPE]
+  def AVAILABILITY: AVAILABILITY = "AVAILABILITY".asInstanceOf[AVAILABILITY]
   def AVAILABLE: AVAILABLE = "AVAILABLE".asInstanceOf[AVAILABLE]
   def AVAILABLE_PREORDER: AVAILABLE_PREORDER = "AVAILABLE_PREORDER".asInstanceOf[AVAILABLE_PREORDER]
   def AVAILABLE_RESERVED: AVAILABLE_RESERVED = "AVAILABLE_RESERVED".asInstanceOf[AVAILABLE_RESERVED]
@@ -15784,6 +15806,7 @@ object awsDashSdkLibStrings {
   def GRAPHML: GRAPHML = "GRAPHML".asInstanceOf[GRAPHML]
   def GREATER_THAN: GREATER_THAN = "GREATER_THAN".asInstanceOf[GREATER_THAN]
   def GREATER_THAN_OR_EQUAL: GREATER_THAN_OR_EQUAL = "GREATER_THAN_OR_EQUAL".asInstanceOf[GREATER_THAN_OR_EQUAL]
+  def GREATER_THAN_OR_EQUALS: GREATER_THAN_OR_EQUALS = "GREATER_THAN_OR_EQUALS".asInstanceOf[GREATER_THAN_OR_EQUALS]
   def GREEN: GREEN = "GREEN".asInstanceOf[GREEN]
   def GROUP: GROUP = "GROUP".asInstanceOf[GROUP]
   def GT: GT = "GT".asInstanceOf[GT]
@@ -15864,6 +15887,7 @@ object awsDashSdkLibStrings {
   def HIGH: HIGH = "HIGH".asInstanceOf[HIGH]
   def HIGH1440: HIGH1440 = "HIGH1440".asInstanceOf[HIGH1440]
   def HIGHER: HIGHER = "HIGHER".asInstanceOf[HIGHER]
+  def HIGHLY_AVAILABLE: HIGHLY_AVAILABLE = "HIGHLY_AVAILABLE".asInstanceOf[HIGHLY_AVAILABLE]
   def HIGH_10BIT: HIGH_10BIT = "HIGH_10BIT".asInstanceOf[HIGH_10BIT]
   def HIGH_422: HIGH_422 = "HIGH_422".asInstanceOf[HIGH_422]
   def HIGH_422_10BIT: HIGH_422_10BIT = "HIGH_422_10BIT".asInstanceOf[HIGH_422_10BIT]
@@ -16209,6 +16233,7 @@ object awsDashSdkLibStrings {
   def LEGAL_ENTITY_NAME: LEGAL_ENTITY_NAME = "LEGAL_ENTITY_NAME".asInstanceOf[LEGAL_ENTITY_NAME]
   def LESS_THAN: LESS_THAN = "LESS_THAN".asInstanceOf[LESS_THAN]
   def LESS_THAN_OR_EQUAL: LESS_THAN_OR_EQUAL = "LESS_THAN_OR_EQUAL".asInstanceOf[LESS_THAN_OR_EQUAL]
+  def LESS_THAN_OR_EQUALS: LESS_THAN_OR_EQUALS = "LESS_THAN_OR_EQUALS".asInstanceOf[LESS_THAN_OR_EQUALS]
   def LEVEL_1: LEVEL_1 = "LEVEL_1".asInstanceOf[LEVEL_1]
   def LEVEL_1_1: LEVEL_1_1 = "LEVEL_1_1".asInstanceOf[LEVEL_1_1]
   def LEVEL_1_2: LEVEL_1_2 = "LEVEL_1_2".asInstanceOf[LEVEL_1_2]
@@ -16645,6 +16670,7 @@ object awsDashSdkLibStrings {
   def ORIGINAL: ORIGINAL = "ORIGINAL".asInstanceOf[ORIGINAL]
   def ORIGINAL_VALUE: ORIGINAL_VALUE = "ORIGINAL_VALUE".asInstanceOf[ORIGINAL_VALUE]
   def OSX: OSX = "OSX".asInstanceOf[OSX]
+  def OS_VERSION: OS_VERSION = "OS_VERSION".asInstanceOf[OS_VERSION]
   def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
   def `OTHER-ACCOUNTS`: `OTHER-ACCOUNTS` = "OTHER-ACCOUNTS".asInstanceOf[`OTHER-ACCOUNTS`]
   def OTX_CSV: OTX_CSV = "OTX_CSV".asInstanceOf[OTX_CSV]
@@ -16827,6 +16853,7 @@ object awsDashSdkLibStrings {
   def ParameterReference: ParameterReference = "ParameterReference".asInstanceOf[ParameterReference]
   def Parameters: Parameters = "Parameters".asInstanceOf[Parameters]
   def ParentExecutionId: ParentExecutionId = "ParentExecutionId".asInstanceOf[ParentExecutionId]
+  def Parquet: Parquet = "Parquet".asInstanceOf[Parquet]
   def `Partial Upfront`: `Partial Upfront` = "Partial Upfront".asInstanceOf[`Partial Upfront`]
   def PartialData: PartialData = "PartialData".asInstanceOf[PartialData]
   def PartialUpfront: PartialUpfront = "PartialUpfront".asInstanceOf[PartialUpfront]
@@ -17549,6 +17576,7 @@ object awsDashSdkLibStrings {
   def TELETEXT: TELETEXT = "TELETEXT".asInstanceOf[TELETEXT]
   def TEMPORAL: TEMPORAL = "TEMPORAL".asInstanceOf[TEMPORAL]
   def TEMPORARY_FAILURE: TEMPORARY_FAILURE = "TEMPORARY_FAILURE".asInstanceOf[TEMPORARY_FAILURE]
+  def TEMPORARY_NOT_AVAILABLE: TEMPORARY_NOT_AVAILABLE = "TEMPORARY_NOT_AVAILABLE".asInstanceOf[TEMPORARY_NOT_AVAILABLE]
   def TENANCY: TENANCY = "TENANCY".asInstanceOf[TENANCY]
   def TENSORFLOW: TENSORFLOW = "TENSORFLOW".asInstanceOf[TENSORFLOW]
   def TERA_BITS: TERA_BITS = "TERA_BITS".asInstanceOf[TERA_BITS]

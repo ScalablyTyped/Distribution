@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("polished/lib/shorthands/transitions", JSImport.Namespace)
 @js.native
 object libShorthandsTransitionsMod extends js.Object {
-  def default(properties: java.lang.String*): js.Object = js.native
+  def default(properties: (java.lang.String | js.Array[java.lang.String])*): polishedLib.libTypesStyleMod.Styles = js.native
 }
 

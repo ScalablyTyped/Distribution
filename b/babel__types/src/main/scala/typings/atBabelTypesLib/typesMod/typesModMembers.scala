@@ -156,7 +156,7 @@ object typesModMembers extends js.Object {
   def catchClause(param: scala.Null, body: BlockStatement): CatchClause = js.native
   def classBody(
     body: js.Array[
-      ClassMethod | ClassProperty | ClassPrivateProperty | TSDeclareMethod | TSIndexSignature
+      ClassMethod | ClassPrivateMethod | ClassProperty | ClassPrivateProperty | TSDeclareMethod | TSIndexSignature
     ]
   ): ClassBody = js.native
   def classDeclaration(
@@ -241,6 +241,29 @@ object typesModMembers extends js.Object {
     returnType: js.UndefOr[TypeAnnotation | TSTypeAnnotation | Noop | scala.Null],
     typeParameters: js.UndefOr[TypeParameterDeclaration | TSTypeParameterDeclaration | Noop | scala.Null]
   ): ClassMethod = js.native
+  def classPrivateMethod(
+    kind: js.UndefOr[
+      atBabelTypesLib.atBabelTypesLibStrings.get | atBabelTypesLib.atBabelTypesLibStrings.set | atBabelTypesLib.atBabelTypesLibStrings.method | atBabelTypesLib.atBabelTypesLibStrings.constructor
+    ],
+    key: PrivateName,
+    params: js.Array[LVal],
+    body: BlockStatement,
+    _static: js.UndefOr[scala.Boolean | scala.Null],
+    `abstract`: js.UndefOr[scala.Boolean | scala.Null],
+    access: js.UndefOr[
+      atBabelTypesLib.atBabelTypesLibStrings.public | atBabelTypesLib.atBabelTypesLibStrings.`private` | atBabelTypesLib.atBabelTypesLibStrings.`protected` | scala.Null
+    ],
+    accessibility: js.UndefOr[
+      atBabelTypesLib.atBabelTypesLibStrings.public | atBabelTypesLib.atBabelTypesLibStrings.`private` | atBabelTypesLib.atBabelTypesLibStrings.`protected` | scala.Null
+    ],
+    async: js.UndefOr[scala.Boolean],
+    computed: js.UndefOr[scala.Boolean],
+    decorators: js.UndefOr[js.Array[Decorator] | scala.Null],
+    generator: js.UndefOr[scala.Boolean],
+    optional: js.UndefOr[scala.Boolean | scala.Null],
+    returnType: js.UndefOr[js.Any | scala.Null],
+    typeParameters: js.UndefOr[js.Any | scala.Null]
+  ): ClassPrivateMethod = js.native
   def classPrivateProperty(key: PrivateName): ClassPrivateProperty = js.native
   def classPrivateProperty(key: PrivateName, value: Expression): ClassPrivateProperty = js.native
   def classProperty(
@@ -724,6 +747,8 @@ object typesModMembers extends js.Object {
   def isClassImplements(node: js.Object, opts: js.Object): /* is ClassImplements */scala.Boolean = js.native
   def isClassMethod(node: js.Object): /* is ClassMethod */scala.Boolean = js.native
   def isClassMethod(node: js.Object, opts: js.Object): /* is ClassMethod */scala.Boolean = js.native
+  def isClassPrivateMethod(node: js.Object): /* is ClassPrivateMethod */scala.Boolean = js.native
+  def isClassPrivateMethod(node: js.Object, opts: js.Object): /* is ClassPrivateMethod */scala.Boolean = js.native
   def isClassPrivateProperty(node: js.Object): /* is ClassPrivateProperty */scala.Boolean = js.native
   def isClassPrivateProperty(node: js.Object, opts: js.Object): /* is ClassPrivateProperty */scala.Boolean = js.native
   def isClassProperty(node: js.Object): /* is ClassProperty */scala.Boolean = js.native

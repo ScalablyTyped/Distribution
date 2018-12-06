@@ -299,6 +299,12 @@ object metaNs extends js.Object {
                    */
       val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
       /**
+                   * When present, indicates that modifications should not be persisted. An invalid or
+                   * unrecognized dryRun directive will result in an error response and no further processing of
+                   * the request. Valid values are: - All: all dry run stages will be processed
+                   */
+      val dryRun: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+      /**
                    * The duration in seconds before the object should be deleted. Value must be non-negative
                    * integer. The value zero indicates delete immediately. If this value is nil, the default
                    * grace period for the specified type will be used. Defaults to a per object value if not
@@ -337,8 +343,9 @@ object metaNs extends js.Object {
     }
     
     /**
-             * OwnerReference contains enough information to let you identify an owning object. Currently,
-             * an owning object must be in the same namespace, so there is no namespace field.
+             * OwnerReference contains enough information to let you identify an owning object. An owning
+             * object must be in the same namespace as the dependent, or be cluster-scoped, so there is no
+             * namespace field.
              */
     @js.native
     class OwnerReference protected ()
@@ -575,8 +582,9 @@ object metaNs extends js.Object {
     }
     
     /**
-             * OwnerReference contains enough information to let you identify an owning object. Currently,
-             * an owning object must be in the same namespace, so there is no namespace field.
+             * OwnerReference contains enough information to let you identify an owning object. An owning
+             * object must be in the same namespace as the dependent, or be cluster-scoped, so there is no
+             * namespace field.
              */
     @js.native
     object OwnerReference extends js.Object {

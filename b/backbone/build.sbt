@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "backbone"
-version := "1.3.3-dt-20181121Z-4472e4"
+version := "1.3.3-dt-20181206Z-d3d5c5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-d287eb",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181206Z-02d7ed",
   "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-9c5dc2",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "com.scalablytyped" %%% "underscore" % "1.8-dt-20180910Z-87c49b",

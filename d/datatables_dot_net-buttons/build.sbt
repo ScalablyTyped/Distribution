@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "datatables_dot_net-buttons"
-version := "1.4-dt-20180910Z-bfce02"
+version := "1.4-dt-20180910Z-dccdef"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "datatables_dot_net" % "1.10-dt-20180910Z-ee6601",
-  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181027Z-d287eb",
+  "com.scalablytyped" %%% "datatables_dot_net" % "1.10-dt-20181206Z-7f1819",
+  "com.scalablytyped" %%% "jquery" % "3.3-dt-20181206Z-02d7ed",
   "com.scalablytyped" %%% "sizzle" % "2.3-dt-20181008Z-9c5dc2",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

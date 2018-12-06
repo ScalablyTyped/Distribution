@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait SelectProps[T] extends AbstractSelectProps {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
+  var clearIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var defaultValue: js.UndefOr[T] = js.undefined
   var firstActiveValue: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var getInputElement: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
@@ -16,6 +17,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   var maxTagPlaceholder: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* omittedValues */ js.Array[T], reactLib.reactMod.ReactNs.ReactNode])
   ] = js.undefined
+  var menuItemSelectedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var mode: js.UndefOr[
     antdLib.antdLibStrings.default | antdLib.antdLibStrings.multiple | antdLib.antdLibStrings.tags | antdLib.antdLibStrings.combobox | java.lang.String
   ] = js.undefined
@@ -47,6 +49,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   ] = js.undefined
   var optionFilterProp: js.UndefOr[java.lang.String] = js.undefined
   var optionLabelProp: js.UndefOr[java.lang.String] = js.undefined
+  var removeIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var suffixIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var tokenSeparators: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var value: js.UndefOr[T] = js.undefined

@@ -174,8 +174,9 @@ object metaNs extends js.Object {
     }
     
     /**
-             * OwnerReference contains enough information to let you identify an owning object. Currently,
-             * an owning object must be in the same namespace, so there is no namespace field.
+             * OwnerReference contains enough information to let you identify an owning object. An owning
+             * object must be in the same namespace as the dependent, or be cluster-scoped, so there is no
+             * namespace field.
              */
     @js.native
     class OwnerReference protected ()
@@ -336,8 +337,9 @@ object metaNs extends js.Object {
     }
     
     /**
-             * OwnerReference contains enough information to let you identify an owning object. Currently,
-             * an owning object must be in the same namespace, so there is no namespace field.
+             * OwnerReference contains enough information to let you identify an owning object. An owning
+             * object must be in the same namespace as the dependent, or be cluster-scoped, so there is no
+             * namespace field.
              */
     @js.native
     object OwnerReference extends js.Object {

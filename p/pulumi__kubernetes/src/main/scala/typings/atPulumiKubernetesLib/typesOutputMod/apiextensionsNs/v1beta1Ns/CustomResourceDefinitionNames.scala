@@ -11,6 +11,10 @@ import scala.scalajs.js.annotation._
 
 trait CustomResourceDefinitionNames extends js.Object {
   /**
+               * Categories is a list of grouped resources custom resources belong to (e.g. 'all')
+               */
+  val categories: js.Array[java.lang.String]
+  /**
                * Kind is the serialized kind of the resource.  It is normally CamelCase and singular.
                */
   val kind: java.lang.String

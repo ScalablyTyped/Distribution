@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("polished/lib/shorthands/borderWidth", JSImport.Namespace)
 @js.native
 object libShorthandsBorderWidthMod extends js.Object {
-  def default(values: (scala.Null | scala.Unit | java.lang.String | scala.Double)*): js.Object = js.native
+  def default(values: (scala.Null | scala.Unit | java.lang.String | scala.Double)*): polishedLib.libTypesStyleMod.Styles = js.native
 }
 

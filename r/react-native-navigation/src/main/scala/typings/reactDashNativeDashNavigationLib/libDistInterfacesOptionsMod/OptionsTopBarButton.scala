@@ -14,7 +14,7 @@ trait OptionsTopBarButton extends js.Object {
   /**
        * Set the button as a custom component
        */
-  var component: js.UndefOr[reactDashNativeDashNavigationLib.Anon_NameString] = js.undefined
+  var component: js.UndefOr[reactDashNativeDashNavigationLib.Anon_NamePassProps] = js.undefined
   /**
        * Disable icon tinting
        */

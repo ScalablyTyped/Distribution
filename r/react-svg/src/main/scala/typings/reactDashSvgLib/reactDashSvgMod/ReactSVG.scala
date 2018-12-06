@@ -15,6 +15,7 @@ trait ReactSVG
       State, 
       js.Any
     ] {
+  var _isMounted: scala.Boolean = js.native
   var container: js.UndefOr[reactLib.HTMLSpanElement | reactLib.HTMLDivElement | scala.Null] = js.native
   var initialState: reactDashSvgLib.Anon_IsLoading = js.native
   var refCallback: reactLib.reactMod.ReactNs.Ref[reactLib.HTMLSpanElement | reactLib.HTMLDivElement] = js.native

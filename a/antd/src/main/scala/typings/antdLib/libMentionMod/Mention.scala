@@ -9,8 +9,6 @@ import scala.scalajs.js.annotation._
 trait Mention
   extends reactLib.reactMod.Component[MentionProps, MentionState, js.Any] {
   var mentionEle: js.Any = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MMention(nextProps: MentionProps): scala.Unit = js.native
   def defaultSearchChange(value: java.lang.String): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def mentionRef(ele: js.Any): scala.Unit = js.native

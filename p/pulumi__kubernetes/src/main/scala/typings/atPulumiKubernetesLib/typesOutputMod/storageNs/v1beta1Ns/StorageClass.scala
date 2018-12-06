@@ -19,6 +19,13 @@ trait StorageClass extends js.Object {
                */
   val allowVolumeExpansion: scala.Boolean
   /**
+               * Restrict the node topologies where volumes can be dynamically provisioned. Each volume
+               * plugin defines its own supported topology specifications. An empty TopologySelectorTerm
+               * list means there is no topology restriction. This field is only honored by servers that
+               * enable the VolumeScheduling feature.
+               */
+  val allowedTopologies: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.TopologySelectorTerm]
+  /**
                * APIVersion defines the versioned schema of this representation of an object. Servers should
                * convert recognized schemas to the latest internal value, and may reject unrecognized
                * values. More info:
@@ -59,8 +66,8 @@ trait StorageClass extends js.Object {
   val reclaimPolicy: java.lang.String
   /**
                * VolumeBindingMode indicates how PersistentVolumeClaims should be provisioned and bound.
-               * When unset, VolumeBindingImmediate is used. This field is alpha-level and is only honored
-               * by servers that enable the VolumeScheduling feature.
+               * When unset, VolumeBindingImmediate is used. This field is only honored by servers that
+               * enable the VolumeScheduling feature.
                */
   val volumeBindingMode: java.lang.String
 }

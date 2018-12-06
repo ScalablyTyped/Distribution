@@ -14,22 +14,22 @@ trait JSONSchemaProps extends js.Object {
   val $ref: java.lang.String
   @JSName("$schema")
   val $schema: java.lang.String
-  val additionalItems: JSONSchemaPropsOrBool
-  val additionalProperties: JSONSchemaPropsOrBool
+  val additionalItems: JSONSchemaProps | scala.Boolean
+  val additionalProperties: JSONSchemaProps | scala.Boolean
   val allOf: js.Array[JSONSchemaProps]
   val anyOf: js.Array[JSONSchemaProps]
-  val default: JSON
+  val default: js.Any
   val definitions: js.Object
   val dependencies: js.Object
   val description: java.lang.String
-  val enum: js.Array[JSON]
-  val example: JSON
+  val enum: js.Array[_]
+  val example: js.Any
   val exclusiveMaximum: scala.Boolean
   val exclusiveMinimum: scala.Boolean
   val externalDocs: ExternalDocumentation
   val format: java.lang.String
   val id: java.lang.String
-  val items: JSONSchemaPropsOrArray
+  val items: JSONSchemaProps | js.Array[_]
   val maxItems: scala.Double
   val maxLength: scala.Double
   val maxProperties: scala.Double

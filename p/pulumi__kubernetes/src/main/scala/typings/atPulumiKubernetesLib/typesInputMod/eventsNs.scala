@@ -136,7 +136,7 @@ object eventsNs extends js.Object {
     
     /**
              * EventSeries contain information on series of events, i.e. thing that was/is happening
-             * continously for some time.
+             * continuously for some time.
              */
     
     trait EventSeries extends js.Object {

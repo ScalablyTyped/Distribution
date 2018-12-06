@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait BadgeProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Number to show in badge */
-  var count: js.UndefOr[scala.Double | java.lang.String | scala.Null] = js.undefined
+  var count: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /** whether to show red dot without number */
   var dot: js.UndefOr[scala.Boolean] = js.undefined
   var offset: js.UndefOr[js.Tuple2[scala.Double | java.lang.String, scala.Double | java.lang.String]] = js.undefined

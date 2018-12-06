@@ -60,7 +60,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def downto[T](num: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def downto[T](
     num: scala.Double,
-    fn: js.Function3[
+    everyFn: js.Function3[
       /* el */ T, 
       /* i */ scala.Double, 
       /* r */ sugarLib.sugarjsNs.Range, 
@@ -71,7 +71,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def downto[T](
     num: scala.Double,
     step: scala.Double,
-    fn: js.Function3[
+    everyFn: js.Function3[
       /* el */ T, 
       /* i */ scala.Double, 
       /* r */ sugarLib.sugarjsNs.Range, 
@@ -257,7 +257,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def sin(): sugarLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native
   def sqrt(): sugarLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native
   def tan(): sugarLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native
-  def times[T](fn: js.Function1[/* i */ scala.Double, sugarLib.sugarjsNs.SugarDefaultChainable[_]]): sugarLib.sugarjsNs.SugarDefaultChainable[T] = js.native
+  def times[T](indexMapFn: js.Function1[/* i */ scala.Double, sugarLib.sugarjsNs.SugarDefaultChainable[_]]): sugarLib.sugarjsNs.SugarDefaultChainable[T] = js.native
   def toExponential(): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def toExponential(fractionDigits: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def toFixed(): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
@@ -272,7 +272,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def upto[T](num: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def upto[T](
     num: scala.Double,
-    fn: js.Function3[
+    everyFn: js.Function3[
       /* el */ T, 
       /* i */ scala.Double, 
       /* r */ sugarLib.sugarjsNs.Range, 
@@ -283,7 +283,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def upto[T](
     num: scala.Double,
     step: scala.Double,
-    fn: js.Function3[
+    everyFn: js.Function3[
       /* el */ T, 
       /* i */ scala.Double, 
       /* r */ sugarLib.sugarjsNs.Range, 

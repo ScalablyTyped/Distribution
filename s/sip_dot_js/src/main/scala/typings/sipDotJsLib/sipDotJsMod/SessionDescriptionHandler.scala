@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SessionDescriptionHandler extends js.Object {
+  var peerConnection: js.Any = js.native
   def close(): scala.Unit = js.native
   def getDescription(options: SessionDescriptionHandlerParameters, modifiers: js.Array[DescriptionModifier]): stdLib.Promise[_] = js.native
   def hasDescription(contentType: java.lang.String): scala.Boolean = js.native

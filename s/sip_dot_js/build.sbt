@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "sip_dot_js"
-version := "0.8-dt-20180910Z-5038fe"
+version := "0.9-dt-20181206Z-828147"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

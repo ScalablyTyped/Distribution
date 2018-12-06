@@ -51,6 +51,9 @@ object settingsNs extends js.Object {
     var databaseUrl: java.lang.String = js.native
     var databaseUseIntegratedSecurity: scala.Boolean = js.native
     var databaseUserName: java.lang.String = js.native
+    /**
+             * In version 7.21.0: deleted
+             */
     var emulateCloudSecurity: scala.Boolean = js.native
     var extraJvmParameters: java.lang.String = js.native
     var maxJavaHeapSize: scala.Double = js.native

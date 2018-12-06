@@ -2033,12 +2033,37 @@ trait BigIntegerStatic extends js.Object {
   def apply(number: scala.Double): BigInteger = js.native
   /**
            * Parse a string into a bigInt.
+           * Default base is 10.
+           * Default alphabet is "0123456789abcdefghijklmnopqrstuvwxyz".
+           * caseSensitive defaults to false.
            */
   def apply(string: java.lang.String): BigInteger = js.native
   /**
            * Parse a string into a bigInt.
+           * Default base is 10.
+           * Default alphabet is "0123456789abcdefghijklmnopqrstuvwxyz".
+           * caseSensitive defaults to false.
            */
   def apply(string: java.lang.String, base: BigNumber): BigInteger = js.native
+  /**
+           * Parse a string into a bigInt.
+           * Default base is 10.
+           * Default alphabet is "0123456789abcdefghijklmnopqrstuvwxyz".
+           * caseSensitive defaults to false.
+           */
+  def apply(string: java.lang.String, base: BigNumber, alphabet: java.lang.String): BigInteger = js.native
+  /**
+           * Parse a string into a bigInt.
+           * Default base is 10.
+           * Default alphabet is "0123456789abcdefghijklmnopqrstuvwxyz".
+           * caseSensitive defaults to false.
+           */
+  def apply(
+    string: java.lang.String,
+    base: BigNumber,
+    alphabet: java.lang.String,
+    caseSensitive: scala.Boolean
+  ): BigInteger = js.native
   /**
            * Constructs a bigInt from an array of digits in specified base.
            * The optional isNegative flag will make the number negative.
@@ -2061,7 +2086,7 @@ trait BigIntegerStatic extends js.Object {
   /**
            * Returns true if x is a BigInteger, false otherwise.
            */
-  def isInstance(x: js.Any): scala.Boolean = js.native
+  def isInstance(x: js.Any): /* is BigInteger */scala.Boolean = js.native
   /**
            * Finds the least common multiple of a and b.
            */

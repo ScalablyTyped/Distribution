@@ -505,6 +505,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait expanded extends js.Object
   
   @js.native
+  sealed trait extended extends js.Object
+  
+  @js.native
   sealed trait extendedFab extends js.Object
   
   @js.native
@@ -946,10 +949,16 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait paperScrollPaper extends js.Object
   
   @js.native
+  sealed trait paperWidthLg extends js.Object
+  
+  @js.native
   sealed trait paperWidthMd extends js.Object
   
   @js.native
   sealed trait paperWidthSm extends js.Object
+  
+  @js.native
+  sealed trait paperWidthXl extends js.Object
   
   @js.native
   sealed trait paperWidthXs extends js.Object
@@ -1045,6 +1054,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait rootSubtitle extends js.Object
   
   @js.native
+  sealed trait round extends js.Object
+  
+  @js.native
   sealed trait rounded extends js.Object
   
   @js.native
@@ -1100,6 +1112,9 @@ object atMaterialDashUiCoreLibStrings {
   
   @js.native
   sealed trait sizeLarge extends js.Object
+  
+  @js.native
+  sealed trait sizeMedium extends js.Object
   
   @js.native
   sealed trait sizeSmall extends js.Object
@@ -1462,6 +1477,7 @@ object atMaterialDashUiCoreLibStrings {
   def error: error = "error".asInstanceOf[error]
   def expandIcon: expandIcon = "expandIcon".asInstanceOf[expandIcon]
   def expanded: expanded = "expanded".asInstanceOf[expanded]
+  def extended: extended = "extended".asInstanceOf[extended]
   def extendedFab: extendedFab = "extendedFab".asInstanceOf[extendedFab]
   def fab: fab = "fab".asInstanceOf[fab]
   def filled: filled = "filled".asInstanceOf[filled]
@@ -1609,8 +1625,10 @@ object atMaterialDashUiCoreLibStrings {
   def paperFullWidth: paperFullWidth = "paperFullWidth".asInstanceOf[paperFullWidth]
   def paperScrollBody: paperScrollBody = "paperScrollBody".asInstanceOf[paperScrollBody]
   def paperScrollPaper: paperScrollPaper = "paperScrollPaper".asInstanceOf[paperScrollPaper]
+  def paperWidthLg: paperWidthLg = "paperWidthLg".asInstanceOf[paperWidthLg]
   def paperWidthMd: paperWidthMd = "paperWidthMd".asInstanceOf[paperWidthMd]
   def paperWidthSm: paperWidthSm = "paperWidthSm".asInstanceOf[paperWidthSm]
+  def paperWidthXl: paperWidthXl = "paperWidthXl".asInstanceOf[paperWidthXl]
   def paperWidthXs: paperWidthXs = "paperWidthXs".asInstanceOf[paperWidthXs]
   def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
   def permanent: permanent = "permanent".asInstanceOf[permanent]
@@ -1642,6 +1660,7 @@ object atMaterialDashUiCoreLibStrings {
   def rippleVisible: rippleVisible = "rippleVisible".asInstanceOf[rippleVisible]
   def root: root = "root".asInstanceOf[root]
   def rootSubtitle: rootSubtitle = "rootSubtitle".asInstanceOf[rootSubtitle]
+  def round: round = "round".asInstanceOf[round]
   def rounded: rounded = "rounded".asInstanceOf[rounded]
   def row: row = "row".asInstanceOf[row]
   def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
@@ -1661,6 +1680,7 @@ object atMaterialDashUiCoreLibStrings {
   def selected: selected = "selected".asInstanceOf[selected]
   def shrink: shrink = "shrink".asInstanceOf[shrink]
   def sizeLarge: sizeLarge = "sizeLarge".asInstanceOf[sizeLarge]
+  def sizeMedium: sizeMedium = "sizeMedium".asInstanceOf[sizeMedium]
   def sizeSmall: sizeSmall = "sizeSmall".asInstanceOf[sizeSmall]
   def sm: sm = "sm".asInstanceOf[sm]
   def small: small = "small".asInstanceOf[small]

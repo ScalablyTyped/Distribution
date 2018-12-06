@@ -95,6 +95,16 @@ trait LDOptions extends js.Object {
        */
   var streamUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
+       * Whether or not to open a streaming connection to LaunchDarkly for live flag updates.
+       *
+       * If this is true, the client will always attempt to maintain a streaming connection; if false,
+       * it never will. If you leave the value undefined (the default), the client will open a streaming
+       * connection if you subscribe to "change" or "change:flag-key" events (see LDClient.on()).
+       *
+       * This is equivalent to calling client.setStreaming() with the same value.
+       */
+  var streaming: js.UndefOr[scala.Boolean] = js.undefined
+  /**
        * Whether or not to use the REPORT verb to fetch flag settings.
        *
        * If useReport is true, flag settings will be fetched with a REPORT request

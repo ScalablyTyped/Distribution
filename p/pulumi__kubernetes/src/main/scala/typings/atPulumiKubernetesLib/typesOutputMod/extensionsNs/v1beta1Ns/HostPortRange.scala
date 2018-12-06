@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Host Port Range defines a range of host ports that will be enabled by a policy for pods to
-         * use.  It requires both the start and end to be defined.
+         * HostPortRange defines a range of host ports that will be enabled by a policy for pods to use.
+         * It requires both the start and end to be defined. Deprecated: use HostPortRange from policy
+         * API Group instead.
          */
 
 trait HostPortRange extends js.Object {

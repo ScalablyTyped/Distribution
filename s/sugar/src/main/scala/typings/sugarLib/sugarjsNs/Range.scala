@@ -13,12 +13,12 @@ trait Range extends js.Object {
   def every[T](amount: java.lang.String): js.Array[T] = js.native
   def every[T](
     amount: java.lang.String,
-    fn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ this.type, scala.Unit]
+    everyFn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ this.type, scala.Unit]
   ): js.Array[T] = js.native
   def every[T](amount: scala.Double): js.Array[T] = js.native
   def every[T](
     amount: scala.Double,
-    fn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ this.type, scala.Unit]
+    everyFn: js.Function3[/* el */ T, /* i */ scala.Double, /* r */ this.type, scala.Unit]
   ): js.Array[T] = js.native
   def hours(): scala.Double = js.native
   def intersect(range: Range): Range = js.native

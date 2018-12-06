@@ -48,7 +48,7 @@ object metaNs extends js.Object {
                    * client reaches the server using an internal IP. Server looks at X-Forwarded-For header or
                    * X-Real-Ip header or request.RemoteAddr (in that order) to get the client IP.
                    */
-      var serverAddressByClientCIDRs: atPulumiPulumiLib.resourceMod.Input[js.Array[ServerAddressByClientCIDR]]
+      var serverAddressByClientCIDRs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ServerAddressByClientCIDR]]] = js.undefined
       /**
                    * versions are the versions supported in this group.
                    */
@@ -208,6 +208,12 @@ object metaNs extends js.Object {
                    */
       var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
+                   * When present, indicates that modifications should not be persisted. An invalid or
+                   * unrecognized dryRun directive will result in an error response and no further processing of
+                   * the request. Valid values are: - All: all dry run stages will be processed
+                   */
+      var dryRun: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      /**
                    * The duration in seconds before the object should be deleted. Value must be non-negative
                    * integer. The value zero indicates delete immediately. If this value is nil, the default
                    * grace period for the specified type will be used. Defaults to a per object value if not
@@ -347,9 +353,10 @@ object metaNs extends js.Object {
                    * continue may be set if the user set a limit on the number of items returned, and indicates
                    * that the server has more data available. The value is opaque and may be used to issue
                    * another request to the endpoint that served this list to retrieve the next set of available
-                   * objects. Continuing a list may not be possible if the server configuration has changed or
-                   * more than a few minutes have passed. The resourceVersion field returned when using this
-                   * continue value will be identical to the value in the first response.
+                   * objects. Continuing a consistent list may not be possible if the server configuration has
+                   * changed or more than a few minutes have passed. The resourceVersion field returned when
+                   * using this continue value will be identical to the value in the first response, unless you
+                   * have received this token from an error message.
                    */
       var continue: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -524,8 +531,9 @@ object metaNs extends js.Object {
     }
     
     /**
-             * OwnerReference contains enough information to let you identify an owning object. Currently,
-             * an owning object must be in the same namespace, so there is no namespace field.
+             * OwnerReference contains enough information to let you identify an owning object. An owning
+             * object must be in the same namespace as the dependent, or be cluster-scoped, so there is no
+             * namespace field.
              */
     
     trait OwnerReference extends js.Object {

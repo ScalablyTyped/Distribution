@@ -14,6 +14,7 @@ class OAuth2Server () extends js.Object {
   def authorization(validate: ValidateFunction, immediate: ImmediateFunction): MiddlewareFunction = js.native
   def authorize(options: AuthorizeOptions, validate: ValidateFunction): MiddlewareFunction = js.native
   def authorize(validate: ValidateFunction): MiddlewareFunction = js.native
+  def decision(): MiddlewareFunction = js.native
   def decision(options: DecisionOptions, parse: DecisionParseFunction): MiddlewareFunction = js.native
   def decision(parse: DecisionParseFunction): MiddlewareFunction = js.native
   def deserializeClient(fn: DeserializeClientFunction): scala.Unit = js.native

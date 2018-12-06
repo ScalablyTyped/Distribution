@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "gulp-typescript"
-version := "5.0.0-alpha.3-4b737f"
+version := "5.0.0-c4ee69"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

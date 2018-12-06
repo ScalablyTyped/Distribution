@@ -82,6 +82,7 @@ object SyncNs extends js.Object {
     ]
   ): scala.Unit = js.native
   def initiateClientReset(path: java.lang.String): scala.Unit = js.native
+  def reconnect(): scala.Unit = js.native
   def removeAllListeners(): stdLib.Promise[scala.Unit] = js.native
   def removeListener(
     regex: java.lang.String,
@@ -170,6 +171,7 @@ object SyncNs extends js.Object {
     def authenticate(server: java.lang.String, provider: java.lang.String, options: js.Any): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native
     def completePasswordReset(server: java.lang.String, resetToken: java.lang.String, newPassword: java.lang.String): stdLib.Promise[scala.Unit] = js.native
     def confirmEmail(server: java.lang.String, confirmationToken: java.lang.String): stdLib.Promise[scala.Unit] = js.native
+    def deserialize(serialized: realmLib.RealmNs.SyncNs.SerializedTokenUser): realmLib.RealmNs.SyncNs.User = js.native
     def deserialize(serialized: realmLib.RealmNs.SyncNs.SerializedUser): realmLib.RealmNs.SyncNs.User = js.native
     def login(server: java.lang.String, credentials: realmLib.RealmNs.SyncNs.AdminCredentials): realmLib.RealmNs.SyncNs.User = js.native
     def login(server: java.lang.String, credentials: realmLib.RealmNs.SyncNs.Credentials): stdLib.Promise[realmLib.RealmNs.SyncNs.User] = js.native

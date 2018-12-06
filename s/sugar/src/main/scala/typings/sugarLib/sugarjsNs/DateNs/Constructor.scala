@@ -280,9 +280,11 @@ trait Constructor
   def range(start: stdLib.Date, end: java.lang.String): sugarLib.sugarjsNs.Range = js.native
   def range(start: stdLib.Date, end: stdLib.Date): sugarLib.sugarjsNs.Range = js.native
   def relative(instance: stdLib.Date): java.lang.String = js.native
+  def relative(instance: stdLib.Date, localeCode: java.lang.String): java.lang.String = js.native
   def relative(
     instance: stdLib.Date,
-    fn: js.Function4[
+    localeCode: java.lang.String,
+    relativeFn: js.Function4[
       /* num */ scala.Double, 
       /* unit */ scala.Double, 
       /* ms */ scala.Double, 
@@ -290,11 +292,9 @@ trait Constructor
       java.lang.String
     ]
   ): java.lang.String = js.native
-  def relative(instance: stdLib.Date, localeCode: java.lang.String): java.lang.String = js.native
   def relative(
     instance: stdLib.Date,
-    localeCode: java.lang.String,
-    fn: js.Function4[
+    relativeFn: js.Function4[
       /* num */ scala.Double, 
       /* unit */ scala.Double, 
       /* ms */ scala.Double, 

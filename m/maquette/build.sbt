@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "maquette"
-version := "3.3.2-383743"
+version := "3.3.2-620c5e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

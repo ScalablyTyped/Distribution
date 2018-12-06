@@ -81,6 +81,7 @@ trait VNodeProperties
        */
   val classes: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.UndefOr[scala.Boolean | scala.Null]]] = js.undefined
   val disabled: js.UndefOr[scala.Boolean] = js.undefined
+  val draggable: js.UndefOr[scala.Boolean] = js.undefined
   val encoding: js.UndefOr[java.lang.String] = js.undefined
   val enctype: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -132,6 +133,13 @@ trait VNodeProperties
   var onchange: js.UndefOr[js.Function1[/* ev */ stdLib.Event, scala.Boolean | scala.Unit]] = js.undefined
   var onclick: js.UndefOr[js.Function1[/* ev */ stdLib.MouseEvent, scala.Boolean | scala.Unit]] = js.undefined
   var ondblclick: js.UndefOr[js.Function1[/* ev */ stdLib.MouseEvent, scala.Boolean | scala.Unit]] = js.undefined
+  var ondrag: js.UndefOr[js.Function1[/* ev */ stdLib.DragEvent, scala.Boolean | scala.Unit]] = js.undefined
+  var ondragend: js.UndefOr[js.Function1[/* ev */ stdLib.DragEvent, scala.Boolean | scala.Unit]] = js.undefined
+  var ondragenter: js.UndefOr[js.Function1[/* ev */ stdLib.DragEvent, scala.Boolean | scala.Unit]] = js.undefined
+  var ondragleave: js.UndefOr[js.Function1[/* ev */ stdLib.DragEvent, scala.Boolean | scala.Unit]] = js.undefined
+  var ondragover: js.UndefOr[js.Function1[/* ev */ stdLib.DragEvent, scala.Boolean | scala.Unit]] = js.undefined
+  var ondragstart: js.UndefOr[js.Function1[/* ev */ stdLib.DragEvent, scala.Boolean | scala.Unit]] = js.undefined
+  var ondrop: js.UndefOr[js.Function1[/* ev */ stdLib.DragEvent, scala.Boolean | scala.Unit]] = js.undefined
   var onfocus: js.UndefOr[js.Function1[/* ev */ stdLib.FocusEvent, scala.Boolean | scala.Unit]] = js.undefined
   var oninput: js.UndefOr[js.Function1[/* ev */ stdLib.Event, scala.Boolean | scala.Unit]] = js.undefined
   var onkeydown: js.UndefOr[js.Function1[/* ev */ stdLib.KeyboardEvent, scala.Boolean | scala.Unit]] = js.undefined

@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "socket_dot_io"
-version := "2.1-dt-20181104Z-841022"
+version := "2.1-dt-20181206Z-7e9da8"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

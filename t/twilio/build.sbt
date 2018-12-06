@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "twilio"
-version := "0.0-unknown-dt-20181121Z-63775d"
+version := "0.0-unknown-dt-20181121Z-731761"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-5d5875",
   "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
-  "com.scalablytyped" %%% "q" % "1.5-dt-20180915Z-726082",
+  "com.scalablytyped" %%% "q" % "1.5-dt-20181206Z-726082",
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",
   "com.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-9a9ab6",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",

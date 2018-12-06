@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object StringNs {
   type Chainable[RawValue] = ChainableBase[RawValue] with sugarLib.sugarjsNs.ObjectNs.ChainableBase[RawValue]
-  type tagReplaceFn = js.Function4[
+  type replaceFn = js.Function4[
     /* tag */ java.lang.String, 
     /* inner */ java.lang.String, 
     /* attr */ java.lang.String, 

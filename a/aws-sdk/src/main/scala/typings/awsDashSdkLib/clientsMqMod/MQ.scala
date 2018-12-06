@@ -93,6 +93,27 @@ trait MQ
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Add a tag to a resource.
+     */
+  def createTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Add a tag to a resource.
+     */
+  def createTags(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Add a tag to a resource.
+     */
+  def createTags(params: awsDashSdkLib.clientsMqMod.MQNs.CreateTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Add a tag to a resource.
+     */
+  def createTags(
+    params: awsDashSdkLib.clientsMqMod.MQNs.CreateTagsRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
      * Creates an ActiveMQ user.
      */
   def createUser(): awsDashSdkLib.libRequestMod.Request[
@@ -174,6 +195,27 @@ trait MQ
     awsDashSdkLib.clientsMqMod.MQNs.DeleteBrokerResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
+  /**
+     * Remove a tag from a resource.
+     */
+  def deleteTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Remove a tag from a resource.
+     */
+  def deleteTags(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Remove a tag from a resource.
+     */
+  def deleteTags(params: awsDashSdkLib.clientsMqMod.MQNs.DeleteTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+     * Remove a tag from a resource.
+     */
+  def deleteTags(
+    params: awsDashSdkLib.clientsMqMod.MQNs.DeleteTagsRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
      * Deletes an ActiveMQ user.
      */
@@ -500,6 +542,47 @@ trait MQ
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMqMod.MQNs.ListConfigurationsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists tags for a resource.
+     */
+  def listTags(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists tags for a resource.
+     */
+  def listTags(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists tags for a resource.
+     */
+  def listTags(params: awsDashSdkLib.clientsMqMod.MQNs.ListTagsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists tags for a resource.
+     */
+  def listTags(
+    params: awsDashSdkLib.clientsMqMod.MQNs.ListTagsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMqMod.MQNs.ListTagsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

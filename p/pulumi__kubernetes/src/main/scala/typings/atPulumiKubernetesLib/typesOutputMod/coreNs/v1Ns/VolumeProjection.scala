@@ -22,5 +22,9 @@ trait VolumeProjection extends js.Object {
                * information about the secret data to project
                */
   val secret: SecretProjection
+  /**
+               * information about the serviceAccountToken data to project
+               */
+  val serviceAccountToken: ServiceAccountTokenProjection
 }
 

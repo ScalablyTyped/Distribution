@@ -11,13 +11,13 @@ object maliDashComposeMod extends js.Object {
   def apply(
     middleware: js.Array[
       js.Function2[
-        /* ctx */ _, 
+        /* ctx */ maliLib.maliMod.MaliNs.Context, 
         /* next */ js.Function0[stdLib.Promise[scala.Unit]], 
         stdLib.Promise[scala.Unit]
       ]
     ]
   ): js.Function2[
-    /* context */ js.Any, 
+    /* context */ maliLib.maliMod.MaliNs.Context, 
     /* next */ js.Function0[stdLib.Promise[scala.Unit]], 
     stdLib.Promise[scala.Unit]
   ] = js.native

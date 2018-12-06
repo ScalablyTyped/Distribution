@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "react-native-linear-gradient"
-version := "2.5.2-eaba37"
+version := "2.5.3-eaba37"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

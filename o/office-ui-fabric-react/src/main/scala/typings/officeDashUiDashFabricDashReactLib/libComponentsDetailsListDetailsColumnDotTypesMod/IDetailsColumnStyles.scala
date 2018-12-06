@@ -17,6 +17,8 @@ trait IDetailsColumnStyles extends js.Object {
   var gripperBarVerticalStyle: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var iconClassName: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var nearIcon: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
+  var noBorderAfterDropping: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
+  var noBorderWhileDragging: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var root: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var sortIcon: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
 }

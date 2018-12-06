@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "sharepoint"
-version := "2016.1-dt-20181004Z-4bd34a"
+version := "2016.1-dt-20181206Z-4bd34a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

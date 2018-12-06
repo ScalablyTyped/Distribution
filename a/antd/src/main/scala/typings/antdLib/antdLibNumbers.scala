@@ -36,6 +36,9 @@ object antdLibNumbers {
   @js.native
   sealed trait `false` extends js.Object
   
+  @js.native
+  sealed trait `true` extends js.Object
+  
   def `0`: `0` = 0.asInstanceOf[`0`]
   def `1`: `1` = 1.asInstanceOf[`1`]
   def `12`: `12` = 12.asInstanceOf[`12`]
@@ -46,5 +49,6 @@ object antdLibNumbers {
   def `6`: `6` = 6.asInstanceOf[`6`]
   def `8`: `8` = 8.asInstanceOf[`8`]
   def `false`: `false` = false.asInstanceOf[`false`]
+  def `true`: `true` = true.asInstanceOf[`true`]
 }
 

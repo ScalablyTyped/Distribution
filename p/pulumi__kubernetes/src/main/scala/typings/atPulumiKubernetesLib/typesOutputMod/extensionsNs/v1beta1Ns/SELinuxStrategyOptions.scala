@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * SELinux  Strategy Options defines the strategy type and any options used to create the
-         * strategy.
+         * SELinuxStrategyOptions defines the strategy type and any options used to create the strategy.
+         * Deprecated: use SELinuxStrategyOptions from policy API Group instead.
          */
 
 trait SELinuxStrategyOptions extends js.Object {
   /**
-               * type is the strategy that will dictate the allowable labels that may be set.
+               * rule is the strategy that will dictate the allowable labels that may be set.
                */
   val rule: java.lang.String
   /**

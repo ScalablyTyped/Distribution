@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("polished/lib/mixins/hideText", JSImport.Namespace)
 @js.native
 object libMixinsHideTextMod extends js.Object {
-  def default(): js.Object = js.native
+  def default(): polishedLib.libTypesStyleMod.Styles = js.native
 }
 

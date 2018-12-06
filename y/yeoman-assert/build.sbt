@@ -1,11 +1,11 @@
 organization := "com.scalablytyped"
 name := "yeoman-assert"
-version := "3.1-dt-20181126Z-81d3a5"
+version := "3.1-dt-20181126Z-c59a2d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "assert" % "1.4-dt-20181002Z-f64657",
+  "com.scalablytyped" %%% "assert" % "1.4-dt-20181206Z-8c2611",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")
 publishArtifact in packageDoc := false

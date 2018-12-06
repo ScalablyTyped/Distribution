@@ -23,6 +23,12 @@ trait PodSecurityContext extends js.Object {
                */
   val fsGroup: scala.Double
   /**
+               * The GID to run the entrypoint of the container process. Uses runtime default if unset. May
+               * also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the
+               * value specified in SecurityContext takes precedence for that container.
+               */
+  val runAsGroup: scala.Double
+  /**
                * Indicates that the container must run as a non-root user. If true, the Kubelet will
                * validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to
                * start the container if it does. If unset or false, no such validation will be performed.
@@ -49,5 +55,10 @@ trait PodSecurityContext extends js.Object {
                * container's primary GID.  If unspecified, no groups will be added to any container.
                */
   val supplementalGroups: js.Array[scala.Double]
+  /**
+               * Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls
+               * (by the container runtime) might fail to launch.
+               */
+  val sysctls: js.Array[Sysctl]
 }
 

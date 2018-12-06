@@ -5,114 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// Instance members
-// Generic members
+/**
+     * jQuery's event system normalizes the event object according to W3C standards. The event object is guaranteed to be passed to the event handler (no checks for window.event required). It normalizes the target, relatedTarget, which, metaKey and pageX/Y properties and provides both stopPropagation() and preventDefault() methods.
+     *
+     * Those properties are all documented, and accompanied by examples, on the \`{@link http://api.jquery.com/category/events/event-object/ Event object}\` page.
+     *
+     * The standard events in the Document Object Model are: `blur`, `focus`, `load`, `resize`, `scroll`, `unload`, `beforeunload`, `click`, `dblclick`, `mousedown`, `mouseup`, `mousemove`, `mouseover`, `mouseout`, `mouseenter`, `mouseleave`, `change`, `select`, `submit`, `keydown`, `keypress`, and `keyup`. Since the DOM event names have predefined meanings for some elements, using them for other purposes is not recommended. jQuery's event model can trigger an event by any name on an element, and it is propagated up the DOM tree to which that element belongs, if any.
+     * @see \`{@link https://api.jquery.com/category/events/event-object/ }\`
+     * @see \`{@link TriggeredEvent }\`
+     */
 
-trait Event[TTarget, TData] extends js.Object {
-  // #endregion
-  // region MouseEvent, KeyboardEvent, TouchEvent
-  // #region MouseEvent, KeyboardEvent, TouchEvent
-  var altKey: js.UndefOr[scala.Boolean] = js.undefined
+trait Event extends js.Object {
+  // MouseEvent, KeyboardEvent, TouchEvent
+  var altKey: js.UndefOr[scala.Boolean]
   // region Copied properties
   // #region Copied properties
-  // region Event
-  // #region Event
-  var bubbles: js.UndefOr[scala.Boolean] = js.undefined
-  // #endregion
-  // region MouseEvent
-  // #region MouseEvent
-  var button: js.UndefOr[scala.Double] = js.undefined
-  var buttons: js.UndefOr[scala.Double] = js.undefined
-  var cancelable: js.UndefOr[scala.Boolean] = js.undefined
-  // #endregion
-  // region TouchEvent
-  // #region TouchEvent
-  var changedTouches: js.UndefOr[stdLib.TouchList] = js.undefined
-  // #endregion
-  // region KeyboardEvent
-  // #region KeyboardEvent
+  // Event
+  var bubbles: js.UndefOr[scala.Boolean]
+  // MouseEvent
+  var button: js.UndefOr[scala.Double]
+  var buttons: js.UndefOr[scala.Double]
+  var cancelable: js.UndefOr[scala.Boolean]
+  // TouchEvent
+  var changedTouches: js.UndefOr[stdLib.TouchList]
+  // KeyboardEvent
   /** @deprecated */
-  var char: js.UndefOr[java.lang.String] = js.undefined
+  var char: js.UndefOr[java.lang.String]
   /** @deprecated */
-  var charCode: js.UndefOr[scala.Double] = js.undefined
-  var clientX: js.UndefOr[scala.Double] = js.undefined
-  var clientY: js.UndefOr[scala.Double] = js.undefined
-  var ctrlKey: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-           * The current DOM element within the event bubbling phase.
-           * @see \`{@link https://api.jquery.com/event.currentTarget/ }\`
-           * @since 1.3
-           * @example ​ ````Alert that currentTarget matches the `this` keyword.
-  ```javascript
-  $( "p" ).click(function( event ) {
-    alert( event.currentTarget === this ); // true
-  });
-  ```
-           */
-  var currentTarget: TTarget
-  /**
-           * An optional object of data passed to an event method when the current executing handler is bound.
-           * @see \`{@link https://api.jquery.com/event.data/ }\`
-           * @since 1.1
-           * @example ​ ````Within a for loop, pass the value of i to the .on() method so that the current iteration&#39;s value is preserved.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>event.data demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button> 0 </button>
-  <button> 1 </button>
-  <button> 2 </button>
-  <button> 3 </button>
-  <button> 4 </button>
-  ​
-  <div id="log"></div>
-  ​
-  <script>
-  var logDiv = $( "#log" );
-  ​
-  for ( var i = 0; i < 5; i++ ) {
-    $( "button" ).eq( i ).on( "click", { value: i }, function( event ) {
-      var msgs = [
-        "button = " + $( this ).index(),
-        "event.data.value = " + event.data.value,
-        "i = " + i
-      ];
-      logDiv.append( msgs.join( ", " ) + "<br>" );
-    });
-  }
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-           */
-  var data: TData
-  /**
-           * The element where the currently-called jQuery event handler was attached.
-           * @see \`{@link https://api.jquery.com/event.delegateTarget/ }\`
-           * @since 1.7
-           * @example ​ ````When a button in any box class is clicked, change the box&#39;s background color to red.
-  ```javascript
-  $( ".box" ).on( "click", "button", function( event ) {
-    $( event.delegateTarget ).css( "background-color", "red" );
-  });
-  ```
-           */
-  var delegateTarget: TTarget
-  // #endregion
-  // region UIEvent
-  // #region UIEvent
-  var detail: js.UndefOr[scala.Double] = js.undefined
-  var eventPhase: js.UndefOr[scala.Double] = js.undefined
-  var key: js.UndefOr[java.lang.String] = js.undefined
+  var charCode: js.UndefOr[scala.Double]
+  var clientX: js.UndefOr[scala.Double]
+  var clientY: js.UndefOr[scala.Double]
+  var ctrlKey: js.UndefOr[scala.Boolean]
+  // UIEvent
+  var detail: js.UndefOr[scala.Double]
+  var eventPhase: js.UndefOr[scala.Double]
+  var key: js.UndefOr[java.lang.String]
   /** @deprecated */
-  var keyCode: js.UndefOr[scala.Double] = js.undefined
+  var keyCode: js.UndefOr[scala.Double]
   /**
            * Indicates whether the META key was pressed when the event fired.
            * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
@@ -149,44 +78,9 @@ trait Event[TTarget, TData] extends js.Object {
   </html>
   ```
            */
-  var metaKey: scala.Boolean
-  // #endregion
-  // #endregion
-  /**
-           * The namespace specified when the event was triggered.
-           * @see \`{@link https://api.jquery.com/event.namespace/ }\`
-           * @since 1.4.3
-           * @example ​ ````Determine the event namespace used.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>event.namespace demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button>display event.namespace</button>
-  <p></p>
-  ​
-  <script>
-  $( "p" ).on( "test.something", function( event ) {
-    alert( event.namespace );
-  });
-  $( "button" ).click(function( event ) {
-    $( "p" ).trigger( "test.something" );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-           */
-  var namespace: java.lang.String
-  var offsetX: js.UndefOr[scala.Double] = js.undefined
-  var offsetY: js.UndefOr[scala.Double] = js.undefined
-  var originalEvent: jqueryLib._Event
+  var metaKey: js.UndefOr[scala.Boolean]
+  var offsetX: js.UndefOr[scala.Double]
+  var offsetY: js.UndefOr[scala.Double]
   /**
            * The mouse position relative to the left edge of the document.
            * @see \`{@link https://api.jquery.com/event.pageX/ }\`
@@ -222,7 +116,7 @@ trait Event[TTarget, TData] extends js.Object {
   </html>
   ```
            */
-  var pageX: scala.Double
+  var pageX: js.UndefOr[scala.Double]
   /**
            * The mouse position relative to the top edge of the document.
            * @see \`{@link https://api.jquery.com/event.pageY/ }\`
@@ -258,139 +152,15 @@ trait Event[TTarget, TData] extends js.Object {
   </html>
   ```
            */
-  var pageY: scala.Double
+  var pageY: js.UndefOr[scala.Double]
+  // PointerEvent
+  var pointerId: js.UndefOr[scala.Double]
+  var pointerType: js.UndefOr[java.lang.String]
+  var screenX: js.UndefOr[scala.Double]
+  var screenY: js.UndefOr[scala.Double]
+  var shiftKey: js.UndefOr[scala.Boolean]
+  var targetTouches: js.UndefOr[stdLib.TouchList]
   // #endregion
-  // region PointerEvent
-  // #region PointerEvent
-  var pointerId: js.UndefOr[scala.Double] = js.undefined
-  var pointerType: js.UndefOr[java.lang.String] = js.undefined
-  /**
-           * The other DOM element involved in the event, if any.
-           * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
-           * @since 1.1.4
-           * @example ​ ````On mouseout of anchors, alert the element type being entered.
-  ```javascript
-  $( "a" ).mouseout(function( event ) {
-    alert( event.relatedTarget.nodeName ); // "DIV"
-  });
-  ```
-           */
-  var relatedTarget: TTarget | scala.Null
-  /**
-           * The last value returned by an event handler that was triggered by this event, unless the value was undefined.
-           * @see \`{@link https://api.jquery.com/event.result/ }\`
-           * @since 1.3
-           * @example ​ ````Display previous handler&#39;s return value
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>event.result demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button>display event.result</button>
-  <p></p>
-  ​
-  <script>
-  $( "button" ).click(function( event ) {
-    return "hey";
-  });
-  $( "button" ).click(function( event ) {
-    $( "p" ).html( event.result );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-           */
-  var result: js.Any
-  var screenX: js.UndefOr[scala.Double] = js.undefined
-  var screenY: js.UndefOr[scala.Double] = js.undefined
-  var shiftKey: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-           * The DOM element that initiated the event.
-           * @see \`{@link https://api.jquery.com/event.target/ }\`
-           * @since 1.0
-           * @example ​ ````Display the tag&#39;s name on click
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>event.target demo</title>
-    <style>
-    span, strong, p {
-      padding: 8px;
-      display: block;
-      border: 1px solid #999;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log"></div>
-  <div>
-    <p>
-      <strong><span>click</span></strong>
-    </p>
-  </div>
-  ​
-  <script>
-  $( "body" ).click(function( event ) {
-    $( "#log" ).html( "clicked: " + event.target.nodeName );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-           * @example ​ ````Implements a simple event delegation: The click handler is added to an unordered list, and the children of its li children are hidden. Clicking one of the li children toggles (see toggle()) their children.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>event.target demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <ul>
-    <li>item 1
-      <ul>
-        <li>sub item 1-a</li>
-        <li>sub item 1-b</li>
-      </ul>
-    </li>
-    <li>item 2
-      <ul>
-        <li>sub item 2-a</li>
-        <li>sub item 2-b</li>
-      </ul>
-    </li>
-  </ul>
-  ​
-  <script>
-  function handler( event ) {
-    var target = $( event.target );
-    if ( target.is( "li" ) ) {
-      target.children().toggle();
-    }
-  }
-  $( "ul" ).click( handler ).find( "ul" ).hide();
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-           */
-  var target: TTarget
-  var targetTouches: js.UndefOr[stdLib.TouchList] = js.undefined
   /**
            * The difference in milliseconds between the time the browser created the event and January 1, 1970.
            * @see \`{@link https://api.jquery.com/event.timeStamp/ }\`
@@ -436,8 +206,8 @@ trait Event[TTarget, TData] extends js.Object {
            */
   var timeStamp: scala.Double
   /** @deprecated */
-  var toElement: js.UndefOr[stdLib.Element] = js.undefined
-  var touches: js.UndefOr[stdLib.TouchList] = js.undefined
+  var toElement: js.UndefOr[stdLib.Element]
+  var touches: js.UndefOr[stdLib.TouchList]
   /**
            * Describes the nature of the event.
            * @see \`{@link https://api.jquery.com/event.type/ }\`
@@ -450,11 +220,13 @@ trait Event[TTarget, TData] extends js.Object {
   ```
            */
   var `type`: java.lang.String
-  var view: js.UndefOr[stdLib.Window] = js.undefined
+  var view: js.UndefOr[stdLib.Window]
+  // MouseEvent, KeyboardEvent
   /**
            * For key or mouse events, this property indicates the specific key or button that was pressed.
            * @see \`{@link https://api.jquery.com/event.which/ }\`
            * @since 1.1.3
+           * @deprecated ​ Deprecated since 3.3. See \`{@link https://github.com/jquery/api.jquery.com/issues/821 }\`.
            * @example ​ ````Log which key was depressed.
   ```html
   <!doctype html>
@@ -502,7 +274,7 @@ trait Event[TTarget, TData] extends js.Object {
   </html>
   ```
            */
-  var which: scala.Double
+  var which: js.UndefOr[scala.Double]
   /**
            * Returns whether event.preventDefault() was ever called on this event object.
            * @see \`{@link https://api.jquery.com/event.isDefaultPrevented/ }\`

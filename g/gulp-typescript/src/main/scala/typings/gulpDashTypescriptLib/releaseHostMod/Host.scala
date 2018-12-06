@@ -24,6 +24,21 @@ class Host protected ()
   def getDefaultLibLocation_MHost(): java.lang.String = js.native
   @JSName("getDirectories")
   def getDirectories_MHost(path: java.lang.String): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MHost(
+    rootDir: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    excludes: js.Array[java.lang.String],
+    includes: js.Array[java.lang.String]
+  ): js.Array[java.lang.String] = js.native
+  @JSName("readDirectory")
+  def readDirectory_MHost(
+    rootDir: java.lang.String,
+    extensions: js.Array[java.lang.String],
+    excludes: js.Array[java.lang.String],
+    includes: js.Array[java.lang.String],
+    depth: scala.Double
+  ): js.Array[java.lang.String] = js.native
   /* CompleteClass */
   override def readFile(fileName: java.lang.String): js.UndefOr[java.lang.String] = js.native
   @JSName("realpath")

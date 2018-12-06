@@ -32,8 +32,7 @@ trait PodSpec extends js.Object {
   val containers: js.Array[Container]
   /**
                * Specifies the DNS parameters of a pod. Parameters specified here will be merged to the
-               * generated DNS configuration based on DNSPolicy. This is an alpha feature introduced in v1.9
-               * and CustomPodDNS feature gate must be enabled to use it.
+               * generated DNS configuration based on DNSPolicy.
                */
   val dnsConfig: PodDNSConfig
   /**
@@ -41,10 +40,14 @@ trait PodSpec extends js.Object {
                * 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in
                * DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set
                * along with hostNetwork, you have to specify DNS policy explicitly to
-               * 'ClusterFirstWithHostNet'. Note that 'None' policy is an alpha feature introduced in v1.9
-               * and CustomPodDNS feature gate must be enabled to use it.
+               * 'ClusterFirstWithHostNet'.
                */
   val dnsPolicy: java.lang.String
+  /**
+               * EnableServiceLinks indicates whether information about services should be injected into
+               * pod's environment variables, matching the syntax of Docker links.
+               */
+  val enableServiceLinks: scala.Boolean
   /**
                * HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts
                * file if specified. This is only valid for non-hostNetwork pods.
@@ -109,18 +112,35 @@ trait PodSpec extends js.Object {
                */
   val priority: scala.Double
   /**
-               * If specified, indicates the pod's priority. "SYSTEM" is a special keyword which indicates
-               * the highest priority. Any other name must be defined by creating a PriorityClass object
-               * with that name. If not specified, the pod priority will be default or zero if there is no
-               * default.
+               * If specified, indicates the pod's priority. "system-node-critical" and
+               * "system-cluster-critical" are two special keywords which indicate the highest priorities
+               * with the former being the highest priority. Any other name must be defined by creating a
+               * PriorityClass object with that name. If not specified, the pod priority will be default or
+               * zero if there is no default.
                */
   val priorityClassName: java.lang.String
+  /**
+               * If specified, all readiness gates will be evaluated for pod readiness. A pod is ready when
+               * all its containers are ready AND all conditions specified in the readiness gates have
+               * status equal to "True" More info:
+               * https://github.com/kubernetes/community/blob/master/keps/sig-network/0007-pod-ready%2B%2B.md
+               */
+  val readinessGates: js.Array[PodReadinessGate]
   /**
                * Restart policy for all containers within the pod. One of Always, OnFailure, Never. Default
                * to Always. More info:
                * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy
                */
   val restartPolicy: java.lang.String
+  /**
+               * RuntimeClassName refers to a RuntimeClass object in the node.k8s.io group, which should be
+               * used to run this pod.  If no RuntimeClass resource matches the named class, the pod will
+               * not be run. If unset or empty, the "legacy" RuntimeClass will be used, which is an implicit
+               * class with an empty definition that uses the default runtime handler. More info:
+               * https://github.com/kubernetes/community/blob/master/keps/sig-node/0014-runtime-class.md
+               * This is an alpha feature and may change in the future.
+               */
+  val runtimeClassName: java.lang.String
   /**
                * If specified, the pod will be dispatched by specified scheduler. If not specified, the pod
                * will be dispatched by default scheduler.
@@ -141,6 +161,14 @@ trait PodSpec extends js.Object {
                * https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
                */
   val serviceAccountName: java.lang.String
+  /**
+               * Share a single process namespace between all of the containers in a pod. When this is set
+               * containers will be able to view and signal processes from other containers in the same pod,
+               * and the first process in each container will not be assigned PID 1. HostPID and
+               * ShareProcessNamespace cannot both be set. Optional: Default to false. This field is
+               * beta-level and may be disabled with the PodShareProcessNamespace feature.
+               */
+  val shareProcessNamespace: scala.Boolean
   /**
                * If specified, the fully qualified Pod hostname will be "<hostname>.<subdomain>.<pod
                * namespace>.svc.<cluster domain>". If not specified, the pod will not have a domainname at

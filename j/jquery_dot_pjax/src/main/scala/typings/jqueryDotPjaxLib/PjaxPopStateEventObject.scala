@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
  */
 
 trait PjaxPopStateEventObject
-  extends jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null] {
+  extends jqueryLib.JQueryNs.Event {
   /**
        * Navigation direction. Could be "back" or "forward".
        */

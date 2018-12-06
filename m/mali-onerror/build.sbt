@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "mali-onerror"
-version := "0.1-dt-20181120Z-4bfff8"
+version := "0.1-dt-20181120Z-15fbe5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -20,8 +20,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "lodash_dot_upperfirst" % "4.3-dt-20180910Z-4679e4",
   "com.scalablytyped" %%% "lodash_dot_values" % "4.3-dt-20180910Z-000982",
   "com.scalablytyped" %%% "long" % "4.0.0-dt-20180910Z-cac3f5",
-  "com.scalablytyped" %%% "mali" % "0.10.2-f18714",
-  "com.scalablytyped" %%% "mali-compose" % "1.1-dt-20181120Z-922947",
+  "com.scalablytyped" %%% "mali" % "0.10.2-fe6af4",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "p-map" % "1.1-dt-20180910Z-6f0117",
   "com.scalablytyped" %%% "pify" % "3.0.0-dt-20180910Z-6e073d",

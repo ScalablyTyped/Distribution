@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactLib.reactMod.ReactNs.Props because Would inherit conflicting mutable fields List(children))*/
 
 trait IPageProps
-  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
+  extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]
+     with reactLib.reactMod.ReactNs.ClassAttributes[reactLib.HTMLDivElement] {
   /**
        * The allocation data for the page.
        */

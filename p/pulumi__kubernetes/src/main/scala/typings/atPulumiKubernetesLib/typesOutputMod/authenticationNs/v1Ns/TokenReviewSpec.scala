@@ -11,6 +11,13 @@ import scala.scalajs.js.annotation._
 
 trait TokenReviewSpec extends js.Object {
   /**
+               * Audiences is a list of the identifiers that the resource server presented with the token
+               * identifies as. Audience-aware token authenticators will verify that the token was intended
+               * for at least one of the audiences in this list. If no audiences are provided, the audience
+               * will default to the audience of the Kubernetes apiserver.
+               */
+  val audiences: js.Array[java.lang.String]
+  /**
                * Token is the opaque bearer token.
                */
   val token: java.lang.String

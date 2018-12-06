@@ -101,7 +101,7 @@ object diaNs extends js.Object {
     def this(opt: jointjsLib.jointjsMod.diaNs.CellViewNs.Options[T]) = this()
     def addTools(tools: ToolsView): this.type = js.native
     def can(feature: java.lang.String): scala.Boolean = js.native
-    /* protected */ def contextmenu(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def contextmenu(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
     def findBySelector(selector: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
     def findBySelector(selector: java.lang.String, root: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
     def findBySelector(selector: java.lang.String, root: jqueryLib.JQuery[stdLib.HTMLElement]): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
@@ -123,30 +123,20 @@ object diaNs extends js.Object {
     def highlight(el: jqueryLib.JQuery[stdLib.HTMLElement], opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def highlight(el: stdLib.SVGElement): this.type = js.native
     def highlight(el: stdLib.SVGElement, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): this.type = js.native
-    /* protected */ def mouseenter(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def mouseleave(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def mouseout(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def mouseover(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def mousewheel(
-      evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null],
-      x: scala.Double,
-      y: scala.Double,
-      delta: scala.Double
-    ): scala.Unit = js.native
+    /* protected */ def mouseenter(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def mouseleave(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def mouseout(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def mouseover(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def mousewheel(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double, delta: scala.Double): scala.Unit = js.native
     def notify(eventName: java.lang.String, eventArguments: js.Any*): scala.Unit = js.native
     /* protected */ def onToolEvent(eventName: java.lang.String): scala.Unit = js.native
-    /* protected */ def onevent(
-      evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null],
-      eventName: java.lang.String,
-      x: scala.Double,
-      y: scala.Double
-    ): scala.Unit = js.native
-    /* protected */ def onmagnet(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def pointerclick(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def pointerdblclick(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def pointerdown(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def pointermove(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def pointerup(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def onevent(evt: jqueryLib.JQueryNs.Event, eventName: java.lang.String, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def onmagnet(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def pointerclick(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def pointerdblclick(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def pointerdown(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def pointermove(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def pointerup(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
     def removeTools(): this.type = js.native
     def showTools(): this.type = js.native
     def unhighlight(): this.type = js.native
@@ -237,18 +227,13 @@ object diaNs extends js.Object {
   @js.native
   class ElementView () extends CellViewGeneric[Element] {
     /* protected */ def addLinkFromMagnet(magnet: stdLib.SVGElement, x: scala.Double, y: scala.Double): LinkView = js.native
-    /* protected */ def drag(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragEnd(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragLinkStart(
-      evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null],
-      magnet: stdLib.SVGElement,
-      x: scala.Double,
-      y: scala.Double
-    ): scala.Unit = js.native
-    /* protected */ def dragMagnet(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragMagnetEnd(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragMagnetStart(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragStart(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def drag(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragEnd(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragLinkStart(evt: jqueryLib.JQueryNs.Event, magnet: stdLib.SVGElement, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragMagnet(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragMagnetEnd(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragMagnetStart(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragStart(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
     def getBBox(): jointjsLib.jointjsMod.gNs.Rect = js.native
     def getBBox(opt: jointjsLib.Anon_UseModelGeometry): jointjsLib.jointjsMod.gNs.Rect = js.native
     def getDelegatedView(): ElementView | scala.Null = js.native
@@ -537,21 +522,21 @@ object diaNs extends js.Object {
     def addVertex(coordinates: Point, opt: jointjsLib.jointjsMod.diaNs.LinkViewNs.VertexOptions): scala.Double = js.native
     def addVertex(x: scala.Double, y: scala.Double): scala.Double = js.native
     def addVertex(x: scala.Double, y: scala.Double, opt: jointjsLib.jointjsMod.diaNs.LinkViewNs.VertexOptions): scala.Double = js.native
-    /* protected */ def drag(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragArrowhead(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragArrowheadEnd(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragArrowheadStart(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragConnection(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragConnectionEnd(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragConnectionStart(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragEnd(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragLabel(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragLabelEnd(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragLabelStart(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragStart(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragVertex(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragVertexEnd(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
-    /* protected */ def dragVertexStart(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def drag(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragArrowhead(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragArrowheadEnd(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragArrowheadStart(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragConnection(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragConnectionEnd(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragConnectionStart(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragEnd(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragLabel(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragLabelEnd(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragLabelStart(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragStart(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragVertex(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragVertexEnd(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def dragVertexStart(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
     def getClosestPoint(point: Point): jointjsLib.jointjsMod.gNs.Point = js.native
     def getClosestPointLength(point: Point): scala.Double = js.native
     def getClosestPointRatio(point: Point): scala.Double = js.native
@@ -577,7 +562,7 @@ object diaNs extends js.Object {
     /* protected */ def onTargetChange(element: Element, targetEnd: js.Any, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
     /* protected */ def onToolsChange(link: Link, toolsMarkup: java.lang.String, opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
     /* protected */ def onVerticesChange(link: Link, vertices: js.Array[Point], opt: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
-    /* protected */ def onlabel(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], x: scala.Double, y: scala.Double): scala.Unit = js.native
+    /* protected */ def onlabel(evt: jqueryLib.JQueryNs.Event, x: scala.Double, y: scala.Double): scala.Unit = js.native
     def sendToken(token: stdLib.SVGElement): scala.Unit = js.native
     def sendToken(token: stdLib.SVGElement, duration: scala.Double): scala.Unit = js.native
     def sendToken(token: stdLib.SVGElement, duration: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit = js.native
@@ -631,7 +616,7 @@ object diaNs extends js.Object {
     def clientToLocalRect(rect: BBox): jointjsLib.jointjsMod.gNs.Rect = js.native
     def clientToLocalRect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): jointjsLib.jointjsMod.gNs.Rect = js.native
     /* protected */ def cloneOptions(): jointjsLib.jointjsMod.diaNs.PaperNs.Options = js.native
-    /* protected */ def contextmenu(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
+    /* protected */ def contextmenu(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
     /* protected */ def createViewForModel(cell: Cell): CellView = js.native
     def defineFilter(filter: ScalablyTyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
     def defineGradient(gradient: jointjsLib.jointjsMod.diaNs.PaperNs.GradientOptions): java.lang.String = js.native
@@ -667,7 +652,7 @@ object diaNs extends js.Object {
     def getModelById(id: Cell): Cell = js.native
     def getModelById(id: scala.Double): Cell = js.native
     def getRestrictedArea(): js.UndefOr[jointjsLib.jointjsMod.gNs.Rect] = js.native
-    /* protected */ def guard(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], view: CellView): scala.Boolean = js.native
+    /* protected */ def guard(evt: jqueryLib.JQueryNs.Event, view: CellView): scala.Boolean = js.native
     def hideTools(): this.type = js.native
     def isDefined(defId: java.lang.String): scala.Boolean = js.native
     def localToClientPoint(point: Point): jointjsLib.jointjsMod.gNs.Point = js.native
@@ -685,19 +670,19 @@ object diaNs extends js.Object {
     def matrix(): stdLib.SVGMatrix = js.native
     def matrix(ctm: jointjsLib.jointjsMod.VectorizerNs.Matrix): this.type = js.native
     def matrix(ctm: stdLib.SVGMatrix): this.type = js.native
-    /* protected */ def mouseenter(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def mouseleave(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def mouseout(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def mouseover(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def mousewheel(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
+    /* protected */ def mouseenter(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def mouseleave(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def mouseout(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def mouseover(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def mousewheel(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
     /* protected */ def onCellAdded(cell: Cell, graph: Graph, opt: jointjsLib.Anon_Position): scala.Unit = js.native
     /* protected */ def onCellHighlight(cellView: CellView, magnetEl: stdLib.SVGElement): scala.Unit = js.native
     /* protected */ def onCellHighlight(cellView: CellView, magnetEl: stdLib.SVGElement, opt: jointjsLib.Anon_Highlighter): scala.Unit = js.native
     /* protected */ def onCellUnhighlight(cellView: CellView, magnetEl: stdLib.SVGElement): scala.Unit = js.native
     /* protected */ def onCellUnhighlight(cellView: CellView, magnetEl: stdLib.SVGElement, opt: jointjsLib.Anon_Highlighter): scala.Unit = js.native
-    /* protected */ def onevent(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def onlabel(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def onmagnet(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
+    /* protected */ def onevent(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def onlabel(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def onmagnet(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
     def pageOffset(): jointjsLib.jointjsMod.gNs.Point = js.native
     def pageToLocalPoint(point: Point): jointjsLib.jointjsMod.gNs.Point = js.native
     def pageToLocalPoint(x: scala.Double, y: scala.Double): jointjsLib.jointjsMod.gNs.Point = js.native
@@ -707,12 +692,12 @@ object diaNs extends js.Object {
     def paperToLocalPoint(x: scala.Double, y: scala.Double): jointjsLib.jointjsMod.gNs.Point = js.native
     def paperToLocalRect(x: BBox): jointjsLib.jointjsMod.gNs.Rect = js.native
     def paperToLocalRect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): jointjsLib.jointjsMod.gNs.Rect = js.native
-    /* protected */ def pointerclick(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
+    /* protected */ def pointerclick(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
     // protected
-    /* protected */ def pointerdblclick(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def pointerdown(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def pointermove(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
-    /* protected */ def pointerup(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): scala.Unit = js.native
+    /* protected */ def pointerdblclick(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def pointerdown(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def pointermove(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
+    /* protected */ def pointerup(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
     // tools
     def removeTools(): this.type = js.native
     /* protected */ def removeView(cell: Cell): CellView = js.native
@@ -1177,7 +1162,7 @@ object diaNs extends js.Object {
       // events
       var guard: js.UndefOr[
             js.Function2[
-              /* evt */ jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null], 
+              /* evt */ jqueryLib.JQueryNs.Event, 
               /* view */ jointjsLib.jointjsMod.diaNs.CellView, 
               scala.Boolean
             ]

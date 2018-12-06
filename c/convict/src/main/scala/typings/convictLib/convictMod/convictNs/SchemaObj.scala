@@ -23,7 +23,7 @@ trait SchemaObj[T] extends js.Object {
            * If omitted, format will be set to the value of Object.prototype.toString.call
            * for the default value
            */
-  var format: js.UndefOr[java.lang.String | js.Array[_] | (js.Function1[/* val */ js.Any, scala.Unit])] = js.undefined
+  var format: js.UndefOr[PredefinedFormat | js.Array[_] | (js.Function1[/* val */ js.Any, scala.Unit])] = js.undefined
   var sensitive: js.UndefOr[scala.Boolean] = js.undefined
 }
 

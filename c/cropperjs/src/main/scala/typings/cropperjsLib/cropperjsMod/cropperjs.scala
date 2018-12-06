@@ -90,8 +90,15 @@ trait cropperjs extends js.Object {
   /**
        * Replace the image's src and rebuild the cropper.
        * @param url A new image url
+       * @param hasSameSize If the new image has the same size with the old one, then it will not rebuilt the cropper and only update the urls of all related images. (Default: false)
        */
   def replace(url: java.lang.String): scala.Unit = js.native
+  /**
+       * Replace the image's src and rebuild the cropper.
+       * @param url A new image url
+       * @param hasSameSize If the new image has the same size with the old one, then it will not rebuilt the cropper and only update the urls of all related images. (Default: false)
+       */
+  def replace(url: java.lang.String, hasSameSize: scala.Boolean): scala.Unit = js.native
   /**
        * Clear the crop box.
        */

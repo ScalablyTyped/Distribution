@@ -182,6 +182,26 @@ trait LDClient extends js.Object {
     context: js.Any
   ): scala.Unit = js.native
   /**
+       * Specifies whether or not to open a streaming connection to LaunchDarkly for live flag updates.
+       *
+       * If this is true, the client will always attempt to maintain a streaming connection; if false,
+       * it never will. If you leave the value undefined (the default), the client will open a streaming
+       * connection if you subscribe to "change" or "change:flag-key" events (see LDClient.on()).
+       *
+       * This can also be set as the "streaming" property of the client options.
+       */
+  def setStreaming(): scala.Unit = js.native
+  /**
+       * Specifies whether or not to open a streaming connection to LaunchDarkly for live flag updates.
+       *
+       * If this is true, the client will always attempt to maintain a streaming connection; if false,
+       * it never will. If you leave the value undefined (the default), the client will open a streaming
+       * connection if you subscribe to "change" or "change:flag-key" events (see LDClient.on()).
+       *
+       * This can also be set as the "streaming" property of the client options.
+       */
+  def setStreaming(value: scala.Boolean): scala.Unit = js.native
+  /**
        * Track page events to use in goals or A/B tests.
        *
        * LaunchDarkly automatically tracks pageviews and clicks that are

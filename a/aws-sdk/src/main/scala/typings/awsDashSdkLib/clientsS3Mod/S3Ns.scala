@@ -852,7 +852,7 @@ object S3Ns extends js.Object {
   trait DeleteObjectRequest extends js.Object {
     var Bucket: BucketName
     /**
-         * 
+         * Indicates whether S3 Object Lock should bypass Governance-mode restrictions to process this operation.
          */
     var BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined
     var Key: ObjectKey
@@ -1378,7 +1378,7 @@ object S3Ns extends js.Object {
          */
     var MissingMeta: js.UndefOr[MissingMeta] = js.undefined
     /**
-         * 
+         * Indicates whether this object has an active legal hold. This field is only returned if you have permission to view an object's legal hold status.
          */
     var ObjectLockLegalHoldStatus: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
     /**
@@ -2628,7 +2628,7 @@ object S3Ns extends js.Object {
   
   trait ObjectLockConfiguration extends js.Object {
     /**
-         * Indicates whether this object has an Object Lock configuration enabled.
+         * Indicates whether this bucket has an Object Lock configuration enabled.
          */
     var ObjectLockEnabled: js.UndefOr[ObjectLockEnabled] = js.undefined
     /**
@@ -2652,7 +2652,7 @@ object S3Ns extends js.Object {
          */
     var Mode: js.UndefOr[ObjectLockRetentionMode] = js.undefined
     /**
-         * 
+         * The date on which this Object Lock Retention will expire.
          */
     var RetainUntilDate: js.UndefOr[_Date] = js.undefined
   }
@@ -3059,7 +3059,7 @@ object S3Ns extends js.Object {
          */
     var Bucket: BucketName
     /**
-         * The MD5 signature for the configuration included in your request.
+         * The MD5 hash for the request body.
          */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
     /**
@@ -3089,7 +3089,7 @@ object S3Ns extends js.Object {
          */
     var Bucket: BucketName
     /**
-         * The MD5 signature for the configuration included in your request.
+         * The MD5 hash for the request body.
          */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
     /**
@@ -3097,9 +3097,6 @@ object S3Ns extends js.Object {
          */
     var ObjectLockConfiguration: js.UndefOr[ObjectLockConfiguration] = js.undefined
     var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
-    /**
-         * 
-         */
     var Token: js.UndefOr[ObjectLockToken] = js.undefined
   }
   
@@ -3265,11 +3262,11 @@ object S3Ns extends js.Object {
          */
     var Bucket: BucketName
     /**
-         * 
+         * Indicates whether this operation should bypass Governance-mode restrictions.j
          */
     var BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined
     /**
-         * The MD5 signature for the configuration included in your request.
+         * The MD5 hash for the request body.
          */
     var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
     /**
@@ -6628,7 +6625,7 @@ object S3Ns extends js.Object {
   type IfUnmodifiedSince = stdLib.Date
   type Initiated = stdLib.Date
   type InventoryConfigurationList = js.Array[InventoryConfiguration]
-  type InventoryFormat = awsDashSdkLib.awsDashSdkLibStrings.CSV | awsDashSdkLib.awsDashSdkLibStrings.ORC | java.lang.String
+  type InventoryFormat = awsDashSdkLib.awsDashSdkLibStrings.CSV | awsDashSdkLib.awsDashSdkLibStrings.ORC | awsDashSdkLib.awsDashSdkLibStrings.Parquet | java.lang.String
   type InventoryFrequency = awsDashSdkLib.awsDashSdkLibStrings.Daily | awsDashSdkLib.awsDashSdkLibStrings.Weekly | java.lang.String
   type InventoryId = java.lang.String
   type InventoryIncludedObjectVersions = awsDashSdkLib.awsDashSdkLibStrings.All | awsDashSdkLib.awsDashSdkLibStrings.Current | java.lang.String

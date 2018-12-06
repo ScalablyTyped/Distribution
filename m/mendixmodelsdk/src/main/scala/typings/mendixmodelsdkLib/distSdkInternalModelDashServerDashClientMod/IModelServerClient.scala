@@ -18,6 +18,7 @@ trait IModelServerClient extends js.Object {
        */
   def commit(
     workingCopyId: java.lang.String,
+    branchName: java.lang.String,
     message: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[scala.Double],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback

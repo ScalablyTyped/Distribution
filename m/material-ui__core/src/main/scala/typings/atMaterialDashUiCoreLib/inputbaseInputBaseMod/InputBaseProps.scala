@@ -15,7 +15,6 @@ trait InputBaseProps
   var defaultValue: js.UndefOr[
     (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
   ] = js.undefined
-  var disableUnderline: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var endAdornment: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined

@@ -31,7 +31,7 @@ class ByIdReference[T /* <: mendixmodelsdkLib.distSdkInternalElementsMod.Abstrac
       mobxLib.libTypesObservablevalueMod.IValueWillChange[T | scala.Null]
     ]
   ): mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback = js.native
-  def resolve(): scala.Boolean = js.native
+  def resolve(): scala.Unit = js.native
   def set(): scala.Unit = js.native
   def set(newValue: T): scala.Unit = js.native
   /**

@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "ng-cordova"
-version := "0.0-unknown-dt-20181018Z-c7aa1e"
+version := "0.0-unknown-dt-20181206Z-c7aa1e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

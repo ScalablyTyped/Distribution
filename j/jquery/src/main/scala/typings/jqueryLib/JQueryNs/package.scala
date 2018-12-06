@@ -31,14 +31,9 @@ package object JQueryNs {
   // region Easing
   // #region Easing
   type EasingMethod = js.Function1[/* percent */ scala.Double, scala.Double]
-  // #endregion
-  type EventHandler[TCurrentTarget, TData] = EventHandlerBase[TCurrentTarget, Event[TCurrentTarget, TData]]
+  type EventHandler[TCurrentTarget, TData] = EventHandlerBase[TCurrentTarget, TriggeredEvent[js.Any, TData, js.Any, js.Any]]
   // Extra parameters can be passed from trigger()
   type EventHandlerBase[TContext, T] = js.ThisFunction2[/* this */ TContext, /* t */ T, /* repeated */js.Any, js.Any]
-  // region Fix hooks
-  // #region Fix hooks
-  // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type FixHook = jqueryLib.Anon_Props | jqueryLib.Anon_Filter | ScalablyTyped.runtime.StringDictionary[scala.Nothing]
   type Node = stdLib.Element | stdLib.Text | stdLib.Comment | stdLib.DocumentFragment
   /**
        * This object provides a subset of the methods of the Deferred object (then, done, fail, always, pipe, progress, state and promise) to prevent users from changing the state of the Deferred.
@@ -84,7 +79,6 @@ package object JQueryNs {
        * A selector is used in jQuery to select DOM elements from a DOM document. That document is, in most cases, the DOM document present in all browsers, but can also be an XML document received via Ajax.
        */
   type Selector = java.lang.String
-  // #endregion
   // region Special event hooks
   // #region Special event hooks
   /**
@@ -94,7 +88,7 @@ package object JQueryNs {
        * @see \`{@link https://learn.jquery.com/events/event-extensions/#special-event-hooks }\`
        */
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type SpecialEventHook[TTarget, TData] = jqueryLib.Anon_NoBubble | jqueryLib.Anon_BindType | jqueryLib.Anon_DelegateType | (jqueryLib.Anon_Setup[TTarget, TData]) | jqueryLib.Anon_Teardown[TTarget] | (jqueryLib.Anon_Add[TTarget, TData]) | (jqueryLib.Anon_Remove[TTarget, TData]) | (jqueryLib.Anon_Trigger[TTarget, TData]) | (jqueryLib.Anon_Default[TTarget, TData]) | (jqueryLib.Anon_Handle[TTarget, TData]) | (jqueryLib.Anon_PreDispatch[TTarget, TData]) | (jqueryLib.Anon_PostDispatch[TTarget, TData]) | ScalablyTyped.runtime.StringDictionary[scala.Nothing]
+  type SpecialEventHook[TTarget, TData] = jqueryLib.Anon_NoBubble | jqueryLib.Anon_BindType | jqueryLib.Anon_DelegateType | (jqueryLib.Anon_Setup[TTarget, TData]) | jqueryLib.Anon_Teardown[TTarget] | (jqueryLib.Anon_Add[TTarget, TData]) | (jqueryLib.Anon_Remove[TTarget, TData]) | (jqueryLib.Anon_Trigger[TTarget, TData]) | jqueryLib.Anon_Default[TData] | (jqueryLib.Anon_Handle[TTarget, TData]) | jqueryLib.Anon_PreDispatch[TTarget] | jqueryLib.Anon_PostDispatch[TTarget] | ScalablyTyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Speed
   // #region Speed
@@ -118,6 +112,7 @@ package object JQueryNs {
     /* finalValue */ scala.Double, 
     Tween[TElement]
   ]
+  type TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, TType /* <: java.lang.String */] = EventHandlerBase[TCurrentTarget, js.Any]
   type TypeOrArray[T] = T | js.Array[T]
   // #endregion
   // region Val hooks
@@ -128,6 +123,7 @@ package object JQueryNs {
   type _Falsy = js.UndefOr[
     jqueryLib.jqueryLibNumbers.`false` | scala.Null | jqueryLib.jqueryLibNumbers.`0` | jqueryLib.jqueryLibStrings.Empty | js.Any
   ]
+  type _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = jqueryLib.jqueryLibStrings._TypeEventHandlers with js.Any
   /**
        * A string is designated htmlString in jQuery documentation when it is used to represent one or more DOM elements, typically to be created and inserted in the document. When passed as an argument of the jQuery() function, the string is identified as HTML if it starts with <tag ... >) and is parsed as such until the final > character. Prior to jQuery 1.9, a string was considered to be HTML if it contained <tag ... > anywhere within the string.
        */

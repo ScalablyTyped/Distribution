@@ -138,7 +138,7 @@ object utilNs extends js.Object {
   def nextFrame(callback: js.Function0[scala.Unit]): scala.Double = js.native
   def nextFrame(callback: js.Function0[scala.Unit], context: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Double = js.native
   def noop(): scala.Unit = js.native
-  def normalizeEvent(evt: jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null]): jqueryLib.JQueryNs.Event[stdLib.EventTarget, scala.Null] = js.native
+  def normalizeEvent(evt: jqueryLib.JQueryNs.Event): jqueryLib.JQueryNs.Event = js.native
   def normalizeSides(sides: jointjsLib.jointjsMod.diaNs.Sides): jointjsLib.jointjsMod.diaNs.PaddingJSON = js.native
   def omit(`object`: js.Object, propertyPathsToOmit: PropertyPath*): js.Object = js.native
   def parseCssNumeric(`val`: js.Any, restrictUnits: java.lang.String): jointjsLib.Anon_Value | scala.Null = js.native

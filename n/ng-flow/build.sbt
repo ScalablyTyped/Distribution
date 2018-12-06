@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "ng-flow"
-version := "0.0-unknown-dt-20180910Z-9d4ca0"
+version := "0.0-unknown-dt-20181206Z-9d4ca0"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

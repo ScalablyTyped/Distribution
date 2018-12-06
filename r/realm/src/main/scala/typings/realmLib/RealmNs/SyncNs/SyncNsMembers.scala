@@ -16,6 +16,7 @@ object SyncNsMembers extends js.Object {
     changeCallback: js.Function1[/* changeEvent */ ChangeEvent, scala.Unit | stdLib.Promise[scala.Unit]]
   ): scala.Unit = js.native
   def initiateClientReset(path: java.lang.String): scala.Unit = js.native
+  def reconnect(): scala.Unit = js.native
   def removeAllListeners(): stdLib.Promise[scala.Unit] = js.native
   def removeListener(
     regex: java.lang.String,

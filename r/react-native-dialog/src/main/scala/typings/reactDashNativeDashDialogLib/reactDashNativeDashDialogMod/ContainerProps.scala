@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait ContainerProps extends js.Object {
   var blurComponentIOS: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var children: js.Array[reactLib.reactMod.Global.JSXNs.Element]
+  var children: js.Array[reactLib.reactMod.ReactNs.ReactNode]
   /**
        * default: false
        */

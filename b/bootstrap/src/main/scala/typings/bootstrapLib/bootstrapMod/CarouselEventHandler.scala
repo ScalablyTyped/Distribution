@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait CarouselEventHandler[TElement]
-  extends jqueryLib.JQueryNs.Event[TElement, js.UndefOr[scala.Nothing]] {
+  extends jqueryLib.JQueryNs.TriggeredEvent[TElement, js.UndefOr[scala.Nothing], js.Any, js.Any] {
   /**
        * The direction in which the carousel is sliding.
        */

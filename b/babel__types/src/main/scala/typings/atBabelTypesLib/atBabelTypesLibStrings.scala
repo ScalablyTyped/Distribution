@@ -145,6 +145,9 @@ object atBabelTypesLibStrings {
   sealed trait ClassMethod extends js.Object
   
   @js.native
+  sealed trait ClassPrivateMethod extends js.Object
+  
+  @js.native
   sealed trait ClassPrivateProperty extends js.Object
   
   @js.native
@@ -862,6 +865,7 @@ object atBabelTypesLibStrings {
   def ClassExpression: ClassExpression = "ClassExpression".asInstanceOf[ClassExpression]
   def ClassImplements: ClassImplements = "ClassImplements".asInstanceOf[ClassImplements]
   def ClassMethod: ClassMethod = "ClassMethod".asInstanceOf[ClassMethod]
+  def ClassPrivateMethod: ClassPrivateMethod = "ClassPrivateMethod".asInstanceOf[ClassPrivateMethod]
   def ClassPrivateProperty: ClassPrivateProperty = "ClassPrivateProperty".asInstanceOf[ClassPrivateProperty]
   def ClassProperty: ClassProperty = "ClassProperty".asInstanceOf[ClassProperty]
   def CommentBlock: CommentBlock = "CommentBlock".asInstanceOf[CommentBlock]

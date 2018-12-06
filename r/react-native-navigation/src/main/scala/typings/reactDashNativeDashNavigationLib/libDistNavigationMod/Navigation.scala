@@ -113,11 +113,29 @@ class Navigation () extends js.Object {
     getComponentClassFunc: reactDashNativeLib.reactDashNativeMod.ComponentProvider
   ): reactDashNativeLib.reactDashNativeMod.ComponentProvider = js.native
   /**
+       * Every navigation component in your app must be registered with a unique name.
+       * The component itself is a traditional React component extending React.Component.
+       */
+  def registerComponent(
+    componentName: scala.Double,
+    getComponentClassFunc: reactDashNativeLib.reactDashNativeMod.ComponentProvider
+  ): reactDashNativeLib.reactDashNativeMod.ComponentProvider = js.native
+  /**
        * Utility helper function like registerComponent,
        * wraps the provided component with a react-redux Provider with the passed redux store
        */
   def registerComponentWithRedux(
     componentName: java.lang.String,
+    getComponentClassFunc: reactDashNativeLib.reactDashNativeMod.ComponentProvider,
+    ReduxProvider: js.Any,
+    reduxStore: js.Any
+  ): reactDashNativeLib.reactDashNativeMod.ComponentProvider = js.native
+  /**
+       * Utility helper function like registerComponent,
+       * wraps the provided component with a react-redux Provider with the passed redux store
+       */
+  def registerComponentWithRedux(
+    componentName: scala.Double,
     getComponentClassFunc: reactDashNativeLib.reactDashNativeMod.ComponentProvider,
     ReduxProvider: js.Any,
     reduxStore: js.Any

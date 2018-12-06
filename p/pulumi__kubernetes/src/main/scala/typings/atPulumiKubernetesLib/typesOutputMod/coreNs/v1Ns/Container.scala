@@ -86,7 +86,7 @@ trait Container extends js.Object {
   val readinessProbe: Probe
   /**
                * Compute Resources required by this container. Cannot be updated. More info:
-               * https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
+               * https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
                */
   val resources: ResourceRequirements
   /**
@@ -133,8 +133,8 @@ trait Container extends js.Object {
                */
   val tty: scala.Boolean
   /**
-               * volumeDevices is the list of block devices to be used by the container. This is an alpha
-               * feature and may change in the future.
+               * volumeDevices is the list of block devices to be used by the container. This is a beta
+               * feature.
                */
   val volumeDevices: js.Array[VolumeDevice]
   /**

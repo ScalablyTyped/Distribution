@@ -15,7 +15,7 @@ trait EnvFromSource extends js.Object {
                */
   val configMapRef: ConfigMapEnvSource
   /**
-               * An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
+               * An optional identifier to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
                */
   val prefix: java.lang.String
   /**

@@ -21,6 +21,8 @@ trait AvatarProps extends js.Object {
   ] = js.undefined
   /** Src of image avatar */
   var src: js.UndefOr[java.lang.String] = js.undefined
+  /** Srcset of image avatar */
+  var srcSet: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 

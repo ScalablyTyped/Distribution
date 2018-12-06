@@ -126,7 +126,7 @@ trait _Impl extends js.Object {
                */
   def onSuccess(
     `this`: semanticDashUiDashFormLib.JQuery,
-    event: jqueryLib.JQueryNs.Event[stdLib.HTMLElement, scala.Null],
+    event: jqueryLib.JQueryNs.TriggeredEvent[stdLib.HTMLElement, _, _, _],
     fields: js.Any
   ): scala.Unit
   // endregion

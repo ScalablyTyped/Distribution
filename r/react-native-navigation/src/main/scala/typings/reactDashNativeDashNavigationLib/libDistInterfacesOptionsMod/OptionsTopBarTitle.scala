@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation._
 
 trait OptionsTopBarTitle extends js.Object {
   /**
+       * Title alignment
+       * #### (Android specific)
+       */
+  var alignment: js.UndefOr[
+    reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.center | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.fill
+  ] = js.undefined
+  /**
        * Text color
        */
   var color: js.UndefOr[Color] = js.undefined

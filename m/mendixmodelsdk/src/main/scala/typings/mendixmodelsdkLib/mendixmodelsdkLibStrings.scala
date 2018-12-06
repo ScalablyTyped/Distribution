@@ -109,6 +109,9 @@ object mendixmodelsdkLibStrings {
   sealed trait bidi extends js.Object
   
   @js.native
+  sealed trait commit extends js.Object
+  
+  @js.native
   sealed trait consistencyerrors extends js.Object
   
   @js.native
@@ -190,6 +193,9 @@ object mendixmodelsdkLibStrings {
   sealed trait template extends js.Object
   
   @js.native
+  sealed trait update extends js.Object
+  
+  @js.native
   sealed trait updating extends js.Object
   
   @js.native
@@ -232,6 +238,7 @@ object mendixmodelsdkLibStrings {
   def attached: attached = "attached".asInstanceOf[attached]
   def avatarUrl: avatarUrl = "avatarUrl".asInstanceOf[avatarUrl]
   def bidi: bidi = "bidi".asInstanceOf[bidi]
+  def commit: commit = "commit".asInstanceOf[commit]
   def consistencyerrors: consistencyerrors = "consistencyerrors".asInstanceOf[consistencyerrors]
   def conversion: conversion = "conversion".asInstanceOf[conversion]
   def delete: delete = "delete".asInstanceOf[delete]
@@ -259,6 +266,7 @@ object mendixmodelsdkLibStrings {
   def teamServerBaseBranch: teamServerBaseBranch = "teamServerBaseBranch".asInstanceOf[teamServerBaseBranch]
   def teamServerBaseRevision: teamServerBaseRevision = "teamServerBaseRevision".asInstanceOf[teamServerBaseRevision]
   def template: template = "template".asInstanceOf[template]
+  def update: update = "update".asInstanceOf[update]
   def updating: updating = "updating".asInstanceOf[updating]
   def workingCopyId: workingCopyId = "workingCopyId".asInstanceOf[workingCopyId]
   def zip: zip = "zip".asInstanceOf[zip]

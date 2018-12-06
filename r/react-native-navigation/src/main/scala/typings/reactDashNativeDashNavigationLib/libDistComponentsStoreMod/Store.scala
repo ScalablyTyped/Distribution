@@ -12,8 +12,10 @@ class Store () extends js.Object {
   var propsById: js.Any = js.native
   def cleanId(id: java.lang.String): scala.Unit = js.native
   def getComponentClassForName(componentName: java.lang.String): js.Any = js.native
+  def getComponentClassForName(componentName: scala.Double): js.Any = js.native
   def getPropsForId(componentId: java.lang.String): js.Any = js.native
   def setComponentClassForName(componentName: java.lang.String, ComponentClass: js.Any): scala.Unit = js.native
+  def setComponentClassForName(componentName: scala.Double, ComponentClass: js.Any): scala.Unit = js.native
   def setPropsForId(componentId: java.lang.String, props: js.Any): scala.Unit = js.native
 }
 

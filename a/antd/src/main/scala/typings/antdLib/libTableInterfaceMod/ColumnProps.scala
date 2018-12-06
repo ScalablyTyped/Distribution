@@ -27,7 +27,7 @@ trait ColumnProps[T] extends js.Object {
   var filters: js.UndefOr[js.Array[ColumnFilterItem]] = js.undefined
   var fixed: js.UndefOr[scala.Boolean | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right] = js.undefined
   var key: js.UndefOr[reactLib.reactMod.ReactNs.Key] = js.undefined
-  var onCell: js.UndefOr[js.Function1[/* record */ T, _]] = js.undefined
+  var onCell: js.UndefOr[js.Function2[/* record */ T, /* rowIndex */ scala.Double, _]] = js.undefined
   var onCellClick: js.UndefOr[js.Function2[/* record */ T, /* event */ js.Any, scala.Unit]] = js.undefined
   var onFilter: js.UndefOr[js.Function2[/* value */ js.Any, /* record */ T, scala.Boolean]] = js.undefined
   var onFilterDropdownVisibleChange: js.UndefOr[js.Function1[/* visible */ scala.Boolean, scala.Unit]] = js.undefined

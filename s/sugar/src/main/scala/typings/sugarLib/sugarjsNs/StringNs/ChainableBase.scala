@@ -25,7 +25,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def charCodeAt(index: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native
   def chars[T](): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def chars[T](
-    callback: js.Function3[
+    eachCharFn: js.Function3[
       /* char */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 
@@ -35,7 +35,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def codePointAt(pos: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[js.UndefOr[scala.Double]] = js.native
   def codes[T](): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def codes[T](
-    callback: js.Function3[
+    eachCodeFn: js.Function3[
       /* code */ scala.Double, 
       /* i */ scala.Double, 
       /* str */ java.lang.String, 
@@ -60,7 +60,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def fontsize(size: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def forEach[T](): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def forEach[T](
-    callback: js.Function3[
+    eachFn: js.Function3[
       /* match */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 
@@ -70,7 +70,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def forEach[T](search: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def forEach[T](
     search: java.lang.String,
-    callback: js.Function3[
+    eachFn: js.Function3[
       /* match */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 
@@ -80,7 +80,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def forEach[T](search: stdLib.RegExp): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def forEach[T](
     search: stdLib.RegExp,
-    callback: js.Function3[
+    eachFn: js.Function3[
       /* match */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 
@@ -137,7 +137,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def lastIndexOf(searchString: java.lang.String, position: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native
   def lines[T](): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def lines[T](
-    callback: js.Function3[
+    eachLineFn: js.Function3[
       /* line */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 
@@ -182,7 +182,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def removeTags(): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def removeTags(tag: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def removeTags(tag: java.lang.String, replace: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
-  def removeTags(tag: java.lang.String, replace: tagReplaceFn): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
+  def removeTags(tag: java.lang.String, replace: replaceFn): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def repeat(count: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def replace(searchValue: java.lang.String, replaceValue: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def replace(
@@ -216,7 +216,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def stripTags(): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def stripTags(tag: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def stripTags(tag: java.lang.String, replace: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
-  def stripTags(tag: java.lang.String, replace: tagReplaceFn): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
+  def stripTags(tag: java.lang.String, replace: replaceFn): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def sub(): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def substr(from: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def substr(from: scala.Double, length: scala.Double): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
@@ -247,7 +247,7 @@ trait ChainableBase[RawValue] extends js.Object {
   def unescapeURL(partial: scala.Boolean): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def words[T](): sugarLib.sugarjsNs.SugarDefaultChainable[js.Array[T]] = js.native
   def words[T](
-    callback: js.Function3[
+    eachWordFn: js.Function3[
       /* word */ java.lang.String, 
       /* i */ scala.Double, 
       /* arr */ js.Array[java.lang.String], 

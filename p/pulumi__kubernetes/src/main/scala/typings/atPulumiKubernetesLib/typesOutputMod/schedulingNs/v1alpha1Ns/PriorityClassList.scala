@@ -30,7 +30,7 @@ trait PriorityClassList extends js.Object {
   val kind: java.lang.String
   /**
                * Standard list metadata More info:
-               * http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#metadata
+               * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
                */
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }

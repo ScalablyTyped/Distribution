@@ -14,7 +14,7 @@ class Model ()
 @js.native
 object Model extends js.Object {
   def createSdkClient(connectionConfig: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ISdkConfig): mendixmodelsdkLib.distModelDashSdkDashClientMod.ModelSdkClientImpl[
-    mendixmodelsdkLib.distGenBaseDashModelMod.IModel, 
+    mendixmodelsdkLib.distMendixDashModelMod.IModel, 
     mendixmodelsdkLib.distMendixDashModelMod.Model
   ] = js.native
 }

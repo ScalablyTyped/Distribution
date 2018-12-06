@@ -11,7 +11,7 @@ object libShorthandsPositionMod extends js.Object {
   def default(
     positionKeyword: java.lang.String,
     values: (scala.Null | scala.Unit | java.lang.String | scala.Double)*
-  ): js.Object = js.native
-  def default(values: (scala.Null | scala.Unit | java.lang.String | scala.Double)*): js.Object = js.native
+  ): polishedLib.libTypesStyleMod.Styles = js.native
+  def default(values: (scala.Null | scala.Unit | java.lang.String | scala.Double)*): polishedLib.libTypesStyleMod.Styles = js.native
 }
 

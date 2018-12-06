@@ -31,6 +31,10 @@ trait NodeStatus extends js.Object {
                */
   val conditions: js.Array[NodeCondition]
   /**
+               * Status of the config assigned to the node via the dynamic Kubelet config feature.
+               */
+  val config: NodeConfigStatus
+  /**
                * Endpoints of daemons running on the Node.
                */
   val daemonEndpoints: NodeDaemonEndpoints

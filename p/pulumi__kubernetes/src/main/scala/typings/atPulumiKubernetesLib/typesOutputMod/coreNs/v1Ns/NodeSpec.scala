@@ -16,8 +16,8 @@ trait NodeSpec extends js.Object {
                */
   val configSource: NodeConfigSource
   /**
-               * External ID of the node assigned by some machine database (e.g. a cloud provider).
-               * Deprecated.
+               * Deprecated. Not all kubelets will set this field. Remove field after 1.13. see:
+               * https://issues.k8s.io/61966
                */
   val externalID: java.lang.String
   /**

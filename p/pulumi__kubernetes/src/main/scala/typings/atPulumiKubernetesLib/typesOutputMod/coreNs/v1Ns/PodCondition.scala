@@ -32,7 +32,7 @@ trait PodCondition extends js.Object {
                */
   val status: java.lang.String
   /**
-               * Type is the type of the condition. Currently only Ready. More info:
+               * Type is the type of the condition. More info:
                * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions
                */
   val `type`: java.lang.String

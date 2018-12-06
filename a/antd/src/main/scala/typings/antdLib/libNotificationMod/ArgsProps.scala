@@ -14,6 +14,7 @@ trait ArgsProps extends js.Object {
   var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
   var message: reactLib.reactMod.ReactNs.ReactNode
+  var onClick: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var placement: js.UndefOr[NotificationPlacement] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined

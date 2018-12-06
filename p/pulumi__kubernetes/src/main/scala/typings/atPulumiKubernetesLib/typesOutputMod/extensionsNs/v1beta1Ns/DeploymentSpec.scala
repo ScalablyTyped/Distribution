@@ -26,7 +26,7 @@ trait DeploymentSpec extends js.Object {
                * failed. The deployment controller will continue to process failed deployments and a
                * condition with a ProgressDeadlineExceeded reason will be surfaced in the deployment status.
                * Note that progress will not be estimated during the time a deployment is paused. This is
-               * not set by default.
+               * set to the max value of int32 (i.e. 2147483647) by default, which means "no deadline".
                */
   val progressDeadlineSeconds: scala.Double
   /**
@@ -36,7 +36,8 @@ trait DeploymentSpec extends js.Object {
   val replicas: scala.Double
   /**
                * The number of old ReplicaSets to retain to allow rollback. This is a pointer to distinguish
-               * between explicit zero and not specified.
+               * between explicit zero and not specified. This is set to the max value of int32 (i.e.
+               * 2147483647) by default, which means "retaining all old RelicaSets".
                */
   val revisionHistoryLimit: scala.Double
   /**

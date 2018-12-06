@@ -1,6 +1,6 @@
 organization := "com.scalablytyped"
 name := "feathersjs__authentication-oauth1"
-version := "1.0-dt-20180910Z-f82a11"
+version := "1.0-dt-20180910Z-edb2cd"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "com.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-b92a74",
   "com.scalablytyped" %%% "express" % "4.16-dt-20180910Z-b5e732",
   "com.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-5d5875",
-  "com.scalablytyped" %%% "feathersjs__feathers" % "3.1-dt-20181121Z-a5965f",
+  "com.scalablytyped" %%% "feathersjs__feathers" % "3.1-dt-20181206Z-783387",
   "com.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-c023cc",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-1bf893",

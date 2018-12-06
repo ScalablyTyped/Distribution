@@ -20,5 +20,12 @@ trait PodsMetricStatus extends js.Object {
                * metricName is the name of the metric in question
                */
   val metricName: java.lang.String
+  /**
+               * selector is the string-encoded form of a standard kubernetes label selector for the given
+               * metric When set in the PodsMetricSource, it is passed as an additional parameter to the
+               * metrics server for more specific metrics scoping. When unset, just the metricName will be
+               * used to gather metrics.
+               */
+  val selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
 }
 

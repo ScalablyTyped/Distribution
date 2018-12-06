@@ -21,5 +21,6 @@ object Mention extends js.Object {
   var toContentState: js.Any = js.native
   @JSName("toString")
   var toString_FMention: js.Any = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libMentionMod.MentionProps, state: antdLib.libMentionMod.MentionState): antdLib.Anon_Suggestions | scala.Null = js.native
 }
 

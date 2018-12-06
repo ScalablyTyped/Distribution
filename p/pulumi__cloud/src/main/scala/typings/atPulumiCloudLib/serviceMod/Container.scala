@@ -55,7 +55,7 @@ trait Container extends js.Object {
        * pulled from the Docker Hub.  If `image` *and* `build` are specified, the `image` controls the
        * resulting image tag for the build image that gets pushed.
        */
-  var image: js.UndefOr[java.lang.String] = js.undefined
+  var image: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
        * The maximum amount of memory the container will be allowed to use. Maps to the Docker
        * `--memory` option - see

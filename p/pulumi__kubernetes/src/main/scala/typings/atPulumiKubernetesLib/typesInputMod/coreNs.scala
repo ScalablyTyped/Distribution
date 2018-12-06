@@ -196,19 +196,53 @@ object coreNs extends js.Object {
     }
     
     /**
-             * Represents storage that is managed by an external CSI volume driver
+             * Represents storage that is managed by an external CSI volume driver (Beta feature)
              */
     
     trait CSIPersistentVolumeSource extends js.Object {
+      /**
+                   * ControllerPublishSecretRef is a reference to the secret object containing sensitive
+                   * information to pass to the CSI driver to complete the CSI ControllerPublishVolume and
+                   * ControllerUnpublishVolume calls. This field is optional, and may be empty if no secret is
+                   * required. If the secret object contains more than one secret, all secrets are passed.
+                   */
+      var controllerPublishSecretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
       /**
                    * Driver is the name of the driver to use for this volume. Required.
                    */
       var driver: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
       /**
+                   * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
+                   * Ex. "ext4", "xfs", "ntfs".
+                   */
+      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * NodePublishSecretRef is a reference to the secret object containing sensitive information
+                   * to pass to the CSI driver to complete the CSI NodePublishVolume and NodeUnpublishVolume
+                   * calls. This field is optional, and may be empty if no secret is required. If the secret
+                   * object contains more than one secret, all secrets are passed.
+                   */
+      var nodePublishSecretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      /**
+                   * NodeStageSecretRef is a reference to the secret object containing sensitive information to
+                   * pass to the CSI driver to complete the CSI NodeStageVolume and NodeStageVolume and
+                   * NodeUnstageVolume calls. This field is optional, and may be empty if no secret is required.
+                   * If the secret object contains more than one secret, all secrets are passed.
+                   */
+      var nodeStageSecretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      /**
                    * Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false
                    * (read/write).
                    */
       var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * Attributes of the volume to publish.
+                   */
+      var volumeAttributes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[
+              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            ]
+          ] = js.undefined
       /**
                    * VolumeHandle is the unique volume name returned by the CSI volume plugin’s CreateVolume
                    * to refer to the volume on all subsequent calls. Required.
@@ -313,6 +347,35 @@ object coreNs extends js.Object {
              * support ownership management and SELinux relabeling.
              */
     
+    trait CinderPersistentVolumeSource extends js.Object {
+      /**
+                   * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
+                   * Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More
+                   * info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+                   */
+      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
+                   * VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+                   */
+      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * Optional: points to a secret object containing parameters used to connect to OpenStack.
+                   */
+      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      /**
+                   * volume id used to identify the volume in cinder More info:
+                   * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+                   */
+      var volumeID: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
+             * Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting
+             * to a container. The volume must also be in the same region as the kubelet. Cinder volumes
+             * support ownership management and SELinux relabeling.
+             */
+    
     trait CinderVolumeSource extends js.Object {
       /**
                    * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
@@ -325,6 +388,10 @@ object coreNs extends js.Object {
                    * VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
                    */
       var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * Optional: points to a secret object containing parameters used to connect to OpenStack.
+                   */
+      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]] = js.undefined
       /**
                    * volume id used to identify the volume in cinder More info:
                    * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
@@ -446,8 +513,17 @@ object coreNs extends js.Object {
                    */
       var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
+                   * BinaryData contains the binary data. Each key must consist of alphanumeric characters, '-',
+                   * '_' or '.'. BinaryData can contain byte sequences that are not in the UTF-8 range. The keys
+                   * stored in BinaryData must not overlap with the ones in the Data field, this is enforced
+                   * during validation process. Using this field will require 1.10+ apiserver and kubelet.
+                   */
+      var binaryData: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      /**
                    * Data contains the configuration data. Each key must consist of alphanumeric characters,
-                   * '-', '_' or '.'.
+                   * '-', '_' or '.'. Values with non-UTF-8 byte sequences must use the BinaryData field. The
+                   * keys stored in Data must not overlap with the keys in the BinaryData field, this is
+                   * enforced during validation process.
                    */
       var data: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[
@@ -538,6 +614,38 @@ object coreNs extends js.Object {
       var metadata: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
+    }
+    
+    /**
+             * ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config
+             * source for the Node.
+             */
+    
+    trait ConfigMapNodeConfigSource extends js.Object {
+      /**
+                   * KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the
+                   * KubeletConfiguration structure This field is required in all cases.
+                   */
+      var kubeletConfigKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
+                   */
+      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in
+                   * all cases.
+                   */
+      var namespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is
+                   * forbidden in Node.Spec, and required in Node.Status.
+                   */
+      var resourceVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec,
+                   * and required in Node.Status.
+                   */
+      var uid: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -688,7 +796,7 @@ object coreNs extends js.Object {
       var readinessProbe: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Probe]] = js.undefined
       /**
                    * Compute Resources required by this container. Cannot be updated. More info:
-                   * https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
+                   * https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
                    */
       var resources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceRequirements]] = js.undefined
       /**
@@ -735,8 +843,8 @@ object coreNs extends js.Object {
                    */
       var tty: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
-                   * volumeDevices is the list of block devices to be used by the container. This is an alpha
-                   * feature and may change in the future.
+                   * volumeDevices is the list of block devices to be used by the container. This is a beta
+                   * feature.
                    */
       var volumeDevices: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[VolumeDevice]]] = js.undefined
       /**
@@ -756,7 +864,7 @@ object coreNs extends js.Object {
     
     trait ContainerImage extends js.Object {
       /**
-                   * Names by which this image is known. e.g. ["gcr.io/google_containers/hyperkube:v1.0.7",
+                   * Names by which this image is known. e.g. ["k8s.gcr.io/hyperkube:v1.0.7",
                    * "dockerhub.io/google_containers/hyperkube:v1.0.7"]
                    */
       var names: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
@@ -792,7 +900,7 @@ object coreNs extends js.Object {
                    */
       var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
-                   * Protocol for port. Must be UDP or TCP. Defaults to "TCP".
+                   * Protocol for port. Must be UDP, TCP, or SCTP. Defaults to "TCP".
                    */
       var protocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
     }
@@ -1056,7 +1164,7 @@ object coreNs extends js.Object {
                    */
       var port: atPulumiPulumiLib.resourceMod.Input[scala.Double]
       /**
-                   * The IP protocol for this port. Must be UDP or TCP. Default is TCP.
+                   * The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP.
                    */
       var protocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
     }
@@ -1136,7 +1244,7 @@ object coreNs extends js.Object {
                    * will appear in both Addresses and NotReadyAddresses in the same subset. Sets of addresses
                    * and ports that comprise a service.
                    */
-      var subsets: atPulumiPulumiLib.resourceMod.Input[js.Array[EndpointSubset]]
+      var subsets: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[EndpointSubset]]] = js.undefined
     }
     
     /**
@@ -1181,7 +1289,7 @@ object coreNs extends js.Object {
                    */
       var configMapRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ConfigMapEnvSource]] = js.undefined
       /**
-                   * An optional identifer to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
+                   * An optional identifier to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
                    */
       var prefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -1356,7 +1464,7 @@ object coreNs extends js.Object {
     
     /**
              * EventSeries contain information on series of events, i.e. thing that was/is happening
-             * continously for some time.
+             * continuously for some time.
              */
     
     trait EventSeries extends js.Object {
@@ -1365,7 +1473,7 @@ object coreNs extends js.Object {
                    */
       var count: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       /**
-                   * Time of the last occurence observed
+                   * Time of the last occurrence observed
                    */
       var lastObservedTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -1433,6 +1541,42 @@ object coreNs extends js.Object {
                    * targetWWNs and lun must be set, but not both simultaneously.
                    */
       var wwids: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+    }
+    
+    /**
+             * FlexPersistentVolumeSource represents a generic persistent volume resource that is
+             * provisioned/attached using an exec based plugin.
+             */
+    
+    trait FlexPersistentVolumeSource extends js.Object {
+      /**
+                   * Driver is the name of the driver to use for this volume.
+                   */
+      var driver: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
+                   * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
+                   */
+      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * Optional: Extra command options if any.
+                   */
+      var options: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[
+              ScalablyTyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            ]
+          ] = js.undefined
+      /**
+                   * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
+                   * VolumeMounts.
+                   */
+      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * Optional: SecretRef is reference to the secret object containing sensitive information to
+                   * pass to the plugin scripts. This may be empty if no secret object is specified. If the
+                   * secret object contains more than one secret, all secrets are passed to the plugin scripts.
+                   */
+      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
     }
     
     /**
@@ -1527,6 +1671,10 @@ object coreNs extends js.Object {
     /**
              * Represents a volume that is populated with the contents of a git repository. Git repo volumes
              * do not support ownership management. Git repo volumes support SELinux relabeling.
+             *
+             * DEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an
+             * EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into
+             * the Pod's container.
              */
     
     trait GitRepoVolumeSource extends js.Object {
@@ -1544,6 +1692,36 @@ object coreNs extends js.Object {
                    * Commit hash for the specified revision.
                    */
       var revision: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+    }
+    
+    /**
+             * Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not
+             * support ownership management or SELinux relabeling.
+             */
+    
+    trait GlusterfsPersistentVolumeSource extends js.Object {
+      /**
+                   * EndpointsName is the endpoint name that details Glusterfs topology. More info:
+                   * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+                   */
+      var endpoints: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this field is
+                   * empty, the EndpointNamespace defaults to the same namespace as the bound PVC. More info:
+                   * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+                   */
+      var endpointsNamespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * Path is the Glusterfs volume path. More info:
+                   * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+                   */
+      var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions.
+                   * Defaults to false. More info:
+                   * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
+                   */
+      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -1987,13 +2165,19 @@ object coreNs extends js.Object {
     }
     
     /**
-             * Local represents directly-attached storage with node affinity
+             * Local represents directly-attached storage with node affinity (Beta feature)
              */
     
     trait LocalVolumeSource extends js.Object {
       /**
-                   * The full path to the volume on the node For alpha, this path must be a directory Once block
-                   * as a source is supported, then this path can point to a block device
+                   * Filesystem type to mount. It applies only when the Path is a block device. Must be a
+                   * filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The
+                   * default value is to auto-select a fileystem if unspecified.
+                   */
+      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * The full path to the volume on the node. It can be either a directory or block device
+                   * (disk, partition, ...).
                    */
       var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
     }
@@ -2232,20 +2416,60 @@ object coreNs extends js.Object {
     
     trait NodeConfigSource extends js.Object {
       /**
-                   * APIVersion defines the versioned schema of this representation of an object. Servers should
-                   * convert recognized schemas to the latest internal value, and may reject unrecognized
-                   * values. More info:
-                   * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+                   * ConfigMap is a reference to a Node's ConfigMap
                    */
-      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var configMapRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ObjectReference]] = js.undefined
+      var configMap: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ConfigMapNodeConfigSource]] = js.undefined
+    }
+    
+    /**
+             * NodeConfigStatus describes the status of the config assigned by Node.Spec.ConfigSource.
+             */
+    
+    trait NodeConfigStatus extends js.Object {
       /**
-                   * Kind is a string value representing the REST resource this object represents. Servers may
-                   * infer this from the endpoint the client submits requests to. Cannot be updated. In
-                   * CamelCase. More info:
-                   * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+                   * Active reports the checkpointed config the node is actively using. Active will represent
+                   * either the current version of the Assigned config, or the current LastKnownGood config,
+                   * depending on whether attempting to use the Assigned config results in an error.
                    */
-      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var active: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeConfigSource]] = js.undefined
+      /**
+                   * Assigned reports the checkpointed config the node will try to use. When
+                   * Node.Spec.ConfigSource is updated, the node checkpoints the associated config payload to
+                   * local disk, along with a record indicating intended config. The node refers to this record
+                   * to choose its config checkpoint, and reports this record in Assigned. Assigned only updates
+                   * in the status after the record has been checkpointed to disk. When the Kubelet is
+                   * restarted, it tries to make the Assigned config the Active config by loading and validating
+                   * the checkpointed payload identified by Assigned.
+                   */
+      var assigned: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeConfigSource]] = js.undefined
+      /**
+                   * Error describes any problems reconciling the Spec.ConfigSource to the Active config. Errors
+                   * may occur, for example, attempting to checkpoint Spec.ConfigSource to the local Assigned
+                   * record, attempting to checkpoint the payload associated with Spec.ConfigSource, attempting
+                   * to load or validate the Assigned config, etc. Errors may occur at different points while
+                   * syncing config. Earlier errors (e.g. download or checkpointing errors) will not result in a
+                   * rollback to LastKnownGood, and may resolve across Kubelet retries. Later errors (e.g.
+                   * loading or validating a checkpointed config) will result in a rollback to LastKnownGood. In
+                   * the latter case, it is usually possible to resolve the error by fixing the config assigned
+                   * in Spec.ConfigSource. You can find additional information for debugging by searching the
+                   * error message in the Kubelet log. Error is a human-readable description of the error state;
+                   * machines can check whether or not Error is empty, but should not rely on the stability of
+                   * the Error text across Kubelet versions.
+                   */
+      var error: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * LastKnownGood reports the checkpointed config the node will fall back to when it encounters
+                   * an error attempting to use the Assigned config. The Assigned config becomes the
+                   * LastKnownGood config when the node determines that the Assigned config is stable and
+                   * correct. This is currently implemented as a 10-minute soak period starting when the local
+                   * record of Assigned config is updated. If the Assigned config is Active at the end of this
+                   * period, it becomes the LastKnownGood. Note that if Spec.ConfigSource is reset to nil (use
+                   * local defaults), the LastKnownGood is also immediately reset to nil, because the local
+                   * default config is always assumed good. You should not make assumptions about the node's
+                   * method of determining config stability and correctness, as this may change or become
+                   * configurable in the future.
+                   */
+      var lastKnownGood: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeConfigSource]] = js.undefined
     }
     
     /**
@@ -2329,14 +2553,19 @@ object coreNs extends js.Object {
     }
     
     /**
-             * A null or empty node selector term matches no objects.
+             * A null or empty node selector term matches no objects. The requirements of them are ANDed.
+             * The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
              */
     
     trait NodeSelectorTerm extends js.Object {
       /**
-                   * Required. A list of node selector requirements. The requirements are ANDed.
+                   * A list of node selector requirements by node's labels.
                    */
-      var matchExpressions: atPulumiPulumiLib.resourceMod.Input[js.Array[NodeSelectorRequirement]]
+      var matchExpressions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NodeSelectorRequirement]]] = js.undefined
+      /**
+                   * A list of node selector requirements by node's fields.
+                   */
+      var matchFields: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NodeSelectorRequirement]]] = js.undefined
     }
     
     /**
@@ -2350,8 +2579,8 @@ object coreNs extends js.Object {
                    */
       var configSource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeConfigSource]] = js.undefined
       /**
-                   * External ID of the node assigned by some machine database (e.g. a cloud provider).
-                   * Deprecated.
+                   * Deprecated. Not all kubelets will set this field. Remove field after 1.13. see:
+                   * https://issues.k8s.io/61966
                    */
       var externalID: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -2399,6 +2628,10 @@ object coreNs extends js.Object {
                    * https://kubernetes.io/docs/concepts/nodes/node/#condition
                    */
       var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NodeCondition]]] = js.undefined
+      /**
+                   * Status of the config assigned to the node via the dynamic Kubelet config feature.
+                   */
+      var config: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeConfigStatus]] = js.undefined
       /**
                    * Endpoints of daemons running on the Node.
                    */
@@ -2693,6 +2926,15 @@ object coreNs extends js.Object {
                    */
       var accessModes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
       /**
+                   * This field requires the VolumeSnapshotDataSource alpha feature gate to be enabled and
+                   * currently VolumeSnapshot is the only supported data source. If the provisioner can support
+                   * VolumeSnapshot data source, it will create a new volume and data will be restored to the
+                   * volume at the same time. If the provisioner does not support VolumeSnapshot data source,
+                   * volume will not be created and the failure will be reported as an event. In the future, we
+                   * plan to support more data source types and the behavior of the provisioner may change.
+                   */
+      var dataSource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[TypedLocalObjectReference]] = js.undefined
+      /**
                    * Resources represents the minimum resources the volume should have. More info:
                    * https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
                    */
@@ -2710,8 +2952,7 @@ object coreNs extends js.Object {
       var storageClassName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
                    * volumeMode defines what type of volume is required by the claim. Value of Filesystem is
-                   * implied when not included in claim spec. This is an alpha feature and may change in the
-                   * future.
+                   * implied when not included in claim spec. This is a beta feature.
                    */
       var volumeMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -2835,7 +3076,7 @@ object coreNs extends js.Object {
                    * Cinder represents a cinder volume attached and mounted on kubelets host machine More info:
                    * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
                    */
-      var cinder: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CinderVolumeSource]] = js.undefined
+      var cinder: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CinderPersistentVolumeSource]] = js.undefined
       /**
                    * ClaimRef is part of a bi-directional binding between PersistentVolume and
                    * PersistentVolumeClaim. Expected to be non-nil when bound. claim.VolumeName is the
@@ -2844,7 +3085,7 @@ object coreNs extends js.Object {
                    */
       var claimRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ObjectReference]] = js.undefined
       /**
-                   * CSI represents storage that handled by an external CSI driver
+                   * CSI represents storage that handled by an external CSI driver (Beta feature).
                    */
       var csi: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CSIPersistentVolumeSource]] = js.undefined
       /**
@@ -2856,7 +3097,7 @@ object coreNs extends js.Object {
                    * FlexVolume represents a generic volume resource that is provisioned/attached using an exec
                    * based plugin.
                    */
-      var flexVolume: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[FlexVolumeSource]] = js.undefined
+      var flexVolume: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[FlexPersistentVolumeSource]] = js.undefined
       /**
                    * Flocker represents a Flocker volume attached to a kubelet's host machine and exposed to the
                    * pod for its usage. This depends on the Flocker control service being running
@@ -2873,7 +3114,7 @@ object coreNs extends js.Object {
                    * Provisioned by an admin. More info:
                    * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md
                    */
-      var glusterfs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[GlusterfsVolumeSource]] = js.undefined
+      var glusterfs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[GlusterfsPersistentVolumeSource]] = js.undefined
       /**
                    * HostPath represents a directory on the host. Provisioned by a developer or tester. This is
                    * useful for single-node development and testing only! On-host storage is not supported in
@@ -2902,9 +3143,15 @@ object coreNs extends js.Object {
                    */
       var nfs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NFSVolumeSource]] = js.undefined
       /**
+                   * NodeAffinity defines constraints that limit what nodes this volume can be accessed from.
+                   * This field influences the scheduling of pods that use this volume.
+                   */
+      var nodeAffinity: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeNodeAffinity]] = js.undefined
+      /**
                    * What happens to a persistent volume when released from its claim. Valid options are Retain
-                   * (default) and Recycle. Recycling must be supported by the volume plugin underlying this
-                   * persistent volume. More info:
+                   * (default for manually created PersistentVolumes), Delete (default for dynamically
+                   * provisioned PersistentVolumes), and Recycle (deprecated). Recycle must be supported by the
+                   * volume plugin underlying this PersistentVolume. More info:
                    * https://kubernetes.io/docs/concepts/storage/persistent-volumes#reclaiming
                    */
       var persistentVolumeReclaimPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
@@ -2944,7 +3191,7 @@ object coreNs extends js.Object {
       /**
                    * volumeMode defines if a volume is intended to be used with a formatted filesystem or to
                    * remain in raw block state. Value of Filesystem is implied when not included in spec. This
-                   * is an alpha feature and may change in the future.
+                   * is a beta feature.
                    */
       var volumeMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -3139,7 +3386,7 @@ object coreNs extends js.Object {
                    */
       var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
       /**
-                   * Type is the type of the condition. Currently only Ready. More info:
+                   * Type is the type of the condition. More info:
                    * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions
                    */
       var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
@@ -3214,6 +3461,17 @@ object coreNs extends js.Object {
     }
     
     /**
+             * PodReadinessGate contains the reference to a pod condition
+             */
+    
+    trait PodReadinessGate extends js.Object {
+      /**
+                   * ConditionType refers to a condition in the pod's condition list with matching type.
+                   */
+      var conditionType: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
              * PodSecurityContext holds pod-level security attributes and common container settings. Some
              * fields are also present in container.securityContext.  Field values of
              * container.securityContext take precedence over field values of PodSecurityContext.
@@ -3230,6 +3488,12 @@ object coreNs extends js.Object {
                    * If unset, the Kubelet will not modify the ownership and permissions of any volume.
                    */
       var fsGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      /**
+                   * The GID to run the entrypoint of the container process. Uses runtime default if unset. May
+                   * also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the
+                   * value specified in SecurityContext takes precedence for that container.
+                   */
+      var runAsGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       /**
                    * Indicates that the container must run as a non-root user. If true, the Kubelet will
                    * validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to
@@ -3257,6 +3521,11 @@ object coreNs extends js.Object {
                    * container's primary GID.  If unspecified, no groups will be added to any container.
                    */
       var supplementalGroups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[scala.Double]]] = js.undefined
+      /**
+                   * Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls
+                   * (by the container runtime) might fail to launch.
+                   */
+      var sysctls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Sysctl]]] = js.undefined
     }
     
     /**
@@ -3286,8 +3555,7 @@ object coreNs extends js.Object {
       var containers: atPulumiPulumiLib.resourceMod.Input[js.Array[Container]]
       /**
                    * Specifies the DNS parameters of a pod. Parameters specified here will be merged to the
-                   * generated DNS configuration based on DNSPolicy. This is an alpha feature introduced in v1.9
-                   * and CustomPodDNS feature gate must be enabled to use it.
+                   * generated DNS configuration based on DNSPolicy.
                    */
       var dnsConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodDNSConfig]] = js.undefined
       /**
@@ -3295,10 +3563,14 @@ object coreNs extends js.Object {
                    * 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in
                    * DNSConfig will be merged with the policy selected with DNSPolicy. To have DNS options set
                    * along with hostNetwork, you have to specify DNS policy explicitly to
-                   * 'ClusterFirstWithHostNet'. Note that 'None' policy is an alpha feature introduced in v1.9
-                   * and CustomPodDNS feature gate must be enabled to use it.
+                   * 'ClusterFirstWithHostNet'.
                    */
       var dnsPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * EnableServiceLinks indicates whether information about services should be injected into
+                   * pod's environment variables, matching the syntax of Docker links.
+                   */
+      var enableServiceLinks: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
                    * HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts
                    * file if specified. This is only valid for non-hostNetwork pods.
@@ -3367,18 +3639,35 @@ object coreNs extends js.Object {
                    */
       var priority: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       /**
-                   * If specified, indicates the pod's priority. "SYSTEM" is a special keyword which indicates
-                   * the highest priority. Any other name must be defined by creating a PriorityClass object
-                   * with that name. If not specified, the pod priority will be default or zero if there is no
-                   * default.
+                   * If specified, indicates the pod's priority. "system-node-critical" and
+                   * "system-cluster-critical" are two special keywords which indicate the highest priorities
+                   * with the former being the highest priority. Any other name must be defined by creating a
+                   * PriorityClass object with that name. If not specified, the pod priority will be default or
+                   * zero if there is no default.
                    */
       var priorityClassName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * If specified, all readiness gates will be evaluated for pod readiness. A pod is ready when
+                   * all its containers are ready AND all conditions specified in the readiness gates have
+                   * status equal to "True" More info:
+                   * https://github.com/kubernetes/community/blob/master/keps/sig-network/0007-pod-ready%2B%2B.md
+                   */
+      var readinessGates: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[PodReadinessGate]]] = js.undefined
       /**
                    * Restart policy for all containers within the pod. One of Always, OnFailure, Never. Default
                    * to Always. More info:
                    * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy
                    */
       var restartPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * RuntimeClassName refers to a RuntimeClass object in the node.k8s.io group, which should be
+                   * used to run this pod.  If no RuntimeClass resource matches the named class, the pod will
+                   * not be run. If unset or empty, the "legacy" RuntimeClass will be used, which is an implicit
+                   * class with an empty definition that uses the default runtime handler. More info:
+                   * https://github.com/kubernetes/community/blob/master/keps/sig-node/0014-runtime-class.md
+                   * This is an alpha feature and may change in the future.
+                   */
+      var runtimeClassName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
                    * If specified, the pod will be dispatched by specified scheduler. If not specified, the pod
                    * will be dispatched by default scheduler.
@@ -3399,6 +3688,14 @@ object coreNs extends js.Object {
                    * https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
                    */
       var serviceAccountName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * Share a single process namespace between all of the containers in a pod. When this is set
+                   * containers will be able to view and signal processes from other containers in the same pod,
+                   * and the first process in each container will not be assigned PID 1. HostPID and
+                   * ShareProcessNamespace cannot both be set. Optional: Default to false. This field is
+                   * beta-level and may be disabled with the PodShareProcessNamespace feature.
+                   */
+      var shareProcessNamespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
                    * If specified, the fully qualified Pod hostname will be "<hostname>.<subdomain>.<pod
                    * namespace>.svc.<cluster domain>". If not specified, the pod will not have a domainname at
@@ -3428,7 +3725,7 @@ object coreNs extends js.Object {
     
     /**
              * PodStatus represents information about the status of a pod. Status may trail the actual state
-             * of a system.
+             * of a system, especially if the node that hosts the pod cannot contact the control plane.
              */
     
     trait PodStatus extends js.Object {
@@ -3459,8 +3756,32 @@ object coreNs extends js.Object {
                    */
       var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
-                   * Current condition of the pod. More info:
-                   * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-phase
+                   * nominatedNodeName is set only when this pod preempts other pods on the node, but it cannot
+                   * be scheduled right away as preemption victims receive their graceful termination periods.
+                   * This field does not guarantee that the pod will be scheduled on this node. Scheduler may
+                   * decide to place the pod elsewhere if other nodes become available sooner. Scheduler may
+                   * also decide to give the resources on this node to a higher priority pod that is created
+                   * after preemption. As a result, this field may be different than PodSpec.nodeName when the
+                   * pod is scheduled.
+                   */
+      var nominatedNodeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * The phase of a Pod is a simple, high-level summary of where the Pod is in its lifecycle.
+                   * The conditions array, the reason and message fields, and the individual container status
+                   * arrays contain more detail about the pod's status. There are five possible phase values:
+                   *
+                   * Pending: The pod has been accepted by the Kubernetes system, but one or more of the
+                   * container images has not been created. This includes time before being scheduled as well as
+                   * time spent downloading images over the network, which could take a while. Running: The pod
+                   * has been bound to a node, and all of the containers have been created. At least one
+                   * container is still running, or is in the process of starting or restarting. Succeeded: All
+                   * containers in the pod have terminated in success, and will not be restarted. Failed: All
+                   * containers in the pod have terminated, and at least one container has terminated in
+                   * failure. The container either exited with non-zero status or was terminated by the system.
+                   * Unknown: For some reason the state of the pod could not be obtained, typically due to an
+                   * error in communicating with the host of the pod.
+                   *
+                   * More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-phase
                    */
       var phase: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -3471,7 +3792,7 @@ object coreNs extends js.Object {
       /**
                    * The Quality of Service (QOS) classification assigned to the pod based on resource
                    * requirements See PodQOSClass type for available QOS classes More info:
-                   * https://github.com/kubernetes/kubernetes/blob/master/docs/design/resource-qos.md
+                   * https://git.k8s.io/community/contributors/design-proposals/node/resource-qos.md
                    */
       var qosClass: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -4073,10 +4394,17 @@ object coreNs extends js.Object {
     
     trait ResourceQuotaSpec extends js.Object {
       /**
-                   * Hard is the set of desired hard limits for each named resource. More info:
+                   * hard is the set of desired hard limits for each named resource. More info:
                    * https://kubernetes.io/docs/concepts/policy/resource-quotas/
                    */
       var hard: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      /**
+                   * scopeSelector is also a collection of filters like scopes that must match each object
+                   * tracked by a quota but expressed using ScopeSelectorOperator in combination with possible
+                   * values. For a resource to match, both scopes AND scopeSelector (if specified in spec), must
+                   * be matched.
+                   */
+      var scopeSelector: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ScopeSelector]] = js.undefined
       /**
                    * A collection of filters that must match each object tracked by a quota. If not specified,
                    * the quota matches all objects.
@@ -4149,7 +4477,7 @@ object coreNs extends js.Object {
     trait ScaleIOPersistentVolumeSource extends js.Object {
       /**
                    * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
-                   * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+                   * Ex. "ext4", "xfs", "ntfs". Default is "xfs"
                    */
       var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -4176,6 +4504,7 @@ object coreNs extends js.Object {
       var sslEnabled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
                    * Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned.
+                   * Default is ThinProvisioned.
                    */
       var storageMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -4200,7 +4529,7 @@ object coreNs extends js.Object {
     trait ScaleIOVolumeSource extends js.Object {
       /**
                    * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
-                   * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+                   * Ex. "ext4", "xfs", "ntfs". Default is "xfs".
                    */
       var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -4227,6 +4556,7 @@ object coreNs extends js.Object {
       var sslEnabled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
                    * Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned.
+                   * Default is ThinProvisioned.
                    */
       var storageMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -4242,6 +4572,41 @@ object coreNs extends js.Object {
                    * volume source.
                    */
       var volumeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+    }
+    
+    /**
+             * A scope selector represents the AND of the selectors represented by the scoped-resource
+             * selector requirements.
+             */
+    
+    trait ScopeSelector extends js.Object {
+      /**
+                   * A list of scope selector requirements by scope of the resources.
+                   */
+      var matchExpressions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ScopedResourceSelectorRequirement]]] = js.undefined
+    }
+    
+    /**
+             * A scoped-resource selector requirement is a selector that contains values, a scope name, and
+             * an operator that relates the scope name and values.
+             */
+    
+    trait ScopedResourceSelectorRequirement extends js.Object {
+      /**
+                   * Represents a scope's relationship to a set of values. Valid operators are In, NotIn,
+                   * Exists, DoesNotExist.
+                   */
+      var operator: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * The name of the scope that the selector applies to.
+                   */
+      var scopeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * An array of string values. If the operator is In or NotIn, the values array must be
+                   * non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This
+                   * array is replaced during a strategic merge patch.
+                   */
+      var values: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
     }
     
     /**
@@ -4472,9 +4837,21 @@ object coreNs extends js.Object {
                    */
       var privileged: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
+                   * procMount denotes the type of proc mount to use for the containers. The default is
+                   * DefaultProcMount which uses the container runtime defaults for readonly paths and masked
+                   * paths. This requires the ProcMountType feature flag to be enabled.
+                   */
+      var procMount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
                    * Whether this container has a read-only root filesystem. Default is false.
                    */
       var readOnlyRootFilesystem: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      /**
+                   * The GID to run the entrypoint of the container process. Uses runtime default if unset. May
+                   * also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext,
+                   * the value specified in SecurityContext takes precedence.
+                   */
+      var runAsGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       /**
                    * Indicates that the container must run as a non-root user. If true, the Kubelet will
                    * validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to
@@ -4621,6 +4998,33 @@ object coreNs extends js.Object {
     }
     
     /**
+             * ServiceAccountTokenProjection represents a projected service account token volume. This
+             * projection can be used to insert a service account token into the pods runtime filesystem for
+             * use against APIs (Kubernetes API Server or otherwise).
+             */
+    
+    trait ServiceAccountTokenProjection extends js.Object {
+      /**
+                   * Audience is the intended audience of the token. A recipient of a token must identify itself
+                   * with an identifier specified in the audience of the token, and otherwise should reject the
+                   * token. The audience defaults to the identifier of the apiserver.
+                   */
+      var audience: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * ExpirationSeconds is the requested duration of validity of the service account token. As
+                   * the token approaches expiration, the kubelet volume plugin will proactively rotate the
+                   * service account token. The kubelet will start trying to rotate the token if the token is
+                   * older than 80 percent of its time to live or if the token is older than 24 hours.Defaults
+                   * to 1 hour and must be at least 10 minutes.
+                   */
+      var expirationSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      /**
+                   * Path is the path relative to the mount point of the file to project the token into.
+                   */
+      var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
              * ServiceList holds a list of services.
              */
     
@@ -4676,7 +5080,7 @@ object coreNs extends js.Object {
                    */
       var port: atPulumiPulumiLib.resourceMod.Input[scala.Double]
       /**
-                   * The IP protocol for this port. Supports "TCP" and "UDP". Default is TCP.
+                   * The IP protocol for this port. Supports "TCP", "UDP", and "SCTP". Default is TCP.
                    */
       var protocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -4757,9 +5161,7 @@ object coreNs extends js.Object {
                    * the notReadyAddresses of subsets for the Endpoints associated with the Service. The default
                    * value is false. The primary use case for setting this field is to use a StatefulSet's
                    * Headless Service to propagate SRV records for its Pods without respect to their readiness
-                   * for purpose of peer discovery. This field will replace the
-                   * service.alpha.kubernetes.io/tolerate-unready-endpoints when that annotation is deprecated
-                   * and all clients have been converted to use this field.
+                   * for purpose of peer discovery.
                    */
       var publishNotReadyAddresses: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       /**
@@ -4892,6 +5294,21 @@ object coreNs extends js.Object {
     }
     
     /**
+             * Sysctl defines a kernel parameter to be set
+             */
+    
+    trait Sysctl extends js.Object {
+      /**
+                   * Name of a property to set
+                   */
+      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * Value of a property to set
+                   */
+      var value: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
              * TCPSocketAction describes an action based on opening a socket
              */
     
@@ -4971,6 +5388,58 @@ object coreNs extends js.Object {
     }
     
     /**
+             * A topology selector requirement is a selector that matches given label. This is an alpha
+             * feature and may change in the future.
+             */
+    
+    trait TopologySelectorLabelRequirement extends js.Object {
+      /**
+                   * The label key that the selector applies to.
+                   */
+      var key: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * An array of string values. One value must match the label to be selected. Each entry in
+                   * Values is ORed.
+                   */
+      var values: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+    }
+    
+    /**
+             * A topology selector term represents the result of label queries. A null or empty topology
+             * selector term matches no objects. The requirements of them are ANDed. It provides a subset of
+             * functionality as NodeSelectorTerm. This is an alpha feature and may change in the future.
+             */
+    
+    trait TopologySelectorTerm extends js.Object {
+      /**
+                   * A list of topology selector requirements by labels.
+                   */
+      var matchLabelExpressions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[TopologySelectorLabelRequirement]]] = js.undefined
+    }
+    
+    /**
+             * TypedLocalObjectReference contains enough information to let you locate the typed referenced
+             * object inside the same namespace.
+             */
+    
+    trait TypedLocalObjectReference extends js.Object {
+      /**
+                   * APIGroup is the group for the resource being referenced. If APIGroup is not specified, the
+                   * specified Kind must be in the core API group. For any other third-party types, APIGroup is
+                   * required.
+                   */
+      var apiGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      /**
+                   * Kind is the type of resource being referenced
+                   */
+      var kind: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      /**
+                   * Name is the name of resource being referenced
+                   */
+      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    }
+    
+    /**
              * Volume represents a named volume in a pod that may be accessed by any container in the pod.
              */
     
@@ -5033,7 +5502,10 @@ object coreNs extends js.Object {
                    */
       var gcePersistentDisk: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[GCEPersistentDiskVolumeSource]] = js.undefined
       /**
-                   * GitRepo represents a git repository at a particular revision.
+                   * GitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is
+                   * deprecated. To provision a container with a git repo, mount an EmptyDir into an
+                   * InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's
+                   * container.
                    */
       var gitRepo: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[GitRepoVolumeSource]] = js.undefined
       /**
@@ -5137,8 +5609,7 @@ object coreNs extends js.Object {
       var mountPath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
       /**
                    * mountPropagation determines how mounts are propagated from the host to container and the
-                   * other way around. When not set, MountPropagationHostToContainer is used. This field is
-                   * alpha in 1.8 and can be reworked or removed in a future release.
+                   * other way around. When not set, MountPropagationNone is used. This field is beta in 1.10.
                    */
       var mountPropagation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       /**
@@ -5154,6 +5625,18 @@ object coreNs extends js.Object {
                    * (volume's root).
                    */
       var subPath: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+    }
+    
+    /**
+             * VolumeNodeAffinity defines constraints that limit what nodes this volume can be accessed
+             * from.
+             */
+    
+    trait VolumeNodeAffinity extends js.Object {
+      /**
+                   * Required specifies hard node constraints that must be met.
+                   */
+      var required: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeSelector]] = js.undefined
     }
     
     /**
@@ -5173,6 +5656,10 @@ object coreNs extends js.Object {
                    * information about the secret data to project
                    */
       var secret: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretProjection]] = js.undefined
+      /**
+                   * information about the serviceAccountToken data to project
+                   */
+      var serviceAccountToken: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ServiceAccountTokenProjection]] = js.undefined
     }
     
     /**
@@ -5229,7 +5716,6 @@ object coreNs extends js.Object {
     def isNamespace(o: js.Any): /* is Namespace */scala.Boolean = js.native
     def isNamespaceList(o: js.Any): /* is NamespaceList */scala.Boolean = js.native
     def isNode(o: js.Any): /* is Node */scala.Boolean = js.native
-    def isNodeConfigSource(o: js.Any): /* is NodeConfigSource */scala.Boolean = js.native
     def isNodeList(o: js.Any): /* is NodeList */scala.Boolean = js.native
     def isObjectFieldSelector(o: js.Any): /* is ObjectFieldSelector */scala.Boolean = js.native
     def isObjectReference(o: js.Any): /* is ObjectReference */scala.Boolean = js.native

@@ -13,15 +13,16 @@ object assertModMembers extends js.Object {
   def deepEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def deepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def doesNotThrow(block: js.Function0[scala.Unit]): scala.Unit = js.native
+  def doesNotThrow(block: js.Function0[scala.Unit], error: js.Function0[scala.Unit]): scala.Unit = js.native
+  def doesNotThrow(block: js.Function0[scala.Unit], error: js.Function0[scala.Unit], message: java.lang.String): scala.Unit = js.native
+  def doesNotThrow(block: js.Function0[scala.Unit], error: js.Function1[/* err */ js.Any, scala.Boolean]): scala.Unit = js.native
   def doesNotThrow(
     block: js.Function0[scala.Unit],
-    error: js.Function0[scala.Unit | (js.Function1[/* err */ _, scala.Boolean]) | stdLib.RegExp]
-  ): scala.Unit = js.native
-  def doesNotThrow(
-    block: js.Function0[scala.Unit],
-    error: js.Function0[scala.Unit | (js.Function1[/* err */ _, scala.Boolean]) | stdLib.RegExp],
+    error: js.Function1[/* err */ js.Any, scala.Boolean],
     message: java.lang.String
   ): scala.Unit = js.native
+  def doesNotThrow(block: js.Function0[scala.Unit], error: stdLib.RegExp): scala.Unit = js.native
+  def doesNotThrow(block: js.Function0[scala.Unit], error: stdLib.RegExp, message: java.lang.String): scala.Unit = js.native
   def doesNotThrow(block: js.Function0[scala.Unit], message: java.lang.String): scala.Unit = js.native
   def equal(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def equal(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
@@ -42,15 +43,16 @@ object assertModMembers extends js.Object {
   def strictEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def strictEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def throws(block: js.Function0[scala.Unit]): scala.Unit = js.native
+  def throws(block: js.Function0[scala.Unit], error: js.Function0[scala.Unit]): scala.Unit = js.native
+  def throws(block: js.Function0[scala.Unit], error: js.Function0[scala.Unit], message: java.lang.String): scala.Unit = js.native
+  def throws(block: js.Function0[scala.Unit], error: js.Function1[/* err */ js.Any, scala.Boolean]): scala.Unit = js.native
   def throws(
     block: js.Function0[scala.Unit],
-    error: js.Function0[scala.Unit | (js.Function1[/* err */ _, scala.Boolean]) | stdLib.RegExp]
-  ): scala.Unit = js.native
-  def throws(
-    block: js.Function0[scala.Unit],
-    error: js.Function0[scala.Unit | (js.Function1[/* err */ _, scala.Boolean]) | stdLib.RegExp],
+    error: js.Function1[/* err */ js.Any, scala.Boolean],
     message: java.lang.String
   ): scala.Unit = js.native
+  def throws(block: js.Function0[scala.Unit], error: stdLib.RegExp): scala.Unit = js.native
+  def throws(block: js.Function0[scala.Unit], error: stdLib.RegExp, message: java.lang.String): scala.Unit = js.native
   def throws(block: js.Function0[scala.Unit], message: java.lang.String): scala.Unit = js.native
 }
 

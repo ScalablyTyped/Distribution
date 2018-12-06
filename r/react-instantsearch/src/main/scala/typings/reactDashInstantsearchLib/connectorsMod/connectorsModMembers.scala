@@ -11,7 +11,21 @@ object connectorsModMembers extends js.Object {
   def connectAutoComplete(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectBreadcrumb(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectConfigure(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  def connectCurrentRefinements(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def connectCurrentRefinements(
+    stateless: reactLib.reactMod.ReactNs.StatelessComponent[
+      reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.CurrentRefinementsProvided
+    ]
+  ): reactLib.reactMod.ReactNs.ComponentClass[
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.CurrentRefinementsExposed, 
+    reactLib.reactMod.ReactNs.ComponentState
+  ] = js.native
+  def connectCurrentRefinements[TProps /* <: stdLib.Partial[
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.CurrentRefinementsProvided
+  ] */](Composed: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
+    TProps, 
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.CurrentRefinementsProvided, 
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.CurrentRefinementsExposed
+  ] = js.native
   def connectGeoSearch(
     stateless: reactLib.reactMod.ReactNs.StatelessComponent[
       reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.GeoSearchProvided[_]

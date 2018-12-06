@@ -530,7 +530,7 @@ object MediaConvertNs extends js.Object {
          */
     var Name: __string
     /**
-         * Optional; default is on-demand. Specifies whether the pricing plan for the queue is on-demand or reserved. The pricing plan for the queue determines whether you pay on-demand or reserved pricing for the transcoding jobs you run through the queue. For reserved queue pricing, you must set up a contract. You can create a reserved queue contract through the AWS Elemental MediaConvert console.
+         * Specifies whether the pricing plan for the queue is on-demand or reserved. For on-demand, you pay per minute, billed in increments of .01 minute. For reserved, you pay for the transcoding capacity of the entire queue, regardless of how much or how little you use it. Reserved pricing requires a 12-month commitment. When you use the API to create a queue, the default is on-demand.
          */
     var PricingPlan: js.UndefOr[PricingPlan] = js.undefined
     /**
@@ -619,7 +619,7 @@ object MediaConvertNs extends js.Object {
   
   trait DeleteQueueRequest extends js.Object {
     /**
-         * The name of the queue to be deleted.
+         * The name of the queue that you want to delete.
          */
     var Name: __string
   }
@@ -2315,7 +2315,7 @@ object MediaConvertNs extends js.Object {
          */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-         * The time stamp in epoch seconds for queue creation.
+         * The timestamp in epoch seconds for when you created the queue.
          */
     var CreatedAt: js.UndefOr[__timestampUnix] = js.undefined
     /**
@@ -2323,7 +2323,7 @@ object MediaConvertNs extends js.Object {
          */
     var Description: js.UndefOr[__string] = js.undefined
     /**
-         * The time stamp in epoch seconds when the queue was last updated.
+         * The timestamp in epoch seconds for when you most recently updated the queue.
          */
     var LastUpdated: js.UndefOr[__timestampUnix] = js.undefined
     /**
@@ -2331,7 +2331,7 @@ object MediaConvertNs extends js.Object {
          */
     var Name: __string
     /**
-         * Specifies whether the pricing plan for the queue is On-demand or Reserved. The pricing plan for the queue determines whether you pay On-demand or Reserved pricing for the transcoding jobs that you run through the queue. For Reserved queue pricing, you must set up a contract. You can create a Reserved queue contract through the AWS Elemental MediaConvert console.
+         * Specifies whether the pricing plan for the queue is on-demand or reserved. For on-demand, you pay per minute, billed in increments of .01 minute. For reserved, you pay for the transcoding capacity of the entire queue, regardless of how much or how little you use it. Reserved pricing requires a 12-month commitment.
          */
     var PricingPlan: js.UndefOr[PricingPlan] = js.undefined
     /**
@@ -2351,7 +2351,7 @@ object MediaConvertNs extends js.Object {
          */
     var SubmittedJobsCount: js.UndefOr[__integer] = js.undefined
     /**
-         * Specifies whether this queue is system or custom. System queues are built in. You can't modify or delete system queues. You can create and modify custom queues.
+         * Specifies whether this on-demand queue is system or custom. System queues are built in. You can't modify or delete system queues. You can create and modify custom queues.
          */
     var Type: js.UndefOr[Type] = js.undefined
   }
@@ -2392,23 +2392,23 @@ object MediaConvertNs extends js.Object {
   
   trait ReservationPlan extends js.Object {
     /**
-         * The length of time that you commit to when you set up a pricing plan contract for a reserved queue.
+         * The length of the term of your reserved queue pricing plan commitment.
          */
     var Commitment: js.UndefOr[Commitment] = js.undefined
     /**
-         * The time stamp, in epoch seconds, for when the pricing plan for this reserved queue expires.
+         * The timestamp in epoch seconds for when the current pricing plan term for this reserved queue expires.
          */
     var ExpiresAt: js.UndefOr[__timestampUnix] = js.undefined
     /**
-         * The time stamp in epoch seconds when the reserved queue's reservation plan was created.
+         * The timestamp in epoch seconds for when you set up the current pricing plan for this reserved queue.
          */
     var PurchasedAt: js.UndefOr[__timestampUnix] = js.undefined
     /**
-         * Specifies whether the pricing plan contract for your reserved queue automatically renews (AUTO_RENEW) or expires (EXPIRE) at the end of the contract period.
+         * Specifies whether the term of your reserved queue pricing plan is automatically extended (AUTO_RENEW) or expires (EXPIRE) at the end of the term.
          */
     var RenewalType: js.UndefOr[RenewalType] = js.undefined
     /**
-         * Specifies the number of reserved transcode slots (RTS) for this queue. The number of RTS determines how many jobs the queue can process in parallel; each RTS can process one job at a time. To increase this number, create a replacement contract through the AWS Elemental MediaConvert console.
+         * Specifies the number of reserved transcode slots (RTS) for this queue. The number of RTS determines how many jobs the queue can process in parallel; each RTS can process one job at a time. When you increase this number, you extend your existing commitment with a new 12-month commitment for a larger number of RTS. The new commitment begins when you purchase the additional capacity. You can't decrease the number of RTS in your reserved queue.
          */
     var ReservedSlots: js.UndefOr[__integer] = js.undefined
     /**
@@ -2420,15 +2420,15 @@ object MediaConvertNs extends js.Object {
   
   trait ReservationPlanSettings extends js.Object {
     /**
-         * The length of time that you commit to when you set up a pricing plan contract for a reserved queue.
+         * The length of the term of your reserved queue pricing plan commitment.
          */
     var Commitment: Commitment
     /**
-         * Specifies whether the pricing plan contract for your reserved queue automatically renews (AUTO_RENEW) or expires (EXPIRE) at the end of the contract period.
+         * Specifies whether the term of your reserved queue pricing plan is automatically extended (AUTO_RENEW) or expires (EXPIRE) at the end of the term. When your term is auto renewed, you extend your commitment by 12 months from the auto renew date. You can cancel this commitment.
          */
     var RenewalType: RenewalType
     /**
-         * Specifies the number of reserved transcode slots (RTS) for this queue. The number of RTS determines how many jobs the queue can process in parallel; each RTS can process one job at a time. To increase this number, create a replacement contract through the AWS Elemental MediaConvert console.
+         * Specifies the number of reserved transcode slots (RTS) for this queue. The number of RTS determines how many jobs the queue can process in parallel; each RTS can process one job at a time. You can't decrease the number of RTS in your reserved queue. You can increase the number of RTS by extending your existing commitment with a new 12-month commitment for the larger number. The new commitment begins when you purchase the additional capacity. You can't cancel your commitment or revert to your original commitment after you increase the capacity.
          */
     var ReservedSlots: __integer
   }
@@ -2731,11 +2731,11 @@ object MediaConvertNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreatePresetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Create a new transcoding queue. For information about job templates see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+       * Create a new transcoding queue. For information about queues, see Working With Queues in the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html
        */
     def createQueue(): awsDashSdkLib.libRequestMod.Request[CreateQueueResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Create a new transcoding queue. For information about job templates see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+       * Create a new transcoding queue. For information about queues, see Working With Queues in the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html
        */
     def createQueue(
       callback: js.Function2[
@@ -2745,11 +2745,11 @@ object MediaConvertNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateQueueResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Create a new transcoding queue. For information about job templates see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+       * Create a new transcoding queue. For information about queues, see Working With Queues in the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html
        */
     def createQueue(params: CreateQueueRequest): awsDashSdkLib.libRequestMod.Request[CreateQueueResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Create a new transcoding queue. For information about job templates see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+       * Create a new transcoding queue. For information about queues, see Working With Queues in the User Guide at https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html
        */
     def createQueue(
       params: CreateQueueRequest,
@@ -3378,7 +3378,7 @@ object MediaConvertNs extends js.Object {
          */
     var Name: __string
     /**
-         * Details about the pricing plan for your reserved queue. Required for reserved queues and not applicable to on-demand queues.
+         * The new details of your pricing plan for your reserved queue. When you set up a new pricing plan to replace an expired one, you enter into another 12-month commitment. When you add capacity to your queue by increasing the number of RTS, you extend the term of your commitment to 12 months from when you add capacity. After you make these commitments, you can't cancel them.
          */
     var ReservationPlanSettings: js.UndefOr[ReservationPlanSettings] = js.undefined
     /**

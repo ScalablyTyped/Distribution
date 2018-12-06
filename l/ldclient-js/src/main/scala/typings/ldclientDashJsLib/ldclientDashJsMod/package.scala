@@ -37,9 +37,10 @@ package object ldclientDashJsMod {
      * flag value, and the previous value. This is always accompanied by a general
      * "change" event as described above; you can listen for either or both.
      *
-     * The "change" and "change:FLAG-KEY" events have special behavior: the client
-     * will open a streaming connection to receive live changes if and only if you
-     * are listening for one of these events.
+     * The "change" and "change:FLAG-KEY" events have special behavior: by default, the
+     * client will open a streaming connection to receive live changes if and only if
+     * you are listening for one of these events. This behavior can be overridden by
+     * setting LDOptions.streaming or calling LDClient.setStreaming().
      */
   type LDEventSignature = js.Function3[
     /* key */ java.lang.String, 

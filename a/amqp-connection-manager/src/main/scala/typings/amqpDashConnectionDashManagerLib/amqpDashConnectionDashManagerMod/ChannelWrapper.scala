@@ -194,6 +194,22 @@ trait ChannelWrapper
   	 */
   def queueLength(): scala.Double = js.native
   /**
+       * Remove a setup function added with `addSetup`.  If there is currently a
+       * connection, `teardown(channel, [cb])` will be run immediately, and the
+       * returned Promise will not resolve until it completes.
+       * @param func
+       * @param [tearDown]
+       */
+  def removeSetup(func: SetupFunc): stdLib.Promise[scala.Unit] = js.native
+  /**
+       * Remove a setup function added with `addSetup`.  If there is currently a
+       * connection, `teardown(channel, [cb])` will be run immediately, and the
+       * returned Promise will not resolve until it completes.
+       * @param func
+       * @param [tearDown]
+       */
+  def removeSetup(func: SetupFunc, tearDown: SetupFunc): stdLib.Promise[scala.Unit] = js.native
+  /**
   	 * @see amqplib
   	 * @param queue
   	 * @param content

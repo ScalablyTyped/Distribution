@@ -14,6 +14,7 @@ trait Select[T]
   def getNotFoundContent(locale: SelectLocale): js.UndefOr[js.Object | scala.Null] = js.native
   def isCombobox(): scala.Boolean = js.native
   def renderSelect(locale: SelectLocale): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderSuffixIcon(): js.Object = js.native
   def saveSelect(node: js.Any): scala.Unit = js.native
 }
 

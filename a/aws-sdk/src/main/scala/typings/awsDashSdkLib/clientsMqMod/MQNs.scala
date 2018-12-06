@@ -83,7 +83,7 @@ object MQNs extends js.Object {
          */
     var EngineType: js.UndefOr[EngineType] = js.undefined
     /**
-         * Required. The version of the broker engine.
+         * Required. The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
          */
     var EngineVersion: js.UndefOr[__string] = js.undefined
     /**
@@ -98,6 +98,10 @@ object MQNs extends js.Object {
          * Required. The name of the configuration. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 1-150 characters long.
          */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+         * The list of all tags associated with this configuration.
+         */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   
@@ -171,7 +175,7 @@ object MQNs extends js.Object {
          */
     var EngineType: js.UndefOr[EngineType] = js.undefined
     /**
-         * Required. The version of the broker engine. Note: Currently, Amazon MQ supports only 5.15.6 and 5.15.0.
+         * Required. The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
          */
     var EngineVersion: js.UndefOr[__string] = js.undefined
     /**
@@ -199,6 +203,10 @@ object MQNs extends js.Object {
          */
     var SubnetIds: js.UndefOr[__listOf__string] = js.undefined
     /**
+         * Create tags when creating the broker.
+         */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
+    /**
          * Required. The list of ActiveMQ users (persons or applications) who can access queues and topics. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
          */
     var Users: js.UndefOr[__listOfUser] = js.undefined
@@ -223,13 +231,17 @@ object MQNs extends js.Object {
          */
     var EngineType: js.UndefOr[EngineType] = js.undefined
     /**
-         * Required. The version of the broker engine. Note: Currently, Amazon MQ supports only 5.15.6 and 5.15.0.
+         * Required. The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
          */
     var EngineVersion: js.UndefOr[__string] = js.undefined
     /**
          * Required. The name of the configuration. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 1-150 characters long.
          */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+         * Create tags when creating the configuration.
+         */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   
@@ -254,6 +266,18 @@ object MQNs extends js.Object {
          * Required. The name of the configuration. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 1-150 characters long.
          */
     var Name: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait CreateTagsRequest extends js.Object {
+    /**
+         * the Amazon Resource Name (ARN)
+         */
+    var ResourceArn: __string
+    /**
+         * The key-value pair for the resource tag.
+         */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   
@@ -297,6 +321,18 @@ object MQNs extends js.Object {
          * The unique ID that Amazon MQ generates for the broker.
          */
     var BrokerId: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait DeleteTagsRequest extends js.Object {
+    /**
+         * the Amazon Resource Name (ARN)
+         */
+    var ResourceArn: __string
+    /**
+         * An array of tag keys to delete
+         */
+    var TagKeys: __listOf__string
   }
   
   
@@ -365,7 +401,7 @@ object MQNs extends js.Object {
          */
     var EngineType: js.UndefOr[EngineType] = js.undefined
     /**
-         * The version of the broker engine. Note: Currently, Amazon MQ supports only 5.15.6 and 5.15.0.
+         * The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
          */
     var EngineVersion: js.UndefOr[__string] = js.undefined
     /**
@@ -381,7 +417,7 @@ object MQNs extends js.Object {
          */
     var MaintenanceWindowStartTime: js.UndefOr[WeeklyStartTime] = js.undefined
     /**
-         * The version of the broker engine to upgrade to.
+         * The version of the broker engine to upgrade to. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
          */
     var PendingEngineVersion: js.UndefOr[__string] = js.undefined
     /**
@@ -396,6 +432,10 @@ object MQNs extends js.Object {
          * The list of groups (2 maximum) that define which subnets and IP ranges the broker can use from different Availability Zones. A SINGLE_INSTANCE deployment requires one subnet (for example, the default subnet). An ACTIVE_STANDBY_MULTI_AZ deployment requires two subnets.
          */
     var SubnetIds: js.UndefOr[__listOf__string] = js.undefined
+    /**
+         * The list of all tags associated with this broker.
+         */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
     /**
          * The list of all ActiveMQ usernames for the specified broker.
          */
@@ -429,7 +469,7 @@ object MQNs extends js.Object {
          */
     var EngineType: js.UndefOr[EngineType] = js.undefined
     /**
-         * Required. The version of the broker engine.
+         * Required. The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
          */
     var EngineVersion: js.UndefOr[__string] = js.undefined
     /**
@@ -444,6 +484,10 @@ object MQNs extends js.Object {
          * Required. The name of the configuration. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 1-150 characters long.
          */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+         * The list of all tags associated with this configuration.
+         */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   
@@ -600,6 +644,22 @@ object MQNs extends js.Object {
          * The token that specifies the next page of results Amazon MQ should return. To request the first page, leave nextToken empty.
          */
     var NextToken: js.UndefOr[__string] = js.undefined
+  }
+  
+  
+  trait ListTagsRequest extends js.Object {
+    /**
+         * the Amazon Resource Name (ARN)
+         */
+    var ResourceArn: __string
+  }
+  
+  
+  trait ListTagsResponse extends js.Object {
+    /**
+         * The key-value pair for the resource tag.
+         */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   
@@ -777,6 +837,27 @@ object MQNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Add a tag to a resource.
+       */
+    def createTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Add a tag to a resource.
+       */
+    def createTags(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Add a tag to a resource.
+       */
+    def createTags(params: CreateTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Add a tag to a resource.
+       */
+    def createTags(
+      params: CreateTagsRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Creates an ActiveMQ user.
        */
     def createUser(): awsDashSdkLib.libRequestMod.Request[CreateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -834,6 +915,27 @@ object MQNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteBrokerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Remove a tag from a resource.
+       */
+    def deleteTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Remove a tag from a resource.
+       */
+    def deleteTags(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Remove a tag from a resource.
+       */
+    def deleteTags(params: DeleteTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Remove a tag from a resource.
+       */
+    def deleteTags(
+      params: DeleteTagsRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Deletes an ActiveMQ user.
        */
@@ -1067,6 +1169,35 @@ object MQNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Lists tags for a resource.
+       */
+    def listTags(): awsDashSdkLib.libRequestMod.Request[ListTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists tags for a resource.
+       */
+    def listTags(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists tags for a resource.
+       */
+    def listTags(params: ListTagsRequest): awsDashSdkLib.libRequestMod.Request[ListTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists tags for a resource.
+       */
+    def listTags(
+      params: ListTagsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Returns a list of all ActiveMQ users.
        */
     def listUsers(): awsDashSdkLib.libRequestMod.Request[ListUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1228,7 +1359,7 @@ object MQNs extends js.Object {
          */
     var Configuration: js.UndefOr[ConfigurationId] = js.undefined
     /**
-         * The version of the broker engine. Note: Currently, Amazon MQ supports only 5.15.6 and 5.15.0.
+         * The version of the broker engine. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
          */
     var EngineVersion: js.UndefOr[__string] = js.undefined
     /**
@@ -1252,7 +1383,7 @@ object MQNs extends js.Object {
          */
     var Configuration: js.UndefOr[ConfigurationId] = js.undefined
     /**
-         * The version of the broker engine to upgrade to.
+         * The version of the broker engine to upgrade to. For a list of supported engine versions, see https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-engine.html
          */
     var EngineVersion: js.UndefOr[__string] = js.undefined
     /**
@@ -1395,6 +1526,10 @@ object MQNs extends js.Object {
          */
     var TimeZone: js.UndefOr[__string] = js.undefined
   }
+  
+  
+  trait __mapOf__string
+    extends /* key */ ScalablyTyped.runtime.StringDictionary[__string]
   
   val TypesNs: this.type = js.native
   type BrokerState = awsDashSdkLib.awsDashSdkLibStrings.CREATION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.CREATION_FAILED | awsDashSdkLib.awsDashSdkLibStrings.DELETION_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.REBOOT_IN_PROGRESS | java.lang.String

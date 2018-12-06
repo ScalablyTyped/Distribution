@@ -194,7 +194,7 @@ object ServiceCatalogNs extends js.Object {
          */
     var Owner: js.UndefOr[AccountId] = js.undefined
     /**
-         * The type of constraint.    LAUNCH     NOTIFICATION     TEMPLATE   
+         * The type of constraint.    LAUNCH     NOTIFICATION    STACKSET    TEMPLATE   
          */
     var Type: js.UndefOr[ConstraintType] = js.undefined
   }
@@ -206,7 +206,7 @@ object ServiceCatalogNs extends js.Object {
          */
     var Description: js.UndefOr[ConstraintDescription] = js.undefined
     /**
-         * The type of constraint.    LAUNCH     NOTIFICATION     TEMPLATE   
+         * The type of constraint.    LAUNCH     NOTIFICATION    STACKSET    TEMPLATE   
          */
     var Type: js.UndefOr[ConstraintType] = js.undefined
   }

@@ -25,7 +25,10 @@ trait PriorityClass extends js.Object {
   val description: java.lang.String
   /**
                * globalDefault specifies whether this PriorityClass should be considered as the default
-               * priority for pods that do not have any priority class.
+               * priority for pods that do not have any priority class. Only one PriorityClass can be marked
+               * as `globalDefault`. However, if more than one PriorityClasses exists with their
+               * `globalDefault` field set to true, the smallest value of such global default
+               * PriorityClasses will be used as the default priority.
                */
   val globalDefault: scala.Boolean
   /**
@@ -37,7 +40,7 @@ trait PriorityClass extends js.Object {
   val kind: java.lang.String
   /**
                * Standard object's metadata. More info:
-               * http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#metadata
+               * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
                */
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
   /**

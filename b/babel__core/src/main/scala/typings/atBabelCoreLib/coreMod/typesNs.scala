@@ -497,7 +497,7 @@ object typesNs extends js.Object {
   def catchClause(param: scala.Null, body: atBabelTypesLib.typesMod.BlockStatement): atBabelTypesLib.typesMod.CatchClause = js.native
   def classBody(
     body: js.Array[
-      atBabelTypesLib.typesMod.ClassMethod | atBabelTypesLib.typesMod.ClassProperty | atBabelTypesLib.typesMod.ClassPrivateProperty | atBabelTypesLib.typesMod.TSDeclareMethod | atBabelTypesLib.typesMod.TSIndexSignature
+      atBabelTypesLib.typesMod.ClassMethod | atBabelTypesLib.typesMod.ClassPrivateMethod | atBabelTypesLib.typesMod.ClassProperty | atBabelTypesLib.typesMod.ClassPrivateProperty | atBabelTypesLib.typesMod.TSDeclareMethod | atBabelTypesLib.typesMod.TSIndexSignature
     ]
   ): atBabelTypesLib.typesMod.ClassBody = js.native
   def classDeclaration(
@@ -868,6 +868,29 @@ object typesNs extends js.Object {
       atBabelTypesLib.typesMod.TypeParameterDeclaration | atBabelTypesLib.typesMod.TSTypeParameterDeclaration | atBabelTypesLib.typesMod.Noop | scala.Null
     ]
   ): atBabelTypesLib.typesMod.ClassMethod = js.native
+  def classPrivateMethod(
+    kind: js.UndefOr[
+      atBabelCoreLib.atBabelCoreLibStrings.get | atBabelCoreLib.atBabelCoreLibStrings.set | atBabelCoreLib.atBabelCoreLibStrings.method | atBabelCoreLib.atBabelCoreLibStrings.constructor
+    ],
+    key: atBabelTypesLib.typesMod.PrivateName,
+    params: js.Array[atBabelTypesLib.typesMod.LVal],
+    body: atBabelTypesLib.typesMod.BlockStatement,
+    _static: js.UndefOr[scala.Boolean | scala.Null],
+    `abstract`: js.UndefOr[scala.Boolean | scala.Null],
+    access: js.UndefOr[
+      atBabelCoreLib.atBabelCoreLibStrings.public | atBabelCoreLib.atBabelCoreLibStrings.`private` | atBabelCoreLib.atBabelCoreLibStrings.`protected` | scala.Null
+    ],
+    accessibility: js.UndefOr[
+      atBabelCoreLib.atBabelCoreLibStrings.public | atBabelCoreLib.atBabelCoreLibStrings.`private` | atBabelCoreLib.atBabelCoreLibStrings.`protected` | scala.Null
+    ],
+    async: js.UndefOr[scala.Boolean],
+    computed: js.UndefOr[scala.Boolean],
+    decorators: js.UndefOr[js.Array[atBabelTypesLib.typesMod.Decorator] | scala.Null],
+    generator: js.UndefOr[scala.Boolean],
+    optional: js.UndefOr[scala.Boolean | scala.Null],
+    returnType: js.UndefOr[js.Any | scala.Null],
+    typeParameters: js.UndefOr[js.Any | scala.Null]
+  ): atBabelTypesLib.typesMod.ClassPrivateMethod = js.native
   def classPrivateProperty(key: atBabelTypesLib.typesMod.PrivateName): atBabelTypesLib.typesMod.ClassPrivateProperty = js.native
   def classPrivateProperty(key: atBabelTypesLib.typesMod.PrivateName, value: atBabelTypesLib.typesMod.Expression): atBabelTypesLib.typesMod.ClassPrivateProperty = js.native
   def classProperty(
@@ -2254,6 +2277,8 @@ object typesNs extends js.Object {
   def isClassImplements(node: js.Object, opts: js.Object): /* is ClassImplements */scala.Boolean = js.native
   def isClassMethod(node: js.Object): /* is ClassMethod */scala.Boolean = js.native
   def isClassMethod(node: js.Object, opts: js.Object): /* is ClassMethod */scala.Boolean = js.native
+  def isClassPrivateMethod(node: js.Object): /* is ClassPrivateMethod */scala.Boolean = js.native
+  def isClassPrivateMethod(node: js.Object, opts: js.Object): /* is ClassPrivateMethod */scala.Boolean = js.native
   def isClassPrivateProperty(node: js.Object): /* is ClassPrivateProperty */scala.Boolean = js.native
   def isClassPrivateProperty(node: js.Object, opts: js.Object): /* is ClassPrivateProperty */scala.Boolean = js.native
   def isClassProperty(node: js.Object): /* is ClassProperty */scala.Boolean = js.native

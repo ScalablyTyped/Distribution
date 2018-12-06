@@ -31,7 +31,7 @@ trait ContainerPort extends js.Object {
                */
   val name: java.lang.String
   /**
-               * Protocol for port. Must be UDP or TCP. Defaults to "TCP".
+               * Protocol for port. Must be UDP, TCP, or SCTP. Defaults to "TCP".
                */
   val protocol: java.lang.String
 }

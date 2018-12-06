@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait ScaleIOVolumeSource extends js.Object {
   /**
                * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
-               * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+               * Ex. "ext4", "xfs", "ntfs". Default is "xfs".
                */
   val fsType: java.lang.String
   /**
@@ -39,6 +39,7 @@ trait ScaleIOVolumeSource extends js.Object {
   val sslEnabled: scala.Boolean
   /**
                * Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned.
+               * Default is ThinProvisioned.
                */
   val storageMode: java.lang.String
   /**

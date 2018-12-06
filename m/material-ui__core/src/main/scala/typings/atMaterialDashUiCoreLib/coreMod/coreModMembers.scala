@@ -55,6 +55,7 @@ object coreModMembers extends js.Object {
   val ExpansionPanelSummary: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.expansionpanelsummaryExpansionPanelSummaryMod.ExpansionPanelSummaryProps
   ] = js.native
+  val Fab: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.fabFabMod.FabProps] = js.native
   val Fade: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.fadeFadeMod.FadeProps] = js.native
   val FilledInput: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputProps] = js.native
   val FormControl: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formcontrolFormControlMod.FormControlProps] = js.native

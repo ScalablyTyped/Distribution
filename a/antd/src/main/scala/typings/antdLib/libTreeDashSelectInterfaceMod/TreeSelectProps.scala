@@ -30,6 +30,7 @@ trait TreeSelectProps
   var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined
   var onTreeExpand: js.UndefOr[js.Function1[/* keys */ js.Array[java.lang.String], scala.Unit]] = js.undefined
   var searchPlaceholder: js.UndefOr[java.lang.String] = js.undefined
+  var searchValue: js.UndefOr[java.lang.String] = js.undefined
   var showCheckedStrategy: js.UndefOr[
     antdLib.antdLibStrings.SHOW_ALL | antdLib.antdLibStrings.SHOW_PARENT | antdLib.antdLibStrings.SHOW_CHILD
   ] = js.undefined

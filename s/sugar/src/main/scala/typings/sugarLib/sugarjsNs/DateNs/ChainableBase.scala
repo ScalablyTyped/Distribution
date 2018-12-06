@@ -252,8 +252,10 @@ trait ChainableBase[RawValue] extends js.Object {
   def monthsUntil(d: stdLib.Date): sugarLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native
   def monthsUntil(d: stdLib.Date, options: DateCreateOptions): sugarLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native
   def relative(): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
+  def relative(localeCode: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def relative(
-    fn: js.Function4[
+    localeCode: java.lang.String,
+    relativeFn: js.Function4[
       /* num */ scala.Double, 
       /* unit */ scala.Double, 
       /* ms */ scala.Double, 
@@ -261,10 +263,8 @@ trait ChainableBase[RawValue] extends js.Object {
       sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String]
     ]
   ): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
-  def relative(localeCode: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def relative(
-    localeCode: java.lang.String,
-    fn: js.Function4[
+    relativeFn: js.Function4[
       /* num */ scala.Double, 
       /* unit */ scala.Double, 
       /* ms */ scala.Double, 

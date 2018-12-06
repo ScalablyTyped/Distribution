@@ -1,12 +1,12 @@
 organization := "com.scalablytyped"
 name := "feathersjs__primus"
-version := "3.0-dt-20180910Z-f8cadd"
+version := "3.0-dt-20180910Z-6fc867"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "feathersjs__feathers" % "3.1-dt-20181121Z-a5965f",
-  "com.scalablytyped" %%% "feathersjs__socket-commons" % "3.1-dt-20180910Z-0acc64",
+  "com.scalablytyped" %%% "feathersjs__feathers" % "3.1-dt-20181206Z-783387",
+  "com.scalablytyped" %%% "feathersjs__socket-commons" % "3.1-dt-20180910Z-17b89d",
   "com.scalablytyped" %%% "node" % "10.12-dt-20181203Z-7004b3",
   "com.scalablytyped" %%% "std" % "3.2.1-4b40fd",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6")

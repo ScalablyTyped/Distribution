@@ -12,7 +12,7 @@ trait ModalProps extends js.Object {
   var cancelButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   /** 取消按钮文字*/
   var cancelText: js.UndefOr[java.lang.String] = js.undefined
-  /** 居中 */
+  /** 垂直居中 */
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** 是否显示右上角的关闭按钮*/

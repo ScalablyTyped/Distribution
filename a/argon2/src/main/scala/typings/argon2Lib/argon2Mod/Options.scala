@@ -12,6 +12,7 @@ trait Options extends js.Object {
   var parallelism: js.UndefOr[scala.Double] = js.undefined
   var raw: js.UndefOr[scala.Boolean] = js.undefined
   var salt: js.UndefOr[nodeLib.Buffer] = js.undefined
+  var saltLength: js.UndefOr[scala.Double] = js.undefined
   var timeCost: js.UndefOr[scala.Double] = js.undefined
   var `type`: js.UndefOr[
     argon2Lib.argon2LibNumbers.`0` | argon2Lib.argon2LibNumbers.`1` | argon2Lib.argon2LibNumbers.`2`
