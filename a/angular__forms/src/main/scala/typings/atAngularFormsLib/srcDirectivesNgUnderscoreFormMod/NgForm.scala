@@ -14,30 +14,54 @@ class NgForm protected ()
   def this(validators: js.Array[_], asyncValidators: js.Array[_]) = this()
   var _directives: js.Any = js.native
   var _setUpdateStrategy: js.Any = js.native
+  /**
+       * @description
+       * The internal `FormGroup` instance.
+       */
   @JSName("control")
   val control_NgForm: atAngularFormsLib.srcModelMod.FormGroup = js.native
+  /**
+       * @description
+       * Returns a map of the controls in this group.
+       */
   val controls: ScalablyTyped.runtime.StringDictionary[atAngularFormsLib.srcModelMod.AbstractControl] = js.native
+  /**
+       * @description
+       * The `FormGroup` instance created for this form.
+       */
   var form: atAngularFormsLib.srcModelMod.FormGroup = js.native
+  /**
+       * @description
+       * The directive instance.
+       */
   @JSName("formDirective")
   val formDirective_NgForm: atAngularFormsLib.srcDirectivesFormUnderscoreInterfaceMod.Form = js.native
+  /**
+       * @description
+       * Event emitter for the "ngSubmit" event
+       */
   var ngSubmit: atAngularCoreLib.coreMod.EventEmitter[js.Object] = js.native
   /**
-       * Options for the `NgForm` instance. Accepts the following properties:
+       * @description
+       * Tracks options for the `NgForm` instance.
        *
-       * **updateOn**: Serves as the default `updateOn` value for all child `NgModels` below it
-       * (unless a child has explicitly set its own value for this in `ngModelOptions`).
-       * Potential values: `'change'` | `'blur'` | `'submit'`
-       *
-       * ```html
-       * <form [ngFormOptions]="{updateOn: 'blur'}">
-       *    <input name="one" ngModel>  <!-- this ngModel will update on blur -->
-       * </form>
-       * ```
+       * **updateOn**: Sets the default `updateOn` value for all child `NgModels` below it
+       * unless explicitly set by a child `NgModel` using `ngModelOptions`). Defaults to 'change'.
+       * Possible values: `'change'` | `'blur'` | `'submit'`.
        *
        */
   var options: atAngularFormsLib.Anon_UpdateOn = js.native
+  /**
+       * @description
+       * Returns an array representing the path to this group. Because this directive
+       * always lives at the top level of a form, it is always an empty array.
+       */
   @JSName("path")
   val path_NgForm: js.Array[java.lang.String] = js.native
+  /**
+       * @description
+       * Returns whether the form submission has been triggered.
+       */
   val submitted: scala.Boolean = js.native
   /**
        * @description
@@ -47,6 +71,13 @@ class NgForm protected ()
        */
   /* CompleteClass */
   override def addControl(dir: atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl): scala.Unit = js.native
+  /**
+       * @description
+       * Method that sets up the control directive in this group, re-calculates its value
+       * and validity, and adds the instance to the internal list of directives.
+       *
+       * @param dir The `NgModel` directive instance.
+       */
   def addControl(dir: atAngularFormsLib.srcDirectivesNgUnderscoreModelMod.NgModel): scala.Unit = js.native
   /**
        * @description
@@ -58,6 +89,12 @@ class NgForm protected ()
   override def addFormGroup(
     dir: atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective
   ): scala.Unit = js.native
+  /**
+       * @description
+       * Adds a new `NgModelGroup` directive instance to the form.
+       *
+       * @param dir The `NgModelGroup` directive instance.
+       */
   def addFormGroup(dir: atAngularFormsLib.srcDirectivesNgUnderscoreModelUnderscoreGroupMod.NgModelGroup): scala.Unit = js.native
   /**
        * @description
@@ -67,6 +104,12 @@ class NgForm protected ()
        */
   /* CompleteClass */
   override def getControl(dir: atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl): atAngularFormsLib.srcModelMod.FormControl = js.native
+  /**
+       * @description
+       * Retrieves the `FormControl` instance from the provided `NgModel` directive.
+       *
+       * @param dir The `NgModel` directive instance.
+       */
   def getControl(dir: atAngularFormsLib.srcDirectivesNgUnderscoreModelMod.NgModel): atAngularFormsLib.srcModelMod.FormControl = js.native
   /**
        * @description
@@ -78,6 +121,12 @@ class NgForm protected ()
   override def getFormGroup(
     dir: atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective
   ): atAngularFormsLib.srcModelMod.FormGroup = js.native
+  /**
+       * @description
+       * Retrieves the `FormGroup` for a provided `NgModelGroup` directive instance
+       *
+       * @param dir The `NgModelGroup` directive instance.
+       */
   def getFormGroup(dir: atAngularFormsLib.srcDirectivesNgUnderscoreModelUnderscoreGroupMod.NgModelGroup): atAngularFormsLib.srcModelMod.FormGroup = js.native
   /**
        * A callback method that is invoked immediately after
@@ -87,7 +136,18 @@ class NgForm protected ()
        */
   /* CompleteClass */
   override def ngAfterViewInit(): scala.Unit = js.native
+  /**
+       * @description
+       * Method called when the "reset" event is triggered on the form.
+       */
   def onReset(): scala.Unit = js.native
+  /**
+       * @description
+       * Method called when the "submit" event is triggered on the form.
+       * Triggers the `ngSubmit` emitter to emit the "submit" event as its payload.
+       *
+       * @param $event The "submit" event object
+       */
   def onSubmit($event: stdLib.Event): scala.Boolean = js.native
   /**
        * @description
@@ -97,6 +157,12 @@ class NgForm protected ()
        */
   /* CompleteClass */
   override def removeControl(dir: atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl): scala.Unit = js.native
+  /**
+       * @description
+       * Removes the `NgModel` instance from the internal list of directives
+       *
+       * @param dir The `NgModel` directive instance.
+       */
   def removeControl(dir: atAngularFormsLib.srcDirectivesNgUnderscoreModelMod.NgModel): scala.Unit = js.native
   /**
        * @description
@@ -108,9 +174,33 @@ class NgForm protected ()
   override def removeFormGroup(
     dir: atAngularFormsLib.srcDirectivesAbstractUnderscoreFormUnderscoreGroupUnderscoreDirectiveMod.AbstractFormGroupDirective
   ): scala.Unit = js.native
+  /**
+       * @description
+       * Removes the `NgModelGroup` directive instance from the form.
+       *
+       * @param dir The `NgModelGroup` directive instance.
+       */
   def removeFormGroup(dir: atAngularFormsLib.srcDirectivesNgUnderscoreModelUnderscoreGroupMod.NgModelGroup): scala.Unit = js.native
+  /**
+       * @description
+       * Resets the form to an initial value and resets its submitted status.
+       *
+       * @param value The new value for the form.
+       */
   def resetForm(): scala.Unit = js.native
+  /**
+       * @description
+       * Resets the form to an initial value and resets its submitted status.
+       *
+       * @param value The new value for the form.
+       */
   def resetForm(value: js.Any): scala.Unit = js.native
+  /**
+       * @description
+       * Sets the value for this `FormGroup`.
+       *
+       * @param value The new value
+       */
   def setValue(value: ScalablyTyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   /**
        * @description

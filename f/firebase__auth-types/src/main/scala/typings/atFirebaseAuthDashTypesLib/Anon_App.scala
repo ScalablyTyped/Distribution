@@ -29,6 +29,7 @@ trait Anon_App extends js.Object {
     /* app */ js.UndefOr[/* app */ atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp | scala.Null], 
     atFirebaseAuthDashTypesLib.authDashTypesMod.RecaptchaVerifier_Instance
   ] = js.native
+  var SAMLAuthProvider: ScalablyTyped.runtime.Instantiable0[atFirebaseAuthDashTypesLib.authDashTypesMod.SAMLAuthProvider] = js.native
   var TwitterAuthProvider: ScalablyTyped.runtime.Instantiable0[atFirebaseAuthDashTypesLib.authDashTypesMod.TwitterAuthProvider] = js.native
   var TwitterAuthProvider_Instance: ScalablyTyped.runtime.Instantiable0[atFirebaseAuthDashTypesLib.authDashTypesMod.TwitterAuthProvider_Instance] = js.native
   def apply(): atFirebaseAuthDashTypesLib.authDashTypesMod.FirebaseAuth = js.native

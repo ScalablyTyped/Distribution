@@ -2,7 +2,7 @@
 
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
-This is the home of Scala.js typings for 5739 Javascript libraries,
+This is the home of Scala.js typings for 5744 Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 ## Typing?
@@ -52,14 +52,20 @@ The work on this has been a labor of love, so let's continue like that <3
 We recommend using sbt with [scalajs-bundler](https://scalacenter.github.io/scalajs-bundler/)
 and the ScalablyTyped plugin to easily keep versions in sync (more on versions below).
 
+To see full examples head over and check out the
+[demos](https://github.com/oyvindberg/ScalablyTypedDemos)!
+
+There are demos both for frontend and backend javascript libraries,
+ so feel free to check it out to see how it all fits together!
+
+
+These should be the main steps you would have to follow:
+
 ### `project/plugins.sbt`
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
-  addSbtPlugin("org.scala-js" % "sbt-scalajs" % "0.6.25")
-  addSbtPlugin("ch.epfl.scala" % "sbt-scalajs-bundler" % "0.13.1")
-
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("com.scalablytyped" % "sbt-scalablytyped" % "201812061148")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201812070205")
 ```
 
 ### `build.sbt`
@@ -86,14 +92,49 @@ After that you should be good to go, and just reference things in your code
   import typings.d3DashGeoLib.d3DashGeoMod.{GeoContext, GeoPath, GeoPermissibleObjects, GeoProjection}
 ```
 
-### Demos
-To see everything in action, head over and check out the
-[demos](https://github.com/oyvindberg/ScalablyTypedDemos)!
+## Contrib libraries
+As you can imagine with all this casting and other nonsense,
+a more scala-like facade will often be a better way.
 
-There are demos both for frontend and backend javascript libraries,
- so feel free to check it out to see how it all fits together!
+For now we just have the following contrib-libs:
+- [react](contrib/react)
+- [react-japgolly](contrib/react-japgolly)
 
-## What about those versions?
+These libraries can depend both on typings and external libraries, and
+ will be versioned and published alongside ScalablyTyped typings.
+
+If you try one of the typings and end up writing a small facade feel free to PR it! :)
+
+
+## Anticipated questions about the encoding
+There are loads of details as to how the conversion is done.
+Not everything is optimal of course.
+The following points try to explain the big picture:
+
+### Whatsup with fooLib, fooNs, fooMod, foo and all that?
+
+Typescript does namespacing differently than Scala, so you can have
+a library, a `var`/`function`, a `module` and a `namespace` all with the same name.
+
+For that reason we need to setup a rather elaborate renaming scheme on the Scala side
+ to avoid name collisions.
+The `Foo` without suffix is reserved for companion objects with static members, enums,
+ and for conversion of things like `declare val foo: {...}` which is also converted into an `object`.
+
+Module names in particular tend to be pretty long, because we flatten the module namespace.
+
+On the bright side javascript imports were never super clean in the first place,
+and we have way better tooling in Scala to handle it - meaning you shouldn't write much of those yourself.
+
+A somewhat nice way of handling this is to bundle your commonly used imports somewhere, for instance:
+```scala
+package object myapp {
+  type Avatar = typings.materialDashUiLib.avatarMod.default
+  val React = typings.reactLib.ReactDsl
+}
+```
+
+### Whatsup with those version strings?
 
 Oh yes, you've noticed the long version strings - Good! If you didn't, they look like this:
 
@@ -134,50 +175,9 @@ It also scales all the way down to local development, where we only fire up `sca
 Since we recognize that keeping many of these complex versions in sync is going to be an issue,
  every complete build of `ScalablyTyped` also generates the sbt plugin mentioned above.
 
-### How about old versions?
+### Whatsup with old versions?
 
-`ScalablyTyped` only considers the newest version of libraries, and that is already considerable scope.
-
-### Whatsup with fooLib, fooNamespace, foo, etc?
-Typescript does namespacing differently than Scala, so you can have
-a library, a `var`/`function`, a `module` and a `namespace` all with the same name.
-
-For that reason we need to setup a rather elaborate renaming scheme on the Scala side
- to avoid name collisions.
-The `Foo` without suffix is reserved for companion objects with static members, enums,
- and for conversion of things like `declare val foo: {...}` which is also converted into an `object`.
-
-### Whatsup with loooooooongModuleNaaaaames?
-
-This is one point in particular where the encoding we use may be improved.
-Internally the module namespace is flattened, and the output closely mirrors that.
-
-That means you easily may end up with walls of imports like this:
-```scala
-import typings.materialDashUiLib.avatarMod.{default => Avatar}
-import typings.materialDashUiLib.flatbuttonMod.{default => FlatButton}
-import typings.materialDashUiLib.svgDashIconsActionAlarmMod.{default => ActionAlarm}
-import typings.materialDashUiLib.underscoreUnderscoreMaterialUINs.{AvatarProps, FlatButtonProps, SvgIconProps}
-import typings.mobxDashReactLib.mobxDashReactMod.mobxDashReactModMembers.observer
-import typings.mobxLib.libCoreComputedvalueMod.IComputedValue
-import typings.mobxLib.libTypesObservablevalueMod.IObservableValue
-import typings.mobxLib.mobxMod.{mobxModMembers => MobX}
-import typings.reactLib.ReactDsl.{componentClass, div}
-import typings.reactLib.reactMod.ReactNs.{ComponentClass, MouseEventHandler, ReactNode}
-import typings.reactLib.reactMod._
-import typings.stdLib.stdLibMembers.console
-```
-
-On the bright side javascript imports were never super clean in the first place,
-and we have way better tooling in Scala to handle it - meaning you shouldn't write much of those yourself.
-
-A somewhat nice way of handling this is to bundle your commonly used imports somewhere, for instance:
-```scala
-package object myapp {
-  type Avatar = typings.materialDashUiLib.avatarMod.default
-  val React = typings.reactLib.ReactDsl
-}
-```
+ScalablyTyped only considers the newest version of libraries, and that is already considerable scope.
 
 ### Whatsup with numbers?
 We're used to deal with `Int`, `Double`, and so on. Javascript isn't.
@@ -635,13 +635,3 @@ Have a look at the `jquery`/`jquery-ui`
 [demo](https://github.com/oyvindberg/ScalablyTypedDemos/blob/master/jquery/src/main/scala/demo/JQueryDemo.scala)
 to see how it's done.
 
-### Contrib libraries
-As you can imagine with all this casting and other nonsense,
-a more scala-like facade will often be a better way.
-
-For now we just have the following contrib-libs:
-- [react](contrib/react)
-- [react-japgolly](contrib/react-japgolly)
-
-These libraries can depend both on typings and external libraries, and
- will be versioned and published alongside ScalablyTyped typings.

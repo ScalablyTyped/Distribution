@@ -29,52 +29,61 @@ class NgModel protected ()
   var _updateValue: js.Any = js.native
   @JSName("control")
   val control_NgModel: atAngularFormsLib.srcModelMod.FormControl = js.native
+  /**
+       * @description
+       * The top-level directive for this control if present, otherwise null.
+       */
   val formDirective: js.Any = js.native
+  /**
+       * @description
+       * Tracks whether the control is disabled.
+       */
   var isDisabled: scala.Boolean = js.native
+  /**
+       * @description
+       * Tracks the value bound to this directive.
+       */
   var model: js.Any = js.native
+  /**
+       * @description
+       * Tracks the name bound to the directive. The parent form
+       * uses this name as a key to retrieve this control's value.
+       */
   @JSName("name")
   var name_NgModel: java.lang.String = js.native
   /**
-       * Options object for this `ngModel` instance. You can configure the following properties:
+       * @description
+       * Tracks the configuration options for this `ngModel` instance.
        *
-       * **name**: An alternative to setting the name attribute on the form control element.
-       * Sometimes, especially with custom form components, the name attribute might be used
-       * as an `@Input` property for a different purpose. In cases like these, you can configure
-       * the `ngModel` name through this option.
+       * **name**: An alternative to setting the name attribute on the form control element. See
+       * the [example](api/forms/NgModel#using-ngmodel-on-a-standalone-control) for using `NgModel`
+       * as a standalone control.
        *
-       * ```html
-       * <form>
-       *   <my-person-control name="Nancy" ngModel [ngModelOptions]="{name: 'user'}">
-       *   </my-person-control>
-       * </form>
-       * <!-- form value: {user: ''} -->
-       * ```
+       * **standalone**: When set to true, the `ngModel` will not register itself with its parent form,
+       * and acts as if it's not in the form. Defaults to false.
        *
-       * **standalone**: Defaults to false. If this is set to true, the `ngModel` will not
-       * register itself with its parent form, and will act as if it's not in the form. This
-       * can be handy if you have form meta-controls, a.k.a. form elements nested in
-       * the `<form>` tag that control the display of the form, but don't contain form data.
-       *
-       * ```html
-       * <form>
-       *   <input name="login" ngModel placeholder="Login">
-       *   <input type="checkbox" ngModel [ngModelOptions]="{standalone: true}"> Show more options?
-       * </form>
-       * <!-- form value: {login: ''} -->
-       * ```
-       *
-       * **updateOn**: Defaults to `'change'`. Defines the event upon which the form control
-       * value and validity will update. Also accepts `'blur'` and `'submit'`.
-       *
-       * ```html
-       * <input [(ngModel)]="firstName" [ngModelOptions]="{updateOn: 'blur'}">
-       * ```
+       * **updateOn**: Defines the event upon which the form control value and validity update.
+       * Defaults to 'change'. Possible values: `'change'` | `'blur'` | `'submit'`.
        *
        */
   var options: atAngularFormsLib.Anon_Standalone = js.native
+  /**
+       * @description
+       * Returns an array that represents the path from the top-level form to this control.
+       * Each index is the string name of the control on that level.
+       */
   @JSName("path")
   val path_NgModel: js.Array[java.lang.String] = js.native
+  /**
+       * @description
+       * Event emitter for producing the `ngModelChange` event after
+       * the view model updates.
+       */
   var update: atAngularCoreLib.coreMod.EventEmitter[js.Object] = js.native
+  /**
+       * @description
+       * Internal reference to the view model value.
+       */
   var viewModel: js.Any = js.native
   /**
        * A callback method that is invoked immediately after the

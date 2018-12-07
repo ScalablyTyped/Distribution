@@ -115,12 +115,6 @@ object reactDashMdLibStrings {
   sealed trait numeric extends js.Object
   
   @js.native
-  sealed trait off extends js.Object
-  
-  @js.native
-  sealed trait on extends js.Object
-  
-  @js.native
   sealed trait overlap extends js.Object
   
   @js.native
@@ -240,8 +234,6 @@ object reactDashMdLibStrings {
   def narrow: narrow = "narrow".asInstanceOf[narrow]
   def number: number = "number".asInstanceOf[number]
   def numeric: numeric = "numeric".asInstanceOf[numeric]
-  def off: off = "off".asInstanceOf[off]
-  def on: on = "on".asInstanceOf[on]
   def overlap: overlap = "overlap".asInstanceOf[overlap]
   def password: password = "password".asInstanceOf[password]
   def persistent: persistent = "persistent".asInstanceOf[persistent]

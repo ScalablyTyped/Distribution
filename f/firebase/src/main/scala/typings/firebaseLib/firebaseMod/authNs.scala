@@ -89,6 +89,13 @@ object authNs extends js.Object {
   }
   
   @js.native
+  class OAuthProvider ()
+    extends firebaseLib.firebaseMod.firebaseNs.authNs.OAuthProvider {
+    /* CompleteClass */
+    override var providerId: java.lang.String = js.native
+  }
+  
+  @js.native
   class PhoneAuthProvider ()
     extends firebaseLib.firebaseMod.firebaseNs.authNs.PhoneAuthProvider {
     /* CompleteClass */
@@ -145,6 +152,13 @@ object authNs extends js.Object {
     override def render(): stdLib.Promise[scala.Double] = js.native
     /* CompleteClass */
     override def verify(): stdLib.Promise[java.lang.String] = js.native
+  }
+  
+  @js.native
+  class SAMLAuthProvider ()
+    extends firebaseLib.firebaseMod.firebaseNs.authNs.SAMLAuthProvider {
+    /* CompleteClass */
+    override var providerId: java.lang.String = js.native
   }
   
   @js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 
 trait AutocompleteProps
   extends reactDashMdLib.libMenusMenuMod.BaseMenuProps {
-  var autoComplete: js.UndefOr[OnOffType] = js.undefined
+  var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var autocompleteWithLabel: js.UndefOr[scala.Boolean] = js.undefined
   var clearOnAutocomplete: js.UndefOr[scala.Boolean] = js.undefined
   var customSize: js.UndefOr[java.lang.String] = js.undefined

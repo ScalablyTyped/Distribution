@@ -23,6 +23,7 @@ trait TabsProps
   var defaultTabIndex: js.UndefOr[scala.Double] = js.undefined
   var desktopMinWidth: js.UndefOr[scala.Double] = js.undefined
   var inactiveTabClassName: js.UndefOr[java.lang.String] = js.undefined
+  var indicatorHeight: js.UndefOr[scala.Double] = js.undefined
   var nextIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
      * @deprecated

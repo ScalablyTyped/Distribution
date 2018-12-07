@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular__forms"
-version := "7.1.1-c515a4"
+version := "7.1.1-8ec073"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
