@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-persist-transform-compress"
-version := "4.2.0-3a07b1"
+version := "4.2.0-61e5b9"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
   "org.scalablytyped" %%% "json-stringify-safe" % "5.0-dt-20180910Z-43de91",
   "org.scalablytyped" %%% "lz-string" % "1.3-dt-20180910Z-2c101a",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-dcbd7c",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-65cffa",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-000ab2",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-1b8e7c",
   "org.scalablytyped" %%% "redux" % "4.0.1-5c98ab",
-  "org.scalablytyped" %%% "redux-persist" % "5.10.0-37e7d4",
+  "org.scalablytyped" %%% "redux-persist" % "5.10.0-bb2d6a",
   "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-46014e")
 publishArtifact in packageDoc := false

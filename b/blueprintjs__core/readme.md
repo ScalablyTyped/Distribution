@@ -8,4 +8,9 @@
 /**
  * The four basic intents.
  */
+/**
+ * Safely invoke the member function with no arguments, if the object
+ * exists and the given key is indeed a function, and return its value.
+ * Otherwise, return `undefined`.
+ */
 ```

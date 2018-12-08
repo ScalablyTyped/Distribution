@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wikidata-sdk"
-version := "5.15-dt-20181120Z-769e45"
+version := "5.15-dt-20181208Z-028610"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

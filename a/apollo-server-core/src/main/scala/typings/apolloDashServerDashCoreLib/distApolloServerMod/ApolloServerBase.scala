@@ -28,7 +28,7 @@ class ApolloServerBase protected () extends js.Object {
   var subscriptionServerOptions: js.UndefOr[apolloDashServerDashCoreLib.distTypesMod.SubscriptionServerOptions] = js.native
   var subscriptionsPath: js.UndefOr[java.lang.String] = js.native
   var uploadsConfig: js.UndefOr[apolloDashServerDashCoreLib.distTypesMod.FileUploadOptions] = js.native
-  def executeOperation(request: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequest): stdLib.Promise[_] = js.native
+  def executeOperation(request: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequest): stdLib.Promise[apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse] = js.native
   /* protected */ def graphQLServerOptions(): stdLib.Promise[
     apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
   ] = js.native

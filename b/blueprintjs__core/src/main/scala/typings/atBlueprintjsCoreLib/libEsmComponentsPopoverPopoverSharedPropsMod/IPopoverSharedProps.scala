@@ -100,6 +100,11 @@ trait IPopoverSharedProps
        */
   var targetClassName: js.UndefOr[java.lang.String] = js.undefined
   /**
+       * HTML props to spread to target element. Use `targetTagName` to change
+       * the type of element rendered. Note that `ref` is not supported.
+       */
+  var targetProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]] = js.undefined
+  /**
        * HTML tag name for the target element. This must be an HTML element to
        * ensure that it supports the necessary DOM event handlers.
        *

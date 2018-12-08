@@ -14,7 +14,7 @@
 //                 Anatoli Papirovski <https://github.com/apapirovski>
 //                 Boris Sergeyev <https://github.com/surgeboris>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.0
 // Known Issue:
 // There is a known issue in TypeScript, which doesn't allow decorators to change the signature of the classes
 // they are decorating. Due to this, if you are using @connect() decorator in your code,

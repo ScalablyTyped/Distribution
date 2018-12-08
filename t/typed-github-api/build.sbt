@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typed-github-api"
-version := "1.2.6-ba61d4"
+version := "1.2.6-866235"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,16 +11,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180910Z-d7d4ef",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180910Z-448588",
   "org.scalablytyped" %%% "crypto-js" % "v3.1.8-dt-20180910Z-a33236",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20180910Z-6e8abe",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-dfbf83",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20180910Z-5ea9ff",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180910Z-b93914",
   "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180910Z-014c96",
   "org.scalablytyped" %%% "logform" % "1.2-dt-20180910Z-de63ec",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180910Z-399889",
   "org.scalablytyped" %%% "moment" % "2.22.2-39aab6",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
   "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-dbcdca",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20180910Z-db862f",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-c19301",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181208Z-e9c641",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180910Z-de6390",
   "org.scalablytyped" %%% "stack-trace" % "0.0-unknown-dt-20180910Z-fb7118",
   "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
   "org.scalablytyped" %%% "triple-beam" % "1.3-dt-20180910Z-09798f",

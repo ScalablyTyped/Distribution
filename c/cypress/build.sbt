@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.1.3-31ae43"
+version := "3.1.3-0b10cc"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "check-more-types" % "2.24.0-b306f3",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180910Z-2e1e39",
   "org.scalablytyped" %%% "commander" % "2.19.0-5e90f1",
-  "org.scalablytyped" %%% "common-tags" % "v1.4.0-dt-20180910Z-e50fcd",
+  "org.scalablytyped" %%% "common-tags" % "1.8-dt-20181208Z-e5fc0a",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-0c31be",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180910Z-7b7662",
   "org.scalablytyped" %%% "execa" % "0.9-dt-20180910Z-0e9d12",
@@ -36,7 +36,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "mocha" % "5.2-dt-20180910Z-34aac8",
   "org.scalablytyped" %%% "moment" % "2.22.2-39aab6",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
-  "org.scalablytyped" %%% "ramda" % "0.25-dt-20181120Z-b073e5",
+  "org.scalablytyped" %%% "ramda" % "0.25-dt-20181208Z-ce0324",
   "org.scalablytyped" %%% "request" % "2.48-dt-20181105Z-2b1e0f",
   "org.scalablytyped" %%% "sinon" % "5.0-dt-20181120Z-43cb8f",
   "org.scalablytyped" %%% "sinon-chai" % "3.2.0-dt-20181120Z-c6a559",

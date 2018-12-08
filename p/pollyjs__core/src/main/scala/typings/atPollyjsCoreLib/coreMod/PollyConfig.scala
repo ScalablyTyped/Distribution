@@ -16,7 +16,7 @@ trait PollyConfig extends js.Object {
   var expiresIn: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var logging: js.UndefOr[scala.Boolean] = js.undefined
   var matchRequestsBy: js.UndefOr[atPollyjsCoreLib.Anon_Method] = js.undefined
-  var mode: js.UndefOr[atPollyjsUtilsLib.utilsMod.MODES] = js.undefined
+  var mode: js.UndefOr[atPollyjsUtilsLib.utilsMod.MODES | java.lang.String] = js.undefined
   var persister: js.UndefOr[
     java.lang.String | ScalablyTyped.runtime.Instantiable0[atPollyjsPersisterLib.persisterMod.default]
   ] = js.undefined

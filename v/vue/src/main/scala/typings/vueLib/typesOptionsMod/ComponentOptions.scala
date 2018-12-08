@@ -66,7 +66,7 @@ trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Compute
   var props: js.UndefOr[PropsDef] = js.undefined
   var propsData: js.UndefOr[js.Object] = js.undefined
   var provide: js.UndefOr[js.Object | js.Function0[js.Object]] = js.undefined
-  // hack is for funcitonal component type inference, should not used in user code
+  // hack is for functional component type inference, should not be used in user code
   var render: js.UndefOr[
     js.Function2[
       /* createElement */ vueLib.typesVueMod.CreateElement, 
@@ -76,7 +76,7 @@ trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Compute
   ] = js.undefined
   var renderError: js.UndefOr[
     js.Function2[
-      /* h */ js.Function0[vueLib.typesVnodeMod.VNode], 
+      /* createElement */ vueLib.typesVueMod.CreateElement, 
       /* err */ stdLib.Error, 
       vueLib.typesVnodeMod.VNode
     ]

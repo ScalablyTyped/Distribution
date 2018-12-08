@@ -19,7 +19,8 @@ trait VNodeData extends js.Object {
   var on: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Function | js.Array[js.Function]]] = js.undefined
   var props: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.Any]] = js.undefined
   var ref: js.UndefOr[java.lang.String] = js.undefined
-  var scopedSlots: js.UndefOr[ScalablyTyped.runtime.StringDictionary[ScopedSlot]] = js.undefined
+  var refInFor: js.UndefOr[scala.Boolean] = js.undefined
+  var scopedSlots: js.UndefOr[ScalablyTyped.runtime.StringDictionary[js.UndefOr[ScopedSlot]]] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var slot: js.UndefOr[java.lang.String] = js.undefined
   var staticClass: js.UndefOr[java.lang.String] = js.undefined

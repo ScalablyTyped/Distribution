@@ -3,5 +3,5 @@
 // Project: https://github.com/JamieDixon/react-lifecycle-component
 // Definitions by: Alexander Fisher <https://github.com/pixelshaded>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.0
 ```

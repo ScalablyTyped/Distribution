@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Label extends js.Object {
-  var end: js.UndefOr[scala.Double] = js.undefined
-  var label: java.lang.String | reactLib.reactMod.Global.JSXNs.Element
-  var start: js.UndefOr[scala.Double] = js.undefined
+  var attribute: java.lang.String
+  var id: java.lang.String
+  var index: java.lang.String
+  var label: java.lang.String
+  var value: reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.RefinementValue
 }
 

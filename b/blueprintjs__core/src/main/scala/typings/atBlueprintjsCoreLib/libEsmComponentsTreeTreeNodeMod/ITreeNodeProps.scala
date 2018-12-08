@@ -52,6 +52,20 @@ trait ITreeNodeProps[T] extends ITreeNode[T] {
       scala.Unit
     ]
   ] = js.undefined
+  var onMouseEnter: js.UndefOr[
+    js.Function2[
+      /* node */ TreeNode[T], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      scala.Unit
+    ]
+  ] = js.undefined
+  var onMouseLeave: js.UndefOr[
+    js.Function2[
+      /* node */ TreeNode[T], 
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement], 
+      scala.Unit
+    ]
+  ] = js.undefined
   var path: js.Array[scala.Double]
 }
 

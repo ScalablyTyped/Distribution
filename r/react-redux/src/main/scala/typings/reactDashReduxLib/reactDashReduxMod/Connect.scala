@@ -9,38 +9,64 @@ import scala.scalajs.js.annotation._
 trait Connect extends js.Object {
   // tslint:disable:no-unnecessary-generics
   def apply(): InferableComponentEnhancer[DispatchProp[reduxLib.reduxMod.AnyAction]] = js.native
-  def apply[no_state, TDispatchProps, TOwnProps](
-    mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps]
-  ): InferableComponentEnhancerWithProps[WithThunkActionCreators[TDispatchProps], TOwnProps] = js.native
+  def apply[no_state, TDispatchProps, TOwnProps](mapStateToProps: js.UndefOr[scala.Nothing], mapDispatchToProps: TDispatchProps): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
   def apply[TStateProps, TDispatchProps, TOwnProps](
     mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+    mapDispatchToProps: TDispatchProps,
     mergeProps: js.UndefOr[scala.Nothing],
     options: Options[js.Object, TStateProps, TOwnProps, js.Object]
-  ): InferableComponentEnhancerWithProps[WithThunkActionCreators[TDispatchProps], TOwnProps] = js.native
+  ): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
   def apply[TStateProps, TDispatchProps, TOwnProps](
     mapStateToProps: js.UndefOr[scala.Nothing],
-    mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+    mapDispatchToProps: TDispatchProps,
     mergeProps: scala.Null,
     options: Options[js.Object, TStateProps, TOwnProps, js.Object]
-  ): InferableComponentEnhancerWithProps[WithThunkActionCreators[TDispatchProps], TOwnProps] = js.native
+  ): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
   def apply[no_state, TDispatchProps, TOwnProps](
-    mapStateToProps: scala.Null,
-    mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps]
-  ): InferableComponentEnhancerWithProps[WithThunkActionCreators[TDispatchProps], TOwnProps] = js.native
+    mapStateToProps: js.UndefOr[scala.Nothing],
+    mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]
+  ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
   def apply[TStateProps, TDispatchProps, TOwnProps](
-    mapStateToProps: scala.Null,
-    mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+    mapStateToProps: js.UndefOr[scala.Nothing],
+    mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps],
     mergeProps: js.UndefOr[scala.Nothing],
     options: Options[js.Object, TStateProps, TOwnProps, js.Object]
-  ): InferableComponentEnhancerWithProps[WithThunkActionCreators[TDispatchProps], TOwnProps] = js.native
+  ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
   def apply[TStateProps, TDispatchProps, TOwnProps](
-    mapStateToProps: scala.Null,
-    mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],
+    mapStateToProps: js.UndefOr[scala.Nothing],
+    mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps],
     mergeProps: scala.Null,
     options: Options[js.Object, TStateProps, TOwnProps, js.Object]
-  ): InferableComponentEnhancerWithProps[WithThunkActionCreators[TDispatchProps], TOwnProps] = js.native
+  ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
+  def apply[no_state, TDispatchProps, TOwnProps](mapStateToProps: scala.Null, mapDispatchToProps: TDispatchProps): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
+  def apply[TStateProps, TDispatchProps, TOwnProps](
+    mapStateToProps: scala.Null,
+    mapDispatchToProps: TDispatchProps,
+    mergeProps: js.UndefOr[scala.Nothing],
+    options: Options[js.Object, TStateProps, TOwnProps, js.Object]
+  ): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
+  def apply[TStateProps, TDispatchProps, TOwnProps](
+    mapStateToProps: scala.Null,
+    mapDispatchToProps: TDispatchProps,
+    mergeProps: scala.Null,
+    options: Options[js.Object, TStateProps, TOwnProps, js.Object]
+  ): InferableComponentEnhancerWithProps[ResolveThunks[TDispatchProps], TOwnProps] = js.native
+  def apply[no_state, TDispatchProps, TOwnProps](
+    mapStateToProps: scala.Null,
+    mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps]
+  ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
+  def apply[TStateProps, TDispatchProps, TOwnProps](
+    mapStateToProps: scala.Null,
+    mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps],
+    mergeProps: js.UndefOr[scala.Nothing],
+    options: Options[js.Object, TStateProps, TOwnProps, js.Object]
+  ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
+  def apply[TStateProps, TDispatchProps, TOwnProps](
+    mapStateToProps: scala.Null,
+    mapDispatchToProps: MapDispatchToPropsNonObject[TDispatchProps, TOwnProps],
+    mergeProps: scala.Null,
+    options: Options[js.Object, TStateProps, TOwnProps, js.Object]
+  ): InferableComponentEnhancerWithProps[TDispatchProps, TOwnProps] = js.native
   def apply[no_state, TDispatchProps, TOwnProps, TMergedProps](
     mapStateToProps: js.UndefOr[scala.Nothing],
     mapDispatchToProps: MapDispatchToPropsParam[TDispatchProps, TOwnProps],

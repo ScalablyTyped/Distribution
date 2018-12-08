@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait NestOptions extends Options {
-  var `type`: binaryDashParserLib.binaryDashParserMod.Parser | java.lang.String
+  var `type`: binaryDashParserLib.binaryDashParserMod.Parser[_]
 }
 

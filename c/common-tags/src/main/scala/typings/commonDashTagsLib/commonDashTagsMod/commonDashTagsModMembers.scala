@@ -8,46 +8,75 @@ import scala.scalajs.js.annotation._
 @JSImport("common-tags", JSImport.Namespace)
 @js.native
 object commonDashTagsModMembers extends js.Object {
-  var TemplateTag: commonDashTagsLib.Anon_Transformers = js.native
-  var codeBlock: TemplateTag = js.native
-  var commaLists: TemplateTag = js.native
-  var commaListsAnd: TemplateTag = js.native
-  var commaListsOr: TemplateTag = js.native
-  var html: TemplateTag = js.native
-  var inlineArrayTransformer: js.Function1[/* opts */ js.UndefOr[commonDashTagsLib.Anon_Conjunction], TemplateTransformer] = js.native
-  var inlineLists: TemplateTag = js.native
-  var oneLine: TemplateTag = js.native
-  var oneLineCommaLists: TemplateTag = js.native
-  var oneLineCommaListsAnd: TemplateTag = js.native
-  var oneLineCommaListsOr: TemplateTag = js.native
-  var oneLineInlineLists: TemplateTag = js.native
-  var oneLineTrim: TemplateTag = js.native
-  var replaceResultTransformer: js.Function2[
-    /* replaceWhat */ java.lang.String | stdLib.RegExp, 
-    /* replaceWith */ java.lang.String, 
-    TemplateTransformer
-  ] = js.native
-  var replaceSubstitutionTransformer: js.Function2[
-    /* replaceWhat */ java.lang.String | stdLib.RegExp, 
-    /* replaceWith */ java.lang.String, 
-    TemplateTransformer
-  ] = js.native
-  var safeHtml: TemplateTag = js.native
-  var source: TemplateTag = js.native
-  var splitStringTransformer: js.Function1[/* splitBy */ java.lang.String, TemplateTransformer] = js.native
-  var stripIndent: TemplateTag = js.native
-  var stripIndentTransformer: js.Function1[
-    /* type */ js.UndefOr[
-      commonDashTagsLib.commonDashTagsLibStrings.initial | commonDashTagsLib.commonDashTagsLibStrings.all
-    ], 
-    TemplateTransformer
-  ] = js.native
-  var stripIndents: TemplateTag = js.native
-  var trimResultTransformer: js.Function1[
-    /* side */ js.UndefOr[
-      commonDashTagsLib.commonDashTagsLibStrings.left | commonDashTagsLib.commonDashTagsLibStrings.right
-    ], 
-    TemplateTransformer
-  ] = js.native
+  val TemplateTag: commonDashTagsLib.Anon_Transformers = js.native
+  val codeBlock: TemplateTag = js.native
+  val commaLists: TemplateTag = js.native
+  val commaListsAnd: TemplateTag = js.native
+  val commaListsOr: TemplateTag = js.native
+  val html: TemplateTag = js.native
+  val id: TemplateTag = js.native
+  val inlineLists: TemplateTag = js.native
+  val oneLine: TemplateTag = js.native
+  val oneLineCommaLists: TemplateTag = js.native
+  val oneLineCommaListsAnd: TemplateTag = js.native
+  val oneLineCommaListsOr: TemplateTag = js.native
+  val oneLineInlineLists: TemplateTag = js.native
+  val oneLineTrim: TemplateTag = js.native
+  val safeHtml: TemplateTag = js.native
+  val source: TemplateTag = js.native
+  val stripIndent: TemplateTag = js.native
+  val stripIndents: TemplateTag = js.native
+  def createTag(): TemplateTag = js.native
+  def createTag(transformers: (PluginFunction | TemplateTransformer[_])*): TemplateTag = js.native
+  def createTag(transformers: js.Array[TemplateTransformer[_]]): TemplateTag = js.native
+  def inlineArrayTransformer(): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def inlineArrayTransformer(opts: commonDashTagsLib.Anon_Conjunction): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceResultTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceResultTransformer(
+    replaceWhat: java.lang.String,
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceResultTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceResultTransformer(
+    replaceWhat: stdLib.RegExp,
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceStringTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceStringTransformer(
+    replaceWhat: java.lang.String,
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceStringTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceStringTransformer(
+    replaceWhat: stdLib.RegExp,
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceSubstitutionTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceSubstitutionTransformer(
+    replaceWhat: java.lang.String,
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceSubstitutionTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def replaceSubstitutionTransformer(
+    replaceWhat: stdLib.RegExp,
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+  ): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def splitStringTransformer(splitBy: java.lang.String): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def stripIndentTransformer(): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  @JSName("stripIndentTransformer")
+  def stripIndentTransformer_all(`type`: commonDashTagsLib.commonDashTagsLibStrings.all): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  @JSName("stripIndentTransformer")
+  def stripIndentTransformer_initial(`type`: commonDashTagsLib.commonDashTagsLibStrings.initial): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  def trimResultTransformer(): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  @JSName("trimResultTransformer")
+  def `trimResultTransformer_`(side: commonDashTagsLib.commonDashTagsLibStrings.Empty): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  @JSName("trimResultTransformer")
+  def trimResultTransformer_end(side: commonDashTagsLib.commonDashTagsLibStrings.end): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  @JSName("trimResultTransformer")
+  def trimResultTransformer_left(side: commonDashTagsLib.commonDashTagsLibStrings.left): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  @JSName("trimResultTransformer")
+  def trimResultTransformer_right(side: commonDashTagsLib.commonDashTagsLibStrings.right): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
+  @JSName("trimResultTransformer")
+  def trimResultTransformer_start(side: commonDashTagsLib.commonDashTagsLibStrings.start): TemplateTransformer[ScalablyTyped.runtime.StringDictionary[_]] = js.native
 }
 

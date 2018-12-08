@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("spectacle", "Fit")
 @js.native
 class Fit ()
-  extends reactLib.reactMod.Component[js.Any, js.Object, js.Any]
+  extends reactLib.reactMod.Component[FitProps, js.Object, js.Any]
 

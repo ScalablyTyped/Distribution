@@ -97,6 +97,9 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val CREDIT_CARD: /* credit-card */ java.lang.String = js.native
   val CROSS: /* cross */ java.lang.String = js.native
   val CROWN: /* crown */ java.lang.String = js.native
+  val CUBE: /* cube */ java.lang.String = js.native
+  val CUBE_ADD: /* cube-add */ java.lang.String = js.native
+  val CUBE_REMOVE: /* cube-remove */ java.lang.String = js.native
   val CURVED_RANGE_CHART: /* curved-range-chart */ java.lang.String = js.native
   val CUT: /* cut */ java.lang.String = js.native
   val DASHBOARD: /* dashboard */ java.lang.String = js.native
@@ -255,6 +258,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val LAYOUT_SKEW_GRID: /* layout-skew-grid */ java.lang.String = js.native
   val LAYOUT_SORTED_CLUSTERS: /* layout-sorted-clusters */ java.lang.String = js.native
   val LEFT_JOIN: /* left-join */ java.lang.String = js.native
+  val LIFESAVER: /* lifesaver */ java.lang.String = js.native
   val LIGHTBULB: /* lightbulb */ java.lang.String = js.native
   val LINK: /* link */ java.lang.String = js.native
   val LIST: /* list */ java.lang.String = js.native
@@ -415,6 +419,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val THUMBS_DOWN: /* thumbs-down */ java.lang.String = js.native
   val THUMBS_UP: /* thumbs-up */ java.lang.String = js.native
   val TH_DERIVED: /* th-derived */ java.lang.String = js.native
+  val TH_FILTERED: /* th-filtered */ java.lang.String = js.native
   val TH_LIST: /* th-list */ java.lang.String = js.native
   val TICK: /* tick */ java.lang.String = js.native
   val TICK_CIRCLE: /* tick-circle */ java.lang.String = js.native

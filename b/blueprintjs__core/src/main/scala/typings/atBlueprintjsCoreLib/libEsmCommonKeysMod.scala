@@ -19,5 +19,6 @@ object libEsmCommonKeysMod extends js.Object {
   val SHIFT: /* 16 */ scala.Double = js.native
   val SPACE: /* 32 */ scala.Double = js.native
   val TAB: /* 9 */ scala.Double = js.native
+  def isKeyboardClick(keyCode: scala.Double): scala.Boolean = js.native
 }
 

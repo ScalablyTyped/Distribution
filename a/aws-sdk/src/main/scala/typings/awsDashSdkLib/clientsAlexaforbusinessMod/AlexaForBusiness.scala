@@ -263,6 +263,49 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+     * Creates a recurring schedule for usage reports to deliver to the specified S3 location with a specified daily or weekly interval.
+     */
+  def createBusinessReportSchedule(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateBusinessReportScheduleResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a recurring schedule for usage reports to deliver to the specified S3 location with a specified daily or weekly interval.
+     */
+  def createBusinessReportSchedule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateBusinessReportScheduleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateBusinessReportScheduleResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a recurring schedule for usage reports to deliver to the specified S3 location with a specified daily or weekly interval.
+     */
+  def createBusinessReportSchedule(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateBusinessReportScheduleRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateBusinessReportScheduleResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Creates a recurring schedule for usage reports to deliver to the specified S3 location with a specified daily or weekly interval.
+     */
+  def createBusinessReportSchedule(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateBusinessReportScheduleRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateBusinessReportScheduleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CreateBusinessReportScheduleResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
      * Adds a new conference provider under the user's AWS account.
      */
   def createConferenceProvider(): awsDashSdkLib.libRequestMod.Request[
@@ -549,6 +592,49 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteAddressBookResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the recurring report delivery schedule with the specified schedule ARN.
+     */
+  def deleteBusinessReportSchedule(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteBusinessReportScheduleResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the recurring report delivery schedule with the specified schedule ARN.
+     */
+  def deleteBusinessReportSchedule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteBusinessReportScheduleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteBusinessReportScheduleResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the recurring report delivery schedule with the specified schedule ARN.
+     */
+  def deleteBusinessReportSchedule(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteBusinessReportScheduleRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteBusinessReportScheduleResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Deletes the recurring report delivery schedule with the specified schedule ARN.
+     */
+  def deleteBusinessReportSchedule(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteBusinessReportScheduleRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteBusinessReportScheduleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeleteBusinessReportScheduleResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1508,6 +1594,49 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetSkillGroupResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the details of the schedules that a user configured.
+     */
+  def listBusinessReportSchedules(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListBusinessReportSchedulesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the details of the schedules that a user configured.
+     */
+  def listBusinessReportSchedules(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListBusinessReportSchedulesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListBusinessReportSchedulesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the details of the schedules that a user configured.
+     */
+  def listBusinessReportSchedules(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListBusinessReportSchedulesRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListBusinessReportSchedulesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Lists the details of the schedules that a user configured.
+     */
+  def listBusinessReportSchedules(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListBusinessReportSchedulesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListBusinessReportSchedulesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ListBusinessReportSchedulesResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -2621,6 +2750,49 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateAddressBookResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates the configuration of the report delivery schedule with the specified schedule ARN.
+     */
+  def updateBusinessReportSchedule(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateBusinessReportScheduleResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates the configuration of the report delivery schedule with the specified schedule ARN.
+     */
+  def updateBusinessReportSchedule(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateBusinessReportScheduleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateBusinessReportScheduleResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates the configuration of the report delivery schedule with the specified schedule ARN.
+     */
+  def updateBusinessReportSchedule(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateBusinessReportScheduleRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateBusinessReportScheduleResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+     * Updates the configuration of the report delivery schedule with the specified schedule ARN.
+     */
+  def updateBusinessReportSchedule(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateBusinessReportScheduleRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateBusinessReportScheduleResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.UpdateBusinessReportScheduleResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

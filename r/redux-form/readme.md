@@ -13,5 +13,5 @@
 //                 Maddi Joyce <https://github.com/maddijoyce>
 //                 Kamil Wojcik <https://github.com/smifun>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.9
+// TypeScript Version: 3.0
 ```

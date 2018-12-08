@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "nodecredstash"
-version := "2.0-dt-20180910Z-6e65ea"
+version := "2.0-dt-20180910Z-86016e"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "aws-sdk" % "2.372.0-325b17",
+  "org.scalablytyped" %%% "aws-sdk" % "2.372.0-b599df",
   "org.scalablytyped" %%% "events" % "1.2-dt-20180910Z-7d2d2b",
   "org.scalablytyped" %%% "jmespath" % "0.15-dt-20180910Z-d82a54",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",

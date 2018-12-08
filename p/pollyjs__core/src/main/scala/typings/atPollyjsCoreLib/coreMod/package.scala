@@ -13,6 +13,7 @@ package object coreMod {
     /* intercept */ Intercept, 
     EventListenerResponse
   ]
+  type MatchBy[T, R] = js.Function1[/* input */ T, R]
   type PollyEvent = atPollyjsCoreLib.atPollyjsCoreLibStrings.create | atPollyjsCoreLib.atPollyjsCoreLibStrings.stop | atPollyjsCoreLib.atPollyjsCoreLibStrings.register
   type PollyEventListener = js.Function1[/* poll */ Polly, scala.Unit]
   type RecordingEventListener = js.Function2[/* req */ Request, /* recording */ js.Any, EventListenerResponse]

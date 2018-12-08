@@ -15,7 +15,8 @@ package object reactDashReduxMod {
     reactLib.reactMod.ReactNs.ComponentState
   ]) with reactDashReduxLib.Anon_WrappedComponent[C]
   type GetProps[C] = js.Any
-  type HandleThunkActionCreator[TActionCreator] = TActionCreator | stdLib.ReturnType[TActionCreator]
+  type HandleThunkActionCreator[TActionCreator] = TActionCreator | InferThunkActionCreatorType[TActionCreator]
+  type InferThunkActionCreatorType[TActionCreator /* <: js.Function1[/* repeated */js.Any, _] */] = TActionCreator | (js.Function1[/* args */ js.Any, js.Any])
   type InferableComponentEnhancer[TInjectedProps] = InferableComponentEnhancerWithProps[TInjectedProps, js.Object]
   type InferableComponentEnhancerWithProps[TInjectedProps, TNeedsProps] = js.Function1[
     /* component */ js.Any, 
@@ -25,13 +26,14 @@ package object reactDashReduxMod {
   type MapDispatchToPropsFactory[TDispatchProps, TOwnProps] = js.Function2[
     /* dispatch */ reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.Action[js.Any]], 
     /* ownProps */ TOwnProps, 
-    MapDispatchToProps[TDispatchProps, TOwnProps]
+    MapDispatchToPropsFunction[TDispatchProps, TOwnProps]
   ]
   type MapDispatchToPropsFunction[TDispatchProps, TOwnProps] = js.Function2[
     /* dispatch */ reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.Action[js.Any]], 
     /* ownProps */ TOwnProps, 
     TDispatchProps
   ]
+  type MapDispatchToPropsNonObject[TDispatchProps, TOwnProps] = (MapDispatchToPropsFactory[TDispatchProps, TOwnProps]) | (MapDispatchToPropsFunction[TDispatchProps, TOwnProps])
   type MapDispatchToPropsParam[TDispatchProps, TOwnProps] = (MapDispatchToPropsFactory[TDispatchProps, TOwnProps]) | (MapDispatchToProps[TDispatchProps, TOwnProps])
   type MapStateToProps[TStateProps, TOwnProps, State] = js.Function2[/* state */ State, /* ownProps */ TOwnProps, TStateProps]
   type MapStateToPropsFactory[TStateProps, TOwnProps, State] = js.Function2[
@@ -50,6 +52,7 @@ package object reactDashReduxMod {
     TMergedProps
   ]
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
+  type ResolveThunks[TDispatchProps] = TDispatchProps | (reactDashReduxLib.reactDashReduxLibStrings.ResolveThunks with TDispatchProps)
   type Selector[S, TProps, TOwnProps] = js.Function2[/* state */ S, /* ownProps */ TOwnProps, TProps]
   type SelectorFactory[S, TProps, TOwnProps, TFactoryOptions] = js.Function2[
     /* dispatch */ reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.Action[js.Any]], 
@@ -57,5 +60,4 @@ package object reactDashReduxMod {
     Selector[S, TProps, TOwnProps]
   ]
   type Shared[InjectedProps, DecorationTargetProps /* <: js.Object */] = reactDashReduxLib.reactDashReduxLibStrings.Shared with DecorationTargetProps
-  type WithThunkActionCreators[TDispatchProps] = TDispatchProps | (reactDashReduxLib.reactDashReduxLibStrings.WithThunkActionCreators with TDispatchProps)
 }

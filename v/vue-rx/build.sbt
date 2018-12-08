@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-rx"
-version := "6.0.1-239dfc"
+version := "6.0.1-343be5"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rxjs" % "6.3.3-0ffcd9",
   "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
   "org.scalablytyped" %%% "tslib" % "1.9.3-6146fe",
-  "org.scalablytyped" %%% "vue" % "2.5.17-7508e2")
+  "org.scalablytyped" %%% "vue" % "2.5.18-b21423")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

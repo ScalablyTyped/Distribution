@@ -82,6 +82,9 @@ object atBlueprintjsCoreLibStrings {
   sealed trait `right-top` extends js.Object
   
   @js.native
+  sealed trait safeInvokeMember extends js.Object
+  
+  @js.native
   sealed trait start extends js.Object
   
   @js.native
@@ -124,6 +127,7 @@ object atBlueprintjsCoreLibStrings {
   def right: right = "right".asInstanceOf[right]
   def `right-bottom`: `right-bottom` = "right-bottom".asInstanceOf[`right-bottom`]
   def `right-top`: `right-top` = "right-top".asInstanceOf[`right-top`]
+  def safeInvokeMember: safeInvokeMember = "safeInvokeMember".asInstanceOf[safeInvokeMember]
   def start: start = "start".asInstanceOf[start]
   def success: success = "success".asInstanceOf[success]
   def top: top = "top".asInstanceOf[top]

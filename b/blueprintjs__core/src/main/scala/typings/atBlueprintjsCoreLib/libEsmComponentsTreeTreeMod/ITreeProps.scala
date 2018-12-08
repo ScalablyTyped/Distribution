@@ -34,5 +34,13 @@ trait ITreeProps[T]
        * Invoked when the caret of a collapsed node is clicked.
        */
   var onNodeExpand: js.UndefOr[TreeEventHandler[T]] = js.undefined
+  /**
+       * Invoked when the mouse is moved over a node.
+       */
+  var onNodeMouseEnter: js.UndefOr[TreeEventHandler[T]] = js.undefined
+  /**
+       * Invoked when the mouse is moved out of a node.
+       */
+  var onNodeMouseLeave: js.UndefOr[TreeEventHandler[T]] = js.undefined
 }
 

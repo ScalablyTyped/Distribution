@@ -32,6 +32,11 @@ trait ScrollViewProps
        */
   var horizontal: js.UndefOr[scala.Boolean] = js.undefined
   /**
+       * If sticky headers should stick at the bottom instead of the top of the
+       * ScrollView. This is usually used with inverted ScrollViews.
+       */
+  var invertStickyHeaders: js.UndefOr[scala.Boolean] = js.undefined
+  /**
        * Determines whether the keyboard gets dismissed in response to a drag.
        *   - 'none' (the default) drags do not dismiss the keyboard.
        *   - 'onDrag' the keyboard is dismissed when a drag begins.

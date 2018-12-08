@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Title extends js.Object {
-  var id: scala.Double
+  var id: js.Any
   var title: java.lang.String
 }
 

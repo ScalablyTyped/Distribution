@@ -15,6 +15,8 @@ class Tree[T] ()
   var handleNodeContextMenu: js.Any = js.native
   var handleNodeDoubleClick: js.Any = js.native
   var handleNodeExpand: js.Any = js.native
+  var handleNodeMouseEnter: js.Any = js.native
+  var handleNodeMouseLeave: js.Any = js.native
   var nodeRefs: js.Any = js.native
   /**
        * Returns the underlying HTML element of the `Tree` node with an id of `nodeId`.

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 
 trait Theme
-  extends /* key */ ScalablyTyped.runtime.StringDictionary[java.lang.String | scala.Double]
+  extends /* key */ ScalablyTyped.runtime.StringDictionary[scala.Double | java.lang.String]
 

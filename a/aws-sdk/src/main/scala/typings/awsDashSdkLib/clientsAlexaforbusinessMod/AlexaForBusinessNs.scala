@@ -116,6 +116,94 @@ object AlexaForBusinessNs extends js.Object {
     extends /* key */ ScalablyTyped.runtime.StringDictionary[Value]
   
   
+  trait BusinessReport extends js.Object {
+    /**
+         * The time of report delivery.
+         */
+    var DeliveryTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+         * The download link where a user can download the report.
+         */
+    var DownloadUrl: js.UndefOr[BusinessReportDownloadUrl] = js.undefined
+    /**
+         * The failure code.
+         */
+    var FailureCode: js.UndefOr[BusinessReportFailureCode] = js.undefined
+    /**
+         * The S3 location of the output reports.
+         */
+    var S3Location: js.UndefOr[BusinessReportS3Location] = js.undefined
+    /**
+         * The status of the report generation execution (RUNNING, SUCCEEDED, or FAILED).
+         */
+    var Status: js.UndefOr[BusinessReportStatus] = js.undefined
+  }
+  
+  
+  trait BusinessReportContentRange extends js.Object {
+    /**
+         * The interval of the content range.
+         */
+    var Interval: js.UndefOr[BusinessReportInterval] = js.undefined
+  }
+  
+  
+  trait BusinessReportRecurrence extends js.Object {
+    /**
+         * The start date.
+         */
+    var StartDate: js.UndefOr[_Date] = js.undefined
+  }
+  
+  
+  trait BusinessReportS3Location extends js.Object {
+    /**
+         * The S3 bucket name of the output reports.
+         */
+    var BucketName: js.UndefOr[CustomerS3BucketName] = js.undefined
+    /**
+         * The path of the business report.
+         */
+    var Path: js.UndefOr[BusinessReportS3Path] = js.undefined
+  }
+  
+  
+  trait BusinessReportSchedule extends js.Object {
+    /**
+         * The content range of the reports.
+         */
+    var ContentRange: js.UndefOr[BusinessReportContentRange] = js.undefined
+    /**
+         * The format of the generated report (individual CSV files or zipped files of individual files).
+         */
+    var Format: js.UndefOr[BusinessReportFormat] = js.undefined
+    /**
+         * The details of the last business report delivery for a specified time interval.
+         */
+    var LastBusinessReport: js.UndefOr[BusinessReport] = js.undefined
+    /**
+         * The recurrence of the reports.
+         */
+    var Recurrence: js.UndefOr[BusinessReportRecurrence] = js.undefined
+    /**
+         * The S3 bucket name of the output reports.
+         */
+    var S3BucketName: js.UndefOr[CustomerS3BucketName] = js.undefined
+    /**
+         * The S3 key where the report is delivered.
+         */
+    var S3KeyPrefix: js.UndefOr[S3KeyPrefix] = js.undefined
+    /**
+         * The ARN of the business report schedule.
+         */
+    var ScheduleArn: js.UndefOr[Arn] = js.undefined
+    /**
+         * The name identifier of the schedule.
+         */
+    var ScheduleName: js.UndefOr[BusinessReportScheduleName] = js.undefined
+  }
+  
+  
   trait Category extends js.Object {
     /**
          * The ID of the skill store category.
@@ -244,6 +332,46 @@ object AlexaForBusinessNs extends js.Object {
   }
   
   
+  trait CreateBusinessReportScheduleRequest extends js.Object {
+    /**
+         * The client request token.
+         */
+    var ClientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
+    /**
+         * The content range of the reports.
+         */
+    var ContentRange: BusinessReportContentRange
+    /**
+         * The format of the generated report (individual CSV files or zipped files of individual files).
+         */
+    var Format: BusinessReportFormat
+    /**
+         * The recurrence of the reports.
+         */
+    var Recurrence: js.UndefOr[BusinessReportRecurrence] = js.undefined
+    /**
+         * The S3 bucket name of the output reports.
+         */
+    var S3BucketName: js.UndefOr[CustomerS3BucketName] = js.undefined
+    /**
+         * The S3 key where the report is delivered.
+         */
+    var S3KeyPrefix: js.UndefOr[S3KeyPrefix] = js.undefined
+    /**
+         * The name identifier of the schedule.
+         */
+    var ScheduleName: js.UndefOr[BusinessReportScheduleName] = js.undefined
+  }
+  
+  
+  trait CreateBusinessReportScheduleResponse extends js.Object {
+    /**
+         * The ARN of the business report schedule.
+         */
+    var ScheduleArn: js.UndefOr[Arn] = js.undefined
+  }
+  
+  
   trait CreateConferenceProviderRequest extends js.Object {
     /**
          * The request token of the client.
@@ -300,7 +428,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * The phone number of the contact in E.164 format.
          */
-    var PhoneNumber: E164PhoneNumber
+    var PhoneNumber: js.UndefOr[E164PhoneNumber] = js.undefined
   }
   
   
@@ -469,6 +597,17 @@ object AlexaForBusinessNs extends js.Object {
   
   
   trait DeleteAddressBookResponse extends js.Object
+  
+  
+  trait DeleteBusinessReportScheduleRequest extends js.Object {
+    /**
+         * The ARN of the business report schedule.
+         */
+    var ScheduleArn: Arn
+  }
+  
+  
+  trait DeleteBusinessReportScheduleResponse extends js.Object
   
   
   trait DeleteConferenceProviderRequest extends js.Object {
@@ -964,6 +1103,30 @@ object AlexaForBusinessNs extends js.Object {
   }
   
   
+  trait ListBusinessReportSchedulesRequest extends js.Object {
+    /**
+         * The maximum number of schedules listed in the call.
+         */
+    var MaxResults: js.UndefOr[MaxResults] = js.undefined
+    /**
+         * The token used to list the remaining schedules from the previous API call.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
+  trait ListBusinessReportSchedulesResponse extends js.Object {
+    /**
+         * The schedule of the reports.
+         */
+    var BusinessReportSchedules: js.UndefOr[BusinessReportScheduleList] = js.undefined
+    /**
+         * The token used to list the remaining schedules from the previous API call.
+         */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  
   trait ListConferenceProvidersRequest extends js.Object {
     /**
          * The maximum number of conference providers to be returned, per paginated calls.
@@ -1188,7 +1351,7 @@ object AlexaForBusinessNs extends js.Object {
     /**
          * The phone number to call to join the conference.
          */
-    var PhoneNumber: PhoneNumber
+    var PhoneNumber: OutboundPhoneNumber
   }
   
   
@@ -2142,6 +2305,35 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Creates a recurring schedule for usage reports to deliver to the specified S3 location with a specified daily or weekly interval.
+       */
+    def createBusinessReportSchedule(): awsDashSdkLib.libRequestMod.Request[CreateBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a recurring schedule for usage reports to deliver to the specified S3 location with a specified daily or weekly interval.
+       */
+    def createBusinessReportSchedule(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateBusinessReportScheduleResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a recurring schedule for usage reports to deliver to the specified S3 location with a specified daily or weekly interval.
+       */
+    def createBusinessReportSchedule(params: CreateBusinessReportScheduleRequest): awsDashSdkLib.libRequestMod.Request[CreateBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Creates a recurring schedule for usage reports to deliver to the specified S3 location with a specified daily or weekly interval.
+       */
+    def createBusinessReportSchedule(
+      params: CreateBusinessReportScheduleRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateBusinessReportScheduleResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Adds a new conference provider under the user's AWS account.
        */
     def createConferenceProvider(): awsDashSdkLib.libRequestMod.Request[CreateConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2344,6 +2536,35 @@ object AlexaForBusinessNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the recurring report delivery schedule with the specified schedule ARN.
+       */
+    def deleteBusinessReportSchedule(): awsDashSdkLib.libRequestMod.Request[DeleteBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the recurring report delivery schedule with the specified schedule ARN.
+       */
+    def deleteBusinessReportSchedule(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteBusinessReportScheduleResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the recurring report delivery schedule with the specified schedule ARN.
+       */
+    def deleteBusinessReportSchedule(params: DeleteBusinessReportScheduleRequest): awsDashSdkLib.libRequestMod.Request[DeleteBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Deletes the recurring report delivery schedule with the specified schedule ARN.
+       */
+    def deleteBusinessReportSchedule(
+      params: DeleteBusinessReportScheduleRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteBusinessReportScheduleResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Deletes a conference provider.
        */
@@ -3003,6 +3224,35 @@ object AlexaForBusinessNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetSkillGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the details of the schedules that a user configured.
+       */
+    def listBusinessReportSchedules(): awsDashSdkLib.libRequestMod.Request[ListBusinessReportSchedulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the details of the schedules that a user configured.
+       */
+    def listBusinessReportSchedules(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListBusinessReportSchedulesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListBusinessReportSchedulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the details of the schedules that a user configured.
+       */
+    def listBusinessReportSchedules(params: ListBusinessReportSchedulesRequest): awsDashSdkLib.libRequestMod.Request[ListBusinessReportSchedulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Lists the details of the schedules that a user configured.
+       */
+    def listBusinessReportSchedules(
+      params: ListBusinessReportSchedulesRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListBusinessReportSchedulesResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListBusinessReportSchedulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
        * Lists conference providers under a specific AWS account.
        */
@@ -3787,6 +4037,35 @@ object AlexaForBusinessNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateAddressBookResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+       * Updates the configuration of the report delivery schedule with the specified schedule ARN.
+       */
+    def updateBusinessReportSchedule(): awsDashSdkLib.libRequestMod.Request[UpdateBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates the configuration of the report delivery schedule with the specified schedule ARN.
+       */
+    def updateBusinessReportSchedule(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateBusinessReportScheduleResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates the configuration of the report delivery schedule with the specified schedule ARN.
+       */
+    def updateBusinessReportSchedule(params: UpdateBusinessReportScheduleRequest): awsDashSdkLib.libRequestMod.Request[UpdateBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+       * Updates the configuration of the report delivery schedule with the specified schedule ARN.
+       */
+    def updateBusinessReportSchedule(
+      params: UpdateBusinessReportScheduleRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateBusinessReportScheduleResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateBusinessReportScheduleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
        * Updates an existing conference provider's settings.
        */
     def updateConferenceProvider(): awsDashSdkLib.libRequestMod.Request[UpdateConferenceProviderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3997,6 +4276,37 @@ object AlexaForBusinessNs extends js.Object {
   trait UpdateAddressBookResponse extends js.Object
   
   
+  trait UpdateBusinessReportScheduleRequest extends js.Object {
+    /**
+         * The format of the generated report (individual CSV files or zipped files of individual files).
+         */
+    var Format: js.UndefOr[BusinessReportFormat] = js.undefined
+    /**
+         * The recurrence of the reports.
+         */
+    var Recurrence: js.UndefOr[BusinessReportRecurrence] = js.undefined
+    /**
+         * The S3 location of the output reports.
+         */
+    var S3BucketName: js.UndefOr[CustomerS3BucketName] = js.undefined
+    /**
+         * The S3 key where the report is delivered.
+         */
+    var S3KeyPrefix: js.UndefOr[S3KeyPrefix] = js.undefined
+    /**
+         * The ARN of the business report schedule.
+         */
+    var ScheduleArn: Arn
+    /**
+         * The name identifier of the schedule.
+         */
+    var ScheduleName: js.UndefOr[BusinessReportScheduleName] = js.undefined
+  }
+  
+  
+  trait UpdateBusinessReportScheduleResponse extends js.Object
+  
+  
   trait UpdateConferenceProviderRequest extends js.Object {
     /**
          * The ARN of the conference provider.
@@ -4203,6 +4513,14 @@ object AlexaForBusinessNs extends js.Object {
   type Boolean = scala.Boolean
   type BulletPoint = java.lang.String
   type BulletPoints = js.Array[BulletPoint]
+  type BusinessReportDownloadUrl = java.lang.String
+  type BusinessReportFailureCode = awsDashSdkLib.awsDashSdkLibStrings.ACCESS_DENIED | awsDashSdkLib.awsDashSdkLibStrings.NO_SUCH_BUCKET | awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_FAILURE | java.lang.String
+  type BusinessReportFormat = awsDashSdkLib.awsDashSdkLibStrings.CSV | awsDashSdkLib.awsDashSdkLibStrings.CSV_ZIP | java.lang.String
+  type BusinessReportInterval = awsDashSdkLib.awsDashSdkLibStrings.ONE_DAY | awsDashSdkLib.awsDashSdkLibStrings.ONE_WEEK | java.lang.String
+  type BusinessReportS3Path = java.lang.String
+  type BusinessReportScheduleList = js.Array[BusinessReportSchedule]
+  type BusinessReportScheduleName = java.lang.String
+  type BusinessReportStatus = awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
   type CategoryId = scala.Double
   type CategoryList = js.Array[Category]
   type CategoryName = java.lang.String
@@ -4217,6 +4535,7 @@ object AlexaForBusinessNs extends js.Object {
   type ContactDataList = js.Array[ContactData]
   type ContactName = java.lang.String
   type CountryCode = java.lang.String
+  type CustomerS3BucketName = java.lang.String
   type DeveloperName = java.lang.String
   type DeviceDataList = js.Array[DeviceData]
   type DeviceEventList = js.Array[DeviceEvent]
@@ -4256,7 +4575,7 @@ object AlexaForBusinessNs extends js.Object {
   type NextToken = java.lang.String
   type OneClickIdDelay = java.lang.String
   type OneClickPinDelay = java.lang.String
-  type PhoneNumber = java.lang.String
+  type OutboundPhoneNumber = java.lang.String
   type PrivacyPolicy = java.lang.String
   type ProductDescription = java.lang.String
   type ProductId = java.lang.String
@@ -4273,6 +4592,7 @@ object AlexaForBusinessNs extends js.Object {
   type RoomSkillParameterKey = java.lang.String
   type RoomSkillParameterValue = java.lang.String
   type RoomSkillParameters = js.Array[RoomSkillParameter]
+  type S3KeyPrefix = java.lang.String
   type SampleUtterances = js.Array[Utterance]
   type ShortDescription = java.lang.String
   type SkillGroupDataList = js.Array[SkillGroupData]
@@ -4307,6 +4627,7 @@ object AlexaForBusinessNs extends js.Object {
   type Utterance = java.lang.String
   type Value = java.lang.String
   type WakeWord = awsDashSdkLib.awsDashSdkLibStrings.ALEXA | awsDashSdkLib.awsDashSdkLibStrings.AMAZON | awsDashSdkLib.awsDashSdkLibStrings.ECHO | awsDashSdkLib.awsDashSdkLibStrings.COMPUTER | java.lang.String
+  type _Date = java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-11-09` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
   type user_FirstName = java.lang.String
   type user_LastName = java.lang.String

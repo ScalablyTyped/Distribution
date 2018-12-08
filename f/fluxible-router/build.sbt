@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fluxible-router"
-version := "1.5-dt-20181009Z-a5c629"
+version := "1.5-dt-20181009Z-aafbf4"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dispatchr" % "1.2-dt-20180910Z-afcddf",
   "org.scalablytyped" %%% "fluxible" % "1.4-dt-20181009Z-b6ac20",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-dcbd7c",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-65cffa",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-000ab2",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-1b8e7c",
   "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

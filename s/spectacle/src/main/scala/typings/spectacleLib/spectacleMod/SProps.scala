@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 
 trait SProps extends BaseProps {
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[sType | js.Array[sType]] = js.undefined
 }
 

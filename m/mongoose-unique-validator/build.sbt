@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mongoose-unique-validator"
-version := "1.0-dt-20180910Z-b956c9"
+version := "1.0-dt-20180910Z-3bde91"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bson" % "1.0.6-dt-20180910Z-6478ed",
   "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20181203Z-200d30",
-  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181204Z-f5aa6c",
+  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20181208Z-ac428c",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
   "org.scalablytyped" %%% "std" % "3.2.1-edfe2b")
 publishArtifact in packageDoc := false

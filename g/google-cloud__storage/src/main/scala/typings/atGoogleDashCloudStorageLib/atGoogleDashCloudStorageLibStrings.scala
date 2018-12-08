@@ -7,24 +7,52 @@ import scala.scalajs.js.annotation._
 
 object atGoogleDashCloudStorageLibStrings {
   @js.native
-  sealed trait COLDLINE extends js.Object
+  sealed trait authenticatedRead extends js.Object
   
   @js.native
-  sealed trait DURABLE_REDUCED_AVAILABILITY extends js.Object
+  sealed trait bucketOwnerFullControl extends js.Object
   
   @js.native
-  sealed trait MULTI_REGIONAL extends js.Object
+  sealed trait bucketOwnerRead extends js.Object
   
   @js.native
-  sealed trait NEARLINE extends js.Object
+  sealed trait crc32c extends js.Object
   
   @js.native
-  sealed trait REGIONAL extends js.Object
+  sealed trait delete extends js.Object
   
-  def COLDLINE: COLDLINE = "COLDLINE".asInstanceOf[COLDLINE]
-  def DURABLE_REDUCED_AVAILABILITY: DURABLE_REDUCED_AVAILABILITY = "DURABLE_REDUCED_AVAILABILITY".asInstanceOf[DURABLE_REDUCED_AVAILABILITY]
-  def MULTI_REGIONAL: MULTI_REGIONAL = "MULTI_REGIONAL".asInstanceOf[MULTI_REGIONAL]
-  def NEARLINE: NEARLINE = "NEARLINE".asInstanceOf[NEARLINE]
-  def REGIONAL: REGIONAL = "REGIONAL".asInstanceOf[REGIONAL]
+  @js.native
+  sealed trait md5 extends js.Object
+  
+  @js.native
+  sealed trait `private` extends js.Object
+  
+  @js.native
+  sealed trait projectPrivate extends js.Object
+  
+  @js.native
+  sealed trait publicRead extends js.Object
+  
+  @js.native
+  sealed trait read extends js.Object
+  
+  @js.native
+  sealed trait resumable extends js.Object
+  
+  @js.native
+  sealed trait write extends js.Object
+  
+  def authenticatedRead: authenticatedRead = "authenticatedRead".asInstanceOf[authenticatedRead]
+  def bucketOwnerFullControl: bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[bucketOwnerFullControl]
+  def bucketOwnerRead: bucketOwnerRead = "bucketOwnerRead".asInstanceOf[bucketOwnerRead]
+  def crc32c: crc32c = "crc32c".asInstanceOf[crc32c]
+  def delete: delete = "delete".asInstanceOf[delete]
+  def md5: md5 = "md5".asInstanceOf[md5]
+  def `private`: `private` = "private".asInstanceOf[`private`]
+  def projectPrivate: projectPrivate = "projectPrivate".asInstanceOf[projectPrivate]
+  def publicRead: publicRead = "publicRead".asInstanceOf[publicRead]
+  def read: read = "read".asInstanceOf[read]
+  def resumable: resumable = "resumable".asInstanceOf[resumable]
+  def write: write = "write".asInstanceOf[write]
 }
 

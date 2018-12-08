@@ -1,13 +1,17 @@
 organization := "org.scalablytyped"
 name := "apollo-cache-control"
-version := "0.3.3-ba855a"
+version := "0.3.3-8d259d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "apollo-env" % "0.2.5-5045f9",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-22da02",
+  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.2.8-a8f4a8",
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180927Z-50a955",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-f94ee7",
+  "org.scalablytyped" %%% "graphql-extensions" % "0.3.3-c92305",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
   "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-dbcdca",
   "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",

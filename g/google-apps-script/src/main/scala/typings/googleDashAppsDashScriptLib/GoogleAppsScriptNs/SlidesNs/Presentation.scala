@@ -25,9 +25,11 @@ trait Presentation extends js.Object {
   def getNotesMaster(): NotesMaster = js.native
   def getNotesPageHeight(): stdLib.Number = js.native
   def getNotesPageWidth(): stdLib.Number = js.native
+  def getPageElementById(id: java.lang.String): PageElement = js.native
   def getPageHeight(): stdLib.Number = js.native
   def getPageWidth(): stdLib.Number = js.native
   def getSelection(): Selection = js.native
+  def getSlideById(id: java.lang.String): Slide = js.native
   def getSlides(): js.Array[Slide] = js.native
   def getUrl(): java.lang.String = js.native
   def getViewers(): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User] = js.native

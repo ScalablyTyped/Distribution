@@ -60,7 +60,6 @@
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(_CanvasProperties))] 
 [info ] PreferTypeAlias.scala:112 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(CanvasEvents))] 
 [error] PhaseRes.scala:78 Caught exception [id => tabris, phase => typescript] java.lang.StackOverflowError
-	at scala.collection.AbstractTraversable.<init>(Traversable.scala:104)
 	at scala.collection.AbstractIterable.<init>(Iterable.scala:54)
 	at scala.collection.AbstractSeq.<init>(Seq.scala:41)
 	at scala.collection.immutable.List.<init>(List.scala:85)
@@ -1084,6 +1083,7 @@
 	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:91)
 	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:82)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:233)
+	at scala.collection.immutable.List.foreach(List.scala:388)
 
 [debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
 [debug] PhaseRunner.scala:82 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 

@@ -1,0 +1,132 @@
+package typings
+package openapiDashFactoryLib.openapiDashFactoryMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait OpenApi extends js.Object {
+  def any(
+    route: java.lang.String,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def any(
+    route: java.lang.String,
+    options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def delete(
+    route: java.lang.String,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def delete(
+    route: java.lang.String,
+    options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def get(
+    route: java.lang.String,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def get(
+    route: java.lang.String,
+    options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def handler(event: js.Object, context: js.Object): stdLib.Promise[_] = js.native
+  def head(
+    route: java.lang.String,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def head(
+    route: java.lang.String,
+    options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
+    handler: js.Function1[/* req */ js.UndefOr[js.Any], _]
+  ): scala.Unit = js.native
+  def onEvent(onEventFunc: js.Function1[/* req */ js.UndefOr[js.Any], stdLib.Promise[_]]): scala.Unit = js.native
+  def onSchedule(onScheduleFunc: js.Function1[/* req */ js.UndefOr[js.Any], stdLib.Promise[_]]): scala.Unit = js.native
+  def options(
+    route: java.lang.String,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def options(
+    route: java.lang.String,
+    options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def patch(
+    route: java.lang.String,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def patch(
+    route: java.lang.String,
+    options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def post(
+    route: java.lang.String,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def post(
+    route: java.lang.String,
+    options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def put(
+    route: java.lang.String,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def put(
+    route: java.lang.String,
+    options: openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpMethodOptions,
+    handler: js.Function1[
+      /* req */ js.UndefOr[js.Object], 
+      openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse | stdLib.Promise[openapiDashFactoryLib.openapiDashFactoryMod.OpenApiNs.HttpResponse]
+    ]
+  ): scala.Unit = js.native
+  def setAuthorizer(authorizerFunc: js.Function1[/* req */ js.UndefOr[js.Any], stdLib.Promise[_]]): scala.Unit = js.native
+}
+

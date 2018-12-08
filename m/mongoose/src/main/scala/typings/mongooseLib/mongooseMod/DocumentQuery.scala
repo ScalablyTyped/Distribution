@@ -447,6 +447,75 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
        * @param array array of conditions
        */
   def or(array: js.Array[_]): this.type = js.native
+  /**
+       * Make this query throw an error if no documents match the given `filter`.
+       * This is handy for integrating with async/await, because `orFail()` saves you
+       * an extra `if` statement to check if no document was found.
+       *
+       * Example:
+       *
+       *     // Throws if no doc returned
+       *     await Model.findOne({ foo: 'bar' }).orFail();
+       *
+       *     // Throws if no document was updated
+       *     await Model.updateOne({ foo: 'bar' }, { name: 'test' }).orFail();
+       *
+       *     // Throws "No docs found!" error if no docs match `{ foo: 'bar' }`
+       *     await Model.find({ foo: 'bar' }).orFail(new Error('No docs found!'));
+       *
+       *     // Throws "Not found" error if no document was found
+       *     await Model.findOneAndUpdate({ foo: 'bar' }, { name: 'test' }).
+       *       orFail(() => Error('Not found'));
+       *
+       * @param err optional error to throw if no docs match `filter`
+       */
+  def orFail(): this.type = js.native
+  /**
+       * Make this query throw an error if no documents match the given `filter`.
+       * This is handy for integrating with async/await, because `orFail()` saves you
+       * an extra `if` statement to check if no document was found.
+       *
+       * Example:
+       *
+       *     // Throws if no doc returned
+       *     await Model.findOne({ foo: 'bar' }).orFail();
+       *
+       *     // Throws if no document was updated
+       *     await Model.updateOne({ foo: 'bar' }, { name: 'test' }).orFail();
+       *
+       *     // Throws "No docs found!" error if no docs match `{ foo: 'bar' }`
+       *     await Model.find({ foo: 'bar' }).orFail(new Error('No docs found!'));
+       *
+       *     // Throws "Not found" error if no document was found
+       *     await Model.findOneAndUpdate({ foo: 'bar' }, { name: 'test' }).
+       *       orFail(() => Error('Not found'));
+       *
+       * @param err optional error to throw if no docs match `filter`
+       */
+  def orFail(err: js.Function0[Error]): this.type = js.native
+  /**
+       * Make this query throw an error if no documents match the given `filter`.
+       * This is handy for integrating with async/await, because `orFail()` saves you
+       * an extra `if` statement to check if no document was found.
+       *
+       * Example:
+       *
+       *     // Throws if no doc returned
+       *     await Model.findOne({ foo: 'bar' }).orFail();
+       *
+       *     // Throws if no document was updated
+       *     await Model.updateOne({ foo: 'bar' }, { name: 'test' }).orFail();
+       *
+       *     // Throws "No docs found!" error if no docs match `{ foo: 'bar' }`
+       *     await Model.find({ foo: 'bar' }).orFail(new Error('No docs found!'));
+       *
+       *     // Throws "Not found" error if no document was found
+       *     await Model.findOneAndUpdate({ foo: 'bar' }, { name: 'test' }).
+       *       orFail(() => Error('Not found'));
+       *
+       * @param err optional error to throw if no docs match `filter`
+       */
+  def orFail(err: Error): this.type = js.native
   /** Specifies a $polygon condition */
   def polygon(coordinatePairs: js.Array[scala.Double]*): this.type = js.native
   def polygon(path: java.lang.String, coordinatePairs: js.Array[scala.Double]*): this.type = js.native

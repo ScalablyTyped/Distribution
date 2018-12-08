@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 
 trait Anon_Title extends js.Object {
-  var site: java.lang.String
+  var site: wikidataDashSdkLib.defTypeSiteMod.WikidataSite
   var title: java.lang.String
 }
 

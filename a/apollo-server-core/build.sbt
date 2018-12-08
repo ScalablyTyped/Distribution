@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "apollo-server-core"
-version := "2.2.6-0dc559"
+version := "2.2.6-f53e42"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "runtime" % "1.0.0-M1",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-cache-control" % "0.3.3-ba855a",
+  "org.scalablytyped" %%% "apollo-cache-control" % "0.3.3-8d259d",
   "org.scalablytyped" %%% "apollo-datasource" % "0.2.1-7713b8",
-  "org.scalablytyped" %%% "apollo-engine-reporting" % "0.1.3-8f9224",
+  "org.scalablytyped" %%% "apollo-engine-reporting" % "0.1.3-51faf1",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.1.0-53f042",
   "org.scalablytyped" %%% "apollo-env" % "0.2.5-5045f9",
   "org.scalablytyped" %%% "apollo-link" % "1.2.4-f5ddbe",
@@ -16,6 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-22da02",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.0-676f7d",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.1.6-5898df",
+  "org.scalablytyped" %%% "apollo-tracing" % "0.3.3-38d80d",
   "org.scalablytyped" %%% "apollo-utilities" % "1.0.26-181e22",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.2.8-a8f4a8",
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.6-855ae1",
@@ -25,6 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "deprecated-decorator" % "0.1.6-e6f621",
   "org.scalablytyped" %%% "eventemitter3" % "3.1.0-309cca",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20181018Z-f94ee7",
+  "org.scalablytyped" %%% "graphql-extensions" % "0.3.3-c92305",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.0.0-e016dc",
   "org.scalablytyped" %%% "graphql-tag" % "2.10.0-f1fc76",
   "org.scalablytyped" %%% "graphql-tools" % "4.0.3-152255",

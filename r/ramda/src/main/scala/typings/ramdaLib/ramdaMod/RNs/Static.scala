@@ -427,6 +427,8 @@ trait Static extends js.Object {
            * matches, fn returns undefined.
            */
   def cond(fns: js.Array[js.Tuple2[Pred, js.Function1[/* repeated */_, _]]]): js.Function1[/* repeated */js.Any, _] = js.native
+  @JSName("cond")
+  def cond_AB[A, B](fns: js.Array[js.Tuple2[SafePred[A], js.Function1[/* repeated */A, B]]]): js.Function1[/* repeated */A, B] = js.native
   /**
            * Wraps a constructor function inside a curried function that can be called with the same arguments and returns the same type.
            */

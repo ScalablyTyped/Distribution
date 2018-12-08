@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait VueConstructor[V /* <: Vue */]
-  extends // ideally, the return type should just contains Props, not Record<keyof Props, any>. But TS requires Base constructors must all have the same return type.
+  extends // ideally, the return type should just contain Props, not Record<keyof Props, any>. But TS requires to have Base constructors with the same return type.
 ScalablyTyped.runtime.Instantiable1[
       (/* options */ vueLib.typesOptionsMod.ThisTypedComponentOptionsWithArrayProps[V, js.Object, js.Object, js.Object, java.lang.String]) | (/* options */ vueLib.typesOptionsMod.ThisTypedComponentOptionsWithRecordProps[V, js.Object, js.Object, js.Object, js.Object]) | (/* options */ vueLib.typesOptionsMod.ComponentOptions[
         V, 
@@ -19,7 +19,7 @@ ScalablyTyped.runtime.Instantiable1[
       ]), 
       CombinedVueInstance[V, js.Object, js.Object, js.Object, stdLib.Record[java.lang.String, js.Any]]
     ]
-     with // ideally, the return type should just contains Props, not Record<keyof Props, any>. But TS requires Base constructors must all have the same return type.
+     with // ideally, the return type should just contain Props, not Record<keyof Props, any>. But TS requires to have Base constructors with the same return type.
 ScalablyTyped.runtime.Instantiable0[
       CombinedVueInstance[V, js.Object, js.Object, js.Object, stdLib.Record[java.lang.String, js.Any]]
     ] {
@@ -68,6 +68,7 @@ ScalablyTyped.runtime.Instantiable0[
     definition: vueLib.typesOptionsMod.FunctionalComponentOptions[Props, vueLib.typesOptionsMod.RecordPropsDefinition[Props]]
   ): ExtendedVue[V, js.Object, js.Object, js.Object, Props] = js.native
   def delete(`object`: js.Object, key: java.lang.String): scala.Unit = js.native
+  def delete(`object`: js.Object, key: scala.Double): scala.Unit = js.native
   def delete[T](array: js.Array[T], key: scala.Double): scala.Unit = js.native
   def directive(id: java.lang.String): vueLib.typesOptionsMod.DirectiveOptions = js.native
   def directive(id: java.lang.String, definition: vueLib.typesOptionsMod.DirectiveFunction): vueLib.typesOptionsMod.DirectiveOptions = js.native
@@ -113,18 +114,19 @@ ScalablyTyped.runtime.Instantiable0[
       vueLib.typesOptionsMod.PropsDefinition[vueLib.typesOptionsMod.DefaultProps], 
       vueLib.typesOptionsMod.DefaultProps
     ]
-  ): scala.Unit = js.native
-  def mixin(mixin: VueConstructor[Vue]): scala.Unit = js.native
+  ): this.type = js.native
+  def mixin(mixin: VueConstructor[Vue]): this.type = js.native
   def nextTick(): stdLib.Promise[scala.Unit] = js.native
   def nextTick(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def nextTick(callback: js.Function0[scala.Unit], context: js.Array[_]): scala.Unit = js.native
   def set[T](array: js.Array[T], key: scala.Double, value: T): T = js.native
   def set[T](`object`: js.Object, key: java.lang.String, value: T): T = js.native
-  def use(plugin: vueLib.typesPluginMod.PluginFunction[_], options: js.Any*): scala.Unit = js.native
-  def use(plugin: vueLib.typesPluginMod.PluginObject[_], options: js.Any*): scala.Unit = js.native
-  def use[T](plugin: vueLib.typesPluginMod.PluginFunction[T]): scala.Unit = js.native
-  def use[T](plugin: vueLib.typesPluginMod.PluginFunction[T], options: T): scala.Unit = js.native
-  def use[T](plugin: vueLib.typesPluginMod.PluginObject[T]): scala.Unit = js.native
-  def use[T](plugin: vueLib.typesPluginMod.PluginObject[T], options: T): scala.Unit = js.native
+  def set[T](`object`: js.Object, key: scala.Double, value: T): T = js.native
+  def use(plugin: vueLib.typesPluginMod.PluginFunction[_], options: js.Any*): this.type = js.native
+  def use(plugin: vueLib.typesPluginMod.PluginObject[_], options: js.Any*): this.type = js.native
+  def use[T](plugin: vueLib.typesPluginMod.PluginFunction[T]): this.type = js.native
+  def use[T](plugin: vueLib.typesPluginMod.PluginFunction[T], options: T): this.type = js.native
+  def use[T](plugin: vueLib.typesPluginMod.PluginObject[T]): this.type = js.native
+  def use[T](plugin: vueLib.typesPluginMod.PluginObject[T], options: T): this.type = js.native
 }
 

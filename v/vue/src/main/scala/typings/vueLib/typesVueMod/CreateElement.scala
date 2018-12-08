@@ -8,6 +8,22 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CreateElement extends js.Object {
   def apply(): vueLib.typesVnodeMod.VNode = js.native
+  def apply(
+    tag: (vueLib.typesOptionsMod.AsyncComponent[_, _, _, _]) | (vueLib.typesOptionsMod.Component[_, _, _, _])
+  ): vueLib.typesVnodeMod.VNode = js.native
+  def apply(
+    tag: (vueLib.typesOptionsMod.AsyncComponent[_, _, _, _]) | (vueLib.typesOptionsMod.Component[_, _, _, _]),
+    children: vueLib.typesVnodeMod.VNodeChildren
+  ): vueLib.typesVnodeMod.VNode = js.native
+  def apply(
+    tag: (vueLib.typesOptionsMod.AsyncComponent[_, _, _, _]) | (vueLib.typesOptionsMod.Component[_, _, _, _]),
+    data: vueLib.typesVnodeMod.VNodeData
+  ): vueLib.typesVnodeMod.VNode = js.native
+  def apply(
+    tag: (vueLib.typesOptionsMod.AsyncComponent[_, _, _, _]) | (vueLib.typesOptionsMod.Component[_, _, _, _]),
+    data: vueLib.typesVnodeMod.VNodeData,
+    children: vueLib.typesVnodeMod.VNodeChildren
+  ): vueLib.typesVnodeMod.VNode = js.native
   def apply(tag: java.lang.String): vueLib.typesVnodeMod.VNode = js.native
   def apply(tag: java.lang.String, children: vueLib.typesVnodeMod.VNodeChildren): vueLib.typesVnodeMod.VNode = js.native
   def apply(tag: java.lang.String, data: vueLib.typesVnodeMod.VNodeData): vueLib.typesVnodeMod.VNode = js.native
@@ -57,25 +73,6 @@ trait CreateElement extends js.Object {
         vueLib.typesOptionsMod.DefaultProps
       ]
     ],
-    data: vueLib.typesVnodeMod.VNodeData,
-    children: vueLib.typesVnodeMod.VNodeChildren
-  ): vueLib.typesVnodeMod.VNode = js.native
-  def apply(tag: vueLib.typesOptionsMod.AsyncComponent[_, _, _, _]): vueLib.typesVnodeMod.VNode = js.native
-  def apply(
-    tag: vueLib.typesOptionsMod.AsyncComponent[_, _, _, _],
-    children: vueLib.typesVnodeMod.VNodeChildren
-  ): vueLib.typesVnodeMod.VNode = js.native
-  def apply(tag: vueLib.typesOptionsMod.AsyncComponent[_, _, _, _], data: vueLib.typesVnodeMod.VNodeData): vueLib.typesVnodeMod.VNode = js.native
-  def apply(
-    tag: vueLib.typesOptionsMod.AsyncComponent[_, _, _, _],
-    data: vueLib.typesVnodeMod.VNodeData,
-    children: vueLib.typesVnodeMod.VNodeChildren
-  ): vueLib.typesVnodeMod.VNode = js.native
-  def apply(tag: vueLib.typesOptionsMod.Component[_, _, _, _]): vueLib.typesVnodeMod.VNode = js.native
-  def apply(tag: vueLib.typesOptionsMod.Component[_, _, _, _], children: vueLib.typesVnodeMod.VNodeChildren): vueLib.typesVnodeMod.VNode = js.native
-  def apply(tag: vueLib.typesOptionsMod.Component[_, _, _, _], data: vueLib.typesVnodeMod.VNodeData): vueLib.typesVnodeMod.VNode = js.native
-  def apply(
-    tag: vueLib.typesOptionsMod.Component[_, _, _, _],
     data: vueLib.typesVnodeMod.VNodeData,
     children: vueLib.typesVnodeMod.VNodeChildren
   ): vueLib.typesVnodeMod.VNode = js.native

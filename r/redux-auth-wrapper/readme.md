@@ -3,5 +3,5 @@
 // Project: https://github.com/mjrussell/redux-auth-wrapper
 // Definitions by: Karol Janyst <https://github.com/LKay>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.0
 ```

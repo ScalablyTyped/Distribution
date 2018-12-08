@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("spectacle", "Layout")
 @js.native
 class Layout ()
-  extends reactLib.reactMod.Component[js.Any, js.Object, js.Any]
+  extends reactLib.reactMod.Component[LayoutProps, js.Object, js.Any]
 

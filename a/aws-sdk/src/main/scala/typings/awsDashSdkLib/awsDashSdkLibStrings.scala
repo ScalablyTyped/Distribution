@@ -2491,6 +2491,9 @@ object awsDashSdkLibStrings {
   sealed trait CSV extends js.Object
   
   @js.native
+  sealed trait CSV_ZIP extends js.Object
+  
+  @js.native
   sealed trait CURATED extends js.Object
   
   @js.native
@@ -5107,6 +5110,9 @@ object awsDashSdkLibStrings {
   sealed trait INITIATED_CALL extends js.Object
   
   @js.native
+  sealed trait INLINE extends js.Object
+  
+  @js.native
   sealed trait INOPERABLE extends js.Object
   
   @js.native
@@ -6838,6 +6844,9 @@ object awsDashSdkLibStrings {
   sealed trait NO_SOURCE extends js.Object
   
   @js.native
+  sealed trait NO_SUCH_BUCKET extends js.Object
+  
+  @js.native
   sealed trait NO_UPFRONT extends js.Object
   
   @js.native
@@ -7036,6 +7045,9 @@ object awsDashSdkLibStrings {
   sealed trait ONEZONE_IA extends js.Object
   
   @js.native
+  sealed trait ONE_DAY extends js.Object
+  
+  @js.native
   sealed trait ONE_DOC_PER_FILE extends js.Object
   
   @js.native
@@ -7046,6 +7058,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ONE_HOUR extends js.Object
+  
+  @js.native
+  sealed trait ONE_WEEK extends js.Object
   
   @js.native
   sealed trait ONE_YEAR extends js.Object
@@ -15120,6 +15135,7 @@ object awsDashSdkLibStrings {
   def `CSE-KMS`: `CSE-KMS` = "CSE-KMS".asInstanceOf[`CSE-KMS`]
   def CSE_KMS: CSE_KMS = "CSE_KMS".asInstanceOf[CSE_KMS]
   def CSV: CSV = "CSV".asInstanceOf[CSV]
+  def CSV_ZIP: CSV_ZIP = "CSV_ZIP".asInstanceOf[CSV_ZIP]
   def CURATED: CURATED = "CURATED".asInstanceOf[CURATED]
   def CURRENT: CURRENT = "CURRENT".asInstanceOf[CURRENT]
   def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
@@ -15992,6 +16008,7 @@ object awsDashSdkLibStrings {
   def INITIALIZE_IN_PROGRESS: INITIALIZE_IN_PROGRESS = "INITIALIZE_IN_PROGRESS".asInstanceOf[INITIALIZE_IN_PROGRESS]
   def INITIALIZING: INITIALIZING = "INITIALIZING".asInstanceOf[INITIALIZING]
   def INITIATED_CALL: INITIATED_CALL = "INITIATED_CALL".asInstanceOf[INITIATED_CALL]
+  def INLINE: INLINE = "INLINE".asInstanceOf[INLINE]
   def INOPERABLE: INOPERABLE = "INOPERABLE".asInstanceOf[INOPERABLE]
   def INPROGRESS: INPROGRESS = "INPROGRESS".asInstanceOf[INPROGRESS]
   def INPUT: INPUT = "INPUT".asInstanceOf[INPUT]
@@ -16569,6 +16586,7 @@ object awsDashSdkLibStrings {
   def NO_REGIONAL_BLACKOUT: NO_REGIONAL_BLACKOUT = "NO_REGIONAL_BLACKOUT".asInstanceOf[NO_REGIONAL_BLACKOUT]
   def NO_SHIFT: NO_SHIFT = "NO_SHIFT".asInstanceOf[NO_SHIFT]
   def NO_SOURCE: NO_SOURCE = "NO_SOURCE".asInstanceOf[NO_SOURCE]
+  def NO_SUCH_BUCKET: NO_SUCH_BUCKET = "NO_SUCH_BUCKET".asInstanceOf[NO_SUCH_BUCKET]
   def NO_UPFRONT: NO_UPFRONT = "NO_UPFRONT".asInstanceOf[NO_UPFRONT]
   def NO_VIDEO: NO_VIDEO = "NO_VIDEO".asInstanceOf[NO_VIDEO]
   def NS: NS = "NS".asInstanceOf[NS]
@@ -16635,10 +16653,12 @@ object awsDashSdkLibStrings {
   def ON: ON = "ON".asInstanceOf[ON]
   def ONCE: ONCE = "ONCE".asInstanceOf[ONCE]
   def ONEZONE_IA: ONEZONE_IA = "ONEZONE_IA".asInstanceOf[ONEZONE_IA]
+  def ONE_DAY: ONE_DAY = "ONE_DAY".asInstanceOf[ONE_DAY]
   def ONE_DOC_PER_FILE: ONE_DOC_PER_FILE = "ONE_DOC_PER_FILE".asInstanceOf[ONE_DOC_PER_FILE]
   def ONE_DOC_PER_LINE: ONE_DOC_PER_LINE = "ONE_DOC_PER_LINE".asInstanceOf[ONE_DOC_PER_LINE]
   def ONE_DRIVE: ONE_DRIVE = "ONE_DRIVE".asInstanceOf[ONE_DRIVE]
   def ONE_HOUR: ONE_HOUR = "ONE_HOUR".asInstanceOf[ONE_HOUR]
+  def ONE_WEEK: ONE_WEEK = "ONE_WEEK".asInstanceOf[ONE_WEEK]
   def ONE_YEAR: ONE_YEAR = "ONE_YEAR".asInstanceOf[ONE_YEAR]
   def ONLINE: ONLINE = "ONLINE".asInstanceOf[ONLINE]
   def ONNX: ONNX = "ONNX".asInstanceOf[ONNX]

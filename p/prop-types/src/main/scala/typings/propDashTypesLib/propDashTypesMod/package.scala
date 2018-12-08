@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object propDashTypesMod {
-  type InferProps[V] = (InferPropsInner[stdLib.Pick[V, RequiredKeys[V]]]) with (stdLib.Partial[InferPropsInner[stdLib.Pick[V, OptionalKeys[V]]]])
+  type InferProps[V] = ((InferPropsInner[stdLib.Pick[V, RequiredKeys[V]]]) | js.Object) with ((stdLib.Partial[InferPropsInner[stdLib.Pick[V, OptionalKeys[V]]]]) | js.Object)
   type InferPropsInner[V] = propDashTypesLib.propDashTypesLibStrings.InferPropsInner with V
   type InferType[V] = js.Any
   type IsOptional[T] = propDashTypesLib.propDashTypesLibNumbers.`false` | propDashTypesLib.propDashTypesLibNumbers.`true`

@@ -19,6 +19,11 @@ trait IIconProps
        */
   var color: js.UndefOr[java.lang.String] = js.undefined
   /**
+       * String for the `title` attribute on the rendered element, which will appear
+       * on hover as a native browser tooltip.
+       */
+  var htmlTitle: js.UndefOr[java.lang.String] = js.undefined
+  /**
        * Name of a Blueprint UI icon, or an icon element, to render. This prop is
        * required because it determines the content of the component, but it can
        * be explicitly set to falsy values to render nothing.

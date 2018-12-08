@@ -14,7 +14,6 @@ class Popover ()
   var handleMouseLeave: js.Any = js.native
   var handleOverlayClose: js.Any = js.native
   var handlePopoverClick: js.Any = js.native
-  var handlePopoverResize: js.Any = js.native
   var handleTargetBlur: js.Any = js.native
   var handleTargetClick: js.Any = js.native
   var handleTargetFocus: js.Any = js.native
@@ -47,6 +46,15 @@ class Popover ()
   /* private */ def isArrowEnabled(): js.Any = js.native
   /* private */ def isElementInPopover(element: js.Any): js.Any = js.native
   /* private */ def isHoverInteractionKind(): js.Any = js.native
+  /**
+       * Instance method to instruct the `Popover` to recompute its position.
+       *
+       * This method should only be used if you are updating the target in a way
+       * that does not cause it to re-render, such as changing its _position_
+       * without changing its _size_ (since `Popover` already repositions when it
+       * detects a resize).
+       */
+  def reposition(): scala.Unit = js.native
   /* private */ def setOpenState(isOpen: js.Any): js.Any = js.native
   /* private */ def setOpenState(isOpen: js.Any, e: js.Any): js.Any = js.native
   /* private */ def setOpenState(isOpen: js.Any, e: js.Any, timeout: js.Any): js.Any = js.native

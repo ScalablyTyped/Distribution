@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-smooth-scrollbar"
-version := "8.0-dt-20180910Z-6df911"
+version := "8.0-dt-20180910Z-d2f99a"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181204Z-3dc8be",
   "org.scalablytyped" %%% "lodash-es" % "4.17-dt-20180910Z-1c5b14",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-dcbd7c",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-65cffa",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-000ab2",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-1b8e7c",
   "org.scalablytyped" %%% "smooth-scrollbar" % "8.3.1-ef5421",
   "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
   "org.scalablytyped" %%% "tslib" % "1.9.3-6146fe")

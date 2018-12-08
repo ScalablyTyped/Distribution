@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nookies"
-version := "1.1-dt-20181020Z-0b1f62"
+version := "1.1-dt-20181020Z-419c39"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,13 +9,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20180910Z-248c45",
   "org.scalablytyped" %%% "cookie" % "0.3-dt-20181120Z-b5c464",
   "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
-  "org.scalablytyped" %%% "next" % "7.0-dt-20181116Z-8b9be6",
-  "org.scalablytyped" %%% "next-server" % "7.0-dt-20181116Z-6b495f",
+  "org.scalablytyped" %%% "next" % "7.0-dt-20181116Z-7cb6d1",
+  "org.scalablytyped" %%% "next-server" % "7.0-dt-20181116Z-7135ca",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181203Z-d9c01e",
   "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181120Z-dbcdca",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-dcbd7c",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-65cffa",
-  "org.scalablytyped" %%% "react-loadable" % "5.4-dt-20181123Z-1ae814",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-000ab2",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-1b8e7c",
+  "org.scalablytyped" %%% "react-loadable" % "5.4-dt-20181123Z-df0283",
   "org.scalablytyped" %%% "source-map" % "0.7.3-faaeaa",
   "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180910Z-3b1759",

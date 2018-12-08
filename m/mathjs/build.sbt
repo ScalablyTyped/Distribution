@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mathjs"
-version := "4.4-dt-20181105Z-f1c74f"
+version := "4.4-dt-20181208Z-59e0da"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

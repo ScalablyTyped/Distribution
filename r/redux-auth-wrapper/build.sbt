@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-auth-wrapper"
-version := "2.0-dt-20180910Z-2ac0dd"
+version := "2.0-dt-20181208Z-cdf825"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-bb2c56",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20181018Z-50032e",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-dcbd7c",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-65cffa",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181208Z-000ab2",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181203Z-1b8e7c",
   "org.scalablytyped" %%% "redux" % "4.0.1-5c98ab",
   "org.scalablytyped" %%% "std" % "3.2.1-edfe2b",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-46014e")

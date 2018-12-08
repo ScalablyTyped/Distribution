@@ -26,8 +26,8 @@ trait ChartDataSets extends js.Object {
   var fill: js.UndefOr[scala.Boolean | scala.Double | java.lang.String] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var hideInLegendAndTooltip: js.UndefOr[scala.Boolean] = js.undefined
-  var hoverBackgroundColor: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var hoverBorderColor: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  var hoverBackgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
+  var hoverBorderColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
   var hoverBorderWidth: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var label: js.UndefOr[java.lang.String] = js.undefined
   var lineTension: js.UndefOr[scala.Double] = js.undefined

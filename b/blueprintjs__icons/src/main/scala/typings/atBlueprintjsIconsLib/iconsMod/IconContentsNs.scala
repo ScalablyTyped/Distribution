@@ -97,6 +97,9 @@ object IconContentsNs extends js.Object {
   val CREDIT_CARD: /* \\uE649 */ java.lang.String = js.native
   val CROSS: /* \\u2717 */ java.lang.String = js.native
   val CROWN: /* \\uE7B4 */ java.lang.String = js.native
+  val CUBE: /* \\uE7C8 */ java.lang.String = js.native
+  val CUBE_ADD: /* \\uE7C9 */ java.lang.String = js.native
+  val CUBE_REMOVE: /* \\uE7D0 */ java.lang.String = js.native
   val CURVED_RANGE_CHART: /* \\uE71B */ java.lang.String = js.native
   val CUT: /* \\uE6EF */ java.lang.String = js.native
   val DASHBOARD: /* \\uE751 */ java.lang.String = js.native
@@ -255,6 +258,7 @@ object IconContentsNs extends js.Object {
   val LAYOUT_SKEW_GRID: /* \\uE612 */ java.lang.String = js.native
   val LAYOUT_SORTED_CLUSTERS: /* \\uE6D4 */ java.lang.String = js.native
   val LEFT_JOIN: /* \\uE7A4 */ java.lang.String = js.native
+  val LIFESAVER: /* \\uE7C7 */ java.lang.String = js.native
   val LIGHTBULB: /* \\uE6B0 */ java.lang.String = js.native
   val LINK: /* \\uE62D */ java.lang.String = js.native
   val LIST: /* \\u2630 */ java.lang.String = js.native
@@ -415,6 +419,7 @@ object IconContentsNs extends js.Object {
   val THUMBS_DOWN: /* \\uE6BE */ java.lang.String = js.native
   val THUMBS_UP: /* \\uE6BD */ java.lang.String = js.native
   val TH_DERIVED: /* \\uE669 */ java.lang.String = js.native
+  val TH_FILTERED: /* \\uE7C6 */ java.lang.String = js.native
   val TH_LIST: /* \\uE668 */ java.lang.String = js.native
   val TICK: /* \\u2713 */ java.lang.String = js.native
   val TICK_CIRCLE: /* \\uE779 */ java.lang.String = js.native

@@ -7,6 +7,27 @@ import scala.scalajs.js.annotation._
 
 object wikidataDashSdkLibStrings {
   @js.native
+  sealed trait WikidataLanguageBaseArrayString extends js.Object
+  
+  @js.native
+  sealed trait WikidataLanguageBaseArrayStringSimplify extends js.Object
+  
+  @js.native
+  sealed trait WikidataLanguageBaseString extends js.Object
+  
+  @js.native
+  sealed trait WikidataLanguageBaseStringSimplify extends js.Object
+  
+  @js.native
+  sealed trait WikidataSiteLink extends js.Object
+  
+  @js.native
+  sealed trait WikidataSiteLinkSimplify extends js.Object
+  
+  @js.native
+  sealed trait WikidataSiteLinkWithUrlSimplify extends js.Object
+  
+  @js.native
   sealed trait aliases extends js.Object
   
   @js.native
@@ -39,6 +60,13 @@ object wikidataDashSdkLibStrings {
   @js.native
   sealed trait xml extends js.Object
   
+  def WikidataLanguageBaseArrayString: WikidataLanguageBaseArrayString = "WikidataLanguageBaseArrayString".asInstanceOf[WikidataLanguageBaseArrayString]
+  def WikidataLanguageBaseArrayStringSimplify: WikidataLanguageBaseArrayStringSimplify = "WikidataLanguageBaseArrayStringSimplify".asInstanceOf[WikidataLanguageBaseArrayStringSimplify]
+  def WikidataLanguageBaseString: WikidataLanguageBaseString = "WikidataLanguageBaseString".asInstanceOf[WikidataLanguageBaseString]
+  def WikidataLanguageBaseStringSimplify: WikidataLanguageBaseStringSimplify = "WikidataLanguageBaseStringSimplify".asInstanceOf[WikidataLanguageBaseStringSimplify]
+  def WikidataSiteLink: WikidataSiteLink = "WikidataSiteLink".asInstanceOf[WikidataSiteLink]
+  def WikidataSiteLinkSimplify: WikidataSiteLinkSimplify = "WikidataSiteLinkSimplify".asInstanceOf[WikidataSiteLinkSimplify]
+  def WikidataSiteLinkWithUrlSimplify: WikidataSiteLinkWithUrlSimplify = "WikidataSiteLinkWithUrlSimplify".asInstanceOf[WikidataSiteLinkWithUrlSimplify]
   def aliases: aliases = "aliases".asInstanceOf[aliases]
   def claims: claims = "claims".asInstanceOf[claims]
   def datatype: datatype = "datatype".asInstanceOf[datatype]

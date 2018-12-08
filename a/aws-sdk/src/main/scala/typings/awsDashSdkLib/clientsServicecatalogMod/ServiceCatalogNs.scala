@@ -1874,11 +1874,11 @@ object ServiceCatalogNs extends js.Object {
   
   trait OrganizationNode extends js.Object {
     /**
-         * 
+         * The organization node type.
          */
     var Type: js.UndefOr[OrganizationNodeType] = js.undefined
     /**
-         * 
+         * The identifier of the organization node.
          */
     var Value: js.UndefOr[OrganizationNodeValue] = js.undefined
   }
@@ -4303,11 +4303,11 @@ object ServiceCatalogNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DisassociateTagOptionFromResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
+       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure.
        */
     def enableAWSOrganizationsAccess(): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
+       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure.
        */
     def enableAWSOrganizationsAccess(
       callback: js.Function2[
@@ -4317,11 +4317,11 @@ object ServiceCatalogNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
+       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure.
        */
     def enableAWSOrganizationsAccess(params: EnableAWSOrganizationsAccessInput): awsDashSdkLib.libRequestMod.Request[EnableAWSOrganizationsAccessOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will use FAS credentials to call organizations:EnableAWSServiceAccess so that your shares can be in sync with any changes in your AWS Organizations.
+       * Enable portfolio sharing feature through AWS Organizations. This API will allow Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the master account in the organization. By calling this API Service Catalog will make a call to organizations:EnableAWSServiceAccess on your behalf so that your shares can be in sync with any changes in your AWS Organizations structure.
        */
     def enableAWSOrganizationsAccess(
       params: EnableAWSOrganizationsAccessInput,

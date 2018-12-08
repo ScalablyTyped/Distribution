@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 
 trait VNodeDirective extends js.Object {
-  val arg: java.lang.String
-  val expression: js.Any
-  val modifiers: ScalablyTyped.runtime.StringDictionary[scala.Boolean]
-  val name: java.lang.String
-  val oldValue: js.Any
-  val value: js.Any
+  var arg: js.UndefOr[java.lang.String] = js.undefined
+  var expression: js.UndefOr[js.Any] = js.undefined
+  var modifiers: js.UndefOr[ScalablyTyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
+  var name: java.lang.String
+  var oldValue: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 

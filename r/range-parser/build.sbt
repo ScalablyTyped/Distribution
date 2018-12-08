@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "range-parser"
-version := "1.2-dt-20180910Z-db862f"
+version := "1.2-dt-20181208Z-e9c641"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

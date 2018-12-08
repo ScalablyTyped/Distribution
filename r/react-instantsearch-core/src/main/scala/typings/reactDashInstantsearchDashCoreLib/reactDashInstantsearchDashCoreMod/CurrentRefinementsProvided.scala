@@ -17,8 +17,8 @@ trait CurrentRefinementsProvided extends js.Object {
   /** the search query */
   var query: java.lang.String = js.native
   /** a function to remove a single filter */
-  def refine(refinement: js.Array[reactDashInstantsearchDashCoreLib.RefinementValue]): scala.Unit = js.native
+  def refine(refinement: js.Array[RefinementValue]): scala.Unit = js.native
   /** a function to remove a single filter */
-  def refine(refinement: reactDashInstantsearchDashCoreLib.RefinementValue): scala.Unit = js.native
+  def refine(refinement: RefinementValue): scala.Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "binary-parser"
-version := "1.3-dt-20180910Z-ce2f81"
+version := "1.3-dt-20181208Z-4c6efe"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
